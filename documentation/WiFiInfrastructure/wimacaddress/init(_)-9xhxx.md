@@ -17,7 +17,7 @@ Create a MAC Address from the provided octet components.
 init?(_ macAddressComponents: [UInt8])
 ```
 
-#### Return Value
+## Return Value
 
 The mac address, or `nil` if the input data was invalid and it could not be constructed.
 

@@ -25,7 +25,7 @@ func converted(to _: CGColorSpace, intent: CGColorRenderingIntent, options: CFDi
 extern CGColorRefCGColorCreateCopyByMatchingToColorSpace(CGColorSpaceRef , CGColorRenderingIntent intent, CGColorRef color, CFDictionaryRef options);
 ```
 
-##### Parameters
+### Parameters
 
 - **CGColorSpaceRef**: The destination color space.
 - **to**: The destination color space.
@@ -33,11 +33,11 @@ extern CGColorRefCGColorCreateCopyByMatchingToColorSpace(CGColorSpaceRef , CGCol
 - **color**: The color to convert.
 - **options**: A dictionary of options used to convert the color. Currently, you should pass `NULL`.
 
-##### Returns
+### Returns
 
 A new color in the destination color space that matches (or closely approximates) the source color.
 
-#### Discussion
+## Discussion
 
 To create the new color, this method creates a `CFColorConverterRef` using the options you specified and applies it to the source color.
 

@@ -16,11 +16,11 @@ Modify the transfer size of a transfer packet DCL (send or receive)
 IOReturn (*AddListener)(IOFireWireLibIsochChannelRef self, IOFireWireLibIsochPortRef listener);
 ```
 
-#### Return Value
+## Return Value
 
 Returns an IOReturn error code.
 
-#### Discussion
+## Discussion
 
 Allows you to modify transfer packet DCLs after they have been compiled and while the DCL program is still running. The transfer size can be set to any size less than or equal to the size set when the DCL program was compiled (including 0).
 

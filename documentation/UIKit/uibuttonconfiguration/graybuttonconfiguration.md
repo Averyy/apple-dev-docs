@@ -19,7 +19,7 @@ Creates a configuration for a button with a gray background.
 + (instancetype) grayButtonConfiguration;
 ```
 
-#### Return Value
+## Return Value
 
 A new configuration object.
 

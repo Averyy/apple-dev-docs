@@ -16,7 +16,7 @@ The shipping address selected by the user.
 readonly attribute ApplePayPaymentContact shippingContact;
 ```
 
-#### Discussion
+## Discussion
 
 This attribute is contained by the [`onshippingcontactselected`](../applepaysession/onshippingcontactselected.md) event. Access this attribute using the event parameter in the callback function; for example, `var myShippingContact = event.shippingContact;`.
 

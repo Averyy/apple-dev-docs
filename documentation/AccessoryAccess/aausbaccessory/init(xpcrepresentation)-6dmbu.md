@@ -19,7 +19,7 @@ init?(xpcRepresentation: xpc_object_t)
 - (instancetype) initWithXPCRepresentation:(xpc_object_t) xpcRepresentation;
 ```
 
-#### Return Value
+## Return Value
 
 An `AAUSBAccessory` object if the framework decoded the provided `xpc_object_t`, or `nil` if it’s invalid.
 

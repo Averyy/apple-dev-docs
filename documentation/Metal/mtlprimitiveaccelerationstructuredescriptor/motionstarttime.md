@@ -24,7 +24,7 @@ var motionStartTime: Float { get set }
 @property (nonatomic) float motionStartTime;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `0.0f`.
 

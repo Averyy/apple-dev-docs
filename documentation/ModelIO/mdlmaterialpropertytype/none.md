@@ -24,7 +24,7 @@ case none
 MDLMaterialPropertyTypeNone
 ```
 
-#### Discussion
+## Discussion
 
 Set one of the properties listed in Working with a Material Property’s Value to provide a value for the material property. After setting a value, the [`type`](../mdlmaterialproperty/type.md) property reflects the data type of that value.
 

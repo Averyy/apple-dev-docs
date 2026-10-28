@@ -25,7 +25,7 @@ static let dcm: AVFileType
 extern AVFileType const AVFileTypeDICOM;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this UTI is @“org.nema.dicom”. Files are identified with the .dcm extension.
 

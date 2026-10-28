@@ -19,7 +19,7 @@ init(representedObject modelObject: Any?)
 - (instancetype) initWithRepresentedObject:(id) modelObject;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized tree node that represents `modelObject`.
 

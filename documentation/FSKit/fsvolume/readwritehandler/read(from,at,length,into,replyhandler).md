@@ -24,7 +24,7 @@ func read(from item: FSItem, at offset: off_t, length: Int, into buffer: FSMutab
 - (void) readFromFile:(FSItem *) item offset:(off_t) offset length:(size_t) length intoBuffer:(FSMutableFileDataBuffer *) buffer replyHandler:(void (^)(FSReadFileResult *result, NSError *error)) reply;
 ```
 
-#### Discussion
+## Discussion
 
 If the number of bytes requested exceeds the number of bytes available before the end of the file, then the call copies only those bytes to `buffer`. If `offset` points past the last valid byte of the file, don’t reply with an error but set `actuallyRead` to `0`.
 

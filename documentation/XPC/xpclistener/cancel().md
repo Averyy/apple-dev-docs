@@ -16,7 +16,7 @@ Cancels a listener.
 func cancel()
 ```
 
-#### Discussion
+## Discussion
 
 Typically you don’t need to explicitly cancel a listener. When the server process exits, the system automatically cancels the listener. In rare circumstances, such as part of a testing infrastructure, you may want to cancel a listener to ensure it doesn’t receive any new messages. Be aware that canceling a listener causes peers attempting to connect to the service to hang.
 

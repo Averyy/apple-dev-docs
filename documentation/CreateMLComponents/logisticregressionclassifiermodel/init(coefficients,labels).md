@@ -21,7 +21,7 @@ Creates a logistic regression model.
 init(coefficients: some Sequence<Scalar>, labels: Set<Label>)
 ```
 
-#### Discussion
+## Discussion
 
 - coefficients: The linear coefficients.
 - labels: The set of labels.

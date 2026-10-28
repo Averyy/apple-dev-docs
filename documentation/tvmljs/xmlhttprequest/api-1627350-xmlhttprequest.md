@@ -15,11 +15,11 @@ Creates a new XMLHttpRequest.
 new XMLHttpRequest();
 ```
 
-#### Return Value
+## Return Value
 
 A new instance of an XMLHttpRequest.
 
-#### Discussion
+## Discussion
 
 You create a new XMLHttpRequest instance to send and receive data between your app and a server.
 

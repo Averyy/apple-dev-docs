@@ -21,11 +21,11 @@ Creates the description of image encoding in a Core Video pixel buffer from the 
 static func make(format: vImageCVImageFormat.Format, matrix: vImage_ARGBToYpCbCrMatrix, chromaSiting: vImageCVImageFormat.ChromaSiting, colorSpace: CGColorSpace, alphaIsOpaqueHint: Bool) -> vImageCVImageFormat?
 ```
 
-#### Return Value
+## Return Value
 
 A [`vImageCVImageFormat`](../vimagecvimageformat.md) instance encoded with the function’s parameters.
 
-#### Discussion
+## Discussion
 
 This function derives values that parameters from the image format type don’t specify, such as the number of channels, channel names, and channel descriptions.
 

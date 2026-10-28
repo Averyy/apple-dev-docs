@@ -17,7 +17,7 @@ The specific state of the alarm, either alerting, countdown, or paused.
 var mode: AlarmPresentationState.Mode
 ```
 
-#### Discussion
+## Discussion
 
 Use `mode` to determine which mode the alarm is in, so that a widget extension can produce the appropriate UI.
 

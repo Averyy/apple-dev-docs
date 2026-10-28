@@ -22,7 +22,7 @@ struct SignpostRecord
 
 - [Analyzing app performance with MetricKit](./analyzing-app-performance-with-metrickit.md)
 
-#### Discussion
+## Discussion
 
 This describes a single signpost event that was active around the time of a diagnostic event. Each record carries a subsystem, category, and name that identify the signpost, along with an [`interval`](./signpostrecord/interval.md) covering the signpost’s duration. For instantaneous signposts, the start and end of the interval are equal, giving a duration of zero.
 

@@ -19,7 +19,7 @@ case sourceList
 NSTableViewStyleSourceList
 ```
 
-#### Discussion
+## Discussion
 
 A source-list style table adopts the standard metrics, row selection style, and background of a sidebar source list. In addition, an [`NSOutlineView`](../../nsoutlineview.md) with the source-list style adopts standard values for its [`indentationPerLevel`](../../nsoutlineview/indentationperlevel.md), [`rowHeight`](../rowheight.md), and [`intercellSpacing`](../intercellspacing.md) properties.
 

@@ -26,7 +26,7 @@ static let allowDraftMode: CIRAWFilterOption
 extern CIRAWFilterOption const kCIInputAllowDraftModeKey;
 ```
 
-#### Discussion
+## Discussion
 
 The associated value is a Boolean value packaged as an [`NSNumber`](../../Foundation/nsnumber.md) object.  It’s best not to use draft mode if the image needs to be drawn without draft mode at a later time, because changing the value from `true` to `false` is an expensive operation. If the optional scale factor is smaller than a certain value, additionally setting draft mode can improve image decoding speed without any perceivable loss of quality. However, turning on draft mode does not have any effect if the scale factor is not below this threshold.
 

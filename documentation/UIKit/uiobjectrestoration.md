@@ -24,7 +24,7 @@ protocol UIObjectRestoration
 @protocol UIObjectRestoration
 ```
 
-#### Overview
+## Overview
 
 A restorable object must set its [`objectRestorationClass`](./uistaterestoring/objectrestorationclass.md) property to the class that adopts this protocol. The method in this protocol should be used to return the object if it already exists or create it if needed.
 

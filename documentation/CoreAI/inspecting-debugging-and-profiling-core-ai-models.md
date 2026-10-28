@@ -4,7 +4,7 @@
 
 Investigate model behavior, monitor activity, and profile performance using the Core AI tools across Xcode and the Core AI Debugger app.
 
-#### Overview
+## Overview
 
 Core AI provides three tools to help you investigate model behavior, monitor activity, and profile performance. Use them as needed while authoring a model, after integrating it, or when your app is running.
 
@@ -18,7 +18,7 @@ The Core AI debug gauge and Core AI instrument focus on a model that’s already
 
 For project setup, the Xcode model viewer, and how to load a model in your app, see [Integrating on-device AI models in your app with Core AI](./integrating-on-device-ai-models-in-your-app-with-core-ai.md).
 
-#### Inspect and compare model files in Core AI Debugger
+## Inspect and compare model files in Core AI Debugger
 
 Core AI Debugger is a standalone macOS app that you download from the [Apple Developer website](https://developer.apple.com/core-ai-debugger/) for working directly with `.aimodel` files. You can inspect a model’s operation graph, step through the source that produced each operation, and run the model against a connected device or your Mac.
 
@@ -26,13 +26,13 @@ The debugger also allows you to compare pairs of a model’s output against a re
 
 See [Inspecting Core AI models with Core AI Debugger](./inspecting-core-ai-models-with-core-ai-debugger.md) for inspection and execution, and [Validating inference correctness against a reference run](./validating-inference-correctness-against-a-reference-run.md) for comparing a model against a reference run.
 
-#### Perform inference checks with the Core AI debug gauge
+## Perform inference checks with the Core AI debug gauge
 
 Built into Xcode, the Core AI debug gauge tracks each model load, specialization, and inference event in real time. Use it to confirm that your model loads when you expect it to, to spot unusually slow inference, or to find a specific event you want to investigate further. The Core AI debug gauge can hand a captured event off to Core AI Debugger for structural inspection, or to the Core AI instrument for deeper profiling.
 
 For details, see [Monitoring model performance with the debug gauge](./monitoring-model-performance-with-the-debug-gauge.md).
 
-#### Analyze model performance with the Core AI instrument
+## Analyze model performance with the Core AI instrument
 
 The Core AI instrument is a template in Instruments that profiles your app’s Core AI activity with detailed timing across the CPU, GPU, and Neural Engine. Use it when you need detailed performance information, such as which compute units run your model, whether specialization happens when you expect, and how often your app reloads a model. The trace correlates Core AI events with hardware activity so you can see the full picture of execution.
 

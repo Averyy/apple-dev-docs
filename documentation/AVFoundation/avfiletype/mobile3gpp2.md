@@ -25,7 +25,7 @@ static let mobile3GPP2: AVFileType
 extern AVFileType const AVFileType3GPP2;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this UTI is `public.3gpp2`. Files of this type have a `.3g2 or .3gp2` extension.
 

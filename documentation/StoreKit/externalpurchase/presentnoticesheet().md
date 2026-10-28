@@ -25,11 +25,11 @@ static func presentNoticeSheet() async throws -> ExternalPurchase.NoticeResult
 
 - [Receiving and decoding external purchase tokens](../receiving-and-decoding-external-purchase-tokens.md)
 
-#### Return Value
+## Return Value
 
 This method returns [`ExternalPurchase.NoticeResult`](./noticeresult.md).
 
-#### Discussion
+## Discussion
 
 This method is only available to apps with the [`com.apple.developer.storekit.external-purchase`](../../BundleResources/entitlements/com.apple.developer.storekit.external-purchase.md) entitlement. For more information, see [`ExternalPurchase`](../externalpurchase.md).
 

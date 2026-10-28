@@ -25,7 +25,7 @@ func setMetadata(_ metadata: [String : Any]?, for store: NSPersistentStore)
 - (void) setMetadata:(NSDictionary<NSString *,id> *) metadata forPersistentStore:(NSPersistentStore *) store;
 ```
 
-#### Discussion
+## Discussion
 
 The store type and UUID (`NSStoreTypeKey` and `NSStoreUUIDKey`) are always added automatically, however `NSStoreUUIDKey` is only added if it is not set manually as part of the dictionary argument.
 

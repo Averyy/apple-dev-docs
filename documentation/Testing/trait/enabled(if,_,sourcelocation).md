@@ -29,7 +29,7 @@ Available when `Self` is `ConditionTrait`.
 
 - [Enabling and disabling tests](../enablinganddisabling.md)
 
-#### Return Value
+## Return Value
 
 An instance of [`ConditionTrait`](../conditiontrait.md) that evaluates the closure you provide.
 

@@ -25,7 +25,7 @@ var functionName: String? { get set }
 @property (nonatomic, copy, readwrite, nullable) NSString * functionName;
 ```
 
-#### Discussion
+## Discussion
 
 Some model types (e.g. ML Program) supports multiple functions in a model asset, where each `MLModel` instance is associated with a particular function.
 

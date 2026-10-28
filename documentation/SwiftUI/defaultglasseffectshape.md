@@ -20,7 +20,7 @@ The default shape applied by glass effects, a capsule.
 struct DefaultGlassEffectShape
 ```
 
-#### Overview
+## Overview
 
 You do not use this type directly. Instead, SwiftUI creates this shape on your behalf as the default parameter of the [`glassEffect(_:in:)`](./view/glasseffect%28_,in%29.md) modifier.
 

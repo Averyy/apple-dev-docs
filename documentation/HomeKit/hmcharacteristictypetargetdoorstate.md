@@ -24,7 +24,7 @@ let HMCharacteristicTypeTargetDoorState: String
 extern NSString * const HMCharacteristicTypeTargetDoorState;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is one of the constants in the [`HMCharacteristicValueDoorState`](./hmcharacteristicvaluedoorstate.md) enumeration.
 

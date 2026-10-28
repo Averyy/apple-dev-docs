@@ -25,7 +25,7 @@ static let destinationInvalidException: NSExceptionName
 extern NSExceptionName const NSDestinationInvalidException;
 ```
 
-#### Discussion
+## Discussion
 
 This is a distributed objects–specific exception.
 

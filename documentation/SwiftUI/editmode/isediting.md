@@ -19,7 +19,7 @@ Indicates whether a view is being edited.
 var isEditing: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property returns `true` if the mode is something other than inactive.
 

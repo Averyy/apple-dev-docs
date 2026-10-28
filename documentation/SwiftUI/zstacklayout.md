@@ -22,7 +22,7 @@ An overlaying container that you can use in conditional layouts.
 struct ZStackLayout
 ```
 
-#### Overview
+## Overview
 
 This layout container behaves like a [`ZStack`](./zstack.md), but conforms to the [`Layout`](./layout.md) protocol so you can use it in the conditional layouts that you construct with [`AnyLayout`](./anylayout.md). If you don’t need a conditional layout, use [`ZStack`](./zstack.md) instead.
 

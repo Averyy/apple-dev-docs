@@ -22,7 +22,7 @@ var refreshControl: UIRefreshControl? { get set }
 @property (nonatomic, strong, nullable) UIRefreshControl * refreshControl;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is `nil`.
 

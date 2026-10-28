@@ -29,7 +29,7 @@ protocol MTLComputePipelineState : MTLAllocation, Sendable
 - [Calculating threadgroup and grid sizes](./calculating-threadgroup-and-grid-sizes.md)
 - [Improving CPU performance by using argument buffers](./improving-cpu-performance-by-using-argument-buffers.md)
 
-#### Overview
+## Overview
 
 The [`MTLComputePipelineState`](./mtlcomputepipelinestate.md) protocol is an interface that represents a specific configuration for the GPU pipeline for a compute pass. Use a pipeline state to configure a compute pass by calling the [`setComputePipelineState(_:)`](./mtlcomputecommandencoder/setcomputepipelinestate%28_%29.md) method of an [`MTLComputeCommandEncoder`](./mtlcomputecommandencoder.md) instance.
 

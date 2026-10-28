@@ -17,11 +17,11 @@ Provides a snapshot of all the paired devices known to your app.
 static func allDevices(matching: Predicate<WAPairedDevice>) -> WAPairedDevice.DevicesSequence
 ```
 
-#### Return Value
+## Return Value
 
 A new [`WAPairedDevice.DevicesSequence`](./devicessequence.md) that returns [`WAPairedDevice.Devices`](./devices.md) elements holding a snapshot of the currently paired devices known to your app.
 
-#### Discussion
+## Discussion
 
 This method gets an `AsyncSequence` that provides snapshots of all [`WAPairedDevice.Devices`](./devices.md) currently paired and known to your app that match the provided predicate, and provides updates when the snapshot of [`WAPairedDevice.Devices`](./devices.md) matching that predicate changes. The sequence outputs an empty dictionary if there are no paired devices matching the predicate that are known to your app, or if a person removes all of your app’s matching paired devices.
 

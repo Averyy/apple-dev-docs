@@ -22,7 +22,7 @@ var customizationPaletteIsRunning: Bool { get }
 @property (readonly) BOOL customizationPaletteIsRunning;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) when the toolbar’s customization palette is running; otherwise, it’s [`false`](../../Swift/false.md).
 

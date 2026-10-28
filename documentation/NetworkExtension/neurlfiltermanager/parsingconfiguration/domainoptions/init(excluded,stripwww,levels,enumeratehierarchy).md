@@ -18,7 +18,7 @@ Creates a new domain options configuration with default values.
 init(excluded: Bool = false, stripWWW: Bool = true, levels: UInt = 0, enumerateHierarchy: Bool = true)
 ```
 
-#### Discussion
+## Discussion
 
 The domain options default behavior is as follows:
 

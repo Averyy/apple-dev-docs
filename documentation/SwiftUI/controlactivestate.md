@@ -17,7 +17,7 @@ The active appearance expected of controls in a window.
 enum ControlActiveState
 ```
 
-#### Overview
+## Overview
 
 `ControlActiveState` and `EnvironmentValues.controlActiveState` are deprecated, use `EnvironmentValues.appearsActive` instead.
 

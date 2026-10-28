@@ -23,7 +23,7 @@ var kCFSocketAutomaticallyReenableWriteCallBack: CFOptionFlags { get }
 kCFSocketAutomaticallyReenableWriteCallBack
 ```
 
-#### Discussion
+## Discussion
 
 When enabled using [`CFSocketSetSocketFlags(_:_:)`](./cfsocketsetsocketflags%28_,_%29.md), the write callback is called every time more data can be written to the socket. When disabled, the write callback is called only the next time data can be written. The write callback is not automatically reenabled by default.
 

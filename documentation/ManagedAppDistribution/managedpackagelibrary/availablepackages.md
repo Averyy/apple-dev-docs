@@ -16,7 +16,7 @@ The current managed apps available to this device.
 final var availablePackages: ManagedPackageLibrary.ManagedPackages { get }
 ```
 
-#### Discussion
+## Discussion
 
 The current managed packages are of type `Result<[ManagedPackage], ManagedAppDistributionError>`. Use an asynchronous `for` loop to update your views when the current managed packages change. If the device can’t retrieve the metadata for the packages, fetching the list of managed packages fails with `ManagedAppDistributionError.networkError`. An example of this failure is if the device is offline.
 

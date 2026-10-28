@@ -23,7 +23,7 @@ var text: String? { get set }
 @property (nonatomic, copy, nullable) NSString * text;
 ```
 
-#### Discussion
+## Discussion
 
 This property is `nil` by default. Assigning a new value to this property also replaces the value of the [`attributedText`](./attributedtext.md) property with the same text, although without any inherent style attributes. Instead the label styles the new string using [`shadowColor`](./shadowcolor.md), [`textAlignment`](./textalignment.md), and other style-related properties of the class.
 

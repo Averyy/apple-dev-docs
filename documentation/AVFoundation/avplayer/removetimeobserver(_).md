@@ -30,7 +30,7 @@ func removeTimeObserver(_ observer: Any)
 
 - [Monitoring playback progress in your app](../monitoring-playback-progress-in-your-app.md)
 
-#### Discussion
+## Discussion
 
 Upon return, the caller is guaranteed that no new time observer blocks will begin executing. Depending on the calling thread and the queue used to add the time observer, an in-flight block may continue to execute after this method returns. You can guarantee synchronous time observer removal by enqueuing the call to `removeTimeObserver` on that queue. Alternatively, call `dispatch_sync(queue, ^{})` after `removeTimeObserver` to wait for any in-flight blocks to finish executing.
 

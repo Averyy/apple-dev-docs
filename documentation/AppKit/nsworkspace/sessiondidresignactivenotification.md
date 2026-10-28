@@ -19,7 +19,7 @@ class let sessionDidResignActiveNotification: NSNotification.Name
 extern NSNotificationName NSWorkspaceSessionDidResignActiveNotification;
 ```
 
-#### Discussion
+## Discussion
 
 This notification allows an app to disable some processing, such as when its user session switches out, and re-enable when that session switches back in.
 

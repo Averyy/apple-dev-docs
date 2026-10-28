@@ -12,7 +12,7 @@ virtual bool addString(
  const char *cString);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if `cString` is successfully added to the XML stream, `false` otherwise.
 

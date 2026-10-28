@@ -15,7 +15,7 @@ A Boolean value that determines whether to display a control that lets users cho
 showsMapTypeControl?: boolean;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `true.`
 

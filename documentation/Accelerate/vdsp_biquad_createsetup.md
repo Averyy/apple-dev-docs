@@ -21,11 +21,11 @@ Builds a data structure that contains precalculated data for use by a single-pre
 extern vDSP_biquad_SetupvDSP_biquad_CreateSetup(const double *__Coefficients, vDSP_Length __M);
 ```
 
-#### Return Value
+## Return Value
 
 A pointer to an allocated and initialized biquadratic filter object.
 
-#### Discussion
+## Discussion
 
 This function constructs and returns a biquadratic filter object from the coefficients that you specify.
 

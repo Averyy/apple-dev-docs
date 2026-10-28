@@ -21,7 +21,7 @@ func popUpMenu(_ menu: NSMenu)
 - (void) popUpStatusItemMenu:(NSMenu *) menu;
 ```
 
-#### Discussion
+## Discussion
 
 You can use this method to cause a popup menu to appear under a custom status bar item when the user clicks the item. Note that the view of the status item must exist (that is, it must not be `nil`).
 

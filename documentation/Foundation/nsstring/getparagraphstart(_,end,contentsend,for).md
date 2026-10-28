@@ -25,7 +25,7 @@ func getParagraphStart(_ startPtr: UnsafeMutablePointer<Int>?, end parEndPtr: Un
 - (void) getParagraphStart:(NSUInteger *) startPtr end:(NSUInteger *) parEndPtr contentsEnd:(NSUInteger *) contentsEndPtr forRange:(NSRange) range;
 ```
 
-#### Discussion
+## Discussion
 
 A paragraph is any segment of text delimited by a carriage return (`U+000D`), newline (`U+000A`), or paragraph separator (`U+2029`).
 

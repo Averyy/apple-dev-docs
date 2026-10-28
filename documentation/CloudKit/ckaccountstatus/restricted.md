@@ -25,7 +25,7 @@ case restricted
 CKAccountStatusRestricted
 ```
 
-#### Discussion
+## Discussion
 
 Your app can’t access the user’s iCloud account due to restrictions that Parental Controls or Mobile Device Management impose.
 

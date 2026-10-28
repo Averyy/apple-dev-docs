@@ -25,7 +25,7 @@ var collisionBitMask: Int { get set }
 @property (nonatomic) NSUInteger collisionBitMask;
 ```
 
-#### Discussion
+## Discussion
 
 When two physics bodies contact each other, a collision may occur. SceneKit compares the body’s collision mask to the other body’s category mask by performing a bitwise AND operation. If the result is a nonzero value, then the body is affected by the collision. Each body independently chooses whether it wants to be affected by the other body. For example, you might choose to avoid collision calculations that would make negligible changes to a body’s velocity.
 

@@ -25,7 +25,7 @@ func makeDefaultLibrary(bundle: Bundle) throws -> any MTLLibrary
 - (id<MTLLibrary>) newDefaultLibraryWithBundle:(NSBundle *) bundle error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`MTLLibrary`](../mtllibrary.md) instance if the method completes successfully; otherwise Swift throws an error and Objective-C returns `nil`.
 

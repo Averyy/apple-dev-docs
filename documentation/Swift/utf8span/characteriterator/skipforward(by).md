@@ -21,7 +21,7 @@ Advance `currentCodeUnitOffset` to the end of `n` `Characters`, without construc
 mutating func skipForward(by n: Int) -> Int
 ```
 
-#### Discussion
+## Discussion
 
 Returns the number of `Character`s skipped over, which can be fewer than `n` if at the end of the UTF8Span.
 

@@ -23,7 +23,7 @@ var showsLargeContentViewer: Bool { get }
 @property (nonatomic, assign, readonly) BOOL showsLargeContentViewer;
 ```
 
-#### Discussion
+## Discussion
 
 For this property to take effect, the item or an ancestor view must have a [`UILargeContentViewerInteraction`](../uilargecontentviewerinteraction.md).
 

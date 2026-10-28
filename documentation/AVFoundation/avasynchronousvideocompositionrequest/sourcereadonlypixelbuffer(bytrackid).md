@@ -20,7 +20,7 @@ Returns the source CVReadOnlyPixelBuffer for the given track ID. If the track co
 func sourceReadOnlyPixelBuffer(byTrackID trackID: CMPersistentTrackID) -> CVReadOnlyPixelBuffer?
 ```
 
-#### Return Value
+## Return Value
 
 The source CVReadOnlyPixelBuffer for the given track ID.
 

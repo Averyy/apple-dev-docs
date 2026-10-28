@@ -23,7 +23,7 @@ mutating func append(contentsOf entities: [Entity])
 
 Available when `Entity` conforms to `AppEntity`.
 
-#### Discussion
+## Discussion
 
 - Parameter:
 

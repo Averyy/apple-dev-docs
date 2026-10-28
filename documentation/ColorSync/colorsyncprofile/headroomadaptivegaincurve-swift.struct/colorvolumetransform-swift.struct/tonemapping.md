@@ -21,7 +21,7 @@ Headroom-adaptive tone mapping that adjusts HDR content to the display’s avail
 struct ToneMapping
 ```
 
-#### Overview
+## Overview
 
 A tone mapping pairs a baseline headroom with a [`ColorSyncProfile.HeadroomAdaptiveGainCurve.ColorVolumeTransform.ToneMapping.Method`](./tonemapping/method-swift.enum.md) that describes how to map content above reference white.
 

@@ -24,7 +24,7 @@ var minimumSize: Float { get set }
 @property (nonatomic, assign, readwrite) float minimumSize;
 ```
 
-#### Discussion
+## Discussion
 
 The value should range from `0.0` to `1.0` inclusive. The default minimum size is `0.2`.
 

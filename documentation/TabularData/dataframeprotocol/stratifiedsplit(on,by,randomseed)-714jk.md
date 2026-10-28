@@ -21,7 +21,7 @@ Generates two data frames by randomly splitting the rows of a column, which you 
 func stratifiedSplit<T>(on columnID: ColumnID<T>, by proportion: Double, randomSeed: Int? = nil) -> (DataFrame, DataFrame) where T : Hashable
 ```
 
-#### Return Value
+## Return Value
 
 A tuple of two data frames.
 

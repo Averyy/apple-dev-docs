@@ -25,11 +25,11 @@ func CFBundleGetValueForInfoDictionaryKey(_ bundle: CFBundle!, _ key: CFString!)
 extern CFTypeRefCFBundleGetValueForInfoDictionaryKey(CFBundleRef bundle, CFStringRef key);
 ```
 
-#### Return Value
+## Return Value
 
 A value corresponding to `key` in `bundle`’s information dictionary. If available, a localized value is returned, otherwise the global value is returned. Ownership follows the [The Get Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-SW1).
 
-#### Discussion
+## Discussion
 
 You should use this function rather than retrieving values directly from the info dictionary (`Info.plist`) because `CFBundleGetValueForInfoDictionaryKey` returns localized values if any are available (from the `InfoPlist.strings` file for the current locale).
 

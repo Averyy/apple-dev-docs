@@ -25,7 +25,7 @@ class AXLiveAudioGraph
 @interface AXLiveAudioGraph : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use [`AXLiveAudioGraph`](./axliveaudiograph.md) to interact with an ongoing, continuous stream of data that updates with new data in real time.
 

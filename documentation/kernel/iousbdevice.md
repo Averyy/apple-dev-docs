@@ -17,7 +17,7 @@ An input/output service object that represents a device on the USB bus.
 class IOUSBDevice : IOService
 ```
 
-#### Overview
+## Overview
 
 Use this class to configure a device and create [`IOUSBInterface`](./iousbinterface.md) objects that represent the interfaces of the device.
 

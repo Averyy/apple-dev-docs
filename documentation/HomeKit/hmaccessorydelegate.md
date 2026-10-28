@@ -24,7 +24,7 @@ protocol HMAccessoryDelegate : NSObjectProtocol, Sendable
 @protocol HMAccessoryDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Adopt this protocol to find out about changes made outside your app to a specific accessory, like when the accessory’s name changes, or when a characteristic value changes.
 

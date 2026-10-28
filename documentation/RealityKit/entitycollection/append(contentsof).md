@@ -21,7 +21,7 @@ Adds the specified sequence of entities to the end of this collection, in order.
 mutating func append<S>(contentsOf sequence: S) where S : Sequence, S.Element : Entity
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: This operation can invalidate the index order of any extant entities.
 

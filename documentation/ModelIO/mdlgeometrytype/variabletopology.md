@@ -24,7 +24,7 @@ case variableTopology
 MDLGeometryTypeVariableTopology
 ```
 
-#### Discussion
+## Discussion
 
 If a submesh has non-uniform topology, its [`topology`](../mdlsubmesh/topology.md) property contains an object describing how the arrangement of values in the index buffer combine to produce the submesh’s shape.
 

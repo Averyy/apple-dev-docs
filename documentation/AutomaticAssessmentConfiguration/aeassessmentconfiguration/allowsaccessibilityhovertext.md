@@ -20,7 +20,7 @@ var allowsAccessibilityHoverText: Bool { get set }
 @property (nonatomic, assign) BOOL allowsAccessibilityHoverText;
 ```
 
-#### Discussion
+## Discussion
 
 Users can enable Hover Text in the Settings app (Accessibility > Zoom > Hover Text) to magnify text under the pointer. An assessment session **does not** disable Hover Text by default, but you can disable it by setting [`allowsAccessibilityHoverText`](./allowsaccessibilityhovertext.md) to `NO` in the [`AEAssessmentConfiguration`](../aeassessmentconfiguration.md) instance that you use to initialize a session.
 

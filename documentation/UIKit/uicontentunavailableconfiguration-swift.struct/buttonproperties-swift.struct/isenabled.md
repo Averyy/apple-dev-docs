@@ -19,7 +19,7 @@ A Boolean value that enables and disables the button.
 var isEnabled: Bool { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `true`.
 

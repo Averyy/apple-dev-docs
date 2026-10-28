@@ -23,7 +23,7 @@ var allowsFullScreen: Bool { get set }
 @property (nonatomic) BOOL allowsFullScreen;
 ```
 
-#### Discussion
+## Discussion
 
 The system only checks the value of this property in Mac Catalyst apps.
 

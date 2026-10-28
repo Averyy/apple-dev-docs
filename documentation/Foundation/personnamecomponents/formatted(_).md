@@ -21,11 +21,11 @@ Generates a locale-aware string representation of an instance of person name com
 func formatted<S>(_ style: S) -> S.FormatOutput where S : FormatStyle, S.FormatInput == PersonNameComponents
 ```
 
-#### Return Value
+## Return Value
 
 A string, formatted according to the provided style.
 
-#### Discussion
+## Discussion
 
 Use the [`formatted(_:)`](./formatted%28_%29.md) method to create a string representation of a person’s name with a customized length for specific uses. You can use the [`PersonNameComponents.FormatStyle`](./formatstyle.md) static factory method [`name(style:)`](../formatstyle/name%28style%29.md) to create a custom format style as a parameter to the method.
 

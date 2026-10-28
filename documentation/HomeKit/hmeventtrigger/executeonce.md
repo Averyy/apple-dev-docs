@@ -24,7 +24,7 @@ var executeOnce: Bool { get }
 @property (nonatomic, readonly) BOOL executeOnce;
 ```
 
-#### Discussion
+## Discussion
 
 Disables the trigger after its first execution if [`true`](../../Swift/true.md).
 

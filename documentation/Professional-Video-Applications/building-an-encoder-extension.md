@@ -5,19 +5,19 @@
 
 Create an encoder extension in Xcode by using the Encoder Extension template.
 
-#### Overview
+## Overview
 
 When you want to integrate a custom output file format into the Compressor export settings to allow users to export their Final Cut Pro projects to that format, consider creating an encoder extension. You add and configure an encoder extension as a separate target alongside a macOS app. If you don’t have a functional macOS app, create an empty one to contain the encoder extension. The app that contains your extension is called the *container app*.
 
 Use the Xcode template project that comes with the Compressor Extension SDK as a starting point to create your encoder extension.
 
-##### Install the Compressor Extension SDK
+### Install the Compressor Extension SDK
 
 Download and install the Compressor Extension SDK from [Apple’s developer website](https://developer.apple.com/download/all/?q=Encoder).
 
 Run the installer that comes with the Compressor Extension SDK. It installs the Xcode template in the appropriate locations on your computer.
 
-##### Add an Encoder Extension Target to Your Project
+### Add an Encoder Extension Target to Your Project
 
 To add an encoder extension target to your macOS app:
 
@@ -34,7 +34,7 @@ The Xcode template sets up relevant build options and creates an initial set of 
 
 The Xcode template configures the `Info.plist` file in your initial project with the default information about your extension capabilities, and identifies your extension as a Compressor app encoder extension. In most cases, you don’t need to modify this file. For an explanation of the available keys and values, see the Information Property List Keys.
 
-##### Build and Run Your Project
+### Build and Run Your Project
 
 To ensure that the system can find and register your extension for use within the Compressor app interface, build and run your project. In the Xcode Editor toolbar, click the Run button (►), or choose Product > Run (Command-R).
 
@@ -44,7 +44,7 @@ To customize your extension, modify the target’s source and resource file as y
 
 > **Note**:  Launching the container app once registers your extension as an available encoder extension for the Compressor app.
 
-##### Debug Your Encoder Extension
+### Debug Your Encoder Extension
 
 After the build and run process is complete, the Compressor app makes your extension available in its interface. To view your extension, launch the Compressor app. In the Settings pane, click the Add pop-up menu and select New Setting. The new extension should now be visible in the Format menu of the dialog that appears.
 
@@ -59,7 +59,7 @@ To attach the Xcode debugger after launching the extension:
 
 The Xcode debugger attaches to the extension’s process, sets active breakpoints, and lets the extension execute. At this point, you can use the same Xcode debugging features you use to debug other processes.
 
-##### Distribute Your Extension
+### Distribute Your Extension
 
 To distribute your encoder extension to users, submit the container app to the App Store. When a user installs the containing app, the extension it contains is installed and becomes available in the Compressor interface.
 

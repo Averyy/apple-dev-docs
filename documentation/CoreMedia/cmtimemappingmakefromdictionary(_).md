@@ -25,11 +25,11 @@ func CMTimeMappingMakeFromDictionary(_ dictionaryRepresentation: CFDictionary) -
 extern CMTimeMapping CMTimeMappingMakeFromDictionary(CFDictionaryRef dictionaryRepresentation);
 ```
 
-#### Return Value
+## Return Value
 
 A new time mapping.
 
-#### Discussion
+## Discussion
 
 If the dictionary you provide doesn’t have the requisite keyed values, the system returns an invalid time mapping.
 

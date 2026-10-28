@@ -21,7 +21,7 @@ var switchedOnContents: TCControlContents? { get set }
 @property (nonatomic, strong, nullable) TCControlContents * switchedOnContents;
 ```
 
-#### Discussion
+## Discussion
 
 This value can be `nil`.
 

@@ -5,7 +5,7 @@
 
 Create offscreen textures to hold intermediate rasterized data.
 
-#### Overview
+## Overview
 
 You don’t render data directly to the final render destination using variable rasterization rates. Instead, you allocate textures to use as intermediate targets. You get the sizes for these textures from the rate map. For example, if you specified a rate of `0.5` everywhere, the intermediate texture is half the height and width of the final render target.
 

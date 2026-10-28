@@ -16,7 +16,7 @@ Returns a new property state with a value.
 + (instancetype) propertyStateWithValue:(ObjectType) value;
 ```
 
-#### Return Value
+## Return Value
 
 A new property state.
 

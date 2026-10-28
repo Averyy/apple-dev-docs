@@ -10,7 +10,7 @@
 @property BOOL enforceRoutes;
 ```
 
-#### Discussion
+## Discussion
 
 If YES, route rules for this tunnel will take precendence over any locally-defined routes. The default is NO. The enforceRoutes property in NEVPNProtocol class takes precedence if set.
 

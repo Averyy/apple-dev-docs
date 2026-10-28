@@ -17,7 +17,7 @@ var isLookToScrollEnabled: Bool { get set }
 @property (nonatomic) BOOL isLookToScrollEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 A Boolean value indicating whether LookToScroll is enabled.
 

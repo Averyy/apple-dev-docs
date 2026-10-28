@@ -21,7 +21,7 @@ Authors an override prim at a given path, if no prim exists at that path.
 func overridePrim(at path: USDLayer.Path) -> USDPrim
 ```
 
-#### Discussion
+## Discussion
 
 If a prim already exists at the given path, this function returns that prim. If no prim exists at that path, the prim authored by this function will be an [`USDPrim.Specifier.over`](../usdprim/specifier-swift.enum/over.md) prim with no authored type.
 

@@ -24,7 +24,7 @@ class UITabBarAppearance
 @interface UITabBarAppearance : UIBarAppearance
 ```
 
-#### Overview
+## Overview
 
 After creating a [`UITabBarAppearance`](./uitabbarappearance.md) object, use the methods and properties of this class to specify the appearance of items in the tab bar. Use the inherited properties from [`UIBarAppearance`](./uibarappearance.md) to configure the background and shadow attributes of the tab bar itself.
 

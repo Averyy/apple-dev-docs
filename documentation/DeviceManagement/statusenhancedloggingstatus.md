@@ -19,9 +19,9 @@ The status item that reports the device’s enhanced log collection session stat
 object StatusEnhancedLoggingStatus
 ```
 
-#### Discussion
+## Discussion
 
-##### Status item availability
+### Status item availability
 
 |  |  |
 | --- | --- |
@@ -32,7 +32,7 @@ object StatusEnhancedLoggingStatus
 | Allowed in system scope | iOS, Shared iPad, tvOS |
 | Allowed in user scope | macOS |
 
-##### Status item example
+### Status item example
 
 ```json
 {

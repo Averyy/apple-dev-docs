@@ -24,7 +24,7 @@ class CLBeaconIdentityConstraint
 @interface CLBeaconIdentityConstraint : CLBeaconIdentityCondition
 ```
 
-#### Overview
+## Overview
 
 A constraint specifies beacon identity characteristics. Use constraints to check for matching beacons by comparing the beacon’s identity characteristics ([`uuid`](./clbeacon/uuid.md), [`major`](./clbeacon/major.md), and [`minor`](./clbeacon/minor.md)) to those in the constraint.
 

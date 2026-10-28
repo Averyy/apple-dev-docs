@@ -16,11 +16,11 @@ Initializes a newly allocated NSDistantObject as a remote proxy for `target`, wh
 - (instancetype) initWithTarget:(id) target connection:(NSConnection *) connection;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSDistantObject` object initialized as a remote proxy for `target`. If a proxy for `target` and `connection` already exists, the receiver is released and the existing proxy is retained and returned.
 
-#### Discussion
+## Discussion
 
 A remote proxy can’t be used until its connection’s peer has a local proxy representing `target` in the other application.
 

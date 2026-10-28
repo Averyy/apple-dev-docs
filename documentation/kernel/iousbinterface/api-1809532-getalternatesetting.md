@@ -9,11 +9,11 @@
 virtual UInt8 GetAlternateSetting();
 ```
 
-#### Return Value
+## Return Value
 
 the alternate setting
 
-#### Overview
+## Overview
 
 returns the alternate setting for this interface.
 

@@ -18,7 +18,7 @@ The firmware version of the dock accessory.
 final var firmwareVersion: String? { get }
 ```
 
-#### Discussion
+## Discussion
 
 The format of the version is major, minor, and revision, separated by periods.
 

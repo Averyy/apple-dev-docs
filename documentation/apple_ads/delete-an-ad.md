@@ -11,7 +11,7 @@ Deletes an ad from an ad group.
 
 > **Deprecated**: Apple Ads Campaign Management API is deprecated. Instead, use the [Apple Ads Platform API](../apple-ads-platform-api/apple-ads-platform-api.md).
 
-#### Discussion
+## Discussion
 
 Use this endpoint to delete an [`Ad`](./ad.md) assignment from an ad group. Use your `adId` in the resource path.
 

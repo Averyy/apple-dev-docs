@@ -19,11 +19,11 @@ func NewAECoerceDescUPP(_ userRoutine: AECoerceDescProcPtr!) -> AECoerceDescUPP!
 AECoerceDescUPP NewAECoerceDescUPP(AECoerceDescProcPtr userRoutine);
 ```
 
-#### Return Value
+## Return Value
 
 See [`AECoerceDescUPP`](./aecoercedescupp.md).
 
-#### Discussion
+## Discussion
 
 See the [`AECoerceDescProcPtr`](./aecoercedescprocptr.md) callback function. 
 

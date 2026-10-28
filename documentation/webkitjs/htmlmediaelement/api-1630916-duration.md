@@ -16,7 +16,7 @@ The length of the media resource in seconds. (read-only)
 readonly attribute unrestricted double duration;
 ```
 
-#### Discussion
+## Discussion
 
 This property is `0` if there is no media data available. This property is `NaN` if the duration is unknown. The value is positive infinity if the duration is known but is indefinite—for example, a live stream.
 

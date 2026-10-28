@@ -20,11 +20,11 @@ func AudioHardwareUnload() -> OSStatus
 extern OSStatus AudioHardwareUnload();
 ```
 
-#### Return Value
+## Return Value
 
 An OSStatus indicating success or failure.
 
-#### Discussion
+## Discussion
 
 When this routine is called, all IO on all devices within a process will be terminated and all resources capable of being released will be released. This routine essentially returns the HAL to its uninitialized state.
 

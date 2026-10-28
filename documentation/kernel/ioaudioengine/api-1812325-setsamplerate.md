@@ -12,7 +12,7 @@ virtual void setSampleRate(
  const IOAudioSampleRate *newSampleRate);
 ```
 
-#### Overview
+## Overview
 
 This method must be called during initialization of a new audio engine to record the audio engine's initial sample rate. It also is intended to be used to record changes to the sample rate during use. Currently changing sample rates after the audio engine has been started is not supported. It may require that the sample buffers be re-sized. This will be available in an upcoming release.
 

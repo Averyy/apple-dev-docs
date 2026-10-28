@@ -20,7 +20,7 @@ Resolution of the shape.
 var boundaryResolution: MeshResource.ShapeExtrusionOptions.CurveStrokeResolution
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`MeshResource.ShapeExtrusionOptions.CurveStrokeResolution.uniformSegmentsPerSpan(segmentCount:)`](./curvestrokeresolution/uniformsegmentsperspan%28segmentcount%29.md) with a segment count of 6.
 

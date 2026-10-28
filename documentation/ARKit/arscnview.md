@@ -24,7 +24,7 @@ class ARSCNView
 @interface ARSCNView : SCNView
 ```
 
-#### Overview
+## Overview
 
 > ❗ **Important**: SceneKit is deprecated, use [RealityKit](../RealityKit/RealityKit.md) instead. For more information, see WWDC25 session 288: [Bring your SceneKit projects to RealityKit](https://developer.apple.com/videos/play/wwdc2025/288/).
 

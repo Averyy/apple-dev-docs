@@ -21,7 +21,7 @@ A closure that maps dates to their string representations.
 var dateFormatter: (Date) -> String
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to ISO 8601 encoding.
 

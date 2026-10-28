@@ -23,7 +23,7 @@ var art: CGImage { get }
 @property (nonatomic, readonly) CGImageRef art;
 ```
 
-#### Discussion
+## Discussion
 
 The image requirements are:
 

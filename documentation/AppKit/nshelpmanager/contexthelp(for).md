@@ -19,7 +19,7 @@ func contextHelp(for object: Any) -> NSAttributedString?
 - (NSAttributedString *) contextHelpForObject:(id) object;
 ```
 
-#### Return Value
+## Return Value
 
 Context-sensitive help content.
 

@@ -16,7 +16,7 @@ Calculates and returns the most appropriate size for the current view.
 @preconcurrency func sizeThatFits(in size: CGSize) -> CGSize
 ```
 
-#### Return Value
+## Return Value
 
 The size that offers the best fit for the root view and its contents.
 

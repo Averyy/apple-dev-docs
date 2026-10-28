@@ -20,7 +20,7 @@ The complete path to the nearest prim that contains this property.
 var primPath: USDLayer.Path { get }
 ```
 
-#### Discussion
+## Discussion
 
 `primPath` is the [`path`](../path.md) of this property’s [`prim`](./prim.md).
 

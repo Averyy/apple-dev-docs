@@ -21,19 +21,19 @@ Implements `watchSnapshot` by getting the current snapshot and emitting it immed
 ## Declaration
 
 ```swift
-nonisolated
-(nonsending) func watchSnapshotFromSnapshot<Return>(updatesHandler: nonisolated(nonsending) (ConfigUpdatesAsyncSequence<any ConfigSnapshot, Never>) async throws -> Return) async throws -> Return where Return : ~Copyable
+nonisolated(nonsending)
+func watchSnapshotFromSnapshot<Return>(updatesHandler: nonisolated(nonsending) (ConfigUpdatesAsyncSequence<any ConfigSnapshot, Never>) async throws -> Return) async throws -> Return where Return : ~Copyable
 ```
 
 ## Mentions
 
 - [Implementing a custom provider](../implementing-a-provider.md)
 
-#### Return Value
+## Return Value
 
 The value returned by the handler closure.
 
-#### Discussion
+## Discussion
 
 Use this convenience method for providers whose state doesn’t change over time. The method creates an async sequence that emits the current snapshot once and then remains idle.
 

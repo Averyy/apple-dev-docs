@@ -21,7 +21,7 @@ Determines if a tag collection contains a specific tag.
 extern Boolean CMTagCollectionContainsTag(CMTagCollectionRef tagCollection, CMTag tag);
 ```
 
-#### Return Value
+## Return Value
 
 Returns `YES` if any tag in the collection is equal to `tag`.
 

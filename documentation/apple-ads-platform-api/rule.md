@@ -15,11 +15,11 @@ A single filter rule for a dynamic location group.
 object Rule
 ```
 
-#### Discussion
+## Discussion
 
 The `Rule` object defines a filter for a `DYNAMIC` `LocationGroup`, specifying how the system selects locations at query time. Rules can mix different `field` values within the same group, and the system re-evaluates location membership whenever rules change, setting `LocationGroup.systemStatus` to `PENDING` until evaluation completes.
 
-##### Example
+### Example
 
 ```json
 {

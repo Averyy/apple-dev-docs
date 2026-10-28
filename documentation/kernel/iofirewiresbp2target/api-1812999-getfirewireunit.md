@@ -12,11 +12,11 @@ virtual IOFireWireUnit * getFireWireUnit(
  void );
 ```
 
-#### Return Value
+## Return Value
 
 Returns a pointer to an IOFireWireUnit.
 
-#### Overview
+## Overview
 
 An IOFireWireUnit is the provider of an IOFireWireSBP2Target. In order to use the base FireWire services you will need a reference to the unit. This method returns that reference.
 

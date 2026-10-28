@@ -24,11 +24,11 @@ func SSLGetClientCertificateState(_ context: SSLContext, _ clientState: UnsafeMu
 OSStatus SSLGetClientCertificateState(SSLContextRef context, SSLClientCertificateState *clientState);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Secure Transport Result Codes](./secure-transport-result-codes.md).
 
-#### Discussion
+## Discussion
 
 The value returned reflects the latest change in the state of the client certificate exchange. If either peer initiates a renegotiation attempt, Secure Transport resets the state to `kSSLClientCertNone`.
 

@@ -29,7 +29,7 @@ func start(atTime time: TimeInterval) throws
 
 - [Playing a single-tap haptic pattern](../playing-a-single-tap-haptic-pattern.md)
 
-#### Discussion
+## Discussion
 
 If `time` is `0` or any value less than the haptic engine’s [`currentTime`](../chhapticengine/currenttime.md), the pattern starts playing immediately. If you call this method on a player that’s already playing, it restarts itself at the beginning of the pattern.
 

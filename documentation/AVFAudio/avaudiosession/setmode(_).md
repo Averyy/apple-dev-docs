@@ -24,7 +24,7 @@ func setMode(_ mode: AVAudioSession.Mode) throws
 - (BOOL) setMode:(AVAudioSessionMode) mode error:(NSError **) outError;
 ```
 
-#### Discussion
+## Discussion
 
 The audio session’s category and mode together define how your app uses audio. Typically, you set the category and mode before activating the session. You can also set the category or mode while the session is active, but doing so results in an immediate change.
 

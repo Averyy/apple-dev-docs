@@ -23,7 +23,7 @@ static let subjectTooClose: AVSpatialCaptureDiscomfortReason
 extern AVSpatialCaptureDiscomfortReason const AVSpatialCaptureDiscomfortReasonSubjectTooClose;
 ```
 
-#### Discussion
+## Discussion
 
 The playback experience would likely be uncomfortable due to the subject being closer than the minimum focus distance of one or both of the lenses.
 

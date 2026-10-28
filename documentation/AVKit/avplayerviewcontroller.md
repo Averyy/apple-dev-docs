@@ -33,23 +33,23 @@ class AVPlayerViewController
 - [Working with interstitial content](./working-with-interstitial-content.md)
 - [Adopting Picture in Picture in a standard player](./adopting-picture-in-picture-in-a-standard-player.md)
 
-#### Overview
+## Overview
 
 A player view controller makes it simple to add media playback capabilities to your app that match the styling and features of the native system players. Using this object also means that your app automatically adopts the new features and styling of future operating system releases.
 
 > ❗ **Important**:  The framework doesn’t support subclassing `AVPlayerViewController`.
 
-##### Support AirPlay
+### Support AirPlay
 
 AirPlay lets people stream media to Apple TV, HomePod, and AirPlay 2-compatible speakers and smart TVs. A player view controller supports AirPlay automatically, but you need to configure your app to enable it. See [Configuring your app for media playback](../AVFoundation/configuring-your-app-for-media-playback.md) for more information about configuring your app for background playback.
 
-##### Adopt Picture in Picture playback
+### Adopt Picture in Picture playback
 
 `AVPlayerViewController` provides Picture in Picture (PiP) playback in iOS and tvOS. PiP playback lets people minimize the video player to a small floating window so they can perform other activities in the primary app or in another app.
 
 > **Note**: To enable PiP playback in your macOS app, use [`AVPlayerView`](./avplayerview.md).
 
-##### Customize the tvOS playback experience
+### Customize the tvOS playback experience
 
 `AVPlayerViewController` in tvOS brings advanced Siri Remote control features to your app. This support lets people play and navigate your content, and access supporting features like subtitles and alternate audio tracks. This object also provides support for using Siri Remote voice commands, such as “Skip ahead 15 seconds” and “What did they say?” to control playback of your content.
 

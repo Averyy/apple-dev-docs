@@ -25,7 +25,7 @@ var hitchTimeRatio: Measurement<Unit> { get }
 @property (strong, readonly, nonnull) NSMeasurement<NSUnit *> * hitchTimeRatio;
 ```
 
-#### Discussion
+## Discussion
 
 Hitches are user-perceivable animation issues, such as pauses or jumps that occur during scrolling. This metric incorporates adjustments that optimize for quantifying human perception, and typically is the most accurate representation of hitches people experience during app usage.
 

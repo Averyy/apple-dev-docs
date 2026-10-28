@@ -19,7 +19,7 @@ The handle that identifies the local participant to remote participants.
 final var localMember: Handle? { get }
 ```
 
-#### Discussion
+## Discussion
 
 The `localMember` is only available to the [`ConversationManager`](../conversationmanager.md) that provides the [`Conversation`](../conversation.md).
 

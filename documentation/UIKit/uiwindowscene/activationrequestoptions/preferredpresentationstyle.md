@@ -25,7 +25,7 @@ var preferredPresentationStyle: UIWindowScene.PresentationStyle { get set }
 @property (nonatomic, readwrite) UIWindowScenePresentationStyle preferredPresentationStyle;
 ```
 
-#### Discussion
+## Discussion
 
 The presentation style determines how the system displays the new window scene relative to other scenes in the workspace. The default style is [`UIWindowScene.PresentationStyle.automatic`](../presentationstyle/automatic.md).
 

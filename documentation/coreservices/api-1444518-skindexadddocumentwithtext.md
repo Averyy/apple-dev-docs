@@ -19,11 +19,11 @@ func SKIndexAddDocumentWithText(_ inIndex: SKIndex!, _ inDocument: SKDocument!, 
 Boolean SKIndexAddDocumentWithText(SKIndexRef inIndex, SKDocumentRef inDocument, CFStringRef inDocumentText, Boolean inCanReplace);
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value of `true` on success, or `false` on failure. Also returns `false` if the document has an entry in the index and `inCanReplace` is set to `false`.
 
-#### Discussion
+## Discussion
 
 Use this function to add the textual contents of arbitrary document types to an index. With this function, your application takes responsibility for getting textual content and handing it to the index as A [`CFString`](../CoreFoundation/cfstring.md) object. Because of this, your application can define what it considers to be a document—a database record, a tagged field in an XML document, an object in memory, a text file, and so on.
 
@@ -35,7 +35,7 @@ Search Kit is thread-safe. You can use separate indexing and searching threads. 
 
 A single Search Kit index file can be up to 4 GB in size.
 
-##### Special Considerations
+### Special Considerations
 
 In OS X v10.3, some functions do not provide expected results unless you follow a call to `SKIndexAddDocumentWithText` with a call to [`SKIndexFlush(_:)`](./api-1450667-skindexflush.md). The affected functions include [`SKIndexGetDocumentCount(_:)`](./api-1449093-skindexgetdocumentcount.md), [`SKIndexGetDocumentTermCount(_:_:)`](./api-1448341-skindexgetdocumenttermcount.md), [`SKIndexGetDocumentTermFrequency(_:_:_:)`](./api-1447537-skindexgetdocumenttermfrequency.md), and [`SKIndexGetTermDocumentCount(_:_:)`](./api-1444015-skindexgettermdocumentcount.md). However, in typical use this won’t be an issue, because applications call these functions after a search, and you must call `SKIndexFlush` before a search.
 

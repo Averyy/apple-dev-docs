@@ -17,7 +17,7 @@ The reason you asked to verify someone’s card.
 let verificationReason: PaymentCardVerificationRequest.Reason
 ```
 
-#### Discussion
+## Discussion
 
 The system uses the supplied reason to display an appropriate message in the system UI about why they need to present their card.
 

@@ -25,7 +25,7 @@ var matchedString: String { get }
 @property (nonatomic, readonly) NSString * matchedString;
 ```
 
-#### Discussion
+## Discussion
 
 Use `DDMatch` subclasses that the data detection system provides for a semantic interpretation of this string.
 

@@ -19,7 +19,7 @@ weak var delegate: (any VZCustomVirtioDeviceDelegate)? { get set }
 @property (weak, nullable) id<VZCustomVirtioDeviceDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 To be able to respond to events from a [`VZCustomVirtioDevice`](../vzcustomvirtiodevice.md), implement a class that conforms to the [`VZCustomVirtioDeviceDelegate`](../vzcustomvirtiodevicedelegate.md) protocol and assign it to this property. You can call the delegate as soon as [`customVirtioConfiguration(_:didCreateDevice:)`](../vzcustomvirtiodeviceconfigurationdelegate/customvirtioconfiguration%28_,didcreatedevice%29.md) returns, to avoid missing any calls, set this delegate when the framework calls [`customVirtioConfiguration(_:didCreateDevice:)`](../vzcustomvirtiodeviceconfigurationdelegate/customvirtioconfiguration%28_,didcreatedevice%29.md).
 

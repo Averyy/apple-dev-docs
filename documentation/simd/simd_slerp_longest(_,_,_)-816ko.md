@@ -14,7 +14,7 @@ func simd_slerp_longest(_ q0: simd_quath, _ q1: simd_quath, _ t: Float16) -> sim
 static simd_quath simd_slerp_longest(simd_quath q0, simd_quath q1, _Float16 t);
 ```
 
-#### Discussion
+## Discussion
 
 Spherical linear interpolation along the longest arc between quaternions `q0` and `q1`.
 

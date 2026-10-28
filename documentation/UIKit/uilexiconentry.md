@@ -23,7 +23,7 @@ class UILexiconEntry
 @interface UILexiconEntry : NSObject
 ```
 
-#### Overview
+## Overview
 
 You can employ a lexicon entry by matching user input against the entry’s [`userInput`](./uilexiconentry/userinput.md) value, and then inserting into the current text input object the corresponding [`documentText`](./uilexiconentry/documenttext.md) value. For example, if the user typed the string “iphone”, the lexicon entry with that exact, case-sensitive string in the [`userInput`](./uilexiconentry/userinput.md) property has the string “iPhone” in the corresponding [`documentText`](./uilexiconentry/documenttext.md) property.
 

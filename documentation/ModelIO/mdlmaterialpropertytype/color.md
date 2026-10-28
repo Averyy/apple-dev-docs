@@ -24,7 +24,7 @@ case color
 MDLMaterialPropertyTypeColor
 ```
 
-#### Discussion
+## Discussion
 
 Use the [`color`](../mdlmaterialproperty/color.md) property to access the material property’s value.
 

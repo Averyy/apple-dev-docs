@@ -21,7 +21,7 @@ The set of TLS options available when using QUIC.
 struct TLS
 ```
 
-#### Overview
+## Overview
 
 Used to configure the TLS handshake that runs within the QUIC handshake.
 

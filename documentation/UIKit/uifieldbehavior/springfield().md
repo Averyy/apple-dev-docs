@@ -23,11 +23,11 @@ class func springField() -> Self
 + (instancetype) springField;
 ```
 
-#### Return Value
+## Return Value
 
 A field behavior object that applies spring effects to items.
 
-#### Discussion
+## Discussion
 
 A spring field behavior object uses Hooke’s law to calculate the force applied to objects in the field. With this law, the amount of force is linearly proportional to the distance from the center of the field. An item entering this field oscillates with a period proportional to the inverse of its density. You can use this field behavior to keep items confined to a particular region. Use the item’s resistance to reduce its linear velocity (and thus the amount of oscillation) over time.
 

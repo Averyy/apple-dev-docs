@@ -20,7 +20,7 @@ The array type corresponding to this type.
 var array: USDPrim.Attribute.ValueType { get }
 ```
 
-#### Discussion
+## Discussion
 
 If this type is already an array type, returns the type unchanged.
 

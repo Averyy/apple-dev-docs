@@ -19,7 +19,7 @@ var usesEPSOnResolutionMismatch: Bool { get set }
 @property BOOL usesEPSOnResolutionMismatch;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`false`](../../Swift/false.md).
 

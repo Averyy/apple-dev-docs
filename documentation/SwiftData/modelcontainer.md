@@ -27,7 +27,7 @@ class ModelContainer
 - [Reverting data changes using the undo manager](./reverting-data-changes-using-the-undo-manager.md)
 - [Syncing model data across a person’s devices](./syncing-model-data-across-a-persons-devices.md)
 
-#### Overview
+## Overview
 
 A model container mediates between its associated model contexts and your app’s underlying persistent storage. The container manages all aspects of that storage and ensures it remains in a consistent and usable state. Whenever you run a fetch or call a context’s [`save()`](./modelcontext/save%28%29.md) method, the container performs the actual read or write of the underlying data using information from the schema you provide. This helps safeguard an app’s resources and ensures those operations happen only in an efficient and coordinated manner. Additionally, if your app’s entitlements include CloudKit, the container automatically handles syncing the persisted storage across devices. For more information about syncing model data, see [Syncing model data across a person’s devices](./syncing-model-data-across-a-persons-devices.md).
 

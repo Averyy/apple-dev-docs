@@ -18,7 +18,7 @@ type LookAroundErrorEvent = CustomEvent<{
 }>;
 ```
 
-#### Discussion
+## Discussion
 
 The event object describes the error with a [`LookAroundErrorType`](./lookarounderrortype.md) value and a message.
 

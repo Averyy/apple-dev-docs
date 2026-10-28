@@ -26,7 +26,7 @@ protocol MCNearbyServiceAdvertiserDelegate : NSObjectProtocol
 @protocol MCNearbyServiceAdvertiserDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 No assumption should be made about which queue the delegate methods are called on. It is the receiver’s responsibility to ensure that any `UIKit` updates are called on the main thread.
 

@@ -19,11 +19,11 @@ class var branchImage: NSImage? { get }
 @property (class, strong, readonly, nullable) NSImage * branchImage;
 ```
 
-#### Return Value
+## Return Value
 
 The default image used for branch `NSBrowserCell` objects. The default image is a right-pointing triangle.
 
-#### Discussion
+## Discussion
 
 Override this method if you want a different image. To have a branch `NSBrowserCell` with no image (and no space reserved for an image), override this method to return `nil`.
 

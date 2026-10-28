@@ -25,7 +25,7 @@ func xpc_null_create() -> xpc_object_t
 extern xpc_object_txpc_null_create();
 ```
 
-#### Return Value
+## Return Value
 
 A new null object.
 

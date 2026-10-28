@@ -27,7 +27,7 @@ extern NSString * const SKStoreProductParameterAdNetworkAttributionSignature;
 - [Generating the signature to validate StoreKit-rendered ads](./generating-the-signature-to-validate-storekit-rendered-ads.md)
 - [Signing and providing ads](./signing-and-providing-ads.md)
 
-#### Discussion
+## Discussion
 
 The value for this key is an [`NSString`](../Foundation/nsstring.md). The ad network creates the cryptographic signature, used to sign ads. For instructions on generating this value, see [Generating the signature to validate StoreKit-rendered ads](./generating-the-signature-to-validate-storekit-rendered-ads.md).
 

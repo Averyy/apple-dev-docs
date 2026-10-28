@@ -27,7 +27,7 @@ optional func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WK
 - (void) webView:(WKWebView *) webView decidePolicyForNavigationAction:(WKNavigationAction *) navigationAction preferences:(WKWebpagePreferences *) preferences decisionHandler:(void (^)(enum WKNavigationActionPolicy, WKWebpagePreferences *)) decisionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to allow or deny a navigation request that originated with the specified action. The web view calls this method after the interaction occurs but before it attempts to load any content. If you implement this method, always execute the `decisionHandler` block at some point. You may execute it synchronously from your delegate method’s implementation, or execute it asynchronously after your method returns.
 

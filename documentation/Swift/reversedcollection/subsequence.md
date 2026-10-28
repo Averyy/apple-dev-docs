@@ -23,7 +23,7 @@ typealias SubSequence = Slice<ReversedCollection<Base>>
 
 Available when `Base` conforms to `BidirectionalCollection`.
 
-#### Discussion
+## Discussion
 
 The default subsequence type for collections that don’t define their own is `Slice`.
 

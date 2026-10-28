@@ -19,7 +19,7 @@ func noteFocusRingMaskChanged()
 - (void) noteFocusRingMaskChanged;
 ```
 
-#### Discussion
+## Discussion
 
 It is important to note that it is only necessary for developers to invoke this method when some internal state change of their application, that AppKit can’t determine, affects the shape of the focus ring mask.
 

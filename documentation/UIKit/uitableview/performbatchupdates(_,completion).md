@@ -23,7 +23,7 @@ func performBatchUpdates(_ updates: (() -> Void)?, completion: ((Bool) -> Void)?
 - (void) performBatchUpdates:(void (^)()) updates completion:(void (^)(BOOL finished)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method in cases where you want to make multiple changes to the table view in one single animated operation, as opposed to several separate animations. Use the block passed in the `updates` parameter to specify all of the operations you want to perform.
 

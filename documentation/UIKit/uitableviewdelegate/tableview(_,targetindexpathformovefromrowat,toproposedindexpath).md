@@ -23,11 +23,11 @@ optional func tableView(_ tableView: UITableView, targetIndexPathForMoveFromRowA
 - (NSIndexPath *) tableView:(UITableView *) tableView targetIndexPathForMoveFromRowAtIndexPath:(NSIndexPath *) sourceIndexPath toProposedIndexPath:(NSIndexPath *) proposedDestinationIndexPath;
 ```
 
-#### Return Value
+## Return Value
 
 An index path locating the desired row destination for the move operation. Return `proposedDestinationIndexPath` if that location is suitable.
 
-#### Discussion
+## Discussion
 
 This method allows customization of the target row for a particular row as it is being moved up and down a table view.  As the dragged row hovers over another row, the destination row slides downward to visually make room for the relocation; this is the location identified by `proposedDestinationIndexPath`.
 

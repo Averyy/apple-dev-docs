@@ -25,7 +25,7 @@ var width: Float { get set }
 @property (nonatomic) float width;
 ```
 
-#### Discussion
+## Discussion
 
 The value is rounded to the nearest odd integer.
 

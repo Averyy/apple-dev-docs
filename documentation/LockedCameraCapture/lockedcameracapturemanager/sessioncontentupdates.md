@@ -16,7 +16,7 @@ An `AsyncSequence` to process captured content from your capture extension.
 final var sessionContentUpdates: some AsyncSequence<LockedCameraCaptureManager.SessionContentUpdate, Never> { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use this to process captured content as soon as it is available after your app launches.
 

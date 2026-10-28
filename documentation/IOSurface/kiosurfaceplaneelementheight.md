@@ -24,7 +24,7 @@ let kIOSurfacePlaneElementHeight: CFString
 extern CFStringRef const kIOSurfacePlaneElementHeight;
 ```
 
-#### Discussion
+## Discussion
 
 Optional, default is 1.
 

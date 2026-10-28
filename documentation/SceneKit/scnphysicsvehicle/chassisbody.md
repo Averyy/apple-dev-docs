@@ -25,7 +25,7 @@ var chassisBody: SCNPhysicsBody { get }
 @property (nonatomic, readonly) SCNPhysicsBody * chassisBody;
 ```
 
-#### Discussion
+## Discussion
 
 The vehicle’s chassis must be a dynamic body.
 

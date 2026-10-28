@@ -21,7 +21,7 @@ An error indicating that the certificate chain is invalid.
 case invalidCertificateChain
 ```
 
-#### Discussion
+## Discussion
 
 This error may occur if one or more certificates in the certiificate chain are expired or from an untrusted source.
 

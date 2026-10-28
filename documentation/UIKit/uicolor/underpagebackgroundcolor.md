@@ -17,7 +17,7 @@ The system pattern color to use for the background of a page.
 @property (class, nonatomic, readonly) UIColor * underPageBackgroundColor;
 ```
 
-#### Return Value
+## Return Value
 
 The `UIColor` object.
 

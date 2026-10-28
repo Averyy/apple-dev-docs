@@ -19,7 +19,7 @@ var title: String? { get set }
 @property (nonatomic, copy, nullable) NSString * title;
 ```
 
-#### Discussion
+## Discussion
 
 This string contains the item’s content and is displayed when the item is selected. Titles are used for pickers configured to display a list. They are not shown for stack and image sequence styles.
 

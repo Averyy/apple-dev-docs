@@ -21,7 +21,7 @@ The animation has logically completed, but may still be in its long tail.
 static let logicallyComplete: AnimationCompletionCriteria
 ```
 
-#### Discussion
+## Discussion
 
 If a subsequent change occurs that creates additional animations on properties with `logicallyComplete` completion callbacks registered, then those callbacks will fire when the animations from the change that they were registered with logically complete, ignoring the new animations.
 

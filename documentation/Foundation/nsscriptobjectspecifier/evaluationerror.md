@@ -20,11 +20,11 @@ var evaluationError: NSScriptObjectSpecifier? { get }
 @property (retain, readonly, nullable) NSScriptObjectSpecifier * evaluationErrorSpecifier;
 ```
 
-#### Return Value
+## Return Value
 
 The object specifier in which an evaluation error occurred.
 
-#### Discussion
+## Discussion
 
 The object specifier failing to evaluate could be the receiver or any container specifier “above” the receiver.
 

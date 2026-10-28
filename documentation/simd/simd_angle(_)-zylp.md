@@ -14,7 +14,7 @@ func simd_angle(_ q: simd_quath) -> Float16
 static _Float16 simd_angle(simd_quath q);
 ```
 
-#### Discussion
+## Discussion
 
 The angle (in radians) of rotation represented by `q`.
 

@@ -15,7 +15,7 @@ A class that manages a transport session between the extension and the system.
 class AccessoryTransportSession
 ```
 
-#### Overview
+## Overview
 
 The [`AccessoryTransportAppExtension`](./accessorytransportappextension.md) protocol’s [`accept(sessionRequest:)`](./accessorytransportappextension/accept%28sessionrequest%29.md) method receives a [`AccessoryTransportSession.Request`](./accessorytransportsession/request.md) object containing an instance of this class.
 

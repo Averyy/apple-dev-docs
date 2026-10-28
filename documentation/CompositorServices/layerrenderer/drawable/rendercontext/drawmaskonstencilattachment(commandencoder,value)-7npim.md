@@ -20,7 +20,7 @@ func drawMaskOnStencilAttachment(commandEncoder command_encoder: any MTL4RenderC
 void cp_drawable_render_context_mtl4_draw_mask_on_stencil_attachment(cp_drawable_render_context_t render_context, id<MTL4RenderCommandEncoder>command_encoder, uint8_t value);
 ```
 
-#### Discussion
+## Discussion
 
 In full and mixed immersion styles, [`drawMaskOnStencilAttachment(commandEncoder:value:)`](./drawmaskonstencilattachment%28commandencoder,value%29-65i67.md) stores the full texture. The command encoder used in the render context has the following constraints:
 

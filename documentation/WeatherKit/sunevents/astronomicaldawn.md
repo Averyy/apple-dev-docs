@@ -21,7 +21,7 @@ The time of astronomical sunrise when the sun’s center is 18° below the horiz
 var astronomicalDawn: Date?
 ```
 
-#### Discussion
+## Discussion
 
 A small portion of the sun’s rays begin to illuminate the sky and stars begin to disappear. This property is optional because it’s possible for the sun to not rise on a given day, at extreme latitudes.
 

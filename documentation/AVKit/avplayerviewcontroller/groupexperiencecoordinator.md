@@ -19,7 +19,7 @@ var groupExperienceCoordinator: AVGroupExperienceCoordinator { get }
 @property (nonatomic, readonly) AVGroupExperienceCoordinator * groupExperienceCoordinator;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to coordinate a group experience among participating view controllers.
 

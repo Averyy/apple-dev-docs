@@ -23,7 +23,7 @@ Returns a new normalization layer parameters structure from the specified parame
 init(i_desc: BNNSNDArrayDescriptor, o_desc: BNNSNDArrayDescriptor, beta_desc: BNNSNDArrayDescriptor, gamma_desc: BNNSNDArrayDescriptor, moving_mean_desc: BNNSNDArrayDescriptor, moving_variance_desc: BNNSNDArrayDescriptor, momentum: Float, epsilon: Float, activation: BNNSActivation, num_groups: Int, normalization_axis: Int)
 ```
 
-#### Discussion
+## Discussion
 
 [`moving_mean_desc`](./moving_mean_desc.md) and [`moving_variance_desc`](./moving_variance_desc.md) are only applicable to batch- and instance-normalization.
 

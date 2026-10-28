@@ -19,7 +19,7 @@ class let willPopUpNotification: NSNotification.Name
 extern NSNotificationName NSComboBoxWillPopUpNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is the `NSComboBox` whose pop-up window will be displayed. This notification does not contain a `userInfo` dictionary.
 

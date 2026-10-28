@@ -15,7 +15,7 @@ This property requests that the Metal device corresponding to the specified regi
 extern CFStringRef const kVTRAWProcessingPropertyKey_MetalDeviceRegistryID;
 ```
 
-#### Discussion
+## Discussion
 
 This property is not supported by all RAW processors.
 

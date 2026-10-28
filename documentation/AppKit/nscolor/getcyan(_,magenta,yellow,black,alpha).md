@@ -19,7 +19,7 @@ func getCyan(_ cyan: UnsafeMutablePointer<CGFloat>?, magenta: UnsafeMutablePoint
 - (void) getCyan:(CGFloat *) cyan magenta:(CGFloat *) magenta yellow:(CGFloat *) yellow black:(CGFloat *) black alpha:(CGFloat *) alpha;
 ```
 
-#### Discussion
+## Discussion
 
 If `NULL` is passed in as an argument, the method doesn’t set that value. This method works only with objects representing colors in the [`deviceCMYK`](../nscolorspacename/devicecmyk.md). Sending it to other objects raises an exception.
 

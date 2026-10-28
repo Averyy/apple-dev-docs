@@ -17,11 +17,11 @@ Specifies whether certificate expiration times are ignored.
 OSStatus SSLSetAllowsExpiredCerts(SSLContextRef context, Boolean allowsExpired);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Secure Transport Result Codes](./secure-transport-result-codes.md).
 
-#### Discussion
+## Discussion
 
 You can use this function to allow the handshake to succeed even if one or more certificates in the certificate chain have expired. You can use the [`SSLGetAllowsExpiredCerts`](./sslgetallowsexpiredcerts.md) function to determine the current setting of the `allowsExpired` flag.
 

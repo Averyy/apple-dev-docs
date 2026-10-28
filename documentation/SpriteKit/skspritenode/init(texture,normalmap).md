@@ -25,7 +25,7 @@ convenience init(texture: SKTexture?, normalMap: SKTexture?)
 + (instancetype) spriteNodeWithTexture:(SKTexture *) texture normalMap:(SKTexture *) normalMap;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized sprite object.
 

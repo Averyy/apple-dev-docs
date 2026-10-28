@@ -23,7 +23,7 @@ typealias SubSequence = Slice<LazySequence<Base>>
 
 Available when `Base` conforms to `Collection`.
 
-#### Discussion
+## Discussion
 
 The default subsequence type for collections that don’t define their own is `Slice`.
 

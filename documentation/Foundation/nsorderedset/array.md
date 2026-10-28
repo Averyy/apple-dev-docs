@@ -25,7 +25,7 @@ var array: [Any] { get }
 @property (strong, readonly) NSArray<id> * array;
 ```
 
-#### Discussion
+## Discussion
 
 This returns a proxy object for the receiving ordered set, which acts like an immutable array.
 

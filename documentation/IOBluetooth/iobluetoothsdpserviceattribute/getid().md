@@ -19,7 +19,7 @@ func getID() -> BluetoothSDPServiceAttributeID
 - (BluetoothSDPServiceAttributeID) getAttributeID;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the attribute ID for the target service attribute.
 

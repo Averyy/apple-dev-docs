@@ -25,7 +25,7 @@ class func grammarCheckingResult(range: NSRange, details: [[String : Any]]) -> N
 + (NSTextCheckingResult *) grammarCheckingResultWithRange:(NSRange) range details:(NSArray<NSDictionary<NSString *,id> *> *) details;
 ```
 
-#### Return Value
+## Return Value
 
 Returns an `NSTextCheckingResult` with the specified [`range`](./range.md) and a [`resultType`](./resulttype.md) of [`grammar`](./checkingtype/grammar.md).
 

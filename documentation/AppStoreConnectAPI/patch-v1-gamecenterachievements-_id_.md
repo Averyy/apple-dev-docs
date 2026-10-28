@@ -11,9 +11,9 @@ Modify properties for a specific achievement.
 
 > **Deprecated**: This endpoint is deprecated. Use [`Modify a Game Center Achievement`](./patch-v2-gamecenterachievements-_id_.md) instead.
 
-#### Discussion
+## Discussion
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

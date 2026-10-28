@@ -23,11 +23,11 @@ init(queryString: String, queryContext: CSSearchQueryContext?)
 - (instancetype) initWithQueryString:(NSString *) queryString queryContext:(CSSearchQueryContext *) queryContext;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized query object.
 
-#### Discussion
+## Discussion
 
 - queryString: A formatted string that defines the matching criteria to apply to indexed items. To learn how to construct a query string, see [Create a query string for your search](../searching-for-information-in-your-app.md#Create-a-query-string-for-your-search).
 
@@ -35,7 +35,7 @@ An initialized query object.
 
   - queryContext: A [`CSSearchQueryContext`](../cssearchquerycontext.md) object that focuses the query results.
 
-#### Discussion
+## Discussion
 
 After you create and initialize a query object, and call [`start()`](./start%28%29.md) to begin the query, you can’t update or reuse the query object for a new query.
 

@@ -24,7 +24,7 @@ case counting
 MTLVisibilityResultModeCounting
 ```
 
-#### Discussion
+## Discussion
 
 The GPU writes a 64-bit integer to the visibility result buffer that is the number of samples that passed depth and stencil tests; this can be zero. Counting is not supported by all GPUs. Check the following documents to see whether a GPU family supports *counting occlusion* queries:
 

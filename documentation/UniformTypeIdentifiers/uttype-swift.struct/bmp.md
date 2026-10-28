@@ -21,7 +21,7 @@ A type that represents a Windows bitmap image.
 static var bmp: UTType { get }
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `com.microsoft.bmp`.
 

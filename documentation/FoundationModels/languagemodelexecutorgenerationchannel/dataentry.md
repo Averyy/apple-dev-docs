@@ -20,7 +20,7 @@ A top-level data-entry event addressed to a transcript entry.
 struct DataEntry
 ```
 
-#### Overview
+## Overview
 
 A [`LanguageModelExecutorGenerationChannel.DataEntry`](./dataentry.md) event carries an entry-level action; the currently defined action is [`update(contentType:content:metadata:)`](./dataentry/action-swift.struct/update%28contenttype,content,metadata%29.md), which upserts a data entry with the given fields — replacing the existing entry that matches `entryID`, or appending a new one.
 

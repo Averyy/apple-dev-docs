@@ -24,7 +24,7 @@ var boundingBoxBuffer: (any MTLBuffer)? { get set }
 @property (nonatomic, retain, nullable) id<MTLBuffer> boundingBoxBuffer;
 ```
 
-#### Discussion
+## Discussion
 
 The buffer contains an array of [`MTLAxisAlignedBoundingBox`](../mtlaxisalignedboundingbox-c.struct.md) structures, one for each bounding box in the geometry.
 

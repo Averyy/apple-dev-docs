@@ -21,7 +21,7 @@ Creates a localization value instance.
 init(_ value: String)
 ```
 
-#### Discussion
+## Discussion
 
 Creating a [`String.LocalizationValue`](../localizationvalue.md) with this initializer creates a localized value with no interpolated values.
 

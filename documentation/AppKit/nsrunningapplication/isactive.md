@@ -19,7 +19,7 @@ var isActive: Bool { get }
 @property (readonly, getter=isActive) BOOL active;
 ```
 
-#### Discussion
+## Discussion
 
 This property is observable using key-value observing.
 

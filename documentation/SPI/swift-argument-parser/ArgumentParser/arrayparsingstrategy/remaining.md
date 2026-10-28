@@ -17,7 +17,7 @@ Parse all remaining arguments into an array.
 static var remaining: ArrayParsingStrategy { get }
 ```
 
-#### Discussion
+## Discussion
 
 `.remaining` can be used for capturing pass-through flags. For example, for a parsable type defined as `@Option(parsing: .remaining) var passthrough: [String]`:
 

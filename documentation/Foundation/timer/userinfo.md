@@ -25,7 +25,7 @@ var userInfo: Any? { get }
 @property (retain, readonly, nullable) id userInfo;
 ```
 
-#### Discussion
+## Discussion
 
 Do not access this property after the timer is invalidated. Use [`isValid`](./isvalid.md) to test whether the timer is valid.
 

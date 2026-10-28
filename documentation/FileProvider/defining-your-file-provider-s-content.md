@@ -5,11 +5,11 @@
 
 Create enumerators to specify your file provider’s content.
 
-#### Overview
+## Overview
 
 An enumerator can provide the content of either a folder or your file provider’s working set.
 
-##### Enumerate a Folder
+### Enumerate a Folder
 
 Create enumerators to specify the content of a folder (for example, your file provider’s root-level folder, or any of its subfolders).
 
@@ -29,7 +29,7 @@ When the user begins to browse a folder:
 
 As the user navigates through the items, the system calls [`enumerateItems(for:startingAt:)`](./nsfileproviderenumerator/enumerateitems%28for,startingat%29.md) as needed to fetch additional items. If the user navigates to a new directory, the system calls the file provider’s [`enumerator(for:)`](./nsfileproviderextension/enumerator%28for%29.md) method to create a new enumerator for that directory. The previous enumerator is then invalidated.
 
-##### Create the Working Set and Enumerate its Content
+### Create the Working Set and Enumerate its Content
 
 The working set is a list of items (documents or folders) of particular interest to the user. Your file provider must maintain its own working set. For a consistent experience across file providers, the working set must include all of the following:
 

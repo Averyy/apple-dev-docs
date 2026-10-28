@@ -22,7 +22,7 @@ init(userInterfaceLevel: UIUserInterfaceLevel)
 + (UITraitCollection *) traitCollectionWithUserInterfaceLevel:(UIUserInterfaceLevel) userInterfaceLevel;
 ```
 
-#### Return Value
+## Return Value
 
 A new trait collection containing only the user interface level trait.
 

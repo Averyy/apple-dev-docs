@@ -25,7 +25,7 @@ init(host: String, port: Int, protocol: String?, realm: String?, authenticationM
 - (instancetype) initWithHost:(NSString *) host port:(NSInteger) port protocol:(NSString *) protocol realm:(NSString *) realm authenticationMethod:(NSString *) authenticationMethod;
 ```
 
-#### Return Value
+## Return Value
 
 A new protection space object, initialized with the given host, port, protocol, realm, and authentication method.
 

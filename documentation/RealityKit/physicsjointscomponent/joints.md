@@ -20,7 +20,7 @@ The set of joints the physics joints component stores.
 var joints: PhysicsJoints
 ```
 
-#### Discussion
+## Discussion
 
 Add a joint to the correct [`PhysicsJointsComponent`](../physicsjointscomponent.md) instance by calling its `PhysicsJoint/addToSimulation()-886c4` method.
 

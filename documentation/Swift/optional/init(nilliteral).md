@@ -21,7 +21,7 @@ Creates an instance initialized with `nil`.
 init(nilLiteral: ())
 ```
 
-#### Discussion
+## Discussion
 
 Do not call this initializer directly. It is used by the compiler when you initialize an `Optional` instance with a `nil` literal. For example:
 

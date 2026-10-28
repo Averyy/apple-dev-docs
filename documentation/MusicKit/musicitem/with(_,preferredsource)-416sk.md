@@ -23,7 +23,7 @@ func with(_ properties: [PartialMusicAsyncProperty<Self>], preferredSource: Musi
 
 Available when `Self` conforms to `MusicPropertyContainer` and `Decodable`.
 
-#### Discussion
+## Discussion
 
 This asynchronous method fetches a more complete representation of the receiver, loading the contents for each property you request from either the Apple Music catalog or the user’s library, depending on the preferred source as well the availability of the content in those respective data sources.
 

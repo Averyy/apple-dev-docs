@@ -21,7 +21,7 @@ Fits a logistic regression classifier model to a sequence of examples.
 func fitted<Input, Validation>(to input: Input, validateOn validation: Validation, eventHandler: EventHandler? = nil) async throws -> LogisticRegressionClassifierModel<Scalar, Label> where Input : Sequence, Validation : Sequence, Input.Element == AnnotatedFeature<MLShapedArray<Scalar>, Label>, Validation.Element == AnnotatedFeature<MLShapedArray<Scalar>, Label>
 ```
 
-#### Return Value
+## Return Value
 
 The fitted logistic regression classifier model.
 

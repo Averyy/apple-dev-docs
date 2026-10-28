@@ -19,17 +19,17 @@ func AEGetAttributePtr(_ theAppleEvent: UnsafePointer<AppleEvent>!, _ theAEKeywo
 OSErr AEGetAttributePtr(const AppleEvent *theAppleEvent, AEKeyword theAEKeyword, DescType desiredType, DescType *typeCode, void *dataPtr, Size maximumSize, Size *actualSize);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../applicationservices/apple_event_manager.md#1656145).
 
-#### Discussion
+## Discussion
 
 To get Apple event attribute data for your application to use directly, call `AEGetAttributePtr`. To get a descriptor for an Apple event attribute to pass on to another Apple Event Manager routine, call [`AEGetAttributeDesc(_:_:_:_:)`](./api-1450314-aegetattributedesc.md).
 
 Before calling `AEGetAttributePtr`, you can call the [`AESizeOfAttribute(_:_:_:_:)`](./api-1445764-aesizeofattribute.md) function to determine a size for the `dataPtr` buffer. However, unless you specify `typeWildCard` for the `desiredType` parameter, `AEGetAttributePtr` may coerce the data, which may cause the size of the data to change. 
 
-##### Version-Notes
+### Version-Notes
 
 Thread safe starting in OS X v10.2.
 

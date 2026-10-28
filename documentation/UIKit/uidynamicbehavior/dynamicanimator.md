@@ -23,7 +23,7 @@ var dynamicAnimator: UIDynamicAnimator? { get }
 @property (nonatomic, readonly, nullable) UIDynamicAnimator * dynamicAnimator;
 ```
 
-#### Discussion
+## Discussion
 
 If the dynamic behavior is not associated with a dynamic animator, the value of this property is `nil`.
 

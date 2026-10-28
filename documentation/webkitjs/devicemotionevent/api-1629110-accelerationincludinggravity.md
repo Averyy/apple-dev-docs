@@ -15,7 +15,7 @@ The total acceleration of the device, which includes the user acceleration and t
 readonly attribute Acceleration accelerationIncludingGravity;
 ```
 
-#### Discussion
+## Discussion
 
 The acceleration data is expressed in m/s^2 and use the `x`, `y`, and `z` axis properties described in [`acceleration`](./api-1629483-acceleration.md). This property is never `null` because every Apple device has an accelerometer.
 

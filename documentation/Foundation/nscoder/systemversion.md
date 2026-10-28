@@ -25,7 +25,7 @@ var systemVersion: UInt32 { get }
 @property (readonly) unsigned int systemVersion;
 ```
 
-#### Discussion
+## Discussion
 
 During encoding, the current version. During decoding, the version that was in effect when the data was encoded.
 

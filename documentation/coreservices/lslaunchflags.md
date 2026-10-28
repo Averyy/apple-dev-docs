@@ -22,7 +22,7 @@ typedef enum LSLaunchFlags : OptionBits {
 } LSLaunchFlags;
 ```
 
-#### Overview
+## Overview
 
 They are passed in a launch specification structure (`LSLaunchFSRefSpec` to the `LSOpenFromRefSpec` function or `LSLaunchURLSpec` to the `LSOpenFromURLSpec` function), to control the manner in which apps are launched.
 

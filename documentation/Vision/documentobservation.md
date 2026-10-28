@@ -20,7 +20,7 @@ Information about the sections of content that an image-analysis request detects
 struct DocumentObservation
 ```
 
-#### Overview
+## Overview
 
 The observation allows you to access a document’s content and group it within different sections. An observation is the result of using a [`RecognizeDocumentsRequest`](./recognizedocumentsrequest.md) to process an image of a document and detects the content within that document using a container. Each container provides access to any text, lists, barcodes, or any other detected data that appears within the region of the container.
 

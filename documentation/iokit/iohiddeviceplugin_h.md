@@ -3,7 +3,7 @@
 **Framework**: IOKit  
 **Role**: API Collection
 
-#### Overview
+## Overview
 
 This documentation describes the details of the programming interface for accessing Human Interface Devices and interfaces from code running in user space. It is intended that user mode HID drivers properly implement all interfaces described here in order to be visible via the HID Manager.
 
@@ -11,7 +11,7 @@ This documentation assumes that you have a basic understanding of the material c
 
 All of the information described in this document is contained in the header file `IOHIDLib.h` found at `/System/Library/Frameworks/IOKit.framework/Headers/hid/IOHIDDevicePlugIn.h`.
 
-##### Included Headers
+### Included Headers
 
 - <sys/cdefs.h>
 - <CoreFoundation/CoreFoundation.h>

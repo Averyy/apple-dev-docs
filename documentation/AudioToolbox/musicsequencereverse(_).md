@@ -24,7 +24,7 @@ func MusicSequenceReverse(_ inSequence: MusicSequence) -> OSStatus
 extern OSStatus MusicSequenceReverse(MusicSequence inSequence);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 

@@ -5,13 +5,13 @@
 
 Include a tweet in an article.
 
-#### Overview
+## Overview
 
 A `tweet` component lets users see social media content in an article.
 
 **On this page, you’ll learn how to use a tweet component to embed a tweet in an article.**
 
-##### Add a Tweet in Your Article
+### Add a Tweet in Your Article
 
 In [Positioning Text Components](./positioning-text-components.md), you created some `ComponentLayout` objects. You’ll refer to those `ComponentLayout` objects in this code.
 
@@ -22,7 +22,7 @@ Your code should look like the example code [Tweet: Result](./adding-a-tweet.md#
 
 After you make this change in your code, you can preview your working `article.json` file in News Preview to see a tweet in your article.
 
-###### Tweet: Copy This Code
+#### Tweet: Copy This Code
 
 ```json
 ,
@@ -38,7 +38,7 @@ After you make this change in your code, you can preview your working `article.j
     }
 ```
 
-###### Tweet: Result
+#### Tweet: Result
 
 Ellipses (`...`) indicate lines of code that have been omitted from this example.
 
@@ -62,7 +62,7 @@ Ellipses (`...`) indicate lines of code that have been omitted from this example
 }
 ```
 
-##### Further Exploration
+### Further Exploration
 
 At any time, you can try changing property values in your `article.json` file and then use News Preview to see how these changes affect the look of your article.
 
@@ -74,11 +74,11 @@ For example, try changing which tweet appears in your article:
 
 The article now shows the tweet that you chose.
 
-##### Previous
+### Previous
 
 [Adding a Mosaic of Images](./adding-a-mosaic-of-images.md)
 
-##### Next
+### Next
 
 [Adding a Podcast](./adding-a-podcast.md)
 

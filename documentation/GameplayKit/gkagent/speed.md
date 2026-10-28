@@ -24,7 +24,7 @@ var speed: Float { get set }
 @property (nonatomic) float speed;
 ```
 
-#### Discussion
+## Discussion
 
 This property measures only the agent’s speed in the direction it faces. The concrete subclasses of [`GKAgent`](../gkagent.md) relate speed to orientation and position; see the [`velocity`](../gkagent2d/velocity.md) ([`GKAgent2D`](../gkagent2d.md)) or [`velocity`](../gkagent3d/velocity.md) ([`GKAgent3D`](../gkagent3d.md)) property for the appropriate subclass.
 

@@ -14,7 +14,7 @@ An endpoint you provide to receive requests from devices to serve signed ad inte
 - [Creating an attributable ad link](./creating-an-attributable-ad-link.md)
 - [Generating a signature for attributable web ads](./generating-a-signature-for-attributable-web-ads.md)
 
-#### Discussion
+## Discussion
 
 You implement this endpoint on your server to provide signed SKAdNetwork ad payloads for web ads that users tap. The device calls this endpoint when a user taps an SKAdNetwork-attributable web ad.
 

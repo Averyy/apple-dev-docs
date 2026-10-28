@@ -20,7 +20,7 @@ An app extension that uses the system implementation to schedule asset-pack down
 protocol ManagedDownloaderExtension : BADownloaderExtension where Self.Configuration : ManagedDownloaderExtensionConfiguration
 ```
 
-#### Overview
+## Overview
 
 The protocol provides default implementations for all of the inherited `BADownloaderExtension` requirements.
 

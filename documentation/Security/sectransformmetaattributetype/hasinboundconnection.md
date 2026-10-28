@@ -21,7 +21,7 @@ case hasInboundConnection
 kSecTransformMetaAttributeHasInboundConnection
 ```
 
-#### Discussion
+## Discussion
 
 This metadata value is [`true`](../../Swift/true.md) if the attribute has an inbound connection.
 

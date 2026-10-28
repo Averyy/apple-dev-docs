@@ -19,15 +19,15 @@ Specifies the options that SwiftData needs to manage the annotated property as a
 ## Declaration
 
 ```swift
-@attached
-(peer) macro Relationship(_ options: Schema.Relationship.Option..., deleteRule: Schema.Relationship.DeleteRule = .nullify, minimumModelCount: Int? = 0, maximumModelCount: Int? = 0, originalName: String? = nil, inverse: AnyKeyPath? = nil, hashModifier: String? = nil)
+@attached(peer)
+macro Relationship(_ options: Schema.Relationship.Option..., deleteRule: Schema.Relationship.DeleteRule = .nullify, minimumModelCount: Int? = 0, maximumModelCount: Int? = 0, originalName: String? = nil, inverse: AnyKeyPath? = nil, hashModifier: String? = nil)
 ```
 
 ## Mentions
 
 - [Preserving your app’s model data across launches](./preserving-your-apps-model-data-across-launches.md)
 
-#### Overview
+## Overview
 
 If one or more of a model’s properties represent relationships between their containing model and another model, annotate those properties with the `@Relationship` macro. This enables SwiftData to enforce those relationships at runtime — including what happens if you delete related data – as well as write any associated metadata to the persistent storage so the relationships exist across app launches.
 

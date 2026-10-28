@@ -25,7 +25,7 @@ var collection: Any { get }
 @property (retain, readonly) id collection;
 ```
 
-#### Discussion
+## Discussion
 
 Accessing this property raises an exception if it is not applicable to the expression.
 

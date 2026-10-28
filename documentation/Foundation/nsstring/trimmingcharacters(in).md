@@ -25,11 +25,11 @@ func trimmingCharacters(in set: CharacterSet) -> String
 - (NSString *) stringByTrimmingCharactersInSet:(NSCharacterSet *) set;
 ```
 
-#### Return Value
+## Return Value
 
 A new string made by removing from both ends of the receiver characters contained in `set`. If the receiver is composed entirely of characters from `set`, the empty string is returned.
 
-#### Discussion
+## Discussion
 
 Use [`whitespaces`](../nscharacterset/whitespaces.md) or [`whitespacesAndNewlines`](../nscharacterset/whitespacesandnewlines.md) to remove whitespace around strings.
 

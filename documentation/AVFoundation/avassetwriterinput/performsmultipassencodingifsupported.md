@@ -24,7 +24,7 @@ var performsMultiPassEncodingIfSupported: Bool { get set }
 @property (nonatomic) BOOL performsMultiPassEncodingIfSupported;
 ```
 
-#### Discussion
+## Discussion
 
 An asset writer input may be able to achieve higher quality and lower data rate by performing multiple passes over the source media. It does this by analyzing the media data it appends and reencodes certain segments with different parameters. To perform the reencoding, you must append the media data for the segments again. See the [`currentPassDescription`](./currentpassdescription.md) property and [`markCurrentPassAsFinished()`](./markcurrentpassasfinished%28%29.md) method for the means by which the input nominates segments to reappend.
 

@@ -24,11 +24,11 @@ class func animationDuration() -> CFTimeInterval
 + (CFTimeInterval) animationDuration;
 ```
 
-#### Return Value
+## Return Value
 
 An interval of time used as the duration.
 
-#### Discussion
+## Discussion
 
 You can retrieve the animation duration for a specific transaction by calling the [`value(forKey:)`](./value%28forkey%29.md) method of the transaction object and asking for the [`kCATransactionAnimationDuration`](../kcatransactionanimationduration.md) key.
 

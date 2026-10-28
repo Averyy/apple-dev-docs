@@ -25,7 +25,7 @@ var resultType: NSTextCheckingResult.CheckingType { get }
 @property (readonly) NSTextCheckingType resultType;
 ```
 
-#### Discussion
+## Discussion
 
 The possible result types for the built in checking capabilities are described in [`NSTextCheckingResult.CheckingType`](./checkingtype.md).
 

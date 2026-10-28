@@ -22,7 +22,7 @@ func presentFindNavigator(showingReplace: Bool)
 - (void) presentFindNavigatorShowingReplace:(BOOL) showingReplace;
 ```
 
-#### Discussion
+## Discussion
 
 You use this method to begin a search and display the find panel. The method calls [`findInteraction(_:sessionFor:)`](../uifindinteractiondelegate/findinteraction%28_,sessionfor%29.md) on the interaction object’s delegate and updates the UI using the session object the delegate returns.
 

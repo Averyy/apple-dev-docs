@@ -20,7 +20,7 @@ The interaction mode for indirect pointer touches on the canvas.
 @preconcurrency var indirectPointerTouchMode: PaperMarkupViewController.TouchMode { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Default is `.selection`.
 

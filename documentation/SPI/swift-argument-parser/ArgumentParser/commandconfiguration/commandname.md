@@ -17,7 +17,7 @@ The name of the command to use on the command line.
 var commandName: String?
 ```
 
-#### Discussion
+## Discussion
 
 If `nil`, the command name is derived by converting the name of the command type to hyphen-separated lowercase words.
 

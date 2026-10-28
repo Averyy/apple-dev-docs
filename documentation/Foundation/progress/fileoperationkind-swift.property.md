@@ -25,7 +25,7 @@ var fileOperationKind: Progress.FileOperationKind? { get set }
 @property (copy, nullable) NSProgressFileOperationKind fileOperationKind;
 ```
 
-#### Discussion
+## Discussion
 
 Set this value when the [`kind`](./kind.md) property is [`file`](../progresskind/file.md) to describe the kind of file operation.
 

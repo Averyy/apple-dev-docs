@@ -19,7 +19,7 @@ Returns the identifier of the section containing the specified item in the snaps
 func sectionIdentifier(containingItem identifier: ItemIdentifierType) -> SectionIdentifierType?
 ```
 
-#### Return Value
+## Return Value
 
 The identifier of the section containing the specified item, or `nil` if the specified item doesn’t exist in any section of the snapshot.
 

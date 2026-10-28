@@ -14,7 +14,7 @@
 gestaltMenuMgrAttr = 'menu'
 ```
 
-#### Discussion
+## Discussion
 
 The `Gestalt` selector passed to determine what features of the Menu Manager are present. This selector is available with Mac OS 8.5 and later. Passing `gestaltMenuMgrAttr` produces a 32-bit value whose bits you should test to determine what Menu Manager functionality is available.
 

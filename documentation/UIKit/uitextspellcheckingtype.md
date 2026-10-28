@@ -23,7 +23,7 @@ enum UITextSpellCheckingType
 enum UITextSpellCheckingType : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 Use these constants with the [`spellCheckingType`](./uitextinputtraits/spellcheckingtype.md) property.
 

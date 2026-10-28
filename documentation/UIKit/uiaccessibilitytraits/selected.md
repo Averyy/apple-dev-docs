@@ -25,7 +25,7 @@ static let selected: UIAccessibilityTraits
 extern const UIAccessibilityTraits UIAccessibilityTraitSelected;
 ```
 
-#### Discussion
+## Discussion
 
 Use this trait to characterize an accessibility element that represents a selected UI element, such as a selected table row or a selected segment in a segmented control.
 

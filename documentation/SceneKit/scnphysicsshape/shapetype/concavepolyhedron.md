@@ -25,7 +25,7 @@ static let concavePolyhedron: SCNPhysicsShape.ShapeType
 extern SCNPhysicsShapeType const SCNPhysicsShapeTypeConcavePolyhedron;
 ```
 
-#### Discussion
+## Discussion
 
 This option provides the highest level of detail, at a high cost to simulation performance. Use it only for irregularly shaped bodies where precise collision behavior is crucial to your app’s design.
 

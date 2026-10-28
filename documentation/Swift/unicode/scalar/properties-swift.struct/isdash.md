@@ -21,7 +21,7 @@ A Boolean value indicating whether the scalar is a punctuation symbol explicitly
 var isDash: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property corresponds to the “Dash” property in the [Unicode Standard](http://www.unicode.org/versions/latest/).
 

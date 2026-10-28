@@ -19,7 +19,7 @@ func takeSelectedTabViewItemFromSender(_ sender: Any?)
 - (void) takeSelectedTabViewItemFromSender:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 If `sender` responds to the `indexOfSelectedItem` method, this method invokes that method and selects the tab view item at the specified index.
 

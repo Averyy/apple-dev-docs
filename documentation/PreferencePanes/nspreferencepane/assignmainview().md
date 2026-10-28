@@ -20,7 +20,7 @@ func assignMainView()
 - (void) assignMainView;
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation sets the receiver’s main view to the content view of the window referenced by the `_window` outlet. Before returning, [`assignMainView()`](./assignmainview%28%29.md) releases the window and sets the `_window` outlet to `nil`. Returns the main view if successful, `nil` otherwise.
 

@@ -22,7 +22,7 @@ A view that reflects the current orientation of the associated map.
 @preconcurrency struct MapCompass
 ```
 
-#### Overview
+## Overview
 
 You can use `MapCompass` with a [`Map`](./map.md) as a stand alone view, as shown in the following example:
 

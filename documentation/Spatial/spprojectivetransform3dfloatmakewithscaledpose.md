@@ -19,11 +19,11 @@
 static SPProjectiveTransform3DFloat SPProjectiveTransform3DFloatMakeWithScaledPose(SPScaledPose3DFloat pose);
 ```
 
-#### Return Value
+## Return Value
 
 A new projective transform structure.
 
-#### Discussion
+## Discussion
 
 Returns a new projective transform structure from the specified scaled pose structure.
 

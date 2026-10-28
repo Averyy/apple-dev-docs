@@ -22,7 +22,7 @@ func GLKMatrix4ScaleWithVector4(_ matrix: GLKMatrix4, _ scaleVector: GLKVector4)
 static GLKMatrix4 GLKMatrix4ScaleWithVector4(GLKMatrix4 matrix, GLKVector4 scaleVector);
 ```
 
-#### Return Value
+## Return Value
 
 A new matrix.
 

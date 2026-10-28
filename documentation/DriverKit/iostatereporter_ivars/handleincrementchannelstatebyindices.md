@@ -16,11 +16,11 @@
 virtual IOReturn handleIncrementChannelStateByIndices(int channel_index, int state_index, uint64_t time_in_state, uint64_t intransitions, uint64_t last_intransition);
 ```
 
-#### Return Value
+## Return Value
 
 Appropriate IOReturn code
 
-#### Discussion
+## Discussion
 
 Updates state data for a channel with passed arguments
 

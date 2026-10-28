@@ -19,15 +19,15 @@ func AEPutArray(_ theAEDescList: UnsafeMutablePointer<AEDescList>!, _ arrayType:
 OSErr AEPutArray(AEDescList *theAEDescList, AEArrayType arrayType, const AEArrayData *arrayPtr, DescType itemType, Size itemSize, long itemCount);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../applicationservices/apple_event_manager.md#1656145).
 
-#### Discussion
+## Discussion
 
 A factored descriptor list is one in which the Apple Event Manager automatically isolates the data that is common to all the elements of the list so that the common data only appears in the list once. To create a factored descriptor list, you call the [`AECreateList(_:_:_:_:)`](./api-1448643-aecreatelist.md) function and specify the data that is common to all elements in the descriptor array. 
 
-##### Version-Notes
+### Version-Notes
 
 Thread safe starting in OS X v10.2.
 

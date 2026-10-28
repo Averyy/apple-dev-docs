@@ -19,7 +19,7 @@ var fileTypes: [String] { get }
 @property (copy, readonly) NSArray<NSString *> * fileTypes;
 ```
 
-#### Discussion
+## Discussion
 
 [`NSFilePromiseProvider`](../nsfilepromiseprovider.md) promises one file type per item. The `count` of `fileTypes` should tell you the number of promised files in this item, but that’s not always guaranteed. Some legacy file promisers  list each unique `fileType` only once.
 

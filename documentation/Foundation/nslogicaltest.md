@@ -20,7 +20,7 @@ class NSLogicalTest
 @interface NSLogicalTest : NSScriptWhoseTest
 ```
 
-#### Overview
+## Overview
 
 Instances of this class perform logical operations of `AND`, `OR`, and `NOT` on Boolean expressions represented by [`NSSpecifierTest`](./nsspecifiertest.md) objects. These operators are equivalent to “`&&`”, “`||`”, and “`!`” in the C language.
 

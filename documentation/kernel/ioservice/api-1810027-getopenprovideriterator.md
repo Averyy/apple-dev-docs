@@ -12,11 +12,11 @@ virtual OSIterator * getOpenProviderIterator(
  void ) const;
 ```
 
-#### Return Value
+## Return Value
 
 An iterator over the providers the client has open, or zero if there is a resource failure. The iterator must be released when the iteration is finished. All objects returned by the iteration are retained while the iterator is valid, and the current entry in the iteration is locked with `lockForArbitration`, protecting it from state changes.
 
-#### Overview
+## Overview
 
 For those few IOService objects that obtain service from multiple providers, this method supplies an iterator over a client's providers, locking each in turn with lockForArbitration and returning those that have been opened by the client.
 

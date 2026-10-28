@@ -19,7 +19,7 @@ The user activity type sent to the container app.
 static let containerAppLaunchActivityType: String
 ```
 
-#### Discussion
+## Discussion
 
 This string is the value of the [`activityType`](../../Foundation/nsuseractivity/activitytype.md) of the [`NSUserActivity`](../../Foundation/nsuseractivity.md) sent by the framework when it launches the container app, following a request from the app extension for sign-in or other information. Container apps should validate that the user activity received by [`onContinueUserActivity(_:perform:)`](../../SwiftUI/view/oncontinueuseractivity%28_,perform%29.md) (SwiftUI) or [`application(_:continue:restorationHandler:)`](../../UIKit/uiapplicationdelegate/application%28_,continue,restorationhandler%29.md) (UIKit) matches this string. If it does, then the user activity’s [`userInfo`](../../Foundation/nsuseractivity/userinfo.md) dictionary contains a request id. The container app sends the request id to [`returnToCall(requestID:)`](./returntocall%28requestid%29.md) after it completes logging in or collecting the other needed information from the person using the service.
 

@@ -20,7 +20,7 @@ The material’s base color.
 var color: UnlitMaterial.BaseColor { get set }
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: The blending mode of `UnlitMaterial` materials should be configured explicitly with the [`blending`](./blending-swift.property.md) property for transparent or translucent surfaces.  The `opaque` mode is used when unset.
 

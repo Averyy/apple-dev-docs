@@ -18,11 +18,11 @@ Creates a cylinder mesh with a topology suitable for cloth simulation.
 static func cylinder(height: Float, radius: Float, withCaps: Bool, targetEdgeLength: Float = defaultTargetEdgeLength) throws -> Self
 ```
 
-#### Return Value
+## Return Value
 
 The generated cylinder mesh resource.
 
-#### Discussion
+## Discussion
 
 - height: The height of the cylinder, in meters.
 - radius: The radius of the generated cylinder, in meters.

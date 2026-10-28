@@ -19,7 +19,7 @@ convenience init(data name: Data)
 - (instancetype) initWithData:(NSData *) name;
 ```
 
-#### Discussion
+## Discussion
 
 This initializer copies up to `name.length` characters of the sequence pointed to by `bytes`.
 

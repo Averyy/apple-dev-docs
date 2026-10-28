@@ -13,7 +13,7 @@
 #define kIOPropertyPhysicalInterconnectTypeVirtual
 ```
 
-#### Discussion
+## Discussion
 
 This key defines the value of Virtual Interface for the key kIOPropertyPhysicalInterconnectTypeVirtual. If the device is being made to look like a storage device, but is not such in actuality, such as a File or RAM, this key should be set.
 

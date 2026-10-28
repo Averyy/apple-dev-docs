@@ -19,7 +19,7 @@ case trailing
 NSScrubberAlignmentTrailing
 ```
 
-#### Discussion
+## Discussion
 
 Trailing alignment depends on the writing direction of the system language. Alignment is to the right for left-to-right languages, and to the left for right-to-left languages.
 

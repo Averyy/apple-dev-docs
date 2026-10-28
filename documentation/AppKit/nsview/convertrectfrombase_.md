@@ -17,11 +17,11 @@ Converts the rectangle from the base coordinate system to the view’s coordinat
 - (NSRect) convertRectFromBase:(NSRect) rect;
 ```
 
-#### Return Value
+## Return Value
 
 A rectangle in the view’s coordinate system
 
-#### Discussion
+## Discussion
 
 For more information, see [View Coordinates](../view-coordinates.md).
 

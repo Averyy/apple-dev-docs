@@ -5,7 +5,7 @@
 
 Specifies the rolling shutter reduction to apply to a clip.
 
-#### Overview
+## Overview
 
 The `amount` attribute specifies the reduction amount, which defaults to `none`.
 

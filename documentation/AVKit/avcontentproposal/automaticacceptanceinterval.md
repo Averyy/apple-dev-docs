@@ -19,7 +19,7 @@ var automaticAcceptanceInterval: TimeInterval { get set }
 @property (nonatomic, readwrite) NSTimeInterval automaticAcceptanceInterval;
 ```
 
-#### Discussion
+## Discussion
 
 The content proposal displays a countdown timer to reflect this value. Set this value to [`nan`](../../Swift/double/nan.md) to disable the default, which is automatic acceptance.
 

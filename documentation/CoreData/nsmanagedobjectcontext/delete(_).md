@@ -25,7 +25,7 @@ func delete(_ object: NSManagedObject)
 - (void) deleteObject:(NSManagedObject *) object;
 ```
 
-#### Discussion
+## Discussion
 
 When changes are committed, `object` will be removed from the uniquing tables. If `object` has not yet been saved to a persistent store, it is simply removed from the receiver.
 

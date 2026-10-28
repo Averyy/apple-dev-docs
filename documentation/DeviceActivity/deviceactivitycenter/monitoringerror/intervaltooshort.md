@@ -17,7 +17,7 @@ The activity’s schedule has an interval that is too short.
 case intervalTooShort
 ```
 
-#### Discussion
+## Discussion
 
 The minimum interval length for monitoring device activity is fifteen minutes.
 

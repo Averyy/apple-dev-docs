@@ -18,4 +18,4 @@ init(modelType: String, hiddenSize: Int, hiddenLayers: Int, intermediateSize: In
 
 ---
 
-*[View on Swift Package Index](https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxllm/gemma3textconfiguration/init(modeltype:hiddensize:hiddenlayers:intermediatesize:attentionheads:headdim:rmsnormeps:vocabularysize:kvheads:ropetheta:ropelocalbasefreq:ropetraditional:querypreattnscalar:slidingwindow:slidingwindowpattern:maxpositionembeddings:ropesca-67cj5)*
+*[View on Swift Package Index](https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxllm/gemma3textconfiguration/init%28modeltype:hiddensize:hiddenlayers:intermediatesize:attentionheads:headdim:rmsnormeps:vocabularysize:kvheads:ropetheta:ropelocalbasefreq:ropetraditional:querypreattnscalar:slidingwindow:slidingwindowpattern:maxpositionembeddings:ropesca-67cj5)*

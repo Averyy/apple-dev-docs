@@ -23,7 +23,7 @@ func MPVolumeSettingsAlertIsVisible() -> Bool
 extern BOOL MPVolumeSettingsAlertIsVisible();
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../Swift/true.md) if the volume alert is visible; otherwise, [`false`](../Swift/false.md).
 

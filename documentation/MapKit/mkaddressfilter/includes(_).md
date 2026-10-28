@@ -25,11 +25,11 @@ func includes(_ options: MKAddressFilter.Options) -> Bool
 - (BOOL) includesOptions:(MKAddressFilterOption) options;
 ```
 
-#### Return Value
+## Return Value
 
 Returns `true` if the passed options are included in the filtering options; otherwise, `false`.
 
-#### Discussion
+## Discussion
 
 A filter includes or excludes a set of filter options. Use this method to query the filter instance for one or more options.
 

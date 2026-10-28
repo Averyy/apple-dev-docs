@@ -21,7 +21,7 @@ An attempt to connect to a host failed.
 var NSURLErrorCannotConnectToHost: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 This can occur when a host name resolves, but the host is down or may not be accepting connections on a certain port.
 

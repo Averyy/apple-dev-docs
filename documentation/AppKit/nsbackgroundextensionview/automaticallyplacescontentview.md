@@ -19,7 +19,7 @@ var automaticallyPlacesContentView: Bool { get set }
 @property (nonatomic, assign) BOOL automaticallyPlacesContentView;
 ```
 
-#### Discussion
+## Discussion
 
 When `NO`, the frame of the content view must be explicitly set or constraints added. The extension effect will be used to fill the container view around the content.
 

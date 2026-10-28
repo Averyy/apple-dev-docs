@@ -23,11 +23,11 @@ func sec_protocol_metadata_get_negotiated_ciphersuite(_ metadata: sec_protocol_m
 SSLCipherSuite sec_protocol_metadata_get_negotiated_ciphersuite(sec_protocol_metadata_t metadata);
 ```
 
-#### Return Value
+## Return Value
 
 A SSLCipherSuite.
 
-#### Discussion
+## Discussion
 
 Get the negotiated TLS ciphersuite.
 

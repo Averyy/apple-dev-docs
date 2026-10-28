@@ -25,11 +25,11 @@ init?(pcmFormat format: AVAudioFormat, bufferListNoCopy bufferList: UnsafePointe
 - (instancetype) initWithPCMFormat:(AVAudioFormat *) format bufferListNoCopy:(const AudioBufferList *) bufferList deallocator:(void (^)(const AudioBufferList *)) deallocator;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`AVAudioPCMBuffer`](../avaudiopcmbuffer.md) instance, or `nil` if it’s not possible.
 
-#### Discussion
+## Discussion
 
 Use the deallocator parameter to define your own deallocation behavior for the audio buffer list’s underlying memory. The buffer list sent to the deallocator is identical to the one you specify, in term of buffer count and each buffer’s [`mData`](../../CoreAudioTypes/audiobuffer/mdata.md) and [`mDataByteSize`](../../CoreAudioTypes/audiobuffer/mdatabytesize.md) members.
 

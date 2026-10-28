@@ -23,7 +23,7 @@ func split<C>(separator: C, maxSplits: Int = .max, omittingEmptySubsequences: Bo
 
 Available when `Element` conforms to `Equatable`.
 
-#### Return Value
+## Return Value
 
 A collection of subsequences, split from this collection’s elements.
 

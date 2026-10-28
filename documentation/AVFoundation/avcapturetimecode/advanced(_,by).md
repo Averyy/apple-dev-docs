@@ -23,7 +23,7 @@ static func advanced(_ timecode: AVCaptureTimecode, by framesToAdd: Int64) -> AV
 AVCaptureTimecode AVCaptureTimecodeAdvancedByFrames(AVCaptureTimecode timecode, int64_t framesToAdd);
 ```
 
-#### Return Value
+## Return Value
 
 A new [`AVCaptureTimecode`](../avcapturetimecode.md) struct with the updated time values after adding the specified frames.
 

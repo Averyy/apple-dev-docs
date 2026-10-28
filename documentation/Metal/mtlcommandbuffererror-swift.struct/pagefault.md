@@ -20,7 +20,7 @@ An error code that indicates the command buffer generated a page fault the GPU c
 static var pageFault: MTLCommandBufferError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 The underlying cause may be a buffer read/write attribute mismatch or an out-of-boundary access.
 

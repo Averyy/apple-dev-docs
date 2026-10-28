@@ -24,7 +24,7 @@ static let vo2Max: HKQuantityTypeIdentifier
 extern HKQuantityTypeIdentifier const HKQuantityTypeIdentifierVO2Max;
 ```
 
-#### Discussion
+## Discussion
 
 VO2max—the maximum amount of oxygen your body can consume during exercise— is a strong predictor of overall health. Clinical tests measure VO2max by having the patient exercise on a treadmill or bike, with an intensity that increases every few minutes until exhaustion.
 
@@ -34,7 +34,7 @@ You can also create and save your own [`vo2Max`](./vo2max.md) samples—for exam
 
 [`vo2Max`](./vo2max.md) samples use volume/mass/time units (described in [`HKUnit`](../hkunit.md)), measured in ml/kg /min. They measure discrete values (described in [`HKQuantityAggregationStyle`](../hkquantityaggregationstyle.md)).
 
-##### Understand Estimated Test Results
+### Understand Estimated Test Results
 
 Apple Watch Series 3 and later estimates the user’s VO2max by measuring the user’s heart rate response to exercise. The system can generate VO2max samples after an outdoor walk, outdoor run, or hiking workout. During the outdoor activity, the user must cover relatively flat ground (a grade of less than 5% incline or decline) with adequate GPS, heart rate signal quality, and sufficient exertion. The user must maintain a heart rate approximately greater than or equal to 130% of their resting heart rate. The system can estimate VO2max ranges from 14-60 ml/kg/min
 

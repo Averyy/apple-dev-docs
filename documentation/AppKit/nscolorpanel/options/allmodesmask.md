@@ -19,7 +19,7 @@ static var allModesMask: NSColorPanel.Options { get }
 NSColorPanelAllModesMask
 ```
 
-#### Discussion
+## Discussion
 
 All of the above.
 

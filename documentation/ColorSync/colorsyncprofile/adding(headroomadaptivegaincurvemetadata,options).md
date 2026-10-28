@@ -25,11 +25,11 @@ func adding(headroomAdaptiveGainCurveMetadata: Data, options: ColorSyncProfile.H
 
 - [Authoring Headroom Adaptive Gain Curve metadata](../authoring-headroom-adaptive-gain-curve-metadata.md)
 
-#### Return Value
+## Return Value
 
 A new profile carrying the HAGC tag, or `nil` if this profile’s transfer function isn’t PQ, HLG, or linear, or if embedding fails.
 
-#### Discussion
+## Discussion
 
 Use this to move an HAGC between profiles without interpreting it — for example, to carry the HAGC payload read from one profile into another, or one shared with a video stream (SMPTE ST 2094-50 payload). The original profile is unchanged.
 

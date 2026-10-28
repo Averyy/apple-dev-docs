@@ -15,7 +15,7 @@ Set filesystem-specific data on a buffer.
 void buf_setfsprivate(buf_t bp, void *fsprivate);
 ```
 
-#### Return Value
+## Return Value
 
 void.
 

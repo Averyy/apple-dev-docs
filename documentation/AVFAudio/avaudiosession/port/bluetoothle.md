@@ -24,7 +24,7 @@ static let bluetoothLE: AVAudioSession.Port
 extern AVAudioSessionPort const AVAudioSessionPortBluetoothLE;
 ```
 
-#### Discussion
+## Discussion
 
 Apple supports the use of Bluetooth Low Energy (LE) hearing aids. Apps don’t have control over routing to these devices. Instead, the system automatically decides when routing to Bluetooth LE is appropriate.
 

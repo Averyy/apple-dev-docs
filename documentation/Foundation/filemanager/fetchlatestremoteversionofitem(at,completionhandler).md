@@ -27,7 +27,7 @@ func fetchLatestRemoteVersionOfItem(at url: URL) async throws -> NSFileVersion
 - (void) fetchLatestRemoteVersionOfItemAtURL:(NSURL *) url completionHandler:(void (^)(NSFileVersion *latestRemoteVersion, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method if uploading fails due to a version conflict and sync is paused. In this case, fetching the latest remote version allows you to inspect the newer item from the server, resolve the conflict, and resume uploading.
 

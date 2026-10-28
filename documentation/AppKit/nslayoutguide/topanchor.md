@@ -19,7 +19,7 @@ var topAnchor: NSLayoutYAxisAnchor { get }
 @property (strong, readonly) NSLayoutYAxisAnchor * topAnchor;
 ```
 
-#### Discussion
+## Discussion
 
 Use this anchor to create constraints with the layout guide’s top edge. You can combine this anchor only with other [`NSLayoutYAxisAnchor`](../../UIKit/nslayoutyaxisanchor.md) anchors. For more information, see [`NSLayoutAnchor`](../../UIKit/nslayoutanchor.md).
 

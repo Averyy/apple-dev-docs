@@ -24,11 +24,11 @@ class func depthOfField() -> any CIFilter & CIDepthOfField
 + (CIFilter<CIDepthOfField> *) depthOfFieldFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The modified image.
 
-#### Discussion
+## Discussion
 
 This method applies the depth of field filter to an image. The effect simulates changing the focus of the camera before taking a photograph.
 

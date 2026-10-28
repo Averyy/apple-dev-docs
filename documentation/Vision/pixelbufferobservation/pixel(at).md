@@ -21,7 +21,7 @@ Returns the pixel data for the specified location in the image.
 func pixel(at point: NormalizedPoint) -> Float
 ```
 
-#### Return Value
+## Return Value
 
 The pixel value of the image at the specified coordinate.
 

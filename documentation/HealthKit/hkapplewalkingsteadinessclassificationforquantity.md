@@ -20,11 +20,11 @@ Provides a classification for a score that measures the steadiness of the userâ€
 extern BOOL HKAppleWalkingSteadinessClassificationForQuantity(HKQuantity *value, HKAppleWalkingSteadinessClassification *classificationOut, NSError **errorOut);
 ```
 
-#### Return Value
+## Return Value
 
 Returns [`true`](../Swift/true.md) if the method successfully classified the value. If an error occurred, it returns [`false`](../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Use this method to get the Walking Steadiness classification for an [`appleWalkingSteadiness`](./hkquantitytypeidentifier/applewalkingsteadiness.md) sample.
 

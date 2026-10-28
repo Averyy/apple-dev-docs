@@ -20,7 +20,7 @@ A Boolean value that indicates whether the orbiting object updates its orientati
 var orientToPath: Bool { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is `false`.
 

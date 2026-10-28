@@ -21,7 +21,7 @@ Returns a rectangle that results from scaling with the specified double-precisio
 func scaledBy(x: Double = 1, y: Double = 1, z: Double = 1) -> Rect3D
 ```
 
-#### Return Value
+## Return Value
 
 The rectangle that results from scaling with the specified double-precision values.
 

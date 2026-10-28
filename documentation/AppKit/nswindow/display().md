@@ -19,7 +19,7 @@ func display()
 - (void) display;
 ```
 
-#### Discussion
+## Discussion
 
 You rarely need to invoke this method. `NSWindow` objects normally record which of their views need displaying and display them automatically on each pass through the event loop.
 

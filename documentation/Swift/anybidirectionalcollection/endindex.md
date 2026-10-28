@@ -21,7 +21,7 @@ The collection’s “past the end” position—that is, the position one great
 var endIndex: AnyBidirectionalCollection<Element>.Index { get }
 ```
 
-#### Discussion
+## Discussion
 
 `endIndex` is always reachable from `startIndex` by zero or more applications of `index(after:)`.
 

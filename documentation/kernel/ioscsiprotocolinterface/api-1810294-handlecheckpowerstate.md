@@ -12,7 +12,7 @@ void HandleCheckPowerState (
  UInt32maxPowerState );
 ```
 
-#### Overview
+## Overview
 
 The HandleCheckPowerState(UInt32 maxPowerState) method is called by the subclasses and is passed the maxPowerState number given to the power manager at initialization time. This guarantees the threads block until that power state has been achieved.
 

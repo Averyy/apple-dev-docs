@@ -23,7 +23,7 @@ func willTransition(to state: UITableViewCell.StateMask)
 - (void) willTransitionToState:(UITableViewCellStateMask) state;
 ```
 
-#### Discussion
+## Discussion
 
 Subclasses of `UITableViewCell` can implement this method to animate additional changes to a cell when it is changing state. `UITableViewCell` calls this method whenever a cell transitions between states, such as from a normal state (the default) to editing mode. The custom cell can set up and position any new views that appear with the new state. The cell then receives a [`layoutSubviews()`](../uiview/layoutsubviews%28%29.md) message (`UIView`) in which it can position these new views in their final locations for the new state. Subclasses must always call `super` when overriding this method.
 

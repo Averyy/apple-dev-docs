@@ -18,7 +18,7 @@ Computes the culling planes for this camera’s view volume, writing them to an 
 func computeCullingPlanes(_ outPlanes: inout OutputSpan<LowLevelRenderer.CullConfiguration.Plane>)
 ```
 
-#### Discussion
+## Discussion
 
 The planes are outward-facing: each plane’s normal points away from the visible region. The number of planes depends on the projection type:
 

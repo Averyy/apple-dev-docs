@@ -5,7 +5,7 @@
 
 Create an app extension that helps identify unwanted messages.
 
-#### Overview
+## Overview
 
 To create a Message Filter app extension, add a target that uses the Message Filter Extension template to the Xcode project for your containing app. The principal view controller in your app extension is a subclass of [`ILMessageFilterExtension`](./ilmessagefilterextension.md) that adopts the [`ILMessageFilterQueryHandling`](./ilmessagefilterqueryhandling.md) protocol.
 

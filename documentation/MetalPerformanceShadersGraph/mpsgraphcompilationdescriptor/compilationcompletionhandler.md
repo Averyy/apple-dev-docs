@@ -24,7 +24,7 @@ var compilationCompletionHandler: MPSGraphCompilationCompletionHandler { get set
 @property (atomic, readwrite) MPSGraphCompilationCompletionHandler compilationCompletionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Default value is nil.
 

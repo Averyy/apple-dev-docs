@@ -25,7 +25,7 @@ var applicationVersion: String { get }
 @property (strong, readonly, nonnull) NSString * applicationVersion;
 ```
 
-#### Discussion
+## Discussion
 
 Returns the value of [`CFBundleShortVersionString`](../../BundleResources/information-property-list/cfbundleshortversionstring.md) from this app’s information property list.
 

@@ -21,7 +21,7 @@ func padded(_ array: MLXArray, width: IntOrPair, mode: PadMode = .constant, valu
 
 - [Converting From Python](./converting-python.md)
 
-##### See Also
+### See Also
 
 - [Shapes](./shapes.md)
 - [`padded(_:widths:mode:value:stream:)`](./padded%28_,widths,mode,value,stream%29.md)

@@ -23,11 +23,11 @@ optional func data(for searchableIndex: CSSearchableIndex, itemIdentifier: Strin
 - (NSData *) dataForSearchableIndex:(CSSearchableIndex *) searchableIndex itemIdentifier:(NSString *) itemIdentifier typeIdentifier:(NSString *) typeIdentifier error:(NSError **) outError;
 ```
 
-#### Return Value
+## Return Value
 
 A data object with the requested type of data.
 
-#### Discussion
+## Discussion
 
 If the attributes of your [`CSSearchableItem`](../cssearchableitem.md) contain one or more provider data types, the system may call this method to request one of those types. Use your implementation of this method to generate a data object with the requested type of data for the specified item. The system calls this method on your index’s delegate if your app is running, or the delegate in your Core delegate app extension if your app isn’t running.
 

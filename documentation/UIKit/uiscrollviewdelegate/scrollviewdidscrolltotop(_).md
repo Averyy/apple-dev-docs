@@ -23,7 +23,7 @@ optional func scrollViewDidScrollToTop(_ scrollView: UIScrollView)
 - (void) scrollViewDidScrollToTop:(UIScrollView *) scrollView;
 ```
 
-#### Discussion
+## Discussion
 
 The scroll view sends this message when it finishes scrolling to the top of the content. It might call it immediately if the top of the content is already shown. For the scroll-to-top gesture (a tap on the status bar) to be effective, the [`scrollsToTop`](../uiscrollview/scrollstotop.md) property of the [`UIScrollView`](../uiscrollview.md) must be set to [`true`](../../Swift/true.md).
 

@@ -23,7 +23,7 @@ class func flexibleSpace() -> Self
 + (instancetype) flexibleSpaceItem;
 ```
 
-#### Return Value
+## Return Value
 
 A flexible-width space [`UIBarButtonItem`](../uibarbuttonitem.md).
 

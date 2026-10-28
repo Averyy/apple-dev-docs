@@ -25,7 +25,7 @@ func insert(_ anObject: Any, at index: Int)
 - (void) insertObject:(ObjectType) anObject atIndex:(NSUInteger) index;
 ```
 
-#### Discussion
+## Discussion
 
 If `index` is already occupied, the objects at `index` and beyond are shifted by adding `1` to their indices to make room.
 

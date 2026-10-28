@@ -15,7 +15,7 @@ Creates a sensor update sequence for the specified accessory.
 init(for accessoryIdentifier: String)
 ```
 
-#### Discussion
+## Discussion
 
 Multiple iterators created from the same value — or from copies of it — all receive every packet over a single shared XPC connection. No XPC resources are acquired until the first iteration begins.
 

@@ -15,7 +15,7 @@ A structure that defines the USB device firmware update descriptor.
 struct IOUSBDFUDescriptor;
 ```
 
-#### Overview
+## Overview
 
 See the USB Device Firmware Update Specification at [http://www.usb.org](http://www.usb.org).
 

@@ -21,7 +21,7 @@ case foreground
 
 - [Managing the browser extension life cycle](../managing-the-browser-extension-lifecycle.md)
 
-#### Discussion
+## Discussion
 
 This capability grants the helper extension process the ability to run at foreground priority and work on behalf of the host process while the host process is in the foreground.
 

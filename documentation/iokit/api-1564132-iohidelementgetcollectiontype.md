@@ -16,11 +16,11 @@ Retrieves the collection type for the element.
 IOHIDElementCollectionType IOHIDElementGetCollectionType(IOHIDElementRef element);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the IOHIDElementCollectionType for the element.
 
-#### Discussion
+## Discussion
 
 The value returned by this method only makes sense if the element type is kIOHIDElementTypeCollection.
 

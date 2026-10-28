@@ -24,7 +24,7 @@ func generateMask(forInstances instances: IndexSet) throws -> CVPixelBuffer
 - (CVPixelBufferRef) generateMaskForInstances:(NSIndexSet *) instances error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 The pixel buffer that contains the image.
 

@@ -23,7 +23,7 @@ protocol UIContextMenuInteractionCommitAnimating : UIContextMenuInteractionAnima
 @protocol UIContextMenuInteractionCommitAnimating <UIContextMenuInteractionAnimating>
 ```
 
-#### Overview
+## Overview
 
 When the user taps in a preview interface to dismiss it, UIKit creates an object that adopts this protocol and passes it to your [`UIContextMenuInteractionDelegate`](./uicontextmenuinteractiondelegate.md) method. Use the object to add any custom animations that you want to run alongside the dismissal animations.
 

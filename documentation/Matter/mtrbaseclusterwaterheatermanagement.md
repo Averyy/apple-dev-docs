@@ -25,7 +25,7 @@ class MTRBaseClusterWaterHeaterManagement
 @interface MTRBaseClusterWaterHeaterManagement : MTRGenericBaseCluster
 ```
 
-#### Overview
+## Overview
 
 This cluster is used to allow clients to control the operation of a hot water heating appliance so that it can be used with energy management.
 

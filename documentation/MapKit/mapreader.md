@@ -22,7 +22,7 @@ A container view that defines its contents as a function of information about th
 @preconcurrency struct MapReader<Content> where Content : View
 ```
 
-#### Overview
+## Overview
 
 The map reader’s content builder receives a [`MapProxy`](./mapproxy.md) instance. You can use this instance to get the information you’ll need to convert between a [`MapCamera`](./mapcamera.md) and a [`MKMapRect`](./mkmaprect.md) or [`MKCoordinateRegion`](./mkcoordinateregion.md).
 

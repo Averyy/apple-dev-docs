@@ -19,7 +19,7 @@ var version: UInt32
 UInt32 version;
 ```
 
-#### Discussion
+## Discussion
 
 See `Keychain Settings Version` for valid constants.
 

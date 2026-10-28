@@ -15,7 +15,7 @@ The database type.
 attribute string? databaseType;
 ```
 
-#### Discussion
+## Discussion
 
 For valid values, see `CKDatabaseType`.
 

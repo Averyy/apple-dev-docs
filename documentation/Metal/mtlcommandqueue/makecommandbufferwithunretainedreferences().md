@@ -29,7 +29,7 @@ func makeCommandBufferWithUnretainedReferences() -> (any MTLCommandBuffer)?
 
 - [Understanding the Metal 4 core API](../understanding-the-metal-4-core-api.md)
 
-#### Discussion
+## Discussion
 
 Use this method to create a command buffer that doesn’t retain or release any of the resources it needs to run its commands.
 

@@ -22,7 +22,7 @@ The number of trailing zeros in this value’s binary representation.
 var trailingZeroBitCount: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 For example, in a fixed-width integer type with a `bitWidth` value of 8, the number -8 has three trailing zeros.
 

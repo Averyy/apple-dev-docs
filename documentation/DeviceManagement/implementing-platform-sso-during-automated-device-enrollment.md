@@ -5,11 +5,11 @@
 
 Streamline authentication during Automated Device Enrollment with Platform SSO.
 
-#### Overview
+## Overview
 
 A device management service can configure a Mac to use Platform SSO during setup after the administrator registers the device for Automated Device Enrollment. This streamlines the enrollment process and enforces Platform SSO registration to provide single sign-on access to apps and websites.
 
-#### Implement the Platform SSO flow
+## Implement the Platform SSO flow
 
 When the Automated Device Enrollment [`Profile`](./profile.md) for a device indicates that it needs to enroll during initial setup, the device posts a request to the enrollment URL and includes the [`MachineInfo`](./machineinfo.md) details in the request body. If the device is capable of supporting Platform SSO during enrollment, the [`MachineInfo`](./machineinfo.md) details include an `MDM_CAN_REQUEST_PSSO_CONFIG` key with a value of `true`.
 
@@ -34,7 +34,7 @@ The following sections describe the details of each step.
 
 > **Note**:  The described flow enables authenticating the enrollment using tokens provided by Platform SSO. Alternatively, you can use the  `await_device_configured` flag to keep the device in Setup Assistant while installing the Platform SSO extension and required configuration.
 
-#### Requesting the enrollment
+## Requesting the enrollment
 
 In step 1, the device posts an HTTP request to the enrollment URL specified in the Automated Device Enrollment [`Profile`](./profile.md) and includes the [`MachineInfo`](./machineinfo.md) details with an `MDM_CAN_REQUEST_PSSO_CONFIG` key with a value of `true` in the request body.
 
@@ -67,7 +67,7 @@ Content-Length: 500
 </plist>
 ```
 
-#### Process the Platform SSO required response
+## Process the Platform SSO required response
 
 In step 2, the device management service detects that a device that supports Platform SSO during enrollment is trying to enroll and returns an [`ErrorCodePlatformSSORequired`](./errorcodeplatformssorequired.md) `403` error response to the device. The `403` error response is a JSON object that contains a `Code` key with a value of `com.apple.psso.required`, and a `Details` object with the following keys:
 
@@ -118,7 +118,7 @@ Content-Length: 601
 
 > ❗ **Important**:  To enforce a minimum operating system version, your device management service needs to provide the [`ErrorCodeSoftwareUpdateRequired`](./errorcodesoftwareupdaterequired.md) `403`  error in its first response. After the version provided in the [`MachineInfo`](./machineinfo.md) shows the required operating system version, return the [`ErrorCodePlatformSSORequired`](./errorcodeplatformssorequired.md) `403` error response the next time the device requests enrollment.
 
-#### Set up Platform SSO
+## Set up Platform SSO
 
 To set up Platform SSO after receiving the error response, the device:
 
@@ -147,7 +147,7 @@ If the Platform SSO extension requires it, combine the following payloads in the
 - [`ManagedPreferences`](./managedpreferences.md)
 - [`SCEP`](./scep.md)
 
-#### Authenticate the user
+## Authenticate the user
 
 In step 4, the device creates an [`ASWebAuthenticationSession`](../AuthenticationServices/aswebauthenticationsession.md) using `AuthURL` and a callback scheme that is set to `apple-remotemanagement-user-login`. This starts an authentication flow with the organization’s identity provider.
 
@@ -188,7 +188,7 @@ Location: apple-remotemanagement-user-login://authentication-results?access-toke
 
 The device management service verifies the access token to determine whether authentication succeeds. If authentication fails, the service returns an appropriate HTTP error response code that terminates the enrollment on the device.
 
-#### Enroll the device
+## Enroll the device
 
 After completing authentication with the identity provider, the device posts a request (see step 5 in the figure, above) to the enrollment URL and includes the [`MachineInfo`](./machineinfo.md) details without an `MDM_CAN_REQUEST_PSSO_CONFIG` key in the request body. The request includes an `Authorization` HTTP header with a `Bearer` key that the device sets to the authorization token that the identity provider returns.
 
@@ -245,7 +245,7 @@ Content-Length: nnn
 </plist>
 ```
 
-#### Create the local user account
+## Create the local user account
 
 The device creates a local account using the information provided by the identity provider.
 

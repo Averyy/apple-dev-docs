@@ -25,7 +25,7 @@ let NSStoreUUIDKey: String
 extern NSString * const NSStoreUUIDKey;
 ```
 
-#### Discussion
+## Discussion
 
 The store UUID is useful to identify stores through URI representations, but it is *not* guaranteed to be unique. The UUID generated for new stores is unique—users can freely copy files and thus the UUID stored inside—so if you track or reference stores explicitly you need to be aware of duplicate UUIDs and potentially override the UUID when a new store is added to the list of known stores in your application.
 

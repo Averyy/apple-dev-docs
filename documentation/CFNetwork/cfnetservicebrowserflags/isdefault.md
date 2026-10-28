@@ -24,7 +24,7 @@ static var isDefault: CFNetServiceBrowserFlags { get }
 kCFNetServiceFlagIsDefault
 ```
 
-#### Discussion
+## Discussion
 
 If set, the resulting domain is the default registration or browse domain, depending on the context. For this version of the CFNetServices API, the default registration domain is the local domain.
 

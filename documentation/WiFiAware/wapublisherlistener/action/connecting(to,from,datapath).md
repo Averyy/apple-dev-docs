@@ -17,11 +17,11 @@ Publishes the provided service over Wi-Fi, enabling connections from the specifi
 static func connecting(to myPublishingService: WAPublishableService, from pairedDevices: WAPublisherListener.Devices, datapath wifiAware: WAPublisherListener.DatapathParameters? = nil) -> WAPublisherListener.Action
 ```
 
-#### Return Value
+## Return Value
 
 A new `Action` configuring this operation.
 
-#### Discussion
+## Discussion
 
 When publishing, the `NetworkListener` provides a `NetworkConnection` object for each paired device that connects.
 

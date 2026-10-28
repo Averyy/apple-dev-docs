@@ -23,7 +23,7 @@ var primaryAccountSuffix: String? { get set }
 @property (nonatomic, copy, nullable) NSString * primaryAccountSuffix;
 ```
 
-#### Discussion
+## Discussion
 
 The system prepends four dots to indicate that this is a partial number.
 

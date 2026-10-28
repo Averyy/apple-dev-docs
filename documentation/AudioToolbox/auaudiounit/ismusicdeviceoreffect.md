@@ -32,7 +32,7 @@ var isMusicDeviceOrEffect: Bool { get }
 @property (atomic, readonly, getter=isMusicDeviceOrEffect) BOOL musicDeviceOrEffect;
 ```
 
-#### Discussion
+## Discussion
 
 Returns [`true`](../../Swift/true.md) if the audio unit is a music device or effect.
 

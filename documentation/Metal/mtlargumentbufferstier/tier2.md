@@ -24,7 +24,7 @@ case tier2
 MTLArgumentBuffersTier2
 ```
 
-#### Discussion
+## Discussion
 
 Tier 2 argument buffers are supported on all macOS discrete GPUs.
 

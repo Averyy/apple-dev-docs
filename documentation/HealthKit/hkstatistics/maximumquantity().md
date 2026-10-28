@@ -24,7 +24,7 @@ func maximumQuantity() -> HKQuantity?
 - (HKQuantity *) maximumQuantity;
 ```
 
-#### Return Value
+## Return Value
 
 If the [`discreteMax`](../hkstatisticsoptions/discretemax.md) option was set, this method returns a quantity object containing the maximum value from all the samples matching the query; otherwise, it returns `nil`.
 

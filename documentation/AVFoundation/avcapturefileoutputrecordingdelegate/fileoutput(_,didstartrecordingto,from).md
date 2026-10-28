@@ -23,7 +23,7 @@ optional func fileOutput(_ output: AVCaptureFileOutput, didStartRecordingTo file
 - (void) captureOutput:(AVCaptureFileOutput *) output didStartRecordingToOutputFileAtURL:(NSURL *) fileURL fromConnections:(NSArray<AVCaptureConnection *> *) connections;
 ```
 
-#### Discussion
+## Discussion
 
 If an error condition prevents any data from being written, this method may not be called. [`fileOutput(_:willFinishRecordingTo:from:error:)`](./fileoutput%28_,willfinishrecordingto,from,error%29.md) and [`fileOutput(_:didFinishRecordingTo:from:error:)`](./fileoutput%28_,didfinishrecordingto,from,error%29.md) are always called, even if no data is written.
 

@@ -21,7 +21,7 @@ The smallest aspect ratio the rectangle request detects.
 var minimumAspectRatio: Float
 ```
 
-#### Discussion
+## Discussion
 
 The property’s value defaults to `0.5`, but you can set it to any value in the range `[0.0, 1.0]`. You can use this value to choose specific rectangles in the detection like filtering out narrow rectangles by excluding small aspect ratios, or setting a range of `0.95` to `1.0` to select mostly squares.
 

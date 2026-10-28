@@ -20,7 +20,7 @@ optional func ssidDidChangeForWiFiInterface(withName interfaceName: String)
 - (void) ssidDidChangeForWiFiInterfaceWithName:(NSString *) interfaceName;
 ```
 
-#### Discussion
+## Discussion
 
 Register for SSID change notifications by sending the [`startMonitoringEvent(with:)`](../cwwificlient/startmonitoringevent%28with%29.md) message to a Wi-Fi client object with the [`CWEventType.ssidDidChange`](../cweventtype/ssiddidchange.md) event type.
 

@@ -20,7 +20,7 @@ func searchForItems(withSearch searchString: String, resultLimit: Int, matchedIt
 - (void) searchForItemsWithSearchString:(NSString *) searchString resultLimit:(NSInteger) resultLimit matchedItemHandler:(void (^)(NSArray *items)) handleMatchedItems;
 ```
 
-#### Discussion
+## Discussion
 
 Search for items matching the provided search string and return them by calling the matched items block, passing an array of items to append to the help menu.  The framework does not care what these items are. They are just used to identify particular search results to other methods in this protocol.  Do not assume that this will be called from the main UI thread.
 

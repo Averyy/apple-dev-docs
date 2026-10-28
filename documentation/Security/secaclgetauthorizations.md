@@ -17,11 +17,11 @@ Retrieves the CSSM authorization tags of a given access control list entry.
 OSStatus SecACLGetAuthorizations(SecACLRef acl, CSSM_ACL_AUTHORIZATION_TAG *tags, uint32 *tagCount);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  This function is deprecated. Use [`SecACLCopyAuthorizations(_:)`](./secaclcopyauthorizations%28_%29.md) instead.
 
@@ -29,7 +29,7 @@ An ACL object includes a list of trusted applications (see [`SecTrustedApplicati
 
 The `SecACLGetAuthorizations` function returns an error if there are more tags to return than the number of elements you allocated in the `tags` array. A 20-element array should suffice for most purposes; however, you can test for the `errSecBufferTooSmall` error and increase the size of the array before calling the function again if necessary. Alternatively, you can call the function with a tag count of `0`, read the value returned in the `tagCount` parameter, and then call the function again using that value.
 
-##### Special Considerations
+### Special Considerations
 
 This function is deprecated in macOS 10.7 and later; use [`SecACLCopyAuthorizations(_:)`](./secaclcopyauthorizations%28_%29.md) instead.
 

@@ -25,11 +25,11 @@ func buffer(policy: AsyncBufferSequencePolicy) -> AsyncBufferSequence<Self>
 
 Available when `Self` conforms to `Sendable`.
 
-#### Return Value
+## Return Value
 
 An asynchronous sequence that buffers elements up to a given limit.
 
-#### Discussion
+## Discussion
 
 The buffering behaviour is dictated by the policy:
 

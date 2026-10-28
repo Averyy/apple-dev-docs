@@ -15,11 +15,11 @@ Based on the given script codes for the converted textruns, creates and returns 
 OSStatus CreateUnicodeToTextRunInfoByScriptCode(ItemCount iNumberOfScriptCodes, const ScriptCode iScripts[], UnicodeToTextRunInfo *oUnicodeToTextInfo);
 ```
 
-#### Return Value
+## Return Value
 
 A resultcode. See [Result Codes](./carbon_core/text_encoding_conversion_manager.md#1664324).
 
-#### Discussion
+## Discussion
 
 You pass a Unicode converter object returned from `CreateUnicodeToTextRunInfoByScriptCode` tothe function  [`ConvertFromUnicodeToTextRun`](./api-1433511-convertfromunicodetotextrun.md) or  [`ConvertFromUnicodeToScriptCodeRun`](./api-1433662-convertfromunicodetoscriptcoderu.md) to identify the information to be used for the conversion. Thesetwo functions modify the contents of the Unicode converter object. 
 

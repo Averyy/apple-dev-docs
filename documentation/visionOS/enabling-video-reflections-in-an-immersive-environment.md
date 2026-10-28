@@ -10,7 +10,7 @@ Create a more immersive experience by adding video reflections in a custom envir
 - visionOS 2.0+
 - Xcode 16.0+
 
-#### Overview
+## Overview
 
 RealityKit and Reality Composer Pro provide the tools to build immersive media viewing environments in visionOS. The [Destination Video](./destination-video.md) sample uses these features to build a realistic custom environment called Studio. The environment adds to its realism and makes the video player feel grounded in the space by applying reflections of the player’s content onto the surfaces of the scene.
 
@@ -23,7 +23,7 @@ RealityKit and Reality Composer Pro support two types of video reflections:
 
 This article describes how to adopt reflections in your own environment, and shows how Destination Video’s Studio environment supports these effects to create a compelling media viewing experience.
 
-#### Define a video docking location
+## Define a video docking location
 
 Apps that use [`AVPlayerViewController`](../AVKit/avplayerviewcontroller.md) to present video participate in system docking behavior. When you play a full-window video inside an immersive space, the system docks the video screen into a fixed location and presents streamlined playback controls. By default, the system determines the docking location for the scene, but starting in visionOS 2, you can customize this location by specifying a custom docking region.
 
@@ -39,7 +39,7 @@ To provide an optimal viewing experience, the Studio environment minimizes objec
 
 > **Note**: Reality Composer Pro provides a template to set up a docking region and default video reflection configuration. You can access this template from the Insert menu by selecting Insert > Environment > Video Dock.
 
-#### Display specular video reflections
+## Display specular video reflections
 
 Specular reflections, like shown below, provide a direct reflection of the video’s content onto surrounding surfaces. You typically apply this type of reflection to glossy surfaces such as metals, mirrors, and water.
 
@@ -55,7 +55,7 @@ Destination Video uses subtle specular reflections in its custom environment lik
 
 ![An image of Destination Video’s Studio environment. The image shows the docked video screen casting a subtle specular reflection of the video content onto the floor of the environment.](https://developer.apple.com/tutorials/images/com.apple.visionOS/specular-example-dv.jpg)
 
-#### Provide diffuse video reflections
+## Provide diffuse video reflections
 
 Diffuse reflections provide a softer falloff of media content, which can be useful to apply to rougher, more organic surfaces like a concrete or wood floor. The image below shows a diffuse reflection from a video screen.
 
@@ -117,19 +117,19 @@ The attenuation UVs are calculated from mapping the surface mesh, in world space
 
 To learn more about how the environment sets up and applies diffuse reflections, open the Studio project in Reality Composer Pro to view its configuration.
 
-#### See Also
+## See Also
 
-###### Related samples
+#### Related samples
 
 - [Destination Video](./destination-video.md)
   Leverage SwiftUI to build an immersive media experience in a multiplatform app.
 
-###### Related articles
+#### Related articles
 
 - [Building an immersive media viewing experience](./building-an-immersive-media-viewing-experience.md)
   Add a deeper level of immersion to media playback in your app with RealityKit and Reality Composer Pro.
 
-###### Related videos
+#### Related videos
 
 - [Enhance the immersion of media viewing in custom environments](https://developer.apple.com/videos/play/wwdc2024/10115)
   Extend your media viewing experience using Reality Composer Pro components like Docking Region, Reverb, and Virtual Environment Probe. Find out how to further enhance immersion using Reflections, Tint Surroundings Effect, SharePlay, and the Immersive Environment Picker.

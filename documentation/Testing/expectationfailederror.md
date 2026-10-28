@@ -23,7 +23,7 @@ A type describing an error thrown when an expectation fails during evaluation.
 struct ExpectationFailedError
 ```
 
-#### Overview
+## Overview
 
 The testing library throws instances of this type when the `#require()` macro records an issue.
 

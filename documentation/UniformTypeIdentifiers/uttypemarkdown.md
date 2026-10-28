@@ -21,7 +21,7 @@ A type that represents Markdown data.
 extern UTType * const UTTypeMarkdown;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `net.daringfireball.markdown`.
 

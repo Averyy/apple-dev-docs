@@ -25,7 +25,7 @@ func CMTimebaseSetTimerDispatchSourceNextFireTime(_ timebase: CMTimebase, timerS
 extern OSStatus CMTimebaseSetTimerDispatchSourceNextFireTime(CMTimebaseRef timebase, dispatch_source_t timerSource, CMTime fireTime, uint32_t flags);
 ```
 
-#### Discussion
+## Discussion
 
 The timer source you specify must be on the list of timers the timebase manages. The timebase continues to update the timer dispatch source’s start time according to time jumps and effective rate changes. If `fireTime` is not numeric, or if the timebase is not moving, the function sets start time to `DISPATCH_TIME_FOREVER`.
 

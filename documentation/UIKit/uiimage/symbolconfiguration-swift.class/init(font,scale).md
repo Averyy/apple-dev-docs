@@ -24,7 +24,7 @@ convenience init(font: UIFont, scale: UIImage.SymbolScale)
 + (instancetype) configurationWithFont:(UIFont *) font scale:(UIImageSymbolScale) scale;
 ```
 
-#### Return Value
+## Return Value
 
 A new symbol configuration object with the specified information.
 

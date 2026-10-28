@@ -25,7 +25,7 @@ var deletedObjects: Set<NSManagedObject> { get }
 @property (nonatomic, strong, readonly) NSSet<__kindof NSManagedObject *> * deletedObjects;
 ```
 
-#### Discussion
+## Discussion
 
 The returned set does not necessarily include all the objects that have been deleted (using [`delete(_:)`](./delete%28_%29.md))—if an object has been inserted and deleted without an intervening save operation, it may not be included in the set.
 

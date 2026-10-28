@@ -19,7 +19,7 @@ func setRelativeWidth(_ width: CGFloat, withAdjustment adjustment: CGFloat)
 - (void) setRelativeWidth:(CGFloat) width withAdjustment:(CGFloat) adjustment;
 ```
 
-#### Discussion
+## Discussion
 
 You cannot use this method to alter the height of tables or separator items. Changes to the width of an object are animatable.
 

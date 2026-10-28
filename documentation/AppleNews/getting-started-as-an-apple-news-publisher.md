@@ -5,11 +5,11 @@
 
 Provide information about your publication and choose how to publish content.
 
-#### Overview
+## Overview
 
 Before you can publish content to Apple News, you must submit information about your publication and samples of your content to the Apple News team.
 
-##### Decide How to Publish to Apple News
+### Decide How to Publish to Apple News
 
 Choose the process that works best with your publishing model, your content management system (CMS), and your business:
 

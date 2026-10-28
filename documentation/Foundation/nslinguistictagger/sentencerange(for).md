@@ -27,11 +27,11 @@ func sentenceRange(for range: NSRange) -> NSRange
 - (NSRange) sentenceRangeForRange:(NSRange) range;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the range of the sentence.
 
-#### Discussion
+## Discussion
 
 This is a convenience method for calling [`tokenRange(at:unit:)`](./tokenrange%28at,unit%29.md), passing the [`NSLinguisticTaggerUnit.sentence`](../nslinguistictaggerunit/sentence.md) unit and the first position of the provided range.
 

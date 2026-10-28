@@ -19,7 +19,7 @@ A feature extractor that uses the standard, built-in word embeddings.
 case staticEmbedding
 ```
 
-#### Discussion
+## Discussion
 
 The standard word embeddings are the same as those that [`NLEmbedding`](../../../NaturalLanguage/nlembedding.md) provides with its [`wordEmbedding(for:)`](../../../NaturalLanguage/nlembedding/wordembedding%28for%29.md) method.
 

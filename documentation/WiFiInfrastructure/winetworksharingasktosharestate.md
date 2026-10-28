@@ -17,7 +17,7 @@ The authorization state for sharing the current Wi-Fi network with an accessory.
 enum WINetworkSharingAskToShareState
 ```
 
-#### Overview
+## Overview
 
 Use this type to track whether the person allowed the accessory to join the Wi-Fi network that the device is currently using.
 

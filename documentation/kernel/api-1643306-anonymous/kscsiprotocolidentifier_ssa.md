@@ -13,7 +13,7 @@
 kSCSIProtocolIdentifier_SSA = 2
 ```
 
-#### Discussion
+## Discussion
 
 SSA Protocol Identifier.
 

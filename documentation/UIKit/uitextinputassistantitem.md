@@ -23,7 +23,7 @@ class UITextInputAssistantItem
 @interface UITextInputAssistantItem : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use a [`UITextInputAssistantItem`](./uitextinputassistantitem.md) object to add app-specific actions to the shortcuts bar on iPad. The center of the shortcuts bar displays typing suggestions for the user. You can install custom bar button items that lead or trail the typing suggestions.
 

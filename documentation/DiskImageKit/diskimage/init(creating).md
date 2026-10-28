@@ -15,7 +15,7 @@ Creates a new, empty disk image.
 convenience init(creating configuration: some DiskImage.CreationConfiguration) throws
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer to create a new standalone disk image or a base image for a stacked disk image. The `configuration` must not be a [`DiskImage.StackableLayer`](./stackablelayer.md); use [`appending(_:)`](./appending%28_%29-3pfqg.md) instead.
 

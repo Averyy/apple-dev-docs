@@ -21,7 +21,7 @@ A copy of the effect requesting an animation that pulses all layers simultaneous
 - (instancetype) effectWithWholeSymbol;
 ```
 
-#### Return Value
+## Return Value
 
 A copy of the effect options that pulses all layers simultaneously.
 

@@ -20,7 +20,7 @@ Replace the contents of this mesh resource asynchronously.
 @preconcurrency func replaceAsync(with content: MeshResource.Contents) -> LoadRequest<MeshResource>
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: The contents of the modified mesh resource will not be synced between network clients.
 

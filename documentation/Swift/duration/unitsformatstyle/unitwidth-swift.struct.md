@@ -21,7 +21,7 @@ The width of a unit to use in formatting a duration.
 struct UnitWidth
 ```
 
-#### Overview
+## Overview
 
 Use the provided unit widths with the `width` parameter of the [`Duration.UnitsFormatStyle`](../unitsformatstyle.md) initializers to customize the display of units in a formatted string.
 

@@ -23,7 +23,7 @@ class UIToolTipConfiguration
 @interface UIToolTipConfiguration : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use a tooltip configuration to specify:
 

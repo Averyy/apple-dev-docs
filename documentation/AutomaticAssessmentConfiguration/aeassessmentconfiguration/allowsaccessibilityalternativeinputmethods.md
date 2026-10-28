@@ -20,7 +20,7 @@ var allowsAccessibilityAlternativeInputMethods: Bool { get set }
 @property (nonatomic, assign) BOOL allowsAccessibilityAlternativeInputMethods;
 ```
 
-#### Discussion
+## Discussion
 
 When the Accessibility Keyboard or Switch Control is enabled, alternative input methods such as Dwell Control may be available. An assessment session disables these alternative input methods by default, but you can allow them by setting [`allowsAccessibilityAlternativeInputMethods`](./allowsaccessibilityalternativeinputmethods.md) to `YES` in the [`AEAssessmentConfiguration`](../aeassessmentconfiguration.md) instance that you use to initialize a session.
 

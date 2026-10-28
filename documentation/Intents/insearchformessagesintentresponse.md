@@ -23,7 +23,7 @@ class INSearchForMessagesIntentResponse
 @interface INSearchForMessagesIntentResponse : INIntentResponse
 ```
 
-#### Overview
+## Overview
 
 Use an [`INSearchForMessagesIntentResponse`](./insearchformessagesintentresponse.md) object to specify the results of searching the user’s messages. After performing a search using the criteria specified in the [`INSearchForMessagesIntent`](./insearchformessagesintent.md) object, create an instance of this class with the results of that search. Siri communicates the status from your response to the user at appropriate times.
 

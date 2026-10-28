@@ -20,7 +20,7 @@ var detectedBody: ARBody2D? { get }
 @property (nonatomic, readonly, nullable) ARBody2D * detectedBody;
 ```
 
-#### Discussion
+## Discussion
 
 To enable 2D body detection, you add the [`bodyDetection`](../arconfiguration/framesemantics-swift.struct/bodydetection.md) frame semantic to your configuration’s [`frameSemantics`](../arconfiguration/framesemantics-swift.property.md) property, or run your session with an [`ARBodyTrackingConfiguration`](../arbodytrackingconfiguration.md), in which body detection is enabled by default.
 

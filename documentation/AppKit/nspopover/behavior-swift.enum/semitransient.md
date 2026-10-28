@@ -19,7 +19,7 @@ case semitransient
 NSPopoverBehaviorSemitransient
 ```
 
-#### Discussion
+## Discussion
 
 Semi-transient popovers cannot be shown relative to views in other popovers, nor can they be shown relative to views in child windows. The exact interactions that cause semi-transient popovers to close are not specified.
 

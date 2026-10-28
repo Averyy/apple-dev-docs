@@ -10,11 +10,11 @@ virtual IOReturn readMCN(
  CDMCNmcn);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the status of the operation.
 
-#### Overview
+## Overview
 
 Read the Media Catalog Number (also known as the Universal Product Code).
 

@@ -33,7 +33,7 @@ func finishWorkout() async throws -> HKWorkout?
 - [Running workout sessions](../running-workout-sessions.md)
 - [Dividing a HealthKit workout into activities](../dividing-a-healthkit-workout-into-activities.md)
 
-#### Discussion
+## Discussion
 
 You must call [`endCollection(withEnd:completion:)`](./endcollection%28withend,completion%29.md) before calling this method. This function returns `nil` if finishing the workout succeeded but the workout sample is not available because the device is locked.
 

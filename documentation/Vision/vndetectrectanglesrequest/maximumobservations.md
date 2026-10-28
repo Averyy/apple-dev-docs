@@ -24,7 +24,7 @@ var maximumObservations: Int { get set }
 @property (nonatomic, assign, readwrite) NSUInteger maximumObservations;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `1`.
 

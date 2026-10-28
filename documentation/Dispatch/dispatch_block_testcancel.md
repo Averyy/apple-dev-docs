@@ -21,7 +21,7 @@ Tests whether the given dispatch block has been canceled.
 extern intptr_t dispatch_block_testcancel(dispatch_block_t block);
 ```
 
-#### Return Value
+## Return Value
 
 Returns a non-zero value if the dispatch block is canceled, otherwise zero.
 

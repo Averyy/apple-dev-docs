@@ -23,7 +23,7 @@ class SFTranscription
 @interface SFTranscription : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use `SFTranscription` to obtain all the recognized utterances from your audio content. An *utterance* is a vocalized word or group of words that represent a single meaning to the speech recognizer ([`SFSpeechRecognizer`](./sfspeechrecognizer.md)).
 

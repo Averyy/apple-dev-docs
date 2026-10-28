@@ -23,7 +23,7 @@ class CLSDataStore
 @interface CLSDataStore : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use the ClassKit data store to build and access contexts ([`CLSContext`](./clscontext.md) instances) that you use to advertise your app’s assignable content. Contexts in turn provide access to activities ([`CLSActivity`](./clsactivity.md) instances) and activity items ([`CLSScoreItem`](./clsscoreitem.md), [`CLSBinaryItem`](./clsbinaryitem.md), and [`CLSQuantityItem`](./clsquantityitem.md) instances) that you use to record progress through assignments. You don’t instantiate a data store yourself. Instead, use the single [`shared`](./clsdatastore/shared.md) data store instance throughout your app.
 

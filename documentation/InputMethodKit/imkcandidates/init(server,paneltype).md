@@ -19,11 +19,11 @@ init!(server: IMKServer!, panelType: IMKCandidatePanelType)
 - (id) initWithServer:(IMKServer *) server panelType:(IMKCandidatePanelType) panelType;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized `IMKCandidates` object.
 
-#### Discussion
+## Discussion
 
 When an input method allocates an `IMKCandidates` object it should initialize that object by calling this method.
 

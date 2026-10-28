@@ -24,7 +24,7 @@ var insertedObjects: [ObjectType] { get }
 @property (atomic, strong, readonly) NSArray<PHObject *> * insertedObjects;
 ```
 
-#### Discussion
+## Discussion
 
 This array can contain [`PHAsset`](../phasset.md), [`PHAssetCollection`](../phassetcollection.md), or [`PHCollectionList`](../phcollectionlist.md) objects, or some combination thereof.
 

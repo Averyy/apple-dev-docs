@@ -25,7 +25,7 @@ let kCMTextMarkupAttribute_GenericFontFamilyName: CFString
 extern CFStringRef const kCMTextMarkupAttribute_GenericFontFamilyName;
 ```
 
-#### Discussion
+## Discussion
 
 This attribute’s value must be one of the constants listed below. You need to map generic fonts to the family name of an installed font before rendering and/or measuring text (see [Media Accessibility](../MediaAccessibility/MediaAccessibility.md)).
 

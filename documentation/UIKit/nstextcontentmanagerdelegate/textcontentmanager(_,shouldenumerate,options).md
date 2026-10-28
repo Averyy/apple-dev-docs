@@ -23,7 +23,7 @@ optional func textContentManager(_ textContentManager: NSTextContentManager, sho
 - (BOOL) textContentManager:(NSTextContentManager *) textContentManager shouldEnumerateTextElement:(NSTextElement *) textElement options:(NSTextContentManagerEnumerationOptions) options;
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that informs the framework to skip this `textElement`  in the enumeration. Returning `false` indicates `textElement` to be skipped; otherwise the element is included in the enumeration.
 

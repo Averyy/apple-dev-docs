@@ -21,7 +21,7 @@ The closure to execute as the operation generates individual participants.
 @property (nonatomic, copy, nullable) void (^)(CKUserIdentityLookupInfo *, CKShareParticipant *, NSError *) perShareParticipantCompletionBlock;
 ```
 
-#### Discussion
+## Discussion
 
 The closure returns no value and takes the following parameters:
 

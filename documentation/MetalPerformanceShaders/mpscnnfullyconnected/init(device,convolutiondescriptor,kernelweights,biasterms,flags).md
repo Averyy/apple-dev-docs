@@ -23,11 +23,11 @@ init(device: any MTLDevice, convolutionDescriptor: MPSCNNConvolutionDescriptor, 
 - (instancetype) initWithDevice:(id<MTLDevice>) device convolutionDescriptor:(const MPSCNNConvolutionDescriptor *) convolutionDescriptor kernelWeights:(const float *) kernelWeights biasTerms:(const float *) biasTerms flags:(MPSCNNConvolutionFlags) flags;
 ```
 
-#### Return Value
+## Return Value
 
 A valid [`MPSCNNFullyConnected`](../mpscnnfullyconnected.md) object or `nil`, if failure.
 
-#### Discussion
+## Discussion
 
 > **Note**:  The encode methods in the [`MPSCNNKernel`](../mpscnnkernel.md) class can be used to encode an [`MPSCNNFullyConnected`](../mpscnnfullyconnected.md) object to a [`MTLCommandBuffer`](../../Metal/mtlcommandbuffer.md) object.
 

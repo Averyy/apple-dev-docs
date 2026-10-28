@@ -21,7 +21,7 @@ The row number to which this cell belongs.
 @property (readonly) NSInteger row;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is `0`-based, with the first row at `0`, the second row at `1`, and so on. If The intent is not a cell, this value is `0`.
 

@@ -33,7 +33,7 @@ func authenticate() async throws
 - (void) authenticateWithCompletionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see [Authenticating a player](../authenticating-a-player.md).
 

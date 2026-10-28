@@ -25,7 +25,7 @@ func waitForDrawable(_ drawable: any MTLDrawable)
 - (void) waitForDrawable:(id<MTLDrawable>) drawable;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to ensure the display is no longer using a [`MTLDrawable`](../mtldrawable.md) instance before executing any subsequent commands.
 

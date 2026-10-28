@@ -20,7 +20,7 @@ A message that tells people why the app is requesting access to their calendar d
 - **Name**: `NSCalendarsUsageDescription` (Privacy - Calendars Usage Description)
 - **Type**: string
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  This key is required if your app uses APIs that access the person’s calendar data.
 

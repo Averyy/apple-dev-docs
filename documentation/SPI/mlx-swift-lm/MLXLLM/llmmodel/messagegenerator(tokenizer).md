@@ -18,7 +18,7 @@ Models can implement this is they need a custom `MessageGenerator`.
 func messageGenerator(tokenizer: Tokenizer) -> MessageGenerator
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation returns `DefaultMessageGenerator`.
 

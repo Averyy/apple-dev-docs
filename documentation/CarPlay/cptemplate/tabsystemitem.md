@@ -21,7 +21,7 @@ var tabSystemItem: UITabBarItem.SystemItem { get set }
 @property (nonatomic) UITabBarSystemItem tabSystemItem;
 ```
 
-#### Discussion
+## Discussion
 
 You should specify either a system item, or a tab title and tab image. The tab image has precedence over the system item if both properties are set.
 

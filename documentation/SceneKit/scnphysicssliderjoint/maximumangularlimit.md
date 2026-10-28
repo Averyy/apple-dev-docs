@@ -25,7 +25,7 @@ var maximumAngularLimit: CGFloat { get set }
 @property (nonatomic) CGFloat maximumAngularLimit;
 ```
 
-#### Discussion
+## Discussion
 
 The default (and maximum) value of this property is `M_PI`. With this value, the joint can spin counterclockwise (relative to the first body) with no limit.
 

@@ -23,7 +23,7 @@ optional func emergencyResponseManager(_ emergencyResponseManager: SAEmergencyRe
 - (void) emergencyResponseManager:(SAEmergencyResponseManager *) emergencyResponseManager didUpdateVoiceCallStatus:(SAEmergencyResponseManagerVoiceCallStatus) voiceCallStatus;
 ```
 
-#### Discussion
+## Discussion
 
 A voice call to the desired contact can occur when running in the foreground or background within a limited time window of a Crash Detection event. Use this delegate method to monitor the status of the requested voice call.
 

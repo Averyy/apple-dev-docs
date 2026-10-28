@@ -25,7 +25,7 @@ func validateForUpdate() throws
 - (BOOL) validateForUpdate:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 `NSManagedObject`‘s implementation iterates through all of the receiver’s properties validating each in turn. If this results in more than one error, the `userInfo` dictionary in the `NSError` returned in `error` contains a key `NSDetailedErrorsKey`; the corresponding value is an array containing the individual validation errors. If you pass `NULL` as the error, validation will abort after the first failure.
 

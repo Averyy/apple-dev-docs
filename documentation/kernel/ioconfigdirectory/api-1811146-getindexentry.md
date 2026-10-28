@@ -11,11 +11,11 @@ virtual IOReturn getIndexEntry(
  UInt32 &value);
 ```
 
-#### Return Value
+## Return Value
 
 kIOReturnSuccess if the index exists in the dictionary
 
-#### Overview
+## Overview
 
 Gets the entry at the specified index of the directory, as a raw UInt32.
 

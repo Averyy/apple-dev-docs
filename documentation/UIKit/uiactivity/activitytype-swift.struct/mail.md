@@ -22,7 +22,7 @@ static let mail: UIActivity.ActivityType
 extern UIActivityType const UIActivityTypeMail;
 ```
 
-#### Discussion
+## Discussion
 
 When using this service, you can provide [`NSString`](../../../Foundation/nsstring.md) and [`UIImage`](../../uiimage.md) objects and [`NSURL`](../../../Foundation/nsurl.md) objects pointing to local files as data for the activity items.
 

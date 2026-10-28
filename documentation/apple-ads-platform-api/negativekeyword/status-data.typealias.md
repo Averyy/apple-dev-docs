@@ -20,11 +20,11 @@ string NegativeKeyword.Status
 - `ENABLED`: The negative keyword is active and will suppress ad delivery for matching search queries.
 - `PAUSED`: The negative keyword is paused and will not suppress any search queries until re-enabled.
 
-#### Discussion
+## Discussion
 
 This field controls suppression directly; pausing it lets matching search queries resume triggering ads again.
 
-##### Example
+### Example
 
 ```json
 {

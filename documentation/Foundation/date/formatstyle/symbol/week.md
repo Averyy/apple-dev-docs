@@ -21,7 +21,7 @@ A type that specifies the format for the week in a date format style.
 struct Week
 ```
 
-#### Overview
+## Overview
 
 The type [`Date.FormatStyle.Symbol.Week`](./week.md) includes static factory variables that create custom [`Date.FormatStyle.Symbol.Week`](./week.md) objects:
 

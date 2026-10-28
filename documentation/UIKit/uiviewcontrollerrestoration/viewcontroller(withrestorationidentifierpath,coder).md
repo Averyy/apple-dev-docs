@@ -29,11 +29,11 @@ static func viewController(withRestorationIdentifierPath identifierComponents: [
 - [About the UI preservation process](../about-the-ui-preservation-process.md)
 - [About the UI restoration process](../about-the-ui-restoration-process.md)
 
-#### Return Value
+## Return Value
 
 The view controller object to use or `nil` if you do not want to restore this view controller now.
 
-#### Discussion
+## Discussion
 
 Your implementation of this method should create (or find) the corresponding view controller object and return it. If your restoration class determines that it doesn’t make sense to display this view controller now, it may return `nil` from this method to prevent that view controller (and its children) from being added to your interface during the restoration process.
 

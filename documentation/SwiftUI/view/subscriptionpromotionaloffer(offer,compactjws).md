@@ -22,7 +22,7 @@ nonisolated
 func subscriptionPromotionalOffer(offer: @escaping (Product, Product.SubscriptionInfo) -> Product.SubscriptionOffer?, compactJWS: @escaping (Product, Product.SubscriptionInfo, Product.SubscriptionOffer) async throws -> String) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 Subscription stores within this view uses the specified subscription offer to configure the appearance of the subscription plans displayed, when you use a system-provided [`SubscriptionStoreControlStyle`](../../StoreKit/subscriptionstorecontrolstyle.md) to style the in-app subscription store. Standard [`ProductViewStyle`](../../StoreKit/productviewstyle.md) instances don’t show introductory or promotional offers in UI. Use the [`SubscriptionStoreView`](../../StoreKit/subscriptionstoreview.md) instead to show these offers in the UI.
 

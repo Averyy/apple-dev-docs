@@ -25,7 +25,7 @@ optional func urlSession(_ session: URLSession, streamTask: URLSessionStreamTask
 - (void) URLSession:(NSURLSession *) session streamTask:(NSURLSessionStreamTask *) streamTask didBecomeInputStream:(NSInputStream *) inputStream outputStream:(NSOutputStream *) outputStream;
 ```
 
-#### Discussion
+## Discussion
 
 This delegate method will only be called after all enqueued reads and writes for the stream task have been completed.
 

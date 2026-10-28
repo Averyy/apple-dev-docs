@@ -31,7 +31,7 @@ func seek(to time: CMTime, toleranceBefore: CMTime, toleranceAfter: CMTime) asyn
 - (void) seekToTime:(CMTime) time toleranceBefore:(CMTime) toleranceBefore toleranceAfter:(CMTime) toleranceAfter completionHandler:(void (^)(BOOL finished)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to seek to a specified time for the current player item and to be notified when the seek operation is complete.
 

@@ -24,7 +24,7 @@ case asleepREM
 HKCategoryValueSleepAnalysisAsleepREM
 ```
 
-#### Discussion
+## Discussion
 
 This value corresponds to the rapid eye movement (REM) stage of the American Academy of Sleep Medicine’s scoring model.
 

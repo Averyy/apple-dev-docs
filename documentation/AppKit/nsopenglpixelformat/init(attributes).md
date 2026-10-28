@@ -21,11 +21,11 @@ convenience init?(attributes attribs: UnsafePointer<NSOpenGLPixelFormatAttribute
 - (instancetype) initWithAttributes:(const NSOpenGLPixelFormatAttribute *) attribs;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized `NSOpenGLPixelFormat` object whose attributes match the desired attributes as close as possible, or `nil` if an object with the desired attributes could not be initialized.
 
-#### Discussion
+## Discussion
 
 On return, the Boolean attributes of the receiver match the values specified in `attribs`, and the integer attributes are as close to the specified values as can be provided by the system.
 

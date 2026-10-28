@@ -23,7 +23,7 @@ optional func viewForZooming(in scrollView: UIScrollView) -> UIView?
 - (UIView *) viewForZoomingInScrollView:(UIScrollView *) scrollView;
 ```
 
-#### Return Value
+## Return Value
 
 A [`UIView`](../uiview.md) object that will be scaled as a result of the zooming gesture. Return `nil` if you don’t want zooming to occur.
 

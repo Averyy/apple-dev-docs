@@ -21,7 +21,7 @@ A weather alert issued for the requested  location by a governmental authority.
 struct WeatherAlert
 ```
 
-#### Overview
+## Overview
 
 Weather alerts often contains severe weather information; however, not all alerts are severe. Alerts may or may not contain localized descriptions, depending on what is available from the source. Due to data source restrictions, information contained is served raw.
 

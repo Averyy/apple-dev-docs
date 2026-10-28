@@ -11,7 +11,7 @@ Provide an interface so people can present mobile documents.
 - iPadOS 26.0+
 - macOS 26.0+
 
-#### Overview
+## Overview
 
 The `IdentityDocumentServicesUI` framework contains user-interface objects that support the features in [IdentityDocumentServices](../IdentityDocumentServices/IdentityDocumentServices.md). This includes types for implementing authorization UI for an [`IdentityDocumentProvider`](./identitydocumentprovider.md) app. It also includes a controller to enable browsers to implement the Digital Credentials API.
 

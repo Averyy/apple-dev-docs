@@ -21,7 +21,7 @@ An object that provides information about fetched database changes.
 @interface CKSyncEngineFetchedDatabaseChangesEvent : CKSyncEngineEvent
 ```
 
-#### Overview
+## Overview
 
 > **Note**: Although CloudKit doesn’t guarantee the order of fetched database changes, the typical order for both deletions and modifications is oldest to newest.
 

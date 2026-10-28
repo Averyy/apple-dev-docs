@@ -19,7 +19,7 @@ optional var iconProvider: NSItemProvider? { get }
 @property (strong, readonly, nullable) NSItemProvider * iconProvider;
 ```
 
-#### Discussion
+## Discussion
 
 Typically, the icon is a thumbnail-sized representation of the source app for the content. For example, provide your app’s icon for content you manage.
 

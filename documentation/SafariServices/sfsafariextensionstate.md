@@ -23,7 +23,7 @@ class SFSafariExtensionState
 @interface SFSafariExtensionState : NSObject
 ```
 
-#### Overview
+## Overview
 
 In macOS, this reflects the state of either a Safari app extension or Safari web extension. In iOS and visionOS, this reflects the state of a Safari web extension.
 

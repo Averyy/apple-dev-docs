@@ -19,7 +19,7 @@ var displayName: String? { get }
 @property (copy, readonly, nullable) NSString * displayName;
 ```
 
-#### Discussion
+## Discussion
 
 The font’s display name is typically localized for the user’s language.
 

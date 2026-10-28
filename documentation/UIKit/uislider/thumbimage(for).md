@@ -22,7 +22,7 @@ func thumbImage(for state: UIControl.State) -> UIImage?
 - (UIImage *) thumbImageForState:(UIControlState) state;
 ```
 
-#### Return Value
+## Return Value
 
 The thumb image associated with the specified state, or `nil` if an appropriate image could not be retrieved. This method might return `nil` if you specify multiple control states in the `state` parameter. For a description of track and thumb images, see [Customize the slider’s appearance](../uislider.md#Customize-the-sliders-appearance).
 

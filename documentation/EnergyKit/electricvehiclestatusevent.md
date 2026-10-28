@@ -21,7 +21,7 @@ struct ElectricVehicleStatusEvent
 
 - [Providing charging history for electric vehicles](./providing-informative-charging-history-for-electric-vehicles.md)
 
-#### Overview
+## Overview
 
 Status events can provide additional information in connection with a [`ElectricVehicleLoadEvent`](./electricvehicleloadevent.md) by explaining why a vehicle isn’t charging when connected, when charging will begin, and why charging started or stopped. Unlike load events, which track session-based energy flow with information about continuity included, status events are point-in-time observations without session context. For example, when a vehicle waits for cleaner energy before charging begins, a status event captures this idle state and explains the delay, even though no load event session exists.
 

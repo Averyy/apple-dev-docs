@@ -15,11 +15,11 @@ Creates a method invocation object from an XML serialization.
 WSMethodInvocationRef WSMethodInvocationCreateFromSerialization(CFDataRef contract);
 ```
 
-#### Return Value
+## Return Value
 
 A `WSMethodInvocationRef` object that can be passed to `WSMethodInvocationInvoke` or scheduled with a run loop.
 
-#### Discussion
+## Discussion
 
 Creates a web services method invocation object from a previously serialized contract. You can use this with a serialization returned from `WSMethodInvocationCopySerialization`.
 

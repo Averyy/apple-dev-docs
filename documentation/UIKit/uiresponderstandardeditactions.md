@@ -24,7 +24,7 @@ protocol UIResponderStandardEditActions : NSObjectProtocol
 @protocol UIResponderStandardEditActions <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Responder objects can implement the methods of this protocol to handle standard editing-related actions. For example, a [`UIEditMenuInteraction`](./uieditmenuinteraction.md) object displays the actions in an edit menu using these methods. UIKit searches the responder chain for an object that implements the appropriate method, calling the method on the first object that implements it.
 

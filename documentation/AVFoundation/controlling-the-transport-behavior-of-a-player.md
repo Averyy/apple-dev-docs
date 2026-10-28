@@ -5,13 +5,13 @@
 
 Play, pause, and seek through a media presentation.
 
-#### Overview
+## Overview
 
 AVFoundation provides comprehensive support for playing media assets, including local and remote file-based media and also media streamed with HTTP Live Streaming. The framework models its media assets using the [`AVAsset`](./avasset.md) class, which provides a consistent interface to load and inspect your media, regardless of its type or location. Use an [`AVPlayer`](./avplayer.md) object to play media assets in the form of [`AVPlayerItem`](./avplayeritem.md) objects, which model the dynamic state of an asset such as its [`currentTime()`](./avplayeritem/currenttime%28%29.md).
 
 Understanding how to effectively use [`AVPlayer`](./avplayer.md) is essential for anyone building a custom player UI or otherwise requiring programmatic control of playback.
 
-##### Observe playback readiness
+### Observe playback readiness
 
 When you create a player item, it starts with a status of [`AVPlayerItem.Status.unknown`](./avplayeritem/status-swift.enum/unknown.md), which means the system hasn’t attempted to load its media for playback. Only when you associate the item with an [`AVPlayer`](./avplayer.md) object does the system begin loading an asset’s media.
 
@@ -47,7 +47,7 @@ func playMedia(at url: URL) {
 
 When the player item reaches a [`AVPlayerItem.Status.readyToPlay`](./avplayeritem/status-swift.enum/readytoplay.md) state, present or enable your playback UI. Alternatively, if a failure occurs, show the appropriate status in the player.
 
-##### Control the playback rate
+### Control the playback rate
 
 A player provides the [`play()`](./avplayer/play%28%29.md) and [`pause()`](./avplayer/pause%28%29.md) methods as its primary means of controlling its playback rate. When a player item is ready for playback, call the player’s [`play()`](./avplayer/play%28%29.md) method to request that playback begins at the [`defaultRate`](./avplayer/defaultrate.md), which has an initial value of `1.0` (the natural rate). By default, a player automatically waits to start playback until it has sufficient media data available to minimize stalling. You can determine whether a player is in a paused, waiting to play, or playing state by observing its [`timeControlStatus`](./avplayer/timecontrolstatus-swift.property.md) value:
 
@@ -91,7 +91,7 @@ private func observeRateChanges() async {
 }
 ```
 
-##### Seek through the media timeline
+### Seek through the media timeline
 
 You can seek through a media timeline in several ways using the methods of [`AVPlayer`](./avplayer.md) and [`AVPlayerItem`](./avplayeritem.md). The most common way is to use the player’s [`seek(to:)`](./avplayer/seek%28to%29-87h2r.md) method, passing it a destination [`CMTime`](../CoreMedia/cmtime.md) value. Call this method in an asynchronous context:
 

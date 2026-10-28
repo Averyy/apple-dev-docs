@@ -22,7 +22,7 @@ func CVDisplayLinkGetTypeID() -> CFTypeID
 extern CFTypeID CVDisplayLinkGetTypeID();
 ```
 
-#### Return Value
+## Return Value
 
 The Core Foundation ID for this type.
 

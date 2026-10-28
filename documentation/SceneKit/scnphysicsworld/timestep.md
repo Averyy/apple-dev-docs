@@ -25,7 +25,7 @@ var timeStep: TimeInterval { get set }
 @property (nonatomic) NSTimeInterval timeStep;
 ```
 
-#### Discussion
+## Discussion
 
 SceneKit processes the physics simulation and updates the state of all physics bodies once per the time interval specified by this property. The default value is 1/60 second (a rate of 60 Hz).
 

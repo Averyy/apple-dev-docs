@@ -34,7 +34,7 @@ var modifiedTask: INTask? { get set }
 @property (atomic, copy, readwrite, nullable) INTask * modifiedTask;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to specify the details of the task. Start with the original task details and apply any attribute changes made at the request of the user.
 

@@ -31,7 +31,7 @@ var expirationDate: Date? { get set }
 @property (atomic, copy, readwrite, nullable) NSDate * expirationDate;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to specify when the ride options may become invalid. If the user does not select a ride option within the specified expiration date, SiriKit may send a new [`INListRideOptionsIntent`](../inlistrideoptionsintent.md) object to your handler before letting the user choose an option.
 

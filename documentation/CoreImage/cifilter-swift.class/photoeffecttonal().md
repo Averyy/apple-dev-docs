@@ -24,11 +24,11 @@ class func photoEffectTonal() -> any CIFilter & CIPhotoEffect
 + (CIFilter<CIPhotoEffect> *) photoEffectTonalFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The modified image.
 
-#### Discussion
+## Discussion
 
 This method applies a preconfigured set of effects that imitate black-and-white photography film without significantly altering contrast.
 

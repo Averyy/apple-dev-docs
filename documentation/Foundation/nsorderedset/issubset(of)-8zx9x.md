@@ -25,7 +25,7 @@ func isSubset(of set: Set<AnyHashable>) -> Bool
 - (BOOL) isSubsetOfSet:(NSSet<id> *) set;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if every object in the receiving ordered set is also present in `set`, otherwise [`false`](../../Swift/false.md).
 

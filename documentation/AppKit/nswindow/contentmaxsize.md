@@ -19,7 +19,7 @@ var contentMaxSize: NSSize { get set }
 @property NSSize contentMaxSize;
 ```
 
-#### Discussion
+## Discussion
 
 The maximum size constraint is enforced for resizing by the user as well as for the [`setContentSize(_:)`](./setcontentsize%28_%29.md) method and the `setFrame...` methods other than [`setFrame(_:display:)`](./setframe%28_,display%29.md) and [`setFrame(_:display:animate:)`](./setframe%28_,display,animate%29.md). This method takes precedence over the [`maxSize`](./maxsize.md) property.
 

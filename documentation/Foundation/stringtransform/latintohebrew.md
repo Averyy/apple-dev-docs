@@ -25,7 +25,7 @@ static let latinToHebrew: StringTransform
 extern NSStringTransform const NSStringTransformLatinToHebrew;
 ```
 
-#### Discussion
+## Discussion
 
 This transformation is reversible.
 

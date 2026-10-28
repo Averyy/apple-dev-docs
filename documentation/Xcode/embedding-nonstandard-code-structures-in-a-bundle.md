@@ -5,7 +5,7 @@
 
 Use code that’s structured in a nonstandard way while avoiding code signing and distribution problems.
 
-#### Overview
+## Overview
 
 All apps — and many non-app software products on the Mac, like plug-ins — are packaged in a bundle structure.  When creating a bundle, place content in the correct location.  Placing content in a nonstandard location can cause code signing and distribution problems.  For more on this, see [Placing Content in a Bundle](../BundleResources/placing-content-in-a-bundle.md).
 
@@ -20,7 +20,7 @@ Fortunately there’s another way.  This document walks you through an example o
 
 > ❗ **Important**: This is just an example.  It’s likely that the code you’re using will have a structure that’s different from this example.  Adapt the techniques shown here to your specific situation.
 
-##### Separate read-only and read/write content
+### Separate read-only and read/write content
 
 A bundle is a read-only structure.  All Apple platforms except the Mac enforce this requirement at runtime.  On iOS, for example, any attempt to modify your app’s bundle at runtime will fail with an error.  The Mac may or may not enforce this requirement at runtime, depending on the context, but modifying your app’s bundle isn’t supported because it breaks the seal on the app’s code signature.
 
@@ -31,7 +31,7 @@ Code structures with their origins on other platforms are not always compatible 
 
 If the code you’re using works this way, find a way to separate its read-only content, which you can safely place in your bundle, and its read/write content, which you can’t.  The details are specific to the code in question, but this often involves setting a command-line argument or an environment variable that points to a writable location, for example, in the Library directory.
 
-##### Investigate dynamic library linkage
+### Investigate dynamic library linkage
 
 Imagine you’re building a Mac app to varnish waffles and want to use the fabulous open source libWaffleVarnish code.  Its build system outputs a directory structure like this:
 
@@ -79,7 +79,7 @@ And both `wafflevarnish` and `libVarnish.dylib` reference their dynamic library 
 
 With this setup it’s easy to place this tool and its libraries in your bundle with a minimum amount of disruption.  If the code you’re using is built this way, skip forward to [Place Content in the Correct Location Within the Bundle](./embedding-nonstandard-code-structures-in-a-bundle.md#Place-content-in-the-correct-location-within-the-bundle).
 
-##### Adopt rpath-relative references
+### Adopt rpath-relative references
 
 Not all code with a nonstandard structure is as accommodating as libWaffleVarnish.  For example, the build system for libRubPat expresses its dependencies using absolute paths:
 
@@ -164,7 +164,7 @@ Load command 17
 
 The final result is a code structure where all the dynamic library dependencies are rpath-relative, and the rpath entry for the tool itself is executable-relative.  This structure works regardless of where it’s located on disk, making it feasible to embed it in your bundle.
 
-##### Place content in the correct location within the bundle
+### Place content in the correct location within the bundle
 
 Once you’ve confirmed that the code uses rpath-relative paths, it’s time to embed it in your bundle.  Imagine you’re building an app called MacWaffleVarnish.  The rules in [Placing Content in a Bundle](../BundleResources/placing-content-in-a-bundle.md) require this structure:
 
@@ -195,7 +195,7 @@ To make this work, use `install_name_tool` to adjust the rpath entry in the `waf
 
 And that’s all you need to do.  The use of rpath-relative references in libWaffleVarnish makes it easy to change its code structure to match platform conventions.
 
-##### Use symlinks for gnarly edge cases
+### Use symlinks for gnarly edge cases
 
 There’s one final gotcha here.  If you run the `wafflevarnish` tool you’ll see this error:
 

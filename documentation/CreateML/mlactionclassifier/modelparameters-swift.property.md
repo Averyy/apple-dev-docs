@@ -12,8 +12,8 @@ The model configuration parameters the action classifier used during its trainin
 ## Declaration
 
 ```swift
-nonisolated
-(unsafe) let modelParameters: MLActionClassifier.ModelParameters
+nonisolated(unsafe)
+let modelParameters: MLActionClassifier.ModelParameters
 ```
 
 ## See Also

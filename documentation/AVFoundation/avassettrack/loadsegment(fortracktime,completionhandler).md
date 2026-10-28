@@ -29,7 +29,7 @@ func loadSegment(forTrackTime trackTime: CMTime) async throws -> AVAssetTrackSeg
 - (void) loadSegmentForTrackTime:(CMTime) trackTime completionHandler:(void (^)(AVAssetTrackSegment *, NSError *)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 If the specified track time doesn’t map to a sample presentation time, the system returns the segment with the closest matching time.
 

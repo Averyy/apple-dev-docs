@@ -19,7 +19,7 @@ class CIPlugIn
 @interface CIPlugIn : NSObject
 ```
 
-#### Overview
+## Overview
 
 An image unit is an image processing bundle that contains one or more Core Image filters. Th`e.plugin` extension indicates one or more filters packaged as an image unit.
 

@@ -18,11 +18,11 @@ Calls `configureReport()` on multiple `IOReporter` objects
 static IOReturn configureAllReports(OSCollection *reporters, OSData *channels, IOReportConfigureAction action, uint32_t *outCount);
 ```
 
-#### Return Value
+## Return Value
 
 `kIOReturnSuccess` if all objects successfully complete [`configureReport`](./configurereport.md).
 
-#### Discussion
+## Discussion
 
 The OSSet must only contain `IOReporter` instances.  The presence of non-`IOReporter` instances will cause this function to return `kIOReturnBadArgument`.  If any reporter returns an error, the function will immediately return that error.
 

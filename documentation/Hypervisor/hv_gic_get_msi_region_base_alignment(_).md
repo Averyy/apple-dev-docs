@@ -19,7 +19,7 @@ func hv_gic_get_msi_region_base_alignment(_ msi_region_base_alignment: UnsafeMut
 extern hv_return_t hv_gic_get_msi_region_base_alignment(size_t *msi_region_base_alignment);
 ```
 
-#### Return Value
+## Return Value
 
 [`HV_SUCCESS`](./hv_success.md) on success; otherwise, an error code.
 

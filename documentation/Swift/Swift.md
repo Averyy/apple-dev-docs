@@ -15,7 +15,7 @@ Build apps using a powerful open language.
 - visionOS 1.0+
 - watchOS 2.0+
 
-#### Overview
+## Overview
 
 Swift includes modern features like type inference, optionals, and closures, which make the syntax concise yet expressive. Swift ensures your code is fast and efficient, while its memory safety and native error handling make the language safe by design. Writing Swift code is interactive and fun in Swift Playgrounds, playgrounds in Xcode, and REPL.
 
@@ -34,7 +34,7 @@ print(interestingNumbers["primes"]!)
 // Prints "[17, 13, 11, 7, 5, 3, 2]"
 ```
 
-##### Learn Swift
+### Learn Swift
 
 If you’re new to Swift, read [The Swift Programming Language](https://docs.swift.org/swift-book/) for a quick tour, a comprehensive language guide, and a full reference manual. If you’re new to programming, check out [Swift Playgrounds](https://www.apple.com/swift/playgrounds/) on iPad.
 

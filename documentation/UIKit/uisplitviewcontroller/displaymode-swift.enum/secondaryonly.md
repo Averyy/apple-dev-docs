@@ -23,7 +23,7 @@ case secondaryOnly
 UISplitViewControllerDisplayModeSecondaryOnly
 ```
 
-#### Discussion
+## Discussion
 
 The primary and supplementary view controllers are offscreen.
 

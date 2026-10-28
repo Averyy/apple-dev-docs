@@ -18,7 +18,7 @@ The width of the render target, in pixels.
 var renderTargetWidth: Int { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Corresponds to `MTLRenderPassDescriptor.renderTargetWidth`.
 

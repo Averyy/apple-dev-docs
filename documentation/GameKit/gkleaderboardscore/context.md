@@ -25,7 +25,7 @@ var context: Int { get set }
 @property (nonatomic, assign) NSUInteger context;
 ```
 
-#### Discussion
+## Discussion
 
 Game Center stores this custom game-specific property for you. It allows you to associate an arbitrary 64-bit unsigned integer value with the score data that you report to Game Center. You decide how to interpret this integer value in your game.
 

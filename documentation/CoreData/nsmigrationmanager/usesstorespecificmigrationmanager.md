@@ -25,11 +25,11 @@ var usesStoreSpecificMigrationManager: Bool { get set }
 @property BOOL usesStoreSpecificMigrationManager;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the receiver uses a store-specific migration manager, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) if the receiver uses a store-specific migration manager, otherwise [`false`](../../Swift/false.md). The default value is [`true`](../../Swift/true.md).
 

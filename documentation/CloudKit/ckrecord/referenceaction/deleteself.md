@@ -25,7 +25,7 @@ case deleteSelf
 CKReferenceActionDeleteSelf
 ```
 
-#### Discussion
+## Discussion
 
 CloudKit deletes any records that contain `CKReference` objects pointing to the current record. The deletion of the additional records can trigger further deletions as the action cascades. The deletions are asynchronous in the default zone and immediate in a custom zone.
 

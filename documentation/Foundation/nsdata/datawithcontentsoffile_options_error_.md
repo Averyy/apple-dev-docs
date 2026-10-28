@@ -21,7 +21,7 @@ Creates a data object by reading every byte from the file at a given path.
 + (instancetype) dataWithContentsOfFile:(NSString *) path options:(NSDataReadingOptions) readOptionsMask error:(NSError **) errorPtr;
 ```
 
-#### Discussion
+## Discussion
 
 This method returns `nil` if the data object could not be created. In this case, `errorPtr` will contain an [`NSError`](../nserror.md) indicating the problem.
 

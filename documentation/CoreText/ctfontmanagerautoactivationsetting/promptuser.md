@@ -19,7 +19,7 @@ case promptUser
 kCTFontManagerAutoActivationPromptUser
 ```
 
-#### Discussion
+## Discussion
 
 Requires user input for auto-activation. A dialog is presented to the user to confirm auto-activation of the font.
 

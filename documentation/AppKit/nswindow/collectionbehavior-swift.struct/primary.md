@@ -19,7 +19,7 @@ static var primary: NSWindow.CollectionBehavior { get }
 NSWindowCollectionBehaviorPrimary
 ```
 
-#### Discussion
+## Discussion
 
 Marking a window collection behavior as primary means it becomes primary for both Stage Manager and full screen display modes.
 

@@ -20,7 +20,7 @@ enum CATapMuteBehavior
 enum CATapMuteBehavior : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 CATapMuteBehavior describes the playback behavior of the process being tapped. The default value is CATapUnmuted.
 

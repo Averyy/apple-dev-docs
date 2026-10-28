@@ -19,7 +19,7 @@ The default hover effect based on the surrounding context.
 struct AutomaticHoverEffect
 ```
 
-#### Overview
+## Overview
 
 The automatic effect will resolve to any [`defaultHoverEffect(_:)`](./view/defaulthovereffect%28_%29.md) applied to the current View hierarchy, or a system-defined effect if no default effect has been defined.
 

@@ -23,7 +23,7 @@ var keyCommand: UIKeyCommand? { get }
 @property (nonatomic, copy, readonly, nullable) UIKeyCommand * keyCommand;
 ```
 
-#### Discussion
+## Discussion
 
 Provides a [`UIKeyCommand`](../../../UIKit/uikeycommand.md) instance representing the web extension command, ready for integration in the app.
 

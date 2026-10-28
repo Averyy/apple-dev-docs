@@ -19,7 +19,7 @@ func continueActivity(_ block: () -> Void)
 - (void) continueActivityUsingBlock:(void (^)()) block;
 ```
 
-#### Discussion
+## Discussion
 
 When AppKit calls [`performActivity(withSynchronousWaiting:using:)`](./performactivity%28withsynchronouswaiting,using%29.md) recursively, it may execute this method with the specified block to avoid a deadlock.
 

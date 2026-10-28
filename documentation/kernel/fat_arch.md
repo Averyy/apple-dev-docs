@@ -16,7 +16,7 @@ struct fat_arch {
 };
 ```
 
-#### Discussion
+## Discussion
 
 An array of `fat_arch` data structures appears directly after the [`fat_header`](./fat_header.md) data structure of a binary that contains object files for multiple architectures.
 

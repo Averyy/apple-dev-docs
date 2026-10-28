@@ -17,7 +17,7 @@ Requests a configuration to use for a shield that covers a website.
 func configuration(shielding webDomain: WebDomain) -> ShieldConfiguration
 ```
 
-#### Return Value
+## Return Value
 
 The shield to display.
 

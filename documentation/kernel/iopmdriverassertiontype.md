@@ -13,7 +13,7 @@
 typedef uint64_t IOPMDriverAssertionType;
 ```
 
-#### Discussion
+## Discussion
 
 Types for PM Assertions For creating, releasing, and getting PM assertion levels.
 

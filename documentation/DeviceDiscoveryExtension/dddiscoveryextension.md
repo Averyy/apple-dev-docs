@@ -19,7 +19,7 @@ A specification that enables the framework to start and stop the extension’s d
 protocol DDDiscoveryExtension : AppExtension
 ```
 
-#### Overview
+## Overview
 
 Your extension adopts this protocol as the primary entry and exit points for device discovery.
 

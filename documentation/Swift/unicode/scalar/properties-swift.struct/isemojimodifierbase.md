@@ -21,7 +21,7 @@ A Boolean value indicating whether the scalar is one whose appearance can be cha
 var isEmojiModifierBase: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property corresponds to the “Emoji_Modifier_Base” property in the [Unicode Standard](http://www.unicode.org/versions/latest/).
 

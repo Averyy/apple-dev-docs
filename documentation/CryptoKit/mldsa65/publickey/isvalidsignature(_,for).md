@@ -21,7 +21,7 @@ Verifies a MLDSA65 signature.
 func isValidSignature<S, D>(_ signature: S, for data: D) -> Bool where S : DataProtocol, D : DataProtocol
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the signature is valid, `false` otherwise.
 

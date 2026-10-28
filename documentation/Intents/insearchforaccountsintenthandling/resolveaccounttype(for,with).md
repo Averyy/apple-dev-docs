@@ -27,7 +27,7 @@ optional func resolveAccountType(for intent: INSearchForAccountsIntent) async ->
 - (void) resolveAccountTypeForSearchForAccounts:(INSearchForAccountsIntent *) intent withCompletion:(void (^)(INAccountTypeResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this question to resolve any questions about the account type to look for in a search. Use this method to examine the [`accountType`](../insearchforaccountsintent/accounttype.md) property of the intent object. Return a successful resolution if you can search for accounts of the specified type.
 

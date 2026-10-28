@@ -23,7 +23,7 @@ var isContinuousAutoFocusTrackingSupported: Bool { get }
 @property (nonatomic, readonly, getter=isContinuousAutoFocusTrackingSupported) BOOL continuousAutoFocusTrackingSupported;
 ```
 
-#### Discussion
+## Discussion
 
 Continuous autofocus tracking allows the device to keep a subject in focus by monitoring it as it moves throughout the scene. The device’s [`isContinuousAutoFocusTrackingEnabled`](../iscontinuousautofocustrackingenabled.md) property can only be set if this property returns `true`.
 

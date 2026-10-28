@@ -25,11 +25,11 @@ func compression_decode_buffer(_ dst_buffer: UnsafeMutablePointer<UInt8>, _ dst_
 extern size_t compression_decode_buffer(uint8_t * restrictdst_buffer, size_t dst_size, const uint8_t * restrictsrc_buffer, size_t src_size, void * restrictscratch_buffer, compression_algorithm algorithm);
 ```
 
-#### Return Value
+## Return Value
 
 The number of bytes written to the destination buffer after decompressing the input.  If there is not enough space in the destination buffer to hold the entire decompressed output, the function writes the first `dst_size` bytes to the buffer and returns `dst_size`. Note that this behavior differs from that of [`compression_encode_buffer(_:_:_:_:_:_:)`](./compression_encode_buffer%28_,_,_,_,_,_%29.md).
 
-#### Discussion
+## Discussion
 
 The function writes the decompressed data to `dst_buffer`.
 

@@ -20,11 +20,11 @@ Helper function to create a VTCompressionSession that restores the video encoder
 func createResumableCompressionSession(width: Int32, height: Int32, codecType: CMVideoCodecType, encoderSpecification: [String : any Sendable]? = nil, sourceImageBufferAttributes: [String : any Sendable]? = nil, outputHandler: @escaping @Sendable (OSStatus, VTEncodeInfoFlags, CMSampleBuffer?) -> Void) throws -> VTCompressionSession
 ```
 
-#### Return Value
+## Return Value
 
 A configured VTCompressionSession ready for encoding this segment.
 
-#### Discussion
+## Discussion
 
 Clients using VTCompressionSession directly to produce encoded video samples for writing the segment must use this method to create the session. The client should perform additional configurations on the returned compression session, but must apply the same configurations for each segment of the track.
 

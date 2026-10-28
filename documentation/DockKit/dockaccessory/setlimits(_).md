@@ -18,7 +18,7 @@ Sets limits for the axes of rotation.
 final func setLimits(_ limits: DockAccessory.Limits) throws
 ```
 
-#### Discussion
+## Discussion
 
 Limits only apply to the current tracking session. Afterwards, the orientation specifications default to the manufacturer limits. This method impacts primarily subsequent calls to [`setOrientation(_:duration:relative:)`](./setorientation%28_,duration,relative%29-2epe2.md) and [`setOrientation(_:duration:relative:)`](./setorientation%28_,duration,relative%29-6b0fl.md). Limits only apply to the current tracking session. When the session ends, the orientation specifications default to the manufacturer limits.
 

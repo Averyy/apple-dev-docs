@@ -21,7 +21,7 @@ The localized display name of the subscription group that the subscription store
 var groupDisplayName: String { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property is the same as accessing [`groupDisplayName`](../product/subscriptioninfo/groupdisplayname.md) on a [`Product.SubscriptionInfo`](../product/subscriptioninfo.md) value. Because all options within a subscription store view belong to the same subscription group, using the [`groupDisplayName`](./groupdisplayname.md) property is more convenient than getting the group display name from an arbitrary subscription option.
 

@@ -21,7 +21,7 @@ struct StatusKey
 typedef NSString * NSSpeechStatusKey;
 ```
 
-#### Discussion
+## Discussion
 
 Use these keys in the [`status`](./status.md) dictionary.
 

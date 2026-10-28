@@ -22,7 +22,7 @@ var automaticallyAdjustsFaceDrivenAutoFocusEnabled: Bool { get set }
 @property (nonatomic) BOOL automaticallyAdjustsFaceDrivenAutoFocusEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property defaults to [`true`](../../Swift/true.md) for devices that support auto focus. If your app requires explicitly setting the state of [`isFaceDrivenAutoFocusEnabled`](./isfacedrivenautofocusenabled.md), set this value to [`false`](../../Swift/false.md).
 

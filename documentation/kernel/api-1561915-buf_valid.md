@@ -15,7 +15,7 @@ Check if a buffer contains valid data.
 int buf_valid(buf_t bp);
 ```
 
-#### Return Value
+## Return Value
 
 Nonzero if buffer has valid data, 0 if not.
 

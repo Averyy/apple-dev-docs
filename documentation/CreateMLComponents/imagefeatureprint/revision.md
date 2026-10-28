@@ -20,7 +20,7 @@ The feature extractor revision number.
 var revision: Int { get set }
 ```
 
-#### Discussion
+## Discussion
 
 There are two Image Feature Print revisions: 1 and 2. In most cases revision 2 produces better models because it uses a smaller feature vector and better features.
 

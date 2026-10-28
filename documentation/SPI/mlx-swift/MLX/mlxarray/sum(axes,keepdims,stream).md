@@ -21,7 +21,7 @@ func sum(axes: some Collection<Int>, keepDims: Bool = false, stream: StreamOrDev
 
 - [Converting From Python](../converting-python.md)
 
-##### See Also
+### See Also
 
 - [Reduction Functions](../reduction.md)
 - [`sum(axis:keepDims:stream:)`](./sum%28axis,keepdims,stream%29.md)

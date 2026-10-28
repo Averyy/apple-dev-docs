@@ -16,7 +16,7 @@ A floating-point number that controls the horizontal offset of shadows from the 
 attribute unrestricted float shadowOffsetX;
 ```
 
-#### Discussion
+## Discussion
 
 Shadows are cast `shadowOffsetX` pixels to the right, regardless of the canvas rotation, scale, or transformation. If `shadowOffsetX` is negative, shadows are cast to the left.
 

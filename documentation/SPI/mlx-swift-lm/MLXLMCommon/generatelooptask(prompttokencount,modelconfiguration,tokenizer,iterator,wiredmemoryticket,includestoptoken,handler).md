@@ -21,7 +21,7 @@ func generateLoopTask<Handler>(promptTokenCount: Int, modelConfiguration: ModelC
 
 - [Observing token log probabilities](./generation-observability.md)
 
-#### Discussion
+## Discussion
 
 The task owns the iterator and handler until generation finishes. Await its value after cancelling or stopping consumption to wait for MLX cleanup.
 

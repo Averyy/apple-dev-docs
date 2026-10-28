@@ -18,11 +18,11 @@ CMError CMGetPS2ColorRendering (
 );
 ```
 
-#### Return Value
+## Return Value
 
 A `CMError` value. See [Result Codes](../colorsync_manager.md#1670295).
 
-#### Overview
+## Overview
 
 The `CMGetPS2ColorRendering` function obtains CRD data from the profile specified by the `dstProf` parameter. To be valid, the parameter must specify an output profile with at most four components. The CMM uses the rendering intent from the profile specified by the `srcProf` parameter to determine which of the PostScript tags (`ps2CR0Tag`, `ps2CR1Tag`, `ps2CR2Tag`, or `ps2CR3Tag`) to use in creating the CRD. If none of these tags exists in the profile, the CMM creates the CRD from one of the multidimensional table tags (`cmAToB0`, `cmAToB1`, or `cmAToB2`), again chosen according to the rendering intent of the profile specified by the `srcProf` parameter.
 

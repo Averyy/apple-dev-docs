@@ -28,7 +28,7 @@ class func predicateForContacts(withIdentifiers identifiers: [String]) -> NSPred
 
 - [Accessing the contact store](../accessing-the-contact-store.md)
 
-#### Return Value
+## Return Value
 
 A predicate that can be used to fetch contacts from [`CNContactStore`](../cncontactstore.md).
 

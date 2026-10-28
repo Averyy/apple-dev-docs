@@ -22,7 +22,7 @@ let SKStoreProductParameterCampaignToken: String
 extern NSString * const SKStoreProductParameterCampaignToken;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is an instance of [`NSString`](../Foundation/nsstring.md), containing any 40-byte string.
 

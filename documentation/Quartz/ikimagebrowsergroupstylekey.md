@@ -19,7 +19,7 @@ let IKImageBrowserGroupStyleKey: String
 extern NSString * const IKImageBrowserGroupStyleKey;
 ```
 
-#### Discussion
+## Discussion
 
 The associated value is one of the constants defined in  [Group Style Attributes](./api-1564247-group-style-attributes.md).
 

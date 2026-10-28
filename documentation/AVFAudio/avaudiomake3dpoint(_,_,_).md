@@ -25,7 +25,7 @@ func AVAudioMake3DPoint(_ x: Float, _ y: Float, _ z: Float) -> AVAudio3DPoint
 static AVAudio3DPoint AVAudioMake3DPoint(float x, float y, float z);
 ```
 
-#### Return Value
+## Return Value
 
 A new [`AVAudio3DPoint`](./avaudio3dpoint.md) instance.
 

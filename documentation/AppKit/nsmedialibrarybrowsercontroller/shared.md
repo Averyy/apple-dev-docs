@@ -19,11 +19,11 @@ class var shared: NSMediaLibraryBrowserController { get }
 @property (class, strong, readonly) NSMediaLibraryBrowserController * sharedMediaLibraryBrowserController;
 ```
 
-#### Return Value
+## Return Value
 
 The shared Media Library Browser controller instance.
 
-#### Discussion
+## Discussion
 
 The Media Library Browser panel is a proxy to allow easy display of the media library within an app.
 

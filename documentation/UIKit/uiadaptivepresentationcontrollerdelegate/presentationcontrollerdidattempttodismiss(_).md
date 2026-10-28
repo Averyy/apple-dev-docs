@@ -23,7 +23,7 @@ optional func presentationControllerDidAttemptToDismiss(_ presentationController
 - (void) presentationControllerDidAttemptToDismiss:(UIPresentationController *) presentationController;
 ```
 
-#### Discussion
+## Discussion
 
 UIKit supports refusing to dismiss a presentation when the `presentationController`.[`isModalInPresentation`](../uiviewcontroller/ismodalinpresentation.md) returns `true` or [`presentationControllerShouldDismiss(_:)`](./presentationcontrollershoulddismiss%28_%29.md) returns `false`.
 

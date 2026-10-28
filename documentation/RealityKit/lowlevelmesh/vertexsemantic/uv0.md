@@ -20,7 +20,7 @@ The semantic for the first UV channel, also known as UV0.
 case uv0
 ```
 
-#### Discussion
+## Discussion
 
 RealityKit’s standard materials, such as [`UnlitMaterial`](../../unlitmaterial.md) and [`PhysicallyBasedMaterial`](../../physicallybasedmaterial.md), interpret `uv0` as a texture coordinate. However, your shaders can use this semantic for any data.
 

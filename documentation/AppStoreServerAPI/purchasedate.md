@@ -15,7 +15,7 @@ The time that the App Store charged the customer’s account for an In-App Purch
 timestamp purchaseDate
 ```
 
-#### Discussion
+## Discussion
 
 The purchase date is in UNIX time, in milliseconds.
 

@@ -25,7 +25,7 @@ var totalDiskSpaceCapacity: Measurement<UnitInformationStorage> { get }
 @property (strong, readonly, nonnull) NSMeasurement<NSUnitInformationStorage *> * totalDiskSpaceCapacity;
 ```
 
-#### Discussion
+## Discussion
 
 Calculate the amount of free space on this device by subtracting [`totalDiskSpaceUsedSize`](./totaldiskspaceusedsize.md) from this value.
 

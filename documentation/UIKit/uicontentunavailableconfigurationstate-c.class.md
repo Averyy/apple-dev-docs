@@ -19,7 +19,7 @@ An object that encapsulates state for a content-unavailable view.
 @interface UIContentUnavailableConfigurationState : NSObject
 ```
 
-#### Overview
+## Overview
 
 Typically, you don’t create a configuration state yourself. To obtain a configuration state, override [`updateContentUnavailableConfigurationUsingState:`](./uiviewcontroller/updatecontentunavailableconfigurationusingstate_.md) in your view controller subclass and use the state parameter. Outside of this method, you can get a view controller’s configuration state from the [`contentUnavailableConfigurationState`](./uiviewcontroller/contentunavailableconfigurationstate-9bvga.md) property.
 

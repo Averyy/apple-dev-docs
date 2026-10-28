@@ -23,7 +23,7 @@ class PKStrokeRenderStateReference
 @interface PKStrokeRenderState : NSObject
 ```
 
-#### Overview
+## Overview
 
 `PKStrokeRenderState` is the Objective-C representation of a stroke’s rendering context. It conforms to `NSCopying` and `NSSecureCoding` for archiving. In Swift, use the equivalent value type [`PKStroke.RenderState`](./pkstroke-swift.struct/renderstate-swift.struct.md) instead.
 

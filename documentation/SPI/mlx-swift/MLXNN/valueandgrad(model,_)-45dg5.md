@@ -17,7 +17,7 @@ Variant of `valueAndGrad(model:_:)` that can be used to pass an arbitrary parame
 func valueAndGrad<Model, Arguments>(model: Model, _ f: @escaping (Model, Arguments) -> [MLXArray]) -> (Model, Arguments) -> ([MLXArray], ModuleParameters) where Model : Module
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: Prefer the other `valueAndGrad(model:_:)` functions if the arguments are all `MLXArray`. This variant requires re-constructing the gradient function per call.
 
@@ -38,7 +38,7 @@ let vg = valueAndGrad(model: m) { (model: Module, args: (MLXArray, Int)) in
 }
 ```
 
-##### See Also
+### See Also
 
 - [Training a Model](./training.md)
 - [`valueAndGrad(model:_:)`](./valueandgrad%28model,_%29-12a2c.md)

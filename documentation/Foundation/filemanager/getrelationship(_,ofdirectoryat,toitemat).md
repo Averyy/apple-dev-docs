@@ -25,7 +25,7 @@ func getRelationship(_ outRelationship: UnsafeMutablePointer<FileManager.URLRela
 - (BOOL) getRelationship:(NSURLRelationship *) outRelationship ofDirectoryAtURL:(NSURL *) directoryURL toItemAtURL:(NSURL *) otherURL error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to determine the relationship between an item and a directory whose location you already know. If the relationship between the items is determined successfully, this method sets the value of the `outRelationship` parameter to an appropriate value. The directory may contain the item, it may be the same as the item, or it may not have a direct relationship to the item.
 

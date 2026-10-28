@@ -25,7 +25,7 @@ typealias CGPatternDrawPatternCallback = (UnsafeMutableRawPointer?, CGContext) -
 typedef void (*)(void *, struct CGContext *) CGPatternDrawPatternCallback;
 ```
 
-#### Discussion
+## Discussion
 
 When a pattern is used to stroke or fill a graphics path,Quartz calls your custom drawing function at the appropriatetime to draw the pattern cell. The cell should be drawn exactly thesame way each time the drawing function is called.
 

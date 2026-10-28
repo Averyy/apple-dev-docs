@@ -18,11 +18,11 @@ Returns whether this node definition is available on a given platform and OS ver
 func isAvailable(on platform: ShaderGraph.NodeDefinition.Platform, version: OperatingSystemVersion? = nil) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if this definition is available on `platform` at `version`; `false` if it is unavailable or has been obsoleted by that version.
 
-#### Discussion
+## Discussion
 
 Use this method to filter node definitions before presenting them to the user, or before adding them to a graph that targets a specific deployment target.
 

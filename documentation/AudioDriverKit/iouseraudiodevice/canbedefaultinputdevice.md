@@ -15,11 +15,11 @@ Returns a Boolean value that indicates if this device can be the host’s defaul
 uint32_t CanBeDefaultInputDevice();
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the host can use this device as the default input device.
 
-#### Discussion
+## Discussion
 
 This method synchronizes by using the work queue created by the object.
 

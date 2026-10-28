@@ -24,7 +24,7 @@ case inverseSquared
 PHASECurveTypeInverseSquared
 ```
 
-#### Discussion
+## Discussion
 
 The function `y` `=` `1` `/` `x^2` shapes this curve.
 

@@ -23,7 +23,7 @@ var allowedTouchTypes: [NSNumber] { get set }
 @property (nonatomic, copy) NSArray<NSNumber *> * allowedTouchTypes;
 ```
 
-#### Discussion
+## Discussion
 
 This property is an array of touch types that recognizes whether the touch is direct or indirect. For a list of all possible touch types, see [`UITouch.TouchType`](../uitouch/touchtype.md) enumeration in [`UITouch`](../uitouch.md). The default value of this property contains all touch types.
 

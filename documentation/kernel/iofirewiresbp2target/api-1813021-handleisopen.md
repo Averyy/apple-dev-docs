@@ -12,11 +12,11 @@ virtual bool handleIsOpen(
  const IOService *forClient ) const;
 ```
 
-#### Return Value
+## Return Value
 
 Returns true if the specific, or any, client has the IOService open.
 
-#### Overview
+## Overview
 
 See IOService for discussion.
 

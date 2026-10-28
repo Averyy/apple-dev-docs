@@ -15,11 +15,11 @@ Retrieve mount flags.
 uint64_t vfs_flags(mount_t mp);
 ```
 
-#### Return Value
+## Return Value
 
 Flags.
 
-#### Discussion
+## Discussion
 
 Results will be in the bitwise "OR" of MNT_VISFLAGMASK and MNT_CMDFLAGS.
 

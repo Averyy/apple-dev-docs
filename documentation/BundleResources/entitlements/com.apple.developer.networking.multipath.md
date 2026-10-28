@@ -16,7 +16,7 @@ A Boolean value indicating whether your app may use Multipath protocols to seaml
 - **Name**: `com.apple.developer.networking.multipath` (Multipath)
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 This key Indicates whether your app may use Multipath protocols, such as Multipath TCP, to smoothly hand over traffic from one interface to another.
 

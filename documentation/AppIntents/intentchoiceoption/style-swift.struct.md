@@ -21,7 +21,7 @@ Defines the visual style and semantic meaning of an [`IntentChoiceOption`](../in
 struct Style
 ```
 
-#### Overview
+## Overview
 
 The system uses the style to render the option appropriately in the user interface.
 

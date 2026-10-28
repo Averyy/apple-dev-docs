@@ -24,7 +24,7 @@ func contains(_ textRange: NSTextRange) -> Bool
 - (BOOL) containsRange:(NSTextRange *) textRange;
 ```
 
-#### Return Value
+## Return Value
 
 Returns `true` if the range you provide is in the current range; otherwise `false`.
 

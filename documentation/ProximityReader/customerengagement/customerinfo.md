@@ -17,7 +17,7 @@ A response structure that describes customer information.
 struct CustomerInfo
 ```
 
-#### Overview
+## Overview
 
 If none of the customer information is available, this structure can return with all the values being nil
 

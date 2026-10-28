@@ -23,11 +23,11 @@ class func success(with resolvedPaymentStatus: INPaymentStatus) -> Self
 + (instancetype) successWithResolvedPaymentStatus:(INPaymentStatus) resolvedPaymentStatus;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INPaymentStatusResolutionResult`](../inpaymentstatusresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method to create a result object when you are able to perform a search based on the requested payment status.
 

@@ -20,7 +20,7 @@ func setUpWithError() throws
 
 - [Set Up and Tear Down State in Your Tests](../set-up-and-tear-down-state-in-your-tests.md)
 
-#### Discussion
+## Discussion
 
 Before each test begins, `XCTest` calls [`setUp(completion:)`](./setup%28completion%29.md) for asynchronous state preparation, then this method, followed by [`setUp()`](./setup%28%29.md).
 

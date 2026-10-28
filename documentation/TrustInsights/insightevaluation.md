@@ -16,7 +16,7 @@ The insight result that an evaluation request returns.
 final class InsightEvaluation<each InsightResult> where repeat each InsightResult : TrustInsight
 ```
 
-#### Discussion
+## Discussion
 
 This is the object that [`requestEvaluation(context:)`](./insightevaluator/requestevaluation%28context%29.md)method returns. It includes the insight result, metadata about the ID and server timestamps you can use to track and match requests, as well as a signed payload which contains additional information about the evaluation.
 

@@ -20,11 +20,11 @@ nonisolated
 func webViewContentBackground(_ visibility: Visibility) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view with the specified content background visibility.
 
-#### Discussion
+## Discussion
 
 By default, WebViews are opaque, and use the page’s natural background color as their background color. Use this modifier if you would like to not use this behavior and instead provide a custom background using SwiftUI.
 

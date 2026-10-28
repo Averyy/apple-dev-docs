@@ -16,11 +16,11 @@ Returns the timestamp value contained in this IOHIDValueRef.
 uint64_t IOHIDValueGetTimeStamp(IOHIDValueRef value);
 ```
 
-#### Return Value
+## Return Value
 
 Returns a uint64_t representing the timestamp of this value.
 
-#### Discussion
+## Discussion
 
 The timestamp value returned represents OS AbsoluteTime, not CFAbsoluteTime.
 

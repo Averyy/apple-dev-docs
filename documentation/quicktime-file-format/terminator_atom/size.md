@@ -6,7 +6,7 @@
 
 An unsigned 32-bit integer holding the size of the decompression parameters atom.
 
-#### Overview
+## Overview
 
 Always set to `8`.
 

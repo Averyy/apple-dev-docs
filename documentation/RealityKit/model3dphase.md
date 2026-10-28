@@ -15,7 +15,7 @@ The current phase of the asynchronous model loading operation.
 enum Model3DPhase
 ```
 
-#### Overview
+## Overview
 
 When you create a [`Model3D`](./model3d.md) instance with the [`init(url:transaction:content:)`](./model3d/init%28url,transaction,content%29.md) or `Model3D/init(named:transaction:content:)` initializers, you define the appearance of the view using a `content` closure. [`Model3D`](./model3d.md) calls the closure with a phase value at different points during the load operation to indicate the current state. Use the phase to decide what to display. For example, you can display the loaded model if it exists, a view that indicates an error, or a placeholder:
 

@@ -21,7 +21,7 @@ The type of a Combine publisher that publishes the value of a Swift optional ins
 struct Publisher
 ```
 
-#### Overview
+## Overview
 
 In contrast with the [`Just`](../../Combine/just.md) publisher, which always produces a single value, this publisher might not send any values and instead finish normally, if [`output`](./publisher-swift.struct/output-swift.property.md) is `nil`.
 

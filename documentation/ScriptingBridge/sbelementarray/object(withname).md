@@ -20,11 +20,11 @@ func object(withName name: String) -> Any
 - (ObjectType) objectWithName:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A reference to the designated object or `nil` if the object couldn’t be found.
 
-#### Discussion
+## Discussion
 
 This method is provided as an alternative to [`object(at:)`](../../Foundation/nsarray/object%28at%29.md) for applications where a name is available instead of (or in addition to) an index. A name is generally more stable than an index. For example, it is typically more useful to identify a mailbox in Mail by its name than by its index in the list of mailboxes.
 

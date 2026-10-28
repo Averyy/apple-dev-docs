@@ -19,7 +19,7 @@ init!(_ inOptions: IOBluetoothServiceBrowserControllerOptions)
 + (IOBluetoothServiceBrowserController *) serviceBrowserController:(IOBluetoothServiceBrowserControllerOptions) inOptions;
 ```
 
-#### Return Value
+## Return Value
 
 A new instance of the IOBluetoothServiceBrowserController Controller, nil if unsuccessful.
 

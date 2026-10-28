@@ -21,7 +21,7 @@ Specifies a short person name components style.
 case short
 ```
 
-#### Discussion
+## Discussion
 
 The rawValue of `short` is 1.
 

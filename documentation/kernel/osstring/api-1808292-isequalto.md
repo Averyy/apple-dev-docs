@@ -12,11 +12,11 @@ virtual bool isEqualTo(
  const OSData *aDataObject) const;
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the two objects are equivalent, `false` otherwise.
 
-#### Overview
+## Overview
 
 This function compares the bytes of the OSData object against those of the OSString, accounting for the possibility that an OSData might explicitly include a nul character as part of its total length. Thus, for example, an OSData object containing either the bytes <'u', 's', 'b', '\0'> or <'u', 's', 'b'> will compare as equal to the OSString containing "usb".
 

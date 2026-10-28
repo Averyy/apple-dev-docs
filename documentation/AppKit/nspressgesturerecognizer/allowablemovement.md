@@ -19,7 +19,7 @@ var allowableMovement: CGFloat { get set }
 @property CGFloat allowableMovement;
 ```
 
-#### Discussion
+## Discussion
 
 The mouse must move by the specified amount along either axis for the gesture to fail. The distance is measured in points. The default value of this property is the same as the double-click distance.
 

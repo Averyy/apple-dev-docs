@@ -24,7 +24,7 @@ static let cyclingFunctionalThresholdPower: HKQuantityTypeIdentifier
 extern HKQuantityTypeIdentifier const HKQuantityTypeIdentifierCyclingFunctionalThresholdPower;
 ```
 
-#### Discussion
+## Discussion
 
 Cycling Functional Threshold Power (FTP) is an estimate of the maximum average power you can sustain for 60 minutes while riding a bike. These samples use power units (described in [`HKUnit`](../hkunit.md)) and measure discrete values (described in [`HKQuantityAggregationStyle`](../hkquantityaggregationstyle.md)). During cycling workouts, the system automatically records estimated FTP samples on Apple Watch.
 

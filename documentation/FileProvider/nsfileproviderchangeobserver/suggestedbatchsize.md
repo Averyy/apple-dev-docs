@@ -23,7 +23,7 @@ optional var suggestedBatchSize: Int { get }
 @property (nonatomic, readonly) NSInteger suggestedBatchSize;
 ```
 
-#### Discussion
+## Discussion
 
 The system suggests the batch size to optimize performance based on the context of the pending changes. The system can request the enumeration of a container for various reasons, such as if the user has the directory open in Finder, or the file open in an application. Each case has its own performance profile.
 

@@ -19,7 +19,7 @@ var kFxParameterFlag_IGNORE_MINMAX: Int { get }
 kFxParameterFlag_IGNORE_MINMAX
 ```
 
-#### Discussion
+## Discussion
 
 Ignore its minimum and maximum values.
 

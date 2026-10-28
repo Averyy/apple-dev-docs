@@ -19,11 +19,11 @@ func CopySpeechProperty(_ chan: SpeechChannel, _ property: CFString, _ object: U
 OSErr CopySpeechProperty(SpeechChannel chan, CFStringRef property, CFTypeRef  _Nullable *object);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./speech_synthesis_manager.md#1659745).
 
-#### Discussion
+## Discussion
 
 The `CopySpeechProperty` function is the Core Foundation-based equivalent of the [`GetSpeechInfo`](./api-1552220-getspeechinfo.md) function.
 

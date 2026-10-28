@@ -20,7 +20,7 @@ The starting learning rate.
 var learningRate: Float
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to 0.005.
 

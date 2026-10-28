@@ -15,11 +15,11 @@ Creates a Fault XML response for a given WSProtocolHandler and fault details dic
 CFDataRef WSProtocolHandlerCopyFaultDocument(WSProtocolHandlerRef ref, CFDictionaryRef methodContext, CFDictionaryRef faultDict);
 ```
 
-#### Return Value
+## Return Value
 
 A `CFDataRef` containing the XML fault.
 
-#### Discussion
+## Discussion
 
 This function creates a Fault XML response for a given `WSProtocolHandlerRef` and fault details dictionary. The fault dictionary contains one or more of `kWSFaultString`, `kWSFaultCode` or `kWSFaultExtra`, as per WSMethodInvocation.h.
 

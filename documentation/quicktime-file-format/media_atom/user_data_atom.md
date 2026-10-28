@@ -6,7 +6,7 @@
 
 An atom where you define and store data associated with a QuickTime object.
 
-#### Overview
+## Overview
 
 For more information, see [`User data atom`](../user_data_atom.md).
 

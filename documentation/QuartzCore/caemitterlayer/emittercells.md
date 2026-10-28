@@ -24,7 +24,7 @@ var emitterCells: [CAEmitterCell]? { get set }
 @property (copy, nullable) NSArray<CAEmitterCell *> * emitterCells;
 ```
 
-#### Discussion
+## Discussion
 
 Each object in the array must be an instance of the `CAEmitterCell` class.
 

@@ -16,7 +16,7 @@ Defines a reference to an opaque Unicode to text converter object.
 typedef struct OpaqueUnicodeToTextInfo *UnicodeToTextInfo;
 ```
 
-#### Discussion
+## Discussion
 
 Many of the Unicode Converter functions that perform conversions require a Unicode converter object containing information used for the conversion process. There are three types of Unicode converter objects used for different types of conversions. You use the `UnicodeToTextInfo` type, described here, for converting from Unicode to text.
 

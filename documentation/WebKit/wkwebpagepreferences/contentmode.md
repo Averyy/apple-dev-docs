@@ -23,7 +23,7 @@ enum ContentMode
 enum WKContentMode : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 Browsers often render webpages differently based on device type. For example, Safari provides a desktop-class experience when displaying webpages on Mac and iPad, but it displays a mobile experience when displaying pages on iPhone. Use content modes to specify how you want your web view to render content within your app.
 

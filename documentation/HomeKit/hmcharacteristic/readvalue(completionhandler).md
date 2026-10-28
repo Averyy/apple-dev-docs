@@ -28,7 +28,7 @@ func readValue() async throws
 - (void) readValueWithCompletionHandler:(void (^)(NSError *error)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 The value is available from the [`value`](./value.md) property after completion of the request.
 

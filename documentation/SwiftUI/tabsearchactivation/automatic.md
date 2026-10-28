@@ -21,7 +21,7 @@ The default search activation behavior.
 static var automatic: TabSearchActivation { get }
 ```
 
-#### Discussion
+## Discussion
 
 By default, search will only activate when the user interacts with the search field. Dismissing search has no other effects.
 

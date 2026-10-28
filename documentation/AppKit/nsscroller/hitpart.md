@@ -19,7 +19,7 @@ var hitPart: NSScroller.Part { get }
 @property (readonly) NSScrollerPart hitPart;
 ```
 
-#### Discussion
+## Discussion
 
 This method is typically invoked by an [`NSScrollView`](../nsscrollview.md) object to determine how to scroll its document view when it receives an action message from the scroller.
 

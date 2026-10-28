@@ -25,7 +25,7 @@ struct NSSwappedFloat
 typedef struct { ... } NSSwappedFloat;
 ```
 
-#### Overview
+## Overview
 
 The fields of an [`NSSwappedFloat`](./nsswappedfloat.md) are private.
 

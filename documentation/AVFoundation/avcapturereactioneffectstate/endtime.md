@@ -23,7 +23,7 @@ var endTime: CMTime { get }
 @property (nonatomic, readonly) CMTime endTime;
 ```
 
-#### Discussion
+## Discussion
 
 The value is [`invalid`](../../CoreMedia/cmtime/invalid.md) while the effect is in progress, but changes to a valid time when the reaction effect completes and the system removes it from the list of [`reactionEffectsInProgress`](../avcapturedevice/reactioneffectsinprogress.md).
 

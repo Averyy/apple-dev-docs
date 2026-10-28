@@ -24,11 +24,11 @@ func max() -> Self.Element?
 
 Available when `Element` conforms to `Comparable`.
 
-#### Return Value
+## Return Value
 
 The sequence’s maximum element. If the sequence has no elements, returns `nil`.
 
-#### Discussion
+## Discussion
 
 This example finds the largest value in an array of height measurements.
 

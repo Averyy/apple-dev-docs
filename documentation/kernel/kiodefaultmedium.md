@@ -15,7 +15,7 @@ A property of IONetworkController objects.
 #define kIODefaultMedium
 ```
 
-#### Discussion
+## Discussion
 
 The kIODefaultMedium property is a property of IONetworkController objects. It has an OSString value that describes the name of the default medium. This definition may change or disappear in the future.
 

@@ -21,7 +21,7 @@ Creates a new Boolean value from the given string.
 init?(_ description: String)
 ```
 
-#### Discussion
+## Discussion
 
 If the `description` value is any string other than `"true"` or `"false"`, the result is `nil`. This initializer is case sensitive.
 

@@ -25,7 +25,7 @@ var primitiveRange: NSRange { get set }
 @property (nonatomic) NSRange primitiveRange;
 ```
 
-#### Discussion
+## Discussion
 
 The default value for this property is an [`NSRange`](../../Foundation/nsrange-c.struct.md) whose location is [`NSNotFound`](../../Foundation/nsnotfound-4qp9h.md) and length is zero, indicating that, by default, SceneKit renders the entire set of primitives specified by a geometry element’s data buffer.
 

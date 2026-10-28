@@ -5,13 +5,13 @@
 
 Map audio channels to specific devices in multiroute sessions for recording and playback.
 
-#### Overview
+## Overview
 
 When working with multiple audio devices simultaneously, such as recording from multiple microphones or routing playback to different speakers, you need precise control over which audio reaches which device.
 
 [Core Audio](../CoreAudio/CoreAudio.md) provides channel mapping to bind specific audio channels to targeted devices. Use the input and output nodes from [`AVAudioEngine`](./avaudioengine.md) for position-based routing with global channel indices, [Audio Queue Services](../AudioToolbox/audio-queue-services.md) for device-based routing using device identifiers, or [`AVAudioPlayer`](./avaudioplayer.md) and [`AVAudioRecorder`](./avaudiorecorder.md) for high-level routing with audio session channel descriptions.
 
-#### Route audio outputs using audio engine’s output node
+## Route audio outputs using audio engine’s output node
 
 Use [Audio Unit](../AudioUnit/AudioUnit.md) channel maps to route playback audio to specific devices by mapping to global channel positions. A channel map is an array where the index represents the destination channel and the value specifies which source channel to route to that destination. Use `-1` to specify silence for unused channels.
 
@@ -115,7 +115,7 @@ player.play()
 
 > **Note**: The channel map array size must match the total number of output channels available. Each element specifies the source stream channel for that output position, or `-1` for silence.
 
-#### Route audio inputs using audio engine’s input node
+## Route audio inputs using audio engine’s input node
 
 When recording from multiple input devices, channel map semantics differ from playback. The channel map array size must match your desired recording channel count (not the total hardware channel count), and each array element specifies which hardware channel to pull from.
 
@@ -206,7 +206,7 @@ try engine.start()
 
 > **Note**: When using AVAudioEngine, set the client format by passing your desired format to `installTapOnBus`. The format’s channel count should match your channel map size, and the sample rate should match the hardware input format to avoid runtime errors.
 
-#### Route audio with audio queue channel assignments
+## Route audio with audio queue channel assignments
 
 Use [Audio Queue Services](../AudioToolbox/audio-queue-services.md) channel assignments to route audio to specific device channels by device UID rather than global channel position. This approach provides direct device targeting without needing to calculate global channel indices.
 
@@ -235,7 +235,7 @@ AudioQueueSetProperty(
 )
 ```
 
-#### Route high-level audio an audio player or recorder
+## Route high-level audio an audio player or recorder
 
 [`AVAudioPlayer`](./avaudioplayer.md) and [`AVAudioRecorder`](./avaudiorecorder.md) provide a high-level approach using the audio player’s [`channelAssignments`](./avaudioplayer/channelassignments.md), or the audio recorder’s [`channelAssignments`](./avaudiorecorder/channelassignments.md) property with [`AVAudioSessionChannelDescription`](./avaudiosessionchanneldescription.md) objects directly from the audio session.
 

@@ -21,7 +21,7 @@ A value that defines the visibility priority of a toolbar item.
 struct ToolbarItemVisibilityPriority
 ```
 
-#### Overview
+## Overview
 
 When a toolbar runs out of space, it moves items into an overflow menu. Visibility priority controls the order in which that happens: items with a lower priority move first, keeping higher-priority items visible longer as the window shrinks.
 

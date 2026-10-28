@@ -19,7 +19,7 @@ class let didEndLiveResizeNotification: NSNotification.Name
 extern NSNotificationName const NSWindowDidEndLiveResizeNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The system sends this only once for a series of window resize operations.
 

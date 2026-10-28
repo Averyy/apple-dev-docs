@@ -25,11 +25,11 @@ func write(toFile path: String, atomically useAuxiliaryFile: Bool) -> Bool
 - (BOOL) writeToFile:(NSString *) path atomically:(BOOL) useAuxiliaryFile;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the file is written successfully, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 If the array’s contents are all property list objects (`NSString`, `NSData`, `NSArray`, or `NSDictionary` objects), the file written by this method can be used to initialize a new array with the class method [`arrayWithContentsOfFile:`](./arraywithcontentsoffile_.md) or the instance method [`init(contentsOfFile:)`](./init%28contentsoffile%29.md). This method recursively validates that all the contained objects are property list objects before writing out the file, and returns [`false`](../../Swift/false.md) if all the objects are not property list objects, since the resultant file would not be a valid property list.
 

@@ -21,7 +21,7 @@ Creates a configuration for the specified database and serialized state.
 - (instancetype) initWithDatabase:(CKDatabase *) database stateSerialization:(CKSyncEngineStateSerialization *) stateSerialization delegate:(id<CKSyncEngineDelegate>) delegate;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized configuration instance.
 

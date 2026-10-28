@@ -5,19 +5,19 @@
 
 Store 3D image data in a base media in QuickTime movies.
 
-#### Overview
+## Overview
 
 > ❗ **Important**: 3D Media is deprecated in the QuickTime file format. The information that follows documents existing content containing 3D media and should not be used for new development.
 
 QuickTime movies store 3D image data in a base media. This media has a media type of `'qd3d'`.
 
-#### 3D Sample Description
+## 3D Sample Description
 
 The 3D sample description uses the standard sample description header, as described in [`Sample table atom`](./sample_table_atom.md).
 
 The data format field in the sample description is always set to `'qd3d'`. The 3D media handler adds no additional fields to the sample description.
 
-#### 3D Sample Data
+## 3D Sample Data
 
 The 3D samples are stored in the 3D Metafile format developed for QuickDraw 3D.
 

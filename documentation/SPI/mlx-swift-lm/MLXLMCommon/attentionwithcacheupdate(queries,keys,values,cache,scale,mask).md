@@ -17,11 +17,11 @@ Automatic attention with cache update
 func attentionWithCacheUpdate(queries: MLXArray, keys: MLXArray, values: MLXArray, cache: KVCache?, scale: Float, mask: MLXFast.ScaledDotProductAttentionMaskMode = .none) -> MLXArray
 ```
 
-#### Return Value
+## Return Value
 
 Attention output [B, nHeads, L, D]
 
-#### Discussion
+## Discussion
 
 This function matches Python’s `scaled_dot_product_attention` in base.py:
 

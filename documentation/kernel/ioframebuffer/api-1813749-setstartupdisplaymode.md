@@ -13,11 +13,11 @@ virtual IOReturn setStartupDisplayMode(
  IOIndexdepth );
 ```
 
-#### Return Value
+## Return Value
 
 an IOReturn code.
 
-#### Overview
+## Overview
 
 IOFramebuffer subclasses should implement this method to set the mode and depth to be used during boot and at startup, to reduce needed mode changes during boot when the display connection type is the same. If possible this mode should also be used by the OpenFirmware driver for the card.
 

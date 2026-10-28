@@ -26,7 +26,7 @@ The key that defines the traffic category entitlement to enable Cellular Network
 - `avstreaming-7`: A service type for medium-delay tolerant, low-medium-loss tolerant, elastic flow, constant packet interval, variable rate, and size connections.
 - `responsiveav-8`: A service type for low-delay tolerant, low-to-medium-loss tolerant, elastic flow, variable packet interval, rate, and size responsive (time-sensitive) connections.
 
-#### Discussion
+## Discussion
 
 To enable Cellular Network Slicing, you need to set the appropriate entitlements and properties.
 

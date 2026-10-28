@@ -16,7 +16,7 @@ A type that indicates the languages and regions that you can specify for the App
 enum ApplePayButtonLocale
 ```
 
-#### Overview
+## Overview
 
 The default value is the current language and region setting in a browser.
 

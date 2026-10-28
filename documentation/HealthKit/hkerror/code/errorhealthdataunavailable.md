@@ -24,7 +24,7 @@ case errorHealthDataUnavailable
 HKErrorHealthDataUnavailable
 ```
 
-#### Discussion
+## Discussion
 
 Because iOS apps can run on devices that don’t support HealthKit (for example, on an iPad), always verify that the current device supports HealthKit by calling [`isHealthDataAvailable()`](../../hkhealthstore/ishealthdataavailable%28%29.md) before calling any other HealthKit methods. If HealthKit isn’t available on the device, other HealthKit methods fail with an [`errorHealthDataUnavailable`](../errorhealthdataunavailable.md) error.
 

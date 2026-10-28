@@ -22,7 +22,7 @@ nonisolated
 func toolbarRole(_ role: ToolbarRole) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 Use this modifier to configure the semantic role for content populating your app’s toolbar. SwiftUI uses this role when rendering the content of your app’s toolbar.
 

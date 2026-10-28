@@ -23,7 +23,7 @@ var isCollapsed: Bool { get }
 @property (nonatomic, readonly, getter=isCollapsed) BOOL collapsed;
 ```
 
-#### Discussion
+## Discussion
 
 This property is set to [`true`](../../Swift/true.md) when the split view controller content is semantically collapsed into a single container. Collapsing happens when the split view controller transitions from a horizontally regular to a horizontally compact environment. After it has been collapsed, the split view controller reports having only one child view controller in its [`viewControllers`](./viewcontrollers.md) property. When collapsed, the [`displayMode`](./displaymode-swift.property.md) property has no impact on the appearance of the split view interface.
 

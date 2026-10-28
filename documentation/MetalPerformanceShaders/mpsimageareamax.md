@@ -24,7 +24,7 @@ class MPSImageAreaMax
 @interface MPSImageAreaMax : MPSUnaryImageKernel
 ```
 
-#### Overview
+## Overview
 
 If there are multiple channels in the source image, each channel is processed independently. The [`edgeMode`](./mpsunaryimagekernel/edgemode.md) property value is assumed to always be [`MPSImageEdgeMode.clamp`](./mpsimageedgemode/clamp.md) for this filter.
 

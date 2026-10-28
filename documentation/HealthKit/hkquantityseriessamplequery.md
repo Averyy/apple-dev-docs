@@ -28,7 +28,7 @@ class HKQuantitySeriesSampleQuery
 
 - [Accessing condensed workout samples](./accessing-condensed-workout-samples.md)
 
-#### Overview
+## Overview
 
 Use a series query to access the individual [`HKQuantity`](./hkquantity.md) objects added to a sample using an [`HKQuantitySeriesSampleBuilder`](./hkquantityseriessamplebuilder.md).
 

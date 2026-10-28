@@ -28,7 +28,7 @@ var mipmapLevelCount: Int { get set }
 
 - [Creating a mipmapped texture](../creating-a-mipmapped-texture.md)
 
-#### Discussion
+## Discussion
 
 The default value is `1`. For a buffer-backed or multisample textures, the value needs to be `1`.
 

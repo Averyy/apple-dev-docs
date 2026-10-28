@@ -19,7 +19,7 @@ class var defaultPreferredImageDynamicRange: NSImage.DynamicRange { get set }
 @property (class) NSImageDynamicRange defaultPreferredImageDynamicRange;
 ```
 
-#### Discussion
+## Discussion
 
 This property defaults to [`NSImage.DynamicRange.constrainedHigh`](../nsimage/dynamicrange/constrainedhigh.md) on macOS 14 and higher, and [`NSImage.DynamicRange.standard`](../nsimage/dynamicrange/standard.md) otherwise. Set this property to another [`NSImage.DynamicRange`](../nsimage/dynamicrange.md) value to change the default for all subsequently created image views in your app.
 

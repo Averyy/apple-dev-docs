@@ -15,7 +15,7 @@ The current state of the player.
 readonly attribute String playbackState;
 ```
 
-#### Discussion
+## Discussion
 
 This property can contain the following valid values: `begin`, `end`, `loading`, `playing`, `paused`, and `scanning`.
 

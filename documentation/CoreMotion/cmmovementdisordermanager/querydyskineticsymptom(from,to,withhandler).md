@@ -19,7 +19,7 @@ func queryDyskineticSymptom(from fromDate: Date, to toDate: Date, withHandler ha
 - (void) queryDyskineticSymptomFromDate:(NSDate *) fromDate toDate:(NSDate *) toDate withHandler:(CMDyskineticSymptomResultHandler) handler;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to asynchronously query for dyskinetic symptoms recorded by the [`monitorKinesias(forDuration:)`](./monitorkinesias%28forduration%29.md) method. The movement disorder manager keeps dyskinetic symptom results for only seven days after the time of recording.
 

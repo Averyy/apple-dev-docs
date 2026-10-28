@@ -24,7 +24,7 @@ case sourceColor
 MTLBlendFactorSourceColor
 ```
 
-#### Discussion
+## Discussion
 
 `F(rgb) = Source.rgb`
 

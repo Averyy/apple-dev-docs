@@ -22,7 +22,7 @@ func setObservationInfo(_ inObservationInfo: UnsafeMutableRawPointer?)
 - (void) setObservationInfo:(void *) inObservationInfo;
 ```
 
-#### Discussion
+## Discussion
 
 For more about observation information, see [Key-Value Observing Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/KeyValueObserving/KeyValueObserving.html#//apple_ref/doc/uid/10000177i).
 

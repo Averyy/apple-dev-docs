@@ -12,7 +12,7 @@ virtual void release(
  intfreeWhen) const;
 ```
 
-#### Overview
+## Overview
 
 If the receiver has `freeWhen` or fewer references after its reference count is decremented, it is immediately freed.
 

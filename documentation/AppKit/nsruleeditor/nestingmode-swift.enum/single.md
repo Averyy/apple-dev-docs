@@ -19,7 +19,7 @@ case single
 NSRuleEditorNestingModeSingle
 ```
 
-#### Discussion
+## Discussion
 
 Plus/minus buttons are not shown.
 

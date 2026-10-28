@@ -15,7 +15,7 @@ An error a validator emits when a value isn’t a `ByteArray` or isn’t castabl
 interface ValueNotByteArrayError
 ```
 
-#### Overview
+## Overview
 
 Extends `ValueNotConvertibleToTypeError`.
 

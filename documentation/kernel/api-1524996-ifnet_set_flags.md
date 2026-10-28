@@ -13,11 +13,11 @@
 errno_t ifnet_set_flags(ifnet_t interface, u_int16_t new_flags, u_int16_t mask);
 ```
 
-#### Return Value
+## Return Value
 
 0 on success otherwise the errno error.
 
-#### Discussion
+## Discussion
 
 Sets the interface flags to new_flags. This function lets you specify which flags you want to change using the mask. The kernel will effectively take the lock, then set the interface's flags to (if_flags & ~mask) | (new_flags & mask).
 

@@ -4,13 +4,13 @@
 
 Secure personal data, and respect user preferences for how data is used.
 
-#### Overview
+## Overview
 
 Designing for user privacy is important. Most Apple devices contain personal data that the user doesn’t want to expose to apps or to external entities. If your app accesses or uses data inappropriately, the user might stop using your app and even delete it from their device.
 
 Access user or device data only with the user’s informed consent obtained in accordance with applicable law. In addition, take appropriate steps to protect user and device data, and be transparent about how you use it.
 
-##### Review Guidelines from Government and Industry Sources
+### Review Guidelines from Government and Industry Sources
 
 Consult these documents:
 
@@ -19,15 +19,15 @@ Consult these documents:
 - [Privacy on the Go: Recommendations for the Mobile Ecosystem](https://oag.ca.gov/sites/all/files/agweb/pdfs/privacy/privacy_on_the_go.pdf). The California State Attorney General’s recommendations for mobile privacy.
 - Smartphone Privacy Initiative (2012) in [English](http://www.soumu.go.jp/main_sosiki/joho_tsusin/eng/presentation/pdf/Initiative.pdf) or [Japanese](http://www.soumu.go.jp/main_content/000171225.pdf) and Smartphone Privacy Initiative II (2013) in [English](http://www.soumu.go.jp/main_sosiki/joho_tsusin/eng/presentation/pdf/Summary_II.pdf) or [Japanese](http://www.soumu.go.jp/main_content/000247654.pdf). The Japanese Ministry of Internal Affairs and Communications’ Smartphone Privacy Initiatives.
 
-##### Request Access Only When Your App Needs the Data
+### Request Access Only When Your App Needs the Data
 
 Request access to sensitive user or device data—like location, contacts, and photos—at the time your app needs the data. Supply a purpose string (sometimes called a usage description string) in your app’s [`Information Property List`](../BundleResources/information-property-list.md) that the system can present to a user explaining why your app needs access. Provide reasonable fallback behavior in situations where the user doesn’t grant access to the requested data. For more details, see [Requesting access to protected resources](./requesting-access-to-protected-resources.md).
 
-##### Be Transparent About How Data Will Be Used
+### Be Transparent About How Data Will Be Used
 
 For example, when you submit your app to the App Store, specify a URL for your privacy policy or statement as part of your App Store Connect metadata. You can also summarize that policy or statement in your app description.
 
-##### Give the User Control Over Data and Protect Data You Collect
+### Give the User Control Over Data and Protect Data You Collect
 
 Respect the user’s preferences, and take reasonable steps to protect the data that you collect in your apps:
 
@@ -36,7 +36,7 @@ Respect the user’s preferences, and take reasonable steps to protect the data 
 - If your app uses the [`ASIdentifierManager`](../AdSupport/asidentifiermanager.md) class, respect the value of its [`isAdvertisingTrackingEnabled`](../AdSupport/asidentifiermanager/isadvertisingtrackingenabled.md) property. If the user sets that property to false, then use the [`ASIdentifierManager`](../AdSupport/asidentifiermanager.md) class only for limited advertising purposes, like frequency capping, attribution, conversion events, estimating the number of unique users, advertising fraud detection, and debugging. See the [AdSupport](../AdSupport/AdSupport.md) framework for additional information.
 - If you must identify users persistently, use the [`identifierForVendor`](./uidevice/identifierforvendor.md) property of the [`UIDevice`](./uidevice.md) class or the [`advertisingIdentifier`](../AdSupport/asidentifiermanager/advertisingidentifier.md) property of the [`ASIdentifierManager`](../AdSupport/asidentifiermanager.md) class.
 
-##### Use the Minimum Amount of Data Required
+### Use the Minimum Amount of Data Required
 
 Request and use the minimum amount of user or device data needed to accomplish a given task. Don’t seek access to or collect data for unnecessary or non-obvious reasons, or because you think it might be useful later.
 

@@ -17,7 +17,7 @@ Applies the Log Softmax function.
 func logSoftmax(_ x: MLXArray, axis: Int = -1) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 This is:
 
@@ -25,7 +25,7 @@ This is:
 x - MLX.logSumExp(x, axis: axis, keepDims: true)
 ```
 
-##### See Also
+### See Also
 
 - [Activation Functions and Layers](./activations.md)
 - [`LogSoftmax`](./logsoftmax.md)

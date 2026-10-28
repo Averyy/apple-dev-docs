@@ -5,13 +5,13 @@
 
 Initiate a price change and manage communications with your subscribers through the App Store.
 
-#### Overview
+## Overview
 
 The Advanced Commerce API provides a standard UI to facilitate price increases for subscriptions and manage the subscriber consent process.
 
 > **Note**: The AppStore doesn’t currently support the Advanced Commerce price increase mechanism in India.
 
-#### Implement the Advanced Commerce Subscription price change API
+## Implement the Advanced Commerce Subscription price change API
 
 Use the [`Change Subscription Price`](./change-subscription-price.md) endpoint in the Advanced Commerce API (ACA) to initiate a price change for an individual subscription item. The UI the framework provides manages all of the necessary interactions and communication with a person using your app, including:
 
@@ -23,11 +23,11 @@ Use the [`Change Subscription Price`](./change-subscription-price.md) endpoint i
 
 ![An illustration of a subscription price increase notice sheet for an iOS creator streaming app. The image shows the messaging of the price increase, a button for the subscriber to acknowledge the price change, and a link for the subscriber to manage their subscription.](https://developer.apple.com/tutorials/images/com.apple.advancedcommerceapi/subscription-price-increase-consent-not-needed@2x.png)
 
-#### Understand consent management and price change communication
+## Understand consent management and price change communication
 
 The App Store checks if a price increase requires consent, and follows different paths depending on whether a subscriber needs to explicitly consent to a price increase or not.
 
-##### Follow the consent-needed path
+### Follow the consent-needed path
 
 The App Store requests explicit consent from the subscriber if the price increase meets any of the following criteria:
 
@@ -49,7 +49,7 @@ When conditions require consent, the App Store notifies subscribers via email, p
 
 ![An illustration that describes the timeline of communications the App Store sends regarding subscription price increases, representing a developer changing the price in middle of month. The subscriber receives communication based on communication timelines.](https://developer.apple.com/tutorials/images/com.apple.advancedcommerceapi/price-increase-notification-timeline@2x.png)
 
-##### Follow the consent not-needed path
+### Follow the consent not-needed path
 
 When a price increase doesn’t need the subscriber’s consent, the App Store only notifies subscribers about the new price. When the App Store increases the price of multiple items within a bundle, none of which require consent, it uses a single API request so the subscriber receives a summary of the price increases. The App Store combines notifications into a single communication per method (a single email, one price increase sheet, and a single push notification).
 
@@ -61,7 +61,7 @@ The App Store uses the following communication methods and timelines to notify s
 
 > **Note**: Unlike when requesting consent, the App Store doesn’t send a push notification if the subscriber acknowledges the price increase on the sheet. Notifying via email is still a requirement in either case.
 
-#### Understand change subscription conditions and limitations
+## Understand change subscription conditions and limitations
 
 Several conditions may affect your ability to change or update a subscription, including:
 
@@ -74,7 +74,7 @@ Several conditions may affect your ability to change or update a subscription, i
 - If the subscription status is auto-renew = `false` or if the subscription is in a grace period or billing retry state, you can’t call the [`Change Subscription Price`](./change-subscription-price.md) endpoint.
 - If the `SubscriptionPriceChangeItem` is currently in the offer period, you can’t call [`Change Subscription Price`](./change-subscription-price.md).
 
-#### Understand interactions with other ACA operations
+## Understand interactions with other ACA operations
 
 Several conditions can affect your ability to update a subscription. There may be specific interactions and rules that apply to price increases, depending on which Advanced Commerce API you need to use.
 
@@ -110,7 +110,7 @@ If you need to call the ACA Migration API to migrate a subscription that a subsc
 - The App Store doesn’t allow migrations if the item is currently subject to a price increase, and the App Store already sent price increase communications to the subscriber.
 - If there’s an upcoming price increase, the App Store migrates the pending price increase as well.
 
-#### Understand price increase status and update values
+## Understand price increase status and update values
 
 The following table describes the meaning of price increase status values:
 
@@ -147,13 +147,13 @@ The following table describes the notifications and status values for a subscrip
 | `PRICE_CHANGE` | - | - | Indicates that you called the [`Change Subscription Price`](./change-subscription-price.md) endpoint. This notification only applies to apps that use the Advanced Commerce API. |
 | `DID_RENEW` | - | - | Indicates the SKU renewed. Always to check to ensure [`JWSRenewalInfo`](./jwsrenewalinfo.md) and the [`JWSTransaction`](./jwstransaction.md) information to provide service to the list items. |
 
-#### Understand conditional cancellations and dependent SKUs
+## Understand conditional cancellations and dependent SKUs
 
 To create a contingency for a situation in which a person doesn’t agree to a price increase and the App Store cancels other bundled services (the “dependent SKUs”), you can provide an array of the SKUs through the `dependentSKUs` property. If the price increase requires a person’s consent, and they don’t consent to the price increase (through a cancellation from the Manage Subscriptions view, or by failing to consent before the renewal date), the App Store cancels the dependent SKUs.
 
 > ❗ **Important**: You can’t have chains of dependent SKUs. For example, if SKU *A* has dependent SKU *B*, *B* can’t have its own dependent SKU, *C*. However, *B* can have its own price increase.
 
-#### Test price increases in the sandbox
+## Test price increases in the sandbox
 
 To test subscription price increases, call the [`Change Subscription Price`](./change-subscription-price.md) API in the sandbox to test the API responses. The sandbox environment — and TestFlight — support the full price increase cycle, with the exception of the email and push notifications. The in-app sheet still appears, and price increase management appears on the Manage Subscriptions page.
 

@@ -23,11 +23,11 @@ func MIDIDestinationCreateWithProtocol(_ client: MIDIClientRef, _ name: CFString
 extern OSStatus MIDIDestinationCreateWithProtocol(MIDIClientRef client, CFStringRef name, MIDIProtocolID protocol, MIDIEndpointRef *outDest, MIDIReceiveBlock readBlock);
 ```
 
-#### Return Value
+## Return Value
 
 An `OSStatus` result code.
 
-#### Discussion
+## Discussion
 
 Drivers don’t need to call this function. When they create devices and entities, the system automatically creates sources and destinations at that time. See [`kMIDIPropertyAdvanceScheduleTimeMuSec`](./kmidipropertyadvancescheduletimemusec.md) for information about the relationship between when a sender sends MIDI data to the destination and when it’s received.
 

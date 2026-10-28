@@ -14,7 +14,7 @@
 kSBCModePageCaching_FSW_Mask = (1 << kSBCModePageCaching_FSW_Bit)
 ```
 
-#### Discussion
+## Discussion
 
 Mask for use with flags2 field.
 

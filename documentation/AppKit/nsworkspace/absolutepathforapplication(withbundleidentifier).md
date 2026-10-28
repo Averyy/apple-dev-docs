@@ -21,11 +21,11 @@ func absolutePathForApplication(withBundleIdentifier bundleIdentifier: String) -
 - (NSString *) absolutePathForAppBundleWithIdentifier:(NSString *) bundleIdentifier;
 ```
 
-#### Return Value
+## Return Value
 
 The file system path to the app bundle identified by `bundleIdentifier`, or `nil` if the bundle cannot be found.
 
-#### Discussion
+## Discussion
 
 It is safe to call this method from any thread of your app.
 

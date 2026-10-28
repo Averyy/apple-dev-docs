@@ -22,7 +22,7 @@ optional func stopSendingUpdates(for intent: INGetCarPowerLevelStatusIntent)
 - (void) stopSendingUpdatesForGetCarPowerLevelStatus:(INGetCarPowerLevelStatusIntent *) intent;
 ```
 
-#### Discussion
+## Discussion
 
 The system calls this method when it wants you to stop providing power level updates for a particular electric vehicle. Use this opportunity to perform any necessary cleanup and discard any references to the observer object that [`startSendingUpdates(for:to:)`](./startsendingupdates%28for,to%29.md) provides.
 

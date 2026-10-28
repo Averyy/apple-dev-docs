@@ -24,7 +24,7 @@ static let bodyTemperature: HKQuantityTypeIdentifier
 extern HKQuantityTypeIdentifier const HKQuantityTypeIdentifierBodyTemperature;
 ```
 
-#### Discussion
+## Discussion
 
 These samples use temperature units (described in [`HKUnit`](../hkunit.md)) and measure discrete values (described in [`HKQuantityAggregationStyle`](../hkquantityaggregationstyle.md)).
 

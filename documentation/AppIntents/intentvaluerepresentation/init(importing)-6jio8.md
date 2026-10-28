@@ -23,11 +23,11 @@ init(importing: @escaping @Sendable (IntentValue) async throws -> Item)
 
 Available when `Item` conforms to `Transferable` and `IntentValue` is `IntentPerson`.
 
-#### Discussion
+## Discussion
 
 Use this initializer when your entity can be created from an `IntentPerson`, but has no meaningful representation to export back out. The entity’s metadata declares `IntentPerson` as importable only, and the entity is never offered for export as a person.
 
-#### Example
+## Example
 
 ```swift
 struct ContactEntity: AppEntity, Transferable {

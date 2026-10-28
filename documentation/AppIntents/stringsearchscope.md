@@ -21,7 +21,7 @@ Constants that describe the types of content your app includes in search results
 enum StringSearchScope
 ```
 
-#### Overview
+## Overview
 
 When the search criteria is [`StringSearchCriteria`](./stringsearchcriteria.md), use this type to specify the types of content your app searches. For most types of content, use the [`StringSearchScope.general`](./stringsearchscope/general.md) option, which covers a broad range of content. If your app also searches media types, specify one or more of the other options.
 

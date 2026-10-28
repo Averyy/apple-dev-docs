@@ -22,11 +22,11 @@ nonisolated
 func gridCellUnsizedAxes(_ axes: Axis.Set) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view that doesn’t ask an enclosing grid for extra size in one or more axes.
 
-#### Discussion
+## Discussion
 
 Use this modifier to prevent a flexible view from taking more space on the specified axes than the other cells in a row or column require. For example, consider the following [`Grid`](../grid.md) that places a [`Divider`](../divider.md) between two rows of content:
 

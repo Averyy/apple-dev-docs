@@ -19,7 +19,7 @@ func constrainsToOriginalSize() -> Bool
 - (BOOL) constrainsToOriginalSize;
 ```
 
-#### Return Value
+## Return Value
 
 [`false`](../../Swift/false.md) if the image is not constrained; otherwise [`true`](../../Swift/true.md).
 

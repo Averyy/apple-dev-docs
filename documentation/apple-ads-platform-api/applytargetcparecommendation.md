@@ -15,11 +15,11 @@ Request object for applying or dismissing a target CPA recommendation.
 object ApplyTargetCpaRecommendation
 ```
 
-#### Discussion
+## Discussion
 
 The `ApplyTargetCpaRecommendation` object is the request body for applying or dismissing a target CPA recommendation.
 
-##### Example
+### Example
 
 ```json
 {

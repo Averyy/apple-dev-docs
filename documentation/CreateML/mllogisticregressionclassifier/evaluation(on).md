@@ -26,11 +26,11 @@ func evaluation(on labeledData: DataFrame) -> MLClassifierMetrics
 func evaluation(on labeledData: MLDataTable) -> MLClassifierMetrics
 ```
 
-#### Return Value
+## Return Value
 
 Metrics that describe the classification errors ([`classificationError`](../mlclassifiermetrics/classificationerror.md)), the precision and recall percentages ([`precisionRecall`](../mlclassifiermetrics/precisionrecall.md)), and a table that describes how labels were misapplied ([`confusion`](../mlclassifiermetrics/confusion.md)) on the provided data.
 
-#### Discussion
+## Discussion
 
 Evaluation should be done on a testing data set that the model has not seen as part of the training or validation data sets. The data should have feature columns with identical name and type to the training data, as well as a labels column with the same name.
 

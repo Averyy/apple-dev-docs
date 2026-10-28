@@ -18,7 +18,7 @@ A Boolean value that determines whether the cell hides the accessory.
 var isHidden: Bool
 ```
 
-#### Discussion
+## Discussion
 
 A hidden accessory takes up space in the layout, but it isn’t visible and doesn’t provide any behaviors.
 

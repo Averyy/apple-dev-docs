@@ -21,7 +21,7 @@ func linkAccount(using token: PaymentCardReader.Token) async throws
 
 - [Adding support for Tap to Pay on iPhone to your app](../adding-support-for-tap-to-pay-on-iphone-to-your-app.md)
 
-#### Discussion
+## Discussion
 
 To use Tap to Pay on iPhone, your participating payment service provider must provide the merchant using your app with a secure token. This token contains an unique identifier for each merchant. This merchant must accept Tap to Pay on iPhone’s Terms and Conditions. After a merchant accepts the Terms and Conditions for their specific merchant identifier on one device, they don’t need to accept it again on additional devices that use the same identifier.
 

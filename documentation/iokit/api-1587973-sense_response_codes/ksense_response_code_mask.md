@@ -15,7 +15,7 @@
 kSENSE_RESPONSE_CODE_Mask = 0x7F
 ```
 
-#### Discussion
+## Discussion
 
 Mask to use when checking the VALID_RESPONSE_CODE field.
 

@@ -19,7 +19,7 @@ func canReadItem(withDataConformingToTypes types: [String]) -> Bool
 - (BOOL) canReadItemWithDataConformingToTypes:(NSArray<NSString *> *) types;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the receiver contains any items that conform to the UTIs specified in `types`, otherwise [`false`](../../Swift/false.md).
 

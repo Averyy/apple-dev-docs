@@ -25,7 +25,7 @@ var identifier: UUID { get }
 @property (nonatomic, readonly) NSUUID * identifier;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property represents the unique identifier of the peer. The first time a local manager encounters a peer, the system assigns the peer a UUID, represented by a new [`UUID`](../../Foundation/uuid.md) object. Peers use [`UUID`](../../Foundation/uuid.md) instances to identify themselves, instead of by the [`CBUUID`](../cbuuid.md) objects that identify a peripheral’s services, characteristics, and descriptors.
 

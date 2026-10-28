@@ -9,7 +9,7 @@
 UInt32 numErasesPerBuffer;
 ```
 
-#### Overview
+## Overview
 
 The number of times the erase head get scheduled to run for each cycle of the audio engine.
 

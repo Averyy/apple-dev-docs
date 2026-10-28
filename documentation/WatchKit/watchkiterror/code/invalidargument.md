@@ -19,7 +19,7 @@ case invalidArgument
 WatchKitInvalidArgumentError
 ```
 
-#### Discussion
+## Discussion
 
 WatchKit reports this error when you specify invalid settings for one of the system supplied interfaces.
 

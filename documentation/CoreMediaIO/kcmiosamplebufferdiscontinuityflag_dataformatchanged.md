@@ -14,7 +14,7 @@
 kCMIOSampleBufferDiscontinuityFlag_DataFormatChanged
 ```
 
-#### Discussion
+## Discussion
 
 The graph if the source has no data (for example an HDV camera running on empty tape).
 

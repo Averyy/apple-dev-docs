@@ -26,7 +26,7 @@ var error: (any Error)? { get }
 @property (readonly, nullable) NSError * error;
 ```
 
-#### Discussion
+## Discussion
 
 By default, this value is `nil`. If a player reaches a [`AVPlayer.Status.failed`](./status-swift.enum/failed.md), the system populates this value with an error that describes the failure.
 

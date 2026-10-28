@@ -19,7 +19,7 @@ func animate(withDuration duration: TimeInterval, animations: @escaping () -> Vo
 - (void) animateWithDuration:(NSTimeInterval) duration animations:(void (^)()) animations;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to animate changes to the following attributes of your interface objects:
 

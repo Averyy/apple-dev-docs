@@ -15,7 +15,7 @@ A feature that the driver extension supports.
 typedef enum SCSIParallelFeature : unsigned int { ... } SCSIParallelFeature;
 ```
 
-#### Overview
+## Overview
 
 This enumeration defines feature selectors the framework uses to identify features of the SCSI parallel interface. The [`UserDoesHBASupportSCSIParallelFeature`](./iouserscsiparallelinterfacecontroller/userdoeshbasupportscsiparallelfeature.md) function uses these to report whether the HBA supports a SCSI parallel interface feature. The framework also uses these to request negotiation and report negotiation results between the controller and the device.
 

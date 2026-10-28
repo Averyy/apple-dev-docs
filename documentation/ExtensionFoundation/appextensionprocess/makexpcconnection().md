@@ -21,11 +21,11 @@ Connect to the app extension process using the XPC types of the Foundation frame
 func makeXPCConnection() throws -> NSXPCConnection
 ```
 
-#### Return Value
+## Return Value
 
 The connection object your app uses to communicate with the app extension.
 
-#### Discussion
+## Discussion
 
 Call this method to create a connection between your host app and an app extension using the types of the Foundation framework. If the app extension accepts the connection request, the returned connection object contains the proxy information you need to communicate with it. If the app extension refuses the request or doesn’t support this connection type, this method throws an error.
 

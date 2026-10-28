@@ -21,7 +21,7 @@ The subscription’s unique identifier.
 @property (copy, readonly) CKSubscriptionID subscriptionID;
 ```
 
-#### Discussion
+## Discussion
 
 This property’s value is the subscription ID that you provide to the `initWithRecordType:predicate:subscriptionID:options:` or `initWithZoneID:subscriptionID:options:` methods when you create the subscription. If you use a different method to create the subscription, CloudKit automatically assigns a UUID as the subscription ID.
 

@@ -27,7 +27,7 @@ class SHMediaLibrary
 @interface SHMediaLibrary : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use `SHMediaLibrary` to add matched songs from the Shazam catalog to the user’s Shazam library.
 

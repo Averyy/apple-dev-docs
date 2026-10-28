@@ -25,11 +25,11 @@ func CFFileDescriptorCreateRunLoopSource(_ allocator: CFAllocator!, _ f: CFFileD
 extern CFRunLoopSourceRefCFFileDescriptorCreateRunLoopSource(CFAllocatorRef allocator, CFFileDescriptorRef f, CFIndex order);
 ```
 
-#### Return Value
+## Return Value
 
 A new runloop source for `f`, or `NULL` if there was a problem creating the object. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
-#### Discussion
+## Discussion
 
 The context for the new runloop (see [`CFRunLoopSourceCreate(_:_:_:)`](./cfrunloopsourcecreate%28_,_,_%29.md)) is the same as the context passed in when the CFFileDescriptor was created (see [`CFFileDescriptorCreate(_:_:_:_:_:)`](./cffiledescriptorcreate%28_,_,_,_,_%29.md)).
 

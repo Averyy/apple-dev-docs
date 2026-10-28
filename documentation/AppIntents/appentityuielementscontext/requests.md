@@ -21,7 +21,7 @@ The set of requests for elements from the system.
 let requests: Set<AppEntityUIElementsContext.ElementsRequest>
 ```
 
-#### Discussion
+## Discussion
 
 UI elements that satisfy any of these requests should be returned.
 

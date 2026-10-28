@@ -20,7 +20,7 @@ The orientations of all rigid bodies under the influence of the effect, or nil i
 let orientations: UnsafeForceEffectBuffer<simd_quatf>?
 ```
 
-#### Discussion
+## Discussion
 
 The orientation is relative to the effect’s transform.
 

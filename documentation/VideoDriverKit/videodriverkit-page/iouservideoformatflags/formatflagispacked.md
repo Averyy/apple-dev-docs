@@ -15,7 +15,7 @@ Set if the sample bits occupy the entire available bits for the channel, clear i
 FormatFlagIsPacked
 ```
 
-#### Discussion
+## Discussion
 
 Even if this flag is clear, it is implied that this flag is set if the [`IOUserVideoStreamBasicDescription`](../iouservideostreambasicdescription.md) is filled out such that the fields have the following relationship:
 

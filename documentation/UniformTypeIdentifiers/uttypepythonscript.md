@@ -21,7 +21,7 @@ A type that represents a Python script.
 extern UTType * const UTTypePythonScript;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.python-script`.
 

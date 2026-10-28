@@ -21,11 +21,11 @@ func body(content: Self.Content) -> Self.Body
 
 Available when `Body` is `Never`.
 
-#### Return Value
+## Return Value
 
 A custom effect.
 
-#### Discussion
+## Discussion
 
 You implement this method to describe a custom effect to apply to a view. `content` is an empty effect you use to build your effect, which will later be applied to a View, or combined with other `CustomHoverEffect`s.
 

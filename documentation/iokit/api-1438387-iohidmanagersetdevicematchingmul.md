@@ -16,7 +16,7 @@ Sets multiple matching criteria for device enumeration.
 void IOHIDManagerSetDeviceMatchingMultiple(IOHIDManagerRef manager, CFArrayRef multiple);
 ```
 
-#### Discussion
+## Discussion
 
 Matching keys are prefixed by kIOHIDDevice and declared in <IOKit/hid/IOHIDKeys.h>. This method is useful if interested in multiple, specific device classes.
 

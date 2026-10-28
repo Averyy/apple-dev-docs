@@ -25,7 +25,7 @@ class MTRBaseClusterTemperatureControl
 @interface MTRBaseClusterTemperatureControl : MTRGenericBaseCluster
 ```
 
-#### Overview
+## Overview
 
 Attributes and commands for configuring the temperature control, and reporting temperature.
 

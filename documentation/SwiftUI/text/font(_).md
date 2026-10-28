@@ -26,11 +26,11 @@ func font(_ font: Font?) -> Text
 
 - [Applying custom fonts to text](../applying-custom-fonts-to-text.md)
 
-#### Return Value
+## Return Value
 
 Text that uses the font you specify.
 
-#### Discussion
+## Discussion
 
 Use `font(_:)` to apply a specific font to an individual Text View, or all of the text views in a container.
 

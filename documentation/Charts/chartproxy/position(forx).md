@@ -21,7 +21,7 @@ Returns the x position for the given data value, or `nil` if the x scale is unav
 func position<P>(forX value: P) -> CGFloat? where P : Plottable
 ```
 
-#### Return Value
+## Return Value
 
 The position corresponding to the data value.
 

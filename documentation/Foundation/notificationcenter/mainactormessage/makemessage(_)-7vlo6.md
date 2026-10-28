@@ -22,11 +22,11 @@ Converts a posted notification into this main actor message type for any observe
 static func makeMessage(_ notification: Notification) -> Self?
 ```
 
-#### Return Value
+## Return Value
 
 The converted `MainActorMessage` or `nil` if conversion is not possible.
 
-#### Discussion
+## Discussion
 
 To implement this method in your own `MainActorMessage` conformance, retrieve values from the [`Notification`](../../notification.md)’s [`userInfo`](../../notification/userinfo.md) and set them as properties on the message.
 

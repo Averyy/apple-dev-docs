@@ -21,7 +21,7 @@ A button to display in a store view or subscription store view.
 struct StoreButtonKind
 ```
 
-#### Overview
+## Overview
 
 Use the [`storeButton(_:for:)`](../SwiftUI/view/storebutton%28_,for%29.md) modifier on a view to set the visibility of the buttons.
 

@@ -5,7 +5,7 @@
 
 Manage and use payment cards and other credentials.
 
-#### Overview
+## Overview
 
 You can use the [SecureElementCredential](./SecureElementCredential.md) framework to store, manage, and use *credentials*, for example, contactless payment cards, transit passes, and corporate badges, that the system stores in the device’s Secure Element. The person using your app can then authenticate with features like Face ID and Touch ID to use their credentials.
 
@@ -13,7 +13,7 @@ You can use the [SecureElementCredential](./SecureElementCredential.md) framewor
 
 You or your organization manage credentials and the embedded applet code you create for those credentials through the [Apple Business Register](https://register.apple.com/login) (ABR). This framework allows your iOS app access to use those credentials.
 
-##### Create a credential session
+### Create a credential session
 
 The [`CredentialSession`](./credentialsession.md) class is the central access point for working with credentials. To use it, first verify that the device is eligible to use credential sessions, by checking the value of [`isEligible`](./credentialsession/iseligible.md). If eligible, create a session with [`startSession()`](./credentialsession/startsession%28%29.md). Then, fetch the available credentials with [`listCredentials()`](./credentialsession/listcredentials%28%29.md). If the credential you expect to use isn’t in the array returned by `listCredentials()`, call [`provisionCredential(configurationUUID:name:)`](./credentialsession/provisioncredential%28configurationuuid,name%29.md) to install the applet bundle that you submitted to ABR into the Secure Element, then list the credentials again.
 
@@ -62,7 +62,7 @@ Beyond the management state, there are two other credential session states:
 - Wired state, for communicating directly with a credential stored in the Secure Element.
 - Card emulation state, for using the credential with an NFC card reader.
 
-##### Obtain exclusive use of the user interface
+### Obtain exclusive use of the user interface
 
 Prior to presenting a credential for use with an NFC reader or performing transactions, your app can get exclusive use of the credential user interface. This exclusivity prevents interruptions from another app chosen as the default for contactless transactions, any other apps using the `SecureElementCredential` framework, and Wallet.
 
@@ -88,7 +88,7 @@ The assertion expires when the object deinitializes, you call [`relinquish()`](.
 
 > **Note**: You can acquire a maximum of two instances of [`CredentialSession.PresentmentIntentAssertion`](./credentialsession/presentmentintentassertion.md) in one 80-second period.
 
-##### Enter wired mode
+### Enter wired mode
 
 After obtaining a [`CredentialSession.Credential`](./credentialsession/credential.md), many tasks require changing the [`state`](./credentialsession/state-swift.property.md) before you perform them. For example, you might need to maintain a credential by directly interacting with it in the Secure Element, which you can only do in the [`CredentialSession.State.wired(credential:)`](./credentialsession/state-swift.enum/wired%28credential%29.md) state. Credential maintenance tasks include exchanging keys and certificates with an installed credential.
 
@@ -112,7 +112,7 @@ let credentialResponse = try await activeSession.transceive(transceiveData)
 try await activeSession.endWiredMode() // Transition back to management mode when done.
 ```
 
-##### Use wired mode in a UIKit app
+### Use wired mode in a UIKit app
 
 You can also go into wired mode to get user authorization for using the credential, which authenticates with a passcode or biometric features like Face ID. This approach is useful for tasks like using the credential to perform web payments.
 
@@ -153,7 +153,7 @@ For a web payment, an app might receive a token from a web service, and then ing
 
 The example above calls [`relinquish()`](./credentialsession/presentmentintentassertion/relinquish%28%29.md) before making the `performWiredTransaction(using:over:scene:)` call. This is because all methods that perform transactions acquire an internal instance of the presentment intent assertion on your behalf and automatically relinquish it. If you need to perform clean-up work after a transaction, acquire another assertion, subject to the limit of two assertions in an 80-second span.
 
-##### Use wired mode in a SwiftUI app
+### Use wired mode in a SwiftUI app
 
 The flow is different when you use a SwiftUI [`View`](../SwiftUI/view.md) instead of a UIKit [`UIViewController`](../UIKit/uiviewcontroller.md), but the result is the same. The following example shows a SwiftUI view that presents the UI for performing a wired transaction. This example assumes you already acquired the [`CredentialSession.PresentmentIntentAssertion`](./credentialsession/presentmentintentassertion.md), and passed a [`CredentialSession`](./credentialsession.md) and a [`CredentialSession.Credential`](./credentialsession/credential.md) to the view.
 
@@ -210,7 +210,7 @@ struct TransactView: View {
 }
 ```
 
-##### Perform card emulation
+### Perform card emulation
 
 You can also use credentials for contactless transactions with NFC card readers. Implement the [`CredentialSessionWindowSceneDelegate`](./credentialsessionwindowscenedelegate.md) protocol in your app to receive [`CredentialSessionWindowSceneEvent`](./credentialsessionwindowsceneevent.md) instances that describe NFC-related events. These events can occur when the device comes within range of an NFC card reader. Your app also gets an event when the person using the app performs a gesture to present an NFC display, like double-pressing the Home button or Side button.
 
@@ -281,7 +281,7 @@ struct CredentialView: View {
 }
 ```
 
-##### Performing wired actions and card emulation
+### Performing wired actions and card emulation
 
 The previous example assumes the credential is already installed and ready to use. It’s also possible to perform maintenance on a credential immediately before using it with an NFC reader. The following example shows how to do this. The `presentCredential()` method checks an internal `firstUse` flag to determine if it needs to perform up-front maintenance work. If so, it calls a private `personalizeCredentialInformation()` method to enter wired mode and perform the maintenance with one or more calls to [`transceive(_:)`](./credentialsession/transceive%28_%29.md).
 

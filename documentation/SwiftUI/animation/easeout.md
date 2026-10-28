@@ -21,11 +21,11 @@ An animation that starts quickly and then slows towards the end of the movement.
 static var easeOut: Animation { get }
 ```
 
-#### Return Value
+## Return Value
 
 An ease-out animation with the default duration.
 
-#### Discussion
+## Discussion
 
 An easing animation provides motion with a natural feel by varying the acceleration and deceleration of the animation, which matches how things tend to move in reality. With an ease out animation, the motion starts quickly and decreases its speed towards the end.
 

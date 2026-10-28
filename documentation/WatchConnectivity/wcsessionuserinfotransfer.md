@@ -23,7 +23,7 @@ class WCSessionUserInfoTransfer
 @interface WCSessionUserInfoTransfer : NSObject
 ```
 
-#### Overview
+## Overview
 
 You don’t create instances of this class yourself. When you begin a data transfer, the system creates a new instance of this class for you. Use the created object to monitor or cancel the transfer as needed.
 

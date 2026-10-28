@@ -19,7 +19,7 @@ func toggleAutomaticDashSubstitution(_ sender: Any?)
 - (void) toggleAutomaticDashSubstitution:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 Turning on automatic dash substitution enables automatic conversion of sequences of ASCII hyphen (`-`) characters to typographic dashes.
 

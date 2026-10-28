@@ -22,7 +22,7 @@ class AEAssessmentParticipantConfiguration
 @interface AEAssessmentParticipantConfiguration : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use an instance of this class to configure the properties of an app that you allow to run during an assessment. Associate the participant configuration with an app (an [`AEAssessmentApplication`](./aeassessmentapplication.md) instance) when you call the `AEAssessmentConfiguration/setConfiguration(_:for:)` method of a session configuration.
 

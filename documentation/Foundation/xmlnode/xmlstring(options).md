@@ -20,7 +20,7 @@ func xmlString(options: XMLNode.Options = []) -> String
 - (NSString *) XMLStringWithOptions:(NSXMLNodeOptions) options;
 ```
 
-#### Discussion
+## Discussion
 
 The returned string includes the string representations of all children.
 

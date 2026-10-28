@@ -19,11 +19,11 @@ init()
 - (instancetype) init;
 ```
 
-#### Return Value
+## Return Value
 
 An CWNetworkProfile object.
 
-#### Discussion
+## Discussion
 
 This method is the designated initializer for the CWNetworkProfile class.
 

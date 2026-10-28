@@ -15,7 +15,7 @@ The document keywords.
 extern NSAttributedStringDocumentAttributeKey NSKeywordsDocumentAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this attribute is an [`NSArray`](../Foundation/nsarray.md) object containing [`NSString`](../Foundation/nsstring.md) objects, containing keywords.
 

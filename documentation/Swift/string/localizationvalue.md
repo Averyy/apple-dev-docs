@@ -21,7 +21,7 @@ A reference to a localizable string, with optional string interpolation.
 struct LocalizationValue
 ```
 
-#### Overview
+## Overview
 
 Use this type when the localization key is the localized string value in the development language.  This type also supports creating localized strings that depend on a value you provide at runtime. For example, if your app’s strings catalog contains a localizable entry for `"Hello, \(userName)."`, you create a localized string like the following:
 

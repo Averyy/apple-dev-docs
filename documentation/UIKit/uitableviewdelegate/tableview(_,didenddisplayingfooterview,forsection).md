@@ -23,7 +23,7 @@ optional func tableView(_ tableView: UITableView, didEndDisplayingFooterView vie
 - (void) tableView:(UITableView *) tableView didEndDisplayingFooterView:(UIView *) view forSection:(NSInteger) section;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to detect when a footer view is removed from a table view, as opposed to monitoring the view itself to see when it appears or disappears.
 

@@ -19,11 +19,11 @@ func element(at index: Int) -> NSBezierPath.ElementType
 - (NSBezierPathElement) elementAtIndex:(NSInteger) index;
 ```
 
-#### Return Value
+## Return Value
 
 The type of the path element. For a list of constants, see [`NSBezierPath.ElementType`](./elementtype.md).
 
-#### Discussion
+## Discussion
 
 Path elements describe the commands used to define a path and include basic commands such as moving to a specific point, creating a line segment, creating a curve, or closing the path. The elements are stored in the order of their execution.
 

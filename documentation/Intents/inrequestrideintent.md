@@ -23,7 +23,7 @@ class INRequestRideIntent
 @interface INRequestRideIntent : INIntent
 ```
 
-#### Overview
+## Overview
 
 SiriKit creates an [`INRequestRideIntent`](./inrequestrideintent.md) object when the user asks to book a ride using your app. A ride request intent contains user-supplied information about the ride, such as its starting point and the number of people. Use this intent object to identify possible ride options for the user to choose from and to book the ride after the user confirms it.
 
@@ -33,7 +33,7 @@ When implementing ride-booking support, provide a GeoJSON file with the regions 
 
 > **Note**:  When implementing ride-booking support, provide a GeoJSON file with the regions for which you’re able to provide rides and upload that file as your app’s Routing App Coverage File in App Store Connect. When it needs to suggest apps capable of providing a ride, Maps uses your coverage information to determine whether it should suggest your app. If you don’t provide a coverage file and your app isn’t installed on the user’s device, Maps doesn’t suggest your app. For information about how to create and upload a Routing App Coverage File, see [iTunes Connect Developer Help](https://help.apple.com/itunes-connect/developer/#/dev4ba662442).
 
-##### Additional Intent Attributes
+### Additional Intent Attributes
 
 The following table lists additional attributes of this intent object:
 

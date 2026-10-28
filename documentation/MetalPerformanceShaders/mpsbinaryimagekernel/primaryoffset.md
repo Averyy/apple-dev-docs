@@ -24,7 +24,7 @@ var primaryOffset: MPSOffset { get set }
 @property (nonatomic, readwrite) MPSOffset primaryOffset;
 ```
 
-#### Discussion
+## Discussion
 
 The offset is defined to be the position of the `origin` value of [`clipRect`](./cliprect.md), in source coordinates.
 

@@ -24,7 +24,7 @@ let HMCharacteristicTypeAirParticulateSize: String
 extern NSString * const HMCharacteristicTypeAirParticulateSize;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is one of the constants enumerated in [`HMCharacteristicValueAirParticulateSize`](./hmcharacteristicvalueairparticulatesize.md).
 

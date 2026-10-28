@@ -5,7 +5,7 @@
 
 Import a reference object file to track a real-world object in your visionOS app.
 
-#### Overview
+## Overview
 
 You can use reference objects in your visionOS app to track real-world objects in a person’s surroundings. With this capability, you can attach virtual content to those real-world objects to create engaging experiences. For example, with a reference object, you can track a household item and add virtual content to it, like highlighting a part and showing how to fix it.
 
@@ -13,7 +13,7 @@ To create a reference object, first, obtain a 3D model asset, train a machine le
 
 For more information about creating a reference object file, see [Implementing object tracking in your app](./implementing-object-tracking-in-your-app.md).
 
-#### Add and track reference objects with an anchoring component
+## Add and track reference objects with an anchoring component
 
 After generating the `.referenceobject` file with Create ML, add the reference object file to your Xcode project’s main bundle. Then, create an [AnchoringComponent](../RealityKit/anchoringcomponent.md) to track the position of the reference object file. This allows the system to move the anchoring component to follow your real-world object, and to anchor virtual content to it. Using this `AnchoringComponent` is equivalent to setting the Anchoring option on your component in Reality Composer Pro.
 
@@ -36,7 +36,7 @@ struct ImmersiveView: View {
 }
 ```
 
-##### Import the USDZ file to visualize the model
+### Import the USDZ file to visualize the model
 
 Reference object files can optionally bundle with the USDZ file that Create ML uses for training. Adding the USDZ file directly, even if your reference object doesn’t have the model file packaged within it, lets you directly load the `objectURL` into your project. Retrieve this USDZ file through ARKit and use it as a guide for RealityKit content creation.
 
@@ -56,7 +56,7 @@ guard let modelURL = referenceObject.usdzFile else {
 }
 ```
 
-##### Add occlusion to your object
+### Add occlusion to your object
 
 The RealityKit [OcclusionMaterial](../RealityKit/occlusionmaterial.md) provides a way to render an entity that blocks and occludes other entities to reveal camera passthrough. This is useful in creating the correct depth perception between the real-world object the system tracks and the virtual content you add to your app. You can use the imported USDZ file from your reference object file to create a [ModelEntity](../RealityKit/modelentity.md) that generates a virtual representation of your physical object, so you can add occlusion behavior to it.
 
@@ -71,7 +71,7 @@ modelEntity.model?.materials = [OcclusionMaterial()]
 objectAnchor.addChild(modelEntity)
 ```
 
-##### Add attachments to the model
+### Add attachments to the model
 
 Before adding interaction, incorporate guidance in your app so that anyone can navigate through using it. Use [attachments](../RealityKit/realityview/init%28make,update,attachments%29.md) to combine SwiftUI content with RealityKit content to create these guiding features. Attach SwiftUI labels and interfaces to the object-tracking entities.
 
@@ -93,11 +93,11 @@ RealityView { content, attachments in
 }
 ```
 
-##### Add interaction and virtual content to your app
+### Add interaction and virtual content to your app
 
 RealityKit provides a seamless way to incorporate virtual content within your app. Use virtual effects to increase interaction with features like occlusion, physics simulation, collisions, and SwiftUI gestures. To add effects, use ARKit to load the model and add content on top of the real-world object.
 
-##### Access the transform with a tracking session
+### Access the transform with a tracking session
 
 Before adding any interaction or virtual content to your app, you have the option to configure a [SpatialTrackingSession](../RealityKit/spatialtrackingsession.md).  A `SpatialTrackingSession` requests world-tracking permission from the user, and provides the accurate position and rotation of the object.
 
@@ -137,7 +137,7 @@ struct ImmersiveView: View {
 }
 ```
 
-##### Set up collision and physics simulation on your objects
+### Set up collision and physics simulation on your objects
 
 Incorporate virtual actions into your app by adding collisions and physics simulations.
 
@@ -162,7 +162,7 @@ modelEntity.components.set(CollisionComponent(shapes: [referenceShape], mode: .c
 
 With the collision feature in place, use [CollisionEvents](../RealityKit/collisionevents.md) to detect collisions when they begin, update, and end for your entities.
 
-##### Configure interaction with gestures
+### Configure interaction with gestures
 
 To respond to SwiftUI gestures like [SpatialTapGesture](../SwiftUI/spatialtapgesture.md), [DragGesture](../SwiftUI/draggesture.md), and [RotateGesture3D](../SwiftUI/rotategesture3d.md), the object-anchored entity needs to have a `CollisionComponent` for input detection and an [InputTargetComponent](../RealityKit/inputtargetcomponent.md) to handle all forms of input in your app.
 

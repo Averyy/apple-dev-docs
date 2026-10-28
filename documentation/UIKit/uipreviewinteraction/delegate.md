@@ -22,7 +22,7 @@ weak var delegate: (any UIPreviewInteractionDelegate)? { get set }
 @property (nonatomic, weak, nullable) id<UIPreviewInteractionDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 The preview interaction informs the delegate of state and progress changes throughout the 3D Touch process. Create an object that conforms to the [`UIPreviewInteractionDelegate`](../uipreviewinteractiondelegate.md) protocol and assign it to this property.
 

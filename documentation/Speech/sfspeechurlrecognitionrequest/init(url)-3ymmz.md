@@ -23,7 +23,7 @@ init(url URL: URL)
 - (instancetype) initWithURL:(NSURL *) URL;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to create a request to recognize speech in a recorded audio file that resides at the specified URL. Pass the request to the recognizer’s [`recognitionTask(with:delegate:)`](../sfspeechrecognizer/recognitiontask%28with,delegate%29.md) method to start recognition.
 

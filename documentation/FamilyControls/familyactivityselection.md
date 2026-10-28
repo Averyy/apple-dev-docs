@@ -16,7 +16,7 @@ A collection of applications, categories, and web domains selected by the user.
 struct FamilyActivitySelection
 ```
 
-#### Overview
+## Overview
 
 To protect the user’s privacy, `FamilyActivitySelection` holds opaque values that represent categories, applications, and web domains selected by the user.
 

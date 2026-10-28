@@ -24,7 +24,7 @@ var eventType: ASAccessoryEventType { get }
 
 - [Discovering and configuring accessories](../discovering-and-configuring-accessories.md)
 
-#### Discussion
+## Discussion
 
 Some event types may indicate that the event is a subclass of [`ASAccessoryEvent`](../asaccessoryevent.md) that provides additional properties.
 

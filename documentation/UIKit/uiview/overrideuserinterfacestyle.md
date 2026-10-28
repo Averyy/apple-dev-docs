@@ -27,7 +27,7 @@ var overrideUserInterfaceStyle: UIUserInterfaceStyle { get set }
 
 - [Choosing a specific interface style for your iOS app](../choosing-a-specific-interface-style-for-your-ios-app.md)
 
-#### Discussion
+## Discussion
 
 Use this property to force the view to always adopt a light or dark interface style. The default value of this property is [`UIUserInterfaceStyle.unspecified`](../uiuserinterfacestyle/unspecified.md), which causes the view to inherit the interface style from a parent view or view controller. If you assign a different value, the new style applies to the view and all of the subviews owned by the same view controller. (If the view hierarchy contains the root view of an embedded child view controller, the child view controller and its views do not inherit the interface style.) If the view is a [`UIWindow`](../uiwindow.md) object, the new style applies to everything in the window, including the root view controller and all presented content.
 

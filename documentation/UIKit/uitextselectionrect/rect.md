@@ -23,7 +23,7 @@ var rect: CGRect { get }
 @property (nonatomic, readonly) CGRect rect;
 ```
 
-#### Discussion
+## Discussion
 
 The returned rectangle is in the coordinate system of the text input view that created the receiver.
 

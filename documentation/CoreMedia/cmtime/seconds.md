@@ -21,7 +21,7 @@ A representation of the time in seconds.
 var seconds: Double { get }
 ```
 
-#### Discussion
+## Discussion
 
 If the time is [`invalid`](../cmsampletiminginfo/invalid.md) or [`indefinite`](../cmtimeflags/indefinite.md), the value equals [`nan`](../../Swift/double/nan.md).
 

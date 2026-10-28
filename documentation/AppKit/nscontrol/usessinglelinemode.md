@@ -19,7 +19,7 @@ var usesSingleLineMode: Bool { get set }
 @property BOOL usesSingleLineMode;
 ```
 
-#### Discussion
+## Discussion
 
 See [`usesSingleLineMode`](../nscell/usessinglelinemode.md) for details.
 

@@ -22,7 +22,7 @@ Attaches the specified subscriber to this publisher.
 func receive<S>(subscriber: S) where S : Subscriber, Self.Failure == S.Failure, Self.Output == S.Input
 ```
 
-#### Discussion
+## Discussion
 
 Implementations of [`Publisher`](../publisher.md) must implement this method.
 

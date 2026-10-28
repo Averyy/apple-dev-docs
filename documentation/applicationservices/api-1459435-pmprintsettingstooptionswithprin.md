@@ -19,11 +19,11 @@ func PMPrintSettingsToOptionsWithPrinterAndPageFormat(_ settings: PMPrintSetting
 OSStatus PMPrintSettingsToOptionsWithPrinterAndPageFormat(PMPrintSettings settings, PMPrinter printer, PMPageFormat pageFormat, char * _Nullable *options);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./core_printing.md#1670007).
 
-#### Discussion
+## Discussion
 
 This function creates a CUPS options string for the destination printer that captures the data in the specified print settings and page format objects. For example, you could pass this string to the function [`PMWorkflowSubmitPDFWithOptions(_:_:_:_:)`](./api-1463747-pmworkflowsubmitpdfwithoptions.md) to submit a PDF file for workflow processing. You could also use the options string to run a CUPS filter directly.
 

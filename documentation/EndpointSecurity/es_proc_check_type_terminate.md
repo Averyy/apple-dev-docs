@@ -22,7 +22,7 @@ var ES_PROC_CHECK_TYPE_TERMINATE: es_proc_check_type_t { get }
 ES_PROC_CHECK_TYPE_TERMINATE
 ```
 
-#### Discussion
+## Discussion
 
 This type corresponds to the `proc_terminate` function from libproc.h.
 

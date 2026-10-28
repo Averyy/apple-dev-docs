@@ -21,7 +21,7 @@ A machine learning collection type that stores scalar values in a multidimension
 struct MLShapedArray<Scalar> where Scalar : MLShapedArrayScalar
 ```
 
-#### Overview
+## Overview
 
 A shaped array is a multidimensional array type that’s the Swift counterpart to [`MLMultiArray`](./mlmultiarray.md). [`MLShapedArray`](./mlshapedarray.md) is one of the underlying types of `MLFeatureValue` that stores scalar values. You can convert a shaped array to an [`MLMultiArray`](./mlmultiarray.md) with its [`init(_:)`](./mlmultiarray/init%28_%29-wk41.md) initializer, and convert back to a shaped array with its [`init(_:)`](./mlshapedarray/init%28_%29.md) initializer. All elements in an [`MLShapedArray`](./mlshapedarray.md) are of the same type, and that type must conform to [`MLShapedArrayScalar`](./mlshapedarrayscalar.md):
 

@@ -17,7 +17,7 @@ var kOBEXHeaderIDHTTP: OBEXHeaderIdentifiers { get }
 kOBEXHeaderIDHTTP
 ```
 
-#### Discussion
+## Discussion
 
 An HTTP 1.x header.
 

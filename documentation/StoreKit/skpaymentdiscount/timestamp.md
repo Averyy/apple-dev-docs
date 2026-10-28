@@ -28,7 +28,7 @@ var timestamp: NSNumber { get }
 @property (nonatomic, copy, readonly) NSNumber * timestamp;
 ```
 
-#### Discussion
+## Discussion
 
 The [`timestamp`](./timestamp.md) keeps the payment discount active for 24 hours.
 

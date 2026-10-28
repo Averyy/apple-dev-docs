@@ -15,7 +15,7 @@ The panel can receive keyboard input without activating the owning app.
 static const NSWindowStyleMask NSNonactivatingPanelMask;
 ```
 
-#### Discussion
+## Discussion
 
 Valid only for an instance of `NSPanel` or its subclasses; not valid for a window.
 

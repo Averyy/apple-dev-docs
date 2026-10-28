@@ -21,7 +21,7 @@ Generates an assertion if the current block is not running as a barrier on the s
 extern void dispatch_assert_queue_barrier(dispatch_queue_t queue);
 ```
 
-#### Discussion
+## Discussion
 
 Use this method inside a block to verify that the block is running on the expected dispatch queue and is acting as a barrier on that queue. If you submitted the current block synchronously, the function recurisvely checks the context of the submitting block to ensure that it is also running on the expected dispatch queue. If the block is not running on the expected queue, this method asserts, logs an explanation to the system log, and terminates the app.
 

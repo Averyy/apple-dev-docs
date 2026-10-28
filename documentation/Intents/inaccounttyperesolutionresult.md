@@ -23,7 +23,7 @@ class INAccountTypeResolutionResult
 @interface INAccountTypeResolutionResult : INIntentResolutionResult
 ```
 
-#### Overview
+## Overview
 
 An [`INAccountTypeResolutionResult`](./inaccounttyperesolutionresult.md) object is what you return when resolving parameters containing an [`INAccountType`](./inaccounttype.md) value. Use the creation method that best reflects your ability to resolve the parameter.
 

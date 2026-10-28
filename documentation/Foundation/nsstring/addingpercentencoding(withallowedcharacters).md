@@ -25,11 +25,11 @@ func addingPercentEncoding(withAllowedCharacters allowedCharacters: CharacterSet
 - (NSString *) stringByAddingPercentEncodingWithAllowedCharacters:(NSCharacterSet *) allowedCharacters;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the encoded string, or `nil` if the transformation is not possible.
 
-#### Discussion
+## Discussion
 
 Entire URL strings cannot be percent-encoded, because each URL component specifies a different set of allowed characters. For example, the query component of a URL allows the “`@`” character, but that character must be percent-encoded in the password component.
 

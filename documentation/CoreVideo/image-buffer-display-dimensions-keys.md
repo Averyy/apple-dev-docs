@@ -5,7 +5,7 @@
 
 Keys that describe the display dimensions of an image buffer.
 
-#### Overview
+## Overview
 
 Define these key-value pairs in a [`CFDictionary`](../CoreFoundation/cfdictionary.md) instance and use the [`kCVImageBufferDisplayDimensionsKey`](./kcvimagebufferdisplaydimensionskey.md) key to attach it to the image buffer.
 

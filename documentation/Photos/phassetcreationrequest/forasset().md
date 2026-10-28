@@ -24,11 +24,11 @@ class func forAsset() -> Self
 + (instancetype) creationRequestForAsset;
 ```
 
-#### Return Value
+## Return Value
 
 An asset creation request.
 
-#### Discussion
+## Discussion
 
 Call this method within a photo library change block to create a new asset. For details on change blocks, see [`PHPhotoLibrary`](../phphotolibrary.md). After calling this method, and before returning from the change block, use [`addResource(with:data:options:)`](./addresource%28with,data,options%29.md) or [`addResource(with:fileURL:options:)`](./addresource%28with,fileurl,options%29.md) to specify one or more data resources for the asset.
 

@@ -25,7 +25,7 @@ func set(_ value: Int, forKey defaultName: String)
 - (void) setInteger:(NSInteger) value forKey:(NSString *) defaultName;
 ```
 
-#### Discussion
+## Discussion
 
 This method places the integer value in an [`NSNumber`](../nsnumber.md) type before writing the key and value to the defaults database. After you call this method, the system generates a [`didChangeNotification`](./didchangenotification.md) for registered observers.
 

@@ -25,7 +25,7 @@ init(object anObject: Any?, type: NSCollectionChangeType, index: Int, associated
 - (instancetype) initWithObject:(ObjectType) anObject type:(NSCollectionChangeType) type index:(NSUInteger) index associatedIndex:(NSUInteger) associatedIndex;
 ```
 
-#### Discussion
+## Discussion
 
 Pairs of changes with opposite types that refer to each other represent the index location of their counterpart with the [`associatedIndex`](./associatedindex.md) property. Initializing an [`NSOrderedCollectionDifference`](../nsorderedcollectiondifference.md) with broken associations (or associations that aren’t reflexive) generates an exception. The following example creates a diff where the object `@”Red”` moves from index `8` to index `3`:
 

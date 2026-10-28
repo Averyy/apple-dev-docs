@@ -20,7 +20,7 @@ Reports full contact information for collision events.
 static let fullContactInformation: CollisionComponent.CollisionOptions
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: This does not work with triggers because triggers do not have contact information.
 

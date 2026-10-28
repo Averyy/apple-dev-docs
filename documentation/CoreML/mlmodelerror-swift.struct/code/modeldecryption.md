@@ -25,7 +25,7 @@ case modelDecryption
 MLModelErrorModelDecryption
 ```
 
-#### Discussion
+## Discussion
 
 Core ML typically throws (Swift) or returns (Objective-C) this error when the framework can’t decrypt a model.
 

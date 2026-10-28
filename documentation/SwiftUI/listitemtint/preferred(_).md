@@ -21,7 +21,7 @@ An explicit tint color that the system can override.
 static func preferred(_ tint: Color) -> ListItemTint
 ```
 
-#### Discussion
+## Discussion
 
 On macOS, the system can override this tint with the person’s chosen accent color when one is set. Use [`fixed(_:)`](./fixed%28_%29.md) to prevent the system from overriding the tint.
 

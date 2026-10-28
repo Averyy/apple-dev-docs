@@ -13,11 +13,11 @@ virtual IOReturn FindNextInterfaceDescriptor(
  IOUSBInterfaceDescriptor **descOut);
 ```
 
-#### Return Value
+## Return Value
 
 returns kIOReturnBadArgument if configDesc is not correct, or if configDesc is NULL and the device is not configured, or if intfDesc is not in configDesc. Otherwise returns kIOReturnSuccess or kIOUSBInterfaceNotFound.
 
-#### Overview
+## Overview
 
 return a pointer to the next interface descriptor within the given full configuration descriptor satisfying the requirements specified, or NULL if there aren't any.
 

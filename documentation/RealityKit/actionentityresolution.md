@@ -20,7 +20,7 @@ Options available to determine the resolution method for a target entity in an a
 enum ActionEntityResolution
 ```
 
-#### Overview
+## Overview
 
 Use this to resolve the entity an action should target. For example, [`ImpulseAction`](./impulseaction.md) structure accepts this enumeration as an initializer argument to resolve the entity.
 

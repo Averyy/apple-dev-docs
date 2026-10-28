@@ -23,11 +23,11 @@ init?(paymentRequest request: PKPaymentRequest)
 - (instancetype) initWithPaymentRequest:(PKPaymentRequest *) request;
 ```
 
-#### Return Value
+## Return Value
 
 The newly initialized view controller.
 
-#### Discussion
+## Discussion
 
 If the user can’t make payments on any of the payment request’s supported networks, initialization fails and this method returns `nil`.
 

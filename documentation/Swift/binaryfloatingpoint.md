@@ -21,7 +21,7 @@ A radix-2 (binary) floating-point type.
 protocol BinaryFloatingPoint : ExpressibleByFloatLiteral, FloatingPoint
 ```
 
-#### Overview
+## Overview
 
 The `BinaryFloatingPoint` protocol extends the `FloatingPoint` protocol with operations specific to floating-point binary types, as defined by the [IEEE 754 specification](http://ieeexplore.ieee.org/servlet/opac?punumber=4610933). `BinaryFloatingPoint` is implemented in the standard library by `Float`, `Double`, and `Float80` where available.
 

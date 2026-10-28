@@ -19,7 +19,7 @@ let kSCPropNetIPv6ConfigMethod: CFString
 extern CFStringRef const kSCPropNetIPv6ConfigMethod;
 ```
 
-#### Discussion
+## Discussion
 
 This key can be passed the following constants:
 

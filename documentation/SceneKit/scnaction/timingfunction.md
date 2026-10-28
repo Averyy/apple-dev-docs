@@ -25,7 +25,7 @@ var timingFunction: SCNActionTimingFunction? { get set }
 @property (nonatomic, nullable) SCNActionTimingFunction timingFunction;
 ```
 
-#### Discussion
+## Discussion
 
 The [`timingMode`](./timingmode.md) property determines the input to your block. You use this input to compute your custom timing function, whose output determines the animation timing. The following example provides quadratic animation timing for an action, simulating the effect of gravity on a falling object:
 

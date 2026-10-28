@@ -21,7 +21,7 @@ Creates a size with dimensions specified as a Core Graphics size value.
 init?(exactly size: CGSize)
 ```
 
-#### Discussion
+## Discussion
 
 The height and width must be greater than `0` and exactly representable as an `Int` value.
 

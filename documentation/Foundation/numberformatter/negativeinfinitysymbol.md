@@ -25,7 +25,7 @@ var negativeInfinitySymbol: String { get set }
 @property (copy) NSString * negativeInfinitySymbol;
 ```
 
-#### Discussion
+## Discussion
 
 By default, this property is set to the string “`-∞`”.
 

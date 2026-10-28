@@ -19,7 +19,7 @@ var bitmapFormat: NSBitmapImageRep.Format { get }
 @property (readonly) NSBitmapFormat bitmapFormat;
 ```
 
-#### Discussion
+## Discussion
 
 Returns 0 by default. The return value can indicate several different attributes, which are described in [`NSBitmapImageRep.Format`](./format.md).
 

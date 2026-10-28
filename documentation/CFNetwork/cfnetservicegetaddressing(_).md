@@ -26,15 +26,15 @@ func CFNetServiceGetAddressing(_ theService: CFNetService) -> Unmanaged<CFArray>
 extern CFArrayRefCFNetServiceGetAddressing(CFNetServiceRef theService);
 ```
 
-#### Return Value
+## Return Value
 
 A CFArray containing a CFDataRef for each IP address returned, or `NULL`. Each CFDataRef consists of a `sockaddr` structure containing the IP address of the service. This function returns `NULL` if the service’s addressing is unknown because [`CFNetServiceResolve`](./cfnetserviceresolve.md) has not been called for `theService`.
 
-#### Discussion
+## Discussion
 
 This function gets the IP addressing from a CFNetService. Typically, the CFNetService was obtained by calling [`CFNetServiceBrowserSearchForServices(_:_:_:_:)`](./cfnetservicebrowsersearchforservices%28_,_,_,_%29.md). Before calling this function, call [`CFNetServiceResolve`](./cfnetserviceresolve.md) to update the CFNetService with its IP addressing.
 
-##### Special Considerations
+### Special Considerations
 
 This function gets the data in a thread-safe way, but the data itself is not safe if the service is altered from another thread.
 

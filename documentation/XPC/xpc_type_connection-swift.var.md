@@ -21,7 +21,7 @@ A type that represents a connection to a named service.
 var XPC_TYPE_CONNECTION: xpc_type_t { get }
 ```
 
-#### Discussion
+## Discussion
 
 This connection is bidirectional and can both send and receive messages. A connection carries the credentials of the remote service provider.
 

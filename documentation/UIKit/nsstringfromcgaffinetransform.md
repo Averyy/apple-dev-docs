@@ -20,7 +20,7 @@ Returns a string formatted to contain the data from an affine transform.
 extern NSString *NSStringFromCGAffineTransform(CGAffineTransform transform);
 ```
 
-#### Return Value
+## Return Value
 
 A string that corresponds to `transform`. See [`CGAffineTransformFromString`](./cgaffinetransformfromstring.md) for a discussion of the string format.
 

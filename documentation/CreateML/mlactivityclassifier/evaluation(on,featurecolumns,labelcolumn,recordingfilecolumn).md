@@ -21,7 +21,7 @@ func evaluation(on testingData: MLActivityClassifier.DataSource, featureColumns:
 func evaluation(on testingData: MLDataTable, featureColumns: [String], labelColumn: String, recordingFileColumn: String) -> MLClassifierMetrics
 ```
 
-#### Return Value
+## Return Value
 
 An [`MLClassifierMetrics`](../mlclassifiermetrics.md) instance.
 

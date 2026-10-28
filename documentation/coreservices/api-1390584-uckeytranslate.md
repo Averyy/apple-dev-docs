@@ -19,11 +19,11 @@ func UCKeyTranslate(_ keyLayoutPtr: UnsafePointer<UCKeyboardLayout>!, _ virtualK
 OSStatus UCKeyTranslate(const UCKeyboardLayout *keyLayoutPtr, UInt16 virtualKeyCode, UInt16 keyAction, UInt32 modifierKeyState, UInt32 keyboardType, OptionBits keyTranslateOptions, UInt32 *deadKeyState, UniCharCount maxStringLength, UniCharCount *actualStringLength, UniChar unicodeString[]);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. If you pass `NULL` in the `keyLayoutPtr` parameter, `UCKeyTranslate` returns `paramErr`. The `UCKeyTranslate` function also returns `paramErr` for an invalid `'uchr`' resource format or for invalid `virtualKeyCode` or `keyAction` values, as well as for `NULL` pointers to output values. The result `kUCOutputBufferTooSmall` (-25340) is returned for an output string length greater than `maxStringLength`.
 
-#### Discussion
+## Discussion
 
 Use of the `UCKeyTranslate` function is discouraged in applications. Use the `NSEvent` method [`characters(byApplyingModifiers:)`](../AppKit/nsevent/characters%28byapplyingmodifiers%29.md) in its place to process mouse and keyboard-related events.
 

@@ -39,11 +39,11 @@ convenience init(inkType type: __PKInkType, color: NSColor)
 - (instancetype) initWithInkType:(PKInkType) type color:(NSColor *) color;
 ```
 
-#### Return Value
+## Return Value
 
 A new inking tool with the specified type and color.
 
-#### Discussion
+## Discussion
 
 This method sets the line width to the value returned by [`defaultWidth(forInkType:)`](./defaultwidth%28forinktype%29.md).
 

@@ -9,7 +9,7 @@ Get URLs to retrieve someone’s data.
 **Availability**:
 - Account Data Transfer 1.0+
 
-#### Overview
+## Overview
 
 **Request**:
 

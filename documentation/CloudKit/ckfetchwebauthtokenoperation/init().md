@@ -25,7 +25,7 @@ init()
 - (instancetype) init;
 ```
 
-#### Discussion
+## Discussion
 
 You must set [`apiToken`](./apitoken.md) before you execute the operation or add it to a queue.
 

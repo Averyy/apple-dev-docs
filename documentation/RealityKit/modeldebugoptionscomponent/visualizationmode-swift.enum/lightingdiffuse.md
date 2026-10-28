@@ -20,7 +20,7 @@ A mode that displays the intensity of indirect light hitting the entity as its s
 case lightingDiffuse
 ```
 
-#### Discussion
+## Discussion
 
 Add a [`ModelDebugOptionsComponent`](../../modeldebugoptionscomponent.md) with a visualization mode of `lightingDiffuse` to an entity to tell RealityKit to draw the intensity of indirect, ambient lighting falling on the entity as its surface color. RealityKit represents the intensity of indirect light as a grayscale value from black (`0.0`) to white (`1.0`).
 

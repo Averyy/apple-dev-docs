@@ -27,7 +27,7 @@ optional func resolvePayer(for intent: INRequestPaymentIntent) async -> INReques
 - (void) resolvePayerForRequestPayment:(INRequestPaymentIntent *) intent completion:(void (^)(INRequestPaymentPayerResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to identify the intended recipient of the request. Always strive toward a successful resolution to a specific user, but ask for confirmation of the selected user if there is some uncertainty.
 

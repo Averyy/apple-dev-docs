@@ -21,7 +21,7 @@ A publisher that informs subscribers of changes to the image.
 final let objectWillChange: PassthroughSubject<Void, Never>
 ```
 
-#### Discussion
+## Discussion
 
 The renderer’s [`ObjectWillChangePublisher`](../../Combine/observableobject/objectwillchangepublisher.md) publishes `Void` elements. Subscribers should interpret any event as indicating that the contents of the image may have changed.
 

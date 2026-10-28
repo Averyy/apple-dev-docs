@@ -12,7 +12,7 @@ virtual void TicklePowerManager (
  void ) = 0;
 ```
 
-#### Overview
+## Overview
 
 The TicklePowerManager(void) method is called by CheckPowerState and sends an activity tickle to the power manager so that the idle timer is reset. Subclasses must override this method. Third party subclasses shouldn't need to override this method but can to alter the default behavior.
 

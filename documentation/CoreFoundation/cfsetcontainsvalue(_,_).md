@@ -25,11 +25,11 @@ func CFSetContainsValue(_ theSet: CFSet!, _ value: UnsafeRawPointer!) -> Bool
 extern Boolean CFSetContainsValue(CFSetRef theSet, const void *value);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if `value` is contained in `theSet`, otherwise `false`.
 
-#### Discussion
+## Discussion
 
 This function uses the equal callback. `value` and all elements in the set must be understood by the equal callback.
 

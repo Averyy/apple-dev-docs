@@ -17,7 +17,7 @@ An application category for audio and video streaming services.
 case streaming
 ```
 
-#### Discussion
+## Discussion
 
 Streaming slices provide consistent bandwidth and quality for audio and video streaming services. Use this category for music streaming, video streaming, and other media delivery applications.
 

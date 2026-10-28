@@ -23,7 +23,7 @@ class MKPolylineView
 @interface MKPolylineView : MKOverlayPathView
 ```
 
-#### Overview
+## Overview
 
 This view strokes the path represented by the annotation. (This class does not fill the area enclosed by the path.) You can change the color and other drawing attributes of the path by modifying the properties inherited from the [`MKOverlayPathView`](./mkoverlaypathview.md) class. This class is typically used as is and not subclassed.
 

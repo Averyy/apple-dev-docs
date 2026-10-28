@@ -20,11 +20,11 @@ func ColorSyncRegisterDevice(_ deviceClass: CFString!, _ deviceID: CFUUID!, _ de
 extern bool ColorSyncRegisterDevice(CFStringRef deviceClass, CFUUIDRef deviceID, CFDictionaryRef deviceInfo);
 ```
 
-#### Return Value
+## Return Value
 
 `true` on success and `false` in case of failure.
 
-#### Discussion
+## Discussion
 
 The `deviceInfo` dictionary requires the following keys:
 

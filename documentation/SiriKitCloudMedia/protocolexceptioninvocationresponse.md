@@ -15,7 +15,7 @@ A response object that indicates when the service fails to process the client’
 object ProtocolExceptionInvocationResponse
 ```
 
-#### Discussion
+## Discussion
 
 When your service receives a well-formed request, but it can’t fulfill the intent, use an [`IntentResponse`](./intentresponse.md) or [`IntentResolutionResult`](./intentresolutionresult.md) instead of a `ProtocolExceptionInvocationResponse`. Those objects allow the client to provide more specific information to the user about errors that occur.
 

@@ -17,7 +17,7 @@ Creates a new cloth body component.
 init(mesh: ClothMeshResource, meshDraping: ClothPoseResource? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 The body component must be attached to an entity that is a descendant of a simulation root (an entity with a [`ClothSimulationComponent`](../clothsimulationcomponent.md)) in order to be active.
 

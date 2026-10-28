@@ -19,7 +19,7 @@ func checkSpelling(of stringToCheck: String, startingAt startingOffset: Int, lan
 - (NSRange) checkSpellingOfString:(NSString *) stringToCheck startingAt:(NSInteger) startingOffset language:(NSString *) language wrap:(BOOL) wrapFlag inSpellDocumentWithTag:(NSInteger) tag wordCount:(NSInteger *) wordCount;
 ```
 
-#### Return Value
+## Return Value
 
 The range of the first misspelled word and optionally (and by reference) the count of words spellchecked in the string in `wordCount`.
 

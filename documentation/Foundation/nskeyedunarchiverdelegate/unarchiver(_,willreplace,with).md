@@ -25,7 +25,7 @@ optional func unarchiver(_ unarchiver: NSKeyedUnarchiver, willReplace object: An
 - (void) unarchiver:(NSKeyedUnarchiver *) unarchiver willReplaceObject:(id) object withObject:(id) newObject;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called even when the delegate itself is doing, or has done, the substitution with [`unarchiver(_:didDecode:)`](./unarchiver%28_,diddecode%29.md).
 

@@ -13,11 +13,11 @@
 errno_t mbuf_gethdr(mbuf_how_t how, mbuf_type_t type, mbuf_t *mbuf);
 ```
 
-#### Return Value
+## Return Value
 
 0 on success, errno error on failure.
 
-#### Discussion
+## Discussion
 
 Allocates an mbuf without a cluster for external data. Sets a flag to indicate there is a packet header and initializes the packet header.
 

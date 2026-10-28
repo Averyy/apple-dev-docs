@@ -19,7 +19,7 @@ var tangentialPressure: Float { get }
 @property (readonly) float tangentialPressure;
 ```
 
-#### Discussion
+## Discussion
 
 The property’s value can range from -1.0 to 1.0. Tangential pressure is also known as barrel pressure. Only some pointing devices support tangential pressure. This method is valid for mouse events with subtype `NSTabletPointEventSubtype` and for `NSTabletPoint` events.
 

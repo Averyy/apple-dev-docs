@@ -22,7 +22,7 @@ var requiresSetupPayloadURL: Bool { get }
 @property (nonatomic, assign, readonly) BOOL requiresSetupPayloadURL;
 ```
 
-#### Discussion
+## Discussion
 
 If this value is `true`, look up the URL for the given accessory based on its category and name, given by the request’s [`accessoryCategory`](./accessorycategory.md) and [`accessoryName`](./accessoryname.md) parameters. Include the URL in the setup payload by calling the request’s [`makePayload(url:ownershipToken:)`](./makepayload%28url,ownershiptoken%29.md) method.
 

@@ -16,7 +16,7 @@ A SwiftUI view that displays an authentication interface.
 @preconcurrency struct LocalAuthenticationView<Label> where Label : View
 ```
 
-#### Overview
+## Overview
 
 Use a [`LocalAuthenticationView`](./localauthenticationview.md) to display a view that prompts users to authenticate with the app. The view visually represents the state of an [`LAPolicy`](./lapolicy.md) evaluation from the [Local Authentication](./LocalAuthentication.md) framework.
 

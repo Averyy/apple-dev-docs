@@ -21,7 +21,7 @@ func currentMode() -> NSColorPanel.Mode
 - (NSColorPanelMode) currentMode;
 ```
 
-#### Return Value
+## Return Value
 
 The current color picker mode. The returned value should be unique to your color picker. See this protocol description’s list of the unique values for the standard color pickers used by the Application Kit.
 

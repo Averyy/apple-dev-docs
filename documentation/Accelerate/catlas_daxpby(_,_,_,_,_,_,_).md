@@ -25,7 +25,7 @@ func catlas_daxpby(_ N: __LAPACK_int, _ ALPHA: Double, _ X: UnsafePointer<Double
 void catlas_daxpby(const __LAPACK_int N, const double ALPHA, const double *X, const __LAPACK_int INCX, const double BETA, double *Y, const __LAPACK_int INCY);
 ```
 
-#### Discussion
+## Discussion
 
 On return, the contents of vector `Y` are replaced with the result.
 

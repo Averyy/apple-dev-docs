@@ -19,7 +19,7 @@ func setLayoutOrientation(_ orientation: NSLayoutManager.TextLayoutOrientation)
 - (void) setLayoutOrientation:(NSTextLayoutOrientation) orientation;
 ```
 
-#### Discussion
+## Discussion
 
 Unlike other `NSTextView` properties, this is not shared by sibling views.  It also rotates the bounds 90 degrees, swaps horizontal and vertical bits of the [`autoresizingMask`](../nsview/autoresizingmask-swift.property.md) mask, and reconfigures [`isHorizontallyResizable`](../nstext/ishorizontallyresizable.md) and [`isVerticallyResizable`](../nstext/isverticallyresizable.md) properties accordingly.  Also, if [`enclosingScrollView`](../nsview/enclosingscrollview.md) returns non-`nil`, it reconfigures the horizontal and vertical ruler views, the horizontal and vertical scrollers, and the frame.
 

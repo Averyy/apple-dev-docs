@@ -17,7 +17,7 @@ A process capability that grants residency in a suspended state.
 case suspended
 ```
 
-#### Discussion
+## Discussion
 
 This capability grants the helper extension process the ability to stay in a suspended state, although the system won’t allocate it any CPU time.
 

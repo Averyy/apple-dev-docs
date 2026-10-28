@@ -21,7 +21,7 @@ A structure that defines the placement of a toolbar item.
 struct ToolbarItemPlacement
 ```
 
-#### Overview
+## Overview
 
 There are two types of placements:
 

@@ -24,11 +24,11 @@ convenience init(personHandle: INPersonHandle, nameComponents: PersonNameCompone
 - (instancetype) initWithPersonHandle:(INPersonHandle *) personHandle nameComponents:(NSPersonNameComponents *) nameComponents displayName:(NSString *) displayName image:(INImage *) image contactIdentifier:(NSString *) contactIdentifier customIdentifier:(NSString *) customIdentifier relationship:(INPersonRelationship) relationship;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized person object or `nil` if initialization fails.
 
-#### Discussion
+## Discussion
 
 Use this method when creating person objects you plan to return as part of a response to Siri. Specify as much information as possible about the user. This method makes copies of the parameters instead of keeping the originals.
 

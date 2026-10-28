@@ -17,11 +17,11 @@ Loads a PEFT-format LoRA adapter directory and returns a [`LoRAContainer`](../lo
 static func fromPEFT(directory: URL, numLayers: Int = 1024) throws -> LoRAContainer
 ```
 
-#### Return Value
+## Return Value
 
 A [`LoRAContainer`](../loracontainer.md) ready to be loaded into any [`LoRAModel`](../loramodel.md)-conforming model.
 
-#### Discussion
+## Discussion
 
 PEFT format (Hugging Face `peft` library):
 

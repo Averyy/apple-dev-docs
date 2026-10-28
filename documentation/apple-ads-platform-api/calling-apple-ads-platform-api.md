@@ -8,7 +8,7 @@ Authenticate requests, structure endpoint calls, and interpret responses when us
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Overview
+## Overview
 
 Before you can call the API, you need to perform the implementation steps in [Implementing OAuth for the Apple Ads Platform API](./implementing-oauth-for-the-apple-ads-platform-api.md).
 
@@ -24,7 +24,7 @@ curl "https://api.ads.apple.com/v1/" \
 
 New to the API? See [Managing Ad Accounts and API Access](./access-overview.md) for a complete walkthrough that shows where `{access_token}` and `{adAccountId}` come from, ending in a real request like the one above.
 
-#### Include Required Headers
+## Include Required Headers
 
 Include the following headers with every request:
 
@@ -35,7 +35,7 @@ Include the following headers with every request:
 
 To return the `userId` and `orgId` of an API caller, use [`Get Me Details`](./get-current-user-details.md).
 
-#### Confirm Product Feature and Delegation Requirements
+## Confirm Product Feature and Delegation Requirements
 
 The `productFeatures` array on an ad account determines whether it can run App Store or Apple Maps campaigns. App Store ad accounts carry `APPSTORE_APP_MANUAL`, and Apple Maps ad accounts carry `BUSINESS_BRAND_MANUAL`. An account authorized for App Store can’t run campaigns on Apple Maps, and vice versa.
 
@@ -43,7 +43,7 @@ In addition to `productFeatures`, the ad account must also have a `delegations` 
 
 Both must be in place before campaigns can go live. See [`ProductFeatures`](./productfeatures.md) for details.
 
-#### Structure Endpoint Calls
+## Structure Endpoint Calls
 
 The Apple Ads API uses a REST data model. To call endpoint resources, use CRUD (create, read, update, delete) and query functions. In some cases, the call may also include a query parameter. The Apple Ads Platform API has a hierarchy with most entities as top-level resources. For example, to get all keywords in an ad group, send the `adGroupId` as a filter to the keywords query endpoint, like this:
 
@@ -61,7 +61,7 @@ POST /v1/keywords/query
 }
 ```
 
-##### Perform Partial Updates
+### Perform Partial Updates
 
 A partial update changes a subset of object properties instead of the entire set of object properties. The API supports partial updates for most PUT calls. Only include the fields you want to change. The API leaves unset fields unchanged. Array fields are an exception. When you include an array in a PUT request, it replaces the existing values entirely. To add a single item to an array field, retrieve the current array first and send the complete desired state.
 
@@ -76,7 +76,7 @@ PUT /v1/campaigns/{id}
 }
 ```
 
-##### Perform Bulk Operations
+### Perform Bulk Operations
 
 Bulk endpoints accept multiple items in a single request. All bulk endpoints share the same request structure, with an `items` array where each element carries a `correlationId` and a `data` object containing the operation payload. The `correlationId` is a client-supplied integer that matches each result in the response back to its input item.
 
@@ -104,7 +104,7 @@ The response returns a `result` array with one entry per input item. Each entry 
 
 For supported entities and endpoint paths, see [Bulk Operations Endpoints](./bulk-operations-endpoints.md).
 
-#### Query the API
+## Query the API
 
 The Apple Ads Platform API uses a common query parameter structure in all `/query` endpoints. Define filtering, sort order, and pagination for a query. The API doesn’t return deleted entities unless the user specifically filters to include them.
 
@@ -139,7 +139,7 @@ POST /v1/campaigns/query
 
 For more illustrative examples, see [Managing Reports](./reports.md).
 
-#### Structure the Query Request
+## Structure the Query Request
 
 The API performs all querying via POST requests to `/query` endpoints, not GET with query parameters. The pattern is consistent across every entity type.
 
@@ -175,7 +175,7 @@ The table below details the **request pagination objects**:
 | `pageSize` | integer | The number of items per page. |
 | `fetchTotalCount` | boolean | When `true`, includes the total count of matching records in the response pagination metadata. Defaults to `false`. |
 
-#### Explore the Query Objects
+## Explore the Query Objects
 
 The following objects support querying:
 
@@ -190,7 +190,7 @@ The following objects support querying:
 - [`Error`](./error.md): The top-level error returned when the query fails (for example, an invalid filter field).
 - [`ErrorDetail`](./errordetail.md): Granular error detail with code and message.
 
-#### Interpret API Responses
+## Interpret API Responses
 
 In API responses, the `result` field is the main result object across all responses.
 
@@ -283,7 +283,7 @@ A detailed error message example:
 }
 ```
 
-##### Handle Rate Limits
+### Handle Rate Limits
 
 Every response, successful or not, includes a set of `RateLimit-*` headers you can use to pace requests and avoid a `429`. See [Applying Rate Limits](./rate-limits.md) for the full header reference and a sample backoff implementation.
 

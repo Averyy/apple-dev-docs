@@ -22,7 +22,7 @@ init(profileIdentifier: STWebHistory.ProfileIdentifier?)
 - (instancetype) initWithProfileIdentifier:(STWebHistoryProfileIdentifier) profileIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 The default value for `profileIdentifier` is `nil`. This identifier can be used to delete browsing history for a specific profile. Using `nil` will only delete web history reported without a profile identifier.
 

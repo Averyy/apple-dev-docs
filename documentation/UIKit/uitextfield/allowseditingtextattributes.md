@@ -23,7 +23,7 @@ var allowsEditingTextAttributes: Bool { get set }
 @property (nonatomic) BOOL allowsEditingTextAttributes;
 ```
 
-#### Discussion
+## Discussion
 
 If this property is set to [`true`](../../Swift/true.md), the user may edit the style information of the text. In addition, pasting styled text into the text field retains any embedded style information. If [`false`](../../Swift/false.md), the text field prohibits the editing of style information and strips style information from any pasted text. However, you can still set the style information programmatically using the methods of this class.
 

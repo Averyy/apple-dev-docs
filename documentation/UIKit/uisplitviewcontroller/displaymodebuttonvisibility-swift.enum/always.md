@@ -23,7 +23,7 @@ case always
 UISplitViewControllerDisplayModeButtonVisibilityAlways
 ```
 
-#### Discussion
+## Discussion
 
 With this behavior, the display mode button can appear even if [`presentsWithGesture`](../presentswithgesture.md) is [`false`](../../../Swift/false.md).
 

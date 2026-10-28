@@ -14,11 +14,11 @@ virtual IOMemoryMap * setMapping(
  IOOptionBits options = 0 );
 ```
 
-#### Return Value
+## Return Value
 
 A IOMemoryMap object created to represent the mapping.
 
-#### Overview
+## Overview
 
 This method tells the IOMemoryDescriptor about a mapping that exists, but was created elsewhere. It allows later callers of the map method to share this externally created mapping. The IOMemoryMap object returned is created to represent it. This method is not commonly needed.
 

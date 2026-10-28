@@ -25,7 +25,7 @@ func write(to url: URL) throws
 - (BOOL) writeToURL:(NSURL *) url error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 This method recursively validates that all the contained objects are property list objects (instances of [`NSData`](../nsdata.md), [`NSDate`](../nsdate.md), [`NSNumber`](../nsnumber.md), [`NSString`](../nsstring.md), [`NSArray`](../nsarray.md), or [`NSDictionary`](../nsdictionary.md)) before writing out the file. The method throws an error if all the objects are not property list objects, because the resulting output wouldn’t be a valid property list.
 

@@ -20,7 +20,7 @@ A Boolean value that indicates whether or not a resuming export is continuing fr
 @property (readonly, getter=isResumingFromPreviousState) BOOL resumingFromPreviousState;
 ```
 
-#### Discussion
+## Discussion
 
 A value of `true` means the export resumes from previous results; a value of `false` means it starts from the beginning. This value is valid only when [`resumptionConfigured`](./resumptionconfigured.md) is `true`.
 

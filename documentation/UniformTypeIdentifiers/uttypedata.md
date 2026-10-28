@@ -21,7 +21,7 @@ A base type that represents any sort of byte stream, including files and in-memo
 extern UTType * const UTTypeData;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.data`.
 

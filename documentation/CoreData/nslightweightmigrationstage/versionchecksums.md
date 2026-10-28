@@ -25,7 +25,7 @@ var versionChecksums: [String] { get }
 @property (strong, readonly) NSArray<NSString *> * versionChecksums;
 ```
 
-#### Discussion
+## Discussion
 
 Core Data sets this property to the checksum you specify when creating the lightweight migration stage.
 

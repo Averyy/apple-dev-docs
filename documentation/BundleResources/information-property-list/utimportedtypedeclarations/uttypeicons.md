@@ -17,7 +17,7 @@ A dictionary that describes how the system represents this type as an icon or sy
 - **Name**: `UTTypeIcons` (Icons)
 - **Type**: dictionary
 
-#### Discussion
+## Discussion
 
 This dictionary can include information about document icons, along with other icon-related data. When you provide document icon information in this key, the system generates the document icon at runtime by layering the assets you specify onto the standard folded-corner document shape. You can supply any combination of a background fill, a center badge image, and a text label. The system scales, masks, and composites them automatically.
 

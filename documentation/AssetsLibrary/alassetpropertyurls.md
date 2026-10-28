@@ -12,7 +12,7 @@ The key to retrieve a dictionary that maps asset representations UTIs to URLs th
 extern NSString * const ALAssetPropertyURLs;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is an [`NSDictionary`](../Foundation/nsdictionary.md) object.
 

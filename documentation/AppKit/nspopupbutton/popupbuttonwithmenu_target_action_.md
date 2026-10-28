@@ -15,11 +15,11 @@ Creates a standard pop-up button with a menu, target, and action.
 + (instancetype) popUpButtonWithMenu:(NSMenu *) menu target:(id) target action:(SEL) action;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized pop-up button object.
 
-#### Discussion
+## Discussion
 
 If `menu` is non-empty, the pop-up button uses the first item for its initial selection.
 

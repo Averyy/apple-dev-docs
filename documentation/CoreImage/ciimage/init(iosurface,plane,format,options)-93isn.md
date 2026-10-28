@@ -19,7 +19,7 @@ init(ioSurface surface: IOSurfaceRef, plane: Int, format: CIFormat, options: [CI
 - (instancetype) initWithIOSurface:(IOSurfaceRef) surface plane:(size_t) plane format:(CIFormat) format options:(NSDictionary<NSString *,id> *) options;
 ```
 
-#### Return Value
+## Return Value
 
 An image object initialized with the data from the IOSurface.
 

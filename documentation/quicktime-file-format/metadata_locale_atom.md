@@ -6,7 +6,7 @@
 
 An atom that tags a metadata value with a locale.
 
-#### Overview
+## Overview
 
 A metadata value may optionally be tagged with its locale so that it may be chosen based upon the user’s language, country, and so on. This tagging makes it possible to include several keys of the same key type (e.g., copyright or scene description) but with differing locales for users with different languages or locations. The type of the metadata locale atom is `‘loca’`.
 

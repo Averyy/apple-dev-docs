@@ -16,11 +16,11 @@ Returns the max render value for tracking areas’ render values.
 cp_tracking_area_render_value cp_layer_renderer_properties_get_tracking_areas_max_value(cp_layer_renderer_properties_t properties);
 ```
 
-#### Return Value
+## Return Value
 
 The max render value for the tracking areas render values.
 
-#### Discussion
+## Discussion
 
 The layer’s configuration determines the total number of available tracking areas. This will be the max render value available, based on [`cp_layer_renderer_configuration_get_tracking_areas_format`](./cp_layer_renderer_configuration_get_tracking_areas_format.md) function.
 

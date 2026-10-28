@@ -24,11 +24,11 @@ init(username: String, service: String)
 - (instancetype) initWithUsername:(NSString *) username service:(NSString *) service;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized [`CNInstantMessageAddress`](../cninstantmessageaddress.md) object with the specified user name and service.
 
-#### Discussion
+## Discussion
 
 User name and service are required to initialize [`CNInstantMessageAddress`](../cninstantmessageaddress.md) object.
 

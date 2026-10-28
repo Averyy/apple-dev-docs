@@ -21,7 +21,7 @@ The alternate quotation begin delimiter of the locale.
 var alternateQuotationBeginDelimiter: String? { get }
 ```
 
-#### Discussion
+## Discussion
 
 For example, returns `‘` for “en_US”, and `『` for “zh-Hant-HK”.
 

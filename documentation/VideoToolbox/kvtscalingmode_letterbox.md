@@ -24,7 +24,7 @@ let kVTScalingMode_Letterbox: CFString
 extern CFStringRef const kVTScalingMode_Letterbox;
 ```
 
-#### Discussion
+## Discussion
 
 The remainder of the destination image buffer is filled with black. If a destination pixel aspect ratio is not set, the source image’s pixel aspect ratio is used. The pixel aspect ratio used is set on the destination image buffer.
 

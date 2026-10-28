@@ -15,11 +15,11 @@ This is the callback that handles method invocation completion when the method i
 typedef void (*WSMethodInvocationCallBackProcPtr)(WSMethodInvocationRef invocation, void *info, CFDictionaryRef outRef);
 ```
 
-#### Discussion
+## Discussion
 
 If your callback is named MyCompletionCallback, declare it like this:
 
-##### Discussion
+### Discussion
 
 Your callback is passed a reference to the invocation just completed, a pointer to private data, and a dictionary that contains the return value or falut for this invocation.  The  callback is responsible for releasing the dictionary when it is  no longer used.
 

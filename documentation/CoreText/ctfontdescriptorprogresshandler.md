@@ -25,7 +25,7 @@ typealias CTFontDescriptorProgressHandler = (CTFontDescriptorMatchingState, CFDi
 typedef _Bool (^)(enum CTFontDescriptorMatchingState, const struct __CFDictionary *) CTFontDescriptorProgressHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Use this callback type with [`CTFontDescriptorMatchFontDescriptorsWithProgressHandler(_:_:_:)`](./ctfontdescriptormatchfontdescriptorswithprogresshandler%28_,_,_%29.md).
 

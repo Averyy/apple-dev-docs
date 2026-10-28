@@ -25,7 +25,7 @@ let kCGImageDestinationDateTime: CFString
 extern CFStringRef const kCGImageDestinationDateTime;
 ```
 
-#### Discussion
+## Discussion
 
 This property puts the specified date and time information into the DateTime parameters of the image’s metadata. Specify the value of this key using a [`CFString`](../CoreFoundation/cfstring.md) or [`CFData`](../CoreFoundation/cfdata.md). For strings, the value must be in EXIF DateTime or ISO 8601 DateTime format.
 

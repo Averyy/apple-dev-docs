@@ -25,7 +25,7 @@ var isMainThread: Bool { get }
 @property (readonly) BOOL isMainThread;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) if the receiver is the main thread, otherwise [`false`](../../Swift/false.md).
 

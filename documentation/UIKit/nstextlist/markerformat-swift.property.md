@@ -24,7 +24,7 @@ var markerFormat: NSTextList.MarkerFormat { get }
 @property (strong, readonly) NSTextListMarkerFormat markerFormat;
 ```
 
-#### Return Value
+## Return Value
 
 The marker format string used by the receiver.
 

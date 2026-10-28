@@ -20,7 +20,7 @@ Returns the position in the sequence of the joint that preceeds the given positi
 func index(before i: JointTransforms.Index) -> JointTransforms.Index
 ```
 
-#### Discussion
+## Discussion
 
 For more on calculating indices, see [`index(before:)`](../../Swift/array/index%28before%29.md).
 

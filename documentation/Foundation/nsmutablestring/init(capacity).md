@@ -25,11 +25,11 @@ init(capacity: Int)
 - (NSMutableString *) initWithCapacity:(NSUInteger) capacity;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized `NSMutableString` object with initial storage for `capacity` characters. The returned object might be different than the original receiver.
 
-#### Discussion
+## Discussion
 
 The number of characters indicated by `capacity` is simply a hint to increase the efficiency of data storage. The value does *not* limit the length of the string.
 

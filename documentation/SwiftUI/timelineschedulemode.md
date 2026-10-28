@@ -21,7 +21,7 @@ A mode of operation for timeline schedule updates.
 enum TimelineScheduleMode
 ```
 
-#### Overview
+## Overview
 
 A [`TimelineView`](./timelineview.md) provides a mode when calling its schedule’s [`entries(from:mode:)`](./timelineschedule/entries%28from,mode%29.md) method. The view chooses a mode based on the state of the system. For example, a watchOS view might request a lower frequency of updates, using the [`TimelineScheduleMode.lowFrequency`](./timelineschedulemode/lowfrequency.md) mode, when the user lowers their wrist.
 

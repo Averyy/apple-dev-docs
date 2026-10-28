@@ -25,7 +25,7 @@ var errSSLPeerAuthCompleted: OSStatus { get }
 errSSLPeerAuthCompleted
 ```
 
-#### Discussion
+## Discussion
 
 The peer’s certificate chain is valid, or was ignored if certificate verification was disabled via [`SSLSetEnableCertVerify`](./sslsetenablecertverify.md). In response, you may decide to continue with the handshake (by calling [`SSLHandshake(_:)`](./sslhandshake%28_%29.md) again) or just close the connection.
 

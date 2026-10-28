@@ -15,11 +15,11 @@ Synchronously read a metadata block of a file.
 errno_t buf_meta_bread(vnode_t vp, daddr64_t blkno, int size, kauth_cred_t cred, buf_t *bpp);
 ```
 
-#### Return Value
+## Return Value
 
 0 for success, or an error from buf_biowait().
 
-#### Discussion
+## Discussion
 
 buf_meta_bread() is the traditional way to read a single logical block of a file through the buffer cache. It tries to find the buffer and corresponding page(s) in core, calls VNOP_STRATEGY if necessary to bring the data into memory, and waits for I/O to complete. It should not be used to read blocks of greater than 4K (one VM page) in size; use cluster routines for large reads. Reading meta-data through the traditional buffer cache, unlike reading data, is efficient and encouraged, especially if the blocks being read are significantly smaller than page size.
 

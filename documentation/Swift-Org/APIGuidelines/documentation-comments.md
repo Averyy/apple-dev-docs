@@ -10,7 +10,7 @@ framework: "Swift-Org/APIGuidelines"
 
 Insights gained by writing documentation can have a profound impact on your design, so don’t put it off.
 
-#### Overview
+## Overview
 
 - Use Swift’s [dialect of Markdown](../docc/formatting-your-documentation-content.md).
 - Begin with a summary that describes the entity being declared. Often, an API can be completely understood from its declaration and its summary.

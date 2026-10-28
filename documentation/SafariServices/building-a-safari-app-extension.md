@@ -5,7 +5,7 @@
 
 Add, build, and enable a Safari app extension.
 
-#### Overview
+## Overview
 
 You deliver a Safari app extension inside a macOS app. When a user runs your app for the first time, the app extension immediately becomes available in Safari. This article explains the following steps to build your own Safari app extension:
 
@@ -15,7 +15,7 @@ You deliver a Safari app extension inside a macOS app. When a user runs your app
 4. Building and running your app, which builds your Safari app extension for use.
 5. Enabling your Safari app extension in Safari so you can use it.
 
-##### Add a Safari app extension target in Xcode
+### Add a Safari app extension target in Xcode
 
 To create a Safari app extension:
 
@@ -30,15 +30,15 @@ To create a Safari app extension:
 
 Xcode adds a new group into your project, which contains several new files, including an `Info.plist` file, a variety of supporting source files, an Interface Builder file, a JavaScript file, and a toolbar image PDF.
 
-##### Add scripts and style sheets
+### Add scripts and style sheets
 
 After you add scripts and style sheets to your Safari app extension, you can read and modify webpage content, and read and send data from your app. For more information about injecting scripts and style sheets into your webpage content, see [Using injected style sheets and scripts](./using-injected-style-sheets-and-scripts.md).
 
-##### Add keys to the information property list template
+### Add keys to the information property list template
 
 The default `Info.plist` file identifies your new Safari app extension and specifies its capabilities and access limits under the `NSExtension` key. For more information about setting these capabilities and limits, see [Safari app extension information property list keys](./safari-app-extension-information-property-list-keys.md). In your information property list file, you can also specify custom UI options, like contextual menu items and toolbar items. For more information about these settings, see [Using contextual menu and toolbar item keys](./using-contextual-menu-and-toolbar-item-keys.md).
 
-##### Build and run the app
+### Build and run the app
 
 Before Safari can find your new extension, you must run the containing app at least once:
 
@@ -47,7 +47,7 @@ Before Safari can find your new extension, you must run the containing app at le
 
 When you build your app, Xcode builds your Safari app extension first, then embeds it inside the finished app bundle. As soon as your app runs, your extension is ready for use in Safari.
 
-##### Enable your app extension in Safari
+### Enable your app extension in Safari
 
 If you’re not part of the Apple Development Program, or if you don’t have a developer identity for your existing Xcode project, Xcode can’t sign your Safari app extension with a development certificate. For security purposes, Safari, by default,  ignores unsigned extensions, so your extension doesn’t appear in Safari Extensions settings.
 

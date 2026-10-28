@@ -18,7 +18,7 @@ var kCGDisplayFadeReservationInvalidToken: Int32 { get }
 #define kCGDisplayFadeReservationInvalidToken
 ```
 
-#### Discussion
+## Discussion
 
 An invalid fade reservation token. For general information about fade reservation tokens, see the data type [`CGDisplayFadeReservationToken`](./cgdisplayfadereservationtoken.md).
 

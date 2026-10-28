@@ -24,11 +24,11 @@ func metadata(forFormat format: AVMetadataFormat) -> [AVMetadataItem]
 - (NSArray<AVMetadataItem *> *) metadataForFormat:(AVMetadataFormat) format;
 ```
 
-#### Return Value
+## Return Value
 
 An array of [`AVMetadataItem`](../avmetadataitem.md) objects, one for each metadata item in the container of the specified format, or an empty array if there is no metadata for the specified format.
 
-#### Discussion
+## Discussion
 
 You can filter the array to the specific items of interest using the class methods provided by [`AVMetadataItem`](../avmetadataitem.md), like [`metadataItems(from:filteredByIdentifier:)`](../avmetadataitem/metadataitems%28from,filteredbyidentifier%29.md) or [`metadataItems(from:with:)`](../avmetadataitem/metadataitems%28from,with%29.md).
 

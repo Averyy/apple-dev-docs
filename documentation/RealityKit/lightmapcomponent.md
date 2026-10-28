@@ -20,7 +20,7 @@ Describes how a lightmap is applied to parts of the scene.
 struct LightmapComponent
 ```
 
-#### Overview
+## Overview
 
 [`LightmapComponent`](./lightmapcomponent.md) specifies which children of its owning entity should have a lightmap applied to them, and connects those children to their corresponding data in a [`LightmapResource`](./lightmapresource.md).
 

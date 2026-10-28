@@ -32,7 +32,7 @@ var nameComponents: PersonNameComponents? { get }
 @property (atomic, copy, readonly, nullable) NSPersonNameComponents * nameComponents;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the name components specified at initialization time. Use the information in this property or the [`displayName`](./displayname.md) property to identify the name of the user.
 

@@ -15,11 +15,11 @@ Returns information about the Media Extension video decoder required to decode t
 extern OSStatus VTCopyVideoDecoderExtensionProperties(CMFormatDescriptionRef formatDesc, CFDictionaryRef*mediaExtensionPropertiesOut);
 ```
 
-#### Return Value
+## Return Value
 
 If the function succeeds and a [MediaExtension](../MediaExtension/MediaExtension.md) video decoder will be used to decode this format, the return value will be `noErr`. If the function succeeds but a Media Extension video decoder will not be used to decode this format, the return value will be [`kVTCouldNotFindExtensionErr`](./kvtcouldnotfindextensionerr.md). Otherwise, the return value will be an error code describing the failure.
 
-#### Discussion
+## Discussion
 
 If a Media Extension video decoder will be used to decode the specified format, this function will return information about the Media Extension that will be used.
 

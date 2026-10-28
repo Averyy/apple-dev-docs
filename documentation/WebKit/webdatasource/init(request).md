@@ -19,11 +19,11 @@ init!(request: URLRequest!)
 - (instancetype) initWithRequest:(NSURLRequest *) request;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized web data source.
 
-#### Discussion
+## Discussion
 
 This method is the designated initializer for `WebDataSource` objects. Normally, `WebFrame` objects create their data sources, so you should not invoke this method directly.
 

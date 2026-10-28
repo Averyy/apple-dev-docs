@@ -24,7 +24,7 @@ var maximumChannelCount: AUAudioChannelCount { get set }
 @property (nonatomic) AUAudioChannelCount maximumChannelCount;
 ```
 
-#### Discussion
+## Discussion
 
 If the value of [`supportedChannelCounts`](./supportedchannelcounts.md) is set, then this value is derived from it. If setting a new value on this property makes the current bus format unsupported, then the value of [`format`](./format.md) is set to `nil`.
 

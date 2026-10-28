@@ -17,7 +17,7 @@ Sets the page layout’s values to those stored in the print info object used wh
 - (void) readPrintInfo;
 ```
 
-#### Discussion
+## Discussion
 
 Do not invoke this method directly; it is invoked automatically before the receiver is displayed.
 

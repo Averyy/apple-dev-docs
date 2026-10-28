@@ -35,7 +35,7 @@ var rideIdentifier: String? { get set }
 
 - [Providing Live Status Updates](../../SiriKit/providing-live-status-updates.md)
 
-#### Discussion
+## Discussion
 
 Use this property to store an app-specific identifier for the ride. Use this string to identify the ride in your own data structures. This string is not displayed to the user.
 

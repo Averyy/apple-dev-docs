@@ -25,7 +25,7 @@ func BNNSGraphCompileOptionsGetGenerateDebugInfo(_ options: bnns_graph_compile_o
 bool BNNSGraphCompileOptionsGetGenerateDebugInfo(const bnns_graph_compile_options_t options);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the options specify that the compiled graph includes debugging information; otherwise, `false`.
 

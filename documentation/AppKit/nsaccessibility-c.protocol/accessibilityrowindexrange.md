@@ -15,7 +15,7 @@ The row index range of the cell.
 @property NSRange accessibilityRowIndexRange;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the row’s starting index and index span in the table. Use this property in the elements representing a table’s cell.
 

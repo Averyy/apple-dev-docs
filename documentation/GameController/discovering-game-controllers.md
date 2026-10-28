@@ -5,7 +5,7 @@
 
 Implement connection and input handling to provide seamless physical controller support for players.
 
-#### Overview
+## Overview
 
 Physical game controllers enhance the gaming experience by providing tactile feedback and precise input control. When using a controller, you might make it the exclusive source of input data to your game or it may be only one of many sources of input data. You choose how to best use the controller in your game.
 
@@ -18,7 +18,7 @@ The Game Controller framework provides standardized APIs for connection monitori
 
 For more information on designing game experiences using controllers, see Human Interface Guidelines > Inputs > [Game Controls](https://developer.apple.com/design/human-interface-guidelines/game-controls).
 
-#### Discover wireless controllers
+## Discover wireless controllers
 
 A wireless controller isn’t visible to the device until it’s explicitly paired with the device. Before retrieving controller connection states and handling input, players need to pair their controller with the device your game supports. To pair a device:
 
@@ -31,7 +31,7 @@ If the device was previously paired, select it from the “My Devices” list to
 
 When connecting a controller to an iOS or iPadOS device using a USB cable, the controller connects automatically. When connecting a controller to a Mac, the person receives a system prompt that they need to approve before the controller is available to your game.
 
-#### Monitor for controller connections
+## Monitor for controller connections
 
 After your app launches, the system automatically creates a list of connected [`controllers()`](./gccontroller/controllers%28%29.md) that you use to inspect whether a controller is already in a connected state. When a person connects or disconnects a controller, the system can broadcast these connection events to your app. Use [`NotificationCenter`](../Foundation/notificationcenter.md) to observe for connection notifications:
 
@@ -129,7 +129,7 @@ private func updateInputConfiguration(controllers: [GCController]) {
 }
 ```
 
-#### Associate a game controller with a player
+## Associate a game controller with a player
 
 Use the [`GCController`](./gccontroller.md) to perform common controller-related tasks, like:
 
@@ -166,7 +166,7 @@ private func unassignController(_ controller: GCController) {
 }
 ```
 
-#### Choose the profile representation and handle input
+## Choose the profile representation and handle input
 
 When you add controller support, you choose which controller profiles to support and then set up input handling to read the appropriate elements on those profiles to receive input data. A profile provides a guarantee that the controls you expect to find on a specific controller exist. A game controller can support multiple profiles, ensuring all controls each profile defines are present on the physical controller.
 
@@ -220,7 +220,7 @@ private func setupExtendedGamepadHandlers(_ gamepad: GCExtendedGamepad, playerIn
 
 For more information about handling controller input events, see [Handling input events](./handling-input-events.md).
 
-#### Use gamepads on visionOS
+## Use gamepads on visionOS
 
 Apple Vision Pro supports all of the same game controllers that iOS, iPadOS, tvOS, and macOS support. By default, the system converts gamepad input and a person’s gaze into a pinch events and sends them to the view a person is gazing at. A gaze and gamepad button press results in a [UIKit](../UIKit/UIKit.md) event or a [SwiftUI](../SwiftUI/SwiftUI.md) gesture.
 

@@ -16,7 +16,7 @@ Sets the allowed menu item titles for the given language.
 func setAllowedMenuItems(_ menuItems: Set<String>?, for language: Locale.Language)
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to specify which menu items the participant application may display during an assessment session. Titles must match the application’s localized menu item strings for the corresponding language.
 

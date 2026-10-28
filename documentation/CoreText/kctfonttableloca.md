@@ -23,7 +23,7 @@ var kCTFontTableLoca: Int { get }
 kCTFontTableLoca
 ```
 
-#### Discussion
+## Discussion
 
 Font table tag for index to location.
 

@@ -19,7 +19,7 @@ The search field appears in the navigation bar.
 static let navigationBarDrawer: SearchFieldPlacement
 ```
 
-#### Discussion
+## Discussion
 
 The field appears below any navigation bar title and uses the [`automatic`](./navigationbardrawerdisplaymode/automatic.md) display mode to configure when to hide the search field. To choose a different display mode, use [`navigationBarDrawer(displayMode:)`](./navigationbardrawer%28displaymode%29.md) instead.
 

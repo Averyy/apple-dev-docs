@@ -28,7 +28,7 @@ set url(
 );
 ```
 
-#### Discussion
+## Discussion
 
 This property is an object literal containing absolute or relative URLs to standard, 2×, and 3× Retina assets. MapKit JS requires at least one URL.
 

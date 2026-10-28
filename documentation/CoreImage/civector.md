@@ -24,7 +24,7 @@ class CIVector
 @interface CIVector : NSObject
 ```
 
-#### Overview
+## Overview
 
 A `CIVector` can store one or more `CGFloat` in one object. They can store a group of float values for a variety of different uses such as coordinate points, direction vectors, geometric rectangles, transform matrices, convolution weights, or just a list a parameter values.
 

@@ -22,7 +22,7 @@ var isFaceDrivenAutoFocusEnabled: Bool { get set }
 @property (nonatomic, getter=isFaceDrivenAutoFocusEnabled) BOOL faceDrivenAutoFocusEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 Face-driven auto focus takes a subject’s face into account when adjusting auto focus. For apps that link against iOS 15.4 or later, the value of this property defaults to [`true`](../../Swift/true.md) for devices that support auto focus.
 

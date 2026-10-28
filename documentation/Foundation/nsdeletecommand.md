@@ -20,7 +20,7 @@ class NSDeleteCommand
 @interface NSDeleteCommand : NSScriptCommand
 ```
 
-#### Overview
+## Overview
 
 An instance of `NSDeleteCommand` deletes the specified scriptable object or objects (such as words, paragraphs, and so on).
 

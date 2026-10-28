@@ -21,7 +21,7 @@ func logicalNot(_ array: MLXArray, stream: StreamOrDevice = .default) -> MLXArra
 
 - [Converting From Python](./converting-python.md)
 
-#### Discussion
+## Discussion
 
 For example:
 
@@ -31,7 +31,7 @@ let b = a + 1
 let r = !(a == b)
 ```
 
-##### See Also
+### See Also
 
 - [Arithmetic](./arithmetic.md)
 - [Logical Operators](./logical.md)

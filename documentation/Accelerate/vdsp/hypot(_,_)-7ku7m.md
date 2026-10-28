@@ -21,7 +21,7 @@ Returns the double-precision hypotenuses of right triangles with legs that are t
 static func hypot<U, V>(_ x: U, _ y: V) -> [Double] where U : AccelerateBuffer, V : AccelerateBuffer, U.Element == Double, V.Element == Double
 ```
 
-#### Discussion
+## Discussion
 
 This function returns the square roots of the sum of the squares of corresponding elements of vectors `x` and `y`, using the following operation:
 

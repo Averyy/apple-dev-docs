@@ -17,7 +17,7 @@ Categories of websites for the system to cover with a shielding view.
 var webDomainCategories: ShieldSettings.ActivityCategoryPolicy<WebDomain>? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 When the user visits a website in one of these categories, the system calls your extension that customizes the shield’s appearance. When the user taps on a button the shield displays, the system calls your extension that handles user actions. If your app doesn’t provide a list of website categories to shield, this value is `nil`. Your app can shield up to 50 category tokens and specify up to 50 web domain tokens exceptions at once.
 

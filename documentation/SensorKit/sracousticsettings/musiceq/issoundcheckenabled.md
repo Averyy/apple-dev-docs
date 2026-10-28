@@ -19,7 +19,7 @@ var isSoundCheckEnabled: Bool { get }
 @property (nonatomic, assign, readonly, getter=isSoundCheckEnabled) BOOL soundCheckEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 Sound Check is turned on/off
 

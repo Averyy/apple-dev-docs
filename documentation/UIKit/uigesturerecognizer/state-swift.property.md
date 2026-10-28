@@ -28,11 +28,11 @@ var state: UIGestureRecognizer.State { get set }
 - [About the Gesture Recognizer State Machine](../about-the-gesture-recognizer-state-machine.md)
 - [Handling tap gestures](../handling-tap-gestures.md)
 
-#### Discussion
+## Discussion
 
 The possible states a gesture recognizer can be in are represented by the constants of type [`UIGestureRecognizer.State`](./state-swift.enum.md). Some of these states aren’t applicable to discrete gestures. The read-only version of the [`state`](./state-swift.property.md) property is intended for clients of a gesture-recognizer class and not subclasses.
 
-##### Special considerations
+### Special considerations
 
 Subclasses of [`UIGestureRecognizer`](../uigesturerecognizer.md) must use a read-write version of the state property. They get this redeclaration when they import the `UIGestureRecognizerSubclass.h` header file (for Objective-C) or the `UIKit.UIGestureRecognizerSubclass` module (for Swift):
 

@@ -19,7 +19,7 @@ var metadata: [AVMetadataItem] { get set }
 @property (nonatomic, copy) NSArray<AVMetadataItem *> * metadata;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is an array of `AVMetadataItem` objects representing the collection of top-level metadata to be written in each output file. Only ID3 v2.2, v2.3, or v2.4 style metadata items are supported.
 

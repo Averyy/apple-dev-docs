@@ -25,7 +25,7 @@ var localizedRecoveryOptions: [String]? { get }
 @property (copy, readonly, nullable) NSArray<NSString *> * localizedRecoveryOptions;
 ```
 
-#### Discussion
+## Discussion
 
 The object in the user info dictionary for the key [`NSLocalizedRecoveryOptionsErrorKey`](../nslocalizedrecoveryoptionserrorkey.md). If the user info dictionary doesn’t contain a value for [`NSLocalizedRecoveryOptionsErrorKey`](../nslocalizedrecoveryoptionserrorkey.md), this property is `nil`.
 

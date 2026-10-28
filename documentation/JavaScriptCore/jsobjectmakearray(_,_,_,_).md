@@ -24,11 +24,11 @@ func JSObjectMakeArray(_ ctx: JSContextRef!, _ argumentCount: Int, _ arguments: 
 JSObjectRefJSObjectMakeArray(JSContextRef ctx, size_t argumentCount, JSValueRef const arguments[], JSValueRef*exception);
 ```
 
-#### Return Value
+## Return Value
 
 A [`JSObjectRef`](./jsobjectref.md) that is an array.
 
-#### Discussion
+## Discussion
 
 The behavior of this function doesn’t exactly match the behavior of the built-in array constructor. Specifically, if you supply one argument, this function returns an array with one element.
 

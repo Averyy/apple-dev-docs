@@ -22,7 +22,7 @@ func MTL4BufferRangeMake(_ bufferAddress: MTLGPUAddress, _ length: UInt64) -> MT
 static MTL4BufferRange MTL4BufferRangeMake(MTLGPUAddress bufferAddress, uint64_t length);
 ```
 
-#### Discussion
+## Discussion
 
 Create a buffer range from a buffer’s GPU address (given by the gpuAddress property) and length. A length of (uint64_t)-1 represents the the range from the given address to the end of the buffer.
 

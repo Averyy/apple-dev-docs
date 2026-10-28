@@ -19,7 +19,7 @@ class FSCreateSymlinkResult
 @interface FSCreateSymlinkResult : FSCreateItemResult
 ```
 
-#### Overview
+## Overview
 
 Use this type in your implementation of  [`createSymbolicLink(named:in:attributes:linkContents:context:replyHandler:)`](./fsvolume/handler/createsymboliclink%28named,in,attributes,linkcontents,context,replyhandler%29.md).
 

@@ -25,7 +25,7 @@ static let wordJoiner: NLTag
 extern NLTag const NLTagWordJoiner;
 ```
 
-#### Discussion
+## Discussion
 
 Word joiners are typically used in languages that do not use explicit spaces.
 

@@ -22,7 +22,7 @@ func read(from url: URL) throws
 - (BOOL) readFromURL:(NSURL *) url error:(NSError **) outError;
 ```
 
-#### Discussion
+## Discussion
 
 Typical [`UIDocument`](../uidocument.md) subclasses shouldn’t need to call this method directly, especially if the entire file is read at once. The default implementation calls [`load(fromContents:ofType:)`](./load%28fromcontents,oftype%29.md) on the queue on which [`open(completionHandler:)`](./open%28completionhandler%29.md) was called to provide the `UIDocument` subclass with the document data object.
 

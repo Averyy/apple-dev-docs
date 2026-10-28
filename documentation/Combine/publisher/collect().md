@@ -21,11 +21,11 @@ Collects all received elements, and emits a single array of the collection when 
 func collect() -> Publishers.Collect<Self>
 ```
 
-#### Return Value
+## Return Value
 
 A publisher that collects all received items and returns them as an array upon completion.
 
-#### Discussion
+## Discussion
 
 Use [`collect()`](./collect%28%29.md) to gather elements into an array that the operator emits after the upstream publisher finishes.
 

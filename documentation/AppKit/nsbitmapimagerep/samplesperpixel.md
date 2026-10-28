@@ -19,7 +19,7 @@ var samplesPerPixel: Int { get }
 @property (readonly) NSInteger samplesPerPixel;
 ```
 
-#### Discussion
+## Discussion
 
 This property reflects both the number of color components and the coverage component, if present.
 

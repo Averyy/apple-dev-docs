@@ -20,7 +20,7 @@ Creates a new machine learning pipeline state asynchronously.
 - (id<MTL4CompilerTask>) newMachineLearningPipelineStateWithDescriptor:(MTL4MachineLearningPipelineDescriptor *) descriptor completionHandler:(MTL4NewMachineLearningPipelineStateCompletionHandler) completionHandler;
 ```
 
-#### Return Value
+## Return Value
 
 A compiler task representing the asynchronous compilation task.
 

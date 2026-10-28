@@ -20,7 +20,7 @@ class NSCollectionViewLayout
 @interface NSCollectionViewLayout : NSObject
 ```
 
-#### Overview
+## Overview
 
 The job of a layout object is to perform the calculations needed to determine the placement and appearance of items, supplementary views, and other content in the collection view. The layout object does not apply the layout attributes it generates to the views in your interface. Instead, it passes those layout attributes to the collection view, which then creates the needed views and applies the layout attributes to them.
 
@@ -35,7 +35,7 @@ Collection views support many different types of elements, most of which are vis
 
 Each concrete layout object defines a specific organization for the contained elements and provides the appropriate layout attributes. The placement and appearance of items is determined entirely by the layout object. The [`NSCollectionViewFlowLayout`](./nscollectionviewflowlayout.md) and [`NSCollectionViewGridLayout`](./nscollectionviewgridlayout.md) subclasses define variants of a grid-based layout, but you can create custom layouts that arrange elements in different ways. For example, you might define a layout class that arranges items in a circle or define a class that groups items into stacks that resemble a pile of photos on a table.
 
-##### Subclassing Notes
+### Subclassing Notes
 
 Layout objects provide information about the position and visual state of elements in the collection view. When defining an `NSCollectionViewLayout` subclass, first have an idea for how items in your layout will appear onscreen. Layouts should provide a well-defined organization for their elements and should not morph between different organizations. If you want your collection view to change how it organizes elements, define separate layout objects for each organization and switch between them at runtime.
 
@@ -43,7 +43,7 @@ Remember that a layout object does not directly create the views for which it pr
 
 Your `NSCollectionViewLayout` subclass should be mostly self contained and should not rely on the collection view. Layout objects can retrieve the number of sections and items from the collection view, but you should not design layout objects that require knowledge of the data being displayed. The separation of the layout information from the displayed data offers flexibility and makes it easier to reuse layout objects.
 
-###### Methods to Override
+#### Methods to Override
 
 When defining a custom layout class, always override the following methods and properties:
 
@@ -68,7 +68,7 @@ In addition to the preceding methods, it is recommended that you implement sever
 - [`layoutAttributesForDropTarget(at:)`](./nscollectionviewlayout/layoutattributesfordroptarget%28at%29.md) (if your layout supports dropping content between items
 - [`layoutAttributesForInterItemGap(before:)`](./nscollectionviewlayout/layoutattributesforinteritemgap%28before%29.md) (if your layout supports dropping content in gaps between elements)
 
-###### Understanding the Layout Process
+#### Understanding the Layout Process
 
 Although the collection view drives the layout process, layout objects do all the work of calculating the layout information used during that process. The layout object acts as a semi-passive utility object, computing the location of elements and returning layout attributes only when asked to do so. Layout occurs when the collection view is first displayed and reoccurs whenever all or part of the layout is marked as invalid.
 
@@ -82,13 +82,13 @@ The [`prepare()`](./nscollectionviewlayout/prepare%28%29.md) method is your chan
 
 In addition to the [`layoutAttributesForElements(in:)`](./nscollectionviewlayout/layoutattributesforelements%28in%29.md) method, the collection view may call other methods to retrieve layout attributes for specific items. By performing your calculations in advance, your implementations of those methods should be able to return cached information without having to recompute that information first. The only time your layout object needs to recompute its layout information is when your app invalidates the layout. For example, you might invalidate the layout when the user inserts or deletes items.
 
-###### Adding Decoration Views to Your Layout
+#### Adding Decoration Views to Your Layout
 
 Layouts can use decoration views to create a specific visual appearance for the collection view’s content. Decoration views are fully configured visual elements that the layout object provides. When defining your own custom layout objects, you might use decoration views to provide a dynamic background or add visual styling in and around the items of the collection view. The layout object defines what decoration views are needed and registers an appropriate class or nib file for each view using the [`register(_:forDecorationViewOfKind:)`](./nscollectionviewlayout/register%28_,fordecorationviewofkind%29-44qmc.md) or [`register(_:forDecorationViewOfKind:)`](./nscollectionviewlayout/register%28_,fordecorationviewofkind%29-7z7uf.md) method.
 
 To create a decoration view, return an appropriate layout attributes object from your layout object’s  [`layoutAttributesForElements(in:)`](./nscollectionviewlayout/layoutattributesforelements%28in%29.md) method. When the collection view receives attributes for a decoration view, it creates that view using the class or nib file that your layout object registered. Because the collection view creates them, decoration views must be fully configured at registration time. You cannot add content to a decoration view or change its configuration later.
 
-###### Optimizing Layout Performance Using Invalidation Contexts
+#### Optimizing Layout Performance Using Invalidation Contexts
 
 When designing custom layouts, you can improve performance by updating only the portions of your layout that actually changed. The [`invalidateLayout()`](./nscollectionviewlayout/invalidatelayout%28%29.md) method forces the collection view to throw away all of its layout information and recompute it, which is inefficient if most of the layout has not changed. A better way to update your layout is using the [`invalidateLayout(with:)`](./nscollectionviewlayout/invalidatelayout%28with%29.md) method, which uses the provided context object to invalidate only the parts of the layout that changed.
 

@@ -25,7 +25,7 @@ func height(at point: CGPoint) -> Float
 - (float) heightAtPoint:(CGPoint) point;
 ```
 
-#### Return Value
+## Return Value
 
 A floating-point number between `0.0` and `1.0` that specifies the height of the pin. A value of `0.0` indicates that the pin is completely lowered, and a value of `1.0` indicates that the pin is completely raised.
 

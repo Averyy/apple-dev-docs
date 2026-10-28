@@ -24,7 +24,7 @@ static let timeInDaylight: HKQuantityTypeIdentifier
 extern HKQuantityTypeIdentifier const HKQuantityTypeIdentifierTimeInDaylight;
 ```
 
-#### Discussion
+## Discussion
 
 These samples use time units (described in [`HKUnit`](../hkunit.md)) and measure cumulative values (described in [`HKQuantityAggregationStyle`](../hkquantityaggregationstyle.md)).
 

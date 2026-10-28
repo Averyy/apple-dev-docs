@@ -21,11 +21,11 @@ func provideNewView(_ initialRequest: Bool) -> NSView
 - (NSView *) provideNewView:(BOOL) initialRequest;
 ```
 
-#### Return Value
+## Return Value
 
 The view containing the color picker’s user interface. The `NSView` returned by this method should be set to automatically resize both its width and height.
 
-#### Discussion
+## Discussion
 
 This message is sent to the color picker whenever the color panel attempts to display it. This may be when the panel is first presented, when the user switches pickers, or when the picker is switched through an API.
 

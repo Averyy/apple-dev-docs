@@ -16,11 +16,11 @@ Obtains the default value of an element in a transaction.
 IOReturn (*getElementDefault)(void *self, IOHIDElementCookie elementCookie, IOHIDEventStruct *outValueEvent);
 ```
 
-#### Return Value
+## Return Value
 
 Returns an IOReturn code.
 
-#### Discussion
+## Discussion
 
 An error will be returned if the element has not been added to the transaction.
 

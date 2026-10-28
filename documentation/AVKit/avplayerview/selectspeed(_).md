@@ -19,7 +19,7 @@ func selectSpeed(_ speed: AVPlaybackSpeed)
 - (void) selectSpeed:(AVPlaybackSpeed *) speed;
 ```
 
-#### Discussion
+## Discussion
 
 If you call this method with a speed that isn’t contained in the [`speeds`](./speeds.md) property, the system ignores the call.
 

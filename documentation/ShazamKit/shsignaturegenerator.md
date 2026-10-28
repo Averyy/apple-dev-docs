@@ -29,7 +29,7 @@ class SHSignatureGenerator
 
 - [Generating a signature from an audio buffer](./generating-a-signature-from-an-audio-buffer.md)
 
-#### Overview
+## Overview
 
 Create both reference and query signatures using this class.
 

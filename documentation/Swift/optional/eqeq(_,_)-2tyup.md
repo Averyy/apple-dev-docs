@@ -21,7 +21,7 @@ Returns a Boolean value indicating whether the left-hand-side argument is `nil`.
 static func == (lhs: borrowing Wrapped?, rhs: _OptionalNilComparisonType) -> Bool
 ```
 
-#### Discussion
+## Discussion
 
 You can use this equal-to operator (`==`) to test whether an optional instance is `nil` even when the wrapped value’s type does not conform to the `Equatable` protocol.
 

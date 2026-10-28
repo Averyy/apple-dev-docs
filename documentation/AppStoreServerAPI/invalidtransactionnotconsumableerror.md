@@ -21,7 +21,7 @@ object InvalidTransactionNotConsumableError
 
 - [App Store Server API changelog](./app-store-server-api-changelog.md)
 
-#### Discussion
+## Discussion
 
 The system no longer sends this error.
 

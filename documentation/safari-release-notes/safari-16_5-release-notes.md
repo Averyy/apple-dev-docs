@@ -5,24 +5,24 @@
 
 Released May 18, 2023 — Version 16.5 (18615.2.9)
 
-#### Overview
+## Overview
 
 Safari 16.5 is available for macOS Big Sur, macOS Monterey, macOS Ventura, iPadOS 16.5, and iOS 16.5.
 
-#### Apple Pay
+## Apple Pay
 
-##### New Features
+### New Features
 
 - Added support for pre-orders and deferred payments.
 
-#### CSS
+## CSS
 
-##### New Features
+### New Features
 
 - Added support for CSS Nesting.
 - Added support for `:user-valid` and `:user-invalid`.
 
-##### Resolved Issues
+### Resolved Issues
 
 - Fixed Scroll to Text Fragment sometimes scrolling to the top after reloading the page.
 - Fixed support for `x` resolution unit in `calc()`.
@@ -34,83 +34,83 @@ Safari 16.5 is available for macOS Big Sur, macOS Monterey, macOS Ventura, iPadO
 - Fixed new CSS property unexpectedly dropped from an empty CSS rule when tabbing through or editing a selector.
 - Fixed: Made `-webkit-image-set()` an alias of `image-set()`.
 
-#### Editing & Forms
+## Editing & Forms
 
-##### Resolved Issues
+### Resolved Issues
 
 - Fixed hairline on the selection of bidi text.
 - Fixed photo library picker showing videos for `accept="image/*"`.
 
-#### JavaScript
+## JavaScript
 
-##### Resolved Issues
+### Resolved Issues
 
 - Updated digital display in `Intl.DurationFormat` to match spec changes.
 
-#### Layout
+## Layout
 
-##### Resolved Issues
+### Resolved Issues
 
 - Fixed text wrapping for bidi text when line-breaking.
 
-#### Lockdown Mode
+## Lockdown Mode
 
-##### New Restrictions
+### New Restrictions
 
 - Disabled WebCodecs API
 
-#### Media
+## Media
 
-##### Resolved Issues
+### Resolved Issues
 
 - Fixed non-audible AudioContext preventing the audio session to change from play-and-record after stopping capture.
 - Fixed handling video streams containing a `CodecDelay` value that caused an audible pop at the beginning of video playback.
 - Fixed video freezing in a video conference when removing AirPods Pro during the call.
 
-#### Scrolling
+## Scrolling
 
-##### Resolved Issues
+### Resolved Issues
 
 - Fixed snapping to the last snap position when performing layout when scroll snapping occurs with a physical mouse wheel.
 - Fixed pinch-to-zoom when toggling on and off scroll snapping.
 - Fixed scroll snapping jumping to the previous page when swiping to the next page.
 - Fixed scroll snapping to work with a physical scroll wheel on a mouse.
 
-#### Rendering
+## Rendering
 
-##### Resolved Issues
+### Resolved Issues
 
 - Fixed form controls rendering.
 - Fixed visual updates for `content: counter()` when `position: absolute` is set.
 - Fixed an unexpected visible first frame of a `transform` animation when `!important` style overrides the animated value.
 
-#### Web API
+## Web API
 
-##### Resolved Issues
+### Resolved Issues
 
 - Fixed filling metadata headers for preflight requests.
 - Fixed OffscreenCanvas WebGL to fire the context lost event.
 - Fixed `getFileHandle()` to return a TypeMismatchError on unexpected entry type.
 
-#### Web Apps
+## Web Apps
 
-##### Resolved Issues
+### Resolved Issues
 
 - Fixed “Untitled” label on the back to previous app button when opening a web app via a link.
 
-#### Web Assembly
+## Web Assembly
 
-##### Resolved Issues
+### Resolved Issues
 
 - Fixed WASM SIMD breaking WebP decoding applications.
 
-#### Web Inspector
+## Web Inspector
 
-##### New Features
+### New Features
 
 - Added initial support for `color-mix` CSS values.
 
-##### Resolved Issues
+### Resolved Issues
 
 - Fixed element `::backdrop` rules showing up without a backdrop.
 - Fixed “Selected element” console entry filling an entire row.

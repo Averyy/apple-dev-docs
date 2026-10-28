@@ -17,7 +17,7 @@ Applies the HardTanh function.
 func hardTanH(_ x: MLXArray, min: Float = -1, max: Float = 1) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 This is (element-wise):
 

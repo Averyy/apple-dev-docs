@@ -24,7 +24,7 @@ class func paymentShippingAddressUnserviceableError(withLocalizedDescription loc
 + (NSError *) paymentShippingAddressUnserviceableErrorWithLocalizedDescription:(NSString *) localizedDescription;
 ```
 
-#### Discussion
+## Discussion
 
 You can use this convenience method to create a payment error object instead of creating an [`NSError`](../../Foundation/nserror.md) object yourself.  This method indicates that the address received from the Apple Pay sheet is unserviceable.
 

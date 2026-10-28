@@ -21,7 +21,7 @@ var maxNumberOfRows: Int { get set }
 @property NSUInteger maxNumberOfRows;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is `0`, the collection view has no maximum number of rows. The default value of this property is `0`.
 

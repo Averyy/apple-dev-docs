@@ -25,7 +25,7 @@ func strokePath()
 extern void CGContextStrokePath(CGContextRef c);
 ```
 
-#### Discussion
+## Discussion
 
 The line width and stroke color of the context’s graphics state are used to paint the path. The current path is cleared as a side effect of calling this function.
 

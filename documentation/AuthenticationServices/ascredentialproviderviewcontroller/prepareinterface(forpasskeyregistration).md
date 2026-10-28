@@ -23,7 +23,7 @@ func prepareInterface(forPasskeyRegistration registrationRequest: any ASCredenti
 - (void) prepareInterfaceForPasskeyRegistration:(id<ASCredentialRequest>) registrationRequest;
 ```
 
-#### Discussion
+## Discussion
 
 The system calls this method when the user selects your extension to create a passkey. Your app and extension must declare the key [`ProvidesPasskeys`](../../BundleResources/information-property-list/nsextension/nsextensionattributes/ascredentialproviderextensioncapabilities/providespasskeys.md) with value `YES` in the [`ASCredentialProviderExtensionCapabilities`](../../BundleResources/information-property-list/nsextension/nsextensionattributes/ascredentialproviderextensioncapabilities.md) dictionaries of their information property lists to be available for the user to select. The system presents your extension’s authentication user interface before creating the passkey.
 

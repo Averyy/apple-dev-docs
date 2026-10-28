@@ -21,7 +21,7 @@ Adds a path to the context’s array of clip shapes.
 mutating func clip(to path: Path, style: FillStyle = FillStyle(), options: GraphicsContext.ClipOptions = ClipOptions())
 ```
 
-#### Discussion
+## Discussion
 
 Call this method to add a shape to the array of clip shapes that the context uses to define a clipping mask. Shapes that you add affect only subsequent drawing operations.
 

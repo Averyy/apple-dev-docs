@@ -25,7 +25,7 @@ var expectedDepartureDate: Date { get }
 @property (nonatomic, readonly) NSDate * expectedDepartureDate;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is dependent on whether you specify a departure date or arrival date in your [`MKDirections.Request`](../request.md) object. If you specify a departure date, the framework copies that date to this property. If you specify an arrival date, but not a departure date, the framework computes the departure date by subtracting the expected travel time from your arrival date. If you don’t specify an arrival date or departure date, the framework sets this property to the current time.
 

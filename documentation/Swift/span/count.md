@@ -21,7 +21,7 @@ The number of elements in the span.
 var count: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 To check whether the span is empty, use its `isEmpty` property instead of comparing `count` to zero.
 

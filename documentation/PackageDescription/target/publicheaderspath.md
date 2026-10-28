@@ -12,7 +12,7 @@ The path to the directory that contains public headers of a C-family target.
 final var publicHeadersPath: String?
 ```
 
-#### Discussion
+## Discussion
 
 If this is `nil`, the directory is set to `include`.
 

@@ -10,7 +10,7 @@ Generate 3D objects from images using RealityKit Object Capture.
 - macOS 13.0+
 - Xcode 15.2+
 
-#### Overview
+## Overview
 
 > **Note**: This sample code project is associated with WWDC21 session [10076: Create 3D Models with Object Capture](https://developer.apple.com/wwdc21/10076/).
 

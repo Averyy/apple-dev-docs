@@ -23,7 +23,7 @@ let kVTCompressionPropertyKey_MVHEVCViewIDs: CFString
 extern CFStringRef const kVTCompressionPropertyKey_MVHEVCViewIDs;
 ```
 
-#### Discussion
+## Discussion
 
 This property is specific to MV-HEVC.
 

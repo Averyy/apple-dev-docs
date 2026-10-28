@@ -15,7 +15,7 @@ Indicates to the system that the extension has completed an asynchronous request
 virtual void ParallelTaskCompletion(OSAction *action, SCSIUserParallelResponse response);
 ```
 
-#### Discussion
+## Discussion
 
 Your driver extension class invokes this method to complete an asynchronous request.
 

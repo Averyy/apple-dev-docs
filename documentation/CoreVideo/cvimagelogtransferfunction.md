@@ -21,7 +21,7 @@ Identifies the specific log curve transfer function or gamma of the content.
 enum CVImageLogTransferFunction
 ```
 
-#### Overview
+## Overview
 
 Log is a specific video format usually processed in a camera’s ISP. A Log video format usually defines:
 

@@ -5,11 +5,11 @@
 
 Publish elements periodically by using a timer.
 
-#### Overview
+## Overview
 
 If your app uses Foundation’s [`Timer`](../Foundation/timer.md) class to repeatedly receive a callback or invoke a closure on a specified interval, you can convert these instances to Combine to simplify your code.
 
-##### Performing Periodic Work with a Timer
+### Performing Periodic Work with a Timer
 
 Consider the following snippet, which uses [`scheduledTimer(withTimeInterval:repeats:block:)`](../Foundation/timer/scheduledtimer%28withtimeinterval,repeats,block%29.md) to update the `lastUpdated` property of a data model once a second, on a specific dispatch queue:
 
@@ -25,7 +25,7 @@ override func viewDidLoad() {
 }
 ```
 
-##### Converting to a Timer Publisher
+### Converting to a Timer Publisher
 
 To migrate this code to Combine, replace the [`Timer`](../Foundation/timer.md) that is returned by [`scheduledTimer(withTimeInterval:repeats:block:)`](../Foundation/timer/scheduledtimer%28withtimeinterval,repeats,block%29.md) with a [`Timer.TimerPublisher`](../Foundation/timer/timerpublisher.md). You create this publisher with the [`Timer`](../Foundation/timer.md) method [`publish(every:tolerance:on:in:options:)`](../Foundation/timer/publish%28every,tolerance,on,in,options%29.md). Every time the underyling [`Timer`](../Foundation/timer.md) fires, the publisher emits a new [`Date`](../Foundation/date.md) that represents the instant the timer fired. You then apply Combine operators to the [`Date`](../Foundation/date.md), eventually connecting the publisher to a subscriber like [`sink(receiveValue:)`](./publisher/sink%28receivevalue%29.md) or [`assign(to:on:)`](./publisher/assign%28to,on%29.md).
 

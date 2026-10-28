@@ -22,7 +22,7 @@ nonisolated
 func accessibilityLabel<V>(@ContentBuilder content: (PlaceholderContentView<Self>) -> V) -> some View where V : View
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to append content to the accessibility label for a view. For example, you could use this method to label a badge or alert that is custom drawn without removing the existing accessibility label.
 

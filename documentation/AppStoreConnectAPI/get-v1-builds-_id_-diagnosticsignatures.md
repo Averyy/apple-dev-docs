@@ -14,11 +14,11 @@ List the aggregate backtrace signatures captured for a specific build.
 - [App Store Connect API 3.5 release notes](./app-store-connect-api-3-5-release-notes.md)
 - [App Store Connect API 2.0 release notes](./app-store-connect-api-2-0-release-notes.md)
 
-#### Discussion
+## Discussion
 
 The example below requests the top two weighted disk write diagnostic signatures. The example response returns two signatures that are responsible for 85% and 7% of disk writes.
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

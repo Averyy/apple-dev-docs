@@ -22,7 +22,7 @@ var automaticallyAdjustsVideoHDREnabled: Bool { get set }
 @property (nonatomic) BOOL automaticallyAdjustsVideoHDREnabled;
 ```
 
-#### Discussion
+## Discussion
 
 By default, this value is `true`, and a capture device automatically enables [`isVideoHDREnabled`](./isvideohdrenabled.md) if it’s a good fit for the active format.
 

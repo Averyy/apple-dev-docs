@@ -21,7 +21,7 @@ Exchange the elements at the two given indices.
 mutating func swapAt(unchecked i: OutputSpan<Element>.Index, unchecked j: OutputSpan<Element>.Index)
 ```
 
-#### Discussion
+## Discussion
 
 This function does not validate `i` or `j`; this is an unsafe operation.
 

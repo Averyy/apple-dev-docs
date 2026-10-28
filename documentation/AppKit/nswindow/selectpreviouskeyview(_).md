@@ -19,7 +19,7 @@ func selectPreviousKeyView(_ sender: Any?)
 - (void) selectPreviousKeyView:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 The candidate is one of the following (which this function searches for in this order):
 

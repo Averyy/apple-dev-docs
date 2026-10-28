@@ -21,7 +21,7 @@ Reports a transition to a new state.
 - (void) reportTransitionToStateLabel:(NSString *) stateLabel stableMetadata:(NSDictionary<NSString *,NSObject *> *) stableMetadata volatileMetadata:(NSDictionary<NSString *,NSObject *> *) volatileMetadata;
 ```
 
-#### Discussion
+## Discussion
 
 A transition occurs only when `stateLabel` or `stableMetadata` changes from the current state. If both are equal to the current values, this call is a no-op. Pass `nil` for `stateLabel` to indicate that no state is currently active, clearing any previously reported state. Any volatile metadata from the previous state is discarded when a new transition begins. Calling this method more frequently than user interaction timescales can trigger rate limiting, causing state updates to go unlogged.
 

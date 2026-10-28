@@ -23,7 +23,7 @@ class PKToolPickerInkingItem
 @interface PKToolPickerInkingItem : PKToolPickerItem
 ```
 
-#### Overview
+## Overview
 
 An inking item represents a [`PKInkingTool`](./pkinkingtool-swift.struct.md) — a tool for drawing marks in a canvas view — in a [`PKToolPicker`](./pktoolpicker.md).
 

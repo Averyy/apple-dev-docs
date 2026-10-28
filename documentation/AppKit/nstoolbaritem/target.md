@@ -22,7 +22,7 @@ weak var target: AnyObject? { get set }
 @property (weak, nullable) id target;
 ```
 
-#### Discussion
+## Discussion
 
 If you set this property to `nil`, the toolbar item attempts to execute its action method on the first responder. If the first responder doesn’t implement the action method, it forwards the request up the responder chain.
 

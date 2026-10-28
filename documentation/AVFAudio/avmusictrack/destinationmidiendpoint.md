@@ -23,7 +23,7 @@ var destinationMIDIEndpoint: MIDIEndpointRef { get set }
 @property (nonatomic) MIDIEndpointRef destinationMIDIEndpoint;
 ```
 
-#### Discussion
+## Discussion
 
 This property and a [`destinationAudioUnit`](./destinationaudiounit.md) are mutually exclusive. Setting this property removes the track’s reference to an [`AVAudioUnit`](../avaudiounit.md) destination. When playing, the track sends events to the MIDI endpoint. For more information, see [`MIDIDestinationCreate(_:_:_:_:_:)`](../../CoreMIDI/mididestinationcreate%28_,_,_,_,_%29.md). You can’t change the endpoint while the track’s sequence is in a playing state.
 

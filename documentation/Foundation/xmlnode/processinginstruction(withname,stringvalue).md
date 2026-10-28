@@ -20,11 +20,11 @@ class func processingInstruction(withName name: String, stringValue: String) -> 
 + (id) processingInstructionWithName:(NSString *) name stringValue:(NSString *) stringValue;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSXMLNode` object  of kind [`XMLNode.Kind.processingInstruction`](./kind-swift.enum/processinginstruction.md) or `nil` if the object couldn’t be created.
 
-#### Discussion
+## Discussion
 
 The equivalent XML markup is `<?``name` `value``?>`.
 

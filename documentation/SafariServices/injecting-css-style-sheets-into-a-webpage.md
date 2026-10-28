@@ -5,13 +5,13 @@
 
 Add to or override styles by injecting CSS style sheets into webpages.
 
-#### Overview
+## Overview
 
 After you write a style sheet that can modify page presentation, you need to add it to your Safari app extension and apply it to webpages.
 
 A style sheet can apply to a single webpage, all webpages, or only some webpages — for example, webpages from certain domains. To inject your style sheet, you specify either `Some` or `All` website access for your app extension. In Safari 17 or later, users also need to grant your extension access to a website. For more information, see [Adjusting website access permissions](./adjusting-website-access-permissions.md). For more information about injected style sheets, see [Using injected style sheets and scripts](./using-injected-style-sheets-and-scripts.md).
 
-##### Add a style sheet
+### Add a style sheet
 
 After specifying website access, add the style sheet to your Safari app extension.
 

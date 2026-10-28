@@ -23,7 +23,7 @@ var tintColor: UIColor! { get set }
 @property (nonatomic, strong, null_resettable) UIColor * tintColor;
 ```
 
-#### Discussion
+## Discussion
 
 Assigning a value to this property applies the specified color only to the tab bar’s items. Even if you do not specify a color, the tab bar may tint items using the tint color of one of its ancestor views. For information on how tinting colors are applied to views in a view hierarchy, see the description of the [`tintColor`](../uiview/tintcolor.md) property in [`UIView`](../uiview.md).
 

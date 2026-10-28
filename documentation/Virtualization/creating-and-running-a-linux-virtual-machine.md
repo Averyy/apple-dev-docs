@@ -5,7 +5,7 @@
 
 Design and run custom Linux guests on Apple silicon or Intel-based Mac Computers.
 
-#### Overview
+## Overview
 
 Running a Linux virtual machine (VM) is an additive process that starts with selecting a Linux distribution and obtaining Linux kernel and RAM disk images, and ends with instantiating and running the Linux VM on the user’s computer.
 
@@ -13,7 +13,7 @@ There many Linux distributions to choose from, select one that both meets your a
 
 Finally, after creating a suitable [`VZVirtualMachineConfiguration`](./vzvirtualmachineconfiguration.md), you’ll use a [`VZLinuxBootLoader`](./vzlinuxbootloader.md) to launch your VM and a [`VZVirtualMachine`](./vzvirtualmachine.md) instance to control it.
 
-##### Obtain the Kernel and RAM Disk Images
+### Obtain the Kernel and RAM Disk Images
 
 You can obtain images for many Linux distributions, including [Ubuntu Linux](https://cloud-images.ubuntu.com/releases/hirsute/release/unpacked/). Most Linux distributions provide downloadable kernel and RAM disk images that can run on Mac computers; however, you’ll need to download images for your specific CPU:
 
@@ -28,7 +28,7 @@ Some Linux distributions store kernel images in a compressed format, sometimes i
 
 You can include the Linux kernel and RAM disk as resources in your Xcode project for use in your app, or implement a custom solution that allows the user to download and save images over the network.
 
-##### Set Up the Linux VM Configuration
+### Set Up the Linux VM Configuration
 
 Configure a [`VZVirtualMachineConfiguration`](./vzvirtualmachineconfiguration.md) with the number of CPUs and amount of memory you want to use with your VM:
 
@@ -52,7 +52,7 @@ virtualMachineConfiguration.CPUCount = 2;
 virtualMachineConfiguration.memorySize = 2 * 1024 * 1024 * 1024;
 ```
 
-##### Add Devices to Your VM
+### Add Devices to Your VM
 
 Next, you’ll need to decide what devices your Linux VM needs. Because you can’t change or add devices to a running VM, consider what devices you’ll need to support your app’s use cases and add them to the VM’s configuration. For example, if you need:
 
@@ -102,7 +102,7 @@ virtualMachineConfiguration.audioDevices = @[ outputSoundDevice, inputSoundDevic
 
 For more information on devices that Linux guests can support, see the Devices section on the [Virtualization](./Virtualization.md) framework.
 
-##### Create a Boot Loader
+### Create a Boot Loader
 
 Create an instance of a [`VZLinuxBootLoader`](./vzlinuxbootloader.md) on the `VZVirtualMachineConfiguration` with a Linux kernel and a RAM disk that you load from locations on disk:
 
@@ -136,7 +136,7 @@ virtualMachineConfiguration.bootLoader = bootLoader;
 assert([virtualMachineConfiguration validateWithError:NULL]);
 ```
 
-##### Instantiate and Run the Linux VM
+### Instantiate and Run the Linux VM
 
 Instantiate a [`VZVirtualMachine`](./vzvirtualmachine.md) from the `VZVirtualMachineConfiguration` that you use to start, stop, and control your Linux guest:
 

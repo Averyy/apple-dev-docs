@@ -25,7 +25,7 @@ var minimumFractionDigits: Int { get set }
 @property NSUInteger minimumFractionDigits;
 ```
 
-#### Discussion
+## Discussion
 
 By default, this property is set to `0`.
 

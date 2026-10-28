@@ -9,9 +9,9 @@ Returns an array of addresses present at the coordinates you provide.
 **Availability**:
 - Apple Maps Server API 1.2+
 
-#### Discussion
+## Discussion
 
-##### Example
+### Example
 
 **Request**:
 

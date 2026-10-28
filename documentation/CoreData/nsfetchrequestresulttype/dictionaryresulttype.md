@@ -25,7 +25,7 @@ static var dictionaryResultType: NSFetchRequestResultType { get }
 NSDictionaryResultType
 ```
 
-#### Discussion
+## Discussion
 
 See also [`includesPendingChanges`](../nsfetchrequest/includespendingchanges.md) and [`propertiesToFetch`](../nsfetchrequest/propertiestofetch.md).
 

@@ -16,11 +16,11 @@ Get the 32-bit value returned on the last compare swap operation.
 IOReturn (*Locked)(IOFireWireLibCompareSwapCommandRef self, UInt32 *oldValue);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnBadArgument if the last compare swap operation performed was 64-bit.
 
-#### Discussion
+## Discussion
 
 Available in v2 and newer.
 

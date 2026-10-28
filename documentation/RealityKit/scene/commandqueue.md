@@ -21,7 +21,7 @@ If this scene uses a MTLCommandQueue for rendering, returns it.
 @preconcurrency var commandQueue: (any MTLCommandQueue)? { get }
 ```
 
-#### Discussion
+## Discussion
 
 You use this command queue for GPU workloads that need consistent ordering relative to RealityKit’s scene rendering.
 

@@ -22,11 +22,11 @@ Decodes a nested container and returns a `Decoder` instance for decoding `super`
 mutating func superDecoder() throws -> any Decoder
 ```
 
-#### Return Value
+## Return Value
 
 A new `Decoder` to pass to `super.init(from:)`.
 
-#### Discussion
+## Discussion
 
 > **Throws**: `DecodingError.valueNotFound` if the encountered encoded value is null, or of there are no more values to decode.
 

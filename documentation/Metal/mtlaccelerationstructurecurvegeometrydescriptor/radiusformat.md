@@ -24,7 +24,7 @@ var radiusFormat: MTLAttributeFormat { get set }
 @property (nonatomic) MTLAttributeFormat radiusFormat;
 ```
 
-#### Discussion
+## Discussion
 
 The property’s default value is [`MTLAttributeFormat.float`](../mtlattributeformat/float.md).
 

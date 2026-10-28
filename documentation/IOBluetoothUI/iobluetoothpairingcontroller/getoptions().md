@@ -19,11 +19,11 @@ func getOptions() -> IOBluetoothServiceBrowserControllerOptions
 - (IOBluetoothServiceBrowserControllerOptions) getOptions;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the option bits set by setOptions:
 
-#### Discussion
+## Discussion
 
 NOTE: This method is only available in macOS 10.2.4 (Bluetooth v1.1) or later.
 

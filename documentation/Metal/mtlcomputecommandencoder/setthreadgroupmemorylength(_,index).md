@@ -25,7 +25,7 @@ func setThreadgroupMemoryLength(_ length: Int, index: Int)
 - (void) setThreadgroupMemoryLength:(NSUInteger) length atIndex:(NSUInteger) index;
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  The sum of all threadgroup memory allocations (whether made using this method or directly in the shader) can’t exceed the device limits for threadgroup memory. Check threadgroup memory limits with the [`staticThreadgroupMemoryLength`](../mtlcomputepipelinestate/staticthreadgroupmemorylength.md) property.
 

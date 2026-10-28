@@ -29,7 +29,7 @@ func handle(intent: INUpdateMediaAffinityIntent) async -> INUpdateMediaAffinityI
 - (void) handleUpdateMediaAffinity:(INUpdateMediaAffinityIntent *) intent completion:(void (^)(INUpdateMediaAffinityIntentResponse *response)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to update the affinity for the media item.
 

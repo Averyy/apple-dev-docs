@@ -24,7 +24,7 @@ func VTCompressionSessionPrepareToEncodeFrames(_ session: VTCompressionSession) 
 extern OSStatus VTCompressionSessionPrepareToEncodeFrames(VTCompressionSessionRef session);
 ```
 
-#### Discussion
+## Discussion
 
 If this function isn’t called, any necessary resources are allocated on the first [`VTCompressionSessionEncodeFrame(_:imageBuffer:presentationTimeStamp:duration:frameProperties:sourceFrameRefcon:infoFlagsOut:)`](./vtcompressionsessionencodeframe%28_,imagebuffer,presentationtimestamp,duration,frameproperties,sourceframerefcon,infoflagsout%29.md) call.
 

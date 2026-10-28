@@ -21,7 +21,7 @@ Recalculates the element-wise single-precision linear average of an existing vec
 extern void vDSP_vavlin(const float *__A, vDSP_Stride __IA, const float *__B, float *__C, vDSP_Stride __IC, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 This function recalculates the single-precision linear average of an existing vector to include a second vectors, using the following operation:
 

@@ -15,11 +15,11 @@ virtual IOReturn newUserClient(
  IOUserClient **handler);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess on success. May also result kIOReturnError or kIOReturnNoMemory.
 
-#### Overview
+## Overview
 
 This is called automatically by I/O Kit when a user process opens a connection to this IOAudioControl. This is typically done when the user process needs to register for value change notifications. This implementation allocates a new IOAudioControlUserClient object. There is no need to call this directly. A derived class that requires overriding of newUserClient should override the version with the properties parameter for Intel targets, and without the properties parameter for PPC targets. The #if __i386__ directive can be used to select between the two behaviors.
 

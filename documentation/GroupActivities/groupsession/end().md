@@ -24,7 +24,7 @@ final func end()
 
 - [Joining and managing a shared activity](../joining-and-managing-a-shared-activity.md)
 
-#### Discussion
+## Discussion
 
 Call this method to end the activity for all participants. When you call this method, the session transitions to the [`GroupSession.State.invalidated(reason:)`](./state-swift.enum/invalidated%28reason%29.md) state and stops the delivery of session-related updates. After ending the session, you can’t join it again.
 

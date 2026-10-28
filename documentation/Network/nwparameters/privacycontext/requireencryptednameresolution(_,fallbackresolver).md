@@ -21,7 +21,7 @@ Requires that any DNS name resolution for connections associated with this conte
 func requireEncryptedNameResolution(_ requireEncryption: Bool, fallbackResolver: NWParameters.PrivacyContext.ResolverConfiguration?)
 ```
 
-#### Discussion
+## Discussion
 
 Connections that use iCloud Private Relay automatically use encrypted name resolution. When active, name resolution uses iCloud Private Relay instead of the `fallbackResolver`.
 

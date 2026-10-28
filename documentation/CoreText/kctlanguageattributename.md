@@ -25,7 +25,7 @@ let kCTLanguageAttributeName: CFString
 extern CFStringRef const kCTLanguageAttributeName;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this attribute must be a [`CFString`](../CoreFoundation/cfstring.md) containing a language identifier conforming to [UTS #35](http://unicode.org/reports/tr35/). The default is unset. When this attribute is set to a valid identifier, it will be used to select localized glyphs (if supported by the font), and locale-specific line-breaking rules.
 

@@ -25,7 +25,7 @@ The platform on which to run the provider.
 @preconcurrency static var platform: PreviewPlatform? { get }
 ```
 
-#### Discussion
+## Discussion
 
 Xcode infers the platform for a preview based on the currently selected target. If you have a multiplatform target and want to suggest a particular target for a preview, implement the `platform` computed property to provide a hint, and specify one of the [`PreviewPlatform`](../previewplatform.md) values:
 

@@ -16,7 +16,7 @@ A string specifying the manner in which line joins are drawn.
 attribute DOMString lineJoin;
 ```
 
-#### Discussion
+## Discussion
 
 A join exists at any point in a subpath shared by two consecutive lines. When a subpath is closed, then a join also exists at its first point (equivalent to its last point) connecting the first and last lines in the subpath.
 

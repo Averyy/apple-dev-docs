@@ -19,7 +19,7 @@ func compositionAttributes(at range: NSRange) -> NSMutableDictionary!
 - (NSMutableDictionary *) compositionAttributesAtRange:(NSRange) range;
 ```
 
-#### Return Value
+## Return Value
 
 The dictionary of text attributes. The default implementation returns an empty dictionary.
 

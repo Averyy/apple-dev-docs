@@ -15,7 +15,7 @@ Get the held state of this accessory anchor.
 extern ar_accessory_chirality_t ar_accessory_anchor_get_held_chirality(ar_accessory_anchor_t accessory_anchor);
 ```
 
-#### Return Value
+## Return Value
 
 Which hand the accessory is being held in, or unknown.
 

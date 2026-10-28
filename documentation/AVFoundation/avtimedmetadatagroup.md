@@ -29,7 +29,7 @@ class AVTimedMetadataGroup
 
 - [Presenting chapter markers](./presenting-chapter-markers.md)
 
-#### Overview
+## Overview
 
 For example, `AVTimedMetadataGroups` are used to represent chapters, optionally containing metadata items for chapter titles and chapter images.
 

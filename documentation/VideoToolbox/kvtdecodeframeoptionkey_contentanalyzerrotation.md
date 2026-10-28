@@ -22,7 +22,7 @@ let kVTDecodeFrameOptionKey_ContentAnalyzerRotation: CFString
 extern CFStringRef const kVTDecodeFrameOptionKey_ContentAnalyzerRotation;
 ```
 
-#### Discussion
+## Discussion
 
 Clockwise rotation (one of 0, 90, 180, 270) to be applied for proper display orientation.
 

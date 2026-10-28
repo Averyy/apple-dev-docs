@@ -24,7 +24,7 @@ enum HKCategoryValueCervicalMucusQuality
 enum HKCategoryValueCervicalMucusQuality : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 These values are ordered from least-fertile (Dry) to most-fertile (EggWhite).
 

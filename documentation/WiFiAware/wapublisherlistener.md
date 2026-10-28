@@ -17,7 +17,7 @@ Configures a network listener to publish a service over Wi-Fi Aware and accept i
 struct WAPublisherListener
 ```
 
-#### Overview
+## Overview
 
 Devices can publish services for other Wi-Fi Aware devices to use by creating a `NetworkListener` object from the [Network](../Network/Network.md) framework, and passing in a `.wifiAware()` instruction indicating the `WAPublishableService` to provide, and the set of `WAPairedDevice` that can connect to the service. The code below configures the `NetworkListener` as a Wi-Fi Aware publisher by passing in a `.wifiAware()` instruction:
 

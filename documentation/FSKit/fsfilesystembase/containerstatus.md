@@ -21,7 +21,7 @@ var containerStatus: FSContainerStatus { get set }
 @property (copy) FSContainerStatus * containerStatus;
 ```
 
-#### Discussion
+## Discussion
 
 A file system container starts in the [`FSContainerState.notReady`](../fscontainerstate/notready.md) state, and then transitions to the other values of the [`FSContainerState`](../fscontainerstate.md) enumeration. The following diagram illustrates the possible state transitions.
 

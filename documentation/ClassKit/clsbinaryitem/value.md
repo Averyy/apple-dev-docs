@@ -23,7 +23,7 @@ var value: Bool { get set }
 @property (nonatomic, assign) BOOL value;
 ```
 
-#### Discussion
+## Discussion
 
 Interpret this value according to the binary activity item’s [`valueType`](./valuetype.md). For example, if the value type is set to [`CLSBinaryValueType.passFail`](../clsbinaryvaluetype/passfail.md), then false means fail, and true means pass.
 

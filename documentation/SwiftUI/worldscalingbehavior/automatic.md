@@ -15,7 +15,7 @@ The scaling behavior that is standard for the window’s style.
 static var automatic: WorldScalingBehavior { get }
 ```
 
-#### Discussion
+## Discussion
 
 By default, regular [`WindowGroup`](../windowgroup.md) windows have dynamic scaling, while windows with a [`volumetric`](../windowstyle/volumetric.md) window style use fixed scaling.
 

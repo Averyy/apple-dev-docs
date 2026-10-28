@@ -25,7 +25,7 @@ func commit()
 
 - [Hosting browser view layers in the rendering extension](../hosting-browser-view-layers-in-the-rendering-extension.md)
 
-#### Discussion
+## Discussion
 
 In all processes that share a transaction coordinator instance, call this method as the last interaction with the instance.
 

@@ -15,7 +15,7 @@ Gets a string that identifies the current revision in response to a call from th
 virtual kern_return_t GetRevisionString(struct DeviceString *revision);
 ```
 
-#### Return Value
+## Return Value
 
 A value that indicates the get-revision-string result. Return [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) to inidicate success. To indicate a failure, see [IOKit Constants](../../iokit/iokit_constants.md) for error definitions.
 

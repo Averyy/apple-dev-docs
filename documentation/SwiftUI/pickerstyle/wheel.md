@@ -22,7 +22,7 @@ static var wheel: WheelPickerStyle { get }
 
 Available when `Self` is `WheelPickerStyle`.
 
-#### Discussion
+## Discussion
 
 Because most options aren’t visible, organize them in a predictable order, such as alphabetically.
 

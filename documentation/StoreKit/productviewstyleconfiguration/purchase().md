@@ -21,7 +21,7 @@ Initiates a purchase action for the product.
 func purchase()
 ```
 
-#### Discussion
+## Discussion
 
 Use this method instead of calling [`purchase(options:)`](../product/purchase%28options%29.md)directly on the product.
 

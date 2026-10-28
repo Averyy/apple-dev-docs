@@ -15,7 +15,7 @@ Parameters for changing object-tracking behavior.
 struct TrackingConfiguration
 ```
 
-#### Overview
+## Overview
 
 Your app needs to include the [`Object-tracking parameter adjustment`](../../BundleResources/entitlements/com.apple.developer.arkit.object-tracking-parameter-adjustment.allow.md) entitlement to modify the tracking configuration; otherwise, it has no effect.
 

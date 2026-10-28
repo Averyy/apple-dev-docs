@@ -26,7 +26,7 @@ case deactivated
 PKPaymentPassActivationStateDeactivated
 ```
 
-#### Discussion
+## Discussion
 
 To reactivate the account, reprovision the pass.
 

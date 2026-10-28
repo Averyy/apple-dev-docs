@@ -20,7 +20,7 @@ Extracts all the labels from a list of annotations.
 static func extractLabels(from annotations: [ObjectDetectionAnnotation<Label>]) -> Set<Label>
 ```
 
-#### Return Value
+## Return Value
 
 A set of all the labels present in the annotations.
 

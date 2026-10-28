@@ -16,7 +16,7 @@ Applies linear drag to slow down the current element over time.
 void force::drag(float linearDragFactor)
 ```
 
-#### Discussion
+## Discussion
 
 This function simulates air resistance or fluid drag by reducing the element’s velocity proportionally to its current speed. The drag is frame-rate independent, ensuring consistent behavior across different frame rates.
 

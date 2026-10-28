@@ -19,7 +19,7 @@ var presentsCalendarOverlay: Bool { get set }
 @property BOOL presentsCalendarOverlay;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `NO`. The overlay only appears for text-style date pickers when you select a calendar element. The overlay doesn’t appear when there are no calendar events or the value of this property is `YES`.
 

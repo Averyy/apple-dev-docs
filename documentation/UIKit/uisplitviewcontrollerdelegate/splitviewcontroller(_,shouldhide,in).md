@@ -23,11 +23,11 @@ optional func splitViewController(_ svc: UISplitViewController, shouldHide vc: U
 - (BOOL) splitViewController:(UISplitViewController *) svc shouldHideViewController:(UIViewController *) vc inOrientation:(UIInterfaceOrientation) orientation;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the view controller should be hidden in the specified orientation or [`false`](../../Swift/false.md) if it should be visible. If you do not implement this method, a value of [`true`](../../Swift/true.md) is assumed for portrait orientations and [`false`](../../Swift/false.md) is assumed for landscape orientations.
 
-#### Discussion
+## Discussion
 
 The split view controller calls this method only for the first child view controller in its array. The second view controller always remains visible regardless of the orientation.
 

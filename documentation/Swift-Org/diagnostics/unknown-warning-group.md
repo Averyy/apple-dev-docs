@@ -10,7 +10,7 @@ framework: "Swift-Org/diagnostics"
 
 Warnings for unrecognized warning groups specified in `-Wwarning` or `-Werror`.
 
-#### Overview
+## Overview
 
 ```sh
 swiftc -Werror non_existing_group file.swift

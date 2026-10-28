@@ -24,11 +24,11 @@ func bottomK(_ source: MPSGraphTensor, axisTensor: MPSGraphTensor, kTensor: MPSG
 - (NSArray<MPSGraphTensor *> *) bottomKWithSourceTensor:(MPSGraphTensor *) source axisTensor:(MPSGraphTensor *) axisTensor kTensor:(MPSGraphTensor *) kTensor name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSGraphTensor array of size 2.
 
-#### Discussion
+## Discussion
 
 Finds the k smallest values along the minor dimension of the input. The source must have at least k elements along its minor dimension. The first element of the result array corresponds to the bottom values, and the second array corresponds to the indices of the bottom values.
 

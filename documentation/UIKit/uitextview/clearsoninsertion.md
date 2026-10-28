@@ -23,7 +23,7 @@ var clearsOnInsertion: Bool { get set }
 @property (nonatomic) BOOL clearsOnInsertion;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`false`](../../Swift/false.md). When the value of this property is [`true`](../../Swift/true.md) and the text view is in editing mode, the selection UI is hidden and inserting new text clears the contents of the text view and sets the value of this property back to [`false`](../../Swift/false.md).
 

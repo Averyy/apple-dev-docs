@@ -5,13 +5,13 @@
 
 Discover and invite other players to participate in a real-time game.
 
-#### Overview
+## Overview
 
 GameKit enables the user of your game, called the *local player*, to discover and connect with other players in real-time multiplayer games.
 
 For design guidance, see [Human Interface Guidelines > Technologies > Game Center > Multiplayer](https://developer.apple.com/design/human-interface-guidelines/game-center#Multiplayer).
 
-##### Choose whether to use the Game Center interface
+### Choose whether to use the Game Center interface
 
 You can present a Game Center interface that allows the local player to invite nearby or recent players, friends, contacts, Game Center or Message groups, and anyone with a phone number or email address.
 
@@ -23,7 +23,7 @@ Alternatively, you can present your own custom interface to invite players, invi
 
 In your code, you create a match request and optionally present the matchmaker view controller. Then you implement methods to present the appropriate interface to all players during the process of receiving and accepting invitations.
 
-##### Create a match request
+### Create a match request
 
 First, create a [`GKMatchRequest`](./gkmatchrequest.md) object and set the parameters of the game. You can set the number of players, apply groups and attributes to filter the matches, specify the game mode, and set other criteria.
 
@@ -37,7 +37,7 @@ Use the [`maxPlayersAllowedForMatch(of:)`](./gkmatchrequest/maxplayersallowedfor
 
 If you use game-specific matchmaking rules to find players, set the [`queueName`](./gkmatchrequest/queuename.md) and optionally, the [`properties`](./gkmatchrequest/properties.md) properties of the [`GKMatchRequest`](./gkmatchrequest.md) object. Also, set the [`minPlayers`](./gkmatchrequest/minplayers.md) and [`maxPlayers`](./gkmatchrequest/maxplayers.md) properties within the bounds of the rule set’s `minPlayers` and `maxPlayers` fields. For more information, see [Finding players using matchmaking rules](./finding-players-using-matchmaking-rules.md).
 
-##### Enable the local player to choose other players
+### Enable the local player to choose other players
 
 The local player can choose opponents from the Game Center interface when you present a [`GKMatchmakerViewController`](./gkmatchmakerviewcontroller.md) object and handle the resulting invitation events.
 
@@ -67,7 +67,7 @@ Then adopt the [`GKLocalPlayerListener`](./gklocalplayerlistener.md) and [`GKMat
 GKLocalPlayer.local.register(self)
 ```
 
-##### Accept an invitation from another player
+### Accept an invitation from another player
 
 Game Center sends invitations to the players asynchronously. When a player accepts an invitation from another player, GameKit notifies Game Center and invokes the `GKInviteEventListener` [`player(_:didAccept:)`](./gkinviteeventlistener/player%28_,didaccept%29.md) method.
 
@@ -85,7 +85,7 @@ func player(_ player: GKPlayer, didAccept invite: GKInvite) {
 }
 ```
 
-##### Start the game when players accept invitations
+### Start the game when players accept invitations
 
 The matchmaker view controller shows the players who received or accepted invitations. When all the players accept their invitations, GameKit invokes the `GKMatchmakerViewControllerDelegate` [`matchmakerViewController(_:didFind:)`](./gkmatchmakerviewcontrollerdelegate/matchmakerviewcontroller%28_,didfind%29.md) method in the app instances for all players in the game, including the player who sent the invitations.
 
@@ -108,7 +108,7 @@ func matchmakerViewController(_ viewController: GKMatchmakerViewController,
 
 Then use the [`GKMatch`](./gkmatch.md) object that GameKit passes to this delegate method to get the player list and send data from one player to another during the game.
 
-##### Handle matchmaking cancellations and errors
+### Handle matchmaking cancellations and errors
 
 When the local player closes the matchmaker interface without choosing players, or some other error occurs while choosing players, implement the [`matchmakerViewControllerWasCancelled(_:)`](./gkmatchmakerviewcontrollerdelegate/matchmakerviewcontrollerwascancelled%28_%29.md) delegate method to dismiss the view controller.
 
@@ -122,7 +122,7 @@ func matchmakerViewControllerWasCancelled(_ viewController: GKMatchmakerViewCont
 
 Also, implement the [`matchmakerViewController(_:didFailWithError:)`](./gkmatchmakerviewcontrollerdelegate/matchmakerviewcontroller%28_,didfailwitherror%29.md) method to handle any errors that might occur. For possible errors, see [`GKError`](./gkerror.md).
 
-##### Let Game Center match the player with others
+### Let Game Center match the player with others
 
 GameKit can automatch the local player without presenting the Game Center matchmaking interface where players invite others. To start automatch, pass the match request to the shared [`GKMatchmaker`](./gkmatchmaker.md) object using the [`findMatch(for:withCompletionHandler:)`](./gkmatchmaker/findmatch%28for,withcompletionhandler%29.md) method.
 

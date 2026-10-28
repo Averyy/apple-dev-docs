@@ -21,7 +21,7 @@ Sets a custom bounding box for the object.
 - (void) setBoundingBoxMin:(SCNVector3 *) min max:(SCNVector3 *) max;
 ```
 
-#### Discussion
+## Discussion
 
 You define a bounding box in the local coordinate space using two points identifying its corners, which implicitly determine six axis-aligned planes marking its limits. The x-, y-, and z-coordinate values of any point in the volume are each greater than those of the `min` point and less than those of the `max` point.
 

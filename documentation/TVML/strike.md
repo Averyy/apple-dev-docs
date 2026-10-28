@@ -4,7 +4,7 @@
 
 Draws a line through the designated text.
 
-#### Overview
+## Overview
 
 The `strike` element creates a single, unbroken line that is displayed through the middle of the text contained in the `strike` element. It is commonly used to show that a piece of text has been redacted. Here’s an example that draws a line through the “strike through” part of the text.
 
@@ -12,7 +12,7 @@ The `strike` element creates a single, unbroken line that is displayed through t
 <text>Example of <strike>strike through</strike> text</text>
 ```
 
-##### Contained In
+### Contained In
 
 - [description](./description.md)
 - [text](./text.md)

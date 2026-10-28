@@ -21,7 +21,7 @@ Creates a data frame from a sequence of annotated features.
 init<S, Feature, Annotation>(_ sequence: S, featuresColumnID: ColumnID<Feature>, annotationsColumnID: ColumnID<Annotation>) throws where S : Sequence, S.Element == AnnotatedFeature<Feature, Annotation>
 ```
 
-#### Discussion
+## Discussion
 
 - Parameters
 

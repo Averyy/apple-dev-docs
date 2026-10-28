@@ -34,7 +34,7 @@ var billDetails: INBillDetails? { get set }
 @property (atomic, copy, readwrite, nullable) INBillDetails * billDetails;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to specify the details of the bill, including the amount due, the due date, the payee, and the type of the bill. Always provide as much detail as possible. It’s your responsibility to gather information about payees and any bills that the user needs to pay in your app. You must then make the payee and bill information available to your Intents extension so that you can fill in this property.
 

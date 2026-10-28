@@ -21,7 +21,7 @@ Sets a win-back offer to apply to the purchase.
 static func winBackOffer(_ offer: Product.SubscriptionOffer) -> Product.PurchaseOption
 ```
 
-#### Discussion
+## Discussion
 
 To test win-back offers in Xcode, set up the offers in your StoreKit configuration file. For more information, see [Setting up StoreKit Testing in Xcode](../../../Xcode/setting-up-storekit-testing-in-xcode.md).
 

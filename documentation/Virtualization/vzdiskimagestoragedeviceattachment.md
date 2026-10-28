@@ -19,7 +19,7 @@ class VZDiskImageStorageDeviceAttachment
 @interface VZDiskImageStorageDeviceAttachment : VZStorageDeviceAttachment
 ```
 
-#### Overview
+## Overview
 
 Use a [`VZDiskImageStorageDeviceAttachment`](./vzdiskimagestoragedeviceattachment.md) object to manage the storage for a disk in a virtual machine (VM). The guest operating system sees the storage as a disk, and when the guest operating system writes files to the disk, the virtual machine stores the files in the disk image you provide.
 
@@ -28,7 +28,7 @@ The virtualization framework supports two disk image formats:
 - **RAW disk images**: A file that’s the requested size of the VM disk, this format results in a 1-to-1 mapping between the offsets in the file and the offsets in the VM disk.
 - **ASIF disk images**: *Apple Sparse Image Format* (ASIF) files transfer more efficiently between hosts or disks because their intrinsic structure doesn’t depend on the host file system’s capabilities. The size the ASIF file takes on the file system is proportional to the actual data stored in the disk image.
 
-#### Create the disk image
+## Create the disk image
 
 Create disk images using `diskutil`, a command-line utility you can access through the Terminal app. The `diskutil` utility performs a number of functions. The command uses a specific structure that tells the app what function it’s performing, including many arguments documented in its online manual page documents. For more information, see the `diskutil` manual page by using the command `man diskutil` in Terminal.
 
@@ -114,7 +114,7 @@ static void createRAWDiskImage(void)
 
 ```
 
-##### Initialize the disk image
+### Initialize the disk image
 
 After creating the disk image, you use it to initialize a VM’s [`VZDiskImageStorageDeviceAttachment`](./vzdiskimagestoragedeviceattachment.md) object. Use the attachment object to configure the [`VZVirtioBlockDeviceConfiguration`](./vzvirtioblockdeviceconfiguration.md) object that you add to your virtual machine’s configuration, as shown here:
 

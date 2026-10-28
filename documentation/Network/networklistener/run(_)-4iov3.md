@@ -23,7 +23,7 @@ final func run(_ handler: @escaping @isolated(any) @Sendable (NetworkConnection<
 
 Available when `ApplicationProtocol` conforms to `OneToOneProtocol`.
 
-#### Discussion
+## Discussion
 
 When the listener state moves to ready, the listener is registered with the system and can receive incoming connections.
 

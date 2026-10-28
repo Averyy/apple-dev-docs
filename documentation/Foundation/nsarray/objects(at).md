@@ -25,11 +25,11 @@ func objects(at indexes: IndexSet) -> [Any]
 - (NSArray<id> *) objectsAtIndexes:(NSIndexSet *) indexes;
 ```
 
-#### Return Value
+## Return Value
 
 An array containing the objects in the array at the indexes specified by `indexes`.
 
-#### Discussion
+## Discussion
 
 The returned objects are in the ascending order of their indexes in `indexes`, so that object in returned array with higher index in indexes will follow the object with smaller index in `indexes`.
 

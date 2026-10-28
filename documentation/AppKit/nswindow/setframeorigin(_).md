@@ -19,7 +19,7 @@ func setFrameOrigin(_ point: NSPoint)
 - (void) setFrameOrigin:(NSPoint) point;
 ```
 
-#### Discussion
+## Discussion
 
 Note that the window server limits window position coordinates to ±16,000.
 

@@ -5,7 +5,7 @@
 
 Indicate configuration preferences from views to their container views.
 
-#### Overview
+## Overview
 
 Whereas you use the environment to configure the subviews of a view, you use preferences to send configuration information from subviews toward their container. However, unlike configuration information that flows down a view hierarchy from one container to many subviews, a single container needs to reconcile potentially conflicting preferences flowing up from its many subviews.
 

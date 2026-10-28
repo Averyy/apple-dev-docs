@@ -20,7 +20,7 @@ Key-value pairs that grant an executable permission to use a service or technolo
 - **Name**: `Entitlements`
 - **Type**: dictionary
 
-#### Discussion
+## Discussion
 
 An *entitlement* is a right or privilege that grants particular capabilities to an executable. For example, an app needs the [HomeKit Entitlement](./entitlements/com.apple.developer.homekit.md) — along with explicit user consent — to access a user’s home automation network. An app stores its entitlements as key-value pairs embedded in the code signature of its binary executable.
 

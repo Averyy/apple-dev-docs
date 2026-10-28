@@ -21,7 +21,7 @@ Observes and tracks changes to a collection of persistent models in a model cont
 final class ResultsObserver<Element, SectionTitle> where Element : PersistentModel, SectionTitle : Hashable
 ```
 
-#### Overview
+## Overview
 
 `ResultsObserver` automatically monitors changes to models that match specified fetch criteria, providing real-time updates when the underlying data changes. The observer maintains a collection of fetched results, making it ideal for keeping user interfaces synchronized with persistent data.
 

@@ -12,7 +12,7 @@ virtual void HandleSetPowerState (
  UInt32powerStateOrdinal );
 ```
 
-#### Overview
+## Overview
 
 The HandleSetPowerState method is called by the glue code and is on the serialized side of the command gate. This allows us to touch any member variables as necessary without any multi-threading issues. Subclasses may override this method to change behavior. Third party subclasses should not need to override this method, but may.
 

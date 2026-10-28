@@ -20,7 +20,7 @@ class LookAround extends AbstractLookAround
 - [Loading the latest version of MapKit JS](./loading-the-latest-version-of-mapkit-js.md)
 - [MapKit JS 5](./mapkit-js-5.md)
 
-#### Discussion
+## Discussion
 
 > **Note**:  The full bundle of MapKit JS doesn’t implement this class.
 
@@ -84,7 +84,7 @@ async function initializeMapKitJS() {
 })()
 ```
 
-#### Handling Look Around loading states
+## Handling Look Around loading states
 
 Look Around view dispatches the following events:
 

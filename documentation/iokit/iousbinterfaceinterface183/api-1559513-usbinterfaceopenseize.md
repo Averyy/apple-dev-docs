@@ -16,11 +16,11 @@ Opens the IOUSBInterface for exclusive access.
 IOReturn (*USBInterfaceOpenSeize)(void *self);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnExclusiveAccess if some other task has the interface open already and refuses to close it, kIOReturnError if the connection with the kernel cannot be established or kIOReturnSuccess if successful.
 
-#### Discussion
+## Discussion
 
 If another client has the device open, an attempt is made to get that client to close it before returning.
 

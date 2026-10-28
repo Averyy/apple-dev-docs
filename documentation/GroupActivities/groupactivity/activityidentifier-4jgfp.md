@@ -20,7 +20,7 @@ An app-defined string that uniquely identifies the activity.
 static var activityIdentifier: String { get }
 ```
 
-#### Discussion
+## Discussion
 
 Implement this property and return a value that uniquely identifies the activity within your app. An app may support multiple activities, and each activity requires a unique identifier string. If you specify a custom string, include your company name in reverse-DNS format, along with any other information needed to distinguish the activity from others in your app. The following code adds a custom identifier for the `WatchTogether` activity:
 

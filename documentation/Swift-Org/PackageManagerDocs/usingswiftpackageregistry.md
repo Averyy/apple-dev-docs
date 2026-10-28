@@ -10,13 +10,13 @@ framework: "Swift-Org/PackageManagerDocs"
 
 Configure and use a package registry for Swift Package Manager.
 
-#### Overview
+## Overview
 
 Swift Package Manager supports downloading dependencies from any package registry that implements [SE-0292](https://github.com/swiftlang/swift-evolution/blob/main/proposals/0292-package-registry-service.md) and the corresponding [service specification](./registryserverspecification.md).
 
 In a registry, packages are identified by [package identifier](https://github.com/swiftlang/swift-evolution/blob/main/proposals/0292-package-registry-service.md#package-identity) in the form of `scope.package-name`.
 
-##### Configuring a registry
+### Configuring a registry
 
 A registry can be configured in Swift Package Manager at two levels:
 
@@ -52,7 +52,7 @@ The JSON key `[default]` means that the registry at `https://packages.example.co
 
 In this example, `https://packages.example.com` will be applied to all scopes.
 
-##### Adding a registry package dependency
+### Adding a registry package dependency
 
 A registry package dependency is declared in `Package.swift` using the package identifier. For example:
 
@@ -64,7 +64,7 @@ dependencies: [
 
 Package manager will query the registry mapped to a package’s scope to resolve and download the appropriate release version.
 
-##### Registry authentication
+### Registry authentication
 
 If a registry requires authentication, it can be set up by using the [`swift package-registry login`](./packageregistrylogin.md) subcommand introduced by [SE-0378](https://github.com/swiftlang/swift-evolution/blob/main/proposals/0378-package-registry-auth.md#new-login-subcommand).
 
@@ -78,7 +78,7 @@ $ swift package-registry login https://packages.example.com
 
 Package manager will save the credentials to the operating system’s credential store (e.g., Keychain in macOS) or netrc file (which by default is located at `~/.netrc`) and apply them automatically when making registry API requests.
 
-##### Dependency Resolution Using Registry
+### Dependency Resolution Using Registry
 
 Resolving a registry dependency involves these steps:
 
@@ -88,7 +88,7 @@ Resolving a registry dependency involves these steps:
 
 For more information on resolving dependencies, see [Resolving and updating dependencies](./resolvingpackageversions.md).
 
-###### Using registry for source control dependencies
+#### Using registry for source control dependencies
 
 Here is an example of a source control dependency:
 
@@ -108,15 +108,15 @@ One can control if/how Package manager should use registry in conjunction with s
 - `--use-registry-identity-for-scm`: Swift Package Manager will look up source control dependencies in the registry and use their registry identity whenever possible to help deduplicate packages across the two origins. In other words, suppose `mona.LinkedList` is the package identifier for `https://github.com/mona/LinkedList`, then Package manager will treat both references in the dependency graph as the same package.
 - `--replace-scm-with-registry`: Swift Package Manager will look up source control dependencies in the registry and use the registry to retrieve them instead of source control when possible. In other words, Package manager will attempt to download a source control dependency from the registry first, and fall back to cloning the source repository if the dependency is not found in the registry.
 
-##### Dependency Download From Registry
+### Dependency Download From Registry
 
 After a registry dependency is resolved, Swift Package Manager can [download source archive](./registryserverspecification.md#44-Download-source-archive) of the computed package version from the registry.
 
-###### Package security
+#### Package security
 
 As a security feature, Swift Package Manager performs checksum TOFU ([trust-on-first-use](https://en.wikipedia.org/wiki/Trust_on_first_use)) on the downloaded source archive. See [Package Security](./packagesecurity.md) for more information about Package manager’s use of trust-on-first-use.
 
-###### Validating signed packages
+#### Validating signed packages
 
 [SE-0391](https://github.com/swiftlang/swift-evolution/blob/main/proposals/0391-package-registry-publish.md#package-signing) adds package signing support to Swift Package Manager. Package manager determines if a downloaded archive is signed by checking for presence of the `X-Swift-Package-Signature-Format` and `X-Swift-Package-Signature` headers in the HTTP response.
 
@@ -124,15 +124,15 @@ Swift Package Manager then performs a series of validations based on user’s [s
 
 For more information on Package manager’s registry security features, see [Signed packages from a registry](./packagesecurity.md#Signed-packages-from-a-registry).
 
-##### Publishing to Registry
+### Publishing to Registry
 
 [swift package-registry publish](https://github.com/swiftlang/swift-evolution/blob/main/proposals/0391-package-registry-publish.md#new-package-registry-publish-subcommand) is an all-in-one command for publishing a package release to registry.
 
-###### Package signing
+#### Package signing
 
 Registries can optionally require signing. For more details on signed registry packages, see [Signed packages from a registry](./packagesecurity.md#Signed-packages-from-a-registry).
 
-###### Signature formats
+##### Signature formats
 
 | Signature Format | Specification |
 | --- | --- |
@@ -140,7 +140,7 @@ Registries can optionally require signing. For more details on signed registry p
 
 Since there is only one supported signature format, all signatures produced by Swift Package Manager are in `cms-1.0.0`.
 
-###### Signed contents
+##### Signed contents
 
 ###### Source archive
 
@@ -175,9 +175,9 @@ Package manager performs publisher TOFU to ensure it remains consistent for the 
 
 To reduce the amount of logging and thus noise, diagnostics related to manifest signature validation are set to DEBUG level. Only when user chooses the `prompt` option for unsigned packages or packages signed with an untrusted certificate would Package manager behave like source archive validation.
 
-##### Swift Package Manager Registry Configuration
+### Swift Package Manager Registry Configuration
 
-###### Registry-to-scope mappings
+#### Registry-to-scope mappings
 
 When resolving or downloading registry packages, Package manager looks at the registry-to-scope mappings in project and user-level configuration to determine which registry is assigned for a package’s scope.
 
@@ -211,7 +211,7 @@ For example, given the following configuration files:
 - For package `foo.LinkedList`, the registry at `https://local.example.com` is used. (Local configuration has higher precedence than user-level configuration.)
 - For package `bar.LinkedList`, the registry at `https://global.example.com` is used. (No mapping for scope `bar` is found, so `[default]` is used.)
 
-###### Security configuration
+#### Security configuration
 
 Registry security configurations are specified in the user-level `registries.json` (`~/.swiftpm/configuration/registries.json`):
 

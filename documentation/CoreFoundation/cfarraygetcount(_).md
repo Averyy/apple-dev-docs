@@ -25,7 +25,7 @@ func CFArrayGetCount(_ theArray: CFArray!) -> CFIndex
 extern CFIndex CFArrayGetCount(CFArrayRef theArray);
 ```
 
-#### Return Value
+## Return Value
 
 The number of values in `theArray`.
 

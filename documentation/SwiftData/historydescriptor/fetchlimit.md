@@ -22,7 +22,7 @@ The maximum number of transactions to retrieve from the model store’s history.
 var fetchLimit: UInt64
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**: Use `nil` to tell the fetch to return all transactions of the associated type, not `0`.
 

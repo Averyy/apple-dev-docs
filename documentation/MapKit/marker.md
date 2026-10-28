@@ -22,7 +22,7 @@ A balloon-shaped annotation that marks a map location.
 @preconcurrency struct Marker<Label> where Label : View
 ```
 
-#### Overview
+## Overview
 
 Use this view to create marker instances in the closure you provide to the `content` parameter in the [`Map`](./map.md) initializers.
 

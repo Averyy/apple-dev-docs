@@ -25,11 +25,11 @@ func CTFontDescriptorCreateCopyWithSymbolicTraits(_ original: CTFontDescriptor, 
 extern CTFontDescriptorRefCTFontDescriptorCreateCopyWithSymbolicTraits(CTFontDescriptorRef original, CTFontSymbolicTraits symTraitValue, CTFontSymbolicTraits symTraitMask);
 ```
 
-#### Return Value
+## Return Value
 
 Returns a new font descriptor reference in the same family with the given symbolic traits, or `NULL` if no matching font descriptor is found in the system.
 
-#### Discussion
+## Discussion
 
 This bitfield of `symTraitValue` parameter indicates the desired value for the traits specified by the `symTraitMask` parameter. Used in conjunction, they can allow for trait removal as well as addition.
 

@@ -22,7 +22,7 @@ The delegate for renaming the navigation item.
 
 - [Building a desktop-class iPad app](../building-a-desktop-class-ipad-app.md)
 
-#### Discussion
+## Discussion
 
 If you assign a non-`nil` value to this property, UIKit shows an inline text field UI for changing the navigation item’s title. This UI appears when either you or the system calls [`rename(_:)`](../uiresponderstandardeditactions/rename%28_%29.md) on the navigation controller, which occurs when a person taps Rename in the title menu or when you call [`rename(_:)`](../uiresponderstandardeditactions/rename%28_%29.md) explicitly.
 

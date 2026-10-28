@@ -18,11 +18,11 @@ Calls `updateReport()` on multiple IOReporter objects.
 static IOReturn updateAllReports(OSCollection *reporters, OSData *channels, IOReportConfigureAction action, uint32_t *outElementCount, uint64_t offset, uint64_t capacity, IOMemoryDescriptor *buffer);
 ```
 
-#### Return Value
+## Return Value
 
 `kIOReturnSuccess` if all objects successfully complete [`updateReport`](./updatereport.md).
 
-#### Discussion
+## Discussion
 
 The OSSet must only contain [`IOReporter`](../ioreporter.md) instances.  The presence of non-`IOReporter` instances will cause this function to return [`kIOReturnBadArgument`](../kioreturnbadargument.md).  If any reporter returns an error, the function will immediately return that error.
 

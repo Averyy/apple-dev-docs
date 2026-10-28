@@ -14,11 +14,11 @@ A texturecube with RealityKit properties and a explicit level of detail.
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Overview
+## Overview
 
 Explicit level of detail. Input image must be in KTX file format
 
-#### Parameter Types
+## Parameter Types
 
 **Cube Image LOD (vector4f)**:
 
@@ -64,7 +64,7 @@ Explicit level of detail. Input image must be in KTX file format
 | --- | --- |
 | `Out` | Color4 |
 
-#### Parameter descriptions
+## Parameter descriptions
 
 - **`File`**: The image file to use for the texture.
 - **`U Wrap Mode`**: The way the node handles U values outside of the range of `0-1`. The default value is `clamp_to_edge`.
@@ -80,7 +80,7 @@ Explicit level of detail. Input image must be in KTX file format
 - **`Texture Coordinates`**: The 2D coordinate at which the data is read to map the texture onto a surface. The default is the current UV coordinates, in which U is the horizontal axis and V is the vertical axis.
 - **`Lod`**: The specific LOD level that the node samples from.
 
-#### Discussion
+## Discussion
 
 The `Cube Image LOD` node produces a texture using the contents of the image file specified in the `File` parameter. It has various of parameters that affect the properties of the rendered textures.
 

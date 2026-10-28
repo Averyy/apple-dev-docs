@@ -20,7 +20,7 @@ A type of table column content that creates table rows created from a Swift tupl
 nonisolated struct TupleTableRowContent<Value, T> where Value : Identifiable
 ```
 
-#### Overview
+## Overview
 
 Don’t use this type directly; instead, SwiftUI uses this type as the return value from the various `buildBlock` methods in [`TableRowBuilder`](./tablerowbuilder.md). The size of the tuple corresponds to how many columns you create in the `rows` closure you provide to the [`Table`](./table.md) initializer.
 

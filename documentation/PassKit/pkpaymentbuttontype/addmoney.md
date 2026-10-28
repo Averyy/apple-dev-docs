@@ -24,7 +24,7 @@ case addMoney
 PKPaymentButtonTypeAddMoney
 ```
 
-#### Discussion
+## Discussion
 
 This button looks like:
 

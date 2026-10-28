@@ -19,7 +19,7 @@ var fileDescriptor: Int32 { get }
 @property (readonly) int fileDescriptor;
 ```
 
-#### Discussion
+## Discussion
 
 To send data to the other side of the connection, write to the file descriptor. To read data from connection, read from the file descriptor. If the socket connection is closed, the value of this property is `-1`.
 

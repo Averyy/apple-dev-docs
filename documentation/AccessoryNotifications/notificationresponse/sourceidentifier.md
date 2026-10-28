@@ -15,7 +15,7 @@ A bundle identifier for the app that sent the notification.
 var sourceIdentifier: String
 ```
 
-#### Discussion
+## Discussion
 
 For example, if Messages sends the notification, this value is `com.apple.MobileSMS`.
 

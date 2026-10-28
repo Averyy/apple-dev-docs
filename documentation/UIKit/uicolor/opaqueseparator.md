@@ -23,7 +23,7 @@ class var opaqueSeparator: UIColor { get }
 @property (class, nonatomic, readonly) UIColor * opaqueSeparatorColor;
 ```
 
-#### Discussion
+## Discussion
 
 This color is always opaque. It adapts to the underlying trait environment.
 

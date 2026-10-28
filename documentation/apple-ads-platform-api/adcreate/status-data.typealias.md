@@ -20,11 +20,11 @@ string AdCreate.Status
 - `ENABLED`: The advertiser has set the ad to run, so it can participate in auctions.
 - `PAUSED`: The advertiser has paused the ad, so it does not participate in auctions.
 
-#### Discussion
+## Discussion
 
 Include `status` in the create request to determine whether the new ad starts competing in auctions immediately or begins paused.
 
-##### Example
+### Example
 
 ```json
 {

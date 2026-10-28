@@ -19,7 +19,7 @@ Creates and initializes a transfer representation.
 init(exporter: @escaping @Sendable (Item) throws -> CKShareTransferRepresentation<Item>.ExportedShare)
 ```
 
-#### Return Value
+## Return Value
 
 A [`CKShareTransferRepresentation.ExportedShare`](./exportedshare.md).
 

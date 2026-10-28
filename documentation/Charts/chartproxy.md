@@ -21,7 +21,7 @@ A proxy that you use to access the scales and plot area of a chart.
 struct ChartProxy
 ```
 
-#### Overview
+## Overview
 
 You get a chart proxy from the [`chartOverlay(alignment:content:)`](../SwiftUI/view/chartoverlay%28alignment,content%29.md) and [`chartBackground(alignment:content:)`](../SwiftUI/view/chartbackground%28alignment,content%29.md) modifiers. You can use the chart proxy to convert data values to screen coordinates or vice-versa.
 

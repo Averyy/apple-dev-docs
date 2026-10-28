@@ -26,7 +26,7 @@ required sequence <DOMString> supportedNetworks;
 - [Apple Pay on the Web Version 5 Release Notes](../apple-pay-on-the-web-version-5-release-notes.md)
 - [Supporting payment networks](../supported-networks.md)
 
-#### Discussion
+## Discussion
 
 Set this property to one or more of the payment network values. For a complete list of networks that Apple Pay supports and the specific Apple Pay version that introduced that network, see [Supporting payment networks](../supported-networks.md).
 

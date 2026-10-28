@@ -19,7 +19,7 @@ Initializes a passkey credential identity.
 - (instancetype) initWithRelyingPartyIdentifier:(NSString *) relyingPartyIdentifier userName:(NSString *) userName credentialID:(NSData *) credentialID userHandle:(NSData *) userHandle recordIdentifier:(NSString *) recordIdentifier;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized credential identity.
 

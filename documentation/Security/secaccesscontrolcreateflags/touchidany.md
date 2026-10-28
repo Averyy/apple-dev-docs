@@ -27,7 +27,7 @@ static var touchIDAny: SecAccessControlCreateFlags { get }
 kSecAccessControlTouchIDAny
 ```
 
-#### Discussion
+## Discussion
 
 Touch ID must be available and enrolled with at least one finger. The item is still accessible by Touch ID if fingers are added or removed.
 

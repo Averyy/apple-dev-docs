@@ -24,7 +24,7 @@ var backgroundEffect: UIVisualEffect? { get set }
 @property (nonatomic, copy, nullable) UIVisualEffect * backgroundEffect;
 ```
 
-#### Discussion
+## Discussion
 
 Assigning a visual effect object to this property adds that effect to the background of the action button.
 

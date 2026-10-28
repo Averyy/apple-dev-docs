@@ -24,7 +24,7 @@ class MTLStitchedLibraryDescriptor
 @interface MTLStitchedLibraryDescriptor : NSObject
 ```
 
-#### Overview
+## Overview
 
 An [`MTLStitchedLibraryDescriptor`](./mtlstitchedlibrarydescriptor.md) describes a library of new stitched functions. A *stitched function* is a visible function you create by composing other Metal shader functions together in a function graph.
 

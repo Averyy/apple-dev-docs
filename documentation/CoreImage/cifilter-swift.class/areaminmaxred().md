@@ -24,11 +24,11 @@ class func areaMinMaxRed() -> any CIFilter & CIAreaMinMaxRed
 + (CIFilter<CIAreaMinMaxRed> *) areaMinMaxRedFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The generated image.
 
-#### Discussion
+## Discussion
 
 This method applies the area-minimum-maximum-red filter to an image. This effect calculates the darkest and lightest red color value in the region defined by `extent`. The red and green components of the 1 x 1 pixel output image contain the result.
 

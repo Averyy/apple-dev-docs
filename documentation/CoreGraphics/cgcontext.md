@@ -25,7 +25,7 @@ class CGContext
 typedef struct CGContext * CGContextRef;
 ```
 
-#### Overview
+## Overview
 
 A `CGContext` instance represents a Quartz 2D drawing destination. A graphics context contains drawing parameters and all device-specific information needed to render the paint on a page to the destination, whether the destination is a window in an application, a bitmap image, a PDF document, or a printer.
 

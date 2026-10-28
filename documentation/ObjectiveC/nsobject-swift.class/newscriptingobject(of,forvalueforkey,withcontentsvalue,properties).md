@@ -19,11 +19,11 @@ func newScriptingObject(of objectClass: AnyClass, forValueForKey key: String, wi
 - (id) newScriptingObjectOfClass:(Class) objectClass forValueForKey:(NSString *) key withContentsValue:(id) contentsValue properties:(NSDictionary<NSString *,id> *) properties;
 ```
 
-#### Return Value
+## Return Value
 
 The new object. Returns `nil` if an error occurs.
 
-#### Discussion
+## Discussion
 
 You can override the `newScriptingObjectOfClass` method to take more control when your application is sent a `make` command. This method is invoked on the prospective container of the new object. The `contentsValue` and `properties` are derived from the `with contents` and `with properties` parameters of the `make` command. The returned objects or objects are then inserted into the container using key-value coding.
 

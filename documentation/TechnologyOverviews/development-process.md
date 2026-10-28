@@ -13,7 +13,7 @@ Xcode is Apple’s integrated developer environment (IDE). It offers the tools y
 
 Download the latest version of Xcode from the Mac App Store, or from the [developer website](https://developer.apple.com/xcode/).
 
-#### Get started with the Swift programming language
+## Get started with the Swift programming language
 
 [Swift](https://www.swift.org/) is the best language for developing software on Apple platforms. It’s [easy to get started](https://developer.apple.com/tutorials/develop-in-swift/), and modern features like built-in concurrency support, safe type handling, and automatic memory management deliver the safety and performance that production apps demand. If you’re starting a new project, Swift is a great choice for writing your code. Swift is also interoperable with [C, C++, Objective-C](https://developer.apple.com/videos/play/wwdc2025/311), and [Java](https://developer.apple.com/videos/play/wwdc2025/307), making it easy to integrate Swift code into your existing codebase. The following type declaration shows the simplicity of Swift syntax.
 
@@ -38,7 +38,7 @@ struct PersonRecord {
 
 Xcode also supports [Objective-C](../ObjectiveC/ObjectiveC.md), a strict superset of the C programming language that adds object-oriented capabilities and a dynamic runtime. Many system frameworks provide Objective-C interfaces, so you can use their functionality in your existing Objective-C code bases to build apps and other types of software. You can include both Swift and Objective-C source files in the same project, along with code written in C, C++, Java, and other languages.
 
-#### Manage your project resources
+## Manage your project resources
 
 Start any new project with Xcode, which you can [download from the Mac App Store](https://apps.apple.com/us/app/xcode/id497799835?mt=12) or the [developer website](https://developer.apple.com/xcode/). Create new projects and use the app to [manages source files](../Xcode/projects-and-workspaces.md), [assets](../Xcode/asset-management.md), [build settings](../Xcode/configuring-the-build-settings-of-a-target.md), and other project-related resources.
 
@@ -65,7 +65,7 @@ You can also create some types of content with the additional apps that come wit
 
 If you already have your own build tools and scripts, [download and install](../Xcode/installing-the-command-line-tools.md) the Xcode command-line tools so you can integrate its compilers and tools into your existing workflow.
 
-#### Run and debug your code
+## Run and debug your code
 
 Xcode’s integrated [build system](../Xcode/build-system.md) compiles your source files and assets into the final software product. This build system incorporates a wide range of tools, many of which you can also run from the [command line](../Xcode/command-line-tools.md). After a successful build, run the software on your Mac or install it on an actual device and debug it there.
 
@@ -73,7 +73,7 @@ During development, run your iOS, iPadOS, watchOS, tvOS, or visionOS app in [Sim
 
 To test your app’s CarPlay behavior, install your app on an iPhone, connect the iPhone to your Mac, and run the CarPlay Simulator app. This app simulates a variety of vehicle display configurations your app might encounter. The CarPlay Simulator app is part of the additional tools for Xcode that you [download separately](https://developer.apple.com/download/all/?q=Xcode) from the Apple developer website.
 
-#### Adopt best practices during development
+## Adopt best practices during development
 
 To reduce bugs and improve the performance of your code, it’s important to follow good practices during development. Testing your software regularly ensures that new code doesn’t introduce bugs or cause regressions. Similarly, collecting data regularly about your app’s performance helps you find issues early and fix them while there’s time to do so. Some other ways to improve the quality and performance of your code include:
 
@@ -84,7 +84,7 @@ To reduce bugs and improve the performance of your code, it’s important to fol
 - Use a continuous integration and delivery (CI/CD) system such as [Xcode Cloud](../Xcode/xcode-cloud.md), to run larger test suites automatically and to generate builds for your team.
 - Collect [performance metrics](../Xcode/performance-and-metrics.md) for every pull request, and whenever you discover a performance regression. Take regular measurements to determine if performance is improving or regressing.
 
-#### Automate tasks with shell scripts
+## Automate tasks with shell scripts
 
 If your team already has dedicated scripts and tools for building your content, you can integrate Xcode tools into your scripts to build your software on Mac. The Xcode app contains the command-line tools you need, but you can also [download and install the tools](../Xcode/installing-the-command-line-tools.md) to systems that don’t have Xcode. The set of [command-line tools](../Xcode/xcode-command-line-tool-reference.md) includes:
 
@@ -95,7 +95,7 @@ If your team already has dedicated scripts and tools for building your content, 
 
 And many more.
 
-#### Get information and support
+## Get information and support
 
 When you want the latest news and information about Apple development, look for it in the [Developer](https://apps.apple.com/us/app/apple-developer/id640199958) app. Browse news, features, and developer stories originating in the wider community. You can watch Apple engineers explain how to use their technologies each year at Apple’s [world-wide developer conference](https://developer.apple.com/wwdc) (WWDC), and catch up on videos from past conferences.
 

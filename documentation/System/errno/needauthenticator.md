@@ -25,7 +25,7 @@ static var needAuthenticator: Errno { get }
 
 - [Adopting Swift Error Constants](../adopting-errno.md)
 
-#### Discussion
+## Discussion
 
 Before mounting the given NFS file system, you must obtain an authentication ticket.
 

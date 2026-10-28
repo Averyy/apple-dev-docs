@@ -23,7 +23,7 @@ func showDetailViewController(_ vc: UIViewController, sender: Any?)
 - (void) showDetailViewController:(UIViewController *) vc sender:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 Whenever possible, use this method (instead of modifying the contents of the [`viewControllers`](./viewcontrollers.md) property directly) to replace the secondary view controller of your split view interface. This method displays the specified view controller in a way that’s optimal for the current size class in effect. It also takes advantage of existing navigation controller behaviors whenever possible to minimize changes to the split view interface.
 

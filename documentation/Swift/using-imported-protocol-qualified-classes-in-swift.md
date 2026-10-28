@@ -5,7 +5,7 @@
 
 Learn how imported Objective-C protocol-qualified classes and metaclasses are represented.
 
-#### Overview
+## Overview
 
 Objective-C classes qualified by one or more protocols, like the one in the example below, are imported by Swift as protocol composition types. The following Objective-C property refers to a view controller that also acts a data source and delegate:
 

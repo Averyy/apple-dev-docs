@@ -22,7 +22,7 @@ var supportsBluetoothChannelSounding: Bool { get }
 @property (nonatomic, readonly) BOOL supportsBluetoothChannelSounding;
 ```
 
-#### Discussion
+## Discussion
 
 Bluetooth Channel Sounding is a Bluetooth 6.0 specification ranging strategy that relies on a Bluetooth connection to measure distance between iPhone and a paired accessory.
 

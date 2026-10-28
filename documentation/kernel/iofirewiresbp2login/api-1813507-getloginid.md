@@ -12,11 +12,11 @@ virtual UInt32 getLoginID(
  void );
 ```
 
-#### Return Value
+## Return Value
 
 Returns a UInt32 containing the current login ID.
 
-#### Overview
+## Overview
 
 When we successfully login to a device. The device gives us a unique login id. This is used internally for reconnecting to the device after bus resets and for certain other management ORBs. Most drivers are probably not interested in this value.
 

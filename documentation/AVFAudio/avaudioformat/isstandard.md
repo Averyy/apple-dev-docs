@@ -25,7 +25,7 @@ var isStandard: Bool { get }
 @property (nonatomic, readonly, getter=isStandard) BOOL standard;
 ```
 
-#### Discussion
+## Discussion
 
 This value returns [`true`](../../Swift/true.md) if the format is [`AVAudioCommonFormat.pcmFormatFloat32`](../avaudiocommonformat/pcmformatfloat32.md); otherwise, [`false`](../../Swift/false.md).
 

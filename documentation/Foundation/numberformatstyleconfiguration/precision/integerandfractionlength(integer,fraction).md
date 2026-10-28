@@ -21,11 +21,11 @@ Returns a precision that constrains formatted values a given number of allowed d
 static func integerAndFractionLength(integer: Int, fraction: Int) -> NumberFormatStyleConfiguration.Precision
 ```
 
-#### Return Value
+## Return Value
 
 A precision that constrains formatted values a given number of digits in the integer and fraction parts.
 
-#### Discussion
+## Discussion
 
 When using this precision, the formatter pads values with fewer digits than the specified digits for the integer or fraction parts. Similarly, it rounds values that have more digits than specified. The following example shows this behavior, padding the integer part while rounding the fraction:
 

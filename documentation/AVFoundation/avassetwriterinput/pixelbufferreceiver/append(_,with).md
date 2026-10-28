@@ -17,11 +17,11 @@ Suspends until the input is ready for more media data, then appends the pixel bu
 ## Declaration
 
 ```swift
-nonisolated
-(nonsending) func append(_ pixelBuffer: CVReadOnlyPixelBuffer, with presentationTime: CMTime) async throws
+nonisolated(nonsending)
+func append(_ pixelBuffer: CVReadOnlyPixelBuffer, with presentationTime: CMTime) async throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: An error if the underlying writer failed.
 

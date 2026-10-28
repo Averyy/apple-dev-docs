@@ -17,7 +17,7 @@ Parameter for convolutions allowing single integers or triples.
 struct IntOrTriple
 ```
 
-#### Overview
+## Overview
 
 For example the numeric parameters here are all [`IntOrTriple`](./intortriple.md):
 
@@ -25,7 +25,7 @@ For example the numeric parameters here are all [`IntOrTriple`](./intortriple.md
 conv3d(input, weights, stride: 3, padding: [2, 2, 1], padding: .init((2, 3, 1)))
 ```
 
-##### See Also:
+### See Also:
 
 - [`IntOrPair`](./intorpair.md)
 

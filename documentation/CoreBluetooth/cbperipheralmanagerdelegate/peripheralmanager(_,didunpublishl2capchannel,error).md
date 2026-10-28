@@ -25,7 +25,7 @@ optional func peripheralManager(_ peripheral: CBPeripheralManager, didUnpublishL
 - (void) peripheralManager:(CBPeripheralManager *) peripheral didUnpublishL2CAPChannel:(CBL2CAPPSM) PSM error:(NSError *) error;
 ```
 
-#### Discussion
+## Discussion
 
 The peripheral manager calls this method after you call [`unpublishL2CAPChannel(_:)`](../cbperipheralmanager/unpublishl2capchannel%28_%29.md).
 

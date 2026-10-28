@@ -25,7 +25,7 @@ func NSEndMapTableEnumeration(_ enumerator: UnsafeMutablePointer<NSMapEnumerator
 extern void NSEndMapTableEnumeration(NSMapEnumerator *enumerator);
 ```
 
-#### Discussion
+## Discussion
 
 This function should be called when you have finished using the enumeration struct `enumerator`.
 

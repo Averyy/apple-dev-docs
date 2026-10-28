@@ -15,7 +15,7 @@ Returns the mode mask corresponding to the expected font panel mode.
 - (NSFontPanelModeMask) validModesForFontPanel:(NSFontPanel *) fontPanel;
 ```
 
-#### Discussion
+## Discussion
 
 The mode masks are defined in [Mode Masks](../../AppKit/mode-masks.md).
 

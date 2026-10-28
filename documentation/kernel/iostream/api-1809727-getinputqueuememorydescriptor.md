@@ -10,7 +10,7 @@ virtual IOMemoryDescriptor *getInputQueueMemoryDescriptor(
  void);
 ```
 
-#### Return Value
+## Return Value
 
 An IOMemoryDescriptor object repesenting the shared memory input queue buffer.
 

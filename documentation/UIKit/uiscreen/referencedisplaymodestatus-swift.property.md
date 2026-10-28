@@ -22,7 +22,7 @@ var referenceDisplayModeStatus: UIScreen.ReferenceDisplayModeStatus { get }
 @property (nonatomic, readonly) UIScreenReferenceDisplayModeStatus referenceDisplayModeStatus;
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**:  *Reference display mode* refers to Pro Display Mode on the iPad Pro 12.9-inch (5th generation or later).
 

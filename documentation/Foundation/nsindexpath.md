@@ -25,7 +25,7 @@ class NSIndexPath
 @interface NSIndexPath : NSObject
 ```
 
-#### Overview
+## Overview
 
 In Swift, this object bridges to [`IndexPath`](./indexpath.md); use [`NSIndexPath`](./nsindexpath.md) when you need reference semantics or other Foundation-specific behavior.
 

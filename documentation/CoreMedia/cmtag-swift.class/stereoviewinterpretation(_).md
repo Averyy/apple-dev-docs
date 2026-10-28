@@ -21,7 +21,7 @@ Creates a tag containing information on how to interpret stereo view metadata.
 static func stereoViewInterpretation(_ value: CMStereoViewInterpretationOptions) -> CMTypedTag<CMStereoViewInterpretationOptions>
 ```
 
-#### Return Value
+## Return Value
 
 A new typed tag containing the set of stereo view options represented by `value`.
 

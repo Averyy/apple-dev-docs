@@ -18,7 +18,7 @@ The number of active array slices in the render target textures.
 var renderTargetArrayLength: Int { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Corresponds to `MTLRenderPassDescriptor.renderTargetArrayLength`. Set this to the size of the texture array when using multi-viewport rendering into texture slices.
 

@@ -24,7 +24,7 @@ static let `default`: AVPlayerItemLegibleOutput.TextStylingResolution
 extern AVPlayerItemLegibleOutputTextStylingResolution const AVPlayerItemLegibleOutputTextStylingResolutionDefault;
 ```
 
-#### Discussion
+## Discussion
 
 Specify this level of text styling resolution to receive attributed strings from an `AVPlayerItemLegibleOutput` that include the same level of styling information that AVFoundation would use itself to render text within an [`AVPlayerLayer`](../../avplayerlayer.md). The text styling will accommodate user-level Media Accessibility settings.
 

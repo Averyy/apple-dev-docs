@@ -22,7 +22,7 @@ class var resizeUpDown: NSCursor { get }
 @property (class, strong, readonly) NSCursor * resizeUpDownCursor;
 ```
 
-#### Return Value
+## Return Value
 
 The resize-up-and-down cursor. This cursor is used when moving or resizing an object and the object can be moved up or down.
 

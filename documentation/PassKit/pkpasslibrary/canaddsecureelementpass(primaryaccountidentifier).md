@@ -24,11 +24,11 @@ func canAddSecureElementPass(primaryAccountIdentifier: String) -> Bool
 - (BOOL) canAddSecureElementPassWithPrimaryAccountIdentifier:(NSString *) primaryAccountIdentifier;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if PassKit can add a secure element pass for the specified account; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Adding a Secure Element pass requires a special entitlement that Apple provides. If the entitlement isn’t present, this method returns [`false`](../../Swift/false.md).
 

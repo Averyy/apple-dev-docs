@@ -14,7 +14,7 @@
 kOpaqueTimerID = 3
 ```
 
-#### Discussion
+## Discussion
 
 A timer.
 

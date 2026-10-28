@@ -16,11 +16,11 @@ Get the branch pointer for a NuDCL
 NuDCLRef (*GetDCLBranch)(NuDCLRef dcl);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the branch pointer of 'dcl' or 0 for none is set.
 
-#### Discussion
+## Discussion
 
 Applies: Any NuDCLRef.
 

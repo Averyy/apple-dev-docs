@@ -15,7 +15,7 @@ The audio object ID of the driver.
 constexpr const IOUserAudioObjectID kIOUserAudioObjectIDDriver;
 ```
 
-#### Discussion
+## Discussion
 
 This [`IOUserAudioObjectID`](./iouseraudioobjectid.md) always refers to the one and only instance of the [`IOUserAudioDriver`](../iouseraudiodriver.md).
 

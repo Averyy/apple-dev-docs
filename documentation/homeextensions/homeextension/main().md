@@ -18,7 +18,7 @@ Starts your app extension.
 static func main() throws
 ```
 
-#### Discussion
+## Discussion
 
 Don’t call this method directly. Mark your extension type with `@main` instead.
 

@@ -23,7 +23,7 @@ An activation function that returns the softsign function of its input.
 case softsign
 ```
 
-#### Discussion
+## Discussion
 
 This constant defines an activation function that returns values using the following operation:
 

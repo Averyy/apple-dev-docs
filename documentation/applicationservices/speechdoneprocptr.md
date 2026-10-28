@@ -19,7 +19,7 @@ typealias SpeechDoneProcPtr = (SpeechChannel, SRefCon) -> Void
 typedef void (*SpeechDoneProcPtr)(SpeechChannel chan, SRefCon refCon);
 ```
 
-#### Discussion
+## Discussion
 
 If a speech-done callback function is installed in a speechchannel, then the Speech Synthesis Manager calls this function whenit finishes speaking a buffer of text.
 

@@ -24,7 +24,7 @@ struct MTL4RenderEncoderOptions
 enum MTL4RenderEncoderOptions : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 Use these options to implement parallel encoding of render passes across multiple CPU threads by providing these values to the `options` parameter of [`makeRenderCommandEncoder(descriptor:options:)`](./mtl4commandbuffer/makerendercommandencoder%28descriptor,options%29.md) and observing these requirements:
 

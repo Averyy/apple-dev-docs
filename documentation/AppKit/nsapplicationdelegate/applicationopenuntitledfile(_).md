@@ -20,11 +20,11 @@ optional func applicationOpenUntitledFile(_ sender: NSApplication) -> Bool
 - (BOOL) applicationOpenUntitledFile:(NSApplication *) sender;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the file was successfully opened or [`false`](../../Swift/false.md) if it was not.
 
-#### Discussion
+## Discussion
 
 Sent directly by `theApplication` to the delegate to request that a new, untitled file be opened.
 

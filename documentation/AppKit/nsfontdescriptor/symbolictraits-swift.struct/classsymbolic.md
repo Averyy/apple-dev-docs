@@ -19,7 +19,7 @@ static var classSymbolic: NSFontDescriptor.SymbolicTraits { get }
 NSFontDescriptorClassSymbolic
 ```
 
-#### Discussion
+## Discussion
 
 This trait is suitable for special characters like icons, dingbats, technical symbols, and others that work equally well with any font.
 

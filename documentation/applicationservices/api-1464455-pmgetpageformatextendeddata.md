@@ -19,11 +19,11 @@ func PMGetPageFormatExtendedData(_ pageFormat: PMPageFormat, _ dataID: OSType, _
 OSStatus PMGetPageFormatExtendedData(PMPageFormat pageFormat, OSType dataID, UInt32 *size, void *extendedData);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./core_printing.md#1670007).
 
-#### Discussion
+## Discussion
 
 Your application typically needs to call the function `PMGetPageFormatExtendedData` two times in order to retrieve the extended page format data. The first time, pass the constant `kPMDontWantData` in the parameter `extendedData` to obtain the buffer size required for the extended data. Then allocate the buffer and call the function a second time to read the extended data into your buffer.
 

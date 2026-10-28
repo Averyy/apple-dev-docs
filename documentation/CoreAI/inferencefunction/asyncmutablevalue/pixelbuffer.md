@@ -19,7 +19,7 @@ Consume this value to access the underlying pixel buffer once any pending write 
 var pixelBuffer: CVMutablePixelBuffer? { get async throws }
 ```
 
-#### Return Value
+## Return Value
 
 The underlying pixel buffer or `nil` if this was not an image value.
 

@@ -24,7 +24,7 @@ let HMCharacteristicTypeTargetMediaState: String
 extern NSString * const HMCharacteristicTypeTargetMediaState;
 ```
 
-#### Overview
+## Overview
 
 The corresponding value is one of the constants in the [`HMCharacteristicValueTargetMediaState`](./hmcharacteristicvaluetargetmediastate.md) enumeration.
 

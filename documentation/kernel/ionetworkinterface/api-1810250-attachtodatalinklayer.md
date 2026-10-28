@@ -13,11 +13,11 @@ virtual IOReturn attachToDataLinkLayer(
  void *parameter );
 ```
 
-#### Return Value
+## Return Value
 
 Returns `kIOReturnSuccess` on success.
 
-#### Overview
+## Overview
 
 This method is called internally to attach the network interface to the BSD data link layer, after an unit number has been assigned. The calling context is not synchronized against the driver's work loop. Subclasses may override this method to perform additional setup before the network stack attach. The `getIfnet()` method will return the BSD interface being attached.
 

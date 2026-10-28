@@ -24,7 +24,7 @@ class UICommand
 @interface UICommand : UIMenuElement
 ```
 
-#### Overview
+## Overview
 
 Create a [`UICommand`](./uicommand.md) object when you want a menu element that performs its action in a selector available in the responder chain.
 

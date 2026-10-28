@@ -14,7 +14,7 @@ A 2D Perlin noise generator.
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Parameter Types
+## Parameter Types
 
 **Noise 2D (float)**:
 
@@ -148,13 +148,13 @@ A 2D Perlin noise generator.
 | --- | --- |
 | `Out` | Vector3f |
 
-#### Parameter descriptions
+## Parameter descriptions
 
 - **`Amplitude`**: The intensity of the generated noise. The higher the amplitude, the more pronounced the variations of the noise pattern.
 - **`Pivot`**: The neutral value of the noise. This value is the noise’s minimum value, and is added to the output after the output is multiplied by the amplitude.
 - **`Texture Coordinates`**: The 2D coordinate at which the data is read in order to map the texture onto a surface. The default is to use the current *UV* coordinates, in which *U* is the horizontal axis and *V* is the vertical axis.
 
-#### Discussion
+## Discussion
 
 The Noise 2D shader node procedurally generates Perlin noise patterns that you can use to add texture and variation to materials. All noise values that are procedurally generated are numbers between `0` and `1` before the amplitude and pivot are applied. Below is an example of a simple node graph that uses the Noise 2D Node to generate a black and white pattern procedurally:
 

@@ -20,7 +20,7 @@ A policy that doesn’t pass through alternate audio tracks from the source asse
 AVAssetTrackGroupOutputHandlingNone
 ```
 
-#### Discussion
+## Discussion
 
 Setting this policy tells the session to disregard alternate track group assignments in the original asset.
 

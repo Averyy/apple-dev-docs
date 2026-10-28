@@ -24,11 +24,11 @@ class func localizedString(forLabel label: String) -> String
 + (NSString *) localizedStringForLabel:(NSString *) label;
 ```
 
-#### Return Value
+## Return Value
 
 Returns a localized string for the label.
 
-#### Discussion
+## Discussion
 
 All predefined label constants are localized and this method returns their localized strings. A custom label will be returned as is, so this method can be used to convert all labels for display.
 

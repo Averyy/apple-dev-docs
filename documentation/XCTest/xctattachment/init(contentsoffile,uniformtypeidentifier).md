@@ -14,7 +14,7 @@ convenience init(contentsOfFile url: URL, uniformTypeIdentifier identifier: Stri
 + (instancetype) attachmentWithContentsOfFileAtURL:(NSURL *) url uniformTypeIdentifier:(NSString *) identifier;
 ```
 
-#### Discussion
+## Discussion
 
 Creates an attachment with an existing file on disk and type.
 

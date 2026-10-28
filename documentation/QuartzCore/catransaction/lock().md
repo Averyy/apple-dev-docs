@@ -24,7 +24,7 @@ class func lock()
 + (void) lock;
 ```
 
-#### Discussion
+## Discussion
 
 Core Animation uses a data model that promises not to corrupt the internal data structures when called from multiple threads concurrently, but not that data returned is still valid if the property was valid on another thread. By locking during a transaction you can ensure data that is read, modified, and set is correctly managed.
 

@@ -24,11 +24,11 @@ func decodeUIEdgeInsets(forKey key: String) -> UIEdgeInsets
 - (UIEdgeInsets) decodeUIEdgeInsetsForKey:(NSString *) key;
 ```
 
-#### Return Value
+## Return Value
 
 The edge insets data.
 
-#### Discussion
+## Discussion
 
 Use this method to decode edge inset information that was previously encoded using the [`encode(_:forKey:)`](./encode%28_,forkey%29-44zsc.md) method.
 

@@ -13,11 +13,11 @@
 u_int32_t ifnet_get_link_mib_data_length(ifnet_t interface);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the number of bytes of mib data associated with the interface.
 
-#### Discussion
+## Discussion
 
 Retrieve the size of the mib data.
 

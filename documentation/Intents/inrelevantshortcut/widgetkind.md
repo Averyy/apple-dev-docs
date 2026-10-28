@@ -31,7 +31,7 @@ var widgetKind: String? { get set }
 @property (atomic, copy, nullable) NSString * widgetKind;
 ```
 
-#### Discussion
+## Discussion
 
 To provide relevance information for a widget, use the same value for this property as for the [`kind`](../../WidgetKit/widgetinfo/kind.md) property of the widget’s configuration.
 

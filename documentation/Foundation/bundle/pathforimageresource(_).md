@@ -19,11 +19,11 @@ func pathForImageResource(_ name: NSImage.Name) -> String?
 - (NSString *) pathForImageResource:(NSImageName) name;
 ```
 
-#### Return Value
+## Return Value
 
 The absolute pathname of the resource file or `nil` if the file is not found.
 
-#### Discussion
+## Discussion
 
 Image resources are those files in the bundle that are recognized by the `NSImage` class, including those that can be converted using the Image IO framework.
 

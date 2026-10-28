@@ -15,7 +15,7 @@ Constants indicating the type of a device notification.
 enum tIOUSB30DeviceNotificationType : unsigned int;
 ```
 
-#### Discussion
+## Discussion
 
 For information about this type, see Table 8-18 of the USB 3.2 specification at [http://www.usb.org](http://www.usb.org).
 

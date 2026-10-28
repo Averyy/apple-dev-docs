@@ -24,7 +24,7 @@ func setCategory(_ category: AVAudioSession.Category, options: AVAudioSession.Ca
 - (BOOL) setCategory:(AVAudioSessionCategory) category withOptions:(AVAudioSessionCategoryOptions) options error:(NSError **) outError;
 ```
 
-#### Discussion
+## Discussion
 
 The audio session’s category defines how you intend to use audio in your app. Typically, you set the category before activating the session. You can also set the category while the session is active, but doing so results in an immediate route change.
 

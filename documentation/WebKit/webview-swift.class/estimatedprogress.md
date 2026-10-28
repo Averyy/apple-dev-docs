@@ -21,7 +21,7 @@ var estimatedProgress: Double { get }
 @property (nonatomic, readonly) double estimatedProgress;
 ```
 
-#### Discussion
+## Discussion
 
 A number ranging from `0` to `1.0` and, once a load completes, `1.0` until a new load starts, at which point it resets to `0`.
 

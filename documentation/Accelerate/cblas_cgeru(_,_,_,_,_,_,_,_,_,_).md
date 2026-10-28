@@ -25,7 +25,7 @@ func cblas_cgeru(_ ORDER: CBLAS_ORDER, _ M: __LAPACK_int, _ N: __LAPACK_int, _ A
 void cblas_cgeru(const enum CBLAS_ORDER ORDER, const __LAPACK_int M, const __LAPACK_int N, const __LAPACK_float_complex *ALPHA, const __LAPACK_float_complex *X, const __LAPACK_int INCX, const __LAPACK_float_complex *Y, const __LAPACK_int INCY, __LAPACK_float_complex *A, const __LAPACK_int LDA);
 ```
 
-#### Discussion
+## Discussion
 
 Computes `alpha*x*y' + A`.
 

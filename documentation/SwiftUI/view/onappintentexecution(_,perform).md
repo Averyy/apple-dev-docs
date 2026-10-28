@@ -20,11 +20,11 @@ nonisolated
 func onAppIntentExecution<I>(_ intent: I.Type = I.self, perform action: @escaping @MainActor (I) -> Void) -> some View where I : TargetContentProvidingIntent
 ```
 
-#### Return Value
+## Return Value
 
 A view that handles the specified app intent.
 
-#### Discussion
+## Discussion
 
 Add this modifier to a view and use it to receive app intents intended for one of your scenes. In your handler, use the contents of the app intent to configure the views of your scene. For example, retrieve the item from an `OpenIntent` type and display it in your views. Your closure runs before the app comes to the foreground and before the system calls the app intent’s `AppIntent/perform()` method, so you can use the closure to configure your interface in advance.
 

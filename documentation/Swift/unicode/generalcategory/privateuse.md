@@ -21,7 +21,7 @@ A private-use character.
 case privateUse
 ```
 
-#### Discussion
+## Discussion
 
 This value corresponds to the category `Private_Use` (abbreviated `Co`) in the [Unicode Standard](https://unicode.org/reports/tr44/#General_Category_Values).
 

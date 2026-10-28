@@ -25,11 +25,11 @@ func CFRunLoopObserverIsValid(_ observer: CFRunLoopObserver!) -> Bool
 extern Boolean CFRunLoopObserverIsValid(CFRunLoopObserverRef observer);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if `observer` is valid, otherwise `false`.
 
-#### Discussion
+## Discussion
 
 A nonrepeating observer is automatically invalidated after it is called once.
 

@@ -21,7 +21,7 @@ Specifies that decoding supports the JSON5 syntax.
 var allowsJSON5: Bool { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The JSON5 Data Interchange Format is a superset of JSON that enhances human-readability of the JSON syntax. The JSON5 standard allows the following:
 
@@ -30,7 +30,7 @@ The JSON5 Data Interchange Format is a superset of JSON that enhances human-read
 - Single- and multi-line comments, using `//` and `/* … */` syntax.
 - Enhanced number formatting support, including hexadecimal, leading or trailing decimal point, explicit plus sign, and IEEE 754 positive infinity, negative infinity, and `NaN`.
 
-##### Using JSON5 in Attributed Strings
+### Using JSON5 in Attributed Strings
 
 The Markdown syntax supported by [`AttributedString`](../attributedstring.md) uses JSON5 to support an extended attribute syntax. Automatic grammar agreement uses this syntax for its `inflect` attribute, as do custom attributes defined by third-party frameworks. Use the syntax `^[text](attribute: value)` to mark ranges of text decorated with a custom attribute, like this:
 

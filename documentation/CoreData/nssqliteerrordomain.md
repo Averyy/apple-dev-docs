@@ -25,7 +25,7 @@ let NSSQLiteErrorDomain: String
 extern NSString * const NSSQLiteErrorDomain;
 ```
 
-#### Discussion
+## Discussion
 
 The value of “code” corresponds to preexisting values in SQLite.
 

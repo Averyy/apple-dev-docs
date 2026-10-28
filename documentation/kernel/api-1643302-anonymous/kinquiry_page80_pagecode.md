@@ -13,7 +13,7 @@
 kINQUIRY_Page80_PageCode = 0x80
 ```
 
-#### Discussion
+## Discussion
 
 Page Code 80h.
 

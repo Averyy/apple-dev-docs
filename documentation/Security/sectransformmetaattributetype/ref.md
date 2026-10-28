@@ -21,7 +21,7 @@ case ref
 kSecTransformMetaAttributeRef
 ```
 
-#### Discussion
+## Discussion
 
 This reference allows for direct access to an attribute without having to look up the attribute by name. If a transform commonly uses an attribute, using a reference speeds up the use of that attribute. Attribute references are not visible or valid from outside of the particular transform instance.
 

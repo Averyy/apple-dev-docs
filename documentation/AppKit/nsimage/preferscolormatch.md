@@ -19,7 +19,7 @@ var prefersColorMatch: Bool { get set }
 @property BOOL prefersColorMatch;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), the image attempts to match the color capabilities of the rendering device first. When it is [`false`](../../Swift/false.md), the image prefers resolution-matching first. The default value is [`true`](../../Swift/true.md). Both color-matching and resolution-matching may influence the choice of an image representation. You use this method to choose which technique should be used first during the selection process.
 

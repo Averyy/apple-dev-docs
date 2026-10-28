@@ -25,7 +25,7 @@ protocol MKLocalSearchCompleterDelegate : NSObjectProtocol
 @protocol MKLocalSearchCompleterDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 You use this protocol when implementing an autocomplete solution for a map in your app. As the user types search terms, use an [`MKLocalSearchCompleter`](./mklocalsearchcompleter.md) object to start searching for valid completions. The delegate you assign to that object needs to conform to this protocol. As it receives completions, the local search completer calls the methods of this protocol to deliver the results.
 

@@ -25,7 +25,7 @@ static var opaqueMemory: NSPointerFunctions.Options { get }
 NSPointerFunctionsOpaqueMemory
 ```
 
-#### Discussion
+## Discussion
 
 This is usually the preferred memory option for holding arbitrary pointers.
 

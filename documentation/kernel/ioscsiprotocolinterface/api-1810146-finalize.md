@@ -12,11 +12,11 @@ virtual bool finalize (
  IOOptionBits options );
 ```
 
-#### Return Value
+## Return Value
 
 `true`.
 
-#### Overview
+## Overview
 
 See IOService.h Subclasses may override this method, but should call super::finalize().
 

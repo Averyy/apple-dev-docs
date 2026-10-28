@@ -22,7 +22,7 @@ var mode: FromToByAction<Transform>.TransformMode? { get }
 
 Available when `Value` is `Transform`.
 
-#### Discussion
+## Discussion
 
 > **Note**: The expection to this mode is `by`. This property is relative to the starting value, Set this to `nil` if only `by` is specified.
 

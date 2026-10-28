@@ -21,7 +21,7 @@ func beginCustomizingItems(_ items: [UITabBarItem])
 - (void) beginCustomizingItems:(NSArray<UITabBarItem *> *) items;
 ```
 
-#### Discussion
+## Discussion
 
 This method presents a custom interface that lets the user replace existing tab bar items with items in the specified array. The interface also lets the user rearrange items on the tab bar, but it does not let the user change the total number of items. The interface includes a Done button that automatically dismisses the interface. You can also dismiss the interface programmatically using the [`endCustomizing(animated:)`](./endcustomizing%28animated%29.md) method.
 

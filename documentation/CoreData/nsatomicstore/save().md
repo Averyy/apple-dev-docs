@@ -25,11 +25,11 @@ func save() throws
 - (BOOL) save:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 You override this method to make persistent the necessary information from the cache nodes to the URL specified for the receiver.
 
-##### Special Considerations
+### Special Considerations
 
 You must override this method.
 

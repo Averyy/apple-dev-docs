@@ -22,7 +22,7 @@ case displace
 UISplitViewControllerSplitBehaviorDisplace
 ```
 
-#### Discussion
+## Discussion
 
 This split behavior shows one or both sidebars tiled next to the secondary view controller. If both sidebars are visible, they partially displace the secondary view controller offscreen to make space for the primary column. The secondary view controller is dimmed out, preventing interaction with its view.
 

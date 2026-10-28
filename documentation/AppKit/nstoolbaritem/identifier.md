@@ -22,7 +22,7 @@ struct Identifier
 typedef NSString * NSToolbarItemIdentifier;
 ```
 
-#### Overview
+## Overview
 
 If you configure an [`NSToolbarItem`](../nstoolbaritem.md) in Interface Builder with one of the standard identifiers, AppKit configures the toolbar item for you automatically when you load your interface. Similarly, if your toolbar delegate returns them as part of the default or allowed set of items, AppKit handles their configuration. When your delegate provides standard identifiers, AppKit doesn’t call the [`toolbar(_:itemForItemIdentifier:willBeInsertedIntoToolbar:)`](../nstoolbardelegate/toolbar%28_,itemforitemidentifier,willbeinsertedintotoolbar%29.md) method for them.
 

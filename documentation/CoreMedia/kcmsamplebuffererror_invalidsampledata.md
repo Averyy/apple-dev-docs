@@ -25,7 +25,7 @@ var kCMSampleBufferError_InvalidSampleData: OSStatus { get }
 kCMSampleBufferError_InvalidSampleData
 ```
 
-#### Discussion
+## Discussion
 
 This error only occurs for operations that inspect their sample data.
 

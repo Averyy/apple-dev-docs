@@ -21,7 +21,7 @@ A type for specifying the CloudKit container used for syncing tips.
 struct CloudKitContainer
 ```
 
-#### Overview
+## Overview
 
 For more information on CloudKit syncing, see [`cloudKitContainer(_:)`](./cloudkitcontainer%28_%29.md).
 

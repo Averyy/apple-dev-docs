@@ -16,7 +16,7 @@ Updates the interface controller’s set of views immediately, if updates are pe
 @preconcurrency func updateBodyIfNeeded()
 ```
 
-#### Discussion
+## Discussion
 
 Calling this method forces the hosting controller to update its current set of views, but only if there are pending changes. If there are no pending changes, this method does nothing.
 

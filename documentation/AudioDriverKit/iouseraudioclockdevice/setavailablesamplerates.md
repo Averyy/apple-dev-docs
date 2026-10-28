@@ -15,11 +15,11 @@ Sets the available sample rates for the clock device.
 kern_return_t SetAvailableSampleRates(const double *in_sample_rates, size_t in_num_rates);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. For a list of error codes, see [Error Codes](../../DriverKit/error-codes.md).
 
-#### Discussion
+## Discussion
 
 If successful, changing the available sample rates sends a notification to the host to update the object state.
 

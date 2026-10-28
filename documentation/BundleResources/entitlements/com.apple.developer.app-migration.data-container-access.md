@@ -15,7 +15,7 @@ An entitlement required for app extensions to perform a one-time transfer of on-
 - **Name**: `com.apple.developer.app-migration.data-container-access` (App Identifier for OS Data Transfer)
 - **Type**: array of string 
 
-#### Discussion
+## Discussion
 
 Use this entitlement with the app extension that implements the [`AppMigrationExtension`](../../AppMigrationKit/appmigrationextension.md) protocol from the [AppMigrationKit](../../AppMigrationKit/AppMigrationKit.md) framework.
 

@@ -16,7 +16,7 @@ Handles notification session termination.
 func didInvalidate()
 ```
 
-#### Discussion
+## Discussion
 
 Clean up resources and clear stored session references when the system calls this method.
 

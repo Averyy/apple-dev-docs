@@ -21,7 +21,7 @@ The signature encryption key that the context requires to sign an encrypted arch
 var signatureEncryptionKey: SymmetricKey? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 You require the signature encryption key to sign an encrypted archive after you’ve created and sealed it. The signature encryption key is sufficient, that is, you don’t require the encryption credentials used to encrypt the archive to sign the archive after sealing.
 

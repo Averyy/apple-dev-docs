@@ -15,13 +15,13 @@ The object for defining conditions that apply a conditional style to a row.
 object TableRowSelector
 ```
 
-#### Discussion
+## Discussion
 
 Use the `TableRowSelector` object to set the criteria for applying conditional styles to rows. For example, you could set criteria to select all odd rows, all even rows, or a single row.
 
 You can use this object in [`ConditionalTableRowStyle`](./conditionaltablerowstyle.md).
 
-##### Example
+### Example
 
 ```json
 {

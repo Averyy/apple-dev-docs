@@ -17,11 +17,11 @@ Provides access to the positions of all the vertices within a callback.
 final func withPositions<Result>(_ callback: (Span<SIMD3<Float>>) -> Result) -> Result
 ```
 
-#### Return Value
+## Return Value
 
 The value returned by `callback`.
 
-#### Discussion
+## Discussion
 
 The provided span is only valid for the lifetime of the callback.
 

@@ -24,7 +24,7 @@ enum MTLTessellationPartitionMode
 enum MTLTessellationPartitionMode : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 The table lists the tessellation factor range for each partitioning mode.
 

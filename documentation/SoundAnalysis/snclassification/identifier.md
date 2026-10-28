@@ -25,7 +25,7 @@ var identifier: String { get }
 @property (copy, readonly) NSString * identifier;
 ```
 
-#### Discussion
+## Discussion
 
 An example `identifier` might be a string like `laughter` or `applause`*.* The sound classifier’s underlying model defines the possible string values, which are typically technical names that you don’t directly present in your app’s user interface.
 

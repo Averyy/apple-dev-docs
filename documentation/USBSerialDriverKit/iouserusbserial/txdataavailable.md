@@ -15,7 +15,7 @@ Notifies your driver that the system has data for you to transmit to the device.
 virtual void TxDataAvailable();
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation of this method initiates an asynchronous operation to transmit the buffered data to the device.
 

@@ -21,7 +21,7 @@ init?(data: Data)
 - (instancetype) initWithData:(NSData *) data;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized APDU object.
 

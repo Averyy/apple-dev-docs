@@ -18,11 +18,11 @@ Preprocesses the asset by generating a disparity track, writing the result to th
 - (NSProgress *) preprocessAssetWithConfiguration:(CNAssetPreprocessConfiguration *) configuration completionHandler:(void (^)(CNAssetInfo *assetInfo, NSError *error)) completionHandler;
 ```
 
-#### Return Value
+## Return Value
 
 A \c NSProgress tracking preprocessing progress.
 
-#### Discussion
+## Discussion
 
 Ensure \c resourceStatus is ready before calling — download resources first if needed.
 

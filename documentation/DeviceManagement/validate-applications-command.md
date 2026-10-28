@@ -13,11 +13,11 @@ Force validation of developer and universal provisioning profiles for enterprise
 - tvOS 10.2+
 - visionOS 1.1+
 
-#### Discussion
+## Discussion
 
 Refer to the following sections to determine supported channels and requirements, and to see an example request and response.
 
-##### Command availability
+### Command availability
 
 |  |  |
 | --- | --- |
@@ -27,7 +27,7 @@ Refer to the following sections to determine supported channels and requirements
 | Allowed in user enrollment | iOS, visionOS |
 | Required access right | AllowAppInstallation |
 
-##### Example request and response
+### Example request and response
 
 **Request**:
 

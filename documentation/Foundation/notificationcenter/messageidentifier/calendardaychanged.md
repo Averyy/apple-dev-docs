@@ -23,7 +23,7 @@ static var calendarDayChanged: NotificationCenter.BaseMessageIdentifier<Calendar
 
 Available when `Self` is `NotificationCenter.BaseMessageIdentifier<Calendar.CalendarDayChangedMessage>`.
 
-#### Discussion
+## Discussion
 
 Use this identifier with [`NotificationCenter`](../../notificationcenter.md)’s `addObserver(of:for:using:)` or `messages(of:for:bufferSize:)` methods to observe messages of type [`Calendar.CalendarDayChangedMessage`](../../calendar/calendardaychangedmessage.md).
 

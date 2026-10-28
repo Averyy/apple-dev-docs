@@ -16,7 +16,7 @@ The encoding quality to use for this image format.
 var encodingQuality: Float { get }
 ```
 
-#### Discussion
+## Discussion
 
 The meaning of the value is format-specific with `0.0` being the lowest supported encoding quality and `1.0` being the highest supported encoding quality. The value of this property is ignored for image formats that do not support variable encoding quality.
 

@@ -23,11 +23,11 @@ var visibleCells: [UICollectionViewCell] { get }
 @property (nonatomic, readonly) NSArray<__kindof UICollectionViewCell *> * visibleCells;
 ```
 
-#### Return Value
+## Return Value
 
 An array of [`UICollectionViewCell`](../uicollectionviewcell.md) objects. If no cells are visible, this method returns an empty array.
 
-#### Discussion
+## Discussion
 
 This method returns the complete list of visible cells displayed by the collection view.
 

@@ -19,7 +19,7 @@ func PMPrinterGetName(_ printer: PMPrinter) -> Unmanaged<CFString>?
 CFStringRef PMPrinterGetName(PMPrinter printer);
 ```
 
-#### Return Value
+## Return Value
 
 The name of the specified printer. This name identifies the printer in the user interface. You should not release the string without first retaining it.
 

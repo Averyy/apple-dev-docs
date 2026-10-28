@@ -21,7 +21,7 @@ Modifies a parse strategy to parse a URL’s port component in accordance with t
 func port(_ strategy: URL.ParseStrategy.ComponentParseStrategy<Int> = .optional) -> URL.ParseStrategy
 ```
 
-#### Return Value
+## Return Value
 
 A modified [`URL.ParseStrategy`](../parsestrategy.md) that incorporates the specified behavior.
 

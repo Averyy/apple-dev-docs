@@ -27,7 +27,7 @@ convenience init(recordZoneIDs: [CKRecordZone.ID], optionsByRecordZoneID: [CKRec
 - (instancetype) initWithRecordZoneIDs:(NSArray<CKRecordZoneID *> *) recordZoneIDs optionsByRecordZoneID:(NSDictionary<CKRecordZoneID *,CKFetchRecordZoneChangesOptions *> *) optionsByRecordZoneID;
 ```
 
-#### Discussion
+## Discussion
 
 CloudKit configures the operation for retrieving all of the record zones that you specify. If you want to reduce the amount of data that CloudKit returns, provide zone options for each record zone.
 

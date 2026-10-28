@@ -15,7 +15,7 @@ Creates a USB accessory from an XPC representation.
 init?(XPCRepresentation xpcRepresentation: xpc_object_t)
 ```
 
-#### Return Value
+## Return Value
 
 An `AAUSBAccessory` object if the framework decoded the provided `xpc_object_t`, or `nil` if it’s invalid.
 

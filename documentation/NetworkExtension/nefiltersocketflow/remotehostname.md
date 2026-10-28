@@ -23,7 +23,7 @@ var remoteHostname: String? { get }
 @property (readonly, nullable) NSString * remoteHostname;
 ```
 
-#### Discussion
+## Discussion
 
 This property is only populated for flows originating from create-by-name APIs like [`URLSession`](../../Foundation/urlsession.md) or [Network](../../Network/Network.md).
 

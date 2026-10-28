@@ -22,7 +22,7 @@ Returns a Boolean value indicating whether the given element is contained within
 func contains(_ element: Self.Bound) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if `element` is contained in the range expression; otherwise, `false`.
 

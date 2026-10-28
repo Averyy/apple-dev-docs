@@ -19,7 +19,7 @@ var accessoryController: NSViewController? { get set }
 @property (strong, nullable) NSViewController * accessoryController;
 ```
 
-#### Discussion
+## Discussion
 
 The PDF panel passes an [`NSPDFInfo`](../nspdfinfo.md) object to the accessory view controller to display the various attributes associated with the PDF file. Unlike a print panel (that is, an [`NSPrintPanel`](../nsprintpanel.md) object), a PDF panel can have only one accessory view.
 

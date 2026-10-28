@@ -20,7 +20,7 @@ A value containing an original gesture value along with a targeted entity.
 struct EntityTargetValue<Value>
 ```
 
-#### Overview
+## Overview
 
 Spatial data from a [`location`](../SwiftUI/draggesture/value/location.md) returned by a gesture can be converted to and from the entity using functions defined in [`RealityCoordinateSpaceConverting`](./realitycoordinatespaceconverting.md).
 

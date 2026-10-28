@@ -5,7 +5,7 @@
 
 The pixel formats, depth mask, texture layout, and other drawing-related settings you use to configure your drawing code.
 
-#### Overview
+## Overview
 
 A `cp_layer_configuration_t` type stores the configuration options for your app’s `cp_layer_t` object. When configuring the content for your app’s immersive space, use this type to specify information about the texture layouts, pixel formats, and rendering options you want. The system uses the provided information to initialize the `cp_layer_t` object. It also uses the information to create the Metal textures and other data structures that you use for each frame of content.
 

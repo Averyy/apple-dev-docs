@@ -24,11 +24,11 @@ func MusicEventIteratorDeleteEvent(_ inIterator: MusicEventIterator) -> OSStatus
 extern OSStatus MusicEventIteratorDeleteEvent(MusicEventIterator inIterator);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 
-#### Discussion
+## Discussion
 
 After calling this function, the music event iterator points to the event that follows the deleted event—if there is such an event. If the event you deleted was the final event, the iterator is then positioned immediately beyond the final event of the music track.
 

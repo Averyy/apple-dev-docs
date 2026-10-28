@@ -36,7 +36,7 @@ struct Transaction
 - [Implementing offer codes in your app](./implementing-offer-codes-in-your-app.md)
 - [Validating receipts with the App Store](./validating-receipts-with-the-app-store.md)
 
-#### Overview
+## Overview
 
 A *transaction* represents a successful Apple In-App Purchase. The App Store generates a transaction each time a customer purchases an Apple In-App Purchase product or renews a subscription. For each transaction that represents a current purchase, your app unlocks the purchased content or service and finishes the transaction.
 
@@ -49,7 +49,7 @@ Use the `Transaction` type to perform these transaction-related tasks:
 - Listen for new transactions while the app is running.
 - Begin a refund request from within your app.
 
-##### Access transaction history and current entitlements
+### Access transaction history and current entitlements
 
 Your app doesn’t create transaction objects. Instead, StoreKit automatically makes up-to-date transactions available to your app, including when someone launches the app for the first time.
 
@@ -64,7 +64,7 @@ You access transactions in several ways:
 
 The most important use of transaction information is for determining which Apple In-App Purchases the customer has paid access to, so your app can unlock the content or service. The [`currentEntitlements`](./transaction/currententitlements.md) API provides the information you need to unlock all of the customer’s paid content in your app. Use `currentEntitlements` to get a list of transactions for all the products the customer is currently entitled to, including non-consumable Apple In-App Purchases and currently active subscriptions.
 
-##### Verify transactions
+### Verify transactions
 
 The App Store cryptographically signs transaction information in JWS format. StoreKit automatically validates and returns the signed information, wrapped in a [`VerificationResult`](./verificationresult.md). When the `VerificationResult` wraps a `Transaction` value, it provides the raw JWS string in the [`jwsRepresentation`](./verificationresult/jwsrepresentation-21vgo.md) property. If you get a transaction through [`VerificationResult.verified(_:)`](./verificationresult/verified%28_%29.md), the information passed validation. If you get it through [`VerificationResult.unverified(_:_:)`](./verificationresult/unverified%28_,_%29.md), the information didn’t pass StoreKit’s automatic validation. Your app can immediately access the transaction information in the [Transaction properties](./transaction-properties.md).
 
@@ -76,7 +76,7 @@ If StoreKit returns a transaction as verified, the transaction is valid for the 
 
 For more information about JWS, see the [IETF RFC 7515](https://datatracker.ietf.org/doc/html/rfc7515) specification.
 
-##### Access purchases made with the original API
+### Access purchases made with the original API
 
 All Apple In-App Purchases that customers make are equally available to your app in this `Transaction` API, and in receipts using the [Original API for Apple In-App Purchase](./original-api-for-in-app-purchase.md), as follows:
 

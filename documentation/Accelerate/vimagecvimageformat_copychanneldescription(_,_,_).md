@@ -25,11 +25,11 @@ func vImageCVImageFormat_CopyChannelDescription(_ format: vImageCVImageFormat, _
 vImage_Error vImageCVImageFormat_CopyChannelDescription(vImageCVImageFormatRef format, const vImageChannelDescription *desc, vImageBufferTypeCode type);
 ```
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
-#### Discussion
+## Discussion
 
 ## Parameters
 

@@ -12,7 +12,7 @@ Score users’ ability to match PencilKit drawings generated from text, by acces
 - Mac Catalyst 14.0+
 - Xcode 11.5+
 
-#### Overview
+## Overview
 
 > **Note**: This sample code project is associated with WWDC20 session [10148: Inspect, Modify, and Construct PencilKit Drawings](https://developer.apple.com/videos/play/wwdc2020/10148/).
 

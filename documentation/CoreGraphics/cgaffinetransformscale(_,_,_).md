@@ -25,11 +25,11 @@ func CGAffineTransformScale(_ t: CGAffineTransform, _ sx: CGFloat, _ sy: CGFloat
 extern CGAffineTransform CGAffineTransformScale(CGAffineTransform t, CGFloat sx, CGFloat sy);
 ```
 
-#### Return Value
+## Return Value
 
 A new affine transformation matrix.
 
-#### Discussion
+## Discussion
 
 You use this function to create a new affine transformation matrix by adding scaling values to an existing affine transform. The resulting structure represents a new affine transform, which you can use (and reuse, if you want) to scale a coordinate system.
 

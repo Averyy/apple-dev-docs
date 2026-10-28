@@ -25,7 +25,7 @@ var activeProcessorCount: Int { get }
 @property (readonly) NSUInteger activeProcessorCount;
 ```
 
-#### Discussion
+## Discussion
 
 Whereas the [`processorCount`](./processorcount.md) property reports the number of advertised processing cores, the [`activeProcessorCount`](./activeprocessorcount.md) property reflects the actual number of active processing cores on the system. There are a number of different factors that may cause a core to not be active, including boot arguments, thermal throttling, or a manufacturing defect.
 

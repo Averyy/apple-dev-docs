@@ -17,7 +17,7 @@ Globally enable or disable [`compile(inputs:outputs:shapeless:_:)`](./compile%28
 func compile(enable: Bool = true)
 ```
 
-#### Discussion
+## Discussion
 
 Default is enabled.
 

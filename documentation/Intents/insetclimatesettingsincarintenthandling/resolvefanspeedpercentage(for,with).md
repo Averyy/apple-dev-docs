@@ -28,7 +28,7 @@ optional func resolveFanSpeedPercentage(for intent: INSetClimateSettingsInCarInt
 - (void) resolveFanSpeedPercentageForSetClimateSettingsInCar:(INSetClimateSettingsInCarIntent *) intent withCompletion:(void (^)(INDoubleResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to resolve the fan speed percentage. Use the intent object to identify the fan speed percentage specified by the user.
 

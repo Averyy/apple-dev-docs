@@ -21,7 +21,7 @@ The [`INInteraction`](../ininteraction.md) object could not be donated to the sy
 static var donatingInteraction: INIntentError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 To determine the low-level cause of the problem, check the value of [`NSUnderlyingErrorKey`](../../Foundation/nsunderlyingerrorkey.md) in the error object’s [`userInfo`](../../Foundation/nserror/userinfo.md) dictionary.
 

@@ -25,7 +25,7 @@ init(dataRepresentation: Data) throws
 - (instancetype) initWithDataRepresentation:(NSData *) dataRepresentation error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 A signature if the raw data is a valid signature; otherwise, `nil`.
 

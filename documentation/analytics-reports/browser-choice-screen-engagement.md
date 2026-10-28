@@ -5,7 +5,7 @@
 
 Measure how often your web browser app is being selected as the default from the browser choice screen  on iOS.
 
-#### Overview
+## Overview
 
 The Browser Choice Screen Engagement Report provides details about users’ selection of a default web browser from the browser choice screen, displayed the first time an EU user opens Safari on their iPhone. Use this report to understand the number of times your app was downloaded, launched, and selected from the browser choice screen.
 
@@ -20,7 +20,7 @@ The Browser Choice Screen Engagement Report provides details about users’ sele
 - Privacy: The Browser Choice Screen Engagement Report does not include sensitive fields easily relatable to user data.
 - Completeness: Due to late arriving events, you may expect to see updates in the daily, weekly, and monthly report instances for past dates on an ongoing basis. To learn more, see [Data Completeness and Corrections](./data-completeness-corrections.md).
 
-#### Report Fields
+## Report Fields
 
 | Report Field | Description | Data Type |
 | --- | --- | --- |
@@ -34,7 +34,7 @@ The Browser Choice Screen Engagement Report provides details about users’ sele
 | Counts | The total number of events that occurred. | `integer` |
 | Unique Devices | The count of unique devices on which the event occurred. | `integer` |
 
-#### Glossary
+## Glossary
 
 | Dimension | Value | Definition |
 | --- | --- | --- |

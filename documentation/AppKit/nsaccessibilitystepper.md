@@ -19,7 +19,7 @@ protocol NSAccessibilityStepper : NSAccessibilityElementProtocol
 @protocol NSAccessibilityStepper <NSAccessibilityElement>
 ```
 
-#### Overview
+## Overview
 
 Use this protocol when you want a user interface element to behave like a stepper—a control with up and down arrow buttons for incrementing or decrementing a value—in the accessibility hierarchy.
 

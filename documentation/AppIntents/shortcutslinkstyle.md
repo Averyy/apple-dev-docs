@@ -18,7 +18,7 @@ The styles to apply to buttons you use to open your app’s page in the Shortcut
 struct ShortcutsLinkStyle
 ```
 
-#### Overview
+## Overview
 
 Specify a [`ShortcutsLinkStyle`](./shortcutslinkstyle.md) value when you add a [`ShortcutsUIButton`](./shortcutsuibutton.md) or [`ShortcutsLink`](./shortcutslink.md) type to your interface. For the [`ShortcutsLink`](./shortcutslink.md) type, specify the style using the `AppIntents/ShortcutsLink/shortcutsLinkStyle(_:)` modifier.
 

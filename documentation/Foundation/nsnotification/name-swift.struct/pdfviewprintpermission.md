@@ -20,7 +20,7 @@ A notification posted when the user attempts to print without the appropriate pe
 static let PDFViewPrintPermission: NSNotification.Name
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is the `PDFView` object itself.
 

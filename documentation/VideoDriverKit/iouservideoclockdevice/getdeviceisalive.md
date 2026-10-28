@@ -15,7 +15,7 @@ Gets a Boolean value indicating if the device is alive.
 bool GetDeviceIsAlive();
 ```
 
-#### Discussion
+## Discussion
 
 The object’s work queue synchronizes access to the value. The default value is true when the device is created.
 

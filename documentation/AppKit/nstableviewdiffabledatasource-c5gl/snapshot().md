@@ -15,7 +15,7 @@ Returns a representation of the current state of the data in the table view.
 func snapshot() -> NSDiffableDataSourceSnapshot<SectionIdentifierType, ItemIdentifierType>
 ```
 
-#### Return Value
+## Return Value
 
 A snapshot that contains row and item identifiers in the order they appear in the UI.
 

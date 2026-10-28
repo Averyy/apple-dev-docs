@@ -9,7 +9,7 @@ Create localized descriptive information for an app.
 **Availability**:
 - App Store Connect API 1.0+
 
-#### Overview
+## Overview
 
 > ❗ **Important**:  A description is required for all `betaAppLocalizations` before you can submit to beta app review.
 

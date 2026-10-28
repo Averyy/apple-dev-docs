@@ -25,7 +25,7 @@ class func mediaSelectionOptions(from mediaSelectionOptions: [AVMediaSelectionOp
 + (NSArray<AVMediaSelectionOption *> *) mediaSelectionOptionsFromArray:(NSArray<AVMediaSelectionOption *> *) mediaSelectionOptions withLocale:(NSLocale *) locale;
 ```
 
-#### Return Value
+## Return Value
 
 An array containing the media selection options from `array` that match the `locale`.
 

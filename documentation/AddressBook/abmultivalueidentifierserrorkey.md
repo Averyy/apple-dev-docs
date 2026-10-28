@@ -19,7 +19,7 @@ let ABMultiValueIdentifiersErrorKey: String
 extern NSString * ABMultiValueIdentifiersErrorKey;
 ```
 
-#### Discussion
+## Discussion
 
 Its value is an array of the identifiers for the values in the multivalue that were invalid.
 

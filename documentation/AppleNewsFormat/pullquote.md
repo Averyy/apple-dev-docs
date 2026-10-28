@@ -22,11 +22,11 @@ object PullQuote
 - [Using HTML with Apple News Format](../AppleNews/using-html-with-apple-news-format.md)
 - [Using Markdown with Apple News Format](../AppleNews/using-markdown-with-apple-news-format.md)
 
-#### Discussion
+## Discussion
 
 A `PullQuote` is usually an excerpt from the body text. It generally duplicates that text in a format that increases its visibility. You can use pull quotes to break up long portions of text or to draw attention to the text in the pull quote.
 
-##### Example
+### Example
 
 ```json
 {

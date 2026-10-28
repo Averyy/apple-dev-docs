@@ -18,7 +18,7 @@ The mode to control framing of the subject when tracking.
 enum FramingMode
 ```
 
-#### Overview
+## Overview
 
 The default is [`DockAccessory.FramingMode.automatic`](./framingmode-swift.enum/automatic.md), which works well for most situations. [`DockAccessory.FramingMode.center`](./framingmode-swift.enum/center.md) keeps the subject close to the middle of frame. Similarly, [`DockAccessory.FramingMode.left`](./framingmode-swift.enum/left.md) and [`DockAccessory.FramingMode.right`](./framingmode-swift.enum/right.md) aligns the subject close to the left and right third of the frame (left, center, right).
 

@@ -15,7 +15,7 @@ The URL of the disk image.
 final let url: URL
 ```
 
-#### Discussion
+## Discussion
 
 For a standalone disk image, this is the URL of a disk image you provide that the framework uses to initialize this image. For a [`StackedImage`](../stackedimage.md), this is the URL of the top layer.
 

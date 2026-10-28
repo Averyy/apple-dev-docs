@@ -24,7 +24,7 @@ func stopCapture()
 - (void) stopCapture;
 ```
 
-#### Discussion
+## Discussion
 
 Calling this method stops a capture that was started manually in Xcode or programmatically by calling one of the methods on [`MTLCaptureManager`](../mtlcapturemanager.md).
 

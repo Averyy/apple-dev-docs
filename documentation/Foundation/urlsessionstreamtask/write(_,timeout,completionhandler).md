@@ -29,7 +29,7 @@ func write(_ data: Data, timeout: TimeInterval) async throws
 - (void) writeData:(NSData *) data timeout:(NSTimeInterval) timeout completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 There is no guarantee that the remote side of the stream has received all of the written bytes at the time that `completionHandler` is called, only that all of the data has been written to the kernel.
 

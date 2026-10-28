@@ -5,7 +5,7 @@
 
 Provides features for managing *event taps*—filters for observing and altering the stream of low-level user input events in macOS.
 
-#### Overview
+## Overview
 
 Event taps make it possible to monitor and filter input events from several points within the system, prior to their delivery to a foreground application. Event taps complement and extend the capabilities of the Carbon event monitor mechanism, which allows an application to observe input events delivered to other processes.
 

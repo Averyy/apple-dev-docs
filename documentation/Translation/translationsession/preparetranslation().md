@@ -18,7 +18,7 @@ Asks for permission to download translation languages without doing any translat
 func prepareTranslation() async throws
 ```
 
-#### Discussion
+## Discussion
 
 If you know ahead of time which languages the person needs to translate, you can prompt them to download those languages in advance by calling this method.
 

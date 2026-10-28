@@ -22,7 +22,7 @@ init(localizedTermsAndConditionsText: String, privacyPolicyURL: URL?, termsAndCo
 - (instancetype) initWithLocalizedTermsAndConditionsText:(NSString *) localizedTermsAndConditionsText privacyPolicyURL:(NSURL *) privacyPolicyURL termsAndConditionsURL:(NSURL *) termsAndConditionsURL;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized terms and conditions object or `nil` if the object could not be created.
 

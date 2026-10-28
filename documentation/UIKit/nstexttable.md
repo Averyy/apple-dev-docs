@@ -28,7 +28,7 @@ class NSTextTable
 
 - [Adding tables to attributed strings in UIKit](./adding-tables-to-attributed-strings.md)
 
-#### Overview
+## Overview
 
 `NSTextTable` is a subclass of [`NSTextBlock`](./nstextblock.md) that represents a complete table. You can configure the number of columns, whether adjacent cell borders collapse into one, and whether empty cells are hidden.
 

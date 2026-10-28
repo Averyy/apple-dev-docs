@@ -26,7 +26,7 @@ static let NSBundleResourceRequestLowDiskSpace: NSNotification.Name
 extern NSNotificationName const NSBundleResourceRequestLowDiskSpaceNotification;
 ```
 
-#### Discussion
+## Discussion
 
 After receiving this notification, the app should release any on-demand resources that are not required. Call [`endAccessingResources()`](../../nsbundleresourcerequest/endaccessingresources%28%29.md) to release the managed resources. If the app is in the background and the app does not free up enough space, it may be terminated.
 

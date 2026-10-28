@@ -23,7 +23,7 @@ var kCTFontTableJust: Int { get }
 kCTFontTableJust
 ```
 
-#### Discussion
+## Discussion
 
 Font table tag for justification.
 

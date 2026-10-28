@@ -25,7 +25,7 @@ func CGImageSourceCopyAuxiliaryDataInfoAtIndex(_ isrc: CGImageSource, _ index: I
 extern CFDictionaryRefCGImageSourceCopyAuxiliaryDataInfoAtIndex(CGImageSourceRef isrc, size_t index, CFStringRef auxiliaryImageDataType);
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary that contains the auxiliary data, or `NULL` if an error occurs.
 

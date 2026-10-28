@@ -5,7 +5,7 @@
 
 Improve your app’s shader performance by examining and editing your shaders.
 
-#### Overview
+## Overview
 
 The Metal debugger allows you to view and edit shaders with the Shader editor. After opening a shader, you can view and edit its source code, or the source code of any other file within the Metal library that the executed function requires. For more information, see [Inspecting the bound resources for a command](./inspecting-the-bound-resources-for-a-command.md).
 
@@ -13,7 +13,7 @@ When you profile the Metal workload, you can see per-line performance metrics. A
 
 > ❗ **Important**: Include source code when you capture a Metal workload because the Shader editor needs it to function correctly. For more information, see [Building your project with embedded shader sources](./building-your-project-with-embedded-shader-sources.md).
 
-##### Navigate your shader
+### Navigate your shader
 
 The Shader editor shows your source code in the context of an executed function, and includes familiar Xcode source-editing abilities, like [Fixing issues in your code as you type](./fixing-issues-in-your-code-as-you-type.md).
 
@@ -21,7 +21,7 @@ In addition to the source containing the executed function, you can also edit ot
 
 ![A screenshot of the Shader editor showing a list of shader source files on the left and the contents of the selected shader source file on the right.](https://developer.apple.com/tutorials/images/com.apple.Xcode/gputools-metal-debugger-se-source@2x.png)
 
-##### View per-line performance metrics
+### View per-line performance metrics
 
 You can view per-line performance metrics in the Shader editor after profiling finishes. This happens automatically if you select Profile after Replay in the Metal Capture popover (see [Capturing a Metal workload in Xcode](./capturing-a-metal-workload-in-xcode.md)) or Profile GPU Trace in the Replay window (see [Replaying a GPU trace file](./replaying-a-gpu-trace-file.md)). Alternatively, you can profile directly within the Shader editor by clicking the Generate button in the top right corner.
 
@@ -58,7 +58,7 @@ You can change the deployment target in the Xcode project settings. If you chang
 
 ![A screenshot of the Xcode project editor showing the drop-down menu to choose a minimum deployment target.](https://developer.apple.com/tutorials/images/com.apple.Xcode/gputools-metal-debugger-se-deployment-target@2x.png)
 
-##### Update your shader
+### Update your shader
 
 After changing a shader, you can update the captured frame with the new source code by clicking the Reload Shaders button in the debug bar.
 

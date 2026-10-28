@@ -24,7 +24,7 @@ var averageVideoBitrate: Double { get }
 @property (nonatomic, readonly) double averageVideoBitrate;
 ```
 
-#### Discussion
+## Discussion
 
 The property corresponds to “c-avg-video-bitrate”.
 

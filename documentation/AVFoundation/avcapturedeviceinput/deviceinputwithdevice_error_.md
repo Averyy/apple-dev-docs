@@ -19,7 +19,7 @@ Returns a new input for the specified capture device.
 + (instancetype) deviceInputWithDevice:(AVCaptureDevice *) device error:(NSError **) outError;
 ```
 
-#### Return Value
+## Return Value
 
 A new capture input.
 

@@ -25,7 +25,7 @@ var rawAttestationObject: Data? { get }
 @property (nonatomic, copy, readonly, nullable) NSData * rawAttestationObject;
 ```
 
-#### Discussion
+## Discussion
 
 This object contains the public key. If you request it, it also contains the attestation statement. To learn more, see the [W3C Web Authentication specification](https://www.w3.org/TR/webauthn-2/#attestation-object).
 

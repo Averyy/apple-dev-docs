@@ -21,7 +21,7 @@ An error that indicates the scalable data frame is missing one of the requested 
 case missingColumn(String)
 ```
 
-#### Discussion
+## Discussion
 
 The associated value contains a description of the error.
 

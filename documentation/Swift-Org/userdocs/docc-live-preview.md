@@ -13,7 +13,7 @@ Show a live preview of your Swift documentation while editing.
 **Availability**:
 - Swift 6.2+
 
-#### Overview
+## Overview
 
 The Swift toolchain provides DocC, which compiles documentation for your Swift package. You can distribute compiled documentation to developers, or host the content. It’s what this project used to make its documentation! You can learn more about DocC by reading [the documentation on the Swift organization’s website](https://www.swift.org/documentation/docc/).
 

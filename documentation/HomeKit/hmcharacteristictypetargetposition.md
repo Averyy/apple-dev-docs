@@ -24,7 +24,7 @@ let HMCharacteristicTypeTargetPosition: String
 extern NSString * const HMCharacteristicTypeTargetPosition;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is an integer percentage. A value of `0` indicates a door or window should be fully closed, or that awnings or shades should permit the least possible light. A value of `100` indicates the opposite.
 

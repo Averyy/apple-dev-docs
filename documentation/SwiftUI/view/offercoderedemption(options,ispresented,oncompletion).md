@@ -20,7 +20,7 @@ nonisolated
 func offerCodeRedemption(options: Set<RedeemOption>, isPresented: Binding<Bool>, onCompletion: @escaping @MainActor (Result<VerificationResult<Transaction>, any Error>) -> Void) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 The [`offerCodeRedemption(options:isPresented:onCompletion:)`](./offercoderedemption%28options,ispresented,oncompletion%29.md) method displays a system sheet where customers can enter and redeem offer codes. If you generate offer codes in App Store Connect, call this method to enable customers to redeem the offer. To display the sheet using UIKit, see `presentOfferCodeRedeemSheet(from:options:)`.
 

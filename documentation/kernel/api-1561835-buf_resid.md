@@ -15,11 +15,11 @@ Get a count of bytes which were not consumed by an I/O on a buffer.
 uint32_t buf_resid(buf_t bp);
 ```
 
-#### Return Value
+## Return Value
 
 Count of unwritten/unread bytes.
 
-#### Discussion
+## Discussion
 
 Set when an I/O operations completes.
 

@@ -22,7 +22,7 @@ class INCancelRideIntent
 @interface INCancelRideIntent : INIntent
 ```
 
-#### Overview
+## Overview
 
 When the user cancels a ride that was previously booked through Siri or Maps, SiriKit sends an [`INCancelRideIntent`](./incancelrideintent.md) object to your handler. SiriKit populates this intent object with the ride identifier that you provided when originally booking the ride. Upon receiving this intent, verify the ride information and cancel the ride accordingly.
 
@@ -30,7 +30,7 @@ To handle this intent, the handler object in your Intents extension must adopt t
 
 SiriKit prefers sending this intent object to your extension over canceling a ride by other means. So when responding to an [`INRequestRideIntent`](./inrequestrideintent.md) object, you can continue to set the [`userActivityForCancelingInApplication`](./inridestatus/useractivityforcancelinginapplication.md) property of your response’s [`INRideStatus`](./inridestatus.md) object to allow cancellation of the ride in your app. SiriKit uses that [`NSUserActivity`](../Foundation/nsuseractivity.md) object only on systems where this intent is unavailable or not supported by your extension.
 
-##### Additional Intent Attributes
+### Additional Intent Attributes
 
 The following table lists additional attributes of this intent object:
 

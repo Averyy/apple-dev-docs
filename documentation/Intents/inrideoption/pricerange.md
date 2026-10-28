@@ -36,7 +36,7 @@ var priceRange: INPriceRange? { get set }
 
 - [Generating a List of Ride Options](../../SiriKit/generating-a-list-of-ride-options.md)
 
-#### Discussion
+## Discussion
 
 Use this property to specify the approximate cost of the ride. Price ranges should reflect the actual price you plan to charge and should include any special pricing that currently applies. If the ride option also includes separate line items, display those items separately.
 

@@ -25,7 +25,7 @@ func highlightCenterHighlightsDidChange(_ highlightCenter: SWHighlightCenter)
 - (void) highlightCenterHighlightsDidChange:(SWHighlightCenter *) highlightCenter;
 ```
 
-#### Discussion
+## Discussion
 
 When the system calls this method, the app updates any displayed highlights to match the updated list. Only the highlights provided by the system should have a shared indication. If no highlights are in the list, the app should remove any links previously indicated.
 

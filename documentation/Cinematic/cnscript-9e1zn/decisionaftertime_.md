@@ -19,11 +19,11 @@ The decision that occurs after the given time.
 - (CNDecision *) decisionAfterTime:(CMTime) time;
 ```
 
-#### Return Value
+## Return Value
 
 The decision that occurred after the given time.
 
-#### Discussion
+## Discussion
 
 Pass the time of an existing decision to find the next one.
 

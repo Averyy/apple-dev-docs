@@ -17,7 +17,7 @@ Provides a list of the pasteboard types that the `NSSound` class can accept.
 + (NSArray *) soundUnfilteredPasteboardTypes;
 ```
 
-#### Return Value
+## Return Value
 
 Array of pasteboard types that the `NSSound` class can accept.
 

@@ -25,7 +25,7 @@ var contextExpression: NSExpression { get }
 @property (strong, readonly) NSExpression * contextExpression;
 ```
 
-#### Discussion
+## Discussion
 
 The expression must evaluate to an [`NSManagedObjectContext`](../nsmanagedobjectcontext.md) object.
 

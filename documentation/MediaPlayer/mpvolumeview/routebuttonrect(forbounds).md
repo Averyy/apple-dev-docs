@@ -24,11 +24,11 @@ func routeButtonRect(forBounds bounds: CGRect) -> CGRect
 - (CGRect) routeButtonRectForBounds:(CGRect) bounds;
 ```
 
-#### Return Value
+## Return Value
 
 The computed drawing rectangle for the route button.
 
-#### Discussion
+## Discussion
 
 Use this method to retrieve the bounding rectangle for the route button.
 

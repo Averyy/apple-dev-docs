@@ -24,7 +24,7 @@ func IOSurfaceCreateMachPort(_ buffer: IOSurfaceRef) -> mach_port_t
 mach_port_t IOSurfaceCreateMachPort(IOSurfaceRef buffer);
 ```
 
-#### Discussion
+## Discussion
 
 This is useful if you need to atomically or securely pass an IOSurface to another task without making the surface global to the entire system. The returned port must be deallocated with mach_port_deallocate or the equivalent.
 

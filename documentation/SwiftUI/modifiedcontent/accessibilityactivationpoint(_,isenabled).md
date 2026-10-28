@@ -31,7 +31,7 @@ nonisolated
 func accessibilityActivationPoint(_ activationPoint: UnitPoint, isEnabled: Bool) -> ModifiedContent<Content, Modifier>
 ```
 
-#### Discussion
+## Discussion
 
 Use this modifier to ensure that the activation point for a small element remains accurate even if you present a larger version of the element to VoiceOver.
 

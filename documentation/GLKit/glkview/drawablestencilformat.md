@@ -23,7 +23,7 @@ var drawableStencilFormat: GLKViewDrawableStencilFormat { get set }
 @property (nonatomic) GLKViewDrawableStencilFormat drawableStencilFormat;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`GLKViewDrawableStencilFormat.formatNone`](../glkviewdrawablestencilformat/formatnone.md).
 

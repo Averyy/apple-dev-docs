@@ -17,8 +17,8 @@ The identifiers of source sample data tracks in the composition that the object 
 ## Declaration
 
 ```swift
-@objc
-(_sourceSampleDataTrackIDs) override dynamic var sourceSampleDataTrackIDs: [CMPersistentTrackID] { get set }
+@objc(_sourceSampleDataTrackIDs)
+override dynamic var sourceSampleDataTrackIDs: [CMPersistentTrackID] { get set }
 ```
 
 ## See Also

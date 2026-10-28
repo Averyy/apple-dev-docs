@@ -23,11 +23,11 @@ init(target: Any?, action: Selector?)
 - (instancetype) initWithTarget:(id) target action:(SEL) action;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized instance of a concrete [`UIGestureRecognizer`](../uigesturerecognizer.md) subclass.
 
-#### Discussion
+## Discussion
 
 This method is the designated initializer. After creating the gesture recognizer, you may associate other target-action pairs with it by calling [`addTarget(_:action:)`](./addtarget%28_,action%29.md).
 

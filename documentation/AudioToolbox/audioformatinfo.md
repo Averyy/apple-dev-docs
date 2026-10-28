@@ -24,7 +24,7 @@ struct AudioFormatInfo
 struct AudioFormatInfo;
 ```
 
-#### Overview
+## Overview
 
 Use this value with the [`kAudioFormatProperty_FormatList`](./kaudioformatproperty_formatlist.md) property.
 

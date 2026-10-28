@@ -25,7 +25,7 @@ var voice: AVSpeechSynthesisVoice? { get set }
 @property (nonatomic, retain, nullable) AVSpeechSynthesisVoice * voice;
 ```
 
-#### Discussion
+## Discussion
 
 If you don’t specify a voice, the speech synthesizer uses the system’s default voice to speak the utterance.
 

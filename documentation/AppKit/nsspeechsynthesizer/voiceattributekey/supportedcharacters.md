@@ -19,7 +19,7 @@ static let supportedCharacters: NSSpeechSynthesizer.VoiceAttributeKey
 extern NSVoiceAttributeKey const NSVoiceSupportedCharacters;
 ```
 
-#### Discussion
+## Discussion
 
 A dictionary containing two keys: “UnicodeCharBegin”, an integer value containing the beginning Unicode id of this range; and “UnicodeCharBegin”, an integer value containing the ending Unicode id of this range. The synthesizer converts or ignores any characters not contained in the range of supported characters.
 

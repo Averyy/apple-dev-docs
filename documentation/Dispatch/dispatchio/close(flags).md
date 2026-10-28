@@ -21,7 +21,7 @@ Closes the channel to new read and write operations.
 func close(flags: DispatchIO.CloseFlags = [])
 ```
 
-#### Discussion
+## Discussion
 
 After calling this method, do not schedule any more read or write operations on the channel. Doing so causes an error to be sent to your handler.
 

@@ -21,7 +21,7 @@ A view modifier that controls the frame sizing and content alignment behavior fo
 @preconcurrency func realityViewLayoutBehavior(_ layoutOption: RealityViewLayoutOption) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 This modifier is only accounted for after the end of the `make` closure. It isn’t checked on any calls to the `update` closure.
 

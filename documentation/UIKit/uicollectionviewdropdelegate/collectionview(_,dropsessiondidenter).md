@@ -22,7 +22,7 @@ optional func collectionView(_ collectionView: UICollectionView, dropSessionDidE
 - (void) collectionView:(UICollectionView *) collectionView dropSessionDidEnter:(id<UIDropSession>) session;
 ```
 
-#### Discussion
+## Discussion
 
 The collection view calls this method when dragged content enters its bounds rectangle. The method isn’t called again until the dragged content exits the collection view’s bounds (triggering a call to the [`collectionView(_:dropSessionDidExit:)`](./collectionview%28_,dropsessiondidexit%29.md) method) and enters again.
 

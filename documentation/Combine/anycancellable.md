@@ -25,7 +25,7 @@ final class AnyCancellable
 
 - [Controlling Publishing with Connectable Publishers](./controlling-publishing-with-connectable-publishers.md)
 
-#### Overview
+## Overview
 
 Subscriber implementations can use this type to provide a “cancellation token” that makes it possible for a caller to cancel a publisher, but not to use the [`Subscription`](./subscription.md) object to request items.
 

@@ -19,17 +19,17 @@ class NSButtonCell
 @interface NSButtonCell : NSActionCell
 ```
 
-#### Overview
+## Overview
 
 Setting the integer, float, double, or object value of an `NSButtonCell` object results in a call to [`state`](./nscell/state.md) with the value converted to integer. In the case of [`objectValue`](./nscell/objectvalue.md), `nil` is equivalent to `0`, and a non-`nil` object that doesn’t respond to [`intValue`](./nscell/intvalue.md) sets the state to `1`. Otherwise, the state is set to the object’s [`intValue`](./nscell/intvalue.md). Similarly, for most button types, querying the integer, float, double, or object value of an `NSButtonCell` returns the current state in the requested representation. In the case of [`objectValue`](./nscell/objectvalue.md), this is an `NSNumber` containing [`true`](../Swift/true.md) for on, [`false`](../Swift/false.md) for off, and integer value `-1` for the mixed state. For accelerator buttons (type [`NSAcceleratorButton`](./nsacceleratorbutton.md) or [`NSMultiLevelAcceleratorButton`](./nsmultilevelacceleratorbutton.md)) on systems that support pressure sensitivity, querying [`doubleValue`](./nscontrol/doublevalue.md) returns the amount of pressure applied while pressing the button.
 
 The configuration of an [`NSButtonCell`](./nsbuttoncell.md) object controls how the button object appears and behaves, but it’s [`NSButton`](./nsbutton.md) that sends a message when the control is clicked. For more information on the behavior of [`NSButtonCell`](./nsbuttoncell.md), see the [`NSButton`](./nsbutton.md) and [`NSMatrix`](./nsmatrix.md) class specifications.
 
-##### Exceptions
+### Exceptions
 
 In its implementation of the [`compare(_:)`](./nscell/compare%28_%29.md) method (declared in `NSCell`), `NSButtonCell` raises an `NSBadComparisonException` if the `otherCell` argument is not of the `NSButtonCell` class.
 
-##### Fonts
+### Fonts
 
 Setting the [`font`](./nscell/font.md) property does nothing if the button has no title or alternate title. If the button cell has a key equivalent, its font is not changed, but the key equivalent’s font size is changed to match the new title font.
 

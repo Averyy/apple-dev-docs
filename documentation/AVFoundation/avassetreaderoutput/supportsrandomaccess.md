@@ -26,7 +26,7 @@ var supportsRandomAccess: Bool { get set }
 @property (nonatomic) BOOL supportsRandomAccess;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`false`](../../Swift/false.md), which means you can’t reconfigure the output after reading begins. This setting may result in more efficient reading, particularly when you’re using multiple asset reader outputs.
 

@@ -19,7 +19,7 @@ A Boolean value that indicates whether a person in Japan can configure the side 
 
 **Default**: `NO`
 
-#### Discussion
+## Discussion
 
 Add the Side Button Access entitlement by following these steps:
 

@@ -25,7 +25,7 @@ var attribution: NSURLRequest.Attribution { get set }
 @property NSURLRequestAttribution attribution;
 ```
 
-#### Discussion
+## Discussion
 
 If you don’t set this value, the system assumes a value of [`NSURLRequest.Attribution.developer`](../nsurlrequest/attribution-swift.enum/developer.md). Use this default value for any network request that your app makes that isn’t explicitly from the user. This includes requests that you make to your own server, even when you load user data. It also includes links that the user selects, but that you modify in any way — including by adding HTTP headers — before loading the content.
 

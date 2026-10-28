@@ -20,7 +20,7 @@ class func keyState(_ stateID: CGEventSourceStateID, key: CGKeyCode) -> Bool
 extern bool CGEventSourceKeyState(CGEventSourceStateID stateID, CGKeyCode key);
 ```
 
-#### Return Value
+## Return Value
 
 If `true`, the key is down. If `false`, the key is up.
 

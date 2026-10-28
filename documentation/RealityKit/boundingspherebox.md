@@ -19,7 +19,7 @@ A combined bounding volume consisting of a bounding sphere and an optional axis-
 struct BoundingSphereBox
 ```
 
-#### Overview
+## Overview
 
 `BoundingSphereBox` represents the culling bounds of a [`LowLevelMeshInstance`](./lowlevelmeshinstance.md). When `halfExtents` is set, the renderer uses the tighter box bounds for culling; otherwise it falls back to the bounding sphere.
 

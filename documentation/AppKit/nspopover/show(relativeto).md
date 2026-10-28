@@ -19,7 +19,7 @@ func show(relativeTo toolbarItem: NSToolbarItem)
 - (void) showRelativeToToolbarItem:(NSToolbarItem *) toolbarItem;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to display a popover relative to a toolbar item. When the item is in the overflow menu, the popover presents itself from another appropriate affordance in the window. See [`show(relativeTo:of:preferredEdge:)`](./show%28relativeto,of,preferrededge%29.md) for popover behavior.
 

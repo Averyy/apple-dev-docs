@@ -21,7 +21,7 @@ Creates a weather service object.
 convenience init()
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to create different `WeatherService` instances, for example, to separate out high-priority and low-priority requests for performance. If you only need one instance of `WeatherService`, use `shared`.
 

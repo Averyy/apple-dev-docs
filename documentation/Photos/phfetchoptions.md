@@ -28,7 +28,7 @@ class PHFetchOptions
 
 - [Fetching Assets](../PhotoKit/fetching-assets.md)
 
-#### Overview
+## Overview
 
 Using class methods on the [`PHAsset`](./phasset.md), [`PHCollection`](./phcollection.md), [`PHAssetCollection`](./phassetcollection.md), and [`PHCollectionList`](./phcollectionlist.md) classes to fetch assets or collections produces a [`PHFetchResult`](./phfetchresult.md) object containing the requested objects. The options you specify control which objects the fetch result includes, how those objects are arranged in the fetch result, and how Photos should notify your app of changes to the fetch result.
 

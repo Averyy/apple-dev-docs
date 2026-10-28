@@ -8,7 +8,7 @@ Apps let people experience your content within the interface you create, but som
 
 An *app extension* is a separate bundle that ships as part of your app and vends your app’s services to other parts of the system. Because app extensions are separate from your app, the system can launch and run them separately from your app. Some app extensions have an interface that the system displays, but many app extensions simply provide information for the system to use. For example, a Spotlight Import app extension indexes the content in one of your app’s custom file types.
 
-#### Choose an app extension
+## Choose an app extension
 
 iOS, iPadOS, macOS, tvOS, visionOS, and watchOS support app extensions for specific features like sharing, Notification Center, or Safari. When you [add an app extension](../Xcode/configuring-a-new-target-in-your-project.md) to your existing app project, Xcode creates the initial code and resources and updates your project’s build settings. When you build your app, Xcode builds the app extension automatically and copies it to your [app bundle](./files-and-directories.md#Bundles).
 
@@ -74,15 +74,15 @@ iOS, iPadOS, macOS, tvOS, visionOS, and watchOS support app extensions for speci
 | [Widget Extension](../WidgetKit/creating-a-widget-extension.md) | Show relevant, glanceable content from your app on the iOS Home Screen and Lock Screen, macOS Notification Center, and as complications in watchOS. | ✅ | ✅ |  | ✅ | ✅ |
 | [Xcode Source Editor](../XcodeKit/creating-a-source-editor-extension.md) | Provide custom editing features directly inside Xcode’s source editor. |  | ✅ |  |  |  |
 
-#### Share data with your app
+## Share data with your app
 
 The system runs app extensions as separate processes, so they don’t automatically share your app’s resources or permissions. Configure your app extension to run independently whenever possible. If you must share data between your app and app extension, [create an App Group](../Xcode/configuring-app-groups.md) and give access to both processes.
 
-#### Host custom extensions from your app
+## Host custom extensions from your app
 
 If your app supports contributions from outside apps, you can define your own app extensions and run them in a safe environment using the [ExtensionFoundation](../ExtensionFoundation/ExtensionFoundation.md) framework. Custom app extensions are a way for you to add new capabilities to your app. For example, a graphics editing app might support new types of filters or visual effects. If your app lets app extensions provide a custom interface, the [ExtensionKit](../ExtensionKit/ExtensionKit.md) framework helps you present that interface securely.
 
-#### Implement low-level services using system extensions
+## Implement low-level services using system extensions
 
 Create a system extension to add low-level capabilities that previously required modifications to the system kernel. Apple devices support the following types of system extensions:
 

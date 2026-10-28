@@ -15,11 +15,11 @@ Forces the hardware buffer to flush data blocks to the media.
 virtual kern_return_t DoAsyncSynchronize(uint32_t requestID, uint64_t lba, uint64_t numOfBlocks);
 ```
 
-#### Return Value
+## Return Value
 
 A value that indicates the synchronize result. [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) indicates success. For error definitions, see [IOKit Constants](../../iokit/iokit_constants.md).
 
-#### Discussion
+## Discussion
 
 When the synchronize operation completes, the dext calls your [`Complete`](./complete.md) method with the results of the operation.
 

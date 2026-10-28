@@ -21,7 +21,7 @@ Enqueues a block for execution at the specified time.
 extern void dispatch_after(dispatch_time_t when, dispatch_queue_t queue, dispatch_block_t block);
 ```
 
-#### Discussion
+## Discussion
 
 This function waits until the specified time and then asynchronously adds `block` to the specified `queue`.
 

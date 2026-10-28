@@ -19,7 +19,7 @@ The payload that configures the default fallback global Ethernet interface.
 object 8021XGlobalEthernet
 ```
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.globalethernet.managed` as the payload type.
 
@@ -29,7 +29,7 @@ This payload’s contents contain these profile-specific keys:
 - EAPClientConfiguration ([`WiFi.EAPClientConfiguration`](./wifi/eapclientconfiguration-data.dictionary.md)): The dictionary that defines the enterprise profile for the network.
 - SetupModes (String): The type of connection mode, which is either `System` or `Loginwindow`. `System` is the default.
 
-##### Profile availability
+### Profile availability
 
 |  |  |
 | --- | --- |
@@ -41,7 +41,7 @@ This payload’s contents contain these profile-specific keys:
 | Allowed in user enrollment | iOS, macOS |
 | Allow multiple payloads | N/A |
 
-##### Profile example
+### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>

@@ -20,7 +20,7 @@ func NSFileTypeForHFSTypeCode(_ hfsFileTypeCode: OSType) -> String!
 extern NSString *NSFileTypeForHFSTypeCode(OSType hfsFileTypeCode);
 ```
 
-#### Return Value
+## Return Value
 
 A string that encodes `hfsFileTypeCode`.
 

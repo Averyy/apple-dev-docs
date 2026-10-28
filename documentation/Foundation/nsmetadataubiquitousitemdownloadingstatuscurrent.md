@@ -23,7 +23,7 @@ let NSMetadataUbiquitousItemDownloadingStatusCurrent: String
 extern NSString * const NSMetadataUbiquitousItemDownloadingStatusCurrent;
 ```
 
-#### Discussion
+## Discussion
 
 A string used as the value for [`NSMetadataUbiquitousItemPercentUploadedKey`](./nsmetadataubiquitousitempercentuploadedkey.md) to indicate that there is a local version of this item and it is the most up-to-date version known to this device.
 

@@ -25,7 +25,7 @@ func isEqual(to dateInterval: DateInterval) -> Bool
 - (BOOL) isEqualToDateInterval:(NSDateInterval *) dateInterval;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the [`startDate`](./startdate.md) and [`duration`](./duration.md) of `dateInterval` and the receiver are equal. Otherwise, [`false`](../../Swift/false.md).
 

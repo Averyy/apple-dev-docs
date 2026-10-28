@@ -20,11 +20,11 @@ func CGDisplayCapture(_ display: CGDirectDisplayID) -> CGError
 extern CGError CGDisplayCapture(CGDirectDisplayID display);
 ```
 
-#### Return Value
+## Return Value
 
 A Core Graphics result code. To interpret the result code, see [`CGError`](./cgerror.md).
 
-#### Discussion
+## Discussion
 
 When an application captures a display, Quartz doesn’t allow other applications and system services to use the display or change its configuration.
 

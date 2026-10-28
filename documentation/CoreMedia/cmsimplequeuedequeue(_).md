@@ -25,7 +25,7 @@ func CMSimpleQueueDequeue(_ queue: CMSimpleQueue) -> UnsafeRawPointer?
 extern const void *CMSimpleQueueDequeue(CMSimpleQueueRef queue);
 ```
 
-#### Return Value
+## Return Value
 
 The dequeued element.  `NULL` if the queue was empty, or if there was some other error.
 

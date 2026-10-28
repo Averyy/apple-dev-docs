@@ -19,7 +19,7 @@ case firewall
 NEFilterManagerGradeFirewall
 ```
 
-#### Discussion
+## Discussion
 
 Firewall grade filters see network traffic before other filter grades.
 

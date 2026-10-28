@@ -16,7 +16,7 @@ Notifies interested parties that you removed data from the queue.
 void SendDataServiced(void);
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to send a single notification after dequeueing multiple entries with the [`DequeueWithCoalesce`](./api-3438179-dequeuewithcoalesce.md) method. The [`DequeueWithCoalesce`](./api-3438179-dequeuewithcoalesce.md) method doesn't call the [`DataServiced`](../../DriverKit/iodataqueuedispatchsource/dataserviced.md) handler automatically after removing an entry. Instead, you call this method after the successful removal of entries from the queue.
 

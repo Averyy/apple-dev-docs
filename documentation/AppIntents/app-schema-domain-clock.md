@@ -5,7 +5,7 @@
 
 Make your clock app’s actions available to Apple Intelligence and Siri by adopting schemas for common alarm and timer actions.
 
-#### Overview
+## Overview
 
 The `.clock` domain defines app schemas that provide a structured representation for common alarm and timer actions and content. Apply schemas in the `.clock` domain to make your app’s clock functionality available to Apple Intelligence and Siri. Each schema defines the requirements for intents, parameters, and results so people get a consistent experience across clock apps. For example, a person can set an alarm on different apps that support the [`createAlarm`](./appschema/clockintent/createalarm.md) schema with the same phrases.
 
@@ -28,7 +28,7 @@ The following table maps example phrases that apply to each schema:
 
 For more information about making your app’s actions available to Apple Intelligence and Siri, see [Apple Intelligence and Siri AI](./apple-intelligence-and-siri-ai.md).
 
-#### Clock alarm use-case group
+## Clock alarm use-case group
 
 A *use-case group* is a set of related schemas that share a single purpose. The [`dismissAlarm`](./appschema/clockintent/dismissalarm.md) and [`updateAlarm`](./appschema/clockintent/updatealarm.md) schemas form a use-case group for alarms. Xcode reports a build warning if your app supports one schema in the group and not the other.
 

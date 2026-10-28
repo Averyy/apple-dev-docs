@@ -14,11 +14,11 @@ CMError CMGetProfileMD5 (
 );
 ```
 
-#### Return Value
+## Return Value
 
 A `CMError` value. See [Result Codes](../colorsync_manager.md#1670295).
 
-#### Overview
+## Overview
 
 You can call this function to determine if two profiles are identical, or if a profile has changed over time. You can access this new MD5 checksum directly in the profile header, or use the function `CMGetProfileMD5`. This function has the advantage that it works with both ICC 4 profiles and earlier profiles. 
 

@@ -21,7 +21,7 @@ An object that records and matches a recording with captured sound in the Shazam
 final class SHManagedSession
 ```
 
-#### Overview
+## Overview
 
 This session is an alternative for [`SHSession`](./shsession.md) if you prefer ShazamKit to manage recording.
 

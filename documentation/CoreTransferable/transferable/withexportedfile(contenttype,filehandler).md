@@ -21,7 +21,7 @@ Using the type’s `Transferable` conformance implementation, exports a value by
 func withExportedFile<Result>(contentType: UTType?, fileHandler: (URL) async throws -> Result) async throws -> Result
 ```
 
-#### Discussion
+## Discussion
 
 This converts a [`Transferable`](../transferable.md) item into a temporary file, and removes it after `fileHandler` closure returns. The default implementation of this function is available to all types that conform to `Transferable` protocol.
 

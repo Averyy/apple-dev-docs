@@ -21,7 +21,7 @@ Creates and returns an ordered set containing the objects from another ordered s
 + (instancetype) orderedSetWithOrderedSet:(NSOrderedSet<id> *) set;
 ```
 
-#### Return Value
+## Return Value
 
 A new ordered set containing the objects from set.
 

@@ -24,7 +24,7 @@ class PKPaymentRequestShippingContactUpdate
 @interface PKPaymentRequestShippingContactUpdate : PKPaymentRequestUpdate
 ```
 
-#### Overview
+## Overview
 
 This is the handler for [`paymentAuthorizationController(_:didSelectShippingContact:handler:)`](./pkpaymentauthorizationcontrollerdelegate/paymentauthorizationcontroller%28_,didselectshippingcontact,handler%29.md) and [`paymentAuthorizationViewController(_:didSelectShippingContact:handler:)`](./pkpaymentauthorizationviewcontrollerdelegate/paymentauthorizationviewcontroller%28_,didselectshippingcontact,handler%29.md).
 

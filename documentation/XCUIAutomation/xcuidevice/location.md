@@ -26,7 +26,7 @@ var location: XCUILocation? { get set }
 @property (nonatomic, strong, nullable) XCUILocation * location;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to provide a proxy location to simulate longitude, latitude, and course information for the device. If you don’t provide a proxy location, a test uses the physical location of the device that [Core Location](../../CoreLocation/CoreLocation.md) provides. The example below sets the device’s proxy location:
 

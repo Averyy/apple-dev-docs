@@ -18,7 +18,7 @@ The coordinates of the subject in the frame.
 let rect: CGRect
 ```
 
-#### Discussion
+## Discussion
 
 This is a unit rectangle with coordinate values between `0` and `1`.
 

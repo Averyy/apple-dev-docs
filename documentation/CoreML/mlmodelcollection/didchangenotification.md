@@ -24,7 +24,7 @@ class let didChangeNotification: NSNotification.Name
 extern NSNotificationName const MLModelCollectionDidChangeNotification;
 ```
 
-#### Discussion
+## Discussion
 
 Register your app to get notifications when a model collection update is available by calling [`addObserver(forName:object:queue:using:)`](../../Foundation/notificationcenter/addobserver%28forname,object,queue,using%29.md).
 

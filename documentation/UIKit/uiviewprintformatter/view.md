@@ -22,7 +22,7 @@ var view: UIView { get }
 @property (nonatomic, readonly) UIView * view;
 ```
 
-#### Discussion
+## Discussion
 
 You obtain a view print formatter by calling [`viewPrintFormatter()`](../uiview/viewprintformatter%28%29.md) on a [`UIView`](../uiview.md) object.
 

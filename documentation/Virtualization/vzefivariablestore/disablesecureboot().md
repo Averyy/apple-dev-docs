@@ -19,7 +19,7 @@ func disableSecureBoot() throws
 - (BOOL) disableSecureBootWithError:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 **Swift**:
 

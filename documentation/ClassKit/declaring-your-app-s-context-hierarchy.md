@@ -5,11 +5,11 @@
 
 Tell ClassKit about your context hierarchy so teachers can see your assignable content.
 
-#### Overview
+## Overview
 
 After you design a context hierarchy for your app, tell ClassKit about it to make your app’s assignable content available to teachers in Apple’s Schoolwork app.
 
-##### Assign a unique identifier to each context
+### Assign a unique identifier to each context
 
 Begin by giving each context a string identifier that’s unique among its siblings. For example, the chapters of a book might have the identifiers `chapter-1`, `chapter-2`, `chapter-3` and so on. This enables you to position each context within the hierarchy using an array of string identifiers—an *identifier path*—that traces exactly one route from an ancestor context to one of its descendants.
 
@@ -17,7 +17,7 @@ Identifiers only need to be unique among contexts with the same parent. So you m
 
 The identifiers don’t require a particular format because they aren’t ever displayed to a user. For example, if your chapter model happens to store a universally unique identifier in a [`UUID`](../Foundation/uuid.md) instance, you can use the [`uuidString`](../Foundation/uuid/uuidstring.md) property to obtain a suitable identifier string for the corresponding context. As the name implies, the identifier is guaranteed to be unique (more than strictly necessary because it’s universally unique). And because you already keep the UUID with the chapter instance, you can easily look up the identifier when you need it.
 
-##### Declare each leaf context
+### Declare each leaf context
 
 Next declare the existence of each context at the edge of your hierarchy by asking ClassKit for it, using its identifier path to call the [`descendant(matchingIdentifierPath:completion:)`](./clscontext/descendant%28matchingidentifierpath,completion%29.md) method. For example, to declare a context corresponding to a particular section in a book, request it with the identifier path `["my-textbook", "chapter-1", "section-2"]`:
 
@@ -45,7 +45,7 @@ for chapter in book.chapters {
 }
 ```
 
-##### Declare contexts early
+### Declare contexts early
 
 It’s important to declare the entire context hierarchy early in your app’s lifecycle, typically from within [`application(_:didFinishLaunchingWithOptions:)`](../UIKit/uiapplicationdelegate/application%28_,didfinishlaunchingwithoptions%29.md). If you have dynamic material, such as new game levels that the user downloads long after first running your app, declare that additional content as soon as you know about it.
 

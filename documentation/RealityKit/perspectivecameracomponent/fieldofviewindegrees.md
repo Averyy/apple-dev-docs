@@ -20,7 +20,7 @@ The camera’s total field of view in degrees.
 var fieldOfViewInDegrees: Float
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the entire field of view for the camera in degrees.
 

@@ -30,7 +30,7 @@ protocol URLSessionDataDelegate : URLSessionTaskDelegate
 - [Fetching website data into memory](./fetching-website-data-into-memory.md)
 - [Accessing cached data](./accessing-cached-data.md)
 
-#### Overview
+## Overview
 
 Your session delegate should also implement the methods in the [`URLSessionTaskDelegate`](./urlsessiontaskdelegate.md) protocol to handle task-level events that are common to all task types, and methods in the [`URLSessionDelegate`](./urlsessiondelegate.md) protocol to handle session-level events.
 

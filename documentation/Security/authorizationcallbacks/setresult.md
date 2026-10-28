@@ -25,11 +25,11 @@ int (*)(struct __OpaqueAuthorizationEngine *, enum AuthorizationResult) SetResul
 
 - [Extending authorization services with plug-ins](../extending-authorization-services-with-plug-ins.md)
 
-#### Return Value
+## Return Value
 
 A result code. Possible results are [`errAuthorizationSuccess`](../errauthorizationsuccess.md) (no error) and [`errAuthorizationInternal`](../errauthorizationinternal.md) (Security Server internal error).
 
-#### Discussion
+## Discussion
 
 When an application calls the [`AuthorizationCopyRights(_:_:_:_:_:)`](../authorizationcopyrights%28_,_,_,_,_%29.md) function to request a specific authorization right, the Security Agent looks for that right in the authorization policy database. If that right corresponds to your plug-in, the authorization engine calls the [`MechanismInvoke`](../authorizationplugininterface/mechanisminvoke.md) function for each mechanism listed in the policy database for your plug-in.
 

@@ -21,7 +21,7 @@ A Boolean value that indicates whether the customer is eligible for an introduct
 var isEligibleForIntroOffer: Bool { get async }
 ```
 
-#### Discussion
+## Discussion
 
 This value is `true` if the customer is eligible for an introductory offer on this auto-renewable subscription, or any auto-renewable subscription in the same subscription group; this value is `false` otherwise. This value may be `true` even if you haven’t set up an introductory offer in App Store Connect. The following example illustrates checking the [`subscription`](../subscription.md) property of a product to determine whether the user is eligible for an introductory offer.
 

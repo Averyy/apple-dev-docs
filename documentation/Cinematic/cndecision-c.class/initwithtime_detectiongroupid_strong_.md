@@ -19,11 +19,11 @@ Makes a decision to focus on the detection with the given unique detection.
 - (instancetype) initWithTime:(CMTime) time detectionGroupID:(CNDetectionGroupID) detectionGroupID strong:(BOOL) isStrong;
 ```
 
-#### Return Value
+## Return Value
 
 Creates an object representing a decision to focus on the detection with the given unique detection.
 
-#### Discussion
+## Discussion
 
 A strong decision keeps focus for as long as possible on the detected subject.
 

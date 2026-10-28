@@ -25,7 +25,7 @@ case scale
 kMIDITransform_Scale
 ```
 
-#### Discussion
+## Discussion
 
 Specify the parameter value in fixed point format: `bbbb.bbbb bbbb bbbb`
 

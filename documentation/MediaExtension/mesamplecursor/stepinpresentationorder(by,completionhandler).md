@@ -24,7 +24,7 @@ func stepInPresentationOrder(by stepCount: Int64) async throws -> Int64
 - (void) stepInPresentationOrderByCount:(int64_t) stepCount completionHandler:(void (^)(int64_t actualStepCount, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 If the request would advance the cursor past the last sample or before the first sample, the cursor points to that limiting sample and `actualStepCount` is equal to the number of samples the cursor moved. If decode order and presentation order are the same, in other words, the samples aren’t reordered, this method has the same effect as [`stepInDecodeOrder(byCount:)`](../../AVFoundation/avsamplecursor/stepindecodeorder%28bycount%29.md).
 

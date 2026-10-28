@@ -24,11 +24,11 @@ class func areaHistogram() -> any CIFilter & CIAreaHistogram
 + (CIFilter<CIAreaHistogram> *) areaHistogramFilter;
 ```
 
-#### Return Value
+## Return Value
 
 A 1 pixel high image containing the calculated histogram`.`
 
-#### Discussion
+## Discussion
 
 This filter calculates histograms of the red, green, blue, and alpha colors in the region defined by `extent`. The `count` property controls the number of bins (or width) of the histogram. The filter scales the histogram so that the total of all the counts in the bins equals `scale`.
 

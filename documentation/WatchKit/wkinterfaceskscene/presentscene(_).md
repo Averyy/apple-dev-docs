@@ -19,7 +19,7 @@ func presentScene(_ scene: SKScene?)
 - (void) presentScene:(SKScene *) scene;
 ```
 
-#### Discussion
+## Discussion
 
 The new scene immediately replaces the current scene, if one exists.
 

@@ -27,7 +27,7 @@ func sendMessage(_ message: Any?) async throws
 - (void) sendMessage:(id) message completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: The message must be JSON-serializable according to [`JSONSerialization`](../../../Foundation/jsonserialization.md).
 

@@ -16,11 +16,11 @@ Clients can use this API to ask how much extra power has already been reserved b
 IOReturn (*GetExtraPowerAllocated)(void *self, UInt32 type, UInt32 *powerAllocated);
 ```
 
-#### Return Value
+## Return Value
 
 Value returned can be 0 if no power has been allocated. Returns kIOReturnSuccess if successful, kIOReturnNoDevice if there is no connection to an IOService.
 
-#### Discussion
+## Discussion
 
 The device has to be open to use this function.
 

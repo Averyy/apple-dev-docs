@@ -23,7 +23,7 @@ static func == (lhs: Publishers.Merge<A, B>, rhs: Publishers.Merge<A, B>) -> Boo
 
 Available when `A` conforms to `Publisher`, `A` conforms to `Equatable`, `B` conforms to `Publisher`, `B` conforms to `Equatable`, `A.Failure` is `B.Failure`, and `A.Output` is `B.Output`.
 
-#### Return Value
+## Return Value
 
 `true` if the two merging - rhs: Another merging publisher to compare for equality.
 

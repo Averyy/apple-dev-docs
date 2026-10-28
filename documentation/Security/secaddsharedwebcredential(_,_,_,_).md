@@ -29,7 +29,7 @@ void SecAddSharedWebCredential(CFStringRef fqdn, CFStringRef account, CFStringRe
 
 - [Managing Shared Credentials](./managing-shared-credentials.md)
 
-#### Discussion
+## Discussion
 
 This function adds a shared password item that will be accessible by Safari and apps that have the specified fully qualified domain name in their [`Associated Domains Entitlement`](../BundleResources/entitlements/com.apple.developer.associated-domains.md). If a shared password item already exists for the specified website and account, it is updated with the provided password. To remove a password, pass `NULL` for the password parameter.
 

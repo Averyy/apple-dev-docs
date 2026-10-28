@@ -19,11 +19,11 @@ optional func stringLength() -> Int
 - (NSUInteger) stringLength;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the full length of the conceptually concatenated string in the second model, that is, the sum of the lengths of all of its substrings.
 
-#### Discussion
+## Discussion
 
 See [`NSTextFinder`](../nstextfinder.md) for more information.
 

@@ -24,11 +24,11 @@ static OSStringPtr withCStringNoCopy(const char *cString);
 static OSPtr<OSString> withCStringNoCopy(const char *cString);
 ```
 
-#### Return Value
+## Return Value
 
 NULL on failure, otherwise the allocated OSString with reference count 1 to be released by the caller.
 
-#### Discussion
+## Discussion
 
 Allocates an OSString object with a copy of a c-string. A synonym for OSString::withCString() for compatibility with kernel code.
 

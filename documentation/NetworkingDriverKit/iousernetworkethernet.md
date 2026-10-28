@@ -15,13 +15,13 @@ The object you use to manage the setup, configuration, and teardown of your netw
 class IOUserNetworkEthernet;
 ```
 
-#### Overview
+## Overview
 
 Subclass `IOUserNetworkEthernet` and override the methods you need to implement your driver’s behavior. Your subclass manages your driver’s overall life cycle, and facilitates communication between the hardware and the rest of the system. Use the [`Start`](../DriverKit/ioservice/start.md) method to establish a link to your hardware and to create the data structures needed to manage incoming and outgoing data packets. Use the [`Stop`](../DriverKit/ioservice/stop.md) method to clean up the data structures you create in your [`Start`](../DriverKit/ioservice/start.md) method.
 
 Override other methods of this class, and of the [`IOService`](../DriverKit/ioservice.md) parent class, as needed to enable your interface and implement other network-related behaviors. For example, you might want to override the inherited [`setPowerState`](../kernel/ioservice/api-1532866-setpowerstate.md) method to respond to power-level changes.
 
-##### Specify the Driver’s Personality Information
+### Specify the Driver’s Personality Information
 
 When you subclass `IOUserNetworkEthernet`, update the `IOKitPersonalities` key of your driver extension’s `Info.plist` file with information to match your driver to appropriate hardware. For this class, always include the keys and values in the following table.
 

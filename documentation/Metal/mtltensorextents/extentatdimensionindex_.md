@@ -20,7 +20,7 @@ Returns the value at the specified dimension index.
 - (NSInteger) extentAtDimensionIndex:(NSUInteger) dimensionIndex;
 ```
 
-#### Return Value
+## Return Value
 
 The value at `dimensionIndex`, or `-1` if `dimensionIndex` is greater than or equal to [`rank`](./rank.md).
 

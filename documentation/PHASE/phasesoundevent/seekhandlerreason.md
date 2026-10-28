@@ -24,7 +24,7 @@ enum SeekHandlerReason
 enum PHASESoundEventSeekHandlerReason : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 When your app changes the playback position of a sound event by calling [`seek(to:completion:)`](./seek%28to,completion%29.md), the framework invokes the argument closure when the seek succeeds or fails. PHASE passes an instance of this enumeration to the closure to describe the results of the call.
 

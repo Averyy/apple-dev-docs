@@ -27,7 +27,7 @@ class SWStartCollaborationAction
 
 - [Adding custom collaboration to your app](../SharedWithYou/adding-custom-collaboration-to-your-app.md)
 
-#### Overview
+## Overview
 
 The action contains an updated [`SWCollaborationMetadata`](./swcollaborationmetadata.md) that include the user-selected share options. Fulfill this action with the universal link and a device-independent identifier for the collaboration.
 

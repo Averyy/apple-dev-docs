@@ -20,7 +20,7 @@ func LSMMapSetStopWords(_ mapref: LSMMap, _ textref: LSMText) -> OSStatus
 OSStatus LSMMapSetStopWords(LSMMapRef mapref, LSMTextRef textref);
 ```
 
-#### Discussion
+## Discussion
 
 You must call this function before creating any other texts. The `textref` is no longer needed after this call.
 

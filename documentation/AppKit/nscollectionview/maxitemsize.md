@@ -21,7 +21,7 @@ var maxItemSize: NSSize { get set }
 @property NSSize maxItemSize;
 ```
 
-#### Discussion
+## Discussion
 
 Setting the size to (`0`, `0`) means that there is no maximum grid size. The default value of this property is (`0`, `0`). If an item’s view  is resizable, set the value to the maximum size that the view should use.
 

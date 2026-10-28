@@ -21,7 +21,7 @@ A type that represents any version of HTML.
 static var html: UTType { get }
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.html`.
 

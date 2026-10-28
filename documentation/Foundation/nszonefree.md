@@ -23,7 +23,7 @@ Deallocates a block of memory in the specified zone.
 extern void NSZoneFree(NSZone *zone, void *ptr);
 ```
 
-#### Discussion
+## Discussion
 
 Returns memory to the `zone` from which it was allocated. The standard C function `free` does the same, but spends time finding which zone the memory belongs to.
 

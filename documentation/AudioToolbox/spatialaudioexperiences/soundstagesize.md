@@ -15,7 +15,7 @@ Configure the distribution of audio channels in 3D space.
 enum SoundStageSize
 ```
 
-#### Overview
+## Overview
 
 For multi-channel sounds, the sound stage size describes how the channels are positioned relative to the coordinates described in the sound’s channel layout.
 

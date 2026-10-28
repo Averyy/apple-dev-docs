@@ -25,7 +25,7 @@ optional func peripheral(_ peripheral: CBPeripheral, didUpdateValueFor descripto
 - (void) peripheral:(CBPeripheral *) peripheral didUpdateValueForDescriptor:(CBDescriptor *) descriptor error:(NSError *) error;
 ```
 
-#### Discussion
+## Discussion
 
 Core Bluetooth invokes this method when your app calls the [`readValue(for:)`](../cbperipheral/readvalue%28for%29-91hhp.md) method. If successful, the `error` parameter is `nil`. If unsuccessful, the `error` parameter returns the cause of the failure.
 

@@ -24,7 +24,7 @@ case appCancel
 LAErrorAppCancel
 ```
 
-#### Discussion
+## Discussion
 
 You receive this error if you call the [`invalidate()`](../../lacontext/invalidate%28%29.md) method while authentication is in process.
 

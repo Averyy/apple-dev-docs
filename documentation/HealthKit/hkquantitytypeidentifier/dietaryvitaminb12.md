@@ -24,7 +24,7 @@ static let dietaryVitaminB12: HKQuantityTypeIdentifier
 extern HKQuantityTypeIdentifier const HKQuantityTypeIdentifierDietaryVitaminB12;
 ```
 
-#### Discussion
+## Discussion
 
 These samples use mass units (described in [`HKUnit`](../hkunit.md)) and measure cumulative values (described in [`HKQuantityAggregationStyle`](../hkquantityaggregationstyle.md)).
 

@@ -22,11 +22,11 @@ func GLKMatrix3RotateWithVector4(_ matrix: GLKMatrix3, _ radians: Float, _ axisV
 static GLKMatrix3 GLKMatrix3RotateWithVector4(GLKMatrix3 matrix, float radians, GLKVector4 axisVector);
 ```
 
-#### Return Value
+## Return Value
 
 A new matrix.
 
-#### Discussion
+## Discussion
 
 The w-component of the `axisVector` parameter is ignored.
 

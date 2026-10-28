@@ -24,7 +24,7 @@ var showsDrawCount: Bool { get set }
 @property (nonatomic) BOOL showsDrawCount;
 ```
 
-#### Discussion
+## Discussion
 
 Some operations in SpriteKit can require multiple rendering passes to draw a scene’s content. For example, an [`SKEffectNode`](../skeffectnode.md) object must render its children into a separate buffer, apply the effect, and then perform another pass to blend those results into its parent node. These additional rendering passes use more rendering resources, reducing your game’s frame rate or increasing its total power consumption. Use the draw count as another piece of data when you profile your game’s performance.
 

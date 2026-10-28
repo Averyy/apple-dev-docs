@@ -20,7 +20,7 @@ optional func browser(_ sender: NSBrowser, titleOfColumn column: Int) -> String?
 - (NSString *) browser:(NSBrowser *) sender titleOfColumn:(NSInteger) column;
 ```
 
-#### Return Value
+## Return Value
 
 The title of the specified column.
 

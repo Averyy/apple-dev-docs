@@ -5,11 +5,11 @@
 
 Provide a consistent app presentation when displaying managed apps.
 
-#### Overview
+## Overview
 
 Your app can take advantage of Managed App Distribution features to display download status and launch apps. Obtain a list of [`ManagedApp`](./managedapp.md) objects, then display that list of apps in a custom view.
 
-##### Fetching
+### Fetching
 
 This code snippet defines a model that obtains a list of apps from a [`ManagedAppLibrary`](./managedapplibrary.md).
 
@@ -36,7 +36,7 @@ import Observation
 }
 ```
 
-##### Displaying
+### Displaying
 
 After you fetch the list of apps from the model, display them in a compact content style within your custom view.
 

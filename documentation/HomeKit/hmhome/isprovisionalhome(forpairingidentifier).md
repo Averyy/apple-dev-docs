@@ -16,11 +16,11 @@ Checks whether the home is a temporary, provisional home for use by installation
 func isProvisionalHome(forPairingIdentifier pairingIdentifier: String) async throws -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if this is a provisional home configured with the given identifier or `false` if the home isn’t a provisional home or doesn’t match the given pairing identifier.
 
-#### Overview
+## Overview
 
 Performs an asynchronous query with the provided identifier to check if the home is a temporary, provisional home.
 

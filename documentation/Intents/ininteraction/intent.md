@@ -34,7 +34,7 @@ var intent: INIntent { get }
 @property (atomic, copy, readonly) INIntent * intent;
 ```
 
-#### Discussion
+## Discussion
 
 This property is set at initialization time and cannot be changed later. Use the object in this property to get information about the user’s initial request.
 

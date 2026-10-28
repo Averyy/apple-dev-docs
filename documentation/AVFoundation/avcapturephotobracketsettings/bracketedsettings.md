@@ -22,7 +22,7 @@ var bracketedSettings: [AVCaptureBracketedStillImageSettings] { get }
 @property (nonatomic, readonly) NSArray<__kindof AVCaptureBracketedStillImageSettings *> * bracketedSettings;
 ```
 
-#### Discussion
+## Discussion
 
 This array is read-only. You provide this array of bracket settings when creating a settings object with the `init(format:rawPixelFormatType:bracketedSettings:)` initializer.
 

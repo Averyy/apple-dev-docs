@@ -16,7 +16,7 @@ Remove a relationship between one or more elements.
 void IOHIDElementDetach(IOHIDElementRef element, IOHIDElementRef toDetach);
 ```
 
-#### Discussion
+## Discussion
 
 This is useful for grouping HID elements with related functionality.
 

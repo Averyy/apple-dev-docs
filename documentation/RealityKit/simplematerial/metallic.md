@@ -20,7 +20,7 @@ A value that you set to control whether the material has a metallic look.
 var metallic: MaterialScalarParameter { get set }
 ```
 
-#### Discussion
+## Discussion
 
 This property defines whether a material is dielectric (`0.0`) or a metallic (`1.0`). Although this property can be set to any value between `0` and `1`, to create a realistic material, set it to either `0` or `1`.).
 

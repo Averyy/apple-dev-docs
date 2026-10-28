@@ -16,7 +16,7 @@ Get the handle of a network data object with the given name.
 IOReturn IONetworkGetDataHandle(io_connect_t conObject, const char *dataName, IONDHandle *dataHandleP);
 ```
 
-#### Return Value
+## Return Value
 
 kIOReturnSuccess on success, or an error code otherwise.
 

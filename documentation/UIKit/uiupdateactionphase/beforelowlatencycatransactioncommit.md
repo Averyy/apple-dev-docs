@@ -23,7 +23,7 @@ class var beforeLowLatencyCATransactionCommit: UIUpdateActionPhase { get }
 @property (class, nonatomic, readonly) UIUpdateActionPhase * beforeLowLatencyCATransactionCommit;
 ```
 
-#### Discussion
+## Discussion
 
 This phase runs before [`flush()`](../../QuartzCore/catransaction/flush%28%29.md) for a low-latency event.
 

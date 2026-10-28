@@ -25,7 +25,7 @@ class SCNRenderer
 @interface SCNRenderer : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use this class when you want to add content rendered by SceneKit to an app that already renders other content by using Metal, OpenGL, or OpenGL ES directly. To provide content for a SceneKit renderer, assign a [`SCNScene`](./scnscene.md) object to its [`scene`](./scnrenderer/scene.md) property.
 

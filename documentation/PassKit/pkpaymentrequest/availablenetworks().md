@@ -24,11 +24,11 @@ class func availableNetworks() -> [PKPaymentNetwork]
 + (NSArray<NSString *> *) availableNetworks;
 ```
 
-#### Return Value
+## Return Value
 
 An array of strings representing the available payment networks. For a list of possible networks, see [`PKPaymentNetwork`](../pkpaymentnetwork.md).
 
-#### Discussion
+## Discussion
 
 To dynamically select the payment networks at runtime, use this method to get the complete list of currently supported networks. You can then filter this list, as needed, and assign the results to the payment request’s [`supportedNetworks`](./supportednetworks.md) property.
 

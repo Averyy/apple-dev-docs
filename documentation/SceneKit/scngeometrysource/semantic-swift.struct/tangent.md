@@ -25,7 +25,7 @@ static let tangent: SCNGeometrySource.Semantic
 extern SCNGeometrySourceSemantic const SCNGeometrySourceSemanticTangent;
 ```
 
-#### Discussion
+## Discussion
 
 For a geometry source, this semantic identifies data containing the surface tangent vector at each vertex in the geometry. SceneKit uses this information to compute advanced lighting effects on the surface.
 

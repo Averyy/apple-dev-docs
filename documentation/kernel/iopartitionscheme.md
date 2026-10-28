@@ -15,7 +15,7 @@ The common base class for all partition scheme objects.
 class IOPartitionScheme : IOStorage
 ```
 
-#### Overview
+## Overview
 
 The IOPartitionScheme class is the common base class for all partition scheme objects. It extends the IOStorage class by implementing the appropriate open and close semantics for partition objects (standard semantics are to act as a multiplexor for incoming opens, producing one outgoing open with the correct access). It also implements the default read and write semantics, which pass all reads and writes through to the provider media unprocessed. For simple schemes, the default behavior is sufficient. More complex partition schemes such as RAID will want to do extra processing for reads and writes.
 

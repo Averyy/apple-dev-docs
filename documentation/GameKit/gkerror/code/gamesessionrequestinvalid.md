@@ -25,7 +25,7 @@ case gameSessionRequestInvalid
 GKErrorGameSessionRequestInvalid
 ```
 
-#### Discussion
+## Discussion
 
 For example, the maximum number of requested players is greater than the maximum number of allowed players.
 

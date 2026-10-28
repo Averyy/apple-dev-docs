@@ -25,7 +25,7 @@ func cblas_dgbmv(_ ORDER: CBLAS_ORDER, _ TRANSA: CBLAS_TRANSPOSE, _ M: __LAPACK_
 void cblas_dgbmv(const enum CBLAS_ORDER ORDER, const enum CBLAS_TRANSPOSE TRANSA, const __LAPACK_int M, const __LAPACK_int N, const __LAPACK_int KL, const __LAPACK_int KU, const double ALPHA, const double *A, const __LAPACK_int LDA, const double *X, const __LAPACK_int INCX, const double BETA, double *Y, const __LAPACK_int INCY);
 ```
 
-#### Discussion
+## Discussion
 
 Computes `alpha*A*x + beta*y` or `alpha*A'*x + beta*y` depending on the value of `TransA`.
 

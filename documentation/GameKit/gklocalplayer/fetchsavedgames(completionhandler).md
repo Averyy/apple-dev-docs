@@ -31,7 +31,7 @@ func fetchSavedGames() async throws -> [GKSavedGame]
 
 - [Saving the player’s game data to an iCloud account](../saving-the-player-s-game-data-to-an-icloud-account.md)
 
-#### Discussion
+## Discussion
 
 If more than one saved game has the same filename, a conflict occurs and you must choose which saved game filename is correct using the [`resolveConflictingSavedGames(_:with:completionHandler:)`](./resolveconflictingsavedgames%28_,with,completionhandler%29.md) method.
 

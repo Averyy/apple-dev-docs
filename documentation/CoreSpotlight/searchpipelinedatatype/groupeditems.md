@@ -19,7 +19,7 @@ A dictionary that maps searchable items to the attributes they contain.
 case groupedItems
 ```
 
-#### Discussion
+## Discussion
 
 The keys of the dictionary are `SearchableItemAtttribute` values. The value for each key is an array of [`CSSearchableItem`](../cssearchableitem.md) types that contain a value for the key.
 

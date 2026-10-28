@@ -16,7 +16,7 @@ Set the new channel to transmit the AsyncStream command.
 void (*SetChannel)(IOFireWireLibAsyncStreamCommandRef self, UInt32 channel);
 ```
 
-#### Discussion
+## Discussion
 
 Available in v1 and newer.
 

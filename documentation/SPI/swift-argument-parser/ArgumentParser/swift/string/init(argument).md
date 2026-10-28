@@ -9,7 +9,7 @@ framework: "swift-argument-parser/ArgumentParser"
 **Kind**: init  
 **Role**: Initializer
 
-Creates a new instance of this type from a command-line-specified argument.
+Inherited from `ExpressibleByArgument.init(argument:)`.
 
 ## Declaration
 

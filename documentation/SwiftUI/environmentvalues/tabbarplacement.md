@@ -21,7 +21,7 @@ The current placement of the tab bar.
 var tabBarPlacement: TabBarPlacement? { get }
 ```
 
-#### Discussion
+## Discussion
 
 Note that this value is only set within the content views of a [`TabView`](../tabview.md).
 

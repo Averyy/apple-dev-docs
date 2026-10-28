@@ -23,7 +23,7 @@ enum Style
 enum UITableViewStyle : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 You set the table style when you initialize the table view (see [`init(frame:style:)`](./init%28frame,style%29.md)). You can’t modify the style thereafter.
 

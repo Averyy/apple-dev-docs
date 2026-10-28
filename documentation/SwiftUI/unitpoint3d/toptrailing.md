@@ -15,7 +15,7 @@ A point that’s centered in the depth dimension on the top-trailing edge of a v
 static let topTrailing: UnitPoint3D
 ```
 
-#### Discussion
+## Discussion
 
 The trailing edge appears on the right in a left-to-right language environment and on the left in a right-to-left environment.
 

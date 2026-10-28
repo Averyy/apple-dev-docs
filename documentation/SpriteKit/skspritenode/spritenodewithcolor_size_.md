@@ -29,7 +29,7 @@ Initializes a single-color sprite.
 + (instancetype) spriteNodeWithColor:(NSColor *) color size:(CGSize) size;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized sprite object.
 

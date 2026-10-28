@@ -10,7 +10,7 @@ virtual IOStreamBuffer *getBufferWithID(
  IOStreamBufferIDbufferID);
 ```
 
-#### Return Value
+## Return Value
 
 A pointer to an IOStreamBuffer object, or NULL if the buffer ID was invalid for this stream.
 

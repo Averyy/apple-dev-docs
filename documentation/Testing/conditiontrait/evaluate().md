@@ -16,11 +16,11 @@ Evaluate this instance’s underlying condition.
 func evaluate() async throws -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 The result of evaluating this instance’s underlying condition.
 
-#### Discussion
+## Discussion
 
 The evaluation is performed each time this function is called, and is not cached.
 

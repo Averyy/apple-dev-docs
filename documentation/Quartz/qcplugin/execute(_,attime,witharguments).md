@@ -21,11 +21,11 @@ func execute(_ context: (any QCPlugInContext)!, atTime time: TimeInterval, withA
 - (BOOL) execute:(id<QCPlugInContext>) context atTime:(NSTimeInterval) time withArguments:(NSDictionary *) arguments;
 ```
 
-#### Return Value
+## Return Value
 
 [`false`](../../Swift/false.md) indicates the custom patch was not able to execute successfully. In this case, the Quartz Composer engine stops rendering the current frame.
 
-#### Discussion
+## Discussion
 
 The Quartz Composer engine calls this method each time your custom patch needs to execute. You must implement this method. The method should perform whatever tasks are appropriate for the custom patch, such as:
 

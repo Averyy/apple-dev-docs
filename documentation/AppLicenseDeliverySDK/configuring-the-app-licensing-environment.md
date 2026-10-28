@@ -5,7 +5,7 @@
 
 Create your account-level signing assets and build the SDK for your target platform.
 
-#### Overview
+## Overview
 
 After your developer account qualifies to build an alternative app marketplace, you can use [App License Delivery SDK](./AppLicenseDeliverySDK.md) to secure the installation of your marketplace app and the apps that you distribute from your alternative marketplace. To set up your development environment for app licensing:
 
@@ -14,7 +14,7 @@ After your developer account qualifies to build an alternative app marketplace, 
 
 For more information about alternative app marketplaces, see [MarketplaceKit](../MarketplaceKit/MarketplaceKit.md).
 
-#### Generate alternative marketplace app licensing assets
+## Generate alternative marketplace app licensing assets
 
 To facilitate generating licenses, create the following App License Delivery (ALD) assets in [Certificates, Identifiers & Profiles](https://developer.apple.com/account/resources):
 
@@ -26,7 +26,7 @@ For more information about generating these assets, see [Create app license deli
 
 > ❗ **Important**: Secure your PASK secret as you do other credentials, such as private keys and passwords. Don’t share your PASK secret, store secrets in a code repository, or include secrets in client or server code.
 
-#### Build the SDK for macOS
+## Build the SDK for macOS
 
 To use the SDK in a Swift project for macOS:
 
@@ -42,7 +42,7 @@ import ALD
 struct MyLicenseGenerator: ParsableCommand { ... }
 ```
 
-#### Build the SDK for Linux
+## Build the SDK for Linux
 
 To build the SDK for Linux:
 

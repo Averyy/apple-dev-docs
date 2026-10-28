@@ -27,7 +27,7 @@ class INMessage
 
 - [Improving interactions between Siri and your messaging app](../SiriKit/improving-interactions-between-siri-and-your-messaging-app.md)
 
-#### Overview
+## Overview
 
 When your app responds to an [`INSearchForMessagesIntent`](./insearchformessagesintent.md), you create instances of this class to provide Siri with information about the messages in your app. Each message contains a unique identifier, the participants’ details, and the content. You can group messages into larger discussions and, if you app supports multiple services, identify the service that delivers each message.
 

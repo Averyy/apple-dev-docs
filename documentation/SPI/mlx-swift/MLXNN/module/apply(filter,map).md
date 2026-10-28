@@ -18,7 +18,7 @@ Apply a closure to the parameters in a `Module` recursively.
 func apply(filter: (Module, String, ModuleItem) -> Bool = Module.filterValidParameters, map: @escaping (MLXArray) -> MLXArray) -> Self
 ```
 
-#### Discussion
+## Discussion
 
 For example to change all floating point parameters to `DType.float16`:
 

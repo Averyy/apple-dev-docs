@@ -10,7 +10,7 @@ framework: "Swift-Org/PackageManagerDocs"
 
 Command to generate shell completions.
 
-#### Overview
+## Overview
 
 ```
 package completion-tool [--package-path=<package-path>]

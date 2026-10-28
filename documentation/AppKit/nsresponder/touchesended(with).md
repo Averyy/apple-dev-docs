@@ -19,7 +19,7 @@ func touchesEnded(with event: NSEvent)
 - (void) touchesEndedWithEvent:(NSEvent *) event;
 ```
 
-#### Discussion
+## Discussion
 
 The system sends the event to the view under the touch in the key window. To get the set of touches that ended for this view (or descendants of this view) call [`touches(matching:in:)`](../nsevent/touches%28matching,in%29.md) on `event` and pass [`ended`](../nstouch/phase-swift.struct/ended.md) for the phase.
 

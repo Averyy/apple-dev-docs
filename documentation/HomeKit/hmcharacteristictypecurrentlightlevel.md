@@ -24,7 +24,7 @@ let HMCharacteristicTypeCurrentLightLevel: String
 extern NSString * const HMCharacteristicTypeCurrentLightLevel;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is a number in units of lux.
 

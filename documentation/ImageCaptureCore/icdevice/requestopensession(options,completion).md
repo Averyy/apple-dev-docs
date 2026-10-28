@@ -27,7 +27,7 @@ func requestOpenSession(options: [ICSessionOptions : Any]? = nil) async throws
 - (void) requestOpenSessionWithOptions:(NSDictionary<NSString *,id> *) options completion:(void (^)(NSError *error)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Execution of the completion block occurs on the calling thread.
 

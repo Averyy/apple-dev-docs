@@ -25,7 +25,7 @@ func xpc_bool_get_value(_ xbool: xpc_object_t) -> Bool
 extern bool xpc_bool_get_value(xpc_object_t xbool);
 ```
 
-#### Return Value
+## Return Value
 
 The underlying Boolean value.
 

@@ -21,7 +21,7 @@ Directory is opaque when viewed through a union mount.
 static var opaque: FileFlags { get }
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding C constant is `UF_OPAQUE`.
 

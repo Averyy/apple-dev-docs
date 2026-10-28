@@ -17,7 +17,7 @@ PaliGemma VLM `UserInputProcessor`.
 struct PaliGemmaProcessor
 ```
 
-#### Overview
+## Overview
 
 This is meant to be used with [`PaliGemma`](./paligemma.md) and is typically created by [`VLMModelFactory`](./vlmmodelfactory.md).
 

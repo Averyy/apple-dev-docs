@@ -27,7 +27,7 @@ class SWCollaborationOptionsPickerGroup
 
 - [Adding custom collaboration to your app](../SharedWithYou/adding-custom-collaboration-to-your-app.md)
 
-#### Overview
+## Overview
 
 `SWCollaborationOptionsPickerGroup` displays as a picker view. A person can select only one option in the group. To allow a person to select more than one option, use [`SWCollaborationOptionsGroup`](./swcollaborationoptionsgroup.md).
 

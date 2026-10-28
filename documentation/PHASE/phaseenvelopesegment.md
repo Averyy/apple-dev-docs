@@ -24,7 +24,7 @@ class PHASEEnvelopeSegment
 @interface PHASEEnvelopeSegment : NSObject
 ```
 
-#### Overview
+## Overview
 
 This class specifies a curve that determines the _y-_value rate of change over a particular portion of an envelope’s graph. For example, the difference between a [`PHASECurveType.cubed`](./phasecurvetype/cubed.md) segment and an [`PHASECurveType.inverseCubed`](./phasecurvetype/inversecubed.md) segment is that they share opposite rates of change; where the cubed curve’s *y* value changes fastest in the segment’s domain, the inverse-cubed curve changes slowest, and vice versa.
 

@@ -26,7 +26,7 @@ func remove(from aRunLoop: RunLoop, forMode mode: RunLoop.Mode)
 - (void) removeFromRunLoop:(NSRunLoop *) aRunLoop forMode:(NSRunLoopMode) mode;
 ```
 
-#### Discussion
+## Discussion
 
 You can use this method in conjunction with [`schedule(in:forMode:)`](./schedule%28in,formode%29.md) to transfer the receiver to a run loop other than the default one. Although it is possible to remove an `NSNetService` object completely from any run loop and then attempt actions on it, you must not do it.
 

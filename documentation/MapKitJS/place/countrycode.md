@@ -15,7 +15,7 @@ The country or region associated with the place.
 countryCode: string | null;
 ```
 
-#### Discussion
+## Discussion
 
 The country or region associated with this place, denoted by the standard abbreviation used to refer to the country or region. For example, the [`countryCode`](./countrycode.md) for Golden Gate Park in San Francisco, CA is `"US"`.
 

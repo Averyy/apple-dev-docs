@@ -21,7 +21,7 @@ Contextual values that a custom animation can use to manage state and access a v
 struct AnimationContext<Value> where Value : VectorArithmetic
 ```
 
-#### Overview
+## Overview
 
 The system provides an `AnimationContext` to a [`CustomAnimation`](./customanimation.md) instance so that the animation can store and retrieve values in an instance of [`AnimationState`](./animationstate.md). To access these values, use the context’s [`state`](./animationcontext/state.md) property.
 

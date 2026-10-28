@@ -21,11 +21,11 @@ Schedules a collection of framework requests to perform on the handler’s image
 final func performAll(_ requests: some Collection<any VisionRequest>) -> some AsyncSequence<VisionResult, Never>
 ```
 
-#### Return Value
+## Return Value
 
 A sequence of requests results.
 
-#### Discussion
+## Discussion
 
 This function doesn’t wait for requests to complete before returning. You can receive request results from the `AsyncSequence` as they become available.
 

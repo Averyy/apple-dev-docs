@@ -21,7 +21,7 @@ Returns a pose with a rotation that’s rotated by the specified rotation.
 func rotated(by rotation: Rotation3DFloat) -> Pose3DFloat
 ```
 
-#### Discussion
+## Discussion
 
 - Returns A pose with a rotation that’s rotated by the specified rotation.
 

@@ -19,7 +19,7 @@ func setContentBorderThickness(_ thickness: CGFloat, for edge: NSRectEdge)
 - (void) setContentBorderThickness:(CGFloat) thickness forEdge:(NSRectEdge) edge;
 ```
 
-#### Discussion
+## Discussion
 
 In a nontextured window calling `setContentBorderThickness:forEdge:` passing `NSMaxYEdge` will raise an exception (in a nontextured window, it’s only valid to set the content border thickness of the bottom edge). It is only valid to set the content border thickness of the top edge in a textured window.
 

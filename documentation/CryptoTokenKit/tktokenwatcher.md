@@ -29,7 +29,7 @@ class TKTokenWatcher
 
 - [Using Cryptographic Assets Stored on a Smart Card](./using-cryptographic-assets-stored-on-a-smart-card.md)
 
-#### Overview
+## Overview
 
 Create a token watcher and register an insertion handler to be notified when tokens are added to the system. You can also add removal handlers for specific tokens to be notified when those tokens are removed from the system.
 

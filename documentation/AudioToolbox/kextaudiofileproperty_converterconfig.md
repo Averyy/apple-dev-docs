@@ -24,7 +24,7 @@ var kExtAudioFileProperty_ConverterConfig: ExtAudioFilePropertyID { get }
 kExtAudioFileProperty_ConverterConfig
 ```
 
-#### Discussion
+## Discussion
 
 Set this property’s value to `NULL` to force resynchronization of the converter’s output format with the file’s data format.
 

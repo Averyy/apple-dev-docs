@@ -13,11 +13,11 @@ static IOReturn sHandleSetPowerState (
  UInt32powerStateOrdinal );
 ```
 
-#### Return Value
+## Return Value
 
 A valid IOReturn code indicating success or failure.
 
-#### Overview
+## Overview
 
 The sHandleSetPowerState method is a static function used as C->C++ glue for going behind the command gate.
 

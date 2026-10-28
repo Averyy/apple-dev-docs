@@ -25,11 +25,11 @@ func CMSampleBufferGetDuration(_ sbuf: CMSampleBuffer) -> CMTime
 extern CMTime CMSampleBufferGetDuration(CMSampleBufferRef sbuf);
 ```
 
-#### Return Value
+## Return Value
 
 The duration of the `CMSampleBuffer` or `kCMTimeInvalid` if there is an error.
 
-#### Discussion
+## Discussion
 
 If the buffer contains out-of-presentation-order samples, any gaps in the presentation timeline aren’t represented in the returned duration. The returned duration is the sum of all the individual sample durations.
 

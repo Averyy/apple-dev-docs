@@ -24,7 +24,7 @@ var serverAddress: String? { get set }
 @property (copy, nullable) NSString * serverAddress;
 ```
 
-#### Discussion
+## Discussion
 
 The format of the value of this property depends on the type of VPN protocol in use. For example, for IPSec the value should be a hostname or an IP address. For a custom SSL-VPN protocol the value may be a URL. The only requirement imposed by the Network Extension framework is that this property must have a non-`nil` string value for the protocol configuration to be valid.
 

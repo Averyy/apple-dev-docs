@@ -19,7 +19,7 @@ static func screenPoint(fromView parentView: NSView, point: NSPoint) -> NSPoint
 extern NSPoint NSAccessibilityPointInView(NSView *parentView, NSPoint point);
 ```
 
-#### Discussion
+## Discussion
 
 Given a point in the specified view’s coordinates, it returns the same point in the screen’s coordinates.
 

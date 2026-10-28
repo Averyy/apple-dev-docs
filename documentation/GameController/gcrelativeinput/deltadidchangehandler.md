@@ -25,7 +25,7 @@ var deltaDidChangeHandler: ((any GCPhysicalInputElement, any GCRelativeInput, Fl
 @property (atomic, copy, nullable) void (^deltaDidChangeHandler)(id<GCPhysicalInputElement>element, id<GCRelativeInput>input, float delta);
 ```
 
-#### Discussion
+## Discussion
 
 The block’s parameters are:
 

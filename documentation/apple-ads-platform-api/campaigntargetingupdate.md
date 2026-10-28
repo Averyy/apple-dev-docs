@@ -15,13 +15,13 @@ Targeting configuration for updating an existing campaign’s supply source, pla
 object CampaignTargetingUpdate
 ```
 
-#### Discussion
+## Discussion
 
 The `CampaignTargetingUpdate` object is the update-time counterpart to [`CampaignTargeting`](./campaigntargeting.md). `supplyPlacement` and `countryOrRegion` are optional and nullable; only the fields you supply are changed, and any omitted field retains its current value. `supplySource` is immutable after campaign creation: including it in an update request, even with its current unchanged value, is unsupported. Each updatable field uses a [`TargetingDataUpdate`](./targetingdataupdate.md) object to express `include`/`exclude` changes for that dimension.
 
 > **Note**: For `supplyPlacement`, omitting the field leaves the current placement(s) unchanged rather than switching targeting to every placement. An Apple Maps campaign created with a single `MAPS` placement can’t be widened to target both `MAPS_SEARCH_RESULTS` and `MAPS_SEARCH_HOME` via update. That requires creating a new campaign without `supplyPlacement` set. See [`CampaignTargetingCreate.SupplyPlacement`](./campaigntargetingcreate/supplyplacement-data.dictionary.md).
 
-##### Example
+### Example
 
 ```json
 {

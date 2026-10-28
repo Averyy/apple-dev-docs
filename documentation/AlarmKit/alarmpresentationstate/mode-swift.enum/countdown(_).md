@@ -17,7 +17,7 @@ A mode indicating the alarm timer is active.
 case countdown(AlarmPresentationState.Mode.Countdown)
 ```
 
-#### Discussion
+## Discussion
 
 An alarm can only be in one of these states at a time.
 

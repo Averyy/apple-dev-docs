@@ -15,7 +15,7 @@ An internal error occurred.
 static var internalError: VZError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 The system reports this error when the virtual machine unexpectedly stops.
 

@@ -25,7 +25,7 @@ enum AVAudioEnvironmentDistanceAttenuationModel
 enum AVAudioEnvironmentDistanceAttenuationModel : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 Distance attenuation is the natural attenuation of sound when traveling from the source to the listener. The different attenuation models describe the drop-off in gain as the source moves away from the listener.
 

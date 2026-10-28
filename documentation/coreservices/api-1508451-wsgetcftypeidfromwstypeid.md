@@ -15,11 +15,11 @@ Gets the CFType associated with a given WSType
 CFTypeID WSGetCFTypeIDFromWSTypeID(WSTypeID typeID);
 ```
 
-#### Return Value
+## Return Value
 
 Returns a `CFTypeID`, or 0 if not found
 
-#### Discussion
+## Discussion
 
 Returns the `CFTypeID` that is associated with a given `WSTypeID`.  `CFTypeIDs` are only valid during a particular instance of a process and should not be used as static values.
 

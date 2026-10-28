@@ -23,7 +23,7 @@ protocol UISearchTextFieldDelegate : UITextFieldDelegate
 @protocol UISearchTextFieldDelegate <UITextFieldDelegate>
 ```
 
-#### Overview
+## Overview
 
 A search field asks its delegate for an [`NSItemProvider`](../Foundation/nsitemprovider.md) when the user starts to copy or move a token. To support these interactions, set the search field’s [`delegate`](./uitextfield/delegate.md) to an instance of [`UISearchTextFieldDelegate`](./uisearchtextfielddelegate.md) that implements [`searchTextField(_:itemProviderForCopying:)`](./uisearchtextfielddelegate/searchtextfield%28_,itemproviderforcopying%29.md) and set the search field’s [`allowsCopyingTokens`](./uisearchtextfield/allowscopyingtokens.md) property to [`true`](../Swift/true.md).
 

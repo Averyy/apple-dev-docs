@@ -20,7 +20,7 @@ A type that you use as the content of a data attachment.
 protocol DataAttachmentRepresentable : Sendable
 ```
 
-#### Overview
+## Overview
 
 Conform to this protocol to describe how a value serializes into — and deserializes back from — a [`Transcript.DataAttachment`](./transcript/dataattachment.md). The serialized form is a portable `Data` blob identified by a content type identifier, which is what gets persisted when a [`Transcript`](./transcript.md) is encoded, so a transcript remains readable even in environments where the declaring package isn’t installed.
 

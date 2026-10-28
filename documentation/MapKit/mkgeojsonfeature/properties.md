@@ -25,7 +25,7 @@ var properties: Data? { get }
 @property (nonatomic, readonly, nullable) NSData * properties;
 ```
 
-#### Discussion
+## Discussion
 
 MapKit exposes these optional properties but treats them as opaque.
 

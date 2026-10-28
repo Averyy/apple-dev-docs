@@ -23,7 +23,7 @@ func setBackgroundImage(_ backgroundImage: UIImage?, for state: UIControl.State,
 - (void) setBackgroundImage:(UIImage *) backgroundImage forState:(UIControlState) state style:(UIBarButtonItemStyle) style barMetrics:(UIBarMetrics) barMetrics;
 ```
 
-#### Discussion
+## Discussion
 
 For good results, `backgroundImage` must be a stretchable image.
 

@@ -29,7 +29,7 @@ func coordinate(with intents: [NSFileAccessIntent], queue: OperationQueue, byAcc
 
 - [Improving performance and stability when accessing the file system](../improving-performance-and-stability-when-accessing-the-file-system.md)
 
-#### Discussion
+## Discussion
 
 This method lets you asynchronously perform coordinated read or writes. You can specify any combination of individual read or write operations. The file coordinator waits asynchronously to get access to the files and then invokes the accessor block on the specified queue.
 

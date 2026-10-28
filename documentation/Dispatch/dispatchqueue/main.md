@@ -21,7 +21,7 @@ The dispatch queue associated with the main thread of the current process.
 class var main: DispatchQueue { get }
 ```
 
-#### Discussion
+## Discussion
 
 The system automatically creates the main queue and associates it with your application’s main thread. Your app uses one (and only one) of the following three approaches to execute blocks submitted to the main queue:
 

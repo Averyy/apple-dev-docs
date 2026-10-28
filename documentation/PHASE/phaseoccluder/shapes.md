@@ -24,7 +24,7 @@ var shapes: [PHASEShape] { get }
 @property (nonatomic, copy, readonly) NSArray<PHASEShape *> * shapes;
 ```
 
-#### Discussion
+## Discussion
 
 The framework sets the contents to the `shapes` argument of the [`init(engine:shapes:)`](./init%28engine,shapes%29.md) initializer.
 

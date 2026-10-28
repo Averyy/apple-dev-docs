@@ -25,11 +25,11 @@ func CVPixelBufferGetBaseAddressOfPlane(_ pixelBuffer: CVPixelBuffer, _ planeInd
 extern void *CVPixelBufferGetBaseAddressOfPlane(CVPixelBufferRef pixelBuffer, size_t planeIndex);
 ```
 
-#### Return Value
+## Return Value
 
 The base address of the plane, or `NULL` for nonplanar pixel buffers.
 
-#### Discussion
+## Discussion
 
 Retrieving the base address for a pixel buffer requires that the buffer base address be locked using the [`CVPixelBufferLockBaseAddress(_:_:)`](./cvpixelbufferlockbaseaddress%28_,_%29.md) function.
 

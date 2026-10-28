@@ -15,7 +15,7 @@ A container for other audio objects, typically audio devices and audio clock dev
 class IOUserAudioBox;
 ```
 
-#### Overview
+## Overview
 
 Along with containing other audio objects, [`IOUserAudioBox`](./iouseraudiobox.md) publishes identifying information about itself and allows you to enable or disable the box. When disabled, the box’s contents aren’t available.
 

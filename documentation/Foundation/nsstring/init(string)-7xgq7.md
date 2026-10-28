@@ -22,7 +22,7 @@ Returns an `NSString` object initialized by copying the characters from another 
 convenience init(string aString: NSString)
 ```
 
-#### Return Value
+## Return Value
 
 An `NSString` object initialized by copying the characters from `aString`. The returned object may be different from the original receiver.
 

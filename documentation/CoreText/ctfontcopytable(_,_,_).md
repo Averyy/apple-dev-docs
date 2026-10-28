@@ -25,7 +25,7 @@ func CTFontCopyTable(_ font: CTFont, _ table: CTFontTableTag, _ options: CTFontT
 extern CFDataRefCTFontCopyTable(CTFontRef font, CTFontTableTag table, CTFontTableOptions options);
 ```
 
-#### Return Value
+## Return Value
 
 A retained reference to the font table data as a [`CFData`](../CoreFoundation/cfdata.md) object. The table data is not actually copied; however, the data reference must be released.
 

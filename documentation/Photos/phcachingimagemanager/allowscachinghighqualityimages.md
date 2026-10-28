@@ -26,7 +26,7 @@ var allowsCachingHighQualityImages: Bool { get set }
 @property (nonatomic, assign) BOOL allowsCachingHighQualityImages;
 ```
 
-#### Discussion
+## Discussion
 
 If `true` (the default), the image manager prepares images at high quality. This option produces better images, at a high performance cost.
 

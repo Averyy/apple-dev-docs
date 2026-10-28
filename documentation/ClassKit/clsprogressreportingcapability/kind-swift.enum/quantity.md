@@ -23,7 +23,7 @@ case quantity
 CLSProgressReportingCapabilityKindQuantity
 ```
 
-#### Discussion
+## Discussion
 
 Add this capability to indicate that a context reports an arbitrary numerical result at the end of a task using a [`CLSQuantityItem`](../../clsquantityitem.md) instance.
 

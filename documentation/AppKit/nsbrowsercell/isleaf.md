@@ -19,7 +19,7 @@ var isLeaf: Bool { get set }
 @property (getter=isLeaf) BOOL leaf;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), the browser cell is a leaf cell.
 

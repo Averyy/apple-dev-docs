@@ -19,7 +19,7 @@ static let initialValue: NSBindingName
 extern NSBindingName NSInitialValueBinding;
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see [Cocoa Bindings](../cocoa-bindings.md).
 

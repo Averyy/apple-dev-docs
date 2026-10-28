@@ -21,7 +21,7 @@ class func buttonContents(forSystemImageNamed imageName: String, size: CGSize, s
 + (TCControlContents *) buttonContentsForSystemImageNamed:(NSString *) imageName size:(CGSize) size shape:(TCControlContentsButtonShape) shape controller:(TCTouchController *) controller;
 ```
 
-#### Return Value
+## Return Value
 
 The `TCControlContents` for the button.
 

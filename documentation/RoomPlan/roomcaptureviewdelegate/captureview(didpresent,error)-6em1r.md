@@ -17,7 +17,7 @@ Provides a default, blank implementation for the processed scan-results callback
 func captureView(didPresent processedResult: CapturedRoom, error: (any Error)?)
 ```
 
-#### Discussion
+## Discussion
 
 The system calls this implementation if your app doesn’t implement [`captureView(didPresent:error:)`](./captureview%28didpresent,error%29.md).
 

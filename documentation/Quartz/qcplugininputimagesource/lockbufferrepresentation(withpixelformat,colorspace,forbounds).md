@@ -22,11 +22,11 @@ func lockBufferRepresentation(withPixelFormat format: String!, colorSpace: CGCol
 - (BOOL) lockBufferRepresentationWithPixelFormat:(NSString *) format colorSpace:(CGColorSpaceRef) colorSpace forBounds:(NSRect) bounds;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if successful; otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 The content of the buffer is read-only. You should not attempt to modify it.
 

@@ -25,7 +25,7 @@ func tap()
 - (void) tap;
 ```
 
-#### Discussion
+## Discussion
 
 This method is available in iOS and for Touch Bar interactions in macOS.
 

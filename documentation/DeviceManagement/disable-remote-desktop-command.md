@@ -9,13 +9,13 @@ Disable Remote Desktop on a device.
 **Availability**:
 - macOS 10.14.4+
 
-#### Discussion
+## Discussion
 
 This command disables Remote Desktop on the device, and prevents any further remote event processing. It removes any `PostEvent` Transparency Consent and Control (TCC) ability, unless the device already has an installed TCC configuration profile with that ability enabled.
 
 Refer to the following sections to determine supported channels and requirements, and to see an example request and response.
 
-##### Command availability
+### Command availability
 
 |  |  |
 | --- | --- |
@@ -25,7 +25,7 @@ Refer to the following sections to determine supported channels and requirements
 | Allowed in user enrollment | N/A |
 | Required access right | N/A |
 
-##### Example request and response
+### Example request and response
 
 **Request**:
 

@@ -25,11 +25,11 @@ func la_matrix_slice(_ matrix: la_object_t, _ matrix_first_row: la_index_t, _ ma
 extern la_object_tla_matrix_slice(la_object_t matrix, la_index_t matrix_first_row, la_index_t matrix_first_col, la_index_t matrix_row_stride, la_index_t matrix_col_stride, la_count_t slice_rows, la_count_t slice_cols);
 ```
 
-#### Return Value
+## Return Value
 
 A new matrix with size slice_rows x slice_cols whose elements are taken from the source matrix.
 
-#### Discussion
+## Discussion
 
 Create a slice of a matrix.
 

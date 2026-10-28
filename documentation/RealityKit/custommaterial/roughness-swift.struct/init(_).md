@@ -19,7 +19,7 @@ Creates a roughness object from a physically based material’s roughness proper
 init(_ value: PhysicallyBasedMaterial.Roughness)
 ```
 
-#### Discussion
+## Discussion
 
 This initializer creates a roughness object by copying the scale and texture values from an existing [`PhysicallyBasedMaterial.Roughness`](../../physicallybasedmaterial/roughness-swift.struct.md) object.
 

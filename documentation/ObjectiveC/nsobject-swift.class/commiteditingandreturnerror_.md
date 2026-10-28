@@ -15,11 +15,11 @@ Attempt to commit pending edits, returning an error in the case of failure.
 - (BOOL) commitEditingAndReturnError:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 [`YES`](../yes.md) if the commit is successful, otherwise [`NO`](../no.md).
 
-#### Discussion
+## Discussion
 
 During autosaving, commit editing may fail, due to a pending edit. Rather than interrupt the user with an unexpected alert, this method provides the caller with the option to either present the error or fail silently, leaving the pending edit in place and the user’s editing uninterrupted. In your implementation of this method, you should attempt to commit editing, but if there is a failure return [`NO`](../no.md) and in `error` an error object to be presented or ignored as appropriate.
 

@@ -22,7 +22,7 @@ class func isPedometerEventTrackingAvailable() -> Bool
 + (BOOL) isPedometerEventTrackingAvailable;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if pedometer events are available or [`false`](../../Swift/false.md) if they are not.
 

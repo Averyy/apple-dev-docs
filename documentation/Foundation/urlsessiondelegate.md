@@ -32,7 +32,7 @@ protocol URLSessionDelegate : NSObjectProtocol, Sendable
 - [Downloading files in the background](./downloading-files-in-the-background.md)
 - [Uploading data to a website](./uploading-data-to-a-website.md)
 
-#### Overview
+## Overview
 
 In addition to the methods defined in this protocol, most delegates should also implement some or all of the methods in the [`URLSessionTaskDelegate`](./urlsessiontaskdelegate.md), [`URLSessionDataDelegate`](./urlsessiondatadelegate.md), and [`URLSessionDownloadDelegate`](./urlsessiondownloaddelegate.md) protocols to handle task-level events. These include events like the beginning and end of individual tasks, and periodic progress updates from data or download tasks.
 

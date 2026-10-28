@@ -17,11 +17,11 @@ CMConcatCallBackUPP NewCMConcatCallBackUPP (
 );
 ```
 
-#### Return Value
+## Return Value
 
 The universal procedure pointer.
 
-#### Overview
+## Overview
 
 The callback protects against the appearance of a stalled machine during lengthy color world processing. If a CMM takes more than several seconds to process the information and create a color world, it will call the callback, if one is provided, and pass it the `refCon` provided. Passed to the functions `NCWNewLinkProfile` or `NCWConcatColorWorld` function .
 

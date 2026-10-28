@@ -9,9 +9,9 @@ Get a list of all treatments for a specific App Store version experiment.
 **Availability**:
 - App Store Connect API 2.4+
 
-#### Discussion
+## Discussion
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

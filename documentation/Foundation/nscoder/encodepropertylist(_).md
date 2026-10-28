@@ -19,7 +19,7 @@ func encodePropertyList(_ aPropertyList: Any)
 - (void) encodePropertyList:(id) aPropertyList;
 ```
 
-#### Discussion
+## Discussion
 
 `NSCoder`’s implementation invokes [`encodeValue(ofObjCType:at:)`](./encodevalue%28ofobjctype,at%29.md) to encode `aPropertyList`.
 

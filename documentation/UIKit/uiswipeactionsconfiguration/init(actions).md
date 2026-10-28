@@ -22,7 +22,7 @@ convenience init(actions: [UIContextualAction])
 + (instancetype) configurationWithActions:(NSArray<UIContextualAction *> *) actions;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized swipe action configuration object.
 

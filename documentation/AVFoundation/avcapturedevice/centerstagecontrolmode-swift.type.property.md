@@ -23,7 +23,7 @@ class var centerStageControlMode: AVCaptureDevice.CenterStageControlMode { get s
 @property (class) AVCaptureCenterStageControlMode centerStageControlMode;
 ```
 
-#### Discussion
+## Discussion
 
 See Control Modes for details on choosing an appropriate control mode.
 

@@ -5,13 +5,13 @@
 
 Ensure that the pointers in your code are safe for the 64-bit runtime.
 
-#### Overview
+## Overview
 
 Pointers reference objects and other data in memory and are used often in C and Objective-C for passing objects to functions or manipulating the contents of memory. When you update from 32-bit to 64-bit architecture, the pointers in your code double in size, with implications throughout the code. Any assumptions that you make about pointer sizes can lead to undefined behavior, memory corruption, or crashes.
 
 To review your code for proper pointer usage, look for areas where a pointer is being cast, or coerced, to another type. Avoid casting pointers to other types, such as integers. If you print the values of pointers using functions such as `NSLog` or `printf`, use properly prescribed macros in your format string to ensure that values are displayed correctly.
 
-##### Cast pointers to integers selectively
+### Cast pointers to integers selectively
 
 When you cast pointers to an integer type, use pointer types consistently to ensure that all of your variables are large enough to hold an address.
 
@@ -27,7 +27,7 @@ int *d = c + 1;               // Correct.
 
 If you must cast a pointer to an integer type, always use the `uintptr_t` type to avoid truncation. Note that modifying pointer values through integer math and then converting them back into a pointer can violate basic type aliasing rules. This can lead to unexpected behavior from the compiler as well as processor faults when a misaligned pointer is accessed.
 
-##### Allocate memory using sizeof
+### Allocate memory using sizeof
 
 Always use `sizeof` to obtain the correct size for any structure or variable you allocate. Never call `malloc` with an explicit size to allocate space for a variable.
 
@@ -41,7 +41,7 @@ uint32_t *x = (uint32_t *)malloc(sizeof(uint32_t));
 
 Search your code for any instance of `malloc` that isn’t followed by `sizeof`.
 
-##### Access Objective-C internal structures using approved methods
+### Access Objective-C internal structures using approved methods
 
 If you have code that directly accesses an object’s `isa` field, that code fails when executing in the 64-bit runtime, because the `isa` field no longer holds a pointer. Instead, it includes some pointer data and uses the remaining bits to hold other runtime information.
 
@@ -49,7 +49,7 @@ To read an object’s `isa` field, use the class property or call the [`object_g
 
 > ❗ **Important**:  The Simulator app doesn’t detect the errors described here. Always test your app on actual hardware.
 
-##### Update format strings
+### Update format strings
 
 Print functions, such as `printf`, can be difficult to write when your code has to support both the 32-bit and 64-bit runtimes, because the data types change from one runtime to the other. To solve this problem for standard types and pointer-sized integers, use the various macros listed in the following tables.
 

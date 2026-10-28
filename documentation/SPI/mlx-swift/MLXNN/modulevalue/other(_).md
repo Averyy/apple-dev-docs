@@ -17,7 +17,7 @@ A non-MLXArray and non-Module value.
 case other(Any)
 ```
 
-#### Discussion
+## Discussion
 
 From code:
 

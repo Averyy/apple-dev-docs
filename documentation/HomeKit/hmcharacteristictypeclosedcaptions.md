@@ -24,7 +24,7 @@ let HMCharacteristicTypeClosedCaptions: String
 extern NSString * const HMCharacteristicTypeClosedCaptions;
 ```
 
-#### Overview
+## Overview
 
 The corresponding value is one of the constants in the [`HMCharacteristicValueClosedCaptions`](./hmcharacteristicvalueclosedcaptions.md) enumeration.
 

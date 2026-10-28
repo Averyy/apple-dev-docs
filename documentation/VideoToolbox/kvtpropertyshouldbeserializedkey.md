@@ -24,7 +24,7 @@ let kVTPropertyShouldBeSerializedKey: CFString
 extern CFStringRef const kVTPropertyShouldBeSerializedKey;
 ```
 
-#### Discussion
+## Discussion
 
 The associated value is a [`CFBoolean`](../CoreFoundation/cfboolean.md). The default value is `false`.
 

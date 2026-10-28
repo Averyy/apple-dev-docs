@@ -19,7 +19,7 @@ var version: UInt32
 uint32_t version;
 ```
 
-#### Discussion
+## Discussion
 
 Set this to [`SEC_KEY_IMPORT_EXPORT_PARAMS_VERSION`](../sec_key_import_export_params_version.md).
 

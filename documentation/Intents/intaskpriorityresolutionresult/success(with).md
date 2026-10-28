@@ -25,11 +25,11 @@ class func success(with resolvedTaskPriority: INTaskPriority) -> Self
 + (instancetype) successWithResolvedTaskPriority:(INTaskPriority) resolvedTaskPriority;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INTaskPriorityResolutionResult`](../intaskpriorityresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method to create a result object when you successfully identify the task priority to modify.
 

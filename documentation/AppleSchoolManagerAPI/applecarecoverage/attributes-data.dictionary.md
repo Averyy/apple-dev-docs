@@ -15,18 +15,18 @@ Attributes for an organization device’s AppleCare coverage resource.
 object AppleCareCoverage.Attributes
 ```
 
-#### Overview
+## Overview
 
 > **Note**: When additional attributes are added by Apple, they appear automatically, without requiring a newer version of the API.
 
-###### Status
+#### Status
 
 | **Possible values** | **Description** |
 | --- | --- |
 | `ACTIVE` | Coverage is currently active. |
 | `INACTIVE` | Coverage is currently inactive. |
 
-###### PaymentType
+#### PaymentType
 
 | **Possible values** | **Description** |
 | --- | --- |

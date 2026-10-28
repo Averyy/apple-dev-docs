@@ -21,7 +21,7 @@ Creates an instance that displays a timer counting within the provided interval.
 init(timerInterval: ClosedRange<Date>, pauseTime: Date? = nil, countsDown: Bool = true, showsHours: Bool = true)
 ```
 
-#### Discussion
+## Discussion
 
 ```swift
 Text(

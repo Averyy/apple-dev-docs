@@ -16,7 +16,7 @@ Processes the results of an asynchronous request for an input report.
 virtual void CompleteInputReport(OSAction *action, IOReturn status, uint32_t actualByteCount, uint64_t completionTimestamp);
 ```
 
-#### Discussion
+## Discussion
 
 If an asynchronous request for an input report was successful, this method handles the report and schedules a new asynchronous request for an updated report. If the request was unsuccessful, this method retries the initial request, resetting the USB device as needed if it is unresponsive.
 

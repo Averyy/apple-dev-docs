@@ -24,7 +24,7 @@ static var `default`: PHImageContentMode { get }
 PHImageContentModeDefault
 ```
 
-#### Discussion
+## Discussion
 
 Use this content mode when requesting a full-sized image using the [`PHImageManagerMaximumSize`](../phimagemanagermaximumsize.md) value for the target size. In this case, the image manager does not scale or crop the image.
 

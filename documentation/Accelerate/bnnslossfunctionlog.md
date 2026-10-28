@@ -25,7 +25,7 @@ var BNNSLossFunctionLog: BNNSLossFunction { get }
 BNNSLossFunctionLog
 ```
 
-#### Discussion
+## Discussion
 
 [`BNNSLossFunctionLog`](./bnnslossfunctionlog.md) performs log loss computation between labels and predictions.
 

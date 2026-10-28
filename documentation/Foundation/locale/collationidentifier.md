@@ -21,7 +21,7 @@ The collation identifier for the locale, or `nil` if it has none.
 var collationIdentifier: String? { get }
 ```
 
-#### Discussion
+## Discussion
 
 For example, for the locale “en_US@collation=phonebook”, returns “phonebook”.
 

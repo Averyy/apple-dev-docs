@@ -25,11 +25,11 @@ func CMTextFormatDescriptionGetJustification(_ desc: CMFormatDescription, horizo
 extern OSStatus CMTextFormatDescriptionGetJustification(CMFormatDescriptionRef desc, CMTextJustificationValue *horizontaJustificationlOut, CMTextJustificationValue *verticalJustificationOut);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. Returns `noErr` if successful.
 
-#### Discussion
+## Discussion
 
 For possible values see [`CMTextJustificationValue`](./cmtextjustificationvalue.md).
 

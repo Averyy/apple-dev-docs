@@ -21,7 +21,7 @@ Returns a Boolean value that indicates whether a type is higher in a hierarchy t
 func isSubtype(of type: UTType) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the type directly or indirectly conforms to `type`, but returns [`false`](../../Swift/false.md) if it’s equal to `type`.
 

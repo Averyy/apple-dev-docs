@@ -25,7 +25,7 @@ class func currentVersionOfItem(at url: URL) -> NSFileVersion?
 + (NSFileVersion *) currentVersionOfItemAtURL:(NSURL *) url;
 ```
 
-#### Return Value
+## Return Value
 
 The version object representing the current version of the file or `nil` if there is no such file.
 

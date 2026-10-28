@@ -23,7 +23,7 @@ class func textAttachmentViewProviderClass(forFileType fileType: String) -> AnyC
 + (Class) textAttachmentViewProviderClassForFileType:(NSString *) fileType;
 ```
 
-#### Return Value
+## Return Value
 
 The text attachment view provider class, or `nil` if the there is no class for the specified file type.
 

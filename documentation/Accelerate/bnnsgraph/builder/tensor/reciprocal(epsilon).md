@@ -23,7 +23,7 @@ func reciprocal(epsilon: Float = .ulpOfOne.squareRoot()) -> BNNSGraph.Builder.Te
 
 Available when `T` conforms to `BNNSScalar`.
 
-#### Discussion
+## Discussion
 
 This function calculates `1.0 / (self+epsilon)`.
 

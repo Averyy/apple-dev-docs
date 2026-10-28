@@ -22,7 +22,7 @@ var selectedPrinter: UIPrinter? { get }
 @property (nonatomic, readonly, nullable) UIPrinter * selectedPrinter;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is set to the picker you specified at creation time initially. When the picker is dismissed, the value is updated to reflect the printer that the user selected, if any. If the user cancels the picker without selecting a printer, the value of this property does not change.
 

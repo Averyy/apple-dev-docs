@@ -19,7 +19,7 @@ var descender: CGFloat { get }
 @property (readonly) CGFloat descender;
 ```
 
-#### Discussion
+## Discussion
 
 For example, if the longest descender extends 2 points below the baseline, the value in this property is `–2`.
 

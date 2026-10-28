@@ -21,11 +21,11 @@ Creates and returns a set containing the objects in a given argument list.
 + (instancetype) setWithObjects:(ObjectType) firstObj;
 ```
 
-#### Return Value
+## Return Value
 
 A new set containing the objects in the argument list.
 
-#### Discussion
+## Discussion
 
 To add additional objects to the new set, pass a comma-separated list of trailing variadic arguments, ending with `nil`.  If the same object appears more than once in the list of objects, it is added only once to the returned set. Each object receives a [`retain`](../../ObjectiveC/nsobject-c.protocol/retain.md) message as it is added to the set.
 

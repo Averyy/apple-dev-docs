@@ -17,11 +17,11 @@ A generic container that holds sensor data samples retrieved from SensorKit data
 struct SRFetchResponse<Sample>
 ```
 
-#### Overview
+## Overview
 
 `SRFetchResponse` is a type-safe container that wraps individual sensor data samples. It serves as the primary data delivery mechanism for sensor information retrieved through `SRReader.fetch(_:)` operations.
 
-#### Usage Example
+## Usage Example
 
 ```swift
 let request = SRFetchRequest()

@@ -22,11 +22,11 @@ optional func dragInteraction(_ interaction: UIDragInteraction, itemsForAddingTo
 - (NSArray<UIDragItem *> *) dragInteraction:(UIDragInteraction *) interaction itemsForAddingToSession:(id<UIDragSession>) session withTouchAtPoint:(CGPoint) point;
 ```
 
-#### Return Value
+## Return Value
 
 An array of drag items to add to the drag session, or an empty array if there are no items to add to the session.
 
-#### Discussion
+## Discussion
 
 Not implementing this method is the same as always returning an empty array.
 

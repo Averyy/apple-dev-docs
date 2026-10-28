@@ -11,13 +11,13 @@ Fetches a specific budget order using a budget order identifier.
 
 > **Deprecated**: Apple Ads Campaign Management API is deprecated. Instead, use the [Apple Ads Platform API](../apple-ads-platform-api/apple-ads-platform-api.md).
 
-#### Discussion
+## Discussion
 
 When you create a budget order through [Apple Ads Advanced](https://ads.apple.com), the system returns a budget order ID (`boId`) that you can use with to return details of a specific budget order for an organization or campaign group. Through the API, you can only fetch a budget order using Get a Budget Order or [`Get all Budget Orders`](./get-all-budget-orders.md).
 
 This call retrieves a specific assigned budget order for your organization. It also returns completed and canceled orders. Budget orders also return when you use the [`Create a Campaign`](./create-a-campaign.md) or [`Update a Campaign`](./update-a-campaign.md) endpoints.
 
-##### Payload example: Get a budget order
+### Payload example: Get a budget order
 
 **Request**:
 

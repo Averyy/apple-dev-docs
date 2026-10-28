@@ -24,7 +24,7 @@ class func kernelNames(fromMetalLibraryData data: Data) -> [String]
 + (NSArray<NSString *> *) kernelNamesFromMetalLibraryData:(NSData *) data;
 ```
 
-#### Return Value
+## Return Value
 
 An Array of strings containing the names of the kernels.
 

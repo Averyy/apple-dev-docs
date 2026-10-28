@@ -23,7 +23,7 @@ mutating func replaceSubrange<C>(_ subRange: Range<Slice<Base>.Index>, with newE
 
 Available when `Base` conforms to `RangeReplaceableCollection`.
 
-#### Discussion
+## Discussion
 
 This method has the effect of removing the specified range of elements from the collection and inserting the new elements at the same location. The number of new elements need not match the number of elements being removed.
 

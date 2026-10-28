@@ -25,7 +25,7 @@ let kCGImageDestinationMergeMetadata: CFString
 extern CFStringRef const kCGImageDestinationMergeMetadata;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key must be a [`CFBoolean`](../CoreFoundation/cfboolean.md) value. The default value is [`kCFBooleanFalse`](../CoreFoundation/kcfbooleanfalse.md).
 

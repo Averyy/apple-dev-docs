@@ -19,7 +19,7 @@ func item(atRow row: Int) -> Any?
 - (id) itemAtRow:(NSInteger) row;
 ```
 
-#### Return Value
+## Return Value
 
 The item associated with `row`.
 

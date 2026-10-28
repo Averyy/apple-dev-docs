@@ -24,7 +24,7 @@ func dismiss(animated: Bool)
 - (void) dismissPopoverAnimated:(BOOL) animated;
 ```
 
-#### Discussion
+## Discussion
 
 You can use this method to dismiss the popover programmatically in response to taps inside the popover window. Taps outside of the popover’s contents automatically dismiss the popover.
 

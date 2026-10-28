@@ -30,7 +30,7 @@ extern CFStringRef const kSecMatchLimitAll;
 - [Searching for keychain items](./searching-for-keychain-items.md)
 - [Storing Keys in the Keychain](./storing-keys-in-the-keychain.md)
 
-#### Discussion
+## Discussion
 
 Use this value with the [`kSecMatchLimit`](./ksecmatchlimit.md) key.
 

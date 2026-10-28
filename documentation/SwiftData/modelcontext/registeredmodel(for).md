@@ -22,7 +22,7 @@ Returns the typed model for the specified identifier.
 func registeredModel<T>(for persistentModelID: PersistentIdentifier) -> T? where T : PersistentModel
 ```
 
-#### Return Value
+## Return Value
 
 A typed instance of the identified model, if known to the context; otherwise, `nil`.
 

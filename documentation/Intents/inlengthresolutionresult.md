@@ -24,7 +24,7 @@ class INLengthResolutionResult
 @interface INLengthResolutionResult : INIntentResolutionResult
 ```
 
-#### Overview
+## Overview
 
 An [`INLengthResolutionResult`](./inlengthresolutionresult.md) object is what you return when resolving length related parameters of an intent object. Use the creation method that best reflects your ability to successfully resolve the parameter.
 

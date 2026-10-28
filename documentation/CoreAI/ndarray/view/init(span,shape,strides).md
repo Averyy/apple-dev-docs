@@ -21,7 +21,7 @@ init(span: Span<Element>, shape: [Int], strides: [Int] = [])
 
 Available when `Element` conforms to `BitwiseCopyable`.
 
-#### Discussion
+## Discussion
 
 The lifetime of the resulting view copies the lifetime of the provided span.
 

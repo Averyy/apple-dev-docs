@@ -20,7 +20,7 @@ A notification the system posts when a sample buffer display layer fails to deco
 static let AVSampleBufferDisplayLayerFailedToDecode: NSNotification.Name
 ```
 
-#### Discussion
+## Discussion
 
 You can retrieve the error object from the user information dictionary by querying it for its [`AVSampleBufferDisplayLayerFailedToDecodeNotificationErrorKey`](../../../AVFoundation/avsamplebufferdisplaylayerfailedtodecodenotificationerrorkey.md) value.
 

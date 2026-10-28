@@ -19,11 +19,11 @@ func PMSessionDefaultPageFormat(_ printSession: PMPrintSession, _ pageFormat: PM
 OSStatus PMSessionDefaultPageFormat(PMPrintSession printSession, PMPageFormat pageFormat);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./core_printing.md#1670007).
 
-#### Discussion
+## Discussion
 
 You must call the function `PMSessionDefaultPageFormat` between the creation and release of the printing session. See the function [`PMCreateSession(_:)`](./api-1463247-pmcreatesession.md).
 

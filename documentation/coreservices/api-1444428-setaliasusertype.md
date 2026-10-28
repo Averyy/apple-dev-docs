@@ -17,7 +17,7 @@ Sets the user type for an alias record referenced by a handle.
 void SetAliasUserType(AliasHandle alias, OSType userType);
 ```
 
-#### Discussion
+## Discussion
 
 This routine is thread safe.
 

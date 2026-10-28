@@ -13,11 +13,11 @@ virtual IOReturn setPowerState (
  IOService *whichDevice );
 ```
 
-#### Return Value
+## Return Value
 
 See IOService.h for details.
 
-#### Overview
+## Overview
 
 Requests a power managed driver to change the power state of its device. Most subclasses of IOSCSIProtocolInterface have class-specific mechanisms and should not override this routine. See IOSCSIProtocolServices.h, IOSCSIBlockCommandsDevice.h, IOSCSIReducedBlockCommandsDevice.h, and IOSCSIMultimediaCommandsDevice.h for more information about power management changes. Subclasses should not need to override this method.
 

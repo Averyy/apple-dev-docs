@@ -19,7 +19,7 @@ var selectionBackgroundStyle: NSScrubberSelectionStyle? { get set }
 @property (strong, nullable) NSScrubberSelectionStyle * selectionBackgroundStyle;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `nil`, which specifies no background decoration.
 

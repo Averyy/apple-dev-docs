@@ -23,7 +23,7 @@ class PKIdentityDocumentMetadata
 @interface PKIdentityDocumentMetadata : NSObject
 ```
 
-#### Overview
+## Overview
 
 This class contains the required and optional metadata you need to configure a pass. It’s similar to [`PKShareablePassMetadata`](./pkshareablepassmetadata.md).
 

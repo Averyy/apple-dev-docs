@@ -19,7 +19,7 @@ func setShowsHelp(_ showsHelp: Bool)
 - (void) setShowsHelp:(BOOL) showsHelp;
 ```
 
-#### Discussion
+## Discussion
 
 When a user clicks the help button, the certificate panel first checks the delegate for a [`certificatePanelShowHelp(_:)`](../../ObjectiveC/nsobject-swift.class/certificatepanelshowhelp%28_%29.md) method. If the delegate does not implement such a method, or the delegate method returns [`false`](../../Swift/false.md), then the [`NSHelpManager`](../../AppKit/nshelpmanager.md) method [`openHelpAnchor(_:inBook:)`](../../AppKit/nshelpmanager/openhelpanchor%28_,inbook%29.md) is called with a `nil` book and the anchor specified by the [`setHelpAnchor(_:)`](./sethelpanchor%28_%29.md) method. An exception is raised if the delegate returns [`false`](../../Swift/false.md) and there is no help anchor set.
 

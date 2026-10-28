@@ -29,11 +29,11 @@ func makeResidencySet(descriptor desc: MTLResidencySetDescriptor) throws -> any 
 
 - [Simplifying GPU resource management with residency sets](../simplifying-gpu-resource-management-with-residency-sets.md)
 
-#### Return Value
+## Return Value
 
 A new [`MTLResidencySet`](../mtlresidencyset.md) instance if the method completes successfully; otherwise Swift throws an error and Objective-C returns `nil`.
 
-#### Discussion
+## Discussion
 
 Create an [`MTLResidencySet`](../mtlresidencyset.md) by creating and configuring an [`MTLResidencySetDescriptor`](../mtlresidencysetdescriptor.md) instance and pass it to this method.
 

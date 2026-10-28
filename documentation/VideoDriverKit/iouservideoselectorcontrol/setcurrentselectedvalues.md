@@ -15,7 +15,7 @@ Sets the current control value.
 kern_return_t SetCurrentSelectedValues(const IOUserVideoSelectorValue *in_values, size_t in_num_values);
 ```
 
-#### Discussion
+## Discussion
 
 Changing the control value will send a notification to the host to update the object state if successful. The object’s work queue synchronizes access to the value.
 

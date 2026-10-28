@@ -25,7 +25,7 @@ class func `default`() -> CKRecordZone
 + (CKRecordZone *) defaultRecordZone;
 ```
 
-#### Discussion
+## Discussion
 
 Always use this method to retrieve the default zone for a database. You can use the returned object to specify the default zone for either the public or private database of a container. You don’t need to save the returned zone object before using it. The owner of the zone is [`CKOwnerDefaultName`](../ckownerdefaultname.md), which corresponds to the current user.
 

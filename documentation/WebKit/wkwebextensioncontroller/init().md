@@ -23,11 +23,11 @@ init()
 - (instancetype) init;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized web extension controller, or nil if the object could not be initialized.
 
-#### Discussion
+## Discussion
 
 This is a designated initializer. You can use [`init(configuration:)`](./init%28configuration%29.md) to initialize an instance with a configuration.
 

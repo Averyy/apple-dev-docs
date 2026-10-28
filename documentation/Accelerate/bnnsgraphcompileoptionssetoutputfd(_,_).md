@@ -25,7 +25,7 @@ func BNNSGraphCompileOptionsSetOutputFD(_ options: bnns_graph_compile_options_t,
 void BNNSGraphCompileOptionsSetOutputFD(bnns_graph_compile_options_t options, int fd);
 ```
 
-#### Discussion
+## Discussion
 
 Use this option to specify that the graph [`BNNSGraphCompileFromFile(_:_:_:)`](./bnnsgraphcompilefromfile%28_,_,_%29.md) returns is a read-only memory-mapped file.
 

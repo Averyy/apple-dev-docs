@@ -15,7 +15,7 @@ A string value that specifies a system version after which the system ignores th
 - **Name**: `UIRequiresFullScreenIgnoredStartingWithVersion` (Requires Full Screen Ignored Starting With Version)
 - **Type**: string
 
-#### Discussion
+## Discussion
 
 Use this key only if you’ve already updated your app so that it no longer uses [`UIRequiresFullScreen`](./uirequiresfullscreen.md) in later versions of iOS. Add the key, then specify in which version of iOS you want the system to begin ignoring the [`UIRequiresFullScreen`](./uirequiresfullscreen.md) key. The system ignores the key starting in the version you specify and in later versions of iOS.
 

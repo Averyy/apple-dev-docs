@@ -24,7 +24,7 @@ class AVAssetReader
 @interface AVAssetReader : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use an asset reader to read media data from instances of [`AVAsset`](./avasset.md). The assets you read may represent file-based media like QuickTime movies or MPEG-4 files, or media that you compose from multiple sources using [`AVComposition`](./avcomposition.md).
 

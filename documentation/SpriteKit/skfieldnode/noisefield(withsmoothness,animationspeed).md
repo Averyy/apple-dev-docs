@@ -25,11 +25,11 @@ class func noiseField(withSmoothness smoothness: CGFloat, animationSpeed speed: 
 + (SKFieldNode *) noiseFieldWithSmoothness:(CGFloat) smoothness animationSpeed:(CGFloat) speed;
 ```
 
-#### Return Value
+## Return Value
 
 A new noise field node.
 
-#### Discussion
+## Discussion
 
 Use a noise field to simulate effects such as fireflies or snow.
 

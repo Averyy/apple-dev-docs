@@ -17,7 +17,7 @@ Presents a sheet for the merchant to re-accept Tap to Pay on iPhone’s Terms an
 func relinkAccount(using token: PaymentCardReader.Token) async throws
 ```
 
-#### Discussion
+## Discussion
 
 To use Tap to Pay on iPhone, your participating payment service provider must provide the merchant using your app with a secure token. This token contains a unique identifier for each merchant and also specifies if relinking using a different Apple Account is allowed.
 

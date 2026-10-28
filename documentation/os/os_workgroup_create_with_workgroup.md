@@ -21,11 +21,11 @@ Create a new workgroup that is bound to the specified workgroup.
 extern os_workgroup_tos_workgroup_create_with_workgroup(const char *name, os_workgroup_t wg);
 ```
 
-#### Return Value
+## Return Value
 
 A new workgroup of the same type, and with the same attributes, as the provided workgroup.
 
-#### Discussion
+## Discussion
 
 Use this function to create new references to an existing workgroup in your app. You might create an original workgroup from one thread and create copies of that workgroup for additional threads. The system manages threads from the original workgroup and threads from any copied workgroups as if they belonged to the same group. The use of separate groups avoids the need for multiple threads to coordinate access to a shared data structure.
 

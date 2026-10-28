@@ -5,7 +5,7 @@
 
 Specifies whether the default audio route for the `PlayAndRecord` category should be overridden.
 
-#### Overview
+## Overview
 
 The `kAudioSessionCategory_PlayAndRecord` category supports simultaneous input and output. You could use this category, for example, to add an effect to audio coming into the device’s microphone. By default, output audio for this category goes to the receiver—the speaker you hold to your ear when on a phone call. The `kAudioSessionOverrideAudioRoute_Speaker` constant lets you direct the output audio to the speaker situated at the bottom of the phone.
 

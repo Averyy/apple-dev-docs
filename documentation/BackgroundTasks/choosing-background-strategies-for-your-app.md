@@ -5,7 +5,7 @@
 
 Select the best method of scheduling background runtime for your app.
 
-#### Overview
+## Overview
 
 If your app needs computing resources to complete tasks when it’s not running in the foreground, you can select from many strategies to obtain background runtime. Selecting the right strategies for your app depends on how it functions in the background.
 
@@ -15,7 +15,7 @@ Apps involved in health research studies can obtain background runtime to proces
 
 Select one or more methods for your app based on how you schedule activity in the background.
 
-##### Continue Foreground Work in the Background
+### Continue Foreground Work in the Background
 
 The system may place apps in the background at any time. If your app performs critical work that must continue while it runs in the background, use [`beginBackgroundTask(withName:expirationHandler:)`](../UIKit/uiapplication/beginbackgroundtask%28withname,expirationhandler%29.md) to alert the system. Consider this approach if your app needs to finish sending a message or complete saving a file.
 
@@ -25,7 +25,7 @@ Once your work completes, call [`endBackgroundTask(_:)`](../UIKit/uiapplication/
 
 If the task is one that takes some time, such as downloading or uploading files, use [`URLSession`](../Foundation/urlsession.md). See [Downloading files in the background](../Foundation/downloading-files-in-the-background.md) for more information.
 
-##### Defer Intensive Work
+### Defer Intensive Work
 
 To preserve battery life and performance, you can schedule backgrounds tasks for periods of low activity, such as overnight when the device charges. Use this approach when your app manages heavy workloads, such as training machine learning models or performing database maintenance.
 
@@ -33,7 +33,7 @@ Schedule these types of background tasks using [`BGProcessingTask`](./bgprocessi
 
 Apps involved in health research studies can have time-consuming tasks essential for the study and might need to complete processing the background. Schedule these types of background tasks using [`BGHealthResearchTask`](./bghealthresearchtask.md).
 
-##### Update Your App’s Content
+### Update Your App’s Content
 
 Your app may require short bursts of background time to perform content refresh or other work; for example, your app may fetch content from the server periodically, or regularly update its internal state. In this situation, use [`BGAppRefreshTask`](./bgapprefreshtask.md) by requesting [`BGAppRefreshTaskRequest`](./bgapprefreshtaskrequest.md).
 
@@ -41,7 +41,7 @@ Your app can use [`BGHealthResearchTaskRequest`](./bghealthresearchtaskrequest.m
 
 The system decides the best time to launch your background task, and provides your app up to 30 seconds of background runtime. Complete your work within this time period and call [`setTaskCompleted(success:)`](./bgtask/settaskcompleted%28success%29.md), or the system terminates your app. See [Background Tasks](./BackgroundTasks.md) for more information.
 
-##### Wake Your App with a Background Push
+### Wake Your App with a Background Push
 
 Background pushes silently wake your app in the background. They don’t display an alert, play a sound, or badge your app’s icon. If your app obtains content from a server infrequently or at irregular intervals, use background pushes to notify your app when new content becomes available. A messaging app with a muted conversation might use a background push solution, and so might an email app that processes incoming mail without alerting the user.
 
@@ -49,7 +49,7 @@ When sending a background push, set `content-available`: to `1` without `alert`,
 
 Once the system delivers the remote notification with [`application(_:didReceiveRemoteNotification:fetchCompletionHandler:)`](../UIKit/uiapplicationdelegate/application%28_,didreceiveremotenotification,fetchcompletionhandler%29.md), your app has up to 30 seconds to complete its work. After your app performs the work, call the passed completion handler as soon as possible to conserve power. If you send background pushes more frequently than three times per hour, the system imposes rate limitations. See [Pushing background updates to your App](../UserNotifications/pushing-background-updates-to-your-app.md) for more information.
 
-##### Request Background Time and Notify the User
+### Request Background Time and Notify the User
 
 If your app needs to perform a task in the background and show a notification to the user, use a Notification Service Extension. For example, an email app might need to notify a user after downloading a new email. Subclass [`UNNotificationServiceExtension`](../UserNotifications/unnotificationserviceextension.md) and bundle the system extension with your app. Upon receiving a push notification, your service extension wakes up and obtains background runtime through [`didReceive(_:withContentHandler:)`](../UserNotifications/unnotificationserviceextension/didreceive%28_,withcontenthandler%29.md).
 

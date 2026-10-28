@@ -25,11 +25,11 @@ func CGAffineTransformMakeTranslation(_ tx: CGFloat, _ ty: CGFloat) -> CGAffineT
 extern CGAffineTransform CGAffineTransformMakeTranslation(CGFloat tx, CGFloat ty);
 ```
 
-#### Return Value
+## Return Value
 
 A new affine transform matrix.
 
-#### Discussion
+## Discussion
 
 This function creates a `CGAffineTransform` structure. which you can use (and reuse, if you want) to move a coordinate system. The matrix takes the following form:
 

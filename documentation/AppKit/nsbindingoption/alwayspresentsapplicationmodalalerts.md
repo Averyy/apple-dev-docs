@@ -19,7 +19,7 @@ static let alwaysPresentsApplicationModalAlerts: NSBindingOption
 extern NSBindingOption NSAlwaysPresentsApplicationModalAlertsBindingOption;
 ```
 
-#### Discussion
+## Discussion
 
 If [`true`](../../Swift/true.md), then the alerts are displayed application model, otherwise they are displayed as sheets.
 

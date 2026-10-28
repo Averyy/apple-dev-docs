@@ -5,11 +5,11 @@
 
 Build a Safari web extension in Xcode.
 
-#### Overview
+## Overview
 
 To create a Safari web extension, you create an Xcode project using the Safari Extension App template. The project includes the Safari web extension as a macOS or iOS app extension that users can download from the App Store and install in Safari. The Xcode project includes default web extension files, such as the manifest, script files for a content page and background page, files for the toolbar pop-up menu, and folders for images and internationalization.
 
-##### Create and configure the Xcode project
+### Create and configure the Xcode project
 
 To create a new project in Xcode:
 
@@ -34,7 +34,7 @@ Provide information in the dialog for Xcode to configure your project:
 
 > **Note**:  XCTest doesn’t support unit tests for the JavaScript APIs that Safari web extensions use, or UI tests in Safari. Use XCTest if you build features in the iOS or macOS app container using Swift or Objective-C.
 
-##### Review the generated web extension files and folders
+### Review the generated web extension files and folders
 
 Xcode generates the project, provides default versions of the files you need to create your Safari web extension, and organizes them into the groups and folders illustrated in the following figure:
 
@@ -53,7 +53,7 @@ The project contains default versions of web extension files in the Resources gr
 
 See [Running your Safari web extension](./running-your-safari-web-extension.md) to try out your web extension in Safari.
 
-##### Replace the default icons and toolbar icons
+### Replace the default icons and toolbar icons
 
 Xcode provides default icons and toolbar icons for your Safari web extension in the Resources > images folder. Safari uses the icon images in Preferences > Extensions to display in the list of icons that the user can select to see more detail about your extension. Safari uses the toolbar icon images when your extension has a pop-up webpage that the user can access from Safari’s toolbar.
 

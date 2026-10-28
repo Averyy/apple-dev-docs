@@ -17,7 +17,7 @@ Sets whether the image retains its source image data.
 - (void) setDataRetained:(BOOL) flag;
 ```
 
-#### Discussion
+## Discussion
 
 Retention of the source image data is important if the source of the image data could change, be moved, or be deleted. Data retention is also useful if you plan to resize an image frequently; otherwise, resizing occurs on a cached copy of the image, which can lose image quality during successive scaling operations. With data retention enabled, the image is resized from the original source data.
 

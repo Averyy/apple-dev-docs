@@ -20,7 +20,7 @@ var kLSMMapHashText: Int { get }
 kLSMMapHashText
 ```
 
-#### Discussion
+## Discussion
 
 If you specify this option when storing the map, this option hashes the map if it hasn’t been hashed yet.
 

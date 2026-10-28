@@ -5,7 +5,7 @@
 
 Apply the Core Image suite of filters to child nodes of an effect node.
 
-#### Overview
+## Overview
 
 In the example image below, the effect node’s children are two sprites that provide lighting information. The effect node accumulates the effects of these lights, applies a blur filter to soften the resulting image, and uses a multiply blend mode to apply this lighting to a texture.
 

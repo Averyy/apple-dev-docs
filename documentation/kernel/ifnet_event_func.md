@@ -13,7 +13,7 @@
 typedef void (*ifnet_event_func)(ifnet_t interface, const struct kev_msg *msg);
 ```
 
-#### Discussion
+## Discussion
 
 ifnet_event_func is called when an event occurs on a specific interface.
 

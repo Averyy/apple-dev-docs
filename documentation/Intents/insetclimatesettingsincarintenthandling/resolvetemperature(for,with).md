@@ -28,7 +28,7 @@ optional func resolveTemperature(for intent: INSetClimateSettingsInCarIntent) as
 - (void) resolveTemperatureForSetClimateSettingsInCar:(INSetClimateSettingsInCarIntent *) intent withCompletion:(void (^)(INTemperatureResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to resolve the requested temperature. Use the intent object to identify the temperature specified by the user.
 

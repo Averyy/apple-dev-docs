@@ -23,7 +23,7 @@ func gss_release_buffer(_ minor_status: UnsafeMutablePointer<OM_uint32>, _ buffe
 OM_uint32 gss_release_buffer(OM_uint32 *minor_status, gss_buffer_t buffer);
 ```
 
-#### Return Value
+## Return Value
 
 A status code set to [`GSS_S_COMPLETE`](./gss_s_complete.md) on completion.
 

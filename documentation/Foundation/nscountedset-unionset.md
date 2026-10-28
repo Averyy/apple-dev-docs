@@ -5,7 +5,7 @@
 
 Adds each object in another given set to the receiving set, if not present.
 
-#### Overview
+## Overview
 
 For each object in `otherSet` that is present in the set, this method increments the associated count.
 

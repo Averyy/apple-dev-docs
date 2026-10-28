@@ -25,7 +25,7 @@ func resetTransform()
 - (void) resetTransform;
 ```
 
-#### Discussion
+## Discussion
 
 If you change the position or orientation of a node with an attached static or dynamic physics body, call this method afterward to ensure that the physics simulation incorporates the change. You need not call this method for kinematic bodies.
 

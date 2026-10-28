@@ -19,11 +19,11 @@ func MIDIDriverEnableMonitoring(_ driver: MIDIDriverRef, _ enabled: Bool) -> OSS
 extern OSStatus MIDIDriverEnableMonitoring(MIDIDriverRef driver, Boolean enabled);
 ```
 
-#### Return Value
+## Return Value
 
 An `OSStatus` result code.
 
-#### Discussion
+## Discussion
 
 Some specialized drivers, like a MIDI monitor display, can intercept and inspect all outgoing MIDI messages. Enablng monitoring causes the system to call the [`Monitor`](./mididriverinterface/monitor.md) function with the outgoing MIDI packets for all destinations in the system. The [`Monitor`](./mididriverinterface/monitor.md) function can’t rely on the MIDI events arriving in order, due to the MIDI server’s schedule-ahead facilities.
 

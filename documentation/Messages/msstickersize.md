@@ -21,7 +21,7 @@ enum MSStickerSize
 enum MSStickerSize : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 The browser scales down sticker images to fit. If a sticker is smaller than the provided space, the browser centers the sticker in the space.
 

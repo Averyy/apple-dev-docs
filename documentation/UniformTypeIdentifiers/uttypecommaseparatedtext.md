@@ -21,7 +21,7 @@ A type that represents text containing comma-separated values.
 extern UTType * const UTTypeCommaSeparatedText;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.comma-separated-values-text`.
 

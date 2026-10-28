@@ -19,7 +19,7 @@ func getRectsBeingDrawn(_ rects: UnsafeMutablePointer<UnsafePointer<NSRect>?>?, 
 - (void) getRectsBeingDrawn:(const NSRect **) rects count:(NSInteger *) count;
 ```
 
-#### Discussion
+## Discussion
 
 An implementation of [`draw(_:)`](./draw%28_%29.md) can use this information to test whether objects or regions within the view intersect with the rectangles in the list, and thereby avoid unnecessary drawing that would be completely clipped away.
 

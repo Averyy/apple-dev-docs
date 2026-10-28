@@ -20,7 +20,7 @@ A collection of alternatives to choose from.
 struct ConfigurationSet
 ```
 
-#### Overview
+## Overview
 
 For example, a configuration set might contain configurations named `small`, `medium`, and `big` to represent a choice of sizes.
 

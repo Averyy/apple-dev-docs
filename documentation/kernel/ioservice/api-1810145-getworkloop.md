@@ -11,11 +11,11 @@ Returns the current work loop or `provider->getWorkLoop`.
 virtual IOWorkLoop * getWorkLoop() const;
 ```
 
-#### Return Value
+## Return Value
 
 A work loop, either the current work loop or it walks up the getProvider chain calling `getWorkLoop`. Eventually it will reach a valid work loop-based driver or the root of the I/O tree, where it will return a system-wide work loop. Returns 0 if it fails to find (or create) a work loop.
 
-#### Overview
+## Overview
 
 This function returns a valid work loop that a client can use to add an IOCommandGate to. The intention is that an IOService client has data that needs to be protected but doesn't want to pay the cost of a dedicated thread. This data has to be accessed from a provider's call-out context as well. So to achieve both of these goals the client creates an IOCommandGate to lock access to his data but he registers it with the provider's work loop, i.e. the work loop which will make the completion call-outs. This avoids a potential deadlock because the work loop gate uses a recursive lock, which allows the same lock to be held multiple times by a single thread.
 

@@ -21,7 +21,7 @@ Specifies a narrow list style, the shortest list style.
 case narrow
 ```
 
-#### Discussion
+## Discussion
 
 This width creates a list like `One, Two, Three` in U.S. English.
 

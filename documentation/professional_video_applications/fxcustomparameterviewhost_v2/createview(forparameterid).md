@@ -24,11 +24,11 @@ func createView(forParameterID parameterID: UInt32) -> NSView!
 
 - [Adding parameters to plug-ins](../../Professional-Video-Applications/adding-parameters-to-plug-ins.md)
 
-#### Return Value
+## Return Value
 
 An NSView or subclass of NSView.
 
-#### Discussion
+## Discussion
 
 The host application calls this plug-in method during the parameter-list setup sequence, once for each plug-in parameter that has the `kFxParameterFlag_CUSTOM_UI` parameter flag set. The view may be created dynamically, or, more commonly, retrieved from a NIB file in the plug-in’s resources directory.
 

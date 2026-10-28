@@ -16,7 +16,7 @@ Returns the single instance of `NSPortNameServer` for the application.
 + (NSPortNameServer *) systemDefaultPortNameServer;
 ```
 
-#### Return Value
+## Return Value
 
 The single instance of `NSPortNameServer` for the application.
 

@@ -19,7 +19,7 @@ var VMENTRY_LOAD_IA32_RTIT_CTL: UInt32 { get }
 VMENTRY_LOAD_IA32_RTIT_CTL
 ```
 
-#### Discussion
+## Discussion
 
 Must be `0`.
 

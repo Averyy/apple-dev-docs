@@ -20,7 +20,7 @@ func type(forKey key: String) -> String?
 - (NSString *) typeForKey:(NSString *) key;
 ```
 
-#### Return Value
+## Return Value
 
 The name of the declared type of the attribute or relationship identified by `key`; for example, “NSString”. Searches in the receiver first, then in any superclass. Returns `nil` if no match is found.
 

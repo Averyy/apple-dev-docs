@@ -24,7 +24,7 @@ var frame: CGRect { get }
 @property (nonatomic, readonly) CGRect frame;
 ```
 
-#### Discussion
+## Discussion
 
 The item’s frame must be expressed in the coordinate space of the [`UIFocusItemContainer`](../uifocusitemcontainer.md) that contains it.
 

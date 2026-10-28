@@ -16,7 +16,7 @@ nonisolated
 struct ImmersiveSpace<Content, Data> where Content : ImmersiveSpaceContent, Data : Decodable, Data : Encodable, Data : Hashable
 ```
 
-#### Overview
+## Overview
 
 Use an immersive space as a container for a view hierarchy that your app presents. The hierarchy that you declare as the immersive space’s content serves as a template for it:
 
@@ -33,7 +33,7 @@ struct SolarSystemApp: App {
 
 If you want to create a bounded scene instead, use one of the types that creates a window or a volume, like [`WindowGroup`](./windowgroup.md) or [`DocumentGroup`](./documentgroup.md).
 
-##### Style the immersive space
+### Style the immersive space
 
 By default, immersive spaces use the [`mixed`](./immersionstyle/mixed.md) style which places virtual content in a person’s surroundings. You can select a different style for the immersive space by adding the [`immersionStyle(selection:in:)`](./scene/immersionstyle%28selection,in%29.md) scene modifier to the scene. For example, you can completely control the visual experience using the [`full`](./immersionstyle/full.md) immersion style:
 
@@ -56,7 +56,7 @@ You can change the immersion style after presenting the immersive space by chang
 - For the [`mixed`](./immersionstyle/mixed.md) style, a virtual object obscures part or all of a window that’s behind the object. Similarly, a window obscures a virtual object that’s behind the window.
 - For other styles, windows always render in front of virtual content, no matter how someone positions the window or the content. This helps people to avoid losing track of windows behind virtual content when passthrough is partially or completely off.
 
-##### Open an immersive space
+### Open an immersive space
 
 You can programmatically open an immersive space by giving it an identifier. For example, you can label the solar system view from the previous example:
 
@@ -85,7 +85,7 @@ struct NewSolarSystemImmersiveSpace: View {
 
 Mark the call to the action with `await` because it executes asynchronously. When your app opens an immersive space, the system hides all other visible apps. The system allows only one immersive space to be open at a time. Be sure to close the open immersive space before opening another one.
 
-##### Dismiss an immersive space
+### Dismiss an immersive space
 
 You can dismiss an immersive space by calling the [`dismissImmersiveSpace`](./environmentvalues/dismissimmersivespace.md) action from the environment. For example, you can define a button that dismisses an immersive space:
 
@@ -106,7 +106,7 @@ struct DismissImmersiveSpaceButton: View {
 
 The dismiss action runs asynchronously, like the open action. You don’t need to specify an identifier when dismissing an immersive space because there can only be one immersive space open at a time.
 
-##### Present an immersive space at launch
+### Present an immersive space at launch
 
 When an app launches, it opens an instance of the first scene that’s listed in the app’s body. However, to open an immersive space at launch, you need to provide additional configuration information in your app’s `Info.plist` file. In particular, set the [`UIApplicationPreferredDefaultSceneSessionRole`](../BundleResources/information-property-list/uiapplicationpreferreddefaultscenesessionrole.md) key in the scene manifest to the value [`UISceneSessionRoleImmersiveSpaceApplication`](../BundleResources/information-property-list/uiapplicationscenemanifest/uisceneconfigurations/uiscenesessionroleimmersivespaceapplication.md).
 

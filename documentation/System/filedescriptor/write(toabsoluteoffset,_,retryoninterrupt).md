@@ -25,11 +25,11 @@ func write(toAbsoluteOffset offset: Int64, _ buffer: UnsafeRawBufferPointer, ret
 
 - [Adopting Swift File Operations](../adopting-file-operations.md)
 
-#### Return Value
+## Return Value
 
 The number of bytes that were written.
 
-#### Discussion
+## Discussion
 
 Unlike [`write(_:retryOnInterrupt:)`](./write%28_,retryoninterrupt%29.md), this method leaves the file’s existing offset unchanged.
 

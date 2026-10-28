@@ -15,7 +15,7 @@ A structure that defines the USB HID report descriptor header.
 typedef struct IOUSBHIDReportDesc IOUSBHIDReportDesc;
 ```
 
-#### Discussion
+## Discussion
 
 See the USB Implementers Forum (USB-IF) *Device Class Definition for Human Interface Devices (HID)* for more information.
 

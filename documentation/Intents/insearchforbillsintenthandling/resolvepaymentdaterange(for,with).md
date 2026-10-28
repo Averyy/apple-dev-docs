@@ -29,7 +29,7 @@ optional func resolvePaymentDateRange(for intent: INSearchForBillsIntent) async 
 - (void) resolvePaymentDateRangeForSearchForBills:(INSearchForBillsIntent *) intent withCompletion:(void (^)(INDateComponentsRangeResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to resolve any questions about the payment date for a bill. Use the [`paymentDateRange`](../insearchforbillsintent/paymentdaterange.md) property of the intent object to identify the date range to search. If a date range is available and usable, return a successful resolution with that date range. You can also make adjustments to the date range as needed and ask the user for confirmation.
 

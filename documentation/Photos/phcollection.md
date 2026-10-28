@@ -24,7 +24,7 @@ class PHCollection
 @interface PHCollection : PHObject
 ```
 
-#### Overview
+## Overview
 
 You do not create or work with instances of this class directly. Instead, use one of its two concrete subclasses, [`PHAssetCollection`](./phassetcollection.md) or [`PHCollectionList`](./phcollectionlist.md).
 

@@ -15,7 +15,7 @@
 typedef UInt32 SCSIPortStatus;
 ```
 
-#### Discussion
+## Discussion
 
 Type for SCSIPortStatus.
 

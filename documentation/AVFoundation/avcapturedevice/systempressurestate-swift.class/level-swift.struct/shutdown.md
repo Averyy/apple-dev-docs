@@ -23,7 +23,7 @@ static let shutdown: AVCaptureDevice.SystemPressureState.Level
 extern AVCaptureSystemPressureLevel const AVCaptureSystemPressureLevelShutdown;
 ```
 
-#### Discussion
+## Discussion
 
 When system pressure reaches this level, the capture system automatically shuts down, causing a session interruption. Use the [`AVCaptureSessionInterruptionSystemPressureStateKey`](../../../avcapturesessioninterruptionsystempressurestatekey.md) in the interruption notification’s [`userInfo`](../../../../Foundation/notification/userinfo.md) dictionary to find details about the system pressure factors causing the interruption.
 

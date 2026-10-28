@@ -23,11 +23,11 @@ nonisolated
 func contextMenu<MenuItems>(_ contextMenu: ContextMenu<MenuItems>?) -> some View where MenuItems : View
 ```
 
-#### Return Value
+## Return Value
 
 A view that can show a context menu.
 
-#### Discussion
+## Discussion
 
 Use this method to attach a specified context menu to a view. You can make the context menu unavailable by conditionally passing `nil` as the value for the `contextMenu`.
 

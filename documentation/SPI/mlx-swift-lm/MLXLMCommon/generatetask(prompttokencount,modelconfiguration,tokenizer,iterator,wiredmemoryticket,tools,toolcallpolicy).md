@@ -17,11 +17,11 @@ Low-level token generation returning an `AsyncStream<Generation>` and a `Task`.
 func generateTask<TOKEN>(promptTokenCount: Int, modelConfiguration: ModelConfiguration, tokenizer: Tokenizer, iterator: consuming TOKEN, wiredMemoryTicket: WiredMemoryTicket? = nil, tools: [[String : any Sendable]]? = nil, toolCallPolicy: ToolCallPolicy = .init()) -> (AsyncStream<Generation>, Task<Void, Never>) where TOKEN : TokenIteratorProtocol
 ```
 
-#### Return Value
+## Return Value
 
 An `AsyncStream` that emits `Generation` values and a `Task`
 
-#### Discussion
+## Discussion
 
 Accepts any [`TokenIteratorProtocol`](./tokeniteratorprotocol.md) conformer, including [`TokenIterator`](./tokeniterator.md) and [`SpeculativeTokenIterator`](./speculativetokeniterator.md). Swift infers the concrete type at the call site.
 

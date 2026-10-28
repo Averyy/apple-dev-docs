@@ -24,7 +24,7 @@ weak var room: HMRoom? { get }
 @property (nonatomic, weak, readonly) HMRoom * room;
 ```
 
-#### Discussion
+## Discussion
 
 Assign accessories to new rooms using [`assignAccessory(_:to:completionHandler:)`](../hmhome/assignaccessory%28_,to,completionhandler%29.md).
 

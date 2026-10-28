@@ -24,7 +24,7 @@ class MPSImage
 @interface MPSImage : NSObject
 ```
 
-#### Overview
+## Overview
 
 Some image types, such as those found in convolutional neural networks (CNN), differ from a standard texture in that they may have more than 4 channels per pixel. While the channels could hold RGBA data, they will more commonly hold a number of structural permutations upon an RGBA image as the neural network progresses. It is not uncommon for each pixel to have 32 or 64 channels in it.
 
@@ -50,17 +50,17 @@ The framework also provides [`MPSTemporaryImage`](./mpstemporaryimage.md) object
 
 Creation of the underlying texture may occur lazily in some cases. In general, you should avoid calling the [`texture`](./mpsimage/texture.md) property to avoid materializing memory for longer than necessary. When possible, use the other [`MPSImage`](./mpsimage.md) properties to get information about the object instead.
 
-##### The MPSImage Class
+### The MPSImage Class
 
 [`MTLBuffer`](../Metal/mtlbuffer.md) and [`MTLTexture`](../Metal/mtltexture.md) objects are commonly used in Metal apps and are used directly by the Metal Performance Shaders framework when possible. In apps that use CNN, kernels may need more than the four data channels that a [`MTLTexture`](../Metal/mtltexture.md) object can provide. In these cases, an [`MPSImage`](./mpsimage.md) object is used instead as an abstraction layer on top of a [`MTLTexture`](../Metal/mtltexture.md) object. When more than 4 channels are needed, additional textures in the 2D texture array are added to hold additional channels in sets of four. An [`MPSImage`](./mpsimage.md) object tracks this information as the number of *feature channels* in an image.
 
-##### CNN Images
+### CNN Images
 
 [`MPSCNNKernel`](./mpscnnkernel.md) objects operate on [`MPSImage`](./mpsimage.md) objects. [`MPSImage`](./mpsimage.md) objects are at their core [`MTLTexture`](../Metal/mtltexture.md) objects; however, whereas [`MTLTexture`](../Metal/mtltexture.md) objects commonly represent image or texel data, an [`MPSImage`](./mpsimage.md) object is a more abstract representation of image features. The channels within an [`MPSImage`](./mpsimage.md) do not necessarily correspond to colors in a color space (although they can, if necessary). As a result, there can be many more than four of them. Having 32 or 64 channels per pixel is not uncommon in CNN. This is achieved on the [`MTLTexture`](../Metal/mtltexture.md) object abstraction by inserting extra RGBA pixels to handle the additional feature channels (if any) beyond 4. These extra pixels are stored as multiple slices of a 2D image array. Thus, each CNN pixel in a 32-channel image is represented as 8 array slices, with 4-channels stored per-pixel in each slice. The width and height of the [`MTLTexture`](../Metal/mtltexture.md) object is the same as the width and height of the [`MPSImage`](./mpsimage.md) object. The number of slices in the [`MTLTexture`](../Metal/mtltexture.md) object is given by the number of feature channels rounded up to a multiple of 4.
 
 [`MPSImage`](./mpsimage.md) objects can be created from existing [`MTLTexture`](../Metal/mtltexture.md) objects. They may also be created anew from an [`MPSImageDescriptor`](./mpsimagedescriptor.md) and backed with either standard texture memory, or as [`MPSTemporaryImage`](./mpstemporaryimage.md) objects using memory drawn from the framework’s internal cached texture backing store. [`MPSTemporaryImage`](./mpstemporaryimage.md) objects can provide great memory usage and CPU time savings, but come with significant restrictions that should be understood before using them. For example, their contents are only valid during the GPU-side execution of a single [`MTLCommandBuffer`](../Metal/mtlcommandbuffer.md) object and can not be read from or written to by the CPU. They are provided as an efficient way to hold CNN computations that are used immediately within the scope of the same [`MTLCommandBuffer`](../Metal/mtlcommandbuffer.md) object and then discarded. Concatenation is also supported by allowing you to define from which destination feature channel to start writing the output of the current layer. In this way, your app can make a large [`MPSImage`](./mpsimage.md) or [`MPSTemporaryImage`](./mpstemporaryimage.md) object and fill in parts of it with multiple layers (as long as the destination feature channel offset is a multiple of 4).
 
-##### Supported Pixel Formats
+### Supported Pixel Formats
 
 The following table shows pixel formats supported by [`MPSImage`](./mpsimage.md).
 

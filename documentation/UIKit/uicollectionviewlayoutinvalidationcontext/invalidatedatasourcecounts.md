@@ -23,7 +23,7 @@ var invalidateDataSourceCounts: Bool { get }
 @property (nonatomic, readonly) BOOL invalidateDataSourceCounts;
 ```
 
-#### Discussion
+## Discussion
 
 You do not set this property yourself. The collection view sets it in response to specific types of layout invalidation scenarios.  For example, the collection view sets it to [`true`](../../Swift/true.md) when you insert or delete items or call the collection view’s [`reloadData()`](../uicollectionview/reloaddata%28%29.md) method.
 

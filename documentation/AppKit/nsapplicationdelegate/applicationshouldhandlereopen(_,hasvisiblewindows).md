@@ -20,11 +20,11 @@ optional func applicationShouldHandleReopen(_ sender: NSApplication, hasVisibleW
 - (BOOL) applicationShouldHandleReopen:(NSApplication *) sender hasVisibleWindows:(BOOL) hasVisibleWindows;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if you want the application to perform its normal tasks or [`false`](../../Swift/false.md) if you want the application to do nothing.
 
-#### Discussion
+## Discussion
 
 These events are sent whenever the Finder reactivates an already running application because someone double-clicked it again or used the dock to activate it.
 

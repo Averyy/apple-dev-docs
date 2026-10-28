@@ -22,7 +22,7 @@ var count: Int { get }
 @property (nonatomic, readonly) NSUInteger count;
 ```
 
-#### Discussion
+## Discussion
 
 In some cases, using this property is more efficient than fetching the [`items`](./items.md) array and asking for the count.
 

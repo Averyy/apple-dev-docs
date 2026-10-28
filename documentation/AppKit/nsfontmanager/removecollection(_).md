@@ -21,7 +21,7 @@ func removeCollection(_ collectionName: String) -> Bool
 - (BOOL) removeCollection:(NSString *) collectionName;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the font collection was successfully removed; otherwise, [`false`](../../Swift/false.md).
 

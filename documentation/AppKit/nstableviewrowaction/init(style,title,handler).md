@@ -19,11 +19,11 @@ convenience init(style: NSTableViewRowAction.Style, title: String, handler: @esc
 + (instancetype) rowActionWithStyle:(NSTableViewRowActionStyle) style title:(NSString *) title handler:(void (^)(NSTableViewRowAction *action, NSInteger row)) handler;
 ```
 
-#### Return Value
+## Return Value
 
 A new table row action object that you can return from your table view’s delegate method.
 
-#### Discussion
+## Discussion
 
 The style and handler block you specify cannot be changed later. You can change the title of the action button. You can also configure other appearance-related properties of the button using the properties of this class.
 

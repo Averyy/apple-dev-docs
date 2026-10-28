@@ -24,7 +24,7 @@ func characterRange(byExtending position: UITextPosition, in direction: UITextLa
 - (UITextRange *) characterRangeByExtendingPosition:(UITextPosition *) position inDirection:(UITextLayoutDirection) direction;
 ```
 
-#### Return Value
+## Return Value
 
 A text-range object that represents the distance from `position` to the farthest extent in `direction`.
 

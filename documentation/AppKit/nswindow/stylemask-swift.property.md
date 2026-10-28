@@ -19,7 +19,7 @@ var styleMask: NSWindow.StyleMask { get set }
 @property NSWindowStyleMask styleMask;
 ```
 
-#### Discussion
+## Discussion
 
 The [`styleMask`](./stylemask-swift.property.md) is settable on macOS 10.6 and later. Setting this property has the same restrictions as the `styleMask` parameter of [`init(contentRect:styleMask:backing:defer:)`](./init%28contentrect,stylemask,backing,defer%29.md). Changing the style mask may cause the view hierarchy to be rebuilt.
 

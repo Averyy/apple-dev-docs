@@ -39,11 +39,11 @@ func alignmentGuide(_ g: DepthAlignment, computeValue: @escaping (ViewDimensions
 - [Aligning views across stacks](../aligning-views-across-stacks.md)
 - [Aligning views within a stack](../aligning-views-within-a-stack.md)
 
-#### Return Value
+## Return Value
 
 A view modified with respect to its horizontal alignment according to the computation performed in the method’s closure.
 
-#### Discussion
+## Discussion
 
 Use `alignmentGuide(_:computeValue:)` to calculate specific offsets to reposition views in relationship to one another. You can return a constant or can use the [`ViewDimensions`](../viewdimensions.md) argument to the closure to calculate a return value.
 

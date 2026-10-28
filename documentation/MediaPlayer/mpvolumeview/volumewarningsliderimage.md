@@ -24,7 +24,7 @@ var volumeWarningSliderImage: UIImage? { get set }
 @property (nonatomic, strong, nullable) UIImage * volumeWarningSliderImage;
 ```
 
-#### Discussion
+## Discussion
 
 The system displays the image contained by this property on top of the [`maximumVolumeSliderImage(for:)`](./maximumvolumesliderimage%28for%29.md). The image must be visually distinct from the `maximumVolumeSliderImage` and use a color similar to the default in order to convey a sense of warning to the user.
 

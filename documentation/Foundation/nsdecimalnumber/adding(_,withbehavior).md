@@ -25,7 +25,7 @@ func adding(_ decimalNumber: NSDecimalNumber, withBehavior behavior: (any NSDeci
 - (NSDecimalNumber *) decimalNumberByAdding:(NSDecimalNumber *) decimalNumber withBehavior:(id<NSDecimalNumberBehaviors>) behavior;
 ```
 
-#### Discussion
+## Discussion
 
 `behavior` specifies the handling of calculation errors and rounding.
 

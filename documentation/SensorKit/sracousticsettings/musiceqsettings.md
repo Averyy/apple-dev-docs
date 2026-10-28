@@ -19,7 +19,7 @@ var musicEQSettings: SRAcousticSettings.MusicEQ { get }
 @property (nonatomic, strong, readonly) SRAcousticSettingsMusicEQ * musicEQSettings;
 ```
 
-#### Discussion
+## Discussion
 
 Music EQ Settings
 

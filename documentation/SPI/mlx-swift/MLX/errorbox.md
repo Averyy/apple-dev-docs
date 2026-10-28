@@ -17,7 +17,7 @@ Boxed error type usable with [`withError(_:)`](./witherror%28_%29-2wfiu.md).
 final class ErrorBox
 ```
 
-#### Overview
+## Overview
 
 For example:
 

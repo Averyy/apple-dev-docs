@@ -25,7 +25,7 @@ func CGPDFArrayGetDictionary(_ array: CGPDFArrayRef, _ index: Int, _ value: Unsa
 extern bool CGPDFArrayGetDictionary(CGPDFArrayRef array, size_t index, CGPDFDictionaryRef*value);
 ```
 
-#### Return Value
+## Return Value
 
 Returns [`true`](../Swift/true.md) if there is a PDF dictionary at the specified index, otherwise [`false`](../Swift/false.md).
 

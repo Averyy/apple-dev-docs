@@ -21,7 +21,7 @@ func didValue(forInputKeyChange key: String!) -> Bool
 - (BOOL) didValueForInputKeyChange:(NSString *) key;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the value on the input port changed since the last time the [`execute(_:atTime:withArguments:)`](./execute%28_,attime,witharguments%29.md) method was called; always returns [`false`](../../Swift/false.md) if called outside of the `execute:atTime:withArguments:` method.
 

@@ -6,7 +6,7 @@
 
 An atom that contains a table of keys and mappings to payload data in the corresponding timed metadata media samples.
 
-#### Overview
+## Overview
 
 The metadata key table atom contains a table of keys and mappings to payload data in the corresponding timed metadata media samples. The type of the metadata key table atom is set to `‘keys’`.
 

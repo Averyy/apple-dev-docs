@@ -21,11 +21,11 @@ Retrieves an array of sample sizes that represents each sample in a sample buffe
 func sampleSizes() throws -> [Int]
 ```
 
-#### Return Value
+## Return Value
 
 An array of sample sizes.
 
-#### Discussion
+## Discussion
 
 If the result contains a single element, all samples in the buffer are of this size. If there are no sample sizes in this buffer, the array is empty. This can occur if the samples in the buffer are noncontiguous, like noninterleaved audio, or if the sample buffer contains a [CVImageBuffer](../../CoreVideo/cvimagebuffer-q40.md).
 

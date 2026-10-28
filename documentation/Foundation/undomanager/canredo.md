@@ -25,7 +25,7 @@ var canRedo: Bool { get }
 @property (readonly) BOOL canRedo;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) if the manager has any actions to redo, otherwise [`false`](../../Swift/false.md).
 

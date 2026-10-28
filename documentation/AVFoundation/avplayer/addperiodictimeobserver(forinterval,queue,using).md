@@ -30,11 +30,11 @@ func addPeriodicTimeObserver(forInterval interval: CMTime, queue: dispatch_queue
 
 - [Monitoring playback progress in your app](../monitoring-playback-progress-in-your-app.md)
 
-#### Return Value
+## Return Value
 
 An opaque object that you pass as the argument to [`removeTimeObserver(_:)`](./removetimeobserver%28_%29.md) to cancel observation.
 
-#### Discussion
+## Discussion
 
 You must maintain a strong reference to the returned value as long as you want the time observer to be invoked by the player. You must pair each invocation of this method with a corresponding call to [`removeTimeObserver(_:)`](./removetimeobserver%28_%29.md). Releasing the observer object without invoking [`removeTimeObserver(_:)`](./removetimeobserver%28_%29.md) results in undefined behavior.
 

@@ -15,11 +15,11 @@ Stops the service associated with the specified provider.
 virtual kern_return_t Stop(IOService *provider);
 ```
 
-#### Return Value
+## Return Value
 
 A value that indicates the service-stopping result. Return [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) to inidicate success. To indicate a failure, see [IOKit Constants](../../iokit/iokit_constants.md) for error definitions.
 
-#### Discussion
+## Discussion
 
 Before terminating the object in `provider`, the system calls this method to stop the service associated with that object. Use your implementation of this method to stop all activity and put your driver in a quiescent state. If your driver has any in-progress asynchronous tasks, cancel those tasks and wait for DriverKit to call the associated cancellation handler before calling the `super` version of this method.
 

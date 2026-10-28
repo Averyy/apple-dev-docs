@@ -20,11 +20,11 @@ func getLocalEventsFilterDuringSuppressionState(_ state: CGEventSuppressionState
 extern CGEventFilterMask CGEventSourceGetLocalEventsFilterDuringSuppressionState(CGEventSourceRef source, CGEventSuppressionState state);
 ```
 
-#### Return Value
+## Return Value
 
 A mask that specifies the categories of local hardware events to enable during the event suppression interval. See [`CGEventFilterMask`](../cgeventfiltermask.md).
 
-#### Discussion
+## Discussion
 
 You can configure the system to suppress local hardware events from the keyboard or mouse during a short interval after a Quartz event is posted or during a synthetic mouse drag (mouse movement with the left or only mouse button down). For information about setting this local events filter, see [`setLocalEventsFilterDuringSuppressionState(_:state:)`](./setlocaleventsfilterduringsuppressionstate%28_,state%29.md).
 

@@ -23,13 +23,13 @@ func setVolume(_ volume: Float, for device: MediaOutputDevice)
 
 - [Creating a media device extension](../creating-a-media-device-extension.md)
 
-#### Discussion
+## Discussion
 
 For a group of devices, individual device volume changes should influence the group volume.
 
 Called when a device supports [`MediaOutputDevice.VolumeControl.absolute`](../mediaoutputdevice/volumecontrol-swift.enum/absolute.md).
 
-#### Grouping
+## Grouping
 
 For a group of devices, all devices in the group must support [`MediaOutputDevice.VolumeControl.absolute`](../mediaoutputdevice/volumecontrol-swift.enum/absolute.md).
 

@@ -21,7 +21,7 @@ class func mimeTypesShownAsHTML() -> [Any]!
 + (NSArray *) MIMETypesShownAsHTML;
 ```
 
-#### Return Value
+## Return Value
 
 An array containing `NSString` objects that represent the MIME types WebKit attempts to render as HTML.
 

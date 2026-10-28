@@ -22,7 +22,7 @@ Builder for preview body content within a `#Preview` macro.
 struct PreviewMacroBodyBuilder<Content>
 ```
 
-#### Overview
+## Overview
 
 > ⚠️ **Warning**: Using this builder outside of a `#Preview` macro will produce a fatal error.
 

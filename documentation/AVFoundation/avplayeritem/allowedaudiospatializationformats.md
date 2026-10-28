@@ -25,7 +25,7 @@ var allowedAudioSpatializationFormats: AVAudioSpatializationFormats { get set }
 @property (nonatomic, assign) AVAudioSpatializationFormats allowedAudioSpatializationFormats;
 ```
 
-#### Discussion
+## Discussion
 
 Spatialization uses psychoacoustic methods to create a more immersive audio experience when playing content on specialized headphones and speaker arrangements.
 

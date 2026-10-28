@@ -21,7 +21,7 @@ optional func templateApplicationScene(_ templateApplicationScene: CPTemplateApp
 - (void) templateApplicationScene:(CPTemplateApplicationScene *) templateApplicationScene didDisconnectInterfaceController:(CPInterfaceController *) interfaceController fromWindow:(CPWindow *) window;
 ```
 
-#### Discussion
+## Discussion
 
 CarPlay calls this method after it disconnects the scene. You can use it to perform any cleanup.
 

@@ -22,11 +22,11 @@ optional func textDraggableView(_ textDraggableView: any UIView & UITextDraggabl
 - (UITargetedDragPreview *) textDraggableView:(UIView<UITextDraggable> *) textDraggableView dragPreviewForLiftingItem:(UIDragItem *) item session:(id<UIDragSession>) session;
 ```
 
-#### Return Value
+## Return Value
 
 A targeted drag preview to show during the lift animation, or `nil` to show the default preview.
 
-#### Discussion
+## Discussion
 
 You implement this method when you want to show a nondefault preview during the lift animation. If you return `nil`, the system shows default preview.
 

@@ -15,7 +15,7 @@ A dictionary representation of the fields that changed in the record.
 readonly attribute Object recordFields;
 ```
 
-#### Discussion
+## Discussion
 
 The keys are the record field names, and the values are the record field values.
 

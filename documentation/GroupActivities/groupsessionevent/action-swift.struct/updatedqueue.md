@@ -20,7 +20,7 @@ An action that represents a nonspecific change to the queue.
 static let updatedQueue: GroupSessionEvent.Action
 ```
 
-#### Discussion
+## Discussion
 
 Use this action when the other action types don’t accurately describe the change you made to the queue. If you can specify the change using a [`GroupSessionEvent.Action.QueueChange`](./queuechange.md) type, use the [`updatedQueue(_:)`](./updatedqueue%28_%29.md) method instead.
 

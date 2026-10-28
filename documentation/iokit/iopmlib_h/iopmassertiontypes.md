@@ -25,7 +25,7 @@ Use as AssertionType argument to [`IOPMAssertionCreate`](../api-1557118-iopmasse
 #define kIOPMAssertionTypeNoDisplaySleep CFSTR("NoDisplaySleepAssertion")
 ```
 
-#### Overview
+## Overview
 
 When asserted and set to level [`kIOPMAssertionLevelOn`](../api-1557096-assertion/kiopmassertionlevelon.md), the system will prefer to enter the Dark Wake state, or remain in Dark Wake if already there, rather than go to sleep.
 

@@ -25,7 +25,7 @@ var timeIntervalSinceNow: TimeInterval { get }
 @property (readonly) NSTimeInterval timeIntervalSinceNow;
 ```
 
-#### Discussion
+## Discussion
 
 If the date object is earlier than the current date and time, this property’s value is negative.
 

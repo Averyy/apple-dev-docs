@@ -20,7 +20,7 @@ var original_ppid: pid_t
 pid_t original_ppid;
 ```
 
-#### Discussion
+## Discussion
 
 This field stays constant, even if the process’ parent changes.
 

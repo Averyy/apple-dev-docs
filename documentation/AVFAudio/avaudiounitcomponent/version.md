@@ -24,7 +24,7 @@ var version: Int { get }
 @property (nonatomic, readonly) NSUInteger version;
 ```
 
-#### Discussion
+## Discussion
 
 The version number is an `NSNumber` made of a hexadecimal number with a major, minor, and dot-release format, such as `0xMMMMmmDD`.
 

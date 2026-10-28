@@ -19,7 +19,7 @@ func publish()
 - (void) publish;
 ```
 
-#### Discussion
+## Discussion
 
 Entries in the user info dictionary determine whether another process can discover the progress object to observe it, and how it does that. For example, a [`fileURLKey`](../progressuserinfokey/fileurlkey.md) entry makes a progress object discoverable by corresponding invokers of [`addSubscriber(forFileURL:withPublishingHandler:)`](./addsubscriber%28forfileurl,withpublishinghandler%29.md). The system constrains access to the published progress URL with your app sandbox. If you can’t see the file due to the app’s sandbox restrictions, you can’t observe the progress on it.
 

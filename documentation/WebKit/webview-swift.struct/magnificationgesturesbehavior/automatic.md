@@ -19,7 +19,7 @@ The automatic behavior.
 static let automatic: WebView.MagnificationGesturesBehavior
 ```
 
-#### Discussion
+## Discussion
 
 The web view automatically chooses whether magnify gestures change the web view’s magnification. By default, web views use the [`enabled`](./enabled.md) behavior.
 

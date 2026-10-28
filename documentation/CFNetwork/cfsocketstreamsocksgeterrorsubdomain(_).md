@@ -24,7 +24,7 @@ func CFSocketStreamSOCKSGetErrorSubdomain(_ error: UnsafePointer<CFStreamError>)
 static SInt32 CFSocketStreamSOCKSGetErrorSubdomain(const CFStreamError *error);
 ```
 
-#### Discussion
+## Discussion
 
 Error codes in the `kCFStreamErrorDomainSOCKS` domain can come from multiple parts of the protocol stack, many of which define their own error values as part of outside specifications such as the HTTP specification.
 

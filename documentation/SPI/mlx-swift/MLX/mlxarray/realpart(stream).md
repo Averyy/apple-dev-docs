@@ -17,7 +17,7 @@ Extract the real part of a [`DType.complex64`](../dtype/complex64.md) array.
 func realPart(stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-##### See Also
+### See Also
 
 - [Conversion](../conversion.md)
 

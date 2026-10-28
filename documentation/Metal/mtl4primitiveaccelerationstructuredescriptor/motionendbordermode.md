@@ -24,7 +24,7 @@ var motionEndBorderMode: MTLMotionBorderMode { get set }
 @property (nonatomic) MTLMotionBorderMode motionEndBorderMode;
 ```
 
-#### Discussion
+## Discussion
 
 This property controls what happens if Metal samples the acceleration structure after [`motionEndTime`](./motionendtime.md).
 

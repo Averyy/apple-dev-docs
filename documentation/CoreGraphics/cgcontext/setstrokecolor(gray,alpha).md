@@ -25,7 +25,7 @@ func setStrokeColor(gray: CGFloat, alpha: CGFloat)
 extern void CGContextSetGrayStrokeColor(CGContextRef c, CGFloat gray, CGFloat alpha);
 ```
 
-#### Discussion
+## Discussion
 
 When you call this function, two things happen:
 

@@ -18,7 +18,7 @@ The notification subject type
 typealias Subject = MFMessageComposeViewController
 ```
 
-#### Discussion
+## Discussion
 
 This notification is always posted with a `nil` object, so instance filtering is not applicable. The type provides namespace scoping for the identifier.
 

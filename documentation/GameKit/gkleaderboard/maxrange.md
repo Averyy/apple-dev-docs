@@ -35,7 +35,7 @@ var maxRange: Int { get }
 @property (atomic, assign, readonly) NSUInteger maxRange;
 ```
 
-#### Discussion
+## Discussion
 
 This property is invalid until a call to [`loadScores(completionHandler:)`](./loadscores%28completionhandler%29.md) is complete. Afterward, it contains the total number of entries available to return to your game according to the filters you apply to the query.
 

@@ -24,7 +24,7 @@ class WKContentRuleList
 @interface WKContentRuleList : NSObject
 ```
 
-#### Overview
+## Overview
 
 A [`WKContentRuleList`](./wkcontentrulelist.md) object represents a compiled set of rules for modifying how a webpage loads content. You don’t create a [`WKContentRuleList`](./wkcontentrulelist.md) directly. Instead, you specify your rules in JSON format and compile them using the [`compileContentRuleList(forIdentifier:encodedContentRuleList:completionHandler:)`](./wkcontentruleliststore/compilecontentrulelist%28foridentifier,encodedcontentrulelist,completionhandler%29.md) method of [`WKContentRuleListStore`](./wkcontentruleliststore.md). That method compiles your rules into an efficient byte format and returns them in an instance of this class.
 

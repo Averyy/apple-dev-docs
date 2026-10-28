@@ -20,7 +20,7 @@ Creates a new from to by action to animate towards a final value. The starting v
 init(to: Value, by: Value, timing: AnimationTimingFunction = .linear, isAdditive: Bool = false)
 ```
 
-#### Discussion
+## Discussion
 
 `to - by` → `to`
 

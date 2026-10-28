@@ -5,13 +5,13 @@
 
 Find samples or key frames in sample atoms.
 
-#### Overview
+## Overview
 
 This section presents examples using the atoms just described. These examples are intended to help you understand the relationships between these atoms.
 
 The first section, Finding a sample, describes the steps that the video media handler uses to find the sample that contains the media data for a particular time in a media. The second section, Finding a key frame, describes the steps that the video media handler uses to find an appropriate key frame for a specific time in a movie.
 
-#### Finding a sample
+## Finding a sample
 
 When QuickTime displays a movie or track, it directs the appropriate media handler to access the media data for a particular time. The media handler must correctly interpret the data stream to retrieve the requested data. In the case of video media, the media handler traverses several atoms to find the location and size of a sample for a given media time.
 
@@ -23,7 +23,7 @@ The media handler performs the following steps:
 4. Extracts the offset to the chunk from the chunk offset atom.
 5. Finds the offset within the chunk and the sample’s size by using the sample size atom.
 
-#### Finding a key frame
+## Finding a key frame
 
 Finding a key frame for a specified time in a movie is slightly more complicated than finding a sample for a specified time. The media handler must use the sync sample atom and the time-to-sample atom together in order to find a key frame.
 

@@ -21,7 +21,7 @@ The 3x3 camera intrinsic matrix for camera calibration.
 var intrinsicMatrix: simd_float3x3
 ```
 
-#### Discussion
+## Discussion
 
 It has the following contents: | fx | s  | cx | |  0 | fy | cy | |  0 |  0 |  1 | fx and fy are the focal length in pixels. For square pixels, they will have the same value. cx and cy are the coordinates of the principal point. The origin is the upper left of the frame. s is an optional skew factor.
 

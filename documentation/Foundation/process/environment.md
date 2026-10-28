@@ -20,7 +20,7 @@ var environment: [String : String]? { get set }
 @property (copy, nullable) NSDictionary<NSString *,NSString *> * environment;
 ```
 
-#### Discussion
+## Discussion
 
 If this method isn’t used, the environment is inherited from the process that created the receiver. This method raises an `NSInvalidArgumentException` if the system has launched the receiver.
 

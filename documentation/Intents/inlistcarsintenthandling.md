@@ -23,7 +23,7 @@ protocol INListCarsIntentHandling : NSObjectProtocol
 @protocol INListCarsIntentHandling <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Use the methods of the `INListCarsIntentHandling` protocol to confirm and handle requests from Maps for a list of the user’s electric vehicles. Adopt this protocol in an object of your Intents extension that can provide information about each of the user’s vehicles.
 

@@ -13,7 +13,7 @@
 typedef struct IOOutputQueueStats IOOutputQueueStats;
 ```
 
-#### Discussion
+## Discussion
 
 Statistics recorded by IOOutputQueue objects.
 

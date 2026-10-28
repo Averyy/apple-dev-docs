@@ -19,7 +19,7 @@ var usesFindPanel: Bool { get set }
 @property BOOL usesFindPanel;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) to allow the use of a find panel, [`false`](../../Swift/false.md) otherwise. A text view can use either a find panel or a find bar. If [`usesFindPanel`](./usesfindpanel.md) is set to [`true`](../../Swift/true.md), [`usesFindBar`](./usesfindbar.md) is set to [`false`](../../Swift/false.md) and vice versa.
 

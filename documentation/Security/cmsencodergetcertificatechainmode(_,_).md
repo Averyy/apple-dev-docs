@@ -19,7 +19,7 @@ func CMSEncoderGetCertificateChainMode(_ cmsEncoder: CMSEncoder, _ chainModeOut:
 OSStatus CMSEncoderGetCertificateChainMode(CMSEncoderRef cmsEncoder, CMSCertificateChainMode *chainModeOut);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 

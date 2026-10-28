@@ -24,7 +24,7 @@ var subbandParameters: [PHASECardioidDirectivityModelSubbandParameters] { get }
 @property (nonatomic, strong, readonly) NSArray<PHASECardioidDirectivityModelSubbandParameters *> * subbandParameters;
 ```
 
-#### Discussion
+## Discussion
 
 This property is read only. The framework sets the value to the argument you supply the [`init(subbandParameters:)`](./init%28subbandparameters%29.md) initializer.
 

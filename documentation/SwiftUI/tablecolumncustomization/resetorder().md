@@ -19,7 +19,7 @@ Resets the column order back to the default, preserving the customized visibilit
 mutating func resetOrder()
 ```
 
-#### Discussion
+## Discussion
 
 Tables that are bound to this state will order their columns as described by their column builder.
 

@@ -18,7 +18,7 @@ The array of active cameras.
 final var cameras: LowLevelRenderer.CameraArray { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Set `cameras.count` to the number of active cameras before calling [`render(using:_:)`](./render%28using,_%29.md)..
 

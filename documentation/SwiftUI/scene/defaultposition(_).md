@@ -16,11 +16,11 @@ nonisolated
 func defaultPosition(_ position: UnitPoint) -> some Scene
 ```
 
-#### Return Value
+## Return Value
 
 A scene that uses a default position for new windows.
 
-#### Discussion
+## Discussion
 
 The first time your app opens a window from a particular scene declaration, the system places the window at the center of the screen by default. For scene types that support multiple simultaneous windows, the system offsets each additional window by a small amount to avoid completely obscuring existing windows.
 

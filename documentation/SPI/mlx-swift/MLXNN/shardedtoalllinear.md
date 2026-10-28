@@ -17,7 +17,7 @@ Each member of the group applies part of the affine transformation and the resul
 class ShardedToAllLinear
 ```
 
-#### Overview
+## Overview
 
 Every member of the group ends up with the same result.
 

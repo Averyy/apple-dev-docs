@@ -15,7 +15,7 @@ An experience where multiple videos play together.
 case multiview
 ```
 
-#### Discussion
+## Discussion
 
 Configure this experience type using an [`AVMultiviewManager`](../../avmultiviewmanager.md).
 

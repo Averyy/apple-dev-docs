@@ -29,7 +29,7 @@ optional func confirm(intent: INCreateNoteIntent) async -> INCreateNoteIntentRes
 - (void) confirmCreateNote:(INCreateNoteIntent *) intent completion:(void (^)(INCreateNoteIntentResponse *response)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to validate that you can create the note, but do not create the note yet. If creating the note involves contacting a remote server, validate that your server is available and ready to handle requests. At some point in your implementation, execute the provided completion block with a response object indicating your app’s readiness to create the note.
 

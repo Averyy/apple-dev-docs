@@ -15,7 +15,7 @@ Converts a point in the global coordinate space to a SwiftUI coordinate space of
 func convert(globalPoint: CGPoint, to coordinateSpace: some CoordinateSpaceProtocol = .local) -> CGPoint
 ```
 
-#### Return Value
+## Return Value
 
 A point converted to the given `coordinateSpace`.
 

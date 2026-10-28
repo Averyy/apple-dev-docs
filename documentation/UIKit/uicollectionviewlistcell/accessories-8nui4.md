@@ -20,7 +20,7 @@ An array of the accessories that decorate the cell.
 @preconcurrency var accessories: [UICellAccessory] { get set }
 ```
 
-#### Discussion
+## Discussion
 
 System accessories have system-defined placement within the cell. The system automatically determines their rendering order and which side of the cell they appear on. The order of system accessories in the array doesn’t affect their placement.
 

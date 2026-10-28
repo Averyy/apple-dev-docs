@@ -23,7 +23,7 @@ func goBack() -> WKNavigation?
 - (WKNavigation *) goBack;
 ```
 
-#### Return Value
+## Return Value
 
 A new navigation to the requested item, or `nil` if there is no back item in the back-forward list.
 

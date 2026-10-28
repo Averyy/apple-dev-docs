@@ -23,7 +23,7 @@ let kCGPDFContextOwnerPassword: CFString
 extern CFStringRef const kCGPDFContextOwnerPassword;
 ```
 
-#### Discussion
+## Discussion
 
 The owner password of the PDF document. If this key is specified, the document is encrypted using the value as the owner password; otherwise, the document will not be encrypted. The value of this key must be a CFString object that can be represented in ASCII encoding. Only the first 32 bytes are used for the password. There is no default value for this key. If the value of this key cannot be represented in ASCII, the document is not created and the creation function returns `NULL`.
 

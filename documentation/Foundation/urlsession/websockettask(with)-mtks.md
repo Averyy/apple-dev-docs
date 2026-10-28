@@ -25,7 +25,7 @@ func webSocketTask(with request: URLRequest) -> URLSessionWebSocketTask
 - (NSURLSessionWebSocketTask *) webSocketTaskWithRequest:(NSURLRequest *) request;
 ```
 
-#### Discussion
+## Discussion
 
 You can modify the request’s properties prior to calling [`resume()`](../urlsessiontask/resume%28%29.md) on the task. The task uses these properties during the HTTP handshake phase.
 

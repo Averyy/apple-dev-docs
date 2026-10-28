@@ -13,7 +13,7 @@
 void sock_close(socket_t so);
 ```
 
-#### Discussion
+## Discussion
 
 Close the socket.
 

@@ -23,7 +23,7 @@ struct Iterator
 
 Available when `Failure` conforms to `Error`.
 
-#### Overview
+## Overview
 
 This type is not `Sendable`. Don’t use it from multiple concurrent contexts. It is a programmer error to invoke `next()` from a concurrent context that contends with another such call, which results in a call to `fatalError()`.
 

@@ -21,7 +21,7 @@ Initializes every element in this array, by calling the given closure with each 
 init<E>(first: consuming Element, next: (borrowing Element) throws(E) -> Element) throws(E) where E : Error
 ```
 
-#### Discussion
+## Discussion
 
 This will call the closure `count - 1` times, where `count` is the static count of the array, to initialize every element by passing the closure an immutable borrow reference to the preceding element.
 

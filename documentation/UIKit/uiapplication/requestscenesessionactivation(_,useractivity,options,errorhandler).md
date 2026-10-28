@@ -25,7 +25,7 @@ func requestSceneSessionActivation(_ sceneSession: UISceneSession?, userActivity
 - (void) requestSceneSessionActivation:(UISceneSession *) sceneSession userActivity:(NSUserActivity *) userActivity options:(UISceneActivationRequestOptions *) options errorHandler:(void (^)(NSError *error)) errorHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method when you want the system to display one of your app’s scenes. For example, you might call this method to dispatch work to the scene in the form of an [`NSUserActivity`](../../Foundation/nsuseractivity.md) object. When activating an existing session whose scene is no longer in memory, the system creates a new scene and connects it to your app. Similarly, specifying `nil` for the `sceneSession` parameter causes the system to create a new scene and corresponding session.
 

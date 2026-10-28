@@ -24,7 +24,7 @@ class MPSCNNNeuronReLUN
 @interface MPSCNNNeuronReLUN : MPSCNNNeuron
 ```
 
-#### Overview
+## Overview
 
 For each pixel in an image, the filter applies the following function:
 

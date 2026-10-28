@@ -25,11 +25,11 @@ func applyTransform(_ transform: StringTransform, reverse: Bool, range: NSRange,
 - (BOOL) applyTransform:(NSStringTransform) transform reverse:(BOOL) reverse range:(NSRange) range updatedRange:(NSRangePointer) resultingRange;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the transform was successfully applied. Otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 In addition to the provided transformation constants, you may use any valid ICU transform ID as defined in the [ICU User Guide](http://userguide.icu-project.org/transforms/general). However, arbitrary ICU transform rules are not supported.
 

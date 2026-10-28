@@ -12,11 +12,11 @@ virtual UInt8 getBusNumber(
  void );
 ```
 
-#### Return Value
+## Return Value
 
 The 8-bit value of device's PCI bus number.
 
-#### Overview
+## Overview
 
 This method is an accessor to return the PCI device's assigned bus number.
 

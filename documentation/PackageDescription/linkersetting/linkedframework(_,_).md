@@ -15,7 +15,7 @@ Declares linkage to a system framework.
 static func linkedFramework(_ framework: String, _ condition: BuildSettingCondition? = nil) -> LinkerSetting
 ```
 
-#### Discussion
+## Discussion
 
 This setting is most useful when the framework can’t be linked automatically, such as C++ based frameworks and non-modular frameworks.
 

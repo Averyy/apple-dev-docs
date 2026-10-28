@@ -13,7 +13,7 @@
 soReset = 'rset'
 ```
 
-#### Discussion
+## Discussion
 
 Set a speech channel back to its default state.For example, speech pitch and speech rate are set to default values.The `speechInfo` parametershould be set to `NULL`.
 

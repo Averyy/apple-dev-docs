@@ -21,7 +21,7 @@ File has been archived.
 static var archived: FileFlags { get }
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding C constant is `SF_ARCHIVED`.
 

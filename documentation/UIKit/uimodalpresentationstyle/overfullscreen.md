@@ -23,7 +23,7 @@ case overFullScreen
 UIModalPresentationOverFullScreen
 ```
 
-#### Discussion
+## Discussion
 
 The views beneath the presented content are not removed from the view hierarchy when the presentation finishes. So if the presented view controller does not fill the screen with opaque content, the underlying content shows through.
 

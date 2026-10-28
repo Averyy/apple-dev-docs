@@ -25,11 +25,11 @@ func CTRubyAnnotationCreate(_ alignment: CTRubyAlignment, _ overhang: CTRubyOver
 extern CTRubyAnnotationRefCTRubyAnnotationCreate(CTRubyAlignment alignment, CTRubyOverhang overhang, CGFloat sizeFactor, CFStringRef text[4]);
 ```
 
-#### Return Value
+## Return Value
 
 A reference to a [`CTRubyAnnotation`](./ctrubyannotation.md) object.
 
-#### Discussion
+## Discussion
 
 Use this function to create a ruby annotation object in the most straightforward and efficient way.
 

@@ -24,7 +24,7 @@ let kVTScalingMode_Normal: CFString
 extern CFStringRef const kVTScalingMode_Normal;
 ```
 
-#### Discussion
+## Discussion
 
 The source image buffer’s clean aperture and pixel aspect ratio attachments are stretched the same way as the image with the image, and attached to the destination image buffer.This is the default scaling mode.
 

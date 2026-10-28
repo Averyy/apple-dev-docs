@@ -18,7 +18,7 @@ typedef struct IOFireWireDeviceInterface_t {
 } IOFireWireDeviceInterface;
 ```
 
-#### Overview
+## Overview
 
 You can use IOFireWireDeviceInterface to:
 

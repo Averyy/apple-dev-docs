@@ -23,7 +23,7 @@ func add(_ scriptMessageHandler: any WKScriptMessageHandler, contentWorld world:
 - (void) addScriptMessageHandler:(id<WKScriptMessageHandler>) scriptMessageHandler contentWorld:(WKContentWorld *) world name:(NSString *) name;
 ```
 
-#### Discussion
+## Discussion
 
 To execute your handler’s code, call the JavaScript function that this method defines. You may pass a parameter value to the method. The user content controller packages that value into an appropriate type and delivers it to your content handler’s delegate method.
 

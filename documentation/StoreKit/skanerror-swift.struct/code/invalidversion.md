@@ -22,7 +22,7 @@ case invalidVersion
 SKANErrorInvalidVersion
 ```
 
-#### Discussion
+## Discussion
 
 Ad networks provide an SKAdNetwork version number when preparing an ad impression, in [`SKStoreProductParameterAdNetworkVersion`](../../skstoreproductparameteradnetworkversion.md) or [`version`](../../skadimpression/version.md). Check that the version number is valid and that you follow the version-specific instructions to generate a signature. For more information about versions, see [SKAdNetwork release notes](../../skadnetwork-release-notes.md).
 

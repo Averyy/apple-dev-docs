@@ -25,7 +25,7 @@ var hash: Int { get }
 @property (readonly) NSUInteger hash;
 ```
 
-#### Discussion
+## Discussion
 
 If two string objects are equal (as determined by the [`isEqual(to:)`](./isequal%28to%29.md) method), they must have the same hash value. This property fulfills this requirement.
 

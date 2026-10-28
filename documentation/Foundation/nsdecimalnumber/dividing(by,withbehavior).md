@@ -25,7 +25,7 @@ func dividing(by decimalNumber: NSDecimalNumber, withBehavior behavior: (any NSD
 - (NSDecimalNumber *) decimalNumberByDividingBy:(NSDecimalNumber *) decimalNumber withBehavior:(id<NSDecimalNumberBehaviors>) behavior;
 ```
 
-#### Discussion
+## Discussion
 
 `behavior` specifies the handling of calculation errors and rounding.
 

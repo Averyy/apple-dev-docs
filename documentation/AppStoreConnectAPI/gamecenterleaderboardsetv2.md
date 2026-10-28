@@ -15,7 +15,7 @@ The data structure that represents a Game Center leaderboard set v2 resource.
 object GameCenterLeaderboardSetV2
 ```
 
-#### Overview
+## Overview
 
 - attributes:
 - id:

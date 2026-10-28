@@ -18,7 +18,7 @@ Observe the state of dock accessories and enable or disable system tracking.
 class DockAccessoryManager
 ```
 
-#### Overview
+## Overview
 
 `DockAccessoryManager`  enables and disables system tracking for camera-enabled apps, and provides docking and undocking notifications. If you want to customize the tracking behavior of a dock accessory, use [`accessoryStateChanges`](./dockaccessorymanager/accessorystatechanges.md) to obtain that accessory.
 

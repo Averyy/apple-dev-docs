@@ -19,7 +19,7 @@ var rangeForUserTextChange: NSRange { get }
 @property (readonly) NSRange rangeForUserTextChange;
 ```
 
-#### Discussion
+## Discussion
 
 If the receiver isn’t editable the range has a location of `NSNotFound`.
 

@@ -25,11 +25,11 @@ func character(at index: Int) -> unichar
 - (unichar) characterAtIndex:(NSUInteger) index;
 ```
 
-#### Return Value
+## Return Value
 
 The character at the array position given by `index`.
 
-#### Discussion
+## Discussion
 
 You should always use the [`rangeOfComposedCharacterSequence(at:)`](./rangeofcomposedcharactersequence%28at%29.md) or [`rangeOfComposedCharacterSequences(for:)`](./rangeofcomposedcharactersequences%28for%29.md) method to determine character boundaries, so that any surrogate pairs or character clusters are handled correctly.
 

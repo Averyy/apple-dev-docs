@@ -17,7 +17,7 @@ case on
 NSBrowserDropOn
 ```
 
-#### Discussion
+## Discussion
 
 The drop occurs at the row to which the item was dragged.
 

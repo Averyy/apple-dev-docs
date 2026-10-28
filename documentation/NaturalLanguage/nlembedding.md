@@ -29,7 +29,7 @@ class NLEmbedding
 
 - [Finding similarities between pieces of text](./finding-similarities-between-pieces-of-text.md)
 
-#### Overview
+## Overview
 
 Use an [`NLEmbedding`](./nlembedding.md) to find similar strings based on the proximity of their vectors.
 

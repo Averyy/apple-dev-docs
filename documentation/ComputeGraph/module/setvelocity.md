@@ -16,7 +16,7 @@ Sets the velocity of an element to the specified value.
 void module::setVelocity(float3 velocity)
 ```
 
-#### Discussion
+## Discussion
 
 Use this function to assign a new velocity vector to an element, replacing its current velocity.
 

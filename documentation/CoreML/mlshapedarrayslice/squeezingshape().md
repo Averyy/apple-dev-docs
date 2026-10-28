@@ -23,7 +23,7 @@ func squeezingShape() -> MLShapedArraySlice<Scalar>
 
 Available when `Scalar` conforms to `MLShapedArrayScalar`.
 
-#### Discussion
+## Discussion
 
 The new shape removes 1s in the original shape.
 

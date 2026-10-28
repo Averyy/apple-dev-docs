@@ -21,7 +21,7 @@ The bounds rect of the scroll view.
 var bounds: CGRect { get }
 ```
 
-#### Discussion
+## Discussion
 
 Unlike the visible rect, this value is within the content insets of the scroll view.
 

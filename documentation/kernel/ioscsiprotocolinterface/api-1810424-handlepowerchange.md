@@ -12,7 +12,7 @@ virtual void HandlePowerChange (
  void ) = 0;
 ```
 
-#### Overview
+## Overview
 
 The HandlePowerChange method is pure virtual and is left to each protocol or application layer driver to implement. It is guaranteed to be called on its own thread of execution and can make synchronous or asynchronous calls. Subclasses must override this method. Third party subclasses shouldn't need to override this method but can to alter the default behavior.
 

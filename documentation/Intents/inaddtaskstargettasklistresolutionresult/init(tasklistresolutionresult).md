@@ -23,11 +23,11 @@ init(taskListResolutionResult: INTaskListResolutionResult)
 - (instancetype) initWithTaskListResolutionResult:(INTaskListResolutionResult *) taskListResolutionResult;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INTaskListResolutionResult`](../intasklistresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method to create a result object when you’re able to add a task to the specified task list.
 

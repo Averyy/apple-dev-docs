@@ -23,7 +23,7 @@ var adjustsFontSizeToFitWidth: Bool { get set }
 @property (nonatomic) BOOL adjustsFontSizeToFitWidth;
 ```
 
-#### Discussion
+## Discussion
 
 Normally, the text field’s content is drawn with the font you specify in the [`font`](./font.md) property. If this property is set to [`true`](../../Swift/true.md), however, and the contents in the [`text`](./text.md) property exceed the text field’s bounding rectangle, the receiver starts reducing the font size until the string fits or the minimum font size is reached. The text is shrunk along the baseline.
 

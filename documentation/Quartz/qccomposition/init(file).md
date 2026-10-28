@@ -21,7 +21,7 @@ init!(file path: String!)
 + (QCComposition *) compositionWithFile:(NSString *) path;
 ```
 
-#### Return Value
+## Return Value
 
 A Quartz Composer composition object or `nil` if there is an error.
 

@@ -20,7 +20,7 @@ Calculates average of average precision for all the labels, computed at varied b
 func averageOfAveragePrecisionAtVariedThresholds<Scalar>(predictions: [[DetectedObject<Label>]], annotations: [ObjectDetectionAnnotation<Label>], confidenceThresholds: [Label : Float] = [:]) -> [Label : Scalar] where Scalar : BinaryFloatingPoint
 ```
 
-#### Return Value
+## Return Value
 
 Average of average precision for all the labels, computed at varied bounding box overlap thresholds.
 

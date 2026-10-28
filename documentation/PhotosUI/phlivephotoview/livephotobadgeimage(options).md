@@ -23,11 +23,11 @@ class func livePhotoBadgeImage(options badgeOptions: PHLivePhotoBadgeOptions = [
 + (UIImage *) livePhotoBadgeImageWithOptions:(PHLivePhotoBadgeOptions) badgeOptions;
 ```
 
-#### Return Value
+## Return Value
 
 The icon image for the specified options.
 
-#### Discussion
+## Discussion
 
 Use this method to obtain icon images for use in interface elements that complement Live Photos. For example, you can use icons obtained from this method in a custom asset browser UI to indicate which assets are Live Photos as opposed to normal still photos, or to indicate when the user has chosen to share a Live Photo with or without its motion and sound content.
 

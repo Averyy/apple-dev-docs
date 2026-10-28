@@ -22,11 +22,11 @@ func bufferBytesPerRow() -> Int
 - (NSUInteger) bufferBytesPerRow;
 ```
 
-#### Return Value
+## Return Value
 
 The number of bytes per row of the buffer.
 
-#### Discussion
+## Discussion
 
 The number of bytes per row is guaranteed to be a multiple of 16.
 

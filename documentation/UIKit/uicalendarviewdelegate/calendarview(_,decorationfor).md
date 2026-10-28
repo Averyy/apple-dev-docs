@@ -22,7 +22,7 @@ optional func calendarView(_ calendarView: UICalendarView, decorationFor dateCom
 - (UICalendarViewDecoration *) calendarView:(UICalendarView *) calendarView decorationForDateComponents:(NSDateComponents *) dateComponents;
 ```
 
-#### Return Value
+## Return Value
 
 A calendar view decoration.
 

@@ -19,7 +19,7 @@ weak var target: AnyObject? { get set }
 @property (weak, nullable) id target;
 ```
 
-#### Discussion
+## Discussion
 
 The object in this property must implement the method specified by the [`action`](./action.md) property.
 

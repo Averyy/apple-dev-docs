@@ -23,7 +23,7 @@ var errors: [any Error] { get }
 @property (nonatomic, copy, readonly) NSArray<NSError *> * errors;
 ```
 
-#### Discussion
+## Discussion
 
 Provides an array of all parse-time and runtime errors for the extension and extension context, with repeat errors consolidated into a single entry for the original occurrence. If no errors occurred, an empty array is returned.
 

@@ -16,7 +16,7 @@ Ends the lifetime of the current element, if terminate is true.
 void element::terminate(bool terminate)
 ```
 
-#### Discussion
+## Discussion
 
 > **Visual**: ![Graph](https://developer.apple.com/tutorials/images/com.apple.computegraph/element__terminate.svg)
 

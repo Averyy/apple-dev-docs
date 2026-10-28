@@ -5,7 +5,7 @@
 
 Modify the payload of a remote notification before it’s displayed on the user’s iOS device.
 
-#### Overview
+## Overview
 
 You may want to modify the content of a remote notification on a user’s iOS device if you need to:
 
@@ -17,7 +17,7 @@ Modifying a remote notification requires a notification service app extension, w
 
 > ❗ **Important**:  Notification service app extensions only operate on remote notifications configured in the system to display an alert to the user. If alerts are disabled for your app, or if the payload specifies only the playing of a sound or the badging of an icon, the extension isn’t employed.
 
-##### Add a service app extension to your project
+### Add a service app extension to your project
 
 A notification service app extension ships as a separate bundle inside your iOS app. To add this extension to your app:
 
@@ -27,7 +27,7 @@ A notification service app extension ships as a separate bundle inside your iOS 
 4. Specify a name and other configuration details for your app extension.
 5. Click Finish.
 
-##### Implement your extension’s handler methods
+### Implement your extension’s handler methods
 
 The notification service app extension template provided by Xcode includes a default implementation for you to modify.
 
@@ -81,7 +81,7 @@ override func serviceExtensionTimeWillExpire() {
 }
 ```
 
-##### Configure the payload for the remote notification
+### Configure the payload for the remote notification
 
 The system executes your notification service app extension only when a remote notification’s payload contains the following information:
 

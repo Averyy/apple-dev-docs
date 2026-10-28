@@ -25,7 +25,7 @@ func slotNamed(_ name: String) -> TKSmartCardSlot?
 - (TKSmartCardSlot *) slotNamed:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 The slot with the specified name, or `nil` if no slot with that name exists.
 

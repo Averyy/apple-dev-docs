@@ -23,7 +23,7 @@ var kDNSServiceType_MAILA: Int { get }
 kDNSServiceType_MAILA
 ```
 
-#### Discussion
+## Discussion
 
 Transfer mail agent records.
 

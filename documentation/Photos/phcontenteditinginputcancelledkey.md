@@ -24,7 +24,7 @@ let PHContentEditingInputCancelledKey: String
 extern NSString * const PHContentEditingInputCancelledKey;
 ```
 
-#### Discussion
+## Discussion
 
 If you call the [`cancelContentEditingInputRequest(_:)`](./phasset/cancelcontenteditinginputrequest%28_%29.md) method to cancel a request, Photos calls your result handler block with the value `true` for this key.
 

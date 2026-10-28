@@ -15,7 +15,7 @@ Spacing to add around the annotation when showing items.
 padding?: PaddingData;
 ```
 
-#### Discussion
+## Discussion
 
 Padding prevents any items from touching the edges of the map. Set `padding` to a [`Padding`](../padding.md) object. The default is no padding on all sides.
 

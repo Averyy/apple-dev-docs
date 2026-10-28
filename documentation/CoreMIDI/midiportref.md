@@ -25,7 +25,7 @@ typealias MIDIPortRef = MIDIObjectRef
 typedef MIDIObjectRef MIDIPortRef;
 ```
 
-#### Discussion
+## Discussion
 
 A port object derives from [`MIDIObjectRef`](./midiobjectref.md), and its owning object is a [`MIDIDeviceRef`](./midideviceref.md). It represents an input or output port, and it provides the means to communicate with any number of MIDI sources or destinations.
 

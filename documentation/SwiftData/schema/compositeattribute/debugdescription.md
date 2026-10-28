@@ -22,7 +22,7 @@ A textual representation of this instance, suitable for debugging.
 override final var debugDescription: String { get }
 ```
 
-#### Discussion
+## Discussion
 
 Calling this property directly is discouraged. Instead, convert an instance of any type to a string by using the `String(reflecting:)` initializer. This initializer works with any type, and uses the custom `debugDescription` property for types that conform to `CustomDebugStringConvertible`:
 

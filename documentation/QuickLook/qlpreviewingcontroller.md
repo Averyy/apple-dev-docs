@@ -22,7 +22,7 @@ protocol QLPreviewingController : NSObjectProtocol
 @protocol QLPreviewingController <NSObject>
 ```
 
-#### Overview
+## Overview
 
 The main preview should be presented by the view controller implementing QLPreviewingController. Avoid presenting additional view controllers over your QLPreviewingController. For Catalyst compatibility, avoid using gesture recognizers that take interactions over large portions of the view to avoid collisions with standard macOS preview behaviors. Avoid holding the file open during the duration of the preview. If access to the file is necessary for interaction, it is best to keep the file open only for the duration of the interaction.
 

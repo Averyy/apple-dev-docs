@@ -23,7 +23,7 @@ var frame: CGRect { get set }
 @property (nonatomic) CGRect frame;
 ```
 
-#### Discussion
+## Discussion
 
 This rectangle defines the size and position of the view in its superview’s coordinate system. Use this rectangle during layout operations to set the size and position the view. Setting this property changes the point specified by the [`center`](./center.md) property and changes the size in the [`bounds`](./bounds.md) rectangle accordingly. The coordinates of the frame rectangle are always specified in points.
 

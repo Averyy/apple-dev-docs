@@ -25,7 +25,7 @@ func CFSocketCreate(_ allocator: CFAllocator!, _ protocolFamily: Int32, _ socket
 extern CFSocketRefCFSocketCreate(CFAllocatorRef allocator, SInt32 protocolFamily, SInt32 socketType, SInt32 protocol, CFOptionFlags callBackTypes, CFSocketCallBack callout, const CFSocketContext *context);
 ```
 
-#### Return Value
+## Return Value
 
 The new CFSocket object, or `NULL` if an error occurred. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 

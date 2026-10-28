@@ -25,7 +25,7 @@ var secureElementPass: PKSecureElementPass? { get }
 @property (nonatomic, copy, readonly, nullable) PKSecureElementPass * secureElementPass;
 ```
 
-#### Discussion
+## Discussion
 
 If your app has an association with the pass that is funding the payment, this property contains information about that pass; otherwise, it’s `nil`.
 

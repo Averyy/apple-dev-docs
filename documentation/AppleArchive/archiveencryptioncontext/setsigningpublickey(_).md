@@ -21,7 +21,7 @@ Sets the signing public key that the context requires to unlock a signed archive
 func setSigningPublicKey(_ key: P256.Signing.PublicKey) throws
 ```
 
-#### Discussion
+## Discussion
 
 The public signing key is necessary to unlock a signed archive. If you don’t provide a private key when you create a new archive, provide a public key to tie the encryption to the signing identity. In this case, you need to sign the archive offline using the corresponding signing private key.
 

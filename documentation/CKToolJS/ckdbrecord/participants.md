@@ -15,7 +15,7 @@ The array of participants in the shared record.
 attribute CKDBShareParticipant[]? participants;
 ```
 
-#### Discussion
+## Discussion
 
 Participants are represented by a `CKDBShareParticipant` object.
 

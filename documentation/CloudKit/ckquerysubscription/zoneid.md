@@ -26,7 +26,7 @@ var zoneID: CKRecordZone.ID? { get set }
 @property (copy, nullable) CKRecordZoneID * zoneID;
 ```
 
-#### Discussion
+## Discussion
 
 This property applies to query-based subscriptions and zone-based subscriptions. Specifying a record zone ID limits the scope of the query to only the records in that zone. For zone-based subscriptions, the query includes all records in the specified record zone. For a query-based subscription, the query includes only records of a specific type in the specified record zone.
 

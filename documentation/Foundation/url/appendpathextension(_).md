@@ -21,7 +21,7 @@ Appends the specified path extension to self.
 mutating func appendPathExtension(_ pathExtension: String)
 ```
 
-#### Discussion
+## Discussion
 
 If the URL has an empty path, such as `http://www.example.com`, this function does nothing. Certain special characters (for example, Unicode right-to-left marks) can’t be path extensions. If `pathExtension` contains any of those characters, the function returns an unchanged URL.
 

@@ -20,7 +20,7 @@ A case that indicates an app provided the zones for a specific workout.
 case app
 ```
 
-#### Discussion
+## Discussion
 
 Apps create custom zone configurations by calling [`init(quantityType:zoneBoundaries:)`](../init%28quantitytype,zoneboundaries%29.md) and applying them to workouts with [`setCustomZoneConfiguration(_:for:)`](../../hkworkoutbuilder/setcustomzoneconfiguration%28_,for%29.md). Custom configurations apply only to the workout in which they’re set, and don’t modify the person’s preferred zones.
 

@@ -19,7 +19,7 @@ var directoryURLs: Set<URL>! { get set }
 @property (copy, null_resettable) NSSet<NSURL *> * directoryURLs;
 ```
 
-#### Discussion
+## Discussion
 
 The extension receives [`beginObservingDirectory(at:)`](../fifindersyncprotocol/beginobservingdirectory%28at%29.md) and [`endObservingDirectory(at:)`](../fifindersyncprotocol/endobservingdirectory%28at%29.md) messages for every directory in this set and for all of their subdirectories.
 

@@ -5,7 +5,7 @@
 
 Get the customer reviews for your app.
 
-#### Overview
+## Overview
 
 The `customerReviews` resource represents the ratings and reviews that customers write for your app that the App Store displays. Customers can provide reviews for your app in the App Store, or when your app requests a review. For more information about reviews, see [Ratings, Reviews, and Responses](https://developer.apple.com/app-store/ratings-and-reviews/).
 

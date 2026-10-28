@@ -21,7 +21,7 @@ A collection of objects describing the distinct areas of the saliency heat map.
 let salientObjects: [RectangleObservation]
 ```
 
-#### Discussion
+## Discussion
 
 The objects in this array don’t follow any specific ordering. It’s up to your app to iterate across the observations and apply desired ordering.
 

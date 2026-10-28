@@ -25,7 +25,7 @@ static var noSuchProcess: Errno { get }
 
 - [Adopting Swift Error Constants](../adopting-errno.md)
 
-#### Discussion
+## Discussion
 
 There isn’t a process that corresponds to the specified process ID.
 

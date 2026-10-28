@@ -25,11 +25,11 @@ func vImageAlphaBlend_PlanarF(_ srcTop: UnsafePointer<vImage_Buffer>, _ srcTopAl
 vImage_Error vImageAlphaBlend_PlanarF(const vImage_Buffer *srcTop, const vImage_Buffer *srcTopAlpha, const vImage_Buffer *srcBottom, const vImage_Buffer *srcBottomAlpha, const vImage_Buffer *alpha, const vImage_Buffer *dest, vImage_Flags flags);
 ```
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
-#### Discussion
+## Discussion
 
 In order to provide the best performance, this function doesn’t calculate the alpha channel for the composite image. Use the following code to calculate the alpha channel for the composite image that you pass to this function as the `alpha` parameter:
 

@@ -24,11 +24,11 @@ func VNNormalizedPointForImagePoint(_ imagePoint: CGPoint, _ imageWidth: Int, _ 
 extern CGPoint VNNormalizedPointForImagePoint(CGPoint imagePoint, size_t imageWidth, size_t imageHeight);
 ```
 
-#### Return Value
+## Return Value
 
 The input point projected into normalized coordinates.
 
-#### Discussion
+## Discussion
 
 The resulting point in image coordinate space may have nonintegral (floating-point) coordinates.
 

@@ -24,7 +24,7 @@ struct PurchaseIntent
 - [Supporting promoted Apple In-App Purchases in your app](./supporting-promoted-in-app-purchases-in-your-app.md)
 - [Promoting Apple In-App Purchases](./promoting-in-app-purchases.md)
 
-#### Overview
+## Overview
 
 Using `PurchaseIntent` is required in the following cases:
 

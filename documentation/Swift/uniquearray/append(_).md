@@ -21,7 +21,7 @@ Adds an element to the end of the array.
 mutating func append(_ item: consuming Element)
 ```
 
-#### Discussion
+## Discussion
 
 If the array does not have sufficient capacity to hold any more elements, then this reallocates the array’s storage to grow its capacity, using a geometric growth rate.
 

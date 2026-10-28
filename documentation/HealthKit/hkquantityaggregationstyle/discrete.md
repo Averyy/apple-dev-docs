@@ -26,7 +26,7 @@ static var discrete: HKQuantityAggregationStyle { get }
 HKQuantityAggregationStyleDiscrete
 ```
 
-#### Discussion
+## Discussion
 
 You typically use discrete types to monitor the change in the value over time. For example, body mass, heart rate, temperature, and respiratory rate are all discrete quantity types. You can also query for the minimum or maximum value in a given time period.
 

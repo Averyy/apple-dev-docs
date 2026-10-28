@@ -28,7 +28,7 @@ func setVocabulary(_ vocabulary: NSOrderedSet, of type: INVocabularyStringType)
 
 - [Improving interactions between Siri and your messaging app](../../SiriKit/improving-interactions-between-siri-and-your-messaging-app.md)
 
-#### Discussion
+## Discussion
 
 Use this method to register user-specific vocabulary terms of the specified type. You may register different sets of strings for each of the supported types, but you may register only one group of strings for each type. Calling this method again for a given type replaces the previously registered strings already assigned to that type.
 

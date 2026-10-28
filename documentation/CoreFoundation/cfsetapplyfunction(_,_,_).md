@@ -25,7 +25,7 @@ func CFSetApplyFunction(_ theSet: CFSet!, _ applier: ((UnsafeRawPointer?, Unsafe
 extern void CFSetApplyFunction(CFSetRef theSet, CFSetApplierFunction applier, void *context);
 ```
 
-#### Discussion
+## Discussion
 
 If `theSet` is mutable, it is unsafe for the `applier` function to change the contents of the collection.
 

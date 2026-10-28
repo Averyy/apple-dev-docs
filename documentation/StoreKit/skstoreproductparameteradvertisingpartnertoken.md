@@ -23,7 +23,7 @@ let SKStoreProductParameterAdvertisingPartnerToken: String
 extern NSString * const SKStoreProductParameterAdvertisingPartnerToken;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is an instance of [`NSString`](../Foundation/nsstring.md).
 

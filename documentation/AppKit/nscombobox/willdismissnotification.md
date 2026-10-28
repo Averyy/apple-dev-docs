@@ -19,7 +19,7 @@ class let willDismissNotification: NSNotification.Name
 extern NSNotificationName NSComboBoxWillDismissNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is the `NSComboBox` whose pop-up list will be dismissed. This notification does not contain a `userInfo` dictionary.
 

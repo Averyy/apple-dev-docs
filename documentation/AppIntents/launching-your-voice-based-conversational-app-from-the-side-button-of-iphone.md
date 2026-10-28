@@ -5,7 +5,7 @@
 
 Let people in Japan configure the side button of iPhone to launch your voice-based conversational app.
 
-#### Overview
+## Overview
 
 By adopting the App Intents framework and offering App Shortcuts, you let people instantly access app functionality and integrate it with system experiences like Spotlight or App Shortcuts. For example, a person might place an App Shortcut you provide on the Action button. In Japan, people might place an action on the side button of iPhone that instantly launches your voice-based conversational app. People expect the voice-based conversational functionality to be instantly available when they launch your app with the side button, so make sure to let them immediately use it by starting an audio session – for example, with [AVFoundation](../AVFoundation/AVFoundation.md).
 

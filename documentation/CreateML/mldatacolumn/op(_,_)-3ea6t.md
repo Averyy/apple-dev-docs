@@ -44,7 +44,7 @@ static func / (a: MLDataColumn<Double>, b: MLDataColumn<Double>) -> MLDataColumn
 static func / (a: MLDataColumn<Int>, b: MLDataColumn<Int>) -> MLDataColumn<Int>
 ```
 
-#### Return Value
+## Return Value
 
 A new column of integers.
 

@@ -23,7 +23,7 @@ class INTemporalEventTriggerResolutionResult
 @interface INTemporalEventTriggerResolutionResult : INIntentResolutionResult
 ```
 
-#### Overview
+## Overview
 
 You return an [`INTemporalEventTriggerResolutionResult`](./intemporaleventtriggerresolutionresult.md) object when resolving parameters containing an [`INTemporalEventTrigger`](./intemporaleventtrigger.md) object. Use the creation method that best reflects your ability to resolve the parameter successfully.
 

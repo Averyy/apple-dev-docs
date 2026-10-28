@@ -25,7 +25,7 @@ static let spectral: AVAudioTimePitchAlgorithm
 extern AVAudioTimePitchAlgorithm const AVAudioTimePitchAlgorithmSpectral;
 ```
 
-#### Discussion
+## Discussion
 
 This is the most computationally intensive, and uses a variable rate from `1/32` to `32`.
 

@@ -25,7 +25,7 @@ func CFErrorGetDomain(_ err: CFError!) -> CFErrorDomain!
 extern CFErrorDomainCFErrorGetDomain(CFErrorRef err);
 ```
 
-#### Return Value
+## Return Value
 
 The error domain for `err`. Ownership follows the [The Get Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-SW1).
 

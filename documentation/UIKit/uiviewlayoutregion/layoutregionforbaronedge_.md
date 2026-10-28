@@ -16,7 +16,7 @@ Returns a bar layout region on a given edge using the default system bar extent.
 + (UIViewLayoutRegion *) layoutRegionForBarOnEdge:(UIRectEdge) edge;
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: Only a single edge is allowed per region.
 

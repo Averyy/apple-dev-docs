@@ -24,11 +24,11 @@ class func fourfoldRotatedTile() -> any CIFilter & CIFourfoldRotatedTile
 + (CIFilter<CIFourfoldRotatedTile> *) fourfoldRotatedTileFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The tiled image.
 
-#### Discussion
+## Discussion
 
 This method applies the four-fold rotated tile filter to an image. The effect produces a tiled image by rotating a tile from the iput image in increments of 90 degrees.
 

@@ -24,7 +24,7 @@ var kAudioUnitProperty_ParameterClumpName: AudioUnitPropertyID { get }
 kAudioUnitProperty_ParameterClumpName
 ```
 
-#### Discussion
+## Discussion
 
 This works in a similar manner to the ParameterIDName property, except that the inID value is one of the clumpID’s that are returned with the audio unit’s ParameterInfo structure.
 

@@ -25,7 +25,7 @@ var BNNSArithmeticSelect: BNNSArithmeticFunction { get }
 BNNSArithmeticSelect
 ```
 
-#### Discussion
+## Discussion
 
 This function returns values using the following operation:
 

@@ -23,7 +23,7 @@ var kDNSServiceProtocol_IPv4: Int { get }
 kDNSServiceProtocol_IPv4
 ```
 
-#### Discussion
+## Discussion
 
 IPv4 protocol.
 

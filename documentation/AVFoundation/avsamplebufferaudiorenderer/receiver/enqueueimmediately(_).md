@@ -21,7 +21,7 @@ Enqueues a sample buffer in order to render its contents, without waiting for th
 func enqueueImmediately(_ sampleBuffer: CMReadySampleBuffer<CMSampleBuffer.DynamicContent>) -> AVSampleBufferAudioRenderer.Receiver.EnqueueResult
 ```
 
-#### Return Value
+## Return Value
 
 The result of the enqueue operation.
 

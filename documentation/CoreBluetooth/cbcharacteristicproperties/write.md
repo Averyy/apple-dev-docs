@@ -25,7 +25,7 @@ static var write: CBCharacteristicProperties { get }
 CBCharacteristicPropertyWrite
 ```
 
-#### Discussion
+## Discussion
 
 If a characteristic has this property set, it returns an error to the central when it fails to write the characteristic’s value. This property allows writing values characteristic that are longer than those permitted by the [`writeWithoutResponse`](./writewithoutresponse.md) constant. Use the [`writeValue(_:for:type:)`](../cbperipheral/writevalue%28_,for,type%29.md) method of the [`CBPeripheral`](../cbperipheral.md) class to write to a characteristic’s value, using the [`CBCharacteristicWriteType.withResponse`](../cbcharacteristicwritetype/withresponse.md) constant as the parameter for `type`.
 

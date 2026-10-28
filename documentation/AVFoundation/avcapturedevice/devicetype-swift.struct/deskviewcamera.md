@@ -19,7 +19,7 @@ static let deskViewCamera: AVCaptureDevice.DeviceType
 extern AVCaptureDeviceType const AVCaptureDeviceTypeDeskViewCamera;
 ```
 
-#### Discussion
+## Discussion
 
 This device type provides a distortion-corrected cut out from an ultra wide camera that approximates an overhead view of a user’s physical desktop.
 

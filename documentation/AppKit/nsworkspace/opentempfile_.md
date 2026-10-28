@@ -17,11 +17,11 @@ Opens the specified temporary file using the default app for its type.
 - (BOOL) openTempFile:(NSString *) fullPath;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the file was successfully opened; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 The sending app is deactivated before the request is sent. Using this method instead of one of the `openFile:...` methods lets the receiving app know that it should delete the file when it no longer needs it. Currently provides the same functionality as [`openFile(_:)`](./openfile%28_%29.md).
 

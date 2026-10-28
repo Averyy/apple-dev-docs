@@ -19,7 +19,7 @@ struct MMSContent
 
 - [Creating a carrier messaging app](./creating-a-carrier-messaging-app.md)
 
-#### Overview
+## Overview
 
 You can use this structure when sending and receiving MMS messages.
 

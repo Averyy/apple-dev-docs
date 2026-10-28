@@ -5,7 +5,7 @@
 
 Store a QTVR track, a panorama track, and a panorama image track in a single-node panoramic movie.
 
-#### Overview
+## Overview
 
 Every panoramic movie contains at least three tracks: a QTVR track, a panorama track, and a panorama image track.
 

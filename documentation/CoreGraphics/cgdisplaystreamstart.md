@@ -10,11 +10,11 @@
 extern CGError CGDisplayStreamStart(CGDisplayStreamRef displayStream);
 ```
 
-#### Return Value
+## Return Value
 
 kCGErrorSuccess If the display stream was started, otherwise an error.
 
-#### Discussion
+## Discussion
 
 Begin delivering frame updates to the handler block.
 

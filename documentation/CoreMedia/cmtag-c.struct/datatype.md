@@ -21,7 +21,7 @@ The data type for the value stored in the tag.
 CMTagDataType dataType;
 ```
 
-#### Discussion
+## Discussion
 
 Use a function listed in [Inspecting Tags](../cmtag-api.md#Inspecting-Tags) to determine the data type of a tag.
 

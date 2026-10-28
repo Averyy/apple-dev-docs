@@ -23,7 +23,7 @@ var activePrimaryConstituentDeviceRestrictedSwitchingBehaviorConditions: AVCaptu
 @property (nonatomic, readonly) AVCapturePrimaryConstituentDeviceRestrictedSwitchingBehaviorConditions activePrimaryConstituentDeviceRestrictedSwitchingBehaviorConditions;
 ```
 
-#### Discussion
+## Discussion
 
 For virtual devices with multiple constituent devices, this property returns the active restricted switching behavior conditions. This is equal to [`primaryConstituentDeviceRestrictedSwitchingBehaviorConditions`](./primaryconstituentdevicerestrictedswitchingbehaviorconditions-swift.property.md) except while recording using an [`AVCaptureMovieFileOutput`](../avcapturemoviefileoutput.md) that you configure with different restricted switching behavior conditions.
 

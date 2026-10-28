@@ -20,7 +20,7 @@ func findBarViewDidChangeHeight()
 - (void) findBarViewDidChangeHeight;
 ```
 
-#### Discussion
+## Discussion
 
 Upon receiving this message the container may be required to re-tile its contents.
 

@@ -22,7 +22,7 @@ var length: Int
 NSInteger length;
 ```
 
-#### Discussion
+## Discussion
 
 The sign of this value indicates a direction for the text selection:
 

@@ -19,7 +19,7 @@ func prepare(forAnimatedBoundsChange oldBounds: NSRect)
 - (void) prepareForAnimatedBoundsChange:(NSRect) oldBounds;
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation of this method does nothing. The collection view calls this method before performing any animated changes to the collection view’s bounds. It also calls this method before the animated insertion or deletion of items. Subclasses can use this method to perform any calculations needed to prepare for animated changes. Specifically, you might use this method to calculate the initial or final positions of inserted or deleted items so that you can return those values when asked for them. You can also use this method to perform custom animations. Any animations you create are added to the animation block used to handle the insertions, deletions, and bounds changes.
 

@@ -19,7 +19,7 @@ func compare(_ otherCell: Any) -> ComparisonResult
 - (NSComparisonResult) compare:(id) otherCell;
 ```
 
-#### Return Value
+## Return Value
 
 `NSOrderedAscending` if the string value of the receiver precedes the string value of `otherCell` in lexical ordering, `NSOrderedSame` if the string values are equivalent in lexical value, and `NSOrderedDescending` string value of the receiver follows the string value of `otherCell` in lexical ordering.
 

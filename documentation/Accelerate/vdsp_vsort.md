@@ -21,7 +21,7 @@ Performs an in-place sort of a single-precision vector.
 extern void vDSP_vsort(float *__C, vDSP_Length __N, int __Order);
 ```
 
-#### Discussion
+## Discussion
 
 The following code sorts an array in ascending order, followed by decending order:
 

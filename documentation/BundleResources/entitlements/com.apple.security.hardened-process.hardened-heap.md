@@ -21,7 +21,7 @@ A Boolean value that indicates whether your app or extension opts in to addition
 
 **Default**: `true`
 
-#### Discussion
+## Discussion
 
 When you add this entitlement to your app or extension, the system applies additional restrictions to the type-aware memory allocator for memory your app or extension requests. These may include enforcing address space isolation of certain types by limiting the cumulative amount of virtual memory it can allocate, and probabilistically placing inaccessible guard pages around live allocations or upon deallocation.
 

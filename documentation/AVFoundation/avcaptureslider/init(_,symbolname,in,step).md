@@ -20,7 +20,7 @@ Creates a discrete slider control that selects a stepped value from a bounded ra
 convenience init(_ localizedTitle: String, symbolName: String, in range: ClosedRange<Float>, step: Float)
 ```
 
-#### Discussion
+## Discussion
 
 Use discrete sliders when your use case supports selecting stepped values within the specified range.
 

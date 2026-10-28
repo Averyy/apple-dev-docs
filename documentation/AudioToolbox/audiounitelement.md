@@ -24,7 +24,7 @@ typealias AudioUnitElement = UInt32
 typedef UInt32 AudioUnitElement;
 ```
 
-#### Discussion
+## Discussion
 
 An audio unit element is a discrete programmatic context that is nested within an audio unit scope (see [`AudioUnitScope`](./audiounitscope.md)). In the context of input and output scopes, elements serve as programmatic analogs of physical signal buses in hardware audio devices. Because of this analogy, the term “bus” is a common synonym for “element.”
 

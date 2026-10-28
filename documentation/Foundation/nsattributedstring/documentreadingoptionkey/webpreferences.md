@@ -15,7 +15,7 @@ A WebPreferences object.
 static let webPreferences: NSAttributedString.DocumentReadingOptionKey
 ```
 
-#### Discussion
+## Discussion
 
 For HTML only. If not present, a default set of preferences is used. The previous string constant was `@"WebPreferences"`.
 

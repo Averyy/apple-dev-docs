@@ -21,7 +21,7 @@ A container that you can use to add hierarchy within a tab view.
 struct TabSection<Header, Content, Footer, SelectionValue>
 ```
 
-#### Overview
+## Overview
 
 Use [`TabSection`](./tabsection.md) to organize tab content into separate sections. Each section has custom tab content that you provide on a per-instance basis. You can also provide a header for each section.
 

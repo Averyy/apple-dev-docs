@@ -25,7 +25,7 @@ case failureAppConfigurationRequired
 INSearchForPhotosIntentResponseCodeFailureAppConfigurationRequired
 ```
 
-#### Discussion
+## Discussion
 
 Use this response code when your app isn’t configured to handle the search request. For example, you might return this code if the user hasn’t yet added any photos. Don’t use it for general errors or to force the user to launch your app.
 

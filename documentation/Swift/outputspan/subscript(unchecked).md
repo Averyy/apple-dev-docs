@@ -21,7 +21,7 @@ Accesses the element at the specified index.
 subscript(unchecked index: OutputSpan<Element>.Index) -> Element { borrow mutate }
 ```
 
-#### Overview
+## Overview
 
 This subscript does not validate `index`; this is an unsafe operation.
 

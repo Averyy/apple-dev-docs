@@ -21,7 +21,7 @@ A type that applies standard interaction behavior and a custom appearance to all
 @preconcurrency protocol MenuStyle
 ```
 
-#### Overview
+## Overview
 
 To configure the current menu style for a view hierarchy, use the [`menuStyle(_:)`](./view/menustyle%28_%29.md) modifier.
 

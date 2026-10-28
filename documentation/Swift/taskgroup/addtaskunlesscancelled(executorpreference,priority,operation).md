@@ -23,7 +23,7 @@ mutating func addTaskUnlessCancelled(executorPreference taskExecutor: (any TaskE
 
 Available when `ChildTaskResult` conforms to `Sendable`.
 
-#### Return Value
+## Return Value
 
 `true` if the child task was added to the group; otherwise `false`.
 

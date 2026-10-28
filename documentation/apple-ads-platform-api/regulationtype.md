@@ -21,11 +21,11 @@ string RegulationType
 - `CAMPAIGN_SAPIN_LAW`: Disclosure required under Sapin Law regulation, at the campaign level.
 - `ORG_SAPIN_LAW`: Disclosure required under Sapin Law regulation, at the organization level.
 
-#### Discussion
+## Discussion
 
 `CAC` and `CAMPAIGN_SAPIN_LAW` apply at the campaign level, while `ORG_SAPIN_LAW` applies at the organization level.
 
-##### Example
+### Example
 
 ```json
 {

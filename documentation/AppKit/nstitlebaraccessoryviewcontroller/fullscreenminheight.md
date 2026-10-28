@@ -19,7 +19,7 @@ var fullScreenMinHeight: CGFloat { get set }
 @property CGFloat fullScreenMinHeight;
 ```
 
-#### Discussion
+## Discussion
 
 The [`fullScreenMinHeight`](./fullscreenminheight.md) property applies only to an `NSTitlebarAccessoryViewController` object in which [`layoutAttribute`](./layoutattribute.md) is set to [`NSLayoutConstraint.Attribute.bottom`](../../UIKit/nslayoutconstraint/attribute/bottom.md). The minimum height you set determines how much of your accessory view is visible when the menu bar is hidden during full screen mode. By default, the minimum height is `0`, which means that the accessory view is hidden when the menu bar is hidden. When a user reveals the menu bar in this scenario, the accessory view is also revealed.
 

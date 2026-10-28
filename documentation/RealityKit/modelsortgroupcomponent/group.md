@@ -20,7 +20,7 @@ The group that the component’s entity belongs to.
 var group: ModelSortGroup { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The renderer only draws entities with the same [`ModelSortGroup`](../modelsortgroup.md) relative to each other.
 

@@ -14,7 +14,7 @@ struct IOUSBLowLatencyIsocFrame {
 };
 ```
 
-#### Overview
+## Overview
 
 Structure used to encode information about each isoc frame that is processed at hardware interrupt time (low latency).
 

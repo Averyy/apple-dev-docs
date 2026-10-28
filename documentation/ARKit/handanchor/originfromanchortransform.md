@@ -15,7 +15,7 @@ The location and orientation of a hand in world space.
 var originFromAnchorTransform: simd_float4x4 { get }
 ```
 
-#### Discussion
+## Discussion
 
 The transform of a hand anchor is positioned at the base of the wrist. ARKit provides transforms of other joints on the hand relative to this root transform.
 

@@ -15,11 +15,11 @@ Returns a numeric code indicating the current status of the parser.
 extern CFXMLParserStatusCode CFXMLParserGetStatusCode(CFXMLParserRef parser);
 ```
 
-#### Return Value
+## Return Value
 
 A status code indicating the current parser. See [`CFXMLParserStatusCode`](./cfxmlparserstatuscode.md) for a list of possible status codes.
 
-#### Discussion
+## Discussion
 
 If an error has occurred, the code for the last error is returned. If no error has occurred, a status code is returned.
 

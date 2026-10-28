@@ -19,7 +19,7 @@ var filterDataProviderBundleIdentifier: String? { get set }
 @property (copy, nullable) NSString * filterDataProviderBundleIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 If this property is `nil`, then the framework uses the bundle identifier of the [`NEFilterDataProvider`](../nefilterdataprovider.md) extension in the calling app’s bundle. In this case, make sure the calling app’s bundle contains only one [`NEFilterDataProvider`](../nefilterdataprovider.md), so there’s no ambiguity about which one to use.
 

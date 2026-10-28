@@ -20,7 +20,7 @@ func compress(withPrioritizedCompressionOptions prioritizedOptions: [NSUserInter
 - (void) compressWithPrioritizedCompressionOptions:(NSArray<NSUserInterfaceCompressionOptions *> *) prioritizedOptions;
 ```
 
-#### Discussion
+## Discussion
 
 When the system calls this method, the view should resize itself according to the compression options supplied.
 

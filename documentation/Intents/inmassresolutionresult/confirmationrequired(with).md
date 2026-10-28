@@ -24,11 +24,11 @@ class func confirmationRequired(with massToConfirm: Measurement<UnitMass>?) -> S
 + (instancetype) confirmationRequiredWithMassToConfirm:(NSMeasurement<NSUnitMass *> *) massToConfirm;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INMassResolutionResult`](../inmassresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method when you can resolve the parameter to the specified object but you want the user to confirm that value.
 

@@ -23,7 +23,7 @@ var presentingViewController: UIViewController? { get }
 @property (nonatomic, readonly, nullable) UIViewController * presentingViewController;
 ```
 
-#### Discussion
+## Discussion
 
 When you present a view controller modally (either explicitly or implicitly) using the [`present(_:animated:completion:)`](./present%28_,animated,completion%29.md) method, the view controller that was presented has this property set to the view controller that presented it. If the view controller was not presented modally, but one of its ancestors was, this property contains the view controller that presented the ancestor. If neither the current view controller or any of its ancestors were presented modally, the value in this property is `nil`.
 

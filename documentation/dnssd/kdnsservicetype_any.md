@@ -23,7 +23,7 @@ var kDNSServiceType_ANY: Int { get }
 kDNSServiceType_ANY
 ```
 
-#### Discussion
+## Discussion
 
 Wildcard match.
 

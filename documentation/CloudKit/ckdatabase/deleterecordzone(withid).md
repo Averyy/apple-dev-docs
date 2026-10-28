@@ -22,11 +22,11 @@ Deletes a specific record zone.
 func deleteRecordZone(withID zoneID: CKRecordZone.ID) async throws -> CKRecordZone.ID
 ```
 
-#### Return Value
+## Return Value
 
 The identifier of the deleted record zone.
 
-#### Discussion
+## Discussion
 
 > ⚠️ **Warning**: Deleting a record zone is a permanent action that deletes every record in that zone. You can’t restore a deleted record zone.
 

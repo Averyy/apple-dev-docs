@@ -5,26 +5,26 @@
 
 Released September 16, 2020 — Version 14 (16610.1.28)
 
-#### Overview
+## Overview
 
 Safari 14 ships with iOS & iPadOS 14 and macOS Big Sur 11.
 
-##### General
+### General
 
-###### New Features
+#### New Features
 
 - Added Safari Web Extensions support for macOS.
 - Added Webpage Translation for English, Spanish, Simplified Chinese, French, German, Russian, and Brazilian Portuguese. Safari will automatically detect if a translation is available based on your Preferred Languages list.
 - Added support for HTTP/3.
 - Improved Web Platform Tests pass rate for WebDriver, XHR+Fetch, Service Workers, CSS, and SVG.
 
-###### Removed Features
+#### Removed Features
 
 - Safari no longer supports Flash.
 
-##### Performance
+### Performance
 
-###### New Features
+#### New Features
 
 - Supported incremental loading of PDF files.
 - Implemented asynchronous scrolling for `overflow: scroll`, and `<iframe>` on macOS.
@@ -33,16 +33,16 @@ Safari 14 ships with iOS & iPadOS 14 and macOS Big Sur 11.
 - Improved JavaScript cookie access performance.
 - Improved `for-of` performance.
 
-##### Privacy
+### Privacy
 
-###### New Features
+#### New Features
 
 - Added a Privacy Report that shows the trackers that Intelligent Tracking Prevention prevented from accessing identifying information.
 - Enabled full third-party cookie blocking, and the Storage Access API in Private Browsing mode.
 
-##### Authentication and Passwords
+### Authentication and Passwords
 
-###### New Features
+#### New Features
 
 - Added a Web Authentication platform authenticator using Face ID or Touch ID, depending on which capability is present.
 - Added support for PIN entry and account selection on external Web Authentication security keys.
@@ -55,36 +55,36 @@ Safari 14 ships with iOS & iPadOS 14 and macOS Big Sur 11.
   @example.com #123446
   ```
 
-##### JavaScript
+### JavaScript
 
-###### New Features
+#### New Features
 
 - Added support for the `BigInt` data type.
 - Added support for creating custom instances of `EventTarget`.
 - Added logical assignment operator support.
 - Added public class fields support.
 
-##### Media
+### Media
 
-###### New Features
+#### New Features
 
 - Added WebP image support.
 - Added HDR video playback support.
 - Changed to derive `<img>` aspect ratio from size attributes.
 - Support for the Picture-in-Picture API is now available in iOS on iPhone.
 
-##### CSS
+### CSS
 
-###### New Features
+#### New Features
 
 - Updated `image-set()` to support all other image functions including `image()`, `-webkit-canvas()`, `-webkit-cross-fade()`, and `-webkit-*-gradient()`.
 - Added `:is()` pseudo-selector support as a synonym for `:matches()`.
 - Added `:where()` pseudo-selector support for specificity adjustment.
 - Added support for `image-orientation`.
 
-##### Web Inspector
+### Web Inspector
 
-###### New Features
+#### New Features
 
 - Added support for a bootstrap script.
 - Added a Sources Tab that combines the Resources tab and Debugger tab.

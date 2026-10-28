@@ -21,7 +21,7 @@ The prominent role.
 static var prominent: TabRole { get }
 ```
 
-#### Discussion
+## Discussion
 
 A tab role that provides prominent visual treatment to one of the tabs in supported tab bars. Only one tab can receive the prominent treatment. When there are no tabs with an explicit `.prominent` role, then a `.search` role tab may receive the prominent visual treatment by default.
 

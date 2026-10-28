@@ -23,7 +23,7 @@ var spatialAudioChannelLayoutTag: AudioChannelLayoutTag { get set }
 @property (nonatomic) AudioChannelLayoutTag spatialAudioChannelLayoutTag;
 ```
 
-#### Discussion
+## Discussion
 
 When you set your audio data output’s associated [`multichannelAudioMode`](../avcapturedeviceinput/multichannelaudiomode.md) property to `AVCaptureMultichannelAudioModeFirstOrderAmbisonics`, the [`AVCaptureSession`](../avcapturesession.md) allows up to two [`AVCaptureAudioDataOutput`](../avcaptureaudiodataoutput.md) instances to be connected to the First-order Ambisonsics (FOA) input. If you connect a single [`AVCaptureAudioDataOutput`](../avcaptureaudiodataoutput.md) instance, you must configure its [`spatialAudioChannelLayoutTag`](./spatialaudiochannellayouttag.md) property to produce either four channels of FOA audio or two channels of Stereo audio. If you connect two [`AVCaptureAudioDataOutput`](../avcaptureaudiodataoutput.md) instances, you must configure one to output four channels of FOA audio and the other to output two channels of Stereo audio.
 

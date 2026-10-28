@@ -19,7 +19,7 @@ weak var delegate: (any NSWritingToolsCoordinator.Delegate)? { get }
 @property (weak, readonly, nullable) id<NSWritingToolsCoordinatorDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 Specify this object at initialization time when creating your `NSWritingToolsCoordinator` object. The object must adopt the [`NSWritingToolsCoordinator.Delegate`](./delegate-swift.protocol.md) protocol, and be capable of modifying your view’s text storage and refreshing the view’s layout and appearance.
 

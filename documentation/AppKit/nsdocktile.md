@@ -19,7 +19,7 @@ class NSDockTile
 @interface NSDockTile : NSObject
 ```
 
-#### Overview
+## Overview
 
 You do not create Dock tile objects explicitly in your app. Instead, you retrieve the Dock tile for an existing window or for the app by calling that object’s [`dockTile`](./nswindow/docktile.md) method. Also, you do not subclass the [`NSDockTile`](./nsdocktile.md) class; instead, you use the methods of the class to make the following customizations:
 
@@ -29,7 +29,7 @@ You do not create Dock tile objects explicitly in your app. Instead, you retriev
 
 If you decide to draw the tile content yourself, you must provide a custom content view to handle the drawing.
 
-##### Application Dock Tiles
+### Application Dock Tiles
 
 An application Dock tile defaults to display the application’s [`applicationIconImage`](./nsapplication/applicationiconimage.md).
 
@@ -37,7 +37,7 @@ The application Dock tile never shows a smaller application icon badge.
 
 Whether using the default or custom view, the application Dock tile may be badged with a short custom string.
 
-##### Window Dock Tiles
+### Window Dock Tiles
 
 A window Dock tile defaults to display a miniaturized version of the windows contents with a badge derived from the application Dock icon, including any customized application Dock icon. The default window Dock tile image may not be badged with a custom string.
 

@@ -19,7 +19,7 @@ func textSelection(_ textRanges: [NSTextRange]) -> NSTextSelection
 - (NSTextSelection *) textSelectionWithTextRanges:(NSArray<NSTextRange *> *) textRanges;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`NSTextSelection`](../nstextselection.md).
 

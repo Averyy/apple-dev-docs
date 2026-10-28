@@ -21,7 +21,7 @@ The number of identity entries that someone hasn’t yet enabled.
 var unapprovedCount: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 For app extensions that reside outside the host app, a person must approve the use of an app extension before the host app can use it. This property reflects the number of app extensions currently waiting for approval. If the value of this property is greater than zero, consider presenting [`EXAppExtensionBrowserViewController`](../../../../ExtensionKit/exappextensionbrowserviewcontroller.md) to display the extension enablement UI.
 

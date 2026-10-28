@@ -21,7 +21,7 @@ A value for associating a tag’s media type with metadata.
 extern const CMTag kCMTagMediaTypeMetadata;
 ```
 
-#### Discussion
+## Discussion
 
 This value is for use in tags with the [`kCMTagCategory_MediaType`](./cmtagcategory/kcmtagcategory_mediatype.md) category.
 

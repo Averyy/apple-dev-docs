@@ -21,7 +21,7 @@ File may not be changed.
 static var userImmutable: FileFlags { get }
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding C constant is `UF_IMMUTABLE`.
 

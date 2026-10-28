@@ -25,7 +25,7 @@ func cancelPerformSelectors(withTarget target: Any)
 - (void) cancelPerformSelectorsWithTarget:(id) target;
 ```
 
-#### Discussion
+## Discussion
 
 This method cancels the previously scheduled messages associated with the target, ignoring the selector and argument of the scheduled operation. This is in contrast to [`cancelPerform(_:target:argument:)`](./cancelperform%28_,target,argument%29.md), which requires you to match the selector and argument as well as the target. This method removes the perform requests for the object from all modes of the run loop.
 

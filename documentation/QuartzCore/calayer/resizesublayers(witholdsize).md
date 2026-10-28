@@ -20,7 +20,7 @@ func resizeSublayers(withOldSize size: CGSize)
 - (void) resizeSublayersWithOldSize:(CGSize) size;
 ```
 
-#### Discussion
+## Discussion
 
 When the [`autoresizingMask`](./autoresizingmask.md) property is used for resizing and the bounds of this layer change, the layer calls this method. The default implementation calls the [`resize(withOldSuperlayerSize:)`](./resize%28witholdsuperlayersize%29.md) method of each sublayer to let it know its superlayer’s bounds changed. You should not need to call or override this method directly.
 

@@ -16,7 +16,7 @@ The functionality for the type of user identification.
 struct UserIdentity
 ```
 
-#### Overview
+## Overview
 
 A type of digital identity that the applet can store.
 

@@ -24,7 +24,7 @@ var preferredMediaChunkSize: Int { get set }
 @property (nonatomic) NSInteger preferredMediaChunkSize;
 ```
 
-#### Discussion
+## Discussion
 
 The total size of the samples in a chunk can be no greater than the preferred chunk size, or the size of a single sample if the single sample’s size is greater than the preferred chunk size. The default media chunk duration is `1024 * 1024` bytes. Setting a negative value for the chunk duration will cause an error.
 

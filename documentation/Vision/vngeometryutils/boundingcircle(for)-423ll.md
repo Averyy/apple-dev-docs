@@ -24,7 +24,7 @@ class func boundingCircle(for contour: VNContour) throws -> VNCircle
 + (VNCircle *) boundingCircleForContour:(VNContour *) contour error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 The bounding [`VNCircle`](../vncircle.md) object.
 

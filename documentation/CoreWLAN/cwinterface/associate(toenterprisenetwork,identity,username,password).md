@@ -19,7 +19,7 @@ func associate(toEnterpriseNetwork network: CWNetwork, identity: SecIdentity?, u
 - (BOOL) associateToEnterpriseNetwork:(CWNetwork *) network identity:(SecIdentityRef) identity username:(NSString *) username password:(NSString *) password error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 This method will block for the duration of the association. This operation may require an administrator password.
 

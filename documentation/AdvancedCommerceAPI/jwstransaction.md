@@ -15,7 +15,7 @@ Transaction information signed by the App Store, in JSON Web Signature (JWS) Com
 string JWSTransaction
 ```
 
-##### Description
+### Description
 
 This `JWSTransaction` object is identical to the one used in the App Store Server API and by App Store Server Notifications. For details, see [`JWSTransaction`](../AppStoreServerAPI/jwstransaction.md).
 

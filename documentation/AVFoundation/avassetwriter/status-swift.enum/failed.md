@@ -24,7 +24,7 @@ case failed
 AVAssetWriterStatusFailed
 ```
 
-#### Discussion
+## Discussion
 
 Query the [`error`](../error.md) property value to determine the cause of the failure.
 

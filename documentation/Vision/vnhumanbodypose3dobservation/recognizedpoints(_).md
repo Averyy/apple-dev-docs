@@ -24,7 +24,7 @@ func recognizedPoints(_ jointsGroupName: VNHumanBodyPose3DObservation.JointsGrou
 - (NSDictionary<NSString *,VNHumanBodyRecognizedPoint3D *> *) recognizedPointsForJointsGroupName:(VNHumanBodyPose3DObservationJointsGroupName) jointsGroupName error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 A collection of points.
 

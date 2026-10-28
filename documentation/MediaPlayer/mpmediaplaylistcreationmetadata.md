@@ -22,7 +22,7 @@ class MPMediaPlaylistCreationMetadata
 @interface MPMediaPlaylistCreationMetadata : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use this class when creating a new playlist using the [`getPlaylist(with:creationMetadata:completionHandler:)`](./mpmedialibrary/getplaylist%28with,creationmetadata,completionhandler%29.md) method. The system adds the metadata to the playlist when you create it, however it ignores the metadata if the playlist already exists.
 

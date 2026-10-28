@@ -18,7 +18,7 @@ func recordFailure(withDescription description: String, inFile filePath: String?
 - (void) recordFailureWithDescription:(NSString *) description inFile:(NSString *) filePath atLine:(NSUInteger) lineNumber expected:(BOOL) expected;
 ```
 
-#### Discussion
+## Discussion
 
 Don’t call this method before the test run starts or after it stops.
 

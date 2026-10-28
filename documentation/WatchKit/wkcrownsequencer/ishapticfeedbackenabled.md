@@ -19,7 +19,7 @@ var isHapticFeedbackEnabled: Bool { get set }
 @property (nonatomic, getter=isHapticFeedbackEnabled) BOOL hapticFeedbackEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 By default, this property is set to [`true`](../../Swift/true.md). In Apple Watch Series 4 and later, the watch provides linear haptic feedback as the user rotates the digital crown. Set this property to [`false`](../../Swift/false.md) to disable the haptic feedback while the crown sequencer has the focus. For example, you can use this property to disable haptic feedback if the feedback does not match the screen’s animation.
 

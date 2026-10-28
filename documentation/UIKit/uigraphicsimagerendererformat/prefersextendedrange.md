@@ -24,7 +24,7 @@ var prefersExtendedRange: Bool { get set }
 @property (nonatomic) BOOL prefersExtendedRange;
 ```
 
-#### Discussion
+## Discussion
 
 If [`true`](../../Swift/true.md), the underlying Core Graphics context is configured to support wide color; if [`false`](../../Swift/false.md), the context is not.
 

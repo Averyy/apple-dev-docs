@@ -16,7 +16,7 @@ In the context of a texture stage, sets the current pixels’ value.
 void texture::setPixel(float4 value)
 ```
 
-#### Discussion
+## Discussion
 
 > **Visual**: ![Graph](https://developer.apple.com/tutorials/images/com.apple.computegraph/texture__setPixel.svg)
 

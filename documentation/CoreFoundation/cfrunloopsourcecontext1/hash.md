@@ -25,11 +25,11 @@ var hash: ((UnsafeRawPointer?) -> CFHashCode)!
 unsigned long (*)(const void *) hash;
 ```
 
-#### Return Value
+## Return Value
 
 A hash code value for `info`.
 
-#### Discussion
+## Discussion
 
 If a hash callback is not provided for a source, the `info` pointer is used.
 

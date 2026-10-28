@@ -23,11 +23,11 @@ Copies the provided number of bytes from the start of the type into  a typed mem
 func copyBytes<DestinationType>(to: UnsafeMutableBufferPointer<DestinationType>, count: Int) -> Int
 ```
 
-#### Return Value
+## Return Value
 
 The number of bytes copied.
 
-#### Discussion
+## Discussion
 
 The following example copies the number of bytes that `count` identified from the beginning of the raw memory buffer into the provided typed memory buffer:
 

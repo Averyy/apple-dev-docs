@@ -17,7 +17,7 @@ The highest throughput a connection from the local device to the remote device i
 let localThroughputCeiling: Double?
 ```
 
-#### Discussion
+## Discussion
 
 The result is in `Mbps` and can be `nil` if the system can’t calculate it.
 

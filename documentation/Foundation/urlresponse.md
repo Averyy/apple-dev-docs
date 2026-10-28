@@ -30,7 +30,7 @@ class URLResponse
 - [Processing URL session data task results with Combine](./processing-url-session-data-task-results-with-combine.md)
 - [Downloading files from websites](./downloading-files-from-websites.md)
 
-#### Overview
+## Overview
 
 The related [`HTTPURLResponse`](./httpurlresponse.md) class is a commonly used subclass of [`URLResponse`](./urlresponse.md) whose objects represent a response to an HTTP URL load request and store additional protocol-specific information such as the response headers. Whenever you make an HTTP request, the [`URLResponse`](./urlresponse.md) object you get back is actually an instance of the [`HTTPURLResponse`](./httpurlresponse.md) class.
 

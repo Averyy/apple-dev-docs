@@ -20,7 +20,7 @@ var videoEnabled: Bool { get set }
 @property BOOL videoEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 The Compressor app sets this value based on the source media attributes. Use this value to specify the [`kCEVideoEnabledKey`](../kcevideoenabledkey.md).
 

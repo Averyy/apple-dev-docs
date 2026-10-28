@@ -24,7 +24,7 @@ convenience init(identifier: String?, title: String?, type: INMediaItemType, art
 - (instancetype) initWithIdentifier:(NSString *) identifier title:(NSString *) title type:(INMediaItemType) type artwork:(INImage *) artwork;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized media item object.
 

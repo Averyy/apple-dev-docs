@@ -13,7 +13,7 @@
 kINQUIRY_VENDOR_IDENTIFICATION_Length = 8
 ```
 
-#### Discussion
+## Discussion
 
 Size of VENDOR_IDENTIFICATION field.
 

@@ -21,7 +21,7 @@ The labels visibility set by [`labelsVisibility(_:)`](../view/labelsvisibility%2
 var labelsVisibility: Visibility { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Read this environment value from within a view to obtain the preferred visibility for labels within the hierarchy. If you would like to dynamically hide the label of your custom view, make sure to include an accessibility label via the [`accessibilityLabel(content:)`](../view/accessibilitylabel%28content%29.md) modifier as illustrated below:
 

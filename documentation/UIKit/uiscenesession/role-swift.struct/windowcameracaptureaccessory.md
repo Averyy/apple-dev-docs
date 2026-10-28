@@ -23,7 +23,7 @@ static let windowCameraCaptureAccessory: UISceneSession.Role
 extern UISceneSessionRole const UIWindowSceneSessionRoleCameraCaptureAccessory;
 ```
 
-#### Discussion
+## Discussion
 
 The system assigns this role automatically to scenes created from a camera capture scene accessory registration. Clients do not set it directly; it is provided so a scene’s purpose can be identified at runtime.
 

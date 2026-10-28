@@ -9,7 +9,7 @@
 UInt32 state;
 ```
 
-#### Overview
+## Overview
 
 state-semaphore for use by IOATAController
 

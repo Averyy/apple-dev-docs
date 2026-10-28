@@ -17,7 +17,7 @@ Intermediate type for [`at`](./mlxarray/at.md).
 struct ArrayAtIndices
 ```
 
-#### Overview
+## Overview
 
 This type allows update operations when using `array.at[indices]`, e.g.:
 
@@ -27,7 +27,7 @@ var a2 = MLXArray([0, 0])
 a2 = a2.at[idx].add(1)
 ```
 
-##### See Also
+### See Also
 
 ```
 - ``MLXArray/at``

@@ -22,7 +22,7 @@ func setShadowImage(_ shadowImage: UIImage?, forToolbarPosition topOrBottom: UIB
 - (void) setShadowImage:(UIImage *) shadowImage forToolbarPosition:(UIBarPosition) topOrBottom;
 ```
 
-#### Discussion
+## Discussion
 
 When the `shadowImage` parameter is `nil`, the default shadow will be used. When non-`nil`, the `shadowImage` property is a custom shadow image to show instead of the default. Using the `topOrBottom` parameter, you can set a different shadow for toolbars at the top and bottom of the view. For a custom shadow image to be shown, a custom background image must also be set with the [`setBackgroundImage(_:forToolbarPosition:barMetrics:)`](./setbackgroundimage%28_,fortoolbarposition,barmetrics%29.md) method. If the default background image is used, then the default shadow image will be used regardless of the value of the `shadowImage` parameter.
 

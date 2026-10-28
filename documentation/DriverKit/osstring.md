@@ -18,7 +18,7 @@ A container for managing an array of characters.
 class OSString;
 ```
 
-#### Overview
+## Overview
 
 OSString is a container class for managing arrays of characters.
 

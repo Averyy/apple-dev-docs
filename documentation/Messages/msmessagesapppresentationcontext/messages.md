@@ -25,7 +25,7 @@ MSMessagesAppPresentationContextMessages
 
 - [Adding Sticker packs and iMessage apps to the system Stickers app, Messages camera, and FaceTime](../adding-sticker-packs-and-imessage-apps-to-the-system-stickers-app-messages-camera-and-facetime.md)
 
-#### Discussion
+## Discussion
 
 iMessage apps presented in a messages context have access to the full iMessage API.
 

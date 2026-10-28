@@ -17,7 +17,7 @@ Affine (linear) quantization with scale and bias parameters.
 case affine
 ```
 
-#### Discussion
+## Discussion
 
 This is the standard quantization approach where values are quantized using:
 

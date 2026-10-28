@@ -21,7 +21,7 @@ A Boolean value that indicates the system excludes the item from syncing.
 var ubiquitousItemIsExcludedFromSync: Bool? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The item is locally on-disk, but isn’t available on the server.
 

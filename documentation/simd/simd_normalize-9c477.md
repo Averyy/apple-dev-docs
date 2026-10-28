@@ -12,11 +12,11 @@ Returns a vector pointing in the same direction of the supplied vector, with a l
 static simd_double3 simd_normalize(simd_double3 __x);
 ```
 
-#### Return Value
+## Return Value
 
 The normalized vector.
 
-#### Discussion
+## Discussion
 
 This function returns an undefined value if the supplied vector has zero length or is poorly scaled such that an intermediate computation overflows or underflows.
 

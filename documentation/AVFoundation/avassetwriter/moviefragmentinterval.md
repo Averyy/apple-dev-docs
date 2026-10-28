@@ -24,7 +24,7 @@ var movieFragmentInterval: CMTime { get set }
 @property (nonatomic) CMTime movieFragmentInterval;
 ```
 
-#### Discussion
+## Discussion
 
 Some container formats, such as QuickTime movies, support writing movies in fragments. Using this feature enables you to open and play a partially written movie in the event that an unexpected error or interruption occurs.
 

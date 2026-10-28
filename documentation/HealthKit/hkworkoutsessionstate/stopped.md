@@ -24,7 +24,7 @@ case stopped
 HKWorkoutSessionStateStopped
 ```
 
-#### Discussion
+## Discussion
 
 As soon as the session stops, the watch’s sensors return to normal, and it no longer generates workout data; however, the app can continue to run in the background, even after the user lowers their wrist.
 

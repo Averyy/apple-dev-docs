@@ -23,7 +23,7 @@ var isConstantColorSupported: Bool { get }
 @property (nonatomic, readonly, getter=isConstantColorSupported) BOOL constantColorSupported;
 ```
 
-#### Discussion
+## Discussion
 
 The light sources illuminating a scene affect an object’s color in a photograph, so the color of the same object captured in warm light might look significantly different than in colder light. In some cases, ambient light-induced color variation is undesirable, and you may prefer an estimate of what these materials would look like under a standard light such as daylight (D65), regardless of the lighting conditions at the time of capture. Some devices are capable of producing such constant color photos.
 

@@ -12,7 +12,7 @@ virtual void removeObject(
  unsigned intindex);
 ```
 
-#### Overview
+## Overview
 
 This function moves existing objects to fill the vacated index so that there are no gaps. The object removed is released.
 

@@ -12,11 +12,11 @@ virtual ifnet_t getIfnet(
  void ) const;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the `ifnet_t` after the interface has attached to the network stack and before the interface is detached, otherwise returns NULL.
 
-#### Overview
+## Overview
 
 Gets the interface's `ifnet_t`, which is managed primarily by `IONetworkInterface`, however subclasses or drivers can use this method to obtain a reference to the `ifnet_t` for interface KPI calls.
 

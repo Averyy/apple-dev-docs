@@ -23,7 +23,7 @@ optional func presentationController(_ presentationController: UIPresentationCon
 - (void) presentationController:(UIPresentationController *) presentationController willPresentWithAdaptiveStyle:(UIModalPresentationStyle) style transitionCoordinator:(id<UIViewControllerTransitionCoordinator>) transitionCoordinator;
 ```
 
-#### Discussion
+## Discussion
 
 When a size class change occurs, UIKit calls this method to let you know how the presentation controller will adapt. Use this method to make any additional changes. For example, you might use the transition coordinator object to create additional animations for the transition.
 

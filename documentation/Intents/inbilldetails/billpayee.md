@@ -34,7 +34,7 @@ var billPayee: INBillPayee? { get set }
 @property (atomic, copy, readwrite, nullable) INBillPayee * billPayee;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to specify the recipient of the payment. The payee may refer to a bank, a utility, or any entity for which the user has set up online bill payment in your app. The user must configure payees in advance in your app.
 

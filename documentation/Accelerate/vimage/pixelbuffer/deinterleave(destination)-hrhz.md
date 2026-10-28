@@ -27,7 +27,7 @@ Available when `Format` is `vImage.Interleaved8x3`.
 
 - [Optimizing image-processing performance](../../optimizing-image-processing-performance.md)
 
-#### Discussion
+## Discussion
 
 Use this function to deinterleave a buffer and overwrite a multiple-plane pixel buffer with copies of each source channel.
 

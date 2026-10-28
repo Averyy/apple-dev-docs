@@ -20,11 +20,11 @@ func get() -> [Any]?
 - (NSArray<id> *) get;
 ```
 
-#### Return Value
+## Return Value
 
 The object referenced by the receiver.
 
-#### Discussion
+## Discussion
 
 This method forces the evaluation of the current object reference (the receiver), resulting in the return of the referenced object. By default, Scripting Bridge deals with references to objects until you actually request some concrete data from them or until you call the `get` method.
 

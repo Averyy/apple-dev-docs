@@ -18,7 +18,7 @@ An assignable document is an augmented PDF that allows teachers to mark up the P
 struct AssignableDocument
 ```
 
-#### Overview
+## Overview
 
 The document has several parts, which includes the ability to modify the PDF, annotate the PDF, and define question regions in the PDF.
 

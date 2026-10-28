@@ -19,7 +19,7 @@ var splitViewItems: [NSSplitViewItem] { get set }
 @property (copy) NSArray<__kindof NSSplitViewItem *> * splitViewItems;
 ```
 
-#### Discussion
+## Discussion
 
 Setting this property implicitly calls the [`insertSplitViewItem(_:at:)`](./insertsplitviewitem%28_,at%29.md) or [`removeSplitViewItem(_:)`](./removesplitviewitem%28_%29.md) method, as appropriate, to add or remove split view items from this array.
 

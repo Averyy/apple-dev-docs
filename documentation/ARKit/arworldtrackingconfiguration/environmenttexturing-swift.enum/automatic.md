@@ -20,7 +20,7 @@ case automatic
 AREnvironmentTexturingAutomatic
 ```
 
-#### Discussion
+## Discussion
 
 When you use this [`environmentTexturing`](../environmenttexturing-swift.property.md) option, ARKit automatically chooses positions in the scene to generate environment textures based on the camera imagery it has collected and the other anchors you’ve placed.
 

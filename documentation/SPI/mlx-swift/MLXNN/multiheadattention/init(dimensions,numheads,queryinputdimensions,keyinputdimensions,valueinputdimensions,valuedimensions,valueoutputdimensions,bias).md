@@ -17,7 +17,7 @@ Implements the scaled dot product attention with multiple heads.
 init(dimensions: Int, numHeads: Int, queryInputDimensions: Int? = nil, keyInputDimensions: Int? = nil, valueInputDimensions: Int? = nil, valueDimensions: Int? = nil, valueOutputDimensions: Int? = nil, bias: Bool = false)
 ```
 
-#### Discussion
+## Discussion
 
 Given inputs for queries, keys and values the [`MultiHeadAttention`](../multiheadattention.md) produces new values by aggregating information from the input values according to the similarities of the input queries and keys.
 
@@ -25,7 +25,7 @@ All inputs as well as the output are linearly projected without biases by defaul
 
 [`MultiHeadAttention`](../multiheadattention.md) also takes an optional additive attention mask that should be broadcastable with `(batch, numHeads, # queries, # keys)`. The mask should have `-inf` or very large negative numbers at the positions that should *not* be attended to.
 
-##### See Also
+### See Also
 
 - ``createAdditiveCausalMask(_:dtype:)
 

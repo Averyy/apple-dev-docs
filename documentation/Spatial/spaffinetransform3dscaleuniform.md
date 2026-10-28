@@ -21,7 +21,7 @@ Returns a transform that results from uniformly scaling with the specified doubl
 static SPAffineTransform3D SPAffineTransform3DScaleUniform(SPAffineTransform3D transform, double scale);
 ```
 
-#### Return Value
+## Return Value
 
 The transform that results from uniformly scaling with the specified double-precision value.
 

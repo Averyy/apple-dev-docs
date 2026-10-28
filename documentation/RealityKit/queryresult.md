@@ -20,7 +20,7 @@ An object that returns the results of an entity query.
 struct QueryResult<Element>
 ```
 
-#### Overview
+## Overview
 
 You can’t create query result objects. Instead, call [`performQuery(_:)`](./scene/performquery%28_%29.md), which returns a [`QueryResult`](./queryresult.md) containing the entities that meet your specified query criteria.
 

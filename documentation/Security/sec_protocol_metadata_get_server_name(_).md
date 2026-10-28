@@ -23,11 +23,11 @@ func sec_protocol_metadata_get_server_name(_ metadata: sec_protocol_metadata_t) 
 const char *sec_protocol_metadata_get_server_name(sec_protocol_metadata_t metadata);
 ```
 
-#### Return Value
+## Return Value
 
 Returns A NULL-terminated string carrying the server name, or NULL if none was provided.
 
-#### Discussion
+## Discussion
 
 Obtain the server name offered by a client or server during connection establishmet. This is the value commonly carried in the TLS SNI extesion.
 

@@ -22,7 +22,7 @@ var isVirtualDeviceFusionSupported: Bool { get }
 @property (nonatomic, readonly, getter=isVirtualDeviceFusionSupported) BOOL virtualDeviceFusionSupported;
 ```
 
-#### Discussion
+## Discussion
 
 When using a virtual capture device, the system can fuse the images from its constituent cameras to improve image quality.
 

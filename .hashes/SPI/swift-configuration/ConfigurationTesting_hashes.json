@@ -59,7 +59,15 @@
   },
   "metadata": {
     "render": {
-      "version": 3
+      "excluded_pages": [
+        "configuration/sco-0001",
+        "configuration/sco-0002",
+        "configuration/sco-0003",
+        "configuration/sco-0004",
+        "configuration/sco-0005",
+        "configuration/sco-nnnn"
+      ],
+      "version": 4
     },
     "total_pages": 14
   }

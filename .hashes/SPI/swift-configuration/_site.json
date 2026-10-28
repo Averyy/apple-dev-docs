@@ -1,6 +1,16 @@
 {
   "hashes": {},
   "metadata": {
+    "excluded_pages": {
+      "configuration/proposals": [
+        "configuration/sco-0001",
+        "configuration/sco-0002",
+        "configuration/sco-0003",
+        "configuration/sco-0004",
+        "configuration/sco-0005",
+        "configuration/sco-nnnn"
+      ]
+    },
     "index_roots": [
       "Configuration",
       "ConfigurationTesting"

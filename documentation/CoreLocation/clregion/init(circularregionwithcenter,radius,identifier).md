@@ -22,11 +22,11 @@ init(circularRegionWithCenter center: CLLocationCoordinate2D, radius: CLLocation
 - (instancetype) initCircularRegionWithCenter:(CLLocationCoordinate2D) center radius:(CLLocationDistance) radius identifier:(NSString *) identifier;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized region object.
 
-#### Discussion
+## Discussion
 
 In iOS, use a [`CLCircularRegion`](../clcircularregion.md) object to manage geographic regions.
 

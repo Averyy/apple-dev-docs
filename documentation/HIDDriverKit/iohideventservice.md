@@ -16,7 +16,7 @@ The base class for implementing a device or operating system service that dispat
 class IOHIDEventService;
 ```
 
-#### Overview
+## Overview
 
 An `IOHIDEventService` object receives data from a device and generates events for the operating system to handle. Typically, you implement an event service by subclassing [`IOUserHIDEventService`](./iouserhideventservice.md), but you may also subclass `IOHIDEventService` directly if you want to parse input reports yourself. In both cases, use the methods of this class to send events to the operating system, which dispatches those events to relevant apps.
 

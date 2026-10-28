@@ -21,7 +21,7 @@ Generates an integer column by dividing each element in a column type by the cor
 func / <L, R>(lhs: L, rhs: R) -> Column<L.Element> where L : ColumnProtocol, R : OptionalColumnProtocol, L.Element : BinaryInteger, L.Element == R.WrappedElement
 ```
 
-#### Return Value
+## Return Value
 
 A new column with the same type as the left column.
 

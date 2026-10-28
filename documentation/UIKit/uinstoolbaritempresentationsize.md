@@ -23,7 +23,7 @@ enum UINSToolbarItemPresentationSize
 enum UINSToolbarItemPresentationSize : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 Use these constants with [`toolbarItemPresentationSize`](./uitraitcollection/toolbaritempresentationsize.md) to determine what size an [`NSToolbar`](../AppKit/nstoolbar.md) expects its toolbar items to be.
 

@@ -23,7 +23,7 @@ struct State
 enum UIControlState : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 A control can have more than one state at a time. Controls can have different configurations according to their state. For example, a [`UIButton`](../uibutton.md) object can display one image when it’s in its normal state and a different image when it’s highlighted.
 

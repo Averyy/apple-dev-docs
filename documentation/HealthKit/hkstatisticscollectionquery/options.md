@@ -24,7 +24,7 @@ var options: HKStatisticsOptions { get }
 @property (readonly) HKStatisticsOptions options;
 ```
 
-#### Discussion
+## Discussion
 
 For a list of valid options, see [`HKStatisticsOptions`](../hkstatisticsoptions.md).
 

@@ -17,7 +17,7 @@ A traffic class for non-urgent background data transfers.
 case background
 ```
 
-#### Discussion
+## Discussion
 
 Use the background traffic class for data that doesn’t require immediate delivery, such as backups, synchronization, and content prefetching. This traffic has lower priority and may experience higher latency.
 

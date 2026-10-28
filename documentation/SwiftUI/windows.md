@@ -5,7 +5,7 @@
 
 Display user interface content in a window or a collection of windows.
 
-#### Overview
+## Overview
 
 The most common way to present a view hierarchy in your app’s interface is with a [`WindowGroup`](./windowgroup.md), which produces a platform-specific behavior and appearance.
 

@@ -29,7 +29,7 @@ extern CFStringRef const kSecAttrIsPermanent;
 
 - [Generating New Cryptographic Keys](./generating-new-cryptographic-keys.md)
 
-#### Discussion
+## Discussion
 
 The corresponding value is of type [`CFBoolean`](../CoreFoundation/cfboolean.md) and indicates whether or not this cryptographic key or key pair should be stored in the default keychain at creation time.
 

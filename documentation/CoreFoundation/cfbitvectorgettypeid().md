@@ -25,11 +25,11 @@ func CFBitVectorGetTypeID() -> CFTypeID
 extern CFTypeID CFBitVectorGetTypeID();
 ```
 
-#### Return Value
+## Return Value
 
 The type identifier for the CFBitVector opaque type.
 
-#### Discussion
+## Discussion
 
 CFMutableBitVector objects have the same type identifier as CFBitVector objects.
 

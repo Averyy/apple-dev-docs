@@ -23,7 +23,7 @@ var bypassColorSpaceConversion: Bool { get set }
 @property (nonatomic, assign) BOOL bypassColorSpaceConversion;
 ```
 
-#### Discussion
+## Discussion
 
 Set [`bypassColorSpaceConversion`](./bypasscolorspaceconversion.md) to `true` if you would like the configurator’s  [`AVCaptureVideoPreviewLayer`](../avcapturevideopreviewlayer.md) color space preserved on the output display. This is accomplished by setting the working color space to match the color space of the external display. The color properties of the `CALayer` remain untouched. The default value is `false`.
 

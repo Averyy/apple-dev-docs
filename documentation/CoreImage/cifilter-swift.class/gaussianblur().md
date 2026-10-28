@@ -24,11 +24,11 @@ class func gaussianBlur() -> any CIFilter & CIGaussianBlur
 + (CIFilter<CIGaussianBlur> *) gaussianBlurFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The blurred image.
 
-#### Discussion
+## Discussion
 
 This method applies a Gaussian blur filter to an image. The effect targets the pixels within a circle defined by a `radius` and uses Gaussian ditribution to blur the image from the center out.
 

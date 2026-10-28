@@ -20,7 +20,7 @@ var progressValue: CGFloat { get set }
 @property (atomic) CGFloat progressValue;
 ```
 
-#### Discussion
+## Discussion
 
 Setting this value causes Automator’s action progress indicator (displayed as a workflow runs) to update in order to provide the user with an indication of progress.
 

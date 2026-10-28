@@ -23,7 +23,7 @@ func hash(into hasher: inout Hasher)
 
 Available when `Element` conforms to `Hashable`.
 
-#### Discussion
+## Discussion
 
 Implement this method to conform to the `Hashable` protocol. The components used for hashing must be the same as the components compared in your type’s `==` operator implementation. Call `hasher.combine(_:)` with each of these components.
 

@@ -5,7 +5,7 @@
 
 Use name tags to define authorization security items.
 
-#### Overview
+## Overview
 
 These tags are possible values for the `name` field of an [`AuthorizationItem`](./authorizationitem.md) structure. This is not an all-inclusive set. You determine the name of the right to request. These environment tags are for future use.
 

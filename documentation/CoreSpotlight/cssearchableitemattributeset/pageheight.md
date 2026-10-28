@@ -23,7 +23,7 @@ var pageHeight: NSNumber? { get set }
 @property (strong, nullable) NSNumber * pageHeight;
 ```
 
-#### Discussion
+## Discussion
 
 For a PDF document, this property specifies the height of the first page only; other pages in a PDF document may have different heights.
 

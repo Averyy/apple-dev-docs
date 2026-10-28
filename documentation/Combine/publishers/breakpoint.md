@@ -21,7 +21,7 @@ A publisher that raises a debugger signal when a provided closure needs to stop 
 struct Breakpoint<Upstream> where Upstream : Publisher
 ```
 
-#### Overview
+## Overview
 
 When any of the provided closures returns `true`, this publisher raises the `SIGTRAP` signal to stop the process in the debugger. Otherwise, this publisher passes through values and completions as-is.
 

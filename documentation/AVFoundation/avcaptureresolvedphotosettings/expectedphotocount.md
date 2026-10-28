@@ -28,7 +28,7 @@ var expectedPhotoCount: Int { get }
 - [Capturing a bracketed photo sequence](../capturing-a-bracketed-photo-sequence.md)
 - [Tracking photo capture progress](../tracking-photo-capture-progress.md)
 
-#### Discussion
+## Discussion
 
 When you request a photo capture, the photo output calls your delegate’s [`photoOutput(_:didFinishProcessingPhoto:error:)`](../avcapturephotocapturedelegate/photooutput%28_,didfinishprocessingphoto,error%29.md) method many times based on the settings you choose. For example, if you request a bracket of three exposures with image delivery in both JPEG and RAW formats, the expected photo count is `6`.
 

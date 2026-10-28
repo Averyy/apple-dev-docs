@@ -23,7 +23,7 @@ func decode(from decoder: inout any EstimatorDecoder) throws -> FullyConnectedNe
 
 Available when `Scalar` conforms to `MLShapedArrayScalar` and `BinaryFloatingPoint`.
 
-#### Return Value
+## Return Value
 
 A fully connected network regressor model.
 

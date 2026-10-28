@@ -20,11 +20,11 @@ optional func shouldPerformSegue(withIdentifier identifier: NSStoryboardSegue.Id
 - (BOOL) shouldPerformSegueWithIdentifier:(NSStoryboardSegueIdentifier) identifier sender:(id) sender;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) to allow a segue to proceed or [`false`](../../Swift/false.md) to stop it from proceeding.
 
-#### Discussion
+## Discussion
 
 Override this method to return [`false`](../../Swift/false.md) for cases where you want to prevent the performance of a segue. By default, invocation of a segue results in the segue being performed.
 

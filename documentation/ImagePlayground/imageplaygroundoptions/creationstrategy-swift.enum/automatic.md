@@ -19,7 +19,7 @@ An option to let the system select the creation strategy.
 case automatic
 ```
 
-#### Discussion
+## Discussion
 
 The system chooses the [`ImagePlaygroundOptions.CreationStrategy.generateNew`](./generatenew.md) option by default.
 

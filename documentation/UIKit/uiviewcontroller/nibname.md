@@ -25,7 +25,7 @@ var nibName: String? { get }
 @property (nonatomic, copy, readonly, nullable) NSString * nibName;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the value specified at initialization time to the [`init(nibName:bundle:)`](./init%28nibname,bundle%29.md) method. The value of this property may be `nil`.
 

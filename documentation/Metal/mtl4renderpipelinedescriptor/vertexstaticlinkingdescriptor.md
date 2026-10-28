@@ -25,7 +25,7 @@ var vertexStaticLinkingDescriptor: MTL4StaticLinkingDescriptor! { get set }
 @property (nonatomic, copy, null_resettable) MTL4StaticLinkingDescriptor * vertexStaticLinkingDescriptor;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to link extra shader functions to the vertex stage of the render pipeline.
 

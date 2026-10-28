@@ -14,7 +14,7 @@
 #define kIOPropertyFibreChannelCableDescriptionFiberOpticKey
 ```
 
-#### Discussion
+## Discussion
 
 This key defines the value of Fiber Optic for the key kIOPropertyFibreChannelCableDescriptionKey. If the cabling is Fiber Optic, this key should be used.
 

@@ -20,7 +20,7 @@ The framework can’t retrieve analysis results.
 case resultFetching
 ```
 
-#### Discussion
+## Discussion
 
 This error occurs when the framework can’t find a result that matches the type expected by a [`VideoAnalyzer.Request`](../videoanalyzer/request.md). Confirm that you’re passing the correct request type to [`analyze(_:for:)`](../videoanalyzer/analyze%28_,for%29.md).
 

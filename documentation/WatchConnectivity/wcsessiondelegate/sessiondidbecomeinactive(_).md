@@ -23,7 +23,7 @@ func sessionDidBecomeInactive(_ session: WCSession)
 - (void) sessionDidBecomeInactive:(WCSession *) session;
 ```
 
-#### Discussion
+## Discussion
 
 You must implement this method to support quick switching between Apple Watch devices in your iPhone app. The session calls this method when it detects that the user has switched to a different Apple Watch. While in the inactive state, the session delivers any pending data to your delegate object and prevents you from initiating any new data transfers. After the last transfer finishes, the session moves to the deactivated state.
 

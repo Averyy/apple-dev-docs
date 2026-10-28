@@ -19,7 +19,7 @@ var isMovableByWindowBackground: Bool { get set }
 @property (getter=isMovableByWindowBackground) BOOL movableByWindowBackground;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) when the window is movable by clicking and dragging anywhere in its background; otherwise, [`false`](../../Swift/false.md).
 

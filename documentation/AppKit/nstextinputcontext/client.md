@@ -19,7 +19,7 @@ var client: any NSTextInputClient { get }
 @property (readonly) id<NSTextInputClient> client;
 ```
 
-#### Discussion
+## Discussion
 
 The client (owner) of the input context, typically an `NSView` instance, retains its `NSTextInputContext` instance. The `NSTextInputContext` instance doesn’t retain its client.
 

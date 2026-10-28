@@ -22,7 +22,7 @@ nonisolated
 func coordinateSpace(_ name: NamedCoordinateSpace) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 Use `coordinateSpace(_:)` to allow another function to find and operate on a view and operate on dimensions relative to that view.
 

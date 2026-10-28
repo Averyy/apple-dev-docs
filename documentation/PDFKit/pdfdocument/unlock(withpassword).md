@@ -24,11 +24,11 @@ func unlock(withPassword password: String) -> Bool
 - (BOOL) unlockWithPassword:(NSString *) password;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the specified password unlocks the document, [`false`](../../Swift/false.md) otherwise.
 
-#### Discussion
+## Discussion
 
 If the password is correct, this method returns [`true`](../../Swift/true.md), and a `PDFDocumentDidUnlockNotification` notification is sent. Once unlocked, you cannot use this function to relock the document.
 

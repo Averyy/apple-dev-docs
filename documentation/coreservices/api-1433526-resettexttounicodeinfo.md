@@ -15,7 +15,7 @@ Reinitializes all state information kept by the contextobjects.
 OSStatus ResetTextToUnicodeInfo(TextToUnicodeInfo ioTextToUnicodeInfo);
 ```
 
-#### Return Value
+## Return Value
 
 A resultcode. See [Result Codes](./carbon_core/text_encoding_conversion_manager.md#1664324).
 

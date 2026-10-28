@@ -16,7 +16,7 @@ Reads the 512-byte log directory.
 IOReturn (*SMARTReadLogDirectory)(void *interface, ATASMARTLogDirectory *logData);
 ```
 
-#### Discussion
+## Discussion
 
 The log directory is a directory of all possible SMART logs available from the drive.
 

@@ -20,7 +20,7 @@ func indicesOfObjectsByEvaluating(withContainer container: Any, count: UnsafeMut
 - (NSInteger *) indicesOfObjectsByEvaluatingWithContainer:(id) container count:(NSInteger *) count;
 ```
 
-#### Discussion
+## Discussion
 
 This primitive method must be overridden by subclasses to return a pointer to an array of indices identifying objects in the key of the container `aContainer` that are identified by the receiver of the message. The method uses key-value coding to obtain values based on the receiver’s key. It returns the number of such matching objects by indirection in `numRefs`. It returns `nil` directly and –1 via `numRefs` if all objects in the container (or the sole object) match the value of the receiver’s key. This method is invoked by [`objectsByEvaluating(withContainers:)`](./objectsbyevaluating%28withcontainers%29.md). The default implementation returns `nil` directly and –1 indirectly via `numRefs`.
 

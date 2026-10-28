@@ -17,7 +17,7 @@ Key for a format string that specifies how times and dates are abbreviated.
 extern NSString * const NSShortTimeDateFormatString;
 ```
 
-#### Discussion
+## Discussion
 
 The default is to use dashes to separate the day, month, and year and to use a 12-hour clock, as in “31-Jan-01 1:30 PM.”]
 

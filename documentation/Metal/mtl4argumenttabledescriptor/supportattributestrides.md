@@ -24,7 +24,7 @@ var supportAttributeStrides: Bool { get set }
 @property (nonatomic, readwrite) BOOL supportAttributeStrides;
 ```
 
-#### Discussion
+## Discussion
 
 Set this value to true if you intend to provide dynamic attribute strides when binding vertex array buffers to the argument table by calling [`setAddress(_:attributeStride:index:)`](../mtl4argumenttable/setaddress%28_,attributestride,index%29.md)
 

@@ -15,7 +15,7 @@ Get the estimated velocity of the accessory in the local coordinate system.
 extern simd_float3 ar_accessory_anchor_get_velocity(ar_accessory_anchor_t accessory_anchor);
 ```
 
-#### Return Value
+## Return Value
 
 The velocity of the accessory in `m/s`.
 

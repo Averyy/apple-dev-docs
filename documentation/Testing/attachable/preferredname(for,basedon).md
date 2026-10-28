@@ -17,11 +17,11 @@ Generate a preferred name for the given attachment.
 borrowing func preferredName(for attachment: borrowing Attachment<Self>, basedOn suggestedName: String) -> String
 ```
 
-#### Return Value
+## Return Value
 
 The preferred name for `attachment`.
 
-#### Discussion
+## Discussion
 
 The testing library uses this function to determine the best name to use when saving `attachment`. The default implementation of this function returns `suggestedName` without any changes.
 

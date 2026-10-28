@@ -15,7 +15,7 @@ The estimated travel time in seconds, excluding delays for traffic.
 staticTravelTime: number | null;
 ```
 
-#### Discussion
+## Discussion
 
 This static travel time reflects the time it takes to arrive at the destination under ideal conditions.
 

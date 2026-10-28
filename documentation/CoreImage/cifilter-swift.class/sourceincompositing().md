@@ -24,11 +24,11 @@ class func sourceInCompositing() -> any CIFilter & CICompositeOperation
 + (CIFilter<CICompositeOperation> *) sourceInCompositingFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The modified image.
 
-#### Discussion
+## Discussion
 
 This method applies the source-in compositing filter to an image. The effect creates the result by overlaying the input image over the background image. The filter then removes the non-overlapping area of both images.
 

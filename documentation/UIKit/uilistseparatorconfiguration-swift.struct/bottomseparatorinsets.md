@@ -18,7 +18,7 @@ Insets to apply to the bottom separator of the item the configuration applies to
 var bottomSeparatorInsets: NSDirectionalEdgeInsets { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`automaticInsets`](./automaticinsets.md).
 

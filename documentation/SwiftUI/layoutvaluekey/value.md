@@ -22,7 +22,7 @@ The type of the key’s value.
 associatedtype Value
 ```
 
-#### Discussion
+## Discussion
 
 Swift typically infers this type from your implementation of the [`defaultValue`](./defaultvalue.md) property, so you don’t have to define it explicitly.
 

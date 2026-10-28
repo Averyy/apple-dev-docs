@@ -22,7 +22,7 @@ Iterates over the embedding vectors corresponding to the subword tokens within t
 func enumerateTokenVectors(in range: Range<String.Index>, using block: ([Double], Range<String.Index>) -> Bool)
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to access the individual (subword) token embeddings. You can apply pooling or combination techniques to aggregate these subword vectors into a single representation for a word, phrase, or entire input.
 

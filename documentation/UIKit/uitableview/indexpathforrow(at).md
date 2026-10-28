@@ -23,7 +23,7 @@ func indexPathForRow(at point: CGPoint) -> IndexPath?
 - (NSIndexPath *) indexPathForRowAtPoint:(CGPoint) point;
 ```
 
-#### Return Value
+## Return Value
 
 An index path representing the row and section associated with `point`, or `nil` if the point is out of the bounds of any row.
 

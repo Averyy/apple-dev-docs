@@ -24,7 +24,7 @@ class MPSCNNConvolution
 @interface MPSCNNConvolution : MPSCNNKernel
 ```
 
-#### Overview
+## Overview
 
 The attributes of a convolution operation are described by an [`MPSCNNConvolutionDescriptor`](./mpscnnconvolutiondescriptor.md) object.
 

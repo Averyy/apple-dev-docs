@@ -25,7 +25,7 @@ let NSExtensionItemsAndErrorsKey: String
 extern NSString * const NSExtensionItemsAndErrorsKey;
 ```
 
-#### Discussion
+## Discussion
 
 This key appears in the [`userInfo`](./nserror/userinfo.md) dictionary of the [`NSError`](./nserror.md) object that [`cancelRequest(withError:)`](./nsextensioncontext/cancelrequest%28witherror%29.md) returns.
 

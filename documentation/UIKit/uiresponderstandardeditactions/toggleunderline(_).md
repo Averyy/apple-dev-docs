@@ -23,7 +23,7 @@ optional func toggleUnderline(_ sender: Any?)
 - (void) toggleUnderline:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to apply or remove style information to the currently selected content.
 

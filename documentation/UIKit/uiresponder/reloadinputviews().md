@@ -23,7 +23,7 @@ func reloadInputViews()
 - (void) reloadInputViews;
 ```
 
-#### Discussion
+## Discussion
 
 You can use this method to refresh the custom input view or input accessory view associated with the current object when it’s the first responder. The views are replaced immediately, without animating them into place. If the current object isn’t the first responder, this method has no effect.
 

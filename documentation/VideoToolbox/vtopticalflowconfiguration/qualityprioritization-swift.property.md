@@ -22,7 +22,7 @@ var qualityPrioritization: VTOpticalFlowConfiguration.QualityPrioritization { ge
 @property (nonatomic, readonly) VTOpticalFlowConfigurationQualityPrioritization qualityPrioritization;
 ```
 
-#### Discussion
+## Discussion
 
 See VEFrameRateConversionConfigurationQualityPrioritization for more info.
 

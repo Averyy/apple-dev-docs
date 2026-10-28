@@ -19,7 +19,7 @@ func imageRect(forBounds rect: NSRect) -> NSRect
 - (NSRect) imageRectForBounds:(NSRect) rect;
 ```
 
-#### Return Value
+## Return Value
 
 The rectangle in which the receiver draws its image. This rectangle is slightly offset from the one in `theRect`.
 

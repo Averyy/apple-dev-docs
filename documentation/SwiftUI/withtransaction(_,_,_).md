@@ -22,7 +22,7 @@ Executes a closure with the specified transaction key path and value and returns
 func withTransaction<R, V>(_ keyPath: WritableKeyPath<Transaction, V>, _ value: V, _ body: () throws -> R) rethrows -> R
 ```
 
-#### Return Value
+## Return Value
 
 The result of executing the closure with the specified transaction value.
 

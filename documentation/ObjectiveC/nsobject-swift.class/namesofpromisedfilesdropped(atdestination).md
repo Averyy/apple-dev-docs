@@ -21,11 +21,11 @@ func namesOfPromisedFilesDropped(atDestination dropDestination: URL) -> [String]
 - (NSArray<NSString *> *) namesOfPromisedFilesDroppedAtDestination:(NSURL *) dropDestination;
 ```
 
-#### Return Value
+## Return Value
 
 An array of the names of files (not full paths) that the receiver promises to create at `dropDestination`.
 
-#### Discussion
+## Discussion
 
 This method is invoked when the drop has been accepted by the destination and the destination, in the case of another Cocoa application, invokes the NSDraggingInfo method [`namesOfPromisedFilesDropped(atDestination:)`](../../AppKit/nsdragginginfo/namesofpromisedfilesdropped%28atdestination%29.md). For long operations, you can cache `dropDestination` and defer the creation of the files until the `draggedImage:endedAt:operation:` method to avoid blocking the destination application.
 

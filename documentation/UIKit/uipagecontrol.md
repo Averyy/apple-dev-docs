@@ -29,7 +29,7 @@ class UIPageControl
 - [Attaching gesture recognizers to UIKit controls](./attaching-gesture-recognizers-to-uikit-controls.md)
 - [Choosing a user interface idiom for your Mac app](./choosing-a-user-interface-idiom-for-your-mac-app.md)
 
-#### Overview
+## Overview
 
 For an example of a page control, see the Weather app when it’s configured to display information for more than one location.
 

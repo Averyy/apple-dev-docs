@@ -23,7 +23,7 @@ func synchronizeUpdates()
 - (void) synchronizeUpdates;
 ```
 
-#### Discussion
+## Discussion
 
 This method synchronizes the weights/biases from convolution, fully connected and LSTM layers, and tensor parameters, from device memory to host memory.
 

@@ -22,11 +22,11 @@ optional func webView(_ webView: WKWebView, shouldPreviewElement elementInfo: WK
 - (BOOL) webView:(WKWebView *) webView shouldPreviewElement:(WKPreviewElementInfo *) elementInfo;
 ```
 
-#### Return Value
+## Return Value
 
 Return `NO` to disable previews for the given element.
 
-#### Discussion
+## Discussion
 
 This method is only invoked for elements that have a default preview in WebKit.
 

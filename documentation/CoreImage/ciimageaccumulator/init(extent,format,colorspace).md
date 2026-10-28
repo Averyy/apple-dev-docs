@@ -24,7 +24,7 @@ init?(extent: CGRect, format: CIFormat, colorSpace: CGColorSpace)
 - (instancetype) initWithExtent:(CGRect) extent format:(CIFormat) format colorSpace:(CGColorSpaceRef) colorSpace;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized image accumulator object.
 

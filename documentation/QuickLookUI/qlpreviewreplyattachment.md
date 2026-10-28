@@ -19,7 +19,7 @@ class QLPreviewReplyAttachment
 @interface QLPreviewReplyAttachment : NSObject
 ```
 
-#### Overview
+## Overview
 
 When providing a data-based Quick Look preview with HTML, use [`QLPreviewReplyAttachment`](./qlpreviewreplyattachment.md) to include images, CSS, and other linked content in the HTML of the preview.
 

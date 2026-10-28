@@ -15,7 +15,7 @@ The value corresponding to this key is the maximum value allowed for this parame
 extern CFStringRef const kVTRAWProcessingParameter_MaximumValue;
 ```
 
-#### Discussion
+## Discussion
 
 This parameter is optional and not required for parameters where it is not appropriate (such as Boolean or List types).
 

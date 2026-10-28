@@ -24,7 +24,7 @@ var normalMatrix: GLKMatrix3 { get }
 @property (nonatomic, readonly) GLKMatrix3 normalMatrix;
 ```
 
-#### Discussion
+## Discussion
 
 The normal matrix is derived from the [`modelviewMatrix`](./modelviewmatrix.md) property and is automatically calculated when needed.
 

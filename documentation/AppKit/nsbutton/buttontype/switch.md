@@ -19,7 +19,7 @@ case `switch`
 NSButtonTypeSwitch
 ```
 
-#### Discussion
+## Discussion
 
 A switch button provides the same toggling behavior as a [`NSButton.ButtonType.toggle`](./toggle.md) button. In addition to configuring that behavior, this button type configures [`isBordered`](../isbordered.md) to [`false`](../../../Swift/false.md) and provides a standard checkbox image.
 

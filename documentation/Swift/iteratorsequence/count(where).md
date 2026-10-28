@@ -21,11 +21,11 @@ Returns the number of elements in the sequence that satisfy the given predicate.
 func count<E>(where predicate: (Self.Element) throws(E) -> Bool) throws(E) -> Int where E : Error
 ```
 
-#### Return Value
+## Return Value
 
 The number of elements in the sequence that satisfy the given predicate.
 
-#### Discussion
+## Discussion
 
 You can use this method to count the number of elements that pass a test. The following example finds the number of names that are fewer than five characters long:
 

@@ -16,11 +16,11 @@ Returns the number of rasterization rate maps associated with the drawable.
 size_t cp_drawable_get_rasterization_rate_map_count(cp_drawable_t drawable);
 ```
 
-#### Return Value
+## Return Value
 
 The number of rasterization rate maps available for drawing.
 
-#### Discussion
+## Discussion
 
 Use the returned value as the maximum number of rate maps to retrieve from the [`cp_drawable_get_rasterization_rate_map`](./cp_drawable_get_rasterization_rate_map.md) function.
 

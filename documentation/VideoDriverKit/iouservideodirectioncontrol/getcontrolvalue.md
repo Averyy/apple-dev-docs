@@ -15,7 +15,7 @@ Gets the current value of the control.
 bool GetControlValue();
 ```
 
-#### Discussion
+## Discussion
 
 The object’s work queue synchronizes access to the value.
 

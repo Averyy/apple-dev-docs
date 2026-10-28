@@ -20,7 +20,7 @@ var location: URL? { get }
 @property (nonatomic, retain, readonly, nullable) NSURL * location;
 ```
 
-#### Discussion
+## Discussion
 
 If the location of the media item isn’t available, this property returns [`ITLibMediaItemLocationType.unknown`](../itlibmediaitemlocationtype/unknown.md).
 

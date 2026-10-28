@@ -5,7 +5,7 @@
 
 Groups of beta testers that have access to one or more builds.
 
-#### Overview
+## Overview
 
 A `betaGroups` resource represents the group of testers that have access to builds for testing. Each beta group is associated with a single app and contains one or more builds. Every tester has access to every build in the group.
 

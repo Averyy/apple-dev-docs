@@ -25,7 +25,7 @@ enum CGImageMetadataType
 enum CGImageMetadataType : int32_t;
 ```
 
-#### Overview
+## Overview
 
 Use these constants to identify the type of metadata in a [`CGImageMetadataTag`](./cgimagemetadatatag.md) opaque type. The type tells you how to interpret the value of the metadata tag. When creating a new [`CGImageMetadataTag`](./cgimagemetadatatag.md), specify a type so the system knows how to serialize the data to the XMP format.
 

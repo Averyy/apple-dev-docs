@@ -13,7 +13,7 @@
 const OSSymbol *gIOEthernetDisabledWakeOnLANFilterGroup;
 ```
 
-#### Discussion
+## Discussion
 
 gIOEthernetDisabledWakeOnLANFilterGroup is an OSSymbol object that contains the name of the disabled Ethernet Wake-on-LAN filter group defined by kIOEthernetDisabledWakeOnLANFilterGroup.
 

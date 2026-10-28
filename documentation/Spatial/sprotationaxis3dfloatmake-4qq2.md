@@ -19,11 +19,11 @@
 static SPRotationAxis3DFloat SPRotationAxis3DFloatMake(SPRotationAxis3D axis);
 ```
 
-#### Return Value
+## Return Value
 
 A new rotation axis.
 
-#### Discussion
+## Discussion
 
 Returns a single-precision rotation axis from a double-precision rotation axis.
 

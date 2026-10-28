@@ -19,7 +19,7 @@ Informs Captive Network Support that the application has successfully authentica
 Boolean CNMarkPortalOnline(CFStringRef interfaceName);
 ```
 
-#### Return Value
+## Return Value
 
 `TRUE` if the operation succeeded; otherwise, `FALSE`.
 

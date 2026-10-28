@@ -25,7 +25,7 @@ init?(addressString: String)
 - (instancetype) initWithAddressString:(NSString *) addressString;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized geocoder, or `nil` if the provided `addressString` is empty.
 

@@ -26,11 +26,11 @@ func CFNetServiceMonitorInvalidate(_ monitor: CFNetServiceMonitor)
 extern void CFNetServiceMonitorInvalidate(CFNetServiceMonitorRef monitor);
 ```
 
-#### Discussion
+## Discussion
 
 This function invalidates the specified Network Service monitor so that it cannot be used again. Before you call this function, you should call [`CFNetServiceMonitorStop(_:_:)`](./cfnetservicemonitorstop%28_,_%29.md). If the monitor has not already been stopped, this function stops the monitor for you.
 
-##### Special Considerations
+### Special Considerations
 
 This function is thread safe.
 

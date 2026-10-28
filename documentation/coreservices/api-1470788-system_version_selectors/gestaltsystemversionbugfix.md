@@ -13,7 +13,7 @@
 gestaltSystemVersionBugFix = 'sys3'
 ```
 
-#### Discussion
+## Discussion
 
 The bug fix version number. For example, in *10.4.12* this would be the decimal value 12.
 

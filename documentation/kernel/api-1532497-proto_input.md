@@ -13,11 +13,11 @@
 errno_t proto_input(protocol_family_t protocol, mbuf_t packet);
 ```
 
-#### Return Value
+## Return Value
 
 A errno error on failure. Unless proto_input returns zero, the caller is responsible for freeing the mbuf.
 
-#### Discussion
+## Discussion
 
 Inputs a packet on the specified protocol from the input path.
 

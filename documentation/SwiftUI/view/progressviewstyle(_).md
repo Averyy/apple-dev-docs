@@ -22,7 +22,7 @@ nonisolated
 func progressViewStyle<S>(_ style: S) -> some View where S : ProgressViewStyle
 ```
 
-#### Discussion
+## Discussion
 
 For example, the following code creates a progress view that uses the “circular” style:
 

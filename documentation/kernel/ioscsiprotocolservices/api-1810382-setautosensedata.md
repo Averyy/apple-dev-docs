@@ -13,11 +13,11 @@ bool SetAutoSenseData (
  SCSI_Sense_Data *senseData ) __attribute__ ((deprecated));
 ```
 
-#### Return Value
+## Return Value
 
 True if sense data was successfully copied, otherwise false.
 
-#### Overview
+## Overview
 
 Accessor method to set the autosense data. NOTE: This method is deprecated.
 

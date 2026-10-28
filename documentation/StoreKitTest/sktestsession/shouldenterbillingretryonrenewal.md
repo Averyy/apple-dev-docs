@@ -25,7 +25,7 @@ var shouldEnterBillingRetryOnRenewal: Bool { get set }
 @property (nonatomic, assign) BOOL billingRetryOnRenewalEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `false`.
 

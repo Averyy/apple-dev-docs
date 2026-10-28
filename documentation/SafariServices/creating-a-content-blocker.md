@@ -5,7 +5,7 @@
 
 Create a content blocker for Safari in Xcode.
 
-#### Overview
+## Overview
 
 Content blockers are app extensions that you build using Xcode. They indicate to Safari a set of rules to use to block content in the browser window. Blocking behaviors include hiding elements, blocking loads, and stripping cookies from Safari requests.
 
@@ -17,13 +17,13 @@ When the content blocker launches, it communicates with its containing app throu
 
 Apps tell Safari in advance what kinds of content to block. Because Safari doesn’t have to consult with the app during loading, and because Xcode compiles content blockers into bytecode, this model runs efficiently. Additionally, content blockers have no knowledge of users’ history or the websites they visit.
 
-##### Add the extension target to your containing app
+### Add the extension target to your containing app
 
 Choose File > New > Target and select Content Blocker Extension. Click Next and give your content blocker a name.
 
 ![An Xcode screenshot showing the Content Blocker Extension option selected in the Choose a template for your new target dialog.](https://developer.apple.com/tutorials/images/com.apple.safariservices/media-4047980@2x.png)
 
-##### Add behaviors to your content blocker
+### Add behaviors to your content blocker
 
 In your Xcode project, open the folder with the same title as your content blocker. This folder contains the action request handler and a JSON file, along with a property list file and an entitlements file. Open the `blockerList.json` file.
 
@@ -50,7 +50,7 @@ In the JSON file, write rules to define content-blocking behaviors. Each rule is
 ]
 ```
 
-##### Add triggers to your content blocker
+### Add triggers to your content blocker
 
 A trigger dictionary must include a `url-filter` key, which specifies a pattern to match the URL against. The remaining keys are optional and modify the behavior of the trigger. For example, you can limit the trigger to specific domains or have it not apply when Safari finds a match for a specific domain.
 
@@ -64,7 +64,7 @@ For example, to write a trigger for image and style sheet resources that Safari 
 }
 ```
 
-###### Capture URLs by pattern
+#### Capture URLs by pattern
 
 In `url-filter`, match more than just a specific URL, using regular expressions.
 
@@ -79,7 +79,7 @@ In `url-filter`, match more than just a specific URL, using regular expressions.
 | `*` | Matches the preceding character zero or more times. |
 | `?` | Matches the preceding character zero or one time. |
 
-###### Use trigger fields to define patterns
+#### Use trigger fields to define patterns
 
 There are many valid trigger fields you can use to define patterns.
 
@@ -96,7 +96,7 @@ There are many valid trigger fields you can use to define patterns.
 | `unless-frame-url` | An array of strings to match to the frame’s document URL; acts on any site except URL patterns in the provided list. The values must be lowercase ASCII, or Punycode for non-ASCII. You can’t use this with `if-frame-url`. |
 | `load-context` | An array of strings that specify loading contexts. Valid values are `top-frame` and `child-frame`. |
 
-##### Add actions to your content blocker
+### Add actions to your content blocker
 
 When a trigger matches a resource, the browser queues the associated action for execution. Safari evaluates all the triggers, and executes the actions in order. When a domain matches a trigger, Safari skips all rules after the triggered rule that specify the same action.
 
@@ -113,7 +113,7 @@ For example, you can specify the following type and selector:
 }
 ```
 
-###### Select values for the type field
+#### Select values for the type field
 
 | Syntax | Description |
 | --- | --- |

@@ -20,11 +20,11 @@ func supportedColorSpaces() -> [NSNumber]!
 - (NSArray<NSNumber *> *) supportedColorSpaces;
 ```
 
-#### Return Value
+## Return Value
 
 An array of supported color spaces from the [`eCEColorSpace`](../ececolorspace.md) enumeration.
 
-#### Discussion
+## Discussion
 
 If there is no implementation for this method, the Compressor app assumes [`eCEColorSpaceDeviceRGB`](../ececolorspacedevicergb.md), [`eCEColorSpace601NTSC`](../ececolorspace601ntsc.md), and [`eCEColorSpace709`](../ececolorspace709.md) for the supported color spaces.
 

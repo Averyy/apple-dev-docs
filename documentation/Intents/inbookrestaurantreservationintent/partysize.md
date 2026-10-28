@@ -30,7 +30,7 @@ var partySize: Int { get set }
 @property (atomic) NSUInteger partySize;
 ```
 
-#### Discussion
+## Discussion
 
 The party size includes the person who initiated the reservation and all additional party members.
 

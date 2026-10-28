@@ -25,7 +25,7 @@ var allObjects: [Any] { get }
 @property (copy, readonly) NSArray<id> * allObjects;
 ```
 
-#### Discussion
+## Discussion
 
 The order of the objects in the array is undefined.
 

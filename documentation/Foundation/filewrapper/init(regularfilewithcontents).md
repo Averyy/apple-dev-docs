@@ -25,11 +25,11 @@ init(regularFileWithContents contents: Data)
 - (instancetype) initRegularFileWithContents:(NSData *) contents;
 ```
 
-#### Return Value
+## Return Value
 
 Initialized regular-file file wrapper containing `contents`.
 
-#### Discussion
+## Discussion
 
 After initialization, the file wrapper is not associated with a file-system node until you save it using [`write(to:options:originalContentsURL:)`](./write%28to,options,originalcontentsurl%29.md).
 

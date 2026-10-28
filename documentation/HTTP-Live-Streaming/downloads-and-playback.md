@@ -5,11 +5,11 @@
 
 Handle Apple Podcasts’ download and playback behavior, including hybrid audio/video streaming, non-video modes, and user-agent identification.
 
-#### Overview
+## Overview
 
 Apple Podcasts supports a flexible download model that balances cellular data usage with the best available playback experience.
 
-#### Deliver audio-only downloads to followers by default
+## Deliver audio-only downloads to followers by default
 
 When followers of a show have auto-downloads enabled, Apple Podcasts delivers audio-only downloads by default. This preserves current behavior and avoids unexpected increases in data usage.
 
@@ -21,7 +21,7 @@ Apple Podcasts downloads audio from the media playlist and from each interstitia
 
 Because of this, keep your main media and interstitial media URLs resolvable and replayable at a later date. If a URL fails to resolve later, playback errors occur.
 
-#### Stream video when only audio is on device
+## Stream video when only audio is on device
 
 When a user requests video playback but only has an audio version downloaded on device, Apple Podcasts fetches and streams the video version over the network.
 
@@ -30,7 +30,7 @@ When a user requests video playback but only has an audio version downloaded on 
 
 To support this hybrid playback model, keep the HLS multivariant playlist and all associated interstitials accessible and consistent when Apple Podcasts fetches the video version. A mismatch between the audio download state and the HLS manifest may result in playback issues.
 
-#### Continue audio playback in non-video contexts
+## Continue audio playback in non-video contexts
 
 When a user is streaming a video episode and transitions to a non-video context — such as locking the device or connecting to CarPlay — the player automatically adjusts:
 
@@ -39,7 +39,7 @@ When a user is streaming a video episode and transitions to a non-video context 
 
 This behavior optimizes bandwidth usage and ensures uninterrupted audio playback across all listening environments.
 
-#### Recognize Apple Podcasts user-agent strings
+## Recognize Apple Podcasts user-agent strings
 
 Apple Podcasts identifies itself to hosting providers by sending a user-agent header with every media request. Hosting providers should expect to see two distinct user-agent formats:
 

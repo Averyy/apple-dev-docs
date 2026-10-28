@@ -24,11 +24,11 @@ func CFHTTPMessageCreateEmpty(_ alloc: CFAllocator?, _ isRequest: Bool) -> Unman
 extern CFHTTPMessageRefCFHTTPMessageCreateEmpty(CFAllocatorRef alloc, Boolean isRequest);
 ```
 
-#### Return Value
+## Return Value
 
 A new `CFHTTPMessage` object or `NULL` if there was a problem creating the object. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
-#### Discussion
+## Discussion
 
 Call [`CFHTTPMessageAppendBytes(_:_:_:)`](./cfhttpmessageappendbytes%28_,_,_%29.md) to store an incoming, serialized HTTP request or response message in the empty message object.
 

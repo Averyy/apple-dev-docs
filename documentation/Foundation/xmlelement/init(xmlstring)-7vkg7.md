@@ -20,11 +20,11 @@ init(xmlString string: String) throws
 - (instancetype) initWithXMLString:(NSString *) string error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized `NSXMLElement` object or `nil` if initialization did not succeed.
 
-#### Discussion
+## Discussion
 
 > **Handling Errors in Swift**:  In Swift, this API is imported as an initializer and is marked with the `throws` keyword to indicate that it throws an error in cases of failure.
 >

@@ -15,11 +15,11 @@ Request body for creating a new ad account under an organization.
 object AdAccountCreate
 ```
 
-#### Discussion
+## Discussion
 
 The `AdAccountCreate` object is the request body for [`Create Ad Accounts`](./post-ad-accounts.md).
 
-##### Example
+### Example
 
 ```json
 {

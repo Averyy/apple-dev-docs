@@ -24,7 +24,7 @@ class MPSGraphPooling4DOpDescriptor
 @interface MPSGraphPooling4DOpDescriptor : MPSGraphObject
 ```
 
-#### Overview
+## Overview
 
 Use this descriptor with the following methods:
 

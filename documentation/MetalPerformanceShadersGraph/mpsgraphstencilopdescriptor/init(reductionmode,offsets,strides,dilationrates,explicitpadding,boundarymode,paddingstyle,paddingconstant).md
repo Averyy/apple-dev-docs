@@ -24,7 +24,7 @@ convenience init?(reductionMode: MPSGraphReductionMode, offsets: [NSNumber], str
 + (instancetype) descriptorWithReductionMode:(MPSGraphReductionMode) reductionMode offsets:(MPSShape *) offsets strides:(MPSShape *) strides dilationRates:(MPSShape *) dilationRates explicitPadding:(MPSShape *) explicitPadding boundaryMode:(MPSGraphPaddingMode) boundaryMode paddingStyle:(MPSGraphPaddingStyle) paddingStyle paddingConstant:(float) paddingConstant;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSGraphStencilOpDescriptor object
 

@@ -25,7 +25,7 @@ class var lossValue: MLMetricKey { get }
 @property (class, nonatomic, readonly) MLMetricKey * lossValue;
 ```
 
-#### Discussion
+## Discussion
 
 Use this key to fetch the loss value in the [`metrics`](../mlupdatecontext/metrics.md) dictionary.
 

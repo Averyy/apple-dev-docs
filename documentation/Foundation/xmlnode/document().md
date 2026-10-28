@@ -20,7 +20,7 @@ class func document() -> Any
 + (id) document;
 ```
 
-#### Return Value
+## Return Value
 
 An empty document node—that is, an [`XMLDocument`](../xmldocument.md) instance without a root element or XML-declaration information (version, encoding, standalone flag). Returns `nil` if the object couldn’t be created.
 

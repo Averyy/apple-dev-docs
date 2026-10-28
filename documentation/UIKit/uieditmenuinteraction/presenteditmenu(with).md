@@ -22,7 +22,7 @@ func presentEditMenu(with configuration: UIEditMenuConfiguration)
 - (void) presentEditMenuWithConfiguration:(UIEditMenuConfiguration *) configuration;
 ```
 
-#### Discussion
+## Discussion
 
 You use this method to display the edit menu. The method calls [`editMenuInteraction(_:menuFor:suggestedActions:)`](../uieditmenuinteractiondelegate/editmenuinteraction%28_,menufor,suggestedactions%29.md) on the interaction object’s delegate and updates the UI with the menu the delegate returns. This method dismisses any active menus before presenting the new menu.
 

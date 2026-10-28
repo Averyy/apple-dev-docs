@@ -24,7 +24,7 @@ var allocator: MTKMeshBufferAllocator { get }
 @property (nonatomic, readonly, nonnull) MTKMeshBufferAllocator * allocator;
 ```
 
-#### Discussion
+## Discussion
 
 The allocator uses Model I/O for copy and re-layout operations, such as when a new vertex descriptor is applied to an existing vertex buffer.
 

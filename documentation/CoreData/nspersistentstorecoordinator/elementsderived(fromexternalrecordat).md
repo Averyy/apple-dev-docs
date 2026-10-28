@@ -21,11 +21,11 @@ class func elementsDerived(fromExternalRecordAt fileURL: URL) -> [AnyHashable : 
 + (NSDictionary *) elementsDerivedFromExternalRecordURL:(NSURL *) fileURL;
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary containing the parsed elements derived from the Spotlight support file specified by `fileURL`.
 
-#### Discussion
+## Discussion
 
 Dictionary keys and the corresponding values are described in [Spotlight record keys](../spotlight-record-keys.md).
 

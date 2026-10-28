@@ -21,7 +21,7 @@ The type that represents the style of the formatted result.
 enum Style
 ```
 
-#### Overview
+## Overview
 
 The style type describes a length of the string representation of the name. The available values are [`PersonNameComponents.FormatStyle.Style.long`](./style-swift.enum/long.md), [`PersonNameComponents.FormatStyle.Style.medium`](./style-swift.enum/medium.md), [`PersonNameComponents.FormatStyle.Style.short`](./style-swift.enum/short.md), and [`PersonNameComponents.FormatStyle.Style.abbreviated`](./style-swift.enum/abbreviated.md).
 

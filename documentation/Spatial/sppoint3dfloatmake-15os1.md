@@ -19,11 +19,11 @@
 static SPPoint3DFloat SPPoint3DFloatMake(SPPoint3D point);
 ```
 
-#### Return Value
+## Return Value
 
 A new point.
 
-#### Discussion
+## Discussion
 
 Returns a single-precision point from a double-precision point.
 

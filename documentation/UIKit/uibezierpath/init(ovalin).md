@@ -24,11 +24,11 @@ convenience init(ovalIn rect: CGRect)
 + (instancetype) bezierPathWithOvalInRect:(CGRect) rect;
 ```
 
-#### Return Value
+## Return Value
 
 A new path object with the oval path.
 
-#### Discussion
+## Discussion
 
 This method creates a closed subpath that approximates the oval using a sequence of Bézier curves. The path is created in a clockwise direction (relative to the default coordinate system). If the `rect` parameter specifies a square, the inscribed path is a circle.
 

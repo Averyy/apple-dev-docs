@@ -21,7 +21,7 @@ Reads and writes the value at the given index as a Boolean value.
 subscript(index: Int) -> Bool? { get set }
 ```
 
-#### Return Value
+## Return Value
 
 The value at the specified index in the array, otherwise [`nil`](../../ObjectiveC/nil-227m0.md).
 

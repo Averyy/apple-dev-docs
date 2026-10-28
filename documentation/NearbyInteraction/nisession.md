@@ -28,7 +28,7 @@ class NISession
 - [Extending advanced direction finding and ranging](./extending-advanced-direction-finding-and-ranging.md)
 - [Initiating and maintaining a session](./initiating-and-maintaining-a-session.md)
 
-#### Overview
+## Overview
 
 This class represents the central mechanism to interact with nearby objects, for example, a peer Apple device or third-party accessory. After creating an [`NISession`](./nisession.md) for a nearby object, the app interacts with the object by receiving [`NISessionDelegate`](./nisessiondelegate.md) callbacks.
 

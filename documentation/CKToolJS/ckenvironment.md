@@ -18,7 +18,7 @@ interface CKEnvironment {
 };
 ```
 
-#### Overview
+## Overview
 
 During initial development of your app, you create your schema and add records for testing in the development environment. Apps sold in the App Store can only access the production environment. Before you publish your app, you must deploy the development schema to the production environment to copy over its record types, fields, and indexes.
 

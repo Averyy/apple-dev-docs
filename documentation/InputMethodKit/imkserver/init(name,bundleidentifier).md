@@ -19,11 +19,11 @@ init!(name: String!, bundleIdentifier: String!)
 - (id) initWithName:(NSString *) name bundleIdentifier:(NSString *) bundleIdentifier;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized server object.
 
-#### Discussion
+## Discussion
 
 This method examines the `Info.plist` file  for the entries shown in the table below. The class names are loaded, but no classes are instantiated. Additionally, an [`NSConnection`](../../Foundation/nsconnection.md) object is allocated and registered using the input method connection name supplied in the `Info.plist` file.
 

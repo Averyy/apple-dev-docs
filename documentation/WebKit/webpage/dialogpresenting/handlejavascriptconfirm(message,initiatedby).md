@@ -21,7 +21,7 @@ A JavaScript `confirm()` function has been invoked.
 func handleJavaScriptConfirm(message: String, initiatedBy frame: WebPage.FrameInfo) async -> WebPage.JavaScriptConfirmResult
 ```
 
-#### Return Value
+## Return Value
 
 The result of handling the invocation.
 

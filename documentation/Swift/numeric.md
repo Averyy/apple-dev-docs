@@ -21,7 +21,7 @@ A type with values that support multiplication.
 protocol Numeric : AdditiveArithmetic, ExpressibleByIntegerLiteral
 ```
 
-#### Overview
+## Overview
 
 The `Numeric` protocol provides a suitable basis for arithmetic on scalar values, such as integers and floating-point numbers. You can write generic methods that operate on any numeric type in the standard library by using the `Numeric` protocol as a generic constraint.
 
@@ -47,7 +47,7 @@ let doubledIntegers = integers.doublingAll()
 // doubledIntegers == [0, 2, 4, 6, 8, 10, 12, 14]
 ```
 
-### Conforming to the Numeric Protocol
+## Conforming to the Numeric Protocol
 
 To add `Numeric` protocol conformance to your own custom type, implement the required initializer and operators, and provide a `magnitude` property using a type that can represent the magnitude of any value of your custom type.
 

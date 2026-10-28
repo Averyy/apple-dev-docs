@@ -22,7 +22,7 @@ func evaluateURL(_ url: URL, mainFrameURL: URL, isMainFrame: Bool) async -> (Boo
 - (void) evaluateURL:(NSURL *) url mainFrameURL:(NSURL *) mainFrameURL isMainFrame:(BOOL) isMainFrame completionHandler:(void (^)(BOOL shouldBlock, NSData *blockPageRepresentation)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Evaluates whether a URL should be blocked and if yes, provides a response body representing the HTML of the blocking content that will be displayed in either the blocked main document or blocked subframe.
 

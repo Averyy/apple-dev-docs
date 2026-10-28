@@ -29,13 +29,13 @@ enum SecretsSpecifier<KeyType, ValueType> where KeyType : Hashable, KeyType : Se
 - [Adopting best practices](./best-practices.md)
 - [Handling secrets correctly](./handling-secrets-correctly.md)
 
-#### Overview
+## Overview
 
 Configuration providers use secrets specifiers to determine which values should be marked as sensitive and protected from accidental disclosure in logs, debug output, or access reports. Secret values are handled specially by [`AccessReporter`](./accessreporter.md) instances and other components that process configuration data.
 
-#### Usage patterns
+## Usage patterns
 
-##### Mark all values as secret
+### Mark all values as secret
 
 Use this for providers that exclusively handle sensitive data:
 
@@ -46,7 +46,7 @@ let provider = InMemoryProvider(
 )
 ```
 
-##### Mark specific keys as secret
+### Mark specific keys as secret
 
 Use this when you know which specific keys contain sensitive information:
 
@@ -58,7 +58,7 @@ let provider = EnvironmentVariablesProvider(
 )
 ```
 
-##### Dynamic secret detection
+### Dynamic secret detection
 
 Use this for complex logic that determines secrecy based on key patterns or values:
 
@@ -75,7 +75,7 @@ let provider = FileProvider<JSONSnapshot>(
 )
 ```
 
-##### No secret values
+### No secret values
 
 Use this for providers that handle only non-sensitive configuration:
 

@@ -5,11 +5,11 @@
 
 Use developer resources to investigate and resolve common problems with Safari web extensions.
 
-#### Overview
+## Overview
 
 When you experience issues with your Safari web extension, choose the right developer tool or resource to troubleshoot and resolve the issue, based on the type of issue you experience.
 
-##### Install and enable the extension in Safari
+### Install and enable the extension in Safari
 
 If you’re not able to see your extension running in Safari when you expect, try these steps to install and enable your extension.
 
@@ -37,7 +37,7 @@ pluginkit -mAvvv -p com.apple.Safari.web-extension
 
 If your extension is installed and visible to Safari, the command lists information about it. If it isn’t visible, recheck the other steps above.
 
-##### Enable Safari’s Develop menu
+### Enable Safari’s Develop menu
 
 Use Safari’s macOS developer tools to gain insight into your extension and debug issues. In Safari, choose Safari > Settings, click Advanced, and then select the “Show Develop menu in menu bar” option at the bottom. Safari adds a Develop menu item with a number of useful inspectors and [web development tools](https://developer.apple.com/safari/tools/).
 
@@ -45,7 +45,7 @@ After you enable the Develop menu, Control-click any element and select Inspect 
 
 To use Safari’s Web Inspector for iOS, first enable the Web Inspector on your device. Open the Settings app, then choose Safari > Advanced. Find the Web Inspector item, then tap the switch to enable it. Attach your device to your computer with a cable, and access your device from the Develop menu in Safari on your computer.
 
-##### Debug your content and background scripts
+### Debug your content and background scripts
 
 Safari’s developer tools include a debugger that you can use to debug scripts in your Safari web extension.
 
@@ -57,7 +57,7 @@ To debug background scripts in macOS, choose Develop > Web Extension Background 
 
 To debug your extension’s pop-up in macOS, click the button for your extension in the Safari toolbar to display the pop-up. Control-click the pop-up and select Inspect Element to display the Web Inspector for the pop-up. In iOS, connect the device to a Mac. In Safari on the Mac, choose Develop > Device, and then select the item containing your extension name, “Extension Popup Page,” and the filename of your pop-up’s HTML.
 
-##### Log messages to the system console
+### Log messages to the system console
 
 If you’re having issues messaging between your native app and your web extension in macOS, log messages to the system console to perform basic debugging. See [Diagnosing and resolving bugs in your running app](../Xcode/diagnosing-and-resolving-bugs-in-your-running-app.md) to use Xcode’s debugger to inspect your native app when you need more comprehensive debugging tools.
 
@@ -65,7 +65,7 @@ In the native part of the macOS or iOS app or extension, make calls to `NSLog` (
 
 In Console.app, filter for other messages using the name of your app extension. For example, if the system terminates your app extension because of an error, it sends a message to the console and generates a crash log.
 
-##### Check permissions and compatibility
+### Check permissions and compatibility
 
 When your web extension works on one webpage, but doesn’t work on another, make sure your website access permissions and allowed domain patterns are correct. For more information, see Mozilla’s match pattern documentation at [Match patterns in extension manifests](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Match_patterns).
 

@@ -21,7 +21,7 @@ Posted when objects in a main queue context change (inserted, updated, deleted, 
 struct ObjectsDidChangeMessage
 ```
 
-#### Overview
+## Overview
 
 Only use this message type for contexts with `NSMainQueueConcurrencyType`.
 

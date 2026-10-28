@@ -17,7 +17,7 @@ Sets whether to scale different-sized image representations to fit the image’s
 - (void) setScalesWhenResized:(BOOL) flag;
 ```
 
-#### Discussion
+## Discussion
 
 Most images (especially those loaded from files and URLs) contain only a single image representation whose size is the same as the receiver. It is possible to add image representations using the [`addRepresentation(_:)`](./addrepresentation%28_%29.md) or [`addRepresentations(_:)`](./addrepresentations%28_%29.md) methods but doing so is rarely necessary because modern hardware is powerful enough to resize and scale images quickly. The only reason to consider creating new representations is if each representations contains a customized version of the image at a specific size. (TIFF images may also contain a thumbnail version of an image, which is stored using a separate image representation.) If you pass [`true`](../../Swift/true.md) in the `flag` parameter, and subsequently assign a new value to the [`size`](./size.md) property, all such image representations would be scaled to the same size. Scaling of bitmap images usually results in the interpolation of the bitmap data.
 

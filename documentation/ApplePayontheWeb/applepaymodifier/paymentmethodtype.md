@@ -16,7 +16,7 @@ The type of card the customer uses to complete the transaction.
 ApplePayPaymentMethodType paymentMethodType;
 ```
 
-#### Discussion
+## Discussion
 
 This property in the [`ApplePayModifier`](../applepaymodifier.md) dictionary indicates the type of payment card that the [`ApplePayModifier`](../applepaymodifier.md) applies to: `"credit"`, `"debit"`, `"prepaid"`, or `"store"`. To create a modifier that works with all payment types, don’t provide a value for the [`paymentMethodType`](./paymentmethodtype.md).
 

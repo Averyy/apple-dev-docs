@@ -30,11 +30,11 @@ convenience init(imageNamed name: String)
 - [About Texture Atlases](../about-texture-atlases.md)
 - [Loading and Using Textures](../loading-and-using-textures.md)
 
-#### Return Value
+## Return Value
 
 A new texture object.
 
-#### Discussion
+## Discussion
 
 The new texture object is initialized with the name of the image file and then control returns immediately to your game. Sprite Kit loads and prepares the texture data when it is needed by your game.
 

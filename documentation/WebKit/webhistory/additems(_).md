@@ -19,7 +19,7 @@ func addItems(_ newItems: [Any]!)
 - (void) addItems:(NSArray *) newItems;
 ```
 
-#### Discussion
+## Discussion
 
 When successful, this method posts a notification ([`WebHistoryItemsAddedNotification`](../webhistoryitemsaddednotification.md)).
 

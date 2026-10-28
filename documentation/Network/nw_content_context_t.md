@@ -25,7 +25,7 @@ typealias nw_content_context_t = any OS_nw_content_context
 typedef NSObject<OS_nw_content_context> * nw_content_context_t;
 ```
 
-#### Discussion
+## Discussion
 
 For sending, you should use `NW_CONNECTION_DEFAULT_MESSAGE_CONTEXT` unless there is a reason to override some values.
 

@@ -24,11 +24,11 @@ func SSLGetPeerDomainNameLength(_ context: SSLContext, _ peerNameLen: UnsafeMuta
 OSStatus SSLGetPeerDomainNameLength(SSLContextRef context, size_t *peerNameLen);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Secure Transport Result Codes](./secure-transport-result-codes.md).
 
-#### Discussion
+## Discussion
 
 If you previously called the [`SSLSetPeerDomainName(_:_:_:)`](./sslsetpeerdomainname%28_,_,_%29.md) function to specify a fully qualified domain name for the peer certificate, you can use the [`SSLGetPeerDomainName(_:_:_:)`](./sslgetpeerdomainname%28_,_,_%29.md) function to retrieve the peer domain name. Before doing so, you must call the [`SSLGetPeerDomainNameLength(_:_:)`](./sslgetpeerdomainnamelength%28_,_%29.md) function to retrieve the buffer size needed for the domain name.
 

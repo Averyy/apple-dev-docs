@@ -21,7 +21,7 @@ init(identifier: String, titleVariants: [String]?, image: UIImage?, backgroundIm
 - (instancetype) initWithIdentifier:(NSString *) identifier titleVariants:(NSArray<NSString *> *) titleVariants image:(UIImage *) image backgroundImage:(UIImage *) backgroundImage repeats:(BOOL) repeats;
 ```
 
-#### Discussion
+## Discussion
 
 When providing an image, your app should provide a @c UIImage that is display-ready. If necessary for the image, provide light and dark styles by using an asset from your asset catalog, prepared with light and dark styles or by using @c UIImageAsset to combine two @c UIImage instances into a single image with both styles.
 

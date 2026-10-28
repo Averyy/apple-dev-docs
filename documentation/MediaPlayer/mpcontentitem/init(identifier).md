@@ -24,11 +24,11 @@ init(identifier: String)
 - (instancetype) initWithIdentifier:(NSString *) identifier;
 ```
 
-#### Return Value
+## Return Value
 
 The created `MPContentItem` object.
 
-#### Discussion
+## Discussion
 
 Each media item identifier must be unique. The use of nonunique identifiers can prevent media items from updating properly. Create a new identifier when creating an `MPContentItem` object.
 

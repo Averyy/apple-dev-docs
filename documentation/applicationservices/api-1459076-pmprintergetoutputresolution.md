@@ -19,11 +19,11 @@ func PMPrinterGetOutputResolution(_ printer: PMPrinter, _ printSettings: PMPrint
 OSStatus PMPrinterGetOutputResolution(PMPrinter printer, PMPrintSettings printSettings, PMResolution *resolutionP);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. If the resolution cannot be reliably determined, this function returns an error.
 
-#### Discussion
+## Discussion
 
 Some printers allow programmatic control of their hardware output resolution on a print job basis. The hardware resolution is determined by the combination of printer and print settings used for the print job. This function returns the best guess as to what printer resolution setting will be used for the destination print job.
 

@@ -19,7 +19,7 @@ var rowHeight: CGFloat { get set }
 @property CGFloat rowHeight;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property must be greater than `0`. The default value of this property is `17.0`. Any fractional value will be forced to an integral value for drawing. For variable row height browsers (ones whose delegates implement [`browser(_:heightOfRow:inColumn:)`](../nsbrowserdelegate/browser%28_,heightofrow,incolumn%29.md)), the row height will be used to draw alternating rows past the last row in each browser column.
 

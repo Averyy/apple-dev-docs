@@ -21,11 +21,11 @@ func collectionView(_ collectionView: NSCollectionView, itemForRepresentedObject
 - (NSCollectionViewItem *) collectionView:(NSCollectionView *) collectionView itemForRepresentedObjectAtIndexPath:(NSIndexPath *) indexPath;
 ```
 
-#### Return Value
+## Return Value
 
 A configured item object. You must not return `nil` from this method.
 
-#### Discussion
+## Discussion
 
 All data source objects must implement this method. Your implementation is responsible for creating, configuring, and returning the appropriate item object based on the specified index path. You do this by calling the [`makeItem(withIdentifier:for:)`](../nscollectionview/makeitem%28withidentifier,for%29.md) method of the collection view to retrieve an empty item object of the appropriate type. After receiving the item object, update its properties with the data from your app’s data structures and return it.
 

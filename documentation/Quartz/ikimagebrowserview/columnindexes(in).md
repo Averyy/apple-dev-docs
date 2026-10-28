@@ -19,7 +19,7 @@ func columnIndexes(in rect: NSRect) -> IndexSet!
 - (NSIndexSet *) columnIndexesInRect:(NSRect) rect;
 ```
 
-#### Return Value
+## Return Value
 
 An index set containing the cell indexes.
 

@@ -15,7 +15,7 @@ Returns a memory descriptor for the buffer pool’s contents.
 virtual kern_return_t CopyMemoryDescriptor(IOMemoryDescriptor **memory);
 ```
 
-#### Return Value
+## Return Value
 
 `kIOReturnSuccess` on success, or another value if an error occurred.
 

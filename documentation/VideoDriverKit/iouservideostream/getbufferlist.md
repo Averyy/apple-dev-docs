@@ -15,7 +15,7 @@ Gets an array containing all the buffers in the video stream.
 OSSharedPtr<OSArray> GetBufferList();
 ```
 
-#### Return Value
+## Return Value
 
 All the buffers in the stream, in order of their buffer identifier.
 

@@ -20,7 +20,7 @@ The first node in a tree of animations.
 var root: any BlendTreeNode { get set }
 ```
 
-#### Discussion
+## Discussion
 
 This property defines the node that represents the root of a blend tree. If you assign this property a [`BlendTreeBlendNode`](../blendtreeblendnode.md) instance, the root branches for every member you add to the instance’s [`sources`](../blendtreeblendnode/sources.md) property.
 

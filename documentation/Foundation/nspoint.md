@@ -20,7 +20,7 @@ typealias NSPoint = CGPoint
 typedef CGPoint NSPoint;
 ```
 
-#### Discussion
+## Discussion
 
 Prior to OS X v10.5 the coordinates were represented by `float` values rather than `CGFloat` values.
 

@@ -16,7 +16,7 @@ The data format version provided by the source application.
 let sourceVersion: String
 ```
 
-#### Discussion
+## Discussion
 
 Use this value to distinguish between potentially incompatible versions of the app’s data.
 

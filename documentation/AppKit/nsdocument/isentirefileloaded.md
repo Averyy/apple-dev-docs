@@ -20,11 +20,11 @@ var isEntireFileLoaded: Bool { get }
 @property (readonly, getter=isEntireFileLoaded) BOOL entireFileLoaded;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the document’s entire file is loaded into memory; otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`true`](../../Swift/true.md), which signifies that the entire file is loaded into memory. You can override this property to return [`false`](../../Swift/false.md) if additional data needs to be read from the file. `NSDocument` may use this value to do things like prevent volume ejection or warn the user when a partially loaded file disappears from the file system.
 

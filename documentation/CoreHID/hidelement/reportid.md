@@ -15,7 +15,7 @@ The report ID for the report that contains this element.
 var reportID: HIDReportID?
 ```
 
-#### Discussion
+## Discussion
 
 This may not be populated if the descriptor contains only one report.
 

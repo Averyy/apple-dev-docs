@@ -19,7 +19,7 @@ var segmentLength: UInt64 { get }
 @property (readonly) uint64_t segmentLength;
 ```
 
-#### Discussion
+## Discussion
 
 Ensure this value is a multiple of the corresponding resource’s [`blockSize`](../fsblockdeviceresource/blocksize.md).
 

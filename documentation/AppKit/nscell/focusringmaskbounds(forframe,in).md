@@ -19,11 +19,11 @@ func focusRingMaskBounds(forFrame cellFrame: NSRect, in controlView: NSView) -> 
 - (NSRect) focusRingMaskBoundsForFrame:(NSRect) cellFrame inView:(NSView *) controlView;
 ```
 
-#### Return Value
+## Return Value
 
 Returns a rectangle encompassing the focus ring bounds in the `controlView` coordinate space.
 
-#### Discussion
+## Discussion
 
 Implemented by `NSCell` subclasses to allow the cell to provide the rectangular bounds of the focus ring mask for the cell.
 

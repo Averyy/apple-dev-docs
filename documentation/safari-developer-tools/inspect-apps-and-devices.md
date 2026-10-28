@@ -5,7 +5,7 @@
 
 Discover all inspectable web content in Safari and other apps on your Mac and on connected devices.
 
-#### Overview
+## Overview
 
 The **Inspect Apps and Devices** menu item from the **Develop** menu opens the **Apps and Devices Inspection** window which shows all inspectable web content in Safari, as well as web content used by other applications on your Mac, on running simulators, and on connected devices that are configured for inspection.
 
@@ -13,7 +13,7 @@ You can use this window to observe web content as it becomes available for inspe
 
 ![Apps and Devices Inspection window open, with a MacBook Pro device selected, showing Safari and Safari Technology Preview, each with an inspectable webpage, and a third-party macOS app with an inspectable JSContext.](https://developer.apple.com/tutorials/images/com.apple.safari.developer-tools/AppsAndDevicesInspection@2x.png)
 
-#### Using the Apps and Devices Inspection window
+## Using the Apps and Devices Inspection window
 
 The **Apps and Devices Inspection** window sidebar shows your Mac, any connected and paired devices, such as iPhone, iPad or Apple Vision Pro, and any simulators that are currently running. Each inspectable device and simulator shows its name and OS version to make it easier to find the specific device you want to inspect.
 
@@ -21,7 +21,7 @@ Select a device to see inspectable web content available on that device grouped 
 
 The list of apps for a device updates automatically to show any app that is currently running inspectable web content (see [Enabling inspecting content in your apps](./enabling-inspecting-content-in-your-apps.md)).
 
-#### Automatic Inspection of JSContexts
+## Automatic Inspection of JSContexts
 
 You can configure Web Inspector to automatically open for new JSContexts created in your app. Identify your app in the list of apps currently running inspectable web content and click the three-dots menu to reveal the automatic inspection settings:
 
@@ -30,7 +30,7 @@ You can configure Web Inspector to automatically open for new JSContexts created
 
 If the `JSContext` you want to inspect automatically is already running, you will need to relaunch your app for automatic inspection settings to trigger the desired action.
 
-#### Automatic Inspection of Service Workers
+## Automatic Inspection of Service Workers
 
 Service workers can be short-lived or perform their actions before you can get to manually inspect them via the Develop menu, for example, when handling a push message for a Home Screen web app.
 

@@ -25,7 +25,7 @@ typealias SCNParticleModifierBlock = (UnsafeMutablePointer<UnsafeMutableRawPoint
 typedef void (^)(void **, unsigned long *, long, long, float) SCNParticleModifierBlock;
 ```
 
-#### Discussion
+## Discussion
 
 The block takes the following parameters:
 

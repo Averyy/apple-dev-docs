@@ -19,7 +19,7 @@ Placement for commands that present documentation and helpful information to peo
 static let help: CommandGroupPlacement
 ```
 
-#### Discussion
+## Discussion
 
 By default, this group includes the following command in macOS:
 

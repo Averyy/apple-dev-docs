@@ -12,7 +12,7 @@ A key to retrieve the type of the asset.
 extern NSString * const ALAssetPropertyType;
 ```
 
-#### Discussion
+## Discussion
 
 Possible values are given in [Asset Types](./asset-types.md).
 

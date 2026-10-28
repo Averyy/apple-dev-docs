@@ -24,11 +24,11 @@ class func morphologyMaximum() -> any CIFilter & CIMorphologyMaximum
 + (CIFilter<CIMorphologyMaximum> *) morphologyMaximumFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The blurred image.
 
-#### Discussion
+## Discussion
 
 This method applies the morphology maximum filter to an image. The effect targets a circular section of the image, calculating the median color values to find colors that make up more than half the working area. Using this calculation, the effect enlarges the pixels with contrasting colors to take up more of the working area. The effect is then repeated throughout the image.
 

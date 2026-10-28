@@ -29,7 +29,7 @@ var anchorPoint: CGPoint { get set }
 
 - [Adding a Video to a Scene](../adding-a-video-to-a-scene.md)
 
-#### Discussion
+## Discussion
 
 You specify the anchor point using the unit coordinate space. The default value is `(0.5,0.5)`, which means that the video is centered on the node’s position.
 

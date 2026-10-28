@@ -25,7 +25,7 @@ func NSSwapLittleLongLongToHost(_ x: UInt64) -> UInt64
 static unsigned long long NSSwapLittleLongLongToHost(unsigned long long x);
 ```
 
-#### Discussion
+## Discussion
 
 Converts the little-endian formatted value in `x` to the current endian format and returns the resulting value. If it is necessary to swap the bytes, this function calls [`NSSwapLongLong(_:)`](./nsswaplonglong%28_%29.md) to perform the swap.
 

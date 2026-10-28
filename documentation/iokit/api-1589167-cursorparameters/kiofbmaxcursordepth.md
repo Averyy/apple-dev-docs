@@ -14,7 +14,7 @@
 kIOFBMaxCursorDepth = 32
 ```
 
-#### Discussion
+## Discussion
 
 The maximum cursor pixel depth.
 

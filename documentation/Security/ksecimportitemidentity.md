@@ -29,7 +29,7 @@ extern CFStringRef const kSecImportItemIdentity;
 
 - [Importing an Identity](./importing-an-identity.md)
 
-#### Discussion
+## Discussion
 
 The corresponding value is of type `SecIdentityRef` and represents one identity contained in the PKCS #12 blob.
 

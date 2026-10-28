@@ -27,11 +27,11 @@ func CTFontManagerUnregisterGraphicsFont(_ font: CGFont, _ error: UnsafeMutableP
 extern bool CTFontManagerUnregisterGraphicsFont(CGFontRef font, CFErrorRef*error);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if unregistration of the font was successful, otherwise `false`.
 
-#### Discussion
+## Discussion
 
 Unregistered fonts are no longer discoverable through font descriptor matching. Fonts that are backed by files should be unregistered using [`CTFontManagerUnregisterFontsForURL(_:_:_:)`](./ctfontmanagerunregisterfontsforurl%28_,_,_%29.md).
 

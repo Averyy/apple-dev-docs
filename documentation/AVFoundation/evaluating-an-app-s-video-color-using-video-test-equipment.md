@@ -5,7 +5,7 @@
 
 Output test pattern files to a vectorscope or waveform analyzer to review the video signals.
 
-#### Overview
+## Overview
 
 AVFoundation automatically applies color management to video during playback. Verify that the system properly color manages your video by using either of the following techniques:
 
@@ -14,7 +14,7 @@ AVFoundation automatically applies color management to video during playback. Ve
 
 ![An illustration showing two test pattern analyses. At the top is an analysis using a vectorscope, and at the bottom is an analysis using a waveform analyzer.](https://developer.apple.com/tutorials/images/com.apple.avfoundation/media-3733686@2x.png)
 
-##### Analyze your video signal using a vectorscope
+### Analyze your video signal using a vectorscope
 
 A vectorscope plots the two chroma components of a video signal and measures their color relationship. Vectorscopes often include printed boxes indicating standard colors. Ideally, a correctly reproduced color bar signal should “hit” the vectorscope boxes.
 
@@ -32,7 +32,7 @@ These boxes typically represent only HD or only SD color bars, not content conve
 
 To learn how to use test pattern files to confirm the proper color management of your app’s video, see [Open test patterns and verify color characteristics](./evaluating-video-using-quicktime-test-pattern-files.md#Open-test-patterns-and-verify-color-characteristics).
 
-##### Analyze your video signal using a waveform monitor
+### Analyze your video signal using a waveform monitor
 
 A waveform monitor displays the composite of the amplitude of all lines in a given frame of video over time. Among other things, this instrument helps ensure the use of all values with no truncated (crushed) range of blacks or whites.
 

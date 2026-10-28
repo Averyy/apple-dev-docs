@@ -21,7 +21,7 @@ The key path on the element used to determine section grouping.
 final var sectionBy: PartialKeyPath<Element>? { get }
 ```
 
-#### Discussion
+## Discussion
 
 Returns `nil` if no section grouping was configured at initialization.
 

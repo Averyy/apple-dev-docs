@@ -28,7 +28,7 @@ PHAuthorizationStatusLimited
 
 - [Delivering an Enhanced Privacy Experience in Your Photos App](../../PhotoKit/delivering-an-enhanced-privacy-experience-in-your-photos-app.md)
 
-#### Discussion
+## Discussion
 
 Use [`presentLimitedLibraryPicker(from:)`](../phphotolibrary/presentlimitedlibrarypicker%28from%29.md) or [`presentLimitedLibraryPicker(from:completionHandler:)`](../phphotolibrary/presentlimitedlibrarypicker%28from,completionhandler%29.md) to manually present the limited library picker.
 

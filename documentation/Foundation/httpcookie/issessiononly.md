@@ -25,7 +25,7 @@ var isSessionOnly: Bool { get }
 @property (readonly, getter=isSessionOnly) BOOL sessionOnly;
 ```
 
-#### Discussion
+## Discussion
 
 This value is [`true`](../../Swift/true.md) if the cookie should be discarded at the end of the session (regardless of expiration date), otherwise [`false`](../../Swift/false.md).
 

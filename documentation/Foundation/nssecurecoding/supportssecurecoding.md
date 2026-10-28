@@ -26,7 +26,7 @@ static var supportsSecureCoding: Bool { get }
 @property (class, readonly) BOOL supportsSecureCoding;
 ```
 
-#### Discussion
+## Discussion
 
 When you write a class that supports secure coding, ensure that this class property’s getter returns [`true`](../../Swift/true.md).
 

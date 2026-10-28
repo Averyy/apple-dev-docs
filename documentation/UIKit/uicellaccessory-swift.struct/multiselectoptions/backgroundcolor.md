@@ -19,7 +19,7 @@ The background color to apply to the accessory.
 var backgroundColor: UIColor?
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is `nil`, which uses the system default.
 

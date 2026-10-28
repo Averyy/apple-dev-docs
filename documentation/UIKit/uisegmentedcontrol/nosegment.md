@@ -23,7 +23,7 @@ class var noSegment: Int { get }
 UISegmentedControlNoSegment
 ```
 
-#### Discussion
+## Discussion
 
 See [`selectedSegmentIndex`](./selectedsegmentindex.md) for more information.
 

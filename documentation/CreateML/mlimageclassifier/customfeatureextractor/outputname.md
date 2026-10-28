@@ -19,7 +19,7 @@ The name of the output from a feature extraction layer within the model.
 var outputName: String?
 ```
 
-#### Discussion
+## Discussion
 
 When training an image classifier with a custom feature extractor, use [`outputName`](./outputname.md) to select a layer within the model that has an output of [`MLMultiArray`](../../../CoreML/mlmultiarray.md).
 

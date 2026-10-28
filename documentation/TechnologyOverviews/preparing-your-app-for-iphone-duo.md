@@ -4,7 +4,7 @@
 
 Update your iOS app to dynamically resize for inner and outer displays, adjust your layout for the folding display, and adapt bars for vertical layout.
 
-#### Overview
+## Overview
 
 iPhone Duo is a foldable phone, with a compact outer display and a large inner display. Both displays include a front camera, and the inner front-facing camera is hidden when not in use. As iPhone Duo is opened, closed, partially folded, and rotated, content transitions between displays and adjusts for rotated positions. When partially folded, views adapt to the folding region of the display.
 
@@ -24,7 +24,7 @@ iPhone Duo presents navigation bars, toolbars, and tab bars together vertically 
 
 Build your app with the latest version of Xcode to use all of the available screen space on iPhone Duo. When you build with Xcode 26 and earlier, your app doesn’t extend under the status bar and camera. For more information, see [Prepare your app for iPhone Duo](https://developer.apple.com/videos/play/tech-talks/111461?time=30). Then, take the first step in preparing your app for iPhone Duo by testing it in a simulator or on iPhone Duo. For more information, see [Running your app on simulated or physical devices](../Xcode/running-your-app-on-simulated-or-physical-devices.md).
 
-##### Address common layout and resizing considerations
+### Address common layout and resizing considerations
 
 Because iPhone Duo supports multiple screen sizes, layouts, and orientations, your app needs to adapt gracefully across all of them. Check how your app appears on both displays, when closed, open, or partially folded. Rotate iPhone Duo in each pose to see how your app’s layout reacts.
 
@@ -45,7 +45,7 @@ Follow these recommendations to avoid common issues, and improve your app’s re
 - Adopt Auto Layout in UIKit to make your views resizable.
 - Use automatic trait tracking to observe [`horizontalSizeClass`](../UIKit/uitraitcollection/horizontalsizeclass.md) and [`verticalSizeClass`](../UIKit/uitraitcollection/verticalsizeclass.md) changes to adapt your interface to different sizes. Don’t use [`userInterfaceIdiom`](../UIKit/uidevice/userinterfaceidiom.md) or [`UIInterfaceOrientation`](../UIKit/uiinterfaceorientation.md) for layout decisions in your UIKit app. For more information, see [Adapting your app when traits change](../UIKit/adapting-your-app-when-traits-change.md).
 
-##### Optimize bars for vertical presentation
+### Optimize bars for vertical presentation
 
 Check the navigation bars, toolbars, and tab bars in your app to see if the system presents them vertically on the side of the display. This happens on the outer display when the device is closed, and for some views in the leading or trailing position on the inner display when the device is open.
 
@@ -61,7 +61,7 @@ In a custom view, you may need to know if the system presents bars vertically to
 
 If your view has a hero or background image, extend it under a vertical bar using [`backgroundExtensionEffect()`](../SwiftUI/view/backgroundextensioneffect%28%29.md) in SwiftUI, or [`UIBackgroundExtensionView`](../UIKit/uibackgroundextensionview.md) in UIKit.
 
-##### Organize items in your bars
+### Organize items in your bars
 
 Organize your items for optimal placement when the system presents navigation bars, toolbars, and tab bars vertically. Reserve the top for primary navigation controls, like Back or Close, followed by prominent actions, such as Done. If you use a navigation controller, the system adds the Back button automatically.
 
@@ -77,7 +77,7 @@ When you create toolbar items, specify both an icon and a title for items that y
 - If your item has a title and doesn’t have an icon, the system doesn’t present it vertically.
 - If your item uses a custom view rather than a title or icon, the system doesn’t present it vertically.
 
-##### Arrange views in different poses
+### Arrange views in different poses
 
 [`ArrangementView`](../SwiftUI/arrangementview.md) in SwiftUI and [`UIArrangementViewController`](../UIKit/uiarrangementviewcontroller.md) in UIKit represent an *arrangement view*, which is a layout container for a primary view and a secondary view that you can use to adjust to the different device poses. Arrangement views offer two styles of preferred arrangements: split and overlay.
 
@@ -114,7 +114,7 @@ For both styles of arrangement, you can limit which axis you want to use for the
 
 Avoid placing an arrangement view inside a navigation split view, list, scroll view, or other container that might cause part of your view to become inaccessible.
 
-##### Adapt to reserved regions in your views
+### Adapt to reserved regions in your views
 
 While framework-provided views and containers automatically adjust to work around the fold or the front-facing camera on the inner display, your custom views need a flexible approach to identify *divisions* and *occlusions*. iOS represents these as *reserved regions*. A division occurs when a folding region divides a large view into smaller views. An occlusion is an area of a view where a hardware element, such as the camera, covers your content so it isn’t visible. The inner front-facing camera can block your view when it’s active, and the outer front-facing camera always occludes your view.
 
@@ -130,13 +130,13 @@ In SwiftUI, use a [`GeometryReader`](../SwiftUI/geometryreader.md) to get a [`Ge
 
 > **Note**: A reserved region can be active or inactive. For example, a reserved region that represents the fold is active when iPhone Duo is partially open, but inactive when it is fully open.
 
-##### Improve your app’s camera handling
+### Improve your app’s camera handling
 
 If your app uses [AVKit](../AVKit/AVKit.md) or [AVFoundation](../AVFoundation/AVFoundation.md) to capture photos or videos, your app can capture photos and video from the outer display camera, inner display camera, and rear camera on iPhone Duo. When a person opens, closes, and rotates the phone, your app may change which display it’s on, and the camera you’re using may point in the opposite direction. For more information about how to update your app to handle these situations, see [Choosing a camera by the direction it faces](../AVKit/choosing-a-camera-by-the-direction-it-faces.md).
 
 When iPhone Duo is fully open and capturing photos or video with the rear camera, it can show content on the outer display in addition to showing your app on the inner display. For more information on configuring your camera app to do this, see [Registering a camera capture accessory on iPhone Duo](../AVFoundation/registering-a-camera-capture-accessory-on-iphone-duo.md).
 
-#### Videos
+## Videos
 
 - [Design for iPhone Duo](https://developer.apple.com/videos/play/tech-talks/111466)
   iPhone Duo is the first folding iPhone and comes with a reimagined iOS. Get to know the design principles behind the updated software, explore how controls move between different poses, and learn where your layout needs to adapt and why.

@@ -22,7 +22,7 @@ class var resizeLeft: NSCursor { get }
 @property (class, strong, readonly) NSCursor * resizeLeftCursor;
 ```
 
-#### Return Value
+## Return Value
 
 The resize-left cursor. This cursor is used when moving or resizing an object to indicate that the user can move only in the indicated direction.
 

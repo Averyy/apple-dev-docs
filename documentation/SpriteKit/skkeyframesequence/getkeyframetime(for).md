@@ -25,7 +25,7 @@ func getKeyframeTime(for index: Int) -> CGFloat
 - (CGFloat) getKeyframeTimeForIndex:(NSUInteger) index;
 ```
 
-#### Return Value
+## Return Value
 
 The time value for the keyframe.
 

@@ -9,7 +9,7 @@
 virtual const OSString * newModelString() const;
 ```
 
-#### Return Value
+## Return Value
 
 Returns a string describing the model of the network controller. The caller is responsible for releasing the string object returned.
 

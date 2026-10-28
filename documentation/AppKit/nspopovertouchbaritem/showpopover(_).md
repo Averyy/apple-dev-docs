@@ -22,7 +22,7 @@ func showPopover(_ sender: Any?)
 - (void) showPopover:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 If this item is not visible, this method will have no effect.
 

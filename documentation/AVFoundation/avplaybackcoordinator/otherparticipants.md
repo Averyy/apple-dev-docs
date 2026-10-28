@@ -24,7 +24,7 @@ var otherParticipants: [AVCoordinatedPlaybackParticipant] { get }
 @property (nonatomic, readonly) NSArray<AVCoordinatedPlaybackParticipant *> * otherParticipants;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property value to create a user interface that informs the user about the state of other participants in the group.
 

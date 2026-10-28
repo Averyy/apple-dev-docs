@@ -19,7 +19,7 @@ case perceptual
 NSColorRenderingIntentPerceptual
 ```
 
-#### Discussion
+## Discussion
 
 Perceptual intent is good for photographs and other complex, detailed images.
 

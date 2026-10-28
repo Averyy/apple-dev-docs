@@ -24,7 +24,7 @@ func AudioServicesCreateSystemSoundID(_ inFileURL: CFURL, _ outSystemSoundID: Un
 extern OSStatus AudioServicesCreateSystemSoundID(CFURLRef inFileURL, SystemSoundID *outSystemSoundID);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 

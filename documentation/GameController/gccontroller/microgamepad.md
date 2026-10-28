@@ -24,7 +24,7 @@ var microGamepad: GCMicroGamepad? { get }
 @property (nonatomic, strong, readonly, nullable) GCMicroGamepad * microGamepad;
 ```
 
-#### Discussion
+## Discussion
 
 If the controller supports the micro gamepad profile, this property is a [`GCMicroGamepad`](../gcmicrogamepad.md) object that you use to access the input elements of the controller. If the controller doesn’t support the micro gamepad profile, this property is `nil`.
 

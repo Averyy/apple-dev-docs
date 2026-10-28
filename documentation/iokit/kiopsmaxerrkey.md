@@ -16,7 +16,7 @@ CFDictionary key for the current power source's percentage error in capacity rep
 #define kIOPSMaxErrKey
 ```
 
-#### Discussion
+## Discussion
 
 In internal batteries, this refers to the battery pack's estimated percentage error.
 

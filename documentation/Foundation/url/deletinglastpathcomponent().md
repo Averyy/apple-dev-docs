@@ -21,7 +21,7 @@ Returns a URL constructed by removing the last path component of self.
 func deletingLastPathComponent() -> URL
 ```
 
-#### Discussion
+## Discussion
 
 This function may either remove a path component or append `/..`.
 

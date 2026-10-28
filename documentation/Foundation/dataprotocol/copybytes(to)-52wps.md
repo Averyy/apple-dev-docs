@@ -22,11 +22,11 @@ Copies the bytes of data from the type into a typed memory buffer.
 func copyBytes<DestinationType>(to ptr: UnsafeMutableBufferPointer<DestinationType>) -> Int
 ```
 
-#### Return Value
+## Return Value
 
 The number of bytes copied.
 
-#### Discussion
+## Discussion
 
 The following example copies the bytes from a typed memory buffer into the provided typed memory buffer:
 

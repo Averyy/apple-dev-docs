@@ -16,7 +16,7 @@ struct vnop_read_args {
 };
 ```
 
-#### Discussion
+## Discussion
 
 Supported attributes ("Yes, I am setting this attribute.") are set with VATTR_SET_SUPPORTED. Requested attributes are checked with VATTR_IS_ACTIVE. Attribute values are accessed directly through structure fields. VNOP_SETATTR() is the core of the KPI function vnode_setattr(), which is used by chmod(), chown(), truncate(), and many others. A VNOP_SETATTR() call may come without any preceding VNOP_OPEN().
 

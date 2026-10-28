@@ -21,7 +21,7 @@ Displays a confirmation prompt with an interactive snippet.
 func requestConfirmation<Content>(conditions: ConfirmationConditions = [], actionName: ConfirmationActionName = .`continue`, dialog: IntentDialog? = nil, showDialogAsPrompt: Bool = true, @ViewBuilder content: () -> Content) async throws where Content : View
 ```
 
-#### Discussion
+## Discussion
 
 Call this method when you want someone to confirm a particular choice. For example, call this method before someone performs an action that might be destructive or unsafe. The method displays a prompt with the provided snippet, and asks the person to confirm or cancel the operation. The method returns normally if the person confirms the operation, but throws an error if they cancel it.
 

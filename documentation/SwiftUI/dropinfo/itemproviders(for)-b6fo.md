@@ -27,7 +27,7 @@ func itemProviders(for types: [String]) -> [NSItemProvider]
 func itemProviders(for contentTypes: [UTType]) -> [NSItemProvider]
 ```
 
-#### Discussion
+## Discussion
 
 This function is only valid during the `performDrop()` action.
 

@@ -21,7 +21,7 @@ class CLKComplicationTemplateGraphicCircularStackText
 @interface CLKComplicationTemplateGraphicCircularStackText : CLKComplicationTemplateGraphicCircular
 ```
 
-#### Overview
+## Overview
 
 This template belongs to the [`CLKComplicationFamily.graphicCircular`](./clkcomplicationfamily/graphiccircular.md) family.
 

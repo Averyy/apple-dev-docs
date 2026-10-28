@@ -25,7 +25,7 @@ var exceptionType: NSNumber? { get }
 @property (strong, readonly, nullable) NSNumber * exceptionType;
 ```
 
-#### Discussion
+## Discussion
 
 Mach exception types are in the `usr/include/mach/exception_types.h` file in the SDK.
 

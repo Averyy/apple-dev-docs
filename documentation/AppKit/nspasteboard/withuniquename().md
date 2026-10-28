@@ -19,11 +19,11 @@ class func withUniqueName() -> NSPasteboard
 + (NSPasteboard *) pasteboardWithUniqueName;
 ```
 
-#### Return Value
+## Return Value
 
 The new pasteboard object.
 
-#### Discussion
+## Discussion
 
 This method is useful for apps that implement their own interprocess communication using pasteboards. Because the lifetime of a unique pasteboard is not related to the lifetime of the creating app, you must release a unique pasteboard by calling [`releaseGlobally()`](./releaseglobally%28%29.md) to avoid possible leaks.
 

@@ -24,7 +24,7 @@ var matchDomainsNoSearch: Bool { get set }
 @property BOOL matchDomainsNoSearch;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`false`](../../Swift/false.md).
 

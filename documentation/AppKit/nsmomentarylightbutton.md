@@ -17,7 +17,7 @@ When the button is clicked (on state), it appears illuminated. If the button has
 static const NSButtonType NSMomentaryLightButton;
 ```
 
-#### Discussion
+## Discussion
 
 This type of button is best for simply triggering actions because it doesn’t show its state; it always displays its normal image or title. This option is called Momentary Light in Interface Builder’s Button inspector.
 

@@ -28,7 +28,7 @@ var startDateComponents: DateComponents? { get set }
 
 - [Creating events and reminders](../creating-events-and-reminders.md)
 
-#### Discussion
+## Discussion
 
 The use of date components allows the start date and its time zone to be represented in a single property. A `nil` time zone represents a floating date. Setting a date component without an hour, minute and second component will set the reminder to be an all-day reminder. If this property is set, the calendar must be set to `NSGregorianCalendar`; otherwise an exception is raised.
 

@@ -21,7 +21,7 @@ An error code for problems related to retrieving a model collection from the dep
 static var modelCollection: MLModelError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 Core ML typically throws this error when the device doesn’t have access to the network.
 

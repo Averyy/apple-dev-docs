@@ -18,11 +18,11 @@ Initializes a newly allocated dictionary and adds to it objects from another giv
 ## Declaration
 
 ```swift
-@objc
-(__swiftInitWithDictionary_NSDictionary:) dynamic convenience init(dictionary otherDictionary: NSDictionary)
+@objc(__swiftInitWithDictionary_NSDictionary:)
+dynamic convenience init(dictionary otherDictionary: NSDictionary)
 ```
 
-#### Return Value
+## Return Value
 
 An initialized dictionary–which might be different than the original receiver–containing the keys and values found in `otherDictionary`.
 

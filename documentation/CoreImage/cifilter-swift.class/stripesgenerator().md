@@ -24,11 +24,11 @@ class func stripesGenerator() -> any CIFilter & CIStripesGenerator
 + (CIFilter<CIStripesGenerator> *) stripesGeneratorFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The generated image.
 
-#### Discussion
+## Discussion
 
 This method generates a vertical stripped line pattern as an image.
 

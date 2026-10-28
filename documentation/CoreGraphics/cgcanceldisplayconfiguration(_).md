@@ -20,11 +20,11 @@ func CGCancelDisplayConfiguration(_ config: CGDisplayConfigRef?) -> CGError
 extern CGError CGCancelDisplayConfiguration(CGDisplayConfigRef config);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. If the request to cancel a display configuration is successful, the result is `kCGErrorSuccess`. For other possible values, see [`CGError`](./cgerror.md).
 
-#### Discussion
+## Discussion
 
 This function abandons a display configuration, causing the object to release.
 

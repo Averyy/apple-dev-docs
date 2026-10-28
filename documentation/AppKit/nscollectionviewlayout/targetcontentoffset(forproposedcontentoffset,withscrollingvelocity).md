@@ -19,11 +19,11 @@ func targetContentOffset(forProposedContentOffset proposedContentOffset: NSPoint
 - (NSPoint) targetContentOffsetForProposedContentOffset:(NSPoint) proposedContentOffset withScrollingVelocity:(NSPoint) velocity;
 ```
 
-#### Return Value
+## Return Value
 
 The offset value that you want to use for the content.
 
-#### Discussion
+## Discussion
 
 Use this method to position the collection view’s content appropriately after scrolling. This method tells the scroll view where to stop scrolling so that the collection view’s content is displayed optimally. For example, you might use this method to adjust the proposed content offset so that it falls on a boundary between rows of items, as opposed to stopping in the middle of a row.
 

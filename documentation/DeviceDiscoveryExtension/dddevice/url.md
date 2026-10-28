@@ -23,7 +23,7 @@ var url: URL { get set }
 @property (nonatomic, copy, readwrite) NSURL * url;
 ```
 
-#### Discussion
+## Discussion
 
 Set this property to indicate communication with a device over the simple service discovery protocol (SSDP). The value needs to:
 

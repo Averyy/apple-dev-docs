@@ -24,7 +24,7 @@ case appleWatchSimilarToLeadI
 HKElectrocardiogramLeadAppleWatchSimilarToLeadI
 ```
 
-#### Discussion
+## Discussion
 
 The Apple Watch’s heart rate sensor generates and analyzes ECG data similar to a Lead I ECG.
 

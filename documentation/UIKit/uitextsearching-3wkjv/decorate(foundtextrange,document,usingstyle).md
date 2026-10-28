@@ -19,7 +19,7 @@ Applies the style to a specific text range to indicate found and highlighted res
 func decorate(foundTextRange: UITextRange, document: Self.DocumentIdentifier?, usingStyle: UITextSearchFoundTextStyle)
 ```
 
-#### Discussion
+## Discussion
 
 The system calls this method during a find session to display the results of a search in your custom view. Your implenentation should decorate matching text ranges for the given style to indicate the found and highlighted result.
 

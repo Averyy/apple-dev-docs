@@ -19,7 +19,7 @@ object GroupNotFoundError
 
 - [App Store Server API changelog](./app-store-server-api-changelog.md)
 
-#### Discussion
+## Discussion
 
 A request returns this error if you call the [`Get Group Members`](./get-group-members.md) endpoint with a `groupId` that’s well-formed but doesn’t identify a group in your app.
 

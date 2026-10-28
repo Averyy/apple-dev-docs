@@ -21,11 +21,11 @@ func SecKeychainItemCreateFromContent(_ itemClass: SecItemClass, _ attrList: Uns
 OSStatus SecKeychainItemCreateFromContent(SecItemClass itemClass, SecKeychainAttributeList *attrList, UInt32 length, const void *data, SecKeychainRef keychainRef, SecAccessRef initialAccess, SecKeychainItemRef*itemRef);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
-#### Discussion
+## Discussion
 
 Each item stored in the keychain contains data (such as a certificate), which is indexed by the item’s attributes. Use this function to create a keychain item from its attributes and data. To create keychain items that hold passwords, use the [`SecKeychainAddInternetPassword(_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:)`](./seckeychainaddinternetpassword%28_,_,_,_,_,_,_,_,_,_,_,_,_,_,_%29.md) or [`SecKeychainAddGenericPassword(_:_:_:_:_:_:_:_:)`](./seckeychainaddgenericpassword%28_,_,_,_,_,_,_,_%29.md) functions.
 

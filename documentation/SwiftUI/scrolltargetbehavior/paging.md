@@ -24,7 +24,7 @@ static var paging: PagingScrollTargetBehavior { get }
 
 Available when `Self` is `PagingScrollTargetBehavior`.
 
-#### Discussion
+## Discussion
 
 In the following example, every view in the lazy stack is flexible in both directions and the scroll view settles to container-aligned boundaries.
 

@@ -19,7 +19,7 @@ var HV_GIC_INT_MAINTENANCE: hv_gic_intid_t { get }
 HV_GIC_INT_MAINTENANCE
 ```
 
-#### Discussion
+## Discussion
 
 For more information on maintenance interrupts, see *maintenance interrupts* in the [ARM Generic Interrupt Controller (GIC) v3](https://developer.arm.com/documentation/ihi0069/latest/) specification.
 

@@ -19,7 +19,7 @@ var datePickerElements: NSDatePicker.ElementFlags { get set }
 @property NSDatePickerElementFlags datePickerElements;
 ```
 
-#### Discussion
+## Discussion
 
 Elements not included in the bitmask are hidden from view. For a list of possible values, see [`NSDatePicker.ElementFlags`](../nsdatepicker/elementflags.md).
 

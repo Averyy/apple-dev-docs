@@ -20,7 +20,7 @@ Returns the next element in the sequence.
 mutating func next() async -> AVAssetImageGenerator.Images.Element?
 ```
 
-#### Return Value
+## Return Value
 
 The next element, or `nil` if no more exist.
 

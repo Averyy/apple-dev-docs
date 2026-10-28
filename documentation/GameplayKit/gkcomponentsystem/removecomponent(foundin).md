@@ -24,7 +24,7 @@ func removeComponent(foundIn entity: GKEntity)
 - (void) removeComponentWithEntity:(GKEntity *) entity;
 ```
 
-#### Discussion
+## Discussion
 
 This method examines the [`components`](../gkentity/components.md) array of the specified entity, removing any components whose type matches the component system’s [`componentClass`](./componentclass.md) property from the component system. If those components are not in the component system, this method has no effect.
 

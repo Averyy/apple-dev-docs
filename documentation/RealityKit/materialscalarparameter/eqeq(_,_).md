@@ -20,7 +20,7 @@ Indicates whether two scalar parameters are equal.
 static func == (lhs: MaterialScalarParameter, rhs: MaterialScalarParameter) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value set to `true` if the two scalar parameters are equal.
 

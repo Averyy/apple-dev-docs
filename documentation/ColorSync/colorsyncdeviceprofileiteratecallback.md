@@ -20,7 +20,7 @@ typealias ColorSyncDeviceProfileIterateCallback = (CFDictionary?, UnsafeMutableR
 typedef _Bool (*)(const struct __CFDictionary *, void *) ColorSyncDeviceProfileIterateCallback;
 ```
 
-#### Discussion
+## Discussion
 
 The `colorSyncDeviceProfileInfo` dictionary contains the following keys:
 

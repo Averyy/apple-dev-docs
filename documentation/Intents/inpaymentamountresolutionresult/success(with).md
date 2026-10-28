@@ -23,11 +23,11 @@ class func success(with resolvedPaymentAmount: INPaymentAmount) -> Self
 + (instancetype) successWithResolvedPaymentAmount:(INPaymentAmount *) resolvedPaymentAmount;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INPaymentAmountResolutionResult`](../inpaymentamountresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method to create a result object when you are able to resolve the payment amount for a bill. For payment amounts representing the account’s current balance, amount due, or minimum amount due, a successful resolution signifies that you know the amount of money to transfer from the user’s account to the bill payee.
 

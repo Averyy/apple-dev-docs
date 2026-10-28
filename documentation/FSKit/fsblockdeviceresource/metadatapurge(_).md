@@ -19,7 +19,7 @@ func metadataPurge(_ rangesToPurge: [FSMetadataRange]) throws
 - (BOOL) metadataPurge:(NSArray<FSMetadataRange *> *) rangesToPurge error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 This method removes the given ranges from the resource’s buffer cache. This process drops any dirty data in the cache, preventing the data from reaching the device.
 

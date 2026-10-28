@@ -18,11 +18,11 @@ Returns a Metal buffer containing the current contents of the vertex buffer for 
 final func readVertices(at index: Int, commandBuffer: (any MTLCommandBuffer)?) -> any MTLBuffer
 ```
 
-#### Return Value
+## Return Value
 
 A `MTLBuffer` ready for GPU read operations.
 
-#### Discussion
+## Discussion
 
 The renderer waits for the provided command buffer to complete before discarding the buffer.
 

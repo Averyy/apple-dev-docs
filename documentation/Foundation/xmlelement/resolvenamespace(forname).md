@@ -20,11 +20,11 @@ func resolveNamespace(forName name: String) -> XMLNode?
 - (NSXMLNode *) resolveNamespaceForName:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 An [`XMLNode`](../xmlnode.md) object of kind [`XMLNode.Kind.namespace`](../xmlnode/kind-swift.enum/namespace.md) or `nil` if there is no matching namespace node.
 
-#### Discussion
+## Discussion
 
 The method looks in the entire namespace chain for the prefix.
 

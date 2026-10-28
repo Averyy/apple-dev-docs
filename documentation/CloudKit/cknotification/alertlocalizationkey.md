@@ -26,7 +26,7 @@ var alertLocalizationKey: String? { get }
 @property (nonatomic, copy, readonly, nullable) NSString * alertLocalizationKey;
 ```
 
-#### Discussion
+## Discussion
 
 When the system delivers a push notification to your app, it gets the text for the alert body by looking up the specified key in your app’s `Localizable.strings` file. CloudKit ignores the value in [`alertBody`](./alertbody.md) if you set this property.
 

@@ -5,13 +5,13 @@
 
 Learn the best techniques for managing Sign in with Apple user sessions and responding to account deletion requests.
 
-#### Overview
+## Overview
 
 Apps submitted to the App Store that support account creation must also let users initiate deletion of their account within the app, as of June 30, 2022. To learn more, see [Offering account deletion in your app](https://developer.apple.com/support/offering-account-deletion-in-your-app/).
 
 To properly support both account creation, verification, and deletion in your app, securely store user credentials—for example, identity tokens and refresh tokens— and consider using a server infrastructure to handle token generation, validation, and revocation.
 
-#### Invalidate a user session
+## Invalidate a user session
 
 The [Token revocation](../SigninwithAppleRESTAPI/revoke-tokens.md) endpoint (`/auth/revoke`) is the only way to programmatically invalidate user tokens associated to your developer account without user interaction. Apps using Sign in with Apple are expected to securely transmit and store tokens when integrated with a server infrastructure. This allows you to validate all user tokens received from Apple, as well as verify the user’s identity and Apple’s public key before granting access to your app or its data. Because this endpoint manages your user sessions, either a valid refresh token or access token for invalidation is required.
 
@@ -23,7 +23,7 @@ If you don’t have the user’s refresh token, access token, or authorization c
 
 > ❗ **Important**: If the manual token revocation isn’t completed, the next time the user authenticates with your client using Sign in with Apple, they won’t be presented with the initial authorization flow to enter their full name, email address, or both. This is because the user credential state managed by Sign in with Apple remains unchanged and returns [`ASAuthorizationAppleIDProvider.CredentialState.authorized`](../AuthenticationServices/asauthorizationappleidprovider/credentialstate/authorized.md), which may also result in the system auth UI displaying the “Continue with Apple” button type. For more information, about displaying the button, see [Sign in with Apple Button](https://account.apple.com/signinwithapple/button).
 
-#### Respond to credential revoked notifications
+## Respond to credential revoked notifications
 
 Once the user’s credentials are revoked by Apple, your client will receive a notification signaling the revocation event:
 
@@ -39,7 +39,7 @@ When receiving either notification, ensure you’ve completed the following oper
    - Any user-related data store in the Keychain or securely on disk in the native app or locally on a web client.
 2. Revert the client to an unauthenticated state.
 
-#### Securely store user tokens for account creations
+## Securely store user tokens for account creations
 
 For all new user account creations, properly store and handle the user credentials by following the authorization flow below:
 
@@ -56,7 +56,7 @@ If you have questions about implementing these flows, including client authoriza
 - [TN3107: Resolving Sign in with Apple response errors](./tn3107-resolving-sign-in-with-apple-response-errors.md)
 - [TN3159: Migrating Sign in with Apple users for an app transfer](./tn3159-migrating-sign-in-with-apple-users-for-an-app-transfer.md)
 
-#### Revision History
+## Revision History
 
 - **2025-10-03** First published.
 

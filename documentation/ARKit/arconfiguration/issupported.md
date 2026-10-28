@@ -24,7 +24,7 @@ class var isSupported: Bool { get }
 
 - [Verifying Device Support and User Permission](../verifying-device-support-and-user-permission.md)
 
-#### Discussion
+## Discussion
 
 Different types of AR experiences (which you configure using concrete [`ARConfiguration`](../arconfiguration.md) subclasses) can have different hardware requirements.
 

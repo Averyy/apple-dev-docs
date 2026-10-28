@@ -5,7 +5,7 @@
 
 Get metadata for apps and books your organization owns.
 
-#### Overview
+## Overview
 
 Use the Apps and Books Metadata for Organizations API to retrieve metadata for apps and books that your organization owns, or to search for and retrieve metadata for apps and books in the public catalog.
 

@@ -23,11 +23,11 @@ An `AsyncSequence` that iterates over the adjacent pairs of the original origina
 func adjacentPairs() -> AsyncAdjacentPairsSequence<Self>
 ```
 
-#### Return Value
+## Return Value
 
 An `AsyncSequence` where the element is a tuple of two adjacent elements or the original `AsyncSequence`.
 
-#### Discussion
+## Discussion
 
 ```
 for await (first, second) in (1...5).async.adjacentPairs() {

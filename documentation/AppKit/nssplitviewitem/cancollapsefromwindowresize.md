@@ -19,7 +19,7 @@ var canCollapseFromWindowResize: Bool { get set }
 @property BOOL canCollapseFromWindowResize;
 ```
 
-#### Discussion
+## Discussion
 
 This can differ from [`canCollapse`](./cancollapse.md) to allow divider collapsing but not windows resize collapsing, or vice versa.
 

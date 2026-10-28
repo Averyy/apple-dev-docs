@@ -20,7 +20,7 @@ A data frame listing the precision and recall percentages for each class.
 var precisionRecallDataFrame: DataFrame { get }
 ```
 
-#### Discussion
+## Discussion
 
 Precision and recall are metrics calculated for each class. Together they describe the tradeoff between misapplying a label too liberally and missing examples of that label.
 

@@ -21,7 +21,7 @@ class NIDLTDOAConfiguration
 @interface NIDLTDOAConfiguration : NIConfiguration
 ```
 
-#### Overview
+## Overview
 
 Run an instance of this configuration to participate in a session that supports the Downlink Time-Difference-of-Arrival (DL-TDOA) feature. Before creating an instance of this class, call [`supportsDLTDOAMeasurement`](./nidevicecapability/supportsdltdoameasurement.md) first to ensure device support.
 

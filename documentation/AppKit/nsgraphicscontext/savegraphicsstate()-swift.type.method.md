@@ -19,7 +19,7 @@ class func saveGraphicsState()
 + (void) saveGraphicsState;
 ```
 
-#### Discussion
+## Discussion
 
 This method sends the current graphics context a [`saveGraphicsState()`](./savegraphicsstate%28%29-swift.method.md) message and pushes the context onto the per-thread stack.
 

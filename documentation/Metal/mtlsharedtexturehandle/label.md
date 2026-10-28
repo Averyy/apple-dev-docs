@@ -24,7 +24,7 @@ var label: String? { get }
 @property (readonly, nullable) NSString * label;
 ```
 
-#### Discussion
+## Discussion
 
 Object and command labels are useful identifiers at runtime or when profiling and debugging your app using any Metal tool. See [Naming resources and commands](../../Xcode/naming-resources-and-commands.md).
 

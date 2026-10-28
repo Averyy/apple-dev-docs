@@ -21,7 +21,7 @@ Retrieves the category at the ordinal encoding index.
 func category(at index: Int) -> Category?
 ```
 
-#### Return Value
+## Return Value
 
 The category at the specified index.
 

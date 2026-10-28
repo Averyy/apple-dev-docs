@@ -21,7 +21,7 @@ An option that preserves the tracks as they are.
 AVMusicSequenceLoadSMF_PreserveTracks
 ```
 
-#### Discussion
+## Discussion
 
 The MIDI sequence contains one track for each track in the SMF, plus a tempo track (if it isn’t in the SMF).
 

@@ -15,7 +15,7 @@ The maximum power consumption of the USB device expressed in 2mA units.
 uint8_t MaxPower;
 ```
 
-#### Discussion
+## Discussion
 
 A value of 50 indicates that the device consumes a maximum of 100mA of current.
 

@@ -40,7 +40,7 @@ extern bool ABRecordRemoveValue(ABRecordRef record, ABPropertyID property, CFErr
 extern bool ABRecordRemoveValue(ABRecordRef record, CFStringRef property);
 ```
 
-#### Return Value
+## Return Value
 
 The value for `property` in `record`.The type of the returned value depends on the property type (see PropertyTypes for a list of possible property types). You are responsiblefor releasing this object.
 

@@ -16,7 +16,7 @@ Try to turn on packet notifications for this listener.
 IOReturn (*TurnOnNotification)(IOFireWireLibPHYPacketListenerRef self);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if successful
 

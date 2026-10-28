@@ -9,7 +9,7 @@ Replicate sequences of interactions and make sure that your app’s user interfa
 **Availability**:
 - Xcode 16.3+
 
-#### Overview
+## Overview
 
 UI testing lets you verify that when you change parts of your app’s data model, your app’s view controllers, views, and controls respond appropriately. You can also create test cases to manipulate your app’s views and controls, as if a person is interacting with your interface. Use the XCUIAutomation framework to control your app’s user interface and inspect its state. Use [XCTest](../XCTest/XCTest.md) to write tests that control your app using XCUIAutomation, and check if your app’s state matches your expectations.
 

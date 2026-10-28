@@ -19,7 +19,7 @@ let NSValidateXMLStoreOption: String
 extern NSString * const NSValidateXMLStoreOption;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`false`](../Swift/false.md).
 

@@ -24,7 +24,7 @@ let kVTVideoEncoderSpecification_EnableLowLatencyRateControl: CFString
 extern CFStringRef const kVTVideoEncoderSpecification_EnableLowLatencyRateControl;
 ```
 
-#### Discussion
+## Discussion
 
 Low latency rate control enforces the following behaviors:
 

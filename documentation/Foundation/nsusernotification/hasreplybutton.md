@@ -19,7 +19,7 @@ var hasReplyButton: Bool { get set }
 @property BOOL hasReplyButton;
 ```
 
-#### Discussion
+## Discussion
 
 Set to [`true`](../../Swift/true.md) if the notification has a reply button. The default value is [`false`](../../Swift/false.md). If this property and [`hasActionButton`](./hasactionbutton.md) are both [`true`](../../Swift/true.md), the reply button is shown.
 

@@ -13,7 +13,7 @@
 extern NSString * const NSPrintPaperFeed;
 ```
 
-#### Discussion
+## Discussion
 
 Deprecated. Do not use.
 

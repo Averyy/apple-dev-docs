@@ -20,11 +20,11 @@ func createRecord(withRecordType inRecordType: String!, name inRecordName: Strin
 - (ODRecord *) createRecordWithRecordType:(ODRecordType) inRecordType name:(NSString *) inRecordName attributes:(NSDictionary *) inAttributes error:(NSError **) outError;
 ```
 
-#### Return Value
+## Return Value
 
 The created record.
 
-#### Discussion
+## Discussion
 
 The record is automatically assigned a UUID. This UUID can be overridden if one is specified in `inAttributes`.
 

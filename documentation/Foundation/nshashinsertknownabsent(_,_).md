@@ -25,7 +25,7 @@ func NSHashInsertKnownAbsent(_ table: NSHashTable<AnyObject>, _ pointer: UnsafeR
 extern void NSHashInsertKnownAbsent(NSHashTable *table, const void *pointer);
 ```
 
-#### Discussion
+## Discussion
 
 Inserts `pointer`, which must not be `NULL`, into `table`. Unlike `NSHashInsert`, this function raises `NSInvalidArgumentException` if `table` already includes an element that matches `pointer`.
 

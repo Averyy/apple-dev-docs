@@ -25,7 +25,7 @@ func CFSocketIsValid(_ s: CFSocket!) -> Bool
 extern Boolean CFSocketIsValid(CFSocketRef s);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if `s` can be used for communication, otherwise `false`.
 

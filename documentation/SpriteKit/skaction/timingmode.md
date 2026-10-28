@@ -30,7 +30,7 @@ var timingMode: SKActionTimingMode { get set }
 - [Configuring Action Timing](../configuring-action-timing.md)
 - [Getting Started with Actions](../getting-started-with-actions.md)
 
-#### Discussion
+## Discussion
 
 The possible values for this property are listed in [`SKActionTimingMode`](../skactiontimingmode.md). The default value is [`SKActionTimingMode.linear`](../skactiontimingmode/linear.md).
 

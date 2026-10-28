@@ -23,7 +23,7 @@ func ABAddressBookGetGroupCount(_ addressBook: ABAddressBook!) -> CFIndex
 extern CFIndex ABAddressBookGetGroupCount(ABAddressBookRef addressBook);
 ```
 
-#### Return Value
+## Return Value
 
 The number of groups in `addressBook`.
 

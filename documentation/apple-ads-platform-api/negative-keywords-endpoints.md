@@ -8,7 +8,7 @@ Create, retrieve, update, query, and delete negative keywords that block ads for
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Overview
+## Overview
 
 Negative keywords suppress your ads for searches you want to exclude. Scope each one to a campaign or an ad group. A campaign-level negative applies across all of the campaign’s ad groups, so set `campaignId` and omit `adGroupId`. An ad group-level negative applies to a single ad group, so set `adGroupId` and omit `campaignId`.
 

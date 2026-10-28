@@ -15,7 +15,7 @@ Get the process id of the BSD process associated with a vfs_context_t.
 int vfs_context_pid(vfs_context_t ctx);
 ```
 
-#### Return Value
+## Return Value
 
 Process id.
 

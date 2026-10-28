@@ -25,11 +25,11 @@ func isEqual(_ object: Any) -> Bool
 - (BOOL) isEqual:(id) object;
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value of [`true`](../../Swift/true.md) if the receiver and `object` are equal; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 The PCM format ignores interleaveness for mono.
 

@@ -24,7 +24,7 @@ func drawAsPattern(in rect: CGRect)
 - (void) drawAsPatternInRect:(CGRect) rect;
 ```
 
-#### Discussion
+## Discussion
 
 This method uses a Quartz pattern to tile the image in the specified rectangle. The image is tiled with no gaps and the fill color is ignored. In the default coordinate system, the image tiles are situated down and to the right of the origin of the specified rectangle. This method respects any transforms applied to the current graphics context, however.
 

@@ -25,7 +25,7 @@ func invalidateAndCancel()
 - (void) invalidateAndCancel;
 ```
 
-#### Discussion
+## Discussion
 
 Once invalidated, references to the delegate and callback objects are broken. After invalidation, session objects cannot be reused.
 

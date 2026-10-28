@@ -23,7 +23,7 @@ func permissionStatus(for permission: WKWebExtension.Permission) -> WKWebExtensi
 - (WKWebExtensionContextPermissionStatus) permissionStatusForPermission:(WKWebExtensionPermission) permission;
 ```
 
-#### Discussion
+## Discussion
 
 Permissions can be granted on a per-tab basis. When the tab is known, access checks should always use the method that checks in a tab.
 

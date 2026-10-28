@@ -21,7 +21,7 @@ Regular file
 static var regular: FileType { get }
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding C constant is `S_IFREG`.
 

@@ -16,11 +16,11 @@ Retrieves the cookie for the element.
 IOHIDElementCookie IOHIDElementGetCookie(IOHIDElementRef element);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the IOHIDElementCookie for the element.
 
-#### Discussion
+## Discussion
 
 The IOHIDElementCookie represent a unique identifier for an element within a device.
 

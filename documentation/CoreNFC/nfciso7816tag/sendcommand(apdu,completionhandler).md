@@ -26,7 +26,7 @@ func sendCommand(apdu: NFCISO7816APDU) async throws -> (Data, UInt8, UInt8)
 - (void) sendCommandAPDU:(NFCISO7816APDU *) apdu completionHandler:(void (^)(NSData *responseData, uint8_t sw1, uint8_t sw2, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 When you send a `SELECT` command with a [`p1Parameter`](../nfciso7816apdu/p1parameter.md) value of `0x04`, your app must support one of the applications listed in the [`ISO7816 application identifiers for NFC Tag Reader Session`](../../BundleResources/entitlements/com.apple.developer.nfc.readersession.iso7816.select-identifiers.md) property list key. Otherwise, the `completionHandler` receives an [`NFCReaderError.Code.readerErrorSecurityViolation`](../nfcreadererror-swift.struct/code/readererrorsecurityviolation.md) error.
 

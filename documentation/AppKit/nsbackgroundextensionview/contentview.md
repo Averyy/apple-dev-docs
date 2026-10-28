@@ -19,7 +19,7 @@ var contentView: NSView? { get set }
 @property (strong, nullable) NSView * contentView;
 ```
 
-#### Discussion
+## Discussion
 
 The content view will be added as a subview of the extension view and placed within the safe area by default. See `automaticallyPlacesContentView` to customize the layout.
 

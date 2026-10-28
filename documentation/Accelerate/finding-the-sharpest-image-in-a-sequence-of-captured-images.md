@@ -12,7 +12,7 @@ Share image data between vDSP and vImage to compute the sharpest image from a br
 - Mac Catalyst 16.0+
 - Xcode 14.0+
 
-#### Overview
+## Overview
 
 This sample code project captures a sequence of photographs and uses a combination of routines from vImage and vDSP to order the images by their relative sharpness. This technique is useful in applications such as an image scanner, where your user requires the least blurry captured image. After applying the routines, the app displays the images in a list, with the sharpest image at the top.
 
@@ -22,7 +22,7 @@ This project uses [SwiftUI](../SwiftUI/SwiftUI.md) to build the user interface, 
 
 Before exploring the code, try building and running the app, and taking photographs of subjects such as documents and signs.
 
-##### Configure the capture session
+### Configure the capture session
 
 The 3 x 3 Laplacian kernel that this sample uses reports a lot of noise if applied to a full-resolution image. To reduce this noise, the sample uses a downscaled image and defines the capture session’s preset to a size that’s smaller than the camera’s native resolution:
 
@@ -32,7 +32,7 @@ captureSession.sessionPreset = .hd1280x720
 
 To learn more about configuring a capture session, see [Setting Up a Capture Session](../AVFoundation/setting-up-a-capture-session.md).
 
-##### Define the photo settings
+### Define the photo settings
 
 The sample defines the [`AVCapturePhotoBracketSettings`](../AVFoundation/avcapturephotobracketsettings.md) object, which specifies the capture features and settings, in the `BlurDetector.takePhoto()` function.
 
@@ -79,7 +79,7 @@ photoOutput.capturePhoto(with: photoSettings,
                          delegate: self)
 ```
 
-##### Acquire the captured image
+### Acquire the captured image
 
 For each captured image, AVFoundation calls the [`photoOutput(_:didFinishProcessingPhoto:error:)`](../AVFoundation/avcapturephotocapturedelegate/photooutput%28_,didfinishprocessingphoto,error%29.md) method.
 
@@ -130,7 +130,7 @@ Task(priority: .utility) {
 }
 ```
 
-##### Initialize grayscale source pixel buffer
+### Initialize grayscale source pixel buffer
 
 The following code creates a pixel buffer from data passed to the `BlurDetector.processImage(data:rowBytes:width:height:sequenceCount:expectedCount:orientation:)` function:
 
@@ -144,7 +144,7 @@ let imageBuffer = vImage.PixelBuffer(data: data,
 
 On return, `sourceBuffer` contains a grayscale representation of the captured image.
 
-##### Create floating point pixels to use with vDSP
+### Create floating point pixels to use with vDSP
 
 vImage buffers store their image data in row-major format. However, when you pass data between vImage and vDSP, be aware that, in some cases, vImage will add extra bytes at the end of each row. For example, the following code declares two 8-bit-per-pixel buffers that are 10 pixels wide:
 
@@ -180,7 +180,7 @@ imageBuffer.convert(to: laplacianBuffer)
 
 On return, `laplacianStorage` and `laplacianBuffer` share the same memory that contains a 32-bit version of the image data in the `imageBuffer`.
 
-##### Perform the convolution
+### Perform the convolution
 
 The Laplacian kernel finds edges in the single-precision pixel values:
 
@@ -204,7 +204,7 @@ After the convolution, edges in the image have high values. The following image 
 
 ![Photograph after Laplacian convolution. Edges appear as bright areas against a dark background.](https://developer.apple.com/tutorials/images/com.apple.accelerate/laplacianCrop.png)
 
-##### Calculate the variance
+### Calculate the variance
 
 The [`vDSP_normalize`](./vdsp_normalize.md) function calculates the standard deviation of the pixel values after the edge detection. The following computed property returns the variance of a single-precision [`AccelerateMutableBuffer`](./acceleratemutablebuffer.md) instance:
 
@@ -229,7 +229,7 @@ extension AccelerateMutableBuffer where Element == Float {
 
 The sample app uses this value as a measure of relative sharpness. Images with more variance have more detail than those with less variance, and that difference is used to derive the relative sharpness.
 
-##### Create a display image with the correct orientation
+### Create a display image with the correct orientation
 
 The sample app uses the vImage 90º rotation functions in conjunction with the [`CGImage`](../CoreGraphics/cgimage.md) object’s orientation to create Core Graphics images that are suitable for displaying in the app. The `static BlurDetector.makeImage(fromPlanarBuffer:orientation:)` function accepts a planar buffer (either the grayscale representation of the captured image or the result of the convolution) and the orientation, and returns a `CGImage` instance.
 

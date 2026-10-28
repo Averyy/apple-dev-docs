@@ -29,7 +29,7 @@ var frictionTorque: CGFloat { get set }
 
 - [Pinning and Rotating Physics Bodies](../pinning-and-rotating-physics-bodies.md)
 
-#### Discussion
+## Discussion
 
 The range of values is from `0.0` to `1.0`. The default value is `0.0`. If a value greater than the default is specified, friction is applied to reduce the object’s angular velocity around the pin.
 

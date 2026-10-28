@@ -20,7 +20,7 @@ Attempts to load an instance of the type you specify from the item provider.
 func loadTransferable<T>(type: T.Type) async throws -> sending T? where T : Transferable
 ```
 
-#### Return Value
+## Return Value
 
 A `Progress` object that reports the loading progress; otherwise, `nil` if the system doesn’t find a supported content type.
 

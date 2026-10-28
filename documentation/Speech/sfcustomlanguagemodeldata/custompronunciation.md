@@ -20,7 +20,7 @@ A term to be introduced into the speech recognition model’s vocabulary.
 struct CustomPronunciation
 ```
 
-#### Overview
+## Overview
 
 Attempts to add terms that are already in the model’s vocabulary will be ignored. Pronunciations that use X-SAMPA symbols that are not supported will be ignored; see [`supportedPhonemes(locale:)`](./supportedphonemes%28locale%29.md) for the set of supported symbols.
 

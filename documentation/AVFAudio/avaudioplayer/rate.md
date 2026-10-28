@@ -25,7 +25,7 @@ var rate: Float { get set }
 @property float rate;
 ```
 
-#### Discussion
+## Discussion
 
 To set an audio player’s playback rate, you must first enable the rate adjustment by setting its [`enableRate`](./enablerate.md) property to [`true`](../../Swift/true.md).
 

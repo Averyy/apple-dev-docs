@@ -19,7 +19,7 @@ func setLocation(_ location: NSPoint, forStartOfGlyphRange glyphRange: NSRange)
 - (void) setLocation:(NSPoint) location forStartOfGlyphRange:(NSRange) glyphRange;
 ```
 
-#### Discussion
+## Discussion
 
 Setting the location for a glyph range implies that its first glyph is not nominally spaced with respect to the previous glyph. In the course of layout, all glyphs should end up being included in a range passed to this method, but only glyphs that start a new nominal range should be at the start of such ranges. The first glyph in a line fragment should always start a new nominal range. Glyph locations are given relative to their line fragment rectangle’s origin.
 

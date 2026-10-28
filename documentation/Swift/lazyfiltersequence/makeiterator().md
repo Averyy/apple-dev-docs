@@ -23,7 +23,7 @@ func makeIterator() -> LazyFilterSequence<Base>.Iterator
 
 Available when `Base` conforms to `Sequence`.
 
-#### Discussion
+## Discussion
 
 > **Complexity**: O(1).
 

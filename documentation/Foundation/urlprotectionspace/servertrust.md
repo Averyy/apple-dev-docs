@@ -29,7 +29,7 @@ var serverTrust: SecTrust? { get }
 
 - [Performing manual server trust authentication](../performing-manual-server-trust-authentication.md)
 
-#### Discussion
+## Discussion
 
 This value is `nil` if the authentication method of the protection space is not server trust.
 

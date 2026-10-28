@@ -21,7 +21,7 @@ Get a value in this dictionary as an XPCArray.
 subscript(key: String, as type: XPCArray.Type = XPCArray.self, default defaultValue: @autoclosure () -> XPCArray) -> XPCArray { get }
 ```
 
-#### Return Value
+## Return Value
 
 An XPCArray value, possibly `defaultValue`.
 

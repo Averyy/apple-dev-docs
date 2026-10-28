@@ -19,11 +19,11 @@ func closestTickMarkValue(toValue value: Double) -> Double
 - (double) closestTickMarkValueToValue:(double) value;
 ```
 
-#### Return Value
+## Return Value
 
 The value of the tick mark closest to `aValue`.
 
-#### Discussion
+## Discussion
 
 In its implementation of this method, the slider invokes the method of the same name of its `NSSliderCell` instance.
 

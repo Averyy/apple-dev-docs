@@ -13,7 +13,7 @@ virtual IOReturn getAggressiveness(
  unsigned long *currentLevel );
 ```
 
-#### Return Value
+## Return Value
 
 `kIOReturnSuccess` upon success; an I/O Kit error code otherwise.
 

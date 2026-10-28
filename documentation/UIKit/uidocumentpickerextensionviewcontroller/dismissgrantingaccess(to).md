@@ -24,7 +24,7 @@ func dismissGrantingAccess(to url: URL?)
 - (void) dismissGrantingAccessToURL:(NSURL *) url;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method when the user selects a document or destination. This method dismisses the document picker view controller in the host app and triggers the appropriate file transfer. After the transfer is complete, the method passes the provided URL to the host app’s [`documentPicker(_:didPickDocumentAt:)`](../uidocumentpickerdelegate/documentpicker%28_,didpickdocumentat%29.md) delegate method.
 

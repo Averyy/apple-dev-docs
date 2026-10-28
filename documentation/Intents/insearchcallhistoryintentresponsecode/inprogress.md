@@ -25,7 +25,7 @@ case inProgress
 INSearchCallHistoryIntentResponseCodeInProgress
 ```
 
-#### Discussion
+## Discussion
 
 Use this code during the handling phase to indicate that the search is in progress but hasn’t yet completed. Typically, you should return this code if you can’t complete the search within a few seconds.
 

@@ -11,7 +11,7 @@ Enable nearby devices to share an AR experience by using a host-guest multiuser 
 - iPadOS 12.0+
 - Xcode 16.1+
 
-#### Overview
+## Overview
 
 ![Diagram showing AR experiences on two devices viewing, from two different perspectives, the same virtual red panda character sitting on a real table, after an ARWorldMap is transmitted from one device to the other.]](https://developer.apple.com/tutorials/images/com.apple.arkit/ConceptArt.png)
 
@@ -24,17 +24,17 @@ This sample app demonstrates a simple shared AR experience for two or more iOS 1
 
 Follow the steps below to see how this app uses the [`ARWorldMap`](./arworldmap.md) class to save and restore ARKit’s spatial mapping state, and the [Multipeer Connectivity](../MultipeerConnectivity/MultipeerConnectivity.md) framework to send world maps between nearby devices.
 
-#### Getting started
+## Getting started
 
 Requires Xcode 10.0, iOS 12.0 and two or more iOS devices with A9 or later processors.
 
-#### Run the AR Session and Place AR Content
+## Run the AR Session and Place AR Content
 
 This app extends the basic workflow for building an ARKit app. (For details, see [Tracking and visualizing planes](./tracking-and-visualizing-planes.md).) It defines an [`ARWorldTrackingConfiguration`](./arworldtrackingconfiguration.md) with plane detection enabled, then runs that configuration in the [`ARSession`](./arsession.md) attached to the [`ARSCNView`](./arscnview.md) that displays the AR experience.
 
 When [`UITapGestureRecognizer`](../UIKit/uitapgesturerecognizer.md) detects a tap on the screen, the `handleSceneTap` method uses ARKit hit-testing to find a 3D point on a real-world surface, then places an [`ARAnchor`](./aranchor.md) marking that position. When ARKit calls the delegate method [`renderer(_:didAdd:for:)`](./arscnviewdelegate/renderer%28_,didadd,for%29.md), the app loads a 3D model for [`ARSCNView`](./arscnview.md) to display at the anchor’s position.
 
-#### Connect to peer devices
+## Connect to peer devices
 
 The sample `MultipeerSession` class provides a simple abstraction around the [Multipeer Connectivity](../MultipeerConnectivity/MultipeerConnectivity.md) features this app uses. After the main view controller creates a `MultipeerSession` instance (at app launch), it starts running an [`MCNearbyServiceAdvertiser`](../MultipeerConnectivity/mcnearbyserviceadvertiser.md) to broadcast the device’s ability to join multipeer sessions and an [`MCNearbyServiceBrowser`](../MultipeerConnectivity/mcnearbyservicebrowser.md) to find other devices:
 
@@ -79,7 +79,7 @@ In a multipeer session, all participants are by definition equal peers; there is
 - Have the user choose whether to act as a host or guest before starting a session. The host uses [`MCNearbyServiceAdvertiser`](../MultipeerConnectivity/mcnearbyserviceadvertiser.md) to broadcast availability, and guests use [`MCNearbyServiceBrowser`](../MultipeerConnectivity/mcnearbyservicebrowser.md) to find a host to join.
 - Join a session as peers, then negotiate between peers to nominate a host. (This approach can be helpful for designs that need a host role but also allow peers to join or leave at any time.)
 
-#### Capture and send the ar world map
+## Capture and send the ar world map
 
 An [`ARWorldMap`](./arworldmap.md) object contains a snapshot of all the spatial mapping information that ARKit uses to locate the user’s device in real-world space. Reliably sharing a map to another device requires two key steps: finding a good time to capture a map, and capturing and sending it.
 
@@ -111,7 +111,7 @@ sceneView.session.getCurrentWorldMap { worldMap, error in
 }
 ```
 
-#### Receive and relocalize to the shared map
+## Receive and relocalize to the shared map
 
 When a device receives data sent by another participant in the multipeer session, the [`session(_:didReceive:fromPeer:)`](../MultipeerConnectivity/mcsessiondelegate/session%28_,didreceive,frompeer%29.md)delegate method provides that data. To make use of it, the app uses [`NSKeyedArchiver`](../Foundation/nskeyedarchiver.md) to deserialize an [`ARWorldMap`](./arworldmap.md) object, then creates and runs a new [`ARWorldTrackingConfiguration`](./arworldtrackingconfiguration.md) using that map as the [`initialWorldMap`](./arworldtrackingconfiguration/initialworldmap.md):
 
@@ -133,7 +133,7 @@ ARKit then attempts to *relocalize* to the new world map—that is, to reconcile
 1. Thoroughly scan the local environment on the sending device before sharing a world map.
 2. Place the receiving device next to the sending device, so that both see the same view of the environment.
 
-#### Share AR content and user actions
+## Share AR content and user actions
 
 Sharing the world map also shares all existing anchors. In this app, this means that as soon as a receiving device relocalizes to the world map, it shows all the 3D characters that were placed by the sending device before it captured and sent a world map. However, recording and transmitting a world map and relocalizing to a world map are time-consuming, bandwidth-intensive operations, so you should take those steps only once, when a new device joins a session.
 

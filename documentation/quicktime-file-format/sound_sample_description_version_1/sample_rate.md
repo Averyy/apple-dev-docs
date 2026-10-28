@@ -6,7 +6,7 @@
 
 A 32-bit unsigned fixed-point number (16.16) that indicates the rate at which the sound samples were obtained.
 
-#### Overview
+## Overview
 
 The integer portion of this number should match the media’s time scale. Many older version 0 files have values of `22254.5454` or `11127.2727`, but most files have integer values, such as `44100`. Sample rates greater than 2^16 are not supported.
 

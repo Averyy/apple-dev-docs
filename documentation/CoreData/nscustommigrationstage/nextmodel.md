@@ -25,7 +25,7 @@ var nextModel: NSManagedObjectModelReference { get }
 @property (strong, readonly) NSManagedObjectModelReference * nextModel;
 ```
 
-#### Discussion
+## Discussion
 
 Core Data sets this property to the `nextModel` parameter you specify when creating the migration stage.
 

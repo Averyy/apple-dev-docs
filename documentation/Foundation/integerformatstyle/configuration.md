@@ -21,7 +21,7 @@ The type the format style uses for configuration settings.
 typealias Configuration = NumberFormatStyleConfiguration
 ```
 
-#### Discussion
+## Discussion
 
 [`IntegerFormatStyle`](../integerformatstyle.md) uses [`NumberFormatStyleConfiguration`](../numberformatstyleconfiguration.md) for its configuration type.
 

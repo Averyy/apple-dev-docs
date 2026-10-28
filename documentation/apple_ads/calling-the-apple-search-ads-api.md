@@ -5,7 +5,7 @@
 
 Pass your access token in the authorization header of HTTP requests.
 
-#### Overview
+## Overview
 
 > **Deprecated**: The Apple Ads Campaign Management API is deprecated and will be sunset on January 26, 2027. Use the [Apple Ads Platform API](../apple-ads-platform-api/apple-ads-platform-api.md) instead.
 
@@ -26,14 +26,14 @@ curl "https://api.searchads.apple.com/api/v5/campaigns" \
 
 To return the `userId` and `parentOrgId` of an API caller, use [`Get Me Details`](./get-me-details.md).
 
-##### Handle Errors
+### Handle Errors
 
 | **HTTP status code** | **Error message** | **Description** |
 | --- | --- | --- |
 | `401` | `unauthorized` | The token is invalid or expired. |
 | `403` | `forbidden` | The request requires higher privileges than the access token provides. |
 
-##### Rate Limits
+### Rate Limits
 
 Rate limits exist in the Apple Ads Campaign Management API to avoid latency and other system problems from too many API calls within a limited time. For API users that are using automated retry logic in their environments, Apple’s solution is to require the retry logic to increase retry attempts exponentially by seconds. For example, if your default minimum wait time between retries is 2 seconds, the next retry wait time is 4 seconds, and so forth.
 

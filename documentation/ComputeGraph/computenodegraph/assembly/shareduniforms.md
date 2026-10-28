@@ -21,7 +21,7 @@ Uniforms that are shared across multiple graphs, keyed by typeName.
 var sharedUniforms: [String : ComputeNodeGraph.Assembly.UniformBinding] { get }
 ```
 
-#### Discussion
+## Discussion
 
 Shared uniforms are stored globally and copied into each simulation’s uniform buffer before GPU execution. Use them for scene-wide values that many simulations read, such as transform matrices, attractors, or colliders.
 

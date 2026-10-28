@@ -23,7 +23,7 @@ static var drawOn: DrawOnSymbolEffect { get }
 
 Available when `Self` is `DrawOnSymbolEffect`.
 
-#### Discussion
+## Discussion
 
 The DrawOn animation makes the symbol visible either as a whole, or one motion group at a time, animating parts of the symbol with draw data.
 

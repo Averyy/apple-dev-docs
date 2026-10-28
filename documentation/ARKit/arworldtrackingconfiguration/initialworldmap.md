@@ -24,7 +24,7 @@ var initialWorldMap: ARWorldMap? { get set }
 
 - [Managing Session Life Cycle and Tracking Quality](../managing-session-life-cycle-and-tracking-quality.md)
 
-#### Discussion
+## Discussion
 
 An [`ARWorldMap`](../arworldmap.md) encapsulates the state of a running [`ARSession`](../arsession.md). This state includes ARKit’s awareness of the physical space the user moves the device in (which ARKit uses to determine the device’s position and orientation), as well as any [`ARAnchor`](../aranchor.md) objects added to the session (which can represent detected real-world features or virtual content placed by your app). After you use  [`getCurrentWorldMap(completionHandler:)`](../arsession/getcurrentworldmap%28completionhandler%29.md) to save a session’s world map, you can assign it to a configuration’s [`initialWorldMap`](./initialworldmap.md) property and use [`run(_:options:)`](../arsession/run%28_,options%29.md) to start another session with the same spatial awareness and anchors.
 

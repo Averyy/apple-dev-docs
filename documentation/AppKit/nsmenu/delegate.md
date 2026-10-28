@@ -19,7 +19,7 @@ weak var delegate: (any NSMenuDelegate)? { get set }
 @property (weak, nullable) id<NSMenuDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 This property indicates the delegate of the menu.
 

@@ -38,11 +38,11 @@ init(image newImage: NSImage, hotSpot point: NSPoint)
 - (instancetype) initWithImage:(NSImage *) newImage hotSpot:(NSPoint) point;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized cursor object.
 
-#### Discussion
+## Discussion
 
 This method is the designated initializer for the class.
 

@@ -28,7 +28,7 @@ optional func resolvePlaybackQueueLocation(for intent: INPlayMediaIntent) async 
 - (void) resolvePlaybackQueueLocationForPlayMedia:(INPlayMediaIntent *) intent withCompletion:(void (^)(INPlaybackQueueLocationResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to resolve the location in the playback queue where your app plays the media.
 

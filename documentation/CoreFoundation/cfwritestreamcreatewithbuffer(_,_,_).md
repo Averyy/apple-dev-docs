@@ -25,11 +25,11 @@ func CFWriteStreamCreateWithBuffer(_ alloc: CFAllocator!, _ buffer: UnsafeMutabl
 extern CFWriteStreamRefCFWriteStreamCreateWithBuffer(CFAllocatorRef alloc, UInt8 *buffer, CFIndex bufferCapacity);
 ```
 
-#### Return Value
+## Return Value
 
 A new write stream, or `NULL` on failure. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
-#### Discussion
+## Discussion
 
 When `buffer` is filled after writing `bufferCapacity` bytes, the stream is exhausted and its status becomes [`CFStreamStatus.atEnd`](./cfstreamstatus/atend.md).
 

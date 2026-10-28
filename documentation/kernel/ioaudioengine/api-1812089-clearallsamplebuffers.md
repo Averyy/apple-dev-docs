@@ -11,7 +11,7 @@ Zeros out all of the sample and mix buffers associated with the IOAudioEngine
 virtual void clearAllSampleBuffers();
 ```
 
-#### Overview
+## Overview
 
 This is called during resumeAudioEngine() since the audio engine gets started back at the beginning of the sample buffer.
 

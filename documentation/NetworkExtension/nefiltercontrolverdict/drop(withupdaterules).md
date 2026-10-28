@@ -22,11 +22,11 @@ class func drop(withUpdateRules updateRules: Bool) -> NEFilterControlVerdict
 + (NEFilterControlVerdict *) dropVerdictWithUpdateRules:(BOOL) updateRules;
 ```
 
-#### Return Value
+## Return Value
 
 An `NEFilterControlVerdict` object.
 
-#### Discussion
+## Discussion
 
 When the Filter Control Provider passes this verdict to the completion handler passed to its [`handleNewFlow(_:completionHandler:)`](../nefiltercontrolprovider/handlenewflow%28_,completionhandler%29.md) method, the system will drop all of the flow’s data. In addition, if the updateRules parameter is YES the system will call the Filter Data Provider’s [`handleRulesChanged()`](../nefilterdataprovider/handleruleschanged%28%29.md) method.
 

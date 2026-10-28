@@ -20,7 +20,7 @@ A skeleton consists of a hierarchy of joints. Each joint defines a coordinate sp
 struct Skeleton
 ```
 
-#### Overview
+## Overview
 
 Each joint in a skeleton has a name, which usually determines the joint’s parent. For example, the legs of a human body might include these joints:
 

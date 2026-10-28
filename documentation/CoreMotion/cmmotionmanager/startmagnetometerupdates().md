@@ -22,7 +22,7 @@ func startMagnetometerUpdates()
 - (void) startMagnetometerUpdates;
 ```
 
-#### Discussion
+## Discussion
 
 You can get the latest magnetometer data through the [`magnetometerData`](./magnetometerdata.md) property. You must call [`stopMagnetometerUpdates()`](./stopmagnetometerupdates%28%29.md) when you no longer want your app to process magnetometer updates.
 

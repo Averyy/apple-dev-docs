@@ -19,7 +19,7 @@ func metadataClear(_ rangesToClear: [FSMetadataRange], withDelayedWrites: Bool) 
 - (BOOL) metadataClear:(NSArray<FSMetadataRange *> *) rangesToClear withDelayedWrites:(BOOL) withDelayedWrites error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 This method clears the specified ranges in the resource’s buffer cache by writing zeroes into them.
 

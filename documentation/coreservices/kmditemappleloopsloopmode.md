@@ -19,7 +19,7 @@ let kMDItemAppleLoopsLoopMode: CFString!
 const CFStringRef kMDItemAppleLoopsLoopMode;
 ```
 
-#### Discussion
+## Discussion
 
 Tagged files can either be loops or non-loops (e.g., a cymbal crash). "Looping" indicates if the file should be treated as a loop. "Non-looping" indicates the file should not be treated as a loop.
 

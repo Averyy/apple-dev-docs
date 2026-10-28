@@ -21,7 +21,7 @@ The calendar to use when formatting relative dates.
 var calendar: Calendar
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to [`autoupdatingCurrent`](../../nscalendar/autoupdatingcurrent.md). If you set this property to `nil`, the format style resets to using [`autoupdatingCurrent`](../../nscalendar/autoupdatingcurrent.md).
 

@@ -19,7 +19,7 @@ Represents the VGGish feature extractor, which is compatible with older OS versi
 case vggish(revision: Int = 1)
 ```
 
-#### Discussion
+## Discussion
 
 The case uses the newest version if you don’t provide an associated value for `revision`.
 

@@ -13,7 +13,7 @@
 kINQUIRY_Byte3_HISUP_Bit = 4
 ```
 
-#### Discussion
+## Discussion
 
 HISUP bit definition.
 

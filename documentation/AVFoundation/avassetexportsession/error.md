@@ -26,7 +26,7 @@ var error: (any Error)? { get }
 @property (nonatomic, readonly, nullable) NSError * error;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is `nil`. The export session sets it to an error object if its status changes to [`AVAssetExportSession.Status.failed`](./status-swift.enum/failed.md) or [`AVAssetExportSession.Status.cancelled`](./status-swift.enum/cancelled.md).
 

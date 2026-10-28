@@ -19,7 +19,7 @@ var arrangedSubviews: [NSView] { get }
 @property (copy, readonly) NSArray<__kindof NSView *> * arrangedSubviews;
 ```
 
-#### Discussion
+## Discussion
 
 This array contains a subset of the views in the split view’s [`subviews`](../nsview/subviews.md) property. The views in this array may appear in a different order than in the [`subviews`](../nsview/subviews.md) array.
 

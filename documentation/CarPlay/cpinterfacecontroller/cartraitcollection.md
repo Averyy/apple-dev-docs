@@ -21,7 +21,7 @@ var carTraitCollection: UITraitCollection { get }
 @property (nonatomic, strong, readonly) UITraitCollection * carTraitCollection;
 ```
 
-#### Discussion
+## Discussion
 
 Use this trait collection to derive metrics, such as display scale, for your CarPlay templates. For example, images you display in a [`CPListTemplate`](../cplisttemplate.md) can use this trait collection’s display scale rather than the scale of the user’s iPhone screen.
 

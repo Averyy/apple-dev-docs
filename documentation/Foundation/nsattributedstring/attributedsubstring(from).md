@@ -25,11 +25,11 @@ func attributedSubstring(from range: NSRange) -> NSAttributedString
 - (NSAttributedString *) attributedSubstringFromRange:(NSRange) range;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSAttributedString` object consisting of the characters and attributes within `aRange` in the receiver.
 
-#### Discussion
+## Discussion
 
 Raises an [`rangeException`](../nsexceptionname/rangeexception.md) if any part of `aRange` lies beyond the end of the receiver’s characters. This method treats the length of the string as a valid range value that returns an empty string.
 

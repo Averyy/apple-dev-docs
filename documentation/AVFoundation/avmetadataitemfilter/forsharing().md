@@ -25,11 +25,11 @@ class func forSharing() -> AVMetadataItemFilter
 + (AVMetadataItemFilter *) metadataItemFilterForSharing;
 ```
 
-#### Return Value
+## Return Value
 
 An instance of an `AVMetadataItemFilter`.
 
-#### Discussion
+## Discussion
 
 Removes user-identifying metadata items, such as location information, and leaves only metadata related to commerce or playback itself. For example, playback, copyright, and commercial-related metadata, such as a purchaser’s ID as set by a vendor of digital media, along with metadata either derivable from the media itself or necessary for its proper behavior are all left intact.
 

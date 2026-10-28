@@ -17,11 +17,11 @@ Compute the eigenvalues and eigenvectors of a square matrix.
 func eig(_ array: MLXArray, stream: StreamOrDevice = .default) -> (MLXArray, MLXArray)
 ```
 
-#### Return Value
+## Return Value
 
 A tuple containing the eigenvalues and the normalized right eigenvectors. The column `v[0..., i]` is the eigenvector corresponding to the i-th eigenvalue.
 
-#### Discussion
+## Discussion
 
 This function differs from `numpy.linalg.eig` in that the return type is always complex even if the eigenvalues are all real.
 

@@ -17,7 +17,7 @@ Creates a markup toolbar view controller.
 @preconcurrency init(supportedFeatureSet: FeatureSet)
 ```
 
-#### Discussion
+## Discussion
 
 The feature set limits the tools / actions a person can access from this toolbar. Also set `supportedFeatureSet` on any `PaperMarkupViewController` you use.
 

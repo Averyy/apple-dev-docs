@@ -23,7 +23,7 @@ var dnsSettings: NEDNSSettings? { get set }
 @property (strong, nullable) NEDNSSettings * dnsSettings;
 ```
 
-#### Discussion
+## Discussion
 
 This property can be set to either an [`NEDNSOverHTTPSSettings`](../nednsoverhttpssettings.md) object or an [`NEDNSOverTLSSettings`](../nednsovertlssettings.md) object.
 

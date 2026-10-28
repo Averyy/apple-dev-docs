@@ -21,7 +21,7 @@ A structure that contains perceptual loudness measurements for a song, including
 struct LoudnessResult
 ```
 
-#### Overview
+## Overview
 
 The `LoudnessResult` delivers perceptual loudness measurements that align with human hearing perception, using the Loudness K-weighted Full Scale (LUFS) standard defined in ITU-R BS.1770.
 

@@ -19,7 +19,7 @@ enum AuthorizationType
 enum NSWorkspaceAuthorizationType : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 To enable your app to prompt the user for these file permissions, you must have a Privileged File Operation entitlement. If you have an app on the Mac App Store or plan to submit your app for review, you can [request this entitlement](https://developer.apple.com/go/?id=workspace-authorization).
 

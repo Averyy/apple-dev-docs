@@ -24,7 +24,7 @@ case motion
 MTLAccelerationStructureInstanceDescriptorTypeMotion
 ```
 
-#### Discussion
+## Discussion
 
 This instance type corresponds to the [`MTLAccelerationStructureMotionInstanceDescriptor`](../mtlaccelerationstructuremotioninstancedescriptor.md) structure memory layout.
 

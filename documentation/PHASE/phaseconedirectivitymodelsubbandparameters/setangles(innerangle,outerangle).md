@@ -24,7 +24,7 @@ func setAngles(innerAngle: Double, outerAngle: Double)
 - (void) setInnerAngle:(double) innerAngle outerAngle:(double) outerAngle;
 ```
 
-#### Discussion
+## Discussion
 
 The default value for each angle is `360.0`. The outer angle needs to be greater than or equal to the inner angle.
 

@@ -28,7 +28,7 @@ var isActive: Bool { get set }
 
 - [Adding an access point to your game](../adding-an-access-point-to-your-game.md)
 
-#### Discussion
+## Discussion
 
 If this property is [`true`](../../Swift/true.md), the access point appears after you initialize the local player or appears immediately if you’ve already initialized the player.
 

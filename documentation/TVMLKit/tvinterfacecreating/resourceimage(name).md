@@ -21,11 +21,11 @@ optional func resourceImage(name resourceName: String) -> UIImage?
 - (UIImage *) imageForResource:(NSString *) resourceName;
 ```
 
-#### Return Value
+## Return Value
 
 The [`UIImage`](../../UIKit/uiimage.md) associated with the resource name. Returns `nil` if no image matches the resource name or if the event is not handled.
 
-#### Discussion
+## Discussion
 
 The `resourceName` parameter comes from a resource URL specified in certain elements. For example, `<``badge src="resource://developer-resource">` contains the resource name, `developer-resource`.
 

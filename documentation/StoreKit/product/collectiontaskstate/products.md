@@ -21,7 +21,7 @@ An array of available products if the task was successful.
 var products: [Product]? { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use this as a convenience to access the products in code that doesn’t depend on the reason the reason a product can’t be accessed. The value is `nil` while the task is loading, or if the task fails.
 

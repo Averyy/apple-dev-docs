@@ -21,7 +21,7 @@ A type that parses an input representation, such as a formatted string, into a p
 protocol ParseStrategy : Decodable, Encodable, Hashable
 ```
 
-#### Overview
+## Overview
 
 A [`ParseStrategy`](./parsestrategy.md) allows you to convert a formatted representation into a data type, using one of two approaches:
 

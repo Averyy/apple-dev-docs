@@ -15,7 +15,7 @@ The minimum zoom level of the overlay.
 minimumZ: number;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `null`.
 

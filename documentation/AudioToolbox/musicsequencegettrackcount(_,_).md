@@ -24,11 +24,11 @@ func MusicSequenceGetTrackCount(_ inSequence: MusicSequence, _ outNumberOfTracks
 extern OSStatus MusicSequenceGetTrackCount(MusicSequence inSequence, UInt32 *outNumberOfTracks);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 
-#### Discussion
+## Discussion
 
 The track count provided by this function excludes the tempo track.
 

@@ -19,7 +19,7 @@ class func warning(withLocalizedDescription localizedDescription: String) -> MEA
 + (MEAddressAnnotation *) warningWithLocalizedDescription:(NSString *) localizedDescription;
 ```
 
-#### Return Value
+## Return Value
 
 An annotation that indicates an email address may not be valid or needs attention.
 

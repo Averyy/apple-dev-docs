@@ -17,7 +17,7 @@ Builds a [`ScriptedVocabulary`](./scriptedvocabulary.md) from a scenario corpus.
 struct VocabularyBuilder
 ```
 
-#### Overview
+## Overview
 
 Register specials and add every string a scenario will encode, then call [`build()`](./vocabularybuilder/build%28%29.md). Text is pretokenized at build time, after all specials are known, so special text is never absorbed into a corpus piece.
 

@@ -23,11 +23,11 @@ class func isDistanceAvailable() -> Bool
 + (BOOL) isDistanceAvailable;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if distance estimation is available or [`false`](../../Swift/false.md) if it is not.
 
-#### Discussion
+## Discussion
 
 Distance estimation indicates the ability to use step information to supply the approximate distance traveled by the user. This capability is not supported on all devices.
 

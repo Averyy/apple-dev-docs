@@ -21,7 +21,7 @@ Defines default text scale
 static let `default`: Text.Scale
 ```
 
-#### Discussion
+## Discussion
 
 When specified uses the default text scale.
 

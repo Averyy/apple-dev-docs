@@ -22,11 +22,11 @@ init(identifier: NSToolbar.Identifier)
 - (instancetype) initWithIdentifier:(NSToolbarIdentifier) identifier;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized toolbar object.
 
-#### Discussion
+## Discussion
 
 `identifier` is never seen by users and should not be localized. See the [`identifier`](./identifier-swift.property.md) property for important information.
 

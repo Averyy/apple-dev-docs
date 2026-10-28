@@ -25,11 +25,11 @@ func CFSetGetTypeID() -> CFTypeID
 extern CFTypeID CFSetGetTypeID();
 ```
 
-#### Return Value
+## Return Value
 
 The type identifier for the CFSet type.
 
-#### Discussion
+## Discussion
 
 CFMutableSet has the same type identifier as CFSet.
 

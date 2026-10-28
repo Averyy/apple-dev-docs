@@ -25,7 +25,7 @@ func CFMachPortCreate(_ allocator: CFAllocator!, _ callout: CFMachPortCallBack!,
 extern CFMachPortRefCFMachPortCreate(CFAllocatorRef allocator, CFMachPortCallBack callout, CFMachPortContext *context, Boolean *shouldFreeInfo);
 ```
 
-#### Return Value
+## Return Value
 
 The new CFMachPort object or `NULL` on failure. The CFMachPort object has both send and receive rights. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 

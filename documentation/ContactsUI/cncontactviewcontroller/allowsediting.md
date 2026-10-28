@@ -22,7 +22,7 @@ var allowsEditing: Bool { get set }
 @property (nonatomic, assign) BOOL allowsEditing;
 ```
 
-#### Discussion
+## Discussion
 
 By default, the value of this property is [`true`](../../Swift/true.md). All properties are visible when editing a contact.
 

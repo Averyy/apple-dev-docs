@@ -12,7 +12,7 @@ Generate image masks for people automatically by using semantic person-segmentat
 - Mac Catalyst 15.0+
 - Xcode 13.0+
 
-#### Overview
+## Overview
 
 You can use image masks to make selective adjustments to particular areas of an image. For example, the illustration below shows how to use a mask to perform a blend operation to replace the background behind the subject. ![An illustration of an image-processing operation that blends an original and mask image of a person with a replacement background image. The operation produces a new image that replaces the original background with the background image.](https://developer.apple.com/tutorials/images/Vision/image_mask.png)
 
@@ -22,7 +22,7 @@ The sample app uses the front-facing camera to capture video of the user. It run
 
 > **Note**: You must run the sample app on a physical device with iOS 15 or later.
 
-##### Prepare the Requests
+### Prepare the Requests
 
 The app uses two Vision requests to perform its logic: [VNDetectFaceRectanglesRequest](./vndetectfacerectanglesrequest.md) and [VNGeneratePersonSegmentationRequest](http://developer.apple.com/documentation/vision/vngeneratepersonsegmentationrequest). It uses `VNDetectFaceRectanglesRequest` to detect a bounding rectangle around a person’s face. The observation the request produces also includes the [roll](http://developer.apple.com/documentation/vision/vnfaceobservation/2980939-roll), [yaw](http://developer.apple.com/documentation/vision/vnfaceobservation/2980940-yaw), and new in iOS and tvOS 15 and macOS 12, the [pitch](http://developer.apple.com/documentation/vision/vnfaceobservation/3750998-pitch) angles of the rectangle. The app uses the angles to dynamically calculate background colors as the user moves their head.
 
@@ -49,7 +49,7 @@ segmentationRequest.qualityLevel = .balanced
 segmentationRequest.outputPixelFormat = kCVPixelFormatType_OneComponent8
 ```
 
-##### Perform the Requests on a Video Frame
+### Perform the Requests on a Video Frame
 
 The sample captures video from the front-facing camera and performs the requests on each frame. After the requests finish processing, the app retrieves the image mask from result of the segmentation request and passes it and original frame to the the app’s `blend(original:mask:)` method for further processing.
 
@@ -69,7 +69,7 @@ private func processVideoFrame(_ framePixelBuffer: CVPixelBuffer) {
 }
 ```
 
-##### Render the Results
+### Render the Results
 
 The sample processes the results of the requests by taking the original frame, the mask image, and a background image that it dynamically generates based on the roll, pitch, and yaw angles of the user’s face. It creates a [CIImage](http://developer.apple.com/documentation/coreimage/ciimage) object for each image.
 

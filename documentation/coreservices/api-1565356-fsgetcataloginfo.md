@@ -15,7 +15,7 @@
 OSErr FSGetCatalogInfo(const FSRef *ref, FSCatalogInfoBitmap whichInfo, FSCatalogInfo *catalogInfo, HFSUniStr255 *outName, FSSpecPtr fsSpec, FSRef *parentRef);
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**: Avoid using this function to determine whether a file has changed. The fractional dates returned by the [`FSGetCatalogInfo`](./api-1565356-fsgetcataloginfo.md) function don't compare exactly to the fractional dates returned by the [NSURL](https://developer.apple.com/library/archive/releasenotes/Foundation/RN-Foundation-older-but-post-10.8/index.html#//apple_ref/doc/uid/TP40016592-TRANSLATED_CHAPTER_965-TRANSLATED_DEST_20) date properties, because of differences in rounding and precision.
 >

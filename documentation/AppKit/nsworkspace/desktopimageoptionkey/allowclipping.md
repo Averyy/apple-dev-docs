@@ -19,7 +19,7 @@ static let allowClipping: NSWorkspace.DesktopImageOptionKey
 extern NSWorkspaceDesktopImageOptionKey const NSWorkspaceDesktopImageAllowClippingKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value is an [`NSNumber`](../../../Foundation/nsnumber.md) containing a Boolean, which affects the interpretation of Proportional scaling types. When the value is [`false`](../../../Swift/false.md), the workspace object makes the image fully visible, but it may include empty space on the sides or top and bottom. When the value is [`true`](../../../Swift/true.md), the image fills the entire screen, but may be clipped. If you don’t specify this key, the workspace assumes a value of [`false`](../../../Swift/false.md).  Non-proportional scaling types ignore this value.
 

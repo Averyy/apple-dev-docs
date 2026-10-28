@@ -10,7 +10,7 @@ An updated sound sample description that adds high resolution audio.
 
 - [QuickTime File Format change log](./revision_history.md)
 
-#### Overview
+## Overview
 
 QuickTime 7 introduced a new version of the sound sample description, version 2, which extends QuickTime capabilities to include high resolution audio with another expansion of the sound sample description structure. In QuickTime 7, the sound and audio facilities are based on the Core Audio framework facilities and the Sound Manager has been deprecated. In this version of the sound sample description, the format field is set to `‘lpcm’` for uncompressed data. For compressed data formats, the format field is set to the compression type code (normally `‘mp4a’`) and the compression specifics and other features of QuickTime 7 are supplied by extensions.
 
@@ -26,7 +26,7 @@ Some definitions for sound sample description version 2:
 - Audio Packet: For compressed audio, an audio packet is the natural compressed access unit of that format. For uncompressed audio, an audio packet is simply one LPCM frame.
 - Fields prefixed by `const`: Note the three sound sample description v2 fields whose names start with `const`. These fields are only nonzero if the value is a constant. A zero in each field implies that the value is variable. For example: AAC audio would have a zero in `constBytesPerAudioPacket` because AAC has variable sized audio packets. Codecs with variable duration audio packets set a zero in `constLPCMFramesPerAudioPacket`.
 
-#### LPCM flag values
+## LPCM flag values
 
 The formatSpecificFlags field carries flags significant to the layout and formatting of audio streams defined in the Core Audio underpinnings for sound sample description v2. These are enumerated in the Apple QuickTime/CoreAudioFormat.h interface file and are subject to a fuller interpretation in the context of the AudioStreamBasicDescription data type. See the CoreAudio, “Core Audio Framework Reference” in the OS X Developer Library.
 

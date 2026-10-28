@@ -16,7 +16,7 @@ nonisolated
 struct MenuBarExtra<Label, Content> where Label : View, Content : View
 ```
 
-#### Overview
+## Overview
 
 Use a `MenuBarExtra` when you want to provide access to commonly used functionality, even when your app is not active.
 

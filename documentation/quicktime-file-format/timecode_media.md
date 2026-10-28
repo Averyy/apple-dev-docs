@@ -5,7 +5,7 @@
 
 Store time code data in QuickTime movies with timecode media.
 
-#### Overview
+## Overview
 
 Timecode media is used to store time code data in QuickTime movies. It has a media type of `'tmcd'`.
 

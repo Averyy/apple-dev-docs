@@ -22,7 +22,7 @@ weak var messageComposeDelegate: (any MFMessageComposeViewControllerDelegate)? {
 @property (nonatomic, weak, nullable) id<MFMessageComposeViewControllerDelegate> messageComposeDelegate;
 ```
 
-#### Discussion
+## Discussion
 
 When the user taps a button to send or cancel the message, your delegate is notified and should respond by dismissing the message composition interface. For more information about implementing the methods of your delegate object, see [`MFMessageComposeViewControllerDelegate`](../mfmessagecomposeviewcontrollerdelegate.md).
 

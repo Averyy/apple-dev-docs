@@ -23,7 +23,7 @@ class WKBluetoothAlertRefreshBackgroundTask
 
 - [Using background tasks](./using-background-tasks.md)
 
-#### Overview
+## Overview
 
 Your app can receive [`WKBluetoothAlertRefreshBackgroundTask`](./wkbluetoothalertrefreshbackgroundtask.md) tasks to handle timely alerts in the background. Use these tasks to reconnect a peripheral and handle a critical alert. Apps that use timely alerts can also scan for a specific system identifier (UUID) while in the background. You can then perform the initial connection and pair the devices if necessary.
 

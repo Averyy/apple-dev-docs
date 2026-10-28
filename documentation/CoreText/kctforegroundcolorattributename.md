@@ -25,7 +25,7 @@ let kCTForegroundColorAttributeName: CFString
 extern CFStringRef const kCTForegroundColorAttributeName;
 ```
 
-#### Discussion
+## Discussion
 
 The value associated with this attribute must be a [`CGColor`](../CoreGraphics/cgcolor.md) object. Default value is [`black`](../CoreGraphics/cgcolor/black.md).
 

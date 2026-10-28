@@ -22,11 +22,11 @@ nonisolated
 func listRowInsets(_ insets: EdgeInsets?) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view that uses the given edge insets when used as a list cell.
 
-#### Discussion
+## Discussion
 
 Use `listRowInsets(_:)` to change the default padding of the content of list items.
 

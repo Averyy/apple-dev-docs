@@ -24,7 +24,7 @@ let HMCharacteristicTypeOpticalZoom: String
 extern NSString * const HMCharacteristicTypeOpticalZoom;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is a floating point number representing the optical zoom setting of the camera.
 

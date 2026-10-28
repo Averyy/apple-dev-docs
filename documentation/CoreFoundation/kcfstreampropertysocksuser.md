@@ -25,7 +25,7 @@ let kCFStreamPropertySOCKSUser: CFString
 extern CFStringRef const kCFStreamPropertySOCKSUser;
 ```
 
-#### Discussion
+## Discussion
 
 The value is a `CFString` object containing the user’s name.
 

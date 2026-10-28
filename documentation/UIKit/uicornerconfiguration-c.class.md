@@ -19,7 +19,7 @@ A configuration that defines how corner radii are mapped to the corners of a rec
 @interface UICornerConfiguration : NSObject
 ```
 
-#### Overview
+## Overview
 
 Create a `UICornerConfiguration` that expresses how you want the corners of your view to appear. Your configuration can apply to corners independently or uniformly, and can form the following types of corners:
 
@@ -32,7 +32,7 @@ Select a method to create a configuration that describes which corners of your v
 
 The system uses squared corners by default, so you don’t need to set a configuration to get squared corners.
 
-##### Configure a rounded corner
+### Configure a rounded corner
 
 To configure a rounded corner with a fixed radius, provide [`fixedRadius:`](./uicornerradius-c.class/fixedradius_.md) with a value greater than zero for the radius:
 
@@ -42,7 +42,7 @@ To configure a rounded corner with a fixed radius, provide [`fixedRadius:`](./ui
   [UICornerRadius fixedRadius:12.0]]];
 ```
 
-##### Configure a concentric rounded corner
+### Configure a concentric rounded corner
 
 To configure a rounded corner that’s concentric relative to the containing view, use [`containerConcentricRadius`](./uicornerradius-c.class/containerconcentricradius.md):
 
@@ -54,7 +54,7 @@ To configure a rounded corner that’s concentric relative to the containing vie
 
 Use [`containerConcentricRadiusWithMinimum:`](./uicornerradius-c.class/containerconcentricradiuswithminimum_.md) to indicate a minimum radius for the rounded corner.
 
-##### Configure a corner as a capsule
+### Configure a corner as a capsule
 
 To configure rounded corners that form a capsule, use [`capsuleConfiguration`](./uicornerconfiguration-c.class/capsuleconfiguration.md):
 

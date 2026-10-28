@@ -19,11 +19,11 @@ func runModal() -> Int
 - (NSInteger) runModal;
 ```
 
-#### Return Value
+## Return Value
 
 `NSCancelButton` if the user clicks the Cancel button; otherwise `NSOKButton`.
 
-#### Discussion
+## Discussion
 
 This method uses the printing information associated with the current printing operation.
 

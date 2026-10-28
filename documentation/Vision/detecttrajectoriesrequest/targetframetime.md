@@ -21,7 +21,7 @@ The requested target frame time for processing trajectory detection.
 final var targetFrameTime: CMTime { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Use this property value for real-time processing of frames, which requires execution within a specific amount of time. The request evaluates from frame to frame. If processing takes longer than the targeted time for the current frame, it attempts to decrease the overall time by reducing the accuracy (down to a set minimum) for the next frame. If a frame takes less time than the targeted time, the request increases the accuracy (up to a set maximum) of the next frame.
 

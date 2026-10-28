@@ -19,7 +19,7 @@ var tokenStyle: NSTokenField.TokenStyle { get set }
 @property NSTokenStyle tokenStyle;
 ```
 
-#### Discussion
+## Discussion
 
 The valid values are described in [`NSTokenField.TokenStyle`](../nstokenfield/tokenstyle-swift.enum.md).
 

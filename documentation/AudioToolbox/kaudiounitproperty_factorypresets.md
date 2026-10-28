@@ -24,7 +24,7 @@ var kAudioUnitProperty_FactoryPresets: AudioUnitPropertyID { get }
 kAudioUnitProperty_FactoryPresets
 ```
 
-#### Discussion
+## Discussion
 
 A read-only [`CFArray`](../CoreFoundation/cfarray.md) array of [`AUPreset`](./aupreset.md) structures.
 

@@ -14,7 +14,7 @@
 DCLCommand *(*AllocateUpdateDCLListDCL)(IOFireWireLibDCLCommandPoolRef self, DCLCommand *inDCL, DCLCommand **inDCLCommandList, UInt32 inNumCommands);
 ```
 
-#### Discussion
+## Discussion
 
 Description forthcoming
 

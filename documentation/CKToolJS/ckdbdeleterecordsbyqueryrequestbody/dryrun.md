@@ -15,7 +15,7 @@ A Boolean value that indicates whether to delete matching records.
 attribute boolean? dryRun;
 ```
 
-#### Discussion
+## Discussion
 
 If `dryRun` is set to `true`, the server won’t delete records.
 

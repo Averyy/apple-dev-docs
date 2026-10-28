@@ -25,7 +25,7 @@ func CGPDFDictionaryApplyFunction(_ dict: CGPDFDictionaryRef, _ function: CGPDFD
 extern void CGPDFDictionaryApplyFunction(CGPDFDictionaryRef dict, CGPDFDictionaryApplierFunction function, void *info);
 ```
 
-#### Discussion
+## Discussion
 
 This function enumerates all of the entries in the dictionary, calling the function once for each. The current key, its associated value, and the contextual information are passed to the function (see also [`CGPDFDictionaryApplierFunction`](./cgpdfdictionaryapplierfunction.md)).
 

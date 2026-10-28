@@ -21,7 +21,7 @@ Returns a Boolean value that indicates whether a time range is valid.
 #define CMTIMERANGE_IS_VALID(range)
 ```
 
-#### Return Value
+## Return Value
 
 `true` if `range` is valid; otherwise, `false`.
 

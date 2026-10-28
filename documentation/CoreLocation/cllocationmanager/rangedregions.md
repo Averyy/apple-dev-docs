@@ -24,7 +24,7 @@ var rangedRegions: Set<CLRegion> { get }
 @property (nonatomic, copy, readonly) NSSet<__kindof CLRegion *> * rangedRegions;
 ```
 
-#### Discussion
+## Discussion
 
 The objects in the set are instances of the [`CLBeaconRegion`](../clbeaconregion.md) class.
 

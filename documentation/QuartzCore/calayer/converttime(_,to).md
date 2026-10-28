@@ -24,11 +24,11 @@ func convertTime(_ t: CFTimeInterval, to l: CALayer?) -> CFTimeInterval
 - (CFTimeInterval) convertTime:(CFTimeInterval) t toLayer:(CALayer *) l;
 ```
 
-#### Return Value
+## Return Value
 
 The time interval converted to the time space of `layer`.
 
-#### Discussion
+## Discussion
 
 The following code shows the creation of two layers, `layer` and `offsetSlowMoLayer`. `offsetSlowMoLayer` has an offset time of 1 second and its [`speed`](../camediatiming/speed.md) is set to `0.5`.  The last line converts and prints a time interval of 0.5 seconds converted from the time space of `layer` to the time space of `offsetSlowMoLayer`.
 

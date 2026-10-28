@@ -15,7 +15,7 @@ Retrieves the RCS configuration for the specified cellular service.
 final func configuration(for cellularServiceID: CellularServiceID) throws -> RCSService.Configuration
 ```
 
-#### Discussion
+## Discussion
 
 You can observe changes in configuration through the [`viabilityNotifications`](./viabilitynotifications.md) asynchronous sequence. When the service becomes viable, invoke this method to retrieve updates to the RCS configuration.
 

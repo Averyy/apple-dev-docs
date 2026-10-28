@@ -19,7 +19,7 @@ optional func webView(_ webView: WebView!, shouldChangeSelectedDOMRange currentR
 - (BOOL) webView:(WebView *) webView shouldChangeSelectedDOMRange:(DOMRange *) currentRange toDOMRange:(DOMRange *) proposedRange affinity:(NSSelectionAffinity) selectionAffinity stillSelecting:(BOOL) flag;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the user is allowed to change the selected range; otherwise, [`false`](../../Swift/false.md).
 

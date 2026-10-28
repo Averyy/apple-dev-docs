@@ -25,7 +25,7 @@ class INNoteContentTypeResolutionResult
 @interface INNoteContentTypeResolutionResult : INIntentResolutionResult
 ```
 
-#### Overview
+## Overview
 
 You return an [`INNoteContentTypeResolutionResult`](./innotecontenttyperesolutionresult.md) object when resolving parameters containing an [`INNoteContentType`](./innotecontenttype.md) value. Use the creation method that best reflects your ability to resolve the parameter successfully.
 

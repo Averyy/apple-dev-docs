@@ -20,7 +20,7 @@ A property that contains the time spent in each zone, ordered from lowest to hig
 let zoneDurations: [HKWorkoutZoneDuration]
 ```
 
-#### Discussion
+## Discussion
 
 Each element in this array corresponds to a zone in the group’s configuration and specifies the duration in seconds.
 

@@ -18,7 +18,7 @@ case mainMenuWindow
 kCGMainMenuWindowLevelKey
 ```
 
-#### Discussion
+## Discussion
 
 The level for the menus displayed in the menu bar.
 

@@ -25,7 +25,7 @@ let kCMSampleBufferAttachmentKey_DroppedFrameReason: CFString
 extern CFStringRef const kCMSampleBufferAttachmentKey_DroppedFrameReason;
 ```
 
-#### Discussion
+## Discussion
 
 Sample buffers with this attachment contain no image or data buffer.  They mark a dropped video        frame.  This attachment identifies the reason the frame was dropped. The value for this key is one of the string constants in `Sample Buffer Dropped Frame Reasons`.
 

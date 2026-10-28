@@ -21,7 +21,7 @@ func pasteboardTypes(forElement element: [AnyHashable : Any]!) -> [Any]!
 - (NSArray *) pasteboardTypesForElement:(NSDictionary *) element;
 ```
 
-#### Return Value
+## Return Value
 
 An array of pasteboard types for an element.
 

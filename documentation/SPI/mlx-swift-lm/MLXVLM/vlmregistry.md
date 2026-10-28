@@ -17,7 +17,7 @@ Registry of models and any overrides that go with them, e.g. prompt augmentation
 class VLMRegistry
 ```
 
-#### Overview
+## Overview
 
 The python tokenizers have a very rich set of implementations and configuration. The swift-tokenizers code handles a good chunk of that and this is a place to augment that implementation, if needed.
 

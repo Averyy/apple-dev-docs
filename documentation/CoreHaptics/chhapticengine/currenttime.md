@@ -24,7 +24,7 @@ var currentTime: TimeInterval { get }
 @property (readonly) NSTimeInterval currentTime;
 ```
 
-#### Discussion
+## Discussion
 
 This time applies to all haptic and audio events sent to and managed by the Core Haptics engine. Use the current time as a way to determine or track the start times of haptic and audio events, created as [`CHHapticEvent`](../chhapticevent.md) objects. It corresponds to the [`relativeTime`](../chhapticevent/relativetime.md) and [`duration`](../chhapticevent/duration.md) properties of haptic events.
 

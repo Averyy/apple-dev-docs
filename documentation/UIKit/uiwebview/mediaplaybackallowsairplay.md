@@ -21,7 +21,7 @@ var mediaPlaybackAllowsAirPlay: Bool { get set }
 @property (nonatomic) BOOL mediaPlaybackAllowsAirPlay;
 ```
 
-#### Discussion
+## Discussion
 
 The default value on both iPad and iPhone is [`true`](../../Swift/true.md).
 

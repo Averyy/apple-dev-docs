@@ -20,7 +20,7 @@ A handle to a relationship definition stored in a layer.
 struct Spec
 ```
 
-#### Overview
+## Overview
 
 Relationships store connections to other prims (target paths) rather than typed values. Used for scene linkages like material bindings, collection membership, and proxy references.
 

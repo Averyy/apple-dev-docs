@@ -19,7 +19,7 @@ func sortIndicatorRect(forBounds rect: NSRect) -> NSRect
 - (NSRect) sortIndicatorRectForBounds:(NSRect) rect;
 ```
 
-#### Return Value
+## Return Value
 
 The rectangle within `theRect` that should contain the sorting indicator.
 

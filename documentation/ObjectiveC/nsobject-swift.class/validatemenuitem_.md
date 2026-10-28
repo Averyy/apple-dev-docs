@@ -15,11 +15,11 @@ Implemented to override the default action of enabling or disabling a specific m
 - (BOOL) validateMenuItem:(NSMenuItem *) menuItem;
 ```
 
-#### Return Value
+## Return Value
 
 [`YES`](../yes.md) to enable `menuItem`, [`NO`](../no.md) to disable it.
 
-#### Discussion
+## Discussion
 
 The object implementing this method must be the target of `menuItem`. You can determine which menu item `menuItem` is by querying it for its tag or action.
 

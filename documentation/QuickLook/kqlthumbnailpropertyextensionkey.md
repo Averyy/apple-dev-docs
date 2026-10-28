@@ -21,7 +21,7 @@ let kQLThumbnailPropertyExtensionKey: CFString!
 extern CFStringRef const kQLThumbnailPropertyExtensionKey;
 ```
 
-#### Discussion
+## Discussion
 
 The associated value is a [`CFString`](../CoreFoundation/cfstring.md).
 

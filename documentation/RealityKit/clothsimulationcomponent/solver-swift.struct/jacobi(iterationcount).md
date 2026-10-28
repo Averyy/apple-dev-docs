@@ -17,11 +17,11 @@ Jacobi solver for a cloth simulation.
 static func jacobi(iterationCount: Int = 1) -> ClothSimulationComponent.Solver
 ```
 
-#### Return Value
+## Return Value
 
 A Jacobi solver configuration.
 
-#### Discussion
+## Discussion
 
 The Jacobi solver can be faster and more power efficient than Gauss-Seidel, especially if the number of particles in your simulation is low. However, the Jacobi solver has a slower convergence than Gauss-Seidel, so when used with the same number of iterations we can expect bigger errors in the simulation.
 

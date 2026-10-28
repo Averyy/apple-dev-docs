@@ -24,11 +24,11 @@ init(reservationContainerReference: INSpeakableString?, reservationItemReference
 - (instancetype) initWithReservationContainerReference:(INSpeakableString *) reservationContainerReference reservationItemReferences:(NSArray<INSpeakableString *> *) reservationItemReferences;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized intent object or `nil` if the object could not be created.
 
-#### Discussion
+## Discussion
 
 The [`INGetReservationDetailsIntent`](../ingetreservationdetailsintent.md) object should include information about the reservation that accurately represents the content, where to find it, and where to add it.
 

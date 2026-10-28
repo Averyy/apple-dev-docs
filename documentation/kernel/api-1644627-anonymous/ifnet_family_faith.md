@@ -13,7 +13,7 @@
 IFNET_FAMILY_FAITH = 11
 ```
 
-#### Discussion
+## Discussion
 
 A FAITH [IPv4/IPv6 translation] interface.
 

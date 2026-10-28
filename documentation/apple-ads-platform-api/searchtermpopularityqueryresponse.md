@@ -15,7 +15,7 @@ A response wrapper for search term popularity query results.
 object SearchTermPopularityQueryResponse
 ```
 
-#### Discussion
+## Discussion
 
 Each row in `result.rows` always includes the following dimension fields:
 
@@ -37,7 +37,7 @@ Rows include the following dimension fields only when requested via the requestâ
 
 See [`SearchTermPopularityRow`](./searchtermpopularityrow.md) for field descriptions.
 
-##### Example
+### Example
 
 ```json
 {

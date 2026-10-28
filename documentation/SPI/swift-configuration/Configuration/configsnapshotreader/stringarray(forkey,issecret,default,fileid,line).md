@@ -24,11 +24,11 @@ Synchronously gets a config value for the given config key, with a default fallb
 func stringArray(forKey key: ConfigKey, isSecret: Bool = false, default defaultValue: [String], fileID: String = #fileID, line: UInt = #line) -> [String]
 ```
 
-#### Return Value
+## Return Value
 
 The config value if found and convertible, otherwise the default value.
 
-#### Discussion
+## Discussion
 
 Use this method when you need a guaranteed non-nil result. If the configuration value is missing or can’t be converted to the expected type, the method returns the default value instead.
 

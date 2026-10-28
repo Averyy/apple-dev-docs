@@ -21,7 +21,7 @@ A network resource was requested, but an internet connection has not been establ
 var NSURLErrorNotConnectedToInternet: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 This error occurs when the connection can’t be established a lack of connectivity or because the user chooses not to make a network connection automatically.
 

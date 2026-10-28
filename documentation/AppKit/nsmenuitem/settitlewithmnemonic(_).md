@@ -19,7 +19,7 @@ func setTitleWithMnemonic(_ stringWithAmpersand: String)
 - (void) setTitleWithMnemonic:(NSString *) stringWithAmpersand;
 ```
 
-#### Discussion
+## Discussion
 
 Use an ampersand character to mark the character (the one following the ampersand) to be designated.
 

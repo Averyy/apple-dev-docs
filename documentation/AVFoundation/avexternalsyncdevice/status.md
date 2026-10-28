@@ -23,7 +23,7 @@ var status: AVExternalSyncDeviceStatus { get }
 @property (nonatomic, readonly) AVExternalSyncDeviceStatus status;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to query the current connection status of the external sync device. This property is key-value observable.
 

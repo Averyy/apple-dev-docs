@@ -14,7 +14,7 @@ Enable drag-and-drop interactions in lists, tables and custom views.
 - visionOS 2.0+
 - Xcode 16.0+
 
-#### Overview
+## Overview
 
 This sample code project demonstrates how a SwiftUI view can act as a drag source or drop destination.
 
@@ -24,7 +24,7 @@ In the sample app, people can drag a contact from a list of contacts and drop it
 
 On iPad, people can use this sample with a second app such as Contacts or Notes in Split View. People can drag a row from this app into Contacts or drag a contact from Contacts into this app.
 
-##### Enable Drag Interactions
+### Enable Drag Interactions
 
 To enable dragging, add the `draggable(_:)` modifier to a view to send items that conform to `Transferable` protocol.
 
@@ -47,7 +47,7 @@ When someone drags a contact from a list of contacts, the app uses the [`draggab
 
 To learn more about adopting the draggable API to provide items for drag operations, see [Making a view into a drag source](./making-a-view-into-a-drag-source.md).
 
-##### Enable drop interactions
+### Enable drop interactions
 
 Use the `dropDestination(for:action:isTargeted:)` modifier to receive dragged items and define the destination that handles the dropped content.
 

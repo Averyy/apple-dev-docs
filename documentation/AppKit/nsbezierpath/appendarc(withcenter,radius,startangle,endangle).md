@@ -19,7 +19,7 @@ func appendArc(withCenter center: NSPoint, radius: CGFloat, startAngle: CGFloat,
 - (void) appendBezierPathWithArcWithCenter:(NSPoint) center radius:(CGFloat) radius startAngle:(CGFloat) startAngle endAngle:(CGFloat) endAngle;
 ```
 
-#### Discussion
+## Discussion
 
 The created arc lies on the perimeter of the circle, between the angles specified by the `startAngle` and `endAngle` parameters. The arc is drawn in a counterclockwise direction. If the receiver’s path is empty, this method sets the current point to the beginning of the arc before adding the arc segment. If the receiver’s path is not empty, a line is drawn from the current point to the starting point of the arc.
 

@@ -15,7 +15,7 @@ The line separator key.
 static let lineSeparator: NSEvent.SpecialKey
 ```
 
-#### Discussion
+## Discussion
 
 This key is unavailable on most Macintosh keyboards.
 

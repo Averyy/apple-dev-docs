@@ -25,7 +25,7 @@ func nw_parameters_create_secure_udp(_ configure_dtls: @escaping nw_parameters_c
 nw_parameters_tnw_parameters_create_secure_udp(nw_parameters_configure_protocol_block_t configure_dtls, nw_parameters_configure_protocol_block_t configure_udp);
 ```
 
-#### Discussion
+## Discussion
 
 This function allows you to either use the default configurations for DTLS and UDP, or use customized protocol options. If you want to use the default configuration, pass NW_PARAMETERS_DEFAULT_CONFIGURATION. If you want to customize the options for a protocol, pass a block to modify the options.
 

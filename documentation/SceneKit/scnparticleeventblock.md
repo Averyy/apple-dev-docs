@@ -25,7 +25,7 @@ typealias SCNParticleEventBlock = (UnsafeMutablePointer<UnsafeMutableRawPointer>
 typedef void (^)(void **, unsigned long *, unsigned int *, long) SCNParticleEventBlock;
 ```
 
-#### Discussion
+## Discussion
 
 The block takes the following parameters:
 

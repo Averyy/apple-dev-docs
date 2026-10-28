@@ -15,7 +15,7 @@ Releases a Core Video OpenGL buffer.
 extern void CVOpenGLBufferRelease(CVOpenGLBufferRef buffer);
 ```
 
-#### Discussion
+## Discussion
 
 This function is equivalent to `CFRelease`, but is `NULL` safe.
 

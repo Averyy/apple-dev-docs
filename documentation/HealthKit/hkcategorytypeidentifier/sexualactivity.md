@@ -24,7 +24,7 @@ static let sexualActivity: HKCategoryTypeIdentifier
 extern HKCategoryTypeIdentifier const HKCategoryTypeIdentifierSexualActivity;
 ```
 
-#### Discussion
+## Discussion
 
 Use a [`HKCategoryValue.notApplicable`](../hkcategoryvalue/notapplicable.md) value with these samples. These samples can include [`HKMetadataKeySexualActivityProtectionUsed`](../hkmetadatakeysexualactivityprotectionused.md) metadata.
 

@@ -25,11 +25,11 @@ func CMBlockBufferCreateWithBufferReference(allocator structureAllocator: CFAllo
 extern OSStatus CMBlockBufferCreateWithBufferReference(CFAllocatorRef structureAllocator, CMBlockBufferRef bufferReference, size_t offsetToData, size_t dataLength, CMBlockBufferFlags flags, CMBlockBufferRef*blockBufferOut);
 ```
 
-#### Return Value
+## Return Value
 
 Returns `kCMBlockBufferNoErr` if successful.
 
-#### Discussion
+## Discussion
 
 Creates a new `CMBlockBuffer` that refers to (a possibly subset portion of) another `CMBlockBuffer`. The returned `CMBlockBuffer` may be further expanded using [`CMBlockBufferAppendMemoryBlock(_:memoryBlock:length:blockAllocator:customBlockSource:offsetToData:dataLength:flags:)`](./cmblockbufferappendmemoryblock%28_,memoryblock,length,blockallocator,customblocksource,offsettodata,datalength,flags%29.md) and/or [`CMBlockBufferAppendBufferReference(_:targetBBuf:offsetToData:dataLength:flags:)`](./cmblockbufferappendbufferreference%28_,targetbbuf,offsettodata,datalength,flags%29.md).
 

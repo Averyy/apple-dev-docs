@@ -19,7 +19,7 @@ var tickMarkPosition: NSSlider.TickMarkPosition { get set }
 @property NSTickMarkPosition tickMarkPosition;
 ```
 
-#### Discussion
+## Discussion
 
 The default alignments are `NSTickMarkBelow` and `NSTickMarkLeft`. This property has no effect if no tick marks have been assigned (that is, [`numberOfTickMarks`](./numberoftickmarks.md) returns 0).
 

@@ -32,7 +32,7 @@ var paymentMethod: INPaymentMethod? { get }
 @property (atomic, copy, readonly, nullable) INPaymentMethod * paymentMethod;
 ```
 
-#### Discussion
+## Discussion
 
 If the user requests a specific payment method, this property contains that method. When processing payments later, you use the requested payment method to determine how to apply charges for the ride. You are responsible for handling and settling all financial transactions between your service and the user.
 

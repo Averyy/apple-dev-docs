@@ -24,7 +24,7 @@ var capInsets: UIEdgeInsets { get }
 @property (nonatomic, readonly) UIEdgeInsets capInsets;
 ```
 
-#### Discussion
+## Discussion
 
 End caps specify the portion of an image that should not be resized when an image is stretched. This technique is used to implement buttons and other resizable image-based interface elements. When a button with end caps is resized, the resizing occurs only in the middle of the button, in the region between the end caps. The end caps themselves keep their original size and appearance.
 

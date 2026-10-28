@@ -21,7 +21,7 @@ A symbol of another type.
 case otherSymbol
 ```
 
-#### Discussion
+## Discussion
 
 This value corresponds to the category `Other_Symbol` (abbreviated `So`) in the [Unicode Standard](https://unicode.org/reports/tr44/#General_Category_Values).
 

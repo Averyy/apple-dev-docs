@@ -25,7 +25,7 @@ class func strongToStrongObjects() -> NSMapTable<KeyType, ObjectType>
 + (NSMapTable<id,id> *) strongToStrongObjectsMapTable;
 ```
 
-#### Return Value
+## Return Value
 
 A new map table object which has strong references to the keys and values.
 

@@ -23,11 +23,11 @@ optional func contextMenuInteraction(_ interaction: UIContextMenuInteraction, co
 - (UITargetedPreview *) contextMenuInteraction:(UIContextMenuInteraction *) interaction configuration:(UIContextMenuConfiguration *) configuration highlightPreviewForItemWithIdentifier:(id<NSCopying>) identifier;
 ```
 
-#### Return Value
+## Return Value
 
 A targeted preview object corresponding to the item with the identifier to use during the menu’s highlight and presentation animation.
 
-#### Discussion
+## Discussion
 
 The system calls this method when a context-menu interaction begins. Implement this method to override the default highlight preview that the system generates for the item.
 

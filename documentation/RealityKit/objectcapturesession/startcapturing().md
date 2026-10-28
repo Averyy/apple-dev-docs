@@ -17,7 +17,7 @@ Begins taking images for object capture.
 func startCapturing()
 ```
 
-#### Discussion
+## Discussion
 
 This call moves the session state from `.ready` or `.detecting` into `.capturing`. In object-centric scanning, this function is called after the user chooses the object selection bounding box and wishes to start the capture process. This call then moves the session state from `.detecting` into `.capturing`. In freeform scanning where the user skips the bounding box selection, this call moves the session state from `.ready` directly into `.capturing`.
 

@@ -12,11 +12,11 @@ virtual bool initHardware(
  IOService *provider);
 ```
 
-#### Return Value
+## Return Value
 
 This function should return true on a successful initialization.
 
-#### Overview
+## Overview
 
 In a typical implementation, a driver would implementation this function and perform a number of tasks. Those include mapping hardware resources, initializing the hardware to a known state, creating the IOAudioEngines, IOAudioControls and IOAudioStreams. Additionally it should also call setDeviceName(), setDeviceShortName(), setManufacturerName(). Upon return of this function, the device should be ready to begin vending services to the system.
 

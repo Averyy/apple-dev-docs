@@ -22,7 +22,7 @@ func setBundleIdentifier(_ bundleIdentifier: String) throws
 - (BOOL) setBundleIdentifier:(NSString *) bundleIdentifier error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 This is only supported for web browsers that have been properly registered with Screen Time.
 

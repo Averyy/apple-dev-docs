@@ -5,7 +5,7 @@
 
 Implement user-initiated, identity-focused authentication flows.
 
-#### Overview
+## Overview
 
 The account-driven enrollment flow is a user identity-focused flow that a person initiates when logging in with their Managed Apple Account in Settings or System Settings. An advantage of this flow is that the device management service is able to authenticate the person who’s attempting to enroll before sending any data, and can perform ongoing authentication to ensure the person is still associated with the enrolled device.
 
@@ -28,7 +28,7 @@ There are five key elements to the flow:
 
 The account-driven flow is supported in iOS 15 and iPadOS 15 for user enrollments, and in iOS 16,, iPadOS 16, macOS 14, and visionOS 1.1, and later for both device and user enrollments.
 
-#### Implement the simple authentication flow
+## Implement the simple authentication flow
 
 For the simple access token method, the device follows these steps:
 
@@ -37,7 +37,7 @@ For the simple access token method, the device follows these steps:
 
 The device management service can opt to invalidate the access token at any point, requiring the user to reauthenticate as proof that they’re still actively using the device. For information on the simple authentication enrollment flow, see [Implementing the simple authentication account-driven enrollment flow](./implementing-the-simple-authentication-account-driven-enrollment-flow.md).
 
-#### Implement the OAuth 2 flow
+## Implement the OAuth 2 flow
 
 The OAuth 2 method follows these steps:
 
@@ -46,7 +46,7 @@ The OAuth 2 method follows these steps:
 
 The access token can have a short lifetime, and the device management service can also opt to treat it as invalid at any time. If the device has a refresh token from the OAuth 2 authorization service, the device can silently refresh the short-lived access token. If it doesn’t have a refresh token, or the refresh request fails, the system requires the user to reauthenticate as proof that they’re still actively using the device. For more information on the OAuth 2 enrollment flow, see [Implementing the OAuth 2 authentication account-driven enrollment flow](./implementing-the-oauth2-authentication-account-driven-enrollment-flow.md).
 
-#### Implement Enrollment SSO
+## Implement Enrollment SSO
 
 For Enrollment SSO, use one of the two authentication methods described above (preferably, OAuth 2). The initial authentication challenge from the device management service includes an HTTP header (`X-Apple-MDM-ESSO`), indicating that Enrollment SSO is available and the device needs to use it. That header has a URL as its value, and the client downloads a JSON document from that URL. The JSON document contains details about an App Store-hosted extensible SSO app that the client downloads, installs, and configures. That app intercepts the subsequent authentication requests to perform the custom single sign-on. After the system presents the app, the regular account-driven enrollment authentication flow proceeds. The system asks the SSO app to return the appropriate tokens for the corresponding authentication method. For more information on the Enrollment SSO enrollment flow, see [Implementing the Enrollment SSO flow](./implementing-the-enrollment-sso-flow.md).
 

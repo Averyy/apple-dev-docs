@@ -5,7 +5,7 @@
 
 Customize appearance information directly on the navigation bar object.
 
-#### Overview
+## Overview
 
 In iOS 13 and later, customize your navigation bar using the [`standardAppearance`](./uinavigationbar/standardappearance.md), [`compactAppearance`](./uinavigationbar/compactappearance.md), and [`scrollEdgeAppearance`](./uinavigationbar/scrolledgeappearance.md) properties. You may continue to use these legacy accessors to customize your navigation bar’s appearance directly, but you must update the appearance for different bar configurations yourself.
 

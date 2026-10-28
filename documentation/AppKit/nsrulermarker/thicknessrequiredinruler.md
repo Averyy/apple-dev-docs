@@ -19,7 +19,7 @@ var thicknessRequiredInRuler: CGFloat { get }
 @property (readonly) CGFloat thicknessRequiredInRuler;
 ```
 
-#### Discussion
+## Discussion
 
 The amount of the receiver’s image that’s displayed above or to the left of the ruler view’s baseline, the height for a horizontal ruler or width for a vertical ruler.
 

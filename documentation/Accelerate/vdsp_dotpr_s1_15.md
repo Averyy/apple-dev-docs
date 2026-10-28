@@ -21,7 +21,7 @@ Calculates the dot product of two fixed-point 1.15 format vectors.
 void vDSP_dotpr_s1_15(const short *__A, vDSP_Stride __IA, const short *__B, vDSP_Stride __IB, short *__C, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 This function calculates the dot product of two vectors, using the following operation:
 

@@ -20,7 +20,7 @@ var parentID: NSNumber? { get }
 @property (nonatomic, retain, readonly, nullable) NSNumber * parentID;
 ```
 
-#### Discussion
+## Discussion
 
 If the playlist doesn’t have a parent, this property is `nil`.
 

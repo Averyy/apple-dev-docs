@@ -20,7 +20,7 @@ case devicePointedTooLow
 ARGeoTrackingStateReasonDevicePointedTooLow
 ```
 
-#### Discussion
+## Discussion
 
 ARKit provides the app with this reason when the app is in state [`ARGeoTrackingStatus.State.localizing`](../state-swift.enum/localizing.md) and the device is not capturing enough of the necessary live-camera imagery needed for visual localization because the user is pointing the camera too low. To resolve the issue, the app needs to instruct the user to raise the device and follow the guidance in [Assisting the User with Visual Localization](../state-swift.enum/localizing.md#Assisting-the-User-with-Visual-Localization).
 

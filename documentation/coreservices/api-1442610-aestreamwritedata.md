@@ -19,11 +19,11 @@ func AEStreamWriteData(_ ref: AEStreamRef!, _ data: UnsafeRawPointer!, _ length:
 OSStatus AEStreamWriteData(AEStreamRef ref, const void *data, Size length);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../applicationservices/apple_event_manager.md#1656145).
 
-#### Discussion
+## Discussion
 
 You can call this routine any number of times to build up the data contents of the descriptor incrementally. You must precede calls to this routine by a call to either [`AEStreamOpenDesc(_:_:)`](./api-1446544-aestreamopendesc.md) or [`AEStreamOpenKeyDesc(_:_:_:)`](./api-1442897-aestreamopenkeydesc.md). When you are done adding data to the descriptor, call [`AEStreamCloseDesc(_:)`](./api-1449272-aestreamclosedesc.md) to complete the descriptor definition. 
 

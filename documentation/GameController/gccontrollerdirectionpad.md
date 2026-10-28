@@ -24,7 +24,7 @@ class GCControllerDirectionPad
 @interface GCControllerDirectionPad : GCControllerElement
 ```
 
-#### Overview
+## Overview
 
 You get the input values for this element from its subelements. You can use either the [`xAxis`](./gccontrollerdirectionpad/xaxis.md) and [`yAxis`](./gccontrollerdirectionpad/yaxis.md) properties to get coordinates, or the [`up`](./gccontrollerdirectionpad/up.md), [`down`](./gccontrollerdirectionpad/down.md), [`left`](./gccontrollerdirectionpad/left.md), and [`right`](./gccontrollerdirectionpad/right.md) buttons that simulate directional pad buttons.
 

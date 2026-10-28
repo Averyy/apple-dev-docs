@@ -5,7 +5,7 @@
 
 Optimize device camera power usage by stopping sessions when not needed and choosing appropriate video formats.
 
-#### Overview
+## Overview
 
 Device cameras draw a lot of power when they’re in use. To minimize the amount of time your app uses the device camera, run an [`AVCaptureSession`](../AVFoundation/avcapturesession.md) only while your app is using the captured data, and call [`stopRunning()`](../AVFoundation/avcapturesession/stoprunning%28%29.md) at the earliest opportunity. For example, stop the capture session if your app’s camera view is covered by other content, so that the device stops capturing the camera stream when someone can’t see it.
 

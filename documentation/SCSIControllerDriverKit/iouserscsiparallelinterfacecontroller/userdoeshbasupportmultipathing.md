@@ -15,7 +15,7 @@ Queries the HBA child class to determine if it supports multipathing in response
 virtual kern_return_t UserDoesHBASupportMultiPathing(bool *result);
 ```
 
-#### Return Value
+## Return Value
 
 A value that indicates the result of determining if the driver extension class supports multipathing. [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) indicates success. For error definitions, see [IOKit Constants](../../iokit/iokit_constants.md).
 

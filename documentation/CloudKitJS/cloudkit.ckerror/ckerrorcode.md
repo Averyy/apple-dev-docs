@@ -15,7 +15,7 @@ The error code for this error.
 readonly attribute String ckErrorCode;
 ```
 
-#### Discussion
+## Discussion
 
 Possible values are described in [Errors](../errors.md).
 

@@ -25,11 +25,11 @@ init?(properties: [HTTPCookiePropertyKey : Any])
 - (instancetype) initWithProperties:(NSDictionary<NSString *,id> *) properties;
 ```
 
-#### Return Value
+## Return Value
 
 A new cookie object, with the given properies.
 
-#### Discussion
+## Discussion
 
 This initializer returns `nil` if the provided properties are invalid. To successfully create a cookie, you must provide values for (at least) the [`path`](../httpcookiepropertykey/path.md), [`name`](../httpcookiepropertykey/name.md), and [`value`](../httpcookiepropertykey/value.md) keys, and either the [`originURL`](../httpcookiepropertykey/originurl.md) key or the [`domain`](../httpcookiepropertykey/domain.md) key.
 

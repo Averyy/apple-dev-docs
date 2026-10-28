@@ -29,7 +29,7 @@ var sessionDescription: String? { get set }
 
 - [Analyzing HTTP traffic with Instruments](../analyzing-http-traffic-with-instruments.md)
 
-#### Discussion
+## Discussion
 
 This property contains a human-readable string that you can use for debugging purposes. This value may be `nil` and defaults to `nil`. The value is ignored by the session.
 

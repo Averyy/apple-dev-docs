@@ -22,7 +22,7 @@ nonisolated
 func invalidatableContent(_ invalidatable: Bool = true) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 Use this modifier to annotate views that display values that are derived from the current state of your data and might be invalidated in response of, for example, user interaction.
 

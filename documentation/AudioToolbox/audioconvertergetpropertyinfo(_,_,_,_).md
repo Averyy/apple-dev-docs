@@ -24,7 +24,7 @@ func AudioConverterGetPropertyInfo(_ inAudioConverter: AudioConverterRef, _ inPr
 extern OSStatus AudioConverterGetPropertyInfo(AudioConverterRef inAudioConverter, AudioConverterPropertyID inPropertyID, UInt32 *outSize, Boolean *outWritable);
 ```
 
-#### Return Value
+## Return Value
 
 A  result code.
 

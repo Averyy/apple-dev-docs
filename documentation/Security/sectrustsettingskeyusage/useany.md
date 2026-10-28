@@ -20,7 +20,7 @@ static var useAny: SecTrustSettingsKeyUsage { get }
 kSecTrustSettingsKeyUseAny
 ```
 
-#### Discussion
+## Discussion
 
 This is the default key-use setting if no other key use is specified.
 

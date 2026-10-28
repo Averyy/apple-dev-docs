@@ -25,7 +25,7 @@ var isLoaded: Bool { get }
 @property (readonly, getter=isLoaded) BOOL loaded;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) if the bundle’s code is currently loaded, otherwise [`false`](../../Swift/false.md).
 

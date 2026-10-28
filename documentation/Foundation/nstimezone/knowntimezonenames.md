@@ -25,11 +25,11 @@ class var knownTimeZoneNames: [String] { get }
 @property (class, copy, readonly) NSArray<NSString *> * knownTimeZoneNames;
 ```
 
-#### Return Value
+## Return Value
 
 An array of strings listing the IDs of all the time zones known to the system.
 
-#### Discussion
+## Discussion
 
 An array of strings listing the IDs of all the time zones known to the system.
 

@@ -15,7 +15,7 @@ The user info dictionary.
 readonly attribute Object userInfo;
 ```
 
-#### Discussion
+## Discussion
 
 If no user info dictionary has been set, this property is `null`. See [User Info Dictionary Keys](./user_info_dictionary_keys.md) for a list of keys.
 

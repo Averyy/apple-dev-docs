@@ -23,7 +23,7 @@ func setNeedsUpdateConfiguration()
 - (void) setNeedsUpdateConfiguration;
 ```
 
-#### Discussion
+## Discussion
 
 You call this method when you need the view to update its configuration according to the current configuration state. The system calls this method automatically when the view’s [`configurationState`](./configurationstate-7xj7r.md) changes, as well as in other circumstances that may require an update. The system might combine multiple requests into a single update.
 

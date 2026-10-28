@@ -20,7 +20,7 @@ struct SecCodeSignatureFlags
 enum SecCodeSignatureFlags : uint32_t;
 ```
 
-#### Overview
+## Overview
 
 Some of these flags can be set through the `codesign(1)` command’s `--options` argument and some are set implicitly based on signing circumstances. The flags here appear as the value associated with the [`kSecCodeInfoFlags`](./kseccodeinfoflags.md) key in the signing information dictionary. See [Signing Information Dictionary Keys](./signing-information-dictionary-keys.md).
 

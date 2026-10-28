@@ -19,7 +19,7 @@
 extern const CMTag kCMTagProjectionTypeParametricImmersive;
 ```
 
-#### Discussion
+## Discussion
 
 A CMTag of category kCMTagCategory_ProjectionType and the value kCMTagProjectionType_ParametricImmersive (OSType).
 

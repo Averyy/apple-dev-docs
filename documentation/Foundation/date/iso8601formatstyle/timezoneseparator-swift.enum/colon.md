@@ -21,7 +21,7 @@ Specifies a colon character separating the time and time zone in an ISO 8601 dat
 case colon
 ```
 
-#### Discussion
+## Discussion
 
 The `rawValue` of `colon` is “`:`”.
 

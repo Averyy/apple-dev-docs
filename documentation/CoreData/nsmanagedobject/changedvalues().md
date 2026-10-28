@@ -25,11 +25,11 @@ func changedValues() -> [String : Any]
 - (NSDictionary<NSString *,id> *) changedValues;
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary with keys that are the names of persistent properties with changes since last fetching or saving the receiver, and with the new values for those properties.
 
-#### Discussion
+## Discussion
 
 This method only reports changes to properties that are persistent properties of the receiver, not changes to transient properties or custom instance variables.
 

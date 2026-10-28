@@ -4,13 +4,13 @@
 
 Displays large amounts of important information to the user.
 
-#### Overview
+## Overview
 
 Use the `descriptiveAlertTemplate` element to display a significant amount of important information, such as a Terms of Service page. A title is displayed at the top of the screen with a large text area directly below it. An area containing buttons is located along the bottom of the screen. The following figure shows the basic layout for a `descriptiveAlertTemplate` page. The theme for the descriptive alert template defaults to the system preference.
 
 ![Layout diagram showing title area at the top, a description area directly below it, and a row of buttons at the bottom.](https://developer.apple.com/tutorials/images/com.apple.TVML/descriptivealerttemplate-1@2x.png)
 
-##### Main Elements
+### Main Elements
 
 The following listing shows the main elements of the `descriptiveAlertTemplate` in TVML format.
 
@@ -30,7 +30,7 @@ The following listing shows the main elements of the `descriptiveAlertTemplate` 
 </descriptiveAlertTemplate>
 ```
 
-###### Element Descriptions
+#### Element Descriptions
 
 - **[background](./background.md)**: Background elements, such as audio.
 - **[button](./button.md)**: A button for the alert. A button typically lets the user dismiss the alert or bring up a new template page.
@@ -39,7 +39,7 @@ The following listing shows the main elements of the `descriptiveAlertTemplate` 
 - **[row](./row.md)**: A row of buttons.
 - **[title](./title.md)**: The title for the descriptive alert page.
 
-##### Example
+### Example
 
 The following listing shows the TVML for a `descriptiveAlertTemplate` example.
 

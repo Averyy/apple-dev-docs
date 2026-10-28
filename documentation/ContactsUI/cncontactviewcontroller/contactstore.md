@@ -22,7 +22,7 @@ var contactStore: CNContactStore? { get set }
 @property (nonatomic, strong, nullable) CNContactStore * contactStore;
 ```
 
-#### Discussion
+## Discussion
 
 If not this property is not set, than adding the contact to the user’s contacts is disabled.
 

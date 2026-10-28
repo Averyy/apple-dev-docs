@@ -21,7 +21,7 @@ The creation date of the scanned string.
 var documentDate: Date?
 ```
 
-#### Discussion
+## Discussion
 
 Set `documentDate` to the creation date of the scanned string. For example, this property can represent the reception date of a text message. The default is now.
 

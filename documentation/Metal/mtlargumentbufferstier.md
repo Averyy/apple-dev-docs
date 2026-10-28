@@ -24,7 +24,7 @@ enum MTLArgumentBuffersTier
 enum MTLArgumentBuffersTier : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 See [Improving CPU performance by using argument buffers](./improving-cpu-performance-by-using-argument-buffers.md) for more information about argument buffer tiers, limits, and capabilities. Query the [`argumentBuffersSupport`](./mtldevice/argumentbufferssupport.md) property to determine argument buffer tier support for a given device.
 

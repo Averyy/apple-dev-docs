@@ -24,7 +24,7 @@ var extent: CGRect { get }
 @property (readonly) CGRect extent;
 ```
 
-#### Discussion
+## Discussion
 
 Extent is the rectangle that specifies the area outside which the wrap mode set for the sampler is invoked.
 

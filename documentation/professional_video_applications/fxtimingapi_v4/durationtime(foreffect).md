@@ -24,7 +24,7 @@ func durationTime(forEffect duration: UnsafeMutablePointer<CMTime>!)
 
 - [Understanding time in FxPlug](../../Professional-Video-Applications/understanding-time-in-fxplug.md)
 
-#### Discussion
+## Discussion
 
 In Motion, the value this method provides specifies the duration of the effect in the project. In Final Cut Pro, because the effects you use in a template don’t need to cover the whole effect source clip, this value represents the duration of the effect inside the template, not the duration of the template when the user applies it to a clip on the timeline. However, in most use-cases the effect duration is equal to the template duration.
 

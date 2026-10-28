@@ -25,7 +25,7 @@ struct MKMapPoint
 typedef struct { ... } MKMapPoint;
 ```
 
-#### Overview
+## Overview
 
 If you project the curved surface of the globe onto a flat surface, you get a two-dimensional version of a map where longitude lines appear to be parallel. An `MKMapPoint` data structure represents a point on this two-dimensional map.
 

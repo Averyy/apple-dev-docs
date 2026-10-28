@@ -28,7 +28,7 @@ class UNNotificationAction
 
 - [Declaring your actionable notification types](./declaring-your-actionable-notification-types.md)
 
-#### Overview
+## Overview
 
 Use [`UNNotificationAction`](./unnotificationaction.md) objects to define the actions that your app can perform in response to a delivered notification. You define the actions that your app supports. For example, a meeting app might define actions for accepting or rejecting a meeting invitation. The action object itself contains the title to display in an action button and the button’s appearance. After creating action objects, add them to a [`UNNotificationCategory`](./unnotificationcategory.md) object and register your categories with the system.
 
@@ -36,7 +36,7 @@ Use [`UNNotificationAction`](./unnotificationaction.md) objects to define the ac
 
 For information on how to define actions and categories, see [Declaring your actionable notification types](./declaring-your-actionable-notification-types.md).
 
-##### Responding to the Selection of Actions
+### Responding to the Selection of Actions
 
 When the user selects one of your actions in response to a notification, the system notifies the delegate of the shared [`UNUserNotificationCenter`](./unusernotificationcenter.md) object. Specifically, the system calls the [`userNotificationCenter(_:didReceive:withCompletionHandler:)`](./unusernotificationcenterdelegate/usernotificationcenter%28_,didreceive,withcompletionhandler%29.md) method of your delegate object. The response object passed to your delegate includes the [`identifier`](./unnotificationaction/identifier.md) string of the action the user selects, which you can use to perform the corresponding task.
 

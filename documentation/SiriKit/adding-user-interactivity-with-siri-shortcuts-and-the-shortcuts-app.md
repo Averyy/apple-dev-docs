@@ -5,7 +5,7 @@
 
 Add custom intents and parameters to help users interact more quickly and effectively with Siri and the Shortcuts app.
 
-#### Overview
+## Overview
 
 You can offer your app’s unique capabilities throughout the system by designing custom intents. You may also want to create a custom intent that provides the same functionality as a system intent, to offer users more flexibility for incorporating that functionality into a multi-step shortcut.
 
@@ -13,13 +13,13 @@ Define custom intents and their parameters in an intents definition file. Xcode 
 
 When the user invokes your shortcut with their voice, Siri starts a dialog to collect the additional information needed to complete the shortcut. In the Shortcuts app, the user can make changes to what the shortcut will do when it’s invoked. To get an app that integrates custom intents and parameters, see [Soup Chef: Accelerating App Interactions with Shortcuts](./soup-chef-accelerating-app-interactions-with-shortcuts.md) and download the Soup Chef sample app.
 
-##### Add an Intent Definition File to Your App Target
+### Add an Intent Definition File to Your App Target
 
 Choose File > New > File to add a new SiriKit Intent Definition File to your Xcode project. Make sure that you select your app target.
 
 ![](https://developer.apple.com/tutorials/images/com.apple.sirikit/media-3238886@2x.png)
 
-##### Define Your Intents
+### Define Your Intents
 
 Create the new intent and define what the intent does.
 
@@ -36,7 +36,7 @@ The figure below shows a custom intent named OrderSoup with the category, title,
 
 > **Note**:  Xcode automatically creates the following response codes for a custom intent: `unspecified`, `ready`, `continueInApp`, `inProgress`, `success`, `failure`, and `failureRequiringAppLaunch`.
 
-##### Define the Intent Parameters
+### Define the Intent Parameters
 
 Before you can use the intent, you need to define the intent’s parameters such as soup, quantity, and so on. Create a new parameter by clicking the plus button in the Parameters field and selecting either a system parameter type or a custom type in the Type field. System types are predefined by the system, and custom types allow you to create your own types. Parameter names must start with a lowercase character while custom type names must start with an uppercase character.
 
@@ -44,7 +44,7 @@ By default, Xcode selects the User-facing checkbox. This controls whether the pa
 
 ![](https://developer.apple.com/tutorials/images/com.apple.sirikit/media-3238911@2x.png)
 
-##### Add Parameter Metadata and Siri Dialog Data
+### Add Parameter Metadata and Siri Dialog Data
 
 Siri can prompt users to complete shortcuts that require additional input based on the parameter metadata you provide. Set the Input fields for each parameter that you want the user to have control over, such as allowing them to order different quantities of soup through a shortcut.
 
@@ -52,7 +52,7 @@ You can also customize the Siri dialog for each parameter resolution result. Ent
 
 ![](https://developer.apple.com/tutorials/images/com.apple.sirikit/media-3238997@2x.png)
 
-##### Establish Relationships Between Parameters
+### Establish Relationships Between Parameters
 
 Use relationships between parameters to determine whether certain parameters should be  prompted by voice in Siri based on their association with their parent parameter. To set the parent parameter:
 
@@ -65,7 +65,7 @@ The following example shows the `storeLocation` parameter has a child relationsh
 
 ![](https://developer.apple.com/tutorials/images/com.apple.sirikit/media-3239038@2x.png)
 
-##### Define User-Configurable Shortcuts
+### Define User-Configurable Shortcuts
 
 User-configurable shortcuts are shortcuts that the user can configure in the Shortcuts app, and use interactively in Siri. To enable a shortcut for user configuration:
 
@@ -76,7 +76,7 @@ The following example shows a Shortcut that supports the `soup`, `orderType`, an
 
 ![](https://developer.apple.com/tutorials/images/com.apple.sirikit/media-3239041@2x.png)
 
-##### Set Intent Responses and Outputs
+### Set Intent Responses and Outputs
 
 An intent response represents the result of the intent’s action, such as ordering soup. Response templates allow Siri to respond with an appropriate dialog when a success or failure occurs. Add properties to allow passing of data into Siri dialogs or into the shortcut output. The output allows the user to use the result of your shortcut with other actions in the Shortcuts editor.
 

@@ -22,7 +22,7 @@ var payload: HMAccessorySetupPayload? { get set }
 @property (copy, nullable) HMAccessorySetupPayload * payload;
 ```
 
-#### Discussion
+## Discussion
 
 See [`HMAccessorySetupPayload`](../hmaccessorysetuppayload.md) for more information.
 

@@ -5,13 +5,13 @@
 
 Compare a subscription price point against the equalized price points that Apple recommends across territories, adjusted for local pricing rules.
 
-#### Overview
+## Overview
 
 Every subscription price point has a territory and a customer price. When you set a price in one territory, Apple can equalize equivalent price points across all other territories so customers see a consistent price relative to their local currency. The equalizations endpoint returns those matching price points. The adjusted equalizations endpoint returns the same set with adjustments applied for territories where the direct equalization would violate a local pricing rule — for example, a territory that requires rounded prices or that limits price bands.
 
 Use the adjusted equalizations endpoint when you plan a price change and need to see the actual per-territory prices customers would pay, not the raw currency conversion.
 
-##### Read adjusted equalizations for a price point
+### Read adjusted equalizations for a price point
 
 Use `GET /v1/subscriptionPricePoints/{id}/adjustedEqualizations` ([`List adjusted equalizations for a subscription price point`](./get-v1-subscriptionpricepoints-_id_-adjustedequalizations.md)) with the `id` of the source price point:
 

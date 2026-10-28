@@ -21,11 +21,11 @@ string AppsReportingAdGroup.PricingModel
 - `CPM`: Cost-per-thousand-impressions.
 - `CPT`: Cost-per-tap.
 
-#### Discussion
+## Discussion
 
 This determines which report metrics are directly tied to cost: `CPM` pairs with impression-based billing and `CPT` with tap-based billing.
 
-##### Example
+### Example
 
 ```json
 {

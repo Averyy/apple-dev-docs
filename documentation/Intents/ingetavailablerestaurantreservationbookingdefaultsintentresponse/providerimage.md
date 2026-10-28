@@ -31,7 +31,7 @@ var providerImage: INImage { get set }
 @property (atomic, copy) INImage * providerImage;
 ```
 
-#### Discussion
+## Discussion
 
 The system displays the image from this property in any interfaces involved in making reservations. For example, the Maps app displays this image as part of the reservations workflow.
 

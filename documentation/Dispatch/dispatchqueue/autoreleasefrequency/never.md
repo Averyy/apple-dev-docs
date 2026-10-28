@@ -21,7 +21,7 @@ The queue does not set up an autorelease pool around executed blocks.
 case never
 ```
 
-#### Discussion
+## Discussion
 
 This option is the default behavior for the system-defined global queues.
 

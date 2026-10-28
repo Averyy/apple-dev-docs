@@ -18,7 +18,7 @@ The expected number of scalar outputs.
 uint32_t checkScalarOutputCount;
 ```
 
-#### Discussion
+## Discussion
 
 If the value of this field is [`kIOUserClientVariableStructureSize`](../kiouserclientvariablestructuresize.md), ignore the value of the [`scalarOutputCount`](../iouserclientmethodarguments/scalaroutputcount.md) field. For all other values, the value in this property must equal the value in the [`scalarOutputCount`](../iouserclientmethodarguments/scalaroutputcount.md) field of the [`IOUserClientMethodArguments`](../iouserclientmethodarguments.md) structure.
 

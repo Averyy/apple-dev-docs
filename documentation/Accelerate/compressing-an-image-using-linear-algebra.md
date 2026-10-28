@@ -10,7 +10,7 @@ Reduce the storage size of an image using singular value decomposition (SVD).
 - macOS 13.3+
 - Xcode 14.0+
 
-#### Overview
+## Overview
 
 This sample code project decomposes an image into three factors using [singular value decomposition](https://mathworld.wolfram.com/SingularValueDecomposition.html) (SVD). The sample compresses an image by computing the products of the factors submatrices. The image below shows two photographs. The first is the original image, and the second is the same image after the sample applies 10:1 compression:
 
@@ -36,7 +36,7 @@ For example, if the diagonal elements of *Σ*  are `[2000, 1000, 24]` and you de
 
 ![A diagram showing the singular value decomposition of five-times-three matrix A into three-times-two matrix U multiplied by two-times-two diagonal matrix sigma multiplied by two-times-five transposed matrix V.](https://developer.apple.com/tutorials/images/com.apple.accelerate/accelerate-figure-2.png)
 
-##### Create a matrix from the source image
+### Create a matrix from the source image
 
 The sample defines a `Matrix` structure that simplifies passing image data to Accelerate’s linear algebra libraries.
 
@@ -134,7 +134,7 @@ guard
 }
 ```
 
-##### Create the factor matrices
+### Create the factor matrices
 
 The `Matrix` type provides an initializer that returns a new zero-filled matrix.
 
@@ -173,7 +173,7 @@ let vt = Matrix(rowCount: k,
                 columnCount: a.columnCount )
 ```
 
-##### Define the SVD options
+### Define the SVD options
 
 The sample requires fully populated *U* and *Vᵀ* matrices, and defines the `JOBU` and `JOBVT` parameters that it passes to `sgesvdx_` as `V`. In order to specify that `sgesvdx_` returns a specified number of singular values, the sample defines the `RANGE` parameter as `I`.
 
@@ -183,7 +183,7 @@ var JOBVT = Int8("V".utf8.first!)
 var RANGE = Int8("I".utf8.first!)
 ```
 
-##### Create the workspaces
+### Create the workspaces
 
 Before computing the SVD, the sample performs a workspace query to calculate the optimal size of the workspace that `sgesvdx_` requires. The following code specifies `LWORK` as `-1` and passes a pointer to a single `Float` to the `WORK` parameter.
 
@@ -226,7 +226,7 @@ defer {
 }
 ```
 
-##### Use LAPACK to compute the SVD
+### Use LAPACK to compute the SVD
 
 To avoid multiple nested calls to [`withUnsafePointer(to:_:)`](../Swift/withunsafepointer%28to,_%29-35wrn.md), the sample declares variables that shadow some of the matrix properties to pass to the SVD routine as [`UnsafePointer`](../Swift/unsafepointer.md) structures.
 
@@ -277,7 +277,7 @@ sgesvdx_(&JOBU,
 
 On return, the matrices `sigma`, `u`, and `vt` contain the SVD result.
 
-##### Convert the singular values vector to a matrix
+### Convert the singular values vector to a matrix
 
 The `sgesvdx_` function computes the singular values as a vector. To convert the vector of `k` diagonal values to a `k * k` diagonal matrix, the `Matrix` type provides an initializer that returns a new matrix from diagonal values.
 
@@ -309,7 +309,7 @@ let sigma = Matrix(diagonal: svdResult.sigma.data,
 
 ```
 
-##### Multiply the factors
+### Multiply the factors
 
 The `Matrix` type provides a static function that wraps [`cblas_sgemm(_:_:_:_:_:_:_:_:_:_:_:_:_:_:)`](./cblas_sgemm%28_,_,_,_,_,_,_,_,_,_,_,_,_,_%29.md) to multiply two matrices.
 
@@ -352,7 +352,7 @@ Matrix.multiply(a: u_sigma,
                 c: u_sigma_vt)
 ```
 
-##### Create a Core Graphics image from the product of the factors
+### Create a Core Graphics image from the product of the factors
 
 The `cgImage` computed property returns a [`CGImage`](../CoreGraphics/cgimage.md) instance from a matrix’s data. The computed property creates a temporary vImage buffer that shares its data with the matrix and uses the same planar 32-bit [`vImage_CGImageFormat`](./vimage_cgimageformat.md) that the `init(cgImage:)` initializer uses to convert a Core Graphics image to a matrix.
 

@@ -24,11 +24,11 @@ optional func mapView(_ mapView: MKMapView, rendererFor overlay: any MKOverlay) 
 - (MKOverlayRenderer *) mapView:(MKMapView *) mapView rendererForOverlay:(id<MKOverlay>) overlay;
 ```
 
-#### Return Value
+## Return Value
 
 The renderer to use when presenting the specified overlay on the map.
 
-#### Discussion
+## Discussion
 
 Implement this method and use it to provide an appropriate renderer object for your overlays. The renderer object is responsible for drawing the contents of your overlay when the map view requests it to. MapKit supports many different types of standard renderer objects and you may also define your own custom renderers.
 

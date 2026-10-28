@@ -24,7 +24,7 @@ class func devices() -> [AVCaptureDevice]
 + (NSArray<AVCaptureDevice *> *) devices;
 ```
 
-#### Return Value
+## Return Value
 
 An array of available devices.
 

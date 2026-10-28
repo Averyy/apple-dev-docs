@@ -19,7 +19,7 @@ var selectedColumn: Int { get }
 @property (readonly) NSInteger selectedColumn;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is `–1`, no cells are selected. If cells in multiple columns are selected,  the value of this property is the number of the last (rightmost) column containing a selected cell.
 

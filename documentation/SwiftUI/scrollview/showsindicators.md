@@ -22,7 +22,7 @@ nonisolated
 var showsIndicators: Bool { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The default is `true`.
 

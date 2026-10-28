@@ -5,11 +5,11 @@
 
 Use the `NS_SWIFT_UNAVAILABLE` macro to prevent an API from being used in Swift.
 
-#### Overview
+## Overview
 
 If parts of an Objective-C API aren’t suitable for Swift, you can make those parts unavailable in Swift. You make part of an API unavailable in Swift as part of introducing new Swift APIs that supersede parts of the existing Objective-C API. For example, you might replace an Objective-C constant with a Swift constant that’s nested inside a containing Swift type.
 
-##### Prevent an Objective-C API from Being Imported
+### Prevent an Objective-C API from Being Imported
 
 To prevent a declaration in an Objective-C API from being imported, pass a single parameter to the `NS_SWIFT_UNAVAILABLE` macro. The parameter indicates what a developer using Swift should do instead of using the part of the API you’re making unavailable.
 
@@ -23,7 +23,7 @@ NS_SWIFT_UNAVAILABLE("Use a dictionary literal instead.");
 
 Attempting to call the `collectionWithValues:forKeys:` method in Swift results in a compiler error.
 
-##### Make an API Unavailable in Both Languages
+### Make an API Unavailable in Both Languages
 
 To make an Objective-C declaration unavailable at compile time in both Swift and Objective-C, use the `NS_UNAVAILABLE` macro. The macro behaves just like the `NS_SWIFT_UNAVAILABLE` macro except that it doesn’t support the customizable error message and it restricts compile-time access to the declaration in Objective-C code.
 

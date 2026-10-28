@@ -27,7 +27,7 @@ var paymentMode: SKProductDiscount.PaymentMode { get }
 @property (nonatomic, readonly) SKProductDiscountPaymentMode paymentMode;
 ```
 
-#### Discussion
+## Discussion
 
 The payment mode indicates how the product discount [`price`](./price.md) is charged:
 

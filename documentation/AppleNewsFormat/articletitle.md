@@ -19,11 +19,11 @@ object ArticleTitle
 
 - [Creating an Article Link](../AppleNews/creating-an-article-link.md)
 
-#### Discussion
+## Discussion
 
 Use the `ArticleTitle` object to display the title of the linked article. `ArticleTitle` is used in combination with the [`ArticleLink`](./articlelink.md) component and is used by [VoiceOver for iOS](https://www.apple.com/accessibility/iphone/vision/) and [VoiceOver for macOS](https://www.apple.com/accessibility/mac/vision/) to make content more accessible.
 
-##### Example
+### Example
 
 ```json
 {

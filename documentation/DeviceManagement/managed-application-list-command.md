@@ -19,7 +19,7 @@ Get the status of all managed apps on a device.
 
 - [Implementing Platform SSO for unattended device enrollment](./implementing-platform-sso-for-unattended-device-enrollment.md)
 
-#### Discussion
+## Discussion
 
 This command returns the status of managed apps from the App Store.
 
@@ -29,7 +29,7 @@ This command doesn’t return apps that Declarative Device Management is managin
 
 Refer to the following sections to determine supported channels and requirements, and to see an example request and response.
 
-##### Command availability
+### Command availability
 
 |  |  |
 | --- | --- |
@@ -39,7 +39,7 @@ Refer to the following sections to determine supported channels and requirements
 | Allowed in user enrollment | iOS, macOS, visionOS |
 | Required access right | AllowAppInstallation |
 
-##### Example request and response
+### Example request and response
 
 **Request**:
 

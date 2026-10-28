@@ -17,7 +17,7 @@ Creates an attributed metadata value from a string-convertible value and attribu
 static func attributed(_ value: some CustomStringConvertible & Sendable, attributes: Logger.MetadataValueAttributes) -> Logger.MetadataValue
 ```
 
-#### Discussion
+## Discussion
 
 This is a convenience factory that behaves like an additional enum case, producing a `.stringConvertible(AttributedStringCarrier(...))` value without string interpolation:
 

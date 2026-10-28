@@ -25,7 +25,7 @@ var preferredFilename: String? { get set }
 @property (copy, nullable) NSString * preferredFilename;
 ```
 
-#### Discussion
+## Discussion
 
 This name is normally used as the dictionary key when a child file wrapper is added to a directory file wrapper. However, if another file wrapper with the same preferred name already exists in the directory file wrapper when this object is added, the filename assigned as the dictionary key may differ from the preferred filename.
 

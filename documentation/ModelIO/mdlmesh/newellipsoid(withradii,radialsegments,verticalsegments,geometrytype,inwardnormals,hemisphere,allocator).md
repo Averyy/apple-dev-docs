@@ -24,11 +24,11 @@ class func newEllipsoid(withRadii radii: vector_float3, radialSegments: Int, ver
 + (instancetype) newEllipsoidWithRadii:(vector_float3) radii radialSegments:(NSUInteger) radialSegments verticalSegments:(NSUInteger) verticalSegments geometryType:(MDLGeometryType) geometryType inwardNormals:(BOOL) inwardNormals hemisphere:(BOOL) hemisphere allocator:(id<MDLMeshBufferAllocator>) allocator;
 ```
 
-#### Return Value
+## Return Value
 
 A new mesh object.
 
-#### Discussion
+## Discussion
 
 This method generates vertex data for an ellipsoid centered at the origin of its local coordinate system.
 

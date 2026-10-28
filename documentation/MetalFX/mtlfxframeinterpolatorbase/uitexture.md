@@ -24,7 +24,7 @@ var uiTexture: (any MTLTexture)? { get set }
 @property (nonatomic, retain, setter=setUITexture:, nullable) id<MTLTexture> uiTexture;
 ```
 
-#### Discussion
+## Discussion
 
 The frame interpolator uses this property to overlay your custom UI on any frame data it produces into [`outputTexture`](./outputtexture.md).
 

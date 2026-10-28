@@ -19,7 +19,7 @@ An error that indicates image creation is currently unavailable.
 case unavailable
 ```
 
-#### Discussion
+## Discussion
 
 This error can occur if the device doesn’t yet have the models it needs to complete the request.
 

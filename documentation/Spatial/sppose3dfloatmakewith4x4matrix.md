@@ -19,11 +19,11 @@
 static SPPose3DFloat SPPose3DFloatMakeWith4x4Matrix(simd_float4x4 matrix);
 ```
 
-#### Return Value
+## Return Value
 
 A new pose structure.
 
-#### Discussion
+## Discussion
 
 Returns a new pose structure from the specified 4 x 4 matrix.
 

@@ -17,7 +17,7 @@ The effective state of the card that the system read.
 let cardEffectiveState: PaymentCardReadResult.CardEffectiveState?
 ```
 
-#### Discussion
+## Discussion
 
 This is only available in a Store and Forward session.
 

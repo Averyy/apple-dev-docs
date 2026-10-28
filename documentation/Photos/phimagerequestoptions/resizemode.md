@@ -24,7 +24,7 @@ var resizeMode: PHImageRequestOptionsResizeMode { get set }
 @property (nonatomic, assign) PHImageRequestOptionsResizeMode resizeMode;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to choose how to fit the image to the target size you specified when requesting image data. The default value for this property is [`PHImageRequestOptionsResizeMode.fast`](../phimagerequestoptionsresizemode/fast.md).
 

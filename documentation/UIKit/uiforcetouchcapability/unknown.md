@@ -23,7 +23,7 @@ case unknown
 UIForceTouchCapabilityUnknown
 ```
 
-#### Discussion
+## Discussion
 
 A view has this trait after you create it but before you add it your app’s view hierarchy.
 

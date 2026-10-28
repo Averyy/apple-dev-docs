@@ -21,7 +21,7 @@ A callback to invoke when canceling iteration of an asynchronous stream.
 var onTermination: (@Sendable (AsyncThrowingStream<Element, Failure>.Continuation.Termination) -> Void)? { get nonmutating set }
 ```
 
-#### Discussion
+## Discussion
 
 If an `onTermination` callback is set, using task cancellation to terminate iteration of an `AsyncThrowingStream` results in a call to this callback.
 

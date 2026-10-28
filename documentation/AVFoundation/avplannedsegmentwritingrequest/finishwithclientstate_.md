@@ -20,7 +20,7 @@ Clients must call this method after all writing activities for the intermediate 
 - (void) finishWithClientState:(NSData *) segmentEndingClientState;
 ```
 
-#### Discussion
+## Discussion
 
 This method throws NSGenericException if finish, finishWithClientState:, finishWithError:, or cancel has already been called on this request.
 

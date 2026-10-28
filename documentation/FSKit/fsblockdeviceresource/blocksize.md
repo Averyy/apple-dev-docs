@@ -19,7 +19,7 @@ var blockSize: UInt64 { get }
 @property (readonly) uint64_t blockSize;
 ```
 
-#### Discussion
+## Discussion
 
 This is equivalent to the `DKIOCGETBLOCKSIZE` device parameter.
 

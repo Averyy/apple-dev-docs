@@ -15,7 +15,7 @@ A mode that determines the shape of the collision frame.
 collisionMode?: AnnotationCollisionMode;
 ```
 
-#### Discussion
+## Discussion
 
 Use one of the modes available in [`AnnotationCollisionMode`](../annotationcollisionmode.md):
 

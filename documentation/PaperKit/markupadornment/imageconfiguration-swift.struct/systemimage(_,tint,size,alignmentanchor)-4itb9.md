@@ -12,7 +12,7 @@ Creates an image configuration using a system image.
 static func systemImage(_ name: String, tint: NSColor = .controlAccentColor, size: CGSize? = nil, alignmentAnchor: CGPoint = .zero) -> MarkupAdornment.ImageConfiguration
 ```
 
-#### Return Value
+## Return Value
 
 An `ImageConfiguration` for the system image.
 

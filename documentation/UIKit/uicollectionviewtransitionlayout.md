@@ -24,7 +24,7 @@ class UICollectionViewTransitionLayout
 @interface UICollectionViewTransitionLayout : UICollectionViewLayout
 ```
 
-#### Overview
+## Overview
 
 You can use [`UICollectionViewTransitionLayout`](./uicollectionviewtransitionlayout.md) as-is or subclass it to provide specialized behavior for your app. A common use for transition layouts is to create interactive transitions, such as those that are driven by gesture recognizers or touch events.
 

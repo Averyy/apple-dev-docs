@@ -21,7 +21,7 @@ Returns a Boolean value that indicates whether the size contains the specified p
 func containsAny(of points: [Point3D]) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that indicates whether the size contains the specified point.
 

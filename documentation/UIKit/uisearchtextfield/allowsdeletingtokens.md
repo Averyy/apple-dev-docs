@@ -22,7 +22,7 @@ var allowsDeletingTokens: Bool { get set }
 @property (nonatomic) BOOL allowsDeletingTokens;
 ```
 
-#### Discussion
+## Discussion
 
 The default value for this property is [`true`](../../Swift/true.md).
 

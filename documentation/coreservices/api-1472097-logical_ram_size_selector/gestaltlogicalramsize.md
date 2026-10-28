@@ -14,7 +14,7 @@
 gestaltLogicalRAMSize = 'lram'
 ```
 
-#### Discussion
+## Discussion
 
 The amount of logical memory available. This value is the same as that returned by `gestaltPhysicalRAMSize` when virtual memory is not installed. On some machines, however, this value might be less than the value returned by `gestaltPhysicalRAMSize` because some RAM may be used by the video display and the Operating System.
 

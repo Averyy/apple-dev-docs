@@ -16,7 +16,7 @@ The native height of the video in CSS pixels. (read-only)
 readonly attribute unsigned long videoHeight;
 ```
 
-#### Discussion
+## Discussion
 
 If no video data is available, this property is `0`.
 

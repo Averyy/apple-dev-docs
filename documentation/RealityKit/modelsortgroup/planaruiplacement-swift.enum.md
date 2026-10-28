@@ -20,11 +20,11 @@ A set of predefined groups that indicate how the renderer draws a model relative
 enum PlanarUIPlacement
 ```
 
-##### Overview
+### Overview
 
 Use one of the predefined groups [`planarUIInline`](./planaruiinline.md), [`planarUIAlwaysInFront`](./planaruialwaysinfront.md), and [`planarUIAlwaysBehind`](./planaruialwaysbehind.md) to order virtual content relative to coincidental (coplanar and overlapping) app UI to avoid rendering artifacts.
 
-##### Placing virtual content relative to app UI
+### Placing virtual content relative to app UI
 
 The scenario below shows a museum scene that has a green planar mesh entity, stacked between two SwiftUI [`View`](../../SwiftUI/view.md) instances in a [`ZStack`](../../SwiftUI/zstack.md).
 

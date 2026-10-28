@@ -14,7 +14,7 @@ Use events to synchronize access to resources allocated on a heap.
 - tvOS 17.0+
 - Xcode 26.3+
 
-#### Overview
+## Overview
 
 This sample demonstrates:
 
@@ -27,11 +27,11 @@ This sample demonstrates:
 
 This implementation minimizes memory usage in an orderly fashion for a filter graph with a downsample and Gaussian blur filter. For more information, including implementation details about heaps for static and dynamic textures, see [Implementing a multistage image filter using heaps and fences](./implementing-a-multistage-image-filter-using-heaps-and-fences.md).
 
-##### Getting started
+### Getting started
 
 The Xcode project contains schemes for running the sample on macOS, iOS, or tvOS.  The default scheme is macOS, which runs the sample as is on your Mac.
 
-##### Compare events with fences
+### Compare events with fences
 
 The [`MTLFence`](./mtlfence.md) API allows you to specify synchronization points in your app that wait for a workload to complete execution, provided that execution begins *before* a fence is encountered. However, this synchronization mechanism means that your app can’t wait for a workload to complete execution if the execution begins *after* a fence is encountered. A fence can wait for workloads that have already begun, but it can’t wait for future workloads.
 
@@ -41,7 +41,7 @@ In contrast, although the [`MTLEvent`](./mtlevent.md) API also allows you to spe
 
 Events also work well in an image filter graph because they provide the equivalent functionality of fences. However, events are easier to specify and track because their synchronization mechanism is managed with a discrete signal value that increases monotonically. Using this signal value, events insert a strict execution order between command encoder boundaries in the GPU.
 
-##### Implement an event wrapper for synchronization routines
+### Implement an event wrapper for synchronization routines
 
 The sample wraps the `MTLEvent` API in the `AAPLEventWrapper` protocol accessed through an `AAPLSingleDeviceEventWrapper` object. This convenience wrapper encapsulates the main synchronization mechanism, and primarily manages the discrete signal value through the `_signalCounter` variable.
 
@@ -75,7 +75,7 @@ The sample calls the `signal:` method to signal that a workload has completed ex
 
 > **Note**: You can reimplement this wrapper to support any other type of synchronization primitive, such as [`MTLSharedEvent`](./mtlsharedevent.md), [`MTLFence`](./mtlfence.md), or CPU-side routines.
 
-##### Manage dependencies between filters
+### Manage dependencies between filters
 
 The sample uses `_event` to control access to dynamic textures allocated from `_scratchHeap` and prevent GPU race conditions in the filter graph. The event ensures that operations on dynamic textures are completed before the filter graph begins subsequent operations that depend on the result of previous operations.
 
@@ -130,7 +130,7 @@ The second filter, implemented by the sample in `AAPLGaussianBlurFilter`, calls 
 
 ![Timeline diagram that shows how an event manages dependencies between filters.](https://developer.apple.com/tutorials/images/com.apple.metal/image-filtering-with-heaps-and-events-2-EventBetweenFilters.png)
 
-##### Reuse memory and manage dependencies within a filter
+### Reuse memory and manage dependencies within a filter
 
 The Gaussian blur filter performs a horizontal blur and a vertical blur for each mipmap level of the dynamic texture produced by the downsample filter. For each mipmap level, the sample allocates a temporary texture, `intermediaryTexture`, from the dynamic textures heap.
 
@@ -201,7 +201,7 @@ Because the sample already calls the `wait:` method to wait for the downsample f
 
 ![Timeline diagram that shows how an event manages dependencies within a filter.](https://developer.apple.com/tutorials/images/com.apple.metal/image-filtering-with-heaps-and-events-3-EventWithinFilter.png)
 
-##### Manage dependencies between frames
+### Manage dependencies between frames
 
 The sample calls the `wait:` method to wait for the filter graph to complete execution before rendering the filtered image to a drawable.
 

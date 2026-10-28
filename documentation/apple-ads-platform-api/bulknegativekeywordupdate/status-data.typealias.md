@@ -20,11 +20,11 @@ string BulkNegativeKeywordUpdate.Status
 - `ENABLED`: The negative keyword is active and will suppress ad delivery for matching search queries.
 - `PAUSED`: The negative keyword is paused and will not suppress any search queries until re-enabled.
 
-#### Discussion
+## Discussion
 
 Include this field within an item’s `data` to re-enable or pause the negative keyword’s suppression as part of the same bulk update request.
 
-##### Example
+### Example
 
 ```json
 {

@@ -25,7 +25,7 @@ case reloadIgnoringLocalAndRemoteCacheData
 NSURLRequestReloadIgnoringLocalAndRemoteCacheData
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  Versions earlier than macOS 10.15, iOS 13, watchOS 6, and tvOS 13 don’t implement this constant.
 

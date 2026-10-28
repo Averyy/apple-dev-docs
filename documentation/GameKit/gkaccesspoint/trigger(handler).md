@@ -24,7 +24,7 @@ func trigger(handler: @escaping () -> Void)
 - (void) triggerAccessPointWithHandler:(void (^)()) handler;
 ```
 
-#### Discussion
+## Discussion
 
 For games that use controllers or the Apple TV remote, you can use this method to programmatically display the dashboard.
 

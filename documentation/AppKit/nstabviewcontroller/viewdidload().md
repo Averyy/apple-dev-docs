@@ -19,7 +19,7 @@ func viewDidLoad()
 - (void) viewDidLoad;
 ```
 
-#### Discussion
+## Discussion
 
 The tab view controller overrides this method and uses it to configure and layout the tab view and its contents. You can override it in your own subclasses to perform any custom initialization. For example, to replace the default tab view, override this method and set the value of the [`tabView`](./tabview.md) property before calling `super`.
 

@@ -5,7 +5,7 @@
 
 Access low-level details about file and folder settings used by the macOS Backup utility. 
 
-#### Overview
+## Overview
 
 Backup is a built-in, user-configurable backup solution that protects user data from accidental loss. You can use the Backup Core API  functionality to, for example, exclude temporary or otherwise unimportant folders and files created by your app from Backup, and to allow users to make backup decisions from within the context of your app.
 

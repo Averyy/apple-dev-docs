@@ -18,7 +18,7 @@ Sets the buffer containing inverse bind-pose matrices.
 func setInverseBindPoses(_ buffer: any MTLBuffer, offset: Int) throws
 ```
 
-#### Discussion
+## Discussion
 
 The buffer must contain `jointTransformCount` float4x4 matrices.
 

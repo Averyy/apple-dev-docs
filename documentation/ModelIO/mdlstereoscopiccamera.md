@@ -24,7 +24,7 @@ class MDLStereoscopicCamera
 @interface MDLStereoscopicCamera : MDLCamera
 ```
 
-#### Overview
+## Overview
 
 This class provides properties related to rendering the scene from two slightly different perspectives to simulate binocular vision. For general and optical properties of a camera, see the superclass [`MDLCamera`](./mdlcamera.md).
 

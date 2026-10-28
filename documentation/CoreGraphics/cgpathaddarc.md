@@ -21,7 +21,7 @@ Appends an arc to a mutable graphics path, possibly preceded by a straight line 
 extern void CGPathAddArc(CGMutablePathRef path, const CGAffineTransform *m, CGFloat x, CGFloat y, CGFloat radius, CGFloat startAngle, CGFloat endAngle, bool clockwise);
 ```
 
-#### Discussion
+## Discussion
 
 An arc is a segment of a circle with radius r centered at a point `(x,y)`. When you call this function, you provide the center point, radius, and two angles in radians. Core Graphics uses this information to determine the end points of the arc, and then approximates the new arc using a sequence of cubic Bézier curves. The `clockwise` parameter determines the direction in which the arc is created. The actual direction may change depending on the coordinate system transformation applied to the path.
 

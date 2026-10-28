@@ -18,7 +18,7 @@ The accessory manager singleton object.
 static let shared: DockAccessoryManager
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to obtain an instance of [`DockAccessoryManager`](../dockaccessorymanager.md).
 

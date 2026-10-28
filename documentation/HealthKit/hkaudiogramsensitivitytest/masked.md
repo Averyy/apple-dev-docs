@@ -22,7 +22,7 @@ var masked: Bool { get }
 @property (nonatomic, assign, readonly) BOOL masked;
 ```
 
-#### Discussion
+## Discussion
 
 Indicates if the test was conducted with or without masking
 

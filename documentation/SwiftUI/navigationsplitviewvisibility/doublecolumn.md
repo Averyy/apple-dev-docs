@@ -21,7 +21,7 @@ Show the content column and detail area of a three-column navigation split view,
 static var doubleColumn: NavigationSplitViewVisibility { get }
 ```
 
-#### Discussion
+## Discussion
 
 For a two-column navigation split view, `doubleColumn` is equivalent to `all`.
 

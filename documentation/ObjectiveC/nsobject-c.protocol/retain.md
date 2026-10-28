@@ -21,11 +21,11 @@ Increments the receiver’s reference count.
 - (instancetype) retain;
 ```
 
-#### Return Value
+## Return Value
 
 `self`.
 
-#### Discussion
+## Discussion
 
 You send an object a [`retain`](./retain.md) message when you want to prevent it from being deallocated until you have finished using it.
 
@@ -35,7 +35,7 @@ As a convenience, [`retain`](./retain.md) returns `self` because it may be used 
 
 You would implement this method only if you were defining your own reference-counting scheme. Such implementations must return `self` and should not invoke the inherited method by sending a [`retain`](./retain.md) message to `super`.
 
-##### Special Considerations
+### Special Considerations
 
 Instead of using manual reference counting, you should adopt ARC—see [Transitioning to ARC Release Notes](https://developer.apple.com/library/archive/releasenotes/ObjectiveC/RN-TransitioningToARC/Introduction/Introduction.html#//apple_ref/doc/uid/TP40011226).
 

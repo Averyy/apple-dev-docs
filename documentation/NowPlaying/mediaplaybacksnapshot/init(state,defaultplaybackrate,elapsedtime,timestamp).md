@@ -21,7 +21,7 @@ Creates a playback snapshot with the specified state and timing.
 init(state: MediaPlaybackSnapshot.PlaybackState, defaultPlaybackRate: Float = 1.0, elapsedTime: TimeInterval? = nil, timestamp: Date? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 > **Precondition**: When `state` is `.playing(let rate)`, `rate` must be finite and non-zero.
 

@@ -5,7 +5,7 @@
 
 Enable customers to redeem offer codes through the App Store or within your app.
 
-#### Overview
+## Overview
 
 To help you acquire, retain, and win back customers, you can use offer codes. Offer codes are alphanumeric codes that provide Apple In-App Purchases at a discount or for free, for a specific duration. Offer codes are available for all Apple In-App Purchase types:  consumables, non-consumables, non-renewing subscriptions, and auto-renewable subscriptions. You can merchandise offer codes within your app or outside of it through your marketing channels.
 
@@ -19,13 +19,13 @@ When customers redeem a valid offer code, your app receives a successful transac
 
 Offer codes for auto-renewable subscriptions are available starting in iOS 14.2, iPadOS 14.2, macOS 15.0, and visionOS 1.0. Offer codes for consumables, non-consumables, and non-renewing subscriptions are available starting in iOS 16.3, iPadOS 16.3,  macOS 15.0, and visionOS 1.0.
 
-##### Set up offer codes in App Store Connect
+### Set up offer codes in App Store Connect
 
 Configure offers and manage your offer codes in App Store Connect. There are three types of offer codes: one-time use codes, custom codes, and sandbox codes for testing. The offer code redemption APIs support all offer codes types. You can have up to 10 active offers at a time, with a limit of 1,000,000 codes per app, per quarter. To distribute offer codes to your customers, download them from App Store Connect.
 
 For more information on creating and distributing offer codes, and to learn which type of offer code may work for your campaign, see [Set up offer codes](https://developer.apple.com/help/app-store-connect/manage-subscriptions/set-up-offer-codes) and [Create offer codes for Apple In-App Purchases](https://developer.apple.com/help/app-store-connect/manage-in-app-purchases/create-offer-codes-for-in-app-purchases).
 
-##### Redeem offer codes in your app
+### Redeem offer codes in your app
 
 To display the system sheet for customers to redeem offer codes within your app, call one of the redemption APIs, depending on your app’s UI implementation:
 
@@ -41,13 +41,13 @@ If your app can’t process the redemption immediately, StoreKit emits the trans
 
 Including the redemption sheet in your app is recommended, but optional. For more guidance on supporting offer code redemption within your app, see Human Interface Guidelines > [Apple In-App Purchase](https://developer.apple.com/design/human-interface-guidelines/in-app-purchase).
 
-##### Support offer codes redeemed outside of your app
+### Support offer codes redeemed outside of your app
 
 Customers may redeem offer codes outside your app, by entering the offer code in the App Store, or by using a redemption URL. To handle offer codes — and other transactions that can occur outside of your app — your app needs to use [`updates`](./transaction/updates.md) on [`Transaction`](./transaction.md) to receive new transactions while the app is running. Create a [`Task`](../Swift/task.md) to iterate through the transactions from the listener as soon as your app launches. For more information and sample code, see [`updates`](./transaction/updates.md).
 
 When your app launches, it needs to check [`currentEntitlements`](./transaction/currententitlements.md) and [`unfinished`](./transaction/unfinished.md) on [`Transaction`](./transaction.md) to get any transactions that may have occurred while the app wasn’t running. Process the transactions to ensure your app provides service for all products it’s entitled to. Call [`finish()`](./transaction/finish%28%29.md) after you process the unfinished transactions.
 
-##### Identify products purchased with offer codes
+### Identify products purchased with offer codes
 
 When customers successfully redeem offer codes, the transaction contains fields that identify the offer and its offer type. Find the offer code details in the transaction information, in your app and on your server, as follows.
 
@@ -61,7 +61,7 @@ On your server, use the following server-side APIs to locate offer code informat
 - In the [App Store Server API](../AppStoreServerAPI/AppStoreServerAPI.md), when you call endpoints such as [`Get Transaction History`](../AppStoreServerAPI/get-transaction-history.md), [`Get All Subscription Statuses`](../AppStoreServerAPI/get-all-subscription-statuses.md), and others, the response contains the signed transaction, [`JWSTransaction`](../AppStoreServerAPI/jwstransaction.md). In its decoded payload, [`JWSTransactionDecodedPayload`](../AppStoreServerAPI/jwstransactiondecodedpayload.md), look for the fields [`offerIdentifier`](../AppStoreServerAPI/offeridentifier.md) and [`offerType`](../AppStoreServerAPI/offertype.md). An [`offerType`](../AppStoreServerAPI/offertype.md) value of `3` indicates the customer redeemed an offer code.
 - You receive a notification on your [`App Store Server Notifications V2`](../AppStoreServerNotifications/app-store-server-notifications-v2.md) endpoint if someone redeems an offer code. The [`notificationType`](../AppStoreServerNotifications/notificationtype.md) is `OFFER_REDEEMED` when someone redeems an offer for an active auto-renewable subscription; `SUBSCRIBED` when they redeem the offer code as an initial purchase or to resubscribe. The `notificationType` is `ONE_TIME_CHARGE` when someone redeems an offer code for a consumable, non-consumable, or non-renewing subscription product type. The decoded payloads [`JWSTransactionDecodedPayload`](../AppStoreServerNotifications/jwstransactiondecodedpayload.md) and [`JWSRenewalInfoDecodedPayload`](../AppStoreServerNotifications/jwsrenewalinfodecodedpayload.md) contain the fields [`offerIdentifier`](../AppStoreServerNotifications/offeridentifier.md) and [`offerType`](../AppStoreServerNotifications/offertype.md).
 
-##### Provide service to new and existing customers
+### Provide service to new and existing customers
 
 When you acquire new customers with an offer code, they already have an Apple In-App Purchase when they open your app for the first time. In addition to enabling that Apple In-App Purchase, you may need to update your backend system’s records. Your app follows these steps:
 
@@ -72,7 +72,7 @@ When you acquire new customers with an offer code, they already have an Apple In
 
 When an existing customer redeems an offer code within your app, the transaction comes in through the [`updates`](./transaction/updates.md) sequence on [`Transaction`](./transaction.md). Process the transaction as usual, providing service based on the offer, and call [`finish()`](./transaction/finish%28%29.md).
 
-##### Test offer codes in the sandbox environment
+### Test offer codes in the sandbox environment
 
 You can test your app’s handling of offer codes in the sandbox environment for all Apple In-App Purchase product types: consumable, non-consumable, non-renewing subscription, and auto-renewable subscription. First, create offer codes for the sandbox environment in App Store Connect. For more information on creating these codes, see [Create off codes for Apple In-App Purchases](https://developer.apple.com/help/app-store-connect/manage-in-app-purchases/create-offer-codes-for-in-app-purchases). Each quarter, you can create up to 10,000 codes for testing.
 
@@ -95,7 +95,7 @@ On your server, [App Store Server Notifications](../AppStoreServerNotifications/
 
 For more information on sandbox testing, see [Testing Apple In-App Purchases with sandbox](./testing-in-app-purchases-with-sandbox.md).
 
-##### Test offer codes in Xcode
+### Test offer codes in Xcode
 
 You can test your app’s handling of offer code redemptions in Xcode for all Apple In-App Purchase product types: consumable, non-consumable, non-renewing subscription, and auto-renewable subscription.
 
@@ -128,7 +128,7 @@ To retry the same test scenario, you may need to delete the previous transaction
 
 For more information on configuring StoreKit Testing in Xcode, see [StoreKit Test](../StoreKitTest/StoreKitTest.md).
 
-##### Supporting systems earlier than iOS 16 and iPadOS 16
+### Supporting systems earlier than iOS 16 and iPadOS 16
 
 If your app runs on iOS 16 or earlier, and iPadOS 16 or earlier, you can support offer codes for auto-renewable subscriptions only. Use [`presentCodeRedemptionSheet()`](./skpaymentqueue/presentcoderedemptionsheet%28%29.md) to display the offer code redemption UI. Otherwise, use the APIs referred to in this article. For more information about supporting earlier systems, see [Implementing offer codes in your app](./implementing-offer-codes-in-your-app.md).
 

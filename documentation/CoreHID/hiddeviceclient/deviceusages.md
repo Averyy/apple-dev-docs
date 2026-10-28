@@ -15,7 +15,7 @@ A convenient list of all the usages that the device supports.
 final let deviceUsages: [HIDUsage]
 ```
 
-#### Discussion
+## Discussion
 
 This list can be parsed to determine what all functionality a device supports and gain an understanding of what the device is intended to do or how it is intended to be used.
 

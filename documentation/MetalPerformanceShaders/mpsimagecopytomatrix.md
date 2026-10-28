@@ -24,7 +24,7 @@ class MPSImageCopyToMatrix
 @interface MPSImageCopyToMatrix : MPSKernel
 ```
 
-#### Overview
+## Overview
 
 This kernel copies image data to a [`MPSMatrix`](./mpsmatrix.md) object. The image data is stored in a row of a matrix.  The [`dataLayout`](./mpsimagecopytomatrix/datalayout.md) specifies the order in which the feature channels in the image get stored in the matrix.  If the [`MPSImage`](./mpsimage.md) stores a batch of images, the images are copied into multiple rows, one row per image.
 

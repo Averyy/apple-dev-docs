@@ -19,7 +19,7 @@ var sendsActionOnArrowKeys: Bool { get set }
 @property BOOL sendsActionOnArrowKeys;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`false`](../../Swift/false.md), pressing an arrow key scrolls the browser. When the value of this property is [`true`](../../Swift/true.md), it also sends the action message specified by [`action`](../nscontrol/action.md).
 

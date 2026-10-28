@@ -10,7 +10,7 @@ Render single images for the left eye and right eye from a multiview High Effici
 - macOS 14.0+
 - Xcode 15.2+
 
-#### Overview
+## Overview
 
 Multiview High Efficiency Video Coding (MV-HEVC) media files contain information to produce stereoscopic frames, one for the left eye and one for the right, to create an effect of depth and allow for 3D video. This is the standard format for presenting 3D video in visionOS, encoded as MPEG-4 or QuickTime files.
 
@@ -18,7 +18,7 @@ Previewing and testing MV-HEVC files without hardware requires the ability to lo
 
 For the full details of the MV-HEVC format, see [Apple HEVC Stereo Video - Interoperability Profile (PDF)](https://developer.apple.com/av-foundation/HEVC-Stereo-Video-Profile.pdf) and [ISO Base Media File Format and Apple HEVC Stereo Video (PDF)](https://developer.apple.com/av-foundation/Stereo-Video-ISOBMFF-Extensions.pdf).
 
-##### Load and inspect the media asset
+### Load and inspect the media asset
 
 The app first displays a button labeled Open MVHEVC File. When selected, the button presents an [`NSOpenPanel`](../AppKit/nsopenpanel.md) for choosing video media. Next, the app initializes a `MediaDetailViewModel`, loading this file as an [`AVURLAsset`](./avurlasset.md). Before opening the file to present any elements for a stereo video frame, the app ensures a playable, readable file, and gets its total length in time. This is all performed in the initializer.
 
@@ -38,7 +38,7 @@ init(filename: URL) {
 }
 ```
 
-##### Load track data and timestamps
+### Load track data and timestamps
 
 After confirming the track is readable video data, the app initializes a `StereoViewModel`by calling [`loadTracks(withMediaCharacteristic:completionHandler:)`](./avasset/loadtracks%28withmediacharacteristic,completionhandler%29.md) requesting a [`containsStereoMultiviewVideo`](./avmediacharacteristic/containsstereomultiviewvideo.md) track. This check confirms that the file meets the MV-HEVC specification and has valid stereo data.
 
@@ -69,7 +69,7 @@ repeat {
 } while numSamples == 1
 ```
 
-##### Load video layer information
+### Load video layer information
 
 After preparing timestamps, the app calls `loadVideoLayerIdsForTrack()` to get the layer IDs for the two tracks associated with the left and right eyes. The app calls [`load(_:isolation:)`](./avasynchronouskeyvalueloading/load%28_,isolation%29.md)to retrieve metadata, then filters the layer data out of the first available track’s [`tagCollections`](../CoreMedia/cmformatdescription/tagcollections.md). The filter predicate is [`value(onlyIfMatching:)`](../CoreMedia/cmtag-swift.class/value%28onlyifmatching%29.md), extracting only video layer IDs.
 
@@ -86,7 +86,7 @@ private func loadVideoLayerIdsForTrack(_ videoTrack: AVAssetTrack) async throws 
 }
 ```
 
-##### Load video frames from buffers
+### Load video frames from buffers
 
 With the timestamp and left eye and right eye video layers identified, `readBufferFromAsset(at:)` calls the `readNextBufferFromAsset()` method of the app to retrieve and display the frame data. The method starts with a series of `guard` checks to ensure read access to the track, creates a local copy of the sample buffer by calling [`copyNextSampleBuffer()`](./avassetreaderoutput/copynextsamplebuffer%28%29.md), and retrieves the tagged video buffers from the track.
 

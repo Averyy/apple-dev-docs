@@ -9,7 +9,7 @@ Get the assigned device management service information for a device.
 **Availability**:
 - Apple Business API 2.6+
 
-##### Example
+### Example
 
 **Request**:
 

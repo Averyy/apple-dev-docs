@@ -21,7 +21,7 @@ Gets the single sample buffer in a group which contains a given tag collection, 
 extern CMSampleBufferRefCMTaggedBufferGroupGetCMSampleBufferForTagCollection(CMTaggedBufferGroupRef group, CMTagCollectionRef tagCollection, CFIndex *indexOut);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the unique sample buffer associated with `tagCollection`, or `NULL` if there were multiple sample buffers or no sample buffer could be found.
 

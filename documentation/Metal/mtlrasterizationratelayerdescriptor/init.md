@@ -10,7 +10,7 @@
 - (instancetype) init;
 ```
 
-#### Discussion
+## Discussion
 
 Do not use, instead use initWithNumSamples:
 

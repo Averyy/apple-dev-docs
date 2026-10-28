@@ -22,7 +22,7 @@ var pointerLockState: UIPointerLockState? { get }
 @property (nonatomic, readonly, nullable) UIPointerLockState * pointerLockState;
 ```
 
-#### Discussion
+## Discussion
 
 If a scene can’t lock the pointer, this property is `nil`.
 

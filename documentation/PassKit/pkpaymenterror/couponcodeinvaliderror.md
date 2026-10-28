@@ -19,7 +19,7 @@ The error code that indicates an invalid coupon.
 static var couponCodeInvalidError: PKPaymentError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use this error code if the user entered an invalid coupon code in the payment sheet. You can use [`paymentCouponCodeInvalidError(localizedDescription:)`](../pkpaymentrequest/paymentcouponcodeinvaliderror%28localizeddescription%29.md) to create an invalid coupon error object.
 

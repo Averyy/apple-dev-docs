@@ -23,11 +23,11 @@ optional func callAudioUnit(_ message: [AnyHashable : Any]) -> [AnyHashable : An
 - (NSDictionary *) callAudioUnit:(NSDictionary *) message;
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary with custom data.
 
-#### Discussion
+## Discussion
 
 The valid values for key and value types are `NSArray`, `NSDictionary`, `NSOrderedSet`, `NSSet`, `NSString`, `NSData`, `NSNull`, `NSNumber`, and `NSDate`.
 

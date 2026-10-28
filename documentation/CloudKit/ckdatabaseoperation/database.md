@@ -25,7 +25,7 @@ var database: CKDatabase? { get set }
 @property (nonatomic, strong, nullable) CKDatabase * database;
 ```
 
-#### Discussion
+## Discussion
 
 For operations that you execute in a custom queue, use this property to specify the target database. Setting the database also sets the corresponding container, which it inherits from [`CKOperation`](../ckoperation.md). If this property’s value is `nil`, the operation targets the user’s private database.
 

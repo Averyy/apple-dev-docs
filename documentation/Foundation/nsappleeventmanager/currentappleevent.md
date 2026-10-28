@@ -20,7 +20,7 @@ var currentAppleEvent: NSAppleEventDescriptor? { get }
 @property (retain, readonly, nullable) NSAppleEventDescriptor * currentAppleEvent;
 ```
 
-#### Discussion
+## Discussion
 
 An Apple event is being handled on the current thread if a handler that was registered with [`setEventHandler(_:andSelector:forEventClass:andEventID:)`](./seteventhandler%28_,andselector,foreventclass,andeventid%29.md) is being messaged at this instant or [`setCurrentAppleEventAndReplyEventWithSuspensionID(_:)`](./setcurrentappleeventandreplyeventwithsuspensionid%28_%29.md) has just been invoked. Returns `nil` otherwise. The effects of mutating or retaining the returned descriptor are undefined, although it may be copied.
 

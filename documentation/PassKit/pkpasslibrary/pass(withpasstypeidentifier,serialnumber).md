@@ -24,7 +24,7 @@ func pass(withPassTypeIdentifier identifier: String, serialNumber: String) -> PK
 - (PKPass *) passWithPassTypeIdentifier:(NSString *) identifier serialNumber:(NSString *) serialNumber;
 ```
 
-#### Return Value
+## Return Value
 
 The pass with the specified pass type identifier and serial number, or `nil` if there isn’t such a pass or if the app doesn’t have the appropriate entitlement.
 

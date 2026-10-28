@@ -17,7 +17,7 @@ Indicates to the system that an aspect of a view is invalid and triggers the nec
 func invalidate(view: NSView)
 ```
 
-#### Discussion
+## Discussion
 
 A type that conforms to `UIViewInvalidating` implements this method to perform any actions necessary to notify the system that an aspect of your view is invalid. For more info, see [`NSView.Invalidating`](../nsview/invalidating.md).
 

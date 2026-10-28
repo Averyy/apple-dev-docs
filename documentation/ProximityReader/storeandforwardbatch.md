@@ -17,7 +17,7 @@ A structure that stores the data to send to the payment service provider to proc
 struct StoreAndForwardBatch
 ```
 
-#### Overview
+## Overview
 
 The framework invokes these payments using a Store and Forward session.
 

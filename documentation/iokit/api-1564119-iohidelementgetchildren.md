@@ -16,11 +16,11 @@ Returns the children for the element.
 CFArrayRef IOHIDElementGetChildren(IOHIDElementRef element);
 ```
 
-#### Return Value
+## Return Value
 
 Returns an CFArrayRef containing element objects of type IOHIDElementRef.
 
-#### Discussion
+## Discussion
 
 An element of type kIOHIDElementTypeCollection usually contains children.
 

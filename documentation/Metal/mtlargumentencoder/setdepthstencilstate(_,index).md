@@ -23,7 +23,7 @@ func setDepthStencilState(_ depthStencilState: (any MTLDepthStencilState)?, inde
 - (void) setDepthStencilState:(id<MTLDepthStencilState>) depthStencilState atIndex:(NSUInteger) index;
 ```
 
-#### Discussion
+## Discussion
 
 Sets a depth stencil state at a given bind point index
 

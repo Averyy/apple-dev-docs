@@ -19,11 +19,11 @@ func match(for predicate: NSPredicate) -> Double
 - (double) matchForPredicate:(NSPredicate *) predicate;
 ```
 
-#### Return Value
+## Return Value
 
 A positive number if the template can represent `predicate`, and `0` if it cannot.
 
-#### Discussion
+## Discussion
 
 By default, returns values in the range `0` to `1`.
 

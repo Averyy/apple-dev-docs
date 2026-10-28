@@ -19,7 +19,7 @@ var destinationController: Any { get }
 @property (strong, readonly) id destinationController;
 ```
 
-#### Discussion
+## Discussion
 
 In your storyboard segue subclass, you can read this property to get the ending/contained view controller or window controller for the segue. This property is essential if you override the [`prepare(for:sender:)`](../nssegueperforming/prepare%28for,sender%29.md) method of the [`NSSeguePerforming`](../nssegueperforming.md) protocol, to let you pass configuration data to the ending/contained controller.
 

@@ -5,7 +5,7 @@
 
 Manage and download individual assets yourself by configuring your app and extension targets.
 
-#### Overview
+## Overview
 
 To opt out of Managed Background Assets, add a Self-Hosted, Unmanaged extension target to your project, configure the App Groups capability for both the app and extension target, and add some Background Asset keys to the app’s information property list. Then the system notifies your extension when system events occur so that your extension can initiate downloads.
 
@@ -25,13 +25,13 @@ The flow for periodic content requests is identical to the app install and updat
 
 > **Note**: It’s your responsibility to create manifest files for your self-hosted, unmanaged assets (using your format of choice) that your code parses to get the URLs and file sizes to the system.
 
-##### Add a Self-Hosted, Unmanaged extension to your project
+### Add a Self-Hosted, Unmanaged extension to your project
 
 Choose New > Target, select the Background Download template under Application Extension, and click Next. In the dialog, enter a product name, choose Self-Hosted, Unmanaged as the extension type, and click Finish. In the next dialog, click Activate to use the extension scheme Xcode creates.
 
 If you don’t have an Xcode project for your app, first create one from an Application template under the platform you support, such as iOS or macOS. For more information, see [Creating an Xcode project for an app](../Xcode/creating-an-xcode-project-for-an-app.md).
 
-##### Add the App Groups capability
+### Add the App Groups capability
 
 Add your app and extension targets to the same app group so that they can communicate and share data.
 
@@ -41,7 +41,7 @@ Then, add both targets to the same app group. In the project editor, select the 
 
 The app and extension are now in the same app group and can share the asset files. For more information on configuring app groups, and additional steps for macOS apps, see [Configuring app groups](../Xcode/configuring-app-groups.md).
 
-##### Add required information property list keys
+### Add required information property list keys
 
 Configure Background Assets for your app target by setting information property list keys. In the project editor, select the app target and click the Info tab. Then, add the following keys to the information property list file:
 

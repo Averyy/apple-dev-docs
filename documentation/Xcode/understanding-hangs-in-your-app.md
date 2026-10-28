@@ -5,7 +5,7 @@
 
 Determine the cause for delays in user interactions by examining the main thread and the main run loop.
 
-#### Overview
+## Overview
 
 A discrete user interaction occurs when a person performs a single well-contained interaction and the screen then updates. An example is when someone presses a key on the keyboard and the corresponding letter then appears onscreen. Although the software running on the device needs time to process the incoming user input event and compute the corresponding screen update, it’s usually so quick that a human can’t perceive it and the screen update seems instantaneous.
 
@@ -17,7 +17,7 @@ A hang is almost always the result of long-running work on the main thread. This
 
 > **Note**:  This article assumes a basic understanding of the event-handling and rendering loop, as well as a basic understanding of hangs and hitches, and how they differ. If you’re unfamiliar with hangs and hitches, see [Understanding user interface responsiveness](./understanding-user-interface-responsiveness.md) for more information about them, as well as the event-handling and rendering loop.
 
-##### Understand work on the main thread
+### Understand work on the main thread
 
 Processing incoming events and updating the UI accordingly is the responsibility of an app’s main thread. As part of handling an event, the main thread performs the following work:
 
@@ -65,7 +65,7 @@ In each of these situations, your app needs to make updates to the user interfac
 
 Because there’s only one thread that can make changes to the UI, you don’t want to block it waiting for someone to press the Send button. So, the system needs need a way to schedule work to execute on the main thread, and then check for that work and execute it whenever it comes in — whether it’s handling an event, processing the result of a network request, or reacting to a timer firing. This scheduling and sequential processing of various work items is the responsibility of the main thread’s [`RunLoop`](../Foundation/runloop.md).
 
-##### Understand the main run loop
+### Understand the main run loop
 
 Run loops provide a mechanism for threads to wait on input sources and fire input handlers when any of those sources has data or events to process. Any thread can have a run loop. The main thread starts a run loop, the *main run loop*, as soon as an app finishes launching. This is the run loop that processes all incoming user interaction events.
 
@@ -107,7 +107,7 @@ In the case of an incoming user input event, the run loop simply processes the e
 
 No matter why your code runs on the main run loop, whether its due to handling an event or any of the other ways described above: If code running on the main runloop takes too long to complete, it prevents the run loop from processing other work, including incoming events, and may cause a hang.
 
-##### Understand hangs
+### Understand hangs
 
 Although the relevant delay for the user is the time between interacting with the physical device and the physical screen updating, most of the stages in the event-handling and rendering loop take a short amount of time and are fairly consistent in timing.
 

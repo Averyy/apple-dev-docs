@@ -25,11 +25,11 @@ func sourcePosition(at index: Int) -> vector_float2
 - (vector_float2) sourcePositionAtIndex:(NSInteger) index;
 ```
 
-#### Return Value
+## Return Value
 
 The normalized position of the specified vertex in `sourcePositions`.
 
-#### Discussion
+## Discussion
 
 The specified index must be between 0 and the warp geometry grid’s [`vertexCount`](./vertexcount.md) `- 1`.
 

@@ -23,7 +23,7 @@ init(view: UIView, parameters: UIPreviewParameters, target: UIPreviewTarget)
 - (instancetype) initWithView:(UIView *) view parameters:(UIPreviewParameters *) parameters target:(UIPreviewTarget *) target;
 ```
 
-#### Return Value
+## Return Value
 
 A new targeted preview object.
 

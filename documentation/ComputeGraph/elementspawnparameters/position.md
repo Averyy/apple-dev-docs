@@ -21,7 +21,7 @@ The initial 3D position of the particle in world space coordinates.
 var position: SIMD3<Float> { get set }
 ```
 
-#### Discussion
+## Discussion
 
 This determines where the particle will first appear when spawned. The coordinate system follows RealityKit’s conventions with Y pointing up.
 

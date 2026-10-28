@@ -15,13 +15,13 @@ A bulk operation result item that includes the affected Keyword entity.
 object BulkItemResultKeyword
 ```
 
-#### Discussion
+## Discussion
 
 The `BulkItemResultKeyword` object extends [`BulkItemResult`](./bulkitemresult.md) with a typed `result` field containing the `Keyword` object the operation created or updated. Used by `KeywordCreateBulkResponse` and `KeywordUpdateBulkResponse`; bulk delete doesn’t return the entity (see [`KeywordDeleteBulkResponse`](./keyworddeletebulkresponse.md)).
 
 On success, `result` contains the full `Keyword` entity as it exists after the operation. On failure, `success` is `false` and `error` carries per-item details.
 
-##### Example
+### Example
 
 ```json
 {

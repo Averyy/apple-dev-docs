@@ -21,7 +21,7 @@ Creates a tag containing projection surface information.
 static func projectionType(_ value: CMProjectionType) -> CMTypedTag<CMProjectionType>
 ```
 
-#### Return Value
+## Return Value
 
 A new typed tag containing the projection surface represented by `value`.
 

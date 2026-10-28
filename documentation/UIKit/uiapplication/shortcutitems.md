@@ -22,7 +22,7 @@ var shortcutItems: [UIApplicationShortcutItem]? { get set }
 @property (nonatomic, copy, nullable) NSArray<UIApplicationShortcutItem *> * shortcutItems;
 ```
 
-#### Discussion
+## Discussion
 
 Set this property to register an array of dynamic quick actions to display on the Home screen when a user presses your app icon. Read this property to retrieve the currently registered Home screen dynamic quick actions.
 

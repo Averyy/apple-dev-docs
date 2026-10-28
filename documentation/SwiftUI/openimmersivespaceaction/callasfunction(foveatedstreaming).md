@@ -16,7 +16,7 @@ Presents the immersive space that your app defines for the specified foveated st
 @MainActor func callAsFunction(foveatedStreaming session: FoveatedStreamingSession) async -> OpenImmersiveSpaceAction.Result
 ```
 
-#### Discussion
+## Discussion
 
 Don’t call this method directly. SwiftUI calls it when you call the `<doc://com.apple.documentation/documentation/swiftui/environmentvalues/openimmersivespace>` action with a foveated streaming session:
 

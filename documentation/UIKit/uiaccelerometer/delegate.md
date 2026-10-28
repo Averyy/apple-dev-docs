@@ -12,7 +12,7 @@ The delegate object you want to receive acceleration events.
 @property (nonatomic, weak, nullable) id<UIAccelerometerDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 The [`UIAccelerometerDelegate`](../uiaccelerometerdelegate.md) is a formal protocol, so your delegate object must implement the method it defines. The shared accelerometer object delivers the acceleration data to your delegate at the specified interval. It delivers these events on the main thread of your application when it is in the NSDefaultRunLoopMode run loop mode.
 

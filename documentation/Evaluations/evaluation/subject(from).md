@@ -19,8 +19,8 @@ Produces the subject of evaluation from a given sample.
 ## Declaration
 
 ```swift
-nonisolated
-(nonsending) func subject(from sample: Self.Sample) async throws -> Self.Subject
+nonisolated(nonsending)
+func subject(from sample: Self.Sample) async throws -> Self.Subject
 ```
 
 ## Mentions
@@ -28,11 +28,11 @@ nonisolated
 - [Evaluating language model responses](../evaluating-language-model-responses.md)
 - [Evaluating tool-calling behavior](../evaluating-tool-calling-behavior.md)
 
-#### Return Value
+## Return Value
 
 The subject of evaluation.
 
-#### Discussion
+## Discussion
 
 Implement this method to run your system under test and return the subject that evaluators will measure.
 

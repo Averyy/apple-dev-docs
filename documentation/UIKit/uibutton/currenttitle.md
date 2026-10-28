@@ -23,7 +23,7 @@ var currentTitle: String? { get }
 @property (nonatomic, strong, readonly, nullable) NSString * currentTitle;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this property is set automatically whenever the button state changes. For states that do not have a custom title string associated with them, this method returns the title that is currently displayed, which is typically the one associated with the [`normal`](../uicontrol/state-swift.struct/normal.md) state. The value may be `nil`.
 

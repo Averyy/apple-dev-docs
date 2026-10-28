@@ -25,7 +25,7 @@ struct Storefront
 
 - [Testing Apple In-App Purchases with sandbox](./testing-in-app-purchases-with-sandbox.md)
 
-#### Overview
+## Overview
 
 In-app products you create through App Store Connect are available for sale in each region with an App Store. You can use the storefront information to determine the customer’s region, and offer in-app products suitable for that region.
 
@@ -33,7 +33,7 @@ You need to maintain your own list of product identifiers and the storefronts wh
 
 > **Note**:  Don’t save the storefront information with your customer information because storefront information can change at any time. Get the storefront identifier immediately before you display product information or availability in your app. Don’t use storefront information to develop or enhance a customer profile, or to track customers for advertising or marketing purposes.
 
-##### Change the App Store country or region in the sandbox environment
+### Change the App Store country or region in the sandbox environment
 
 When you change the App Store Country or Region in App Store Connect for a Sandbox Apple Account, it changes the storefront in your app. Change the region to test Apple In-App Purchases for different regions in your app. For more information about changing the App Store Country or Region in App Store Connect, see [Test Apple In-App Purchases](https://developer.apple.com/help/app-store-connect/test-in-app-purchases/manage-sandbox-apple-account-settings/).
 

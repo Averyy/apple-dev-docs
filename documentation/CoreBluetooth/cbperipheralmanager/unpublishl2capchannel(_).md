@@ -25,7 +25,7 @@ func unpublishL2CAPChannel(_ PSM: CBL2CAPPSM)
 - (void) unpublishL2CAPChannel:(CBL2CAPPSM) PSM;
 ```
 
-#### Discussion
+## Discussion
 
 After you make this call, the peripheral manager accepts no new connections for this PSM, and closes any existing L2CAP channels using this PSM.
 

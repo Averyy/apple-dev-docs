@@ -24,7 +24,7 @@ var transformationMatrixBuffer: MTL4BufferRange { get set }
 @property (nonatomic) MTL4BufferRange transformationMatrixBuffer;
 ```
 
-#### Discussion
+## Discussion
 
 When the buffer address is non-zero, Metal applies this transform to the vertex data positions when building the acceleration structure. All keyframes share the same transformation matrix.
 

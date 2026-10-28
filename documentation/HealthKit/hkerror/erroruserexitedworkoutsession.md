@@ -20,7 +20,7 @@ The user exited your application while a workout session was running.
 static var errorUserExitedWorkoutSession: HKError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 Workout sessions end when the app goes into the background.
 

@@ -23,7 +23,7 @@ typealias Failure = Base.Failure
 
 Available when `Base` conforms to `AsyncSequence`.
 
-#### Discussion
+## Discussion
 
 The drop-first sequence produces whatever type of error its base sequence produces.
 

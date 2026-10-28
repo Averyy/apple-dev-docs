@@ -21,7 +21,7 @@ let QCPortAttributeMinimumValueKey: String
 extern NSString * const QCPortAttributeMinimumValueKey;
 ```
 
-#### Discussion
+## Discussion
 
 The associated value is an [`NSNumber`](../Foundation/nsnumber.md) object that specifies the  minimum numerical value accepted by the port.
 

@@ -18,7 +18,7 @@ static var constraints: NSView.Invalidations.Constraints { get }
 
 Available when `Self` is `NSView.Invalidations.Constraints`.
 
-#### Discussion
+## Discussion
 
 Use this invalidation type to set [`needsUpdateConstraints`](../nsview/needsupdateconstraints.md) so that a change in property value triggers the containing view to update constraints.
 

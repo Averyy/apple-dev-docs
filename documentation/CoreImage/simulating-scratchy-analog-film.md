@@ -5,7 +5,7 @@
 
 Degrade the quality of an image to make it look like dated, analog film.
 
-#### Overview
+## Overview
 
 The [`sepiaTone()`](./cifilter-swift.class/sepiatone%28%29.md) filter changes the tint of an image to a reddish-brownish hue resembling old analog photographs. You can enhance the effect by applying random specks and scratches.
 
@@ -18,7 +18,7 @@ The following steps leverage built-in Core Image filters to tint and texture an 
 3. Create randomly varying dark scratches to simulate scratchy film.
 4. Composite the speckle image and scratches onto the sepia-toned image.
 
-##### Apply the Sepia Tone Filter to the Original Image
+### Apply the Sepia Tone Filter to the Original Image
 
 Tint the original image by applying the [`sepiaTone()`](./cifilter-swift.class/sepiatone%28%29.md) filter.
 
@@ -29,7 +29,7 @@ sepiaFilter.intensity = 1.0;
 CIImage *sepiaCIImage = sepiaFilter.outputImage;
 ```
 
-##### Simulate Grain by Creating Randomly Varying Specks
+### Simulate Grain by Creating Randomly Varying Specks
 
 You can use the output of the [`randomGenerator()`](./cifilter-swift.class/randomgenerator%28%29.md) filter to generate images containing random noise. Even though the noise pattern isn’t customizable in size, you can extend and crop it to fit the image.
 
@@ -71,7 +71,7 @@ speckCompositor.backgroundImage = sepiaCIImage;
 CIImage *speckledImage = speckCompositor.outputImage;
 ```
 
-##### Simulate Scratch by Scaling Randomly Varying Noise
+### Simulate Scratch by Scaling Randomly Varying Noise
 
 The process for applying random-looking scratches is the same as the technique used in the white grain: color the output of the [`randomGenerator()`](./cifilter-swift.class/randomgenerator%28%29.md) filter.
 
@@ -109,7 +109,7 @@ The grayscale filter produces random lines that resemble dark scratches.
 
 ![Image of black lines on a white background, used to simulate scratches on an old photo](https://developer.apple.com/tutorials/images/com.apple.coreimage/media-2960180@2x.png)
 
-##### Composite the Specks and Scratches to the Sepia Image
+### Composite the Specks and Scratches to the Sepia Image
 
 Now that the components are set, you can add the scratches to the grainy sepia image produced earlier.  However, unlike the grainy texture, the scratches impact the image multiplicatively.  Instead of the [`sourceOverCompositing()`](./cifilter-swift.class/sourceovercompositing%28%29.md) filter, which composites source over background, use the [`multiplyCompositing()`](./cifilter-swift.class/multiplycompositing%28%29.md) filter to compose the scratches multiplicatively.  Set the scratched image as the filter’s input image, and tab the speckle-composited sepia image as the input background image.
 

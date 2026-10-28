@@ -19,7 +19,7 @@ Creates a default calendar view decoration with a filled circle image, using the
 @preconcurrency static func `default`(color: UIColor? = nil, size: UICalendarView.DecorationSize = .medium) -> UICalendarView.Decoration
 ```
 
-#### Return Value
+## Return Value
 
 A calendar view decoration.
 

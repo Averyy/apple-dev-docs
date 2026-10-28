@@ -21,7 +21,7 @@ The abbreviated representation of a month.
 static var abbreviated: Date.FormatStyle.Symbol.Month { get }
 ```
 
-#### Discussion
+## Discussion
 
 This custom format style conveys an abbreviated representation of a month, like `Sep`.
 

@@ -21,7 +21,7 @@ Fits a linear regressor model to a sequence of annotated features.
 func fitted(to input: some Sequence<AnnotatedFeature<MLShapedArray<Scalar>, MLShapedArray<Scalar>>>, eventHandler: EventHandler? = nil) async throws -> MultivariateLinearRegressor<Scalar>.Model
 ```
 
-#### Return Value
+## Return Value
 
 The fitted linear regressor model.
 

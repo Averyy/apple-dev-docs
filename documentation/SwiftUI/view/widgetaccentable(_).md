@@ -21,7 +21,7 @@ Adds the view and all of its subviews to the accented group.
 @preconcurrency func widgetAccentable(_ accentable: Bool = true) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 When the system renders the widget using the `WidgetKit/WidgetRenderingMode/accented` mode, it divides the widget’s view hierarchy into two groups: the accented group and the default group. It then applies a different color to each group.
 

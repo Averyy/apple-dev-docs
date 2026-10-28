@@ -19,7 +19,7 @@ var isAutomaticDataDetectionEnabled: Bool { get set }
 @property (getter=isAutomaticDataDetectionEnabled) BOOL automaticDataDetectionEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 Automatic data detection enables detection of dates, addresses, and phone numbers.
 

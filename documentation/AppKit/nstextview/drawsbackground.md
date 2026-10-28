@@ -19,7 +19,7 @@ var drawsBackground: Bool { get set }
 @property BOOL drawsBackground;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) to cause the receiver to fill its background with the background color,  [`false`](../../Swift/false.md) otherwise.
 

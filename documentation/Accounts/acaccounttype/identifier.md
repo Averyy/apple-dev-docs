@@ -24,7 +24,7 @@ var identifier: String! { get }
 @property (nonatomic, readonly) NSString * identifier;
 ```
 
-#### Discussion
+## Discussion
 
 Possible values are described in `Account Type Identifiers`.
 

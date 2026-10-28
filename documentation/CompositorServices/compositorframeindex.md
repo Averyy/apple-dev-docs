@@ -20,7 +20,7 @@ typealias CompositorFrameIndex = UInt64
 typedef uint64_t cp_compositor_frame_index_t;
 ```
 
-#### Discussion
+## Discussion
 
 During the creation of your content, the compositor creates frames for you to render your content. This type stores the index the compositor assigns to that frame. The compositor presents frames sequentially based on their indexes.
 

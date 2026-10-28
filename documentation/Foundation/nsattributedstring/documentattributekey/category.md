@@ -15,7 +15,7 @@ The document’s category.
 static let category: NSAttributedString.DocumentAttributeKey
 ```
 
-#### Discussion
+## Discussion
 
 The value of this attribute is an [`NSString`](../../nsstring.md) object containing the document’s category.
 

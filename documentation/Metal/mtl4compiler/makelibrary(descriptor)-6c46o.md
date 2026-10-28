@@ -20,7 +20,7 @@ Creates a new Metal library asynchronously.
 func makeLibrary(descriptor: MTL4LibraryDescriptor) async throws -> any MTLLibrary
 ```
 
-#### Return Value
+## Return Value
 
 A Metal library instance upon success, otherwise this function throws.
 

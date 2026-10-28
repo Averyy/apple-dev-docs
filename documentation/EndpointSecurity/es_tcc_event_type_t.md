@@ -18,7 +18,7 @@ struct es_tcc_event_type_t
 typedef enum { ... } es_tcc_event_type_t;
 ```
 
-#### Overview
+## Overview
 
 Represent the type of TCC modification event.
 

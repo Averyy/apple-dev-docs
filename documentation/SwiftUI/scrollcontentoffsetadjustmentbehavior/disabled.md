@@ -21,7 +21,7 @@ The disabled behavior.
 static var disabled: ScrollContentOffsetAdjustmentBehavior { get }
 ```
 
-#### Discussion
+## Discussion
 
 A scroll view will not adjust its content offset.
 

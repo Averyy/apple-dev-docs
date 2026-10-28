@@ -19,7 +19,7 @@ static let pitchBase: NSSpeechSynthesizer.SpeechPropertyKey
 extern NSSpeechPropertyKey const NSSpeechPitchBaseProperty;
 ```
 
-#### Discussion
+## Discussion
 
 An [`NSNumber`](../../../Foundation/nsnumber.md) object that specifies the baseline speech pitch. Typical voice frequencies range from around 90 hertz for a low-pitched voice to perhaps 300 hertz for a high-pitched voice. These frequencies correspond to approximate pitch values in the ranges of 30.000 to 40.000 and 55.000 to 65.000, respectively.
 

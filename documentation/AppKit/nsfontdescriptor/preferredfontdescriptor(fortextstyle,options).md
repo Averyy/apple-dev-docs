@@ -19,11 +19,11 @@ class func preferredFontDescriptor(forTextStyle style: NSFont.TextStyle, options
 + (NSFontDescriptor *) preferredFontDescriptorForTextStyle:(NSFontTextStyle) style options:(NSDictionary<NSString *,id> *) options;
 ```
 
-#### Return Value
+## Return Value
 
 The font descriptor that contains the text style.
 
-#### Discussion
+## Discussion
 
 The font descriptor contains a dictionary of attributes that you use to create an [`NSFont`](../nsfont.md) object. See [`NSFontDescriptor`](../nsfontdescriptor.md) for more information.
 

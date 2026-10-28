@@ -15,15 +15,15 @@ This is an optional callback that handles custom serialization of a particular d
 typedef CFStringRef (*WSMethodInvocationSerializationProcPtr)(WSMethodInvocationRef invocation, CFTypeRef obj, void *info);
 ```
 
-#### Return Value
+## Return Value
 
 A `CFStringRef` containing valid XML.  The caller of this callback will release the string. If you return `NULL`, the default serializer is used.
 
-#### Discussion
+## Discussion
 
 If your callback is named MySerilaizerCallback, declare it like this:
 
-##### Discussion
+### Discussion
 
 This callback is called whenever a type to be serialized by the method invocation has the given CFTypeID. The callback should return an XML snippet that will be understood by the server as a correct serialization for a given type.  If the callback returns `NULL`, the default serializer is used.
 

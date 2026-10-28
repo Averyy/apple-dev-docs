@@ -19,7 +19,7 @@ var displayState: Any! { get set }
 @property (retain) id displayState;
 ```
 
-#### Discussion
+## Discussion
 
 This property is an opaque object that Quick Look uses to get and set the current display state of the preview. The display state could be, for example, the currently displayed page, the zoom factor on an image, or the position in a movie.
 

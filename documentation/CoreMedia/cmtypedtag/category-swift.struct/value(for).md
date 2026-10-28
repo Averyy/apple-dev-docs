@@ -21,7 +21,7 @@ Convert a tag value into a typed value valid for this category, if possible.
 func value(for tagValue: CMTag.Value) -> TypedValue?
 ```
 
-#### Return Value
+## Return Value
 
 A value of type `TypedValue` containing the tag value, or `nil` if the tag value couldn’t be converted to a `TypedValue`.
 

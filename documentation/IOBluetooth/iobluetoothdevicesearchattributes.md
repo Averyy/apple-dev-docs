@@ -19,7 +19,7 @@ struct IOBluetoothDeviceSearchAttributes
 struct IOBluetoothDeviceSearchAttributes;
 ```
 
-#### Overview
+## Overview
 
 You can search for general device classes and service classes, or you can search for a specific device address or name. If you pass NULL as the attribute structure, you will get ALL devices in the vicinity found during a search. Note that passing a zeroed out block of attributes is NOT equivalent to passing in NULL!
 

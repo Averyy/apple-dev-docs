@@ -24,7 +24,7 @@ var assetCollectionSubtype: PHAssetCollectionSubtype { get }
 @property (nonatomic, assign, readonly) PHAssetCollectionSubtype assetCollectionSubtype;
 ```
 
-#### Discussion
+## Discussion
 
 Use subtypes to make minor distinctions between collections of the same type. For albums, for example, you might distinguish user-created albums from those synced from a Mac. See [`PHAssetCollectionSubtype`](../phassetcollectionsubtype.md) for possible values.
 

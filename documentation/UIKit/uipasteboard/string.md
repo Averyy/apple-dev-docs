@@ -22,7 +22,7 @@ var string: String? { get set }
 @property (nonatomic, copy, nullable) NSString * string;
 ```
 
-#### Discussion
+## Discussion
 
 The value stored in this property is an [`NSString`](../../Foundation/nsstring.md) object. The associated array of representation types is [`typeListString`](./typeliststring.md), which includes type `kUTTypeUTF8PlainText`. Setting this property replaces all current items in the pasteboard with the new item. If the first item has no value of the indicated type, `nil` is returned.
 

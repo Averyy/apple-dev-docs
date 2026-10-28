@@ -21,7 +21,7 @@ Sets the current text matrix.
 extern void CGContextSetTextMatrix(CGContextRef c, CGAffineTransform t);
 ```
 
-#### Discussion
+## Discussion
 
 The text matrix specifies the transform from text space to user space. To produce the final text rendering matrix that is used to actually draw the text on the page, Core Graphics concatenates the text matrix with the current transformation matrix and other parameters from the graphics state.
 

@@ -20,11 +20,11 @@ init(containerClassDescription classDesc: NSScriptClassDescription, containerSpe
 - (instancetype) initWithContainerClassDescription:(NSScriptClassDescription *) classDesc containerSpecifier:(NSScriptObjectSpecifier *) container key:(NSString *) property;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSScriptObjectSpecifier` object initialized with container specifier `specifier`, key `key`, and the class description of the object specifier `classDescription`, derived from the value of the specifier’s key.
 
-#### Discussion
+## Discussion
 
 You should never pass `nil` for the value of `classDescription`. The receiver’s child reference is set to `nil`.
 

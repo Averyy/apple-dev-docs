@@ -24,7 +24,7 @@ var destinationAlpha: MPSAlphaType { get }
 @property (nonatomic, readonly) MPSAlphaType destinationAlpha;
 ```
 
-#### Discussion
+## Discussion
 
 Color space conversion operations produce non-premultiplied data. Use this property to tag cases where premultiplied results are required. If the [`MPSAlphaType.alphaIsOne`](../mpsalphatype/alphaisone.md) value is used, the alpha channel will be set to 1. The default value is [`MPSAlphaType.alphaIsOne`](../mpsalphatype/alphaisone.md).
 

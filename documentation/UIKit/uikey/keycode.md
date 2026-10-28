@@ -23,7 +23,7 @@ var keyCode: UIKeyboardHIDUsage { get }
 @property (nonatomic, readonly) UIKeyboardHIDUsage keyCode;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to determine the HID (Human Interface Device) usage code that identifies the key of a USB (Universal Serial Bus) keyboard. For a list of HID usage codes, see [`UIKeyboardHIDUsage`](../uikeyboardhidusage.md).
 

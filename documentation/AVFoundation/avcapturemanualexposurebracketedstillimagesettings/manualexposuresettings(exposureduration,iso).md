@@ -22,7 +22,7 @@ class func manualExposureSettings(exposureDuration duration: CMTime, iso ISO: Fl
 + (instancetype) manualExposureSettingsWithExposureDuration:(CMTime) duration ISO:(float) ISO;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized `AVCaptureManualExposureBracketedStillImageSettings` instance.
 

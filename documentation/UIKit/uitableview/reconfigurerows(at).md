@@ -23,7 +23,7 @@ func reconfigureRows(at indexPaths: [IndexPath])
 - (void) reconfigureRowsAtIndexPaths:(NSArray<NSIndexPath *> *) indexPaths;
 ```
 
-#### Discussion
+## Discussion
 
 To update the contents of existing (including prefetched) cells without replacing them with new cells, use this method instead of [`reloadRows(at:with:)`](./reloadrows%28at,with%29.md). For optimal performance, choose to reconfigure rows instead of reloading rows unless you have an explicit need to replace the existing cell with a new cell.
 

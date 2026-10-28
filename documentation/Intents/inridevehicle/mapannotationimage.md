@@ -36,7 +36,7 @@ var mapAnnotationImage: INImage? { get set }
 
 - [Providing Live Status Updates](../../SiriKit/providing-live-status-updates.md)
 
-#### Discussion
+## Discussion
 
 The image you provide should be a top-down image of your vehicle, and the front of the vehicle should be at the top of your image. When added to the map, Maps centers the image on the vehicle’s [`location`](./location.md). Maps rotates the image to match the current direction in which the vehicle is going.
 

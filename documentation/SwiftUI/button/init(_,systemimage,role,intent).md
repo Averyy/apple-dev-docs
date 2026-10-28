@@ -35,7 +35,7 @@ nonisolated
 init(_ titleResource: LocalizedStringResource, systemImage: String, role: ButtonRole? = nil, intent: some AppIntent)
 ```
 
-#### Discussion
+## Discussion
 
 This initializer creates a [`Label`](../label.md) view on your behalf, and treats the title similar to [`init(_:)`](../text/init%28_%29-9d1g4.md). See [`Text`](../text.md) for more information about localizing strings.
 

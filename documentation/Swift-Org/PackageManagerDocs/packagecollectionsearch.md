@@ -13,11 +13,11 @@ Search for packages by keywords or module names.
 **Availability**:
 - Swift 5.5+
 
-#### Overview
+## Overview
 
 This subcommand searches for packages by keywords or module names within imported collections. The result can optionally be returned as JSON using `--json` for integration into other tools.
 
-##### String-based search
+### String-based search
 
 The search command does a string-based search when using the `--keywords` option and returns the list of packages that matches the query:
 
@@ -27,7 +27,7 @@ https://github.com/jpsim/yams: A sweet and swifty YAML parser built on LibYAML.
 ...
 ```
 
-##### Module-based search
+### Module-based search
 
 The search command does a search for a specific module name when using the `--module` option:
 
@@ -40,7 +40,7 @@ Description: A sweet and swifty YAML parser built on LibYAML.
 ...
 ```
 
-#### Usage
+## Usage
 
 ```
 package-collection search [--json] --keywords --module

@@ -19,11 +19,11 @@ func SetSpeechProperty(_ chan: SpeechChannel, _ property: CFString, _ object: CF
 OSErr SetSpeechProperty(SpeechChannel chan, CFStringRef property, CFTypeRef object);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./speech_synthesis_manager.md#1659745).
 
-#### Discussion
+## Discussion
 
 The `SetSpeechProperty` function is the Core Foundation-based equivalent of the [`SetSpeechInfo`](./api-1552223-setspeechinfo.md) function.
 

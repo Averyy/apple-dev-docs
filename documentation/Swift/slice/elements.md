@@ -23,7 +23,7 @@ typealias Elements = Slice<Base>
 
 Available when `Base` conforms to `Collection` and `LazySequenceProtocol`.
 
-#### Discussion
+## Discussion
 
 - See also: `elements`
 

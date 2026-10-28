@@ -19,7 +19,7 @@ func SKSummaryCopySentenceAtIndex(_ summary: SKSummary!, _ i: CFIndex) -> Unmana
 CFStringRef SKSummaryCopySentenceAtIndex(SKSummaryRef summary, CFIndex i);
 ```
 
-#### Return Value
+## Return Value
 
 A [`CFString`](../CoreFoundation/cfstring.md) object containing the specified sentence, or `NULL` on failure.
 

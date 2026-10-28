@@ -15,7 +15,7 @@ Posted by a WebView object when the load has finished.
 extern NSString * WebViewProgressFinishedNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is the WebView that finished loading. This notification does not contain a `userInfo` dictionary.
 

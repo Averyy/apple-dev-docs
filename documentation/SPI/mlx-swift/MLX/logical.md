@@ -10,7 +10,7 @@ framework: "mlx-swift/MLX"
 
 Evaluating logical operations on MLXArray.
 
-#### Overview
+## Overview
 
 [`MLXArray`](./mlxarray.md) has a number of logical operators, instance methods and free functions.  Single or multiple arrayscan be combined using these operators:
 

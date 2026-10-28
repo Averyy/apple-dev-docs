@@ -24,11 +24,11 @@ Returns a snapshot of the current configuration state.
 func snapshot() -> ConfigSnapshotReader
 ```
 
-#### Return Value
+## Return Value
 
 The snapshot.
 
-#### Discussion
+## Discussion
 
 The snapshot reader provides read-only access to the configuration’s state at the time you call this method.
 

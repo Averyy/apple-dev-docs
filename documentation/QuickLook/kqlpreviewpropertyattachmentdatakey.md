@@ -21,7 +21,7 @@ let kQLPreviewPropertyAttachmentDataKey: CFString!
 extern CFStringRef const kQLPreviewPropertyAttachmentDataKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value is a [`CFData`](../CoreFoundation/cfdata.md) object.
 

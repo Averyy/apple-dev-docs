@@ -17,7 +17,7 @@ Split an array along a given axis.
 func split(_ array: MLXArray, indices: some Collection<Int>, axis: Int = 0, stream: StreamOrDevice = .default) -> [MLXArray]
 ```
 
-##### See Also
+### See Also
 
 - [Shapes](./shapes.md)
 - [`split(_:parts:axis:stream:)`](./split%28_,parts,axis,stream%29.md)

@@ -19,7 +19,7 @@ A custom view for the background.
 @property (nonatomic, strong, nullable) UIView * customView;
 ```
 
-#### Discussion
+## Discussion
 
 The custom view must have [`translatesAutoresizingMaskIntoConstraints`](../uiview/translatesautoresizingmaskintoconstraints.md) set to [`true`](../../Swift/true.md), but it can use Auto Layout constraints internally for layout of its subviews.
 

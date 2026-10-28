@@ -25,7 +25,7 @@ func objc_removeAssociatedObjects(_ object: Any)
 extern void objc_removeAssociatedObjects(id object);
 ```
 
-#### Discussion
+## Discussion
 
 The main purpose of this function is to make it easy to return an object to a “pristine state”. You should not use this function for general removal of associations from objects, since it also removes associations that other clients may have added to the object. Typically you should use [`objc_setAssociatedObject(_:_:_:_:)`](./objc_setassociatedobject%28_,_,_,_%29.md) with a `nil` value to clear an association.
 

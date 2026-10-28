@@ -24,7 +24,7 @@ func invert()
 - (void) invert;
 ```
 
-#### Discussion
+## Discussion
 
 For example, a value of `1.0` becomes `-1.0`, a value of `-0.5` becomes `0.5`, and so on.
 

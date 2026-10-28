@@ -5,13 +5,13 @@
 
 Create a leaderboard for your game that ranks player scores based on a schedule.
 
-#### Overview
+## Overview
 
 Use a *recurring leaderboard* to organize regular competitions or encourage players to score higher in your game. Unlike a classic leaderboard that never resets, a recurring leaderboard represents score rankings during a period of time. Each leaderboard in the sequence is called an *occurrence*.
 
 For design guidance, see [Human Interface Guidelines > Technologies > Game Center > Leaderboards](https://developer.apple.com/design/human-interface-guidelines/game-center#Leaderboards).
 
-#### Configure and test recurring leaderboards
+## Configure and test recurring leaderboards
 
 Configure recurring leaderboards in Xcode before accessing them in your code and testing locally with Game Progress Manager. When you’re ready to deploy your configuration, sync your updates with App Store Connect. For more information about configuring and testing Game Center features, see [Initializing and configuring Game Center](./initializing-and-configuring-game-center.md).
 
@@ -27,7 +27,7 @@ Use the Game Progress Manager to test leaderboards on your local device before y
 
 To learn more about the information you enter in App Store Connect, see [Leaderboard properties](https://developer.apple.com/help/app-store-connect/reference/leaderboards#leaderboard-properties).
 
-#### Submit a score to the current occurrence
+## Submit a score to the current occurrence
 
 Use the leaderboard ID you entered in Xcode to specify the current occurrence when submitting a score. Don’t submit scores to past occurances leaderboards.
 
@@ -59,7 +59,7 @@ try await GKLeaderboard.submitScore(points,
 
 However, submitting a score with this method fails if the leaderboard isn’t active, so check the start date and duration properties of the leaderboard before calling the [`submitScore(_:context:player:completionHandler:)`](./gkleaderboard/submitscore%28_,context,player,completionhandler%29.md) method. To get the start date of the next occurrence, use the [`nextStartDate`](./gkleaderboard/nextstartdate.md) property.
 
-#### Access the previous occurrence
+## Access the previous occurrence
 
 If you want the scores and rankings from the previous occurrence, you can get the occurrence using the [`loadPreviousOccurrence(completionHandler:)`](./gkleaderboard/loadpreviousoccurrence%28completionhandler%29.md) method in [`GKLeaderboard`](./gkleaderboard.md). First, load the current occurrence using the [`loadLeaderboards(IDs:completionHandler:)`](./gkleaderboard/loadleaderboards%28ids,completionhandler%29.md) class method, then call [`loadPreviousOccurrence(completionHandler:)`](./gkleaderboard/loadpreviousoccurrence%28completionhandler%29.md) to load the previous occurrence.
 

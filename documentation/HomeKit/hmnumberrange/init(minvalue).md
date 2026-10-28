@@ -24,7 +24,7 @@ convenience init(minValue: NSNumber)
 + (instancetype) numberRangeWithMinValue:(NSNumber *) minValue;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized number range, with the maximum value set to an arbitrarily large value.
 

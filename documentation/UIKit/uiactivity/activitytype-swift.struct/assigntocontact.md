@@ -22,7 +22,7 @@ static let assignToContact: UIActivity.ActivityType
 extern UIActivityType const UIActivityTypeAssignToContact;
 ```
 
-#### Discussion
+## Discussion
 
 When using this service, you can provide a [`UIImage`](../../uiimage.md) object as data for the activity items.
 

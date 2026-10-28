@@ -32,7 +32,7 @@ var intentIdentifiers: [String] { get }
 @property (atomic, copy, readonly) NSArray<NSString *> * intentIdentifiers;
 ```
 
-#### Discussion
+## Discussion
 
 When the system delivers a notification, the presence of an intent identifier lets the system know that the notification is potentially related to the handling of a request made through Siri.
 

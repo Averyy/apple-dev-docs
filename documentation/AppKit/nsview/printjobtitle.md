@@ -19,7 +19,7 @@ var printJobTitle: String { get }
 @property (copy, readonly) NSString * printJobTitle;
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation first tries the window’s `NSDocument` display name ([`displayName`](../nsdocument/displayname.md)), then the window’s title.
 

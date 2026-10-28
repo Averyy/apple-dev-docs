@@ -25,7 +25,7 @@ class MTRBaseClusterDishwasherAlarm
 @interface MTRBaseClusterDishwasherAlarm : MTRGenericBaseCluster
 ```
 
-#### Overview
+## Overview
 
 Attributes and commands for configuring the Dishwasher alarm.
 

@@ -24,7 +24,7 @@ case maxExercise
 HKHeartRateRecoveryTestTypeMaxExercise
 ```
 
-#### Discussion
+## Discussion
 
 In this test, a person exercises to their physical limit. The test measures their max heart rate during the workout, and then compares this with their heart rate after the workout ends. This lets the test calculate the actual heart rate recovery.
 

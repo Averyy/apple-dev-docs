@@ -20,7 +20,7 @@ func IOUSBHostDeviceRequestType(_ direction: tIOUSBDeviceRequestDirectionValue, 
 static uint8_t IOUSBHostDeviceRequestType(tIOUSBDeviceRequestDirectionValue direction, tIOUSBDeviceRequestTypeValue type, tIOUSBDeviceRequestRecipientValue recipient);
 ```
 
-#### Return Value
+## Return Value
 
 The request type.
 

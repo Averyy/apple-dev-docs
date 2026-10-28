@@ -20,7 +20,7 @@ struct SuspendedMemoryMetric
 
 - [Analyzing app performance with MetricKit](./analyzing-app-performance-with-metrickit.md)
 
-#### Discussion
+## Discussion
 
 This metric corresponds to the [`MetricResult.suspendedMemory(_:)`](./metricresult/suspendedmemory%28_%29.md) case. It appears only in [`intervalEntries`](./metricreport/intervalentries.md) and is not included in state entries.
 

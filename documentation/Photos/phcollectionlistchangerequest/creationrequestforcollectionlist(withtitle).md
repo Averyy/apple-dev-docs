@@ -24,11 +24,11 @@ class func creationRequestForCollectionList(withTitle title: String) -> Self
 + (instancetype) creationRequestForCollectionListWithTitle:(NSString *) title;
 ```
 
-#### Return Value
+## Return Value
 
 A collection list creation request.
 
-#### Discussion
+## Discussion
 
 Call this method within a photo library change block to create a new collection list. For details on change blocks, see [`PHPhotoLibrary`](../phphotolibrary.md).
 

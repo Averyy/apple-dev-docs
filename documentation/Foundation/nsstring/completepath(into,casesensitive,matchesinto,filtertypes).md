@@ -25,11 +25,11 @@ func completePath(into outputName: AutoreleasingUnsafeMutablePointer<NSString?>?
 - (NSUInteger) completePathIntoString:(NSString **) outputName caseSensitive:(BOOL) flag matchesIntoArray:(NSArray<NSString *> **) outputArray filterTypes:(NSArray<NSString *> *) filterTypes;
 ```
 
-#### Return Value
+## Return Value
 
 `0` if no matches are found and `1` if exactly one match is found. In the case of multiple matches, returns the actual number of matching paths if `outputArray` is provided, or simply a positive value if `outputArray` is `NULL`.
 
-#### Discussion
+## Discussion
 
 You can check for the existence of matches without retrieving by passing `NULL` as `outputArray`.
 

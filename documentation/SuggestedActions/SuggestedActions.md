@@ -13,7 +13,7 @@ Offer quick actions next to messages in your messaging app, based on context you
 - macOS 27.0+
 - visionOS 27.0+
 
-#### Overview
+## Overview
 
 When people send each other messages in your messaging app, they share information like dates, reminders, or other actionable content. To let people complete a message-related task in your messaging app with Suggested Actions, add a [`SuggestedActionsView`](./suggestedactionsview.md) below a message and provide the view with message content. To preserve user privacy, the framework analyzes the message content you provide on-device and doesn’t send it to Apple servers.
 

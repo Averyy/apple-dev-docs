@@ -24,7 +24,7 @@ var maxSampleCount: MTLSize { get }
 @property (nonatomic, readonly) MTLSize maxSampleCount;
 ```
 
-#### Discussion
+## Discussion
 
 Its [`depth`](../mtlsize/depth.md) value is always `0`.
 

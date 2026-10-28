@@ -24,7 +24,7 @@ let kIOSurfacePlaneBytesPerRow: CFString
 extern CFStringRef const kIOSurfacePlaneBytesPerRow;
 ```
 
-#### Discussion
+## Discussion
 
 If not specified, IOSurface will first calculate the number full elements required on each row (by rounding up), multiplied by the bytes per element for this plane. That value will then be appropriately aligned.
 

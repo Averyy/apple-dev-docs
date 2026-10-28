@@ -22,7 +22,7 @@ var isMicrophoneInjectionAvailable: Bool { get }
 @property (readonly) BOOL isMicrophoneInjectionAvailable;
 ```
 
-#### Discussion
+## Discussion
 
 Observe changes to the value of this property by registering for notifications of type [`microphoneInjectionCapabilitiesChangeNotification`](./microphoneinjectioncapabilitieschangenotification.md).
 

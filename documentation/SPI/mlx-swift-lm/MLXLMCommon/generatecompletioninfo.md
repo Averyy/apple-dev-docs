@@ -21,7 +21,7 @@ struct GenerateCompletionInfo
 
 - [Observing token log probabilities](./generation-observability.md)
 
-#### Overview
+## Overview
 
 Provides information about the number of tokens processed during both the prompt and generation phases, as well as the time taken for each phase.
 

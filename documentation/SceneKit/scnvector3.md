@@ -25,7 +25,7 @@ struct SCNVector3
 typedef struct SCNVector3 { ... } SCNVector3;
 ```
 
-#### Overview
+## Overview
 
 SceneKit uses three-component vectors for a variety of purposes, such as describing node or vertex positions, surface normals, and scale or translation transforms. The different vector components should be interpreted based on the context in which the vector is being used.
 

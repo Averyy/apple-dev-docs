@@ -21,7 +21,7 @@ A slice of the shaped array for the specified ranges.
 subscript(sliceRanges: any MLShapedArrayRangeExpression...) -> MLShapedArraySlice<Self.Scalar> { get set }
 ```
 
-#### Overview
+## Overview
 
 When the range expression array is shorter than the rank, the remaining axes are fully selected. For example, given a shaped array `m` of shape `[2, 3]`, `m[0..<1]` results in a slice with shape `[1, 3]`.
 

@@ -24,7 +24,7 @@ The hierarchical components that make up this absolute configuration key.
 var components: [String]
 ```
 
-#### Discussion
+## Discussion
 
 Each component represents a level in the configuration hierarchy, forming a complete path from the root of the configuration structure.
 

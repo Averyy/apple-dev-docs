@@ -21,7 +21,7 @@ Returns strongly-typed match output by converting this type-erased output to the
 func extractValues<Output>(as outputType: Output.Type = Output.self) -> Output?
 ```
 
-#### Return Value
+## Return Value
 
 The output, if the underlying value can be converted to `outputType`; otherwise, `nil`.
 

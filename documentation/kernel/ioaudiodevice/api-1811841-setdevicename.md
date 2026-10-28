@@ -12,7 +12,7 @@ virtual void setDeviceName(
  const char *deviceName);
 ```
 
-#### Overview
+## Overview
 
 This method should be called during initialization or startup. It should be set by the time initHardware() completes. The device name is used by the CoreAudio.framework to identify the particular piece of hardware. This string should should be localized by the driver.
 

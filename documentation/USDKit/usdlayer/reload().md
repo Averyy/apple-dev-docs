@@ -20,7 +20,7 @@ Reloads the layer from its source, discarding any unsaved changes.
 func reload() throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: An error if the layer cannot be reloaded.
 

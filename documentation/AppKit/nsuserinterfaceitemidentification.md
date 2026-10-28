@@ -19,7 +19,7 @@ protocol NSUserInterfaceItemIdentification
 @protocol NSUserInterfaceItemIdentification
 ```
 
-#### Overview
+## Overview
 
 The protocol is adopted by AppKit interface objects to support window restoration, whereby information about window and other interface-related objects is preserved and used to restore the application’s interface during the next launch cycle.
 

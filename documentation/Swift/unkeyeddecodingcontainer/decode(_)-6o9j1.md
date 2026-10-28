@@ -22,11 +22,11 @@ Decodes a value of the given type.
 mutating func decode(_ type: Int64.Type) throws -> Int64
 ```
 
-#### Return Value
+## Return Value
 
 A value of the requested type, if present for the given key and convertible to the requested type.
 
-#### Discussion
+## Discussion
 
 > **Throws**: `DecodingError.typeMismatch` if the encountered encoded value is not convertible to the requested type.
 

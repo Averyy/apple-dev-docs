@@ -38,7 +38,7 @@ protocol SKPaymentTransactionObserver : NSObjectProtocol
 - [Supporting Family Sharing in your app](./supporting-family-sharing-in-your-app.md)
 - [Testing resubscribing from the subscriptions page](./testing-resubscribing-from-the-subscriptions-page.md)
 
-#### Overview
+## Overview
 
 Observers of [`SKPaymentQueue`](./skpaymentqueue.md) objects implement the methods of this protocol.
 

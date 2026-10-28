@@ -21,11 +21,11 @@ Copies the description string of a session.
 extern char *xpc_session_copy_description(xpc_session_t session);
 ```
 
-#### Return Value
+## Return Value
 
 A string that describes the session.
 
-#### Discussion
+## Discussion
 
 To dispose of the string when it’s no longer needed, call `free()`.
 

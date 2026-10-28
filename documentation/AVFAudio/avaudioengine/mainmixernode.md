@@ -25,7 +25,7 @@ var mainMixerNode: AVAudioMixerNode { get }
 @property (nonatomic, readonly) AVAudioMixerNode * mainMixerNode;
 ```
 
-#### Discussion
+## Discussion
 
 The audio engine constructs a singleton main mixer and connects it to the [`outputNode`](./outputnode.md) when first accessing this property. You can then connect additional audio nodes to the mixer.
 

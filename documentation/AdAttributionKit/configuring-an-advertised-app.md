@@ -5,13 +5,13 @@
 
 Prepare an advertised app to participate in ad campaigns.
 
-#### Overview
+## Overview
 
 An advertised app is an app someone installs or reengages with after viewing an ad that an ad network signs. After a conversion event occurs, the system may create postbacks for the advertised app. The advertised app needs to call one of the methods that update the postback’s conversion value at least once to begin the postback’s conversion window. It’s recommended that the app updates the conversion value when the app first launches to begin the conversion window. You can use the following methods to update the conversion value, depending on your use case: [`updateConversionValue(_:)`](./postback/updateconversionvalue%28_%29.md), [`updateConversionValue(_:coarseConversionValue:lockPostback:)`](./postback/updateconversionvalue%28_,coarseconversionvalue,lockpostback%29.md), and [`updateConversionValue(_:lockPostback:)`](./postback/updateconversionvalue%28_,lockpostback%29.md).
 
 Developers opt in to get copies of winning postbacks.
 
-#### Configure your app to receive copies of winning postbacks
+## Configure your app to receive copies of winning postbacks
 
 To opt in to receive copies of winning postbacks for your advertised app, add the `AttributionCopyEndpoint` key your app’s Xcode project’s Information Property List , and configure your server to receive the postbacks.
 
@@ -38,7 +38,7 @@ Replace `example.com` with your domain name.
 
 For more information about receiving postbacks, see [Receiving ad attributions and postbacks](./receiving-ad-attributions-and-postbacks.md).
 
-#### Opt in to receive copies of winning reengagement postbacks
+## Opt in to receive copies of winning reengagement postbacks
 
 To receive copies of winning reengagement postbacks, you need to add an additional key to your app’s Information Property List. Follow these steps:
 

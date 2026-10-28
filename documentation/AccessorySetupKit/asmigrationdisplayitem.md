@@ -24,7 +24,7 @@ class ASMigrationDisplayItem
 
 - [Discovering and configuring accessories](./discovering-and-configuring-accessories.md)
 
-#### Overview
+## Overview
 
 Create instances of `ASMigrationDisplayItem` by calling the superclass’s initializer [`init(name:productImage:descriptor:)`](./aspickerdisplayitem/init%28name,productimage,descriptor%29.md), then specify the Bluetooth [`peripheralIdentifier`](./asmigrationdisplayitem/peripheralidentifier.md), the Wi-Fi [`hotspotSSID`](./asmigrationdisplayitem/hotspotssid.md), or both, for the specific accessory you want to migrate.
 

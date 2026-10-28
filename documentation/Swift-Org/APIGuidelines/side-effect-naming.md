@@ -10,7 +10,7 @@ framework: "Swift-Org/APIGuidelines"
 
 Name functions and methods according to their side-effects.
 
-#### Overview
+## Overview
 
 - Those without side-effects should read as noun phrases, e.g. `x.distance(to: y)`, `i.successor()`.
 - Those with side-effects should read as imperative verb phrases, e.g., `print(x)`, `x.sort()`, `x.append(y)`.

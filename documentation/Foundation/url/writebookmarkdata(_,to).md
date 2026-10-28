@@ -21,7 +21,7 @@ Creates an alias file on disk at a specified location with specified bookmark da
 static func writeBookmarkData(_ data: Data, to url: URL) throws
 ```
 
-#### Discussion
+## Discussion
 
 The `data` must have been created with the [`suitableForBookmarkFile`](../nsurl/bookmarkcreationoptions/suitableforbookmarkfile.md) option. The `url` must either refer to an existing file (which will be overwritten), or to location in an existing directory.
 

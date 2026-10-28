@@ -21,7 +21,7 @@ A message that an undo manager sends at certain checkpoints.
 struct CheckpointMessage
 ```
 
-#### Overview
+## Overview
 
 The undo manager posts this message when it opens or closes an undo group (except when it opens a top-level group) and when it checks the redo stack.
 

@@ -25,7 +25,7 @@ var level: Int { get }
 @property (readonly) NSUInteger level;
 ```
 
-#### Discussion
+## Discussion
 
 The number of levels, with the directory passed to [`enumeratorAtURL:includingPropertiesForKeys:options:errorHandler:`](../../nsfilemanager/enumeratoraturl_includingpropertiesforkeys_options_errorhandler_.md) (`NSFileManager`) considered to be level `0`.
 

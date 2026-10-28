@@ -6,7 +6,7 @@
 
 A table that maps samples to chunks.
 
-#### Overview
+## Overview
 
 The following table shows the structure of an entry in a sample-to-chunk table. Each sample-to-chunk atom contains such a table, which identifies the chunk for each sample in a media. Each entry in the table contains a first chunk field, a samples per chunk field, and a sample description ID field. From this information, you can ascertain where samples reside in the media data.
 

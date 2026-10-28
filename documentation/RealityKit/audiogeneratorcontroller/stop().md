@@ -21,7 +21,7 @@ Stops playback of the render handler.
 func stop()
 ```
 
-#### Discussion
+## Discussion
 
 Callbacks to the render handler stop after calling [`stop()`](./stop%28%29.md). There may be a short delay between when you call `stop` and when the callbacks actually stop.
 

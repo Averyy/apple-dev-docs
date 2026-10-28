@@ -19,7 +19,7 @@ The relevance score for the item.
 let score: Double
 ```
 
-#### Discussion
+## Discussion
 
 The stage defines the scale for values of this type, but higher indicate greater relevance.
 

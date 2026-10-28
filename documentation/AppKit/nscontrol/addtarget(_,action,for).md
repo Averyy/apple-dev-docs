@@ -19,7 +19,7 @@ func addTarget(_ target: Any?, action: Selector, for controlEvents: NSControl.Ev
 - (void) addTarget:(id) target action:(SEL) action forControlEvents:(NSControlEvents) controlEvents;
 ```
 
-#### Discussion
+## Discussion
 
 You can call this method multiple times to register additional target-action pairs for the same or different events. You can also register multiple targets or multiple actions for the same event. The control holds a weak reference to each registered target.
 

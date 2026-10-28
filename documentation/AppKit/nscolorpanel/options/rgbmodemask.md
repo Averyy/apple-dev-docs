@@ -19,7 +19,7 @@ static var rgbModeMask: NSColorPanel.Options { get }
 NSColorPanelRGBModeMask
 ```
 
-#### Discussion
+## Discussion
 
 Red-green-blue.
 

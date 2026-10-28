@@ -25,7 +25,7 @@ class UNTimeIntervalNotificationTrigger
 @interface UNTimeIntervalNotificationTrigger : UNNotificationTrigger
 ```
 
-#### Overview
+## Overview
 
 Create a [`UNTimeIntervalNotificationTrigger`](./untimeintervalnotificationtrigger.md) object when you want to schedule the delivery of a local notification after the number of seconds you specify elapses. You use this type of trigger to implement timers.
 

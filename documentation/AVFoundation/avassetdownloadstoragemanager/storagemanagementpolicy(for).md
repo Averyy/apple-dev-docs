@@ -23,7 +23,7 @@ func storageManagementPolicy(for downloadStorageURL: URL) -> AVAssetDownloadStor
 - (AVAssetDownloadStorageManagementPolicy *) storageManagementPolicyForURL:(NSURL *) downloadStorageURL;
 ```
 
-#### Return Value
+## Return Value
 
 The storage management policy for the asset, or `nil` if one isn’t set.
 

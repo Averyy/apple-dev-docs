@@ -26,7 +26,7 @@ var addressDictionary: [AnyHashable : Any]? { get }
 @property (nonatomic, copy, readonly, nullable) NSDictionary * addressDictionary;
 ```
 
-#### Discussion
+## Discussion
 
 The keys in this dictionary are those defined by the Address Book framework and used to access address information for a person. For a list of the strings that can be in this dictionary, see the “Address Property” constants in `ABPerson`.
 

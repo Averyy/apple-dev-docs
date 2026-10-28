@@ -13,7 +13,7 @@ Add custom audio processing and MIDI instruments to your app by hosting Audio Un
 - macOS 10.15+
 - Xcode 16.0+
 
-#### Overview
+## Overview
 
 This sample app shows you how to use AU plug-ins in your iOS and macOS apps. You find and instantiate plug-ins, incorporate their user interfaces into your app’s interface, and work with their presets.
 
@@ -25,7 +25,7 @@ The sample app has targets for iOS and macOS. Both versions have three primary c
 - `AudioUnitManager` manages the interactions with the effect and instrument plug-ins.
 - `SimplePlayEngine` uses [AVAudioEngine](../AVFAudio/avaudioengine.md) to play back audio samples and MIDI data.
 
-##### Find Audio Units
+### Find Audio Units
 
 You find Audio Units that are registered with the host system by creating an [`AudioComponentDescription`](./audiocomponentdescription.md) defining your search criteria. The sample app searches for component types, either audio effects ([`kAudioUnitType_Effect`](./kaudiounittype_effect.md)) or MIDI instruments ([`kAudioUnitType_MusicDevice`](./kaudiounittype_musicdevice.md)). You can also pass values for the other fields of `AudioComponentDescription` or pass `0` as a wildcard matching all values. Get the shared instance of [AVAudioUnitComponentManager](../AVFAudio/avaudiounitcomponentmanager.md) and call its [components(matching:)](../AVFAudio/avaudiounitcomponentmanager/components%28matching%29-9qt94.md) method to find the components matching your search criteria.
 
@@ -42,7 +42,7 @@ let components = AVAudioUnitComponentManager.shared().components(matching: descr
 
 This method returns an array of [AVAudioUnitComponent](../AVFAudio/avaudiounitcomponent.md) objects matching the component description, or an empty array if it found no matches. You can access a component’s properties to determine its capabilities and find identifying values, such as its name and manufacturer, for display in your user interface.
 
-##### Instantiate Audio Units
+### Instantiate Audio Units
 
 When the user selects an Audio Unit in the user interface, your app needs to find the component and instantiate it.
 
@@ -70,7 +70,7 @@ AVAudioUnit.instantiate(with: description, options: options) { avAudioUnit, erro
 
 > **Note**: iOS and macOS support using existing AUv2 plug-ins. iOS supports only those provided by the operating system, but macOS supports third-party AUv2 plug-ins as well. In both platforms, these plug-ins are *always* run as part of the host app’s process.
 
-##### Present an Audio Unit’s Custom View
+### Present an Audio Unit’s Custom View
 
 A plug-in can provide a custom user interface to control its parameters. You get the custom view by asking the plug-in for its view controller, which returns an instance of [AUViewController](../CoreAudioKit/auviewcontroller.md), or `nil` if it doesn’t provide a custom view. You add the view controller’s view to your user interface using the appropriate approach for your platform.
 
@@ -86,7 +86,7 @@ func loadAudioUnitViewController(completion: @escaping (ViewController?) -> Void
 }
 ```
 
-##### Select Alternative View Configurations
+### Select Alternative View Configurations
 
 All AU plug-ins can provide a custom user interface, but AUv3 plug-ins may also provide alternative views. A host app can support multiple view configurations. For example, an iOS app may provide compact and expanded views and switch between them depending on the device size or orientation. You define one or more supported view configurations using the [AUAudioUnitViewConfiguration](../CoreAudioKit/auaudiounitviewconfiguration.md) class.
 
@@ -120,7 +120,7 @@ func toggleViewMode() {
 }
 ```
 
-##### Load Factory Presets
+### Load Factory Presets
 
 A plug-in author can optionally provide one or more presets that define specific configurations of the plug-in’s parameter values. You access an [`AUAudioUnit`](./auaudiounit.md) object’s presets through its [`factoryPresets`](./auaudiounit/factorypresets.md) property, which returns an array of [`AUAudioUnitPreset`](./auaudiounitpreset.md) instances, or an empty array if it defines none.
 
@@ -134,7 +134,7 @@ public var factoryPresets: [Preset] {
 
 The sample app uses a simple wrapper type called `Preset` to pass to the user interface tier. The view controller uses these objects to build the app’s preset selection interface.
 
-##### Manage User Presets
+### Manage User Presets
 
 A plug-in may also support *user presets*, which are user-configured parameter settings. You query the Audio Unit’s [`supportsUserPresets`](./auaudiounit/supportsuserpresets.md) property to determine if it supports saving user presets.
 
@@ -180,7 +180,7 @@ do {
 
 If the user decides to delete this or another user preset, you call [`deleteUserPreset(_:)`](./auaudiounit/deleteuserpreset%28_%29.md) to remove it.
 
-##### Select Factory and User Presets
+### Select Factory and User Presets
 
 To select a factory or user preset, set it as the Audio Unit’s [`currentPreset`](./auaudiounit/currentpreset.md) property. This restores the plug-in’s parameter state to the values stored with the specified preset.
 

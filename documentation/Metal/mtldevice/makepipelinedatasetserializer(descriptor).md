@@ -25,7 +25,7 @@ func makePipelineDataSetSerializer(descriptor: MTL4PipelineDataSetSerializerDesc
 - (id<MTL4PipelineDataSetSerializer>) newPipelineDataSetSerializerWithDescriptor:(MTL4PipelineDataSetSerializerDescriptor *) descriptor;
 ```
 
-#### Return Value
+## Return Value
 
 A [`MTL4PipelineDataSetSerializer`](../mtl4pipelinedatasetserializer.md) instance, or `nil` if the function failed.
 

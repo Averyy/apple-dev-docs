@@ -24,7 +24,7 @@ var reason: AVCoordinatedPlaybackSuspension.Reason { get }
 @property (nonatomic, readonly) AVCoordinatedPlaybackSuspensionReason reason;
 ```
 
-#### Discussion
+## Discussion
 
 The coordinator communicates the suspension reason to other participants.
 

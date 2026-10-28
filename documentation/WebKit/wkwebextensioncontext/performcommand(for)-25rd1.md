@@ -22,11 +22,11 @@ func performCommand(for keyCommand: UIKeyCommand) -> Bool
 - (BOOL) performCommandForKeyCommand:(UIKeyCommand *) keyCommand;
 ```
 
-#### Return Value
+## Return Value
 
 Returns `YES` if a command corresponding to the UIKeyCommand was found and performed, `NO` otherwise.
 
-#### Discussion
+## Discussion
 
 This method checks for a command corresponding to the provided [`UIKeyCommand`](../../UIKit/uikeycommand.md) and performs it, if available. The app should use this method to perform any extension commands at an appropriate time in the app’s responder object that handles the [`performCommand(for:)`](./performcommand%28for%29-25rd1.md) action.
 

@@ -12,7 +12,7 @@ Customize a view layout by changing the size of cells in the flow or implementin
 - Mac Catalyst 12.0+
 - Xcode 13.0+
 
-#### Overview
+## Overview
 
 To lay out UICollectionView cells in a simple grid, you can use [`UICollectionViewFlowLayout`](./uicollectionviewflowlayout.md) directly. For more flexibility, you can subclass [`UICollectionViewLayout`](./uicollectionviewlayout.md) to create advanced layouts.
 
@@ -25,7 +25,7 @@ The app opens to the Friends view controller, which uses a column flow layout to
 
 Tapping the cloud icon to the right of the navigation bar demonstrates batched animations for inserting, deleting, moving, and reloading items in the collection view. For more information, see “Perform Batch Updates,” below. Using pull-to-refresh on the collection view resets the data.
 
-##### For a simple grid, size cells dynamically
+### For a simple grid, size cells dynamically
 
 `ColumnFlowLayout` is a subclass of [`UICollectionViewFlowLayout`](./uicollectionviewflowlayout.md) that uses the size of the collection view to determine the width of its cells. If only one cell fits comfortably horizontally, the layout arranges the cells to occupy the entire width of the collection view. Otherwise, the layout displays multiple columns of cells with a fixed width.
 
@@ -49,7 +49,7 @@ override func prepare() {
 }
 ```
 
-##### For a complex grid, define cell sizes explicitly
+### For a complex grid, define cell sizes explicitly
 
 If you need more customization than is possible with a subclass of [`UICollectionViewFlowLayout`](./uicollectionviewflowlayout.md), subclass [`UICollectionViewLayout`](./uicollectionviewlayout.md) instead.
 
@@ -201,7 +201,7 @@ override func shouldInvalidateLayout(forBoundsChange newBounds: CGRect) -> Bool 
 
 For optimum performance, this sample performs a binary search inside [`layoutAttributesForElements(in:)`](./uicollectionviewlayout/layoutattributesforelements%28in%29.md) instead of a linear search of the attributes it needs for each element in a given bounds area.
 
-##### Perform batch updates
+### Perform batch updates
 
 Tapping the top-right button in the navigation bar triggers the collection view to perform a *batch update* of multiple animated operations (insert, delete, move, and reload) of its collection view cells all at the same time.
 

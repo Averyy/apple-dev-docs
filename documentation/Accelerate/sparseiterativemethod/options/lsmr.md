@@ -21,7 +21,7 @@ LSMR is MINRES specialised for solving least squares.
 SparseLSMROptions lsmr;
 ```
 
-#### Discussion
+## Discussion
 
 Use LSMR to solve equations of the form Ax=b where an exact solution does not exist. The returned solution minimises || b-Ax ||_2.
 

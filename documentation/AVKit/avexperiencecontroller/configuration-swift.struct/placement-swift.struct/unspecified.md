@@ -15,7 +15,7 @@ Used as default when no UIScene is specified as a placement.
 static var unspecified: AVExperienceController.Configuration.Placement { get }
 ```
 
-#### Discussion
+## Discussion
 
 Experiences will be placed over the UIScene of the original container. If contained within a UIScene, the system will use that scene as a placement, if possible.
 

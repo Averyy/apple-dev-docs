@@ -22,7 +22,7 @@ var pageCount: Int { get }
 @property (nonatomic, readonly) NSInteger pageCount;
 ```
 
-#### Discussion
+## Discussion
 
 `UIPrintFormatter` calculates this value based on the layout metrics and content.
 

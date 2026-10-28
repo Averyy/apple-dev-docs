@@ -15,7 +15,7 @@ Get the timestamp corresponding to an anchor.
 extern CFTimeInterval ar_camera_region_anchor_get_timestamp(ar_camera_region_anchor_t camera_region_anchor);
 ```
 
-#### Return Value
+## Return Value
 
 The timestamp associated with the anchor.
 

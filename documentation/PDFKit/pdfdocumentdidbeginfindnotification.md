@@ -20,7 +20,7 @@ A notification that the [`beginFindString(_:withOptions:)`](./pdfdocument/beginf
 extern NSNotificationName const PDFDocumentDidBeginFindNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is the `PDFDocument` object itself.
 

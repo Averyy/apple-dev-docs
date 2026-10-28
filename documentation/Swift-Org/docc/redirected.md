@@ -20,7 +20,7 @@ A directive that specifies a previous URL for the page where the directive appea
 @Redirected(from: URL)
 ```
 
-#### Overview
+## Overview
 
 If the page has moved more than once you can add multiple  `Redirected` directives, each specifying one previous URL. For example:
 
@@ -31,7 +31,7 @@ If the page has moved more than once you can add multiple  `Redirected` directiv
 
 > **Note**: Starting with version 6.0, the `Redirected` directive is supported both top-level and as a member of a [`Metadata`](./metadata.md) directive. In earlier versions, the `Redirected` directive is only supported as a top-level directive.
 
-##### Setting up Redirects
+### Setting up Redirects
 
 If you host your documentation on a web server, you can set a HTTP “301 Moved Permanently” redirect for each `Redirected` value to avoid breaking existing links to your content.
 

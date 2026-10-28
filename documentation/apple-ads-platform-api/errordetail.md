@@ -15,11 +15,11 @@ Field-level or request-level detail for a specific part of a failed API request.
 object ErrorDetail
 ```
 
-#### Discussion
+## Discussion
 
 The `ErrorDetail` provides field-level or request-level granularity for a specific part of a failed request. Each entry in the `Error.details` array is one `ErrorDetail`.
 
-##### Example
+### Example
 
 ```json
 {

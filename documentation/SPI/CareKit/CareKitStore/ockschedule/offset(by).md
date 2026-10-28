@@ -17,7 +17,7 @@ Create a new schedule by shifting this schedule.
 func offset(by dateComponents: DateComponents) -> OCKSchedule
 ```
 
-#### Return Value
+## Return Value
 
 A new instance of with all event times offset by the given value.
 

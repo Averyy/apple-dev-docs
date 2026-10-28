@@ -23,7 +23,7 @@ var isProximityMonitoringEnabled: Bool { get set }
 @property (nonatomic, getter=isProximityMonitoringEnabled) BOOL proximityMonitoringEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 Enable proximity monitoring only when your application needs to be notified of changes to the proximity state. Otherwise, disable proximity monitoring. The default value is [`false`](../../Swift/false.md).
 

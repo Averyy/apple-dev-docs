@@ -16,11 +16,11 @@ Sends an input/output request on the stream.
 - (BOOL) sendIORequestWithData:(NSMutableData *) data bytesTransferred:(NSUInteger *) bytesTransferred error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 `YES` if the request completes successfully; otherwise, `NO`.
 
-#### Discussion
+## Discussion
 
 This method sends a synchronous request on the stream, and won’t return until the request completes
 

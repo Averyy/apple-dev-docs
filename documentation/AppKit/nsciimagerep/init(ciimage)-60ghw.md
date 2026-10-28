@@ -19,7 +19,7 @@ init(ciImage image: CIImage)
 - (instancetype) initWithCIImage:(CIImage *) image;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized [`NSCIImageRep`](../nsciimagerep.md) object, or `nil` if the object could not be initialized.
 

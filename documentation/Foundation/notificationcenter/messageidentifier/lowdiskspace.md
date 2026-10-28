@@ -24,7 +24,7 @@ static var lowDiskSpace: NotificationCenter.BaseMessageIdentifier<NSBundleResour
 
 Available when `Self` is `NotificationCenter.BaseMessageIdentifier<NSBundleResourceRequest.LowDiskSpaceMessage>`.
 
-#### Discussion
+## Discussion
 
 Use this identifier with [`NotificationCenter`](../../notificationcenter.md)’s `addObserver(of:for:using:)` or `messages(of:for:bufferSize:)` methods to observe messages of type [`NSBundleResourceRequest.LowDiskSpaceMessage`](../../nsbundleresourcerequest/lowdiskspacemessage.md).
 

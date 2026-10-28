@@ -23,7 +23,7 @@ func permuteChannels(to permuteMap: (UInt8, UInt8, UInt8), destination: vImage.P
 
 Available when `Format` is `vImage.Interleaved8x3`.
 
-#### Discussion
+## Discussion
 
 For example, the following code reverses the channel ordering of a pixel buffer:
 

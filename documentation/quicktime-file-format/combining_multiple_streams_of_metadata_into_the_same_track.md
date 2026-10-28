@@ -5,7 +5,7 @@
 
 Introduce new metadata samples with the union of all metadata values from combined tracks.
 
-#### Overview
+## Overview
 
 Because two “streams” or tracks of metadata values might occur where the time ranges for one stream does not coincide with those of the other stream, a convention is recommended if both streams of metadata values are combined into a single new metadata track (typically because of some production process). At any point in the timeline where a metadata value comes into scope or goes out of scope, new metadata samples should be introduced with the union of all metadata values present for the time range, replacing the existing overlapped samples for that portion of the media time range.
 

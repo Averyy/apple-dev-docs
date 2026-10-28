@@ -22,7 +22,7 @@ func runCustomizationPalette(_ sender: Any?)
 - (void) runCustomizationPalette:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 While the customization palette is visible, the toolbar calls methods of its delegate to manage configuration changes.
 

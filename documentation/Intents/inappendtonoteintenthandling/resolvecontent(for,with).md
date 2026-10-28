@@ -29,7 +29,7 @@ optional func resolveContent(for intent: INAppendToNoteIntent) async -> INNoteCo
 - (void) resolveContentForAppendToNote:(INAppendToNoteIntent *) intent withCompletion:(void (^)(INNoteContentResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to resolve the content to append to a note. Use the intent object to obtain the content specified by the user. If the intent doesn’t contain any content, you might want to prompt the user to specify a value.
 

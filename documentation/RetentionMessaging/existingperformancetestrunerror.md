@@ -15,7 +15,7 @@ An error that indicates an error with an existing test.
 object ExistingPerformanceTestRunError
 ```
 
-#### Discussion
+## Discussion
 
 This error indicates the service is already processing a test with this ID.
 

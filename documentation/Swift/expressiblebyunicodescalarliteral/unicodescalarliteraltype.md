@@ -22,7 +22,7 @@ A type that represents a Unicode scalar literal.
 associatedtype UnicodeScalarLiteralType : _ExpressibleByBuiltinUnicodeScalarLiteral
 ```
 
-#### Discussion
+## Discussion
 
 Valid types for `UnicodeScalarLiteralType` are `Unicode.Scalar`, `Character`, `String`, and `StaticString`.
 

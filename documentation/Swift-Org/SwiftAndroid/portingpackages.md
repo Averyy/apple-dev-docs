@@ -10,18 +10,18 @@ framework: "Swift-Org/SwiftAndroid"
 
 Adapt existing Swift packages to build and run on Android
 
-#### Overview
+## Overview
 
 Many Swift packages build for Android with minimal changes. The typical process is: attempt a build, fix platform-specific code with conditional compilation, then test on a device.
 
-#### Good candidates
+## Good candidates
 
 - Business logic, algorithms, data structures
 - Networking and API clients
 - Parsers, formatters, encoders/decoders
 - SQLite and other database access
 
-#### Conditional imports
+## Conditional imports
 
 ```swift
 #if canImport(Darwin)

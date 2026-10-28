@@ -16,7 +16,7 @@ Export options requested by the destination device.
 let options: [OptionsType : Data]
 ```
 
-#### Discussion
+## Discussion
 
 The target operating system of the migration defines the options supported for a migration, if any. Refer to the target operating system documentation to determine the options it supports.
 

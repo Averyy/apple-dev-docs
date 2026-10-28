@@ -5,7 +5,7 @@
 
 Take direct control of memory allocation for texture data by using sparse textures.
 
-#### Overview
+## Overview
 
 When you create a texture, by default, Metal allocates memory to hold the texture’s pixel data. In some cases, such as when you’re implementing texture streaming, you generally use only a fraction of this memory. When you use sparse textures, you take ownership of memory management for texture data and decide when to allocate and deallocate memory for a texture. In this way, sparse textures help you to use memory more efficiently.
 
@@ -15,7 +15,7 @@ To use sparse textures, allocate a sparse heap from which to allocate memory, an
 
 Because sparse textures work closely with texture mipmaps, you should be familiar with mipmaps before using sparse textures. For more information, see [Improving texture sampling quality and performance with mipmaps](./improving-texture-sampling-quality-and-performance-with-mipmaps.md).
 
-##### Check for sparse texture support
+### Check for sparse texture support
 
 Not all GPUs support sparse textures. Check for support on the device object before attempting to use sparse textures:
 

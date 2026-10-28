@@ -10,11 +10,11 @@ framework: "Swift-Org/PackageManagerDocs"
 
 Define the location for the library and provide module map to expose C headers to Swift.
 
-#### Overview
+## Overview
 
 You can link against system libraries, using them as a dependency in your code, using the package manager. To do so, add a `target` of type [systemLibrary](https://developer.apple.com/documentation/packagedescription/target/systemlibrary(name:path:pkgconfig:providers:)), and a `module.modulemap` for each system library you’re using.
 
-##### Using pkg-config to provide header and linker search paths
+### Using pkg-config to provide header and linker search paths
 
 For Unix-like systems, Swift Package Manager can use [pkgConfig](https://en.wikipedia.org/wiki/Pkg-config) to provide the compiler with the paths for including library headers and linking to binaries. If your system doesn’t provide pkgConfig, or the library doesn’t include package config files, you can provide the options to the Swift compiler directly.
 
@@ -34,7 +34,7 @@ $ pkg-config --libs-only-L libgit2
 
 To manually provide search paths for linking to binaries, use the `-Xlinker -L/path/to/include/` as additional parameters to `swift build`. To match the above example from `pkgConfig`, the additional command line options would be: `-Xlinker -L/opt/homebrew/Cellar/libgit2/1.9.0/lib`.
 
-##### Declaring the system library
+### Declaring the system library
 
 The `systemLibrary` definition informs the Swift compiler of where to find the C library. When building on Unix-like systems, the package manager can use `pkg-config` to look up where a library is installed. Specify the name of the C library you want to look up for the `pkgConfig` parameter. To use the Swift Package Manager to install the package locally, if it isn’t already installed, you can specify one or more providers.
 
@@ -51,7 +51,7 @@ The following example provides a declaration for the `libgit2` library, installi
 )
 ```
 
-##### Authoring a module map
+### Authoring a module map
 
 The `module.modulemap` file declares the C library headers, and what parts of them, to expose as one or more clang modules that can be imported in Swift code. Each defines:
 
@@ -76,11 +76,11 @@ Try to reference headers that reside in the same directory or as a local path to
 
 For more information on the structure of module maps, see the [LLVM](https://llvm.org/) documentation: [Module Map Language](https://clang.llvm.org/docs/Modules.html#module-map-language).
 
-###### Versioning Modules from system libraries
+#### Versioning Modules from system libraries
 
 When creating a module map, follow the conventions of system packagers as you name the module with version information. For example, the Debian package for `python3` is called `python3`. In Debian, there is not a single package for python; the system packagers designed it to be installed side-by-side with other versions. Based on that, a recommended name for a module map for `python3` on a Debian system is `CPython3`.
 
-###### System Libraries With Optional Dependencies
+#### System Libraries With Optional Dependencies
 
 To reference a system library with optional dependencies, you need to make another package to represent the optional library.
 

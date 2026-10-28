@@ -26,7 +26,7 @@ func pluginState(_ pluginState: AutoreleasingUnsafeMutablePointer<NSData>?, at r
 - [Thread safety in plug-ins](../../Professional-Video-Applications/thread-safety-in-plug-ins.md)
 - [Using FxPlug APIs](../../Professional-Video-Applications/using-fxplug-apis.md)
 
-#### Discussion
+## Discussion
 
 The host application calls this method before rendering. The `FxParameterRetrievalAPI*` is valid during this call. Use it to get the values of your plug-in’s parameters, then put those values or the results of any calculations you need to do with those parameters to render into an `NSData` that you return to the host application. The host passes it back to you during subsequent calls. Do not re-use the `NSData`; always create a new one, as this method may be called on multiple threads at the same time.
 

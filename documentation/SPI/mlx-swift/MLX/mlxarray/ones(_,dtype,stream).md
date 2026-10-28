@@ -17,7 +17,7 @@ Construct an array of ones with a given [`DType`](../dtype.md)
 static func ones(_ shape: some Collection<Int>, dtype: DType, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 Example:
 
@@ -25,7 +25,7 @@ Example:
 let r = MLXArray.ones([5, 10], dtype: .int32)
 ```
 
-##### See Also
+### See Also
 
 - [Initialization](../initialization.md)
 - [`ones(like:dtype:stream:)`](./ones%28like,dtype,stream%29.md)

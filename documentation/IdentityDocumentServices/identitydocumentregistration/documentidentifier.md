@@ -18,7 +18,7 @@ An identifier that uniquely refers to the required document.
 var documentIdentifier: String { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use this identifier to link the registration to the stored document in your app.
 

@@ -15,11 +15,11 @@ CMError CMSetDeviceDefaultProfileID (
 );
 ```
 
-#### Return Value
+## Return Value
 
 A `CMError` value. See [Result Codes](../colorsync_manager.md#1670295).
 
-#### Overview
+## Overview
 
 The default profile ID for a given device is an important piece of information because of the function `CMGetProfileByUse`. The function `CMGetProfileByUse` returns the default profile for devices depending on the user's selection in the ColorSync preferences pane. Device drivers and host software can set the default profile for a given device using the function `CMSetDeviceDefaultProfileID`. 
 

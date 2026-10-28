@@ -2,7 +2,7 @@
 
 **Framework**: Application Services
 
-#### Overview
+## Overview
 
 In OS X version 10.4, you should use `typeUTF16ExternalRepresentation` or `typeUTF8Text` to represent text. In earlier versions of macOS, the recommended text type is `typeUnicodeText`. All of the other constants in this enum are deprecated due to their lack of explicit encoding or byte order definition.
 

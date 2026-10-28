@@ -25,7 +25,7 @@ var requestsAlternateRoutes: Bool { get set }
 @property (nonatomic) BOOL requestsAlternateRoutes;
 ```
 
-#### Discussion
+## Discussion
 
 When this property is [`false`](../../../Swift/false.md), the server returns a single route between the start and end points. When this property is [`true`](../../../Swift/true.md), the server may return additional routes for the user to follow. The server returns additional routes only if they’re available and represent a reasonable path that the user might take.
 

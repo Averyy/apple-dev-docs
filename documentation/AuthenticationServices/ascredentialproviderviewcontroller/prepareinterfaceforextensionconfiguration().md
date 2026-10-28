@@ -23,7 +23,7 @@ func prepareInterfaceForExtensionConfiguration()
 - (void) prepareInterfaceForExtensionConfiguration;
 ```
 
-#### Discussion
+## Discussion
 
 The system calls this method after the user enables your extension in Settings. Use this method to prepare a user interface for configuring the extension. You can also use the method to tell the system what credential identities your extension supports by adding them to the shared [`ASCredentialIdentityStore`](../ascredentialidentitystore.md) instance. Any identities you add become available as AutoFill suggestions.
 

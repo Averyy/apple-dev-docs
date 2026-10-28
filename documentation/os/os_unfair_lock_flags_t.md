@@ -21,7 +21,7 @@ Flags that affect the behavior of an unfair locking operation.
 typedef enum { ... } os_unfair_lock_flags_t;
 ```
 
-#### Overview
+## Overview
 
 Use these flags with the [`os_unfair_lock_lock_with_flags`](./os_unfair_lock_lock_with_flags.md) function.
 

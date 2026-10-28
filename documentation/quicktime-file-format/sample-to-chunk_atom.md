@@ -6,7 +6,7 @@
 
 An atom that stores chunk information for the samples in a media.
 
-#### Overview
+## Overview
 
 As samples are added to a media, they are collected into chunks that allow optimized data access. A chunk contains one or more samples. Chunks in a media may have different sizes, and the samples within a chunk may have different sizes. The sample-to-chunk atom stores chunk information for the samples in a media.
 

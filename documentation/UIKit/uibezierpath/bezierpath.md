@@ -20,7 +20,7 @@ Creates and returns a new Bézier path object.
 + (instancetype) bezierPath;
 ```
 
-#### Return Value
+## Return Value
 
 A new empty path object.
 

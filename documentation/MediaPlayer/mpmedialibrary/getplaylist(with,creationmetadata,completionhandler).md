@@ -26,7 +26,7 @@ func getPlaylist(with uuid: UUID, creationMetadata: MPMediaPlaylistCreationMetad
 - (void) getPlaylistWithUUID:(NSUUID *) uuid creationMetadata:(MPMediaPlaylistCreationMetadata *) creationMetadata completionHandler:(void (^)(MPMediaPlaylist *playlist, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 This function retrieves the playlist associated with the UUID. Create a static instance of the UUID using a previously generated UUID. Creating a new UUID using `init(uuidString:)` to retrieve a playlist doesn’t guarantee its retrieval.
 

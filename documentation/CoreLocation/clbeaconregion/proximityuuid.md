@@ -24,7 +24,7 @@ var proximityUUID: UUID { get }
 @property (nonatomic, copy, readonly) NSUUID * proximityUUID;
 ```
 
-#### Discussion
+## Discussion
 
 Typically, the UUID is unique to your company and is the same for all of the beacons that you install. Use the [`major`](./major.md) and [`minor`](./minor.md) values to differentiate the beacons in your installation.
 

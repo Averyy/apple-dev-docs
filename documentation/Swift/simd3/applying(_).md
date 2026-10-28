@@ -23,7 +23,7 @@ func applying(_ transform: ProjectiveTransform3DFloat) -> simd_float3
 
 Available when `Scalar` is `Float`.
 
-#### Discussion
+## Discussion
 
 - Returns The transformed ray.
 

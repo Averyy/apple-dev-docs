@@ -21,7 +21,7 @@ A symbol effect that applies the Rotate animation to symbol images.
 @interface NSSymbolRotateEffect : NSSymbolEffect
 ```
 
-#### Overview
+## Overview
 
 The Rotate animation rotates parts of a symbol around a symbol-provided anchor point.
 

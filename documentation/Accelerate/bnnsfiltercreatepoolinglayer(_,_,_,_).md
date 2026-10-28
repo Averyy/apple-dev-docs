@@ -27,7 +27,7 @@ func BNNSFilterCreatePoolingLayer(_ in_desc: UnsafePointer<BNNSImageStackDescrip
 BNNSFilterBNNSFilterCreatePoolingLayer(const BNNSImageStackDescriptor *in_desc, const BNNSImageStackDescriptor *out_desc, const BNNSPoolingLayerParameters *layer_params, const BNNSFilterParameters *filter_params);
 ```
 
-#### Return Value
+## Return Value
 
 A BNNSFilter object representing a pooling filter configured with the specified  parameters
 

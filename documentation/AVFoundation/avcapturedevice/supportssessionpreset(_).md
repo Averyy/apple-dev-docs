@@ -23,7 +23,7 @@ func supportsSessionPreset(_ preset: AVCaptureSession.Preset) -> Bool
 - (BOOL) supportsAVCaptureSessionPreset:(AVCaptureSessionPreset) preset;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if you can use the device; otherwise, [`false`](../../Swift/false.md).
 

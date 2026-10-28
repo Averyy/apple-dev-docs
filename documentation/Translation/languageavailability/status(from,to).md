@@ -18,11 +18,11 @@ Checks for the installation of a specific language pairing and whether it’s re
 func status(from source: Locale.Language, to target: Locale.Language?) async -> LanguageAvailability.Status
 ```
 
-#### Return Value
+## Return Value
 
 The availability status for a language pairing.
 
-#### Discussion
+## Discussion
 
 Use this function to check whether the system has installed the required language assets and the languages are ready to use for translation.
 

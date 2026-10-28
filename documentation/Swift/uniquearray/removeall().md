@@ -21,7 +21,7 @@ Removes all elements from the array, preserving its allocated capacity.
 mutating func removeAll()
 ```
 
-#### Discussion
+## Discussion
 
 > **Complexity**: O(*n*), where *n* is the original count of the array.
 

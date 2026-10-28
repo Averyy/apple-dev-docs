@@ -21,7 +21,7 @@ Match the specified key prefix at the root of the entitlements dicitonary. Chain
 static func keyPrefix(_ keyPrefix: String) -> EntitlementsQuery
 ```
 
-#### Discussion
+## Discussion
 
 Keys are matched byte for byte (i.e. no unicode normalization occurs). keyPrefix will match only the first key with the prefix. Chained qualifiers will be applied to the value of that single key only.
 

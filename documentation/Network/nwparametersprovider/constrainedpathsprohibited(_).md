@@ -22,7 +22,7 @@ Prohibit using constrained paths.
 func constrainedPathsProhibited(_ prohibited: Bool) -> Self
 ```
 
-#### Discussion
+## Discussion
 
 Prohibit connections and listeners from using a network interface that is considered constrained by the system, for example an interface in Low Data Mode.
 

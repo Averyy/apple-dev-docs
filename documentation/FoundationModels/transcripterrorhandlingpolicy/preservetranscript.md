@@ -20,7 +20,7 @@ A policy that keeps the current transcript as is.
 static let preserveTranscript: TranscriptErrorHandlingPolicy
 ```
 
-#### Discussion
+## Discussion
 
 The last entry of the transcript may be partially generated.
 

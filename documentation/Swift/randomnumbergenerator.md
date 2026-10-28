@@ -21,7 +21,7 @@ A type that provides uniformly distributed random data.
 protocol RandomNumberGenerator
 ```
 
-#### Overview
+## Overview
 
 When you call methods that use random data, such as creating new random values or shuffling a collection, you can pass a `RandomNumberGenerator` type to be used as the source for randomness. When you don’t pass a generator, the default `SystemRandomNumberGenerator` type is used.
 
@@ -42,7 +42,7 @@ enum Weekday: CaseIterable {
 }
 ```
 
-### Conforming to the RandomNumberGenerator Protocol
+## Conforming to the RandomNumberGenerator Protocol
 
 A custom `RandomNumberGenerator` type can have different characteristics than the default `SystemRandomNumberGenerator` type. For example, a seedable generator can be used to generate a repeatable sequence of random values for testing purposes.
 

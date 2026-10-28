@@ -15,7 +15,7 @@ Changes the number of bytes to reserve at the front of the packet’s buffer to 
 virtual kern_return_t SetHeadroom(uint8_t headroom);
 ```
 
-#### Return Value
+## Return Value
 
 `kIOReturnSuccess` on success, or another value if an error occurred.
 

@@ -16,7 +16,7 @@ Perform synchronous block write
 IOReturn (*Write)(IOFireWireLibDeviceRef self, io_object_t device, const FWAddress *addr, const void *buf, UInt32 *size, Boolean failOnReset, UInt32 generation);
 ```
 
-#### Return Value
+## Return Value
 
 An IOReturn error code
 

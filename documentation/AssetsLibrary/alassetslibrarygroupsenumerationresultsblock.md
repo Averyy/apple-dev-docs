@@ -12,7 +12,7 @@ Signature for the block executed when a match is found during enumeration using 
 typedef void (^)(ALAssetsGroup *, _Bool *) ALAssetsLibraryGroupsEnumerationResultsBlock;
 ```
 
-#### Discussion
+## Discussion
 
 The block parameters are defined as follows:
 

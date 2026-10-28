@@ -20,7 +20,7 @@ Retrieves a Metal buffer that you can use to replace the per instance transform 
 final func replace(using commandBuffer: any MTLCommandBuffer) -> any MTLBuffer
 ```
 
-#### Discussion
+## Discussion
 
 The transform buffer’s contents are in an uninitialized state.
 

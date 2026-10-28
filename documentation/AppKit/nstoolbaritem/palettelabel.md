@@ -22,7 +22,7 @@ var paletteLabel: String { get set }
 @property (copy) NSString * paletteLabel;
 ```
 
-#### Discussion
+## Discussion
 
 If you support toolbar customizations, you must provide palette labels for your items. In most cases, you can apply the same value to this property and the [`label`](./label.md) property. However, you might use this property to offer a more descriptive string, or to provide a label string when the [`label`](./label.md) property contains an empty string.
 

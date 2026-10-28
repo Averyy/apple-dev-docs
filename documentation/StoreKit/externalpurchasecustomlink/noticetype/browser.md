@@ -23,7 +23,7 @@ A notice type that indicates your app displays external purchases in a destinati
 case browser
 ```
 
-#### Discussion
+## Discussion
 
 After displaying a notice with this notice type using [`showNotice(type:)`](../shownotice%28type%29.md), if the customer chooses to continue, the app goes to the background and presents external purchases in a destination outside of the app.
 

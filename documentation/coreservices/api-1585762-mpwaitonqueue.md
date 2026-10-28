@@ -15,11 +15,11 @@ Obtains a message from a specified message queue.
 OSStatus MPWaitOnQueue(MPQueueID queue, void **param1, void **param2, void **param3, Duration timeout);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./carbon_core/multiprocessing_services.md#1663965).
 
-#### Discussion
+## Discussion
 
 This function receives a message from the specified message queue. If no messages are currently available, the timeout specifies how long the function should wait for one. Tasks waiting on the queue are handled in a first in, first out manner; that is, the first task to wait on the queue receives the message from the  [`MPNotifyQueue`](./api-1585699-mpnotifyqueue.md)  call. 
 

@@ -22,7 +22,7 @@ func resume(at time: AVAudioTime?)
 - (void) resumeAtTime:(AVAudioTime *) time;
 ```
 
-#### Discussion
+## Discussion
 
 Resume the sound event at a specific time
 

@@ -25,7 +25,7 @@ protocol MLFeatureProvider
 @protocol MLFeatureProvider
 ```
 
-#### Overview
+## Overview
 
 Use `MLFeatureProvider` to customize the way your app gets data to and from your model when the model’s dynamically generated interface doesn’t meet your app’s needs.
 

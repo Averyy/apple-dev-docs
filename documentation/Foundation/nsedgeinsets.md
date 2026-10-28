@@ -20,7 +20,7 @@ struct NSEdgeInsets
 typedef struct NSEdgeInsets { ... } NSEdgeInsets;
 ```
 
-#### Overview
+## Overview
 
 Edge insets describe the distance between the edges of one rectangle to a related rectangle that can be described by measuring a constant but edge-specific distance from each edge.
 

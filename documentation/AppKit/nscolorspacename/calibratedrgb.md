@@ -19,7 +19,7 @@ static let calibratedRGB: NSColorSpaceName
 extern NSColorSpaceName NSCalibratedRGBColorSpace;
 ```
 
-#### Discussion
+## Discussion
 
 You can also create a color with HSB (hue, saturation, brightness) and alpha components and can extract these components.
 

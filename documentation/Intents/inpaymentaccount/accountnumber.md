@@ -31,7 +31,7 @@ var accountNumber: String? { get }
 @property (atomic, copy, readonly, nullable) NSString * accountNumber;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is a string that helps identify the account to the user. Typically, this property contains a portion of the user’s account number, often in an obscured format such as `****1234`. When resolving an account requires disambiguation from among several values, display this string to the user to help identify each account.
 

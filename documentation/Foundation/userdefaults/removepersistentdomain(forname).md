@@ -25,7 +25,7 @@ func removePersistentDomain(forName domainName: String)
 - (void) removePersistentDomainForName:(NSString *) domainName;
 ```
 
-#### Discussion
+## Discussion
 
 This method removes all of the keys and values from the specified domain. After clearing the domain’s contents, this method generates a [`didChangeNotification`](./didchangenotification.md) for registered observers.
 

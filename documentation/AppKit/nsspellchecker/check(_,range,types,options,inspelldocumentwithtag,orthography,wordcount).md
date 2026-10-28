@@ -19,7 +19,7 @@ func check(_ stringToCheck: String, range: NSRange, types checkingTypes: NSTextC
 - (NSArray<NSTextCheckingResult *> *) checkString:(NSString *) stringToCheck range:(NSRange) range types:(NSTextCheckingTypes) checkingTypes options:(NSDictionary<NSString *,id> *) options inSpellDocumentWithTag:(NSInteger) tag orthography:(NSOrthography **) orthography wordCount:(NSInteger *) wordCount;
 ```
 
-#### Return Value
+## Return Value
 
 An array of [`NSTextCheckingResult`](../../Foundation/nstextcheckingresult.md) objects describing particular items found during checking and their individual ranges, sorted by range origin, then range end, then result type.
 

@@ -21,7 +21,7 @@ class AVCaptureAncillaryDataEncoder
 @interface AVCaptureAncillaryDataEncoder : NSObject
 ```
 
-##### Inspecting the user defined data
+### Inspecting the user defined data
 
 - [`currentUserDefinedAncillaryData`](./avcaptureancillarydataencoder/currentuserdefinedancillarydata.md)
 

@@ -24,7 +24,7 @@ protocol UIGuidedAccessRestrictionDelegate : NSObjectProtocol
 @protocol UIGuidedAccessRestrictionDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Custom restrictions are represented by string identifiers provided by the developer in the [`guidedAccessRestrictionIdentifiers`](./uiguidedaccessrestrictiondelegate/guidedaccessrestrictionidentifiers.md) method. Each identifier represents an operation in the app that the developer wishes to allow users to restrict using Guided Access. The default for all operations is allow. Users can deny operations using the normal Guided Access user interface. See [http://support.apple.com/kb/HT5509](http://support.apple.com/kb/HT5509) for a description of how to enable and configure Guided Access on iOS.
 

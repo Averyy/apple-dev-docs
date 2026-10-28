@@ -19,7 +19,7 @@ func PMPrinterIsFavorite(_ printer: PMPrinter) -> Bool
 Boolean PMPrinterIsFavorite(PMPrinter printer);
 ```
 
-#### Return Value
+## Return Value
 
 If `true`, the specified printer is in the user’s list of favorite printers; otherwise, `false`.
 

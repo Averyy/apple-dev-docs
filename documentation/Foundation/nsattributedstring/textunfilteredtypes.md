@@ -19,11 +19,11 @@ class var textUnfilteredTypes: [String] { get }
 @property (class, copy, readonly) NSArray<NSString *> * textUnfilteredTypes;
 ```
 
-#### Return Value
+## Return Value
 
 An array of `NSString` objects, each of which contains a UTI identifying a supported file type.
 
-#### Discussion
+## Discussion
 
 The returned list includes UTI strings only for those file types that are supported directly by the receiver. It does not include types that are supported through user-installed filter services. You can use the returned UTI strings with any method that supports UTIs.
 

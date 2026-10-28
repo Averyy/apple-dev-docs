@@ -23,7 +23,7 @@ var kCTFontTablePrep: Int { get }
 kCTFontTablePrep
 ```
 
-#### Discussion
+## Discussion
 
 Font table tag for control value program, `'prep'` table.
 

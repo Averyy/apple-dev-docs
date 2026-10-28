@@ -32,7 +32,7 @@ var item: Int { get }
 @property (readonly) NSInteger item;
 ```
 
-#### Discussion
+## Discussion
 
 The section the item is in is identified by the value of [`section`](./section.md).
 

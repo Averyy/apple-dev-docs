@@ -24,7 +24,7 @@ var indexType: MDLIndexBitDepth { get }
 @property (nonatomic, readonly) MDLIndexBitDepth indexType;
 ```
 
-#### Discussion
+## Discussion
 
 For optimum performance, an index buffer should generally use the smallest possible data type to fit its number of indices.
 

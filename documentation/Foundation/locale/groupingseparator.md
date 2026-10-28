@@ -21,7 +21,7 @@ The grouping separator of the locale.
 var groupingSeparator: String? { get }
 ```
 
-#### Discussion
+## Discussion
 
 For example, for “en_US”, returns “,”.
 

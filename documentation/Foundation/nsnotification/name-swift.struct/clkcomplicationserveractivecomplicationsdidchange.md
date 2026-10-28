@@ -17,7 +17,7 @@ Posted when the set of active complications changes.
 static let CLKComplicationServerActiveComplicationsDidChange: NSNotification.Name
 ```
 
-#### Discussion
+## Discussion
 
 The object of the notification is `nil` and there’s no `userInfo` dictionary.
 

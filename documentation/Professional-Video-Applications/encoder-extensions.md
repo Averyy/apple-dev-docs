@@ -5,7 +5,7 @@
 
 Add custom output file formats to the Final Cut Pro workflow.
 
-#### Overview
+## Overview
 
 The Compressor app provides a variety of transcoding formats to convert Final Cut Pro source media files into most common media formats. Create encoder extensions to add custom transcoding formats to the Compressor app, allowing Final Cut Pro users to convert their source media files to these output formats.
 

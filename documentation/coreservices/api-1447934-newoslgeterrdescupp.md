@@ -19,11 +19,11 @@ func NewOSLGetErrDescUPP(_ userRoutine: OSLGetErrDescProcPtr!) -> OSLGetErrDescU
 OSLGetErrDescUPP NewOSLGetErrDescUPP(OSLGetErrDescProcPtr userRoutine);
 ```
 
-#### Return Value
+## Return Value
 
 See [`OSLGetErrDescUPP`](./oslgeterrdescupp.md).
 
-#### Discussion
+## Discussion
 
 See the [`OSLGetErrDescProcPtr`](./oslgeterrdescprocptr.md) callback function. 
 

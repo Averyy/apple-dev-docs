@@ -21,7 +21,7 @@ File is compressed at the file system level.
 static var compressed: FileFlags { get }
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding C constant is `UF_COMPRESSED`.
 

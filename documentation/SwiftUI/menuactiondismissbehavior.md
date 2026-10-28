@@ -21,7 +21,7 @@ The set of menu dismissal behavior options.
 struct MenuActionDismissBehavior
 ```
 
-#### Overview
+## Overview
 
 Configure the menu dismissal behavior for a view hierarchy using the [`menuActionDismissBehavior(_:)`](./view/menuactiondismissbehavior%28_%29.md) view modifier.
 

@@ -25,7 +25,7 @@ case bankers
 NSRoundBankers
 ```
 
-#### Discussion
+## Discussion
 
 In practice, this means that, over the long run, numbers will be rounded up as often as they are rounded down; there will be no systematic bias.
 

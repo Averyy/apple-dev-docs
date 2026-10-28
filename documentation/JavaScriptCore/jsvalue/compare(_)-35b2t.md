@@ -22,11 +22,11 @@ func compare(_ other: Double) -> JSRelationCondition
 - (JSRelationCondition) compareDouble:(double) other;
 ```
 
-#### Return Value
+## Return Value
 
 A value of JSRelationCondition, a kJSRelationConditionUndefined is returned if an exception is thrown.
 
-#### Discussion
+## Discussion
 
 Compare a JSValue with a double.
 

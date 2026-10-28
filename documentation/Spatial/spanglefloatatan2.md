@@ -19,11 +19,11 @@
 static SPAngleFloat SPAngleFloatAtan2(float y, float x);
 ```
 
-#### Return Value
+## Return Value
 
 The inverse hyperbolic tangent of the specified value.
 
-#### Discussion
+## Discussion
 
 Returns the 2-argument arctangent of the specified values.
 

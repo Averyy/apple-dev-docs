@@ -18,7 +18,7 @@ Removes the hotspot manager configuration from the Network Extension preferences
 final func removeFromPreferences() async throws
 ```
 
-#### Discussion
+## Discussion
 
 This method throws [`NEHotspotManager.Error`](./error.md) value asynchronously on failure.
 

@@ -21,7 +21,7 @@ The user subcomponent of the URL.
 var user: String? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The getter for this property removes any percent encoding this component may have (if the component allows percent encoding). Setting this property assumes the subcomponent or component string is not percent encoded and will add percent encoding (if the component allows percent encoding).
 

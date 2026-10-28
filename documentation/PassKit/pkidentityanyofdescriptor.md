@@ -26,7 +26,7 @@ class PKIdentityAnyOfDescriptor
 
 - [Requesting identity data from a Wallet pass](./requesting-identity-data-from-a-wallet-pass.md)
 
-#### Discussion
+## Discussion
 
 Use this class to support requests for one or more identity documents or when multiple identity documents are requested. For example, this class supports the return of a driver’s license or digital ID, or the request for a driver’s license and a digital ID.
 

@@ -19,7 +19,7 @@ enum WKExtendedRuntimeSessionInvalidationReason
 enum WKExtendedRuntimeSessionInvalidationReason : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 Sessions become invalid when they encounter an error, or when they stop running.
 

@@ -13,7 +13,7 @@
 #define kIOPropertyHiSup
 ```
 
-#### Discussion
+## Discussion
 
 Hierarchical LUN Support as reported in the INQUIRY data.
 

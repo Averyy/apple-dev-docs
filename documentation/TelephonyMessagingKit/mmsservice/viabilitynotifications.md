@@ -15,7 +15,7 @@ An asynchronous sequence of service viability notifications produced by the serv
 final var viabilityNotifications: some AsyncSequence<MMSService.ViabilityNotification, Never> { get throws }
 ```
 
-#### Discussion
+## Discussion
 
 Use a `for`-`await`-`in` loop to receive [`MMSService.ViabilityNotification`](./viabilitynotification.md) instances from this property.
 

@@ -17,11 +17,11 @@ Requests network-sharing authorization for the specified accessory at initial se
 func requestAuthorization() async throws -> WINetworkSharingController.AuthorizationState
 ```
 
-#### Return Value
+## Return Value
 
 An [`WINetworkSharingController.AuthorizationState`](./authorizationstate.md) value indicating the authorization level the person selected.
 
-#### Discussion
+## Discussion
 
 Call this method to request that the system ask the person to authorize sharing of Wi-Fi networks to the specified accessory. The person or the system may decline the request.
 

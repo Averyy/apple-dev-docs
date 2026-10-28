@@ -24,7 +24,7 @@ func close()
 - (void) closePath;
 ```
 
-#### Discussion
+## Discussion
 
 This method closes the current subpath by creating a line segment between the first and last points in the subpath. This method subsequently updates the current point to the end of the newly created line segment, which is also the first point in the now closed subpath.
 

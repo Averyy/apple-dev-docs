@@ -15,11 +15,11 @@ Pagination metadata returned in Campaign list responses, supporting offset-based
 object ResponsePagination
 ```
 
-#### Discussion
+## Discussion
 
 The `ResponsePagination` object reports offset-based pagination metadata: `offset`, `pageSize`, and `totalCount` allow jumping to any page directly.
 
-##### Example
+### Example
 
 ```json
 {

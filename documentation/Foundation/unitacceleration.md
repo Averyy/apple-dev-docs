@@ -25,11 +25,11 @@ class UnitAcceleration
 @interface NSUnitAcceleration : NSDimension
 ```
 
-#### Overview
+## Overview
 
 You typically use instances of [`UnitAcceleration`](./unitacceleration.md) to represent specific quantities of acceleration using the [`NSMeasurement`](./nsmeasurement.md) class.
 
-##### Acceleration
+### Acceleration
 
 Acceleration is the rate of change of velocity. Acceleration can be expressed by SI derived units in terms of meters per second squared (m/s2).
 

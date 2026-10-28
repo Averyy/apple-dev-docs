@@ -25,7 +25,7 @@ case rangingUnavailable
 kCLErrorRangingUnavailable
 ```
 
-#### Discussion
+## Discussion
 
 This might happen if the device is in Airplane mode or if Bluetooth or location services are disabled.
 

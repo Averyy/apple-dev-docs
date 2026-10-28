@@ -27,7 +27,7 @@ func byPreparingForDisplay() async -> UIImage?
 - (void) prepareForDisplayWithCompletionHandler:(void (^)(UIImage *)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 The Animation Hitches [instrument](https://help.apple.com/instruments/mac/current/) measures system performance for multiple stages of preparing views for display. It can show you the exact cause of an animation hitch, which appears to the user as an interruption or jump in an animation that should be smooth. If Animation Hitches indicates that decoding an image takes too long and causes hitches, use this method to move the decoding work to the background.
 

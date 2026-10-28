@@ -17,7 +17,7 @@ Approximate comparison of two arrays.
 func allClose(_ other: some ScalarOrArray, rtol: Double = 1e-5, atol: Double = 1e-8, equalNaN: Bool = false, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 The arrays are considered equal if:
 
@@ -38,7 +38,7 @@ if a.allClose(b).all().item() {
 }
 ```
 
-##### See Also
+### See Also
 
 - [Logical Operators](../logical.md)
 - [`arrayEqual(_:equalNAN:stream:)`](./arrayequal%28_,equalnan,stream%29.md)

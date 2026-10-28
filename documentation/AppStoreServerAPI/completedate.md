@@ -15,7 +15,7 @@ The UNIX time, in milliseconds, that the App Store completes a request to extend
 timestamp completeDate
 ```
 
-#### Discussion
+## Discussion
 
 For more information about a requesting a subscription-renewal-date extension, see [`Extend Subscription Renewal Dates for All Active Subscribers`](./extend-subscription-renewal-dates-for-all-active-subscribers.md).
 

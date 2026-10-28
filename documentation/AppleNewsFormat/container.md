@@ -21,11 +21,11 @@ object Container
 - [Displaying Components Side By Side](../AppleNews/displaying-components-side-by-side.md)
 - [Nesting Components in an Article](../AppleNews/nesting-components-in-an-article.md)
 
-#### Discussion
+## Discussion
 
 A `container` component is a structural component that holds other components and allows for logical grouping to use for layout and styling information. Child components of container are positioned and rendered relative to the parent component. The minimum size of a container component is determined by the size of its child components.
 
-##### Example
+### Example
 
 ```json
 {

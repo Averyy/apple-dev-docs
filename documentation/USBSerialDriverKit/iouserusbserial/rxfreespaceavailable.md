@@ -15,7 +15,7 @@ Notifies your driver that buffer space is available for your device’s data.
 virtual void RxFreeSpaceAvailable();
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation of this method initiates an asynchronous operation to read data from the USB device.
 

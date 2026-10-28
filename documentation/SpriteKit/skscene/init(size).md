@@ -25,11 +25,11 @@ init(size: CGSize)
 - (instancetype) initWithSize:(CGSize) size;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized scene object.
 
-#### Discussion
+## Discussion
 
 This is the class’s designated initializer method.
 

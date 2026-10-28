@@ -25,7 +25,7 @@ func addObserver(_ observer: NSObject, forKeyPath keyPath: String, options: NSKe
 - (void) addObserver:(NSObject *) observer forKeyPath:(NSString *) keyPath options:(NSKeyValueObservingOptions) options context:(void *) context;
 ```
 
-#### Discussion
+## Discussion
 
 `NSOrderedSet` objects are not observable, so this method raises an exception when invoked on an `NSOrderedSet` object. Instead of observing an ordered set, observe the to-many relationship for which the ordered set is the collection of related objects.
 

@@ -23,7 +23,7 @@ var receivedApplicationContext: [String : Any] { get }
 @property (nonatomic, copy, readonly) NSDictionary<NSString *,id> * receivedApplicationContext;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to access the most recently received update dictionary. The session object also sends a newly arrived dictionary to the [`session(_:didReceiveApplicationContext:)`](../wcsessiondelegate/session%28_,didreceiveapplicationcontext%29.md) method of its delegate.
 

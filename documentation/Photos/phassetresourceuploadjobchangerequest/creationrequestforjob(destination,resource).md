@@ -22,11 +22,11 @@ class func creationRequestForJob(destination: URLRequest, resource: PHAssetResou
 + (instancetype) creationRequestForJobWithDestination:(NSURLRequest *) destination resource:(PHAssetResource *) resource;
 ```
 
-#### Return Value
+## Return Value
 
 A change request for the created job.
 
-#### Discussion
+## Discussion
 
 This method creates an upload job and returns a change request that can be used to access the placeholder for the created job. Use the placeholder to obtain the local identifier before the change block completes.
 

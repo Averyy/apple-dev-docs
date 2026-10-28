@@ -23,7 +23,7 @@ func presentAlert(withTitle title: String?, message: String?, preferredStyle: WK
 
 - [Navigating Between Scenes](../navigating-between-scenes.md)
 
-#### Discussion
+## Discussion
 
 Use action and alert sheets to interrupt the current workflow temporarily and display a message to the user. The sheet itself places a blurred layer over your interface controller and displays the title and message text on top of that. If you provided action buttons, those buttons are displayed at the bottom of the sheet. When the user taps one of your buttons, WatchKit dismisses the sheet automatically and executes your button’s handler block. You can also dismiss the sheet programmatically by calling the [`dismiss()`](./dismiss%28%29.md) method.
 

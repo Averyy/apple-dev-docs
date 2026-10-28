@@ -17,7 +17,7 @@ Returns a Boolean value that indicates whether two values are equal.
 static func == (lhs: WebContentSettings.FilterPolicy, rhs: WebContentSettings.FilterPolicy) -> Bool
 ```
 
-#### Discussion
+## Discussion
 
 - Parameters lhs: A value to compare. rhs: Another value to compare.
 

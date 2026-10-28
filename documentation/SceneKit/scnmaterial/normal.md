@@ -25,7 +25,7 @@ var normal: SCNMaterialProperty { get }
 @property (nonatomic, readonly) SCNMaterialProperty * normal;
 ```
 
-#### Discussion
+## Discussion
 
 Simulating the interaction of lights with a material requires information about the orientation of the surface at each point. Typically, normal vectors provided by a geometry object provide this information. However, this limits the level of detail for surface contours because a geometry can only provide one unique surface normal vector per vertex (and increasing vertex count to model a highly detailed surface exacts a high performance cost).
 

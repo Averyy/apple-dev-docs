@@ -21,11 +21,11 @@ Retrieves a header value.
 func value(forHTTPHeaderField field: String) -> String?
 ```
 
-#### Return Value
+## Return Value
 
 The value associated with the header field field,  or `nil` if there is no corresponding header field.
 
-#### Discussion
+## Discussion
 
 Note that, in keeping with the HTTP RFC, HTTP header field names are case-insensitive.
 

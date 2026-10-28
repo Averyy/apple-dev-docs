@@ -25,7 +25,7 @@ struct OperatingSystemVersion
 typedef struct { ... } NSOperatingSystemVersion;
 ```
 
-#### Overview
+## Overview
 
 Use the [`ProcessInfo`](./processinfo.md) property [`operatingSystemVersion`](./processinfo/operatingsystemversion.md) to fetch an instance of this type. You can also pass this type to [`isOperatingSystemAtLeast(_:)`](./processinfo/isoperatingsystematleast%28_%29.md) to determine whether the current operating system version is the same or later than the given value.
 

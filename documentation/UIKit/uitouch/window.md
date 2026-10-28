@@ -23,7 +23,7 @@ var window: UIWindow? { get }
 @property (nonatomic, strong, readonly, nullable) UIWindow * window;
 ```
 
-#### Discussion
+## Discussion
 
 The value of the property is the window in which the touch originally occurred. This window might not be the same window that currently contains the touch.
 

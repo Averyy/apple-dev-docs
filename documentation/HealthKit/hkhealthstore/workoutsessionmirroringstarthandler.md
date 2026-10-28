@@ -24,7 +24,7 @@ var workoutSessionMirroringStartHandler: (@Sendable (HKWorkoutSession) -> Void)?
 @property (copy, nullable) void (^)(HKWorkoutSession *) workoutSessionMirroringStartHandler;
 ```
 
-#### Discussion
+## Discussion
 
 The system calls this block on the companion iPhone when someone starts a mirrored workout on Apple Watch. If your iOS app isn’t active, the system launches it in the background.
 

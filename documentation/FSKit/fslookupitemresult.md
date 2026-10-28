@@ -19,7 +19,7 @@ class FSLookupItemResult
 @interface FSLookupItemResult : FSVolumeHandlerResult
 ```
 
-#### Overview
+## Overview
 
 Use this type in your implementation of [`lookupItem(named:in:context:replyHandler:)`](./fsvolume/handler/lookupitem%28named,in,context,replyhandler%29.md).
 

@@ -5,13 +5,13 @@
 
 Restore the symmetric key you use to verify payment data.
 
-#### Overview
+## Overview
 
 The value of the `version` key in the payment token structure indicates whether the Apple Pay servers encrypted the payment token using Elliptic Curve Cryptography (ECC) or Rivest–Shamir–Adleman (RSA). Follow the instructions for restoring an ECC key or an RSA key according to the value of the `version` key.
 
 For instructions on using the symmetric key, see [Payment token format reference](./payment-token-format-reference.md).
 
-##### Restore a symmetric key for ECC
+### Restore a symmetric key for ECC
 
 To restore the key for ECC (`EC_v1)`, follow these steps:
 
@@ -26,7 +26,7 @@ To restore the key for ECC (`EC_v1)`, follow these steps:
 | Party V Info | The SHA-256 hash of your merchant ID string literal, which is 32 bytes in size. ![](https://developer.apple.com/tutorials/images/com.apple.passkit/spacer.png) You can derive Party V Info from your payment processing certificate in either of two ways. ![](https://developer.apple.com/tutorials/images/com.apple.passkit/spacer.png) Method 1: ![](https://developer.apple.com/tutorials/images/com.apple.passkit/spacer.png) The UID field of the Common Name includes the plaintext merchant ID. Calculate the SHA-256 hash of that plaintext string. Use the result for Party V Info. ![](https://developer.apple.com/tutorials/images/com.apple.passkit/spacer.png) Method 2: ![](https://developer.apple.com/tutorials/images/com.apple.passkit/spacer.png) The OID 1.2.840.113635.100.6.32 includes the hex-encoded hash of the merchant ID . Hexadecimal-decode that hash string to produce the original (non-hex-encoded) 32-byte hash. Use the result for Party V Info. |
 | Supplemental Public and Private Info | Unused |
 
-##### Restore a symmetric key for RSA
+### Restore a symmetric key for RSA
 
 A merchant’s public key encrypts the symmetric key for RSA (`RSA_v1)` by using the RSA/ECB/OAEPWithSHA256AndMGF1Padding algorithm. Use your RSA private key to decrypt the cipher text in the `wrappedKey` value. After you decrypt it, the plaintext is the symmetric key material that you use to decrypt the payment token.
 

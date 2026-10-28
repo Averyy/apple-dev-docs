@@ -14,7 +14,7 @@ Create app-specific activities your users can share and experience together.
 - tvOS 15.0+
 - visionOS 1.0+
 
-#### Overview
+## Overview
 
 With the Group Activities framework, you can provide your app’s content in SharePlay experiences, which create a sense of connection and immediacy for your users. For example, a video-streaming app might offer the ability to attend movie-watching parties in which participants watch simultaneously from their personal devices. The app handles the playback on each device, but the Group Activities framework synchronizes that playback and facilitates communication between the devices.
 

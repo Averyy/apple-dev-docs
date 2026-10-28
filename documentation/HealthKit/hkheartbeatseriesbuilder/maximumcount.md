@@ -24,7 +24,7 @@ class var maximumCount: Int { get }
 @property (class, readonly) NSUInteger maximumCount;
 ```
 
-#### Discussion
+## Discussion
 
 After reaching the maximum count, any attempt to call the [`addHeartbeatWithTimeInterval(sinceSeriesStartDate:precededByGap:completion:)`](./addheartbeatwithtimeinterval%28sinceseriesstartdate,precededbygap,completion%29.md) method fails.
 

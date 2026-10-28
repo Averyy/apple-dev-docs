@@ -23,7 +23,7 @@ class NSTextInsertionIndicator
 
 - [Adopting the system text cursor in custom text views](./adopting-the-system-text-cursor-in-custom-text-views.md)
 
-#### Overview
+## Overview
 
 [`NSTextView`](./nstextview.md) and [`NSTextField`](./nstextfield.md) both use [`NSTextInsertionIndicator`](./nstextinsertionindicator.md) to display the insertion indicator. You can use this indicator if you have your own text engine or need to display an indicator elsewhere.
 

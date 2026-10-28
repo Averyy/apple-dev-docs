@@ -38,7 +38,7 @@ var isActive: Bool { get set }
 
 - [Adding voice chat to multiplayer games](../adding-voice-chat-to-multiplayer-games.md)
 
-#### Discussion
+## Discussion
 
 If you set this property to [`true`](../../Swift/true.md), the voice chat object transmits the voice data from the microphone to other players in the channel. If another voice chat object is using the microphone, GameKit switches the microphone to this channel and sets that voice chat object’s [`isActive`](./isactive.md) property to [`false`](../../Swift/false.md).
 

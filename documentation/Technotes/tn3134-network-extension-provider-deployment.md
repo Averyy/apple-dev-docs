@@ -5,7 +5,7 @@
 
 Explore the platforms, packaging, OS versions, and device configurations for Network Extension provider deployment.
 
-#### Overview
+## Overview
 
 Network Extension providers extend the networking stack in various ways.  You might implement a custom VPN protocol with a packet tunnel provider, or add a content filter provider as part of a parental control app.  Network Extension supports many different provider types and each type has different deployment requirements.  The tables below summarise these requirements for each provider type.
 
@@ -19,7 +19,7 @@ When reading these tables:
 
 For more information about using the Network Extension framework as a whole, see [Network Extension](../NetworkExtension/NetworkExtension.md).
 
-#### Deploying a packet tunnel provider
+## Deploying a packet tunnel provider
 
 When building a packet tunnel provider, use the following table to plan your deployment:
 
@@ -38,7 +38,7 @@ For more information, see [Packet tunnel provider](../NetworkExtension/packet-tu
 
 Before you decide to implement a packet tunnel provider, read [TN3120: Expected use cases for Network Extension packet tunnel providers](./tn3120-expected-use-cases-for-network-extension-packet-tunnel-providers.md).
 
-#### Deploying an app proxy provider
+## Deploying an app proxy provider
 
 When building an app proxy provider, use the following table to plan your deployment:
 
@@ -53,7 +53,7 @@ When building an app proxy provider, use the following table to plan your deploy
 
 For more information, see [App proxy provider](../NetworkExtension/app-proxy-provider.md).
 
-#### Deploying a URL filter provider
+## Deploying a URL filter provider
 
 When building a URL filter provider, use the following table to plan your deployment:
 
@@ -64,7 +64,7 @@ When building a URL filter provider, use the following table to plan your deploy
 
 For more information, see [URL filters](../NetworkExtension/url-filters.md).
 
-#### Deploying a content filter provider
+## Deploying a content filter provider
 
 When building a content filter provider, use the following table to plan your deployment:
 
@@ -88,7 +88,7 @@ In the Screen Time case, content filters are only supported on child devices.  T
 
 Before submitting your app to the App Store, you must request permission to use the [`Family Controls`](../BundleResources/entitlements/com.apple.developer.family-controls.md) entitlement for distribution.
 
-#### Deploying a DNS proxy provider
+## Deploying a DNS proxy provider
 
 When building a DNS proxy provider, use the following table to plan your deployment:
 
@@ -102,7 +102,7 @@ When building a DNS proxy provider, use the following table to plan your deploym
 
 For more information, see [DNS proxy provider](../NetworkExtension/dns-proxy-provider.md).
 
-#### Deploying a transparent proxy provider
+## Deploying a transparent proxy provider
 
 When building a transparent proxy provider, use the following table to plan your deployment:
 
@@ -115,7 +115,7 @@ For more information, see the discussion of transparent proxies within [App prox
 
 macOS 11.0 introduced significant improvements to the transparent proxy feature; for the details, see [`NETransparentProxyProvider`](../NetworkExtension/netransparentproxyprovider.md).
 
-#### Deploying a packet filter provider
+## Deploying a packet filter provider
 
 When building a packet filter provider, use the following table to plan your deployment:
 
@@ -125,7 +125,7 @@ When building a packet filter provider, use the following table to plan your dep
 
 For more information, see [Content filter providers](../NetworkExtension/content-filter-providers.md).
 
-#### Deploying an Ethernet tunnel provider
+## Deploying an Ethernet tunnel provider
 
 When building an Ethernet tunnel provider, use the following table to plan your deployment:
 
@@ -136,7 +136,7 @@ When building an Ethernet tunnel provider, use the following table to plan your 
 
 For more information, see [`NEEthernetTunnelProvider`](../NetworkExtension/neethernettunnelprovider.md).
 
-#### Deploying an app push provider
+## Deploying an app push provider
 
 When building an app push provider, use the following table to plan your deployment:
 
@@ -147,7 +147,7 @@ When building an app push provider, use the following table to plan your deploym
 
 For more information, see [Local push connectivity](../NetworkExtension/local-push-connectivity.md).
 
-#### Deploying a hotspot provider
+## Deploying a hotspot provider
 
 When building a hotspot provider, use the following table to plan your deployment:
 
@@ -160,7 +160,7 @@ For more information about hotspot providers, see [Hotspot helper](../NetworkExt
 
 Before starting development, request permission to use the `com.apple.developer.networking.HotspotHelper` entitlement.  See [Hotspot helper](../NetworkExtension/hotspot-helper.md) for the details.
 
-#### Revision History
+## Revision History
 
 - **2025-08-19** Added sections for URL filter and hotspot providers.  Added visionOS entries to the appropriate tables.  Clarified the role of MDM in per-app configurations.  Made other minor editorial changes.
 - **2023-11-28** Clarified the Family Controls behaviour for content filter providers on iOS.

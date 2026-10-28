@@ -16,7 +16,7 @@ The size family of the current Live Activity.
 var activityFamily: ActivityFamily { get set }
 ```
 
-#### Discussion
+## Discussion
 
 A Live Activity you initiate on one device can also appear on a remote device that renders the Live Activity in a different family size. As a result, it renders for a specific family, depending on both the device and the location in which it appears. For example, when rendering on the iOS or iPadOS Lock Screen, the current family is https://developer.apple.com/documentation/WidgetKit/ActivityFamily/medium.
 

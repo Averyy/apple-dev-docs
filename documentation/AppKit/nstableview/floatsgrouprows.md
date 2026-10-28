@@ -19,7 +19,7 @@ var floatsGroupRows: Bool { get set }
 @property BOOL floatsGroupRows;
 ```
 
-#### Discussion
+## Discussion
 
 Group rows are rows for which the table view delegate’s [`tableView(_:isGroupRow:)`](../nstableviewdelegate/tableview%28_,isgrouprow%29.md) method returns YES. These rows can be displayed as if they are floating in a view-based table view.
 

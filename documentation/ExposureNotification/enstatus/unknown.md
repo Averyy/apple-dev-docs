@@ -23,7 +23,7 @@ case unknown
 ENStatusUnknown
 ```
 
-#### Discussion
+## Discussion
 
 This is the status before [`ENManager`](../enmanager.md) has activated successfully.
 

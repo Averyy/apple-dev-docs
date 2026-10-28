@@ -24,7 +24,7 @@ func cancelTunnelWithError(_ error: (any Error)?)
 - (void) cancelTunnelWithError:(NSError *) error;
 ```
 
-#### Discussion
+## Discussion
 
 The Packet Tunnel Provider should call this method when an unrecoverable error occurs, such as the tunnel server going down or the VPN authentication session expiring.
 

@@ -15,7 +15,7 @@ OSArray provides an indexed store of objects.
 class OSArray : OSCollection
 ```
 
-#### Overview
+## Overview
 
 OSArray is a container for Libkern C++ objects (those derived from OSMetaClassBase, in particular OSObject). Storage and access are by array index.
 

@@ -25,7 +25,7 @@ class SCNHitTestResult
 @interface SCNHitTestResult : NSObject
 ```
 
-#### Overview
+## Overview
 
 Hit-testing is the process of finding elements of a scene located at a specified point, or along a specified line segment (or *ray*). An [`SCNHitTestResult`](./scnhittestresult.md) object provides details about one result from a hit-test search. There are three ways to perform a hit-test search. Use the [`hitTest(_:options:)`](./scnscenerenderer/hittest%28_,options%29.md) method of an [`SCNView`](./scnview.md) object (or other scene renderer), the [`hitTestWithSegment(from:to:options:)`](./scnnode/hittestwithsegment%28from,to,options%29.md) method of a node, or the [`rayTestWithSegment(from:to:options:)`](./scnphysicsworld/raytestwithsegment%28from,to,options%29.md) method of your scene’s physics world.
 

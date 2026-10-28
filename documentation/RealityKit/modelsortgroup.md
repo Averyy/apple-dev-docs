@@ -20,7 +20,7 @@ A group that you assign to multiple entities to tell the renderer what order and
 struct ModelSortGroup
 ```
 
-#### Overview
+## Overview
 
 Each model sort group relates model entities to each other so that you can define what order the renderer draws them. Pass the same model sort group instance to each [`ModelSortGroupComponent`](./modelsortgroupcomponent.md) whose entity you want to group, along with an order number for that entity within the group.
 

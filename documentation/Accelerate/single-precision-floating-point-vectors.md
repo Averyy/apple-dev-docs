@@ -5,7 +5,7 @@
 
 Perform operations on vectors that contain single-precision floating-point elements.
 
-#### Overview
+## Overview
 
 The simd library provides many functions in this group, in three variants:
 

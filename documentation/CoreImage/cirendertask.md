@@ -24,7 +24,7 @@ class CIRenderTask
 @interface CIRenderTask : NSObject
 ```
 
-#### Overview
+## Overview
 
 A single render task issued in conjunction with [`CIRenderDestination`](./cirenderdestination.md).
 

@@ -25,11 +25,11 @@ func newZone(_ capacity: Int) -> any MDLMeshBufferZone
 - (id<MDLMeshBufferZone>) newZone:(NSUInteger) capacity;
 ```
 
-#### Return Value
+## Return Value
 
 A new memory zone.
 
-#### Discussion
+## Discussion
 
 Objects implementing the [`MDLMeshBufferZone`](../mdlmeshbufferzone.md) protocol describe a logical pool of memory for allocation of related buffers. The actual class of buffer zone objects vended by an allocator may be private.
 

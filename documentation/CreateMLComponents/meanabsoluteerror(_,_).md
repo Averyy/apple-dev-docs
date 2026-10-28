@@ -22,11 +22,11 @@ Computes the mean absolute error between predicted and ground truth values.
 func meanAbsoluteError<T>(_ predicted: some Collection, _ groundTruth: some Collection) -> T where T : FloatingPoint
 ```
 
-#### Return Value
+## Return Value
 
 The mean absolute error.
 
-#### Discussion
+## Discussion
 
 Empty collections of predicted and ground truth values will return a value of NaN.
 

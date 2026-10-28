@@ -20,7 +20,7 @@ func saveToPDF(_ sender: Any?)
 - (void) saveDocumentToPDF:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 This action method handles the File menu’s “Export As PDF…” item in a document-based application.
 

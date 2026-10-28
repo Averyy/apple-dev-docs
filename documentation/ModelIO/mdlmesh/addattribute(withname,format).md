@@ -24,7 +24,7 @@ func addAttribute(withName name: String, format: MDLVertexFormat)
 - (void) addAttributeWithName:(NSString *) name format:(MDLVertexFormat) format;
 ```
 
-#### Discussion
+## Discussion
 
 Calling this method updates the mesh’s [`vertexDescriptor`](./vertexdescriptor.md) object to reflect the new attribute, and then uses the same [`MDLMeshBufferAllocator`](../mdlmeshbufferallocator.md) object shared by the mesh’s existing vertex buffers to allocate new, empty storage for the new attribute’s vertex data. This method has no effect if the mesh already contains an attribute with the specified name; to overwrite or rearrange existing attribute data, use the [`vertexDescriptor`](./vertexdescriptor.md) property.
 

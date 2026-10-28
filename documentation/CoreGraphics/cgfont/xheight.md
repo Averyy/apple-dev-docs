@@ -25,7 +25,7 @@ var xHeight: Int32 { get }
 extern int CGFontGetXHeight(CGFontRef font);
 ```
 
-#### Discussion
+## Discussion
 
 The x-height is the distance above the baseline of the top of flat, non-ascending lowercase letters (such as `x`) of glyphs in a font. The value is specified in glyph space units.
 

@@ -23,7 +23,7 @@ class CFAttributedString
 typedef const struct __CFAttributedString * CFAttributedStringRef;
 ```
 
-#### Overview
+## Overview
 
 Instances of CFAttributedString manage character strings and associated sets of attributes (for example, font and kerning information) that apply to individual characters or ranges of characters in the string. CFAttributedString as defined in Core Foundation provides the basic container functionality, while higher levels provide definitions for standard attributes, their values, and additional behaviors involving these. CFAttributedString represents an immutable string—use [`CFMutableAttributedString`](./cfmutableattributedstring.md) to create and manage an attributed string that can be changed after it has been created.
 

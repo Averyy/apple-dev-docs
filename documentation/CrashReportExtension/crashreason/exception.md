@@ -20,7 +20,7 @@ The Mach exception type.
 let exception: Int32
 ```
 
-#### Discussion
+## Discussion
 
 Possible values of this property include `EXC_BAD_ACCESS` and `EXC_CRASH`.
 

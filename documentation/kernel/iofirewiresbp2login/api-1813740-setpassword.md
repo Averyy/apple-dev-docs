@@ -12,11 +12,11 @@ virtual IOReturn setPassword(
  IOMemoryDescriptor *memory );
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess on success.
 
-#### Overview
+## Overview
 
 Sets the login password using an IOMemoryDescriptor. An alternate version exists that accepts a buffer and a length. If the password length is 8 or less the password is copied directly into the login orb. If the length is greater than 8 the buffer is referenced by address in the login ORB.
 

@@ -19,7 +19,7 @@ func clientHandleIncomingData(_ event: UnsafeMutablePointer<OBEXTransportEvent>!
 - (void) clientHandleIncomingData:(OBEXTransportEvent *) event;
 ```
 
-#### Discussion
+## Discussion
 
 Tranport subclasses must call this for OBEX client sessions to work!
 

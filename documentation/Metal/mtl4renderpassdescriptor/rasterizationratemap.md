@@ -24,7 +24,7 @@ var rasterizationRateMap: (any MTLRasterizationRateMap)? { get set }
 @property (nonatomic, strong, nullable) id<MTLRasterizationRateMap> rasterizationRateMap;
 ```
 
-#### Discussion
+## Discussion
 
 Enabling variable rasterization rate allows Metal to decrease the rasterization rate, typically in unimportant regions of color attachments, to accelerate processing.
 

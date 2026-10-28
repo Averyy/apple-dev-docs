@@ -19,7 +19,7 @@ final var localParticipantState: SystemCoordinator.ParticipantState { get }
 
 - [Adding spatial Persona support to an activity](../adding-spatial-persona-support-to-an-activity.md)
 
-#### Discussion
+## Discussion
 
 This property tells you when the current participant supports inclusion in a shared simulation space. This property is `true` if the participant is using a device that supports spatial placement, configured their spatial Persona on that device, and enabled it for the current activity.
 

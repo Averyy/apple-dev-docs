@@ -25,7 +25,7 @@ var currentVideoFrameRate: Float { get }
 @property (readonly) float currentVideoFrameRate;
 ```
 
-#### Discussion
+## Discussion
 
 If the media type of the [`assetTrack`](./assettrack.md) is [`video`](../avmediatype/video.md), the property indicates the current frame rate of the track as it plays, in frames per second. If the item isn’t playing, or if the media type of the track isn’t video, the value of this property is `0.0`.
 

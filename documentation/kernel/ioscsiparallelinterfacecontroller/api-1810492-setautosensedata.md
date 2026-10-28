@@ -14,7 +14,7 @@ bool SetAutoSenseData (
  UInt8 senseDataSize );
 ```
 
-#### Return Value
+## Return Value
 
 returns true if data in newSenseData was succesfully into the task object
 

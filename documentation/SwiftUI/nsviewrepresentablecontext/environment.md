@@ -16,7 +16,7 @@ Environment data that describes the current state of the system.
 @preconcurrency var environment: EnvironmentValues { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use the environment values to configure the state of your view when creating or updating it.
 

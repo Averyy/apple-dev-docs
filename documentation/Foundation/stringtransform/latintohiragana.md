@@ -25,7 +25,7 @@ static let latinToHiragana: StringTransform
 extern NSStringTransform const NSStringTransformLatinToHiragana;
 ```
 
-#### Discussion
+## Discussion
 
 This transformation is reversible.
 

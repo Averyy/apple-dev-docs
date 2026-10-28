@@ -15,7 +15,7 @@ A pattern that indicates the pasteboard detects a string that contains a calenda
 extern NSPasteboardDetectionPattern const NSPasteboardDetectionPatternCalendarEvent;
 ```
 
-#### Return Value
+## Return Value
 
 Array of DDMatchCalendarEvent values
 

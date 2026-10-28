@@ -23,7 +23,7 @@ protocol UITableViewDropItem : NSObjectProtocol
 @protocol UITableViewDropItem <NSObject>
 ```
 
-#### Overview
+## Overview
 
 When handling a drop, you get instances of this class from the [`items`](./uitableviewdropcoordinator/items.md) property of the [`UITableViewDropCoordinator`](./uitableviewdropcoordinator.md) object. Use them to retrieve the data for the items being dragged and to plan any animations related to dropping the items. You don’t create instances of this class yourself.
 

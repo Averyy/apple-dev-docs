@@ -25,7 +25,7 @@ let SCNConsistencyElementIDErrorKey: String
 extern NSString * const SCNConsistencyElementIDErrorKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is a [`NSString`](../Foundation/nsstring.md) object containing an identifier.
 

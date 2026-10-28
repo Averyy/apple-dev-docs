@@ -21,7 +21,7 @@ Compares two intervals.
 func compare(_ dateInterval: DateInterval) -> ComparisonResult
 ```
 
-#### Discussion
+## Discussion
 
 This method prioritizes ordering by start date. If the start dates are equal, then it will order by duration. e.g. Given intervals a and b
 

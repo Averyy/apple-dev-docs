@@ -8,7 +8,7 @@ Create, modify, and delete localized metadata for auto-renewable subscriptions.
 **Availability**:
 - App Store Connect API 2.0+ - Deprecated in 4.4.1
 
-#### Overview
+## Overview
 
 > ❗ **Important**:  This is deprecated. Use [Subscription Localizations](./subscription-localizations.md) instead.
 

@@ -21,7 +21,7 @@ var shouldExpire: Bool { get set }
 @property (nonatomic, assign) BOOL shouldExpire;
 ```
 
-#### Discussion
+## Discussion
 
 If [`true`](../../Swift/true.md), the message should expire after it is read. Expired messages are deleted a short time after being read by the recipient. The recipient may opt to keep the message.
 

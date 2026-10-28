@@ -19,11 +19,11 @@ func layoutCharacters(in characterRange: NSRange, for layoutManager: NSLayoutMan
 - (NSRange) layoutCharactersInRange:(NSRange) characterRange forLayoutManager:(NSLayoutManager *) layoutManager maximumNumberOfLineFragments:(NSUInteger) maxNumLines;
 ```
 
-#### Return Value
+## Return Value
 
 The method returns the actual character range that the receiving `NSTypesetter` processed.
 
-#### Discussion
+## Discussion
 
 The layout process can be interrupted when the number of line fragments exceeds `maxNumLines`.
 

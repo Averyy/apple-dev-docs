@@ -19,7 +19,7 @@ typealias SpeechTextDoneUPP = SpeechTextDoneProcPtr
 typedef SpeechTextDoneProcPtr SpeechTextDoneUPP;
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see the description of the [`SpeechTextDoneProcPtr`](./speechtextdoneprocptr.md) callback function.
 

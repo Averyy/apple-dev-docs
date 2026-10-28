@@ -16,11 +16,11 @@ Sets the function of the management ORB.
 IOReturn (*setCommandFunction)(void *self, UInt32 function);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if function was a legal function.
 
-#### Discussion
+## Discussion
 
 Sets the the function of the management ORB. Legal values are kFWSBP2QueryLogins, kFWSBP2AbortTask, kFWSBP2AbortTaskSet, kFWSBP2LogicalUnitReset, and kFWSBP2TargetReset.
 

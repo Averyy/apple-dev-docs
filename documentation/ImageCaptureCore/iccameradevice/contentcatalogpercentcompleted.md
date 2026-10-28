@@ -23,7 +23,7 @@ var contentCatalogPercentCompleted: Int { get }
 @property (nonatomic, readonly) NSUInteger contentCatalogPercentCompleted;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property ranges from 0 to 100.
 

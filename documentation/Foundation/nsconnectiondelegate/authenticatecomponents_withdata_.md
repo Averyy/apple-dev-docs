@@ -16,11 +16,11 @@ Returns a Boolean value that indicates whether given authentication data is vali
 - (BOOL) authenticateComponents:(NSArray *) components withData:(NSData *) signature;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the `signature` provided is valid for `components`, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Use this message for validation of incoming messages. An `NSConnection` object raises an `NSFailedAuthenticationException` on receipt of a remote message the delegate doesn’t authenticate.
 

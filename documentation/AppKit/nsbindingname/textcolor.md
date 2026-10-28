@@ -19,7 +19,7 @@ static let textColor: NSBindingName
 extern NSBindingName NSTextColorBinding;
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see [Cocoa Bindings](../cocoa-bindings.md).
 

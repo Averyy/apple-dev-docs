@@ -21,7 +21,7 @@ An enumeration of binary operations.
 enum BinaryOperation
 ```
 
-#### Overview
+## Overview
 
 These follow Metal’s rules for compatibility with operands.
 

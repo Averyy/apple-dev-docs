@@ -27,7 +27,7 @@ var price: NSDecimalNumber { get }
 @property (nonatomic, readonly) NSDecimalNumber * price;
 ```
 
-#### Discussion
+## Discussion
 
 Your app can format the price using a number formatter, as shown in the following sample code:
 

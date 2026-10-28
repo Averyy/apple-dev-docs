@@ -16,7 +16,7 @@ typedef struct ResourceSpec {
 } ResourceSpec;
 ```
 
-#### Overview
+## Overview
 
 The  [`ComponentResource`](./componentresource.md)  structure uses the resource specification structure, defined by the `ResourceSpec` data type, to describe the component’s code, name, information string, or icon. The resources specified by the resource specification structures must reside in the same resource file as the component resource itself. 
 

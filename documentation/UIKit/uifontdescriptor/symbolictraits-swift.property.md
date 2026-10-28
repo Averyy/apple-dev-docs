@@ -24,7 +24,7 @@ var symbolicTraits: UIFontDescriptor.SymbolicTraits { get }
 @property (nonatomic, readonly) UIFontDescriptorSymbolicTraits symbolicTraits;
 ```
 
-#### Discussion
+## Discussion
 
 The traits describe the font’s characteristics. For possible values, see [`UIFontDescriptor.SymbolicTraits`](./symbolictraits-swift.struct.md).
 

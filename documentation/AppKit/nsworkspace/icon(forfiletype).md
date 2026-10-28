@@ -21,11 +21,11 @@ func icon(forFileType fileType: String) -> NSImage
 - (NSImage *) iconForFileType:(NSString *) fileType;
 ```
 
-#### Return Value
+## Return Value
 
 The icon associated with files of the given type.
 
-#### Discussion
+## Discussion
 
 The returned image has an initial size of 32 pixels by 32 pixels.
 

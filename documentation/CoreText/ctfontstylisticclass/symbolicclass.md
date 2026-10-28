@@ -27,7 +27,7 @@ static var symbolicClass: CTFontStylisticClass { get }
 kCTFontSymbolicClass
 ```
 
-#### Discussion
+## Discussion
 
 Typically assigned to fonts for special characters, such as icons, dingbats, technical symbols, and so on.
 

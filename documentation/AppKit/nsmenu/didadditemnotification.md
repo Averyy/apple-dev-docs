@@ -19,7 +19,7 @@ class let didAddItemNotification: NSNotification.Name
 extern NSNotificationName NSMenuDidAddItemNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is the instance of `NSMenu` that just added the new menu item. The `userInfo` dictionary contains the following information.
 

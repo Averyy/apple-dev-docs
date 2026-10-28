@@ -19,7 +19,7 @@ var knobStyle: NSScroller.KnobStyle { get set }
 @property NSScrollerKnobStyle knobStyle;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property does not affect legacy scrollers. [`NSScroller.KnobStyle.default`](./knobstyle-swift.enum/default.md) is appropriate for a wide range of content, but in some cases choosing an alternative knob style may enhance visibility of the scroller knob atop some kinds of content.
 

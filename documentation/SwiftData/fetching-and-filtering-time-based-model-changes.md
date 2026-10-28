@@ -5,7 +5,7 @@
 
 Track all inserts, updates, and deletes that occur in a data store and process them as a series of chronological transactions.
 
-#### Overview
+## Overview
 
 As people interact with your app, the app’s persisted model data may change over time. For example, a person (or process) may create, update, or delete model instances. When the app fetches data from the data store, those results represent only the current state of that model data; there’s no straightforward way to determine if there’s been any changes to that data since the last fetch.
 
@@ -15,7 +15,7 @@ To use SwiftData History in your app, create a history descriptor and use a mode
 
 > **Note**: SwiftData History is available in data stores that adopt the [`HistoryProviding`](./historyproviding.md) protocol such as [`DefaultStore`](./defaultstore.md) . All examples in this article assume the use of `DefaultStore` and its related types.
 
-#### Fetch a store’s change transactions
+## Fetch a store’s change transactions
 
 Transactions group together one or more changes that occur on a specific boundary — such as when a model context writes pending changes to the store — and are identifiable by their associated history token. SwiftData stores transactions in the order they occur, and a model context fetches them in that same order. The group of changes that a transaction contains (inserts, updates, deletes) are also ordered chronologically.
 
@@ -45,7 +45,7 @@ func fetchWidgetTransactions(after tokenData: Data) -> Result<[DefaultHistoryTra
 
 After processing the fetched transactions, make sure that you write the most recent transaction’s token to disk so you can use it in the next fetch.
 
-#### Identify relevant model changes
+## Identify relevant model changes
 
 As transactions represent points in time, they’re heterogenous — a single transaction can (and often will) contain changes for several different model types. Because of this, transactions aren’t bound to a specific model type. When you fetch them from a data store, the results will likely contain transactions, and changes within those transactions, that are unrelated to the current view or task. Filter each transaction’s changes and identify only those that are relevant.
 
@@ -75,7 +75,7 @@ for txn in transactions {
 }
 ```
 
-#### Preserve important attributes of deleted models
+## Preserve important attributes of deleted models
 
 After deleting a model from the data store, its values are gone with no way to recover them. In most situations, this is the preferred behavior. However, there may be occasions where your app needs to retain one or more attribute values from a deleted model. For example, using a model’s [`persistentModelID`](./persistentmodel/persistentmodelid.md) as a means of identifying that model is only relevant within the scope of the local data store, and a different attribute may provide a stable identity across different devices and services. By retaining that attribute’s value, you’re able to reliably identify the deleted model after it’s gone.
 
@@ -98,7 +98,7 @@ if let deletion = change as? History.DefaultDeleteChange<Trip> {
 }
 ```
 
-#### Delete stale change transactions
+## Delete stale change transactions
 
 SwiftData writes transactions to the data store alongside the model data, and as such, transactions require additional disk space. To make sure the store doesn’t consume more space than necessary, determine a suitable clean-up strategy to remove stale transactions when your app no longer needs them.
 

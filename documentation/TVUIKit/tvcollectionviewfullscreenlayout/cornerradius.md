@@ -19,7 +19,7 @@ var cornerRadius: CGFloat { get set }
 @property (nonatomic, assign) CGFloat cornerRadius;
 ```
 
-#### Discussion
+## Discussion
 
 Setting the radius to a value greater than 0.0 points applies increasingly rounded corners on the cell.
 

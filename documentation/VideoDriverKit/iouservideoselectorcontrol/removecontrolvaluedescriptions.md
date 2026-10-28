@@ -15,7 +15,7 @@ Removes selector control values from the selector control.
 kern_return_t RemoveControlValueDescriptions(const IOUserVideoSelectorValueDescription *in_value_descriptions, size_t in_num_value_descriptions);
 ```
 
-#### Return Value
+## Return Value
 
 `kIOReturnSuccess` if selector control values were successfully removed.
 

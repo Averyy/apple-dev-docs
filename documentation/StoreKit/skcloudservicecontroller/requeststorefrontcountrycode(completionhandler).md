@@ -30,7 +30,7 @@ func requestStorefrontCountryCode() async throws -> String
 - (void) requestStorefrontCountryCodeWithCompletionHandler:(void (^)(NSString *storefrontCountryCode, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 You need to get the appropriate storefront country code before you specify a product as each country or region contains different products.
 

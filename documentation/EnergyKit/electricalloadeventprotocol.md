@@ -21,7 +21,7 @@ protocol ElectricalLoadEventProtocol : Decodable, Encodable, Identifiable, Senda
 
 - [Providing charging history for electric vehicles](./providing-informative-charging-history-for-electric-vehicles.md)
 
-#### Overview
+## Overview
 
 Don’t declare new conformances to `ElectricalLoadEventProtocol`. Only [`ElectricVehicleLoadEvent`](./electricvehicleloadevent.md) and [`ElectricHVACLoadEvent`](./electrichvacloadevent.md) can conform to `ElectricalLoadEventProtocol`.
 

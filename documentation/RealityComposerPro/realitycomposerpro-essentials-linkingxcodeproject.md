@@ -5,7 +5,7 @@
 
 Iterate on a scene and run it as an app without leaving the editor.
 
-#### Overview
+## Overview
 
 Linking your Reality Composer Pro project to an [Xcode](https://developer.apple.com/xcode/) project lets you switch quickly between Reality Composer Pro and Xcode to iterate, preview, simulate, and test your project. With this connection, you can build and run to devices and simulators, automatically export scene assets to Xcode as you work, and generate a ready-to-use Xcode project template.
 
@@ -15,7 +15,7 @@ You can also iterate on your scene (models, composition, shaders, physics, anima
 
 > **Note**: Install Xcode 27 or later before linking Reality Composer Pro 3 and Xcode projects.
 
-#### Link to a new Xcode project
+## Link to a new Xcode project
 
 To link to a new Xcode project, do the following:
 
@@ -47,7 +47,7 @@ To link to a new Xcode project, do the following:
 
 1. **If** you selected **Include Custom Component**, Reality Composer Pro prompts you to set up your custom component. Click **Yes** to configure them now; otherwise click **Maybe Later**.
 
-#### Link to an existing Xcode project
+## Link to an existing Xcode project
 
 1. In the Launch Control toolbar, switch from **Simulate** to **Run with Xcode**.
 2. In the toolbar, next to **Run with Xcode**, select **Link an Xcode project**.
@@ -57,7 +57,7 @@ To link to a new Xcode project, do the following:
 6. **If** you selected **Include Custom Component**, Reality Composer Pro prompts you to set up your custom component. Click **Yes** to configure them now; otherwise click **Maybe Later**.
 7. After the linking process completes, open your Xcode project, build it, and then restart Reality Composer Pro.
 
-#### Add custom components from an Xcode project
+## Add custom components from an Xcode project
 
 To link an Xcode project with custom plugins — including custom components, custom timeline actions, and custom Script Graph nodes — follow these steps.
 

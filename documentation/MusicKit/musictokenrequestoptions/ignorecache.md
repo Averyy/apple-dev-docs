@@ -21,7 +21,7 @@ An option that indicates the token provider needs to discard any cached token an
 static let ignoreCache: MusicTokenRequestOptions
 ```
 
-#### Discussion
+## Discussion
 
 You can add the newly generated token to an in-memory or persistent cache for faster access upon subsequent requests for this token.
 

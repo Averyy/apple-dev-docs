@@ -29,7 +29,7 @@ var uniforms: [SKUniform] { get set }
 
 - [Creating a Custom Fragment Shader](../creating-a-custom-fragment-shader.md)
 
-#### Discussion
+## Discussion
 
 This property is not read-only, so you can also use it to provide all of the uniforms in a single operation. Each of the uniforms should be uniquely named.
 

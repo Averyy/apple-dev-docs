@@ -16,11 +16,11 @@ Returns a count of I2C interfaces available associated with an IOFramebuffer ins
 IOReturn IOFBGetI2CInterfaceCount(io_service_t framebuffer, IOItemCount *count);
 ```
 
-#### Return Value
+## Return Value
 
 An IOReturn code.
 
-#### Discussion
+## Discussion
 
 Returns a count of I2C interfaces available associated with an IOFramebuffer instance.
 

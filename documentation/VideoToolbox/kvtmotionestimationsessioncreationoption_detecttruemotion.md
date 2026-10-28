@@ -12,7 +12,7 @@ Enable multi pass true motion detection.
 extern CFStringRef const kVTMotionEstimationSessionCreationOption_DetectTrueMotion;
 ```
 
-#### Discussion
+## Discussion
 
 Renamed to `kVTMotionEstimationSessionCreationOption_UseMultiPassSearch`.
 

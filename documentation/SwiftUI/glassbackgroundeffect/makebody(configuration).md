@@ -16,7 +16,7 @@ Defines the effect produced by this effect.
 func makeBody(configuration: Self.Configuration) -> Self.Body
 ```
 
-#### Return Value
+## Return Value
 
 A custom effect.
 

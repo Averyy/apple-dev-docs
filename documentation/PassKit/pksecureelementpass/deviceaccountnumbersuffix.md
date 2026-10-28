@@ -24,7 +24,7 @@ var deviceAccountNumberSuffix: String { get }
 @property (strong, readonly) NSString * deviceAccountNumberSuffix;
 ```
 
-#### Discussion
+## Discussion
 
 This property’s value is generally the last four or five digits of the device-specific account number, but can vary by issuer.
 

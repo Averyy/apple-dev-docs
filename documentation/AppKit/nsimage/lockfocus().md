@@ -21,7 +21,7 @@ func lockFocus()
 - (void) lockFocus;
 ```
 
-#### Discussion
+## Discussion
 
 This method sets the current drawing context to the area of the offscreen window used to cache the receiver’s contents. Subsequent drawing commands are composited to this offscreen window. If the offscreen drawing area already has some content, any new drawing commands are composited with that content. This method does not modify the original image data directly.
 

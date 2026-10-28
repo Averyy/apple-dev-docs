@@ -24,7 +24,7 @@ let kCTTypesetterOptionDisableBidiProcessing: CFString
 extern CFStringRef const kCTTypesetterOptionDisableBidiProcessing;
 ```
 
-#### Discussion
+## Discussion
 
 Disables bidirectional processing. Value must be a CFBoolean object. Default value is `false`. Normally, typesetting applies the Unicode Bidirectional Algorithm as described in Unicode Standard Annex #9. If a typesetter is created with this option set to `true`, no directional reordering is performed, and any directional control characters are ignored.
 

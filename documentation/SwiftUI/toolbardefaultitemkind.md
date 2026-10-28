@@ -21,7 +21,7 @@ A kind of toolbar item a `View` adds by default.
 struct ToolbarDefaultItemKind
 ```
 
-#### Overview
+## Overview
 
 `View`s can add toolbar items clients may wish to remove or customize. A default item kind can be passed to the [`toolbar(removing:)`](./view/toolbar%28removing%29.md) modifier to remove the item. Documentation on the `View` placing the default item should reference the `ToolbarDefaultItemKind` used to remove the item.
 

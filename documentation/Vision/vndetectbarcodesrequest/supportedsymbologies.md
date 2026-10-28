@@ -26,7 +26,7 @@ class var supportedSymbologies: [VNBarcodeSymbology] { get }
 @property (class, nonatomic, copy, readonly) NSArray<NSString *> * supportedSymbologies;
 ```
 
-#### Discussion
+## Discussion
 
 Calling this method can be an expensive operation.
 

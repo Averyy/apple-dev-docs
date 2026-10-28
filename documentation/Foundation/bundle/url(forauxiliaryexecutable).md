@@ -25,11 +25,11 @@ func url(forAuxiliaryExecutable executableName: String) -> URL?
 - (NSURL *) URLForAuxiliaryExecutable:(NSString *) executableName;
 ```
 
-#### Return Value
+## Return Value
 
 The file URL of the executable `executableName` in the receiver’s bundle.
 
-#### Discussion
+## Discussion
 
 This method returns the appropriate path for modern application and framework bundles. This method may not return a URL for non-standard bundle formats or for some older bundle formats.
 

@@ -27,7 +27,7 @@ var unit: SKProduct.PeriodUnit { get }
 @property (nonatomic, readonly) SKProductPeriodUnit unit;
 ```
 
-#### Discussion
+## Discussion
 
 The units used to specify a subscription period include day, week, month, and year, as defined in [`SKProduct.PeriodUnit`](../skproduct/periodunit.md).
 

@@ -21,7 +21,7 @@ Updates a transformer on an async sequence of examples.
 func update<Input>(_ transformer: inout Self.Transformer, with input: Input, eventHandler: EventHandler? = nil) async throws where Input : AsyncSequence, Input.Element == AnnotatedFeature<Self.Transformer.Input, Self.Annotation>
 ```
 
-#### Discussion
+## Discussion
 
 Note that the async sequence is collected before updating the transformer.
 

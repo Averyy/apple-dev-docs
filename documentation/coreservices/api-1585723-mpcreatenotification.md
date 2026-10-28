@@ -15,11 +15,11 @@ Creates a kernel notification
 OSStatus MPCreateNotification(MPNotificationID *notificationID);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./carbon_core/multiprocessing_services.md#1663965).
 
-#### Discussion
+## Discussion
 
 After creating the kernel notification object, you can add simple notifications by calling the function  [`MPModifyNotification`](./api-1585780-mpmodifynotification.md).
 

@@ -25,11 +25,11 @@ typealias CMBufferCompareCallback = (CMBuffer, CMBuffer, UnsafeMutableRawPointer
 typedef enum CFComparisonResult (*)(const void *, const void *, void *) CMBufferCompareCallback;
 ```
 
-#### Discussion
+## Discussion
 
 You can use a `CFComparatorFunction` as a callback.
 
-##### Callback parameters
+### Callback parameters
 
 - **buf1**: The first buffer being compared.
 - **buf2**: The second buffer being compared.

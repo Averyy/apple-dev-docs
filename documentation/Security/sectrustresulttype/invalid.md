@@ -25,7 +25,7 @@ case invalid
 kSecTrustResultInvalid
 ```
 
-#### Discussion
+## Discussion
 
 This result typically indicates that the evaluation failed to complete successfully.
 

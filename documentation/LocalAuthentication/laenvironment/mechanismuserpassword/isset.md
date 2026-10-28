@@ -22,7 +22,7 @@ var isSet: Bool { get }
 @property (nonatomic, readonly) BOOL isSet;
 ```
 
-#### Discussion
+## Discussion
 
 Whether the local user password or passcode is set on this device.
 

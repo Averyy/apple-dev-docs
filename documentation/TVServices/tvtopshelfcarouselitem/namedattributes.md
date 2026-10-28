@@ -19,7 +19,7 @@ var namedAttributes: [TVTopShelfNamedAttribute] { get set }
 @property (nonatomic, copy) NSArray<TVTopShelfNamedAttribute *> * namedAttributes;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to specify additional details about your content. In appropriate views, the system formats the provided information and displays it alongside the rest of your content. For information about how to create named attributes, see [`TVTopShelfNamedAttribute`](../tvtopshelfnamedattribute.md).
 

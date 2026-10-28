@@ -21,7 +21,7 @@ A Boolean value indicating whether this instance is finite.
 var isFinite: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 All values other than NaN and infinity are considered finite, whether normal or subnormal.  For NaN, both `isFinite` and `isInfinite` are false.
 

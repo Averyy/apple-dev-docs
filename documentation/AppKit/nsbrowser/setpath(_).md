@@ -19,11 +19,11 @@ func setPath(_ path: String) -> Bool
 - (BOOL) setPath:(NSString *) path;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the given path is valid; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 While parsing `path`, the browser compares each component with the entries in the current column. If an exact match is found, the matching entry is selected, and the next component is compared to the next column’s entries. If no match is found for a component, the method exits and returns [`false`](../../Swift/false.md); the final path is set to the valid portion of `path`. If each component of `path` specifies a valid branch or leaf in the browser’s hierarchy, the method returns [`true`](../../Swift/true.md).
 

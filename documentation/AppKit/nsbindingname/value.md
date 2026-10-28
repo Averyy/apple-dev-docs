@@ -19,7 +19,7 @@ static let value: NSBindingName
 extern NSBindingName NSValueBinding;
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see [Cocoa Bindings](../cocoa-bindings.md).
 

@@ -21,7 +21,7 @@ An error that occurs when the system rejects the entire batch of changes.
 static var batchRequestFailed: CKError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 This error occurs when an operation attempts to save multiple items in a custom zone, but one of those items encounters an error. Because custom zones are atomic, the entire batch fails. The items that cause the problem have their own errors, and all other items in the batch have a [`CKError.Code.batchRequestFailed`](./code/batchrequestfailed.md) error to indicate that the system can’t save them.
 

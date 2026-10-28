@@ -5,7 +5,7 @@
 
 Make your word processor’s actions available in the Shortcuts app by adopting schemas for document editing.
 
-#### Overview
+## Overview
 
 The `.wordProcessor` domain defines app schemas that provide a structured representation for common document editing actions and content. Apply schemas in the `.wordProcessor` domain to make your word processor’s functionality available as actions in the Shortcuts app. Schemas in this domain don’t make your conforming types discoverable by Apple Intelligence and Siri.
 

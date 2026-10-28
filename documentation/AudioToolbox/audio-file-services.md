@@ -5,7 +5,7 @@
 
 Read or write a variety of audio data to or from disk or a memory buffer.
 
-#### Overview
+## Overview
 
 This document describes Audio File Services, a C programming interface that enables you to read or write a wide variety of audio data to or from disk or a memory buffer.
 

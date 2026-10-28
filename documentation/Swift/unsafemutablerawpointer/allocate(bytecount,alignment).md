@@ -21,11 +21,11 @@ Allocates uninitialized memory with the specified size and alignment.
 static func allocate(byteCount: Int, alignment: Int) -> UnsafeMutableRawPointer
 ```
 
-#### Return Value
+## Return Value
 
 A pointer to a newly allocated region of memory. The memory is allocated, but not initialized.
 
-#### Discussion
+## Discussion
 
 You are in charge of managing the allocated memory. Be sure to deallocate any memory that you manually allocate.
 

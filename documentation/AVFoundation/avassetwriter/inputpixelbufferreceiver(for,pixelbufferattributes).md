@@ -20,7 +20,7 @@ Attaches the input to the writer and returns an input receiver for writing pixel
 func inputPixelBufferReceiver(for input: AVAssetWriterInput, pixelBufferAttributes attributes: CVPixelBufferCreationAttributes?) -> sending AVAssetWriterInput.PixelBufferReceiver
 ```
 
-#### Return Value
+## Return Value
 
 A writer input receiver with an interface for writing pixel buffers.
 

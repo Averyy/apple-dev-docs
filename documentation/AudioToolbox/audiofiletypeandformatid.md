@@ -24,7 +24,7 @@ struct AudioFileTypeAndFormatID
 struct AudioFileTypeAndFormatID;
 ```
 
-#### Overview
+## Overview
 
 This structure specifies a desired audio file type and data format ID so you can obtain a list of stream descriptions of available formats.
 

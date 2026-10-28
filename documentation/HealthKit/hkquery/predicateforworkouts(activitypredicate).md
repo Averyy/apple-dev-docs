@@ -28,7 +28,7 @@ class func predicateForWorkouts(activityPredicate: NSPredicate) -> NSPredicate
 
 - [Dividing a HealthKit workout into activities](../dividing-a-healthkit-workout-into-activities.md)
 
-#### Discussion
+## Discussion
 
 The following example creates a predicate that matches workouts with an associated [`HKWorkoutActivityType.running`](../hkworkoutactivitytype/running.md) activity type.
 

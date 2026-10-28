@@ -23,7 +23,7 @@ optional func tabBarController(_ tabBarController: UITabBarController, didSelect
 - (void) tabBarController:(UITabBarController *) tabBarController didSelectTab:(UITab *) selectedTab previousTab:(UITab *) previousTab;
 ```
 
-#### Discussion
+## Discussion
 
 This specified @c selectedTab is either a root tab or any of their descendants.
 

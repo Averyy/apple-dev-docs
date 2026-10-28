@@ -19,11 +19,11 @@ var intrinsicContentSize: NSSize { get }
 @property (readonly) NSSize intrinsicContentSize;
 ```
 
-#### Return Value
+## Return Value
 
 A size indicating the natural size for the receiving view based on its intrinsic properties.
 
-#### Discussion
+## Discussion
 
 The default width and height values of this property are set to [`noIntrinsicMetric`](./nointrinsicmetric.md). For a custom view, you can override this property and use it to communicate what size you would like your view to be based on its content. You might do this in cases where the layout system cannot determine the size of the view based solely on its current constraints. For example, a text field might override this method and return an intrinsic size based on the text it contains. The intrinsic size you supply must be independent of the content frame, because there’s no way to dynamically communicate a changed width to the layout system based on a changed height. If your custom view has no intrinsic size for a given dimension, you can set the corresponding dimension to the [`noIntrinsicMetric`](./nointrinsicmetric.md).
 

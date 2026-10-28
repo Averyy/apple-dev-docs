@@ -19,7 +19,7 @@ init(descriptors queryDescriptors: [NSFontDescriptor])
 + (NSFontCollection *) fontCollectionWithDescriptors:(NSArray<NSFontDescriptor *> *) queryDescriptors;
 ```
 
-#### Return Value
+## Return Value
 
 The font collection matching the given descriptors.
 

@@ -20,7 +20,7 @@ typealias ODNodeType = UInt32
 typedef uint32_t ODNodeType;
 ```
 
-#### Discussion
+## Discussion
 
 See [Node Types](./api-1497602-node-types.md) for recognized node type values.
 

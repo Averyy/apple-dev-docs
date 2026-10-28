@@ -25,11 +25,11 @@ func CGAnimateImageAtURLWithBlock(_ url: CFURL, _ options: CFDictionary?, _ bloc
 extern OSStatus CGAnimateImageAtURLWithBlock(CFURLRef url, CFDictionaryRef options, CGImageSourceAnimationBlock block);
 ```
 
-#### Return Value
+## Return Value
 
 A status code indicating the success or failure of the animation.
 
-#### Discussion
+## Discussion
 
 The function executes the provided `block` for each frame of the animation. By default, the function uses the timing information contained in the image’s metadata. This information includes the number of seconds between individual frames, and the number of times to loop the animation. For example, the function uses the [`kCGImagePropertyGIFDelayTime`](./kcgimagepropertygifdelaytime.md) and [`kCGImagePropertyGIFLoopCount`](./kcgimagepropertygifloopcount.md) tags from a GIF file’s metadata. To override the default timing information, provide the appropriate keys in the `options` dictionary.
 

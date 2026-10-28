@@ -25,7 +25,7 @@ func CTTextTabGetLocation(_ tab: CTTextTab) -> Double
 extern double CTTextTabGetLocation(CTTextTabRef tab);
 ```
 
-#### Return Value
+## Return Value
 
 The tab’s ruler location relative to the back margin.
 

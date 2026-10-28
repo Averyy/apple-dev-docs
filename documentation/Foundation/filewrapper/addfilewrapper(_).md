@@ -25,15 +25,15 @@ func addFileWrapper(_ child: FileWrapper) -> String
 - (NSString *) addFileWrapper:(NSFileWrapper *) child;
 ```
 
-#### Return Value
+## Return Value
 
 Dictionary key used to store `fileWrapper` in the directory’s list of file wrappers. The dictionary key is a unique filename, which is the same as the passed-in file wrapper’s preferred filename unless that name is already in use as a key in the directory’s dictionary of children. See [Accessing File Wrapper Identities](https://developer.apple.com/library/archive/documentation/FileManagement/Conceptual/FileSystemProgrammingGuide/FileWrappers/FileWrappers.html#//apple_ref/doc/uid/TP40010672-CH13-SW1) in [File System Programming Guide](https://developer.apple.com/library/archive/documentation/FileManagement/Conceptual/FileSystemProgrammingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40010672) for more information about the file-wrapper list structure.
 
-#### Discussion
+## Discussion
 
 Use this method to add an existing file wrapper as a child of a directory file wrapper. If the file wrapper does not have a preferred filename, set the [`preferredFilename`](./preferredfilename.md) property to give it one before calling [`addFileWrapper(_:)`](./addfilewrapper%28_%29.md). To create a new file wrapper and add it to a directory, use the [`addRegularFile(withContents:preferredFilename:)`](./addregularfile%28withcontents,preferredfilename%29.md) method.
 
-##### Special Considerations
+### Special Considerations
 
 This method raises `NSInternalInconsistencyException` if the receiver is not a directory file wrapper.
 

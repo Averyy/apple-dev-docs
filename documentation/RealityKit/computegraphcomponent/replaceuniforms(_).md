@@ -19,7 +19,7 @@ Replaces the entire uniform buffer with the given data.
 mutating func replaceUniforms(_ data: Data)
 ```
 
-#### Discussion
+## Discussion
 
 You can query `pipelines.assembly.uniformBufferSize` for the required size. If too few bytes are provided, the remaining bytes retain their previous values.
 

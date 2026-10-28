@@ -17,7 +17,7 @@ The length of the cylinder portion of the capsule.
 var height: Float { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Must be positive.
 

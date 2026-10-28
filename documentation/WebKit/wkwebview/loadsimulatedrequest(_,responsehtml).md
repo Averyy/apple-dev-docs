@@ -23,7 +23,7 @@ func loadSimulatedRequest(_ request: URLRequest, responseHTML string: String) ->
 - (WKNavigation *) loadSimulatedRequest:(NSURLRequest *) request responseHTMLString:(NSString *) string;
 ```
 
-#### Return Value
+## Return Value
 
 A new navigation object you use to track the loading progress of the request.
 

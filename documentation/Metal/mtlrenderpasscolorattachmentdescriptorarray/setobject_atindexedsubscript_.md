@@ -20,7 +20,7 @@ Sets the descriptor for the specified color attachment.
 - (void) setObject:(MTLRenderPassColorAttachmentDescriptor *) attachment atIndexedSubscript:(NSUInteger) attachmentIndex;
 ```
 
-#### Discussion
+## Discussion
 
 This method copies the color attachment information from the descriptor into the specified attachment in the array. Because the method copies the information, you can modify and reuse the descriptor without affecting a previously set attachment.
 

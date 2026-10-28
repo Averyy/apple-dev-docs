@@ -19,7 +19,7 @@ class func getTIFFCompressionTypes(_ list: UnsafeMutablePointer<UnsafePointer<NS
 + (void) getTIFFCompressionTypes:(const NSTIFFCompression **) list count:(NSInteger *) numTypes;
 ```
 
-#### Discussion
+## Discussion
 
 Note that not all compression types can be used for all images: [`NSBitmapImageRep.TIFFCompression.next`](./tiffcompression/next.md) can be used only to retrieve image data. Because future releases may include other compression types, always use this method to get the available compression types—for example, when you implement a user interface for selecting compression types.
 

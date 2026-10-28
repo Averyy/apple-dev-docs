@@ -17,7 +17,7 @@ Deprecated.
 - (id) menuRepresentation;
 ```
 
-#### Return Value
+## Return Value
 
 `nil`.
 

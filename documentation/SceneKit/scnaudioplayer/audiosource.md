@@ -25,7 +25,7 @@ var audioSource: SCNAudioSource? { get }
 @property (nonatomic, readonly, nullable) SCNAudioSource * audioSource;
 ```
 
-#### Discussion
+## Discussion
 
 An [`SCNAudioSource`](../scnaudiosource.md) object represents a distinct source of audio—for example, a sound file—that can be reused and shared by many player objects. Use a player’s audio source to configure the default values for playback parameters such as volume and reverb. To vary those parameters in real time during playback, use the [`audioNode`](./audionode.md) property to work with the underlying [`AVAudioNode`](../../AVFAudio/avaudionode.md) object.
 

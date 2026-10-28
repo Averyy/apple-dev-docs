@@ -23,7 +23,7 @@ protocol PKCanvasViewDelegate : UIScrollViewDelegate
 @protocol PKCanvasViewDelegate <NSObject, UIScrollViewDelegate>
 ```
 
-#### Overview
+## Overview
 
 Implement the methods of the [`PKCanvasViewDelegate`](./pkcanvasviewdelegate.md) protocol to monitor drawing events in a [`PKCanvasView`](./pkcanvasview.md) object. Specifically, determine the start- and end-of-event sequences using the currently selected tool, and determine when those events affect the drawn content.
 

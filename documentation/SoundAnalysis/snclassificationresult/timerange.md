@@ -25,7 +25,7 @@ var timeRange: CMTimeRange { get }
 @property (readonly) CMTimeRange timeRange;
 ```
 
-#### Discussion
+## Discussion
 
 The time range’s [`CMTime`](../../CoreMedia/cmtime.md) values are the number of audio frames at the analyzer’s sample rate. Use these time indices to determine where, in time, the result corresponds to the original audio.
 

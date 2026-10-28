@@ -23,7 +23,7 @@ func MIDIThruConnectionDispose(_ connection: MIDIThruConnectionRef) -> OSStatus
 extern OSStatus MIDIThruConnectionDispose(MIDIThruConnectionRef connection);
 ```
 
-#### Return Value
+## Return Value
 
 An `OSStatus` result code.
 

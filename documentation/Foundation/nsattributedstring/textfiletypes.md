@@ -17,11 +17,11 @@ Returns an array of strings that represent file types that can be loaded as text
 + (NSArray *) textFileTypes;
 ```
 
-#### Return Value
+## Return Value
 
 An array of `NSString` objects, containing file extensions and HFS file types. By default, the list returned by this method includes “`txt`”, “`rtf`”, “`rtfd`”, and “`html`”.
 
-#### Discussion
+## Discussion
 
 This list includes all file types supported by text classes, plus those types that can be converted to supported file types through a user-installed filter service. The array returned by this method may be passed directly to the `runModalForTypes:` method of [`NSOpenPanel`](../../AppKit/nsopenpanel.md).
 

@@ -17,11 +17,11 @@ Return a flattened representation of the structured contents as an array of valu
 func flattenedValues() -> [Element]
 ```
 
-#### Discussion
+## Discussion
 
 Note that unlike [`flattened(prefix:)`](./flattened%28prefix%29.md) this cannot be reconstructed back into the original structure
 
-##### See Also
+### See Also
 
 - [`flattened(prefix:)`](./flattened%28prefix%29.md)
 

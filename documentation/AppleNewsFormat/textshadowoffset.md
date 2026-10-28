@@ -15,11 +15,11 @@ The object for setting an offset value to use with a text shadow.
 object TextShadowOffset
 ```
 
-#### Discussion
+## Discussion
 
 Use the `Offset` object to define an offset. A positive `x` value moves the content to the left, and a negative `x` value moves the content to the right. A positive `y` value moves the content up, and a negative `y` value moves the content down.
 
-##### Example
+### Example
 
 ```json
 {

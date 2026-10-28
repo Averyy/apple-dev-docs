@@ -9,9 +9,9 @@ Fetch metadata for your authenticated purchases by using their identifiers with 
 **Availability**:
 - VPP License Management 2.2+
 
-#### Discussion
+## Discussion
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

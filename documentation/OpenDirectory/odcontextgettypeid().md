@@ -20,7 +20,7 @@ func ODContextGetTypeID() -> CFTypeID
 extern CFTypeID ODContextGetTypeID();
 ```
 
-#### Return Value
+## Return Value
 
 The type ID for the Open Directory context.
 

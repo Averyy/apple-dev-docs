@@ -19,7 +19,7 @@ enum FSSyncFlags
 enum FSSyncFlags : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 These values are based on flags defined in `mount.h`. Since there are system-defined flags that are valid in the kernel but not in FSKit, this type defines its members as options rather than use an enumeration.
 

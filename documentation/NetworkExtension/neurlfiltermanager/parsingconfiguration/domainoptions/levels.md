@@ -18,7 +18,7 @@ The number of domain levels to preserve when parsing.
 var levels: UInt
 ```
 
-#### Discussion
+## Discussion
 
 A value of `2` for the domain `www.sub.example.com` keeps the `example.com`.
 

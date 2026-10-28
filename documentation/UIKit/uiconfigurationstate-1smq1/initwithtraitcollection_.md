@@ -19,7 +19,7 @@ Creates a configuration state with the specified trait collection.
 - (instancetype) initWithTraitCollection:(UITraitCollection *) traitCollection;
 ```
 
-#### Discussion
+## Discussion
 
 Typically, you don’t create a configuration state yourself. To obtain a configuration state, override the [`updateConfiguration(using:)`](../uicollectionviewcell/updateconfiguration%28using%29.md) method in your view subclass and use the state parameter. Outside of this method, you can get a view’s configuration state by using its [`configurationState`](../uicollectionviewcell/configurationstate-4u37h.md) property.
 

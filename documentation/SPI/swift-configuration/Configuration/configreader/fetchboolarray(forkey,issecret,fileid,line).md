@@ -24,11 +24,11 @@ Asynchronously fetches a config value for the given config key.
 func fetchBoolArray(forKey key: ConfigKey, isSecret: Bool = false, fileID: String = #fileID, line: UInt = #line) async throws -> [Bool]?
 ```
 
-#### Return Value
+## Return Value
 
 The value converted to the expected type if found and convertible, otherwise `nil`.
 
-#### Discussion
+## Discussion
 
 Use this method when you need to retrieve configuration values from providers that support asynchronous operations, such as remote configuration services. Unlike synchronous get methods, this can handle providers that need to perform network requests or other async operations.
 

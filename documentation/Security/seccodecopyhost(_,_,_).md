@@ -20,11 +20,11 @@ func SecCodeCopyHost(_ guest: SecCode, _ flags: SecCSFlags, _ host: UnsafeMutabl
 OSStatus SecCodeCopyHost(SecCodeRef guest, SecCSFlags flags, SecCodeRef*host);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Code Signing Services Result Codes](./code-signing-services-result-codes.md).
 
-#### Discussion
+## Discussion
 
 Host code acts as the supervisor and controller of its guest code and is the ultimate authority on the dynamic validity and status of its guests.
 

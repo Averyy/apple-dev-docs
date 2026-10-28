@@ -21,7 +21,7 @@ Logs an error message to the Apple System Log facility.
 extern void NSLog(NSString *format, ...);
 ```
 
-#### Discussion
+## Discussion
 
 Simply calls [`NSLogv(_:_:)`](./nslogv%28_,_%29.md), passing it a variable number of arguments.
 

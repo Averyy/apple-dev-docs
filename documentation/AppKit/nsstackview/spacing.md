@@ -19,7 +19,7 @@ var spacing: CGFloat { get set }
 @property CGFloat spacing;
 ```
 
-#### Discussion
+## Discussion
 
 A stack view uses this property to define the minimum distance between views within a gravity area and between neighboring views in adjacent gravity areas. The default value for the [`spacing`](./spacing.md) property is `8.0` points.
 

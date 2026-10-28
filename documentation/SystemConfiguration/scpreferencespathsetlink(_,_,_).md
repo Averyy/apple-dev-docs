@@ -19,7 +19,7 @@ func SCPreferencesPathSetLink(_ prefs: SCPreferences, _ path: CFString, _ link: 
 Boolean SCPreferencesPathSetLink(SCPreferencesRef prefs, CFStringRef path, CFStringRef link);
 ```
 
-#### Return Value
+## Return Value
 
 `TRUE` if successful; otherwise, `FALSE`.
 

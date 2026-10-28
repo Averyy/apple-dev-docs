@@ -21,7 +21,7 @@ func availableFontNames(matching descriptor: NSFontDescriptor) -> [Any]?
 - (NSArray *) availableFontNamesMatchingFontDescriptor:(NSFontDescriptor *) descriptor;
 ```
 
-#### Return Value
+## Return Value
 
 The names of the matching fonts.
 

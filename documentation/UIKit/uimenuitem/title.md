@@ -24,7 +24,7 @@ var title: String { get set }
 @property (nonatomic, copy) NSString * title;
 ```
 
-#### Discussion
+## Discussion
 
 The title cannot be `nil`.
 

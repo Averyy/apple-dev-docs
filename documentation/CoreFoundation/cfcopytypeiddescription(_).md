@@ -25,11 +25,11 @@ func CFCopyTypeIDDescription(_ type_id: CFTypeID) -> CFString!
 extern CFStringRefCFCopyTypeIDDescription(CFTypeID type_id);
 ```
 
-#### Return Value
+## Return Value
 
 A string containing a type description. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
-#### Discussion
+## Discussion
 
 You can use this function for debugging Core Foundation objects in your code. Note, however, that the description for a given object may be different in different releases of the operating system. Do *not*  create dependencies in your code on the content or format of the information returned by this function.
 

@@ -5,7 +5,7 @@
 
 Annotate test functions and suites, and customize their behavior.
 
-#### Overview
+## Overview
 
 Pass built-in traits to test functions or suite types to comment, categorize, classify, and modify the runtime behavior of test suites and test functions. Implement the [`TestTrait`](./testtrait.md), and [`SuiteTrait`](./suitetrait.md) protocols to create your own types that customize the behavior of your tests.
 

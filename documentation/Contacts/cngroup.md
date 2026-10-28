@@ -24,7 +24,7 @@ class CNGroup
 @interface CNGroup : NSObject
 ```
 
-#### Overview
+## Overview
 
 Contacts may be members of one or more groups, depending upon their accounts.
 

@@ -21,7 +21,7 @@ A grouped collection of related metrics.
 struct Group
 ```
 
-#### Overview
+## Overview
 
 Use `Group` within [`group(_:_:)`](./group%28_,_%29.md) to add metrics to display together.
 

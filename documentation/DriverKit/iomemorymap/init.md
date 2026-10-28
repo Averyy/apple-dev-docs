@@ -18,11 +18,11 @@ Initializes the memory map object.
 virtual bool init();
 ```
 
-#### Return Value
+## Return Value
 
 `true` if initialization was successful, or `false` if it was unsuccessful.
 
-#### Discussion
+## Discussion
 
 Don’t call this method directly. To create a memory map object, call the [`CreateMapping`](../iomemorydescriptor/createmapping.md) method of [`IOMemoryDescriptor`](../iomemorydescriptor.md).
 

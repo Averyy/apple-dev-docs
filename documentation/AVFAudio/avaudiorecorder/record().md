@@ -25,11 +25,11 @@ func record() -> Bool
 - (BOOL) record;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if successful; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Calling this method implicitly calls [`prepareToRecord()`](./preparetorecord%28%29.md), which creates an audio file and prepares the system for recording.
 

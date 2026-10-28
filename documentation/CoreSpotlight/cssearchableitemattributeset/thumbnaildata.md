@@ -23,7 +23,7 @@ var thumbnailData: Data? { get set }
 @property (copy, nullable) NSData * thumbnailData;
 ```
 
-#### Discussion
+## Discussion
 
 This property is optional. For some guidance on creating a thumbnail image, see [Enhance Your Search Results](https://developer.apple.com/library/archive/documentation/General/Conceptual/AppSearch/SearchUserExperience.html#//apple_ref/doc/uid/TP40016308-CH11).
 

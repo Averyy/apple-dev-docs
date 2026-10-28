@@ -25,7 +25,7 @@ static let latinToKatakana: StringTransform
 extern NSStringTransform const NSStringTransformLatinToKatakana;
 ```
 
-#### Discussion
+## Discussion
 
 This transformation is reversible.
 

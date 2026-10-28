@@ -23,7 +23,7 @@ init(fileAt url: URL, size: CGSize, scale: CGFloat, representationTypes: QLThumb
 - (instancetype) initWithFileAtURL:(NSURL *) url size:(CGSize) size scale:(CGFloat) scale representationTypes:(QLThumbnailGenerationRequestRepresentationTypes) representationTypes;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized request object to create a thumbnail for a file.
 

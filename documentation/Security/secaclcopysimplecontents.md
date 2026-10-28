@@ -17,17 +17,17 @@ Returns the application list, description, and CSSM prompt selector for a given 
 OSStatus SecACLCopySimpleContents(SecACLRef acl, CFArrayRef*applicationList, CFStringRef*description, CSSM_ACL_KEYCHAIN_PROMPT_SELECTOR *promptSelector);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  This function is deprecated. Use [`SecACLCopyContents(_:_:_:_:)`](./secaclcopycontents%28_,_,_,_%29.md) instead.
 
 An access control list entry applies to a specific use or set of uses for a specific keychain item. The ACL object includes a list of trusted applications (see [`SecTrustedApplicationCreateFromPath(_:_:)`](./sectrustedapplicationcreatefrompath%28_,_%29.md)), the name of the keychain item as it appears in user prompts, the prompt selector flag, and a list of one or more operations to which this ACL object applies. Use the [`SecACLGetAuthorizations`](./secaclgetauthorizations.md) function to get the list of operations for an ACL object.
 
-##### Special Considerations
+### Special Considerations
 
 This function is deprecated in macOS 10.7 and later; use [`SecACLCopyContents(_:_:_:_:)`](./secaclcopycontents%28_,_,_,_%29.md) instead.
 

@@ -21,7 +21,7 @@ func split(_ array: MLXArray, parts: Int, axis: Int = 0, stream: StreamOrDevice 
 
 - [Converting From Python](./converting-python.md)
 
-#### Discussion
+## Discussion
 
 Splits the array into equal size pieces along a given axis and returns an array of `MLXArray`:
 
@@ -37,7 +37,7 @@ print(halves)
         [9, 10, 11]], dtype=int64)]
 ```
 
-##### See Also
+### See Also
 
 - [Shapes](./shapes.md)
 - [`split(_:parts:axis:stream:)`](./split%28_,parts,axis,stream%29.md)

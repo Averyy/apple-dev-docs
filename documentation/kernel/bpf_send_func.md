@@ -13,7 +13,7 @@
 typedef errno_t (*bpf_send_func)(ifnet_t interface, u_int32_t data_link_type, mbuf_t packet);
 ```
 
-#### Discussion
+## Discussion
 
 bpf_send_func is called when a bpf file descriptor is used to send a raw packet on the interface. The mbuf and data link type are specified. The callback is responsible for releasing the mbuf whether or not it returns an error.
 

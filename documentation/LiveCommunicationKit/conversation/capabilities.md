@@ -19,7 +19,7 @@ A type that describes capabilities of a conversation.
 struct Capabilities
 ```
 
-#### Overview
+## Overview
 
 Configure conversation capabilites as part of a [`Conversation.Update`](./update.md).
 

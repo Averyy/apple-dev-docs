@@ -15,7 +15,7 @@ The type of the descriptor.
 uint8_t bDescriptorType;
 ```
 
-#### Discussion
+## Discussion
 
 The value in this field is always [`kIOUSBDescriptorTypeConfiguration`](../tiousbdescriptortype/kiousbdescriptortypeconfiguration.md).
 

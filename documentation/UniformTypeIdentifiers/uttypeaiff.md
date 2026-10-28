@@ -21,7 +21,7 @@ A type that represents data in AIFF audio format.
 extern UTType * const UTTypeAIFF;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.aiff-audio`.
 

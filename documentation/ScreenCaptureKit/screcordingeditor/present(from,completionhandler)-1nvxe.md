@@ -21,7 +21,7 @@ func present(from window: NSWindow) async throws
 - (void) presentFromWindow:(NSWindow *) window completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Present the recording editor from the specified window.
 

@@ -19,7 +19,7 @@ An action that plays sequence of tones to indicate that a participant of a conve
 final class PlayToneAction
 ```
 
-#### Overview
+## Overview
 
 The action can apply to local and remote members in a conversation.
 

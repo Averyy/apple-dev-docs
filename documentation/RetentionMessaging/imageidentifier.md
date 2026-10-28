@@ -15,7 +15,7 @@ A unique identifier for an image that you provide when you upload the image.
 uuid imageIdentifier
 ```
 
-#### Discussion
+## Discussion
 
 You create a UUID to identify an image when you call [`Upload Image`](./upload-image.md). Use this identifier to refer to the same image throughout the API.
 

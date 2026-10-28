@@ -23,7 +23,7 @@ struct MLTextClassifier
 
 - [Creating a text classifier model](./creating-a-text-classifier-model.md)
 
-#### Overview
+## Overview
 
 Use a text classifier to train a machine learning model you can include in your app to classify natural language text. The model learns to associate labels with features of the input text, which can be sentences, paragraphs, or even entire documents.
 

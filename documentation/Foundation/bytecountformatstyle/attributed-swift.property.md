@@ -21,7 +21,7 @@ An attributed format style based on the byte count format style.
 var attributed: ByteCountFormatStyle.Attributed
 ```
 
-#### Discussion
+## Discussion
 
 Use this modifier to create a [`ByteCountFormatStyle.Attributed`](./attributed-swift.struct.md) instance, which formats values as [`AttributedString`](../attributedstring.md) instances. These attributed strings contain attributes from the [`AttributeScopes.FoundationAttributes.NumberFormatAttributes`](../attributescopes/foundationattributes/numberformatattributes.md) attribute scope. Use these attributes to determine which runs of the attributed string represent different parts of the formatted value.
 

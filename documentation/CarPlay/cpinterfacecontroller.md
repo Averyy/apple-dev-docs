@@ -22,7 +22,7 @@ class CPInterfaceController
 @interface CPInterfaceController : NSObject
 ```
 
-#### Overview
+## Overview
 
 An interface controller manages one or more templates in the navigation hierarchy. You don’t create the interface controller. Instead, CarPlay creates one for you and passes it to the delegate of [`CPTemplateApplicationScene`](./cptemplateapplicationscene.md) when the scene connects.
 

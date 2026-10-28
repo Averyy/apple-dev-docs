@@ -18,7 +18,7 @@ Unloads the adapter from the specified model.
 func unload(from model: LanguageModel)
 ```
 
-#### Discussion
+## Discussion
 
 Prefer [`unload(adapter:)`](../languagemodel/unload%28adapter%29.md) when invoking an adapter so the model can rebuild derived inference state after the topology change.
 

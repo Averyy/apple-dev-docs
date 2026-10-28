@@ -24,7 +24,7 @@ var lifetimeRange: Float { get set }
 @property float lifetimeRange;
 ```
 
-#### Discussion
+## Discussion
 
 If the [`lifetimeRange`](./lifetimerange.md) is 3 seconds, and the [`lifetime`](./lifetime.md) of the cell is 10 seconds, the cell’s actual lifetime will be between 7 and 13 seconds.
 

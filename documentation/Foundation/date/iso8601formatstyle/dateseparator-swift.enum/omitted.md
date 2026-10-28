@@ -21,7 +21,7 @@ Specifies no separator between the year, month, and day components in an ISO 860
 case omitted
 ```
 
-#### Discussion
+## Discussion
 
 The rawValue of `omitted` is “\n”.
 

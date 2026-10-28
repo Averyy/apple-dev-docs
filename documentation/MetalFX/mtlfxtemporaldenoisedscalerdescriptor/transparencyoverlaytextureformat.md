@@ -23,7 +23,7 @@ var transparencyOverlayTextureFormat: MTLPixelFormat { get set }
 @property (nonatomic, readwrite) MTLPixelFormat transparencyOverlayTextureFormat;
 ```
 
-#### Discussion
+## Discussion
 
 You typically set this to a 4-channel RGBA texture format.
 

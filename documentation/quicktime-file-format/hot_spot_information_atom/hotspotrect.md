@@ -6,7 +6,7 @@
 
 The boundary box for this hot spot, specified as the number of pixels in full panoramic space.
 
-#### Overview
+## Overview
 
 This field is valid only for panoramic nodes.
 

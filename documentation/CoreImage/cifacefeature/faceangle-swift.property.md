@@ -24,7 +24,7 @@ var faceAngle: Float { get }
 @property (assign, readonly) float faceAngle;
 ```
 
-#### Discussion
+## Discussion
 
 Rotation is measured counterclockwise in degrees, with zero indicating that a line drawn between the eyes is horizontal relative to the image orientation.
 

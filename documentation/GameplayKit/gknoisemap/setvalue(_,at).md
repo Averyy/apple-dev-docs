@@ -24,7 +24,7 @@ func setValue(_ value: Float, at position: vector_int2)
 - (void) setValue:(float) value atPosition:(vector_int2) position;
 ```
 
-#### Discussion
+## Discussion
 
 ## Parameters
 

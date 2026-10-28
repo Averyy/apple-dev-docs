@@ -19,7 +19,7 @@ Default implementation of [`log(event:)`](./log%28event%29-17f2r.md) for backwar
 func log(event: LogEvent)
 ```
 
-#### Discussion
+## Discussion
 
 Handlers that implement [`log(level:message:metadata:source:file:function:line:)`](./log%28level,message,metadata,source,file,function,line%29.md) continue to work without any source changes; this default forwards the event’s fields to that method.
 

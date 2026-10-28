@@ -19,7 +19,7 @@ func label(at index: Int) -> String!
 - (NSString *) labelAtIndex:(NSUInteger) index;
 ```
 
-#### Discussion
+## Discussion
 
 If the `index` argument is out of bounds, this method raises an exception.
 

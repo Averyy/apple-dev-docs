@@ -16,7 +16,7 @@ A dictionary containing information about launch images.
 - **Name**: `UILaunchImages`
 - **Type**: array of dictionary 
 
-#### Discussion
+## Discussion
 
 `UILaunchImages` has been deprecated; use Xcode launch storyboards instead. For more information on how to construct and format your launch storyboard, see [Launch Screen](https://developer.apple.com/design/human-interface-guidelines/ios/icons-and-images/launch-screen/).
 

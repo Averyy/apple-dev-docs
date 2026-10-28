@@ -21,7 +21,7 @@ Returns a copy of the effect requesting an animation that moves back and forth a
 func custom(angle: Double) -> WiggleSymbolEffect
 ```
 
-#### Discussion
+## Discussion
 
 The angle is in degrees moving clockwise from the positive x-axis.
 

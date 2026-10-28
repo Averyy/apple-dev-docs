@@ -13,7 +13,7 @@ Compose and play haptic patterns to customize your iOS app’s haptic feedback.
 - tvOS 14.0+
 - visionOS 1.0+
 
-#### Overview
+## Overview
 
 Core Haptics lets you add customized haptic and audio feedback to your app. Use haptics to engage users physically, with tactile and audio feedback that gets attention and reinforces actions. Some system-provided interface elements—like pickers, switches, and sliders—automatically provide haptic feedback as users interact with them. With Core Haptics, you extend this functionality by composing and combining haptics beyond the default patterns.
 

@@ -20,7 +20,7 @@ Continuously anchors the entity to its target based on the target’s realtime l
 static let continuous: AnchoringComponent.TrackingMode
 ```
 
-#### Discussion
+## Discussion
 
 `continuous` means the `Entity` will track the target anchor continuously.
 

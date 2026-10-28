@@ -17,7 +17,7 @@ The unauthenticated information provided by the device before a person pairs it 
 let pairingInfo: WAPairedDevice.PairingInfo?
 ```
 
-#### Discussion
+## Discussion
 
 The value is `nil` if the information is unavailable. The values provide a capture of what the system receives prior to the first pairing the device, and don’t reflect any information received post-pairing. If your app needs more up-to-date info, query the device via the secure Wi-Fi Aware data path.
 

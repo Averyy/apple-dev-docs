@@ -23,7 +23,7 @@ var scalingMode: MPMovieScalingMode { get set }
 @property (nonatomic) MPMovieScalingMode scalingMode;
 ```
 
-#### Discussion
+## Discussion
 
 Changing this property while the movie player is visible causes the current movie to animate to the new scaling mode.
 

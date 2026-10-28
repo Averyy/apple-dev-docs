@@ -15,11 +15,11 @@ Creates a standard pull-down button with a title and menu.
 + (instancetype) pullDownButtonWithTitle:(NSString *) title menu:(NSMenu *) menu;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized pull-down button object.
 
-#### Discussion
+## Discussion
 
 Pull-down buttons created using this method have the `usesItemFromMenu` property set to `NO`.
 

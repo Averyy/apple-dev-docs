@@ -19,7 +19,7 @@ class let willSendActionNotification: NSNotification.Name
 extern NSNotificationName NSMenuWillSendActionNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is the instance of `NSMenu` containing the chosen menu item. The `userInfo` dictionary contains the following information.
 

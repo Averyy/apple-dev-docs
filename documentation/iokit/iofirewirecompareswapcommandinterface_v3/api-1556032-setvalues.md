@@ -16,7 +16,7 @@ Set values for 32-bit compare swap operation. Calling this function will make th
 void (*SetValues)(IOFireWireLibCompareSwapCommandV3Ref self, UInt32 cmpVal, UInt32 newVal);
 ```
 
-#### Discussion
+## Discussion
 
 Available in v2 and newer.
 

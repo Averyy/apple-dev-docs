@@ -25,7 +25,7 @@ func setRate(_ rate: Float, time: CMTime)
 - (void) setRate:(float) rate time:(CMTime) time;
 ```
 
-#### Discussion
+## Discussion
 
 This method first sets the new time and then the new rendering rate. A `rate` value of `0.0` means that playback has stopped while a `rate` value of `1.0` indicates playback should be at the natural rate of the media.
 

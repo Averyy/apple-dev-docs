@@ -22,7 +22,7 @@ Provides read-write access of the shaped array’s underlying memory to a closur
 mutating func withUnsafeMutableShapedBufferPointer<R>(_ body: (inout UnsafeMutableBufferPointer<Self.Scalar>, [Int], [Int]) throws -> R) rethrows -> R
 ```
 
-#### Discussion
+## Discussion
 
 The method returns the value your closure returns, if applicable.
 

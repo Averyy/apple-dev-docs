@@ -25,11 +25,11 @@ class func dragField() -> SKFieldNode
 + (SKFieldNode *) dragField;
 ```
 
-#### Return Value
+## Return Value
 
 A new drag field node.
 
-#### Discussion
+## Discussion
 
 The force is applied in the opposite direction of the physics body’s [`velocity`](../skphysicsbody/velocity.md) property and has a magnitude proportional to the field’s [`strength`](./strength.md) property and the physics body’s speed.  This field models Stoke’s Law.
 

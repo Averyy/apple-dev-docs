@@ -5,7 +5,7 @@
 
 Provide a banner that users can tap to make a purchase or perform a custom action in an AR experience.
 
-#### Overview
+## Overview
 
 For AR experiences initiated through the web in iOS 13.3 or later, you can display an Apple Pay button so users can make purchases from your website.
 
@@ -21,7 +21,7 @@ In addition, you can supply AR Quick Look with custom HTML that completely custo
 
 To add an Apple Pay button or custom text or graphics in a banner, choose URL parameters to configure AR Quick Look for your website. Finally, detect and react to customer taps to the banner.
 
-##### Choose an Apple Pay Button Style
+### Choose an Apple Pay Button Style
 
 To select a style of Apple Pay button for your AR experience, append the `applePayButtonType` parameter to your website URL.
 
@@ -33,7 +33,7 @@ You can choose from the button options using the button type values shown here.
 
 ![Figure showing each of the seven Apple Pay button options, annotated by the button type value parameter associated with the button style.](https://developer.apple.com/tutorials/images/com.apple.arkit/media-3421819@2x.png)
 
-##### Provide Custom Text
+### Provide Custom Text
 
 Instead of an Apple Pay button, you can supply text that AR Quick Look displays as a custom action button, as in the following image.
 
@@ -47,7 +47,7 @@ https://example.com/biplane.usdz#callToAction=Add%20to%20cart
 
 Because URLs can’t contain spaces, be sure to URL-encode the custom text before appending it as a URL parameter. If your website supports multiple languages, localize the custom text before URL-encoding it for the URL parameter list.
 
-##### Define the Item
+### Define the Item
 
 When you add an Apple Pay button or a custom action button to AR Quick Look, set the description of the previewed items using the `checkoutTitle`, `checkoutSubtitle`, and `price` URL parameters. AR Quick Look displays the subtitle and price separated by a comma below the title.
 
@@ -61,7 +61,7 @@ https://example.com/biplane.usdz#applePayButtonType=buy&checkoutTitle=Biplane%20
 
 If your website supports multiple languages, localize the item title, subtitle, and price before URL-encoding them for the URL parameter list.
 
-##### Display a Custom Banner
+### Display a Custom Banner
 
 To take full control of the banner’s graphics, supply a custom HTML file through the `custom` URL parameter. The following example URL renders a banner from a custom file named `comingSoonBanner`.
 
@@ -78,7 +78,7 @@ If you use the `custom` URL parameter, the value must be an absolute URL. To com
 
 > ❗ **Important**:  AR Quick Look displays the contents of the HTML only. If you embed actions such as links or events, AR Quick Look ignores them.
 
-##### Define the Custom Banner’s Height
+### Define the Custom Banner’s Height
 
 When you display a custom banner, you can set the banner height using the `customHeight` URL parameter.
 
@@ -90,7 +90,7 @@ https://example.com/biplane.usdz#custom=https://example.com/my-custom-page.html&
 
 AR Quick Look automatically scales the width of the banner to the size and orientation of the device on which it displays. The maximum width of the custom banner is 450 points. If you omit the `customHeight` URL parameter, AR Quick Look uses the default value, `small`.
 
-##### Detect a Tap
+### Detect a Tap
 
 When the user taps the Apple Pay button or custom action button, WebKit sends a DOM message to the `<a>` element of your code that references the 3D asset.
 
@@ -118,7 +118,7 @@ linkElement.addEventListener("message", function (event) {
 
 The `message` event follows normal DOM processing rules. Rather than adding a listener for a specific anchor, you can add a listener at the document root for all AR links, and use the `event.target` to determine which anchor the user invoked.
 
-##### React to a Tap
+### React to a Tap
 
 Define the actions your website takes in response to a user tap in your event listener. When the user taps the custom action button, you might add the previewed item to a shopping cart or take the user to a checkout page, depending on the banner’s text and custom action.
 

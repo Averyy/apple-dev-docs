@@ -5,11 +5,11 @@
 
 Read the media rating on a device and determine what media to display on your app.
 
-#### Overview
+## Overview
 
 The parental control app sets the media rating that establishes the parameters of the content the user can view. Your app reads the rating to determine what media to display, so you don’t need to incorporate monitoring with [Device Activity](../DeviceActivity/DeviceActivity.md) or authorize your app through [Family Controls](../FamilyControls/FamilyControls.md).
 
-##### Read the media setting
+### Read the media setting
 
 To access the media setting, first create a [`ManagedSettingsStore`](./managedsettingsstore.md) object.
 
@@ -51,7 +51,7 @@ case 300:
 
 > **Note**: Both [`effectiveMaximumMovieRating`](./managedsettingsstore/effectivemaximummovierating.md) and [`effectiveMaximumTVShowRating`](./managedsettingsstore/effectivemaximumtvshowrating.md) are `@Published` and can change at any time. Keep track of the changes to these properties in your media app.
 
-##### Monitor the effective rating
+### Monitor the effective rating
 
 The parental controls app can change the effective rating at any time. To reflect the changes, make sure to incorporate them into your media app. Use publishers to subscribe to updates on changes to a rating. Managed Settings uses [`effectiveMaximumMovieRating`](./managedsettingsstore/effectivemaximummovierating.md) and [`$effectiveMaximumTVShowRating`](./managedsettingsstore/dollareffectivemaximumtvshowrating.md) to publish to media changes.
 

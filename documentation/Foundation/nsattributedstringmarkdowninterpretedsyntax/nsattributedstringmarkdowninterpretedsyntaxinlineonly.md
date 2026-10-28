@@ -21,7 +21,7 @@ A syntax value that parses all Markdown text, but interprets only attributes tha
 NSAttributedStringMarkdownInterpretedSyntaxInlineOnly
 ```
 
-#### Discussion
+## Discussion
 
 With this syntax, the parser doesn’t apply attributes that differentiate blocks, like [`presentationIntentAttributeName`](../nsattributedstring/key/presentationintentattributename.md). However, extended attributes apply to inline spans, so the parser includes them, if the [`allowsExtendedAttributes`](../nsattributedstringmarkdownparsingoptions/allowsextendedattributes.md) property allows them.
 

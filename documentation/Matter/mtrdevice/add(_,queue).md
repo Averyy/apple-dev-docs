@@ -25,7 +25,7 @@ func add(_ delegate: any MTRDeviceDelegate, queue: dispatch_queue_t)
 - (void) addDelegate:(id<MTRDeviceDelegate>) delegate queue:(dispatch_queue_t) queue;
 ```
 
-#### Discussion
+## Discussion
 
 The delegate will be called on the provided queue, for attribute reports, event reports, and device state changes.
 

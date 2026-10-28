@@ -25,7 +25,7 @@ class func expressionForAnyKey() -> NSExpression
 + (NSExpression *) expressionForAnyKey;
 ```
 
-#### Return Value
+## Return Value
 
 A new expression that represents any key for a Spotlight query.
 

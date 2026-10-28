@@ -21,7 +21,7 @@ A guide that marks the top and trailing edges of the view.
 static let topTrailing: Alignment
 ```
 
-#### Discussion
+## Discussion
 
 This alignment combines the [`trailing`](../horizontalalignment/trailing.md) horizontal guide and the [`top`](../verticalalignment/top.md) vertical guide:
 

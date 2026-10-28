@@ -19,7 +19,7 @@ class NSPreviewRepresentingActivityItem
 @interface NSPreviewRepresentingActivityItem : NSObject
 ```
 
-#### Overview
+## Overview
 
 An [`NSPreviewRepresentingActivityItem`](./nspreviewrepresentingactivityitem.md) object provides a concrete implementation of the [`NSPreviewRepresentableActivityItem`](./nspreviewrepresentableactivityitem.md) protocol. Use it to create shareable items for common types such as strings or images, or when you don’t want to adopt the [`NSPreviewRepresentableActivityItem`](./nspreviewrepresentableactivityitem.md) protocol directly in your app’s objects. To share the item from your app, initialize the [`NSSharingServicePicker`](./nssharingservicepicker.md) object with this object.
 

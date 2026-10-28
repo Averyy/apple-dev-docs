@@ -28,13 +28,13 @@ class INAddMediaIntent
 
 - [Improving Siri Media Interactions and App Selection](../SiriKit/improving-siri-media-interactions-and-app-selection.md)
 
-#### Overview
+## Overview
 
 Siri creates an [`INAddMediaIntent`](./inaddmediaintent.md) object when the user asks to add a media item. The intents object contains the media to add.
 
 To handle this intent, the handler object in your Intents extension must adopt the [`INAddMediaIntentHandling`](./inaddmediaintenthandling.md) protocol. Your handler should confirm the request and create an [`INAddMediaIntentResponse`](./inaddmediaintentresponse.md) object that contains the media to add.
 
-##### Additional Intent Attributes
+### Additional Intent Attributes
 
 The following table lists additional attributes of this intent object:
 

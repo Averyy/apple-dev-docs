@@ -24,7 +24,7 @@ class CNChangeHistoryDropEverythingEvent
 @interface CNChangeHistoryDropEverythingEvent : CNChangeHistoryEvent
 ```
 
-#### Overview
+## Overview
 
 The system sends this event to your delegate when the system determines that enough has changed since the last time your app fetched the history changes that an incremental update is no longer possible. Following the drop-everything event, your app receives an add event for each contact and group currently in the database. This allows you to implement full syncs and incremental syncs using the same code.
 

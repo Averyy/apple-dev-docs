@@ -19,7 +19,7 @@ class NSSecureTextFieldCell
 @interface NSSecureTextFieldCell : NSTextFieldCell
 ```
 
-#### Overview
+## Overview
 
 [`NSSecureTextFieldCell`](./nssecuretextfieldcell.md) works with [`NSSecureTextField`](./nssecuretextfield.md) and overrides the general cell use of the field editor to provide its own field editor, which doesn’t display text or allow the user to cut or copy its value.
 

@@ -19,7 +19,7 @@ class CLKComplicationIntentWidgetMigrationConfiguration
 @interface CLKComplicationIntentWidgetMigrationConfiguration : CLKComplicationWidgetMigrationConfiguration
 ```
 
-#### Overview
+## Overview
 
 These configuration objects use an [`INIntent`](../Intents/inintent.md) object to provide dynamic configuration information. Use intent-based complications when your app customizes the list of complications available in the complication picker based on the state of your app. For example, if you provide temperature complications for the top cities in the user’s favorites list, use an [`INIntent`](../Intents/inintent.md) object to describe each city.
 

@@ -19,7 +19,7 @@ enum PHLivePhotoEditingErrorCode
 enum PHLivePhotoEditingErrorCode : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 These error codes appear for errors in the completion handlers of the [`init(livePhotoEditingInput:)`](./phlivephotoeditingcontext/init%28livephotoeditinginput%29.md) and [`saveLivePhoto(to:options:completionHandler:)`](./phlivephotoeditingcontext/savelivephoto%28to,options,completionhandler%29.md) methods.
 

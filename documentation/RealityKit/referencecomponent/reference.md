@@ -20,7 +20,7 @@ The root entity of the referenced entity file.
 var reference: Entity? { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property returns `nil` when the referenced entity isn’t loaded.
 

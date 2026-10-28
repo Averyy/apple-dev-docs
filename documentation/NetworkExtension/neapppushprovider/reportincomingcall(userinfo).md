@@ -22,7 +22,7 @@ func reportIncomingCall(userInfo: [AnyHashable : Any] = [:])
 - (void) reportIncomingCallWithUserInfo:(NSDictionary *) userInfo;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method when your provider determines it’s receiving an incoming call on the connection. The manager’s delegate receives this dictionary as-is.
 

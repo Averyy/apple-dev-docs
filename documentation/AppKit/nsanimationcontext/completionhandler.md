@@ -19,7 +19,7 @@ var completionHandler: (() -> Void)? { get set }
 @property (copy, nullable) void (^)(void) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 If set to a non-`nil` value, a context’s `completionHandler` is guaranteed to be called on the main thread as soon as all animations subsequently added to the current `NSAnimationContext` grouping have completed or been cancelled.
 

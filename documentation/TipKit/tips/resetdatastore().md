@@ -21,7 +21,7 @@ Resets the tips’ datastore to the initial state for re-testing tip display rul
 static func resetDatastore() throws
 ```
 
-#### Overview
+## Overview
 
 Must be called before [`configure(_:)`](./configure%28_%29.md).
 

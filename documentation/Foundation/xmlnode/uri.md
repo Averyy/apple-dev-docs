@@ -20,7 +20,7 @@ var uri: String? { get set }
 @property (copy, nullable) NSString * URI;
 ```
 
-#### Discussion
+## Discussion
 
 A node’s URI is derived from its namespace or a document’s URI; for documents, the URI comes either from the parsed XML or is explicitly set. You cannot change the URI for a particular node other for than a namespace or document node.
 

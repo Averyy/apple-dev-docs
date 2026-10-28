@@ -16,11 +16,11 @@ Retains a Core Graphics display mode.
 extern CGDisplayModeRefCGDisplayModeRetain(CGDisplayModeRef mode);
 ```
 
-#### Return Value
+## Return Value
 
 The input value `mode`.
 
-#### Discussion
+## Discussion
 
 This function is equivalent to [`CFRetain`](../CoreFoundation/cfretain.md), except that it does not cause an error if the `mode` parameter is `NULL`.
 

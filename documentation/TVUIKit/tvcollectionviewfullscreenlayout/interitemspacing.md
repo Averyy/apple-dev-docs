@@ -19,7 +19,7 @@ var interitemSpacing: CGFloat { get set }
 @property (nonatomic, assign) CGFloat interitemSpacing;
 ```
 
-#### Discussion
+## Discussion
 
 Use the `interitemSpacing` property to set a fixed space between each cell in the collection view.
 

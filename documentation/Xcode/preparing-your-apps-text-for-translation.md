@@ -5,13 +5,13 @@
 
 Use localizable APIs to populate string catalogs automatically with your app’s user-facing text.
 
-#### Overview
+## Overview
 
 Wrap all user-facing text in localizable APIs that look up translations for strings based on the Language & Region settings on the device. Xcode also finds strings in localizable APIs and adds them to string catalog files for you at build time. Optionally, pass comments to localizable APIs to give localizers additional context. You can also pass table names to organize strings into separate string catalogs.
 
 For more information on string catalogs, see [Localizing and varying text with a string catalog](./localizing-and-varying-text-with-a-string-catalog.md).
 
-##### Localize text in your view hierarchy
+### Localize text in your view hierarchy
 
 When you use SwiftUI, all string literals of type [`LocalizedStringKey`](../SwiftUI/localizedstringkey.md) within a view are automatically localizable.
 
@@ -28,7 +28,7 @@ HStack {
 }
 ```
 
-##### Create localizable strings
+### Create localizable strings
 
 Use the [`init(localized:)`](../Swift/string/init%28localized%29.md) initializer when creating [`String`](../Swift/string.md) and [`AttributedString`](../Foundation/attributedstring.md) objects that contain text you want to localize.
 
@@ -48,7 +48,7 @@ String(localized: "LIGHTING_KEY", defaultValue: "Lightbulbs")
 
 For additional initializer options, see [`String`](../Swift/string.md). For apps targeting older platforms, use the [`NSLocalizedString`](../Foundation/nslocalizedstring.md) instead.
 
-##### Add comments to your localizable strings
+### Add comments to your localizable strings
 
 Add comments to give context and assist localizers when translating your text.
 
@@ -76,7 +76,7 @@ String(localized: "North America", comment: "The name of a continent.")
 
 Alternatively, let Xcode generate comments for you from the context of your code. For more information, see [Generate comments automatically](./localizing-and-varying-text-with-a-string-catalog.md#Generate-comments-automatically).
 
-##### Organize localizable strings into tables
+### Organize localizable strings into tables
 
 If the number of translations in your string catalog grows too large, consider using multiple string catalogs in one project. Then, when you build your app, Xcode adds the localizable strings to the catalog that you specify with a name.
 
@@ -92,7 +92,7 @@ String(localized: "Gorgeous mountain peaks!", table: "LandmarkCollectionData")
 
 Use `String(localized:)` and `AttributedString(localized:)` initializers to initialize UIKit and AppKit controls as well.
 
-##### Pass localizable strings with a localizable type
+### Pass localizable strings with a localizable type
 
 When defining or passing localizable text in your views, use the recommended type for passing strings in Swift [`LocalizedStringResource`](../Foundation/localizedstringresource.md).
 
@@ -134,7 +134,7 @@ let action = UserAction(title: "Order items")
 let actionWithComment = UserAction(title: LocalizedStringResource("Order items", comment: "Action title displayed in button"))
 ```
 
-##### Load localizable strings that reside outside of the main bundle
+### Load localizable strings that reside outside of the main bundle
 
 When localizable strings reside in another module, framework, or Swift Package, pass the [`bundle()`](../Foundation/bundle%28%29.md) macro as the `bundle` parameter in localizable APIs to tell the system to look up the translation in the bundle associated with that target.
 

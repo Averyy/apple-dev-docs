@@ -23,7 +23,7 @@ static var substringNotRequired: NSString.EnumerationOptions { get }
 NSStringEnumerationSubstringNotRequired
 ```
 
-#### Discussion
+## Discussion
 
 A way to indicate that the block does not need substring, in which case `nil` will be passed. This is simply a performance shortcut.
 

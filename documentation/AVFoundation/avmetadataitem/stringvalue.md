@@ -27,7 +27,7 @@ var stringValue: String? { get }
 @property (nonatomic, readonly, nullable) NSString * stringValue;
 ```
 
-#### Discussion
+## Discussion
 
 This value is `nil` if the system can’t represent the value as a string.
 

@@ -15,7 +15,7 @@ Creates a new instance initialized to the given value.
 init(_ other: Float80)
 ```
 
-#### Discussion
+## Discussion
 
 The value of `other` is represented exactly by the new instance. A NaN passed as `other` results in another NaN, with a signaling NaN value converted to quiet NaN.
 

@@ -29,7 +29,7 @@ class func requestAssets(for language: NLLanguage, tagScheme: NLTagScheme) async
 + (void) requestAssetsForLanguage:(NLLanguage) language tagScheme:(NLTagScheme) tagScheme completionHandler:(void (^)(NLTaggerAssetsResult result, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration:
 >

@@ -25,7 +25,7 @@ static var useOpticalBounds: CTLineBoundsOptions { get }
 kCTLineBoundsUseOpticalBounds
 ```
 
-#### Discussion
+## Discussion
 
 This option overrides [`useGlyphPathBounds`](./useglyphpathbounds.md).
 

@@ -19,7 +19,7 @@ The current configuration of the view.
 @property (nonatomic, copy) UIListContentConfiguration * configuration;
 ```
 
-#### Discussion
+## Discussion
 
 Setting this property applies the new configuration to the view.
 

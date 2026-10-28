@@ -19,7 +19,7 @@ func dismiss(_ viewController: NSViewController)
 - (void) dismissViewController:(NSViewController *) viewController;
 ```
 
-#### Discussion
+## Discussion
 
 In macOS, this is the universal way to dismiss a view controller, no matter how it was presented.
 

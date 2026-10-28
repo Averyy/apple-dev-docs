@@ -25,11 +25,11 @@ func size(withAttributes attrs: [NSAttributedString.Key : Any]? = nil) -> CGSize
 - (CGSize) sizeWithAttributes:(NSDictionary<NSString *,id> *) attrs;
 ```
 
-#### Return Value
+## Return Value
 
 The bounding box size the receiver occupies when drawn with the specified attributes.
 
-#### Discussion
+## Discussion
 
 This method returns fractional sizes; to use a returned size to size views, you must raise its value to the nearest higher integer using the [`ceil`](../../kernel/api-1557272-ceil.md) function.
 

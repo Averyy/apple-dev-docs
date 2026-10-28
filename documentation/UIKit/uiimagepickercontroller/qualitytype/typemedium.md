@@ -21,7 +21,7 @@ case typeMedium
 UIImagePickerControllerQualityTypeMedium
 ```
 
-#### Discussion
+## Discussion
 
 Recorded files can usually be transferred using Wi-Fi. This is the default video quality setting.
 

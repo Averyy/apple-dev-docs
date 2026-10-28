@@ -19,7 +19,7 @@ func strikethroughGlyphRange(_ glyphRange: NSRange, strikethroughType strikethro
 - (void) strikethroughGlyphRange:(NSRange) glyphRange strikethroughType:(NSUnderlineStyle) strikethroughVal lineFragmentRect:(NSRect) lineRect lineFragmentGlyphRange:(NSRange) lineGlyphRange containerOrigin:(NSPoint) containerOrigin;
 ```
 
-#### Discussion
+## Discussion
 
 This method determines which glyphs actually need to have a strikethrough drawn based on `strikethroughVal`. After determining which glyphs to draw strikethrough on, this method invokes [`drawStrikethrough(forGlyphRange:strikethroughType:baselineOffset:lineFragmentRect:lineFragmentGlyphRange:containerOrigin:)`](./drawstrikethrough%28forglyphrange,strikethroughtype,baselineoffset,linefragmentrect,linefragmentglyphrange,containerorigin%29.md) for each contiguous range of glyphs that requires it.
 

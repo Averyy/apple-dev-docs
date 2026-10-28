@@ -21,7 +21,7 @@ Writes the document content to disk.
 func write(snapshot: sending Self.Snapshot, to destination: sending Self.Destination, previous: sending Self.Snapshot?, progress: consuming Subprogress) async throws
 ```
 
-#### Discussion
+## Discussion
 
 SwiftUI calls this method in the background after obtaining a snapshot via [`snapshot(contentType:)`](../writabledocument/snapshot%28contenttype%29.md). Perform all serialization and disk access here.
 

@@ -15,7 +15,7 @@ The placement for the containing window’s toolbar, sometimes referred to as th
 static var windowToolbar: ToolbarPlacement { get }
 ```
 
-#### Discussion
+## Discussion
 
 When hidden using [`toolbarVisibility(_:for:)`](../view/toolbarvisibility%28_,for%29.md), this hides the entire window toolbar, including the title and “traffic light” window controls. To remove the custom toolbar item content only, use [`automatic`](./automatic.md).
 

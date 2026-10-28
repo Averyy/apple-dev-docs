@@ -23,7 +23,7 @@ var displayedPerson: ABRecord { get set }
 @property (nonatomic, readwrite) ABRecordRef displayedPerson;
 ```
 
-#### Discussion
+## Discussion
 
 All the properties of `displayedPerson` are displayed by the view controller.
 

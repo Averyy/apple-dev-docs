@@ -13,7 +13,7 @@
 kSBCModePageFlexibleDisk_SPC_Mask = 0x0F
 ```
 
-#### Discussion
+## Discussion
 
 Mask for use with SPC field.
 

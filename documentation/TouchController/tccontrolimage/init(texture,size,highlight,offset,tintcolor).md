@@ -21,7 +21,7 @@ init(texture: any MTLTexture, size: CGSize, highlight highlightTexture: (any MTL
 - (instancetype) initWithTexture:(id<MTLTexture>) texture size:(CGSize) size highlightTexture:(id<MTLTexture>) highlightTexture offset:(CGPoint) offset tintColor:(CGColorRef) tintColor;
 ```
 
-#### Return Value
+## Return Value
 
 A new `TCControlImage` instance.
 

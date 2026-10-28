@@ -5,7 +5,7 @@
 
 Prepare your app to respond to an incoming universal link.
 
-#### Overview
+## Overview
 
 When a user activates a universal link, the system launches your app and sends it an [`NSUserActivity`](../Foundation/nsuseractivity.md) object. Query this object to find out how your app launched and to decide what action to take.
 
@@ -16,7 +16,7 @@ To support universal links in your app:
 
 > ⚠️ **Warning**: Universal links offer a potential attack vector into your app, so make sure to validate all URL parameters and discard any malformed URLs. In addition, limit the available actions to those that don’t risk the user’s data. For example, don’t allow universal links to directly delete content or access sensitive information about the user. When testing your URL-handling code, make sure your test cases include improperly formatted URLs.
 
-##### Update your app delegate to respond to a universal link
+### Update your app delegate to respond to a universal link
 
 When the system opens your app as the result of a universal link, your app receives an [`NSUserActivity`](../Foundation/nsuseractivity.md) object with an [`activityType`](../Foundation/nsuseractivity/activitytype.md) value of [`NSUserActivityTypeBrowsingWeb`](../Foundation/nsuseractivitytypebrowsingweb.md). The activity object’s [`webpageURL`](../Foundation/nsuseractivity/webpageurl.md) property contains the HTTP or HTTPS URL that the user accesses. Use [`NSURLComponents`](../Foundation/nsurlcomponents.md) APIs to extract the components of the URL. See the examples that follow.
 

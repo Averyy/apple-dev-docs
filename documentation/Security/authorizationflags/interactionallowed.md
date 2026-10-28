@@ -20,7 +20,7 @@ static var interactionAllowed: AuthorizationFlags { get }
 kAuthorizationFlagInteractionAllowed
 ```
 
-#### Discussion
+## Discussion
 
 If this flag is set, the Security Server is permitted to interact with the user as needed.
 

@@ -25,7 +25,7 @@ func property_getName(_ property: objc_property_t) -> UnsafePointer<CChar>
 extern const char *property_getName(objc_property_t property);
 ```
 
-#### Return Value
+## Return Value
 
 A C string containing the property’s name.
 

@@ -12,7 +12,7 @@ virtual void PMstop(
  void );
 ```
 
-#### Overview
+## Overview
 
 Removes the driver from the power plane and stop its power management. This method is synchronous against any power management method invocations (e.g. `setPowerState` or `setAggressiveness`), so when this method returns it is guaranteed those power management methods will not be entered. Driver should not call any power management methods after this call. Calling `PMstop` cleans up for the three power management initialization calls: PMinit, joinPMtree, and registerPowerDriver.
 

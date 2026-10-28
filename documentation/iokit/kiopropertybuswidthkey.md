@@ -14,7 +14,7 @@
 #define kIOPropertyBusWidthKey
 ```
 
-#### Discussion
+## Discussion
 
 This key defines the current bus width for the device.
 

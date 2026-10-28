@@ -6,7 +6,7 @@
 
 The view rate.
 
-#### Discussion
+## Discussion
 
 The positive or negative rate at which the view animation in the object plays, if view animation is enabled. The value of this field must be from `–100.0` through `+100.0`, inclusive.
 

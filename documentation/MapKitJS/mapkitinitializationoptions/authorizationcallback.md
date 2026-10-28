@@ -15,7 +15,7 @@ A callback function that obtains a token.
 authorizationCallback?: (this: null, done: (token: string) => void) => void;
 ```
 
-#### Discussion
+## Discussion
 
 MapKit JS asyncronously invokes the `authorizationCallback` function throughout a session to obtain new authorization tokens. In the callback, you create a token and pass it to the function that MapKit JS provides in the `done` parameter.
 

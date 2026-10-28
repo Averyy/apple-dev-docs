@@ -33,7 +33,7 @@ optional func urlSession(_ session: URLSession, dataTask: URLSessionDataTask, wi
 
 - [Accessing cached data](../accessing-cached-data.md)
 
-#### Discussion
+## Discussion
 
 The session calls this delegate method after the task finishes receiving all of the expected data. If you don’t implement this method, the default behavior is to use the caching policy specified in the session’s configuration object. The primary purpose of this method is to prevent caching of specific URLs or to modify the `userInfo` dictionary associated with the URL response.
 

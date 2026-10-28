@@ -21,7 +21,7 @@ final class CLKComplicationTemplateGraphicRectangularFullView<Content> where Con
 
 - [Building complications with SwiftUI](./building-complications-with-swiftui.md)
 
-#### Overview
+## Overview
 
 This template belongs to the [`CLKComplicationFamily.graphicRectangular`](./clkcomplicationfamily/graphicrectangular.md) family. [Figure 1](./clkcomplicationtemplategraphicrectangularfullview.md#3667288) shows the layout of the complication and where it appears on the clock face.
 

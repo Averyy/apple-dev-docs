@@ -21,7 +21,7 @@ convenience init(text: String, shortText: String?, accessibilityLabel: String?)
 + (instancetype) textProviderWithText:(NSString *) text shortText:(NSString *) shortText accessibilityLabel:(NSString *) accessibilityLabel;
 ```
 
-#### Return Value
+## Return Value
 
 A text provider initialized with the specified content.
 

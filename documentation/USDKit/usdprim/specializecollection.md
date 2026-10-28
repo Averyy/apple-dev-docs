@@ -20,7 +20,7 @@ Manages specializes composition arcs on a prim.
 struct SpecializeCollection
 ```
 
-#### Overview
+## Overview
 
 Specialization is similar to inheritance but with different composition strength. Specialized opinions are weaker than direct opinions but stronger than inherited opinions. Use `USDPrim.SpecializeCollection` to add, remove, and query specializes arcs on a prim.
 

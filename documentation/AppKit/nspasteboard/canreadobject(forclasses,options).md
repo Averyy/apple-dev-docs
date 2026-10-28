@@ -19,7 +19,7 @@ func canReadObject(forClasses classArray: [AnyClass], options: [NSPasteboard.Rea
 - (BOOL) canReadObjectForClasses:(NSArray<Class> *) classArray options:(NSDictionary<NSString *,id> *) options;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the receiver contains any items that can be represented as an instance of a class specified in `classArray`, otherwise [`false`](../../Swift/false.md).
 

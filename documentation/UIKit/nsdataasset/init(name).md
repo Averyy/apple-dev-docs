@@ -24,11 +24,11 @@ convenience init?(name: NSDataAssetName)
 - (instancetype) initWithName:(NSDataAssetName) name;
 ```
 
-#### Return Value
+## Return Value
 
 The data asset object for the named data set, or `nil` if the data set is not found.
 
-#### Discussion
+## Discussion
 
 If there are multiple data files in the named data set, this method returns the one with attributes that most closely match the current device available screen space.
 

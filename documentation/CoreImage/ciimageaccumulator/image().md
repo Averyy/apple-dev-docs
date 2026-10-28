@@ -24,7 +24,7 @@ func image() -> CIImage
 - (CIImage *) image;
 ```
 
-#### Return Value
+## Return Value
 
 The  image object that represents the current contents of the image accumulator.
 

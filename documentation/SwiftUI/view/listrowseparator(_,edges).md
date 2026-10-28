@@ -20,7 +20,7 @@ nonisolated
 func listRowSeparator(_ visibility: Visibility, edges: VerticalEdge.Set = .all) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 Separators can be presented above and below a row. You can specify to which edge this preference should apply.
 

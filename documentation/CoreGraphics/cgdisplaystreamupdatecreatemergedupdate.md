@@ -10,11 +10,11 @@
 extern CGDisplayStreamUpdateRefCGDisplayStreamUpdateCreateMergedUpdate(CGDisplayStreamUpdateRef firstUpdate, CGDisplayStreamUpdateRef secondUpdate);
 ```
 
-#### Return Value
+## Return Value
 
 The new CGDisplayStreamUpdateRef
 
-#### Discussion
+## Discussion
 
 Merge two CGDisplayUpdateRefs into a new one.
 

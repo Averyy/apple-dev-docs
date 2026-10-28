@@ -19,11 +19,11 @@ Presents a sheet to read both contactless payments and loyalty cards for a purch
 func readPaymentCard(_ request: PaymentCardTransactionRequest, vasRequest: VASRequest, stopOnVASResult: Bool, eventHandler: ((PaymentCardReaderSession.Event) -> Void)? = nil) async throws -> (PaymentCardReadResult?, VASReadResult?)
 ```
 
-#### Return Value
+## Return Value
 
 Either [`PaymentCardReadResult`](../paymentcardreadresult.md), [`VASReadResult`](../vasreadresult.md), or both when the read operation was successful.
 
-#### Discussion
+## Discussion
 
 Call this method to read either a contactless payment card or a loyalty card. This method displays a system sheet with instructions on what the person needs to do. The system UI remains onscreen until the system reads the person’s card, you cancel the operation, or an error occurs. If it reads a card successfully, the method returns the card information as a result.
 

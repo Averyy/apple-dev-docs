@@ -21,7 +21,7 @@ The shadow settings for a directional light.
 @preconcurrency var shadow: DirectionalLightComponent.Shadow? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Set this value to `nil` to remove shadows.
 

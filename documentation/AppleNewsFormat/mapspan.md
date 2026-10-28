@@ -15,13 +15,13 @@ An object used in a map or place component for defining the visible area of the 
 object MapSpan
 ```
 
-#### Discussion
+## Discussion
 
 Use the `MapSpan` object to define the visible bounds of a map using deltas from a defined center coordinate.
 
 This object can be used in [`Map`](./map.md) and [`Place`](./place.md).
 
-##### Example
+### Example
 
 ```json
 {

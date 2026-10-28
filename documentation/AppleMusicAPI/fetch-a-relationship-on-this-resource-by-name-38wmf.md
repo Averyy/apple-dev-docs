@@ -9,9 +9,9 @@ Fetch a station’s relationship using its identifier.
 **Availability**:
 - Apple Music 1.0+
 
-#### Discussion
+## Discussion
 
-##### Example
+### Example
 
 **Request**:
 

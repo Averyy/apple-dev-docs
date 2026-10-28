@@ -24,7 +24,7 @@ var curveBasis: MTLCurveBasis { get set }
 @property (nonatomic) MTLCurveBasis curveBasis;
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to `MTLCurveBasisBSpline`. All keyframes share the same curve basis function.
 

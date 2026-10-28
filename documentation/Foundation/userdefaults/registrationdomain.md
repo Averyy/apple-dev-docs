@@ -29,7 +29,7 @@ extern NSString * const NSRegistrationDomain;
 
 - [Accessing settings from your code](../accessing-settings-from-your-code.md)
 
-#### Discussion
+## Discussion
 
 The settings in this domain represent default values you want to use for its settings. To register your app’s default settings, call the [`register(defaults:)`](./register%28defaults%29.md) method shortly after launch.
 

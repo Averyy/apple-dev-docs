@@ -25,7 +25,7 @@ func sendPing(pongReceiveHandler: @escaping @Sendable ((any Error)?) -> Void)
 - (void) sendPingWithPongReceiveHandler:(void (^)(NSError *error)) pongReceiveHandler;
 ```
 
-#### Discussion
+## Discussion
 
 When sending multiple pings, the task always calls `pongReceiveHandler` in the order it sent the pings.
 

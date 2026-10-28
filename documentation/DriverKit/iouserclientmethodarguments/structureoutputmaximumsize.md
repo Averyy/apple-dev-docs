@@ -18,7 +18,7 @@ The maximum size of the output structure that you specified.
 uint64_t structureOutputMaximumSize;
 ```
 
-#### Discussion
+## Discussion
 
 Specify [`kIOUserClientVariableStructureSize`](../kiouserclientvariablestructuresize.md) to allow for output data that is variable in size.
 

@@ -15,7 +15,7 @@ Deprecated in OS X v10.5. Instead, use [`AUGraphGetNodeInteractions(_:_:_:_:)`](
 extern OSStatus AUGraphGetNodeConnections(AUGraph inGraph, AUNode inNode, AudioUnitNodeConnection *outConnections, UInt32 *ioNumConnections);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 

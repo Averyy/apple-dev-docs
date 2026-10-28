@@ -26,11 +26,11 @@ func startStream(withName streamName: String, toPeer peerID: MCPeerID) throws ->
 - (NSOutputStream *) startStreamWithName:(NSString *) streamName toPeer:(MCPeerID *) peerID error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 In Swift, an output stream instance. In Objective-C, an output stream object upon success or `nil` if a stream could not be established.
 
-#### Discussion
+## Discussion
 
 This method is nonblocking.
 

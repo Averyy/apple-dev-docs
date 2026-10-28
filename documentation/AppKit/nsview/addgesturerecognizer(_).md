@@ -19,7 +19,7 @@ func addGestureRecognizer(_ gestureRecognizer: NSGestureRecognizer)
 - (void) addGestureRecognizer:(NSGestureRecognizer *) gestureRecognizer;
 ```
 
-#### Discussion
+## Discussion
 
 Attaching a gesture recognizer to a view defines the scope of the represented gesture, causing it to receive touches occurring only in the view or one of its subviews. The view establishes a strong reference to the specified gesture recognizer.
 

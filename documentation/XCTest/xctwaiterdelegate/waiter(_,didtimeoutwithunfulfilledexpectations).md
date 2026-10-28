@@ -16,7 +16,7 @@ optional func waiter(_ waiter: XCTWaiter, didTimeoutWithUnfulfilledExpectations 
 - (void) waiter:(XCTWaiter *) waiter didTimeoutWithUnfulfilledExpectations:(NSArray<XCTestExpectation *> *) unfulfilledExpectations;
 ```
 
-#### Discussion
+## Discussion
 
 If the delegate is an [`XCTestCase`](../xctestcase.md) instance, this will be reported as a test failure.
 

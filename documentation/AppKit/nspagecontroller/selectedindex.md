@@ -19,7 +19,7 @@ var selectedIndex: Int { get set }
 @property NSInteger selectedIndex;
 ```
 
-#### Discussion
+## Discussion
 
 To animate a transition to a new index, use the NSPageController class animator object.
 

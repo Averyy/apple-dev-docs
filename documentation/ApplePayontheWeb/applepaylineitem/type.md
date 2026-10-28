@@ -16,7 +16,7 @@ A value that indicates whether the line item is final or pending.
 ApplePayLineItemType type;
 ```
 
-#### Discussion
+## Discussion
 
 See [`ApplePayLineItemType`](../applepaylineitemtype.md) for valid values.
 

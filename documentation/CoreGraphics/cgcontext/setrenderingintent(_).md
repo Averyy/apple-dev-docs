@@ -25,7 +25,7 @@ func setRenderingIntent(_ intent: CGColorRenderingIntent)
 extern void CGContextSetRenderingIntent(CGContextRef c, CGColorRenderingIntent intent);
 ```
 
-#### Discussion
+## Discussion
 
 The rendering intent specifies how to handle colors that are not located within the gamut of the destination color space of a graphics context. If you do not explicitly set the rendering intent, Core Graphics uses perceptual rendering intent when drawing sampled images and relative colorimetric rendering intent for all other drawing.
 

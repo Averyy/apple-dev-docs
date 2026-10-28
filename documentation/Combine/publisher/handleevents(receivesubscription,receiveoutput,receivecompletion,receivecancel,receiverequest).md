@@ -21,11 +21,11 @@ Performs the specified closures when publisher events occur.
 func handleEvents(receiveSubscription: ((any Subscription) -> Void)? = nil, receiveOutput: ((Self.Output) -> Void)? = nil, receiveCompletion: ((Subscribers.Completion<Self.Failure>) -> Void)? = nil, receiveCancel: (() -> Void)? = nil, receiveRequest: ((Subscribers.Demand) -> Void)? = nil) -> Publishers.HandleEvents<Self>
 ```
 
-#### Return Value
+## Return Value
 
 A publisher that performs the specified closures when publisher events occur.
 
-#### Discussion
+## Discussion
 
 Use [`handleEvents(receiveSubscription:receiveOutput:receiveCompletion:receiveCancel:receiveRequest:)`](./handleevents%28receivesubscription,receiveoutput,receivecompletion,receivecancel,receiverequest%29.md) when you want to examine elements as they progress through the stages of the publisher’s lifecycle.
 

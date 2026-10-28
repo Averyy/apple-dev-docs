@@ -22,7 +22,7 @@ nonisolated
 func subscriptionStorePolicyDestination(for button: SubscriptionStorePolicyKind, @ViewBuilder destination: () -> some View) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 Except on tvOS, you can also set a URL as the destination using [`subscriptionStorePolicyDestination(url:for:)`](./subscriptionstorepolicydestination%28url,for%29.md). If you do not set a destination, the system will use the automatic behavior. Check the documentation for the value you provide for `button` to understand the automatic behavior.
 

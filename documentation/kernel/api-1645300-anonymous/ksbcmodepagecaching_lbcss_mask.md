@@ -13,7 +13,7 @@
 kSBCModePageCaching_LBCSS_Mask = (1 << kSBCModePageCaching_LBCSS_Bit)
 ```
 
-#### Discussion
+## Discussion
 
 Mask for use with flags2 field.
 

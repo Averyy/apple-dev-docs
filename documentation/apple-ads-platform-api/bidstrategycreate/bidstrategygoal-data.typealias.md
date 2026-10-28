@@ -21,11 +21,11 @@ string BidStrategyCreate.BidStrategyGoal
 - `INSTALL`: The strategy optimizes for app installs. The system bids more aggressively for queries likely to result in a new install.
 - `TAP`: The strategy optimizes for taps on the ad. Applies to tap-based pricing models such as `MANUAL_CPT`.
 
-#### Discussion
+## Discussion
 
 Set this alongside `bidStrategyType` when creating a bid strategy, matching `IMPRESSION` or `TAP` goals to the corresponding `MANUAL_CPM` or `MANUAL_CPT` type.
 
-##### Example
+### Example
 
 ```json
 {

@@ -21,7 +21,7 @@ class SKAdTestPostback
 @interface SKAdTestPostback : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use this class to create test postbacks to use for unit testing.
 

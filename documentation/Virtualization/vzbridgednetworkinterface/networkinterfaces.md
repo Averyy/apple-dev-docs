@@ -19,7 +19,7 @@ class var networkInterfaces: [VZBridgedNetworkInterface] { get }
 @property (class, copy, readonly) NSArray<VZBridgedNetworkInterface *> * networkInterfaces;
 ```
 
-#### Discussion
+## Discussion
 
 The system creates the objects in this property based on the available interfaces in the host machine.
 

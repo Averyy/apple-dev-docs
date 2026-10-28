@@ -17,7 +17,7 @@ Styles for labeling the tick marks on a stepped slider.
 enum TickLabelStyle
 ```
 
-#### Overview
+## Overview
 
 Continuous sliders don’t display tick labels.
 

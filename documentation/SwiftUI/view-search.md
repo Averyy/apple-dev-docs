@@ -5,7 +5,7 @@
 
 Enable people to search for content in your app.
 
-#### Overview
+## Overview
 
 Use search view modifiers to add search capability to your app. For more information, see [Search](./search.md).
 

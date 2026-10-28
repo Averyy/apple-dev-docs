@@ -23,7 +23,7 @@ var alignment: UIStackView.Alignment { get set }
 @property (nonatomic) UIStackViewAlignment alignment;
 ```
 
-#### Discussion
+## Discussion
 
 This property determines how the stack view lays out its arranged views perpendicularly to its axis. The default value is [`UIStackView.Alignment.fill`](./alignment-swift.enum/fill.md). For a list of possible values, see [`UIStackView.Alignment`](./alignment-swift.enum.md).
 

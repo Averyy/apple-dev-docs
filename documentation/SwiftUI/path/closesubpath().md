@@ -21,7 +21,7 @@ Closes and completes the current subpath.
 mutating func closeSubpath()
 ```
 
-#### Discussion
+## Discussion
 
 Appends a line from the current point to the starting point of the current subpath and ends the subpath.
 

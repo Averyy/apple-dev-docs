@@ -16,7 +16,7 @@ typedef struct IOUSBFindInterfaceRequest {
 } IOUSBFindInterfaceRequest;
 ```
 
-#### Overview
+## Overview
 
 Structure used with FindNextInterface.
 

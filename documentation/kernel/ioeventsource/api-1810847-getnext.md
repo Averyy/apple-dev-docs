@@ -11,7 +11,7 @@ Get'ter for $link eventChainNext variable.
 virtual IOEventSource *getNext() const;
 ```
 
-#### Return Value
+## Return Value
 
 value of eventChainNext.
 

@@ -23,7 +23,7 @@ string Urgency
 - `past`
 - `unknown`
 
-#### Possible Values
+## Possible Values
 
 - **immediate**: Take responsive action immediately.
 - **expected**: Take responsive action in the next hour.

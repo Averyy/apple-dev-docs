@@ -19,7 +19,7 @@ optional var outputColorAttachments: [String : Any] { get }
 @property (readonly) NSDictionary<NSString *,id> * outputColorAttachments;
 ```
 
-#### Discussion
+## Discussion
 
 This is an optional property. Only color-related keys from [Image Buffer Attachment Keys](../../CoreVideo/image-buffer-attachment-keys.md) are permitted in the returned dictionary.
 

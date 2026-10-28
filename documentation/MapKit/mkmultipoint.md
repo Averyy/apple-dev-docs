@@ -25,7 +25,7 @@ class MKMultiPoint
 @interface MKMultiPoint : MKShape
 ```
 
-#### Overview
+## Overview
 
 Don’t create instances of this class directly. Instead, create instances of the [`MKPolygon`](./mkpolygon.md) or [`MKPolyline`](./mkpolyline.md) classes. However, you can use the methods and property of this class to access information about the specific points associated with the line or polygon.
 

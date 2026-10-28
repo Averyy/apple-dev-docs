@@ -24,11 +24,11 @@ func voxelExists(atIndex index: MDLVoxelIndex, allowAnyX: Bool, allowAnyY: Bool,
 - (BOOL) voxelExistsAtIndex:(MDLVoxelIndex) index allowAnyX:(BOOL) allowAnyX allowAnyY:(BOOL) allowAnyY allowAnyZ:(BOOL) allowAnyZ allowAnyShell:(BOOL) allowAnyShell;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the voxel array contains at least one voxel index matching the specified parameters; otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Use the `allowAnyX`, `allowAnyY`, `allowAnyZ`, and `allowAnyShell` parameters to perform wildcard searches. For example:
 

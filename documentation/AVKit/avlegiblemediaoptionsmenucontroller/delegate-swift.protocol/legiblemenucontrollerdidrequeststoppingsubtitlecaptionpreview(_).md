@@ -21,7 +21,7 @@ optional func legibleMenuControllerDidRequestStoppingSubtitleCaptionPreview(_ me
 - (void) legibleMenuControllerDidRequestStoppingSubtitleCaptionPreview:(AVLegibleMediaOptionsMenuController *) menuController;
 ```
 
-#### Discussion
+## Discussion
 
 Called when the caption preview should be hidden
 

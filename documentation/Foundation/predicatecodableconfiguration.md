@@ -21,7 +21,7 @@ A specification of the expected types and key paths found in an archived predica
 struct PredicateCodableConfiguration
 ```
 
-#### Overview
+## Overview
 
 Use this configuration when encoding and decoding a predicate to restrict what that predicate can contain.  If a predicate contains data types or keypaths that aren’t allowed by the configuration, the encoding or decoding process throws an error.
 

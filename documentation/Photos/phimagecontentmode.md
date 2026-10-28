@@ -24,7 +24,7 @@ enum PHImageContentMode
 enum PHImageContentMode : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 With either option, the resulting image may not exactly match the target size, depending on the [`deliveryMode`](./phimagerequestoptions/deliverymode.md) and [`resizeMode`](./phimagerequestoptions/resizemode.md) properties of the image request. To serve your request more quickly, Photos may provide a slightly larger image—one that it can generate more easily or one that is already cached.
 

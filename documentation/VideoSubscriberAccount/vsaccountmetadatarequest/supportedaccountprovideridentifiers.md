@@ -24,7 +24,7 @@ var supportedAccountProviderIdentifiers: [String] { get set }
 @property (nonatomic, copy) NSArray<NSString *> * supportedAccountProviderIdentifiers;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to specify which TV providers receive the request. An empty list indicates that your app supports all TV providers in the region.
 

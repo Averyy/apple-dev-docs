@@ -18,7 +18,7 @@ Replaces all nodes and edges in the graph.
 final func replace(nodes: [String : ShaderGraph.Node], edges: [ShaderGraph.Edge]) throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: If the provided nodes and edges do not form a valid graph.
 

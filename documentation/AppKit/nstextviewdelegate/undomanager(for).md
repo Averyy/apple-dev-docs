@@ -20,11 +20,11 @@ optional func undoManager(for view: NSTextView) -> UndoManager?
 - (NSUndoManager *) undoManagerForTextView:(NSTextView *) view;
 ```
 
-#### Return Value
+## Return Value
 
 The undo manager for `view`.
 
-#### Discussion
+## Discussion
 
 This method provides the flexibility to return a custom undo manager for the text view. Although `NSTextView` implements undo and redo for changes to text, applications may need a custom undo manager to handle interactions between changes to text and changes to other items in the application.
 

@@ -19,11 +19,11 @@ func textShouldBeginEditing(_ textObject: NSText) -> Bool
 - (BOOL) textShouldBeginEditing:(NSText *) textObject;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the text object should proceed to make changes. If the delegate returns [`false`](../../Swift/false.md), the text object abandons the editing operation.
 
-#### Discussion
+## Discussion
 
 The default behavior of this method is to return the value obtained from [`control(_:textShouldBeginEditing:)`](../nscontroltexteditingdelegate/control%28_,textshouldbeginediting%29.md), unless the delegate doesn’t respond to that method, in which case it returns [`true`](../../Swift/true.md), thereby allowing text editing to proceed.
 

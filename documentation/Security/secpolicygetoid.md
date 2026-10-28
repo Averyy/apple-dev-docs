@@ -15,11 +15,11 @@ Retrieves a policy’s object identifier.
 OSStatus SecPolicyGetOID(SecPolicyRef policyRef, SecAsn1Oid *oid);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
-#### Discussion
+## Discussion
 
 The policy’s object identifier, in the form of a `CSSM_OID` structure, is used in the CSSM API together with the policy’s value. Use the [`SecPolicyGetValue`](./secpolicygetvalue.md) function to obtain the value that corresponds to this object identifier.
 

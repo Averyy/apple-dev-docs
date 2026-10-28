@@ -19,7 +19,7 @@ func displayLink(target: Any, selector: Selector) -> CADisplayLink
 - (CADisplayLink *) displayLinkWithTarget:(id) target selector:(SEL) selector;
 ```
 
-#### Discussion
+## Discussion
 
 Note that views and windows can move between screens and you may want to get a display link directly from `NSView` or `NSWindow` which will track those changes automatically.
 

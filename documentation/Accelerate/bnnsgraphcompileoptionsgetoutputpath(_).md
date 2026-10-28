@@ -25,7 +25,7 @@ func BNNSGraphCompileOptionsGetOutputPath(_ options: bnns_graph_compile_options_
 const char *BNNSGraphCompileOptionsGetOutputPath(bnns_graph_compile_options_t options);
 ```
 
-#### Return Value
+## Return Value
 
 The path that the [`BNNSGraphCompileOptionsSetOutputPath(_:_:)`](./bnnsgraphcompileoptionssetoutputpath%28_,_%29.md) function defines, if any.
 

@@ -22,7 +22,7 @@ static let postToTencentWeibo: UIActivity.ActivityType
 extern UIActivityType const UIActivityTypePostToTencentWeibo;
 ```
 
-#### Discussion
+## Discussion
 
 When using this service, you can provide [`NSString`](../../../Foundation/nsstring.md), [`NSAttributedString`](../../../Foundation/nsattributedstring.md), [`UIImage`](../../uiimage.md), and [`NSURL`](../../../Foundation/nsurl.md) objects as data for the activity items.
 

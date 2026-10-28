@@ -30,7 +30,7 @@ var nameEditable: Bool { get set }
 @property (atomic) BOOL nameEditable;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`true`](../../Swift/true.md), which lets the current user change the name of the person assigned to the reservation. You might change this property to [`false`](../../Swift/false.md) if you require that reservations must be by the person who made them.
 

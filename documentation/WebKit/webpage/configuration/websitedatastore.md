@@ -20,7 +20,7 @@ The object you use to get and set the site’s cookies and to track the cached d
 var websiteDataStore: WKWebsiteDataStore
 ```
 
-#### Discussion
+## Discussion
 
 To create a private web-browsing session, create a non-persistent data store using the `nonPersistent()` method and assign it to this property. For more information, see `WKWebsiteDataStore`.
 

@@ -19,7 +19,7 @@ func ABGetMe(_ addressBook: ABAddressBookRef!) -> Unmanaged<ABPersonRef>!
 extern ABPersonRefABGetMe(ABAddressBookRef addressBook);
 ```
 
-#### Return Value
+## Return Value
 
 The ABPerson record that represents the logged-in user, or `NULL` if the user never specified such a record. You are responsible for retaining and releasing this object as needed.
 

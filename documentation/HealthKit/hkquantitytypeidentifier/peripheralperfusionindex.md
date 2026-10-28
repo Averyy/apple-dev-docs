@@ -24,7 +24,7 @@ static let peripheralPerfusionIndex: HKQuantityTypeIdentifier
 extern HKQuantityTypeIdentifier const HKQuantityTypeIdentifierPeripheralPerfusionIndex;
 ```
 
-#### Discussion
+## Discussion
 
 The peripheral perfusion index measures the pulse strength at the monitoring site. These samples use percent units (described in [`HKUnit`](../hkunit.md)) and measure discrete values (described in [`HKQuantityAggregationStyle`](../hkquantityaggregationstyle.md)).
 

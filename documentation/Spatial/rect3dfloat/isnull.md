@@ -23,7 +23,7 @@ var isNull: Bool { get }
 static bool SPRect3DFloatIsNull(SPRect3DFloat rect);
 ```
 
-#### Discussion
+## Discussion
 
 Returns a Boolean value that indicates whether the rectangle represents an invalid value.
 

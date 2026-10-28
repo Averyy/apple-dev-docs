@@ -25,7 +25,7 @@ func xpc_array_get_uuid(_ xarray: xpc_object_t, _ index: Int) -> UnsafePointer<U
 extern const uint8_t *xpc_array_get_uuid(xpc_object_t xarray, size_t index);
 ```
 
-#### Return Value
+## Return Value
 
 The underlying `uuid_t` value at the specified index. The null UUID if the value at the specified index is not a UUID value. The returned pointer may be safely passed to the `uuid(3)` APIs.
 

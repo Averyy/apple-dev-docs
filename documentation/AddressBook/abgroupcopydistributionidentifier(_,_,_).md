@@ -19,11 +19,11 @@ func ABGroupCopyDistributionIdentifier(_ group: ABGroupRef!, _ person: ABPersonR
 extern CFStringRefABGroupCopyDistributionIdentifier(ABGroupRef group, ABPersonRef person, CFStringRef property);
 ```
 
-#### Return Value
+## Return Value
 
 The distribution identifierfor `person` and `property` ifit was set, otherwise returns the property’s primary identifier.If either `person` or `property` are `NULL`,this function returns `NULL`. Also,returns `NULL` if `property` isnot a multi-value list property. You are responsible for releasingthis object.
 
-#### Discussion
+## Discussion
 
 Use the [`ABGroupSetDistributionIdentifier(_:_:_:_:)`](./abgroupsetdistributionidentifier%28_,_,_,_%29.md) functionto set the distribution identifier for a person’s multi-valuelist property.
 

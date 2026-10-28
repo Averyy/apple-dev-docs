@@ -30,7 +30,7 @@ var phoneNumberFieldShouldBeDisplayed: Bool { get set }
 @property (atomic) BOOL phoneNumberFieldShouldBeDisplayed;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`true`](../../Swift/true.md), which displays the guest’s phone number.
 

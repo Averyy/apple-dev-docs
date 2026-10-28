@@ -22,7 +22,7 @@ func enqueueIORequest(with data: NSMutableData, transactionList: UnsafeMutablePo
 - (BOOL) enqueueIORequestWithData:(NSMutableData *) data transactionList:(IOUSBHostIsochronousTransaction *) transactionList transactionListCount:(NSUInteger) transactionListCount firstFrameNumber:(uint64_t) firstFrameNumber options:(IOUSBHostIsochronousTransferOptions) options error:(NSError **) error completionHandler:(IOUSBHostIsochronousTransactionCompletionHandler) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration:
 >

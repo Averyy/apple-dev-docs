@@ -19,11 +19,11 @@ func highlight(withLevel val: CGFloat) -> NSColor?
 - (NSColor *) highlightWithLevel:(CGFloat) val;
 ```
 
-#### Return Value
+## Return Value
 
 The new `NSColor` object. Returns `nil` if the colors can’t be converted.
 
-#### Discussion
+## Discussion
 
 The highlight color is provided by the [`highlightColor`](./highlightcolor.md) property. Call this method when you want to brighten the current color for use in highlights.
 

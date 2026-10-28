@@ -25,7 +25,7 @@ var resourceSpecifier: String? { get }
 @property (copy, readonly, nullable) NSString * resourceSpecifier;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the resource specifier. Any percent-encoded characters are not unescaped. For example, in the URL `http://www.example.com/index.html?key1=value1#jumplink`, the resource specifier is `//www.example.com/index.html?key1=value1#jumplink` (everything after the colon).
 

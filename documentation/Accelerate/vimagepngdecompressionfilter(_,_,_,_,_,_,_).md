@@ -25,11 +25,11 @@ func vImagePNGDecompressionFilter(_ buffer: UnsafePointer<vImage_Buffer>!, _ sta
 vImage_Error vImagePNGDecompressionFilter(const vImage_Buffer *buffer, vImagePixelCount startScanline, vImagePixelCount scanlineCount, uint32_t bitsPerPixel, uint32_t filterMethodNumber, uint32_t filterType, vImage_Flags flags);
 ```
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes that [Data Types and Constants](./data-types-and-constants.md) describes.
 
-#### Discussion
+## Discussion
 
 This function implements PNG decompression filtering for filter method `0` of the PNG standard, section 9.2, as described in: [http://www.w3.org/TR/PNG-Filters.html](http://www.w3.org/TR/PNG-Filters.html). When a pixel that is needed for a filtering calculation falls outside the source buffer, its value is presumed to be `0`.
 

@@ -27,7 +27,7 @@ class func requestAccess() async -> Bool
 + (void) requestAccessWithCompletionHandler:(void (^)(BOOL granted)) handler;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to request access to save image assets to the external storage device. Your app can’t access the external storage device without generating an error until a person gives it permission.
 

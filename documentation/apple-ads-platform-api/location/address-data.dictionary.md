@@ -15,7 +15,7 @@ The postal address of a brand location.
 object Location.Address
 ```
 
-#### Discussion
+## Discussion
 
 The `address` field is sourced from Apple Maps and is read-only. Use `countryOrRegion` to verify country or region targeting compatibility, and `fullAddress` for a single formatted display string.
 

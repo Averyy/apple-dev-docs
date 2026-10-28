@@ -20,7 +20,7 @@ func FSEventStreamSetDispatchQueue(_ streamRef: FSEventStreamRef, _ q: dispatch_
 void FSEventStreamSetDispatchQueue(FSEventStreamRef streamRef, dispatch_queue_t q);
 ```
 
-#### Discussion
+## Discussion
 
 The caller is responsible for ensuring that the stream is scheduled on a dispatch queue and that the queue is started.
 

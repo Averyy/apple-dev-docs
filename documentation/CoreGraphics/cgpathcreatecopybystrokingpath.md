@@ -21,11 +21,11 @@ Creates a stroked copy of another path.
 extern CGPathRefCGPathCreateCopyByStrokingPath(CGPathRef path, const CGAffineTransform *transform, CGFloat lineWidth, CGLineCap lineCap, CGLineJoin lineJoin, CGFloat miterLimit);
 ```
 
-#### Return Value
+## Return Value
 
 A new, immutable path. You are responsible for releasing this object.
 
-#### Discussion
+## Discussion
 
 The new path is created so that filling the new path draws the same pixels as stroking the original path.
 

@@ -20,11 +20,11 @@ func validAttributesForMarkedText() -> [NSAttributedString.Key]
 - (NSArray<NSString *> *) validAttributesForMarkedText;
 ```
 
-#### Return Value
+## Return Value
 
 An array of `NSString` objects representing names for the supported attributes.
 
-#### Discussion
+## Discussion
 
 Returns an empty array if no attributes are supported. See NSAttributedString Application Kit Additions Reference for the set of string constants representing standard attributes.
 

@@ -21,7 +21,7 @@ A Base64URL-encoded JSON string that represents the external purchase token.
 let value: String
 ```
 
-#### Discussion
+## Discussion
 
 For information about the token, see [Receiving and decoding external purchase tokens](../../receiving-and-decoding-external-purchase-tokens.md).
 

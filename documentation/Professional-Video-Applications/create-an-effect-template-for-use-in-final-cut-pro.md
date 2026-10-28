@@ -5,7 +5,7 @@
 
 Use Motion to create custom filters, generators, and transitions for Final Cut Pro.
 
-#### Overview
+## Overview
 
 Final Cut Pro ships with numerous effects, titles, transitions, and generators that were created in Motion. In Motion, effects, titles, transitions, and generators, are collectively referred to as templates. You can modify these default Final Cut Pro templates or create your own templates from scratch. If you’re a content creator, you can use these templates to build and distribute custom Final Cut Pro effects to other artists, to editors, or to clients.
 

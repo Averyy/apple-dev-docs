@@ -18,7 +18,7 @@ A continuous stream of outcomes that exist in the store.
 func anyOutcomes(matching query: OCKOutcomeQuery) -> CareStoreQueryResults<OCKAnyOutcome>
 ```
 
-#### Discussion
+## Discussion
 
 The stream yields a new value whenever the result changes and yields an error if there’s an issue accessing the store or fetching results.
 

@@ -24,7 +24,7 @@ The human-readable name of the configuration provider.
 var providerName: String { get }
 ```
 
-#### Discussion
+## Discussion
 
 Used by [`AccessReporter`](../accessreporter.md) and other diagnostic logging.
 

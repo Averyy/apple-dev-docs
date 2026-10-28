@@ -12,11 +12,11 @@ static IOReturn releaseAsyncReference64(
  OSAsyncReference64reference);
 ```
 
-#### Return Value
+## Return Value
 
 A return code.
 
-#### Overview
+## Overview
 
 The OSAsyncReference64 structure passed to async methods holds a reference to the wakeup mach port, which should be released to balance each async method call. Behavior is undefined if these calls are not correctly balanced.
 

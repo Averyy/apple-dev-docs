@@ -19,11 +19,11 @@ Removes an existing user decision.
 final func removeUserDecision(_ decision: CNDecision) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 A flag indicating whether the user decisions was removed.
 
-#### Discussion
+## Discussion
 
 You can’t remove decisions that aren’t user decisions.
 

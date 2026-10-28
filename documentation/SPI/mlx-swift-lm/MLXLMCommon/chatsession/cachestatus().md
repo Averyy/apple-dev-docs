@@ -21,7 +21,7 @@ func cacheStatus() async throws -> KVCacheStatus
 
 - [KV Cache Quantization](../kv-cache-quantization.md)
 
-#### Discussion
+## Discussion
 
 If the session owns a realized cache, this reports its actual request, topology, strategy state, and progress. Otherwise it reports the cache planned by the current [`generateParameters`](./generateparameters.md).
 

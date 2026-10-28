@@ -16,11 +16,11 @@ nonisolated
 func touchBarItemPrincipal(_ principal: Bool = true) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A Touch Bar view with one element centered in the Touch Bar row.
 
-#### Discussion
+## Discussion
 
 Use `touchBarItemPrincipal(_:)` to designate a view as a significant view in the Touch Bar. Currently, that view will be placed in the center of the row.
 

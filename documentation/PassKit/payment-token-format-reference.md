@@ -4,7 +4,7 @@
 
 Verify an Apple Pay payment token and validate a transaction.
 
-#### Overview
+## Overview
 
 Apple Pay is available on all iOS devices with a Secure Element — an industry-standard, certified chip designed to store payment information safely. In macOS, users must have an iPhone or Apple Watch that supports Apple Pay to authorize the payment, or have a Mac with Touch ID. The Secure Element creates a payment object when an app or website that uses Apple Pay sends a payment request.
 
@@ -14,7 +14,7 @@ The payment object has a nested structure that contains a payment token with enc
 
 The Secure Element encrypts the token’s payment data using either elliptic curve cryptography (ECC) or RSA encryption. The Secure Element selects the encryption algorithm based on the merchant capabilities that the payment request indicates. Most regions use ECC encryption. Other regions use RSA encryption if ECC encryption is unavailable due to regulatory concerns.
 
-##### Verify the signature and decrypt the payment data
+### Verify the signature and decrypt the payment data
 
 The following steps describe the process of validating a transaction by verifying the signature, decrypting the payment data, and verifying additional transaction details. Refer to the reference tables to identify keys and values.
 
@@ -49,11 +49,11 @@ Step 6: Verify the transaction details using information from the merchant about
 
 Step 7: If the signature is valid, the hash values match, and your transaction validation passes, use the decrypted payment data to process the payment. Otherwise, ignore the transaction.
 
-##### Payment token format reference
+### Payment token format reference
 
 The following tables describe the keys and values of the payment token structure.
 
-###### Payment token structure
+#### Payment token structure
 
 The [`paymentData`](./pkpaymenttoken/paymentdata.md) property of [`PKPaymentToken`](./pkpaymenttoken.md) (or the [`paymentData`](../ApplePayontheWeb/applepaypaymenttoken/paymentdata.md) property of [`ApplePayPaymentToken`](../ApplePayontheWeb/applepaypaymenttoken.md), for Apple Pay on the Web) contains a UTF-8 serialization of a plaintext JSON dictionary with the following keys and values:
 
@@ -64,7 +64,7 @@ The [`paymentData`](./pkpaymenttoken/paymentdata.md) property of [`PKPaymentToke
 | `signature` | detached PKCS #7 signature, Base64 encoded as a string | Signature of the payment and header data ![](https://developer.apple.com/tutorials/images/com.apple.passkit/spacer.png) The signature includes the signing certificate, its intermediate CA certificate, and information about the signing algorithm. |
 | `version` | string | Version information about the payment token ![](https://developer.apple.com/tutorials/images/com.apple.passkit/spacer.png) The token uses `EC_v1` for ECC-encrypted data and `RSA_v1` for RSA-encrypted data. |
 
-###### Header keys and values
+#### Header keys and values
 
 The `header` contains the following keys and values:
 
@@ -77,7 +77,7 @@ The `header` contains the following keys and values:
 
 For more information about the application data and the original payment request, see [`applicationData`](./pkpaymentrequest/applicationdata.md) and [`PKPaymentRequest`](./pkpaymentrequest.md). For transactions using Apple Pay on the Web, see [`applicationData`](../ApplePayontheWeb/applepayrequest/applicationdata.md) and [`ApplePayRequest`](../ApplePayontheWeb/applepayrequest.md), and [`applicationData`](../ApplePayontheWeb/applepaypaymentrequest/applicationdata.md) and [`ApplePayPaymentRequest`](../ApplePayontheWeb/applepaypaymentrequest.md).
 
-###### Payment data keys
+#### Payment data keys
 
 The decrypted payment data in the `data` value contains the following keys and values:
 
@@ -95,7 +95,7 @@ The decrypted payment data in the `data` value contains the following keys and v
 | `merchantTokenIdentifier` | string | For a merchant token request, the provisioned merchant token identifier from the payment network |
 | `merchantTokenMetadata` | [`MerchantTokenMetadata`](../MerchantTokenNotificationServices/merchanttokenmetadata.md) | For a merchant token request, this data contains card art and the token’s last four digits and expiration date |
 
-###### Detailed payment data keys (3D Secure)
+#### Detailed payment data keys (3D Secure)
 
 If the `paymentDataType` value is `"3DSecure"` in the Payment Data Keys information, the payment data dictionary in `paymentData` contains the following keys and values:
 
@@ -104,7 +104,7 @@ If the `paymentDataType` value is `"3DSecure"` in the Payment Data Keys informat
 | `onlinePaymentCryptogram` | A Base64-encoded string | Online payment cryptogram, as defined by 3D Secure |
 | `eciIndicator` | string | Optional. ECI indicator, as defined by 3D Secure ![](https://developer.apple.com/tutorials/images/com.apple.passkit/spacer.png) The card network may add an ECI indicator to the payment data that the payment token includes. ![](https://developer.apple.com/tutorials/images/com.apple.passkit/spacer.png) If you receive an ECI indicator, you must pass it on to your payment processor; otherwise, the transaction fails. |
 
-###### Detailed payment data keys (EMV)
+#### Detailed payment data keys (EMV)
 
 If the `paymentDataType` value is `“EMV”` in the Payment Data Keys information, the payment data dictionary in `paymentData` contains the following keys and values:
 
@@ -113,7 +113,7 @@ If the `paymentDataType` value is `“EMV”` in the Payment Data Keys informati
 | `emvData` | The Europay, Mastercard, and Visa (EMV) payment structure, as a Base64-encoded string | Output from the Secure Element |
 | `encryptedPINData` | The encrypted PIN, as a hex-encoded string | The PIN is encrypted using the bank’s key. ![](https://developer.apple.com/tutorials/images/com.apple.passkit/spacer.png) RSA_v1 only. |
 
-###### Authentication response
+#### Authentication response
 
 The dictionary for the `authenticationResponses` in the Payment Data Keys information contains the following keys and values:
 

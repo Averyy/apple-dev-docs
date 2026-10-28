@@ -22,7 +22,7 @@ var defaultToolTip: String? { get set }
 @property (nonatomic, copy, nullable) NSString * defaultToolTip;
 ```
 
-#### Discussion
+## Discussion
 
 Set this property to the default text to display in the tooltip.
 

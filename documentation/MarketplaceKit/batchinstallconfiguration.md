@@ -16,7 +16,7 @@ Information that describes multiple app installations or app updates.
 struct BatchInstallConfiguration
 ```
 
-#### Overview
+## Overview
 
 The [`ActionButton.Action.batchInstall(_:)`](./actionbutton/action-swift.enum/batchinstall%28_%29.md) enumeration case takes an instance of this structure as a parameter.
 

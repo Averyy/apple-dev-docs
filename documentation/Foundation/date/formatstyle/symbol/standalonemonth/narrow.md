@@ -21,7 +21,7 @@ The shortest representation of a standalone month.
 static var narrow: Date.FormatStyle.Symbol.StandaloneMonth { get }
 ```
 
-#### Discussion
+## Discussion
 
 This custom format style conveys the shortest representation of a month, like `O` (the letter) for October.
 

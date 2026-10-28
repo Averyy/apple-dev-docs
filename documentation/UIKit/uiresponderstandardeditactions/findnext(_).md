@@ -23,7 +23,7 @@ optional func findNext(_ sender: Any?)
 - (void) findNext:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 UIKit calls this method when the user selects the Find Next command from an editing menu. Your implementation should highlight the next result in the UI for finding textual content in your view.
 

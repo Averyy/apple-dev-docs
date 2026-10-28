@@ -24,11 +24,11 @@ class func bokehBlur() -> any CIFilter & CIBokehBlur
 + (CIFilter<CIBokehBlur> *) bokehBlurFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The blurred image.
 
-#### Discussion
+## Discussion
 
 This method applies the bokeh blur filter to an image. The effect targets a circular area of pixels defined by the `radius` and blurs the area. The filter adds smaller intense blur rings.
 

@@ -24,7 +24,7 @@ var sources: [HKSource]? { get }
 @property (strong, readonly, nullable) NSArray<HKSource *> * sources;
 ```
 
-#### Discussion
+## Discussion
 
 If the [`separateBySource`](../hkstatisticsoptions/separatebysource.md) option was specified, this property holds an array of all the sources included in the calculations. If the [`separateBySource`](../hkstatisticsoptions/separatebysource.md) option was not specified, the property contains `nil`.
 

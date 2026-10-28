@@ -5,7 +5,7 @@
 
 Create reports for external purchase tokens that didn’t result in completed transactions, duplicate tokens, or tokens that you learn of from an App Store server notification.
 
-#### Overview
+## Overview
 
 If a customer doesn’t successfully complete an external purchase, you must still report the token, even if it has no transaction. [`App Store Server Notifications V2`](../AppStoreServerNotifications/app-store-server-notifications-v2.md) notifies you of external purchase tokens you haven’t yet reported, 10 days after the system creates the token, or soon after `ACQUISITION` and `SERVICES` tokens expire. Report the token, including when your system doesn’t have a record of the token.
 
@@ -22,7 +22,7 @@ Then, specify the type of report in the [`status`](./status.md) field:
 
 Don’t provide a `lineItems` field in the request body when using the above status values.
 
-##### Report a token without a completed transaction
+### Report a token without a completed transaction
 
 Use the `NO_LINE_ITEM` status to report an external purchase token that didn’t result in any completed transactions. The following example shows the `ExternalPurchaseReport` request body for a token without any associated transactions:
 
@@ -34,7 +34,7 @@ Use the `NO_LINE_ITEM` status to report an external purchase token that didn’t
 }
 ```
 
-##### Report an unrecognized token
+### Report an unrecognized token
 
 Apple sends notifications to your [`App Store Server Notifications V2`](../AppStoreServerNotifications/app-store-server-notifications-v2.md) endpoint for external purchase tokens that remain unreported. The notification has a [`notificationType`](../AppStoreServerNotifications/notificationtype.md) of `EXTERNAL_PURCHASE_TOKEN` and a [`subtype`](../AppStoreServerNotifications/subtype.md) of `UNREPORTED`. It provides the token’s [`externalPurchaseId`](./externalpurchaseid.md) in the [`externalPurchaseToken`](../AppStoreServerNotifications/externalpurchasetoken.md) field of notification’s payload. Apple sends the notification 10 days after it creates a token without an expiration date. For custom link tokens, which have an expiration date, Apple sends the notification soon after the token expires.
 
@@ -48,7 +48,7 @@ Compare the `externalPurchaseId` to the tokens in your system. If your system do
 }
 ```
 
-##### Report duplicate tokens
+### Report duplicate tokens
 
 If your app uses the [`ExternalPurchaseCustomLink`](../StoreKit/externalpurchasecustomlink.md) API, it calls the https://developer.apple.com/documentation/storekit/externalpurchasecustomlink/token(for:) method to get tokens. If there’s an active token period, the system returns the token that corresponds to that active period. The returned token can be an original token, or it can be a refreshed token. A *refreshed* token has the same creation and expiration dates as the original token, but a different `externalPurchaseId`. You can report transactions using any one of the customer’s tokens that represent the same active token period, and report the remaining of the tokens from the same period as duplicate tokens.
 

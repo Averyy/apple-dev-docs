@@ -20,7 +20,7 @@ func encoderName() -> String!
 - (NSString *) encoderName;
 ```
 
-#### Return Value
+## Return Value
 
 A string containing the encoder extension name.
 

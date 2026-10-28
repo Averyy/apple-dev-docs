@@ -23,7 +23,7 @@ var rotation: CGVector { get }
 @property (nonatomic, readonly) CGVector rotation;
 ```
 
-#### Discussion
+## Discussion
 
 This property represents an X,Y-axis translation expressed in radians.
 

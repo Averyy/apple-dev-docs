@@ -15,11 +15,11 @@ Returns a number used to identify the receiver’s context to the input server.
 - (NSInteger) conversationIdentifier;
 ```
 
-#### Return Value
+## Return Value
 
 The identifying number of the receiver.
 
-#### Discussion
+## Discussion
 
 Each text view within an application should return a unique identifier (typically its address). However, multiple text views sharing the same text storage must all return the same identifier.
 

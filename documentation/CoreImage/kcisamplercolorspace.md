@@ -24,7 +24,7 @@ let kCISamplerColorSpace: String
 extern NSString * const kCISamplerColorSpace;
 ```
 
-#### Discussion
+## Discussion
 
 The associated value must be an RGB [`CGColorSpace`](../CoreGraphics/cgcolorspace.md) object. Using this option specifies that samples should be converted to this color space before being passed to a kernel. If not specified, samples will be passed to the kernel in the working color space of the Core Image context used to render the image.
 

@@ -6,5 +6,8 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ar
 
 # mlx.core.array.log
 
-**array.log(*self*, ***, *stream: Stream | ThreadLocalStream | Device | mlx.core.DeviceType | None = None*) → [array](mlx.core.array.md#mlx.core.array)**
-: See [log()](mlx.core.log.md#mlx.core.log).
+```python
+array.log(self, *, stream: Stream | ThreadLocalStream | Device | mlx.core.DeviceType | None = None) → array
+```
+
+See [log()](mlx.core.log.md#mlx.core.log).

@@ -20,7 +20,7 @@ Returns the element in the collection that uses the specified alias.
 - (Element) elementForAlias:(Key) alias;
 ```
 
-#### Return Value
+## Return Value
 
 An element in the collection.
 

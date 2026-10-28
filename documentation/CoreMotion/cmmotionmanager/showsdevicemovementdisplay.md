@@ -23,7 +23,7 @@ var showsDeviceMovementDisplay: Bool { get set }
 @property (nonatomic, assign) BOOL showsDeviceMovementDisplay;
 ```
 
-#### Discussion
+## Discussion
 
 When a device requires movement (for example, to calibrate the compass), the value of this property indicates if the system’s device-movement display should be shown. When a device requires movement, the block handler of type [`CMDeviceMotionHandler`](../cmdevicemotionhandler.md) reports the [`CMErrorDeviceRequiresMovement`](../cmerrordevicerequiresmovement.md) error once. By default, this property is [`false`](../../Swift/false.md).
 

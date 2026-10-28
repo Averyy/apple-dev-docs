@@ -25,7 +25,7 @@ let kCTFontFamilyNameAttribute: CFString
 extern CFStringRef const kCTFontFamilyNameAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 The value associated with this key is a [`CFString`](../CoreFoundation/cfstring.md) object.
 

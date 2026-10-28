@@ -16,7 +16,7 @@ The mode to indicate an `NSConnection` object waiting for replies.
 extern NSString * const NSConnectionReplyMode;
 ```
 
-#### Discussion
+## Discussion
 
 You should rarely need to use this mode.
 

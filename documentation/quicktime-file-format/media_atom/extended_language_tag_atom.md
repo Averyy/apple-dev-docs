@@ -6,7 +6,7 @@
 
 This atom contains the extended language tag describing the media language.
 
-#### Overview
+## Overview
 
 See [`Extended language tag atom`](../extended_language_tag_atom.md).
 

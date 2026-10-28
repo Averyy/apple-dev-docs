@@ -15,11 +15,11 @@ Sets the sample rate for the clock device.
 kern_return_t SetSampleRate(double in_sample_rate);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. For a list of error codes, see [Error Codes](../../DriverKit/error-codes.md).
 
-#### Discussion
+## Discussion
 
 If successful, changing the sample rate sends a notification to the host to update the object state.
 

@@ -25,7 +25,7 @@ func CFNumberFormatterCreateNumberFromString(_ allocator: CFAllocator!, _ format
 extern CFNumberRefCFNumberFormatterCreateNumberFromString(CFAllocatorRef allocator, CFNumberFormatterRef formatter, CFStringRef string, CFRange *rangep, CFOptionFlags options);
 ```
 
-#### Return Value
+## Return Value
 
 A new number that represents the given string. Returns `NULL` if there was a problem creating the number. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 

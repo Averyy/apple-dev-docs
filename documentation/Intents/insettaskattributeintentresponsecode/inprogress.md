@@ -25,7 +25,7 @@ case inProgress
 INSetTaskAttributeIntentResponseCodeInProgress
 ```
 
-#### Discussion
+## Discussion
 
 Return this code if you began adding modifying the task list but did not confirm that the process was complete. You might use this code when a server handles modifications and you have not yet received a confirmation from that server.
 

@@ -22,7 +22,7 @@ init(delegate: (any UILargeContentViewerInteractionDelegate)?)
 - (instancetype) initWithDelegate:(id<UILargeContentViewerInteractionDelegate>) delegate;
 ```
 
-#### Discussion
+## Discussion
 
 To add the interaction to a view, use [`addInteraction(_:)`](../uiview/addinteraction%28_%29.md).
 

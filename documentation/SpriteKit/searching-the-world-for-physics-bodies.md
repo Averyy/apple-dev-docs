@@ -5,7 +5,7 @@
 
 Cast a ray to find the physics bodies in the scene that intersect it.
 
-#### Overview
+## Overview
 
 Sometimes, it is necessary to find physics bodies in a scene. For example, you might need to:
 
@@ -18,7 +18,7 @@ In some cases, you can implement these interactions using the collisions and con
 
 However, it’s not easy to implement concepts such as line of sight using this design. To implement these, you use the scene’s physics world. With the physics world, you can search for all physics bodies along a ray or physics bodies that intersect a particular point or rectangle.
 
-##### Cast a Ray from the Center of the Scene
+### Cast a Ray from the Center of the Scene
 
 An example illustrates the basic technique. The following code shows one possible implementation of a line-of-sight detection system. It casts a ray from the origin of the scene in a particular direction, searching for the nearest physics body along the ray. If it finds a physics body, it tests the category mask to see whether this is a target it should attack. If it sees a target designated for attack, it shoots the cannon.
 
@@ -59,7 +59,7 @@ func attackTargetIfVisible() {
 }
 ```
 
-##### Try Other Search Methods
+### Try Other Search Methods
 
 Another way to implement the same behavior is to set the starting and ending positions of the ray to those of two physics bodies in your scene. For example, you might use the location of the player’s game object as one position and the position of an enemy unit as the other position.
 

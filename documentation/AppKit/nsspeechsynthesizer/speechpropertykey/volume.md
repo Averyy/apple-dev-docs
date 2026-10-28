@@ -19,7 +19,7 @@ static let volume: NSSpeechSynthesizer.SpeechPropertyKey
 extern NSSpeechPropertyKey const NSSpeechVolumeProperty;
 ```
 
-#### Discussion
+## Discussion
 
 An [`NSNumber`](../../../Foundation/nsnumber.md) that specifies the synthesizer’s speech volume.
 

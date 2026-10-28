@@ -21,11 +21,11 @@ Tells the system a widget is relevant because of a person’s fitness activity.
 static func fitness(_ condition: RelevantContext.FitnessCondition) -> RelevantContext
 ```
 
-#### Return Value
+## Return Value
 
 A contextual clue the system uses to determine the relevance of a widget in the Smart Stack on Apple Watch.
 
-#### Discussion
+## Discussion
 
 To indicate relevance based on a fitness condition, request permission to access HealthKit data:
 

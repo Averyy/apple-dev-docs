@@ -22,7 +22,7 @@ var configurationsByApplication: [AEAssessmentApplication : AEAssessmentParticip
 @property (nonatomic, copy, readonly) NSDictionary<AEAssessmentApplication *,AEAssessmentParticipantConfiguration *> * configurationsByApplication;
 ```
 
-#### Discussion
+## Discussion
 
 Access this property to get a list of the currently allowed secondary apps and their individual configurations. Add apps to the list by calling the `AEAssessmentConfiguration/setConfiguration(_:for:)` method. Remove them from the list by calling the `AEAssessmentConfiguration/remove(_:)` method.
 

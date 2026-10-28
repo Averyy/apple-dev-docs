@@ -21,7 +21,7 @@ Creates a custom octal format that includes a minimum number of digits.
 static func octal(explicitPositiveSign: Bool = false, includePrefix: Bool = false, uppercase: Bool = false, minDigits: @autoclosure @escaping () -> Int) -> OSLogIntegerFormatting
 ```
 
-#### Return Value
+## Return Value
 
 A custom octal format for integers.
 

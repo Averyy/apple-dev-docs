@@ -21,7 +21,7 @@ The request’s predicate.
 var nsPredicate: NSPredicate?
 ```
 
-#### Discussion
+## Discussion
 
 Set this configuration value to cause a [`SectionedFetchRequest`](../../sectionedfetchrequest.md) to execute a fetch with a new predicate.
 

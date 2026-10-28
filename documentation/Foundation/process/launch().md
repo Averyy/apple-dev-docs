@@ -21,7 +21,7 @@ func launch()
 - (void) launch;
 ```
 
-#### Discussion
+## Discussion
 
 Raises an `NSInvalidArgumentException` if the launch path has not been set or is invalid or if it fails to create a process.
 

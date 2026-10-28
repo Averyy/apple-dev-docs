@@ -41,11 +41,11 @@ func point(for coordinate: CLLocationCoordinate2D) -> NSPoint
 - (NSPoint) pointForCoordinate:(CLLocationCoordinate2D) coordinate;
 ```
 
-#### Return Value
+## Return Value
 
 The point in the image’s coordinate space that corresponds to the map location.
 
-#### Discussion
+## Discussion
 
 If you want to display additional views or content on top of the image, you can use this method to find an appropriate point at which to draw those items.
 

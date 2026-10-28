@@ -19,11 +19,11 @@
 int (*)(const struct AudioServerPlugInHostInterface *, unsigned int, unsigned long long, void *) RequestDeviceConfigurationChange;
 ```
 
-#### Return Value
+## Return Value
 
 An OSStatus indicating success or failure. Note that even if this method indicates success, the Host may still abort the change later.
 
-#### Discussion
+## Discussion
 
 Plug-ins invoke this routine to tell the Host to initiate a configuration change operation.
 

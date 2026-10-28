@@ -15,7 +15,7 @@ Manually disconnects and closes the data channel.
 func disconnect()
 ```
 
-#### Discussion
+## Discussion
 
 Sets the [`channelStatus`](./channelstatus-swift.property.md) to [`FoveatedStreamingSession.MessageChannel.ChannelStatus.closed`](./channelstatus-swift.enum/closed.md).
 

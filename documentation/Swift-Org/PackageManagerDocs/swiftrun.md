@@ -10,7 +10,7 @@ framework: "Swift-Org/PackageManagerDocs"
 
 Build and run an executable product.
 
-#### Overview
+## Overview
 
 ```
 run [--package-path=<package-path>]
@@ -275,7 +275,7 @@ SEE ALSO: [swift build](./swiftbuild.md), [swift package](./swiftpackagecommands
 
 *Show help information.*
 
-#### run.help
+## run.help
 
 Show subcommand help information.
 

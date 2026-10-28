@@ -15,7 +15,7 @@ A response that contains the customer’s transaction history for an app.
 object HistoryResponse
 ```
 
-#### Discussion
+## Discussion
 
 The [`Get Transaction History`](./get-transaction-history.md) endpoint returns the [`HistoryResponse`](./historyresponse.md). This response contains results for all in-app purchase product types: auto-renewable subscriptions, non-renewing subscriptions, non-consumables, and consumables. The result includes transactions in any state, including transactions that are refunded or revoked, and transactions that the app has or hasn’t marked as finished.
 

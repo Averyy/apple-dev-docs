@@ -15,13 +15,13 @@ A data category by which to sort the table in descending or ascending order.
 object DataTableSorting
 ```
 
-#### Discussion
+## Discussion
 
 In a `DataTable` object, use the `sortBy` property to sort data already in a table. You can specify which data is to be sorted and the order (ascending or descending). If this property is not defined, data is displayed in the order it is provided in the [`RecordStore`](./recordstore.md).
 
 This object can be used in [`DataTable`](./datatable.md).
 
-##### Example
+### Example
 
 ```json
 {

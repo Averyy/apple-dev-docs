@@ -24,7 +24,7 @@ var deviceName: String { get }
 @property (nonatomic, copy, readonly) NSString * deviceName;
 ```
 
-#### Discussion
+## Discussion
 
 If [`isRemotePass`](./isremotepass.md) is [`true`](../../Swift/true.md), this property contains the name of the paired device that stores the pass; otherwise, it contains the name of the device.
 

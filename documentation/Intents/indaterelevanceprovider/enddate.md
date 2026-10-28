@@ -31,7 +31,7 @@ var endDate: Date? { get }
 @property (atomic, copy, readonly, nullable) NSDate * endDate;
 ```
 
-#### Discussion
+## Discussion
 
 If the end date isn’t specified when creating the [`INDateRelevanceProvider`](../indaterelevanceprovider.md) object, this property is `nil`.
 

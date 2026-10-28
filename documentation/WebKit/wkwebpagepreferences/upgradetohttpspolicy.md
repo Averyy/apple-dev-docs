@@ -21,7 +21,7 @@ enum UpgradeToHTTPSPolicy
 enum WKWebpagePreferencesUpgradeToHTTPSPolicy : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 A secure navigation policy represents whether or not there is a preference for loading a webpage with https, and how failures should be handled.
 

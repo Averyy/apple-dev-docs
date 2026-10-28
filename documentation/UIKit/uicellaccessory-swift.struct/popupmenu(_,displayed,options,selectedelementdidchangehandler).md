@@ -18,7 +18,7 @@ Creates a popup menu system accessory with the specified menu, display state, co
 static func popUpMenu(_ menu: UIMenu, displayed: UICellAccessory.DisplayedState = .always, options: UICellAccessory.PopUpMenuOptions = PopUpMenuOptions(), selectedElementDidChangeHandler: UICellAccessory.MenuSelectedElementDidChangeHandler? = nil) -> UICellAccessory
 ```
 
-#### Return Value
+## Return Value
 
 A configured popup menu cell accessory that appears as a pair of chevrons that point upward and downward. This accessory indicates that tapping anywhere in the cell presents a popup menu. This accessory appears on the trailing edge of the cell.
 

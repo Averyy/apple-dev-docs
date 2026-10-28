@@ -25,7 +25,7 @@ let NSURLErrorBackgroundTaskCancelledReasonKey: String
 extern NSString * const NSURLErrorBackgroundTaskCancelledReasonKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value associated with this key is an [`NSNumber`](./nsnumber.md). For a list of possible values, see URL Session Background Task Cancellation Reasons.
 

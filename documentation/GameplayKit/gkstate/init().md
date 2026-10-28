@@ -24,11 +24,11 @@ init()
 - (instancetype) init;
 ```
 
-#### Return Value
+## Return Value
 
 A state object.
 
-#### Discussion
+## Discussion
 
 Override this method to perform custom initialization in your state classes.
 

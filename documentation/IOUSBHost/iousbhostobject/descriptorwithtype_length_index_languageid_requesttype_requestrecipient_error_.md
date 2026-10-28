@@ -16,11 +16,11 @@ Retrieves a descriptor from the cache or the device.
 - (const IOUSBDescriptor *) descriptorWithType:(tIOUSBDescriptorType) type length:(NSUInteger *) length index:(NSUInteger) index languageID:(NSUInteger) languageID requestType:(tIOUSBDeviceRequestTypeValue) requestType requestRecipient:(tIOUSBDeviceRequestRecipientValue) requestRecipient error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 A pointer to the cached descriptor, or `nil` if no matching descriptor returns.
 
-#### Discussion
+## Discussion
 
 This method searches the descriptor cache for the descriptor that matches the input arguments. If the descriptor isn’t in the cache, the method issues a `GET_DESCRIPTOR` control request (See USB 3.2, 9.4.3.) to retrieve the descriptor from the device. If the device request is successful, the method adds the retrieved descriptor to the cache.
 

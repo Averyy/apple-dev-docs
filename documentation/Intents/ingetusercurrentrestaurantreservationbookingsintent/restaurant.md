@@ -31,7 +31,7 @@ var restaurant: INRestaurant? { get set }
 @property (atomic, copy, nullable) INRestaurant * restaurant;
 ```
 
-#### Discussion
+## Discussion
 
 Use the restaurant information in this property as a filter when searching for the user’s current reservations. Associate any reservation you return with the specified restaurant If this property is `nil`, your search results can include reservations at any restaurant.
 

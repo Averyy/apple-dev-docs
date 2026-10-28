@@ -15,7 +15,7 @@ A property of IOMedia objects.
 #define kIOMediaEjectableKey
 ```
 
-#### Discussion
+## Discussion
 
 The kIOMediaEjectableKey property has an OSBoolean value and describes whether the media is ejectable from the drive mechanism under software control. Implies IOMediaRemovable is also true.
 

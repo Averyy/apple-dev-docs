@@ -19,7 +19,7 @@ Initializes a passkey credential request, providing additional passkey registrat
 convenience init(credentialIdentity: ASPasskeyCredentialIdentity, clientDataHash: Data, userVerificationPreference: ASAuthorizationPublicKeyCredentialUserVerificationPreference, supportedAlgorithms: [ASCOSEAlgorithmIdentifier], extensionInput: ASPasskeyRegistrationCredentialExtensionInput?)
 ```
 
-#### Discussion
+## Discussion
 
 For credential assertion requests, supply an empty array for `supportedAlgorithms`. For credential registration requests, supply an array of one or more [`ASCOSEAlgorithmIdentifier`](../ascosealgorithmidentifier.md) values.
 

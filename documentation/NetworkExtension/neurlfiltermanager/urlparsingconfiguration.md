@@ -18,7 +18,7 @@ A property to configure the filter’s parser behavior.
 var urlParsingConfiguration: NEURLFilterManager.ParsingConfiguration { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to control which URL components to exclude, and to customize parsing behavior during sub-URL enumeration. This determines how the filter parses URLs which sub-URLs it generates for matching against the filter data set.
 

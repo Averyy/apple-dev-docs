@@ -19,7 +19,7 @@ class AVCaptureScreenInput
 @interface AVCaptureScreenInput : AVCaptureInput
 ```
 
-#### Overview
+## Overview
 
 > ❗ **Important**:  Starting in macOS 12.3, use the [ScreenCaptureKit](../ScreenCaptureKit/ScreenCaptureKit.md) framework for screen recording instead.
 

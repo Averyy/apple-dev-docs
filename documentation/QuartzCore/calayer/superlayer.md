@@ -24,7 +24,7 @@ var superlayer: CALayer? { get }
 @property (readonly, nullable) CALayer * superlayer;
 ```
 
-#### Discussion
+## Discussion
 
 The superlayer manages the layout of its sublayers.
 

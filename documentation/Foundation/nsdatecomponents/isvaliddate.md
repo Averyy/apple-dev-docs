@@ -25,7 +25,7 @@ var isValidDate: Bool { get }
 @property (readonly, getter=isValidDate) BOOL validDate;
 ```
 
-#### Discussion
+## Discussion
 
 If the [`timeZone`](./timezone.md) property is set on the receiver, the time zone property value is used. If the [`calendar`](./calendar.md) property is not set on the receiver, `nil` is returned.
 

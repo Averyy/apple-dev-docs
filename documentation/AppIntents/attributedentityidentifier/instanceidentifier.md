@@ -21,7 +21,7 @@ The string that uniquely identifies this specific entity instance.
 let instanceIdentifier: String
 ```
 
-#### Discussion
+## Discussion
 
 This identifier distinguishes between different instances of the same entity type. It must be unique within the scope of its entity type.
 

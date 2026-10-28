@@ -24,7 +24,7 @@ enum Capability
 enum PKPassLibraryCapability : NSInteger;
 ```
 
-#### Discussion
+## Discussion
 
 Pass a capability to [`authorizationStatus(for:)`](./authorizationstatus%28for%29.md) or [`requestAuthorization(for:completion:)`](./requestauthorization%28for,completion%29.md) to check or request someone’s permission to use that feature. Currently, [`PKPassLibrary.Capability.backgroundAddPasses`](./capability/backgroundaddpasses.md) is the only capability PassKit defines; it controls whether your app can add passes to Wallet automatically, without prompting the person to review or confirm each pass.
 

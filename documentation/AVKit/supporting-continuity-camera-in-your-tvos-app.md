@@ -10,7 +10,7 @@ Capture high-quality photos, video, and audio in your Apple TV app by connecting
 - tvOS 17.0+
 - Xcode 15.3+
 
-#### Overview
+## Overview
 
 Continuity Camera brings the power of the cameras and microphones from an iOS or iPadOS device to Apple TV, including advanced features like Center Stage and Portrait mode.
 
@@ -18,7 +18,7 @@ This sample project provides an example implementation that accesses a camera an
 
 > **Note**: This sample code project is associated with WWDC23 session 10256: [Discover Continuity Camera on tvOS](https://developer.apple.com/wwdc23/10256).
 
-##### Configure the sample code project
+### Configure the sample code project
 
 To run this sample app, you need the following:
 
@@ -31,7 +31,7 @@ Continuity Camera works with all iPhone and iPad models that support video effec
 
 The first time you run the app on an Apple TV, the system prompts you for permission to access to the camera and microphone. The app needs these permissions to function correctly.
 
-##### Present the continuity device picker
+### Present the continuity device picker
 
 When the app launches, it immediately presents a continuity device picker by calling the [`continuityDevicePicker(isPresented:onDidConnect:)`](../SwiftUI/view/continuitydevicepicker%28ispresented,ondidconnect%29.md) modifier in its SwiftUI implementation.
 
@@ -70,7 +70,7 @@ The app’s `handleNewConnectionForDevice(_:)` method is a minimal implementatio
 
 > **Note**: [`UIKit`](../UIKit/UIKit.md) based apps can create a continuity device picker by creating an [`AVContinuityDevicePickerViewController`](./avcontinuitydevicepickerviewcontroller.md) instance.
 
-##### Connect a video device to a capture session
+### Connect a video device to a capture session
 
 The app’s `CaptureManager` class creates and maintains an [`AVCaptureSession`](../AVFoundation/avcapturesession.md) instance for the app’s lifetime. The capture manager’s `setActiveVideoInput(_:)` method creates an [`AVCaptureDeviceInput`](../AVFoundation/avcapturedeviceinput.md) instance from the video device, and then tests to see whether it’s an acceptable input for the capture session.
 
@@ -114,7 +114,7 @@ internal var activeInput: AVCaptureDeviceInput? {
 
 The `willSet` observer removes the capture session’s current input, if applicable. The `didSet` observer adds the new input to the capture session. The `didSet` observer also updates the `isActive` Boolean property, which can cause the app to change its behavior and UI.
 
-##### Register for capture device updates
+### Register for capture device updates
 
 The app receives various updates related to its capture device by registering with [NotificationCenter](../Foundation/notificationcenter.md) and with key-value observation (KVO). See [Using Key-Value Observing in Swift](../Swift/using-key-value-observing-in-swift.md) and [NSKeyValueObserving](../ObjectiveC/nskeyvalueobserving.md) for more information.
 
@@ -141,7 +141,7 @@ func observeCamera(_ camera: AVCaptureDevice) {
 
 The app’s `CaptureDeviceNotificationObserver` structure listens for the these events on behalf of the capture manager and calls the manager’s `notification(_:for:)` method for each event it gets from Notification Center.
 
-##### Configure the audio engine with an audio input device
+### Configure the audio engine with an audio input device
 
 At launch, the app creates an `AudioCapturer` instance, which checks for audio inputs (microphones). It does this by inspecting the [`AVAudioSession.availableInputs`](../AVFAudio/avaudiosession/availableinputs.md) property of the [`AVAudioSession`](../AVFAudio/avaudiosession.md) type’s shared instance, and then monitoring the property for updates.
 
@@ -176,7 +176,7 @@ The method configures the audio engine for a conference call scenario when the a
 3. Configures the audio engine for conversational audio.
 4. Starts the audio engine.
 
-##### Configure the audio engine for a call
+### Configure the audio engine for a call
 
 The third step is important for conferencing apps that use Voice over IP (VoIP). The `configureAudioSessionForVoiceChat` method configures the audio session by passing the [`.voiceChat`](../AVFAudio/avaudiosession/mode-swift.struct/voicechat.md) mode to the audio session’s [`setCategory(_:options:)`](../AVFAudio/avaudiosession/setcategory%28_%29.md) method.
 

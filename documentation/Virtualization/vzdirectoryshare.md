@@ -19,7 +19,7 @@ class VZDirectoryShare
 @interface VZDirectoryShare : NSObject
 ```
 
-#### Overview
+## Overview
 
 A directory share defines how the system exposes host directories to a guest VM.
 

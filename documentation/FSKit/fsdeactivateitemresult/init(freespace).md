@@ -19,7 +19,7 @@ init?(freeSpace: FSFreeSpace?)
 - (instancetype) initWithFreeSpace:(FSFreeSpace *) freeSpace;
 ```
 
-#### Return Value
+## Return Value
 
 A populated result instance, or `nil` if validation fails.
 

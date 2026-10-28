@@ -16,7 +16,7 @@ get showsCompass(): FeatureVisibility;
 set showsCompass(value: FeatureVisibility);
 ```
 
-#### Discussion
+## Discussion
 
 By default, the compass is adaptive ([`Adaptive`](../featurevisibility/adaptive.md)), meaning that it isn’t visible when [`rotation`](./rotation.md) is `0` on touch devices. Otherwise, the compass is visible.
 

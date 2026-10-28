@@ -19,7 +19,7 @@ A markup component.
 protocol Markup : Sendable
 ```
 
-#### Overview
+## Overview
 
 > **Note**: This protocol is designed for PaperKit’s internal types only. Client conformance is not supported.
 

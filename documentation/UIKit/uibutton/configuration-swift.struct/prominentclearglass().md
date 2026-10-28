@@ -18,7 +18,7 @@ Creates a configuration for a button that has a prominent, clear Liquid Glass st
 static func prominentClearGlass() -> UIButton.Configuration
 ```
 
-#### Discussion
+## Discussion
 
 In tvOS, this button style applies a Liquid Glass effect regardless of whether the button has focus.
 

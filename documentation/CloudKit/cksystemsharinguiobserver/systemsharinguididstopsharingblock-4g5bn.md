@@ -19,7 +19,7 @@ A callback block the system invokes after the success or failure of a share dele
 @property (copy, nullable) void (^)(CKRecordID *, NSError *) systemSharingUIDidStopSharingBlock;
 ```
 
-#### Discussion
+## Discussion
 
 The system invokes this block on the success or failure of a [`CKShare`](../ckshare.md) delete when the user decides to stop sharing through the system sharing UI.
 

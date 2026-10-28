@@ -20,7 +20,7 @@ A property that belongs to a dynamic generation schema.
 struct Property
 ```
 
-#### Overview
+## Overview
 
 Fields are named members of object types. Fields are strongly typed and have optional descriptions.
 

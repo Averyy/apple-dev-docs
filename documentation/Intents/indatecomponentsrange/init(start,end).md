@@ -25,11 +25,11 @@ convenience init(start startDateComponents: DateComponents?, end endDateComponen
 - (instancetype) initWithStartDateComponents:(NSDateComponents *) startDateComponents endDateComponents:(NSDateComponents *) endDateComponents;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized [`INDateComponentsRange`](../indatecomponentsrange.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method to initialize a date range with specific parameters. In a date components object, include only the values you want to specify, such as a range that measures only in days or a range that measures only in minutes.
 

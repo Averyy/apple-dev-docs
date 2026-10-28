@@ -23,7 +23,7 @@ func makeArray<U>(of scalarType: U.Type, channelCount: Int) -> [U]
 
 Available when `Format` is `vImage.DynamicPixelFormat`.
 
-#### Return Value
+## Return Value
 
 An array of `scalarType` values that  contains the source buffer’s contents.
 

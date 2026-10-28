@@ -20,7 +20,7 @@ The currently selected tool in the tool picker.
 var selectedTool: any PKTool { get set }
 ```
 
-#### Discussion
+## Discussion
 
 This is one of the available tools associated with a [`PKCanvasView`](../pkcanvasview.md) that adopt the [`PKTool`](../pktool-swift.protocol.md) protocol.
 

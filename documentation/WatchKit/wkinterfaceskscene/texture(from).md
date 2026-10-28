@@ -19,11 +19,11 @@ func texture(from node: SKNode) -> SKTexture?
 - (SKTexture *) textureFromNode:(SKNode *) node;
 ```
 
-#### Return Value
+## Return Value
 
 A SpriteKit texture that holds the rendered image.
 
-#### Discussion
+## Discussion
 
 The `node` being rendered does not need to appear in the interface’s presented scene. The new texture is created with a size equal to the rectangle returned by the `node`’s [`calculateAccumulatedFrame()`](../../SpriteKit/sknode/calculateaccumulatedframe%28%29.md) method. If the `node` is not a scene node, it is rendered with a clear background color (`[SKColor clearColor]`).
 

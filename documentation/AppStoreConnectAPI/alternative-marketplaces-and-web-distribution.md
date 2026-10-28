@@ -4,7 +4,7 @@
 
 Manage keys, packages, and search for alternative app distribution.
 
-#### Overview
+## Overview
 
 Use the APIs in this collection to help facilitate the distribution of your apps to users in the EU on an alternative app marketplace or from your website. To learn more, see [Update on apps distributed in the European Union](https://developer.apple.com/support/dma-and-apps-in-the-eu/).
 

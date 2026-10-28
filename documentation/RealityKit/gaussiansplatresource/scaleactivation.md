@@ -19,7 +19,7 @@ The transformation the framework applies to the scale values before rendering.
 final var scaleActivation: GaussianSplatResource.ActivationFunction
 ```
 
-#### Discussion
+## Discussion
 
 The default value applies no transformation.
 

@@ -5,7 +5,7 @@
 
 Identifiers for supported audio formats.
 
-#### Overview
+## Overview
 
 Use these identifiers to test for the presence of audio codecs on a system. If a given codec is present, you can use its identifier to specify that codec for data encoding or decoding, according to the capabilities of the codec. For more information, see [Core Audio](../CoreAudio/CoreAudio.md).
 

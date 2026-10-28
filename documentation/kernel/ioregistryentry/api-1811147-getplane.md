@@ -12,11 +12,11 @@ static const IORegistryPlane * getPlane(
  const char *name );
 ```
 
-#### Return Value
+## Return Value
 
 A pointer to the plane object, or zero if no such plane exists. The returned plane should not be released.
 
-#### Overview
+## Overview
 
 Planes are usually provided as globals by the creator, eg. gIOServicePlane, gIODeviceTreePlane, or gIOAudioPlane, however they may also be looked up by name with this method.
 

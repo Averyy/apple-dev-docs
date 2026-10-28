@@ -19,7 +19,7 @@ func setAccessibilityValue(_ accessibilityValue: String?)
 - (void) setAccessibilityValue:(NSString *) accessibilityValue;
 ```
 
-#### Discussion
+## Discussion
 
 When an object has a static label and a dynamic value, set this property to a string that describes the value. For example, a switch object can have a label describing the meaning of the switch, but the value is either On or Off.
 

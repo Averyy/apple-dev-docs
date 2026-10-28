@@ -25,11 +25,11 @@ optional func tokenSession(_ session: TKTokenSession, beginAuthFor operation: TK
 - (TKTokenAuthOperation *) tokenSession:(TKTokenSession *) session beginAuthForOperation:(TKTokenOperation) operation constraint:(TKTokenOperationConstraint) constraint error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 The resulting context of the operation, or `nil` if an error occurred.
 
-#### Discussion
+## Discussion
 
 If you return an instance of a subclass of [`TKTokenAuthOperation`](../tktokenauthoperation.md) that is provided by the CryptoTokenKit framework, the system will first fill in the context-specific properties, such as the password, before calling the `finishWithError:` method on the context.
 

@@ -16,7 +16,7 @@ Defines a pointer to a function that disposesof a converter object.
 typedef OSStatus (*TECPluginDisposeEncodingConverterPtr)(TECObjectRef newEncodingConverter, TECConverterContextRec *plugContext);
 ```
 
-#### Return Value
+## Return Value
 
 A resultcode. See [Result Codes](./carbon_core/text_encoding_conversion_manager.md#1664324).
 

@@ -16,7 +16,7 @@ An event object that contains the shipping method.
 interface ApplePayShippingMethodSelectedEvent
 ```
 
-#### Overview
+## Overview
 
 The event handler [`onshippingmethodselected`](./applepaysession/onshippingmethodselected.md) receives this event object when the user selects a shipping method.
 

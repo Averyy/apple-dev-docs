@@ -25,7 +25,7 @@ static let quotationEndDelimiterKey: NSLocale.Key
 extern NSLocaleKey const NSLocaleQuotationEndDelimiterKey;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is an `NSString` object; for example, `"”"`, `"“"`, `"»"`, or `"」"`.
 

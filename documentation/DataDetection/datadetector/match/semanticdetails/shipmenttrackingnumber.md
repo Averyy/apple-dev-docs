@@ -21,7 +21,7 @@ A match that the data detector determines represents a shipment tracking number.
 struct ShipmentTrackingNumber
 ```
 
-#### Discussion
+## Discussion
 
 The [`carrier`](./shipmenttrackingnumber/carrier.md) property is a string that represents the carrier or service name, and the [`trackingNumber`](./shipmenttrackingnumber/trackingnumber.md) is the number used by the carrier to track the package. The [`trackingURL`](./shipmenttrackingnumber/trackingurl.md) may contain a URL that someone can use to track the progress of the delivery.
 

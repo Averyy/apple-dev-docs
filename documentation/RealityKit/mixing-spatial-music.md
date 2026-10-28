@@ -10,7 +10,7 @@ Preview ray-traced reverb by adjusting a spatialized multitrack audio mix in an 
 - visionOS 27.0+
 - Xcode 27.0+
 
-#### Overview
+## Overview
 
 > **Note**: This sample code project is associated with WWDC26 session 279: [Explore advances in RealityKit](https://developer.apple.com/videos/play/wwdc2026/279/).
 

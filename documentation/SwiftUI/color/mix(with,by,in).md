@@ -21,7 +21,7 @@ Returns a version of self mixed with `rhs` by the amount specified by `fraction`
 func mix(with rhs: Color, by fraction: Double, in colorSpace: Gradient.ColorSpace = .perceptual) -> Color
 ```
 
-#### Return Value
+## Return Value
 
 A new `Color` based on `self` and `rhs`.
 

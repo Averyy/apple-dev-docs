@@ -19,7 +19,7 @@ A localized accessibility label converting a specific detection type into a broa
 + (NSString *) accessibilityLabelForDetectionType:(CNDetectionType) detectionType;
 ```
 
-#### Return Value
+## Return Value
 
 A string representing a localized accessibility label converting a specific detection type into a broad category such as a person, pet, and so on.
 

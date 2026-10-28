@@ -22,7 +22,7 @@ The current document model.
 <Document> @MainActor @preconcurrency var document: Document { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Changes to the document dirty the document state, indicating that it needs to be saved. SwiftUI doesn’t automatically register undo actions.
 

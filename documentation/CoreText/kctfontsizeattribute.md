@@ -25,7 +25,7 @@ let kCTFontSizeAttribute: CFString
 extern CFStringRef const kCTFontSizeAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 Creating a font with this unspecified will default to a point size of 12.0. The value for this key is represented as a [`CFNumber`](../CoreFoundation/cfnumber.md) object.
 

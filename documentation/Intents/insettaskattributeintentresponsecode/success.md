@@ -25,7 +25,7 @@ case success
 INSetTaskAttributeIntentResponseCodeSuccess
 ```
 
-#### Discussion
+## Discussion
 
 Use this code after modifying the task successfully. Your response should contain the details of the updated task information.
 

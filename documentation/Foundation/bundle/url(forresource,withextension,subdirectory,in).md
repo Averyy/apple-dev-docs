@@ -25,7 +25,7 @@ class func url(forResource name: String?, withExtension ext: String?, subdirecto
 + (NSURL *) URLForResource:(NSString *) name withExtension:(NSString *) ext subdirectory:(NSString *) subpath inBundleWithURL:(NSURL *) bundleURL;
 ```
 
-#### Return Value
+## Return Value
 
 The file URL for the resource file or `nil` if the file could not be located.
 

@@ -19,7 +19,7 @@ var canCollapse: Bool { get set }
 @property BOOL canCollapse;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`false`](../../Swift/false.md).
 

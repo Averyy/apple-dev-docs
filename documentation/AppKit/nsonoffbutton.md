@@ -17,7 +17,7 @@ The first click highlights the button; a second click returns it to the normal (
 static const NSButtonType NSOnOffButton;
 ```
 
-#### Discussion
+## Discussion
 
 This option is called On Off in Interface Builder’s Button inspector.
 

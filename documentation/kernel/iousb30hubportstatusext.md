@@ -16,7 +16,7 @@ struct IOUSB30HubPortStatusExt {
 };
 ```
 
-#### Discussion
+## Discussion
 
 For information about this type, see USB 3.2, 10.16.2.6.
 

@@ -25,7 +25,7 @@ static let assetDirectoryURLs: SCNSceneSource.LoadingOption
 extern SCNSceneSourceLoadingOption const SCNSceneSourceAssetDirectoryURLsKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is an [`NSArray`](../../../Foundation/nsarray.md) object containing one or more [`NSURL`](../../../Foundation/nsurl.md) objects, each of which references a directory.
 

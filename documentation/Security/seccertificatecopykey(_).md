@@ -25,11 +25,11 @@ func SecCertificateCopyKey(_ certificate: SecCertificate) -> SecKey?
 SecKeyRefSecCertificateCopyKey(SecCertificateRef certificate);
 ```
 
-#### Return Value
+## Return Value
 
 The public key. In Objective-C, free this key with a call to the [`CFRelease`](../CoreFoundation/cfrelease.md) function when you are done with it.
 
-#### Discussion
+## Discussion
 
 The return reference is `NULL` if the public key has an encoding issue or uses an unsupported algorithm.
 

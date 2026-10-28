@@ -24,7 +24,7 @@ protocol CIImageProcessorOutput
 @protocol CIImageProcessorOutput
 ```
 
-#### Overview
+## Overview
 
 Your app does not define classes that adopt this protocol; Core Image provides an object of this type when applying a custom image processor you create with a [`CIImageProcessorKernel`](./ciimageprocessorkernel.md) subclass.
 

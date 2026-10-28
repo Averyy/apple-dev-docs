@@ -24,7 +24,7 @@ func setScissorRects(_ scissorRects: [MTLScissorRect])
 
 - [Rendering to multiple viewports in a draw command](../rendering-to-multiple-viewports-in-a-draw-command.md)
 
-#### Discussion
+## Discussion
 
 The rendering pipeline discards any fragments that lie outside the scissor rectangle. The default scissor rectangle is the same size as the current render attachment, with its origin coordinates in the upper-left corner at `(0, 0)`.
 

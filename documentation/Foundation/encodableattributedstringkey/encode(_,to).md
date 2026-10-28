@@ -22,7 +22,7 @@ Encodes a value to the provided encoder.
 static func encode(_ value: Self.Value, to encoder: any Encoder) throws
 ```
 
-#### Discussion
+## Discussion
 
 This method throws an error if writing to the encoder fails.
 

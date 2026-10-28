@@ -29,7 +29,7 @@ optional func player(_ player: GKPlayer, receivedExchangeReplies replies: [GKTur
 
 - [Exchanging data between players in turn-based games](../exchanging-data-between-players-in-turn-based-games.md)
 
-#### Discussion
+## Discussion
 
 GameKit sends this turn-based event to the current participant and the participant who initiates the exchange request.
 

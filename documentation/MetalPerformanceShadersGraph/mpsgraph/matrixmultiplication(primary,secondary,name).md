@@ -24,7 +24,7 @@ func matrixMultiplication(primary primaryTensor: MPSGraphTensor, secondary secon
 - (MPSGraphTensor *) matrixMultiplicationWithPrimaryTensor:(MPSGraphTensor *) primaryTensor secondaryTensor:(MPSGraphTensor *) secondaryTensor name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid tensor containing the product of the input matrices.
 

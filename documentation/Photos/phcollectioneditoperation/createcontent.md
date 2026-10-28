@@ -24,7 +24,7 @@ case createContent
 PHCollectionEditOperationCreateContent
 ```
 
-#### Discussion
+## Discussion
 
 A collection that supports creating new items also supports duplicating the items it contains.
 

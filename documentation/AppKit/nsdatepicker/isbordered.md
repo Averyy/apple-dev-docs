@@ -19,7 +19,7 @@ var isBordered: Bool { get set }
 @property (getter=isBordered) BOOL bordered;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains [`true`](../../Swift/true.md) if the date picker has a plain boarder; otherwise, [`false`](../../Swift/false.md).
 

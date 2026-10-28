@@ -24,7 +24,7 @@ var entities: [GKEntity] { get }
 @property (nonatomic, readonly) NSArray<GKEntity *> * entities;
 ```
 
-#### Discussion
+## Discussion
 
 When you add entities (and their components) to a scene in the Xcode SpriteKit scene editor, Xcode automatically adds them to this array.
 

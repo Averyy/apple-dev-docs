@@ -18,7 +18,7 @@ A button style for buttons that emulate links.
 
 Available when `Self` is `LinkButtonStyle`.
 
-#### Discussion
+## Discussion
 
 To apply this style to a button, or to a view that contains buttons, use the [`buttonStyle(_:)`](../view/buttonstyle%28_%29.md) modifier.
 

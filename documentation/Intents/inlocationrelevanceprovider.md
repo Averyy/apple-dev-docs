@@ -22,7 +22,7 @@ class INLocationRelevanceProvider
 @interface INLocationRelevanceProvider : INRelevanceProvider
 ```
 
-#### Overview
+## Overview
 
 Ask the user for permission to use their location before providing shortcuts to [`INRelevantShortcutStore`](./inrelevantshortcutstore.md) that include a location relevance provider. If the user gives your app permission to access their location While In Use or Always_,_ shortcuts your app provides can influence widget stacks and the Siri watch face.
 

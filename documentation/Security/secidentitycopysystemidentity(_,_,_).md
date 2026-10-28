@@ -19,11 +19,11 @@ func SecIdentityCopySystemIdentity(_ domain: CFString, _ idRef: UnsafeMutablePoi
 OSStatus SecIdentityCopySystemIdentity(CFStringRef domain, SecIdentityRef*idRef, CFStringRef*actualDomain);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
-#### Discussion
+## Discussion
 
 If no system identity exists for the specified domain, a domain specific alternate may be returned instead. This is typically (but not exclusively) the system default identity. ([`kSecIdentityDomainDefault`](./ksecidentitydomaindefault.md)).
 

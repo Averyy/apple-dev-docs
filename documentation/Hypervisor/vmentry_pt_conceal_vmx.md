@@ -19,7 +19,7 @@ var VMENTRY_PT_CONCEAL_VMX: UInt32 { get }
 VMENTRY_PT_CONCEAL_VMX
 ```
 
-#### Discussion
+## Discussion
 
 Must be `0`.
 

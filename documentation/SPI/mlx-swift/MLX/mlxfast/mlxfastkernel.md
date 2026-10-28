@@ -17,7 +17,7 @@ Container for a kernel created by [`callAsFunction(_:template:grid:threadGroup:o
 final class MLXFastKernel
 ```
 
-#### Overview
+## Overview
 
 The [`callAsFunction(_:template:grid:threadGroup:outputShapes:outputDTypes:initValue:verbose:stream:)`](./mlxfastkernel/callasfunction%28_,template,grid,threadgroup,outputshapes,outputdtypes,initvalue,verbose,stream%29.md) can be used to evaluate the kernel with inputs:
 

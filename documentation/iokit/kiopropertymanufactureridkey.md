@@ -14,7 +14,7 @@
 #define kIOPropertyManufacturerIDKey
 ```
 
-#### Discussion
+## Discussion
 
 This key is used to indicate the card manufacturer ID.
 

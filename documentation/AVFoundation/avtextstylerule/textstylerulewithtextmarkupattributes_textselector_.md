@@ -20,7 +20,7 @@ Creates a new text style rule object using the specified style attributes and te
 + (AVTextStyleRule *) textStyleRuleWithTextMarkupAttributes:(NSDictionary<NSString *,id> *) textMarkupAttributes textSelector:(NSString *) textSelector;
 ```
 
-#### Return Value
+## Return Value
 
 A new text style rule object with the specified attributes and range information.
 

@@ -21,7 +21,7 @@ init(vasCommandConfigurations commandConfigurations: [NFCVASCommandConfiguration
 - (instancetype) initWithVASCommandConfigurations:(NSArray<NFCVASCommandConfiguration *> *) commandConfigurations delegate:(id<NFCVASReaderSessionDelegate>) delegate queue:(dispatch_queue_t) queue;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized VAS reader session object.
 

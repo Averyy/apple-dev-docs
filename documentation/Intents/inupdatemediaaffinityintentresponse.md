@@ -24,7 +24,7 @@ class INUpdateMediaAffinityIntentResponse
 @interface INUpdateMediaAffinityIntentResponse : INIntentResponse
 ```
 
-#### Overview
+## Overview
 
 Use an [`INUpdateMediaAffinityIntentResponse`](./inupdatemediaaffinityintentresponse.md) object to specify the results from trying to update the user’s affinity for a media item. After performing the add action using the criteria specified in the [`INUpdateMediaAffinityIntent`](./inupdatemediaaffinityintent.md) object, create an instance of this class with the results of the action. Siri communicates the response status to the user at appropriate times.
 

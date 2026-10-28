@@ -23,7 +23,7 @@ case cooperative
 AVCaptureCenterStageControlModeCooperative
 ```
 
-#### Discussion
+## Discussion
 
 In this mode, it’s your app’s responsibilitiy to honor user intent and make center stage active when they request. Because the user can change the enabled state through Control Center, key-value observe the [`isCenterStageEnabled`](../iscenterstageenabled.md) property value and update your app state appropriately.
 

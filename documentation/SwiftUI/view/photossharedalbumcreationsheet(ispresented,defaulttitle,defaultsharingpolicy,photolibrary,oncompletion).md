@@ -20,7 +20,7 @@ nonisolated
 func photosSharedAlbumCreationSheet(isPresented: Binding<Bool>, defaultTitle: String? = nil, defaultSharingPolicy: PHSharedAlbumCreationSharingPolicy? = nil, photoLibrary: PHPhotoLibrary, onCompletion: ((PHSharedAlbumCreationResult?) -> Void)? = nil) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 > **Remark**:  When creation is finished, `onCompletion` will be called before`isPresented` is set to `false`. If the user cancels creation, `isPresented` will be set to `false` and `onCompletion` will not be called.
 

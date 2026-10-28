@@ -22,7 +22,7 @@ class PKResponderState
 @interface PKResponderState : NSObject
 ```
 
-#### Overview
+## Overview
 
 Access a responder’s `PKResponderState` through the `pencilKitResponderState` property on any `UIResponder`. Use it to attach a tool picker to a specific view and control when that picker is visible. Tool picker visibility follows the responder chain: if a responder’s visibility is set to `PKToolPickerVisibilityInherited`, it defers to the next responder in the chain. If no responder in the chain specifies a visibility, the tool picker defaults to visible.
 

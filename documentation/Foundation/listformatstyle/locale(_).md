@@ -21,7 +21,7 @@ Modifies the list format style to use the specified locale.
 func locale(_ locale: Locale) -> ListFormatStyle<Style, Base>
 ```
 
-#### Return Value
+## Return Value
 
 A list format style with the provided locale.
 

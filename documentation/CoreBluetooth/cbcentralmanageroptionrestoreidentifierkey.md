@@ -25,7 +25,7 @@ let CBCentralManagerOptionRestoreIdentifierKey: String
 extern NSString * const CBCentralManagerOptionRestoreIdentifierKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is an [`NSString`](../Foundation/nsstring.md). The system uses this UID to identify a specific [`CBCentralManager`](./cbcentralmanager.md), so the UID must be identical across executions of the app.
 

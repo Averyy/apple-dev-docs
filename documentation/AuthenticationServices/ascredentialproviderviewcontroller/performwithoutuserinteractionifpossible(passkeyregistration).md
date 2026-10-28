@@ -23,7 +23,7 @@ func performWithoutUserInteractionIfPossible(passkeyRegistration registrationReq
 - (void) performPasskeyRegistrationWithoutUserInteractionIfPossible:(ASPasskeyCredentialRequest *) registrationRequest;
 ```
 
-#### Discussion
+## Discussion
 
 This method will be called for handling conditional passkey registration requests. A conditional passkey registration request allows your extension to opportunistically register passkeys in the background, if and only if you believe the user is in a good state to do so. Your extension decides can decide what conditions make sense for whether to fulfill or reject this request. For example, an extension may decide to register a passkey only if all of the following conditions are met:
 

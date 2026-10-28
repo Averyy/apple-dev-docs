@@ -25,7 +25,7 @@ var minimumSignificantDigits: Int { get set }
 @property NSUInteger minimumSignificantDigits;
 ```
 
-#### Discussion
+## Discussion
 
 You must set the [`usesSignificantDigits`](./usessignificantdigits.md) property to [`true`](../../Swift/true.md) in order for this property to affect formatting behavior. By default, the minimum number of significant digits is 1.
 

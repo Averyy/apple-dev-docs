@@ -25,11 +25,11 @@ func replaceItem(at url: URL, options: NSFileVersion.ReplacingOptions = []) thro
 - (NSURL *) replaceItemAtURL:(NSURL *) url options:(NSFileVersionReplacingOptions) options error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 The URL of the file that was written, which may be different than the one specified in the `url` parameter.
 
-#### Discussion
+## Discussion
 
 When replacing the contents of the file, this method does not normally replace the display name associated with the file. The only exception is when the file at `url` is of a different type than the file associated with this version object. In such a case, the file name remains the same but its filename extension changes to match the type of the new contents. (Of course, if filename extension hiding is enabled, this change is not noticeable to users.)
 

@@ -18,7 +18,7 @@ The payload that configures the users, groups, and departments within an educati
 object EducationConfiguration
 ```
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.education` as the payload type.
 
@@ -35,7 +35,7 @@ Additionally, ensure:
 - You configure  member certificates to have the common name prefix “member”, which is case-insensitive
 - You configure TLS server certificates issued on or after September 1, 2020 00:00 GMT/UTC to have a validity period less than 398 days; see [About Upcoming Limits on Trusted Certificates](https://support.apple.com/en-us/HT211025) for more information.
 
-##### Profile availability
+### Profile availability
 
 |  |  |
 | --- | --- |
@@ -47,7 +47,7 @@ Additionally, ensure:
 | Allowed in user enrollment | iOS, macOS |
 | Allow multiple payloads | N/A |
 
-##### Profile example
+### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>

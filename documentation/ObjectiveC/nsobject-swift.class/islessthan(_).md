@@ -20,11 +20,11 @@ func isLessThan(_ object: Any?) -> Bool
 - (BOOL) isLessThan:(id) object;
 ```
 
-#### Return Value
+## Return Value
 
 [`YES`](../yes.md) if the receiver is less than `object`, otherwise [`NO`](../no.md).
 
-#### Discussion
+## Discussion
 
 During the evaluation of an `NSWhoseSpecifier` object that contains a test whose operator is `NSLessThanComparison`, an [`isLessThan(_:)`](./islessthan%28_%29.md) message may be sent to each potentially specified object, if the potentially specified object does not implement a [`scriptingIsLessThan(_:)`](./scriptingislessthan%28_%29.md) method and the object being tested against does not implement a [`scriptingIsGreaterThanOrEqual(to:)`](./scriptingisgreaterthanorequal%28to%29.md) method.
 

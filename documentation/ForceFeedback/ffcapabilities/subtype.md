@@ -20,7 +20,7 @@ var subType: UInt32
 UInt32 subType;
 ```
 
-#### Discussion
+## Discussion
 
 This value can be one of the following:
 

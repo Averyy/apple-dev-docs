@@ -24,7 +24,7 @@ var sourceRegion: MTLRegion
 MTLRegion sourceRegion;
 ```
 
-#### Discussion
+## Discussion
 
 The tiles remain mapped in the source texture.
 

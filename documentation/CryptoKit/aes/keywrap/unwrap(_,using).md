@@ -21,11 +21,11 @@ Unwraps a key using the AES wrap algorithm.
 static func unwrap<WrappedKey>(_ wrappedKey: WrappedKey, using kek: SymmetricKey) throws -> SymmetricKey where WrappedKey : DataProtocol
 ```
 
-#### Return Value
+## Return Value
 
 The unwrapped key.
 
-#### Discussion
+## Discussion
 
 Wrap is an implementation of the AES key wrap algorithm as specified in IETF RFC 3394. The method throws an error is the key was incorrectly wrapped.
 

@@ -21,7 +21,7 @@ Stores the given value’s bytes into the span’s raw memory at the specified b
 mutating func storeBytes<T>(of value: T, toUncheckedByteOffset offset: Int, as type: T.Type) where T : BitwiseCopyable
 ```
 
-#### Discussion
+## Discussion
 
 This function does not validate `offset`; this is an unsafe operation.
 

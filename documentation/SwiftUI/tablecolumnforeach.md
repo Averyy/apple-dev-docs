@@ -20,7 +20,7 @@ nonisolated
 struct TableColumnForEach<Data, ID, RowValue, Sort, Content> where Data : RandomAccessCollection, ID : Hashable, RowValue == Content.TableRowValue, Sort == Content.TableColumnSortComparator, Content : TableColumnContent
 ```
 
-#### Overview
+## Overview
 
 Use `TableColumnForEach` to create columns based on a [`RandomAccessCollection`](../Swift/randomaccesscollection.md) of some data type. Either the collection’s elements must conform to [`Identifiable`](../Swift/identifiable.md) or you need to provide an `id` parameter to the `TableColumnForEach` initializer.
 

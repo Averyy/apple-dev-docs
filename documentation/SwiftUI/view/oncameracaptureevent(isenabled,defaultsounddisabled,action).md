@@ -25,7 +25,7 @@ Used to register an action triggered by system capture events.
 @preconcurrency func onCameraCaptureEvent(isEnabled: Bool = true, defaultSoundDisabled: Bool = false, action: @escaping (AVCaptureEvent) async -> Void) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 Events may or may not be sent to applications based on the current system state. Backgrounded applications will not receive events, additionally events will only be sent to applications that are actively using the camera.
 

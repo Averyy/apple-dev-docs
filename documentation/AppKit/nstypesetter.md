@@ -19,13 +19,13 @@ class NSTypesetter
 @interface NSTypesetter : NSObject
 ```
 
-#### Overview
+## Overview
 
 [`NSLayoutManager`](./nslayoutmanager.md) uses concrete subclasses of [`NSTypesetter`](./nstypesetter.md) to perform line layout, which includes word wrapping, hyphenation, and line breaking in either vertical or horizontal rectangles. By default, the text system uses the concrete subclass [`NSATSTypesetter`](./nsatstypesetter.md).
 
 > **Note**:  Use this class with [`NSLayoutManager`](./nslayoutmanager.md) in macOS11 and earlier. In macOS12 and later, consider using [`NSLayoutManager`](./nslayoutmanager.md) which provides improved support for international scripts.
 
-##### Subclassing Notes
+### Subclassing Notes
 
 `NSTypesetter` provides concrete subclasses with default implementation interfacing with the Cocoa text system. By subclassing `NSTypesetter`, an application can override the [`layoutParagraph(at:)`](./nstypesetter/layoutparagraph%28at%29.md) method to integrate a custom typesetting engine into the Cocoa text system. On the other hand, an application can subclass [`NSATSTypesetter`](./nsatstypesetter.md) and override the glyph storage interface to integrate the concrete subclass into its own custom layout system.
 
@@ -35,7 +35,7 @@ The layout phase interface provides control points similar to delegate methods; 
 
 The remainder of the `NSTypesetter` methods are primitive, core typesetter methods. The core typesetter methods correlate with typesetting state attributes; the layout manager calls these methods to store its values before starting the layout process. If you subclass `NSTypesetter` and override the glyph storage interface methods, you can call the core methods to control the typesetter directly.
 
-###### Glyph Storage Interface
+#### Glyph Storage Interface
 
 Override these methods to use `NSTypesetter`’s built-in concrete subclass, [`NSATSTypesetter`](./nsatstypesetter.md), with a custom glyph storage and layout system other than the Cocoa layout manager and text container mechanism.
 
@@ -53,7 +53,7 @@ Override these methods to use `NSTypesetter`’s built-in concrete subclass, [`N
 - [`setAttachmentSize(_:forGlyphRange:)`](./nstypesetter/setattachmentsize%28_,forglyphrange%29.md)
 - [`setBidiLevels(_:forGlyphRange:)`](./nstypesetter/setbidilevels%28_,forglyphrange%29.md)
 
-###### Layout Phase Interface
+#### Layout Phase Interface
 
 Override these methods to customize the text layout process, including modifying line fragments, controlling line breaking and hyphenation, and controlling the behavior of tabs and other control glyphs.
 

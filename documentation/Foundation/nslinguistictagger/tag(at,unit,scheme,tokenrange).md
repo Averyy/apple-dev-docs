@@ -27,7 +27,7 @@ func tag(at charIndex: Int, unit: NSLinguisticTaggerUnit, scheme: NSLinguisticTa
 - (NSLinguisticTag) tagAtIndex:(NSUInteger) charIndex unit:(NSLinguisticTaggerUnit) unit scheme:(NSLinguisticTagScheme) scheme tokenRange:(NSRangePointer) tokenRange;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the tag for the requested tag scheme and linguistic unit, or `nil`. If a tag is returned, this function returns by reference the range of the token to `tokenRange`.
 

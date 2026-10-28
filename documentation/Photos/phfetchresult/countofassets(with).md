@@ -24,11 +24,11 @@ func countOfAssets(with mediaType: PHAssetMediaType) -> Int
 - (NSUInteger) countOfAssetsWithMediaType:(PHAssetMediaType) mediaType;
 ```
 
-#### Return Value
+## Return Value
 
 The number of assets in the fetch result of the specified type.
 
-#### Discussion
+## Discussion
 
 The first time you call this method, Photos enumerates the contents of the fetch result to count those of the specified type, then caches the result. Subsequent calls with the same `mediaType` parameter return the cached value.
 

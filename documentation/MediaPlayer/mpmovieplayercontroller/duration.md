@@ -23,7 +23,7 @@ var duration: TimeInterval { get }
 @property (nonatomic, readonly) NSTimeInterval duration;
 ```
 
-#### Discussion
+## Discussion
 
 If the duration of the movie is not known, the value in this property is `0.0`. If the duration is subsequently determined, this property is updated and a [`MPMovieDurationAvailableNotification`](../mpmoviedurationavailablenotification.md) notification is posted.
 

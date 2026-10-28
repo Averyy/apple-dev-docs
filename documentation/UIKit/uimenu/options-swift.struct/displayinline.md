@@ -23,7 +23,7 @@ static var displayInline: UIMenu.Options { get }
 UIMenuOptionsDisplayInline
 ```
 
-#### Discussion
+## Discussion
 
 When the menu system displays an inline menu, it separates the menu from the surrounding menus by displaying line separators.
 

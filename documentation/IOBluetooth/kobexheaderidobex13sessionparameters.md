@@ -17,7 +17,7 @@ var kOBEXHeaderIDOBEX13SessionParameters: OBEXHeaderIdentifiers { get }
 kOBEXHeaderIDOBEX13SessionParameters
 ```
 
-#### Discussion
+## Discussion
 
 Byte sequence required for CreateSession, CloseSession and other OBEX commands.
 

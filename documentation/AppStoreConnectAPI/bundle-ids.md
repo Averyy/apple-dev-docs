@@ -5,7 +5,7 @@
 
 Manage the bundle IDs that uniquely identify your apps.
 
-#### Overview
+## Overview
 
 The `bundleIds` resource represents the app’s unique identifier that you can register, modify, and delete. You need a bundle ID before you can assign capabilities with the [Bundle ID Capabilities](./bundle-id-capabilities.md) resource or create a provisioning profile with the [Profiles](./profiles.md) resource.
 

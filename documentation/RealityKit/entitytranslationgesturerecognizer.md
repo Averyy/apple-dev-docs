@@ -18,7 +18,7 @@ A gesture recognizer that uses a pan gesture to move an entity.
 @objc @preconcurrency class EntityTranslationGestureRecognizer
 ```
 
-#### Overview
+## Overview
 
 A gesture recognizer that handles pan and dragging gestures on an entity.
 

@@ -25,7 +25,7 @@ func closeWrite()
 - (void) closeWrite;
 ```
 
-#### Discussion
+## Discussion
 
 You may continue to read data using the [`readData(ofMinLength:maxLength:timeout:completionHandler:)`](./readdata%28ofminlength,maxlength,timeout,completionhandler%29.md) method after calling this method. Any calls to [`write(_:timeout:completionHandler:)`](./write%28_,timeout,completionhandler%29.md) after calling this method will result in an error.
 

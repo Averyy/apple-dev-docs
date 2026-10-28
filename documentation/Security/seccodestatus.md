@@ -20,7 +20,7 @@ struct SecCodeStatus
 enum SecCodeStatus : uint32_t;
 ```
 
-#### Overview
+## Overview
 
 These flags are maintained by the code’s host, and can be read by anyone. Running code may change its own flags, and root may change anyone’s flags. However, each of these flags can change in only one direction and never back, for the lifetime of the code. Not even root can violate this restriction.
 

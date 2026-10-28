@@ -17,7 +17,7 @@ Applies the Mish function, element-wise.
 func mish(_ x: MLXArray) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 Mish: A Self Regularized Non-Monotonic Neural Activation Function.
 
@@ -29,7 +29,7 @@ This is:
 x * MLX.tanh(softPlus(x))
 ```
 
-##### See Also
+### See Also
 
 - [Activation Functions and Layers](./activations.md)
 - [`Mish`](./mish.md)

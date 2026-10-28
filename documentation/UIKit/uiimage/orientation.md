@@ -24,7 +24,7 @@ enum Orientation
 enum UIImageOrientation : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 Orientation values are commonly found in image metadata, and specifying image orientation correctly can be important both for displaying the image and for certain kinds of image processing.
 

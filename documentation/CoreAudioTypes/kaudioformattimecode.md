@@ -25,7 +25,7 @@ var kAudioFormatTimeCode: AudioFormatID { get }
 kAudioFormatTimeCode
 ```
 
-#### Discussion
+## Discussion
 
 Uses the [`IOAudioTimeStamp`](../iokit/ioaudiotimestamp.md) flags. For more information, see [`mFlags`](./audiotimestamp/mflags.md).
 

@@ -21,7 +21,7 @@ Returns a localized string for a specified ICU collation identifier.
 func localizedString(forCollationIdentifier collationIdentifier: String) -> String?
 ```
 
-#### Discussion
+## Discussion
 
 For example, in the “en” locale, the result for `"phonebook"` is `"Phonebook Sort Order"`.
 

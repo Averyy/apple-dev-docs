@@ -19,7 +19,7 @@ var isFieldEditor: Bool { get set }
 @property (getter=isFieldEditor) BOOL fieldEditor;
 ```
 
-#### Discussion
+## Discussion
 
 Field editors interpret Tab, Shift-Tab, and Return (Enter) as cues to end editing and possibly to change the first responder. Non-field editors instead accept these characters as text input. See [Text Fields, Text Views, and the Field Editor](https://developer.apple.com/library/archive/documentation/TextFonts/Conceptual/CocoaTextArchitecture/TextFieldsAndViews/TextFieldsAndViews.html#//apple_ref/doc/uid/TP40009459-CH8) for more information on field editors. By default, text views don’t behave as field editors.
 

@@ -19,7 +19,7 @@ case compact
 QLPreviewViewStyleCompact
 ```
 
-#### Discussion
+## Discussion
 
 A more compact style for a [`QLPreviewView`](../qlpreviewview.md) object. Use this style for smaller previews or inspectors.
 

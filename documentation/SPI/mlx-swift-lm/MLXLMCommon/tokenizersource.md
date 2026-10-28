@@ -17,7 +17,7 @@ Identifies where a tokenizer should be loaded from.
 enum TokenizerSource
 ```
 
-#### Overview
+## Overview
 
 Used by [`ModelConfiguration`](./modelconfiguration.md) to specify an alternate tokenizer source when the tokenizer files are not co-located with the model weights.
 

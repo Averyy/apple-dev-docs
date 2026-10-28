@@ -19,7 +19,7 @@ weak var dataSource: (any NSOutlineViewDataSource)? { get set }
 @property (weak, nullable) id<NSOutlineViewDataSource> dataSource;
 ```
 
-#### Discussion
+## Discussion
 
 The object must implement the appropriate methods of [`NSOutlineViewDataSource`](../nsoutlineviewdatasource.md). Note that in versions of macOS prior to v10.12, the outline view did not retain the data source in a managed memory environment.
 

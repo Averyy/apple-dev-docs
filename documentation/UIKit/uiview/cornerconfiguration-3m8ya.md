@@ -19,7 +19,7 @@ A configuration that defines the corners of the view.
 @property (nonatomic, copy, nonnull) UICornerConfiguration * cornerConfiguration;
 ```
 
-#### Discussion
+## Discussion
 
 For more information on how to configure view corners, see [`UICornerConfiguration`](../uicornerconfiguration-c.class.md).
 

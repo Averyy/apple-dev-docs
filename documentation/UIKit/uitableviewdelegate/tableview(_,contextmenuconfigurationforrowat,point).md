@@ -23,11 +23,11 @@ optional func tableView(_ tableView: UITableView, contextMenuConfigurationForRow
 - (UIContextMenuConfiguration *) tableView:(UITableView *) tableView contextMenuConfigurationForRowAtIndexPath:(NSIndexPath *) indexPath point:(CGPoint) point;
 ```
 
-#### Return Value
+## Return Value
 
 A context menu configuration for the `indexPath`.
 
-#### Discussion
+## Discussion
 
 Use this method to provide a [`UIContextMenuConfiguration`](../uicontextmenuconfiguration.md) describing the menu to present. Return `nil` to prevent the interaction from beginning. Return an empty configuration to begin the interaction and then fail with a cancellation effect. Use the empty configuration to indicate to users that it’s possible for this element to present a menu, but that there are no actions to present at this time.
 

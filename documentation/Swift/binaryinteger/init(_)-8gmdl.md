@@ -22,7 +22,7 @@ Creates a new instance from the given integer.
 init<T>(_ source: T) where T : BinaryInteger
 ```
 
-#### Discussion
+## Discussion
 
 If the value passed as `source` is not representable in this type, a runtime error may occur.
 

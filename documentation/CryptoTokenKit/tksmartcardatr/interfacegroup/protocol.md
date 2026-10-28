@@ -25,7 +25,7 @@ var `protocol`: NSNumber? { get }
 @property (nonatomic, readonly, nullable) NSNumber * protocol;
 ```
 
-#### Discussion
+## Discussion
 
 This property returns an `NSNumber` object containing an `NSUInteger` value corresponding to a member of the [`TKSmartCardProtocol`](../../tksmartcardprotocol.md) enumeration.
 

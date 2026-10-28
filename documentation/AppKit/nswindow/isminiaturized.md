@@ -19,7 +19,7 @@ var isMiniaturized: Bool { get }
 @property (readonly, getter=isMiniaturized) BOOL miniaturized;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) if the window is minimized; otherwise, [`false`](../../Swift/false.md). A minimized window is removed from the screen and replaced by a image, icon, or button that represents it, called the counterpart.
 

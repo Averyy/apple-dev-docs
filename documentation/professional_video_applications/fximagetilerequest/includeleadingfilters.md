@@ -19,7 +19,7 @@ var includeLeadingFilters: Bool { get }
 @property (nonatomic, readonly) BOOL includeLeadingFilters;
 ```
 
-#### Discussion
+## Discussion
 
 Set to true if you request the filter input and you want it to include the output of other FxPlugs applied before your filter. Each tile is pre-processed by filters higher in the processing order.
 

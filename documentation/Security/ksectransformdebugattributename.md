@@ -21,7 +21,7 @@ let kSecTransformDebugAttributeName: CFString
 extern CFStringRef const kSecTransformDebugAttributeName;
 ```
 
-#### Discussion
+## Discussion
 
 Set this attribute to a [`CFWriteStream`](../CoreFoundation/cfwritestream.md). This signals the transform to write debugging information to the stream. If you set this attribute to [`kCFBooleanTrue`](../CoreFoundation/kcfbooleantrue.md), debug data is written to `stderr` instead.
 

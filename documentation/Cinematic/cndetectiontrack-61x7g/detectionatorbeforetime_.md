@@ -19,7 +19,7 @@ Returns the array of detections in the detection track before a given time.
 - (CNDetection *) detectionAtOrBeforeTime:(CMTime) time;
 ```
 
-#### Return Value
+## Return Value
 
 A number representing a properly time-stamped detection. The return value is only appropriate for discrete detection tracks.
 

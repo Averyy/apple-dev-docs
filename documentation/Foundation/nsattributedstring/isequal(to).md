@@ -25,11 +25,11 @@ func isEqual(to other: NSAttributedString) -> Bool
 - (BOOL) isEqualToAttributedString:(NSAttributedString *) other;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the text and attributes in the current string and `otherString` are the same, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 This method performs a character-by-character comparison of the string and its attributes. The character and its attributes must be the same in both strings for the method to return [`true`](../../Swift/true.md). In attributed strings with many attributes, such a comparison is unlikely to yield an exact match [`true`](../../Swift/true.md).
 

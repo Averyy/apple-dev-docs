@@ -24,7 +24,7 @@ class var groupTableViewBackground: UIColor { get }
 @property (class, nonatomic, readonly) UIColor * groupTableViewBackgroundColor;
 ```
 
-#### Return Value
+## Return Value
 
 The `UIColor` object.
 

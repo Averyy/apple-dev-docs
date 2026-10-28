@@ -25,7 +25,7 @@ var usesMetricSystem: Bool { get }
 @property (readonly) BOOL usesMetricSystem;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the same value returned by the [`object(forKey:)`](./object%28forkey%29.md) method when passing the [`usesMetricSystem`](./key/usesmetricsystem.md) key.
 

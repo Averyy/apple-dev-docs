@@ -24,7 +24,7 @@ static let bleedingDuringPregnancy: HKCategoryTypeIdentifier
 extern HKCategoryTypeIdentifier const HKCategoryTypeIdentifierBleedingDuringPregnancy;
 ```
 
-#### Discussion
+## Discussion
 
 These samples use values from the [`HKCategoryValueVaginalBleeding`](../hkcategoryvaluevaginalbleeding.md) enumeration.
 

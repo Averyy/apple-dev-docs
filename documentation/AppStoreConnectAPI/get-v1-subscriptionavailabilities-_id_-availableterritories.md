@@ -11,9 +11,9 @@ List the territory availability and currency of a specific subscription.
 
 > **Deprecated**: This endpoint is deprecated. Use [`List available territories for a subscription plan availability`](./get-v1-subscriptionplanavailabilities-_id_-availableterritories.md) instead.
 
-#### Discussion
+## Discussion
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

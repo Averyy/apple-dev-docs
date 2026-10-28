@@ -24,7 +24,7 @@ func stopPictureInPicture()
 - (void) stopPictureInPicture;
 ```
 
-#### Discussion
+## Discussion
 
 Regardless of how Picture in Picture stops, the controller calls the delegate’s [`pictureInPictureControllerWillStopPictureInPicture(_:)`](../avpictureinpicturecontrollerdelegate/pictureinpicturecontrollerwillstoppictureinpicture%28_%29.md) method. When the PiP animation completes, the controller finalizes the session by calling the delegate’s [`pictureInPictureControllerDidStopPictureInPicture(_:)`](../avpictureinpicturecontrollerdelegate/pictureinpicturecontrollerdidstoppictureinpicture%28_%29.md) method.
 

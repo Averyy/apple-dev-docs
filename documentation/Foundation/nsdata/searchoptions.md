@@ -25,7 +25,7 @@ struct SearchOptions
 enum NSDataSearchOptions : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 These options are used with the [`range(of:options:in:)`](./range%28of,options,in%29.md) method.
 

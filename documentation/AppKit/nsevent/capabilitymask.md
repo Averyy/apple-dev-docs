@@ -19,7 +19,7 @@ var capabilityMask: Int { get }
 @property (readonly) NSUInteger capabilityMask;
 ```
 
-#### Discussion
+## Discussion
 
 These bits are vendor-defined. This property is valid only for mouse events with a subtype of `NSTabletProximityEventSubtype` and for events of type `NSTabletProximity`; otherwise, it is set to `0`.
 

@@ -21,7 +21,7 @@ class CPButton
 @interface CPButton : NSObject
 ```
 
-#### Overview
+## Overview
 
 You create instances of `CPButton` to provide a template’s actions. The button displays a custom image that communicates its function. When a user taps the button, CarPlay invokes the handler you provide. The template that contains the button manages its appearance.
 

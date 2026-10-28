@@ -5,13 +5,13 @@
 
 Discover issues by examining the bound resources at any point in an encoder.
 
-#### Overview
+## Overview
 
 Metal’s render and compute encoders allow you to set pipeline states, bind resources, specify parameters, and encode GPU commands. The Bound Resources viewer helps you determine the bound resources at any point in an encoder.
 
 ![A screenshot of the Bound Resources viewer, listing the bound resources.](https://developer.apple.com/tutorials/images/com.apple.Xcode/gputools-metal-debugger-brv-overview@2x.png)
 
-##### Inspect bound resources
+### Inspect bound resources
 
 The Bound Resources viewer displays the current set of bound resources in the encoder. You can double-click a resource row to further inspect that resource.
 
@@ -71,13 +71,13 @@ For buffers, you can add the following columns:
 
 For functions, you can add the Library column to show the library that the app uses to create the function.
 
-##### Improve your Metal workload with Insights
+### Improve your Metal workload with Insights
 
 Click the Insights button in the bottom right corner to open a popover of recommendations for the bound resources.
 
 ![A screenshot of the Insights popover showing two recommendations related to redundant buffer bindings.](https://developer.apple.com/tutorials/images/com.apple.Xcode/gputools-metal-debugger-brv-insights@2x.png)
 
-##### Inspect resources that the shaders access
+### Inspect resources that the shaders access
 
 The shaders don’t necessarily access every bound resource in a draw command or compute dispatch. This is very common in bindless workflows where shaders access only a small set of resources from a large heap. The Bound Resources viewer provides a top-level filter for resources that the shaders actually access.
 
@@ -85,7 +85,7 @@ To apply the filter, click the Accessed button above the table to view only the 
 
 ![A screenshot of the Bound Resources viewer highlighting the Accessed button.](https://developer.apple.com/tutorials/images/com.apple.Xcode/gputools-metal-debugger-brv-table-accessed@2x.png)
 
-##### Limit your scope with filters
+### Limit your scope with filters
 
 Use the filter field at the bottom of the Bound Resources viewer to adjust the filtering criteria by typing filter terms into it. The table shows the related resources that match the filter terms.
 

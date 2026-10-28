@@ -25,7 +25,7 @@ final var state: AppExtensionPoint.Monitor.State { get }
 
 - [Discovering app extensions from your app](../../discovering-app-extensions-from-your-app.md)
 
-#### Discussion
+## Discussion
 
 This property provides the list of available app extensions plus the number of currently disabled and unapproved extensions. The property is observable, so you can monitor it for changes while your app runs.
 

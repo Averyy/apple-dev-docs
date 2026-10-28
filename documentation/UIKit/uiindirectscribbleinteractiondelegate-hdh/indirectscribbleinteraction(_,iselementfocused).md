@@ -19,7 +19,7 @@ Asks the delegate if an element is currently focused, according to the internal 
 func indirectScribbleInteraction(_ interaction: any UIInteraction, isElementFocused elementIdentifier: Self.ElementIdentifier) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 Returns [`true`](../../Swift/true.md) if the element is the one currently focused.
 

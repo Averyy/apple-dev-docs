@@ -29,7 +29,7 @@ var shader: SKShader? { get set }
 
 - [Applying Shaders to a Sprite](../applying-shaders-to-a-sprite.md)
 
-#### Discussion
+## Discussion
 
 The default value is `nil`, which means the default behavior for sprite rendering is performed. SpriteKit implements many sprite features using a default shader, such as:
 

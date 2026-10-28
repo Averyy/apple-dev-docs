@@ -20,11 +20,11 @@ Creates a state machine with the specified states.
 + (instancetype) stateMachineWithStates:(NSArray<GKState *> *) states;
 ```
 
-#### Return Value
+## Return Value
 
 A new state machine.
 
-#### Discussion
+## Discussion
 
 The newly created state machine’s [`currentState`](./currentstate.md) property is `nil`. To choose and enter an initial state, use the [`enter(_:)`](./enter%28_%29.md) method.
 

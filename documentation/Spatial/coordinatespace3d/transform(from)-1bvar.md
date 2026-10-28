@@ -21,7 +21,7 @@ Returns a transform of this coordinate space from the target coordinate space.
 func transform(from target: Self) throws -> ProjectiveTransform3D
 ```
 
-#### Discussion
+## Discussion
 
 This method converts between coordinate spaces of the same type and uses root level conversions.
 

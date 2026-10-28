@@ -19,7 +19,7 @@ func imageBrowser(_ aBrowser: IKImageBrowserView!, removeItemsAt indexes: IndexS
 - (void) imageBrowser:(IKImageBrowserView *) aBrowser removeItemsAtIndexes:(NSIndexSet *) indexes;
 ```
 
-#### Discussion
+## Discussion
 
 This method is optional. It is invoked by the image browser after  Image Kit determines  that a remove operation should be applied. In response, the data source should update itself by removing the specified items.
 

@@ -26,7 +26,7 @@ class GKGameSession
 @interface GKGameSession : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use a `GKGameSession` object to play turn-based and real-time games in iCloud. Every instance of a game session resides inside of an iCloud container. You can create multiple sessions for a single app, allowing players to play several games at once. All of the information for a game session is saved in the owner’s iCloud.
 

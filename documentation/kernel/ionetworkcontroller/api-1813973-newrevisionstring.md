@@ -9,7 +9,7 @@
 virtual const OSString * newRevisionString() const;
 ```
 
-#### Return Value
+## Return Value
 
 Returns a string describing the hardware revision of the network controller. The caller is responsible for releasing the string object returned.
 

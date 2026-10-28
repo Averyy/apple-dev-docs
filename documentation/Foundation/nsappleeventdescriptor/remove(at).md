@@ -20,7 +20,7 @@ func remove(at index: Int)
 - (void) removeDescriptorAtIndex:(NSInteger) index;
 ```
 
-#### Discussion
+## Discussion
 
 The receiver must be a list descriptor. The  indices are one-based. Currently provides no indication if an error occurs.
 

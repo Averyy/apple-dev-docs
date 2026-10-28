@@ -16,7 +16,7 @@ The Ed25519 HAP public key for pairing a HomeKit accessory.
 let publicKey: Data
 ```
 
-#### Overview
+## Overview
 
 The public key has a length of 32 bytes.
 

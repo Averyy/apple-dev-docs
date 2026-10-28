@@ -17,7 +17,7 @@ The type of the test scope provider for this trait.
 associatedtype TestScopeProvider : TestScoping = Never
 ```
 
-#### Discussion
+## Discussion
 
 The default type is `Never`, which can’t be instantiated. The [`scopeProvider(for:testCase:)`](./scopeprovider%28for,testcase%29.md) method for any trait with `Never` as its test scope provider type must return `nil`, meaning that the trait doesn’t provide a custom scope for tests it’s applied to.
 

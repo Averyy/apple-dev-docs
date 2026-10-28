@@ -23,7 +23,7 @@ An activation function that returns the softmax function of its input.
 static var softmax: BNNSActivationFunction { get }
 ```
 
-#### Discussion
+## Discussion
 
 This constant defines an activation function that returns values using the following formula:
 

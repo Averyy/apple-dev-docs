@@ -13,7 +13,7 @@
 kINQUIRY_Page83_IdentifierTypeMD5LogicalUnitIdentifier = 7
 ```
 
-#### Discussion
+## Discussion
 
 MD5 Logical Unit Identifier Type.
 

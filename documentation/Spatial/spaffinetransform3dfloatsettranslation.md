@@ -19,7 +19,7 @@
 static void SPAffineTransform3DFloatSetTranslation(SPAffineTransform3DFloat *transform, SPVector3DFloat offset);
 ```
 
-#### Discussion
+## Discussion
 
 Sets the translation component on the specified transform.
 

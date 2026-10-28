@@ -14,7 +14,7 @@
 #define kIOATASMARTUserClientTypeID
 ```
 
-#### Discussion
+## Discussion
 
 Factory ID for creating an ATA SMART user client.
 

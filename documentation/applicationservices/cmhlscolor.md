@@ -17,7 +17,7 @@ typedef struct CMHLSColor {
 } CMHLSColor;
 ```
 
-#### Overview
+## Overview
 
 A color value expressed in the HLS color space is composed of `hue`, `lightness`, and `saturation` component values. Each color component is expressed as a numeric value within the range of 0 to 65535 inclusive. 
 

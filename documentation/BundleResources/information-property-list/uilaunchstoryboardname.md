@@ -17,7 +17,7 @@ The filename of the storyboard from which to generate the app’s launch image.
 - **Name**: `UILaunchStoryboardName` (Launch screen interface file base name)
 - **Type**: string
 
-#### Discussion
+## Discussion
 
 Specify the name of the storyboard file without the filename extension. For example, if the filename of your storyboard is `LaunchScreen.storyboard`, specify “LaunchScreen” as the value for this key.
 

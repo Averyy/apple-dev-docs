@@ -17,7 +17,7 @@ A list of all modes the alarm can be in: either alert, countdown, or paused.
 enum Mode
 ```
 
-#### Overview
+## Overview
 
 This value is sent as part of [`AlarmPresentationState`](../alarmpresentationstate.md) to the widget extension, so that it can produce the appropriate UI for the current state of the alarm.
 

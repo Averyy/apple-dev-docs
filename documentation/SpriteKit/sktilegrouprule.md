@@ -25,7 +25,7 @@ class SKTileGroupRule
 @interface SKTileGroupRule : NSObject
 ```
 
-#### Overview
+## Overview
 
 When a tile is filled in a tile map, the tile group rule defines how neighboring tiles are populated based on adjacency rules. A rule with multiple definitions uses the placement weights of the definitions to randomly select which to use.
 

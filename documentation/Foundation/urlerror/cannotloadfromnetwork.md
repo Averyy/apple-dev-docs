@@ -21,7 +21,7 @@ A request to load an item only from the cache could not be satisfied.
 static var cannotLoadFromNetwork: URLError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 This error is sent when the task needs to load from the network, but is blocked from doing so by the “load only from cache” directive.
 

@@ -17,7 +17,7 @@ Applies the Softshrink activation function.
 func softshrink(_ x: MLXArray, lambda: Float = 0.5) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 This is (element-wise):
 

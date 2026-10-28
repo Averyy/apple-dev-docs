@@ -25,7 +25,7 @@ init<S>(uniqueKeysWithValues keysAndValues: S) async rethrows where S : AsyncSeq
 
 Available when `Key` conforms to `Hashable`.
 
-#### Discussion
+## Discussion
 
 You use this initializer to create a dictionary when you have an asynchronous sequence of key-value tuples with unique keys. Passing an asynchronous sequence with duplicate keys to this initializer results in a runtime error. If your asynchronous sequence might have duplicate keys, use the `Dictionary(_:uniquingKeysWith:)` initializer instead.
 

@@ -5,7 +5,7 @@
 
 Add drag-to-reorder interactions to SwiftUI layouts using reordering modifiers.
 
-#### Overview
+## Overview
 
 SwiftUI provides reordering when you have one or more collections of ordered data items, each displayed as a view in a *container*, such as a list, stack, grid, or custom layout. The system lets someone select a view that represents a data item and drag it around the container. As they drag the view, other views move to show a placeholder space where the person can drop the view.
 
@@ -13,7 +13,7 @@ When the person drops the view on the placeholder, the system provides the ident
 
 If you organize your views into sections that you represent in multiple data collections, such as a photography app that lets people organize photos into albums, you can configure reordering to work both when someone moves a photo inside an album and when someone moves a photo from one album to another.
 
-##### Reorder items in a single collection
+### Reorder items in a single collection
 
 When you have views that you build from a single ordered collection of data items, such as an array of photos in a photography app, first configure your data item with an identifier that conforms to [`Hashable`](../Swift/hashable.md) and [`Sendable`](../Swift/sendable.md). For example, update your data item to conform to  [`Identifiable`](../Swift/identifiable.md) using an identifier data type that conforms to [`Sendable`](../Swift/sendable.md).
 
@@ -47,7 +47,7 @@ var body: some View {
 }
 ```
 
-##### Reorder items across multiple collections
+### Reorder items across multiple collections
 
 When you organize your views into sections that you build from multiple data collections, such as albums in a photography app that each contain photos, add [`reorderable(collectionID:)`](./dynamicviewcontent/reorderable%28collectionid%29.md) to the [`ForEach`](./foreach.md) that generates the views you want to reorder. Then, provide an identifier for each collection that contains the data items for those views, as this example shows:
 
@@ -84,7 +84,7 @@ ScrollView {
 
 When someone moves a view inside an album, or from one album to another, the system provides a [`ReorderDifference`](./reorderdifference.md) instance that contains a collection identifier and position you can use to move the view’s corresponding data item.
 
-##### Support drag and drop outside your container
+### Support drag and drop outside your container
 
 Adding reordering modifiers to your container only supports moving views inside the container. Support drag and drop between your container and other parts of your app or other apps with drag-and-drop modifiers.
 
@@ -141,7 +141,7 @@ var body: some View {
 }
 ```
 
-##### Support drag and drop onto individual items in a reorderable container
+### Support drag and drop onto individual items in a reorderable container
 
 Add the [`dropDestination(for:isEnabled:action:)`](./view/dropdestination%28for,isenabled,action%29.md) modifier to an item’s view to let people drop items from other apps directly onto a specific item in your container. The following code shows how to add the drop destination to an `ItemView` inside a `ForEach` that’s also configured for reordering:
 
@@ -160,7 +160,7 @@ Use the `isEnabled` parameter of the [`dropDestination(for:isEnabled:action:)`](
 
 Add code in the `action` closure of the [`dropDestination(for:isEnabled:action:)`](./view/dropdestination%28for,isenabled,action%29.md) modifier to update your model with the dropped items, because it may be different than how you handle updating your model for reordering in the closure for [`reorderContainer(for:isEnabled:move:)`](./view/reordercontainer%28for,isenabled,move%29.md). When your drop destination accepts items from the reorder container, be sure to remove the items from the source data collection when you move them to the item’s data collection.
 
-##### Dynamically enable and disable reordering
+### Dynamically enable and disable reordering
 
 You may want to disable reordering while you sync updates over the network, or when you make other updates to your views that complicate reordering. To do this, use a variant of the reorder container modifier that has the `isEnabled` parameter, and pass a Boolean property to that parameter to track whether reordering is enabled, as the following example shows:
 

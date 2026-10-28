@@ -24,7 +24,7 @@ let GKPlayerIDNoLongerAvailable: String
 extern NSString * const GKPlayerIDNoLongerAvailable;
 ```
 
-#### Discussion
+## Discussion
 
 Deprecated methods that previously returned the player ID return this constant.
 

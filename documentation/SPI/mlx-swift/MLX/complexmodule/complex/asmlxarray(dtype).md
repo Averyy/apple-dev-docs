@@ -19,7 +19,7 @@ func asMLXArray(dtype: DType?) -> MLXArray
 
 Available when `RealType` is `Float`.
 
-#### Discussion
+## Discussion
 
 If the receiver is a scalar this should consider the `dtype` when producing an `MLXArray`.  For example:
 

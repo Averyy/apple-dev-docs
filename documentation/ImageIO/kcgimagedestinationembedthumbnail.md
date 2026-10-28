@@ -25,7 +25,7 @@ let kCGImageDestinationEmbedThumbnail: CFString
 extern CFStringRef const kCGImageDestinationEmbedThumbnail;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key must be a [`CFBoolean`](../CoreFoundation/cfboolean.md) value. The default value is [`kCFBooleanFalse`](../CoreFoundation/kcfbooleanfalse.md).
 

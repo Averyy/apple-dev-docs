@@ -21,7 +21,7 @@ A publisher that never publishes any values, and optionally finishes immediately
 struct Empty<Output, Failure> where Failure : Error
 ```
 
-#### Overview
+## Overview
 
 You can create a ”Never” publisher — one which never sends values and never finishes or fails — with the initializer `Empty(completeImmediately: false)`.
 

@@ -21,7 +21,7 @@ case malformedPostbacks
 SKAdTestErrorCodeMalformedPostbacks
 ```
 
-#### Discussion
+## Discussion
 
 Check that all parameters in the postback use the correct type.
 

@@ -20,7 +20,7 @@ Copies a range of resource views from a source view pool to a destination locati
 func copyResourceViews(sourcePool: any MTLResourceViewPool, sourceRange: Range<Int>, destinationIndex: Int) -> MTLResourceID
 ```
 
-#### Return Value
+## Return Value
 
 The [`MTLResourceID`](../mtlresourceid.md) of the resource view corresponding to `destinationIndex` of the copy in this resource view pool.
 

@@ -22,7 +22,7 @@ nonisolated
 func chartScrollTargetBehavior(_ behavior: some ChartScrollTargetBehavior) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to control how the chart scrolls and aligns when the user finishes scrolling. The example below sets the scroll target behavior to align to the values in the chart. When the user finishes scrolling, the chart will settle to align with the values in the chart.
 

@@ -24,7 +24,7 @@ func addEvent(_ event: AVMusicEvent, at beat: AVMusicTimeStamp)
 - (void) addEvent:(AVMusicEvent *) event atBeat:(AVMusicTimeStamp) beat;
 ```
 
-#### Discussion
+## Discussion
 
 The system copies event contents into the track, so you can add the same event at different timestamps. You can’t add all [`AVMusicEvent`](../avmusicevent.md) subclasses to a track.
 

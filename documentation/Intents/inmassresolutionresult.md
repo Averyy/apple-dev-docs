@@ -24,7 +24,7 @@ class INMassResolutionResult
 @interface INMassResolutionResult : INIntentResolutionResult
 ```
 
-#### Overview
+## Overview
 
 An [`INMassResolutionResult`](./inmassresolutionresult.md) object is what you return when resolving mass related parameters of an intent object. Use the creation method that best reflects your ability to successfully resolve the parameter.
 

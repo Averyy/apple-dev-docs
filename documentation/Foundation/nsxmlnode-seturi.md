@@ -5,7 +5,7 @@
 
 Sets the URI of the receiver.
 
-#### Overview
+## Overview
 
 The receiver must be an [`XMLElement`](./xmlelement.md) or [`XMLDocument`](./xmldocument.md) document, or an attribute (that is, an`NSXMLNode` object of type [`XMLNode.Kind.attribute`](./xmlnode/kind-swift.enum/attribute.md)). For documents it is the URI of document origin.
 

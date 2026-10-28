@@ -17,7 +17,7 @@ The newest version of Transport Layer Security (TLS) that this configuration acc
 let maximumTLSVersion: WINetworkSharingProvider.Network.Credentials.EAPCredentials.TLSConfiguration.TLSVersion?
 ```
 
-#### Discussion
+## Discussion
 
 This value is `nil` if the configuration doesn’t specify a maximum TLS version.
 

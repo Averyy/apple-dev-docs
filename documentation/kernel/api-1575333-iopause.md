@@ -15,7 +15,7 @@ Spin delay for a number of nanoseconds.
 void IOPause(unsigned int nanoseconds);
 ```
 
-#### Discussion
+## Discussion
 
 This function spins to delay for at least the number of specified nanoseconds. Since the CPU is busy spinning no time is made available to other processes; this method of delay should be used only for short periods.
 

@@ -25,7 +25,7 @@ func write(from buffer: AVAudioPCMBuffer) throws
 - (BOOL) writeFromBuffer:(const AVAudioPCMBuffer *) buffer error:(NSError **) outError;
 ```
 
-#### Discussion
+## Discussion
 
 The buffer’s [`frameLength`](../avaudiopcmbuffer/framelength.md) signifies how much of the buffer the method writes.
 

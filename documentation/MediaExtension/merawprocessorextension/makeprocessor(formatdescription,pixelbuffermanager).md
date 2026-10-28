@@ -20,7 +20,7 @@ func makeProcessor(formatDescription: CMVideoFormatDescription, pixelBufferManag
 - (id<MERAWProcessor>) processorWithFormatDescription:(CMVideoFormatDescriptionRef) formatDescription extensionPixelBufferManager:(MERAWProcessorPixelBufferManager *) extensionPixelBufferManager error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 Creates a new `MERAWProcessor` matching the given `CMVideoFormatDescriptionRef`.  If these parameters are not compatible with the `MERAWProcessor`, the call should fail, returning `MEErrorUnsupportedFeature`.
 

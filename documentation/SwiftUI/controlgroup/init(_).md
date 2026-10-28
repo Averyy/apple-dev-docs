@@ -23,7 +23,7 @@ init(_ configuration: ControlGroupStyleConfiguration)
 
 Available when `Content` is `ControlGroupStyleConfiguration.Content`.
 
-#### Discussion
+## Discussion
 
 Use this initializer within the [`makeBody(configuration:)`](../controlgroupstyle/makebody%28configuration%29.md) method of a [`ControlGroupStyle`](../controlgroupstyle.md) instance to create an instance of the control group being styled. This is useful for custom control group styles that modify the current control group style.
 

@@ -28,7 +28,7 @@ optional func resolveSpeakableGroupName(for intent: INSendMessageIntent) async -
 - (void) resolveSpeakableGroupNameForSendMessage:(INSendMessageIntent *) intent withCompletion:(void (^)(INSpeakableStringResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method if your app supports the sending messages to named groups. You can specify a group instead of, or in addition to, individual recipients.
 

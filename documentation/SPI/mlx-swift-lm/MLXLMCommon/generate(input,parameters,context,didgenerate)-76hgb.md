@@ -19,11 +19,11 @@ Generate tokens from an [`LMInput`](./lminput.md) and a [`ModelContext`](./model
 func generate(input: LMInput, parameters: GenerateParameters, context: ModelContext, didGenerate: ([Int]) -> GenerateDisposition) throws -> GenerateResult
 ```
 
-#### Return Value
+## Return Value
 
 The generated output
 
-#### Discussion
+## Discussion
 
 Prefer using [`generate(input:cache:state:parameters:context:components:wiredMemoryTicket:tools:)`](./generate%28input,cache,state,parameters,context,components,wiredmemoryticket,tools%29.md) returning `AsyncStream<Generation>` instead.
 

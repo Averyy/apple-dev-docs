@@ -15,7 +15,7 @@ A model you train to classify motion sensor data.
 struct MLActivityClassifier
 ```
 
-#### Overview
+## Overview
 
 An activity classifier is a machine-learning model that your app can use to categorize user *activities*, based on the motion of the user’s device.
 

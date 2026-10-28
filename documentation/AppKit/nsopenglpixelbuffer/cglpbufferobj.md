@@ -15,7 +15,7 @@ The underlying CGL pixel buffer object associated with the OpenGL pixel buffer o
 @property (readonly, nullable) CGLPBufferObj CGLPBufferObj;
 ```
 
-#### Return Value
+## Return Value
 
 The CGL pixel buffer object that encapsulates the actual pixel buffer.
 

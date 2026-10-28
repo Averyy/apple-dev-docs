@@ -23,7 +23,7 @@ case inProgress
 INSearchForMessagesIntentResponseCodeInProgress
 ```
 
-#### Discussion
+## Discussion
 
 When handling the intent, return this code if your search may take longer than a few seconds to complete.
 

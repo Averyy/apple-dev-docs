@@ -14,7 +14,7 @@ An acceleration event that represents immediate, three-dimensional acceleration 
 @interface UIAcceleration : NSObject
 ```
 
-#### Overview
+## Overview
 
 To receive accelerometer events, register an application object as a delegate of the shared [`UIAccelerometer`](./uiaccelerometer.md) object, as described in [`UIAccelerometer`](./uiaccelerometer.md).
 

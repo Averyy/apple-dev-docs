@@ -5,7 +5,7 @@
 
 Use brief taps on the screen to implement button-like interactions with your content.
 
-#### Overview
+## Overview
 
 Tap gestures detect one or more fingers touching the screen briefly. The fingers involved in these gestures must not move significantly from the initial touch points, and you can configure the number of times the fingers must touch the screen. For example, you might configure tap gesture recognizers to detect single taps, double taps, or triple taps.
 

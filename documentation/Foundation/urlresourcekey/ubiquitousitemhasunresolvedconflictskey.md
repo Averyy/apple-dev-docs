@@ -25,7 +25,7 @@ static let ubiquitousItemHasUnresolvedConflictsKey: URLResourceKey
 extern NSURLResourceKey const NSURLUbiquitousItemHasUnresolvedConflictsKey;
 ```
 
-#### Discussion
+## Discussion
 
 The system returns the read-only value as a Boolean [`NSNumber`](../nsnumber.md). The value is `true` if it has conflicts; otherwise, `false`.
 

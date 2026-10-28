@@ -25,7 +25,7 @@ case preCollision
 SCNParticleModifierStagePreCollision
 ```
 
-#### Discussion
+## Discussion
 
 Insert a modifier block at this stage to alter the inputs to collision resolution. For example, if you modify the bounce factors of particles during this stage, SceneKit uses the modified factors to compute the bounce velocity of each particle.
 

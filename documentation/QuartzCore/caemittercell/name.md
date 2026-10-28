@@ -24,7 +24,7 @@ var name: String? { get set }
 @property (copy, nullable) NSString * name;
 ```
 
-#### Discussion
+## Discussion
 
 The cell name is used when constructing animation key paths that reference the cell.
 

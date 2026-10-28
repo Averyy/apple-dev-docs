@@ -25,7 +25,7 @@ protocol OpensIntent : IntentResult
 
 - [Creating your first app intent](./creating-your-first-app-intent.md)
 
-#### Overview
+## Overview
 
 Add this protocol as a return type for an app intent’s [`perform()`](./appintent/perform%28%29.md) method when the method returns another app intent to run. When returning the result, you can return any type of app intent that makes sense for the current action. For example, an app intent to create a photo album might return an app intent to open that album in the app’s interface. After you return an app intent as a result, the system runs it to perform its action.
 

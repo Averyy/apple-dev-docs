@@ -25,11 +25,11 @@ func CFNumberGetValue(_ number: CFNumber!, _ theType: CFNumberType, _ valuePtr: 
 extern Boolean CFNumberGetValue(CFNumberRef number, CFNumberType theType, void *valuePtr);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the operation was successful, otherwise `false`.
 
-#### Discussion
+## Discussion
 
 If the argument type differs from the return type, and the conversion is lossy or the return value is out of range, then this function passes back an approximate value in `valuePtr` and returns `false`.
 

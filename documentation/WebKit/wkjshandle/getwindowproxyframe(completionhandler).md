@@ -25,7 +25,7 @@ var windowProxyFrame: WKFrameInfo? { get async }
 - (void) getWindowProxyFrameWithCompletionHandler:(void (^)(WKFrameInfo *)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 The frame represented by the JavaScript value.
 

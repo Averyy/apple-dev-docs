@@ -5,7 +5,7 @@
 
 Manage Game Center achievements by player for your apps.
 
-##### Overview
+### Overview
 
 This endpoint is different than most in App Store Connect API, this’s used to create or modify a player’s achievement in your app. Any and all data you send through this endpoint overwrites existing data for the player.
 

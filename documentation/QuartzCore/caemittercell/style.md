@@ -24,7 +24,7 @@ var style: [AnyHashable : Any]? { get set }
 @property (copy, nullable) NSDictionary * style;
 ```
 
-#### Discussion
+## Discussion
 
 This dictionary may in turn have a `style` key, forming a hierarchy of default values. In the case of hierarchical style dictionaries the shallowest value for a property is used. For example, the value for “style.someValue” takes precedence over “style.style.someValue”.
 

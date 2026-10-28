@@ -15,7 +15,7 @@ Validation data.
 var validation: MLSupportVectorClassifier.ModelParameters.ValidationData { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The default is `.split(strategy: .automatic)`, which automatically generates the validation dataset from 0% to 10% of the training dataset.
 

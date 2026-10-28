@@ -16,7 +16,7 @@ struct vnop_exchange_args {
 };
 ```
 
-#### Discussion
+## Discussion
 
 In general, regular are always "ready for I/O" and their select vnops simply return "1." Devices, though, may or may not be read; they keep track of who is selecting on them and send notifications when they become ready. xnu provides structures and routines for tracking threads waiting for I/O and waking up those threads: see selrecord(), selthreadclear(), seltrue(), selwait(), selwakeup(), and the selinfo structure (sys/select.h).
 

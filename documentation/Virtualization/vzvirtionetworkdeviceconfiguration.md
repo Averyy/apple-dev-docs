@@ -23,7 +23,7 @@ class VZVirtioNetworkDeviceConfiguration
 
 - [Creating and Running a Linux Virtual Machine](./creating-and-running-a-linux-virtual-machine.md)
 
-#### Overview
+## Overview
 
 Use a [`VZVirtioNetworkDeviceConfiguration`](./vzvirtionetworkdeviceconfiguration.md) object to configure one network interface of your virtual machine. After creating this object, assign an appropriate value to its inherited [`attachment`](./vznetworkdeviceconfiguration/attachment.md) property to define the type of network interface you want. You can also assign a specific MAC address, or let the system generate a random address for you.
 

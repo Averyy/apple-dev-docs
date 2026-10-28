@@ -17,7 +17,7 @@ framework: "CareKit/CareKitStore"
 final class OCKStoreCoordinator
 ```
 
-#### Overview
+## Overview
 
 When objects are **fetched** from an `OCKStoreCoordinator`, the `OCKStoreCoordinator` will transparently query all of the stores it knows about and return the aggregated results.
 

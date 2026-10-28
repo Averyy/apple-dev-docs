@@ -17,7 +17,7 @@ Applies a 1-dimensional transposed convolution over the multi-channel input sequ
 class ConvTransposed1d
 ```
 
-##### See Also
+### See Also
 
 - [`ConvTransposed2d`](./convtransposed2d.md)
 - [`ConvTransposed3d`](./convtransposed3d.md)

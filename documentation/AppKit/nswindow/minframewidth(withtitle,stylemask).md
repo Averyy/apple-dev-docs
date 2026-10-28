@@ -19,7 +19,7 @@ class func minFrameWidth(withTitle title: String, styleMask style: NSWindow.Styl
 + (CGFloat) minFrameWidthWithTitle:(NSString *) title styleMask:(NSWindowStyleMask) style;
 ```
 
-#### Return Value
+## Return Value
 
 The minimum width of the window’s frame, using `style`, in order to display `title`.
 

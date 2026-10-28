@@ -26,7 +26,7 @@ optional func screenRecorderDidChangeAvailability(_ screenRecorder: RPScreenReco
 - (void) screenRecorderDidChangeAvailability:(RPScreenRecorder *) screenRecorder;
 ```
 
-#### Discussion
+## Discussion
 
 Screen recording can be unavailable due to unsupported hardware, the user’s device displaying information over Airplay or through a TVOut session, or another app using the shared recorder.
 

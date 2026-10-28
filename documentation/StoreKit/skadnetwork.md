@@ -21,7 +21,7 @@ class SKAdNetwork
 @interface SKAdNetwork : NSObject
 ```
 
-#### Overview
+## Overview
 
 > ❗ **Important**:  Use [AdAttributionKit](../AdAttributionKit/AdAttributionKit.md) for app ad campaigns on the App Store and alternative marketplaces. See the [ad attribution developer support page](https://developer.apple.com/app-store/ad-attribution/) for information on how AdAttributionKit helps advertisers measure the success of ad campaigns while helping maintain user privacy. For information on interoperability between SKAdNetwork and AdAttributionKit, see [Understanding AdAttributionKit and SKAdNetwork interoperability](../AdAttributionKit/adattributionkit-skadnetwork-interoperability.md).
 
@@ -54,7 +54,7 @@ For more information about receiving ad attributions, including time-window deta
 
 The information in the postback that Apple cryptographically signs doesn’t include user- or device-specific data. It may include values from the ad network and the advertised app if providing those values meets Apple’s privacy threshold. For more information about postback values and postback data tiers, see [Receiving postbacks in multiple conversion windows](./receiving-postbacks-in-multiple-conversion-windows.md). For more information about the contents of postbacks for each SKAdNetwork version, see [Verifying an install-validation postback](./verifying-an-install-validation-postback.md).
 
-##### Presenting ads, updating conversion values, and receiving attribution
+### Presenting ads, updating conversion values, and receiving attribution
 
 Each participant has specific responsibilities when using the ad network APIs to present ads and receive attribution.
 

@@ -24,11 +24,11 @@ func roomForEntireHome() -> HMRoom
 - (HMRoom *) roomForEntireHome;
 ```
 
-#### Return Value
+## Return Value
 
 The room that represents all parts of the home that don’t have a more specific room to represent them.
 
-#### Discussion
+## Discussion
 
 HomeKit assigns new accessories to this room until you assign them to a more specific room with [`assignAccessory(_:to:completionHandler:)`](./assignaccessory%28_,to,completionhandler%29.md), or until the user assigns them to a room using the Home app.
 

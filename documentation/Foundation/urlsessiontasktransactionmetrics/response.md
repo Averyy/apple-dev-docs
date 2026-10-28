@@ -26,7 +26,7 @@ var response: URLResponse? { get }
 @property (copy, readonly, nullable) NSURLResponse * response;
 ```
 
-#### Discussion
+## Discussion
 
 This property is `nil` if an error occurred and no response was generated.
 

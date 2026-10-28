@@ -5,15 +5,15 @@
 
 Customize your app’s response to the double-tap gesture on Apple Watch.
 
-#### Overview
+## Overview
 
 On Apple Watch Series 9 and Apple Watch Ultra 2, people can trigger a scene’s primary action by tapping their index finger and thumb together twice. In watchOS 11 and later, you can assign a buttonlike control, such as a [`Button`](../SwiftUI/button.md) or [`Toggle`](../SwiftUI/toggle.md) as the scene’s primary action, customizing how your app responds to double tap.
 
-##### Take advantage of system behaviors
+### Take advantage of system behaviors
 
 Your app receives the default double-tap behaviors automatically. With double tap, people can scroll through lists and scroll views. They can also page through a vertical tab bar. In general, if your scene contains lists, vertical tab views, or scroll views, the system can handle the gesture for your app.
 
-##### Declare a primary action
+### Declare a primary action
 
 If your scene has an obvious main action, you can designate it as the primary action using the [`handGestureShortcut(_:isEnabled:)`](../SwiftUI/view/handgestureshortcut%28_,isenabled%29.md) modifier and passing the [`primaryAction`](../SwiftUI/handgestureshortcut/primaryaction.md) as the parameter.
 

@@ -23,7 +23,7 @@ optional func documentPicker(_ controller: UIDocumentPickerViewController, didPi
 - (void) documentPicker:(UIDocumentPickerViewController *) controller didPickDocumentAtURL:(NSURL *) url;
 ```
 
-#### Discussion
+## Discussion
 
 The meaning of the provided URL varies depending on the document picker’s mode:
 

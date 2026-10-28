@@ -25,7 +25,7 @@ var path: String? { get }
 @property (copy, readonly, nullable) NSString * path;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the path, unescaped using the [`replacingPercentEscapes(using:)`](../nsstring/replacingpercentescapes%28using%29.md) method. If the receiver does not conform to RFC 1808, this property contains `nil`.
 

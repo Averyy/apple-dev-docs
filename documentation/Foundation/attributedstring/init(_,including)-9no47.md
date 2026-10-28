@@ -21,7 +21,7 @@ Creates a value-type attributed string from a reference type, including an attri
 init<S>(_ nsStr: NSAttributedString, including scope: S.Type) throws where S : AttributeScope
 ```
 
-#### Discussion
+## Discussion
 
 This initializer only collects attributes from `nsStr` that exist in the provided scope. The resulting attributed string omits any keys in `nsStr` that don’t exist in `scope`.
 

@@ -25,13 +25,13 @@ class Thread
 @interface NSThread : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use this class when you want to have an Objective-C method run in its own thread of execution. Threads are especially useful when you need to perform a lengthy task, but don’t want it to block the execution of the rest of the application. In particular, you can use threads to avoid blocking the main thread of the application, which handles user interface and event-related actions. Threads can also be used to divide a large job into several smaller jobs, which can lead to performance increases on multi-core computers.
 
 The [`Thread`](./thread.md) class supports semantics similar to those of [`Operation`](./operation.md) for monitoring the runtime condition of a thread. You can use these semantics to cancel the execution of a thread or determine if the thread is still executing or has finished its task. Canceling a thread requires support from your thread code; see the description for [`cancel()`](./thread/cancel%28%29.md) for more information.
 
-##### Subclassing Notes
+### Subclassing Notes
 
 You can subclass [`Thread`](./thread.md) and override the [`main()`](./thread/main%28%29.md) method to implement your thread’s main entry point. If you override [`main()`](./thread/main%28%29.md), you do not need to invoke the inherited behavior by calling `super`.
 

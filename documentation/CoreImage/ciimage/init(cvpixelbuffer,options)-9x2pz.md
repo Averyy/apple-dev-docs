@@ -24,7 +24,7 @@ init(cvPixelBuffer pixelBuffer: CVPixelBuffer, options: [CIImageOption : Any]? =
 - (instancetype) initWithCVPixelBuffer:(CVPixelBufferRef) pixelBuffer options:(NSDictionary<NSString *,id> *) options;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized image object.
 

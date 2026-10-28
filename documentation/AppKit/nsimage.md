@@ -22,7 +22,7 @@ class NSImage
 @interface NSImage : NSObject
 ```
 
-#### Overview
+## Overview
 
 You use instances of [`NSImage`](./nsimage.md) to load existing images, create new images, and draw the resulting image data into your views. Although you use this class predominantly for image-related operations, the class itself knows little about the underlying image data. Instead, it works in conjunction with one or more image representation objects (subclasses of [`NSImageRep`](./nsimagerep.md)) to manage and render the image data. For the most part, these interactions are transparent.
 
@@ -36,7 +36,7 @@ The  class serves many purposes, providing support for the following tasks:
 
 The `NSImage` class itself is capable of managing image data in a variety of formats. The specific list of formats is dependent on the version of the operating system but includes many standard formats such as TIFF, JPEG, GIF, PNG, and PDF among others. AppKit manages each format using a specific type of image representation object, whose job is to manage the actual image data. You can get a list of supported formats using the methods described in Determining Supported Types of Images.
 
-##### Using Images with Core Animation Layers
+### Using Images with Core Animation Layers
 
 Although you can assign an `NSImage` object directly to the [`contents`](../QuartzCore/calayer/contents.md) property of a [`CALayer`](../QuartzCore/calayer.md) object, doing so may not always yield the best results. Instead of using your image object, you can use the [`layerContents(forContentsScale:)`](./nsimage/layercontents%28forcontentsscale%29.md) method to obtain an object that you can use for your layer’s contents. The image created by that method serves as the contents of a layer, which also supports all of the layer’s gravity modes. By contrast, the `NSImage` class supports only the [`resize`](../QuartzCore/calayercontentsgravity/resize.md), [`resizeAspect`](../QuartzCore/calayercontentsgravity/resizeaspect.md), and [`resizeAspectFill`](../QuartzCore/calayercontentsgravity/resizeaspectfill.md) modes.
 

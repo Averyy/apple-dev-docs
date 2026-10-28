@@ -23,7 +23,7 @@ case conflictPolicyFailOnConflict
 NSFileManagerUploadConflictPolicyFailOnConflict
 ```
 
-#### Discussion
+## Discussion
 
 This policy causes an upload to fail if the local version of a file, with any local changes applied, doesn’t match the server version. In this scenario, call [`fetchLatestRemoteVersionOfItem(at:completionHandler:)`](../filemanager/fetchlatestremoteversionofitem%28at,completionhandler%29.md), rebase local changes on top of the newly fetched version, and retry the upload.
 

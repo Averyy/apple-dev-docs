@@ -26,7 +26,7 @@ var friends: [String]? { get }
 @property (nonatomic, retain, readonly, nullable) NSArray<NSString *> * friends;
 ```
 
-#### Discussion
+## Discussion
 
 This property is invalid until a call to [`loadFriendsObsoleted(completionHandler:)`](./loadfriendsobsoleted%28completionhandler%29.md) succeeds.
 

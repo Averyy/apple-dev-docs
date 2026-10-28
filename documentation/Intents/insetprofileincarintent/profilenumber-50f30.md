@@ -26,7 +26,7 @@ The profile index from which to restore the settings.
 @property (atomic, copy, readonly, nullable) NSNumber * profileNumber;
 ```
 
-#### Discussion
+## Discussion
 
 If your vehicle saves profile information using defined indexes, use this property to get the integer index of the profile slot from which to retrieve the settings.
 

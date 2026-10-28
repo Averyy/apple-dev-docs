@@ -19,11 +19,11 @@ object Motion
 
 - [About Component Behaviors](../AppleNews/about-component-behaviors.md)
 
-#### Discussion
+## Discussion
 
 When you apply the `Motion` behavior to a component, the component reacts to the movement of the device. For example, when the user tilts the device, the component moves in the same direction. [This video](https://developer.apple.com/apple-news/videos/motion.mp4) shows an example of the `motion` behavior.
 
-##### Example
+### Example
 
 ```json
 {

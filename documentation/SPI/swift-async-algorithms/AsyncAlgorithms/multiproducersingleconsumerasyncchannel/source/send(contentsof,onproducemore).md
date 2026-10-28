@@ -24,7 +24,7 @@ Send new elements to the channel and provide a callback which will be invoked on
 mutating func send<S>(contentsOf sequence: consuming sending S, onProduceMore: @escaping @Sendable (Result<Void, any Error>) -> Void) where Element == S.Element, S : Sequence
 ```
 
-#### Discussion
+## Discussion
 
 If there is a task consuming the channel and awaiting the next element then the task will get resumed with the first element of the provided sequence. If the channel already terminated then `onProduceMore` will be invoked with a `Result.failure`.
 

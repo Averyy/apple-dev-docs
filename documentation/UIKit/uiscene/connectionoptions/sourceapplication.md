@@ -23,7 +23,7 @@ var sourceApplication: String? { get }
 @property (nonatomic, readonly, nullable) NSString * sourceApplication;
 ```
 
-#### Discussion
+## Discussion
 
 If the request originated from another app belonging to your team, UIKit places the bundle ID of that app in this property. If the team identifier of the originating app is different than the team identifier of the current app, this property is `nil`.
 

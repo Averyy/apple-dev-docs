@@ -25,7 +25,7 @@ struct Option
 typedef NSString * SCNPhysicsShapeOption;
 ```
 
-#### Discussion
+## Discussion
 
 When SceneKit creates a shape from a hierarchy of nodes containing multiple geometries, the [`keepAsCompound`](./option/keepascompound.md) option takes precedence over the [`type`](./option/type.md) option.
 

@@ -20,7 +20,7 @@ let kSecCFErrorGuestAttributes: CFString
 extern CFStringRef const kSecCFErrorGuestAttributes;
 ```
 
-#### Discussion
+## Discussion
 
 This key is present when you pass a bad guest attribute to the [`SecHostCreateGuest`](./sechostcreateguest.md) or [`SecHostSetGuestStatus`](./sechostsetgueststatus.md) function.
 

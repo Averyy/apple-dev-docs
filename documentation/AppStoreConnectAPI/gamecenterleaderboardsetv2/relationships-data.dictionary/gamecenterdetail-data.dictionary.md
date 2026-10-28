@@ -15,7 +15,7 @@ The data that describes the Game Center detail of the Game Center leaderboard se
 object GameCenterLeaderboardSetV2.Relationships.GameCenterDetail
 ```
 
-#### Overview
+## Overview
 
 - data:
 

@@ -22,11 +22,11 @@ nonisolated
 func trim(from startFraction: CGFloat = 0, to endFraction: CGFloat = 1) -> some Shape
 ```
 
-#### Return Value
+## Return Value
 
 A shape built by capturing a portion of this shape’s path.
 
-#### Discussion
+## Discussion
 
 To create a `Shape` instance, you define the shape’s path using lines and curves. Use the `trim(from:to:)` method to draw a portion of a shape by ignoring portions of the beginning and ending of the shape’s path.
 

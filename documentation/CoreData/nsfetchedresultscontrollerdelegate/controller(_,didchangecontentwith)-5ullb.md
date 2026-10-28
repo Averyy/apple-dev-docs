@@ -25,7 +25,7 @@ optional func controller(_ controller: NSFetchedResultsController<any NSFetchReq
 - (void) controller:(NSFetchedResultsController *) controller didChangeContentWithDifference:(NSOrderedCollectionDifference<NSManagedObjectID *> *) diff;
 ```
 
-#### Discussion
+## Discussion
 
 This method is only invoked if the controller’s [`sectionNameKeyPath`](../nsfetchedresultscontroller/sectionnamekeypath.md) property is `nil` and [`controller(_:didChangeContentWith:)`](./controller%28_,didchangecontentwith%29-4kezq.md) is not implemented.
 

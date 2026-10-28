@@ -16,7 +16,7 @@ class XCTDarwinNotificationExpectation
 @interface XCTDarwinNotificationExpectation : XCTestExpectation
 ```
 
-#### Overview
+## Overview
 
 If a custom [`handler`](./xctdarwinnotificationexpectation/handler-swift.property.md) value is not provided, the expectation will be fulfilled as soon as a matching Darwin notification is received from any process.
 

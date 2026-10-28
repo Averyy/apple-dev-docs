@@ -26,7 +26,7 @@ var providerName: String { get }
 
 Available when `Upstream` conforms to `ConfigProvider`.
 
-#### Discussion
+## Discussion
 
 Used by [`AccessReporter`](../accessreporter.md) and other diagnostic logging.
 

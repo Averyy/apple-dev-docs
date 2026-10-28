@@ -14,7 +14,7 @@
 #define kCallInterfaceOpenWithGate
 ```
 
-#### Discussion
+## Discussion
 
 If the USB Device has this property, drivers for any of its interfaces will have their handleOpen method called while holding the workloop gate.
 

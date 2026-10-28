@@ -25,7 +25,7 @@ func set(_ value: Bool, forKey defaultName: String)
 - (void) setBool:(BOOL) value forKey:(NSString *) defaultName;
 ```
 
-#### Discussion
+## Discussion
 
 This method places the Boolean value in an [`NSNumber`](../nsnumber.md) type before writing the key and value to the defaults database. After you call this method, the system generates a [`didChangeNotification`](./didchangenotification.md) for registered observers.
 

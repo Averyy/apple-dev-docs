@@ -21,7 +21,7 @@ Subprogress is used to establish parent-child relationship between two instances
 struct Subprogress
 ```
 
-#### Overview
+## Overview
 
 Subprogress is returned from a call to `subprogress(assigningCount:)` by a parent ProgressManager. A child ProgressManager is then returned by calling `start(totalCount:)` on a Subprogress.
 

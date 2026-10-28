@@ -25,11 +25,11 @@ func SparseGetInertia(_ Factored: SparseOpaqueFactorization_Double, _ num_positi
 int SparseGetInertia(SparseOpaqueFactorization_Double Factored, int *num_positive, int *num_zero, int *num_negative);
 ```
 
-#### Return Value
+## Return Value
 
 `0` on success; otherwise, a nonzero value on error.
 
-#### Discussion
+## Discussion
 
 This function returns the number of negative, zero, and positive pivots that the sparse factorization functions, [`SparseFactor(_:_:)`](./sparsefactor%28_,_%29-8gl6j.md) and [`SparseFactor(_:_:_:_:)`](./sparsefactor%28_,_,_,_%29-88xmk.md), take during an *LDLᵀ* factorization.
 

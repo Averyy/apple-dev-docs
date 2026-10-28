@@ -15,11 +15,11 @@ Extracts the direction of an endpoint from an endpoint descriptor.
 uint8_t IOUSBGetEndpointDirection(const IOUSBEndpointDescriptor *descriptor);
 ```
 
-#### Return Value
+## Return Value
 
 The found direction.
 
-#### Discussion
+## Discussion
 
 This method parses an endpoint descriptor to determine its transfer direction.
 

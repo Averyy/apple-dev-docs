@@ -21,11 +21,11 @@ func play(_ sound: AVCaptureEventSound) -> Bool
 - (BOOL) playSound:(AVCaptureEventSound *) sound;
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that indicates whether the system played the sound.
 
-#### Discussion
+## Discussion
 
 This method has no effect if [`shouldPlaySound`](./shouldplaysound.md) is `false` or if the event object’s lifetime exceeds 15 seconds.
 

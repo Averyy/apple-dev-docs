@@ -25,7 +25,7 @@ class NSMutableArray
 @interface NSMutableArray : NSArray
 ```
 
-#### Overview
+## Overview
 
 You can use this type in Swift instead of an [`Array`](../Swift/array.md) variable in cases that require reference semantics.
 
@@ -33,7 +33,7 @@ The `NSMutableArray` class declares the programmatic interface to objects that m
 
 NSMutableArray is “toll-free bridged” with its Core Foundation counterpart, [`CFMutableArray`](../CoreFoundation/cfmutablearray.md). See [Toll-Free Bridging](https://developer.apple.com/library/archive/documentation/General/Conceptual/CocoaEncyclopedia/Toll-FreeBridgin/Toll-FreeBridgin.html#//apple_ref/doc/uid/TP40010810-CH2) for more information.
 
-##### Accessing Values Using Subscripting
+### Accessing Values Using Subscripting
 
 In addition to the provided instance methods, such as [`replaceObject(at:with:)`](./nsmutablearray/replaceobject%28at,with%29.md), you can access `NSArray` values by their indexes using *subscripting*.
 
@@ -49,14 +49,14 @@ mutableArray[3] = "someValue"
 mutableArray[3] = @"someValue";
 ```
 
-##### Subclassing Notes
+### Subclassing Notes
 
 There is typically little reason to subclass `NSMutableArray`. The class does well what it is designed to do—maintain a mutable, ordered collection of objects. But there are situations where a custom `NSArray` object might come in handy. Here are a few possibilities:
 
 - Changing how `NSMutableArray` stores the elements of its collection. You might do this for performance reasons or for better compatibility with legacy code.
 - Acquiring more information about what is happening to the collection (for example, statistics gathering).
 
-###### Methods to Override
+#### Methods to Override
 
 `NSMutableArray` defines five primitive methods:
 

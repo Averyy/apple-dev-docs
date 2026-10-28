@@ -20,11 +20,11 @@ func CGReleaseAllDisplays() -> CGError
 extern CGError CGReleaseAllDisplays();
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See `Core Graphics Data Types and Constants`.
 
-#### Discussion
+## Discussion
 
 This function releases all captured displays and restores the display modes to the user’s preferences. It may be used in conjunction with any of the functions that capture displays, such as [`CGCaptureAllDisplays()`](./cgcapturealldisplays%28%29.md).
 

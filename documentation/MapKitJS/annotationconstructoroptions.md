@@ -15,7 +15,7 @@ An object that contains options for creating annotation features.
 interface AnnotationConstructorOptions
 ```
 
-#### Overview
+## Overview
 
 Use [`AnnotationConstructorOptions`](./annotationconstructoroptions.md) when you need to create a custom view to provide features beyond those that the [`ImageAnnotation`](./imageannotation.md) object provides.
 

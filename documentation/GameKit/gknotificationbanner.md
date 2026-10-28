@@ -26,7 +26,7 @@ class GKNotificationBanner
 @interface GKNotificationBanner : NSObject
 ```
 
-#### Overview
+## Overview
 
 This class displays a message in a banner to the local player, similar to the banner that GameKit displays when a player earns an achievement. If the game is in the foreground, the banner appears immediately. If the game is in the background, the banner appears when the game becomes active.
 

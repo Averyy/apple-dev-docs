@@ -36,7 +36,7 @@ class GKTurnBasedMatchmakerViewController
 
 - [Starting turn-based matches and passing turns between players](./starting-turn-based-matches-and-passing-turns-between-players.md)
 
-#### Overview
+## Overview
 
 Before you create a `GKTurnBasedMatchmakerViewController` object, create a [`GKMatchRequest`](./gkmatchrequest.md) object and configure it according to the parameters of your game. Then, pass the match request to the [`init(matchRequest:)`](./gkmatchmakerviewcontroller/init%28matchrequest%29.md) initializer to create the view controller.
 

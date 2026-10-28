@@ -23,7 +23,7 @@ var placeholder: String? { get set }
 @property (nonatomic, copy, nullable) NSString * placeholder;
 ```
 
-#### Discussion
+## Discussion
 
 This value is `nil` by default. The placeholder string is drawn using a system-defined color.
 

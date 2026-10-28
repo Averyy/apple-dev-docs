@@ -13,7 +13,7 @@
 var kUAZoomFocusTypeOther: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 An event is requesting focus.
 

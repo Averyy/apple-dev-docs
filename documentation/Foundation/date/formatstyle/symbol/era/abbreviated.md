@@ -21,7 +21,7 @@ An abbreviated representation of an era.
 static var abbreviated: Date.FormatStyle.Symbol.Era { get }
 ```
 
-#### Discussion
+## Discussion
 
 A custom format style conveying an abbreviated representation of an era. For example, `BC` (*before Christ*) and `AD` (*anno Domini*).
 

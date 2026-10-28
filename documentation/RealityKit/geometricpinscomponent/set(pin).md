@@ -20,7 +20,7 @@ Adds a pin to the collection.
 mutating func set(pin: GeometricPin)
 ```
 
-#### Discussion
+## Discussion
 
 If the pin’s name already exists in the collection, the new value replaces the existing one.
 

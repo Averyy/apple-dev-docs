@@ -15,11 +15,11 @@ CMError NCMGetProfileLocation (
 );
 ```
 
-#### Return Value
+## Return Value
 
 A `CMError` value. See [Result Codes](../colorsync_manager.md#1670295).
 
-#### Overview
+## Overview
 
 The `NCMGetProfileLocation` function is available starting with ColorSync version 2.5. It differs from its predecessor, [CMGetProfileLocation](./api-1804885-cmgetprofilelocation.md), in that the newer version has a parameter for the size of the location structure for the specified profile.
 

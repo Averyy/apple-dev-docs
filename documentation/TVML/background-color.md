@@ -5,7 +5,7 @@
 
 Changes the background color of an element.
 
-#### Overview
+## Overview
 
 Here’s an example of how to change the background color of a `description` element.
 
@@ -13,13 +13,13 @@ Here’s an example of how to change the background color of a `description` ele
 <description style="background-color:rgba(0,0,255,0.3)">Light purple background</description>
 ```
 
-##### Values for background-color
+### Values for background-color
 
 - **`rgb(r,g,b)`**: The background color of an element, where `r,g,b` are the red, green, and blue color components, and have a value range from `0-255`.
 - **`rgba(r,g,b,a)`**: The background color of an element, where `r,g,b` are the red, green, and blue color components, and have a value range from `0-255`, and `a` is the alpha applied to the color, ranging from `0.0-1.0`.
 - **`transparent`**: The background color of the element, which is transparent.
 
-##### Elements that Use background-color
+### Elements that Use background-color
 
 - [description](./description.md)
 - [ratingCard](./ratingcard.md)

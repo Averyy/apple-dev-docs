@@ -25,7 +25,7 @@ class let dcip3: CFString
 extern CFStringRef const kCGColorSpaceDCIP3;
 ```
 
-#### Discussion
+## Discussion
 
 This color space was created by Digital Cinema Initiatives.
 

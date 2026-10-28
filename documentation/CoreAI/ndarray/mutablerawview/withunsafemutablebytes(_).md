@@ -20,11 +20,11 @@ Invokes the provided closure with the backing data and memory layout of this vie
 consuming func withUnsafeMutableBytes<R, E>(_ body: (UnsafeMutableRawPointer, Span<Int>, Span<Int>) throws(E) -> R) throws(E) -> R where E : Error
 ```
 
-#### Return Value
+## Return Value
 
 The value returned by the closure.
 
-#### Discussion
+## Discussion
 
 - body: The closure to be invoked with a mutable raw pointer to the first element, as well as shape and strides of the view.
 

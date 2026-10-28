@@ -25,7 +25,7 @@ var maximumDistance: Float { get set }
 @property (nonatomic) float maximumDistance;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `100000.0` meters.
 

@@ -21,7 +21,7 @@ Returns a Boolean value indicating whether the first tuple is ordered after or t
 func >= (lhs: (), rhs: ()) -> Bool
 ```
 
-#### Discussion
+## Discussion
 
 An arity zero tuple is always after or the same as another arity zero tuple in a lexicographical ordering.
 

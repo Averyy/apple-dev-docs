@@ -25,7 +25,7 @@ static var broadcast: CBCharacteristicProperties { get }
 CBCharacteristicPropertyBroadcast
 ```
 
-#### Discussion
+## Discussion
 
 Don’t use this property for local characteristics published with the [`add(_:)`](../cbperipheralmanager/add%28_%29.md) method of the [`CBPeripheralManager`](../cbperipheralmanager.md) class. You can’t use this property when you initialize a new [`CBMutableCharacteristic`](../cbmutablecharacteristic.md) object with the [`init(type:properties:value:permissions:)`](../cbmutablecharacteristic/init%28type,properties,value,permissions%29.md) method of the [`CBMutableCharacteristic`](../cbmutablecharacteristic.md) class.
 

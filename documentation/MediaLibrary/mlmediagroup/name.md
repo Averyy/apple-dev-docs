@@ -22,7 +22,7 @@ var name: String? { get }
 @property (copy, readonly, nullable) NSString * name;
 ```
 
-#### Discussion
+## Discussion
 
 This string is human-readable. It is either user created (such as the name of an iTunes playlist) or already localized.
 

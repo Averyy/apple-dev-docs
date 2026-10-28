@@ -18,7 +18,7 @@ let kCGWindowAlpha: CFString
 extern CFStringRef const kCGWindowAlpha;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is a [`CFNumber`](../CoreFoundation/cfnumber.md) type (encoded as [`CFNumberType.floatType`](../CoreFoundation/cfnumbertype/floattype.md)) that contains the window’s alpha fade level. This number is in the range 0.0 to 1.0, where 0.0 is fully transparent and 1.0 is fully opaque.
 

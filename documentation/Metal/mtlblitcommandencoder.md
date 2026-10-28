@@ -32,7 +32,7 @@ protocol MTLBlitCommandEncoder : MTLCommandEncoder
 - [Sampling GPU data into counter sample buffers](./sampling-gpu-data-into-counter-sample-buffers.md)
 - [Transferring data between connected GPUs](./transferring-data-between-connected-gpus.md)
 
-#### Overview
+## Overview
 
 Create a blit encoder by calling one of the factory methods on an [`MTLCommandBuffer`](./mtlcommandbuffer.md) instance, such as [`makeBlitCommandEncoder()`](./mtlcommandbuffer/makeblitcommandencoder%28%29.md).
 
@@ -51,7 +51,7 @@ You typically use these commands to move data between a resource that uses priva
 
 When you finish encoding blit commands, finalize the blit pass into the command buffer by calling the encoder’s [`endEncoding()`](./mtlcommandencoder/endencoding%28%29.md) method.
 
-##### Command stages
+### Command stages
 
 Most blit commands apply to one stage within a pass. The following table shows which stages apply to each command:
 

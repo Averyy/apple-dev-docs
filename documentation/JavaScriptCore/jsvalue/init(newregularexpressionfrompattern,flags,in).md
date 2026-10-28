@@ -24,11 +24,11 @@ init!(newRegularExpressionFromPattern pattern: String!, flags: String!, in conte
 + (JSValue *) valueWithNewRegularExpressionFromPattern:(NSString *) pattern flags:(NSString *) flags inContext:(JSContext *) context;
 ```
 
-#### Return Value
+## Return Value
 
 A new JavaScript regular expression object.
 
-#### Discussion
+## Discussion
 
 Calling this method creates a JavaScript `RegExp` object, and is equivalent to declaring a regular expression literal (such as `/ab+c/i`) or calling the `RegExp` constructor (for example, `new RegExp("ab+c", "i")`) in JavaScript.
 

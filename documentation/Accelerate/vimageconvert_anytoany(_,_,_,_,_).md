@@ -29,11 +29,11 @@ vImage_Error vImageConvert_AnyToAny(vImageConverterRef const converter, const vI
 
 - [Building a basic image conversion workflow](./building-a-basic-image-conversion-workflow.md)
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, a negative value indicates one of the error codes that [Data Types and Constants](./data-types-and-constants.md) describes, and a positive value indicates the required size for the temporary buffer.
 
-#### Discussion
+## Discussion
 
 With an appropriately configured vImage converter, convert the image channels found in `srcs` to the image channels found in `dests`. Whenever possible, conversion passes are vectorized and multithreaded to reduce the time and energy cost of the function.
 
@@ -45,7 +45,7 @@ Some formats, particularly YUV422 and YUV420, and those with a pixel size that�
 
 When reading incomplete chunks, vImage touches only the unused parts of the chunk when it knows it to be safe to do so. When writing incomplete chunks, vImage copies the rightmost valid pixel color into the unused part of the chunk. Thus, on reading, the entire chunk doesn’t have to be there, but on writing, it does. Conventions vary among chunk-using imaging pipelines, and this conservative approach should interoperate with most. However, be careful when writing to chunk-based formats (not to be confused with chunky formats, which merely have several channels interleaved) to make sure that the buffer is large enough to tolerate the write policy.  If you’re tiling chunk-based data, be careful not to run tile boundaries through the middle of a chunk.  Chunks are assumed to be indivisible.
 
-##### Optimize performance with temporary buffers
+### Optimize performance with temporary buffers
 
 This function uses a multiple-pass algorithm that saves intermediate pixel values between passes. In some cases, the destination buffer may not be large enough to store that intermediate data, so the operation requires additional storage.
 

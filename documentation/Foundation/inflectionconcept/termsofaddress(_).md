@@ -21,7 +21,7 @@ Indicates that the system uses the associated terms of address for grammatical a
 case termsOfAddress([TermOfAddress])
 ```
 
-#### Discussion
+## Discussion
 
 When inflecting text the first term of address which can be used in the target language is the one used for pronoun substitution and grammar agreement.
 

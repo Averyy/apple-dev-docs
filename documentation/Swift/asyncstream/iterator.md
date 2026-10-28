@@ -21,7 +21,7 @@ The asynchronous iterator for iterating an asynchronous stream.
 struct Iterator
 ```
 
-#### Overview
+## Overview
 
 This type doesn’t conform to `Sendable`. Don’t use it from multiple concurrent contexts. It is a programmer error to invoke `next()` from a concurrent context that contends with another such call, which results in a call to `fatalError()`.
 

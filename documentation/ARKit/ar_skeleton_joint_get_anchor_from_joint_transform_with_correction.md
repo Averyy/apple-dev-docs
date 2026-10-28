@@ -15,7 +15,7 @@ Get the transform from the joint to the anchor’s coordinate system.
 extern simd_float4x4 ar_skeleton_joint_get_anchor_from_joint_transform_with_correction(ar_skeleton_joint_t joint, ar_transform_correction_t transform_correction);
 ```
 
-#### Return Value
+## Return Value
 
 The transform from the joint to the anchor’s coordinate system.
 

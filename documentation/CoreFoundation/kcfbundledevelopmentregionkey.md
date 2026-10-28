@@ -25,7 +25,7 @@ let kCFBundleDevelopmentRegionKey: CFString!
 extern CFStringRef const kCFBundleDevelopmentRegionKey;
 ```
 
-#### Discussion
+## Discussion
 
 When CFBundle looks for resources, the fallback is to look in the lproj whose name is given by the `kCFBundleDevelopmentRegionKey` in the `Info.plist` file. You must, therefore, ensure that a bundle contains an lproj with that exact name containing a copy of every localized resource, otherwise CFBundle cannot guarantee the fallback mechanism will work.
 

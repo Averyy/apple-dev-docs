@@ -21,7 +21,7 @@ Create a file path component from a string.
 init?(_ string: String)
 ```
 
-#### Discussion
+## Discussion
 
 Returns `nil` if `string` is empty, a root, or has more than one component in it.
 

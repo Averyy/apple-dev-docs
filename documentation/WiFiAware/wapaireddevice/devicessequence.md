@@ -17,7 +17,7 @@ A sequence that vends updates to a paired device list, as the list changes.
 struct DevicesSequence
 ```
 
-#### Overview
+## Overview
 
 The `DevicesSequence` produces an asynchronous sequence of [`WAPairedDevice.Devices`](./devices.md) items, providing the latest snapshot of the paired devices known to your app.
 

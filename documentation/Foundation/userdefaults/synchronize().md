@@ -25,7 +25,7 @@ func synchronize() -> Bool
 - (BOOL) synchronize;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the data was saved successfully to disk, otherwise [`false`](../../Swift/false.md).
 

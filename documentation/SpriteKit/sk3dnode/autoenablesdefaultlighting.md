@@ -29,7 +29,7 @@ var autoenablesDefaultLighting: Bool { get set }
 
 - [Displaying 3D Content in a SpriteKit Scene](../displaying-3d-content-in-a-spritekit-scene.md)
 
-#### Discussion
+## Discussion
 
 If this property’s value is [`true`](../../Swift/true.md) (the default), SceneKit automatically adds and places an omnidirectional light source when rendering scenes that contain no lights or only contain ambient lights. If you change the value to false, the only light sources SceneKit uses for rendering a scene are those contained in the scene graph.
 

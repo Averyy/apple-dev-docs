@@ -23,7 +23,7 @@ var isEnabled: Bool { get set }
 @property (nonatomic, getter=isEnabled) BOOL enabled;
 ```
 
-#### Discussion
+## Discussion
 
 By default, the value of this property is [`true`](../../Swift/true.md), which means the system invokes the actions of the UI update link for each UI update.
 

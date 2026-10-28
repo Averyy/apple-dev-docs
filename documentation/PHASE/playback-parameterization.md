@@ -5,11 +5,11 @@
 
 Change the characteristics of in-flight audio by adjusting its properties at runtime.
 
-#### Overview
+## Overview
 
 Metaparameters control several features of a sound source or sound event, as they play back. For instance, metaparameters can adjust a switch node’s toggle, or the amount of reverb that a sound source emanates.
 
-##### Attach Metaparameters to a Particular Sound
+### Attach Metaparameters to a Particular Sound
 
 To use a metaparameter, you attach it to a sound event or sound source. PHASE provides the following ways to attach metaparameters:
 
@@ -20,7 +20,7 @@ To use a metaparameter, you attach it to a sound event or sound source. PHASE pr
 - **[`PHASEMappedMetaParameterDefinition`](./phasemappedmetaparameterdefinition.md)**: [`init(inputMetaParameterDefinition:envelope:identifier:)`](./phasemappedmetaparameterdefinition/init%28inputmetaparameterdefinition,envelope,identifier%29.md)
 - **[`PHASESpatialPipelineEntry`](./phasespatialpipelineentry.md)**: [`sendLevelMetaParameterDefinition`](./phasespatialpipelineentry/sendlevelmetaparameterdefinition.md)
 
-##### Adjust a Property of a Single Audio Signal
+### Adjust a Property of a Single Audio Signal
 
 The framework refers to metaparameters that you access through a sound event’s [`metaParameters`](./phasesoundevent/metaparameters.md) dictionary as *local* metaparameters. When you adjust the value of a local metaparameter, it affects just the sound event.
 
@@ -71,7 +71,7 @@ mySampler.gainMetaParameterDefinition = myGainParam;
 myPHASESoundEvent.metaParameters[@"gain"].value = 0.5
 ```
 
-##### Share a Parameter with Multiple Audio Signals
+### Share a Parameter with Multiple Audio Signals
 
 The framework refers to parameters that affect many sound events or sound sources as *global* metaparameters. Real-time adjustments to global metaparameters affect the playback of all sound events that initialize with the metaparameter.
 

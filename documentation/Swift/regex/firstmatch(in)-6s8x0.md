@@ -21,11 +21,11 @@ Returns the first match for this regex found in the given string.
 func firstMatch(in string: String) throws -> Regex<Output>.Match?
 ```
 
-#### Return Value
+## Return Value
 
 The match, if one is found; otherwise, `nil`.
 
-#### Discussion
+## Discussion
 
 Use the `firstMatch(in:)` method to search for the first occurrence of this regular expression in `string`. This example searches for the first sequence of digits that occurs in a string:
 

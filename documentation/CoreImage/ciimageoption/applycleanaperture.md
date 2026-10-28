@@ -24,7 +24,7 @@ static let applyCleanAperture: CIImageOption
 extern CIImageOption const kCIImageApplyCleanAperture;
 ```
 
-#### Discussion
+## Discussion
 
 For a `CVPixelBuffer` this will use `kCVImageBufferPreferredCleanApertureKey` or `kCVImageBufferCleanApertureKey`.
 

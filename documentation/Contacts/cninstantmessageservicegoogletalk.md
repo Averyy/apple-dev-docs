@@ -24,7 +24,7 @@ let CNInstantMessageServiceGoogleTalk: String
 extern NSString * const CNInstantMessageServiceGoogleTalk;
 ```
 
-#### Discussion
+## Discussion
 
 This key takes a string value.
 

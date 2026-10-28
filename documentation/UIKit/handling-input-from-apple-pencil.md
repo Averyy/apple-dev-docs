@@ -4,7 +4,7 @@
 
 Learn how to detect and respond to touches from Apple Pencil.
 
-#### Overview
+## Overview
 
 UIKit reports touches from Apple Pencil in the same way it reports touches from a person’s fingers. Specifically, UIKit delivers a [`UITouch`](./uitouch.md) object containing the location of the touch in your app. However, a touch object originating from Apple Pencil contains additional information, including the azimuth and altitude of Apple Pencil and the amount of force recorded at its tip.
 
@@ -14,7 +14,7 @@ Because Apple Pencil is a separate device, there’s a delay between the time Ap
 
 > **Note**:  Devices that work with Apple Pencil can report touches at up to 240 Hz. Because UIKit usually reports touches at around 60 Hz, any additional touches are coalesced into a single touch representing the last location. For information about how to get the additional touch data, see [Getting high-fidelity input with coalesced touches](./getting-high-fidelity-input-with-coalesced-touches.md).
 
-##### Handle estimated properties
+### Handle estimated properties
 
 When UIKit has only an estimate of a property’s value, it includes a flag in the [`estimatedPropertiesExpectingUpdates`](./uitouch/estimatedpropertiesexpectingupdates.md) property of the corresponding [`UITouch`](./uitouch.md) object. When handling a touch event, check that property to determine if you need to update the touch information later.
 

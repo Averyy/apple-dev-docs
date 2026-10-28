@@ -25,7 +25,7 @@ var subtitle: String? { get set }
 @property (nonatomic, copy, nullable) NSString * subtitle;
 ```
 
-#### Discussion
+## Discussion
 
 The shape displays this string in the callout for the associated annotation view. The default value of this property is `nil`.
 

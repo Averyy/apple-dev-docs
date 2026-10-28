@@ -23,7 +23,7 @@ class NSFileProviderDomain
 @interface NSFileProviderDomain : NSObject
 ```
 
-#### Overview
+## Overview
 
 You can use domains to partition a file provider’s content. When you use domains, a single file provider can act as if multiple file providers were installed, and users can dynamically switch from one domain to another. You can use domains to represent different accounts or locations.
 

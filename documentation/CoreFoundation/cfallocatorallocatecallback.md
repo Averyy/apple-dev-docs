@@ -25,7 +25,7 @@ typealias CFAllocatorAllocateCallBack = (CFIndex, CFOptionFlags, UnsafeMutableRa
 typedef void *(*)(long, unsigned long, void *) CFAllocatorAllocateCallBack;
 ```
 
-#### Return Value
+## Return Value
 
 A pointer to the start of the block.
 

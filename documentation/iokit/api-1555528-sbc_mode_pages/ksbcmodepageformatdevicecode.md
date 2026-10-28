@@ -14,7 +14,7 @@
 kSBCModePageFormatDeviceCode = 0x03
 ```
 
-#### Discussion
+## Discussion
 
 Format Device Mode Page value.
 

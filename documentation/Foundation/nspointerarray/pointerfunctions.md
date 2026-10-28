@@ -26,7 +26,7 @@ var pointerFunctions: NSPointerFunctions { get }
 @property (copy, readonly) NSPointerFunctions * pointerFunctions;
 ```
 
-#### Discussion
+## Discussion
 
 The returned object is a new `NSPointerFunctions` object that you can modify and/or use directly to create other pointer collections.
 

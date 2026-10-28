@@ -15,7 +15,7 @@
 kINQUIRY_Byte7_LINKED_Mask = (1 << kINQUIRY_Byte7_LINKED_Bit)
 ```
 
-#### Discussion
+## Discussion
 
 Mask to use to test the LINKED bit.
 

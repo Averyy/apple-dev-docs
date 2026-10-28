@@ -15,11 +15,11 @@ Create a stereo properties configuration object.
 extern ar_stereo_properties_configuration_tar_stereo_properties_configuration_create();
 ```
 
-#### Return Value
+## Return Value
 
 An instance of `ar_stereo_properties_configuration_t`.
 
-#### Discussion
+## Discussion
 
 > **Note**: This type supports ARC. In non-ARC files, use `ar_retain()` and `ar_release()` to retain and release the object.
 

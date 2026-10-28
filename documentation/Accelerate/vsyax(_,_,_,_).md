@@ -21,7 +21,7 @@ func vSyax(_ n: Int32, _ alpha: Float, _ x: UnsafePointer<vFloat>, _ y: UnsafeMu
 extern void vSyax(int32_t n, float alpha, const vFloat *x, vFloat *y);
 ```
 
-#### Discussion
+## Discussion
 
 Each element of vector `x` is multiplied by `alpha`, and stored in the corresponding element of `y`.
 

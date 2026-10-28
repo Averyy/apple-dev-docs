@@ -25,7 +25,7 @@ convenience init(string numberValue: String?)
 - (instancetype) initWithString:(NSString *) numberValue;
 ```
 
-#### Discussion
+## Discussion
 
 Don’t use this initializer if `numberValue` has a fractional part, since the lack of a locale makes handling the decimal separator ambiguous. The separator is a period in some locales (like in the United States) and a comma in others (such as France).
 

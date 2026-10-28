@@ -22,7 +22,7 @@ func startSearchingForNewAccessories()
 - (void) startSearchingForNewAccessories;
 ```
 
-#### Discussion
+## Discussion
 
 HomeKit notifies your accessory browser delegate by calling the [`accessoryBrowser(_:didFindNewAccessory:)`](../hmaccessorybrowserdelegate/accessorybrowser%28_,didfindnewaccessory%29.md) and [`accessoryBrowser(_:didRemoveNewAccessory:)`](../hmaccessorybrowserdelegate/accessorybrowser%28_,didremovenewaccessory%29.md) methods when it detects accessories being added or removed, respectively.
 

@@ -24,7 +24,7 @@ class HKStatistics
 @interface HKStatistics : NSObject
 ```
 
-#### Overview
+## Overview
 
 HealthKit creates statistic objects using either a statistics query or a statistics collection query. For the statistics query, it performs the specified calculations over all the samples that match the query. For the statistics collection query, it partitions the matching samples into a set of time intervals and performs the calculations over each interval separately.
 

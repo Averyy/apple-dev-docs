@@ -20,11 +20,11 @@ Returns a new mutable movie object from a movie stored in a data object.
 + (instancetype) movieWithData:(NSData *) data options:(NSDictionary<NSString *,id> *) options error:(NSError **) outError;
 ```
 
-#### Return Value
+## Return Value
 
 An `AVMutableMovie` object.
 
-#### Discussion
+## Discussion
 
 On initialization, the [`defaultMediaDataStorage`](./defaultmediadatastorage.md) property and any associated [`mediaDataStorage`](../avmutablemovietrack/mediadatastorage.md) properties are set to `nil`. To create an `AVMutableMovie` from a file and then append sample buffers to any of its tracks, you must first set one of these properties to indicate where the sample data should be written.
 

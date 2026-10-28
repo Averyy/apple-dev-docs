@@ -21,11 +21,11 @@ Check that an expression causes the process to terminate in a given fashion and 
 
 - [Exit testing](./exit-testing.md)
 
-#### Return Value
+## Return Value
 
 An instance of [`ExitTest.Result`](./exittest/result.md) describing the state of the exit test when it exited.
 
-#### Overview
+## Overview
 
 > **Throws**: An instance of [`ExpectationFailedError`](./expectationfailederror.md) if the exit condition of the child process does not equal `expectedExitCondition`.
 

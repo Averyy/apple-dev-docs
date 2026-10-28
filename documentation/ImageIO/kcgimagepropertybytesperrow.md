@@ -25,7 +25,7 @@ let kCGImagePropertyBytesPerRow: CFString
 extern CFStringRef const kCGImagePropertyBytesPerRow;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is a [`CFNumber`](../CoreFoundation/cfnumber.md).
 

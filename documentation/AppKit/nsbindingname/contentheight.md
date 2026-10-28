@@ -19,7 +19,7 @@ static let contentHeight: NSBindingName
 extern NSBindingName NSContentHeightBinding;
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see [Cocoa Bindings](../cocoa-bindings.md).
 

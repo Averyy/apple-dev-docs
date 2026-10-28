@@ -23,11 +23,11 @@ class func clamp(min minValue: Float, max maxValue: Float) -> Self
 + (instancetype) clampLayerWithMinValue:(float) minValue maxValue:(float) maxValue;
 ```
 
-#### Return Value
+## Return Value
 
 A new `MLCActivationLayer` instance.
 
-#### Discussion
+## Discussion
 
 The [`clamp(min:max:)`](./clamp%28min,max%29.md) factory type method creates an activation descriptor using [`init(type:a:b:)`](../mlcactivationdescriptor/init%28type,a,b%29.md), where `type =` [`MLCActivationType.clamp`](../mlcactivationtype/clamp.md) and `a = minValue,` `b = maxValue`, and passes that descriptor to [`init(descriptor:)`](./init%28descriptor%29.md).
 

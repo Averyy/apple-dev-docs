@@ -21,7 +21,7 @@ Initializes the destination value with the provided position and collectionID.
 init(position: ReorderDifference<ItemID, CollectionID>.Destination.Position, collectionID: CollectionID)
 ```
 
-#### Discussion
+## Discussion
 
 - position: The position within the collection.
 - destination: The identifier that represents this collection.

@@ -10,7 +10,7 @@ Share image data between Core Video pixel buffers and vImage buffers to integrat
 - macOS 13.0+
 - Xcode 14.3+
 
-#### Overview
+## Overview
 
 vImage supports reading from and writing to Core Video pixel buffers. This sample implements ends-in contrast stretching using vImage and makes that operation available to Core Image workflows by subclassing [`CIImageProcessorKernel`](../CoreImage/ciimageprocessorkernel.md). An image processor kernel uses Core Video pixel buffers for input and output, so the app creates vImage pixel buffers that share data with [`CVPixelBuffer`](../CoreVideo/cvpixelbuffer.md) instances.
 
@@ -22,7 +22,7 @@ To learn more about ends-in contrast stretching, see [Enhancing image contrast w
 
 Before exploring the code, try building and running the app to familiarize yourself with the effect of the different parameters on the image.
 
-##### Define an ends-in contrast-stretch image processor kernel
+### Define an ends-in contrast-stretch image processor kernel
 
 The `ContrastStretchImageProcessorKernel` inherits from the Core Image [`CIImageProcessorKernel`](../CoreImage/ciimageprocessorkernel.md) class.
 
@@ -47,7 +47,7 @@ override class func formatForInput(at input: Int32) -> CIFormat {
 }
 ```
 
-##### Create the source pixel buffer
+### Create the source pixel buffer
 
 When the app applies ends-in contrast stretching, Core Image calls the processor kernel’s [`process(with:arguments:output:)`](../CoreImage/ciimageprocessorkernel/process%28with,arguments,output%29.md) function. The following code ensures that the input and output [`CVPixelBuffer`](../CoreVideo/cvpixelbuffer.md) instances are available:
 
@@ -89,7 +89,7 @@ let sourcePixelBuffer = vImage.PixelBuffer<vImage.Interleaved8x4>(
     converter: converter)
 ```
 
-##### Create the destination pixel buffer
+### Create the destination pixel buffer
 
 The sample code app uses the same [`vImageConverter`](./vimageconverter.md) to create the destination pixel buffer, which shares memory with the output Core Video buffer’s memory.
 
@@ -106,7 +106,7 @@ let destinationPixelBuffer = vImage.PixelBuffer<vImage.Interleaved8x4>(
     converter: converter)
 ```
 
-##### Apply ends-in contrast stretching
+### Apply ends-in contrast stretching
 
 The [`vImageEndsInContrastStretch_ARGB8888(_:_:_:_:_:)`](./vimageendsincontraststretch_argb8888%28_,_,_,_,_%29.md) function applies an ends-in contrast-stretch operation to the source pixel buffer and writes the result to the destination pixel buffer. This function works equally well on all channel orderings; for example, RGBA or BGRA.
 
@@ -127,7 +127,7 @@ let error = sourcePixelBuffer.withUnsafePointerToVImageBuffer { src in
 
 Because the destination pixel buffer shares memory with the output Core Video pixel buffer, the operation is complete after the [`vImageEndsInContrastStretch_ARGB8888(_:_:_:_:_:)`](./vimageendsincontraststretch_argb8888%28_,_,_,_,_%29.md) returns.
 
-##### Apply the ends-in contrast stretching operation to an image
+### Apply the ends-in contrast stretching operation to an image
 
 The  `apply(withExtent:inputs:arguments:)` method generates a [`CIImage`](../CoreImage/ciimage.md) instance based on the output of the processor’s `process(with:arguments:output:)` function.
 

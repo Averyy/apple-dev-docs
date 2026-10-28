@@ -25,7 +25,7 @@ static var isDirectory: Errno { get }
 
 - [Adopting Swift Error Constants](../adopting-errno.md)
 
-#### Discussion
+## Discussion
 
 You attempted to open a directory with write mode specified. Directories can be opened only in read mode.
 

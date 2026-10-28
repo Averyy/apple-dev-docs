@@ -29,7 +29,7 @@ Available when `Self` is `_MLTensorRange`.
 static func partialRangeUpTo(_ range: PartialRangeUpTo<Int>, stride: Int = 1) -> any MLTensorRangeExpression
 ```
 
-#### Discussion
+## Discussion
 
 For example:
 

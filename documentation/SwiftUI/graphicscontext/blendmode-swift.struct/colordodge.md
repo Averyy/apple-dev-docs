@@ -21,7 +21,7 @@ A mode that brightens the background image samples to reflect the source image s
 static var colorDodge: GraphicsContext.BlendMode { get }
 ```
 
-#### Discussion
+## Discussion
 
 Source image sample values that specify black do not produce a change.
 

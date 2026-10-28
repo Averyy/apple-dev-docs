@@ -24,11 +24,11 @@ class func disambiguation(with temperaturesToDisambiguate: [Measurement<UnitTemp
 + (instancetype) disambiguationWithTemperaturesToDisambiguate:(NSArray<NSMeasurement<NSUnitTemperature *> *> *) temperaturesToDisambiguate;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INTemperatureResolutionResult`](../intemperatureresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method to create a result object when there is more one value that might match the given parameter. Siri asks the user to select from among the measurement values that you specify.
 

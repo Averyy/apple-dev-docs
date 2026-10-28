@@ -24,7 +24,7 @@ var zPriority: MKAnnotationViewZPriority { get set }
 @property (nonatomic) MKAnnotationViewZPriority zPriority;
 ```
 
-#### Discussion
+## Discussion
 
 The constant [`defaultUnselected`](../mkannotationviewzpriority/defaultunselected.md) is the default value for [`zPriority`](./zpriority.md).
 

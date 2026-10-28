@@ -15,7 +15,7 @@ Access low-level functions, primitive data types, and various collection types t
 - visionOS 1.0+
 - watchOS 2.0+
 
-#### Overview
+## Overview
 
 Core Foundation is a framework that provides fundamental software services useful to application services, application environments, and to applications themselves. Core Foundation also provides abstractions for common data types, facilitates internationalization with Unicode string storage, and offers a suite of utilities such as plug-in support, XML property lists, URL resource access, and preferences.
 

@@ -19,13 +19,13 @@ class WKSwipeGestureRecognizer
 @interface WKSwipeGestureRecognizer : WKGestureRecognizer
 ```
 
-#### Overview
+## Overview
 
 A swipe is a discrete gesture; the associated action message is sent only once per gesture.
 
 You do not create instances of this class programmatically. Instead, add a swipe gesture recognizer to your Watch app’s storyboard file, dropping it onto a specific interface object. Touches occurring within the bounds of that interface object are tracked by the gesture recognizer and reported to an action method you define on the parent interface controller. For information on defining your action method and connecting it to your gesture recognizer, see [`WKGestureRecognizer`](./wkgesturerecognizer.md).
 
-##### State Changes for a Swipe Gesture
+### State Changes for a Swipe Gesture
 
 A swipe gesture recognizer tracks discrete events, and therefore has a limited number of state changes. The swipe gesture is recognized when a single touch has moved mostly in an allowable direction far enough to be considered a swipe. Swipes can be slow or fast. A slow swipe requires high directional precision but a small distance; a fast swipe requires low directional precision but a large distance.
 
@@ -33,7 +33,7 @@ A swipe gesture recognizer tracks discrete events, and therefore has a limited n
 
 The gesture recognizer calls its action method when it enters the [`WKGestureRecognizerState.recognized`](./wkgesturerecognizerstate/recognized.md) state. You may determine the location where a swipe began by calling its [`locationInObject()`](./wkgesturerecognizer/locationinobject%28%29.md) method. For more information on implementing discrete gesture recognizers, see [`WKGestureRecognizer`](./wkgesturerecognizer.md).
 
-##### Interface Builder Attributes
+### Interface Builder Attributes
 
 Xcode lets you configure information about your gesture recognizer in your storyboard file. The following table lists the attributes you can configure in your storyboard and their meaning.
 

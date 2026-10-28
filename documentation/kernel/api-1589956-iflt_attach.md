@@ -13,11 +13,11 @@
 errno_t iflt_attach(ifnet_t interface, const struct iff_filter *filter, interface_filter_t *filter_ref);
 ```
 
-#### Return Value
+## Return Value
 
 0 on success otherwise the errno error.
 
-#### Discussion
+## Discussion
 
 Attaches an interface filter to an interface.
 

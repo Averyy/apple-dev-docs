@@ -24,7 +24,7 @@ nonisolated static var borderless: BorderlessButtonStyle { get }
 
 Available when `Self` is `BorderlessButtonStyle`.
 
-#### Discussion
+## Discussion
 
 In tvOS, when a person focuses on a borderless button, the button animates to a raised position with a Liquid Glass effect. This button style applies a Liquid Glass effect to the first image of the button’s content when the button gains focus. To apply the effect to a different subview of your button, apply the [`hoverEffect(_:)`](../view/hovereffect%28_%29.md) modifier with a [`highlight`](../hovereffect/highlight.md) effect to that subview. For more information, see [Creating a tvOS media catalog app in SwiftUI](../creating-a-tvos-media-catalog-app-in-swiftui.md).
 

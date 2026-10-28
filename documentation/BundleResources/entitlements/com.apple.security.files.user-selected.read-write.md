@@ -14,7 +14,7 @@ A Boolean value that indicates whether the app may have read-write access to fil
 - **Name**: `com.apple.security.files.user-selected.read-write` (Access User Selected Files (Read/Write))
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 To add this entitlement to your app, enable the App Sandbox capability in Xcode and set User Selected File to Read/Write.
 

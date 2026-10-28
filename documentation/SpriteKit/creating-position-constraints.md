@@ -5,7 +5,7 @@
 
 Create a position constraint and add it to a node.
 
-#### Overview
+## Overview
 
 You lock a node at a specific coordinate with [`positionX(_:y:)`](./skconstraint/positionx%28_,y%29.md). Constrain a node’s horizontal position with [`positionX(_:)`](./skconstraint/positionx%28_%29.md), or constrain its vertical position with [`positionY(_:)`](./skconstraint/positiony%28_%29.md).
 

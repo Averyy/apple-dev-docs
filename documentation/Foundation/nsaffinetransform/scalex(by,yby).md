@@ -20,7 +20,7 @@ func scaleX(by scaleX: Double, yBy scaleY: Double)
 - (void) scaleXBy:(CGFloat) scaleX yBy:(CGFloat) scaleY;
 ```
 
-#### Discussion
+## Discussion
 
 After invoking this method, applying the receiver’s matrix modifies the unit length on the x axis by a factor of `scaleX` and the y axis by a factor of `scaleY`, in addition to performing all previous transformations. A value of 1.0 for either axis scales the content on that axis to the same size.
 

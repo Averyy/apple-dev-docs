@@ -25,7 +25,7 @@ var lockedObjects: Set<NSManagedObject>? { get }
 @property (strong, readonly, nullable) NSSet<__kindof NSManagedObject *> * lockedObjects;
 ```
 
-#### Discussion
+## Discussion
 
 Objects are flagged for optimistic locking with [`detectConflicts(for:)`](../nsmanagedobjectcontext/detectconflicts%28for%29.md).
 

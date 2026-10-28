@@ -24,7 +24,7 @@ var name: GLuint { get }
 @property (readonly) GLuint name;
 ```
 
-#### Discussion
+## Discussion
 
 Your app uses this identifier whenever it wants to bind the texture to a context.
 

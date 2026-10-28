@@ -18,7 +18,7 @@ The elevation level of the interface.
 var userInterfaceLevel: UIUserInterfaceLevel { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Levels create a visual separation between different parts of your UI. Window content typically appears at the [`UIUserInterfaceLevel.base`](../uiuserinterfacelevel/base.md) level. When you want parts of your UI to stand out from the underlying background, assign the [`UIUserInterfaceLevel.elevated`](../uiuserinterfacelevel/elevated.md) level to them. For example, the system assigns the [`UIUserInterfaceLevel.elevated`](../uiuserinterfacelevel/elevated.md) level to alerts and popovers.
 

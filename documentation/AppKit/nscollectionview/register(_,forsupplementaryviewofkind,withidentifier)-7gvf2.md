@@ -19,7 +19,7 @@ func register(_ nib: NSNib?, forSupplementaryViewOfKind kind: NSCollectionView.S
 - (void) registerNib:(NSNib *) nib forSupplementaryViewOfKind:(NSCollectionViewSupplementaryElementKind) kind withIdentifier:(NSUserInterfaceItemIdentifier) identifier;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to register nib files containing prototype supplementary views in your collection view. When you request a view using the [`makeSupplementaryView(ofKind:withIdentifier:for:)`](./makesupplementaryview%28ofkind,withidentifier,for%29.md) method, the collection view recycles an existing view with the same `identifier` and `kind` values or creates a new one by loading the contents of your nib file.
 

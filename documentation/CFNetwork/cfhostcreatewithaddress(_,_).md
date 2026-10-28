@@ -26,15 +26,15 @@ func CFHostCreateWithAddress(_ allocator: CFAllocator?, _ addr: CFData) -> Unman
 extern CFHostRefCFHostCreateWithAddress(CFAllocatorRef allocator, CFDataRef addr);
 ```
 
-#### Return Value
+## Return Value
 
 A valid CFHostRef object that can be resolved, or `NULL` if the host could not be created. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
-#### Discussion
+## Discussion
 
 Call [`CFHostStartInfoResolution(_:_:_:)`](./cfhoststartinforesolution%28_,_,_%29.md) to resolve the return object’s name and reachability information.
 
-##### Special Considerations
+### Special Considerations
 
 This function is thread safe.
 

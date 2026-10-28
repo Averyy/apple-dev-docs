@@ -18,7 +18,7 @@ A block that returns the pointer style to use when the pointer hovers over the b
 @property (nonatomic, copy, readwrite, nullable) UIButtonPointerStyleProvider pointerStyleProvider;
 ```
 
-#### Discussion
+## Discussion
 
 To change the appearance of the pointer when it hovers over the button, create a [`UIButtonPointerStyleProvider`](../uibuttonpointerstyleprovider.md) block that returns a [`UIPointerStyle`](../uipointerstyle.md) describing the pointer shape and content effect. Then assign the closure to [`pointerStyleProvider`](./pointerstyleprovider-1d4d2.md). For more information, see [Enhancing your iPad app with pointer interactions](../enhancing-your-ipad-app-with-pointer-interactions.md).
 

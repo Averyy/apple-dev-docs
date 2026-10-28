@@ -25,7 +25,7 @@ var version: UInt32
 uint32_t version;
 ```
 
-#### Discussion
+## Discussion
 
 This parameter is reserved for future expansion — pass `0`.
 

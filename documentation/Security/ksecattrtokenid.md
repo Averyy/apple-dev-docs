@@ -29,7 +29,7 @@ extern CFStringRef const kSecAttrTokenID;
 
 - [Protecting keys with the Secure Enclave](./protecting-keys-with-the-secure-enclave.md)
 
-#### Discussion
+## Discussion
 
 The corresponding value is of type [`CFString`](../CoreFoundation/cfstring.md), and may only be one of the constants specified in [Token ID Values](./item-attribute-keys-and-values.md#Token-ID-Values). Presence of this key indicates that the item is backed by an external store, as uniquely identified by the value. An item without this attribute is stored as normal in the keychain database.
 

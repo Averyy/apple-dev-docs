@@ -15,7 +15,7 @@ The request body you use to create a Game Center leaderboard localization create
 object GameCenterLeaderboardLocalizationV2CreateRequest.Data.Attributes
 ```
 
-#### Overview
+## Overview
 
 - description:
 - formatterOverride:

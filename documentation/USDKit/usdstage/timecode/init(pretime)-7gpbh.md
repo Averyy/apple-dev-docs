@@ -20,7 +20,7 @@ The instant directly before the given time value.
 init(preTime instant: Double)
 ```
 
-#### Discussion
+## Discussion
 
 If a time-varying value is discontinuous at `instant`, pre-time refers to the value’s limit approaching from the left.
 

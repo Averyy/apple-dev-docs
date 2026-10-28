@@ -14,7 +14,7 @@ Gets the image identifier and state for all uploaded images.
 - [Identifying rate limits](./identifying-rate-limits.md)
 - [Setting up retention messages](./setting-up-retention-messages.md)
 
-#### Discussion
+## Discussion
 
 Call this endpoint to get all uploaded image identifiers and check their current state, [`imageState`](./imagestate.md).
 

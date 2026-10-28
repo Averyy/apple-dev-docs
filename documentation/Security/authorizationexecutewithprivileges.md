@@ -17,11 +17,11 @@ Runs an executable tool with root privileges.
 OSStatus AuthorizationExecuteWithPrivileges(AuthorizationRef authorization, const char *pathToTool, AuthorizationFlags options, char * const*arguments, FILE **communicationsPipe);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Authorization Services Result Codes](./authorization-services-result-codes.md).
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  This function is deprecated. Use a `launchd`-launched helper tool and/or the Service Management framework for this functionality.
 
@@ -29,7 +29,7 @@ This function enables you to execute the tool you specify in the `pathToTool` pa
 
 To check if the user is authorized to perform this operation, you should preauthorize the `kAuthorizationRightExecute` right. See [`AuthorizationItem`](./authorizationitem.md) for a description of what information is included in the authorization item for this right.
 
-##### Special Considerations
+### Special Considerations
 
 You should use this function only to allow installers to run as root and to allow a `setuid` tool to repair its `setuid` bit if lost. This function works only if the Security Server establishes proper authorization.
 

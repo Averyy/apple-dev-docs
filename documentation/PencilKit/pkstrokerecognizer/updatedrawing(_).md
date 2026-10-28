@@ -23,7 +23,7 @@ final func updateDrawing(_ drawing: PKDrawing) async
 
 - [Recognizing handwriting and converting it to text](../recognizing-handwriting-and-converting-to-text.md)
 
-#### Discussion
+## Discussion
 
 Recognition expects handwriting and strokes scaled as if written on standard paper sizes in points, such as US-letter or A4.
 

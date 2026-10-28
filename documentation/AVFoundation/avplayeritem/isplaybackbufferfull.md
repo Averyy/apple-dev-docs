@@ -26,7 +26,7 @@ var isPlaybackBufferFull: Bool { get }
 @property (readonly, getter=isPlaybackBufferFull) BOOL playbackBufferFull;
 ```
 
-#### Discussion
+## Discussion
 
 Despite the playback buffer reaching capacity there might not exist sufficient statistical data to support a [`isPlaybackLikelyToKeepUp`](./isplaybacklikelytokeepup.md) prediction of [`true`](../../Swift/true.md).
 

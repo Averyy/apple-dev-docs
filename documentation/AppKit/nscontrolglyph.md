@@ -19,7 +19,7 @@ var NSControlGlyph: Int { get }
 NSControlGlyph
 ```
 
-#### Discussion
+## Discussion
 
 An [`NSGlyphGenerator`](./nsglyphgenerator.md) objects generates [`NSControlGlyph`](./nscontrolglyph.md) for all characters in the Unicode General Category C* and U200B (ZERO WIDTH SPACE).
 

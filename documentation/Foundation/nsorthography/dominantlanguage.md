@@ -25,7 +25,7 @@ var dominantLanguage: String { get }
 @property (copy, readonly) NSString * dominantLanguage;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is a BCP-47 language tag, such as `"en"` or `"fr"`, that identifies the dominant language.
 

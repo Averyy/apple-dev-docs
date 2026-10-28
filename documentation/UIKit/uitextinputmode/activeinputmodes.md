@@ -23,7 +23,7 @@ class var activeInputModes: [UITextInputMode] { get }
 @property (class, nonatomic, readonly) NSArray<UITextInputMode *> * activeInputModes;
 ```
 
-#### Discussion
+## Discussion
 
 Each element in the array is an instance of [`UITextInputMode`](../uitextinputmode.md). Returns an empty array if no such instances have been set by the text input system.
 

@@ -9,11 +9,11 @@
 virtual UInt64 getPreferredBlockSize() const;
 ```
 
-#### Return Value
+## Return Value
 
 Natural block size, in bytes.
 
-#### Overview
+## Overview
 
 Ask the media object for its natural block size. This information is useful to clients that want to optimize access to the media.
 

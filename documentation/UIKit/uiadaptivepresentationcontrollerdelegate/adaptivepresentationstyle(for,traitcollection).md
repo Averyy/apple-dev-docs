@@ -23,11 +23,11 @@ optional func adaptivePresentationStyle(for controller: UIPresentationController
 - (UIModalPresentationStyle) adaptivePresentationStyleForPresentationController:(UIPresentationController *) controller traitCollection:(UITraitCollection *) traitCollection;
 ```
 
-#### Return Value
+## Return Value
 
 The new presentation style, which must be [`UIModalPresentationStyle.fullScreen`](../uimodalpresentationstyle/fullscreen.md), [`UIModalPresentationStyle.overFullScreen`](../uimodalpresentationstyle/overfullscreen.md), [`UIModalPresentationStyle.formSheet`](../uimodalpresentationstyle/formsheet.md), or [`UIModalPresentationStyle.none`](../uimodalpresentationstyle/none.md).
 
-#### Discussion
+## Discussion
 
 The presentation controller calls this method when the traits of the current environment are about to change. Your implementation of this method can return the preferred presentation style to use for the specified traits. If you do not return one of the allowed styles, the presentation controller uses its preferred default style.
 

@@ -17,7 +17,7 @@ An enumeration of the shared data between the merchant and customer.
 enum CustomerEngagement
 ```
 
-#### Overview
+## Overview
 
 Use this enumeration to authenticate credentials, display customer screen states, and get customer information.
 

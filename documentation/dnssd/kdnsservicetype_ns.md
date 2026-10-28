@@ -23,7 +23,7 @@ var kDNSServiceType_NS: Int { get }
 kDNSServiceType_NS
 ```
 
-#### Discussion
+## Discussion
 
 Authoritative server.
 

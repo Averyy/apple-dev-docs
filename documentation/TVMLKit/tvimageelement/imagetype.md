@@ -21,7 +21,7 @@ var imageType: TVImageType { get }
 @property (nonatomic, readonly) TVImageType imageType;
 ```
 
-#### Discussion
+## Discussion
 
 For possible values, see [`TVImageType`](../tvimagetype.md).
 

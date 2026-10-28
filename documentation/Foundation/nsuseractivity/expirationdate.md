@@ -25,7 +25,7 @@ var expirationDate: Date? { get set }
 @property (copy, nullable) NSDate * expirationDate;
 ```
 
-#### Discussion
+## Discussion
 
 If you don’t set the value of this property, the system automatically expires the activity after a period of time.
 

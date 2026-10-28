@@ -21,7 +21,7 @@ Performs the action at some time after the specified date.
 func schedule(after date: ImmediateScheduler.SchedulerTimeType, tolerance: ImmediateScheduler.SchedulerTimeType.Stride, options: ImmediateScheduler.SchedulerOptions?, _ action: @escaping () -> Void)
 ```
 
-#### Discussion
+## Discussion
 
 The immediate scheduler ignores `date` and performs the action immediately.
 

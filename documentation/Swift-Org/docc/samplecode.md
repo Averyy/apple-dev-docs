@@ -22,7 +22,7 @@ Displays a set of sample code links in the resources section of a tutorial’s t
 }
 ```
 
-#### Overview
+## Overview
 
 Use the `SampleCode` directive to add links to related sample code in the Resources section at the bottom of your tutorial’s table of contents page.
 
@@ -49,7 +49,7 @@ DocC renders the URL you specify in the `destination` parameter as a “View mor
 
 You can include sample code links alongside other types of resources, like [`Documentation`](./documentation.md),  [`Downloads`](./downloads.md), [`Forums`](./forums.md), and [`Videos`](./videos.md).
 
-##### Containing Elements
+### Containing Elements
 
 The following items can contain sample code resources:
 

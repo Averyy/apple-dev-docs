@@ -25,7 +25,7 @@ var SparseUpdatePartialRefactor: SparseUpdate_t { get }
 SparseUpdatePartialRefactor
 ```
 
-#### Discussion
+## Discussion
 
 See `SparseUpdateFactor()` for a full description of these updates.
 

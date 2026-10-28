@@ -19,7 +19,7 @@ func schedule(_ block: @escaping @Sendable (@escaping NSBackgroundActivitySchedu
 - (void) scheduleWithBlock:(void (^)(NSBackgroundActivityCompletionHandler completionHandler)) block;
 ```
 
-#### Discussion
+## Discussion
 
 When your block is called, it’s passed a completion handler as an argument. Configure the block to invoke this handler, passing it a result of type [`NSBackgroundActivityScheduler.Result`](./result.md) to indicate whether the activity finished ([`NSBackgroundActivityScheduler.Result.finished`](./result/finished.md)) or should be deferred ([`NSBackgroundActivityScheduler.Result.deferred`](./result/deferred.md)) and rescheduled for a later time. Failure to invoke the completion handler results in the activity not being rescheduled. For work that will be deferred and rescheduled, the block may optionally adjust scheduler properties, such as [`interval`](./interval.md) or [`tolerance`](./tolerance.md), before calling the completion handler. See [Schedule Activity with scheduleWithBlock:](../nsbackgroundactivityscheduler.md#Schedule-Activity-with-scheduleWithBlock).
 

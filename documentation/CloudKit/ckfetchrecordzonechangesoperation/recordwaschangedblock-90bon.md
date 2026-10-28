@@ -21,7 +21,7 @@ The closure to execute with the results of retrieving a record change.
 @property (nonatomic, copy, nullable) void (^)(CKRecordID *, CKRecord *, NSError *) recordWasChangedBlock;
 ```
 
-#### Discussion
+## Discussion
 
 The closure returns no value and takes the following parameters:
 

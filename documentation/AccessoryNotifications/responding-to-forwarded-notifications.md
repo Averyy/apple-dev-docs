@@ -5,7 +5,7 @@
 
 Enable people to interact with notifications on your accessory and convey their responses to iOS.
 
-#### Overview
+## Overview
 
 When someone interacts with a notification on your accessory, send the interaction to iOS as a response: your accessory acts as a relay for the person’s action. The response lets the system perform the same follow-up actions as when someone interacts with a notification on their iPhone. This process relies on the same data provider and transport extensions you implement to forward notifications to your accessory; for more information, see [Receiving iOS notifications on an accessory](../AccessoryTransportExtension/receiving-ios-notifications-on-an-accessory.md).
 
@@ -18,7 +18,7 @@ Your accessory encrypts the response data for safe transmission and sends it bac
 
 The system decrypts the response data and delivers it to your data provider extension through the [`messageHandler(_:)`](./notificationsforwarding/accessorynotificationshandler/messagehandler%28_%29.md) method. Your extension parses the response details, creates a [`NotificationResponse`](./notificationresponse.md), and calls [`sendResponse(_:)`](./notificationsforwarding/accessorynotificationssession/sendresponse%28_%29.md) to deliver the response to the system.
 
-#### Define the data format of the response
+## Define the data format of the response
 
 First, define a binary format for response data in the data provider extension for your accessory. Choose a format that includes these fields:
 
@@ -49,7 +49,7 @@ func serializeResponse(notificationIdentifier: String,
 }
 ```
 
-#### Encrypt response data on your accessory
+## Encrypt response data on your accessory
 
 When someone interacts with a notification on your accessory, encrypt the response data using keys your accessory establishes during the key exchange process (see [`AccessoryTransportSecurity`](../AccessoryTransportExtension/accessorytransportsecurity.md)). The derivation differs by transport type: Bluetooth sessions export a fresh secret from the HPKE recipient for every response, while internet sessions reuse the outgoing Symmetric Key Ratchet that your accessory initializes once during key exchange.
 
@@ -117,7 +117,7 @@ To keep the message directions in sync, persist `outgoingChainKey` and `outgoing
 
 Include the ratchet’s `keyID` and `messageIndex` alongside `encryptedResponse` when you send the response. The system uses the ID and index to determine the ratchet instance and step to use for decryption.
 
-#### Send the response through Bluetooth
+## Send the response through Bluetooth
 
 For Bluetooth sessions, send the encrypted response to your transport extension over the active connection:
 
@@ -128,7 +128,7 @@ sendViaBluetoothToTransportExtension(encryptedResponse, sessionID: sessionID)
 
 The `sendViaBluetoothToTransportExtension(_:sessionID:)` method represents the data your accessory sends; your accessory implements this function itself, since the framework doesn’t provide it.
 
-#### Receive and decrypt responses in your transport extension
+## Receive and decrypt responses in your transport extension
 
 For Bluetooth sessions, the response completes its transmission at your transport extension for decryption by the system. Your [`AccessoryTransportAppExtension`](../AccessoryTransportExtension/accessorytransportappextension.md) receives the encrypted response data from your accessory via Bluetooth. Forward the encrypted data to the data provider extension:
 
@@ -147,7 +147,7 @@ func didReceiveDataFromAccessory(_ encryptedData: Data, sessionID: UUID) {
 
 The system decrypts the message using the `AccessoryToHost` direction keys before delivering the message to your data provider extension.
 
-#### Send the response through the internet
+## Send the response through the internet
 
 Internet sessions require you to route responses through an APNs server that you deploy. Pass the [`pushToken`](../AccessoryTransportExtension/accessorytransportsession/pushtoken.md) value that your accessory receives alongside the notification, along with the encrypted response data, to your server to route the response through APNs:
 
@@ -181,7 +181,7 @@ Internet sessions skip the transport extension step entirely; the system decrypt
 
 For more information about constructing and sending the push request, see [Sending notification requests to APNs](../UserNotifications/sending-notification-requests-to-apns.md).
 
-#### Process responses in your data provider extension
+## Process responses in your data provider extension
 
 Once the system decrypts the response, it hands the data to your data provider extension to reconstruct into a message the system can act on. Your data provider extension receives the decrypted response through the [`messageHandler(_:)`](./notificationsforwarding/accessorynotificationshandler/messagehandler%28_%29.md) method. Parse the response data using your custom format, then create a [`NotificationResponse`](./notificationresponse.md) and call [`sendResponse(_:)`](./notificationsforwarding/accessorynotificationssession/sendresponse%28_%29.md) to deliver it to the system:
 
@@ -218,7 +218,7 @@ func parseResponse(_ data: Data) -> ParsedResponse {
 
 Call `sendResponse(_:)` to complete the notification response. The system then processes the notification reponse in the same manner, regardless of the device that sent it.
 
-#### Handle different response types
+## Handle different response types
 
 Notification response objects represent different interactions that a person performs in response to a notification. Each interaction corresponds to an entry in the notification’s [`actions`](./accessorynotification/actions.md) array. For example, when someone dismisses a notification on your accessory, find the action with the type [`AccessoryNotification.Action.ActionType.dismiss`](./accessorynotification/action/actiontype/dismiss.md), then initialize a [`NotificationResponse`](./notificationresponse.md) instance from its identifiers:
 

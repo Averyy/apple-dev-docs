@@ -18,7 +18,7 @@ Gets the bounds of the graph.
 func graphBounds() -> CGRect
 ```
 
-#### Return Value
+## Return Value
 
 The bounds of the graph.
 

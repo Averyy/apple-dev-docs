@@ -12,7 +12,7 @@ virtual void removeObject(
  const char *aKey);
 ```
 
-#### Overview
+## Overview
 
 The removed key (internally an OSSymbol) and object are automatically released.
 

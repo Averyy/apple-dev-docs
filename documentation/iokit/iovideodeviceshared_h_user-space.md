@@ -5,9 +5,9 @@
 
 IOVideoDevice definitions shared between kernel and user space.
 
-#### Overview
+## Overview
 
-##### Included Headers
+### Included Headers
 
 - <sys/cdefs.h>
 - <IOKit/IOTypes.h>

@@ -22,11 +22,11 @@ The next discretization boundary before the given input.
 func discreteInput(before input: Self.FormatInput) -> Self.FormatInput?
 ```
 
-#### Return Value
+## Return Value
 
 For most `input`s, the method returns the “greatest” value “smaller” than `input` for which the style produces a different [`FormatOutput`](../formatstyle/formatoutput.md), or `nil` if no such value exists. For some input values, the function may also return a value “smaller” than `input` for which the style still produces the same [`FormatOutput`](../formatstyle/formatoutput.md) as for `input`.
 
-#### Discussion
+## Discussion
 
 Use this function to determine the next “smaller” input that warrants updating the formatted output. The following example prints all possible outputs the format style can produce downwards starting from the `startInput`:
 

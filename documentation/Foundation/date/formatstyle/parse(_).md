@@ -21,11 +21,11 @@ Parses a string into a date.
 func parse(_ value: String) throws -> Date
 ```
 
-#### Return Value
+## Return Value
 
 An instance of `Date` parsed from the input string.
 
-#### Discussion
+## Discussion
 
 The [`parse(_:)`](./parse%28_%29.md) instance method attempts to parse a provided string into an instance of date using the source date format style. The function throws an error if it can’t parse the input string into a date instance.
 

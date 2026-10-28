@@ -29,11 +29,11 @@ nonisolated
 func background<S, T>(_ style: S, in shape: T, fillStyle: FillStyle = FillStyle()) -> some View where S : ShapeStyle, T : Shape
 ```
 
-#### Return Value
+## Return Value
 
 A view with the specified insettable shape drawn behind it.
 
-#### Discussion
+## Discussion
 
 Use this modifier to layer a type that conforms to the [`InsettableShape`](../insettableshape.md) protocol — like a [`Rectangle`](../rectangle.md), [`Circle`](../circle.md), or [`Capsule`](../capsule.md) — behind a view. Specify the [`ShapeStyle`](../shapestyle.md) that’s used to fill the shape. For example, you can place a [`RoundedRectangle`](../roundedrectangle.md) behind a [`Label`](../label.md):
 

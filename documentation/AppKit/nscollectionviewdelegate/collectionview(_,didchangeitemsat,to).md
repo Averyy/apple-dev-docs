@@ -20,7 +20,7 @@ optional func collectionView(_ collectionView: NSCollectionView, didChangeItemsA
 - (void) collectionView:(NSCollectionView *) collectionView didChangeItemsAtIndexPaths:(NSSet<NSIndexPath *> *) indexPaths toHighlightState:(NSCollectionViewItemHighlightState) highlightState;
 ```
 
-#### Discussion
+## Discussion
 
 After the highlight state of one or more items changes successfully, the collection view calls this method to report the change. Use this method to respond to the change and to make any necessary adjustments to your content or the collection view.
 

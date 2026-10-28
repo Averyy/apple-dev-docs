@@ -23,7 +23,7 @@ var numberOfStalls: Int { get }
 @property (nonatomic, readonly) NSInteger numberOfStalls;
 ```
 
-#### Discussion
+## Discussion
 
 If the number of playback stalls is unknown, this property’s value is negative.
 

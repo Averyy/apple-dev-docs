@@ -5,7 +5,7 @@
 
 Learn about URL permissions for scripts and style sheets in a Safari app extension using information property list keys.
 
-#### Overview
+## Overview
 
 If you specify `Some` or `All` access for your Safari app extension, Safari can inject scripts or style sheets that your app extension provides into the webpage. In Safari 17 or later, users also need to grant your extension access to a website. For more information, see [Adjusting website access permissions](./adjusting-website-access-permissions.md). By default, the setting is `All` access. However, you can set separate, precise controls for each file that define whether Safari injects it into the webpage.
 
@@ -19,7 +19,7 @@ For both `SFSafariContentScript` and `SFSafariStyleSheet`, a key’s `Allowed UR
 
 These restrictions are in addition to those that you set in the `SFSafariWebsiteAccess` values. If you specify `Some` access for your app extension, you have access only to the domains matching your provided domain patterns. Items in `Allowed URL Patterns` and `Excluded URL Patterns` create additional restrictions within those domains. Be sure all the items in your `Allowed URL Patterns` are within a domain you have access to.
 
-##### Specify URL patterns
+### Specify URL patterns
 
 A URL pattern takes the form *Scheme://Domain/Path*.
 

@@ -22,7 +22,7 @@ nonisolated
 func accessibilitySortPriority(_ sortPriority: Double) -> ModifiedContent<Self, AccessibilityAttachmentModifier>
 ```
 
-#### Discussion
+## Discussion
 
 Higher numbers are sorted first. The default sort priority is zero.
 

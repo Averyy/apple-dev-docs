@@ -26,11 +26,11 @@ func perform(_ aSelector: Selector!, with object: Any!) -> Unmanaged<AnyObject>!
 - (id) performSelector:(SEL) aSelector withObject:(id) object;
 ```
 
-#### Return Value
+## Return Value
 
 An object that is the result of the message.
 
-#### Discussion
+## Discussion
 
 This method is the same as [`perform(_:)`](./perform%28_%29.md) except that you can supply an argument for `aSelector`. `aSelector` should identify a method that takes a single argument of type id. For methods with other argument types and return values, use [`NSInvocation`](../../Foundation/nsinvocation.md).
 

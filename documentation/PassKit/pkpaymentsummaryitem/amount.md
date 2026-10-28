@@ -25,7 +25,7 @@ var amount: NSDecimalNumber { get set }
 @property (nonatomic, copy) NSDecimalNumber * amount;
 ```
 
-#### Discussion
+## Discussion
 
 The amount’s currency is specified at the payment level by setting a value for the [`currencyCode`](../pkpaymentrequest/currencycode.md) property on [`PKPaymentRequest`](../pkpaymentrequest.md).
 

@@ -24,7 +24,7 @@ class HKCharacteristicType
 @interface HKCharacteristicType : HKObjectType
 ```
 
-#### Overview
+## Overview
 
 The [`HKCharacteristicType`](./hkcharacteristictype.md) class is a concrete subclass of the [`HKObjectType`](./hkobjecttype.md) class. To create a characteristic type instance, use the object type’s [`characteristicType(forIdentifier:)`](./hkobjecttype/characteristictype%28foridentifier%29.md) convenience method.
 

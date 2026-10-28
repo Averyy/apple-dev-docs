@@ -15,7 +15,7 @@ A value that represents the loading state of the Look Around object.
 get readyState(): LookAroundReadyState;
 ```
 
-#### Discussion
+## Discussion
 
 The Look Around view dispatches a `readystatechange` event when the loading state changes.
 

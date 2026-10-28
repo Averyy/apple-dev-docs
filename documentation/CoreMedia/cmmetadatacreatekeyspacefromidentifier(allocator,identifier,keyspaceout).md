@@ -25,7 +25,7 @@ func CMMetadataCreateKeySpaceFromIdentifier(allocator: CFAllocator?, identifier:
 extern OSStatus CMMetadataCreateKeySpaceFromIdentifier(CFAllocatorRef allocator, CFStringRef identifier, CFStringRef*keySpaceOut);
 ```
 
-#### Return Value
+## Return Value
 
 If successful, a nonzero result code. See [Metadata Identifier Error Codes](./metadata-identifier-errors.md).
 

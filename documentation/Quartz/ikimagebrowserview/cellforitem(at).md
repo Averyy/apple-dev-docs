@@ -19,11 +19,11 @@ func cellForItem(at index: Int) -> IKImageBrowserCell!
 - (IKImageBrowserCell *) cellForItemAtIndex:(NSUInteger) index;
 ```
 
-#### Return Value
+## Return Value
 
 The browser cell at the specified index.
 
-#### Discussion
+## Discussion
 
 Subclasses must not override this method.
 

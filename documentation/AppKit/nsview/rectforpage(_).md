@@ -19,11 +19,11 @@ func rectForPage(_ page: Int) -> NSRect
 - (NSRect) rectForPage:(NSInteger) page;
 ```
 
-#### Return Value
+## Return Value
 
 A rectangle defining the region of the view to be printed for `pageNumber`. This method returns `NSZeroRect` if `pageNumber` is outside the view’s bounds.
 
-#### Discussion
+## Discussion
 
 If the view responded [`true`](../../Swift/true.md) to an earlier [`knowsPageRange(_:)`](./knowspagerange%28_%29.md) message, this method is invoked for each page it specified in the out parameters of that message. The view is later made to display this rectangle in order to generate the image for this page.
 

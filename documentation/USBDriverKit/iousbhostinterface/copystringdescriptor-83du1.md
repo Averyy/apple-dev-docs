@@ -15,11 +15,11 @@ Returns a descriptor from the device in the specified language.
 virtual const IOUSBStringDescriptor * CopyStringDescriptor(uint8_t index, uint16_t languageID);
 ```
 
-#### Return Value
+## Return Value
 
 A pointer to the descriptor, or `NULL` if the descriptor isn’t found. It’s your responsibility to free the returned descriptor.
 
-#### Discussion
+## Discussion
 
 This method uses a `GET_DESCRIPTOR` control request (USB 2.0, section 9.4.3) to fetch the string descriptor from the device. The method puts the `index` value in the low byte of the `wValue` field, and puts the `languageID` value in the `wIndex` field of the request structure.
 

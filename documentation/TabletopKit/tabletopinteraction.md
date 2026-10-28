@@ -15,7 +15,7 @@ A protocol for objects that manage the entire flow of players interacting with e
 class TabletopInteraction
 ```
 
-#### Overview
+## Overview
 
 Conform to the [`TabletopInteraction.Delegate`](./tabletopinteraction/delegate.md) protocol to take an appropriate action, depending on the equipment and the phase of the interaction. For example, move equipment or toss a die when a gesture ends.
 

@@ -16,7 +16,7 @@ nonisolated
 func accessibilityQuickAction<Style, Content>(style: Style, @ContentBuilder content: () -> Content) -> some View where Style : AccessibilityQuickActionStyle, Content : View
 ```
 
-#### Discussion
+## Discussion
 
 The quick action will automatically become active when the view appears. If the view is disabled, the action will defer becoming active until the view is no longer disabled.
 

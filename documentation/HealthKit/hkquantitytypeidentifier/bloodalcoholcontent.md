@@ -24,7 +24,7 @@ static let bloodAlcoholContent: HKQuantityTypeIdentifier
 extern HKQuantityTypeIdentifier const HKQuantityTypeIdentifierBloodAlcoholContent;
 ```
 
-#### Discussion
+## Discussion
 
 These samples use percent units (described in [`HKUnit`](../hkunit.md)) and measure discrete values (described in [`HKQuantityAggregationStyle`](../hkquantityaggregationstyle.md)).
 

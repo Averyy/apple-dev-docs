@@ -23,7 +23,7 @@ var changesSelectionAsPrimaryAction: Bool { get set }
 @property (nonatomic, assign, readwrite) BOOL changesSelectionAsPrimaryAction;
 ```
 
-#### Discussion
+## Discussion
 
 This behavior of this property composes with [`showsMenuAsPrimaryAction`](../uicontrol/showsmenuasprimaryaction.md) and the [`menu`](./menu.md) property.
 

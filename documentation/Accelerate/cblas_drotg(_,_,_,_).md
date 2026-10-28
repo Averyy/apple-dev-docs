@@ -25,7 +25,7 @@ func cblas_drotg(_ A: UnsafeMutablePointer<Double>, _ B: UnsafeMutablePointer<Do
 void cblas_drotg(double *A, double *B, double *C, double *S);
 ```
 
-#### Discussion
+## Discussion
 
 Given a vertical matrix containing `a` and `b`, computes the values of `cos θ` and `sin θ` that zero the lower value (`b`). Returns the value of `sin θ` in `s`, the value of `cos θ` in `c`, and the upper value (`r`) in `a`.
 

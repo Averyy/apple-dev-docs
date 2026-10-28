@@ -17,7 +17,7 @@ An error that indicates the framework invalidated the current Store and Forward 
 case storeAndForwardSessionInvalidated
 ```
 
-#### Discussion
+## Discussion
 
 You must prepare an online session and prepare a new Store and Forward session.
 

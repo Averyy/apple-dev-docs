@@ -6,7 +6,7 @@
 
 A string with a human-readable name for a metadata type.
 
-#### Overview
+## Overview
 
 The name is a NULL-terminated string in UTF-8 characters which gives a human-readable name for a metadata type, for debugging and inspection purposes.
 

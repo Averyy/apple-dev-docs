@@ -28,7 +28,7 @@ class MPSKernel
 
 - [The MPSKernel Class](./the-mpskernel-class.md)
 
-#### Overview
+## Overview
 
 You should not use the [`MPSKernel`](./mpskernel.md) class directly. Instead, a number of subclasses are available that define specific high-performance data-parallel operations.
 

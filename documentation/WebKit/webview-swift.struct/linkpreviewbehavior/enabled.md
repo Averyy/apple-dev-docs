@@ -19,7 +19,7 @@ Link previews are enabled.
 static let enabled: WebView.LinkPreviewBehavior
 ```
 
-#### Discussion
+## Discussion
 
 The web view allows pressing a link to display a preview of the destination for the link.
 

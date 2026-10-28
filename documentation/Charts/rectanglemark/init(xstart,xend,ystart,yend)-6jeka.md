@@ -22,14 +22,14 @@ nonisolated
 init<X>(xStart: PlottableValue<X>, xEnd: PlottableValue<X>, yStart: CGFloat? = nil, yEnd: CGFloat? = nil) where X : Plottable
 ```
 
-#### Discussion
+## Discussion
 
 - xStart: The value plotted with x start.
 - xEnd: The value plotted with x end.
 - yStart: The y end position. If `yStart` is `nil` then the rectangle will start at the leading edge of the plotting area.
 - yEnd: The y end position. If `yEnd` is `nil` then the rectangle will end at the trailing edge of the plotting area.
 
-##### Discussion
+### Discussion
 
 Use this initializer to map the x start and x end to a rectangle for each data element. Optionally, specify the yStart or yEnd position of the rectangles.
 

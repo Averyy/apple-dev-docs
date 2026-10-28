@@ -19,7 +19,7 @@ func ABMultiValueReplaceLabel(_ multiValue: ABMutableMultiValueRef!, _ label: CF
 extern bool ABMultiValueReplaceLabel(ABMutableMultiValueRef multiValue, CFStringRef label, CFIndex index);
 ```
 
-#### Return Value
+## Return Value
 
 `true` ifsuccessfully, `false` otherwise.
 

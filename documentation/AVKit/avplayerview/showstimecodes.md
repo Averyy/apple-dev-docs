@@ -19,7 +19,7 @@ var showsTimecodes: Bool { get set }
 @property BOOL showsTimecodes;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `false`.
 

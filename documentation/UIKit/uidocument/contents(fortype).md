@@ -22,13 +22,13 @@ func contents(forType typeName: String) throws -> Any
 - (id) contentsForType:(NSString *) typeName error:(NSError **) outError;
 ```
 
-#### Return Value
+## Return Value
 
 The document data to be saved, or `nil` if you cannot return document data. The returned object is typically an instance of the [`NSData`](../../Foundation/nsdata.md) class for flat files or the [`FileWrapper`](../../Foundation/filewrapper.md) class for file packages. If you return `nil`, you should also return an error object in `outError`.
 
 If you return an object other than an [`NSData`](../../Foundation/nsdata.md) or [`FileWrapper`](../../Foundation/filewrapper.md) object, you must override the [`writeContents(_:andAttributes:safelyTo:for:)`](./writecontents%28_,andattributes,safelyto,for%29.md) or [`writeContents(_:to:for:originalContentsURL:)`](./writecontents%28_,to,for,originalcontentsurl%29.md) method to handle the writing of data.
 
-#### Discussion
+## Discussion
 
 When you subclass [`UIDocument`](../uidocument.md), override this method to provide UIKit with the document data for saving.
 

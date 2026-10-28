@@ -21,7 +21,7 @@ Creates a new tag with a given category and a value interpreted as a 64-bit flag
 extern CMTag CMTagMakeWithFlagsValue(CMTagCategory category, uint64_t flagsForTag);
 ```
 
-#### Return Value
+## Return Value
 
 A new tag with the assigned category containing flags as its value, or [`kCMTagInvalid`](./kcmtaginvalid.md) if no tag could be created.
 

@@ -25,7 +25,7 @@ var polyline: MKPolyline { get }
 @property (nonatomic, readonly) MKPolyline * polyline;
 ```
 
-#### Discussion
+## Discussion
 
 The polyline object in this property reflects the complete path of the route, including all of its steps. You can use the polyline object as an overlay in a map view.
 

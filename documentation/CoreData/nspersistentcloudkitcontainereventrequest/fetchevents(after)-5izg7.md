@@ -25,7 +25,7 @@ class func fetchEvents(after date: Date) -> Self
 + (instancetype) fetchEventsAfterDate:(NSDate *) date;
 ```
 
-#### Return Value
+## Return Value
 
 A request object that fetches persistent CloudKit container events by executing in a managed object context.
 

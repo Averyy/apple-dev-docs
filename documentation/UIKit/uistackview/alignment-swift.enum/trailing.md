@@ -23,7 +23,7 @@ case trailing
 UIStackViewAlignmentTrailing
 ```
 
-#### Discussion
+## Discussion
 
 This value is equivalent to the [`bottom`](./bottom.md) alignment for horizontal stacks.
 

@@ -24,7 +24,7 @@ func reductionMinimumPropagateNaN(with tensor: MPSGraphTensor, axis: Int, name: 
 - (MPSGraphTensor *) reductionMinimumPropagateNaNWithTensor:(MPSGraphTensor *) tensor axis:(NSInteger) axis name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSGraphTensor object.
 

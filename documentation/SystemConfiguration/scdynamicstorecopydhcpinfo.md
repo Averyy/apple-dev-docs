@@ -15,11 +15,11 @@ Returns the DHCP information for the specified service.
 CFDictionaryRefSCDynamicStoreCopyDHCPInfo(SCDynamicStoreRef store, CFStringRef serviceID);
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary containing DHCP information if successful, or `NULL` if unsuccessful. You must use the [`CFRelease`](../CoreFoundation/cfrelease.md) function to release return values other than `NULL`.
 
-#### Discussion
+## Discussion
 
 Use [`DHCPInfoGetOptionData`](./dhcpinfogetoptiondata.md) to extract individual options from the dictionary returned by this function.
 

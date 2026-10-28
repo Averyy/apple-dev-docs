@@ -23,7 +23,7 @@ var activityHandler: ENActivityHandler? { get set }
 @property (nonatomic, copy, readwrite, nullable) ENActivityHandler activityHandler;
 ```
 
-#### Discussion
+## Discussion
 
 When the app launches, it creates an [`ENManager`](../enmanager.md) instance, sets this handler, and then activates the manager.
 

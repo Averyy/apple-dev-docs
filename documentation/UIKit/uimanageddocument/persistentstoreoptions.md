@@ -22,7 +22,7 @@ var persistentStoreOptions: [AnyHashable : Any]? { get set }
 @property (nonatomic, copy, nullable) NSDictionary * persistentStoreOptions;
 ```
 
-#### Discussion
+## Discussion
 
 By default, this value is `nil`.
 

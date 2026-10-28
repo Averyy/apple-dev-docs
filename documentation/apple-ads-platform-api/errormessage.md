@@ -15,7 +15,7 @@ Error information returned in a change history response when a request fails.
 object ErrorMessage
 ```
 
-#### Discussion
+## Discussion
 
 When a change history request fails, the API populates the `error` field of [`BaseAuditResponse`](./baseauditresponse.md) with an `ErrorMessage`. On success, `error` is null.
 
@@ -31,7 +31,7 @@ Common error scenarios:
 
 A `429 Too Many Requests` or `500 Internal Server Error` response also populates `error`. For `429`, see [Applying Rate Limits](./rate-limits.md) for the headers and backoff strategy to use before retrying. For `500`, retry with backoff since the failure may be transient.
 
-##### Example
+### Example
 
 ```json
 {

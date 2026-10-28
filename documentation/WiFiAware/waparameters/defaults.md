@@ -17,7 +17,7 @@ The property that configures default parameters that prioritize bulk throughput,
 static let defaults: WAParameters
 ```
 
-#### Return Value
+## Return Value
 
 Default parameters.
 

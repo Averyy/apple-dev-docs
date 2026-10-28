@@ -19,7 +19,7 @@ An action that runs a system shortcut.
 static let runSystemShortcut: PencilPreferredAction
 ```
 
-#### Discussion
+## Discussion
 
 If the user selects this as their preferred action to perform after double-tapping or squeezing their Apple Pencil, your app will never be notified when they do. Instead, you should only use this information to remind the user about their preference in your app’s UI.
 

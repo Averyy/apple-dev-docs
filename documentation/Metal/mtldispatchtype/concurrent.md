@@ -24,7 +24,7 @@ case concurrent
 MTLDispatchTypeConcurrent
 ```
 
-#### Discussion
+## Discussion
 
 If you encode multiple commands that access a single resource, you’re responsible for synchronizing the memory operations to that resource. For more information, see [Resource synchronization](../resource-synchronization.md).
 

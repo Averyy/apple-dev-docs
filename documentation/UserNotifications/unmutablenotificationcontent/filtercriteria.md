@@ -33,7 +33,7 @@ var filterCriteria: String? { get set }
 @property (atomic, copy, readwrite, nullable) NSString * filterCriteria;
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see [`SetFocusFilterIntent`](../../AppIntents/setfocusfilterintent.md).
 

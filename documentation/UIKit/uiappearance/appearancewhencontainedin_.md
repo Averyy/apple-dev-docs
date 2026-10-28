@@ -17,11 +17,11 @@ Returns the appearance proxy for object when it’s contained in the hierarchy t
 + (instancetype) appearanceWhenContainedIn:(Class<UIAppearanceContainer> *) ContainerClass;
 ```
 
-#### Return Value
+## Return Value
 
 The appearance proxy to use for the object.
 
-#### Discussion
+## Discussion
 
 Set the `ContainerClass` array to an ascending hierarchical list of containing types. For example, if you want a navigation bar to take on a specific appearance when contained in a navigation controller inside a tab bar controller, set `ContainerClass` to `@[[UINavigationController class], [UITabBarController class], nil]`.
 

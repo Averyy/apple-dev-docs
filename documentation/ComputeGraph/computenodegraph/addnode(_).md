@@ -21,11 +21,11 @@ Adds a node to the graph.
 mutating func addNode(_ node: ComputeNodeGraph.Node) throws -> ComputeNodeGraph.NodeID
 ```
 
-#### Return Value
+## Return Value
 
 The key assigned to the newly added node.
 
-#### Discussion
+## Discussion
 
 > **Throws**: A `NodeError` if the node cannot be added.
 

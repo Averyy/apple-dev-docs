@@ -23,7 +23,7 @@ var timestamp: TimeInterval { get }
 @property (nonatomic, readonly) NSTimeInterval timestamp;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the number of seconds that have elapsed since system startup. For a description of this time value, see the description of the [`systemUptime`](../../Foundation/processinfo/systemuptime.md) method of the [`ProcessInfo`](../../Foundation/processinfo.md) class.
 

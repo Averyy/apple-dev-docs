@@ -23,7 +23,7 @@ var inputView: UIView? { get }
 @property (nonatomic, strong, readonly, nullable) UIView * inputView;
 ```
 
-#### Discussion
+## Discussion
 
 This property is typically used to provide a view to replace the system-supplied keyboard that’s presented for [`UITextField`](../uitextfield.md) and [`UITextView`](../uitextview.md) objects.
 

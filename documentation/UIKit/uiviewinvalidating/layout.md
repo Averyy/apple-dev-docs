@@ -22,7 +22,7 @@ static var layout: UIView.Invalidations.Layout { get }
 
 Available when `Self` is `UIView.Invalidations.Layout`.
 
-#### Discussion
+## Discussion
 
 Use this invalidation type to call [`setNeedsLayout()`](../uiview/setneedslayout%28%29.md) when a change in property value should cause an update to the layout of the containing view’s subviews.
 

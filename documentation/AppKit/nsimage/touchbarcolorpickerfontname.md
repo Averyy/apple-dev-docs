@@ -22,7 +22,7 @@ class let touchBarColorPickerFontName: String
 extern NSImageName const NSImageNameTouchBarColorPickerFont;
 ```
 
-#### Discussion
+## Discussion
 
 ![Template image for color picker for fonts](https://developer.apple.com/tutorials/images/com.apple.appkit/media-2793477@2x.png)
 

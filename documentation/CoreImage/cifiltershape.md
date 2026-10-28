@@ -24,7 +24,7 @@ class CIFilterShape
 @interface CIFilterShape : NSObject
 ```
 
-#### Overview
+## Overview
 
 You use `CIFilterShape` objects in conjunction with Core Image classes, such as [`CIFilter`](./cifilter-swift.class.md), [`CIKernel`](./cikernel.md), and [`CISampler`](./cisampler.md), to create custom filters.
 

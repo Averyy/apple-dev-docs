@@ -19,7 +19,7 @@ An object that defines the degree to which an entity’s clear, shiny coating sc
 struct ClearcoatRoughness
 ```
 
-#### Overview
+## Overview
 
 An entity in RealityKit can display a clearcoat, which is a separate layer of transparent specular highlights used to simulate a clear coating, like on a car or the surface of lacquered objects. Use this object to specify a clearcoat roughness value and indicate how much the clearcoat scatters light that bounces off of it, which softens and disperses the highlights.
 

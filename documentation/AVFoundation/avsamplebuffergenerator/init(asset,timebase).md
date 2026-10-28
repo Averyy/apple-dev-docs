@@ -25,7 +25,7 @@ init(asset: AVAsset, timebase: CMTimebase?)
 - (instancetype) initWithAsset:(AVAsset *) asset timebase:(CMTimebaseRef) timebase;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized `AVSampleBufferGenerator` instance.
 

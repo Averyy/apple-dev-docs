@@ -21,11 +21,11 @@ Performs the value query with the given input and returns matching results.
 func values(for input: some IntentValueConvertible) async throws -> ResolvedValueQueryResult
 ```
 
-#### Return Value
+## Return Value
 
 Results matching the query.
 
-#### Discussion
+## Discussion
 
 Use this function to verify that the system can query your app for app entities as shown in the following example:
 

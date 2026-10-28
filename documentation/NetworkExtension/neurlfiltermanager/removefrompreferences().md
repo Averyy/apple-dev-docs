@@ -18,7 +18,7 @@ Removes the URL filter configuration from the caller’s URL filter preferences.
 func removeFromPreferences() async throws
 ```
 
-#### Discussion
+## Discussion
 
 If the URL filter is enabled, this call disables it.
 

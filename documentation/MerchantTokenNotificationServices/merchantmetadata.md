@@ -15,7 +15,7 @@ The metadata of the merchant that updated on the server.
 object MerchantMetadata
 ```
 
-#### Discussion
+## Discussion
 
 Apple Pay sends a notification with a unique event identifier to this URL for events that impact the associated MPAN.
 

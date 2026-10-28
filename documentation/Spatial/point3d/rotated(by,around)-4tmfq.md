@@ -25,7 +25,7 @@ func rotated(by rotation: Rotation3D, around pivot: Point3D) -> Point3D
 static SPPoint3D SPPoint3DRotateAroundPoint(SPPoint3D point, SPRotation3D rotation, SPPoint3D pivot);
 ```
 
-#### Return Value
+## Return Value
 
 The point that results from applying the specified rotation.
 

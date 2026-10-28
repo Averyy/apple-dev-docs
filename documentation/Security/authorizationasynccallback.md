@@ -25,7 +25,7 @@ typealias AuthorizationAsyncCallback = (OSStatus, UnsafeMutablePointer<Authoriza
 typedef void (^)(int, AuthorizationItemSet *) AuthorizationAsyncCallback;
 ```
 
-#### Discussion
+## Discussion
 
 Use a block of this type as the callback parameter to the [`AuthorizationCopyRightsAsync(_:_:_:_:_:)`](./authorizationcopyrightsasync%28_,_,_,_,_%29.md) function.
 

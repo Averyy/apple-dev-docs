@@ -5,7 +5,7 @@
 
 Encapsulate view-specific data within your app’s view hierarchy to make your views reusable.
 
-#### Overview
+## Overview
 
 Store data as state in the least common ancestor of the views that need the data to establish a single *source of truth* that’s shared across views. Provide the data as read-only through a Swift property, or create a two-way connection to the state with a binding. SwiftUI watches for changes in the data, and updates any affected views as needed.
 
@@ -13,7 +13,7 @@ Store data as state in the least common ancestor of the views that need the data
 
 Don’t use state properties for persistent storage because the life cycle of state variables mirrors the view life cycle. Instead, use them to manage transient state that only affects the user interface, like the highlight state of a button, filter settings, or the currently selected list item. You might also find this kind of storage convenient while you prototype, before you’re ready to make changes to your app’s data model.
 
-##### Manage mutable values as state
+### Manage mutable values as state
 
 If a view needs to store data that it can modify, declare a variable with [`State()`](./state%28%29.md). For example, you can create an `isPlaying` Boolean inside a podcast player view to keep track of when a podcast is running:
 
@@ -39,7 +39,7 @@ Button(action: {
 
 Limit the scope of state variables by declaring them as private. This ensures that the variables remain encapsulated in the view hierarchy that declares them, and prevents setting the variable’s initial value in an initializer which can interfere with SwiftUI’s management of the variable.
 
-##### Declare Swift properties to store immutable values
+### Declare Swift properties to store immutable values
 
 To provide a view with data that the view doesn’t modify, declare a standard Swift property. For example, you can extend the podcast player to have an input structure that contains strings for the episode title and the show name:
 
@@ -66,7 +66,7 @@ struct PlayerView: View {
 
 While the value of the episode property is a constant for `PlayerView`, it doesn’t need to be constant in this view’s parent view. When the user selects a different episode in the parent, SwiftUI detects the state change and recreates the `PlayerView` with a new input.
 
-##### Share access to state with bindings
+### Share access to state with bindings
 
 If a view needs to share control of state with a child view, declare a property in the child with the [`Binding`](./binding.md) property wrapper. A binding represents a reference to existing storage, preserving a single source of truth for the underlying data. For example, if you refactor the podcast player view’s button into a child view called `PlayButton`, you can give it a binding to the `isPlaying` property:
 
@@ -121,7 +121,7 @@ struct Podcaster: View {
 }
 ```
 
-##### Animate state transitions
+### Animate state transitions
 
 When the view state changes, SwiftUI updates affected views right away. If you want to smooth visual transitions, you can tell SwiftUI to animate them by wrapping the state change that triggers them in a call to the [`withAnimation(_:_:)`](./withanimation%28_,_%29.md) function. For example, you can animate changes controlled by the `isPlaying` Boolean:
 

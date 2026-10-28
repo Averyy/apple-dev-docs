@@ -14,7 +14,7 @@ Turn off automatic renewal to cancel a customer’s auto-renewable subscription.
 - [Authorizing API requests from your server](./authorizing-server-calls.md)
 - [Identifying rate limits for Advanced Commerce APIs](./ratelimits.md)
 
-#### Discussion
+## Discussion
 
 When this endpoint succeeds, the system sets the subscription’s auto-renew status to `false` and the subscription doesn’t renew at the next renewal period. The customer continues to have access to the subscription until the end of the current period.
 
@@ -24,7 +24,7 @@ To immediately cancel a subscription instead, see [`Revoke Subscription`](./revo
 
 Refer to the Advanced Commerce API Addendum to learn the use cases for the `Cancel a Subscription`, [`Revoke Subscription`](./revoke-subscription.md), and [`Request Transaction Refund`](./request-transaction-refund.md) APIs.
 
-##### Example request and response
+### Example request and response
 
 **Request**:
 

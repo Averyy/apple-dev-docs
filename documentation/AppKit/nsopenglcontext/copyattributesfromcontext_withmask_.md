@@ -15,7 +15,7 @@ Copies selected groups of state variables to the OpenGL context.
 - (void) copyAttributesFromContext:(NSOpenGLContext *) context withMask:(GLbitfield) mask;
 ```
 
-#### Discussion
+## Discussion
 
 Not all values for OpenGL states can be copied. For example, the pixel pack and unpack state, render mode state, and select and feedback state are not copied. The state that can be copied is exactly the state that is manipulated by the OpenGL call `glPushAttrib`.
 

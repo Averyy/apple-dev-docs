@@ -25,7 +25,7 @@ var spreadingAngle: CGFloat { get set }
 @property (nonatomic) CGFloat spreadingAngle;
 ```
 
-#### Discussion
+## Discussion
 
 Setting a nonzero value for this property randomizes the direction specified by the [`emittingDirection`](./emittingdirection.md) or [`birthDirection`](./birthdirection.md) property. For example, at the default value of `0.0` degrees, all particles emit in the same direction. Increasing the spreading angle to `30.0` degrees allows particles to emit in any direction within a space shaped like a cone whose central angle is 30°.
 

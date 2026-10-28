@@ -9,7 +9,7 @@ Create a new keyword in an ad group, setting the match type and optional bid amo
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Discussion
+## Discussion
 
 This endpoint creates one keyword per request. To create many keywords in a single call, use [`Bulk Create Keywords`](./post-keywords-bulk-create.md).
 
@@ -17,13 +17,13 @@ Creates a keyword in an ad group. Each keyword belongs to an ad group via `adGro
 
 Omitting `bid` or passing `null` on create defaults the keyword to the ad group’s bid strategy. This differs from [`Update a Keyword`](./put-keywords-_id_.md), where `null` isn’t accepted for `bid`. See [Managing Keywords and Negative Keywords](./keywords-and-negative-keywords.md) for the full explanation.
 
-#### Payload Examples
+## Payload Examples
 
 **App Store - Exact Match**:
 
 Create an exact match keyword with an explicit bid. The ad shows only when users search for “photo editor” with no additional words.
 
-##### Request
+### Request
 
 ```http
 POST /v1/keywords
@@ -40,7 +40,7 @@ POST /v1/keywords
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {
@@ -68,7 +68,7 @@ POST /v1/keywords
 
 Create a broad match keyword without specifying a bid. The keyword inherits the ad group’s default bid and matches variations and related terms.
 
-##### Request
+### Request
 
 ```http
 POST /v1/keywords
@@ -81,7 +81,7 @@ POST /v1/keywords
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {
@@ -109,7 +109,7 @@ POST /v1/keywords
 
 Create a phrase match keyword for an Apple Maps ad group. The ad shows for the keyword and close variants within Maps search.
 
-##### Request
+### Request
 
 ```http
 POST /v1/keywords
@@ -126,7 +126,7 @@ POST /v1/keywords
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {
@@ -154,7 +154,7 @@ POST /v1/keywords
 
 Create a category match keyword for an Apple Maps ad group. The `text` must be a Maps business category identifier from the [`Query Business Categories`](./query-categories.md) endpoint.
 
-##### Request
+### Request
 
 ```http
 POST /v1/keywords
@@ -171,7 +171,7 @@ POST /v1/keywords
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {

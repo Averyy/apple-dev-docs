@@ -23,11 +23,11 @@ class UIPopoverBackgroundView
 @interface UIPopoverBackgroundView : UIView
 ```
 
-#### Overview
+## Overview
 
 This class must be subclassed before it can be used. The implementation of your subclass is responsible for providing the border decoration and arrow for the popover. Subclasses must override all declared properties and methods to provide information about where to lay out the corresponding popover content and arrow. Subclasses must also provide implementations for all methods of the [`UIPopoverBackgroundViewMethods`](./uipopoverbackgroundviewmethods.md) protocol.
 
-##### Subclassing notes
+### Subclassing notes
 
 Your subclass is responsible for providing the background visual styling of the popover, which includes the arrow and appropriately styled border. The popover controller places the actual popover content on top of your background view to finish the popover’s presentation.
 

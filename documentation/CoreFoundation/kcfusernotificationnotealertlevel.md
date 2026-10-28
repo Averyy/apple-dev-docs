@@ -19,7 +19,7 @@ var kCFUserNotificationNoteAlertLevel: CFOptionFlags { get }
 kCFUserNotificationNoteAlertLevel
 ```
 
-#### Discussion
+## Discussion
 
 A note icon is displayed by default.
 

@@ -21,11 +21,11 @@ Tells the system a widget is relevant because of a person’s sleep schedule.
 static func sleep(_ condition: RelevantContext.SleepCondition) -> RelevantContext
 ```
 
-#### Return Value
+## Return Value
 
 A contextual clue that the system uses to determine the relevance of a widget in the Smart Stack on Apple Watch.
 
-#### Discussion
+## Discussion
 
 To indicate relevance based on a sleep condition, request the [`sleepAnalysis`](../../HealthKit/hkcategorytypeidentifier/sleepanalysis.md) permission. If contextual sleep information isn’t available to the system, sleep clues to signal relevance don’t have an effect. For more information about requesting HealthKit permissions, refer to [Authorizing access to health data](../../HealthKit/authorizing-access-to-health-data.md).
 

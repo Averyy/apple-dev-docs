@@ -15,7 +15,7 @@ An error a validator emits when a value isn’t an `ArrayBuffer`.
 interface ValueNotArrayBufferError
 ```
 
-#### Overview
+## Overview
 
 Extends `ValueNotConvertibleToTypeError`.
 

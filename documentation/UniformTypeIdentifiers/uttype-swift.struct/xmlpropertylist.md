@@ -21,7 +21,7 @@ A type that represents an XML property list.
 static var xmlPropertyList: UTType { get }
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `com.apple.xml-property-list`.
 

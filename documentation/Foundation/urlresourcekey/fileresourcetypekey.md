@@ -25,7 +25,7 @@ static let fileResourceTypeKey: URLResourceKey
 extern NSURLResourceKey const NSURLFileResourceTypeKey;
 ```
 
-#### Discussion
+## Discussion
 
 The system returns the read-only value as an [`NSString`](../nsstring.md). See [`URLFileResourceType`](../urlfileresourcetype.md) for possible values.
 

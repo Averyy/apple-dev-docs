@@ -24,7 +24,7 @@ class CARenderer
 @interface CARenderer : NSObject
 ```
 
-#### Overview
+## Overview
 
 For real-time output you should use an instance of [`NSView`](../AppKit/nsview.md) to host the layer-tree.
 

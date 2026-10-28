@@ -19,7 +19,7 @@ class NSPopUpButton
 @interface NSPopUpButton : NSButton
 ```
 
-#### Overview
+## Overview
 
 An `NSPopUpButton` object uses an [`NSPopUpButtonCell`](./nspopupbuttoncell.md) object to implement its user interface.
 

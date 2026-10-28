@@ -19,7 +19,7 @@ var canPause: Bool { get }
 @property (readonly) BOOL canPause;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) when the VM is in a state that allows you to pause it. Call the [`pause(completionHandler:)`](./pause%28completionhandler%29.md) method (Swift) or [`pause()`](./pause%28%29.md) method (Objective-C) to pause the VM.
 

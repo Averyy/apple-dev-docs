@@ -19,7 +19,7 @@ protocol AccessCheckOperations : NSObjectProtocol
 @protocol FSVolumeAccessCheckOperations <NSObject>
 ```
 
-#### Overview
+## Overview
 
 > **Deprecated**: Use [`FSVolume.AccessCheckHandler`](./accesscheckhandler.md) instead.
 

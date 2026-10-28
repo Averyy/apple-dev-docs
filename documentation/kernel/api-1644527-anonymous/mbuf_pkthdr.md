@@ -13,7 +13,7 @@
 MBUF_PKTHDR = 0x0002
 ```
 
-#### Discussion
+## Discussion
 
 Indicates this mbuf has a packet header.
 

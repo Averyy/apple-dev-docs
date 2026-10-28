@@ -25,7 +25,7 @@ var collatorIdentifier: String { get }
 @property (copy, readonly) NSString * collatorIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 An example collator identifier is `"en"`.
 

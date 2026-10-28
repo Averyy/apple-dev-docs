@@ -13,11 +13,11 @@
 errno_t ifnet_touch_lastchange(ifnet_t interface);
 ```
 
-#### Return Value
+## Return Value
 
 0 on success otherwise the errno error.
 
-#### Discussion
+## Discussion
 
 Updates the lastchange value to now.
 

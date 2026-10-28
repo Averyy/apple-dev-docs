@@ -27,7 +27,7 @@ optional func setFrame(_ frame: CGRect, for context: WKWebExtensionContext) asyn
 - (void) setFrame:(CGRect) frame forWebExtensionContext:(WKWebExtensionContext *) context completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 On macOS, the implementation of both [`frame(for:)`](./frame%28for%29.md) and [`screenFrame(for:)`](./screenframe%28for%29.md) are prerequisites. On iOS, iPadOS, and visionOS, only [`frame(for:)`](./frame%28for%29.md) is a prerequisite. Without the respective method(s), this method will not be called.
 

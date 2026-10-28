@@ -25,7 +25,7 @@ let kCVImageBufferDisplayMaskRectangle_RectangleHeightKey: CFString
 extern CFStringRef const kCVImageBufferDisplayMaskRectangle_RectangleHeightKey;
 ```
 
-#### Discussion
+## Discussion
 
 The height value is a [`CFNumber`](../CoreFoundation/cfnumber.md) of an unsigned 16-bit integer.
 

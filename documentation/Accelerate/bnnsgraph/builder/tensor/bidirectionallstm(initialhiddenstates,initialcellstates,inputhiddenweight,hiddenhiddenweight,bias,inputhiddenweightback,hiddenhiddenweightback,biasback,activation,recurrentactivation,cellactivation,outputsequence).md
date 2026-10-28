@@ -23,7 +23,7 @@ func bidirectionalLSTM(initialHiddenStates: BNNSGraph.Builder.Tensor<T>, initial
 
 Available when `T` conforms to `BNNSScalar`.
 
-#### Discussion
+## Discussion
 
 The input tensor `x` is of shape `(L, N, Hin)`
 

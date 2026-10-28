@@ -23,7 +23,7 @@ var maximumScore: Double { get }
 @property (nonatomic, assign, readonly) double maximumScore;
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  This property is available in iOS 12.5, and in iOS 13.7 and later.
 

@@ -20,11 +20,11 @@ class func tapCreate(tap: CGEventTapLocation, place: CGEventTapPlacement, option
 extern CFMachPortRefCGEventTapCreate(CGEventTapLocation tap, CGEventTapPlacement place, CGEventTapOptions options, CGEventMask eventsOfInterest, CGEventTapCallBack callback, void *userInfo);
 ```
 
-#### Return Value
+## Return Value
 
 A Core Foundation mach port that represents the new event tap, or `NULL` if the event tap could not be created. When you are finished using the event tap, you should release the mach port using the function `CFRelease`. Releasing the mach port also releases the tap.
 
-#### Discussion
+## Discussion
 
 Event taps receive key up and key down events if one of the following conditions is true:
 

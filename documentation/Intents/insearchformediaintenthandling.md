@@ -24,7 +24,7 @@ protocol INSearchForMediaIntentHandling : NSObjectProtocol
 @protocol INSearchForMediaIntentHandling <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Use the methods of the [`INSearchForMediaIntentHandling`](./insearchformediaintenthandling.md) protocol to resolve, confirm, and handle requests to search for media. Adopt this protocol in an object of your Intents extension capable of searching for media.
 

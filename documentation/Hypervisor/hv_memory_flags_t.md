@@ -19,7 +19,7 @@ typealias hv_memory_flags_t = UInt64
 typedef uint64_t hv_memory_flags_t;
 ```
 
-#### Discussion
+## Discussion
 
 Set with the [`hv_vm_map(_:_:_:_:)`](./hv_vm_map%28_,_,_,_%29.md) and [`hv_vm_protect(_:_:_:)`](./hv_vm_protect%28_,_,_%29.md) functions.
 

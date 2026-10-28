@@ -15,7 +15,7 @@ The declaration to configure managed configuration files for services.
 object ServicesConfigurationFiles
 ```
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.configuration.services.configuration-files` as the declaration type.
 
@@ -62,7 +62,7 @@ You can create an executable that uses service configuration files by calling th
 
 > ❗ **Important**:  The system reserves the `com.apple` prefix for built-in services.
 
-##### Configuration availability
+### Configuration availability
 
 |  |  |
 | --- | --- |
@@ -74,7 +74,7 @@ You can create an executable that uses service configuration files by calling th
 | Allowed in user scope | N/A |
 | Apply | Multiple configurations are applied separately |
 
-##### Configuration example
+### Configuration example
 
 This configuration deploys configuration files for a system service.
 

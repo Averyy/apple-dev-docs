@@ -15,11 +15,11 @@ Speaks a buffer of text, using certain flags to controlspeech behavior.
 OSErr SpeakBuffer(SpeechChannel chan, const void *textBuf, unsigned long textBytes, SInt32 controlFlags);
 ```
 
-#### Return Value
+## Return Value
 
 A resultcode. See [Result Codes](./speech_synthesis_manager.md#1659745).
 
-#### Discussion
+## Discussion
 
 The `SpeakBuffer` functionbehaves identically to the `SpeakText` function,but allows control of several speech parameters by setting valuesof the `controlFlags` parameter.The `controlFlags` parameterrelies on specific constants, which may be applied additively. See [Control Flags Constants](./api-1552213-control_flags_constants.md).
 

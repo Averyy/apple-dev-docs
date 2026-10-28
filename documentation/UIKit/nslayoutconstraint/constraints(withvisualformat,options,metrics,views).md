@@ -23,11 +23,11 @@ class func constraints(withVisualFormat format: String, options opts: NSLayoutCo
 + (NSArray<NSLayoutConstraint *> *) constraintsWithVisualFormat:(NSString *) format options:(NSLayoutFormatOptions) opts metrics:(NSDictionary<NSString *,id> *) metrics views:(NSDictionary<NSString *,id> *) views;
 ```
 
-#### Return Value
+## Return Value
 
 An array of constraints that, combined, express the constraints between the provided views and their parent view as described by the visual format string. The constraints are returned in the same order they were specified in the visual format string.
 
-#### Discussion
+## Discussion
 
 The language used for the visual format string is described in [Auto Layout Cookbook](https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/AutolayoutPG/LayoutUsingStackViews.html#//apple_ref/doc/uid/TP40010853-CH3) in [Auto Layout Guide](https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/AutolayoutPG/index.html#//apple_ref/doc/uid/TP40010853).
 

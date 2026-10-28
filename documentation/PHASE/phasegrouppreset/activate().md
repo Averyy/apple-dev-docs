@@ -24,7 +24,7 @@ func activate()
 - (void) activate;
 ```
 
-#### Discussion
+## Discussion
 
 When you call this function, the framework assigns the group preset as the engine’s [`activeGroupPreset`](../phaseengine/activegrouppreset.md) and deactivates the previous assignee, as needed. The settings take effect according to [`timeToTarget`](./timetotarget.md).
 

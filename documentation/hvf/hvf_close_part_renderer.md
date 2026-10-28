@@ -21,7 +21,7 @@ Reclaim any subsidiary storage used by the renderer and destroy it.
 int HVF_close_part_renderer(HVFPartRenderer *renderer);
 ```
 
-#### Discussion
+## Discussion
 
 The return value is 0 for success, nonzero for failure.
 

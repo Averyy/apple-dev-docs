@@ -25,9 +25,9 @@ func vvcosisinf(_: OpaquePointer, _: UnsafePointer<Float>, _: UnsafePointer<Int3
 void vvcosisinf(__float_complex_t *, const float *, const int *);
 ```
 
-#### Discussion
+## Discussion
 
-##### Parameters:
+### Parameters:
 
 - **parameter 1**: The output array, *y*.
 - **parameter 2**: The input array, *x*.

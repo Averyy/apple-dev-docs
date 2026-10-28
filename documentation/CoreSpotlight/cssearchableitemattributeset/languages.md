@@ -23,7 +23,7 @@ var languages: [String]? { get set }
 @property (copy, nullable) NSArray<NSString *> * languages;
 ```
 
-#### Discussion
+## Discussion
 
 See BCP 47 for best practices in using language tags.
 

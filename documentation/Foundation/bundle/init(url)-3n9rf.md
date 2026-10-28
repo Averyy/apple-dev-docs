@@ -24,11 +24,11 @@ convenience init?(url: URL)
 - (instancetype) initWithURL:(NSURL *) url;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSBundle` object initialized to correspond to @c url, or @c nil if @c url doesn’t exist or the user doesn’t have access to it.
 
-#### Discussion
+## Discussion
 
 This method initializes and returns a new instance only if there is no existing bundle associated with @c url, otherwise it deallocates @c self and returns the existing object.
 

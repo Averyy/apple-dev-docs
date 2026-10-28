@@ -25,7 +25,7 @@ class CGDataConsumer
 typedef struct CGDataConsumer * CGDataConsumerRef;
 ```
 
-#### Overview
+## Overview
 
 Most apps should use [`CGImageDestination`](../ImageIO/cgimagedestination.md) objects instead.
 

@@ -9,9 +9,9 @@ List the versions for a custom product page version.
 **Availability**:
 - App Store Connect API 1.7+
 
-#### Discussion
+## Discussion
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

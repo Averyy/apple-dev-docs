@@ -24,7 +24,7 @@ var settings: [String : PHASEGroupPresetSetting] { get }
 @property (nonatomic, readonly) NSDictionary<NSString *,PHASEGroupPresetSetting *> * settings;
 ```
 
-#### Discussion
+## Discussion
 
 This property defines the settings and the engine’s [`groups`](../phaseengine/groups.md) that receive the settings.
 

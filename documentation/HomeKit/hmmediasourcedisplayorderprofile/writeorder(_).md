@@ -20,7 +20,7 @@ Writes the display order of the media sources to the accessory.
 func writeOrder(_ order: [Int]) async throws
 ```
 
-#### Discussion
+## Discussion
 
 An error is thrown if the source ordering fails to be written to the accessory.
 

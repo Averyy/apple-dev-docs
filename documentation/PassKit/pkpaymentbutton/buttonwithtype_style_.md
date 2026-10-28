@@ -19,11 +19,11 @@ Creates a new payment button with the specified type and style.
 + (instancetype) buttonWithType:(PKPaymentButtonType) buttonType style:(PKPaymentButtonStyle) buttonStyle;
 ```
 
-#### Return Value
+## Return Value
 
 Returns a `PKPaymentButton` instance with the specified type and style.
 
-#### Discussion
+## Discussion
 
 Use the returned button to trigger a purchase through Apple Pay. Add the button instance to your view hierarchy, and then set its [Target-Action](https://developer.apple.com/library/archive/documentation/General/Conceptual/Devpedia-CocoaApp/TargetAction.html#//apple_ref/doc/uid/TP40009071-CH3) by calling its [`addTarget(_:action:for:)`](../../UIKit/uicontrol/addtarget%28_,action,for%29.md) method. In the action method, create the payment request and present the payment authorization view controller. These buttons can be used only to initiate Apple Pay transactions.
 

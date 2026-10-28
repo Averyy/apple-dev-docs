@@ -25,11 +25,11 @@ func createPostScriptSubset(subsetName: CFString, format: CGFontPostScriptFormat
 extern CFDataRefCGFontCreatePostScriptSubset(CGFontRef font, CFStringRef subsetName, CGFontPostScriptFormat format, const CGGlyph *glyphs, size_t count, const CGGlyph encoding[256]);
 ```
 
-#### Return Value
+## Return Value
 
 A subset of the font created from the supplied parameters.
 
-#### Discussion
+## Discussion
 
 For more information on PostScript format, see *Adobe Type 1 Font Format*, which is available from [http://partners.adobe.com/](http://partners.adobe.com/).
 

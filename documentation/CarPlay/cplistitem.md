@@ -22,7 +22,7 @@ class CPListItem
 @interface CPListItem : NSObject
 ```
 
-#### Overview
+## Overview
 
 A list item manages the content of a single row in a list template. CarPlay manages the layout of a list item and may adjust its layout to allow for the display of auxiliary content, such as an accessory or a Now Playing indicator. A list item can display primary and secondary text and an image. It can also show an accessory or custom accessory image, and one of several indicators that the system provides.
 

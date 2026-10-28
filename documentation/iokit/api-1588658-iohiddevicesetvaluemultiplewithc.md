@@ -16,11 +16,11 @@ Sets multiple values for multiple elements and returns status via a completion c
 IOReturn IOHIDDeviceSetValueMultipleWithCallback(IOHIDDeviceRef device, CFDictionaryRef multiple, CFTimeInterval timeout, IOHIDValueMultipleCallback callback, void *context);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if successful.
 
-#### Discussion
+## Discussion
 
 This method behaves asynchronously and will invoke the callback once the report has been issued to the device. It is only relevent for either output or feature type elements.
 

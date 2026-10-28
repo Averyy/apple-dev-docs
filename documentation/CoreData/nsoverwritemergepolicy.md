@@ -25,7 +25,7 @@ var NSOverwriteMergePolicy: AnyObject
 extern id NSOverwriteMergePolicy;
 ```
 
-#### Discussion
+## Discussion
 
 This policy merges conflicts between the persistent store’s version of the object and the current in-memory version by saving the entire in-memory object to the persistent store.
 

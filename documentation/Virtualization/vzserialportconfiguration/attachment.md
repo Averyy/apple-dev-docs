@@ -19,7 +19,7 @@ var attachment: VZSerialPortAttachment? { get set }
 @property (strong, readwrite, nullable) VZSerialPortAttachment * attachment;
 ```
 
-#### Discussion
+## Discussion
 
 Assign an appropriate attachment object to this property, such as a [`VZFileHandleSerialPortAttachment`](../vzfilehandleserialportattachment.md) or [`VZFileSerialPortAttachment`](../vzfileserialportattachment.md) object. When configuring the serial ports, the virtual machine uses the attachment to set up the serial port communications.
 

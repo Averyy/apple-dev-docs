@@ -21,7 +21,7 @@ func mouseEntered(with event: NSEvent)
 - (void) mouseEntered:(NSEvent *) event;
 ```
 
-#### Discussion
+## Discussion
 
 If used after [`setOnMouseEntered(_:)`](./setonmouseentered%28_%29.md) has been called with an argument of [`true`](../../Swift/true.md), [`mouseEntered(with:)`](./mouseentered%28with%29.md) can make the receiver the current cursor.
 

@@ -22,13 +22,13 @@ Displays a tutorial article page that teaches a conceptual topic about your Swif
 }
 ```
 
-#### Overview
+## Overview
 
 The `Article` directive defines the structure of an individual tutorial article page that teaches a conceptual topic about your Swift framework or package.
 
 A tutorial article supports many of the same directives as a [`Tutorial`](./tutorial.md) directive but doesn’t teach its content through interactive exercise.
 
-##### Contained Elements
+### Contained Elements
 
 A tutorial page can contain the following items:
 

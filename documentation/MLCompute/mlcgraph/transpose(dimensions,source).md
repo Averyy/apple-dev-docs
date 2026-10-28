@@ -21,11 +21,11 @@ Adds a new transpose layer to the graph using the dimensions and source tensor y
 func transpose(dimensions: [Int], source: MLCTensor) -> MLCTensor?
 ```
 
-#### Return Value
+## Return Value
 
 A result tensor.
 
-#### Discussion
+## Discussion
 
 The dimensions array specifies the input axis source for each output axis. In other words, the `n`th element in the dimensions array specifies the input axis source for the `n`th axis in the output.
 

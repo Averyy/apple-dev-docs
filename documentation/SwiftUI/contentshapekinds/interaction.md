@@ -21,7 +21,7 @@ The kind for hit-testing and accessibility.
 static let interaction: ContentShapeKinds
 ```
 
-#### Discussion
+## Discussion
 
 Setting a content shape with this kind causes the view to hit-test using the specified shape.
 

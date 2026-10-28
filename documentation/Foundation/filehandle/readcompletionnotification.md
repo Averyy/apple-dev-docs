@@ -25,7 +25,7 @@ class let readCompletionNotification: NSNotification.Name
 extern NSNotificationName const NSFileHandleReadCompletionNotification;
 ```
 
-#### Discussion
+## Discussion
 
 It makes the data available to observers by putting it in the `userInfo` dictionary. To cause the posting of this notification, you must send either [`readInBackgroundAndNotify()`](./readinbackgroundandnotify%28%29.md) or [`readInBackgroundAndNotify(forModes:)`](./readinbackgroundandnotify%28formodes%29.md) to an appropriate `NSFileHandle` object.
 

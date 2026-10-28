@@ -21,7 +21,7 @@ A type that represents Public Key Cryptography Standard (PKCS) 12 data.
 static var pkcs12: UTType { get }
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `com.rsa.pkcs-12`.
 

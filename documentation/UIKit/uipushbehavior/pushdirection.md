@@ -23,7 +23,7 @@ var pushDirection: CGVector { get set }
 @property (nonatomic, readwrite) CGVector pushDirection;
 ```
 
-#### Discussion
+## Discussion
 
 The default `x` and `y` values of the push direction vector are each `0.0`. A value for either component of `1.0`, applied to a 100 point x 100 point view, whose density value is `1.0`, results in view acceleration of 100 points / second² in the positive direction for the component.
 

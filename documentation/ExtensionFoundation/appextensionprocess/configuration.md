@@ -21,7 +21,7 @@ A structure that holds the identity of an app extension and process-related deta
 struct Configuration
 ```
 
-#### Overview
+## Overview
 
 This type manages the configuration details you use to create an [`AppExtensionProcess`](../appextensionprocess.md) structure. Create an instance of this type and initialize it with the identity of the app extension you want and a closure to run if the app extension terminates unexpectedly.
 

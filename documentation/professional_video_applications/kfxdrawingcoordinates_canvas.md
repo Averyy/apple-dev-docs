@@ -23,7 +23,7 @@ kFxDrawingCoordinates_CANVAS
 
 - [Adding onscreen controls to plug-ins](../Professional-Video-Applications/adding-onscreen-controls-to-plug-ins.md)
 
-#### Discussion
+## Discussion
 
 Specifies that the coordinate space uses canvas window coordinates.
 

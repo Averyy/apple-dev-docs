@@ -10,7 +10,7 @@ framework: "Swift-Org/PackageManagerDocs"
 
 Compute the checksum for a binary artifact.
 
-#### Overview
+## Overview
 
 ```
 package compute-checksum [--package-path=<package-path>]

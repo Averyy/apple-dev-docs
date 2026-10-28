@@ -25,7 +25,7 @@ class DateFormatter
 @interface NSDateFormatter : NSFormatter
 ```
 
-#### Overview
+## Overview
 
 Instances of [`DateFormatter`](./dateformatter.md) create string representations of [`NSDate`](./nsdate.md) objects, and convert textual representations of dates and times into [`NSDate`](./nsdate.md) objects. For user-visible representations of dates and times, [`DateFormatter`](./dateformatter.md) provides a variety of localized presets and configuration options. For fixed format representations of dates and times, you can specify a custom format string.
 
@@ -37,7 +37,7 @@ To represent a quantity of time specified by an [`NSDateComponents`](./nsdatecom
 
 > 💡 **Tip**:  In Swift, you can use [`Date.FormatStyle`](./date/formatstyle.md) or [`Date.VerbatimFormatStyle`](./date/verbatimformatstyle.md) rather than [`DateFormatter`](./dateformatter.md). The [`FormatStyle`](./formatstyle.md) API offers a declarative idiom for customizing the formatting of various types. Also, Foundation caches identical [`FormatStyle`](./formatstyle.md) instances, so you don’t need to pass them around your app, or risk wasting memory with duplicate formatters.
 
-##### Working With User-Visible Representations of Dates and Times
+### Working With User-Visible Representations of Dates and Times
 
 When displaying a date to a user, you set the [`dateStyle`](./dateformatter/datestyle.md) and [`timeStyle`](./dateformatter/timestyle.md) properties of the date formatter according to your particular needs. For example, if you want to show the month, day, and year without showing the time, you would set the [`dateStyle`](./dateformatter/datestyle.md) property to [`DateFormatter.Style.long`](./dateformatter/style/long.md) and the [`timeStyle`](./dateformatter/timestyle.md) property to [`DateFormatter.Style.none`](./dateformatter/style/none.md). Conversely, if you want to show only the time, you would set the `dateStyle` property to [`DateFormatter.Style.none`](./dateformatter/style/none.md) and the [`timeStyle`](./dateformatter/timestyle.md) property to [`DateFormatter.Style.short`](./dateformatter/style/short.md). Based on the values of the [`dateStyle`](./dateformatter/datestyle.md) and [`timeStyle`](./dateformatter/timestyle.md) properties, [`DateFormatter`](./dateformatter.md) provides a representation of a specified date that is appropriate for a given locale.
 
@@ -121,7 +121,7 @@ dateFormatter.locale = [[NSLocale alloc] initWithLocaleIdentifier:@"en_GB"];
 NSLog(@"%@", [dateFormatter stringFromDate:date]); // 31 December
 ```
 
-##### Working With Fixed Format Date Representations
+### Working With Fixed Format Date Representations
 
 > ❗ **Important**:  In macOS 10.12 and later or iOS 10 and later, use the [`ISO8601DateFormatter`](./iso8601dateformatter.md) class when working with ISO 8601 date representations.
 
@@ -155,7 +155,7 @@ NSDate *date = [RFC3339DateFormatter dateFromString:string];
 
 For more information, see [Technical Q&A QA1480 “NSDateFormatter and Internet Dates”](https://developer.apple.com/library/mac/qa/qa1480/).
 
-##### Thread Safety
+### Thread Safety
 
 On iOS 7 and later `NSDateFormatter` is thread safe.
 

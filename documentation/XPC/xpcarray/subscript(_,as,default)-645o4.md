@@ -21,7 +21,7 @@ Get a value in this array as an XPCArray.
 subscript(index: Int, as type: XPCArray.Type = XPCArray.self, default defaultValue: @autoclosure () -> XPCArray) -> XPCArray { get }
 ```
 
-#### Return Value
+## Return Value
 
 An XPCArray value, possibly `defaultValue`.
 

@@ -31,7 +31,7 @@ func addPersistentStore(ofType storeType: String, configurationName configuratio
 
 - [Migrating your data model automatically](../migrating-your-data-model-automatically.md)
 
-#### Return Value
+## Return Value
 
 The newly created store or, if an error occurs, `nil`.
 

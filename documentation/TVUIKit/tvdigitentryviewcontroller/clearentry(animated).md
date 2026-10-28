@@ -19,7 +19,7 @@ func clearEntry(animated: Bool)
 - (void) clearEntryAnimated:(BOOL) animated;
 ```
 
-#### Discussion
+## Discussion
 
 The digit entry view animates the digit removal when the `animated` parameter is `YES`.
 

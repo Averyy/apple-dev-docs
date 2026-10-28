@@ -9,13 +9,13 @@ Create a negative keyword at the campaign or ad group level to prevent ads from 
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Discussion
+## Discussion
 
 This endpoint creates one negative keyword per request. To create many negative keywords in a single call, use [`Bulk Create Negative Keywords`](./post-negative-keywords-bulk-create.md).
 
 Negative keywords prevent your ads from showing when a user’s search query contains a term you want to exclude. They block traffic rather than compete for it. Negative keywords can be created at two levels, campaign or ad group, each with distinct field requirements and scope.
 
-#### Use Campaign-Level Negative Keywords
+## Use Campaign-Level Negative Keywords
 
 Campaign-level negative keywords block ads from appearing for excluded search terms across all ad groups in the campaign. Use campaign-level negatives when you want broad exclusions that apply uniformly throughout an entire campaign.
 
@@ -26,7 +26,7 @@ A campaign-level negative keyword requires `campaignId` and leaves `adGroupId` u
 | `campaignId` | Required |
 | `adGroupId` | Must not be set |
 
-#### Use Ad-Group-Level Negative Keywords
+## Use Ad-Group-Level Negative Keywords
 
 Ad group-level negative keywords are scoped to a single ad group. Use ad group-level negatives when you need finer control over exclusions for a specific ad group within a campaign.
 
@@ -37,13 +37,13 @@ An ad-group-level negative keyword requires `adGroupId` and leaves `campaignId` 
 | `campaignId` | Must not be set |
 | `adGroupId` | Required |
 
-#### Payload Examples
+## Payload Examples
 
 **Campaign-Level Negative**:
 
 Create a campaign-level negative keyword by omitting `adGroupId`. The exclusion applies to all ad groups in the campaign.
 
-##### Request
+### Request
 
 ```http
 POST /v1/negative-keywords
@@ -56,7 +56,7 @@ POST /v1/negative-keywords
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {
@@ -78,7 +78,7 @@ POST /v1/negative-keywords
 
 Create an ad-group-level negative keyword by providing `adGroupId`. The exclusion is scoped to that single ad group.
 
-##### Request
+### Request
 
 ```http
 POST /v1/negative-keywords
@@ -91,7 +91,7 @@ POST /v1/negative-keywords
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {
@@ -114,7 +114,7 @@ POST /v1/negative-keywords
 
 Create a phrase-match negative keyword for an Apple Maps ad group. Blocks queries containing the phrase within Maps search. The `CATEGORY` match type is not supported for negative keywords.
 
-##### Request
+### Request
 
 ```http
 POST /v1/negative-keywords
@@ -127,7 +127,7 @@ POST /v1/negative-keywords
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {

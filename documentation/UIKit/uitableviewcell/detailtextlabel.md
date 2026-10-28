@@ -29,7 +29,7 @@ var detailTextLabel: UILabel? { get }
 
 - [Configuring the cells for your table](../configuring-the-cells-for-your-table.md)
 
-#### Discussion
+## Discussion
 
 Holds the secondary (or detail) label of the cell. `UITableViewCell` adds an appropriate label when you create the cell in a style that supports secondary labels. If the style doesn’t support detail labels, `nil` returns. See [`UITableViewCell.CellStyle`](./cellstyle.md) for descriptions of the main label in currently defined cell styles.
 

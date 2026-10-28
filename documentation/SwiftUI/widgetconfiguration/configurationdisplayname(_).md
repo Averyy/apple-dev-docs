@@ -38,7 +38,7 @@ Sets the localized name shown for a widget when a user adds or edits the widget.
 @preconcurrency func configurationDisplayName<S>(_ displayName: S) -> some WidgetConfiguration where S : StringProtocol
 ```
 
-#### Return Value
+## Return Value
 
 A widget configuration that includes a descriptive name for the widget.
 

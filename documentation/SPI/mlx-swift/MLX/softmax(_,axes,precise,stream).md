@@ -21,7 +21,7 @@ func softmax(_ array: MLXArray, axes: some Collection<Int>, precise: Bool = fals
 
 - [Converting From Python](./converting-python.md)
 
-#### Discussion
+## Discussion
 
 This operation is a numerically stable version of:
 
@@ -29,7 +29,7 @@ This operation is a numerically stable version of:
 exp(a) / sum(exp(a), axis, keepdims: true)
 ```
 
-##### See Also
+### See Also
 
 - [Arithmetic](./arithmetic.md)
 - [`softmax(_:axis:precise:stream:)`](./softmax%28_,axis,precise,stream%29.md)

@@ -10,7 +10,7 @@ framework: "Swift-Org/PackageManagerDocs"
 
 Remove a package from editable mode.
 
-#### Overview
+## Overview
 
 ```
 package unedit [--package-path=<package-path>]

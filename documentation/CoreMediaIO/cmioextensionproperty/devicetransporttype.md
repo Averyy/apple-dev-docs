@@ -20,7 +20,7 @@ static let deviceTransportType: CMIOExtensionProperty
 extern CMIOExtensionProperty const CMIOExtensionPropertyDeviceTransportType;
 ```
 
-#### Discussion
+## Discussion
 
 The property state for this property is a number value that corresponds to an audio transport type (`kIOAudioDeviceTransportType`) that the IOKit framework defines.
 

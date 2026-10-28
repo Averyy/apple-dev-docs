@@ -20,7 +20,7 @@ var lifetime: XCTAttachment.Lifetime { get set }
 
 - [Adding Attachments to Tests, Activities, and Issues](../adding-attachments-to-tests-activities-and-issues.md)
 
-#### Discussion
+## Discussion
 
 Defaults to [`XCTAttachment.Lifetime.deleteOnSuccess`](./lifetime-swift.enum/deleteonsuccess.md), indicating that the attachment should be discarded when its test passes successfully, to save on storage space. Set this property to [`XCTAttachment.Lifetime.keepAlways`](./lifetime-swift.enum/keepalways.md) to persist an attachment even when its test passes.
 

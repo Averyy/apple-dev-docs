@@ -24,11 +24,11 @@ class func workoutType() -> HKWorkoutType
 + (HKWorkoutType *) workoutType;
 ```
 
-#### Return Value
+## Return Value
 
 The shared [`HKWorkoutType`](../hkworkouttype.md) instance.
 
-#### Discussion
+## Discussion
 
 This method returns an instance of the [`HKWorkoutType`](../hkworkouttype.md) concrete subclass. HealthKit uses workout types to create samples that store information about individual workouts. Use workout type instances to create workout objects that you can save in the HealthKit store.  For more information, see [`HKWorkoutType`](../hkworkouttype.md).
 

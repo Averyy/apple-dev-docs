@@ -21,7 +21,7 @@ Fetches all modified record zones and returns them to an awaiting caller.
 func databaseChanges(since changeToken: CKServerChangeToken?, resultsLimit: Int? = nil) async throws -> (modifications: [CKDatabase.DatabaseChange.Modification], deletions: [CKDatabase.DatabaseChange.Deletion], changeToken: CKServerChangeToken, moreComing: Bool)
 ```
 
-#### Return Value
+## Return Value
 
 A tuple with the following named elements:
 
@@ -30,7 +30,7 @@ A tuple with the following named elements:
 - **`changeToken`**: The change token that corresponds to the fetch results’ most recent change.
 - **`moreComing`**: A Boolean value that indicates whether the server has additional changes for you to fetch.
 
-#### Discussion
+## Discussion
 
 This method fetches record zone changes in a database, which includes new record zones, changed zones — including deleted or purged zones — and zones that contain record changes. It throws an error if the request fails, such as when the network is unavailable or the device doesn’t have an active iCloud account.
 

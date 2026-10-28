@@ -23,7 +23,7 @@ var maximumRiskScore: ENRiskScore { get }
 @property (nonatomic, assign, readonly) ENRiskScore maximumRiskScore;
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  This property is available in iOS 12.5, and in iOS 13.5 and later.
 

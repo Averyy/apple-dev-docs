@@ -20,7 +20,7 @@ struct FFCONDITION
 struct FFCONDITION;
 ```
 
-#### Overview
+## Overview
 
 Used with the SPRING, DAMPER, INERTIA, and FRICTION effects.A pointer to an array of FFCONDITION structures for an effect is passed in the **lpvTypeSpecificParams** member of the FFEFFECT structure. The number of elements in the array must be either one, or equal to the number of axes associated with the effect.
 

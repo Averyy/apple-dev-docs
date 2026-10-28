@@ -25,7 +25,7 @@ func sparse_unpack_vector_double(_ N: sparse_dimension, _ nz: sparse_dimension, 
 void sparse_unpack_vector_double(sparse_dimension N, sparse_dimension nz, bool zero, const double * restrictx, const sparse_index * restrictindx, double * restricty, sparse_stride incy);
 ```
 
-#### Discussion
+## Discussion
 
 This function extracts elements from the sparse vector *x* into the corresponding location in the dense vector *y*. It can optionally zero the unused values of *y* by setting the `zero` parameter to [`true`](../Swift/true.md).
 

@@ -14,7 +14,7 @@
 kIOCatalogModuleUnload = 1
 ```
 
-#### Discussion
+## Discussion
 
 Terminates all services which depend on a particular module and unloads the module.
 

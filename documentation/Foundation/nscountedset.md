@@ -25,17 +25,17 @@ class NSCountedSet
 @interface NSCountedSet : NSMutableSet
 ```
 
-#### Overview
+## Overview
 
 Each distinct object inserted into an [`NSCountedSet`](./nscountedset.md) object has a counter associated with it. [`NSCountedSet`](./nscountedset.md) keeps track of the number of times objects are inserted and requires that objects be removed the same number of times. Thus, there is only one instance of an object in an [`NSSet`](./nsset.md) object even if the object has been added to the set multiple times. The [`count`](./nsset/count.md) method defined by the superclass [`NSSet`](./nsset.md) has special significance; it returns the number of distinct objects, not the total number of times objects are represented in the set. The [`NSSet`](./nsset.md) and [`NSMutableSet`](./nsmutableset.md) classes are provided for static and dynamic sets, respectively, whose elements are distinct.
 
 While [`NSCountedSet`](./nscountedset.md) and [`CFBag`](../CoreFoundation/cfbag.md) are not toll-free bridged, they provide similar functionality. For more information about `CFBag`, see the [`CFBag`](../CoreFoundation/cfbag.md).
 
-##### Subclassing Notes
+### Subclassing Notes
 
 Because [`NSCountedSet`](./nscountedset.md) is not a class cluster, it does not have primitive methods that provide the basis for its implementation. In general, there should be little need for subclassing.
 
-###### Methods to Override
+#### Methods to Override
 
 If you subclass [`NSCountedSet`](./nscountedset.md), you must override any method of which you want to change the behavior.
 

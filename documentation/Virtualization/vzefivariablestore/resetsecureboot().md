@@ -19,7 +19,7 @@ func resetSecureBoot() throws
 - (BOOL) resetSecureBootWithError:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 This operation clears any previously applied Secure Boot configuration, sets the “SetupMode” global variable to `1`, and disables Secure Boot in the variable store.
 

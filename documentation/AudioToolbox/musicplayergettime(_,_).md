@@ -24,11 +24,11 @@ func MusicPlayerGetTime(_ inPlayer: MusicPlayer, _ outTime: UnsafeMutablePointer
 extern OSStatus MusicPlayerGetTime(MusicPlayer inPlayer, MusicTimeStamp *outTime);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 
-#### Discussion
+## Discussion
 
 For converting between beats and seconds, see [`MusicSequenceGetSecondsForBeats(_:_:_:)`](./musicsequencegetsecondsforbeats%28_,_,_%29.md) and [`MusicSequenceGetBeatsForSeconds(_:_:_:)`](./musicsequencegetbeatsforseconds%28_,_,_%29.md).
 

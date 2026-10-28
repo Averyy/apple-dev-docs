@@ -17,11 +17,11 @@ Applies batch normalization [1] on the inputs.
 class BatchNorm
 ```
 
-##### References
+### References
 
 1. [https://arxiv.org/abs/1502.03167](https://arxiv.org/abs/1502.03167)
 
-##### See also
+### See also
 
 - [Normalization](./normalization.md)
 

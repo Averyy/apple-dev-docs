@@ -20,7 +20,7 @@ let kSecGuestAttributeSubarchitecture: CFString
 extern CFStringRef const kSecGuestAttributeSubarchitecture;
 ```
 
-#### Discussion
+## Discussion
 
 See the ARCH(3) manual page for a list of possible CPU subtypes.
 

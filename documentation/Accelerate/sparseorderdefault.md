@@ -25,7 +25,7 @@ var SparseOrderDefault: SparseOrder_t { get }
 SparseOrderDefault
 ```
 
-#### Discussion
+## Discussion
 
 The default ordering is [`SparseOrderAMD`](./sparseorderamd.md) for symmetric and [`SparseOrderCOLAMD`](./sparseordercolamd.md) for unsymmetric factorizations.
 

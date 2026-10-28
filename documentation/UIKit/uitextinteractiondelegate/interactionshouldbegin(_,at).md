@@ -22,7 +22,7 @@ optional func interactionShouldBegin(_ interaction: UITextInteraction, at point:
 - (BOOL) interactionShouldBegin:(UITextInteraction *) interaction atPoint:(CGPoint) point;
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value indicating whether the interaction should begin. Return [`true`](../../Swift/true.md) to let the interaction begin; otherwise, return [`false`](../../Swift/false.md) to prevent the interaction from beginning.
 

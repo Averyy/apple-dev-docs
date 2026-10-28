@@ -24,7 +24,7 @@ typealias JSPropertyAttributes = UInt32
 typedef unsigned int JSPropertyAttributes;
 ```
 
-#### Discussion
+## Discussion
 
 Combine multiple attributes by performing the logical OR operation.
 

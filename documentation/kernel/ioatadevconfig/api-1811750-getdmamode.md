@@ -10,7 +10,7 @@ UInt8 getDMAMode(
  void );
 ```
 
-#### Return Value
+## Return Value
 
 bit-significant map of DMA mode
 

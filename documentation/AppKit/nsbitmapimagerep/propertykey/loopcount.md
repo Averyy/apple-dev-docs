@@ -19,7 +19,7 @@ static let loopCount: NSBitmapImageRep.PropertyKey
 extern NSBitmapImageRepPropertyKey NSImageLoopCount;
 ```
 
-#### Discussion
+## Discussion
 
 A value of 0 indicates the animation should loop indefinitely. Values should be specified as integer numbers. It is used when reading in but not when writing out the image.
 

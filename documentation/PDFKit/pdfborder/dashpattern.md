@@ -24,7 +24,7 @@ var dashPattern: [Any]? { get set }
 @property (nonatomic, copy, nullable) NSArray * dashPattern;
 ```
 
-#### Discussion
+## Discussion
 
 Refer to the description for `NSBezierPath` for more information.
 

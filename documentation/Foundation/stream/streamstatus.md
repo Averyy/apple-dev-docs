@@ -25,11 +25,11 @@ var streamStatus: Stream.Status { get }
 @property (readonly) NSStreamStatus streamStatus;
 ```
 
-#### Return Value
+## Return Value
 
 The receiver’s status.
 
-#### Discussion
+## Discussion
 
 See Constants for a description of the available NSStreamStatus constants.
 

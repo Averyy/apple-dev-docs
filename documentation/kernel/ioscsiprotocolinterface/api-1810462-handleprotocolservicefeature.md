@@ -13,11 +13,11 @@ virtual bool HandleProtocolServiceFeature (
  void *serviceValue ) = 0;
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the service feature request succeeded, `false` otherwise.
 
-#### Overview
+## Overview
 
 This method is called to enact support of a protocol specific service feature. Subclasses of IOSCSIProtocolServices should override this method.
 

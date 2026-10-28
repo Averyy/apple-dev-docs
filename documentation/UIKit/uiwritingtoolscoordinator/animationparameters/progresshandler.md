@@ -22,7 +22,7 @@ var progressHandler: ((Float) -> Void)? { get set }
 @property (nonatomic, copy, nullable) void (^progressHandler)(float progress);
 ```
 
-#### Discussion
+## Discussion
 
 If you have animations you want to run at the same time as the system animations, assign a block to this property and use it to run your animations. The block you provide must have no return value and take a floating-point value as a parameter. The parameter indicates the current progress of the animations as a percentage value between `0.0` to `1.0`. The system executes your block multiple times during the course of the animations, providing an updated completion value each time.
 

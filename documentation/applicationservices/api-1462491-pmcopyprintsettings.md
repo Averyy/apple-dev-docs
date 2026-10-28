@@ -19,7 +19,7 @@ func PMCopyPrintSettings(_ settingSrc: PMPrintSettings, _ settingDest: PMPrintSe
 OSStatus PMCopyPrintSettings(PMPrintSettings settingSrc, PMPrintSettings settingDest);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./core_printing.md#1670007).
 

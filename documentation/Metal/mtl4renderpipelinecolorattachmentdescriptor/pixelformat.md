@@ -24,7 +24,7 @@ var pixelFormat: MTLPixelFormat { get set }
 @property (nonatomic) MTLPixelFormat pixelFormat;
 ```
 
-#### Discussion
+## Discussion
 
 This property defaults to [`MTLPixelFormat.invalid`](../mtlpixelformat/invalid.md).
 

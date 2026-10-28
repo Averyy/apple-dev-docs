@@ -23,7 +23,7 @@ func makeAsyncIterator() -> AsyncThrowingCompactMapSequence<Base, ElementOfResul
 
 Available when `Base` conforms to `AsyncSequence`.
 
-#### Return Value
+## Return Value
 
 An instance of the `AsyncIterator` type used to produce elements of the asynchronous sequence.
 

@@ -18,8 +18,8 @@ Fetches all instances of the attached model type.
 ## Declaration
 
 ```swift
-@attached
-(accessor) @attached(peer, names: prefixed(`_`)) macro Query()
+@attached(accessor)
+@attached(peer, names: prefixed(`_`)) macro Query()
 ```
 
 ## See Also

@@ -20,7 +20,7 @@ unowned(unsafe) var colorMatrix: CFString { get set }
 @property (nonatomic, assign) CFStringRef colorMatrix;
 ```
 
-#### Discussion
+## Discussion
 
 You can specify a value for this property if your pixel format is `420v` or `420f`. The value must be one of the strings specified in [Display Stream YCbCr to RGB conversion Matrix Options](../../CoreGraphics/display-stream-ycbcr-to-rgb-conversion-matrix-options.md).
 

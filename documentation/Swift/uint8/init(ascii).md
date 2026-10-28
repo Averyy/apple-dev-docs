@@ -21,7 +21,7 @@ Construct with value `v.value`.
 init(ascii v: Unicode.Scalar)
 ```
 
-#### Discussion
+## Discussion
 
 > **Precondition**: `v.value` can be represented as ASCII (0..<128).
 

@@ -17,9 +17,9 @@ The status item that reports the device’s Shared iPad state.
 object StatusMDMIsSharedIPad
 ```
 
-#### Discussion
+## Discussion
 
-##### Status item availability
+### Status item availability
 
 |  |  |
 | --- | --- |
@@ -30,7 +30,7 @@ object StatusMDMIsSharedIPad
 | Allowed in system scope | iOS, Shared iPad |
 | Allowed in user scope | Shared iPad |
 
-##### Status item example
+### Status item example
 
 ```json
 {

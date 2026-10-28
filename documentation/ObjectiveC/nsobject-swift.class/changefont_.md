@@ -15,7 +15,7 @@ Informs responders of a font change.
 - (void) changeFont:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 Generally this change is because the user changed the font either in the selection of a rich text field or in a whole plain text field. Any object that contains a font the user can change must respond to the [`changeFont:`](./changefont_.md) message by sending a [`convert(_:)`](../../AppKit/nsfontmanager/convert%28_%29.md) message back to `sender` (an NSFontManager object) for each font in the selection. For more information, see Responding to Font Changes.
 

@@ -24,11 +24,11 @@ func containsPass(_ pass: PKPass) -> Bool
 - (BOOL) containsPass:(PKPass *) pass;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the user’s pass library contains the pass; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 This method lets you determine that the pass library contains a pass even though your app can’t read or modify the pass. For example, an email client doesn’t have entitlements to read or write any passes from the library.
 

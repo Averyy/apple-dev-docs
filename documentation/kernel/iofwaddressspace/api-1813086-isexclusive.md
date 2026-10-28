@@ -12,7 +12,7 @@ inline bool isExclusive(
  void )
 ```
 
-#### Return Value
+## Return Value
 
 True if the address space is marked exclusive false otherwise
 

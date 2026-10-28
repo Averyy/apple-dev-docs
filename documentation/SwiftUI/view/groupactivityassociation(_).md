@@ -16,7 +16,7 @@ nonisolated
 func groupActivityAssociation(_ kind: GroupActivityAssociationKind?) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 When a group of people join a SharePlay activity with their spatial Personas, the system selects a common, primary scene to arrange their spatial Personas around. This association between the group activity and a primary scene in your app creates a shared space for the spatial Personas to interact in; enabling participants to gesture at the associated scene and understand each other. For more information about spatial Personas and  SharePlay on visionOS, see [Adding spatial Persona support to an activity](../../GroupActivities/adding-spatial-persona-support-to-an-activity.md).
 

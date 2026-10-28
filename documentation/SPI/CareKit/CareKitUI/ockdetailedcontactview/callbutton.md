@@ -18,7 +18,7 @@ A button with a phone image and title label.
 let callButton: OCKContactButton
 ```
 
-#### Discussion
+## Discussion
 
 Set the `isHidden` property to `false` to hide the button.
 

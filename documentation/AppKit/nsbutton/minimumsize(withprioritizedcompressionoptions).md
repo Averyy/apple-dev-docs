@@ -19,7 +19,7 @@ func minimumSize(withPrioritizedCompressionOptions prioritizedOptions: [NSUserIn
 - (NSSize) minimumSizeWithPrioritizedCompressionOptions:(NSArray<NSUserInterfaceCompressionOptions *> *) prioritizedOptions;
 ```
 
-#### Return Value
+## Return Value
 
 The size of the compressed button.
 

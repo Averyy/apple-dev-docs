@@ -22,11 +22,11 @@ func shadowImage(forToolbarPosition topOrBottom: UIBarPosition) -> UIImage?
 - (UIImage *) shadowImageForToolbarPosition:(UIBarPosition) topOrBottom;
 ```
 
-#### Return Value
+## Return Value
 
 The image to use for the toolbar shadow in the position specified by `topOrBottom`.
 
-#### Discussion
+## Discussion
 
 The default value is `nil`, which corresponds to the default shadow image being used. When non-`nil`, the return value represents the shadow that is used on the toolbar in the position specified by the `topOrBottom` parameter.
 

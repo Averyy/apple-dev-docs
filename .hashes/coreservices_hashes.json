@@ -129501,8 +129501,25 @@
     "handoff_from": {
       "applicationservices": {}
     },
+    "link_seeds": [
+      [
+        "https://developer.apple.com/tutorials/data/documentation/coreservices/ktsmhiliteconvertedtext.json",
+        "coreservices",
+        "com.apple.documentation"
+      ],
+      [
+        "https://developer.apple.com/tutorials/data/documentation/coreservices/ktsmhiliteselectedconvertedtext.json",
+        "coreservices",
+        "com.apple.documentation"
+      ],
+      [
+        "https://developer.apple.com/tutorials/data/documentation/coreservices/ktsmhiliteselectedrawtext.json",
+        "coreservices",
+        "com.apple.documentation"
+      ]
+    ],
     "render": {
-      "version": 3
+      "version": 4
     },
     "total_pages": 32374
   }

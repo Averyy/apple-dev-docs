@@ -23,7 +23,7 @@ var textColor: UIColor? { get set }
 @property (nonatomic, strong, nullable) UIColor * textColor;
 ```
 
-#### Discussion
+## Discussion
 
 This property applies to the entire text string. The default text color is black.
 

@@ -19,7 +19,7 @@ var isUserRegistered: Bool { get }
 @property (readonly, getter=isUserRegistered) BOOL userRegistered;
 ```
 
-#### Discussion
+## Discussion
 
 Returns [`true`](../../Swift/true.md) if the user completes registration.
 

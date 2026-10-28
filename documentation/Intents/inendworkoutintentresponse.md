@@ -23,7 +23,7 @@ class INEndWorkoutIntentResponse
 @interface INEndWorkoutIntentResponse : INIntentResponse
 ```
 
-#### Overview
+## Overview
 
 Use an [`INEndWorkoutIntentResponse`](./inendworkoutintentresponse.md) object to specify whether your app is able to end a workout. The response object contains only the status code that indicates whether to launch your app or whether there was a problem.
 

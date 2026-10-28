@@ -25,7 +25,7 @@ class NSComparisonPredicate
 @interface NSComparisonPredicate : NSPredicate
 ```
 
-#### Overview
+## Overview
 
 Use comparison predicates to compare the results of two expressions. You create a comparison predicate with an operator, a left expression, and a right expression, and use instances of the [`NSExpression`](./nsexpression.md) class to represent those expressions. When you evaluate the predicate, it returns a `BOOL` value as the result of invoking the operator with the results of evaluating the expressions.
 

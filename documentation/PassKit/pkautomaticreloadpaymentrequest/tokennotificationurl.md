@@ -23,7 +23,7 @@ var tokenNotificationURL: URL? { get set }
 @property (nonatomic, strong, nullable) NSURL * tokenNotificationURL;
 ```
 
-#### Discussion
+## Discussion
 
 The [`tokenNotificationURL`](./tokennotificationurl.md) is optional. Set this property to receive notifications for life-cycle updates to the merchant token, for example, when the card issuer or the user deletes the token.
 

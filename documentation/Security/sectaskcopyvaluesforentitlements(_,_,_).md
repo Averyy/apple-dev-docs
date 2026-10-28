@@ -20,7 +20,7 @@ func SecTaskCopyValuesForEntitlements(_ task: SecTask, _ entitlements: CFArray, 
 CFDictionaryRefSecTaskCopyValuesForEntitlements(SecTaskRef task, CFArrayRef entitlements, CFErrorRef*error);
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary containing the entitlement names as keys with the corresponding entitlements as the dictionary values, or `NULL` on error. In Objective-C, call the [`CFRelease`](../CoreFoundation/cfrelease.md) function to free this dictionary’s memory when you are done with it.
 

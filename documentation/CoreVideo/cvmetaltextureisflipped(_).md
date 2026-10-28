@@ -24,7 +24,7 @@ func CVMetalTextureIsFlipped(_ image: CVMetalTexture) -> Bool
 extern Boolean CVMetalTextureIsFlipped(CVMetalTextureRef image);
 ```
 
-#### Return Value
+## Return Value
 
 If `True`, the texture coordinate `{0,0}` represents the upper left of the texture; if `False`, the texture coordinate `{0,0}` represents the lower left of the texture.
 

@@ -15,11 +15,11 @@ Apps search response envelope.
 object AppsSearchResponse
 ```
 
-#### Discussion
+## Discussion
 
 The search apps endpoint returns `AppsSearchResponse` as the top-level envelope. It extends the standard [`QueryResponse`](./queryresponse.md) envelope. To retrieve additional pages, use `pagination`.
 
-##### Example
+### Example
 
 ```json
 {

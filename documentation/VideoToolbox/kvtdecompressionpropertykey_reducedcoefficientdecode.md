@@ -24,7 +24,7 @@ let kVTDecompressionPropertyKey_ReducedCoefficientDecode: CFString
 extern CFStringRef const kVTDecompressionPropertyKey_ReducedCoefficientDecode;
 ```
 
-#### Discussion
+## Discussion
 
 This is an optional property for video decoders to implement. Only decoders for which such approximations make sense should implement this property. The meaning of the number of coefficients will be decoder-specific.
 

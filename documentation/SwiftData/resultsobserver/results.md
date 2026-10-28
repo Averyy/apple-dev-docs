@@ -21,7 +21,7 @@ The current collection of fetched models matching the fetch criteria.
 final var results: FetchResultsCollection<Element> { get set }
 ```
 
-#### Discussion
+## Discussion
 
 This property is updated automatically when relevant changes occur in the model context. As an `@Observable` property, SwiftUI views that read this value will automatically refresh when the results change.
 

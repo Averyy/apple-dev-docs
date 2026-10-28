@@ -12,11 +12,11 @@ virtual bool setMaxTransferUnit(
  UInt32mtu );
 ```
 
-#### Return Value
+## Return Value
 
 Always returns true.
 
-#### Overview
+## Overview
 
 Calls `ifnet_set_mtu` if the interface is attached to the network stack, and updates the `kIOMaxTransferUnit` property using the provided value.
 

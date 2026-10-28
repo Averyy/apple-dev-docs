@@ -5,7 +5,7 @@
 
 Learn how Password AutoFill interacts with both iOS and web apps.
 
-#### Overview
+## Overview
 
 Password AutoFill works with your app during a few key events, including when:
 
@@ -13,7 +13,7 @@ Password AutoFill works with your app during a few key events, including when:
 - The user selects a text input view in your app.
 - The user taps on an AutoFill item from the QuickType bar.
 
-##### App installs
+### App installs
 
 When your app installs on an iOS device, the system attempts to associate the app with all the domains listed in the app’s [`Associated Domains Entitlement`](../BundleResources/entitlements/com.apple.developer.associated-domains.md):
 
@@ -21,7 +21,7 @@ When your app installs on an iOS device, the system attempts to associate the ap
 2. It tries to download the Apple App Site Association file (`apple-app-site-association)` for that domain.
 3. If all the steps succeed, the system associates the app with that domain, and enables Password AutoFill for that domain’s credentials.
 
-##### User selects a supported input field
+### User selects a supported input field
 
 When the user selects a supported input view or HTML input element, Password AutoFill displays the QuickType bar above the keyboard and populates it with relevant options for the given field.
 
@@ -47,7 +47,7 @@ To test the format of your SMS code for different languages, text a message to y
 
 ![Security codes in SMS messages are suggested in the QuickType bar. ](https://developer.apple.com/tutorials/images/com.apple.security/media-3001199@2x.png)
 
-##### User taps on an AutoFill item
+### User taps on an AutoFill item
 
 When users select an item from the QuickType bar, the system asks them to authenticate using Face ID or Touch ID. Your app becomes inactive when Face ID or Touch ID appears, triggering your app delegate’s [`applicationWillResignActive(_:)`](../UIKit/uiapplicationdelegate/applicationwillresignactive%28_%29.md) and [`applicationDidBecomeActive(_:)`](../UIKit/uiapplicationdelegate/applicationdidbecomeactive%28_%29.md) methods.
 

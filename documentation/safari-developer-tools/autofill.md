@@ -5,13 +5,13 @@
 
 Use well-structured, standardized markup to enable a more reliable AutoFill experience for forms on your website.
 
-#### Overview
+## Overview
 
 AutoFill in Safari lets people automatically fill in credit card information, contact information, and credentials into forms on your webpages. With AutoFill, people can securely sign in to your website using credentials from their password manager, purchase products from your website quickly using payment information they previously saved, and accurately fill in shipping information to help make sure products ship to the correct address.
 
 AutoFill works best when you use well-structured semantic markup to define the forms, inputs, and labels on your webpage. Safari uses multiple signals from your webpage to determine what information to offer people for filling in a particular input element. Even when customers don’t use AutoFill, these signals still help Safari provide a better user experience by offering tailored keyboards and input methods for different types of form controls.
 
-#### Indicate the purpose of each input
+## Indicate the purpose of each input
 
 Safari considers the [autocomplete](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/autocomplete) attribute when determining how to fill a field. For example, add  `autocomplete="given-name"` and `autocomplete="family-name"` to the first and last name fields, respectively, to make it more likely that Safari offers to fill the customer’s first and last names into the fields. You can find valid values for the `autocomplete` attribute in the [HTML Living Standard](https://html.spec.whatwg.org/dev/form-control-infrastructure.html#attr-fe-autocomplete).
 
@@ -19,7 +19,7 @@ Safari considers the [autocomplete](https://developer.mozilla.org/en-US/docs/Web
 
 Providing a value for the `autocomplete` attribute is particularly helpful for login flows where the purposes of form controls are otherwise difficult for AutoFill to detect, such as when form controls for login span multiple pages. To learn more about enabling Password AutoFill on  elements, see [Enabling Password AutoFill on an HTML input element](../Security/enabling-password-autofill-on-an-html-input-element.md).
 
-#### Associate inputs with their labels
+## Associate inputs with their labels
 
 Both AutoFill and assistive technologies like VoiceOver benefit from a strong relationship between inputs and the text that labels them on your webpages. The [<label>](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/label) element provides an easy way to accomplish this for most input fields, allowing you to either nest the `<input>` inside the `<label>`, or add the `for` attribute to the label and set the value to the `id` attribute of the `<input>` it labels.
 
@@ -52,11 +52,11 @@ If you enable the [developer features in Safari](./enabling-developer-features.m
 3. Find the Accessibility section.
 4. Check the Label value and make sure it contains the text that labels the selected form control.
 
-#### Use form elements to group logically related inputs
+## Use form elements to group logically related inputs
 
 [<form>](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/form) elements help separate different forms on your pages. Even if you don’t use the built-in support `<form>` elements provide for submitting data and instead implement submission via JavaScript, using `<form>` elements can help separate different actions a customer can take. For example, for a page with separate login and new account forms, use two different `<form>` elements — one for each form. Similarly, place any other forms on the page, like a search form, in their own `<form>`.
 
-#### Validate controls using built-in validation instead of custom JavaScript
+## Validate controls using built-in validation instead of custom JavaScript
 
 HTML provides numerous ways to configure form controls to ensure they accept only expected values without using JavaScript. This allows WebKit to enforce common validation rules on your behalf, and allows Safari to offer relevant AutoFill suggestions that are appropriate for your form controls. Attributes like `type`, `minlength`, `maxlength`, and `pattern` let you limit the number and type of characters in the control. To learn more about form validation, see [Using HTML form validation and the Constraint Validation API](https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Constraint_validation).
 

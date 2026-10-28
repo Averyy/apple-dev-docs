@@ -19,11 +19,11 @@ func SpeechBusySystemWide() -> Int16
 SInt16 SpeechBusySystemWide(void);
 ```
 
-#### Return Value
+## Return Value
 
 The total number ofspeech channels currently synthesizing speech on the computer, whetherthey were initiated by your application or process’s code or bysome other process executing concurrently. Paused speech channelsare counted among those channels that are synthesizing speech. 
 
-#### Discussion
+## Discussion
 
 This function is useful when you want to ensure that no speechis currently being produced anywhere on the Macintosh computer beforeinitiating speech. Although the Speech Synthesis Manager allowsdifferent applications to produce speech simultaneously, this canbe confusing to the user. As a result, it is often a good idea foryour application to check that no other process is producing speechbefore producing speech itself. If the difference between the valuesreturned by `SpeechBusySystemWide` andthe `SpeechBusy` functionis `0`, no other process is producing speech. 
 

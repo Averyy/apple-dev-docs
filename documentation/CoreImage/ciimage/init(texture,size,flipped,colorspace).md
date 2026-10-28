@@ -25,11 +25,11 @@ init(texture name: UInt32, size: CGSize, flipped: Bool, colorSpace: CGColorSpace
 - (instancetype) initWithTexture:(unsigned int) name size:(CGSize) size flipped:(BOOL) flipped colorSpace:(CGColorSpaceRef) colorSpace;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized image object.
 
-#### Discussion
+## Discussion
 
 When you use a texture to create a [`CIImage`](../ciimage.md) object, the texture must be valid in the Core Image context ([`CIContext`](../cicontext.md)) that you draw the [`CIImage`](../ciimage.md) object into. This means that one of the following must be true:
 

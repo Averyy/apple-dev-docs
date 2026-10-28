@@ -30,7 +30,7 @@ protocol MTLEvent : NSObjectProtocol, Sendable
 - [Synchronizing passes with a fence](./synchronizing-passes-with-a-fence.md)
 - [Understanding the Metal 4 core API](./understanding-the-metal-4-core-api.md)
 
-#### Overview
+## Overview
 
 Each event represents an unsigned 64-bit integer that starts with a value of `0`, which can only increase over time. Create an [`MTLEvent`](./mtlevent.md) by calling the [`makeEvent()`](./mtldevice/makeevent%28%29.md) method of an [`MTLDevice`](./mtldevice.md) instance.
 
@@ -41,7 +41,7 @@ With an event, synchronize commands across a single Metal device by instructing 
 
 The Metal device begins running any dependent workloads when the event equals or exceeds the value that the wait command is waiting for.
 
-##### Synchronize one producing workload with an event
+### Synchronize one producing workload with an event
 
 When working with Metal 4 types, add wait and signal commands with an [`MTL4CommandQueue`](./mtl4commandqueue.md) instance by calling its methods:
 
@@ -63,7 +63,7 @@ You can add signal and wait commands to any combination of [`MTL4CommandQueue`](
 
 One event signal can unblock multiple workloads waiting for it. For example, if workload A needs to run before starting workloads B and C, the B and C workloads can wait for one event to reach a specific value, such as `0x42`. When workload A finishes, the next command can unblock workloads B and C by signaling that event with the value `0x42` or greater.
 
-##### Synchronize multiple producing workloads with an event for each
+### Synchronize multiple producing workloads with an event for each
 
 Multiple producing workloads can’t combine their signals with one event to unblock any dependent workloads. This is because an event’s signal method can only increase its value to a specific number, unlike a semaphore that can increment or decrement its current value by one. Instead, signal when each producing workload finishes by updating its own separate event. Dependent workloads can wait for the multiple events that correspond to the workloads they depend on.
 

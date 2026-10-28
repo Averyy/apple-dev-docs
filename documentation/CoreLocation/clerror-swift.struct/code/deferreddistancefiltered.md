@@ -25,7 +25,7 @@ case deferredDistanceFiltered
 kCLErrorDeferredDistanceFiltered
 ```
 
-#### Discussion
+## Discussion
 
 Set the distance filter to [`kCLDistanceFilterNone`](../../kcldistancefilternone.md).
 

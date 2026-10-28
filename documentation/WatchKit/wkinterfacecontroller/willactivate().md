@@ -24,7 +24,7 @@ func willActivate()
 - [Working with the watchOS app life cycle](../working-with-the-watchos-app-life-cycle.md)
 - [Navigating Between Scenes](../navigating-between-scenes.md)
 
-#### Discussion
+## Discussion
 
 The system calls this method when it is getting ready to display your interface controller. Use this method to perform last minute tasks required to ensure your content is up to date. Do not use this method to perform the initial setup of your interface. Your interface should be mostly initialized and ready to use by the time this method is called.
 

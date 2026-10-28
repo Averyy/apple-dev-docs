@@ -24,11 +24,11 @@ class func gammaAdjust() -> any CIFilter & CIGammaAdjust
 + (CIFilter<CIGammaAdjust> *) gammaAdjustFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The modified image.
 
-#### Discussion
+## Discussion
 
 This method applies the gamma-adjust filter to an image. The effect adjusts the image’s mid-tone brightness. This filter is typically used to compensate for distortion caused by displays.
 

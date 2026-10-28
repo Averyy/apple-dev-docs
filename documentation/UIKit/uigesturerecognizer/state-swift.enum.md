@@ -23,7 +23,7 @@ enum State
 enum UIGestureRecognizerState : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 Gesture recognizers recognize a discrete event such as a tap or a swipe but don’t report changes within the gesture. In other words, discrete gestures don’t transition through the Began and Changed states and they can’t fail or be canceled.
 

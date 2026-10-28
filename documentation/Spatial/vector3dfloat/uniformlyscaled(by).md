@@ -21,7 +21,7 @@ Returns the entity uniformly scaled by the specified scalar value.
 func uniformlyScaled(by scale: Float) -> Vector3DFloat
 ```
 
-#### Discussion
+## Discussion
 
 - Returns The scaled vector.
 

@@ -22,7 +22,7 @@ init(itemIdentifier: NSToolbarItem.Identifier)
 - (instancetype) initWithItemIdentifier:(NSToolbarItemIdentifier) itemIdentifier;
 ```
 
-#### Return Value
+## Return Value
 
 A new toolbar item.
 

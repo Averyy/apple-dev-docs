@@ -25,7 +25,7 @@ func uniformNamed(_ name: String) -> SKUniform?
 - (SKUniform *) uniformNamed:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 The uniform object corresponding to the name, or `nil` if that uniform cannot be found.
 

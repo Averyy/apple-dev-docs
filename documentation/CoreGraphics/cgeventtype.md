@@ -20,7 +20,7 @@ enum CGEventType
 enum CGEventType : uint32_t;
 ```
 
-#### Overview
+## Overview
 
 These constants are used:
 

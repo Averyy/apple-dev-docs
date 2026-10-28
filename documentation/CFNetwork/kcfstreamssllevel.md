@@ -24,7 +24,7 @@ let kCFStreamSSLLevel: CFString
 extern CFStringRef const kCFStreamSSLLevel;
 ```
 
-#### Discussion
+## Discussion
 
 By default, a stream’s security level is `kCFStreamSocketSecurityLevelNegotiatedSSL`. For other possible values, see [CFStream Socket Security Level Constants](../CoreFoundation/cfstream-socket-security-level-constants.md).
 

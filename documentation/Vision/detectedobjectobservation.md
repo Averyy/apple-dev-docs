@@ -21,7 +21,7 @@ An observation that provides the position and extent of an image feature that an
 struct DetectedObjectObservation
 ```
 
-#### Overview
+## Overview
 
 This class is the observation type that [`TrackObjectRequest`](./trackobjectrequest.md) generates. It represents an object that the Vision request detects and tracks.
 

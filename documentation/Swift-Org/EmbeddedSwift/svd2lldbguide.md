@@ -11,13 +11,13 @@ framework: "Swift-Org/EmbeddedSwift"
 
 Debug Swift Embedded code on Raspberry Pi Pico boards using LLDB hardware debugging features.
 
-#### Overview
+## Overview
 
 In this guide, we’ll build a sample I2C embedded app for a **Raspberry Pi RP2040 / RP2350 board**, containing a few bugs. Then, we’ll use LLDB to identify and fix them.
 
 To debug the board, you will use a hardware debugger together with software running on your computer. The hardware debugger connects to the board’s debug pins and gives your computer low-level access to the microcontroller while it is running. LLDB connects to your board and lets you pause the program, inspect its state, and step through the code to find problems. For this, you will need software that communicates with the hardware debugger and provides a debug interface that LLDB can use, such as OpenOCD.
 
-#### Prerequisites
+## Prerequisites
 
 - Install **Swift with Embedded support**, **LLDB**, and **SVD2LLDB** (instructions below)
 - A Raspberry Pi **RP2350 / RP2040**-based board with access to SWD (debug) pins, and an LED. On-board LEDs may be used as long as they are connected directly to GPIO; otherwise, you may use an external LED.
@@ -25,7 +25,7 @@ To debug the board, you will use a hardware debugger together with software runn
 
 > **Note**: If you have another RP2350 / RP2040 board or a Raspberry Pi Debug Probe, you can use it for debugging, through OpenOCD.
 
-##### Installing Swift, LLDB and SVD2LLDB
+### Installing Swift, LLDB and SVD2LLDB
 
 To install Swift for embedded development, follow the instructions in [Installing Embedded Swift](./installembeddedswift.md), which guides you through using swiftly to install the latest development snapshot with Embedded Swift support. The toolchain includes the LLDB Debugger, so you don’t need to install it separately.
 
@@ -33,7 +33,7 @@ To install SVD2LLDB, which is an LLDB plugin that enhances firmware debugging by
 
 If you’re new to LLDB, apart from this guide, we also recommend you check out [the related WWDC sessions](https://developer.apple.com/videos/play/wwdc2022/110370), and the [LLDB docs](https://lldb.llvm.org).
 
-#### Building the embedded app
+## Building the embedded app
 
 Download the starter app project from the [swift-embedded-examples repository](https://github.com/swiftlang/swift-embedded-examples/tree/main/rpi-pico-lldb/). The `start-tutorial` folder contains the starting point for this tutorial, and the `finished-tutorial` folder contains an example of a completed, fixed project.
 
@@ -103,7 +103,7 @@ struct Application {
 
 Our special memory increments each value that is saved to it.
 
-#### Initial board setup
+## Initial board setup
 
 For this tutorial you will have to connect the `i2c0` and `i2c1` interfaces’ `SDA` and `SCL` pins. Use of external pull-ups is recommended.
 
@@ -117,7 +117,7 @@ After making the connections above, connect a debugger to the board’s SWD pins
 
 > **Note**: If you have another Pico or a Raspberry Pi Debug Probe, you can use it for debugging. Check out Raspberry Pi’s [docs](https://www.raspberrypi.com/documentation/microcontrollers/debug-probe.html) and [picoprobe GitHub repo](https://github.com/raspberrypi/debugprobe) in order to set up the debugger.
 
-#### Uploading the firmware
+## Uploading the firmware
 
 It’s time to run & debug the application.
 
@@ -139,11 +139,11 @@ $ cp .build/armv7em-apple-none-macho/debug/Application.uf2 /Volumes/RP2350
 
 Copying in the UF2 file causes the Pico to automatically install the firmware, reboot itself, and run the firmware. The firmware you uploaded is saved in RAM rather than Flash, so if you unplug your board, the RAM is cleared and your program lost. In that case, you will need to repeat this process to reflash it.
 
-#### Attaching LLDB
+## Attaching LLDB
 
 In order to use LLDB, connect it to your board. This is done using a hardware SWD debugger and a compatible debug server program, such as OpenOCD.
 
-##### Using OpenOCD
+### Using OpenOCD
 
 If your hardware SWD debugger is supported, you can use OpenOCD as a bridge between LLDB and your board.
 
@@ -186,7 +186,7 @@ Info : Listening on port 3333 for gdb connections
 
 You now have a debug server running on your machine. Leave this terminal open, and do not close the program while you use `lldb` in another terminal.
 
-##### Connecting LLDB to your debug server
+### Connecting LLDB to your debug server
 
 Run lldb with your `Application` Mach-O and connect to your debug server (here you are connecting to the OpenOCD server’s port, `3333`, as seen in the previous section).
 
@@ -249,11 +249,11 @@ The core that isn’t used by our code is currently idling in the chip’s own b
 
 Otherwise, if you’re seeing assembly code in both cases, you might be looking at the board’s bootloader (that is, its ROM) code. You may not have reached the Swift code yet. A simple way to check this is by looking at the current instruction’s address - on RP2040/RP2350, the Boot ROM is memory-mapped starting at `0x00000000`, so any address in the low `0x0000xxxx` range is typically inside the bootloader. Type `continue` and check that your board isn’t waiting for firmware upload (check that it doesn’t show up as a mounted volume in `/Volumes`). Then, type `process-interrupt` or hit Control + C (`^C`) to interrupt the program.
 
-#### Finding bugs with LLDB
+## Finding bugs with LLDB
 
 It is time to find the bugs. If you take a look at the sample application, you will notice that it is supposed to reach an on-board LED-blinking stage; however, you are likely not seeing any turned on LED.
 
-##### Uncovering the first issue
+### Uncovering the first issue
 
 Find out where execution stopped by checking the backtrace with `thread backtrace` / `bt`:
 
@@ -353,7 +353,7 @@ The Raspberry Pi Pico has only 40 physical pins, including 26 GPIO; `100` is an 
 
 After making this change, re-build the firmware.
 
-##### Setting a breakpoint on our app’s entrypoint
+### Setting a breakpoint on our app’s entrypoint
 
 After building the firmware, it’s time to re-flash it.
 
@@ -432,7 +432,7 @@ Target 0: (Application) stopped.
 (lldb)  
 ```
 
-##### Investigating the second bug
+### Investigating the second bug
 
 Turn your attention to the second bug. If you type `continue`, you will notice that your code doesn’t crash, but the LED isn’t on, so something is still not right. The code is likely hanging somewhere.
 
@@ -548,7 +548,7 @@ Alternatively, change the `i2c1`’s address to `0x43`, or change both addresses
 
 Then re-build, and follow the same firmware flashing steps.
 
-##### Finding and fixing the last bug
+### Finding and fixing the last bug
 
 If you change the target address, the behavior is unchanged:
 

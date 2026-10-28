@@ -24,11 +24,11 @@ func MusicTrackGetProperty(_ inTrack: MusicTrack, _ inPropertyID: UInt32, _ outD
 extern OSStatus MusicTrackGetProperty(MusicTrack inTrack, UInt32 inPropertyID, void *outData, UInt32 *ioLength);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 
-#### Discussion
+## Discussion
 
 Music track property values are always accessed by reference. As of OS X v10.6, all such property values are fixed length.
 

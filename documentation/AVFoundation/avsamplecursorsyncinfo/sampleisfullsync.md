@@ -25,7 +25,7 @@ var sampleIsFullSync: ObjCBool
 BOOL sampleIsFullSync;
 ```
 
-#### Discussion
+## Discussion
 
 A full sync sample, also called a Instantaneous Decoder Refresh sample, is sufficient in itself to completely resynchronize a decoder.
 

@@ -20,7 +20,7 @@ The format descriptions of the media samples that a track references.
 var formatDescriptions: [Any] { get }
 ```
 
-#### Discussion
+## Discussion
 
 The array contains [`CMFormatDescription`](../../CoreMedia/cmformatdescription.md) objects that indicate the format of media samples the track references.
 

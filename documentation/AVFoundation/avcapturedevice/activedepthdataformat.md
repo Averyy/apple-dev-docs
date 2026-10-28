@@ -26,7 +26,7 @@ var activeDepthDataFormat: AVCaptureDevice.Format? { get set }
 
 - [Capturing photos with depth](../capturing-photos-with-depth.md)
 
-#### Discussion
+## Discussion
 
 You must obtain exclusive access to the device by calling [`lockForConfiguration()`](./lockforconfiguration%28%29.md) before setting this property value.
 

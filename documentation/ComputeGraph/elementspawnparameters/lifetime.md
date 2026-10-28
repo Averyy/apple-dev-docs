@@ -21,7 +21,7 @@ The initial lifetime of the particle in seconds.
 var lifetime: Float { get set }
 ```
 
-#### Discussion
+## Discussion
 
 This determines how long the particle will exist before being automatically removed from the simulation. A value of 0 or negative means the particle will be removed immediately or never spawn.
 

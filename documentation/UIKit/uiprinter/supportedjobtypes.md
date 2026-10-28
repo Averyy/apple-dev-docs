@@ -22,7 +22,7 @@ var supportedJobTypes: UIPrinter.JobTypes { get }
 @property (readonly) UIPrinterJobTypes supportedJobTypes;
 ```
 
-#### Discussion
+## Discussion
 
 Job types indicate the types of operations you can perform with the printer. You might use this information when deciding whether or not to use a printer for a particular task. For example, a photo app might prevent a printer picker interface from displaying printers that do not support the [`photo`](./jobtypes/photo.md) job type.
 

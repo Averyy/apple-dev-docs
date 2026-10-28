@@ -23,7 +23,7 @@ optional func applicationShouldRequestHealthAuthorization(_ application: UIAppli
 - (void) applicationShouldRequestHealthAuthorization:(UIApplication *) application;
 ```
 
-#### Discussion
+## Discussion
 
 In your implementation of this method, call the [`handleAuthorizationForExtension(completion:)`](../../HealthKit/hkhealthstore/handleauthorizationforextension%28completion%29.md) method of the [`HKHealthStore`](../../HealthKit/hkhealthstore.md) object.
 

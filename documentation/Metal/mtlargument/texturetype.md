@@ -24,7 +24,7 @@ var textureType: MTLTextureType { get }
 @property (readonly) MTLTextureType textureType;
 ```
 
-#### Discussion
+## Discussion
 
 For information on possible values, see [`MTLTextureType`](../mtltexturetype.md). If the argument is not a texture, querying this property is a fatal error.
 

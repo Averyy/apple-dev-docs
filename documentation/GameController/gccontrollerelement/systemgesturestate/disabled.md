@@ -24,7 +24,7 @@ case disabled
 GCSystemGestureStateDisabled
 ```
 
-#### Discussion
+## Discussion
 
 This state gives your app full control of the input for this element.
 

@@ -24,7 +24,7 @@ func reductionSum(with tensor: MPSGraphTensor, axes: [NSNumber]?, name: String?)
 - (MPSGraphTensor *) reductionSumWithTensor:(MPSGraphTensor *) tensor axes:(NSArray<NSNumber *> *) axes name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSGraphTensor object.
 

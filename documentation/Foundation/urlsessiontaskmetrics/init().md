@@ -27,7 +27,7 @@ init()
 - (instancetype) init;
 ```
 
-#### Discussion
+## Discussion
 
 You should never need to create your own [`URLSessionTaskMetrics`](../urlsessiontaskmetrics.md) instances. If you are interested in task metrics, implement the [`urlSession(_:task:didFinishCollecting:)`](../urlsessiontaskdelegate/urlsession%28_,task,didfinishcollecting%29.md) method of [`URLSessionTaskDelegate`](../urlsessiontaskdelegate.md). The [`URLSession`](../urlsession.md) will collect task metrics for you and deliver them to this method.
 

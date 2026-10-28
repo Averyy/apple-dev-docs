@@ -29,13 +29,13 @@ class HKWorkoutRoute
 - [Reading route data](./reading-route-data.md)
 - [Creating a workout route](./creating-a-workout-route.md)
 
-#### Overview
+## Overview
 
 When creating a workout route, you do not instantiate the [`HKWorkoutRoute`](./hkworkoutroute.md) objects directly. Instead, create a [`HKWorkoutRouteBuilder`](./hkworkoutroutebuilder.md) object, and provide it with location data throughout the workout. After the workout ends, call the route builder’s  [`finishRoute(with:metadata:completion:)`](./hkworkoutroutebuilder/finishroute%28with,metadata,completion%29.md) method to create the route. For detailed instructions, see [Creating a workout route](./creating-a-workout-route.md).
 
 The route’s location data is stored as an array of [`CLLocation`](../CoreLocation/cllocation.md) objects. Because the route may contain a large number of location objects, use a [`HKWorkoutRouteQuery`](./hkworkoutroutequery.md) object to asynchronously read the location data from the HealthKit store in batches. For more information, see [Reading route data](./reading-route-data.md).
 
-##### Using workout routes
+### Using workout routes
 
 As with many HealthKit classes, don’t subclass the [`HKWorkoutRoute`](./hkworkoutroute.md) class. You can extend [`HKWorkoutRoute`](./hkworkoutroute.md) objects by adding custom metadata keys and values to the metadata dictionary when the object is created.
 

@@ -21,11 +21,11 @@ func QLThumbnailRequestSetImage(_ thumbnail: QLThumbnailRequest!, _ image: CGIma
 extern void QLThumbnailRequestSetImage(QLThumbnailRequestRef thumbnail, CGImageRef image, CFDictionaryRef properties);
 ```
 
-#### Discussion
+## Discussion
 
 You call this function to have Quick Look use the `CGImage` object supplied in `image` as the thumbnail. Call [`QLThumbnailRequestGetMaximumSize(_:)`](./qlthumbnailrequestgetmaximumsize%28_%29.md) to get the maximum allowed size for thumbnail and resize it if necessary before calling `QLThumbnailSetImage`.
 
-##### Special Considerations
+### Special Considerations
 
 Thread-safety: This function should be called in the same thread as the thumbnail request is made in; generally, this is the same thread in which the `GenerateThumbnailForURL` callback was invoked.
 

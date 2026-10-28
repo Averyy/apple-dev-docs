@@ -22,11 +22,11 @@ init(view: UIView)
 - (instancetype) initWithView:(UIView *) view;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized preview interaction.
 
-#### Discussion
+## Discussion
 
 Preview interactions operate on touches within a specified view. Unlike gesture recognizers, the view doesn’t maintain a strong reference to preview interactions. You must therefore retain a reference to the preview interaction to ensure that it continues to receive touches from the view.
 

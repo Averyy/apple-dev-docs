@@ -23,7 +23,7 @@ class MPVolumeView
 @interface MPVolumeView : UIView
 ```
 
-#### Overview
+## Overview
 
 Use a volume view to present the user with a slider control for setting the system audio output volume, and a button for choosing the audio output route when the option is available. When first displayed, the slider’s position reflects the current system audio output volume. As the user drags the slider, the changes update the volume view. If the user presses the device volume buttons while sound is playing, the slider moves to reflect the new volume.
 
@@ -47,7 +47,7 @@ To instead display a volume slider as an alert, use the functions described in [
 
 > **Note**:  You can’t subclass the MPVolumeView class.
 
-##### Customizing the volume slider’s appearance
+### Customizing the volume slider’s appearance
 
 The volume slider is a [`UISlider`](../UIKit/uislider.md) object. Sliders are always displayed as horizontal bars and an indicator, or **thumb**, notes the current value of the slider, which the user can move to change the setting.
 

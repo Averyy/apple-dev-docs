@@ -25,7 +25,7 @@ var constraints: [SKConstraint]? { get set }
 @property (nonatomic, copy, nullable) NSArray<SKConstraint *> * constraints;
 ```
 
-#### Discussion
+## Discussion
 
 Assign an array of [`SKConstraint`](../skconstraint.md) objects to the node. The scene processes these constraints before the scene is rendered. The constraints are processed in array order. If multiple nodes in the node tree have constraints, there is no guaranteed order that the nodes are processed in.
 

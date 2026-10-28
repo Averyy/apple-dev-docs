@@ -6,7 +6,7 @@
 
 An 8-bit value for the font size, expressed in points.
 
-#### Overview
+## Overview
 
 The value should always be `0.05` multiplied by the video track header height. For example, if the video track header is 720 points in height, this should be `36` (points). This size should be used in the default style record and in any per-sample style records. If a subtitle does not fit in the text box, the subtitle media handler may choose to shrink the font size so that the subtitle fits.
 

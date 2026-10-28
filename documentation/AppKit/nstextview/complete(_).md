@@ -19,7 +19,7 @@ func complete(_ sender: Any?)
 - (void) complete:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 By default invoked using the F5 key, this method provides users with a choice of completions for the word currently being typed. May be invoked programmatically if autocompletion is desired by a client of the text system. You can change the key invoking this method using the text system’s key bindings mechanism; see “[Text System Defaults and Key Bindings](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/EventOverview/TextDefaultsBindings/TextDefaultsBindings.html#//apple_ref/doc/uid/20000468)” for an explanation of the procedure.
 

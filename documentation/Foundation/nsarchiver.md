@@ -24,7 +24,7 @@ class NSArchiver
 @interface NSArchiver : NSCoder
 ```
 
-#### Overview
+## Overview
 
 [`NSArchiver`](./nsarchiver.md), a concrete subclass of [`NSCoder`](./nscoder.md), provides a way to encode objects into an architecture-independent format that can be stored in a file. When you archive a graph of objects, the class information and instance variables for each object are written to the archive. The companion class [`NSUnarchiver`](./nsunarchiver.md) decodes the data in an archive and creates a graph of objects equivalent to the original set.
 

@@ -32,7 +32,7 @@ func updateTriggerValue(_ triggerValue: TriggerValueType?) async throws
 - (void) updateTriggerValue:(TriggerValueType) triggerValue completionHandler:(void (^)(NSError *error)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Set the trigger value to `nil` to trigger the event whenever the value of the characteristic changes.
 

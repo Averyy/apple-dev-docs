@@ -20,7 +20,7 @@ var kSMErrorAuthorizationFailure: Int { get }
 kSMErrorAuthorizationFailure
 ```
 
-#### Discussion
+## Discussion
 
 The request requires authorization (such as, adding a job to the [`kSMDomainSystemLaunchd`](./ksmdomainsystemlaunchd.md)), but the `AuthorizationRef` doesn’t contain the required right.
 

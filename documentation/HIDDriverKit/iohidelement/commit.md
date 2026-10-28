@@ -16,7 +16,7 @@ Commits the element value to and from the device.
 virtual IOReturn commit(IOHIDElementCommitDirection direction);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../../DriverKit/error-codes.md).
 

@@ -19,11 +19,11 @@ init?(cgColor: CGColor)
 + (NSColor *) colorWithCGColor:(CGColorRef) cgColor;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSColor` instance.
 
-#### Discussion
+## Discussion
 
 This method may return `nil`.
 

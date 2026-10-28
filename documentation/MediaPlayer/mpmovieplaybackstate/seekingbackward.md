@@ -21,7 +21,7 @@ case seekingBackward
 MPMoviePlaybackStateSeekingBackward
 ```
 
-#### Discussion
+## Discussion
 
 The movie player is currently seeking towards the beginning of the movie.
 

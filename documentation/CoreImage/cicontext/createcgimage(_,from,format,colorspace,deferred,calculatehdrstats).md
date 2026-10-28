@@ -24,7 +24,7 @@ func createCGImage(_ image: CIImage, from fromRect: CGRect, format: CIFormat, co
 - (CGImageRef) createCGImage:(CIImage *) image fromRect:(CGRect) fromRect format:(CIFormat) format colorSpace:(CGColorSpaceRef) colorSpace deferred:(BOOL) deferred calculateHDRStats:(BOOL) calculateHDRStats;
 ```
 
-#### Return Value
+## Return Value
 
  Returns a new `CGImage` instance. You are responsible for releasing the returned image when you no longer need it. The returned value will be `null` if the extent is empty or too big.
 

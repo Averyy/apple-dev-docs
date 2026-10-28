@@ -19,7 +19,7 @@ class func shared() -> WKApplication
 + (WKApplication *) sharedApplication;
 ```
 
-#### Return Value
+## Return Value
 
 The WatchKit app object. This object is never `nil`.
 

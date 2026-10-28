@@ -19,7 +19,7 @@ object ExtendRenewalDateResponse
 
 - [Extending the renewal date for auto-renewable subscriptions](./extending-the-renewal-date-for-auto-renewable-subscriptions.md)
 
-#### Discussion
+## Discussion
 
 This object is the response data for the [`Extend a Subscription Renewal Date`](./extend-a-subscription-renewal-date.md) endpoint.
 

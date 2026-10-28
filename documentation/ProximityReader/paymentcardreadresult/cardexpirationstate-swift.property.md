@@ -17,7 +17,7 @@ The expiration state of the card that the system read.
 let cardExpirationState: PaymentCardReadResult.CardExpirationState?
 ```
 
-#### Discussion
+## Discussion
 
 This is only available in a Store and Forward session.
 

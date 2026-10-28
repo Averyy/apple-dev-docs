@@ -20,7 +20,7 @@ The point demand which the look-at constraint uses to generate a new orientation
 var lookAtTargetPosition: SIMD3<Float> { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The position is in model space. The computed demand overrides the rotation part of [`target`](./target.md).
 

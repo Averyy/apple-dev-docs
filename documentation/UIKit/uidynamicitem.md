@@ -24,7 +24,7 @@ protocol UIDynamicItem : NSObjectProtocol
 @protocol UIDynamicItem <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Starting in iOS 7, the [`UIView`](./uiview.md) and [`UICollectionViewLayoutAttributes`](./uicollectionviewlayoutattributes.md) classes implement this protocol.
 

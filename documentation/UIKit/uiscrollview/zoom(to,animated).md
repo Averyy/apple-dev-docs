@@ -23,7 +23,7 @@ func zoom(to rect: CGRect, animated: Bool)
 - (void) zoomToRect:(CGRect) rect animated:(BOOL) animated;
 ```
 
-#### Discussion
+## Discussion
 
 This method zooms so that the content view becomes the area defined by `rect`, adjusting the [`zoomScale`](./zoomscale.md) as necessary.
 

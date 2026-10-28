@@ -15,7 +15,7 @@ A window toolbar style which displays its toolbar and title bar inline.
 struct UnifiedWindowToolbarStyle
 ```
 
-#### Overview
+## Overview
 
 You can also use [`unified`](./windowtoolbarstyle/unified.md) or [`unified(showsTitle:)`](./windowtoolbarstyle/unified%28showstitle%29.md) to construct this style.
 

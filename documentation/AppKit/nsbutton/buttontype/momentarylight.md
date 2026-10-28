@@ -19,7 +19,7 @@ case momentaryLight
 NSButtonTypeMomentaryLight
 ```
 
-#### Discussion
+## Discussion
 
 When the value of [`isHighlighted`](../../nscontrol/ishighlighted.md) is [`true`](../../../Swift/true.md), the button provides a visual indication of the highlight in its drawing. It might accomplish this indication by modifying the appearance of its content, its bezel, or both.
 

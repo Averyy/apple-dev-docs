@@ -19,7 +19,7 @@ var displaysLinkToolTips: Bool { get set }
 @property BOOL displaysLinkToolTips;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) if link tooltips are automatically displayed; otherwise, [`false`](../../Swift/false.md).
 

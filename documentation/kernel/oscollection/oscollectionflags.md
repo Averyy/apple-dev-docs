@@ -14,7 +14,7 @@ typedef enum {
 } _OSCollectionFlags;
 ```
 
-#### Overview
+## Overview
 
 Used with setOptions to indicate the collection's contents should or should not change.
 

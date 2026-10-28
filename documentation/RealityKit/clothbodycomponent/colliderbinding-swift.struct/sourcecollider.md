@@ -17,7 +17,7 @@ The entity containing the mesh-shaped collider that the body will bind to.
 var sourceCollider: Entity?
 ```
 
-#### Discussion
+## Discussion
 
 For the binding to be successful, the entity must contain a `ClothColliderComponent` with a *mesh* collision shape.
 

@@ -16,8 +16,8 @@
 ## Declaration
 
 ```swift
-@attached
-(extension, conformances: _IntentValueRepresentable, AppUnionValue, names: arbitrary) macro UnionValue()
+@attached(extension, conformances: _IntentValueRepresentable, AppUnionValue, names: arbitrary)
+macro UnionValue()
 ```
 
 ## Mentions

@@ -24,7 +24,7 @@ init(label: String?, value: ValueType)
 - (instancetype) initWithLabel:(NSString *) label value:(ValueType) value;
 ```
 
-#### Return Value
+## Return Value
 
 A new labeled value object.
 

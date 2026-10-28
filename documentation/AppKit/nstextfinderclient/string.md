@@ -19,7 +19,7 @@ optional var string: String { get }
 @property (strong, readonly) NSString * string;
 ```
 
-#### Discussion
+## Discussion
 
 If the client cannot logically or efficiently flatten itself into a single string, then the [`string(at:effectiveRange:endsWithSearchBoundary:)`](./string%28at,effectiverange,endswithsearchboundary%29.md) and [`stringLength()`](./stringlength%28%29.md) methods should be implemented instead.
 

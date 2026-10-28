@@ -19,7 +19,7 @@ class func `class`(forType type: String) -> AnyClass?
 + (Class) imageRepClassForType:(NSString *) type;
 ```
 
-#### Return Value
+## Return Value
 
 A `Class` object for the image representation that can handle the UTI, or `nil` if no image representation could handle the data.
 

@@ -25,7 +25,7 @@ var isCurrentLocation: Bool { get }
 @property (nonatomic, readonly) BOOL isCurrentLocation;
 ```
 
-#### Discussion
+## Discussion
 
 If the value of this property is [`true`](../../Swift/true.md), the map item represents the user’s location, and the value in the [`placemark`](./placemark.md) property is `nil`.
 

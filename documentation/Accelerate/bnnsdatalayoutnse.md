@@ -25,7 +25,7 @@ var BNNSDataLayoutNSE: BNNSDataLayout { get }
 BNNSDataLayoutNSE
 ```
 
-#### Discussion
+## Discussion
 
 The value `(e, s, n)` is at index `e * stride[0] + s * stride[1] + n * stride[2]`.
 

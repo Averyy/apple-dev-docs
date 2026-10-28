@@ -22,7 +22,7 @@ static var layerRightEdge: CAEdgeAntialiasingMask { get }
 kCALayerRightEdge
 ```
 
-#### Discussion
+## Discussion
 
 Specifies that the right edge of the receiver’s content should be antialiased.
 

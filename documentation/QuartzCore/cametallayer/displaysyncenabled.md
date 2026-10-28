@@ -20,7 +20,7 @@ var displaySyncEnabled: Bool { get set }
 @property BOOL displaySyncEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 Set this value to [`true`](../../Swift/true.md) to synchronize the presentation of the layer’s contents with the display’s refresh, also known as *vsync* or *vertical sync*. If [`false`](../../Swift/false.md), the layer presents new content more quickly, but possibly with brief visual artifacts (*screen tearing*).
 

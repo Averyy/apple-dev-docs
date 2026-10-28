@@ -15,15 +15,15 @@
 ## Declaration
 
 ```swift
-@attached
-(peer) macro Guide<RegexOutput>(description: String? = nil, _ guides: Regex<RegexOutput>)
+@attached(peer)
+macro Guide<RegexOutput>(description: String? = nil, _ guides: Regex<RegexOutput>)
 ```
 
 **Other overloads**:
 
 ```swift
-@attached
-(peer) macro Guide<T>(description: String? = nil, _ guides: GenerationGuide<T>...) where T : Generable
+@attached(peer)
+macro Guide<T>(description: String? = nil, _ guides: GenerationGuide<T>...) where T : Generable
 ```
 
 ## See Also

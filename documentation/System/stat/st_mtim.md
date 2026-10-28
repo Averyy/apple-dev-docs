@@ -21,7 +21,7 @@ Time of last modification, given as a C `timespec` since the Epoch.
 var st_mtim: timespec { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding C property is `st_mtim` (or `st_mtimespec` on Darwin).
 

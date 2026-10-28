@@ -17,7 +17,7 @@ A capability that enables an extension process to stay in a suspended state.
 + (instancetype) suspended;
 ```
 
-#### Discussion
+## Discussion
 
 This capability grants the helper extension process the ability to stay in a suspended state, although the system doesn’t allocate it any CPU time.
 

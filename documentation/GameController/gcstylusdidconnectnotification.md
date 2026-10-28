@@ -19,7 +19,7 @@ extern NSString * const GCStylusDidConnectNotification;
 
 - [Discovering and tracking spatial game controllers and styli](./discovering-and-tracking-spatial-game-controllers-and-styli.md)
 
-#### Discussion
+## Discussion
 
 Use this constant with `NSNotificationCenter` to listen for stylus connection events.
 

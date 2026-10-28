@@ -13,11 +13,11 @@
 errno_t ifnet_remove_multicast(ifmultiaddr_t multicast);
 ```
 
-#### Return Value
+## Return Value
 
 0 on success otherwise the errno error.
 
-#### Discussion
+## Discussion
 
 Causes the interface to leave the multicast group. The stack keeps track of how many times ifnet_add_multicast has been called for a given multicast address. The multicast will only be removed when the number of times ifnet_remove_multicast has been called matches the number of times ifnet_add_multicast has been called.
 

@@ -4,7 +4,7 @@
 
 Specify supported callback features to the `AEResolve` function.
 
-#### Overview
+## Overview
 
 You use these constants to supply a value for the `callbackFlags` parameter to the [`AEResolve(_:_:_:)`](../api-1449720-aeresolve.md) function. This value specifies whether your application supports whose descriptors or provides marking callback functions. To obtain a value for this parameter, you can add together constants to set the appropriate bits, as shown in the following example (for an application that supports both whose tests and marking):
 

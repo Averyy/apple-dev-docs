@@ -20,7 +20,7 @@ case actionPropertyListInvalidError
 AMActionPropertyListInvalidError
 ```
 
-#### Discussion
+## Discussion
 
 The property list (`Info.plist`) could be missing, damaged, or constructed improperly.
 

@@ -5,7 +5,7 @@
 
 Retrieve motion data that the system processed to remove environmental bias, such as the effects of gravity.
 
-#### Overview
+## Overview
 
 The Core Motion framework gives you access to the raw data from many different types of hardware sensors, including accelerometers, gyroscopes, and magnetometers. While the raw data is useful, it sometimes contains additional information you don’t need. For example, the raw accelerometer data contains both the acceleration caused by gravity and by the device’s motion. To get only the device-specific acceleration, you must remove the gravitational acceleration from the raw data values. The removal of this data requires additional information and extra processing time.
 
@@ -19,13 +19,13 @@ To make it easier to get the data you want, the device-motion service processes 
 
 The device-motion service combines information from multiple sensors to provide the listed results. Device-motion services are available from [`CMMotionManager`](./cmmotionmanager.md), [`CMHeadphoneMotionManager`](./cmheadphonemotionmanager.md), and [`CMBatchedSensorManager`](./cmbatchedsensormanager.md). If your app can’t function without accelerometer or gyroscope data, update your app’s list of required device capabilities to include that hardware. For more information about specifying required device capabilities, see [`UIRequiredDeviceCapabilities`](../BundleResources/information-property-list/uirequireddevicecapabilities.md).
 
-##### Check for the availability of motion data
+### Check for the availability of motion data
 
 Device-motion data might be unavailable for a variety of reasons, so verify that the service is available before you try to start it. Check the value of the [`isDeviceMotionAvailable`](./cmmotionmanager/isdevicemotionavailable.md) property of `CMMotionManager` and make sure it’s `true`. If it’s `false`, starting the service doesn’t deliver any data to your app.
 
 > ❗ **Important**:  In visionOS, device-motion data is available only when your app has an open immersive space. For more information, see [`ImmersiveSpace`](../SwiftUI/immersivespace.md).
 
-##### Choose a frame of reference for interpreting attitude data
+### Choose a frame of reference for interpreting attitude data
 
 The attitude of a device refers to the amount of rotation around each of the device’s axes. The device-motion service reports attitude values relative to a known orientation of the device, also known as the device’s frame of reference. When you start the device-motion service, you specify which frame of reference you want Core Motion to use.
 
@@ -39,7 +39,7 @@ When a device’s orientation matches the frame of reference’s orientation, th
 
 For information about the coordinate axes of different device types, see [`CMMotionManager`](./cmmotionmanager.md) or [`CMHeadphoneMotionManager`](./cmheadphonemotionmanager.md).
 
-##### Start device-motion updates
+### Start device-motion updates
 
 To start collecting device-motion data, create a `CMMotionManager` object and call one of the appropriate methods. Core Motion offers two options for processing device-motion updates:
 
@@ -100,7 +100,7 @@ func startQueuedUpdates() {
 
 ```
 
-##### Stop device-motion updates
+### Stop device-motion updates
 
 To minimize the impact on a device’s battery life, always call the [`stopDeviceMotionUpdates()`](./cmmotionmanager/stopdevicemotionupdates%28%29.md) method of your [`CMMotionManager`](./cmmotionmanager.md) object when you no longer need motion data. The device-motion service captures motion data using special hardware, and running this hardware consumes additional power. In particular, stop services:
 

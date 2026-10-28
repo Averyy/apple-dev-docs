@@ -18,13 +18,13 @@ The view or view controller used to render and manage the live view.
 var playgroundLiveViewRepresentation: PlaygroundLiveViewRepresentation { get }
 ```
 
-#### Return Value
+## Return Value
 
 A view or view controller able to render and manage the live view. View controllers are preferred.
 
 > ❗ **Important**: The view or view controller returned by this method must be the root of the hierarchy. Views can't have superviews or associated view controllers, and view controllers can't have parent view controllers.
 
-#### Discussion
+## Discussion
 
 The value returned by [`playgroundLiveViewRepresentation`](./api-1978828-playgroundliveviewrepresentation.md) can be different each time the property is accessed.
 

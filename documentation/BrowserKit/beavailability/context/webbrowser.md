@@ -20,7 +20,7 @@ case webBrowser
 BEEligibilityContextWebBrowser
 ```
 
-#### Discussion
+## Discussion
 
 To use this value with [`isEligible(for:completionHandler:)`](../iseligible%28for,completionhandler%29.md), your app needs to be a web browser.
 

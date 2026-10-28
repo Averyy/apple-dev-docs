@@ -19,7 +19,7 @@ let kSpeechOutputToExtAudioFileProperty: CFString
 const CFStringRef kSpeechOutputToExtAudioFileProperty;
 ```
 
-#### Discussion
+## Discussion
 
 The value associated with this property is a `CFNumber` object whose value is an `ExtAudioFileRef`. To write the speech output to an extended audio file, use the file’s [`ExtAudioFileRef`](../AudioToolbox/extaudiofileref.md); to generate sound through the computer’s speakers, use `NULL`.
 

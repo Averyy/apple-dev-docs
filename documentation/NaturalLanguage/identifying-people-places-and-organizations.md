@@ -5,7 +5,7 @@
 
 Use a linguistic tagger to perform named entity recognition on a string.
 
-#### Overview
+## Overview
 
 Identifying named entities in natural language text can help make your app more intelligent. For example, a messaging app might look for names of people and places in text, to display related information like contact information or directions.
 

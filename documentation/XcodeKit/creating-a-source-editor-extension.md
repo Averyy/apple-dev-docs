@@ -5,11 +5,11 @@
 
 Add and configure a source editor extension in your Xcode project.
 
-#### Overview
+## Overview
 
 You build extensions to the source editor in Xcode using XcodeKit. Source editor extensions can read and modify the contents of a source file, as well as read and modify the current text selection within the editor.
 
-##### Create a New macOS Project in Xcode
+### Create a New macOS Project in Xcode
 
 To create a source editor extension, begin by creating a new macOS project in Xcode.  Add a new Xcode Source Editor Extension target to your project, as shown in the figure below, and activate its associated scheme when prompted. The project now contains an additional source folder with files from the template for source editor extensions.
 
@@ -19,7 +19,7 @@ Because your extension runs in Xcode, you must enable development signing for ea
 
 The template in your new extension creates the `SourceEditorCommand` class. This class makes your code conform to the [`XCSourceEditorCommand`](./xcsourceeditorcommand.md) protocol, so Xcode can associate a command with your code. The [`perform(with:completionHandler:)`](./xcsourceeditorcommand/perform%28with,completionhandler%29.md) method is the entry point for handling commands defined in your extension. This method is called each time a user selects one of your extension’s commands from the Editor menu.
 
-##### Add Customizable Behavior
+### Add Customizable Behavior
 
 Add customizable behavior to your source editor extension by filling in the body of the [`perform(with:completionHandler:)`](./xcsourceeditorcommand/perform%28with,completionhandler%29.md) method. The following example shows a command that reverses the order of the lines in a source editor:
 

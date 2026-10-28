@@ -23,11 +23,11 @@ init(frame: CGRect)
 - (instancetype) initWithFrame:(CGRect) frame;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized view object.
 
-#### Discussion
+## Discussion
 
 The new view object must be inserted into the view hierarchy of a window before it can be used. If you create a view object programmatically, this method is the designated initializer for the [`UIView`](../uiview.md) class. Subclasses can override this method to perform any custom initialization but must call `super` at the beginning of their implementation.
 

@@ -19,11 +19,11 @@ class var preservesVersions: Bool { get }
 @property (class, readonly) BOOL preservesVersions;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the receiving subclass of [`NSDocument`](../nsdocument.md) supports Versions; otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 The default implementation of this method returns `[self autosavesInPlace]`. You can override it and return [`false`](../../Swift/false.md) to declare that `NSDocument` should not preserve old document versions.
 

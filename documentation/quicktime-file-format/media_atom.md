@@ -6,7 +6,7 @@
 
 An atom that describes and defines a track’s media type and sample data.
 
-#### Overview
+## Overview
 
 The media atom has an atom type of `'mdia'`. It must contain a media header atom (`'mdhd'`), and it can contain a handler reference (`'hdlr'`) atom, media information (`'minf'`) atom, and user data (`'udta'`) atom.
 

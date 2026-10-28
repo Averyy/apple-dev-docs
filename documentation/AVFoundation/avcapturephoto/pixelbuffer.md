@@ -27,7 +27,7 @@ var pixelBuffer: CVPixelBuffer? { get }
 
 - [Capturing uncompressed image data](../capturing-uncompressed-image-data.md)
 
-#### Discussion
+## Discussion
 
 If you requested photo capture in a RAW format, or in a processed format without compression such as TIFF, you can use this property to access the underlying sample buffer.
 

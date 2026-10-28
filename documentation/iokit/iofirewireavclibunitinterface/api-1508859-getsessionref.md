@@ -16,11 +16,11 @@ Get the session reference.
 IOFireWireSessionRef (*getSessionRef)(void *self);
 ```
 
-#### Return Value
+## Return Value
 
 Returns a sessionRef on success.
 
-#### Discussion
+## Discussion
 
 Gets the sessionRef to be used with openWithSessionRef.
 

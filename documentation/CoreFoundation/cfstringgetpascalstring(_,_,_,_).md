@@ -25,11 +25,11 @@ func CFStringGetPascalString(_ theString: CFString!, _ buffer: StringPtr!, _ buf
 extern Boolean CFStringGetPascalString(CFStringRef theString, StringPtr buffer, CFIndex bufferSize, CFStringEncoding encoding);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the operation succeeds or `false` if the conversion fails or the provided buffer is too small.
 
-#### Discussion
+## Discussion
 
 This function is useful when you need your own copy of a CFString object’s character data as a Pascal string. You can also call it as a “backup” operation when a prior call to the [`CFStringGetPascalStringPtr(_:_:)`](./cfstringgetpascalstringptr%28_,_%29.md) function fails.
 

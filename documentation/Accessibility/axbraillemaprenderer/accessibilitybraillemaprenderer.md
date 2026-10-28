@@ -25,7 +25,7 @@ optional var accessibilityBrailleMapRenderer: (AXBrailleMap) -> Void { get set }
 @property (nonatomic, copy) void (^accessibilityBrailleMapRenderer)(AXBrailleMap *map);
 ```
 
-#### Discussion
+## Discussion
 
 When the accessibility element that implements this property has focus, the system calls this handler to let you update the braille map manually.
 

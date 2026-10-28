@@ -25,7 +25,7 @@ var requestExpression: NSExpression { get }
 @property (strong, readonly) NSExpression * requestExpression;
 ```
 
-#### Discussion
+## Discussion
 
 The expression must evaluate to an [`NSFetchRequest`](../nsfetchrequest.md) object.
 

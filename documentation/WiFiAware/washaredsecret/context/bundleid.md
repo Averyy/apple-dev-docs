@@ -17,7 +17,7 @@ A string that provides a unique value specific to your app.
 static let bundleID: WASharedSecret.Context
 ```
 
-#### Discussion
+## Discussion
 
 The default is to use your app’s bundle ID as the context.
 

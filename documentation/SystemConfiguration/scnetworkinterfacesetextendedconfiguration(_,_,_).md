@@ -19,7 +19,7 @@ func SCNetworkInterfaceSetExtendedConfiguration(_ interface: SCNetworkInterface,
 Boolean SCNetworkInterfaceSetExtendedConfiguration(SCNetworkInterfaceRef interface, CFStringRef extendedType, CFDictionaryRef config);
 ```
 
-#### Return Value
+## Return Value
 
 `TRUE` if the configuration was stored; `FALSE` if an error occurred.
 

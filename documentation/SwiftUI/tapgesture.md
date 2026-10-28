@@ -22,7 +22,7 @@ nonisolated
 struct TapGesture
 ```
 
-#### Overview
+## Overview
 
 To recognize a tap gesture on a view, create and configure the gesture, and then add it to the view using the [`gesture(_:including:)`](./view/gesture%28_,including%29.md) modifier. The following code adds a tap gesture to a [`Circle`](./circle.md) that toggles the color of the circle:
 

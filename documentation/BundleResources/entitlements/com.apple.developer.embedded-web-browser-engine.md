@@ -19,7 +19,7 @@ An entitlement that enables an app to embed an alternative browser engine.
 
 **Default**: `NO`
 
-#### Discussion
+## Discussion
 
 Add this entitlement to your app’s code signature if your app isn’t a web browser, but it embeds an alternative browser engine for in-app browsing.
 

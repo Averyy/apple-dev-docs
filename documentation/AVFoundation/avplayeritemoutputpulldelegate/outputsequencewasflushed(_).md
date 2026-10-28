@@ -25,7 +25,7 @@ optional func outputSequenceWasFlushed(_ output: AVPlayerItemOutput)
 - (void) outputSequenceWasFlushed:(AVPlayerItemOutput *) output;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called after any attempt to seek or change the playback direction of the item’s content. If you are maintaining any queued future samples, you can use your implementation of this method to discard those samples.
 

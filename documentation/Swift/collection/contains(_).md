@@ -23,7 +23,7 @@ func contains<C>(_ other: C) -> Bool where C : Collection, Self.Element == C.Ele
 
 Available when `Element` conforms to `Equatable`.
 
-#### Return Value
+## Return Value
 
 `true` if the collection contains the specified sequence, otherwise `false`.
 

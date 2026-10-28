@@ -24,7 +24,7 @@ class AVAssetWritingPlannerProgress
 @interface AVAssetWritingPlannerProgress : NSObject
 ```
 
-#### Overview
+## Overview
 
 This class provides per-track progress information as a percentage of the total duration completed. Progress can be queried by assemblyTrackID.
 

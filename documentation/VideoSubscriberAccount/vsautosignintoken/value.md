@@ -19,7 +19,7 @@ A string that represents a person’s account.
 @property (nonatomic, readonly, nullable) NSString * value;
 ```
 
-#### Discussion
+## Discussion
 
 Your app determines the contents of this property using a mechanism you determine fitting to identify the account. Only your app consumes this property and interprets its contents, for example, by ensuring it represents an account with a valid subscription.
 

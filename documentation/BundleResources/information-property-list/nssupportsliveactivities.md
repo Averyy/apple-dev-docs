@@ -15,7 +15,7 @@ A Boolean value that indicates whether an app supports Live Activities.
 - **Name**: `NSSupportsLiveActivities` (Supports Live Activities)
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 Set the corresponding value to `true` to enable your app to display live data on the Lock Screen and in the Dynamic Island. For more information, see [Displaying live data with Live Activities](../../ActivityKit/displaying-live-data-with-live-activities.md).
 

@@ -19,7 +19,7 @@ func registerUserInterfaceItemSearchHandler(_ handler: any NSUserInterfaceItemSe
 - (void) registerUserInterfaceItemSearchHandler:(id<NSUserInterfaceItemSearching>) handler;
 ```
 
-#### Discussion
+## Discussion
 
 You can register as many search handlers as you like. If you register the same instance more than once the subsequent registrations are ignored.
 

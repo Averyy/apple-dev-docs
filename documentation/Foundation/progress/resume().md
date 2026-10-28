@@ -25,7 +25,7 @@ func resume()
 - (void) resume;
 ```
 
-#### Discussion
+## Discussion
 
 This method invokes the block for [`resumingHandler`](./resuminghandler.md), if there is one, and ensures that any subsequent reads of the [`isPaused`](./ispaused.md) property return [`false`](../../Swift/false.md).
 

@@ -21,7 +21,7 @@ A key for accessing values in a transaction.
 protocol TransactionKey
 ```
 
-#### Overview
+## Overview
 
 You can create custom transaction values by extending the [`Transaction`](./transaction.md) structure with new properties. First declare a new transaction key type and specify a value for the required [`defaultValue`](./transactionkey/defaultvalue.md) property:
 

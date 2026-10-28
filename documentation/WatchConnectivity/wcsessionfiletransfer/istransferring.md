@@ -23,7 +23,7 @@ var isTransferring: Bool { get }
 @property (nonatomic, readonly, getter=isTransferring) BOOL transferring;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) if the file transfer is not yet complete or [`false`](../../Swift/false.md) if the transfer is complete.
 

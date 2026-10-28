@@ -25,7 +25,7 @@ class AVCaptureDeviceDirectionCoordinator
 
 - [Choosing a camera by the direction it faces](./choosing-a-camera-by-the-direction-it-faces.md)
 
-#### Overview
+## Overview
 
 A coordinator reports the direction each camera faces in relation to one view of your interface. It groups the cameras into the ones that face toward the person looking at that view, and the ones that face away. On a device with more than one display, a camera can change direction as the person opens, closes, or turns the device. The same camera captures that person in one configuration and the scene beyond the view in another. The [`position`](../AVFoundation/avcapturedevice/position-swift.property.md) property is a fixed characteristic of the camera hardware, and it doesn’t change as the device does. Don’t read the direction a camera faces from it, because two cameras that report different positions can face the same way. Only a coordinator reports direction, and reports it again each time it changes.
 

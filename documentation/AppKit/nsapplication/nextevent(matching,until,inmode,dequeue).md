@@ -19,11 +19,11 @@ func nextEvent(matching mask: NSEvent.EventTypeMask, until expiration: Date?, in
 - (NSEvent *) nextEventMatchingMask:(NSEventMask) mask untilDate:(NSDate *) expiration inMode:(NSRunLoopMode) mode dequeue:(BOOL) deqFlag;
 ```
 
-#### Return Value
+## Return Value
 
 The event object whose type matches one of the event types specified by the `mask` parameter.
 
-#### Discussion
+## Discussion
 
 You can use this method to short circuit normal event dispatching and get your own events. For example, you may want to do this in response to a mouse-down event in order to track the mouse while its button is down. (In such an example, you’d pass the appropriate event types for mouse-dragged and mouse-up events to the `mask` parameter and specify the `NSEventTrackingRunLoopMode` run loop mode). Events that don’t match one of the specified event types are left in the queue.
 

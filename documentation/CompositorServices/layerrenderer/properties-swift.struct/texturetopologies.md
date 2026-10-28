@@ -16,7 +16,7 @@ The texture topologies available for the layer.
 var textureTopologies: [TextureTopology] { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use the topology information to allocate the resources you need to manage your Metal data structures.
 

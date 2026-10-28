@@ -21,7 +21,7 @@ nonisolated
 func swipeActionsContainer() -> some View
 ```
 
-#### Discussion
+## Discussion
 
 Apply this modifier to a `ScrollView` or other container that holds rows using the [`swipeActions(edge:allowsFullSwipe:content:)`](./swipeactions%28edge,allowsfullswipe,content%29.md) modifier. The container ensures that:
 

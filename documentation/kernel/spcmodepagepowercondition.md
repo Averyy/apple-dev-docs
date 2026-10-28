@@ -13,7 +13,7 @@
 typedef struct SPCModePagePowerCondition SPCModePagePowerCondition;
 ```
 
-#### Discussion
+## Discussion
 
 Power Conditions Mode Page (PAGE CODE 0x1A) format.
 

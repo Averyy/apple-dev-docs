@@ -21,7 +21,7 @@ The angle of the observed horizon.
 let angle: Measurement<UnitAngle>
 ```
 
-#### Discussion
+## Discussion
 
 Use the angle to orient the image in an upright position and make the detected horizon level.
 

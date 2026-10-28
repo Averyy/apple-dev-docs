@@ -23,7 +23,7 @@ var isCinematicVideoCaptureSupported: Bool { get }
 @property (nonatomic, readonly, getter=isCinematicVideoCaptureSupported) BOOL cinematicVideoCaptureSupported;
 ```
 
-#### Discussion
+## Discussion
 
 With Cinematic Video capture, you get a simulated depth-of-field effect that keeps your subjects (people, pets, and more) in sharp focus while applying a pleasing blur to the background (or foreground). Depending on the focus mode (see [`AVCaptureDevice.CinematicVideoFocusMode`](../avcapturedevice/cinematicvideofocusmode.md) for detail), the camera either uses machine learning to automatically detect and focus on subjects in the scene, or it fixes focus on a subject until it exits the scene. Cinematic Videos can be played back and edited using the Cinematic framework.
 

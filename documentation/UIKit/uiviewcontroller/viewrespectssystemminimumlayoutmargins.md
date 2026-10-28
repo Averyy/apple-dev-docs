@@ -27,7 +27,7 @@ var viewRespectsSystemMinimumLayoutMargins: Bool { get set }
 
 - [Positioning content within layout margins](../positioning-content-within-layout-margins.md)
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), the root view’s layout margins are guaranteed to be no smaller than the values in the [`systemMinimumLayoutMargins`](./systemminimumlayoutmargins.md) property. The default value of this property is [`true`](../../Swift/true.md).
 

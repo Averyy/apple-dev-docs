@@ -26,7 +26,7 @@ optional func screenRecorder(_ screenRecorder: RPScreenRecorder, didStopRecordin
 - (void) screenRecorder:(RPScreenRecorder *) screenRecorder didStopRecordingWithPreviewViewController:(RPPreviewViewController *) previewViewController error:(NSError *) error;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called when recording stops due to an error or a change in recording availability. If any part of the stopped recording is available, an instance of [`RPPreviewViewController`](../rppreviewviewcontroller.md) is returned.
 

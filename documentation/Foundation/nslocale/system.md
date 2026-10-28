@@ -25,11 +25,11 @@ class var system: Locale { get }
 @property (class, copy, readonly) NSLocale * systemLocale;
 ```
 
-#### Return Value
+## Return Value
 
 The generic locale that contains fixed “backstop” settings that provide values for otherwise undefined keys.
 
-#### Discussion
+## Discussion
 
 Use the system locale when you don’t want any localizations. If you want localizations that match the user’s region settings, use the locale given by the [`current`](./current.md) or the [`autoupdatingCurrent`](./autoupdatingcurrent.md) property instead.
 

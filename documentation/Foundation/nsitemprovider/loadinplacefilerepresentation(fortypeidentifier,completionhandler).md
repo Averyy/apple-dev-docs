@@ -25,7 +25,7 @@ func loadInPlaceFileRepresentation(forTypeIdentifier typeIdentifier: String, com
 - (NSProgress *) loadInPlaceFileRepresentationForTypeIdentifier:(NSString *) typeIdentifier completionHandler:(void (^)(NSURL *url, BOOL isInPlace, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 The system sets the `isInPlace` parameter to [`true`](../../Swift/true.md) if the system successfully opened the file in place, or [`false`](../../Swift/false.md) if it made a local copy. In either case, you must access the returned [`URL`](../url.md) using an [`NSFileCoordinator`](../nsfilecoordinator.md) object.
 

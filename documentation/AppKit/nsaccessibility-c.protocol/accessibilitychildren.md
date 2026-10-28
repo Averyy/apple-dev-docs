@@ -15,7 +15,7 @@ The child accessibility elements in the accessibility hierarchy.
 @property (copy, nullable) NSArray * accessibilityChildren;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains references to child elements in the accessibility hierarchy. If you create an [`NSView`](../nsview.md) subclass, you don’t typically need to set this value. The system automatically populates the `accessibilityChildren` property with descendants in the view hierarchy that are also in the accessibility hierarchy. If you use an [`NSAccessibilityElement`](../nsaccessibilityelement-swift.class.md) subclass to represent an interface element that is not backed by a view, you can either set the `accessibilityChildren` property or you can call the [`accessibilityAddChildElement(_:)`](../nsaccessibilityelement-swift.class/accessibilityaddchildelement%28_%29.md) convenience method.
 

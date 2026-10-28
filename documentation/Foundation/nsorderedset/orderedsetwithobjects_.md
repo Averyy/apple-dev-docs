@@ -21,11 +21,11 @@ Creates and returns a ordered set containing the objects in a given argument lis
 + (instancetype) orderedSetWithObjects:(ObjectType) firstObj;
 ```
 
-#### Return Value
+## Return Value
 
 A new ordered set containing the objects in the argument list.
 
-#### Discussion
+## Discussion
 
 To add additional objects to the new set, pass a comma-separated list of trailing variadic arguments, ending with `nil`.
 

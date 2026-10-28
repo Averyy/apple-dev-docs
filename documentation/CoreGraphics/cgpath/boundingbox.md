@@ -25,7 +25,7 @@ var boundingBox: CGRect { get }
 extern CGRect CGPathGetBoundingBox(CGPathRef path);
 ```
 
-#### Discussion
+## Discussion
 
 The bounding box is the smallest rectangle completely enclosing all points in the path, including control points for Bézier and quadratic curves. If the path is empty, this value is [`CGRectNull`](../cgrectnull.md).
 

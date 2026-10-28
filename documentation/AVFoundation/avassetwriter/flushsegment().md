@@ -24,7 +24,7 @@ func flushSegment()
 - (void) flushSegment;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method only when the [`preferredOutputSegmentInterval`](./preferredoutputsegmentinterval.md) property value is [`indefinite`](../../CoreMedia/cmtime/indefinite.md).
 

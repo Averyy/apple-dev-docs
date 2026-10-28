@@ -24,7 +24,7 @@ init?(payload errorCorrectedPayload: Data, isCompact: Bool, layerCount: Int, dat
 - (instancetype) initWithPayload:(NSData *) errorCorrectedPayload isCompact:(BOOL) isCompact layerCount:(NSInteger) layerCount dataCodewordCount:(NSInteger) dataCodewordCount;
 ```
 
-#### Return Value
+## Return Value
 
  An initialized [`CIAztecCodeDescriptor`](../ciazteccodedescriptor.md) instance or `nil` if the parameters are invalid
 

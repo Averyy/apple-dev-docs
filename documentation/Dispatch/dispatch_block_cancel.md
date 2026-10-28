@@ -21,7 +21,7 @@ Cancels the specified dispatch block asynchronously.
 extern void dispatch_block_cancel(dispatch_block_t block);
 ```
 
-#### Discussion
+## Discussion
 
 Cancellation causes any future execution of the dispatch block to return immediately, but does not affect any execution of the block object that is already in progress.
 

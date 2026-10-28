@@ -23,7 +23,7 @@ var isEmpty: Bool { get }
 
 Available when `Key` conforms to `Hashable`.
 
-#### Discussion
+## Discussion
 
 Dictionaries are empty when created with an initializer or an empty dictionary literal.
 

@@ -17,7 +17,7 @@ Construct an array of zeros.
 func zeros(like array: MLXArray, dtype: DType? = nil, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 Example:
 
@@ -26,7 +26,7 @@ let array = MLXArray(0 ..< 12, [4, 3])
 let z = MLXArray.zeros(like: array)
 ```
 
-##### See Also
+### See Also
 
 - [Initialization](./initialization.md)
 - [`zeros(_:type:stream:)`](./zeros%28_,type,stream%29.md)

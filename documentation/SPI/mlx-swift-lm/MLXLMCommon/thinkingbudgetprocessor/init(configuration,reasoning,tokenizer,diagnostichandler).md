@@ -17,7 +17,7 @@ Creates a processor for direct use with a token iterator.
 init(configuration: ThinkingBudgetConfiguration, reasoning: ReasoningConfig, tokenizer: any Tokenizer, diagnosticHandler: (@Sendable (ThinkingBudgetDiagnostic) -> Void)? = nil) throws
 ```
 
-#### Discussion
+## Discussion
 
 Prefer [`applyingThinkingBudget(_:reasoning:tokenizer:diagnosticHandler:)`](../generationcomponents/applyingthinkingbudget%28_,reasoning,tokenizer,diagnostichandler%29.md) for `ChatSession` and the parameter-driven generation APIs. That path also validates that `maxTokens` leaves transition and answer headroom.
 

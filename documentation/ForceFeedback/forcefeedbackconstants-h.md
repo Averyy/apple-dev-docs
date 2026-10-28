@@ -5,7 +5,7 @@
 
 Constants used in the public interfaces to the Force Feedback implementation in macOS.
 
-#### Overview
+## Overview
 
 This header file contains the Effect type UUIDs, type definitions used in the API, force feedback constants and error values used by the API.
 

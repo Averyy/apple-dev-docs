@@ -25,7 +25,7 @@ func setTileVisibleFunctionTable(_ functionTable: (any MTLVisibleFunctionTable)?
 - (void) setTileVisibleFunctionTable:(id<MTLVisibleFunctionTable>) functionTable atBufferIndex:(NSUInteger) bufferIndex;
 ```
 
-#### Discussion
+## Discussion
 
 By default, the visible function table at each index is `nil`.
 

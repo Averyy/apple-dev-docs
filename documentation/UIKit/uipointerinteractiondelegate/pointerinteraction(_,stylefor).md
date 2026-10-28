@@ -22,7 +22,7 @@ optional func pointerInteraction(_ interaction: UIPointerInteraction, styleFor r
 - (UIPointerStyle *) pointerInteraction:(UIPointerInteraction *) interaction styleForRegion:(UIPointerRegion *) region;
 ```
 
-#### Return Value
+## Return Value
 
 A `UIPointerStyle` describing the desired hover effect or pointer appearance for the given `UIPointerRegion`.
 

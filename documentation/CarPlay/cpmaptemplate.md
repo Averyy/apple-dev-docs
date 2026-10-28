@@ -22,7 +22,7 @@ class CPMapTemplate
 @interface CPMapTemplate : CPTemplate
 ```
 
-#### Overview
+## Overview
 
 After CarPlay calls your scene delegate’s [`templateApplicationScene(_:didConnect:to:)`](./cptemplateapplicationscenedelegate/templateapplicationscene%28_,didconnect,to%29.md) method, create a map template and set it as the root template by calling [`setRootTemplate(_:animated:completion:)`](./cpinterfacecontroller/setroottemplate%28_,animated,completion%29.md) on the interface controller the method provides.
 

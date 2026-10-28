@@ -21,15 +21,15 @@ A format style that transforms a continuous input into a discrete output and pro
 protocol DiscreteFormatStyle<FormatInput, FormatOutput> : FormatStyle
 ```
 
-#### Overview
+## Overview
 
 Use this protocol to keep displays up to date if input changes continuously, or to iterate over all possible outputs of a [`FormatStyle`](./formatstyle.md) by obtaining the next discrete input in either direction from [`discreteInput(before:)`](./discreteformatstyle/discreteinput%28before%29.md) or [`discreteInput(after:)`](./discreteformatstyle/discreteinput%28after%29.md).
 
-#### Ordering of Inputs
+## Ordering of Inputs
 
 The ordering over [`FormatInput`](./formatstyle/formatinput.md) defined by [`discreteInput(before:)`](./discreteformatstyle/discreteinput%28before%29.md) / [`discreteInput(after:)`](./discreteformatstyle/discreteinput%28after%29.md) must be consistent between the two functions. If [`FormatInput`](./formatstyle/formatinput.md) conforms to the `Comparable` protocol, the format style’s ordering *should* be consistent with the canonical ordering defined via the `Comparable` conformance, i.e. it should hold that `discreteInput(before: x)! < x < discreteInput(after: x)!` where discrete inputs are not nil.
 
-#### Stepping through Discrete Input/Output Pairs
+## Stepping through Discrete Input/Output Pairs
 
 One use case of this protocol is enumerating all discrete inputs of a format style and their respective outputs.
 
@@ -69,7 +69,7 @@ extension DiscreteFormatStyle
 }
 ```
 
-#### Imperfect Discretization Boundaries
+## Imperfect Discretization Boundaries
 
 In some scenarios, a format style cannot provide precise discretization boundaries in a performant manner. In those cases it must override [`input(before:)`](./discreteformatstyle/input%28before%29.md) and [`input(after:)`](./discreteformatstyle/input%28after%29.md) to reflect that. For any discretization boundary `x` returned by either [`discreteInput(before:)`](./discreteformatstyle/discreteinput%28before%29.md) or [`discreteInput(after:)`](./discreteformatstyle/discreteinput%28after%29.md) based on the original input `y`, all values representable in the [`FormatInput`](./formatstyle/formatinput.md)strictly  between `x` and the return value of `input(after: x)` or `input(before: x)`, respectively, are not guaranteed to produce the same formatted output as `y`.
 

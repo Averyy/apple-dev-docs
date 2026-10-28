@@ -12,7 +12,7 @@ virtual IOReturn GetConfigurationDescriptor(
  UInt32len);
 ```
 
-#### Overview
+## Overview
 
 Copy the specified amount of data for a configuration into the suppled buffer.
 

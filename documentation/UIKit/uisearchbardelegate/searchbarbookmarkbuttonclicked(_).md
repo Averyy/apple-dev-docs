@@ -22,7 +22,7 @@ optional func searchBarBookmarkButtonClicked(_ searchBar: UISearchBar)
 - (void) searchBarBookmarkButtonClicked:(UISearchBar *) searchBar;
 ```
 
-#### Discussion
+## Discussion
 
 There is no automatic bookmark support provided by the search bar. It’s the application’s responsibility to implement this method to perform some action if the bookmark button is tapped by the user.
 

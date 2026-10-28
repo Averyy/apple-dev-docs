@@ -32,11 +32,11 @@ func ABMultiValueCopyLabelAtIndex(_ multiValue: ABMultiValueRef!, _ index: CFInd
 extern CFStringRefABMultiValueCopyLabelAtIndex(ABMultiValueRef multiValue, CFIndex index);
 ```
 
-#### Return Value
+## Return Value
 
 The label at `index` in `multiValue`.You are responsible for releasing this object.
 
-#### Discussion
+## Discussion
 
 Each value in a multi-value list must be the same type, andhas an associated pre-defined or user-defined label, and uniqueidentifier. Use the [`ABMultiValueCopyIdentifierAtIndex(_:_:)`](./abmultivaluecopyidentifieratindex%28_,_%29.md) functionto get a identifier, and the [`ABMultiValueCopyValueAtIndex(_:_:)`](./abmultivaluecopyvalueatindex%28_,_%29.md)functionto get a value.
 

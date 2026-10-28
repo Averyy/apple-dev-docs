@@ -20,11 +20,11 @@ var appleEventClassCode: FourCharCode { get }
 @property (readonly) FourCharCode appleEventClassCode;
 ```
 
-#### Return Value
+## Return Value
 
 The Apple event code associated with the receiver’s command. This is the primary code used to identify the command in Apple events.
 
-#### Discussion
+## Discussion
 
 In an Apple event that specifies a script command, two four character codes—the event class and event ID—together identify the command. You use this method to obtain the event class. You use [`appleEventCode`](./appleeventcode.md) to obtain the event ID.
 

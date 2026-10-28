@@ -22,7 +22,7 @@ nonisolated
 init<X, Y>(x: PlottableValue<X>, y: PlottableValue<Y>) where X : Plottable, Y : Plottable
 ```
 
-##### Discussion
+### Discussion
 
 Use this initializer to plot one property with x and another property with y:
 

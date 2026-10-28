@@ -25,11 +25,11 @@ class var accessInstanceVariablesDirectly: Bool { get }
 @property (class, readonly) BOOL accessInstanceVariablesDirectly;
 ```
 
-#### Return Value
+## Return Value
 
 [`YES`](../yes.md) if the key-value coding methods should access the corresponding instance variable directly on finding no accessor method for a property, otherwise [`NO`](../no.md).
 
-#### Discussion
+## Discussion
 
 The default returns [`YES`](../yes.md). Subclasses can override it to return [`NO`](../no.md), in which case the key-value coding methods won’t access instance variables.
 

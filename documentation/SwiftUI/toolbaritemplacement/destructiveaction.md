@@ -21,7 +21,7 @@ A placement for destructive actions in a modal interface.
 static let destructiveAction: ToolbarItemPlacement
 ```
 
-#### Discussion
+## Discussion
 
 Destructive actions represent the opposite of a confirmation action. For example, a button labeled “Don’t Save” that allows the user to discard unsaved changes to a document before quitting.
 

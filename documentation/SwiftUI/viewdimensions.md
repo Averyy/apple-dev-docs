@@ -25,7 +25,7 @@ struct ViewDimensions
 
 - [Aligning views within a stack](./aligning-views-within-a-stack.md)
 
-#### Overview
+## Overview
 
 This structure contains the size and alignment guides of a view. You receive an instance of this structure to use in a variety of layout calculations, like when you:
 
@@ -33,7 +33,7 @@ This structure contains the size and alignment guides of a view. You receive an 
 - Modify an alignment guide on a view; see [`alignmentGuide(_:computeValue:)`](./view/alignmentguide%28_,computevalue%29.md).
 - Ask for the dimensions of a subview of a custom view layout; see [`dimensions(in:)`](./layoutsubview/dimensions%28in%29.md).
 
-##### Custom alignment guides
+### Custom alignment guides
 
 You receive an instance of this structure as the `context` parameter to the [`defaultValue(in:)`](./alignmentid/defaultvalue%28in%29.md) method that you implement to produce the default offset for an alignment guide, or as the first argument to the closure you provide to the [`alignmentGuide(_:computeValue:)`](./view/alignmentguide%28_,computevalue%29.md) view modifier to override the default calculation for an alignment guide. In both cases you can use the instance, if helpful, to calculate the offset for the guide. For example, you could compute a default offset for a custom [`VerticalAlignment`](./verticalalignment.md) as a fraction of the view’s [`height`](./viewdimensions/height.md):
 
@@ -69,7 +69,7 @@ The example above indents the second text view because the subtraction moves the
 
 ![A screenshot of two strings. The first says Default and the second,](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/ViewDimensions-1-iOS@2x.png)
 
-##### Layout direction
+### Layout direction
 
 The discussion above describes a left-to-right language environment, but you don’t change your guide calculation to operate in a right-to-left environment. SwiftUI moves the view’s origin from the left to the right side of the view and inverts the positive x direction. As a result, the existing calculation produces the same effect, but in the opposite direction.
 

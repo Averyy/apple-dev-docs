@@ -23,7 +23,7 @@ var interactionActivityTrackingBaseName: String? { get set }
 @property (nonatomic, copy, nullable) NSString * interactionActivityTrackingBaseName;
 ```
 
-#### Discussion
+## Discussion
 
 To help you investigate perfomance issues in your app, UIKit annotates significant user interactions with signpost messages. It creates activities that span the duration of the interaction and sets one of the [`ProcessInfo.ActivityOptions`](../../Foundation/processinfo/activityoptions.md) for tracking: [`animationTrackingEnabled`](../../Foundation/processinfo/activityoptions/animationtrackingenabled.md) or [`trackingEnabled`](../../Foundation/processinfo/activityoptions/trackingenabled.md).
 

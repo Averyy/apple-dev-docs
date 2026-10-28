@@ -22,7 +22,7 @@ var activeVideoStabilizationMode: AVCaptureVideoStabilizationMode { get }
 @property (nonatomic, readonly) AVCaptureVideoStabilizationMode activeVideoStabilizationMode;
 ```
 
-#### Discussion
+## Discussion
 
 The property only applies to a video connection, and it explicitly indicates whether it’s using stabilization, which means the value is never [`AVCaptureVideoStabilizationMode.auto`](../avcapturevideostabilizationmode/auto.md).
 

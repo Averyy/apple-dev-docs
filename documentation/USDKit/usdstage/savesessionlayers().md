@@ -20,7 +20,7 @@ Saves the stage’s changed session layers to their sources.
 func saveSessionLayers() throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: An error if a layer cannot be saved. Some session layers may already have been saved when the failure occurs.
 

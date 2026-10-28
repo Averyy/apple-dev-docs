@@ -21,17 +21,17 @@ func CGScreenRegisterMoveCallback(_ callback: CGScreenUpdateMoveCallback, _ user
 extern CGError CGScreenRegisterMoveCallback(CGScreenUpdateMoveCallback callback, void *userInfo);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See `Core Graphics Data Types and Constants`.
 
-#### Discussion
+## Discussion
 
 A callback function may be registered multiple times with different user-defined data pointers, resulting in multiple registration entries.  For each registration, when notification is no longer needed, you should remove the registration by calling the function [`CGScreenUnregisterMoveCallback(_:_:)`](./cgscreenunregistermovecallback%28_,_%29.md).
 
 The callback function you register is invoked only if your application has an active event loop. The callback is invoked in the same thread of execution that is processing events within your application.
 
-##### Special Considerations
+### Special Considerations
 
 This function is implemented in macOS 10.4.3 and later.
 

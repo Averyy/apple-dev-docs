@@ -22,7 +22,7 @@ class var isAvailable: Bool { get }
 
 - [Scanning data with the camera](../scanning-data-with-the-camera.md)
 
-#### Discussion
+## Discussion
 
 For example, this property may be `false` if a person has Screen Time restrictions.
 

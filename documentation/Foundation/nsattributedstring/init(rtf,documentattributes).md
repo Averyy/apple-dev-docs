@@ -23,11 +23,11 @@ init?(rtf data: Data, documentAttributes dict: AutoreleasingUnsafeMutablePointer
 - (instancetype) initWithRTF:(NSData *) data documentAttributes:(NSDictionary<NSString *,id> **) dict;
 ```
 
-#### Return Value
+## Return Value
 
 Returns an initialized attributed string object, or `nil` if the method can’t decode the data.
 
-#### Discussion
+## Discussion
 
 Also returns by reference in `dict` a dictionary containing document-level attributes described in [`NSAttributedString.DocumentAttributeKey`](./documentattributekey.md). `dict` may be `NULL`, in which case no document attributes are returned. Returns an initialized object, or `nil` if `data` can’t be decoded.
 

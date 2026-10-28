@@ -25,7 +25,7 @@ var errSSLATSViolation: OSStatus { get }
 errSSLATSViolation
 ```
 
-#### Overview
+## Overview
 
 For more information about App Transport Security (ATS) compliance, see [Preventing Insecure Network Connections](./preventing-insecure-network-connections.md).
 

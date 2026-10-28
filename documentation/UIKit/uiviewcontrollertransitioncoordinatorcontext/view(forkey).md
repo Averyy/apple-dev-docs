@@ -24,7 +24,7 @@ func view(forKey key: UITransitionContextViewKey) -> UIView?
 - (UIView *) viewForKey:(UITransitionContextViewKey) key;
 ```
 
-#### Return Value
+## Return Value
 
 The view object for the specified key or `nil` if the view could not be found.
 

@@ -21,7 +21,7 @@ Creates a headroom-adaptive tone mapping.
 init(baselineHeadroomStops: Float, method: ColorSyncProfile.HeadroomAdaptiveGainCurve.ColorVolumeTransform.ToneMapping.Method = .referenceWhiteBased) throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: [`ColorSyncProfile.HeadroomAdaptiveGainCurve.Error.negativeBaselineHeadroom(_:)`](../../error/negativebaselineheadroom%28_%29.md) if `baselineHeadroomStops` is negative.
 

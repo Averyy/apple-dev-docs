@@ -9,7 +9,7 @@ Add a new ad creative that defines the visual presentation and tap destination f
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Discussion
+## Discussion
 
 This endpoint creates an ad creative that defines the visual presentation of an ad. It contains the content, branding, and destination for a specific ad creative type. Ad creatives are independent of campaigns and ad groups. One ad creative can be linked to multiple ads across different campaigns.
 
@@ -19,13 +19,13 @@ This endpoint creates an ad creative that defines the visual presentation of an 
 - After creation, `systemStatus` reflects the review state.
 - The response returns the ad creative identifier in the `result.id` field. This value is what you supply as `creativeId` in the body of a [`Create an Ad`](./post-ads.md) request.
 
-#### Payload Examples
+## Payload Examples
 
 **Custom Product Page**:
 
 Create an ad creative linked to a custom product page variant from App Store Connect.
 
-##### Request
+### Request
 
 Creates a `CUSTOM_PRODUCT_PAGE` ad creative that sends users to a specific product page variant, identified by `productPageId`, on the app’s App Store listing.
 
@@ -46,7 +46,7 @@ POST /v1/creatives
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {
@@ -76,7 +76,7 @@ POST /v1/creatives
 
 Create an ad creative linked to the app’s default App Store listing. You don’t need a `productPageId`.
 
-##### Request
+### Request
 
 Creates a `DEFAULT_PRODUCT_PAGE` ad creative that links to the app’s standard App Store listing using only the `adamId`, with no custom product page specified.
 
@@ -96,7 +96,7 @@ POST /v1/creatives
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {
@@ -126,7 +126,7 @@ POST /v1/creatives
 
 Create an Apple Maps ad creative with localized promo text. The `creativeSpec` carries the brand content. The `destination` field is the post-tap Maps place card.
 
-##### Request
+### Request
 
 Creates a `LOCAL_ADS_SEARCH_CREATIVE` with localized promo text and brand metadata in `creativeSpec`, routing taps to the brand’s Maps place card via `LOCAL_ADS_PLACECARD` destination.
 
@@ -157,7 +157,7 @@ POST /v1/creatives
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {

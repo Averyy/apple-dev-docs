@@ -22,11 +22,11 @@ func CVDisplayLinkGetNominalOutputVideoRefreshPeriod(_ displayLink: CVDisplayLin
 extern CVTime CVDisplayLinkGetNominalOutputVideoRefreshPeriod(CVDisplayLinkRef displayLink);
 ```
 
-#### Return Value
+## Return Value
 
 A `CVTime` structure that holds the nominal refresh period. This value is indefinite if an invalid display link was specified.
 
-#### Discussion
+## Discussion
 
 This call allows one to retrieve the device’s ideal refresh period.   For example, an NTSC output device might report 1001/60000 to represent the exact NTSC vertical refresh rate.
 

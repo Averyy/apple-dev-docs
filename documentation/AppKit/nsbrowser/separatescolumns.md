@@ -19,7 +19,7 @@ var separatesColumns: Bool { get set }
 @property BOOL separatesColumns;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), the browser’s columns are separated by bezeled borders.
 

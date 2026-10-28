@@ -25,7 +25,7 @@ static let leading: HorizontalAlignment
 
 - [Building layouts with stack views](../building-layouts-with-stack-views.md)
 
-#### Discussion
+## Discussion
 
 Use this guide to align the leading edges of views. For a device that uses a left-to-right language, the leading edge is on the left:
 

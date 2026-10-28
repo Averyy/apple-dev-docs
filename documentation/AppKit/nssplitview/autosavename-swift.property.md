@@ -19,7 +19,7 @@ var autosaveName: NSSplitView.AutosaveName? { get set }
 @property (copy, nullable) NSSplitViewAutosaveName autosaveName;
 ```
 
-#### Discussion
+## Discussion
 
 If this property’s value is `nil` or empty, autosaving doesn’t occur.
 

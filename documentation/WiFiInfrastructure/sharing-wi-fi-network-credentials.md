@@ -12,7 +12,7 @@ Use Wi-Fi Infrastructure to automatically share Wi-Fi network credentials after 
 - Mac Catalyst 26.2+
 - Xcode 26.2+
 
-#### Overview
+## Overview
 
 This sample project uses two app targets to demonstrate using [AccessorySetupKit](../AccessorySetupKit/AccessorySetupKit.md) with [Wi-Fi Infrastructure](./WiFiInfrastructure.md) to share Wi-Fi credentials with a Bluetooth accessory. The `ASKSampleWiFiAccessory` app target simulates a Bluetooth accessory that can receive Wi-Fi credentials, while the `WiFiNetworkSharingSample` app target demonstrates how to pair with the accessory and share network information.
 
@@ -20,7 +20,7 @@ The `ASKSampleWiFiAccessory` target simulates a Bluetooth dice accessory that ad
 
 The `WiFiNetworkSharingSample` target uses AccessorySetupKit to discover and set up a Bluetooth dice accessory. After establishing the Bluetooth connection, Wi-Fi Infrastructure automatically requests authorization to share the device’s Wi-Fi network credentials with the Bluetooth accessory over the secure Bluetooth connection. After the Bluetooth accessory is connected to the Wi-Fi network, you can receive dice roll results from the accessory until you disconnect or remove authorization.
 
-##### Configure the sample code project
+### Configure the sample code project
 
 Because this sample app relies on using Bluetooth to connect with the accessory functionality, you can’t run this sample in Simulator — you’ll need to run it on a device. To run this sample, you’ll need the following:
 

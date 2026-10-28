@@ -23,7 +23,7 @@ init(displayName: String?, handles: [String], handleIdentifier: String)
 - (instancetype) initWithDisplayName:(NSString *) displayName handles:(NSArray<NSString *> *) handles handleIdentifier:(NSString *) handleIdentifier;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized person object that represents a user’s contact.
 

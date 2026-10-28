@@ -24,11 +24,11 @@ class func successes(with resolvedMediaItems: [INMediaItem]) -> [INPlayMediaMedi
 + (NSArray<INPlayMediaMediaItemResolutionResult *> *) successesWithResolvedMediaItems:(NSArray<INMediaItem *> *) resolvedMediaItems;
 ```
 
-#### Return Value
+## Return Value
 
 An array of new [`INPlayMediaMediaItemResolutionResult`](../inplaymediamediaitemresolutionresult.md) objects.
 
-#### Discussion
+## Discussion
 
 When the system calls [`resolveMediaItems(for:with:)`](../inplaymediaintenthandling/resolvemediaitems%28for,with%29.md), if your app can identify relevant media for the intent, use this method to create results for each of those media items. If your app isn’t completely sure of the match, provide a few items with the best match first. The system can start playing the first item and offer the alternatives in case the user wants to play one of them instead.
 

@@ -28,7 +28,7 @@ func present() async -> Bool
 - (void) presentWithCompletion:(void (^)(BOOL success)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 You are responsible for dismissing the payment sheet.
 

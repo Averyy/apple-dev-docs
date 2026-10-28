@@ -42,7 +42,7 @@ string UserRole
 - [Creating auto-renewable subscription groups](./creating-auto-renewable-subscription-groups.md)
 - [Managing In-App Purchases](./managing-in-app-purchases.md)
 
-#### Discussion
+## Discussion
 
 For more information about roles and permissions, see [Program Roles](https://developer.apple.com/support/roles/).
 

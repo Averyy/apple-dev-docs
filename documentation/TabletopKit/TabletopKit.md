@@ -9,7 +9,7 @@ Create multiplayer spatial games on a virtual table surface and use FaceTime to 
 **Availability**:
 - visionOS 2.0+
 
-#### Overview
+## Overview
 
 TabletopKit helps you create a spatial multiplayer game on a table surface for visionOS, where players join your game using SharePlay. TabletopKit provides support for designing your game, implementing rules, rendering effects, and syncing multiplayer game state.
 

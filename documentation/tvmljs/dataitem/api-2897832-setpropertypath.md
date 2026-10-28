@@ -18,7 +18,7 @@ void setPropertyPath(
 );
 ```
 
-#### Discussion
+## Discussion
 
 Set the property path to associate the data item objects contained in the `value` parameter with a section element. [Listing 1](./api-2897832-setpropertypath.md#2902804) shows an example of data item objects contained in the `newItems` object added to the section that binds the `images` path; for example `<section binding="items:{images};" />`.
 

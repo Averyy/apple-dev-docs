@@ -23,7 +23,7 @@ enum Descriptor
 
 - [Integrating on-device AI models in your app with Core AI](../integrating-on-device-ai-models-in-your-app-with-core-ai.md)
 
-#### Overview
+## Overview
 
 You obtain descriptors from [`InferenceFunctionDescriptor`](../inferencefunctiondescriptor.md) to inspect what kind of value a function expects for each input or output.
 

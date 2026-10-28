@@ -16,7 +16,7 @@ A structure that defines and positions the content of an expanded Live Activity 
 struct DynamicIslandExpandedRegion<Content> where Content : View
 ```
 
-#### Overview
+## Overview
 
 The expanded presentation of a Live Activity in the Dynamic Island consists of four regions:
 

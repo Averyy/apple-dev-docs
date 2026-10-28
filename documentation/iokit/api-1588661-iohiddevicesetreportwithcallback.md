@@ -16,11 +16,11 @@ Sends a report to the device.
 IOReturn IOHIDDeviceSetReportWithCallback(IOHIDDeviceRef device, IOHIDReportType reportType, CFIndex reportID, const uint8_t *report, CFIndex reportLength, CFTimeInterval timeout, IOHIDReportCallback callback, void *context);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if successful.
 
-#### Discussion
+## Discussion
 
 This method behaves asynchronously and will block until the report has been issued to the device. It is only relevent for either output or feature type reports.
 

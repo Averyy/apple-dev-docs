@@ -29,7 +29,7 @@ var texture: (any MTLTexture)? { get set }
 - [Setting load and store actions](../setting-load-and-store-actions.md)
 - [Choosing a resource storage mode for Apple GPUs](../choosing-a-resource-storage-mode-for-apple-gpus.md)
 
-#### Discussion
+## Discussion
 
 You need to set the attachment’s `texture` property, choosing an appropriate pixel format for the texture.
 

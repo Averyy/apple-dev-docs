@@ -24,7 +24,7 @@ func selectionRects(for range: UITextRange) -> [UITextSelectionRect]
 - (NSArray<UITextSelectionRect *> *) selectionRectsForRange:(UITextRange *) range;
 ```
 
-#### Return Value
+## Return Value
 
 An array of [`UITextSelectionRect`](../uitextselectionrect.md) objects that encompass the selection.
 

@@ -16,4 +16,4 @@ init(transmitBandWidth: BluetoothHCITransmitBandwidth, receiveBandWidth: Bluetoo
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/iobluetooth/bluetoothenhancedsynchronousconnectioninfo/init(transmitbandwidth:receivebandwidth:transmitcodingformat:receivecodingformat:transmitcodecframesize:receivecodecframesize:inputbandwidth:outputbandwidth:inputcodingformat:outputcodingformat:inputcodeddatasize:outputcodeddatasize:inputpc-5g3ma)*
+*[View on Apple Developer](https://developer.apple.com/documentation/iobluetooth/bluetoothenhancedsynchronousconnectioninfo/init%28transmitbandwidth:receivebandwidth:transmitcodingformat:receivecodingformat:transmitcodecframesize:receivecodecframesize:inputbandwidth:outputbandwidth:inputcodingformat:outputcodingformat:inputcodeddatasize:outputcodeddatasize:inputpc-5g3ma)*

@@ -21,7 +21,7 @@ class AVCaptureFraming
 @interface AVCaptureFraming : NSObject
 ```
 
-#### Overview
+## Overview
 
 An [`AVCaptureSmartFramingMonitor`](./avcapturesmartframingmonitor.md) provides framing recommendations using this object.
 

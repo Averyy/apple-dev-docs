@@ -19,7 +19,7 @@ init?(linkName: FSFileName, linkAttributes: FSItem.Attributes, directoryAttribut
 - (instancetype) initWithLinkName:(FSFileName *) linkName linkAttributes:(FSItemAttributes *) linkAttributes directoryAttributes:(FSItemAttributes *) directoryAttributes freeSpace:(FSFreeSpace *) freeSpace;
 ```
 
-#### Return Value
+## Return Value
 
 A populated result instance, or `nil` if validation fails.
 

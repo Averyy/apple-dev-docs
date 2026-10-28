@@ -21,7 +21,7 @@ Units relative to Mach absolute time value.
 OS_CLOCK_MACH_ABSOLUTE_TIME
 ```
 
-#### Discussion
+## Discussion
 
 Specify a time relative to the value that the `mach_current_time` function returns.
 

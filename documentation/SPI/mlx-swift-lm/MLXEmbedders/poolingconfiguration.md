@@ -17,7 +17,7 @@ Configuration for the `Pooling` layer, typically loaded from a JSON file.
 struct PoolingConfiguration
 ```
 
-#### Overview
+## Overview
 
 This struct defines which pooling strategy to apply and the output dimensions, mapping keys from the standard `sentence-transformers` configuration format.
 

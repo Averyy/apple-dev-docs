@@ -25,7 +25,7 @@ func CFStreamCreateBoundPair(_ alloc: CFAllocator!, _ readStream: UnsafeMutableP
 extern void CFStreamCreateBoundPair(CFAllocatorRef alloc, CFReadStreamRef*readStream, CFWriteStreamRef*writeStream, CFIndex transferBufferSize);
 ```
 
-#### Discussion
+## Discussion
 
 The created streams are bound to one another, such that any data written to `writeStream` is received by `readStream`.
 

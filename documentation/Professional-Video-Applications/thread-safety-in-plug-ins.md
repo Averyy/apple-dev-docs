@@ -5,13 +5,13 @@
 
 Learn about reentrancy for plug-ins and best practices to make them thread safe.
 
-#### Overview
+## Overview
 
 In FxPlug 4, the framework handles requests from the host application on a serial queue on a background thread of the plug-in. Many requests move to a concurrent queue for processing by your plug-in. This avoids blocking incoming requests from other threads. It also allows processing of requests sent asynchronously from the same thread in the host application.
 
 This background processing means you need to be careful to not read from and write to the same objects or memory on different threads at the same time. This includes your plug-in’s instance variables and properties, and those of any other objects you access during your plug-in’s lifetime.
 
-##### Understand reentrancy in Final Cut Pro and Motion
+### Understand reentrancy in Final Cut Pro and Motion
 
 The rendering systems in Final Cut Pro and Motion generally work in two phases:
 
@@ -22,19 +22,19 @@ These two phases happen on different threads in the host application so they can
 
 For example, on a dual GPU system, the host may be building the graphs for frames `n` and `n+1` while rendering the graphs from frames `n-2` and `n-1`. This concurrent approach means the host does more work at once, fully utilizing the CPUs and GPUs when possible.
 
-##### Use best practices to make your plug-ins reentrant
+### Use best practices to make your plug-ins reentrant
 
 FxPlug 3 and earlier also called your plug-ins on multiple threads at the same time. Using  a property, you turned this functionality off and required serial processing from the host. That property does nothing in FxPlug 4, so if you need to make non-reentrant code reentrant, the following strategies may help.
 
-###### Use Immutable Data
+#### Use Immutable Data
 
 Data structures that you canʼt modify are safe to use on multiple threads at the same time, if you don’t delete them on any thread while in use by another. Because you can’t update them, no thread receives old or partially changed data when you access it. Using the immutable forms of the standard Cocoa containers, such as [`NSArray`](../Foundation/nsarray.md) and [`NSDictionary`](../Foundation/nsdictionary.md), instead of the mutable forms, such as [`NSMutableArray`](../Foundation/nsmutablearray.md) and [`NSMutableDictionary`](../Foundation/nsmutabledictionary.md), is a good first step. You must also ensure that any classes you design have immutable variants that you use across threads.
 
-###### Use a New Copy
+#### Use a New Copy
 
 If you need to mutate data in your plug-in, you can safely do so by having each thread create its own copy of the data it needs. Copy an existing immutable structure into a mutable one locally, or create all instances as you need them and then dispose of them when youʼre done. This approach ensures you never share them between threads. Making copies or creating objects as you need them may have performance implications if the objects are large or you need to perform a lot of computation to create them.
 
-###### Use Synchronization Primitives
+#### Use Synchronization Primitives
 
 If it’s not possible to use immutable data or to always use a copy of the data you want to work with, you can synchronize access to your data between threads using synchronization primitives like locks, mutexes, semaphores, and condition variables. Each of these objects has its own behaviors, but in general they allow only one thread to access the data at a time, or they keep track of how many times the system accesses the data before allowing processing to continue. For example, you can use an [`NSLock`](../Foundation/nslock.md) object around your calls that access shared data. In the following code from the `FxShape` example, `lastPositionLock` is an `NSLock` used in `FxShapeOSC` that guards access to the `lastObjectPosition`:
 

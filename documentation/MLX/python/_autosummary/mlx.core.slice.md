@@ -6,30 +6,33 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.sl
 
 # mlx.core.slice
 
-**slice(*a: array*, *start_indices: array*, *axes: Sequence[int]*, *slice_size: Sequence[int]*, ***, *stream: StreamOrDevice = None*) → [array](mlx.core.array.md#mlx.core.array)**
-: Extract a sub-array from the input array.
+```python
+slice(a: array, start_indices: array, axes: Sequence[int], slice_size: Sequence[int], *, stream: StreamOrDevice = None) → array
+```
 
-Parameters:
+Extract a sub-array from the input array.
 
-**a** ([array](mlx.core.array.md#mlx.core.array)) – Input array
-**start_indices** ([array](mlx.core.array.md#mlx.core.array)) – The index location to start the slice at.
-**axes** ([tuple](https://docs.python.org/3/builtins/stdtypes.html#tuple)*(*[int](https://docs.python.org/3/builtins/functions.html#int)*)*) – The axes corresponding to the indices in `start_indices`.
-**slice_size** ([tuple](https://docs.python.org/3/builtins/stdtypes.html#tuple)*(*[int](https://docs.python.org/3/builtins/functions.html#int)*)*) – The size of the slice.
+**Parameters:**
 
-Returns:
-The sliced output array.
+- **a** ([array](mlx.core.array.md#mlx.core.array)) – Input array
+- **start_indices** ([array](mlx.core.array.md#mlx.core.array)) – The index location to start the slice at.
+- **axes** ([tuple](https://docs.python.org/3/builtins/stdtypes.html#tuple)([int](https://docs.python.org/3/builtins/functions.html#int))) – The axes corresponding to the indices in `start_indices`.
+- **slice_size** ([tuple](https://docs.python.org/3/builtins/stdtypes.html#tuple)([int](https://docs.python.org/3/builtins/functions.html#int))) – The size of the slice.
 
-Return type:
-[array](mlx.core.array.md#mlx.core.array)
+**Returns:**
+: The sliced output array.
+
+**Return type:**
+: [array](mlx.core.array.md#mlx.core.array)
 
 Example
 
-  ```
-  >>> a = mx.array([[1, 2, 3], [4, 5, 6]])
-  >>> mx.slice(a, start_indices=mx.array(1), axes=(0,), slice_size=(1, 2))
-  array([[4, 5]], dtype=int32)
-  >>>
-  >>> mx.slice(a, start_indices=mx.array(1), axes=(1,), slice_size=(2, 1))
-  array([[2],
-         [5]], dtype=int32)
-  ```
+```
+>>> a = mx.array([[1, 2, 3], [4, 5, 6]])
+>>> mx.slice(a, start_indices=mx.array(1), axes=(0,), slice_size=(1, 2))
+array([[4, 5]], dtype=int32)
+>>>
+>>> mx.slice(a, start_indices=mx.array(1), axes=(1,), slice_size=(2, 1))
+array([[2],
+       [5]], dtype=int32)
+```

@@ -20,11 +20,11 @@ Creates a new view of the texture, reinterpreting a subset of its data using a d
 - (id<MTLTexture>) newTextureViewWithPixelFormat:(MTLPixelFormat) pixelFormat textureType:(MTLTextureType) textureType levels:(NSRange) levelRange slices:(NSRange) sliceRange swizzle:(MTLTextureSwizzleChannels) swizzle;
 ```
 
-#### Return Value
+## Return Value
 
 A new texture view.
 
-#### Discussion
+## Discussion
 
 For more information on texture views, see [`newTextureViewWithPixelFormat:textureType:levels:slices:`](./newtextureviewwithpixelformat_texturetype_levels_slices_.md).
 

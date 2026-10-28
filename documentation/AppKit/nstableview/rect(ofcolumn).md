@@ -19,11 +19,11 @@ func rect(ofColumn column: Int) -> NSRect
 - (NSRect) rectOfColumn:(NSInteger) column;
 ```
 
-#### Return Value
+## Return Value
 
 The rectangle containing the column at `columnIndex`. Returns `NSZeroRect` if `columnIndex` lies outside the range of valid column indexes for the table view.
 
-#### Discussion
+## Discussion
 
 You can use this method to update a single column more efficiently than sending the table view a [`reloadData()`](./reloaddata%28%29.md) message.
 

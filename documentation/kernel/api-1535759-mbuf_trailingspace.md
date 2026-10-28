@@ -13,11 +13,11 @@
 size_t mbuf_trailingspace(const mbuf_t mbuf);
 ```
 
-#### Return Value
+## Return Value
 
 The number of unused bytes following the current data.
 
-#### Discussion
+## Discussion
 
 Determines the space available in the mbuf following the current data.
 

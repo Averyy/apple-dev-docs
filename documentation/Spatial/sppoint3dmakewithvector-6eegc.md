@@ -19,11 +19,11 @@
 static SPPoint3D SPPoint3DMakeWithVector(simd_double3 xyz);
 ```
 
-#### Return Value
+## Return Value
 
 A new point.
 
-#### Discussion
+## Discussion
 
 Creates a point with coordinates specified as a 3-element SIMD vector.
 

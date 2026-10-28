@@ -20,7 +20,7 @@ static var estimatedVerticalPlane: ARHitTestResult.ResultType { get }
 ARHitTestResultTypeEstimatedVerticalPlane
 ```
 
-#### Discussion
+## Discussion
 
 ARKit provides two ways to locate real-world flat surfaces in a scene. *Plane detection* (enabled with [`planeDetection`](../../arworldtrackingconfiguration/planedetection-swift.property.md) on your session configuration) is an ongoing process, continuously analyzing the scene to accurately map the position and extent of any planes in view. Because plane detection takes time, you can fall back to *plane estimation* to get an instant, but less accurate, indication of whether a 2D point in the camera image corresponds to a real-world flat surface.
 

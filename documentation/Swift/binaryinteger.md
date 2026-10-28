@@ -21,15 +21,15 @@ An integer type with a binary representation.
 protocol BinaryInteger : CustomStringConvertible, Hashable, Numeric, Strideable where Self.Magnitude : BinaryInteger, Self.Magnitude == Self.Magnitude.Magnitude
 ```
 
-#### Overview
+## Overview
 
 The `BinaryInteger` protocol is the basis for all the integer types provided by the standard library. All of the standard library’s integer types, such as `Int` and `UInt32`, conform to `BinaryInteger`.
 
-### Converting Between Numeric Types
+## Converting Between Numeric Types
 
 You can create new instances of a type that conforms to the `BinaryInteger` protocol from a floating-point number or another binary integer of any type. The `BinaryInteger` protocol provides initializers for four different kinds of conversion.
 
-#### Range-Checked Conversion
+## Range-Checked Conversion
 
 You use the default `init(_:)` initializer to create a new instance when you’re sure that the value passed is representable in the new type. For example, an instance of `Int16` can represent the value `500`, so the first conversion in the code sample below succeeds. That same value is too large to represent as an `Int8` instance, so the second conversion fails, triggering a runtime error.
 
@@ -52,7 +52,7 @@ let f = Int8(128.25)
 // Error: Double value cannot be converted...
 ```
 
-#### Exact Conversion
+## Exact Conversion
 
 Use the `init?(exactly:)` initializer to create a new instance after checking whether the passed value is representable. Instead of trapping on out-of-range values, using the failable `init?(exactly:)` initializer results in `nil`.
 
@@ -77,7 +77,7 @@ let g = Int8(exactly: 500.0)      // integral value, nonrepresentable
 // g == nil
 ```
 
-#### Clamping Conversion
+## Clamping Conversion
 
 Use the `init(clamping:)` initializer to create a new instance of a binary integer type where out-of-range values are clamped to the representable range of the type. For a type `T`, the resulting value is in the range `T.min...T.max`.
 
@@ -92,7 +92,7 @@ let z = UInt8(clamping: -500)
 // z == 0
 ```
 
-#### Bit Pattern Conversion
+## Bit Pattern Conversion
 
 Use the `init(truncatingIfNeeded:)` initializer to create a new instance with the same bit pattern as the passed value, extending or truncating the value’s representation as necessary. Note that the value may not be preserved, particularly when converting between signed to unsigned integer types or when the destination type has a smaller bit width than the source type. The following example shows how extending and truncating work for nonnegative integers:
 
@@ -129,7 +129,7 @@ let w = UInt16(truncatingIfNeeded: t)
 // w's binary representation == 0b11111111_10011100
 ```
 
-### Comparing Across Integer Types
+## Comparing Across Integer Types
 
 You can use relational operators, such as the less-than and equal-to operators (`<` and `==`), to compare instances of different binary integer types. The following example compares instances of the `Int`, `UInt`, and `UInt8` types:
 

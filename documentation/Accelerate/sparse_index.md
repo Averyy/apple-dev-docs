@@ -25,7 +25,7 @@ typealias sparse_index = Int64
 typedef int64_t sparse_index;
 ```
 
-#### Discussion
+## Discussion
 
 All indices, including those in a sparse vectors index array, are positive values.
 

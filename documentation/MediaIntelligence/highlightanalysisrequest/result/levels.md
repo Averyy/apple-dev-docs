@@ -24,7 +24,7 @@ let levels: [(timeRange: CMTimeRange, level: Float)]
 
 - [Finding the best moments in a video](../../finding-the-best-moments-in-a-video.md)
 
-#### Discussion
+## Discussion
 
 Each element pairs a [`CMTimeRange`](../../../CoreMedia/cmtimerange.md) with a floating-point level value from `0` (least engaging) to `9` (most engaging). The array covers every segment in the video, not just the highlights.
 

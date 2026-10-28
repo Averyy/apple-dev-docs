@@ -20,7 +20,7 @@ Creates a new [`LowLevelDeviceResource`](../lowleveldeviceresource.md) from the 
 init(sharedTextureHandle: MTLSharedTextureHandle) throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: If a MTLTexture couldn’t be created from the specified handle.
 

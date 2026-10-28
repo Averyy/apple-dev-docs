@@ -29,7 +29,7 @@ init(scnVector3 v: SCNVector3)
 + (NSValue *) valueWithSCNVector3:(SCNVector3) v;
 ```
 
-#### Return Value
+## Return Value
 
 A new value object that contains the vector information.
 

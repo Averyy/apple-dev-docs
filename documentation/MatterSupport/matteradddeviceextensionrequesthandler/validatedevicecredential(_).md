@@ -19,7 +19,7 @@ Performs verification and attestation checks.
 func validateDeviceCredential(_ deviceCredential: MatterAddDeviceExtensionRequestHandler.DeviceCredential) async throws
 ```
 
-#### Overview
+## Overview
 
 Override this method to perform additional verification and attestation checks, which execute after Apple’s built-in device attestation checks. If either attestation fails as indicated by an exception thrown here, a warning dialog appears before proceeding.
 

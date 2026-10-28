@@ -19,11 +19,11 @@ func rect(for block: NSTextTableBlock, layoutAt startingPoint: NSPoint, in rect:
 - (NSRect) rectForBlock:(NSTextTableBlock *) block layoutAtPoint:(NSPoint) startingPoint inRect:(NSRect) rect textContainer:(NSTextContainer *) textContainer characterRange:(NSRange) charRange;
 ```
 
-#### Return Value
+## Return Value
 
 The rectangle within which glyphs should be laid out.
 
-#### Discussion
+## Discussion
 
 This method is called by the text table block `block` to determine the rectangle within which glyphs should be laid out for the text table block.
 

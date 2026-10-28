@@ -25,7 +25,7 @@ var valueTransformerName: String? { get set }
 @property (copy, nullable) NSString * valueTransformerName;
 ```
 
-#### Discussion
+## Discussion
 
 The attribute must be of type `NSTransformedAttributeType`.
 

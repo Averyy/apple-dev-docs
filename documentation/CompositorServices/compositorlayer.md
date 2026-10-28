@@ -29,7 +29,7 @@ struct CompositorLayer
 
 - [Drawing fully immersive content using Metal](./drawing-fully-immersive-content-using-metal.md)
 
-#### Overview
+## Overview
 
 Use a [`CompositorLayer`](./compositorlayer.md) to specify the content of an [`ImmersiveSpace`](../SwiftUI/immersivespace.md) when you want to render that content yourself using Metal. When you present a space with this content, Compositor Services creates a [`LayerRenderer`](./layerrenderer.md) type for you to use with your rendering code. The layer renderer provides configuration details, timing information, and the Metal types and information you need to configure your rendering loop and manage the rendering process.
 

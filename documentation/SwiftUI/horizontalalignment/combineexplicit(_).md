@@ -21,7 +21,7 @@ Merges a sequence of explicit alignment values produced by this instance.
 func combineExplicit<S>(_ values: S) -> CGFloat? where S : Sequence, S.Element == CGFloat?
 ```
 
-#### Discussion
+## Discussion
 
 For built-in horizontal alignment types, this method returns the mean of all non-`nil` values.
 

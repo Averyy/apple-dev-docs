@@ -21,7 +21,7 @@ protocol CPApplicationDelegate : UIApplicationDelegate
 @protocol CPApplicationDelegate <UIApplicationDelegate>
 ```
 
-#### Overview
+## Overview
 
 You must implement [`CPApplicationDelegate`](./cpapplicationdelegate.md) on the same object that serves as the delegate to your app.
 

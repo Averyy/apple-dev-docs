@@ -22,7 +22,7 @@ var isEnabled: Bool { get set }
 @property (nonatomic, getter=isEnabled) BOOL enabled;
 ```
 
-#### Discussion
+## Discussion
 
 If the value of this property is [`true`](../../Swift/true.md), the [`UIBandSelectionInteraction`](../uibandselectioninteraction.md) object is ready to detect pointer-based events in its owning view and initiate interactions. If the value is [`false`](../../Swift/false.md), the object ignores events and doesn’t start interactions. The default value of this property is [`true`](../../Swift/true.md).
 

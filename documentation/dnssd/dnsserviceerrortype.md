@@ -23,7 +23,7 @@ typealias DNSServiceErrorType = Int32
 typedef int32_t DNSServiceErrorType;
 ```
 
-#### Discussion
+## Discussion
 
 Type declaration for DNS Service error type.
 

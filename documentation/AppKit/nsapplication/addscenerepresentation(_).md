@@ -16,7 +16,7 @@ Adds the specified SwiftUI scene representation to the current application.
 @preconcurrency func addSceneRepresentation<C>(_ representation: NSHostingSceneRepresentation<C>) where C : Scene
 ```
 
-#### Discussion
+## Discussion
 
 Scenes defined by the representation can be presented programmatically via the environment actions available on `NSHostingSceneRepresentation`, or when the app receives an external event such as a URL.
 

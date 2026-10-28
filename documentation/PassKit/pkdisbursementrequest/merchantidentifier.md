@@ -23,7 +23,7 @@ var merchantIdentifier: String { get set }
 @property (nonatomic, copy) NSString * merchantIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 This string needs to match one of the merchant IDs you registered with the Developer Portal or in Xcode, which the [`Merchant IDs Entitlement`](../../BundleResources/entitlements/com.apple.developer.in-app-payments.md) specifies in the app’s entitlements. For more information on adding merchant IDs, see [Configure Apple Pay (iOS, watchOS)](https://help.apple.com/xcode/mac/current/#/deva43983eb7?sub=dev171483d6e).
 

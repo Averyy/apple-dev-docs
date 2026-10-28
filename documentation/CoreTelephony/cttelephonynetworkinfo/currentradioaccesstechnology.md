@@ -23,7 +23,7 @@ var currentRadioAccessTechnology: String? { get }
 @property (nonatomic, retain, readonly, nullable) NSString * currentRadioAccessTechnology;
 ```
 
-#### Discussion
+## Discussion
 
 If the device isn’t registered on any network, this property is `nil`.
 

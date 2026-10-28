@@ -19,7 +19,7 @@ var bytes: Data
 
 - [Communicating with human interface devices](../../communicatingwithhiddevices.md)
 
-#### Discussion
+## Discussion
 
 The size of the data must be the [`element`](./element.md)s [`reportSize`](../reportsize.md), rounded up to the next byte.
 

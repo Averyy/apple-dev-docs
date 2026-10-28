@@ -21,11 +21,11 @@ func localizedDescription(forType typeName: String) -> String?
 - (NSString *) localizedDescriptionForType:(NSString *) typeName;
 ```
 
-#### Return Value
+## Return Value
 
 An [`NSString`](../../Foundation/nsstring.md) containing the localized description of `typeName`. You may display this string to the user.
 
-#### Discussion
+## Discussion
 
 You can safely call this method from any thread of your app.
 

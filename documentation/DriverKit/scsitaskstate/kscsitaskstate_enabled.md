@@ -16,7 +16,7 @@
 kSCSITaskState_ENABLED
 ```
 
-#### Discussion
+## Discussion
 
 The task is enabled and queued.
 

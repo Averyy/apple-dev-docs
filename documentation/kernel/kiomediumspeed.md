@@ -15,7 +15,7 @@ A property of IONetworkMedium objects.
 #define kIOMediumSpeed
 ```
 
-#### Discussion
+## Discussion
 
 The kIOMediumSpeed property is an OSNumber object that describes the maximum link speed supported by the medium in bits per second.
 

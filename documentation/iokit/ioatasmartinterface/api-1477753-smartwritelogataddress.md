@@ -16,7 +16,7 @@ Writes to the 512-byte log at the specified logOffset in the log.
 IOReturn (*SMARTWriteLogAtAddress)(void *interface, UInt32 logOffset, const void *buffer, UInt32 size);
 ```
 
-#### Discussion
+## Discussion
 
 Writes to the 512-byte log at the specified logOffset in the log. See section 8.54.8.4 of ATA/ATAPI-6.
 

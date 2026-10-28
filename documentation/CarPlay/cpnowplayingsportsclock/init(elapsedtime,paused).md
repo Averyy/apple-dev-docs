@@ -21,7 +21,7 @@ init(elapsedTime: TimeInterval, paused: Bool)
 - (instancetype) initWithElapsedTime:(NSTimeInterval) elapsedTime paused:(BOOL) paused;
 ```
 
-#### Discussion
+## Discussion
 
 When displayed on the now playing screen, the clock will count UP.
 

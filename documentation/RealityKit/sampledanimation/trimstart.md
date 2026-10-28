@@ -20,7 +20,7 @@ The optional time, in seconds, at which the animation plays.
 var trimStart: TimeInterval? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 This property is `nil` by default, which plays the animation from the starting frame defined by [`start`](./start.md).
 

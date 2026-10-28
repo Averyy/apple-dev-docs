@@ -5,7 +5,7 @@
 
 Examine how the testing library interprets bug identifiers provided by developers.
 
-#### Overview
+## Overview
 
 The testing library supports two distinct ways to identify a bug:
 
@@ -20,7 +20,7 @@ To create an instance of [`Bug`](./bug.md) with a URL, use the [`bug(_:_:)`](./t
 
 To create an instance of [`Bug`](./bug.md) with a bug’s unique identifier, use the [`bug(_:id:_:)`](./trait/bug%28_,id,_%29-10yf5.md) trait. The testing library does not require that a bug’s unique identifier match any particular format, but will interpret unique identifiers starting with `"FB"` as referring to bugs tracked with the [Apple Feedback Assistant](https://feedbackassistant.apple.com). For convenience, you can also directly pass an integer as a bug’s identifier using [`bug(_:id:_:)`](./trait/bug%28_,id,_%29-3vtpl.md).
 
-##### Examples
+### Examples
 
 | Trait Function | Inferred Bug-Tracking System |
 | --- | --- |

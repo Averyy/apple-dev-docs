@@ -19,7 +19,7 @@ func encodeRestorableState(with coder: NSCoder, backgroundQueue queue: Operation
 - (void) encodeRestorableStateWithCoder:(NSCoder *) coder backgroundQueue:(NSOperationQueue *) queue;
 ```
 
-#### Discussion
+## Discussion
 
 This method is part of the window restoration system and is called at appropriate times to save the visual state of your responder to the specified archive. The default implementation of this method does nothing but specific subclasses (such as [`NSView`](../nsview.md) and [`NSWindow`](../nswindow.md)) override it to save important state information. Therefore, if you override this method, always call `super` at some point in your implementation.
 

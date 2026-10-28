@@ -21,7 +21,7 @@ Calculates the dot product of two fixed-point  8.24 format vectors.
 void vDSP_dotpr_s8_24(const int *__A, vDSP_Stride __IA, const int *__B, vDSP_Stride __IB, int *__C, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 This function calculates the dot product of two vectors, using the following operation:
 

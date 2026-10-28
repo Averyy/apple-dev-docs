@@ -24,11 +24,11 @@ func registerForPreviewing(with delegate: any UIViewControllerPreviewingDelegate
 - (id<UIViewControllerPreviewing>) registerForPreviewingWithDelegate:(id<UIViewControllerPreviewingDelegate>) delegate sourceView:(UIView *) sourceView;
 ```
 
-#### Return Value
+## Return Value
 
 A context object for managing the preview. This object conforms to the [`UIViewControllerPreviewing`](../uiviewcontrollerpreviewing.md) protocol.
 
-#### Discussion
+## Discussion
 
 A preview, or *peek* in end-user terminology, provides additional content related to the view the user pressed (that is, related to the `sourceView` view).
 

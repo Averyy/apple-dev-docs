@@ -21,7 +21,7 @@ Replaces a region of bytes in the data with new bytes from a buffer.
 mutating func replaceSubrange<SourceType>(_ subrange: Range<Data.Index>, with buffer: UnsafeBufferPointer<SourceType>)
 ```
 
-#### Discussion
+## Discussion
 
 This will resize the data if required, to fit the entire contents of `buffer`.
 

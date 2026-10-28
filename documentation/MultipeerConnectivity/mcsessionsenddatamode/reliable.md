@@ -26,7 +26,7 @@ case reliable
 MCSessionSendDataReliable
 ```
 
-#### Discussion
+## Discussion
 
 Use this message type for application-critical data.
 

@@ -19,11 +19,11 @@ func AEGetArray(_ theAEDescList: UnsafePointer<AEDescList>!, _ arrayType: AEArra
 OSErr AEGetArray(const AEDescList *theAEDescList, AEArrayType arrayType, AEArrayDataPointer arrayPtr, Size maximumSize, DescType *itemType, Size *itemSize, long *itemCount);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../applicationservices/apple_event_manager.md#1656145).
 
-#### Discussion
+## Discussion
 
 The `AEGetArray` function uses a buffer identified by the pointer in the `arrayPtr` parameter to store the converted data for the Apple event array specified by the `theAEDescList` parameter. For example, `AEGetArray` may convert an array of descriptors of type `typeLongInteger` into a simple array of integer values or an array of descriptors of type `typeFSS` into an array of file specification records.
 
@@ -31,7 +31,7 @@ Even if the descriptor list that contains the array is factored, the converted d
 
 For information about creating and factoring descriptor lists for Apple event arrays, see [`AECreateList(_:_:_:_:)`](./api-1448643-aecreatelist.md). For information about adding an Apple event array to a descriptor list, see [`AEPutArray(_:_:_:_:_:_:)`](./api-1442535-aeputarray.md). 
 
-##### Version-Notes
+### Version-Notes
 
 Thread safe starting in OS X v10.2.
 

@@ -21,7 +21,7 @@ A type that represents an XPC service bundle.
 extern UTType * const UTTypeXPCService;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `com.apple.xpc-service`.
 

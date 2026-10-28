@@ -16,7 +16,7 @@ The aspect ratio used for this instance of the style.
 let aspectRatio: ProgressiveImmersionAspectRatio
 ```
 
-#### Discussion
+## Discussion
 
 The value controls the aspect ratio of the ImmersiveSpace portal. If this value is automatic or nil, a system default will be used instead.
 

@@ -24,7 +24,7 @@ var value: Any { get set }
 @property (nonatomic, strong, readwrite) id value;
 ```
 
-#### Discussion
+## Discussion
 
 The framework sets this property to the subclass’s initializer argument; for example, see [`init(value:)`](../phasenumbermetaparameterdefinition/init%28value%29.md).
 

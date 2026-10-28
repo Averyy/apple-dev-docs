@@ -22,11 +22,11 @@ nonisolated
 func onOpenURL(perform action: @escaping (URL) -> ()) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view that handles incoming URLs.
 
-#### Discussion
+## Discussion
 
 Use this view modifier to receive URLs in a particular scene within your app. The scene that SwiftUI routes the incoming URL to depends on the structure of your app, what scenes are active, and other configuration. For more information, see [`handlesExternalEvents(matching:)`](../scene/handlesexternalevents%28matching%29.md).
 

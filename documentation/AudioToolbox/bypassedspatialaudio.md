@@ -15,7 +15,7 @@ An experience in which the system does not apply spatial processing to the audio
 struct BypassedSpatialAudio
 ```
 
-#### Overview
+## Overview
 
 Use this if implementing your own spatial audio rendering or designing an experience that should not have spatial audio.
 

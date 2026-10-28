@@ -20,7 +20,7 @@ optional func textView(_ textView: NSTextView, shouldChangeTextInRanges affected
 - (BOOL) textView:(NSTextView *) textView shouldChangeTextInRanges:(NSArray<NSValue *> *) affectedRanges replacementStrings:(NSArray<NSString *> *) replacementStrings;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) to allow the replacement, or [`false`](../../Swift/false.md) to reject the change.
 

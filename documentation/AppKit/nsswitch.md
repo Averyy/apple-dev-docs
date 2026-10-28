@@ -19,7 +19,7 @@ class NSSwitch
 @interface NSSwitch : NSControl
 ```
 
-#### Overview
+## Overview
 
 The [`NSSwitch`](./nsswitch.md) class provides a simple interface for displaying and toggling a Boolean state, such as on/off. A switch toggles its [`state`](./nsswitch/state.md) and sends its [`action`](./nscontrol/action.md) when clicked, activated through the keyboard, or tapped in the Touch Bar. [`NSSwitch`](./nsswitch.md) also allows dragging between states, and if [`isContinuous`](./nscontrol/iscontinuous.md) is [`true`](../Swift/true.md), the switch sends its [`action`](./nscontrol/action.md) for each change in position during the drag.
 

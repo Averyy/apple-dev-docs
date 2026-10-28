@@ -19,7 +19,7 @@ var startDate: Date { get }
 @property (nonatomic, strong, readonly) NSDate * startDate;
 ```
 
-#### Discussion
+## Discussion
 
 Start date of sleep session
 

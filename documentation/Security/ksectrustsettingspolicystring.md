@@ -20,7 +20,7 @@ var kSecTrustSettingsPolicyString: String { get }
 #define kSecTrustSettingsPolicyString
 ```
 
-#### Discussion
+## Discussion
 
 The value is a [`CFString`](../CoreFoundation/cfstring.md) object. For the SMIME policy, this string contains an email address. For the SSL policy, it contains a host name.
 

@@ -24,7 +24,7 @@ let HMCharacteristicTypePositionState: String
 extern NSString * const HMCharacteristicTypePositionState;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is one of the constants in the [`HMCharacteristicValuePositionState`](./hmcharacteristicvaluepositionstate.md) enumeration.
 

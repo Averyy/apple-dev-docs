@@ -22,11 +22,11 @@ nonisolated
 func tipAnchor<AnchorID>(_ id: AnchorID) -> some View where AnchorID : Hashable, AnchorID : Sendable
 ```
 
-#### Return Value
+## Return Value
 
 A new version of the view that writes to the key.
 
-#### Discussion
+## Discussion
 
 Use this modifier to specify an anchor view for a `TipView`’s arrow to point towards.
 

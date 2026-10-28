@@ -15,7 +15,7 @@ An object that provides camera streams.
 final class CameraFrameProvider
 ```
 
-#### Overview
+## Overview
 
 You use `CameraFrameProvider` to receive camera images for selected video formats.
 

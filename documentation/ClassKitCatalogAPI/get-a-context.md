@@ -9,9 +9,9 @@ Fetch information that you previously stored about your app’s assignable activ
 **Availability**:
 - ClassKit 1.0+
 
-#### Discussion
+## Discussion
 
-##### Example
+### Example
 
 **Request**:
 

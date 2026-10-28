@@ -19,7 +19,7 @@ unowned(unsafe) var dataSource: (any NSComboBoxDataSource)? { get set }
 @property (assign, nullable) id<NSComboBoxDataSource> dataSource;
 ```
 
-#### Discussion
+## Discussion
 
 Assigning an object to this property does not automatically set the [`usesDataSource`](./usesdatasource.md) property to [`true`](../../Swift/true.md). If the  [`usesDataSource`](./usesdatasource.md) property is [`false`](../../Swift/false.md), accessing this property logs a warning. The default value of this property is `nil`.
 

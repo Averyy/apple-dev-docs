@@ -25,7 +25,7 @@ class SCNPhysicsSliderJoint
 @interface SCNPhysicsSliderJoint : SCNPhysicsBehavior
 ```
 
-#### Overview
+## Overview
 
 A slider joint can have zero, one, or two degrees of freedom depending on whether you allow it to slide or rotate. You can also use a slider joint to pin a body so that it can move only by sliding a specific axis in the coordinate space of the node containing it. You can also use a slider joint as a motor, applying a force or torque to the bodies it connects.
 

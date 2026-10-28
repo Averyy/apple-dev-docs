@@ -5,7 +5,7 @@
 
 Descriptions of the units of a characteristic.
 
-#### Overview
+## Overview
 
 Expect to find one of these values in the [`units`](./hmcharacteristicmetadata/units.md) property of a characteristic’s metadata.
 

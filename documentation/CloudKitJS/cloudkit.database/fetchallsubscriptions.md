@@ -15,11 +15,11 @@ Fetches all subscriptions in the schema.
 Promise<CloudKit.SubscriptionsResponse, CloudKit.CKError> fetchAllSubscriptions();
 ```
 
-#### Return Value
+## Return Value
 
 A `Promise` object that resolves to a [`CloudKit.SubscriptionsResponse`](../cloudkit.subscriptionsresponse.md) object , or rejects to a [`CKError`](../cloudkit/ckerror.md) object.
 
-#### Discussion
+## Discussion
 
 See [Fetching Subscriptions (subscriptions/list)](https://developer.apple.com/library/archive/documentation/DataManagement/Conceptual/CloudKitWebServicesReference/GetSubscriptions.html#//apple_ref/doc/uid/TP40015240-CH16) in [CloudKit Web Services Reference](https://developer.apple.com/library/archive/documentation/DataManagement/Conceptual/CloudKitWebServicesReference/index.html#//apple_ref/doc/uid/TP40015240).
 

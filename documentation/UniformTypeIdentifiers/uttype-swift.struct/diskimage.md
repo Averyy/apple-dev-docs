@@ -21,7 +21,7 @@ A type that represents a data item that’s mountable as a volume.
 static var diskImage: UTType { get }
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.disk-image`.
 

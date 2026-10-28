@@ -16,7 +16,7 @@ protocol XCTestObservation : NSObjectProtocol
 @protocol XCTestObservation <NSObject>
 ```
 
-#### Overview
+## Overview
 
 The system calls the notification methods for [`XCTestObservation`](./xctestobservation.md) in the following sequence for a test bundle:
 

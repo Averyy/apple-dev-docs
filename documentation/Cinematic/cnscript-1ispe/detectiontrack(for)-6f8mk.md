@@ -19,7 +19,7 @@ A detection track representing all detections with the given detection ID, over 
 final func detectionTrack(for detectionID: CNDetectionID) -> CNDetectionTrack?
 ```
 
-#### Return Value
+## Return Value
 
 A detection track representing all detections with the detection ID of interest, over the entire Cinematic script.
 

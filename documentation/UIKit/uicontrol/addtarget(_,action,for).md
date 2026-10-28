@@ -27,7 +27,7 @@ func addTarget(_ target: Any?, action: Selector, for controlEvents: UIControl.Ev
 
 - [Responding to control-based events using target-action](../responding-to-control-based-events-using-target-action.md)
 
-#### Discussion
+## Discussion
 
 You may call this method multiple times to configure multiple targets and actions for the control. It is also safe to call this method multiple times with the same values for the `target` and `action` parameters. The control maintains a list of its attached targets and actions along with the events each supports.
 

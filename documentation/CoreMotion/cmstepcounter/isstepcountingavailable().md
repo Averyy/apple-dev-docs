@@ -24,11 +24,11 @@ class func isStepCountingAvailable() -> Bool
 + (BOOL) isStepCountingAvailable;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if step-counting support is available or [`false`](../../Swift/false.md) if it is not.
 
-#### Discussion
+## Discussion
 
 Step-counting support is not available on all iOS devices. Use this method to determine if support is available on the current device.
 

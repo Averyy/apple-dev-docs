@@ -24,7 +24,7 @@ var buttonAppearance: UIBarButtonItemAppearance { get set }
 @property (nonatomic, copy, readwrite) UIBarButtonItemAppearance * buttonAppearance;
 ```
 
-#### Discussion
+## Discussion
 
 To configure the appearance of a done button item, use the [`doneButtonAppearance`](./donebuttonappearance.md) property instead.
 

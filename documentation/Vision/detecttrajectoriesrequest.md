@@ -21,7 +21,7 @@ A request that detects the trajectories of shapes moving along a parabolic path.
 final class DetectTrajectoriesRequest
 ```
 
-#### Overview
+## Overview
 
 After the request detects a trajectory, it produces a collection of [`TrajectoryObservation`](./trajectoryobservation.md) objects that contain the shape’s detected points and an equation describing the parabola.
 

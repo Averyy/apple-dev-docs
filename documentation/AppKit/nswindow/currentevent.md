@@ -19,7 +19,7 @@ var currentEvent: NSEvent? { get }
 @property (strong, readonly, nullable) NSEvent * currentEvent;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is given by calling by invoking the [`NSApplication`](../nsapplication.md) method [`currentEvent`](../nsapplication/currentevent.md).
 

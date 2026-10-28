@@ -17,7 +17,7 @@ Architecture-imposed sliding-window attention cache, capped by legacy `maxKVSize
 func makeSlidingWindowKVCache(parameters: GenerateParameters?, window: Int) throws -> KVCache
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: [`KVCacheConfigurationError`](./kvcacheconfigurationerror.md) when the request or window is invalid.
 

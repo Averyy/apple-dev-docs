@@ -24,11 +24,11 @@ func dequantize(_ tensor: MPSGraphTensor, LUTTensor: MPSGraphTensor, axis: Int, 
 - (MPSGraphTensor *) dequantizeTensor:(MPSGraphTensor *) tensor LUTTensor:(MPSGraphTensor *) LUTTensor axis:(NSInteger) axis name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid [`MPSGraphTensor`](../mpsgraphtensor.md) object.
 
-#### Discussion
+## Discussion
 
 Converts a `tensor` of integer indices to a float tensor by applying a lookup operation, where each input index defines a vector of values. The operation reads the vector values from the last dimension of the lookup table tensor and stores them into the dimension defined by `axis` on the result tensor.
 

@@ -21,7 +21,7 @@ A type that represents a Spotlight metadata importer bundle.
 static var spotlightImporter: UTType { get }
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `com.apple.metadata-importer`.
 

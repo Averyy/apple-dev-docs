@@ -5,13 +5,13 @@
 
 Analyze your model’s tool calls against expected trajectories, argument values, and call ordering.
 
-#### Overview
+## Overview
 
 Language models can perform actions beyond text generation by calling tools you define for specific tasks, such as searching a database, controlling a smart device, or calling an external API. The model determines when to call each tool and what arguments to pass based on the user’s request and the tools you provide.
 
 A model that picks the wrong tool, passes incorrect arguments, or calls tools out of order can silently break your app. The Evaluations framework lets you define the tool-calling behavior you expect and rate the model’s actual behavior against it. For guidance on defining success criteria and choosing quality dimensions, see [Designing specific, measurable criteria in an evaluation suite](./designing-evaluation-criteria.md). For an introduction to the Evaluations framework and how evaluations work, see [Evaluating language model responses](./evaluating-language-model-responses.md). To see tool-call evaluation in a complete app, see [Book Tracker: Using Evaluations to evaluate an intelligent feature](./book-tracker-using-evaluations-to-evaluate-an-intelligent-feature.md).
 
-#### Define your tools
+## Define your tools
 
 Define the tools the model can call. Each tool conforms to the [`Tool`](../FoundationModels/tool.md) protocol with a name, description, and a [`Generable`](../FoundationModels/generable.md) arguments structure that tells the model which parameters to pass.
 
@@ -44,7 +44,7 @@ In this example, the `call(arguments:)` method returns a string rather than cont
 
 The following examples reference additional tools such as `set_thermostat` and `lock_door` that follow the same pattern. For details on building tools with [Foundation Models](../FoundationModels/FoundationModels.md), see [Expanding generation with tool calling](../FoundationModels/expanding-generation-with-tool-calling.md).
 
-#### Match a single tool call
+## Match a single tool call
 
 The simplest evaluation verifies that the model calls a specific tool with exact argument values. A [`TrajectoryExpectation`](./trajectoryexpectation.md) describes the tool calls you expect for a given prompt, and each *argument matcher* controls how strictly the evaluator compares a value. This example uses [`ArgumentMatcher.exact(argumentName:value:)`](./argumentmatcher/exact%28argumentname,value%29.md), which requires a precise match; later sections cover matchers for flexible comparisons.
 
@@ -113,7 +113,7 @@ Finally, add a [`ToolCallEvaluator`](./toolcallevaluator.md) to score the model�
 }
 ```
 
-#### Handle ambiguous intents
+## Handle ambiguous intents
 
 When the user says “I’m feeling cold,” both “warm” and “comfortable” are reasonable thermostat presets. Use [`ArgumentMatcher.oneOf(argumentName:allowedValues:)`](./argumentmatcher/oneof%28argumentname,allowedvalues%29.md) to accept any value from a set, and [`ArgumentMatcher.range(argumentName:minimum:maximum:)`](./argumentmatcher/range%28argumentname,minimum,maximum%29.md) to accept numeric values within a range:
 
@@ -143,7 +143,7 @@ ModelSample(
 
 [`ArgumentMatcher`](./argumentmatcher.md) provides nine validation strategies. Choose one based on how precisely you need to constrain the model’s output:
 
-#### Match complex tool calls
+## Match complex tool calls
 
 The examples above check individual tool calls. For multi-step workflows, you can combine expectations:
 
@@ -285,7 +285,7 @@ ModelSample(
 ),
 ```
 
-#### Interpret evaluation results
+## Interpret evaluation results
 
 [`ToolCallEvaluator`](./toolcallevaluator.md) writes two metrics per sample, using the [`Metric`](./metric.md) instances you declare on your evaluation. For guidance on using evaluation results to iterate and improve your feature over time, see [Designing effective evaluations](./designing-effective-evaluations.md).
 
@@ -315,7 +315,7 @@ func aggregateMetrics(using aggregator: inout MetricsAggregator) {
 
 > **Note**: When [`allowsAdditionalCalls`](./trajectoryexpectation/allowsadditionalcalls.md) is set to `false`, unexpected calls count against `ToolsPercentagePass` by inflating the denominator. For example, a sample with 2 expected calls and 1 unexpected call reports a score of 0.67 instead of 1.0.
 
-#### Combine tool-calling evaluation with content evaluation
+## Combine tool-calling evaluation with content evaluation
 
 Accurate tool calling and response quality both matter. A model that calls the right tools but returns an inaccurate or incomplete response still fails the user. Add [`ToolCallEvaluator`](./toolcallevaluator.md) alongside other evaluators to measure both dimensions:
 
@@ -333,7 +333,7 @@ var evaluators: Evaluators {
 
 This pattern lets you verify that the model both uses the right tools and produces the right answer. For subjective quality criteria like tone or helpfulness, see [Scoring with model-judge evaluators](./scoring-with-model-as-judge-evaluators.md).
 
-#### Run your evaluation
+## Run your evaluation
 
 Run your tool-calling evaluation with Swift Testing by attaching the [`EvaluationTrait`](./evaluationtrait.md) to a test function:
 

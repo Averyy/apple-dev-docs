@@ -23,7 +23,7 @@ let kMIDIPropertyAdvanceScheduleTimeMuSec: CFString
 extern CFStringRef const kMIDIPropertyAdvanceScheduleTimeMuSec;
 ```
 
-#### Discussion
+## Discussion
 
 Only the driver that owns the object may set this property.
 

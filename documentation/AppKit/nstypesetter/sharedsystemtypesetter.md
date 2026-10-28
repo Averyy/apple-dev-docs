@@ -19,7 +19,7 @@ class var sharedSystemTypesetter: NSTypesetter { get }
 @property (class, strong, readonly) NSTypesetter * sharedSystemTypesetter;
 ```
 
-#### Return Value
+## Return Value
 
 The shared system typesetter. This typesetter is reentrant.
 

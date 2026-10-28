@@ -24,7 +24,7 @@ var presentationStyle: UIModalPresentationStyle { get }
 @property (nonatomic, readonly) UIModalPresentationStyle presentationStyle;
 ```
 
-#### Return Value
+## Return Value
 
 The presentation style to use when presenting the final view controller.
 

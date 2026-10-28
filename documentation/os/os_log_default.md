@@ -21,7 +21,7 @@ The shared default log.
 #define OS_LOG_DEFAULT
 ```
 
-#### Discussion
+## Discussion
 
 Passing this constant to an `os_log` function, such as [`os_log`](./os_log.md), [`os_log_info`](./os_log_info.md), [`os_log_debug`](./os_log_debug.md), [`os_log_error`](./os_log_error.md), or [`os_log_fault`](./os_log_fault.md), causes the system to log a message with the system’s standard behavior.
 

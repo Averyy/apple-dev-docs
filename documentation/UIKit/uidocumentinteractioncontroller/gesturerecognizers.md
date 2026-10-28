@@ -22,7 +22,7 @@ var gestureRecognizers: [UIGestureRecognizer] { get }
 @property (nonatomic, readonly) NSArray<__kindof UIGestureRecognizer *> * gestureRecognizers;
 ```
 
-#### Discussion
+## Discussion
 
 The objects in the `gestureRecognizers` array each descend from the [`UIGestureRecognizer`](../uigesturerecognizer.md) class. You can attach these gesture recognizers to the view you use to represent a document. For example, if you represent a document by name or icon in a table view cell , you can attach a document interaction controller’s gesture recognizers using code like this:
 

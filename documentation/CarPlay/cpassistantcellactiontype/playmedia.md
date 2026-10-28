@@ -21,7 +21,7 @@ case playMedia
 CPAssistantCellActionTypePlayMedia
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**:  This action is only available in audio apps that include an Intents Extension capable of handling [`INSearchCallHistoryIntent`](../../Intents/insearchcallhistoryintent.md). For more information, see [Creating an Intents App Extension](../../SiriKit/creating-an-intents-app-extension.md).
 

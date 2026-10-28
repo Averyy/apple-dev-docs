@@ -13,7 +13,7 @@
 void ifnet_free_address_list(ifaddr_t *addresses);
 ```
 
-#### Discussion
+## Discussion
 
 Free a list of addresses returned from ifnet_get_address_list. Decrements the refcounts and frees the memory used for the array of references.
 

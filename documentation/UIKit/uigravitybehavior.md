@@ -24,7 +24,7 @@ class UIGravityBehavior
 @interface UIGravityBehavior : UIDynamicBehavior
 ```
 
-#### Overview
+## Overview
 
 The magnitude and direction of the gravity force are configurable and are applied equally to all associated items. Use this behavior to modify the position of views and other dynamic items in your app’s interface.
 
@@ -34,7 +34,7 @@ You specify the magnitude and direction of the gravity force as a two-dimensiona
 
 If you want to influence a gravity behavior at each step of a dynamic animation, assign an appropriate block to the inherited [`action`](./uidynamicbehavior/action.md) property. Use your block to make any needed changes to the dynamic items associated with the gravity behavior.
 
-##### Applying a Gravity Behavior to an Item
+### Applying a Gravity Behavior to an Item
 
 To apply a gravity behavior to one or more dynamic items, do the following:
 

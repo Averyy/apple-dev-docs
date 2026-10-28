@@ -25,11 +25,11 @@ func CVBufferCopyAttachment(_ buffer: CVBuffer, _ key: CFString, _ attachmentMod
 extern CFTypeRefCVBufferCopyAttachment(CVBufferRef buffer, CFStringRef key, CVAttachmentMode *attachmentMode);
 ```
 
-#### Return Value
+## Return Value
 
 The requested attachment, or `nil` if no attachment for the specified key exists.
 
-#### Discussion
+## Discussion
 
 This function returns a retained attachment value, which you need to release when you’re done with it.
 

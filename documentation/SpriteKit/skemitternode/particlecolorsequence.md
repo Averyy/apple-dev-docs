@@ -30,7 +30,7 @@ var particleColorSequence: SKKeyframeSequence? { get set }
 - [Animating Particle Properties Across Disparate Values](../animating-particle-properties-across-disparate-values.md)
 - [Using Keyframe Sequence to effect Custom Interpolation](../using-keyframe-sequence-to-effect-custom-interpolation.md)
 
-#### Discussion
+## Discussion
 
 The default value is `nil`. If a non-`nil` value is specified, then the [`particleColor`](./particlecolor.md), [`particleColorAlphaRange`](./particlecoloralpharange.md), [`particleColorRedRange`](./particlecolorredrange.md), [`particleColorGreenRange`](./particlecolorgreenrange.md), [`particleColorBlueRange`](./particlecolorbluerange.md), [`particleColorAlphaSpeed`](./particlecoloralphaspeed.md), [`particleColorRedSpeed`](./particlecolorredspeed.md), [`particleColorGreenSpeed`](./particlecolorgreenspeed.md), and [`particleColorBlueSpeed`](./particlecolorbluespeed.md) properties are ignored. Instead, the sequence is used to specify the particle color.
 

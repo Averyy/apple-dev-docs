@@ -15,13 +15,13 @@ The payload that configures printers.
 object Printing
 ```
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.mcxprinting` as the payload type.
 
 Removing this profile from a device doesn’t automatically remove printers from the device.
 
-##### Profile availability
+### Profile availability
 
 |  |  |
 | --- | --- |
@@ -33,7 +33,7 @@ Removing this profile from a device doesn’t automatically remove printers from
 | Allowed in user enrollment | N/A |
 | Allow multiple payloads | N/A |
 
-##### Profile example
+### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>

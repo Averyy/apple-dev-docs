@@ -23,7 +23,7 @@ func deinitializeElement<Element>(at index: UnsafeMutableBufferPointer<Element>.
 
 Available when `Base` conforms to `Collection`.
 
-#### Discussion
+## Discussion
 
 The memory underlying the element at `index` must be initialized. After calling `deinitializeElement()`, the memory underlying this element of the buffer slice is uninitialized, and still bound to type `Element`.
 

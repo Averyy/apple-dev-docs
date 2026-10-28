@@ -23,7 +23,7 @@ weak var delegate: (any UISearchControllerDelegate)? { get set }
 @property (nonatomic, weak, nullable) id<UISearchControllerDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 Use the delegate object to receive notifications when the search results controller is presented and dismissed. You might use these notifications to customize the search interface or perform related actions.
 

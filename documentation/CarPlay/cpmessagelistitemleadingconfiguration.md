@@ -21,7 +21,7 @@ class CPMessageListItemLeadingConfiguration
 @interface CPMessageListItemLeadingConfiguration : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use a leading configuration to describe the visual elements that a message list item’s leading region contains. The region can show a [`CPMessageLeadingItem`](./cpmessageleadingitem.md), an image, and an unread indicator.
 

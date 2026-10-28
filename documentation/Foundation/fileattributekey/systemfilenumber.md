@@ -25,7 +25,7 @@ static let systemFileNumber: FileAttributeKey
 extern NSFileAttributeKey const NSFileSystemFileNumber;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is an [`NSNumber`](../nsnumber.md) object containing an `unsigned long`. The value corresponds to the value of `st_ino`, as returned by `stat`(2).
 

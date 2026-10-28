@@ -12,11 +12,11 @@ virtual bool initWithWorkLoop(
  IOWorkLoop *inWorkLoop);
 ```
 
-#### Return Value
+## Return Value
 
 Returns true if command pool was successfully initialized.
 
-#### Overview
+## Overview
 
 Primary initializer for an IOCommandPool. Should probably use IOCommandPool::withWorkLoop() as it is easier to use.
 

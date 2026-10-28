@@ -9,11 +9,11 @@ List all Xcode versions available for a specific macOS version in Xcode Cloud.
 **Availability**:
 - App Store Connect API 1.5+
 
-#### Discussion
+## Discussion
 
 The example request below lists Xcode versions available in Xcode Cloud for a specific macOS version. Use the data provided in the response to display available Xcode versions and test destinations on a dashboard.
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

@@ -25,7 +25,7 @@ func setValue(_ value: Any?, forKey key: String)
 - (void) setValue:(ObjectType) value forKey:(NSString *) key;
 ```
 
-#### Discussion
+## Discussion
 
 This method adds `value` and `key` to the dictionary using [`setObject(_:forKey:)`](./setobject%28_,forkey%29.md), unless `value` is `nil` in which case the method instead attempts to remove `key` using [`removeObject(forKey:)`](./removeobject%28forkey%29.md).
 

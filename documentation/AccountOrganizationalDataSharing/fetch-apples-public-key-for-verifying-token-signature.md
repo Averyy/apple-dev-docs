@@ -9,7 +9,7 @@ Retrieve the public key associated with the cryptographic identity Apple uses to
 **Availability**:
 - AccountOrganizationalDataSharing 1.0+
 
-#### Overview
+## Overview
 
 If successful, the HTTP status code is 200 (OK), and the [`JWKSet.Keys`](./jwkset/jwkset.keys.md) object contains Apple’s public key.
 

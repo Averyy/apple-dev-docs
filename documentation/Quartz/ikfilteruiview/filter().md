@@ -19,7 +19,7 @@ func filter() -> CIFilter!
 - (CIFilter *) filter;
 ```
 
-#### Return Value
+## Return Value
 
 The Core Image filter associated with the view.
 

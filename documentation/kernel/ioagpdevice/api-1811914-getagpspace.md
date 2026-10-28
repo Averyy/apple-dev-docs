@@ -13,11 +13,11 @@ virtual IOReturn getAGPSpace(
  IOPhysicalLength *length );
 ```
 
-#### Return Value
+## Return Value
 
 Returns an IOReturn code indicating success or failure.
 
-#### Overview
+## Overview
 
 This method can be called by the driver for the AGP primary device to retrieve the physical address and size of the space created with createAGPSpace.
 

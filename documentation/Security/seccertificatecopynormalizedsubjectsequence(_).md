@@ -25,7 +25,7 @@ func SecCertificateCopyNormalizedSubjectSequence(_ certificate: SecCertificate) 
 CFDataRefSecCertificateCopyNormalizedSubjectSequence(SecCertificateRef certificate);
 ```
 
-#### Return Value
+## Return Value
 
 A data object containing the sequence or `NULL` on error. In Objective-C, free this object with a call to the [`CFRelease`](../CoreFoundation/cfrelease.md) function when you are done with it.
 

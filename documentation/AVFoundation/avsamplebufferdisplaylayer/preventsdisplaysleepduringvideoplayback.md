@@ -23,7 +23,7 @@ var preventsDisplaySleepDuringVideoPlayback: Bool { get set }
 @property (nonatomic) BOOL preventsDisplaySleepDuringVideoPlayback;
 ```
 
-#### Discussion
+## Discussion
 
 Setting this property to [`false`](../../Swift/false.md) doesn’t force the display to sleep; it only stops preventing display sleep. Other apps or frameworks within your app may still be preventing display sleep for various reasons.
 

@@ -22,7 +22,7 @@ case none
 UINavigationBarNSToolbarSectionNone
 ```
 
-#### Discussion
+## Discussion
 
 Use this value to disable [`NSToolbar`](../../../AppKit/nstoolbar.md) hosting. This value is equivalent to setting the [`preferredBehavioralStyle`](../preferredbehavioralstyle.md) of the navigation bar to [`UIBehavioralStyle.pad`](../../uibehavioralstyle/pad.md).
 

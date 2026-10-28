@@ -21,7 +21,7 @@ The depth of the texture image, in pixels.
 @preconcurrency var depth: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 The value is `0` if the texture isn’t a 3D texture.
 

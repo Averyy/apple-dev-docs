@@ -9,19 +9,19 @@ Receive forwarded iOS system notifications on an accessory that you develop.
 **Availability**:
 - iOS 26.5+
 
-#### Overview
+## Overview
 
 The Accessory Notifications framework allows accessory companion apps to request notification forwarding from people, and receive notification content from the system through an extension model. People can choose to forward notifications from all apps, no apps, or a subset of apps on their device. Implement the extensions this framework calls into using [Accessory Transport Extension](../AccessoryTransportExtension/AccessoryTransportExtension.md), which transfers notification content and responses to and from your accessory.
 
 > ❗ **Important**: This framework supports iPhone only. You can develop and test an app that uses this framework on devices in any region. Customer installations of your app can only use the framework on devices located in the EU that are signed in with an Apple Account with an EU country or region.
 
-#### Forward iOS system notifications to an accessory
+## Forward iOS system notifications to an accessory
 
 The framework prompts the person to allow notification forwarding when your accessory’s companion app calls [`requestForwarding(for:)`](./accessorynotificationcenter/requestforwarding%28for%29.md). The method returns a [`ForwardingDecision`](./forwardingdecision.md) that indicates the person’s choice. Check the current forwarding status for an accessory using [`forwardingStatus(for:)`](./accessorynotificationcenter/forwardingstatus%28for%29.md), or present notification settings using [`presentSettings(for:scenePersistentIdentifier:)`](./accessorynotificationcenter/presentsettings%28for,scenepersistentidentifier%29.md).
 
 When a person approves the prompt and the system is ready to forward a notification, the system calls [`NotificationsForwarding.AccessoryNotificationsHandler`](./notificationsforwarding/accessorynotificationshandler.md) in an [`AccessoryDataProvider`](../AccessoryTransportExtension/accessorydataprovider.md) extension you implement to curate the notification details specifically for your accessory. The [`AccessoryNotification`](./accessorynotification.md) contains the complete notification data, from which you curate the details your accessory needs. [`AlertingContext`](./alertingcontext.md) determines if your accessory alerts for the notification, and how that alert occurs.
 
-#### Respond to notifications
+## Respond to notifications
 
 If someone interacts with the notification, such as tapping to dismiss it, or typing text in a quick reply, your accessory sends information back to the companion app using [`messageHandler(_:)`](./notificationsforwarding/accessorynotificationshandler/messagehandler%28_%29.md). The [`NotificationResponse`](./notificationresponse.md) structure details the reply and your app delivers it to the system by calling [`sendResponse(_:)`](./notificationsforwarding/accessorynotificationssession/sendresponse%28_%29.md).
 

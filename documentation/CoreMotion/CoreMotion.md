@@ -14,7 +14,7 @@ Process accelerometer, gyroscope, pedometer, and environment-related events.
 - visionOS 1.0+
 - watchOS 2.0+
 
-#### Overview
+## Overview
 
 Core Motion reports motion- and environment-related data from the available onboard hardware of iOS, iPadOS, watchOS, and visionOS devices. This hardware includes the device’s accelerometers and gyroscopes, and, when available, the pedometer, magnetometer, and barometer. Use this data in your app as input for user interactions, fitness tracking, health-related matters, and more. For example, a game might use accelerometer and gyroscope input to control onscreen game behavior.
 

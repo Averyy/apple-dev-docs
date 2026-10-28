@@ -5,11 +5,11 @@
 
 Detects negative array bounds.
 
-#### Overview
+## Overview
 
 Use this check to detect negative array bounds. Variable-length arrays with a negative length have undefined behavior, and may cause stack corruption. Available in Xcode 9 and later.
 
-##### Negative variable-length array bounds in C
+### Negative variable-length array bounds in C
 
 In the following code, the call to the `invalid_index_returning_function` function returns a negative number that results in an invalid array:
 
@@ -21,7 +21,7 @@ int idx = invalid_index_returning_function();
 int array[idx]; // Error: invalid array length
 ```
 
-###### Solution
+#### Solution
 
 Fix the issue by checking array bounds before constructing arrays.
 

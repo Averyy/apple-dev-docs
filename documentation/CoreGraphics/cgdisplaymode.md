@@ -20,7 +20,7 @@ class CGDisplayMode
 typedef struct CGDisplayMode * CGDisplayModeRef;
 ```
 
-#### Overview
+## Overview
 
 A display mode is a set of properties (such as width, height, pixel depth, and refresh rate), and options (such as stretched LCD panel filling). For more information see [Creating and Managing Display Modes](./quartz-display-services.md#Creating-and-Managing-Display-Modes) or [Getting Information About a Display Mode](./quartz-display-services.md#Getting-Information-About-a-Display-Mode).
 

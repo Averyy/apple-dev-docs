@@ -24,7 +24,7 @@ class HMZone
 @interface HMZone : NSObject
 ```
 
-#### Overview
+## Overview
 
 An [`HMZone`](./hmzone.md) instance is an optional grouping of rooms in a home, with names like “upstairs” and “downstairs”. Zones are optional—rooms don’t need to be in a zone. By adding rooms to a zone, the user can give commands to Siri like “Siri, turn on all of the lights downstairs.” A single room can be in multiple zones—for example, “kitchen” might be in both the “downstairs” and “entertainment area” zones.
 

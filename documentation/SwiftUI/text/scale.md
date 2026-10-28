@@ -21,7 +21,7 @@ Defines text scales
 struct Scale
 ```
 
-#### Overview
+## Overview
 
 Text scale provides a way to pick a logical text scale relative to the base font which is used.
 

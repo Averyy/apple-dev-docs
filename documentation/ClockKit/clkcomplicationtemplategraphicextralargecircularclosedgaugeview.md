@@ -17,7 +17,7 @@ A template for displaying an extra-large SwiftUI view inside a closed circular g
 final class CLKComplicationTemplateGraphicExtraLargeCircularClosedGaugeView<Label> where Label : View
 ```
 
-#### Overview
+## Overview
 
 This template belongs to the [`CLKComplicationFamily.graphicExtraLarge`](./clkcomplicationfamily/graphicextralarge.md) family. [Figure 1](./clkcomplicationtemplategraphicextralargecircularclosedgaugeview.md#3667262) shows the layout of the complication and where it appears on the clock face.
 

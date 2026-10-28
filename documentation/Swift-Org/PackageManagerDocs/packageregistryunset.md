@@ -13,7 +13,7 @@ Remove a configured registry.
 **Availability**:
 - Swift 5.9+
 
-##### Usage
+### Usage
 
 ```
 package-registry unset [--package-path=<package-path>]

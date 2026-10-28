@@ -15,11 +15,11 @@ Returns the types of direct conversions currently configuredin the Text Encoding
 OSStatus TECGetDirectTextEncodingConversions(TECConversionInfo availableConversions[], ItemCount maxAvailableConversions, ItemCount *actualAvailableConversions);
 ```
 
-#### Return Value
+## Return Value
 
 A resultcode. See [Result Codes](./carbon_core/text_encoding_conversion_manager.md#1664324).
 
-#### Discussion
+## Discussion
 
 This function ignores duplicate text encoding conversion informationstructures. If you used the  [`TECCountDirectTextEncodingConversions`](./api-1571822-teccountdirecttextencodingconver.md) function to determine the size of the `directConversions[]` array,the number of text encoding conversion information structures maybe fewer than the number of array elements, because `TECCountDirectTextEncodingConversions` countsduplicate text encoding conversion information structures.  
 

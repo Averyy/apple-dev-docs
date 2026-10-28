@@ -27,7 +27,7 @@ func presentAuthorizationViewController() async throws
 - (void) presentAuthorizationViewControllerWithCompletion:(void (^)(BOOL success, NSError *error)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 This is only valid during authentication requests. If the system can’t show the controller, the completion returns an error.
 

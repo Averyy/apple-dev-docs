@@ -26,7 +26,7 @@ static let boostShadowAmount: CIRAWFilterOption
 extern CIRAWFilterOption const kCIInputBoostShadowAmountKey;
 ```
 
-#### Discussion
+## Discussion
 
 The associated value must be an [`NSNumber`](../../Foundation/nsnumber.md) object that specifies floating-point value. The value has no effect if the image used for initialization is not RAW.
 

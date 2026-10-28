@@ -19,7 +19,7 @@ var usableParts: NSScroller.UsableParts { get }
 @property (readonly) NSUsableScrollerParts usableParts;
 ```
 
-#### Discussion
+## Discussion
 
 See [`NSScroller.UsableParts`](./usableparts-swift.enum.md) for a list of possible values.
 

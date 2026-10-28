@@ -21,7 +21,7 @@ Creates a header intent with the provided information.
 + (NSPresentationIntent *) headerIntentWithIdentity:(NSInteger) identity level:(NSInteger) level nestedInsideIntent:(NSPresentationIntent *) parent;
 ```
 
-#### Return Value
+## Return Value
 
 A new intent with the kind set to [`NSPresentationIntentKindHeader`](../nspresentationintentkind/nspresentationintentkindheader.md).
 

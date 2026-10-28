@@ -21,7 +21,7 @@ If the path does not reside in the hierarchy beneath the starting directory, ret
 static var resolveBeneath: Stat.Flags { get }
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding C constant is `AT_RESOLVE_BENEATH`.
 

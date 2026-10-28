@@ -24,11 +24,11 @@ func JSGlobalContextCreateInGroup(_ group: JSContextGroupRef!, _ globalObjectCla
 JSGlobalContextRefJSGlobalContextCreateInGroup(JSContextGroupRef group, JSClassRef globalObjectClass);
 ```
 
-#### Return Value
+## Return Value
 
 A [`JSGlobalContextRef`](./jsglobalcontextref.md) with a global object of class `globalObjectClass` and a context group equal to `group`.
 
-#### Discussion
+## Discussion
 
 [`JSGlobalContextCreateInGroup(_:_:)`](./jsglobalcontextcreateingroup%28_,_%29.md) allocates a global object and populates it with all the built-in JavaScript objects, such as `Object`, `Function`, `String`, and `Array`.
 

@@ -19,11 +19,11 @@ var attributesForExtraLineFragment: [NSAttributedString.Key : Any] { get }
 @property (copy, readonly) NSDictionary<NSString *,id> * attributesForExtraLineFragment;
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary of attributes used to lay out the extra line fragment.
 
-#### Discussion
+## Discussion
 
 The default implementation tries to use the `NSTextView` method [`typingAttributes`](../nstextview/typingattributes.md) if possible; otherwise, it uses the attributes for the last character.
 

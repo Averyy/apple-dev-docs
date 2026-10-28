@@ -15,7 +15,7 @@ Applies a single-precision multichannel biquad IIR filter.
 void vDSP_biquadm(vDSP_biquadm_Setup __Setup, const float * _Nonnull *__X, vDSP_Stride __IX, float * _Nonnull *__Y, vDSP_Stride __IY, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 For each channel, this function applies a cascaded biquad filter to the input values specified by the channel’s pointer in `X`. 
 

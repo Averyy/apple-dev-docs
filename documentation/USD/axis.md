@@ -5,11 +5,11 @@
 
 A vector that describes the axis of rotation.
 
-#### Overview
+## Overview
 
 The object spins in a plane perpendicular to the value of this property. To reverse a spin direction, invert the value of this property. The default value points positively in the y-direction.
 
-##### Declaration
+### Declaration
 
 ```other
 uniform vector3d axis = (0.0, 1.0, 0.0)

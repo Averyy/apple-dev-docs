@@ -23,7 +23,7 @@ class var invalidationContextClass: AnyClass { get }
 @property (class, nonatomic, readonly) Class invalidationContextClass;
 ```
 
-#### Discussion
+## Discussion
 
 If you subclass `UICollectionViewLayout` and use a custom invalidation context object to improve the performance of your layout updates, override this method and return your [`UICollectionViewLayoutInvalidationContext`](../uicollectionviewlayoutinvalidationcontext.md) subclass. When the collection view needs to invalidate your layout, it uses the class you provide to create an appropriate invalidation context object.
 

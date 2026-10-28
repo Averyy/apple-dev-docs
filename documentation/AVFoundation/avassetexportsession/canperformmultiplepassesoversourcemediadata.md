@@ -24,7 +24,7 @@ var canPerformMultiplePassesOverSourceMediaData: Bool { get set }
 @property (nonatomic) BOOL canPerformMultiplePassesOverSourceMediaData;
 ```
 
-#### Discussion
+## Discussion
 
 When the value for this property is [`true`](../../Swift/true.md), the export session can produce higher quality results at the expense of longer export times. Setting this property to [`true`](../../Swift/true.md) may also require the export session to write temporary data to disk during the export. To control the location of temporary data, use the property [`directoryForTemporaryFiles`](./directoryfortemporaryfiles.md).
 

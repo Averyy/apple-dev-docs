@@ -23,7 +23,7 @@ func startDeviceMotionUpdates()
 - (void) startDeviceMotionUpdates;
 ```
 
-#### Discussion
+## Discussion
 
 To receive the latest device-motion data, examine the [`deviceMotion`](./devicemotion.md) property.
 

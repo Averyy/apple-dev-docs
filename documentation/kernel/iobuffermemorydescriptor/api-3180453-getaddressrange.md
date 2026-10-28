@@ -16,7 +16,7 @@ Returns the address and length of the memory buffer.
 kern_return_t GetAddressRange(IOAddressSegment *range);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../../DriverKit/error-codes.md). 
 

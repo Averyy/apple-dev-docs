@@ -23,7 +23,7 @@ let kCTFontDescriptorLanguageAttribute: CFString
 extern CFStringRef const kCTFontDescriptorLanguageAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 The language identifier for font fallback selection.
 

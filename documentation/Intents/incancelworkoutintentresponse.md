@@ -23,7 +23,7 @@ class INCancelWorkoutIntentResponse
 @interface INCancelWorkoutIntentResponse : INIntentResponse
 ```
 
-#### Overview
+## Overview
 
 Use an [`INCancelWorkoutIntentResponse`](./incancelworkoutintentresponse.md) object to specify whether your app is able to cancel a workout. The response object contains only the status code that indicates whether to launch your app or whether there was a problem.
 

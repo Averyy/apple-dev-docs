@@ -5,13 +5,13 @@
 
 Update legacy app code signatures so your app runs on current OS releases.
 
-#### Overview
+## Overview
 
 Before you distribute an app, you apply a code signature to it. The signature certifies that you are the app’s creator and enables the system to detect unwanted modifications — whether accidental or malicious — that happen after you sign your app. As a security measure, iOS refuses to launch an app that has a missing or invalid signature.
 
 Starting in iOS 15, iPadOS 15, tvOS 15, and watchOS 8, the system checks for a new, more secure signature format that uses Distinguished Encoding Rules, or DER, to embed entitlements into your app’s signature. Apps signed with a previous signature format will not launch.
 
-##### Determine whether your app needs a new signature
+### Determine whether your app needs a new signature
 
 This change to DER embeddded entitlements  won’t affect most apps. For apps that you distribute through the App Store or TestFlight, App Store Connect first verifies your signature, and then re-signs the app using an Apple identity, before making the app available for download. Apps available through these channels already have the new signature format.
 
@@ -50,11 +50,11 @@ Page size=4096
      -2=904f563968898c7569794e19bcd9304d46ca5c0b9f09c792081bdb8ec9c04c92
 ```
 
-##### Determine whether your app needs a new provisioning profile
+### Determine whether your app needs a new provisioning profile
 
 Starting in iOS 15, iPadOS 15, tvOS 15, and watchOS 8, apps that have entitlements, and that you build outside the com.apple.developer namespace, and are not included by default in a provisioning profile (including application-identifier or get-task-allow) may require a DER-encoded version of the provisioning profile. Beginning with Xcode 13, provisioning profiles are issued with DER encoding by default. If your app successfully installs, but doesn’t launch, your app needs to be re-signed with a new provisioning profile. For more information about DER encoded provisioning profiles, see [Provisioning profile updates.](https://developer.apple.com/help/account/manage-profiles/provisioning-profile-updates)
 
-##### Re-sign your app
+### Re-sign your app
 
 If your app doesn’t have the new signature format, or is missing the DER entitlements in the signature, you’ll need to re-sign the app on a Mac running macOS 11 or later, which includes the DER encoding by default.
 

@@ -21,11 +21,11 @@ func SecVerifyTransformCreate(_ key: SecKey, _ signature: CFData?, _ error: Unsa
 SecTransformRefSecVerifyTransformCreate(SecKeyRef key, CFDataRef signature, CFErrorRef*error);
 ```
 
-#### Return Value
+## Return Value
 
 A pointer to a new transform or `NULL` on error. In Objective-C, call the [`CFRelease`](../CoreFoundation/cfrelease.md) function to free this object’s memory when you are done with it.
 
-#### Discussion
+## Discussion
 
 This function creates a transform which verifies a cryptographic signature. The [`kSecInputIsAttributeName`](./ksecinputisattributename.md) attribute defaults to [`kSecInputIsPlainText`](./ksecinputisplaintext.md), and the [`kSecDigestTypeAttribute`](./ksecdigesttypeattribute.md) and [`kSecDigestLengthAttribute`](./ksecdigestlengthattribute.md) attributes default to something appropriate for the type of key you have supplied.
 

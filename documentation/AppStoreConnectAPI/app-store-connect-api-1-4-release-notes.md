@@ -5,11 +5,11 @@
 
 Update your server-side code to use new features, and test your code against API changes.
 
-#### Overview
+## Overview
 
 App Store Connect API version 1.4 provides resources that enable you to automate actions you take in App Store Connect.
 
-##### New features
+### New features
 
 - The [Power and Performance Metrics and Logs](./power-and-performance-metrics-and-logs.md) functionality adds support for the `TERMINATION` metric type in the [`Get power and performance metrics for an app`](./get-v1-apps-_id_-perfpowermetrics.md) and [`Get power and performance metrics for a build`](./get-v1-builds-_id_-perfpowermetrics.md) endpoints.
 - The [`UserRole`](./userrole.md) type adds three new user roles: `CREATE_APPS`, `CLOUD_MANAGED_DEVELOPER_ID`, and `CLOUD_MANAGED_APP_DISTRIBUTION`.

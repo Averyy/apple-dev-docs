@@ -25,7 +25,7 @@ class func identifierForNewStore(at storeURL: URL) -> Any
 + (id) identifierForNewStoreAtURL:(NSURL *) storeURL;
 ```
 
-#### Return Value
+## Return Value
 
 The identifier for the store at `storeURL`.
 

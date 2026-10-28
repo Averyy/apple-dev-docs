@@ -15,11 +15,11 @@ Gets the transport type of the IOUserVideoClockDevice.
 IOUserVideoTransportType GetTransportType();
 ```
 
-#### Return Value
+## Return Value
 
 The transport type of the clock device.
 
-#### Discussion
+## Discussion
 
 The object’s work queue synchronizes access to this value.
 

@@ -19,7 +19,7 @@ let kSCPropNetInterfaceType: CFString
 extern CFStringRef const kSCPropNetInterfaceType;
 ```
 
-#### Discussion
+## Discussion
 
 This key can be passed the following constants:
 

@@ -26,11 +26,11 @@ func items() -> [AVPlayerItem]
 - (NSArray<AVPlayerItem *> *) items;
 ```
 
-#### Return Value
+## Return Value
 
 An array of the currently enqueued player items.
 
-#### Discussion
+## Discussion
 
 The array contains [`AVPlayerItem`](../avplayeritem.md) objects currently in the player’s queue.
 

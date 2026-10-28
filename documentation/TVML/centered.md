@@ -5,15 +5,15 @@
 
 Centers media items in a shelf.
 
-#### Overview
+## Overview
 
 Use the `centered` attribute to center items horizontally in a `shelf` element when there are fewer elements than the shelf length.
 
-##### Values for centered
+### Values for centered
 
 - **Boolean**: The shelf horizontally centers the elements inside of it when this attribute is set to `true`.
 
-##### Elements that Use centered
+### Elements that Use centered
 
 - [shelf](./shelf.md)
 

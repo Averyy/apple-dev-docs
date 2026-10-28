@@ -14,7 +14,7 @@
 kMPCriticalRegionInfoVersion = 1L | (kOpaqueCriticalRegionID << 16)
 ```
 
-#### Discussion
+## Discussion
 
 The `MPCriticalRegionInfo` structure version.
 

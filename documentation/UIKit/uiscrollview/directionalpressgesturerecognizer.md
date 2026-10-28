@@ -25,7 +25,7 @@ var directionalPressGestureRecognizer: UIGestureRecognizer { get }
 @property (nonatomic, readonly) UIGestureRecognizer * directionalPressGestureRecognizer;
 ```
 
-#### Discussion
+## Discussion
 
 The [`directionalPressGestureRecognizer`](./directionalpressgesturerecognizer.md) is disabled by default. If you want to perform scrolling in direct response to up, down, left, and right arrow button presses, instead of scrolling indirectly in response to focus updates, enable this gesture recognizer.
 

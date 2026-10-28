@@ -24,7 +24,7 @@ class MPSMatrixDecompositionCholesky
 @interface MPSMatrixDecompositionCholesky : MPSMatrixUnaryKernel
 ```
 
-#### Overview
+## Overview
 
 This kernel computes one of the following factorizations of a matrix *A*:
 

@@ -21,11 +21,11 @@ Publishes the last element of a stream, after the stream finishes.
 func last() -> Publishers.Last<Self>
 ```
 
-#### Return Value
+## Return Value
 
 A publisher that only publishes the last element of a stream.
 
-#### Discussion
+## Discussion
 
 Use [`last()`](./last%28%29.md) when you need to emit only the last element from an upstream publisher.
 

@@ -21,7 +21,7 @@ Scales the point size of the font.
 func scaled(by factor: CGFloat) -> Font
 ```
 
-#### Discussion
+## Discussion
 
 Calls to scale are multiplicative, based on the size of the resolved font. For example,
 

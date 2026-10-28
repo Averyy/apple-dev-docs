@@ -21,11 +21,11 @@ Resolves a transient entity from an exported `IntentFile` through the entity typ
 func resolved(from file: IntentFile) async throws -> AnyTransientAppEntity
 ```
 
-#### Return Value
+## Return Value
 
 The resolved transient entity.
 
-#### Discussion
+## Discussion
 
 Use this to verify the import direction — that an `IntentFile` produced by `AnyTransientAppEntity/exported(as:)-swift.method` (or constructed from test data) can be resolved back into a transient entity through the same pipeline used at runtime.
 

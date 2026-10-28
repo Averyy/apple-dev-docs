@@ -19,7 +19,7 @@ func candidateSelected(_ candidateString: NSAttributedString!)
 - (void) candidateSelected:(NSAttributedString *) candidateString;
 ```
 
-#### Discussion
+## Discussion
 
 The candidate object is the user’s final choice from the candidate window. The candidate window is closed before this method is called.
 

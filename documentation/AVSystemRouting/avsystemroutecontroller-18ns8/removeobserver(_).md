@@ -17,7 +17,7 @@ Removes a previously registered observer from the system routing controller.
 final func removeObserver(_ observer: any AVSystemRouteControllerObserver)
 ```
 
-#### Discussion
+## Discussion
 
 Call this function to unregister an observer when it no longer needs to receive routing event notifications. This is typically done in the observer’s deallocation or when the observer is no longer relevant to avoid memory leaks and unnecessary callbacks.
 

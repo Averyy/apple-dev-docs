@@ -27,7 +27,7 @@ class UICalendarView
 
 - [About app development with UIKit](./about-app-development-with-uikit.md)
 
-#### Overview
+## Overview
 
 Use a calendar view to show users specific dates that have additional information (for example, scheduled events) using decorations that you customize. You can also use a calendar view for users to select one specific date, multiple dates, or no date.
 
@@ -41,7 +41,7 @@ To add a calendar view to your interface:
 
 You use a calendar view only for the display and selection of dates. If you want to handle date and time selection, use [`UIDatePicker`](./uidatepicker.md).
 
-##### Configure a calendar view
+### Configure a calendar view
 
 Configure your calendar view to display the type of calendar appropriate to the user’s location and cultural preference, in the user’s preferred language. By default, a calendar view selects the user’s current [`Calendar`](../Foundation/calendar.md) and [`Locale`](../Foundation/locale.md). If users can select a different calendar or locale in your app, configure the calendar view to use those selections.
 
@@ -104,7 +104,7 @@ let calendarViewDateRange = DateInterval(start: fromDate, end: toDate)
 calendarView.availableDateRange = calendarViewDateRange
 ```
 
-##### Display decorations for specific dates
+### Display decorations for specific dates
 
 Use decorations to show users which specific dates have additional information. Add meaning or emphasis to the decorations by setting the color, size, image, or custom view that you display for a specific date. To display decorations in your calendar view, create a custom [`UICalendarViewDelegate`](./uicalendarviewdelegate.md) object, implement [`calendarView(_:decorationFor:)`](./uicalendarviewdelegate/calendarview%28_,decorationfor%29.md), and set your custom object as the calendar view’s delegate.
 
@@ -184,7 +184,7 @@ func add(decoration: UICalendarView.Decoration, on date: Date) {
 }
 ```
 
-##### Handle date selection
+### Handle date selection
 
 Let users select a single date, multiple dates, or no date with your calendar view. First, decide which type of date selection you want. Then create a selection object and delegate for that type, and assign it to the calendar view’s [`selectionBehavior`](./uicalendarview/selectionbehavior.md).
 

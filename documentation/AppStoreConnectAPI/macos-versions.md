@@ -5,7 +5,7 @@
 
 Read macOS version information you configure for an Xcode Cloud workflow.
 
-#### Overview
+## Overview
 
 The `ciMacOsVersions` resource represents the version of macOS you configure for an Xcode Cloud workflow.
 

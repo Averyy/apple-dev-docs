@@ -24,7 +24,7 @@ var segmentCount: Int { get set }
 @property (nonatomic) NSUInteger segmentCount;
 ```
 
-#### Discussion
+## Discussion
 
 All keyframes have the same number of curve segments.
 

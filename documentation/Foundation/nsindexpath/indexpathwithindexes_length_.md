@@ -21,7 +21,7 @@ Creates an index path with one or more nodes.
 + (instancetype) indexPathWithIndexes:(const NSUInteger[]) indexes length:(NSUInteger) length;
 ```
 
-#### Return Value
+## Return Value
 
 Index path with `indexes` up to `length`.
 

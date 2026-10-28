@@ -15,11 +15,11 @@ Set the address at which a buffer's data will be stored.
 void buf_setdataptr(buf_t bp, uintptr_t data);
 ```
 
-#### Return Value
+## Return Value
 
 void.
 
-#### Discussion
+## Discussion
 
 In traditional buffer use, the data pointer will be set automatically. This routine is useful with iobufs (allocated with buf_alloc()).
 

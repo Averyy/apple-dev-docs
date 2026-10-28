@@ -19,7 +19,7 @@ Set the default device globally.  Use the scoped version, [`withDefaultDevice(_:
 static func setDefault(device: Device?)
 ```
 
-#### Discussion
+## Discussion
 
 Beware: using the static cpu and gpu values will render this unusable.  If required, call like this:
 

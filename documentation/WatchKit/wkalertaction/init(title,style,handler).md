@@ -19,11 +19,11 @@ convenience init(title: String, style: WKAlertActionStyle, handler: @escaping WK
 + (instancetype) actionWithTitle:(NSString *) title style:(WKAlertActionStyle) style handler:(WKAlertActionHandler) handler;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized action object that you can display in an alert.
 
-#### Discussion
+## Discussion
 
 Use this method to create a button to display in an action sheet. In an action sheet, specifying an action with the [`WKAlertActionStyle.cancel`](../wkalertactionstyle/cancel.md) style replaces the standard Cancel button provided by the system.
 

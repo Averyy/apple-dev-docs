@@ -14,7 +14,7 @@
 virtual uint32_t getPhysicalMax();
 ```
 
-#### Return Value
+## Return Value
 
 Returns the element’s physical maximum.
 

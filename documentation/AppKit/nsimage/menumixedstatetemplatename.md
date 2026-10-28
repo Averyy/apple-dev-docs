@@ -19,7 +19,7 @@ class let menuMixedStateTemplateName: String
 extern NSImageName const NSImageNameMenuMixedStateTemplate;
 ```
 
-#### Discussion
+## Discussion
 
 Drawing these outside of menus is discouraged.
 

@@ -25,7 +25,7 @@ class INPayBillIntent
 @interface INPayBillIntent : INIntent
 ```
 
-#### Overview
+## Overview
 
 Siri creates an [`INPayBillIntent`](./inpaybillintent.md) object when the user asks to pay a bill for a designated payee. A pay bill intent object includes the payment amount, the payment date, and the recipient of the payment. Use that information to validate the transaction and to schedule the payment.
 
@@ -33,7 +33,7 @@ To handle this intent, the handler object in your Intents extension must adopt t
 
 This intent object represents a financial transaction between the user and an entity (such as a utility company or credit card bill) defined in your app. You’re responsible for configuring and managing the entities that accept the payment of bills.
 
-##### Additional Intent Attributes
+### Additional Intent Attributes
 
 The following table lists additional attributes of this intent object:
 
@@ -44,7 +44,7 @@ The following table lists additional attributes of this intent object:
 
 When performing a search, Siri automatically asks the user to unlock a currently locked device. You don’t need to explicitly ask to unlock the device. In addition, Siri always prompts the user to confirm the request before asking your Intents extension to handle it.
 
-##### Example Phrases
+### Example Phrases
 
 Users can ask Siri to initiate the payment of a bill in a variety of ways. The table below provides a few sample phrases in different languages. You can use these phrases during testing to trigger your intents. This list isn’t exhaustive and Siri may recognize many other phrases.
 

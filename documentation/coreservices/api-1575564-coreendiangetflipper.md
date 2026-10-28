@@ -15,11 +15,11 @@ Obtains the flipper callback that is installed for thespecified data type.
 OSStatus CoreEndianGetFlipper(OSType dataDomain, OSType dataType, CoreEndianFlipProc *proc, void **refcon);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. Returns `noErr` ifthe flipper callback is found.
 
-#### Discussion
+## Discussion
 
 You can call the function `CoreEndianGetFlipper` todetermine whether a flipper for a given data type is available. 
 

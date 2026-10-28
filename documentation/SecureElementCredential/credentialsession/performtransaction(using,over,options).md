@@ -20,7 +20,7 @@ func performTransaction(using credential: CredentialSession.Credential, over sce
 
 - [Accessing and using secure element credentials](../accessing-and-using-secure-element-credentials.md)
 
-#### Discussion
+## Discussion
 
 1. Call [`acquirePresentmentAssertion()`](./acquirepresentmentassertion%28%29.md) before calling this function to ensure that UI from other applications’ payment tasks don’t interfere with this transaction.
 2. Relinquish the asssertion with [`relinquish()`](./presentmentintentassertion/relinquish%28%29.md) immediately prior to calling `performTransaction(using:over:options:)`.

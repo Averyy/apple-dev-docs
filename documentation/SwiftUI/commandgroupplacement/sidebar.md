@@ -19,7 +19,7 @@ Placement for commands that control the app’s sidebar and full-screen modes.
 static let sidebar: CommandGroupPlacement
 ```
 
-#### Discussion
+## Discussion
 
 By default, this group includes the following commands in macOS:
 

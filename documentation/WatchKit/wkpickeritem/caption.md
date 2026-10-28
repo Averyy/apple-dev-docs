@@ -19,7 +19,7 @@ var caption: String? { get set }
 @property (nonatomic, copy, nullable) NSString * caption;
 ```
 
-#### Discussion
+## Discussion
 
 When the picker’s focus style includes a caption, the picker gets the text for that caption from this property. Captions are a way to identify the meaning of the item’s content. You can also assign the same caption to all of the items in a picker to identify the purpose of the picker itself.
 

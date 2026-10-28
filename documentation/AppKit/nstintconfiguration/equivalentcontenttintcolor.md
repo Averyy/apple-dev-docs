@@ -19,7 +19,7 @@ var equivalentContentTintColor: NSColor? { get }
 @property (strong, readonly, nullable) NSColor * equivalentContentTintColor;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is an [`NSColor`](../nscolor.md) that matches the represented content tint. This property is `nil` if the system can’t represent the content tint as an [`NSColor`](../nscolor.md).
 

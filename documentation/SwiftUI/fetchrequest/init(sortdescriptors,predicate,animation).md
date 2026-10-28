@@ -31,7 +31,7 @@ Available when `Result` inherits `NSManagedObject`.
 @preconcurrency init(sortDescriptors: [SortDescriptor<Result>], predicate: NSPredicate? = nil, animation: Animation? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 The request gets the entity type from the `Result` instance by calling that managed object’s [`entity()`](../../CoreData/nsmanagedobject/entity%28%29.md) type method. If you need to specify the entity type explicitly, use the [`init(entity:sortDescriptors:predicate:animation:)`](./init%28entity,sortdescriptors,predicate,animation%29.md) initializer instead. If you need more control over the fetch request configuration, use [`init(fetchRequest:animation:)`](./init%28fetchrequest,animation%29.md).
 

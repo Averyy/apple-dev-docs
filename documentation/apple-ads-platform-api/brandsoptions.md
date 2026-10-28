@@ -15,13 +15,13 @@ Reports options for brands promoted object campaigns.
 object BrandsOptions
 ```
 
-#### Discussion
+## Discussion
 
 The `BrandsOptions` configures optional row behavior for `brands` report responses. The only supported value for `includeRows` is `GRAND_TOTAL`, which appends an aggregated summary row at the end of the result set. This totals all numeric metric fields across the full result page, giving a quick overview without requiring a client-side sum.
 
 Note that `EMPTY_METRICS` (which is available for some other promoted object types) is explicitly unsupported for `brands` entities. If you omit `BrandsOptions` entirely from the report request, the response returns only individual data rows with no summary.
 
-##### Example
+### Example
 
 ```json
 {

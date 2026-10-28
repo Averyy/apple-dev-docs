@@ -21,7 +21,7 @@ The probability of precipitation during the hour.
 var precipitationChance: Double
 ```
 
-#### Discussion
+## Discussion
 
 The value is from `0` (0% probability) to `1` (100% probability).
 

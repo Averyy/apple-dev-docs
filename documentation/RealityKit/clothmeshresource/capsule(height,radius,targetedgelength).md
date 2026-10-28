@@ -18,11 +18,11 @@ Creates a capsule mesh with a topology suitable for cloth simulation.
 static func capsule(height: Float, radius: Float, targetEdgeLength: Float = defaultTargetEdgeLength) throws -> Self
 ```
 
-#### Return Value
+## Return Value
 
 The generated capsule mesh resource.
 
-#### Discussion
+## Discussion
 
 - height: The height of the cylinder portion of the capsule, in meters. The total capsule height is `height + 2 * radius`.
 - radius: The radius of the body and the caps of the generated capsule, in meters.

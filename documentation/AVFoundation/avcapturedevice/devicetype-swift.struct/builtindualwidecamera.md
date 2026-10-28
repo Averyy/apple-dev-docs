@@ -22,7 +22,7 @@ static let builtInDualWideCamera: AVCaptureDevice.DeviceType
 extern AVCaptureDeviceType const AVCaptureDeviceTypeBuiltInDualWideCamera;
 ```
 
-#### Discussion
+## Discussion
 
 The built-in dual camera supports the following features:
 

@@ -14,7 +14,7 @@
 kSBCModePageCaching_WCE_Mask = (1 << kSBCModePageCaching_WCE_Bit)
 ```
 
-#### Discussion
+## Discussion
 
 Mask for use with flags field.
 

@@ -23,7 +23,7 @@ struct UIConfigurationStateCustomKey
 typedef NSString * UIConfigurationStateCustomKey;
 ```
 
-#### Overview
+## Overview
 
 Create a custom state key if you want to define a custom state to include in a configuration state.
 

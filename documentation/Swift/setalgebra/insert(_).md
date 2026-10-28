@@ -23,11 +23,11 @@ Inserts the given element in the set if it is not already present.
 mutating func insert(_ newMember: Self.Element) -> (inserted: Bool, memberAfterInsert: Self.Element)
 ```
 
-#### Return Value
+## Return Value
 
 `(true, newMember)` if `newMember` was not contained in the set. If an element equal to `newMember` was already contained in the set, the method returns `(false, oldMember)`, where `oldMember` is the element that was equal to `newMember`. In some cases, `oldMember` may be distinguishable from `newMember` by identity comparison or some other means.
 
-#### Discussion
+## Discussion
 
 If an element equal to `newMember` is already contained in the set, this method has no effect. In this example, a new element is inserted into `classDays`, a set of days of the week. When an existing element is inserted, the `classDays` set does not change.
 

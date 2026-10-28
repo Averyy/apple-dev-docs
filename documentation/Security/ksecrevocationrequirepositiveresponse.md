@@ -25,7 +25,7 @@ var kSecRevocationRequirePositiveResponse: CFOptionFlags { get }
 kSecRevocationRequirePositiveResponse
 ```
 
-#### Discussion
+## Discussion
 
 If the flag is not set, revocation checking is done on a “best attempt” basis, where failure to reach the server is not considered fatal.
 

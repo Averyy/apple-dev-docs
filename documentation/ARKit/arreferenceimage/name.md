@@ -20,7 +20,7 @@ var name: String? { get set }
 @property (nonatomic, copy, nullable) NSString * name;
 ```
 
-#### Discussion
+## Discussion
 
 For reference images loaded from an Xcode asset catalog, this property is the name assigned in the asset catalog. For programmatically created reference images, this value is `nil`.
 

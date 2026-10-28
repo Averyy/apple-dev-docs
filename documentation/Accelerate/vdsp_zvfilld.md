@@ -21,7 +21,7 @@ Populates a complex double-precision vector with a specified scalar value.
 extern void vDSP_zvfillD(const DSPDoubleSplitComplex *__A, const DSPDoubleSplitComplex *__C, vDSP_Stride __IC, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 The functions in this group populate a vector with a specified scalar value.
 

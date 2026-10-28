@@ -21,11 +21,11 @@ func newTimedMetadataSampleBufferAndResetAnalyzer() -> Unmanaged<CMSampleBuffer>
 - (CMSampleBufferRef) newTimedMetadataSampleBufferAndResetAnalyzer;
 ```
 
-#### Return Value
+## Return Value
 
 A `CMSampleBufferRef` containing the spatial audio timed metadata sample, or `NULL` if no value can be computed.
 
-#### Discussion
+## Discussion
 
 Call this method after you pass the last audio sample buffer of your recording to [`analyzeAudioSample(_:)`](./analyzeaudiosample%28_%29.md). Then pass the returned `CMSampleBufferRef` directly to your [`AVAssetWriterInput`](../avassetwriterinput.md) to add the sample to your recording’s audio timed metadata track. Note that [`AVAssetWriter`](../avassetwriter.md) expects one and only one spatial audio metadata sample buffer to be present in the timed metadata track.
 

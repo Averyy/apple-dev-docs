@@ -15,7 +15,7 @@ A set of capabilities that an audio accessory supports.
 struct Capabilities
 ```
 
-#### Overview
+## Overview
 
 The [`AccessoryControlDevice`](../accessorycontroldevice.md) class’s initializer takes an argument of this type. Use this structure to specify which features your accessory supports when initializing an audio accessory configuration.
 

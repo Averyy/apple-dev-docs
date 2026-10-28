@@ -19,11 +19,11 @@ func sendL2CAPEchoRequest(_ data: UnsafeMutableRawPointer!, length: UInt16) -> I
 - (IOReturn) sendL2CAPEchoRequest:(void *) data length:(UInt16) length;
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if the echo request was able to be sent.
 
-#### Discussion
+## Discussion
 
 The current implementation returns when the request has been sent, but does not indicate when a response is received. Also, the baseband connection must be up for the echo request to be sent. In the future, this method will also open the connection if necessary. The API will be updated to allow the client to be informed when the echo response has been received (both synchronously and asynchronously).
 

@@ -25,7 +25,7 @@ func xpc_dictionary_get_count(_ xdict: xpc_object_t) -> Int
 extern size_t xpc_dictionary_get_count(xpc_object_t xdict);
 ```
 
-#### Return Value
+## Return Value
 
 The number of values stored in the dictionary. Calling [`xpc_dictionary_set_value(_:_:_:)`](./xpc_dictionary_set_value%28_,_,_%29.md) with a non-`NULL` value will increment the count. Calling [`xpc_dictionary_set_value(_:_:_:)`](./xpc_dictionary_set_value%28_,_,_%29.md) with a `NULL` value will decrement the count.
 

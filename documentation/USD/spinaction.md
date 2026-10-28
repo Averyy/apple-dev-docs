@@ -4,11 +4,11 @@
 
 An action that spins a prim.
 
-#### Overview
+## Overview
 
 The default configuration of this action spins an object horizontally on its axis, like a top.
 
-##### Declaration
+### Declaration
 
 ```other
 class Preliminary_Action "SpinAction"

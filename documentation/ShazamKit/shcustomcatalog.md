@@ -25,7 +25,7 @@ class SHCustomCatalog
 @interface SHCustomCatalog : SHCatalog
 ```
 
-#### Overview
+## Overview
 
 Create a custom catalog by adding reference signatures that you generate from audio that you provide. You also add the associated metadata for each signature. Save your custom catalog and share it with others. You can also load a saved catalog.
 

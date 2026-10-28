@@ -12,7 +12,7 @@ Perform operations on Swift SDKs.
 **Availability**:
 - Swift 6.1+
 
-#### Overview
+## Overview
 
 By default, Swift Package Manager compiles code for the host platform on which you run it. Swift 6.1 introduced SDKs (through [SE-0387](https://github.com/swiftlang/swift-evolution/blob/main/proposals/0387-cross-compilation-destinations.md)) to support cross-compilation.
 

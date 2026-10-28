@@ -21,11 +21,11 @@ Returns whether the given node can be added to the graph.
 func canAddNode(_ node: ComputeNodeGraph.Node) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if calling [`addNode(_:)`](./addnode%28_%29.md) with this node would succeed.
 
-#### Discussion
+## Discussion
 
 This is the non-throwing preflight check for [`addNode(_:)`](./addnode%28_%29.md). Use it to validate a node — for example, to gate UI affordances — without modifying the graph.
 

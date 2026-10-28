@@ -21,7 +21,7 @@ Returns a URL components object by parsing a URL in string form.
 + (instancetype) componentsWithString:(NSString *) URLString;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the new URL components object, or `nil` if the URL string could not be parsed.
 

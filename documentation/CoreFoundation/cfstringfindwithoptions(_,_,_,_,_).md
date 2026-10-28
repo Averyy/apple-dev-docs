@@ -25,11 +25,11 @@ func CFStringFindWithOptions(_ theString: CFString!, _ stringToFind: CFString!, 
 extern Boolean CFStringFindWithOptions(CFStringRef theString, CFStringRef stringToFind, CFRange rangeToSearch, CFStringCompareFlags searchOptions, CFRange *result);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the substring was found, `false` otherwise.
 
-#### Discussion
+## Discussion
 
 This function allows you to search only part of the characters of a string for a substring. It returns the found range indirectly, in the final `result` parameter. If you want to know if the entire range of characters represented by a string contains a particular substring, you can use the convenience function [`CFStringFind(_:_:_:)`](./cfstringfind%28_,_,_%29.md). Both of these functions return upon finding the first occurrence of the substring, so if you want to find out about multiple occurrences, call the [`CFStringCreateArrayWithFindResults(_:_:_:_:_:)`](./cfstringcreatearraywithfindresults%28_,_,_,_,_%29.md) function.
 

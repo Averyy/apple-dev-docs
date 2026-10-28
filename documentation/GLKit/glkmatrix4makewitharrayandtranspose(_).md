@@ -22,11 +22,11 @@ func GLKMatrix4MakeWithArrayAndTranspose(_ values: UnsafeMutablePointer<Float>!)
 static GLKMatrix4 GLKMatrix4MakeWithArrayAndTranspose(float values[16]);
 ```
 
-#### Return Value
+## Return Value
 
 A new matrix.
 
-#### Discussion
+## Discussion
 
 The matrix is created and then transposed, before being returned to your application.
 

@@ -23,7 +23,7 @@ A notification the system posts when a renderer flushes its enqueued media data 
 static let AVSampleBufferAudioRendererWasFlushedAutomatically: NSNotification.Name
 ```
 
-#### Discussion
+## Discussion
 
 A renderer may flush enqueued media data when the user routes playback to a new destination, or when you change the playback rate of the attached [`AVSampleBufferRenderSynchronizer`](../../../AVFoundation/avsamplebufferrendersynchronizer.md). No flush occurs for normal pauses and resumes.
 

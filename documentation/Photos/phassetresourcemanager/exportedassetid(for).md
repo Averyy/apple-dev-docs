@@ -20,11 +20,11 @@ Returns the exported asset ID for the specified asset resource.
 func exportedAssetID(for resource: PHAssetResource) async throws -> CKAsset.ExportedAssetID
 ```
 
-#### Return Value
+## Return Value
 
 The exported asset ID for the resource.
 
-#### Discussion
+## Discussion
 
 The returned `CKAsset.ExportedAssetID` can be used to create a `CKAsset` that references the asset resource data without copying it. Network access is always required.
 

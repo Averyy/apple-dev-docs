@@ -15,7 +15,7 @@
 extern NSPasteboardType NSColorPboardType;
 ```
 
-#### Discussion
+## Discussion
 
 In macOS 10.6 and later, use [`color`](./nspasteboard/pasteboardtype/color.md) (and you read and write colors directly to and from the pasteboard).
 

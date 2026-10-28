@@ -25,7 +25,7 @@ typealias nw_privacy_context_t = any OS_nw_privacy_context
 typedef NSObject<OS_nw_privacy_context> * nw_privacy_context_t;
 ```
 
-#### Discussion
+## Discussion
 
 Use *NW_DEFAULT_PRIVACY_CONTEXT* to specify the default shared privacy context that applies to all connections that do not use a custom context.
 

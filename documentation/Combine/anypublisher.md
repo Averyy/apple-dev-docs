@@ -26,7 +26,7 @@ struct AnyPublisher<Output, Failure> where Failure : Error
 
 - [Using Combine for Your App’s Asynchronous Code](./using-combine-for-your-app-s-asynchronous-code.md)
 
-#### Overview
+## Overview
 
 [`AnyPublisher`](./anypublisher.md) is a concrete implementation of [`Publisher`](./publisher.md) that has no significant properties of its own, and passes through elements and completion values from its upstream publisher.
 

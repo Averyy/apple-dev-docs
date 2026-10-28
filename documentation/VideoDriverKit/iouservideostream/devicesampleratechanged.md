@@ -15,7 +15,7 @@ Call to update stream formats when the owning video device changes sample rate.
 kern_return_t DeviceSampleRateChanged(double in_sample_rate);
 ```
 
-#### Discussion
+## Discussion
 
 Goes through all the available stream formats and selects the closet format with the matching sample rate. The system calls [`HandleChangeCurrentStreamFormat`](./handlechangecurrentstreamformat.md) on the stream to update its format.
 

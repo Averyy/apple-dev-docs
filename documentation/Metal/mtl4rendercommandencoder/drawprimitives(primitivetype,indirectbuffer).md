@@ -25,7 +25,7 @@ func drawPrimitives(primitiveType: MTLPrimitiveType, indirectBuffer: MTLGPUAddre
 - (void) drawPrimitives:(MTLPrimitiveType) primitiveType indirectBuffer:(MTLGPUAddress) indirectBuffer;
 ```
 
-#### Discussion
+## Discussion
 
 When you use this function, Metal reads the parameters to the draw command from an [`MTLBuffer`](../mtlbuffer.md) instance, allowing you to implement a GPU-driven workflow where a compute pipeline state determines the draw arguments.
 

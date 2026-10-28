@@ -24,7 +24,7 @@ case cancelled
 AVPlayerLooperStatusCancelled
 ```
 
-#### Discussion
+## Discussion
 
 The system sets this status after you call the [`disableLooping()`](../disablelooping%28%29.md) method.
 

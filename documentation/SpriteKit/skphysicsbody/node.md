@@ -25,7 +25,7 @@ weak var node: SKNode? { get }
 @property (nonatomic, weak, readonly, nullable) SKNode * node;
 ```
 
-#### Discussion
+## Discussion
 
 You associate the body with a node by assigning it to the [`physicsBody`](../sknode/physicsbody.md) property of the [`SKNode`](../sknode.md) object. If the body is not associated with a node, the value is `nil`.
 

@@ -17,7 +17,7 @@ A Boolean value that indicates your app supports CloudKit Sharing.
 - **Name**: `CKSharingSupported`
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 If your app supports CloudKit Sharing, add this key to your app’s `Info.plist` file with a value of [`true`](../../Swift/true.md). This tells the system to launch your app when the user taps or clicks a share’s URL. For example, one they receive in an email or an iMessage from the share’s owner.
 

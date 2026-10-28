@@ -17,7 +17,7 @@ Generate Bernoulli random values with a `p` value of 0.5.
 static func bernoulli(_ shape: some Collection<Int> = [], key: (some RandomStateOrKey)? = MLXArray?.none, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 The values are sampled from the bernoulli distribution with parameter `p` using the default value of 0.5. The result will be of size `shape`.
 

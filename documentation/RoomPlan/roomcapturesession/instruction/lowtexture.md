@@ -17,7 +17,7 @@ An instruction that indicates the framework doesn’t detect distinguishable roo
 case lowTexture
 ```
 
-#### Discussion
+## Discussion
 
 The framework provides this instruction when:
 

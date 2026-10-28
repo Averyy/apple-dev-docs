@@ -21,7 +21,7 @@ func AudioHardwareServiceRemovePropertyListener(_ inObjectID: AudioObjectID, _ i
 extern OSStatus AudioHardwareServiceRemovePropertyListener(AudioObjectID inObjectID, const AudioObjectPropertyAddress *inAddress, AudioObjectPropertyListenerProc inListener, void *inClientData);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 

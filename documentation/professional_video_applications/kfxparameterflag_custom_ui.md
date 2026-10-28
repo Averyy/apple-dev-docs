@@ -19,7 +19,7 @@ var kFxParameterFlag_CUSTOM_UI: Int { get }
 kFxParameterFlag_CUSTOM_UI
 ```
 
-#### Discussion
+## Discussion
 
 The plug-in must provide a custom view for this parameter. See `FXCustomParameterActionAPI` and `FxCustomParameterViewHost`.
 

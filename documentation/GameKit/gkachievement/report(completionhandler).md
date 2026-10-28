@@ -32,7 +32,7 @@ func report() async throws
 - (void) reportAchievementWithCompletionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 When the player makes progress towards completing an achievement, your game communicates the player’s progress to Game Center by calling this method. An achievement object is implicitly tied to the local player that was initialized when the object was created; your game should only report progress when the same local player is still on the device.
 

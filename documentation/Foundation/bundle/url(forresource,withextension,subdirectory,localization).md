@@ -25,11 +25,11 @@ func url(forResource name: String?, withExtension ext: String?, subdirectory sub
 - (NSURL *) URLForResource:(NSString *) name withExtension:(NSString *) ext subdirectory:(NSString *) subpath localization:(NSString *) localizationName;
 ```
 
-#### Return Value
+## Return Value
 
 The file URL for the resource file or `nil` if the file could not be located.
 
-#### Discussion
+## Discussion
 
 This method is equivalent to [`urls(forResourcesWithExtension:subdirectory:)`](./urls%28forresourceswithextension,subdirectory%29.md), except that only nonlocalized resources and those in the language-specific `.lproj` directory specified by `localizationName` are searched.
 

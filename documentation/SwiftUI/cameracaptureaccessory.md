@@ -17,7 +17,7 @@ nonisolated
 struct CameraCaptureAccessory<Content> where Content : View
 ```
 
-#### Overview
+## Overview
 
 The accessory may be presented while the app is in the foreground and has an active camera capture session. The system determines whether and where to present it. Unlike [`ExternalNonInteractiveAccessory`](./externalnoninteractiveaccessory.md), the content can be interactive.
 

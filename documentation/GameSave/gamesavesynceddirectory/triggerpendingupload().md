@@ -19,7 +19,7 @@ Triggers an upload of the directory for any changes that were pending.
 func triggerPendingUpload() async -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if there were pending uploads; otherwise `false`.
 

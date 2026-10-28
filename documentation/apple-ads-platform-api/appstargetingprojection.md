@@ -15,11 +15,11 @@ Targeting projection for apps campaigns.
 object AppsTargetingProjection
 ```
 
-#### Discussion
+## Discussion
 
 The `AppsTargetingProjection` object describes the targeting scope for an apps campaign entity as captured in a report row. Each field is an `IncludeExclude` wrapper whose `include` array lists the active targeting values at the time of the report.
 
-##### Example
+### Example
 
 ```json
 {

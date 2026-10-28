@@ -21,7 +21,7 @@ Get or set a value in this array as a UUID.
 subscript(index: Int) -> uuid_t? { get set }
 ```
 
-#### Return Value
+## Return Value
 
 A UUID value or `nil` if no such value was found.
 

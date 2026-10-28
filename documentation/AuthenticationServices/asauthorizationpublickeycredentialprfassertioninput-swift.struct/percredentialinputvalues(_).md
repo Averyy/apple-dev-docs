@@ -19,7 +19,7 @@ The inputs for the PRF extension, when not specifying general input values.
 static func perCredentialInputValues(_ perCredentialInputValues: [Data : ASAuthorizationPublicKeyCredentialPRFAssertionInput.InputValues]) -> ASAuthorizationPublicKeyCredentialPRFAssertionInput
 ```
 
-#### Return Value
+## Return Value
 
 A configured instance of `ASAuthorizationPublicKeyCredentialPRFAssertionInput`.
 

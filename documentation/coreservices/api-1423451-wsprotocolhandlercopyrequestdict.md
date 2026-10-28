@@ -15,11 +15,11 @@ Parses an incoming XML document for the method name and parameters.
 CFDictionaryRef WSProtocolHandlerCopyRequestDictionary(WSProtocolHandlerRef ref, CFDataRef data);
 ```
 
-#### Return Value
+## Return Value
 
 A `CFDictionary`.
 
-#### Discussion
+## Discussion
 
 This function parses an incoming XML document for the method name and parameters. The results are in a dictionory as `kWSMethodName` (a `CFString`), `kWSMethodParameters` (a `CFDictionary`), and `kWSMethodParameterOrder` (a `CFArray`). If a parse error occurred, `NULL` is returned. Protocol specific additions (for example, `kWSSOAPMessageHeaders`) may also be present in the dictionary. The dictionary returned also represents the context with which XML reply documents are created (see `WSProtocolHandlerCreateReply`). The caller must release the resulting dictionary. Note that the returned dictionary should be used as an input parameter for other `WSProtocol` functions that require a context dictionary parameter.
 

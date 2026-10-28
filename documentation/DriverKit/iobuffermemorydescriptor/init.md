@@ -18,11 +18,11 @@ Initializes the buffer memory descriptor object.
 virtual bool init();
 ```
 
-#### Return Value
+## Return Value
 
 `true` if initialization was successful, or `false` if it was unsuccessful.
 
-#### Discussion
+## Discussion
 
 Don’t call this method directly. Use the [`Create`](./create.md) method instead.
 

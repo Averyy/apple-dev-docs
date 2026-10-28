@@ -23,7 +23,7 @@ func replacing(with other: SIMDMask<Storage>, where mask: SIMDMask<Storage>) -> 
 
 Available when `Storage` is `SIMD4<Int8>`.
 
-#### Discussion
+## Discussion
 
 Equivalent to:
 

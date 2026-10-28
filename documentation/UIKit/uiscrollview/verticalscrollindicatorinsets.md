@@ -23,7 +23,7 @@ var verticalScrollIndicatorInsets: UIEdgeInsets { get set }
 @property (nonatomic) UIEdgeInsets verticalScrollIndicatorInsets;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`zero`](../uiedgeinsets/zero.md).
 

@@ -19,7 +19,7 @@ func iconType() -> PDFTextAnnotationIconType
 - (PDFTextAnnotationIconType) iconType;
 ```
 
-#### Return Value
+## Return Value
 
 The icon type of the annotation.
 

@@ -24,7 +24,7 @@ case deviceOwnerAuthentication
 LAPolicyDeviceOwnerAuthentication
 ```
 
-#### Discussion
+## Discussion
 
 You use the [`LAPolicy.deviceOwnerAuthentication`](./deviceownerauthentication.md) policy when calling the [`evaluatePolicy(_:localizedReason:reply:)`](../lacontext/evaluatepolicy%28_,localizedreason,reply%29.md) method to authenticate a user in iOS with either biometrics or a passcode, in watchOS with a passcode, or in macOS with Touch ID, Apple Watch, or the user’s password.
 

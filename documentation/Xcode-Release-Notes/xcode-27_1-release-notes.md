@@ -5,15 +5,15 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 Xcode 27.1 includes Swift 6.4 and SDKs for iOS 27.1, iPadOS 27, tvOS 27, watchOS 27, macOS 27, and visionOS 27. Xcode 27.1 supports on-device debugging in iOS 17 and later, tvOS 17 and later, watchOS 10 and later, and visionOS. Xcode 27.1 requires a Mac running macOS Tahoe 26.6 or later.
 
 See [Xcode Support](https://developer.apple.com/support/xcode/) to learn more about compatible platforms and deployment targets.
 
-##### Mac Catalyst
+### Mac Catalyst
 
-###### Known Issues
+#### Known Issues
 
 - Projects that use APIs specific to iOS 27.1 show compile errors when building for Mac Catalyst (“undeclared identifier”, “not found”, “has no member”, “cannot find”, etc.). (185924957)
 
@@ -22,15 +22,15 @@ See [Xcode Support](https://developer.apple.com/support/xcode/) to learn more ab
 
   **Workaround:** Add a Mac Catalyst 27.0 minimum deployment in target settings.
 
-##### Previews
+### Previews
 
-###### New Features
+#### New Features
 
 - The canvas overrides picker now includes a Display group for previewing content on a device’s alternative display. (182598534)
 
-##### Simulator
+### Simulator
 
-###### Known Issues
+#### Known Issues
 
 - Initial Simulator launch can take several minutes. (187708500)
 - StandBy is unavailable in the iPhone Duo Simulator runtime. (187708663)

@@ -39,11 +39,11 @@ func actionIcon(for size: CGSize) -> NSImage?
 - (NSImage *) actionIconForSize:(CGSize) size;
 ```
 
-#### Return Value
+## Return Value
 
 The action icon, or `nil` if the icon was unable to be loaded.
 
-#### Discussion
+## Discussion
 
 This icon serves as a default and should be used to represent the extension in contexts like action sheets or toolbars prior to the extension being loaded into an extension context. Once the extension is loaded, use the [`action(for:)`](../wkwebextensioncontext/action%28for%29.md) API to get the tab-specific icon.
 

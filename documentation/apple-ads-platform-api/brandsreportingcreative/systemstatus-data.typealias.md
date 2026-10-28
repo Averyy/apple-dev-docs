@@ -21,11 +21,11 @@ string BrandsReportingCreative.SystemStatus
 - `INVALID`: The creative has failed one or more validation checks. Check `systemStatusReasons` for the cause.
 - `PENDING`: The creative is undergoing system validation, policy determination, or waiting for asset CDN availability.
 
-#### Discussion
+## Discussion
 
 A `VALID` result at report time only confirms system checks had passed as of that snapshot; Apple’s additional creative review can still affect current delivery.
 
-##### Example
+### Example
 
 ```json
 {

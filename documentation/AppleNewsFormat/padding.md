@@ -15,13 +15,13 @@ The object for defining space around the content in a table cell.
 object Padding
 ```
 
-#### Discussion
+## Discussion
 
 Use cell padding to add space around the content in the cell. For example, you can set the amount of padding between the right side of the cell and the content, or the left side of the cell and the content.
 
 You can use this object in [`TableCellStyle`](./tablecellstyle.md) and [`ConditionalTableCellStyle`](./conditionaltablecellstyle.md).
 
-##### Example
+### Example
 
 ```json
 {

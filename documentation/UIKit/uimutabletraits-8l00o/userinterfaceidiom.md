@@ -19,7 +19,7 @@ The user interface idiom of the trait collection.
 @property (nonatomic) UIUserInterfaceIdiom userInterfaceIdiom;
 ```
 
-#### Discussion
+## Discussion
 
 The default user interface idiom for a trait collection is [`UIUserInterfaceIdiom.unspecified`](../uiuserinterfaceidiom/unspecified.md).
 

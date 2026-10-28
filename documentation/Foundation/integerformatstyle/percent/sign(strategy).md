@@ -21,7 +21,7 @@ Modifies the format style to use the specified sign display strategy.
 func sign(strategy: IntegerFormatStyle<Value>.Percent.Configuration.SignDisplayStrategy) -> IntegerFormatStyle<Value>.Percent
 ```
 
-#### Return Value
+## Return Value
 
 An integer format style modified to use the specified sign display strategy.
 

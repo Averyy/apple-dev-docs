@@ -23,7 +23,7 @@ Sets the name of the specified zone.
 extern void NSSetZoneName(NSZone *zone, NSString *name);
 ```
 
-#### Discussion
+## Discussion
 
 Sets the name of `zone` to `name`, which can aid in debugging.
 

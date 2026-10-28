@@ -24,7 +24,7 @@ var dnsServerAddressMatch: [String]? { get set }
 @property (copy, nullable) NSArray<NSString *> * DNSServerAddressMatch;
 ```
 
-#### Discussion
+## Discussion
 
 An array of DNS server IP addresses represented as `NSString` objects. If each of the current default DNS servers is equal to one of the strings in this array and all of the other conditions in the rule match, then the rule matches. If this property is nil (the default), then the default DNS servers do not factor into the rule match.
 

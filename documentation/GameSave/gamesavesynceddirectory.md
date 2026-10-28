@@ -19,7 +19,7 @@ A cloud-synced directory for game-save data.
 class GameSaveSyncedDirectory
 ```
 
-#### Overview
+## Overview
 
 To get an instance of the directory, call [`openDirectory(containerIdentifier:)`](./gamesavesynceddirectory/opendirectory%28containeridentifier%29.md), which returns the directory for the iCloud container associated with the specified identifier. Calling this method starts syncing the directory in the background on the specified container. When the game needs to access the contents of the directory, show a UI while the directory fully syncs using the [`gameSaveSyncingAlert(directory:finishedLoading:)`](../SwiftUI/view/gamesavesyncingalert%28directory,finishedloading%29.md) view extension if your app uses SwiftUI, the [`finishSyncing(statusDisplay:)`](./gamesavesynceddirectory/finishsyncing%28statusdisplay%29-500el.md) method if your app uses UIKit, or the [`finishSyncing(statusDisplay:)`](./gamesavesynceddirectory/finishsyncing%28statusdisplay%29-309nq.md) method if your app uses AppKit.
 

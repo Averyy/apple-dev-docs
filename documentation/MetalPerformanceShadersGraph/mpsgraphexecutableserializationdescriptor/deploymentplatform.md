@@ -24,7 +24,7 @@ var deploymentPlatform: MPSGraphDeploymentPlatform { get set }
 @property (atomic, readwrite) MPSGraphDeploymentPlatform deploymentPlatform;
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to the current platform.
 

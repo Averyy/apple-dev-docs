@@ -24,7 +24,7 @@ func collectionView(_ collectionView: UICollectionView, prefetchItemsAt indexPat
 - (void) collectionView:(UICollectionView *) collectionView prefetchItemsAtIndexPaths:(NSArray<NSIndexPath *> *) indexPaths;
 ```
 
-#### Discussion
+## Discussion
 
 The collection view calls this method as the user scrolls, providing the index paths for cells it’s likely to display in the near future. Your implementation of this method is responsible for starting any expensive data loading processes. The data loading must be performed asynchronously, and the results made available to the [`collectionView(_:cellForItemAt:)`](../uicollectionviewdatasource/collectionview%28_,cellforitemat%29.md) method on the collection view’s data source.
 

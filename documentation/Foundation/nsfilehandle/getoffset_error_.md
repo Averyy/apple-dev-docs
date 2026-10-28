@@ -21,11 +21,11 @@ Get the current position of the file pointer within the file.
 - (BOOL) getOffset:(unsigned long long *) offsetInFile error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 Returns [`false`](../../Swift/false.md) when there was an error. Otherwise, returns  [`true`](../../Swift/true.md) and sets the `offsetInFile` parameter’s pointee to the current position of the file pointer within the file.
 
-#### Discussion
+## Discussion
 
 Returns [`false`](../../Swift/false.md) if called on a file handle representing a pipe or socket, or if the file descriptor is closed.
 

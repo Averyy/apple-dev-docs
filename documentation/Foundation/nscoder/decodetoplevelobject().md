@@ -24,7 +24,7 @@ Decodes a previously-encoded object.
 func decodeTopLevelObject() throws -> Any?
 ```
 
-#### Return Value
+## Return Value
 
 The decoded object, or `nil` if decoding fails.
 

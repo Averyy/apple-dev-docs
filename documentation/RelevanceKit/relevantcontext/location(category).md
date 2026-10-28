@@ -19,11 +19,11 @@ Tells the system a widget is relevant close to points of interest of a specific 
 static func location(category: MKPointOfInterestCategory) -> RelevantContext?
 ```
 
-#### Return Value
+## Return Value
 
 A contextual clue that the system uses to determine the relevance of a widget in the Smart Stack on Apple Watch, or `nil` if the category is not supported.
 
-#### Discussion
+## Discussion
 
 To indicate relevance at points of interest of a specific category, import [MapKit](../../MapKit/MapKit.md) and request a person’s permission to access their location with the When in Use or Always access level. For more information on creating a widget that can access location information, refer to [Accessing location information in widgets](../../WidgetKit/accessing-location-information-in-widgets.md).
 

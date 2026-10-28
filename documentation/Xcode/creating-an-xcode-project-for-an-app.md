@@ -5,11 +5,11 @@
 
 Set up a new project to start developing your app.
 
-#### Overview
+## Overview
 
 Xcode creates a project for the platforms and type of app you want to make, so you can begin writing and testing code immediately. You can start with a basic SwiftUI project or customize one of the templates for the technologies you want to use. Then familiarize yourself with the project window and learn where to change the project configuration.
 
-#### Create a SwiftUI app project
+## Create a SwiftUI app project
 
 On the Welcome to Xcode window that appears when you first launch Xcode, choose App from the New Project pop-up menu or choose File > New > Project and select App from anywhere in Xcode.
 
@@ -17,7 +17,7 @@ On the Welcome to Xcode window that appears when you first launch Xcode, choose 
 
 To save your code changes, choose File > Save Project, and in the sheet that appears, enter the project name in the Save As field and click Save. To use a different name for the app, toggle off Rename Target.
 
-#### Create a project from a template
+## Create a project from a template
 
 For more complex apps that use specific technologies, create a project from an Xcode template to get started. For example, you can create a project for a SwiftUI app that uses SwiftData, a macOS command-line tool, an iOS augmented reality app, or a visionOS immersive environment app.
 
@@ -42,7 +42,7 @@ In the last sheet, choose a location for your project, select other options, and
 
 For more information on properties in your project that the App Store uses, see [App information](https://developer.apple.com/help/app-store-connect/reference/app-information) in App Store Connect Help.
 
-#### Manage files in the main window
+## Manage files in the main window
 
 When you create a project or open an existing project, the *main window* appears, showing the necessary files and resources for developing your app.
 
@@ -60,7 +60,7 @@ If you add a preview or playground to your source file, you can interact with it
 
 To use the coding assistant to explain or generate code, see [Writing code with intelligence in Xcode](./writing-code-with-intelligence-in-xcode.md).
 
-#### Change the configuration in the project editor
+## Change the configuration in the project editor
 
 To view your project configuration, select the project in the Project navigator, then select the target in the *project editor* on the right. Click the tabs in the project editor, such as General and Signing & Capabilities, to make changes.
 

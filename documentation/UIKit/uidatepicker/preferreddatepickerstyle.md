@@ -22,7 +22,7 @@ var preferredDatePickerStyle: UIDatePickerStyle { get set }
 @property (nonatomic, assign, readwrite) UIDatePickerStyle preferredDatePickerStyle;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to specify the display style that you prefer. If the style changes, the date picker may generate a layout pass to update the display.
 

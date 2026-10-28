@@ -19,11 +19,11 @@ func selectSegment(withTag tag: Int) -> Bool
 - (BOOL) selectSegmentWithTag:(NSInteger) tag;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the segment was selected successfully; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Typically, you use Interface Builder to specify the tag for each segment. You may also set this value programmatically using the [`setTag(_:forSegment:)`](./settag%28_,forsegment%29.md) method.
 

@@ -24,7 +24,7 @@ case success
 INSetDefrosterSettingsInCarIntentResponseCodeSuccess
 ```
 
-#### Discussion
+## Discussion
 
 Use this code if your app successfully updated the defroster settings.
 

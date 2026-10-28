@@ -24,11 +24,11 @@ Creates the initial view controller from the storyboard and initializes it using
 
 - [Displaying and managing views with a view controller](../displaying-and-managing-views-with-a-view-controller.md)
 
-#### Return Value
+## Return Value
 
 The initial view controller in the storyboard.
 
-#### Discussion
+## Discussion
 
 Every storyboard file has an initial view controller that represents the default view controller to create. Typically, you use the initial view controller as the root view controller for a window. However, you can also instantiate the initial view controller when transitioning to content in a new storyboard file.
 

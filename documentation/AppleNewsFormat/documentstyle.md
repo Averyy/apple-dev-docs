@@ -19,13 +19,13 @@ object DocumentStyle
 
 - [Supporting Dark Mode for Your Article](../AppleNews/supporting-dark-mode-for-your-article.md)
 
-#### Discussion
+## Discussion
 
 Use the `DocumentStyle` object to set the background color for the entire article.
 
 You can use this object in [`ArticleDocument`](./articledocument.md).
 
-##### Example
+### Example
 
 ```json
 {

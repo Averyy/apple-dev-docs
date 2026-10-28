@@ -24,7 +24,7 @@ func MTAudioProcessingTapGetStorage(_ tap: MTAudioProcessingTap) -> UnsafeMutabl
 extern void *MTAudioProcessingTapGetStorage(MTAudioProcessingTapRef tap);
 ```
 
-#### Return Value
+## Return Value
 
 The tap storage returned by the init callback.
 

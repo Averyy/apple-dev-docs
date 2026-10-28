@@ -21,7 +21,7 @@ func calcSize()
 - (void) calcSize;
 ```
 
-#### Discussion
+## Discussion
 
 This method uses the [`calcDrawInfo(_:)`](../nscell/calcdrawinfo%28_%29.md) method of its cell to perform the calculations. Most controls maintain a flag that informs them if any of their cells have been modified in such a way that the location or size of the cell should be recomputed. If such a modification happens, this method is automatically invoked before the control is displayed. You should never need to invoke it yourself.
 

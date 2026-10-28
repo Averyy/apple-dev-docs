@@ -26,7 +26,7 @@ optional func session(_ session: NISession, didUpdate nearbyObjects: [NINearbyOb
 
 - [Initiating and maintaining a session](../initiating-and-maintaining-a-session.md)
 
-#### Discussion
+## Discussion
 
 Implement this callback to receive new nearby object updates for the argument session.
 
@@ -36,7 +36,7 @@ In Objective-C, if a peer is out of range or line of sight, the delegate reads t
 
 An app can monitor this state and guide the user into range as necessary. For more information, see [Initiating and maintaining a session](../initiating-and-maintaining-a-session.md).
 
-##### Provide feedback based on proximity
+### Provide feedback based on proximity
 
 Apps can react to positional information in an interaction session to create spatial awareness. For example, an app can play audio, invoke haptics, or display visual feedback when a peer is nearby. The following code calls two functions: it calls `enableFunctionalityA` when the device achieves a 1.5-meter proximity to the peer device, and `enableFunctionalityB` when the device achieves a 3-meter proximity to the peer device.
 

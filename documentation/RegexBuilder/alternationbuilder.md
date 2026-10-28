@@ -22,7 +22,7 @@ A custom parameter attribute that constructs regular expression alternations fro
 struct AlternationBuilder
 ```
 
-#### Overview
+## Overview
 
 When you use a `ChoiceOf` initializer, the initializer’s closure parameter has an `AlternationBuilder` attribute, allowing you to provide multiple regular expression statements as alternatives.
 

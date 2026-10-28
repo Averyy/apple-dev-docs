@@ -21,7 +21,7 @@ The LZBITMAP compression algorithm, which is designed to exploit the vector inst
 case lzbitmap
 ```
 
-#### Discussion
+## Discussion
 
 The LZBITMAP compression algorithm provides compression ratios as close as possible to [`COMPRESSION_ZLIB`](../compression_zlib.md) and [`COMPRESSION_LZFSE`](../compression_lzfse.md), with a lower compression cost. This compression algorithm is available only for the Compression buffer API functions, [`compression_encode_buffer(_:_:_:_:_:_:)`](../compression_encode_buffer%28_,_,_,_,_,_%29.md) and [`compression_decode_buffer(_:_:_:_:_:_:)`](../compression_decode_buffer%28_,_,_,_,_,_%29.md).
 

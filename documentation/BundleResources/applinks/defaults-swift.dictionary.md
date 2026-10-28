@@ -20,7 +20,7 @@ An object that defines the default settings to use for universal links pattern m
 object applinks.Defaults
 ```
 
-#### Overview
+## Overview
 
 This object is a subclass of `components` and can contain any of its properties. See [`applinks.Details.Components`](./details-swift.dictionary/components-swift.dictionary.md) for a list of available properties.
 

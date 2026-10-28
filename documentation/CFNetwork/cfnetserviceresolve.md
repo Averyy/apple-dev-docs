@@ -17,17 +17,17 @@ This function updates the specified CFNetService with the IP address or addresse
 extern Boolean CFNetServiceResolve(CFNetServiceRef theService, CFStreamError *error);
 ```
 
-#### Return Value
+## Return Value
 
 `TRUE` if an asynchronous service resolution was started or if a synchronous service resolution updated the CFNetService; `FALSE` if an asynchronous or synchronous resolution failed or if a synchronous resolution was canceled.
 
-#### Discussion
+## Discussion
 
 When resolving a service that runs in asynchronous mode, this function returns `TRUE` if the CFNetService has a domain, type, and name, and the underlying resolution process was started. Otherwise, this function returns `FALSE`. Once started, the resolution continues until it is canceled by calling [`CFNetServiceCancel(_:)`](./cfnetservicecancel%28_%29.md).
 
 When resolving a service that runs in synchronous mode, this function blocks until the CFNetService is updated with at least one IP address, until an error occurs, or until [`CFNetServiceCancel(_:)`](./cfnetservicecancel%28_%29.md) is called.
 
-##### Special Considerations
+### Special Considerations
 
 This function is thread safe.
 

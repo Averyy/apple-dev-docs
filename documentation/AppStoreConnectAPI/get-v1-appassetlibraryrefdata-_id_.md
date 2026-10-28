@@ -13,9 +13,9 @@ Get information about an app asset library reference data resource.
 
 - [Discovering asset specifications](./discovering-asset-specifications.md)
 
-#### Discussion
+## Discussion
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

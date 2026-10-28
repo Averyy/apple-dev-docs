@@ -23,7 +23,7 @@ var frame: NSRect { get set }
 
 - [Adopting the system text cursor in custom text views](../adopting-the-system-text-cursor-in-custom-text-views.md)
 
-#### Discussion
+## Discussion
 
 Changing the value of this property repositions and resizes the view within the coordinate system of its superview. Changing the frame does not mark the view as needing to be displayed. Set the [`needsDisplay`](./needsdisplay.md) property to [`true`](../../Swift/true.md) when you want the view to be redisplayed.
 

@@ -22,7 +22,7 @@ A type that applies standard interaction behavior to all progress views within a
 @preconcurrency protocol ProgressViewStyle
 ```
 
-#### Overview
+## Overview
 
 To configure the current progress view style for a view hierarchy, use the [`progressViewStyle(_:)`](./view/progressviewstyle%28_%29.md) modifier.
 

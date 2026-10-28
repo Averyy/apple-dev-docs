@@ -25,7 +25,7 @@ var speedFactor: CGFloat { get set }
 @property (nonatomic) CGFloat speedFactor;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to speed up or slow down the overall behavior of a particle system without changing the many individual properties (such as [`acceleration`](./acceleration.md), [`particleAngularVelocity`](./particleangularvelocity.md), and [`particleBounce`](./particlebounce.md)) that affect the motion of particles.
 

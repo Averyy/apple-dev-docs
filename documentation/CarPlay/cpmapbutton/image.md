@@ -21,7 +21,7 @@ var image: UIImage? { get set }
 @property (nonatomic, strong, nullable) UIImage * image;
 ```
 
-#### Discussion
+## Discussion
 
 This property doesn’t support animated images. If it’s set with an animated image, the button displays the first image in the animated sequence.
 

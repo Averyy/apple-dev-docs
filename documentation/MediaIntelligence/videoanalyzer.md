@@ -24,7 +24,7 @@ final class VideoAnalyzer
 
 - [Finding the best moments in a video](./finding-the-best-moments-in-a-video.md)
 
-#### Overview
+## Overview
 
 A video analyzer is the central object in the video analysis pipeline. Access it through the static [`shared`](./videoanalyzer/shared.md) property and pass it a [`MediaIntelligenceVideoAsset`](./mediaintelligencevideoasset.md) along with one or more request objects. The analyzer processes the video and returns a tuple containing one [`Result`](../Swift/result.md) per request, in the same order you provide them.
 

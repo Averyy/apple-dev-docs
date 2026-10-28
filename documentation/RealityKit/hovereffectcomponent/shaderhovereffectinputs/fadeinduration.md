@@ -19,7 +19,7 @@ The time it takes in seconds for the effect to fade in.
 var fadeInDuration: TimeInterval { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Maximum value allowed is 10 seconds.
 

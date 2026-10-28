@@ -27,7 +27,7 @@ func fulfill()
 
 - [Making and receiving VoIP calls](../making-and-receiving-voip-calls.md)
 
-#### Discussion
+## Discussion
 
 Calling this method sets the [`isComplete`](./iscomplete.md) property value to [`true`](../../Swift/true.md). Calling this method more than once or calling it after calling the [`fail()`](./fail%28%29.md) method has no effect.
 

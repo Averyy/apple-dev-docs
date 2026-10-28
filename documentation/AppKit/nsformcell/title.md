@@ -19,7 +19,7 @@ var title: String { get set }
 @property (copy) NSString * title;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is `"Field:"`.
 

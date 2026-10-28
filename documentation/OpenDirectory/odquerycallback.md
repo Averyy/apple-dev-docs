@@ -20,7 +20,7 @@ typealias ODQueryCallback = (ODQueryRef?, CFArray?, CFError?, UnsafeMutableRawPo
 typedef void (*)(struct __ODQuery *, const struct __CFArray *, struct __CFError *, void *) ODQueryCallback;
 ```
 
-#### Discussion
+## Discussion
 
 Results from this function must be retained or copied. The results from any given call are partial. If both `inResults` and `inError` are `NULL`, the query has completed.
 

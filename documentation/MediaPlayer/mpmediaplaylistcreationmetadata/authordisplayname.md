@@ -22,7 +22,7 @@ var authorDisplayName: String! { get set }
 @property (nonatomic, copy, null_resettable) NSString * authorDisplayName;
 ```
 
-#### Discussion
+## Discussion
 
 The system requires this property for 3rd party apps. Defaults to the app display name when not defined.
 

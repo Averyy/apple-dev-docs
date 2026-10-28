@@ -18,7 +18,7 @@ enum PermissionDecision
 enum BEWebContentFilterPermissionDecision : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 The outcome of a Permission Request to add URL to allow-list
 

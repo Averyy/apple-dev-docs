@@ -27,7 +27,7 @@ var forceTouchCapability: UIForceTouchCapability { get }
 
 - [Checking the availability of 3D Touch](../checking-the-availability-of-3d-touch.md)
 
-#### Discussion
+## Discussion
 
 3D Touch is available only on certain devices. On those devices, availability is determined by the user’s associated accessibility setting in the Settings app. Check this property’s value on app launch, and in your implementation of the [`traitCollectionDidChange(_:)`](../uitraitenvironment/traitcollectiondidchange%28_%29.md) method.
 

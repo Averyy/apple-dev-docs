@@ -25,7 +25,7 @@ class func supportedSentenceEmbeddingRevisions(for language: NLLanguage) -> Inde
 + (NSIndexSet *) supportedSentenceEmbeddingRevisionsForLanguage:(NLLanguage) language;
 ```
 
-#### Return Value
+## Return Value
 
 An index set representing all of the supported version numbers of the sentence embedding.
 

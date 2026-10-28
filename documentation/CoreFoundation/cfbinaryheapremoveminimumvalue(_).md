@@ -25,7 +25,7 @@ func CFBinaryHeapRemoveMinimumValue(_ heap: CFBinaryHeap!)
 extern void CFBinaryHeapRemoveMinimumValue(CFBinaryHeapRef heap);
 ```
 
-#### Discussion
+## Discussion
 
 If `heap` contains several equal minimum values, only one of them is removed. If `heap` is empty, this function does nothing.
 

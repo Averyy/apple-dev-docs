@@ -19,11 +19,11 @@ init(view: NSView)
 + (NSPrintOperation *) printOperationWithView:(NSView *) view;
 ```
 
-#### Return Value
+## Return Value
 
 The new `NSPrintOperation` object. You must run the operation to print the view.
 
-#### Discussion
+## Discussion
 
 The new `NSPrintOperation` object uses the settings stored in the shared `NSPrintInfo` object. This method raises an `NSPrintOperationExistsException` if there is already a print operation in progress; otherwise the returned object is made the current print operation for this thread.
 

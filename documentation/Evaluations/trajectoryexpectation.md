@@ -26,7 +26,7 @@ struct TrajectoryExpectation
 - [Evaluating tool-calling behavior](./evaluating-tool-calling-behavior.md)
 - [Evaluating language model responses](./evaluating-language-model-responses.md)
 
-#### Overview
+## Overview
 
 ```swift
 TrajectoryExpectation(ordered: [

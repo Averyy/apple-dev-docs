@@ -19,11 +19,11 @@
 static SPScaledPose3DFloat SPScaledPose3DFloatRotateByQuaternion(SPScaledPose3DFloat scaledPose, simd_quatf quaternion);
 ```
 
-#### Return Value
+## Return Value
 
 A scaled pose with a rotation that’s rotated by the specified quaternion.
 
-#### Discussion
+## Discussion
 
 Returns a scaled pose with a rotation that’s rotated by the specified quaternion.
 

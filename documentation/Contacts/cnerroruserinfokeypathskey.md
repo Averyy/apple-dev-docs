@@ -24,7 +24,7 @@ let CNErrorUserInfoKeyPathsKey: String
 extern NSString * const CNErrorUserInfoKeyPathsKey;
 ```
 
-#### Discussion
+## Discussion
 
 For validation errors, this contains key paths to specific object properties.
 

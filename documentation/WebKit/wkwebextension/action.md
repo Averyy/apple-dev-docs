@@ -24,7 +24,7 @@ class Action
 @interface WKWebExtensionAction : NSObject
 ```
 
-#### Overview
+## Overview
 
 This class provides access to action properties, such as pop-up, icon, or title, with tab-specific values.
 

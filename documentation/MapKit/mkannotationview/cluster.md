@@ -24,7 +24,7 @@ weak var cluster: MKAnnotationView? { get }
 @property (nonatomic, weak, readonly, nullable) MKAnnotationView * clusterAnnotationView;
 ```
 
-#### Discussion
+## Discussion
 
 When the map is displaying this annotation view, the value of this property is `nil`.
 

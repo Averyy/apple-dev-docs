@@ -21,7 +21,7 @@ init(position: CMTime, hostTime: CMTime, rate: Float)
 - (instancetype) initWithPosition:(CMTime) position hostTime:(CMTime) hostTime rate:(float) rate;
 ```
 
-#### Return Value
+## Return Value
 
 A new playback position snapshot.
 

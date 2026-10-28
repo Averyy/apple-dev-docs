@@ -24,7 +24,7 @@ func IOSurfaceGetPropertyAlignment(_ property: CFString) -> Int
 size_t IOSurfaceGetPropertyAlignment(CFStringRef property);
 ```
 
-#### Discussion
+## Discussion
 
 If the property has no alignment requirement then this function returns 1. The following properties should always be aligned if you choose to calculate them yourself:
 

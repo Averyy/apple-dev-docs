@@ -5,11 +5,11 @@
 
 Keep your user interface in sync with state changes from playback objects.
 
-#### Overview
+## Overview
 
 An essential task when building custom media players is observing the state of playback objects to determine their readiness for playback and track other important lifecycle events. The way you typically do this is using key-value observing, but starting in iOS 26, tvOS 26, macOS 26, and visionOS 26, AVFoundation provides a new way to monitor playback state based on the [Observation](../Observation/Observation.md) framework. AVFoundation supports this framework by making its core playback types conform to the [`Observable`](../Observation/observable.md) protocol. This means you can use [`AVPlayer`](./avplayer.md) or [`AVQueuePlayer`](./avqueueplayer.md), along with their associated [`AVPlayerItem`](./avplayeritem.md) and [`AVPlayerItemTrack`](./avplayeritemtrack.md) objects to drive state changes directly within your SwiftUI views.
 
-#### Opt-in to playback observation
+## Opt-in to playback observation
 
 AVFoundation supports monitoring playback state with Observation, but it doesn’t enable this feature by default. Instead, you opt-in to this behavior by setting a `true` value for the  `isObservationEnabled` property of the [`AVPlayer`](./avplayer.md) class.
 
@@ -20,7 +20,7 @@ AVPlayer.isObservationEnabled = true
 
 Perform this opt-in early in your app lifecycle, such as in your main [`App`](../SwiftUI/app.md) structure or [`UIApplicationDelegate`](../UIKit/uiapplicationdelegate.md) (in a mixed UIKit and SwiftUI app). This setting is global to your app and must be set *before* creating playback objects. Attempting to change its value after creating these objects results in AVFoundation throwing an exception.
 
-#### Store playback state
+## Store playback state
 
 You define a single source of truth in your app using a SwiftUI [`State`](../SwiftUI/state.md) variable. This property wrapper always instantiates its default value when SwiftUI creates a view. When using it to store playback objects, either directly or as part of a custom `@Observable` model object, avoid performance issues or other potential side effects by deferring the creation of these objects by using the [`task(name:priority:file:line:_:)`](../SwiftUI/view/task%28name,priority,file,line,_%29.md) modifier. For example, in a simple playback case you could define a state variable to hold a player object and initialize it like shown below:
 
@@ -50,7 +50,7 @@ struct PlayerView: View {
 
 Using the task modifier ensures that SwiftUI initializes the player object only once when it first presents the view.
 
-#### Observe state changes
+## Observe state changes
 
 Because the playback objects adopt the [`Observable`](../Observation/observable.md) protocol, you can use them directly within SwiftUI views like any other `@Observable` object. For example, you can pass a player instance to a view and have the view automatically redraw itself as playback state changes.
 

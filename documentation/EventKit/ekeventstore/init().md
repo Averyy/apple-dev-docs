@@ -24,7 +24,7 @@ init()
 - (id) init;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized event store.
 

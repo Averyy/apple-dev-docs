@@ -28,7 +28,7 @@ func cancelFetchRequest(_ fetchIdentifier: Any)
 
 - [Retrieving events and reminders](../retrieving-events-and-reminders.md)
 
-#### Discussion
+## Discussion
 
 After canceling a fetch request, EventKit doesn’t call the completion originally specified in [`fetchReminders(matching:completion:)`](./fetchreminders%28matching,completion%29.md).
 

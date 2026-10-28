@@ -23,11 +23,11 @@ func loadHTMLString(_ string: String, baseURL: URL?) -> WKNavigation?
 - (WKNavigation *) loadHTMLString:(NSString *) string baseURL:(NSURL *) baseURL;
 ```
 
-#### Return Value
+## Return Value
 
 A new navigation object you use to track the loading progress of the request.
 
-#### Discussion
+## Discussion
 
 Use this method to navigate to a webpage that you loaded or created yourself. For example, you might use this method to load HTML content that your app generates programmatically.
 

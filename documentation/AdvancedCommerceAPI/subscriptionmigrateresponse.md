@@ -15,7 +15,7 @@ A response that contains signed renewal and transaction information after a subs
 object SubscriptionMigrateResponse
 ```
 
-#### Discussion
+## Discussion
 
 This is the response body for the [`Migrate a Subscription to Advanced Commerce API`](./migrate-subscription-to-advanced-commerce-api.md) endpoint.
 

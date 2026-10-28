@@ -23,13 +23,13 @@ undefined completePaymentMethodSelection(
 
 - [Apple Pay on the Web Version 3 Release Notes](../apple-pay-on-the-web-version-3-release-notes.md)
 
-#### Discussion
+## Discussion
 
 This method must be called by [`onpaymentmethodselected`](./onpaymentmethodselected.md) .
 
 The parameter for the Apple Pay JS API version 3 is an [`ApplePayPaymentMethodUpdate`](../applepaypaymentmethodupdate.md) instance. Use the [`newLineItems`](../applepayshippingmethodupdate/newlineitems.md) only if you have new or updated costs or discounts, otherwise pass an empty array or null. Set the [`newTotal`](../applepaypaymentmethodupdate/newtotal.md) argument with the total cost of all the purchased items.
 
-##### completePaymentMethodSelection in Apple Pay JS API versions 1 and 2
+### completePaymentMethodSelection in Apple Pay JS API versions 1 and 2
 
 The parameters for [`completePaymentMethodSelection`](./completepaymentmethodselection.md) in API versions 1 and 2 are:
 

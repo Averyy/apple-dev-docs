@@ -15,7 +15,7 @@ A string that identifies the device model.
 readonly attribute String model;
 ```
 
-#### Discussion
+## Discussion
 
 The property contains a human readable string identifying the device, for example, AppleTV.
 

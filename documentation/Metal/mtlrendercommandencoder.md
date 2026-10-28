@@ -34,7 +34,7 @@ protocol MTLRenderCommandEncoder : MTLCommandEncoder
 - [Simplifying GPU resource management with residency sets](./simplifying-gpu-resource-management-with-residency-sets.md)
 - [Tracking the resource residency of argument buffers](./tracking-the-resource-residency-of-argument-buffers.md)
 
-#### Overview
+## Overview
 
 A render pass draws a scene, or a component within a scene, to its render *attachments*, the outputs of a render pass. You can render to those outputs with various approaches, including techniques that apply the following:
 
@@ -57,7 +57,7 @@ Encode drawing commands after you configure the state and resources the commands
 
 When you finish encoding the render pass’s commands, finalize it into the command buffer by calling the encoder’s [`endEncoding()`](./mtlcommandencoder/endencoding%28%29.md) method.
 
-##### Command stages
+### Command stages
 
 Most render commands apply to one or more stages within a pass. The following table shows which stages apply to each command:
 

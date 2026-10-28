@@ -20,7 +20,7 @@ typealias AppleEvent = AERecord
 typedef AERecord AppleEvent;
 ```
 
-#### Discussion
+## Discussion
 
 The Apple event data type describes a full-fledged Apple event. Like the data for an Apple event record (data type [`AERecord`](./aerecord.md)), the data for an Apple event consists of a list of keyword-specified descriptors. Unlike an Apple event record, the data for an Apple event is conceptually divided into two parts, one for attributes and one for parameters. This division within the Apple event allows the Apple Event Manager to distinguish between an event’s attributes and its parameters.
 

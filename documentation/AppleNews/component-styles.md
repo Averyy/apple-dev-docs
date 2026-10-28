@@ -5,7 +5,7 @@
 
 Learn to use component styles to add borders, set background colors, and apply background images to components and to set the styling for tables.
 
-#### Overview
+## Overview
 
 Component styles are at the heart of creating a unique article with Apple News Format. They provide options that range from adding background images and drawing borders to setting the styles for the rows, columns, and cells in a table.
 

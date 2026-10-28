@@ -18,7 +18,7 @@ A metric that measures animation hitch time.
 struct HitchTimeMetric
 ```
 
-#### Discussion
+## Discussion
 
 This metric corresponds to the [`MetricResult.hitchTime(_:)`](./metricresult/hitchtime%28_%29.md) case. It appears in both [`intervalEntries`](./metricreport/intervalentries.md) and [`stateEntries`](./metricreport/stateentries.md) when state reporting is enabled.
 

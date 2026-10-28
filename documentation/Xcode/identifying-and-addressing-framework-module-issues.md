@@ -5,7 +5,7 @@
 
 Detect and fix common problems found in framework modules with the module verifier.
 
-#### Overview
+## Overview
 
 When you create a framework containing Objective-C, Objective-C++, C, or C++ code that you distribute to customers, clients, or other developers, it’s often challenging and time-consuming to find problems in your framework that don’t appear at build time.
 
@@ -23,7 +23,7 @@ Some examples of these problems include:
 
 When you enable the module verifier, it finds module problems in your code and displays errors for them in Xcode’s Issue navigator, just like compiler errors or warnings.
 
-##### Enable the module verifier build setting
+### Enable the module verifier build setting
 
 In your Xcode project, select your framework’s target, then select the Build Settings tab. Scroll down to the Apple Clang Module Verifier section. For new projects created in Xcode 14.3 or later, the Enable Module Verifier setting defaults to Yes. For projects you created in earlier versions of Xcode, change the setting to Yes.
 
@@ -33,7 +33,7 @@ Then, check the values for Supported Languages and Supported Language Dialects, 
 
 For more information about configuring build settings, see [Configuring the build settings of a target](./configuring-the-build-settings-of-a-target.md).
 
-##### Build your project and identify issues
+### Build your project and identify issues
 
 In Xcode, build your project, then show the Issue navigator to see issues in your project. Module verifier issues show up as errors in the Issue navigator.
 
@@ -41,7 +41,7 @@ In Xcode, build your project, then show the Issue navigator to see issues in you
 
 Review the issues, then click on an issue to highlight it in your source code.
 
-##### Address common issues
+### Address common issues
 
 Identify each issue you find by matching it with an example error message in the following table. Then, use the error resolution examples to help you address the issue in your code.
 

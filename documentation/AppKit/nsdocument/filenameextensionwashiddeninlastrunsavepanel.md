@@ -20,11 +20,11 @@ var fileNameExtensionWasHiddenInLastRunSavePanel: Bool { get }
 @property (readonly) BOOL fileNameExtensionWasHiddenInLastRunSavePanel;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if a Save panel was presented and the user chose to hide the extension; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 The Save panel includes an option to hide a document’s filename extension. If the user selects this option, AppKit sets the value of this property to [`true`](../../Swift/true.md); otherwise, the value is [`false`](../../Swift/false.md).
 

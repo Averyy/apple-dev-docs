@@ -23,7 +23,7 @@ class func hingeLoss(reductionType: MLCReductionType, weights: MLCTensor?) -> Se
 + (instancetype) hingeLossWithReductionType:(MLCReductionType) reductionType weights:(MLCTensor *) weights;
 ```
 
-#### Return Value
+## Return Value
 
 A hinge loss layer.
 

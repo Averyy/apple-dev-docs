@@ -19,7 +19,7 @@ class NSButton
 @interface NSButton : NSControl
 ```
 
-#### Overview
+## Overview
 
 Buttons are a standard control for initiating actions within your app. You can configure buttons with many different visual styles, but the behavior is the same. When a user clicks it, a button calls the action method of its associated target object. (If you configure a button as continuous, it calls its action method at timed intervals until the user releases the mouse button or the cursor leaves the button boundaries). You use the action method to perform your app-specific tasks.
 

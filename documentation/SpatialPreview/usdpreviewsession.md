@@ -20,7 +20,7 @@ final class USDPreviewSession
 
 - [Bridging an external USD runtime to Spatial Preview](./bridging-an-external-usd-runtime-to-spatial-preview.md)
 
-#### Overview
+## Overview
 
 To create a `USDPreviewSession`, initialize one with a [`USDStage`](../USDKit/usdstage.md) from [USDKit](../USDKit/USDKit.md):
 

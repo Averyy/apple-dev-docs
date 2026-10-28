@@ -21,7 +21,7 @@ A text field style with a system-defined border.
 struct BorderedTextFieldStyle
 ```
 
-#### Overview
+## Overview
 
 The shape of the border is determined by the [`textInputBorderShape(_:)`](./view/textinputbordershape%28_%29.md) modifier.
 

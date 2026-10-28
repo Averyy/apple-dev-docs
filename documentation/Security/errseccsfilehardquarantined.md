@@ -20,7 +20,7 @@ var errSecCSFileHardQuarantined: OSStatus { get }
 errSecCSFileHardQuarantined
 ```
 
-#### Discussion
+## Discussion
 
 File has quarantine flags indicating that it should not be opened or executed under any circumstances. This usually occurs because the file was downloaded by a sandboxed application that does not have file download entitlements.
 

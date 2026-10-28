@@ -21,7 +21,7 @@ func insertGlyphs(_ glyphs: UnsafePointer<NSGlyph>, length: Int, forStartingGlyp
 - (void) insertGlyphs:(const NSGlyph *) glyphs length:(NSUInteger) length forStartingGlyphAtIndex:(NSUInteger) glyphIndex characterIndex:(NSUInteger) charIndex;
 ```
 
-#### Discussion
+## Discussion
 
 This method is part of the `NSGlyphStorage` protocol, for use by the glyph generator. It enables bulk insertion of glyphs into the glyph cache.
 

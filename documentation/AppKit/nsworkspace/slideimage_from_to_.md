@@ -17,7 +17,7 @@ Animates a sliding image from one point to another.
 - (void) slideImage:(NSImage *) image from:(NSPoint) fromPoint to:(NSPoint) toPoint;
 ```
 
-#### Discussion
+## Discussion
 
 Currently unimplemented.
 

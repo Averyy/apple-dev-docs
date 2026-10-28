@@ -23,7 +23,7 @@ class ASAuthorizationProviderExtensionKerberosMapping
 
 - [Creating a JSON Web Encryption (JWE) login response](./creating-a-json-web-encryption-jwe-login-response.md)
 
-#### Overview
+## Overview
 
 This class contains a set of mappings for the sign-on token when importing the Kerberos ticket.
 

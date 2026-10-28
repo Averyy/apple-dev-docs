@@ -15,7 +15,7 @@ An asynchronous sequence of critical message state notifications.
 final var criticalMessageStateNotifications: some AsyncSequence<SMSService.CriticalMessageStateNotification, Never> { get throws }
 ```
 
-#### Discussion
+## Discussion
 
 This sequence tracks messages sent with the Critical Messaging API, as described in [Sending SMS messages from an app](../../Messages/critical-messaging-api.md).
 

@@ -17,7 +17,7 @@ Tells the delegate when the transition context changes during a transition.
 func experienceController(_ controller: AVExperienceController, didChangeTransitionContext context: AVExperienceController.TransitionContext)
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to track the transition between experiences.
 

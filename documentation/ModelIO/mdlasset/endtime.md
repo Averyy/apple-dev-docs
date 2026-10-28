@@ -24,7 +24,7 @@ var endTime: TimeInterval { get set }
 @property (nonatomic, readwrite) NSTimeInterval endTime;
 ```
 
-#### Discussion
+## Discussion
 
 Timed data in an asset is clamped to the start and end times—requesting sample data for a time sample after the start time returns the sample data at the end time.
 

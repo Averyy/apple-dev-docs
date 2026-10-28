@@ -14,7 +14,7 @@ Use built-in or custom filters to process still and video images.
 - tvOS 9.0+
 - visionOS 1.0+
 
-#### Overview
+## Overview
 
 Core Image is an image processing and analysis technology that provides high-performance processing for still and video images. Use the many built-in image filters to process images and build complex effects by chaining filters. For a list of all the built-in filters see the [Filter Catalog](./CoreImage.md#Filter-Catalog).
 

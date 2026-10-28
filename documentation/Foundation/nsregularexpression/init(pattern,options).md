@@ -25,11 +25,11 @@ init(pattern: String, options: NSRegularExpression.Options = []) throws
 - (instancetype) initWithPattern:(NSString *) pattern options:(NSRegularExpressionOptions) options error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 An instance of `NSRegularExpression` for the specified regular expression and options.
 
-#### Discussion
+## Discussion
 
 > **Handling Errors in Swift**:  In Swift, this API is imported as an initializer and is marked with the `throws` keyword to indicate that it throws an error in cases of failure.
 >

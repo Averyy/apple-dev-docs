@@ -26,7 +26,7 @@ struct CodableRepresentation<Item, Encoder, Decoder> where Item : Transferable, 
 
 - [Choosing a transfer representation for a model type](./choosing-a-transfer-representation-for-a-model-type.md)
 
-#### Overview
+## Overview
 
 ```swift
 struct Todo: Codable, Transferable {

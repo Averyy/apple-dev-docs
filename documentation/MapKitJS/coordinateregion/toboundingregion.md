@@ -15,11 +15,11 @@ Returns the bounding region that corresponds to the specified coordinate region.
 toBoundingRegion(): BoundingRegion;
 ```
 
-#### Return Value
+## Return Value
 
 A [`BoundingRegion`](../boundingregion.md).
 
-#### Discussion
+## Discussion
 
 A bounding region is similar to a coordinate region; both represent a rectangular area on the 2D projected surface of the map. MapKit JS defines a coordinate region by a center coordinate and a span. The framework defines a bounding region by coordinates representing the rectangle’s northeast and southwest corners.
 

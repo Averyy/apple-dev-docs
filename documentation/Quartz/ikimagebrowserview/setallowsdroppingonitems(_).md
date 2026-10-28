@@ -19,7 +19,7 @@ func setAllowsDroppingOnItems(_ flag: Bool)
 - (void) setAllowsDroppingOnItems:(BOOL) flag;
 ```
 
-#### Discussion
+## Discussion
 
 The default is [`false`](../../Swift/false.md).
 

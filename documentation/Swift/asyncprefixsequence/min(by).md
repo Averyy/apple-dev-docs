@@ -22,11 +22,11 @@ Returns the minimum element in the asynchronous sequence, using the given predic
 func min(by areInIncreasingOrder: (Self.Element, Self.Element) async throws -> Bool) async rethrows -> Self.Element?
 ```
 
-#### Return Value
+## Return Value
 
 The sequence’s minimum element, according to `areInIncreasingOrder`. If the sequence has no elements, returns `nil`.
 
-#### Discussion
+## Discussion
 
 Use this method when the asynchronous sequence’s values don’t conform to `Comparable`, or when you want to apply a custom ordering to the sequence.
 

@@ -23,11 +23,11 @@ func byUnion(with region: UIRegion) -> Self
 - (instancetype) regionByUnionWithRegion:(UIRegion *) region;
 ```
 
-#### Return Value
+## Return Value
 
 A new region that contains the points from both the current region and the shape specified by the `region` parameter.
 
-#### Discussion
+## Discussion
 
 Combining any region with the infinite region returns the infinite region.
 

@@ -22,7 +22,7 @@ Creates a new instance that wraps the specified base value.
 init(baseValue: Self.BaseValue) throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: An error if the wrapper cannot be initialized with the given base value.
 

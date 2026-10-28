@@ -24,7 +24,7 @@ class GKMatchedPlayers
 @interface GKMatchedPlayers : NSObject
 ```
 
-#### Overview
+## Overview
 
 If the [`properties`](./gkmatchedplayers/properties.md) and `playersProperties` properties are `nil`, Game Center didn’t use matchmaking rules to find the players. For more information, see [Matchmaking rules](./matchmaking-rules.md).
 

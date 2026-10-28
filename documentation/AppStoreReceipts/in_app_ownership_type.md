@@ -20,7 +20,7 @@ string in_app_ownership_type
 - `FAMILY_SHARED`: The transaction belongs to a family member who benefits from service.
 - `PURCHASED`: The transaction belongs to the purchaser.
 
-#### Discussion
+## Discussion
 
 When family members benefit from a shared subscription, App Store updates their receipt to include the family-shared purchase. Use the value of [`in_app_ownership_type`](./in_app_ownership_type.md) to understand whether a transaction belongs to the purchaser or a family member who benefits.
 

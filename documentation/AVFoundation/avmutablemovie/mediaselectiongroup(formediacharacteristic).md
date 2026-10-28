@@ -24,11 +24,11 @@ func mediaSelectionGroup(forMediaCharacteristic mediaCharacteristic: AVMediaChar
 - (AVMediaSelectionGroup *) mediaSelectionGroupForMediaCharacteristic:(AVMediaCharacteristic) mediaCharacteristic;
 ```
 
-#### Return Value
+## Return Value
 
 An [`AVMediaSelectionGroup`](../avmediaselectiongroup.md) that contains one or more options with the specified media characteristic, or `nil` if none could be found.
 
-#### Discussion
+## Discussion
 
 Use the filtering methods [`AVMediaSelectionGroup`](../avmediaselectiongroup.md) defines to filter the group’s options according to playability, locale, and additional media characteristics.
 

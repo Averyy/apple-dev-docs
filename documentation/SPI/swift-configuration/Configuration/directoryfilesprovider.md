@@ -31,11 +31,11 @@ struct DirectoryFilesProvider
 - [Migrating to Swift Configuration](./migrating-to-swift-configuration.md)
 - [Troubleshooting and access reporting](./troubleshooting.md)
 
-#### Overview
+## Overview
 
 This provider reads configuration values from a directory where each file represents a single configuration key-value pair. The file name becomes the configuration key, and the file contents become the value. This approach is commonly used by secret management systems that mount secrets as individual files.
 
-#### Key mapping
+## Key mapping
 
 This provider transforms configuration keys into file names using these rules:
 
@@ -46,11 +46,11 @@ For example:
 
 - `database.password` -> `database-password`
 
-#### Value handling
+## Value handling
 
 The provider reads file contents as UTF-8 strings and converts them to the requested type. For binary data (bytes type), it reads raw file contents directly without string conversion. The provider always trims leading and trailing whitespace from string values.
 
-#### Supported data types
+## Supported data types
 
 The provider supports all standard configuration types:
 
@@ -59,13 +59,13 @@ The provider supports all standard configuration types:
 - Arrays (using configurable separator, comma by default)
 - Byte arrays (raw file contents)
 
-#### Secret handling
+## Secret handling
 
 By default, all values are marked as secrets for security. This is appropriate since this provider is typically used for sensitive data mounted by secret management systems.
 
-#### Usage
+## Usage
 
-##### Reading from a secrets directory
+### Reading from a secrets directory
 
 ```swift
 // Assuming /run/secrets contains files:
@@ -83,7 +83,7 @@ let maxConn = config.int(forKey: "max.connections", default: 50)  // 100
 let cacheEnabled = config.bool(forKey: "enable.cache", default: false)  // true
 ```
 
-##### Reading binary data
+### Reading binary data
 
 ```swift
 // For binary files like certificates or keys
@@ -95,7 +95,7 @@ let config = ConfigReader(provider: provider)
 let certData = try config.requiredBytes(forKey: "tls.cert")  // Raw file bytes
 ```
 
-##### Custom array handling
+### Custom array handling
 
 ```swift
 // If files contain comma-separated lists
@@ -108,7 +108,7 @@ let hosts = config.stringArray(forKey: "allowed.hosts", default: [])
 // ["host1.example.com", "host2.example.com", "host3.example.com"]
 ```
 
-#### Configuration context
+## Configuration context
 
 This provider ignores the context passed in [`context`](./absoluteconfigkey/context.md). All keys are resolved using only their component path.
 

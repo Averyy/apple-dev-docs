@@ -24,7 +24,7 @@ var mipLevelCount: Int { get }
 @property (nonatomic, readonly) NSUInteger mipLevelCount;
 ```
 
-#### Discussion
+## Discussion
 
 Mipmapping is a technique that uses multiple sizes of a texture image to increase rendering performance. If this property’s value is zero, the texture contains a single image, whose size matches the [`dimensions`](./dimensions.md) property. If this value is 1, the texture contains an additional image at half the original dimensions; if this value is 2, the texture contains images at the original size, at half size, and at quarter size; and so on.
 

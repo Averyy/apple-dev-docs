@@ -21,7 +21,7 @@ Calculates the discrete cosine transform for a vector.
 void vDSP_DCT_Execute(const struct vDSP_DFT_SetupStruct *__Setup, const float *__Input, float *__Output);
 ```
 
-#### Discussion
+## Discussion
 
 In-place operation is supported.
 

@@ -27,7 +27,7 @@ var duration: CMTime { get }
 @property (nonatomic, readonly) CMTime duration;
 ```
 
-#### Discussion
+## Discussion
 
 If you initialized the asset by passing the [`AVURLAssetPreferPreciseDurationAndTimingKey`](../avurlassetpreferprecisedurationandtimingkey.md) initialization option, this property value provides the asset’s precise duration; otherwise, it provides a best-available estimate. You can determine the value’s accuracy by querying the asset’s [`providesPreciseDurationAndTiming`](./providesprecisedurationandtiming.md) property.
 

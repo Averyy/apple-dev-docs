@@ -24,7 +24,7 @@ static let significantAppChangeApprovalRequired: AgeRangeService.ParentalControl
 
 - [Requesting people’s age range information in your app](../../requesting-people-share-their-age-range-with-your-app.md)
 
-#### Discussion
+## Discussion
 
 When this option is present, notify the parent or guardian before implementing significant app changes or updates to comply with associated laws or regulations.
 

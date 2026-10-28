@@ -25,11 +25,11 @@ func CMBufferQueueRemoveTrigger(_ queue: CMBufferQueue, triggerToken: CMBufferQu
 extern OSStatus CMBufferQueueRemoveTrigger(CMBufferQueueRef queue, CMBufferQueueTriggerToken triggerToken);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See `Result Codes`
 
-#### Discussion
+## Discussion
 
 Triggers will automatically be removed when a queue is finalized.  However, if more than one module has access to a queue, it may be hard for an individual module to know when the queue is finalized since other modules may retain it.  To address this concern, modules should remove their triggers before they themselves are finalized.
 

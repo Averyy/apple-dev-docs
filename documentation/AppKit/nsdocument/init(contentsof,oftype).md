@@ -19,11 +19,11 @@ convenience init(contentsOf url: URL, ofType typeName: String) throws
 - (instancetype) initWithContentsOfURL:(NSURL *) url ofType:(NSString *) typeName error:(NSError **) outError;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized `NSDocument` object, or, if the document could not be created, `nil`.
 
-#### Discussion
+## Discussion
 
 You can override this method to customize the reopening of autosaved documents.
 

@@ -13,7 +13,7 @@
 IFNET_TX_STATUS = 0x00800000
 ```
 
-#### Discussion
+## Discussion
 
 Driver supports returning a per packet transmission status (pass, fail or other errors) of whether the packet was successfully transmitted on the link, or the transmission was aborted, or transmission failed.
 

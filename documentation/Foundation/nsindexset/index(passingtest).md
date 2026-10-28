@@ -25,7 +25,7 @@ func index(passingTest predicate: (Int, UnsafeMutablePointer<ObjCBool>) -> Bool)
 - (NSUInteger) indexPassingTest:(BOOL (^)(NSUInteger idx, BOOL *stop)) predicate;
 ```
 
-#### Return Value
+## Return Value
 
 The index of the first object that passes the predicate test.
 

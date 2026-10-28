@@ -19,11 +19,11 @@ func draw(in rect: NSRect) -> Bool
 - (BOOL) drawInRect:(NSRect) rect;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the image was successfully drawn; otherwise, [`false`](../../Swift/false.md). If the size of the image has not yet been set, this method returns [`false`](../../Swift/false.md) immediately.
 
-#### Discussion
+## Discussion
 
 This method sets the origin of the current coordinate system to the origin of the specified rectangle before invoking the receiver’s [`draw()`](./draw%28%29.md) method. If the rectangle size is different from the image’s native size, this method adjusts the coordinate transform, causing the image to be scaled appropriately.  After the `draw` method returns, the coordinate system changes are undone, restoring the original graphics state.
 

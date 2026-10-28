@@ -24,7 +24,7 @@ var maximumZ: Int { get set }
 @property (atomic) NSInteger maximumZ;
 ```
 
-#### Discussion
+## Discussion
 
 If you use different overlay objects to represent different tiles at different zoom levels, use this property to specify the maximum zoom level that this overlay’s tiles support. At zoom level 0, tiles cover the entire world map; at zoom level 1, tiles cover 1/4 of the world; at zoom level 2, tiles cover 1/16 of the world, and so on. The map doesn’t attempt to load tiles for a zoom level greater than the value that this property specifies.
 

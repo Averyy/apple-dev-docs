@@ -23,7 +23,7 @@ class VZMacOSBootLoader
 
 - [Installing macOS on a Virtual Machine](./installing-macos-on-a-virtual-machine.md)
 
-#### Overview
+## Overview
 
 You must use a [`VZMacPlatformConfiguration`](./vzmacplatformconfiguration.md) in conjunction with the macOS boot loader. It’s invalid to use it with any other platform configuration.
 

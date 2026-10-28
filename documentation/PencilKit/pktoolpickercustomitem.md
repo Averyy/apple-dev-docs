@@ -22,7 +22,7 @@ class PKToolPickerCustomItem
 @interface PKToolPickerCustomItem : PKToolPickerItem
 ```
 
-#### Overview
+## Overview
 
 A custom tool item represents a tool that isn’t one of the system tools. You configure details about a custom tool item yourself using [`PKToolPickerCustomItem.Configuration`](./pktoolpickercustomitem/configuration-swift.struct.md), including providing custom images to draw the body of the tool.
 

@@ -21,7 +21,7 @@ Discover advertised services and devices on the network.
 final class NetworkBrowser<Provider> where Provider : BrowserProvider
 ```
 
-#### Overview
+## Overview
 
 Whenever services become available, get modified, or go away, the browser will generate a set of browse results tracking those changes. You can subscribe to and receive these updates as long as the browser is active.
 

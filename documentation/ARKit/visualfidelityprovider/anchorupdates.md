@@ -15,7 +15,7 @@ An async sequence of anchor updates for visualizing a preset field of view (FoV)
 final var anchorUpdates: AnchorUpdateSequence<FieldOfViewAnchor> { get }
 ```
 
-#### Return Value
+## Return Value
 
 An async sequence of FoV anchor updates.
 

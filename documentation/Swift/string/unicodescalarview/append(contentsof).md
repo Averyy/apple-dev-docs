@@ -21,7 +21,7 @@ Appends the Unicode scalar values in the given sequence to the view.
 mutating func append<S>(contentsOf newElements: S) where S : Sequence, S.Element == Unicode.Scalar
 ```
 
-#### Discussion
+## Discussion
 
 > **Complexity**: O(*n*), where *n* is the length of the resulting view.
 

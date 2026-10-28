@@ -25,7 +25,7 @@ func CFSwapInt32LittleToHost(_ arg: UInt32) -> UInt32
 static uint32_t CFSwapInt32LittleToHost(uint32_t arg);
 ```
 
-#### Return Value
+## Return Value
 
 The integer with its bytes swapped. If the host is little-endian, this function returns `arg` unchanged.
 

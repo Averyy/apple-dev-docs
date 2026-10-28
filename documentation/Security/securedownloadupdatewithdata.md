@@ -15,11 +15,11 @@ Checks data received during download for validity.
 OSStatus SecureDownloadUpdateWithData(SecureDownloadRef downloadRef, CFDataRef data);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Secure Download Result Codes](./secure-download-result-codes.md). If the data is invalid, the result code is `enum (unnamed)-3yczz/errSecureDownloadInvalidDownload`.
 
-#### Discussion
+## Discussion
 
 Call this function each time data is received.
 

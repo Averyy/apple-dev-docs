@@ -27,7 +27,7 @@ func delete(in direction: UITextStorageDirection, to granularity: UITextGranular
 
 - [Integrating custom browser text views with UIKit](../integrating-custom-browser-text-views-with-uikit.md)
 
-#### Discussion
+## Discussion
 
 The editing behavior-to-key combinations include:
 

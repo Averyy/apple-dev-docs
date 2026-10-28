@@ -20,7 +20,7 @@ Creates a vertex format from a raw integer value.
 init?(rawValue: UInt)
 ```
 
-#### Discussion
+## Discussion
 
 Use the [`MTLVertexFormat`](../mtlvertexformat.md) structure’s type properties, such as [`MTLVertexFormat.uchar4Normalized_bgra`](./uchar4normalized_bgra.md), instead of this initializer.
 

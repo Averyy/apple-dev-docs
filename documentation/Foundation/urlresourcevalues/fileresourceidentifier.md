@@ -21,7 +21,7 @@ An identifier for comparing two file system objects for equality.
 var fileResourceIdentifier: (any NSCopying & NSSecureCoding & NSObjectProtocol)? { get }
 ```
 
-#### Discussion
+## Discussion
 
 Compare two file resource identifiers using `- [NSURL isEqual:]`. Two object identifiers are equal if they have the same file system path or if the paths link to the same inode on the same file system. This identifier isn’t persistent across system restarts.
 

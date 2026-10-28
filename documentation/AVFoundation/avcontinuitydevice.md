@@ -19,7 +19,7 @@ class AVContinuityDevice
 @interface AVContinuityDevice : NSObject
 ```
 
-#### Overview
+## Overview
 
 Each continuity device instance represents another iOS device that’s nearby. Your app can access the other device’s cameras and microphones with its [`videoDevices`](./avcontinuitydevice/videodevices.md) and [`audioSessionInputs`](./avcontinuitydevice/audiosessioninputs.md) properties, respectively.
 

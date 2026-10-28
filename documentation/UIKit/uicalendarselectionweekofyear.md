@@ -23,7 +23,7 @@ class UICalendarSelectionWeekOfYear
 @interface UICalendarSelectionWeekOfYear : UICalendarSelection
 ```
 
-#### Overview
+## Overview
 
 Use the [`UICalendarSelectionWeekOfYear`](./uicalendarselectionweekofyear.md) selection behavior to allow selecting dates in a calendar view by week. The following code example shows how to configure a calendar view’s selection behavior to use week-of-year selection:
 

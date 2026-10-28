@@ -19,7 +19,7 @@ An option that analyzes an image for subjects that the framework can look up for
 static let visualLookUp: ImageAnalyzer.AnalysisTypes
 ```
 
-#### Discussion
+## Discussion
 
 When the framework recognizes a particular type of subject in an image, it offers an interface for people to learn more about the subject. For example, if an image contains a rose, the framework recognizes a plant and enables people to tap the plant which presents a sheet with a list of additional resources on the specific type of plant — in this case, a rose.
 

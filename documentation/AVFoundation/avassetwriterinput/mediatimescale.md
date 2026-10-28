@@ -24,7 +24,7 @@ var mediaTimeScale: CMTimeScale { get set }
 @property (nonatomic) CMTimeScale mediaTimeScale;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `0`, which indicates that the input chooses an appropriate value, if applicable. It’s an error to set this value if the input’s media type is [`audio`](../avmediatype/audio.md).
 

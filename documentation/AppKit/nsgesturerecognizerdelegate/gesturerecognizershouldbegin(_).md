@@ -20,11 +20,11 @@ optional func gestureRecognizerShouldBegin(_ gestureRecognizer: NSGestureRecogni
 - (BOOL) gestureRecognizerShouldBegin:(NSGestureRecognizer *) gestureRecognizer;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) to let the gesture recognizer transition out of the Possible ([`NSGestureRecognizer.State.possible`](../nsgesturerecognizer/state-swift.enum/possible.md)) and continue trying to recognize the gesture or [`false`](../../Swift/false.md) to prevent it from trying to recognize its gesture. If you do not implement this method, the default return value is [`true`](../../Swift/true.md).
 
-#### Discussion
+## Discussion
 
 When a gesture recognizer attempts to transition from the Possible ([`NSGestureRecognizer.State.possible`](../nsgesturerecognizer/state-swift.enum/possible.md)) state to a different state, such as [`NSGestureRecognizer.State.began`](../nsgesturerecognizer/state-swift.enum/began.md), the gesture recognizer calls this method to see if the transition should occur. Returning [`false`](../../Swift/false.md) from this delegate method causes the gesture recognizer to transition to the [`NSGestureRecognizer.State.failed`](../nsgesturerecognizer/state-swift.enum/failed.md) state.
 

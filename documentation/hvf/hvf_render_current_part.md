@@ -21,7 +21,7 @@ Render the current part using the supplied callback.
 int HVF_render_current_part(HVFPartRenderer *renderer, HVFRenderContext context, void *caller_data);
 ```
 
-#### Discussion
+## Discussion
 
 The `caller_data` pointer is passed through to the callback.
 

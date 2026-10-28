@@ -13,11 +13,11 @@
 - (BOOL) renderIntoPixelBuffer:(CVPixelBufferRef) buffer forTime:(CVTimeStamp *) timeStamp;
 ```
 
-#### Return Value
+## Return Value
 
 Return YES if the buffer was successfully filled with new frame data. Return NO if nothing has changed or an error was encountered.
 
-#### Discussion
+## Discussion
 
 Called for each frame to be sent to Messages. This method will not be called on the main thread.
 

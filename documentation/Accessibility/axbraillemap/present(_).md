@@ -25,7 +25,7 @@ func present(_ image: CGImage)
 - (void) presentImage:(CGImageRef) image;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to convert image data into the braille map directly, without the need to modify the heights of individual pins using [`setHeight(_:at:)`](./setheight%28_,at%29.md).
 

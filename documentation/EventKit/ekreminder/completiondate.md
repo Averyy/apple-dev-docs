@@ -28,7 +28,7 @@ var completionDate: Date? { get set }
 
 - [Creating events and reminders](../creating-events-and-reminders.md)
 
-#### Discussion
+## Discussion
 
 Setting this property to a date will set [`isCompleted`](./iscompleted.md) to [`true`](../../Swift/true.md); setting this property to `nil` will set `completed` to [`false`](../../Swift/false.md).
 

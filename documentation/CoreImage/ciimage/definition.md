@@ -19,7 +19,7 @@ var definition: CIFilterShape { get }
 @property (atomic, readonly) CIFilterShape * definition;
 ```
 
-#### Return Value
+## Return Value
 
 A filter shape object.
 

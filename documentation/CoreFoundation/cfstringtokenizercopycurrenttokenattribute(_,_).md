@@ -25,7 +25,7 @@ func CFStringTokenizerCopyCurrentTokenAttribute(_ tokenizer: CFStringTokenizer!,
 extern CFTypeRefCFStringTokenizerCopyCurrentTokenAttribute(CFStringTokenizerRef tokenizer, CFOptionFlags attribute);
 ```
 
-#### Return Value
+## Return Value
 
 The attribute specified by `attribute` of the current token, or `NULL` if the current token does not have the specified attribute or there is no current token. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 

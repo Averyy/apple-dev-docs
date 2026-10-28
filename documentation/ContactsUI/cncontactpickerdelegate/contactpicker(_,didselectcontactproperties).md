@@ -22,7 +22,7 @@ optional func contactPicker(_ picker: CNContactPickerViewController, didSelectCo
 - (void) contactPicker:(CNContactPickerViewController *) picker didSelectContactProperties:(NSArray<CNContactProperty *> *) contactProperties;
 ```
 
-#### Discussion
+## Discussion
 
 This delegate method is invoked when the user selects more than one property. Implementing this method configures the picker for multi-selection.
 

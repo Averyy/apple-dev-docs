@@ -25,7 +25,7 @@ struct BNNSNDArrayDescriptor
 typedef struct { ... } BNNSNDArrayDescriptor;
 ```
 
-#### Overview
+## Overview
 
 You use a [`BNNSNDArrayDescriptor`](./bnnsndarraydescriptor.md) structure as the primary mechanism to pass the description of data to and from BNNS functions. The description may include a pointer to the memory location.
 

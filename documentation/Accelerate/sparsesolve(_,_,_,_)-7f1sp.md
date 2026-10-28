@@ -25,11 +25,11 @@ func SparseSolve(_ method: SparseIterativeMethod, _ A: SparseMatrix_Double, _ b:
 static SparseIterativeStatus_t SparseSolve(SparseIterativeMethod method, SparseMatrix_Double A, DenseVector_Double b, DenseVector_Double x);
 ```
 
-#### Return Value
+## Return Value
 
 A [`SparseIterativeStatus_t`](./sparseiterativestatus_t.md) enumeration that represents the status of the iterative solve.
 
-#### Discussion
+## Discussion
 
 Use this function to solve a system of linear equations using a factored coefficient matrix. The following figure shows a system of equations where the coefficient matrix is sparse:
 

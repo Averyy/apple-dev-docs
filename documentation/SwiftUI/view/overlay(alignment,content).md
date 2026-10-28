@@ -22,11 +22,11 @@ nonisolated
 func overlay<V>(alignment: Alignment = .center, @ContentBuilder content: () -> V) -> some View where V : View
 ```
 
-#### Return Value
+## Return Value
 
 A view that uses the specified content as a foreground.
 
-#### Discussion
+## Discussion
 
 Use this modifier to place one or more views in front of another view. For example, you can place a group of stars on a [`RoundedRectangle`](../roundedrectangle.md):
 

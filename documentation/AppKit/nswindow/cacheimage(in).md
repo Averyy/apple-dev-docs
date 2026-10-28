@@ -21,7 +21,7 @@ func cacheImage(in rect: NSRect)
 - (void) cacheImageInRect:(NSRect) rect;
 ```
 
-#### Discussion
+## Discussion
 
 This method allows the window to perform temporary drawing, such as a band around the selection as the user drags the mouse, and to quickly restore the previous image by invoking [`restoreCachedImage()`](./restorecachedimage%28%29.md) and [`flushIfNeeded()`](./flushifneeded%28%29.md). The next time the window displays, it discards its cached image rectangles. You can also explicitly use [`discardCachedImage()`](./discardcachedimage%28%29.md) to free the memory occupied by cached image rectangles. `rect` is made integral before caching the image to avoid antialiasing artifacts.
 

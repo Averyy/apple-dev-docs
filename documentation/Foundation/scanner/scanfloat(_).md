@@ -25,11 +25,11 @@ func scanFloat(_ result: UnsafeMutablePointer<Float>?) -> Bool
 - (BOOL) scanFloat:(float *) result;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the receiver finds a valid floating-point representation, otherwise [`false`](../../Swift/false.md). Overflow or underflow are both considered valid floating-point representations.
 
-#### Discussion
+## Discussion
 
 Skips past excess digits in the case of overflow, so the scanner’s position is past the entire floating-point representation.
 

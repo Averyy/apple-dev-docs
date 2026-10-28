@@ -20,7 +20,7 @@ The name of this generation schema.
 var name: String { get }
 ```
 
-#### Discussion
+## Discussion
 
 Typically this will the name of a Swift type, but it can be an arbitrary string for schemas created dynamically.
 

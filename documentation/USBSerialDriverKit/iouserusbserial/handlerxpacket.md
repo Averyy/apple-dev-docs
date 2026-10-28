@@ -15,7 +15,7 @@ Processes the data received from the USB device.
 virtual void handleRxPacket(uint8_t * & packet, uint32_t & size);
 ```
 
-#### Discussion
+## Discussion
 
 The system calls this method after it receives raw data from the USB device, and before it moves that data to the read buffer. The default implementation of this method does nothing. You can override it, as needed, to modify the packet data or report any errors.
 

@@ -19,7 +19,7 @@ func setBorderColor(_ color: NSColor?)
 - (void) setBorderColor:(NSColor *) color;
 ```
 
-#### Discussion
+## Discussion
 
 This setting has no visible effect unless the border width is larger than the default, which is 0.
 

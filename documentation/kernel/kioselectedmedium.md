@@ -15,7 +15,7 @@ A property of IONetworkController objects.
 #define kIOSelectedMedium
 ```
 
-#### Discussion
+## Discussion
 
 The kIOSelectedMedium property is a property of IONetworkController objects. It has an OSSymbol value that describes the name of the current selected medium. This name can be used as a key into the medium dictionary to gather additional information about the selected medium.
 

@@ -24,7 +24,7 @@ weak var delegate: (any MPPlayableContentDelegate)? { get set }
 @property (nonatomic, weak, nullable) id<MPPlayableContentDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 The delegate responds to external events that trigger a change in the media item that’s playing. An example of such an event would be choosing to play a song from a different album, or requesting suggested content to play next. The app must be able to respond to these events at any time.
 

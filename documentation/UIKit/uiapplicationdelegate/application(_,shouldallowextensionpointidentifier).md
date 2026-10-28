@@ -27,11 +27,11 @@ optional func application(_ application: UIApplication, shouldAllowExtensionPoin
 
 - [Configuring a custom keyboard interface](../configuring-a-custom-keyboard-interface.md)
 
-#### Return Value
+## Return Value
 
 [`false`](../../Swift/false.md) to disallow use of a specified app extension type, or [`true`](../../Swift/true.md) to allow use of the type.
 
-#### Discussion
+## Discussion
 
 You can implement this method to reject a specified type of app extension, based on its extension point identifier, from use in your app. See Extension Point Identifier Constants in [`UIApplication`](../uiapplication.md).
 

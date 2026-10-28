@@ -19,7 +19,7 @@ func scrollRowToVisible(_ row: Int, inColumn column: Int)
 - (void) scrollRowToVisible:(NSInteger) row inColumn:(NSInteger) column;
 ```
 
-#### Discussion
+## Discussion
 
 The row’s column will not be scrolled to visible via this method. To scroll the column to visible, use [`scrollColumnToVisible(_:)`](./scrollcolumntovisible%28_%29.md).
 

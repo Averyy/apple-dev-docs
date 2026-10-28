@@ -21,7 +21,7 @@ var shouldUpdateWhileOffscreen: Bool { get set }
 @property (nonatomic) BOOL shouldUpdateWhileOffscreen;
 ```
 
-#### Discussion
+## Discussion
 
 If [`true`](../../Swift/true.md), the web view updates regardless if it is visible. If [`false`](../../Swift/false.md), it updates only if it is visible, possibly improving performance, and then updates automatically when it becomes visible. The default value is [`true`](../../Swift/true.md).
 

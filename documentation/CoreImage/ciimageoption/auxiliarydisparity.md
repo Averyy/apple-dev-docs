@@ -24,7 +24,7 @@ static let auxiliaryDisparity: CIImageOption
 extern CIImageOption const kCIImageAuxiliaryDisparity;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key is an [`NSNumber`](../../Foundation/nsnumber.md) containing a Boolean `true` or `false`.  If the value is `true`, then calls to [`imageWithContentsOfURL:options:`](../ciimage/imagewithcontentsofurl_options_.md) and [`imageWithData:options:`](../ciimage/imagewithdata_options_.md) will return the auxiliary image as a half-float monochrome image instead of the primary image, or [`nil`](../../ObjectiveC/nil-227m0.md) if no auxiliary image exists.
 

@@ -6,6 +6,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary_function
 
 # mlx.nn.relu
 
-**class relu(*x*)**
-: Applies the Rectified Linear Unit.
+```python
+class relu(x)
+```
+
+Applies the Rectified Linear Unit.
+
 Simply `mx.maximum(x, 0)`.

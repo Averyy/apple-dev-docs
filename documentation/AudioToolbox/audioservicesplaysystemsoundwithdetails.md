@@ -13,7 +13,7 @@
 extern void AudioServicesPlaySystemSoundWithDetails(SystemSoundID inSystemSoundID, CFDictionaryRef inDetails, void (^inCompletionBlock)());
 ```
 
-#### Discussion
+## Discussion
 
 Play the sound designated by the provided SystemSoundID.
 

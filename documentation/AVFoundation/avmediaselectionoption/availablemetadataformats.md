@@ -25,7 +25,7 @@ var availableMetadataFormats: [String] { get }
 @property (nonatomic, readonly) NSArray<NSString *> * availableMetadataFormats;
 ```
 
-#### Discussion
+## Discussion
 
 The array contains `NSString` objects, each representing a metadata format that contains metadata associated with the option (for example, ID3, iTunes metadata, and so on).
 

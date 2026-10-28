@@ -15,7 +15,7 @@ The request body for querying app eligibility.
 object EligibilityQueryRequest
 ```
 
-#### Discussion
+## Discussion
 
 The `EligibilityQueryRequest` object is the request body for the eligibility query endpoint. To filter, paginate, and sort the app eligibility records returned, use it.
 
@@ -32,7 +32,7 @@ The `filters` array supports the following fields:
 | `deviceClass` | The device class evaluated |
 | `state` | Eligibility state: `ELIGIBLE` or `INELIGIBLE` |
 
-##### Example
+### Example
 
 ```json
 {

@@ -19,11 +19,11 @@ func characterRange(forGlyphRange glyphRange: NSRange, actualGlyphRange: NSRange
 - (NSRange) characterRangeForGlyphRange:(NSRange) glyphRange actualGlyphRange:(NSRangePointer) actualGlyphRange;
 ```
 
-#### Return Value
+## Return Value
 
 The range for the characters in the receiver’s text store that are mapped to the glyphs in `glyphRange`.
 
-#### Discussion
+## Discussion
 
 A subclass can override this method to interact with custom glyph storage.
 

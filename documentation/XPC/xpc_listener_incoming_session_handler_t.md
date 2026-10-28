@@ -25,7 +25,7 @@ typealias xpc_listener_incoming_session_handler_t = (xpc_session_t) -> Void
 typedef void (^)(NSObject<OS_xpc_session> *) xpc_listener_incoming_session_handler_t;
 ```
 
-#### Discussion
+## Discussion
 
 When a client connects to your service, the system invokes this block with a session that represents the server’s connection to the client. Before returning from this block, you must do one of the following:
 

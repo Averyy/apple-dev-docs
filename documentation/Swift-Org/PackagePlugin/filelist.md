@@ -17,7 +17,7 @@ Provides information about a list of files.
 struct FileList
 ```
 
-#### Overview
+## Overview
 
 The order is not defined but is guaranteed to be stable. This allows the implementation to be more efficient than a static file list.
 

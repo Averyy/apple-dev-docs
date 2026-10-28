@@ -24,7 +24,7 @@ var isPictureInPictureSuspended: Bool { get }
 @property (nonatomic, readonly, getter=isPictureInPictureSuspended) BOOL pictureInPictureSuspended;
 ```
 
-#### Discussion
+## Discussion
 
 The system suspends your app’s Picture in Picture session when another app, typically FaceTime, is using the feature. In this state, your video playback is active but paused and offscreen. Picture in Picture resumes automatically when the other app finishes using PiP.
 

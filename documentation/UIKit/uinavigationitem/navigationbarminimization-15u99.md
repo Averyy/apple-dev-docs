@@ -19,7 +19,7 @@ The minimization configuration for the navigation bar.
 @property (nonatomic, copy, readwrite) UIBarMinimization * navigationBarMinimization;
 ```
 
-#### Discussion
+## Discussion
 
 Set the properties of this configuration to control how the navigation bar minimizes in response to scrolling. When the navigation bar minimizes, an integrated top tab bar will also minimize.
 

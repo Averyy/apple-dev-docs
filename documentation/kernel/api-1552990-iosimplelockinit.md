@@ -15,7 +15,7 @@ Initialize a spin lock.
 void IOSimpleLockInit(IOSimpleLock *lock);
 ```
 
-#### Discussion
+## Discussion
 
 Initialize an embedded spin lock, to the unlocked state.
 

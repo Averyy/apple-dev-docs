@@ -14,13 +14,13 @@ The current time in seconds.
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Parameter Types
+## Parameter Types
 
 | Output | Type |
 | --- | --- |
 | `Out` | Float |
 
-#### Discussion
+## Discussion
 
 The `Time` node outputs a float that represents the current time in seconds. When applied or connected to other nodes, this value changes constantly, allowing for dynamic materials. Below is an example of a simple node graph that causes an image texture to scroll in real time:
 

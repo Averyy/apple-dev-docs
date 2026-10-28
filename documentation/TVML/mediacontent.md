@@ -4,15 +4,15 @@
 
 Contains information used to play inline audio or video.
 
-#### Overview
+## Overview
 
 Access the embedded player using `mediaContent.getFeature('Player');` in your TVMLKit JS file. Create the required media items and push them onto the playlist. Assign the new playlist to your inline player to begin playback.
 
-##### Subelements of mediaContent
+### Subelements of mediaContent
 
 - [img](./img.md)
 
-##### Elements that Use mediaContent
+### Elements that Use mediaContent
 
 - [divTemplate](./divtemplate.md)
 - [lockup](./lockup.md)

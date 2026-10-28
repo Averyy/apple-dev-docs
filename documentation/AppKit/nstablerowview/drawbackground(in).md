@@ -19,7 +19,7 @@ func drawBackground(in dirtyRect: NSRect)
 - (void) drawBackgroundInRect:(NSRect) dirtyRect;
 ```
 
-#### Discussion
+## Discussion
 
 Overriding this method allows an application to draw a custom background for a table row view.
 

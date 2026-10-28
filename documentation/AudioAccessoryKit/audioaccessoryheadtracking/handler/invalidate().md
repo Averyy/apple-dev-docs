@@ -16,7 +16,7 @@ Called when the head-tracking session has been invalidated.
 func invalidate()
 ```
 
-#### Discussion
+## Discussion
 
 After this is called, no further state updates will be delivered on this handler, and the session is no longer valid for forwarding sensor data.
 

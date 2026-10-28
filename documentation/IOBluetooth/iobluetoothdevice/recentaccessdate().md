@@ -19,11 +19,11 @@ func recentAccessDate() -> Date!
 - (NSDate *) recentAccessDate;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the date/time of the most recent access of the target device. If the device has not been accessed, nil is returned.
 
-#### Discussion
+## Discussion
 
 This is the date that -recentDevices uses to sort its list of the most recently accessed devices.
 

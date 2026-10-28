@@ -19,7 +19,7 @@ protocol FxLightingAPI_v3
 @protocol FxLightingAPI_v3
 ```
 
-#### Overview
+## Overview
 
 This API provides a plug-in with the number of lights in a scene, as well as information about each light at a given time. A plug-in only has access to lights that are in the same group as the plug-in or a subgroup of such a group.
 

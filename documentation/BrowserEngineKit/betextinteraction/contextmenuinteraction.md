@@ -21,7 +21,7 @@ var contextMenuInteraction: UIContextMenuInteraction { get }
 @property (nonatomic, readonly) UIContextMenuInteraction * contextMenuInteraction;
 ```
 
-#### Discussion
+## Discussion
 
 Set the context menu interaction’s [`delegate`](../../UIKit/uicontextmenuinteraction/delegate.md) by supplying a value for [`contextMenuInteractionDelegate`](./contextmenuinteractiondelegate.md).
 

@@ -24,7 +24,7 @@ struct MTLQuadTessellationFactorsHalf
 typedef struct { ... } MTLQuadTessellationFactorsHalf;
 ```
 
-#### Overview
+## Overview
 
 Refer to the [Tessellation](https://developer.apple.com/library/archive/documentation/Miscellaneous/Conceptual/MetalProgrammingGuide/Tessellation/Tessellation.html#//apple_ref/doc/uid/TP40014221-CH15) chapter of the [Metal Programming Guide](https://developer.apple.com/library/archive/documentation/Miscellaneous/Conceptual/MetalProgrammingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40014221) for further information.
 

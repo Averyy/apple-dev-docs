@@ -19,7 +19,7 @@ protocol NSCollectionViewElement : NSUserInterfaceItemIdentification, NSObjectPr
 @protocol NSCollectionViewElement <NSObject, NSUserInterfaceItemIdentification>
 ```
 
-#### Overview
+## Overview
 
 Adopt this protocol in the classes that you use to display content for items, supplementary views, and decoration views in a collection view. The methods of this protocol are optional and provide support for applying layout attributes and for cleaning up elements when they move offscreen and are recycled.
 

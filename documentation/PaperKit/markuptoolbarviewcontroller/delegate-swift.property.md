@@ -17,7 +17,7 @@ The delegate for responding to user actions.
 @preconcurrency weak var delegate: (any MarkupToolbarViewController.Delegate)? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Observe `selectedIndirectPointerTouchMode` or `selectedDrawingTool` to watch for mode / tool changes.
 

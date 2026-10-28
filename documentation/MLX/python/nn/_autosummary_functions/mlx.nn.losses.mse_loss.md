@@ -6,18 +6,21 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary_function
 
 # mlx.nn.losses.mse_loss
 
-**class mse_loss(*predictions: array*, *targets: array*, *reduction: Literal['none', 'mean', 'sum'] = 'mean'*)**
-: Computes the mean squared error loss.
+```python
+class mse_loss(predictions: array, targets: array, reduction: Literal['none', 'mean', 'sum'] = 'mean')
+```
 
-Parameters:
+Computes the mean squared error loss.
 
-**predictions** ([array](../../_autosummary/mlx.core.array.md#mlx.core.array)) – The predicted values.
-**targets** ([array](../../_autosummary/mlx.core.array.md#mlx.core.array)) – The target values.
-**reduction** ([str](https://docs.python.org/3/builtins/stdtypes.html#str)*, **optional*) – Specifies the reduction to apply to the output:
+**Parameters:**
+
+- **predictions** ([array](../../_autosummary/mlx.core.array.md#mlx.core.array)) – The predicted values.
+- **targets** ([array](../../_autosummary/mlx.core.array.md#mlx.core.array)) – The target values.
+- **reduction** ([str](https://docs.python.org/3/builtins/stdtypes.html#str), *optional*) – Specifies the reduction to apply to the output:
 `'none'` | `'mean'` | `'sum'`. Default: `'mean'`.
 
-Returns:
-The computed mean squared error loss.
+**Returns:**
+: The computed mean squared error loss.
 
-Return type:
-[array](../../_autosummary/mlx.core.array.md#mlx.core.array)
+**Return type:**
+: [array](../../_autosummary/mlx.core.array.md#mlx.core.array)

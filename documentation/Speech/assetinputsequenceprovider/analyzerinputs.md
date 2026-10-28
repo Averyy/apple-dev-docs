@@ -20,7 +20,7 @@ A new sequence of speech analyzer input objects containing audio from the asset 
 final var analyzerInputs: some Sendable & AsyncSequence<AnalyzerInput, any Error> { get }
 ```
 
-#### Discussion
+## Discussion
 
 The sequence includes the entire asset track’s or file’s audio. You may release the provider object after obtaining the sequence.
 

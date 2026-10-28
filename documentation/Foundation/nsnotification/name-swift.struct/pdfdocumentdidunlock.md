@@ -20,7 +20,7 @@ A notification that a document unlocked.
 static let PDFDocumentDidUnlock: NSNotification.Name
 ```
 
-#### Discussion
+## Discussion
 
 The document posts this notification after receiving a [`unlock(withPassword:)`](../../../PDFKit/pdfdocument/unlock%28withpassword%29.md) message.
 

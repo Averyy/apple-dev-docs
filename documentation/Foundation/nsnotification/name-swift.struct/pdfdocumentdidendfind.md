@@ -20,7 +20,7 @@ A notification that the document finished a find operation.
 static let PDFDocumentDidEndFind: NSNotification.Name
 ```
 
-#### Discussion
+## Discussion
 
 The document posts this notification when [`findString(_:withOptions:)`](../../../PDFKit/pdfdocument/findstring%28_,withoptions%29.md) returns.
 

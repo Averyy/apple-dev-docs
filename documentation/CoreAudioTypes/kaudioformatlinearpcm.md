@@ -25,7 +25,7 @@ var kAudioFormatLinearPCM: AudioFormatID { get }
 kAudioFormatLinearPCM
 ```
 
-#### Discussion
+## Discussion
 
 The Linear PCM codec is a noncompressed audio data format with one frame per packet.
 

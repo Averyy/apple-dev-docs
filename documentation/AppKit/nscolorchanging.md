@@ -17,7 +17,7 @@ protocol NSColorChanging : NSObjectProtocol
 @protocol NSColorChanging <NSObject>
 ```
 
-#### Overview
+## Overview
 
 When the user selects a color in an [`NSColorPanel`](./nscolorpanel.md) object, the panel tries to call this method on the first responder. You can override this method in any responder that needs to respond to a color change.
 

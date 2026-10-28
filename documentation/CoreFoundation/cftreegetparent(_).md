@@ -25,7 +25,7 @@ func CFTreeGetParent(_ tree: CFTree!) -> CFTree!
 extern CFTreeRefCFTreeGetParent(CFTreeRef tree);
 ```
 
-#### Return Value
+## Return Value
 
 The parent of `tree`. Ownership follows the [The Get Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-SW1).
 

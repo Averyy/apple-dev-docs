@@ -22,7 +22,7 @@ let kVTCompressionPreset_HighSpeed: CFString
 extern CFStringRef const kVTCompressionPreset_HighSpeed;
 ```
 
-#### Discussion
+## Discussion
 
 A preset to provide a high-speed encoding.
 

@@ -19,7 +19,7 @@ class let willLaunchApplicationNotification: NSNotification.Name
 extern NSNotificationName NSWorkspaceWillLaunchApplicationNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is the shared `NSWorkspace` instance. The `userInfo` dictionary contains the [`applicationUserInfoKey`](./applicationuserinfokey.md) key with a corresponding instance of [`NSRunningApplication`](../nsrunningapplication.md) that represents the affected app.
 

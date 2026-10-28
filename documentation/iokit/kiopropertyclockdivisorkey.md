@@ -14,7 +14,7 @@
 #define kIOPropertyClockDivisorKey
 ```
 
-#### Discussion
+## Discussion
 
 This key defines the current clock divisor for the device.
 

@@ -22,11 +22,11 @@ func MTAudioProcessingTapCreateWithPreferredFormat(_ allocator: CFAllocator?, _ 
 extern OSStatus MTAudioProcessingTapCreateWithPreferredFormat(CFAllocatorRef allocator, const MTAudioProcessingTapCallbacks *callbacks, MTAudioProcessingTapCreationFlags flags, CMAudioFormatDescriptionRef preferredFormat, MTAudioProcessingTapRef*tapOut);
 ```
 
-#### Return Value
+## Return Value
 
 An OSStatus result code.
 
-#### Discussion
+## Discussion
 
 Creates a new processing tap.
 

@@ -22,7 +22,7 @@ Adds the elements of the given set to the set.
 mutating func formUnion(_ other: Self)
 ```
 
-#### Discussion
+## Discussion
 
 In the following example, the elements of the `visitors` set are added to the `attendees` set:
 

@@ -16,13 +16,13 @@ Updates a campaign with a campaign identifier.
 - [Apple Ads Campaign Management API 4](./apple-search-ads-campaign-management-api-4.md)
 - [Apple Ads Campaign Management API 5](./apple-search-ads-campaign-management-api-5.md)
 
-#### Discussion
+## Discussion
 
 Use this endpoint to update countries or regions (App Store geolocations) where you promote your app, and to set your campaign budget. Use the associated `campaignId` as a resource.
 
 To edit a subset of object properties without having to include all object properties in the payload, use partial updates. Use a campaign object JSON envelope in your campaign update request payloads. Other objects don’t require a JSON envelope. See the Use Partial Updates section of [Using Apple Ads API Functionality](./using-apple-search-ads-api-functionality.md).
 
-##### Payload example: Switch from a manual to a Maximize Conversions bid strategy campaign
+### Payload example: Switch from a manual to a Maximize Conversions bid strategy campaign
 
 Ad group and keyword bid values are hidden (returned as `0`) in Maximize Conversions campaigns. If you switch back to the manual strategy later, your bids will be restored.
 
@@ -91,7 +91,7 @@ PUT https://api.searchads.apple.com/api/v5/campaigns/{campaignId}
 }
 ```
 
-##### Payload example: Switch from a Maximize Conversions to a manual bid strategy campaign
+### Payload example: Switch from a Maximize Conversions to a manual bid strategy campaign
 
 Bid values on ad groups and keywords are visible in Maximize Conversions campaigns.
 
@@ -156,7 +156,7 @@ PUT https://api.searchads.apple.com/api/v5/campaigns/{campaignId}
 }
 ```
 
-##### Payload example: Update a campaign
+### Payload example: Update a campaign
 
 **Request**:
 
@@ -247,7 +247,7 @@ PUT https://api.searchads.apple.com/api/v5/campaigns/{campaignId}
 }
 ```
 
-##### Payload example: Update a target CPA of a Maximize Conversions bid strategy
+### Payload example: Update a target CPA of a Maximize Conversions bid strategy
 
 **Request**:
 
@@ -309,7 +309,7 @@ PUT https://api.searchads.apple.com/api/v5/campaigns/{campaignId}
 }
 ```
 
-##### Payload example: Update a campaign daily budget amount
+### Payload example: Update a campaign daily budget amount
 
 **Request**:
 
@@ -369,7 +369,7 @@ PUT https://api.searchads.apple.com/api/v5/campaigns/{campaignId}
 }
 ```
 
-##### Payload example: Update a campaign with countries or regions
+### Payload example: Update a campaign with countries or regions
 
 **Request**:
 

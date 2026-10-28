@@ -25,7 +25,7 @@ func glassEffect(_ glass: Glass = .regular, in shape: some Shape = DefaultGlassE
 
 - [Applying Liquid Glass to custom views](../applying-liquid-glass-to-custom-views.md)
 
-#### Discussion
+## Discussion
 
 When you use this effect, the system:
 

@@ -11,11 +11,11 @@ Returns the number of objects the array can store without reallocating.
 virtual unsigned int getCapacity() const;
 ```
 
-#### Return Value
+## Return Value
 
 The number objects the array can store without reallocating.
 
-#### Overview
+## Overview
 
 OSArray objects grow when full to accommodate additional objects. See getCapacityIncrement and ensureCapacity.
 

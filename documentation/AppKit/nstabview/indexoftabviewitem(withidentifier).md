@@ -19,11 +19,11 @@ func indexOfTabViewItem(withIdentifier identifier: Any) -> Int
 - (NSInteger) indexOfTabViewItemWithIdentifier:(id) identifier;
 ```
 
-#### Return Value
+## Return Value
 
 The zero-based index of the tab view item corresponding to `identifier`, or `NSNotFound` if the item is not found.
 
-#### Discussion
+## Discussion
 
 The returned index is zero-based.
 

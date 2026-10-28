@@ -21,7 +21,7 @@ The identifiers of tracks that contain source sample data.
 var sourceSampleDataTrackIDs: [CMPersistentTrackID] { get }
 ```
 
-#### Discussion
+## Discussion
 
 Sample data tracks have a media type of [`kCMMediaType_Metadata`](../../CoreMedia/kcmmediatype_metadata.md).
 

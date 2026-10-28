@@ -20,7 +20,7 @@ string AuditEventOutcome
 - `SUCCESS`
 - `FAILURE`
 
-#### Discussion
+## Discussion
 
 - Possible Values
 

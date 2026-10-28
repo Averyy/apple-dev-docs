@@ -20,7 +20,7 @@ case workflowPropertyListInvalidError
 AMWorkflowPropertyListInvalidError
 ```
 
-#### Discussion
+## Discussion
 
 The property list document (`document.wflow`) could be missing, damaged, or constructed improperly.
 

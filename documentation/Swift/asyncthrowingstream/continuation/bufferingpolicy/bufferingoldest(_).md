@@ -21,7 +21,7 @@ When the buffer is full, discard the newly received element.
 case bufferingOldest(Int)
 ```
 
-#### Discussion
+## Discussion
 
 This strategy enforces keeping at most the specified number of oldest values.
 

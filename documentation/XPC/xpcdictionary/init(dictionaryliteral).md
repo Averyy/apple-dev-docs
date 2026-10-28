@@ -21,7 +21,7 @@ Creates an `XPCDictionary` initialized with the given key-value pairs.
 init(dictionaryLiteral elements: (String, XPCLiteralValue)...)
 ```
 
-#### Discussion
+## Discussion
 
 Example usage:
 

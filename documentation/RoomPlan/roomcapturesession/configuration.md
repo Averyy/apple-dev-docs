@@ -17,7 +17,7 @@ Settings that configure the room-scanning process.
 struct Configuration
 ```
 
-#### Overview
+## Overview
 
 The `configuration` argument of a room-capture session’s  [`run(configuration:)`](./run%28configuration%29.md) function is of this type.
 

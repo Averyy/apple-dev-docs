@@ -15,7 +15,7 @@ Configures the URL for your Get Retention Message endpoint in the sandbox and pr
 - [Identifying rate limits](./identifying-rate-limits.md)
 - [Retention Messaging API changelog](./retention-messaging-changelog.md)
 
-#### Discussion
+## Discussion
 
 Call this endpoint to configure the URLs for your `Get Retention Message` endpoints in the sandbox and production environments. For more information, including endpoint specifications and server requirements, see [Setting up your Get Retention Message endpoint](./setting-up-retention-messaging-endpoint.md).
 
@@ -23,11 +23,11 @@ Call this endpoint to configure the URLs for your `Get Retention Message` endpoi
 
 As a best practice, use different URLs for the sandbox and production environments.
 
-##### Configure your URL for the sandbox environment
+### Configure your URL for the sandbox environment
 
 To configure your `Get Retention Message` endpoint for the sandbox environment, call [`Configure Realtime URL`](./configure-realtime-url.md) using its sandbox URL. Provide your endpoint’s sandbox URL.
 
-##### Configure your URL for the production environment
+### Configure your URL for the production environment
 
 To configure your `Get Retention Message` endpoint for the production environment, first configure your `Get Retention Message` endpoint for the sandbox environment, then:
 
@@ -35,7 +35,7 @@ To configure your `Get Retention Message` endpoint for the production environmen
 2. Call [`Get Performance Test Results`](./get-performance-test-results.md) and ensure your server passes the performance test.
 3. To configure your `Get Retention Message` endpoint for the production environment, call [`Configure Realtime URL`](./configure-realtime-url.md) using its production URL. Provide your endpoint’s production URL.
 
-##### Change your endpoint’s URL
+### Change your endpoint’s URL
 
 To change your endpoint’s URL, just call [`Configure Realtime URL`](./configure-realtime-url.md) again. The Retention Messaging API uses your most recent successful configuration. To check the URL you set, call [`Get Realtime URL`](./get-realtime-url.md).
 

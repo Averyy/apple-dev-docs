@@ -5,7 +5,7 @@
 
 Send push notifications to a device to signal changes from your server.
 
-#### Overview
+## Overview
 
 You can signal changes by sending push notifications from a remote server, using the [PushKit](../PushKit/PushKit.md) framework and the [`fileProvider`](../PushKit/pkpushtype/fileprovider.md) push type. When the system receives the notification, it automatically calls the [`signalEnumerator(for:completionHandler:)`](./nsfileprovidermanager/signalenumerator%28for,completionhandler%29.md) method with the specified identifier. It also delivers the notification to any [`PKPushRegistryDelegate`](../PushKit/pkpushregistrydelegate.md) objects.
 
@@ -17,11 +17,11 @@ To use push notifications, you start by generating the signing key for your app.
 >
 > For items in the working set, the server should always send push notifications.
 
-##### Generate the signing key
+### Generate the signing key
 
 To signal changes from a remote server, you use provider authentication tokens (not provider certificates). To create an APNs key for your app, see [Communicate with APNs using authentication tokens](https://help.apple.com/xcode/mac/current/#/dev54d690a66). Use the APNs key to sign your JSON Web Tokens (JWT) when sending notifications from your server.
 
-##### Enable and register for push notifications
+### Enable and register for push notifications
 
 To receive notifications, you first enable push notifications in your app. You can register to receive push notifications in either your app delegate or in your file provider extension. Finally, you send the device token to your server.
 
@@ -101,7 +101,7 @@ func pushRegistry(
 }
 ```
 
-##### Send push notifications
+### Send push notifications
 
 You’re now ready to send a push notification. Start by creating a JWT; for details, see [Provider Authentication Tokens](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/CommunicatingwithAPNs.html#//apple_ref/doc/uid/TP40008194-CH11-SW3). You can reuse the JWT as long as it remains valid.
 

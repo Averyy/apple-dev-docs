@@ -10,7 +10,7 @@ Filter an image by convolving it with custom and high-speed kernels.
 - macOS 13.3+
 - Xcode 14.3+
 
-#### Overview
+## Overview
 
 This sample code project uses a variety of convolution techniques to blur an image with custom kernels and built-in high-speed kernels. *Convolution* is a common image-processing technique that changes the value of a pixel according to the values of its surrounding pixels. Many common image filters, such as blurring, detecting edges, sharpening, and embossing, derive from convolution.
 
@@ -26,11 +26,11 @@ The simplest kernel, known as an *identity kernel*, contains a single value: 1. 
 
 An image remains unchanged when convolving it with an identity kernel.
 
-##### Run the sample
+### Run the sample
 
 To convolve an image, select a blur filter from the SwiftUI [`Picker`](../SwiftUI/picker.md) control.
 
-##### Blur an image with a 2D kernel
+### Blur an image with a 2D kernel
 
 A *box blur kernel* returns the average value of the neighboring pixels. In the following example, the kernel contains nine values and the result is the sum of 1 divided by 9 multiplied by each of the pixel values:
 
@@ -71,7 +71,7 @@ sourceBuffer.convolve(with: kernel,
                       destination: destinationBuffer)
 ```
 
-##### Blur an image with a separable kernel
+### Blur an image with a separable kernel
 
 The `kernel2D` kernel described in the previous section is *separable*; that is, it’s the *outer product* of a 1D horizontal kernel and a 1D vertical kernel. A separable kernel allows splitting of the 2D convolution into two 1D passes, resulting in faster processing times. The following formula shows the two vectors that form `kernel2D`:
 
@@ -107,7 +107,7 @@ planarSourceBuffers.separableConvolve(horizontalKernel: kernel,
 
 The increase in speed from using two 1D kernels instead of a single 2D kernel is significant. For each pixel, the 2D pass requires `M * N` multiplications and additions (where `M` is the number of rows and `N` is the number of columns), but each 1D pass only requires `M + N` multiplications and additions.
 
-##### Blur an image with high-speed kernels
+### Blur an image with high-speed kernels
 
 vImage provides two high-speed blurring convolutions for 8-bit images: a box filter and a tent filter. These blurs are equivalent to convolving with standard kernels, but the developer doesn’t need to supply the kernel. These functions are typically faster than performing an equivalent convolution with custom kernels.
 
@@ -147,7 +147,7 @@ The following example shows the result of a tent filter. The result is a smoothe
 
 Note that passing the [`vImage.EdgeMode.truncateKernel`](./vimage/edgemode/truncatekernel.md) flag to the high-speed kernels can significantly impact their performance. This flag is only necessary when vImage needs to restrict calculations to the portion of the kernel overlapping the image.
 
-##### Blur an image with multiple kernels
+### Blur an image with multiple kernels
 
 vImage can apply multiple kernels in a single convolution. The [`convolve(with:divisor:bias:edgeMode:destination:)`](./vimage/pixelbuffer/convolve%28with,divisor,bias,edgemode,destination%29-1oul9.md) function makes it possible to specify four separate kernels — one for each channel in the image.
 

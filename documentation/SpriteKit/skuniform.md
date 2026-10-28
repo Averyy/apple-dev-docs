@@ -29,7 +29,7 @@ class SKUniform
 
 - [Creating a Custom Fragment Shader](./creating-a-custom-fragment-shader.md)
 
-#### Overview
+## Overview
 
 An [`SKUniform`](./skuniform.md) object is used to hold uniform data for a custom OpenGL or OpenGL ES shader. The uniform data is accessible from all shaders that include the uniform.To use a uniform variable in your shader, create the [`SKUniform`](./skuniform.md) object and set its initial value. Once its value is specified, the [`uniformType`](./skuniform/uniformtype.md) property changes to match the type of the initial value you provided and can never change afterward. To use the uniform object, add it to an [`SKShader`](./skshader.md) object that needs to access the uniform variable. To update the uniform variable’s value, choose the appropriate property on the uniform object based on the data type it encapsulates.
 

@@ -16,7 +16,7 @@ Get a pointer to the backing store for this address space
 void *(*GetBuffer)(IOFireWireLibPhysicalAddressSpaceRef self);
 ```
 
-#### Return Value
+## Return Value
 
 A pointer to the backing store of this address space.
 

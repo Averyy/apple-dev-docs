@@ -19,11 +19,11 @@ func AEInitializeDesc(_ desc: UnsafeMutablePointer<AEDesc>!)
 void AEInitializeDesc(AEDesc *desc);
 ```
 
-#### Discussion
+## Discussion
 
 The function sets the type of the descriptor to `typeNull` and sets the data handle to `NULL`. If you need to initialize a descriptor that already has some data in it, use [`AEDisposeDesc(_:)`](./api-1444208-aedisposedesc.md) to deallocate the memory and initialize the descriptor.
 
-##### Version-Notes
+### Version-Notes
 
 Thread safe starting in OS X v10.2.
 

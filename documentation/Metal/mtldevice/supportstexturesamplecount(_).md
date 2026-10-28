@@ -29,7 +29,7 @@ func supportsTextureSampleCount(_ sampleCount: Int) -> Bool
 
 - [Positioning samples programmatically](../positioning-samples-programmatically.md)
 
-#### Discussion
+## Discussion
 
 The number of points the GPU can sample a texture varies by device:
 

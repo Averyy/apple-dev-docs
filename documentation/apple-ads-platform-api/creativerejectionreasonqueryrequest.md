@@ -15,11 +15,11 @@ The request body for querying ad creative rejection reasons.
 object CreativeRejectionReasonQueryRequest
 ```
 
-#### Discussion
+## Discussion
 
 The `CreativeRejectionReasonQueryRequest` object is the request body for querying ad creative rejection reasons.
 
-##### Example
+### Example
 
 ```json
 {

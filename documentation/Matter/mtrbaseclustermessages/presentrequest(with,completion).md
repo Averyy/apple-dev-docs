@@ -29,7 +29,7 @@ func presentRequest(with params: MTRMessagesClusterPresentMessagesRequestParams)
 - (void) presentMessagesRequestWithParams:(MTRMessagesClusterPresentMessagesRequestParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Upon receipt, this SHALL cause the message in the passed fields to be appended to the Messages attribute.
 

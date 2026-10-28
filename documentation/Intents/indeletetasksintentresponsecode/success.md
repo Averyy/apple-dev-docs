@@ -25,7 +25,7 @@ case success
 INDeleteTasksIntentResponseCodeSuccess
 ```
 
-#### Discussion
+## Discussion
 
 Use this code after successfully deleting the tasks from the task list successfully. Your response should contain the details of the task list and tasks you changed.
 

@@ -19,7 +19,7 @@ func tabletPoint(with event: NSEvent)
 - (void) tabletPoint:(NSEvent *) event;
 ```
 
-#### Discussion
+## Discussion
 
 Tablet events are represented by `NSEvent` objects of type [`NSTabletPoint`](../nstabletpoint.md). They describe the current state of a transducer (that is, a pointing device) that is in proximity to its tablet, reflecting changes such as location, pressure, tilt, and rotation. See the [`NSEvent`](../nsevent.md) reference for the methods that allow you to extract this and other information from `event`. The default implementation of `NSResponder` passes the message to the next responder.
 

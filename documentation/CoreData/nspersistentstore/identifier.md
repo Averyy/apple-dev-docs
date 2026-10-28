@@ -25,11 +25,11 @@ var identifier: String! { get set }
 @property (copy, null_resettable) NSString * identifier;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier is used as part of the managed object IDs for each object in the store.
 
-##### Special Considerations
+### Special Considerations
 
 `NSPersistentStore` provides a default implementation to provide a globally unique identifier for the store instance.
 

@@ -5,7 +5,7 @@
 
 Eliminate passwords for your users when they sign in to apps and websites.
 
-#### Overview
+## Overview
 
 Passkeys use iCloud Keychain public key credentials, eliminating the need for passwords. Instead, they rely on biometric identification, such as Touch ID and Face ID in iOS, or a specific confirmation in macOS for generating and authenticating accounts.
 
@@ -13,7 +13,7 @@ As the *authenticator*, your Apple device generates a unique public-private key 
 
 > ❗ **Important**:  You need to have an associated domain with the `webcredentials` service type when making a registration or assertion request; otherwise, the request returns an error. See [Supporting associated domains](../Xcode/supporting-associated-domains.md) for more information.__
 
-##### Register a new account on a service
+### Register a new account on a service
 
 To onboard users to a new service, such as an online bank or grocery delivery app, without passwords, you need to obtain a *challenge* from the server. A challenge is data that the server generates to prove that you, as the authenticator, own the account.
 
@@ -36,7 +36,7 @@ Then create an instance of [`ASAuthorizationControllerDelegate`](./asauthorizati
 
 Because this is a registration request, the device displays a sheet asking the user to create a new credential.
 
-##### Connect to a service with an existing account
+### Connect to a service with an existing account
 
 After the user establishes an account with a relying party, they can connect to that service and authenticate using an assertion request.
 
@@ -58,7 +58,7 @@ authController.performRequests()
 
 If you provide an assertion request to the controller and the user has one or more credentials on the device, the device displays a sheet with the list of credentials to choose from. An error returns if there aren’t any credentials on the device. In this case, ask the user to register for the service.
 
-##### Respond to the request
+### Respond to the request
 
 [`ASAuthorizationControllerDelegate`](./asauthorizationcontrollerdelegate.md) provides information about the outcome of a registration or authentication request. Adopt this protocol to determine how to react to authorization success or errors. The following code defines [`authorizationController(controller:didCompleteWithAuthorization:)`](./asauthorizationcontrollerdelegate/authorizationcontroller%28controller,didcompletewithauthorization%29.md) to handle registration and assertion, as well as [`authorizationController(controller:didCompleteWithError:)`](./asauthorizationcontrollerdelegate/authorizationcontroller%28controller,didcompletewitherror%29.md) to handle any errors:
 
@@ -81,13 +81,13 @@ If the authorization succeeds, obtain the credential from the authoriziation con
 
 If an error occurs during the authorization, the framework calls [`authorizationController(controller:didCompleteWithError:)`](./asauthorizationcontrollerdelegate/authorizationcontroller%28controller,didcompletewitherror%29.md) and provides the specific error.
 
-##### Support AutoFill
+### Support AutoFill
 
 Password AutoFill is a familiar authentication workflow for logging into apps and services. Using AutoFill, you can use passkeys alongside passwords while maintaining the same familiar user experience.
 
 To prepare your iOS app to use AutoFill, first set your text field’s [`textContentType`](../UIKit/uitextinputtraits/textcontenttype.md) to [`username`](../UIKit/uitextcontenttype/username.md). This property lets the system know where to show the passkey suggestion. Next, call [`performAutoFillAssistedRequests()`](./asauthorizationcontroller/performautofillassistedrequests%28%29.md). When the user taps the user name field, the system can suggest passkeys that the user saved for the app.
 
-##### Change or reset a passkey
+### Change or reset a passkey
 
 There may be times when a user needs a new passkey, for example, to recover an account or to revoke access to a passkey shared with someone else.
 
@@ -95,7 +95,7 @@ To change or reset a passkey, use [`createCredentialRegistrationRequest(challeng
 
 Registering a passkey with the same user ID as an existing one overwrites the existing passkey on the user’s devices.
 
-##### Use passkeys in a web view
+### Use passkeys in a web view
 
 To authenticate using passkeys in a [`WKWebView`](../WebKit/wkwebview.md) web view, configure your service’s relying party identifier as an associated domain in your app. For more information, see [Supporting associated domains](../Xcode/supporting-associated-domains.md).
 

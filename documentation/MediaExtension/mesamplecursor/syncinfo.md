@@ -19,7 +19,7 @@ optional var syncInfo: AVSampleCursorSyncInfo { get }
 @property (nonatomic, readonly) AVSampleCursorSyncInfo syncInfo;
 ```
 
-#### Discussion
+## Discussion
 
 This value includes any valid flags set. Don’t implement this property if this kind of synchronization information doesn’t make sense for the sequence of samples.
 

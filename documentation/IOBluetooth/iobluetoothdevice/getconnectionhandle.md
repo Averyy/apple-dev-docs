@@ -15,11 +15,11 @@ Get the connection handle for the baseband connection.
 - (BluetoothConnectionHandle) getConnectionHandle;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the connection handle for the baseband connection. If no baseband connection is present, kBluetoothConnectionHandleNone is returned.
 
-#### Discussion
+## Discussion
 
 This method only returns a valid result if a baseband connection is present (-isConnected returns TRUE).
 

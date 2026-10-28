@@ -5,11 +5,11 @@
 
 Learn about important changes in DataDetection.
 
-#### Overview
+## Overview
 
 Browse notable changes in [DataDetection](../DataDetection/DataDetection.md).
 
-#### June 2025
+## June 2025
 
 - Scan strings for semantic entities — such as email addresses, phone numbers, URLs, and flight information — with the new Swift [`DataDetector`](../DataDetection/datadetector.md) extension to the string protocol.
 

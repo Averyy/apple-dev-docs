@@ -16,7 +16,7 @@ Toggle exclusive access to the device for the current process. If another proces
 func toggleHogMode() throws -> pid_t
 ```
 
-#### Return Value
+## Return Value
 
 A pid_t indicating the process that currently owns exclusive access to the device or a value of -1 indicating that the device is currently available to all processes.
 

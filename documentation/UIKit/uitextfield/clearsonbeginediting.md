@@ -23,7 +23,7 @@ var clearsOnBeginEditing: Bool { get set }
 @property (nonatomic) BOOL clearsOnBeginEditing;
 ```
 
-#### Discussion
+## Discussion
 
 If this property is set to [`true`](../../Swift/true.md), the text field’s previous text is cleared when the user selects the text field to begin editing. If [`false`](../../Swift/false.md), the text field places an insertion point at the place where the user tapped the field.
 

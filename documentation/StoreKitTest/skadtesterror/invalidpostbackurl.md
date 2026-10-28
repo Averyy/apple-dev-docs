@@ -17,7 +17,7 @@ The URL for the postback isn’t valid, in the testing environment.
 static var invalidPostbackURL: SKAdTestError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 Check that the URL is valid in the [`postbackURL`](../skadtestpostback/postbackurl.md) parameter in [`SKAdTestPostback`](../skadtestpostback.md).
 

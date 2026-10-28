@@ -14,7 +14,7 @@ The name of a preference pane displayed beneath the preference pane icon in the 
 - **Name**: `NSPrefPaneIconLabel` (Preference Pane icon label)
 - **Type**: string
 
-#### Discussion
+## Discussion
 
 For long names, you can split the name into two lines by including a newline character (`‘\n’`) in the string. If you omit this key, System Preferences uses the [`CFBundleName`](./cfbundlename.md) key for the name.
 

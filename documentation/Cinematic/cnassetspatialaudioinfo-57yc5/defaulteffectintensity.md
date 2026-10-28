@@ -17,7 +17,7 @@
 @property (nonatomic, readonly) float defaultEffectIntensity;
 ```
 
-#### Discussion
+## Discussion
 
 Default effect intensity value as provided by the system. Supported range is [0.0-1.0]
 

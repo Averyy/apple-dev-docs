@@ -22,7 +22,7 @@ var escapeKeyReplacementItemIdentifier: NSTouchBarItem.Identifier? { get set }
 @property (copy, nullable) NSTouchBarItemIdentifier escapeKeyReplacementItemIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 To replace the system-provided button, set [`escapeKeyReplacementItemIdentifier`](./escapekeyreplacementitemidentifier.md) to the identifier of an [`NSTouchBarItem`](../nstouchbaritem.md) instance. You must also include the item instance in the Touch Bar’s [`templateItems`](./templateitems.md) array, or return the item when the Touch Bar calls the [`touchBar(_:makeItemForIdentifier:)`](../nstouchbardelegate/touchbar%28_,makeitemforidentifier%29.md) delegate method.
 

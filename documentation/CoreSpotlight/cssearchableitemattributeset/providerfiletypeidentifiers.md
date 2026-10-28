@@ -23,7 +23,7 @@ var providerFileTypeIdentifiers: [String]? { get set }
 @property (copy, nullable) NSArray<NSString *> * providerFileTypeIdentifiers;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to specify the file types that your app or Core Spotlight delegate app extension can provide to satisfy a drag-and-drop request involving a searchable item. When a drag-and-drop action occurs, the app receiving the data selects the type it wants from the identifiers you provide. For types in this property, the system calls the [`fileURL(for:itemIdentifier:typeIdentifier:inPlace:)`](../cssearchableindexdelegate/fileurl%28for,itemidentifier,typeidentifier,inplace%29.md) method of your delegate object, which you use to deliver a copy of the requested file.
 

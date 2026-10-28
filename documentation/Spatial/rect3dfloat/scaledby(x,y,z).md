@@ -21,7 +21,7 @@ Returns the rectangle scaled by the specified values.
 func scaledBy(x: Float = 1, y: Float = 1, z: Float = 1) -> Rect3DFloat
 ```
 
-#### Discussion
+## Discussion
 
 - Returns The scaled rectangle.
 

@@ -24,7 +24,7 @@ func AudioComponentGetVersion(_ inComponent: AudioComponent, _ outVersion: Unsaf
 extern OSStatus AudioComponentGetVersion(AudioComponent inComponent, UInt32 *outVersion);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 

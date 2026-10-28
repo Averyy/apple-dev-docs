@@ -24,11 +24,11 @@ func shuffled(using randomSource: GKRandomSource) -> [Any]
 - (NSArray<id> *) shuffledArrayWithRandomSource:(GKRandomSource *) randomSource;
 ```
 
-#### Return Value
+## Return Value
 
 A new array that lists this array’s elements in a random order.
 
-#### Discussion
+## Discussion
 
 Use the `randomSource` parameter to influence the random shuffling. For example, to reproduce a series of shuffles for testing, you can create a [`GKARC4RandomSource`](../../GameplayKit/gkarc4randomsource.md) object using the [`seed`](../../GameplayKit/gkarc4randomsource/seed.md) value of a previously used random source.
 

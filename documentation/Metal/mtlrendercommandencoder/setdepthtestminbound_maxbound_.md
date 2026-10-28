@@ -20,7 +20,7 @@ Configures the minimum and maximum bounds for depth bounds testing.
 - (void) setDepthTestMinBound:(float) minBound maxBound:(float) maxBound;
 ```
 
-#### Discussion
+## Discussion
 
 The render command encoder disables depth bounds testing by default. The render command encoder also disables depth bounds testing when all of the following properties equal a specific value:
 

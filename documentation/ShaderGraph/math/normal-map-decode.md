@@ -14,7 +14,7 @@ Remaps a normal’s value from [0,1] to [-1,1] by applying 2x-1.
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Parameter Types
+## Parameter Types
 
 | Input | Type |
 | --- | --- |

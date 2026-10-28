@@ -15,7 +15,7 @@ Initializes a transport message for a specific capability session.
 init(sessionID: UUID, data: Data)
 ```
 
-#### Discussion
+## Discussion
 
 Create transport messages when your accessory sends data back to the data provider through [`sendMessageToDataProvider(_:)`](../accessorytransportsession/sendmessagetodataprovider%28_%29.md).
 

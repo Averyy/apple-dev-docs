@@ -19,7 +19,7 @@ func styleDeclaration(withText text: String!) -> DOMCSSStyleDeclaration!
 - (DOMCSSStyleDeclaration *) styleDeclarationWithText:(NSString *) text;
 ```
 
-#### Return Value
+## Return Value
 
 The style declaration for `text`.
 

@@ -21,7 +21,7 @@ A Boolean value that indicates whether the observation contains precision and re
 var hasPrecisionRecallCurve: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 If this property is `true`, then you can call precision and recall-related methods in this observation.
 

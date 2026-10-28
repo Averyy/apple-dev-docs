@@ -20,11 +20,11 @@ class func list() -> NSAppleEventDescriptor
 + (NSAppleEventDescriptor *) listDescriptor;
 ```
 
-#### Return Value
+## Return Value
 
 An empty list descriptor, or `nil` if an error occurs.
 
-#### Discussion
+## Discussion
 
 A list descriptor is a descriptor whose data consists of one or more descriptors. You can add items to the list by calling [`insert(_:at:)`](./insert%28_,at%29.md) or remove them with [`remove(at:)`](./remove%28at%29.md).
 

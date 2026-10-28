@@ -23,7 +23,7 @@ var kAudioSessionProperty_AudioCategory: Int { get }
 kAudioSessionProperty_AudioCategory
 ```
 
-#### Discussion
+## Discussion
 
 See [Audio Session Categories](./api-1618427-audio-session-categories.md).
 

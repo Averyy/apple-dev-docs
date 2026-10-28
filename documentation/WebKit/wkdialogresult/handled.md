@@ -23,7 +23,7 @@ case handled
 WKDialogResultHandled
 ```
 
-#### Discussion
+## Discussion
 
 This result tells the system that it does not need to check any more whether it needs to display the Lockdown Mode first use message.
 

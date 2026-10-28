@@ -24,11 +24,11 @@ class func linearDodgeBlendMode() -> any CIFilter & CICompositeOperation
 + (CIFilter<CICompositeOperation> *) linearDodgeBlendModeFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The modified image.
 
-#### Discussion
+## Discussion
 
 This method applies the linear-dodge-blend mode filter to an image. The effect calculates the brightness value for the background image then brightens it to reflect the brightness of the input image. The effect then increases the contrast in the output image.
 

@@ -5,7 +5,7 @@
 
 Provide a purpose string that explains to a person why you need access to protected resources on their device.
 
-#### Overview
+## Overview
 
 Modern devices collect and store a wealth of sensitive information about people who use them. Many apps rely on this kind of data, and the device hardware that generates it, to do useful work. For example, a navigation app needs a person’s GPS coordinates to locate the person on a map. But not all apps need access to all data. The same navigation app doesn’t need access to a person’s health history, camera interface, or Bluetooth peripherals.
 
@@ -13,7 +13,7 @@ Ensure your app accesses only what it needs to do its job. To support this princ
 
 > 💡 **Tip**:  In addition to asking people for permission to access a resource, in some cases, you also need to separately declare your intent to do so by adding an entitlement to your app, as described in [`Entitlements`](../BundleResources/entitlements.md).
 
-##### Provide a purpose string
+### Provide a purpose string
 
 The first time your app attempts to access a protected resource, the system prompts the person using the app for permission. In the following example, an iOS app called FoodDeliveryApp, which provides a food delivery service, generates a prompt requesting access to the person’s location:
 
@@ -40,7 +40,7 @@ Xcode adds a build setting to your app that configures the purpose string as the
 
 If your app supports multiple locales, in addition to providing a purpose string in the Signing and Capabilities editor, localize the purpose string for each locale you support. Create a string catalog file called `InfoPlist.xcstrings`, and build your app to populate the string catalog with keys for the usage description strings in your app. Add the translations for your usage description strings to the localizations in the string catalog. For more information, see [Localizing and varying text with a string catalog](../Xcode/localizing-and-varying-text-with-a-string-catalog.md).
 
-##### Adhere to the requirements for purpose strings
+### Adhere to the requirements for purpose strings
 
 To give people useful, concise information about why you’re requesting access to protected resources, make sure each purpose string you provide is valid by checking the following:
 
@@ -70,13 +70,13 @@ To resolve this issue, provide a purpose string that explains why the app needs 
 
 > **Note**:  If you’re using external libraries or SDKs, they may reference APIs that require a purpose string. Although your app might not use these APIs, a purpose string is still necessary for App Review. You can contact the developer of the library or SDK to request information about which protected resources the developer uses and their purpose, or request that the developer release a version of their code that doesn’t contain the APIs. You’re responsible for all access of protected resources, including external SDK and library access.
 
-##### Check for authorization
+### Check for authorization
 
 Many system frameworks that provide access to protected resources have dedicated APIs for checking and requesting authorization to use those resources. This model allows you to adjust your app’s behavior depending on the current access it has. For example, if a person denies your app permission to do something, you can remove related elements from your user interface.
 
 Because a person can change authorization at any time using Settings, always check the authorization status of a feature before accessing it. In cases without a dedicated API, prepare your app to gracefully handle access failures.
 
-##### Reset authorization access
+### Reset authorization access
 
 When your app attempts to access a protected resource after its first attempt, the system remembers the person’s permission choice and doesn’t prompt again. To prompt the person again, you need to reset access to these resources on your device or system.
 

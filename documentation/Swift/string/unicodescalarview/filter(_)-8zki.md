@@ -22,11 +22,11 @@ Returns a new collection of the same type containing, in order, the elements of 
 consuming func filter<E>(_ isIncluded: (Self.Element) throws(E) -> Bool) throws(E) -> Self where E : Error
 ```
 
-#### Return Value
+## Return Value
 
 A collection of the elements that `isIncluded` allowed.
 
-#### Discussion
+## Discussion
 
 In this example, `filter(_:)` is used to include only names shorter than five characters.
 

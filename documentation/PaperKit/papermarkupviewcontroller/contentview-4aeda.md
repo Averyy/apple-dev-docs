@@ -19,7 +19,7 @@ The content that markup appears on top of.
 @preconcurrency var contentView: UIView? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The system sizes the content view to the frame of the markup and adds it below all the markup and drawing. When `nil`, markup appears on top of a blank white canvas.
 

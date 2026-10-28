@@ -20,7 +20,7 @@ Modes that describe how materials using the created `UnlitMaterial.Program` will
 var blendMode: MaterialParameterTypes.BlendMode?
 ```
 
-#### Discussion
+## Discussion
 
 Default value is nil, which will cause this material to render opaque, and not blend with background content.
 

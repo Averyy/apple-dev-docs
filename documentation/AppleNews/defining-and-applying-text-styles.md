@@ -5,7 +5,7 @@
 
 Define and apply custom, default, and inline text styles, or use HTML tags or Markdown syntax to style your text.
 
-#### Overview
+## Overview
 
 Text styles determine the look of text in your article. For example, text styles let you create drop caps and shadowing.
 
@@ -27,7 +27,7 @@ The recommended type sizes are as follows:
 
 > **Note**:  You must use only lowercase characters for custom tags. For example, if you have a default text style called `default-tag-blueBackgroundColor`, Apple News Format won’t apply the default text style. You must name it `default-tag-bluebackgroundcolor`.
 
-##### Define a Custom Default Text Style
+### Define a Custom Default Text Style
 
 To create a custom default text style for your article, add a text style called `default` in the [`ArticleDocument.componentTextStyles`](../AppleNewsFormat/articledocument/componenttextstyles-data.dictionary.md), as shown in this example.
 
@@ -45,7 +45,7 @@ To create a custom default text style for your article, add a text style called 
 }
 ```
 
-##### Define a Custom, Role Based Default Text Style
+### Define a Custom, Role Based Default Text Style
 
 To create a custom, role-based, default text style for all components, add a text style to the [`ArticleDocument.componentTextStyles`](../AppleNewsFormat/articledocument/componenttextstyles-data.dictionary.md) object, and name it `default-<role>` (where `<role>` is a valid component `role` name). For an explanation of `role`, see [Components](./components.md).
 
@@ -80,7 +80,7 @@ The following example shows a default text style and two role-based default text
 }
 ```
 
-##### Define Custom Text Styles for a Range of Text
+### Define Custom Text Styles for a Range of Text
 
 To define a custom text style for a range of text to use with a single component, use HTML, Markdown, or the [`InlineTextStyle`](../AppleNewsFormat/inlinetextstyle.md) object. See [Using HTML with Apple News Format](./using-html-with-apple-news-format.md) and [Using Markdown with Apple News Format](./using-markdown-with-apple-news-format.md).
 
@@ -129,7 +129,7 @@ You can also apply a style to a range using Markdown or an `inlineTextStyle` obj
 }
 ```
 
-##### Define Custom Component Text Style to Use With Multiple Components
+### Define Custom Component Text Style to Use With Multiple Components
 
 To create a custom component text style to use with multiple components, create and name a text style in the [`ArticleDocument.componentTextStyles`](../AppleNewsFormat/articledocument/componenttextstyles-data.dictionary.md) object, and specify the properties you want for that style.
 
@@ -154,7 +154,7 @@ To apply this custom text style, put its name as the value for the [`TextStyle`]
 }
 ```
 
-##### Use HTML and Markdown with Text
+### Use HTML and Markdown with Text
 
 You can use HTML tags and Markdown syntax to style text in your article and to apply Apple News Format text styles.
 

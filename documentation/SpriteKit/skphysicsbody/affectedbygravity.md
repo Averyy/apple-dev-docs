@@ -25,7 +25,7 @@ var affectedByGravity: Bool { get set }
 @property (nonatomic, assign) BOOL affectedByGravity;
 ```
 
-#### Discussion
+## Discussion
 
 The physics world’s [`gravity`](../skphysicsworld/gravity.md) property defines the gravitational forces applied to volume-based bodies in the scene.
 

@@ -19,7 +19,7 @@ The maximum number of UTF-8 characters of rendered tool output the search tool s
 var maximumResponseSize: Int?
 ```
 
-#### Discussion
+## Discussion
 
 If `nil`, the tool picks a default based on the configured [`guide`](./guide.md). Pass an explicit value to override that default; the override applies regardless of the guide’s level.
 

@@ -24,7 +24,7 @@ func removeObstacles(_ obstacles: [GKPolygonObstacle])
 - (void) removeObstacles:(NSArray<GKPolygonObstacle *> *) obstacles;
 ```
 
-#### Discussion
+## Discussion
 
 Adding or removing obstacles does not update the graph. The [`GKMeshGraph`](../gkmeshgraph.md) class adds, removes, and arranges nodes to describe the navigable areas around obstacles *only* when you call the [`triangulate()`](./triangulate%28%29.md) method. Typically, you add or remove several obstacles, then call the [`triangulate()`](./triangulate%28%29.md) method to update the graph.
 

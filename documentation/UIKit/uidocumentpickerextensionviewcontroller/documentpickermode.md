@@ -24,7 +24,7 @@ var documentPickerMode: UIDocumentPickerMode { get }
 @property (nonatomic, assign, readonly) UIDocumentPickerMode documentPickerMode;
 ```
 
-#### Discussion
+## Discussion
 
 For a list of available modes, see `Document Picker Modes` in [`UIDocumentPickerViewController`](../uidocumentpickerviewcontroller.md).
 

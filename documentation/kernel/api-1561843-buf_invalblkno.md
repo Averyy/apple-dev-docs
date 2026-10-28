@@ -15,11 +15,11 @@ Invalidate a filesystem logical block in a file.
 errno_t buf_invalblkno(vnode_t vp, daddr64_t lblkno, int flags);
 ```
 
-#### Return Value
+## Return Value
 
 0 for success, EINVAL if vp is not a device file.
 
-#### Discussion
+## Discussion
 
 buf_invalblkno() tries to make the data for a given block in a file invalid; if the buffer for that block is found in core and is not busy, we mark it invalid and call buf_brelse() (see "flags" param for what happens if the buffer is busy). buf_brelse(), noticing that it is invalid, will will return the buffer to the empty-buffer list and tell the VM subsystem to abandon the relevant pages. Data will not be written to backing store--it will be cast aside. Note that this function will only work if the block in question has been obtained with a buf_getblk(). If data has been read into core without using traditional buffer cache routines, buf_invalblkno() will not be able to invalidate it--this includes the use of iobufs.
 

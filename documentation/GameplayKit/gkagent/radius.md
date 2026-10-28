@@ -24,7 +24,7 @@ var radius: Float { get set }
 @property (nonatomic) float radius;
 ```
 
-#### Discussion
+## Discussion
 
 Goals that involve an agent’s position relative to other agents make use of this property. For example, a goal created with the goalToAvoidAgents:timeBeforeCollisionToAvoid: method will attempt to move an agent such that its radius does not overlap with those of the other specified agents.
 

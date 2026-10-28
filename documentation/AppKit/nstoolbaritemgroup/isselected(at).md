@@ -22,11 +22,11 @@ func isSelected(at index: Int) -> Bool
 - (BOOL) isSelectedAtIndex:(NSInteger) index;
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value indicating whether the specified index is currently selected.
 
-#### Discussion
+## Discussion
 
 Use this method when you specify the [`NSToolbarItemGroup.SelectionMode.selectAny`](./selectionmode-swift.enum/selectany.md) selection mode for the grouped toolbar item to determine which subitems are currently selected.
 

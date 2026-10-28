@@ -24,11 +24,11 @@ class func archivedData(withRootObject rootObject: Any) -> Data
 + (NSData *) archivedDataWithRootObject:(id) rootObject;
 ```
 
-#### Return Value
+## Return Value
 
 A data object containing the encoded form of the object graph whose root object is `rootObject`.
 
-#### Discussion
+## Discussion
 
 This method invokes [`init(forWritingWith:)`](./init%28forwritingwith%29.md) and [`encodeRootObject(_:)`](./encoderootobject%28_%29.md) to create a temporary archiver that encodes the object graph.
 

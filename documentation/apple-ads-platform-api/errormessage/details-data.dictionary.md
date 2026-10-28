@@ -15,11 +15,11 @@ A single error detail entry describing one part of a failed change history reque
 object ErrorMessage.Details
 ```
 
-#### Discussion
+## Discussion
 
 Each entry in `ErrorMessage`’s `details` array narrows down which part of the request caused the failure. Use these entries, together with the top-level `message`, for diagnostic logging or user-facing error displays. Use the top-level `code` on [`ErrorMessage`](../errormessage.md) for programmatic error handling.
 
-##### Example
+### Example
 
 ```json
 {

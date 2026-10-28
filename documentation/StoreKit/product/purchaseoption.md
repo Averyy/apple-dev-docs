@@ -21,7 +21,7 @@ Optional settings for a product purchase that add account information, purchase 
 struct PurchaseOption
 ```
 
-#### Overview
+## Overview
 
 Associate purchase options with an Apple In-App Purchase when you call the methods to initiate a purchase, such as [`purchase(options:)`](./purchase%28options%29.md) or [`purchase(confirmIn:options:)`](./purchase%28confirmin,options%29-6dj6y.md). Use the testing-specific options with [StoreKit Test](../../StoreKitTest/StoreKitTest.md) or in the sandbox testing environment.
 
@@ -29,7 +29,7 @@ Purchase options enable you to provide additional information for the purchase, 
 
 > ❗ **Important**:  Purchases fail if a purchase option is invalid, and can result in the purchase method throwing a [`StoreKitError`](../storekiterror.md) or [`Product.PurchaseError`](./purchaseerror.md).
 
-##### Use purchase options during testing
+### Use purchase options during testing
 
 In the sandbox testing environment, use [`simulatesAskToBuyInSandbox(_:)`](./purchaseoption/simulatesasktobuyinsandbox%28_%29.md) to test Ask To Buy scenarios.
 

@@ -19,11 +19,11 @@ optional func accessibilitySelectedRows() -> [any NSAccessibilityRow]?
 - (NSArray<id<NSAccessibilityRow>> *) accessibilitySelectedRows;
 ```
 
-#### Return Value
+## Return Value
 
 An array containing the currently selected rows for the table.
 
-#### Discussion
+## Discussion
 
 This method is the getter for the [`NSAccessibilityProtocol`](../nsaccessibilityprotocol.md) protocol’s [`accessibilitySelectedRows`](../nsaccessibility-c.protocol/accessibilityselectedrows.md) property. Additionally, your class needs to send a [`selectedRowsChanged`](../nsaccessibility-swift.struct/notification/selectedrowschanged.md) notification whenever the table’s selected rows change.
 

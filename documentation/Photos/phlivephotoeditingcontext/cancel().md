@@ -24,7 +24,7 @@ func cancel()
 - (void) cancel;
 ```
 
-#### Discussion
+## Discussion
 
 This method applies only after you’ve begun processing a Live Photo for display or output with the [`init(livePhotoEditingInput:)`](./init%28livephotoeditinginput%29.md) or [`saveLivePhoto(to:options:completionHandler:)`](./savelivephoto%28to,options,completionhandler%29.md) method. After you call this method, Photos calls your completion handler and provides an error with the [`PHLivePhotoEditingErrorCode.aborted`](../phlivephotoeditingerrorcode/aborted.md) error code.
 

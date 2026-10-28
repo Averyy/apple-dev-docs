@@ -21,7 +21,7 @@ Grows the array to have enough capacity for the specified number of elements, th
 mutating func append<E>(addingCapacity uninitializedCount: Int, initializingWith initializer: @_lifetime(span: copy span) (inout OutputSpan<Element>) throws(E) -> Void) throws(E) where E : Error
 ```
 
-#### Discussion
+## Discussion
 
 Inside the closure, initialize elements by appending to `span`. It ensures safety by keeping track of the initialization state of the memory At the end of the closure, `span`’s `count` elements will have been appended to the array.
 

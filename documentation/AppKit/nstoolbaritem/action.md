@@ -22,7 +22,7 @@ var action: Selector? { get set }
 @property (nullable) SEL action;
 ```
 
-#### Discussion
+## Discussion
 
 If you assign a custom view to the toolbar item, modifying this property updates the `action` property of the view or calls the `setAction:` method, if one of them exists. If the item doesn’t contain a custom view, the toolbar item manages the action directly.
 

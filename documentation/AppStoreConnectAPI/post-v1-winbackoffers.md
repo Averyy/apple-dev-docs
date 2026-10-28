@@ -9,11 +9,11 @@ Create a win-back offer for a specific subscription.
 **Availability**:
 - App Store Connect API 3.6+
 
-#### Discussion
+## Discussion
 
 > **Note**: Important Use a unique referenceName and offerId that you have not used for a promotional offer, offer code, or introductory offer, when you create your win-back offer.
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

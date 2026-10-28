@@ -19,7 +19,7 @@ func focus()
 - (void) focus;
 ```
 
-#### Discussion
+## Discussion
 
 The picker adds custom highlighting when it is configured as the target of crown input. For an interface that contains multiple pickers, you might use this method to switch the focus at an appropriate time. Because scrolling in an interface controller causes the picker to lose focus, you can also use this method to select the picker again later.
 

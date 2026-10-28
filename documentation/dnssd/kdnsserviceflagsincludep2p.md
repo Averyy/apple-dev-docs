@@ -23,7 +23,7 @@ var kDNSServiceFlagsIncludeP2P: UInt32 { get }
 kDNSServiceFlagsIncludeP2P
 ```
 
-#### Discussion
+## Discussion
 
 Include P2P interfaces when [`kDNSServiceInterfaceIndexAny`](./kdnsserviceinterfaceindexany.md) is specified. By default, specifying [`kDNSServiceInterfaceIndexAny`](./kdnsserviceinterfaceindexany.md) does not include P2P interfaces.
 

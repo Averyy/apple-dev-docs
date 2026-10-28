@@ -19,11 +19,11 @@ func maxPossiblePositionOfDivider(at dividerIndex: Int) -> CGFloat
 - (CGFloat) maxPossiblePositionOfDividerAtIndex:(NSInteger) dividerIndex;
 ```
 
-#### Return Value
+## Return Value
 
 A [`CGFloat`](../../CoreFoundation/cgfloat-swift.struct.md) that specifies the maximum possible position of the divider.
 
-#### Discussion
+## Discussion
 
 The position is *possible* because the bounds of the split view and the current position of other dividers dictate it. *Allowable* positions result from letting the delegate apply constraints to the possible positions.
 

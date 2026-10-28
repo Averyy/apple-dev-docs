@@ -16,11 +16,11 @@ The method is called when the port should configure its associated hardware to p
 IOReturn (*AllocatePort)(IOFireWireLibIsochPortRef self, IOFWSpeed speed, UInt32 chan);
 ```
 
-#### Return Value
+## Return Value
 
 Return kIOReturnSuccess on success, other return any other IOReturn error code.
 
-#### Discussion
+## Discussion
 
 This method is called by the channel object to which a port has been added. Subclasses of IOFireWireIsochPortInterface override this method to support specific hardware. Do not call this method directly.
 

@@ -18,7 +18,7 @@ The list style that describes the behavior and appearance of an inset grouped li
 struct InsetGroupedListStyle
 ```
 
-#### Overview
+## Overview
 
 You can also use [`insetGrouped`](./liststyle/insetgrouped.md) to construct this style.
 

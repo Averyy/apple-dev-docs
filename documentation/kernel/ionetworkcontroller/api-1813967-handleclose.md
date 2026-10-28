@@ -13,7 +13,7 @@ virtual void handleClose(
  IOOptionBitsoptions);
 ```
 
-#### Overview
+## Overview
 
 This method handles a close from one of the client objects. IOService calls this method with the arbitration lock held. Subclasses should not override this method.
 

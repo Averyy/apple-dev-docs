@@ -17,7 +17,7 @@ The defined targeted audience by administrative area.
 object AdminAreaCriteria
 ```
 
-#### Discussion
+## Discussion
 
 An `adminArea` is a state or the equivalent according to its associated `country`.
 

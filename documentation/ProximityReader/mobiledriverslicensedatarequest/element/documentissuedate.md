@@ -17,7 +17,7 @@ The document’s issue date.
 static let documentIssueDate: MobileDriversLicenseDataRequest.Element
 ```
 
-#### Discussion
+## Discussion
 
 This is usually the issue date of the corresponding physical document, if applicable.
 

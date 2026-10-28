@@ -16,11 +16,11 @@ Create a requirement that the peer is signed with the same team identifier as th
 static func isFromSameTeam(andMatchesSigningIdentifier: String? = nil) -> XPCPeerRequirement
 ```
 
-#### Return Value
+## Return Value
 
 A `XPCPeerRequirement` object representing the requirement
 
-#### Discussion
+## Discussion
 
 - andMatchesSigningIdentifier: If non-nil, The signing identifier the peer must have
 

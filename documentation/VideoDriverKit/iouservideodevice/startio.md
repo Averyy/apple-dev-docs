@@ -15,11 +15,11 @@ Tells the device to start IO.
 virtual kern_return_t StartIO(IOUserVideoStartStopFlags in_flags);
 ```
 
-#### Return Value
+## Return Value
 
 A kern_return_t value indicating whether IO started successfully.
 
-#### Discussion
+## Discussion
 
 The default implementation always returns `kIOReturnSuccess`. Subclass and override this method to handle any hardware-specific things when IO is starting. Then call the superclass implementation to update IO state. This call always completes with a definitive success or failure result. The hardware can take as long as necessary such that it always either succeeds (and returns `kIOReturnSuccess`) or fails. The system also calls StartIO for all streams added to the device.
 

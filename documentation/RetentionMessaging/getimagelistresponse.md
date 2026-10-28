@@ -15,7 +15,7 @@ A response that contains status information for all images.
 object GetImageListResponse
 ```
 
-#### Discussion
+## Discussion
 
 The [`Get Image List`](./get-image-list.md) endpoint returns this response.
 

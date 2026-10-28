@@ -28,7 +28,7 @@ protocol MTLLogState : NSObjectProtocol, Sendable
 
 - [Logging shader debug messages](./logging-shader-debug-messages.md)
 
-#### Overview
+## Overview
 
 Create an [`MTLCommandQueue`](./mtlcommandqueue.md) or [`MTLCommandBuffer`](./mtlcommandbuffer.md) with a log state to hold messages logged from shaders. Attach a log state to a command buffer by assigning it to the command buffer descriptor’s [`logState`](./mtlcommandbufferdescriptor/logstate.md). Similarly, to attach a log state to a command queue, use the command queue descriptor’s [`logState`](./mtlcommandqueuedescriptor/logstate.md).
 

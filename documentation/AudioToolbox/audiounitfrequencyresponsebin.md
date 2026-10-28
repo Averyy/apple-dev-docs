@@ -24,7 +24,7 @@ struct AudioUnitFrequencyResponseBin
 struct AudioUnitFrequencyResponseBin;
 ```
 
-#### Overview
+## Overview
 
 An array of AudioUnitFrequencyResponseBin are passed in to kAudioUnitProperty_FrequencyResponse with the mFrequency field filled in. The array is returned with the mMagnitude fields filled in. If fewer than kNumberOfResponseFrequencies are needed, then the first unused bin should be marked with a negative frequency.
 

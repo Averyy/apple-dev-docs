@@ -20,7 +20,7 @@ The description of a control that uses a custom app intent to provide user-confi
 @preconcurrency struct AppIntentControlConfiguration<Configuration, Content> where Configuration : ControlConfigurationIntent, Content : ControlWidgetTemplate
 ```
 
-#### Overview
+## Overview
 
 The following example shows the configuration for a door opener control able to open a door specified by the user.
 

@@ -5,7 +5,7 @@
 
 Get information about traits and the environment in which your app runs, and share data with your view hierarchy.
 
-#### Overview
+## Overview
 
 Traits represent independent pieces of data that UIKit automatically distributes through your app’s view and view controller hierarchies. The trait system provides a unified way to share configuration information, making it easier to build adaptive interfaces that respond to changes in device orientation, appearance modes, accessibility settings, and custom app states.
 

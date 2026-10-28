@@ -24,7 +24,7 @@ var center: GLKVector3 { get set }
 @property (nonatomic, assign) GLKVector3 center;
 ```
 
-#### Discussion
+## Discussion
 
 The property holds the `[x,y,z]` coordinates of the center of the skybox.
 

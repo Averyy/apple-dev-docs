@@ -25,7 +25,7 @@ func xpc_connection_cancel(_ connection: xpc_connection_t)
 extern void xpc_connection_cancel(xpc_connection_t connection);
 ```
 
-#### Discussion
+## Discussion
 
 After this call, any messages that have not yet been sent will be discarded, and the connection will be unwound. If there are messages that are awaiting replies, they will have their reply handlers invoked with the [`XPC_ERROR_CONNECTION_INVALID`](./xpc_error_connection_invalid-swift.var.md) error.
 

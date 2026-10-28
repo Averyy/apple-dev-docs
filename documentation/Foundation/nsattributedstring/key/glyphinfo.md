@@ -15,7 +15,7 @@ The name of a glyph info object.
 static let glyphInfo: NSAttributedString.Key
 ```
 
-#### Discussion
+## Discussion
 
 The [`NSLayoutManager`](../../../AppKit/nslayoutmanager.md) object assigns the glyph specified by this [`NSGlyphInfo`](../../../AppKit/nsglyphinfo.md) object to the entire attribute range, provided that its contents match the specified base string, and that the specified glyph is available in the font specified by `NSFontAttributeName`.
 

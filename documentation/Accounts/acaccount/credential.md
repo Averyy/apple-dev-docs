@@ -32,7 +32,7 @@ var credential: ACAccountCredential! { get set }
 @property (atomic, strong) ACAccountCredential * credential;
 ```
 
-#### Discussion
+## Discussion
 
 This property is required and must be set before the account is saved. For privacy reasons, this property is inaccessible after the account is saved.
 

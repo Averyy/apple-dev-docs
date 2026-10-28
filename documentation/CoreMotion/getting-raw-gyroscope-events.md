@@ -5,7 +5,7 @@
 
 Retrieve data from the onboard gyroscopes.
 
-#### Overview
+## Overview
 
 A gyroscope measures the rate at which a device rotates around a spatial axis. Many iOS devices have a three-axis gyroscope, which delivers rotation values in each of the three axes shown in the next illustration. Rotation values are measured in radians per second around the given axis. Rotation values may be positive or negative depending on the direction of rotation.
 
@@ -19,13 +19,13 @@ The raw rotation rate data delivered by the gyroscope interfaces may be biased b
 
 For information about the coordinate axes of different device types, see [`CMMotionManager`](./cmmotionmanager.md).
 
-##### Check for the availability of gyroscope data
+### Check for the availability of gyroscope data
 
 Gyroscope data might be unavailable for a variety of reasons, so verify that the data is available before you try to obtain it. Check the value of the [`isGyroAvailable`](./cmmotionmanager/isgyroavailable.md) property of `CMMotionManager` and make sure it’s `true`. If it’s `false`, starting updates doesn’t deliver any data to your app.
 
 > ❗ **Important**:  In visionOS, gyroscope data is available only when your app has an open immersive space. For more information, see [`ImmersiveSpace`](../SwiftUI/immersivespace.md).
 
-##### Get gyroscope data only when you need it
+### Get gyroscope data only when you need it
 
 For apps that process gyroscope data on their own schedule, such as games, use the [`startGyroUpdates()`](./cmmotionmanager/startgyroupdates%28%29.md) method of [`CMMotionManager`](./cmmotionmanager.md) to start the delivery of rotation data. When you call this method, the system enables the gyroscope hardware and begins updating the [`gyroData`](./cmmotionmanager/gyrodata.md) property of your [`CMMotionManager`](./cmmotionmanager.md) object. However, the system does not notify you when it updates that property. You must explicitly check the value of the property when you need the rotation data.
 
@@ -67,7 +67,7 @@ func stopGyros() {
 }
 ```
 
-##### Process a steady stream of gyroscope updates
+### Process a steady stream of gyroscope updates
 
 When you want to capture all of the gyroscope data, perhaps so you can analyze it for movement patterns, use the [`startGyroUpdates(to:withHandler:)`](./cmmotionmanager/startgyroupdates%28to,withhandler%29.md) method of [`CMMotionManager`](./cmmotionmanager.md). This method pushes each new set of rotation values to your app by executing your handler block on the specified queue. The queueing of these blocks ensures that your app receives all of the gyroscope data, even if your app becomes busy and is unable to process updates for a brief period of time.
 

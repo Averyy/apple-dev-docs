@@ -21,7 +21,7 @@ A Boolean value that indicates whether the volume format supports a journal used
 var volumeSupportsJournaling: Bool? { get }
 ```
 
-#### Discussion
+## Discussion
 
 A value of `true` doesn’t necessarily mean the volume is actively using a journal.
 

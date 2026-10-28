@@ -16,11 +16,11 @@ Set the scatter gather list for a NuDCL
 IOReturn (*SetDCLRanges)(NuDCLRef dcl, UInt32 numRanges, IOVirtualRange *ranges);
 ```
 
-#### Return Value
+## Return Value
 
 Returns an IOReturn error code.
 
-#### Discussion
+## Discussion
 
 Set the list of data buffers for a DCL. Setting too many ranges may result in a memory region with too many discontinous physical segments for the hardware to send or receive in a single packet. This will result in an error when the program is compiled.
 

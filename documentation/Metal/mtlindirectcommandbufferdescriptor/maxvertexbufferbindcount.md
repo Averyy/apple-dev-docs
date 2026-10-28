@@ -24,7 +24,7 @@ var maxVertexBufferBindCount: Int { get set }
 @property (nonatomic, readwrite) NSUInteger maxVertexBufferBindCount;
 ```
 
-#### Discussion
+## Discussion
 
 Metal ignores this property if [`inheritBuffers`](./inheritbuffers.md) is [`true`](../../Swift/true.md) or if you configured [`commandTypes`](./commandtypes.md) for compute commands. Metal needs to reserve enough memory in each command to store this many arguments. Use the smallest value that works for all commands you plan to encode into the indirect command buffer.
 

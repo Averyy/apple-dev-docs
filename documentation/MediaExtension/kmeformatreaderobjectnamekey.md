@@ -20,7 +20,7 @@ var kMEFormatReaderObjectNameKey: String { get }
 #define kMEFormatReaderObjectNameKey
 ```
 
-#### Discussion
+## Discussion
 
 This string is used internally for uniquely identifying format readers and possibly for debug logging but is typically not visible to users.
 

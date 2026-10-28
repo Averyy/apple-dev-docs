@@ -19,7 +19,7 @@ var whiteComponent: CGFloat { get }
 @property (readonly) CGFloat whiteComponent;
 ```
 
-#### Discussion
+## Discussion
 
 Access this property only for colors in the [`calibratedWhite`](../nscolorspacename/calibratedwhite.md), [`NSCalibratedBlackColorSpace`](../nscalibratedblackcolorspace.md), [`NSDeviceBlackColorSpace`](../nsdeviceblackcolorspace.md), or [`deviceWhite`](../nscolorspacename/devicewhite.md) color spaces. Accessing it for other color types raises an exception.
 

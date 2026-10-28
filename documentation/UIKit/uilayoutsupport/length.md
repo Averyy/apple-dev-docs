@@ -24,7 +24,7 @@ var length: CGFloat { get }
 @property (nonatomic, readonly) CGFloat length;
 ```
 
-#### Discussion
+## Discussion
 
 In iOS 7 and later, a view controller’s view occupies the full height of the screen when there are no opaque UIKit bars (such as opaque navigation or tab bars). To keep your content within the area of a view that is not overlaid by translucent or transparent UIKit bars, employ the [`topLayoutGuide`](../uiviewcontroller/toplayoutguide.md) and [`bottomLayoutGuide`](../uiviewcontroller/bottomlayoutguide.md) properties in the [`UIViewController`](../uiviewcontroller.md) class and take advantage of Auto Layout. Query these properties within your implementation of the [`UIViewController`](../uiviewcontroller.md) method [`viewDidLayoutSubviews()`](../uiviewcontroller/viewdidlayoutsubviews%28%29.md).
 

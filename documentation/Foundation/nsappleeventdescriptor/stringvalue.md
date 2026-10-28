@@ -20,7 +20,7 @@ var stringValue: String? { get }
 @property (copy, readonly, nullable) NSString * stringValue;
 ```
 
-#### Discussion
+## Discussion
 
 The contents of the descriptor, as a string, or `nil` if an error occurs.
 

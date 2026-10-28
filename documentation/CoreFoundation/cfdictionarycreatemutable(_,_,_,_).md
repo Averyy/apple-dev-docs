@@ -25,7 +25,7 @@ func CFDictionaryCreateMutable(_ allocator: CFAllocator!, _ capacity: CFIndex, _
 extern CFMutableDictionaryRefCFDictionaryCreateMutable(CFAllocatorRef allocator, CFIndex capacity, const CFDictionaryKeyCallBacks *keyCallBacks, const CFDictionaryValueCallBacks *valueCallBacks);
 ```
 
-#### Return Value
+## Return Value
 
 A new dictionary, or `NULL` if there was a problem creating the object. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 

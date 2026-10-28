@@ -25,11 +25,11 @@ func version(forClassName className: String) -> Int
 - (NSInteger) versionForClassName:(NSString *) className;
 ```
 
-#### Return Value
+## Return Value
 
 The version in effect for the class named `className` or `NSNotFound` if no class named `className` exists.
 
-#### Discussion
+## Discussion
 
 The version number does apply not to `NSKeyedArchiver`/`NSKeyedUnarchiver`.  A keyed archiver does not encode class version numbers.
 

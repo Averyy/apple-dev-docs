@@ -23,7 +23,7 @@ optional func findAndReplace(_ sender: Any?)
 - (void) findAndReplace:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 UIKit calls this method when the user selects the Find and Replace command from an editing menu. Your implementation should present the UI for finding and replacing textual content in your view.
 

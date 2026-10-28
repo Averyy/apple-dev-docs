@@ -19,7 +19,7 @@ var draggingLeaderIndex: Int { get set }
 @property NSInteger draggingLeaderIndex;
 ```
 
-#### Discussion
+## Discussion
 
 The index is to an element in the array passed as the first parameter to the [`NSView`](../nsview.md) method [`beginDraggingSession(with:event:source:)`](../nsview/begindraggingsession%28with,event,source%29.md).
 

@@ -16,7 +16,7 @@ An interface for the app to control its extension.
 class ContactProviderManager
 ```
 
-#### Overview
+## Overview
 
 Use this class to initially enable your contact provider app extension, making it visible to the system and other apps. To use the default domain, create a manager and call [`enable()`](./contactprovidermanager/enable%28%29.md). This is an `async` call, because it may prompt the person using your app to approve turning on the contact provider.
 
@@ -36,7 +36,7 @@ func enableExtensionExample() async {
 }
 ```
 
-##### Signaling the app extension
+### Signaling the app extension
 
 You also use `ContactProviderManager` when you need to invoke the app extension on demand. For example, when your app knows new contacts are available from your server, call [`signalEnumerator(for:)`](./contactprovidermanager/signalenumerator%28for%29.md) so the extension can fetch and provide the changed contacts.
 

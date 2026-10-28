@@ -21,7 +21,7 @@ Builds a partial result from a condition that’s false.
 static func buildEither<T1, T2>(second: T2) -> BuilderConditional<T1, T2> where T1 : ChartContent, T2 : ChartContent
 ```
 
-#### Discussion
+## Discussion
 
 This method provides support for `if` statements with an `else` clause and `switch` statements. It produces optional chart content that is visible when the condition evaluates to `false`.
 

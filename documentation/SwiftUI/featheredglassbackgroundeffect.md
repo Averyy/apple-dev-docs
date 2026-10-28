@@ -15,7 +15,7 @@ The feathered glass background effect.
 struct FeatheredGlassBackgroundEffect
 ```
 
-#### Overview
+## Overview
 
 You can also use [`feathered`](./glassbackgroundeffect/feathered.md) to construct this effect.
 

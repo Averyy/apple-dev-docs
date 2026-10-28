@@ -20,7 +20,7 @@ var devices: [CMIOExtensionDevice] { get }
 @property (atomic, copy, readonly) NSArray<CMIOExtensionDevice *> * devices;
 ```
 
-#### Discussion
+## Discussion
 
 This property isn’t key-value observable.
 

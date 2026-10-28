@@ -22,7 +22,7 @@ var prefersLargeTitles: Bool { get set }
 @property (nonatomic, assign, readwrite) BOOL prefersLargeTitles;
 ```
 
-#### Discussion
+## Discussion
 
 When this property is set to [`true`](../../Swift/true.md), the navigation bar allows the title to be displayed out-of-line and using a larger font. The navigation item used to build the bar must specify whether it wants its title displayed in the large or small format. Use the [`largeTitleDisplayMode`](../uinavigationitem/largetitledisplaymode-swift.property.md) property to configure the title’s appearance.
 

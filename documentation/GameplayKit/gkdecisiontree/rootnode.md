@@ -24,7 +24,7 @@ var rootNode: GKDecisionNode? { get }
 @property (nonatomic, readonly, nullable) GKDecisionNode * rootNode;
 ```
 
-#### Discussion
+## Discussion
 
 To build a manually defined tree, use [`GKDecisionNode`](../gkdecisionnode.md) methods on that object to create branches leading to child nodes that represent additional attributes to test or final actions.
 

@@ -20,7 +20,7 @@ Describes a single blend mask for selective animation control.
 struct BlendMask
 ```
 
-#### Overview
+## Overview
 
 Blend masks enable selective application of animations by defining per-joint weights. They allow fine-grained control over which parts of a skeleton are affected by specific animations, enabling layered animation systems and partial poses.
 

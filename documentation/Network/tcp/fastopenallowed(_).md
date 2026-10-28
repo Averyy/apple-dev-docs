@@ -21,7 +21,7 @@ Configure TCP to enable TCP Fast Open (TFO).
 func fastOpenAllowed(_ allowed: Bool) -> TCP
 ```
 
-#### Discussion
+## Discussion
 
 This may take effect even when TCP is not the top-level protocol in the protocol stack. For example, if TLS is running over TCP, the Client Hello message may be sent as fast open data.
 

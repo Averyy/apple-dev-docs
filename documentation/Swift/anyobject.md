@@ -21,7 +21,7 @@ The protocol to which all classes implicitly conform.
 typealias AnyObject
 ```
 
-#### Discussion
+## Discussion
 
 You use `AnyObject` when you need the flexibility of an untyped object or when you use bridged Objective-C methods and properties that return an untyped result. `AnyObject` can be used as the concrete type for an instance of any class, class type, or class-only protocol. For example:
 
@@ -52,7 +52,7 @@ print(type(of: v))
 
 The flexible behavior of the `AnyObject` protocol is similar to Objective-C’s `id` type. For this reason, imported Objective-C types frequently use `AnyObject` as the type for properties, method parameters, and return values.
 
-### Casting AnyObject Instances to a Known Type
+## Casting AnyObject Instances to a Known Type
 
 Objects with a concrete type of `AnyObject` maintain a specific dynamic type and can be cast to that type using one of the type-cast operators (`as`, `as?`, or `as!`).
 
@@ -92,7 +92,7 @@ for object in mixedArray {
 // Prints "'100' is not a String"
 ```
 
-### Accessing Objective-C Methods and Properties
+## Accessing Objective-C Methods and Properties
 
 When you use `AnyObject` as a concrete type, you have at your disposal every `@objc` method and property—that is, methods and properties imported from Objective-C or marked with the `@objc` attribute. Because Swift can’t guarantee at compile time that these methods and properties are actually available on an `AnyObject` instance’s underlying type, these `@objc` symbols are available as implicitly unwrapped optional methods and properties, respectively.
 

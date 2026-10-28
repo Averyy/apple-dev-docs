@@ -21,7 +21,7 @@ A type that makes the layers of a symbol-based image disappear separately or as 
 struct DisappearSymbolEffect
 ```
 
-#### Overview
+## Overview
 
 A disappear transition causes a symbol to become invisible using a scaling animation. You can choose to scale the image up or down and to animate the symbol by individual layers or as a whole.
 

@@ -9,11 +9,11 @@ Get a list of all products you created in Xcode Cloud.
 **Availability**:
 - App Store Connect API 1.5+
 
-#### Discussion
+## Discussion
 
 The example request below lists ten Xcode Cloud products and sorts the list using the `latestBuildCreatedDate` attribute. Use the information provided in the response to display data about your Xcode Cloud products on a dashboard or to read additional information; for example, workflow information.
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

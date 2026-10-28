@@ -20,7 +20,7 @@ nonisolated
 struct GraphicalDatePickerStyle
 ```
 
-#### Overview
+## Overview
 
 You can also use [`graphical`](./datepickerstyle/graphical.md) to construct this style.
 

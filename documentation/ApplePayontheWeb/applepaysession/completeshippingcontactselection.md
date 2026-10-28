@@ -24,13 +24,13 @@ undefined completeShippingContactSelection(
 
 - [Apple Pay on the Web Version 3 Release Notes](../apple-pay-on-the-web-version-3-release-notes.md)
 
-#### Discussion
+## Discussion
 
 This method must be called by [`onshippingcontactselected`](./onshippingcontactselected.md).
 
 In Apple Pay JS API version 3, the parameter is an [`ApplePayShippingContactUpdate`](../applepayshippingcontactupdate.md).
 
-##### completeShippingContactSelection in Apple Pay JS version 1 and 2
+### completeShippingContactSelection in Apple Pay JS version 1 and 2
 
 In version 1 and 2 of the Apple Pay JS API, [`completeShippingContactSelection`](./completeshippingcontactselection.md) has the following parameters:
 

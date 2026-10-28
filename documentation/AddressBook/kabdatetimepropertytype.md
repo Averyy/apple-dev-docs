@@ -21,7 +21,7 @@ var kABDateTimePropertyType: Int { get }
 kABDateTimePropertyType
 ```
 
-#### Discussion
+## Discussion
 
 Returned as a [`CFDate`](../CoreFoundation/cfdate.md) object.
 

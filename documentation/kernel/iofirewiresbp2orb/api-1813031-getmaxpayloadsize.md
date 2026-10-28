@@ -12,11 +12,11 @@ virtual UInt32 getMaxPayloadSize(
  void );
 ```
 
-#### Return Value
+## Return Value
 
 Returns the maximum payload size in bytes.
 
-#### Overview
+## Overview
 
 This gets the maximum payload size for this ORB only.
 

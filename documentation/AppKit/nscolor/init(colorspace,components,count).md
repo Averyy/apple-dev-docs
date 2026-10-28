@@ -19,7 +19,7 @@ init(colorSpace space: NSColorSpace, components: UnsafePointer<CGFloat>, count n
 + (NSColor *) colorWithColorSpace:(NSColorSpace *) space components:(const CGFloat *) components count:(NSInteger) numberOfComponents;
 ```
 
-#### Return Value
+## Return Value
 
 The color object.
 

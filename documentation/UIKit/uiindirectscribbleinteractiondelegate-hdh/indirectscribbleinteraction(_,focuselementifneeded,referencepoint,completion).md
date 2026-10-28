@@ -19,7 +19,7 @@ Asks the delegate to focus an element to handle text edits.
 func indirectScribbleInteraction(_ interaction: any UIInteraction, focusElementIfNeeded elementIdentifier: Self.ElementIdentifier, referencePoint focusReferencePoint: CGPoint, completion: @escaping ((any UIResponder & UITextInput)?) -> Void)
 ```
 
-#### Return Value
+## Return Value
 
 In response to this callback, the implementation should make this element the currently focused one, and make the corresponding [`UITextInput`](../uitextinput.md) become first responder.
 

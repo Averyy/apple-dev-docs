@@ -24,7 +24,7 @@ struct CommandConfiguration
 ## Topics
 
 ### Creating a Configuration
-- [init(commandName: String?, abstract: String, usage: String?, discussion: String, helpBanner: String?, version: String, shouldDisplay: Bool, subcommands: [any ParsableCommand.Type], groupedSubcommands: [CommandGroup], defaultSubcommand: (any ParsableCommand.Type)?, helpNames: NameSpecification?, aliases: [String])](./commandconfiguration/init%28commandname,abstract,usage,discussion,helpbanner,version,shoulddisplay,subcommands,groupedsubcommands,defaultsubcommand,helpnames,aliases%29.md)
+- [init(commandName: String?, abstract: String, usage: String?, discussion: String, helpBanner: String?, version: String, shouldDisplay: Bool, subcommands: [ParsableCommand.Type], groupedSubcommands: [CommandGroup], defaultSubcommand: ParsableCommand.Type?, helpNames: NameSpecification?, aliases: [String])](./commandconfiguration/init%28commandname,abstract,usage,discussion,helpbanner,version,shoulddisplay,subcommands,groupedsubcommands,defaultsubcommand,helpnames,aliases%29.md)
   Creates the configuration for a command.
 ### Customizing the Help Screen
 - [var abstract: String](./commandconfiguration/abstract.md)
@@ -38,9 +38,9 @@ struct CommandConfiguration
 - [var helpNames: NameSpecification?](./commandconfiguration/helpnames.md)
   Flag names to be used for help.
 ### Declaring Subcommands
-- [var subcommands: [any ParsableCommand.Type]](./commandconfiguration/subcommands.md)
+- [var subcommands: [ParsableCommand.Type]](./commandconfiguration/subcommands.md)
   An array of the types that define subcommands for this command.
-- [var defaultSubcommand: (any ParsableCommand.Type)?](./commandconfiguration/defaultsubcommand.md)
+- [var defaultSubcommand: ParsableCommand.Type?](./commandconfiguration/defaultsubcommand.md)
   The default command type to run if no subcommand is given.
 ### Defining Command Properties
 - [var commandName: String?](./commandconfiguration/commandname.md)
@@ -54,7 +54,7 @@ struct CommandConfiguration
 ### Instance Properties
 - [var groupedSubcommands: [CommandGroup]](./commandconfiguration/groupedsubcommands.md)
   The list of subcommands and subcommand groups.
-- [var ungroupedSubcommands: [any ParsableCommand.Type]](./commandconfiguration/ungroupedsubcommands.md)
+- [var ungroupedSubcommands: [ParsableCommand.Type]](./commandconfiguration/ungroupedsubcommands.md)
   An array of types that define subcommands for this command and are not part of any command group.
 
 ## Relationships

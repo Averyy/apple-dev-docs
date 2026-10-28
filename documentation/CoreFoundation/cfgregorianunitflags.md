@@ -25,7 +25,7 @@ struct CFGregorianUnitFlags
 enum CFGregorianUnitFlags : CFOptionFlags;
 ```
 
-#### Overview
+## Overview
 
 These flags are used with functions such as [`CFGregorianDateIsValid(_:_:)`](./cfgregoriandateisvalid%28_,_%29.md) and [`CFAbsoluteTimeGetDifferenceAsGregorianUnits(_:_:_:_:)`](./cfabsolutetimegetdifferenceasgregorianunits%28_,_,_,_%29.md) which operate on a CFGregorianDate or CFGregorianUnits structure. For more details, see the discussion of those functions.
 

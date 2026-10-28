@@ -23,7 +23,7 @@ class PKLassoToolReference
 @interface PKLassoTool : PKTool
 ```
 
-#### Overview
+## Overview
 
 A [`PKLassoToolReference`](./pklassotoolreference.md) object supports the selection of content on a [`PKCanvasView`](./pkcanvasview.md). When active, the canvas uses incoming touch events to determine what content to add to the selection.
 

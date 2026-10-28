@@ -18,11 +18,11 @@ func FSEventsCopyUUIDForDevice(_ dev: dev_t) -> CFUUID?
 CFUUIDRef FSEventsCopyUUIDForDevice(dev_t dev);
 ```
 
-#### Return Value
+## Return Value
 
 The UUID associated with the stream of events on this device, or NULL if no UUID is available (for example, on a read-only device). The UUID is stored on the device itself and travels with it even when the device is attached to different computers. Ownership follows the Copy Rule.
 
-#### Discussion
+## Discussion
 
 Gets the UUID associated with a device, or NULL if not possible (for example, on read-only device). A (non-NULL) UUID uniquely identifies a given stream of FSEvents. If this (non-NULL) UUID is different than one that you stored from a previous run then the event stream is different (for example, because FSEvents were purged, because the disk was erased, or because the event ID counter wrapped around back to zero).
 

@@ -5,7 +5,7 @@
 
 Keys for the auxiliary info dictionary you specify when creating a PDF context.
 
-#### Overview
+## Overview
 
 For more information about using these keys in a PDF context, see [`init(consumer:mediaBox:_:)`](./cgcontext/init%28consumer,mediabox,_%29.md) and [`init(_:mediaBox:_:)`](./cgcontext/init%28_,mediabox,_%29.md).
 

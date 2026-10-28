@@ -15,11 +15,11 @@ Extracts the number of streams an endpoint supports.
 uint32_t IOUSBGetEndpointMaxStreamsEncoded(uint32_t usbDeviceSpeed, const IOUSBEndpointDescriptor *descriptor, const IOUSBSuperSpeedEndpointCompanionDescriptor *companionDescriptor);
 ```
 
-#### Return Value
+## Return Value
 
 The encoded number of streams.
 
-#### Discussion
+## Discussion
 
 This method parses endpoint descriptors and returns the number of streams supported as `n` in `(2^n)`.
 

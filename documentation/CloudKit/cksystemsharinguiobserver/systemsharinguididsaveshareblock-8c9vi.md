@@ -20,7 +20,7 @@ A callback block the system invokes after the success or failure of a share save
 var systemSharingUIDidSaveShareBlock: (@Sendable (CKRecord.ID, Result<CKShare, any Error>) -> Void)? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Following a successful share save by the system sharing UI in the provided [`CKContainer`](../ckcontainer.md), the system invokes this callback with a `nonnull` [`CKRecord.ID`](../ckrecord/id.md), a `nonnull` share, and a `nil` error.
 

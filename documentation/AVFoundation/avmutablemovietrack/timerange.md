@@ -20,7 +20,7 @@ The time range of the track within the overall timeline of the asset.
 var timeRange: CMTimeRange { get }
 ```
 
-#### Discussion
+## Discussion
 
 If the start of the time range is greater than [`zero`](../../CoreMedia/cmtime/zero.md), the track doesn’t initially have media data to present. This condition may occur when the media delays an audio track to align the start of audio with a specific video frame. You can test for this as the example below shows:
 

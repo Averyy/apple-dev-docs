@@ -21,9 +21,9 @@ The properties common to all payloads.
 object CommonPayloadKeys
 ```
 
-#### Discussion
+## Discussion
 
-##### Profile availability
+### Profile availability
 
 |  |  |
 | --- | --- |

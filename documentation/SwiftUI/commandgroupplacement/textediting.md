@@ -19,7 +19,7 @@ Placement for commands that manipulate and transform text selections.
 static let textEditing: CommandGroupPlacement
 ```
 
-#### Discussion
+## Discussion
 
 By default, this group includes the following commands in macOS:
 

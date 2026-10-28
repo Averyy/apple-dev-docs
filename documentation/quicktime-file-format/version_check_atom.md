@@ -6,7 +6,7 @@
 
 A version check atom specifies a software package, such as QuickTime or QuickTime VR, and the version of that package needed to display a movie.
 
-#### Overview
+## Overview
 
 The package is specified using a Macintosh Gestalt type, such a `'qtim'` for QuickTime (QuickTime provides support for these Gestalt tests in the Windows computing environment). You can specify a minimum required version to be returned by the Gestalt check, or you can require that a specific value be returned after performing a binary AND operation on the Gestalt bitfield and a mask. Multiple version check atoms are allowed within a given reference movie descriptor atom. Applications should not attempt to play a movie unless all version checks are successful.
 

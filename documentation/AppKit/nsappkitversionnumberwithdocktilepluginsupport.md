@@ -15,7 +15,7 @@ The specific version of the AppKit framework that introduced support for dock ti
 static const NSAppKitVersion NSAppKitVersionNumberWithDockTilePlugInSupport;
 ```
 
-#### Discussion
+## Discussion
 
 Developers should not need to use this constant unless they are writing applications for macOS 10.5 and earlier.
 

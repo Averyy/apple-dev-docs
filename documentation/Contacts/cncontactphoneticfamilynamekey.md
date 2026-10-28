@@ -24,7 +24,7 @@ let CNContactPhoneticFamilyNameKey: String
 extern NSString * const CNContactPhoneticFamilyNameKey;
 ```
 
-#### Discussion
+## Discussion
 
 This key takes a string value.
 

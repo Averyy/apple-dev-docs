@@ -19,7 +19,7 @@ var manufacturer: String? { get }
 @property (nonatomic, copy, readonly, nullable) NSString * manufacturer;
 ```
 
-#### Discussion
+## Discussion
 
 A nil value means a manufacter was not provided.
 

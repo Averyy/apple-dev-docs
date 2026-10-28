@@ -20,11 +20,11 @@ func IOUSBGetEndpointMaxStreamsEncoded(_ usbDeviceSpeed: UInt32, _ descriptor: U
 uint32_t IOUSBGetEndpointMaxStreamsEncoded(uint32_t usbDeviceSpeed, const IOUSBEndpointDescriptor *descriptor, const IOUSBSuperSpeedEndpointCompanionDescriptor *companionDescriptor);
 ```
 
-#### Return Value
+## Return Value
 
 The encoded number of streams.
 
-#### Discussion
+## Discussion
 
 This method parses endpoint descriptors and returns the number of supported streams as *n* in *(2^n)*.
 

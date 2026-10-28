@@ -19,7 +19,7 @@ var isEditable: Bool { get set }
 @property (getter=isEditable) BOOL editable;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), the user can edit cells in the cell-based table’s column. The default value of this property is [`true`](../../Swift/true.md).
 

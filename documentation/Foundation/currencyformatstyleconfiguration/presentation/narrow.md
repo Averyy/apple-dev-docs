@@ -21,7 +21,7 @@ A presentation that shows a condensed expression of the currency.
 static var narrow: CurrencyFormatStyleConfiguration.Presentation { get }
 ```
 
-#### Discussion
+## Discussion
 
 This presentation produces output like `$123.00`.
 

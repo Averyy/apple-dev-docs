@@ -15,7 +15,7 @@ The presentation behaviors describing when the immersive space that hosts the st
 struct ImmersivePresentationBehaviors
 ```
 
-#### Overview
+## Overview
 
 Use `ImmersivePresentationBehaviors` to automatically present the immersive space when the foveated streaming session connects or resumes, as well as automatically dismiss the immersive space when the foveated streaming session pauses or disconnects.
 

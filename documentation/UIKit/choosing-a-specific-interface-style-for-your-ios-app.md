@@ -5,7 +5,7 @@
 
 Adopt a specific interface style for your views, view controllers, or app when it is inappropriate to support both light and dark variants.
 
-#### Overview
+## Overview
 
 Supporting both light and dark appearances is a good practice, but you might have good reasons to opt out of appearance changes wholly or partially in your app. Views containing user-created content should always reflect the user’s choices. Similarly, you might choose a specific appearance for print-related views so that they reflect what the user sees on the printed page.
 
@@ -13,7 +13,7 @@ The system assumes that apps linked against the iOS 13 or later SDK support both
 
 For general information about how to support Dark Mode, see [Supporting Dark Mode in your interface](./supporting-dark-mode-in-your-interface.md).
 
-##### Override the interface style for a window, view, or view controller
+### Override the interface style for a window, view, or view controller
 
 When your interface must always appear in a light or dark style, regardless of the system setting, set the [`overrideUserInterfaceStyle`](./uiview/overrideuserinterfacestyle.md) property of the appropriate window, view, or view controller to that style. Overriding the interface style affects other objects in your interface as follows:
 
@@ -32,11 +32,11 @@ The following code example enables a light appearance for a view controller and 
     }
 ```
 
-##### Override the interface style for child view controllers
+### Override the interface style for child view controllers
 
 Parent view controllers control the appearance of their contained child view controllers. To override the interface style for a child view controller, use the [`setOverrideTraitCollection(_:forChild:)`](./uiviewcontroller/setoverridetraitcollection%28_,forchild%29.md) method to assign new traits to that view controller. For custom presentations, you can similarly override the interface style of the presented view controller by assigning new traits to the [`overrideTraitCollection`](./uipresentationcontroller/overridetraitcollection.md) property of your [`UIPresentationController`](./uipresentationcontroller.md) object.
 
-##### Opt out of Dark Mode entirely
+### Opt out of Dark Mode entirely
 
 The system automatically opts in any app linked against the iOS 13.0 or later SDK to both light and dark appearances. If you need extra time to work on your app’s Dark Mode support, you can temporarily opt out by including the [`UIUserInterfaceStyle`](../BundleResources/information-property-list/uiuserinterfacestyle.md) key (with a value of `Light`) in your app’s `Info.plist` file. Setting this key to `Light` causes the system to ignore the user’s preference and always apply a light appearance to your app.
 

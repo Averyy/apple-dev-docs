@@ -21,7 +21,7 @@ var whoValues: [String] { get }
 @property (nonatomic, copy, readonly) NSArray<NSString *> * whoValues;
 ```
 
-#### Discussion
+## Discussion
 
 For example, if the user types “photos with John,” this array might contain `@[@"John"]`.
 

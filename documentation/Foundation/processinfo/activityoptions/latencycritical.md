@@ -25,7 +25,7 @@ static var latencyCritical: ProcessInfo.ActivityOptions { get }
 NSActivityLatencyCritical
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  Very few applications should need to use this constant.
 

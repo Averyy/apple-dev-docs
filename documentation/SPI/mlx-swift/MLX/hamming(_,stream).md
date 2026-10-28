@@ -17,11 +17,11 @@ Return the Hamming window.
 func hamming(_ m: Int, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-#### Return Value
+## Return Value
 
 The window, with the maximum value normalized to one (the value one appears only if the number of samples is odd).
 
-#### Discussion
+## Discussion
 
 The Hamming window is a taper formed by using a weighted cosine.
 

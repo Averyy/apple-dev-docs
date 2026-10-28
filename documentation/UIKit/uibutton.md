@@ -32,7 +32,7 @@ class UIButton
 - [Attaching gesture recognizers to UIKit controls](./attaching-gesture-recognizers-to-uikit-controls.md)
 - [Supporting VoiceOver in your app](./supporting-voiceover-in-your-app.md)
 
-#### Overview
+## Overview
 
 When you tap a button, or select a button that has focus, the button performs any actions attached to it. You communicate the purpose of a button using a text label, an image, or both. The appearance of buttons is configurable, so you can tint buttons or format titles to match the design of your app. You can add buttons to your interface programmatically or using Interface Builder.
 
@@ -48,7 +48,7 @@ When adding a button to your interface, perform the following steps:
 
 > ❗ **Important**:  An app built with Mac Catalyst running in macOS 11 throws an exception when calling a button’s [`addGestureRecognizer(_:)`](./uiview/addgesturerecognizer%28_%29.md) method when [`buttonType`](./uibutton/buttontype-swift.property.md) is [`UIButton.ButtonType.system`](./uibutton/buttontype-swift.enum/system.md) and the user interface idiom is [`UIUserInterfaceIdiom.mac`](./uiuserinterfaceidiom/mac.md).
 
-##### Respond to button taps
+### Respond to button taps
 
 Buttons use the target-action design pattern to notify your app when the user taps the button. Rather than handle touch events directly, you assign action methods to the button and designate which events trigger calls to your methods. At runtime, the button handles all incoming touch events and calls your methods in response.
 
@@ -70,19 +70,19 @@ You connect a button to your action method using the [`addTarget(_:action:for:)`
 - (IBAction)doSomething:(id)sender forEvent:(UIEvent*)event;
 ```
 
-##### Configure a button’s appearance
+### Configure a button’s appearance
 
 A button’s type defines its basic appearance and behavior. You specify the type of a button at creation time using the [`init(type:)`](./uibutton/init%28type%29.md) method or in your storyboard file. After creating a button, you can’t change its type. The most commonly used button types are the Custom and System types, but use the other types when appropriate.
 
 > **Note**:  To configure the appearance of all buttons in your app, use the appearance proxy object. The [`UIButton`](./uibutton.md) class implements the [`appearance()`](./uiappearance/appearance%28%29.md) class method, which you can use to fetch the appearance proxy for all buttons in your app.
 
-###### Configure button states
+#### Configure button states
 
 Buttons have five states that define their appearance: default, highlighted, focused, selected, and disabled. When you add a button to your interface, it’s in the default state initially, which means the button is enabled and the user isn’t interacting with it. As the user interacts with the button, its state changes to the other values. For example, when the user taps a button with a title, the button moves to the highlighted state.
 
 When configuring a button either programmatically or in Interface Builder, you specify attributes for each state separately. In Interface Builder, use the State Config control in the Attributes inspector to choose the appropriate state and then configure the other attributes. If you don’t specify attributes for a particular state, the [`UIButton`](./uibutton.md) class provides a reasonable default behavior. For example, a disabled button is normally dimmed and doesn’t display a highlight when tapped. Other properties of this class, such as the [`adjustsImageWhenHighlighted`](./uibutton/adjustsimagewhenhighlighted.md) and [`adjustsImageWhenDisabled`](./uibutton/adjustsimagewhendisabled.md) properties, let you alter the default behavior in specific cases.
 
-###### Provide content
+#### Provide content
 
 The content of a button consists of a title string or image that you specify. The content you specify is used to configure the [`UILabel`](./uilabel.md) and [`UIImageView`](./uiimageview.md) object managed by the button itself. You can access these objects using the [`titleLabel`](./uibutton/titlelabel.md) or [`imageView`](./uibutton/imageview.md) properties and modify their values directly. The methods of this class also provide a convenient shortcut for configuring the appearance of your string or image.
 
@@ -92,17 +92,17 @@ Normally, you configure a button using either a title or an image and size the b
 
 When setting the content of a button, you must specify the title, image, and appearance attributes for each state separately. If you don’t customize the content for a particular state, the button uses the values associated with the Default state and adds any appropriate customizations. For example, in the highlighted state, an image-based button draws a highlight on top of the default image if no custom image is provided.
 
-###### Customize tint color
+#### Customize tint color
 
 You can specify a custom button tint using the [`tintColor`](./uibutton/tintcolor.md) property. This property sets the color of the button image and text. If you don’t explicitly set a tint color, the button uses its superview’s tint color.
 
-###### Specify edge insets
+#### Specify edge insets
 
 Use insets to add or remove space around the content in your custom or system buttons. You can specify separate insets for your button’s title ([`titleEdgeInsets`](./uibutton/titleedgeinsets.md)), image ([`imageEdgeInsets`](./uibutton/imageedgeinsets.md)), and both the title and image together ([`contentEdgeInsets`](./uibutton/contentedgeinsets.md)). When applied, insets affect the corresponding content rectangle of the button, which the Auto Layout engine uses to determine the button’s position.
 
 There should be no reason for you to adjust the edge insets for info, contact, or disclosure buttons.
 
-##### Configure button attributes in Interface Builder
+### Configure button attributes in Interface Builder
 
 The following table lists the core attributes that you configure for buttons in Interface Builder.
 
@@ -132,13 +132,13 @@ The following table lists the edge inset attributes for buttons. Use edge inset 
 
 For information about the button’s inherited Interface Builder attributes, see [`UIControl`](./uicontrol.md) and [`UIView`](./uiview.md).
 
-##### Support localization
+### Support localization
 
 To internationalize a button, specify a localized string for the button’s title text. (You may also localize a button’s image as appropriate.)
 
 When using storyboards to build your interface, use Xcode’s base internationalization feature to configure the localizations your project supports. When you add a localization, Xcode creates a strings file for that localization. When configuring your interface programmatically, use the system’s built-in support for loading localized strings and resources. For more information about internationalizing your interface, see [Internationalization and Localization Guide](https://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPInternational/Introduction/Introduction.html#//apple_ref/doc/uid/10000171i).
 
-##### Make buttons accessible
+### Make buttons accessible
 
 Buttons are accessible by default. The default accessibility traits for a button are Button and User Interaction Enabled.
 

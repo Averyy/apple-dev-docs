@@ -21,7 +21,7 @@ A publisher that exposes its elements as an asynchronous sequence.
 struct AsyncPublisher<P> where P : Publisher, P.Failure == Never
 ```
 
-#### Overview
+## Overview
 
 `AsyncPublisher` conforms to [`AsyncSequence`](../Swift/asyncsequence.md), which allows callers to receive values with the `for`-`await`-`in` syntax, rather than attaching a [`Subscriber`](./subscriber.md).
 

@@ -25,11 +25,11 @@ class SCNPhysicsShape
 @interface SCNPhysicsShape : NSObject
 ```
 
-#### Overview
+## Overview
 
 When SceneKit performs contact detection and other simulations for the [`SCNPhysicsBody`](./scnphysicsbody.md) objects in your scene, it uses physics shapes instead of the rendered geometry of visible objects. This approach both improves simulation performance and allows you to more easily design your gameplay around scene elements the player can interact with.
 
-##### Simple Versus Complex Shapes
+### Simple Versus Complex Shapes
 
 When you allow SceneKit to automatically create a physics shape, it uses the simplest possible shape roughly matching the geometry of the node the physics body is attached to. This approach maximizes simulation performance but can lead to unrealistic physics behavior for some objects.
 
@@ -39,7 +39,7 @@ If you create a physics shape using one of the basic geometry classes ([`SCNBox`
 
 Because the idealized forms of simple geometries are computationally much simpler than the vertex data needed for displaying them, using basic geometries for physics shapes (or compound shapes created from basic geometries with the [`init(shapes:transforms:)`](./scnphysicsshape/init%28shapes,transforms%29.md) method) often provides the best balance between simulation accuracy and performance.
 
-##### Changing a Physics Body’s Shape
+### Changing a Physics Body’s Shape
 
 Physics shapes are immutable, but you can change the shape associated with a physics body by creating a new [`SCNPhysicsShape`](./scnphysicsshape.md) instance and assigning it to the body’s [`physicsShape`](./scnphysicsbody/physicsshape.md) property.
 

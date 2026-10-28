@@ -31,7 +31,7 @@ optional func update(_ currentTime: TimeInterval, for scene: SKScene)
 - [Disconnecting Bodies from Joints](../disconnecting-bodies-from-joints.md)
 - [Use SpriteKit Objects within Scene Delegate Callbacks](../use-spritekit-objects-within-scene-delegate-callbacks.md)
 
-#### Discussion
+## Discussion
 
 Do not call this method directly; it is called by the system exactly once per frame, so long as the scene is presented in a view and is not paused. This is the first method called when animating the scene, before any actions are evaluated and before any physics are simulated.
 

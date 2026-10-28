@@ -20,7 +20,7 @@ A mode that displays the reflectiveness of an entity as its surface color.
 case metallic
 ```
 
-#### Discussion
+## Discussion
 
 Add a [`ModelDebugOptionsComponent`](../../modeldebugoptionscomponent.md) with a visualization mode of `metallic` to an entity to tell RealityKit to draw that entity so the surface color indicates whether that part of the object reflects the surrounding environment.
 

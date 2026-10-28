@@ -22,7 +22,7 @@ class let touchBarTextListTemplateName: String
 extern NSImageName const NSImageNameTouchBarTextListTemplate;
 ```
 
-#### Discussion
+## Discussion
 
 ![Template image for list](https://developer.apple.com/tutorials/images/com.apple.appkit/media-2793531@2x.png)
 

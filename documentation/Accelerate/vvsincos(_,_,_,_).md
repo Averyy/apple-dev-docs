@@ -25,9 +25,9 @@ func vvsincos(_: UnsafeMutablePointer<Double>, _: UnsafeMutablePointer<Double>, 
 void vvsincos(double *, double *, const double *, const int *);
 ```
 
-#### Discussion
+## Discussion
 
-##### Parameters:
+### Parameters:
 
 - **parameter 1**: The sines output array, *z*.
 - **parameter 2**: The cosines output array, *y*.

@@ -25,7 +25,7 @@ var device: any MTLDevice { get }
 @property (readonly) id<MTLDevice> device;
 ```
 
-#### Discussion
+## Discussion
 
 This command encoder can only be used with this [`MTLDevice`](../mtldevice.md).
 

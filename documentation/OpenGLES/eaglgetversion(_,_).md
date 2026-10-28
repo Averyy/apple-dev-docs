@@ -24,7 +24,7 @@ func EAGLGetVersion(_ major: UnsafeMutablePointer<UInt32>, _ minor: UnsafeMutabl
 extern void EAGLGetVersion(unsigned int *major, unsigned int *minor);
 ```
 
-#### Discussion
+## Discussion
 
 If `major` and `minor` parameters are not `nil`, they return the major and minor version number of the EAGL implementation, respectively.
 

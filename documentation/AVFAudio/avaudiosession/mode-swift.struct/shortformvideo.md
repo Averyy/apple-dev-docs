@@ -21,7 +21,7 @@ static let shortFormVideo: AVAudioSession.Mode
 extern AVAudioSessionMode const AVAudioSessionModeShortFormVideo;
 ```
 
-#### Discussion
+## Discussion
 
 Only valid with [`playback`](../category-swift.struct/playback.md). Not applicable with [`AVAudioSession.RouteSharingPolicy.longFormAudio`](../routesharingpolicy-swift.enum/longformaudio.md), or [`AVAudioSession.RouteSharingPolicy.longFormVideo`](../routesharingpolicy-swift.enum/longformvideo.md).
 

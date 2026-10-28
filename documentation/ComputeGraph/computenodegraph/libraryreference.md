@@ -21,7 +21,7 @@ A Metal library and an optional bundle identifier that locates shader functions.
 struct LibraryReference
 ```
 
-#### Overview
+## Overview
 
 Use `addLibrary(_:bundle:)` rather than constructing this type directly.
 

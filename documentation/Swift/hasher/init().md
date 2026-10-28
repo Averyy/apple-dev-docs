@@ -21,7 +21,7 @@ Creates a new hasher.
 init()
 ```
 
-#### Discussion
+## Discussion
 
 The hasher uses a per-execution seed value that is set during process startup, usually from a high-quality random source.
 

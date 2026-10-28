@@ -23,7 +23,7 @@ case vision
 UIUserInterfaceIdiomVision
 ```
 
-#### Discussion
+## Discussion
 
 If your app has existing code that runs in the [`UIUserInterfaceIdiom.pad`](./pad.md) idiom, you might want to reuse the same code in the [`UIUserInterfaceIdiom.vision`](./vision.md) idiom. The following code shows how to check for these idioms:
 

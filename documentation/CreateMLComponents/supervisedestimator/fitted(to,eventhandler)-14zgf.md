@@ -21,11 +21,11 @@ Fits a transformer to an async sequence of examples.
 func fitted<Input>(to input: Input, eventHandler: EventHandler?) async throws -> Self.Transformer where Input : AsyncSequence, Input.Element == AnnotatedFeature<Self.Transformer.Input, Self.Annotation>
 ```
 
-#### Return Value
+## Return Value
 
 The fitted transformer.
 
-#### Discussion
+## Discussion
 
 Note that the async sequence is collected before fitting the estimator. This may result in increased memory use. Consider using the update method to train progressively in batches.
 

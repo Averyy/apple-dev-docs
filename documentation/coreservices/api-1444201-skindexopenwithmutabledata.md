@@ -19,11 +19,11 @@ func SKIndexOpenWithMutableData(_ inData: CFMutableData!, _ inIndexName: CFStrin
 SKIndexRef SKIndexOpenWithMutableData(CFMutableDataRef inData, CFStringRef inIndexName);
 ```
 
-#### Return Value
+## Return Value
 
 The named index, or `NULL` on failure.
 
-#### Discussion
+## Discussion
 
 An index opened by `SKIndexOpenWithMutableData` may be searched or updated. To open an index for search only, use the [`SKIndexOpenWithData(_:_:)`](./api-1446398-skindexopenwithdata.md) function.
 
@@ -33,7 +33,7 @@ Search Kit is thread-safe. You can use separate indexing and searching threads. 
 
 A call to `SKIndexOpenWithMutableData` retains the opened index. When your application no longer needs the index, dispose of it by calling [`SKIndexClose(_:)`](./api-1442401-skindexclose.md).
 
-##### Special Considerations
+### Special Considerations
 
 You cannot use [`CFMakeCollectable`](../CoreFoundation/cfmakecollectable.md) with [`SKIndex`](./skindex.md) objects.
 

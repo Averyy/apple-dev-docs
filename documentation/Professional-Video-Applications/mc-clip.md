@@ -5,7 +5,7 @@
 
 References a multicam media.
 
-#### Overview
+## Overview
 
 Use an `mc-clip` element to describe a timeline sequence created from a multicam media. To use multicam media as a clip, see [Using Multicam Media](./multicam-media.md#Using-Multicam-Media). To specify the timing of the edit, use the [Timing Attributes](./timing-attributes.md).
 

@@ -21,7 +21,7 @@ The system type that identifies a user record.
 extern CKRecordType const CKRecordTypeUserRecord;
 ```
 
-#### Discussion
+## Discussion
 
 CloudKit automatically creates a user record for each unique user of the app. User records are empty initially. You can add data to the user record using the same rules that apply for all records. Specifically, you must specify a consistent type of data for a particular field name in all user records. However, you can’t create new user records using this record type and you can’t query for records of this type. To locate user records, you must know the ID of the user record or use the methods that CKContainer provides to discover user records.
 

@@ -23,7 +23,7 @@ var hasTorch: Bool { get }
 @property (nonatomic, readonly) BOOL hasTorch;
 ```
 
-#### Discussion
+## Discussion
 
 A torch is a light source, such as an LED flash, that’s available on the device and used for illuminating captured content or providing general illumination. This property reflects whether the current device has such illumination hardware built-in.
 

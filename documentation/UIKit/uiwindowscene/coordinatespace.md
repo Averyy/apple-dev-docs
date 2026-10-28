@@ -25,7 +25,7 @@ var coordinateSpace: any UICoordinateSpace { get }
 @property (nonatomic, readonly) id<UICoordinateSpace> coordinateSpace;
 ```
 
-#### Discussion
+## Discussion
 
 Use the provided coordinate space to get the bounds of the scene’s bounds rectangle and to convert points and rectangles to and from other coordinate spaces. For example, use [`coordinateSpace`](./coordinatespace.md) to convert a point in the scene to the screen coordinate space.
 

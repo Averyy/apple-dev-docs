@@ -24,7 +24,7 @@ case multipleIdentifiersFound
 PHPhotosErrorMultipleIdentifiersFound
 ```
 
-#### Discussion
+## Discussion
 
 To retrieve a list of identifiers inspect [`userInfo`](../../../Foundation/nserror/userinfo.md) using the key [`PHLocalIdentifiersErrorKey`](../../phlocalidentifierserrorkey.md).
 

@@ -32,7 +32,7 @@ var accountType: ACAccountType! { get set }
 @property (atomic, strong) ACAccountType * accountType;
 ```
 
-#### Discussion
+## Discussion
 
 This property is required. You specify the account type using the [`init(accountType:)`](./init%28accounttype%29.md) method. You can use the [`accounts(with:)`](../acaccountstore/accounts%28with%29.md) method to retrieve all accounts of a particular type.
 

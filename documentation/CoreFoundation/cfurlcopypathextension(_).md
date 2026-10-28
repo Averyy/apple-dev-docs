@@ -25,11 +25,11 @@ func CFURLCopyPathExtension(_ url: CFURL!) -> CFString!
 extern CFStringRefCFURLCopyPathExtension(CFURLRef url);
 ```
 
-#### Return Value
+## Return Value
 
 The path extension of `url`, or `NULL` if no extension exists. Ownership follows the create rule. See [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
-#### Discussion
+## Discussion
 
 The path extension is the portion of the last path component which follows the final period, if there is one. For example, for `http:/www.apple.com/developer/macosx.today.html`, the extension is `html`, and for `http:/www.apple.com/developer`, there is no path extension.
 

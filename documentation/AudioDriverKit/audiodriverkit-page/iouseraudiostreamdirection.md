@@ -15,7 +15,7 @@ A type representing the direction of audio flow.
 enum IOUserAudioStreamDirection : uint32_t;
 ```
 
-#### Discussion
+## Discussion
 
 Use `0` for output, and `1` for input.
 

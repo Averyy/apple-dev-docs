@@ -16,7 +16,7 @@ Returns all valid `NSConnection` objects in the process.
 + (NSArray<NSConnection *> *) allConnections;
 ```
 
-#### Return Value
+## Return Value
 
 An array containing all valid `NSConnection` objects in the process.
 

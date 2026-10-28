@@ -20,7 +20,7 @@ The solver global weight for the forward kinematics demands.
 var globalFkWeight: Float
 ```
 
-#### Discussion
+## Discussion
 
 This weight is a multiplier for each joint’s [`fkWeightPerAxis`](./joint/fkweightperaxis.md).
 

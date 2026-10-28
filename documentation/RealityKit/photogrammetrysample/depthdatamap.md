@@ -18,7 +18,7 @@ The image’s depth data.
 var depthDataMap: CVPixelBuffer? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Some cameras, including iPhone cameras, capture depth data in addition to image data. Providing this data can help [`PhotogrammetrySession`](../photogrammetrysession.md) determine the real-world scale of the photographed object and result in a correctly sized 3D object for placement in an AR scene. This property is read-only.
 

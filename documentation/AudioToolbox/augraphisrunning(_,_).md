@@ -26,11 +26,11 @@ func AUGraphIsRunning(_ inGraph: AUGraph, _ outIsRunning: UnsafeMutablePointer<D
 extern OSStatus AUGraphIsRunning(AUGraph inGraph, Boolean *outIsRunning);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 
-#### Discussion
+## Discussion
 
 ## Parameters
 

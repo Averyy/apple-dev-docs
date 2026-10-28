@@ -24,7 +24,7 @@ var color: CGColor? { get set }
 @property (nullable) CGColorRef color;
 ```
 
-#### Discussion
+## Discussion
 
 The specified color of the cell will vary by a random amount within the [`redRange`](./redrange.md), [`greenRange`](./greenrange.md), [`blueRange`](./bluerange.md) and [`alphaRange`](./alpharange.md)values over the lifetime of the cell. The [`redSpeed`](./redspeed.md), [`greenSpeed`](./greenspeed.md), [`blueSpeed`](./bluespeed.md), and [`alphaSpeed`](./alphaspeed.md) determine the rate of change.
 

@@ -21,11 +21,11 @@ Tells the delegate it can request the item provider data from the given informat
 @preconcurrency func performDrop(info: DropInfo) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean that is `true` if the drop was successful, `false` otherwise.
 
-#### Discussion
+## Discussion
 
 Incorporate the received data into your app’s data model as appropriate.
 

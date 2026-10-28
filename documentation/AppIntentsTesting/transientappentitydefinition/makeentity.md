@@ -21,7 +21,7 @@ Creates a populated instance of this transient entity.
 var makeEntity: IntentValuePropertiesCallable<AnyTransientAppEntity> { get }
 ```
 
-#### Discussion
+## Discussion
 
 ```swift
 let entityDefinition: TransientAppEntityDefinition = definitions.transientEntities["SomeEntityName"]

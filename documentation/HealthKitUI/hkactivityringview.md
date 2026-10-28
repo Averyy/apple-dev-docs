@@ -26,7 +26,7 @@ class HKActivityRingView
 
 - [Executing Activity Summary Queries](../HealthKit/executing-activity-summary-queries.md)
 
-#### Overview
+## Overview
 
 Use [`HKActivityRingView`](./hkactivityringview.md) to display data from an [`HKActivitySummary`](../HealthKit/hkactivitysummary.md) object. For example, the following image shows how the rings can display a summary view of a person’s activity.
 

@@ -25,7 +25,7 @@ var sourcePixelBufferAttributes: [String : any Sendable]? { get }
 @property (nonatomic, readonly, nullable) NSDictionary<NSString *,id> * sourcePixelBufferAttributes;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is a dictionary containing pixel buffer attribute keys defined in `<CoreVideo/CVPixelBuffer.h>`.
 

@@ -24,7 +24,7 @@ func documentMenu(_ documentMenu: UIDocumentMenuViewController, didPickDocumentP
 - (void) documentMenu:(UIDocumentMenuViewController *) documentMenu didPickDocumentPicker:(UIDocumentPickerViewController *) documentPicker;
 ```
 
-#### Discussion
+## Discussion
 
 The document menu calls this method when the user selects a document picker. Set the document picker’s delegate, and then present it.
 

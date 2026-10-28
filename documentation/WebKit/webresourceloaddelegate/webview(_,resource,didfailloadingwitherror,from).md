@@ -19,7 +19,7 @@ optional func webView(_ sender: WebView!, resource identifier: Any!, didFailLoad
 - (void) webView:(WebView *) sender resource:(id) identifier didFailLoadingWithError:(NSError *) error fromDataSource:(WebDataSource *) dataSource;
 ```
 
-#### Discussion
+## Discussion
 
 Delegates might implement this method to display or log a detailed error message.
 

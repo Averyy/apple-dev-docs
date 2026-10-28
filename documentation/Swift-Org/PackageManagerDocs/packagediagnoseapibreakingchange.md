@@ -10,7 +10,7 @@ framework: "Swift-Org/PackageManagerDocs"
 
 Diagnose API-breaking changes to Swift modules in a package.
 
-#### Overview
+## Overview
 
 ```
 package diagnose-api-breaking-changes

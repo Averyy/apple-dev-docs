@@ -25,4 +25,4 @@ func encodeReprojection(to commandBuffer: any MTLCommandBuffer, sourceTexture: a
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/metalperformanceshaders/mpssvgf/encodereprojection(to:sourcetexture:previoustexture:destinationtexture:previousluminancemomentstexture:destinationluminancemomentstexture:sourcetexture2:previoustexture2:destinationtexture2:previousluminancemomentstexture2:destinationlumina-5nbfn)*
+*[View on Apple Developer](https://developer.apple.com/documentation/metalperformanceshaders/mpssvgf/encodereprojection%28to:sourcetexture:previoustexture:destinationtexture:previousluminancemomentstexture:destinationluminancemomentstexture:sourcetexture2:previoustexture2:destinationtexture2:previousluminancemomentstexture2:destinationlumina-5nbfn)*

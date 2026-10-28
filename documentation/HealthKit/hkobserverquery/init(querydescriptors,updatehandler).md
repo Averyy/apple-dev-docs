@@ -24,7 +24,7 @@ init(queryDescriptors: [HKQueryDescriptor], updateHandler: @escaping @Sendable (
 - (instancetype) initWithQueryDescriptors:(NSArray<HKQueryDescriptor *> *) queryDescriptors updateHandler:(void (^)(HKObserverQuery *query, NSSet<HKSampleType *> *sampleTypesAdded, HKObserverQueryCompletionHandler completionHandler, NSError *error)) updateHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer to create an observer query for changes that match any of the [`HKQueryDescriptor`](../hkquerydescriptor.md) objects. Each descriptor can specify a different data type.
 

@@ -17,7 +17,7 @@ A type that represents the validation mode of the mobile document request.
 struct ValidationMode
 ```
 
-#### Overview
+## Overview
 
 The validation mode controls how the system UI behaves when a display request has been successfully performed.
 

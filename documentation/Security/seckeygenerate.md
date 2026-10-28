@@ -15,17 +15,17 @@ Creates a symmetric key and optionally stores it in a keychain.
 OSStatus SecKeyGenerate(SecKeychainRef keychainRef, CSSM_ALGORITHMS algorithm, uint32 keySizeInBits, CSSM_CC_HANDLE contextHandle, CSSM_KEYUSE keyUsage, uint32 keyAttr, SecAccessRef initialAccess, SecKeyRef*keyRef);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
-#### Discussion
+## Discussion
 
 Key-generation algorithms supported by the AppleCSP module are listed in [Apple Cryptographic Service Provider Functional Specification](https://developer.apple.com/library/archive/documentation/Security/Reference/SecAppleCryptoSpec/Apple_Cryptographic_Service_Provider_Functional_Specification.pdf). For details about algorithms and default values for key-generation parameters, download the CDSA security framework from Apple’s Open Source website at [https://opensource.apple.com/](https://opensource.apple.com/) and read the file `Supported_CSP_Algorithms.doc` in the Documentation folder.
 
 If you need extra parameters to generate a key—as required by some algorithms—call [`SecKeychainGetCSPHandle`](./seckeychaingetcsphandle.md) to obtain a CSSM CSP handle and then call `CSSM_CSP_CreateKeyGenContext` to create a context. With this context, use `CSSM_UpdateContextAttributes` to add additional parameters. Finally, call `CSSM_DeleteContext` to dispose of the context after calling this function.
 
-##### Special Considerations
+### Special Considerations
 
 Use [`SecKeyGenerateSymmetric(_:_:)`](./seckeygeneratesymmetric%28_,_%29.md) instead.
 

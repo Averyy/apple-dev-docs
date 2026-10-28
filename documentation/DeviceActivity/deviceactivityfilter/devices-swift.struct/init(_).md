@@ -17,7 +17,7 @@ Filters data for the provided device models.
 init(_ models: Set<DeviceActivityData.Device.Model>)
 ```
 
-#### Discussion
+## Discussion
 
 Use an empty set to filter data for all devices that are sharing activity data with the current device.
 

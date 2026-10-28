@@ -10,7 +10,7 @@ framework: "Swift-Org/APIGuidelines"
 
 Stick to the established meaning if you do use a term of art.
 
-#### Overview
+## Overview
 
 The only reason to use a technical term rather than a more common word is that it *precisely* expresses something that would otherwise be ambiguous or unclear.  Therefore, an API should use the term strictly in accordance with its accepted meaning.
 

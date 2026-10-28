@@ -22,7 +22,7 @@ nonisolated
 func navigationBarItems<L, T>(leading: L, trailing: T) -> some View where L : View, T : View
 ```
 
-#### Discussion
+## Discussion
 
 Use `navigationBarItems(leading:trailing:)` to add navigation bar items to the leading and trailing edges of the navigation bar for this view.
 

@@ -21,7 +21,7 @@ A more prominent background that likely requires some changes to the views above
 static let increased: BackgroundProminence
 ```
 
-#### Discussion
+## Discussion
 
 This is the level of prominence for more highly saturated and full color backgrounds, such as focused/emphasized selected list rows. Typically foreground content should take on monochrome styling to have greater contrast against the background.
 

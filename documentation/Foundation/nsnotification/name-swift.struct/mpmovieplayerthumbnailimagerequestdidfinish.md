@@ -20,7 +20,7 @@ Posted when a request to capture a thumbnail from a movie has finished whether t
 static let MPMoviePlayerThumbnailImageRequestDidFinish: NSNotification.Name
 ```
 
-#### Discussion
+## Discussion
 
 - [`MPMoviePlayerThumbnailImageKey`](../../../MediaPlayer/mpmovieplayerthumbnailimagekey.md)
 - [`MPMoviePlayerThumbnailTimeKey`](../../../MediaPlayer/mpmovieplayerthumbnailtimekey.md)

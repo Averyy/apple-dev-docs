@@ -25,7 +25,7 @@ var particleFrictionVariation: CGFloat { get set }
 @property (nonatomic) CGFloat particleFrictionVariation;
 ```
 
-#### Discussion
+## Discussion
 
 Setting a nonzero value for this property randomizes the effect of the [`particleFriction`](./particlefriction.md) property. SceneKit randomly adjusts the friction coefficient of each particle by up to half the [`particleFrictionVariation`](./particlefrictionvariation.md) value. For example, if the [`particleFriction`](./particlefriction.md) value is `1.0` and the [`particleFrictionVariation`](./particlefrictionvariation.md) value is `0.5`, each particle uses a random friction coefficient between `0.75` and `1.25` for physics simulation.
 

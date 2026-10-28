@@ -20,11 +20,11 @@ Authenticates a user during MDM payload installation.
 - [Deploying software updates using declarative management](./deploying-software-updates-using-declarative-management.md)
 - [Implementing the simple authentication account-driven enrollment flow](./implementing-the-simple-authentication-account-driven-enrollment-flow.md)
 
-#### Discussion
+## Discussion
 
 On success, the server needs to respond with a `200 OK` status. Don’t assume that the device has installed the MDM payload at this time because other payloads in the profile may still fail to install. When the device successfully installs the MDM payload, it sends a [`Token Update`](./token-update.md) message.
 
-##### Check-in availability
+### Check-in availability
 
 |  |  |
 | --- | --- |

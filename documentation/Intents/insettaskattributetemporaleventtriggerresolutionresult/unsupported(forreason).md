@@ -23,11 +23,11 @@ class func unsupported(forReason reason: INSetTaskAttributeTemporalEventTriggerU
 + (instancetype) unsupportedForReason:(INSetTaskAttributeTemporalEventTriggerUnsupportedReason) reason;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INSetTaskAttributeTemporalEventTriggerResolutionResult`](../insettaskattributetemporaleventtriggerresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method to create a resolution result object when your app doesn’t support the intent parameter for the specified reason.
 

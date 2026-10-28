@@ -20,7 +20,7 @@ Should be called by the app when a tab is moved to fire appropriate events with 
 @preconcurrency func didMoveTab(_ movedTab: any WKWebExtensionTab, from index: Int, in oldWindow: (any WKWebExtensionWindow)? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 This method informs all loaded extensions of the movement of a tab, ensuring consistent understanding across extensions.
 

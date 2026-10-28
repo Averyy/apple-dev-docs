@@ -25,11 +25,11 @@ class func changeMass(to v: Float, duration: TimeInterval) -> SKAction
 + (SKAction *) changeMassTo:(float) v duration:(NSTimeInterval) duration;
 ```
 
-#### Return Value
+## Return Value
 
 A new action object.
 
-#### Discussion
+## Discussion
 
 When the action executes, the physics body’s [`mass`](../skphysicsbody/mass.md) property animates from its current value to its new value.
 

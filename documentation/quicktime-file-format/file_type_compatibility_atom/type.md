@@ -6,7 +6,7 @@
 
 A 32-bit unsigned integer that identifies the atom type, typically represented as a four-character code.
 
-#### Overview
+## Overview
 
 This field must be set to `'ftyp'`.
 

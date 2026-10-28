@@ -23,7 +23,7 @@ var hasUncommittedUpdates: Bool { get }
 @property (nonatomic, readonly) BOOL hasUncommittedUpdates;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) when the table view contains placeholder cells or is handling a drop and is in the middle of reordering its rows. When this property is [`true`](../../Swift/true.md), avoid making any significant changes to the table view. Specifically, don’t call [`reloadData()`](./reloaddata%28%29.md), which forces the table to delete any uncommitted changes before retrieving fresh data from the data source object.
 

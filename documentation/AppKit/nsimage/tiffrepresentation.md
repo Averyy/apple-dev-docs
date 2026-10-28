@@ -19,7 +19,7 @@ var tiffRepresentation: Data? { get }
 @property (strong, readonly, nullable) NSData * TIFFRepresentation;
 ```
 
-#### Discussion
+## Discussion
 
 Use the value of this property to write the TIFF data to a file. For each image representation, this property uses the TIFF compression option associated with that representation or `NSTIFFCompressionNone`, if no option is set.
 

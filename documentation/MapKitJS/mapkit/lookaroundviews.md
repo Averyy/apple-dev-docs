@@ -15,7 +15,7 @@ A list of all the Look Around objects that are currently active on a page.
 get lookAroundViews(): AbstractLookAround[];
 ```
 
-#### Discussion
+## Discussion
 
 You must load the appropriate library before accessing the property, otherwise, the property throws an `Error`.
 

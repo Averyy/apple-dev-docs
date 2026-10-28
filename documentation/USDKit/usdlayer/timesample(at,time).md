@@ -20,7 +20,7 @@ Returns the time-sampled value for the attribute at the given path at the specif
 func timeSample(at path: USDLayer.Path, time: USDLayer.TimeCode) -> USDValue?
 ```
 
-#### Return Value
+## Return Value
 
 The authored sample, or `nil` if none exists at `time`.
 

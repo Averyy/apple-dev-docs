@@ -21,7 +21,7 @@ class NCWidgetSearchViewController
 @interface NCWidgetSearchViewController : NSViewController
 ```
 
-#### Overview
+## Overview
 
 The `NCWidgetSearchViewController` class provides a default search view within a Today widget. A search view controller works together with its delegate to perform searches on the user’s input and display results from which a user can choose. To learn about the search view controller delegate methods, see [`NCWidgetSearchViewDelegate`](./ncwidgetsearchviewdelegate.md).
 

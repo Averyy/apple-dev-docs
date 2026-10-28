@@ -16,7 +16,7 @@ A property to indicate the status of import from another device into the app.
 static var importStatus: MigrationStatus? { get }
 ```
 
-#### Discussion
+## Discussion
 
 This value is `nil` unless a migration completed.
 

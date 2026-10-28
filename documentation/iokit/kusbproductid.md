@@ -14,7 +14,7 @@
 #define kUSBProductID
 ```
 
-#### Discussion
+## Discussion
 
 The field in the USB Device Descriptor corresponding to the device USB Product ID
 

@@ -15,7 +15,7 @@ An algorithm that trains a full neural network with your training data.
 case darknetYolo
 ```
 
-#### Discussion
+## Discussion
 
 Use this algorithm when your training dataset has a significant number of examples.
 

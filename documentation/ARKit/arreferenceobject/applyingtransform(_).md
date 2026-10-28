@@ -22,11 +22,11 @@ func applyingTransform(_ transform: simd_float4x4) -> ARReferenceObject
 - (ARReferenceObject *) referenceObjectByApplyingTransform:(simd_float4x4) transform;
 ```
 
-#### Return Value
+## Return Value
 
 The transformed reference object.
 
-#### Discussion
+## Discussion
 
 You define the local coordinate space of a reference object when you extract it from an [`ARWorldMap`](../arworldmap.md). If an existing reference object has a local coordinate origin that doesn’t fit well with the object’s intended use, call this method to change the reference object’s origin with respect to the physical object it represents.
 

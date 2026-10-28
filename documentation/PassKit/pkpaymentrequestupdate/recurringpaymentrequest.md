@@ -23,7 +23,7 @@ var recurringPaymentRequest: PKRecurringPaymentRequest? { get set }
 @property (nonatomic, strong, nullable) PKRecurringPaymentRequest * recurringPaymentRequest;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `nil`, which indicates the recurring payment request doesn’t require an update.
 

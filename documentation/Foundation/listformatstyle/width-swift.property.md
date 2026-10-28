@@ -21,7 +21,7 @@ The size of the list.
 var width: ListFormatStyle<Style, Base>.Width
 ```
 
-#### Discussion
+## Discussion
 
 The `width` property controls the size of the list. The [`locale`](./locale.md) determines the formatting and abbreviation of the string for the given `width`.
 

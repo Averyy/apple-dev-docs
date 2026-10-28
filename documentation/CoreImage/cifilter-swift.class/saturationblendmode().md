@@ -24,11 +24,11 @@ class func saturationBlendMode() -> any CIFilter & CICompositeOperation
 + (CIFilter<CICompositeOperation> *) saturationBlendModeFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The modified image.
 
-#### Discussion
+## Discussion
 
 This method applies the saturation-blend mode filter to an image. The effect uses the values of the hue and luminance from the background image with the saturation of the input image to produce the output.
 

@@ -20,7 +20,7 @@ optional func ruleEditor(_ editor: NSRuleEditor, predicatePartsForCriterion crit
 - (NSDictionary<NSString *,id> *) ruleEditor:(NSRuleEditor *) editor predicatePartsForCriterion:(id) criterion withDisplayValue:(id) value inRow:(NSInteger) row;
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary representing the parts of the predicate determined by the given criterion and value. The keys of the dictionary should be the string constants specified in Predicate Part Keys with corresponding appropriate values.
 

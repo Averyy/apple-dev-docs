@@ -23,7 +23,7 @@ convenience init(title: String?, message: String?, delegate: Any?, cancelButtonT
 - (instancetype) initWithTitle:(NSString *) title message:(NSString *) message delegate:(id) delegate cancelButtonTitle:(NSString *) cancelButtonTitle otherButtonTitles:(NSString *) otherButtonTitles;
 ```
 
-#### Return Value
+## Return Value
 
 Newly initialized alert view.
 

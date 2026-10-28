@@ -21,7 +21,7 @@ A type that represents an MPEG-2 video.
 static var mpeg2Video: UTType { get }
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.mpeg-2-video`.
 

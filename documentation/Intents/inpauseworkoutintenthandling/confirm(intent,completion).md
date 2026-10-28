@@ -27,7 +27,7 @@ optional func confirm(intent: INPauseWorkoutIntent) async -> INPauseWorkoutInten
 - (void) confirmPauseWorkout:(INPauseWorkoutIntent *) intent completion:(void (^)(INPauseWorkoutIntentResponse *response)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 This method validates that your app is able to pause the user’s current workout. For example, verify that a workout is currently in progress and you can pause it.
 

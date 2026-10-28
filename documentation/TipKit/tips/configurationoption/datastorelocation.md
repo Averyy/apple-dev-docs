@@ -21,7 +21,7 @@ A type for specifying a custom location for your tips datastore.
 struct DatastoreLocation
 ```
 
-#### Overview
+## Overview
 
 For more information on datastore location, see [`datastoreLocation(_:)`](./datastorelocation%28_%29.md).
 

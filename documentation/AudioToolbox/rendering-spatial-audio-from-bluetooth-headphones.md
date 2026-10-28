@@ -5,7 +5,7 @@
 
 Create a Spatial Audio extension that allows Bluetooth headphones to track the wearer’s head movements for spatial audio playback.
 
-#### Overview
+## Overview
 
 To integrate a Bluetooth headphone into the Spatial Audio routing system, implement an audio extension called an *audio unit*. The system adds the audio unit to the audio signal chain when someone is listening to audio on the headphones and Spatial Audio is active. When the listener disables Spatial Audio or connects to a different audio device, the system removes your audio unit.
 
@@ -17,7 +17,7 @@ The system exclusively controls spatialization state through three KVO propertie
 >
 > Customer installations of your app can use the framework only on devices located in the EU that are signed in with an Apple Account with an EU country or region.
 
-#### Deliver the audio unit
+## Deliver the audio unit
 
 Subclassing [`AUHeadTrackingBinauralRenderer`](./auheadtrackingbinauralrenderer.md) is your entry point into the Spatial Audio routing system. The system identifies your audio unit using the [`AudioComponentDescription`](./audiocomponentdescription.md) type, which requires the component type [`kAudioUnitType_HeadTrackingBinauralRenderer`](./kaudiounittype_headtrackingbinauralrenderer.md), the four-character code `'auht'`.
 
@@ -53,7 +53,7 @@ final class MyAudioUnitFactory: NSObject, AUAudioUnitFactory {
 }
 ```
 
-#### Observe head-tracking state
+## Observe head-tracking state
 
 Respond when a listener turns head tracking on or off by observing the `AUHeadTrackingBinauralRenderer/headTrackingIsEnabled` property. The system sets this KVO-compliant property; you don’t have to set it yourself.
 
@@ -75,7 +75,7 @@ headTrackingObservation = observe(
 }
 ```
 
-#### Retrieve head-tracking data
+## Retrieve head-tracking data
 
 To identify the Bluetooth headphone currently matched to your audio unit observe the [`deviceUID`](./auheadtrackingbinauralrenderer/deviceuid.md) property. The system sets this KVO-compliant property lets you know when to begin or stop retrieving head tracking data; you don’t have to set it yourself.
 
@@ -100,7 +100,7 @@ deviceUIDObservation = observe(
 }
 ```
 
-#### Handle bypass
+## Handle bypass
 
 If your Audio Unit exceeds its power budget or causes audio dropouts, the system sets `AUHeadTrackingBinauralRenderer/isBypassed` to `true` to remove your Audio Unit from the signal chain.
 

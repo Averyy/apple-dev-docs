@@ -5,17 +5,17 @@
 
 Prototype and test your Metal apps in Simulator.
 
-#### Overview
+## Overview
 
 In Xcode, you can write iOS, tvOS, and visionOS apps that use Metal and test them in Simulator, gaining the benefits of hardware acceleration on the Mac during development of your app. If you use frameworks built on top of Metal, such as Core Animation and UIKit, you also experience improved performance when testing your apps in Simulator.
 
 Use Simulator to rapidly prototype and test application behavior, and to develop the basic rendering or compute capabilities of your app. Use a hardware device instead of Simulator to design your final Metal workflow. Design your app to run on actual hardware, and test on real devices to tune its performance.
 
-##### Get the default device instance in Simulator
+### Get the default device instance in Simulator
 
 In Simulator, call the [`MTLCreateSystemDefaultDevice()`](./mtlcreatesystemdefaultdevice%28%29.md) function to get the default device instance, just as you do when running on device in iOS, tvOS, or visionOS. This returns a device instance that connects to Simulator.
 
-##### Treat Simulator as a special device
+### Treat Simulator as a special device
 
 Simulator doesn’t try to exactly simulate the GPU from the iOS, tvOS, or visionOS device you’re simulating. For example, if you’re simulating iPhone 15, Simulator doesn’t try to emulate the capabilities of an A16 Bionic graphics chip. Instead, Simulator translates any calls you make and directs them to the selected GPU on the host Mac.
 
@@ -49,7 +49,7 @@ In some cases, like those described in the sections below, Metal doesn’t provi
 
 For more code examples, see [Supporting Simulator in a Metal app](./supporting-simulator-in-a-metal-app.md).
 
-###### Texture limitations
+#### Texture limitations
 
 When working with textures in Simulator, follow these recommendations:
 
@@ -61,7 +61,7 @@ When working with textures in Simulator, follow these recommendations:
 - Don’t render to textures with an [`MTLPixelFormat.rgb9e5Float`](./mtlpixelformat/rgb9e5float.md) format.
 - Don’t write to sRGB textures in Simulator.
 
-###### Constant buffer limitations
+#### Constant buffer limitations
 
 If you use buffers that use the constant address space as arguments to your shaders, follow these recommendations when running in Simulator:
 
@@ -69,7 +69,7 @@ If you use buffers that use the constant address space as arguments to your shad
 - When you set arguments for the render or compute command, align constant buffer offsets to 256 bytes. Generally, iOS requires an alignment of 4 bytes. This difference may mean that you might need to arrange your data differently when running in Simulator.
 - Don’t use more than 14 constant buffers as arguments to a render or compute pipeline.
 
-###### Other limitations
+#### Other limitations
 
 Additional limitations that require you to do things differently when running in Simulator include:
 
@@ -77,7 +77,7 @@ Additional limitations that require you to do things differently when running in
 - Simulator doesn’t support programmable blending. When creating render pipelines, you can’t read from color attachments in your fragment shader’s arguments. This may mean, for example, that you may have to perform additional render passes when running in Simulator.
 - You can’t use Xcode to analyze the memory footprint or measure performance when running in Simulator.
 
-##### Prototype your app with Simulator
+### Prototype your app with Simulator
 
 Consider the following guiding principles to use Simulator effectively in your Metal app development process:
 

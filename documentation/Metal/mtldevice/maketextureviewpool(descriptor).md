@@ -25,7 +25,7 @@ func makeTextureViewPool(descriptor: MTLResourceViewPoolDescriptor) throws -> an
 - (id<MTLTextureViewPool>) newTextureViewPoolWithDescriptor:(MTLResourceViewPoolDescriptor *) descriptor error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 A [`MTLTextureViewPool`](../mtltextureviewpool.md) instance, or `nil` if the function failed.
 

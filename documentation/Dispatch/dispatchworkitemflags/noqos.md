@@ -21,7 +21,7 @@ Execute the work item without assigning a quality-of-service class.
 static let noQoS: DispatchWorkItemFlags
 ```
 
-#### Discussion
+## Discussion
 
 This flag takes priority over the [`assignCurrentContext`](./assigncurrentcontext.md) flag.
 

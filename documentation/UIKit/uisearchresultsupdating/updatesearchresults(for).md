@@ -24,7 +24,7 @@ func updateSearchResults(for searchController: UISearchController)
 - (void) updateSearchResultsForSearchController:(UISearchController *) searchController;
 ```
 
-#### Discussion
+## Discussion
 
 The system calls this method when the search bar becomes the first responder or the search bar’s text changes. Perform any required filtering and updating of search results or suggestions inside of this method.
 

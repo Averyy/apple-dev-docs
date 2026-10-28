@@ -21,7 +21,7 @@ A style displaying a date.
 static let date: Text.DateStyle
 ```
 
-#### Discussion
+## Discussion
 
 ```swift
 Text(event.startDate, style: .date)

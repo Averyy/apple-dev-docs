@@ -17,7 +17,7 @@ User progress for a task that is either completed or incomplete.
 struct BinaryCareTaskProgress
 ```
 
-#### Overview
+## Overview
 
 This type of progress can be useful for tasks such as “Take a medication” or “Stretch your back.”
 

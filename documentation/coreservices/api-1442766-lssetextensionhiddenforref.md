@@ -21,7 +21,7 @@ func LSSetExtensionHiddenForRef(_ inRef: UnsafePointer<FSRef>!, _ inHide: Bool) 
 OSStatus LSSetExtensionHiddenForRef(const FSRef *inRef, Boolean inHide);
 ```
 
-#### Return Value
+## Return Value
 
 A result code; see [Result Codes](./launch_services.md#1661359). The function will return the result code `kLSCannotSetInfoErr` if:
 
@@ -29,11 +29,11 @@ A result code; see [Result Codes](./launch_services.md#1661359). The function wi
 - The extension is not active (is not claimed by an application registered with Launch Services)
 - Hiding the extension would make the filename appear to have an active but incorrect extension (for example, in the filename `Photo.jpeg.scpt`, where hiding the extension would make an AppleScript file appear to be a JPEG file)
 
-#### Discussion
+## Discussion
 
 This function sets the necessary file-system state controlling whether the filename extension should be hidden in the display name of the item designated by the `inRef` parameter. To determine whether an item’s extension is currently hidden, you can use the `LSCopyItemInfoForRef` function.
 
-##### Version-Notes
+### Version-Notes
 
 Thread-safe since Mac OS version 10.2.
 

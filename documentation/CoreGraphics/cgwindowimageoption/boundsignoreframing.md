@@ -18,7 +18,7 @@ static var boundsIgnoreFraming: CGWindowImageOption { get }
 kCGWindowImageBoundsIgnoreFraming
 ```
 
-#### Discussion
+## Discussion
 
 When the requested capture rectangle is [`CGRectNull`](../cgrectnull.md), using this option captures the window area only and does not capture the area occupied by any window framing effects.
 

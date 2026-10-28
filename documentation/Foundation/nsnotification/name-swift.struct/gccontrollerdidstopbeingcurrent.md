@@ -20,7 +20,7 @@ A notification that posts when a controller stops being the current controller.
 static let GCControllerDidStopBeingCurrent: NSNotification.Name
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is the [`GCController`](../../../GameController/gccontroller.md) object that’s no longer current.
 

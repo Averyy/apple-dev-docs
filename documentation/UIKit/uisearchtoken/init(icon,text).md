@@ -22,7 +22,7 @@ init(icon: UIImage?, text: String)
 + (UISearchToken *) tokenWithIcon:(UIImage *) icon text:(NSString *) text;
 ```
 
-#### Return Value
+## Return Value
 
 A new search token.
 

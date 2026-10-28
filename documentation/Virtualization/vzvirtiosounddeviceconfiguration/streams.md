@@ -19,7 +19,7 @@ var streams: [VZVirtioSoundDeviceStreamConfiguration] { get set }
 @property (copy) NSArray<VZVirtioSoundDeviceStreamConfiguration *> * streams;
 ```
 
-#### Discussion
+## Discussion
 
 Empty by default.
 

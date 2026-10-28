@@ -21,7 +21,7 @@ An acquiring load synchronizes with a releasing operation whose value its reads.
 static var acquiring: AtomicLoadOrdering { get }
 ```
 
-#### Discussion
+## Discussion
 
 This value corresponds to `std::memory_order_acquire` in C++.
 

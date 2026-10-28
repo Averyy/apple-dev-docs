@@ -26,7 +26,7 @@ func broadcastResumed()
 - (void) broadcastResumed;
 ```
 
-#### Discussion
+## Discussion
 
 ReplayKit calls this method when the the broadcasting app calls its [`resumeBroadcast()`](../rpbroadcastcontroller/resumebroadcast%28%29.md) method.
 

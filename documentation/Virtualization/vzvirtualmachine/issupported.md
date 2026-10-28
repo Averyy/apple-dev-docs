@@ -19,7 +19,7 @@ class var isSupported: Bool { get }
 @property (class, readonly, getter=isSupported) BOOL supported;
 ```
 
-#### Discussion
+## Discussion
 
 If virtualization is unavailable on the current device, no configuration is valid. If you want to know more about why virtualization is unavailable, call the [`validate()`](../vzvirtualmachineconfiguration/validate%28%29.md) method of [`VZVirtualMachineConfiguration`](../vzvirtualmachineconfiguration.md) and examine the returned error object.
 

@@ -15,11 +15,11 @@ Sets the algorithm for the video clock device.
 kern_return_t SetClockAlgorithm(IOUserVideoClockAlgorithm in_clock_algorithm);
 ```
 
-#### Return Value
+## Return Value
 
 A kern_return_t value indicating success or failure.
 
-#### Discussion
+## Discussion
 
 Drivers can change the clock algorithm of the clock device dynamically. If successful, the clock device sends a notification to the host to update the object state.
 

@@ -13,7 +13,7 @@
 ComponentResult CallComponentClose(ComponentInstance ci, ComponentInstance self);
 ```
 
-#### Return Value
+## Return Value
 
 See the description of the `ComponentResult` data type.
 

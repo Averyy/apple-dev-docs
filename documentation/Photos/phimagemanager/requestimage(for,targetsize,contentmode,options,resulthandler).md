@@ -40,11 +40,11 @@ func requestImage(for asset: PHAsset, targetSize: CGSize, contentMode: PHImageCo
 - (PHImageRequestID) requestImageForAsset:(PHAsset *) asset targetSize:(CGSize) targetSize contentMode:(PHImageContentMode) contentMode options:(PHImageRequestOptions *) options resultHandler:(void (^)(NSImage *result, NSDictionary *info)) resultHandler;
 ```
 
-#### Return Value
+## Return Value
 
 A numeric identifier for the request. If you need to cancel the request before it completes, pass this identifier to the [`cancelImageRequest(_:)`](./cancelimagerequest%28_%29.md) method.
 
-#### Discussion
+## Discussion
 
 When you call this method, Photos loads or generates an image of the asset at, or near, the size you specify. Next, it calls your `resultHandler` block to provide the requested image. To serve your request more quickly, Photos may provide an image that is slightly larger than the target size—either because such an image is already cached or because it can be generated more efficiently. Depending on the options you specify and the current state of the asset, Photos may download asset data from the network.
 

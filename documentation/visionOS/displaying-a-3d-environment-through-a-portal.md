@@ -10,7 +10,7 @@ Implement a portal window that displays a 3D environment and simulates entering 
 - visionOS 2.0+
 - Xcode 16.0+
 
-#### Overview
+## Overview
 
 This sample code project demonstrates how to view a 3D environment through a flat plane with the portal component, and transition into the portal by creating an immersive space. To create a portal, you first need to define an entity and set the [`WorldComponent`](../RealityKit/worldcomponent.md) to store the content of the portal. Next, you create a separate entity to represent the portal’s structure, such as the flat plane in the sample. Finally, you combine the two entities, assigning the portal content entity to [`PortalComponent`](../RealityKit/portalcomponent.md) and setting it to the portal structure entity to create the portal.
 
@@ -22,7 +22,7 @@ At launch, the sample app creates the following:
 
 [Video: A screen recording of the sample app rendering a portal that houses a 3D environment within it.](https://developer.apple.com/tutorials/videos/com.apple.visionOS/sample-uiportal-1-main-view.mov)
 
-##### Set up the 3D environment
+### Set up the 3D environment
 
 The sample creates the 3D environment in two scenarios:
 
@@ -81,7 +81,7 @@ To apply image-based lighting to the box environment, the app creates an [`Image
 
 Finally, the app adds the placeholder entity containing the image-based lighting component to the box environment, and then adds the box environment to the root entity.
 
-##### Create a portal window
+### Create a portal window
 
 To create a portal, the app defines the mesh of the portal by creating a flat plane to act as a window shape for it.
 
@@ -128,7 +128,7 @@ The `createPortal()` method sets up the portal and adds it to the `root`. First,
 
 Finally, it sets the `portalPlane` entity with the [`PortalComponent`](../RealityKit/portalcomponent.md) to transform it into a portal that renders the 3D environment within the `world` entity.
 
-##### Enter the 3D environment
+### Enter the 3D environment
 
 In the sample app, a person can enter the portal by tapping a button. To achieve this, the app creates an immersive space and loads the 3D box environment in the scene.
 

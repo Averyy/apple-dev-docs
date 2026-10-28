@@ -19,7 +19,7 @@ func SCNetworkServiceCreate(_ prefs: SCPreferences, _ interface: SCNetworkInterf
 SCNetworkServiceRefSCNetworkServiceCreate(SCPreferencesRef prefs, SCNetworkInterfaceRef interface);
 ```
 
-#### Return Value
+## Return Value
 
 The new network service. You must release the returned value.
 

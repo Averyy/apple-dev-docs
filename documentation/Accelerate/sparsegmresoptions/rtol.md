@@ -25,9 +25,9 @@ var rtol: Double
 double rtol;
 ```
 
-#### Discussion
+## Discussion
 
-*‖ b-Ax ‖₂ < [`rtol`](./rtol.md) * ‖ b-Ax₀ ‖₂ + [`atol`](./atol.md)* indicates convergence.
+*‖ b-Ax ‖₂ < [`rtol`](./rtol.md) \* ‖ b-Ax₀ ‖₂ + [`atol`](./atol.md)* indicates convergence.
 
 If [`rtol`](./rtol.md) `= 0`, the operation uses the default value of `sqrt(epsilon)`.
 

@@ -21,7 +21,7 @@ Creates an index in the given UTF-8 view that corresponds exactly to the specifi
 init?(_ idx: String.Index, within target: String.UTF8View)
 ```
 
-#### Discussion
+## Discussion
 
 The following example finds the position of a space in a string’s `utf16` view and then converts that position to an index in the string’s `utf8` view.
 

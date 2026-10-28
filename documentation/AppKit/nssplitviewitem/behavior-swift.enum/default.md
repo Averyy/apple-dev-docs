@@ -19,7 +19,7 @@ case `default`
 NSSplitViewItemBehaviorDefault
 ```
 
-#### Discussion
+## Discussion
 
 This behavior corresponds to split view items that you create using [`init(viewController:)`](../init%28viewcontroller%29.md).
 

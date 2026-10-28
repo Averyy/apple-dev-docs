@@ -19,11 +19,11 @@ func NewOSLAccessorUPP(_ userRoutine: OSLAccessorProcPtr!) -> OSLAccessorUPP!
 OSLAccessorUPP NewOSLAccessorUPP(OSLAccessorProcPtr userRoutine);
 ```
 
-#### Return Value
+## Return Value
 
 See [`OSLAccessorUPP`](./oslaccessorupp.md).
 
-#### Discussion
+## Discussion
 
 See the [`OSLAccessorProcPtr`](./oslaccessorprocptr.md) callback function. 
 

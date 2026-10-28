@@ -25,7 +25,7 @@ func CFArrayGetFirstIndexOfValue(_ theArray: CFArray!, _ range: CFRange, _ value
 extern CFIndex CFArrayGetFirstIndexOfValue(CFArrayRef theArray, CFRange range, const void *value);
 ```
 
-#### Return Value
+## Return Value
 
 The lowest index of the matching values in the range, or `-1` if no value in the range matched.
 

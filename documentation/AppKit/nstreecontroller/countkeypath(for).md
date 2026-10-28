@@ -19,7 +19,7 @@ func countKeyPath(for node: NSTreeNode) -> String?
 - (NSString *) countKeyPathForNode:(NSTreeNode *) node;
 ```
 
-#### Return Value
+## Return Value
 
 A string containing the key path in `node` that provides the number of children.
 

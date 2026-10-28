@@ -21,11 +21,11 @@ The declaration to activate a set of configurations.
 object ActivationSimple
 ```
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.activation.simple` as the declaration type.
 
-##### Activation examples
+### Activation examples
 
 **One configuration**:
 

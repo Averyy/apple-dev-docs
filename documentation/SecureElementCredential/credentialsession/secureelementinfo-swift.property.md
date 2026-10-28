@@ -16,7 +16,7 @@ A property that provides information about the Secure Element hardware.
 var secureElementInfo: CredentialSession.SecureElementInfo { get async throws }
 ```
 
-#### Discussion
+## Discussion
 
 You can use the certificate in the [`CredentialSession.SecureElementInfo`](./secureelementinfo-swift.struct.md) to authenticate against the Certification Authority of the Secure Element hardware.
 

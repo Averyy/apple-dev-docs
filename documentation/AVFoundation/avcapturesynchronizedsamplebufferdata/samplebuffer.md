@@ -22,7 +22,7 @@ var sampleBuffer: CMSampleBuffer { get }
 @property (readonly) CMSampleBufferRef sampleBuffer;
 ```
 
-#### Discussion
+## Discussion
 
 Note that if the [`sampleBufferWasDropped`](./samplebufferwasdropped.md) property is [`true`](../../Swift/true.md), this [`CMSampleBuffer`](../../CoreMedia/cmsamplebuffer.md) object does not contain pixel data (instead, it contains only metadata).
 

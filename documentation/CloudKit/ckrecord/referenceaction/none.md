@@ -25,7 +25,7 @@ case none
 CKReferenceActionNone
 ```
 
-#### Discussion
+## Discussion
 
 No action occurs when you delete a record that the current record references. Deleting a parent record doesn’t delete that record’s children. The `CKReference` object still contains the ID of the deleted record and doesn’t update.
 

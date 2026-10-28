@@ -24,7 +24,7 @@ struct CMAttitudeReferenceFrame
 enum CMAttitudeReferenceFrame : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 When you start a service that reports the device’s attitude in three-dimensional space, Core Motion establishes a frame of reference for reporting pitch, roll, and yaw values. All subsequent data values specify the device attitude relative to this frame of reference. To get a list of the currently available reference frames for the current device, call the [`availableAttitudeReferenceFrames()`](./cmmotionmanager/availableattitudereferenceframes%28%29.md) class method.
 

@@ -24,7 +24,7 @@ class INCurrencyAmountResolutionResult
 @interface INCurrencyAmountResolutionResult : INIntentResolutionResult
 ```
 
-#### Overview
+## Overview
 
 An [`INCurrencyAmountResolutionResult`](./incurrencyamountresolutionresult.md) object is what you return when resolving parameters containing an [`INCurrencyAmount`](./incurrencyamount.md) object. Use the creation method that best reflects your ability to successfully resolve the parameter.
 

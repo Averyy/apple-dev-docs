@@ -22,7 +22,7 @@ var center: CLLocationCoordinate2D { get }
 @property (atomic, readonly) CLLocationCoordinate2D center;
 ```
 
-#### Discussion
+## Discussion
 
 In iOS, use a [`CLCircularRegion`](../clcircularregion.md) object to manage geographic regions.
 

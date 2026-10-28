@@ -9,7 +9,7 @@ Create a new playlist in a user’s library.
 **Availability**:
 - Apple Music 1.0+
 
-#### Discussion
+## Discussion
 
 If successful, the HTTP status code is 201 (Created) and a new resource created as a result. If unsuccessful, the HTTP status code indicates the error and the details are in the `errors` array.
 
@@ -19,7 +19,7 @@ This endpoint requires a music user token. For more information, see [User Authe
 
 You can include an optional `tracks` relationship in this request.
 
-##### Example
+### Example
 
 **Request**:
 

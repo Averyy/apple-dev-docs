@@ -18,7 +18,7 @@ Removes a current member of the array and replaces it with another object.
 bool replaceObject(uint32_t index, const OSMetaClassBase *anObject);
 ```
 
-#### Return Value
+## Return Value
 
 True on success, which retains the added object and releases the current member, or false on failure which does not retain the object and leaves the current member.
 

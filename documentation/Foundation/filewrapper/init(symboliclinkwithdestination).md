@@ -21,15 +21,15 @@ convenience init(symbolicLinkWithDestination path: String)
 - (id) initSymbolicLinkWithDestination:(NSString *) path;
 ```
 
-#### Return Value
+## Return Value
 
 Initialized symbolic-link file wrapper referencing `node`.
 
-#### Discussion
+## Discussion
 
 The receiver is not associated to a file-system node until you save it using [`write(toFile:atomically:updateFilenames:)`](./write%28tofile,atomically,updatefilenames%29.md). It’s also initialized with open permissions; anyone can read or write the disk representations it saves.
 
-##### Special Considerations
+### Special Considerations
 
 Beginning with OS X v10.6, the preferred method of referring to files is with a `file://` URL. Therefore, this method has been deprecated in favor of [`init(symbolicLinkWithDestinationURL:)`](./init%28symboliclinkwithdestinationurl%29.md).
 

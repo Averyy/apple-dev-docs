@@ -25,7 +25,7 @@ func addObserver(_ observer: NSObject, toObjectsAt indexes: IndexSet, forKeyPath
 - (void) addObserver:(NSObject *) observer toObjectsAtIndexes:(NSIndexSet *) indexes forKeyPath:(NSString *) keyPath options:(NSKeyValueObservingOptions) options context:(void *) context;
 ```
 
-#### Discussion
+## Discussion
 
 The `options` determine what is included in the notifications, and the `context` is passed in the notifications.
 

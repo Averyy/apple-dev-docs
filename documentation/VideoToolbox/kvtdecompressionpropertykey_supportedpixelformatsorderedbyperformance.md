@@ -24,7 +24,7 @@ let kVTDecompressionPropertyKey_SupportedPixelFormatsOrderedByPerformance: CFStr
 extern CFStringRef const kVTDecompressionPropertyKey_SupportedPixelFormatsOrderedByPerformance;
 ```
 
-#### Discussion
+## Discussion
 
 This is an optional property for video decoders to implement. This property value is an array containing [`CFNumber`](../CoreFoundation/cfnumber.md) objects holding [`CMPixelFormatType`](../CoreMedia/cmpixelformattype.md) values,	ordered by speed from fastest to slowest.
 

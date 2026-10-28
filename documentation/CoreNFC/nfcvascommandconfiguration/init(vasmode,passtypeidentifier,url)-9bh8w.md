@@ -21,7 +21,7 @@ init(vasMode mode: NFCVASCommandConfiguration.Mode, passTypeIdentifier: String, 
 - (instancetype) initWithVASMode:(NFCVASMode) mode passTypeIdentifier:(NSString *) passTypeIdentifier url:(NSURL *) url;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized VAS command configuration object.
 

@@ -16,11 +16,11 @@ Add a run loop event source to allow IOFireWireLib isoch callbacks to function.
 IOReturn (*AddIsochCallbackDispatcherToRunLoopForMode)(IOFireWireLibDeviceRef self, CFRunLoopRef inRunLoop, CFStringRef inRunLoopMode);
 ```
 
-#### Return Value
+## Return Value
 
 An IOReturn error code.
 
-#### Discussion
+## Discussion
 
 This function adds an event source for the isochronous callback dispatcher to the specified CFRunLoop. Isochronous related callbacks will not be called unless this function has been called. This function is similar to AddCallbackDispatcherToRunLoop. The passed CFRunLoop can be different from that passed to AddCallbackDispatcherToRunLoop.
 

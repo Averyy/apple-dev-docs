@@ -22,7 +22,7 @@ var systemPressureState: AVCaptureDevice.SystemPressureState { get }
 @property (nonatomic, readonly) AVCaptureSystemPressureState * systemPressureState;
 ```
 
-#### Discussion
+## Discussion
 
 This property indicates whether the capture device is currently in an elevated system pressure condition. When system pressure reaches a [`shutdown`](./systempressurestate-swift.class/level-swift.struct/shutdown.md) state, the capture device can’t continue to provide input, and the capture session becomes interrupted until the pressured state abates.
 

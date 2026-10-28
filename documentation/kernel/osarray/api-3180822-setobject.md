@@ -24,11 +24,11 @@ bool setObject(const OSMetaClassBase *anObject);
 virtual bool setObject(const OSMetaClassBase *anObject);
 ```
 
-#### Return Value
+## Return Value
 
 true on success, which retains the object, or false on failure which does not retain the object.
 
-#### Discussion
+## Discussion
 
 Appends an object as the last member of the array. The array capacity will be grown if necessary.
 

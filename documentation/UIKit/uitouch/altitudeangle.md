@@ -23,7 +23,7 @@ var altitudeAngle: CGFloat { get }
 @property (nonatomic, readonly) CGFloat altitudeAngle;
 ```
 
-#### Discussion
+## Discussion
 
 A value of `0` radians indicates that the stylus is parallel to the surface. The value of this property is `Pi/2` when the stylus is perpendicular to the surface.
 

@@ -21,7 +21,7 @@ nonisolated
 static let accessibilitySpeechIPANotation: NSAttributedString.Key
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key is an [`NSString`](../../nsstring.md) object that contains International Phonetic Alphabet (IPA) symbols.
 

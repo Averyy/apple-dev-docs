@@ -20,7 +20,7 @@ Options that influence the image-generation process.
 @preconcurrency var options: ImagePlaygroundOptions { get set }
 ```
 
-#### Discussion
+## Discussion
 
 To specify custom options, modify the value in this property before you present the view controller. If you don’t modify this property, the view controller uses the default set of options.
 

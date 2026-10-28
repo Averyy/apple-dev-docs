@@ -20,7 +20,7 @@ var ES_EVENT_TYPE_LAST: es_event_type_t { get }
 ES_EVENT_TYPE_LAST
 ```
 
-#### Discussion
+## Discussion
 
 This is a convenience value that represents the greatest raw value of the enumeration. Endpoint Security never sends a client message with this event type.
 

@@ -29,7 +29,7 @@ var activityType: String { get }
 
 - [Implementing Handoff in Your App](../implementing-handoff-in-your-app.md)
 
-#### Discussion
+## Discussion
 
 This property is set at initialization time and can’t be changed later. Typically, you specify activity type strings using a reverse-DNS format that uniquely identifies the activity.
 

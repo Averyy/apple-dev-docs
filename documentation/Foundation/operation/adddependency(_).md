@@ -25,7 +25,7 @@ func addDependency(_ op: Operation)
 - (void) addDependency:(NSOperation *) op;
 ```
 
-#### Discussion
+## Discussion
 
 The receiver is not considered ready to execute until all of its dependent operations have finished executing. If the receiver is already executing its task, adding dependencies has no practical effect. This method may change the `isReady` and `dependencies` properties of the receiver.
 

@@ -21,7 +21,7 @@ Generates a column by subtracting a value from each element in an optional colum
 static func - (lhs: Self, rhs: Self.WrappedElement) -> Column<Self.WrappedElement> where Self.WrappedElement : AdditiveArithmetic
 ```
 
-#### Return Value
+## Return Value
 
 A new column.
 

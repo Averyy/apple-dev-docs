@@ -19,7 +19,7 @@ var modalWindow: NSWindow? { get }
 @property (strong, readonly, nullable) NSWindow * modalWindow;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the current standalone modal window or `nil` if no modal window is being displayed. This property does not contain sheets that are attached to other windows. To retrieve a sheet, use the [`attachedSheet`](../nswindow/attachedsheet.md) method of [`NSWindow`](../nswindow.md).
 

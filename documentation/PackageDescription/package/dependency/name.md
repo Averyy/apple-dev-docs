@@ -17,7 +17,7 @@ The name of the dependency.
 var name: String? { get }
 ```
 
-#### Discussion
+## Discussion
 
 If the `name` is `nil`, Swift Package Manager deduces the dependency’s name from its package identity or Git URL.
 

@@ -25,7 +25,7 @@ case restricted
 kCLAuthorizationStatusRestricted
 ```
 
-#### Discussion
+## Discussion
 
 The user cannot change this app’s status, possibly due to active restrictions such as parental controls being in place.
 

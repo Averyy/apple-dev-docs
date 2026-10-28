@@ -19,7 +19,7 @@ var allowsFullHeightLayout: Bool { get set }
 @property BOOL allowsFullHeightLayout;
 ```
 
-#### Discussion
+## Discussion
 
 This property only applies to [`NSSplitViewItem.Behavior.sidebar`](./behavior-swift.enum/sidebar.md) and [`NSSplitViewItem.Behavior.inspector`](./behavior-swift.enum/inspector.md). The default value is [`true`](../../Swift/true.md).
 

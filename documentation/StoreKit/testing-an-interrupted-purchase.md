@@ -5,13 +5,13 @@
 
 Verify that your app handles an interrupted purchase by inspecting and invoking payment transactions.
 
-#### Overview
+## Overview
 
 An interrupted purchase is a transaction that requires the user to perform some action outside of your app before completing their transaction. For example, the user may need to update their payment method or accept new terms and conditions before continuing with their transaction.
 
 In sandbox testing, you can simulate an interrupted purchase by turning on the interrupted purchase feature in App Store Connect for a tester Sandbox Apple Account. This interrupts all purchase attempts by that Sandbox Apple Account until you agree to the updated terms and conditions on the iOS device, or until you turn off the feature in App Store Connect. To learn how to set up interrupted purchase testing, see [Enable interrupted purchases for a Sandbox Apple Account](https://developer.apple.com/help/app-store-connect/test-in-app-purchases/manage-sandbox-apple-id-settings#enable-interrupted-purchases-for-a-sandbox-apple-id).
 
-##### Set up testing
+### Set up testing
 
 To enable interrupted purchases for the Sandbox Apple Account, log in to [App Store Connect](https://appstoreconnect.apple.com/login), and do the following:
 
@@ -19,7 +19,7 @@ To enable interrupted purchases for the Sandbox Apple Account, log in to [App St
 2. Select a Sandbox Apple Account to use for testing interrupted purchases. If it’s already enabled, you’ll see a checkmark under the Interrupted Purchases column.
 3. In the dialog that appears, select Interrupt Purchases for This Tester.
 
-##### Begin testing
+### Begin testing
 
 After setting up interrupted purchase testing in App Store Connect, use the following steps to test your app:
 
@@ -36,7 +36,7 @@ After setting up interrupted purchase testing in App Store Connect, use the foll
 11. In Xcode, validate the receipt. Check that your app provides the service or the product, and calls [`finishTransaction(_:)`](./skpaymentqueue/finishtransaction%28_%29.md).
 12. On the device, the user should observe a successful purchase.
 
-##### Conclude testing
+### Conclude testing
 
 The Sandbox Apple Account continues to experience interrupted purchases until you disable it in App Store Connect, or until the user agrees to the terms and conditions on the device. To disable interrupted purchases in App Store Connect, deselect Interrupt Purchases for This Tester. For more information, see [Enable interrupted purchases for a Sandbox Apple Account](https://developer.apple.com/help/app-store-connect/test-in-app-purchases/manage-sandbox-apple-id-settings#enable-interrupted-purchases-for-a-sandbox-apple-id).
 

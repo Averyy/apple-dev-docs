@@ -20,7 +20,7 @@ The maximum distance in meters from the camera that the camera can see.
 var far: Float
 ```
 
-#### Discussion
+## Discussion
 
 The value defaults to `1000.0`. Use a value greater than the value of [`near`](./near.md). The renderer clips any surface beyond the `far` point.
 

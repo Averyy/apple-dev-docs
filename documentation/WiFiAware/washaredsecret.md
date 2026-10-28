@@ -17,7 +17,7 @@ A high-entropy shared secret unique to this network connection.
 struct WASharedSecret
 ```
 
-#### Discussion
+## Discussion
 
 Use a `WASharedSecret` to pair and set up security for higher layer network protocols such as TLS, QUIC, or IPSec without requiring manual action or data entry by someone using these capabilities. The framework can use the shared secret to authenticate a *password authenticated key agreement* ([PAKE](https://en.wikipedia.org/wiki/Password-authenticated_key_agreement)) like SPAKE2, which it then uses to pair and derive long-term asymmetric keys for authentication and encryption of the upper-layer network protocol.
 

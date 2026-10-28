@@ -24,7 +24,7 @@ var inheritDepthBias: Bool { get set }
 @property (nonatomic, readwrite) BOOL inheritDepthBias;
 ```
 
-#### Discussion
+## Discussion
 
 The property’s default value is [`true`](../../Swift/true.md).
 

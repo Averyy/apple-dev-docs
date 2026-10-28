@@ -25,7 +25,7 @@ func render()
 - (void) render;
 ```
 
-#### Discussion
+## Discussion
 
 This method can be used only with an [`SCNRenderer`](../scnrenderer.md) object created with the [`SCNRenderer`](../scnrenderer.md) initializer. Call this method to tell SceneKit to draw the renderer’s scene into the OpenGL context you created the renderer with.
 

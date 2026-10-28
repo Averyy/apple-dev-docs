@@ -19,7 +19,7 @@ func selectText(_ sender: Any?)
 - (void) selectText:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 If the text field isn’t in a window’s view hierarchy, this method has no effect.
 

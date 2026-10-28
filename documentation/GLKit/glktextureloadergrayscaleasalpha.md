@@ -22,7 +22,7 @@ let GLKTextureLoaderGrayscaleAsAlpha: String
 extern NSString * const GLKTextureLoaderGrayscaleAsAlpha;
 ```
 
-#### Discussion
+## Discussion
 
 This key specifies whether the image data in a grayscale image should be treated as alpha information. The value for this key is an [`NSNumber`](../Foundation/nsnumber.md) object that specifies a boolean value. If [`false`](../Swift/false.md), the image data is treated as luminance data. If [`true`](../Swift/true.md), the image data is treated as alpha data. The default value is [`false`](../Swift/false.md). This key is ignored if the source image is not a grayscale image.
 

@@ -5,11 +5,11 @@
 
 Create and manage subscriptions with the App Store Connect API.
 
-#### Overview
+## Overview
 
 Before you create an auto-renewable subscription, create an auto-renewable subscription group, as described in [Creating auto-renewable subscription groups](./creating-auto-renewable-subscription-groups.md).
 
-##### Create your auto-renewable subscription
+### Create your auto-renewable subscription
 
 To create a subscription in your existing subscription group, use `POST /v1/subscriptions` ([`Create an auto-renewable subscription`](./post-v1-subscriptions.md)) with a payload that specifies a `name` (internal only), `productId` (without spaces), and `subscriptionGroup id`. If you’re adding more subscriptions to the same group, you can also specify `groupLevel` to set the display order of subscriptions within a group. There are other attributes you can add when creating your subscription; for more information, see [`SubscriptionCreateRequest.Data.Attributes`](./subscriptioncreaterequest/data-data.dictionary/attributes-data.dictionary.md).
 
@@ -40,7 +40,7 @@ Here’s an example payload:
 }
 ```
 
-##### Localize metadata for your auto-renewable subscription
+### Localize metadata for your auto-renewable subscription
 
 Like subscription groups, subscriptions need at least one localization. To add a localization, use `POST /v1/subscriptionLocalizations` ([`Create a subscription localization (v1)`](./post-v1-subscriptionlocalizations.md)).
 
@@ -68,7 +68,7 @@ Here’s an example payload:
 
 ```
 
-##### Configure your auto-renewable subscription pricing
+### Configure your auto-renewable subscription pricing
 
 The next item to configure for your subscription is pricing. First, determine the price for your subscription. You can set a unique price for each territory. To look up the price points available for the subscription, use `GET /v1/subscriptions/{id}/pricePoints` ([`List all price points for a subscription`](./get-v1-subscriptions-_id_-pricepoints.md)), where the `id` is the identifier of the subscription.
 
@@ -234,7 +234,7 @@ To set a price point for another territory, use `POST /v1/subscriptionPrices` ([
 
 > ❗ **Important**:  Review carefully because after a price goes into effect, you can’t revert it. Be sure to review information about price increases and changes at [Add a new app](https://developer.apple.com/help/app-store-connect/create-an-app-record/add-a-new-app).
 
-##### Configure Billing Grace Period for your app
+### Configure Billing Grace Period for your app
 
 After adding support for Billing Grace Period to your app, you can set the state for subscriptions. When you support Billing Grace Period in your app, it lets subscribers retain access to your app’s paid content for a period of time if their subscription expires due to a billing issue. If Apple successfully recovers the subscription within the grace period, you don’t experience any interruption in your revenue. Before you turn on Billing Grace Period in App Store Connect, you need to update your entitlement logic to ensure you’re providing service to customers within the grace period. For more information, see [Reducing Involuntary Subscriber Churn](../StoreKit/reducing-involuntary-subscriber-churn.md) and [Enable Billing Grace Period for auto-renewable subscriptions](https://help.apple.com/app-store-connect/#/dev58bda3212).
 
@@ -258,7 +258,7 @@ Here’s an example payload:
 
 You can provide additional attributes to control the duration of the grace period and the type of subscribers that are eligible, as well as set the state for the sandbox environment. For more information, see [`SubscriptionGracePeriodUpdateRequest.Data.Attributes`](./subscriptiongraceperiodupdaterequest/data-data.dictionary/attributes-data.dictionary.md).
 
-##### Promote your auto-renewable subscriptions
+### Promote your auto-renewable subscriptions
 
 You can promote an auto-renewable subscription to users who visit your app listing in the App Store. Use `POST /v1/promotedPurchases` ([`Promote a purchase`](./post-v1-promotedpurchases.md)) with a payload that includes your Apple ID and the ID for your auto-renewable subscription. The response confirms the state is `"Waiting for Review"`. You can also look up the state of a specific promoted purchase by using `GET /v1/promotedPurchases` ([`Read promoted purchase information for an In-App Purchase`](./get-v2-inapppurchases-_id_-promotedpurchase.md)), or look up the status of all your promoted purchases for an app by using `GET /v1/apps/{id}/promotedPurchases` ([`List all promoted purchases for an app`](./get-v1-apps-_id_-promotedpurchases.md)).
 

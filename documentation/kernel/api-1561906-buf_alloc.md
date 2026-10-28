@@ -15,11 +15,11 @@ Allocate an uninitialized buffer.
 buf_t buf_alloc(vnode_t vp);
 ```
 
-#### Return Value
+## Return Value
 
 New buffer.
 
-#### Discussion
+## Discussion
 
 A buffer returned by buf_alloc() is marked as busy and as an iobuf; it has no storage set up and must be set up using buf_setdataptr() or buf_setupl()/buf_map().
 

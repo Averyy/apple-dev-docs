@@ -15,7 +15,7 @@ The amount of north-to-south distance (in degrees) to display for the map region
 latitudeDelta: number;
 ```
 
-#### Discussion
+## Discussion
 
 Unlike longitudinal distances, which vary based on the latitude, one degree of latitude is always approximately 111 kilometers (69 miles).
 

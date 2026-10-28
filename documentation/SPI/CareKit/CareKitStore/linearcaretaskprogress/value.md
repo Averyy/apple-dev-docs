@@ -17,7 +17,7 @@ The progress that’s been made towards reaching the goal.
 var value: Double { get set }
 ```
 
-#### Discussion
+## Discussion
 
 > **Precondition**: `value` >= 0
 

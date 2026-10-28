@@ -24,7 +24,7 @@ var annotations: [PDFAnnotation] { get }
 @property (nonatomic, readonly) NSArray<PDFAnnotation *> * annotations;
 ```
 
-#### Discussion
+## Discussion
 
 The elements of the array will most likely be typed to subclasses of the [`PDFAnnotation`](../pdfannotation.md) class.
 

@@ -22,11 +22,11 @@ Returns a `Decoder` instance for decoding `super` from the container associated 
 func superDecoder(forKey key: Self.Key) throws -> any Decoder
 ```
 
-#### Return Value
+## Return Value
 
 A new `Decoder` to pass to `super.init(from:)`.
 
-#### Discussion
+## Discussion
 
 > **Throws**: `DecodingError.keyNotFound` if `self` does not have an entry for the given key.
 

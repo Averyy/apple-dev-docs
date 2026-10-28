@@ -24,7 +24,7 @@ func finish(with error: any Error)
 - (void) finishWithError:(NSError *) error;
 ```
 
-#### Discussion
+## Discussion
 
 A custom compositor calls this method to indicate that the attempt to compose a frame failed.
 

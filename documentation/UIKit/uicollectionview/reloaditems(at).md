@@ -23,7 +23,7 @@ func reloadItems(at indexPaths: [IndexPath])
 - (void) reloadItemsAtIndexPaths:(NSArray<NSIndexPath *> *) indexPaths;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method to selectively reload only the specified items. This causes the collection view to discard any cells associated with those items and redisplay them.
 

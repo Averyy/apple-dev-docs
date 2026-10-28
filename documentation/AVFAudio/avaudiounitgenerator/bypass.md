@@ -24,7 +24,7 @@ var bypass: Bool { get set }
 @property (nonatomic) BOOL bypass;
 ```
 
-#### Discussion
+## Discussion
 
 If [`true`](../../Swift/true.md), the audio unit bypasses audio processing.
 

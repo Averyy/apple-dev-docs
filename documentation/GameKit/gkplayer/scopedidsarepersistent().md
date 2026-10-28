@@ -28,11 +28,11 @@ func scopedIDsArePersistent() -> Bool
 
 - [Protecting the player’s privacy using scoped identifiers](../protecting-the-player-s-privacy-using-scoped-identifiers.md)
 
-#### Return Value
+## Return Value
 
 Returns [`true`](../../Swift/true.md) if the [`gamePlayerID`](./gameplayerid.md) and [`teamPlayerID`](./teamplayerid.md) properties are the same across all instances of this game; otherwise, [`false`](../../Swift/false.md) if the identifiers are unique to this game instance only.
 
-#### Discussion
+## Discussion
 
 An instance is the time between when the game launches and when the game terminates.
 

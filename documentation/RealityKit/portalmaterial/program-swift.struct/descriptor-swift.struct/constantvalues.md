@@ -20,7 +20,7 @@ Values for the function-constant inputs that the shader graph declares.
 var constantValues: MTLFunctionConstantValues
 ```
 
-#### Discussion
+## Discussion
 
 Function constants are baked into the compiled shader at program creation time and can’t be changed afterward. Use them for values that don’t vary at runtime — for example, a feature flag that selects between two code paths — to eliminate runtime branching and produce a leaner shader. To vary a value across frames or instances, declare it as a regular graph input and supply it through [`inputValues`](./inputvalues.md) or [`setParameter(name:value:)`](../../setparameter%28name,value%29.md) instead.
 

@@ -20,7 +20,7 @@ typealias UCKeyOutput = UInt16
 typedef UInt16 UCKeyOutput;
 ```
 
-#### Discussion
+## Discussion
 
 The Unicode keyboard-layout ( `'uchr'`) resource contains the data necessary to map virtual key codes to Unicode character codes for a given keyboard layout. The `'uchr'` format consists of a header information section and five key mapping data sections. The `UCKeyOutput` type is a 16-bit value used in the second key mapping section of a `'uchr'` resource to specify values in key-code-to-character tables.
 

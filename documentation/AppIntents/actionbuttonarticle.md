@@ -5,7 +5,7 @@
 
 Use App Intents to register actions for your app.
 
-#### Overview
+## Overview
 
 On Apple Watch Ultra, people can specify the action that the system performs when they press the Action button. By default, the watch provides actions for starting workouts, starting dives, starting a backtrack navigation session, setting a waypoint, turning on the flashlight, and running a shortcut from the Shortcuts app. To add your dive or workout app to the list of apps that appear when someone chooses Settings > Action Button, use App Intents to register actions for your app.
 
@@ -23,7 +23,7 @@ For dive apps, you can implement the following protocols:
 
 > ❗ **Important**: When creating intents for the Action button, don’t implement them in an [`AppIntentsExtension`](./appintentsextension.md). Always implement the intents directly in your watchOS app.
 
-##### Start a new workout session
+### Start a new workout session
 
 Start by creating either an [`AppEnum`](./appenum.md) or an [`AppEntity`](./appentity.md) that defines the types of workouts that your app supports. If your app supports only a single workout, you can create an enumeration with a single case. Also define the display representation for each type of workout that your app supports. Apple Watch Ultra shows the case description’s title and subtitle below the First Press settings when someone sets your app as the workout app in Settings > Action Button.
 
@@ -213,7 +213,7 @@ The device starts a new workout session when you press the Action button.
 
 > ❗ **Important**: The system always launches your app before running the [`perform()`](./appintent/perform%28%29.md) method for your [`StartWorkoutIntent`](./startworkoutintent.md) or [`StartDiveIntent`](./startdiveintent.md) structures.  By default, these intents set their [`openAppWhenRun`](./appintent/openappwhenrun.md) property to `true`. To ensure these intents run as expected, don’t change the property’s value.
 
-##### Support multiple workout types
+### Support multiple workout types
 
 Your app can provide a list of suggested workout types, letting people associate a particular workout type with the Action button.
 
@@ -329,7 +329,7 @@ Build and run your app again. When you open the Action button settings, you can 
 
 And pressing the Action button launches the selected type of workout.
 
-##### Donate the next action
+### Donate the next action
 
 Apple Watch Ultra runs the next action when someone presses the Action button while a workout or dive session is already running. This means the first time someone presses the Action button, the system starts your session. If they press the Action button any other time during the session, it performs the next action.
 
@@ -362,7 +362,7 @@ try await MyStartWorkoutIntent().donate(result: .result(actionButtonIntent: MyMa
 
 You can donate as many action intents as you need; however, your app can use only the most recently donated intent as the next action. Donating a new intent changes the next action.
 
-##### Pause and resume a workout
+### Pause and resume a workout
 
 Apple Watch Ultra supports pausing and resuming a current workout session by simultaneously pressing both the Action button and the side button.
 
@@ -398,7 +398,7 @@ struct MyResumeWorkoutIntent: ResumeWorkoutIntent {
 
 If your app doesn’t implement structures that adopt these protocols, the system ignores simultaneous presses.
 
-##### Start a new dive session
+### Start a new dive session
 
 Dive sessions work similarly to workout sessions. To start a dive session, implement a structure that adopts the [`StartDiveIntent`](./startdiveintent.md) protocol. Typically, people start the dive session just before entering the water. Your app can then donate App Intents that help them use your app while in the water. For example, while in the water they can’t use the touch screen, but the Action button and Digital Crown function normally.
 
@@ -424,7 +424,7 @@ To read live depth, water pressure, and water temperature data, see [Accessing s
 
 Unlike workout sessions, the start dive intent supports only a single type of session. You can donate next actions for your dive session; however, you can’t create intents to pause or resume the session.
 
-##### Passing data to the intents
+### Passing data to the intents
 
 The previous examples use singleton objects to share data between the different parts of your app; however, App Intents support dependency injection, letting you define the data in your main app, and access it in your intents.
 
@@ -450,7 +450,7 @@ One of the main advantages of dependency injection is that you can easily replac
 
 > **Note**: You can only use dependency injection to pass data objects from your main app to its intents. If you need to pass the data to other parts of your app, you need to use a different approach.
 
-##### Debug intents
+### Debug intents
 
 To see console output and respond to breakpoints in Xcode, use the following steps to debug your intents:
 

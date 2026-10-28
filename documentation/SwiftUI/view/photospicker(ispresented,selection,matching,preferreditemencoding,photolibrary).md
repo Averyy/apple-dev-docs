@@ -19,7 +19,7 @@ nonisolated
 func photosPicker(isPresented: Binding<Bool>, selection: Binding<PhotosPickerItem?>, matching filter: PHPickerFilter? = nil, preferredItemEncoding: PhotosPickerItem.EncodingDisambiguationPolicy = .automatic, photoLibrary: PHPhotoLibrary) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 The user explicitly grants access only to items they choose, so photo library access authorization is not needed.
 

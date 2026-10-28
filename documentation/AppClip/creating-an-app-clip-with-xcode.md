@@ -5,11 +5,11 @@
 
 Add an App Clip target to your Xcode project and share code between the App Clip and its corresponding full app.
 
-#### Overview
+## Overview
 
 An *App Clip* is a lightweight version of your app that offers some of its functionality when and where people need it or that people use to try out your full app. With Xcode, you can add an App Clip target to your app’s project, share code and assets between the App Clip and the full app, and build, run, and debug your App Clip.
 
-##### Add an App Clip target
+### Add an App Clip target
 
 App Clips require a corresponding full app that offers at least the same functionality as the App Clip; you use the same Xcode project for your full app and your App Clip. If you’re starting a new app project, first create a new iOS project with Xcode. If you want to add an App Clip to your existing iOS app, open its Xcode project. Then, add an App Clip target to the Xcode project:
 
@@ -33,7 +33,7 @@ Before you add code to the App Clip target, run the App Clip in Simulator or on 
 
 > **Note**:  When you archive the app that comes with an App Clip, Xcode adds the [`com.apple.developer.associated-appclip-app-identifiers`](../BundleResources/entitlements/com.apple.developer.associated-appclip-app-identifiers.md) entitlement to your app. Together with the [`Parent Application Identifiers Entitlement`](../BundleResources/entitlements/com.apple.developer.parent-application-identifiers.md), it associates your App Clip with your app.
 
-##### Add code and assets
+### Add code and assets
 
 App Clips make use of the same frameworks as full apps, and adding code or assets to an App Clip target works just like it does for any other target. Create new source files and assets, or use existing source files and assets, and add them as members to the App Clip target. To ensure the project’s maintainability, both the full app and the App Clip should share as much code as possible:
 
@@ -41,7 +41,7 @@ App Clips make use of the same frameworks as full apps, and adding code or asset
 - If you add an App Clip to an existing app, set aside time to refactor the app’s code base to be modular and share code between the App Clip and the full app to avoid duplicating code.
 - Add shared assets to a new asset catalog, and use the catalog in both the full app and the App Clip. For more information about asset catalogs, see [Managing assets with asset catalogs](../Xcode/managing-assets-with-asset-catalogs.md).
 
-##### Verify the size of your App Clip
+### Verify the size of your App Clip
 
 Your App Clips must be small to launch instantly. Aim to keep your App Clip well below the applicable limits outlined in [Choosing the right functionality for your App Clip](./choosing-the-right-functionality-for-your-app-clip.md).
 
@@ -54,7 +54,7 @@ The output folder for your exported App Clip contains its size report, a file na
 
 For more information on measuring your app’s size, see [Reducing your app’s size](../Xcode/reducing-your-app-s-size.md).
 
-##### Download additional assets
+### Download additional assets
 
 App Clips can use [Background Assets](../BackgroundAssets/BackgroundAssets.md) to download additional content. If your App Clip offers an in-the-moment experience, ensure instant availability by keeping the App Clip as small as possible and avoiding usage of Background Assets.
 
@@ -62,7 +62,7 @@ If you create an App Clip to offer a demo version of your app or your game, and 
 
 To download additional assets in the background, make sure you configure Background Assets for your app and App Clip targets. Note that your App Clip can’t set a background asset download’s priority to essential with [`isEssential`](../BackgroundAssets/badownload/isessential.md).
 
-##### Use active compilation conditions
+### Use active compilation conditions
 
 Adding an App Clip to your app is a good opportunity to refactor your app’s code to be modular and reusable. Most functionality and frameworks available to your full app are available to your App Clip. However, you may encounter cases where you can’t use some of your app’s code in the App Clip, and creating separate modules for your app and App Clip code isn’t feasible. In these cases, take advantage of the Active Compilation Conditions build setting, where you can declare a condition to exclude code.
 
@@ -80,7 +80,7 @@ The following code checks for the `APPCLIP` value you added to the Active Compil
 #endif
 ```
 
-##### Review next steps
+### Review next steps
 
 Adding an App Clip target to your app’s Xcode project and modifying the project are only the first steps in offering an App Clip. Next, plan to spend time designing the launch experience of your App Clip by:
 

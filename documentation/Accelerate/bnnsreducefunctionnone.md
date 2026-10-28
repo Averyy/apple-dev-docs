@@ -25,7 +25,7 @@ var BNNSReduceFunctionNone: BNNSReduceFunction { get }
 BNNSReduceFunctionNone
 ```
 
-#### Discussion
+## Discussion
 
 BNNS provides this reduction function for use with some functions — such as [`BNNSScatter(_:_:_:_:_:_:)`](./bnnsscatter%28_,_,_,_,_,_%29.md) — to indicate that the operation copies the input to the output. [`BNNSReduceFunctionNone`](./bnnsreducefunctionnone.md) isn’t supported by the BNNS reduction layer, use [`BNNSCopy(_:_:_:)`](./bnnscopy%28_,_,_%29.md) to perform a copy or conversion operation.
 

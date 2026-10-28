@@ -15,11 +15,11 @@ Creates a configuration object for a new Apple sparse image format (ASIF) disk i
 static func layer(url: URL, type: DiskImage.LayerType) -> ASIFLayerCreationConfiguration
 ```
 
-#### Return Value
+## Return Value
 
 An [`ASIFLayerCreationConfiguration`](../asiflayercreationconfiguration.md) that you can use` for stacking operations.
 
-#### Discussion
+## Discussion
 
 Use this factory method to create a configuration that can be used with [`appending(_:)`](../diskimage/appending%28_%29-3pfqg.md). Use the configuration this method returns only for appending to stacked images, not for standalone image creation.
 

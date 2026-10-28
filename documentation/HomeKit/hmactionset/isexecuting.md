@@ -24,7 +24,7 @@ var isExecuting: Bool { get }
 @property (nonatomic, readonly, getter=isExecuting) BOOL executing;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) while executing, otherwise [`false`](../../Swift/false.md).
 

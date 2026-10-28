@@ -23,11 +23,11 @@ func sec_trust_create(_ trust: SecTrust) -> sec_trust_t?
 sec_trust_tsec_trust_create(SecTrustRef trust);
 ```
 
-#### Return Value
+## Return Value
 
 A `sec_trust_t` instance.
 
-#### Discussion
+## Discussion
 
 Create an ARC-able `sec_trust_t` instance from a `SecTrustRef`.
 

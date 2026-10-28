@@ -23,7 +23,7 @@ static let localNotification: UIApplication.LaunchOptionsKey
 extern UIApplicationLaunchOptionsKey const UIApplicationLaunchOptionsLocalNotificationKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key is the [`UILocalNotification`](../../uilocalnotification.md) object that was triggered. For additional information about handling local notifications, see the [`application(_:didReceive:)`](../../uiapplicationdelegate/application%28_,didreceive%29.md) method.
 

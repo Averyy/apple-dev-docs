@@ -5,7 +5,7 @@
 
 Define views and assemble them into a view hierarchy.
 
-#### Overview
+## Overview
 
 SwiftUI offers a declarative approach to user interface design. With a traditional imperative approach, the burden is on your controller code not only to instantiate, lay out, and configure views, but also to continually make updates as conditions change. In contrast, with a declarative approach, you create a lightweight description of your user interface by declaring views in a hierarchy that mirrors the desired layout of your interface. SwiftUI then manages drawing and updating these views in response to events like user input or state changes.
 
@@ -13,7 +13,7 @@ SwiftUI offers a declarative approach to user interface design. With a tradition
 
 SwiftUI provides tools for defining and configuring the views in your user interface. You compose custom views out of built-in views that SwiftUI provides, plus other composite views that you’ve already defined. You configure these views with view modifiers and connect them to your data model. You then place your custom views within your app’s view hierarchy.
 
-##### Conform to the view protocol
+### Conform to the view protocol
 
 Declare a custom view type by defining a structure that conforms to the [`View`](./view.md) protocol:
 
@@ -24,7 +24,7 @@ struct MyView: View {
 
 Like other [Swift protocols](https://docs.swift.org/swift-book/LanguageGuide/Protocols.html), the [`View`](./view.md) protocol provides a blueprint for functionality — in this case, the behavior of an element that SwiftUI draws onscreen. Conformance to the protocol comes with both requirements that a view must fulfill, and functionality that the protocol provides. After you fulfill the requirements, you can insert your custom view into a view hierarchy so that it becomes part of your app’s user interface.
 
-##### Declare a body
+### Declare a body
 
 The [`View`](./view.md) protocol’s main requirement is that conforming types must define a [`body`](./view/body-8kl5o.md) [computed property](https://docs.swift.org/swift-book/LanguageGuide/Properties.html#ID259):
 
@@ -39,7 +39,7 @@ SwiftUI reads the value of this property any time it needs to update the view, w
 
 The [`View`](./view.md) protocol’s secondary requirement is that conforming types must indicate an [associated type](https://docs.swift.org/swift-book/LanguageGuide/Generics.html#ID189) for the body property. However, you don’t make an explicit declaration. Instead, you declare the body property as an [opaque type](https://docs.swift.org/swift-book/LanguageGuide/OpaqueTypes.html), using the `some View` syntax, to indicate only that the body’s type conforms to [`View`](./view.md). The exact type depends on the body’s content, which varies as you edit the body during development. Swift infers the exact type automatically.
 
-##### Assemble the view’s content
+### Assemble the view’s content
 
 Describe your view’s appearance by adding content to the view’s body property. You can compose the body from built-in views that SwiftUI provides, as well as custom views that you’ve defined elsewhere. For example, you can create a body that draws the string “Hello, World!” using a built-in [`Text`](./text.md) view:
 
@@ -72,7 +72,7 @@ Views that take multiple input child views, like the stack in the example above,
 
 For examples of views that contain other views, see [Layout fundamentals](./layout-fundamentals.md).
 
-##### Configure views with modifiers
+### Configure views with modifiers
 
 To configure the views in your view’s body, you apply view modifiers. A modifier is nothing more than a method called on a particular view. The method returns a new, altered view that effectively takes the place of the original in the view hierarchy.
 
@@ -94,7 +94,7 @@ struct MyView: View {
 
 For more information about how view modifiers work, and how to use them on your views, see [Configuring views](./configuring-views.md).
 
-##### Manage data
+### Manage data
 
 To supply inputs to your views, add properties. For example, you can make the font of the “Hello, World!” string configurable:
 
@@ -118,7 +118,7 @@ Because the system may reinitialize a view at any time, it’s important to avoi
 
 SwiftUI provides many tools to help you manage your app’s data under these constraints, as described in [Model data](./model-data.md). For information about Swift initializers, see [Initialization](https://docs.swift.org/swift-book/LanguageGuide/Initialization.html) in *The Swift Programming Language*.
 
-##### Add your view to the view hierarchy
+### Add your view to the view hierarchy
 
 After you define a view, you can incorporate it in other views, just like you do with built-in views. You add your view by declaring it at the point in the hierarchy at which you want it to appear. For example, you could put `MyView` in your app’s `ContentView`, which Xcode creates automatically as the root view of a new app:
 

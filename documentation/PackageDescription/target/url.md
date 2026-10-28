@@ -15,7 +15,7 @@ The URL of a binary target.
 final var url: String?
 ```
 
-#### Discussion
+## Discussion
 
 The URL points to an archive file that contains the referenced binary artifact at its root.
 

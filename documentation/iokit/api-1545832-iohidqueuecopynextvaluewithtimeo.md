@@ -16,11 +16,11 @@ Dequeues a retained copy of an element value from the head of an IOHIDQueue. Thi
 IOHIDValueRef IOHIDQueueCopyNextValueWithTimeout(IOHIDQueueRef queue, CFTimeInterval timeout);
 ```
 
-#### Return Value
+## Return Value
 
 Returns valid IOHIDValueRef if data is available.
 
-#### Discussion
+## Discussion
 
 Because the value is a retained copy, it is up to the caller to release the value using CFRelease. Use with setValueCallback to avoid polling the queue for data.
 

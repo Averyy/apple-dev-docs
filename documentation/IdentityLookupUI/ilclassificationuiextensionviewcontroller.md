@@ -22,7 +22,7 @@ class ILClassificationUIExtensionViewController
 @interface ILClassificationUIExtensionViewController : UIViewController
 ```
 
-#### Overview
+## Overview
 
 Subclass this view controller to create a user interface that gathers additional information from the user about the reported communication.
 

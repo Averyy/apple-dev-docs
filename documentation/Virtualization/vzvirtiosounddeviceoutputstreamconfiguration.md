@@ -23,7 +23,7 @@ class VZVirtioSoundDeviceOutputStreamConfiguration
 
 - [Creating and Running a Linux Virtual Machine](./creating-and-running-a-linux-virtual-machine.md)
 
-#### Overview
+## Overview
 
 A PCM stream of output audio data, such as to a speaker.
 

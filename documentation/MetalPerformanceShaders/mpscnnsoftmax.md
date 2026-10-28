@@ -24,7 +24,7 @@ class MPSCNNSoftMax
 @interface MPSCNNSoftMax : MPSCNNKernel
 ```
 
-#### Overview
+## Overview
 
 The softmax filter is applied across feature channels in a convolutional manner at all spatial locations. The softmax filter can be seen as the combination of an activation function (exponential) and a normalization operator.
 

@@ -18,11 +18,11 @@ Initializes a view controller for an existing contact.
 convenience init(forContact contact: CNContact)
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized [`CNContactViewController`](../cncontactviewcontroller.md) object.
 
-#### Discussion
+## Discussion
 
 This view controller initializes the customized behavior and appearance of [`CNContactViewController`](../cncontactviewcontroller.md) for a contact.
 

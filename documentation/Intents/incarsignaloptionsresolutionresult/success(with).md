@@ -23,11 +23,11 @@ class func success(with resolvedCarSignalOptions: INCarSignalOptions = []) -> Se
 + (instancetype) successWithResolvedCarSignalOptions:(INCarSignalOptions) resolvedCarSignalOptions;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INCarSignalOptionsResolutionResult`](../incarsignaloptionsresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method to create a result object when you are able to resolve a parameter successfully.
 

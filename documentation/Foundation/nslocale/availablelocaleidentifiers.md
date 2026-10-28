@@ -25,7 +25,7 @@ class var availableLocaleIdentifiers: [String] { get }
 @property (class, copy, readonly) NSArray<NSString *> * availableLocaleIdentifiers;
 ```
 
-#### Discussion
+## Discussion
 
 A locale identifier starts with a language code, often includes a region code, and occasionally includes a script designator.  See [Locale IDs](https://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPInternational/LanguageandLocaleIDs/LanguageandLocaleIDs.html#//apple_ref/doc/uid/10000171i-CH15-SW9) for more information about the structure of a locale identifier.
 

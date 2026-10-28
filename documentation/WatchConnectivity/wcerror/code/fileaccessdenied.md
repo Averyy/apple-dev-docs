@@ -23,7 +23,7 @@ case fileAccessDenied
 WCErrorCodeFileAccessDenied
 ```
 
-#### Discussion
+## Discussion
 
 This error can occur when the file path is invalid or the app has insufficient privileges to access the file.
 

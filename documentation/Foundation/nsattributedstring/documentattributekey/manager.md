@@ -15,7 +15,7 @@ The name of the author’s manager.
 static let manager: NSAttributedString.DocumentAttributeKey
 ```
 
-#### Discussion
+## Discussion
 
 The value of this attribute is an [`NSString`](../../nsstring.md) object containing the name of the author’s manager.
 

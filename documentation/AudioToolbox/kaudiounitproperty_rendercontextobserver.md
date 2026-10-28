@@ -20,7 +20,7 @@ The block that the system calls when the rendering context changes.
 kAudioUnitProperty_RenderContextObserver
 ```
 
-#### Discussion
+## Discussion
 
 If your Audio Unit creates auxilliary realtime rendering threads, set the value of this key to the [`AURenderContextObserver`](./aurendercontextobserver.md) block you want the system to execute. The system executes your block when the rendering context changes.
 

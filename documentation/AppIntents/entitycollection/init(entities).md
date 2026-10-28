@@ -21,7 +21,7 @@ Creates a new entity identifier collection from entities.
 init(entities: [Entity])
 ```
 
-#### Discussion
+## Discussion
 
 This initializer adds the identifier for each entity to the collection and caches the entity instances for fast retrieval later.
 

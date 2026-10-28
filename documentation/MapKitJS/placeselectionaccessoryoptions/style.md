@@ -15,7 +15,7 @@ The visual presentation for the selection accessory.
 style?: PlaceSelectionAccessoryStyle;
 ```
 
-#### Discussion
+## Discussion
 
 See [`style`](../placeselectionaccessory/style.md) for the available selection accessory styles.
 

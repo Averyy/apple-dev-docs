@@ -21,7 +21,7 @@ class APActivationPayload
 @interface APActivationPayload : NSObject
 ```
 
-#### Overview
+## Overview
 
 When users launch an App Clip, the platform passes an activation payload to the App Clip as part of an [`NSUserActivity`](../Foundation/nsuseractivity.md) object. When the App Clip receives the payload, confirm the user’s physical location at the time of the invocation.
 

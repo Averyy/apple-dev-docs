@@ -19,7 +19,7 @@ var depthLimit: NSWindow.Depth { get set }
 @property NSWindowDepth depthLimit;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property can be examined with the Application Kit functions [`isPlanar`](./depth/isplanar.md), [`colorSpaceName`](./depth/colorspacename.md), [`bitsPerSample`](./depth/bitspersample.md), and [`bitsPerPixel`](./depth/bitsperpixel.md). In addition, the [`NSBestDepth`](../nsbestdepth.md) function provides the best depth limit based on a set of parameters.
 

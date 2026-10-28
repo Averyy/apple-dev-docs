@@ -22,7 +22,7 @@ var confirmPasswordFieldPasswordRules: String? { get }
 @property (nonatomic, readonly, nullable) NSString * confirmPasswordFieldPasswordRules;
 ```
 
-#### Discussion
+## Discussion
 
 This is only relevant in an HTML context.
 

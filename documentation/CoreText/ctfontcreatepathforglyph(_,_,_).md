@@ -25,11 +25,11 @@ func CTFontCreatePathForGlyph(_ font: CTFont, _ glyph: CGGlyph, _ matrix: Unsafe
 extern CGPathRefCTFontCreatePathForGlyph(CTFontRef font, CGGlyph glyph, const CGAffineTransform *matrix);
 ```
 
-#### Return Value
+## Return Value
 
 A CGPath object containing the glyph outlines, `NULL` on error. Must be released by caller.
 
-#### Discussion
+## Discussion
 
 Creates a path from the outlines of the glyph for the specified font. The path reflects the font point size, matrix, and transform parameter, applied in that order. The transform parameter is most commonly be used to provide a translation to the desired glyph origin.
 

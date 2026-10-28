@@ -19,7 +19,7 @@ var queueSize: UInt16 { get }
 @property (readonly) uint16_t queueSize;
 ```
 
-#### Discussion
+## Discussion
 
 The size of the queue indicates the maximum number of `VZVirtioQueueElement` that can be made available in the queue.
 

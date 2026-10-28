@@ -16,7 +16,7 @@ Gets the most recently received ack code for this transaction.
 UInt32 (*GetAckCode)(IOFireWireLibCommandRef self);
 ```
 
-#### Return Value
+## Return Value
 
 The FireWire ack code.
 

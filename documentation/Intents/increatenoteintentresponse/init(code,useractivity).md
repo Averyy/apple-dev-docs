@@ -25,11 +25,11 @@ init(code: INCreateNoteIntentResponseCode, userActivity: NSUserActivity?)
 - (instancetype) initWithCode:(INCreateNoteIntentResponseCode) code userActivity:(NSUserActivity *) userActivity;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized response object or `nil` if the object could not be created.
 
-#### Discussion
+## Discussion
 
 After initializing the response object, put the note details into the [`createdNote`](./creatednote.md) property of the object.
 

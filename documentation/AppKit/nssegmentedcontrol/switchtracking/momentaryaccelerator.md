@@ -19,7 +19,7 @@ case momentaryAccelerator
 NSSegmentSwitchTrackingMomentaryAccelerator
 ```
 
-#### Discussion
+## Discussion
 
 The control stops sending actions when the person releases pressure. A document-based app, for example, might implement a momentary accelerator segmented control in order to allow a person to adjust the speed of paging by using variable pressure. In this example, actions are sent to the app to indicate when pressure on the control has changed. The app then determines the amount of pressure currently applied, and adjusts navigation speed accordingly.
 

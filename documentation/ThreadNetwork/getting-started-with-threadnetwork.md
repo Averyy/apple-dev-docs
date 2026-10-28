@@ -5,7 +5,7 @@
 
 Create a plan to build, test, and deploy your Thread Border Router app.
 
-#### Overview
+## Overview
 
 Creating a Thread Border Router enabled app or device requires configuring your app’s Xcode project to enable testing the ThreadNetwork API capabilities. Perform these in a specific order to ensure your app meets requirements for submission to the App Store. The development process follows these basic steps:
 
@@ -14,7 +14,7 @@ Creating a Thread Border Router enabled app or device requires configuring your 
 3. Before submitting your app for approval and sale on the App Store, apply for a Thread Network distribution entitlement.
 4. Optionally, apply to use the *Works with Apple Home* badge to alert people to your app’s ability to work with Apple Home.
 
-#### Create and configure your Xcode project for development
+## Create and configure your Xcode project for development
 
 Create a new Xcode project for your app and apply the following settings to your new project:
 
@@ -22,7 +22,7 @@ Create a new Xcode project for your app and apply the following settings to your
 2. In your app, add `import ThreadNetwork` to import the Thread framework support.
 3. Add Thread Border Router configuration and management capabilities to your app; for information on router configuration, see [Configuring a Border Router](./configuring-a-border-router.md). For information on managing credentials, see [`com.apple.developer.networking.manage-thread-network-credentials`](../BundleResources/entitlements/com.apple.developer.networking.manage-thread-network-credentials.md).
 
-#### Perform required conformance testing
+## Perform required conformance testing
 
 Ensure your app is ready for submission by completing these tests:
 
@@ -33,7 +33,7 @@ Ensure your app is ready for submission by completing these tests:
 
 If you have questions about implementation issues or questions about API and tools, please submit a [support request](https://developer.apple.com/support/technical/).
 
-#### Prepare your app for approval and distribution
+## Prepare your app for approval and distribution
 
 After you receive confirmation of the approval of your app’s conformance test results, you can apply for  a distribution entitlement for your app. Request a distribution entitlement from the [ThreadNetwork Framework Entitlement Request](https://developer.apple.com/contact/request/threadnetwork) page.
 
@@ -47,7 +47,7 @@ Mailstop 928-3WTE
 Cupertino, CA, 95014 
 United States
 
-#### Apply for the Works with Apple Home badge
+## Apply for the Works with Apple Home badge
 
 Optionally, you can also request the *Works with Apple Home* badge for your Thread Border Router. This badge assures customers that your product works well with Apple Home.
 

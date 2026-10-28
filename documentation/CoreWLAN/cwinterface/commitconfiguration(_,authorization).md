@@ -19,7 +19,7 @@ func commitConfiguration(_ configuration: CWConfiguration, authorization: SFAuth
 - (BOOL) commitConfiguration:(CWConfiguration *) configuration authorization:(SFAuthorization *) authorization error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 This method requires the caller have root privileges or obtain administrator privileges with the *authorization* parameter.
 

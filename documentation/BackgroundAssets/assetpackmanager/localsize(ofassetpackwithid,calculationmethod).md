@@ -20,11 +20,11 @@ Calculates a locally available asset pack’s installation size.
 func localSize(ofAssetPackWithID assetPackID: String, calculationMethod: SizeCalculationMethod) async throws -> Int64
 ```
 
-#### Return Value
+## Return Value
 
 The asset pack’s installation size in bytes.
 
-#### Discussion
+## Discussion
 
 This is different than the download size, which could be smaller. Calculating the size of an asset pack that contains many files can take a long time.
 

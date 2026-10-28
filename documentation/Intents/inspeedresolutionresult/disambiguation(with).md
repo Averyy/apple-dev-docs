@@ -24,11 +24,11 @@ class func disambiguation(with speedToDisambiguate: [Measurement<UnitSpeed>]) ->
 + (instancetype) disambiguationWithSpeedToDisambiguate:(NSArray<NSMeasurement<NSUnitSpeed *> *> *) speedToDisambiguate;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INSpeedResolutionResult`](../inspeedresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method to create a result object when there’s more one value that might match the given parameter. Siri prompts the user to select from among the objects you provide.
 

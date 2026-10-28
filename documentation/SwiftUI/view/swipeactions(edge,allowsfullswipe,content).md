@@ -21,7 +21,7 @@ nonisolated
 func swipeActions<T>(edge: HorizontalEdge = .trailing, allowsFullSwipe: Bool = true, @ContentBuilder content: () -> T) -> some View where T : View
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to add swipe actions to a view that acts as a row in a list. Indicate the [`HorizontalEdge`](../horizontaledge.md) where the swipe action originates, and define individual actions with [`Button`](../button.md) instances. For example, if you have a list of messages, you can add an action to toggle a message as unread on a swipe from the leading edge, and actions to delete or flag messages on a trailing edge swipe:
 

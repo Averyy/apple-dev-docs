@@ -25,11 +25,11 @@ func cookies(for URL: URL) -> [HTTPCookie]?
 - (NSArray<NSHTTPCookie *> *) cookiesForURL:(NSURL *) URL;
 ```
 
-#### Return Value
+## Return Value
 
 An array of cookies whose URL matches the provided URL.
 
-#### Discussion
+## Discussion
 
 You can use the [`requestHeaderFields(with:)`](../httpcookie/requestheaderfields%28with%29.md) method of [`HTTPCookie`](../httpcookie.md) to turn the array returned by this method into a set of header fields to add to a [`URLRequest`](../urlrequest.md) object (or [`NSMutableURLRequest`](../nsmutableurlrequest.md) in Objective-C).
 

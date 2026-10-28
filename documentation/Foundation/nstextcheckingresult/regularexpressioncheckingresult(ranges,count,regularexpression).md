@@ -25,7 +25,7 @@ class func regularExpressionCheckingResult(ranges: NSRangePointer, count: Int, r
 + (NSTextCheckingResult *) regularExpressionCheckingResultWithRanges:(NSRangePointer) ranges count:(NSUInteger) count regularExpression:(NSRegularExpression *) regularExpression;
 ```
 
-#### Return Value
+## Return Value
 
 Returns an `NSTextCheckingResult` with the specified [`range`](./range.md) and a [`resultType`](./resulttype.md) of [`regularExpression`](./checkingtype/regularexpression.md).
 

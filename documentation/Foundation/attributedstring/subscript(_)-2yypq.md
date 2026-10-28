@@ -21,7 +21,7 @@ Obtain the discontiguous substring of a selection.
 subscript(selection: AttributedTextSelection) -> DiscontiguousAttributedSubstring { get }
 ```
 
-#### Overview
+## Overview
 
 In the case of an insertion point, this substring is empty. Otherwise, the substring contains all selected characters.
 

@@ -21,11 +21,11 @@ Creates an empty dictionary.
 + (instancetype) dictionary;
 ```
 
-#### Return Value
+## Return Value
 
 A new empty dictionary.
 
-#### Discussion
+## Discussion
 
 This method is declared primarily for use with mutable subclasses of [`NSDictionary`](../nsdictionary.md).
 

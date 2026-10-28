@@ -18,7 +18,7 @@ A binding to the parameters you use to fetch data from a CareKit store.
 var projectedValue: Binding<Configuration> { get }
 ```
 
-#### Discussion
+## Discussion
 
 Modifying the parameters executes a new fetch request.
 

@@ -16,7 +16,7 @@ var name: String? { get set }
 @property (copy, nullable) NSString * name;
 ```
 
-#### Discussion
+## Discussion
 
 Set an attachment’s [`name`](./name.md) property to a custom string to provide a descriptive name for the attachment within Xcode’s test reports.
 

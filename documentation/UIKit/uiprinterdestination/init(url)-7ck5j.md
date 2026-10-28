@@ -22,7 +22,7 @@ init(url: URL)
 - (instancetype) initWithURL:(NSURL *) url;
 ```
 
-#### Return Value
+## Return Value
 
 An object representing the printer.
 

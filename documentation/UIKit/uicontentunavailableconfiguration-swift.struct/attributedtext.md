@@ -19,7 +19,7 @@ An attributed variant of the primary text.
 var attributedText: NSAttributedString? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Setting this property supersedes [`text`](./text.md) and some properties of [`textProperties`](./textproperties-swift.property.md).
 

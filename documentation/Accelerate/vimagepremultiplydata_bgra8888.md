@@ -21,11 +21,11 @@ Transforms an 8-bit-per-channel, 4-channel BGRA buffer from nonpremultiplied alp
 #define vImagePremultiplyData_BGRA8888(_src, _dest, _flags)
 ```
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
-#### Discussion
+## Discussion
 
 This function multiplies color channels by the alpha channel using the following code:
 

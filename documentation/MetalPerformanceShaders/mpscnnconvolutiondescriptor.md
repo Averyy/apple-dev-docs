@@ -24,7 +24,7 @@ class MPSCNNConvolutionDescriptor
 @interface MPSCNNConvolutionDescriptor : NSObject
 ```
 
-#### Overview
+## Overview
 
 You use an [`MPSCNNConvolutionDescriptor`](./mpscnnconvolutiondescriptor.md) object to describe the properties of an [`MPSCNNConvolution`](./mpscnnconvolution.md) kernel such as its size, pixel format and CPU cache mode.
 

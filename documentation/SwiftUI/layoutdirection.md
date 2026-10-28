@@ -21,7 +21,7 @@ A direction in which SwiftUI can lay out content.
 enum LayoutDirection
 ```
 
-#### Overview
+## Overview
 
 SwiftUI supports both left-to-right and right-to-left directions for laying out content to support different languages and locales. The system sets the value based on the user’s locale, but you can also use the [`environment(_:_:)`](./view/environment%28_,_%29.md) modifier to override the direction for a view and its child views:
 

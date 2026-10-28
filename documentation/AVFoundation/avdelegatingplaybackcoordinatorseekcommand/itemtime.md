@@ -24,7 +24,7 @@ var itemTime: CMTime { get }
 @property (nonatomic, readonly) CMTime itemTime;
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  Don’t automatically resume playback after seeking to this time. The coordinator issues a new play command when all participants are ready to resume.
 

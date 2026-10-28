@@ -22,7 +22,7 @@ var allowsAccessibilityReader: Bool { get set }
 @property (nonatomic, assign) BOOL allowsAccessibilityReader;
 ```
 
-#### Discussion
+## Discussion
 
 Users can enable the Accessibility Reader in the Settings app (Accessibility > Read & Speak > Accessibility Reader) to have text content formatted or read aloud. An assessment session disables the Accessibility Reader by default, but you can allow it by setting [`allowsAccessibilityReader`](./allowsaccessibilityreader.md) to `true` in the [`AEAssessmentConfiguration`](../aeassessmentconfiguration.md) instance that you use to initialize a session.
 

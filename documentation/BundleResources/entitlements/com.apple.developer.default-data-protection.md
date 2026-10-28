@@ -25,7 +25,7 @@ The level of data protection for sensitive user data when an app accesses it on 
 - `NSFileProtectionCompleteUntilFirstUserAuthentication`
 - `NSFileProtectionNone`
 
-#### Discussion
+## Discussion
 
 To add this entitlement to your app, enable the Data Protection capability in Xcode.
 

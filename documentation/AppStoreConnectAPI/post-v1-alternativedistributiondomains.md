@@ -15,9 +15,9 @@ Add an alternative distribution domain to your account.
 - [Configuring apps for web distribution](./configuring-apps-for-web-distribution.md)
 - [Creating and configuring keys for web distribution](./creating-and-configuring-keys-for-web-distribution.md)
 
-#### Discussion
+## Discussion
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

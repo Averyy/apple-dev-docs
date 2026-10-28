@@ -5,7 +5,7 @@
 
 Communicate between your Safari app extension and injected scripts.
 
-#### Overview
+## Overview
 
 The injected script and your Safari app extension live in different sandboxed worlds, each with specific limits on what it can access. You can’t call directly from the native code in your app extension to the injected script running in the browser. However, some sort of communication between the two is almost always desirable. For example, you may have a toolbar or contextual menu item that you want to use to affect web content.
 
@@ -24,7 +24,7 @@ This table describes your app extension’s key properties:
 | `extension` | A proxy for the app extension. Use it to retrieve information about your app extension and to pass messages to it. |
 | `self` | A proxy for your injected script. Use it to install event listeners to respond to messages from your app extension. |
 
-##### Send messages to the app extension
+### Send messages to the app extension
 
 Call `safari.extension.dispatchMessage.`
 
@@ -90,7 +90,7 @@ In Safari 17 and later, check whether the user is browsing with a profile if you
 
 Then, get the profile identifier from the `context.inputItems` dictionary using [`SFExtensionProfileKey`](./sfextensionprofilekey.md) as the key. Use the profile identifier for any profile-specific logic.
 
-##### Send messages to the injected script
+### Send messages to the injected script
 
 When the app extension needs to send a message to an injected script, it calls the [`dispatchMessageToScript(withName:userInfo:)`](./sfsafaripage/dispatchmessagetoscript%28withname,userinfo%29.md) method on the target page.
 

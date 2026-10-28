@@ -25,11 +25,11 @@ class func customField(evaluationBlock block: @escaping SCNFieldForceEvaluator) 
 + (SCNPhysicsField *) customFieldWithEvaluationBlock:(SCNFieldForceEvaluator) block;
 ```
 
-#### Return Value
+## Return Value
 
 A physics field object. To use the field in a scene, attach it to the [`physicsField`](../scnnode/physicsfield.md) property of an [`SCNNode`](../scnnode.md) object.
 
-#### Discussion
+## Discussion
 
 For custom physics fields, SceneKit ignores the [`direction`](./direction.md), [`strength`](./strength.md), [`falloffExponent`](./falloffexponent.md), and [`minimumDistance`](./minimumdistance.md) properties. Instead, SceneKit calls your block to determine the direction and magnitude of force to apply to each physics body or particle in the field’s area of effect.
 

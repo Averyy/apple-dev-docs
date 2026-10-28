@@ -18,7 +18,7 @@ The type of device.
 let type: MediaDevice.DeviceType
 ```
 
-#### Discussion
+## Discussion
 
 The system uses the device type to display an appropriate icon in the interface.
 

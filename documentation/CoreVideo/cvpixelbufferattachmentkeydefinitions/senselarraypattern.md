@@ -21,7 +21,7 @@ Bayer pattern indicating sensel arrangement.
 static let senselArrayPattern: CVAttachmentKeyDefinition<CVPixelBufferAttachmentKeyDefinitions.ShouldNotPropagate, CVSenselArrayPattern>
 ```
 
-#### Discussion
+## Discussion
 
 This attachment applies only to buffers with VersatileBayer formats.
 

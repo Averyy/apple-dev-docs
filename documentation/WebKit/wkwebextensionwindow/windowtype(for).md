@@ -23,7 +23,7 @@ optional func windowType(for context: WKWebExtensionContext) -> WKWebExtension.W
 - (WKWebExtensionWindowType) windowTypeForWebExtensionContext:(WKWebExtensionContext *) context;
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to[`WKWebExtension.WindowType.normal`](../wkwebextension/windowtype/normal.md) if not implemented.
 

@@ -24,11 +24,11 @@ func isEqual(to value: Any!) -> Bool
 - (BOOL) isEqualToObject:(id) value;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the values are strictly equal; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 This method is analogous to the identity or strict equality operator `===` in JavaScript.
 

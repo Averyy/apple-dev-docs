@@ -24,7 +24,7 @@ class VTPixelTransferSession
 typedef struct OpaqueVTPixelTransferSession * VTPixelTransferSessionRef;
 ```
 
-#### Overview
+## Overview
 
 A pixel transfer session supports the copying and/or conversion of images from source `CVPixelBuffers` to destination `CVPixelBuffers`. The session is a reference-counted Core Foundation (CF) object.
 

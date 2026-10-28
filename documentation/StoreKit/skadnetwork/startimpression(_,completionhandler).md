@@ -31,7 +31,7 @@ class func startImpression(_ impression: SKAdImpression) async throws
 - [Signing and providing ads](../signing-and-providing-ads.md)
 - [SKAdNetwork 2.2 release notes](../skadnetwork-2-2-release-notes.md)
 
-#### Discussion
+## Discussion
 
 Call this method when you start presenting the view-through ad to the user. If you call [`startImpression(_:completionHandler:)`](./startimpression%28_,completionhandler%29.md) more than once for the same advertised app before calling [`endImpression(_:completionHandler:)`](./endimpression%28_,completionhandler%29.md), the latest impression overwrites the earlier impression.
 

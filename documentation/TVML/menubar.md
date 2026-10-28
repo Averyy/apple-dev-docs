@@ -4,7 +4,7 @@
 
 Displays menu items along the top of the screen.
 
-#### Overview
+## Overview
 
 Users can navigate left and right to move between `menuBar` elements. Here’s an example of a menu bar with two items inside of a `menuBarTemplate` element.
 
@@ -49,12 +49,12 @@ To add the equivalent of a [`trailingAccessoryView`](../UIKit/uitabbar/trailinga
 </menuBarTemplate>
 ```
 
-##### Subelements of menuBar
+### Subelements of menuBar
 
 - [menuItem](./menuitem.md)
 - [section](./section.md)
 
-##### Elements that Use menuBar
+### Elements that Use menuBar
 
 - [mainTemplate](./maintemplate.md)
 - [menuBarTemplate](./menubartemplate.md)

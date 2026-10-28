@@ -25,7 +25,7 @@ var numberOfRanges: Int { get }
 @property (readonly) NSUInteger numberOfRanges;
 ```
 
-#### Discussion
+## Discussion
 
 A result must have at least one range, but may optionally have more (for example, to represent regular expression capture groups).
 

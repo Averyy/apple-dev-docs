@@ -22,7 +22,7 @@ enum TextAnimation
 enum UIWritingToolsCoordinatorTextAnimation : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 Use the `UIWritingToolsCoordinator/TextAnimation` constants to determine the type of animation that is occurring. During an interactive change to your view, Writing Tools creates animations to provide feedback about what’s happening. During the setup for each animation, Writing Tools reports the type of animation to the coordinator’s delegate, so that you can perform additional actions related to that animation. For example, during an insertion animation, you might animate changes to other views in your interface.
 

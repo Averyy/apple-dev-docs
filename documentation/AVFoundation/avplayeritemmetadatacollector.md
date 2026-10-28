@@ -25,7 +25,7 @@ class AVPlayerItemMetadataCollector
 @interface AVPlayerItemMetadataCollector : AVPlayerItemMediaDataCollector
 ```
 
-#### Overview
+## Overview
 
 You can use the HLS `#EXT-X-DATERANGE` tag to define date range metadata in a media playlist. This tag is useful for defining timed metadata for interstitial regions such as advertisements, but can be used to define any timed metadata needed by your stream. To access this metadata when the stream is played using an [`AVPlayer`](./avplayer.md), you create an instance of `AVPlayerItemMetadataCollector`, configure its delegate object (see [`AVPlayerItemMetadataCollectorPushDelegate`](./avplayeritemmetadatacollectorpushdelegate.md)), and add it as a media data collector to the [`AVPlayerItem`](./avplayeritem.md) (see example).
 

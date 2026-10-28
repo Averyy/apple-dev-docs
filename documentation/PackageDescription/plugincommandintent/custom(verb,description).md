@@ -15,7 +15,7 @@ A custom command plug-in intent.
 case custom(verb: String, description: String)
 ```
 
-#### Discussion
+## Discussion
 
 Use this case when none of the predefined cases fulfill the role of the plug-in.
 

@@ -24,7 +24,7 @@ enum HKBiologicalSex
 enum HKBiologicalSex : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 A person’s sex is a combination of bodily characteristics including: chromosomes, hormones, internal and external reproductive organs, and secondary sex characteristics.
 

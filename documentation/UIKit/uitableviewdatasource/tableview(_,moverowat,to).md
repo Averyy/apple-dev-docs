@@ -23,7 +23,7 @@ optional func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: Ind
 - (void) tableView:(UITableView *) tableView moveRowAtIndexPath:(NSIndexPath *) sourceIndexPath toIndexPath:(NSIndexPath *) destinationIndexPath;
 ```
 
-#### Discussion
+## Discussion
 
 The [`UITableView`](../uitableview.md) object sends this message to the data source when the user presses the reorder control in the row at `sourceIndexPath`.
 

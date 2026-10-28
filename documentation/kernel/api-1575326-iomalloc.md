@@ -15,11 +15,11 @@ Allocates general purpose, wired memory in the kernel map.
 void * IOMalloc(vm_size_t size);
 ```
 
-#### Return Value
+## Return Value
 
 Pointer to the allocated memory, or zero on failure.
 
-#### Discussion
+## Discussion
 
 This is a general purpose utility to allocate memory in the kernel. There are no alignment guarantees given on the returned memory, and alignment may vary depending on the kernel configuration. This function may block and so should not be called from interrupt level or while a simple lock is held.
 

@@ -5,7 +5,7 @@
 
 Review common causes for failing Xcode Cloud builds that originate from helper tools running in a misconfigured build environment.
 
-#### Overview
+## Overview
 
 Xcode Cloud offers a continuous integration build environment that includes a macOS version and an Xcode version that you configure for each Xcode Cloud workflow. Your project or workspace may depend on helper tools beyond the tools that are included with macOS or Xcode to successfully build your app. If your app’s build requires the installation of additional helper tools into the Xcode Cloud build environment, you use a post-clone script to install the tool for every build.
 
@@ -13,7 +13,7 @@ You define the build environment by choosing the macOS version, the Xcode versio
 
 > **Note**: To learn more about using third-party tools in Xcode Cloud, see [Making dependencies available to Xcode Cloud](../Xcode/making-dependencies-available-to-xcode-cloud.md) and [Writing custom build scripts](../Xcode/writing-custom-build-scripts.md).
 
-#### Review common causes for errors caused by helper tools
+## Review common causes for errors caused by helper tools
 
 Apps invoking helper tools as part of the app’s build may encounter an error in a misconfigured build environment. These errors occur because of the following conditions:
 
@@ -52,17 +52,17 @@ xcode-select --install
 
 > **Note**: If Xcode is available in the build environment, you don’t need to install the Command Line Tools package to resolve the error, because Xcode already includes the build tools provided by the Command Line Tools package.
 
-#### Review usage of the helper tool
+## Review usage of the helper tool
 
 Before attempting to resolve the error, first consider removing the helper tool from your app’s build entirely. If you build your app with Xcode Cloud, reduce the amount of additional software installed on every build to lower the build time, and receive build and test results faster.
 
 In many cases, Xcode provides functionality that can replace the helper tool. In other cases, you can use the Swift package plugin support to add functionality in Xcode. For example, if the helper tool generates source code as part of the build, consider using or creating a Swift package plugin with this functionality instead of a separate helper tool. To use an existing package plugin, add it to your package manifest. For more information about Swift package plugins, see [Meet Swift Package plugins](https://developer.apple.com/wwdc22/110359/) and [Create Swift Package plugins](https://developer.apple.com/wwdc22/110401/)
 
-#### Adjust the Xcode Cloud build environment
+## Adjust the Xcode Cloud build environment
 
 If your app builds using Xcode Cloud and you are unable to remove the helper tool, try to resolve the error by modifying the Environment section of a workflow. Select the Latest Release option for both the Xcode and macOS settings. For workflows that do not release to the App Store, select Latest Beta or Release for both the Xcode and macOS settings. By selecting these options, the macOS SDK version in Xcode matches the macOS version on the build machine, which often resolves the build error. See [Xcode Cloud workflow reference](../Xcode/xcode-cloud-workflow-reference.md) for additional information on configuring workflows.
 
-#### Manage the build environment manually
+## Manage the build environment manually
 
 Some build environments require you to manually manage the Xcode version and macOS versions comprising the build environment to resolve the error. These environments include Macs used for development, self-managed continuous integration servers, as well as Xcode Cloud workflows that aren’t able to use the options described in [Adjust the Xcode Cloud build environment](./tn3129-resolving-build-errors-from-helper-tools-in-xcode-cloud.md#Adjust-the-Xcode-Cloud-build-environment). In these build environments, match the major version number of the macOS SDK in Xcode to the major version number of the macOS installation on the build machine. By matching these version numbers, the helper tool has access to the resources it needs within the macOS SDK.
 
@@ -70,7 +70,7 @@ For example, if you are using Xcode 13.2, which contains the macOS 12.1 SDK, the
 
 > **Note**: The complete list of Xcode versions and the macOS SDK versions they contain is available on the [Xcode support page](https://developer.apple.com/support/xcode/).
 
-#### Revision History
+## Revision History
 
 - **2022-07-19** First published.
 

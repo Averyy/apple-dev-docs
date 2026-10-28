@@ -24,7 +24,7 @@ func JSObjectGetPrivate(_ object: JSObjectRef!) -> UnsafeMutableRawPointer!
 void *JSObjectGetPrivate(JSObjectRef object);
 ```
 
-#### Return Value
+## Return Value
 
 A pointer to the object’s private data, if the object has private data; otherwise, `NULL`.
 

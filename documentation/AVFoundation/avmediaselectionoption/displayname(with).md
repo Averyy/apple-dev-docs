@@ -25,11 +25,11 @@ func displayName(with locale: Locale) -> String
 - (NSString *) displayNameWithLocale:(NSLocale *) locale;
 ```
 
-#### Return Value
+## Return Value
 
 A string containing the localized display name.
 
-#### Discussion
+## Discussion
 
 The string takes into account this option’s common metadata, media characteristics and locale properties in addition to the provided locale to formulate a string intended for display
 

@@ -22,11 +22,11 @@ Adds an asynchronous task to perform before this view appears.
 nonisolated func task(name: String? = nil, priority: TaskPriority = .userInitiated, file: String = #fileID, line: Int = #line, _ action: sending @escaping @isolated(any) () async -> Void) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view that runs the specified action asynchronously before the view appears.
 
-#### Discussion
+## Discussion
 
 Use this modifier to perform an asynchronous task with a lifetime that matches that of the modified view. If the task doesn’t finish before SwiftUI removes the view or the view changes identity, SwiftUI cancels the task.
 

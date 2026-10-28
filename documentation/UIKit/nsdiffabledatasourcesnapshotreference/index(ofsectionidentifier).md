@@ -23,7 +23,7 @@ func index(ofSectionIdentifier sectionIdentifier: Any) -> Int
 - (NSInteger) indexOfSectionIdentifier:(SectionIdentifierType) sectionIdentifier;
 ```
 
-#### Return Value
+## Return Value
 
 The index of the section of the snapshot, or `NSNotFound` if the section with the specified identifier doesn’t exist in the snapshot. This index value is 0-based.
 

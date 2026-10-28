@@ -25,7 +25,7 @@ typealias nw_path_enumerate_gateways_block_t = (nw_endpoint_t) -> Bool
 typedef _Bool (^)(NSObject<OS_nw_endpoint> *) nw_path_enumerate_gateways_block_t;
 ```
 
-#### Return Value
+## Return Value
 
 Return true to continue enumerating, or false to stop enumerating.
 

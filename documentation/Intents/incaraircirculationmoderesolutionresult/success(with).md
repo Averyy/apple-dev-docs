@@ -24,11 +24,11 @@ class func success(with resolvedCarAirCirculationMode: INCarAirCirculationMode) 
 + (instancetype) successWithResolvedCarAirCirculationMode:(INCarAirCirculationMode) resolvedCarAirCirculationMode;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INCarAirCirculationModeResolutionResult`](../incaraircirculationmoderesolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method to create a result object when you recognize the air circulation mode and are able to modify it.
 

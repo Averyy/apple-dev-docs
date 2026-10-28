@@ -4,7 +4,7 @@
 
 A panorama represented by six faces of a cube, so the viewer can see all the way up and down.
 
-#### Overview
+## Overview
 
 > ❗ **Important**: VR Media is deprecated in the QuickTime file format. The information that follows documents existing content containing VR Media and should not be used for new development.
 

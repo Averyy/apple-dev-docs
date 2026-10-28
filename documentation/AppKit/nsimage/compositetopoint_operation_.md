@@ -17,7 +17,7 @@ Composites the entire image to the specified point in the current coordinate sys
 - (void) compositeToPoint:(NSPoint) point operation:(NSCompositingOperation) operation;
 ```
 
-#### Discussion
+## Discussion
 
 This method draws the receiver’s best image representation at the specified point in the currently focused view. The entire image is drawn using its current size information. During drawing, the image is composited from its offscreen window cache. Because the offscreen cache is not created until the image representation is first used, this method may need to render the image before compositing. Bitmap representations in particular are not cached until they are explicitly rendered. You can use the [`lockFocus()`](./lockfocus%28%29.md) and [`unlockFocus()`](./unlockfocus%28%29.md) methods to force the cached version to be created.
 

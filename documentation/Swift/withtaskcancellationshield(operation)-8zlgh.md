@@ -18,11 +18,11 @@ Enters a scope in which a task cancellation shield is active.
 ## Declaration
 
 ```swift
-nonisolated
-(nonsending) func withTaskCancellationShield<Value, Failure>(operation: nonisolated(nonsending) () async throws(Failure) -> Value) async throws(Failure) -> Value where Failure : Error
+nonisolated(nonsending)
+func withTaskCancellationShield<Value, Failure>(operation: nonisolated(nonsending) () async throws(Failure) -> Value) async throws(Failure) -> Value where Failure : Error
 ```
 
-#### Discussion
+## Discussion
 
 Cancellation shields are primarily used to ensure some cleanup code will definitely run, even if the context in which the cleanup functions are called from is a cancelled task, and the functions may otherwise return early (due to observing the cancellation of the current task).
 

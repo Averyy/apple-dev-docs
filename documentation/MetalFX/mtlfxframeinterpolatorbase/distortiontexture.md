@@ -24,7 +24,7 @@ var distortionTexture: (any MTLTexture)? { get set }
 @property (nonatomic, retain, nullable) id<MTLTexture> distortionTexture;
 ```
 
-#### Discussion
+## Discussion
 
 Assign a texture containing a distortion field to this property to enable barrel distortion correction during frame interpolation. The distortion field describes how to remap pixels to correct lens distortion artifacts common in VR or wide-angle camera applications.
 

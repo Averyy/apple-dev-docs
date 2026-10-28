@@ -22,7 +22,7 @@ nonisolated
 init(_ product: Product, @ViewBuilder icon: @escaping (ProductIconPhase) -> Icon) where PlaceholderIcon == EmptyView
 ```
 
-#### Discussion
+## Discussion
 
 The product view asynchronously loads and displays the product’s promotional image.
 

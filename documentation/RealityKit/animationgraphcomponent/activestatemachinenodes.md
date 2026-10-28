@@ -20,7 +20,7 @@ The state machine nodes that were active during the most recent graph evaluation
 var activeStateMachineNodes: [AnimationGraphComponent.ActiveStateMachineNode] { get }
 ```
 
-#### Discussion
+## Discussion
 
 This is the typed view of [`activeNodes`](./activenodes.md) filtered to [`AnimationGraphComponent.ActiveStateMachineNode`](./activestatemachinenode.md).
 

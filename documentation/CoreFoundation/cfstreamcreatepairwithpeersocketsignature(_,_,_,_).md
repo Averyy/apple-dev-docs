@@ -27,7 +27,7 @@ func CFStreamCreatePairWithPeerSocketSignature(_ alloc: CFAllocator!, _ signatur
 extern void CFStreamCreatePairWithPeerSocketSignature(CFAllocatorRef alloc, const CFSocketSignature *signature, CFReadStreamRef*readStream, CFWriteStreamRef*writeStream);
 ```
 
-#### Discussion
+## Discussion
 
 The streams do not create a socket or connect to the remote host until you open one of the streams.
 

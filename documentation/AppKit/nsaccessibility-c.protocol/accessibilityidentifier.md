@@ -15,7 +15,7 @@ The accessibility element’s identity.
 @property (copy, nullable) NSString * accessibilityIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 This property holds the unique ID for the accessibility element. It is often used in automated testing.
 

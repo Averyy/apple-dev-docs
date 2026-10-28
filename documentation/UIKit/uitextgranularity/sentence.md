@@ -21,7 +21,7 @@ case sentence
 UITextGranularitySentence
 ```
 
-#### Discussion
+## Discussion
 
 The unit of text is a sentence.
 

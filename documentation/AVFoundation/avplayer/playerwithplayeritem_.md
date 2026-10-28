@@ -21,7 +21,7 @@ Returns a new player initialized to play the specified player item.
 + (instancetype) playerWithPlayerItem:(AVPlayerItem *) item;
 ```
 
-#### Return Value
+## Return Value
 
 A new player initialized to play `item`.
 

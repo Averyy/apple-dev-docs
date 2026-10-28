@@ -13,11 +13,11 @@
 OBEXError IOBluetoothOBEXSessionOpenTransportConnection(OBEXSessionRef inSessionRef, IOBluetoothOBEXSessionOpenConnectionCallback inCallback, void *inUserRefCon);
 ```
 
-#### Return Value
+## Return Value
 
 An error code value. 0 if successful.
 
-#### Discussion
+## Discussion
 
 Opens a transport-level connection to a remote target. For example, if you are using a Bluetooth transport, this will establish the baseband/L2CAP/RFCOMM connection to a device. Once the callback is called, the connection will either be opened or have failed with a status code. That status code will most likely have originated from the transport layer being used, so you may receive a Bluetooth error, an IOKit error, etc, but a 0 status should indicate success in all cases.
 

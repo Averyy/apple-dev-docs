@@ -5,13 +5,13 @@
 
 Data formats you use in extra information TLVs.
 
-#### Overview
+## Overview
 
 The data source field of the entry table (see [`Data table`](./packet_entry/data_table.md)) indicates how the other 15 bytes of the entry are to be interpreted. Values of `0` through `4` are defined. The various data table formats are defined below.
 
 Although there are various schemes, note that the entries in the various schemes are the same size, 16 bytes long.
 
-#### No-op data mode
+## No-op data mode
 
 The data table entry has the format for no-op mode shown in the following table:
 
@@ -20,11 +20,11 @@ The data table entry has the format for no-op mode shown in the following table:
 | 0 - 7 | data source = `0` |
 | 8 - 15 | ingored |
 
-##### Field descriptions
+### Field descriptions
 
 - **Data source = `0`**: A value of `0` indicates that this data table entry is to be ignored.
 
-#### Immediate data mode
+## Immediate data mode
 
 The data table entry has the format for immediate mode shown in the following table:
 
@@ -34,12 +34,12 @@ The data table entry has the format for immediate mode shown in the following ta
 | 8 - 15 | immediate length |
 | immediate data |  |
 
-##### Field descriptions
+### Field descriptions
 
 - **Data source = `1`**: A value of `1` indicates that the data is to be immediately taken from the bytes of data that follow. = term Immediate length: An 8-bit integer indicating the number of bytes to take from the data that follows. Legal values range from `0` to `14`.
 - **Immediate data**: 14 bytes of data to place into the payload portion of the packet. Only the first number of bytes indicated by the immediate length field is used.
 
-#### Sample mode
+## Sample mode
 
 The data table entry has the format for sample mode shown in the following table:
 
@@ -53,7 +53,7 @@ The data table entry has the format for sample mode shown in the following table
 | bytes per compression block |  |
 | samples per compression block |  |
 
-##### Field descriptions
+### Field descriptions
 
 - **Data source = `2`**: A value of `2` indicates that the data is to be taken from a track’s sample data.
 - **Track ref index**: A value that indicates which track the sample data will come from. A value of `0` means that there is exactly one media track referenced, so use that. Values from `1` to `127` are indexes into the hint track reference atom entries, indicating which original media track the sample is to be read from. A value of `-1` means the hint track itself, that is, get the sample from the same track as the hint sample you are currently parsing.
@@ -87,7 +87,7 @@ data_offset = (sample_number - first_sample_in_this_chunk) * BPCB  / SPCB;
 read_from_file(chunk_offset + data_offset, length); /* read our  data */
 ```
 
-#### Sample description mode
+## Sample description mode
 
 The data table entry has the format for sample description mode shown in the following table.
 
@@ -100,7 +100,7 @@ The data table entry has the format for sample description mode shown in the fol
 | offset |  |
 | reserved |  |
 
-##### Field descriptions
+### Field descriptions
 
 - **Data source = `3`**: A value of `3` indicates that the data is to be taken from the media track’s sample description table.
 - **Track ref index**: A value that indicates which track the sample description will come from. A value of `0` means that there is exactly one hint track reference, so use that. Values from `1` to `127` are indexes into the hint track reference atom entries, indicating which original media track the sample is to be read from. A value of `-1` means the hint track itself, that is, get the sample description from the same track as the hint sample you are currently parsing.

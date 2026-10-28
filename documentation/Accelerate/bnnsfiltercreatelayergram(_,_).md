@@ -27,7 +27,7 @@ func BNNSFilterCreateLayerGram(_ layer_params: UnsafePointer<BNNSLayerParameters
 BNNSFilterBNNSFilterCreateLayerGram(const BNNSLayerParametersGram *layer_params, const BNNSFilterParameters *filter_params);
 ```
 
-#### Discussion
+## Discussion
 
 You use this layer to perform the Gram matrix calculation:
 

@@ -24,7 +24,7 @@ func source(withIdentifier identifier: String) -> EKSource?
 - (EKSource *) sourceWithIdentifier:(NSString *) identifier;
 ```
 
-#### Return Value
+## Return Value
 
 The source with the specified identifier, or `nil` if the source isn’t found.
 

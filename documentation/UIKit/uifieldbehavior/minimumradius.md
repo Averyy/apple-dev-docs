@@ -23,7 +23,7 @@ var minimumRadius: CGFloat { get set }
 @property (nonatomic, assign) CGFloat minimumRadius;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to modify the behavior of distance-based effects when objects are close to the center of the field. Distances that are less than the minimum value are treated as if they are equal to the minimum value. In addition, effects such as [`falloff`](./falloff.md) are not applied until the minimum distance is reached.
 

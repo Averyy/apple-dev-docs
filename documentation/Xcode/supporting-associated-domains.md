@@ -4,7 +4,7 @@
 
 Connect your app and a website to provide both a native app and a browser experience.
 
-#### Overview
+## Overview
 
 Associated domains establish a secure association between domains and your app so you can share credentials or provide features in your app from your website. For example, an online retailer may offer an app to accompany their website and enhance the user experience.
 
@@ -12,7 +12,7 @@ Shared web credentials, universal links, Handoff, and App Clips all use associat
 
 To associate a website with your app, you need to have the associated domain file on your website and the appropriate entitlement in your app. The apps in the `apple-app-site-association` file on your website must have a matching [`Associated Domains Entitlement`](../BundleResources/entitlements/com.apple.developer.associated-domains.md).
 
-##### Add the associated domain file to your website
+### Add the associated domain file to your website
 
 When a user installs your app, the system attempts to download the associated domain file and verify the domains in your entitlement.
 
@@ -78,7 +78,7 @@ https://<fully qualified domain>/.well-known/apple-app-site-association
 
 You must host the file using `https://` with a valid certificate and with no redirects.
 
-##### Add the associated domains entitlement to your app
+### Add the associated domains entitlement to your app
 
 To set up the entitlement in your app, open the target’s Signing & Capabilities tab in Xcode and add the Associated Domains capability. If they’re not already present, this step adds the [`Associated Domains Entitlement`](../BundleResources/entitlements/com.apple.developer.associated-domains.md) to your app and the associated domains feature to your app ID.
 

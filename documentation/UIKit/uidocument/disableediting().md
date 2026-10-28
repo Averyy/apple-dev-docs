@@ -22,7 +22,7 @@ func disableEditing()
 - (void) disableEditing;
 ```
 
-#### Discussion
+## Discussion
 
 Subclasses should override this method to prevent the user from editing the document when it’s unsafe to do so, such as during a save-and-close or revert operation. When editing is safe again, UIKit class calls [`enableEditing()`](./enableediting%28%29.md). The default implementation of this method does nothing.
 

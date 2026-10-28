@@ -23,7 +23,7 @@ class CFRunLoopTimer
 typedef struct __CFRunLoopTimer * CFRunLoopTimerRef;
 ```
 
-#### Overview
+## Overview
 
 A CFRunLoopTimer object represents a specialized run loop source that fires at a preset time in the future. Timers can fire either only once or repeatedly at fixed time intervals. Repeating timers can also have their next firing time manually adjusted.
 

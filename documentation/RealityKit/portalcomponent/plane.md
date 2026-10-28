@@ -20,7 +20,7 @@ A representation of a portal as an infinite plane.
 struct Plane
 ```
 
-#### Overview
+## Overview
 
 Enable the corresponding clipping and crossing features by passing this value in [`PortalComponent.ClippingMode.plane(_:)`](./clippingmode-swift.enum/plane%28_%29.md) or [`PortalComponent.CrossingMode.plane(_:)`](./crossingmode-swift.enum/plane%28_%29.md).
 

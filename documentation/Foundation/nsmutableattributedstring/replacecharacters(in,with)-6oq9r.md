@@ -25,7 +25,7 @@ func replaceCharacters(in range: NSRange, with str: String)
 - (void) replaceCharactersInRange:(NSRange) range withString:(NSString *) str;
 ```
 
-#### Discussion
+## Discussion
 
 The new characters inherit the attributes of the first replaced character from `range`. Where the length of `range` is 0, the new characters inherit the attributes of the character preceding `range` if it has any, otherwise of the character following `range`.
 

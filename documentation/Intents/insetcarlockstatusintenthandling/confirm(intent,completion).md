@@ -27,7 +27,7 @@ optional func confirm(intent: INSetCarLockStatusIntent) async -> INSetCarLockSta
 - (void) confirmSetCarLockStatus:(INSetCarLockStatusIntent *) intent completion:(void (^)(INSetCarLockStatusIntentResponse *response)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to validate that your app can lock or unlock the car given the data in the provided intent. For example, you should validate that the app can currently access the car. At some point in your implementation, execute the provided completion block with a response object indicating your app’s readiness to lock or unlock the car.
 

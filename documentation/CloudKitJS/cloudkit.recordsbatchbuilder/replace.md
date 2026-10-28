@@ -18,11 +18,11 @@ CloudKit.RecordsBatchBuilder replace(
 );
 ```
 
-#### Return Value
+## Return Value
 
 The object that received this method call.
 
-#### Discussion
+## Discussion
 
 The fields whose values you do not specify are set to `null`.
 

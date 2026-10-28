@@ -17,11 +17,11 @@ Load a model from a local directory of configuration and weights.
 func loadModelContainer(from directory: URL, using tokenizerLoader: any TokenizerLoader) async throws -> sending ModelContainer
 ```
 
-#### Return Value
+## Return Value
 
 A [`ModelContainer`](./modelcontainer.md)
 
-#### Discussion
+## Discussion
 
 Returns a [`ModelContainer`](./modelcontainer.md) holding a [`ModelContext`](./modelcontext.md) inside an actor providing isolation control for the values.
 

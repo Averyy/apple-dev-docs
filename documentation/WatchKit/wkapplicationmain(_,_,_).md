@@ -19,11 +19,11 @@ func WKApplicationMain(_ argc: Int32, _ argv: UnsafeMutablePointer<UnsafeMutable
 extern int WKApplicationMain(int argc, char * argv[], NSString *applicationDelegateClassName);
 ```
 
-#### Return Value
+## Return Value
 
 Even though this function specifies an integer return type, it never returns. When the user exits a watchOS app, the app moves to the background.
 
-#### Discussion
+## Discussion
 
 This function instantiates the application object and the specified delegate (if any), and then sets the delegate for the application. It also sets up the main event loop, including the application’s run loop, and begins processing events.
 

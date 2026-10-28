@@ -19,7 +19,7 @@ func setAttributedTitle(_ attributedTitle: NSAttributedString?)
 - (void) setAttributedTitle:(NSAttributedString *) attributedTitle;
 ```
 
-#### Discussion
+## Discussion
 
 This method sets the content of the switch to the specified text, replacing the previous text. The text is drawn using the style information in `attributedTitle`.
 

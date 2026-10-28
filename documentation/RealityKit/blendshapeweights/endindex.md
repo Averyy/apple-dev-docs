@@ -20,7 +20,7 @@ An index to the last weight in the collection.
 var endIndex: BlendShapeWeights.Index { get }
 ```
 
-#### Discussion
+## Discussion
 
 For more more on the sequence’s final index, see [`endIndex`](../../Swift/array/endindex.md).
 

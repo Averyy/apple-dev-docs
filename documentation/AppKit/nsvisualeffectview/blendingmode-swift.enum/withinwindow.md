@@ -19,7 +19,7 @@ case withinWindow
 NSVisualEffectBlendingModeWithinWindow
 ```
 
-#### Discussion
+## Discussion
 
 Views using this blending mode must not overlap each other.
 

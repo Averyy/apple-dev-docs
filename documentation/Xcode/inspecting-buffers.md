@@ -5,11 +5,11 @@
 
 Confirm your buffer formats by examining buffer content.
 
-#### Overview
+## Overview
 
 In the Metal debugger, you can validate that the content in your buffer is correct by examining it with the Buffer viewer. The Buffer viewer automatically formats the buffer content based on the current context, for example, by using the currently bound pipeline state. You can also manually configure the formatting, which may be necessary in some cases, such as when there’s no currently bound pipeline state. After adjusting the formatting, you can copy or export any values that you might need for later.
 
-##### Navigate your buffer
+### Navigate your buffer
 
 The Buffer viewer displays the contents of your buffer in a large table. If you open your buffer in the Bound Resources viewer for a particular draw command or compute dispatch, Xcode automatically lays out the contents to match any parameter it’s bound to in your shader. For more information, see [Inspecting the bound resources for a command](./inspecting-the-bound-resources-for-a-command.md).
 
@@ -19,7 +19,7 @@ For example, imagine a vertex shader that takes a `float3` position and a `float
 
 In the screenshot above, the `in – float3` position column shows three float values, whereas the `out – float4` position column shows four float values.
 
-##### Change the layout and initial offset
+### Change the layout and initial offset
 
 You can change the way that the Buffer viewer lays out your buffer content using the controls at the bottom. To change the column parameter type, click the Element Type drop-down. To change the number of elements per row, click the Number of Elements per Row drop-down to its right.
 
@@ -33,7 +33,7 @@ You can also adjust the initial offset in the buffer by changing the Offset fiel
 
 ![A screenshot of the Buffer viewer highlighting the Offset control.](https://developer.apple.com/tutorials/images/com.apple.Xcode/gputools-metal-debugger-bv-formatting-2@2x.png)
 
-##### Create a custom layout
+### Create a custom layout
 
 You can create your own custom layout by clicking the Element Type drop-down and choosing Custom Layout > Show Custom Layout Editor.
 
@@ -52,7 +52,7 @@ The custom layout editor also supports resource types to help you visualize reso
 
 When you finish editing the buffer content with your custom layout, click Done. You can access custom layouts from the Element Type drop-down menu, just below Custom Layout > Recent Custom Layouts.
 
-##### Configure columns
+### Configure columns
 
 You can configure the Buffer viewer to display only the information you need. Position your pointer over a column header and Control-click. The context menu provides the following options:
 
@@ -67,7 +67,7 @@ Additionally, you can configure any column’s options from the context menu, us
 
 If you hide any columns, you can restore your configuration by selecting Show All Columns from the context menu.
 
-##### Search for specific text and values
+### Search for specific text and values
 
 You can search for values by using the search functionality. Press Command-F to open the search bar. The search bar uses a token system to format your search, and different options appear for different input types.
 
@@ -83,7 +83,7 @@ You can also search for text, such as resource names, errors, and invalid numeri
 
 ![A screenshot of the Buffer viewer with text search results.](https://developer.apple.com/tutorials/images/com.apple.Xcode/gputools-metal-debugger-bv-search-text@2x.png)
 
-##### Export your buffer content
+### Export your buffer content
 
 You can copy the buffer contents either by selecting full rows or individual cells in the table, and then choosing Edit > Copy. The system uses the current layout format to copy the values, including visibility and any type cast override.
 

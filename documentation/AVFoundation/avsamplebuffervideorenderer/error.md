@@ -26,7 +26,7 @@ var error: (any Error)? { get }
 @property (readonly, nullable) NSError * error;
 ```
 
-#### Discussion
+## Discussion
 
 This value is `nil` by default. It only contains a valid error object when the [`status`](./status.md) value is [`AVQueuedSampleBufferRenderingStatus.failed`](../avqueuedsamplebufferrenderingstatus/failed.md).
 

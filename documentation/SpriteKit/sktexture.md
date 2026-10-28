@@ -34,11 +34,11 @@ class SKTexture
 - [Maximizing Texture Performance](./maximizing-texture-performance.md)
 - [Preloading Textures into Memory](./preloading-textures-into-memory.md)
 
-#### Overview
+## Overview
 
 An [`SKTexture`](./sktexture.md) object is an image that can be applied to [`SKSpriteNode`](./skspritenode.md) and [`SKShapeNode`](./skshapenode.md) objects, particles created by an [`SKEmitterNode`](./skemitternode.md) object, or tiles used in an [`SKTileMapNode`](./sktilemapnode.md). A texture object manages the texture data and graphics resources that are needed to render the image. Most texture objects are created from source images stored in your app bundle—your game’s artwork. Once created, a texture object’s contents are immutable. Multiple sprites can share the same texture object, sharing a single resource.
 
-##### Deallocating a Texture
+### Deallocating a Texture
 
 After a texture is loaded into the graphics hardware memory, it stays in memory until the referencing [`SKTexture`](./sktexture.md) object is deleted. This means that between levels (or in a dynamic game), you may need to make sure a texture object is deleted. Delete a [`SKTexture`](./sktexture.md) object by removing any strong references to it, including:
 

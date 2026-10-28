@@ -24,7 +24,7 @@ let HMCharacteristicTypeCarbonDioxideDetected: String
 extern NSString * const HMCharacteristicTypeCarbonDioxideDetected;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is one of the constants in the [`HMCharacteristicValueCarbonDioxideDetectionStatus`](./hmcharacteristicvaluecarbondioxidedetectionstatus.md) enumeration.
 

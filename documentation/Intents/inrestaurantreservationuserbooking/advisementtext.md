@@ -30,7 +30,7 @@ var advisementText: String? { get set }
 @property (atomic, copy, nullable) NSString * advisementText;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to store restaurant policies, parking instructions, or special information related to the reservation. The system displays the information in this string to the user along with the reservation details.
 

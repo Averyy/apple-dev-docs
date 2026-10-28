@@ -12,11 +12,11 @@ virtual bool isEqualTo(
  const OSNumber *aNumber) const;
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the OSNumber objects are equal, `false` if not.
 
-#### Overview
+## Overview
 
 Two OSNumber objects are considered equal if they represent the same C integer value.
 

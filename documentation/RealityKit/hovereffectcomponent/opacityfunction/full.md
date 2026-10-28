@@ -19,7 +19,7 @@ Applies an opaque hover effect and ignores the opacity of the entity’s base ma
 case full
 ```
 
-#### Discussion
+## Discussion
 
 In this example, a rounded black rectangle continuously transitions between transparent and fully opaque. Applying a green highlight hover effect with the full opacity function to the rectangle draws the effect with full opacity and ignores the opacity of the rectangle.
 

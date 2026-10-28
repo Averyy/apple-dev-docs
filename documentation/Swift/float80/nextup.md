@@ -15,7 +15,7 @@ The least representable value that compares greater than this value.
 var nextUp: Float80 { get }
 ```
 
-#### Discussion
+## Discussion
 
 For any finite value `x`, `x.nextUp` is greater than `x`. For `nan` or `infinity`, `x.nextUp` is `x` itself. The following special cases also apply:
 

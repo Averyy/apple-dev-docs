@@ -23,7 +23,7 @@ class var beforeCATransactionCommit: UIUpdateActionPhase { get }
 @property (class, nonatomic, readonly) UIUpdateActionPhase * beforeCATransactionCommit;
 ```
 
-#### Discussion
+## Discussion
 
 This phase runs before [`flush()`](../../QuartzCore/catransaction/flush%28%29.md).
 

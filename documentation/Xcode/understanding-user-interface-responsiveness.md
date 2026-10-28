@@ -5,7 +5,7 @@
 
 Make your app more responsive by examining the event-handling and rendering loop.
 
-#### Overview
+## Overview
 
 Human perception is adept at identifying motion and linking cause to effect through sequential actions. This is important for graphical user interfaces because they rely on making the user believe a certain interaction with a device causes a specific effect, and that the objects onscreen behave sufficiently realistically. For example, a button needs to highlight when a person taps or clicks it, and when someone drags an object across the screen, it needs to follow the mouse or finger.
 
@@ -16,7 +16,7 @@ There are two ways this illusion can break down:
 
 This article covers different types of user interactions and how the event-handling and rendering loop processes events to handle them. This foundational knowledge helps you understand what causes hangs and hitches, how the two are similar, and what differentiates them.
 
-##### Understand different types of interactions
+### Understand different types of interactions
 
 A *discrete* user interaction occurs when the user performs a single well-contained interaction and the screen then updates in response. An example is when somebody presses a key on the keyboard and the corresponding letter then appears onscreen. Another example is pressing a button on a touchscreen. However, in that case, there are two discrete interactions. First, the finger presses down on the button and, in response, the button changes color or otherwise indicates it’s in a pressed state. Then, the finger lifts and, in response, the button changes back to its previous visual state to show it’s no longer pressed.
 
@@ -28,7 +28,7 @@ Humans are even more sensitive to nonfluid motion. In the example of dragging an
 
 If the latency between a change in user interaction and the corresponding screen update is smaller, but inconsistent, the icon seems to sometimes get stuck for a moment and then jumps ahead. This kind of jarring movement is far more noticeable than a slightly longer delay. For this reason, Apple devices often optimize for smooth motion while accepting a slightly longer interaction latency, if necessary. There are times when both an extremely low interaction latency and fluid motion onscreen are crucial to making an interaction feel real. One example of this is drawing onscreen with Apple Pencil.
 
-##### Understand the event-handling and rendering pipeline
+### Understand the event-handling and rendering pipeline
 
 For a single user-input event, there are several steps in the event’s journey through the system.
 
@@ -43,7 +43,7 @@ As the diagram above illustrates, a user interaction propagates through the syst
 - **Render server**: The render server is a separate process that handles all rendering of the various processes that need to draw to the screen. It composites the layer trees from the apps and the system processes into a final image.
 - **Update display**: When the final image representing the new frame is ready, the display driver uses it to update the display. The display driver checks at regular intervals to determine whether the screen needs updating. The time when a display update can start is known as the *vertical sync*, or *vsync*, and the time between two potential display updates is the *vsync interval*, or the *display refresh interval*.
 
-##### Differentiate hangs and hitches
+### Differentiate hangs and hitches
 
 As mentioned above, a hang is a noticeable delay in a discrete user interaction, and it’s almost always the result of long-running work on the main thread. Long-running work on the main thread can also cause hitches, but for hitches, the threshold is lower. Discrete interaction delays only start becoming noticeable as hangs when the main thread is unresponsive for about 50 ms to 100 ms or longer. However, a delay as small as the length of a single refresh interval — generally between 8 ms and 16 ms, depending on the refresh rate of the display — can cause a hitch. Delays in the render server can also cause a hitch, but usually aren’t long enough to cause a hang.
 
@@ -51,13 +51,13 @@ For a hang, only the delay between a user interaction and the corresponding scre
 
 Because of the much lower time thresholds for hitches, as well as the fact that an unresponsive main thread can also cause hitches, when the system detects a potential hang, the same system state might also cause a hitch.
 
-##### Understand when the system reports hitches and hangs
+### Understand when the system reports hitches and hangs
 
 Because the system detects hitches by measuring the time between the start of a screen update event and the UI updating, it can only detect hitches when user interaction is happening or another trigger for screen updates exists. When no such trigger exists, the display doesn’t need to update, so the frame can’t be late.
 
 Although a hang is also only noticeable by the user when they interact with their device, the system can detect the conditions leading to a hang by examining the behavior of the main run loop. It measures extended periods of unresponsiveness of the main run loop, regardless of whether the user happens to be interacting with the app at the time. In that sense, the system reports *potential hangs*, conditions that would cause a hang if the user were to interact with the device during that time. For hitches, the system only reports actual delays in screen updates. It can’t detect device states that would potentially lead to a hitch.
 
-##### Fix hangs first
+### Fix hangs first
 
 Prioritize investigating and addressing hangs first because they’re easier to understand and usually easier to fix.
 And by fixing the hangs, you’re likely to fix major sources of hitches as well.

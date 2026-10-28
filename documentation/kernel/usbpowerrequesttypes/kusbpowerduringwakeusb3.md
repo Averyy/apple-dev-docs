@@ -15,7 +15,7 @@ The system requests extra power allocation.
 kUSBPowerDuringWakeUSB3 = 7
 ```
 
-#### Discussion
+## Discussion
 
 The USB stack uses this enumeration to allocate the 400 milliamps extra for USB 3.0 above the 500 milliamps that USB 2.0 allocates.
 

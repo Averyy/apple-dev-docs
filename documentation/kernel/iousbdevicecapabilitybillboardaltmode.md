@@ -15,7 +15,7 @@ The structure for the billboard alternative mode device capability.
 typedef struct IOUSBDeviceCapabilityBillboardAltMode IOUSBDeviceCapabilityBillboardAltMode;
 ```
 
-#### Discussion
+## Discussion
 
 See *Universal Serial Bus Device Class Definition for Billboard Devices*, 1.2.1, 3.1.6.3.
 

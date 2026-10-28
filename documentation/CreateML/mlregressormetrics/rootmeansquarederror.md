@@ -24,7 +24,7 @@ var rootMeanSquaredError: Double { get }
 
 - [Improving Your Model’s Accuracy](../improving-your-model-s-accuracy.md)
 
-#### Discussion
+## Discussion
 
 The [`rootMeanSquaredError`](./rootmeansquarederror.md) is calculated by taking the square-root of the average squared distance between the correct and predicted value.
 

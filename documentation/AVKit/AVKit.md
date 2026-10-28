@@ -19,7 +19,7 @@ Adopt the system’s video playback interfaces, and integrate your camera app wi
 
 - [Adopting Picture in Picture for video calls](./adopting-picture-in-picture-for-video-calls.md)
 
-#### Overview
+## Overview
 
 AVKit provides the interfaces your app uses to integrate media with the hardware and software of an Apple device. For playback, it provides the system’s standard video player, so your app presents video the way people already expect instead of designing an interface of its own. For capture, it provides the integration points that connect a camera app to capture hardware and to the system features that surround it.
 

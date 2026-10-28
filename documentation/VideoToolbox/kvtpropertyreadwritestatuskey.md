@@ -24,7 +24,7 @@ let kVTPropertyReadWriteStatusKey: CFString
 extern CFStringRef const kVTPropertyReadWriteStatusKey;
 ```
 
-#### Discussion
+## Discussion
 
 The associated value will be either [`kVTPropertyReadWriteStatus_ReadOnly`](./kvtpropertyreadwritestatus_readonly.md) or  [`kVTPropertyReadWriteStatus_ReadWrite`](./kvtpropertyreadwritestatus_readwrite.md).
 

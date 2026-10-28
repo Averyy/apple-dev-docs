@@ -24,7 +24,7 @@ static let subheadline: UIFont.TextStyle
 extern UIFontTextStyle const UIFontTextStyleSubheadline;
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  On tvOS, text used for subheadings should be in an all-caps format.
 

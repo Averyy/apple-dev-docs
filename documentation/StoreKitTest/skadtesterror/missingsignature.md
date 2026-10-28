@@ -17,7 +17,7 @@ The signature for the ad is missing, in the testing environment.
 static var missingSignature: SKAdTestError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 Check that you provide a signature in [`validate(_:publicKey:)`](../skadtestsession/validate%28_,publickey%29.md) or [`validateImpression(parameters:publicKey:)`](../skadtestsession/validateimpression%28parameters,publickey%29.md).
 

@@ -15,7 +15,7 @@ The latest accessory anchors updated with the most recent inertial data.
 final var latestAnchors: [AccessoryAnchor] { get }
 ```
 
-#### Discussion
+## Discussion
 
 These anchors provide higher frequency, lower latency and slightly lower accuracy than `anchorUpdates`. Use them directly or in combination with `predictAnchor(for:at:)`.
 

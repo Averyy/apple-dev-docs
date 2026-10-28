@@ -25,7 +25,7 @@ let kCGImagePropertyExifSpatialFrequencyResponse: CFString
 extern CFStringRef const kCGImagePropertyExifSpatialFrequencyResponse;
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see ISO 12233.
 

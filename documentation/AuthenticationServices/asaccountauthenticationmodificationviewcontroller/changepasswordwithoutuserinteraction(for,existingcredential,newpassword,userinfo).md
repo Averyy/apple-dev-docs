@@ -26,7 +26,7 @@ func changePasswordWithoutUserInteraction(for serviceIdentifier: ASCredentialSer
 
 - [Upgrading Account Security With an Account Authentication Modification Extension](../upgrading-account-security-with-an-account-authentication-modification-extension.md)
 
-#### Discussion
+## Discussion
 
 If the extension’s `Info.plist` file includes the [`ASAccountAuthenticationModificationPasswordGenerationRequirements`](../../BundleResources/information-property-list/nsextension/asaccountauthenticationmodificationpasswordgenerationrequirements.md) key, the value of `newPassword` satisfies the specified requirements.
 

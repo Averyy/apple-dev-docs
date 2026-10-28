@@ -18,7 +18,7 @@ The options that determine how the texture can be used.
 var textureUsage: MTLTextureUsage { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Corresponds to `MTLTextureDescriptor.usage`.
 

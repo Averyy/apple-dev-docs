@@ -20,7 +20,7 @@ int64 price
 - [Creating SKUs for your Apple In-App Purchases](./creating-your-purchases.md)
 - [Specifying prices for Advanced Commerce SKUs](./prices.md)
 
-#### Discussion
+## Discussion
 
 Provide SKU prices using the supported number of decimal places for the currency, in milliunit format. For more information, see [Specifying prices for Advanced Commerce SKUs](./prices.md).
 

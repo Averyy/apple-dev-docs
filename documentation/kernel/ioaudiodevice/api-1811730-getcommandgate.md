@@ -11,7 +11,7 @@ Returns the IOCommandGate for this IOAudioDevice
 virtual IOCommandGate *getCommandGate() const;
 ```
 
-#### Overview
+## Overview
 
 This IOCommandGate allows calls into this IOAudioDevice to be synchronized on the IOWorkLoop.
 

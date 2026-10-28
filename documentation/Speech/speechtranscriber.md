@@ -20,11 +20,11 @@ A speech-to-text transcription module that’s appropriate for normal conversati
 final class SpeechTranscriber
 ```
 
-#### Overview
+## Overview
 
 Several transcriber instances can share the same backing engine instances and models, so long as the transcribers are configured similarly in certain respects.
 
-##### Check device support
+### Check device support
 
 Use the [`isAvailable`](./speechtranscriber/isavailable.md) or [`supportedLocales`](./speechtranscriber/supportedlocales.md) properties to see if the current device supports the speech-to-text models used by `SpeechTranscriber`. If it does not, consider disabling the feature or using [`DictationTranscriber`](./dictationtranscriber.md) instead.
 

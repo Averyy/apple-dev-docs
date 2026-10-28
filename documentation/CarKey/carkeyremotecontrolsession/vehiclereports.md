@@ -19,7 +19,7 @@ The configuration details of the provisioned vehicles that match your company’
 var vehicleReports: [VehicleReport] { get throws }
 ```
 
-#### Discussion
+## Discussion
 
 The system maintains a cache of provisioned vehicles and updates that information when the configuration details change.
 

@@ -16,7 +16,7 @@ get includeQueries(): boolean;
 set includeQueries(value: boolean);
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `true`.
 

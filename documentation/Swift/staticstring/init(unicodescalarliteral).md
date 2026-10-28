@@ -21,7 +21,7 @@ Creates an instance initialized to a single Unicode scalar.
 init(unicodeScalarLiteral value: StaticString)
 ```
 
-#### Discussion
+## Discussion
 
 Do not call this initializer directly. It may be used by the compiler when you initialize a static string with a Unicode scalar.
 

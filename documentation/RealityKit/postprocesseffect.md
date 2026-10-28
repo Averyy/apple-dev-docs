@@ -19,7 +19,7 @@ A protocol that defines hooks for custom post processing effects.
 protocol PostProcessEffect : Sendable
 ```
 
-#### Overview
+## Overview
 
 RealityKit calls each method in this protocol at a predefined time. For example, RealityKit calls the [`postProcess(context:)`](./postprocesseffect/postprocess%28context%29.md) method every frame, after RealityKit renders the scene, but before displaying it in your app.
 

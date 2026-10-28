@@ -5,7 +5,7 @@
 
 Coordinate when publishers start sending elements to subscribers.
 
-#### Overview
+## Overview
 
 Sometimes, you want to configure a publisher before it starts producing elements, such as when a publisher has properties that affect its behavior. But commonly used subscribers like [`sink(receiveValue:)`](./publisher/sink%28receivevalue%29.md) demand unlimited elements immediately, which might prevent you from setting up the publisher the way you like. A publisher that produces values before you’re ready for them can also be a problem when the publisher has two or more subscribers. This multi-subscriber scenario creates a race condition: the publisher can send elements to the first subscriber before the second even exists.
 
@@ -13,7 +13,7 @@ Consider the scenario in the following figure. You create a [`URLSession.DataTas
 
 ![Figure 1](https://developer.apple.com/tutorials/images/com.apple.Combine/media-3544462.png)
 
-##### Hold Publishing by Using a Connectable Publisher
+### Hold Publishing by Using a Connectable Publisher
 
 To prevent a publisher from sending elements before you’re ready, Combine provides the [`ConnectablePublisher`](./connectablepublisher.md) protocol. A connectable publisher produces no elements until you call its [`connect()`](./connectablepublisher/connect%28%29.md) method. Even if it’s ready to produce elements and has unsatisfied demand, a connectable publisher doesn’t deliver any elements to subscribers until you explicitly call [`connect()`](./connectablepublisher/connect%28%29.md).
 
@@ -49,7 +49,7 @@ DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
 
 > ❗ **Important**: [`connect()`](./connectablepublisher/connect%28%29.md) returns a [`Cancellable`](./cancellable.md) instance that you need to retain. You can use this instance to cancel publishing, either by explicitly calling [`cancel()`](./cancellable/cancel%28%29.md) or allowing it to deinitialize.
 
-##### Use the Autoconnect Operator If You Don’t Need to Explicitly Connect
+### Use the Autoconnect Operator If You Don’t Need to Explicitly Connect
 
 Some Combine publishers already implement [`ConnectablePublisher`](./connectablepublisher.md), such as [`Publishers.Multicast`](./publishers/multicast.md) and [`Timer.TimerPublisher`](../Foundation/timer/timerpublisher.md). Using these publishers can cause the opposite problem: having to explicitly [`connect()`](./connectablepublisher/connect%28%29.md) could be burdensome if you don’t need to configure the publisher or attach multiple subscribers.
 

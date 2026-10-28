@@ -25,7 +25,7 @@ func removeTrack(_ track: AVCompositionTrack)
 - (void) removeTrack:(AVCompositionTrack *) track;
 ```
 
-#### Discussion
+## Discussion
 
 When you remove a track, the system sets its composition value to nil.
 

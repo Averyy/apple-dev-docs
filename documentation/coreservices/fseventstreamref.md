@@ -18,7 +18,7 @@ typealias FSEventStreamRef = OpaquePointer
 typedef struct __FSEventStream *FSEventStreamRef;
 ```
 
-#### Discussion
+## Discussion
 
 This is the type of a reference to an FSEventStream.
 

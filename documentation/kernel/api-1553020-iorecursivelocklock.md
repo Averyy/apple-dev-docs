@@ -24,7 +24,7 @@ void IORecursiveLockLock(struct IORecursiveLock *lock);
 void IORecursiveLockLock(IORecursiveLock *lock);
 ```
 
-#### Discussion
+## Discussion
 
 Lock the recursive lock. If the lock is held by another thread, block waiting for its unlock. This function may block and so should not be called from interrupt level or while a spin lock is held. The lock may be taken recursively by the same thread, with a balanced number of calls to IORecursiveLockUnlock.
 

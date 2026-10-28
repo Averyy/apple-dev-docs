@@ -19,7 +19,7 @@ func performClick(_ sender: Any?)
 - (void) performClick:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 This method essentially highlights the button, sends the button’s action message to the target object, and then unhighlights the button.
 

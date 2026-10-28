@@ -23,7 +23,7 @@ var kDNSServiceType_NSEC3: Int { get }
 kDNSServiceType_NSEC3
 ```
 
-#### Discussion
+## Discussion
 
 Hashed Authenticated Denial of Existence
 

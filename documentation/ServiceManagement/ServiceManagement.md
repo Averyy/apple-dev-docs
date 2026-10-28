@@ -10,7 +10,7 @@ Manage startup items, launch agents, and launch daemons from within an app.
 - Mac Catalyst 13.0+
 - macOS 10.6+
 
-#### Overview
+## Overview
 
 Use Service Management to install and observe the permission settings of three supplemental helper executables that macOS supports. You can use all three of these to provide additional functionality related to your app, from inside your app’s bundle:
 

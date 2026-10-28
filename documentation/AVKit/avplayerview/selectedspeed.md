@@ -19,7 +19,7 @@ var selectedSpeed: AVPlaybackSpeed? { get }
 @property (readonly, nullable) AVPlaybackSpeed * selectedSpeed;
 ```
 
-#### Discussion
+## Discussion
 
 This value reflects the associated player’s [`defaultRate`](../../AVFoundation/avplayer/defaultrate.md) property value. If you set the [`defaultRate`](../../AVFoundation/avplayer/defaultrate.md) to a value that doesn’t match a speed contained in the [`speeds`](./speeds.md) property, the system sets this value to `nil`.
 

@@ -19,7 +19,7 @@ var delaysRotationEvents: Bool { get set }
 @property BOOL delaysRotationEvents;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), rotation events are delivered to the target view only after gesture recognition fails. Set this property to [`true`](../../Swift/true.md) to prevent the view from processing events that might be recognized as part of a gesture. Once gesture recognition begins, all types of events are delayed until gesture recognition fails.
 

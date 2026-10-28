@@ -25,7 +25,7 @@ class func canonicalLocaleIdentifier(from string: String) -> String
 + (NSString *) canonicalLocaleIdentifierFromString:(NSString *) string;
 ```
 
-#### Return Value
+## Return Value
 
 The canonical identifier for an the locale identified by `string`.
 

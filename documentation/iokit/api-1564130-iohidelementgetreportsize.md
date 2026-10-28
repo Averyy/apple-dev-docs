@@ -16,7 +16,7 @@ Returns the report size in bits for the element.
 uint32_t IOHIDElementGetReportSize(IOHIDElementRef element);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the report size.
 

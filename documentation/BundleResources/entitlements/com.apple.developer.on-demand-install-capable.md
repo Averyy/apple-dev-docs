@@ -15,7 +15,7 @@ A Boolean value that indicates whether a bundle represents an App Clip.
 - **Name**: `com.apple.developer.on-demand-install-capable`
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 Adding an App Clip target to your project as described in [Creating an App Clip with Xcode](../../AppClip/creating-an-app-clip-with-xcode.md) enables a capability called On Demand Install Capable for the App Clip target.
 

@@ -25,7 +25,7 @@ func CFMessagePortSendRequest(_ remote: CFMessagePort!, _ msgid: Int32, _ data: 
 extern SInt32 CFMessagePortSendRequest(CFMessagePortRef remote, SInt32 msgid, CFDataRef data, CFTimeInterval sendTimeout, CFTimeInterval rcvTimeout, CFStringRef replyMode, CFDataRef*returnData);
 ```
 
-#### Return Value
+## Return Value
 
 Error code indicating success or failure. See [CFMessagePortSendRequest Error Codes](./api-1561514-cfmessageportsendrequest-error-c.md) for the possible return values.
 

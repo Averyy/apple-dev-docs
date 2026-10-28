@@ -19,7 +19,7 @@ var parent: NSViewController? { get }
 @property (readonly, nullable) NSViewController * parentViewController;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is `nil` if the view controller has no parent view controller, such as if the view controller is a window’s content view controller.
 

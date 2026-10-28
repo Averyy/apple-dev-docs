@@ -19,7 +19,7 @@ The amount of opacity specified as a single value.
 var scale: Float
 ```
 
-#### Discussion
+## Discussion
 
 If [`texture`](./texture.md) is `nil`, RealityKit uses this value for the opacity of the entire material. If [`texture`](./texture.md) isn’t `nil`, RealityKit multiplies the value sampled from [`texture`](./texture.md) by this property to calculate the final opacity values.
 

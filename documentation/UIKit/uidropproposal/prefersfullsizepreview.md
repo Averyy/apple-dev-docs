@@ -22,7 +22,7 @@ var prefersFullSizePreview: Bool { get set }
 @property (nonatomic) BOOL prefersFullSizePreview;
 ```
 
-#### Discussion
+## Discussion
 
 Set [`prefersFullSizePreview`](./prefersfullsizepreview.md) to [`true`](../../Swift/true.md) to show the preview at its original size, not scaled down to a smaller size. For example, you might set this property to [`true`](../../Swift/true.md) when the user moves items from a nearby view and scaling down the preview is distracting.
 

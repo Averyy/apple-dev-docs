@@ -21,7 +21,7 @@ Creates a string representation of a measurement.
 func format(_ measurement: Measurement<UnitType>) -> String
 ```
 
-#### Return Value
+## Return Value
 
 A formatted representation of `measurement`, using the properties of this style.
 

@@ -24,7 +24,7 @@ var activeEnergyBurnedGoal: HKQuantity { get set }
 @property (nonatomic, strong) HKQuantity * activeEnergyBurnedGoal;
 ```
 
-#### Discussion
+## Discussion
 
 The [`HKQuantity`](../hkquantity.md) object for this property must use energy units.
 

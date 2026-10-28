@@ -21,7 +21,7 @@ The next value from the asynchronous stream.
 mutating func next(isolation actor: isolated (any Actor)?) async throws(Failure) -> Element?
 ```
 
-#### Discussion
+## Discussion
 
 When `next()` returns `nil`, this signifies the end of the `AsyncThrowingStream`.
 

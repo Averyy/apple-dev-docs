@@ -19,7 +19,7 @@ var translatesAutoresizingMaskIntoConstraints: Bool { get set }
 @property BOOL translatesAutoresizingMaskIntoConstraints;
 ```
 
-#### Discussion
+## Discussion
 
 When this property is set to [`true`](../../Swift/true.md), the view’s superview looks at the view’s autoresizing mask, produces constraints that implement it, and adds those constraints to itself (the superview). If your view has flexible constraints that require dynamic adjustment, set this property to [`false`](../../Swift/false.md) and apply the constraints yourself.
 

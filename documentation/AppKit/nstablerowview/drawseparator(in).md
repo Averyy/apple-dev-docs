@@ -19,7 +19,7 @@ func drawSeparator(in dirtyRect: NSRect)
 - (void) drawSeparatorInRect:(NSRect) dirtyRect;
 ```
 
-#### Discussion
+## Discussion
 
 By default, the separator is only drawn if the enclosing table’s [`gridStyleMask`](../nstableview/gridstylemask.md) is set to include a horizontal separator.
 

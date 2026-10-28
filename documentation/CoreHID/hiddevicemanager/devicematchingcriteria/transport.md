@@ -15,7 +15,7 @@ The data transport for the device.
 var transport: HIDDeviceTransport?
 ```
 
-#### Discussion
+## Discussion
 
 A[`HIDDeviceTransport`](../../hiddevicetransport.md) that specifies the type of transport that the data sent to and from the device  uses.
 

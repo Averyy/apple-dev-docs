@@ -19,7 +19,7 @@ func drawGrid(inClipRect clipRect: NSRect)
 - (void) drawGridInClipRect:(NSRect) clipRect;
 ```
 
-#### Discussion
+## Discussion
 
 Draws the grid lines within `clipRect`, using the grid color set with [`gridColor`](./gridcolor.md).
 

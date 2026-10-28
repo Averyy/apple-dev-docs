@@ -23,7 +23,7 @@ var kCTFontTableCvar: Int { get }
 kCTFontTableCvar
 ```
 
-#### Discussion
+## Discussion
 
 Font table tag for control value variation, or CVT variation.
 

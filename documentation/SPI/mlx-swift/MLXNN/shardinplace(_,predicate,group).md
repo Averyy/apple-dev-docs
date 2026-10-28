@@ -17,7 +17,7 @@ Shard a module in place, choosing how each parameter is split.
 func shardInPlace(_ module: Module, predicate: (String, MLXArray) -> (axis: Int, segments: Segments)?, group: MLXDistributed.Group? = nil) throws
 ```
 
-#### Discussion
+## Discussion
 
 This is the general form of [`shardInPlace(_:sharding:segments:group:)`](./shardinplace%28_,sharding,segments,group%29.md), and matches what Python’s `shard_inplace` accepts.  The predicate receives a parameter and its path and returns the axis to shard it along, with the segments that make it up, or `nil` to leave the parameter whole.
 

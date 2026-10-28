@@ -26,7 +26,7 @@ func fileManager(_ fm: FileManager, willProcessPath path: String)
 - (void) fileManager:(NSFileManager *) fm willProcessPath:(NSString *) path;
 ```
 
-#### Discussion
+## Discussion
 
 You can implement this method in your handler to monitor file operations.
 

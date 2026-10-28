@@ -24,7 +24,7 @@ var canContainMovieFragments: Bool { get }
 @property (nonatomic, readonly) BOOL canContainMovieFragments;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is `YES` if an `mvex` box is present in the `moov` box. The `mvex` box is necessary to signal the possible presence of later `moof` boxes.
 

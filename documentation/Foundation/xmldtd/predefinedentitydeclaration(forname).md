@@ -20,11 +20,11 @@ class func predefinedEntityDeclaration(forName name: String) -> XMLDTDNode?
 + (NSXMLDTDNode *) predefinedEntityDeclarationForName:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 An autoreleased [`XMLDTDNode`](../xmldtdnode.md) object, or `nil` if there is no match for `name`.
 
-#### Discussion
+## Discussion
 
 The five predefined entity references (or character references) are “<” (less-than sign), “>” (greater-than sign), “&” (ampersand), “"” (quotation mark), and “'” (apostrophe).
 

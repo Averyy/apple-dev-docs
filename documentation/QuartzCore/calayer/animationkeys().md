@@ -24,11 +24,11 @@ func animationKeys() -> [String]?
 - (NSArray<NSString *> *) animationKeys;
 ```
 
-#### Return Value
+## Return Value
 
 An array of [`NSString`](../../Foundation/nsstring.md) objects identifying the current animations.
 
-#### Discussion
+## Discussion
 
 The order of the array matches the order in which animations will be applied to the layer.
 

@@ -21,7 +21,7 @@ Deletes a specific subscription and delivers the deleted subscription’s identi
 - (void) deleteSubscriptionWithID:(CKSubscriptionID) subscriptionID completionHandler:(void (^)(CKSubscriptionID subscriptionID, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 The completion handler takes the following parameters:
 

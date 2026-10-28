@@ -23,11 +23,11 @@ class func success(with resolvedTemporalEventTriggerTypeOptions: INTemporalEvent
 + (instancetype) successWithResolvedTemporalEventTriggerTypeOptions:(INTemporalEventTriggerTypeOptions) resolvedTemporalEventTriggerTypeOptions;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INTemporalEventTriggerTypeOptionsResolutionResult`](../intemporaleventtriggertypeoptionsresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method to create a result object when you’re able to search through the user’s notes based on a specified temporal trigger event.
 

@@ -27,7 +27,7 @@ func insertDebugCaptureBoundary()
 - (void) insertDebugCaptureBoundary;
 ```
 
-#### Discussion
+## Discussion
 
 You can explicitly define the boundary between two GPU captures by calling this method, which overrides the default behavior in Xcode when you caputre a GPU frame. If your app doesn’t call the method, Xcode adds a frame boundary each time your app calls the [`present(_:)`](../mtlcommandbuffer/present%28_%29.md) or [`present(_:atTime:)`](../mtlcommandbuffer/present%28_,attime%29.md) methods.
 

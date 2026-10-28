@@ -17,7 +17,7 @@ Connect to the provided endpoint.
 func connect(context: Self.Context) async throws
 ```
 
-#### Discussion
+## Discussion
 
 This is called when the session begins. Your extension should begin connecting to `context.endpoint` immediately.
 

@@ -23,7 +23,7 @@ func starts(@RegexComponentBuilder with content: () -> some RegexComponent) -> B
 
 Available when `SubSequence` is `Substring`.
 
-#### Return Value
+## Return Value
 
 `true` if the initial elements of this collection match regex returned by `content`; otherwise, `false`.
 

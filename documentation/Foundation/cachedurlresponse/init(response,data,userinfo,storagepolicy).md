@@ -25,7 +25,7 @@ init(response: URLResponse, data: Data, userInfo: [AnyHashable : Any]? = nil, st
 - (instancetype) initWithResponse:(NSURLResponse *) response data:(NSData *) data userInfo:(NSDictionary *) userInfo storagePolicy:(NSURLCacheStoragePolicy) storagePolicy;
 ```
 
-#### Return Value
+## Return Value
 
 A cached URL response object, containing the response and data.
 

@@ -19,7 +19,7 @@ class NSColorSpace
 @interface NSColorSpace : NSObject
 ```
 
-#### Overview
+## Overview
 
 You can make custom color spaces from ColorSync profiles or from ICC profiles. [`NSColorSpace`](./nscolorspace.md) also has factory methods that return objects representing the system color spaces.
 

@@ -19,7 +19,7 @@ func sendData(toTransport inDataToSend: UnsafeMutableRawPointer!, dataLength inD
 - (OBEXError) sendDataToTransport:(void *) inDataToSend dataLength:(size_t) inDataLength;
 ```
 
-#### Discussion
+## Discussion
 
 Tranport subclasses must override this! When called you should send the data over the transport to the remote session.
 

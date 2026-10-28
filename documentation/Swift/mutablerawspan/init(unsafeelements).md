@@ -21,7 +21,7 @@ Unsafely convert a typed span to a raw span.
 init<Element>(unsafeElements elements: consuming MutableSpan<Element>)
 ```
 
-#### Discussion
+## Discussion
 
 Creates a `MutableRawSpan` over the memory represented by a `MutableSpan<Element>`.
 

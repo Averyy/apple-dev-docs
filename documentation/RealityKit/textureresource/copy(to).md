@@ -28,7 +28,7 @@ Asynchronously copies texture data to another texture.
 @preconcurrency func copy(to texture: any MTLTexture) throws
 ```
 
-#### Discussion
+## Discussion
 
 This method copies all available mipmap sizes to `texture`.
 

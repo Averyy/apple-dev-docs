@@ -41,11 +41,11 @@ convenience init(image: NSImage)
 + (instancetype) textureWithImage:(NSImage *) image;
 ```
 
-#### Return Value
+## Return Value
 
 A new texture object.
 
-#### Discussion
+## Discussion
 
 The image data is copied before control is returned to your game.
 

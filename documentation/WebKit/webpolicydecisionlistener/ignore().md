@@ -20,7 +20,7 @@ func ignore()
 - (void) ignore;
 ```
 
-#### Discussion
+## Discussion
 
 You might invoke this method to handle the resource request yourself. For example, you might want to open a new window, open a window behind the current window, open a URL in an external application, or show a file URL location in the Finder.
 

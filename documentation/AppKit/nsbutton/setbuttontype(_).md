@@ -19,7 +19,7 @@ func setButtonType(_ type: NSButton.ButtonType)
 - (void) setButtonType:(NSButtonType) type;
 ```
 
-#### Discussion
+## Discussion
 
 This method causes the button to update to reflect the new type before the method finishes executing.
 

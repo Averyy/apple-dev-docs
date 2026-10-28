@@ -21,7 +21,7 @@ A base type that represents any sort of byte stream, including files and in-memo
 static var data: UTType { get }
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.data`.
 

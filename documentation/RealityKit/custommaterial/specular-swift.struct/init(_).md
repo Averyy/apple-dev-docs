@@ -19,7 +19,7 @@ Creates an object from a physically based material’s specular property.
 init(_ value: PhysicallyBasedMaterial.Specular)
 ```
 
-#### Discussion
+## Discussion
 
 This initializer creates an object by copying the values from an existing [`PhysicallyBasedMaterial.Specular`](../../physicallybasedmaterial/specular-swift.struct.md) object.
 

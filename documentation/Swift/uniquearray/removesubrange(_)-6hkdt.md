@@ -21,7 +21,7 @@ Removes the specified subrange of elements from the array.
 mutating func removeSubrange(_ bounds: some RangeExpression<Int>)
 ```
 
-#### Discussion
+## Discussion
 
 > **Complexity**: O(`self.count`)
 

@@ -13,7 +13,7 @@
 MBUF_CSUM_IP_GOOD = 0x0200
 ```
 
-#### Discussion
+## Discussion
 
 Indicates whether or not the IP checksum was good or bad. Only valid when MBUF_CSUM_DID_IP is set.
 

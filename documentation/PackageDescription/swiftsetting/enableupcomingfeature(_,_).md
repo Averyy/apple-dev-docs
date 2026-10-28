@@ -15,7 +15,7 @@ Enable an upcoming feature with the given name.
 static func enableUpcomingFeature(_ name: String, _ condition: BuildSettingCondition? = nil) -> SwiftSetting
 ```
 
-#### Discussion
+## Discussion
 
 An upcoming feature is one that is available in Swift as of a certain language version, but isn’t available by default in prior language modes because it has some impact on source compatibility.
 

@@ -8,7 +8,7 @@ framework: "Swift-Org/diagnostics"
 **Framework**: Swift-Org/diagnostics  
 **Role**: Article
 
-#### Overview
+## Overview
 
 When you use a `weak` or `unowned` capture list item in a closure, but that object is implicitly captured as a strong reference in an outer escaping closure, the compiler emits a warning. This warning highlights cases that can cause unexpected reference cycles or unintended object lifetime extension.
 

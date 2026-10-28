@@ -21,7 +21,7 @@ Accesses the element indicated by `position`.
 subscript(position: AnyBidirectionalCollection<Element>.Index) -> Element { get }
 ```
 
-#### Overview
+## Overview
 
 > **Precondition**: `position` indicates a valid position in `self` and `position != endIndex`.
 

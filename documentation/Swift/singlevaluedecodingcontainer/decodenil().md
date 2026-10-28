@@ -22,7 +22,7 @@ Decodes a null value.
 func decodeNil() -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 Whether the encountered value was null.
 

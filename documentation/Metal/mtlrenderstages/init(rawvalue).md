@@ -20,7 +20,7 @@ Creates a render stage from a raw value.
 init(rawValue: UInt)
 ```
 
-#### Discussion
+## Discussion
 
 Use of the [`MTLRenderStages`](../mtlrenderstages.md) type’s static properties, such as [`mesh`](./mesh.md), [`vertex`](./vertex.md), or [`fragment`](./fragment.md) instead of creating a render stage instance yourself with this initializer.
 

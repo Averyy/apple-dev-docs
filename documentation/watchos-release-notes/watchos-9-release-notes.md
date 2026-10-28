@@ -5,63 +5,63 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 The watchOS 9 SDK provides support to develop watchOS apps for Apple Watch devices running watchOS 9. The SDK comes bundled with Xcode 14. For information on the compatibility requirements for Xcode 14, see [Xcode 14 Release Notes](../Xcode-Release-Notes/xcode-14-release-notes.md).
 
-##### General
+### General
 
 - After updating to watchOS 9, your Apple Watch Series 4 or Series 5 will recalibrate and then estimate its maximum battery capacity more accurately. (93206868)
 
-##### CallKit
+### CallKit
 
-###### Known Issues
+#### Known Issues
 
 - Compilation of apps integrated with CallKit might result in an error: “Value of type `CXProviderConfiguration` has no member `supportedHandleTypes` on watchOS 9”. (97582165)
 
   **Workaround:** Use `__supportedHandleTypes` instead of `supportedHandleTypes`.
 
-##### CoreGraphics
+### CoreGraphics
 
-###### Deprecations
+#### Deprecations
 
 - To improve security, `CGImageCreate` enforces parameter correctness on macOS 13 Ventura, iOS 16, iPadOS 16, watchOS 9, and tvOS 16. Passing an incorrect `CGImageByteOrderInfo` is no longer supported, and will result in images failing to load. (94855401)
 
-##### DeviceDiscoveryUI
+### DeviceDiscoveryUI
 
-###### Known Issues
+#### Known Issues
 
 - Devices running beta 4 or later aren’t backwards compatible with devices running earlier beta versions. (95233878)
 
-##### Health
+### Health
 
-###### New Features
+#### New Features
 
 - AFib History is now available in the United States. (95627199)
 
-##### HealthKit
+### HealthKit
 
-###### New Features
+#### New Features
 
 - HealthKit workout APIs now support multisport workouts with activities of swimming, cycling, and running. (82588168)
 
 - New data types for running workout metrics like running power, ground contact time, vertical oscillation, running speed, and stride length. (82974514)
 
-##### Networking
+### Networking
 
-###### New Features
+#### New Features
 
 - Added `NSURLSession` support for client-certificate based authentication. (24523955)
 
 - Added `URLSession` support for Private Access Tokens. (82937526)
 
-###### Deprecations
+#### Deprecations
 
 - FTP is deprecated for `URLSession` and related APIs. Please adopt modern secure networking protocols such as HTTPS. (92623659)
 
-##### StoreKit
+### StoreKit
 
-###### New Features
+#### New Features
 
 - The `recentSubscriptionStartDate` property is included in [`Product.SubscriptionInfo.RenewalInfo`](../StoreKit/product/subscriptioninfo/renewalinfo.md). It represents the date that marks the start of the most recent period of continuous subscription. A period is considered a continuous subscription if there’s no more than a 60-day gap between any two subscribed periods. (86599570)
 
@@ -77,27 +77,27 @@ The watchOS 9 SDK provides support to develop watchOS apps for Apple Watch devic
 
 - All [StoreKit](../StoreKit/StoreKit.md) APIs are now annotated for sendability and main actor isolation. (84157048)
 
-###### Deprecations
+#### Deprecations
 
 - Deprecated the SKDownload API and removed the option to upload nonconsumable in-app purchase assets for Apple to host. In addition, support for managing these assets in App Store Connect is no longer available as of April 2022. (89764253)
 
-##### SwiftUI
+### SwiftUI
 
-###### New Features
+#### New Features
 
 - Custom types conforming to `ToolbarContent` now support dynamic properties like `@Environment`. (94117842)
 
 - For `control`, [`Section`](../SwiftUI/section.md), or other views that have a [`Label`](../SwiftUI/label.md), the [`ViewBuilder`](../SwiftUI/viewbuilder.md) content now automatically arranges and styles multiple views as hierarchical elements, such as `title` and `subtitle`. If the `label` views are intended to be arranged horizontally rather than hierarchically, wrap the views within an [`HStack`](../SwiftUI/hstack.md). (85184563)
 
-##### Voice Shortcuts
+### Voice Shortcuts
 
-###### Known Issues
+#### Known Issues
 
 - When saying an App Shortcut phrase to Siri, Siri launches the app or ends up with an unexpected result. (93611920)
 
-##### Wallet
+### Wallet
 
-###### Known Issues
+#### Known Issues
 
 - American Express cards might need to be removed and re-added to Wallet after updating to watchOS 9 beta 6 or later. (97990752)
 

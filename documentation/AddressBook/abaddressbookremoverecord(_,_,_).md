@@ -23,7 +23,7 @@ func ABAddressBookRemoveRecord(_ addressBook: ABAddressBook!, _ record: ABRecord
 extern bool ABAddressBookRemoveRecord(ABAddressBookRef addressBook, ABRecordRef record, CFErrorRef*error);
 ```
 
-#### Return Value
+## Return Value
 
 `true` when successful, `false` otherwise.
 

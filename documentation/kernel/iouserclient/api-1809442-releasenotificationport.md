@@ -12,11 +12,11 @@ static IOReturn releaseNotificationPort(
  mach_port_treference);
 ```
 
-#### Return Value
+## Return Value
 
 A return code.
 
-#### Overview
+## Overview
 
 The mach_port_t passed to the registerNotificationPort() methods should be released to balance each call to registerNotificationPort(). Behavior is undefined if these calls are not correctly balanced.
 

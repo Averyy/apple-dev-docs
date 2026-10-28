@@ -19,7 +19,7 @@ func lineBoxRects() -> [Any]!
 - (NSArray *) lineBoxRects;
 ```
 
-#### Return Value
+## Return Value
 
 An array of rectangles, in which each rectangle represents the bounding box of a line of text in the node.
 

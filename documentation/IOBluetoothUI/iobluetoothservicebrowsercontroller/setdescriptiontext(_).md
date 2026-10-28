@@ -19,7 +19,7 @@ func setDescriptionText(_ descriptionText: String!)
 - (void) setDescriptionText:(NSString *) descriptionText;
 ```
 
-#### Discussion
+## Discussion
 
 The description text should be localized for best user experience.
 

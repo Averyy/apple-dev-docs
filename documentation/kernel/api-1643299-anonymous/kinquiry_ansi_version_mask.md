@@ -13,7 +13,7 @@
 kINQUIRY_ANSI_VERSION_Mask = 0x07
 ```
 
-#### Discussion
+## Discussion
 
 Mask for valid bits for ANSI Version.
 

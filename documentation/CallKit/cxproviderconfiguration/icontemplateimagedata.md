@@ -24,7 +24,7 @@ var iconTemplateImageData: Data? { get set }
 @property (nonatomic, copy, nullable) NSData * iconTemplateImageData;
 ```
 
-#### Discussion
+## Discussion
 
 The icon image should be a square with side length of 40 points. The alpha channel of the image is used to create a white image mask, which is used in the system native in-call UI for the button which takes the user from this system UI to the 3rd-party app.
 

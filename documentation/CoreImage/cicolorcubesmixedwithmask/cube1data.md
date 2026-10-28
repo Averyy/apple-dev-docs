@@ -25,7 +25,7 @@ var cube1Data: Data { get set }
 @property (nonatomic, retain) NSData * cube1Data;
 ```
 
-#### Discussion
+## Discussion
 
 This filter maps color values in the input image to new color values using a three-dimensional color lookup table. For each RGBA pixel in the input image, the filter uses the R, G, and B component values as indices to identify a location in the table; the RGBA value at that location becomes the RGBA value of the output pixel.
 

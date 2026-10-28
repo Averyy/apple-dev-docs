@@ -23,7 +23,7 @@ var matrix: simd_float4x3
 simd_float4x3 matrix;
 ```
 
-#### Discussion
+## Discussion
 
 A matrix with 3 rows and 4 columns.
 

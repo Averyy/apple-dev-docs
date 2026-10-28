@@ -25,11 +25,11 @@ func CFURLCopyLastPathComponent(_ url: CFURL!) -> CFString!
 extern CFStringRefCFURLCopyLastPathComponent(CFURLRef url);
 ```
 
-#### Return Value
+## Return Value
 
 The last path component of `url`. Ownership follows the create rule. See [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
-#### Discussion
+## Discussion
 
 Note that if there is no last path component, this function returns an empty string. In the code sample shown, `lastPathComponent` is an empty string.
 

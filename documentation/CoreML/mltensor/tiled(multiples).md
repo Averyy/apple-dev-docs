@@ -21,11 +21,11 @@ Returns a tensor by replicating its elements multiple times.
 func tiled(multiples: [Int]) -> MLTensor
 ```
 
-#### Return Value
+## Return Value
 
 The replicated tensor.
 
-#### Discussion
+## Discussion
 
 The `multiples` argument specifies the multiplier across each dimensions, i.e., the output dimension at index `i` is equal to `shape[i] * multiples[i]`.
 

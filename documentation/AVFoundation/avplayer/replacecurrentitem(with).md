@@ -30,7 +30,7 @@ func replaceCurrentItem(with item: AVPlayerItem?)
 
 - [Controlling the transport behavior of a player](../controlling-the-transport-behavior-of-a-player.md)
 
-#### Discussion
+## Discussion
 
 The player item replacement occurs immediately and the item becomes the player’s [`currentItem`](./currentitem.md). Calling this method with the player’s current player item has no effect.
 

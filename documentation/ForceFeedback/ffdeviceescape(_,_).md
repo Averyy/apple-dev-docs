@@ -20,17 +20,17 @@ func FFDeviceEscape(_ deviceReference: FFDeviceObjectReference!, _ pFFEffectEsca
 extern HRESULT FFDeviceEscape(FFDeviceObjectReference deviceReference, FFEFFESCAPE *pFFEffectEscape);
 ```
 
-#### Return Value
+## Return Value
 
 If the method succeeds, the return value is FF_OK. If the method fails, the return value can be one of the following error values:
 
-#### Discussion
+## Discussion
 
 FFERR_INVALIDPARAM
 
 FFERR_UNSUPPORTED
 
-#### Discussion
+## Discussion
 
 Because each driver implements different escapes, it is the application’s responsibility to ensure that it is sending the escape to the correct driver.
 

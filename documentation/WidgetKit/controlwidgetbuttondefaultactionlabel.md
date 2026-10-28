@@ -20,7 +20,7 @@ A view representing the default action label for a `ControlWidgetButton` if none
 @preconcurrency struct ControlWidgetButtonDefaultActionLabel
 ```
 
-#### Overview
+## Overview
 
 You don’t initialize this type yourself. Instead WidgetKit will create this type when using a `ControlWidgetButton` initializer that doesn’t provide a label.
 

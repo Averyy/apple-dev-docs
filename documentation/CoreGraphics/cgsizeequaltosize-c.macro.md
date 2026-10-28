@@ -21,7 +21,7 @@ Returns whether two sizes are equal.
 #define CGSizeEqualToSize
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../Swift/true.md) if the two specified sizes are equal; otherwise, [`false`](../Swift/false.md).
 

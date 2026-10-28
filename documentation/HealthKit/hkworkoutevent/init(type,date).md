@@ -26,7 +26,7 @@ convenience init(type: HKWorkoutEventType, date: Date)
 + (instancetype) workoutEventWithType:(HKWorkoutEventType) type date:(NSDate *) date;
 ```
 
-#### Return Value
+## Return Value
 
 A new workout event.
 

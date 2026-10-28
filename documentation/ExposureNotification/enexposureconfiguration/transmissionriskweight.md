@@ -23,7 +23,7 @@ var transmissionRiskWeight: Double { get set }
 @property (nonatomic, assign, readwrite) double transmissionRiskWeight;
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  This property is available in iOS 12.5, and in iOS 13.5 and later.
 

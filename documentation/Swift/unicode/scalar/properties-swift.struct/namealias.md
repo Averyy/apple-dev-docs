@@ -21,7 +21,7 @@ The normative formal alias of the scalar.
 var nameAlias: String? { get }
 ```
 
-#### Discussion
+## Discussion
 
 The name of a scalar is immutable and never changed in future versions of the Unicode Standard. The `nameAlias` property is provided to issue corrections if a name was issued erroneously. For example, the `name` of U+FE18 is “PRESENTATION FORM FOR VERTICAL RIGHT WHITE LENTICULAR BRAKCET” (note that “BRAKCET” is misspelled). The `nameAlias` property then contains the corrected name.
 

@@ -21,7 +21,7 @@ A block buffer that provides read-write access to a range of bytes.
 struct CMMutableDataBlockBuffer
 ```
 
-#### Overview
+## Overview
 
 Mutable block buffer provides a contiguous range of data offsets (from 0 to [`count`](./cmmutabledatablockbuffer/count.md)) a possibly non-contiguous range of bytes. The bytes referenced by this buffer are mutable.
 

@@ -24,7 +24,7 @@ var occurrenceDate: Date! { get }
 @property (nonatomic, readonly, null_unspecified) NSDate * occurrenceDate;
 ```
 
-#### Discussion
+## Discussion
 
 This value remains the same even when the event has been detached and its start date has changed. Floating events (such as all-day events) are returned in the default time zone.
 

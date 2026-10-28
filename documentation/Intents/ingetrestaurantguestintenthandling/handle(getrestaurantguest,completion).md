@@ -27,7 +27,7 @@ func handle(getRestaurantGuest intent: INGetRestaurantGuestIntent) async -> INGe
 - (void) handleGetRestaurantGuest:(INGetRestaurantGuestIntent *) intent completion:(void (^)(INGetRestaurantGuestIntentResponse *response)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 In your implementation of this method, you should create an [`INRestaurantGuest`](../inrestaurantguest.md) object containing the current user’s information and assign it to your response object. You should also create an [`INRestaurantGuestDisplayPreferences`](../inrestaurantguestdisplaypreferences.md) object and specify the options for displaying the user’s information. When done, execute the provided block with your response object.
 

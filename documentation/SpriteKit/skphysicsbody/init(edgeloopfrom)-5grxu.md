@@ -29,11 +29,11 @@ init(edgeLoopFrom path: CGPath)
 
 - [Shaping a Physics Body to Match a Node’s Graphics](../shaping-a-physics-body-to-match-a-node-s-graphics.md)
 
-#### Return Value
+## Return Value
 
 A new edge-based physics body.
 
-#### Discussion
+## Discussion
 
 If the path is not already closed, a loop is automatically created by joining the last point to the first.
 

@@ -19,7 +19,7 @@ The values to use as inputs to the salts for deriving the symmetric key.
 @interface ASAuthorizationPublicKeyCredentialPRFAssertionInputValues : NSObject
 ```
 
-#### Overview
+## Overview
 
 This type is analogous to `AuthenticationExtensionsPRFValues` in the WebAuthn specification.
 

@@ -21,11 +21,11 @@ Sends a dictionary message over the session to the destination service, blocking
 func sendSync(message: XPCDictionary) throws -> XPCDictionary
 ```
 
-#### Return Value
+## Return Value
 
 If successful, the response to the message; otherwise this method throws an error.
 
-#### Discussion
+## Discussion
 
 This method supports priority inversion avoidance. Use this method instead of calling [`send(message:replyHandler:)`](./send%28message,replyhandler%29.md) and using a semaphore.
 

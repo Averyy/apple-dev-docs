@@ -23,7 +23,7 @@ func firstRange(of regex: some RegexComponent) -> Range<Self.Index>?
 
 Available when `SubSequence` is `Substring`.
 
-#### Return Value
+## Return Value
 
 A range in the collection of the first occurrence of `regex`. Returns `nil` if `regex` is not found.
 

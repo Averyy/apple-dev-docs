@@ -25,7 +25,7 @@ var apertureBladeCount: Int { get set }
 @property (nonatomic) NSInteger apertureBladeCount;
 ```
 
-#### Discussion
+## Discussion
 
 When the [`wantsDepthOfField`](./wantsdepthoffield.md) setting is enabled, SceneKit renders scenes using the camera with a depth-of-field blur (also called *bokeh*) effect modeled after those created by a real-world physical camera. One feature of real-world camera bokeh effects is the tendency of distant bright points to blur into larger shapes based on the shape of the aperture between the camera’s lens and its imaging plane (film or sensor). Physical cameras control aperture using a mechanism that moves several flat blades in or out to create a smaller or larger opening, so the natural bokeh effect in traditional photography produces polygon-shaped blur effects.
 

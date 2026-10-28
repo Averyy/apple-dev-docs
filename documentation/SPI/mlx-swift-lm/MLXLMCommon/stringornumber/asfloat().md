@@ -17,7 +17,7 @@ Return the value as an optional float.
 func asFloat() -> Float?
 ```
 
-#### Discussion
+## Discussion
 
 This will not coerce `Int` or `String` to `Float`.
 

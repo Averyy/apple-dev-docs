@@ -5,19 +5,19 @@
 
 Learn about important changes to Security.
 
-#### Overview
+## Overview
 
 Browse notable changes in [Security](../Security/Security.md).
 
-#### June 2024
+## June 2024
 
-- Prepare to handle errors in your app’s file access actions if your app doesn’t adopt the [App Sandbox Entitlement](../BundleResources/entitlements/com_apple_security_app-sandbox.md) and tries to access files in another app’s App Sandbox container. The exception to this occurs when the person using your app permits access those files.
+- Prepare to handle errors in your app’s file access actions if your app doesn’t adopt the [App Sandbox Entitlement](../BundleResources/entitlements/com.apple.security.app-sandbox.md) and tries to access files in another app’s App Sandbox container. The exception to this occurs when the person using your app permits access those files.
 
-#### June 2023
+## June 2023
 
-- Define launch constraints to limit which apps and processes can launch your macOS apps and helper tools. For more information, see [Defining launch environment and library constraints](../Security/defining_launch_environment_and_library_constraints.md).
+- Define launch constraints to limit which apps and processes can launch your macOS apps and helper tools. For more information, see [Defining launch environment and library constraints](../Security/defining-launch-environment-and-library-constraints.md).
 - Define library constraints to limit which plug-ins and dynamic libraries your macOS process can load.
-- App Sandbox now associates your macOS app with its sandbox container using its code signature. The operating system asks the person using your app to grant permission if it tries to access a sandbox container associated with a different app. For more information, see [Accessing files from the macOS App Sandbox](../Security/app_sandbox/accessing_files_from_the_macos_app_sandbox.md).
+- App Sandbox now associates your macOS app with its sandbox container using its code signature. The operating system asks the person using your app to grant permission if it tries to access a sandbox container associated with a different app. For more information, see [Accessing files from the macOS App Sandbox](../Security/accessing-files-from-the-macos-app-sandbox.md).
 
 ## See Also
 

@@ -25,7 +25,7 @@ func createDirectory(atPath path: String, withIntermediateDirectories createInte
 - (BOOL) createDirectoryAtPath:(NSString *) path withIntermediateDirectories:(BOOL) createIntermediates attributes:(NSDictionary<NSString *,id> *) attributes error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 If you specify `nil` for the `attributes` parameter, this method uses a default set of values for the owner, group, and permissions of any newly created directories in the path. Similarly, if you omit a specific attribute, the default value is used. The default values for newly created directories are as follows:
 

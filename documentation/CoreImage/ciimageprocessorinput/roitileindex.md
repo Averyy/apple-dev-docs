@@ -25,7 +25,7 @@ var roiTileIndex: Int { get }
 @property (nonatomic, readonly) NSUInteger roiTileIndex;
 ```
 
-#### Discussion
+## Discussion
 
 This property is only relevant if your processor implements `/CIImageProcessorKernel/roiTileArrayForInput:arguments:outputRect:`
 

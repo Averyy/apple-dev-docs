@@ -16,7 +16,7 @@ Read the buffer of a network data object.
 IOReturn IONetworkReadData(io_connect_t conObj, IONDHandle dataHandle, UInt8 *destBuf, UInt32 *inOutSizeP);
 ```
 
-#### Return Value
+## Return Value
 
 kIOReturnSuccess on success, or an error code otherwise.
 

@@ -23,7 +23,7 @@ func accessoryBrowser(_ browser: EAWiFiUnconfiguredAccessoryBrowser, didRemoveUn
 - (void) accessoryBrowser:(EAWiFiUnconfiguredAccessoryBrowser *) browser didRemoveUnconfiguredAccessories:(NSSet<EAWiFiUnconfiguredAccessory *> *) accessories;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called when the browser removes an accessory from the primary list of unconfigured accessories represented in its [`unconfiguredAccessories`](../eawifiunconfiguredaccessorybrowser/unconfiguredaccessories.md) property. A delegate can implement this method to present to the user the current list of unconfigured accessories. Because this method is called every time an unconfigured accessory is removed from the list, you might use this callback as a prompt to check the list of accessories in [`unconfiguredAccessories`](../eawifiunconfiguredaccessorybrowser/unconfiguredaccessories.md).
 

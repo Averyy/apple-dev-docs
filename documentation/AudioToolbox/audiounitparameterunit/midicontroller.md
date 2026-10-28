@@ -24,7 +24,7 @@ case midiController
 kAudioUnitParameterUnit_MIDIController
 ```
 
-#### Discussion
+## Discussion
 
 Range is from 0 through 127.
 

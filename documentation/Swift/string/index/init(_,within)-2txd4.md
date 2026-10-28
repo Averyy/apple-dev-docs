@@ -21,7 +21,7 @@ Creates an index in the given UTF-16 view that corresponds exactly to the specif
 init?(_ idx: String.Index, within target: String.UTF16View)
 ```
 
-#### Discussion
+## Discussion
 
 If the index passed as `sourcePosition` represents either the start of a Unicode scalar value or the position of a UTF-16 trailing surrogate, then the initializer succeeds. If `sourcePosition` does not have an exact corresponding position in `target`, then the result is `nil`. For example, an attempt to convert the position of a UTF-8 continuation byte results in `nil`.
 

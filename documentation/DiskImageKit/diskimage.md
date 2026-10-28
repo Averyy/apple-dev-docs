@@ -15,7 +15,7 @@ The representation of an open disk image
 class DiskImage
 ```
 
-#### Overview
+## Overview
 
 To use a disk image as storage for virtual machine, use this object with the Virtualization API method [`init(diskImage:cachingMode:synchronizationMode:)`](../Virtualization/vzdiskimagestoragedeviceattachment/init%28diskimage,cachingmode,synchronizationmode%29.md). In addition, it contains properties that describe the disk image and operations to manipulate it.
 

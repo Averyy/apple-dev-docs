@@ -23,7 +23,7 @@ func requestSceneSessionDestruction(_ sceneSession: UISceneSession, options: UIS
 - (void) requestSceneSessionDestruction:(UISceneSession *) sceneSession options:(UISceneDestructionRequestOptions *) options errorHandler:(void (^)(NSError *error)) errorHandler;
 ```
 
-#### Discussion
+## Discussion
 
 If the specified scene is onscreen, calling this method dismisses it using the specified options. The method sends a disconnect notification to the scene and then calls your app delegate’s [`application(_:didDiscardSceneSessions:)`](../uiapplicationdelegate/application%28_,diddiscardscenesessions%29.md) method.
 

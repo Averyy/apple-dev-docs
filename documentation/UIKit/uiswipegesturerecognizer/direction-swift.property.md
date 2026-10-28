@@ -27,7 +27,7 @@ var direction: UISwipeGestureRecognizer.Direction { get set }
 
 - [Handling swipe gestures](../handling-swipe-gestures.md)
 
-#### Discussion
+## Discussion
 
 The default direction is [`right`](./direction-swift.struct/right.md). See descriptions of [`UISwipeGestureRecognizer.Direction`](./direction-swift.struct.md) constants for more information.
 

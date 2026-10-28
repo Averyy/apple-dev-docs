@@ -24,7 +24,7 @@ var setProperty: JSObjectSetPropertyCallback!
 JSObjectSetPropertyCallback setProperty;
 ```
 
-#### Discussion
+## Discussion
 
 This value may be `NULL` if the property has the `ReadOnly` attribute.
 

@@ -24,7 +24,7 @@ var interleavingPeriod: CMTime { get set }
 @property (nonatomic) CMTime interleavingPeriod;
 ```
 
-#### Discussion
+## Discussion
 
 Default value is `0.5` seconds.
 

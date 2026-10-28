@@ -25,7 +25,7 @@ func NSConvertSwappedFloatToHost(_ x: NSSwappedFloat) -> Float
 static float NSConvertSwappedFloatToHost(NSSwappedFloat x);
 ```
 
-#### Discussion
+## Discussion
 
 Converts the value in `x` to a float value. This function does not actually swap the bytes of `x`. You should not need to call this function directly.
 

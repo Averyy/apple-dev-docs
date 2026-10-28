@@ -16,7 +16,7 @@ case success
 INGetAvailableRestaurantReservationBookingsIntentCodeSuccess
 ```
 
-#### Discussion
+## Discussion
 
 Use this code when your app successfully returns one or more [`INRestaurantReservationBooking`](../inrestaurantreservationbooking.md) objects that fall within the request time boundaries.
 

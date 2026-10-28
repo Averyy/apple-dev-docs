@@ -11,9 +11,9 @@ Get information about a leaderboard localization.
 
 > **Deprecated**: This endpoint is deprecated. Use [`Read Game Center Leaderboard Localization Information`](./get-v2-gamecenterleaderboardlocalizations-_id_.md) instead.
 
-#### Discussion
+## Discussion
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

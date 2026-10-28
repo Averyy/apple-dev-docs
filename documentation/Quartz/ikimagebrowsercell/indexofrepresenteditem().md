@@ -19,11 +19,11 @@ func indexOfRepresentedItem() -> Int
 - (NSUInteger) indexOfRepresentedItem;
 ```
 
-#### Return Value
+## Return Value
 
 The index of the represented object in the datasource.
 
-#### Discussion
+## Discussion
 
 Subclasses should not override this method.
 

@@ -15,7 +15,7 @@ Get or set options for the generation of phonetic output. See [Phoneme Generatio
 var soPhonemeOptions: OSType { get }
 ```
 
-#### Discussion
+## Discussion
 
 The `speechInfo` parameter is a pointer to a long value that represents the phoneme generation value.
 

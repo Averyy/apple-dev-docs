@@ -23,7 +23,7 @@ protocol UISearchTextFieldPasteItem : UITextPasteItem
 @protocol UISearchTextFieldPasteItem <UITextPasteItem>
 ```
 
-#### Overview
+## Overview
 
 When implementing [`textPasteConfigurationSupporting(_:transform:)`](./uitextpastedelegate/textpasteconfigurationsupporting%28_,transform%29.md), your [`UITextPasteDelegate`](./uitextpastedelegate.md) can decide whether to paste the item as text or as a token. If the [`UITextPasteItem`](./uitextpasteitem.md) it receives is a [`UISearchTextFieldPasteItem`](./uisearchtextfieldpasteitem.md), you can call [`setSearchTokenResult(_:)`](./uisearchtextfieldpasteitem/setsearchtokenresult%28_%29.md) to prepare a token for pasting instead of text.
 

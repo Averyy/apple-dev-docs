@@ -17,7 +17,7 @@ Variant of `valueAndGrad(model:_:)` that can be used to pass an arbitrary number
 func valueAndGrad<Model>(model: Model, _ f: @escaping (Model, [MLXArray]) -> [MLXArray]) -> (Model, [MLXArray]) -> ([MLXArray], ModuleParameters) where Model : Module
 ```
 
-#### Discussion
+## Discussion
 
 For example, given a loss function:
 
@@ -36,7 +36,7 @@ let vg = valueAndGrad(model: m) { model, args in
 }
 ```
 
-##### See Also
+### See Also
 
 - [Training a Model](./training.md)
 - [`valueAndGrad(model:_:)`](./valueandgrad%28model,_%29-12a2c.md)

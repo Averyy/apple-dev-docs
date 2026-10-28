@@ -20,7 +20,7 @@ func CGDisplayBounds(_ display: CGDirectDisplayID) -> CGRect
 extern CGRect CGDisplayBounds(CGDirectDisplayID display);
 ```
 
-#### Return Value
+## Return Value
 
 The bounds of the display, expressed as a rectangle in the global display coordinate space (relative to the upper-left corner of the main display).
 

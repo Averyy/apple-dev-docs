@@ -24,7 +24,7 @@ var dnsSearchDomainMatch: [String]? { get set }
 @property (copy, nullable) NSArray<NSString *> * DNSSearchDomainMatch;
 ```
 
-#### Discussion
+## Discussion
 
 An array of [`NSString`](../../Foundation/nsstring.md) objects. If the current default search domain is equal to one of the strings in this array and all of the other conditions in the rule match, then the rule matches. If this property is nil (the default), then the current default search domain does not factor into the rule match.
 

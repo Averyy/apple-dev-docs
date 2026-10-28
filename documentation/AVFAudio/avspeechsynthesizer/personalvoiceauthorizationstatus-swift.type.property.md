@@ -25,7 +25,7 @@ class var personalVoiceAuthorizationStatus: AVSpeechSynthesizer.PersonalVoiceAut
 @property (class, nonatomic, readonly) AVSpeechSynthesisPersonalVoiceAuthorizationStatus personalVoiceAuthorizationStatus;
 ```
 
-#### Discussion
+## Discussion
 
 The user can grant or deny your app’s request to use personal voices when they’re initially prompted, and change the authorization in the Settings app. Additionally, the framework denies the request if the device doesn’t support using personal voices.
 

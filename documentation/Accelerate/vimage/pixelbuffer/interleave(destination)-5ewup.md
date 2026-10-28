@@ -23,7 +23,7 @@ func interleave(destination: vImage.PixelBuffer<vImage.InterleavedFx3>)
 
 Available when `Format` is `vImage.PlanarFx3`.
 
-#### Discussion
+## Discussion
 
 Use this function to interleave a buffer and overwrite an interleaved buffer with a copy of the source channels.
 

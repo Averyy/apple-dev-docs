@@ -17,7 +17,7 @@ Get a PRNG key from a seed.
 func key(_ seed: UInt64) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 Return a value that can be used as a PRNG key.  All [`MLXRandom`](./mlxrandom.md) functions take an optional key – this will let you control the random number generation.
 

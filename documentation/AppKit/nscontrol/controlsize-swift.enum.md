@@ -19,7 +19,7 @@ enum ControlSize
 enum NSControlSize : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 These constants are used by the [`controlSize`](../nscell/controlsize.md) property.
 

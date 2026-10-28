@@ -22,7 +22,7 @@ A type that represents a string literal.
 associatedtype StringLiteralType : _ExpressibleByBuiltinStringLiteral
 ```
 
-#### Discussion
+## Discussion
 
 Valid types for `StringLiteralType` are `String` and `StaticString`.
 

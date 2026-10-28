@@ -24,7 +24,7 @@ var audioVolume: Float { get set }
 @property float audioVolume;
 ```
 
-#### Discussion
+## Discussion
 
 Values must be between `0.0` and `1.0`, inclusive. A value of `1.0` (the default) leaves the audio content of the Live Photo unchanged. A value of `0.0` mutes all audio in the output Live Photo.
 

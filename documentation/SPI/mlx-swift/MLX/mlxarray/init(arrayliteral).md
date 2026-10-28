@@ -17,7 +17,7 @@ Initializer allowing creation of 1d `MLXArray` from an array literal.
 convenience init(arrayLiteral elements: Int32...)
 ```
 
-#### Discussion
+## Discussion
 
 ```swift
 let a: MLXArray = [1, 2, 3]
@@ -29,7 +29,7 @@ This is convenient for methods that have `MLXArray` parameters:
 print(array.take([1, 2, 3], axis: 0))
 ```
 
-##### See Also
+### See Also
 
 - [Initialization](../initialization.md)
 

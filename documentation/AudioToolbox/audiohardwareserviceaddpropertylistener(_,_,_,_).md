@@ -21,7 +21,7 @@ func AudioHardwareServiceAddPropertyListener(_ inObjectID: AudioObjectID, _ inAd
 extern OSStatus AudioHardwareServiceAddPropertyListener(AudioObjectID inObjectID, const AudioObjectPropertyAddress *inAddress, AudioObjectPropertyListenerProc inListener, void *inClientData);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 

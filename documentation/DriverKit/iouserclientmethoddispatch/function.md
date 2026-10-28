@@ -18,7 +18,7 @@ The function to call after validating all of the specified values.
 IOUserClientMethodFunction function;
 ```
 
-#### Discussion
+## Discussion
 
 If this property is `NULL` and all checks pass, the system returns `kIOReturnNoCompletion` for the caller to implement the method.
 

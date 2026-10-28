@@ -19,7 +19,7 @@ var supportsStringSearchRequest: Bool { get set }
 @property (assign, readwrite) BOOL supportsStringSearchRequest;
 ```
 
-#### Discussion
+## Discussion
 
 If this value is `true`, the framework uses the extension’s [`NSFileProviderSearching`](../nsfileprovidersearching.md) implementation to support search.
 

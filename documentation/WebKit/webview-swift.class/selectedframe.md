@@ -21,7 +21,7 @@ var selectedFrame: WebFrame! { get }
 @property (nonatomic, strong, readonly) WebFrame * selectedFrame;
 ```
 
-#### Discussion
+## Discussion
 
 If it doesn’t exist, the frame that contains a non-zero-length selection; otherwise, `nil`.
 

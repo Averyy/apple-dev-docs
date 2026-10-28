@@ -29,7 +29,7 @@ optional func resolveContent(for intent: INSearchForNotebookItemsIntent) async -
 - (void) resolveContentForSearchForNotebookItems:(INSearchForNotebookItemsIntent *) intent withCompletion:(void (^)(INStringResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to resolve the string used when search the content of notes. Use this method to verify any search terms before you perform the actual search. In most cases, you should return a successful resolution for the provided string. If there is no string and you do not require a string to perform the search, return a resolution indicating you don’t need a string. If you change the search term for any reason, return a resolution asking for confirmation of the change.
 

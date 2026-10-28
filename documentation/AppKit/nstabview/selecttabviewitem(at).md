@@ -19,7 +19,7 @@ func selectTabViewItem(at index: Int)
 - (void) selectTabViewItemAtIndex:(NSInteger) index;
 ```
 
-#### Discussion
+## Discussion
 
 The `index` parameter is base 0. If there is a delegate and the delegate supports it, sends the delegate the [`tabView(_:shouldSelect:)`](../nstabviewdelegate/tabview%28_,shouldselect%29.md) message.
 

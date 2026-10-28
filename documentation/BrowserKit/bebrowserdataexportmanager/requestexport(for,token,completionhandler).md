@@ -28,7 +28,7 @@ func requestExport(for metadata: BEExportMetadata, token: UUID?) async throws ->
 
 - [Transferring browsing data to another browser](../transferring-browsing-data-to-another-browser.md)
 
-#### Discussion
+## Discussion
 
 This method provides your completion handler with an object that describes the types of browsing data someone exports, and also indicates whether the export needs to send data to files rather than directly to another browser on the device.
 

@@ -24,7 +24,7 @@ static var moreComing: CFNetServiceBrowserFlags { get }
 kCFNetServiceFlagMoreComing
 ```
 
-#### Discussion
+## Discussion
 
 If set, the client shouldn’t do anything time-consuming, such as updating the screen.
 

@@ -15,11 +15,11 @@ Creates a universal procedure pointer (UPP) to a selector callback function.
 SelectorFunctionUPP NewSelectorFunctionUPP(SelectorFunctionProcPtr userRoutine);
 ```
 
-#### Return Value
+## Return Value
 
 On return, a universal procedure pointer to the selector callback function. See the description of the `SelectorFunctionUPP` data type.
 
-#### Discussion
+## Discussion
 
 You use the `NewSelectorFunctionUPP` function to create a UPP to pass to the `NewGestalt` or `ReplaceGestalt` functions. 
 

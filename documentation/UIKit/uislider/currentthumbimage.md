@@ -22,7 +22,7 @@ var currentThumbImage: UIImage? { get }
 @property (nonatomic, readonly, nullable) UIImage * currentThumbImage;
 ```
 
-#### Discussion
+## Discussion
 
 Sliders can have different thumb images for different control states. The active control state determines which thumb image is stored in this property. To get the thumb image for a different control state, use the [`thumbImage(for:)`](./thumbimage%28for%29.md) method.
 

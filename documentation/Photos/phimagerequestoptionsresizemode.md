@@ -24,7 +24,7 @@ enum PHImageRequestOptionsResizeMode
 enum PHImageRequestOptionsResizeMode : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 Specify a `targetSize` parameter when you request an image with the [`requestImage(for:targetSize:contentMode:options:resultHandler:)`](./phimagemanager/requestimage%28for,targetsize,contentmode,options,resulthandler%29.md) method.
 

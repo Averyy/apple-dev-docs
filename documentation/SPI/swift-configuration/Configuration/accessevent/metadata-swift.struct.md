@@ -24,7 +24,7 @@ Metadata describing the configuration access operation.
 struct Metadata
 ```
 
-#### Overview
+## Overview
 
 Contains information about the type of access, the key accessed, value type, source location, and timestamp.
 

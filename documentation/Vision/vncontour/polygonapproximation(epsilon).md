@@ -24,7 +24,7 @@ func polygonApproximation(epsilon: Float) throws -> VNContour
 - (VNContour *) polygonApproximationWithEpsilon:(float) epsilon error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 A simplified polygon contour from the points of the original contour.
 

@@ -25,11 +25,11 @@ func CMTimeMultiplyByRatio(_ time: CMTime, multiplier: Int32, divisor: Int32) ->
 extern CMTime CMTimeMultiplyByRatio(CMTime time, int32_t multiplier, int32_t divisor);
 ```
 
-#### Return Value
+## Return Value
 
 A value equal to `(time * multiplier) / divisor`.
 
-#### Discussion
+## Discussion
 
 This method preserves the exact rational value, unless it causes an overflow. If an overflow occurs, the system chooses a new timescale to minimize the rounding error and applies the default rounding method when converting the result to this timescale. If the result’s value still overflows when its timescale is `1`, the system sets the result to positive or negative infinity, depending on the direction of the overflow.
 

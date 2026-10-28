@@ -21,7 +21,7 @@ A type that represents an email message.
 extern UTType * const UTTypeEmailMessage;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.email-message`.
 

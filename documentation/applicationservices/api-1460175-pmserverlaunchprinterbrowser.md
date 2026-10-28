@@ -19,11 +19,11 @@ func PMServerLaunchPrinterBrowser(_ server: PMServer?, _ options: CFDictionary?)
 OSStatus PMServerLaunchPrinterBrowser(PMServer server, CFDictionaryRef options);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./core_printing.md#1670007).  If you specify a server whose printers cannot be browsed, this function returns the error code `kPMInvalidParameter`.
 
-#### Discussion
+## Discussion
 
 This function displays the standard printer browser to allow the user to create a new print queue.
 

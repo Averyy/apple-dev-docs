@@ -22,7 +22,7 @@ func makeXPCConnection() throws -> NSXPCConnection
 
 - [Including extension-based UI in your interface](../including-extension-based-ui-in-your-interface.md)
 
-#### Discussion
+## Discussion
 
 Call this method from the [`hostViewControllerDidActivate(_:)`](../exhostviewcontrollerdelegate/hostviewcontrollerdidactivate%28_%29.md) method to initiate a scene-specific connection to the app extension.
 

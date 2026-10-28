@@ -25,7 +25,7 @@ struct MIDIControlTransform
 struct MIDIControlTransform;
 ```
 
-#### Overview
+## Overview
 
 A single parameters object may describe any number of transformations to control events. It’s important to order multiple transformations correctly: filter out, remap, and then alter values.
 

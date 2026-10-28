@@ -24,11 +24,11 @@ func item(for identifier: NSFileProviderItemIdentifier, request: NSFileProviderR
 - (NSProgress *) itemForIdentifier:(NSFileProviderItemIdentifier) identifier request:(NSFileProviderRequest *) request completionHandler:(void (^)(NSFileProviderItem , NSError *)) completionHandler;
 ```
 
-#### Return Value
+## Return Value
 
 An item that tracks your extension’s progress. The system automatically calls [`cancel()`](../../Foundation/progress/cancel%28%29.md)  on the progress object when an error occurs.
 
-#### Discussion
+## Discussion
 
 If your extension doesn’t recognize the item, pass [`NSFileProviderError.Code.noSuchItem`](../nsfileprovidererror/code/nosuchitem.md) to the handler. The system assumes the item is no longer in the domain, and attempts to delete the local copy. If the delete attempt fails because the item has local changes, the system reimports the item by calling [`createItem(basedOn:fields:contents:options:request:completionHandler:)`](./createitem%28basedon,fields,contents,options,request,completionhandler%29.md).
 

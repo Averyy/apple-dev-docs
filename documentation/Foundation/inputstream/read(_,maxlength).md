@@ -25,11 +25,11 @@ func read(_ buffer: UnsafeMutablePointer<UInt8>, maxLength len: Int) -> Int
 - (NSInteger) read:(uint8_t *) buffer maxLength:(NSUInteger) len;
 ```
 
-#### Return Value
+## Return Value
 
 A number indicating the outcome of the operation:
 
-#### Discussion
+## Discussion
 
 - A positive number indicates the number of bytes read.
 - `0` indicates that the end of the buffer was reached.

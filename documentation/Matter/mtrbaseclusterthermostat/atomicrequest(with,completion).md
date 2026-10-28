@@ -29,7 +29,7 @@ func atomicRequest(with params: MTRThermostatClusterAtomicRequestParams) async t
 - (void) atomicRequestWithParams:(MTRThermostatClusterAtomicRequestParams *) params completion:(void (^)(MTRThermostatClusterAtomicResponseParams *data, NSError *error)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Begins, Commits or Cancels an atomic write
 

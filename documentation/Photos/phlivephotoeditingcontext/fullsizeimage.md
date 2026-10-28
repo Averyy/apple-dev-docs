@@ -24,7 +24,7 @@ var fullSizeImage: CIImage { get }
 @property (readonly) CIImage * fullSizeImage;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to display the unedited Live Photo’s photo content, or to provide still-image previews in your editing UI.
 

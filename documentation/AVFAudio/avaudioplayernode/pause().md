@@ -25,7 +25,7 @@ func pause()
 - (void) pause;
 ```
 
-#### Discussion
+## Discussion
 
 The player’s sample time doesn’t advance while the node is in a paused state.
 

@@ -25,7 +25,7 @@ class MKMultiPolygon
 @interface MKMultiPolygon : MKShape
 ```
 
-#### Overview
+## Overview
 
 Use a [`MKMultiPolygon`](./mkmultipolygon.md) when you have multiple distinct polygon shapes that you intend to render using the same style.
 

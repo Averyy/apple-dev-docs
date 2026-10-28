@@ -25,7 +25,7 @@ func enqueue(_ notification: Notification, postingStyle: NotificationQueue.Posti
 - (void) enqueueNotification:(NSNotification *) notification postingStyle:(NSPostingStyle) postingStyle;
 ```
 
-#### Discussion
+## Discussion
 
 This is a convenience method for calling [`enqueue(_:postingStyle:coalesceMask:forModes:)`](./enqueue%28_,postingstyle,coalescemask,formodes%29.md) with coalescing criteria that will coalesce only notifications that match both the notification’s name and object and the runloop mode [`default`](../runloop/mode/default.md).
 

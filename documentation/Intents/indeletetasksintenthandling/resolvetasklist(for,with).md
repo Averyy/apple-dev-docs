@@ -29,7 +29,7 @@ optional func resolveTaskList(for intent: INDeleteTasksIntent) async -> INDelete
 - (void) resolveTaskListForDeleteTasks:(INDeleteTasksIntent *) intent withCompletion:(void (^)(INDeleteTasksTaskListResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 This method resolves the task list from which to delete tasks. Use the intent object to obtain the task list, if any, suggested by the user. If the intent doesn’t specify a task list, choose the most appropriate resolution for your app. If you can select a default task list, return a result of success with that task list. If you can’t select a default task list, ask the user to provide a value or choose from among a few likely candidates.
 

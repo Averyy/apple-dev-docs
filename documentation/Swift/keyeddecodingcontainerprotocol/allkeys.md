@@ -22,7 +22,7 @@ All the keys the `Decoder` has for this container.
 var allKeys: [Self.Key] { get }
 ```
 
-#### Discussion
+## Discussion
 
 Different keyed containers from the same `Decoder` may return different keys here; it is possible to encode with multiple key types which are not convertible to one another. This should report all keys present which are convertible to the requested type.
 

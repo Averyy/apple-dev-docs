@@ -20,11 +20,11 @@ Converts an audio buffer.
 final func convert(_ buffer: AVAudioBuffer, at audioTime: AVAudioTime?) throws -> [AnalyzerInput]
 ```
 
-#### Return Value
+## Return Value
 
 An array of `AnalyzerInput` objects containing converted audio corresponding to some or all of the audio buffer.
 
-#### Discussion
+## Discussion
 
 This method does not necessarily convert the entire audio buffer. Some audio data may be held over and integrated into the conversion of a later audio buffer for correctness or efficiency.
 

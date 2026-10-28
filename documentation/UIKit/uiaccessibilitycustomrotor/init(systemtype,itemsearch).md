@@ -23,7 +23,7 @@ init(systemType type: UIAccessibilityCustomRotor.SystemRotorType, itemSearch ite
 - (instancetype) initWithSystemType:(UIAccessibilityCustomSystemRotorType) type itemSearchBlock:(UIAccessibilityCustomRotorSearch) itemSearchBlock;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized rotor object.
 

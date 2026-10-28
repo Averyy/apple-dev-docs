@@ -21,7 +21,7 @@ Spawns new elements into the simulation with the given initial parameters.
 final func spawn(elements: borrowing [ElementSpawnParameters], in systemID: Int?, using encoder: any MTLComputeCommandEncoder)
 ```
 
-#### Discussion
+## Discussion
 
 Each entry in `elements` produces one new element. The initialization stage of the simulation graph runs on the newly spawned elements before they participate in subsequent simulation steps, and may read or overwrite the values supplied here.
 

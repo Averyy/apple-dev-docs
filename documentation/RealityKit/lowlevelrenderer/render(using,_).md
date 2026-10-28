@@ -18,7 +18,7 @@ Encodes draw calls for the frame into the given command buffer using a caller-co
 final func render(using commandBuffer: any MTLCommandBuffer, _ callback: @_lifetime(0: copy 0) (inout LowLevelRenderer.RenderState) -> ())
 ```
 
-#### Discussion
+## Discussion
 
 Inside the callback, call `state.render(meshInstancesArrayIndex:meshInstanceIndex:)` or `state.render(meshInstancesArrayIndex:range:)` to encode draw calls in any order. You control which instances are drawn and in what sequence — use `sortMeshInstances(_:indices:configuration:)` for built-in depth sorting, `cullMeshInstances(_:indices:configuration:)` to remove instances outside the view frustum before drawing, or supply your own ordering.
 

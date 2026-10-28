@@ -25,7 +25,7 @@ struct PostProcessContext
 - [Implementing postprocess effects using Metal compute functions](../implementing-postprocess-effects-using-metal-compute-functions.md)
 - [Using Metal performance shaders to create custom postprocess effects](../using-metal-performance-shaders-to-create-custom-postprocess-effects.md)
 
-#### Overview
+## Overview
 
 In iOS 15 and later, as well as macOS 12 and later, you can register a callback function to apply postprocessing effects to RealityKit’s rendered scene. Once every frame, RealityKit calls that function before it displays the scene. You can use this callback to apply postprocess effects using any APIs that can modify an image texture. However, because RealityKit calls this method every frame, you should only use APIs that execute on the GPU, such as Metal compute functions, [Metal Performance Shaders](../../MetalPerformanceShaders/MetalPerformanceShaders.md), or [Core Image](../../CoreImage/CoreImage.md). You can also render additional content, such as a rendered SpriteKit scene, on top of the frame buffer.
 

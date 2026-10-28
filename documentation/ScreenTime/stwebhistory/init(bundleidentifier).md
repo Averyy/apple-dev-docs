@@ -22,7 +22,7 @@ init(bundleIdentifier: String) throws
 - (instancetype) initWithBundleIdentifier:(NSString *) bundleIdentifier error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 The default value for `bundleIdentifier` is `Bundle.main.bundleIdentifier`. This is the recommended identifier to use, except for example, if a helper process is presenting web UI and you want to group that web-usage under the main app’s bundle identifier.
 

@@ -25,7 +25,7 @@ func processPendingChanges()
 - (void) processPendingChanges;
 ```
 
-#### Discussion
+## Discussion
 
 This method causes changes to registered managed objects to be recorded with the undo manager.
 

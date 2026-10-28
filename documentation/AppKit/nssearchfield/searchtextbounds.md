@@ -19,7 +19,7 @@ var searchTextBounds: NSRect { get }
 @property (readonly) NSRect searchTextBounds;
 ```
 
-#### Discussion
+## Discussion
 
 Subclasses can override `searchTextBounds` for custom layout purposes.
 

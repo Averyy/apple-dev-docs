@@ -22,7 +22,7 @@ A key for the space added between every character of a run of attributed text.
 enum TrackingAttribute
 ```
 
-#### Overview
+## Overview
 
 Tracking spreads a run out evenly, which suits a short label set in capitals. Give a positive value to open the run up and a negative value to tighten it:
 

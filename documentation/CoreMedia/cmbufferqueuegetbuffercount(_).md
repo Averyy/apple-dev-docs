@@ -25,7 +25,7 @@ func CMBufferQueueGetBufferCount(_ queue: CMBufferQueue) -> CMItemCount
 extern CMItemCount CMBufferQueueGetBufferCount(CMBufferQueueRef queue);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the number of buffers in the `CMBufferQueue`.
 

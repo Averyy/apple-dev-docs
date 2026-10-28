@@ -21,11 +21,11 @@ Provides dynamic member lookup for translation attributes.
 subscript<T>(dynamicMember keyPath: KeyPath<AttributeScopes.TranslationAttributes, T>) -> T where T : AttributedStringKey { get }
 ```
 
-#### Return Value
+## Return Value
 
 The attribute key type that can be used to get or set attribute values.
 
-#### Overview
+## Overview
 
 This subscript enables the convenient dot-syntax access to translation attributes on [`AttributedString`](../attributedstring.md):
 

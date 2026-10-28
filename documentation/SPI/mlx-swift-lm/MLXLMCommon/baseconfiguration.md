@@ -17,7 +17,7 @@ The fundamental configuration for any MLX-based model.
 struct BaseConfiguration
 ```
 
-#### Overview
+## Overview
 
 `BaseConfiguration` provides the metadata necessary to identify the model architecture (`modelType`) and describes the quantization parameters used to compress the model’s weights. It is designed to be decoded directly from a model repository’s `config.json`.
 

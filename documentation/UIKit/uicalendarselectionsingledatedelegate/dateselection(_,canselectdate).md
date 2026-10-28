@@ -22,11 +22,11 @@ optional func dateSelection(_ selection: UICalendarSelectionSingleDate, canSelec
 - (BOOL) dateSelection:(UICalendarSelectionSingleDate *) selection canSelectDate:(NSDateComponents *) dateComponents;
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that indicates whether the calendar view can select the date you provide.
 
-#### Discussion
+## Discussion
 
 The calendar view displays nonselectable dates as disabled.
 

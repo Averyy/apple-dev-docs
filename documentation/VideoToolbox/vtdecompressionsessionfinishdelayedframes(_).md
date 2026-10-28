@@ -24,11 +24,11 @@ func VTDecompressionSessionFinishDelayedFrames(_ session: VTDecompressionSession
 extern OSStatus VTDecompressionSessionFinishDelayedFrames(VTDecompressionSessionRef session);
 ```
 
-#### Return Value
+## Return Value
 
 An `OSStatus` value that indicates the result of the operation.
 
-#### Discussion
+## Discussion
 
 By default, the decompression session may not delay frames indefinitely;  frames may only be indefinitely delayed if the client opts in via [`kVTDecodeFrame_EnableTemporalProcessing`](./vtdecodeframeflags/kvtdecodeframe_enabletemporalprocessing.md).
 

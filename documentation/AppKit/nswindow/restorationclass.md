@@ -19,7 +19,7 @@ var restorationClass: (any NSWindowRestoration.Type)? { get set }
 @property (assign, nullable) Class<NSWindowRestoration> * restorationClass;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is a class object that conforms to the [`NSWindowRestoration`](../nswindowrestoration.md) protocol corresponding to the class to use to restore the window or `nil` if none is set.
 

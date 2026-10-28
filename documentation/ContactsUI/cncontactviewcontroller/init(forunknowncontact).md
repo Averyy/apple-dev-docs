@@ -22,11 +22,11 @@ convenience init(forUnknownContact contact: CNContact)
 + (instancetype) viewControllerForUnknownContact:(CNContact *) contact;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized [`CNContactViewController`](../cncontactviewcontroller.md) object.
 
-#### Discussion
+## Discussion
 
 This view controller initializes the customized behavior and appearance of [`CNContactViewController`](../cncontactviewcontroller.md) for an unknown contact.
 

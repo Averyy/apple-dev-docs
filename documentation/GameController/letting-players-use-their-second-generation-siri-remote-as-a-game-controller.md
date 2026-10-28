@@ -5,11 +5,11 @@
 
 Support the second-generation Siri Remote as a game controller in your Apple TV game.
 
-#### Overview
+## Overview
 
 To add support for the second-generation Siri Remote in your Apple TV game, you make a few changes to your Xcode project and code.
 
-##### Configure your project
+### Configure your project
 
 First configure your Xcode project to handle directional gamepads and multiple micro gamepads.
 
@@ -17,7 +17,7 @@ On the Signing & Capabilities tab in the project editor, add the Game Controller
 
 On the Info tab, add the [`GCSupportsMultipleMicroGamepads`](../BundleResources/information-property-list/gcsupportsmultiplemicrogamepads.md) key and set the value to `YES`. For more information, see [Managing your app’s information property list values](../BundleResources/managing-your-app-s-information-property-list.md).
 
-##### Handle multiple micro gamepads
+### Handle multiple micro gamepads
 
 In your code, handle multiple micro gamepad connections. When a game controller connects, check if the controller is a directional gamepad using the [`isKind(of:)`](../ObjectiveC/nsobjectprotocol/iskind%28of%29.md) method:
 
@@ -37,7 +37,7 @@ if device.productCategory == GCProductCategorySiriRemote2ndGen {
 
 If these conditions are true, you can use the connected second-generation Siri Remote as a game controller.
 
-##### Access the remote buttons and directional pad
+### Access the remote buttons and directional pad
 
 To access the center button of the second-generation Siri Remote, use the [`buttons`](./gcdevicephysicalinputstate/buttons-3257g.md) property:
 

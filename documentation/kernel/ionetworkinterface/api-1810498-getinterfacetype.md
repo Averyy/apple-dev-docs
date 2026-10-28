@@ -12,11 +12,11 @@ virtual UInt8 getInterfaceType(
  void ) const;
 ```
 
-#### Return Value
+## Return Value
 
 Returns a constant defined in `bsd/net/if_types.h` that describes the interface type.
 
-#### Overview
+## Overview
 
 This method returns the interface type previously set by `setInterfaceType`.
 

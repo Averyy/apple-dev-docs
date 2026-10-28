@@ -17,7 +17,7 @@ Returns the character in the menu item title that appears underlined for use as 
 - (NSString *) mnemonic;
 ```
 
-#### Discussion
+## Discussion
 
 If there is no mnemonic character, returns an empty string.
 

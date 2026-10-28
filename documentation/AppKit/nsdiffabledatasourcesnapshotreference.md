@@ -19,7 +19,7 @@ class NSDiffableDataSourceSnapshotReference
 @interface NSDiffableDataSourceSnapshot : NSObject
 ```
 
-#### Overview
+## Overview
 
 > ❗ **Important**:  If you’re working in a Swift codebase, always use [`NSDiffableDataSourceSnapshot`](./nsdiffabledatasourcesnapshot-swift.struct.md) instead of `NSDiffableDataSourceSnapshotReference`.
 
@@ -75,7 +75,7 @@ For more information, see the diffable data source types:
 - [`UITableViewDiffableDataSource`](../UIKit/uitableviewdiffabledatasource-2euir.md)
 - [`NSCollectionViewDiffableDataSourceReference`](./nscollectionviewdiffabledatasourcereference.md)
 
-##### Bridging
+### Bridging
 
 Avoid using this type in Swift code. Only use this type to bridge from Objective-C code to Swift code by typecasting from a snapshot reference to a snapshot:
 

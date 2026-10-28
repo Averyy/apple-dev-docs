@@ -19,7 +19,7 @@ The name of the geometry modifier function.
 var name: String
 ```
 
-#### Discussion
+## Discussion
 
 This is the name of the Metal function that the custom material uses as its geometry modifier. The name needs to match the name of a Metal function in your Xcode project without parameters or parentheses.
 

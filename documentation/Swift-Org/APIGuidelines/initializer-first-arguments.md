@@ -10,7 +10,7 @@ framework: "Swift-Org/APIGuidelines"
 
 The first argument to initializer and factory method calls should not form a phrase starting with the base name.
 
-#### Overview
+## Overview
 
 For example: `x.makeWidget(cogCount: 47)`.
 

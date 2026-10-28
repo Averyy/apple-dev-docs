@@ -21,7 +21,7 @@ func wantsToTrackMouse(for theEvent: NSEvent, in cellFrame: NSRect, of controlVi
 - (BOOL) wantsToTrackMouseForEvent:(NSEvent *) theEvent inRect:(NSRect) cellFrame ofView:(NSView *) controlView atCharacterIndex:(NSUInteger) charIndex;
 ```
 
-#### Discussion
+## Discussion
 
 `theEvent` is the event in question that occurred in `cellFrame` inside `controlView`. `charIndex` is the index of the attachment character within the text. If [`wantsToTrackMouse()`](./wantstotrackmouse%28%29.md) returns [`true`](../../Swift/true.md), this method allows the attachment to decide whether it wishes to do so for particular events.
 

@@ -19,7 +19,7 @@ struct IOI2CBusTiming {
 };
 ```
 
-#### Overview
+## Overview
 
 This structure is used to specify timeouts and pulse widths for an I2C bus implementation.
 

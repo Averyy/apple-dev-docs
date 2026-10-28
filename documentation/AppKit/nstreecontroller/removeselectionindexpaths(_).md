@@ -19,11 +19,11 @@ func removeSelectionIndexPaths(_ indexPaths: [IndexPath]) -> Bool
 - (BOOL) removeSelectionIndexPaths:(NSArray<NSIndexPath *> *) indexPaths;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the selection was changed.
 
-#### Discussion
+## Discussion
 
 Attempting to change the selection may cause a `commitEditing` message which fails, thus denying the selection change.
 

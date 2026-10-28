@@ -25,7 +25,7 @@ func contains(_ string: String) -> Bool
 - (BOOL) containsString:(NSString *) string;
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the term is in the word embedding’s vocabulary, otherwise `false`.
 

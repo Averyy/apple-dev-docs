@@ -22,7 +22,7 @@ static var valueChangedNotification: UIAccessibility.Notification
 extern UIAccessibilityNotifications BEAccessibilityValueChangedNotification;
 ```
 
-#### Discussion
+## Discussion
 
 Post this notification when the value of an input element changes, for example, when:
 

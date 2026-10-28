@@ -24,7 +24,7 @@ static let appleStandHour: HKCategoryTypeIdentifier
 extern HKCategoryTypeIdentifier const HKCategoryTypeIdentifierAppleStandHour;
 ```
 
-#### Discussion
+## Discussion
 
 This quantity type counts the number of hours during which the user stood and moved for at least one minute per hour.
 

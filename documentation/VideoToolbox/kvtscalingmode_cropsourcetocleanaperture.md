@@ -24,7 +24,7 @@ let kVTScalingMode_CropSourceToCleanAperture: CFString
 extern CFStringRef const kVTScalingMode_CropSourceToCleanAperture;
 ```
 
-#### Discussion
+## Discussion
 
 The destination pixel aspect ratio is set on the destination image buffer.
 

@@ -25,11 +25,11 @@ class func scheduledTimer(timeInterval ti: TimeInterval, invocation: NSInvocatio
 + (NSTimer *) scheduledTimerWithTimeInterval:(NSTimeInterval) ti invocation:(NSInvocation *) invocation repeats:(BOOL) yesOrNo;
 ```
 
-#### Return Value
+## Return Value
 
 A new `NSTimer` object, configured according to the specified parameters.
 
-#### Discussion
+## Discussion
 
 After `ti` seconds have elapsed, the timer fires, invoking `invocation`.
 

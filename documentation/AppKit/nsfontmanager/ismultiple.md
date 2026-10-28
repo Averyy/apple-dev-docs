@@ -19,7 +19,7 @@ var isMultiple: Bool { get }
 @property (readonly, getter=isMultiple) BOOL multiple;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), the last font selection recorded has multiple fonts; if the last font selection recorded is a single font, the value is [`false`](../../Swift/false.md).
 

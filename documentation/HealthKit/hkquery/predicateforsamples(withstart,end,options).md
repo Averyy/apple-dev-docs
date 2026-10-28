@@ -24,11 +24,11 @@ class func predicateForSamples(withStart startDate: Date?, end endDate: Date?, o
 + (NSPredicate *) predicateForSamplesWithStartDate:(NSDate *) startDate endDate:(NSDate *) endDate options:(HKQueryOptions) options;
 ```
 
-#### Return Value
+## Return Value
 
 A predicate for samples whose start and end dates fall within the specified time interval. This predicate works only with samples.
 
-#### Discussion
+## Discussion
 
 Use this convenience method to create a predicate that compares a sample’s start and end dates with a specified time interval. The following sample uses both the convenience method and a predicate format string to create equivalent predicates.
 

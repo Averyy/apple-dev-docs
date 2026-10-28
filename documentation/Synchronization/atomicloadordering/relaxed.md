@@ -21,7 +21,7 @@ Guarantees the atomicity of the specific operation on which it is applied, but i
 static var relaxed: AtomicLoadOrdering { get }
 ```
 
-#### Discussion
+## Discussion
 
 This value corresponds to `std::memory_order_relaxed` in C++.
 

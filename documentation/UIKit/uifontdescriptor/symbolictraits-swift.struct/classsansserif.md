@@ -24,7 +24,7 @@ static var classSansSerif: UIFontDescriptor.SymbolicTraits { get }
 UIFontDescriptorClassSansSerif
 ```
 
-#### Discussion
+## Discussion
 
 The font, excluding Scripts and Ornamentals, includes most basic letter forms without serifs on the strokes.
 

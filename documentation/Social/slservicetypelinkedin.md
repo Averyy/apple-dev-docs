@@ -20,7 +20,7 @@ let SLServiceTypeLinkedIn: String
 extern NSString * const SLServiceTypeLinkedIn;
 ```
 
-#### Discussion
+## Discussion
 
 A string constant that identifies the social networking site, LinkedIn.
 

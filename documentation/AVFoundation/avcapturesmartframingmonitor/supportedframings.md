@@ -25,7 +25,7 @@ var supportedFramings: [AVCaptureFraming] { get }
 
 - [Adopting smart framing in your camera app](../adopting-smart-framing-in-your-camera-app.md)
 
-#### Discussion
+## Discussion
 
 The monitor is capable of recommending any of the framings in this array. This property is key-value observable and may change as the target capture device’s [`activeFormat`](../avcapturedevice/activeformat.md) property changes. This array contains the full set of framings supported by the monitor in the device’s current configuration. You must tell the monitor which smart framings you are interested in having recommended to you by setting the [`enabledFramings`](./enabledframings.md) property.
 

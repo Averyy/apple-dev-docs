@@ -5,86 +5,86 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 The iOS & iPadOS 18 SDK provides support to develop apps for iPhone and iPad running iOS & iPadOS 18. The SDK comes bundled with Xcode 16. For information on the compatibility requirements for Xcode 16, see [Xcode 16 Release Notes](../Xcode-Release-Notes/xcode-16-release-notes.md).
 
-##### Accessibility
+### Accessibility
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: User might be unable to play newly added background sounds (Fire and Night).  (128898875)
 - Fixed: Sound Recognition and Sound Actions might not work on iPad Pro models with M4.  (128949527)
 - Fixed: Music Haptics might disappear after the first time it is entered in Accessibility Settings until Settings restarts.  (128960448)
 
-##### AccessorySetupKit
+### AccessorySetupKit
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Users might be unable to rename Accessory’s display name or SSID.  (128958722)
 
-##### Activity Sharing
+### Activity Sharing
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Notifications for workouts completed by a friend might show incorrect text.  (128939058)
 
-##### AdAttributionKit
+### AdAttributionKit
 
-###### New Features
+#### New Features
 
 - [AdAttributionKit](../AdAttributionKit/AdAttributionKit.md) now supports measuring re-engagement, which is click-through attribution for apps that were already installed. Re-engagement also supports deep linking into content in apps using Universal Links.  (111224069)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue where development postbacks fail to send after developer mode has been enabled for an extended period of time.  (130100361)
 
-##### App Intents
+### App Intents
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: EntityURLRepresentation allows arbitrary custom URLs without validation.   (119524801)
 - Fixed: AppIntent static properties including title and description are not concurrency-safe.  (128090148)
 - Fixed: Parameterless `@Parameter` and `@Property` wrappers might cause protocol conformance failures.  (130219933)
 
-###### Known Issues
+#### Known Issues
 
 - `@UnionValue` types currently only work as intent results. Attempting to use a `@UnionValue` as the type of an intent parameter or entity property results in failure to compile.  (128069844)
 
-##### App Store
+### App Store
 
-###### New Features
+#### New Features
 
 - On-demand resources limits were increased for iOS 18, iPadOS 18, tvOS 18 and visionOS 2. See [On-demand resources size limits](https://developer.apple.com/help/app-store-connect/reference/on-demand-resources-size-limits/) for more information.  (122163236)
 
-##### Apple Cash
+### Apple Cash
 
-###### Known Issues
+#### Known Issues
 
 - With Tap to Cash, you can send and receive Apple Cash by holding two iPhones together. An Apple Cash account is required to send and receive payments. Payments will be returned to the sender if the receiver doesn’t set up an Apple Cash account or verify their personal information within 7 days. For Developer Beta, Tap to Cash payments cannot exceed $250 per transaction. Transaction limits are subject to change, including lowering limits, at any time during the Developer or Public Betas without notice.  (128977390)
 
-##### Assistive Access
+### Assistive Access
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: The Messages app might hang in Assistive Access.   (127601737)
 - Fixed: Users might not be able to add Photos or Camera apps to Assistive Access and the apps might be removed from an existing user’s setup if they open Assistive Access settings.  (128905924)
 
-##### Audio
+### Audio
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Some bluetooth headphones might not be useable as an audio output route with certain AVAudioSession configurations.  (126693883)
 
-##### Calculator
+### Calculator
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Deleting history item with the Edit button visually deletes the top item in the list. The backing data stays correct.  (126768783)
 
-##### Camera
+### Camera
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: For Camera background replacement, it might be necessary to double click to add a background image from your Photos Library using the Photo Picker.  (122358378)
 - Fixed: First Portrait capture after boot might take longer than expected to finish.  (128881179)
@@ -92,15 +92,15 @@ The iOS & iPadOS 18 SDK provides support to develop apps for iPhone and iPad run
 - Fixed: When using the Document Scanning feature from Camera app on iPad, it might sometimes result in a black screen instead of a live preview from camera.  (128907349)
 - Fixed: Portrait mode preview with rear facing camera might show artifacts when pointed at objects when using Stage Light, Stage Light Mono, and High-Key Light Mono light filters. Artifacts will not affect captured assets.  (129024197)
 
-##### CarPlay
+### CarPlay
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Bluetooth pairing UI could become irresponsive for BMW users, which leads to failed contact transfer.   (129043855)
 
-##### CFNetwork
+### CFNetwork
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: `CFNetworkExecuteProxyAutoConfigurationScript` and `CFNetworkExecuteProxyAutoConfigurationURL` have always returned a +1 retained CF type object, but the function declarations were not decorated with the `CF_RETURNS_RETAINED` attribute until iOS 18, macOS 15, tvOS 18, and visionOS 2.
 
@@ -108,106 +108,106 @@ The iOS & iPadOS 18 SDK provides support to develop apps for iPhone and iPad run
 
   For Swift, this changes the return type of these functions from `Unmanaged<>` to the actual CF type returned, which will require a source change to fix when compiling with newer SDKs. However, Swift programs compiled with older SDKs will continue to work on the new OSes, though the returned CF type object will continue to leak as it did prior to this change.  (126154509)
 
-##### Containerization
+### Containerization
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Improved the handling of the duplicate containers created by Xcode 15 through 15.3. Those versions of Xcode might create duplicate containers on the device. This change ensures that the app launches with a consistent container and that deleting the app also deletes any duplicate containers.  (123480553)
 
-##### Control Center
+### Control Center
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Control Center page control is overlapped by the Dynamic Island in landscape.  (125913281)
 - Fixed: Empty pages in Control Center might linger after exiting edit mode.  (126760824)
 - Fixed: Control widgets with a parameterized OpenIntent action are not configurable.  (128241927)
 - Fixed: Voice Memos control will not render correctly or be functional after upgrading to iOS 18 if it was part of Control Center prior to the update.  (129184182)
 
-###### Known Issues
+#### Known Issues
 
 - App Icons in Control Center gallery always appear in Dark Mode.  (126721275)
 
-##### Core ML
+### Core ML
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Core ML Model Deployment API is unavailable (`MLModelCollection` and `MLModelCollectionEntry`). Consider using Background Assets or `NSURLSession` instead.  (122955353)
 
-##### CoreMedia
+### CoreMedia
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Seeking into an interstitial event with non-zero resumption offset on the integrated timeline might result in the event being cancelled.  (129175283)
 
-##### Display
+### Display
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Phones with Always on Display enabled might panic/reboot on exit.  (128268712)
 
-##### FaceTime
+### FaceTime
 
-###### New Features
+#### New Features
 
 - FaceTime in Low Data Mode now uses more data when network conditions are good for improved video call quality.  (128408959)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: When user picks up FaceTime Video call from lock screen and unlock the device later, the camera might be disabled where user cannot see remote side via PiP and vice versa.  (124719544)
 
-##### Files
+### Files
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Users might be unable to navigate within Move panel in the Files app on iPhone.  (128868597)
 
-###### Known Issues
+#### Known Issues
 
 - Creating local files in the Files app fails in the visionOS 2 and iOS 18 simulators if the host is not upgraded to macOS Sequoia Beta.  (132561244)
 
-##### FinanceKit
+### FinanceKit
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Transactions shared via the Transaction Picker might have empty description strings.  (128618523)
 
-##### Fitness+
+### Fitness+
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: The Fitness app might not load the Fitness+ For You page immediately on first launch.  (127116109)
 
-##### Foundation
+### Foundation
 
-###### New Features
+#### New Features
 
 - JSONEncoder.OutputFormatting.sortedKeys will now sort keys with a different ordering. Previously, keys were sorted using a numeric, case-insensitive, or localized ordering. Beginning in beta 4, keys are sorted lexicographically based on the keys’ UTF-8 contents.  (126874437)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: [Date.ComponentsFormatStyle](../Foundation/date/componentsformatstyle.md) was incorrectly producing strings like `"1m"` with the `Date.ComponentsFormatStyle.Style.condensedAbbreviated` style and strings like `"1min"` with the `.narrow` style instead of the other way around. The behavior was corrected to match the behavior of [Duration.UnitsFormatStyle.UnitWidth](../Swift/duration/unitsformatstyle/unitwidth-swift.struct.md).  (125790342)
 
-##### Freeform
+### Freeform
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Some images inserted into iWork and Freeform might be zoomed in.  (128637913)
 
-##### Handwriting
+### Handwriting
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Auto-refine animation contains rendering issues for users with Display Zoom set to “More Space” within the Display & Brightness settings.  (129419813)
 
-##### Headphone Accommodations
+### Headphone Accommodations
 
-###### New Features
+#### New Features
 
 - Headphone Accommodations can now be configured on macOS. When user set up Headphone Accommodations with AirPods Pro 2s, user will continue to hear audio adjusted when connected to other audio sources.  (130245415)
 
-##### Health
+### Health
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: In Cycle Tracking, multiple pregnancy samples might be saved after a user adds or edits a pregnancy.   (121271613)
 - Fixed: Doses of medication logged via mirrored watch notifications for incompatible schedule types do not save on phone if device is locked.  (128635016)
@@ -217,7 +217,7 @@ The iOS & iPadOS 18 SDK provides support to develop apps for iPhone and iPad run
 - Fixed: The Cycle Tracking snippet might continue to display flow or symptoms logged pre-pregnancy.  (129066144)
 - Fixed: In Cycle Tracking, if a pregnancy sample is edited or created on a device different than where pregnancy onboarding was completed, Medical ID might not display pregnancy information correctly.  (130777331)
 
-###### Known Issues
+#### Known Issues
 
 - If a pregnancy sample is deleted on a device that is not on iOS 18, users are not prompted to remove pregnancy data from MedicalID if applicable.   (129296194)
 
@@ -226,54 +226,54 @@ The iOS & iPadOS 18 SDK provides support to develop apps for iPhone and iPad run
 
   **Workaround:** Edit Medical ID to add pregnancy information.
 
-##### HealthKit
+### HealthKit
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Workout routes for workout types created by Apple Watch Workout app are not available in third-party workout apps.  (123450917)
 
-###### Known Issues
+#### Known Issues
 
 - With the introduction of Swift 6 this year, developers who update their projects to use Swift 6 might have issues with their apps, which can lead to app crashes when executing a variety of HealthKit API calls.  (131794283)
 
   **Workaround:** Annotate your callbacks in code with @sendable, NS_SWIFT_SENDABLE, or use pre-Swift 6 versions of the language.
 
-##### Home app
+### Home app
 
-###### Known Issues
+#### Known Issues
 
 - If a user has multiple devices running beta 1 or 2 and onboarded Home with a Utility account, the account might get offboarded when one device is upgraded to beta 3.  (130850945)
 
   **Workaround:** Re-onboard Home Utility account, only after upgrading all devices to beta 3.
 
-##### Home Screen
+### Home Screen
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: There might be a delay when switching to dark or tinted icons on the home screen.  (129069905)
 - Fixed: Icon tint slider knob might not update to selected color on the first use after boot.  (129114071)
 
-##### HomeKit
+### HomeKit
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Accessory Firmware update will not be offered for an accessory if a user reboots the resident or the primary switches.  (128255088)
 
-##### Hotspot
+### Hotspot
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Carrier EAP-SIM/EAP-AKA auto-joint will fail and user will be unable to use carrier public Hotspot.  (130650425)
 
-##### iCloud Drive
+### iCloud Drive
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Frequently changed files syncing over iCloud Drive will use more data than expected.  (128771010)
 
-##### iPhone Mirroring
+### iPhone Mirroring
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Dictation is available during iPhone Mirroring.  (126654567)
 - Fixed: Keyboard input might not work in Spotlight or App Library when using iPhone Mirroring.  (126928807)
@@ -281,88 +281,88 @@ The iOS & iPadOS 18 SDK provides support to develop apps for iPhone and iPad run
 - Fixed: Settings might show incompatible devices under iPhone Mirroring.  (128633492)
 - Fixed: The camera is not enabled in any case, and only FaceTime shows the alert. FaceTime triggers the “Camera not allowed in iPhone Mirroring” alert. Other apps do not trigger the alert though the Camera is disabled.  (128646948)
 
-##### Journaling Suggestions
+### Journaling Suggestions
 
-###### New Features
+#### New Features
 
 - Journaling Suggestions is introducing a set of new features to keep encouraging people to reflect and write about their day-to-day experiences to get the mental wellbeing benefits of Journaling. The API now supports Landscape mode and Reflection prompts. Added support for State of Mind logged on Health or Journal app, Run and mixed Walk/Run sessions performed while carrying a standalone iPhone, Media played by apps that donate to MPNowPlayingInfoCenter, People and Pet names from Photos and enhancements to Trips Suggestions to highlight Countries and States visited.  (129029773)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Users might experience blank suggestions or engineering text.  (128774773)
 - Fixed: Users might experience long spinner after tapping ‘+’ to open Journaling Suggestions sheet.  (128950895)
 - Fixed: When tapping ‘+’ to launch the Journaling Suggestions sheet, it might not launch.  (128970387)
 
-##### Kernel
+### Kernel
 
-###### Deprecations
+#### Deprecations
 
 - `kern.bootsessionuuid` is no longer available to apps.  (47217954)
 
-##### Keyboard
+### Keyboard
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Users will not be able to configure Keyboard in Settings, including adding/removing keyboards for different languages or adding/removing keyboard extensions.  (129174947)
 
-##### Lock Screen
+### Lock Screen
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Lock Screen Quick Action buttons might disappear.  (128096099)
 - Fixed: Users will be unable to configure Controls that have configuration on the Lock Screen.  (128967021)
 
-##### Mail
+### Mail
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: The Mail badge count might not update until Mail is launched.  (129914323)
 
-###### Known Issues
+#### Known Issues
 
 - Upgrading from iOS 18.0 beta 5 to iOS 18.1 beta might cause all Mail to redownload.  (132930689)
 
-##### Maps
+### Maps
 
-###### New Features
+#### New Features
 
 - Introduced Place ID, a unique and persistent identifier.  (129071038)
 - Added new resultTypes to MKLocalSearch.Request and additional PointofInterestCategory values.  (129073725)
 - Introduced Place Card API to show Maps Place Card UI.  (129073922)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Maps Share ETA might fail when sending to a recipient via SMS.  (127547239)
 - Fixed: The Place Card API might fail to load place details.  (128504304)
 - Fixed: In searches that use MKLocalSearch.Request, the result type option physicalFeature is ignored.  (128961972)
 
-###### Known Issues
+#### Known Issues
 
 - Conversion between a point in the map view and a physical location (CLLocationCoordinate2D) might be imprecise at high zoom levels.  (129042241)
 
-##### Math Notes
+### Math Notes
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Adjusting negative numbers can lead to multiple negative signs.  (123738353)
 - Fixed: Adjusting a number with a comma can immediately change the number value to 0.  (127904684)
 
-##### Memory Allocation
+### Memory Allocation
 
-###### New Features
+#### New Features
 
 - The system memory allocator (malloc(3)) has switched to a new implementation for most allocation sizes. Users might experience exposure of latent memory access bugs due to changes in heap layout, differences in performance for allocation-heavy workloads, and changes in fragmentation.  (127493322)
 
-##### Messages
+### Messages
 
-###### New Features
+#### New Features
 
 - Sent and received messages via satellite might not be relayed to your other devices.  (125574729)
 - Messages via satellite is currently available only in the U.S. SMS messaging via satellite is available on select carriers.  (127751557)
 - Messages via satellite is currently available only in the U.S. SMS messaging via satellite is available on select carriers.  (131421891)
 - RCS messaging is available on select carriers.  (131499640)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: A send message sound will  play when scheduling the message instead of when the message is sent.  (121896789)
 - Fixed: When applying tapbacks by long pressing on a Message, users will be unable to use 3rd party stickers.  (122379099)
@@ -371,67 +371,67 @@ The iOS & iPadOS 18 SDK provides support to develop apps for iPhone and iPad run
 - Fixed an issue where multi-part SMS notifications for MMS are not correctly processed by the device while on-grid.  (128880899)
 - Fixed: Existing RCS 1:1/Group chat will downgrade to SMS even if RCS is still registered.  (130029732)
 
-###### Known Issues
+#### Known Issues
 
 - For group messages with RCS and iMessage participants, a reply to a text message attachment might not display as a thread on the receiver device.  (133326509)
 
-##### Networking
+### Networking
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: For apps linked on macOS 15 / iOS 18 or newer, the default User-Agent request header field value generated by URLSession now includes the unlocalized bundle name instead of the localized bundle name.  (117380285)
 
-##### Notifications
+### Notifications
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Incoming notifications on Lock Screen might not be seen when in List View.  (129021171)
 
-##### Phone
+### Phone
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: In the Phone app, the Keypad search results always display a video icon, although tapping the icon places audio calls.  (131601723)
 
-##### Photos
+### Photos
 
-###### New Features
+#### New Features
 
 - Collection order and visibility changes will be reset if they were made on iOS and iPadOS 18.0 beta 4 or earlier.  (132117458)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Photos and videos might stop syncing via iCloud Photo Library.  (128325085)
 - Fixed: Photos-related services might not respond. This issue can impact iCloud Photo Library syncing, Camera captures, Screenshot captures, and Sharing.  (130739189)
 - Fixed: Upgrading from iOS 18.0 beta 5 to iOS 18.1 beta results in a Photos Library rebuild.  (131845921)
 
-##### Platform
+### Platform
 
-###### New Features
+#### New Features
 
 - On Apple Silicon based devices with M3 or later, and A16 Bionic or later, the values returned by reading the CNTFRQ_EL0 and CNTVCT_EL0 registers have been updated to 1 GHz, instead of the prior value of 24 MHz. It is still recommended for apps to use libsystem APIs like `mach_absolute_time()` for timekeeping. Your app will not be impacted by this change if it uses Apple’s timekeeping APIs. For compatibility purposes, this change will only be visible when using the SDK associated with this release or later. On macOS, applications running inside a Virtualization.framework VM will continue to receive the legacy behavior.  (84639494)
 - The firmware image for iBoot will be made available in cleartext in the PCC image. To reduce the overhead imposed by firmware encryption and align policies where appropriate, firmware encryption has been disabled for iBoot on iOS, macOS, watchOS, tvOS, and visionOS. See [Private Cloud Compute](https://security.apple.com/blog/private-cloud-compute/) for more details.  (125171074)
 
-##### Podcasts
+### Podcasts
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Podcasts will incorrectly show “View Transcript” as an option in shortcuts.  (131070716)
 
-##### Previews
+### Previews
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Triggering an on-device preview might fail.  (129150211)
 
-##### RealityKit
+### RealityKit
 
-###### New Features
+#### New Features
 
 - USD files which use Catmull-Clark subdivision now render using subdivision in RealityKit. Meshes which produce less than 35,000 patches can render using subdivision. This can increase memory consumption and reduce rendering performance.  (129016034)
 - Virtual objects now render using the Display P3 color gamut. When using a `DrawableQueue` connected to a `TextureResource` with the `.color` semantic, render using the Display P3 color space.  (129017592)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - In iOS & iPadOS 17, macOS 14, visionOS 1 and earlier, UnlitMaterials’ blending modes inconsistently respond to `.blending`, `.color`, and `.baseColor` setters. In applications building against RealityKit from iOS & iPadOS 18, macOS 15, or visionOS 2, alpha-blending enablement should be configured explicitly with `.blending = .transparent(opacity:)`. Developers are advised to check that their code-configured materials are alpha-blending as intended, and use the `.blending` setting where appropriate.  (118210191)
 - In iOS & iPadOS 17, macOS 14, visionOS 1 and earlier, transparent materials’ apparent final opacities respond inconsistently to `.blending`, `.color`, and `.baseColor` setters. In applications building against RealityKit from iOS & iPadOS 18, macOS 15, or visionOS 2, the final opacity of transparent materials is computed as a multiplication of its `.color` or `.baseColor`’s alpha and `.blending = .transparent(opacity:)`. Developers are advised to check that their code-configured transparent materials render with the intended final opacities, and update their usages of `.color`, `.baseColor` and/or `.blending = .transparent(opacity:)` when necessary.  (125431647)
@@ -448,101 +448,101 @@ The iOS & iPadOS 18 SDK provides support to develop apps for iPhone and iPad run
 - Fixed: The `.trigger` mode of CollisionComponent no longer generates CollisionEvents when both involved collision shapes use the `.trigger` mode.  (129016567)
 - Fixed: `[.world, .plane, .image, .object, .face, .camera]` anchor capabilities used in conjunction with any scene understanding capabilities on a device without a LiDAR scanner would cause those anchor capabilities to not work.  (129253808)
 
-###### Deprecations
+#### Deprecations
 
 - In previous versions, the order of child entities was sometimes preserved. Now, the order of an `Entity`’s children might not be reliable and can change unexpectedly when any child is reparented.  (129015381)
 
-##### Screen Time
+### Screen Time
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Parent approving remotely from the parent device will always grant 1 hour, regardless of whether a child asks for a 15-minute, 1-hour, or all-day exception for an app or website.   (129084141)
 - Fixed: When an Apple Watch is upgraded to 11.0 from an earlier Beta, Screen Time App Limits might be deleted for both the parent and child. If this occurs, parent will need to add back the app limits.  (130981807)
 
-##### Search
+### Search
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: The “Help Apple Improve Search” control is not functional.  (129226418)
 
-##### Settings
+### Settings
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Recents and search results are sometimes missing and might not navigate to nested panes.  (128802504)
 - Fixed: The available storage listed in General > About might be incorrect.   (129688831)
 - Fixed: When navigating to Settings > General > Storage, the Settings app might crash if you have not opened Podcasts prior.  (131180865)
 
-##### Shortcuts
+### Shortcuts
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: The Shortcuts editor might offer some new actions that are not yet ready for use. If you save a shortcut with one of these actions, you might need to correct it after a future update with the corrected actions.  (128841105)
 - Fixed: Adding or removing SiriKit intents or App Intents might not reflect immediately in the Shortcuts app.  (130039560)
 - Fixed: The Create Board and Open Board Shortcuts actions and App Shortcuts might not be available.  (133023610)
 
-##### Simulator
+### Simulator
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Using Safari in the simulator can cause the simulator to hang.  (128545001)
 
-##### Siri
+### Siri
 
-###### New Features
+#### New Features
 
 - In iOS 18, when an iPhone is connected via Bluetooth to a vehicle without CarPlay, Siri’s audio quality can be significantly improved through the new option “Respond over Media Source”. First, users need to enable the setting by going to (with Developer settings enabled) Settings, “Developers” → “Siri in Bluetooth Car testing” → Toggle “Show Audio Output in Settings”. Users then will be able to use this feature by going to Settings “Siri & Search” → “Siri Responses” → “When Connected to Car Bluetooth”.  (128692679)
 
-##### Software Update
+### Software Update
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Devices updating from an iOS/iPadOS 18 beta build or macOS 15 beta build prior to iOS 18 beta 4 or macOS 15 beta 4 can hit a download error.  (130652449)
 
-##### Spotlight
+### Spotlight
 
-###### Known Issues
+#### Known Issues
 
 - Icons in Spotlight might not match icons on the Home Screen.  (134088480)
 
-##### StoreKit
+### StoreKit
 
-###### New Features
+#### New Features
 
 - The [SubscriptionStoreView](../StoreKit/subscriptionstoreview.md) now supports custom control styles. To create a custom control style, declare a type that conforms to [SubscriptionStoreControlStyle](../StoreKit/subscriptionstorecontrolstyle.md) and implement `makeBody(configuration:)` method.  (106819454)
 - New standard styles are available for laying out subscription store view controls with a compact height. Use `pagedPicker` and `pagedProminentPicker` for a platform appropriate paging effect, or `compactPicker` to place options in a horizontal stack. For watchOS, the new `pagedPicker` style is available for laying out [`SubscriptionStoreView`](../StoreKit/subscriptionstoreview.md) controls with a compact height.  (110286601)
 - Use types such as `SubscriptionOptionGroup` and `SubscriptionPeriodGroupSet` to declare a hierarchical structure for your [`SubscriptionStoreView`](../StoreKit/subscriptionstoreview.md). You can use the `subscriptionStoreOptionGroupStyle(_:)` to choose between presenting groups as a tab view or as navigation links.  (110429924) (FB12264937)
-- The subscription status [RenewalInfo](../StoreKit/product/subscriptioninfo/status/api-3822294-renewalinfo.md) object now supports new properties `renewalPrice` and `currency` to indicate the price at which the subscription will renew, and its currency. There is also a new `offer` property containing the information of the offer that will be applied to the next renewal, if there is any. This includes the offer ID, the offer type, and the payment mode.  (114217892)
+- The subscription status [RenewalInfo](../StoreKit/product/subscriptioninfo/status-swift.struct/renewalinfo.md) object now supports new properties `renewalPrice` and `currency` to indicate the price at which the subscription will renew, and its currency. There is also a new `offer` property containing the information of the offer that will be applied to the next renewal, if there is any. This includes the offer ID, the offer type, and the payment mode.  (114217892)
 - Finished consumables can now be included when using the [Transaction](../StoreKit/transaction.md) APIs. Users can enable this feature by setting `SKInAppPurchaseHistoryIncludesConsumables` to true in app’s Info.plist.  (115079880)
 - When configuring the control style for a [`SubscriptionStoreView`](../StoreKit/subscriptionstoreview.md), users can specify a placement for the controls using the `subscriptionStoreControlStyle(_:placement:)` view modifier. For tvOS, by default [`SubscriptionStoreView`](../StoreKit/subscriptionstoreview.md) will place the controls trailing the marketing content.  (115319543)
 - When building an app with Xcode 16, [`SubscriptionStoreView`](../StoreKit/subscriptionstoreview.md) instances using the picker control style have an updated appearance. Use `subscriptionStorePickerItemBackground(_:in:)` to configure a different background color and shape for the picker items.  (120558960)
 - Users can now use APIs like monthly or yearly to get common [Product.SubscriptionPeriod](../StoreKit/product/subscriptionperiod.md) values when comparing subscription periods.  (122684230)
 
-###### Resolved Issues
+#### Resolved Issues
 
-- Fixed: Selecting `Done` in the refund request confirmation sheet returns an error when using the [refund request API](../StoreKit/transaction/api-3803220-beginrefundrequest.md) with StoreKit Testing in Xcode.  (123865137)
+- Fixed: Selecting `Done` in the refund request confirmation sheet returns an error when using the [refund request API](../StoreKit/transaction/beginrefundrequest%28in%29-9k0pj.md) with StoreKit Testing in Xcode.  (123865137)
 - Fixed: VoiceOver does not read a product’s title and description in [ProductView](../StoreKit/productview.md) and [StoreView](../StoreKit/storeview.md).  (124254957) (FB13679318)
-- Fixed an issue where the tab control in [`SusbcriptionStoreView`](../StoreKit/subscriptionstoreview.md) is too wide when using [StoreContent](../StoreKit/storecontent.md) with the [tabs](../StoreKit/subscriptionoptiongroupstyle/api-4354834-tabs.md) option group style.  (128567088)
+- Fixed an issue where the tab control in [`SusbcriptionStoreView`](../StoreKit/subscriptionstoreview.md) is too wide when using [StoreContent](../StoreKit/storecontent.md) with the [tabs](../StoreKit/subscriptionoptiongroupstyle/tabs.md) option group style.  (128567088)
 - The [requestReview](../SwiftUI/environmentvalues/requestreview.md) environment variable is now compatible with Swift 6.  (129929512) (FB13922875)
 
-###### Known Issues
+#### Known Issues
 
 - When using `SubscriptionStorePicker` within a container view, the window bar doesn’t work correctly.   (117701666)
 
   **Workaround:** Return `SubscriptionStorePicker` as a top level view from `makeBody(configuration:)` method, instead of using it within a container.
 
-###### Deprecations
+#### Deprecations
 
 - The Original API for In-App Purchase is now deprecated, including: SKStoreReviewController, SKProduct, SKReceiptRefreshRequest, SKStorefront, SKPayment, SKRequest, SKProductsRequest, and SKProductDiscount. Please upgrade to [StoreKit 2](https://developer.apple.com/storekit/) for current APIs and future enhancements.  (116600524)
 
-##### Swift Charts
+### Swift Charts
 
-###### New Features
+#### New Features
 
 - Plot math functions using `LinePlot` and `AreaPlot`.  (117186178)
 - Visualize large datasets more efficiently using vectorized plot APIs such as `PointPlot` and `RectanglePlot`.  (117469419)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Rotated axis labels stretch to incorrect sizes.  (106013386)
 - Fixed: Blur and shadow effects on marks might disappear during animation.  (125493885)
@@ -551,9 +551,9 @@ The iOS & iPadOS 18 SDK provides support to develop apps for iPhone and iPad run
 - Fixed: For function plots, the Y domain cannot be inferred automatically.  (128877906)
 - Fixed: Animations involving charts might lead to the disappearance of marks with a `.foregroundStyle(Color)` throughout the duration of the animation, even if the color did not change.  (130023892)
 
-##### SwiftUI
+### SwiftUI
 
-###### New Features
+#### New Features
 
 - When using a `TabView`, tapping on the current tab now pops any embedded navigation stack.  (50924017)
 - Pickers now can have keyboard shortcuts attached to their individual options, by attaching the `keyboardShortcut()` modifier to the individual views in the picker content.  (67682762) (FB8522629)
@@ -580,7 +580,7 @@ The iOS & iPadOS 18 SDK provides support to develop apps for iPhone and iPad run
 - Added the ability to give a gesture a name, which gets surfaced to UIGestureRecognizers when establishing dependencies.  (126527559)
 - Nesting a TabSection within a TabSection is supported in the `.sidebarAdaptable` TabViewStyle on iPadOS and visionOS.  (128237671)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue where long press gestures would block gestures on other descendant views.  (57368881)
 - Fixed an issue where `UIButton` used with `UIViewRepresentable` might not receive touches. Tap gestures in SwiftUI also now correctly coordinate with `UITapGestureRecognizer` instances.  (57885589)
@@ -653,75 +653,75 @@ The iOS & iPadOS 18 SDK provides support to develop apps for iPhone and iPad run
 - Fixed: In the Swift 6 language mode, the `@Entry` macro now works with non-`Sendable` types if the type of the entry is declared explicitly.  (129073803)
 - Fixed an issue where the name passed to the `gesture` modifier would not be available when resolving UIKit dependencies.  (129590852)
 
-##### TipKit
+### TipKit
 
-###### New Features
+#### New Features
 
 - The new `TipGroup` API and `CloudKitContainer` syncing will be made available via an upcoming beta SDK release.  (129425412)
 
-##### Translation
+### Translation
 
-###### New Features
+#### New Features
 
 - Users can translate text and display results in app. See the `TranslationSession` class, and learn more in the WWDC24 video “Meet the Translation API.”  (112844581)
 - Translation now supports translating Hindi in the Translate app, System-wide translation, Safari translation, and the new Translation APIs.  (116622913)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: When using `.translationPresentation()` on an iPhone, the background above the sheet blocks the presenting view instead of letting it show through.  (128504309)
 
-##### UIApplication
+### UIApplication
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Applications built with iOS 18, iPadOS 18, Mac Catalyst 18, or tvOS 18 SDKs will call to the deprecated method `UIApplication.openURL(_:)`. The specified URL will not open and will always return `false`.  (125695759)
 
-##### UIKit
+### UIKit
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: `UITabGroup.managingNavigationController` does not work as expected.  (126277771)
 - Fixed: Creating a new document in using “+” sign in “Recents” tab of UIDocumentBrowserViewController might fail.  (128520498)
 - Fixed: tabBarController(_:didSelectTab:previousTab:) is not called when a child of a `UITabGroup` is selected.  (128697021)
 - Fixed: Tab titles are missing in iPad tab bars for RTL languages.  (130154177)
 
-###### Deprecations
+#### Deprecations
 
 - If `UIImage(named:)` was called with the name of an app icon, it would previously return an undefined image of the icon set, without any masking or shadowing applied. On iOS 18, it now returns nil. To display an icon within the app itself, add the desired image to the asset catalog as an image set.  (130491812) (FB14052579)
 
-##### Vision Framework
+### Vision Framework
 
-###### Deprecations
+#### Deprecations
 
 - `faceCaptureQuality` is now replaced by `captureQuality.score` on `FaceObservation`.  (132508104)
 
-##### Wallet
+### Wallet
 
-###### New Features
+#### New Features
 
 - To help prevent fraud, when adding an ID to iPhone, the user might be asked to take a Live Photo instead of, or in addition to, conducting a series of head and facial movements. The Live Photo is evaluated by the device and Apple to help ensure that the photo being submitted is of a live person and that the same live person is submitting the photo.  (129338051)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Sharing your ID in Wallet within apps is not available when Require Face ID for Wallet is enabled.  (128775860)
 
-##### Wallet & Apple Pay
+### Wallet & Apple Pay
 
-###### Known Issues
+#### Known Issues
 
 - Users with an Apple Watch might be prompted to reauthorize Connected Accounts in Wallet on iPhone.  (129127520)
 
   **Workaround:** Wait for iPhone and Apple Watch to synchornize. If the issue persists after several minutes, try reauthorizing the connection on iPhone.
 
-##### Watch Faces
+### Watch Faces
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: In Apple Watch > Face Gallery on iPhone, complications for the Podcasts and Music apps are unavailable.  (131747921)
 
-##### WeatherKit
+### WeatherKit
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: HistoricalComparisons data will not be returned unless it is requested with other weather datasets (e.g. CurrentWeather).  (107204312)
 - Fixed: Returned HistoricalComparisons conditions, such as precipitation, might have placeholder values for baseline and currentValue.  (126496817)
@@ -729,9 +729,9 @@ The iOS & iPadOS 18 SDK provides support to develop apps for iPhone and iPad run
 - Fixed: Some PrecipitationStatistics fields such as averagePrecipitationProbability and averageSnowfallAmount might show placeholder values.  (128008885)
 - Fixed: WeatherKit v2 is currently available only for Swift, not for the REST API.  (128024852)
 
-##### WidgetKit
+### WidgetKit
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Adopting ‘autoPresentConfigAfterAdding’ currently doesn’t auto present config sheet for widgets or controls.  (114470520)
 - Fixed: Disabled and privacy-redacted control states do not render properly for control widgets used with the Action button.  (125867980)
@@ -741,27 +741,27 @@ The iOS & iPadOS 18 SDK provides support to develop apps for iPhone and iPad run
 - Fixed: An error building a control template that states “Template request failed: WidgetKit.ChronoError.AppIntent.conversionFailure(underlyingError: AppIntent has missing parameter value for ’timerName’” might occur. Users might need to set a default value in the initializer of @Parameter, or using the default method on Query.  (129066701)
 - Fixed: Widget extensions using ControlWidgetButton and ControlWidgetToggle will crash on iOS 18 beta 5 and later when built from Xcode 16 beta 4 and earlier.  (130760581)
 
-###### Known Issues
+#### Known Issues
 
 - For control widgets that specify both a subtitle and value, Control Center displays only the subtitle.  (127906735)
 - Images used in a ControlWidgetConfiguration that are loaded from the app extension’s bundle might glitch when using a symbol effect content transition.  (131789007)
 
   **Workaround:** Apply the .contentTransition(.identity) view modifier to the Image.
 
-##### Widgets
+### Widgets
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Resizing widgets on the home screen in RTL might not work as expected.  (128625613)
 - Fixed: If tinting is enabled for the home screen shortly after updating, the widgets might appear with the incorrect background color until it reloads automatically by the system.  (128701638)
 
-###### Deprecations
+#### Deprecations
 
 - Legacy Today View extensions are removed in iOS 18.  (116246167)
 
-##### Wifi Calling
+### Wifi Calling
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: T-Mobile Users will not be able to initiate/receive wifi calls on secondary devices that are signed onto the same iCloud account.  (130227345)
 

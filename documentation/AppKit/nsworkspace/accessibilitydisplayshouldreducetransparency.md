@@ -19,7 +19,7 @@ var accessibilityDisplayShouldReduceTransparency: Bool { get }
 @property (readonly) BOOL accessibilityDisplayShouldReduceTransparency;
 ```
 
-#### Discussion
+## Discussion
 
 If this property is [`true`](../../Swift/true.md), don’t use semitransparent backgrounds in the user interface. For example, use only opaque windows.
 

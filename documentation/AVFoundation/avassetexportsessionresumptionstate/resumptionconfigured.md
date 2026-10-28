@@ -20,7 +20,7 @@ A Boolean value that indicates whether the export session is configured as resum
 @property (readonly, getter=isResumptionConfigured) BOOL resumptionConfigured;
 ```
 
-#### Discussion
+## Discussion
 
 If `true`, the export session is configured as resumable. If `false`, the export session will remain as non-resumable (default). You can still call [`exportAsynchronously(completionHandler:)`](../avassetexportsession/exportasynchronously%28completionhandler%29.md) when this property is `false`.
 

@@ -16,7 +16,7 @@ An offset from the anchor’s generation marker.
 var offset: Int
 ```
 
-#### Discussion
+## Discussion
 
 You can use the offset to track a contiguous number of contact items you’ve successfully enumerated within the database generation.
 

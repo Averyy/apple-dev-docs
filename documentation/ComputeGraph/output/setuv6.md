@@ -16,7 +16,7 @@ Sets the sixth UV coordinate set for the rendered output mesh.
 void output::setUV6(float4 value)
 ```
 
-#### Discussion
+## Discussion
 
 This function assigns a custom UV coordinate to the sixth texture coordinate channel of the output mesh. If the mesh doesn’t already have a UV6 channel, it will be created. This enables multi-texturing and advanced shader effects.
 

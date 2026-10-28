@@ -25,7 +25,7 @@ func CFStringIsEncodingAvailable(_ encoding: CFStringEncoding) -> Bool
 extern Boolean CFStringIsEncodingAvailable(CFStringEncoding encoding);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the encoding is available, otherwise `false`.
 

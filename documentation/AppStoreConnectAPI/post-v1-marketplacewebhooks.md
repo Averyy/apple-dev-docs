@@ -17,11 +17,11 @@ Add a new endpoint URL and secret for alternative distribution package notificat
 - [Configuring alternative marketplaces and alternative marketplace apps](./configuring-alternative-marketplaces-and-alternative-marketplace-apps.md)
 - [Creating alternative distribution packages](./creating-alternative-distribution-packages.md)
 
-#### Discussion
+## Discussion
 
 Each developer account has a single marketplace webhooks `endpointUrl`, so if you operate mutliple marketplaces all notifications come to a single endpoint. The notification payload contains the `marketplaceAppId.`
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

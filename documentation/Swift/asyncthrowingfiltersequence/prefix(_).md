@@ -21,11 +21,11 @@ Returns an asynchronous sequence, up to the specified maximum length, containing
 func prefix(_ count: Int) -> AsyncPrefixSequence<Self>
 ```
 
-#### Return Value
+## Return Value
 
 An asynchronous sequence starting at the beginning of the base sequence with at most `count` elements.
 
-#### Discussion
+## Discussion
 
 Use `prefix(_:)` to reduce the number of elements produced by the asynchronous sequence.
 

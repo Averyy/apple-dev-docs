@@ -30,7 +30,7 @@ var isDynamic: Bool { get set }
 - [Getting Started with Physics Bodies](../getting-started-with-physics-bodies.md)
 - [Getting Started with Spring Joints](../getting-started-with-spring-joints.md)
 
-#### Discussion
+## Discussion
 
 The default value is [`true`](../../Swift/true.md). If the value is [`false`](../../Swift/false.md), the physics body ignores all forces and impulses applied to it. This property is ignored on edge-based bodies; they are automatically static.
 

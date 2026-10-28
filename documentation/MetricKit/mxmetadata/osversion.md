@@ -25,7 +25,7 @@ var osVersion: String { get }
 @property (strong, readonly, nonnull) NSString * osVersion;
 ```
 
-#### Discussion
+## Discussion
 
 The OS version is the same as the one used in crash reports.
 

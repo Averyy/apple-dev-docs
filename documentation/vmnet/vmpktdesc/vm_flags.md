@@ -20,7 +20,7 @@ var vm_flags: UInt32
 uint32_t vm_flags;
 ```
 
-#### Discussion
+## Discussion
 
 Should be set to `0` on read.
 

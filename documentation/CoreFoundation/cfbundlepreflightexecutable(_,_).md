@@ -25,11 +25,11 @@ func CFBundlePreflightExecutable(_ bundle: CFBundle!, _ error: UnsafeMutablePoin
 extern Boolean CFBundlePreflightExecutable(CFBundleRef bundle, CFErrorRef*error);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if `bundle` is loaded or upon inspection appears to be loadable, otherwise `false`.
 
-#### Discussion
+## Discussion
 
 If this function returns true, this does not mean that the bundle is definitively loadable, since it may fail to load due to link errors or other problems not readily detectable.
 

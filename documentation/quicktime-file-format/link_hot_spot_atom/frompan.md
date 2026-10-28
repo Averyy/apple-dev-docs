@@ -6,7 +6,7 @@
 
 The preferred from-pan angle at the source node.
 
-#### Overview
+## Overview
 
 The source node is the node containing the hot spot.
 

@@ -20,7 +20,7 @@ unowned(unsafe) var delegate: (any IKScannerDeviceViewDelegate)! { get set }
 @property (assign) id<IKScannerDeviceViewDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 The delegate is sent notifications of errors as well as the completed scan content.
 

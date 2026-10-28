@@ -20,7 +20,7 @@ Creates a new dynamic Metal library instance asynchronously.
 - (id<MTL4CompilerTask>) newDynamicLibrary:(id<MTLLibrary>) library completionHandler:(MTLNewDynamicLibraryCompletionHandler) completionHandler;
 ```
 
-#### Return Value
+## Return Value
 
 A compiler task representing the asynchronous compilation task.
 

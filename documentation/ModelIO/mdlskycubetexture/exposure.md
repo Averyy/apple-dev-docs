@@ -24,7 +24,7 @@ var exposure: Float { get set }
 @property (nonatomic, assign) float exposure;
 ```
 
-#### Discussion
+## Discussion
 
 To render a sky texture, Model I/O first simulates the colors visible in the sky at different directions and then applies tone mapping to fit the resulting colors into the range of displayable values.  As part of this process, Model I/O uses this property to determine the base brightness of the texture image.
 

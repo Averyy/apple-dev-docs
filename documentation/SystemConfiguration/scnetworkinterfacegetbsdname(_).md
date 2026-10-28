@@ -19,7 +19,7 @@ func SCNetworkInterfaceGetBSDName(_ interface: SCNetworkInterface) -> CFString?
 CFStringRefSCNetworkInterfaceGetBSDName(SCNetworkInterfaceRef interface);
 ```
 
-#### Return Value
+## Return Value
 
 The BSD name associated with the interface (for example, `en0`), or `NULL` if no BSD name is available.
 

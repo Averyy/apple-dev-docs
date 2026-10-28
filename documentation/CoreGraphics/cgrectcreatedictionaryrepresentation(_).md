@@ -25,7 +25,7 @@ func CGRectCreateDictionaryRepresentation(_: CGRect) -> CFDictionary
 extern CFDictionaryRefCGRectCreateDictionaryRepresentation(CGRect );
 ```
 
-#### Return Value
+## Return Value
 
 The dictionary representation of the rectangle.
 

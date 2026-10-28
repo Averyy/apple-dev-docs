@@ -25,7 +25,7 @@ func matchStreamingBuffer(_ buffer: AVAudioPCMBuffer, at time: AVAudioTime?)
 - (void) matchStreamingBuffer:(AVAudioPCMBuffer *) buffer atTime:(AVAudioTime *) time;
 ```
 
-#### Discussion
+## Discussion
 
 This method continues to generate signatures and perform searches until the audio in the buffer stops, which may result in multiple calls to the [`delegate`](./delegate.md).
 

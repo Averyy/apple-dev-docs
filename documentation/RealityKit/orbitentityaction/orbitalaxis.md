@@ -20,7 +20,7 @@ A vector that describes the axis of rotation (in world space).
 var orbitalAxis: SIMD3<Float>
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is `[0, 1, 0]`, meaning the rotation occurs around the y-axis.
 

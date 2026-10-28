@@ -19,7 +19,7 @@ The source associated with the button that created this document.
 var creationSource: DocumentCreationSource? { get }
 ```
 
-#### Discussion
+## Discussion
 
 On iOS, you can specify the source using a [`NewDocumentButton`](../newdocumentbutton.md) in [`DocumentGroupLaunchScene`](../documentgrouplaunchscene.md). On macOS, this is always `nil`.
 

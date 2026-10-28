@@ -24,7 +24,7 @@ let kVTCompressionPropertyKey_DataRateLimits: CFString
 extern CFStringRef const kVTCompressionPropertyKey_DataRateLimits;
 ```
 
-#### Discussion
+## Discussion
 
 Each hard limit is described by a data size in bytes and a duration in seconds, and requires that the total size of compressed data for any contiguous segment of that duration (in decode time) not exceed the data size. By default, no data rate limits are set.  The property is a [`CFArray`](../CoreFoundation/cfarray.md) of an even number of [`CFNumber`](../CoreFoundation/cfnumber.md) objects, alternating between bytes and seconds. Note that data rate settings only have an effect when timing information is provided for source frames, and that some codecs do not support limiting to specified data rates.
 

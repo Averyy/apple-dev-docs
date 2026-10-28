@@ -23,7 +23,7 @@ func overwriteChannels(_ channels: [UInt8], withPixel pixel: Pixel_FFFF, destina
 
 Available when `Format` is `vImage.InterleavedFx4`.
 
-#### Discussion
+## Discussion
 
 Use this function to overwrite one or more channels of an interleaved buffer with a pixel value. The following code overwrites channels `1` and `3` with the corresponding channels in `pixel` :
 

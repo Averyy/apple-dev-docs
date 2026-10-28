@@ -5,7 +5,7 @@
 
 Make binaries available to other developers by creating Swift packages that include one or more XCFrameworks.
 
-#### Overview
+## Overview
 
 Creating a Swift package to organize and share your code makes source files available to developers who use the Swift package as a package dependency. However, you may need to make your code available as binaries to protect your intellectual property — for example, if you’re developing proprietary, closed-source libraries.
 
@@ -13,7 +13,7 @@ Carefully consider whether you want to distribute your code in binary form becau
 
 > **Note**: A Swift package can contain a mix of both source files and binaries. This use case is common for packages that contain source code that wraps closed-source binaries.
 
-##### Package binaries as an XCFramework bundle
+### Package binaries as an XCFramework bundle
 
 To distribute code in binary form as a Swift package, create an XCFramework bundle, or *artifact*, that contains the binaries. Then, make the bundle available locally or on a server:
 
@@ -22,7 +22,7 @@ To distribute code in binary form as a Swift package, create an XCFramework bund
 
 To learn more about creating an XCFramework bundle, see [Creating a multiplatform binary framework bundle](./creating-a-multi-platform-binary-framework-bundle.md).
 
-##### Declare a binary target in the package manifest
+### Declare a binary target in the package manifest
 
 First, follow the process to create a new Swift package as described in [Creating a standalone Swift package with Xcode](./creating-a-standalone-swift-package-with-xcode.md). Next, declare a *binary target* in your package manifest and make it part of a product, just like a target that contains source files. Ensure that the name of the binary target in the package manifest matches the artifact’s module name.
 

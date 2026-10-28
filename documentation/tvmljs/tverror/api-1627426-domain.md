@@ -15,7 +15,7 @@ A string containing the error domain.
 readonly attribute String domain;
 ```
 
-#### Discussion
+## Discussion
 
 See [Error Domains](./error_domains.md) for a list of domains.
 

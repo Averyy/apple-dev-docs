@@ -25,13 +25,13 @@ func transformedValue(_ value: Any?) -> Any?
 - (id) transformedValue:(id) value;
 ```
 
-#### Return Value
+## Return Value
 
 The result of transforming `value`.
 
 The default implementation simply returns `value`.
 
-#### Discussion
+## Discussion
 
 A subclass should override this method to transform and return an object based on `value`.
 

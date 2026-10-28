@@ -25,11 +25,11 @@ func xpc_copy(_ object: xpc_object_t) -> xpc_object_t?
 extern xpc_object_txpc_copy(xpc_object_t object);
 ```
 
-#### Return Value
+## Return Value
 
 The new object. `NULL` if the object type does not support copying or if sufficient memory for the copy could not be allocated. Service objects do not support copying.
 
-#### Discussion
+## Discussion
 
 When called on an array or dictionary, [`xpc_copy(_:)`](./xpc_copy%28_%29.md) will perform a deep copy.
 

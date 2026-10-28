@@ -19,7 +19,7 @@ var selectedFont: NSFont? { get }
 @property (strong, readonly, nullable) NSFont * selectedFont;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is the last font recorded with a [`setSelectedFont(_:isMultiple:)`](./setselectedfont%28_,ismultiple%29.md) message.
 

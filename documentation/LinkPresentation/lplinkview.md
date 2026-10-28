@@ -32,11 +32,11 @@ class LPLinkView
 @interface LPLinkView : NSView
 ```
 
-#### Overview
+## Overview
 
 [`LPLinkView`](./lplinkview.md) presents a link based on its available metadata. Use it to show a link’s title and icon, associated images, inline audio, video playback, and maps in a familiar and consistent style.
 
-#### Present a rich link
+## Present a rich link
 
 To present a rich link in your app, create an [`LPLinkView`](./lplinkview.md), passing an [`LPLinkMetadata`](./lplinkmetadata.md) instance into its initializer. Then add the [`LPLinkView`](./lplinkview.md) to your view.
 

@@ -18,7 +18,7 @@ struct es_event_tcc_modify_t
 typedef struct { ... } es_event_tcc_modify_t;
 ```
 
-#### Overview
+## Overview
 
 TCC Modification Event. Occurs when a TCC permission is granted or revoked.
 

@@ -25,7 +25,7 @@ var countOfResponseBodyBytesReceived: Int64 { get }
 @property (readonly) int64_t countOfResponseBodyBytesReceived;
 ```
 
-#### Discussion
+## Discussion
 
 This value includes protocol-specific framing, transfer encoding, and content encoding.
 

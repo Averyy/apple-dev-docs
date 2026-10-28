@@ -25,7 +25,7 @@ func register(_ nib: UINib?, forHeaderFooterViewReuseIdentifier identifier: Stri
 - (void) registerNib:(UINib *) nib forHeaderFooterViewReuseIdentifier:(NSString *) identifier;
 ```
 
-#### Discussion
+## Discussion
 
 Before dequeueing any header or footer views, call this method or the [`register(_:forHeaderFooterViewReuseIdentifier:)`](./register%28_,forheaderfooterviewreuseidentifier%29-20ybb.md) method to tell the table view how to create new instances of your views. If a view of the specified type isn’t currently in a reuse queue, the table view uses the provided information to create a new one automatically.
 

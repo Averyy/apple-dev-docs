@@ -20,7 +20,7 @@ func isTrue() -> Bool
 - (BOOL) isTrue;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the test represented by the receiver evaluates to [`true`](../../Swift/true.md), otherwise [`false`](../../Swift/false.md).
 

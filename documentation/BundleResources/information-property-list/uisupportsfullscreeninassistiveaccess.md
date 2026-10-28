@@ -19,7 +19,7 @@ A Boolean value that indicates if an iOS or iPadOS app appears as full screen in
 
 **Default**: `YES`
 
-#### Discussion
+## Discussion
 
 Adding this key to your app’s `Info.plist` file with a value of `YES` allows your app’s UI to expand into all the available space above the Back button in Assistive Access. It also lists your app as Optimized for Assistive Access in Settings, so that a trusted supporter configuring Assistive Access on someone’s behalf knows that your app’s UI is optimized for this feature.
 

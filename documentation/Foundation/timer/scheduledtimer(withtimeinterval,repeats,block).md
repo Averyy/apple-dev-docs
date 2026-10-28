@@ -25,11 +25,11 @@ class func scheduledTimer(withTimeInterval interval: TimeInterval, repeats: Bool
 + (NSTimer *) scheduledTimerWithTimeInterval:(NSTimeInterval) interval repeats:(BOOL) repeats block:(void (^)(NSTimer *timer)) block;
 ```
 
-#### Return Value
+## Return Value
 
 A new `NSTimer` object, configured according to the specified parameters.
 
-#### Discussion
+## Discussion
 
 After `interval` seconds have elapsed, the timer fires, executing `block`.
 

@@ -18,7 +18,7 @@ A translation strategy that provides fast translations using traditional models.
 static let lowLatency: TranslationSession.Strategy
 ```
 
-#### Discussion
+## Discussion
 
 Use this strategy for scenarios that require low latency, such as translating audio in real time. This strategy requires downloading languages before use, but after they are downloaded they are available to all apps on the device. To download languages ahead of time, call [`prepareTranslation()`](../preparetranslation%28%29.md) before performing translations.
 

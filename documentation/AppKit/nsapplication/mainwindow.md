@@ -19,7 +19,7 @@ weak var mainWindow: NSWindow? { get }
 @property (weak, readonly, nullable) NSWindow * mainWindow;
 ```
 
-#### Discussion
+## Discussion
 
 The value in this property is `nil` when the app’s storyboard or nib file has not yet finished loading. It might also be `nil` when the app is inactive or hidden.
 

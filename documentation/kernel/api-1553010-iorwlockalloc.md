@@ -24,11 +24,11 @@ struct IORWLock * IORWLockAlloc(void);
 IORWLock * IORWLockAlloc(void);
 ```
 
-#### Return Value
+## Return Value
 
 Pointer to the allocated lock, or zero on failure.
 
-#### Discussion
+## Discussion
 
 Allocates and initializes a read/write lock in general purpose memory. Read/write locks provide for multiple readers, one exclusive writer, and are supplied by libkern/locks.h. This function may block and so should not be called from interrupt level or while a spin lock is held. IORWLocks use the global IOKit lock group, IOLockGroup. To simplify kext debugging and lock-heat analysis, consider using lck_* locks with a per-driver lock group, as defined in kern/locks.h.
 

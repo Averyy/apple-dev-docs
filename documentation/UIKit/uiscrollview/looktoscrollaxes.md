@@ -19,7 +19,7 @@ var lookToScrollAxes: UIAxis { get set }
 @property (nonatomic) UIAxis lookToScrollAxes;
 ```
 
-#### Discussion
+## Discussion
 
 When enabling Look to Scroll, you should consider the type of content that is in the scroll view. For best experience, this API should be on scrolling area of an app that’s considered “content”. Examples: - The message body area in Mail, but not the list of messages that’s considered navigation. - The note body in Notes - In TV app, the tile design including both horizontal and vertical scrolling views.
 

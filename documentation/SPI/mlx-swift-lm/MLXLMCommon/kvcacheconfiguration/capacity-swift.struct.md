@@ -17,7 +17,7 @@ Attention window for caches whose capacity is caller-configurable.
 struct Capacity
 ```
 
-#### Overview
+## Overview
 
 Model-native sliding-window layers retain their architecture-defined window and prefix behavior. This value bounds the remaining attention layers created by the model’s `newCache(parameters:)` implementation. A configured [`KVCacheConfiguration.Rewind`](./rewind-swift.struct.md) reserve adds storage beyond this window.
 

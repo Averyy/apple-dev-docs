@@ -16,7 +16,7 @@ get appearanceAnimation(): string;
 set appearanceAnimation(appearanceAnimation: string);
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is a string specifying a [CSS animation shorthand property syntax](http://dev.w3.org/csswg/css-animations/#animation). The string refers to keyframes that you need to provide in a stylesheet or a style element.
 

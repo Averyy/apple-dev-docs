@@ -20,7 +20,7 @@ The description of a control that has no user-configurable options.
 @preconcurrency struct StaticControlConfiguration<Content> where Content : ControlWidgetTemplate
 ```
 
-#### Overview
+## Overview
 
 The following example shows the configuration for a garage door opener control.
 

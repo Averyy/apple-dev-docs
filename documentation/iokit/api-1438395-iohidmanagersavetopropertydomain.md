@@ -16,7 +16,7 @@ Used to write out the current properties to a specific domain.
 void IOHIDManagerSaveToPropertyDomain(IOHIDManagerRef manager, CFStringRef applicationID, CFStringRef userName, CFStringRef hostName, IOOptionBits options);
 ```
 
-#### Discussion
+## Discussion
 
 Using this function will cause the persistent properties to be saved out replacing any properties that already existed in the specified domain. All arguments must be non-NULL except options.
 

@@ -24,7 +24,7 @@ class INSetSeatSettingsInCarIntentResponse
 @interface INSetSeatSettingsInCarIntentResponse : INIntentResponse
 ```
 
-#### Overview
+## Overview
 
 An [`INSetSeatSettingsInCarIntentResponse`](./insetseatsettingsincarintentresponse.md) object contains the status of changing the seat settings in the user’s vehicle. You create instances of this class when confirming or handling a set seat settings in car intent.
 

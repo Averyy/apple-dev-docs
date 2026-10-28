@@ -5,7 +5,7 @@
 
 Manage Game Center leaderboard set member localizations.
 
-#### Overview
+## Overview
 
 Use Game Center leaderboard set member localizations to specify the specific localizations that a leaderboard displays when referenced as part of a Game Center Leaderboard set. See [`Create a Leaderboard Set Localization`](./post-v1-gamecenterleaderboardsetlocalizations.md) for more information. If you instead want to create a localization for a specific leaderboard, see [`Create a Leaderboard Localization`](./post-v1-gamecenterleaderboardlocalizations.md).
 

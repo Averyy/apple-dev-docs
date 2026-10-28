@@ -28,7 +28,7 @@ var maxBufferBindCount: Int { get set }
 
 - [Understanding the Metal 4 core API](../understanding-the-metal-4-core-api.md)
 
-#### Discussion
+## Discussion
 
 The maximum value of this parameter is 31.
 

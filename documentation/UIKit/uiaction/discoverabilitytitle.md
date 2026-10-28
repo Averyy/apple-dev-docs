@@ -23,7 +23,7 @@ var discoverabilityTitle: String? { get set }
 @property (nonatomic, copy, nullable) NSString * discoverabilityTitle;
 ```
 
-#### Discussion
+## Discussion
 
 The system uses this property to display information about the command. In iOS, the system displays this title in the discoverability heads-up display (HUD). If this property is `nil`, the HUD displays the [`title`](./title.md) property.
 

@@ -31,7 +31,7 @@ func requestApplicationPermission(_ applicationPermission: CKContainer.Applicati
 - (void) requestApplicationPermission:(CKApplicationPermissions) applicationPermission completionHandler:(CKApplicationPermissionBlock) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 To implement social features in your app, it’s possible to correlate a user record with the user’s actual name, but your app must get permission from the user to do so. Making a user record discoverable to the contacts of that user involves calling the [`requestApplicationPermission(_:completionHandler:)`](./requestapplicationpermission%28_,completionhandler%29.md) method and asking for the [`userDiscoverability`](./applicationpermissions/userdiscoverability.md) permission. When you call that method, CloudKit asks the user whether the user record can become discoverable. If the user grants the request, that user’s contacts can discover that user’s true identity when running the app. To discover the contacts of the current user, you use the `discoverAllContactUserInfos(completionHandler:)` method or one of several other methods to get the related user information.
 

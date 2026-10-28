@@ -23,7 +23,7 @@ var version: String? { get }
 @property (nonatomic, copy, readonly, nullable) NSString * version;
 ```
 
-#### Discussion
+## Discussion
 
 Returns `nil` if there was no version specified.
 

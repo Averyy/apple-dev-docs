@@ -25,11 +25,11 @@ func CFAllocatorGetPreferredSizeForSize(_ allocator: CFAllocator!, _ size: CFInd
 extern CFIndex CFAllocatorGetPreferredSizeForSize(CFAllocatorRef allocator, CFIndex size, CFOptionFlags hint);
 ```
 
-#### Return Value
+## Return Value
 
 The number of bytes likely to be allocated upon a specific request.
 
-#### Discussion
+## Discussion
 
 The return value depends on the allocator’s internal allocation strategy, and will be equal to or larger than `size`. Calling this function may help you better match your memory allocation or reallocation strategy to that of the allocator.
 

@@ -23,7 +23,7 @@ var minimumScaleFactor: CGFloat { get set }
 @property (nonatomic) CGFloat minimumScaleFactor;
 ```
 
-#### Discussion
+## Discussion
 
 If the [`adjustsFontSizeToFitWidth`](./adjustsfontsizetofitwidth.md) is [`true`](../../Swift/true.md), use this property to specify the smallest multiplier for the current font size that yields an acceptable font size for the label’s text. If you specify a value of `0` for this property, the label doesn’t scale the text down. The default value of this property is `0`.
 

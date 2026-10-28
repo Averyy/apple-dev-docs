@@ -24,7 +24,7 @@ var presenceEventType: HMPresenceEventType { get set }
 @property (nonatomic, readwrite) HMPresenceEventType presenceEventType;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to change the presence type that triggers this event.
 

@@ -24,7 +24,7 @@ static let NSExtensionHostDidEnterBackground: NSNotification.Name
 extern NSString * const NSExtensionHostDidEnterBackgroundNotification;
 ```
 
-#### Discussion
+## Discussion
 
 Extensions can use this notification to stop tasks and prepare the extension to be suspended. The `object` parameter contains the `NSExtensionContext` object. This notification does not contain a `userInfo` dictionary.
 

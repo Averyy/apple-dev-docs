@@ -19,7 +19,7 @@ var sheetParent: NSWindow? { get }
 @property (strong, readonly, nullable) NSWindow * sheetParent;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is `nil` if the receiver is not a sheet or has no sheet parent.
 

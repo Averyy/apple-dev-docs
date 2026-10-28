@@ -24,7 +24,7 @@ class UITabBarItem
 @interface UITabBarItem : UIBarItem
 ```
 
-#### Overview
+## Overview
 
 A tab bar item is a segment of a tab bar that represents a specific section of your app. A tab bar displays one or more items that allow the user to switch between the different sections. The user can select one item at a time.
 

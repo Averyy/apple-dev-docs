@@ -17,7 +17,7 @@ Temporarily loads an adapter, performs a synchronous action, then unloads the ad
 func perform<R>(with adapter: ModelAdapter, perform: () throws -> R) throws -> R
 ```
 
-#### Discussion
+## Discussion
 
 Example:
 

@@ -23,7 +23,7 @@ static var fittingSizeLevel: UILayoutPriority { get }
 static const UILayoutPriority UILayoutPriorityFittingSizeLevel;
 ```
 
-#### Discussion
+## Discussion
 
 When you send a [`systemLayoutSizeFitting(_:)`](../uiview/systemlayoutsizefitting%28_%29.md) message to a view, the size fitting most closely to the target size is computed. This priority is quite low. It’s generally not appropriate to make a constraint at exactly this priority. You want to be higher or lower.
 

@@ -5,7 +5,7 @@
 
 Use a gesture recognizer delegate object to determine the order in which gestures are recognized in your views.
 
-#### Overview
+## Overview
 
 For any two gesture recognizers involved in a potential conflict, only one needs an associated delegate object, and that object must conform to the [`UIGestureRecognizerDelegate`](./uigesturerecognizerdelegate.md) protocol. In your delegate, implement the methods you need for the appropriate resolution. The best way to see how to use these methods is with a few examples.
 

@@ -16,7 +16,7 @@ nonisolated
 func toolbarItemHidden(_ hidden: Bool = true) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 Use this modifier to hide individual views of a `ControlGroup` without hiding the entire group. On macOS and iOS, hidden items will be displayed during user customization.
 

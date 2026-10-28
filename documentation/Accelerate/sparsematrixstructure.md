@@ -29,7 +29,7 @@ typedef struct { ... } SparseMatrixStructure;
 
 - [Creating sparse matrices](./creating-sparse-matrices.md)
 
-#### Overview
+## Overview
 
 The sparsity structure is in a *block compressed sparse column* format. The matrix consists of [`rowCount`](./sparsematrixstructure/rowcount.md) x [`columnCount`](./sparsematrixstructure/columncount.md) blocks, each of which is a square matrix of some fixed size. The system stores this block size separately from the sparsity because the graph algorithms that operate on the structure don’t need it.
 

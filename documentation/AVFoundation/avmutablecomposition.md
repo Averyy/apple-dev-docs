@@ -25,7 +25,7 @@ class AVMutableComposition
 @interface AVMutableComposition : AVComposition
 ```
 
-#### Overview
+## Overview
 
 Use this object to add and remove composition tracks, and add, remove, and scale their time ranges. You can make an immutable snapshot of a mutable composition for playback and inspection as follows:
 

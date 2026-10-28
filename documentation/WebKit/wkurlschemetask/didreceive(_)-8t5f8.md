@@ -24,7 +24,7 @@ func didReceive(_ data: Data)
 - (void) didReceiveData:(NSData *) data;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method to deliver any resource data back to WebKit. If you load the data incrementally, you may call this method multiple times to deliver each new portion of the data. Each time you call this method, WebKit appends the new data to any previously received data.
 

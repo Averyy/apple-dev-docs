@@ -26,7 +26,7 @@ var uuid: UUID { get }
 
 - [Determining the proximity to an iBeacon device](../determining-the-proximity-to-an-ibeacon-device.md)
 
-#### Discussion
+## Discussion
 
 The UUID is the most significant beacon identity characteristic.  Multiple beacon can transmit the same UUID.
 

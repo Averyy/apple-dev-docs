@@ -17,7 +17,7 @@ Applies the hardswish function, element-wise
 class HardSwish
 ```
 
-#### Overview
+## Overview
 
 This is:
 
@@ -25,7 +25,7 @@ This is:
 x * MLX.minimum(MLX.maximum(x + 3, 0), 6) / 6
 ```
 
-##### See Also
+### See Also
 
 - [Activation Functions and Layers](./activations.md)
 - [`hardSwish(_:)`](./hardswish%28_%29.md)

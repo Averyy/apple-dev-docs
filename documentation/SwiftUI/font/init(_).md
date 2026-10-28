@@ -21,7 +21,7 @@ Creates a custom font from a platform font instance.
 init(_ font: CTFont)
 ```
 
-#### Discussion
+## Discussion
 
 Initializing [`Font`](../font.md) with platform font instance ([`CTFont`](../../CoreText/ctfont.md)) can bridge SwiftUI [`Font`](../font.md) with [`NSFont`](../../AppKit/nsfont.md) or [`UIFont`](../../UIKit/uifont.md), both of which are toll-free bridged to [`CTFont`](../../CoreText/ctfont.md). For example:
 

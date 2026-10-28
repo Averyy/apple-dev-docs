@@ -24,7 +24,7 @@ class MTLFunctionConstant
 @interface MTLFunctionConstant : NSObject
 ```
 
-#### Overview
+## Overview
 
 Don’t create an [`MTLFunctionConstant`](./mtlfunctionconstant.md) instance directly. Instead, the list of function constants for a function by querying the `functionConstants` property of an [`MTLFunction`](./mtlfunction.md) instance.
 

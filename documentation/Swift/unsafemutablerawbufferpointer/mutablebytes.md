@@ -21,11 +21,11 @@ A mutable span over the bytes of this buffer.
 var mutableBytes: MutableRawSpan { get }
 ```
 
-#### Return Value
+## Return Value
 
 A `MutableRawSpan` over the bytes of this buffer.
 
-#### Discussion
+## Discussion
 
 The lifetime of the returned span matches the lifetime of the binding which returns it. This lifetime is a convenience, as there can be no enforcement that there is no concurrent access to the underlying memory. The programmer must ensure that the memory remains allocated, initialized and exclusively accessed for the lifetime of the returned span.
 

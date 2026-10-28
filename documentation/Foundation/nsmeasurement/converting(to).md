@@ -25,11 +25,11 @@ func converting(to unit: Unit) -> Measurement<Unit>
 - (NSMeasurement *) measurementByConvertingToUnit:(NSUnit *) unit;
 ```
 
-#### Return Value
+## Return Value
 
 A new measurement with a value calculated by converting into the new unit.
 
-#### Discussion
+## Discussion
 
 This method raises an [`invalidArgumentException`](../nsexceptionname/invalidargumentexception.md) if the receiver cannot be converted to unit.
 

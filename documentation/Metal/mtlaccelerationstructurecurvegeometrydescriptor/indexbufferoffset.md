@@ -24,7 +24,7 @@ var indexBufferOffset: Int { get set }
 @property (nonatomic) NSUInteger indexBufferOffset;
 ```
 
-#### Discussion
+## Discussion
 
 The offset needs to be a multiple of the index data type you configure with the [`indexType`](./indextype.md) property. You also need to align the offset to both the index type’s size and the platform’s buffer alignment requirement.
 

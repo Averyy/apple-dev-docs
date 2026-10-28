@@ -21,7 +21,7 @@ An interface for providing record data to a sync engine and customizing that eng
 protocol CKSyncEngineDelegate : AnyObject, Sendable
 ```
 
-#### Overview
+## Overview
 
 > ❗ **Important**: [`CKSyncEngine`](./cksyncengine-5sie5.md) delivers events serially, which means the delegate doesn’t receive the next event until it finishes handling the current one. To maintain this ordering, don’t call sync engine methods from your delegate that may cause the engine to generate additional events. For example, don’t invoke [`fetchChanges(_:)`](./cksyncengine-5sie5/fetchchanges%28_%29.md) or [`sendChanges(_:)`](./cksyncengine-5sie5/sendchanges%28_%29.md) from within [`handleEvent(_:syncEngine:)`](./cksyncenginedelegate-1q7g8/handleevent%28_,syncengine%29.md).
 

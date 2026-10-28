@@ -23,11 +23,11 @@ func format(_ value: Value) -> String
 
 Available when `Value` conforms to `BinaryFloatingPoint`.
 
-#### Return Value
+## Return Value
 
 A string representation of `value`, formatted according to the style’s configuration.
 
-#### Discussion
+## Discussion
 
 Use this method when you want to create a single style instance, and then use it to format multiple floating-point values. To format a single value, use the [`BinaryFloatingPoint`](../../../Swift/binaryfloatingpoint.md) instance method [`formatted(_:)`](../../../Swift/binaryfloatingpoint/formatted%28_%29-83x4n.md), passing in an instance of [`FloatingPointFormatStyle.Currency`](../currency.md).
 

@@ -21,7 +21,7 @@ The set of data types the Host knows how to marshal between the server and the c
 typedef UInt32 AudioServerPlugInCustomPropertyDataType;
 ```
 
-#### Discussion
+## Discussion
 
 These are the only types supported for custom properties. See [`AudioServerPlugInCustomPropertyInfo`](./audioserverplugincustompropertyinfo.md) for more information.
 

@@ -17,7 +17,7 @@ void seekToTime(
 );
 ```
 
-#### Discussion
+## Discussion
 
 Use this function to change where playback for a media item begins. The time where playback begins is passed, in seconds, by the `time` parameter. For example, to start a media item 5 minutes into playback, set the `time` parameter to 300.
 

@@ -23,7 +23,7 @@ init(forIdentifier identifier: UUID)
 + (WKWebsiteDataStore *) dataStoreForIdentifier:(NSUUID *) identifier;
 ```
 
-#### Discussion
+## Discussion
 
 If the data store for the unique identifier you provide does not exist, the system creates and returns it. Use this method to get a data store for a profile.
 

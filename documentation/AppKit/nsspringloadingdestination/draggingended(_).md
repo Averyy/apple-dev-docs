@@ -20,7 +20,7 @@ optional func draggingEnded(_ draggingInfo: any NSDraggingInfo)
 - (void) draggingEnded:(id<NSDraggingInfo>) draggingInfo;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called when a drag operation has ended. If the destination object is both a dragging destination (class `NSDraggingDestination`) and a spring-loading destination (class `NSSpringLoadingDestination`), note that this method is only called once.
 

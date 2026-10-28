@@ -21,7 +21,7 @@ The one-digit representation of a standalone quarter.
 static var oneDigit: Date.FormatStyle.Symbol.StandaloneQuarter { get }
 ```
 
-#### Discussion
+## Discussion
 
 This style produces representations like `4` for the fourth quarter.
 

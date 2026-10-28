@@ -21,7 +21,7 @@ Hashes the meaningful file-metadata fields of a `Stat` struct.
 func hash(into hasher: inout Hasher)
 ```
 
-#### Discussion
+## Discussion
 
 These are the same fields compared by `==`, fed in the same order. Alignment padding and platform reserved/“spare” fields are not hashed.
 

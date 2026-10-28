@@ -21,7 +21,7 @@ The indentation level of the intent.
 @property (readonly) NSInteger indentationLevel;
 ```
 
-#### Discussion
+## Discussion
 
 The initial list has an indentation level of `0`. Each time you nest a new list, the indentation level for new list increases by `1`. All elements within the same list have the same indentation level.
 

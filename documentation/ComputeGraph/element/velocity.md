@@ -16,11 +16,11 @@ Returns the current velocity of the element.
 float3 element::velocity()
 ```
 
-#### Return Value
+## Return Value
 
 The velocity as a 3D vector
 
-#### Discussion
+## Discussion
 
 Use this function to read the element’s velocity vector, which indicates its direction and speed of motion.
 

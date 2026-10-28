@@ -19,7 +19,7 @@ var selection: Any { get }
 @property (strong, readonly) id selection;
 ```
 
-#### Discussion
+## Discussion
 
 This object is fully key-value coding compliant, but note that it is a proxy and so does not provide the full range of functionality that might be available in the source object.
 

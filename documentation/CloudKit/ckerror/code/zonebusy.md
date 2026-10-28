@@ -25,7 +25,7 @@ case zoneBusy
 CKErrorZoneBusy
 ```
 
-#### Discussion
+## Discussion
 
 Try the operation again in a few seconds. If you encounter this error again, increase the delay time exponentially for each subsequent retry to minimize server contention for the zone.
 

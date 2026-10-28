@@ -24,7 +24,7 @@ class NEIPv4Settings
 @interface NEIPv4Settings : NSObject
 ```
 
-#### Overview
+## Overview
 
 To specify the IPv4 settings of a packet tunnel, set its [`NEPacketTunnelNetworkSettings`](./nepackettunnelnetworksettings.md).[`ipv4Settings`](./nepackettunnelnetworksettings/ipv4settings.md) property to an instance of this class.
 

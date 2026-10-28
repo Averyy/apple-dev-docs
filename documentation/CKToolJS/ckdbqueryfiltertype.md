@@ -37,7 +37,7 @@ interface CKDBQueryFilterType {
 };
 ```
 
-#### Overview
+## Overview
 
 ```javascript
 import { CKDBQueryFilterType } from "@apple/cktool.database";

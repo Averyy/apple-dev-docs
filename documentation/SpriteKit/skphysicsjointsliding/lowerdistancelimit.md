@@ -25,7 +25,7 @@ var lowerDistanceLimit: CGFloat { get set }
 @property (nonatomic) CGFloat lowerDistanceLimit;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `0.0`.
 

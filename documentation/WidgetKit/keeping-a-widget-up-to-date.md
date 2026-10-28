@@ -5,7 +5,7 @@
 
 Plan your widget’s timeline to show timely, relevant information using dynamic views, and update the timeline when things change.
 
-#### Overview
+## Overview
 
 Widgets use SwiftUI views to display their content. WidgetKit renders the views on your behalf in a separate process. As a result, your widget extension is not continually active, even if the widget is onscreen. Despite your widget not always being active, there are several ways you can keep its content up to date:
 
@@ -15,7 +15,7 @@ Widgets use SwiftUI views to display their content. WidgetKit renders the views 
 
 WidgetKit push notifications are an additional way to update your widget that doesn’t replace timeline updates. For more information, refer to [Updating widgets with WidgetKit push notifications](./updating-widgets-with-widgetkit-push-notifications.md).
 
-##### Plan reloads within a budget
+### Plan reloads within a budget
 
 Reloading widgets consumes system resources and causes battery drain due to additional networking and processing. To reduce this performance impact and maintain all-day battery life, limit the frequency and number of updates you request to what’s necessary.
 
@@ -52,7 +52,7 @@ Although your widget timeline provider drives your reload schedule, WidgetKit so
 
 If your widget can predict points in time that it should reload, the best approach is to generate a timeline for as many future dates as possible. Keep the interval of entries in the timeline as large as possible for the content you display. WidgetKit imposes a minimum amount of time before it reloads a widget. Your timeline provider should create timeline entries that are at least about 5 minutes apart. WidgetKit may coalesce reloads across multiple widgets, affecting the exact time a widget is reloaded.
 
-##### Generate a timeline for predictable events
+### Generate a timeline for predictable events
 
 Many widgets have predictable points in time where it makes sense to update their content. For example, a widget that displays weather information might update the temperature hourly throughout the day. A stock market widget could update its content frequently during open market hours, but not at all over the weekend. By planning these times in advance, WidgetKit automatically refreshes your widget when the appropriate time arrives.
 
@@ -76,7 +76,7 @@ In addition to specifying a date *before* the end of the timeline, the provider 
 
 > ❗ **Important**: Plan ahead if your widget makes requests to a server when it reloads and uses [`after(_:)`](./timelinereloadpolicy/after%28_%29.md) with a specific date in timeline entries. WidgetKit tries to respect the date you specify, which may cause a significant increase in server load when multiple devices reload your widget at around the same time.
 
-##### Inform WidgetKit when a timeline changes
+### Inform WidgetKit when a timeline changes
 
 Your app can tell WidgetKit to request a new timeline when something affects a widget’s current timeline. In the game widget example above, if the app receives a push notification indicating a teammate has given the character a healing potion, the app can tell WidgetKit to reload the timeline and update the widget’s content. To reload a specific type of widget, your app uses [`WidgetCenter`](./widgetcenter.md), as shown here:
 
@@ -113,15 +113,15 @@ If your app uses [`WidgetBundle`](../SwiftUI/widgetbundle.md) to support multipl
 WidgetCenter.shared.reloadAllTimelines()
 ```
 
-##### Update relevance information
+### Update relevance information
 
 On iPhone and iPad, people place widgets in Smart Stacks and rely on the system to show them the most relevant widget at the right time. On Apple Watch, widgets automatically appear in the Smart Stack. To help the system determine when a widget in a Smart Stack is most relevant, and to offer Widget Suggestions, provide the system with hints about your widget’s relevance. While this is an optional step, providing relevance clues gives your widget additional visibility. In your timeline provider, implement the [`relevance()`](./timelineprovider/relevance%28%29.md) callback and make sure to keep relevance information up-to-date. For more information, refer to [Increasing the visibility of widgets in Smart Stacks](./widget-suggestions-in-smart-stacks.md).
 
-##### Display dynamic dates
+### Display dynamic dates
 
 Even though your widget doesn’t run continually, it can display time-based information that WidgetKit updates live. For example, it might display a countdown timer that continues to count down even if your widget extension isn’t running. For more information, refer to [Displaying dynamic dates in widgets](./displaying-dynamic-dates.md).
 
-##### Load data from your server before updating the timeline
+### Load data from your server before updating the timeline
 
 You may need to load new data from your server before reloading a timeline. To do this, use the system’s URL loading system and a [`URLSession`](../Foundation/urlsession.md). To learn more, refer to [Making network requests in a widget extension](./making-network-requests-in-a-widget-extension.md).
 

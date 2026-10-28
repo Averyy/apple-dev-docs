@@ -23,11 +23,11 @@ func IOIteratorIsValid(_ iterator: io_iterator_t) -> boolean_t
 boolean_t IOIteratorIsValid(io_iterator_t iterator);
 ```
 
-#### Return Value
+## Return Value
 
 True if the iterator handle is valid, otherwise false is returned.
 
-#### Discussion
+## Discussion
 
 Some iterators will be made invalid if changes are made to the structure they are iterating over. This function checks the iterator is still valid and should be called when IOIteratorNext returns zero. An invalid iterator can be reset and the iteration restarted.
 

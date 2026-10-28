@@ -23,7 +23,7 @@ static let machineReadableCode: ImageAnalyzer.AnalysisTypes
 
 - [Enabling Live Text interactions with images](../../enabling-live-text-interactions-with-images.md)
 
-#### Discussion
+## Discussion
 
 The framework recognizes the following code types:
 

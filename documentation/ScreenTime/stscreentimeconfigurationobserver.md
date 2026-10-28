@@ -22,7 +22,7 @@ class STScreenTimeConfigurationObserver
 @interface STScreenTimeConfigurationObserver : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use this class to start and stop observing the current configuration. For example, you can opt to disable private browsing in your web browser’s view controller when [`enforcesChildRestrictions`](./stscreentimeconfiguration/enforceschildrestrictions.md) is `true`.
 

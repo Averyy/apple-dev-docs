@@ -21,7 +21,7 @@ Modifies the format style to use the specified notation.
 func notation(_ notation: IntegerFormatStyle<Value>.Currency.Configuration.Notation) -> IntegerFormatStyle<Value>.Currency
 ```
 
-#### Return Value
+## Return Value
 
 An integer currency format style modified to use the specified notation.
 

@@ -21,11 +21,11 @@ Returns a font adding or removing fixed-width design from the same family as the
 func monospaced(_ isActive: Bool) -> Font
 ```
 
-#### Return Value
+## Return Value
 
 A font with the fixed-width design added or removed, from the same family as the base font, if one is available, and a default font otherwise.
 
-#### Discussion
+## Discussion
 
 If there’s no suitable font face in the same family, SwiftUI returns a default font.
 

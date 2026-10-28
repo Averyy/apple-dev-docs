@@ -25,7 +25,7 @@ static var traitColorGlyphs: CTFontSymbolicTraits { get }
 kCTFontTraitColorGlyphs
 ```
 
-#### Discussion
+## Discussion
 
 Possible font tables that can contain color glyphs include ‘[sbix](https://developer.apple.com/fonts/TrueType-Reference-Manual/RM06/Chap6sbix.html)’, ‘`COLR`’, and ‘`SVG_`’.
 

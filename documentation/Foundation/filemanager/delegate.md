@@ -25,7 +25,7 @@ unowned(unsafe) var delegate: (any FileManagerDelegate)? { get set }
 @property (assign, nullable) id<NSFileManagerDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 It is recommended that you assign a delegate to the file manager object only if you allocated and initialized the object yourself. Avoid assigning a delegate to the shared file manager obtained from the [`default`](./default.md) method.
 

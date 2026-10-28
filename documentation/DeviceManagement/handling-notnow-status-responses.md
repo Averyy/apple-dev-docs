@@ -5,19 +5,19 @@
 
 Handle when a device won’t execute a command and instead returns a NotNow status.
 
-#### Overview
+## Overview
 
 Specific conditions prevent a device from executing a command. For example, a device won’t execute some commands before the first unlock after a device boot. When this occurs, a device can respond to the device management service with a `NotNow` status to indicate that later retries may succeed.
 
 When the service receives a `NotNow` response from a device, it can either stop sending commands to the device or send another command to it on the same connection.
 
-#### Understand device polling
+## Understand device polling
 
 When a device management service stops sending commands to a device, the device automatically polls the service when conditions change. However, the device doesn’t cache the failed command. If you configure your device management service to instruct the device to retry the command, it must send the command again when the device polls the service. The device management service doesn’t need to send another push notification in response to this status, but it can send another one to instruct the device to poll the service immediately.
 
 If the device management service sends another command to the client on the same connection, and this new command returns anything other than a `NotNow` response, the device won’t automatically poll the service as it would if the first command executed successfully. The service must send a push notification at a later time to instruct the device to reconnect. The device only polls the device management service in response to a `NotNow` status if that’s the last status sent by the device to the service.
 
-#### Handle NotNow responses
+## Handle NotNow responses
 
 In macOS, a device may not execute commands, but instead respond with a `NotNow` status during these conditions:
 

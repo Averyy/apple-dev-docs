@@ -21,7 +21,7 @@ func QLThumbnailGetContentRect(_ thumbnail: QLThumbnail!) -> CGRect
 extern CGRect QLThumbnailGetContentRect(QLThumbnailRef thumbnail);
 ```
 
-#### Return Value
+## Return Value
 
 The effective rectangle of the thumbnail image that represents the content of the document. In icon mode, this is the part of the image without all the image decorations.
 

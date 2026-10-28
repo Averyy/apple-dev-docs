@@ -19,7 +19,7 @@ optional var visibleCharacterRanges: [NSValue] { get }
 @property (copy, readonly) NSArray<NSValue *> * visibleCharacterRanges;
 ```
 
-#### Discussion
+## Discussion
 
 The text finder uses this property’s value to determine which ranges it should search to show all of the incremental matches that are currently visible.
 

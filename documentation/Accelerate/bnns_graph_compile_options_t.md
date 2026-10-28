@@ -25,7 +25,7 @@ struct bnns_graph_compile_options_t
 typedef struct { ... } bnns_graph_compile_options_t;
 ```
 
-#### Overview
+## Overview
 
 Call [`BNNSGraphCompileOptionsMakeDefault()`](./bnnsgraphcompileoptionsmakedefault%28%29.md) to create a default options structure and then call functions such as [`BNNSGraphCompileOptionsSetOptimizationPreference(_:_:)`](./bnnsgraphcompileoptionssetoptimizationpreference%28_,_%29.md) to set indivual options.
 

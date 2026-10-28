@@ -23,7 +23,7 @@ var orthogonalScrollingBehavior: UICollectionLayoutSectionOrthogonalScrollingBeh
 @property (nonatomic) UICollectionLayoutSectionOrthogonalScrollingBehavior orthogonalScrollingBehavior;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`UICollectionLayoutSectionOrthogonalScrollingBehavior.none`](../uicollectionlayoutsectionorthogonalscrollingbehavior/none.md), which means the section lays out its content along the main axis of its layout, defined by the layout configuration’s [`scrollDirection`](../uicollectionviewcompositionallayoutconfiguration/scrolldirection.md) property. Set a different value for this property to get the section to lay out its content orthogonally to the main layout axis.
 

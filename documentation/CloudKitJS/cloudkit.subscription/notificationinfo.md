@@ -15,7 +15,7 @@ A dictionary containing information about how the system should alert the user.
 attribute CloudKit.NotificationInfo notificationInfo;
 ```
 
-#### Discussion
+## Discussion
 
 See [CloudKit JS Data Types](../cloudkit-js-data-types.md).
 

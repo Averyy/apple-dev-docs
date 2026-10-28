@@ -25,7 +25,7 @@ init(fontNamed fontName: String?)
 - (instancetype) initWithFontNamed:(NSString *) fontName;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized label object.
 

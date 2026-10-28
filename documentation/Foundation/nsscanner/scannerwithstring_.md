@@ -21,11 +21,11 @@ Returns an `NSScanner` object that scans a given string.
 + (instancetype) scannerWithString:(NSString *) string;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSScanner` object that scans `aString`.
 
-#### Discussion
+## Discussion
 
 Sets the string to scan by invoking [`init(string:)`](../scanner/init%28string%29.md) with `aString`.
 

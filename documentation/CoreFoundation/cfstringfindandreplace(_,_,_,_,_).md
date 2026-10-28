@@ -25,11 +25,11 @@ func CFStringFindAndReplace(_ theString: CFMutableString!, _ stringToFind: CFStr
 extern CFIndex CFStringFindAndReplace(CFMutableStringRef theString, CFStringRef stringToFind, CFStringRef replacementString, CFRange rangeToSearch, CFStringCompareFlags compareOptions);
 ```
 
-#### Return Value
+## Return Value
 
 The number of instances of `stringToFind` that were replaced.
 
-#### Discussion
+## Discussion
 
 The possible values of `compareOptions` are combinations of the [`compareCaseInsensitive`](./cfstringcompareflags/comparecaseinsensitive.md), [`compareBackwards`](./cfstringcompareflags/comparebackwards.md), [`compareNonliteral`](./cfstringcompareflags/comparenonliteral.md), and [`compareAnchored`](./cfstringcompareflags/compareanchored.md) constants.
 

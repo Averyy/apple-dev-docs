@@ -20,7 +20,7 @@ The ambient occlusion values for a material.
 var ambientOcclusion: PhysicallyBasedMaterial.AmbientOcclusion { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Ambient occlusion represents the entity’s exposure to ambient light.
 

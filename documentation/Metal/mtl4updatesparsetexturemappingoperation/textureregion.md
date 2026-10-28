@@ -24,7 +24,7 @@ var textureRegion: MTLRegion
 MTLRegion textureRegion;
 ```
 
-#### Discussion
+## Discussion
 
 When [`textureLevel`](./texturelevel.md) is equal to the texture’s [`firstMipmapInTail`](../mtltexture/firstmipmapintail.md), set `origin.y` to `0` and `size.height` to `1`.
 

@@ -19,7 +19,7 @@ A window resizability that’s derived from the window’s content.
 static var contentSize: WindowResizability { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Windows that use this resizability have:
 

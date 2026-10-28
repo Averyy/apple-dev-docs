@@ -19,7 +19,7 @@ class AVContinuityDevicePickerViewController
 @interface AVContinuityDevicePickerViewController : UIViewController
 ```
 
-#### Overview
+## Overview
 
 The view controller presents an interface on an Apple TV that lets a person choose a nearby continuity device ([`AVContinuityDevice`](../AVFoundation/avcontinuitydevice.md)). Your app can then connect to that device’s cameras and microphones (see [`AVCaptureDevice`](../AVFoundation/avcapturedevice.md) and [`AVAudioSessionPortDescription`](../AVFAudio/avaudiosessionportdescription.md), respectively).
 

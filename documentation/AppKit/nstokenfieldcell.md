@@ -19,7 +19,7 @@ class NSTokenFieldCell
 @interface NSTokenFieldCell : NSTextFieldCell
 ```
 
-#### Overview
+## Overview
 
 [`NSTokenFieldCell`](./nstokenfieldcell.md) is a subclass of [`NSTextFieldCell`](./nstextfieldcell.md) that provides tokenized editing of an array of objects similar to the address field in the Mail app. The objects may be strings or objects that can be represented as strings. A single token field cell can be presented in an [`NSTokenField`](./nstokenfield.md) control.
 

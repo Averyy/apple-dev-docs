@@ -23,7 +23,7 @@ var interval: Int { get }
 @property (nonatomic, readonly) NSUInteger interval;
 ```
 
-#### Discussion
+## Discussion
 
 This property allows you to define recurrence rules that skip a particular instance. For example, a rule whose frequency is [`INRecurrenceFrequency.weekly`](../inrecurrencefrequency/weekly.md) and whose interval is `2` represents a recurrence that occurs every two weeks, instead of every week.
 

@@ -8,13 +8,13 @@ framework: "Swift-Org/PackageManagerDocs"
 **Framework**: Swift-Org/PackageManagerDocs  
 **Role**: Article
 
-#### SwiftBuild: Preview of Next-Generation Build System
+## SwiftBuild: Preview of Next-Generation Build System
 
 SwiftBuild is being developed to replace the current native build system and brings several key improvements.  Packages that build successfully with the existing native (default) build system should build with SwiftBuild without requiring changes to your `Package.swift` or source code.
 
 For more information, including known limitations and platform-specific issues, see the [SwiftBuild Preview documentation](https://github.com/swiftlang/swift-package-manager/blob/main/Sources/PackageManagerDocs/Documentation.docc/SwiftBuildPreview.md).
 
-##### Trying SwiftBuild
+### Trying SwiftBuild
 
 You can preview the build system using the `--build-system` flag:
 
@@ -31,7 +31,7 @@ swift run --build-system swiftbuild MyExecutable
 
 The native build system remains the default and continues to be fully supported. We encourage developers to try SwiftBuild and [provide feedback](https://github.com/swiftlang/swift-package-manager/issues) on their experience.
 
-#### Improved Build Plugin Support for C Interoperability
+## Improved Build Plugin Support for C Interoperability
 
 SwiftPM now properly supports generation of C source files from plugin tools into C module targets. In addition, it supports generation of module maps, header files, and API notes.
 
@@ -49,17 +49,17 @@ To assist in finding generated public header files, the build system adds the `i
 
 This functionality is available in **both** the native build system and SwiftBuild.
 
-#### Improved Prebuilt Swift Syntax for Macros Support
+## Improved Prebuilt Swift Syntax for Macros Support
 
 Better support has been added to use prebuilts of the swift-syntax package in libraries that are only used by macros. This allows for code sharing between macro targets.
 
 SwiftPM now detects when such a library may be used by non macro targets and disables use of prebuilts when this is detected. It is disabled because mixing of swift-syntax prebuilts and swift-syntax built from source at link time has caused a number of issues.
 
-#### Symbol Graph Generation: Control Over Inherited Documentation
+## Symbol Graph Generation: Control Over Inherited Documentation
 
 Command plugins that generate symbol graphs can now control whether inherited documentation is included, providing better flexibility for different documentation styles.
 
-#### Package Traits: Improved Discoverability
+## Package Traits: Improved Discoverability
 
 A new `swift package show-traits` command makes it easier to discover the traits supported by a package.
 

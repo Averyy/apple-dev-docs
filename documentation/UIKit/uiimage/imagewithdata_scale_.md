@@ -20,11 +20,11 @@ Creates and returns an image object that uses the specified image data and scale
 + (UIImage *) imageWithData:(NSData *) data scale:(CGFloat) scale;
 ```
 
-#### Return Value
+## Return Value
 
 A new image object for the specified data, or `nil` if the method could not initialize the image from the specified data.
 
-#### Discussion
+## Discussion
 
 This method does not cache the image object.
 

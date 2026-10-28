@@ -23,11 +23,11 @@ func targetContentOffset(forProposedContentOffset proposedContentOffset: CGPoint
 - (CGPoint) targetContentOffsetForProposedContentOffset:(CGPoint) proposedContentOffset;
 ```
 
-#### Return Value
+## Return Value
 
 The content offset that you want to use instead. The default implementation of this method returns the value in the `proposedContentOffset` parameter.
 
-#### Discussion
+## Discussion
 
 During layout updates, or when transitioning between layouts, the collection view calls this method to give you the opportunity to change the proposed content offset to use at the end of the animation. You might override this method if the animations or transition might cause items to be positioned in a way that is not optimal for your design.
 

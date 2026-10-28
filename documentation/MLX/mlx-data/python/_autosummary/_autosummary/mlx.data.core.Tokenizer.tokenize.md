@@ -6,8 +6,11 @@ url: https://ml-explore.github.io/mlx-data/build/html/python/_autosummary/_autos
 
 # mlx.data.core.Tokenizer.tokenize
 
-**Tokenizer.tokenize(*self: mlx.data._c.core.Tokenizer*, *input: str*) → mlx.data._c.core.GraphInt64**
-: Return the full graph of possible tokenizations.
+```python
+Tokenizer.tokenize(self: mlx.data._c.core.Tokenizer, input: str) → mlx.data._c.core.GraphInt64
+```
 
-Parameters:
-**input** ([str](https://docs.python.org/3/library/stdtypes.html#str)) – The input string to be tokenized.
+Return the full graph of possible tokenizations.
+
+**Parameters:**
+: **input** ([str](https://docs.python.org/3/library/stdtypes.html#str)) – The input string to be tokenized.

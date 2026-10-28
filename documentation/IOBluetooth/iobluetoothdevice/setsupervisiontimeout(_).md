@@ -19,11 +19,11 @@ func setSupervisionTimeout(_ timeout: UInt16) -> IOReturn
 - (IOReturn) setSupervisionTimeout:(UInt16) timeout;
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if it was possible to set the connection supervision timeout.
 
-#### Discussion
+## Discussion
 
 NOTE: This method is only available in macOS 10.5 (Bluetooth v2.0) or later.
 

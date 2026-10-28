@@ -25,7 +25,7 @@ class SCNConstraint
 @interface SCNConstraint : NSObject
 ```
 
-#### Overview
+## Overview
 
 To control the transform (position, rotation, and scale) of one or more [`SCNNode`](./scnnode.md) objects with constraints, create and configure instances of the [`SCNConstraint`](./scnconstraint.md) subclass that provides the behavior you want, then add those constraint objects to each node’s [`constraints`](./scnnode/constraints.md) array.
 

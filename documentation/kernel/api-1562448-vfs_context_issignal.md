@@ -15,11 +15,11 @@ Get a bitfield of pending signals for the BSD process associated with a vfs_cont
 int vfs_context_issignal(vfs_context_t ctx, sigset_t mask);
 ```
 
-#### Return Value
+## Return Value
 
 Bitfield of pending signals.
 
-#### Discussion
+## Discussion
 
 The bitfield is constructed using the sigmask() macro, in the sense of bits |= sigmask(SIGSEGV).
 

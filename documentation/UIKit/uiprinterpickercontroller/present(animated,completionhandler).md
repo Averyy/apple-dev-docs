@@ -22,11 +22,11 @@ func present(animated: Bool, completionHandler completion: UIPrinterPickerContro
 - (BOOL) presentAnimated:(BOOL) animated completionHandler:(UIPrinterPickerCompletionHandler) completion;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the picker was displayed or [`false`](../../Swift/false.md) if the picker was already visible.
 
-#### Discussion
+## Discussion
 
 This method presents the picker from one of your app’s view controllers and returns immediately. If you provide a delegate object and that object implements the [`printerPickerControllerParentViewController(_:)`](../uiprinterpickercontrollerdelegate/printerpickercontrollerparentviewcontroller%28_%29.md) method, UIKit uses the view controller you provide to present the picker. If you do not provide a delegate, or your delegate object does not implement the [`printerPickerControllerParentViewController(_:)`](../uiprinterpickercontrollerdelegate/printerpickercontrollerparentviewcontroller%28_%29.md) method, UIKit presents the picker from the root view controller of your app’s main window.
 

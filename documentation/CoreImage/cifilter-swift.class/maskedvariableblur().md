@@ -28,11 +28,11 @@ class func maskedVariableBlur() -> any CIFilter & CIMaskedVariableBlur
 
 - [Selectively Focusing on an Image](../selectively-focusing-on-an-image.md)
 
-#### Return Value
+## Return Value
 
 The blurred image.
 
-#### Discussion
+## Discussion
 
 This method applies the masked variable blur to an image. The effect blurs the image in an area defined by the mask image. The mask image contains shades of grey that define the strength of the blur. Black colors in the mask cause no blurring, and white colors cause maximum blur.
 

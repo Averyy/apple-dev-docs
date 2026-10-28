@@ -25,11 +25,11 @@ func addBoundaryTimeObserver(forTimes times: [NSValue], queue: dispatch_queue_t?
 - (id) addBoundaryTimeObserverForTimes:(NSArray<NSValue *> *) times queue:(dispatch_queue_t) queue usingBlock:(void (^)()) block;
 ```
 
-#### Return Value
+## Return Value
 
 An object that conforms to [`NSObject`](../../ObjectiveC/nsobject-swift.class.md). You must retain this value as long as you want the time observer to be invoked by the synchronizer. Pass this object to [`removeTimeObserver(_:)`](./removetimeobserver%28_%29.md) to cancel time observation.
 
-#### Discussion
+## Discussion
 
 Always pair a call to this method with a call to [`removeTimeObserver(_:)`](./removetimeobserver%28_%29.md). Releasing the observer without calling `removeTimeObserver(_:)` results in undefined behavior.
 

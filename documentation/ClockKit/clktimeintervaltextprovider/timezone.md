@@ -21,7 +21,7 @@ var timeZone: TimeZone? { get set }
 @property (nonatomic, retain, nullable) NSTimeZone * timeZone;
 ```
 
-#### Discussion
+## Discussion
 
 If the value is `nil`, the text provider uses the time zone currently configured for the user.
 

@@ -21,7 +21,7 @@ A mapping from a predicates’s input variables to their values.
 struct PredicateBindings
 ```
 
-#### Overview
+## Overview
 
 If you define a custom predicate expression type, you must propagate the predicate’s bindings to its subexpressions.
 

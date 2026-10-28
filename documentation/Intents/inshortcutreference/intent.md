@@ -33,7 +33,7 @@ var intent: INIntent? { get }
 @property (atomic, copy, readonly, nullable) INIntent * intent;
 ```
 
-#### Discussion
+## Discussion
 
 This property is `nil` when you create the shortcut with an [`NSUserActivity`](../../Foundation/nsuseractivity.md) object.
 

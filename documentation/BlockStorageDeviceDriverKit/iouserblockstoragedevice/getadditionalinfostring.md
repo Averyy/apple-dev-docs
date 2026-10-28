@@ -15,7 +15,7 @@ Gets a string that provides additional information in response to a call from th
 virtual kern_return_t GetAdditionalInfoString(struct DeviceString *additionalInfo);
 ```
 
-#### Return Value
+## Return Value
 
 A value that indicates the get-additional-info result. Return [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) to inidicate success. To indicate a failure, see [IOKit Constants](../../iokit/iokit_constants.md) for error definitions.
 

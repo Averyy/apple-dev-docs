@@ -25,7 +25,7 @@ class let newErrorLogEntryNotification: NSNotification.Name
 extern NSNotificationName const AVPlayerItemNewErrorLogEntryNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification’s object is the player item.
 

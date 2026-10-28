@@ -15,7 +15,7 @@ Handles the completion of an asynchronous bundled transfer.
 virtual void CompleteAsyncIOBundled(OSAction *action, uint32_t ioCompletionIndex, uint32_t ioCompletionCount, const uint32_t actualByteCountArray[16], int actualByteCountArrayCount, const kern_return_t statusArray[16], int statusArrayCount);
 ```
 
-#### Discussion
+## Discussion
 
 Implement a custom version of this method and use the [`TYPE`](../../DriverKit/type.md) macro to let the system know that your method conforms to this prototype.
 

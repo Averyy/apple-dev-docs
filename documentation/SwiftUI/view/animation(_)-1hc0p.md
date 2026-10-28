@@ -31,11 +31,11 @@ nonisolated
 func animation(_ animation: Animation?) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view that wraps this view and applies `animation` to all animatable values used within the view.
 
-#### Discussion
+## Discussion
 
 Use this modifier on leaf views rather than container views. The animation applies to all child views within this view; calling `animation(_:)` on a container view can lead to unbounded scope.
 

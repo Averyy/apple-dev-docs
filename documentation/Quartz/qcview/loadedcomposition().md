@@ -21,7 +21,7 @@ func loadedComposition() -> QCComposition!
 - (QCComposition *) loadedComposition;
 ```
 
-#### Return Value
+## Return Value
 
 The composition loaded in the view; otherwise `nil`.
 

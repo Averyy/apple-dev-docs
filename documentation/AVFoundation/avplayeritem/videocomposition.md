@@ -25,7 +25,7 @@ nonisolated var videoComposition: AVVideoComposition? { get set }
 @property (nonatomic, copy, nullable) AVVideoComposition * videoComposition;
 ```
 
-#### Discussion
+## Discussion
 
 A video composition can only be used with file-based media and is not supported for use with media served using HTTP Live Streaming.
 

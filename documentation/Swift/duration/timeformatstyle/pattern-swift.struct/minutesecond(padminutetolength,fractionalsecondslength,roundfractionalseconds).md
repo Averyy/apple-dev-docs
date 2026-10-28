@@ -21,7 +21,7 @@ Returns a pattern to format a duration with minutes and seconds only, with the g
 static func minuteSecond(padMinuteToLength: Int, fractionalSecondsLength: Int = 0, roundFractionalSeconds: FloatingPointRoundingRule = .toNearestOrEven) -> Duration.TimeFormatStyle.Pattern
 ```
 
-#### Return Value
+## Return Value
 
 A [`Duration.TimeFormatStyle.Pattern`](../pattern-swift.struct.md) that formats a duration with minutes and seconds, using the given unit configurations.
 

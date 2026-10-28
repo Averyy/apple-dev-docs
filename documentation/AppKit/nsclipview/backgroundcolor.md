@@ -20,7 +20,7 @@ var backgroundColor: NSColor { get set }
 @property (copy) NSColor * backgroundColor;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is supplied by the current [`controlBackgroundColor`](../nscolor/controlbackgroundcolor.md).
 

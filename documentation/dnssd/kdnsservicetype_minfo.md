@@ -23,7 +23,7 @@ var kDNSServiceType_MINFO: Int { get }
 kDNSServiceType_MINFO
 ```
 
-#### Discussion
+## Discussion
 
 Mailbox information.
 

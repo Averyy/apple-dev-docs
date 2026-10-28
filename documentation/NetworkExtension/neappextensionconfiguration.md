@@ -20,7 +20,7 @@ A class that defines configuration options for use in NetworkExtension app exten
 @preconcurrency class NEAppExtensionConfiguration
 ```
 
-#### Overview
+## Overview
 
 This class conforms to `NEAppExtensionConfigurationProtocol` and [`AppExtensionConfiguration`](../ExtensionFoundation/appextensionconfiguration.md) from the [ExtensionFoundation](../ExtensionFoundation/ExtensionFoundation.md) framework. It exists only for use by the framework; you don’t need to use its methods and properties directly.
 

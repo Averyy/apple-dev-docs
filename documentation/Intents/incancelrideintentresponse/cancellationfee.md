@@ -31,7 +31,7 @@ var cancellationFee: INCurrencyAmount? { get set }
 @property (atomic, copy, readwrite, nullable) INCurrencyAmount * cancellationFee;
 ```
 
-#### Discussion
+## Discussion
 
 SiriKit communicates your cancellation fee to the user as part of the confirmation process. Specify a value for the [`cancellationFeeThreshold`](./cancellationfeethreshold.md) property if cancellation fees apply only after a period of time has elapsed.
 

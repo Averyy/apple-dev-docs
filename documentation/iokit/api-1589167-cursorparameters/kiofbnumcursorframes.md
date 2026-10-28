@@ -14,7 +14,7 @@
 kIOFBNumCursorFrames = 4
 ```
 
-#### Discussion
+## Discussion
 
 The number of cursor images stored in the StdFBShmem_t structure.
 

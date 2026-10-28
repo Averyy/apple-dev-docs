@@ -25,7 +25,7 @@ enum CompressionAlgorithm
 enum NSDataCompressionAlgorithm : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 Choose an algorithm that best suits the needs of your app:
 

@@ -16,7 +16,7 @@ Returns a Boolean value that indicates whether the analysis finds text at the sp
 final func analysisHasText(at point: CGPoint) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if text exists at point; otherwise, `false`.
 

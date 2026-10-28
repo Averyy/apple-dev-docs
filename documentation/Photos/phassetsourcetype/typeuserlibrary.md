@@ -24,7 +24,7 @@ static var typeUserLibrary: PHAssetSourceType { get }
 PHAssetSourceTypeUserLibrary
 ```
 
-#### Discussion
+## Discussion
 
 The main library contains both assets that originate on the device (such as photos and videos captured with the Camera app or screenshots) and assets synchronized through iCloud Photo Library or My Photo Stream. These assets appear in Moments collections and can be edited or deleted.
 

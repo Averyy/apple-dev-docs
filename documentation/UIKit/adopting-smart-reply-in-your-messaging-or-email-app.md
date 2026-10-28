@@ -5,7 +5,7 @@
 
 Generate reply suggestions by using Apple Intelligence and put selected text into your text UI.
 
-#### Overview
+## Overview
 
 Messages and Mail use Apple Intelligence to provide the Smart Reply feature, which generates suggestions that are contextually relevant for a thread when you draft a message or email. To add this feature to your messaging or email app, follow these steps:
 
@@ -14,7 +14,7 @@ Messages and Mail use Apple Intelligence to provide the Smart Reply feature, whi
 - Implement delegate methods to keep the conversation context up-to-date when you send or receive messages.
 - For an email or other long-form type of messaging, use the selected input suggestion to generate a long-form response and place it in the entry field.
 
-##### Create a conversation context
+### Create a conversation context
 
 To give Apple Intelligence the context it needs for Smart Reply generation, create a conversation context object with information about your messaging conversation. This object includes information about participants in the conversation and text entries from the conversation.
 
@@ -113,7 +113,7 @@ func mailConversationContext(for yourEntries: [YourMailEntry]) -> UIMailConversa
 }
 ```
 
-##### Attach the conversation context to a text view or text field
+### Attach the conversation context to a text view or text field
 
 When you create an entry field, such as a text view or text field, which you use to get input from the person using your app, assign the conversation context you created to the object’s [`conversationContext`](./uitextinputtraits/conversationcontext.md) property before the keyboard appears:
 
@@ -131,7 +131,7 @@ entryField.conversationContext = context
 
 The keyboard uses this context once per session for initialization. Use the steps in the next section to handle changes to the conversation during the keyboard session.
 
-##### Keep the conversation context up-to-date
+### Keep the conversation context up-to-date
 
 Every time you send or receive a message, keep the conversation context up-to-date. Because the conversation context is tied to a keyboard session, update or regenerate the conversation context you created earlier if the focus changed from your entry field, then set the entry field’s `conversationContext` to the updated context:
 
@@ -163,7 +163,7 @@ id<UITextInputDelegate> entryFieldInputDelegate = (id<UITextInputDelegate>)self.
 [entryFieldInputDelegate conversationContext:context didChange:self.entryField];
 ```
 
-##### Generate long-form responses
+### Generate long-form responses
 
 For email or other long-form messaging apps, instead of dropping the Smart Reply response directly into the entry field, use the suggestion to generate a long-form response with your own model. To do this, implement [`textView(_:insertInputSuggestion:)`](./uitextviewdelegate/textview%28_,insertinputsuggestion%29.md) or [`textField(_:insertInputSuggestion:)`](./uitextfielddelegate/textfield%28_,insertinputsuggestion%29.md):
 
@@ -200,7 +200,7 @@ func textField(_:UITextField, insertInputSuggestion inputSuggestion: UIInputSugg
 
 If your entry field is a custom implementation of [`UITextInput`](./uitextinput.md), call [`insert(_:)`](./uitextinput/insert%28_%29.md) instead.
 
-##### Understand when the system generates Smart Reply suggestions
+### Understand when the system generates Smart Reply suggestions
 
 The system only generates Smart Reply suggestions in specific circumstances, and might not generate suggestions in all cases.
 

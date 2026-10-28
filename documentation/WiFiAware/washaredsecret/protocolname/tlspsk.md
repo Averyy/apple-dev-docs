@@ -17,7 +17,7 @@ Derive a shared secret to bootstrap TLS, using the resulting shared secret as a 
 static let tlsPSK: WASharedSecret.ProtocolName
 ```
 
-#### Discussion
+## Discussion
 
 Best practices for TLS security are described in [NIST Special Publication 800-52](https://csrc.nist.gov/pubs/sp/800/52/r2/final). TLS 1.3 is recommended.
 

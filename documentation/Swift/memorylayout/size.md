@@ -21,7 +21,7 @@ The contiguous memory footprint of `T`, in bytes.
 static var size: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 A type’s size does not include any dynamically allocated or out of line storage. In particular, `MemoryLayout<T>.size`, when `T` is a class type, is the same regardless of how many stored properties `T` has.
 

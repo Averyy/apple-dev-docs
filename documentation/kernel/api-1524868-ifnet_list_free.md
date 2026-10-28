@@ -13,7 +13,7 @@
 void ifnet_list_free(ifnet_t *interfaces);
 ```
 
-#### Discussion
+## Discussion
 
 Free a list of interfaces returned by ifnet_list_get. Decrements the reference count on each interface and frees the array of references. If you keep a reference to an interface, be sure to increment the reference count before calling ifnet_list_free.
 

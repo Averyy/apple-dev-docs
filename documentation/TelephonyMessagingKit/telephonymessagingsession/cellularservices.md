@@ -19,7 +19,7 @@ final var cellularServices: [CellularServiceState] { get throws }
 
 - [Creating a carrier messaging app](../creating-a-carrier-messaging-app.md)
 
-#### Discussion
+## Discussion
 
 To receive notification of changes to the available services, monitor the [`cellularServiceStateUpdates`](./cellularservicestateupdates.md) property.
 

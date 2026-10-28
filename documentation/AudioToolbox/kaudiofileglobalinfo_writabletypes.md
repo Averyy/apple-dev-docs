@@ -24,7 +24,7 @@ var kAudioFileGlobalInfo_WritableTypes: AudioFilePropertyID { get }
 kAudioFileGlobalInfo_WritableTypes
 ```
 
-#### Discussion
+## Discussion
 
 When accessing this property’s value, you must set the `inSpecifier` parameter to `NULL`.
 

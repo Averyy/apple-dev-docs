@@ -26,7 +26,7 @@ func finish(withComposedVideoFrame composedVideoFrame: CVPixelBuffer)
 - (void) finishWithComposedVideoFrame:(CVPixelBufferRef) composedVideoFrame;
 ```
 
-#### Discussion
+## Discussion
 
 A custom compositor calls this method to indicate that it’s composed a frame successfully.
 

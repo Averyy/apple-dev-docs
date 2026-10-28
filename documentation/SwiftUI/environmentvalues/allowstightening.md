@@ -21,7 +21,7 @@ A Boolean value that indicates whether inter-character spacing should tighten to
 var allowsTightening: Bool { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `false`.
 

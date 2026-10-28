@@ -15,7 +15,7 @@ A structure that defines a custom header as a key-value pair.
 struct MMSCustomHeader
 ```
 
-#### Overview
+## Overview
 
 TelephonyMessagingKit exposes custom headers in case a message needs to include them in an MMS message.
 

@@ -22,7 +22,7 @@ A result builder that you use to compose the contents of a chart.
 struct ChartContentBuilder
 ```
 
-#### Overview
+## Overview
 
 This [Result Builder](https://docs.swift.org/swift-book/LanguageGuide/AdvancedOperators.html#ID630) combines any number of [`ChartContent`](./chartcontent.md) instances into a single composite instance, including support for conditionals.
 

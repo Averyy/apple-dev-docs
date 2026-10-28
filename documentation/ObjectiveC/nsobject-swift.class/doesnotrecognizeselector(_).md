@@ -25,7 +25,7 @@ func doesNotRecognizeSelector(_ aSelector: Selector!)
 - (void) doesNotRecognizeSelector:(SEL) aSelector;
 ```
 
-#### Discussion
+## Discussion
 
 The runtime system invokes this method whenever an object receives an `aSelector` message it can’t respond to or forward. This method, in turn, raises an `NSInvalidArgumentException`, and generates an error message.
 

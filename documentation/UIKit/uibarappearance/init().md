@@ -23,7 +23,7 @@ convenience init()
 - (instancetype) init;
 ```
 
-#### Return Value
+## Return Value
 
 A new bar appearance object containing default values for the current device idiom.
 

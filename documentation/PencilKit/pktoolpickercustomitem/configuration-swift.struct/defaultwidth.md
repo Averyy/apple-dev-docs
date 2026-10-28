@@ -18,7 +18,7 @@ The default width for the tool.
 var defaultWidth: CGFloat
 ```
 
-#### Discussion
+## Discussion
 
 The default width is `0`.
 

@@ -12,11 +12,11 @@ virtual IORegistryEntry * getCurrentEntry(
  void );
 ```
 
-#### Return Value
+## Return Value
 
 The current registry entry in the iteration, or zero if the last iteration returned zero, or the iteration is invalid (see isValid). The entry returned is retained while the iterator is pointing at it (its the current entry), or recursing into it. The caller should not release it.
 
-#### Overview
+## Overview
 
 This method returns the current entry, last returned by getNextObject et al. The object returned is retained while the iterator is pointing at it (its the current entry), or recursing into it. The caller should not release it. If the iteration is no longer valid (see isValid), the current entry is zero.
 

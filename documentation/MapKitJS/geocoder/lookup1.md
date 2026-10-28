@@ -24,11 +24,11 @@ lookup(
 ): Promise<GeocoderResponse>;
 ```
 
-#### Return Value
+## Return Value
 
 A promise that resolves with a [`GeocoderResponse`](../geocoderresponse.md) on success.
 
-#### Discussion
+## Discussion
 
 Geocoding converts a human-readable address to latitude and longitude coordinates. You can use [`Geocoder`](../geocoder.md) to look up coordinates for a city, landmark, or address.
 

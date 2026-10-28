@@ -28,7 +28,7 @@ optional func confirm(intent: INUpdateMediaAffinityIntent) async -> INUpdateMedi
 - (void) confirmUpdateMediaAffinity:(INUpdateMediaAffinityIntent *) intent completion:(void (^)(INUpdateMediaAffinityIntentResponse *response)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to determine whether your app can update the affinity for the requested media. If it can, respond with the [`INUpdateMediaAffinityIntentResponseCode.ready`](../inupdatemediaaffinityintentresponsecode/ready.md) response code.
 

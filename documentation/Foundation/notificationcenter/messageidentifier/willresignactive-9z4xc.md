@@ -23,7 +23,7 @@ static var willResignActive: NotificationCenter.BaseMessageIdentifier<NSExtensio
 
 Available when `Self` is `NotificationCenter.BaseMessageIdentifier<NSExtensionContext.WillResignActiveMessage>`.
 
-#### Discussion
+## Discussion
 
 Use this identifier with [`NotificationCenter`](../../notificationcenter.md)’s `addObserver(of:for:using:)` or `messages(of:for:bufferSize:)` methods to observe messages of type [`NSExtensionContext.WillResignActiveMessage`](../../nsextensioncontext/willresignactivemessage.md).
 

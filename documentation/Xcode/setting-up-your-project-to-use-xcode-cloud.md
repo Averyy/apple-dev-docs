@@ -5,11 +5,11 @@
 
 Review account, project, and source control requirements before configuring your project or workspace to use Xcode Cloud.
 
-#### Overview
+## Overview
 
 Xcode helps you configure your project or workspace to use Xcode Cloud. For a smooth configuration process, review the requirements for using Xcode Cloud and make changes as needed. Then, configure your project or workspace to use Xcode Cloud and start practicing continuous integration and delivery (CI/CD).
 
-##### Set up your App Store Connect account
+### Set up your App Store Connect account
 
 To use Xcode Cloud, you need to:
 
@@ -24,7 +24,7 @@ To create an app record, you need to have the App Manager, Admin, or Account Hol
 
 For more information about roles in App Store Connect, see [Role permissions](https://developer.apple.com/help/app-store-connect/reference/role-permissions).
 
-##### Configure your project and workspace
+### Configure your project and workspace
 
 If you create a project from a template, the default settings automatically meet Xcode Cloud requirements. If you have an existing project, be sure it meets the following project and workspace requirements:
 
@@ -37,7 +37,7 @@ If you create a project from a template, the default settings automatically meet
 
 > ❗ **Important**: Xcode Cloud requires a consistent Xcode project or workspace that’s continuously present. If you use a third-party tool that dynamically generates or edits your project or workspace, the initial configuration of Xcode Cloud and subsequent builds may fail.
 
-##### Use a remote source control repository
+### Use a remote source control repository
 
 You need a remote repository using Git to use Xcode Cloud. To learn more about using source control with Git in Xcode, see [Source control management](./source-control-management.md).
 

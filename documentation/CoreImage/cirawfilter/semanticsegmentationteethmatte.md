@@ -24,7 +24,7 @@ var semanticSegmentationTeethMatte: CIImage? { get }
 @property (readonly, nullable) CIImage * semanticSegmentationTeethMatte;
 ```
 
-#### Discussion
+## Discussion
 
 This matting image segments the teeth from all people in the visible field of view of the image.
 

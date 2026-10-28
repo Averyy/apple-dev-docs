@@ -22,7 +22,7 @@ class UIViewPrintFormatter
 @interface UIViewPrintFormatter : UIPrintFormatter
 ```
 
-#### Overview
+## Overview
 
 Instances of three system classes offer usable view print formatters to applications: [`UIWebView`](./uiwebview.md) and [`UITextView`](./uitextview.md) of the UIKit framework, and [`MKMapView`](../MapKit/mkmapview.md) of the MapKit framework. To obtain a view print formatter for a print job, call the [`UIView`](./uiview.md) method [`viewPrintFormatter()`](./uiview/viewprintformatter%28%29.md) and initialize the print formatter’s inherited layout properties.
 
@@ -35,7 +35,7 @@ Add the print formatter to the print job in one of two ways:
 
 View print formatters typically implement the [`UIView`](./uiview.md) method [`draw(_:for:)`](./uiview/draw%28_,for%29.md) to draw content in a way that is suitable for printing, If they don’t implement this method, their [`draw(_:)`](./uiview/draw%28_%29.md) method is called instead.
 
-##### Subclassing Notes
+### Subclassing Notes
 
 Subclassing `UIViewPrintFormatter` to print the contents of a view is not recommended. To print the contents of a custom view, you should instead draw the view’s contents for printing using a custom [`UIPrintPageRenderer`](./uiprintpagerenderer.md) object.
 

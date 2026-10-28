@@ -5,7 +5,7 @@
 
 Configure your time-to-sample atom for 29.97 frames per second.
 
-#### Overview
+## Overview
 
 NTSC color video is not `30` frames per second (fps), but actually `29.97` fps. The previous example showed how the media time scale and the duration of the frames specify the video’s frame rate. By setting the media’s time scale to `2997` units per second and setting the frame durations to `100` units each, the effective rate is `29.97` fps exactly.
 

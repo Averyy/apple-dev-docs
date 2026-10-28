@@ -25,7 +25,7 @@ init?(billType: INBillType, paymentStatus: INPaymentStatus, billPayee: INBillPay
 - (instancetype) initWithBillType:(INBillType) billType paymentStatus:(INPaymentStatus) paymentStatus billPayee:(INBillPayee *) billPayee amountDue:(INCurrencyAmount *) amountDue minimumDue:(INCurrencyAmount *) minimumDue lateFee:(INCurrencyAmount *) lateFee dueDate:(NSDateComponents *) dueDate paymentDate:(NSDateComponents *) paymentDate;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized bill details object or `nil` if the object could not be created.
 

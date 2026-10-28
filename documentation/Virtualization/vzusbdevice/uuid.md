@@ -20,7 +20,7 @@ var uuid: UUID { get }
 @property (copy, readonly) NSUUID * uuid;
 ```
 
-#### Discussion
+## Discussion
 
 This is the identifier the system creates from device configuration objects that conform to [`VZUSBDeviceConfiguration`](../vzusbdeviceconfiguration.md).
 

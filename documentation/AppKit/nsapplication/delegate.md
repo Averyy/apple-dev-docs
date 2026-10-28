@@ -19,7 +19,7 @@ weak var delegate: (any NSApplicationDelegate)? { get set }
 @property (weak, nullable) id<NSApplicationDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 The app object and app delegate work in tandem to manage the app’s overall behavior. Typically, the delegate is configured automatically by the Xcode project templates.
 

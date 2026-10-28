@@ -25,15 +25,15 @@ var isAbstract: Bool { get set }
 @property (getter=isAbstract) BOOL abstract;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the receiver represents an abstract entity, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) if the receiver represents an abstract entity, otherwise [`false`](../../Swift/false.md). An abstract entity might be Shape, with concrete sub-entities such as Rectangle, Triangle, and Circle.
 
-##### Special Considerations
+### Special Considerations
 
 Setting whether an entity is abstract raises an exception if the receiver’s model has been used by an object graph manager.
 

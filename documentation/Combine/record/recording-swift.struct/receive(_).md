@@ -21,7 +21,7 @@ Add an output to the recording.
 mutating func receive(_ input: Record<Output, Failure>.Recording.Input)
 ```
 
-#### Discussion
+## Discussion
 
 A `fatalError` will be raised if output is added after adding completion.
 

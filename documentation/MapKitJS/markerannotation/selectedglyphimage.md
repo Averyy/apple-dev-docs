@@ -32,7 +32,7 @@ set selectedGlyphImage(
 
 - [MapKit JS 5](../mapkit-js-5.md)
 
-#### Discussion
+## Discussion
 
 Glyph image values can be object literals that contain absolute or relative URLs to standard, `@2x`, and `@3x` assets, an [`ImageDelegate`](../imagedelegate.md), an [`ImageSource`](../imagesource.md) such as an `HTMLCanvasElement` or `ImageBitmap`, or a `Promise` that resolves to an [`ImageSource`](../imagesource.md). See [`ImageSource`](../imagesource.md) for cross-origin requirements.
 

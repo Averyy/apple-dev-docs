@@ -17,7 +17,7 @@ Launches a rendering extension process asynchronously.
 init(bundleIdentifier: String? = nil, onInterruption: @escaping () -> Void) async throws
 ```
 
-#### Discussion
+## Discussion
 
 Your browser app can run one instance of each of its rendering extensions. The first time you initialize this object, the system launches your rendering extension. If you subsequently initialize new instances of `RenderingProcess` using the same bundle identifier, they refer to the same process.
 

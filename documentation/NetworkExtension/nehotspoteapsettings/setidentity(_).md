@@ -22,11 +22,11 @@ func setIdentity(_ identity: SecIdentity) -> Bool
 - (BOOL) setIdentity:(SecIdentityRef) identity;
 ```
 
-#### Return Value
+## Return Value
 
 Returns `false` if the parameter is not an object of `SecIdentityRef` type or if the persistent reference is not found in the application’s keychain; otherwise returns `true`.
 
-#### Discussion
+## Discussion
 
 Your app must store `SecIdentity` in the keychain access group $`(Team​Identifier​Prefix)com​.apple​.networkextensionsharing`. The OS uses [`SecItemCopyMatching(_:_:)`](../../Security/secitemcopymatching%28_,_%29.md) to obtain a persistent reference to this identity from the application’s keychain and uses it during EAP authentication.
 

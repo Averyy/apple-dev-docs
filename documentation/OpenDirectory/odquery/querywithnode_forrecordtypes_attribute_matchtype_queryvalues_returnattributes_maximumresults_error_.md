@@ -16,7 +16,7 @@ Returns an autoreleased query object created with provided parameters.
 + (ODQuery *) queryWithNode:(ODNode *) inNode forRecordTypes:(id) inRecordTypeOrList attribute:(ODAttributeType) inAttribute matchType:(ODMatchType) inMatchType queryValues:(id) inQueryValueOrList returnAttributes:(id) inReturnAttributeOrList maximumResults:(NSInteger) inMaximumResults error:(NSError **) outError;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized query.
 

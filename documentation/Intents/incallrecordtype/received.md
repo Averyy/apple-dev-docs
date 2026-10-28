@@ -24,7 +24,7 @@ case received
 INCallRecordTypeReceived
 ```
 
-#### Discussion
+## Discussion
 
 Use this constant for calls that your app receives from another user.
 

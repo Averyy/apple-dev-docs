@@ -20,7 +20,7 @@ let kSecCodeInfoDigestAlgorithm: CFString
 extern CFStringRef const kSecCodeInfoDigestAlgorithm;
 ```
 
-#### Discussion
+## Discussion
 
 The value is a [`CFNumber`](../CoreFoundation/cfnumber.md) indicating the kind of cryptographic hash function used within the signature to seal its pieces together. See [`SecCSDigestAlgorithm`](./seccsdigestalgorithm.md) for possible value.
 

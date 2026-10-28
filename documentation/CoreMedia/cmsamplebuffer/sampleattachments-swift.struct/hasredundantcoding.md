@@ -21,7 +21,7 @@ Indicates whether the sample has redundant coding.
 var hasRedundantCoding: Bool? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 This key has no default value. If this key is not present, redundant coding information for the sample is unknown.
 

@@ -6,28 +6,31 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.sl
 
 # mlx.core.slice_update
 
-**slice_update(*a: array*, *update: array*, *start_indices: array*, *axes: Sequence[int]*, ***, *stream: StreamOrDevice = None*) → [array](mlx.core.array.md#mlx.core.array)**
-: Update a sub-array of the input array.
+```python
+slice_update(a: array, update: array, start_indices: array, axes: Sequence[int], *, stream: StreamOrDevice = None) → array
+```
 
-Parameters:
+Update a sub-array of the input array.
 
-**a** ([array](mlx.core.array.md#mlx.core.array)) – The input array to update
-**update** ([array](mlx.core.array.md#mlx.core.array)) – The update array.
-**start_indices** ([array](mlx.core.array.md#mlx.core.array)) – The index location to start the slice at.
-**axes** ([tuple](https://docs.python.org/3/builtins/stdtypes.html#tuple)*(*[int](https://docs.python.org/3/builtins/functions.html#int)*)*) – The axes corresponding to the indices in `start_indices`.
+**Parameters:**
 
-Returns:
-The output array with the same shape and type as the input.
+- **a** ([array](mlx.core.array.md#mlx.core.array)) – The input array to update
+- **update** ([array](mlx.core.array.md#mlx.core.array)) – The update array.
+- **start_indices** ([array](mlx.core.array.md#mlx.core.array)) – The index location to start the slice at.
+- **axes** ([tuple](https://docs.python.org/3/builtins/stdtypes.html#tuple)([int](https://docs.python.org/3/builtins/functions.html#int))) – The axes corresponding to the indices in `start_indices`.
 
-Return type:
-[array](mlx.core.array.md#mlx.core.array)
+**Returns:**
+: The output array with the same shape and type as the input.
+
+**Return type:**
+: [array](mlx.core.array.md#mlx.core.array)
 
 Example
 
-  ```
-  >>> a = mx.zeros((3, 3))
-  >>> mx.slice_update(a, mx.ones((1, 2)), start_indices=mx.array(1, 1), axes=(0, 1))
-  array([[0, 0, 0],
-         [0, 1, 0],
-         [0, 1, 0]], dtype=float32)
-  ```
+```
+>>> a = mx.zeros((3, 3))
+>>> mx.slice_update(a, mx.ones((1, 2)), start_indices=mx.array(1, 1), axes=(0, 1))
+array([[0, 0, 0],
+       [0, 1, 0],
+       [0, 1, 0]], dtype=float32)
+```

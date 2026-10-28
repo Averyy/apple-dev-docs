@@ -19,7 +19,7 @@ Returns a pass-through geometry modifier that performs no vertex transformation.
 func makeDefaultGeometryModifier() -> sending LowLevelMaterialResource.GeometryModifier
 ```
 
-#### Return Value
+## Return Value
 
 A pass-through [`LowLevelMaterialResource.GeometryModifier`](../lowlevelmaterialresource/geometrymodifier.md).
 

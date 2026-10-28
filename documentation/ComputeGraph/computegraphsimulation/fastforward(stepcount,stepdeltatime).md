@@ -21,7 +21,7 @@ Advances the particle simulation by multiple steps in a single operation.
 final func fastForward(stepCount: Int, stepDeltaTime: Float)
 ```
 
-#### Discussion
+## Discussion
 
 This method performs batch simulation updates by executing multiple simulation steps consecutively within a single compute command buffer, skipping any non-simulation work such as updating the output buffers. This is useful for:
 

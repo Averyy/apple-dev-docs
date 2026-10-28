@@ -21,7 +21,7 @@ Indicates whether two texture resources are equal.
 @preconcurrency static func == (lhs: TextureResource, rhs: TextureResource) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value set to `true` if the two texture resources are equal.
 

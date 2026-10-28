@@ -19,7 +19,7 @@ func insertRows(at indexes: IndexSet, withAnimation animationOptions: NSTableVie
 - (void) insertRowsAtIndexes:(NSIndexSet *) indexes withAnimation:(NSTableViewAnimationOptions) animationOptions;
 ```
 
-#### Discussion
+## Discussion
 
 The [`numberOfRows`](./numberofrows.md) in the table view is automatically increased by the count of `indexes`.
 

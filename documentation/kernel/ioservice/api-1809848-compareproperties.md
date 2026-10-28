@@ -13,11 +13,11 @@ virtual bool compareProperties(
  OSCollection *keys );
 ```
 
-#### Return Value
+## Return Value
 
 Success if `compareProperty` returns `true` for each key in the collection; otherwise failure.
 
-#### Overview
+## Overview
 
 This is a helper function to aid in implementing matchPropertyTable. A collection of dictionary keys specifies properties in a matching dictionary to be compared, with `compareProperty`, with an IOService object's property table, if `compareProperty` returns `true` for each key, success is returned; otherwise failure.
 

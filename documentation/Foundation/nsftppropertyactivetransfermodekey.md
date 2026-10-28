@@ -17,7 +17,7 @@ Key for retrieving whether in active transfer mode, returned as a boolean wrappe
 extern NSString * const NSFTPPropertyActiveTransferModeKey;
 ```
 
-#### Discussion
+## Discussion
 
 The default value for this key is [`false`](../Swift/false.md) (passive mode).
 

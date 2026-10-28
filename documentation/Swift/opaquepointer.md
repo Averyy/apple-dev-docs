@@ -22,7 +22,7 @@ A wrapper around an opaque C pointer.
 struct OpaquePointer
 ```
 
-#### Overview
+## Overview
 
 Opaque pointers are used to represent C pointers to types that cannot be represented in Swift, such as incomplete struct types.
 

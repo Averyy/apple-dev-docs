@@ -19,7 +19,7 @@ Draws the string in a single line with the specified font and attributes, adjust
 - (CGSize) drawAtPoint:(CGPoint) point forWidth:(CGFloat) width withFont:(UIFont *) font minFontSize:(CGFloat) minFontSize actualFontSize:(CGFloat *) actualFontSize lineBreakMode:(NSLineBreakMode) lineBreakMode baselineAdjustment:(UIBaselineAdjustment) baselineAdjustment;
 ```
 
-#### Return Value
+## Return Value
 
 The size of the rendered string. The returned values may be rounded up to the nearest whole number.
 

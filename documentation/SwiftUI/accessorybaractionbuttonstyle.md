@@ -16,7 +16,7 @@ nonisolated
 struct AccessoryBarActionButtonStyle
 ```
 
-#### Overview
+## Overview
 
 Use this style for buttons that perform extra actions relative to the accessory toolbar’s main functions, like adding or editing filters. This style also affects other view types that you apply a button style to, like [`Toggle`](./toggle.md), [`Picker`](./picker.md), and [`Menu`](./menu.md) instances.
 

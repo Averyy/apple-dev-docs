@@ -21,7 +21,7 @@ Generates a fixed-point 8.24 format vector that contains monotonically increment
 void vDSP_vrampmul_s8_24(const int *__I, vDSP_Stride __IS, int *__Start, const int *__Step, int *__O, vDSP_Stride __OS, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 Use this function to generate and return a vector populated with ramped values with each element multiplied by the corresponding element in a second vector.
 

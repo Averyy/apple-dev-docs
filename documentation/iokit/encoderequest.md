@@ -14,7 +14,7 @@
 #define EncodeRequest(request, direction, type, recipient)
 ```
 
-#### Discussion
+## Discussion
 
 Macro that encodes the bRequest and bRequestType fields of a IOUSBDevRequest into a single value. It is useful when one needs to know what type of request the IOUSBDevRequest encodes and simplifies comparisons.
 

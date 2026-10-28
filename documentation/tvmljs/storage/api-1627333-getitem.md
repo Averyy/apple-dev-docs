@@ -29,11 +29,11 @@ getter DOMString? getItem(
 );
 ```
 
-#### Return Value
+## Return Value
 
 A `String` object containing the data associated with the passed key.
 
-#### Discussion
+## Discussion
 
 The `getItem` function retrieves the data associated with the given key. If the key does not exist, the function returns `null`.
 

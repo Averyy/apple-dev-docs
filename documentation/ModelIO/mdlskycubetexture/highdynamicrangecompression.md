@@ -24,7 +24,7 @@ var highDynamicRangeCompression: vector_float2 { get set }
 @property (nonatomic, assign) vector_float2 highDynamicRangeCompression;
 ```
 
-#### Discussion
+## Discussion
 
 To render a sky texture, Model I/O first simulates the colors visible in the sky at different directions and then applies tone mapping to fit the resulting colors into the range of displayable values. In tone mapping, Model I/O ignores values below the x component of this vector, clamps color values at or above the y component to the maximum display brightness, and smoothly scales color values in between those points.
 

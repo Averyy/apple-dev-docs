@@ -26,7 +26,7 @@ var automaticallyWaitsToMinimizeStalling: Bool { get set }
 @property (nonatomic) BOOL automaticallyWaitsToMinimizeStalling;
 ```
 
-#### Discussion
+## Discussion
 
 When playing media delivered over HTTP, this property is used to determine if the player should automatically delay playback in order to minimize stalling. When this property is [`true`](../../Swift/true.md) and the player changes from a paused state ([`rate`](./rate.md) of `0.0`) to a played state ([`rate`](./rate.md) > `0.0`), the player will try to determine if the current item can play to its end at the currently specified rate. If it determines that it’s likely to encounter a stall, the value of the player’s [`timeControlStatus`](./timecontrolstatus-swift.property.md) will change to [`AVPlayer.TimeControlStatus.waitingToPlayAtSpecifiedRate`](./timecontrolstatus-swift.enum/waitingtoplayatspecifiedrate.md) and playback will automatically start when the likelihood of stalling has been minimized. A similar condition will occur during playback if the current player item’s playback buffer is exhausted and playback stalls. Playback will automatically resume when the likelihood of stalling has been minimized.
 

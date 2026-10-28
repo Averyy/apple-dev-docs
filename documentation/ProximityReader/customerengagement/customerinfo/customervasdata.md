@@ -17,7 +17,7 @@ The encrypted VAS content of a selected Wallet pass.
 let customerVASData: Data?
 ```
 
-#### Discussion
+## Discussion
 
 The encrypted content of the pass stored in Wallet, which contains the loyalty or reward pass identifier. See [`VASReadResult.ReadEntry`](../../vasreadresult/readentry.md).
 

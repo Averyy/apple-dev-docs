@@ -21,7 +21,7 @@ The asset’s transform preference to apply to its visual content during present
 var preferredTransform: CGAffineTransform { get }
 ```
 
-#### Discussion
+## Discussion
 
 The value is typically, but not always, the identity transform.
 

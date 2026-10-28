@@ -20,7 +20,7 @@ The position of the center of mass and the orientation of the principal axes.
 var centerOfMass: (position: SIMD3<Float>, orientation: simd_quatf)
 ```
 
-#### Discussion
+## Discussion
 
 The `position` defines the center of mass with a default value of `(0, 0, 0)`, which means that the local origin of the model is the center of mass.
 

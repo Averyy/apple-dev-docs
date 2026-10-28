@@ -16,7 +16,7 @@ get selectedAnnotation(): Annotation | null;
 set selectedAnnotation(annotation: Annotation | null);
 ```
 
-#### Discussion
+## Discussion
 
 The value of [`selectedAnnotation`](./selectedannotation.md) is either a [`Annotation`](../annotation.md) object, if the user selects one, or `null` if there aren’t any selected annotations.
 

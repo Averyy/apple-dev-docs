@@ -19,7 +19,7 @@ var isLateNightModeEnabled: Bool { get }
 @property (nonatomic, assign, readonly, getter=isLateNightModeEnabled) BOOL lateNightModeEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 Late Night Mode is turned on/off
 

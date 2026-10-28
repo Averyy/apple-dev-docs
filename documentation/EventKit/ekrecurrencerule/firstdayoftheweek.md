@@ -24,7 +24,7 @@ var firstDayOfTheWeek: Int { get }
 @property (nonatomic, readonly) NSInteger firstDayOfTheWeek;
 ```
 
-#### Discussion
+## Discussion
 
 Values of `1` to `7` correspond to Sunday through Saturday. A value of `0` indicates that this property is not set for the recurrence rule.
 

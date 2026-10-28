@@ -18,7 +18,7 @@ A status that indicates the framework’s Camera Assistance feature requires act
 case notConverged([NIAlgorithmConvergenceStatus.Reason])
 ```
 
-#### Discussion
+## Discussion
 
 In this state, the framework needs more information about the user’s physical environment before setting [`horizontalAngle`](../ninearbyobject/horizontalangle-hsg.md) and/or [`verticalDirectionEstimate`](../ninearbyobject/verticaldirectionestimate-swift.property.md).
 

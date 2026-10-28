@@ -15,11 +15,11 @@ Primary initializer for all variants of memory descriptors.
 virtual bool initWithOptions(void *buffers, UInt32 count, UInt32 offset, task_t task, IOOptionBits options, IOMapper *mapper);
 ```
 
-#### Return Value
+## Return Value
 
 true on success, false on failure.
 
-#### Discussion
+## Discussion
 
 For a more complete description see IOMemoryDescriptor::withOptions. Note this function can be used to re-init a previously created memory descriptor.
 

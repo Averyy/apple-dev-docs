@@ -15,7 +15,7 @@ A Boolean value that indicates whether the search results include addresses.
 includeAddresses?: boolean;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `true`.
 

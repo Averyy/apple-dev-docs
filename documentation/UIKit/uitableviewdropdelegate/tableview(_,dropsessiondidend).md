@@ -22,7 +22,7 @@ optional func tableView(_ tableView: UITableView, dropSessionDidEnd session: any
 - (void) tableView:(UITableView *) tableView dropSessionDidEnd:(id<UIDropSession>) session;
 ```
 
-#### Discussion
+## Discussion
 
 The table view calls this method at the conclusion of a drag that was over the table view at one point. Use it to clean up any state information that you used to handle the drag. This method is called regardless of whether the data was actually dropped onto the table view.
 

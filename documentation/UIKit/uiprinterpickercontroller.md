@@ -23,7 +23,7 @@ class UIPrinterPickerController
 @interface UIPrinterPickerController : NSObject
 ```
 
-#### Overview
+## Overview
 
 You can use a printer picker controller to display a list of printers to the user prior to printing a document, photo, or other content. Printer pickers display all pickers normally but you can filter out printers by assigning an appropriate delegate object to the picker before displaying it.
 

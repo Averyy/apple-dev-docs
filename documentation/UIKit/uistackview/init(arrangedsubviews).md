@@ -23,11 +23,11 @@ convenience init(arrangedSubviews views: [UIView])
 - (instancetype) initWithArrangedSubviews:(NSArray<__kindof UIView *> *) views;
 ```
 
-#### Return Value
+## Return Value
 
 A new stack view object. This stack view contains and lays out the provided views in a single stack. You can modify the orientation or appearance of this stack, using the stack view’s properties.
 
-#### Discussion
+## Discussion
 
 The stack view adds all the arranged views to its [`arrangedSubviews`](./arrangedsubviews.md) array. It also adds these views as subviews. If any view contained in the `arrangedSubviews` array receives a [`removeFromSuperview()`](../uiview/removefromsuperview%28%29.md) method call, the stack view also removes it from the `arrangedSubviews`.
 

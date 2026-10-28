@@ -20,11 +20,11 @@ Creates a default render pass descriptor.
 + (MTLRenderPassDescriptor *) renderPassDescriptor;
 ```
 
-#### Return Value
+## Return Value
 
 A new render pass descriptor with no attachments at all.
 
-#### Discussion
+## Discussion
 
 Set the desired color attachments with the [`setObject:atIndexedSubscript:`](../mtlrenderpasscolorattachmentdescriptorarray/setobject_atindexedsubscript_.md) method of the [`colorAttachments`](./colorattachments.md) property. Set the desired depth and stencil attachments with the [`depthAttachment`](./depthattachment.md) and [`stencilAttachment`](./stencilattachment.md) properties, respectively.
 

@@ -14,7 +14,7 @@
 kIOVideoFeatureControlClassIDBlackLevel = 'bklv'
 ```
 
-#### Discussion
+## Discussion
 
 A IOVideoFeatureControl that controls the black level offset. The units for the control's absolute value are percetage (%).
 

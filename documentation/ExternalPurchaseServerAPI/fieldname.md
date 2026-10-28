@@ -15,7 +15,7 @@ A string that names a field of a line item.
 string fieldName
 ```
 
-#### Discussion
+## Discussion
 
 Error objects that the [`Send External Purchase Report`](./send-external-purchase-report.md) endpoint returns may include a `fieldName`.
 

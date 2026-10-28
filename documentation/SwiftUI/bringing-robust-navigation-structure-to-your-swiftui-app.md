@@ -13,7 +13,7 @@ Use navigation links, stacks, destinations, and paths to provide a streamlined e
 - macOS 15.0+
 - Xcode 16.0+
 
-#### Overview
+## Overview
 
 > **Note**: This sample code project is associated with WWDC22 session [10054: The SwiftUI cookbook for navigation](https://developer.apple.com/wwdc22/10054/).
 

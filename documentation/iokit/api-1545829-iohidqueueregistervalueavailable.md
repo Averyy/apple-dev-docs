@@ -16,7 +16,7 @@ Sets callback to be used when the queue transitions to non-empty.
 void IOHIDQueueRegisterValueAvailableCallback(IOHIDQueueRef queue, IOHIDCallback callback, void *context);
 ```
 
-#### Discussion
+## Discussion
 
 In order to make use of asynchronous behavior, the queue needs to be scheduled with the run loop.
 

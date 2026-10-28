@@ -25,7 +25,7 @@ struct SecKeyKeyExchangeParameter
 typedef CFStringRef SecKeyKeyExchangeParameter;
 ```
 
-#### Discussion
+## Discussion
 
 Use these constants as keys in the dictionary that you input to the [`SecKeyCopyKeyExchangeResult(_:_:_:_:_:)`](./seckeycopykeyexchangeresult%28_,_,_,_,_%29.md) function as a means to refine the process of Diffie-Hellman key exchange.
 

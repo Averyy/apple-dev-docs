@@ -20,7 +20,7 @@ A constraint target offset.
 var offset: Transform
 ```
 
-#### Discussion
+## Discussion
 
 The constraints adds this offset on top of its target. Useful for cases where the target comes from a binding.
 

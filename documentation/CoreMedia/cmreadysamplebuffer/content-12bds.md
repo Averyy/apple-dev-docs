@@ -23,7 +23,7 @@ var content: CMSampleDataReference { get set }
 
 Available when `Content` is `CMSampleDataReference`.
 
-#### Discussion
+## Discussion
 
 The content type of the sample buffer can not be changed by assigning different content.
 

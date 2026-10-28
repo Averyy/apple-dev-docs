@@ -17,7 +17,7 @@ Produces a 3D asset from the captured room.
 func export(to url: URL, exportOptions: CapturedRoom.USDExportOptions = .mesh) throws
 ```
 
-#### Discussion
+## Discussion
 
 The file format of the output is Universal Scene Description (USD).
 

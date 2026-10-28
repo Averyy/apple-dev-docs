@@ -19,7 +19,7 @@ The portion of the image to display, in normalized coordinates.
 var contentsBounds: CGRect { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Values are normalized from `0.0` to `1.0`, where `(0, 0)` is the top-left and `(1, 1)` is the bottom-right of the source image. Defaults to `CGRect(x: 0, y: 0, width: 1, height: 1)` (full image).
 

@@ -23,7 +23,7 @@ case dynamic(SpotlightSearchTool.GuidanceProfile)
 
 - [Making your indexed content available to Foundation Models](../../making-your-indexed-content-available-to-foundation-models.md)
 
-#### Discussion
+## Discussion
 
 Choose this option to specify the subset of search techniques to use on your content. The [`SpotlightSearchTool.GuidanceProfile`](../guidanceprofile.md) structure you specify contains properties with the available search techniques. Enable the ones that apply to your app’s content and disable any that don’t apply. For example, if you want to perform only literal searches on strings, enable the [`textMatch`](../guidanceprofile/textmatch.md) property and disable the [`similarityMatch`](../guidanceprofile/similaritymatch.md) property.
 

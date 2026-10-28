@@ -15,7 +15,7 @@ Returns a requirement for the given exact version.
 static func exact(_ version: Version) -> Package.Dependency.Requirement
 ```
 
-#### Discussion
+## Discussion
 
 Specifying exact version requirements are not recommended as they can cause conflicts in your dependency graph when multiple other packages depend on a package. As Swift packages follow the semantic versioning convention, think about specifying a version range instead.
 

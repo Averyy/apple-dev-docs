@@ -19,7 +19,7 @@ case providerTranslocated
 NSFileProviderErrorProviderTranslocated
 ```
 
-#### Discussion
+## Discussion
 
 If you’re distributing your app outside the Mac App Store, Gatekeeper translocates recently downloaded apps from a disk image, archive, or the `Downloads` directory to a randomized read-only location in the file system. This translocation prevents the app from accessing code or content using relative paths.
 

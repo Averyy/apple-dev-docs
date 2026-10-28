@@ -24,7 +24,7 @@ func startAnimation()
 - (void) startAnimation;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method to start the animations or to resume the animation after they were paused. This method sets the state of the animator to [`UIViewAnimatingState.active`](../uiviewanimatingstate/active.md), if it isn’t already there. It’s a programmer error to call this method while the state of the animator is set to [`UIViewAnimatingState.stopped`](../uiviewanimatingstate/stopped.md).
 

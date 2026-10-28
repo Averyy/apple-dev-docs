@@ -23,11 +23,11 @@ func recommendedMovieMetadata(forVideoCodecType videoCodecType: AVVideoCodecType
 - (NSArray<AVMetadataItem *> *) recommendedMovieMetadataForVideoCodecType:(AVVideoCodecType) videoCodecType assetWriterOutputFileType:(AVFileType) outputFileType;
 ```
 
-#### Return Value
+## Return Value
 
 A fully populated array of [`AVMetadataItem`](../avmetadataitem.md) objects compatible with [`AVAssetWriter`](../avassetwriter.md).
 
-#### Discussion
+## Discussion
 
 The value of this property is an array of [`AVMetadataItem`](../avmetadataitem.md) objects representing the collection of top-level metadata to be written in each output file. This array is suitable to use as the [`metadata`](../avassetwriter/metadata.md) property before you have called [`startWriting()`](../avassetwriter/startwriting%28%29.md). For more details see [`startWriting()`](../avassetwriter/startwriting%28%29.md).
 

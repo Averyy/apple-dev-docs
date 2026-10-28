@@ -15,7 +15,7 @@ Returns the PSM for the target L2CAP channel.
 - (BluetoothL2CAPPSM) getPSM;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the PSM for the target L2CAP channel.
 

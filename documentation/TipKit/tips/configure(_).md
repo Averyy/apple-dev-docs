@@ -21,7 +21,7 @@ Loads and configures the persistent state of all tips in your app.
 static func configure(_ configuration: [Tips.ConfigurationOption] = []) throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: This function must be called before tips display in your app.
 

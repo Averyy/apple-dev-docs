@@ -24,7 +24,7 @@ var minFrameDuration: CMTime { get }
 @property (readonly) CMTime minFrameDuration;
 ```
 
-#### Discussion
+## Discussion
 
 This value is the reciprocal of [`maxFrameRate`](./maxframerate.md), and expresses the maximum frame rate as a duration.
 

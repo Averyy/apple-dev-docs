@@ -20,7 +20,7 @@ Creates a render command encoder from a render pass descriptor.
 - (id<MTL4RenderCommandEncoder>) renderCommandEncoderWithDescriptor:(MTL4RenderPassDescriptor *) descriptor;
 ```
 
-#### Return Value
+## Return Value
 
 The created [`MTL4RenderCommandEncoder`](../mtl4rendercommandencoder.md) instance, or `nil` if the function failed.
 

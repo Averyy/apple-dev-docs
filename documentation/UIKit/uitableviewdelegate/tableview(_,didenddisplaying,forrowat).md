@@ -23,7 +23,7 @@ optional func tableView(_ tableView: UITableView, didEndDisplaying cell: UITable
 - (void) tableView:(UITableView *) tableView didEndDisplayingCell:(UITableViewCell *) cell forRowAtIndexPath:(NSIndexPath *) indexPath;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to detect when a cell is removed from a table view, as opposed to monitoring the view itself to see when it appears or disappears.
 

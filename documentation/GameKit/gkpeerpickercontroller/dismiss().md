@@ -24,7 +24,7 @@ func dismiss()
 - (void) dismiss;
 ```
 
-#### Discussion
+## Discussion
 
 The controller’s delegate is responsible for dismissing the peer picker when it is no longer needed.
 

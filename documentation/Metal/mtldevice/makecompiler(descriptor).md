@@ -25,7 +25,7 @@ func makeCompiler(descriptor: MTL4CompilerDescriptor) throws -> any MTL4Compiler
 - (id<MTL4Compiler>) newCompilerWithDescriptor:(MTL4CompilerDescriptor *) descriptor error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 A [`MTL4Compiler`](../mtl4compiler.md) instance, or `nil` if the function failed.
 

@@ -19,7 +19,7 @@ Indicates whether JavaScript from web content is allowed to run.
 var allowsContentJavaScript: Bool
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is `true`. If you change the value to `false`, the web page doesn’t execute JavaScript code referenced by the web content. That includes JavaScript code found in inline `<script>` elements, `javascript:` URLs, and all other referenced JavaScript content.
 

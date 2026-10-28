@@ -5,13 +5,13 @@
 
 Revoke unused, lost, or compromised private keys.
 
-#### Overview
+## Overview
 
 Revoke an API key immediately if it becomes inactive, lost, or compromised. A revoked API key denies access to the App Store Connect API on your organization’s behalf.
 
 > ❗ **Important**:  Once you revoke an API key, you can’t reinstate it. Revoked keys are displayed for 30 days on the API Keys page under the Revoked heading.
 
-##### Revoking Team Keys
+### Revoking Team Keys
 
 To revoke a team API key, log in to [App Store Connect](https://appstoreconnect.apple.com/) with an Admin account.
 
@@ -20,7 +20,7 @@ To revoke a team API key, log in to [App Store Connect](https://appstoreconnect.
 3. Select the API keys to revoke, and click Revoke Key.
 4. Click the Revoke button to confirm.
 
-##### Revoking Individual Keys
+### Revoking Individual Keys
 
 There are two ways to revoke an individual API key, depending on your role. Begin both methods by logging in to [App Store Connect](https://appstoreconnect.apple.com/).
 

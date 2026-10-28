@@ -25,7 +25,7 @@ func xpc_array_get_bool(_ xarray: xpc_object_t, _ index: Int) -> Bool
 extern bool xpc_array_get_bool(xpc_object_t xarray, size_t index);
 ```
 
-#### Return Value
+## Return Value
 
 The underlying `bool` value at the specified index. false if the value at the specified index is not a Boolean value.
 

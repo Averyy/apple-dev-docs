@@ -25,7 +25,7 @@ var scaling: UnsafeMutableRawPointer?
 void * scaling;
 ```
 
-#### Discussion
+## Discussion
 
 This array can either be `nil` or a pointer to an array of real values with a length greater than or equal to the size of the matrix that you’re factoring. The type of the array values is the element type of the matrix (but real, even if the matrix is complex).
 

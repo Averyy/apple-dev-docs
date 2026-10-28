@@ -21,7 +21,7 @@ An identifier that can be used for creating a server-side copy of a [`CKAsset`](
 struct ExportedAssetID
 ```
 
-#### Overview
+## Overview
 
 An [`CKAsset.ExportedAssetID`](./exportedassetid.md) is valid only on the same device where it was created, and it expires after a few days.
 

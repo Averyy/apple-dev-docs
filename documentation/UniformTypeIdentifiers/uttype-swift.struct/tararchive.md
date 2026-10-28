@@ -21,7 +21,7 @@ A tar Archive.
 static var tarArchive: UTType { get }
 ```
 
-#### Discussion
+## Discussion
 
 **UTI:** public.tar-archive
 

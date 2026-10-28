@@ -19,7 +19,7 @@ The type of this editable field.
 var fieldType: ASImportableEditableField.FieldType
 ```
 
-#### Discussion
+## Discussion
 
 This value must be one of:
 

@@ -5,7 +5,7 @@
 
 Minimize your use of sensitive information and provide a clear statement of what information you do use and how you use it.
 
-#### Overview
+## Overview
 
 To protect user privacy, the system handles camera and sensor inputs without passing the information to apps directly. Instead, the system enables your app to seamlessly interact with a user’s surroundings and to automatically receive input from the user. For example, the system handles the eye- and hand-position data needed to detect interactions with your app’s content. Similarly, the system provides a way to automatically alter a view’s appearance when someone looks at it, without your app ever knowing what the user is looking at.
 
@@ -17,7 +17,7 @@ In the few cases where you actually need access to hand position or information 
 
 For information about how to specify the privacy data your app uses, see [Describing data use in privacy manifests](../BundleResources/describing-data-use-in-privacy-manifests.md). For general information about privacy, see [Protecting the User’s Privacy](../UIKit/protecting-the-user-s-privacy.md).
 
-##### Adopt the system-provided input mechanisms
+### Adopt the system-provided input mechanisms
 
 On Apple Vision Pro, people use their eyes and hands to interact with the items they see in front of them. Where they look determines where the system applies focus, and a tap gesture with either hand generates a touch event on that focused item. The system can also detect when someone’s fingers interact with virtual items in the person’s field of vision. When you adopt the standard UIKit and SwiftUI event-handling mechanisms, you get all of these interactions automatically.
 
@@ -28,7 +28,7 @@ For most apps, the system-provided gesture recognizers are sufficient for respon
 
 For information about how to handle the standard-system events, see the [SwiftUI](../SwiftUI/SwiftUI.md) and [UIKit](../UIKit/UIKit.md) documentation.
 
-##### Provide clear messaging around privacy-sensitive features
+### Provide clear messaging around privacy-sensitive features
 
 The following ARKit features require you to provide a usage description string in your app’s `Info.plist` file:
 

@@ -25,7 +25,7 @@ class func flipVertical(withDuration sec: TimeInterval) -> SKTransition
 + (SKTransition *) flipVerticalWithDuration:(NSTimeInterval) sec;
 ```
 
-#### Return Value
+## Return Value
 
 A new transition.
 

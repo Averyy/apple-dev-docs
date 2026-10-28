@@ -6,7 +6,7 @@
 
 An 8-bit integer.
 
-#### Overview
+## Overview
 
 This must be set to `1`.
 

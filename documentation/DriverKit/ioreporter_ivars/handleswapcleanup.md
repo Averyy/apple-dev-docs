@@ -16,7 +16,7 @@
 virtual void handleSwapCleanup(int swapNChannels);
 ```
 
-#### Discussion
+## Discussion
 
 Release and forget unused buffers
 

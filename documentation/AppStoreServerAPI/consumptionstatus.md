@@ -22,7 +22,7 @@ int32 consumptionStatus
 - `2`: The In-App Purchase is partially consumed.
 - `3`: The In-App Purchase is fully consumed.
 
-#### Discussion
+## Discussion
 
 Some examples of consumption status include the following scenarios:
 

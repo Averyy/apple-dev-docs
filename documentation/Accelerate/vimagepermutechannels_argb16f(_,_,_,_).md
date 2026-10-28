@@ -25,11 +25,11 @@ func vImagePermuteChannels_ARGB16F(_ src: UnsafePointer<vImage_Buffer>, _ dest: 
 vImage_Error vImagePermuteChannels_ARGB16F(const vImage_Buffer *src, const vImage_Buffer *dest, const uint8_t permuteMap[4], vImage_Flags flags);
 ```
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
-#### Discussion
+## Discussion
 
 The following code reverses the channel ordering of a pixel buffer:
 

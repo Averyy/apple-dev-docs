@@ -21,7 +21,7 @@ static let odometer: SRSensor
 extern SRSensor const SRSensorOdometer;
 ```
 
-#### Discussion
+## Discussion
 
 The [`sample`](../srfetchresult/sample.md) type for this sensor is [`CMOdometerData`](../../CoreMotion/cmodometerdata.md).
 

@@ -17,7 +17,7 @@ The subtopics that show merchants how to accept different types of payments with
 enum Payment
 ```
 
-#### Overview
+## Overview
 
 Each topic has a dedicated learning purpose for merchants.
 

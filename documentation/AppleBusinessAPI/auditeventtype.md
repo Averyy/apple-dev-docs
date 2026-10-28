@@ -68,7 +68,7 @@ string AuditEventType
 - `APPLE_SERVICES_SETTINGS_UPDATED`
 - `ACCOUNT_PASSWORD_CHANGED`
 
-#### Discussion
+## Discussion
 
 - Possible Values
 

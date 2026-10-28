@@ -23,7 +23,7 @@ protocol UICollectionViewDropPlaceholderContext : UIDragAnimating
 @protocol UICollectionViewDropPlaceholderContext <UIDragAnimating>
 ```
 
-#### Overview
+## Overview
 
 You do not create instances of this class yourself. For each placeholder cell that you insert into the collection view, the drop coordinator provides you with an instance of this class. You use this context object later to remove the placeholder cell, either by committing the actual data to your data source object or by deleting the placeholder cell.
 

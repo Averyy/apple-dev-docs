@@ -17,7 +17,7 @@ var kBluetoothHCITransportUSBProtocolCode: Int { get }
 kBluetoothHCITransportUSBProtocolCode
 ```
 
-#### Discussion
+## Discussion
 
 Bluetooth Programming
 

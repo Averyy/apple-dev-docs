@@ -26,7 +26,7 @@ func finishBroadcastWithError(_ error: any Error)
 - (void) finishBroadcastWithError:(NSError *) error;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method in your sample handler when it cannot proceed due to an error.
 

@@ -24,7 +24,7 @@ class INVoiceShortcutCenter
 @interface INVoiceShortcutCenter : NSObject
 ```
 
-#### Overview
+## Overview
 
 With Shortcut Center, your app can:
 

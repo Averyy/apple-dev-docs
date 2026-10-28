@@ -23,11 +23,11 @@ optional func presentationController(_ controller: UIPresentationController, vie
 - (UIViewController *) presentationController:(UIPresentationController *) controller viewControllerForAdaptivePresentationStyle:(UIModalPresentationStyle) style;
 ```
 
-#### Return Value
+## Return Value
 
 The view controller to display in place of the existing presented view controller.
 
-#### Discussion
+## Discussion
 
 When a size class change causes a change to the underlying presentation style, the presentation controller calls this method to ask for the view controller to display in that new style. This method is your opportunity to replace the current view controller with one that is better suited for the new presentation style. For example, you might use this method to insert a navigation controller into your view hierarchy to facilitate pushing new view controllers more easily in the compact environment. In that instance, you would return a navigation controller whose root view controller is the currently presented view controller. You could also return an entirely different view controller if you prefer.
 

@@ -33,7 +33,7 @@ optional func urlSession(_ session: URLSession, needNewBodyStreamForTask task: U
 
 - [Uploading streams of data](../uploading-streams-of-data.md)
 
-#### Discussion
+## Discussion
 
 The task calls this delegate method under two circumstances:
 

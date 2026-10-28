@@ -19,11 +19,11 @@ func convertWeight(_ upFlag: Bool, of fontObj: NSFont) -> NSFont
 - (NSFont *) convertWeight:(BOOL) upFlag ofFont:(NSFont *) fontObj;
 ```
 
-#### Return Value
+## Return Value
 
 A font with matching traits except for the new weight, or `aFont` if it can’t be converted.
 
-#### Discussion
+## Discussion
 
 Weights are graded along the following scale. The list on the left gives Apple’s terminology, and the list on the right gives the ISO equivalents. Names on the same line are treated as identical:
 

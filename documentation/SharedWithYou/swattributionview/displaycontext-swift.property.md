@@ -24,7 +24,7 @@ var displayContext: SWAttributionView.DisplayContext { get set }
 @property (nonatomic, assign, readwrite) SWAttributionViewDisplayContext displayContext;
 ```
 
-#### Discussion
+## Discussion
 
 Set the `displayContext` prior to adding this view to your view hierarchy.
 

@@ -23,7 +23,7 @@ func cancel()
 - (void) cancel;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to cancel a file transfer before it completes. If the file has already been transferred, calling this method has no effect.
 

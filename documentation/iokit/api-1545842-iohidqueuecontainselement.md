@@ -16,7 +16,7 @@ Queries the queue to determine if elemement has been added.
 Boolean IOHIDQueueContainsElement(IOHIDQueueRef queue, IOHIDElementRef element);
 ```
 
-#### Return Value
+## Return Value
 
 Returns true or false depending if element is present.
 

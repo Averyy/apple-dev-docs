@@ -21,7 +21,7 @@ The subviews’s preferred spacing values.
 var spacing: ViewSpacing { get }
 ```
 
-#### Discussion
+## Discussion
 
 This [`ViewSpacing`](../viewspacing.md) instance indicates how much space a subview in a custom layout prefers to have between it and the next view. It contains preferences for all edges, and might take into account the type of both this and the adjacent view. If your [`Layout`](../layout.md) type places subviews based on spacing preferences, use this instance to compute a distance between this subview and the next. See [`placeSubviews(in:proposal:subviews:cache:)`](../layout/placesubviews%28in,proposal,subviews,cache%29.md) for an example.
 

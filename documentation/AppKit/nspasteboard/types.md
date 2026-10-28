@@ -19,7 +19,7 @@ var types: [NSPasteboard.PasteboardType]? { get }
 @property (copy, readonly, nullable) NSArray<NSString *> * types;
 ```
 
-#### Discussion
+## Discussion
 
 The [`types`](./types.md) array is an array of [`NSString`](../../Foundation/nsstring.md) objects containing the union of the types of data declared for all the pasteboard items on the receiver. The returned types are listed in the order they were declared. It’s a good idea to check the value of [`types`](./types.md) (or call [`availableType(from:)`](./availabletype%28from%29.md)) before reading any data from an `NSPasteboard` object. If you need to see if a type in the [`types`](./types.md) array matches a type string you have stored locally, use the [`isEqual(to:)`](../../Foundation/nsstring/isequal%28to%29.md) method to perform the comparison.
 

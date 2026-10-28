@@ -5,7 +5,7 @@
 
 Commission a Matter accessory onto a network.
 
-#### Overview
+## Overview
 
 Commissioning is the act of providing an accessory with the network credentials it needs to join the local network and the initial configuration needed to control the accessory.
 

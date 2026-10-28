@@ -25,7 +25,7 @@ let kCVImageBufferContentLightLevelInfoKey: CFString
 extern CFStringRef const kCVImageBufferContentLightLevelInfoKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is 4 bytes, of type [`CFData`](../CoreFoundation/cfdata.md). It contains big-endian data to match the payload of the content light level information in the supplemental enhancement information (SEI) message.
 

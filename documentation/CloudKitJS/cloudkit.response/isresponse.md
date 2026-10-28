@@ -15,7 +15,7 @@ A Boolean value that indicates whether there is a response from the request.
 readonly attribute Boolean isResponse;
 ```
 
-#### Discussion
+## Discussion
 
 This property is always `true`.
 

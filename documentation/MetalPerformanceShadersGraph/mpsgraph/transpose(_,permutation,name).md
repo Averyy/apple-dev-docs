@@ -24,11 +24,11 @@ func transpose(_ tensor: MPSGraphTensor, permutation: [NSNumber], name: String?)
 - (MPSGraphTensor *) transposeTensor:(MPSGraphTensor *) tensor permutation:(NSArray<NSNumber *> *) permutation name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSGraphTensor object.
 
-#### Discussion
+## Discussion
 
 Permutes the dimensions of the input tensor according to values in `permutation`.
 

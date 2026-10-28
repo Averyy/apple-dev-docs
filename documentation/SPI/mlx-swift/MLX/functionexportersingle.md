@@ -18,7 +18,7 @@ A helper for [`exportFunction(to:shapeless:_:)`](./exportfunction%28to,shapeless
 final class FunctionExporterSingle
 ```
 
-#### Overview
+## Overview
 
 This records the call to the function and saves it to the file.
 
@@ -34,7 +34,7 @@ let y = MLXArray([1, 2, 3])
 try exportFunction(to: url, f)(x, y: y)
 ```
 
-##### See Also
+### See Also
 
 - [`exportFunction(to:shapeless:_:)`](./exportfunction%28to,shapeless,_%29.md)
 

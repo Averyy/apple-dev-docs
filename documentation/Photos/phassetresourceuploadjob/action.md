@@ -22,7 +22,7 @@ enum Action
 enum PHAssetResourceUploadJobAction : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 Determine the available jobs for an action by calling the [`fetchJobs(action:options:)`](./fetchjobs%28action,options%29.md) method.
 

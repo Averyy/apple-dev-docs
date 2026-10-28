@@ -19,7 +19,7 @@ The transformation the framework applies to the opacity values before rendering.
 final var opacityActivation: GaussianSplatResource.ActivationFunction
 ```
 
-#### Discussion
+## Discussion
 
 The default value applies no transformation.
 

@@ -17,7 +17,7 @@ Custom string interpolation that optionally captures metadata attributes.
 struct StringInterpolation
 ```
 
-#### Overview
+## Overview
 
 When no attributes are specified, produces `.string(...)` — identical to the default `DefaultStringInterpolation` behavior. When any interpolation segment specifies attributes (via the `attributes:` parameter), the result is `.stringConvertible(AttributedStringCarrier(...))` carrying both the string and the accumulated attributes.
 

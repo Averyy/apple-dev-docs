@@ -23,7 +23,7 @@ weak var textLayoutManager: NSTextLayoutManager? { get }
 @property (nonatomic, weak, readonly, nullable) NSTextLayoutManager * textLayoutManager;
 ```
 
-#### Discussion
+## Discussion
 
 When non-nil, the legacy `layoutManager` should be `nil`.
 

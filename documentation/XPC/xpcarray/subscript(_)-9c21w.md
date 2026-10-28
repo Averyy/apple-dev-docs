@@ -21,11 +21,11 @@ Get or set a value in this array as a file descriptor.
 subscript(index: Int) -> FileDescriptor? { get set }
 ```
 
-#### Return Value
+## Return Value
 
 A file descriptor value or `nil` if no such value was found.
 
-#### Overview
+## Overview
 
 A file descriptor passed in will be duplicated so the caller must still close theirs. A returned file descriptor is owned by the caller so it must be closed.
 

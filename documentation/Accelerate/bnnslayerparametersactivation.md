@@ -27,7 +27,7 @@ struct BNNSLayerParametersActivation
 typedef struct { ... } BNNSLayerParametersActivation;
 ```
 
-#### Overview
+## Overview
 
 Use an activation layer to perform type conversion. The following code shows how to convert 16-bit integer values to single-precision values:
 

@@ -21,7 +21,7 @@ Specifies the style of the formatted result.
 var style: PersonNameComponents.FormatStyle.Style
 ```
 
-#### Discussion
+## Discussion
 
 The style property controls length of the string representation of the name.
 
@@ -54,7 +54,7 @@ print(tlc.formatted(defaultFormatStyle)) // Thomas Clark
 
 The default value is `medium`.
 
-##### Styles
+### Styles
 
 You can configure `PersonNameComponents.FormatStyle` to format names in the following styles:
 
@@ -77,7 +77,7 @@ The following table demonstrates the style for various names and locales.
 | Spanish ![](https://developer.apple.com/tutorials/images/com.apple.foundation/spacer.png) `(es-ES)` | Dr. | José Ramiro |  | Martín González de Rivera | júnior, PhD | Ramiro |
 | Thai ![](https://developer.apple.com/tutorials/images/com.apple.foundation/spacer.png) `(th-TH)` | ฯพณฯ | สมชาย | ปีเตอร์ | รัตนเรืองรองบวรทิพย์ |  |  |
 
-###### Long
+#### Long
 
 The Long style provides the most explicit representation of names. It uses all available name components, with the exception of nickname.
 
@@ -93,7 +93,7 @@ The Long style provides the most explicit representation of names. It uses all a
 | Spanish (es-ES) | Dr. José Ramiro Martín González de Rivera júnior, PhD |
 | Thai (th-TH) | ฯพณฯ สมชาย ปีเตอร์ รัตนเรืองรอง บวรทิพย์ |
 
-###### Medium
+#### Medium
 
 The Medium, or default, style presents names in a way that is suitable for most contexts. It uses the given and family names, as well as a nickname, if provided, and enabled by the user.
 
@@ -109,7 +109,7 @@ The Medium, or default, style presents names in a way that is suitable for most 
 | Spanish (es-ES) | José Ramiro Martín González de Rivera |
 | Thai (th-TH) | สมชาย รัตนเรืองรอง บวรทิพย์ |
 
-###### Short
+#### Short
 
 The Short style offers an alternative display method for names whose default representation may exceed a certain length constraint. Users customize how the system displays short names in the preferences for the Contacts app. For scripts that don’t support Short name, or cases where the specified Short style is unavailable, the format uses Medium style.
 
@@ -129,7 +129,7 @@ The table below shows the formatted string output for each Short Name configurat
 
 > ❗ **Important**:  `PersonNameComponents.FormatStyle` doesn’t account for prepositional particles. Representations using the Short style that specify a family name initial naively use the first letter unit of the particle as the initial.
 
-###### Abbreviated
+#### Abbreviated
 
 The Abbreviated style offers the most compact representation of names, similar to a monogram.
 

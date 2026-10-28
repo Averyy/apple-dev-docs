@@ -15,11 +15,11 @@ Get the `CVPixelBufferRef` for this anchor.
 extern CVPixelBufferRefar_camera_region_anchor_get_pixel_buffer(ar_camera_region_anchor_t camera_region_anchor);
 ```
 
-#### Return Value
+## Return Value
 
 The pixel buffer, or NULL if not set. Retain and release as necessary.
 
-#### Discussion
+## Discussion
 
 > **Note**: Retaining too many pixel buffers may lead to memory issues.
 

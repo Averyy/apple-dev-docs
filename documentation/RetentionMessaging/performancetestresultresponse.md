@@ -15,7 +15,7 @@ An object the API returns that describes the performance test results.
 object PerformanceTestResultResponse
 ```
 
-##### Discussion
+### Discussion
 
 This object is the response the [`Get Performance Test Results`](./get-performance-test-results.md) API call returns. To initiate a performance test, call [`Initiate Performance Test`](./initiate-performance-test.md).
 

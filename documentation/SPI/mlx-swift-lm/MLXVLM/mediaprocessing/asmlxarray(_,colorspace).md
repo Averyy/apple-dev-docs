@@ -17,7 +17,7 @@ Convert the CIImage into a planar 3 channel MLXArray `[1, C, H, W]`
 static func asMLXArray(_ image: CIImage, colorSpace: CGColorSpace? = nil) -> MLXArray
 ```
 
-#### Return Value
+## Return Value
 
 The MLXArray representation of the image
 

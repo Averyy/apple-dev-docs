@@ -22,7 +22,7 @@ var completionHandler: (() -> Void)? { get set }
 @property (nonatomic, copy, nullable) void (^completionHandler)();
 ```
 
-#### Discussion
+## Discussion
 
 Set this property to a block that you want the system to run when any animations finish. The block you provide must have no return value and no parameters. The system executes this block once when the current animation finish.
 

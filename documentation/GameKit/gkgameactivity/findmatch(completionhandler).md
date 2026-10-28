@@ -32,7 +32,7 @@ func findMatch() async throws -> GKMatch
 
 - [Creating activities for your game](../creating-activities-for-your-game.md)
 
-#### Discussion
+## Discussion
 
 GameKit creates a classic match making request with the activity’s party code and other information, and returns the match object in the completion handler or any error that occurred. An error occurs if this activity doesn’t support party code, or has an unsupported range of players, which is used to be configured as match request’s `minPlayers` and `maxPlayers`.
 

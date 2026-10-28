@@ -17,7 +17,7 @@ The schedule determines when the alarm alerts.
 var schedule: Alarm.Schedule?
 ```
 
-#### Discussion
+## Discussion
 
 If no schedule is supplied then the alarm will begin counting down immediately.
 

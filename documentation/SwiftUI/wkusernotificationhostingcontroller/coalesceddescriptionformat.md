@@ -16,7 +16,7 @@ The format string to display when multiple notifications of the same type arrive
 @preconcurrency class var coalescedDescriptionFormat: String? { get }
 ```
 
-#### Discussion
+## Discussion
 
 Default value is `nil`
 

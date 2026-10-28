@@ -9,7 +9,7 @@ Retrieve performance metrics for Apple Maps campaigns.
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Discussion
+## Discussion
 
 These reports return one row per campaign. Each row contains a `metadata` object with campaign identifiers, `totalMetrics` aggregated over the full date range, and a `granularMetrics` array broken down by the selected `granularity`.
 
@@ -17,7 +17,7 @@ Use `filters` to scope results to specific campaigns by `campaignId`. Use `group
 
 See [`Filter`](./filter.md) for the full set of supported comparison operators.
 
-#### Request Body
+## Request Body
 
 See [`BrandsReportingRequest`](./brandsreportingrequest.md).
 
@@ -72,13 +72,13 @@ The `EMPTY_METRICS` value isn’t supported for `business-brands`, and only `ORT
 | `EMPTY_METRICS` | Not supported for `business-brands`. |
 | Timezone | Use `ORTZ` (reporting timezone) or `UTC`. |
 
-#### Payload Examples
+## Payload Examples
 
 **Brands, Daily by Location**:
 
 Retrieve daily campaign metrics grouped by location ID. Each entry in `granularMetrics` represents one day for one business location.
 
-##### Request
+### Request
 
 Filters by `campaignId` for an Apple Maps campaign, groups by `locationId`, and uses daily granularity over a 31-day window in the account’s reporting timezone.
 
@@ -109,7 +109,7 @@ POST /v1/reports/business-brands/campaigns/query
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {
@@ -211,7 +211,7 @@ POST /v1/reports/business-brands/campaigns/query
 
 Retrieve monthly campaign metrics grouped by supply placement to compare performance across Apple Maps and other ad placements.
 
-##### Request
+### Request
 
 Filters by `campaignId` for an Apple Maps campaign, groups by `supplyPlacement`, and uses monthly granularity over a 3-month date range in UTC.
 
@@ -242,7 +242,7 @@ POST /v1/reports/business-brands/campaigns/query
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {

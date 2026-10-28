@@ -23,7 +23,7 @@ func gss_oid_equal(_ a: gss_const_OID?, _ b: gss_const_OID?) -> Int32
 int gss_oid_equal(gss_const_OID a, gss_const_OID b);
 ```
 
-#### Return Value
+## Return Value
 
 A non-zero value if the objects are the same, or zero if they are different.
 

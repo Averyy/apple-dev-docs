@@ -24,7 +24,7 @@ func VTCompressionSessionCreate(allocator: CFAllocator?, width: Int32, height: I
 extern OSStatus VTCompressionSessionCreate(CFAllocatorRef allocator, int32_t width, int32_t height, CMVideoCodecType codecType, CFDictionaryRef encoderSpecification, CFDictionaryRef sourceImageBufferAttributes, CFAllocatorRef compressedDataAllocator, VTCompressionOutputCallback outputCallback, void *outputCallbackRefCon, VTCompressionSessionRef*compressionSessionOut);
 ```
 
-#### Discussion
+## Discussion
 
 The session outputs compressed frames through the output callback.
 

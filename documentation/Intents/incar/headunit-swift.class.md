@@ -23,7 +23,7 @@ class HeadUnit
 @interface INCarHeadUnit : NSObject
 ```
 
-#### Overview
+## Overview
 
 When the system connects to a vehicle’s physical head unit through CarPlay, it uses the head unit’s Bluetooth identifier to find the corresponding vehicle in the user’s My Vehicles collection by matching on the `bluetoothIdentifier` property of this object.
 

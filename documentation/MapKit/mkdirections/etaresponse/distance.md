@@ -25,7 +25,7 @@ var distance: CLLocationDistance { get }
 @property (nonatomic, readonly) CLLocationDistance distance;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the overall distance traversed by the route.
 

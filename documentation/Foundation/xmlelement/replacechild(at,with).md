@@ -20,7 +20,7 @@ func replaceChild(at index: Int, with node: XMLNode)
 - (void) replaceChildAtIndex:(NSUInteger) index withNode:(NSXMLNode *) node;
 ```
 
-#### Discussion
+## Discussion
 
 The replaced XML node object is released upon removal.
 

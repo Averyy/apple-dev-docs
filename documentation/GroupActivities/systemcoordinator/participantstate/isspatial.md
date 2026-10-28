@@ -19,7 +19,7 @@ let isSpatial: Bool
 
 - [Adding spatial Persona support to an activity](../../adding-spatial-persona-support-to-an-activity.md)
 
-#### Discussion
+## Discussion
 
 The value of this property is `true` when the current person supports activities that place participants relative to the activity itself. The person must use a device that supports spatial experiences, and must configure their spatial Persona to support inclusion in a shared simulation space.
 

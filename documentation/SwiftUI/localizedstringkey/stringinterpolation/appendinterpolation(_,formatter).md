@@ -27,7 +27,7 @@ mutating func appendInterpolation<Subject>(_ subject: Subject, formatter: Format
 mutating func appendInterpolation<Subject>(_ subject: Subject, formatter: Formatter? = nil) where Subject : ReferenceConvertible
 ```
 
-#### Discussion
+## Discussion
 
 Don’t call this method directly; it’s used by the compiler when interpreting string interpolations.
 

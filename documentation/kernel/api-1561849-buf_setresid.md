@@ -15,11 +15,11 @@ Set a count of bytes outstanding for I/O in a buffer.
 void buf_setresid(buf_t bp, uint32_t resid);
 ```
 
-#### Return Value
+## Return Value
 
 Count of unwritten/unread bytes.
 
-#### Discussion
+## Discussion
 
 Set when an I/O operations completes. Examples: called by IOStorageFamily when I/O completes, often called on an "original" buffer when using a manipulated buffer to perform I/O on behalf of the first.
 

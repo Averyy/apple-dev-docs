@@ -22,11 +22,11 @@ func GLKMatrix4MakeWithArray(_ values: UnsafeMutablePointer<Float>!) -> GLKMatri
 static GLKMatrix4 GLKMatrix4MakeWithArray(float values[16]);
 ```
 
-#### Return Value
+## Return Value
 
 A new matrix.
 
-#### Discussion
+## Discussion
 
 The values at indices `12`, `13`, and `14` correspond to the translation values `tx`, `ty`, and `tz`, respectively.
 

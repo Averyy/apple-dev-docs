@@ -18,7 +18,7 @@ typedef struct IOHIDDeviceDeviceInterface {
 } IOHIDDeviceDeviceInterface;
 ```
 
-#### Overview
+## Overview
 
 The functions listed here will work with any version of the IOHIDDeviceDeviceInterface.
 

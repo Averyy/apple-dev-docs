@@ -21,11 +21,11 @@ Copies the next sample buffer for the output synchronously.
 - (CMSampleBufferRef) copyNextSampleBuffer;
 ```
 
-#### Return Value
+## Return Value
 
 A CMSampleBuffer object referencing the output sample buffer.
 
-#### Discussion
+## Discussion
 
 The client is responsible for calling `CFRelease` on the returned `CMSampleBuffer` object when finished with it. This method will return `NULL` if there are no more sample buffers currently available for the receiver. Clients may use the delegate method `outputMediaDataAvailable:` to be informed when the next `CMSampleBuffer` becomes available.
 

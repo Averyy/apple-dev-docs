@@ -18,7 +18,7 @@ Sets the button’s style.
 @preconcurrency func addOrderToWalletButtonStyle(_ style: AddOrderToWalletButtonStyle) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 (See `AddOrderToWalletButtonStyle`).
 

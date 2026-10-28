@@ -24,7 +24,7 @@ var kAudioFormatProperty_ChannelShortName: AudioFormatPropertyID { get }
 kAudioFormatProperty_ChannelShortName
 ```
 
-#### Discussion
+## Discussion
 
 An abbreviated name for a particular channel. The specifier is an [`AudioChannelDescription`](../CoreAudioTypes/audiochanneldescription.md) structure that has its `mChannelLabel` field set. The value is a [`CFString`](../CoreFoundation/cfstring.md) opaque type. The caller is responsible for releasing the returned string.
 

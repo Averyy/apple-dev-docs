@@ -19,7 +19,7 @@ An arrangement that places the primary and secondary views side by side along on
 struct UISplitArrangement
 ```
 
-#### Overview
+## Overview
 
 A split arrangement view keeps its primary and secondary views in separate spaces: next to each other horizontally when someone is holding the device in landscape orientation, or stacked vertically when someone is holding the device in portrait orientation.. Here’s how the split arrangement positions the primary and secondary views:
 
@@ -41,7 +41,7 @@ arrangementVC.setViewController(secondaryVC, for: .secondary)
 arrangementVC.updateArrangement(.split)
 ```
 
-##### Adjust a split arrangement’s layout sizing
+### Adjust a split arrangement’s layout sizing
 
 By default, a split arrangement controller sizes the primary and secondary views equally when a display has one region. Influence how the arrangement view computes the sizes for each view by setting the split arrangement’s properties for each placement to use an automatic size, a fixed layout size, a fractional layout size, or an intrinsic content size.
 
@@ -69,7 +69,7 @@ Then, set the `width` or `height` property on the view properties instance to th
  updateArrangement(splitArrangement)
 ```
 
-##### Limit a split arrangement by orientation
+### Limit a split arrangement by orientation
 
 You can limit which axes your split arrangement view controller supports by specifying the axes for the arrangement. The following example shows an arrangement that only splits vertically:
 

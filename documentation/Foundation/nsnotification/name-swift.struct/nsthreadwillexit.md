@@ -27,7 +27,7 @@ static let NSThreadWillExit: NSNotification.Name
 extern NSNotificationName const NSThreadWillExitNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is the exiting `NSThread` object. This notification does not contain a `userInfo` dictionary.
 

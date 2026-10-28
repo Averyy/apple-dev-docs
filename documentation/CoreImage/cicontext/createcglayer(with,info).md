@@ -19,11 +19,11 @@ func createCGLayer(with size: CGSize, info: CFDictionary?) -> CGLayer?
 - (CGLayerRef) createCGLayerWithSize:(CGSize) size info:(CFDictionaryRef) info;
 ```
 
-#### Return Value
+## Return Value
 
 A CGLayer object.
 
-#### Discussion
+## Discussion
 
 After calling this method, Core Image draws content into the CGLayer object. Core Image creates a CGLayer object by calling the Quartz 2D function [`init(_:size:auxiliaryInfo:)`](../../CoreGraphics/cglayer/init%28_,size,auxiliaryinfo%29.md), whose prototype is:
 

@@ -19,15 +19,15 @@ OSErr AEGetKeyPtr (
 );
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../apple_event_manager.md#1656145).
 
-#### Overview
+## Overview
 
 This function is declared as a macro that invokes [`AEGetParamPtr`](../../coreservices/api-1444069-aegetparamptr.md), which can operate on an Apple event or an Apple event record. See the Discussion for that function for more information.
 
-##### Version-Notes
+### Version-Notes
 
 See [`AEGetParamPtr`](../../coreservices/api-1444069-aegetparamptr.md).
 

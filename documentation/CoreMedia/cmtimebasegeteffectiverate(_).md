@@ -25,7 +25,7 @@ func CMTimebaseGetEffectiveRate(_ timebase: CMTimebase) -> Float64
 extern Float64 CMTimebaseGetEffectiveRate(CMTimebaseRef timebase);
 ```
 
-#### Discussion
+## Discussion
 
 Calling `CMTimebaseGetEffectiveRate(timebase)` is equivalent to calling `CMSyncGetRelativeRate(timebase, CMTimebaseGetUltimateMasterClock(timebase))`.
 

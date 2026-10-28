@@ -19,7 +19,7 @@ func setAccessibilityLabel(_ accessibilityLabel: String?)
 - (void) setAccessibilityLabel:(NSString *) accessibilityLabel;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to change the accessibility label of an object dynamically. You can also set the accessibility label for an object in Xcode from the Identity inspector. If you do not set an accessibility label, the system uses the object’s title string, if present.
 

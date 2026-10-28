@@ -19,11 +19,11 @@ convenience init(views: [NSView])
 + (instancetype) stackViewWithViews:(NSArray<NSView *> *) views;
 ```
 
-#### Return Value
+## Return Value
 
 A stack view initialized with the specified array of views.
 
-#### Discussion
+## Discussion
 
 The returned stack view has horizontal layout direction and its [`translatesAutoresizingMaskIntoConstraints`](../nsview/translatesautoresizingmaskintoconstraints.md) property is set to the Boolean value [`false`](../../Swift/false.md). The views you provide in the `views` parameter are placed into the stack view’s leading gravity area.
 

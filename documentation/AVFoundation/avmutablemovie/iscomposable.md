@@ -20,7 +20,7 @@ A Boolean value that indicates whether you can use the asset as a segment of a c
 var isComposable: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property value is [`true`](../../Swift/true.md) if you can use the composition as a segment within an [`AVCompositionTrack`](../avcompositiontrack.md) object.
 

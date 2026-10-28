@@ -27,11 +27,11 @@ final func logFeedbackAttachment(sentiment: LanguageModelFeedback.Sentiment?, is
 - [Improving the safety of generative model output](../improving-the-safety-of-generative-model-output.md)
 - [Prompting an on-device foundation model](../prompting-an-on-device-foundation-model.md)
 
-#### Return Value
+## Return Value
 
 A `Data` object containing the JSON-encoded feedback attachment that can be submitted to Feedback Assistant.
 
-#### Discussion
+## Discussion
 
 This method creates a structured feedback attachment containing the session’s transcript and any provided feedback information. The attachment can be saved to a file and submitted to Apple using [Feedback Assistant](https://feedbackassistant.apple.com).
 

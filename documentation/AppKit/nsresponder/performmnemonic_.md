@@ -15,7 +15,7 @@ Handle a mnemonic.
 - (BOOL) performMnemonic:(NSString *) string;
 ```
 
-#### Discussion
+## Discussion
 
 Orverride to respond to mnemonics. If the character code or codes in s`tring` match the receiver’s mnemonic, the receiver should perform the mnemonic and return [`true`](../../Swift/true.md). The default implementation does nothing and returns [`false`](../../Swift/false.md). Mnemonics are not supported in macOS.
 

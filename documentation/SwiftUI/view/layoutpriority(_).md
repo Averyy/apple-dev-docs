@@ -22,7 +22,7 @@ nonisolated
 func layoutPriority(_ value: Double) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 Views typically have a default priority of `0` which causes space to be apportioned evenly to all sibling views. Raising a view’s layout priority encourages the higher priority view to shrink later when the group is shrunk and stretch sooner when the group is stretched.
 

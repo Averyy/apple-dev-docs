@@ -25,7 +25,7 @@ optional func presentedItemDidMove(to newURL: URL)
 - (void) presentedItemDidMoveToURL:(NSURL *) newURL;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to update the value returned by the [`presentedItemURL`](./presenteditemurl.md) property of your object.
 

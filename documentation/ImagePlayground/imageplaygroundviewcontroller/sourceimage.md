@@ -29,7 +29,7 @@ An image to use as source input for generating the new image.
 @objc @preconcurrency var sourceImage: NSImage? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 If you have an existing image that you want to use as a starting point for the new image, add it to this property. If you don’t supply a source image, the system creates the new image from the prompt text you provide.
 

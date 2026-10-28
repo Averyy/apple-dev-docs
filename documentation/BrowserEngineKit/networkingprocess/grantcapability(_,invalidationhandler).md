@@ -16,11 +16,11 @@ Grants the specified capability to the process, calling the handler when the cap
 func grantCapability(_ capability: ProcessCapability, invalidationHandler: @escaping () -> Void) throws -> ProcessCapability.Grant
 ```
 
-#### Return Value
+## Return Value
 
 A [`ProcessCapability.Grant`](../processcapability/grant.md) object that represents the granted capability.
 
-#### Discussion
+## Discussion
 
 When the process no longer needs the capability, call [`invalidate()`](../processcapability/grant/invalidate%28%29.md) on the returned object.
 

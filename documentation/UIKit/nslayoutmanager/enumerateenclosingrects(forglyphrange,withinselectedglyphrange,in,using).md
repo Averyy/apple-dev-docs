@@ -23,7 +23,7 @@ func enumerateEnclosingRects(forGlyphRange glyphRange: NSRange, withinSelectedGl
 - (void) enumerateEnclosingRectsForGlyphRange:(NSRange) glyphRange withinSelectedGlyphRange:(NSRange) selectedRange inTextContainer:(NSTextContainer *) textContainer usingBlock:(void (^)(CGRect rect, BOOL *stop)) block;
 ```
 
-#### Discussion
+## Discussion
 
 These rectangles are always in container coordinates. They can be used to draw the text background or highlight for the given range of characters. The rectangles don’t necessarily enclose glyphs that draw outside their line fragment rectangles; use [`boundingRect(forGlyphRange:in:)`](./boundingrect%28forglyphrange,in%29.md) to determine the area that contains all drawing performed for a range of glyphs.
 

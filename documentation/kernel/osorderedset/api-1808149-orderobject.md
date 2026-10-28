@@ -12,11 +12,11 @@ virtual SInt32 orderObject(
  const OSMetaClassBase *anObject);
 ```
 
-#### Return Value
+## Return Value
 
 The ordering value for the object.
 
-#### Overview
+## Overview
 
 This function calls the ordered set's order function with `anObject`, `NULL`, and the ordering context (or `NULL` if none was set), and returns the result of that function.
 

@@ -5,7 +5,7 @@
 
 Request focus for your app, and coordinate passing control from one app to another.
 
-#### Overview
+## Overview
 
 When someone uses your app and another app unexpectedly steals focus, the user experience can be compromised. Not only is it inconvenient for people to switch back to their original app, if they’re typing when the switch occurs, they might accidentally enter text into the wrong app, inadvertently disclosing sensitive information.
 
@@ -13,7 +13,7 @@ Cooperative activation addresses this problem by making app activation a request
 
 > **Related sessions from WWDC23**:  Session 10054: [What’s new in AppKit](https://developer.apple.com/videos/play/wwdc2023/10054)
 
-##### Request activation to gain focus
+### Request activation to gain focus
 
 When your app needs focus, call [`activate()`](./nsapplication/activate%28%29.md) on your app’s [`shared`](./nsapplication/shared.md) instance, or its shorthand version `NSApp`:
 
@@ -33,7 +33,7 @@ NSApp.activate()
 
 Calling this function sends a message to the system requesting activation for the app. Requesting activation doesn’t guarantee your app gains focus. People ultimately decide which apps gain focus by activating them through their device’s user interface. But if, after considering the user’s intent and larger system context, the system honors your app’s request, your app activates.
 
-##### Transfer control from one app to another by yielding and then activating
+### Transfer control from one app to another by yielding and then activating
 
 Passing control from one app to another is a two-step process.
 
@@ -122,7 +122,7 @@ NSApp.activate()
 
 Choosing between [`NSRunningApplication`](./nsrunningapplication.md) or [`NSApplication`](./nsapplication.md) for activation depends on which app you want to initiate the activation. Use `NSRunningApplication` if you want the active app to control when the target app activates. Use `NSApplication` (or `NSApp`) if you want the target app to activate itself.
 
-##### Replace calls to deactivate
+### Replace calls to deactivate
 
 When you call [`yieldActivation(to:)`](./nsapplication/yieldactivation%28to%29.md), there’s no need to call [`deactivate()`](./nsapplication/deactivate%28%29.md) on the app losing focus. Cooperative activation APIs cause the receiver to draw inactive when another app activates. This is typically the behavior you want.
 

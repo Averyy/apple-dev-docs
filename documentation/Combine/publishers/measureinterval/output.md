@@ -21,7 +21,7 @@ The kind of values published by this publisher.
 typealias Output = Context.SchedulerTimeType.Stride
 ```
 
-#### Discussion
+## Discussion
 
 This publisher produces elements of the provided scheduler’s time type’s stride.
 

@@ -21,7 +21,7 @@ var excludedComponents: Set<ModelComponent>
 
 - [Model Compatibility](../model-compatibility.md)
 
-#### Discussion
+## Discussion
 
 Their weights are never read, and inputs that need them fail. You do not need this to save memory: on-demand components, such as the vision encoder of some VLMs, already load the first time an input needs them. Models that cannot load without a component load it anyway; see [`ModelComponentsProviding`](../modelcomponentsproviding.md).
 

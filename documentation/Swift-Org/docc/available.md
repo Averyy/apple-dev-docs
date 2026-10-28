@@ -20,7 +20,7 @@ A directive that specifies when a documentation page is available for a given pl
 @Available(_ platform: Platform, introduced: SemanticVersion, deprecated: SemanticVersion?)
 ```
 
-#### Overview
+## Overview
 
 Whenever possible, prefer to specify availability information using in-source annotations such as the `@available` attribute in Swift or the `API_AVAILABLE` macro in Objective-C. Using in-source annotations ensures that your documentation matches the availability of your API. If you duplicate availability information in the documentation markup, the information from the `@Available` directive overrides the information for the in-source annotations from that platform and risks being inaccurate.
 

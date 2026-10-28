@@ -19,7 +19,7 @@ weak var delegate: (any NSSharingServicePickerDelegate)? { get set }
 @property (weak, nullable) id<NSSharingServicePickerDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 The delegate object must conform to the [`NSSharingServicePickerDelegate`](../nssharingservicepickerdelegate.md) delegate.
 

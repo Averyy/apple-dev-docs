@@ -5,13 +5,13 @@
 
 Adopt draggable API to provide items for drag-and-drop operations.
 
-#### Overview
+## Overview
 
 When someone drags an onscreen visual representation of an item in your app, such as a photo, a Maps location, a Calendar event, or a text selection, the drag operation has some data associated with it, as well as a preview of the data that the system displays. Add the [`draggable(_:)`](./view/draggable%28_%29.md) modifier to enable the view to function as a drag source, and provide a value that conforms to the [`Transferable`](../CoreTransferable/transferable.md) protocol.
 
 The `Transferable` protocol describes how you can serialize and deserialize your model object for sharing and data transfer. It provides a transfer representation by composing one or more of the Core Transferable framework’s built-in [`TransferRepresentation`](../CoreTransferable/transferrepresentation.md) types.
 
-##### Enable a view as a drag source
+### Enable a view as a drag source
 
 Use the `draggable(_:)` modifier to send or receive `Transferable` items within an app, among a collection of your own apps, or between your apps and other apps that support the import or export of a specified data format.
 
@@ -59,7 +59,7 @@ To customize the lift preview that the system shows as it transitions to display
         }
 ```
 
-##### Create a transferable item for drag-and-drop operations
+### Create a transferable item for drag-and-drop operations
 
 To support drag operations of model objects, conform a model to the `Transferable` protocol to create a transferable item, and implement the [`transferRepresentation`](../CoreTransferable/transferrepresentation.md) static property. Types like [`String`](../Swift/string.md), [`Data`](../Foundation/data.md), [`URL`](../Foundation/url.md), and [`Image`](./image.md) already conform to `Transferable`, making them easy to use in drag-and-drop operations.
 
@@ -118,7 +118,7 @@ struct ContentView: View {
 }
 ```
 
-##### Enable list reordering
+### Enable list reordering
 
 Within a [`List`](./list.md), you can use the [`onMove(perform:)`](./dynamicviewcontent/onmove%28perform%29.md) modifier to enable reordering. The modifier allows you to reorder list items by using a long press on a row, and then dragging it to a new location. Add the `onMove(perform:)` modifier to a `List` to enable the interaction.
 

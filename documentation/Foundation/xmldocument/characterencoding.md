@@ -20,7 +20,7 @@ var characterEncoding: String? { get set }
 @property (copy, nullable) NSString * characterEncoding;
 ```
 
-#### Discussion
+## Discussion
 
 Typically the encoding is specified in the XML declaration of a document that is processed, but it can be set at any time. If the specified encoding does not match the actual encoding, parsing of the document might fail.
 

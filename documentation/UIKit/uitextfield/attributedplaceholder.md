@@ -24,7 +24,7 @@ var attributedPlaceholder: NSAttributedString? { get set }
 @property (nonatomic, copy, nullable) NSAttributedString * attributedPlaceholder;
 ```
 
-#### Discussion
+## Discussion
 
 This property is `nil` by default. If set, the placeholder string is drawn using system-defined color and the remaining style information (except the text color) of the attributed string. Assigning a new value to this property also replaces the value of the [`placeholder`](./placeholder.md) property with the same string data, albeit without any formatting information. Assigning a new value to this property does not affect any other style-related properties of the text field.
 

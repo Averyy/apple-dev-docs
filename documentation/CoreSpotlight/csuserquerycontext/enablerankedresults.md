@@ -23,7 +23,7 @@ var enableRankedResults: Bool { get set }
 @property (nonatomic, assign) BOOL enableRankedResults;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is `true`. Setting the property to `false` causes Spotlight to return results as it finds them instead of ordering them by their relevance or saliency to the search term.
 

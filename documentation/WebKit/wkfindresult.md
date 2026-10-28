@@ -24,7 +24,7 @@ class WKFindResult
 @interface WKFindResult : NSObject
 ```
 
-#### Overview
+## Overview
 
 When you perform a search using the methods of [`WKWebView`](./wkwebview.md), the web view creates a [`WKFindResult`](./wkfindresult.md) object and delivers it to your completion handler. You don’t create instances of this class directly. Use the objects that the web view provides to determine whether it found a match for the content.
 

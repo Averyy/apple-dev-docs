@@ -13,7 +13,7 @@ Direct texture read.
 - macOS 14.0+
 - visionOS 1.0+
 
-#### Parameter Types
+## Parameter Types
 
 **Image 3D Read (vector4f)**:
 

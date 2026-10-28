@@ -24,7 +24,7 @@ var transactionIdentifier: String { get }
 @property (nonatomic, copy, readonly) NSString * transactionIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 This identifier is suitable for use in a receipt.
 

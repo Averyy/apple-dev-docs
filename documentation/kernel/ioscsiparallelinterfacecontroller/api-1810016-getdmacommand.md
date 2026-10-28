@@ -12,11 +12,11 @@ IODMACommand * GetDMACommand (
  SCSIParallelTaskIdentifierparallelTask );
 ```
 
-#### Return Value
+## Return Value
 
 returns pointer to an IODMACommand which is used in conjunction with the task.
 
-#### Overview
+## Overview
 
 For devices utilizing DMA, the IODMACommand object should be obtained via GetDMACommand(). The subclass is responsible for calling prepare() on the IODMACommand object using the proper offset obtained via GetDataBufferOffset() and correct size obtained via GetRequestedDataTransferCount(). The subclass is further responsible for calling complete() on the IODMACommand object once all DMA operations have finished. NB: Subclasses should not call IODMACommand::setMemoryDescriptor().
 

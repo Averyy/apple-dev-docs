@@ -15,7 +15,7 @@ The transport type of the step.
 transportType: TransportType | null;
 ```
 
-#### Discussion
+## Discussion
 
 This property reflects the transport type employed by the step and may differ from the transport type of the overall route.
 

@@ -25,7 +25,7 @@ var particleColorAlphaSpeed: CGFloat { get set }
 @property (nonatomic) CGFloat particleColorAlphaSpeed;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `0.0`.
 

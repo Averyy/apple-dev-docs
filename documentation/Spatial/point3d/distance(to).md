@@ -25,7 +25,7 @@ func distance(to other: Point3D) -> Double
 static double SPPoint3DDistanceToPoint(SPPoint3D point, SPPoint3D other);
 ```
 
-#### Return Value
+## Return Value
 
 The distance between two points.
 

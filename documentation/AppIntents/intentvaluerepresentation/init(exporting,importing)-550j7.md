@@ -23,7 +23,7 @@ init(exporting: @escaping @Sendable (Item) async throws -> IntentValue, importin
 
 Available when `Item` conforms to `Transferable` and `IntentValue` is `IntentPerson`.
 
-#### Example
+## Example
 
 ```swift
 struct ContactEntity: AppEntity, Transferable {

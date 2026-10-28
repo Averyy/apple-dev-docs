@@ -19,11 +19,11 @@ func AEStreamOpen() -> AEStreamRef!
 AEStreamRef AEStreamOpen(void);
 ```
 
-#### Return Value
+## Return Value
 
 A new [`AEStreamRef`](./aestreamref.md) or `NULL` if the stream data structures cannot be allocated.
 
-#### Discussion
+## Discussion
 
 This function creates a new stream for use in describing the contents of a descriptor, descriptor list, or Apple event record (`AEDesc`, `AEDescList`, or `AERecord`). 
 

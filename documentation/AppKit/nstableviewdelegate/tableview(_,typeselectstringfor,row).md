@@ -20,11 +20,11 @@ optional func tableView(_ tableView: NSTableView, typeSelectStringFor tableColum
 - (NSString *) tableView:(NSTableView *) tableView typeSelectStringForTableColumn:(NSTableColumn *) tableColumn row:(NSInteger) row;
 ```
 
-#### Return Value
+## Return Value
 
 A string that is used in type select comparison for `row` and `tableColumn`. Return `nil` if `row` or `tableColumn` should not be searched.
 
-#### Discussion
+## Discussion
 
 Implement this method to change the string value that is searched for based on what is displayed. By default, all cells with text in them are searched.
 

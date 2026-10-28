@@ -22,7 +22,7 @@ protocol NIDeviceCapability
 @protocol NIDeviceCapability
 ```
 
-#### Overview
+## Overview
 
 The [`NISession`](./nisession.md) class property [`deviceCapabilities`](./nisession/devicecapabilities.md) adopts this protocol. At runtime, inspect this property to determine the available features of an interaction session on the person’s device.
 

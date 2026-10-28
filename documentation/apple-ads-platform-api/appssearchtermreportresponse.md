@@ -15,11 +15,11 @@ The top-level response envelope for apps search term reports.
 object AppsSearchTermReportResponse
 ```
 
-#### Discussion
+## Discussion
 
 Search term reports require the ORTZ timezone. UTC isn’t supported. Each row links back to the matched keyword via a nested `keyword` object (see [`ReportingKeyword`](./reportingkeyword.md)), enabling you to map observed search behavior to specific bids.
 
-##### Example
+### Example
 
 ```json
 {

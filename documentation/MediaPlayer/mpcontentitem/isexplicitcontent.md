@@ -24,7 +24,7 @@ var isExplicitContent: Bool { get set }
 @property (nonatomic, assign, getter=isExplicitContent) BOOL explicitContent;
 ```
 
-#### Discussion
+## Discussion
 
 When set to [`true`](../../Swift/true.md), the designated content item’s identified as containing explicit content.
 

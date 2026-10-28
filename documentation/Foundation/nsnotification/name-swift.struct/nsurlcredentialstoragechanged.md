@@ -27,7 +27,7 @@ static let NSURLCredentialStorageChanged: NSNotification.Name
 extern NSNotificationName const NSURLCredentialStorageChangedNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification’s [`object`](../../notification/object.md) is the [`URLCredentialStorage`](../../urlcredentialstorage.md) instance that changed. This notification does not contain a [`userInfo`](../../notification/userinfo.md) dictionary.
 

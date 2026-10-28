@@ -25,7 +25,7 @@ func NSGetUncaughtExceptionHandler() -> ((NSException) -> Void)?
 extern void (*)(NSException *)NSGetUncaughtExceptionHandler();
 ```
 
-#### Return Value
+## Return Value
 
 A pointer to the top-level error-handling function where you can perform last-minute logging before the program terminates.
 

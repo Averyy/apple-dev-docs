@@ -40,7 +40,7 @@ var thumbnailSize: NSSize { get set }
 @property (nonatomic) NSSize thumbnailSize;
 ```
 
-#### Return Value
+## Return Value
 
 The maximum width and height of the thumbnails in the thumbnail view.
 

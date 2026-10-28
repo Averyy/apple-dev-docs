@@ -24,7 +24,7 @@ var format: AVAudioFormat { get }
 @property (nonatomic, strong, readonly) AVAudioFormat * format;
 ```
 
-#### Discussion
+## Discussion
 
 The framework sets the value to the [`init(mixerDefinition:format:)`](../phasepushstreamnodedefinition/init%28mixerdefinition,format%29.md) argument.
 

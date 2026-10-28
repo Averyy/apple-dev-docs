@@ -17,14 +17,14 @@ Initializer allowing creation of `MLXArray` from a `UnsafeRawBufferPointer` fill
 convenience init(_ ptr: UnsafeRawBufferPointer, _ shape: (some Collection<Int>)? = [Int]?.none, type: (some HasDType).Type)
 ```
 
-#### Discussion
+## Discussion
 
 ```swift
 let ptr: UnsafeRawBufferPointer
 let array = MLXArray(ptr, [2, 3], type: Int32.self)
 ```
 
-##### See Also
+### See Also
 
 - [Initialization](../initialization.md)
 

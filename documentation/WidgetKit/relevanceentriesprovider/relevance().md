@@ -20,7 +20,7 @@ func relevance() async -> WidgetRelevance<Self.Configuration>
 
 - [Increasing the visibility of widgets in Smart Stacks](../widget-suggestions-in-smart-stacks.md)
 
-#### Discussion
+## Discussion
 
 The system can use the relevance to show this widget when the conditions for the relevance match the current state.
 

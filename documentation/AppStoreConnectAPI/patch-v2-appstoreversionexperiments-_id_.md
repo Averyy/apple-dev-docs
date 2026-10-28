@@ -13,9 +13,9 @@ Update the name, the started state, and the proportion of traffic to send to an 
 
 - [App Store Connect API 2.4 release notes](./app-store-connect-api-2-4-release-notes.md)
 
-#### Discussion
+## Discussion
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

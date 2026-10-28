@@ -21,7 +21,7 @@ The sidebar of a tab view.
 static let sidebar: TabBarPlacement
 ```
 
-#### Discussion
+## Discussion
 
 A tab bar can appear as a sidebar in [`sidebarAdaptable`](../tabviewstyle/sidebaradaptable.md) on iPad, macOS, visionOS, and tvOS.
 

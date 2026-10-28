@@ -24,7 +24,7 @@ init?(contentsOf url: URL)
 - (instancetype) initWithContentsOfURL:(NSURL *) url;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized image object, or `nil` if the object could not be initialized.
 

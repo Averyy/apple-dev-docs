@@ -12,11 +12,11 @@ IOReturn changePowerStateTo(
  unsigned longordinal );
 ```
 
-#### Return Value
+## Return Value
 
 A return code that can be ignored by the caller.
 
-#### Overview
+## Overview
 
 This function is one of several that are used to set a driver's power state. In most circumstances, however, you should call changePowerStateToPriv instead. Calls to `changePowerStateTo`, `changePowerStateToPriv`, and a driver's power children all affect the power state of a driver. For legacy design reasons, they have overlapping functionality. Although you should call `changePowerStateToPriv` to change your device's power state, you might need to call `changePowerStateTo` in the following circumstances:
 

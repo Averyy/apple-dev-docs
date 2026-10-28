@@ -17,7 +17,7 @@
 typedef void (^)(NSAttributedString *, NSDictionary<NSString *,id> *, NSError *) NSAttributedStringCompletionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Document-Level attributes, like NSBackgroundColorDocumentAttribute, or an error. An implementation of this block type must expect to be called asynchronously when passed to HTML loading methods.
 

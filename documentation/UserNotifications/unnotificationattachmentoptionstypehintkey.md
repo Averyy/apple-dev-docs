@@ -24,7 +24,7 @@ let UNNotificationAttachmentOptionsTypeHintKey: String
 extern NSString * const UNNotificationAttachmentOptionsTypeHintKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key is an [`NSString`](../Foundation/nsstring.md) containing a Uniform Type Identifier (UTI) that describes the file’s type. If you don’t include this key, the system uses the attachment’s filename extension to determine its type.
 

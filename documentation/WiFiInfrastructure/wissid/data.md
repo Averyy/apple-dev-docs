@@ -17,7 +17,7 @@ The raw binary data of the SSID as transmitted over-the-air.
 let data: Data
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the exact bytes that represent the SSID according to the Wi-Fi standard. The data ranges from 1 to 32 bytes in length and may contain any byte values, including embedded null characters, control characters, and non-printable binary data.
 

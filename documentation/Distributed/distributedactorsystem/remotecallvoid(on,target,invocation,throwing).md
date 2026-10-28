@@ -22,13 +22,13 @@ Invoked by the Swift runtime when making a remote call.
 func remoteCallVoid<Act, Err>(on actor: Act, target: RemoteCallTarget, invocation: inout Self.InvocationEncoder, throwing: Err.Type) async throws where Act : DistributedActor, Err : Error, Self.ActorID == Act.ID
 ```
 
-#### Discussion
+## Discussion
 
 The `arguments` are the arguments container that was previously created by `makeInvocationEncoder` and has been populated with all arguments.
 
 This method should perform the actual remote function call, and await for its response.
 
-#### Errors
+## Errors
 
 This method is allowed to throw because of underlying transport or serialization errors, as well as by re-throwing the error received from the remote callee (if able to).
 

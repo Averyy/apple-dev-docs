@@ -19,7 +19,7 @@ var debugDescription: String { get }
 @property (copy, readonly) NSString * debugDescription;
 ```
 
-#### Discussion
+## Discussion
 
 The exact details of the string conversion may change in the future.
 

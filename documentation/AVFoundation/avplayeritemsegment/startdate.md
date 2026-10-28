@@ -25,7 +25,7 @@ var startDate: Date? { get }
 @property (nonatomic, readonly, nullable) NSDate * startDate;
 ```
 
-#### Discussion
+## Discussion
 
 This value is `nil` if the primary item doesn’t contain dates.
 

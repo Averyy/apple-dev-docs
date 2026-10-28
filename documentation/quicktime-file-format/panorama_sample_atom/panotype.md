@@ -6,7 +6,7 @@
 
 An OSType describing the type of panorama.
 
-#### Overview
+## Overview
 
 Types supported are:
 

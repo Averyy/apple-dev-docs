@@ -17,7 +17,7 @@ Transform the values in the nested structure using the `transform()` function wh
 func mapValues<E2, R1, R2>(_ dictionary1: NestedDictionary<Key, E2>, transform: (Element, E2?) throws -> (R1, R2?)) rethrows -> (NestedDictionary<Key, R1>, NestedDictionary<Key, R2>)
 ```
 
-#### Discussion
+## Discussion
 
 This transforms both values simultaneously and produces two new `NestedDictionary` conceptually somewhat like `map(zip(i1, i2))`.
 
@@ -27,7 +27,7 @@ The structure of the second `NestedDictionary` should be identical to the first 
 - arrays do not need to be the same length – the receiver’s length is matched
 - dictionaries do not need to have the same keys – the receivers keys are matched
 
-##### See Also
+### See Also
 
 - [`mapValues(_:_:)`](../nesteditem/mapvalues%28_,_%29.md)
 - [`mapValues(_:_:transform:)`](./mapvalues%28_,_,transform%29-52e9l.md)

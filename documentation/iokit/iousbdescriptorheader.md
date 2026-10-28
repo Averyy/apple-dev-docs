@@ -16,7 +16,7 @@ typedef struct IOUSBDescriptorHeader {
 } IOUSBDescriptorHeader;
 ```
 
-#### Overview
+## Overview
 
 Standard header used for all USB descriptors. Used to read the length of a descriptor so that we can allocate storage for the whole descriptor later on.
 

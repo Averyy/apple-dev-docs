@@ -8,7 +8,7 @@ framework: "Swift-Org/diagnostics"
 **Framework**: Swift-Org/diagnostics  
 **Role**: Article
 
-#### Overview
+## Overview
 
 Using an isolated conformance from outside the actor can cause data races in your program. Resolve these errors by only using isolated conformances within the actor.
 

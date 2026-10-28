@@ -19,7 +19,7 @@ Determines whether the range contains the specified exposure bias.
 - (BOOL) containsExposureBias:(float) exposureBias;
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the range contains the exposure bias; otherwise, `false`.
 

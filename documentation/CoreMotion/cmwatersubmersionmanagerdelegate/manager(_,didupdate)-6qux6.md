@@ -23,7 +23,7 @@ optional func manager(_ manager: CMWaterSubmersionManager, didUpdate event: CMWa
 - (void) manager:(CMWaterSubmersionManager *) manager didUpdateEvent:(CMWaterSubmersionEvent *) event;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to respond to changes in the device’s submersion state.
 

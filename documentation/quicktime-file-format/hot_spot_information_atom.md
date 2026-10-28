@@ -12,7 +12,7 @@ An atom that contains general information about a hot spot.
 
 - [Custom cursor atom](./custom_cursor_atom.md)
 
-#### Overview
+## Overview
 
 The hot spot information atom contains general information about a hot spot. Its atom type is `kQTVRHotSpotInfoAtomType` (`'hsin'`). Every hot spot atom should have a hot spot information atom as a child.
 

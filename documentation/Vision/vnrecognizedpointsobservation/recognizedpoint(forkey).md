@@ -24,7 +24,7 @@ func recognizedPoint(forKey pointKey: VNRecognizedPointKey) throws -> VNRecogniz
 - (VNRecognizedPoint *) recognizedPointForKey:(VNRecognizedPointKey) pointKey error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 The recognized point associated with the key.
 

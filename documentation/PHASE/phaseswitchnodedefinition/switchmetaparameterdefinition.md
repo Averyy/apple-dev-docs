@@ -24,7 +24,7 @@ var switchMetaParameterDefinition: PHASEStringMetaParameterDefinition { get }
 @property (nonatomic, strong, readonly) PHASEStringMetaParameterDefinition * switchMetaParameterDefinition;
 ```
 
-#### Discussion
+## Discussion
 
 The framework sets the value of this property to the [`init(switchMetaParameterDefinition:)`](./init%28switchmetaparameterdefinition%29.md) argument.
 

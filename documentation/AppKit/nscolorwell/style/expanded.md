@@ -19,7 +19,7 @@ case expanded
 NSColorWellStyleExpanded
 ```
 
-#### Discussion
+## Discussion
 
 This style displays a dedicated button and a rectangular area with the selected color. Clicks in the dedicated button always display the system color panel. Clicks in the color area display a popover with a color picker. If you specified a custom action using the [`pulldownAction`](../pulldownaction.md) and [`pulldownTarget`](../pulldowntarget.md) properties, clicks in the color area execute your action method instead.
 

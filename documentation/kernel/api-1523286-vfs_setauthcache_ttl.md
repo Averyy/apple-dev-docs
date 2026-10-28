@@ -15,11 +15,11 @@ Enable credential caching and set time-to-live of cached authorized credentials 
 void vfs_setauthcache_ttl(mount_t mp, int ttl);
 ```
 
-#### Return Value
+## Return Value
 
 void.
 
-#### Discussion
+## Discussion
 
 If a filesystem is set to allow caching credentials, the VFS layer can authorize previously-authorized actions from the same vfs_context_t without calling down to the filesystem (though it will not deny based on the cache).
 

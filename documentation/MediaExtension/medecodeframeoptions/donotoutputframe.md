@@ -19,7 +19,7 @@ var doNotOutputFrame: Bool { get set }
 @property (readwrite) BOOL doNotOutputFrame;
 ```
 
-#### Discussion
+## Discussion
 
 If [`true`](../../Swift/true.md), the decoder emits [`nil`](../../ObjectiveC/nil-227m0.md) instead of a [CVImageBuffer](../../CoreVideo/cvimagebuffer-q40.md) instance.
 

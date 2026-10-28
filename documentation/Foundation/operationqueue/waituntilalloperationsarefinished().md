@@ -25,7 +25,7 @@ func waitUntilAllOperationsAreFinished()
 - (void) waitUntilAllOperationsAreFinished;
 ```
 
-#### Discussion
+## Discussion
 
 When called, this method blocks the current thread and waits for the receiver’s current and queued operations to finish executing. While the current thread is blocked, the receiver continues to launch already queued operations and monitor those that are executing. During this time, the current thread cannot add operations to the queue, but other threads may. Once all of the pending operations are finished, this method returns.
 

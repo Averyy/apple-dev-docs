@@ -20,7 +20,7 @@ Ensures that the specified asset packs are available locally.
 - (void) ensureLocalAvailabilityOfAssetPacks:(NSSet<BAAssetPack *> *) assetPacks completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 This method checks whether the asset packs are currently downloaded. If any aren’t, then the system schedules them to be downloaded and calls the completion handler with `nil` for the completion handler’s `error` parameter when all of the downloads finish. The framework guarantees that the requested asset packs are available locally after this method calls the completion handler with `nil` for the `error` parameter. If this method calls the completion handler with a non-`nil` value for `error`, then the asset packs *aren’t* all guaranteed to be available locally. You can optionally monitor download progress by attaching a delegate object to [`delegate`](./delegate.md).
 

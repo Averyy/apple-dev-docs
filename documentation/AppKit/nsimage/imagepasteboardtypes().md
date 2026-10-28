@@ -21,11 +21,11 @@ class func imagePasteboardTypes() -> [NSPasteboard.PasteboardType]
 + (NSArray<NSString *> *) imagePasteboardTypes;
 ```
 
-#### Return Value
+## Return Value
 
 An array of `NSString` objects, each of which identifies a single supported pasteboard type. By default, this list contains the  `NSPDFPboardType`, `NSPICTPboardType`, `NSPostScriptPboardType`, and `NSTIFFPboardType` types.
 
-#### Discussion
+## Discussion
 
 This list includes all pasteboard types supported by registered subclasses of [`NSImageRep`](../nsimagerep.md) plus those that can be converted to a supported type by a user-installed filter service.
 

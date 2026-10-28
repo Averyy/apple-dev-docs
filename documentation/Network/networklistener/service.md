@@ -21,7 +21,7 @@ An optional service to advertise with the listener.
 final var service: NWListener.Service? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 May be modified after the listener becomes ready to update the TXT record or change the advertised service.
 

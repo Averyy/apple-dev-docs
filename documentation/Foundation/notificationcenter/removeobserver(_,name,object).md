@@ -25,7 +25,7 @@ func removeObserver(_ observer: Any, name aName: NSNotification.Name?, object an
 - (void) removeObserver:(id) observer name:(NSNotificationName) aName object:(id) anObject;
 ```
 
-#### Discussion
+## Discussion
 
 Removing the observer stops it from receiving notifications.
 

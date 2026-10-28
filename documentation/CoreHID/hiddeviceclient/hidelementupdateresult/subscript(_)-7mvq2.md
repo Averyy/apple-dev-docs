@@ -15,11 +15,11 @@ Receive the result of a request element update.
 subscript(originalRequest: HIDDeviceClient.RequestElementUpdate) -> Result<[HIDElement.Value], any Error>? { get }
 ```
 
-#### Return Value
+## Return Value
 
 The result for the specified request which contains a list of updated [`HIDElement.Value`](../../hidelement/value.md) objects. Access the results using  [`get()`](../../../Swift/result/get%28%29.md).
 
-#### Overview
+## Overview
 
 For an example, see [`updateElements(_:timeout:)`](../updateelements%28_,timeout%29.md).
 

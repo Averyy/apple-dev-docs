@@ -20,7 +20,7 @@ var xmlString: String { get }
 @property (copy, readonly) NSString * XMLString;
 ```
 
-#### Discussion
+## Discussion
 
 The returned string includes the string representations of all children. This method invokes [`xmlString(options:)`](./xmlstring%28options%29.md) with an `options` argument of `NSXMLNodeOptionsNone`.
 

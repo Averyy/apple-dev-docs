@@ -22,7 +22,7 @@ var fileURL: URL { get }
 @property (readonly) NSURL * fileURL;
 ```
 
-#### Discussion
+## Discussion
 
 The URL identifies the location of the document in the application sandbox. It includes the file extension, from which the file type is determined.
 

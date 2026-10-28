@@ -19,7 +19,7 @@ func continueSpeaking()
 - (void) continueSpeaking;
 ```
 
-#### Discussion
+## Discussion
 
 At any time after [`pauseSpeaking(at:)`](./pausespeaking%28at%29.md) is called, [`continueSpeaking()`](./continuespeaking%28%29.md) can be called to continue speaking from the beginning of the word at which speech paused.
 

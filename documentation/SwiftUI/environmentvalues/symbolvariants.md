@@ -21,7 +21,7 @@ The symbol variant to use in this environment.
 var symbolVariants: SymbolVariants { get set }
 ```
 
-#### Discussion
+## Discussion
 
 You set this environment value indirectly by using the [`symbolVariant(_:)`](../view/symbolvariant%28_%29.md) view modifier. However, you access the environment variable directly using the [`environment(_:_:)`](../view/environment%28_,_%29.md) modifier. Do this when you want to use the [`none`](../symbolvariants/none.md) variant to ignore the value that’s already in the environment:
 

@@ -21,11 +21,11 @@ Applies a hue rotation effect to the view.
 func hueRotation(_ angle: Angle) -> some VisualEffect
 ```
 
-#### Return Value
+## Return Value
 
 An effect that shifts all of the colors in the view.
 
-#### Discussion
+## Discussion
 
 Use hue rotation effect to shift all of the colors in a view according to the angle you specify.
 

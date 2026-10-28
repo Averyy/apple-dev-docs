@@ -19,7 +19,7 @@ class VZEntropyDeviceConfiguration
 @interface VZEntropyDeviceConfiguration : NSObject
 ```
 
-#### Overview
+## Overview
 
 Don’t create a VZEntropyDeviceConfiguration object directly. Instead, instantiate a subclass such as [`VZVirtioEntropyDeviceConfiguration`](./vzvirtioentropydeviceconfiguration.md) to configure a source of entropy for your virtual machine.
 

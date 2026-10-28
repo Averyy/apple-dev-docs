@@ -2010,8 +2010,11 @@
     }
   },
   "metadata": {
+    "gone_links": [
+      "https://developer.apple.com/documentation/storekittest/skadnetwork_linkid"
+    ],
     "render": {
-      "version": 3
+      "version": 4
     },
     "total_pages": 502
   }

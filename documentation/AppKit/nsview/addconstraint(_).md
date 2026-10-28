@@ -19,7 +19,7 @@ func addConstraint(_ constraint: NSLayoutConstraint)
 - (void) addConstraint:(NSLayoutConstraint *) constraint;
 ```
 
-#### Discussion
+## Discussion
 
 The constraint must involve only views that are within scope of the receiving view. Specifically, any views involved must be either the receiving view itself, or a subview of the receiving view. Constraints that are added to a view are said to be held by that view. The coordinate system used when evaluating the constraint is the coordinate system of the view that holds the constraint.
 

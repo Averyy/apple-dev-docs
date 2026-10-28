@@ -5,11 +5,11 @@
 
 Analyze your app’s performance by invoking Metal’s frame capture.
 
-#### Overview
+## Overview
 
 Use the [`MTLCaptureManager`](../Metal/mtlcapturemanager.md) to programmatically capture information about commands you send to a specific device object. For example, you can capture a specific frame or part of a frame, depending on your needs, by implementing a custom UI that triggers a capture, or by programmatically triggering a capture at runtime from within your app.
 
-##### Enable capturing programmatically
+### Enable capturing programmatically
 
 To enable Metal capture in your app, add the `MetalCaptureEnabled` key to your `Info.plist` file with a value of `YES`. In Xcode’s property list editor, this key appears as `Metal Capture Enabled`.
 
@@ -17,7 +17,7 @@ Alternatively, in macOS 14 and later, you can set the environment variable on yo
 
 > 💡 **Tip**: Enabling Metal capture has a tiny, but measurable, effect on your app’s CPU processing time. You may want to set the value of this key using a build setting in your project so that you can enable it for some builds, but not for your final release build.
 
-##### Capture a device or command queue
+### Capture a device or command queue
 
 Create an [`MTLCaptureDescriptor`](../Metal/mtlcapturedescriptor.md) object that defines which commands you want to record and what needs to happen after the capture is complete. To capture commands for a specific [`MTLDevice`](../Metal/mtldevice.md) or [`MTLCommandQueue`](../Metal/mtlcommandqueue.md), set the capture descriptor’s [`captureObject`](../Metal/mtlcapturedescriptor/captureobject.md) property to point at the specific object to track, and call the [`startCapture(with:)`](../Metal/mtlcapturemanager/startcapture%28with%29.md) method. To stop capturing commands, call the [`stopCapture()`](../Metal/mtlcapturemanager/stopcapture%28%29.md) method.
 
@@ -46,7 +46,7 @@ The capture manager captures commands only within [`MTLCommandBuffer`](../Metal/
 
 > 💡 **Tip**: When you capture a frame programmatically, you can capture Metal commands that span multiple frames. For example, by calling `startCapture` at the start of frame 1 and `stopCapture` after frame 3, the traces contain command data from all the buffers that the system commits in the three frames.
 
-##### Capture specific commands with a capture scope
+### Capture specific commands with a capture scope
 
 To learn how to add custom scopes to your app, see [Creating and using custom capture scopes](./creating-and-using-custom-capture-scopes.md). To capture commands using a custom scope, create an [`MTLCaptureScope`](../Metal/mtlcapturescope.md) object and set the capture descriptor’s [`captureObject`](../Metal/mtlcapturedescriptor/captureobject.md) property to point to it.
 
@@ -85,7 +85,7 @@ func runMetalCommands(commandQueue: MTLCommandQueue) {
 
 > ❗ **Important**: The capture scope captures commands only within [`MTLCommandBuffer`](../Metal/mtlcommandbuffer.md) objects that you create after the scope begins and commit before the scope ends.
 
-##### Save the capture to your computer
+### Save the capture to your computer
 
 If you want to analyze the capture later, you can skip launching the Metal debugger and save the GPU command information to a GPU trace file. Call [`supportsDestination(_:)`](../Metal/mtlcapturemanager/supportsdestination%28_%29.md) on the capture manager to make sure the feature is available before attempting to record a trace file.
 

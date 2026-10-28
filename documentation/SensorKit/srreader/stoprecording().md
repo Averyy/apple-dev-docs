@@ -17,13 +17,13 @@ Stops recording sensor data.
 final func stopRecording() async throws
 ```
 
-#### Discussion
+## Discussion
 
 The reader must be authorized for the sensor for this to succeed. This stops recording on this device and any paired devices. Sensor recording will continue until the last interested reader has stopped recording.
 
 > **Throws**: An error if the stop operation fails
 
-#### Example
+## Example
 
 ```swift
 do {

@@ -21,7 +21,7 @@ A type that represents Apple icon data.
 static var icns: UTType { get }
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `com.apple.icns`.
 

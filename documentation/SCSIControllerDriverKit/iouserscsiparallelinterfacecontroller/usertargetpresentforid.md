@@ -15,11 +15,11 @@ Checks if a specific target is present.
 virtual kern_return_t UserTargetPresentForID(SCSIDeviceIdentifier targetID, bool *result);
 ```
 
-#### Return Value
+## Return Value
 
 A value that indicates the result of checking for the target’s existence. [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) indicates success. For error definitions, see [IOKit Constants](../../iokit/iokit_constants.md).
 
-#### Discussion
+## Discussion
 
 Your driver extension can call this method to determine if a target ID is actually present.
 

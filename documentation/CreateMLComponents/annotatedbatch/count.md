@@ -21,7 +21,7 @@ The number of examples in the batch.
 var count: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 This is the first dimension of both features and annotations.
 

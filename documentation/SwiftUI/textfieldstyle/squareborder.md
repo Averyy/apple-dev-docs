@@ -20,7 +20,7 @@ static var squareBorder: SquareBorderTextFieldStyle { get }
 
 Available when `Self` is `SquareBorderTextFieldStyle`.
 
-#### Discussion
+## Discussion
 
 As of macOS 26, text fields no longer have a rectangular border.
 

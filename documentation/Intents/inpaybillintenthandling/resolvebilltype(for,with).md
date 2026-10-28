@@ -29,7 +29,7 @@ optional func resolveBillType(for intent: INPayBillIntent) async -> INBillTypeRe
 - (void) resolveBillTypeForPayBill:(INPayBillIntent *) intent withCompletion:(void (^)(INBillTypeResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to verify that the type of the bill matches one associated with the specified payee in the user’s account. Typically, you use the [`billType`](../inpaybillintent/billtype.md) and [`billPayee`](../insearchforbillsintent/billpayee.md) properties of the intent to identify where to apply any payments. When the user can pay multiple bills from the same payee, use the bill type to determine where to apply the payment. For example, if the user has a car loan and mortgage with the same payee, use the bill type to determine which loan receives the payment. Return a successful resolution if the user’s account contains a bill of the specified type. If the payee has only one bill type and that bill type isn’t the same one specified in the intent, you might return a resolution with the bill type you expected and ask the user for confirmation. If the payee and bill type don’t correlate at all to each other, you might ask the user to disambiguate from a set of possible options.
 

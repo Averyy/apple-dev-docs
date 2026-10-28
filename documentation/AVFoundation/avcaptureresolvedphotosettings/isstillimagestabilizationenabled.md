@@ -24,7 +24,7 @@ var isStillImageStabilizationEnabled: Bool { get }
 @property (readonly, getter=isStillImageStabilizationEnabled) BOOL stillImageStabilizationEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 This property corresponds to the [`AVCapturePhotoSettings`](../avcapturephotosettings.md) property [`isAutoStillImageStabilizationEnabled`](../avcapturephotosettings/isautostillimagestabilizationenabled.md).
 

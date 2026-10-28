@@ -15,11 +15,11 @@ The block signature for a routine that adds a trace range.
 typedef struct PGTraceRange_s *(^)(struct PGPhysicalMemoryRange_s *, void (^)(struct PGPhysicalMemoryRange_s *)) PGAddTraceRange;
 ```
 
-#### Return Value
+## Return Value
 
 A [`PGTraceRange_t`](./pgtracerange_t.md) pointer, or `NULL` if an error occurred.
 
-#### Discussion
+## Discussion
 
 The framework uses traces to provide a low-overhead framebuffer implementation that the virtual graphics device uses before the guest OS loads the driver.
 

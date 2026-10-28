@@ -12,7 +12,7 @@ Asserts that an expression is not `nil`.
 #define XCTAssertNotNil(expression, ...)
 ```
 
-#### Discussion
+## Discussion
 
 This function generates a failure when `expression == nil`.
 

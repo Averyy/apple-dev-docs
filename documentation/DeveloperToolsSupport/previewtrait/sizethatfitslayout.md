@@ -24,7 +24,7 @@ static var sizeThatFitsLayout: PreviewTrait<Preview.ViewTraits> { get }
 
 Available when `T` is `Preview.ViewTraits`.
 
-#### Discussion
+## Discussion
 
 This is the same as [`PreviewLayout.sizeThatFits`](../previewlayout/sizethatfits.md).
 

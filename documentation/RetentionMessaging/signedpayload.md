@@ -19,7 +19,7 @@ string signedPayload
 
 - [Responding to real-time retention messaging requests](./responding-to-realtime-retention-messaging-requests.md)
 
-#### Discussion
+## Discussion
 
 The signed payload is a property of [`RealtimeRequestBody`](./realtimerequestbody.md). The App Store server sends this request to your `Get Retention Message` endpoint.
 

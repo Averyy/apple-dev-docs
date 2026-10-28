@@ -16,7 +16,7 @@
 static OSSerializationPtr createFromObject(OSObjectPtr const object);
 ```
 
-#### Discussion
+## Discussion
 
 Similar to the above variant, except assuming copyOutHandler to be NULL.
 

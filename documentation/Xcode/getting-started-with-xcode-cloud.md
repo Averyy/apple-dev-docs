@@ -5,7 +5,7 @@
 
 Use Xcode Cloud to build and test your app in the cloud during development.
 
-#### Overview
+## Overview
 
 Xcode Cloud is a continuous integration and delivery (CI/CD) system built into Xcode to create apps and frameworks for Apple platforms.
 
@@ -22,7 +22,7 @@ After adding your project to Xcode Cloud, you can customize your configuration a
 
 Later, to start collecting feedback from people on your beta builds, see [Distributing your Xcode Cloud builds through TestFlight](./distributing-your-xcode-cloud-builds-through-testflight.md).
 
-#### Before you begin
+## Before you begin
 
 Before you start using Xcode Cloud, you need to:
 
@@ -34,7 +34,7 @@ Before you start using Xcode Cloud, you need to:
 
 For information on the Apple Developer Program, see [Become a member](https://developer.apple.com/programs/enroll/).
 
-#### Configure Xcode Cloud for your project
+## Configure Xcode Cloud for your project
 
 To use Xcode Cloud with your project:
 
@@ -46,7 +46,7 @@ To use Xcode Cloud with your project:
 
 > **Note**: If you don’t have a remote repository, Xcode offers to create one for you.
 
-#### Select a product in your project
+## Select a product in your project
 
 In the Select Product sheet that appears, find your app or framework:
 
@@ -56,7 +56,7 @@ In the Select Product sheet that appears, find your app or framework:
 
 ![A screenshot of the Select Product sheet showing an app to select and the Next button in the lower-right corner.](https://developer.apple.com/tutorials/images/com.apple.Xcode/xcode-cloud-add-your-app@2x.png)
 
-#### Connect your source code repository
+## Connect your source code repository
 
 In the Connect Source Code Repository sheet, click Connect next to your repository to grant Xcode Cloud access.
 
@@ -67,7 +67,7 @@ In the Connect Source Code Repository sheet, click Connect next to your reposito
 
 > **Note**: Xcode Cloud only fetches your code when it starts builds on ephemeral virtual machines. After the builds complete, Xcode Cloud deletes your files and never stores your code.
 
-#### Review the workflow and start your first build
+## Review the workflow and start your first build
 
 In the Setup Complete sheet, Xcode shows you a default workflow that:
 
@@ -83,7 +83,7 @@ To begin using Xcode Cloud, click Start First Build.
 
 > **Note**: Xcode stores metadata about the product in the `xcshareddata/xcodecloud/manifest.json` file in your project bundle. Push changes to this file to your remote repository so your team has access to the product in Xcode.
 
-#### View the progress of your build
+## View the progress of your build
 
 In the Report navigator, you can watch the build run. In the Cloud pane, expand the product and click the workflow. Xcode shows the workflow details on the right.
 
@@ -91,7 +91,7 @@ In the Report navigator, you can watch the build run. In the Cloud pane, expand 
 
 If you encounter build issues, see [Resolving common configuration and build issues](./resolving-common-configuration-and-build-issues.md).
 
-#### Build another target in the same workspace
+## Build another target in the same workspace
 
 In the Cloud pane of the Report navigator, choose Create Workflow from the More pop-up menu in the lower-left corner of the navigator (Integrate > Create Workflow). In the Select Product sheet, choose the target and click Next. In the Setup Complete sheet, choose the target branch from the Branch pop-up menu and click Start First Build. Xcode adds a workflow to build the target to the Cloud pane.
 

@@ -15,7 +15,7 @@ An AppKit menu with menu items that are defined by a SwiftUI View.
 class NSHostingMenu<Content> where Content : View
 ```
 
-#### Overview
+## Overview
 
 Because `NSHostingMenu` is an `NSMenu` subclass, you can integrate it into your existing AppKit view hierarchies that display menus. For example, you can set a hosting menu as an AppKit view’s context menu.
 

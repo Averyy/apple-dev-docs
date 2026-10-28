@@ -25,7 +25,7 @@ static let dng: AVFileType
 extern AVFileType const AVFileTypeDNG;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this UTI is `com.adobe.raw-image`. Files of this type have a `.dng` extension.
 

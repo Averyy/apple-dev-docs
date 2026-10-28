@@ -25,7 +25,7 @@ func fileHFSTypeCode() -> OSType
 - (OSType) fileHFSTypeCode;
 ```
 
-#### Return Value
+## Return Value
 
 The value associated with the [`hfsTypeCode`](../fileattributekey/hfstypecode.md) file attributes key, or `0` if the file attributes dictionary has no entry for the key.
 

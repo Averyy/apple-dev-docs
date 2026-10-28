@@ -25,7 +25,7 @@ func endSession()
 - (void) endSession;
 ```
 
-#### Discussion
+## Discussion
 
 Calls to this method should balance calls to [`beginSession(reply:)`](./beginsession%28reply%29.md).
 

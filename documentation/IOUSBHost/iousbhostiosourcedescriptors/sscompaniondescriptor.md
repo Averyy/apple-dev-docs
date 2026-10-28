@@ -20,7 +20,7 @@ var ssCompanionDescriptor: IOUSBSuperSpeedEndpointCompanionDescriptor
 IOUSBSuperSpeedEndpointCompanionDescriptor ssCompanionDescriptor;
 ```
 
-#### Discussion
+## Discussion
 
 This descriptor may be necessary for `bcdUSB` versions 0x0300 and greater, depending on device operating speed and values set in the descriptors. See USB 3.2, 9.5 for more information.
 

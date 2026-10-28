@@ -26,7 +26,7 @@ func removeRoom(_ room: HMRoom) async throws
 - (void) removeRoom:(HMRoom *) room completionHandler:(void (^)(NSError *error)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 If the room is in a zone, this method also removes it from the zone. Any accessories in the removed room automatically move to [`roomForEntireHome()`](./roomforentirehome%28%29.md).
 

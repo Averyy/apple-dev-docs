@@ -19,7 +19,7 @@ var tighteningFactorForTruncation: Float { get }
 @property (readonly) float tighteningFactorForTruncation;
 ```
 
-#### Discussion
+## Discussion
 
 When the line break mode specifies truncation, the text system attempts to tighten character spacing as an alternative to truncation. Provided that the ratio of the text width to the line fragment width doesn’t exceed `1.0` + the system sets the tightening factor to this property. Otherwise, the system truncates the text at a location determined by the line break mode.
 

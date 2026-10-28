@@ -20,11 +20,11 @@ Creates an object whose resolution requires that the user must confirm the value
 + (instancetype) confirmationRequiredWithValueToConfirm:(NSInteger) valueToConfirm;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INEnumResolutionResult`](../inenumresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method when you can resolve the parameter to the specified object but you want the user to confirm that value.
 

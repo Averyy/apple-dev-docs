@@ -23,11 +23,11 @@ func withUnsafeBytes<E, Result>(_ body: (UnsafeRawBufferPointer) throws(E) -> Re
 
 Available when `Element` conforms to `BitwiseCopyable`.
 
-#### Return Value
+## Return Value
 
 The return value of the `body` closure parameter.
 
-#### Discussion
+## Discussion
 
 The buffer pointer passed as an argument to `body` is valid only during the execution of `withUnsafeBytes(_:)`. Do not store or return the pointer for later use.
 

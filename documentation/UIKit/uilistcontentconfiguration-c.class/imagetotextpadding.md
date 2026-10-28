@@ -19,7 +19,7 @@ The padding between the image and text.
 @property (nonatomic) CGFloat imageToTextPadding;
 ```
 
-#### Discussion
+## Discussion
 
 This value only applies when there’s both an image and text.
 

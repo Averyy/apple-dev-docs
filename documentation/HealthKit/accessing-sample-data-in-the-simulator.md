@@ -5,7 +5,7 @@
 
 Set up sample accounts to build and test your app.
 
-#### Overview
+## Overview
 
 You cannot create your own [`HKClinicalRecord`](./hkclinicalrecord.md) samples. When you need sample data to build or test your app, you must either download real data from a supported healthcare institution, or access existing sample data.  Xcode provides three sample accounts in the simulator that you can use to build and test your app.
 
@@ -14,7 +14,7 @@ There are two steps to using the sample data:
 - Add a sample account to provide the initial data for building and testing your app.
 - Simulate updates by adding additional accounts.
 
-##### Add Sample Accounts
+### Add Sample Accounts
 
 To access the sample accounts, open the Health app on the simulator, and navigate to Health Data > Health Records.
 
@@ -36,7 +36,7 @@ Click on the account to view the data. You can browse all the clinical records a
 
 ![A screenshot of the sample data downloaded from the account.](https://developer.apple.com/tutorials/images/com.apple.healthkit/media-3040228@2x.png)
 
-##### Simulate Updates
+### Simulate Updates
 
 When the user authorizes access to clinical records, they also select how the app handles new data: whether the app automatically receives the data or needs to ask for permission first. Your testing should cover both cases. For example, to test these cases manually, run your app in the simulator and enable permission to automatically receive updates. Then select Hardware > Erase All Contents and Settings, and run the app again. For this test, require your app to ask for permission to download updates.
 

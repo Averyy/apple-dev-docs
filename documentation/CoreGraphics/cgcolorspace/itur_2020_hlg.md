@@ -27,7 +27,7 @@ class let itur_2020_HLG: CFString
 extern CFStringRef const kCGColorSpaceITUR_2020_HLG;
 ```
 
-#### Discussion
+## Discussion
 
 This color space has the same colorimetry as [`itur_2020`](./itur_2020.md), but uses the Hybrid Log-Gamma (HLG) transfer function. Pixel values should be between `0.0` and `12.0`. See the current active version of the BT.2100 recommendation on the ITU website ([https://www.itu.int/](https://www.itu.int/)).
 

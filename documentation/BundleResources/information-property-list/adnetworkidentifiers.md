@@ -15,7 +15,7 @@ An array of strings that identifies the ad networks a publisher app shows advert
 - **Name**: `AdNetworkIdentifiers` (AdAttributionKit - Ad Network Identifiers)
 - **Type**: array of string 
 
-#### Discussion
+## Discussion
 
 Use this key to identify which ad networks the publisher app shows advertisements for. For more information, see [Configuring a publisher app](../../AdAttributionKit/configuring-a-publisher-app.md).
 

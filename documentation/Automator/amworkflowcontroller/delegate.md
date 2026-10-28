@@ -20,11 +20,11 @@ weak var delegate: (any AMWorkflowControllerDelegate)? { get set }
 @property (nonatomic, weak, nullable) id<AMWorkflowControllerDelegate> delegate;
 ```
 
-#### Return Value
+## Return Value
 
 The controller’s delegate.
 
-#### Discussion
+## Discussion
 
 This object receives updates on the progress and state of the workflow controller.
 

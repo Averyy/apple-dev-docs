@@ -21,7 +21,7 @@ Indicates a temporal sublayer access grouping.
 var hevcTemporalSubLayerAccess: Bool { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Corresponds to ‘tsas’ sample group.
 

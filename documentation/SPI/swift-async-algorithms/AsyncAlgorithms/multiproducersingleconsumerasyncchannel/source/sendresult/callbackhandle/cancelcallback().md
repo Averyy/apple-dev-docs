@@ -24,7 +24,7 @@ Cancel an enqueued callback.
 mutating func cancelCallback()
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: This methods supports being called before [`enqueueCallback(onProduceMore:)`](./enqueuecallback%28onproducemore%29.md) is called.
 

@@ -15,11 +15,11 @@ Creates the specified target.
 virtual kern_return_t UserCreateTargetForID(SCSIDeviceIdentifier targetID, OSDictionary *targetDict);
 ```
 
-#### Return Value
+## Return Value
 
 A value that indicates the result of target creation. [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) indicates success. For error definitions, see [IOKit Constants](../../iokit/iokit_constants.md).
 
-#### Discussion
+## Discussion
 
 Your driver extension class calls this method to create a new target for the `targetID`. The framework creates the new target before the call returns.
 

@@ -20,7 +20,7 @@ typealias SecTransformDataBlock = (CFTypeRef) -> Unmanaged<CFTypeRef>?
 typedef const void *(^)(const void *) SecTransformDataBlock;
 ```
 
-#### Return Value
+## Return Value
 
 `NULL` for the [`kSecTransformActionInternalizeExtraData`](./ksectransformactioninternalizeextradata.md) action, the data to be passed to the output attribute for any other action, or a [`CFError`](../CoreFoundation/cferror.md) instance on failure.
 

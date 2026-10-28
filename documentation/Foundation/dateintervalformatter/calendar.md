@@ -25,7 +25,7 @@ var calendar: Calendar! { get set }
 @property (copy, null_resettable) NSCalendar * calendar;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is the calendar associated with the current [`locale`](./locale.md) object. You can change this value to use a different calendar for interpreting dates.
 

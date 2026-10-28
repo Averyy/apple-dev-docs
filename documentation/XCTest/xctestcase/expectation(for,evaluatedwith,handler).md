@@ -16,7 +16,7 @@ func expectation(for predicate: NSPredicate, evaluatedWith object: Any?, handler
 - (XCTestExpectation *) expectationForPredicate:(NSPredicate *) predicate evaluatedWithObject:(id) object handler:(XCPredicateExpectationHandler) handler;
 ```
 
-#### Discussion
+## Discussion
 
 The expectation periodically evaluates the predicate and also may use notifications or other events to optimistically re-evaluate. The test fulfills the expectation when the predicate evaluates to [`true`](../../Swift/true.md).
 

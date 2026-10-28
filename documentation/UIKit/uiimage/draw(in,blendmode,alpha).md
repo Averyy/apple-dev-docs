@@ -24,7 +24,7 @@ func draw(in rect: CGRect, blendMode: CGBlendMode, alpha: CGFloat)
 - (void) drawInRect:(CGRect) rect blendMode:(CGBlendMode) blendMode alpha:(CGFloat) alpha;
 ```
 
-#### Discussion
+## Discussion
 
 This method scales the image as needed to make it fit in the specified rectangle. This method draws the image in the current graphics context, respecting the image’s orientation setting. In the default coordinate system, images are situated down and to the right of the origin of the specified rectangle. This method respects any transforms applied to the current graphics context, however.
 

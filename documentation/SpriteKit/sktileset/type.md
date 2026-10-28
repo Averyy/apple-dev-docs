@@ -25,7 +25,7 @@ var type: SKTileSetType { get set }
 @property (nonatomic) SKTileSetType type;
 ```
 
-#### Discussion
+## Discussion
 
 The tile set’s type specifies how the tiles in the set will be arranged when placed in a tile map.
 

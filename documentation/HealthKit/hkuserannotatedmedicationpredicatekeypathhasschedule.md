@@ -24,7 +24,7 @@ let HKUserAnnotatedMedicationPredicateKeyPathHasSchedule: String
 extern NSString * const HKUserAnnotatedMedicationPredicateKeyPathHasSchedule;
 ```
 
-#### Discussion
+## Discussion
 
 Use to predicate against the [`hasSchedule`](./hkuserannotatedmedication/hasschedule.md) property of a medication.
 

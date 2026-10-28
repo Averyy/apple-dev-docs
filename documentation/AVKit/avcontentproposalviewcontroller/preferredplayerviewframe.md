@@ -23,7 +23,7 @@ var preferredPlayerViewFrame: CGRect { get }
 
 - [Presenting content proposals in tvOS](../presenting-content-proposals-in-tvos.md)
 
-#### Discussion
+## Discussion
 
 This value defaults to a rectangle that represents the entire screen bounds, but custom view controllers may return a smaller rectangle, or [`zero`](../../CoreFoundation/cgrect/zero.md) to hide the player view completely. If you return a rectangle smaller that the full-screen bounds, the player view animates its frame to its new size and position.
 

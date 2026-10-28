@@ -15,7 +15,7 @@ A response that contains a list of Game Center leaderboard set v2 version linkag
 object GameCenterLeaderboardSetV2VersionsLinkagesResponse
 ```
 
-#### Overview
+## Overview
 
 - data:
 - links:

@@ -5,7 +5,7 @@
 
 Enumerate the words in a string.
 
-#### Overview
+## Overview
 
 When you work with natural language text, it’s often useful to tokenize the text into individual words. Using [`NSLinguisticTagger`](./nslinguistictagger.md) to enumerate words, rather than simply splitting components by whitespace, ensures correct behavior in multiple scripts and languages. For example, neither Chinese nor Japanese uses spaces to delimit words.
 

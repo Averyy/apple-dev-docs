@@ -23,7 +23,7 @@ Adds a new log message using an optional log object and log level.
 func os_log(_ logLevel: OSLogType = .default, log logObject: OSLog = .default, _ message: OSLogMessage)
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to capture information at any log level.
 

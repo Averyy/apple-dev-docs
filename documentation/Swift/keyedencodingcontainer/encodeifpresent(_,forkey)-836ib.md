@@ -21,7 +21,7 @@ Encodes the given value for the given key if it is not `nil`.
 mutating func encodeIfPresent(_ value: Int128?, forKey key: Self.Key) throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: `EncodingError.invalidValue` if the given value is invalid in the current context for this format.
 

@@ -16,7 +16,7 @@ Defines a reference to an opaque Unicode to text run information converter objec
 typedef struct OpaqueUnicodeToTextRunInfo *UnicodeToTextRunInfo;
 ```
 
-#### Discussion
+## Discussion
 
 Many of the Unicode Converter functions that perform conversions require a Unicode converter object containing information used for the conversion process. There are three types of Unicode converter objects used for different types of conversions. You use the `UnicodeToTextRunInfo` type, described here, for converting from Unicode to multiple encodings.
 

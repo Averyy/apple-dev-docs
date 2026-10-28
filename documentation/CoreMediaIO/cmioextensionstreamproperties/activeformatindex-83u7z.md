@@ -18,7 +18,7 @@ The index of the active format.
 var activeFormatIndex: Int? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 This value represents the index of the active format in the source’s [`formats`](../cmioextensionstreamsource/formats.md) array.
 

@@ -20,7 +20,7 @@ Adds a condition that controls whether users can select this row.
 @preconcurrency func selectionDisabled(_ isDisabled: Bool = true) -> some TableRowContent<Self.TableRowValue>
 ```
 
-#### Discussion
+## Discussion
 
 Use this modifier to control the selectability of views in selectable containers like [`List`](../list.md) or [`Table`](../table.md). In the example, below, the user can’t select the first item in the table.
 

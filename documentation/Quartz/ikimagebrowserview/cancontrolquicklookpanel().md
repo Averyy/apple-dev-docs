@@ -19,7 +19,7 @@ func canControlQuickLookPanel() -> Bool
 - (BOOL) canControlQuickLookPanel;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md), if the view can display the Quick Look panel, otherwise [`false`](../../Swift/false.md).
 

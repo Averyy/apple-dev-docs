@@ -21,7 +21,7 @@ func beginSheetModal(for window: NSWindow, modalDelegate delegate: Any?, didEnd 
 - (void) beginSheetModalForWindow:(NSWindow *) window modalDelegate:(id) delegate didEndSelector:(SEL) didEndSelector contextInfo:(void *) contextInfo;
 ```
 
-#### Discussion
+## Discussion
 
 You can create the required `NSAlert` object either through the standard allocate-initialize procedure or by using the compatibility method [`alertWithMessageText:defaultButton:alternateButton:otherButton:informativeTextWithFormat:`](./alertwithmessagetext_defaultbutton_alternatebutton_otherbutton_informativetextwithformat_.md).
 
@@ -35,7 +35,7 @@ where `alert` is the `NSAlert` object, `returnCode` specifies which button the u
 
 If you want to dismiss the sheet from within the `alertDidEndSelector` method before the modal delegate carries out an action in response to the return value, send [`orderOut(_:)`](../nswindow/orderout%28_%29.md) ([`NSWindow`](../nswindow.md)) to the window object obtained by sending [`window`](./window.md) to the `alert` argument. This allows you to chain sheets, for example, by dismissing one sheet before showing the next from within the `alertDidEndSelector` method. Note that you should be careful not to call [`orderOut(_:)`](../nswindow/orderout%28_%29.md) on the sheet from elsewhere in your program before the `alertDidEndSelector` method is invoked because the parent window can hang when another alert is requested. If you need to do this, use the `NSApplication` method [`endSheet(_:)`](../nsapplication/endsheet%28_%29.md).
 
-##### Special Considerations
+### Special Considerations
 
 If you use [`alertWithMessageText:defaultButton:alternateButton:otherButton:informativeTextWithFormat:`](./alertwithmessagetext_defaultbutton_alternatebutton_otherbutton_informativetextwithformat_.md) to create an alert, the following constants are used to identify the button used to dismiss the alert: `NSAlertDefaultReturn`, `NSAlertAlternateReturn`, and `NSAlertOtherReturn`. Otherwise, the constants used are the ones described in `Button Return Values`.
 

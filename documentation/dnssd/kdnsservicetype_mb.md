@@ -23,7 +23,7 @@ var kDNSServiceType_MB: Int { get }
 kDNSServiceType_MB
 ```
 
-#### Discussion
+## Discussion
 
 Mailbox domain name.
 

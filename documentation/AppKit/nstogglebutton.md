@@ -17,7 +17,7 @@ After the first click, the button displays its alternate image or title (on stat
 static const NSButtonType NSToggleButton;
 ```
 
-#### Discussion
+## Discussion
 
 This option is called Toggle in Interface Builder’s Button inspector.
 

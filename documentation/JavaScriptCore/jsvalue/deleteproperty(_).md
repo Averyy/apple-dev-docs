@@ -32,11 +32,11 @@ func deleteProperty(_ property: String!) -> Bool
 - (BOOL) deleteProperty:(JSValueProperty) property;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if property deletion was successful; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Calling this method is equivalent to using the JavaScript `delete` operator on an object (for example, `delete object.property`). After deletion, attempting to retrieve the property’s value results in the undefined value, and any descriptor information that defines the property’s behavior (see the [`defineProperty(_:descriptor:)`](./defineproperty%28_,descriptor%29.md) method or the JavaScript `defineProperty` function) is lost.
 

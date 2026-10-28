@@ -17,7 +17,7 @@ Evaluate one or more `MLXArray` asynchronously.
 func asyncEval(_ values: Any...)
 ```
 
-#### Discussion
+## Discussion
 
 This variant allows several structured types:
 
@@ -35,7 +35,7 @@ asyncEval(a, b, c, d, e, f)
 
 Other structured types may be supported – check the implementation.
 
-##### See Also
+### See Also
 
 - [Lazy Evaluation](./lazy-evaluation.md)
 

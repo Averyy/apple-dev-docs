@@ -13,7 +13,7 @@ Create a command plugin to provide commands that extend the package manager.
 **Availability**:
 - Swift 5.6+
 
-#### Overview
+## Overview
 
 The first step when writing a package plugin is to decide what kind of plugin you need.
 
@@ -31,7 +31,7 @@ The command’s intent declaration provides a way of grouping command plugins by
 
 A plugin is available to the package that defines it, and if there is a corresponding plugin product, it is also available to any other package that has a direct dependency on the package.
 
-##### Declaring a command plugin in the package manifest
+### Declaring a command plugin in the package manifest
 
 The manifest of a package that declares a command plugin might look like:
 
@@ -73,7 +73,7 @@ let package = Package(
 
 In the above example, the plugin declares its purpose is source code formatting, and that it needs permission to modify files in the package directory. The package manager runs plugins in a sandbox that prevents network access and most file system access. Package manager allows additional permissions to allow network access or file system acess when you declare them after it receives approval from the user.
 
-##### Implementing the command plugin script
+### Implementing the command plugin script
 
 The source that implements command plugins should be located under the `Plugins` subdirectory in the package. Conform the entry point of the plugin to the `CommandPlugin` protocol:
 
@@ -146,17 +146,17 @@ Command plugins can accept arguments, which you use to control options for the p
 
 Plugins can only use standard system libraries, not those from other packages such as `SwiftArgumentParser`. Consequently, the plugin example uses the built-in `ArgumentExtractor` helper in the *PackagePlugin* module to extract the argument.
 
-##### Diagnostics
+### Diagnostics
 
 Plugin entry points are marked `throws`, and any errors thrown from the entry point causes the plugin invocation to be marked as having failed. The thrown error is presented to the user, and should include a clear description of what went wrong.
 
 Additionally, plugins can use the `Diagnostics` API in PackagePlugin to emit warnings and errors that optionally include references to file paths and line numbers in those files.
 
-##### Debugging and Testing
+### Debugging and Testing
 
 Package manager doesn’t currently have any specific support for debugging and testing plugins. Many plugins act as adapters that construct command lines for invoking the tools that do the real work. In the cases in which there is non-trivial code in a plugin, a good approach is to factor out that code into separate source files that can be included in unit tests using symbolic links with relative paths.
 
-##### Xcode Extensions to the PackagePlugin API
+### Xcode Extensions to the PackagePlugin API
 
 When you invoke a plugin in Apple’s Xcode IDE, the plugins has access to a library module provided by Xcode called *XcodeProjectPlugin*. This module extends the *PackagePlugin* APIs to let plugins work on Xcode targets in addition to packages.
 

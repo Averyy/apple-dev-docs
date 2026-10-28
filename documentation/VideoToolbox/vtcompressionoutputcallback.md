@@ -24,7 +24,7 @@ typealias VTCompressionOutputCallback = (UnsafeMutableRawPointer?, UnsafeMutable
 typedef void (*)(void *, void *, int, enum VTEncodeInfoFlags, struct opaqueCMSampleBuffer *) VTCompressionOutputCallback;
 ```
 
-#### Discussion
+## Discussion
 
 When you create a compression session, you pass in a callback function to be called for compressed frames.  This function is called in decode order (which is not necessarily the same as display order).
 

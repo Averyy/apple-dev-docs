@@ -24,7 +24,7 @@ let MKLaunchOptionsMapSpanKey: String
 extern NSString * const MKLaunchOptionsMapSpanKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key is an [`NSValue`](../Foundation/nsvalue.md) object that contains an encoded [`MKCoordinateSpan`](./mkcoordinatespan.md) structure.
 

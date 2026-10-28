@@ -25,7 +25,7 @@ func cblas_zher(_ ORDER: CBLAS_ORDER, _ UPLO: CBLAS_UPLO, _ N: __LAPACK_int, _ A
 void cblas_zher(const enum CBLAS_ORDER ORDER, const enum CBLAS_UPLO UPLO, const __LAPACK_int N, const double ALPHA, const __LAPACK_double_complex *X, const __LAPACK_int INCX, __LAPACK_double_complex *A, const __LAPACK_int LDA);
 ```
 
-#### Discussion
+## Discussion
 
 Computes `A←αX*conjg(X') + βA`.
 

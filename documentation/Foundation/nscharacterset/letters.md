@@ -25,11 +25,11 @@ class var letters: CharacterSet { get }
 @property (class, copy, readonly) NSCharacterSet * letterCharacterSet;
 ```
 
-#### Return Value
+## Return Value
 
 A character set containing all the letter characters.
 
-#### Discussion
+## Discussion
 
 Informally, this set is the set of all characters used as letters of alphabets and ideographs.
 

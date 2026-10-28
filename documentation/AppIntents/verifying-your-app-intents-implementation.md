@@ -5,7 +5,7 @@
 
 Confirm that your app intents work correctly, the system can understand your content, and that it can run your app’s actions.
 
-#### Overview
+## Overview
 
 To verify the behavior of your App Intents code and integrations with system experiences, perform the following tasks to test different aspects of your App Intents implementation:
 
@@ -23,7 +23,7 @@ The verification tasks above build on top of each other, and each step helps you
 
 > **Note**: On iPhone and iPad, Settings > Developer includes an option to display donations on the Lock Screen. This setting only applies to custom shortcuts you donate with [SiriKit](../SiriKit/SiriKit.md); it doesn’t apply to intents or entities you donate using App Intents.
 
-#### Write integration tests with App Intents Testing
+## Write integration tests with App Intents Testing
 
 Create integration tests for your app intents code with the [App Intents Testing](../AppIntentsTesting/AppIntentsTesting.md) framework. App Intents Testing performs your code out-of-process, the same way Siri or Shortcuts perform them. As a result, it helps you verify the actual behavior of your app intents logic. To write tests for your app intents code:
 
@@ -34,7 +34,7 @@ Your App Intents code likely calls more general business logic like loading data
 
 For more information about using the App Intents Testing framework, see [Testing your App Intents code](../AppIntentsTesting/testing-your-app-intents-code.md).
 
-#### Verify intents, entities, and intent results with the Shortcuts app
+## Verify intents, entities, and intent results with the Shortcuts app
 
 App intents by themselves don’t have a direct visual representation, and system experiences display intent parameters and their results differently based on a person’s device or context.
 
@@ -61,7 +61,7 @@ To see a visual representation of your app intent in Shortcuts and use it to ver
 
 To debug issues when you run the intent in Shortcuts, set a breakpoint at the top of your `perform()` method before you run it. The debugger pauses execution immediately after you run the shortcut. Step through the code and, for example, inspect the intent’s parameters to verify they have the values they require.
 
-#### Confirm that entities and App Shortcuts appear in Spotlight
+## Confirm that entities and App Shortcuts appear in Spotlight
 
 To integrate your app with Apple Intelligence and Siri, donate your app entities to the Spotlight index and make them discoverable by the system. Then, manually test entity donations with Spotlight to verify that the system can find the data it needs to respond to a person’s request:
 
@@ -75,7 +75,7 @@ Additionally, Spotlight allows you to verify your App Shortcuts. Make sure the p
 
 For more information about making entities discoverable and integrating your app with Spotlight, see [Making app entities available in Spotlight](./making-app-entities-available-in-spotlight.md).
 
-#### Validate the end-to-end experience with Siri
+## Validate the end-to-end experience with Siri
 
 People can invoke actions using natural language with Apple Intelligence and Siri if you adopt app schemas for your intents, entities, and enums or provide App Shortcuts. To verify the integration with Apple Intelligence and Siri end-to-end, use Siri to test your app intents with phrases people actually say.
 

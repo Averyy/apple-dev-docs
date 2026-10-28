@@ -10,7 +10,7 @@ atapiConfig getPacketConfig(
  void );
 ```
 
-#### Return Value
+## Return Value
 
 atapiConfig as defined in IOATATypes.h
 

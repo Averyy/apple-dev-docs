@@ -14,11 +14,11 @@ virtual bool isParent(
  bool onlyParent = false ) const;
 ```
 
-#### Return Value
+## Return Value
 
 If the parent argument is not a parent of the registry entry, false is returned. If onlyParent is true and the parent is not the only parent of the entry, false is returned, otherwise true is returned.
 
-#### Overview
+## Overview
 
 This method called in the child entry determines if the specified entry is a parent, in a plane. Additionally, it can check if the parent is the only parent of the child entry.
 

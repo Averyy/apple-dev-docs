@@ -5,7 +5,7 @@
 
 Analyze your app’s install data by date, install type, channel, device, platform version, and territory.
 
-#### Overview
+## Overview
 
 The Platform App Installs report includes install data from the App Store, TestFlight, and alternative distribution channels. Using the data in this report, you can measure the number of times your app was installed on devices running iOS and iPadOS.
 
@@ -17,7 +17,7 @@ The Platform App Installs report includes install data from the App Store, TestF
 - History: On request, data is available beginning on March 5, 2024.
 - Completeness: Same day.
 
-#### Report Fields
+## Report Fields
 
 | Report Field | Description | Data Type |
 | --- | --- | --- |
@@ -31,7 +31,7 @@ The Platform App Installs report includes install data from the App Store, TestF
 | Territory | The App Store country or region in which the install occurred. | `string` |
 | Installs | The total number of installs. | `integer` |
 
-#### Glossary
+## Glossary
 
 | Dimension | Value | Definition |
 | --- | --- | --- |

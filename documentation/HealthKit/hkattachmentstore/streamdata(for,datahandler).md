@@ -24,7 +24,7 @@ func streamData(for attachment: HKAttachment, dataHandler: @escaping (Data?, (an
 - (NSProgress *) streamDataForAttachment:(HKAttachment *) attachment dataHandler:(void (^)(NSData *dataChunk, NSError *error, BOOL done)) dataHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method to incrementally read the attachment’s contents directly from the attachment store.
 

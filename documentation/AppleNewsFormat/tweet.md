@@ -15,11 +15,11 @@ The component for adding a Tweet that was posted to Twitter.
 object Tweet
 ```
 
-#### Discussion
+## Discussion
 
 Use the `Tweet` object to include a Tweet from Twitter by specifying a URL for the tweet.
 
-##### Example
+### Example
 
 ```json
 {

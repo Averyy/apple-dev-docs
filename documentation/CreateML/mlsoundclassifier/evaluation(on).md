@@ -25,7 +25,7 @@ func evaluation(on testingData: MLSoundClassifier.DataSource) -> MLClassifierMet
 func evaluation(on testingData: [String : [URL]]) -> MLClassifierMetrics
 ```
 
-#### Return Value
+## Return Value
 
 An [`MLClassifierMetrics`](../mlclassifiermetrics.md) instance that contains the evaluation results.
 

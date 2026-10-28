@@ -29,7 +29,7 @@ protocol UITraitEnvironment : NSObjectProtocol
 - [Checking the availability of 3D Touch](./checking-the-availability-of-3d-touch.md)
 - [Providing data to the view hierarchy with custom traits](./providing-data-to-the-view-hierarchy-with-custom-traits.md)
 
-#### Overview
+## Overview
 
 The system represents the iOS interface environment with *traits*, such as horizontal and vertical size class, display scale, and user interface idiom. You access the trait environment of an object that adopts this protocol with the [`traitCollection`](./uitraitenvironment/traitcollection.md) property.
 

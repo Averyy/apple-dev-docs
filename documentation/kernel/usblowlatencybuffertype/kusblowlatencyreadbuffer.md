@@ -15,7 +15,7 @@ A low-latency read buffer.
 kUSBLowLatencyReadBuffer = 1
 ```
 
-#### Discussion
+## Discussion
 
 The buffer reads data from a device.
 

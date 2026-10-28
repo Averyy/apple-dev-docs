@@ -6,7 +6,7 @@
 
 Text (not a C string or a pascal string) that indicates the MIME type of the movie import component that should be used to instantiate this media.
 
-#### Overview
+## Overview
 
 This is useful in cases where the data reference may not contain MIME type information. If this atom is not present, the MIME type of the data reference as determined at instantiation time is used. This atom is intended to allow content creators a method for working around MIME type binding problems. It should not typically be required, and should not be included in movie media samples by default.
 

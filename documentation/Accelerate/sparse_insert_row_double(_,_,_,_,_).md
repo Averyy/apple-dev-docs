@@ -25,11 +25,11 @@ func sparse_insert_row_double(_ A: sparse_matrix_double!, _ i: sparse_index, _ n
 sparse_status sparse_insert_row_double(sparse_matrix_double A, sparse_index i, sparse_dimension nz, const double * restrictval, const sparse_index * restrictjndx);
 ```
 
-#### Return Value
+## Return Value
 
 On successful insertion, `A` has been updated with the value and [`SPARSE_SUCCESS`](./sparse_success.md) is returned.  If `A` creation requirements are not met, [`SPARSE_ILLEGAL_PARAMETER`](./sparse_illegal_parameter.md) is returned and `A` is unchanged.
 
-#### Discussion
+## Discussion
 
 Use to build a sparse matrix by providing a list of point entries for a single column.  For each entry provided, update `A[``i,jndx[i]``] = val[i]`.  This will not replace the existing contents of the column, it appends new values and overwrites overlapping values.
 

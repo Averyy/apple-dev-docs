@@ -23,7 +23,7 @@ class func runAnimationGroup(_ changes: (NSAnimationContext) -> Void) async
 + (void) runAnimationGroup:(void (^)(NSAnimationContext *context)) changes completionHandler:(void (^)()) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Using this method allows you to more naturally group animations and an completion Block.
 

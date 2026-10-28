@@ -16,7 +16,7 @@ An opaque type that identifies a remote device displaying scene content in a [`R
 struct RemoteDeviceIdentifier
 ```
 
-#### Overview
+## Overview
 
 Access this from the [`remoteDeviceIdentifier`](./environmentvalues/remotedeviceidentifier.md) environment property in a remote scene to get the identifier for that scene’s device.
 

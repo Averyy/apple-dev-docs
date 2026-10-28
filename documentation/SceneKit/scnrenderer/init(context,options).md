@@ -41,11 +41,11 @@ convenience init(context: CGLContextObj?, options: [AnyHashable : Any]? = nil)
 + (instancetype) rendererWithContext:(CGLContextObj) context options:(NSDictionary *) options;
 ```
 
-#### Return Value
+## Return Value
 
 A new renderer object.
 
-#### Discussion
+## Discussion
 
 Use this initializer to create a SceneKit renderer that draws into OpenGL context your app already uses to draw other content. To tell SceneKit to render your content, call the [`SCNRenderer`](../scnrenderer.md) or [`SCNRenderer`](../scnrenderer.md) method.
 

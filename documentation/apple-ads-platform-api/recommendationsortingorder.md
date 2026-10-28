@@ -24,7 +24,7 @@ string RecommendationSortingOrder
 
 **Default**: `ASC`
 
-#### Discussion
+## Discussion
 
 To control sort direction, specify `order` on a [`Sorting`](./recommendationsorting.md) entry.
 

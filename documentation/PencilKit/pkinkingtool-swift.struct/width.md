@@ -19,7 +19,7 @@ The width of the ink.
 var width: CGFloat { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The actual line width at any given point varies based on input from Apple Pencil. For finger-based drawing, the line width is equal to the value in this property.
 

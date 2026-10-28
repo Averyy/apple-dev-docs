@@ -19,7 +19,7 @@ class TVTopShelfContentProvider
 @interface TVTopShelfContentProvider : NSObject
 ```
 
-#### Overview
+## Overview
 
 Adopt this protocol in the principal class of your Top Shelf app extension. Use its methods to create the items that you want to display in the top shelf interface. For each item, specify additional resources such as the image or video to display.
 

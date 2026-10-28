@@ -23,7 +23,7 @@ var preferredInput: AVAudioSessionPortDescription? { get }
 @property (readonly, nullable) AVAudioSessionPortDescription * preferredInput;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property indicates the input port selected using the [`setPreferredInput(_:)`](./setpreferredinput%28_%29.md) method. To see the actual current input port, use the [`currentRoute`](./currentroute.md) property. This property returns [`nil`](../../ObjectiveC/nil-227m0.md) if you haven’t set a preference or if the previously set preferred input is no longer available.
 

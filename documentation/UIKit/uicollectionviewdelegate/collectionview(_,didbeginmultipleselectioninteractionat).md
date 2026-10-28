@@ -22,7 +22,7 @@ optional func collectionView(_ collectionView: UICollectionView, didBeginMultipl
 - (void) collectionView:(UICollectionView *) collectionView didBeginMultipleSelectionInteractionAtIndexPath:(NSIndexPath *) indexPath;
 ```
 
-#### Discussion
+## Discussion
 
 Your implementation of this method is a good place to indicate, in the app’s user interface, that the user is selecting multiple items; for example, you could replace an Edit or Select button with a Done button.
 

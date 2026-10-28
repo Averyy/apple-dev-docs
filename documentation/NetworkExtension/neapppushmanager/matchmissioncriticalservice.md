@@ -21,7 +21,7 @@ var matchMissionCriticalService: Bool { get set }
 @property BOOL matchMissionCriticalService;
 ```
 
-#### Discussion
+## Discussion
 
 Set this property to `true` (Swift) or `YES` (Obj-C) in your container app to use 3GPP Mission Critical Services (MCX). On supported cellular networks, this allows Push to Talk apps to meet the 3GPP MCX’s performance and latency standards by using the Mission Critical Service slice.
 

@@ -21,7 +21,7 @@ Size in bytes of the sample.
 var size: Int?
 ```
 
-#### Discussion
+## Discussion
 
 The size of the sample is only applicable for buffers carrying data blocks. For pixel buffers and tagged buffers, the size should be set to `nil`.
 

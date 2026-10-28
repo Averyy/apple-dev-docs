@@ -19,7 +19,7 @@ func draw(_ page: PDFPage)
 - (void) drawPage:(PDFPage *) page;
 ```
 
-#### Discussion
+## Discussion
 
 Do not invoke this method, except by invoking it on `super` from a subclass.
 

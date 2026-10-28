@@ -5,13 +5,13 @@
 
 Give users the ability to import and export documents from your app.
 
-#### Overview
+## Overview
 
 The document browser automatically exports the user’s documents when they tap the Share button or perform a drag-and-drop action.
 
 To import documents, your app must specify all the document types that it supports. You typically specify supported document types when you set up your document browser. For additional information, see [Set the supported document types](./setting-up-a-document-browser-app.md#Set-the-supported-document-types).
 
-##### Open a shared document
+### Open a shared document
 
 If the user selects your app from the activity view, the system launches your app and calls your app delegate’s [`application(_:open:options:)`](./uiapplicationdelegate/application%28_,open,options%29.md) method. Implement this method to call your document browser’s [`revealDocument(at:importIfNeeded:completion:)`](./uidocumentbrowserviewcontroller/revealdocument%28at,importifneeded,completion%29.md) method to reveal and import the document, as shown in this example:
 

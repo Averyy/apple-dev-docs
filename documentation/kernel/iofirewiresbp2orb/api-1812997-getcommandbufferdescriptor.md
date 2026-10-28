@@ -12,11 +12,11 @@ virtual IOMemoryDescriptor * getCommandBufferDescriptor(
  void );
 ```
 
-#### Return Value
+## Return Value
 
 Returns memory descriptor representing mapped data buffers.
 
-#### Overview
+## Overview
 
 Returns the IOMemoryDescriptor for the data mapped by setCommandBuffer variants. Works for setCommandBuffersAsRanges too.
 

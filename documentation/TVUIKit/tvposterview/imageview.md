@@ -19,7 +19,7 @@ var imageView: UIImageView { get }
 @property (nonatomic, strong, readonly) UIImageView * imageView;
 ```
 
-#### Discussion
+## Discussion
 
 Use the image view to add additional information, such as overlays or badges, to the main content image. Don’t set an image directly on the image view. Always use the poster view’s [`image`](./image.md) property.
 

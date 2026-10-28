@@ -15,7 +15,7 @@ Indicates the selection behaviors selected a people-picker window. Use [`ABPicke
 extern ABPickerAttributes ABPickerGetAttributes(ABPickerRef inPicker);
 ```
 
-#### Return Value
+## Return Value
 
 An OptionBits object with the selection behaviors selected for the window. The possible selection behaviors are described in [`ABPickerAttributes`](./abpickerattributes.md).
 

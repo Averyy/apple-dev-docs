@@ -24,7 +24,7 @@ func JSPropertyNameArrayGetCount(_ array: JSPropertyNameArrayRef!) -> Int
 size_t JSPropertyNameArrayGetCount(JSPropertyNameArrayRef array);
 ```
 
-#### Return Value
+## Return Value
 
 An integer count of the number of names in `array`.
 

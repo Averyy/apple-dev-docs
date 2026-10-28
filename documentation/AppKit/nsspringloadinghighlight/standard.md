@@ -19,7 +19,7 @@ case standard
 NSSpringLoadingHighlightStandard
 ```
 
-#### Discussion
+## Discussion
 
 Apply light highlighting to the destination’s user interface. This highlighting style typically provides a subtle visual cue to the user that the destination supports spring-loading and that spring-loading is about to be fully engaged. A brief period of highlighting with this style provides the user with an opportunity to disengage and prevent the spring-loading from occurring.
 

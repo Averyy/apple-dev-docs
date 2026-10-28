@@ -17,9 +17,9 @@ Provides the full list of web service URLs, notification types, request limits, 
 - [Managing assets](./managing-assets.md)
 - [Upgrading to the new management API](./upgrading-to-the-new-management-api.md)
 
-#### Discussion
+## Discussion
 
-##### Example Response
+### Example Response
 
 **Request**:
 
@@ -224,7 +224,7 @@ curl --location --request GET 'https://vpp.itunes.apple.com/mdm/v2/service/confi
 }
 ```
 
-##### Request limits
+### Request limits
 
 Some request-parameter limits are dynamic and can change without notice. Read their current values from the `limits` section of [`ServiceConfigResponse`](./serviceconfigresponse.md).
 

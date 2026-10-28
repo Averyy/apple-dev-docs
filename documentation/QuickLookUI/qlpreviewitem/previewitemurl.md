@@ -20,7 +20,7 @@ var previewItemURL: URL! { get }
 @property (readonly) NSURL * previewItemURL;
 ```
 
-#### Discussion
+## Discussion
 
 [`QLPreviewController`](../../QuickLook/qlpreviewcontroller.md) uses this property to get an item’s URL. In typical use, you’d implement a getter method in your preview item class to provide this value.
 

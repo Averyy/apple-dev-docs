@@ -24,7 +24,7 @@ func VTPixelRotationSessionGetTypeID() -> CFTypeID
 extern CFTypeID VTPixelRotationSessionGetTypeID();
 ```
 
-#### Return Value
+## Return Value
 
 The type identifier of the rotation session object.
 

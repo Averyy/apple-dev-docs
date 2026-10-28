@@ -19,7 +19,7 @@ var connectionHandle: BluetoothConnectionHandle { get }
 @property (assign, readonly) BluetoothConnectionHandle connectionHandle;
 ```
 
-#### Discussion
+## Discussion
 
 This method only returns a valid result if a baseband connection is present (-isConnected returns TRUE).
 

@@ -16,7 +16,7 @@
 kSCSITaskStatus_INTERMEDIATE
 ```
 
-#### Discussion
+## Discussion
 
 The task completed with a status of INTERMEDIATE.
 

@@ -20,11 +20,11 @@ var name: String? { get set }
 @property (copy, nullable) NSString * name;
 ```
 
-#### Return Value
+## Return Value
 
 Returns a string specifying the name of the receiver. May return `nil` if the receiver is not a valid kind of node (see discussion).
 
-#### Discussion
+## Discussion
 
 This method is applicable only to `NSXMLNode` objects representing elements, attributes, namespaces, processing instructions, and DTD-declaration nodes. If the receiver is not an object of one of these kinds, this method returns `nil`. For example, in the following construction:
 

@@ -12,11 +12,11 @@ Configures the minimum deployment target version for the tvOS platform.
 static func tvOS(_ version: SupportedPlatform.TVOSVersion) -> SupportedPlatform
 ```
 
-#### Return Value
+## Return Value
 
 A `SupportedPlatform` instance.
 
-#### Discussion
+## Discussion
 
 > **Since**: First available in PackageDescription 5.0
 

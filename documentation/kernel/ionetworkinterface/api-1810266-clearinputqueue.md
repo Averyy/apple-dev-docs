@@ -12,11 +12,11 @@ virtual UInt32 clearInputQueue(
  void );
 ```
 
-#### Return Value
+## Return Value
 
 Returns the number of packets freed.
 
-#### Overview
+## Overview
 
 This method removes all packets from the input queue and releases them back to the free mbuf pool. It is unusual for a driver to call this method.
 

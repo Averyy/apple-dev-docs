@@ -25,7 +25,7 @@ var family: CLKComplicationFamily { get }
 
 - [Creating a timeline entry](../creating-a-timeline-entry.md)
 
-#### Discussion
+## Discussion
 
 The [`family`](./family.md) property determines how much space is available to a complication and which templates you can use to display your complication data. In your complication data source, you typically use the property’s value in a `switch` statement when determining the complication template your data source creates.
 

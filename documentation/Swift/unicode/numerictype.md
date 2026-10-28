@@ -21,7 +21,7 @@ The numeric type of a scalar.
 enum NumericType
 ```
 
-#### Overview
+## Overview
 
 Scalars with a non-nil numeric type include numbers, fractions, numeric superscripts and subscripts, and circled or otherwise decorated number glyphs.
 

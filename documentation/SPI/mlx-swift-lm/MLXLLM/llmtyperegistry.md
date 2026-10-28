@@ -17,7 +17,7 @@ Registry of model type, e.g ‘llama’, to functions that can instantiate the m
 enum LLMTypeRegistry
 ```
 
-#### Overview
+## Overview
 
 Typically called via [`loadContainer(from:using:configuration:useLatest:progressHandler:)`](./llmmodelfactory/loadcontainer%28from,using,configuration,uselatest,progresshandler%29.md).
 

@@ -15,7 +15,7 @@ Properties that all addition types share.
 object Addition
 ```
 
-#### Discussion
+## Discussion
 
 This is an abstract definition. Don’t use this object type directly; use only the objects that extend it, such as [`LinkAddition`](./linkaddition.md).
 

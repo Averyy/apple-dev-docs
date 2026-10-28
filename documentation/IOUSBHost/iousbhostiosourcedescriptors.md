@@ -20,7 +20,7 @@ struct IOUSBHostIOSourceDescriptors
 typedef struct IOUSBHostIOSourceDescriptors { ... } IOUSBHostIOSourceDescriptors;
 ```
 
-#### Overview
+## Overview
 
 The [`IOUSBHostIOSourceDescriptors`](./iousbhostiosourcedescriptors.md) structure initializes and adjusts pipes in the system.
 

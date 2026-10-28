@@ -21,11 +21,11 @@ Modifies the ISO 8601 date format style to use the specified time separator.
 func timeSeparator(_ separator: Date.ISO8601FormatStyle.TimeSeparator) -> Date.ISO8601FormatStyle
 ```
 
-#### Return Value
+## Return Value
 
 An ISO 8601 date format style modified to include the specified time separator style.
 
-#### Discussion
+## Discussion
 
 Possible values of [`Date.ISO8601FormatStyle.TimeSeparator`](./timeseparator-swift.enum.md) are [`Date.ISO8601FormatStyle.TimeSeparator.colon`](./timeseparator-swift.enum/colon.md) and [`Date.ISO8601FormatStyle.TimeSeparator.omitted`](./timeseparator-swift.enum/omitted.md).
 

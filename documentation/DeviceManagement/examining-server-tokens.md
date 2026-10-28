@@ -5,7 +5,7 @@
 
 View sample encrypted and unencrypted tokens to verify your server tokens are in the right format.
 
-#### Overview
+## Overview
 
 An example S/MIME encrypted token:
 

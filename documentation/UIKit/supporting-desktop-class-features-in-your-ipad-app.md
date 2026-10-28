@@ -12,17 +12,17 @@ Enhance your iPad app by adding desktop-class features and document support.
 - Mac Catalyst 17.0+
 - Xcode 15.0+
 
-#### Overview
+## Overview
 
 This sample project shows how to build an app that takes full advantage of the iPad’s desktop-class features like hardware keyboard and trackpad support, Stage Manager, and rich document-editing capabilities. The app is a markup document editor that allows creating, editing, previewing, and saving documents, including features like a title menu with custom actions, document renaming, Find and Replace, and more.
 
 > **Note**: This sample code project is associated with WWDC22 sessions: [10069: Meet desktop class iPad](https://developer.apple.com/wwdc22/10069/), [10070: Build a desktop class iPad app](https://developer.apple.com/wwdc22/10070/), and [10076: Bring your iOS app to the Mac](https://developer.apple.com/wwdc22/10076/).
 
-##### Choose the appropriate navigation style
+### Choose the appropriate navigation style
 
 Because the app allows focused viewing and editing of individual documents, it uses the [`UINavigationItem.ItemStyle.editor`](./uinavigationitem/itemstyle/editor.md) navigation style. This navigation style moves the navigation item’s title to the leading edge and opens up space in the center of the bar for common document actions. To choose the navigation style, the editor view controller assigns the navigation item’s [`style`](./uinavigationitem/style.md) property.
 
-##### Add center items for quick access to common actions
+### Add center items for quick access to common actions
 
 Center item groups are groups of controls that appear in the navigation bar to provide quick access to the app’s most important capabilities. A person can customize the navigation bar’s center items by moving, removing, or adding certain groups. To enable user customization, the app assigns a string to the navigation item’s [`customizationIdentifier`](./uinavigationitem/customizationidentifier.md) property.
 
@@ -50,7 +50,7 @@ UIBarButtonItem(primaryAction: UIAction(title: "Strikethrough", image: UIImage(s
 }).creatingOptionalGroup(customizationIdentifier: "strikethrough", isInDefaultCustomization: false),
 ```
 
-##### Add a title menu with system and custom actions
+### Add a title menu with system and custom actions
 
 A title menu appears when a person taps the navigation item’s title. This menu can surface actions that are relevant to the current document. To configure a title menu, the editor view controller assigns a closure to the navigation item’s [`titleMenuProvider`](./uinavigationitem/titlemenuprovider.md) property.
 
@@ -72,11 +72,11 @@ navigationItem.titleMenuProvider = { suggested in
 
 The closure returns a menu that combines the suggested system actions and custom actions. The first set of actions in the menu are the `suggested` actions that the system passes in to the closure, including Move and Duplicate. The next set of actions are the `custom` actions that the app defines: exporting the document to HTML and PDF.
 
-##### Configure a document header
+### Configure a document header
 
 A document header displays helpful information about the current document, such as its title, file type, and size. It also provides a place from which to share or drag and drop the document. To display a document header at the top of the title menu, the editor view controller assigns a [`UIDocumentProperties`](./uidocumentproperties.md) object to the navigation item’s [`documentProperties`](./uinavigationitem/documentproperties.md) property.
 
-##### Enable the system Find and Replace experience
+### Enable the system Find and Replace experience
 
 The editor view supports editing the content of the document. Because the editor view is a subclass of [`UITextView`](./uitextview.md), enabling the system Find and Replace experience takes one line of code.
 
@@ -88,7 +88,7 @@ editorTextView.isFindInteractionEnabled = true
 
 Setting the [`isFindInteractionEnabled`](./uitextview/isfindinteractionenabled.md) property enables using standard keyboard shortcuts to find text in a document and quickly replace it using the system-provided Find panel.
 
-##### Enhance multiple-item selection
+### Enhance multiple-item selection
 
 The outline view is a collection view that serves as a table of contents for the document, allowing for quick navigation or taking actions on the top-level tags in the document. This view supports an enhanced multiple-selection experience when a person interacts with the app using a keyboard and pointer. The outline view enables lightweight multiple selection of the tags without placing the collection view into editing mode by setting [`allowsMultipleSelection`](./uicollectionview/allowsmultipleselection.md), [`allowsFocus`](./uicollectionview/allowsfocus.md), and [`selectionFollowsFocus`](./uicollectionview/selectionfollowsfocus.md) to `true`.
 
@@ -117,7 +117,7 @@ if indexPaths.count > 1 {
 }
 ```
 
-##### Perform a primary action when tapping a single item
+### Perform a primary action when tapping a single item
 
 In addition to performing a secondary click on a tag in the outline view, a person can tap a single tag to scroll to its corresponding location in the editor view. To distinguish the explicit user action of tapping one tag to navigate to that location in the document from selecting multiple tags, the outline view implements [`collectionView(_:performPrimaryActionForItemAt:)`](./uicollectionviewdelegate/collectionview%28_,performprimaryactionforitemat%29.md). The system calls this method when a person taps a single tag without extending a multiple selection of tags.
 

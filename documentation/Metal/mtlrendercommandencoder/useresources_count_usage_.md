@@ -22,7 +22,7 @@ Ensures the shaders in the render pass’s subsequent draw commands have access 
 - (void) useResources:(id<MTLResource> const[]) resources count:(NSUInteger) count usage:(MTLResourceUsage) usage;
 ```
 
-#### Discussion
+## Discussion
 
 You can make multiple resources *resident* (available in GPU memory) for the remaining duration of the render pass by calling this method. Call the method before encoding draw calls that may access the elements of `resources` through an argument buffer. The method ensures each resource is in a format that’s compatible with the shaders that depend on it.
 

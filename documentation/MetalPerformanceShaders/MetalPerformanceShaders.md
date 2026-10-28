@@ -14,7 +14,7 @@ Optimize graphics and compute performance with kernels that are fine-tuned for t
 - tvOS 9.0+
 - visionOS 1.0+
 
-#### Overview
+## Overview
 
 The Metal Performance Shaders framework contains a collection of highly optimized compute and graphics shaders that are designed to integrate easily and efficiently into your Metal app. These data-parallel primitives are specially tuned to take advantage of the unique hardware characteristics of each GPU family to ensure optimal performance.
 

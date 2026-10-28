@@ -24,7 +24,7 @@ var jsGlobalContextRef: JSGlobalContextRef! { get }
 @property (readonly) JSGlobalContextRef JSGlobalContextRef;
 ```
 
-#### Discussion
+## Discussion
 
 See `JSContextRef` for the C JavaScriptCore API.
 

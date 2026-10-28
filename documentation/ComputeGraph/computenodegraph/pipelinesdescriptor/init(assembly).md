@@ -21,7 +21,7 @@ Creates a descriptor configured for the given graph assembly.
 init(assembly: ComputeNodeGraph.Assembly)
 ```
 
-#### Discussion
+## Discussion
 
 `options` defaults to [`init()`](../pipelines/options-swift.struct/init%28%29.md) and `libraries` is empty. Add shader libraries with [`addLibrary(_:bundle:)`](./addlibrary%28_,bundle%29.md) before compiling.
 

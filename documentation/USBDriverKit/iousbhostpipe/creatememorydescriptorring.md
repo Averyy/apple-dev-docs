@@ -13,11 +13,11 @@
 virtual kern_return_t CreateMemoryDescriptorRing(uint32_t size);
 ```
 
-#### Return Value
+## Return Value
 
 KERN_SUCCESS is successful see IOReturn.h for error codes.
 
-#### Discussion
+## Discussion
 
 Create a memory descriptor ring to use with AsyncIOBundled().
 

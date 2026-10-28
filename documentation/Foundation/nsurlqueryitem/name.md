@@ -25,7 +25,7 @@ var name: String { get }
 @property (readonly) NSString * name;
 ```
 
-#### Discussion
+## Discussion
 
 For example, in the URL `http://www.apple.com/search/?q=iPad`, the `name` parameter is `q`.
 

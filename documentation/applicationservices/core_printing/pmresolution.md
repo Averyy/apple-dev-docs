@@ -14,7 +14,7 @@ struct PMResolution {
 };
 ```
 
-#### Overview
+## Overview
 
 The functions [PMGetResolution](./api-1805451-pmgetresolution.md) and [PMPrinterGetPrinterResolution](./api-1805554-pmprintergetprinterresolution.md) use this structure to return printing resolution information. Your application can pass this information to the function [PMSetResolution](./api-1805452-pmsetresolution.md).
 

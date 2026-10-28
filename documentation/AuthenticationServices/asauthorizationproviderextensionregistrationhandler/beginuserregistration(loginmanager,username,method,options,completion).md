@@ -28,7 +28,7 @@ func beginUserRegistration(loginManager: ASAuthorizationProviderExtensionLoginMa
 
 - [Registering devices and users](../registering-devices-and-users.md)
 
-#### Discussion
+## Discussion
 
 The completion handler returns the status as an [`ASAuthorizationProviderExtensionRegistrationResult`](../asauthorizationproviderextensionregistrationresult.md).
 

@@ -19,7 +19,7 @@ func setStroke()
 - (void) setStroke;
 ```
 
-#### Discussion
+## Discussion
 
 This method should be implemented in subclasses.
 

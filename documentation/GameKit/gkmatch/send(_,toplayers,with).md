@@ -25,7 +25,7 @@ func send(_ data: Data, toPlayers playerIDs: [String], with mode: GKMatch.SendDa
 - (BOOL) sendData:(NSData *) data toPlayers:(NSArray<NSString *> *) playerIDs withDataMode:(GKMatchSendDataMode) mode error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 The match queues the data and transmits it when the network becomes available.
 

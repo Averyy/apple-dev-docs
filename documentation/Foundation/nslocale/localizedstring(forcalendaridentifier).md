@@ -25,11 +25,11 @@ func localizedString(forCalendarIdentifier calendarIdentifier: String) -> String
 - (NSString *) localizedStringForCalendarIdentifier:(NSString *) calendarIdentifier;
 ```
 
-#### Return Value
+## Return Value
 
 A human readable string suitable for display to the user corresponding to the given calendar.
 
-#### Discussion
+## Discussion
 
 For example, on an American English (`en_US`) locale, passing [`gregorian`](../nscalendar/identifier/gregorian.md) as the identifier, produces the string `"Gregorian Calendar"`.
 

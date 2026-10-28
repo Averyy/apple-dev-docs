@@ -12,7 +12,7 @@ inline IOReturn prepare(
  none. ) ;
 ```
 
-#### Return Value
+## Return Value
 
 returns kIOReturnSuccess on success
 

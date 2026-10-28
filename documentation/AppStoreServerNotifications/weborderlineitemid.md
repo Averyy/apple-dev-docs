@@ -15,7 +15,7 @@ The unique identifier of subscription purchase events across devices, including 
 string webOrderLineItemId
 ```
 
-#### Discussion
+## Discussion
 
 This value applies only to auto-renewable subscriptions.
 

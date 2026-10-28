@@ -24,7 +24,7 @@ let kCFStreamPropertyAllowConstrainedNetworkAccess: CFString
 extern CFStringRef const kCFStreamPropertyAllowConstrainedNetworkAccess;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`kCFBooleanTrue`](../CoreFoundation/kcfbooleantrue.md) and allows the use of constrained interfaces. Set this property to [`kCFBooleanFalse`](../CoreFoundation/kcfbooleanfalse.md) to disallow the use of constrained interfaces. For more information about constrained interfaces, see [`allowsConstrainedNetworkAccess`](../Foundation/urlsessionconfiguration/allowsconstrainednetworkaccess.md).
 

@@ -24,7 +24,7 @@ var controllerUserInteractionEnabled: Bool { get set }
 @property (nonatomic) BOOL controllerUserInteractionEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 If this property is [`false`](../../Swift/false.md), when the view controller’s view or its subviews are the first responder, the system delivers the game controller input to the profile objects. If this property is [`true`](../../Swift/true.md), the system generates input events and delivers them through the responder chain.
 

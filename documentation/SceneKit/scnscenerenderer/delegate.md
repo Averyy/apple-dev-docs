@@ -26,7 +26,7 @@ weak var delegate: (any SCNSceneRendererDelegate)? { get set }
 @property (nonatomic, weak, nullable) id<SCNSceneRendererDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 A scene renderer delegate is a custom object that you provide. When SceneKit processes the scene for rendering each frame of animation, it notifies the delegate after significant steps in the update-and-render process. There are two primary uses for a scene renderer delegate:
 

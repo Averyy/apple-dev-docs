@@ -22,7 +22,7 @@ var maneuverTravelEstimates: CPTravelEstimates { get }
 @property (nonatomic, copy, readonly) CPTravelEstimates * maneuverTravelEstimates;
 ```
 
-##### Discussion
+### Discussion
 
 This is the first maneuver in the current list of maneuvers.
 

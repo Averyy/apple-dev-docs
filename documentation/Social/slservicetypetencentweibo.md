@@ -20,7 +20,7 @@ let SLServiceTypeTencentWeibo: String
 extern NSString * const SLServiceTypeTencentWeibo;
 ```
 
-#### Discussion
+## Discussion
 
 A string constant that identifies the social networking site, Tencent Weibo.
 

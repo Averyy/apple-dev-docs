@@ -24,7 +24,7 @@ var opaque: Bool { get set }
 @property (nonatomic) BOOL opaque;
 ```
 
-#### Discussion
+## Discussion
 
 By default, after Metal finds an intersection between a ray and a primitive, it runs your specified intersection function to determine whether the ray actually hit the primitive. If you specify that triangle geometry is opaque, Metal skips the intersection function and processes any intersection as a hit.
 

@@ -22,7 +22,7 @@ var requiredThreadsPerMeshThreadgroup: MTLSize { get set }
 @property (nonatomic, readwrite) MTLSize requiredThreadsPerMeshThreadgroup;
 ```
 
-#### Discussion
+## Discussion
 
 Sets the required mesh threads-per-threadgroup during mesh draws. The `threadsPerMeshThreadgroup` argument of any draw must match to this value if it is set. Setting this to a size of 0 in every dimension disables this property
 

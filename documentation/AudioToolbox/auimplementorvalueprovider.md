@@ -24,7 +24,7 @@ typealias AUImplementorValueProvider = (AUParameter) -> AUValue
 typedef float (^)(AUParameter *) AUImplementorValueProvider;
 ```
 
-#### Discussion
+## Discussion
 
 This block is only of interest to audio unit subclasses.
 

@@ -25,7 +25,7 @@ class func finishExtendedLaunchMeasurement(forTaskID taskID: MXLaunchTaskID) thr
 + (BOOL) finishExtendedLaunchMeasurementForTaskID:(MXLaunchTaskID) taskID error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method on the main thread to end an extended launch task previously started with [`extendLaunchMeasurement(forTaskID:)`](./extendlaunchmeasurement%28fortaskid%29.md).
 

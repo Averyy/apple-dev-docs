@@ -16,7 +16,7 @@ A Boolean value that indicates whether the Games app excludes game information f
 - **Name**: `GCDisableInferringGameMetadata` (Opt out of inferring game knowledge in Games App)
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 For games distributed outside of the App Store, the Games app infers game details by using Siri’s knowledge graph. Set this key to `YES` to opt-out of that behavior and remove those details from your game detail page in the Games app.
 

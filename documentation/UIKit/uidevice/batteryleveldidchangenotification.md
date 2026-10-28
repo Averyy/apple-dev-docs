@@ -27,7 +27,7 @@ extern NSNotificationName const UIDeviceBatteryLevelDidChangeNotification;
 
 - [Processing queued notifications](../processing-queued-notifications.md)
 
-#### Discussion
+## Discussion
 
 For this notification to be sent, you must set the [`isBatteryMonitoringEnabled`](./isbatterymonitoringenabled.md) property to [`true`](../../Swift/true.md).
 

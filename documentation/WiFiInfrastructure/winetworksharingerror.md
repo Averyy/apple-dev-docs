@@ -17,7 +17,7 @@ Error codes for Wi-Fi network-sharing functionality.
 enum WINetworkSharingError
 ```
 
-#### Overview
+## Overview
 
 The Wi-Fi network-sharing API throws `WINetworkSharingError` instances when there are issues with accessories, network availability, permissions, or system state.
 

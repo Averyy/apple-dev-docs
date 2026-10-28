@@ -24,7 +24,7 @@ func ExtAudioFileGetPropertyInfo(_ inExtAudioFile: ExtAudioFileRef, _ inProperty
 extern OSStatus ExtAudioFileGetPropertyInfo(ExtAudioFileRef inExtAudioFile, ExtAudioFilePropertyID inPropertyID, UInt32 *outSize, Boolean *outWritable);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 

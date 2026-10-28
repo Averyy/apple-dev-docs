@@ -19,7 +19,7 @@ var allowsBranchSelection: Bool { get set }
 @property BOOL allowsBranchSelection;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), the user can select branch items when multiple selection is enabled.
 

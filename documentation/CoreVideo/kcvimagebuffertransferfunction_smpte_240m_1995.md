@@ -25,7 +25,7 @@ let kCVImageBufferTransferFunction_SMPTE_240M_1995: CFString
 extern CFStringRef const kCVImageBufferTransferFunction_SMPTE_240M_1995;
 ```
 
-#### Discussion
+## Discussion
 
 > 💡 **Tip**:  Most apps shouldn’t use this constant.
 

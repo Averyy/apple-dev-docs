@@ -20,7 +20,7 @@ case system
 kSecTrustSettingsDomainSystem
 ```
 
-#### Discussion
+## Discussion
 
 These trust settings are immutable and comprise the set of trusted root certificates supplied in macOS. These settings are read-only, even by root.
 

@@ -25,7 +25,7 @@ var pinFormat: TKSmartCardPINFormat { get set }
 @property TKSmartCardPINFormat * PINFormat;
 ```
 
-#### Discussion
+## Discussion
 
 By default, this property is set to a `TKSmartCardPINFormat` object initialized without any further configuration.
 

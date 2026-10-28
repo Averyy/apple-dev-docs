@@ -30,7 +30,7 @@ var physicsBody: SKPhysicsBody? { get set }
 - [Configuring a Physics Body](../configuring-a-physics-body.md)
 - [Getting Started with Physics Bodies](../getting-started-with-physics-bodies.md)
 
-#### Discussion
+## Discussion
 
 The default value is `nil`, which indicates that the node does not participate in the physics simulation at all. If a physics body is provided, when the scene’s physics are simulated, the physics body updates the node’s position and rotates the node.
 

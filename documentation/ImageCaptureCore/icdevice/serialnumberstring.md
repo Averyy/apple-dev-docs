@@ -19,7 +19,7 @@ var serialNumberString: String? { get }
 @property (nonatomic, readonly, nullable) NSString * serialNumberString;
 ```
 
-#### Discussion
+## Discussion
 
 ## See Also
 

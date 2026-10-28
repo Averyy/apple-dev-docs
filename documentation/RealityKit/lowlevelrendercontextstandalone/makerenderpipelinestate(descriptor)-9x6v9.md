@@ -15,8 +15,8 @@ Asynchronously compiles a Metal render pipeline state from the given descriptor.
 ## Declaration
 
 ```swift
-nonisolated
-(nonsending) final func makeRenderPipelineState(descriptor: LowLevelRenderPipelineState.Descriptor) async throws -> sending LowLevelRenderPipelineState
+nonisolated(nonsending)
+final func makeRenderPipelineState(descriptor: LowLevelRenderPipelineState.Descriptor) async throws -> sending LowLevelRenderPipelineState
 ```
 
 **Other overloads**:
@@ -25,11 +25,11 @@ nonisolated
 final func makeRenderPipelineState(descriptor: LowLevelRenderPipelineState.Descriptor) throws -> sending LowLevelRenderPipelineState
 ```
 
-#### Return Value
+## Return Value
 
 A compiled [`LowLevelRenderPipelineState`](../lowlevelrenderpipelinestate.md).
 
-#### Discussion
+## Discussion
 
 The descriptor’s mesh format, material, and render target configuration are baked into the pipeline at compile time. Create pipeline states once and reuse them across frames.
 

@@ -5,13 +5,13 @@
 
 Learn best practices for using memory efficiently in iOS and tvOS.
 
-#### Overview
+## Overview
 
 Efficient memory usage is a critical consideration for resource-intensive Metal apps in iOS and tvOS. Create apps so they use as little memory as possible, making more memory available for other apps and system services.
 
 iOS and tvOS monitor your app’s total memory usage at runtime, and if the amount exceeds a predetermined limit, the system terminates your app. This limit varies by device model, so test your app on all supported devices.
 
-##### Optimize memory usage in your Metal app
+### Optimize memory usage in your Metal app
 
 Here are some tips to understand how your Metal app is using memory, and best practices to reduce memory usage.
 
@@ -37,7 +37,7 @@ Here are some tips to understand how your Metal app is using memory, and best pr
 
 **Use Metal resource heaps.** Using [`MTLHeap`](./mtlheap.md), your app can have Multiple Metal resources backed by the same memory allocation. For example, use resource heaps when transient resources are produced and consumed for each frame but aren’t all used together. Those not used together share the same memory, backed by a heap.
 
-##### Additional resources
+### Additional resources
 
 The WWDC video [Gain insights into your Metal app with Xcode 12](https://developer.apple.com/videos/play/wwdc2020/10605/) provides additional information about the latest memory-debugging tools and best practices to help you optimize the memory footprint of your Metal apps and games.
 

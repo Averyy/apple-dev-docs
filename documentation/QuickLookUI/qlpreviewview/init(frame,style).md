@@ -19,11 +19,11 @@ init!(frame: NSRect, style: QLPreviewViewStyle)
 - (id) initWithFrame:(NSRect) frame style:(QLPreviewViewStyle) style;
 ```
 
-#### Return Value
+## Return Value
 
 Returns a `QLPreviewView` object with the designated frame and style.
 
-#### Discussion
+## Discussion
 
 This is the designated initializer for the `QLPreviewView` class.
 

@@ -15,7 +15,7 @@ Inverts the transformation matrix, if possible.
 mutating func invert()
 ```
 
-#### Discussion
+## Discussion
 
 Matrices with a determinant less than the smallest valid representation of a double value and greater than zero are invalid for representing as an inverse. If this can potentially happen to the input transform, use the [`inverted()`](./inverted%28%29.md) method instead. The [`inverted()`](./inverted%28%29.md) method returns `nil` if the function can’t reliably invert the matrix.
 

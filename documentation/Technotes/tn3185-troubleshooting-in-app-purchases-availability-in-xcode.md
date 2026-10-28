@@ -5,7 +5,7 @@
 
 Inspect your active StoreKit configuration file for unexpected configurations.
 
-#### Overview
+## Overview
 
 When using [StoreKit Testing in Xcode](../Xcode/setting-up-storekit-testing-in-xcode.md) to test your In-App Purchases, your app may not display its products. StoreKit Testing in Xcode is a local test environment for testing In-App Purchases without requiring a connection to App Store servers. To set up testing in this environment, add a local or synced StoreKit configuration file that contains In-App Purchases to your Xcode project. For more information, see [Create a StoreKit configuration file](../Xcode/setting-up-storekit-testing-in-xcode.md). When you [enable a configuration file](../Xcode/setting-up-storekit-testing-in-xcode.md) in your Xcode project, this file becomes active. StoreKit uses data saved in the active configuration file when your app calls StoreKit APIs in the test environment. For more information, see [Setting up StoreKit Testing in Xcode](../Xcode/setting-up-storekit-testing-in-xcode.md).
 
@@ -18,11 +18,11 @@ If `Product.products(for:)` fails to return a Product instance for your In-App P
 
 > **Note**: If your app fails to display its products when testing In-App Purchases in the Apple sandbox environment, or when launching the app in the App Store, see [TN3186: Troubleshooting In-App Purchases availability in the sandbox](./tn3186-troubleshooting-in-app-purchases-availability-in-the-sandbox.md) and [TN3188: Troubleshooting In-App Purchases availability in the App Store](./tn3188-troubleshooting-in-app-purchases-availability-in-the-app-store.md), respectively.
 
-#### Validate your product identifier list
+## Validate your product identifier list
 
 Inspect the active StoreKit configuration file in your Xcode project. Confirm each product identifier in your list matches the product identifier of an In-App Purchase configured in this file.
 
-#### Disable the Simulated StoreKit Load Products failure setting
+## Disable the Simulated StoreKit Load Products failure setting
 
 A [StoreKit configuration file](../Xcode/setting-up-storekit-testing-in-xcode.md) includes settings you can use to specify test conditions or scenarios for your In-App Purchases such as Load Products. When you enable Load Products, the test environment simulates the load product failure scenario you specified such as network error. Calling [`Product.products(for:)`](../StoreKit/product/products%28for%29.md) in your app throws a [StoreKit error](../StoreKit/storekiterror.md). When you disable this setting, the function returns all your In-App Purchases that exist in the active configuration file. For more information, see [Change settings and initiate test conditions](../Xcode/testing-in-app-purchases-with-storekit-transaction-manager-in-code.md) in [Testing in-app purchases with StoreKit transaction manager in Xcode](../Xcode/testing-in-app-purchases-with-storekit-transaction-manager-in-code.md).
 
@@ -33,7 +33,7 @@ To prevent the test environment from simulating a load products failure scenario
 3. Scroll down to Simulated StoreKit Failures.
 4. Disable the Load Products setting.
 
-#### Revision History
+## Revision History
 
 - **2025-04-29** First published.
 

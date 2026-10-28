@@ -27,7 +27,7 @@ static let firstFoundOnly: SCNHitTestOption
 extern SCNHitTestOption const SCNHitTestFirstFoundOnlyKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is a [`NSNumber`](../../Foundation/nsnumber.md) object containing a Boolean value. The default value is [`false`](../../Swift/false.md), specifying that hit-testing should return all objects found. If you specify [`true`](../../Swift/true.md), the array of hit-test results contains only the first object found (which is not necessarily the nearest).
 

@@ -19,7 +19,7 @@ func SCNetworkInterfaceCopyMediaSubTypes(_ available: CFArray) -> CFArray?
 CFArrayRefSCNetworkInterfaceCopyMediaSubTypes(CFArrayRef available);
 ```
 
-#### Return Value
+## Return Value
 
 An array of available media subtypes (for example, 10BaseT/UTP, 100baseTX, etc), or `NULL` if no subtypes are available
 

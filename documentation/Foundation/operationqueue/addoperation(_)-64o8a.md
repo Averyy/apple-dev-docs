@@ -25,7 +25,7 @@ func addOperation(_ op: Operation)
 - (void) addOperation:(NSOperation *) op;
 ```
 
-#### Discussion
+## Discussion
 
 Once added, the specified operation remains in the queue until it finishes executing.
 

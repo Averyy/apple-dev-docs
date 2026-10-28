@@ -24,11 +24,11 @@ func write(to URL: URL) -> Bool
 - (BOOL) writeToURL:(NSURL *) URL;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if export succeeded; [`false`](../../Swift/false.md) otherwise.
 
-#### Discussion
+## Discussion
 
 Model I/O automatically infers the file format in which to export the image from the filename extension of the `url` parameter. This method can export textures in JPEG, TIFF, PNG, or (in macOS only) OpenEXR format.
 

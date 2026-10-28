@@ -19,7 +19,7 @@ var lineBreakStrategy: NSParagraphStyle.LineBreakStrategy { get set }
 @property NSLineBreakStrategy lineBreakStrategy;
 ```
 
-#### Discussion
+## Discussion
 
 The default value for editable text fields is [`NSLineBreakStrategyNone`](../nslinebreakstrategy/nslinebreakstrategynone.md) to match the field editor’s behavior. The default value for selectable, uneditable text fields is [`standard`](../nsparagraphstyle/linebreakstrategy-swift.struct/standard.md).
 

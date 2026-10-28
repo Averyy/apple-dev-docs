@@ -24,7 +24,7 @@ func invalidate()
 
 - [Hosting browser view layers in the rendering extension](../hosting-browser-view-layers-in-the-rendering-extension.md)
 
-#### Discussion
+## Discussion
 
 When you call this method, the layer hierarchy is no longer of use. Communicate with your browser app process to remove the related hosting view ([`LayerHierarchyHostingView`](../layerhierarchyhostingview.md)) from its superview.
 

@@ -25,7 +25,7 @@ class func weakObjects() -> NSPointerArray
 + (NSPointerArray *) weakObjectsPointerArray;
 ```
 
-#### Return Value
+## Return Value
 
 A new pointer array that maintains weak references to its elements.
 

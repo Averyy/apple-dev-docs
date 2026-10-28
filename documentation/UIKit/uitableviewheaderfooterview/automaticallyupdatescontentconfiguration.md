@@ -23,7 +23,7 @@ var automaticallyUpdatesContentConfiguration: Bool { get set }
 @property (nonatomic) BOOL automaticallyUpdatesContentConfiguration;
 ```
 
-#### Discussion
+## Discussion
 
 When this value is [`true`](../../Swift/true.md), the cell automatically calls [`updated(for:)`](../uicontentconfiguration-9eib5/updated%28for%29.md) on its [`contentConfiguration`](./contentconfiguration-6b4eg.md) when the view’s [`configurationState`](./configurationstate-7xj7r.md) changes, and applies the updated configuration back to the view. The default value is [`true`](../../Swift/true.md).
 

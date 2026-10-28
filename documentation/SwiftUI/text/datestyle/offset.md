@@ -21,7 +21,7 @@ A style displaying a date as offset from now.
 static let offset: Text.DateStyle
 ```
 
-#### Discussion
+## Discussion
 
 ```swift
 Text(event.startDate, style: .offset)

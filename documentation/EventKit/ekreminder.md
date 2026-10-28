@@ -28,7 +28,7 @@ class EKReminder
 
 - [Creating events and reminders](./creating-events-and-reminders.md)
 
-#### Overview
+## Overview
 
 Use the [`init(eventStore:)`](./ekreminder/init%28eventstore%29.md) method to create a new reminder. Use the properties in the class to get and modify certain information about a reminder.
 

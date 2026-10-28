@@ -19,7 +19,7 @@ var rightExpressionAttributeType: NSAttributeType { get }
 @property (readonly) NSAttributeType rightExpressionAttributeType;
 ```
 
-#### Return Value
+## Return Value
 
 The attribute type of the receiver’s right expression.
 

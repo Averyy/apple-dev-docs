@@ -16,7 +16,7 @@ The capabilities that a device requires to install an app.
 var requiredDeviceCapabilities: Set<String>?
 ```
 
-#### Discussion
+## Discussion
 
 This set contains one or more [`UIRequiredDeviceCapabilities`](../../BundleResources/information-property-list/uirequireddevicecapabilities.md).
 

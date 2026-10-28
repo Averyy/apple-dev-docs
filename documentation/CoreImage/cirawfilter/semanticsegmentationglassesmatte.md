@@ -24,7 +24,7 @@ var semanticSegmentationGlassesMatte: CIImage? { get }
 @property (readonly, nullable) CIImage * semanticSegmentationGlassesMatte;
 ```
 
-#### Discussion
+## Discussion
 
 This matting image segments eyeglasses and sunglasses from all people in the visible field of view of the image.
 

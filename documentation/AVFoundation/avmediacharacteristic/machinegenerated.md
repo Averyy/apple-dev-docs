@@ -25,7 +25,7 @@ static let machineGenerated: AVMediaCharacteristic
 extern AVMediaCharacteristic const AVMediaCharacteristicMachineGenerated;
 ```
 
-#### Discussion
+## Discussion
 
 This media characteristic can be used to distinguish machine generated content from human authored content. The value of this characteristic is @“public.machine-generated”.
 

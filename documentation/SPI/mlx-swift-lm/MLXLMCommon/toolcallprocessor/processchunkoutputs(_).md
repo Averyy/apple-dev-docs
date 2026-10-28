@@ -17,7 +17,7 @@ Processes a generated chunk and removes its output in source order.
 func processChunkOutputs(_ chunk: String) -> [Output]
 ```
 
-#### Discussion
+## Discussion
 
 Tool protocol syntax that does not parse as a call is not emitted as a response. Use this streaming operation when tool calls and response text must retain their relative order. Do not mix this API with `processChunk`, `processEOS`, or `drainToolCalls()` on the same processor instance.
 

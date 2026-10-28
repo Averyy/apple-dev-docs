@@ -25,7 +25,7 @@ func readInBackgroundAndNotify()
 - (void) readInBackgroundAndNotify;
 ```
 
-#### Discussion
+## Discussion
 
 This method performs an asynchronous [`availableData`](./availabledata.md) operation on a file or communications channel and posts an [`readCompletionNotification`](./readcompletionnotification.md) notification on the current thread when that operation is complete. You must call this method from a thread that has an active run loop.
 

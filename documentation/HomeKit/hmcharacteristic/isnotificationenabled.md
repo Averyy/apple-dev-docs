@@ -24,7 +24,7 @@ var isNotificationEnabled: Bool { get }
 @property (nonatomic, readonly, getter=isNotificationEnabled) BOOL notificationEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 HomeKit delivers notifications to the accessory delegate using the [`accessory(_:service:didUpdateValueFor:)`](../hmaccessorydelegate/accessory%28_,service,didupdatevaluefor%29.md) method.
 

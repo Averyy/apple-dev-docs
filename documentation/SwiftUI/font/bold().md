@@ -21,7 +21,7 @@ Adds bold or emphasized styling to the font.
 func bold() -> Font
 ```
 
-#### Discussion
+## Discussion
 
 For fonts created from text styles, it could mean applying emphasized styling, which does not necessarily mean the bold weight specifically, so this modifier is not to be confused with [`weight(_:)`](./weight%28_%29.md).
 

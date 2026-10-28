@@ -25,7 +25,7 @@ func willSave()
 - (void) willSave;
 ```
 
-#### Discussion
+## Discussion
 
 This method can have “side effects” on persistent values. You can use it to, for example, compute persistent values from other transient or scratchpad values.
 

@@ -31,7 +31,7 @@ var note: String? { get }
 @property (atomic, copy, readonly, nullable) NSString * note;
 ```
 
-#### Discussion
+## Discussion
 
 The user can include a note to indicate the reason for the request. Notes are not normally required, but you can require them as needed to help process the request.
 

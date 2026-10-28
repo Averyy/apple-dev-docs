@@ -17,7 +17,7 @@ A `LanguageModel` that forwards every requirement to a wrapped model.
 class ForwardingLanguageModel
 ```
 
-#### Overview
+## Overview
 
 Subclass it to change one behavior and keep the rest. It implements every `LanguageModel` requirement itself, so a subclass override is always reached and no requirement silently falls back to a protocol default.
 

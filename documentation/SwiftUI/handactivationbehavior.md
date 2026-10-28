@@ -15,7 +15,7 @@ An activation behavior specific to hand-driven input.
 struct HandActivationBehavior
 ```
 
-#### Overview
+## Overview
 
 Hand activation behavior determines what hand input modes activate a gesture.
 

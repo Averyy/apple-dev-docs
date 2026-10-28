@@ -21,7 +21,7 @@ A date value representing a date in the distant past.
 static let distantPast: Date
 ```
 
-#### Discussion
+## Discussion
 
 The distant past is in terms of centuries.
 

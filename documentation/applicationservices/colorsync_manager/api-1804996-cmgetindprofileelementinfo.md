@@ -17,11 +17,11 @@ CMError CMGetIndProfileElementInfo (
 );
 ```
 
-#### Return Value
+## Return Value
 
 A `CMError` value. See [Result Codes](../colorsync_manager.md#1670295).
 
-#### Overview
+## Overview
 
 The index order of elements is determined internally by the ColorSync Manager and is not publicly defined.
 

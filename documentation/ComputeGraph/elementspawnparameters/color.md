@@ -21,7 +21,7 @@ The initial color and alpha (transparency) of the particle.
 var color: SIMD4<Float> { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Uses RGBA format where each component ranges from 0.0 to 1.0:
 

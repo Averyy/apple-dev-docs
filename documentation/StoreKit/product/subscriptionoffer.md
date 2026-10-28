@@ -25,7 +25,7 @@ struct SubscriptionOffer
 
 - [Merchandising win-back offers in your app](../merchandising-win-back-offers-in-your-app.md)
 
-#### Overview
+## Overview
 
 You set up subscription offers, such as introductory offers and win-back offers, in App Store Connect.
 

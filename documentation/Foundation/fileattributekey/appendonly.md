@@ -25,7 +25,7 @@ static let appendOnly: FileAttributeKey
 extern NSFileAttributeKey const NSFileAppendOnly;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is an [`NSNumber`](../nsnumber.md) object containing a Boolean value.
 

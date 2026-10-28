@@ -13,11 +13,11 @@
 errno_t ifnet_set_capabilities_supported(ifnet_t interface, u_int32_t new_caps, u_int32_t mask);
 ```
 
-#### Return Value
+## Return Value
 
 0 on success otherwise the errno error.
 
-#### Discussion
+## Discussion
 
 This function lets you specify which capabilities are supported by the interface. Typically this function is called by the driver when the interface gets attached to the system. The mask allows to control which capability to set or unset. The kernel will effectively take the lock, then set the interface's flags to (if_capabilities & ~mask) | (new_caps & mask).
 

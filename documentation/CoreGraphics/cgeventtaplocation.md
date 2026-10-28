@@ -20,7 +20,7 @@ enum CGEventTapLocation
 enum CGEventTapLocation : uint32_t;
 ```
 
-#### Overview
+## Overview
 
 In addition to the three tapping points described above, an event tap may also be placed where annotated events are delivered to a specific application. For more information, see the function [`tapCreateForPSN(processSerialNumber:place:options:eventsOfInterest:callback:userInfo:)`](./cgevent/tapcreateforpsn%28processserialnumber,place,options,eventsofinterest,callback,userinfo%29.md).
 

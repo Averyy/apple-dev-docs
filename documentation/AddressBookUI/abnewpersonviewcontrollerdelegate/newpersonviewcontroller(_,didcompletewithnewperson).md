@@ -22,7 +22,7 @@ func newPersonViewController(_ newPersonView: ABNewPersonViewController, didComp
 - (void) newPersonViewController:(ABNewPersonViewController *) newPersonView didCompleteWithNewPerson:(ABRecordRef) person;
 ```
 
-#### Discussion
+## Discussion
 
 If the user tapped Save, pending changes in the current address book (`ABAddressBook`) have been saved by the time this message is sent to the receiver.
 

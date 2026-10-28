@@ -19,7 +19,7 @@ case horizontal
 NSUserInterfaceLayoutOrientationHorizontal
 ```
 
-#### Discussion
+## Discussion
 
 Use this constant in the [`orientation`](../nsstackview/orientation.md) property to specify a horizontal layout for the stack view. Use it to specify the horizontal user interface axis for clipping resistance and hugging priority.
 

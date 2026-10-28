@@ -16,11 +16,11 @@ Convenience function that scans the Application Collection elements to see if it
 Boolean IOHIDDeviceConformsTo(IOHIDDeviceRef device, uint32_t usagePage, uint32_t usage);
 ```
 
-#### Return Value
+## Return Value
 
 Returns TRUE if device conforms to provided usage.
 
-#### Discussion
+## Discussion
 
 Examples of Application Collection usages pairs are:
 

@@ -21,7 +21,7 @@ A type of dispatch source for monitoring signals.
 #define DISPATCH_SOURCE_TYPE_SIGNAL
 ```
 
-#### Discussion
+## Discussion
 
 A dispatch source that monitors the current process for signals. The handle is a signal number (`int`). The mask is unused (pass zero for now).
 

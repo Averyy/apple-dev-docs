@@ -19,11 +19,11 @@
 static SPRotation3D SPRotation3DMake(SPRotation3DFloat rotation);
 ```
 
-#### Return Value
+## Return Value
 
 A new rotation..
 
-#### Discussion
+## Discussion
 
 Returns a double-precision rotation from a single-precision rotation.
 

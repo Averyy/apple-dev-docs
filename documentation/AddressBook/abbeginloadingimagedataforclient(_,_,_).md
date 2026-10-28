@@ -19,11 +19,11 @@ func ABBeginLoadingImageDataForClient(_ person: ABPersonRef!, _ callback: ABImag
 extern CFIndex ABBeginLoadingImageDataForClient(ABPersonRef person, ABImageClientCallback callback, void *refcon);
 ```
 
-#### Return Value
+## Return Value
 
 A non-zero tag for tracking
 
-#### Discussion
+## Discussion
 
 Use this function to begin an asynchronous fetch. Implement your callback function to receive the fetched image. Use the [`ABCancelLoadingImageDataForTag(_:)`](./abcancelloadingimagedatafortag%28_%29.md) function to cancel an asynchronous fetch.
 

@@ -16,7 +16,7 @@ Registers a callback to be used a device is enumerated.
 void IOHIDManagerRegisterDeviceMatchingCallback(IOHIDManagerRef manager, IOHIDDeviceCallback callback, void *context);
 ```
 
-#### Discussion
+## Discussion
 
 Only device matching the set criteria will be enumerated.
 

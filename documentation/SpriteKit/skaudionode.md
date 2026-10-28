@@ -29,7 +29,7 @@ class SKAudioNode
 
 - [Using Audio Nodes with the Scene’s Listener](./using-audio-nodes-with-the-scene-s-listener.md)
 
-#### Overview
+## Overview
 
 A [`SKAudioNode`](./skaudionode.md) object is used to add an audio to a scene. The sounds are played automatically using AVFoundation, and the node can optionally add 3D spatial audio effects to the audio when it is played.
 

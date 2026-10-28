@@ -25,7 +25,7 @@ optional func speechSynthesizer(_ synthesizer: AVSpeechSynthesizer, didCancel ut
 - (void) speechSynthesizer:(AVSpeechSynthesizer *) synthesizer didCancelSpeechUtterance:(AVSpeechUtterance *) utterance;
 ```
 
-#### Discussion
+## Discussion
 
 The system only calls this method if a speech synthesizer is speaking an utterance and the system calls its [`stopSpeaking(at:)`](../avspeechsynthesizer/stopspeaking%28at%29.md) method. The system doesn’t call this method if the synthesizer is in a delay between utterances when speech stops, and it doesn’t call it for unspoken utterances.
 

@@ -25,7 +25,7 @@ case inProgress
 INPayBillIntentResponseCodeInProgress
 ```
 
-#### Discussion
+## Discussion
 
 Use this code during the handling phase to indicate that you received the transaction details, but have not yet scheduled the transaction. Return this code if you’re unable to schedule the transaction from your handler method within a few seconds of receiving it.
 

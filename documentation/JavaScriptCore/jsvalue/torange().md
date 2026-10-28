@@ -24,11 +24,11 @@ func toRange() -> NSRange
 - (NSRange) toRange;
 ```
 
-#### Return Value
+## Return Value
 
 A range representation of the value.
 
-#### Discussion
+## Discussion
 
 This method treats the value as a JavaScript object, reading the values of its `location` and `length` properties using the [`toDouble()`](./todouble%28%29.md) method and creating a [`NSRange`](../../Foundation/nsrange-c.struct.md) structure from the result. If the value is not a JavaScript object or does not have the appropriate properties, the resulting range is invalid.
 

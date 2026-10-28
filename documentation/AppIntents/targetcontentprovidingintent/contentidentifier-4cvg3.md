@@ -19,7 +19,7 @@ A custom string your app uses to identify the app intent.
 var contentIdentifier: String { get }
 ```
 
-#### Discussion
+## Discussion
 
 The protocol provides a default implementation of this property and sets its value to the name of the app intent type. You can also reimplement this property to provide a custom value for your app intent.
 

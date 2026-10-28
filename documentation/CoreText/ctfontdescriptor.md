@@ -25,7 +25,7 @@ class CTFontDescriptor
 typedef const struct __CTFontDescriptor * CTFontDescriptorRef;
 ```
 
-#### Overview
+## Overview
 
 A font descriptor is a dictionary of attributes (such as name, point size, and variation) that can completely specify a font.
 

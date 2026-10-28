@@ -18,7 +18,7 @@ The search field appears in the navigation bar using the specified display mode.
 static func navigationBarDrawer(displayMode: SearchFieldPlacement.NavigationBarDrawerDisplayMode) -> SearchFieldPlacement
 ```
 
-#### Discussion
+## Discussion
 
 The field appears below any navigation bar title. The system can hide the field in response to scrolling, depending on the `displayMode` that you set.
 

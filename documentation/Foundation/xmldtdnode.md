@@ -20,7 +20,7 @@ class XMLDTDNode
 @interface NSXMLDTDNode : NSXMLNode
 ```
 
-#### Overview
+## Overview
 
 [`XMLDTDNode`](./xmldtdnode.md) objects are the sole children of a [`XMLDTD`](./xmldtd.md) object (possibly along with comment nodes and processing-instruction nodes). They themselves cannot have any children.
 

@@ -19,7 +19,7 @@ var observedProgress: Progress? { get set }
 @property (strong, nullable) NSProgress * observedProgress;
 ```
 
-#### Discussion
+## Discussion
 
 Set this property when you want the progress view to automatically update its progress value using the information it receives from the [`Progress`](../../Foundation/progress.md) object. Setting this property also modifies the [`isIndeterminate`](./isindeterminate.md), [`minValue`](./minvalue.md), [`maxValue`](./maxvalue.md), and [`doubleValue`](./doublevalue.md) properties of the indicator. Set the property to `nil` when you want to update the progress manually. The default value of this property is `nil`.
 

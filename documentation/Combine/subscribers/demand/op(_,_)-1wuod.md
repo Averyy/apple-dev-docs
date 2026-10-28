@@ -21,7 +21,7 @@ Returns a Boolean that indicates a given number of elements is less than the max
 static func < (lhs: Int, rhs: Subscribers.Demand) -> Bool
 ```
 
-#### Discussion
+## Discussion
 
 If `rhs` is `.unlimited`, then the result is always `true`. Otherwise, the operator compares the demand’s `max` value to `lhs`.
 

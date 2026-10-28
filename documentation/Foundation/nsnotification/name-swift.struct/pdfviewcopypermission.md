@@ -20,7 +20,7 @@ A notification posted when the user attempts to copy to the pasteboard without t
 static let PDFViewCopyPermission: NSNotification.Name
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is the `PDFView` object itself.
 

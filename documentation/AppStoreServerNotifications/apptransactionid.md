@@ -19,7 +19,7 @@ string appTransactionId
 
 - [App Store Server Notifications changelog](./app-store-server-notifications-changelog.md)
 
-#### Discussion
+## Discussion
 
 For more information, see [`appTransactionID`](../StoreKit/apptransaction/apptransactionid.md).
 

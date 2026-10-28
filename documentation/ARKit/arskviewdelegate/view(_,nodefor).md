@@ -24,11 +24,11 @@ optional func view(_ view: ARSKView, nodeFor anchor: ARAnchor) -> SKNode?
 
 - [Providing 2D Virtual Content with SpriteKit](../providing-2d-virtual-content-with-spritekit.md)
 
-#### Return Value
+## Return Value
 
 A new SpriteKit node, which ARKit will add to the scene and update to follow its corresponding AR anchor.
 
-#### Discussion
+## Discussion
 
 Depending on the session configuration, ARKit may automatically add anchors to a session, such as the origin of the world coordinate system and detected planes. ARKit also calls this method to provide visual content for any [`ARAnchor`](../aranchor.md) objects you manually add using the session’s [`add(anchor:)`](../arsession/add%28anchor%29.md) method.
 

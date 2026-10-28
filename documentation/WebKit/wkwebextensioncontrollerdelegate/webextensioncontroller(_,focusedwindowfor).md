@@ -23,7 +23,7 @@ optional func webExtensionController(_ controller: WKWebExtensionController, foc
 - (id<WKWebExtensionWindow>) webExtensionController:(WKWebExtensionController *) controller focusedWindowForExtensionContext:(WKWebExtensionContext *) extensionContext;
 ```
 
-#### Discussion
+## Discussion
 
 This method can be optionally implemented by the app to designate the window currently in focus to the extension.
 

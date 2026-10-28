@@ -17,7 +17,7 @@ VLM media processing is normally done without regard to the colorspace. Many, th
 static func inSRGBToneCurveSpace(_ image: CIImage) -> CIImage
 ```
 
-#### Discussion
+## Discussion
 
 See [`inLinearToneCurveSpace(_:)`](./inlineartonecurvespace%28_%29.md)
 

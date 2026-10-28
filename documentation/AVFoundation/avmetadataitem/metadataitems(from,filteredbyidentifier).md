@@ -29,7 +29,7 @@ class func metadataItems(from metadataItems: [AVMetadataItem], filteredByIdentif
 
 - [Retrieving media metadata](../retrieving-media-metadata.md)
 
-#### Return Value
+## Return Value
 
 An array of metadata items that match the specified identifier.
 

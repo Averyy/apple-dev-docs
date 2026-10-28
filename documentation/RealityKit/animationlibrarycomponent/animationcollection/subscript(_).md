@@ -30,7 +30,7 @@ subscript(key: String) -> AnimationResource? { get set }
 subscript(position: AnimationLibraryComponent.AnimationCollection.Index) -> AnimationLibraryComponent.AnimationCollection.Element { get }
 ```
 
-#### Return Value
+## Return Value
 
 A subsequence of animation resources in the range of `bounds`.
 

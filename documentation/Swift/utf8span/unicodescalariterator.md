@@ -22,7 +22,7 @@ Iterate the `Unicode.Scalar`s contents of a `UTF8Span`.
 struct UnicodeScalarIterator
 ```
 
-#### Overview
+## Overview
 
 ```swift
 func printScalarValues(_ string: borrowing String) {

@@ -24,7 +24,7 @@ var outlineRoot: PDFOutline? { get set }
 @property (nonatomic, strong, nullable) PDFOutline * outlineRoot;
 ```
 
-#### Discussion
+## Discussion
 
 When a PDF document is saved, the outline tree structure is written out to the destination PDF file.
 

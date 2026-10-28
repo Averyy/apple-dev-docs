@@ -22,11 +22,11 @@ optional func multiDateSelection(_ selection: UICalendarSelectionMultiDate, canS
 - (BOOL) multiDateSelection:(UICalendarSelectionMultiDate *) selection canSelectDate:(NSDateComponents *) dateComponents;
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that indicates whether the calendar view can select the date you provide.
 
-#### Discussion
+## Discussion
 
 The calendar view displays non-selectable dates as disabled.
 

@@ -22,7 +22,7 @@ var providerIdentifier: String { get }
 @property (nonatomic, readonly) NSString * providerIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains a unique string that can be used as a purpose identifier for file coordination. The File Provider extension should use this identifier when performing coordinated reads and writes, to help prevent deadlocks.
 

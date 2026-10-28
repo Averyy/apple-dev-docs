@@ -25,7 +25,7 @@ var NSUbiquitousKeyValueStoreInitialSyncChange: Int { get }
 NSUbiquitousKeyValueStoreInitialSyncChange
 ```
 
-#### Discussion
+## Discussion
 
 The system downloads the existing keys and values from iCloud when someone logs into a device using their Apple account. If you try to write a key and value to the iCloud data store while this initial download is in progress, the system generates the [`didChangeExternallyNotification`](./nsubiquitouskeyvaluestore/didchangeexternallynotification.md) notification with this key. Schedule the write operations after a delay to give the system time to download the data and ensure the local copies match the truth in iCloud.
 

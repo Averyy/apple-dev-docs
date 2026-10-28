@@ -22,7 +22,7 @@ class CPNowPlayingPlaybackRateButton
 @interface CPNowPlayingPlaybackRateButton : CPNowPlayingButton
 ```
 
-#### Overview
+## Overview
 
 `CPNowPlayingPlaybackRateButton` is a concrete subclass of [`CPNowPlayingButton`](./cpnowplayingbutton.md). Use the button’s handler to invoke your existing functionality for cycling through playback rates, using the same [`MPChangePlaybackRateCommand`](../MediaPlayer/mpchangeplaybackratecommand.md) that you provide to [`MPRemoteCommandCenter`](../MediaPlayer/mpremotecommandcenter.md).
 

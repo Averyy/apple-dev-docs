@@ -21,7 +21,7 @@ A base type that represents console log data.
 extern UTType * const UTTypeLog;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.log`.
 

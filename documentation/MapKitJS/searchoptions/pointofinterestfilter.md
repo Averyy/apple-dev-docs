@@ -15,7 +15,7 @@ A filter for including or excluding point-of-interest categories in search resul
 pointOfInterestFilter?: PointOfInterestFilter;
 ```
 
-#### Discussion
+## Discussion
 
 If you provide a [`PointOfInterestFilter`](../pointofinterestfilter.md) and set [`includePointsOfInterest`](../searchconstructoroptions/includepointsofinterest.md) to `false` in the constructor, the filter overrides the Boolean and the search returns points of interest allowed by the filter.
 

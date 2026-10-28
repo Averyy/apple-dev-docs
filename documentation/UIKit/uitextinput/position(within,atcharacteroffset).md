@@ -23,11 +23,11 @@ optional func position(within range: UITextRange, atCharacterOffset offset: Int)
 - (UITextPosition *) positionWithinRange:(UITextRange *) range atCharacterOffset:(NSInteger) offset;
 ```
 
-#### Return Value
+## Return Value
 
 An object that represents a position in a document’s visible text.
 
-#### Discussion
+## Discussion
 
 You should implement this method if you don’t have a one-to-one correspondence between [`UITextPosition`](../uitextposition.md) objects within the given range and character offsets into a document string.
 

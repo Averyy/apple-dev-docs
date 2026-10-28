@@ -25,7 +25,7 @@ class NSFetchRequest<ResultType> where ResultType : NSFetchRequestResult
 @interface NSFetchRequest : NSPersistentStoreRequest
 ```
 
-#### Overview
+## Overview
 
 An instance of [`NSFetchRequest`](./nsfetchrequest.md) collects the criteria needed to select and optionally to sort a group of [NSManagedObject](https://developer.apple.com/library/archive/releasenotes/Cocoa/CoreDataReleaseNotes/index.html#//apple_ref/doc/uid/TP40006503-SW6) managed objects held in an [`NSPersistentStore`](./nspersistentstore.md) persistent store. A fetch request contains an [`NSEntityDescription`](./nsentitydescription.md) or an entity name that specifies which entity to search. It frequently also contains:
 

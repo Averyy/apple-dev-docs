@@ -22,7 +22,7 @@ A property wrapper type that supports creating bindings to the mutable propertie
 @propertyWrapper struct Bindable<Value>
 ```
 
-#### Overview
+## Overview
 
 Use this property wrapper to create bindings to mutable properties of a data model object that conforms to the [`Observable`](../Observation/observable.md) protocol. For example, the following code wraps the `book` input with `@Bindable`. Then it uses a [`TextField`](./textfield.md) to change the `title` property of a book, and a [`Toggle`](./toggle.md) to change the `isAvailable` property, using the `$` syntax to pass a binding for each property to those controls.
 

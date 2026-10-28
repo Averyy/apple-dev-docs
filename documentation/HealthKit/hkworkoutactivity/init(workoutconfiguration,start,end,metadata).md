@@ -24,7 +24,7 @@ init(workoutConfiguration: HKWorkoutConfiguration, start startDate: Date, end en
 - (instancetype) initWithWorkoutConfiguration:(HKWorkoutConfiguration *) workoutConfiguration startDate:(NSDate *) startDate endDate:(NSDate *) endDate metadata:(NSDictionary<NSString *,id> *) metadata;
 ```
 
-#### Discussion
+## Discussion
 
 ## Parameters
 

@@ -45,7 +45,7 @@ nonisolated
 init<S>(_ title: S, image: String, @ContentBuilder content: () -> Content) where S : StringProtocol
 ```
 
-#### Discussion
+## Discussion
 
 The item defines the primary scene of an `App`.
 

@@ -16,7 +16,7 @@ typedef enum USBDeviceInformationBits : unsigned int {
 } USBDeviceInformationBits;
 ```
 
-#### Overview
+## Overview
 
 GetUSBDeviceInformation will return a unit32_t value with bits set indicating that a particular state is present in the USB device. These bits are described here
 

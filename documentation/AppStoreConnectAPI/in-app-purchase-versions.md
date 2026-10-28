@@ -5,7 +5,7 @@
 
 Create and read draft versions of an In-App Purchase, with their localized metadata and review images.
 
-#### Overview
+## Overview
 
 Each In-App Purchase has a version, which is the container for the localizations and images related to that In-App Purchase. Use the In-App Purchase version for submitting to review.
 

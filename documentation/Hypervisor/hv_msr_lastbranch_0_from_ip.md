@@ -19,7 +19,7 @@ var HV_MSR_LASTBRANCH_0_FROM_IP: UInt32 { get }
 HV_MSR_LASTBRANCH_0_FROM_IP
 ```
 
-#### Discussion
+## Discussion
 
 This value represents one of four pairs of last branch records.
 

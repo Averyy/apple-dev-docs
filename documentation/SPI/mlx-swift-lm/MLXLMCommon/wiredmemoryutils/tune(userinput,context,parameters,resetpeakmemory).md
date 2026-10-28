@@ -17,11 +17,11 @@ Measure weights, KV cache, and prefill workspace using a user input.
 static func tune(userInput: UserInput, context: ModelContext, parameters: GenerateParameters, resetPeakMemory: Bool = true) async throws -> WiredMemoryMeasurement
 ```
 
-#### Return Value
+## Return Value
 
 A measurement snapshot for weights, KV, and workspace.
 
-#### Discussion
+## Discussion
 
 This is a convenience wrapper that runs the model’s processor to build a prepared `LMInput`, then delegates to the `tune(input:context:parameters:)` overload. It is especially useful for VLMs where images or videos are part of the input and significantly affect memory usage.
 

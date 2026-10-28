@@ -17,7 +17,7 @@ case primary
 NSBoxPrimary
 ```
 
-#### Discussion
+## Discussion
 
 Specifies the primary box appearance. This is the default box type.
 

@@ -24,7 +24,7 @@ var isActive: Bool { get }
 @property (readonly, getter=isActive) BOOL active;
 ```
 
-#### Discussion
+## Discussion
 
 If [`false`](../../Swift/false.md), this attribute is inactive and can be ignored.
 

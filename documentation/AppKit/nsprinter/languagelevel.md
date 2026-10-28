@@ -19,7 +19,7 @@ var languageLevel: Int { get }
 @property (readonly) NSInteger languageLevel;
 ```
 
-#### Return Value
+## Return Value
 
 The PostScript language level. The value is 0 if the receiver is not a PostScript printer.
 

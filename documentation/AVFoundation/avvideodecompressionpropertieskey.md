@@ -25,7 +25,7 @@ let AVVideoDecompressionPropertiesKey: String
 extern NSString * const AVVideoDecompressionPropertiesKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is specified as an [`NSDictionary`](../Foundation/nsdictionary.md) object containing other keys to pass to the video decoder.
 

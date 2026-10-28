@@ -9,7 +9,7 @@ Train a machine learning model by using Core ML to import and manage tabular dat
 **Availability**:
 - Xcode 10.1+
 
-#### Overview
+## Overview
 
 This sample playground uses the [Create ML](./CreateML.md) framework to train two [Core ML](../CoreML/CoreML.md) models, a regressor and a classifier.
 
@@ -27,7 +27,7 @@ The playground trains the regressor and classifier models, each with a group of 
 
 The playground concludes by saving each model to a file, ready for integration into an app.
 
-##### Import the data
+### Import the data
 
 Use any [`MLDataTable`](./mldatatable.md) initializer to import your data in to a data table. In this sample, the playground initializes its first data table with the contents of the CSV file embedded within the playground.
 
@@ -67,7 +67,7 @@ print(dataTable)
  */
 ```
 
-##### Isolate the relevant model data
+### Isolate the relevant model data
 
 If necessary, generate a new data table that includes only relevant columns for your model.
 
@@ -97,7 +97,7 @@ let classifierColumns = ["purpose", "solarPanels", "greenhouses", "size"]
 let classifierTable = dataTable[classifierColumns]
 ```
 
-##### Divide the data for training and evaluation
+### Divide the data for training and evaluation
 
 If you intend to evaluate your model after training, reserve some of your data table’s rows for evaluation by separating them from the training data. By evaluating your model with data not present for training, your model’s evaluation better represents its real-world performance.
 
@@ -112,7 +112,7 @@ let (classifierEvaluationTable, classifierTrainingTable) = classifierTable.rando
 
 The amount of data your model needs for evaluation versus training will vary with each app. Generally, training your model with more examples leads to better performance.
 
-##### Train the regressor
+### Train the regressor
 
 The playground trains the regressor by providing its initializer with the training data table and the name of the target column. The `targetColumn` parameter determines what information you want the model to provide in its predictions. The playground tells the regressor to predict the price of a habitat by specifying `price` as the model’s target column.
 
@@ -122,7 +122,7 @@ let regressor = try MLRegressor(trainingData: regressorTable, targetColumn: "pri
 
 During training, [Create ML](./CreateML.md) automatically sets aside a small percentage of the training data to use for validating the model’s progress during the training phase. The training process gauges the model’s performance based on the validation data. Depending on the validation accuracy, the training algorithm can adjust values within the model or even stop the training process, if the accuracy is high enough. Because the split is done randomly, you might get a different result each time you train a model.
 
-##### Evaluate the regressor
+### Evaluate the regressor
 
 To see how accurately the regressor performed during training and validation, the playground gets the [`maximumError`](./mlregressormetrics/maximumerror.md) property of its [`trainingMetrics`](./mlregressor/trainingmetrics.md) and [`validationMetrics`](./mlregressor/validationmetrics.md) properties.
 
@@ -150,7 +150,7 @@ If your regressor’s evaluation performance isn’t good enough, you may need t
 - Choose a different, specific regressor type (see “Supporting Types” under [`MLRegressor`](./mlregressor.md).
 - Make other adjustments (see [Improving Your Model’s Accuracy](./improving-your-model-s-accuracy.md)).
 
-##### Train the classifier
+### Train the classifier
 
 The playground trains the classifier to predict the purpose of a habitat. It does so by targeting a classifier on the `purpose` column of its training data table.
 
@@ -163,7 +163,7 @@ A classifier can only predict values provided in its training data, unlike a reg
 
 > **Note**: As an alternative, you may also train a classifier with numerical values instead of textual labels (strings) demonstrated here. As with textual labels, classifiers can only return specific numerical values from its training data, and will not interpolate or extrapolate new values, unlike a regressor.
 
-##### Evaluate the classifier
+### Evaluate the classifier
 
 To see how accurately the classifier performed during training and validation, the playground gets the [`classificationError`](./mlclassifiermetrics/classificationerror.md) property of its [`trainingMetrics`](./mlclassifier/trainingmetrics.md) and [`validationMetrics`](./mlclassifier/validationmetrics.md) properties.
 
@@ -194,7 +194,7 @@ If your classifier’s evaluation performance isn’t good enough, you may need 
 - Choose a different, specific classifier type (see “Supporting Types” under [`MLClassifier`](./mlclassifier.md)).
 - Make other adjustments (see [Improving Your Model’s Accuracy](./improving-your-model-s-accuracy.md)).
 
-##### Save the model
+### Save the model
 
 When you are satisfied with your modelʼs performance, save it to a file for later use in your app. The playground saves the price regressor, along with metadata, to the user’s desktop with its [`write(to:metadata:)`](./mlregressor/write%28to,metadata%29.md) method.
 
@@ -221,7 +221,7 @@ try classifier.write(to: desktopPath.appendingPathComponent("MarsHabitatPurposeC
 
 > **Note**: To see the author, version, and description of a model’s [`MLModelMetadata`](./mlmodelmetadata.md), select the model in Xcode’s project navigator after you add it to an app.
 
-##### Add the model to an app
+### Add the model to an app
 
 To add your model to an app, see [Integrating a Core ML Model into Your App](../CoreML/integrating-a-core-ml-model-into-your-app.md).
 

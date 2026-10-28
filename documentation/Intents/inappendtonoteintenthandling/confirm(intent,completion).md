@@ -29,7 +29,7 @@ optional func confirm(intent: INAppendToNoteIntent) async -> INAppendToNoteInten
 - (void) confirmAppendToNote:(INAppendToNoteIntent *) intent completion:(void (^)(INAppendToNoteIntentResponse *response)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to validate that you can append content to the note, but don’t append the content yet. If appending content involves contacting a remote server, validate that your server is available and ready to handle requests. At some point in your implementation, execute the provided completion block with a response object indicating your app’s readiness to append the content.
 

@@ -19,7 +19,7 @@ The string that the text items in the image represent.
 final var transcript: String { get }
 ```
 
-#### Discussion
+## Discussion
 
 The text appears in the reading order of the language and region.
 

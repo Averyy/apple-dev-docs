@@ -23,7 +23,7 @@ optional func session(_ session: WCSession, didReceiveMessageData messageData: D
 - (void) session:(WCSession *) session didReceiveMessageData:(NSData *) messageData;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called in response to a message sent by the counterpart process using the [`sendMessageData(_:replyHandler:errorHandler:)`](../wcsession/sendmessagedata%28_,replyhandler,errorhandler%29.md) method. This specific method is called when the counterpart specifies `nil` for the reply handler, indicating that it does not want a response. Use this method to process the message data and provide an appropriate reply. You must execute the `reply` block as part of your implementation.
 

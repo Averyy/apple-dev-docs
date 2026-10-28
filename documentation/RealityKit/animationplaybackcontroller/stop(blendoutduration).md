@@ -21,7 +21,7 @@ Stops an animation with a fade-out time.
 @preconcurrency func stop(blendOutDuration: TimeInterval)
 ```
 
-#### Discussion
+## Discussion
 
 This method has no effect if the animation is complete. After you stop the animation, the playback controller becomes invalid. Create a new one with the same resource to play the animation again.
 

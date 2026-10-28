@@ -25,7 +25,7 @@ init(sampleTime: AVAudioFramePosition, atRate sampleRate: Double)
 - (instancetype) initWithSampleTime:(AVAudioFramePosition) sampleTime atRate:(double) sampleRate;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`AVAudioTime`](../avaudiotime.md) instance.
 

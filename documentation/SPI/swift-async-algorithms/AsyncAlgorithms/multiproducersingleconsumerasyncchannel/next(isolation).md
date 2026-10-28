@@ -24,11 +24,11 @@ Returns the next element.
 mutating func next(isolation: isolated (any Actor)? = #isolation) async throws(Failure) -> Element?
 ```
 
-#### Return Value
+## Return Value
 
 The next buffered element.
 
-#### Discussion
+## Discussion
 
 If this method returns `nil` it indicates that no further values can ever be returned. The channel automatically closes when all sources have been deinited.
 

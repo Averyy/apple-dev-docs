@@ -20,7 +20,7 @@ A protocol representing the content of a reality view.
 protocol RealityViewContentProtocol
 ```
 
-#### Overview
+## Overview
 
 Do not interface with this protocol directly. Instead, use [`RealityViewContent`](./realityviewcontent.md) with your [`RealityView`](./realityview.md).
 

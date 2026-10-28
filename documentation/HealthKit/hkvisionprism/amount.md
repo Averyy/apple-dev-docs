@@ -25,7 +25,7 @@ var amount: HKQuantity { get }
 @property (nonatomic, copy, readonly) HKQuantity * amount;
 ```
 
-#### Discussion
+## Discussion
 
 This is the total correction strength, measured in [`prismDiopter()`](../hkunit/prismdiopter%28%29.md) units.
 

@@ -17,7 +17,7 @@ Implements a simple lookup table that maps each input integer to a high-dimensio
 init(embeddingCount: Int, dimensions: Int)
 ```
 
-#### Discussion
+## Discussion
 
 Typically used to embed discrete tokens for processing by neural networks.
 

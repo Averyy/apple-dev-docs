@@ -25,7 +25,7 @@ func processContentKeyResponse(_ keyResponse: AVContentKeyResponse)
 - (void) processContentKeyResponse:(AVContentKeyResponse *) keyResponse;
 ```
 
-#### Discussion
+## Discussion
 
 After receiving a content key request and calling [`makeStreamingContentKeyRequestData(forApp:contentIdentifier:options:completionHandler:)`](./makestreamingcontentkeyrequestdata%28forapp,contentidentifier,options,completionhandler%29.md) on that request, you must obtain a response to the request in accordance with the protocol used by the entity that controls the use of the media data. Use this method to provide the content key response, to make protected content available for processing.
 

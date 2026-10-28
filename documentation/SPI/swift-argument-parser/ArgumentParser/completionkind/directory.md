@@ -17,7 +17,7 @@ The completion candidates are directory names.
 static var directory: CompletionKind { get }
 ```
 
-#### Discussion
+## Discussion
 
 The directory filter is included in a completion script when it is generated.
 

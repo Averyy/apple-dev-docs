@@ -23,7 +23,7 @@ mutating func remove(_ entity: Entity)
 
 Available when `Entity` conforms to `AppEntity`.
 
-#### Discussion
+## Discussion
 
 - Parameter:
 

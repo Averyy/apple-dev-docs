@@ -23,7 +23,7 @@ func item(at url: URL, didChangeUbiquityAttributes attributes: Set<URLResourceKe
 - (void) itemAtURL:(NSURL *) url didChangeUbiquityAttributes:(NSSet<NSString *> *) attributes;
 ```
 
-#### Discussion
+## Discussion
 
 This method triggers the [NSFilePresenter](https://developer.apple.com/library/archive/releasenotes/Foundation/RN-FoundationOlderNotes/index.html#//apple_ref/doc/uid/TP40008080-TRANSLATED_CHAPTER_965-TRANSLATED_DEST_6) protocol’s [`presentedItemDidChangeUbiquityAttributes(_:)`](../nsfilepresenter/presenteditemdidchangeubiquityattributes%28_%29.md) method on any file presenters that are observing the item, even if they are running in different processes.
 

@@ -19,7 +19,7 @@ class func setUserFixedPitch(_ font: NSFont?)
 + (void) setUserFixedPitchFont:(NSFont *) font;
 ```
 
-#### Discussion
+## Discussion
 
 Specifying `aFont` as `nil` causes the default to be removed from the application domain.
 

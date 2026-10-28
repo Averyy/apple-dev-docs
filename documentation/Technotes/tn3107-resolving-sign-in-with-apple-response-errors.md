@@ -5,11 +5,11 @@
 
 Diagnose errors received by the Sign in with Apple client, or its server infrastructure, by identifying the underlying causes of common error codes and explore their potential solutions.
 
-#### Overview
+## Overview
 
 This document aids in debugging response errors relating to Sign in with Apple. This information supplements the Sign in with Apple documentation — including [Sign in with Apple REST API](https://developer.apple.com/documentation/sign_in_with_apple/sign_in_with_apple_rest_api), [Sign in with Apple JS SDK](https://developer.apple.com/documentation/sign_in_with_apple/sign_in_with_apple_js), as well as the [Authentication Services](../AuthenticationServices/AuthenticationServices.md) framework — so start with the documentation first to ensure the client is using the APIs properly.
 
-#### Authorization response errors
+## Authorization response errors
 
 Errors can occur during Sign in with Apple authorization requests — such as when the client asks permission for the user’s information after a successful Apple ID authentication. For example, the provided [client ID](https://developer.apple.com/documentation/sign_in_with_apple/sign_in_with_apple_js/incorporating_sign_in_with_apple_into_other_platforms) is invalid or unauthorized, the [request parameters](https://developer.apple.com/documentation/sign_in_with_apple/sign_in_with_apple_js/incorporating_sign_in_with_apple_into_other_platforms) are incorrect, or the [redirect URI](https://developer.apple.com/documentation/sign_in_with_apple/configuring_your_environment_for_sign_in_with_apple) is invalid or misconfigured for the web service. When errors occur, the authorizing server sends a standard OAuth error response with an error code.
 
@@ -37,7 +37,7 @@ To help troubleshoot why an authorization error occurred, review the following e
 
 For more information about OAuth error responses, see [RFC 6749](https://tools.ietf.org/html/rfc6749#section-4.1.2.1).
 
-#### Token response errors
+## Token response errors
 
 Errors can occur during Sign in with Apple token requests — such as token generation when [creating transfer identifiers](../SigninwithApple/transferring-your-apps-and-users-to-another-team.md) and [exchanging transfer identifiers](../SigninwithApple/bringing-new-apps-and-users-into-your-team.md) during user migration, or [token validation](../SigninwithAppleRESTAPI/generate-and-validate-tokens.md) for a user’s credentials. For example, the provided token is invalid or expired, the client secret — a JSON Web Token (JWT) — is invalid or expired, or the request parameters are incorrect, malformed, or not percent-encoded. When errors occur, the token validation server sends a standard OAuth error response with an error code.
 
@@ -64,7 +64,7 @@ To help troubleshoot why a token generation or validation error occurred, review
 
 For more information about JWTs and their errors, see [RFC 7519](https://tools.ietf.org/html/rfc7519) and [RFC 7523](https://tools.ietf.org/html/rfc7523#section-3).
 
-#### Revoke response errors
+## Revoke response errors
 
 Errors can occur during Sign in with Apple revoke requests — such as token revocation after a user account deletion. For example, the provided token does not match the token type hint, the client secret — a JSON Web Token (JWT) — is invalid or expired, or the request parameters are incorrect, malformed, or not percent-encoded. When errors occur, the token revocation server sends a standard OAuth error response with an error code.
 
@@ -91,7 +91,7 @@ To help troubleshoot why a token generation or validation error occurred, review
 
 For more information about JWTs and their errors, see [RFC 7519](https://tools.ietf.org/html/rfc7519) and [RFC 7523](https://tools.ietf.org/html/rfc7523#section-3).
 
-#### User migration info response errors
+## User migration info response errors
 
 Errors can occur during Sign in with Apple user migration info requests — such as access token generation, [transfer identifier generation](../SigninwithApple/transferring-your-apps-and-users-to-another-team.md), and [exchanging transfer identifiers](../SigninwithApple/bringing-new-apps-and-users-into-your-team.md) for team-scoped user credentials. For example, the provided access token is invalid or expired, the [client secret](../SigninwithAppleRESTAPI/generate-and-validate-tokens.md) is invalid or expired, the request parameters are incorrect, or the user has [revoked access](https://support.apple.com/en-us/HT210426) to the client. When errors occur, the user migration info server sends a standard OAuth error response with an error code.
 
@@ -117,7 +117,7 @@ To help troubleshoot why a user migration token generation or validation error o
 
 For more information about OAuth error responses, see [RFC 6749](https://tools.ietf.org/html/rfc6749#section-4.1.2.1).
 
-#### Possible reasons for invalid request errors
+## Possible reasons for invalid request errors
 
 An `invalid_request` error can occur during a Sign in with Apple request for several reasons, but most commonly for the following scenarios:
 
@@ -127,7 +127,7 @@ An `invalid_request` error can occur during a Sign in with Apple request for sev
 - The request includes multiple user credentials — a mismatched access token, `client_id`, and `client_secret` subject (`sub`) values, or duplicate parameters.
 - The user has revoked authorization for the client.
 
-#### Possible reasons for invalid client errors
+## Possible reasons for invalid client errors
 
 An `invalid_client` error can occur during a Sign in with Apple request for several reasons, but most commonly while providing [client credentials](../SigninwithAppleRESTAPI/generate-and-validate-tokens.md) for server validation:
 
@@ -143,7 +143,7 @@ To validate the `client_secret` and its signature, see [JWT.io](https://jwt.io) 
 - Supports the required headers and payload claims
 - Does not decode using `ASN.1 DER` byte format
 
-#### Possible reasons for invalid grant errors
+## Possible reasons for invalid grant errors
 
 An `invalid_grant` error can occur during a Sign in with Apple request for several reasons, but most commonly for the following scenarios while performing [token validation](../SigninwithAppleRESTAPI/generate-and-validate-tokens.md).
 
@@ -157,7 +157,7 @@ An `invalid_grant` error can occur during a Sign in with Apple request for sever
 - The `client_id` does not match the client for which the `refresh_token` was issued.
 - The `refresh_token` is invalid or has expired.
 
-#### Revision History
+## Revision History
 
 - **2024-01-16** Updated content to include more underlying causes of response errors, and added token revoke endpoint.
 - **2022-05-24** Made minor editorial changes.

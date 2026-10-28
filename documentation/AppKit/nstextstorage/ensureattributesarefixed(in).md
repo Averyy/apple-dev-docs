@@ -19,7 +19,7 @@ func ensureAttributesAreFixed(in range: NSRange)
 - (void) ensureAttributesAreFixedInRange:(NSRange) range;
 ```
 
-#### Discussion
+## Discussion
 
 An `NSTextStorage` object using lazy attribute fixing is required to call this method before accessing any attributes within `range`. This method gives attribute fixing a chance to occur if necessary. `NSTextStorage` subclasses wishing to support laziness must call this method from all attribute accessors they implement.
 

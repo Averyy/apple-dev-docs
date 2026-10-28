@@ -18,7 +18,7 @@ case VMNET_BUFFER_EXHAUSTED
 VMNET_BUFFER_EXHAUSTED
 ```
 
-#### Discussion
+## Discussion
 
 Indicates failure due to buffers being temporarily exhausted in the kernel.
 

@@ -27,7 +27,7 @@ var alpha: CGFloat { get set }
 
 - [Configuring the cells for your table](../configuring-the-cells-for-your-table.md)
 
-#### Discussion
+## Discussion
 
 The value of this property is a floating-point number in the range `0.0` to `1.0`, where `0.0` represents totally transparent and `1.0` represents totally opaque. Changing the value of this property updates the alpha value of the current view only. However, the transparency imparted by that alpha value affects all of the view’s contents, including its subviews. For example, a subview with an alpha value of `1.0` that is embedded in a parent view with an alpha value of `0.5,` appears onscreen as if its alpha value is also `0.5`.
 

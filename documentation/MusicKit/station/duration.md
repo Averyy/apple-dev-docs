@@ -21,7 +21,7 @@ The duration of the stream.
 var duration: TimeInterval? { get }
 ```
 
-#### Discussion
+## Discussion
 
 Live and programmed stations don’t have a duration.
 

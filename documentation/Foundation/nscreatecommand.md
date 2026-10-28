@@ -20,7 +20,7 @@ class NSCreateCommand
 @interface NSCreateCommand : NSScriptCommand
 ```
 
-#### Overview
+## Overview
 
 An instance of `NSCreateCommand` creates the specified scriptable object (such as a document), optionally supplying the new object with the specified attributes. This command corresponds to AppleScript’s `make` command.
 

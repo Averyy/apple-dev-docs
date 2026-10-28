@@ -19,7 +19,7 @@ Creates an object with the per frame attributes that control the appearance of a
 @interface CNRenderingSessionFrameAttributes : NSObject
 ```
 
-#### Overview
+## Overview
 
 The object exposes properties such as focus disparity and f-stop. It initializes these to the values that the original recorded movie used for that frame. However, you can change them before rendering to adjust focus and aperture.
 

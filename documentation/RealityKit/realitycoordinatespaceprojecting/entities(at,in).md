@@ -20,11 +20,11 @@ Finds all the hit entities when projecting a ray from a starting point.
 func entities(at point: CGPoint, in space: some CoordinateSpaceProtocol) -> [Entity]
 ```
 
-#### Return Value
+## Return Value
 
 A list of entities at `point`. Returns an empty array if no entities were found.
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**: RealityKit performs hit tests (ray-casts) against collision shapes. Entities without a valid [`CollisionComponent`](../collisioncomponent.md) are ignored by hit tests.
 

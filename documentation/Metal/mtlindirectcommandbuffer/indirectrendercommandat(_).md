@@ -25,7 +25,7 @@ func indirectRenderCommandAt(_ commandIndex: Int) -> any MTLIndirectRenderComman
 - (id<MTLIndirectRenderCommand>) indirectRenderCommandAtIndex:(NSUInteger) commandIndex;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method only if the indirect command buffer contains rendering commands.
 

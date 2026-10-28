@@ -25,7 +25,7 @@ var manufacturer: (UInt8, UInt8, UInt8)
 uint8_t manufacturer[3];
 ```
 
-#### Discussion
+## Discussion
 
 This value is 3 bytes long.
 

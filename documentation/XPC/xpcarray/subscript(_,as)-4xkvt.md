@@ -21,7 +21,7 @@ Get a value in this array as a UUID.
 subscript(index: Int, as type: uuid_t.Type = uuid_t.self) -> uuid_t? { get }
 ```
 
-#### Return Value
+## Return Value
 
 A UUID value or `nil` if no such value was found.
 

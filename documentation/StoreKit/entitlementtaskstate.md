@@ -21,7 +21,7 @@ The state of an entitlement task.
 enum EntitlementTaskState<Value>
 ```
 
-#### Overview
+## Overview
 
 To get an entitlement task state, use [`currentEntitlementTask(for:priority:action:)`](../SwiftUI/view/currententitlementtask%28for,priority,action%29.md) or [`subscriptionStatusTask(for:priority:action:)`](../SwiftUI/view/subscriptionstatustask%28for,priority,action%29.md) on a [`View`](../SwiftUI/view.md).
 

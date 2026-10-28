@@ -22,7 +22,7 @@ var sequenceCount: Int { get }
 @property (readonly) NSInteger sequenceCount;
 ```
 
-#### Discussion
+## Discussion
 
 If this photo is part of a bracketed capture (requested with the [`AVCapturePhotoBracketSettings`](../avcapturephotobracketsettings.md) class), this property indicates the current result’s count in the sequence, starting with `1` for the first result.
 

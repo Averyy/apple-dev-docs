@@ -25,11 +25,11 @@ init(block: @escaping (Any?, [String : Any]?) -> Bool)
 + (NSPredicate *) predicateWithBlock:(BOOL (^)(id evaluatedObject, NSDictionary<NSString *,id> *bindings)) block;
 ```
 
-#### Return Value
+## Return Value
 
 A new predicate by that evaluates objects using `block`.
 
-#### Discussion
+## Discussion
 
 In macOS 10.6 and later, Core Data supports block-based predicates in the in-memory and atomic stores, but not in the SQLite-based store.
 

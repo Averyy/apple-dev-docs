@@ -19,7 +19,7 @@ class NSStatusBar
 @interface NSStatusBar : NSObject
 ```
 
-#### Overview
+## Overview
 
 A status item (an instance of [`NSStatusItem`](./nsstatusitem.md)) can be displayed with text or an icon, can provide a menu and a target-action message when clicked, or can be a fully customized view that you create. Use status items sparingly and only if the alternatives (such as a Dock menu, preference pane, or status window) are not suitable. Because there is limited space in which to display status items, status items are not guaranteed to be available at all times. For this reason, do not rely on them being available and always provide a user preference for hiding your application’s status items to free up space in the menu bar.
 

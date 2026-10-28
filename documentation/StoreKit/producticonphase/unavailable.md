@@ -21,7 +21,7 @@ The promotional image isn’t available for download.
 case unavailable
 ```
 
-#### Discussion
+## Discussion
 
 You set up promotional images for Apple In-App Purchases in App Store Connect.
 

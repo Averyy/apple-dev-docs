@@ -19,11 +19,11 @@ func highlightColor(withFrame cellFrame: NSRect, in controlView: NSView) -> NSCo
 - (NSColor *) highlightColorWithFrame:(NSRect) cellFrame inView:(NSView *) controlView;
 ```
 
-#### Return Value
+## Return Value
 
 The color the receiver uses when drawing the selection highlight.
 
-#### Discussion
+## Discussion
 
 You should not assume that a cell would necessarily want to draw itself with the value returned from [`selectedControlColor`](../nscolor/selectedcontrolcolor.md). A cell may wish to draw with different a selection highlight color depending on such things as the key state of its `controlView`.
 

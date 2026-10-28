@@ -18,7 +18,7 @@ An error Nearby Interaction reports.
 struct NIError
 ```
 
-#### Overview
+## Overview
 
 Implement the [`session(_:didInvalidateWith:)`](./nisessiondelegate/session%28_,didinvalidatewith%29.md) callback to check for errors.
 

@@ -15,7 +15,7 @@ A WebPreferences object.
 extern NSAttributedStringDocumentReadingOptionKey NSWebPreferencesDocumentOption;
 ```
 
-#### Discussion
+## Discussion
 
 For HTML only. If not present, a default set of preferences is used. The previous string constant was `@"WebPreferences"`.
 

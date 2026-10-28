@@ -19,7 +19,7 @@ class NSScrubberTextItemView
 @interface NSScrubberTextItemView : NSScrubberItemView
 ```
 
-#### Overview
+## Overview
 
 Provide the text you want to display in the scrubber item to the [`title`](./nsscrubbertextitemview/title.md) property. If you want finer control over the appearance of the text, you can access the underlying text field using the [`textField`](./nsscrubbertextitemview/textfield.md) property.
 

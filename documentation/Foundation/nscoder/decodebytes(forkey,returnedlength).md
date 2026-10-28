@@ -25,7 +25,7 @@ func decodeBytes(forKey key: String, returnedLength lengthp: UnsafeMutablePointe
 - (const uint8_t *) decodeBytesForKey:(NSString *) key returnedLength:(NSUInteger *) lengthp;
 ```
 
-#### Discussion
+## Discussion
 
 The buffer’s length is returned by reference in `lengthp`. The returned bytes are immutable. Subclasses must override this method if they perform keyed coding.
 

@@ -15,13 +15,13 @@ Application details and metadata.
 object AppDetails
 ```
 
-#### Discussion
+## Discussion
 
 The `AppDetails` object represents the App Store metadata for an app retrieved via [`Get App Details by Adam ID`](./get-app-details-by-adam-id.md). The `id` field is the Adam ID, which is the same value used as `promotedObjectId` when targeting this app.
 
 Use `deviceClasses` to verify that your campaign’s device-class targeting is compatible with the app before launching. Targeting an App Store country or region not in `availableStorefronts` will result in no impressions for that market.
 
-##### Example
+### Example
 
 ```json
 {

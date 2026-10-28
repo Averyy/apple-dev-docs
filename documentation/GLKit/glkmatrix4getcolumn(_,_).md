@@ -22,11 +22,11 @@ func GLKMatrix4GetColumn(_ matrix: GLKMatrix4, _ column: Int32) -> GLKVector4
 static GLKVector4 GLKMatrix4GetColumn(GLKMatrix4 matrix, int column);
 ```
 
-#### Return Value
+## Return Value
 
 A vector representing the column retrieved from the matrix.
 
-#### Discussion
+## Discussion
 
 The first three components of column `3` provide the translation values `tx`, `ty` and `tz`.
 

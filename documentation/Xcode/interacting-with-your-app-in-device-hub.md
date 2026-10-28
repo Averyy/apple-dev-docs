@@ -5,7 +5,7 @@
 
 Use Device Hub to control interactions with your apps on simulated and physical devices.
 
-#### Overview
+## Overview
 
 You use similar controls on your Mac to interact with your app on a simulated and physical device that appears in the Device Hub canvas.
 
@@ -17,7 +17,7 @@ Device Hub surrounds the screen content with a bezel that resembles the target d
 
 To interact with a simulated Apple Vision Pro device in Device Hub, see [Interacting with your visionOS app in Device Hub](./interacting-with-your-visionos-app-in-device-hub.md). To take screenshots and record videos, see [Capturing screenshots and videos from devices](./capturing-screenshots-and-videos-from-devices.md).
 
-#### Interact with your iOS or iPadOS app in the canvas
+## Interact with your iOS or iPadOS app in the canvas
 
 Use your Mac’s pointer, trackpad or Magic Mouse, keyboard, menu items, and buttons to make gestures on a simulated iOS or iPadOS device.
 
@@ -43,7 +43,7 @@ Activate device buttons by clicking on parts of the device bezel:
 | Click or hold Volume Down | Click or hold the Volume Down button on the device bezel or choose Device > Sound > Decrease Volume. |
 | Click the Action button | Click the Action button on the device bezel. |
 
-#### Interact with your iOS app on an iPhone Duo simulator
+## Interact with your iOS app on an iPhone Duo simulator
 
 To ensure your iOS app adapts seamlessly to both iPhone Duo displays, simulate folding an iPhone Duo using the controls below the bezel in the canvas:
 
@@ -55,7 +55,7 @@ To fold the device to any angle, hold the Option key while dragging the slider t
 
 ![A screenshot of Device Hub that shows an iPhone Duo simulator running a sample code app in the partially open device pose. The device pose buttons appear below the bezel.](https://developer.apple.com/tutorials/images/com.apple.Xcode/running-app-in-iphone-duo-simulator@2x.png)
 
-#### Interact with your watchOS app in the canvas
+## Interact with your watchOS app in the canvas
 
 Use the pointer, trackpad or Magic Mouse, keyboard, and menu items to make gestures on a simulated watchOS device.
 
@@ -75,7 +75,7 @@ Activate device buttons using menu items or by clicking on parts of the device b
 | Click the Side button | Click the Side button on the device bezel. |
 | Click the Action button | Click the Action button on the device bezel or choose Controls > Action Button. |
 
-#### Interact with your tvOS app in the canvas
+## Interact with your tvOS app in the canvas
 
 Use the pointer, keyboard, and menu items to make gestures on a simulated tvOS device.
 
@@ -88,11 +88,11 @@ Use the pointer, keyboard, and menu items to make gestures on a simulated tvOS d
 | Trigger the action for the current focus | Press the Return key. |
 | Move up one level in the navigation hierarchy | Press the Escape key. |
 
-##### Slow down animations to diagnose problems
+### Slow down animations to diagnose problems
 
 You can slow down the rate of animations to help identify any layout, logic, or performance issues that interfere with smooth animations. To turn on or off slow animations, choose Device > Slow Animations.
 
-#### Handle camera and microphone access conflicts on physical devices
+## Handle camera and microphone access conflicts on physical devices
 
 You can’t access the camera or microphone while interacting with a physical device in Device Hub.
 

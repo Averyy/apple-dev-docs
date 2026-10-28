@@ -17,7 +17,7 @@ Creates a line item with the given label and string value.
 init(label: String, value: String)
 ```
 
-#### Discussion
+## Discussion
 
 Localize the label and value to the customer’s locale.
 

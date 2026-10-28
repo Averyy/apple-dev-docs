@@ -19,7 +19,7 @@ A function that allows the current app to perform updates to document registrati
 func performRegistrationUpdates() async
 ```
 
-#### Discussion
+## Discussion
 
 The system calls this function periodically, including when the person enables the current app to provide documents.
 

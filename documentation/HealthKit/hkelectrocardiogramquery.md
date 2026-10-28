@@ -24,7 +24,7 @@ class HKElectrocardiogramQuery
 @interface HKElectrocardiogramQuery : HKQuery
 ```
 
-#### Overview
+## Overview
 
 Use the [`HKElectrocardiogramQuery`](./hkelectrocardiogramquery.md) query to access the individual voltage measurements associated with an [`HKElectrocardiogram`](./hkelectrocardiogram.md) sample.
 

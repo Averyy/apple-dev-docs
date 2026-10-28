@@ -20,7 +20,7 @@ var selectedOutputType: String? { get set }
 @property (nonatomic, strong, nullable) NSString * selectedOutputType;
 ```
 
-#### Discussion
+## Discussion
 
 Getting this value provides the type of output the action is configured to produce. For example, your action may have the ability to output files and folders, or documents, depending on how it’s configured or what it encounters while processing.
 

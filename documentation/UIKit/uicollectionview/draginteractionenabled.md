@@ -22,7 +22,7 @@ var dragInteractionEnabled: Bool { get set }
 @property (nonatomic) BOOL dragInteractionEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 To support dragging content from the collection view to a view in your app or another app, set this property value to [`true`](../../Swift/true.md). To disable this behavior, set the value to [`false`](../../Swift/false.md). The default value is [`true`](../../Swift/true.md).
 

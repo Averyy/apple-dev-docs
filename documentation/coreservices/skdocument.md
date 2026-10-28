@@ -16,7 +16,7 @@ Defines an opaque data type representing a document’s URL.
 typealias SKDocument = CFTypeRef
 ```
 
-#### Discussion
+## Discussion
 
 A document URL object is a generic location specification for a document. It is built from a document scheme, a parent document, and a document name. You can convert back and forth between document URL objects and `CFURL` objects using Search Kit’s [`SKDocumentCreateWithURL(_:)`](./api-1442564-skdocumentcreatewithurl.md) and [`SKDocumentCopyURL(_:)`](./api-1449624-skdocumentcopyurl.md) functions.
 

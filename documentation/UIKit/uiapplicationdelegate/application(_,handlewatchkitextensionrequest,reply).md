@@ -27,7 +27,7 @@ optional func application(_ application: UIApplication, handleWatchKitExtensionR
 - (void) application:(UIApplication *) application handleWatchKitExtensionRequest:(NSDictionary *) userInfo reply:(void (^)(NSDictionary *replyInfo)) reply;
 ```
 
-#### Discussion
+## Discussion
 
 If your iOS app and watchOS app coordinate efforts to perform certain tasks, implement this method and use it to respond to requests from the watchOS app. After finishing the request, execute the provided `reply` block (if any) to return the results.
 

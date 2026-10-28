@@ -5,7 +5,7 @@
 
 Encoder attributes specify the audio and video configuration values for the output format.
 
-#### Overview
+## Overview
 
 You specify the encoder attributes as the keys and values in the dictionary the [`settingsAttributes()`](../professional_video_applications/compressorextensionsettings/settingsattributes%28%29.md) method returns. The available encoder attribute keys are listed below.
 

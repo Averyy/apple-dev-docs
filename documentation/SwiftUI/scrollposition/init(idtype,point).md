@@ -21,7 +21,7 @@ Creates a new scroll position to be scrolled to the provided point.
 init(idType: (some Hashable & Sendable).Type = Never.self, point: CGPoint)
 ```
 
-#### Discussion
+## Discussion
 
 You can provide a type to the scroll position. This type should match the type of IDs associated to views in a scroll target layout. The scroll view will look for those views to update the value of the scroll position with.
 

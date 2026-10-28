@@ -23,7 +23,7 @@ static var search: ContentUnavailableView<SearchUnavailableContent.Label, Search
 
 Available when `Label` is `SearchUnavailableContent.Label`, `Description` is `SearchUnavailableContent.Description`, and `Actions` is `SearchUnavailableContent.Actions`.
 
-#### Discussion
+## Discussion
 
 A `ContentUnavailableView` initialized with this static member is expected to be contained within a searchable view hierarchy. Such a configuration enables the search query to be parsed into the view’s description.
 

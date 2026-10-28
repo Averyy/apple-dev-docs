@@ -20,7 +20,7 @@ A menu style that displays a bordered button that toggles the display of the men
 
 Available when `Self` is `BorderedButtonMenuStyle`.
 
-#### Discussion
+## Discussion
 
 On macOS, the button displays an arrow indicating that it presents a menu.
 

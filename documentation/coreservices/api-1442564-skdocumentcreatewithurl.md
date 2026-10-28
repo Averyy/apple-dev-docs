@@ -19,11 +19,11 @@ func SKDocumentCreateWithURL(_ inURL: CFURL!) -> Unmanaged<SKDocument>!
 SKDocumentRef SKDocumentCreateWithURL(CFURLRef inURL);
 ```
 
-#### Return Value
+## Return Value
 
 The new document URL object, or `NULL` if the document URL object could not be created.
 
-#### Discussion
+## Discussion
 
 Use `SKDocumentCreateWithURL` to create a unique reference to a file or to another, arbitrary URL that your application will use as a document URL object (of type [`SKDocument`](./skdocument.md)). When your application no longer needs the document URL object, dispose of it by calling [`CFRelease`](../CoreFoundation/cfrelease.md).
 

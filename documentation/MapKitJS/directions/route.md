@@ -15,11 +15,11 @@ Retrieves directions and estimated travel time based on the specified start and 
 route(request: DirectionsRequest): Promise<DirectionsResponse>;
 ```
 
-#### Return Value
+## Return Value
 
 A promise that resolves with a [`DirectionsResponse`](../directionsresponse.md) on success, or rejects with an `Error` on failure.
 
-#### Discussion
+## Discussion
 
 Call the [`route()`](./route.md) method to get directions.
 

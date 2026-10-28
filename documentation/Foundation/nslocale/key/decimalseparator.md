@@ -25,7 +25,7 @@ static let decimalSeparator: NSLocale.Key
 extern NSLocaleKey const NSLocaleDecimalSeparator;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is an `NSString` object; for example, `"."` or `","`.
 

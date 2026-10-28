@@ -20,11 +20,11 @@ func servicePrincipal() -> Any!
 - (id) servicePrincipal;
 ```
 
-#### Return Value
+## Return Value
 
 An object used for XPC communication with the out-of-process service principal.
 
-#### Discussion
+## Discussion
 
 If this method returns `nil`, the host app is unable to communicate with your plug-in’s XPC service.
 

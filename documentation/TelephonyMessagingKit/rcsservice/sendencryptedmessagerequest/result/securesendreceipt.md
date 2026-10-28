@@ -15,7 +15,7 @@ The send receipt of the message.
 let secureSendReceipt: RCSMessage.SecureSendReceipt?
 ```
 
-#### Discussion
+## Discussion
 
 Use this to re-send a message when the recipient device fails to decrypt the message.
 

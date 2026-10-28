@@ -23,11 +23,11 @@ static var isCancelled: Bool { get }
 
 Available when `Success` is `Never` and `Failure` is `Never`.
 
-#### Discussion
+## Discussion
 
 After the value of this property becomes `true`, it remains `true` indefinitely. There is no way to uncancel a task.
 
-##### Interaction with Task Cancellation Shields
+### Interaction with Task Cancellation Shields
 
 Cancellation may be suppressed by an active task cancellation shield (`withTaskCancellationShield(operation:)-(()->Value)`), which may cause `isCancelled` to return `false` even though the task has been cancelled externally.
 

@@ -19,11 +19,11 @@ func drawRepresentation(_ imageRep: NSImageRep, in rect: NSRect) -> Bool
 - (BOOL) drawRepresentation:(NSImageRep *) imageRep inRect:(NSRect) rect;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the image was successfully drawn; otherwise, returns [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 This method fills the specified rectangle with the image’s current background color and then sends a message to the specified image representation asking if to draw itself. If the image supports the ability to scale itself when it is resized, this method sends a [`draw(in:)`](../nsimagerep/draw%28in%29.md) message; otherwise, it sends a [`draw(at:)`](../nsimagerep/draw%28at%29.md) message.
 

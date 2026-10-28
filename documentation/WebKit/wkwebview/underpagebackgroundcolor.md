@@ -41,7 +41,7 @@ var underPageBackgroundColor: NSColor! { get set }
 @property (nonatomic, copy, null_resettable) NSColor * underPageBackgroundColor;
 ```
 
-#### Discussion
+## Discussion
 
 The web view derives the default value of this property from the content of the page, using the background colors of the `<html>` and `<body>` elements with the background color of the web view. To override the default color, set this property to a new color.
 

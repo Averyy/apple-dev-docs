@@ -15,11 +15,11 @@ Gets or sets information about the system and environment.
 int sysctlbyname(const char *, void *, size_t *, void *, size_t);
 ```
 
-#### Return Value
+## Return Value
 
 0 on success, or an error code that indicates a problem occurred. Possible error codes include `EFAULT`, `EINVAL`, `ENOMEM`, `ENOTDIR`, `EISDIR`, `ENOENT`, and `EPERM`.
 
-#### Discussion
+## Discussion
 
 This function offers a programmatic alternative to the sysctl command-line tool. Use it to get or set relevant system information, and to make decisions dynamically based on the current system information. For example, you might use the `hw.cachelinesize` attribute to align data in your data structures. Making decisions dynamically is especially important for universal binaries that run on Apple silicon or Intel-based Mac computers. 
 

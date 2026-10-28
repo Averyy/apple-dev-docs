@@ -24,7 +24,7 @@ case full
 PHLivePhotoViewPlaybackStyleFull
 ```
 
-#### Discussion
+## Discussion
 
 This style matches the effect seen when pressing on a photo in the Photos app.
 

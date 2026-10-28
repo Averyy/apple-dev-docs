@@ -24,7 +24,7 @@ var directoryForTemporaryFiles: URL? { get set }
 @property (nonatomic, copy, nullable) NSURL * directoryForTemporaryFiles;
 ```
 
-#### Discussion
+## Discussion
 
 In some configurations, such as performing multipass encoding, an asset writer may need to write temporary files. Use this property value to set the file-system location where it writes temporary files. The system deletes all temporary files after it finishes writing successfully, fails, or you cancel the writing session.
 

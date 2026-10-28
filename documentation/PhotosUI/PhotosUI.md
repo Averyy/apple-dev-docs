@@ -15,7 +15,7 @@ Present a person’s photo library using a picker interface, display Live Photos
 - visionOS 1.0+
 - watchOS 9.0+
 
-#### Overview
+## Overview
 
 PhotosUI offers a photo picker that lets people view their library and choose one or more photos for your app to display or process. The picker renders in a system view and only gives your app access to the photos someone chooses, which facilitates a user experience with enhanced privacy.
 

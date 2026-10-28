@@ -19,7 +19,7 @@ func moveColumn(_ oldIndex: Int, toColumn newIndex: Int)
 - (void) moveColumn:(NSInteger) oldIndex toColumn:(NSInteger) newIndex;
 ```
 
-#### Discussion
+## Discussion
 
 This method posts [`columnDidMoveNotification`](./columndidmovenotification.md) to the default notification center.
 

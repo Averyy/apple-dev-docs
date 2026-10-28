@@ -21,7 +21,7 @@ class QLPreviewSceneActivationConfiguration
 @interface QLPreviewSceneActivationConfiguration : UIWindowSceneActivationConfiguration
 ```
 
-#### Overview
+## Overview
 
 This class provides the configuration for a prominent scene presentation of a preview, either from a swipe gesture or a menu action. The user can detach the prominent Quick Look window and display it independently.
 

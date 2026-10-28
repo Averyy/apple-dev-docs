@@ -21,11 +21,11 @@ nonisolated
 func localVersion(ofAssetPackWithID assetPackID: String) throws -> Int
 ```
 
-#### Return Value
+## Return Value
 
 The asset pack’s version number.
 
-#### Discussion
+## Discussion
 
 > **Throws**: [`ManagedBackgroundAssetsError.assetPackNotFound(withID:)`](../managedbackgroundassetserror/assetpacknotfound%28withid%29.md) when no asset pack with the specified ID is available locally.
 

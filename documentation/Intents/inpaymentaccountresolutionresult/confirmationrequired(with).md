@@ -23,11 +23,11 @@ class func confirmationRequired(with paymentAccountToConfirm: INPaymentAccount?)
 + (instancetype) confirmationRequiredWithPaymentAccountToConfirm:(INPaymentAccount *) paymentAccountToConfirm;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INPaymentAccountResolutionResult`](../inpaymentaccountresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method when you can resolve the parameter to a single value but want the user to confirm that value.
 

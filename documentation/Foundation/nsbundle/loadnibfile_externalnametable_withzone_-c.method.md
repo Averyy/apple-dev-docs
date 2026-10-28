@@ -17,11 +17,11 @@ Unarchives the contents of a nib file located in the receiver’s bundle.
 - (BOOL) loadNibFile:(NSString *) fileName externalNameTable:(NSDictionary *) context withZone:(NSZone *) zone;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the nib file was loaded successfully; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 This method searches the language-specific project (`.lproj`) directories for the specified nib file. If the file is not there, it searches the bundle’s `Resources` directory for a non-localized version of the file.
 

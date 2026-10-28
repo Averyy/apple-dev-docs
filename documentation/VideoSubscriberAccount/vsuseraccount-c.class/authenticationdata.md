@@ -19,7 +19,7 @@ A string that represents an authentication token for the user account to authent
 @property (nonatomic, copy, nullable) NSString * authenticationData;
 ```
 
-#### Discussion
+## Discussion
 
 The authentication token or data used to maintain the authentication state for the account in your application. The system provides the token or data to the application JS during account refresh requests so that the account can fetch billing cycle dates, account validity, or any other account data.
 

@@ -19,11 +19,11 @@ func mark(forStyle style: Int, at range: NSRange) -> [AnyHashable : Any]!
 - (NSDictionary *) markForStyle:(NSInteger) style atRange:(NSRange) range;
 ```
 
-#### Return Value
+## Return Value
 
 The dictionary of text attributes.
 
-#### Discussion
+## Discussion
 
 This utility function can be called by input methods to mark each range (i.e. clause ) of marked text. T
 

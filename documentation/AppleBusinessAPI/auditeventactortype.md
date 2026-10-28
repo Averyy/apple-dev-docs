@@ -21,7 +21,7 @@ string AuditEventActorType
 - `API_USER`
 - `SYSTEM`
 
-#### Discussion
+## Discussion
 
 - Possible Values
 

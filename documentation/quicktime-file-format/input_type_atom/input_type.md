@@ -6,7 +6,7 @@
 
 A 32-bit integer that specifies the type of data that is to be received from the secondary data source.
 
-#### Overview
+## Overview
 
 Valid values for this field are as follows.
 

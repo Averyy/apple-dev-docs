@@ -25,7 +25,7 @@ class NSMutableSet
 @interface NSMutableSet : NSSet
 ```
 
-#### Overview
+## Overview
 
 You can use this type in Swift instead of a [`Set`](../Swift/set.md) in cases that require reference semantics.
 
@@ -35,11 +35,11 @@ The [`NSCountedSet`](./nscountedset.md) class, which is a concrete subclass of `
 
 NSMutableSet is “toll-free bridged” with its Core Foundation counterpart, [`CFMutableSet`](../CoreFoundation/cfmutableset.md). See [Toll-Free Bridging](https://developer.apple.com/library/archive/documentation/General/Conceptual/CocoaEncyclopedia/Toll-FreeBridgin/Toll-FreeBridgin.html#//apple_ref/doc/uid/TP40010810-CH2) for more information.
 
-##### Subclassing Notes
+### Subclassing Notes
 
 There should be little need of subclassing. If you need to customize behavior, it is often better to consider composition instead of subclassing.
 
-###### Methods to Override
+#### Methods to Override
 
 In a subclass, you must override both of its primitive methods:
 

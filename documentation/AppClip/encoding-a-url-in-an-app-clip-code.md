@@ -5,7 +5,7 @@
 
 Choose an invocation URL for your App Clip Code that you can encode efficiently.
 
-#### Overview
+## Overview
 
 Creating an App Clip Code involves the following key tasks:
 
@@ -17,7 +17,7 @@ Although App Clip Codes are a great way to launch your App Clip, an App Clip Cod
 
 When you create an App Clip Code, you need to find the best tradeoff between the limited capacity to store information in the App Clip Code and the need to encode more information. Therefore, choosing the right URLs to launch your App Clip from an App Clip Code is important.
 
-##### Review App Clip experiences and invocation URLs
+### Review App Clip experiences and invocation URLs
 
 Users launch your App Clip with an invocation; for example, by tapping a link in the Messages app, by scanning a QR code, or by scanning an App Clip Code. To support invocations from App Clip Codes:
 
@@ -31,7 +31,7 @@ When you use the advanced App Clip experience, you support invocations from QR c
 
 For more information, refer to [Configuring App Clip experiences](./configuring-the-launch-experience-of-your-app-clip.md).
 
-##### Choose a valid invocation URL
+### Choose a valid invocation URL
 
 In general, the invocation URL encoded in an App Clip Code follows the same pattern as other URLs: `https://[host][/<path>][?<query>][#<fragment>]`. However, the URL encoded in an App Clip Code must meet additional requirements:
 
@@ -39,7 +39,7 @@ In general, the invocation URL encoded in an App Clip Code follows the same patt
 - The `host` segment is the invocation URL’s *authority component* and can only contain the lowercase ASCII characters `a` to `z`, `.`, and `-`.
 - The invocation URL may have zero or more path and query components, followed by an optional fragment. They can use the following ASCII characters: `a` to `z`, `A` to `Z`, `0` to `9`, and `/#?=%-._,+;:&`.
 
-##### Follow practices that allow for efficient encoding
+### Follow practices that allow for efficient encoding
 
 An App Clip Code can only contain a limited amount of information, and as a result, the tools you use to create the code compress the encoded invocation URL. The underlying encoding algorithm can encode some words efficiently, while some characters may reduce the algorithm’s efficiency. As a result, the exact length of an invocation URL you can encode in an App Clip Code varies based on the ASCII characters and words you use.
 
@@ -54,11 +54,11 @@ To ensure you can encode your invocation URL in an App Clip Code:
 - Replace long query string argument names and values with short strings. For example, use `https://example.com/?p=0` instead of `https://example.com/?status=view`.
 - Omit a trailing slash (`/`) character at the end of the URL. For example, use `https://example.com` instead of `https://example.com/`.
 
-##### Use a separate subdomain
+### Use a separate subdomain
 
 Optionally, you can use the special subdomain `appclip` to define URLs specific to App Clip Codes; for example, `https://appclip.example.com`. The algorithm that generates App Clip Codes encodes this subdomain more efficiently than others. Choosing `appclip` as a subdomain also allows URLs to have short path and query components by eliminating the possibility of conflicts with an unrelated functionality of your website. If you use this subdomain, it must appear as the first subdomain of the URL’s host.
 
-##### Choose a single-word path component
+### Choose a single-word path component
 
 If possible, don’t use any path components at all. However, if you must use them, choose from the list below so the algorithm that creates the App Clip Code can encode the path components more efficiently. For example, you might use `https://example.com/brand`.
 
@@ -88,15 +88,15 @@ Always use the fewest possible path components.
 
 Note that the words in the list above don’t lead to more efficient encoding if you use them as a subdomain or query parameter.
 
-##### Use ordered argument names for query components
+### Use ordered argument names for query components
 
 If you use no path component, or a single-word path component from the above list of special words and query components, use the special ordered argument names `p`, `p1`, `p2`, `p3`, and so on. Doing so increases the likelihood of the URL fitting in an App Clip Code. For example, instead of `https://appclip.example.com/shop?a=123&b=456&c=789`, use `https://appclip.example.com/shop?p=123&p1=456&p2=789`.
 
-##### Hash long URLs
+### Hash long URLs
 
 In some cases, you may need to pass long query strings to the App Clip upon launch that result in a URL that’s too long to encode in an App Clip Code. In this case, you can use a hashing algorithm to shorten the long query string. Upon launch, your app and App Clip can then expand the hash back to the long query string and use it to update their UI.
 
-##### Reuse existing URLs
+### Reuse existing URLs
 
 You may want to reuse URLs you previously created for other purposes in your App Clip Codes; for example, if you created your own tool to create short URLs for use in QR codes. If you do so, you also need to:
 

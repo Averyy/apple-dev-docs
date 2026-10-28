@@ -27,7 +27,7 @@ func BNNSScatterND(_ op: BNNSReduceFunction, _ input: UnsafePointer<BNNSNDArrayD
 int BNNSScatterND(BNNSReduceFunction op, const BNNSNDArrayDescriptor *input, const BNNSNDArrayDescriptor *indices, BNNSNDArrayDescriptor *output, const BNNSFilterParameters *filter_params);
 ```
 
-#### Discussion
+## Discussion
 
 Use [`BNNSScatterND(_:_:_:_:_:)`](./bnnsscatternd%28_,_,_,_,_%29.md) to scatter slices — that you specify by index — into an output tensor.
 

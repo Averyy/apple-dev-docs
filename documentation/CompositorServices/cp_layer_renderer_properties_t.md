@@ -16,7 +16,7 @@ A type that describes the organization of the layer’s textures and the relatio
 typedef CP_OBJECT_cp_layer_renderer_properties * cp_layer_renderer_properties_t;
 ```
 
-#### Discussion
+## Discussion
 
 Use the layer’s properties to configure other parts of your app. For example, use them to configure your app’s render pipeline.
 

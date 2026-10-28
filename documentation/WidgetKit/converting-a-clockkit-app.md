@@ -5,11 +5,11 @@
 
 Leverage WidgetKit’s API to create watchOS complications using SwiftUI.
 
-#### Overview
+## Overview
 
 With watchOS 9 and later, you can create complications for your watchOS app using SwiftUI views in WidgetKit. WidgetKit provides a modern API for creating and updating glanceable elements — making it an ideal fit for watchOS complications. Because WidgetKit’s design is inspired by ClockKit, if you’ve already designed ClockKit complications for your app, the process feels familiar. Similarly, if you’re already using widgets for iOS, you can quickly set up WidgetKit complications for a watchOS app. In many cases, you can use the same code to display WidgetKit complications in watchOS and widgets on the Lock Screen on iPhone. For more information, see [Creating accessory widgets and watch complications](./creating-accessory-widgets-and-watch-complications.md).
 
-##### Add WidgetKit to your project
+### Add WidgetKit to your project
 
 To convert ClockKit complications to WidgetKit, start by adding a WidgetKit extension to your watchOS project.
 
@@ -28,7 +28,7 @@ Xcode creates a new target containing Swift files for the widget, an asset catal
 
 > ❗ **Important**: After you add a WidgetKit extension to your project, the system tries to use it to generate complications for your watchOS app. As soon as your WidgetKit extension begins providing widget-based complications, the system disables your app’s ClockKit complications. It no longer wakes your app to call your [`CLKComplicationDataSource`](../ClockKit/clkcomplicationdatasource.md) object’s methods to request timeline entries. However, the system may still wake your data source to call [`getWidgetConfiguration(from:completionHandler:)`](../ClockKit/clkcomplicationwidgetmigrator/getwidgetconfiguration%28from,completionhandler%29.md), while migrating complications from ClockKit to WidgetKit.
 
-##### Configure your timeline provider
+### Configure your timeline provider
 
 The template creates a `Provider` structure that adopts the `TimelineProvider` or `AppIntentTimelineProvider` protocol, and provides a default implementation for the protocol’s methods. WidgetKit calls these methods to get the data needed to create the widget view.
 
@@ -142,7 +142,7 @@ func getTimeline(in context: Context, completion: @escaping (Timeline<Entry>) ->
 
 For more information, see [Making a configurable widget](./making-a-configurable-widget.md) and [Keeping a widget up to date](./keeping-a-widget-up-to-date.md).
 
-##### Support multiple complications
+### Support multiple complications
 
 If your app provides a static set of widgets, you can define multiple widgets using a [`WidgetBundle`](../SwiftUI/widgetbundle.md) protocol. For example, the code listing below provides three complications: one that displays the user’s current caffeine dose, one that provides the total number of cups of coffee for the day, and one that provides both. Each widget can then support a different subset of the available families.
 
@@ -179,7 +179,7 @@ func recommendations() -> [AppIntentRecommendation<ConfigurationAppIntent>] {
 
 For more information, see [Making a configurable widget](./making-a-configurable-widget.md).
 
-##### Design the complication using SwiftUI
+### Design the complication using SwiftUI
 
 Use SwiftUI static views, such as text, shapes, or images, to create your complication’s content. You can also add render effects like blurs and gradients, but keep in mind that complications only have one or two frames in which to render the effect.
 
@@ -290,7 +290,7 @@ Finally, consider how Always On affects your complications. You may need to reda
 
 > **Note**: If you don’t use the [`privacySensitive(_:)`](../SwiftUI/view/privacysensitive%28_%29.md) view modifier anywhere in your view hierarchy, the system displays a placeholder instead of a live complication. By default, the placeholder redacts all of your complication’s content.
 
-#### Migrate complications on a watch face
+## Migrate complications on a watch face
 
 When users upgrade your app, you need to transition them from the old ClockKit complications to your new WidgetKit complications. Start by implementing your [`CLKComplicationDataSource`](../ClockKit/clkcomplicationdatasource.md) type’s [`widgetMigrator`](../ClockKit/clkcomplicationdatasource/widgetmigrator.md) method. Use your implementation to return an instance that conforms to the [`CLKComplicationWidgetMigrator`](../ClockKit/clkcomplicationwidgetmigrator.md) protocol.
 

@@ -5,13 +5,13 @@
 
 Test your app with accessibility settings and assistive technologies to discover and address accessibility issues.
 
-#### Overview
+## Overview
 
 It’s always a good idea to experience your app from the perspective of the people using it. When you test your app from the user’s perspective, make sure you also test with different accessibility settings and assistive technologies like VoiceOver, Voice Control, and Switch Control so you can experience the app in the same way as people who rely on these features. Testing your app with accessibility settings reveals which tasks are possible to complete, which elements are accessible and which aren’t, and whether your navigation is clear and logical for every use case.
 
 ![](https://developer.apple.com/tutorials/images/com.apple.Accessibility/performing-accessibility-testing@2x.png)
 
-##### Identify the main tasks in your app
+### Identify the main tasks in your app
 
 Before you begin accessibility testing, compile a list of the main tasks that a person can perform on each screen in your app. For example, a to-do list app might contain several screens with one or more possible tasks as described in the following list.
 
@@ -22,7 +22,7 @@ Before you begin accessibility testing, compile a list of the main tasks that a 
 - **New task screen**: The user may need to enter information about the task, save the task to the list, or exit the screen without saving the task.
 - **Settings screen**: The user may need to adjust app settings, or exit the screen without changing anything.
 
-##### Create an accessibility testing matrix
+### Create an accessibility testing matrix
 
 After you identify your app’s main tasks, choose which devices, accessibility settings, and assistive technologies to test those tasks with.
 
@@ -36,7 +36,7 @@ After you prepare your devices for testing, identify which accessibility feature
 
 The following sections describe how to test your app for visual accessibility, media accessibility, and several key assistive technologies.
 
-##### Test with accessibility settings
+### Test with accessibility settings
 
 To test with accessibility settings, turn on each of the following accessibility features in Settings > Accessibility, one at a time. Work through your testing matrix by completing the main tasks in your app while each accessibility setting is on.
 
@@ -59,7 +59,7 @@ To test with accessibility settings, turn on each of the following accessibility
 - Subtitles & Captioning > Closed Captions + SDH
 - Subtitles & Captioning > Show Audio Transcriptions
 
-##### Test with assistive technologies
+### Test with assistive technologies
 
 To test with assistive technologies, set up and turn on each of the following assistive technologies, one at a time. Work through your testing matrix by completing the main tasks in your app using only that assistive technology.
 
@@ -136,7 +136,7 @@ With Assistive Access on, use standard system gestures to navigate your app. Ass
 
 To learn more about using Assistive Access, read [Assistive Access User Guide](https://support.apple.com/guide/assistive-access-iphone/welcome/ios).
 
-##### Diagnose and address accessibility issues
+### Diagnose and address accessibility issues
 
 As you test your app’s workflows, make sure your app continues to provide a good user experience while accessibility settings and assistive technologies are on. Check that you can access every element and that the ordering of those elements is what you intend. Make note when you find it difficult to perform a task. Confirm that your UI adjusts appropriately when the system font size, color filter, or other visual settings change to something other than the default. You can use the following list as a starting point for ensuring that your app provides a good experience in various accessibility categories.
 

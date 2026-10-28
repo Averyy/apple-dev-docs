@@ -5,7 +5,7 @@
 
 Increase the performance of common mathematical tasks with vDSP vector-vector and vector-scalar operations.
 
-#### Overview
+## Overview
 
 vDSP provides a suite of general-purpose, high-performance arithmetic functions that are alternatives to `for` loops and `map` when applying operations on collections of floating-point values.
 
@@ -79,7 +79,7 @@ float d[10];
 vDSP_vasm(a, 1, b, 1, &c, d, 1, 10);
 ```
 
-##### Available arithmetic functions
+### Available arithmetic functions
 
 The following table summarizes the basic arithmetic functions available in vDSP. All functions are available in single- and double-precision variants.
 

@@ -10,7 +10,7 @@ Support Apple Pay on your website with JavaScript-based APIs.
 - Safari Desktop 10.0+
 - Safari Mobile 10.0+
 
-#### Overview
+## Overview
 
 Safari supports two JavaScript APIs that let you accept Apple Pay payments from customers on your website:
 
@@ -21,7 +21,7 @@ Safari supports two JavaScript APIs that let you accept Apple Pay payments from 
 
 Apple Pay is available on all iOS devices with a Secure Element — an industry-standard, certified chip designed to store payment information safely. In macOS, to authorize the payment, users need a Mac with Touch ID, or an Apple Pay-capable iPhone or Apple Watch..
 
-##### Apple Pay availability by region and platform
+### Apple Pay availability by region and platform
 
 Apple Pay is available in [supported regions](https://www.apple.com/ios/feature-availability/#apple-pay).
 
@@ -38,7 +38,7 @@ See [Checking for Apple Pay availability](./checking-for-apple-pay-availability.
 
 > **Note**:  Regulations in some regions may require specific configurations in your implementation. For more information, see [Complying with regional regulations](../PassKit/complying-with-regional-regulations.md).
 
-##### Apple Pay requirements
+### Apple Pay requirements
 
 To use Apple Pay on your website, the requirements are:
 

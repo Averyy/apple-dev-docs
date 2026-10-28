@@ -5,7 +5,7 @@
 
 The version of Apple Pay available in macOS 10.13 and iOS 11.
 
-#### Overview
+## Overview
 
 New features include:
 

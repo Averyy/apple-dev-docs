@@ -23,11 +23,11 @@ func contains(_ other: ClosedRange<Bound>) -> Bool
 
 Available when `Bound` conforms to `Comparable`.
 
-#### Return Value
+## Return Value
 
 `true` if `other` is wholly contained within this closed range; otherwise, `false`.
 
-#### Discussion
+## Discussion
 
 The given closed range is contained within this range if its bounds are contained within this closed range.
 

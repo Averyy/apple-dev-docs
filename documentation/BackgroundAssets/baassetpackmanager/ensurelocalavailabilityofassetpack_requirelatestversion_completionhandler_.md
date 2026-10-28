@@ -20,7 +20,7 @@ Ensures that the specified asset pack is available locally, performing a downloa
 - (void) ensureLocalAvailabilityOfAssetPack:(BAAssetPack *) assetPack requireLatestVersion:(BOOL) shouldUpdate completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 This method checks whether the asset pack is currently downloaded. If it isn’t, then the system schedules it to be downloaded and calls the completion handler with `nil` for the completion handler’s `error` parameter when the download finishes. The framework guarantees that the requested asset pack is available locally after this method calls the completion handler with `nil` for the `error` parameter. If this method calls the completion handler with a non-`nil` value for `error`, then the asset pack *isn’t* guaranteed to be available locally. You can optionally monitor download progress by attaching a delegate object to [`delegate`](./delegate.md).
 

@@ -25,11 +25,11 @@ func description(withLocale locale: Any?) -> String
 - (NSString *) descriptionWithLocale:(id) locale;
 ```
 
-#### Return Value
+## Return Value
 
 A string that represents the contents of the ordered set, formatted as a property list.
 
-#### Discussion
+## Discussion
 
 For a description of how locale is applied to each element in the receiving ordered set, see [`description(withLocale:indent:)`](./description%28withlocale,indent%29.md).
 

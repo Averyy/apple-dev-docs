@@ -16,11 +16,11 @@ Sends an asynchronous USB request on the default control pipe.
 IOReturn (*DeviceRequestAsyncTO)(void *self, IOUSBDevRequestTO *req, IOAsyncCallback1 callback, void *refCon);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if successful, kIOReturnNoDevice if there is no connection to an IOService, kIOReturnNotOpen if the device is not open for exclusive access, orkIOUSBNoAsyncPortErr if no Async port has been created for this interface.
 
-#### Discussion
+## Discussion
 
 This function sends an asynchronous USB request on the default control pipe. The IOUSBDevRequestTO structure allows the client to specify timeout values for this request. The device must be open to issue this command. Care should be taken when issuing a device request which changes the state of the device. Use the API, for example, to change the configuration of the device or to select an alternate setting on an interface.
 

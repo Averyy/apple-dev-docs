@@ -19,7 +19,7 @@ A highlight associated with a Spotlight suggestion.
 static let suggestionHighlight: NSAttributedString.Key
 ```
 
-#### Discussion
+## Discussion
 
 The value of this attribute is an [`NSString`](../../nsstring.md) object with the text that Spotlight suggested.
 

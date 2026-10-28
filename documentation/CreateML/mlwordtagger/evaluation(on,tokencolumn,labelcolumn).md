@@ -21,7 +21,7 @@ func evaluation(on labeledTokens: DataFrame, tokenColumn: String, labelColumn: S
 func evaluation(on labeledTokens: MLDataTable, tokenColumn: String, labelColumn: String) -> MLWordTaggerMetrics
 ```
 
-#### Return Value
+## Return Value
 
 Word tagger metrics.
 

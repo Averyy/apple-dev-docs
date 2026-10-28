@@ -20,7 +20,7 @@ Specifies the mode of clipping for a portal.
 enum ClippingMode
 ```
 
-#### Overview
+## Overview
 
 This type can be passed into [`clippingMode`](./clippingmode-swift.property.md) to configure the portal component’s clipping feature.
 

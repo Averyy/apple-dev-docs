@@ -29,7 +29,7 @@ optional func resolveTargetTaskList(for intent: INAddTasksIntent) async -> INTas
 - (void) resolveTargetTaskListForAddTasks:(INAddTasksIntent *) intent withCompletion:(void (^)(INTaskListResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Use the intent object to obtain the task list, if any, suggested by the user. If the intent doesn’t specify a task list, choose a resolution that’s most appropriate for your app. If you can select a default task list, return a result of success with that task list. If you can’t select a default task list, you might ask the user to provide a value or choose from among a few likely candidates.
 

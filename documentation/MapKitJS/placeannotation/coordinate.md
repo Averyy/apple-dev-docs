@@ -15,7 +15,7 @@ The annotation’s coordinate.
 get coordinate(): Coordinate;
 ```
 
-#### Discussion
+## Discussion
 
 You can’t change the coordinate of a [`PlaceAnnotation`](../placeannotation.md).
 

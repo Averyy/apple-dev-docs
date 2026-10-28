@@ -23,7 +23,7 @@ func setURL(_ url: URL, for rect: CGRect)
 - (void) setURL:(NSURL *) url forRect:(CGRect) rect;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to create links to external resources in the current page of a PDF. The URL is interpreted by the PDF viewer.
 

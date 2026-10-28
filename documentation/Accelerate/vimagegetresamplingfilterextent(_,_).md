@@ -25,11 +25,11 @@ func vImageGetResamplingFilterExtent(_ filter: ResamplingFilter, _ flags: vImage
 vImagePixelCount vImageGetResamplingFilterExtent(ResamplingFilter filter, vImage_Flags flags);
 ```
 
-#### Return Value
+## Return Value
 
 The maximum sampling radius for the specified resampling filter.
 
-#### Discussion
+## Discussion
 
 This function returns the maximum distance from any pixel that the filter will look, either horizontally or vertically, depending on whether a horizontal or vertical shear is used.  It’s analogous to `kernelWidth` in [`vImageNewResamplingFilterForFunctionUsingBuffer(_:_:_:_:_:_:)`](./vimagenewresamplingfilterforfunctionusingbuffer%28_,_,_,_,_,_%29.md), but might be slightly larger to allow for extra slope when dealing with subpixel coordinates during resampling.
 

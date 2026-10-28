@@ -11,7 +11,7 @@ virtual SInt32 sendClientReference(
  IOByteCount length = 0 );
 ```
 
-#### Return Value
+## Return Value
 
 The new client reference count.
 

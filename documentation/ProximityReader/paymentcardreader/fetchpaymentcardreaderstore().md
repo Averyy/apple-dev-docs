@@ -17,11 +17,11 @@ Returns a store containing the read results the framework obtained using a Store
 func fetchPaymentCardReaderStore() throws -> PaymentCardReaderStore
 ```
 
-#### Return Value
+## Return Value
 
 [`PaymentCardReaderStore`](../paymentcardreaderstore.md) when successful.
 
-#### Discussion
+## Discussion
 
 > **Throws**: [`PaymentCardReaderError`](../paymentcardreadererror.md) if the method fails to retrieve the store.
 

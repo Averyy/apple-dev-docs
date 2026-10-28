@@ -15,7 +15,7 @@ Parameters that affect the process of training an object detection model.
 struct ModelParameters
 ```
 
-#### Overview
+## Overview
 
 Customize the training process of an object detector by creating an [`MLObjectDetector.ModelParameters`](./modelparameters-swift.struct.md) instance and passing it to an object detector’s initializer. You can explicitly set values for [`maxIterations`](./modelparameters-swift.struct/maxiterations.md) and [`batchSize`](./modelparameters-swift.struct/batchsize.md). You can also explicitly define the validation dataset to override the default behavior, which uses a random selection of your training dataset for validation.
 

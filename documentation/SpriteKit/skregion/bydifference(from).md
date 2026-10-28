@@ -25,7 +25,7 @@ func byDifference(from region: SKRegion) -> Self
 - (instancetype) regionByDifferenceFromRegion:(SKRegion *) region;
 ```
 
-#### Return Value
+## Return Value
 
 A new region whose contents include all points in the current region that are not also included in the second region.
 

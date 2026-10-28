@@ -20,7 +20,7 @@ var albumArtist: String? { get }
 @property (nonatomic, copy, readonly, nullable) NSString * albumArtist;
 ```
 
-#### Discussion
+## Discussion
 
 If the artist is unknown, this property is `nil`.
 

@@ -19,7 +19,7 @@ func reviewUnsavedDocuments(withAlertTitle title: String?, cancellable: Bool, de
 - (void) reviewUnsavedDocumentsWithAlertTitle:(NSString *) title cancellable:(BOOL) cancellable delegate:(id) delegate didReviewAllSelector:(SEL) didReviewAllSelector contextInfo:(void *) contextInfo;
 ```
 
-#### Discussion
+## Discussion
 
 Assigns `delegate` to the panel. Calls `didReviewAllSelector` with [`true`](../../Swift/true.md) if quit without saving is chosen or if there are no dirty documents, and [`false`](../../Swift/false.md) otherwise. If the user selects the “Review Unsaved” option, [`closeAllDocuments(withDelegate:didCloseAllSelector:contextInfo:)`](./closealldocuments%28withdelegate,didcloseallselector,contextinfo%29.md) is called. This method is called when the user chooses the Quit menu command, and also when the computer power is being turned off. Note that `title` is ignored. Pass the `contextInfo` object with the callback.
 

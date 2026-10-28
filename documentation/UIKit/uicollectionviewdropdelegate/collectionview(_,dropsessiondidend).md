@@ -22,7 +22,7 @@ optional func collectionView(_ collectionView: UICollectionView, dropSessionDidE
 - (void) collectionView:(UICollectionView *) collectionView dropSessionDidEnd:(id<UIDropSession>) session;
 ```
 
-#### Discussion
+## Discussion
 
 The collection view calls this method at the conclusion of a drag that was over the collection view at one point. Use it to clean up any state information that you used to handle the drag. This method is called regardless of whether the data was actually dropped onto the collection view.
 

@@ -24,7 +24,7 @@ var containsMovieFragments: Bool { get }
 @property (nonatomic, readonly) BOOL containsMovieFragments;
 ```
 
-#### Discussion
+## Discussion
 
 This property is `YES` if [`canContainMovieFragments`](./cancontainmoviefragments.md) is `YES` and at least one `moof` box is present after the `moov` box.
 

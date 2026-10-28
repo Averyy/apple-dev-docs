@@ -25,7 +25,7 @@ var isDownmix: Bool { get }
 @property (nonatomic, readonly, getter=isDownmix) BOOL downmix;
 ```
 
-#### Discussion
+## Discussion
 
 If the stream provides one or more multichannel variants, the system assumes the dowmix rendition to be compatible in its internal timing and other attributes with the other variants. Typically, this is because the variant derives its content from the same source. You can use a downmix as a suitable substitute for a multichannel variant under some conditions.
 

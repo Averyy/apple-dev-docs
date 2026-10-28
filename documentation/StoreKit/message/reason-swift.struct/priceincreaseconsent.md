@@ -18,7 +18,7 @@ A message the App Store sends when you increase the price of an auto-renewable s
 static let priceIncreaseConsent: Message.Reason
 ```
 
-#### Discussion
+## Discussion
 
 For more information about managing prices, see [Managing Prices](https://developer.apple.com/app-store/subscriptions/#managing-prices-for-existing-subscribers) and [Manage pricing for auto-renewable subscriptions](https://help.apple.com/app-store-connect/#/devc9870599e).
 

@@ -22,7 +22,7 @@ func GLKMatrix3Scale(_ matrix: GLKMatrix3, _ sx: Float, _ sy: Float, _ sz: Float
 static GLKMatrix3 GLKMatrix3Scale(GLKMatrix3 matrix, float sx, float sy, float sz);
 ```
 
-#### Return Value
+## Return Value
 
 A new matrix.
 

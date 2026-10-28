@@ -25,7 +25,7 @@ func NSDecimalPower(_ result: UnsafeMutablePointer<Decimal>, _ number: UnsafePoi
 extern NSCalculationError NSDecimalPower(NSDecimal *result, const NSDecimal *number, NSUInteger power, NSRoundingMode roundingMode);
 ```
 
-#### Discussion
+## Discussion
 
 Raises `number` to `power`, possibly rounding off according to `roundingMode`, and stores the resulting value in `result`.
 

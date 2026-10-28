@@ -21,7 +21,7 @@ An option that includes inactive reserved regions in the results.
 static var includeInactive: ReservedRegion.QueryOptions { get }
 ```
 
-#### Discussion
+## Discussion
 
 By default, a query returns only the regions that are active. Include inactive regions to leave room for a region that isn’t active yet, so your layout doesn’t jump when the region becomes active.
 

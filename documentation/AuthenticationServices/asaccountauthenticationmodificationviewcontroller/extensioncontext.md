@@ -26,7 +26,7 @@ var extensionContext: ASAccountAuthenticationModificationExtensionContext { get 
 
 - [Upgrading Account Security With an Account Authentication Modification Extension](../upgrading-account-security-with-an-account-authentication-modification-extension.md)
 
-#### Discussion
+## Discussion
 
 Your extension uses the extension context to communicate with the system during the upgrade process.
 

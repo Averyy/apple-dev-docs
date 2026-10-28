@@ -14,11 +14,11 @@ A texturecube with RealityKit properties and a specified LOD gradient.
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Overview
+## Overview
 
 Level of detail gradient. Input image must be in KTX file format
 
-#### Parameter Types
+## Parameter Types
 
 **Cube Image Gradient (vector4f)**:
 
@@ -68,7 +68,7 @@ Level of detail gradient. Input image must be in KTX file format
 | --- | --- |
 | `Out` | Color4 |
 
-#### Parameter descriptions
+## Parameter descriptions
 
 - **`File`**: The image file to use for the texture.
 - **`U Wrap Mode`**: The way the node handles U values outside of the range of `0-1`. The default value is `clamp_to_edge`.
@@ -86,7 +86,7 @@ Level of detail gradient. Input image must be in KTX file format
 - **`Gradientcube D Pdx`**: The rate of change of the surface geometry in the X direction of the sampled surface or texture.
 - **`Gradientcube D Pdy`**: The rate of change of the surface geometry in the Y direction of the sampled surface or texture.
 
-#### Discussion
+## Discussion
 
 The `Cube Image Gradient` node produces a texture using the contents of the image file specified in the `File` parameter. It has a variety of parameters that affect the properties of the rendered textures.
 

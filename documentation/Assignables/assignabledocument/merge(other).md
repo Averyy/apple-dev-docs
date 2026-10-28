@@ -21,7 +21,7 @@ Merge another object of this type into this object.
 mutating func merge(other: AssignableDocument) throws -> Bool
 ```
 
-#### Discussion
+## Discussion
 
 An exception is thrown if `other` is not a replica of this document.
 

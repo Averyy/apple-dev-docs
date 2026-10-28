@@ -25,7 +25,7 @@ func contentItem(at indexPath: IndexPath) -> MPContentItem?
 - (MPContentItem *) contentItemAtIndexPath:(NSIndexPath *) indexPath;
 ```
 
-#### Return Value
+## Return Value
 
 The media item at the indicated index.
 

@@ -24,7 +24,7 @@ class EASession
 @interface EASession : NSObject
 ```
 
-#### Overview
+## Overview
 
 An [`EASession`](./easession.md) object creates a communications channel between your app and a connected hardware accessory. The manufacturer of the device must share the accessory’s supported protocols with you. When you create your session, specify one of these protocols to initiate communication with the accessory. After initializing an [`EASession`](./easession.md) object, use the provided output and input streams to transfer data to and from the accessory using that protocol.
 

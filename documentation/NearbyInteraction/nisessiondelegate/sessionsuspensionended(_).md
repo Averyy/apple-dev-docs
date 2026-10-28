@@ -26,7 +26,7 @@ optional func sessionSuspensionEnded(_ session: NISession)
 
 - [Extending advanced direction finding and ranging](../extending-advanced-direction-finding-and-ranging.md)
 
-#### Discussion
+## Discussion
 
 NI suspends an interaction session when the user backgrounds the app. NI ends the suspension when the user foregrounds the app again. An app may resume a suspended session only after NI invokes this callback. To resume a session after a suspension ends, call [`run(_:)`](../nisession/run%28_%29.md), passing in your session’s configuration.
 

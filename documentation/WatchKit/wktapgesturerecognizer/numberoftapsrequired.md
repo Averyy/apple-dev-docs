@@ -19,7 +19,7 @@ var numberOfTapsRequired: Int { get set }
 @property (nonatomic) NSUInteger numberOfTapsRequired;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is `1`.
 

@@ -25,7 +25,7 @@ typealias SecTrustWithErrorCallback = (SecTrust, Bool, CFError?) -> Void
 typedef void (^)(struct __SecTrust *, _Bool, struct __CFError *) SecTrustWithErrorCallback;
 ```
 
-#### Discussion
+## Discussion
 
 Provide a block of this type as the final argument to the [`SecTrustEvaluateAsyncWithError(_:_:_:)`](./sectrustevaluateasyncwitherror%28_,_,_%29.md) method to receive the result of the trust evaluation.
 

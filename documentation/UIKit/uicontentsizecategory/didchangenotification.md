@@ -28,7 +28,7 @@ extern NSNotificationName const UIContentSizeCategoryDidChangeNotification;
 
 - [Scaling fonts automatically](../scaling-fonts-automatically.md)
 
-#### Discussion
+## Discussion
 
 This notification is sent when the value in the [`preferredContentSizeCategory`](../uiapplication/preferredcontentsizecategory.md) property changes. The `userInfo` dictionary of the notification contains the [`newValueUserInfoKey`](./newvalueuserinfokey.md) key, which reflects the new setting.
 

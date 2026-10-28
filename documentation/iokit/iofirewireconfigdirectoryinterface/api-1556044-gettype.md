@@ -14,7 +14,7 @@
 IOReturn (*GetType)(IOFireWireLibConfigDirectoryRef self, int *outType);
 ```
 
-#### Discussion
+## Discussion
 
 Description forthcoming
 

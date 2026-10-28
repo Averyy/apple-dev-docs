@@ -5,13 +5,13 @@
 
 Identify issues within your frame capture by examining pipeline statistics.
 
-#### Overview
+## Overview
 
 The Pipeline Statistics viewer displays each shader stage in your pipeline state, the amount of time it took to complete, and the GPU activities it performed during that time.
 
 ![A screenshot of the Pipeline Statistics viewer showing statistics for each shader and timing comparison across commands using the pipeline state.](https://developer.apple.com/tutorials/images/com.apple.Xcode/gputools-metal-debugger-psv-overview@2x.png)
 
-##### Interpret the GPU activities
+### Interpret the GPU activities
 
 Various GPU activities appear with bar charts for compiler statistics and runtime profiling statistics.
 
@@ -28,7 +28,7 @@ Various GPU activities appear with bar charts for compiler statistics and runtim
 | Synchronization (barrier) | The amount of time that the GPU spends when a thread reaches a barrier and the GPU waits for remaining threads in the same group to arrive at the barrier before proceeding. |
 | Synchronization (atomics) | The amount of time that the GPU spends on atomic instructions. |
 
-##### Inspect the GPU time of the commands in the pass
+### Inspect the GPU time of the commands in the pass
 
 The bottom portion of the Pipeline Statistics viewer displays the GPU time in the Total column for each command in the pass so you can compare their respective elapsed times.
 

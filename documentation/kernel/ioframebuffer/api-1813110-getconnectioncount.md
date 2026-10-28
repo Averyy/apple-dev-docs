@@ -12,11 +12,11 @@ virtual IOItemCount getConnectionCount(
  void );
 ```
 
-#### Return Value
+## Return Value
 
 A count of the number of display connections reported by the framebuffer. Current versions of macOS only support one connection completely.
 
-#### Overview
+## Overview
 
 IOFramebuffer subclasses may implement functionality where a single framebuffer drives multiple displays. This is not recommended or fully supported and instead multihead cards should implement multiple instances of IOFramebuffer objects to provide full functionality.
 

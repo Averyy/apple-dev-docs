@@ -22,7 +22,7 @@ A type-safe, dynamic path to access nested intent values.
 struct DynamicPropertyPath
 ```
 
-#### Overview
+## Overview
 
 You typically don’t create instances of `DynamicPropertyPath` directly. The system returns instances of the type to indicate that you can further traverse a nested property. Use `DynamicPropertyPath` for chained property access and array indexing on entities and intent results.
 

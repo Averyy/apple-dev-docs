@@ -25,7 +25,7 @@ var redoActionName: String { get }
 @property (copy, readonly) NSString * redoActionName;
 ```
 
-#### Discussion
+## Discussion
 
 The redo action name. Returns an empty string (`@""`) if no action name has been assigned or if there is nothing to redo.
 

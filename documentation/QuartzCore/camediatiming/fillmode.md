@@ -25,7 +25,7 @@ var fillMode: CAMediaTimingFillMode { get set }
 @property (copy) CAMediaTimingFillMode fillMode;
 ```
 
-#### Discussion
+## Discussion
 
 The possible values are described in [Fill Modes](../fill-modes.md). The default is [`removed`](../camediatimingfillmode/removed.md).
 

@@ -25,7 +25,7 @@ func CFBinaryHeapGetCount(_ heap: CFBinaryHeap!) -> CFIndex
 extern CFIndex CFBinaryHeapGetCount(CFBinaryHeapRef heap);
 ```
 
-#### Return Value
+## Return Value
 
 The number of values in `heap`.
 

@@ -20,7 +20,7 @@ Performs a classification on a shaped array.
 func applied(to input: MLShapedArray<Scalar>, eventHandler: EventHandler? = nil) throws -> ClassificationDistribution<Label>
 ```
 
-#### Return Value
+## Return Value
 
 A classification distribution.
 

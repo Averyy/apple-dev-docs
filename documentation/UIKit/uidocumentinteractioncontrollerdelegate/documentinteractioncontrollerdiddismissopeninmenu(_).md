@@ -22,7 +22,7 @@ optional func documentInteractionControllerDidDismissOpenInMenu(_ controller: UI
 - (void) documentInteractionControllerDidDismissOpenInMenu:(UIDocumentInteractionController *) controller;
 ```
 
-#### Discussion
+## Discussion
 
 You can use this method to remove any additional views or content you placed underneath the Open In menu in your [`documentInteractionControllerWillPresentOpenInMenu(_:)`](./documentinteractioncontrollerwillpresentopeninmenu%28_%29.md) method.
 

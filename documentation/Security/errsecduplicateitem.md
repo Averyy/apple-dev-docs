@@ -25,7 +25,7 @@ var errSecDuplicateItem: OSStatus { get }
 errSecDuplicateItem
 ```
 
-#### Discussion
+## Discussion
 
 The system considers an item to be a duplicate for a given keychain when that keychain already has an item of the same class with the same set of composite primary keys. Each class of keychain item has a different set of primary keys, although a few attributes are used in common across all classes. In particular, where applicable, [`kSecAttrSynchronizable`](./ksecattrsynchronizable.md) and [`kSecAttrAccessGroup`](./ksecattraccessgroup.md) are part of the set of primary keys. The additional per-class primary keys are listed below:
 

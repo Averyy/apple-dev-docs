@@ -21,7 +21,7 @@ static var activateIgnoringOtherApps: NSApplication.ActivationOptions { get }
 NSApplicationActivateIgnoringOtherApps
 ```
 
-#### Discussion
+## Discussion
 
 By default, activation deactivates the calling app (assuming it was active), and then the new app is activated only if there’s no currently active application. This prevents the new app from stealing focus from the user, if the app is slow to activate and the user has switched to a different app in the interim. However, if you specify [`activateIgnoringOtherApps`](./activateignoringotherapps.md), the application is activated regardless of the currently active app, potentially stealing focus from the user.
 

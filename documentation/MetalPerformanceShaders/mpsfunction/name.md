@@ -22,7 +22,7 @@ var name: String { get }
 @property (nonatomic, retain, readonly) NSString * name;
 ```
 
-#### Discussion
+## Discussion
 
 The name of the Metal Shading Language function built by this object
 

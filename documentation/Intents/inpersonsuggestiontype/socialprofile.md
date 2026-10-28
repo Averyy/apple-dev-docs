@@ -24,7 +24,7 @@ case socialProfile
 INPersonSuggestionTypeSocialProfile
 ```
 
-#### Discussion
+## Discussion
 
 When specified, interaction objects become populated with the person’s social media account name instead of their actual name.
 

@@ -21,11 +21,11 @@ class func imageUnfilteredFileTypes() -> [String]
 + (NSArray<NSString *> *) imageUnfilteredFileTypes;
 ```
 
-#### Return Value
+## Return Value
 
 An array of `NSString` objects. This array is empty by default. Subclasses must override to return the list of file formats they support.
 
-#### Discussion
+## Discussion
 
 The returned file types can include encoded HFS file types as well as filename extensions. When creating a subclass of `NSImageRep`, override this method to return a list of strings representing the supported file types. For example, the `NSBitmapImageRep` class implements code similar to the following for this method:
 

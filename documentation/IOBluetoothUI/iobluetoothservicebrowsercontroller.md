@@ -19,7 +19,7 @@ class IOBluetoothServiceBrowserController
 @interface IOBluetoothServiceBrowserController : NSWindowController
 ```
 
-#### Overview
+## Overview
 
 This NSWindowController subclass will bring up a generic Bluetooth search and SDP browsing window allowing the user to find devices within range, perform SDP queries on a particular device, and select a SDP service to connect to. The client application can provide NSArrays of valid service UUIDs to allow, and an NSArray of valid device types to allow. The device type filter is not yet implemented.
 

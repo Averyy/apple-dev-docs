@@ -20,7 +20,7 @@ var referenceImage: ARReferenceImage { get }
 @property (nonatomic, strong, readonly) ARReferenceImage * referenceImage;
 ```
 
-#### Discussion
+## Discussion
 
 This object is always one of the [`ARReferenceImage`](../arreferenceimage.md) objects you provided in the [`detectionImages`](../arworldtrackingconfiguration/detectionimages.md) array when configuring the session.
 

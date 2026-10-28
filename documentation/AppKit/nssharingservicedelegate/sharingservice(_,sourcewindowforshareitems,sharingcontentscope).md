@@ -20,11 +20,11 @@ optional func sharingService(_ sharingService: NSSharingService, sourceWindowFor
 - (NSWindow *) sharingService:(NSSharingService *) sharingService sourceWindowForShareItems:(NSArray *) items sharingContentScope:(NSSharingContentScope *) sharingContentScope;
 ```
 
-#### Return Value
+## Return Value
 
 The window of the shared items.
 
-#### Discussion
+## Discussion
 
 The following is an example implementation of this method. It changes the item scope, and returns the window the source image view is contained within.
 

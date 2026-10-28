@@ -23,7 +23,7 @@ var isDragging: Bool { get }
 @property (nonatomic, readonly, getter=isDragging) BOOL dragging;
 ```
 
-#### Discussion
+## Discussion
 
 The value held by this property might require some time or distance of scrolling before it returns [`true`](../../Swift/true.md).
 

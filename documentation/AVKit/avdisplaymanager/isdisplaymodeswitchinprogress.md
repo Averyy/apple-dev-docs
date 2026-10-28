@@ -19,7 +19,7 @@ var isDisplayModeSwitchInProgress: Bool { get }
 @property (nonatomic, readonly, getter=isDisplayModeSwitchInProgress) BOOL displayModeSwitchInProgress;
 ```
 
-#### Discussion
+## Discussion
 
 While this property value is `true`, your app should behave as if the display is currently changing modes, and may be temporarily blank. The accuracy of this property value depends on the TV hardware and the nature of the mode switch. When displaying temporary content or user interface elements, such as hints or tips, leave them visible for longer than the mode switch takes, to ensure the user sees them.
 

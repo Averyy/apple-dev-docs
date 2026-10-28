@@ -19,7 +19,7 @@ var button: NSStatusBarButton? { get }
 @property (strong, readonly, nullable) NSStatusBarButton * button;
 ```
 
-#### Discussion
+## Discussion
 
 The status item automatically creates this button by default. Use this property to customize the appearance and behavior of the button, such as its [`image`](../nsbutton/image.md), [`target`](../nscontrol/target.md), [`action`](../nscontrol/action.md), [`toolTip`](../nsview/tooltip.md), and so on.
 

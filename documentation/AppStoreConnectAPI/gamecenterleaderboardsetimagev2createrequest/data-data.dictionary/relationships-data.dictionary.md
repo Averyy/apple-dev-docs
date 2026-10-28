@@ -15,7 +15,7 @@ The relationships you include in the request and those you can operate on.
 object GameCenterLeaderboardSetImageV2CreateRequest.Data.Relationships
 ```
 
-#### Overview
+## Overview
 
 - localization:
 

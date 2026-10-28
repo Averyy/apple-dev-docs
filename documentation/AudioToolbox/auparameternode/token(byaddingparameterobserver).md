@@ -24,11 +24,11 @@ func token(byAddingParameterObserver observer: @escaping AUParameterObserver) ->
 - (AUParameterObserverToken) tokenByAddingParameterObserver:(AUParameterObserver) observer;
 ```
 
-#### Return Value
+## Return Value
 
 A token which can be passed to the [`removeParameterObserver(_:)`](./removeparameterobserver%28_%29.md) or [`setValue(_:originator:)`](../auparameter/setvalue%28_,originator%29.md) methods.
 
-#### Discussion
+## Discussion
 
 An audio unit view can use an observer to be notified of changes to a single parameter or all parameters in a group. These callbacks are throttled so as to limit the rate of redundant notifications in the case of frequent changes to a single parameter.
 

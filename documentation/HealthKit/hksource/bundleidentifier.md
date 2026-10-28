@@ -24,7 +24,7 @@ var bundleIdentifier: String { get }
 @property (strong, readonly) NSString * bundleIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 For apps, this property holds the app’s bundle identifier. For supported Bluetooth LE devices, this property holds a UUID for the device.
 

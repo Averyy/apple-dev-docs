@@ -26,7 +26,7 @@ protocol NISessionDelegate : NSObjectProtocol
 
 - [Initiating and maintaining a session](./initiating-and-maintaining-a-session.md)
 
-#### Overview
+## Overview
 
 Assign a delegate that Nearby Interaction can use to notify your app of important events that occur during the session life cycle.
 

@@ -23,7 +23,7 @@ class var styli: [GCStylus] { get }
 
 - [Discovering and tracking spatial game controllers and styli](../discovering-and-tracking-spatial-game-controllers-and-styli.md)
 
-#### Discussion
+## Discussion
 
 This property returns an array of all currently connected stylus accessories. The array is empty when no stylus accessories are connected.  The array updates automatically as stylus accessories connect and disconnect.
 

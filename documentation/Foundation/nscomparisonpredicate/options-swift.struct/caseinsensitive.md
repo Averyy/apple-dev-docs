@@ -25,7 +25,7 @@ static var caseInsensitive: NSComparisonPredicate.Options { get }
 NSCaseInsensitivePredicateOption
 ```
 
-#### Discussion
+## Discussion
 
 You represent this option in a predicate format string using a `[c]` following a string operation (for example, `"NeXT" like[c] "next"`).
 

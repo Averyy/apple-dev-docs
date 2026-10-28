@@ -24,11 +24,11 @@ class HKDocumentType
 @interface HKDocumentType : HKSampleType
 ```
 
-#### Overview
+## Overview
 
 To create a document type instance, use the [`HKObjectType`](./hkobjecttype.md) class’s [`documentType(forIdentifier:)`](./hkobjecttype/documenttype%28foridentifier%29.md) convenience method.
 
-##### Subclassing Notes
+### Subclassing Notes
 
 As with many HealthKit classes, don’t subclass document types.
 

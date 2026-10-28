@@ -41,11 +41,11 @@ func snapshot() -> NSImage
 - (NSImage *) snapshot;
 ```
 
-#### Return Value
+## Return Value
 
 An image object depicting the view in its current state.
 
-#### Discussion
+## Discussion
 
 This method is thread-safe and may be called at any time.
 

@@ -23,7 +23,7 @@ func startAnimating()
 - (void) startAnimating;
 ```
 
-#### Discussion
+## Discussion
 
 This method always starts the animation from the first image in the list.
 

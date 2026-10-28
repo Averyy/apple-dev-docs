@@ -19,7 +19,7 @@ The content mode for the web view to use when it loads and renders a webpage.
 var preferredContentMode: WebPage.NavigationPreferences.ContentMode
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is `recommended`. The web page ignores this preference for subframe navigation.
 

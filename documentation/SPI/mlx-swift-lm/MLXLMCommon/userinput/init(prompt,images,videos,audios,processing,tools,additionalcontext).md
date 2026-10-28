@@ -17,11 +17,11 @@ Initialize the `UserInput` with a preconfigured [`UserInput.Prompt`](./prompt-sw
 init(prompt: Prompt, images: [Image] = [Image](), videos: [Video] = [Video](), audios: [Audio] = [Audio](), processing: Processing = .init(), tools: [ToolSpec]? = nil, additionalContext: [String : any Sendable]? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 [`init(chat:processing:tools:additionalContext:)`](./init%28chat,processing,tools,additionalcontext%29.md) is the preferred mechanism.
 
-##### See Also
+### See Also
 
 - [`UserInput.Prompt.text(_:)`](./prompt-swift.enum/text%28_%29.md)
 - [`init(chat:processing:tools:additionalContext:)`](./init%28chat,processing,tools,additionalcontext%29.md)

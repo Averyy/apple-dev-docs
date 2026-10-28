@@ -19,7 +19,7 @@ var tintColor: NSColor? { get set }
 @property (strong, nullable) NSColor * tintColor;
 ```
 
-#### Discussion
+## Discussion
 
 This color is used for the refresh indicator.
 

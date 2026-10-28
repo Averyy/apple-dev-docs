@@ -21,7 +21,7 @@ A base type that represents a presentation document.
 static var presentation: UTType { get }
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.presentation`.
 

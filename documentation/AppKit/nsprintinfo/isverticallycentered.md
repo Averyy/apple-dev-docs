@@ -19,7 +19,7 @@ var isVerticallyCentered: Bool { get set }
 @property (getter=isVerticallyCentered) BOOL verticallyCentered;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) if the image is centered vertically; otherwise, [`false`](../../Swift/false.md).
 

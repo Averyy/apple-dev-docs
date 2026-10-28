@@ -21,11 +21,11 @@ Returns a binding to the resulting value of a given key path.
 subscript<Subject>(dynamicMember keyPath: WritableKeyPath<Value, Subject>) -> Binding<Subject> { get }
 ```
 
-#### Return Value
+## Return Value
 
 A new binding.
 
-#### Overview
+## Overview
 
 Use dynamic member lookup to project a property of the binding’s wrapped value from a key path into a new binding. The returned value is read from, and written to, the original binding. This can be useful when a view accepts a binding for a type that only matches a property of a value from an existing binding.
 

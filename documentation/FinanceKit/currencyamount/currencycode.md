@@ -16,7 +16,7 @@ The currency of the amount.
 let currencyCode: String
 ```
 
-#### Discussion
+## Discussion
 
 FinanceKit expresses currencies as three character strings. These are usually ISO 4217 compliant, but aren’t guaranteed to be since not all currencies are expressible by the ISO 4217 standard.
 

@@ -20,11 +20,11 @@ func accessibilityValue() -> String?
 - (NSString *) accessibilityValue;
 ```
 
-#### Return Value
+## Return Value
 
 The text displayed by the element.
 
-#### Discussion
+## Discussion
 
 This method is the getter for the [`NSAccessibilityProtocol`](../nsaccessibilityprotocol.md) protocol’s [`accessibilityValue`](../nsaccessibility-c.protocol/accessibilityvalue.md) property.
 

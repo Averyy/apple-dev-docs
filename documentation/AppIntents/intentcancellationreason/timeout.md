@@ -21,7 +21,7 @@ An option that indicates the app intent exceeded the allowed time limit without 
 static var timeout: IntentCancellationReason { get }
 ```
 
-#### Discussion
+## Discussion
 
 When an app intent runs on iOS, iPadOS, tvOS, visionOS, or watchOS, it has a default timeout of around 30 seconds. If the app intent doesn’t report progress during this time, the system can cancel the operation.
 

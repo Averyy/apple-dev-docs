@@ -23,7 +23,7 @@ func MIDIEntityGetDevice(_ inEntity: MIDIEntityRef, _ outDevice: UnsafeMutablePo
 extern OSStatus MIDIEntityGetDevice(MIDIEntityRef inEntity, MIDIDeviceRef *outDevice);
 ```
 
-#### Return Value
+## Return Value
 
 An `OSStatus` result code.
 

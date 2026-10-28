@@ -24,11 +24,11 @@ convenience init(roundedRect rect: CGRect, byRoundingCorners corners: UIRectCorn
 + (instancetype) bezierPathWithRoundedRect:(CGRect) rect byRoundingCorners:(UIRectCorner) corners cornerRadii:(CGSize) cornerRadii;
 ```
 
-#### Return Value
+## Return Value
 
 A new path object with the rounded rectangular path.
 
-#### Discussion
+## Discussion
 
 This method creates a closed subpath, proceeding in a clockwise direction (relative to the default coordinate system) as it creates the necessary line and curve segments.
 

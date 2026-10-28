@@ -15,7 +15,7 @@ An opaque data pointer representing a specific virtual task.
 typedef struct PGTask_s PGTask_t;
 ```
 
-#### Discussion
+## Discussion
 
 A client using the framework determines which data it needs to keep track of each task. The framework never accesses the contents of the pointer.
 

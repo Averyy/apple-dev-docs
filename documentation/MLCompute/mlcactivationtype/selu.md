@@ -23,7 +23,7 @@ case selu
 MLCActivationTypeSELU
 ```
 
-#### Discussion
+## Discussion
 
 This activation type implements the following function:
 

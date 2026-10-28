@@ -21,7 +21,7 @@ Calculates double-precision vector threshold with signed constant to the specifi
 extern void vDSP_vthrscD(const double *__A, vDSP_Stride __IA, const double *__B, const double *__C, double *__D, vDSP_Stride __ID, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 This function is the same as [`vDSP_vthrsc`](./vdsp_vthrsc.md), except for the types of vectors `A` and `D`, and scalars `*B` and `*C`.
 

@@ -25,7 +25,7 @@ func CMPropagateAttachments(_ source: CMAttachmentBearer, destination: CMAttachm
 extern void CMPropagateAttachments(CMAttachmentBearerRef source, CMAttachmentBearerRef destination);
 ```
 
-#### Discussion
+## Discussion
 
 `CMPropagateAttachments` is a convenience call that copies all attachments with a mode of `kCMAttachmentMode_ShouldPropagate` from one buffer to another.  Given a [`CVBuffer`](../CoreVideo/cvbuffer.md), `CMPropagateAttachments` is equivalent to `CVBufferPropagateAttachments`.
 

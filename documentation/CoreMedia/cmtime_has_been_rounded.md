@@ -21,7 +21,7 @@ Returns a Boolean value that indicates whether the system rounded the time.
 #define CMTIME_HAS_BEEN_ROUNDED(time)
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../Swift/true.md) if the system rounded the time; otherwise, [`false`](../Swift/false.md).
 

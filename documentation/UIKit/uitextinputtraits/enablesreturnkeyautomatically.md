@@ -23,7 +23,7 @@ optional var enablesReturnKeyAutomatically: Bool { get set }
 @property (nonatomic) BOOL enablesReturnKeyAutomatically;
 ```
 
-#### Discussion
+## Discussion
 
 The default value for this property is [`false`](../../Swift/false.md). If you set it to [`true`](../../Swift/true.md), the keyboard disables the Return key when the text entry area contains no text. As soon as the user enters some text, the Return key is automatically enabled.
 

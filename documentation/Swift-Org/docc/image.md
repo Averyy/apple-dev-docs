@@ -26,7 +26,7 @@ Displays an image in a tutorial.
 
 - [Building an Interactive Tutorial](./building-an-interactive-tutorial.md)
 
-#### Overview
+## Overview
 
 The `Image` directive displays an image in your tutorial. Provide the name of an image and alternative text that describes the image in sufficient detail so screen readers can read that text aloud for people who are blind or have low-vision.
 
@@ -40,7 +40,7 @@ The supported image file extensions are `png`, `jpg`, `jpeg`, `svg` and `gif`.
 
 > 💡 **Tip**: To differentiate tutorial images from reference documentation images, you may wish to prefix image file names with “tutorial”.
 
-##### Provide Image Variants
+### Provide Image Variants
 
 To ensure that images render well on both standard and high-resolution displays, and in light and dark appearance modes, you can provide appearance and display scale-aware versions of each image by including specific components in the image filename.
 
@@ -56,7 +56,7 @@ Omit the appearance and display scale components when specifying an image name f
 
 At minimum, strive to provide high resolution variants **in light and dark appearance modes.** If you don’t provide a variant that matches the readers context, the system displays the closest matching image variant.
 
-##### Containing Elements
+### Containing Elements
 
 The following tutorial elements can include images.
 

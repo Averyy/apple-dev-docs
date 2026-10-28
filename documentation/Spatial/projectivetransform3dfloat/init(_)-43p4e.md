@@ -21,7 +21,7 @@ Returns a new affine transform structure from the specified double-precision 4 x
 init(_ matrix: simd_double4x4)
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: This function is provided as a convenience. All Spatial storage and calculations are single-precision.
 

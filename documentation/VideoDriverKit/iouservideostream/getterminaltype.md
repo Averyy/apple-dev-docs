@@ -15,7 +15,7 @@ Gets the terminal type of the stream.
 IOUserVideoStreamTerminalType GetTerminalType();
 ```
 
-#### Discussion
+## Discussion
 
 The object’s work queue synchronizes access to the value.
 

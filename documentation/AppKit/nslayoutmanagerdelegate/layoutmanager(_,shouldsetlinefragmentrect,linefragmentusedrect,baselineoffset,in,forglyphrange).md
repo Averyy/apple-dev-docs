@@ -19,11 +19,11 @@ optional func layoutManager(_ layoutManager: NSLayoutManager, shouldSetLineFragm
 - (BOOL) layoutManager:(NSLayoutManager *) layoutManager shouldSetLineFragmentRect:(NSRect *) lineFragmentRect lineFragmentUsedRect:(NSRect *) lineFragmentUsedRect baselineOffset:(CGFloat *) baselineOffset inTextContainer:(NSTextContainer *) textContainer forGlyphRange:(NSRange) glyphRange;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if you modified the layout information and want your modifications to be used or [`false`](../../Swift/false.md) if the original layout information should be used.
 
-#### Discussion
+## Discussion
 
 Use this method to modify the line fragment rectangles associated with the text container. It is your responsibility to ensure that the modified rectangles remain valid and still lie within the text container.
 

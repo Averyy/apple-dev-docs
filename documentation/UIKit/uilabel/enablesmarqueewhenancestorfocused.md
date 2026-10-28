@@ -19,7 +19,7 @@ var enablesMarqueeWhenAncestorFocused: Bool { get set }
 @property (nonatomic) BOOL enablesMarqueeWhenAncestorFocused;
 ```
 
-#### Discussion
+## Discussion
 
 If this value is [`true`](../../Swift/true.md), then the label ignores [`lineBreakMode`](./linebreakmode.md), [`adjustsFontSizeToFitWidth`](./adjustsfontsizetofitwidth.md), and [`allowsDefaultTighteningForTruncation`](./allowsdefaulttighteningfortruncation.md). The label scrolls its text when any ancestor in its view hierarchy has focus.
 

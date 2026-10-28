@@ -24,7 +24,7 @@ struct AssistiveTechnologyIdentifier
 typedef NSString * UIAccessibilityAssistiveTechnologyIdentifier;
 ```
 
-#### Overview
+## Overview
 
 Manage pausing and resuming assistive apps with these identifiers.
 

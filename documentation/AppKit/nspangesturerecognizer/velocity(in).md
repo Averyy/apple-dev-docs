@@ -19,7 +19,7 @@ func velocity(in view: NSView?) -> NSPoint
 - (NSPoint) velocityInView:(NSView *) view;
 ```
 
-#### Return Value
+## Return Value
 
 The horizontal and vertical velocity of the pan gesture. These values are relative to the specified view.
 

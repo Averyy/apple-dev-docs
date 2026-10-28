@@ -23,7 +23,7 @@ optional func useSelectionForFind(_ sender: Any?)
 - (void) useSelectionForFind:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 UIKit calls this method when the user selects the Use Selection For Find command from an editing menu. Your implementation should present the UI for finding textual content in your view and use the selected text for the search.
 

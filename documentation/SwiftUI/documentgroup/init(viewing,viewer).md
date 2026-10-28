@@ -31,7 +31,7 @@ nonisolated
 init(viewing documentType: Document.Type, @ContentBuilder viewer: @escaping (ReferenceFileDocumentConfiguration<Document>) -> Content)
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to create a document group that can view files of a specific type. The example below creates a new document viewer for `MyImageFormatDocument` and displays them with `MyImageFormatViewer`:
 

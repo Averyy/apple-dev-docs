@@ -24,7 +24,7 @@ func insertOverlay(_ overlay: any MKOverlay, at index: Int)
 - (void) insertOverlay:(id<MKOverlay>) overlay atIndex:(NSUInteger) index;
 ```
 
-#### Discussion
+## Discussion
 
 This method inserts the overlay into the [`MKOverlayLevel.aboveLabels`](../mkoverlaylevel/abovelabels.md) level.
 

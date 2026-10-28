@@ -20,7 +20,7 @@ protocol MEComposeSessionHandler : NSObjectProtocol
 @protocol MEComposeSessionHandler <NSObject>
 ```
 
-#### Overview
+## Overview
 
 When the user composes a message, MailKit requests a compose session handler object from your extension. MailKit uses this handler in the following ways:
 

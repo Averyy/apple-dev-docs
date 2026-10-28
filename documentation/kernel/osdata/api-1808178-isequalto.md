@@ -13,7 +13,7 @@ virtual bool isEqualTo(
  unsigned intnumBytes) const;
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the data buffers are equal over the given length, `false` otherwise.
 

@@ -11,11 +11,11 @@ Accessor to the length of the mapping.
 virtual IOByteCount getLength();
 ```
 
-#### Return Value
+## Return Value
 
 A byte count.
 
-#### Overview
+## Overview
 
 This method returns the length of the mapping.
 

@@ -24,7 +24,7 @@ class func smallCalorie() -> Self
 + (instancetype) smallCalorieUnit;
 ```
 
-#### Discussion
+## Discussion
 
 This unit represents the gram calorie, or the amount of energy needed to raise 1 gram of water by 1 degree Celsius (1 cal = 4.1840 J).
 

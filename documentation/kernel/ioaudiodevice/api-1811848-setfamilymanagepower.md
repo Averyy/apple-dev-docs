@@ -12,7 +12,7 @@ virtual void setFamilyManagePower(
  boolmanage);
 ```
 
-#### Overview
+## Overview
 
 The default behavior is for the family to manage power. It is only necessary to call this function if the driver does not want the family to manage power. It is not recommended that this function be called because it makes power management much more difficult for the driver. If this function is to be called, it must be called before initHardware() completes. Immediately after initHardware() is called by start(), the power management system is initialized if the family is to manage power.
 

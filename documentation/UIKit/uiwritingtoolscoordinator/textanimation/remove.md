@@ -22,7 +22,7 @@ case remove
 UIWritingToolsCoordinatorTextAnimationRemove
 ```
 
-#### Discussion
+## Discussion
 
 This type of animation shows the removal of text from your view. When preparing for this animation, hide the text in the provided range if you haven’t already. If you support animating the reflow of your view’s text, you can also prepare any other animations you need. Writing Tools uses a preview object you provide to animate the removal of the text.
 

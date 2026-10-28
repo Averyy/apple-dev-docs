@@ -25,7 +25,7 @@ case modulated
 SCNShadowModeModulated
 ```
 
-#### Discussion
+## Discussion
 
 Typically, you use this mode to create a low-accuracy, high-performance shadow under a game character or similar scene element: Use an image of a radial gradient (black to white) for the light’s [`gobo`](../scnlight/gobo.md) property, and use [`categoryBitMask`](../scnlight/categorybitmask.md) properties to prevent the shadow image from appearing on the character.
 

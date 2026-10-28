@@ -20,7 +20,7 @@ var currentSampleDuration: CMTime { get }
 @property (nonatomic, readonly) CMTime currentSampleDuration;
 ```
 
-#### Discussion
+## Discussion
 
 This value is [`indefinite`](../../CoreMedia/cmtime/indefinite.md) if the system needs to advance the sample past its current position to determine the decode duration. This can occur with streaming formats such as MPEG-2 transport streams.
 

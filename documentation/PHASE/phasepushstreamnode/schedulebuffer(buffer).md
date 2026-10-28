@@ -24,7 +24,7 @@ func scheduleBuffer(buffer: AVAudioPCMBuffer)
 - (void) scheduleBuffer:(AVAudioPCMBuffer *) buffer;
 ```
 
-#### Discussion
+## Discussion
 
 The framework processes this buffer after completing previously scheduled buffers. The buffer’s data format needs to match [`format`](./format.md).
 

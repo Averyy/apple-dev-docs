@@ -22,7 +22,7 @@ func evaluation(on input: some Collection<AnnotatedFeature<MLShapedArray<Scalar>
 
 Available when `Scalar` conforms to `MLShapedArrayScalar`, `Scalar` conforms to `BinaryFloatingPoint`, `Label` conforms to `Comparable`, `Label` conforms to `Decodable`, `Label` conforms to `Encodable`, and `Label` conforms to `Hashable`.
 
-#### Return Value
+## Return Value
 
 Multi-label classifier metrics.
 

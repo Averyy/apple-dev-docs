@@ -25,11 +25,11 @@ func DNSServiceProcessResult(_ sdRef: DNSServiceRef!) -> DNSServiceErrorType
 DNSServiceErrorType DNSServiceProcessResult(DNSServiceRef sdRef);
 ```
 
-#### Return Value
+## Return Value
 
 Returns [`kDNSServiceErr_NoError`](./kdnsserviceerr_noerror.md) on success, otherwise returns an error code indicating the specific failure that occurred.
 
-#### Discussion
+## Discussion
 
 This call blocks until the daemon’s response is received. Use [`DNSServiceRefSockFD(_:)`](./dnsservicerefsockfd%28_%29.md) in conjunction with a run loop or select() to determine the presence of a response from the server before calling this function to process the reply without blocking. Call this function at any point if it is acceptable to block until the daemon’s response arrives. Note that the client is responsible for ensuring that [`DNSServiceProcessResult(_:)`](./dnsserviceprocessresult%28_%29.md) is called whenever there is a reply from the daemon - the daemon may terminate its connection with a client that does not process the daemon’s responses.
 

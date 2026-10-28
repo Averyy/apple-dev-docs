@@ -20,7 +20,7 @@ var rawFeaturePoints: ARPointCloud? { get }
 @property (nonatomic, strong, readonly, nullable) ARPointCloud * rawFeaturePoints;
 ```
 
-#### Discussion
+## Discussion
 
 These points represent notable features detected in the camera image. Their positions in 3D world coordinate space are extrapolated as part of the image analysis that ARKit performs in order to accurately track the device’s position, orientation, and movement. Taken together, these points loosely correlate to the contours of real-world objects in view of the camera.
 

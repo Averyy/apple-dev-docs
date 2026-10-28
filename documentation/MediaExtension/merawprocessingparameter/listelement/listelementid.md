@@ -19,7 +19,7 @@ var listElementID: Int { get }
 @property (readonly) NSInteger listElementID;
 ```
 
-#### Discussion
+## Discussion
 
 The set of elements in the list may change depending on other configuration parameters, so while the index of an element in this list may change, this ID never changes and is used to report list element selection.
 

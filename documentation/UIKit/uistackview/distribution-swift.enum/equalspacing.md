@@ -23,7 +23,7 @@ case equalSpacing
 UIStackViewDistributionEqualSpacing
 ```
 
-#### Discussion
+## Discussion
 
 When the arranged views don’t fill the stack view, it pads the spacing between the views evenly. If the arranged views don’t fit within the stack view, it shrinks the views according to their compression resistance priority. If there’s any ambiguity, the stack view shrinks the views based on their index in the [`arrangedSubviews`](../arrangedsubviews.md) array.
 

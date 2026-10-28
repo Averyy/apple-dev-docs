@@ -23,7 +23,7 @@ class UIVideoEditorController
 @interface UIVideoEditorController : UINavigationController
 ```
 
-#### Overview
+## Overview
 
 A video editor manages user interactions and provides the filesystem path of the edited movie to your delegate object (see [`UIVideoEditorControllerDelegate`](./uivideoeditorcontrollerdelegate.md)). The features of the [`UIVideoEditorController`](./uivideoeditorcontroller.md) class are available only on devices that support video recording. Use a video editor when your intent is to provide an interface for movie editing. While the [`UIImagePickerController`](./uiimagepickercontroller.md) class also lets a user trim movies, its primary roles are choosing saved pictures and movies, and capturing new pictures and movies.
 

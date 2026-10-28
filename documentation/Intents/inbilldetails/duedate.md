@@ -33,7 +33,7 @@ var dueDate: DateComponents? { get set }
 @property (atomic, copy, readwrite, nullable) NSDateComponents * dueDate;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to specify the date to pay the bill to the payee. The first date in the range represents the due date for the payment and the last date represents the date that afterwards the payee considers the payment deliquent. For example, a mortgage payment might be due on the first of the month but the payment isn’t considered delinquent until several weeks later.
 

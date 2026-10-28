@@ -24,7 +24,7 @@ case lateData
 AVCaptureOutputDataDroppedReasonLateData
 ```
 
-#### Discussion
+## Discussion
 
 Use the [`alwaysDiscardsLateVideoFrames`](../../avcapturevideodataoutput/alwaysdiscardslatevideoframes.md) property of [`AVCaptureVideoDataOutput`](../../avcapturevideodataoutput.md) or the [`alwaysDiscardsLateDepthData`](../../avcapturedepthdataoutput/alwaysdiscardslatedepthdata.md) property of [`AVCaptureDepthDataOutput`](../../avcapturedepthdataoutput.md) to choose whether the capture output discards data.
 

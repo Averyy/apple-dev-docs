@@ -4,13 +4,13 @@
 
 Adopt intelligent features, like Writing Tools and Genmoji, and help people search with Visual Intelligence.
 
-#### Overview
+## Overview
 
 Apple Intelligence is the personal intelligence system behind many built-in capabilities, and you use it to create contextually relevant and personal experiences for people. Integrate your app’s actions and data with Apple Intelligence to enhance system features like Siri, Spotlight, and Shortcuts. Customize your app’s content with features like Writing Tools, Image Playgrounds, Visual Intelligence, and Genmoji, which use Apple Intelligence to enhance your content.
 
 Build intelligent experiences that run on Apple devices and in Private Cloud Compute by using [Generative models and machine learning](./generative-models.md) that power Apple Intelligence.
 
-#### Teach the system about your app’s actions and data
+## Teach the system about your app’s actions and data
 
 One of the best ways to embrace intelligent features is to make the system aware of your app’s actions and data. In addition to apps, people interact with content using [Apple Intelligence](../AppIntents/apple-intelligence-and-siri-ai.md), [Siri](../AppIntents/apple-intelligence-and-siri-ai.md), [Spotlight](../AppIntents/spotlight.md), [Shortcuts](../AppIntents/app-shortcuts.md), and other system features. Those features interact with your content using *app intents* and *app entities* you provide using the [App Intents](../AppIntents/AppIntents.md) framework.
 
@@ -22,7 +22,7 @@ While your app is running, donate app intents and app entities to reflect people
 
 ---
 
-#### Enhance people’s writing process in your app
+## Enhance people’s writing process in your app
 
 To help people improve the quality of their writing, add proofreading and rewriting tools to your app by adopting the Writing Tools API. The standard system text views already integrate support for Writing tools, and you can customize the experience to suit your app’s needs. You can also add Writing Tools support to your app’s [custom text views](../UIKit/adding-writing-tools-support-to-a-custom-uiview.md) using the provided APIs. When adding Writing Tools to your app:
 
@@ -32,7 +32,7 @@ To help people improve the quality of their writing, add proofreading and rewrit
 
 ---
 
-#### Generate images and Genmoji from concepts
+## Generate images and Genmoji from concepts
 
 The [Image Playground](https://apps.apple.com/us/app/image-playground/id6479176117) app gives people a way to personalize their images. Bring this same capability to your app using the [Image Playground](../ImagePlayground/ImagePlayground.md) framework. This framework offers a standard interface for generating new images using Apple Intelligence. For example, use it to generate stylized images for use in your app, such as someone’s profile photo. To [generate images programmatically](../ImagePlayground/imagecreator.md), use the same conceptual input.
 
@@ -40,7 +40,7 @@ Genmoji are custom emoji that people create and integrate into their text conten
 
 ---
 
-#### Support searches of your app’s image content
+## Support searches of your app’s image content
 
 To help people find more information about the places and objects around them, [adopt visual intelligence](../VisualIntelligence/integrating-your-app-with-visual-intelligence.md). People can use visual intelligence to receive information about objects they scan using the Camera Control [on supported iPhone devices](https://support.apple.com/guide/iphone/use-the-camera-control-iph0c397b154/ios). The framework provides information about what it detects, and uses App Intents to exchange that information with your app.
 

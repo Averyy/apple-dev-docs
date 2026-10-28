@@ -19,11 +19,11 @@ class func allowedClasses(forRestorableStateKeyPath keyPath: String) -> [AnyClas
 + (NSArray<Class> *) allowedClassesForRestorableStateKeyPath:(NSString *) keyPath;
 ```
 
-#### Return Value
+## Return Value
 
 An array of classes that support secure coding.
 
-#### Discussion
+## Discussion
 
 The system calls the function during a secure state restoration and restores values only for the allowed classes your app returns in the array.
 

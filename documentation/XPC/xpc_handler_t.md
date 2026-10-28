@@ -25,7 +25,7 @@ typealias xpc_handler_t = (xpc_object_t) -> Void
 typedef void (^)(NSObject<OS_xpc_object> *) xpc_handler_t;
 ```
 
-#### Discussion
+## Discussion
 
 You aren’t responsible for releasing the event object.
 

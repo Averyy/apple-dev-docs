@@ -18,7 +18,7 @@ Sends the bootstrap token to the server.
 - [Deploying software updates using declarative management](./deploying-software-updates-using-declarative-management.md)
 - [Returning a managed device to service](./returning-a-managed-device-to-service.md)
 
-#### Discussion
+## Discussion
 
 A server that supports this request needs to include a `com.apple.mdm.bootstraptoken` value in the `ServerCapabilities` key of the MDM profile payload to enroll the device.
 
@@ -26,7 +26,7 @@ This request changes or clears a device’s bootstrap token data that the server
 
 Requires a device enrolled using Automated Device Enrollment.
 
-##### Check-in availability
+### Check-in availability
 
 |  |  |
 | --- | --- |

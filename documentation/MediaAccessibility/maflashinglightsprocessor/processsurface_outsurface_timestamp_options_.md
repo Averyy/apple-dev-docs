@@ -20,7 +20,7 @@ Processes a surface by analyzing pixels for sequences of flashing lights and mit
 - (MAFlashingLightsProcessorResult *) processSurface:(IOSurfaceRef) inSurface outSurface:(IOSurfaceRef) outSurface timestamp:(CFAbsoluteTime) timestamp options:(NSDictionary<NSString *,id> *) options;
 ```
 
-#### Return Value
+## Return Value
 
 An [`MAFlashingLightsProcessorResult`](../maflashinglightsprocessorresult.md) object that indicates whether the processor successfully processed the input surface, the intensity of flashing lights in the input surface, and the amount of mitigation in the output surface.
 

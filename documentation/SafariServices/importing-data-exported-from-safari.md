@@ -5,7 +5,7 @@
 
 Transfer bookmarks, saved passwords, and other information between browsers.
 
-#### Overview
+## Overview
 
 In iOS, iPadOS, and visionOS, people can export their browser data to a file from Safari’s settings in Settings. In macOS, the person exports Safari’s browser data by choosing File > Export from Safari. In either case, the system presents the Export Browsing Data sheet, which walks the person through the export process. Alternatively, you can present the export sheet from a browser app that you develop by calling the [`SFSafariSettings`](./sfsafarisettings.md) class’s [`openExportBrowsingDataSettings(completionHandler:)`](./sfsafarisettings/openexportbrowsingdatasettings%28completionhandler%29.md) method.
 
@@ -23,11 +23,11 @@ To import this data, create UI in your browser that someone uses to share the ZI
 
 Your browser can also export its data in the same format for someone to import into Safari.
 
-##### Import bookmarks and Reading List
+### Import bookmarks and Reading List
 
 Safari exports bookmarks in an HTML file using the [Netscape Bookmarks file format](https://learn.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753582(v=vs.85)). The Reading List is a sub-folder with the identifier `com.apple.ReadingList`.
 
-##### Import Safari passwords
+### Import Safari passwords
 
 Safari exports passwords in a comma-separated values (CSV) file that includes a titles row and contains the following columns:
 
@@ -38,7 +38,7 @@ Safari exports passwords in a comma-separated values (CSV) file that includes a 
 - **`Notes`**: Free-form notes that the person associated with the password.
 - **`OTPAuth`**: A URL that uses the otpauth scheme and identifies the one-time passcode (OTP) generator that the website uses as a second factor with the password, for example, `otpauth://totp?secret=ASDFA&algorithm=SHA1&digits=6&period=30`.
 
-##### Understand JSON metadata
+### Understand JSON metadata
 
 Safari exports browser history, extensions, and payment cards as JSON files. The top-level object in each file contains a `metadata` key, whose value is a JSON object containing these keys:
 
@@ -48,7 +48,7 @@ Safari exports browser history, extensions, and payment cards as JSON files. The
 - **`export_time_usec`**: An integer that’s the UNIX timestamp (the number of microseconds since midnight in the UTC time zone on January 1, 1970) at which Safari exported the file.
 - **`schema_version`**: An integer that’s the version of the export schema.
 
-##### Import browser history
+### Import browser history
 
 The top-level object in the history JSON file contains a `history` key, which has a value that is an array of objects representing websites that Safari visited. Each object in the array contains these keys:
 
@@ -83,7 +83,7 @@ When the web server redirects Safari to a different URL, the history list contai
 ...
 ```
 
-##### Import payment cards
+### Import payment cards
 
 The top-level object in the payment cards JSON file contains a `payment_cards` key, which has a value that is an array of objects representing the payment cards the person stored in Safari. Each object in the array contains these keys:
 
@@ -107,7 +107,7 @@ The object looks like this example:
 }
 ```
 
-##### Import extension information
+### Import extension information
 
 The top-level object in the extensions JSON file contains an `extensions` key, which has a value that is an array of objects representing the Safari App Extensions, Safari Web Extensions, and Safari Content Blockers that the person installed and enabled in their Safari profile. Each object in the array contains these keys:
 

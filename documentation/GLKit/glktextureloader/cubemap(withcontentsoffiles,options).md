@@ -24,11 +24,11 @@ class func cubeMap(withContentsOfFiles paths: [Any], options: [String : NSNumber
 + (GLKTextureInfo *) cubeMapWithContentsOfFiles:(NSArray<id> *) paths options:(NSDictionary<NSString *,NSNumber *> *) options error:(NSError **) outError;
 ```
 
-#### Return Value
+## Return Value
 
 A texture info object that describes the loaded texture or `nil` if an error occurred.
 
-#### Discussion
+## Discussion
 
 The array of file paths must include six entries for the six faces of the cube map. The URLs should be arranged in the following order: Right(+x), Left(-x), Top(+y), Bottom(-y), Front(+z), Back(-z). This coordinate system is left-handed if you think of yourself within the cube. The coordinate system is right-handed if you think of yourself outside of the cube.
 

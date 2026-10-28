@@ -5,7 +5,7 @@
 
 Create a composite interface by combining content from one or more view controllers with other custom views.
 
-#### Overview
+## Overview
 
 Container view controllers promote better encapsulation by separating out your content from how you display that content onscreen. Unlike a content view controller that displays your app’s data, a container view controller displays other view controllers, arranging them onscreen and handling navigation between them.
 
@@ -15,7 +15,7 @@ A container view controller is still a view controller, so you display it in a w
 
 Many container view controllers facilitate navigation between different parts of your app’s content. Examples include [`UINavigationController`](./uinavigationcontroller.md), [`UITabBarController`](./uitabbarcontroller.md), and [`UIPageViewController`](./uipageviewcontroller.md), which help users navigate between different view controllers. You can also use container view controllers to organize the content you have more efficiently. For example, [`UISplitViewController`](./uisplitviewcontroller.md) displays two view controllers side-by-side on iPad. The only difference between navigation and organization is that navigation requires custom API to change the child view controllers; otherwise, the implementations are identical.
 
-##### Add a child view controller programmatically to your content
+### Add a child view controller programmatically to your content
 
 If your container view controller changes its child view controllers dynamically, it’s easier to add those children programmatically. Custom navigation interfaces facilitate navigation by changing their child view controllers, and you might also change child view controllers as part of configuring your interface.
 
@@ -50,7 +50,7 @@ if let viewController = storyboard.instantiateViewController(identifier: "imageV
 
 Establishing a container-child relationship between view controllers prevents UIKit from interfering with your interface unintentionally. UIKit normally routes information to each of your app’s view controllers independently. When a container-child relationship exists, UIKit routes many requests through the container view controller first, giving it a chance to alter the behavior for any child view controllers. For example, a container view controller may override the traits of its children, forcing them to adopt a specific appearance or behavior.
 
-##### Remove a child view controller from your content
+### Remove a child view controller from your content
 
 To remove a child view controller from your container, perform the following steps in order:
 
@@ -61,7 +61,7 @@ To remove a child view controller from your container, perform the following ste
 
 Breaking a container-child relationship tells UIKit that your container view controller is no longer displaying the child’s content. You can still maintain other references to the child view controller. For example, [`UINavigationController`](./uinavigationcontroller.md) manages a stack of child view controllers, but it maintains a container-child relationship with only one or two of those children at any given time.
 
-##### Embed a child view controller in your storyboard UI
+### Embed a child view controller in your storyboard UI
 
 If your container view controller organizes content, and doesn’t change that content later, configure your UI using container views. A container view is a proxy view that stands in for the content of a child view controller. When you add one to your interface, it looks like a normal view, but it has an attached view controller.
 
@@ -71,7 +71,7 @@ Size and position a container view the same way you would other views in your in
 
 When you instantiate a view controller that contains one or more container views, UIKit also instantiates the associated child view controllers. After creating the new view controllers, UIKit adds them as children of the original view controller you requested. You don’t need to call [`addChild(_:)`](./uiviewcontroller/addchild%28_%29.md) yourself.
 
-##### Support additional container behaviors
+### Support additional container behaviors
 
 Consider implementing the following additional behaviors in your custom container view controllers:
 

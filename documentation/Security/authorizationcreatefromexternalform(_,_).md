@@ -20,11 +20,11 @@ func AuthorizationCreateFromExternalForm(_ extForm: UnsafePointer<AuthorizationE
 OSStatus AuthorizationCreateFromExternalForm(const AuthorizationExternalForm *extForm, AuthorizationRef*authorization);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Authorization Services Result Codes](./authorization-services-result-codes.md).
 
-#### Discussion
+## Discussion
 
 When passing an authorization reference between processes, use this function to internalize the external representation of the authorization reference you created using the function [`AuthorizationMakeExternalForm(_:_:)`](./authorizationmakeexternalform%28_,_%29.md).
 

@@ -19,7 +19,7 @@ var sourcePort: UInt32 { get }
 @property (readonly) uint32_t sourcePort;
 ```
 
-#### Discussion
+## Discussion
 
 When the guest operating system opens a connection, this property contains the port number that the guest specified. When you open a connection to the guest operating system from your [`VZVirtioSocketDevice`](../vzvirtiosocketdevice.md) object, this property contains a randomly generated port number.
 

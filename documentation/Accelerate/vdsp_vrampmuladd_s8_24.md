@@ -21,7 +21,7 @@ Adds a fixed-point 8.24 format vector that contains monotonically incrementing o
 void vDSP_vrampmuladd_s8_24(const int *__I, vDSP_Stride __IS, int *__Start, const int *__Step, int *__O, vDSP_Stride __OS, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 Use this function to generate and return a vector populated with ramped values with each element multiplied by the corresponding element in a second vector. This function is similar to [`vDSP_vrampmul`](./vdsp_vrampmul.md) but adds the result to the output vector.
 

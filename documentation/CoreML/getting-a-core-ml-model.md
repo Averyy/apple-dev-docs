@@ -5,7 +5,7 @@
 
 Obtain a Core ML model to use in your app.
 
-#### Overview
+## Overview
 
 Core ML supports a variety of machine learning models, including neural networks, tree ensembles, support vector machines, and generalized linear models. Core ML requires the Core ML model format (models with a `.mlmodel` file extension).
 

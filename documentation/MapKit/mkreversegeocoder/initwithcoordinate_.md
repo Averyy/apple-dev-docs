@@ -19,7 +19,7 @@ Initializes the reverse geocoder with the specified coordinate value.
 - (instancetype) initWithCoordinate:(CLLocationCoordinate2D) coordinate;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized `MKReverseGeocoder` object.
 

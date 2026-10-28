@@ -21,7 +21,7 @@ An obsolete Boolean value indicating whether to require Certificate Transparency
 
 **Default**: `NO`
 
-#### Discussion
+## Discussion
 
 Certificate Transparency (CT) is a protocol that ATS can use to identify mistakenly or maliciously issued X.509 certificates. Earlier versions of the system used this key to enable or disable CT for a given domain. Specifically, CT requires a domain’s server certificates to have support from signed CT timestamps from at least two CT logs trusted by Apple. For more information about Certificate Transparency, see [RFC 6962](https://tools.ietf.org/html/rfc6962).
 

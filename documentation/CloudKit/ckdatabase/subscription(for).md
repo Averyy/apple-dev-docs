@@ -21,11 +21,11 @@ Fetches a specific subscription and returns it to an awaiting caller.
 func subscription(for subscriptionID: CKSubscription.ID) async throws -> CKSubscription
 ```
 
-#### Return Value
+## Return Value
 
 The fetched subscription.
 
-#### Discussion
+## Discussion
 
 This method throws an error if the request fails, such as when the network is unavailable or the device doesn’t have an active iCloud account.
 

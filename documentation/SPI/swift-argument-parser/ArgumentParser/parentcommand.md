@@ -18,7 +18,7 @@ A wrapper that adds a reference to a parent command.
 struct ParentCommand<Value> where Value : ParsableCommand
 ```
 
-#### Overview
+## Overview
 
 Use the `@ParentCommand` wrapper to gain access to a parent command’s state.
 

@@ -19,7 +19,7 @@ func removeVideoEffectOutput(_ videoEffectOutput: SCVideoEffectOutput) throws
 - (BOOL) removeVideoEffectOutput:(SCVideoEffectOutput *) videoEffectOutput error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 Remove SCVideoEffectOutput from the SCStream. Stops camera video effect if currently active.
 

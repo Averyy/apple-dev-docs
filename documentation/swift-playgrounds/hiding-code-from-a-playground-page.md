@@ -5,7 +5,7 @@
 
 Use special Swift comments to hide code from display but continue to run it.
 
-#### Overview
+## Overview
 
 You can hide code that’s unrelated to the main content of a playground page, like calls to page setup functions, code for assessing the learner’s progress, and functions in editable examples. Hidden code is still executed when the learner runs the playground.
 

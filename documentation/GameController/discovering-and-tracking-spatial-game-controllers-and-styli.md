@@ -5,11 +5,11 @@
 
 Receive controller and stylus input to interact with content in your augmented reality app.
 
-#### Overview
+## Overview
 
 The Game Controller framework provides the ability to discover spatial game controllers and stylus, allows you to connect, read button or thumbstick inputs, and play haptics. After you connect to a device, you use [RealityKit](../RealityKit/RealityKit.md) or [ARKit](../ARKit/ARKit.md) to combine tracking data with input from the device.
 
-#### Configure your project
+## Configure your project
 
 To begin developing with spatial game controllers, you need to configure your Xcode project. To add the spatial game controller profile to your project, perform the following steps:
 
@@ -21,7 +21,7 @@ To begin developing with spatial game controllers, you need to configure your Xc
 
 > **Note**: You don’t need to enable the Spatial Gamepad profile if your app only supports stylus input.
 
-#### Discover a controller or stylus
+## Discover a controller or stylus
 
 The system can notify your app when a spatial game controller connects or disconnects by listening for [`GCControllerDidConnect`](../Foundation/nsnotification/name-swift.struct/gccontrollerdidconnect.md) and [`GCControllerDidDisconnect`](../Foundation/nsnotification/name-swift.struct/gccontrollerdiddisconnect.md). A notification that includes information as to whether the controller provides spatial input:
 
@@ -47,7 +47,7 @@ To get notifications for styli, use [`GCStylusDidConnectNotification`](./gcstylu
 
 > **Note**: Use [`GCControllerDidConnect`](../Foundation/nsnotification/name-swift.struct/gccontrollerdidconnect.md) and [`GCStylusDidConnectNotification`](./gcstylusdidconnectnotification.md) when your app launches to get the initial connection state. Checking for controllers and styli isn’t synchronous and may return an empty list even with an accessory in a connected state.
 
-#### Handle input mapping
+## Handle input mapping
 
 You use [`input`](./gccontroller/input.md) to access the button and thumbstick inputs of a spatial controller. When you work with spatial game controllers, the input button mapping expose the following inputs:
 
@@ -71,7 +71,7 @@ input.buttons[.stylusSecondaryButton] // Secondary side button
 
 For information on polling for input and receiving callbacks, see [Handling input events](./handling-input-events.md). For more information on how to play haptics, see [Playing Haptics on Game Controllers](../CoreHaptics/playing-haptics-on-game-controllers.md).
 
-#### Track spatial position with RealityKit anchor entities
+## Track spatial position with RealityKit anchor entities
 
 In [RealityKit](../RealityKit/RealityKit.md), an [`AnchorEntity`](../RealityKit/anchorentity.md) provides a way to tether virtual content to physical locations or objects in your real work space. For example, an image in your environment, your hands, or a spatial game controller. On visionOS, accessory anchoring works in immersive and shared spaces.
 

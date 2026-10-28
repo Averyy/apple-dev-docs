@@ -23,7 +23,7 @@ case disabled
 UIVerticalBarBehaviorDisabled
 ```
 
-#### Discussion
+## Discussion
 
 Bar content falls back to the standard horizontal top and bottom bars, and the vertical status bar reverts to the horizontal axis.
 

@@ -23,7 +23,7 @@ var guide: SpotlightSearchTool.Guide?
 
 - [Making your indexed content available to Foundation Models](../../making-your-indexed-content-available-to-foundation-models.md)
 
-#### Discussion
+## Discussion
 
 The Spotlight search tool employs many techniques to look for results, but some techniques might not be relevant or necessary for your content. Use this property to offer guidance on how to search for your content, and to reduce the amount of data the tool delivers to the model. If you don’t specify custom guidance, the search tool uses all availble techniques, which can take extra time to run and consume additional resources.
 

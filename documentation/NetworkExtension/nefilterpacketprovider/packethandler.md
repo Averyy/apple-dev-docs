@@ -19,7 +19,7 @@ var packetHandler: NEFilterPacketHandler? { get set }
 @property (strong, nullable) NEFilterPacketHandler packetHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Set this property to a handler that returns a [`NEFilterPacketProvider.Verdict`](./verdict.md) for each packet it receives.
 

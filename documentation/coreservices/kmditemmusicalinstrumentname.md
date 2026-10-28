@@ -19,7 +19,7 @@ let kMDItemMusicalInstrumentName: CFString!
 const CFStringRef kMDItemMusicalInstrumentName;
 ```
 
-#### Discussion
+## Discussion
 
 Files can have an instrument name associated with them if they have certain instrument categories. For example, the "Percussion" category has multiple instruments, including "Conga" and "Bongo".
 

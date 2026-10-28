@@ -23,7 +23,7 @@ var numberOfLines: Int { get set }
 @property (nonatomic) NSInteger numberOfLines;
 ```
 
-#### Discussion
+## Discussion
 
 This property controls the maximum number of lines to use in order to fit the label’s text into its bounding rectangle. The default value for this property is `1`. To remove any maximum limit, and use as many lines as needed, set the value of this property to `0`.
 

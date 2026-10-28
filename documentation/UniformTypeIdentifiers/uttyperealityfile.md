@@ -21,7 +21,7 @@ A type that represents a Reality Composer file.
 extern UTType * const UTTypeRealityFile;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `com.apple.reality`.
 

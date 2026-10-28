@@ -24,7 +24,7 @@ var projection: MDLCameraProjection { get set }
 @property (nonatomic, assign) MDLCameraProjection projection;
 ```
 
-#### Discussion
+## Discussion
 
 A renderer can use this information to change its interpretation or recalculation of the [`projectionMatrix`](./projectionmatrix.md) property.
 

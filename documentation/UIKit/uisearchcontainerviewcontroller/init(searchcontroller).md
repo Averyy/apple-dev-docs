@@ -23,11 +23,11 @@ init(searchController: UISearchController)
 - (instancetype) initWithSearchController:(UISearchController *) searchController;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized search container view controller.
 
-#### Discussion
+## Discussion
 
 After initializing the search container view controller, embed it in your container view controller normally.
 

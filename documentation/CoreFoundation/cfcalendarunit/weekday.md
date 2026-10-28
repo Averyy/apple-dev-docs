@@ -25,7 +25,7 @@ static var weekday: CFCalendarUnit { get }
 kCFCalendarUnitWeekday
 ```
 
-#### Discussion
+## Discussion
 
 The weekday units are the numbers `1`-`N` (where for the Gregorian calendar `N=7` and `1` is Sunday).
 

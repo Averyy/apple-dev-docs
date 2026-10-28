@@ -19,11 +19,11 @@ optional func listener(_ listener: VZVirtioSocketListener, shouldAcceptNewConnec
 - (BOOL) listener:(VZVirtioSocketListener *) listener shouldAcceptNewConnection:(VZVirtioSocketConnection *) connection fromSocketDevice:(VZVirtioSocketDevice *) socketDevice;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) to establish the connection, or [`false`](../../Swift/false.md) to reject it.
 
-#### Discussion
+## Discussion
 
 Use your method’s implementation to quickly determine whether to accept or reject connection attempts. A typical implementation verifies that a connection between the specified ports is permissible. Return a result as quickly as possible, and don’t perform any long-running operations in this method.
 

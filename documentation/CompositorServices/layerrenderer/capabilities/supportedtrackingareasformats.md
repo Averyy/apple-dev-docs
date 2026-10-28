@@ -16,7 +16,7 @@ An array of tracking areas formats that the layer supports for its textures.
 var supportedTrackingAreasFormats: [MTLPixelFormat] { get }
 ```
 
-#### Discussion
+## Discussion
 
 The pixel formats in this property tell you which pixel arrangements and characteristics the layer supports for its tracking areas textures.
 

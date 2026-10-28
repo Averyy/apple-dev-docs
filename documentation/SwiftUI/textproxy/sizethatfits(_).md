@@ -21,7 +21,7 @@ Returns the space needed by the text view, for a proposed size.
 func sizeThatFits(_ proposal: ProposedViewSize) -> CGSize
 ```
 
-#### Return Value
+## Return Value
 
 The size that the text view requires for the given proposal.
 

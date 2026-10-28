@@ -19,7 +19,7 @@ The local identifier of the item.
 var itemIdentifier: String? { get }
 ```
 
-#### Discussion
+## Discussion
 
 This value is `nil` if you create a Photos picker without a photo library.
 

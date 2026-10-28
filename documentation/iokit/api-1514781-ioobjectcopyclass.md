@@ -23,11 +23,11 @@ func IOObjectCopyClass(_ object: io_object_t) -> Unmanaged<CFString>!
 CFStringRef IOObjectCopyClass(io_object_t object);
 ```
 
-#### Return Value
+## Return Value
 
 The resulting CFStringRef. This should be released by the caller. If a valid object is not passed in, then NULL is returned.
 
-#### Discussion
+## Discussion
 
 This function does the same thing as IOObjectGetClass, but returns the result as a CFStringRef.
 

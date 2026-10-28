@@ -25,7 +25,7 @@ class DDMatchPhoneNumber
 @interface DDMatchPhoneNumber : DDMatch
 ```
 
-#### Overview
+## Overview
 
 The DataDetection framework returns a phone number match in a `DDMatchPhoneNumber` object, which contains a phone number, and optionally a label that categorizes the phone number.
 

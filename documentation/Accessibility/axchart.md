@@ -29,7 +29,7 @@ protocol AXChart : NSObjectProtocol
 
 - [Representing chart data as an audio graph](./representing-chart-data-as-an-audio-graph.md)
 
-#### Overview
+## Overview
 
 Use this protocol when you want to create an accessible representation of a chart — a view that displays a graphical representation of a data set — for VoiceOver to play as an audio graph.
 

@@ -21,7 +21,7 @@ The style with which to display the image for this `DisplayRepresentation`.
 struct DisplayStyle
 ```
 
-#### Overview
+## Overview
 
 Note that these are only used when an image, not a symbol name, is specified. When symbol names are specified, they are rendered automatically as appropriate for the system.
 

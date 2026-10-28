@@ -25,11 +25,11 @@ func makeTensor(descriptor: MTLTensorDescriptor, attachments: MTLTensorBufferAtt
 - (id<MTLTensor>) newTensorWithDescriptor:(MTLTensorDescriptor *) descriptor attachments:(MTLTensorBufferAttachments *) attachments error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 A tensor, or `nil` if validation fails.
 
-#### Discussion
+## Discussion
 
 This method validates the constraints documented on [`MTLTensorDescriptor`](../mtltensordescriptor.md) and [`MTLTensorBufferAttachments`](../mtltensorbufferattachments.md), and additionally requires that every plane configured in `descriptor` (data plane and all auxiliary planes) has a corresponding entry in `attachments`.
 

@@ -24,7 +24,7 @@ var precision: Int { get }
 @property (nonatomic, readonly) NSUInteger precision;
 ```
 
-#### Discussion
+## Discussion
 
 This is precision, not size (float is 24 bits, not 32; half-precision floating-point is 11 bits, not 16; `Snorm` pixel formats have one less bit of precision for the sign bit, etc.). For formats like [`MTLPixelFormat.b5g6r5Unorm`](../../Metal/mtlpixelformat/b5g6r5unorm.md), this value is the precision of the most precise channel (which is 6 in this case). When this information is unavailable, typically for compressed formats, this value is 0.
 

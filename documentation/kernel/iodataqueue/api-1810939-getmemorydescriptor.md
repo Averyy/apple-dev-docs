@@ -11,11 +11,11 @@ Returns a memory descriptor covering the IODataQueueMemory region.
 virtual IOMemoryDescriptor *getMemoryDescriptor();
 ```
 
-#### Return Value
+## Return Value
 
 Returns a newly allocated IOMemoryDescriptor for the IODataQueueMemory region. Returns zero on failure.
 
-#### Overview
+## Overview
 
 The IOMemoryDescriptor instance returned by this method is intended to be mapped into a user process. This is the memory region that the IODataQueueClient code operates on.
 

@@ -25,7 +25,7 @@ let kCMTextFormatDescriptionExtension_DefaultTextBox: CFString
 extern CFStringRef const kCMTextFormatDescriptionExtension_DefaultTextBox;
 ```
 
-#### Discussion
+## Discussion
 
 The value needs to be a [`CFDictionary`](../CoreFoundation/cfdictionary.md).
 

@@ -24,11 +24,11 @@ func index(ofSpatialLocation location: vector_float3) -> MDLVoxelIndex
 - (MDLVoxelIndex) indexOfSpatialLocation:(vector_float3) location;
 ```
 
-#### Return Value
+## Return Value
 
 An index describing both the location of the voxel within the three-dimensional grid of the voxel array and its relationship to the volume of the object modeled by the voxel array.
 
-#### Discussion
+## Discussion
 
 The coordinate space for spatial locations of voxels is the world space of the asset from which the voxel array was created, or for voxel arrays created with the [`init(data:boundingBox:voxelExtent:)`](./init%28data,boundingbox,voxelextent%29.md) initializer, the bounding box specified at initialization.
 

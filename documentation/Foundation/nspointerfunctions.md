@@ -25,13 +25,13 @@ class NSPointerFunctions
 @interface NSPointerFunctions : NSObject
 ```
 
-#### Overview
+## Overview
 
 The functions specified by an instance of `NSPointerFunctions` are separated into two clusters—those that define “personality” such as “object” or “C-string”, and those that describe memory management issues such as a memory deallocation function. There are constants for common personalities and memory manager selections (see `Memory and Personality Options`).
 
 [`NSHashTable`](./nshashtable.md), [`NSMapTable`](./nsmaptable.md), and [`NSPointerArray`](./nspointerarray.md) use an `NSPointerFunctions` object to define the acquisition and retention behavior for the pointers they manage. Note, however, that not all combinations of personality and memory management behavior are valid for these collections. The pointer collection objects copy the `NSPointerFunctions` object on input and output, so you cannot usefully subclass `NSPointerFunctions`.
 
-##### Subclassing Notes
+### Subclassing Notes
 
 `NSPointerFunctions` is not suitable for subclassing.
 

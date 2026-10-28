@@ -19,7 +19,7 @@ class WKAlertAction
 @interface WKAlertAction : NSObject
 ```
 
-#### Overview
+## Overview
 
 Create instances of this class using the [`init(title:style:handler:)`](./wkalertaction/init%28title,style,handler%29.md) method and pass them to the [`presentAlert(withTitle:message:preferredStyle:actions:)`](./wkinterfacecontroller/presentalert%28withtitle,message,preferredstyle,actions%29.md) method of one of your interface controllers. The sheet uses your action objects to create the corresponding buttons. When creating an alert action, you specify the title and visual style to apply to the button and a block to execute when the button is tapped. Use the defined visual styles to convey the purpose of the button to the user.
 

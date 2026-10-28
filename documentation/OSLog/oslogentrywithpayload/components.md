@@ -26,7 +26,7 @@ var components: [OSLogMessageComponent] { get }
 @property (nonatomic, readonly) NSArray<OSLogMessageComponent *> * components;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains an array of [`OSLogMessageComponent`](../oslogmessagecomponent.md) objects from the composed message.
 

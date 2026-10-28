@@ -24,7 +24,7 @@ var type: MDLMaterialPropertyType { get set }
 @property (nonatomic, assign) MDLMaterialPropertyType type;
 ```
 
-#### Discussion
+## Discussion
 
 Each [`semantic`](./semantic.md) value has one or more data types that are appropriate for its value. For example, the [`MDLMaterialSemantic.baseColor`](../mdlmaterialsemantic/basecolor.md) semantic provides per-pixel colors for a rendered surface, so appropriate values for that semantic include scalars (interpreted as a grayscale color), colors, texture images, or URLs that refer to texture images. The [`MDLMaterialSemantic.ambientOcclusionScale`](../mdlmaterialsemantic/ambientocclusionscale.md) semantic provides a scale factor for the effect of ambient occlusion shading, so an appropriate value is a scalar or a grayscale image that varies that scalar value across the surface of the material.
 

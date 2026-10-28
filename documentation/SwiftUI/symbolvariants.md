@@ -21,7 +21,7 @@ A variant of a symbol.
 struct SymbolVariants
 ```
 
-#### Overview
+## Overview
 
 Many of the [SF Symbols](https://developer.apple.com/design/human-interface-guidelines/sf-symbols) that you can add to your app using an [`Image`](./image.md) or a [`Label`](./label.md) instance have common variants, like a filled version or a version that’s contained within a circle. The symbol’s name indicates the variant:
 

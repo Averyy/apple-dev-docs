@@ -15,11 +15,11 @@ Reports the I/O constraints for this controller.
 virtual kern_return_t UserReportHBAConstraints(OSDictionary *constraints);
 ```
 
-#### Return Value
+## Return Value
 
 A value that indicates the result of reporting the HBA constraints. [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) indicates success. For error definitions, see [IOKit Constants](../../iokit/iokit_constants.md).
 
-#### Discussion
+## Discussion
 
 The valid keys for the `constraints` dictionary are as follows:
 

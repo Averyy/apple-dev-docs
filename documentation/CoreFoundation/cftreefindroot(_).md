@@ -25,7 +25,7 @@ func CFTreeFindRoot(_ tree: CFTree!) -> CFTree!
 extern CFTreeRefCFTreeFindRoot(CFTreeRef tree);
 ```
 
-#### Return Value
+## Return Value
 
 The root of `tree` where root is defined as a tree without a parent. Ownership follows the [The Get Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-SW1).
 

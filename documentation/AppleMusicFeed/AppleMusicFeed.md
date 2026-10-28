@@ -9,7 +9,7 @@ Access the content of the Apple Music Catalog in bulk.
 **Availability**:
 - AppleMusicFeed 1.0+
 
-#### Overview
+## Overview
 
 Apple Music Feed contains the catalog content of Apple Music products in bulk for consumption as feed exports. These bulk exports are appropriate for offline use cases, complementing Apple Music API, which is best for online use. Apple Music Feed includes content metadata for albums, songs, artists, and popularity charts, and fully refreshes every 24 hours. You access the Apple Music Feed using Apple Media Feed API to [request an export](./requesting-a-feed-export.md) of a data set.
 
@@ -21,7 +21,7 @@ Apple Music Feed uses the Parquet format, which is an open-source columnar stora
 
 > **Note**: Although the feed is in Parquet format, this documentation provides data examples in JSON format for illustrative purposes.
 
-#### Use sample scripts
+## Use sample scripts
 
 You can find sample Java and Python scripts in the [music-feed-examples](https://github.com/apple/music-feed-examples) public GitHub repository that perform the following steps:
 

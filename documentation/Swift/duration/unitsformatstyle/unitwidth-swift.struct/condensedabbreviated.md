@@ -21,7 +21,7 @@ An abbreviated unit name, with condensed space between the value and name.
 static var condensedAbbreviated: Duration.UnitsFormatStyle.UnitWidth { get }
 ```
 
-#### Discussion
+## Discussion
 
 For example, `condensedAbbreviated` produces the unit label “3hr” for a 3-hour duration in the `en_US` locale.
 

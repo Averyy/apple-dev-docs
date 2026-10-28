@@ -25,7 +25,7 @@ var sampleRateConverterQuality: Int { get set }
 @property (nonatomic) NSInteger sampleRateConverterQuality;
 ```
 
-#### Discussion
+## Discussion
 
 For information about possible key values, see [`AVSampleRateConverterAlgorithmKey`](../avsamplerateconverteralgorithmkey.md).
 

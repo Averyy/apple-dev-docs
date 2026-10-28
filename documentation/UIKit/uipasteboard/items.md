@@ -22,7 +22,7 @@ var items: [[String : Any]] { get set }
 @property (nonatomic, copy) NSArray<NSDictionary<NSString *,id> *> * items;
 ```
 
-#### Discussion
+## Discussion
 
 The value of the property is an array of dictionaries. Each dictionary represents a pasteboard item, with the key being the representation type and the value the object associated with that type. Setting this property replaces all of the current pasteboard items.
 

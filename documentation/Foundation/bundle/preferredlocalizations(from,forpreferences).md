@@ -25,11 +25,11 @@ class func preferredLocalizations(from localizationsArray: [String], forPreferen
 + (NSArray<NSString *> *) preferredLocalizationsFromArray:(NSArray<NSString *> *) localizationsArray forPreferences:(NSArray<NSString *> *) preferencesArray;
 ```
 
-#### Return Value
+## Return Value
 
 An array of locale identifiers, ordered according to user preference.  If none of the user-preferred localizations are available, this method returns one of the values in `localizationsArray`.
 
-#### Discussion
+## Discussion
 
 This method returns only the locale identifiers for which a bundle would  provide localized content. Typically, this means one of the following:
 

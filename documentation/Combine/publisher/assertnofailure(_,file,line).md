@@ -21,11 +21,11 @@ Raises a fatal error when its upstream publisher fails, and otherwise republishe
 func assertNoFailure(_ prefix: String = "", file: StaticString = #file, line: UInt = #line) -> Publishers.AssertNoFailure<Self>
 ```
 
-#### Return Value
+## Return Value
 
 A publisher that raises a fatal error when its upstream publisher fails.
 
-#### Discussion
+## Discussion
 
 Use `assertNoFailure()` for internal integrity checks that are active during testing. However, it is important to note that, like its Swift counterpart `fatalError(_:)`, the `assertNoFailure()` operator asserts a fatal exception when triggered during development and testing, *and* in shipping versions of code.
 

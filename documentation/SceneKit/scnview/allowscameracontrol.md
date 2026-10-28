@@ -25,7 +25,7 @@ var allowsCameraControl: Bool { get set }
 @property (nonatomic) BOOL allowsCameraControl;
 ```
 
-#### Discussion
+## Discussion
 
 If you set this property to [`true`](../../Swift/true.md), SceneKit creates a camera node and handles mouse or touch events to allow the user to pan, zoom, and rotate their view of the scene. (Enabling user camera control does not modify camera objects already existing in the scene graph or the nodes containing them.)
 

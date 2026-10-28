@@ -20,7 +20,7 @@ The slope at the location toward the direction of travel, measured in degrees.
 @property (nonatomic, strong, readonly, nullable) NSNumber * slope;
 ```
 
-#### Discussion
+## Discussion
 
 If the slope is invalid, this property is [`nil`](../../ObjectiveC/nil-227m0.md).
 

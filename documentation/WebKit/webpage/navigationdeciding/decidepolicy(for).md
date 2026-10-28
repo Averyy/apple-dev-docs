@@ -21,7 +21,7 @@ Determines permission to navigate to new content after the response to the navig
 mutating func decidePolicy(for response: WebPage.NavigationResponse) async -> WKNavigationResponsePolicy
 ```
 
-#### Return Value
+## Return Value
 
 The navigation policy for the response.
 

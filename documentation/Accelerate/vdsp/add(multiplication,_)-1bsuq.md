@@ -21,11 +21,11 @@ Returns the double-precision element-wise addition of the product of a vector an
 static func add<T, U>(multiplication: (a: T, b: Double), _ vector: U) -> [Double] where T : AccelerateBuffer, U : AccelerateBuffer, T.Element == Double, U.Element == Double
 ```
 
-#### Return Value
+## Return Value
 
 The output vector `D` in `D = (A * B) + C`.
 
-#### Discussion
+## Discussion
 
 This function calculates the element-wise product of vector `A` and scalar value `B`, adds vector `C` to the product, and writes the result to vector `D`, as follows:
 

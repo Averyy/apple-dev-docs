@@ -13,7 +13,7 @@
 kSCSIPort_StatusOffline = 1
 ```
 
-#### Discussion
+## Discussion
 
 The port is offline (e.g. unplugged cable).
 

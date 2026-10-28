@@ -25,11 +25,11 @@ func SparseSolve(_ method: SparseIterativeMethod, _ A: SparseMatrix_Double, _ B:
 static SparseIterativeStatus_t SparseSolve(SparseIterativeMethod method, SparseMatrix_Double A, DenseMatrix_Double B, DenseMatrix_Double X, SparsePreconditioner_t Preconditioner);
 ```
 
-#### Return Value
+## Return Value
 
 A [`SparseIterativeStatus_t`](./sparseiterativestatus_t.md) enumeration that represents the status of the iterative solve.
 
-#### Discussion
+## Discussion
 
 Use this function to solve a system of linear equations using a factored coefficient matrix. Preconditioning the coefficient matrix can reduce the number of iterations the function requires to converge the system.
 

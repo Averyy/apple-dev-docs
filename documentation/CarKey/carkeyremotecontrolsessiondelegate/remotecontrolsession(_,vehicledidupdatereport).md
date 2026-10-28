@@ -20,7 +20,7 @@ Notifies your delegate object that the status of the specified vehicle changed.
 func remoteControlSession(_ session: CarKeyRemoteControlSession, vehicleDidUpdateReport: VehicleReport)
 ```
 
-#### Discussion
+## Discussion
 
 When information for a vehicle changes, the session notifies its delegate so you can make any changes. To save time, use the provided report rather than requesting the report again from the session’s [`vehicleReports`](../carkeyremotecontrolsession/vehiclereports.md) property. The system executes this method on the dispatch queue you specified when you started the session.
 

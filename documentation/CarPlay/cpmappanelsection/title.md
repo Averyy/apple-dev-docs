@@ -21,7 +21,7 @@ var title: String? { get set }
 @property (nonatomic, copy, nullable) NSString * title;
 ```
 
-#### Discussion
+## Discussion
 
 Set this property to `nil` if you don’t want to display a title for the section.
 

@@ -40,7 +40,7 @@ protocol NCWidgetProviding : NSExtensionRequestHandling
 @protocol NCWidgetProviding <NSExtensionRequestHandling>
 ```
 
-#### Overview
+## Overview
 
 The `NCWidgetProviding` protocol allows customization of the appearance and behavior of a Today widget.
 

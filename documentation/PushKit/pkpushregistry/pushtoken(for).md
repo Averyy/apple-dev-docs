@@ -24,11 +24,11 @@ func pushToken(for type: PKPushType) -> Data?
 - (NSData *) pushTokenForType:(PKPushType) type;
 ```
 
-#### Return Value
+## Return Value
 
 The push token used to send pushes to the device or `nil` if no token is available for the specified type.
 
-#### Discussion
+## Discussion
 
 If registration for a specific push type is successful, the push registry delivers the corresponding push token to its delegate and adds a copy of the token to its local cache. Use this method to retrieve the token at a later time.
 

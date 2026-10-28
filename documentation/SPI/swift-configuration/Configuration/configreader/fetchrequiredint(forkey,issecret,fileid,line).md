@@ -24,11 +24,11 @@ Asynchronously fetches a required config value for the given config key, throwin
 func fetchRequiredInt(forKey key: ConfigKey, isSecret: Bool = false, fileID: String = #fileID, line: UInt = #line) async throws -> Int
 ```
 
-#### Return Value
+## Return Value
 
 The config value converted to the expected type.
 
-#### Discussion
+## Discussion
 
 Use this method when a configuration value is mandatory for your application to function and you’re working with async providers. The method throws an error if the value is missing or can’t be converted to the expected type.
 

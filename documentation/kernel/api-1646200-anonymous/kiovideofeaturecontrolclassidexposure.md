@@ -13,7 +13,7 @@
 kIOVideoFeatureControlClassIDExposure = 'xpsr'
 ```
 
-#### Discussion
+## Discussion
 
 A IOVideoFeatureControl that controls a the total amount of light accumulated. The units for the control's absolute value are exposure value (EV).
 

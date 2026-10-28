@@ -23,7 +23,7 @@ var isManualDeferredStartSupported: Bool { get }
 @property (nonatomic, readonly, getter=isManualDeferredStartSupported) BOOL manualDeferredStartSupported;
 ```
 
-#### Discussion
+## Discussion
 
 Deferred Start is a feature that allows you to control, on a per-output basis, whether output objects start when or after the session is started. The session defers starting an output when its `deferredStartEnabled` property is set to `true`, and starts it after the session is started.
 

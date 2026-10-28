@@ -24,7 +24,7 @@ var sheenTint: MDLMaterialProperty { get }
 @property (nonatomic, retain, readonly) MDLMaterialProperty * sheenTint;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is zero—sheen highlights entirely use the color of the reflected light source.
 

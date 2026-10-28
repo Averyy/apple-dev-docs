@@ -21,7 +21,7 @@ Counts the number of tags in a collection matching an evaluation function.
 extern CMItemCount CMTagCollectionCountTagsWithFilterFunction(CMTagCollectionRef tagCollection, CMTagCollectionTagFilterFunction filterApplier, void *context);
 ```
 
-#### Return Value
+## Return Value
 
 The number of tags for which `filterApplier` returned `YES`.
 

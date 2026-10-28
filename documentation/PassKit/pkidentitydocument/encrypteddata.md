@@ -26,7 +26,7 @@ var encryptedData: Data { get }
 
 - [Requesting identity data from a Wallet pass](../requesting-identity-data-from-a-wallet-pass.md)
 
-#### Discussion
+## Discussion
 
 The system encrypts this property to the public key with the developer portal for the calling app. You need to send this data to the server holding the corresponding private key for decryption.
 

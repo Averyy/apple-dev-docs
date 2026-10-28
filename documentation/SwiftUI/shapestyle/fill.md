@@ -24,7 +24,7 @@ static var fill: FillShapeStyle { get }
 
 Available when `Self` is `FillShapeStyle`.
 
-#### Discussion
+## Discussion
 
 This shape style is appropriate for items situated on top of an existing background color. It incorporates transparency to allow the background color to show through.
 

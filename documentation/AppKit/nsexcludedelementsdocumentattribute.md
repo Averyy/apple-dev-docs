@@ -15,7 +15,7 @@ The HTML elements to exclude in generated HTML.
 extern NSAttributedStringDocumentAttributeKey NSExcludedElementsDocumentAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 An [`NSArray`](../Foundation/nsarray.md) object containing [`NSString`](../Foundation/nsstring.md) objects, representing HTML elements not to be used in generated HTML.
 

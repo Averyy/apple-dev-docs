@@ -5,7 +5,7 @@
 
 Use SpriteKit to place two-dimensional images in 3D space in your AR experience.
 
-#### Overview
+## Overview
 
 SpriteKit is inherently for 2D visual content, but augmented reality involves real-world 3D spaces. Use the [`ARSKView`](./arskview.md) class to create AR experiences by providing 2D sprites ([`SKNode`](../SpriteKit/sknode.md) objects) that correspond to real-world 3D positions ([`ARAnchor`](./aranchor.md) objects). When the user moves the device, the view automatically rotates and scales the SpriteKit nodes corresponding to anchors so that they appear to track the real world seen by the camera.
 

@@ -19,7 +19,7 @@ Informs Captive Network Support that the device is not authenticated on a captiv
 Boolean CNMarkPortalOffline(CFStringRef interfaceName);
 ```
 
-#### Return Value
+## Return Value
 
 `TRUE` if the operation succeeded; otherwise, `FALSE`.
 

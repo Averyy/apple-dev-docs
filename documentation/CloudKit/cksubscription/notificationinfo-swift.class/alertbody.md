@@ -24,7 +24,7 @@ var alertBody: String? { get set }
 @property (copy, nullable) NSString * alertBody;
 ```
 
-#### Discussion
+## Discussion
 
 Set this property’s value to have the system display the specified string when it receives the corresponding push notification. If you localize your app’s content, use the [`alertLocalizationKey`](./alertlocalizationkey.md) property instead.
 

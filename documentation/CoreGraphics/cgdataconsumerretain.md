@@ -21,11 +21,11 @@ Increments the retain count of a data consumer.
 extern CGDataConsumerRefCGDataConsumerRetain(CGDataConsumerRef consumer);
 ```
 
-#### Return Value
+## Return Value
 
 The same data consumer you passed in as the `consumer` parameter.
 
-#### Discussion
+## Discussion
 
 This function is equivalent to [`CFRetain`](../CoreFoundation/cfretain.md), except that it does not cause an error if the `consumer` parameter is `NULL`.
 

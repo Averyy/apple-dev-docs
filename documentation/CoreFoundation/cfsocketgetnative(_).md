@@ -25,7 +25,7 @@ func CFSocketGetNative(_ s: CFSocket!) -> CFSocketNativeHandle
 extern CFSocketNativeHandle CFSocketGetNative(CFSocketRef s);
 ```
 
-#### Return Value
+## Return Value
 
 The native socket associated with `s`. If `s` has been invalidated, returns `-1`, `INVALID_SOCKET`.
 

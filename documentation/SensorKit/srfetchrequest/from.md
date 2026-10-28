@@ -21,7 +21,7 @@ var from: SRAbsoluteTime { get set }
 @property (assign) SRAbsoluteTime from;
 ```
 
-#### Discussion
+## Discussion
 
 A fetch is exclusive of this time.
 

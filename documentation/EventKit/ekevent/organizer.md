@@ -24,7 +24,7 @@ var organizer: EKParticipant? { get }
 @property (nonatomic, readonly, nullable) EKParticipant * organizer;
 ```
 
-#### Discussion
+## Discussion
 
 This property is `nil` if the event has no organizer.
 

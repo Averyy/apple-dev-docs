@@ -15,7 +15,7 @@ A property of IOMedia objects.
 #define kIOMediaOpenKey
 ```
 
-#### Discussion
+## Discussion
 
 The kIOMediaOpenKey property has an OSBoolean value and describes whether a client presently has an open on this media.
 

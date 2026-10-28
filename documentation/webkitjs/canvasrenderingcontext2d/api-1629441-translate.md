@@ -19,7 +19,7 @@ void translate(
 );
 ```
 
-#### Discussion
+## Discussion
 
 The specified point x,y in the canvas coordinate system becomes the point 0,0 and the entire coordinate system is translated accordingly.
 

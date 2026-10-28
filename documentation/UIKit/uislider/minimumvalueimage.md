@@ -22,7 +22,7 @@ var minimumValueImage: UIImage? { get set }
 @property (nonatomic, strong, nullable) UIImage * minimumValueImage;
 ```
 
-#### Discussion
+## Discussion
 
 The image you specify must fit within the bounding rectangle returned by the [`minimumValueImageRect(forBounds:)`](./minimumvalueimagerect%28forbounds%29.md) method. If it doesn’t, the slider scales the image to fit. In addition, the slider lengthens or shortens its track as needed to accommodate the image in its bounding rectangle.
 

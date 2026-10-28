@@ -28,7 +28,7 @@ func livePhotoForPlayback(targetSize: CGSize, options: [String : Any]? = nil) as
 - (void) prepareLivePhotoForPlaybackWithTargetSize:(CGSize) targetSize options:(NSDictionary<NSString *,id> *) options completionHandler:(void (^)(PHLivePhoto *livePhoto, NSError *error)) handler;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to generate preview versions of the edited Live Photo—for example, to display in your editing UI.
 

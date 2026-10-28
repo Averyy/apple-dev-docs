@@ -15,7 +15,7 @@ An identifier for grouping annotations into the same cluster.
 clusteringIdentifier?: string | null;
 ```
 
-#### Discussion
+## Discussion
 
 When zooming out on a map that contains many annotations, MapKit JS groups the colliding annotations based on a clustering identifier value.
 

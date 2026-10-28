@@ -19,7 +19,7 @@ func becomeFirstResponder() -> Bool
 - (BOOL) becomeFirstResponder;
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation returns [`true`](../../Swift/true.md), accepting first responder status. Subclasses can override this method to update state or perform some action such as highlighting the selection, or to return [`false`](../../Swift/false.md), refusing first responder status.
 

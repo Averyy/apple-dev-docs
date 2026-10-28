@@ -17,7 +17,7 @@ Reads and loads document data.
 - (BOOL) readFromURL:(NSURL *) url ofType:(NSString *) type;
 ```
 
-#### Discussion
+## Discussion
 
 Reads and loads document data of type `docType` from the URL `aURL`, returning whether the operation was successful. This method only supports URLs of the `file:` scheme and calls [`readFromFile:ofType:`](./readfromfile_oftype_.md).
 

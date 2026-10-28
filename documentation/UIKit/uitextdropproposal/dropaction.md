@@ -22,7 +22,7 @@ var dropAction: UITextDropProposal.Action { get set }
 @property (nonatomic) UITextDropAction dropAction;
 ```
 
-#### Discussion
+## Discussion
 
 The property’s default value is [`UITextDropProposal.Action.insert`](./action/insert.md).
 

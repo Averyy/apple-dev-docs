@@ -24,7 +24,7 @@ var reuseIdentifier: String? { get }
 @property (nonatomic, readonly, nullable) NSString * reuseIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 You specify the reuse identifier when you create the view. You use this type to retrieve an annotation view that MapKit isn’t currently using because its annotation isn’t onscreen.
 

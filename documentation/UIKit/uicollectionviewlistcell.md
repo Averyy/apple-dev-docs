@@ -24,7 +24,7 @@ class UICollectionViewListCell
 @interface UICollectionViewListCell : UICollectionViewCell
 ```
 
-#### Overview
+## Overview
 
 A list cell represents an individual item that might appear in a list. List cells provide built-in support for indentation, and the ability to add cell accessories ([`UICellAccessory`](./uicellaccessory-swift.struct.md)) for visual adornment or to support user interactions with the cell.
 

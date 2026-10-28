@@ -17,11 +17,11 @@ Sets the CSSM authorization tags for a given access control list entry.
 OSStatus SecACLSetAuthorizations(SecACLRef acl, CSSM_ACL_AUTHORIZATION_TAG *tags, uint32 tagCount);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  This function is deprecated. Use [`SecACLUpdateAuthorizations(_:_:)`](./secaclupdateauthorizations%28_,_%29.md) instead.
 
@@ -29,7 +29,7 @@ An ACL object includes a list of trusted applications (see [`SecTrustedApplicati
 
 Because an ACL object is always associated with an access object, when you modify an ACL entry, you are modifying the access object as well. There is no need for a separate function to write a modified ACL object back into the access object.
 
-##### Special Considerations
+### Special Considerations
 
 This function is deprecated in macOS 10.7 and later; use [`SecACLUpdateAuthorizations(_:_:)`](./secaclupdateauthorizations%28_,_%29.md) instead.
 

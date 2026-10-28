@@ -22,7 +22,7 @@ var videoFieldOfView: Float { get }
 @property (nonatomic, readonly) float videoFieldOfView;
 ```
 
-#### Discussion
+## Discussion
 
 Returns zero if the format’s field of view is unknown.
 

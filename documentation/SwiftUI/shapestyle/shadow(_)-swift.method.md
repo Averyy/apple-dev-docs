@@ -21,11 +21,11 @@ Applies the specified shadow effect to the shape style.
 func shadow(_ style: ShadowStyle) -> some ShapeStyle
 ```
 
-#### Return Value
+## Return Value
 
 A new shape style that uses the specified shadow style.
 
-#### Discussion
+## Discussion
 
 For example, you can create a rectangle that adds a drop shadow to the [`red`](./red.md) shape style.
 

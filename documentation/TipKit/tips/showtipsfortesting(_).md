@@ -21,7 +21,7 @@ Show specified tips regardless of their display rule eligibility or display freq
 static func showTipsForTesting(_ tips: [any Tip.Type])
 ```
 
-#### Overview
+## Overview
 
 This function can also be called with the launch argument `-com.apple.TipKit.ShowTips FindTrailheadTip,SlopeProfileTip`.
 

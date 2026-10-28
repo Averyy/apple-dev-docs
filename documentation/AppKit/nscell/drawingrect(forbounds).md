@@ -19,7 +19,7 @@ func drawingRect(forBounds rect: NSRect) -> NSRect
 - (NSRect) drawingRectForBounds:(NSRect) rect;
 ```
 
-#### Return Value
+## Return Value
 
 The rectangle in which the receiver draws itself. This rectangle is slightly inset from the one in `theRect`.
 

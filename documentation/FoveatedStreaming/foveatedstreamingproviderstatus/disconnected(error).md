@@ -15,7 +15,7 @@ The session has been disconnected for the provided reason.
 case disconnected(error: NSError?)
 ```
 
-#### Discussion
+## Discussion
 
 If `error` is `nil`, then the disconnect event was requested by calling [`disconnect()`](../foveatedstreamingextension/disconnect%28%29.md).
 

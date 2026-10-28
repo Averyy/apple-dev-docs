@@ -18,7 +18,7 @@ Creates a translation session to translate between a given source and target lan
 convenience init(installedSource source: Locale.Language, target: Locale.Language?, preferredStrategy: TranslationSession.Strategy)
 ```
 
-#### Discussion
+## Discussion
 
 If one or both languages aren’t installed on the device, attempting to translate will throw errors. To get the person’s permission to download languages that aren’t already installed, translate using a [`TranslationSession`](../translationsession.md) provided by [`translationTask(_:action:)`](../../SwiftUI/view/translationtask%28_,action%29.md) or [`translationTask(source:target:action:)`](../../SwiftUI/view/translationtask%28source,target,action%29.md).
 

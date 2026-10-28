@@ -23,7 +23,7 @@ init(from decoder: any Decoder) throws
 
 Available when `Wrapped` conforms to `Decodable`.
 
-#### Discussion
+## Discussion
 
 This initializer throws an error if reading from the decoder fails, or if the data read is corrupted or otherwise invalid.
 

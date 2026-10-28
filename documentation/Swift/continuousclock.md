@@ -21,7 +21,7 @@ A clock that measures time that always increments and does not stop incrementing
 struct ContinuousClock
 ```
 
-#### Overview
+## Overview
 
 `ContinuousClock` can be considered as a stopwatch style time. The frame of reference of the `Instant` may be bound to process launch, machine boot or some other locally defined reference point. This means that the instants are only comparable locally during the execution of a program.
 

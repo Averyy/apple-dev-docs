@@ -15,7 +15,7 @@ Boolean value indicating whether the notification is from the public database.
 readonly attribute Boolean isPublicDatabase;
 ```
 
-#### Discussion
+## Discussion
 
 `true` if the notification is from the public database; otherwise, `false`.
 

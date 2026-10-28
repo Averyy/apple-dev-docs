@@ -19,7 +19,7 @@ var numberOfColumns: Int { get }
 @property (readonly) NSInteger numberOfColumns;
 ```
 
-#### Discussion
+## Discussion
 
 The value in this property includes table columns that are currently hidden.
 

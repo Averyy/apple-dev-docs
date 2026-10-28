@@ -21,7 +21,7 @@ Removes a geometric pin with the given name from this entity.
 func remove(named name: String)
 ```
 
-#### Discussion
+## Discussion
 
 If found, the pin is removed from the entity’s [`GeometricPinsComponent`](../geometricpinscomponent.md). There is no effect if no matching [`GeometricPin`](../geometricpin.md) is found.
 

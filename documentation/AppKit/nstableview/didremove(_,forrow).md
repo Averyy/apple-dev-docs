@@ -19,7 +19,7 @@ func didRemove(_ rowView: NSTableRowView, forRow row: Int)
 - (void) didRemoveRowView:(NSTableRowView *) rowView forRow:(NSInteger) row;
 ```
 
-#### Discussion
+## Discussion
 
 The subclass can implement this method to be alerted when `rowView` has been removed from the table. The removed `rowView` may be reused by the table, so any additionally inserted views should be removed at this point. Subclasses must be sure to call `super`.
 

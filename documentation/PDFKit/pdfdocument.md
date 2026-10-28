@@ -28,7 +28,7 @@ class PDFDocument
 
 - [Adding Custom Graphics to a PDF](./adding-custom-graphics-to-a-pdf.md)
 
-#### Overview
+## Overview
 
 The other utility classes are either instantiated from methods in `PDFDocument`, as are `PDFPage` and `PDFOutline`; or support it, as do `PDFSelection` and `PDFDestination`.
 

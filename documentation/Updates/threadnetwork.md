@@ -5,13 +5,13 @@
 
 Learn about important changes in ThreadNetwork.
 
-#### Overview
+## Overview
 
 Browse notable changes in  [ThreadNetwork](../ThreadNetwork/ThreadNetwork.md).
 
-#### June 2025
+## June 2025
 
-##### General
+### General
 
 - Learn how to get started with Thread development, testing, and certification. For more information, see [Getting started with ThreadNetwork](../ThreadNetwork/getting-started-with-threadnetwork.md).
 

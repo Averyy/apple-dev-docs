@@ -31,7 +31,7 @@ class NSUserActivity
 - [Creating a user activity object](./creating-a-user-activity-object.md)
 - [Supporting the creation of Quick Notes](./supporting-the-creation-of-quick-notes.md)
 
-#### Overview
+## Overview
 
 The `NSUserActivity` class is a lightweight type that encapsulates the state of an activity you perform in your app. When someone performs a relevant action in your app, create an instance of this class to capture that activity. The system uses the user activity objects you provide to facilitiate features like Handoff and Quick Notes. For example, Handoff sends your user activity object to the person’s other devices so your app can replicate the activity there.
 

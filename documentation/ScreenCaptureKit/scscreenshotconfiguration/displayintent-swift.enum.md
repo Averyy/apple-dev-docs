@@ -20,7 +20,7 @@ enum DisplayIntent
 enum SCScreenshotDisplayIntent : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 Specifying local or canonical display attributes optimizes output for presentation on either the capture display or any high dynamic range display.
 

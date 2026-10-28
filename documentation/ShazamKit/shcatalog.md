@@ -25,7 +25,7 @@ class SHCatalog
 @interface SHCatalog : NSObject
 ```
 
-#### Overview
+## Overview
 
 This is the base class of your custom catalog.
 

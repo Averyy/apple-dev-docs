@@ -24,7 +24,7 @@ var required: Bool { get }
 @property (readonly) BOOL required;
 ```
 
-#### Discussion
+## Discussion
 
 This value is [`true`](../../Swift/true.md) if a constant value needs to be provided for the function constant. A function constant is optional only if it is referenced in a call to the built-in `is_function_constant_defined(name)` function.
 

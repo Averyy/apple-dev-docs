@@ -20,7 +20,7 @@ The music player playback status modes.
 enum PlaybackStatus
 ```
 
-#### Overview
+## Overview
 
 You determine a music player’s state by checking the [`playbackStatus`](./state-swift.class/playbackstatus.md) property. Depending on the property’s value, you can update your app’s user interface or take other appropriate action.
 

@@ -25,7 +25,7 @@ var chamferRadius: CGFloat { get set }
 @property (nonatomic) CGFloat chamferRadius;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of zero specifies no chamfer (the extruded sides end at right angles to the front and back of the shape). Allowed values range from zero to half the extrusion depth. (At the maximum chamfer radius, the front chamfer ends where the back chamfer begins, as shown on the right in the figure below.)
 

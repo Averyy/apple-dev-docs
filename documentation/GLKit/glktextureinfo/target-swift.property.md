@@ -24,7 +24,7 @@ var target: GLenum { get }
 @property (readonly) GLenum target;
 ```
 
-#### Discussion
+## Discussion
 
 Your app uses this property as the target value when it binds the texture to a context.
 

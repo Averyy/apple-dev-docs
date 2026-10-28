@@ -28,7 +28,7 @@ class AVCaptureVideoDataOutput
 
 - [Setting up a capture session](./setting-up-a-capture-session.md)
 
-#### Overview
+## Overview
 
 Use this output to process compressed or uncompressed frames from the captured video. You can access the frames with the [`captureOutput(_:didOutput:from:)`](./avcapturevideodataoutputsamplebufferdelegate/captureoutput%28_,didoutput,from%29.md) delegate method.
 

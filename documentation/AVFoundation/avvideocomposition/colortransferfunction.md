@@ -24,7 +24,7 @@ var colorTransferFunction: String? { get }
 @property (nonatomic, readonly, nullable) NSString * colorTransferFunction;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `nil`. When the value of this property is `nil`, the source’s transfer function is propagated and used. Valid values are those suitable for [`AVVideoTransferFunctionKey`](../avvideotransferfunctionkey.md).
 

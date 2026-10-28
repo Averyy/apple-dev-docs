@@ -23,7 +23,7 @@ var kGSSICAppleSourceAppAuditToken: String { get }
 #define kGSSICAppleSourceAppAuditToken
 ```
 
-#### Discussion
+## Discussion
 
 The value is an `audit_token_t` value wrapped in a `CFDataRef`.
 

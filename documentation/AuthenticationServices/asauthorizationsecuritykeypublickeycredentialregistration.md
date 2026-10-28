@@ -26,7 +26,7 @@ class ASAuthorizationSecurityKeyPublicKeyCredentialRegistration
 
 - [Supporting Security Key Authentication Using Physical Keys](./supporting-security-key-authentication-using-physical-keys.md)
 
-#### Overview
+## Overview
 
 Use this class to verify a successful security key authorization request in [`authorizationController(controller:didCompleteWithAuthorization:)`](./asauthorizationcontrollerdelegate/authorizationcontroller%28controller,didcompletewithauthorization%29.md).
 

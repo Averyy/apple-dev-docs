@@ -24,7 +24,7 @@ struct FeatureKey
 typedef NSString * UIFontDescriptorFeatureKey;
 ```
 
-#### Overview
+## Overview
 
 Use these keys when retrieving information from one of the dictionaries associated with the [`featureSettings`](./attributename/featuresettings.md) key.
 

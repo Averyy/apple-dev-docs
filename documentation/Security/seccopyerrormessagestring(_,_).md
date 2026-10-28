@@ -25,7 +25,7 @@ func SecCopyErrorMessageString(_ status: OSStatus, _ reserved: UnsafeMutableRawP
 CFStringRefSecCopyErrorMessageString(OSStatus status, void *reserved);
 ```
 
-#### Return Value
+## Return Value
 
 A human-readable string describing the result, or `nil` if no string is available for the specified result code. In Objective-C, call the [`CFRelease`](../CoreFoundation/cfrelease.md) function to release this object when you are finished using it.
 

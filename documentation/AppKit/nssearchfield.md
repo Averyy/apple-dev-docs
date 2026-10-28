@@ -19,7 +19,7 @@ class NSSearchField
 @interface NSSearchField : NSTextField
 ```
 
-#### Overview
+## Overview
 
 [`NSSearchField`](./nssearchfield.md) provides a customized text field for entering search data. The class also provides a search button, a cancel button, and a pop-up icon menu for listing recent search strings and custom search categories.
 

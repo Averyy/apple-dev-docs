@@ -17,7 +17,7 @@ The main entry point of the plugin.
 static func main() async throws
 ```
 
-#### Discussion
+## Discussion
 
 This sets up a communication channel with the plugin host and runs the main message loop.
 

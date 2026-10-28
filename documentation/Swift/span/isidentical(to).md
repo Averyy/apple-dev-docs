@@ -21,11 +21,11 @@ Returns a Boolean value indicating whether two instances refer to the same memor
 func isIdentical(to other: Span<Element>) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 Whether `self` and `other` reference the same region in memory.
 
-#### Discussion
+## Discussion
 
 Two spans are identical if they reference the same starting address and have the same number of elements.
 

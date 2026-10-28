@@ -25,7 +25,7 @@ func cancel() -> Bool
 - (BOOL) cancel;
 ```
 
-#### Return Value
+## Return Value
 
 Returns [`false`](../../Swift/false.md) if the operation is not running, or if cancelation is not supported.
 

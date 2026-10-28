@@ -24,7 +24,7 @@ var zPosition: CGFloat { get set }
 @property CGFloat zPosition;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is `0`. Changing the value of this property changes the front-to-back ordering of layers onscreen. Higher values place this layer visually closer to the viewer than layers with lower values. This can affect the visibility of layers whose frame rectangles overlap.
 

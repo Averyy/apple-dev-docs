@@ -25,7 +25,7 @@ let kSecAttrAccessGroupToken: CFString
 extern CFStringRef const kSecAttrAccessGroupToken;
 ```
 
-#### Discussion
+## Discussion
 
 Use this access group identifier as the value for the [`kSecAttrAccessGroup`](./ksecattraccessgroup.md) attribute in a keychain query to access external tokens such as smart cards. Access to this group is granted by default and does not require an explicit entry in your app’s [`Keychain Access Groups Entitlement`](../BundleResources/entitlements/keychain-access-groups.md).
 

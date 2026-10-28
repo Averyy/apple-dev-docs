@@ -16,7 +16,7 @@ Set the isProcessInputMuted property.
 func setIsProcessInputMuted(_ muted: Bool) throws
 ```
 
-#### Discussion
+## Discussion
 
 This property does not apply to aggregate devices, just real, physical devices.
 

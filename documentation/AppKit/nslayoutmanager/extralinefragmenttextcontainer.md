@@ -19,7 +19,7 @@ var extraLineFragmentTextContainer: NSTextContainer? { get }
 @property (readonly, nullable) NSTextContainer * extraLineFragmentTextContainer;
 ```
 
-#### Discussion
+## Discussion
 
 This rectangle is used to display the insertion point at the end of a text (either in an empty text or after a final paragraph separator).
 

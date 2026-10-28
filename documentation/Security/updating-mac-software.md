@@ -5,7 +5,7 @@
 
 Implement Mac software updates without causing code-signing crashes.
 
-#### Overview
+## Overview
 
 Many Mac software products include a software updater. For example:
 
@@ -20,7 +20,7 @@ If you write a software updater in the simplest way, you run the risk of a hard-
 
 > **Note**:  Apple software-update mechanisms, such as the App Store updater, the Installer app, and the `installer` command-line tool, aren’t susceptible to this code-signing crash.
 
-##### Update Files that Include Signed Code
+### Update Files that Include Signed Code
 
 Imagine code that downloads an update for a command-line tool. The final step of that process might look like this:
 
@@ -63,7 +63,7 @@ func updateTool(at executablePath: String, with newContents: [UInt8], temporaryP
 
 Using a temporary file eliminates the risk of a code-signing crash because the in-kernel cache is associated with the old file, which remains unmodified. The new file gets its own in-kernel cache, built from the contents of that new file.
 
-##### Check Third-Party Software Updaters
+### Check Third-Party Software Updaters
 
 If you wrote the code for your software updater, use the techniques discussed above to identify and correct this potential code-signing issue. You can also check software updater code that you didn’t write by running `ls` with the `-i` option before and after the update, to see whether the inode number changes. For example, imagine you’re installing an update using `cp` and your want to update `MyTool` with a new version, `MyTool-new`. Run the following, to test whether this exposes you to a code-signing crash:
 

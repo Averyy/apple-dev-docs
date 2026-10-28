@@ -21,7 +21,7 @@ Accesses a contiguous subrange of the collection’s elements.
 subscript(bounds: Range<Self.Index>) -> Slice<Self> { get set }
 ```
 
-#### Overview
+## Overview
 
 The accessed slice uses the same indices for the same elements as the original collection. Always use the slice’s `startIndex` property instead of assuming that its indices start at a particular value.
 

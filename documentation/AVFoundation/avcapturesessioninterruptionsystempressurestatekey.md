@@ -23,7 +23,7 @@ let AVCaptureSessionInterruptionSystemPressureStateKey: String
 extern NSString * const AVCaptureSessionInterruptionSystemPressureStateKey;
 ```
 
-#### Discussion
+## Discussion
 
 If an interruption occurs and the value of [`AVCaptureSessionInterruptionReasonKey`](./avcapturesessioninterruptionreasonkey.md) equals [`AVCaptureSession.InterruptionReason.videoDeviceNotAvailableDueToSystemPressure`](./avcapturesession/interruptionreason/videodevicenotavailableduetosystempressure.md), the [`userInfo`](../Foundation/notification/userinfo.md) dictionary for the notification contains this key and a corresponding [`AVCaptureDevice.SystemPressureState`](./avcapturedevice/systempressurestate-swift.class.md) value.
 

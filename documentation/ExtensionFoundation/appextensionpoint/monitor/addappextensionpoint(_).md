@@ -25,7 +25,7 @@ final func addAppExtensionPoint(_ appExtensionPoint: AppExtensionPoint) async th
 
 - [Discovering app extensions from your app](../../discovering-app-extensions-from-your-app.md)
 
-#### Discussion
+## Discussion
 
 This method updates the state of the monitor, adding the specified extension point to the list of those it’s tracking. If the new extension point has available app extensions, this method updates the contents of the [`identities`](./identities.md) property.  You can call this method multiple times to track multiple extension points from your app.
 

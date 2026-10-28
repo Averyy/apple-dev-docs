@@ -24,7 +24,7 @@ func fillPath(_ path: CGPath, in context: CGContext)
 - (void) fillPath:(CGPathRef) path inContext:(CGContextRef) context;
 ```
 
-#### Discussion
+## Discussion
 
 You must set the current fill color before calling this method. Typically you do this by calling the [`applyFillProperties(to:atZoomScale:)`](./applyfillproperties%28to,atzoomscale%29.md) method prior to drawing. If the [`fillColor`](./fillcolor.md) property is currently `nil`, this method does nothing.
 

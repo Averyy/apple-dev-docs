@@ -21,7 +21,7 @@ Divides a source rectangle into two component rectangles.
 extern void CGRectDivide(CGRect rect, CGRect *slice, CGRect *remainder, CGFloat amount, CGRectEdge edge);
 ```
 
-#### Discussion
+## Discussion
 
 If `rect` is a null rectangle, this function outputs [`CGRectNull`](./cgrectnull.md) for both the `slice` and `remainder` rectangles.
 

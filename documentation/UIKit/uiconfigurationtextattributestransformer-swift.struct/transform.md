@@ -19,7 +19,7 @@ A closure that defines the text transformation.
 let transform: (AttributeContainer) -> AttributeContainer
 ```
 
-#### Discussion
+## Discussion
 
 This closure accepts a container with the current text attributes and returns a container with the new text attributes.
 

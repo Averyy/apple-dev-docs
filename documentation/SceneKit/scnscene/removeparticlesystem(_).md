@@ -25,7 +25,7 @@ func removeParticleSystem(_ system: SCNParticleSystem)
 - (void) removeParticleSystem:(SCNParticleSystem *) system;
 ```
 
-#### Discussion
+## Discussion
 
 This method has no effect if the `system` parameter does not reference a particle system directly attached to the scene.
 

@@ -20,7 +20,7 @@ A notification posted when the scale factor changes.
 static let PDFViewScaleChanged: NSNotification.Name
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is the `PDFView` object itself.
 

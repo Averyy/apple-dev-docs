@@ -20,7 +20,7 @@ A tuple of Boolean values that you use to lock rotation of the physics body arou
 var isRotationLocked: (x: Bool, y: Bool, z: Bool)
 ```
 
-#### Discussion
+## Discussion
 
 For any one of the three Booleans in the tuple that you set to `true`, rotation is restricted on the axis represented by that item. For example, if you set the `x` item to true, then the body can’t rotate around the x-axis. By default, rotation isn’t restricted.
 

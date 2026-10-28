@@ -25,11 +25,11 @@ func compare(_ string: String, options mask: NSString.CompareOptions = []) -> Co
 - (NSComparisonResult) compare:(NSString *) string options:(NSStringCompareOptions) mask;
 ```
 
-#### Return Value
+## Return Value
 
 Returns an [`ComparisonResult`](../comparisonresult.md) value that indicates the lexical ordering. [`ComparisonResult.orderedAscending`](../comparisonresult/orderedascending.md) the receiver precedes `aString` in lexical ordering, [`ComparisonResult.orderedSame`](../comparisonresult/orderedsame.md) the receiver and `aString` are equivalent in lexical value, and [`ComparisonResult.orderedDescending`](../comparisonresult/ordereddescending.md) if the receiver follows `aString`.
 
-#### Discussion
+## Discussion
 
 This method is equivalent to invoking [`compare(_:options:range:)`](./compare%28_,options,range%29.md) with a given mask as the options and the receiver’s full extent as the range.
 

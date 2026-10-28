@@ -19,7 +19,7 @@ object InvalidConsumptionStatusError
 
 - [App Store Server API changelog](./app-store-server-api-changelog.md)
 
-#### Discussion
+## Discussion
 
 For more information about the `consumptionStatus` field in a [`ConsumptionRequestV1`](./consumptionrequestv1.md), see [`consumptionStatus`](./consumptionstatus.md).
 

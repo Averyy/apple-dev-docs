@@ -19,7 +19,7 @@ class SFCertificateTrustPanel
 @interface SFCertificateTrustPanel : SFCertificatePanel
 ```
 
-#### Overview
+## Overview
 
 The following figure shows an example of a certificate trust panel.
 

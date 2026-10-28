@@ -21,7 +21,7 @@ Returns the sum of the two given values, wrapping the result in case of any over
 static func &+ (lhs: Self, rhs: Self) -> Self
 ```
 
-#### Discussion
+## Discussion
 
 The overflow addition operator (`&+`) discards any bits that overflow the fixed width of the integer type. In the following example, the sum of `100` and `121` is greater than the maximum representable `Int8` value, so the result is the partial value after discarding the overflowing bits.
 

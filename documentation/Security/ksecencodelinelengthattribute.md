@@ -21,7 +21,7 @@ let kSecEncodeLineLengthAttribute: CFString
 extern CFStringRef const kSecEncodeLineLengthAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 Some systems can’t handle excessively long lines, or may be defined to limit lines to specific lengths (for example RFC1421 - 64, and RFC2045 - 76).
 

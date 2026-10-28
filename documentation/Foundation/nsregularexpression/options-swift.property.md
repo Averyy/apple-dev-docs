@@ -25,7 +25,7 @@ var options: NSRegularExpression.Options { get }
 @property (readonly) NSRegularExpressionOptions options;
 ```
 
-#### Discussion
+## Discussion
 
 The options property specifies aspects of the regular expression matching that are always used when matching the regular expression. For example, if the expression is case sensitive, allows comments, ignores metacharacters, etc. See [`NSRegularExpression.Options`](./options-swift.struct.md) for a complete discussion of the possible constants and their meanings.
 

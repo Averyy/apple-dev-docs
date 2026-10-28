@@ -21,7 +21,7 @@ The number of characters in a string.
 var count: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 To check whether a string is empty, use its `isEmpty` property instead of comparing `count` to zero.
 

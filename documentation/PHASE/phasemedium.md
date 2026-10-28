@@ -24,7 +24,7 @@ class PHASEMedium
 @interface PHASEMedium : NSObject
 ```
 
-#### Overview
+## Overview
 
 This class defines choices for the engine’s [`defaultMedium`](./phaseengine/defaultmedium.md). Currently, this property provides only sound traveling through air.
 

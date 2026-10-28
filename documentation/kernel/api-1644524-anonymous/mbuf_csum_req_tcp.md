@@ -13,7 +13,7 @@
 MBUF_CSUM_REQ_TCP = 0x0002
 ```
 
-#### Discussion
+## Discussion
 
 Indicates the TCP checksum has not been calculated yet.
 

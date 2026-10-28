@@ -13,7 +13,7 @@
 void mbuf_pkthdr_adjustlen(mbuf_t mbuf, int amount);
 ```
 
-#### Discussion
+## Discussion
 
 Adjusts the length of the packet in the packet header.
 

@@ -39,7 +39,7 @@ nonisolated func alert<A, T>(_ titleResource: LocalizedStringResource, item data
 nonisolated func alert<S, A, T>(_ title: S, item data: Binding<T?>, @ContentBuilder actions: (T) -> A) -> some View where S : StringProtocol, A : View
 ```
 
-#### Discussion
+## Discussion
 
 For the alert to appear, `data` must not be `nil`. The data should not change after the presentation occurs. Any changes that you make after the presentation occurs are ignored.
 

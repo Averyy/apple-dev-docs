@@ -24,7 +24,7 @@ var extent: CGRect { get }
 @property (readonly) CGRect extent;
 ```
 
-#### Discussion
+## Discussion
 
 Extent is a rectangle that specifies the size of the image associated with the image accumulator. This rectangle is the size of the complete region of the working coordinate space, and is a fixed area. It specifies the x-value of the rectangle origin, the y-value of the rectangle origin, and the width and height.
 

@@ -23,7 +23,7 @@ final var diagnosticReports: some AsyncSequence<DiagnosticReport, Never> { get }
 
 - [Monitoring app performance with MetricKit](../monitoring-app-performance-with-metrickit.md)
 
-#### Discussion
+## Discussion
 
 Iterate `diagnosticReports` in a long-lived `Task` to receive [`DiagnosticReport`](../diagnosticreport.md) values. Each iteration yields a single diagnostic event, such as a crash, hang, or CPU exception. The sequence never throws.
 

@@ -15,11 +15,11 @@ Unpacks a variable amount of data from a buffer into a variable number of parame
 extern long IOBluetoothUnpackData(ByteCount inBufferSize, const void *inBuffer, const char *inFormat, ...);
 ```
 
-#### Return Value
+## Return Value
 
 Number of bytes unpacked or -1 if an error occurred.
 
-#### Discussion
+## Discussion
 
 Pass the parameters to receive data as the remaining arguments after the format string.
 

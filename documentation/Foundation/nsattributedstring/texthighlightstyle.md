@@ -21,7 +21,7 @@ Constants that specify the type of highlight to apply to text.
 struct TextHighlightStyle
 ```
 
-#### Overview
+## Overview
 
 Use an [`NSAttributedString.TextHighlightStyle`](./texthighlightstyle.md) structure as the value of the [`textHighlightStyle`](./key/texthighlightstyle.md) attribute. That attribute applies a highlight to the text to emphasize it. The highlight contributes a background color and a contrasting foreground color to the text.
 

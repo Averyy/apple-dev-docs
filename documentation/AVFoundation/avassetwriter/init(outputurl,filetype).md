@@ -24,7 +24,7 @@ init(outputURL: URL, fileType outputFileType: AVFileType) throws
 - (instancetype) initWithURL:(NSURL *) outputURL fileType:(AVFileType) outputFileType error:(NSError **) outError;
 ```
 
-#### Discussion
+## Discussion
 
 Writing fails if a file already exists at the output URL.
 

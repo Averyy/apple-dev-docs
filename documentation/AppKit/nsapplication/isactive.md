@@ -19,7 +19,7 @@ var isActive: Bool { get }
 @property (readonly, getter=isActive) BOOL active;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) if the app is active or [`false`](../../Swift/false.md) if it’s not.
 

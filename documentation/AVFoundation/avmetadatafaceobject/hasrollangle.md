@@ -23,7 +23,7 @@ var hasRollAngle: Bool { get }
 @property (readonly) BOOL hasRollAngle;
 ```
 
-#### Discussion
+## Discussion
 
 If the value of this property is [`false`](../../Swift/false.md), the value in the [`rollAngle`](./rollangle.md) property is invalid and must not be accessed.
 

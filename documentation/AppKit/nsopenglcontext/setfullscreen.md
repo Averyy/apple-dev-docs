@@ -17,7 +17,7 @@ Sets the OpenGL context to full-screen mode.
 - (void) setFullScreen;
 ```
 
-#### Discussion
+## Discussion
 
 In full-screen mode, the receiver renders onto the entire screen. The receiver’s viewport is set to the full size of the screen. Call the [`clearDrawable()`](./cleardrawable%28%29.md) method to exit full-screen mode.
 

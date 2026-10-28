@@ -14,7 +14,7 @@ struct kern_event_msg {
 };
 ```
 
-#### Discussion
+## Discussion
 
 This structure is prepended to all kernel events. This structure is used to determine the format of the remainder of the kernel event. This structure will appear on all messages received on a kernel event socket. To post a kernel event, a slightly different structure is used.
 

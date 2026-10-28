@@ -26,7 +26,7 @@ func run() async throws -> ResolvedIntentResult
 
 - [Testing your App Intents code](../testing-your-app-intents-code.md)
 
-#### Return Value
+## Return Value
 
 The resolved result that contains the intent’s return value.
 

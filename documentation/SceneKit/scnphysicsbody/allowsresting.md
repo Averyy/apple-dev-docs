@@ -25,7 +25,7 @@ var allowsResting: Bool { get set }
 @property (nonatomic) BOOL allowsResting;
 ```
 
-#### Discussion
+## Discussion
 
 If [`true`](../../Swift/true.md) (the default), SceneKit keeps track of whether the body is moving or affected by forces, automatically setting its [`isResting`](./isresting.md) property to [`true`](../../Swift/true.md) when it is “at rest.” The physics simulation runs faster when simulating fewer bodies, so treating a body as resting temporarily removes it from the simulation to improve performance.
 

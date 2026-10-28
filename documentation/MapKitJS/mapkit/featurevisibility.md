@@ -15,7 +15,7 @@ An accessor for the feature visibility enumeration.
 get FeatureVisibility(): typeof FeatureVisibility;
 ```
 
-#### Discussion
+## Discussion
 
 You must load the appropriate library first before accessing the getter, otherwise, the getter throws an `Error`.
 

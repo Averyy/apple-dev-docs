@@ -21,7 +21,7 @@ The default minimum height of a header in a list.
 var defaultMinListHeaderHeight: CGFloat? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 When this value is `nil`, the system chooses the appropriate height. The default is `nil`.
 

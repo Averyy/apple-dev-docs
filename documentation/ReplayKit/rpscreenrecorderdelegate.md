@@ -26,7 +26,7 @@ protocol RPScreenRecorderDelegate : NSObjectProtocol
 @protocol RPScreenRecorderDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Use this class to respond to changes to the screen recorder, represented by an [`RPScreenRecorder`](./rpscreenrecorder.md) object.
 

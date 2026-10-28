@@ -25,7 +25,7 @@ optional func urlSession(_ session: URLSession, webSocketTask: URLSessionWebSock
 - (void) URLSession:(NSURLSession *) session webSocketTask:(NSURLSessionWebSocketTask *) webSocketTask didOpenWithProtocol:(NSString *) protocol;
 ```
 
-#### Discussion
+## Discussion
 
 If the handshake fails, the task doesn’t call this delegate method.
 

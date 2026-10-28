@@ -23,7 +23,7 @@ case disabled
 kCTFontManagerAutoActivationDisabled
 ```
 
-#### Discussion
+## Discussion
 
 Disables auto-activation.
 

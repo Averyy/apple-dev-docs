@@ -22,11 +22,11 @@ Fetches all user identities that match entries in the user’s Contacts.
 func allUserIdentitiesFromContacts() async throws -> [CKUserIdentity]
 ```
 
-#### Return Value
+## Return Value
 
 The user identities that match entries in the user’s Contacts.
 
-#### Discussion
+## Discussion
 
 This method searches for the users asynchronously and with a low priority. If you want the task to execute with a higher priority, create an instance of [`CKDiscoverAllUserIdentitiesOperation`](../ckdiscoveralluseridentitiesoperation.md) and configure it to use the necessary priority.
 

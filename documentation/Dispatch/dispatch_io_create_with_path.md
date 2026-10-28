@@ -21,11 +21,11 @@ Creates a dispatch I/O channel with the associated path name.
 extern dispatch_io_tdispatch_io_create_with_path(dispatch_io_type_t type, const char *path, int oflag, mode_t mode, dispatch_queue_t queue, void (^cleanup_handler)(int error));
 ```
 
-#### Return Value
+## Return Value
 
 The dispatch I/O channel or `NULL` if an error occurred. The returned object is retained before it is returned; it is your responsibility to close the channel and then release this object when you are done using it.
 
-#### Discussion
+## Discussion
 
 This function associates the specified path with the channel but does not open a file descriptor for that path until you perform the first I/O operation. While it is open, the channel owns the file descriptor. The channel closes the file descriptor and calls its cleanup handler when one of the following occurs:
 

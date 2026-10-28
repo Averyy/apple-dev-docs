@@ -25,7 +25,7 @@ func xpc_dictionary_create_empty() -> xpc_object_t
 extern xpc_object_txpc_dictionary_create_empty();
 ```
 
-#### Return Value
+## Return Value
 
 The new dictionary object.
 

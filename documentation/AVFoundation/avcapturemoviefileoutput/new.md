@@ -19,7 +19,7 @@ Returns a new movie file output object.
 + (instancetype) new;
 ```
 
-#### Return Value
+## Return Value
 
 A movie file output object.
 

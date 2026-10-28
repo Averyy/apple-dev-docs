@@ -23,7 +23,7 @@ var kCTFontTableBdat: Int { get }
 kCTFontTableBdat
 ```
 
-#### Discussion
+## Discussion
 
 Font table tag for bitmap data.
 

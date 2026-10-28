@@ -27,7 +27,7 @@ var allowsSelectionDuringEditing: Bool { get set }
 
 - [Handling row selection in a table view](../handling-row-selection-in-a-table-view.md)
 
-#### Discussion
+## Discussion
 
 If the value of this property is [`true`](../../Swift/true.md), users can select rows during editing. The default value is [`false`](../../Swift/false.md). If you want to restrict selection of cells regardless of mode, use [`allowsSelection`](./allowsselection.md).
 

@@ -23,11 +23,11 @@ class func noiseField(smoothness: CGFloat, animationSpeed speed: CGFloat) -> Sel
 + (instancetype) noiseFieldWithSmoothness:(CGFloat) smoothness animationSpeed:(CGFloat) speed;
 ```
 
-#### Return Value
+## Return Value
 
 A field behavior object that applies noise to other fields in the same area.
 
-#### Discussion
+## Discussion
 
 A noise field creates a differentiable Perlin simplex noise field that varies over time. You can combine a noise field with other fields to add some variability to the behavior of those fields. The smoothness of the field defines how random the changes are from one point to the next point. A smooth field still adds noise but does so in a more predictable way. This field ignores the mass of the item.
 

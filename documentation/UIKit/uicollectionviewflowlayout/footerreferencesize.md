@@ -23,7 +23,7 @@ var footerReferenceSize: CGSize { get set }
 @property (nonatomic) CGSize footerReferenceSize;
 ```
 
-#### Discussion
+## Discussion
 
 If the delegate does not implement the [`collectionView(_:layout:referenceSizeForFooterInSection:)`](../uicollectionviewdelegateflowlayout/collectionview%28_,layout,referencesizeforfooterinsection%29.md) method, the flow layout object uses the default footer sizes set for this property.
 

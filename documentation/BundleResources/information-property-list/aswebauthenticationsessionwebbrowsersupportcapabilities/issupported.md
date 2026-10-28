@@ -14,7 +14,7 @@ A Boolean that indicates whether the app acts as a browser that supports authent
 - **Name**: `IsSupported`
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 Set the corresponding value to `YES` to indicate that your browser app can handle authentication requests that other apps generate with [`ASWebAuthenticationSession`](../../../AuthenticationServices/aswebauthenticationsession.md). For details, see [Supporting Single Sign-On in a Web Browser App](../../../AuthenticationServices/supporting-single-sign-on-in-a-web-browser-app.md).
 

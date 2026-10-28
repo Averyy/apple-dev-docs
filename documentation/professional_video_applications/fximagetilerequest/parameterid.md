@@ -19,7 +19,7 @@ var parameterID: UInt32 { get }
 @property (nonatomic, readonly) UInt32 parameterID;
 ```
 
-#### Discussion
+## Discussion
 
 If the `requestSource` is `kFxImageTileRequestSourceParameter`, then this parameter holds the `parameterID`, otherwise this parameter is ignored.
 

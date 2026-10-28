@@ -21,7 +21,7 @@ Fetches the IDs of any long-lived operations that are running.
 - (void) fetchAllLongLivedOperationIDsWithCompletionHandler:(void (^)(NSArray<NSString *> *outstandingOperationIDs, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 A long-lived operation is one that continues to run after the user closes the app. When a long-lived operation completes, or your app or the system cancels it, it’s no longer active and CloudKit doesn’t include its ID in `outstandingOperationsByIDs`. An operation is complete when the system calls its completion handler.
 

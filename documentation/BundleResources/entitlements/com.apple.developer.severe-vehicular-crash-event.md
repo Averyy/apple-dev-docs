@@ -20,7 +20,7 @@ The entitlement for accessing Crash Detection events.
 
 **Default**: `NO`
 
-#### Discussion
+## Discussion
 
 To apply for this entitlement, [see this page](https://developer.apple.com/contact/request/vehicular-crash-events/).
 

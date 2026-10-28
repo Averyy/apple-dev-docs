@@ -23,7 +23,7 @@ func channelNorm(epsilon: Float = .ulpOfOne.squareRoot()) -> BNNSGraph.Builder.T
 
 Available when `T` conforms to `BNNSScalar`.
 
-#### Discussion
+## Discussion
 
 This function performs channel normalization of `self`.`self` must be at least three-dimensional.
 

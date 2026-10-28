@@ -25,15 +25,15 @@ func protocol_copyMethodDescriptionList(_ proto: Protocol, _ isRequiredMethod: B
 extern struct objc_method_description *protocol_copyMethodDescriptionList(Protocol *proto, BOOL isRequiredMethod, BOOL isInstanceMethod, unsigned int *outCount);
 ```
 
-#### Return Value
+## Return Value
 
 A C array of `objc_method_description` structures containing the names and types of `p`’s methods specified by `isRequiredMethod` and `isInstanceMethod`. The array contains `*outCount` pointers followed by a `NULL` terminator. You must free the list with `free()`.
 
-#### Discussion
+## Discussion
 
 If the protocol declares no methods that meet the specification, `NULL` is returned and `*outCount` is `0`.
 
-#### Discussion
+## Discussion
 
 Methods in other protocols adopted by this protocol are not included.
 

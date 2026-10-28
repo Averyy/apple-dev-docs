@@ -15,7 +15,7 @@ Build and run custom particle effects and compute simulations for RealityKit usi
 - visionOS 27.0+
 - Reality Composer Pro 3.0+
 
-#### Overview
+## Overview
 
 Compute Graph is a node-based framework for building particle simulations and general-purpose GPU compute graphs in [RealityKit](../RealityKit/RealityKit.md). Where [ShaderGraph](../ShaderGraph/ShaderGraph.md) lets you build material appearance through a node-based visual editor, Compute Graph provides the same graph-driven, connection-based authoring for simulation behavior. Use Compute Graph when you build tools or editors that need fine-grained, per-stage control over how simulations execute on the GPU. Reality Composer Pro uses this framework to author and preview particle systems for RealityKit scenes.
 

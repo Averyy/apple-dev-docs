@@ -25,7 +25,7 @@ func nw_endpoint_copy_port_string(_ endpoint: nw_endpoint_t) -> UnsafeMutablePoi
 char *nw_endpoint_copy_port_string(nw_endpoint_t endpoint);
 ```
 
-#### Discussion
+## Discussion
 
 This function allocates a new string. You should free the returned buffer when done using the string.
 

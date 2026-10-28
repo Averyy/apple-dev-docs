@@ -19,7 +19,7 @@ case selection
 NSTextLayoutManagerSegmentTypeSelection
 ```
 
-#### Discussion
+## Discussion
 
 This segment type extends the last segment in a line fragment to the trailing edge if continuing to the next line.
 

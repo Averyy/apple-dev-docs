@@ -24,7 +24,7 @@ class GLKTextureLoader
 @interface GLKTextureLoader : NSObject
 ```
 
-#### Overview
+## Overview
 
 The [`GLKTextureLoader`](./glktextureloader.md) class can load two-dimensional or cubemap textures in most image formats supported by the Image I/O framework. In iOS, it can also load textures compressed in the PVRTC format. It can load the data synchronously or asynchronously.
 

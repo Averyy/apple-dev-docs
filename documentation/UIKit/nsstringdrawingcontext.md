@@ -24,7 +24,7 @@ class NSStringDrawingContext
 @interface NSStringDrawingContext : NSObject
 ```
 
-#### Overview
+## Overview
 
 Prior to drawing, you can create an instance of this class and use it to specify the minimum scale factor and tracking adjustments for a string. After drawing, you can retrieve the actual values that were used during drawing.
 

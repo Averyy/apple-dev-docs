@@ -19,11 +19,11 @@ func searchString(_ searchString: String, inUserInterfaceItemString stringToSear
 - (BOOL) searchString:(NSString *) searchString inUserInterfaceItemString:(NSString *) stringToSearch searchRange:(NSRange) searchRange foundRange:(NSRange *) foundRange;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the searchString is matched, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 The search uses the default matching rules for Spotlight for Help.
 

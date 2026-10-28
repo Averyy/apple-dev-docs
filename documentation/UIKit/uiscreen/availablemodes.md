@@ -25,7 +25,7 @@ var availableModes: [UIScreenMode] { get }
 
 - [Presenting content on a connected display](../presenting-content-on-a-connected-display.md)
 
-#### Discussion
+## Discussion
 
 The array contains one or more [`UIScreenMode`](../uiscreenmode.md) objects, each of which represents a display mode supported by the screen.
 

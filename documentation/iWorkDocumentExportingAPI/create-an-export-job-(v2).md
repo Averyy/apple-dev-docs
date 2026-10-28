@@ -9,15 +9,15 @@ Create a PDF preview of an iWork document using JSON Web Token (JWT) authorizati
 **Availability**:
 - iWork 14.0+
 
-#### Privacy Notice
+## Privacy Notice
 
 It’s important for apps to inform people that uploaded iWork documents are temporarily stored on Apple servers for the purpose of conversion. Provide people the option to enable and disable the iWork preview feature, and display a privacy notice when doing so, such as “When using iWork online previews, your files will be temporarily stored on Apple servers.”
 
-#### Supported files
+## Supported files
 
 The maximum file size the service supports is 1 GB and the service can only convert documents not protected with a password.
 
-#### Authentication and request payload
+## Authentication and request payload
 
 For each request, the iWork service requires a signature so that the service can confirm that the client has permission to access the API. The service uses a [JSON Web Token (JWT)](https://datatracker.ietf.org/doc/html/rfc7519) to transfer the signature, information about the client and the details of the document export request. Sign the JWT with an ES256 key acquired from [Apple Developer Keys](https://developer.apple.com/account/resources/authkeys/list).
 
@@ -46,9 +46,9 @@ Clients need to ensure that their system clocks are accurate: The service reject
 
 The method to authenticate and sign the requests may change in light of new developments in the security field. Apple will give notice to parties using the API if and when this happens.
 
-#### Examples
+## Examples
 
-##### Export Request
+### Export Request
 
 The following example demonstrates an export request using the headers and their associated values you pass to the API:
 
@@ -64,7 +64,7 @@ Content-Length: 323927
 
 The filename is “😀 cloud☁.numbers”.
 
-##### Generating a JWT using JSON Object Signing and Encryption (JOSE)
+### Generating a JWT using JSON Object Signing and Encryption (JOSE)
 
 For more information on the [JOSE](https://github.com/panva/jose) NodeJS package, see the [JOSE package documentation](https://github.com/panva/jose/blob/main/docs/classes/jwt_sign.SignJWT.md).
 

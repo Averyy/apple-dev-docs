@@ -15,7 +15,7 @@ The maximum length of name that the framework allows.
 @property (class, readonly) NSUInteger maximumNameLength;
 ```
 
-#### Discussion
+## Discussion
 
 The `sockaddr_un` structure in Linux defines the maximum length for the path [`name`](./name.md).
 

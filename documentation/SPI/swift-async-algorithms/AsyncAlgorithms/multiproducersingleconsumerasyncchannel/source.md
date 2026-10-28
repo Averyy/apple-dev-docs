@@ -26,7 +26,7 @@ struct Source
 
 Available when `Failure` conforms to `Error`.
 
-#### Overview
+## Overview
 
 Use this source to provide elements to the channel by calling one of the `send` methods.
 

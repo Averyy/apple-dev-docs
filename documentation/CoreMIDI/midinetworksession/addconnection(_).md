@@ -23,7 +23,7 @@ func addConnection(_ connection: MIDINetworkConnection) -> Bool
 - (BOOL) addConnection:(MIDINetworkConnection *) connection;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the session successfully added the connection, otherwise [`false`](../../Swift/false.md).
 

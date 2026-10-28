@@ -25,7 +25,7 @@ var outputMeterLevel: Float { get }
 @property (readonly) float outputMeterLevel;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is undefined if [`isOutputMeteringEnabled`](./isoutputmeteringenabled.md) is set to [`false`](../../Swift/false.md).
 

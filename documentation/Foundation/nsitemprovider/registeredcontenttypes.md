@@ -33,7 +33,7 @@ var registeredContentTypes: [UTType] { get }
 @property (atomic, copy, readonly) NSArray<UTType *> * registeredContentTypes;
 ```
 
-#### Discussion
+## Discussion
 
 You app should register content types in order of fidelity. The system uses content types that appear earlier in the array.
 

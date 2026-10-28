@@ -25,7 +25,7 @@ var functionType: MTLFunctionType { get }
 @property (readonly) MTLFunctionType functionType;
 ```
 
-#### Discussion
+## Discussion
 
 A function’s type determines what kind of pipeline state objects you can create from it and whether you can use it as a callable function in a function table.
 

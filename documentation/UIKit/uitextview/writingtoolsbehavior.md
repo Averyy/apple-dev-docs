@@ -22,7 +22,7 @@ var writingToolsBehavior: UIWritingToolsBehavior { get set }
 @property UIWritingToolsBehavior writingToolsBehavior;
 ```
 
-#### Discussion
+## Discussion
 
 The system chooses an initial value based on the device’s capabilities. The value in this property is never the default option, and is instead one of the specific options such as [`UIWritingToolsBehavior.none`](../uiwritingtoolsbehavior/none.md), [`UIWritingToolsBehavior.limited`](../uiwritingtoolsbehavior/limited.md), or [`UIWritingToolsBehavior.complete`](../uiwritingtoolsbehavior/complete.md). Change the initial value to customize your text view’s Writing Tools support.
 

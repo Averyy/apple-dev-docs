@@ -20,13 +20,13 @@ protocol AccessoryDataProvider : AppExtension, Sendable where Self.Configuration
 - [Receiving iOS notifications on an accessory](./receiving-ios-notifications-on-an-accessory.md)
 - [Forwarding notifications to your accessory using the internet transport type](./forwarding-notifications-to-your-accessory-using-the-internet-transport-type.md)
 
-#### Overview
+## Overview
 
 Implement this protocol in an extension with an `EXExtensionPointIdentifier` value of `com.apple.accessory-data-provider` to receive notification data for eventual forwarding to an accessory that you develop. The extension runs in a sandboxed environment and communicates with the system through the extension’s configuration object ([`AccessoryDataProviderConfiguration`](./accessorydataproviderconfiguration.md)).
 
 > ❗ **Important**: The system requires your app extension to have the [`com.apple.developer.accessory-data-provider`](../BundleResources/entitlements/com.apple.developer.accessory-data-provider.md) entitlement to use this protocol.
 
-#### Add the necessary target configuration
+## Add the necessary target configuration
 
 In your extension’s target properties, include the `EXCapabilities` key with the value `AccessoryNotifications.NotificationsForwarding`:
 
@@ -46,7 +46,7 @@ In your extension’s target properties, include the `EXCapabilities` key with t
 </plist>
 ```
 
-#### Implement the extension point
+## Implement the extension point
 
 In your extension’s Swift code, implement the protocol and declare the capability with your [`NotificationsForwarding.AccessoryNotificationsHandler`](../AccessoryNotifications/notificationsforwarding/accessorynotificationshandler.md) implementation:
 
@@ -67,7 +67,7 @@ class MyNotificationsHandler: AccessoryNotificationsHandler {
 }
 ```
 
-#### Share data between the app and the extension
+## Share data between the app and the extension
 
 Configure a shared app group so your companion app can provide information to the extension. The extension has read-only access to the shared container. Use the shared container to store:
 

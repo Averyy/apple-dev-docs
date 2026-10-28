@@ -5,7 +5,7 @@
 
 Provide customizable information for your Wallet Pass.
 
-#### Overview
+## Overview
 
 When designing your Wallet Pass, consider what information is most important to include on the type of pass you’re creating. By defining the metadata of your Wallet Pass, you can optimize the user experience, ensuring that the pass displays all the most helpful information to people. You can even extend the pass experience beyond just the Wallet app, for example, by adding Featured Actions related to your pass.
 
@@ -15,13 +15,13 @@ With metadata, you can:
 - Use back fields and custom values to include additional information along with your pass. These fields are ideal for information that may not fit on the design of the pass itself, but that someone may still want to access when looking at their pass.
 - Define your pass actions, which are quick actions that someone can see when looking at your pass in the Wallet app. These actions can include event guides, links to music, links to book a hotel or flight, or even a link to open a relevant location in Maps and get directions.
 
-#### Add semantic tags
+## Add semantic tags
 
 Passes with semantic tags dynamically lay out pass fields based on metadata that you provide, prioritizing the most important information in specific positions in the layout. Beyond the list of tags required for a pass to function, semantic passes support optional tags for features such as pass actions and the additional information tile.
 
 When creating your semantic passes, remember to support backward compatibility by including pass fields in addition to the semantic tags, ensuring that customers on earlier versions of the OS can still view the pass on their devices.
 
-##### Boarding passes
+### Boarding passes
 
 Airline boarding passes in iOS 26 and later use semantic tags to display the most relevant information for customers. Semantic tags are broken up into five categories, which display on the pass depending on relevance:
 
@@ -35,7 +35,7 @@ Airline boarding passes in iOS 26 and later use semantic tags to display the mos
 
 For a more detailed guide on boarding passes, see [Creating an airline boarding pass using semantic tags](./creating-an-airline-boarding-pass-using-semantic-tags.md).
 
-##### Event tickets
+### Event tickets
 
 Poster event tickets utilize semantic tags to automatically lay out relevant event information in your pass design. Semantic tags are only available for sports and live performance event tickets; all other events utilize nonposter event tickets with pass fields.
 
@@ -57,17 +57,17 @@ For live performance event tickets, there are three categories of semantic tags,
 
 ![An illustration of a live event pass  with the various fields highlighted.](https://developer.apple.com/tutorials/images/com.apple.walletpasses/pass-fields-layout-poster-event-ticket-live-music@2x.png) For details about creating a poster event ticket, see [Creating a poster event pass using semantic tags](./creating-an-event-pass-using-semantic-tags.md).
 
-#### Add custom values
+## Add custom values
 
 In addition to the standard semantic tags, you can also provide your own custom values for a pass. Note, though, that custom fields appear last in the hierarchy of semantic tags, so all other semantic tags appear in the pass design before custom values. These values can only appear on the pass depending on the number of other semantic tags already included.
 
 If there’s no space on the pass for your custom values, they instead appear as standalone fields when someone views the pass in the Wallet app. Viewers can click through and see the details of all your custom value fields.
 
-#### Provide content for your pass fields
+## Provide content for your pass fields
 
 Pass fields are static areas of the pass layout where you can add information with specific attributes related to the pass content. Pass fields have different layouts depending on the pass style.
 
-##### Boarding passes
+### Boarding passes
 
 Airline boarding passes before iOS 26 and all other types of boarding passes use pass fields to lay out their content.
 
@@ -81,19 +81,19 @@ The primary fields display airport codes. The auxiliary and secondary fields dis
 
 For a more details on boarding passes, see [Creating an airline boarding pass using semantic tags](./creating-an-airline-boarding-pass-using-semantic-tags.md).
 
-##### Coupons
+### Coupons
 
 Setting the coupon pass style provides data that Wallet displays automatically, such as business information, offer expiration date, terms and conditions, store locations, and other helpful information. The pass’s style determines the overall visual appearance of the pass and the template for placement of information on the pass. The following illustration shows the layout and placement of fields for the coupon pass style:
 
 ![An illustration of a coupon pass with the various fields highlighted.](https://developer.apple.com/tutorials/images/com.apple.walletpasses/pass-fields-layout-coupon@2x.png) For details on creating a coupon, see [Creating a coupon pass](./creating-a-coupon-pass.md).
 
-##### Event tickets
+### Event tickets
 
 Nonposter event tickets use pass fields for their layout content. Whereas live performances and sports event tickets may use semantic poster event tickets, other events such as movies, conferences, conventions, workshops, social gatherings, or generic events use pass fields for their layouts.
 
 ![An illustration of a nonposter event ticket with the various fields highlighted.](https://developer.apple.com/tutorials/images/com.apple.walletpasses/pass-fields-layout-event-ticket@2x.png) For more information about using pass fields on nonposter event tickets, see [Ensure backward compatibility](./creating-an-event-pass-using-semantic-tags.md#Ensure-backward-compatibility).
 
-##### Store cards
+### Store cards
 
 A store card pass can display a logo, strip images, and a barcode, and it can have up to four secondary and auxiliary fields, all displayed on one row. The text length in each pass field determines how many fields appear on the front of the pass. If the text is too long, Wallet won’t display all of it.
 
@@ -101,7 +101,7 @@ A store card pass can display a logo, strip images, and a barcode, and it can ha
 
 For details on creating a store card, see [Creating a store card pass](./creating-a-store-card-pass.md).
 
-##### Generic passes
+### Generic passes
 
 Both the generic pass and the generic poster pass use pass fields, but they have slightly different layouts for the fields.
 
@@ -117,11 +117,11 @@ Generic passes also allow for up to four secondary fields and four auxiliary fie
 
 For details on how to create a generic pass, see [Creating a Poster Generic Pass](./creating-a-poster-generic-pass.md).
 
-#### Add any relevant back fields
+## Add any relevant back fields
 
 Back fields are available for every pass type, but they don’t appear in the layout of the pass itself. Use this field to provide additional, noncritical information. Back fields are only visible when someone views their pass in the Wallet app and selects Pass Details.
 
-#### Add Featured Actions
+## Add Featured Actions
 
 You can also include Featured Actions with your pass. These actions display as cards when viewing your pass in the Wallet app and you can use them for quick calls to action for the viewer. Featured actions make it easy for someone to quickly find relevant information related to your pass, such as directions to a business location, music related to a live performance, or even quick links to book tickets.
 

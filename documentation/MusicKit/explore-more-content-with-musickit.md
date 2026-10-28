@@ -12,11 +12,11 @@ Track your outdoor runs with access to the Apple Music catalog, personal recomme
 - Mac Catalyst 16.0+
 - Xcode 14.0+
 
-#### Overview
+## Overview
 
 > **Note**: This sample code project is associated with WWDC22 session [110347: Explore more content with MusicKit](https://developer.apple.com/wwdc22/110347/).
 
-##### Configure the sample code project
+### Configure the sample code project
 
 This sample code project doesn’t work in the simulator. Before you run the sample code project in Xcode, perform the following steps:
 

@@ -25,7 +25,7 @@ var threadPriority: Double { get set }
 @property double threadPriority;
 ```
 
-#### Discussion
+## Discussion
 
 The thread’s priority, which is specified by a floating point number from 0.0 to 1.0, where 1.0 is highest priority.
 

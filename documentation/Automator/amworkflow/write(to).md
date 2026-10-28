@@ -20,7 +20,7 @@ func write(to fileURL: URL) throws
 - (BOOL) writeToURL:(NSURL *) fileURL error:(NSError **) outError;
 ```
 
-#### Discussion
+## Discussion
 
 You might want to save the workflow, for example, because you have made changes to a variable it contains.
 

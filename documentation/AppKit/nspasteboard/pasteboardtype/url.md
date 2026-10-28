@@ -19,7 +19,7 @@ static let URL: NSPasteboard.PasteboardType
 extern NSPasteboardType const NSPasteboardTypeURL;
 ```
 
-#### Discussion
+## Discussion
 
 In macOS 10.6 and later, use [`writeObjects(_:)`](../writeobjects%28_%29.md) to write URLs directly to the pasteboard instead.
 

@@ -25,7 +25,7 @@ case withoutResponse
 CBCharacteristicWriteWithoutResponse
 ```
 
-#### Discussion
+## Discussion
 
 You receive no notification if writing to a characteristic value fails with this write type.
 

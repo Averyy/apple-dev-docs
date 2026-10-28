@@ -15,7 +15,7 @@ Notifies your driver that the system has data for you to transmit to the device.
 virtual void TxDataAvailable();
 ```
 
-#### Discussion
+## Discussion
 
 The system calls this method to let you know that there is buffered data ready for you to transmit to the device. The default implementation of this method does nothing. Override it and use your implementation to transfer that data to your hardware.
 

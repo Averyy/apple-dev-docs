@@ -22,7 +22,7 @@ func startMagnetometerUpdates(to queue: OperationQueue, withHandler handler: @es
 - (void) startMagnetometerUpdatesToQueue:(NSOperationQueue *) queue withHandler:(CMMagnetometerHandler) handler;
 ```
 
-#### Discussion
+## Discussion
 
 You must call [`stopMagnetometerUpdates()`](./stopmagnetometerupdates%28%29.md) when you no longer want your app to process magnetometer updates.
 

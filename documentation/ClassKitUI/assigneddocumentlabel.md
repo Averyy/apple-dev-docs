@@ -20,7 +20,7 @@ A view that displays the status or date information of the assigned document.
 @preconcurrency struct AssignedDocumentLabel
 ```
 
-#### Overview
+## Overview
 
 `AssignedDocumentLabel` displays information about an assigned document for students, including submission status and relevant dates like due dates. The view automatically updates its appearance based on assigned document state, showing past-due items in red.
 

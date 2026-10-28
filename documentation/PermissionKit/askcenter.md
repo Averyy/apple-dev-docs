@@ -19,7 +19,7 @@ A class that manages permission requests you send to parents or guardians for ap
 final class AskCenter
 ```
 
-#### Overview
+## Overview
 
 Use `AskCenter` to send permission questions to parents or guardians when a person needs approval for app communication permissions or significant updates. The system routes your questions through the appropriate family sharing channels and delivers responses back to your app when parents make their decisions.
 

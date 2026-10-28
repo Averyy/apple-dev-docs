@@ -19,7 +19,7 @@ The time range representing the total duration and bounds of the media content.
 var timeRange: CMTimeRange { get }
 ```
 
-#### Discussion
+## Discussion
 
 For on-demand content, `start` is typically zero and `duration` is the total length of the content.
 

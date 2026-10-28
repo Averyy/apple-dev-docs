@@ -20,7 +20,7 @@ Returns the prim at a given path, relative to this prim.
 func prim(at path: USDLayer.Path) -> USDPrim
 ```
 
-#### Discussion
+## Discussion
 
 If `path` is relative, it is anchored to this prim’s path. If no prim exists at the resolved path, returns an invalid prim handle.
 

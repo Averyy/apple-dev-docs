@@ -20,7 +20,7 @@ interface ApplePayValidateMerchantEvent
 
 - [Providing Merchant Validation](./providing-merchant-validation.md)
 
-#### Overview
+## Overview
 
 The event handler [`onvalidatemerchant`](./applepaysession/onvalidatemerchant.md) receives this event object when the payment sheet is displayed.
 

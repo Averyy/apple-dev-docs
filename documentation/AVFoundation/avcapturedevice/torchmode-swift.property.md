@@ -23,7 +23,7 @@ var torchMode: AVCaptureDevice.TorchMode { get set }
 @property (nonatomic) AVCaptureTorchMode torchMode;
 ```
 
-#### Discussion
+## Discussion
 
 Setting the value of this property also sets the torch level to its maximum current value.
 

@@ -33,7 +33,7 @@ var searchTerms: [String]? { get }
 @property (atomic, copy, readonly, nullable) NSArray<NSString *> * searchTerms;
 ```
 
-#### Discussion
+## Discussion
 
 When this property contains one or more [`NSString`](../../Foundation/nsstring.md) objects, your search should return only photos whose tags, keywords, descriptions, or other attributes contain one of the specified strings. Use the value of the [`searchTermsOperator`](./searchtermsoperator.md) property to determine whether the search should be for all, some, or none of the specified terms.
 

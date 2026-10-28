@@ -24,7 +24,7 @@ weak var focusedView: UIView? { get }
 @property (nonatomic, weak, readonly, nullable) UIView * focusedView;
 ```
 
-#### Discussion
+## Discussion
 
 When a view has focus, this property contains that view. When the focus is on an item that is not a view, the view in this property is the one that contains the item. This property is `nil` when nothing is currently focused on the screen.
 

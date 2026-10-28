@@ -26,7 +26,7 @@ func broadcastPaused()
 - (void) broadcastPaused;
 ```
 
-#### Discussion
+## Discussion
 
 ReplayKit calls this method when the the broadcasting app calls its [`pauseBroadcast()`](../rpbroadcastcontroller/pausebroadcast%28%29.md) method.
 

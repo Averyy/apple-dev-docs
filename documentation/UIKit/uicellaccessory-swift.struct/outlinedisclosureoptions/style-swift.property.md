@@ -18,7 +18,7 @@ The style of the outline disclosure accessory.
 var style: UICellAccessory.OutlineDisclosureOptions.Style
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`UICellAccessory.OutlineDisclosureOptions.Style.automatic`](./style-swift.enum/automatic.md).
 

@@ -20,11 +20,11 @@ optional func browser(_ browser: NSBrowser, validateDrop info: any NSDraggingInf
 - (NSDragOperation) browser:(NSBrowser *) browser validateDrop:(id<NSDraggingInfo>) info proposedRow:(NSInteger *) row column:(NSInteger *) column dropOperation:(NSBrowserDropOperation *) dropOperation;
 ```
 
-#### Return Value
+## Return Value
 
 The drag operation that the data source is to perform. For the browser to accept the drop, it must not be [`NSDragOperationNone`](../nsdragoperation/nsdragoperationnone.md).
 
-#### Discussion
+## Discussion
 
 The browser proposes a drop column, row, and row-relative location for the drop based on the pointer position, as shown in this table:
 

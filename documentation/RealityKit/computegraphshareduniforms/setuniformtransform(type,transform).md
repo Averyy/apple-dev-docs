@@ -19,7 +19,7 @@ Registers a raw-data transformer closure for a uniform of type `V`.
 func setUniformTransform<V>(type: V.Type, transform: @escaping @_lifetime(0: copy 0) (inout MutableRawSpan, Entity) -> Void) where V : BitwiseCopyable
 ```
 
-#### Discussion
+## Discussion
 
 Use this overload when the transformation is most naturally expressed over the raw byte representation of the value.
 

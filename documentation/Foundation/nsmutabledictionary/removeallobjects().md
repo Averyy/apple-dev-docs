@@ -25,7 +25,7 @@ func removeAllObjects()
 - (void) removeAllObjects;
 ```
 
-#### Discussion
+## Discussion
 
 Each key and corresponding value object is sent a [`release`](../../ObjectiveC/nsobject-c.protocol/release.md) message.
 

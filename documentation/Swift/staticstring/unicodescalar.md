@@ -21,7 +21,7 @@ A single Unicode scalar value.
 var unicodeScalar: Unicode.Scalar { get }
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**: Accessing this property when `hasPointerRepresentation` is `true` triggers a runtime error.
 

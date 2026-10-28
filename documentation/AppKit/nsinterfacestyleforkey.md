@@ -15,7 +15,7 @@ Returns an interface style value for the specified key and responder.
 extern NSInterfaceStyle NSInterfaceStyleForKey(NSString *key, NSResponder *responder);
 ```
 
-#### Discussion
+## Discussion
 
 Used to determine an interface style based on a key and a responder, either of which may be `nil`. An [`NSInterfaceStyle`](./nsinterfacestyle.md) value specifies the style in which an interface item, such as a button or a scroll bar, should be drawn. For example, a value of [`NSMacintoshInterfaceStyle`](./nsmacintoshinterfacestyle.md) indicates an item should be drawn in the Macintosh style. The values defined for [`NSInterfaceStyle`](./nsinterfacestyle.md) are [`NSNoInterfaceStyle`](./nsnointerfacestyle.md), [`NSNextStepInterfaceStyle`](./nsnextstepinterfacestyle.md), [`NSWindows95InterfaceStyle`](./nswindows95interfacestyle.md), and [`NSMacintoshInterfaceStyle`](./nsmacintoshinterfacestyle.md). Note that this function never returns [`NSNoInterfaceStyle`](./nsnointerfacestyle.md).
 

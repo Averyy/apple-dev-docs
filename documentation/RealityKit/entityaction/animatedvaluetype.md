@@ -21,7 +21,7 @@ A value that defines the type that the action animates, if the action animates a
 var animatedValueType: (any AnimatableData.Type)? { get }
 ```
 
-#### Discussion
+## Discussion
 
 In your implementation, return a type that matches the action animation’s bind target.
 

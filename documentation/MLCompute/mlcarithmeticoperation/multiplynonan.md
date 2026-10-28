@@ -23,7 +23,7 @@ case multiplyNoNaN
 MLCArithmeticOperationMultiplyNoNaN
 ```
 
-#### Discussion
+## Discussion
 
 Returns `0` if `y` in `x * y` is zero, even if `x` isn’t a number (`NaN)` or infinity (`INF)`.
 

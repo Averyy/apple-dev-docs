@@ -17,7 +17,7 @@ A list of identifiers that specify pass types that your app can access in Wallet
 - **Name**: `com.apple.developer.pass-type-identifiers` (Pass Type IDs)
 - **Type**: array of string 
 
-#### Discussion
+## Discussion
 
 The value for this key is an array of pass type identifiers.
 

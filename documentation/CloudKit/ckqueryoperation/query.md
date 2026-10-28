@@ -26,7 +26,7 @@ var query: CKQuery? { get set }
 @property (nonatomic, copy, nullable) CKQuery * query;
 ```
 
-#### Discussion
+## Discussion
 
 The initial value of this property is the query that you provide to the [`init(query:)`](./init%28query%29.md) method. When the value in the [`cursor`](./cursor-swift.property.md) property is `nil`, the operation uses this property’s value to execute a new search and return its results to your completion handler. If [`cursor`](./cursor-swift.property.md) isn’t `nil`, the operation uses the cursor instead.
 

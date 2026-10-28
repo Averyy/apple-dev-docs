@@ -24,7 +24,7 @@ var arrowDirection: UIPopoverArrowDirection { get }
 @property (nonatomic, readonly) UIPopoverArrowDirection popoverArrowDirection;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`unknown`](../uipopoverarrowdirection/unknown.md). When you present the popover, the value changes to reflect the actual direction of the arrow being used by the popover. When the popover is subsequently dismissed, the value of this property returns to [`unknown`](../uipopoverarrowdirection/unknown.md).
 

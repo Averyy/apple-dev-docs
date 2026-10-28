@@ -25,7 +25,7 @@ func draw(in rect: CGRect, withAttributes attrs: [NSAttributedString.Key : Any]?
 - (void) drawInRect:(CGRect) rect withAttributes:(NSDictionary<NSString *,id> *) attrs;
 ```
 
-#### Discussion
+## Discussion
 
 This method draws as much of the string as it can inside the specified rectangle, wrapping the string text as needed to make it fit. If the string is too long to fit inside the rectangle, the method renders as much as possible and clips the rest.
 

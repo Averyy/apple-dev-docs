@@ -20,7 +20,7 @@ func mainViewDidLoad()
 - (void) mainViewDidLoad;
 ```
 
-#### Discussion
+## Discussion
 
 Invoked by the default implementation of [`loadMainView()`](./loadmainview%28%29.md) after the main nib file has been loaded and the main view of the preference pane has been set. The default implementation does nothing. Override this method to initialize the main view with the current preference settings.
 

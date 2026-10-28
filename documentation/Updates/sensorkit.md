@@ -5,20 +5,20 @@
 
 Learn about important changes to SensorKit.
 
-#### Overview
+## Overview
 
 Browse notable changes in [SensorKit](../SensorKit/SensorKit.md).
 
-#### March 2024
+## March 2024
 
-##### Sensors
+### Sensors
 
 - Use the [`electrocardiogram`](../SensorKit/srsensor/electrocardiogram.md) property to collect electrocardiogram (ECG) data samples, and the [`pedometerData`](../SensorKit/srsensor/pedometerdata.md) class to get the data.
 - Use the [`photoplethysmogram`](../SensorKit/srsensor/photoplethysmogram.md) property to collect photoplethysmogram (PPG) data samples, and the [`SRPhotoplethysmogramOpticalSample`](../SensorKit/srphotoplethysmogramopticalsample.md) and [`SRPhotoplethysmogramSample`](../SensorKit/srphotoplethysmogramsample.md) classes to get the data.
 
-#### June 2023
+## June 2023
 
-##### Sensors
+### Sensors
 
 - Use the [`faceMetrics`](../SensorKit/srsensor/facemetrics.md) property to analyze a person’s facial expressions, and the [`SRFaceMetrics`](../SensorKit/srfacemetrics.md) class to get the data.
 - Use the [`heartRate`](../SensorKit/srsensor/heartrate.md) property to collect a person’s heart rate from devices, and the [`CMHighFrequencyHeartRateData`](../CoreMotion/cmhighfrequencyheartratedata.md) class to get the data.
@@ -26,7 +26,7 @@ Browse notable changes in [SensorKit](../SensorKit/SensorKit.md).
 - Use the [`siriSpeechMetrics`](../SensorKit/srsensor/sirispeechmetrics.md) property to collect data about a person’s voice — such as tenor, pitch, and cadence — and the [`SRSpeechMetrics`](../SensorKit/srspeechmetrics.md) class to get the data. People who previously authorized speech metric data collection need to reauthorize before data collection can continue.
 - Use the [`wristTemperature`](../SensorKit/srsensor/wristtemperature.md) property to collect sequential wrist temperatures while a person is sleeping, and the [`SRWristTemperature`](../SensorKit/srwristtemperature.md) class to get the data.
 
-##### Configuration
+### Configuration
 
 - To opt out of collecting data for user activity from sensors in your app, set the [`SRResearchDataGeneration`](../BundleResources/information-property-list/srresearchdatageneration.md) key to `NO`.
 

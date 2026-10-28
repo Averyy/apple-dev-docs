@@ -17,7 +17,7 @@ Optional components that generate a warning prior to regularly scheduled events.
 var warningTime: DateComponents? { get }
 ```
 
-#### Discussion
+## Discussion
 
 You can create a warning time to notify your app extension ahead of time before the scheduled activity begins and ends. For instance, when your app schedules activity-monitoring from 10 a.m. to 11 a.m. for an event with a 30-minute threshold, setting the schedule’s warning time to 5 minutes results in the extension receiving [`intervalWillStartWarning(for:)`](../deviceactivitymonitor/intervalwillstartwarning%28for%29.md), [`intervalWillEndWarning(for:)`](../deviceactivitymonitor/intervalwillendwarning%28for%29.md), and [`eventWillReachThresholdWarning(_:activity:)`](../deviceactivitymonitor/eventwillreachthresholdwarning%28_,activity%29.md) callbacks at 9:55 a.m., 10:55 a.m, and when 25 minutes of the event’s activity occurs, respectively. If the components specify a longer time interval than the schedule’s interval, the system clamps the warning callbacks for each event’s threshold to the start time of the interval.
 

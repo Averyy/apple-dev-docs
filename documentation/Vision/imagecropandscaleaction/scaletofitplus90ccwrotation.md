@@ -21,7 +21,7 @@ An action that scales the image and maintains the aspect ratio to fit on the lon
 case scaleToFitPlus90CCWRotation
 ```
 
-#### Discussion
+## Discussion
 
 Rotation helps to optimize portrait images fit into landscape buffers for algorithms that are rotation agnostic.
 

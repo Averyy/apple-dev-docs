@@ -20,7 +20,7 @@ struct AuthorizationItem
 typedef struct { ... } AuthorizationItem;
 ```
 
-#### Overview
+## Overview
 
 When using an authorization item to contain a right, set the [`name`](./authorizationitem/name.md) field to the name of the right—for example, `"com.myOrganization.myProduct.myRight"`, the [`valueLength`](./authorizationitem/valuelength.md) and [`flags`](./authorizationitem/flags.md) fields to `0`, and the value field to `nil`. For more information on naming rights, read [Authorization Services Programming Guide](https://developer.apple.com/library/archive/documentation/Security/Conceptual/authorization_concepts/01introduction/introduction.html#//apple_ref/doc/uid/TP30000995)
 

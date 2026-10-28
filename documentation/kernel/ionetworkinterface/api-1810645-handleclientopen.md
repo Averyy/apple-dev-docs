@@ -14,11 +14,11 @@ virtual bool handleClientOpen(
  void *argument );
 ```
 
-#### Return Value
+## Return Value
 
 Returns true to accept the client open, false to reject the open.
 
-#### Overview
+## Overview
 
 This method is called by `handleOpen()` to allow a subclass to handle a client close. The arbitration lock is held.
 

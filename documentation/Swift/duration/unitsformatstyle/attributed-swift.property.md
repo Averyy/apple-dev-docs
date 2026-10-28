@@ -21,7 +21,7 @@ A property that formats the duration as an attributed string.
 var attributed: Duration.UnitsFormatStyle.Attributed { get }
 ```
 
-#### Discussion
+## Discussion
 
 Apply the `attributed` property to a configured [`Duration.UnitsFormatStyle`](../unitsformatstyle.md) to produce an [`Duration.UnitsFormatStyle.Attributed`](./attributed-swift.struct.md) style. You can then format a duration with this style to create a formatted   [`AttributedString`](../../../Foundation/attributedstring.md). The formatted attributed string contains instances of [`AttributeScopes.FoundationAttributes.DateFieldAttribute`](../../../Foundation/attributescopes/foundationattributes/datefieldattribute.md) and [`AttributeScopes.FoundationAttributes.MeasurementAttribute`](../../../Foundation/attributescopes/foundationattributes/measurementattribute.md) for runs with formatted durations.
 

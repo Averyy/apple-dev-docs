@@ -24,7 +24,7 @@ var alertLocalizationKey: String? { get set }
 @property (copy, nullable) NSString * alertLocalizationKey;
 ```
 
-#### Discussion
+## Discussion
 
 Set this property’s value to have the system display a localized string when it receives the corresponding push notification. The system uses the key to find the matching string in your app’s `Localizable.string` file. If you specify a value for this property, CloudKit ignores the [`alertBody`](./alertbody.md) property’s value.
 

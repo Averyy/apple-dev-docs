@@ -19,7 +19,7 @@ func deselectColumn(_ column: Int)
 - (void) deselectColumn:(NSInteger) column;
 ```
 
-#### Discussion
+## Discussion
 
 Deselects the column at `columnIndex` if it’s selected, regardless of whether empty selection is allowed.
 

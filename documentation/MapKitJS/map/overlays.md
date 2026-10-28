@@ -16,7 +16,7 @@ get overlays(): Overlay[];
 set overlays(overlays: Overlay[]);
 ```
 
-#### Discussion
+## Discussion
 
 You can set this property to a new (possibly empty) array of overlays to update or delete all the overlays on the map.
 

@@ -24,7 +24,7 @@ func UIGraphicsSetPDFContextDestinationForRect(_ name: String, _ rect: CGRect)
 extern void UIGraphicsSetPDFContextDestinationForRect(NSString *name, CGRect rect);
 ```
 
-#### Discussion
+## Discussion
 
 You use this function to create live links within a PDF document. Tapping the specified rectangle in the PDF document causes the document to display the contents at the associated jump destination.
 

@@ -22,11 +22,11 @@ init(characteristic: HMCharacteristic, triggerValue: TriggerValueType?)
 - (instancetype) initWithCharacteristic:(HMCharacteristic *) characteristic triggerValue:(TriggerValueType) triggerValue;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized characteristic event for the specified characteristic and trigger value.
 
-#### Discussion
+## Discussion
 
 Use a characteristic that supports notification; otherwise this initializer throws an exception.
 

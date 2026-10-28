@@ -27,7 +27,7 @@ func browserViewControllerDidFinish(_ browserViewController: MCBrowserViewContro
 - (void) browserViewControllerDidFinish:(MCBrowserViewController *) browserViewController;
 ```
 
-#### Discussion
+## Discussion
 
 This call is intended to inform your app that the user has connected with nearby peers in a session and that the browser view controller has been dismissed. Upon receiving this delegate method call, your app must call [`dismiss(animated:completion:)`](../../UIKit/uiviewcontroller/dismiss%28animated,completion%29.md) to dismiss the view controller. Your app can also begin sending data to any connected peers, and should resume any UI updates that it may have temporarily suspended while the view controller was onscreen.
 

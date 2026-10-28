@@ -9,15 +9,15 @@ Retrieves a single budget order by its ID.
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Discussion
+## Discussion
 
 This endpoint retrieves the full details of a specific budget order by its ID. The response includes the budget order’s value, active date range, assigned ad accounts, and invoice details.
 
 Users with organization-level permissions don’t need the `X-AP-Context` header. Users limited to specific ad accounts must send it. See [Budget Orders Endpoints](./budget-orders-endpoints.md).
 
-#### Payload Examples
+## Payload Examples
 
-##### Request
+### Request
 
 Retrieves the full details of a specific budget order by its ID.
 
@@ -25,7 +25,7 @@ Retrieves the full details of a specific budget order by its ID.
 GET /v1/shared-budgets/777888999
 ```
 
-##### Response
+### Response
 
 ```json
 {

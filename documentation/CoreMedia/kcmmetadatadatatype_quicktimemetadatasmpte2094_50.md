@@ -23,7 +23,7 @@ let kCMMetadataDataType_QuickTimeMetadataSMPTE2094_50: CFString
 extern CFStringRef const kCMMetadataDataType_QuickTimeMetadataSMPTE2094_50;
 ```
 
-#### Discussion
+## Discussion
 
 ```
 SMPTE ST2094-50 HDR metadata.  Conforms to

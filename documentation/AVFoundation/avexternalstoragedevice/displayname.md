@@ -23,7 +23,7 @@ var displayName: String? { get }
 @property (nonatomic, readonly, nullable) NSString * displayName;
 ```
 
-#### Discussion
+## Discussion
 
 The value is `nil` when the system can’t retrieve information from external storage device.
 

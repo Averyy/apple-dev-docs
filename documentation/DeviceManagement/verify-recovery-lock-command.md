@@ -9,11 +9,11 @@ Verify the device’s Recovery Lock password.
 **Availability**:
 - macOS 11.5+
 
-#### Discussion
+## Discussion
 
 This command is only available on a Mac with Apple silicon.
 
-##### Command availability
+### Command availability
 
 |  |  |
 | --- | --- |
@@ -23,7 +23,7 @@ This command is only available on a Mac with Apple silicon.
 | Allowed in user enrollment | N/A |
 | Required access right | DeviceLockAndRemovePasscode |
 
-##### Example request and response
+### Example request and response
 
 **Request**:
 

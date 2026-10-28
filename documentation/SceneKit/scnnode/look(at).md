@@ -25,7 +25,7 @@ func look(at worldTarget: SCNVector3)
 - (void) lookAt:(SCNVector3) worldTarget;
 ```
 
-#### Discussion
+## Discussion
 
 Using this method is equivalent to calling the [`look(at:up:localFront:)`](./look%28at,up,localfront%29.md) method and passing the node’s [`worldUp`](./worldup.md) and [`localFront`](./localfront.md) vectors for the corresponding parameters.
 

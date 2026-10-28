@@ -21,7 +21,7 @@ Returns a Boolean value that indicates if the given language shares a common par
 func hasCommonParent(with language: Locale.Language) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if this language and language share a common parent; `false` otherwise.
 

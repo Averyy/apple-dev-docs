@@ -11,11 +11,11 @@ Called on the IOWorkLoop when a power state change is complete.
 virtual IOReturn protectedCompletePowerStateChange();
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess on success
 
-#### Overview
+## Overview
 
 This function does the work to complete a power state change (both synchronous and asynchronous). If the system is waking from sleep, the timer system is restarted and the audio engines are resumed. If this was called as a result of an asynchronous power state changed it makes the IOService power management call acknowledgePowerChange() and resets the asyncPowerStateChangeInProgress variable. Finally it sets the currentPowerState to the pendingPowerState. This function must be called on the IOWorkLoop. If a subclass is not on the IOWorkLoop (e.g. holding the IOCommandGate), call completePowerStateChange() instead.
 

@@ -24,7 +24,7 @@ var localizedTitle: String? { get }
 @property (nonatomic, strong, readonly, nullable) NSString * localizedTitle;
 ```
 
-#### Discussion
+## Discussion
 
 This property’s value can be either a user-supplied name for a user-created collection, or the localized name of a collection built into the Photos app.
 

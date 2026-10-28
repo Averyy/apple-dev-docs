@@ -21,7 +21,7 @@ The supported modes for running the app intent.
 static var supportedModes: IntentModes { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to specify whether your app needs to be in the foreground or background when running your app intent’s action. You can assign one or more values to this property:
 

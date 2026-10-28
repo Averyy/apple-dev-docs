@@ -14,7 +14,7 @@
 kMPNotificationInfoVersion = 1L | (kOpaqueNotificationID << 16)
 ```
 
-#### Discussion
+## Discussion
 
 The `MPNotificationInfo` structure version.
 

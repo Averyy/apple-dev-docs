@@ -5,11 +5,11 @@
 
 Use Instruments to assess whether your app or its third-party SDKs connect to domains that may profile users.
 
-#### Overview
+## Overview
 
 The operating system maintains a list of DNS domains that may be following people across multiple apps and websites to combine their activity into a profile. Use Instruments to discover whether your app contacts these domains — because of code you wrote or code that’s included in a third-party SDK your app links to — so that you can assess whether the domains are used for tracking as defined under the App Tracking Transparency framework. For more information, see [User Privacy and Data Use](https://developer.apple.com/app-store/user-privacy-and-data-use/).
 
-##### Analyze your app’s networking behavior
+### Analyze your app’s networking behavior
 
 Xcode and Instruments provide the tools you need to analyze your app’s network connections. In particular, you use Instruments to record HTTP traffic to and from your app, and the later analyze that for any unexpected activity. Follow these steps:
 
@@ -23,7 +23,7 @@ Xcode and Instruments provide the tools you need to analyze your app’s network
 
 ![A screenshot of Instruments, showing a dialog presented when you record HTTP traffic with networking instruments.](https://developer.apple.com/tutorials/images/com.apple.Xcode/detecting-potential-profiling-1@2x.png)
 
-##### Review your app’s connections to domains that may be profiling users
+### Review your app’s connections to domains that may be profiling users
 
 When your app makes an HTTP request to a domain on the operating system list of DNS domains that may be following people across multiple apps and websites to combine their activity into a profile, the Points of Interest instrument records the activity. A fault pin in the Points on Interest track in the timeline shows when your app made a request to the domain.
 
@@ -31,7 +31,7 @@ In Instruments, select the Points of Interest track. The Detail area shows a lis
 
 ![A screenshot of Instruments, showing points of interest in the timeline where the app has contacted domains that may be following people across multiple apps and websites to combine their activity into a profile. A point of interest is selected in the detail view.](https://developer.apple.com/tutorials/images/com.apple.Xcode/detecting-potential-profiling-2@2x.png)
 
-##### Declare tracking domains in your app’s privacy manifest
+### Declare tracking domains in your app’s privacy manifest
 
 If you determine that the domains your app connects to are using data sent from your app to track people, declare them in your privacy manifest and ask for permission to track under the App Tracking Transparency framework. For more information, see [User Privacy and Data Use](https://developer.apple.com/app-store/user-privacy-and-data-use/). The operating system blocks network requests to declared tracking domains when the user has not granted tracking permission.
 

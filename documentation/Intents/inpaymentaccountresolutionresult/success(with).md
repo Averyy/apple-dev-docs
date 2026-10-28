@@ -23,11 +23,11 @@ class func success(with resolvedPaymentAccount: INPaymentAccount) -> Self
 + (instancetype) successWithResolvedPaymentAccount:(INPaymentAccount *) resolvedPaymentAccount;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INPaymentAccountResolutionResult`](../inpaymentaccountresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method to create a result object when you are able to resolve the parameter successfully to a recognizable user account in your app.
 

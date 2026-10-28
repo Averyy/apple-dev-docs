@@ -24,7 +24,7 @@ var data: Data? { get }
 @property (readonly, nullable) NSData * data;
 ```
 
-#### Discussion
+## Discussion
 
 This property has a value when an app creates the asset with [`registerSoundAsset(data:identifier:format:normalizationMode:)`](../phaseassetregistry/registersoundasset%28data,identifier,format,normalizationmode%29.md); otherwise the value is `nil`.
 

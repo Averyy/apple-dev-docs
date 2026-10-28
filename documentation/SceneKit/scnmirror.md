@@ -5,7 +5,7 @@
 
 Equivalent to [`SCNWrapMode.mirror`](./scnwrapmode/mirror.md).
 
-#### Overview
+## Overview
 
 Deprecated in OS X v10.9. Use [`SCNWrapMode.mirror`](./scnwrapmode/mirror.md) instead.
 

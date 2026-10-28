@@ -29,11 +29,11 @@ OSStatus SecTrustSetAnchorCertificates(SecTrustRef trust, CFArrayRef anchorCerti
 
 - [Configuring a Trust](./configuring-a-trust.md)
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
-#### Discussion
+## Discussion
 
 The [`SecTrustEvaluateWithError(_:_:)`](./sectrustevaluatewitherror%28_,_%29.md) function looks for an anchor certificate in the array of certificates specified by the [`SecTrustSetAnchorCertificates(_:_:)`](./sectrustsetanchorcertificates%28_,_%29.md) function, or uses a default set provided by the system. In OS X 10.3, for example, the default set of anchors was in the keychain file /System/Library/Keychains/X509Anchors. If you want to create a set of anchor certificates by modifying the default set, call the [`SecTrustCopyAnchorCertificates(_:)`](./sectrustcopyanchorcertificates%28_%29.md) function to obtain the current set of anchor certificates, modify that set as you wish, and create a new array of certificates. Then call [`SecTrustSetAnchorCertificates(_:_:)`](./sectrustsetanchorcertificates%28_,_%29.md) with the modified array.
 

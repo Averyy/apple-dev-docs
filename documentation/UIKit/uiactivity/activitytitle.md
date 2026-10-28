@@ -22,11 +22,11 @@ var activityTitle: String? { get }
 @property (nonatomic, readonly, nullable) NSString * activityTitle;
 ```
 
-#### Return Value
+## Return Value
 
 A string that describes the service.
 
-#### Discussion
+## Discussion
 
 The default value is `nil`. Subclasses must override this property to return a user-readable string that describes the service. The string you return should be localized.
 

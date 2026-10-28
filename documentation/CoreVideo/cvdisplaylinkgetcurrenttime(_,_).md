@@ -22,11 +22,11 @@ func CVDisplayLinkGetCurrentTime(_ displayLink: CVDisplayLink, _ outTime: Unsafe
 extern CVReturn CVDisplayLinkGetCurrentTime(CVDisplayLinkRef displayLink, CVTimeStamp *outTime);
 ```
 
-#### Return Value
+## Return Value
 
 A Core Video result code. See [Core Video Constants](./core-video-constants.md) for possible values.
 
-#### Discussion
+## Discussion
 
 You use this call to obtain the timestamp of the frame that is currently being displayed.
 

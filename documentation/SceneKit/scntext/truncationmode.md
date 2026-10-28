@@ -25,7 +25,7 @@ var truncationMode: String { get set }
 @property (nonatomic, copy) NSString * truncationMode;
 ```
 
-#### Discussion
+## Discussion
 
 When you define a layout rectangle for the text using its [`containerFrame`](./containerframe.md) property, SceneKit uses the [`truncationMode`](./truncationmode.md) property to determine how to lay out text that does not fit in the layout rectangle. For possible values, see Truncation_modes in [`CATextLayer`](../../QuartzCore/catextlayer.md).
 

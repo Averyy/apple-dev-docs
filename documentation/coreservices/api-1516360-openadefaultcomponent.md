@@ -13,7 +13,7 @@
 OSErr OpenADefaultComponent(OSType componentType, OSType componentSubType, ComponentInstance *ci);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./carbon_core/component_manager.md#1668759).
 

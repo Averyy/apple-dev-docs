@@ -20,7 +20,7 @@ Information about reaching a usage limit.
 struct QuotaLimitReached
 ```
 
-#### Overview
+## Overview
 
 A [`PrivateCloudComputeLanguageModel`](../../privatecloudcomputelanguagemodel.md)  provides a [`LanguageModelError`](../../languagemodelerror.md) that you use to proactively respond to usage quota scenarios, like when a person is approaching their per-day request limit. When a person approaches or exceeds the daily quota, the framework provides a direct path for you to add system UI so the person can subscribe to iCloud+ to get more access.
 

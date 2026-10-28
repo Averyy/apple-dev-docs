@@ -19,11 +19,11 @@ Specifies an updated list of captive network SSIDs that the application performs
 Boolean CNSetSupportedSSIDs(CFArrayRef ssidArray);
 ```
 
-#### Return Value
+## Return Value
 
 `TRUE` if the list is successfully updated; otherwise, `FALSE`.
 
-#### Discussion
+## Discussion
 
 The list is maintained for as long as the application is installed.
 

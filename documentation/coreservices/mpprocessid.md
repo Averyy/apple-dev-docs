@@ -16,7 +16,7 @@ Represents a process ID.
 typedef struct OpaqueMPProcessID *MPProcessID;
 ```
 
-#### Discussion
+## Discussion
 
 Note that this process ID is identical to the process ID (or context ID) handled by the Code Fragment Manager.  
 

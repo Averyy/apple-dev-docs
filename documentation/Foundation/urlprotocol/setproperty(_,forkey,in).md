@@ -25,7 +25,7 @@ class func setProperty(_ value: Any, forKey key: String, in request: NSMutableUR
 + (void) setProperty:(id) value forKey:(NSString *) key inRequest:(NSMutableURLRequest *) request;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to provide an interface for protocol implementors to customize protocol-specific information associated with [`URLRequest`](../urlrequest.md) objects.
 

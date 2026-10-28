@@ -5,7 +5,7 @@
 
 An object that represents an activity triggered by the user.
 
-#### Overview
+## Overview
 
 The Activity Tracing APIs provide a mechanism for grouping and labeling work that’s done in response to user interactions or other events, so that you can see all log messages related to the triggering action.
 

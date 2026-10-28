@@ -16,11 +16,11 @@ Method to set the auto-sense data for the SCSITask.
 IOReturn (*SetAutoSenseDataBuffer)(void *task, SCSI_Sense_Data *senseDataBuffer, UInt8 senseDataLength);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if sense data buffer was set, otherwise kIOReturnError.
 
-#### Discussion
+## Discussion
 
 This method can be used to set the auto-sense data buffer for the SCSITask.
 

@@ -22,7 +22,7 @@ var overscanCompensation: UIScreen.OverscanCompensation { get set }
 @property (nonatomic) UIScreenOverscanCompensation overscanCompensation;
 ```
 
-#### Discussion
+## Discussion
 
 Some external displays may be unable to reliably display all of the pixels to the user. To compensate, choose one of the techniques described in the  [`UIScreen.OverscanCompensation`](./overscancompensation-swift.enum.md) enumeration.
 

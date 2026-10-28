@@ -17,7 +17,7 @@ var hpkeAuthPublicKey: SecKey? { get set }
 @property (nonatomic, nullable) SecKeyRef hpkeAuthPublicKey;
 ```
 
-#### Discussion
+## Discussion
 
 The Authentication public key to be used for HPKE.  Setting this value with changet the mode to Auth or AuthPSK if the hpkePreSharedKey is also set.  This public key is used to authenticate HPKE responses.
 

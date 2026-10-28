@@ -21,7 +21,7 @@ The size to apply to controls within a view.
 var controlSize: ControlSize { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The default is [`ControlSize.regular`](../controlsize/regular.md).
 

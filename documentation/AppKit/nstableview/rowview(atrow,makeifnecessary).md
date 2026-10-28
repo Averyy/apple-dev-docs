@@ -19,11 +19,11 @@ func rowView(atRow row: Int, makeIfNecessary: Bool) -> NSTableRowView?
 - (NSTableRowView *) rowViewAtRow:(NSInteger) row makeIfNecessary:(BOOL) makeIfNecessary;
 ```
 
-#### Return Value
+## Return Value
 
 An instance, or subclass, of [`NSTableRowView`](../nstablerowview.md). Returning `nil` is also valid if `makeIfNecessary` is [`false`](../../Swift/false.md) and the view did not exist.
 
-#### Discussion
+## Discussion
 
 This method first attempts to return a currently displayed view in the visible area. If there is no visible view, and `makeIfNecessary` is [`true`](../../Swift/true.md), a prepared temporary view is returned. If `makeIfNecessary` is [`false`](../../Swift/false.md), and the view is not visible, `nil` is returned.
 

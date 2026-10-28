@@ -26,7 +26,7 @@ class func stateOfExtension(withIdentifier identifier: String) async throws -> S
 + (void) getStateOfExtensionWithIdentifier:(NSString *) identifier completionHandler:(void (^)(SFSafariExtensionState *state, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to check on the state of a Safari web extension embedded inside your app.
 

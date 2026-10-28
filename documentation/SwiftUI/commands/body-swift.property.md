@@ -21,7 +21,7 @@ The contents of the command hierarchy.
 @MainActor @preconcurrency var body: Self.Body { get }
 ```
 
-#### Discussion
+## Discussion
 
 For any commands that you create, provide a computed `body` property that defines the scene as a composition of other scenes. You can assemble a command hierarchy from built-in commands that SwiftUI provides, as well as other commands that you’ve defined.
 

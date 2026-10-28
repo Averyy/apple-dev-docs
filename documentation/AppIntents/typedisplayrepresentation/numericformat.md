@@ -21,7 +21,7 @@ A string representing a count for the type, e.g. “2 books”.
 var numericFormat: LocalizedStringResource?
 ```
 
-#### Discussion
+## Discussion
 
 In your `numericFormat` implementation, use `StringInterpolation` placeholders and provide a `.stringsdict` file with all possible pluralizations for the type, such as “0 books”, “1 book”, and “2 books”.
 

@@ -25,11 +25,11 @@ func CMBlockBufferReplaceDataBytes(with sourceBytes: UnsafeRawPointer, blockBuff
 extern OSStatus CMBlockBufferReplaceDataBytes(const void *sourceBytes, CMBlockBufferRef destinationBuffer, size_t offsetIntoDestination, size_t dataLength);
 ```
 
-#### Return Value
+## Return Value
 
 Returns `kCMBlockBufferNoErr` if the replacement succeeded, returns an error otherwise.
 
-#### Discussion
+## Discussion
 
 This function is used to replace bytes in a `CMBlockBuffer's` memory blocks with those from a provided piece of memory. It deals with the possibility of the destination range of data being noncontiguous. `CMBlockBufferAssureBlockMemory`() is called on the given `CMBlockBuffer`. If desired range is subsequently not accessible in the `CMBlockBuffer`, an error is returned and the contents of the `CMBlockBuffer` are untouched.
 

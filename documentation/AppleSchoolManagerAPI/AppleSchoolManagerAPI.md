@@ -9,7 +9,7 @@ Automate device management activities and view device information in Apple Schoo
 **Availability**:
 - Apple School Manager API 1.7+
 
-#### Overview
+## Overview
 
 > **Note**: This API is a part of the [Apple School Manager and Apple Business APIs](../apple-school-and-business-manager-api/apple-school-and-business-manager-api.md) collection.
 

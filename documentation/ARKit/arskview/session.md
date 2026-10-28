@@ -20,7 +20,7 @@ var session: ARSession { get set }
 @property (nonatomic, strong) ARSession * session;
 ```
 
-#### Discussion
+## Discussion
 
 A view creates its own session object; use this property to access and configure the view’s session.
 

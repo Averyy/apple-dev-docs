@@ -25,7 +25,7 @@ static var animationTrackingEnabled: ProcessInfo.ActivityOptions { get }
 NSActivityAnimationTrackingEnabled
 ```
 
-#### Discussion
+## Discussion
 
 To help you investigate perfomance issues in your app, use [`animationTrackingEnabled`](./animationtrackingenabled.md) to track the timing of a user interaction by annotating the beginning and end of an activity using an animation signpost interval.
 

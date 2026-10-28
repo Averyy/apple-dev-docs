@@ -19,7 +19,7 @@ optional func handlerForMessageSecurity() -> any MEMessageSecurityHandler
 - (id<MEMessageSecurityHandler>) handlerForMessageSecurity;
 ```
 
-#### Return Value
+## Return Value
 
 An object that encrypts, decrypts, and signs messages.
 

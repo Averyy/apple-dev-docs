@@ -5,13 +5,13 @@
 
 Configure your server and provide an HTTPS URL to receive notifications about in-app purchase events and unreported external purchase tokens.
 
-#### Overview
+## Overview
 
 [App Store Server Notifications](./AppStoreServerNotifications.md) is a server-to-server service that sends real-time notifications for in-app purchase events, and notifications for unreported external purchase tokens. To enable notifications, set up an HTTPS URL on your server, and configure settings in App Store Connect.
 
 For information about parsing and interpreting notifications, see [Receiving App Store Server Notifications](./receiving-app-store-server-notifications.md).
 
-##### Set up your server and App Store Connect settings
+### Set up your server and App Store Connect settings
 
 To receive server notifications from the App Store, your server must support the Transport Layer Security (TLS) 1.2 protocol or later.
 
@@ -30,11 +30,11 @@ For new implementations, use [`App Store Server Notifications V2`](./app-store-s
 
 For information about changes to App Store Server Notifications, see [App Store Server Notifications changelog](./app-store-server-notifications-changelog.md).
 
-##### Configure an allow list
+### Configure an allow list
 
 If your server requires IP addresses to be on an allow list, add the IP address subnet `17.0.0.0/8` to allow your server to receive notifications from the App Store server. This subnet applies to both the sandbox and the production environments.
 
-##### Test your server setup
+### Test your server setup
 
 To determine whether your server is receiving notifications, call the [`Request a Test Notification`](../AppStoreServerAPI/request-a-test-notification.md) endpoint in the [App Store Server API](../AppStoreServerAPI/AppStoreServerAPI.md). This endpoint asks the App Store server to send a notification with the [`notificationType`](./notificationtype.md) `TEST`. Use the [`testNotificationToken`](../AppStoreServerAPI/testnotificationtoken.md) you receive to call the [`Get Test Notification Status`](../AppStoreServerAPI/get-test-notification-status.md) endpoint to learn how your server responds to the test notification.
 

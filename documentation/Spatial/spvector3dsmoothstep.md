@@ -19,11 +19,11 @@
 static SPVector3D SPVector3DSmoothstep(SPVector3D edge0, SPVector3D edge1, SPVector3D x);
 ```
 
-#### Return Value
+## Return Value
 
 A new vector with each element set to `0` if `x <= edge0`, `1` if `x >= edge1`, and a Hermite interpolation between `0` and `1` if `edge0 < x < edge1`.
 
-#### Discussion
+## Discussion
 
 Returns a Spatial vector that represents the smooth interpolation at @p x between two vectors.
 

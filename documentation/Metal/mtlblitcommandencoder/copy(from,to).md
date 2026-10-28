@@ -29,7 +29,7 @@ func copy(from sourceTexture: any MTLTexture, to destinationTexture: any MTLText
 
 - [Copying data into or out of mipmaps](../copying-data-into-or-out-of-mipmaps.md)
 
-#### Discussion
+## Discussion
 
 The textures can be different sizes as long as the larger texture has a mipmap level that’s the same size as the smaller texture’s level `0` mipmap.
 

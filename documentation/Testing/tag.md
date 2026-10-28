@@ -27,7 +27,7 @@ struct Tag
 
 - [Adding tags to tests](./addingtags.md)
 
-#### Overview
+## Overview
 
 To apply tags to a test, use the [`tags(_:)`](./trait/tags%28_%29.md) function.
 

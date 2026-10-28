@@ -23,7 +23,7 @@ optional func didReceiveRemoteNotification(_ userInfo: [AnyHashable : Any]) asyn
 - (void) didReceiveRemoteNotification:(NSDictionary *) userInfo fetchCompletionHandler:(void (^)(WKBackgroundFetchResult result)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to process incoming background notifications. The system launches your app or wakes it from the suspended state when the notification arrives, and your app receives a brief amount of time to run in the background.
 

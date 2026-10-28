@@ -19,11 +19,11 @@ func PMPrinterWritePostScriptToURL(_ printer: PMPrinter, _ settings: PMPrintSett
 OSStatus PMPrinterWritePostScriptToURL(PMPrinter printer, PMPrintSettings settings, PMPageFormat format, CFStringRef mimeType, CFURLRef sourceFileURL, CFURLRef destinationFileURL);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. If the printing system cannot convert the input MIME type to PostScript, this function fails and returns an error.
 
-#### Discussion
+## Discussion
 
 This function is synchronous; the conversion of the input file to PostScript is performed before the function returns. This can take a significant amount of time for longer documents. You may want to perform this operation on a thread other than the main application thread or fork a separate process for this purpose.
 

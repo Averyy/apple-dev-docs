@@ -20,7 +20,7 @@ protocol ARTrackable : NSObjectProtocol
 @protocol ARTrackable <NSObject>
 ```
 
-#### Overview
+## Overview
 
 This protocol is adopted by ARKit classes, such as the [`ARFaceAnchor`](./arfaceanchor.md) class, that represent moving objects in a scene.
 

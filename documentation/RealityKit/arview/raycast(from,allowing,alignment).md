@@ -18,7 +18,7 @@ Performs a ray cast, where a ray is cast into the scene from the center of the c
 @preconcurrency func raycast(from point: CGPoint, allowing target: ARRaycastQuery.Target, alignment: ARRaycastQuery.TargetAlignment) -> [ARRaycastResult]
 ```
 
-#### Return Value
+## Return Value
 
 A list of ray-cast results, sorted from nearest to farthest from the camera. The list is empty if the ray cast fails.
 

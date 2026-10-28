@@ -5,7 +5,7 @@
 
 Constants that specify the functionality provided by the renderer.
 
-#### Overview
+## Overview
 
 An OpenGL Profile is requested as part of the pixel format attributes string. When a context is created for a profile, the context must at least implement the requested version of the OpenGL specification. The context may implement a different version of the OpenGL specification as long as the version it implements is compatible with the requested version.
 

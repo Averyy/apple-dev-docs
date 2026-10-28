@@ -25,7 +25,7 @@ typealias CGPDFOperatorCallback = (CGPDFScannerRef, UnsafeMutableRawPointer?) ->
 typedef void (*)(struct CGPDFScanner *, void *) CGPDFOperatorCallback;
 ```
 
-#### Discussion
+## Discussion
 
 Your callback function takes any action that’s appropriate for your application. For example, if you want to count the number of inline images in a PDF but ignore the image data, you would set a callback for the `EI` operator. In your callback you would increment a counter for each call.
 

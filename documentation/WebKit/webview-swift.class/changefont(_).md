@@ -19,7 +19,7 @@ func changeFont(_ sender: Any?)
 - (void) changeFont:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 If the receiver doesn’t use the Fonts panel, this method does nothing.
 

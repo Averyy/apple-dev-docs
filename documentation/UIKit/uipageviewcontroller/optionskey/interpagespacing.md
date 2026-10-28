@@ -23,7 +23,7 @@ static let interPageSpacing: UIPageViewController.OptionsKey
 extern UIPageViewControllerOptionsKey const UIPageViewControllerOptionInterPageSpacingKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value should be a [`CGFloat`](../../../CoreFoundation/cgfloat-swift.struct.md) wrapped in an instance of [`NSNumber`](../../../Foundation/nsnumber.md). The default value is zero. An inter-page spacing is only valid if the transition style is [`UIPageViewController.TransitionStyle.scroll`](../transitionstyle-swift.enum/scroll.md).
 

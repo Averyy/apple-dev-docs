@@ -24,7 +24,7 @@ var barcodeDescriptor: CIBarcodeDescriptor? { get }
 @property (nonatomic, strong, readonly, nullable) CIBarcodeDescriptor * barcodeDescriptor;
 ```
 
-#### Discussion
+## Discussion
 
 Use this object to have Core Image regenerate the observed barcode.
 

@@ -21,7 +21,7 @@ A type that can be initialized with the Boolean literals `true` and `false`.
 protocol ExpressibleByBooleanLiteral
 ```
 
-#### Overview
+## Overview
 
 `Bool`, `DarwinBoolean`, `ObjCBool`, and `WindowsBool` are treated as Boolean values. Expanding this set to include types that represent more than simple Boolean values is discouraged.
 

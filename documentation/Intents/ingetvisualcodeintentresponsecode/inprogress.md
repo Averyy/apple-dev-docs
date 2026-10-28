@@ -25,7 +25,7 @@ case inProgress
 INGetVisualCodeIntentResponseCodeInProgress
 ```
 
-#### Discussion
+## Discussion
 
 Use this code during the handling phase to indicate that you received the request for a code but don’t yet have the image to display for that code. You might use this code when getting the image requires communicating with your server and you haven’t yet received a confirmation from that server.
 

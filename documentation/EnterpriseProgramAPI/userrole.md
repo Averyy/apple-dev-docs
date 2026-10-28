@@ -18,7 +18,7 @@ string UserRole
 - `ACCOUNT_HOLDER`
 - `DEVELOPER`
 
-#### Discussion
+## Discussion
 
 For more information about roles and permissions, see [Program Roles](https://developer.apple.com/support/roles/).
 

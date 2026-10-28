@@ -17,7 +17,7 @@ Finishes the content enumeration to the observer.
 func didFinishEnumeratingContent(upTo generationMarker: Data)
 ```
 
-#### Discussion
+## Discussion
 
 Call this when there are no more items to enumerate. Any future item enumerations after this are change enumerations. The first change enumeration begins from `generationMarker`, which syncs changes made after the content enumeration began. Calling this method saves the current page of items to the system Contacts database.
 

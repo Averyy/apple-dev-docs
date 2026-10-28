@@ -23,7 +23,7 @@ class let automaticSize: CGSize
 extern const CGSize UICollectionViewFlowLayoutAutomaticSize;
 ```
 
-#### Discussion
+## Discussion
 
 Set this constant as the value for the [`estimatedItemSize`](./estimateditemsize.md) property to enable self-sizing cells for your collection view. This is a non-zero, placeholder value that tells the collection view to query each cell for its actual size using the cell’s [`preferredLayoutAttributesFitting(_:)`](../uicollectionreusableview/preferredlayoutattributesfitting%28_%29.md) method.
 

@@ -22,11 +22,11 @@ func item(for identifier: NSFileProviderItemIdentifier) throws -> NSFileProvider
 - (NSFileProviderItem) itemForIdentifier:(NSFileProviderItemIdentifier) identifier error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 A custom object that describes the specified document or directory, or `nil` in Objective-C if an error occurs.
 
-#### Discussion
+## Discussion
 
 Your File Provider extension must define a class that adopts the [`NSFileProviderItemProtocol`](../nsfileprovideritemprotocol.md) interface. Instances of this class provides access to information about an item (a document or directory) that your File Provider manages and stores.
 

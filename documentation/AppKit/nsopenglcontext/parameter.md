@@ -21,7 +21,7 @@ enum Parameter
 enum NSOpenGLContextParameter : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 These attribute names are used by [`setValues(_:for:)`](./setvalues%28_,for%29.md) and [`getValues(_:for:)`](./getvalues%28_,for%29.md).
 

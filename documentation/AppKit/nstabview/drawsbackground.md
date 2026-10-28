@@ -19,7 +19,7 @@ var drawsBackground: Bool { get set }
 @property BOOL drawsBackground;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), the tab view draws a background color when the its type is `NSNoTabsNoBorder`, otherwise it does not. If the tab view has a bezeled border or a line border, the appropriate background for that border is used. The default value of this property is [`true`](../../Swift/true.md).
 

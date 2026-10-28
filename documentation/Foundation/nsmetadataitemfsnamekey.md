@@ -23,7 +23,7 @@ let NSMetadataItemFSNameKey: String
 extern NSString * const NSMetadataItemFSNameKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value is an [`NSString`](./nsstring.md) object with the name of the item as seen in the file system.
 

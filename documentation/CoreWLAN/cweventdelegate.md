@@ -20,7 +20,7 @@ protocol CWEventDelegate
 @protocol CWEventDelegate
 ```
 
-#### Overview
+## Overview
 
 An object that adopts the `CWEventDelegate` protocol and that is assigned as the delegate of a [`CWWiFiClient`](./cwwificlient.md) object receives notifications of changes on a Wi-Fi interface. Use the [`startMonitoringEvent(with:)`](./cwwificlient/startmonitoringevent%28with%29.md) method to indicate to the client the event types for which you want to receive notifications. Use the [`stopMonitoringEvent(with:)`](./cwwificlient/stopmonitoringevent%28with%29.md) method to stop receiving a particular notification type, or the [`stopMonitoringAllEvents()`](./cwwificlient/stopmonitoringallevents%28%29.md) method to stop receiving all notifications.
 

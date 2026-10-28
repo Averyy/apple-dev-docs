@@ -19,7 +19,7 @@ let kSpeechPitchBaseProperty: CFString
 const CFStringRef kSpeechPitchBaseProperty;
 ```
 
-#### Discussion
+## Discussion
 
 The value associated with this property is a `CFNumber` object that specifies the speech channel’s baseline speech pitch. 
 

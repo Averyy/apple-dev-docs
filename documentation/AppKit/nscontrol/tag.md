@@ -19,7 +19,7 @@ var tag: Int { get set }
 @property NSInteger tag;
 ```
 
-#### Discussion
+## Discussion
 
 Tags allow you to identify particular controls. Tag values are not used internally; they are only changed when you set this property. You typically set tag values in Interface Builder and use them at runtime in your application. When you set the tag of a control with a single cell in Interface Builder, it sets the tags of both the control and the cell to the same value as a convenience.
 

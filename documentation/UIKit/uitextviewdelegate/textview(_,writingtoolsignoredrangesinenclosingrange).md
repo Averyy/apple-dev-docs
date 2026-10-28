@@ -26,11 +26,11 @@ optional func textView(_ textView: UITextView, writingToolsIgnoredRangesInEnclos
 
 - [Customizing Writing Tools behavior for UIKit views](../customizing-writing-tools-behavior-for-system-views.md)
 
-#### Return Value
+## Return Value
 
 One or more ranges of text you want the writing tools to ignore. Return an empty array to allow the modification of all the proposed text.
 
-#### Discussion
+## Discussion
 
 Use this method to prevent the writing tools session from modifying portions of the current text. For example, you might prevent the writing tools session from modifying code or read-only text. The text view provides you with the overall range of text to consider, and you return one or more subranges you want the writing tools to ignore.
 

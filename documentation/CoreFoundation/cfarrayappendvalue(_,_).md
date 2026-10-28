@@ -25,7 +25,7 @@ func CFArrayAppendValue(_ theArray: CFMutableArray!, _ value: UnsafeRawPointer!)
 extern void CFArrayAppendValue(CFMutableArrayRef theArray, const void *value);
 ```
 
-#### Discussion
+## Discussion
 
 The `value` parameter is retained by `theArray` using the retain callback provided when `theArray` was created. If `value` is not of the type expected by the retain callback, the behavior is undefined. The `value` parameter is assigned to the index one larger than the previous largest index and the count of `theArray` is increased by one.
 

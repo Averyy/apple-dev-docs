@@ -22,7 +22,7 @@ nonisolated
 func assistiveAccessNavigationIcon(systemImage: String) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 In an Assistive Access scene on iOS and iPadOS, the icon is displayed adjacent to the navigation title. Otherwise, the icon is unused.
 

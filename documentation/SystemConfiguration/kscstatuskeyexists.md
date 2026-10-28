@@ -22,7 +22,7 @@ var kSCStatusKeyExists: Int { get }
 kSCStatusKeyExists
 ```
 
-#### Discussion
+## Discussion
 
 The key is already defined.
 

@@ -25,7 +25,7 @@ func draw(at point: CGPoint)
 - (void) drawAtPoint:(CGPoint) point;
 ```
 
-#### Discussion
+## Discussion
 
 This method draws the entire string starting at the specified point. This method draws the line using the attributes specified in the attributed string itself. If newline characters are present in the string, those characters are honored and cause subsequent text to be placed on the next line underneath the starting point.
 

@@ -21,7 +21,7 @@ Enable no-options mode.
 func noOptions(_ noOptions: Bool) -> TCP
 ```
 
-#### Discussion
+## Discussion
 
 A boolean indicating that TCP should use no-options mode (`TCP_NOOPT`).
 

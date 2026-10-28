@@ -21,7 +21,7 @@ The currency used by the locale.
 var currency: Locale.Currency? { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property corresponds to the `cu` key of the Unicode BCP 47 extension.
 

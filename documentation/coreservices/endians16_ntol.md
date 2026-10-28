@@ -16,7 +16,7 @@ Converts a signed 16-bit value in the computer’s nativeformat to the equivalen
 #define EndianS16_NtoL(value)
 ```
 
-#### Return Value
+## Return Value
 
 The equivalent little-endianvalue.
 

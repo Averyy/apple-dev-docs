@@ -21,7 +21,7 @@ var compositeLabel: TCControlLabel? { get set }
 @property (nonatomic, strong, nullable) TCControlLabel * compositeLabel;
 ```
 
-#### Discussion
+## Discussion
 
 If set, the control will behave as a `GCControllerDirectionPad`; otherwise, it behaves as separate buttons.
 

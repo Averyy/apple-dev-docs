@@ -15,7 +15,7 @@ An error code that indicates a specific sample isn’t contiguous, spans more th
 static var locationNotAvailable: MEError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 If a sample isn’t contiguous, spans more than one file, or is for some other reason unsuitable to read directly from a file, use [`loadSampleBufferContainingSamples(to:completionHandler:)`](../mesamplecursor/loadsamplebuffercontainingsamples%28to,completionhandler%29.md) instead.
 

@@ -19,7 +19,7 @@ unowned(unsafe) var nextResponder: NSResponder? { get set }
 @property (unsafe_unretained, nullable) NSResponder * nextResponder;
 ```
 
-#### Discussion
+## Discussion
 
 The next responder must be an object that inherits, directly or indirectly, from `NSResponder`.
 

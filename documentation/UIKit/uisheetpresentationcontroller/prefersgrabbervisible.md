@@ -21,7 +21,7 @@ var prefersGrabberVisible: Bool { get set }
 @property (nonatomic) BOOL prefersGrabberVisible;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`false`](../../Swift/false.md), which means the sheet doesn’t show a grabber. A *grabber* is a visual affordance that indicates that a sheet is resizable. Showing a grabber may be useful when it isn’t apparent that a sheet can resize or when the sheet can’t dismiss interactively.
 

@@ -22,7 +22,7 @@ nonisolated
 func windowToolbarLabelStyle(fixed: ToolbarLabelStyle) -> some Scene
 ```
 
-#### Discussion
+## Discussion
 
 Use this modifier to set a static [`ToolbarLabelStyle`](../toolbarlabelstyle.md) the toolbar should use. The style will not be configurable by the user.
 

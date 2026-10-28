@@ -21,7 +21,7 @@ case small
 MSStickerSizeSmall
 ```
 
-#### Discussion
+## Discussion
 
 Use 100 x 100 point images to create small stickers. Always provide @3x images for these stickers (300 x 300 pixels). The system generates the @2x and @1x versions by downscaling the @3x images at runtime.
 

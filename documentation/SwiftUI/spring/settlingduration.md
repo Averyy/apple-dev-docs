@@ -21,7 +21,7 @@ The estimated duration required for the spring system to be considered at rest.
 var settlingDuration: TimeInterval { get }
 ```
 
-#### Discussion
+## Discussion
 
 This uses a `target` of 1.0, an `initialVelocity` of 0, and an `epsilon` of 0.001.
 

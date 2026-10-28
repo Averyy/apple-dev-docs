@@ -24,7 +24,7 @@ var overlap: Float { get set }
 @property (nonatomic, assign) float overlap;
 ```
 
-#### Discussion
+## Discussion
 
 Some stereoscopic rendering processes require shifting the location of each viewpoint’s rendered image in a framebuffer before display. Use this property to determine the distance to shift images by during rendering.
 

@@ -24,11 +24,11 @@ class func predicateForContainerOfContact(withIdentifier contactIdentifier: Stri
 + (NSPredicate *) predicateForContainerOfContactWithIdentifier:(NSString *) contactIdentifier;
 ```
 
-#### Return Value
+## Return Value
 
 A predicate that can be used to fetch a container from [`CNContactStore`](../cncontactstore.md).
 
-#### Discussion
+## Discussion
 
 If the identifier is for a unified contact then this method returns an empty array. To fetch the containers of a unified contact, first fetch the linked contacts and then fetch the container of each linked contact.
 

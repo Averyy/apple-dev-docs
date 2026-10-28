@@ -21,7 +21,7 @@ optional func getNextRequestedUpdateDate(handler: @escaping (Date?) -> Void)
 - (void) getNextRequestedUpdateDateWithHandler:(void (^)(NSDate *updateDate)) handler;
 ```
 
-#### Discussion
+## Discussion
 
 Your implementation of this method must execute the block in the `handler` parameter and specify an appropriate date. Specify a date as far into the future as you can manage for your complications. ClockKit wakes up your complication at some point after the specified date to request new data. The exact time at which your complication runs isn’t guaranteed.
 

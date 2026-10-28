@@ -25,11 +25,11 @@ func integer(forKey defaultName: String) -> Int
 - (NSInteger) integerForKey:(NSString *) defaultName;
 ```
 
-#### Return Value
+## Return Value
 
 The integer value associated with `defaultName`, or `0` if the key isn’t present in the defaults database.
 
-#### Discussion
+## Discussion
 
 This method automatically coerces certain types to their equivalent integer values. The Boolean value `true` becomes `1` and `false` becomes `0`. A floating-point number becomes the greatest integer that’s less than the stored number –– for example, `2.67` becomes `2`. A string that contains a numerical value contains the equivalent integer value — for example, “123” becomes `123`.
 

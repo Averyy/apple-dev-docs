@@ -21,11 +21,11 @@ The next input value after the given input.
 func input(after input: Range<Date>) -> Range<Date>?
 ```
 
-#### Return Value
+## Return Value
 
 If [`isPositive`](./ispositive.md) is true, the range `input.lowerBound..<x`, where `x` is the next larger date that this style can differentiate. If [`isPositive`](./ispositive.md) is false, the range `x..<input.upperBound`, where `x` is the next higher date this style can differentiate, or `nil` if there is no such `x`.
 
-#### Discussion
+## Discussion
 
 If [`isPositive`](./ispositive.md) is true, the next input value maintains the same `lowerBound` as `input`, but has a different`upperBound`. If [`isPositive`](./ispositive.md) is false, the next input value maintains the same `upperBound` as `input`, but as a different `lowerBound`.
 

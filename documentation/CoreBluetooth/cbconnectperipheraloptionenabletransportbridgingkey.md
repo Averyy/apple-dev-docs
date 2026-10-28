@@ -24,7 +24,7 @@ let CBConnectPeripheralOptionEnableTransportBridgingKey: String
 extern NSString * const CBConnectPeripheralOptionEnableTransportBridgingKey;
 ```
 
-#### Discussion
+## Discussion
 
 This option tells the system to connect non-GATT profiles on classic Bluetooth devices, if there is a low energy GATT connection to the same device.
 

@@ -5,14 +5,14 @@
 
 Figure out why App Transport Security denies a network connection.
 
-#### Overview
+## Overview
 
 If your app experiences connectivity problems that you think might be related to App Transport Security (ATS), be sure that:
 
 - You’re using high-level network frameworks and secure URLs, as described in [Prefer High-Level Frameworks in Your App](./preventing-insecure-network-connections.md#Prefer-High-Level-Frameworks-in-Your-App).
 - Your server is properly configured. Use the `nscurl` command line tool on your Mac to check how the server’s configuration affects ATS behavior.
 
-##### Check Combinations of ATS Exceptions
+### Check Combinations of ATS Exceptions
 
 The `nscurl` command accepts the `--ats-diagnostics` flag that asks it to check how a particular server responds to combinations of ATS exceptions. For example, you can test the canonical example web site:
 
@@ -54,7 +54,7 @@ Result : PASS
 ...
 ```
 
-##### Look for Basic Security Failures
+### Look for Basic Security Failures
 
 If globally allowing arbitrary loads fails, the problem isn’t related to ATS. For example, if the server’s certificate doesn’t match the DNS name of the server, the connection fails default server trust evaluation before ATS has a chance to impose its extended security checks:
 
@@ -77,7 +77,7 @@ Error : Error Domain=NSURLErrorDomain Code=-1202 "The certificate for this serve
 
 When you see this failure, check that your certificate meets the default server trust evaluation requirements described in [Ensure the Network Server Meets Minimum Requirements](./preventing-insecure-network-connections.md#Ensure-the-Network-Server-Meets-Minimum-Requirements). For example, make sure the certificate matches the DNS name of the server and that the certificate isn’t expired.
 
-##### Consider Specific ATS Exceptions
+### Consider Specific ATS Exceptions
 
 If the ATS default test fails but the arbitrary loads test passes, you might need to reconfigure your server. Use the remaining tests to help pinpoint the problem. For example, consider the test with the following exceptions dictionary:
 

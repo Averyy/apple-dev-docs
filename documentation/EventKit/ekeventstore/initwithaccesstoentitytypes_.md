@@ -17,7 +17,7 @@ Initializes access to the event store with support for the given entity type.
 - (id) initWithAccessToEntityTypes:(EKEntityMask) entityTypes;
 ```
 
-#### Return Value
+## Return Value
 
 The event store.
 

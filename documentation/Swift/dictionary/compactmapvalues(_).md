@@ -23,11 +23,11 @@ func compactMapValues<T>(_ transform: (Value) throws -> T?) rethrows -> Dictiona
 
 Available when `Key` conforms to `Hashable`.
 
-#### Return Value
+## Return Value
 
 A dictionary containing the keys and non-`nil` transformed values of this dictionary.
 
-#### Discussion
+## Discussion
 
 Use this method to receive a dictionary with non-optional values when your transformation produces optional values.
 

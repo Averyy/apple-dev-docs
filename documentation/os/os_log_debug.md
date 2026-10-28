@@ -21,7 +21,7 @@ Sends a debug-level message to the logging system.
 #define os_log_debug(log, format, ...)
 ```
 
-#### Discussion
+## Discussion
 
 Calling this function is equivalent to calling the `os_log_with_type` function and specifying a log type of [`OS_LOG_TYPE_DEBUG`](../kernel/os_log_type_t/os_log_type_debug.md).
 

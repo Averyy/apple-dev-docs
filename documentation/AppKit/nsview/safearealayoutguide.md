@@ -19,7 +19,7 @@ var safeAreaLayoutGuide: NSLayoutGuide { get }
 @property (strong, readonly) NSLayoutGuide * safeAreaLayoutGuide;
 ```
 
-#### Discussion
+## Discussion
 
 The layout guide in this property reflects the view’s frame minus its safe area insets. Use this guide to configure layout rules relative to this safe area.
 

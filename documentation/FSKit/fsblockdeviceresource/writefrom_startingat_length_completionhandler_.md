@@ -15,7 +15,7 @@ Writes data from from a buffer to the resource and executes a block afterwards.
 - (void) writeFrom:(void *) buffer startingAt:(off_t) offset length:(size_t) length completionHandler:(void (^)(size_t actuallyWritten, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 For the write to succeed, requests must conform to any transfer requirements of the underlying resource. Disk drives typically require sector (`physicalBlockSize`) addressed operations of one or more sector-aligned offsets.
 

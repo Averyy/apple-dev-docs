@@ -25,7 +25,7 @@ func managedObjectContextDidUnregisterObjects(with objectIDs: [NSManagedObjectID
 - (void) managedObjectContextDidUnregisterObjectsWithIDs:(NSArray<NSManagedObjectID *> *) objectIDs;
 ```
 
-#### Discussion
+## Discussion
 
 This method is the counterpart to [`managedObjectContextDidRegisterObjects(with:)`](./managedobjectcontextdidregisterobjects%28with%29.md).
 

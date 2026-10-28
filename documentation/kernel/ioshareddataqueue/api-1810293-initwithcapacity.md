@@ -12,11 +12,11 @@ virtual Boolean initWithCapacity(
  UInt32size);
 ```
 
-#### Return Value
+## Return Value
 
 Returns true on success and false on failure.
 
-#### Overview
+## Overview
 
 The actual size of the entire data queue memory region (to be shared into a user process) is equal to the capacity plus the IODataQueueMemory overhead. This overhead value can be determined from the DATA_QUEUE_MEMORY_HEADER_SIZE and DATA_QUEUE_MEMORY_APPENDIX_SIZE macro in <IOKit/IODataQueueShared.h>. The size of the data queue memory region must include space for the overhead of each IODataQueueEntry. This entry overhead can be determined from the DATA_QUEUE_ENTRY_HEADER_SIZE macro in <IOKit/IODataQueueShared.h>.
 

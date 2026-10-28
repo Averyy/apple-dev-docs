@@ -15,7 +15,7 @@ The root view of the SwiftUI view hierarchy managed by this menu.
 var rootView: Content { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Updating this property will immediately update the `items` array, even if the menu is currently visible to the user.
 

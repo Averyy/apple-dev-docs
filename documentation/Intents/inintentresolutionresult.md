@@ -29,7 +29,7 @@ class INIntentResolutionResult
 
 - [Resolving the Parameters of an Intent](../SiriKit/resolving-the-parameters-of-an-intent.md)
 
-#### Overview
+## Overview
 
 An [`INIntentResolutionResult`](./inintentresolutionresult.md) object describes how your app resolves a parameter of an intent object. This class is abstract and you don’t create instances of it directly. Instead, you use class methods to instantiate the appropriate subclass whose type matches the type of data that you’re trying to resolve. This class defines methods that are common to all resolution result objects.
 

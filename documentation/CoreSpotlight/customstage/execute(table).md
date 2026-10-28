@@ -17,15 +17,15 @@ Generates output data from the specified tabular data.
 ## Declaration
 
 ```swift
-nonisolated
-(nonsending) func execute(table: SearchResultsTable) async throws -> SearchPipelineData
+nonisolated(nonsending)
+func execute(table: SearchResultsTable) async throws -> SearchPipelineData
 ```
 
-#### Return Value
+## Return Value
 
 A pipeline data structure with data your stage produced. Make sure the output you return matches the output you specified in the [`outputType`](./outputtype.md) property.
 
-#### Discussion
+## Discussion
 
 If your stage supports tabular data as input, implement this method and use it to generate your stage’s supported output data. Write your code to run in parallel with other instances of your stage and instances of other stages. The best approach is to use only the contents of the `items` parameter and local intermediate values you create to deliver the output data.
 

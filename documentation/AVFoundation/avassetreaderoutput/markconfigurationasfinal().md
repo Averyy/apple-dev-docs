@@ -26,7 +26,7 @@ func markConfigurationAsFinal()
 - (void) markConfigurationAsFinal;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of the [`supportsRandomAccess`](./supportsrandomaccess.md) property is [`true`](../../Swift/true.md), the asset reader doesn’t advance to an [`AVAssetReader.Status.completed`](../avassetreader/status-swift.enum/completed.md) state until you call this method.
 

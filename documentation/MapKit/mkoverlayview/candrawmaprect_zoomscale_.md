@@ -19,11 +19,11 @@ Returns a Boolean value indicating whether the overlay view is ready to draw its
 - (BOOL) canDrawMapRect:(MKMapRect) mapRect zoomScale:(MKZoomScale) zoomScale;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if this view is ready to draw its contents or [`false`](../../Swift/false.md) if it is not.
 
-#### Discussion
+## Discussion
 
 Overlay views can override this method in situations where they may depend on the availability of other information to draw their contents. For example, an overlay view showing traffic information might want to delay drawing until it has all of the traffic data it needs. In such a case, it can return [`false`](../../Swift/false.md) from this method to indicate that it is not ready.
 

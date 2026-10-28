@@ -11,7 +11,7 @@ Present a visualization of the physical environment by placing points based a sc
 - iPadOS 14.0+
 - Xcode 16.0+
 
-#### Overview
+## Overview
 
 Depth Cloud is an app that uses [Metal](../Metal/Metal.md) to display a camera feed by placing a collection of points in the physical environment, according to depth information from the device’s LiDAR Scanner. For every distance sample in the session’s periodic depth reading [`depthMap`](./ardepthdata/depthmap.md), the app places a virtual dot at that location in the physical environment, with the final result resembling a *point cloud*. Depth Cloud colors the cloud according to ARKit’s camera image [`capturedImage`](./arframe/capturedimage.md).
 
@@ -27,7 +27,7 @@ The app cycles through depth *confidence* values (see [`confidenceMap`](./ardept
 
 For a practical application of ARKit’s depth data, see [Creating a fog effect using scene depth](./creating-a-fog-effect-using-scene-depth.md).
 
-#### Set up a camera feed
+## Set up a camera feed
 
 To display a camera feed, the sample project defines a SwiftUI [`Scene`](../SwiftUI/scene.md) whose [`body`](../SwiftUI/scene/body-swift.property.md) contains a single window. To abstract view code from window code, the sample project wraps all of its display in a single [`View`](../SwiftUI/view.md) called `MetalDepthView`.
 
@@ -45,7 +45,7 @@ Because Depth Cloud draws graphics using Metal, the sample project displays the 
 arData.colorImage = frame.capturedImage
 ```
 
-#### Ensure device support and start a session
+## Ensure device support and start a session
 
 Devices require the LiDAR Scanner to access the scene’s depth. In the depth-visualization view’s [`body`](../SwiftUI/scene/body-swift.property.md) definition, the app prevents running an unsupported configuration by checking if the device supports scene depth.
 
@@ -68,7 +68,7 @@ config.frameSemantics = [.sceneDepth, .smoothedSceneDepth]
 arSession.run(config)
 ```
 
-#### Access the scene’s depth
+## Access the scene’s depth
 
 In response to the configuration’s scene-depth frame semantics, the framework defines the frame’s [`depthMap`](./ardepthdata/depthmap.md) properties of [`sceneDepth`](./arconfiguration/framesemantics-swift.struct/scenedepth.md) and [`smoothedSceneDepth`](./arconfiguration/framesemantics-swift.struct/smoothedscenedepth.md). on the session’s [`currentFrame`](./arsession/currentframe.md).
 
@@ -98,7 +98,7 @@ colorCbCrContent.texture = lastArData?.colorImage?.texture(withFormat: .rg8Unorm
                                                            addToCache: textureCache!)!
 ```
 
-#### Convert camera data
+## Convert camera data
 
 In the `pointCloudVertexShader` function (see the sample project’s `shaders.metal` file), the sample project creates a point for every value in the depth texture and determines the point’s color by sampling that depth-texture value’s position in the camera image. Each vertex calculates its `x` and `y` location in the camera image by converting its position in the one-dimensional vertex array, to a 2D position in the depth texture.
 
@@ -125,7 +125,7 @@ half4 rgbaResult = half4(y + 1.402h * uv.y, y - 0.7141h * uv.y - 0.3441h * uv.x,
 
 > **Note**: For brevity, the sample project demonstrates YUV to RGB conversion inline. To see an example that extracts static conversion factors to a 4 x 4 matrix, see [Displaying an AR Experience with Metal](./displaying-an-ar-experience-with-metal.md).
 
-#### Set up the point cloud view
+## Set up the point cloud view
 
 To display a camera feed by using a point cloud, the project defines a [`UIViewRepresentable`](../SwiftUI/uiviewrepresentable.md) object, `MetalPointCloud`, which contains an [`MTKView`](../MetalKit/mtkview.md) that displays Metal content.
 
@@ -182,7 +182,7 @@ override func draw(in view: MTKView) {
     guard arData.lastArData != nil else {
 ```
 
-#### Display the point cloud with gpu code
+## Display the point cloud with gpu code
 
 The sample project draws the point cloud on the GPU. The point cloud view packages up several textures that its corresponding GPU code requires as input.
 
@@ -262,7 +262,7 @@ else
     return in.color;
 ```
 
-#### Change the cloud’s orientation to convey depth
+## Change the cloud’s orientation to convey depth
 
 As the user views the point cloud straight on, it appears visually equivalent to the 2D camera image. But, when the sample app rotates the point cloud slightly, the 3D shape of the point cloud becomes apparent to the user.
 
@@ -295,7 +295,7 @@ return pmv
 //#-end-code-li
 ```
 
-#### Enlarge the depth buffer
+## Enlarge the depth buffer
 
 ARKit’s depth map contains precise, low-resolution depth values for objects in the camera feed. To create the illusion of a high-resolution depth map, the sample app offers UI to enlarge the depth map using Metal Performance Shaders (MPS). By filling in gaps in the framework’s depth information, the enlarged depth buffer creates the illusion of more depth information in the scene.
 
@@ -332,7 +332,7 @@ After encoding the bilinear scale and guided filters, the AR provider sets the e
 depthContent.texture = destDepthTexture
 ```
 
-#### Display depth and confidence
+## Display depth and confidence
 
 In addition to the point cloud visualization, the sample app adds simultaneous depth distance and confidence visualizations. The user refers to either visualization at any time during the experience to better grasp the accuracy of the LiDAR Scanner’s reading of the physical environment.
 

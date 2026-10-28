@@ -25,7 +25,7 @@ func la_norm_as_float(_ vector: la_object_t, _ vector_norm: la_norm_t) -> Float
 extern float la_norm_as_float(la_object_t vector, la_norm_t vector_norm);
 ```
 
-#### Discussion
+## Discussion
 
 Compute a norm of a vector or matrix.
 

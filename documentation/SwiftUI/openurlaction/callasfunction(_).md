@@ -22,7 +22,7 @@ Opens a URL, following system conventions.
 @preconcurrency func callAsFunction(_ url: URL)
 ```
 
-#### Discussion
+## Discussion
 
 Don’t call this method directly. SwiftUI calls it when you call the [`OpenURLAction`](../openurlaction.md) structure that you get from the [`Environment`](../environment.md), using a URL as an argument:
 

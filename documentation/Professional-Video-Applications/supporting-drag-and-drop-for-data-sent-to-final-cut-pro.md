@@ -5,7 +5,7 @@
 
 Add drag and drop support so your users can drag media assets and timeline sequences from your app directly into Final Cut Pro.
 
-#### Overview
+## Overview
 
 Enable drag and drop in your app so your users can drag media assets (or media assets as clips) directly to the Final Cut Pro sidebar, browser, or timeline. For example, if your users frequently send small batches of individual clips to different areas in Final Cut Pro, and often go back and forth between your app and Final Cut Pro, supporting drag and drop can make that process more intuitive.
 
@@ -17,13 +17,13 @@ When your users start dragging items from your app, it creates a *promise* — a
 
 > 💡 **Tip**: For information about creating an FCPXML document, see [Creating FCPXML Documents](./creating-fcpxml-documents.md); for examples of FCPXML that describe Final Cut Pro objects, see [Describing Final Cut Pro Items in FCPXML](./describing-final-cut-pro-items-in-fcpxml.md).
 
-##### Pasteboard Types and Versions
+### Pasteboard Types and Versions
 
 Final Cut Pro supports a generic XML pasteboard type identified by the string `com.apple.finalcutpro.xml`. Starting in Final Cut Pro 10.5, DTD version 1.8 and later supports version-specific pasteboard types — such as, `com.apple.finalcutpro.xml.v1-8,` `com.apple.finalcutpro.xml.v1-9, or com.apple.finalcutpro.xml.v1-10`. Final Cut Pro looks for the version-specific pasteboard type with the highest version number and requests the XML associated with it. If there is no version-specific pasteboard type, Final Cut Pro finds the generic XML pasteboard type and requests the XML. When sending XML to your app, Final Cut Pro always writes XML for the current DTD version to the generic pasteboard type and the appropriate XML to each versioned pasteboard type.
 
 For maximum compatibility, make sure your app supports the generic XML pasteboard type, that is, XML for the current DTD version as of your app’s release. It is also recommended that your app supports the versioned pasteboard types for the current and previous DTD versions as of your app’s release. Supporting these versions ensure that you take advantage of XML features for the highest DTD version supported by the user’s Final Cut Pro version.
 
-##### Create a Promise in the Pasteboard
+### Create a Promise in the Pasteboard
 
 The specific steps to enable drag and drop in your app depend on your app’s design and purpose and include tasks such as adding support to the views in your app and implementing delegate methods. For details and more explanation about the steps for enabling drag and drop, see [Drag and Drop](../AppKit/drag-and-drop.md) in the AppKit framework.
 
@@ -57,7 +57,7 @@ if (ok) {
 }
 ```
 
-##### Respond to Final Cut Pro and Return FCPXML
+### Respond to Final Cut Pro and Return FCPXML
 
 Once your user drops the dragged items into Final Cut Pro, Final Cut Pro takes over. It retrieves the data from the promise you created in the pasteboard, which invokes the `NSPasteboardItemDataProvider` protocol method in your app. (The method is expected to return FCPXML.)
 

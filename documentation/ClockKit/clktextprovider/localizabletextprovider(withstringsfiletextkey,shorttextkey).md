@@ -19,11 +19,11 @@ class func localizableTextProvider(withStringsFileTextKey textKey: String, short
 + (instancetype) localizableTextProviderWithStringsFileTextKey:(NSString *) textKey shortTextKey:(NSString *) shortTextKey;
 ```
 
-#### Return Value
+## Return Value
 
 A text provider object built from the specified arguments.
 
-#### Discussion
+## Discussion
 
 Use this method to create a text provider that returns localized strings with a shorter fallback string.
 

@@ -24,7 +24,7 @@ case superElliptical
 MDLLightTypeSuperElliptical
 ```
 
-#### Discussion
+## Discussion
 
 A superellipse is a two-dimensional curve that varies in shape between a four-point star, diamond, circle, or rounded rectangle depending on additional parameters. This light type is exclusive to the [`MDLAreaLight`](../mdlarealight.md) class.
 

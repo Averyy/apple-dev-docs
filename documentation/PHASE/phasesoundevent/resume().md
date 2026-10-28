@@ -24,7 +24,7 @@ func resume()
 - (void) resume;
 ```
 
-#### Discussion
+## Discussion
 
 If the sound event plays audio, this function resumes audio playback.
 

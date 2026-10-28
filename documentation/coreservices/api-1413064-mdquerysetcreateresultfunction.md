@@ -19,7 +19,7 @@ func MDQuerySetCreateResultFunction(_ query: MDQuery!, _ func: MDQueryCreateResu
 void MDQuerySetCreateResultFunction(MDQueryRef query, MDQueryCreateResultFunction func, void *context, const CFArrayCallBacks *cb);
 ```
 
-#### Discussion
+## Discussion
 
 If no create function is specified for an MDQuery, the default result objects are MDItemRefs. Results created after the function `MDQuerySetCreateResultFunction` is called are created through the specified create function, but values created before the function was set, or after it is unset, are not modified. It is not advisable to change this function after the function `MDQueryExecute` has been called. The create-result function is called lazily as results are requested from a query, it is not called on all results, and may not be called at all. This avoids the cost of creating potentially hundreds of thousands of what might be temporary objects.
 

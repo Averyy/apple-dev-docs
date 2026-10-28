@@ -19,7 +19,7 @@ func setBackgroundImage(_ image: UIImage?)
 - (void) setBackgroundImage:(UIImage *) image;
 ```
 
-#### Discussion
+## Discussion
 
 If `image` is a template image, the button tints that image using the current background color. The button does not use the background color for full-color images.
 

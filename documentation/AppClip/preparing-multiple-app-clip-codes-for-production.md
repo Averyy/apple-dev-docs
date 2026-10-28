@@ -5,7 +5,7 @@
 
 Prepare your App Clip Codes to send to a professional printing service.
 
-#### Overview
+## Overview
 
 After you create your App Clip Codes, you can print them yourself, or work with a professional printing service — for example, [RR Donnelley](https://touchless.acc.rrd.com). However, if you have a lot of App Clip Codes, printing them yourself doesn’t scale well, and you’ll have more success working with a professional printing service.
 
@@ -13,7 +13,7 @@ Because you can’t see which invocation URL your App Clip Code contains just by
 
 For additional information, see [Human Interface Guidelines > App Clips > Printing Guidelines](https://developer.apple.com/design/human-interface-guidelines/app-clips/overview/printing-guidelines/).
 
-##### Map SVG filenames to invocation URLs
+### Map SVG filenames to invocation URLs
 
 In general, it’s up to you to decide how to keep track of changes and which SVG files map to which invocation URLs. In most cases, a *mapping file* that uses the comma-separated values (CSV) file format is the preferred option.
 

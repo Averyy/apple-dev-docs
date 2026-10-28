@@ -19,7 +19,7 @@ func play(_ type: WKHapticType)
 - (void) playHaptic:(WKHapticType) type;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to engage the haptic engine in Apple Watch. The type of feedback you specify defines the specific feedback that is delivered.
 

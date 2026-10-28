@@ -21,7 +21,7 @@ A Boolean value that indicates whether to ignore empty lines.
 var ignoresEmptyLines: Bool
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to `true`.
 

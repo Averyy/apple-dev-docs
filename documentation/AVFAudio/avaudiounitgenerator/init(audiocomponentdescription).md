@@ -24,11 +24,11 @@ init(audioComponentDescription: AudioComponentDescription)
 - (instancetype) initWithAudioComponentDescription:(AudioComponentDescription) audioComponentDescription;
 ```
 
-#### Return Value
+## Return Value
 
 A new `AVAudioUnitGenerator` instance.
 
-#### Discussion
+## Discussion
 
 The [`AudioComponentDescription`](../../AudioToolbox/audiocomponentdescription.md) structure `componentType` field must be `kAudioUnitType_Generator` or [`kAudioUnitType_RemoteGenerator`](../../AudioToolbox/kaudiounittype_remotegenerator.md).
 

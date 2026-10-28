@@ -5,7 +5,7 @@
 
 Register your app to receive journaling suggestions when a person taps a system notification.
 
-#### Overview
+## Overview
 
 When the Journaling Suggestions and notifications settings are on, the system reminds people to journal and reflect on recent moments through periodic notifications. When someone taps a notification, the system launches the journal app indicated in the Open Notifications With setting.
 
@@ -19,7 +19,7 @@ If a tapped notification refers to a specific moment, the app displays the Journ
 
 > **Note**: To display the Journaling Suggestions picker, the system requires your app to have the [`com.apple.developer.journal.allow`](../BundleResources/entitlements/com.apple.developer.journal.allow.md) entitlement. Add it to your app’s target by enabling the Journaling Suggestions capability in Xcode. For more information, see [Adding capabilities to your app](../Xcode/adding-capabilities-to-your-app.md).
 
-#### Add the notification URL target property
+## Add the notification URL target property
 
 When you add the [`JSNotificationURLFormat`](../BundleResources/information-property-list/jsnotificationurlformat.md) target property to your app, the system adds your app as an available option in the Open Notifications With setting. The value you choose needs to be a *universal link*, which also defines how the system provides notification information to your app. The format of the link is a base URL for your app, followed by the parameter string: `{journaling-suggestion-id}`, which represents the unique journaling suggestion. For example:
 
@@ -61,7 +61,7 @@ http://myapp.com/journaling-suggestion-notification/?suggestion-identifier=A5A19
 
 For more information on universal links, see [Allowing apps and websites to link to your content](../Xcode/allowing-apps-and-websites-to-link-to-your-content.md).
 
-#### Handle notification taps
+## Handle notification taps
 
 The system invokes your app using the link when a person taps a journaling suggestion notification and your app is the selected app to open from notifications. In SwiftUI, your app’s view launches with the [`onOpenURL(perform:)`](../SwiftUI/view/onopenurl%28perform%29.md) view modifier. Access the URL in the `url` argument:
 
@@ -115,7 +115,7 @@ struct ExampleView: View {
 
 > **Note**: If your app implements an app delegate, see  [Supporting universal links in your app](../Xcode/supporting-universal-links-in-your-app.md) to update your app delegate to receive the universal link.
 
-#### Display the notification schedule
+## Display the notification schedule
 
 When your app uses the [`JournalingSuggestionsConfiguration`](./journalingsuggestionsconfiguration.md) class, your app can determine if notifications are on and whether the person sets a specific notification schedule, or allows the system to determine the schedule. The person configures notifications in Settings, and your app can remind them of the feature, for example, by displaying the setting’s current value in a view:
 
@@ -147,7 +147,7 @@ A [`JournalingSuggestionsConfiguration.NotificationSchedule.off`](./journalingsu
 - Journaling Suggestions are on but notifications are off in Settings.
 - Your app has incomplete notification setup, for example, it’s missing the [`JSNotificationURLFormat`](../BundleResources/information-property-list/jsnotificationurlformat.md) target property.
 
-#### Configure Settings to open your app from notifications
+## Configure Settings to open your app from notifications
 
 To test how your app responds to tapped Journaling Suggestions notifications, follow the same process a person uses to select your app in Settings:
 

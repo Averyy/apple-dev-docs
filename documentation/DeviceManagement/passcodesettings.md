@@ -20,7 +20,7 @@ The declaration to configure passcode policy settings.
 object PasscodeSettings
 ```
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.configuration.passcode.settings` as the declaration type.
 
@@ -33,7 +33,7 @@ For user enrollments, the system allows this configuration type, but ignores mos
 - `MinimumLength`: always set to `6`
 - `MaximumInactivityInMinutes`: if this key is present its value is ignored, but the `never` option is removed in the Settings UI.
 
-##### Configuration availability
+### Configuration availability
 
 |  |  |
 | --- | --- |
@@ -45,7 +45,7 @@ For user enrollments, the system allows this configuration type, but ignores mos
 | Allowed in user scope | macOS |
 | Apply | Multiple configurations are combined and applied as a single effective configuration |
 
-##### Configuration examples
+### Configuration examples
 
 **Complex**:
 

@@ -24,7 +24,7 @@ var outputTexture: (any MTLTexture)? { get set }
 @property (nonatomic, retain, nullable) id<MTLTexture> outputTexture;
 ```
 
-#### Discussion
+## Discussion
 
 You are responsible for providing a texture with a private `storageMode` to this property.
 

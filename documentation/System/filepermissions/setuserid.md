@@ -21,7 +21,7 @@ Indicates that the file is executed as the owner.
 static var setUserID: FilePermissions { get }
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see the `setuid(2)` man page.
 

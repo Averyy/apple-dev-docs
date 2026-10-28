@@ -18,7 +18,7 @@ The base class for the principal object of an app extension that configures a sh
 class ShieldConfigurationDataSource
 ```
 
-#### Overview
+## Overview
 
 You can create an extension to customize the appearance of the shields that the system uses to cover an application or website. The system provides your extension with the display names, bundle identifiers, and domains for each application, website, or category it shields. Your extension is expected to return an appropriate configuration as quickly as possible, in order to provide the best possible user experience. To protect the Family Sharing group’s privacy, your extension runs in a sandbox. This sandbox prevents your extension from making network requests or moving sensitive content outside the extension’s address space. The system provides a default appearance for any methods that your subclass doesn’t override, or if it takes too long to return a configuration.
 

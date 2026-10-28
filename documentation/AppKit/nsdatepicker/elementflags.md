@@ -19,7 +19,7 @@ struct ElementFlags
 enum NSDatePickerElementFlags : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 You can combine these constants using the C bitwise `OR` operator.
 

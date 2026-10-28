@@ -25,7 +25,7 @@ func DNSServiceQueryRecord(_ sdRef: UnsafeMutablePointer<DNSServiceRef?>!, _ fla
 DNSServiceErrorType DNSServiceQueryRecord(DNSServiceRef*sdRef, DNSServiceFlags flags, uint32_t interfaceIndex, const char *fullname, uint16_t rrtype, uint16_t rrclass, DNSServiceQueryRecordReply callBack, void *context);
 ```
 
-#### Return Value
+## Return Value
 
 Returns [`kDNSServiceErr_NoError`](./kdnsserviceerr_noerror.md) on success (any subsequent, asynchronous errors are delivered to the callback), otherwise returns an error code indicating the error that occurred (the callback is never invoked and the DNSServiceRef is not initialized).
 

@@ -24,7 +24,7 @@ var dilationRates: [NSNumber] { get set }
 @property (nonatomic, copy, readwrite) MPSShape * dilationRates;
 ```
 
-#### Discussion
+## Discussion
 
 Must be four numbers, one for each spatial dimension, fastest running index last. Default value: `@[ @1, @1, @1, @1 ]`
 

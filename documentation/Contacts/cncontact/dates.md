@@ -32,7 +32,7 @@ var dates: [CNLabeledValue<NSDateComponents>] { get }
 @property (atomic, copy, readonly) NSArray<CNLabeledValue<NSDateComponents *> *> * dates;
 ```
 
-#### Discussion
+## Discussion
 
 This property is an array of [`CNLabeledValue`](../cnlabeledvalue.md) objects, each of which has an [`NSString`](../../Foundation/nsstring.md) label and [`NSDateComponents`](../../Foundation/nsdatecomponents.md) value. You can use this property to store Gregorian dates such as anniversaries. Day and month components are required and year is optional. The calendar component can be `nil` or [`gregorian`](../../Foundation/nscalendar/identifier/gregorian.md). All other date components are invalid and including them results in an [`NSError`](../../Foundation/nserror.md) object that includes the key paths of the invalid components and the error code [`CNError.Code.validationConfigurationError`](../cnerror/code/validationconfigurationerror.md).
 

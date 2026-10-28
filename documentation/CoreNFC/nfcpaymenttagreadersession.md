@@ -21,7 +21,7 @@ class NFCPaymentTagReaderSession
 @interface NFCPaymentTagReaderSession : NFCTagReaderSession
 ```
 
-#### Overview
+## Overview
 
 This subclass of [`NFCTagReaderSession`](./nfctagreadersession.md) adds support for payment tags, when someone uses your app in certain regions. To support payment tags in your app, intialize this class with a [`NFCTagReaderSessionDelegate`](./nfctagreadersessiondelegate-2joku.md). The delegate receives an object that conforms to the [`NFCISO7816Tag`](./nfciso7816tag.md) protocol when the [`NFCTagReaderSession`](./nfctagreadersession.md) detects an ISO 7816-compatible tag. For the delegate to receive the tag object, your app must include:
 

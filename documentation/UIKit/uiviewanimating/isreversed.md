@@ -24,7 +24,7 @@ var isReversed: Bool { get set }
 @property (nonatomic, getter=isReversed) BOOL reversed;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), animations run in the reverse direction—that is, view properties animate back to their original values. When the value is [`false`](../../Swift/false.md), view properties animate to their intended final values.
 

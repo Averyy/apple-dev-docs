@@ -24,7 +24,7 @@ class UIDynamicItemGroup
 @interface UIDynamicItemGroup : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use groups to manipulate a group of dynamic items together and treat them as a single unit for the purpose of collisions. The group can contain dynamic items but cannot contain other [`UIDynamicItemGroup`](./uidynamicitemgroup.md) objects. You can add a group to any [`UIDynamicBehavior`](./uidynamicbehavior.md) object.
 

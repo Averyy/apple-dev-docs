@@ -21,7 +21,7 @@ Custom format style portraying the minimum number of digits that represents the 
 static var defaultDigits: Date.FormatStyle.Symbol.DayOfYear { get }
 ```
 
-#### Discussion
+## Discussion
 
 For example, `1`, `18`, `317`.
 

@@ -4,7 +4,7 @@
 
 `IMKServerInput` is an informal protocol that defines methods for receiving text events. This is intentionally not a formal protocol because there are three ways to receive events. An input method chooses one of the following approaches and implements the appropriate methods:
 
-#### Overview
+## Overview
 
 - Key binding. In this approach the system tries to map each key-down event to an action method that the input method has implemented.  If successful (action method found), the system calls `didCommandBySelector:client:`.  If unsuccessful (action method not found), the system calls `inputText:client:`.  For this approach you need to implement [`inputText(_:client:)`](../ObjectiveC/nsobject-swift.class/inputtext%28_,client%29.md) and [`didCommand(by:client:)`](../ObjectiveC/nsobject-swift.class/didcommand%28by,client%29.md).
 - Text data only. In this approach, you opt to receive all key events without the key binding, and then unpack  the relevant text data.   Key events are broken down into the Unicodes, the key code that generated them, and modifier flags.  This data is then sent to the [`inputText(_:key:modifiers:client:)`](../ObjectiveC/nsobject-swift.class/inputtext%28_,key,modifiers,client%29.md) method, which you need to implement.

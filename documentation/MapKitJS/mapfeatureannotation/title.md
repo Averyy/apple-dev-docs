@@ -15,7 +15,7 @@ The title of the feature.
 get title(): string | null;
 ```
 
-#### Discussion
+## Discussion
 
 You can’t set the title property of the map feature annotation.
 

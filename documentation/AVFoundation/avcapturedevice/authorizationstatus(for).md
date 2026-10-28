@@ -28,11 +28,11 @@ class func authorizationStatus(for mediaType: AVMediaType) -> AVAuthorizationSta
 
 - [Requesting authorization to capture and save media](../requesting-authorization-to-capture-and-save-media.md)
 
-#### Return Value
+## Return Value
 
 An authorization status value.
 
-#### Discussion
+## Discussion
 
 A user must explicitly grant your app access to record audio or video. Call this method to determine your app’s current authorization status. If it returns a value of [`AVAuthorizationStatus.notDetermined`](../avauthorizationstatus/notdetermined.md), call [`requestAccess(for:completionHandler:)`](./requestaccess%28for,completionhandler%29.md) to prompt the user for capture permission.
 

@@ -5,7 +5,7 @@
 
 Manage Game Center challenges for your apps.
 
-#### Overview
+## Overview
 
 Use the challenges API to create and configure ways to link players directly to your content in your game. Once you create a challenge you can link it to an activity. To learn more about activies, see [Configuring Game center activities](./configuring-game-center-activities.md).
 

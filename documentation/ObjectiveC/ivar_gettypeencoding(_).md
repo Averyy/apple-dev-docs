@@ -25,11 +25,11 @@ func ivar_getTypeEncoding(_ v: Ivar) -> UnsafePointer<CChar>?
 extern const char *ivar_getTypeEncoding(Ivar v);
 ```
 
-#### Return Value
+## Return Value
 
 A C string containing the instance variable’s type encoding.
 
-#### Discussion
+## Discussion
 
 For possible values, see [Objective-C Runtime Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ObjCRuntimeGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40008048) > [Type Encodings](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ObjCRuntimeGuide/Articles/ocrtTypeEncodings.html#//apple_ref/doc/uid/TP40008048-CH100).
 

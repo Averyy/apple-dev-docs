@@ -25,7 +25,7 @@ var scriptCode: String? { get }
 @property (copy, readonly, nullable) NSString * scriptCode;
 ```
 
-#### Discussion
+## Discussion
 
 Examples of script codes include `"Latn"` and `"Hant"`.
 

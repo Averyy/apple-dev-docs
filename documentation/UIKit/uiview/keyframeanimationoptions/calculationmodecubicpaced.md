@@ -23,7 +23,7 @@ static var calculationModeCubicPaced: UIView.KeyframeAnimationOptions { get }
 UIViewKeyframeAnimationOptionCalculationModeCubicPaced
 ```
 
-#### Discussion
+## Discussion
 
 Instead, timing parameters are calculated implicitly to give the animation a constant velocity.
 

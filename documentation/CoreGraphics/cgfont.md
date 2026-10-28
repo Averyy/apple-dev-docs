@@ -25,7 +25,7 @@ class CGFont
 typedef struct CGFont * CGFontRef;
 ```
 
-#### Overview
+## Overview
 
 A glyph can represent a single character (such as ‘b’), more than one character (such as the “ﬁ” ligature), or a special character such as a space. Core Graphics retrieves the glyphs for the font from ATS (Apple Type Services) and paints the glyphs based on the relevant parameters of the current graphics state.
 

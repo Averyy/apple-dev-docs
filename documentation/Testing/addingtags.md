@@ -5,13 +5,13 @@
 
 Use tags to provide semantic information for organization, filtering, and customizing appearances.
 
-#### Overview
+## Overview
 
 A complex package or project may contain hundreds or thousands of tests and suites. Some subset of those tests may share some common facet, such as being *critical* or *flaky*. The testing library includes a type of trait called *tags* that you can add to group and categorize tests.
 
 Tags are different from test suites: test suites impose structure on test functions at the source level, while tags provide semantic information for a test that can be shared with any number of other tests across test suites, source files, and even test targets.
 
-#### Add a tag
+## Add a tag
 
 To add a tag to a test, use the [`tags(_:)`](./trait/tags%28_%29.md) trait. This trait takes a sequence of tags as its argument, and those tags are then applied to the corresponding test at runtime. If any tags are applied to a test suite, then all tests in that suite inherit those tags.
 
@@ -48,7 +48,7 @@ extension Tag.com_example_foodtruck {
 func secretSauce() { ... }
 ```
 
-##### Where tags can be declared
+### Where tags can be declared
 
 Tags must always be declared as members of [`Tag`](./tag.md) in an extension to that type or in a type nested within [`Tag`](./tag.md). Redeclaring a tag under a second name has no effect and the additional name will not be recognized by the testing library. The following example is unsupported:
 

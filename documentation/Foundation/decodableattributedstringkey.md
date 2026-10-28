@@ -21,7 +21,7 @@ A protocol that defines how an attribute key decodes its value.
 protocol DecodableAttributedStringKey : AttributedStringKey
 ```
 
-#### Overview
+## Overview
 
 Implement this protocol to make an attribute decodable. Decoding an [`AttributedString`](./attributedstring.md) or [`AttributeContainer`](./attributecontainer.md) drops any attributes whose types don’t conform to this protocol.
 

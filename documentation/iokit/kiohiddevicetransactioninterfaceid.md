@@ -14,7 +14,7 @@
 #define kIOHIDDeviceTransactionInterfaceID
 ```
 
-#### Discussion
+## Discussion
 
 This UUID constant is used to obtain a transaction interface corresponding to an IOHIDDevice service in the kernel. The type of this queue interface is IOHIDDeviceTransactionInterface. This device interface is obtained after the device interface for the service itself has been obtained.
 

@@ -28,7 +28,7 @@ Available when `Value` conforms to `Equatable`.
 
 - [Adding interactivity with gestures](../adding-interactivity-with-gestures.md)
 
-#### Return Value
+## Return Value
 
 A gesture that triggers `action` when this gesture’s value changes.
 

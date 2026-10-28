@@ -21,7 +21,7 @@ The uppercase mapping of the scalar.
 var uppercaseMapping: String { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property is a `String`, not a `Unicode.Scalar` or `Character`, because some mappings may transform a scalar into multiple scalars or graphemes. For example, the German letter “ß” (U+00DF LATIN SMALL LETTER SHARP S) becomes “SS” (U+0053 LATIN CAPITAL LETTER S, U+0053 LATIN CAPITAL LETTER S) when converted to uppercase.
 

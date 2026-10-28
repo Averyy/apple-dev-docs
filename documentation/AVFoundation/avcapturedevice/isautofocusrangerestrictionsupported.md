@@ -22,7 +22,7 @@ var isAutoFocusRangeRestrictionSupported: Bool { get }
 @property (nonatomic, readonly, getter=isAutoFocusRangeRestrictionSupported) BOOL autoFocusRangeRestrictionSupported;
 ```
 
-#### Discussion
+## Discussion
 
 Focus range restriction is available only on compatible devices. If this property’s value is [`false`](../../Swift/false.md), setting the value of [`autoFocusRangeRestriction`](./autofocusrangerestriction-swift.property.md) raises an exception.
 

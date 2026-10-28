@@ -5,13 +5,13 @@
 
 Make your data types encodable and decodable for compatibility with external representations such as JSON.
 
-#### Overview
+## Overview
 
 Many programming tasks involve sending data over a network connection, saving data to disk, or submitting data to APIs and services. These tasks often require data to be encoded and decoded to and from an intermediate format while the data is being transferred.
 
 The Swift standard library defines a standardized approach to data encoding and decoding. You adopt this approach by implementing the [`Encodable`](../Swift/encodable.md) and [`Decodable`](../Swift/decodable.md) protocols on your custom types. Adopting these protocols lets implementations of the [`Encoder`](../Swift/encoder.md) and [`Decoder`](../Swift/decoder.md) protocols take your data and encode or decode it to and from an external representation such as JSON or property list. To support both encoding and decoding, declare conformance to [`Codable`](../Swift/codable.md), which combines the [`Encodable`](../Swift/encodable.md) and [`Decodable`](../Swift/decodable.md) protocols. This process is known as making your types *codable*.
 
-##### Encode and Decode Automatically
+### Encode and Decode Automatically
 
 The simplest way to make a type codable is to declare its properties using types that are already [`Codable`](../Swift/codable.md). These types include standard library types like [`String`](../Swift/string.md), [`Int`](../Swift/int.md), and [`Double`](../Swift/double.md); and Foundation types like [`Date`](./date.md), [`Data`](./data.md), and [`URL`](./url.md). Any type whose properties are codable automatically conforms to [`Codable`](../Swift/codable.md) just by declaring that conformance.
 
@@ -75,7 +75,7 @@ struct Landmark: Codable {
 }
 ```
 
-##### Encode or Decode Exclusively
+### Encode or Decode Exclusively
 
 In some cases, you may not need [`Codable`](../Swift/codable.md)’s support for bidirectional encoding and decoding.  For example, some apps only need to make calls to a remote network API and do not need to decode a response containing the same type. Declare conformance to [`Encodable`](../Swift/encodable.md) if you only need to support the encoding of data. Conversely, declare conformance to [`Decodable`](../Swift/decodable.md) if you only need to read data of a given type.
 
@@ -95,7 +95,7 @@ struct Landmark: Decodable {
 }
 ```
 
-##### Choose Properties to Encode and Decode Using Coding Keys
+### Choose Properties to Encode and Decode Using Coding Keys
 
 Codable types can declare a special nested enumeration named `CodingKeys` that conforms to the [`CodingKey`](../Swift/codingkey.md) protocol. When this enumeration is present, its cases serve as the authoritative list of properties that must be included when instances of a codable type are encoded or decoded. The names of the enumeration cases should match the names you’ve given to the corresponding properties in your type.
 
@@ -122,7 +122,7 @@ struct Landmark: Codable {
 }
 ```
 
-##### Encode and Decode Manually
+### Encode and Decode Manually
 
 If the structure of your Swift type differs from the structure of its encoded form, you can provide a custom implementation of [`Encodable`](../Swift/encodable.md) and [`Decodable`](../Swift/decodable.md) to define your own encoding and decoding logic.
 

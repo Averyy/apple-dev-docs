@@ -25,7 +25,7 @@ struct URLFileProtection
 typedef NSString * NSURLFileProtectionType;
 ```
 
-#### Overview
+## Overview
 
 These are values for the [`URLResourceKey`](./urlresourcekey.md) key [`fileProtectionKey`](./urlresourcekey/fileprotectionkey.md).
 

@@ -9,7 +9,7 @@
 IOAudioDevicePowerState currentPowerState;
 ```
 
-#### Overview
+## Overview
 
 Used to track the existing power state - can be fetched by calling getPowerState()
 

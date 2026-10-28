@@ -24,11 +24,11 @@ func CFHTTPAuthenticationCreateFromResponse(_ alloc: CFAllocator?, _ response: C
 extern CFHTTPAuthenticationRefCFHTTPAuthenticationCreateFromResponse(CFAllocatorRef alloc, CFHTTPMessageRef response);
 ```
 
-#### Return Value
+## Return Value
 
 CFHTTPAuthentication object that can be used for adding credentials to future requests. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
-#### Discussion
+## Discussion
 
 This function uses a response containing authentication failure information to create a reference to a CFHTTPAuthentication object. You can use the object to add credentials to future requests. You can query the object to get the following information:
 

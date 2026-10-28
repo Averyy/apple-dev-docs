@@ -15,7 +15,7 @@ The attachment disposition, directing the receiving app to not automatically ren
 case attachment
 ```
 
-#### Discussion
+## Discussion
 
 The code that receives a file with this disposition needs to wait for another action by the person using the app before rendering or otherwise handling the file.
 

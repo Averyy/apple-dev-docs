@@ -25,7 +25,7 @@ func MIDIEventListInit(_ evtlist: UnsafeMutablePointer<MIDIEventList>, _ protoco
 extern MIDIEventPacket *MIDIEventListInit(MIDIEventList *evtlist, MIDIProtocolID protocol);
 ```
 
-#### Return Value
+## Return Value
 
 A pointer to the first [`MIDIEventPacket`](./midieventpacket.md) in the event list.
 

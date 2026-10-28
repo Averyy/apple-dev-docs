@@ -23,11 +23,11 @@ init(callCapabilityResolutionResult: INCallCapabilityResolutionResult)
 - (instancetype) initWithCallCapabilityResolutionResult:(INCallCapabilityResolutionResult *) callCapabilityResolutionResult;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INStartCallCallCapabilityResolutionResult`](../instartcallcallcapabilityresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method to create a result object when you’re able to start a call with the specified capabilities.
 

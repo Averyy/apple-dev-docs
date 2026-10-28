@@ -20,7 +20,7 @@ func request(_ request: OSSystemExtensionRequest, didFinishWithResult result: OS
 - (void) request:(OSSystemExtensionRequest *) request didFinishWithResult:(OSSystemExtensionRequestResult) result;
 ```
 
-#### Discussion
+## Discussion
 
 If the request completes with the [`OSSystemExtensionRequest.Result.willCompleteAfterReboot`](../ossystemextensionrequest/result/willcompleteafterreboot.md) result, then the extension isn’t active until after the next restart. After restarting, the most recently-processed request determines the extension’s state. Consider the following scenarios:
 

@@ -19,7 +19,7 @@ class var controlTextColor: NSColor { get }
 @property (class, strong, readonly) NSColor * controlTextColor;
 ```
 
-#### Return Value
+## Return Value
 
 The color used for text on enabled controls. For more information, see [`NSColor`](../nscolor.md).
 

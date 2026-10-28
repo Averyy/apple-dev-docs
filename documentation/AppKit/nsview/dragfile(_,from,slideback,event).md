@@ -21,11 +21,11 @@ func dragFile(_ filename: String, from rect: NSRect, slideBack flag: Bool, event
 - (BOOL) dragFile:(NSString *) filename fromRect:(NSRect) rect slideBack:(BOOL) flag event:(NSEvent *) event;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the view successfully initiates the dragging operation (which doesn’t necessarily mean the dragging operation concluded successfully). Otherwise, this method returns [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 This method must be invoked only within an implementation of the [`mouseDown(with:)`](../nsresponder/mousedown%28with%29.md) method.
 

@@ -15,7 +15,7 @@ Set if all the flags would be clear.
 FormatFlagsAreAllClear
 ```
 
-#### Discussion
+## Discussion
 
 This flag preserves `0` as the wildcard value.
 

@@ -5,13 +5,13 @@
 
 Reserve, upload, and commit an image to your app’s asset library, then update, archive, or delete it.
 
-#### Overview
+## Overview
 
 An asset library image is a reusable image you upload once and place across your App Store surfaces. Uploading one follows the same reserve-upload-commit pattern as other App Store Connect assets: you create a reservation that returns upload operations, transfer the bytes to those URLs, then commit the reservation so App Store Connect can process the file. This article walks through that workflow and the management operations that follow.
 
 For the shared four-step asset delivery model, see [Uploading Assets to App Store Connect](./uploading-assets-to-app-store-connect.md). For the broader asset library concept, see [Understanding the App Asset Library](./understanding-the-app-asset-library.md).
 
-#### Confirm specifications before you begin
+## Confirm specifications before you begin
 
 Find your app’s asset library and confirm the image specifications:
 
@@ -20,7 +20,7 @@ Find your app’s asset library and confirm the image specifications:
 
 Image specifications state exact dimensions, not ranges. Resize your file to match a specification before you reserve it; App Store Connect matches the file you upload against the catalog during processing.
 
-#### Reserve the image
+## Reserve the image
 
 Create the image with `POST /v1/appAssetLibraryImages` ([`Create an app asset library image`](./post-v1-appassetlibraryimages.md)). Supply the filename, the file size in bytes, and a category ([`AppAssetLibraryAssetCategory`](./appassetlibraryassetcategory.md)), and relate the image to your asset library. The `referenceName` attribute is optional and helps you identify the asset later.
 
@@ -82,13 +82,13 @@ A successful response returns the image `id`, a `state` of `AWAITING_UPLOAD`, an
 
 Note the `id`; you use it to upload, commit, and later manage the image. `imageAsset` and `specId` are `null` at this stage; App Store Connect fills both in after processing.
 
-#### Upload the image
+## Upload the image
 
 Transfer the file to the URLs from `uploadOperations`. For each operation, make an HTTP request using the specified `method`, `url`, and `requestHeaders`, and send the bytes from the given `offset` and `length` in the request body. Large files return multiple operations; upload the parts concurrently and in any order to improve performance. The upload URLs are unauthenticated and time-limited, so you don’t send a JSON Web Token (JWT), and you don’t share them.
 
 The image stays in `AWAITING_UPLOAD` while you transfer the parts.
 
-#### Commit the upload
+## Commit the upload
 
 After every part uploads, commit the reservation with `PATCH /v1/appAssetLibraryImages/{id}` ([`Modify an app asset library image`](./patch-v1-appassetlibraryimages-_id_.md)) by setting `uploaded` to `true`:
 
@@ -108,7 +108,7 @@ After every part uploads, commit the reservation with `PATCH /v1/appAssetLibrary
 
 The image moves to `UPLOAD_COMPLETE`, and processing begins.
 
-#### Verify processing
+## Verify processing
 
 Processing is asynchronous. Re-fetch the image with `GET /v1/appAssetLibraryImages/{id}` ([`Read an app asset library image`](./get-v1-appassetlibraryimages-_id_.md)) to check its `state`:
 
@@ -135,7 +135,7 @@ When processing succeeds, three attributes become readable. Here’s the example
 
 Read `imageAsset` for the processed image: substitute width, height, and format into `templateUrl` to render a thumbnail.
 
-#### Update an image
+## Update an image
 
 Use `PATCH /v1/appAssetLibraryImages/{id}` ([`Modify an app asset library image`](./patch-v1-appassetlibraryimages-_id_.md)) to change an image’s `referenceName`. The image binary is immutable after commit; to change the picture, upload a new asset and replace the placements that use it.
 
@@ -151,7 +151,7 @@ Use `PATCH /v1/appAssetLibraryImages/{id}` ([`Modify an app asset library image`
 }
 ```
 
-#### Archive an image
+## Archive an image
 
 To retire an image without removing its record, set `archived` to `true` with the same `PATCH` endpoint. Archiving moves the image to `ARCHIVED` and hides it from active use.
 
@@ -170,19 +170,19 @@ Archiving works only on an approved asset. Archiving one that’s still in `PREP
 }
 ```
 
-#### Delete an image
+## Delete an image
 
 To remove an image entirely, use `DELETE /v1/appAssetLibraryImages/{id}` ([`Delete an app asset library image`](./delete-v1-appassetlibraryimages-_id_.md)), which returns `204 No Content` on success.
 
 > ❗ **Important**:  Deleting an asset doesn’t cascade to its placements. Delete every placement that uses the image first, or the request returns a 409 with the code `STATE_ERROR.ASSET_HAS_PLACEMENTS` and the detail `The asset cannot be deleted while placements still use it. Delete those placements first.`
 
-#### Find image placements
+## Find image placements
 
 To see the placements that reuse an image, use `GET /v1/appAssetLibraryImages/{id}/placements` ([`List related placements`](./get-v1-appassetlibraryimages-_id_-placements.md)), or fetch just the relationship linkages with `GET /v1/appAssetLibraryImages/{id}/relationships/placements` ([`List the placement IDs for an app asset library image`](./get-v1-appassetlibraryimages-_id_-relationships-placements.md)).
 
 This is also the check to run before a delete. Filter by surface, for example, `filter[appStoreVersionLocalization]`, or by `filter[placementType]` and `filter[placementGroup]` to narrow the results.
 
-#### List the images in your library
+## List the images in your library
 
 Read the whole library with `GET /v1/appAssetLibraries/{id}/images` ([`List related images`](./get-v1-appassetlibraries-_id_-images.md)). Useful filters and sorts:
 

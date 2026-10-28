@@ -12,11 +12,11 @@ virtual bool isEqualTo(
  const IONetworkMedium *medium) const;
 ```
 
-#### Return Value
+## Return Value
 
 Returns true if equal, false otherwise.
 
-#### Overview
+## Overview
 
 Two IONetworkMedium objects are considered equal if they have similar properties assigned to them during initialization.
 

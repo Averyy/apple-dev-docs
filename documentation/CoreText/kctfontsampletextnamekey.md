@@ -23,7 +23,7 @@ let kCTFontSampleTextNameKey: CFString
 extern CFStringRef const kCTFontSampleTextNameKey;
 ```
 
-#### Discussion
+## Discussion
 
 The name specifier for the sample text name string.
 

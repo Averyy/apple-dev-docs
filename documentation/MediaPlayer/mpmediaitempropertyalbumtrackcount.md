@@ -25,7 +25,7 @@ let MPMediaItemPropertyAlbumTrackCount: String
 extern NSString * const MPMediaItemPropertyAlbumTrackCount;
 ```
 
-#### Discussion
+## Discussion
 
 This value is an [`NSNumber`](../Foundation/nsnumber.md) object that represents an [`NSUInteger`](../ObjectiveC/nsuinteger.md) data type. For an audio streaming app, the system provides a default value of `1` for this property.
 

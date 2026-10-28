@@ -21,7 +21,7 @@ Indicates that an internal consistency check failed.
 func assertionFailure(_ message: @autoclosure () -> String = String(), file: StaticString = #file, line: UInt = #line)
 ```
 
-#### Discussion
+## Discussion
 
 This function’s effect varies depending on the build flag used:
 

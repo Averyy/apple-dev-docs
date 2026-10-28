@@ -16,7 +16,7 @@ get addressFilter(): AddressFilter | null;
 set addressFilter(value: AddressFilter | null);
 ```
 
-#### Discussion
+## Discussion
 
 For more information on address filter options, see [`AddressFilter`](../mapkit/addressfilter.md).
 

@@ -22,13 +22,13 @@ object Caption
 - [Using HTML with Apple News Format](../AppleNews/using-html-with-apple-news-format.md)
 - [Using Markdown with Apple News Format](../AppleNews/using-markdown-with-apple-news-format.md)
 
-#### Discussion
+## Discussion
 
 Use a `Caption` component to include a description for media components like `photo`, `gallery`, `video`, `map`, and so on. Apple News displays captions under the media component, but you can also add them above.
 
 > **Note**:  This component creates caption text in the main article view. To add caption text in the full-screen view, use the `caption` property of the individual media component, such as [`Photo`](./photo.md).
 
-##### Example
+### Example
 
 ```json
 {

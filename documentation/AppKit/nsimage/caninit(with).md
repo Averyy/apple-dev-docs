@@ -19,11 +19,11 @@ class func canInit(with pasteboard: NSPasteboard) -> Bool
 + (BOOL) canInitWithPasteboard:(NSPasteboard *) pasteboard;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the receiver knows how to handle the data on the pasteboard; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 This method uses the `NSImageRep` class method [`imageUnfilteredPasteboardTypes()`](../nsimagerep/imageunfilteredpasteboardtypes%28%29.md) to find a class that can handle the data in the specified pasteboard. If you create your own `NSImageRep` subclasses, override the [`imageUnfilteredPasteboardTypes()`](../nsimagerep/imageunfilteredpasteboardtypes%28%29.md) method to notify `NSImage` of the pasteboard types your class supports.
 

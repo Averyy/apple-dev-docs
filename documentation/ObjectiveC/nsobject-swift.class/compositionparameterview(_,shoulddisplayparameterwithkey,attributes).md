@@ -21,7 +21,7 @@ func compositionParameterView(_ parameterView: QCCompositionParameterView!, shou
 - (BOOL) compositionParameterView:(QCCompositionParameterView *) parameterView shouldDisplayParameterWithKey:(NSString *) portKey attributes:(NSDictionary *) portAttributes;
 ```
 
-#### Return Value
+## Return Value
 
 Return[`YES`](../yes.md) if the port attributes should be displayed; [`NO`](../no.md) otherwise.
 

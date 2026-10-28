@@ -23,7 +23,7 @@ var preferredVerticalBarBehavior: UIVerticalBarBehavior { get }
 @property (nonatomic, readonly) UIVerticalBarBehavior preferredVerticalBarBehavior;
 ```
 
-#### Discussion
+## Discussion
 
 Override this property to opt out of the vertical bar. Return `UIVerticalBarBehaviorDisabled` to hide the vertical bar. Defaults to `UIVerticalBarBehaviorAutomatic`.
 

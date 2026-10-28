@@ -12,11 +12,11 @@ virtual IOReturn setDetailedTimings(
  OSArray *array );
 ```
 
-#### Return Value
+## Return Value
 
 an IOReturn code. A return other than kIOReturnSuccess will prevent the system from installing the programmable modes.
 
-#### Overview
+## Overview
 
 IOFramebuffer subclasses may implement programmable mode functionality where the OS is able to install modes described by a detailed timing into the driver. The driver needs to add these modes to its internal mode list if it provides this functionality.
 

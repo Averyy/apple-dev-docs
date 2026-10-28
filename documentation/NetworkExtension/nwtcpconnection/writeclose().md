@@ -26,7 +26,7 @@ func writeClose()
 - (void) writeClose;
 ```
 
-#### Discussion
+## Discussion
 
 Close this connection’s write side such that further write requests won’t succeed. Note that this has the effect of closing the read side of the peer connection. When the connection’s read side and write side are closed, the connection is considered disconnected and will transition to the appropriate state.
 

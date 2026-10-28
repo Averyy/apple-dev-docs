@@ -23,7 +23,7 @@ var extraLineFragmentRect: CGRect { get }
 @property (nonatomic, readonly) CGRect extraLineFragmentRect;
 ```
 
-#### Discussion
+## Discussion
 
 The layout manager uses the extra line fragment when the last character in a document causes a line or paragraph break. This extra line fragment has no corresponding glyph.
 

@@ -21,7 +21,7 @@ The definition of a custom detent with a calculated height.
 protocol CustomPresentationDetent
 ```
 
-#### Overview
+## Overview
 
 You can create and use a custom detent with built-in detents.
 

@@ -28,7 +28,7 @@ var prefersEphemeralWebBrowserSession: Bool { get set }
 
 - [Authenticating a User Through a Web Service](../authenticating-a-user-through-a-web-service.md)
 
-#### Discussion
+## Discussion
 
 Set [`prefersEphemeralWebBrowserSession`](./prefersephemeralwebbrowsersession.md) to `true` to request that the browser doesn’t share cookies or other browsing data between the authentication session and the user’s normal browser session.
 

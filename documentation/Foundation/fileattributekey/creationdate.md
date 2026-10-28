@@ -25,7 +25,7 @@ static let creationDate: FileAttributeKey
 extern NSFileAttributeKey const NSFileCreationDate;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is an [`NSDate`](../nsdate.md) object.
 

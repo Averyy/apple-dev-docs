@@ -20,7 +20,7 @@ var thread: UnsafeMutablePointer<es_thread_t>?
 es_thread_t * thread;
 ```
 
-#### Discussion
+## Discussion
 
 This field may be NULL when threading doesn’t apply. This includes trace events that describe calls to `ptrace(PT_TRACE_ME`) or code-signing invalidation events resulting from another process calling `csops(CS_OPS_MARKINVALID)`.
 

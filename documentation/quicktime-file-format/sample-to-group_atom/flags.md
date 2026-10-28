@@ -10,7 +10,7 @@ A 3-byte reserved space.
 
 - [Representing encoder delay explicitly](../example_representing_encoder_delay_explicitly.md)
 
-#### Overview
+## Overview
 
 Set to 0.
 

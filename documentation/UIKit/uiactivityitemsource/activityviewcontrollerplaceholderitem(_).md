@@ -24,11 +24,11 @@ func activityViewControllerPlaceholderItem(_ activityViewController: UIActivityV
 - (id) activityViewControllerPlaceholderItem:(UIActivityViewController *) activityViewController;
 ```
 
-#### Return Value
+## Return Value
 
 An object to use as a placeholder for the actual data.
 
-#### Discussion
+## Discussion
 
 This method returns an object that can be used as a placeholder for the real data. Placeholder objects don’t have to contain any real data but should be configured as closely as possible to the actual data object you intend to provide. In general the actual value should match in type but it’s possible to return a different type of data for [`activityViewController(_:itemForActivityType:)`](./activityviewcontroller%28_,itemforactivitytype%29.md). It should be one that the activity can handle otherwise you may get an activity with empty content. For example, the placeholder could be a [`UIImage`](../uiimage.md) object but the actual value could be an [`NSData`](../../Foundation/nsdata.md) object with PDF information.
 

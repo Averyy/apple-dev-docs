@@ -17,11 +17,11 @@ Returns the position of the vertex at the given index.
 final func position(at vertexIndex: UInt32) -> SIMD3<Float>
 ```
 
-#### Return Value
+## Return Value
 
 The position of the specified vertex.
 
-#### Discussion
+## Discussion
 
 If you want to obtain the position for a specific vertex within a specific primitive (for example the third vertex of the 20th triangle in a triangle mesh), you can use [`vertexIndex(at:)`](./vertexindex%28at%29.md) to obtain the right vertex index:
 

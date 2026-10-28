@@ -19,7 +19,7 @@ class let willStartLiveScrollNotification: NSNotification.Name
 extern NSNotificationName const NSScrollViewWillStartLiveScrollNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is the scroll view performing the scroll.
 

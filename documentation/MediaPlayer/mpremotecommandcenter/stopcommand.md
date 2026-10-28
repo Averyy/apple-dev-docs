@@ -25,7 +25,7 @@ var stopCommand: MPRemoteCommand { get }
 @property (nonatomic, readonly) MPRemoteCommand * stopCommand;
 ```
 
-#### Discussion
+## Discussion
 
 Use the object in this property to register your app’s handler for stopping playback of the current track. In your handler, stop playback the current item. You can disable the command if your app does not support it.
 

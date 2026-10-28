@@ -24,11 +24,11 @@ class func assetResources(for livePhoto: PHLivePhoto) -> [PHAssetResource]
 + (NSArray<PHAssetResource *> *) assetResourcesForLivePhoto:(PHLivePhoto *) livePhoto;
 ```
 
-#### Return Value
+## Return Value
 
 The underlying resources that constitute the Live Photo.
 
-#### Discussion
+## Discussion
 
 A Live Photo is a picture, taken with a compatible device, that includes movement and sound from the moments just before and after its capture. A [`PHLivePhoto`](../phlivephoto.md) object represents the displayable combination of image, motion, and sound data. You can obtain such objects from the Photos library using the [`PHImageManager`](../phimagemanager.md) class or construct them from asset resources exported from a Photos library using the [`PHLivePhoto`](../phlivephoto.md) class.
 

@@ -24,7 +24,7 @@ var triangleCount: Int { get set }
 @property (nonatomic) NSUInteger triangleCount;
 ```
 
-#### Discussion
+## Discussion
 
 All keyframes share the same triangle count.
 

@@ -13,7 +13,7 @@ Create robust, smart device networks using Thread Border Routers.
 - macOS 14.0+
 - visionOS 1.0+
 
-#### Overview
+## Overview
 
 The [Thread](https://www.threadgroup.org) standard is a low-power, wireless mesh networking protocol that runs over standard Internet protocols that allows smart home devices — such as Apple Home—compatible devices — to communicate with each other. Mesh networks are peer-to-peer networks that don’t have a single, centrally defined router, eliminating the risk of a single point of failure. They can dynamically reconfigure themselves and discover nearby peer devices with shared credentials. This allows them to maintain communication even when some devices go offline, like the following image illustrates:
 
@@ -25,7 +25,7 @@ The Thread Border Router hardware device is a key element of Thread networks. It
 
 To create your own Thread Border Router, use the ThreadNetwork framework to configure and manage your router. The ThreadNetwork framework helps you choose the right Thread network for your certified Thread Border Router.
 
-#### Learn about Thread network device roles
+## Learn about Thread network device roles
 
 A Thread network can contain several types of devices that someone can deploy in many combinations:
 

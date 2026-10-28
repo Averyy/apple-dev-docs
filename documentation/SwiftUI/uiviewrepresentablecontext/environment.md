@@ -20,7 +20,7 @@ The current environment.
 @preconcurrency var environment: EnvironmentValues { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use the environment values to configure the state of your view when creating or updating it.
 

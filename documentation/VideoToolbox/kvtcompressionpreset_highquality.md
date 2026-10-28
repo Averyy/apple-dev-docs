@@ -22,7 +22,7 @@ let kVTCompressionPreset_HighQuality: CFString
 extern CFStringRef const kVTCompressionPreset_HighQuality;
 ```
 
-#### Discussion
+## Discussion
 
 A preset to achieve a high compression quality.
 

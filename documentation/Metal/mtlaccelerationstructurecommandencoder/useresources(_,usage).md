@@ -20,7 +20,7 @@ Makes multiple resources available to the acceleration structure pass.
 func useResources(_ resources: [any MTLResource], usage: MTLResourceUsage)
 ```
 
-#### Discussion
+## Discussion
 
 This method makes the resources resident for the duration of a compute pass and ensures that they are in a format compatible with the compute function.
 

@@ -19,7 +19,7 @@ struct SecTrustOptionFlags
 enum SecTrustOptionFlags : uint32_t;
 ```
 
-#### Overview
+## Overview
 
 Use these flags in calls to the [`SecTrustSetOptions(_:_:)`](./sectrustsetoptions%28_,_%29.md) function.
 

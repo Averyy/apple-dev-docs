@@ -20,7 +20,7 @@ static var exportTokenUserInfoKey: String { get }
 
 - [Transferring browsing data to another browser](../transferring-browsing-data-to-another-browser.md)
 
-#### Discussion
+## Discussion
 
 Use this key to access the token that validates the transfer of browsing data when the system launches your app to export the data. For more information, see [Transferring browsing data to another browser](../transferring-browsing-data-to-another-browser.md).
 

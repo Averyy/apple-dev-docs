@@ -21,7 +21,7 @@ class NFCNDEFReaderSession
 @interface NFCNDEFReaderSession : NFCReaderSession
 ```
 
-#### Overview
+## Overview
 
 As with the [`NFCReaderSession`](./nfcreadersession-swift.class.md) base class, only one NFC NDEF reader session can be active in the system at a time. If you create an additional session, the system puts it in a queue and processes it in first-in, first-out (FIFO) order.
 

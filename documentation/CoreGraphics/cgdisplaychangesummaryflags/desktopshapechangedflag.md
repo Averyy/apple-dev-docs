@@ -18,7 +18,7 @@ static var desktopShapeChangedFlag: CGDisplayChangeSummaryFlags { get }
 kCGDisplayDesktopShapeChangedFlag
 ```
 
-#### Discussion
+## Discussion
 
 The shape of the desktop (the union of display areas) has changed.
 

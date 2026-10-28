@@ -6,12 +6,16 @@ url: https://ml-explore.github.io/mlx-data/build/html/python/_autosummary/mlx.da
 
 # mlx.data.datasets.load_fashion_mnist
 
-**mlx.data.datasets.load_fashion_mnist(*root=None*, *train=True*)**
-: Load a buffer with the Fashion-MNIST dataset.
+```python
+mlx.data.datasets.load_fashion_mnist(root=None, train=True)
+```
+
+Load a buffer with the Fashion-MNIST dataset.
+
 If the data doesn’t exist download it and save it for the next time.
 
-Parameters:
+**Parameters:**
 
-**root** (*Path** or *[str](https://docs.python.org/3/library/stdtypes.html#str)*, **optional*) – The directory to load/save the data. If
+- **root** (*Path* *or* [str](https://docs.python.org/3/library/stdtypes.html#str), *optional*) – The directory to load/save the data. If
 none is given the `~/.cache/mlx.data/fashion-mnist` is used.
-**train** ([bool](https://docs.python.org/3/library/functions.html#bool)) – Load the training or test set.
+- **train** ([bool](https://docs.python.org/3/library/functions.html#bool)) – Load the training or test set.

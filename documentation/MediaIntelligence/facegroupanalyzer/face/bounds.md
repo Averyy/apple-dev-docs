@@ -24,7 +24,7 @@ let bounds: CGRect
 
 - [Detecting and grouping faces in images](../../detecting-and-grouping-faces-in-images.md)
 
-#### Discussion
+## Discussion
 
 The rectangle uses normalized coordinates, where `0.0` is the top-left corner and `1.0` is the bottom-right corner along each axis.
 

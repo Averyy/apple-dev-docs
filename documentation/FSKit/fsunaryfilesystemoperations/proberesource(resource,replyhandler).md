@@ -24,7 +24,7 @@ func probeResource(resource: FSResource) async throws -> FSProbeResult
 - (void) probeResource:(FSResource *) resource replyHandler:(void (^)(FSProbeResult *result, NSError *error)) reply;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to indicate whether the resource is recognizable and usable.
 

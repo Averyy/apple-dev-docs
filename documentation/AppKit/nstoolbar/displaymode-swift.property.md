@@ -22,7 +22,7 @@ var displayMode: NSToolbar.DisplayMode { get set }
 @property NSToolbarDisplayMode displayMode;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`NSToolbar.DisplayMode.default`](./displaymode-swift.enum/default.md). For a list of possible values, see [`NSToolbar.DisplayMode`](./displaymode-swift.enum.md).
 

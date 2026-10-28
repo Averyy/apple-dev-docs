@@ -25,7 +25,7 @@ class SCNFloor
 @interface SCNFloor : SCNGeometry
 ```
 
-#### Overview
+## Overview
 
 ![](https://developer.apple.com/tutorials/images/com.apple.scenekit/media-2929804@2x.png)
 

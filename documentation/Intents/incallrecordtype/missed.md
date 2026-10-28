@@ -24,7 +24,7 @@ case missed
 INCallRecordTypeMissed
 ```
 
-#### Discussion
+## Discussion
 
 Use this constant for calls that were not picked up by the user.
 

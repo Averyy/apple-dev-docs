@@ -21,7 +21,7 @@ A system-provided dispatch queue that schedules tasks for concurrent execution.
 class OS_dispatch_queue_global
 ```
 
-#### Overview
+## Overview
 
 You do not create objects of this type directly. You receive a queue of the appropriate type when you create a new [`DispatchQueue`](./dispatchqueue.md) object.
 

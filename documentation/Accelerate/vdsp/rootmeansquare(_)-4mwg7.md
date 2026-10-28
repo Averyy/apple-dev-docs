@@ -21,7 +21,7 @@ Returns the root mean square of a double-precision vector.
 static func rootMeanSquare<U>(_ vector: U) -> Double where U : AccelerateBuffer, U.Element == Double
 ```
 
-#### Discussion
+## Discussion
 
 This function calculates and returns the root mean square of a supplied vector.
 

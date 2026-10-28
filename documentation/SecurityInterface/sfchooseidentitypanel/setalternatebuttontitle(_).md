@@ -19,7 +19,7 @@ func setAlternateButtonTitle(_ title: String!)
 - (void) setAlternateButtonTitle:(NSString *) title;
 ```
 
-#### Discussion
+## Discussion
 
 The alternate button is typically labelled “Cancel”. The alternate button dismisses the sheet or panel and returns a value of [`NSCancelButton`](../../AppKit/nscancelbutton.md).
 

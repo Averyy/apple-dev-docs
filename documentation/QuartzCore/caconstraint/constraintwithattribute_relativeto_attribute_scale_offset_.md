@@ -16,11 +16,11 @@ Creates and returns an `CAConstraint` object with the specified parameters.
 + (instancetype) constraintWithAttribute:(CAConstraintAttribute) attr relativeTo:(NSString *) srcId attribute:(CAConstraintAttribute) srcAttr scale:(CGFloat) m offset:(CGFloat) c;
 ```
 
-#### Return Value
+## Return Value
 
 A new `CAConstraint` object with the specified parameters.
 
-#### Discussion
+## Discussion
 
 The value for the constraint is calculated as ((`srcAttr` * scale) + offset).
 

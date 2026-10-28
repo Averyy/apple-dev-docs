@@ -15,7 +15,7 @@ A Boolean value that indicates whether an iPadOS app can communicate with driver
 - **Name**: `com.apple.developer.driverkit.communicates-with-drivers`
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 When `true`, this entitlement allows your app to open user clients to one or more drivers.
 

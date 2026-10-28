@@ -21,7 +21,7 @@ optional func player(for appController: TVApplicationController) -> TVPlayer?
 - (TVPlayer *) playerForAppController:(TVApplicationController *) appController;
 ```
 
-#### Return Value
+## Return Value
 
 A customizable [`TVPlayer`](../tvplayer.md) object.
 

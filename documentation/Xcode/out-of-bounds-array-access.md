@@ -5,13 +5,13 @@
 
 Detects out-of-bounds access of arrays.
 
-#### Overview
+## Overview
 
 Use this check to detect attempts to access indexes that exceed the array’s bounds. Out-of-bounds array accesses have undefined behavior, and can result in crashes or incorrect program output. Available in Xcode 9 and later.
 
 > **Note**: This check doesn’t detect out-of-bounds accesses into heap-allocated arrays.
 
-##### Out-of-bounds array access in C
+### Out-of-bounds array access in C
 
 In the following example, out-of-bounds access of `array` occurs on the last iteration of the loop:
 
@@ -22,7 +22,7 @@ for (int i = 0; i <= 5; ++i) {
 }
 ```
 
-###### Solution
+#### Solution
 
 Ensure that accessed indexes don’t exceed the array’s bounds.
 

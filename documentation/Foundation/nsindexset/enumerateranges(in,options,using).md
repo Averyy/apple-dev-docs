@@ -25,7 +25,7 @@ func enumerateRanges(in range: NSRange, options opts: NSEnumerationOptions = [],
 - (void) enumerateRangesInRange:(NSRange) range options:(NSEnumerationOptions) opts usingBlock:(void (^)(NSRange range, BOOL *stop)) block;
 ```
 
-#### Discussion
+## Discussion
 
 By default, the enumeration starts with the first object and continues serially through the indexed set range to the last object in the range. You can specify `NSEnumerationConcurrent` and/or `NSEnumerationReverse` as enumeration options to modify this behavior.
 

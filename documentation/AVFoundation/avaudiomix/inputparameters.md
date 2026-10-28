@@ -25,7 +25,7 @@ var inputParameters: [AVAudioMixInputParameters] { get }
 @property (nonatomic, copy, readonly) NSArray<AVAudioMixInputParameters *> * inputParameters;
 ```
 
-#### Discussion
+## Discussion
 
 The array contains instances of [`AVAudioMixInputParameters`](../avaudiomixinputparameters.md).
 

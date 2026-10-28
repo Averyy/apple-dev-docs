@@ -17,7 +17,7 @@ Applies the Gaussian Error Linear Units function.
 func gelu(_ x: MLXArray) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 This is:
 
@@ -25,7 +25,7 @@ This is:
 x * (1 + MLX.erf(x / sqrt(2))) / 2
 ```
 
-##### See Also
+### See Also
 
 - [Activation Functions and Layers](./activations.md)
 - [`GELU`](./gelu.md)

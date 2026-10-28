@@ -19,7 +19,7 @@ var javaScriptCanOpenWindowsAutomatically: Bool { get set }
 @property (nonatomic) BOOL javaScriptCanOpenWindowsAutomatically;
 ```
 
-#### Discussion
+## Discussion
 
 Set to [`true`](../../Swift/true.md) if the web view should allow JavaScript to open windows automatically, otherwise [`false`](../../Swift/false.md).
 

@@ -38,7 +38,7 @@ var image: NSImage { get }
 @property (strong, readonly) NSImage * image;
 ```
 
-#### Discussion
+## Discussion
 
 The cursor image or `nil` if none exists. Note that an `NSCursor` object is immutable: you cannot change its image after it’s created. Instead, use [`init(image:hotSpot:)`](./init%28image,hotspot%29.md) to create a new cursor with the new settings.
 

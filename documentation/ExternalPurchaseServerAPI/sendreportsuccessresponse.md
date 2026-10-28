@@ -15,7 +15,7 @@ A response that contains the request identifier and indicates the server success
 object SendReportSuccessResponse
 ```
 
-#### Discussion
+## Discussion
 
 The [`Send External Purchase Report`](./send-external-purchase-report.md) endpoint returns this response when the server successfully receives a report that passes validation checks. Record the [`requestIdentifier`](./requestidentifier.md) in your system. Use the  `requestIdentifer` to get the report by sending a request to the [`Retrieve External Purchase Report`](./retrieve-external-purchase-report.md) endpoint.
 

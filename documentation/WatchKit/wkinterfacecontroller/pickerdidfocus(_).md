@@ -19,7 +19,7 @@ func pickerDidFocus(_ picker: WKInterfacePicker)
 - (void) pickerDidFocus:(WKInterfacePicker *) picker;
 ```
 
-#### Discussion
+## Discussion
 
 A picker becomes focused when the user taps it or when you call the [`focus()`](../wkinterfacepicker/focus%28%29.md) method of the picker itself. When a picker is focused, input from the Digital Crown updates the selected item.
 

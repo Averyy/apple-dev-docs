@@ -24,7 +24,7 @@ class NEOnDemandRuleDisconnect
 @interface NEOnDemandRuleDisconnect : NEOnDemandRule
 ```
 
-#### Overview
+## Overview
 
 When rules of this class match, the VPN connection is not started, and the VPN connection is disconnected if it is not already disconnected.
 

@@ -21,7 +21,7 @@ case closed
 CLKComplicationRingStyleClosed
 ```
 
-#### Discussion
+## Discussion
 
 Use this style when you want to convey a value that’s a percentage of a whole. For example, use it to represent the completed percentage of some task.
 

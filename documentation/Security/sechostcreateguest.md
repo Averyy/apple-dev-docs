@@ -19,11 +19,11 @@ OSStatus SecHostCreateGuest(SecGuestRef host, uint32_t status, CFURLRef path, CF
 
 - [Hosting Guest Code](./hosting-guest-code.md)
 
-#### Return Value
+## Return Value
 
 A result code. See [Code Signing Services Result Codes](./code-signing-services-result-codes.md).
 
-#### Discussion
+## Discussion
 
 Code that calls this function becomes a code host operating in proxy hosting mode. Subsequently, Code Signing Services caches information about guest code provided by the host when it calls the [`SecHostCreateGuest`](./sechostcreateguest.md), [`SecHostSetGuestStatus`](./sechostsetgueststatus.md), and [`SecHostRemoveGuest`](./sechostremoveguest.md) functions. Code Signing Services uses this information to report hosting status to callers directly without consulting the host. A code host running in proxy hosting mode cannot switch to dynamic hosting mode.
 

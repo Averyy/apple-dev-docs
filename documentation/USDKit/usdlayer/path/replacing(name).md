@@ -20,7 +20,7 @@ Returns a new path with the leaf name replaced.
 func replacing(name newName: USDToken) -> USDLayer.Path
 ```
 
-#### Return Value
+## Return Value
 
 A new path with `newName` as its leaf.
 

@@ -15,7 +15,7 @@ Creates a value for an HID element.
 init(element: HIDElement, fromBytes: Data, timestamp: SuspendingClock.Instant)
 ```
 
-#### Discussion
+## Discussion
 
 The created value can be used to send a request to the associated device to update it’s current value for the element using [`HIDDeviceClient.ProvideElementUpdate`](../../hiddeviceclient/provideelementupdate.md).
 

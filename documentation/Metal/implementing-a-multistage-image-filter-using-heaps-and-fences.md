@@ -14,7 +14,7 @@ Use fences to synchronize access to resources allocated on a heap.
 - tvOS 17.0+
 - Xcode 26.3+
 
-#### Overview
+## Overview
 
 This sample demonstrates:
 
@@ -26,17 +26,17 @@ This implementation minimizes memory usage in an orderly fashion for a filter gr
 
 ![Screenshot of the sample app running to show a filtered image.](https://developer.apple.com/tutorials/images/com.apple.metal/image-filtering-with-heaps-and-fences-1-ImageFilteringWithHeapsAndFences.png)
 
-##### Getting started
+### Getting started
 
 The Xcode project contains schemes for running the sample on macOS, iOS, or tvOS. Metal is not supported in the iOS or tvOS Simulator, so the iOS and tvOS schemes require a physical device to run the sample. The default scheme is macOS, which runs the sample as is on your Mac.
 
-##### Optimize resource allocation and performance
+### Optimize resource allocation and performance
 
 Storing textures in a heap gives the sample more control over how resource memory is allocated and accessed. It’s also much faster to allocate resources from a heap than from a device. When resources are allocated from a device, Metal creates and tracks additional state to ensure that the resource memory is allocated, synchronized, and made available throughout the lifetime of any command buffer that needs the given resource. It does so even if the resource itself is destroyed before the command buffer begins execution.
 
 Although Metal also carries out this process for heaps, it doesn’t do so for resources within the heap. Instead, the app needs to perform explicit fine-grained synchronization when it creates objects from the heap and reuses memory. However, the overall cost of allocating resources from a heap is much lower than that of allocating resources from a device, particularly in the middle of a frame.
 
-##### Create a heap for static textures
+### Create a heap for static textures
 
 The sample loads image files into an array called `_imageTextures`. Instead of using `_imageTextures` directly, the sample uses `_imageHeap`, from which it allocates static textures. The sample creates a heap large enough to store all the static textures by aggregating their sizes. For each texture in `_imageTextures`, the sample calls the `heapTextureSizeAndAlignWithDescriptor:` method to calculate the size and alignment values required to allocate sufficient memory backing for each texture.
 
@@ -103,7 +103,7 @@ _imageTextures[i] = heapTexture;
 
 ![Layout diagram that shows multiple static textures stored in a single heap.](https://developer.apple.com/tutorials/images/com.apple.metal/image-filtering-with-heaps-and-fences-2-StaticTexturesHeap.png)
 
-##### Create a heap for dynamic textures
+### Create a heap for dynamic textures
 
 The sample uses a separate heap, `_scratchHeap`, from which it allocates dynamic textures with a temporary lifetime. These textures have the same properties of the static texture being filtered in a given frame.
 
@@ -139,7 +139,7 @@ Any textures allocated from `_scratchHeap` can also be deallocated, which allows
 
 ![Layout diagram that shows multiple dynamic textures allocated from a single heap and deallocated back into the same heap.](https://developer.apple.com/tutorials/images/com.apple.metal/image-filtering-with-heaps-and-fences-3-DynamicTexturesHeap.png)
 
-##### Manage dependencies between filters
+### Manage dependencies between filters
 
 The sample uses `_fence` to control access to dynamic textures allocated from `_scratchHeap` and prevent GPU race conditions in the filter graph. This fence ensures that operations on dynamic textures are completed before the filter graph begins subsequent operations that depend on the results of previous operations.
 
@@ -188,7 +188,7 @@ The second filter, implemented by the sample in `AAPLGaussianBlurFilter`, calls 
 
 ![Timeline diagram that shows how a fence manages dependencies between filters.](https://developer.apple.com/tutorials/images/com.apple.metal/image-filtering-with-heaps-and-fences-4-FenceBetweenFilters.png)
 
-##### Reuse memory and manage dependencies within a filter
+### Reuse memory and manage dependencies within a filter
 
 The Gaussian blur filter performs a horizontal blur and a vertical blur for each mipmap level of the dynamic texture produced by the downsample filter. For each mipmap level, the sample allocates a temporary texture, `intermediaryTexture`, from the dynamic textures heap.
 

@@ -16,7 +16,7 @@ Returns the contents that precede the divider accessibility element.
 func accessibilityPreviousContents() -> [Any]?
 ```
 
-#### Return Value
+## Return Value
 
 Sets the contents preceding this divider element.
 

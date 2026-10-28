@@ -23,11 +23,11 @@ func recallScore(for label: Label) -> Float
 
 Available when `Label` conforms to `Hashable`.
 
-#### Return Value
+## Return Value
 
 The recall score for the given label.
 
-#### Discussion
+## Discussion
 
 Recall score is computed as the ratio `truePositive / (truePositive + falseNegative)`.
 

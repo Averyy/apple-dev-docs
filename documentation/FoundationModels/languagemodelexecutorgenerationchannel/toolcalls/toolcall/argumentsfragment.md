@@ -20,7 +20,7 @@ Argument text appended to this tool call.
 struct ArgumentsFragment
 ```
 
-#### Overview
+## Overview
 
 The first event for a given id opens the tool call (using `name` from the enclosing [`LanguageModelExecutorGenerationChannel.ToolCalls.ToolCall`](../toolcall.md)); subsequent events append additional argument text.
 

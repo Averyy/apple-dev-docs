@@ -23,11 +23,11 @@ func contains(_ other: Range<Bound>) -> Bool
 
 Available when `Bound` conforms to `Strideable` and `Bound.Stride` conforms to `SignedInteger`.
 
-#### Return Value
+## Return Value
 
 `true` if `other` is empty or wholly contained within this closed range; otherwise, `false`.
 
-#### Discussion
+## Discussion
 
 The given range is contained within this closed range if the elements of the range are all contained within this closed range.
 

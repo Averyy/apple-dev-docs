@@ -25,7 +25,7 @@ func setObject(_ obj: Any?, forKeyedSubscript key: any NSCopying)
 - (void) setObject:(id) obj forKeyedSubscript:(id<NSCopying>) key;
 ```
 
-#### Discussion
+## Discussion
 
 The `value` parameter should be an object appropriate to the type of the shader symbol being set. For example, use an [`NSNumber`](../../Foundation/nsnumber.md) object to set the value of a `float` uniform variable, or use an [`NSValue`](../../Foundation/nsvalue.md) object containing an [`SCNVector3`](../scnvector3.md) structure to set the value of a GLSL `vec3` uniform variable or a Metal `float3` variable.
 

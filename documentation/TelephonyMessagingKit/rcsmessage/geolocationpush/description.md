@@ -15,7 +15,7 @@ A textual description of the location.
 var description: String?
 ```
 
-#### Discussion
+## Discussion
 
 Use this optional property to tag the nature of the location. For example, set the description to “Home” for the home address of the person using the app. Similarly, if the location is a business, set the description to the name of that business.
 

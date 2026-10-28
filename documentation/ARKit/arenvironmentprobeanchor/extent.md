@@ -20,7 +20,7 @@ var extent: simd_float3 { get }
 @property (nonatomic, readonly) simd_float3 extent;
 ```
 
-#### Discussion
+## Discussion
 
 Rendering reflective objects may involve projecting the [`environmentTexture`](./environmenttexture.md) onto a proxy geometry centered on the anchor’s position, then sampling from the projected texture.
 

@@ -20,7 +20,7 @@ static let deviceLinkedCoreAudioDeviceUID: CMIOExtensionProperty
 extern CMIOExtensionProperty const CMIOExtensionPropertyDeviceLinkedCoreAudioDeviceUID;
 ```
 
-#### Discussion
+## Discussion
 
 The property state for this property is a string with a read-only attribute.
 

@@ -25,11 +25,11 @@ var removingPercentEncoding: String? { get }
 @property (copy, readonly, nullable) NSString * stringByRemovingPercentEncoding;
 ```
 
-#### Return Value
+## Return Value
 
 A new string with the percent-encoded sequences removed, or `nil` if the receiver contains an invalid percent-encoding sequence.
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  You must call this method only on strings that you know to be percent-encoded. Calling this method on strings that are not percent-encoded can lead to misinterpreting a percent character as the beginning of a percent-encoded sequence.
 

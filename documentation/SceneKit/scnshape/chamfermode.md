@@ -25,7 +25,7 @@ var chamferMode: SCNChamferMode { get set }
 @property (nonatomic) SCNChamferMode chamferMode;
 ```
 
-#### Discussion
+## Discussion
 
 See [`SCNChamferMode`](../scnchamfermode.md) for allowed values. The default chamfer mode is [`SCNChamferMode.both`](../scnchamfermode/both.md).
 

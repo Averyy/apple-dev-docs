@@ -25,7 +25,7 @@ enum CGPathElementType
 enum CGPathElementType : int32_t;
 ```
 
-#### Overview
+## Overview
 
 For more information about paths, see [`CGPath`](./cgpath.md).
 

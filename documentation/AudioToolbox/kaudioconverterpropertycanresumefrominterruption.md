@@ -23,7 +23,7 @@ var kAudioConverterPropertyCanResumeFromInterruption: AudioConverterPropertyID {
 kAudioConverterPropertyCanResumeFromInterruption
 ```
 
-#### Discussion
+## Discussion
 
 If the property’s value is 1, the codec can resume work following an audio interruption. If the property’s value is 0, audio interruptions destroy the codec’s state.
 

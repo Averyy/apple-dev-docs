@@ -19,11 +19,11 @@
 static bool SPProjectiveTransform3DFloatIsValid(SPProjectiveTransform3DFloat transform);
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that indicates whether the projective transform is a valid transform.
 
-#### Discussion
+## Discussion
 
 Returns a Boolean value that indicates whether a projective transform is a valid transform.
 

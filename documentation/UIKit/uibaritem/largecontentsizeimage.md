@@ -23,7 +23,7 @@ var largeContentSizeImage: UIImage? { get set }
 @property (nonatomic, strong, nullable) UIImage * largeContentSizeImage;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to specify a high-resolution version of the item’s image. When displaying an assistive interface for users who are blind or have low vision, UIKit displays this image instead of the standard image. The default value of this property is `nil`.
 

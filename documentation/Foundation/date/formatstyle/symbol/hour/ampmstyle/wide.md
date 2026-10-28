@@ -21,7 +21,7 @@ A type that represents the wide day period if the locale prefers using day perio
 static let wide: Date.FormatStyle.Symbol.Hour.AMPMStyle
 ```
 
-#### Discussion
+## Discussion
 
 This type represents the hour period in a wide format where appropriate. For example, when used with `defaultDigits`, this style may represent 8 a.m. as  `8` or `8 A.M.,` and 1 p.m. as  `13` or `1 P.M.` With `twoDigits`, this style produce `08` or `08 A.M.` and `13 or 01 P.M.`
 

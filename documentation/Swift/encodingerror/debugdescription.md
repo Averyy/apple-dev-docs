@@ -21,7 +21,7 @@ A textual representation of this encoding error, intended for debugging.
 var debugDescription: String { get }
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**: The contents of the returned string are not guaranteed to remain stable: they may arbitrarily change in any Swift release.
 

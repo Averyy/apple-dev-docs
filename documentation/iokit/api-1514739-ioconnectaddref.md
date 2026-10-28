@@ -23,11 +23,11 @@ func IOConnectAddRef(_ connect: io_connect_t) -> kern_return_t
 kern_return_t IOConnectAddRef(io_connect_t connect);
 ```
 
-#### Return Value
+## Return Value
 
 A kern_return_t error code.
 
-#### Discussion
+## Discussion
 
 Adds a reference to the connect handle.
 

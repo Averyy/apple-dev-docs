@@ -23,7 +23,7 @@ case none
 UIBaselineAdjustmentNone
 ```
 
-#### Discussion
+## Discussion
 
 This is the default adjustment.
 

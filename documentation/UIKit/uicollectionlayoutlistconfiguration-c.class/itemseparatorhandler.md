@@ -18,7 +18,7 @@ The closure that provides granular control over the list separator appearance of
 @property (nonatomic, copy, nullable) UICollectionLayoutListItemSeparatorHandler itemSeparatorHandler;
 ```
 
-#### Discussion
+## Discussion
 
 The list section treats the configuration that returns from this closure as the final separator configuration for the item at the input index path.
 

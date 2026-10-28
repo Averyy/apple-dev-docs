@@ -19,7 +19,7 @@ func mouseExited(with event: NSEvent)
 - (void) mouseExited:(NSEvent *) event;
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation simply passes this message to the next responder.
 

@@ -20,7 +20,7 @@ object RefundLineItem
 - [Reporting tokens with transactions](./reportwithtransactions.md)
 - [Reporting corrections](./reportcorrections.md)
 
-#### Discussion
+## Discussion
 
 Use a `RefundLineItem` to report either:
 

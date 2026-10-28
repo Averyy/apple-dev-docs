@@ -17,11 +17,11 @@ Creates a new session object representing a connection to the xpc endpoint.
 convenience init(endpoint: XPCEndpoint, targetQueue: DispatchQueue? = nil, options: XPCSession.InitializationOptions = .none, incomingMessageHandler: (@Sendable (XPCReceivedMessage) -> (any Encodable)?)? = nil, cancellationHandler: (@Sendable (XPCRichError) -> Void)? = nil) throws
 ```
 
-#### Return Value
+## Return Value
 
 Returns a new session object. The returned session is activated by default and can be used to send messages.
 
-#### Discussion
+## Discussion
 
 > **Throws**: A `XPCRichError` describing the details of the error that occurred.
 

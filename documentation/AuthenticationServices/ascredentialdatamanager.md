@@ -19,7 +19,7 @@ This class allows submitting credentials and events to any credential manager en
 final class ASCredentialDataManager
 ```
 
-#### Overview
+## Overview
 
 By informing credential managers of new, updated, removed, or revoked credentials, they can stay synchronized with the credential information of the person using the device.
 

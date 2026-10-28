@@ -25,7 +25,7 @@ protocol UndoableIntent : SystemIntent
 
 - [Creating your first app intent](./creating-your-first-app-intent.md)
 
-#### Overview
+## Overview
 
 Add support for this protocol if your app intent performs a task that someone might want to undo from your app’s interface. This protocol provides access to an instance of the [`UndoManager`](../Foundation/undomanager.md) type suitable for use in your app intent’s code. You can use this undo manager from either your app or an app extension you use to run app intents.
 

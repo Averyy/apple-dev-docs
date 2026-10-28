@@ -24,7 +24,7 @@ class SCStream
 @interface SCStream : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use a stream to capture video of screen content like apps and windows. Create a content stream by passing it an instance of [`SCContentFilter`](./sccontentfilter.md) and an [`SCStreamConfiguration`](./scstreamconfiguration.md) object. The stream uses the filter to determine which screen content to capture, and uses the configuration data to configure the output.
 

@@ -23,11 +23,11 @@ func joined<Separator>(separator: Separator) -> JoinedSequence<Self> where Separ
 
 Available when `Element` conforms to `Sequence`.
 
-#### Return Value
+## Return Value
 
 The joined sequence of elements.
 
-#### Discussion
+## Discussion
 
 This example shows how an array of `[Int]` instances can be joined, using another `[Int]` instance as the separator:
 

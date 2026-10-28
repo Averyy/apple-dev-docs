@@ -23,7 +23,7 @@ var allowsSelectionDuringEditing: Bool { get set }
 @property (nonatomic) BOOL allowsSelectionDuringEditing;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`false`](../../Swift/false.md).
 

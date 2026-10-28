@@ -23,7 +23,7 @@ class INSpatialEventTriggerResolutionResult
 @interface INSpatialEventTriggerResolutionResult : INIntentResolutionResult
 ```
 
-#### Overview
+## Overview
 
 You return an [`INSpatialEventTriggerResolutionResult`](./inspatialeventtriggerresolutionresult.md) object when resolving parameters containing an [`INSpatialEventTrigger`](./inspatialeventtrigger.md) object. Use the creation method that best reflects your ability to resolve the parameter successfully.
 

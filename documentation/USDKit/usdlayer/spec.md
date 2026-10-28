@@ -20,7 +20,7 @@ A handle to a single spec stored in a layer.
 struct Spec
 ```
 
-#### Overview
+## Overview
 
 `Spec` is the untyped base used when retrieving a spec from a layer without knowing its concrete type. All concrete spec types (`USDPrim.Spec`, `USDPrim.Property.Spec`, etc.) conform to the nested [`USDLayer.Spec.MetadataCollection`](./spec/metadatacollection.md) and [`USDLayer.Spec.FieldCollection`](./spec/fieldcollection.md) protocols for shared metadata and field operations.
 

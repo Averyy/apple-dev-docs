@@ -24,11 +24,11 @@ class func bumpDistortionLinear() -> any CIFilter & CIBumpDistortionLinear
 + (CIFilter<CIBumpDistortionLinear> *) bumpDistortionLinearFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The distorted image.
 
-#### Discussion
+## Discussion
 
 This method applies the bump distortion linear filter to an image. This effect creates a concave or convex bump to a linear portion of the image. The curvature of the bump is defined by the `scale` property. A value of 0.0 has no effect, while a positive value creates an outward curvature and a negative value creates an inward curvature.
 

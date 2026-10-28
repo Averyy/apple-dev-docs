@@ -19,7 +19,7 @@ var placement: CGRect { get }
 @property (nonatomic, readonly) CGRect placement;
 ```
 
-#### Discussion
+## Discussion
 
 For layout grids with more than one column, the values in the rectangle will always have integer value.  For fixed layouts, rectangle values will be in fractional unit values.
 

@@ -24,7 +24,7 @@ var kAudioFileGlobalInfo_AvailableStreamDescriptionsForFormat: AudioFileProperty
 kAudioFileGlobalInfo_AvailableStreamDescriptionsForFormat
 ```
 
-#### Discussion
+## Discussion
 
 The audio stream basic description structures have the following fields filled in: `mFormatID`, `mFormatFlags`, and `mBitsPerChannel` for writing new files. When accessing this property, provide a pointer, in the `inSpecifier` parameter, to an audio file type and format ID structure.
 

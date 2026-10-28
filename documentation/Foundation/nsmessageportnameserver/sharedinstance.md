@@ -16,7 +16,7 @@ Returns the singleton instance of `NSMessagePortNameServer`.
 + (id) sharedInstance;
 ```
 
-#### Return Value
+## Return Value
 
 The singleton instance of `NSMessagePortNameServer` with which you register and look up `NSMessagePort` objects.
 

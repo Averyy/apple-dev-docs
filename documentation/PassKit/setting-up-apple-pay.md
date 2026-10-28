@@ -5,7 +5,7 @@
 
 Fulfill the requirements to provide Apple Pay as a payment option on your website or in your app.
 
-#### Overview
+## Overview
 
 To set up your Apple developer account and Xcode to implement Apple Pay in your apps, you complete three steps:
 
@@ -13,17 +13,17 @@ To set up your Apple developer account and Xcode to implement Apple Pay in your 
 - Create a Payment Processing certificate.
 - Enable Apple Pay in Xcode.
 
-##### Create a merchant identifier
+### Create a merchant identifier
 
 To enable your app to use Apple Pay, register an identifier with Apple that uniquely identifies your business as a merchant able to accept payments. This ID never expires, and you can use it in multiple websites and apps. See [Create a merchant identifier](https://developer.apple.com/help/account/configure-app-capabilities/configure-apple-pay#create-a-merchant-identifier) for the setup steps.
 
-##### Create a payment processing certificate
+### Create a payment processing certificate
 
 Using your registered merchant identifier, create a certificate to secure transaction data. Apple Pay servers use the certificate’s public key to encrypt payment data. You (or your payment service provider) use the private key to decrypt the data to process payments. See [Create a payment processing certificate](https://developer.apple.com/help/account/configure-app-capabilities/configure-apple-pay#create-a-payment-processing-certificate) for the setup steps.
 
 > **Note**:  If you use an e-commerce provider or a payment platform, contact them for information about how to use their service with Apple Pay. See [Payment Platforms](https://developer.apple.com/apple-pay/#payment-platforms) for a list of service providers.
 
-##### Enable Apple Pay capability in Xcode
+### Enable Apple Pay capability in Xcode
 
 After creating a merchant identifier, enable the Apple Pay capability in your Xcode project.
 
@@ -40,7 +40,7 @@ The screenshot below shows the Apple Pay capability without any merchant identif
 
 For more information, see [Adding capabilities to your app](../Xcode/adding-capabilities-to-your-app.md).
 
-##### Configure Apple Pay on the web
+### Configure Apple Pay on the web
 
 If you’re also developing websites using [Apple Pay on the Web](../ApplePayontheWeb/ApplePayontheWeb.md), you can use the same merchant ID and Payment Processing Certificate for your website. However, Apple Pay on the web requires additional setup; see [Configuring Your Environment](../ApplePayontheWeb/configuring-your-environment.md), [Get Started with Apple Pay on the Web](https://developer.apple.com/videos/play/tech-talks/111381), and the [Apple Pay Merchant Integration Guide](http://developer.apple.com/apple-pay/Apple-Pay-Merchant-Integration-Guide.pdf) for more information.
 

@@ -15,7 +15,7 @@ Gets the offset to the beginning of the packet in the corresponding memory buffe
 virtual kern_return_t GetMemorySegmentOffset(uint64_t *offset) const;
 ```
 
-#### Return Value
+## Return Value
 
 `kIOReturnSuccess` on success, or another value if an error occurred.
 

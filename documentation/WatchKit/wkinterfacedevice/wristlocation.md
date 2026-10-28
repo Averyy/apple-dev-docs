@@ -19,7 +19,7 @@ var wristLocation: WKInterfaceDeviceWristLocation { get }
 @property (nonatomic, readonly) WKInterfaceDeviceWristLocation wristLocation;
 ```
 
-#### Discussion
+## Discussion
 
 Users specify the wrist placement during the initial setup of Apple Watch, and this property reflects the information provided by the user.
 

@@ -5,7 +5,7 @@
 
 Analyze how often people open your App Store apps, and the average session duration.
 
-#### Overview
+## Overview
 
 Use these reports to understand how often people open your app, and how long they spend in your app.
 
@@ -25,7 +25,7 @@ Use these reports to understand how often people open your app, and how long the
 
 The Analytics Reports framework delivers new portions of report content as instances. Each instance can contain one or more batches of data, to accommodate late-arriving events, or in rare cases, data corrections.  To learn more, see [Data Completeness and Corrections](./data-completeness-corrections.md).
 
-#### Report Fields
+## Report Fields
 
 | Report Field | Description | Data Type | Standard Report | Detailed Report |
 | --- | --- | --- | --- | --- |
@@ -46,7 +46,7 @@ The Analytics Reports framework delivers new portions of report content as insta
 | Total Session Duration | The total duration, in seconds, of all sessions being reported. | `integer` | ✔ | ✔ |
 | Unique Devices | The number of unique devices contributing to the total number of sessions being reported. | `integer` | ✔ | ✔ |
 
-#### Glossary
+## Glossary
 
 | Dimension | Value | Definition |
 | --- | --- | --- |

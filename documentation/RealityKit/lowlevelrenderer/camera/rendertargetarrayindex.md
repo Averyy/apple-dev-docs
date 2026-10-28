@@ -18,7 +18,7 @@ The index into the render target texture array slice for this camera.
 var renderTargetArrayIndex: Int { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Corresponds to `MTLRenderPassDescriptor.renderTargetArrayLength` slices.
 

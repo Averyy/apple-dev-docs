@@ -25,7 +25,7 @@ var path: String? { get set }
 @property (copy, nullable) NSString * path;
 ```
 
-#### Discussion
+## Discussion
 
 For example, in the URL `http://www.example.com/index.html`, the path is `/index.html`.
 

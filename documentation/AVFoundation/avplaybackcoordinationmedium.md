@@ -24,7 +24,7 @@ class AVPlaybackCoordinationMedium
 @interface AVPlaybackCoordinationMedium : NSObject
 ```
 
-#### Overview
+## Overview
 
 The coordination medium passes states and messages from one playback coordinator to all other connected playback coordinators to enable coordination of rate changes and seeks. Subclasses of this type that are used from Swift must fulfill the requirements of a Sendable type.
 

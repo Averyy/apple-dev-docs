@@ -19,7 +19,7 @@ class let didResignKeyNotification: NSNotification.Name
 extern NSNotificationName NSWindowDidResignKeyNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is the `NSWindow` object that resigned its key window status. This notification doesn’t contain a `userInfo` dictionary.
 

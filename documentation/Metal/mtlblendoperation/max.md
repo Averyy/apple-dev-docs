@@ -24,7 +24,7 @@ case max
 MTLBlendOperationMax
 ```
 
-#### Discussion
+## Discussion
 
 `RGB = max(Source.rgb, Dest.rgb)`
 

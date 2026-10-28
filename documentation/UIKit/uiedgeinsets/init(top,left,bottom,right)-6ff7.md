@@ -20,11 +20,11 @@ Creates an edge insets structure with the specified edges.
 init(top: CGFloat, left: CGFloat, bottom: CGFloat, right: CGFloat)
 ```
 
-#### Return Value
+## Return Value
 
 An initialized inset structure.
 
-#### Discussion
+## Discussion
 
 An inset is a margin around a rectangle. Positive values represent margins closer to the center of the rectangle, while negative values represent margins further from the center.
 

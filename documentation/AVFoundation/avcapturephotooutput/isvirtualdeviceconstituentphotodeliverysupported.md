@@ -22,7 +22,7 @@ var isVirtualDeviceConstituentPhotoDeliverySupported: Bool { get }
 @property (nonatomic, readonly, getter=isVirtualDeviceConstituentPhotoDeliverySupported) BOOL virtualDeviceConstituentPhotoDeliverySupported;
 ```
 
-#### Discussion
+## Discussion
 
 The system only supports virtual device constituent photo delivery for certain capture session presets and capture device formats.
 

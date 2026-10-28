@@ -21,11 +21,11 @@ Generates a column slice that contains unique elements.
 func distinct() -> AnyColumnSlice
 ```
 
-#### Return Value
+## Return Value
 
 A type-erased column slice.
 
-#### Discussion
+## Discussion
 
 The method only adds the first of multiple elements with the same value — the element with the smallest index — to the slice.
 

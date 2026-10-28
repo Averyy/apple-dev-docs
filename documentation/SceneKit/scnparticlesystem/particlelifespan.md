@@ -25,7 +25,7 @@ var particleLifeSpan: CGFloat { get set }
 @property (nonatomic) CGFloat particleLifeSpan;
 ```
 
-#### Discussion
+## Discussion
 
 After each particle is spawned, it appears in the scene for a period of this duration before being removed from the scene. You can randomize the life spans of newly spawned particles with the [`particleLifeSpanVariation`](./particlelifespanvariation.md) property.
 

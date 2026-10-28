@@ -20,7 +20,7 @@ class AVCaptureDeskViewApplication
 @interface AVCaptureDeskViewApplication : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use this class to programmatically launch Desk View from your app. You can optionally customize the presentation and specifiy an action to take afterward.
 

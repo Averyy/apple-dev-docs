@@ -19,7 +19,7 @@ Creates a reshape layer with the shape you specify.
 + (instancetype) layerWithShape:(NSArray<NSNumber *> *) shape;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`MLCReshapeLayer`](../mlcreshapelayer.md) instance.
 

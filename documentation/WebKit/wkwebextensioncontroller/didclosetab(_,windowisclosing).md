@@ -20,7 +20,7 @@ Should be called by the app when a tab is closed to fire appropriate events with
 @preconcurrency func didCloseTab(_ closedTab: any WKWebExtensionTab, windowIsClosing: Bool = false)
 ```
 
-#### Discussion
+## Discussion
 
 This method informs all loaded extensions of the closing of a tab, ensuring consistent understanding across extensions.
 

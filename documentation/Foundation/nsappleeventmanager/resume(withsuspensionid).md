@@ -20,7 +20,7 @@ func resume(withSuspensionID suspensionID: NSAppleEventManager.SuspensionID)
 - (void) resumeWithSuspensionID:(NSAppleEventManagerSuspensionID) suspensionID;
 ```
 
-#### Discussion
+## Discussion
 
 This may result in the immediate sending of the reply event to the sender of the suspended event, if the sender has requested a reply. If `suspensionID` has been used in a previous invocation of [`setCurrentAppleEventAndReplyEventWithSuspensionID(_:)`](./setcurrentappleeventandreplyeventwithsuspensionid%28_%29.md) the effects of that invocation are completely undone. Redundant invocations of [`resume(withSuspensionID:)`](./resume%28withsuspensionid%29.md) are ignored. Subsequent invocations of other `NSAppleEventManager` methods using the same suspension ID are invalid. [`resume(withSuspensionID:)`](./resume%28withsuspensionid%29.md) may be invoked in any thread, not just the one in which the corresponding invocation of [`suspendCurrentAppleEvent()`](./suspendcurrentappleevent%28%29.md) occurred.
 

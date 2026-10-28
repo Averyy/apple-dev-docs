@@ -5,7 +5,7 @@
 
 References a compound clip media.
 
-#### Overview
+## Overview
 
 Use a `ref-clip` element to describe a timeline sequence created from a [Compound Clip Media](./compound-clip-media.md). The edit uses the entire set of media components in the compound clip media. Specify the timing of the edit through the [Timing Attributes](./timing-attributes.md).
 

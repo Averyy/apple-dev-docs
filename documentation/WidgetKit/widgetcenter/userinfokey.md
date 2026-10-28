@@ -20,7 +20,7 @@ An object that defines keys for accessing information in a user info dictionary.
 struct UserInfoKey
 ```
 
-#### Overview
+## Overview
 
 > **Note**: In Objective-C, use [`WGWidgetUserInfoKeyFamily`](../wgwidgetuserinfokeyfamily.md) and [`WGWidgetUserInfoKeyKind`](../wgwidgetuserinfokeykind.md) instead.
 

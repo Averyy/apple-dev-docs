@@ -24,11 +24,11 @@ func position(from position: UITextPosition, offset: Int) -> UITextPosition?
 - (UITextPosition *) positionFromPosition:(UITextPosition *) position offset:(NSInteger) offset;
 ```
 
-#### Return Value
+## Return Value
 
 A custom [`UITextPosition`](../uitextposition.md) object that represents the location in a document that is at the specified offset from `position`. Return `nil` if the computed text position is less than 0 or greater than the length of the backing string.
 
-#### Discussion
+## Discussion
 
 For an example of an implementation of this method, see [Using Text Kit to Draw and Manage Text](https://developer.apple.com/library/archive/documentation/StringsTextFonts/Conceptual/TextAndWebiPhoneOS/CustomTextProcessing/CustomTextProcessing.html#//apple_ref/doc/uid/TP40009542-CH4) in [Text Programming Guide for iOS](https://developer.apple.com/library/archive/documentation/StringsTextFonts/Conceptual/TextAndWebiPhoneOS/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009542).
 

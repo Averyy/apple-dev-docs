@@ -25,7 +25,7 @@ case leftMirrored
 kCGImagePropertyOrientationLeftMirrored
 ```
 
-#### Discussion
+## Discussion
 
 The (x,y) pixel coordinates of the origin point (0,0) represent the top row and leftmost column, respectively. Pixel (x,y) positions increase top-to-bottom, left-to-right.
 

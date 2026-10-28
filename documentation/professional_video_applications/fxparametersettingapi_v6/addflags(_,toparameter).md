@@ -20,11 +20,11 @@ func addFlags(_ flags: FxParameterFlags, toParameter parameterID: UInt32) -> Boo
 - (BOOL) addFlags:(FxParameterFlags) flags toParameter:(UInt32) parameterID;
 ```
 
-#### Return Value
+## Return Value
 
 Returns `YES` if the method successfully adds the flags; otherwise, `NO`.
 
-#### Discussion
+## Discussion
 
 Use this method to set one or more parameter flags without changing the value of other flags.
 

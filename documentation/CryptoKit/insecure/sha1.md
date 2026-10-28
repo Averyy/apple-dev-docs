@@ -21,7 +21,7 @@ An implementation of SHA1 hashing.
 struct SHA1
 ```
 
-#### Overview
+## Overview
 
 The [`Insecure.SHA1`](./sha1.md) hash implements the [`HashFunction`](../hashfunction.md) protocol to produce a SHA1 digest ([`Insecure.SHA1Digest`](./sha1digest.md)).
 

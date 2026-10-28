@@ -13,7 +13,7 @@
 errno_t ifnet_stat(ifnet_t interface, struct ifnet_stats_param *out_stats);
 ```
 
-#### Return Value
+## Return Value
 
 0 on success otherwise the errno error.
 

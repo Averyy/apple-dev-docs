@@ -20,7 +20,7 @@ A configuration of a menu.
 struct MenuStyleConfiguration
 ```
 
-#### Overview
+## Overview
 
 Use the [`init(_:)`](./menu/init%28_%29.md) initializer of [`Menu`](./menu.md) to create an instance using the current menu style, which you can modify to create a custom style.
 

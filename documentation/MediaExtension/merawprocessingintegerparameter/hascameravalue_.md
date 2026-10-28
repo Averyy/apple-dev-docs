@@ -15,11 +15,11 @@ The optional camera value for this parameter.
 - (BOOL) hasCameraValue:(NSInteger *) outCameraValue;
 ```
 
-#### Return Value
+## Return Value
 
 `YES` if a camera value exists for this parameter; otherwise, `NO`.
 
-#### Discussion
+## Discussion
 
 This value represents the “as shot” configured camera value for a parameter at the time the media was captured. If the return value is `YES` and `outCameraValue` isn’t nil, the value held by `outCameraValue` will be set to the camera value. If the return value is `NO` and `outCameraValue` isn’t nil, the value held by `outCameraValue` will be set to 0.
 

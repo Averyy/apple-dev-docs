@@ -25,11 +25,11 @@ class func wait(forDuration duration: TimeInterval, withRange durationRange: Tim
 + (SKAction *) waitForDuration:(NSTimeInterval) duration withRange:(NSTimeInterval) durationRange;
 ```
 
-#### Return Value
+## Return Value
 
 A new action object.
 
-#### Discussion
+## Discussion
 
 When the action executes, the action waits for the specified amount of time, then ends. This is typically used as part of a sequence of actions to insert a delay between two other actions. However, you might also use it in conjunction with the [`run(_:completion:)`](../sknode/run%28_,completion%29.md) method to trigger code that needs to run at a later time.
 

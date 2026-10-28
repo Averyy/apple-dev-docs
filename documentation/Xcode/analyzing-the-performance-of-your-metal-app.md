@@ -5,11 +5,11 @@
 
 Ensure consistent, smooth rendering by profiling your app’s frame time.
 
-#### Overview
+## Overview
 
 A low-performing frame rate can cause an app to seem sluggish or disruptive to its users, so it’s important to remove temporary interruptions, or *stutters*, to optimize your app’s user experience. To get information about the cause of slowness in your app’s frame rate, you can use the Game Performance template in Instruments, which combines threading and system call information with the Metal system trace instrument. By presenting important app states and rendering activities, the Game Performance template helps you infer the changes that are necessary to achieve consistent, smooth rendering.
 
-##### Open the Game Performance template
+### Open the Game Performance template
 
 Start the performance analysis from your Xcode project by choosing Product > Profile, or by pressing Command-I. Alternatively, you can launch Instruments and choose a target app.
 
@@ -17,7 +17,7 @@ In the Template Selection window, select Game Performance and click Choose.
 
 ![A screenshot of the Template Selection window with the Game Performance template selected.](https://developer.apple.com/tutorials/images/com.apple.Xcode/gputools-instruments-game-performance-choose-template@2x.png)
 
-##### Get to know the instruments
+### Get to know the instruments
 
 The Game Performance template includes the following instruments:
 
@@ -33,7 +33,7 @@ The Game Performance template includes the following instruments:
 - **GPU**: Records GPU events.
 - **Display**: Records display and vertical synchronization events.
 
-##### Include performance limiter or utilization counters
+### Include performance limiter or utilization counters
 
 By default, Instruments doesn’t collect performance counters data. You can optionally include this for the instruments. Click and hold the Record button and choose Recording Options.
 
@@ -45,7 +45,7 @@ Then, in the Recording Options popover, choose the Performance Limiters option f
 
 When you record the Instruments trace, it collects performance limiter and utilization counters data.
 
-##### Record an Instruments capture
+### Record an Instruments capture
 
 Begin collecting the data by clicking the Record button.
 
@@ -53,7 +53,7 @@ Begin collecting the data by clicking the Record button.
 
 Within your app, perform the actions that reproduce a slow frame rate, and then click the Record button to stop recording.
 
-##### Identify performance anomalies
+### Identify performance anomalies
 
 To expedite your review of the capture results, narrow your focus to around the time the frame rate was slow. Sometimes a frame rate anomaly is a result of infrequently skipped frames, and other times it’s due to a consistently poor frame rate. In either case, you identify frame rate anomalies by finding unexpected delay in your app’s display times.
 
@@ -69,7 +69,7 @@ A duration of 16.67 ms is one 60 fps frame, and because all other frames consist
 
 Not all displays use a frame interval of ~16 ms. For example, vertical synchronization can happen on ~4 ms intervals. It isn’t a requirement that display instances align with vertical synchronization for a healthy frame rate. An app that uses a 20 ms frame interval is a healthy frame rate as long as it consistently achieves 50 fps. However, a delay of 50 ms is much too long for smooth animations.
 
-##### Check GPU utilization
+### Check GPU utilization
 
 After finding a performance anomaly, look for the cause by examining the GPU activities occurring around that time. The GPU Hardware track shows your shader pipeline stages that run on the shader cores. Any long-running stages or inconsistent durations in the track timeline can indicate a utilization issue. For example, the following screenshot shows a case where a display instance spanned multiple frame intervals, meaning that the app unintentionally skipped frames:
 
@@ -91,7 +91,7 @@ The following are additional reasons for overutilization of the shader cores:
 - **Large meshes:** Indicated by a high number of vertices that your app submits. Check the affected frames using the Geometry viewer. For more information, see [Inspecting the geometry of a draw command](./inspecting-the-geometry-of-a-draw-command.md).
 - **Unoptimized shader code:** Indicated by general shader sluggishness. If you’re able to modify your app’s shaders, profile them to identify hot spots. For example, you can optimize your shaders by downsizing data types, or by minimizing the use of control structures. You don’t necessarily know whether your shaders can benefit from optimization until you try it. For more information, see [Inspecting shaders](./inspecting-shaders.md).
 
-##### Check CPU utilization
+### Check CPU utilization
 
 While checking your shader core utilization, also look for signs that indicate problems with your app’s CPU utilization. The screenshot below shows a case where frame skipping appears to result from something other than the shader core. Note the gap where the shader core was idle for multiple frames.
 
@@ -120,7 +120,7 @@ By contrast, if your rendering threads don’t show much blocked time, it’s li
 
 The time a thread spends running is represented by the collection of blue and orange areas in the timeline track. If a frame interval has little blocked time, it indicates CPU overutilization. To resolve the issue, focus your optimization efforts on improving slow-running code. Because the long-running methods are in your host app, you can easily determine whether — and how — you can optimize them to run faster.
 
-##### Check CPU thread prioritization
+### Check CPU thread prioritization
 
 Other processes can preempt your app if you misconfigure thread priority. To consider these kinds of thread-related pipelining issues, check the System Load track.
 
@@ -142,7 +142,7 @@ In the above screenshot, the Preempted thread state indicates that other Runnabl
 
 A priority of 45 is recommended for rendering threads. To set your thread’s priority, call `pthread_attr_setschedparam(_:_:)` before creating your thread with `pthread_create(_:_:_:_:)`. For more information on thread priorities, see [Tune CPU job scheduling for Apple silicon games](https://developer.apple.com/videos/play/tech-talks/110147/).
 
-##### Check CPU-GPU overlap
+### Check CPU-GPU overlap
 
 In addition to shader core and CPU utilization, more subtle causes of low frame rate involve CPU-GPU pipelining. In this context, *pipelining* refers to how well your app coordinates the efforts of the CPU and the GPU while maintaining a consistent frame rate. By minimizing the amount of time the CPU and the GPU wait for each other, you maximize the amount of work each unit does in parallel. That’s called *CPU-GPU overlap*.
 

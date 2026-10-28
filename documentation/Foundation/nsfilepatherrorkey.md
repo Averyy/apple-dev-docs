@@ -25,7 +25,7 @@ let NSFilePathErrorKey: String
 extern NSErrorUserInfoKey const NSFilePathErrorKey;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is an `NSString` object.
 

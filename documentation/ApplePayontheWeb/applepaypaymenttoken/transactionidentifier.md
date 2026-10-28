@@ -16,7 +16,7 @@ A unique identifier for this payment.
 DOMString transactionIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 This identifier is suitable for use in a receipt.
 

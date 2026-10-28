@@ -19,7 +19,7 @@ func setPredicate(_ predicate: NSPredicate)
 - (void) setPredicate:(NSPredicate *) predicate;
 ```
 
-#### Discussion
+## Discussion
 
 This method is only called if [`match(for:)`](./match%28for%29.md) returned a positive value for the receiver.
 

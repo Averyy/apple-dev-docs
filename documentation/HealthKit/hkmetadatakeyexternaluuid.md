@@ -24,7 +24,7 @@ let HKMetadataKeyExternalUUID: String
 extern NSString * const HKMetadataKeyExternalUUID;
 ```
 
-#### Discussion
+## Discussion
 
 This key takes a string value. This value is independent of the UUID assigned to the object by the HealthKit store. You can assign your own UUID to any HealthKit objects you create. Use these IDs to uniquely identify objects in your application. You typically use the UUID from the corresponding data entry on your server. This lets you create multiple copies of that data across multiple devices. Each copy shares the same external UUID.
 

@@ -28,7 +28,7 @@ class GCControllerLiveInput
 
 - [Handling input events](./handling-input-events.md)
 
-#### Overview
+## Overview
 
 Instances of [`GCControllerLiveInput`](./gccontrollerliveinput.md) represent the current input state of a controller. You can save snapshots of the input state and receive callbacks when the input state changes. You can also get the elements of the controller and their current input values from [`GCControllerLiveInput`](./gccontrollerliveinput.md) instances.
 

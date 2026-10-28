@@ -25,7 +25,7 @@ typealias BookmarkFileCreationOptions = Int
 typedef NSUInteger NSURLBookmarkFileCreationOptions;
 ```
 
-#### Discussion
+## Discussion
 
 See [`NSURL.BookmarkCreationOptions`](./bookmarkcreationoptions.md) for more information.
 

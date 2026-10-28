@@ -23,7 +23,7 @@ var opacity: CGFloat { get }
 @property (nonatomic, readonly) CGFloat opacity;
 ```
 
-#### Discussion
+## Discussion
 
 The opacity of a [`PKStrokePointReference`](../pkstrokepointreference.md) has a range of 0-2, which is a multiplier of the ink opacity.
 

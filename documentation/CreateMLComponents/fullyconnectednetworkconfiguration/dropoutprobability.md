@@ -21,7 +21,7 @@ The dropout probability.
 var dropoutProbability: Float
 ```
 
-#### Discussion
+## Discussion
 
 Dropout layers are placed after fully-connected layers to help prevent over-fitting.
 

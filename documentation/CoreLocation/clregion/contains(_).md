@@ -22,11 +22,11 @@ func contains(_ coordinate: CLLocationCoordinate2D) -> Bool
 - (BOOL) containsCoordinate:(CLLocationCoordinate2D) coordinate;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the coordinate lies within the region’s boundaries or [`false`](../../Swift/false.md) if it does not.
 
-#### Discussion
+## Discussion
 
 In iOS, use a [`CLCircularRegion`](../clcircularregion.md) object to manage geographic regions.
 

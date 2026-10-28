@@ -17,7 +17,7 @@ Use the property’s name converted to lowercase with words separated by hyphens
 static var long: NameSpecification { get }
 ```
 
-#### Discussion
+## Discussion
 
 For example, a property named `allowLongNames` would be converted to the label `--allow-long-names`.
 

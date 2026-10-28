@@ -29,7 +29,7 @@ var waitsForConnectivity: Bool { get set }
 
 - [Fetching website data into memory](../fetching-website-data-into-memory.md)
 
-#### Discussion
+## Discussion
 
 Connectivity might be temporarily unavailable for several reasons. For example, a device might only have a cellular connection when [`allowsCellularAccess`](./allowscellularaccess.md) is set to `false`, or the device might require a VPN connection but none is available. If the value of this property is `true` and sufficient connectivity is unavailable, the session calls the [`urlSession(_:taskIsWaitingForConnectivity:)`](../urlsessiontaskdelegate/urlsession%28_,taskiswaitingforconnectivity%29.md) method of [`URLSessionTaskDelegate`](../urlsessiontaskdelegate.md) and waits for connectivity. When connectivity becomes available, the task begins its work and ultimately calls the delegate or completion handler as usual.
 

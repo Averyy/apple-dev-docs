@@ -24,7 +24,7 @@ var progressHandler: ((Double, UnsafeMutablePointer<ObjCBool>) -> Void)? { get s
 @property (nonatomic, copy, nullable) void (^progressHandler)(double progress, BOOL *stop);
 ```
 
-#### Discussion
+## Discussion
 
 If you request an asset whose data is not on the local device, and have enabled downloading with the [`isNetworkAccessAllowed`](./isnetworkaccessallowed.md) property, Photos calls your block periodically to report progress and allow canceling the download.
 

@@ -21,7 +21,7 @@ A type that defines the scroll behavior of a scrollable view.
 protocol ScrollTargetBehavior
 ```
 
-#### Overview
+## Overview
 
 A scrollable view calculates where scroll gestures should end using its deceleration rate and the state of its scroll gesture by default. A scroll behavior allows for customizing this logic.
 
@@ -40,7 +40,7 @@ struct BasicScrollTargetBehavior: ScrollTargetBehavior {
 }
 ```
 
-##### Paging Behavior
+### Paging Behavior
 
 SwiftUI offers built in scroll behaviors. One such behavior is the [`PagingScrollTargetBehavior`](./pagingscrolltargetbehavior.md) which uses the geometry of the scroll view to decide where to allow scrolls to end.
 
@@ -57,7 +57,7 @@ ScrollView {
 .scrollTargetBehavior(.paging)
 ```
 
-##### View Aligned Behavior
+### View Aligned Behavior
 
 SwiftUI also offers a [`ViewAlignedScrollTargetBehavior`](./viewalignedscrolltargetbehavior.md) scroll behavior that will always settle on the geometry of individual views.
 

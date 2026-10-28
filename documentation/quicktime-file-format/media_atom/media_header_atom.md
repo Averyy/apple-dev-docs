@@ -6,7 +6,7 @@
 
 This atom contains the standard media information.
 
-#### Overview
+## Overview
 
 See [`Media header atom`](../media_header_atom.md).
 

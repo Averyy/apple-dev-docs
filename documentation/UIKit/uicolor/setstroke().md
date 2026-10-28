@@ -24,7 +24,7 @@ func setStroke()
 - (void) setStroke;
 ```
 
-#### Discussion
+## Discussion
 
 If you subclass `UIColor`, you must implement this method in your subclass. Your custom implementation should modify the stroke color in the current graphics context by setting it to the color represented by the receiver.
 

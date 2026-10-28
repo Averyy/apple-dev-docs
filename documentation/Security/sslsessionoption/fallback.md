@@ -22,7 +22,7 @@ case fallback
 kSSLSessionOptionFallback
 ```
 
-#### Discussion
+## Discussion
 
 Use this option when retyring an SSL connection with a lower protocol version because of failure to connect.
 

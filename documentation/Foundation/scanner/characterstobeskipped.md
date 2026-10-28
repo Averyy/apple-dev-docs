@@ -25,7 +25,7 @@ var charactersToBeSkipped: CharacterSet? { get set }
 @property (copy, nullable) NSCharacterSet * charactersToBeSkipped;
 ```
 
-#### Discussion
+## Discussion
 
 Characters to be skipped are skipped prior to the scanner examining the target. For example, if a scanner ignores spaces and you send it a [`scanInt32(_:)`](./scanint32%28_%29.md) message, it skips spaces until it finds a decimal digit or other character. While an element is being scanned, no characters are skipped. If you scan for something made of characters in the set to be skipped (for example, using [`scanInt32(_:)`](./scanint32%28_%29.md) when the set of characters to be skipped is the decimal digits), the result is undefined.
 

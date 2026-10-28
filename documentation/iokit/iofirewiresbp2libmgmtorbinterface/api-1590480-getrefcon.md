@@ -16,11 +16,11 @@ Returns the current function of the management ORB.
 void *(*getRefCon)(void *self);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the function of the management ORB.
 
-#### Discussion
+## Discussion
 
 Returns the function of the management ORB. This is the same value that was set with setCommandFunction.
 

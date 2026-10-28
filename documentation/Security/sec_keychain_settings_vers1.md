@@ -20,7 +20,7 @@ var SEC_KEYCHAIN_SETTINGS_VERS1: Int32 { get }
 #define SEC_KEYCHAIN_SETTINGS_VERS1
 ```
 
-#### Discussion
+## Discussion
 
 This value is used in the [`version`](./seckeychainsettings/version.md) parameter of a [`SecKeychainSettings`](./seckeychainsettings.md) structure.
 

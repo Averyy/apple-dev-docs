@@ -29,7 +29,7 @@ func calculateETA() async throws -> MKDirections.ETAResponse
 - (void) calculateETAWithCompletionHandler:(MKETAHandler) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 This method initiates a request for a travel-time estimate and calls your completion handler block with the results. Travel-time estimates take much less time to generate than directions, so use this method in situations where you want a time estimate only. The method executes your completion handler on your app’s main thread. The implementation of your handler needs to check for errors and then incorporate the response data as appropriate.
 

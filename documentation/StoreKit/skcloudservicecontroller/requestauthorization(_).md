@@ -35,7 +35,7 @@ class func requestAuthorization() async -> SKCloudServiceAuthorizationStatus
 - [Requesting Access to Apple Music Library](../requesting-access-to-apple-music-library.md)
 - [Determining a person’s Apple Music capabilities](../determining-a-person-s-apple-music-capabilities.md)
 
-#### Discussion
+## Discussion
 
 You can use this method to ask the user for permission to play Apple Music tracks or to add tracks to the music library.
 

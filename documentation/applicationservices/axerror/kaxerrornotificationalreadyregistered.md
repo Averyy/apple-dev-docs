@@ -13,7 +13,7 @@
 kAXErrorNotificationAlreadyRegistered = -25209
 ```
 
-#### Discussion
+## Discussion
 
 This notification has already been registered for.
 

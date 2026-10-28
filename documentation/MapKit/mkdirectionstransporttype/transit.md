@@ -25,7 +25,7 @@ static var transit: MKDirectionsTransportType { get }
 MKDirectionsTransportTypeTransit
 ```
 
-#### Discussion
+## Discussion
 
 This type is only supported for estimating time of arrival.
 

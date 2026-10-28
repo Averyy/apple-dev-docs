@@ -25,7 +25,7 @@ class var localFront: SCNVector3 { get }
 @property (class, nonatomic, readonly) SCNVector3 localFront;
 ```
 
-#### Discussion
+## Discussion
 
 The “forward” direction of a node affects cameras and directional lighting attached to a node, as well as relative orientation and movement effects such as [`look(at:)`](./look%28at%29.md), [`SCNLookAtConstraint`](../scnlookatconstraint.md), and [`SCNBillboardConstraint`](../scnbillboardconstraint.md).
 

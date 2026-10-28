@@ -24,11 +24,11 @@ func toObject() -> Any!
 - (id) toObject;
 ```
 
-#### Return Value
+## Return Value
 
 An Objective-C or Swift object representing the JavaScript value.
 
-#### Discussion
+## Discussion
 
 The type of the resulting object depends on the contents of the JavaScript value. For conversion rules, see [Convert Between JavaScript and Native Types](../jsvalue.md#Convert-Between-JavaScript-and-Native-Types).
 

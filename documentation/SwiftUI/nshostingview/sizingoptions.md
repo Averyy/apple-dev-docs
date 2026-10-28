@@ -16,7 +16,7 @@ The options for how the hosting view creates and updates constraints based on th
 @preconcurrency var sizingOptions: NSHostingSizingOptions { get set }
 ```
 
-#### Discussion
+## Discussion
 
 NSHostingView can create minimum, maximum, and ideal (content size) constraints that are derived from its SwiftUI view content. These constraints are only created when Auto Layout constraints are otherwise being used in the containing window.
 

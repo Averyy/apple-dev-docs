@@ -23,7 +23,7 @@ func setTitle(_ title: String?, for state: UIControl.State)
 - (void) setTitle:(NSString *) title forState:(UIControlState) state;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to set the title for the button. The title you specify derives its formatting from the button’s associated label object. If you set both a title and an attributed title for the button, the button prefers the use of the attributed title over this one.
 

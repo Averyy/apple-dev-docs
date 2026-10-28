@@ -25,7 +25,7 @@ struct IntentDefinitions
 
 - [Testing your App Intents code](./testing-your-app-intents-code.md)
 
-#### Overview
+## Overview
 
 Use the `IntentDefinitions` structure as the entry point for creating type-erased app intents for testing. Provide the bundle identifier of the app under test, then use subscript syntax to retrieve definitions for intents, entities, enums, or value queries as shown in the following example:
 

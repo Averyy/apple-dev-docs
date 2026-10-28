@@ -25,7 +25,7 @@ protocol CLBodyIdentifiable : NSObjectProtocol
 @protocol CLBodyIdentifiable <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Adopt this protocol to identify a custom body, or pass a conforming view, such as a [UIKit](../UIKit/UIKit.md) [`UIView`](../UIKit/uiview.md), to associate heading updates with your app’s user interface. When you set [`headingBody`](./cllocationmanager/headingbody.md) to an object conforming to [`CLBodyIdentifiable`](./clbodyidentifiable.md), Core Location calculates compass heading relative to that view rather than the device’s physical orientation.
 

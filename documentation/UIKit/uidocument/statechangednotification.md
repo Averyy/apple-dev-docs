@@ -23,7 +23,7 @@ class let stateChangedNotification: NSNotification.Name
 extern NSNotificationName const UIDocumentStateChangedNotification;
 ```
 
-#### Discussion
+## Discussion
 
 When handling this notification, check the value of the [`documentState`](./documentstate.md) property to see what the new state is, and then proceed accordingly. There’s no `userInfo` dictionary.
 

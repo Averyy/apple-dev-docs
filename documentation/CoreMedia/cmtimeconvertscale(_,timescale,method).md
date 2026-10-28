@@ -25,11 +25,11 @@ func CMTimeConvertScale(_ time: CMTime, timescale newTimescale: Int32, method: C
 extern CMTime CMTimeConvertScale(CMTime time, int32_t newTimescale, CMTimeRoundingMethod method);
 ```
 
-#### Return Value
+## Return Value
 
 A time structure that represents the time in a new timescale.
 
-#### Discussion
+## Discussion
 
 If this operation needs to round the value, it sets the resulting time’s [`hasBeenRounded`](./cmtimeflags/hasbeenrounded.md) flag. If the source time is nonnumeric (infinite, indefinite, or invalid), the result is also nonnumeric.
 

@@ -15,7 +15,7 @@ A field of view (FoV) specification.
 struct FieldOfView
 ```
 
-#### Overview
+## Overview
 
 The preset FoVs are the recommended specification method for most applications. They provide standardized FoV requirements.
 

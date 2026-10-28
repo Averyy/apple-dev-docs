@@ -28,7 +28,7 @@ class INGetReservationDetailsIntentResponse
 
 - [Donating Reservations](../SiriKit/donating-reservations.md)
 
-#### Overview
+## Overview
 
 Use an [`INGetReservationDetailsIntentResponse`](./ingetreservationdetailsintentresponse.md) object to specify the results of a user requesting reservation details in your app. After getting the reservation details action using the criteria specified in the [`INGetReservationDetailsIntent`](./ingetreservationdetailsintent.md) object, create an instance of this class with the results of the action. Siri can then use this information for system integrations, such as populating the calendar with an event.
 

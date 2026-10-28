@@ -20,7 +20,7 @@ static var textMessageAvailabilityDidChange: NotificationCenter.BaseMessageIdent
 
 Available when `Self` is `NotificationCenter.BaseMessageIdentifier<MFMessageComposeViewController.TextMessageAvailabilityDidChangeMessage>`.
 
-#### Discussion
+## Discussion
 
 This notification is posted when the device’s ability to send text messages changes (e.g., SIM card inserted/removed, airplane mode toggled, iMessage account status changed).
 

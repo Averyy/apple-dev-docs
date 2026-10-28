@@ -19,7 +19,7 @@ var altIncrementValue: Double { get set }
 @property double altIncrementValue;
 ```
 
-#### Discussion
+## Discussion
 
 By default, the value of this property is `-1.0`, and the slider behaves no differently with the Option key down than with it up. The value of this property must fit the range of values the slider can represent—for example, if the slider has a minimum value of `5` and a maximum value of `10`, the value should be between `0` and `5`.
 

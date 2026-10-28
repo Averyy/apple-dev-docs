@@ -25,7 +25,7 @@ var particleScaleRange: CGFloat { get set }
 @property (nonatomic) CGFloat particleScaleRange;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `0.0`. If non-zero, the initial scale of each particle is randomly determined and may vary by plus or minus half of the range value.
 

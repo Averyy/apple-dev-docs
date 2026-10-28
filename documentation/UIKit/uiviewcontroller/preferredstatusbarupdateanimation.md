@@ -24,11 +24,11 @@ var preferredStatusBarUpdateAnimation: UIStatusBarAnimation { get }
 @property (nonatomic, readonly) UIStatusBarAnimation preferredStatusBarUpdateAnimation;
 ```
 
-#### Return Value
+## Return Value
 
 The style of status bar animation to use; one of the constants from the [`UIStatusBarAnimation`](../uistatusbaranimation.md) enum. Default value is [`UIStatusBarAnimation.fade`](../uistatusbaranimation/fade.md).
 
-#### Discussion
+## Discussion
 
 This property comes into play only when you actively change the status bar’s show/hide state by changing the return value of the [`prefersStatusBarHidden`](./prefersstatusbarhidden.md) method.
 

@@ -25,11 +25,11 @@ func CFBundleCopyLocalizationsForPreferences(_ locArray: CFArray!, _ prefArray: 
 extern CFArrayRefCFBundleCopyLocalizationsForPreferences(CFArrayRef locArray, CFArrayRef prefArray);
 ```
 
-#### Return Value
+## Return Value
 
 An array containing the localizations that CFBundle would use. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
-#### Discussion
+## Discussion
 
 This is not the same as [`CFBundleCopyPreferredLocalizationsFromArray(_:)`](./cfbundlecopypreferredlocalizationsfromarray%28_%29.md), because that function takes the current application context into account. To determine the localizations that another application would use, apply this function to the result of [`CFBundleCopyBundleLocalizations(_:)`](./cfbundlecopybundlelocalizations%28_%29.md).
 

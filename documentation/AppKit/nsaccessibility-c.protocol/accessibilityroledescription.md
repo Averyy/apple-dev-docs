@@ -15,7 +15,7 @@ A localized, human-intelligible description of the accessibility element’s rol
 @property (copy, nullable) NSString * accessibilityRoleDescription;
 ```
 
-#### Discussion
+## Discussion
 
 This property is set automatically based on the value of the [`accessibilityRole`](./accessibilityrole.md) property; however, you can customize the value of this property to better describe your element’s role. Keep role descriptions short. If possible, use a single word. These descriptions should be noun phrases, all lowercase, with no period at the end.
 

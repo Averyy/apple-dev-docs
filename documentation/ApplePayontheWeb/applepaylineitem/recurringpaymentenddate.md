@@ -16,7 +16,7 @@ The date of the final payment.
 Date recurringPaymentEndDate;
 ```
 
-#### Discussion
+## Discussion
 
 To specify no payment end date, don’t include this attribute.
 

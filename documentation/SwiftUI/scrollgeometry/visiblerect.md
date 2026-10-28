@@ -21,7 +21,7 @@ The visible rect of the scroll view.
 var visibleRect: CGRect { get }
 ```
 
-#### Discussion
+## Discussion
 
 This value is computed from the scroll view’s content offset, content insets, and its container size.
 

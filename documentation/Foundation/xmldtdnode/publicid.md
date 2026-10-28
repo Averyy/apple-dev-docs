@@ -20,11 +20,11 @@ var publicID: String? { get set }
 @property (copy, nullable) NSString * publicID;
 ```
 
-#### Return Value
+## Return Value
 
 The public identifier associated with the receiver.
 
-#### Discussion
+## Discussion
 
 The public ID is applicable to entities and notations.
 

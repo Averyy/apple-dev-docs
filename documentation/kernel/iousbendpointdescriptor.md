@@ -15,7 +15,7 @@ The structure for storing an endpoint descriptor.
 typedef struct IOUSBEndpointDescriptor IOUSBEndpointDescriptor;
 ```
 
-#### Discussion
+## Discussion
 
 A descriptor for a USB endpoint. See USB 3.2, 9.6.6.
 

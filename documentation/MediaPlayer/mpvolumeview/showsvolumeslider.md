@@ -23,7 +23,7 @@ var showsVolumeSlider: Bool { get set }
 @property (nonatomic) BOOL showsVolumeSlider;
 ```
 
-#### Discussion
+## Discussion
 
 The volume slider is visible by default. To hide the volume slider, set this property’s value to [`false`](../../Swift/false.md).
 

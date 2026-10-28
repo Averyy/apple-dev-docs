@@ -26,7 +26,7 @@ class NIDiscoveryToken
 
 - [Extending advanced direction finding and ranging](./extending-advanced-direction-finding-and-ranging.md)
 
-#### Overview
+## Overview
 
 Use `NIDiscoveryToken` to determine the peer device’s nearby interaction capabilities by examining the [`deviceCapabilities`](./nidiscoverytoken/devicecapabilities.md) that describes the available capabilities on a person’s device.
 

@@ -19,11 +19,11 @@ func SKIndexRemoveDocument(_ inIndex: SKIndex!, _ inDocument: SKDocument!) -> Bo
 Boolean SKIndexRemoveDocument(SKIndexRef inIndex, SKDocumentRef inDocument);
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value of `true` on success, or `false` on failure.
 
-#### Discussion
+## Discussion
 
 When your application deletes a document, use this function to update the index to reflect the change.
 

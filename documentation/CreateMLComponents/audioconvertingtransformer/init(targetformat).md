@@ -20,7 +20,7 @@ Creates an audio conversion transformer to convert the format of the buffers.
 init(targetFormat: AVAudioFormat)
 ```
 
-#### Discussion
+## Discussion
 
 - Precondition The `targetFormat` must have an AVAudioPCMFormat as its common format type.
 

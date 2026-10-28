@@ -23,7 +23,7 @@ var isInvertible: Bool { get }
 static bool SPAffineTransform3DFloatIsInvertible(SPAffineTransform3DFloat transform);
 ```
 
-#### Discussion
+## Discussion
 
 Returns a Boolean value that indicates whether the transform’s underlying matrix has an inverse.
 

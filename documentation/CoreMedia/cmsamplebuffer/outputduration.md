@@ -21,7 +21,7 @@ The output duration of the sample buffer.
 var outputDuration: CMTime { get }
 ```
 
-#### Discussion
+## Discussion
 
 This value is the duration minus any trimmed duration divided by multiplier:
 

@@ -24,11 +24,11 @@ func CFNetworkCopyProxiesForURL(_ url: CFURL, _ proxySettings: CFDictionary) -> 
 extern CFArrayRefCFNetworkCopyProxiesForURL(CFURLRef url, CFDictionaryRef proxySettings);
 ```
 
-#### Return Value
+## Return Value
 
 Returns an array of dictionaries. Each dictionary describes a single proxy. The array is ordered optimally for requesting the URL specified.
 
-#### Discussion
+## Discussion
 
 In general, you should try to download a URL using the first proxy in the array, try the second proxy if the first one fails, and so on.
 

@@ -17,11 +17,11 @@ String formatDuration(
 );
 ```
 
-#### Return Value
+## Return Value
 
 A string containing the formatted duration.
 
-#### Discussion
+## Discussion
 
 This function changes a number of seconds into the standard hour:minute:second format. For example, `formatDuration(90)` returns “1:30”.
 

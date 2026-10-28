@@ -15,7 +15,7 @@ A callback function that is automatically called when the app has been launched.
 attribute function onLaunch;
 ```
 
-#### Discussion
+## Discussion
 
 Use the `onLaunch` attribute to start any required actions (for example, loading the first TVML page) when the app launches. This attribute must be set to a function that accepts an `options` argument; for example `App.onLaunch = function (options) {}`. The options argument can contain the following keys:
 

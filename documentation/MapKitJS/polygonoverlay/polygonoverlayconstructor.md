@@ -18,7 +18,7 @@ constructor(
 );
 ```
 
-#### Discussion
+## Discussion
 
 The following example shows the `options` parameter for a polygon overlay:
 

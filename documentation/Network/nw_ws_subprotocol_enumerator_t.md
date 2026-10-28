@@ -25,7 +25,7 @@ typealias nw_ws_subprotocol_enumerator_t = (UnsafePointer<CChar>) -> Bool
 typedef _Bool (^)(const char *) nw_ws_subprotocol_enumerator_t;
 ```
 
-#### Return Value
+## Return Value
 
 Return true to continue enumerating, or false to stop enumerating.
 

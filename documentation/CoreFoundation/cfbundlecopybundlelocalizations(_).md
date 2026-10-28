@@ -25,11 +25,11 @@ func CFBundleCopyBundleLocalizations(_ bundle: CFBundle!) -> CFArray!
 extern CFArrayRefCFBundleCopyBundleLocalizations(CFBundleRef bundle);
 ```
 
-#### Return Value
+## Return Value
 
 An array containing `bundle`’s localizations. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
-#### Discussion
+## Discussion
 
 The array returned by this function is typically passed as a parameter to either the [`CFBundleCopyPreferredLocalizationsFromArray(_:)`](./cfbundlecopypreferredlocalizationsfromarray%28_%29.md) or [`CFBundleCopyLocalizationsForPreferences(_:_:)`](./cfbundlecopylocalizationsforpreferences%28_,_%29.md) function.
 

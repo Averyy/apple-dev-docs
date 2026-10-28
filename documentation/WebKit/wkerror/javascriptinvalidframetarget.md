@@ -19,7 +19,7 @@ An error that indicates your content referenced an invalid web frame.
 static var javaScriptInvalidFrameTarget: WKError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 WebKit might report this error in the following situations:
 

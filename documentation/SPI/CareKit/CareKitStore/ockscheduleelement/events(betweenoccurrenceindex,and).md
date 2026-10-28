@@ -17,7 +17,7 @@ Compute all events that occur between `startIndex` (inclusive) and `stopIndex` (
 func events(betweenOccurrenceIndex startIndex: Int, and stopIndex: Int) -> [OCKScheduleEvent]
 ```
 
-#### Discussion
+## Discussion
 
 > **Precondition**: `startIndex` < `stopIndex`
 

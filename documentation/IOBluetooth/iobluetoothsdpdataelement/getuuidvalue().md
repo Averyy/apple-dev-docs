@@ -19,7 +19,7 @@ func getUUIDValue() -> IOBluetoothSDPUUID!
 - (IOBluetoothSDPUUID *) getUUIDValue;
 ```
 
-#### Return Value
+## Return Value
 
 Returns an IOBluetoothSDPUUID representation of the data element if it is a UUID.
 

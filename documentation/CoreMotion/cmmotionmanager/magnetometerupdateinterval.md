@@ -22,7 +22,7 @@ var magnetometerUpdateInterval: TimeInterval { get set }
 @property (nonatomic, assign) NSTimeInterval magnetometerUpdateInterval;
 ```
 
-#### Discussion
+## Discussion
 
 The supplies magnetometer data to the block handler specified in [`startMagnetometerUpdates(to:withHandler:)`](./startmagnetometerupdates%28to,withhandler%29.md) at regular intervals determined by the value of this property. The interval unit are in seconds. The value of this property is capped to minimum and maximum values; the maximum value is determined by the maximum frequency supported by the hardware. If your app is sensitive to the intervals of magnetometer data, it should always check the timestamps of the delivered [`CMMagnetometerData`](../cmmagnetometerdata.md) instances to determine the true update interval.
 

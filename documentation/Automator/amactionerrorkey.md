@@ -20,7 +20,7 @@ var AMActionErrorKey: String { get }
 #define AMActionErrorKey
 ```
 
-#### Discussion
+## Discussion
 
 Use this key to obtain, from the [`userInfo`](../Foundation/nserror/userinfo.md) dictionary of an instance of [`NSError`](../Foundation/nserror.md), a reference to the action ([`AMAction`](./amaction.md)) that caused the error.
 

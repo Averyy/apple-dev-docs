@@ -16,7 +16,7 @@ Flags for a display mode.
 UInt32 flags;
 ```
 
-#### Discussion
+## Discussion
 
 The possible flag values include:
 

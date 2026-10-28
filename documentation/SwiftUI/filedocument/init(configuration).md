@@ -22,7 +22,7 @@ Creates a document and initializes it with the contents of a file.
 init(configuration: Self.ReadConfiguration) throws
 ```
 
-#### Discussion
+## Discussion
 
 SwiftUI calls this initializer when someone opens a file type that matches one of those that your document type supports. Use the [`file`](../filedocumentreadconfiguration/file.md) property of the `configuration` input to get document’s data. Deserialize the data, and store it in your document’s data structure:
 

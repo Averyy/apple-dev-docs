@@ -24,7 +24,7 @@ static let decayTime: CHHapticEvent.ParameterID
 extern CHHapticEventParameterID CHHapticEventParameterIDDecayTime;
 ```
 
-#### Discussion
+## Discussion
 
 This parameter can be an event parameter or a dynamic parameter. A fixed value indicates that the haptic begins decreasing in intensity at the set time, where time `0` indicates now, or the current time.
 

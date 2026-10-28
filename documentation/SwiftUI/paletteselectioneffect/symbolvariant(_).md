@@ -19,7 +19,7 @@ Applies the specified symbol variant when selected.
 static func symbolVariant(_ variant: SymbolVariants) -> PaletteSelectionEffect
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: This effect only applies to SF Symbols.
 

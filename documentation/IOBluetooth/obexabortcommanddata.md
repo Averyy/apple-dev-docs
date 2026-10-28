@@ -19,7 +19,7 @@ struct OBEXAbortCommandData
 struct OBEXAbortCommandData;
 ```
 
-#### Overview
+## Overview
 
 Is readable when the event is of type kOBEXSessionEventTypeAbortCommandReceived (see OBEXSessionEventTypes).
 

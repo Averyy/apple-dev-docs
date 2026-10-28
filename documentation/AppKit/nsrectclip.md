@@ -15,7 +15,7 @@ Modifies the current clipping path by intersecting it with the passed rect.
 extern void NSRectClip(NSRect rect);
 ```
 
-#### Discussion
+## Discussion
 
 This function modifies the clipping path permanently. If you need to undo this modification later, you should save the current graphics state before calling this function and restore it once you are done.
 

@@ -25,7 +25,7 @@ struct Scope
 typedef NSString * ASAuthorizationScope;
 ```
 
-#### Discussion
+## Discussion
 
 Use one or more of these values in the [`requestedScopes`](../asauthorizationopenidrequest/requestedscopes.md) array that you configure in an instance of either [`ASAuthorizationAppleIDRequest`](../asauthorizationappleidrequest.md) or [`ASAuthorizationSingleSignOnRequest`](../asauthorizationsinglesignonrequest.md) to request certain contact information from the user.
 

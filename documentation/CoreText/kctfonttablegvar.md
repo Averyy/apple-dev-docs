@@ -23,7 +23,7 @@ var kCTFontTableGvar: Int { get }
 kCTFontTableGvar
 ```
 
-#### Discussion
+## Discussion
 
 Font table tag for glyph variation.
 

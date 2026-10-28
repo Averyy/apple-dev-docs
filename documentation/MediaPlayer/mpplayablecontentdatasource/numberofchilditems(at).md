@@ -25,7 +25,7 @@ func numberOfChildItems(at indexPath: IndexPath) -> Int
 - (NSInteger) numberOfChildItemsAtIndexPath:(NSIndexPath *) indexPath;
 ```
 
-#### Return Value
+## Return Value
 
 An [`NSInteger`](../../ObjectiveC/nsinteger.md) value representing the number of child nodes associated with the indicated node.
 

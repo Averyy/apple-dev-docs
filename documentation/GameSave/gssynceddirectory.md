@@ -23,7 +23,7 @@ class GSSyncedDirectory
 @interface GSSyncedDirectory : NSObject
 ```
 
-#### Overview
+## Overview
 
 To get an instance of the directory, call [`open(forContainerIdentifier:)`](./gssynceddirectory/open%28forcontaineridentifier%29.md), which returns the directory for the iCloud container associated with the specified identifier. Calling this method starts syncing the directory in the background on the specified container. When the game needs to access the contents of the directory, show a UI while the directory fully syncs using the [`finishSyncing(_:completionHandler:)`](./gssynceddirectory/finishsyncing%28_,completionhandler%29.md) method. If you’re showing your own UI, call the [`finishSyncing(completionHandler:)`](./gssynceddirectory/finishsyncing%28completionhandler%29.md) method to wait for the directory to finish syncing.
 

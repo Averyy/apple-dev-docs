@@ -22,7 +22,7 @@ var baseForegroundColor: UIColor? { get set }
 @property (nonatomic, strong, nullable) UIColor * baseForegroundColor;
 ```
 
-#### Discussion
+## Discussion
 
 The [`displayMode`](./displaymode.md) you choose determines whether this property colors an icon, text, or both.
 

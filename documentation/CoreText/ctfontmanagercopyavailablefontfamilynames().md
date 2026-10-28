@@ -25,7 +25,7 @@ func CTFontManagerCopyAvailableFontFamilyNames() -> CFArray
 extern CFArrayRefCTFontManagerCopyAvailableFontFamilyNames();
 ```
 
-#### Return Value
+## Return Value
 
 This function returns a retained reference to a CFArray of `CFStringRef` objects representing the visible font family names of the available fonts, or `NULL` on error. The caller is responsible for releasing the array.
 

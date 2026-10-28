@@ -15,7 +15,7 @@ The vertical scroll bar for the scroll view.
 @property (strong, nullable) id accessibilityVerticalScrollBar;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property on a scrollable view.
 

@@ -22,7 +22,7 @@ var providerToken: String? { get set }
 @property (nonatomic, retain, nullable) NSString * providerToken;
 ```
 
-#### Discussion
+## Discussion
 
 When you set a provider token, you must also set the [`campaignToken`](./campaigntoken.md).
 

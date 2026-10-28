@@ -24,7 +24,7 @@ func CATransform3DMakeScale(_ sx: CGFloat, _ sy: CGFloat, _ sz: CGFloat) -> CATr
 extern CATransform3D CATransform3DMakeScale(CGFloat sx, CGFloat sy, CGFloat sz);
 ```
 
-#### Discussion
+## Discussion
 
 `t = [sx 0 0 0; 0 sy 0 0; 0 0 sz 0; 0 0 0 1].`
 

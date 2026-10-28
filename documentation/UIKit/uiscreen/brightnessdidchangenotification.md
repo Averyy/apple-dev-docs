@@ -23,7 +23,7 @@ class let brightnessDidChangeNotification: NSNotification.Name
 extern NSNotificationName const UIScreenBrightnessDidChangeNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The object of the notification is the [`UIScreen`](../uiscreen.md) object whose [`brightness`](./brightness.md) property changed. There is no `userInfo` dictionary.
 

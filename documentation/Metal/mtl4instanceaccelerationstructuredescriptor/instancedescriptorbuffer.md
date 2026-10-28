@@ -24,7 +24,7 @@ var instanceDescriptorBuffer: MTL4BufferRange { get set }
 @property (nonatomic) MTL4BufferRange instanceDescriptorBuffer;
 ```
 
-#### Discussion
+## Discussion
 
 This buffer conceptually represents an array of instance data. The specific format for the structs that comprise each entry depends on the value of the  [`instanceDescriptorType`](./instancedescriptortype.md) property.
 

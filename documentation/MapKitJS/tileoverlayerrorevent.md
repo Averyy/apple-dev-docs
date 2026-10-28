@@ -15,7 +15,7 @@ An event object that notifies the developer of an error that occurred while load
 class TileOverlayErrorEvent extends Event
 ```
 
-#### Discussion
+## Discussion
 
 [`TileOverlay`](./tileoverlay.md) dispatches a `tile-error` event when an error occurs while loading tiles.
 

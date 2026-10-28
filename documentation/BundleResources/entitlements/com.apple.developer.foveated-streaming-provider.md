@@ -14,7 +14,7 @@ An entitlement that allows other apps to use privacy-sensitive foveation data fo
 - **Name**: `com.apple.developer.foveated-streaming-provider`
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 Allow apps to use your protocol with the Foveated Streaming framework to connect and stream immersive content. Use of this entitlement requires Apple approval; complete the [entitlement request form](https://developer.apple.com/contact/request/foveated-streaming-provider/).
 

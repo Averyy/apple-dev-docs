@@ -20,7 +20,7 @@ Projects a point from the 3D world coordinate system of the scene to the 2D pixe
 func project(point: SIMD3<Float>, to space: some CoordinateSpaceProtocol) -> CGPoint?
 ```
 
-#### Return Value
+## Return Value
 
 A point in the provided coordinate space.
 

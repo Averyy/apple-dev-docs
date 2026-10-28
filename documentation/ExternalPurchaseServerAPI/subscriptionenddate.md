@@ -15,7 +15,7 @@ The UNIX date, in milli-seconds, the subscription renewal cycle ends.
 int64 subscriptionEndDate
 ```
 
-#### Discussion
+## Discussion
 
 This field is informational only.
 

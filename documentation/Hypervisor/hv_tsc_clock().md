@@ -19,11 +19,11 @@ func hv_tsc_clock() -> UInt64
 extern uint64_t hv_tsc_clock();
 ```
 
-#### Return Value
+## Return Value
 
 A 64-bit unsigned integer that represents the current clock value.
 
-#### Discussion
+## Discussion
 
 The abstract clock ticks at the same rate as the host TSC, offset by an implementation-dependent constant. The clock value increases monotonically.
 

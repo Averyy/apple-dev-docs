@@ -22,11 +22,11 @@ nonisolated
 func textCase(_ textCase: Text.Case?) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view that transforms the case of the text.
 
-#### Discussion
+## Discussion
 
 The default value is `nil`, displaying the text without any case changes.
 

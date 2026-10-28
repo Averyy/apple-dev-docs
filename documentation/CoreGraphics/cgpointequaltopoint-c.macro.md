@@ -21,7 +21,7 @@ Returns whether two points are equal.
 #define CGPointEqualToPoint
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../Swift/true.md) if the two specified points are the same; otherwise, [`false`](../Swift/false.md).
 

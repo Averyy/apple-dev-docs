@@ -4,7 +4,7 @@
 
 Build watchOS apps that combine complications, notifications, and Siri to create a personal experience on Apple Watch.
 
-#### Overview
+## Overview
 
 Apple Watch provides easy access to vital information on someone’s wrist. The watchOS experience focuses on quick actions that achieve useful tasks through brief, punctuated interactions.
 
@@ -16,25 +16,25 @@ For watchOS, expect to spend more time planning, designing, and refining your ap
 
 When designing a watchOS app, mix a combination of the following technologies to create a richer experience.
 
-#### The watchOS app
+## The watchOS app
 
 The main app serves as the foundation for your watchOS app experience. Anyone can launch and interact with your app directly. However, the app’s interface isn’t necessarily the primary way people interact with your app. Many may prefer to interact through complications or notifications, and may never explicitly launch your app.
 
 ![An illustration of a watch face showing four watchOS app icons.](https://developer.apple.com/tutorials/images/com.apple.watchOS-Apps/app@2x.png)
 
-#### Complications
+## Complications
 
 Complications provide small glimpses into your app’s data directly on the watch face. People can add complications to most watch faces, but space is limited. Design complications to show information that is timely, up to date, and useful. People can also launch the watchOS app quickly and easily by tapping a complication.
 
 ![An illustration of a watch face with the corners highlighted to represent corner complications.](https://developer.apple.com/tutorials/images/com.apple.watchOS-Apps/complications@2x.png)
 
-#### Notifications
+## Notifications
 
 Use notifications to alert people of significant events. You can also provide actions so that people can respond immediately without opening your app. You can use either local or remote notifications to communicate, even when your app isn’t running.
 
 ![An illustration of a watch face showing a notification icon and two bars representing notification text.](https://developer.apple.com/tutorials/images/com.apple.watchOS-Apps/notification@2x.png)
 
-#### Siri
+## Siri
 
 Use SiriKit and App intents to expand the ways people can interact with your app. If your app uses domains like messaging or media, use [SiriKit](../SiriKit/SiriKit.md) to add Siri support to your app. For other features, use [App Intents](../AppIntents/AppIntents.md) to expose your app’s functionality to system services like Siri and the Shortcuts app.
 

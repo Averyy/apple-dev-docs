@@ -25,7 +25,7 @@ func cookies(for url: URL) async -> [HTTPCookie]
 - (void) getCookiesForURL:(NSURL *) url completionHandler:(void (^)(NSArray<NSHTTPCookie *> *)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Fetches stored cookies that match the passed in URL.
 

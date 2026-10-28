@@ -22,7 +22,7 @@ The number of bits in the current binary representation of this value.
 var bitWidth: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property is a constant for instances of fixed-width integer types.
 

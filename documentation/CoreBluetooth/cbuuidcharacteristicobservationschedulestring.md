@@ -23,7 +23,7 @@ let CBUUIDCharacteristicObservationScheduleString: String
 extern NSString * const CBUUIDCharacteristicObservationScheduleString;
 ```
 
-#### Discussion
+## Discussion
 
 Data representing the observation schedule for a characteristic.
 

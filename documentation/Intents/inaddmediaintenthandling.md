@@ -24,7 +24,7 @@ protocol INAddMediaIntentHandling : NSObjectProtocol
 @protocol INAddMediaIntentHandling <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Use the methods of the [`INAddMediaIntentHandling`](./inaddmediaintenthandling.md) protocol to resolve, confirm, and handle requests to add media. Adopt this protocol in an object of your Intents extension that’s capable of adding media.
 

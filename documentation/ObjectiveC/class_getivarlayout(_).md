@@ -25,7 +25,7 @@ func class_getIvarLayout(_ cls: AnyClass?) -> UnsafePointer<UInt8>?
 extern const uint8_t *class_getIvarLayout(Class cls);
 ```
 
-#### Return Value
+## Return Value
 
 A description of the `Ivar` layout for `cls`.
 

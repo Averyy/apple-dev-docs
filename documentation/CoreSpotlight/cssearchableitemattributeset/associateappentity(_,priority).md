@@ -19,7 +19,7 @@ Associates the specified app entity with this attribute set.
 func associateAppEntity<Entity>(_ appEntity: Entity, priority: Int = 0) where Entity : IndexedEntity
 ```
 
-#### Discussion
+## Discussion
 
 If your app has an [`AppEntity`](../../AppIntents/appentity.md) object that equates to the [`CSSearchableItem`](../cssearchableitem.md) you’re creating, use this method to connect the two objects. When your searchable item appears in search results, Spotlight can use the provided entity to perform related actions. For example, it can ask your app to open the entity and display its content.
 

@@ -21,7 +21,7 @@ Returns a Boolean value that indicates whether info-level logging is in an enabl
 #define os_log_info_enabled(log)
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../Swift/true.md) if info-level logging is in an enabled state; otherwise, [`false`](../Swift/false.md).
 

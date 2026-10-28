@@ -15,7 +15,7 @@ Get the authorization type required by the visual fidelity data provider.
 extern ar_authorization_type_t ar_visual_fidelity_provider_get_required_authorization_type();
 ```
 
-#### Return Value
+## Return Value
 
 The required authorization type.
 

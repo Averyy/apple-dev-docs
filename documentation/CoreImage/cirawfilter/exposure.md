@@ -24,7 +24,7 @@ var exposure: Float { get set }
 @property (readwrite) float exposure;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `0`.
 

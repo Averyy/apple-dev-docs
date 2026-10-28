@@ -23,11 +23,11 @@ func index(_ i: Range<Bound>.Index, offsetBy n: Int) -> Range<Bound>.Index
 
 Available when `Bound` conforms to `Strideable` and `Bound.Stride` conforms to `SignedInteger`.
 
-#### Return Value
+## Return Value
 
 An index offset by `distance` from the index `i`. If `distance` is positive, this is the same value as the result of `distance` calls to `index(after:)`. If `distance` is negative, this is the same value as the result of `abs(distance)` calls to `index(before:)`.
 
-#### Discussion
+## Discussion
 
 The following example obtains an index advanced four positions from a string’s starting index and then prints the character at that position.
 

@@ -21,7 +21,7 @@ A type that represents a System Preferences pane.
 static var systemPreferencesPane: UTType { get }
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `com.apple.systempreference.prefpane`.
 

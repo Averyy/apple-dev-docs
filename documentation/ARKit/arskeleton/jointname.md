@@ -20,7 +20,7 @@ struct JointName
 typedef NSString * ARSkeletonJointName;
 ```
 
-#### Discussion
+## Discussion
 
 Use this class to access information about a named joint, such as its index in a skeleton’s array of joints, or its position on the screen or in the physical environment.
 

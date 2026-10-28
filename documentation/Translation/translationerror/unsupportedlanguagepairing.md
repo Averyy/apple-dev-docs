@@ -18,7 +18,7 @@ The framework doesn’t support the specified source and target language pairing
 static let unsupportedLanguagePairing: TranslationError
 ```
 
-#### Discussion
+## Discussion
 
 The framework doesn’t support translating from and to the same language. For example, you can’t translate from English (US) to English (UK) or from French to French.
 

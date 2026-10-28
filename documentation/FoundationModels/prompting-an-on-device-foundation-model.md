@@ -5,7 +5,7 @@
 
 Tailor your prompts to get effective results from an on-device model.
 
-#### Overview
+## Overview
 
 Many prompting techniques are designed for server-based “frontier” foundation models, because they have a larger context window and thinking capabilities. However, when prompting an on-device model, your prompt engineering technique is even more critical because the model you access is much smaller.
 
@@ -21,7 +21,7 @@ To generate accurate, hallucination-free responses, your prompt needs to be conc
 
 You’ll need to test your prompts throughout development and evaluate the output to provide a great user experience.
 
-#### Concepts for creating great prompts
+## Concepts for creating great prompts
 
 With prompt engineering, you structure your requests by refining how you phrase questions, provide context, and format instructions. It also requires testing and iteration of your input to get the results your app needs.
 
@@ -29,7 +29,7 @@ You can also structure prompts to make the model’s response depend on specific
 
 *If it’s a question, answer it directly. If it’s a statement, ask a follow-up question.*
 
-#### Keep prompts simple and clear
+## Keep prompts simple and clear
 
 Effective prompts use simple language that tells the model what output you want it to provide. The model processes text in units, called *tokens*, and each model has a maximum number of tokens it can process — the context window size. An on-device model has fewer parameters and a small context window, so it doesn’t have the resources to handle long or confusing prompts. Input to a frontier model might be the length of a full document, but your input to the on-device model needs to be short and succinct. Ask yourself whether your prompt is understandable to a human if they read it quickly, and consider additional strategies to adjust your tone and writing style:
 
@@ -54,7 +54,7 @@ An on-device model may get confused with a long and indirect instruction because
 
 For more information on managing the context window size, see [Managing the context window](./managing-the-context-window.md).
 
-#### Give the model a role, persona, and tone
+## Give the model a role, persona, and tone
 
 By default, the on-device model typically responds to questions in a neutral and respectful tone, with a business-casual persona. Similar to frontier models, you can provide a role or persona to dramatically change how the on-device model responds to your prompt.
 
@@ -100,7 +100,7 @@ Change the model’s tone by writing your prompt in a voice you want the model t
 
 *Communicate as a learned scribe from a medieval library. Use slightly archaic language (“thou shalt,” “wherein,” “henceforth”) but keep it readable.”*
 
-#### Iterate and improve instruction following
+## Iterate and improve instruction following
 
 *Instruction following* refers to a foundation model’s ability to carry out a request exactly as written in your [`Prompt`](./prompt.md) and [`Instructions`](./instructions.md). Prompt engineering involves iteration to test and refine input — based on the results you get — to improve accuracy and consistency. If you notice the model isn’t following instructions as well as you need, consider the following strategies:
 
@@ -116,7 +116,7 @@ After you try any strategy, take the time to evaluate it to see if the result ge
 
 Another prompting strategy is to split your request into a series of simpler requests. This is particularly useful after trying different strategies that don’t improve the quality of the results.
 
-#### Reduce how much thinking the model needs to do
+## Reduce how much thinking the model needs to do
 
 A model’s reasoning ability is how well it thinks through a problem like a human, handles logical puzzles, or creates a logical plan to handle a request. Because of their smaller size, on-device models have limited reasoning abilities. You may be able to help an on-device model *think through* a challenging task by providing additional support for its reasoning.
 
@@ -134,7 +134,7 @@ For complex tasks, simple language prompts might not have enough detail about ho
 
 If you find the model isn’t accomplishing the task reliably, break up the steps across multiple [`LanguageModelSession`](./languagemodelsession.md) instances to focus on one part at a time with a new context window. Typically, it’s a best practice to start with a single request because multiple requests can result in longer inference time. But, if the result doesn’t meet your expectations, try splitting steps into multiple requests.
 
-#### Turn conditional prompting into programming logic
+## Turn conditional prompting into programming logic
 
 *Conditional* prompting is where you embed if-else logic into your prompt. A server-based frontier model has the context window and reasoning abilities to handle a lengthy list of instructions for how to handle different requests. An on-device model can handle some conditionals or light reasoning, like:
 
@@ -184,7 +184,7 @@ let instructions = """
 
 When you customize instructions programmatically, the model doesn’t get distracted or confused by conditionals that don’t apply in the situation. This approach also reduces the context window size.
 
-#### Provide simple input-output examples
+## Provide simple input-output examples
 
 *Few-shot* prompting is when you provide the on-device model with a few examples of the output you want. For example, the following shows the model different kinds of coffee shop customers it needs to generate:
 
@@ -220,7 +220,7 @@ On-device models need simpler examples for few-shot prompts than what you can us
 
 For more information on guided generation, see [Generating Swift data structures with guided generation](./generating-swift-data-structures-with-guided-generation.md).
 
-#### Handle on-device reasoning
+## Handle on-device reasoning
 
 Reasoning prompt techniques, like “think through this problem step by step”, can result in unexpected text being inserted into your [`Generable`](./generable.md) structure if the model doesn’t have a place for its reasoning. To keep reasoning explanations out of your structure, try giving the model a specific field where it can put its reasoning. Make sure the reasoning field is the first property so the model can provide reasoning details before answering the prompt:
 
@@ -256,7 +256,7 @@ let response = try await session.respond(
 
 You may see the model fail to reason its way to a correct answer, or it may answer unreliably — occasionally answering correctly, and sometimes not. If this happens, the tasks in your prompt may be too difficult for the on-device model to process, regardless of how you structure the prompt.
 
-#### Provide actionable feedback
+## Provide actionable feedback
 
 When you encounter something with the on-device model that you expect to work but it doesn’t, file a report that includes your prompt with Feedback Assistant to help improve the system model. To submit feedback about model behavior through Feedback Assistant, see [`logFeedbackAttachment(sentiment:issues:desiredOutput:)`](./languagemodelsession/logfeedbackattachment%28sentiment,issues,desiredoutput%29.md).
 

@@ -19,7 +19,7 @@ let kSCPropNetIPSecConnectTime: CFString
 extern CFStringRef const kSCPropNetIPSecConnectTime;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key is of type [`CFNumber`](../CoreFoundation/cfnumber.md).
 

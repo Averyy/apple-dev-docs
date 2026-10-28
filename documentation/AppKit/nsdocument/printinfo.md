@@ -20,11 +20,11 @@ var printInfo: NSPrintInfo { get set }
 @property (copy) NSPrintInfo * printInfo;
 ```
 
-#### Return Value
+## Return Value
 
 The receiver’s `NSPrintInfo` object.
 
-#### Discussion
+## Discussion
 
 The default value of this property is the default [`NSPrintInfo`](../nsprintinfo.md) object. To customize the printing information, assign a new value to this property. The Page Layout panel may also update the object in this property to reflect the options selected by the user.
 

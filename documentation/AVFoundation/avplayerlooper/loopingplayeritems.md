@@ -24,7 +24,7 @@ var loopingPlayerItems: [AVPlayerItem] { get }
 @property (readonly) NSArray<AVPlayerItem *> * loopingPlayerItems;
 ```
 
-#### Discussion
+## Discussion
 
 `AVPlayerLooper` creates replicas of the template [`AVPlayerItem`](../avplayeritem.md) using the [`copyWithZone:`](../../ObjectiveC/nsobject-swift.class/copywithzone_.md) method and inserts them in the queue player’s queue to accomplish the looping. You can determine the number of replicas created and can listen for notifications and property changes from the replicas if desired.
 

@@ -17,7 +17,7 @@ Return the value as an optional array of integers.
 func asInts() -> [Int]?
 ```
 
-#### Discussion
+## Discussion
 
 This will not coerce `Float` or `String` to `Int`.
 

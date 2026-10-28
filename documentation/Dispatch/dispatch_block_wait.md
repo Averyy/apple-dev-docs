@@ -21,11 +21,11 @@ Waits synchronously until execution of the specified dispatch block has complete
 extern intptr_t dispatch_block_wait(dispatch_block_t block, dispatch_time_t timeout);
 ```
 
-#### Return Value
+## Return Value
 
 Returns zero if the dispatch block completed within the specified timeout, or non-zero if the block timed out.
 
-#### Discussion
+## Discussion
 
 This function returns immediately if execution of the block object has already completed.
 

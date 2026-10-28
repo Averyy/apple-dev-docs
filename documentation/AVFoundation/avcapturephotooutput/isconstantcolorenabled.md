@@ -23,7 +23,7 @@ var isConstantColorEnabled: Bool { get set }
 @property (nonatomic, getter=isConstantColorEnabled) BOOL constantColorEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`false`](../../Swift/false.md). Set the value to [`true`](../../Swift/true.md) to enable support for taking constant color photos. You can only enable constant color capture if the value of [`isConstantColorSupported`](./isconstantcolorsupported.md) is [`true`](../../Swift/true.md).
 

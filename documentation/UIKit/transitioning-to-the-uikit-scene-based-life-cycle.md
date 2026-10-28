@@ -5,7 +5,7 @@
 
 Adopt the scene-based life cycle to replace the app delegate life cycle in UIKit.
 
-#### Overview
+## Overview
 
 The UIKit scene-based life cycle separates the app process life cycle from the UI life cycle, allowing apps to manage multiple instances of UI independently. For example, a document-based app, such as a text editor, can display each open document in its own scene, letting people work on multiple documents side by side. Your app process launches once and [`UIApplicationDelegate`](./uiapplicationdelegate.md) handles it, but each piece of visible UI — each *scene* — has its own independent life cycle that [`UISceneDelegate`](./uiscenedelegate.md) and [`UIWindowSceneDelegate`](./uiwindowscenedelegate.md) coordinate. [`UISceneDelegate`](./uiscenedelegate.md) handles basic life-cycle events that apply to all scenes, while [`UIWindowSceneDelegate`](./uiwindowscenedelegate.md) takes care of UI-specific events like window controls and geometry changes. A scene can go to the background while another stays active, and the system can create, destroy, and arrange scenes without affecting others.
 
@@ -29,18 +29,18 @@ UIScene lifecycle will soon be required.
 Failure to adopt will result in an assert in the future.
 ```
 
-#### Determine if your app needs to migrate
+## Determine if your app needs to migrate
 
 Migrate to the scene-based life cycle if your app meets either of the following conditions:
 
 - The [`UIApplicationSceneManifest`](../BundleResources/information-property-list/uiapplicationscenemanifest.md) key is missing from your information property list, or it has no specified configurations.
 - Your app delegate doesn’t implement [`application(_:configurationForConnecting:options:)`](./uiapplicationdelegate/application%28_,configurationforconnecting,options%29.md).
 
-#### Adopt the scene-based life cycle
+## Adopt the scene-based life cycle
 
 To configure your app’s scenes, add a [`UIApplicationSceneManifest`](../BundleResources/information-property-list/uiapplicationscenemanifest.md) key with a scene configuration to your information property list. If your app requires dynamic scene configurations — such as customizing scenes based on user activities, or handling different scene roles — implement [`application(_:configurationForConnecting:options:)`](./uiapplicationdelegate/application%28_,configurationforconnecting,options%29.md) in your app delegate instead.
 
-##### Configure the information property list for scene support
+### Configure the information property list for scene support
 
 Add a [`UIApplicationSceneManifest`](../BundleResources/information-property-list/uiapplicationscenemanifest.md) key with a scene configuration to your information property list:
 
@@ -76,7 +76,7 @@ For example:
 
 > **Note**: Supporting multiple scenes is optional, and may require restructuring your app’s data model to be scene-specific. Consider whether your app’s user experience benefits from multiple scenes before enabling it. To support multiple scenes, set [`UIApplicationSupportsMultipleScenes`](../BundleResources/information-property-list/uiapplicationscenemanifest/uiapplicationsupportsmultiplescenes.md) to `true` and give each [`UISceneConfiguration`](./uisceneconfiguration.md) a unique configuration name.
 
-##### Provide scene configurations from your app delegate
+### Provide scene configurations from your app delegate
 
 Implement [`application(_:configurationForConnecting:options:)`](./uiapplicationdelegate/application%28_,configurationforconnecting,options%29.md) in your app delegate if your app doesn’t include scene-configuration data in its information property list, or if it requires dynamic scene configuration — such as loading different scenes based on session-specific data:
 
@@ -112,7 +112,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 In this example, the app uses the [`activityType`](../Foundation/nsuseractivity/activitytype.md) property to determine which scene to create. For more information about configuring your app for different scene types, see [Specifying the scenes your app supports](./specifying-the-scenes-your-app-supports.md). For information about creating multiple windows programmatically, see [Supporting multiple windows on iPad](./supporting-multiple-windows-on-ipad.md).
 
-##### Configure your window scene
+### Configure your window scene
 
 UIKit creates a [`UIWindowScene`](./uiwindowscene.md) object for each scene instance. When configuring scene support, specify `UIWindowScene` objects rather than [`UIScene`](./uiscene.md) objects. If your app adopts scenes for CarPlay, use [`CPTemplateApplicationScene`](../CarPlay/cptemplateapplicationscene.md) instead. To learn how to add a CarPlay scene, see [Displaying Content in CarPlay](../CarPlay/displaying-content-in-carplay.md).
 
@@ -142,7 +142,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 `SceneDelegate` is a [`UIResponder`](./uiresponder.md) subclass that conforms to [`UIWindowSceneDelegate`](./uiwindowscenedelegate.md). For more information about preparing your app at launch time, see [Responding to the launch of your app](./responding-to-the-launch-of-your-app.md).
 
-#### Migrate app life-cycle logic
+## Migrate app life-cycle logic
 
 Move your app’s existing life-cycle methods from [`UIApplicationDelegate`](./uiapplicationdelegate.md) to [`UISceneDelegate`](./uiscenedelegate.md):
 
@@ -157,7 +157,7 @@ Move your app’s existing life-cycle methods from [`UIApplicationDelegate`](./u
 
 After migrating, test your app in Full Screen Apps, Windowed Apps, and Stage Manager on iPad. To learn how to respond to state transitions, see [Managing your app’s life cycle](./managing-your-app-s-life-cycle.md).
 
-#### Support noninteractive external display scenes
+## Support noninteractive external display scenes
 
 If your app doesn’t present custom content on an external display, you don’t need to configure anything for this scene role. When an external display connects, the system mirrors your app’s primary display, or, on compatible iPad models with extended display enabled, presents your app’s interactive windows on the external display.
 

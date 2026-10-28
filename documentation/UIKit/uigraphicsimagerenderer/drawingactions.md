@@ -23,7 +23,7 @@ typealias DrawingActions = (UIGraphicsImageRendererContext) -> Void
 typedef void (^)(UIGraphicsImageRendererContext *) UIGraphicsImageDrawingActions;
 ```
 
-#### Discussion
+## Discussion
 
 `UIGraphicsImageDrawingActions` defines a block type that takes a [`UIGraphicsImageRendererContext`](../uigraphicsimagerenderercontext.md) object as an argument and has no return value.
 

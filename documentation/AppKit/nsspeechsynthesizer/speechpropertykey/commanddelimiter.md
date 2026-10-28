@@ -19,7 +19,7 @@ static let commandDelimiter: NSSpeechSynthesizer.SpeechPropertyKey
 extern NSSpeechPropertyKey const NSSpeechCommandDelimiterProperty;
 ```
 
-#### Discussion
+## Discussion
 
 A dictionary object that contains the delimiter information. By default, the opening delimiter is “[[” and the closing delimiter is “]]”. Your application might need to change these delimiters temporarily if those character sequences occur naturally in a text buffer that is to be spoken. Your application can also disable embedded command processing by passing empty delimiters (as empty strings). See [`NSSpeechSynthesizer.SpeechPropertyKey.CommandDelimiterKey`](./commanddelimiterkey.md) for the keys you can use to specify values in this dictionary.
 

@@ -25,7 +25,7 @@ var principalMediaCharacteristics: [AVMediaCharacteristic]? { get }
 @property (nonatomic, readonly, nullable) NSArray<NSString *> * principalMediaCharacteristics;
 ```
 
-#### Discussion
+## Discussion
 
 If no option matches the principal media characteristics, the system chooses the default option in the group as the best match.
 

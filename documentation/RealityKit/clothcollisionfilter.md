@@ -17,7 +17,7 @@ Defines the collision groups for a body or collider and the mask for one-way col
 struct ClothCollisionFilter
 ```
 
-#### Overview
+## Overview
 
 Collisions in cloth are one-way: an entity’s mask determines which groups it will push away, independently of whether the other entity pushes back. For a body particle to be displaced by a collider, the particle’s groups must overlap with the collider’s mask. For two body particles in a self-collision, each particle is independently displaced based on whether its groups overlap with the other particle’s mask.
 

@@ -11,7 +11,7 @@ Obtain a report ID.
 
 > **Deprecated**: Apple Ads Campaign Management API is deprecated. Instead, use the [Apple Ads Platform API](../apple-ads-platform-api/apple-ads-platform-api.md).
 
-#### Discussion
+## Discussion
 
 Use this endpoint to obtain a `reportId` to use in a [`Get a Single Impression Share Report`](./get-a-single-impression-share-report.md) request. This endopoint supports selectors. See [`CustomReportRequest`](./customreportrequest.md) for selector structure.
 
@@ -20,7 +20,7 @@ Use this endpoint to obtain a `reportId` to use in a [`Get a Single Impression S
 - You can’t edit or remove report fields.
 - Impression Share reports with a `WEEKLY` granularity value can’t have custom `startTime` and `endTime` in the request payload. Use `dateRange` instead. See [`CustomReportRequest`](./customreportrequest.md).
 
-##### Payload example: Obtain a report ID
+### Payload example: Obtain a report ID
 
 **Request**:
 

@@ -25,7 +25,7 @@ var customSelector: Selector? { get }
 @property (readonly, nullable) SEL customSelector;
 ```
 
-#### Discussion
+## Discussion
 
 `NULL` if there is none.
 

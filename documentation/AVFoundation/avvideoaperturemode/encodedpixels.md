@@ -24,7 +24,7 @@ static let encodedPixels: AVVideoApertureMode
 extern AVVideoApertureMode const AVVideoApertureModeEncodedPixels;
 ```
 
-#### Discussion
+## Discussion
 
 The image is not cropped to the clean aperture region and is not scaled according to the pixel aspect ratio.
 

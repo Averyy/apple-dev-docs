@@ -16,7 +16,7 @@ nonisolated
 static func ornament<Content, EffectContent>(attachmentAnchor: OrnamentAttachmentAnchor, contentAlignment: Alignment3D = .center, @ContentBuilder ornament: () -> Content, effect: @escaping (EmptyHoverEffectContent, Bool, GeometryProxy) -> EffectContent) -> OrnamentHoverContentEffect<Content, EffectContent> where Self == OrnamentHoverContentEffect<Content, EffectContent>, Content : View, EffectContent : HoverEffectContent
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to present an ornament at the specified position when the view is hovered. The ornament will be presented using the provided `effect`.
 

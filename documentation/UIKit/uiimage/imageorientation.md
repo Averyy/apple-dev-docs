@@ -24,7 +24,7 @@ var imageOrientation: UIImage.Orientation { get }
 @property (nonatomic, readonly) UIImageOrientation imageOrientation;
 ```
 
-#### Discussion
+## Discussion
 
 Image orientation affects the way the image data is displayed when drawn. By default, images are displayed in the “up” orientation. If the image has associated metadata (such as EXIF information), however, this property contains the orientation indicated by that metadata. For a list of possible values for this property, see [`UIImage.Orientation`](./orientation.md).
 

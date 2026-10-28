@@ -22,7 +22,7 @@ var currentHardwareSampleRate: Double { get }
 @property (readonly) double currentHardwareSampleRate;
 ```
 
-#### Discussion
+## Discussion
 
 Obtain the value of this property after activating your audio session. After successful activation, the value of this property doesn’t change while your session remains active.
 

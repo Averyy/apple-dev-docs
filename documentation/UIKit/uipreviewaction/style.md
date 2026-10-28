@@ -24,7 +24,7 @@ enum Style
 enum UIPreviewActionStyle : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 Use these styles with instances of the [`UIPreviewAction`](../uipreviewaction.md) and [`UIPreviewActionGroup`](../uipreviewactiongroup.md) classes.
 

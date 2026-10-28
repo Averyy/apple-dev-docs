@@ -5,17 +5,17 @@
 
 Use the scheduling APIs in FxPlug to retrieve frames from different times.
 
-#### Overview
+## Overview
 
 The FxPlug SDK provides several timing and scheduling methods that give plug-ins a way to get the current time and to schedule media.
 
-##### Get the current time
+### Get the current time
 
 When an onscreen control or an event in a custom parameter view requires the current time, use the [`currentTime()`](../professional_video_applications/fxcustomparameteractionapi_v4/currenttime%28%29.md) method in the `FxCustomParameterAPI` protocol to get the rational time.
 
 > ❗ **Important**:  All FxPlug 4 APIs represent time using [`CMTime`](../CoreMedia/cmtime.md). If you’re familiar with previous versions of FxPlug, note the move away from `FxTime`. For more information, see [`CMTime`](../CoreMedia/cmtime.md).
 
-##### Schedule media
+### Schedule media
 
 The scheduling API lets the host applications schedule the media contained in image wells. Consider this method, new to FxPlug 4:
 

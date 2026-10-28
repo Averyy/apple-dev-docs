@@ -21,7 +21,7 @@ Creates a graph by decoding a computegraph.
 init(data: Data) throws
 ```
 
-#### Discussion
+## Discussion
 
 This initializer infers the serialization format from the contents of `data`, so you can pass data produced by [`data(using:)`](./data%28using%29.md) regardless of the [`ComputeNodeGraph.Format`](./format.md) you chose when encoding.
 

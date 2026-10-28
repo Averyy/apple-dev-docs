@@ -19,7 +19,7 @@ The width of the stroke.
 var strokeWidth: CGFloat { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `0.0`.
 

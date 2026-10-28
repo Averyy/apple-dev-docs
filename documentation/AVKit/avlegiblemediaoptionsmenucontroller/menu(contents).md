@@ -37,11 +37,11 @@ func menu(contents: AVLegibleMediaOptionsMenuController.MenuContents = []) -> NS
 - (NSMenu *) menuWithContents:(AVLegibleMediaOptionsMenuContents) contents;
 ```
 
-#### Return Value
+## Return Value
 
 A NSMenu ready to be presented by the client, or nil if the menu cannot be built
 
-#### Discussion
+## Discussion
 
 Builds a legible options menu using the specified contents.
 

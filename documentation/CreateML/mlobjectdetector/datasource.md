@@ -15,7 +15,7 @@ A data source for an object detector.
 enum DataSource
 ```
 
-#### Overview
+## Overview
 
 You use a data source to specify the training dataset for an [`MLObjectDetector`](../mlobjectdetector.md) training session. An object-detector data source represents a set of images and an annotation for each object in an image.
 

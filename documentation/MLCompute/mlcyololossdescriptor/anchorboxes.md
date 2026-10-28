@@ -23,7 +23,7 @@ var anchorBoxes: Data { get }
 @property (nonatomic, copy, readonly, nonnull) NSData * anchorBoxes;
 ```
 
-#### Discussion
+## Discussion
 
 This data has [`anchorBoxCount`](./anchorboxcount.md) pairs of floating-point values that represent the width and height of each anchor box.
 

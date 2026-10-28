@@ -20,7 +20,7 @@ func navigateBack(_ sender: Any?)
 - (void) navigateBack:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 This method is typically invoked in response to a user interacting with a control, the `sender`.
 

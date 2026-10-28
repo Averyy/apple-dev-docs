@@ -25,11 +25,11 @@ class func joint(withBodyA bodyA: SKPhysicsBody, bodyB: SKPhysicsBody, anchorA: 
 + (SKPhysicsJointSpring *) jointWithBodyA:(SKPhysicsBody *) bodyA bodyB:(SKPhysicsBody *) bodyB anchorA:(CGPoint) anchorA anchorB:(CGPoint) anchorB;
 ```
 
-#### Return Value
+## Return Value
 
 A new spring joint.
 
-#### Discussion
+## Discussion
 
 You must add the joint to a physics world associated with the scene before it takes effect.
 

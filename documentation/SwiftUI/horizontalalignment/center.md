@@ -21,7 +21,7 @@ A guide that marks the horizontal center of the view.
 static let center: HorizontalAlignment
 ```
 
-#### Discussion
+## Discussion
 
 Use this guide to align the centers of views:
 

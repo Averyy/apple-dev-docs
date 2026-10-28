@@ -15,7 +15,7 @@ Returns the identifiers of the selected values in a multi-value property or an e
 extern CFArrayRefABPickerCopySelectedIdentifiers(ABPickerRef inPicker, ABPersonRef inPerson);
 ```
 
-#### Return Value
+## Return Value
 
 An array of string objects representing the selected identifiers.
 

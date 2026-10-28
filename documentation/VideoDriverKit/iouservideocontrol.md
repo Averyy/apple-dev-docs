@@ -15,7 +15,7 @@ A base class for control objects.
 class IOUserVideoControl;
 ```
 
-#### Overview
+## Overview
 
 Don’t subclass [`IOUserVideoControl`](./iouservideocontrol.md) or allocate it directly.
 

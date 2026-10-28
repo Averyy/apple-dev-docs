@@ -21,7 +21,7 @@ A Boolean value that indicates whether the system setting to prefer a nonblinkin
 static var prefersNonBlinkingTextInsertionIndicator: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) if the system setting for Prefer Non-Blinking Cursor is on; otherwise, [`false`](../../Swift/false.md). This preference is relevant for apps that draw custom insertion indicators.
 

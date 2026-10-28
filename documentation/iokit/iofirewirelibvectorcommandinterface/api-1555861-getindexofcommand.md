@@ -16,11 +16,11 @@ Returns the index of the specified command.
 UInt32 (*GetIndexOfCommand)(IOFireWireLibVectorCommandRef self, IOFireWireLibCommandRef command);
 ```
 
-#### Return Value
+## Return Value
 
 The index of the specified command
 
-#### Discussion
+## Discussion
 
 Returns kIOReturnNotFound if the command does not exist in this vector.
 

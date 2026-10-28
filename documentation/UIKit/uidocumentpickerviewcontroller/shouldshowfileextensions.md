@@ -22,7 +22,7 @@ var shouldShowFileExtensions: Bool { get set }
 @property (nonatomic, assign) BOOL shouldShowFileExtensions;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`false`](../../Swift/false.md).
 

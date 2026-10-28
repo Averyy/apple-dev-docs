@@ -24,7 +24,7 @@ var alertLaunchImage: String? { get set }
 @property (copy, nullable) NSString * alertLaunchImage;
 ```
 
-#### Discussion
+## Discussion
 
 If you specify a value, the system uses it to locate an image in the app’s bundle, and displays it as a launch image when the user launches the app after receiving a push notification.
 

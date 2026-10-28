@@ -21,11 +21,11 @@ Returns a new tensor with the same shape where everything outside a central band
 func bandPart(lowerBandCount: Int, upperBandCount: Int) -> MLTensor
 ```
 
-#### Return Value
+## Return Value
 
 The band part of the tensor.
 
-#### Discussion
+## Discussion
 
 The framework copies a diagonal band of values from the tensor to the result tensor of the same size. A coordinate `[..., i, j]` is considered in band if
 

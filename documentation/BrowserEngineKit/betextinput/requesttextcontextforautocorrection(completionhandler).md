@@ -31,7 +31,7 @@ func requestTextContextForAutocorrection() async -> BETextDocumentContext
 
 - [Integrating custom browser text views with UIKit](../integrating-custom-browser-text-views-with-uikit.md)
 
-#### Discussion
+## Discussion
 
 The system calls this method to retrieve extra context for the currently selected text.
 

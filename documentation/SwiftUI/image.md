@@ -30,7 +30,7 @@ struct Image
 - [Displaying data in lists](./displaying-data-in-lists.md)
 - [Fitting images into available space](./fitting-images-into-available-space.md)
 
-#### Overview
+## Overview
 
 Use an `Image` instance when you want to add images to your SwiftUI app. You can create images from many sources:
 
@@ -54,7 +54,7 @@ You can use methods on the `Image` type as well as standard view modifiers to ad
 
 An `Image` is a late-binding token; the system resolves its actual value only when it’s about to use the image in an environment.
 
-##### Making images accessible
+### Making images accessible
 
 To use an image as a control, use one of the initializers that takes a `label` parameter. This allows the system’s accessibility frameworks to use the label as the name of the control for users who use features like VoiceOver. For images that are only present for aesthetic reasons, use an initializer with the `decorative` parameter; the accessibility systems ignore these images.
 

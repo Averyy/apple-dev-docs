@@ -16,7 +16,7 @@ The error code that indicates whether an error on the payment sheet is for shipp
 enum ApplePayErrorCode
 ```
 
-#### Overview
+## Overview
 
 Use the following error codes in the [`code`](./applepayerror/code.md) property of [`ApplePayError`](./applepayerror.md):
 

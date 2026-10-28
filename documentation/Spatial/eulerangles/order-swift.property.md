@@ -25,7 +25,7 @@ var order: __SPEulerAngleOrder
 SPEulerAngleOrder order;
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: In Swift, use [EulerAngles.Order](./order-swift.typealias.md) in place of `__SPEulerAngleOrder`.
 

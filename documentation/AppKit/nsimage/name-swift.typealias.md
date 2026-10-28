@@ -22,7 +22,7 @@ typealias Name = String
 typedef NSString * NSImageName;
 ```
 
-#### Discussion
+## Discussion
 
 The appearance of system-supplied images can change between releases. If you use an image for its intended purpose (and not because of how it looks), your code should look correct from release to release.
 

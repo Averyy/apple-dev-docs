@@ -25,11 +25,11 @@ func path(forResource name: String?, ofType ext: String?, inDirectory subpath: S
 - (NSString *) pathForResource:(NSString *) name ofType:(NSString *) ext inDirectory:(NSString *) subpath forLocalization:(NSString *) localizationName;
 ```
 
-#### Return Value
+## Return Value
 
 The full pathname for the resource file or `nil` if the file could not be located.
 
-#### Discussion
+## Discussion
 
 This method is equivalent to [`path(forResource:ofType:inDirectory:)`](./path%28forresource,oftype,indirectory%29-swift.method.md), except that only nonlocalized resources and those in the language-specific `.lproj` directory specified by `localizationName` are searched.
 

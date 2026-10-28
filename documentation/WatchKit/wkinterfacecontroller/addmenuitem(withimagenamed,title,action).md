@@ -21,7 +21,7 @@ func addMenuItem(withImageNamed imageName: String, title: String, action: Select
 - (void) addMenuItemWithImageNamed:(NSString *) imageName title:(NSString *) title action:(SEL) action;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to append an action to the interface controller’s context menu. If the menu already has four items, additional items are ignored.
 

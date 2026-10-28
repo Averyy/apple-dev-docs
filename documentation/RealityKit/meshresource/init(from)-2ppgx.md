@@ -1,0 +1,64 @@
+# init(from:)
+
+**Framework**: RealityKit  
+**Kind**: init  
+**Role**: Initializer
+
+Initialize a mesh resource from descriptors asynchronously.
+
+**Availability**:
+- iOS 18.0+
+- iPadOS 18.0+
+- Mac Catalyst 18.0+
+- macOS 15.0+
+- tvOS 26.0+
+- visionOS 1.0+
+
+## Declaration
+
+```swift
+nonisolated
+convenience init(from descriptors: [MeshDescriptor]) async throws
+```
+
+**Other overloads**:
+
+```swift
+@MainActor
+@preconcurrency convenience init(from mesh: LowLevelMesh) async throws
+```
+
+```swift
+@MainActor
+@preconcurrency convenience init(from mesh: LowLevelMesh) throws
+```
+
+```swift
+@MainActor
+@preconcurrency convenience init(from meshAnchor: MeshAnchor) async throws
+```
+
+```swift
+@MainActor
+@preconcurrency convenience init(from planeAnchor: PlaneAnchor) async throws
+```
+
+```swift
+@MainActor
+convenience init(from mesh: ClothMeshResource)
+```
+
+```swift
+@MainActor
+convenience init(from mesh: ClothMeshResource) async
+```
+
+```swift
+nonisolated
+convenience init(from content: MeshResource.Contents) async throws
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/meshresource/init(from:)-2ppgx)*

@@ -25,7 +25,7 @@ func cblas_srotg(_ A: UnsafeMutablePointer<Float>, _ B: UnsafeMutablePointer<Flo
 void cblas_srotg(float *A, float *B, float *C, float *S);
 ```
 
-#### Discussion
+## Discussion
 
 Given a vertical matrix containing `a` and `b`, computes the values of `cos θ` and `sin θ` that zero the lower value (`b`). Returns the value of `sin θ` in `s`, the value of `cos θ` in `c`, and the upper value (`r`) in `a`.
 

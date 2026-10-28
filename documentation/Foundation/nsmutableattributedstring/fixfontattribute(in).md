@@ -19,7 +19,7 @@ func fixFontAttribute(in range: NSRange)
 - (void) fixFontAttributeInRange:(NSRange) range;
 ```
 
-#### Discussion
+## Discussion
 
 This method assigns default fonts to characters with illegal fonts for their scripts and corrects other font attribute assignments. For example, Kanji characters assigned a Latin font are reassigned an appropriate Kanji font. Raises an [`rangeException`](../nsexceptionname/rangeexception.md) if any part of `range` lies beyond the end of the receiver’s characters.
 

@@ -17,7 +17,7 @@ Quantize and save an already-instantiated model from a compatible safetensors di
 func convert(modelDirectory: URL, tokenizerDirectory: URL? = nil, model: BaseLanguageModel, to outputDirectory: URL, options: ModelConversionOptions = .init(), progressHandler: @Sendable (ModelConversionProgress) -> Void = { _ in }, perLayerQuantization: BaseConfiguration.PerLayerQuantization? = nil) throws -> ModelConversionResult
 ```
 
-#### Discussion
+## Discussion
 
 The function loads safetensors weights, runs the model’s sanitizer through [`loadWeights(modelDirectory:model:quantization:perLayerQuantization:weightFileSelection:excludedComponents:componentLoading:)`](./loadweights%28modeldirectory,model,quantization,perlayerquantization,weightfileselection,excludedcomponents,componentloading%29-858j8.md), applies quantization, writes safetensors shards and an index, copies tokenizer/config sidecar files, and updates `config.json` with the requested quantization block.
 

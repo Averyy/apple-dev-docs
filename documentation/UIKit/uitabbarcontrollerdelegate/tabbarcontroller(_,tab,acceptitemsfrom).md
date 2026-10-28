@@ -26,7 +26,7 @@ optional func tabBarController(_ tabBarController: UITabBarController, tab: UITa
 
 - [Elevating your iPad app with a tab bar and sidebar](../elevating-your-ipad-app-with-a-tab-bar-and-sidebar.md)
 
-#### Discussion
+## Discussion
 
 This is only called if the operation returned from `tabBarController:tab:operationForAcceptingItemsFromDropSession` is valid for a drop.
 

@@ -24,7 +24,7 @@ var isEmpty: Bool { get }
 @property (readonly, getter=isEmpty) BOOL empty;
 ```
 
-#### Discussion
+## Discussion
 
 Valid path elements include commands to move to a specified point, draw a line or curve segment, or close the path. Thus, a path is not considered empty even if all you do is call the [`move(to:)`](./move%28to%29.md) method.
 

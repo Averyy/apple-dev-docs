@@ -21,7 +21,7 @@ class var secondarySelectedControlColor: NSColor { get }
 @property (class, strong, readonly) NSColor * secondarySelectedControlColor;
 ```
 
-#### Return Value
+## Return Value
 
 The system color used for selected controls in non-key views. For more information, see [`NSColor`](../nscolor.md).
 

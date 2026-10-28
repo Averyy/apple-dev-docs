@@ -5,7 +5,7 @@
 
 Verify that your app handles auto-renewable subscriptions and non-consumable Apple In-App Purchases that family members share with Family Sharing.
 
-#### Overview
+## Overview
 
 Family Sharing lets people share access to auto-renewable subscriptions or non-consumables that have Family Sharing enabled with up to five family members. You can use Sandbox Test Families to test whether your app works with Family Sharing as expected.
 
@@ -18,7 +18,7 @@ To test Family Sharing in your app:
 - Create the Sandbox Test Family in App Store Connect. For more information, see [Create a Sandbox Test Family](https://developer.apple.com/help/app-store-connect/test-in-app-purchases/manage-sandbox-apple-id-settings#create-a-sandbox-test-family).
 - To make testing easier, have a separate device to use for each test family member. You can also use a single device and sign in using each family member’s Sandbox Apple Account in turn.
 
-##### Manage sharing for the Sandbox Test Family
+### Manage sharing for the Sandbox Test Family
 
 You can set the sharing status for each member of the Sandbox Test Family individually, as follows:
 
@@ -38,7 +38,7 @@ Modify the sharing status on the Family Sharing page in iOS by following these s
 
 You can also change these settings in App Store Connect. For more information, see [Manage a Sandbox Test Family](https://developer.apple.com/help/app-store-connect/test-in-app-purchases/manage-sandbox-apple-id-settings#manage-a-sandbox-test-family).
 
-##### Test sharing an Apple In-App Purchase in a family group
+### Test sharing an Apple In-App Purchase in a family group
 
 The two main test cases for Family Sharing are a family member gaining and losing access to family-shared purchases. You can simulate these situations as follows.
 
@@ -50,7 +50,7 @@ To test family members gaining access to a shared purchase:
 4. Verify that your app receives a transaction for the shared purchase and unlocks the content for the family member. Note that the transaction has a [`familyShared`](./transaction/ownershiptype-swift.struct/familyshared.md) ownership type.
 5. When sharing auto-renewable subscriptions, if you have [`App Store Server Notifications V2`](../AppStoreServerNotifications/app-store-server-notifications-v2.md) enabled in the sandbox environment, your server receives a notification for each test family member that has sharing enabled. For more information, see the `SUBSCRIBED` [`notificationType`](../AppStoreServerNotifications/notificationtype.md).
 
-##### Test revoked access to shared Apple In-App Purchases
+### Test revoked access to shared Apple In-App Purchases
 
 To test a family member losing access to shared purchases:
 

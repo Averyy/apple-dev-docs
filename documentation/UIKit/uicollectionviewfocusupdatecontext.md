@@ -24,7 +24,7 @@ class UICollectionViewFocusUpdateContext
 @interface UICollectionViewFocusUpdateContext : UIFocusUpdateContext
 ```
 
-#### Overview
+## Overview
 
 When focus changes, the collection view delegate receives a context object with the relevant information. Your delegate methods use the information in this object to create animations or to perform other tasks related to the change in focus.
 

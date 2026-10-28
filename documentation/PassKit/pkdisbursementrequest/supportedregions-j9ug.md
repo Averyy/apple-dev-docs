@@ -19,7 +19,7 @@ An array of two-letter region codes that describes the regions to support.
 @property (nonatomic, copy, nullable) NSArray<NSString *> * supportedRegions;
 ```
 
-#### Discussion
+## Discussion
 
 If you provide this array, the system filters the selectable payment passes to those the payment service providers (PSP) issued in the supported regions. Indicate the supported countries or regions by using [ISO 3166](https://www.iso.org/iso-3166-country-codes.html) country codes.
 

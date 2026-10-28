@@ -21,11 +21,11 @@ init(voiceControlStates: [CPVoiceControlState])
 - (instancetype) initWithVoiceControlStates:(NSArray<CPVoiceControlState *> *) voiceControlStates;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized voice control template.
 
-#### Discussion
+## Discussion
 
 When presenting the voice control template for the first time, the template defaults to the first state in the `voiceControlStates` array. You can change the state after presenting the template by calling the [`activateVoiceControlState(withIdentifier:)`](./activatevoicecontrolstate%28withidentifier%29.md) method.
 

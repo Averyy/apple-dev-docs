@@ -19,11 +19,11 @@ The declaration to configure External Intelligence Integrations settings.
 object ExternalIntelligenceSettings
 ```
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.configuration.external-intelligence.settings` as the declaration type.
 
-##### Configuration availability
+### Configuration availability
 
 |  |  |
 | --- | --- |
@@ -35,7 +35,7 @@ Specify `com.apple.configuration.external-intelligence.settings` as the declarat
 | Allowed in user scope | macOS |
 | Apply | Multiple configurations are combined and applied as a single effective configuration |
 
-##### Configuration examples
+### Configuration examples
 
 This configuration restricts external intelligence integrations.
 

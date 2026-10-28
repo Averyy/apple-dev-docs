@@ -30,7 +30,7 @@ typedef struct { ... } MTLSize;
 - [Calculating threadgroup and grid sizes](./calculating-threadgroup-and-grid-sizes.md)
 - [Creating a rasterization rate map](./creating-a-rasterization-rate-map.md)
 
-#### Overview
+## Overview
 
 Metal has many types that represent arrays of discrete elements, such as:
 

@@ -25,11 +25,11 @@ string RegulationResponseUpdate.ResponseValue
 - `FALSE`: A generic negative response.
 - `NOT_ANSWERED`: No response has been provided yet.
 
-#### Discussion
+## Discussion
 
 Updating this value only makes sense when the campaign’s `regulationType` still requires the disclosure it answers.
 
-##### Example
+### Example
 
 ```json
 {

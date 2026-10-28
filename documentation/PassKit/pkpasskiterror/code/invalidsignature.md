@@ -24,7 +24,7 @@ case invalidSignature
 PKInvalidSignature
 ```
 
-#### Discussion
+## Discussion
 
 For example, the pass type identifier in the certificate and the pass do not match, or the certificate has expired or was revoked.
 

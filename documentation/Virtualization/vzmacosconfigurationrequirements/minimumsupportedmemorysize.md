@@ -19,7 +19,7 @@ var minimumSupportedMemorySize: UInt64 { get }
 @property (readonly) uint64_t minimumSupportedMemorySize;
 ```
 
-#### Discussion
+## Discussion
 
 This property specifies the minimum amount of memory required by the associated macOS configuration.
 

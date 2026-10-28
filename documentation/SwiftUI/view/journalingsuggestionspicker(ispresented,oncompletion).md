@@ -17,7 +17,7 @@ Presents a visual picker interface that contains events and images that a person
 @preconcurrency func journalingSuggestionsPicker(isPresented: Binding<Bool>, onCompletion: @escaping (JournalingSuggestion) async -> Void) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 For more information about the Journaling Suggestions picker, see: doc:presenting-the-suggestions-picker-and-processing-a-selection.
 

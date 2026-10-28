@@ -27,7 +27,7 @@ struct Alignment
 - [Aligning views within a stack](./aligning-views-within-a-stack.md)
 - [Building layouts with stack views](./building-layouts-with-stack-views.md)
 
-#### Overview
+## Overview
 
 An `Alignment` contains a [`HorizontalAlignment`](./horizontalalignment.md) guide and a [`VerticalAlignment`](./verticalalignment.md) guide. Specify an alignment to direct the behavior of certain layout containers and modifiers, like when you place views in a [`ZStack`](./zstack.md), or layer a view in front of or behind another view using [`overlay(alignment:content:)`](./view/overlay%28alignment,content%29.md) or [`background(alignment:content:)`](./view/background%28alignment,content%29.md), respectively. During layout, SwiftUI brings the specified guides of the affected views together, aligning the views.
 
@@ -86,7 +86,7 @@ To avoid crowding, the alignment diagram shows only two of the available text ba
 
 In a left-to-right language like English, the leading and trailing alignments appear on the left and right edges, respectively. SwiftUI reverses these in right-to-left language environments. For more information, see [`HorizontalAlignment`](./horizontalalignment.md).
 
-##### Custom alignment
+### Custom alignment
 
 You can create custom alignments — which you typically do to make use of custom horizontal or vertical guides — by using the [`init(horizontal:vertical:)`](./alignment/init%28horizontal,vertical%29.md) initializer. For example, you can combine a custom vertical guide called `firstThird` with the built-in horizontal [`center`](./horizontalalignment/center.md) guide, and use it to configure a [`ZStack`](./zstack.md):
 

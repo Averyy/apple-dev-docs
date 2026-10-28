@@ -22,7 +22,7 @@ optional func tableView(_ tableView: UITableView, dropSessionDidEnter session: a
 - (void) tableView:(UITableView *) tableView dropSessionDidEnter:(id<UIDropSession>) session;
 ```
 
-#### Discussion
+## Discussion
 
 The table view calls this method when dragged content first enters its bounds rectangle. This method isn’t called again until the dragged content exits the table view’s bounds (triggering a call to the [`tableView(_:dropSessionDidExit:)`](./tableview%28_,dropsessiondidexit%29.md) method) and enters again.
 

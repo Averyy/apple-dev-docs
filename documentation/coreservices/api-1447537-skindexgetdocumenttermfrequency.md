@@ -19,11 +19,11 @@ func SKIndexGetDocumentTermFrequency(_ inIndex: SKIndex!, _ inDocumentID: SKDocu
 CFIndex SKIndexGetDocumentTermFrequency(SKIndexRef inIndex, SKDocumentID inDocumentID, CFIndex inTermID);
 ```
 
-#### Return Value
+## Return Value
 
 A [`CFIndex`](../CoreFoundation/cfindex.md) object containing the number of occurrences of a term in a document.
 
-#### Discussion
+## Discussion
 
 In versions of macOS prior to OS X v10.4, the parameter type for `inDocumentID` was `CFIndex`. In macOS 10.4 and later, the parameter type is `SKDocumentID`.
 

@@ -17,7 +17,7 @@ The signature is missing the campaign identifier, in the testing environment.
 static var signatureMissingCampaignId: SKAdTestError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 Be sure to include the campaign identifier when you create and validate an ad impression in the testing environment.
 

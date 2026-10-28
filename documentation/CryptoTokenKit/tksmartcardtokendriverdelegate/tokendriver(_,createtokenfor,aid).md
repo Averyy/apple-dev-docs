@@ -26,7 +26,7 @@ func tokenDriver(_ driver: TKSmartCardTokenDriver, createTokenFor smartCard: TKS
 - (TKSmartCardToken *) tokenDriver:(TKSmartCardTokenDriver *) driver createTokenForSmartCard:(TKSmartCard *) smartCard AID:(NSData *) AID error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 The token created for the Smart Card, or `nil` if an error occurs or the delegate decides not to provide a token.
 

@@ -21,7 +21,7 @@ A base type that represents an archive of files and directories.
 extern UTType * const UTTypeArchive;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.archive`.
 

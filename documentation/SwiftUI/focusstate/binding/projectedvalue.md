@@ -21,7 +21,7 @@ A projection of the binding value that returns a binding.
 var projectedValue: FocusState<Value>.Binding { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use the projected value to pass a binding value down a view hierarchy.
 

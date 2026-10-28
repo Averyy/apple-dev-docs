@@ -17,7 +17,7 @@ Convert a flattened dictionary back into a `NestedDictionary` structure.
 static func unflattened(_ flat: [String : Element]) -> NestedDictionary<Key, Element> where Key == String
 ```
 
-##### See Also
+### See Also
 
 - [`flattened(prefix:)`](./flattened%28prefix%29.md)
 - [`unflattened(_:)`](./unflattened%28_%29-4p8bn.md)

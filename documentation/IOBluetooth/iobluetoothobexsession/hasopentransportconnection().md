@@ -19,7 +19,7 @@ func hasOpenTransportConnection() -> Bool
 - (Boolean) hasOpenTransportConnection;
 ```
 
-#### Return Value
+## Return Value
 
 True or false, whether there is already an open transport connection for this OBEX session.
 

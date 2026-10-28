@@ -9,7 +9,7 @@ Query keywords using structured filters, sorting, and pagination.
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Discussion
+## Discussion
 
 This endpoint queries keywords using a standard `QueryRequest` body. Either `adGroupId` or `campaignId` is required. The API returns an error if neither is present.
 
@@ -19,7 +19,7 @@ This endpoint queries keywords using a standard `QueryRequest` body. Either `adG
 
 See [`QueryFilterOperator`](./queryfilteroperator.md) for the full set of supported comparison operators.
 
-##### Filterable Fields
+### Filterable Fields
 
 | Field | Type | Operators | Sortable | Description |
 | --- | --- | --- | --- | --- |
@@ -33,13 +33,13 @@ See [`QueryFilterOperator`](./queryfilteroperator.md) for the full set of suppor
 
 The request body is a [`QueryRequest`](./queryrequest.md) composed of [`QueryFilter`](./queryfilter.md) conditions and [`QuerySort`](./querysort.md) directives ([`QuerySortOrder`](./querysortorder.md)), controlled by [`QueryPagination`](./querypagination.md).
 
-#### Payload Examples
+## Payload Examples
 
 **Query by Ad Group**:
 
 Query all keywords in a specific ad group, sorted by creation time descending. The response shows two keywords with different match types.
 
-##### Request
+### Request
 
 ```http
 POST /v1/keywords/query
@@ -66,7 +66,7 @@ POST /v1/keywords/query
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {
@@ -116,7 +116,7 @@ POST /v1/keywords/query
 
 Query keywords across several ad groups at once using `adGroupId IN`. The listed ad groups can belong to different campaigns within the same ad account.
 
-##### Request
+### Request
 
 ```http
 POST /v1/keywords/query
@@ -137,7 +137,7 @@ POST /v1/keywords/query
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {
@@ -187,7 +187,7 @@ POST /v1/keywords/query
 
 Return only exact match keywords across an entire campaign.
 
-##### Request
+### Request
 
 ```http
 POST /v1/keywords/query
@@ -213,7 +213,7 @@ POST /v1/keywords/query
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {
@@ -247,7 +247,7 @@ POST /v1/keywords/query
 
 Retrieve all paused keywords within an ad group to review which terms are suspended.
 
-##### Request
+### Request
 
 ```http
 POST /v1/keywords/query
@@ -273,7 +273,7 @@ POST /v1/keywords/query
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {

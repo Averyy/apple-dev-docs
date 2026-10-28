@@ -19,11 +19,11 @@ func indexPathsToInsertForSupplementaryView(ofKind elementKind: NSCollectionView
 - (NSSet<NSIndexPath *> *) indexPathsToInsertForSupplementaryViewOfKind:(NSCollectionViewSupplementaryElementKind) elementKind;
 ```
 
-#### Return Value
+## Return Value
 
 The set of [`NSIndexPath`](../../Foundation/nsindexpath.md) objects representing the supplementary views to insert, or an empty array if you do not want to insert any supplementary views.
 
-#### Discussion
+## Discussion
 
 When your app inserts or deletes items or sections in the collection view, the collection view calls this method for each of the registered supplementary view types. The default implementation returns an empty array, but you can override it and return index paths for each supplementary view you want to add. For example, when a section is added, you might want to add the supplementary views that belong in that section. In that case, you would add index paths to the array that contain the section numbers that were added.
 

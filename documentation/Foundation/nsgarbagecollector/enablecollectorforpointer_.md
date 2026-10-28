@@ -15,7 +15,7 @@ Specifies that a given pointer may be collected.
 - (void) enableCollectorForPointer:(const void *) ptr;
 ```
 
-#### Discussion
+## Discussion
 
 You use this method to make memory that was previously marked as uncollectable. For example, given the address of the global dictionary created in [`disableCollectorForPointer:`](./disablecollectorforpointer_.md), you could make the dictionary collectable as follows:
 

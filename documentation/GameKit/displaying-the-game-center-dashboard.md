@@ -5,7 +5,7 @@
 
 Provide an interface for players to navigate to their Game Center data from your game.
 
-#### Overview
+## Overview
 
 The *dashboard* provides a central location from which players can browse and manage their Game Center data. The player can access information about their profile, as well as leaderboards, achievements, and challenges. The dashboard also displays highlights in these areas as the players navigate.
 
@@ -17,7 +17,7 @@ Alternatively, to add the access point to a fixed location in your game that all
 
 For design guidance, see [Human Interface Guidelines > Technologies > Game Center > Custom dashboard links](https://developer.apple.com/design/human-interface-guidelines/game-center#Custom-dashboard-links).
 
-##### Present the main dashboard
+### Present the main dashboard
 
 To display the main dashboard, pass `dashboard` as the state parameter to the [`init(state:)`](./gkgamecenterviewcontroller/init%28state%29.md) method when you create the view controller, set the delegate of the view controller to your object, and then present it:
 
@@ -28,7 +28,7 @@ viewController.gameCenterDelegate = self
 present(viewController, animated: true, completion: nil)
 ```
 
-##### Show the player’s profile
+### Show the player’s profile
 
 In the profile area, the player can see their achievements, find friends, and see what games their friends are playing. They can also edit their Game Center settings, such as their nickname and avatar.
 
@@ -43,7 +43,7 @@ viewController.gameCenterDelegate = self
 present(viewController, animated: true, completion: nil)
 ```
 
-##### Present the list of leaderboards
+### Present the list of leaderboards
 
 You can display a list of leaderboards in the dashboard that allows the player to navigate to the leaderboards they want to see. When the player selects a leaderboard, the dashboard displays the details for that leaderboard.
 
@@ -58,7 +58,7 @@ viewController.gameCenterDelegate = self
 present(viewController, animated: true, completion: nil)
 ```
 
-##### Display a single leaderboard
+### Display a single leaderboard
 
 You can present a specific leaderboard in the dashboard that allows players to see how they rank against friends, players with whom they played recently, and players from all over the world. They can use the filter in the header area to adjust the scope of the leaderboard by a time period, or show a specific occurrence of a recurring leaderboard. They can scroll to the top of the list by tapping on the name in the header.
 
@@ -78,7 +78,7 @@ present(viewController, animated: true, completion: nil)
 
 The player can filter and scope scores by player (Friends, Recent, or Global) and time period (for example, All Time).
 
-##### Display the player’s achievements
+### Display the player’s achievements
 
 You can show the player a list of achievements they received and achievements they’ve yet to complete. An *achievement* is a collectible item indicating that the player successfully reached a particular goal in your game. In the dashboard, an achievement appears as either locked, in-progress, completed, or hidden.
 
@@ -93,7 +93,7 @@ viewController.gameCenterDelegate = self
 present(viewController, animated: true, completion: nil)
 ```
 
-##### Dismiss the dashboard
+### Dismiss the dashboard
 
 Implement the [`gameCenterViewControllerDidFinish(_:)`](./gkgamecentercontrollerdelegate/gamecenterviewcontrollerdidfinish%28_%29.md) delegate method in the [`GKGameCenterControllerDelegate`](./gkgamecentercontrollerdelegate.md) protocol to dismiss the dashboard when the player closes it.
 

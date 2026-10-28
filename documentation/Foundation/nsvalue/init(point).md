@@ -20,7 +20,7 @@ init(point: NSPoint)
 + (NSValue *) valueWithPoint:(NSPoint) point;
 ```
 
-#### Return Value
+## Return Value
 
 A new value object that contains the point information.
 

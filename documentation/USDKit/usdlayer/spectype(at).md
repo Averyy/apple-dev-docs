@@ -20,7 +20,7 @@ Returns the kind of spec authored at the given path, or `nil` if nothing is auth
 func specType(at path: USDLayer.Path) -> USDLayer.SpecType?
 ```
 
-#### Return Value
+## Return Value
 
 The spec type at `path`, or `nil` if no spec is authored.
 

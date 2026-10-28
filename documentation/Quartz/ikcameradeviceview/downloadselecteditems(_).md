@@ -20,7 +20,7 @@ func downloadSelectedItems(_ sender: Any!)
 - (void) downloadSelectedItems:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 This method is can be connected to a user interface item in Interface Builder.
 

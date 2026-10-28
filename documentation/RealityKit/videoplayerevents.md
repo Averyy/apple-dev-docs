@@ -20,7 +20,7 @@ Events associated with video playback for VideoPlayerComponent.
 enum VideoPlayerEvents
 ```
 
-#### Overview
+## Overview
 
 For more information on subscribing to scene events, see `RealityKit/Scene/Event`.
 

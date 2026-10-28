@@ -15,7 +15,7 @@ A Boolean control where true means that the talkback channel is enabled.
 TalkbackControl
 ```
 
-#### Discussion
+## Discussion
 
 This control is for talkback channels that are handled outside of the regular IO channels. If the talkback channel is among the normal IO channels, it will use IOUserVideoMuteControl.
 

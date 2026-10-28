@@ -24,7 +24,7 @@ class UIInputView
 @interface UIInputView : UIView
 ```
 
-#### Overview
+## Overview
 
 The [`UIInputView`](./uiinputview.md) class is designed to match the appearance of the standard system keyboard when used as an input view with a responder. When defining your own custom input views or input accessory views, you can use a [`UIInputView`](./uiinputview.md) object as the root view and add any subviews you want to create your input view. The input view and its subviews receive tinting and blur effects based on the options you specify at initialization time.
 

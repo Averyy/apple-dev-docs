@@ -21,7 +21,7 @@ An environment value that indicates how a text view aligns its lines when the co
 var multilineTextAlignment: TextAlignment { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Set this value for a view hierarchy by applying the [`multilineTextAlignment(_:)`](../view/multilinetextalignment%28_%29.md) view modifier. Views in the hierarchy that display text, like [`Text`](../text.md) or [`TextEditor`](../texteditor.md), read the value from the environment and adjust their text alignment accordingly.
 

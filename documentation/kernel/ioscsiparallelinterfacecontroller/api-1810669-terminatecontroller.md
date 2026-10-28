@@ -12,7 +12,7 @@ virtual void TerminateController (
  void ) = 0;
 ```
 
-#### Overview
+## Overview
 
 It is guaranteed that the TerminateController() will only be called once and only after the InitializeController() method and only if true was returned in response to the InitializeController() method. The TerminateController() method allows the subclass to release all resources that were acquired for operation of the hardware and shutdown all hardware services. This is the last method of the subclass that will be called before the class is destroyed.
 

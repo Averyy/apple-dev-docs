@@ -19,7 +19,7 @@ var configurationDescriptorData: Data? { get }
 @property (readonly, nullable) NSData * configurationDescriptorData;
 ```
 
-#### Discussion
+## Discussion
 
 The underlying bytes can be cast to [`IOUSBConfigurationDescriptor`](../../kernel/iousbconfigurationdescriptor.md). If the USB accessory isn’t configured, this returns `nil`.
 

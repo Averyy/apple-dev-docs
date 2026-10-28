@@ -22,11 +22,11 @@ optional func replacementSemanticSegmentationMatte(ofType semanticSegmentationMa
 - (AVSemanticSegmentationMatte *) replacementSemanticSegmentationMatteOfType:(AVSemanticSegmentationMatteType) semanticSegmentationMatteType forPhoto:(AVCapturePhoto *) photo;
 ```
 
-#### Return Value
+## Return Value
 
 An instance of [`AVSemanticSegmentationMatte`](../avsemanticsegmentationmatte.md). To preserve the existing matte, return `photo.```AVCapturePhoto/semanticSegmentationMatte(for:)``. To strip the existing one, return `nil`. To replace, provide a replacement [`AVSemanticSegmentationMatte`](../avsemanticsegmentationmatte.md) instance.
 
-#### Discussion
+## Discussion
 
 This callback is optional. If your delegate doesn’t implement this callback, the existing semantic segmentation matte of the specified type in the in-memory [`AVCapturePhoto`](../avcapturephoto.md) container is written to the file data representation.
 

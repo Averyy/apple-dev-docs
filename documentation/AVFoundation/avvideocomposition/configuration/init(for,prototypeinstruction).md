@@ -17,8 +17,8 @@ Initializes a video composition configuration with the specified asset propertie
 ## Declaration
 
 ```swift
-nonisolated
-(nonsending) init(for asset: AVAsset, prototypeInstruction: AVVideoCompositionInstruction? = nil) async throws
+nonisolated(nonsending)
+init(for asset: AVAsset, prototypeInstruction: AVVideoCompositionInstruction? = nil) async throws
 ```
 
 ## Parameters

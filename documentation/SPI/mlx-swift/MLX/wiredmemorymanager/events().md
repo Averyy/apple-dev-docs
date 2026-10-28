@@ -17,7 +17,7 @@ Debug-only event stream describing admission and limit changes.
 func events() -> AsyncStream<WiredMemoryEvent>
 ```
 
-#### Discussion
+## Discussion
 
 In release builds this stream is empty and finishes immediately.
 

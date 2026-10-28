@@ -39,7 +39,7 @@ nonisolated
 func accessibilityDropPoint<S>(_ point: UnitPoint, description: S, isEnabled: Bool) -> ModifiedContent<Content, Modifier> where S : StringProtocol
 ```
 
-#### Discussion
+## Discussion
 
 Use this modifier when you need to provide a description to users when prompted end a drag interaction.
 

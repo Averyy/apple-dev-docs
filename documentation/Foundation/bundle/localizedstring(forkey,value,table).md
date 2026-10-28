@@ -25,7 +25,7 @@ func localizedString(forKey key: String, value: String?, table tableName: String
 - (NSString *) localizedStringForKey:(NSString *) key value:(NSString *) value table:(NSString *) tableName;
 ```
 
-#### Return Value
+## Return Value
 
 A localized version of the string designated by `key` in table `tableName`. This method returns the following when key is `nil` or not found in table:
 
@@ -34,7 +34,7 @@ A localized version of the string designated by `key` in table `tableName`. This
 - If `key` is not found and `value` is `nil` or an empty string, returns `key`.
 - If `key` is not found and `value` is non-`nil` and not empty, return `value`.
 
-#### Discussion
+## Discussion
 
 For more details about string localization and the specification of a `.strings` file, see “[String Resources](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/LoadingResources/Strings/Strings.html#//apple_ref/doc/uid/10000051i-CH6).”
 

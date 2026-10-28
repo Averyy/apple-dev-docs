@@ -15,11 +15,11 @@ Obtains the task ID of the currently-executing preemptive task
 MPTaskID MPCurrentTaskID(void);
 ```
 
-#### Return Value
+## Return Value
 
 The task ID of the current preemptive task. See the description of the `MPTaskID` data type.
 
-#### Discussion
+## Discussion
 
 Returns the ID of the current preemptive task. If called from a cooperative task, this function returns an ID which is different than the ID of any preemptive task. Nonpreemptive processes may or may not have different task IDs for each application; future implementations of this API may behave differently in this regard.
 

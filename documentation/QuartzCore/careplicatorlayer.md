@@ -24,7 +24,7 @@ class CAReplicatorLayer
 @interface CAReplicatorLayer : CALayer
 ```
 
-#### Overview
+## Overview
 
 You can use a [`CAReplicatorLayer`](./careplicatorlayer.md) object to build complex layouts based on a single source layer that is replicated with transformation rules that can affect the position, rotation color, and time.
 

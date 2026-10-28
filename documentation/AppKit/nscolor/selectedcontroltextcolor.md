@@ -19,7 +19,7 @@ class var selectedControlTextColor: NSColor { get }
 @property (class, strong, readonly) NSColor * selectedControlTextColor;
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see [`NSColor`](../nscolor.md).
 

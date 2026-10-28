@@ -25,11 +25,11 @@ func undoMenuTitle(forUndoActionName actionName: String) -> String
 - (NSString *) undoMenuTitleForUndoActionName:(NSString *) actionName;
 ```
 
-#### Return Value
+## Return Value
 
 The localized title of the undo menu item.
 
-#### Discussion
+## Discussion
 
 Override this method if you want to customize the localization behavior. This method is invoked by [`undoMenuItemTitle`](./undomenuitemtitle.md).
 

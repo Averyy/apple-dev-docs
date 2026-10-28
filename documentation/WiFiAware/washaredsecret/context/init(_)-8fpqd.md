@@ -17,11 +17,11 @@ Creates a new custom context that provides a unique string.
 init?(_ string: String)
 ```
 
-#### Return Value
+## Return Value
 
 A new `Context`, or `nil` if the provided string was too short
 
-#### Discussion
+## Discussion
 
 The custom context may use any string that is representable as UTF-8, and which normalizes to the same value when represented as bytes. A best practice is to use ASCII-compatible values to avoid normalization issues. Set the same byte value on the local and remote devices in order to generate the same shared secret.
 

@@ -19,7 +19,7 @@ case spinning
 NSProgressIndicatorStyleSpinning
 ```
 
-#### Discussion
+## Discussion
 
 The appearance of a determinate spinning style indicator is similar to an animated pie chart.
 

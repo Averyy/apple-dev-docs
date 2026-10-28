@@ -24,7 +24,7 @@ let kVTDecompressionPropertyKey_ReducedResolutionDecode: CFString
 extern CFStringRef const kVTDecompressionPropertyKey_ReducedResolutionDecode;
 ```
 
-#### Discussion
+## Discussion
 
 This is an optional property for video decoders to implement. Decoders that only support a fixed set of resolutions should pick the smallest resolution greater than or equal to the requested width and height.
 

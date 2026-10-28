@@ -18,7 +18,7 @@ The types of game controller profiles that the app supports or requires.
 - **Name**: `GCSupportedGameControllers` (Supported game controller types)
 - **Type**: array of dictionary 
 
-#### Discussion
+## Discussion
 
 The dictionary keys are `ProfileName` and the possible game controller values are:
 

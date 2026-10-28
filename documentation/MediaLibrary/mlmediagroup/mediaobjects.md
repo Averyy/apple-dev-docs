@@ -22,7 +22,7 @@ var mediaObjects: [MLMediaObject]? { get }
 @property (copy, readonly, nullable) NSArray<MLMediaObject *> * mediaObjects;
 ```
 
-#### Discussion
+## Discussion
 
 This accessor property is nonblocking. If there is no data yet, it returns `nil` and automatically triggers an internal asynchronous request. A KVO notification will be sent via the main thread when data arrives.
 

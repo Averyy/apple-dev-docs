@@ -23,7 +23,7 @@ func save(_ event: EKEvent, span: EKSpan) throws
 - (BOOL) saveEvent:(EKEvent *) event span:(EKSpan) span error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 This method raises an exception if it’s passed an event from another event store.
 

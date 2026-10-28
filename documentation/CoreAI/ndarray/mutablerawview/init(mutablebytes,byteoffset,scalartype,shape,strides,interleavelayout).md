@@ -19,7 +19,7 @@ Initialize a raw view from existing raw memory, interpreted as the specified sca
 init(mutableBytes: consuming MutableRawSpan, byteOffset: Int = 0, scalarType: NDArray.ScalarType, shape: [Int], strides: [Int] = [], interleaveLayout: NDArray.InterleaveLayout? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 The lifetime of the resulting view copies the lifetime of the provided span.
 

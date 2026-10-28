@@ -32,7 +32,7 @@ func insertRouteData(_ routeData: [CLLocation]) async throws
 
 - [Creating a workout route](../creating-a-workout-route.md)
 
-#### Discussion
+## Discussion
 
 Use this method to asynchronously add one or more [`CLLocation`](../../CoreLocation/cllocation.md) objects to the series. The [`CLLocation`](../../CoreLocation/cllocation.md) objects may be inserted in any order; the builder sorts them by date when finalizing the route.
 

@@ -21,7 +21,7 @@ The port component of the URL if the URL conforms to RFC 3986; otherwise, nil.
 var port: Int? { get }
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**:  This function resolves against the base `URL`.
 

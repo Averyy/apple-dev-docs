@@ -20,7 +20,7 @@ string AuditSortOrder
 - `ASC`: Ascending order. Smallest or earliest values first.
 - `DESC`: Descending order. Largest or most recent values first. Default when `order` is omitted from a sort directive.
 
-#### Discussion
+## Discussion
 
 The `AuditSortOrder` controls the direction of a sort directive in an [`AuditQuery`](./auditquery.md) request. When the `sorting` array is omitted entirely, results default to `eventTime DESC` (most recent first).
 

@@ -19,11 +19,11 @@ Processes a purchase for the product.
 func purchase(confirmIn viewController: UIViewController, options: Set<Product.PurchaseOption> = []) async throws -> Product.PurchaseResult
 ```
 
-#### Return Value
+## Return Value
 
 The result of the purchase
 
-#### Discussion
+## Discussion
 
 > **Throws**: A `PurchaseError` or `StoreKitError`.
 

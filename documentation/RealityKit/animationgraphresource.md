@@ -20,11 +20,11 @@ A compiled animation graph that drives skeletal animation on an entity by blendi
 class AnimationGraphResource
 ```
 
-#### Overview
+## Overview
 
 Compile an animation graph definition once into an [`AnimationGraphResource`](./animationgraphresource.md), then attach it to one or more entities through [`AnimationGraphComponent`](./animationgraphcomponent.md). The same resource can drive many entities — each [`AnimationGraphComponent`](./animationgraphcomponent.md) keeps its own per-instance evaluation state, so animation timing, state-machine progress, and parameter values stay independent across characters that share a graph.
 
-##### Compile and attach a graph
+### Compile and attach a graph
 
 ```swift
 let resource = try AnimationGraphResource(
@@ -35,7 +35,7 @@ let resource = try AnimationGraphResource(
 entity.components.set(AnimationGraphComponent(graph: resource))
 ```
 
-##### Drive the graph with parameters
+### Drive the graph with parameters
 
 A graph exposes a set of named, typed parameters that control its behavior at runtime, such as a movement speed or a trigger that initiates a transition. List the parameters declared by the graph through [`parameterNames`](./animationgraphresource/parameternames.md). Set values through the owning entity’s parameter binding rather than through the resource itself:
 
@@ -45,7 +45,7 @@ entity.parameters["MoveSpeed"] = BindableValue(Float(1.0))
 
 When the graph evaluates next, it picks up the values bound on the entity whose names and types match the graph’s declared parameters.
 
-##### Validate before compiling
+### Validate before compiling
 
 To check a graph definition for errors without producing a resource — for example, in editor tooling — call [`validate(definition:nodeResourceMapping:skeletonResource:)`](./animationgraphresource/validate%28definition,noderesourcemapping,skeletonresource%29.md), which returns compiler diagnostics rather than throwing.
 

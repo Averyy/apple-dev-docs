@@ -15,11 +15,11 @@ Sets the storage value for a given index number.
 OSStatus MPSetTaskStorageValue(TaskStorageIndex taskIndex, TaskStorageValue value);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./carbon_core/multiprocessing_services.md#1663965).
 
-#### Discussion
+## Discussion
 
 Typically you use `MPSetTaskStorageValue` to store pointers to task-specific structures or data.
 

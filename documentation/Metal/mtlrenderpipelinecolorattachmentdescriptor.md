@@ -24,7 +24,7 @@ class MTLRenderPipelineColorAttachmentDescriptor
 @interface MTLRenderPipelineColorAttachmentDescriptor : NSObject
 ```
 
-#### Overview
+## Overview
 
 An [`MTLRenderPipelineColorAttachmentDescriptor`](./mtlrenderpipelinecolorattachmentdescriptor.md) instance defines the configuration of a color attachment associated with a rendering pipeline.
 

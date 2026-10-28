@@ -17,7 +17,7 @@ Indicates whether the electricity guidance incorporated rate plan information.
 case guidanceIncorporatesRatePlan
 ```
 
-#### Discussion
+## Discussion
 
 An [`EnergyVenue`](../../energyvenue.md) may have rate plan information, but the person may have opted out of using rate plan for guidance.
 

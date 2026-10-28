@@ -23,7 +23,7 @@ An activation function that returns an arithmetic shift, preserving sign.
 static var integerLinearSaturate: BNNSActivationFunction { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use [`integerLinearSaturate(scale:offset:shift:)`](../bnnsactivation/integerlinearsaturate%28scale,offset,shift%29.md) to generate an integer linear saturate function.
 

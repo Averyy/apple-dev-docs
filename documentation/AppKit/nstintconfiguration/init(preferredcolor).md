@@ -19,7 +19,7 @@ convenience init(preferredColor color: NSColor)
 + (instancetype) tintConfigurationWithPreferredColor:(NSColor *) color;
 ```
 
-#### Discussion
+## Discussion
 
 Use this tint configuration for custom colors designed to match app-specific accent colors, but doesn’t look appropriate matched with a user-selected color. The tint configuation only uses the preferred color when the system accent color is `Multicolor`. If the system accent color is any other color, the tint configuration defers to the accent color.
 

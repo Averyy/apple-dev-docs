@@ -22,7 +22,7 @@ var allowedWritingToolsResultOptions: UIWritingToolsResultOptions { get set }
 @property UIWritingToolsResultOptions allowedWritingToolsResultOptions;
 ```
 
-#### Discussion
+## Discussion
 
 Text views support most types of generated content. However, if you set this property to a value that includes the [`table`](../uiwritingtoolsresultoptions/table.md) option, UIKit raises [`invalidArgumentException`](../../Foundation/nsexceptionname/invalidargumentexception.md).
 

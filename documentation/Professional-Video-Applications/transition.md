@@ -5,7 +5,7 @@
 
 Applies transition effects that either stand by itself (no neighboring elements), combine two neighboring elements, or apply to a single element.
 
-#### Overview
+## Overview
 
 Transition effect applies to elements contained in a `spine` or `mc-angle`. Use the `offset` and `duration` attributes to define the position and extent of the transition effect. The [filter-video](./filter-video.md) and [filter-audio](./filter-audio.md) elements specify the effect to apply. 
 

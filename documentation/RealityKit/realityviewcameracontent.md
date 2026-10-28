@@ -19,7 +19,7 @@ The content of a reality view that is displayed through a camera.
 struct RealityViewCameraContent
 ```
 
-#### Overview
+## Overview
 
 On iOS, `RealityViewCameraContent` displays content in an AR camera view by default, and can display in a “non-AR” mode when requested or when AR or the device’s camera is unavailable. On macOS, `RealityViewCameraContent` always displays its content in a non-AR mode.
 

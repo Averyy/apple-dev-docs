@@ -25,7 +25,7 @@ var videoRendition: AVMetricMediaRendition { get }
 @property (readonly) AVMetricMediaRendition * videoRendition;
 ```
 
-#### Discussion
+## Discussion
 
 Subclasses of this type that are used from Swift must fulfill the requirements of a Sendable type.
 

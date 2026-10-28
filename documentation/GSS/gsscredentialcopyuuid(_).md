@@ -23,11 +23,11 @@ func GSSCredentialCopyUUID(_ credential: gss_cred_id_t) -> Unmanaged<CFUUID>?
 CFUUIDRefGSSCredentialCopyUUID(gss_cred_id_t credential);
 ```
 
-#### Return Value
+## Return Value
 
 A `CFUUID` object that corresponds to the given credential. Use `CFRelease` to free this object’s memory when you are done with it.
 
-#### Discussion
+## Discussion
 
 When you want to restore the credential from the `CFUUID`, use [`GSSCreateCredentialFromUUID(_:)`](./gsscreatecredentialfromuuid%28_%29.md).
 

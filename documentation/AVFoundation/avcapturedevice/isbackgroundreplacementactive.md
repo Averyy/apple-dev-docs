@@ -23,7 +23,7 @@ var isBackgroundReplacementActive: Bool { get }
 @property (nonatomic, readonly, getter=isBackgroundReplacementActive) BOOL backgroundReplacementActive;
 ```
 
-#### Discussion
+## Discussion
 
 This property is key-value observable.
 

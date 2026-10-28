@@ -23,7 +23,7 @@ The maximum amount of time this test’s cases may run for.
 var timeLimit: Duration? { get }
 ```
 
-#### Discussion
+## Discussion
 
 Associate a time limit with tests by using [`timeLimit(_:)`](../trait/timelimit%28_%29.md).
 

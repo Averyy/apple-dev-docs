@@ -20,7 +20,7 @@ Assigns multiple visible function tables to a range of entries in the fragment s
 - (void) setFragmentVisibleFunctionTables:(id<MTLVisibleFunctionTable> const[]) functionTables withBufferRange:(NSRange) range;
 ```
 
-#### Discussion
+## Discussion
 
 By default, the visible function table at each index is `nil`.
 

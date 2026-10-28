@@ -18,7 +18,7 @@ A button with an email image and title label.
 let emailButton: OCKContactButton
 ```
 
-#### Discussion
+## Discussion
 
 Set `isHidden` to `false` to hide the button.
 

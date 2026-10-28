@@ -24,7 +24,7 @@ class AVOutputSettingsAssistant
 @interface AVOutputSettingsAssistant : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use an output settings assistant to create the audio and video settings that you use to configure instances of [`AVAssetWriter`](./avassetwriter.md) and [`AVAssetWriterInput`](./avassetwriterinput.md). You create an assistant with a specific preset configuration, such as [`hevc3840x2160WithAlpha`](./avoutputsettingspreset/hevc3840x2160withalpha.md) or [`preset1920x1080`](./avoutputsettingspreset/preset1920x1080.md). You can accept the settings dictionaries as is to generate a file that conforms to the criteria that the preset implies. You may also use the dictionaries it generates as a base configuration that you can customize as you require.
 

@@ -20,11 +20,11 @@ convenience init?(device: any MTLDevice)
 + (instancetype) faceGeometryWithDevice:(id<MTLDevice>) device;
 ```
 
-#### Return Value
+## Return Value
 
 A new SceneKit face geometry, or `nil` if the Metal device is unavailable or ARKit face tracking is not supported on the current device.
 
-#### Discussion
+## Discussion
 
 A newly created [`ARSCNFaceGeometry`](../arscnfacegeometry.md) instance represents a neutral, generic face; use the [`update(from:)`](./update%28from%29.md) method to deform the geometry to match a specific facial expression or face shape.
 

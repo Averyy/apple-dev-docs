@@ -25,7 +25,7 @@ init(condition: Int)
 - (instancetype) initWithCondition:(NSInteger) condition;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized condition lock object; may be different than the original receiver.
 

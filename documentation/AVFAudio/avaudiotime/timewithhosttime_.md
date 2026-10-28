@@ -21,7 +21,7 @@ Creates an audio time object with the specified host time.
 + (instancetype) timeWithHostTime:(uint64_t) hostTime;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`AVAudioTime`](../avaudiotime.md) instance.
 

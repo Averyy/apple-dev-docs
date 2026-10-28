@@ -19,11 +19,11 @@ func monitorNotifications(reportIDsToMonitor: [ClosedRange<HIDReportID>], elemen
 
 - [Communicating with human interface devices](../communicatingwithhiddevices.md)
 
-#### Return Value
+## Return Value
 
 An asynchronous stream that receive notifications.
 
-#### Discussion
+## Discussion
 
 Notifications come in asynchronously from the device at arbitrary times when relevant events occur.
 

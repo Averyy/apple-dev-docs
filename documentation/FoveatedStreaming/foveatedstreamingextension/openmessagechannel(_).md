@@ -17,7 +17,7 @@ Handles a message channel opened by the host app.
 func openMessageChannel(_ channel: Self.MessageChannel) throws
 ```
 
-#### Discussion
+## Discussion
 
 The framework vends the [`FoveatedStreamingProviderMessageChannel`](../foveatedstreamingprovidermessagechannel.md) and calls this when the host opens a channel.
 

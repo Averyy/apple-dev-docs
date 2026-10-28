@@ -21,7 +21,7 @@ class CPTrip
 @interface CPTrip : NSObject
 ```
 
-#### Overview
+## Overview
 
 A trip represents a journey consisting of an origin, a destination, and up to three route choices. Use [`CPRouteChoice`](./cproutechoice.md) to define each possible route choice.
 

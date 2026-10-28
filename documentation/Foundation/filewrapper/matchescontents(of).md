@@ -25,11 +25,11 @@ func matchesContents(of url: URL) -> Bool
 - (BOOL) matchesContentsOfURL:(NSURL *) url;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) when the contents of the file wrapper match the contents of `url`, [`false`](../../Swift/false.md) otherwise.
 
-#### Discussion
+## Discussion
 
 The contents of files are not compared; matching of regular files is based on file modification dates. For a directory, children are compared against the files in the directory, recursively.
 

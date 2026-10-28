@@ -25,7 +25,7 @@ func string(fromDistance distance: CLLocationDistance) -> String
 - (NSString *) stringFromDistance:(CLLocationDistance) distance;
 ```
 
-#### Return Value
+## Return Value
 
 A user-readable string that describes the distance based on the formatter settings.
 

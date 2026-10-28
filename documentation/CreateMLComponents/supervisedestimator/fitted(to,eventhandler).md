@@ -22,7 +22,7 @@ Fits a transformer to a sequence of examples.
 func fitted<Input>(to input: Input, eventHandler: EventHandler?) async throws -> Self.Transformer where Input : Sequence, Input.Element == AnnotatedFeature<Self.Transformer.Input, Self.Annotation>
 ```
 
-#### Return Value
+## Return Value
 
 The fitted transformer.
 

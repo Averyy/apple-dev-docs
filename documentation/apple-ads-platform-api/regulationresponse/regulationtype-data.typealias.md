@@ -21,11 +21,11 @@ string RegulationResponse.RegulationType
 - `CAMPAIGN_SAPIN_LAW`: Disclosure required under Sapin Law regulation, at the campaign level.
 - `ORG_SAPIN_LAW`: Disclosure required under Sapin Law regulation, at the organization level.
 
-#### Discussion
+## Discussion
 
 This mirrors the `regulationType` set when the response was created, and continues to determine which `responseValue` options are valid.
 
-##### Example
+### Example
 
 ```json
 {

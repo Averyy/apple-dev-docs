@@ -24,7 +24,7 @@ class MTKTextureLoader
 @interface MTKTextureLoader : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use the [`MTKTextureLoader`](./mtktextureloader.md) class to create a Metal texture from existing image data.
 

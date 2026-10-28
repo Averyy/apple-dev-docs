@@ -20,7 +20,7 @@ Creates a QR code descriptor for the given payload and parameters.
 + (instancetype) descriptorWithPayload:(NSData *) errorCorrectedPayload symbolVersion:(NSInteger) symbolVersion maskPattern:(uint8_t) maskPattern errorCorrectionLevel:(CIQRCodeErrorCorrectionLevel) errorCorrectionLevel;
 ```
 
-#### Return Value
+## Return Value
 
  An autoreleased [`CIAztecCodeDescriptor`](../ciazteccodedescriptor.md) instance or `nil` if the parameters are invalid
 

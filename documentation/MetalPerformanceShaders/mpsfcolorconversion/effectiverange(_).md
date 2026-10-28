@@ -22,7 +22,7 @@ func effectiveRange(_ inputRange: MPSFunctions_AABB) -> MPSFunctions_AABB
 - (MPSFunctions_AABB) effectiveRange:(MPSFunctions_AABB) inputRange;
 ```
 
-#### Discussion
+## Discussion
 
 Estimate the gamut produced by the function based on a range of inputs
 

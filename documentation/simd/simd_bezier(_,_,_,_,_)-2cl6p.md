@@ -14,7 +14,7 @@ func simd_bezier(_ q0: simd_quath, _ q1: simd_quath, _ q2: simd_quath, _ q3: sim
 static simd_quath simd_bezier(simd_quath q0, simd_quath q1, simd_quath q2, simd_quath q3, _Float16 t);
 ```
 
-#### Discussion
+## Discussion
 
 Spherical cubic Bezier interpolation between quaternions.
 

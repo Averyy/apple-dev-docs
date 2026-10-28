@@ -21,7 +21,7 @@ Dequeues a buffer from the queue.
 func dequeue() -> CMBuffer?
 ```
 
-#### Return Value
+## Return Value
 
 A buffer or `nil` if the buffer is empty.
 

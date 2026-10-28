@@ -24,7 +24,7 @@ static let forcedVitalCapacity: HKQuantityTypeIdentifier
 extern HKQuantityTypeIdentifier const HKQuantityTypeIdentifierForcedVitalCapacity;
 ```
 
-#### Discussion
+## Discussion
 
 These samples use volume units (described in [`HKUnit`](../hkunit.md)) and measure discrete values (described in [`HKQuantityAggregationStyle`](../hkquantityaggregationstyle.md)).
 

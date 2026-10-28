@@ -24,7 +24,7 @@ var listenerDirectivityModelParameters: PHASEDirectivityModelParameters? { get s
 @property (nonatomic, strong, nullable) PHASEDirectivityModelParameters * listenerDirectivityModelParameters;
 ```
 
-#### Discussion
+## Discussion
 
 An app can configure this property to attenuate sound to the sides of the listener while leaving sound in front of or behind the listener unchanged.
 

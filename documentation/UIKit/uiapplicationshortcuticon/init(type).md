@@ -22,11 +22,11 @@ convenience init(type: UIApplicationShortcutIcon.IconType)
 + (instancetype) iconWithType:(UIApplicationShortcutIconType) type;
 ```
 
-#### Return Value
+## Return Value
 
 A Home Screen quick action icon initialized with the specified system image.
 
-#### Discussion
+## Discussion
 
 Use this method to create icons for actions supported by the system. Users expect system-defined action images to be used only for the intended action.
 

@@ -25,7 +25,7 @@ enum CFNumberFormatterStyle
 enum CFNumberFormatterStyle : CFIndex;
 ```
 
-#### Overview
+## Overview
 
 For values, see [Number Formatter Styles](./number-formatter-styles.md).
 

@@ -19,7 +19,7 @@ var controlSize: NSControl.ControlSize { get set }
 @property NSControlSize controlSize;
 ```
 
-#### Discussion
+## Discussion
 
 See [`NSCell`](../nscell.md) for possible values.
 

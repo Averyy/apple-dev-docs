@@ -24,7 +24,7 @@ func createItem(named name: FSFileName, type: FSItem.ItemType, inDirectory direc
 - (void) createItemNamed:(FSFileName *) name type:(FSItemType) type inDirectory:(FSItem *) directory attributes:(FSItemSetAttributesRequest *) newAttributes replyHandler:(void (^)(FSItem *newItem, FSFileName *newItemName, NSError *error)) reply;
 ```
 
-#### Discussion
+## Discussion
 
 If an item named `name` already exists in the directory indicated by `directory`, complete the request with an error with a domain of [`NSPOSIXErrorDomain`](../../../Foundation/nsposixerrordomain.md) and a code of `EEXIST`.
 

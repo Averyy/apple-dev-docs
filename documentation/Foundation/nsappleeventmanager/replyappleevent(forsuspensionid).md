@@ -20,7 +20,7 @@ func replyAppleEvent(forSuspensionID suspensionID: NSAppleEventManager.Suspensio
 - (NSAppleEventDescriptor *) replyAppleEventForSuspensionID:(NSAppleEventManagerSuspensionID) suspensionID;
 ```
 
-#### Discussion
+## Discussion
 
 This descriptor, including any mutations, will be returned to the sender of the suspended event when handling of the event is resumed, if the sender has requested a reply. The effects of retaining the descriptor are undefined; it may be copied, but mutations of the copy are returned to the sender of the suspended event. [`replyAppleEvent(forSuspensionID:)`](./replyappleevent%28forsuspensionid%29.md) may be invoked in any thread, not just the one in which the corresponding invocation of [`suspendCurrentAppleEvent()`](./suspendcurrentappleevent%28%29.md) occurred.
 

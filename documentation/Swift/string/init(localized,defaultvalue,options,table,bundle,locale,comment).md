@@ -21,7 +21,7 @@ Creates a localized string from an arbitrary static string key, applying the spe
 init(localized key: StaticString, defaultValue: String.LocalizationValue, options: String.LocalizationOptions, table: String? = nil, bundle: Bundle? = nil, locale: Locale = .current, comment: StaticString? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 Use the `defaultValue` initializers when you want to use an explicit *key* to look up localized strings. This is useful if the localizable string in your development language is ambiguous. For example *call* in English can be a noun or a verb. In this case, you might want to use `.strings` file entries like `CALL_NOUN` and `CALL_VERB` to disambiguate the uses for localizers. You then use this initializer, providing both a key and a default value to use if the system can’t find the key at runtime.
 

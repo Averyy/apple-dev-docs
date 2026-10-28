@@ -19,7 +19,7 @@ enum ChangeType
 enum NSDocumentChangeType : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 These constants indicate how a document should operate on its change count and are passed to the [`updateChangeCount(_:)`](./updatechangecount%28_%29.md) method.
 

@@ -21,7 +21,7 @@ nonisolated
 struct TabBarOnlyTabViewStyle
 ```
 
-#### Overview
+## Overview
 
 Use [`tabBarOnly`](./tabviewstyle/tabbaronly.md) to construct this style.
 

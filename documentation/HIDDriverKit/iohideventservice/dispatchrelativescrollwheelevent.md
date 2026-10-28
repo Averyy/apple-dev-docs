@@ -16,11 +16,11 @@ Dispatches a relative scroll wheel event to the system.
 virtual kern_return_t dispatchRelativeScrollWheelEvent(uint64_t timeStamp, IOFixed dx, IOFixed dy, IOFixed dz, IOOptionBits options, bool accelerate);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../../DriverKit/error-codes.md).
 
-#### Discussion
+## Discussion
 
 Call this method from your event service to dispatch a scroll-wheel event to the system. Typically, you call this method when handling a report from the device, after you determine that the report originated from scroll-wheel hardware or otherwise represents a scrolling event.
 

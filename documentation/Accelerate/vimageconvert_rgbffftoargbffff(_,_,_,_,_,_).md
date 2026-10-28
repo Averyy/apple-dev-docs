@@ -25,13 +25,13 @@ func vImageConvert_RGBFFFtoARGBFFFF(_: UnsafePointer<vImage_Buffer>, _: UnsafePo
 vImage_Error vImageConvert_RGBFFFtoARGBFFFF(const vImage_Buffer *, const vImage_Buffer *, Pixel_F , const vImage_Buffer *, bool , vImage_Flags flags);
 ```
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
-#### Discussion
+## Discussion
 
-##### Parameters
+### Parameters
 
 - **rgbSrc**: The source vImage buffer that contains the red, green, and blue channels.
 - **aSrc**: The source vImage buffer that contains the alpha channel. Set this value to `nil` to specify that the function sets the destination alpha as the constant destination alpha value.

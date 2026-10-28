@@ -21,7 +21,7 @@ func squeezed(axes: some Collection<Int>, stream: StreamOrDevice = .default) -> 
 
 - [Converting From Python](../converting-python.md)
 
-##### See Also
+### See Also
 
 - [Shapes](../shapes.md)
 - [`squeezed(axis:stream:)`](./squeezed%28axis,stream%29.md)

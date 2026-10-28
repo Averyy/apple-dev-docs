@@ -22,11 +22,11 @@ init!(jsGlobalContextRef: JSGlobalContextRef!)
 + (JSContext *) contextWithJSGlobalContextRef:(JSGlobalContextRef) jsGlobalContextRef;
 ```
 
-#### Return Value
+## Return Value
 
 The JSContext equivalent of the provided JSGlobalContextRef.
 
-#### Discussion
+## Discussion
 
 Create a JSContext, wrapping its C API counterpart.
 

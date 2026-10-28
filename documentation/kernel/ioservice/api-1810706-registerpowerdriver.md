@@ -14,11 +14,11 @@ virtual IOReturn registerPowerDriver(
  unsigned longnumberOfStates );
 ```
 
-#### Return Value
+## Return Value
 
 IOPMNoErr. All errors are logged via `kprintf`.
 
-#### Overview
+## Overview
 
 A driver defines its array of supported power states with power management in its power management initialization (its `start` routine). If successful, power management will call the driver to instruct it to change its power state through setPowerState. Most drivers do not need to override `registerPowerDriver`. A nub may override `registerPowerDriver` if it needs to arrange its children in the power plane differently than the default placement, but this is uncommon.
 

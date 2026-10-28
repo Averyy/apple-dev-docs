@@ -20,7 +20,7 @@ optional func textView(_ textView: UITextView, willPresentEditMenuWith animator:
 - (void) textView:(UITextView *) textView willPresentEditMenuWithAnimator:(id<UIEditMenuInteractionAnimating>) animator;
 ```
 
-#### Discussion
+## Discussion
 
 Called when the text view is about to present the edit menu.
 

@@ -13,7 +13,7 @@ Enable teachers to assign activities from your app’s content and to view stude
 - macOS 11.0+
 - visionOS 1.0+
 
-#### Overview
+## Overview
 
 Educational apps provide access to resources like books and videos while reinforcing learning through interactive visualizations, games, and assessments. ClassKit lets you organize educational material so that teachers can assign activities to students and see their progress.
 

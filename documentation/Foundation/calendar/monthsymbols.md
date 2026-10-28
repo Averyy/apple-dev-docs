@@ -21,7 +21,7 @@ A list of months in this calendar, localized to the Calendar’s `locale`.
 var monthSymbols: [String] { get }
 ```
 
-#### Discussion
+## Discussion
 
 For example, for English in the Gregorian calendar, returns `["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]`.
 

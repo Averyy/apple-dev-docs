@@ -18,11 +18,11 @@ static func wifiAware(_ action: WAPublisherListener.Action, active requestedDura
 
 Available when `Self` is `WAPublisherListener`.
 
-#### Return Value
+## Return Value
 
 A new `ListenerProvider` containing the `.wifiAware()` instruction that will configure a `NetworkListener` as a Wi-Fi Aware publisher.
 
-#### Discussion
+## Discussion
 
 The code below is an example of how to set the `NetworkListener`:
 

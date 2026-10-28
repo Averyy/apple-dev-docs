@@ -25,7 +25,7 @@ class CGPattern
 typedef struct CGPattern * CGPatternRef;
 ```
 
-#### Overview
+## Overview
 
 Core Graphics tiles the pattern cell for you, based on parameters you specify when you call [`init(info:bounds:matrix:xStep:yStep:tiling:isColored:callbacks:)`](./cgpattern/init%28info,bounds,matrix,xstep,ystep,tiling,iscolored,callbacks%29.md).
 

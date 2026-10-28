@@ -24,7 +24,7 @@ class var highlightCollectionTitle: String { get }
 @property (class, nonatomic, readonly) NSString * highlightCollectionTitle;
 ```
 
-#### Discussion
+## Discussion
 
 The system displays this title for the collection of shared highlight links to the user.
 

@@ -23,7 +23,7 @@ var daysSinceOnsetOfSymptoms: Int { get }
 @property (nonatomic, assign, readonly) NSInteger daysSinceOnsetOfSymptoms;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `ENDaysSinceOnsetOfSymptomsUnknown`.
 

@@ -16,11 +16,11 @@ Fetches reports for ad groups within a campaign.
 - [Apple Ads Campaign Management API 4](./apple-search-ads-campaign-management-api-4.md)
 - [Apple Ads Campaign Management API 5](./apple-search-ads-campaign-management-api-5.md)
 
-#### Discussion
+## Discussion
 
 Use this endpoint to fetch reports for your ad groups in campaigns. See [`ReportingAdGroup`](./reportingadgroup.md) for [`Condition`](./condition.md) operators and field values to filter results with an object [`Selector`](./selector.md). See the `groupBy` parameter description in the [`ReportingRequest`](./reportingrequest.md) for supported values per targeting dimension. The `orderBy` [`Selector`](./selector.md) specifies fields to sort the records list by `ASCENDING` or `DESCENDING`. All [`ReportingAdGroup`](./reportingadgroup.md) fields are available to the `orderBy` [`Selector`](./selector.md) except `adGroupServingStateReasons`.
 
-##### Payload example: Ad group-level reports using targeting criteria
+### Payload example: Ad group-level reports using targeting criteria
 
 **Request**:
 
@@ -226,7 +226,7 @@ POST https://api.searchads.apple.com/api/v5/reports/campaigns/{campaignId}/adgro
 }
 ```
 
-##### Payload example: Ad group-level reports with manual ad groups
+### Payload example: Ad group-level reports with manual ad groups
 
 **Request**:
 
@@ -382,7 +382,7 @@ POST https://api.searchads.apple.com/api/v5/reports/campaigns/{campaignId}/adgro
   }
 ```
 
-##### Payload example: Ad group-level reports with a Maximize Campaigns bid strategy
+### Payload example: Ad group-level reports with a Maximize Campaigns bid strategy
 
 In Maximize Conversions bidding strategy in campaigns, you can use `biddingStrategy` and `automatedKeywordsRequired` in a selector for conditions and ordering. The `defaultBidAmount` is `0` and `cpaGoal` is `null`.
 

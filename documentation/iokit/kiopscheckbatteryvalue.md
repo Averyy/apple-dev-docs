@@ -16,7 +16,7 @@ Value for key [`kIOPSBatteryHealthConditionKey`](./kiopsbatteryhealthconditionke
 #define kIOPSCheckBatteryValue
 ```
 
-#### Discussion
+## Discussion
 
 This value indicates that the battery should be checked out by a licensed Mac repair service.
 

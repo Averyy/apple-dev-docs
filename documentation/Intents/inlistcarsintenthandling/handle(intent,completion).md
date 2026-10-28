@@ -28,7 +28,7 @@ func handle(intent: INListCarsIntent) async -> INListCarsIntentResponse
 - (void) handleListCars:(INListCarsIntent *) intent completion:(void (^)(INListCarsIntentResponse *response)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Retrieve a list of the user’s electric vehicles and create an instance of [`INCar`](../incar.md) for each, setting [`carIdentifier`](../incar/caridentifier.md) to a unique identifier that represents that vehicle. The identifier matches the vehicle to future [`INGetCarPowerLevelStatusIntent`](../ingetcarpowerlevelstatusintent.md) requests. Do not use the vehicle’s VIN, or equivalent, as the identifier.
 

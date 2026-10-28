@@ -19,11 +19,11 @@ func cgGlyph(at glyphIndex: Int) -> CGGlyph
 - (CGGlyph) CGGlyphAtIndex:(NSUInteger) glyphIndex;
 ```
 
-#### Return Value
+## Return Value
 
 The glyph at the specified index.
 
-#### Discussion
+## Discussion
 
 Calling this method generates all of the glyphs (as needed) up to and including the glyph at the specified index.
 

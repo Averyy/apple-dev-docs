@@ -21,7 +21,7 @@ The always limit behavior.
 static var always: ValueAlignedLimitBehavior { get }
 ```
 
-#### Discussion
+## Discussion
 
 Always limit the amount of marks that can be scrolled.
 

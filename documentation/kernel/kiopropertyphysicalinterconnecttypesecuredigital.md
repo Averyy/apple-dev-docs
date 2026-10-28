@@ -13,7 +13,7 @@
 #define kIOPropertyPhysicalInterconnectTypeSecureDigital
 ```
 
-#### Discussion
+## Discussion
 
 This key defines the value of Secure Digital for the key kIOPropertyPhysicalInterconnectTypeSecureDigital. If the device is connected to a Secure Digital port and follows the Secure Digital specification, this key should be set.
 

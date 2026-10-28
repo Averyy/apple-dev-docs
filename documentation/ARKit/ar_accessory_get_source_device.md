@@ -15,7 +15,7 @@ Gets the `GCDevice` that was used to initialize the accessory.
 extern id<GCDevice>ar_accessory_get_source_device(ar_accessory_t accessory);
 ```
 
-#### Return Value
+## Return Value
 
 The `GCDevice`, or `NULL` if not used to initialize the accessory.
 

@@ -29,7 +29,7 @@ func removeCredentialIdentities(_ credentialIdentities: [ASPasswordCredentialIde
 - (void) removeCredentialIdentities:(NSArray<ASPasswordCredentialIdentity *> *) credentialIdentities completion:(void (^)(BOOL success, NSError *error)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method only if the store supports incremental updates to remove previously added credentials to the store.
 

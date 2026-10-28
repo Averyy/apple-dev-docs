@@ -21,7 +21,7 @@ Schedules a block asynchronously for execution and simultaneously associates it 
 extern void dispatch_group_async(dispatch_group_t group, dispatch_queue_t queue, dispatch_block_t block);
 ```
 
-#### Discussion
+## Discussion
 
 Submits a block to a dispatch queue and associates the block object with the given dispatch group. The dispatch group can be used to wait for the completion of the block objects it references.
 

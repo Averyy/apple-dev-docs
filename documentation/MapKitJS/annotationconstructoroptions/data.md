@@ -15,7 +15,7 @@ Data that you define and assign to the annotation.
 data?: object;
 ```
 
-#### Discussion
+## Discussion
 
 Custom data to associate with this annotation. The default value is `{}.`
 

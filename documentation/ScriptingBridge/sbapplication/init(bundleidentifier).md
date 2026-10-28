@@ -20,11 +20,11 @@ init?(bundleIdentifier ident: String)
 - (SBApplication *) initWithBundleIdentifier:(NSString *) ident;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized shared instance of an `SBApplication` subclass that represents a target application with the bundle identifier of `ident`. Returns `nil` if no such application can be found or if the application does not have a scripting interface.
 
-#### Discussion
+## Discussion
 
 If you must initialize an `SBApplication` object explictly, you should use this initializer if possible; unlike [`init(processIdentifier:)`](./init%28processidentifier%29.md) and [`init(url:)`](./init%28url%29-6xbe5.md), this method is not dependent on changeable factors such as the target application’s path or process ID. Even so, you should rarely have to initialize an `SBApplication` object yourself; instead, you should initialize an application-specific subclass such as `iTunesApplication`.
 

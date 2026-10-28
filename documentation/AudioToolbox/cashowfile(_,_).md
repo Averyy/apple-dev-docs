@@ -24,7 +24,7 @@ func CAShowFile(_ inObject: UnsafeMutableRawPointer, _ inFile: UnsafeMutablePoin
 extern void CAShowFile(void *inObject, FILE *inFile);
 ```
 
-#### Discussion
+## Discussion
 
 ## Parameters
 

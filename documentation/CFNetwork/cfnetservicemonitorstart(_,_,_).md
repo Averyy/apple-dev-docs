@@ -26,11 +26,11 @@ func CFNetServiceMonitorStart(_ monitor: CFNetServiceMonitor, _ recordType: CFNe
 extern Boolean CFNetServiceMonitorStart(CFNetServiceMonitorRef monitor, CFNetServiceMonitorType recordType, CFStreamError *error);
 ```
 
-#### Return Value
+## Return Value
 
 `TRUE` if an asynchronous monitor was started successfully. `FALSE` if an error occurred when starting an asynchronous or synchronous monitor, or if [`CFNetServiceMonitorStop(_:_:)`](./cfnetservicemonitorstop%28_,_%29.md) was called for an synchronous monitor.
 
-#### Discussion
+## Discussion
 
 This function starts monitoring for changes to records of the type specified by `recordType`. If a monitor is already running for the service associated with the specified CFNetServiceMonitorRef, this function returns `FALSE`.
 
@@ -38,7 +38,7 @@ For synchronous monitors, this function blocks until the monitor is stopped by c
 
 For asynchronous monitors, this function returns `TRUE` or `FALSE`, depending on whether monitoring starts successfully.
 
-##### Special Considerations
+### Special Considerations
 
 This function is thread safe.
 

@@ -16,7 +16,7 @@ Schedule a C-style function for synchronous execution on the current queue.
 void DispatchSync_f(void *context, IODispatchFunction function);
 ```
 
-#### Discussion
+## Discussion
 
 This method schedules the function for execution on the queue and waits for it to complete before returning. The system retains the queue until the function completes.
 

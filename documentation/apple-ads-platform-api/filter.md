@@ -15,7 +15,7 @@ Filter condition for reporting requests.
 object Filter
 ```
 
-#### Discussion
+## Discussion
 
 The `Filter` specifies a single field-level filter condition for a reporting request. The `field` name must match a filterable field on the target entity (for example, `localSpend`, `impressions`, `campaignId`). The `operator` determines the comparison type, and `value` supplies the comparison operand.
 
@@ -23,7 +23,7 @@ You can include multiple `Filter` objects in the `filters` array of a `AppsRepor
 
 Endpoints that accept a `Filter` are: [`Campaigns Report`](./get-app-campaign-reports.md), [`Ad Groups Report`](./get-app-ad-group-reports.md), [`Ads Report`](./get-app-ad-reports.md), [`Keywords Report`](./get-app-keyword-reports.md), [`Search Terms Report`](./get-app-search-term-reports.md), [`Campaigns Report (Brands)`](./get-brand-campaign-reports.md), [`Ad Groups Report (Brands)`](./get-brand-ad-group-reports.md), [`Ads Report (Brands)`](./get-brand-ad-reports.md), [`Keywords Report (Brands)`](./get-brand-keyword-reports.md), [`Search Terms Report (Brands)`](./get-brand-search-term-reports.md), [`Impression Share Query`](./query-app-impression-share-data.md), and [`Search Term Popularity Query`](./query-app-search-term-popularity-data.md).
 
-##### Example
+### Example
 
 ```json
 {

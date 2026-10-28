@@ -21,7 +21,7 @@ Specifies a dash character separating year, month, and day components in an ISO 
 case dash
 ```
 
-#### Discussion
+## Discussion
 
 The `rawValue` of `dash` is “`-`”.
 

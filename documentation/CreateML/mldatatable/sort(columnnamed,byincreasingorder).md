@@ -20,7 +20,7 @@ Creates a new data table by sorting the table by the given column.
 func sort(columnNamed: String, byIncreasingOrder: Bool = true) -> MLDataTable
 ```
 
-#### Return Value
+## Return Value
 
 A new data table.
 

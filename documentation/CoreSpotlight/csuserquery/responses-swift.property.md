@@ -23,7 +23,7 @@ var responses: CSUserQuery.Responses { get }
 
 - [Building a search interface for your app](../building-a-search-interface-for-your-app.md)
 
-#### Discussion
+## Discussion
 
 Getting the value of this property starts the query and begins the delivery of responses. Typically, you get this property as part of a `for..in` loop to iterate over the responses, as shown in the following example:
 

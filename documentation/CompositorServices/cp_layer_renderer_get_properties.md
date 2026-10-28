@@ -16,11 +16,11 @@ Returns the configured properties of the specified layer.
 cp_layer_renderer_properties_tcp_layer_renderer_get_properties(cp_layer_renderer_t layer_renderer);
 ```
 
-#### Return Value
+## Return Value
 
 An opaque type you use to retrieve the property details.
 
-#### Discussion
+## Discussion
 
 The layer properties include details about the layer’s textures, such as their organization and the location of drawable views in those textures.
 

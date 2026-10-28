@@ -19,13 +19,13 @@ object Margin
 
 - [Positioning the Content in Your Article](../AppleNews/positioning-the-content-in-your-article.md)
 
-#### Discussion
+## Discussion
 
 Use the `margin` object to specify top and bottom margins to designate space above and below a component. For information on the units, see [Specifying Measurements for Components](../AppleNews/specifying-measurements-for-components.md).
 
 You can use this object in [`ComponentLayout`](./componentlayout.md) and [`AutoPlacementLayout`](./autoplacementlayout.md).
 
-##### Example
+### Example
 
 ```json
 {

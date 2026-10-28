@@ -24,7 +24,7 @@ class SCContentFilter
 @interface SCContentFilter : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use a content filter to limit an [`SCStream`](./scstream.md) object’s output to only that matching your filter criteria. Retrieve the displays, apps, and windows that your app can capture from an instance of [`SCShareableContent`](./scshareablecontent.md).
 

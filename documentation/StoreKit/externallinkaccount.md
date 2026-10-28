@@ -18,7 +18,7 @@ Enables qualifying apps to link to an external website for account creation or m
 enum ExternalLinkAccount
 ```
 
-#### Overview
+## Overview
 
 This functionality is only available to apps with the [`com.apple.developer.storekit.external-link.account`](../BundleResources/entitlements/com.apple.developer.storekit.external-link.account.md) entitlement. For more information, see [Distributing “reader” apps with a link to your website](https://developer.apple.com/support/reader-apps/).
 

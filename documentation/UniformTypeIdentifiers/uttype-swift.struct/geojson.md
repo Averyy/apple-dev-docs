@@ -21,7 +21,7 @@ A GeoJSON file.
 static var geoJSON: UTType { get }
 ```
 
-#### Discussion
+## Discussion
 
 **UTI:** public.geojson
 

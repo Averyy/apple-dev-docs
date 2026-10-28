@@ -24,7 +24,7 @@ static let record: AVAudioSession.Category
 extern AVAudioSessionCategory const AVAudioSessionCategoryRecord;
 ```
 
-#### Discussion
+## Discussion
 
 This category has the effect of silencing virtually all output on the system, for as long as the session is active. Unless you need to prevent any unexpected sounds from being played, use [`playAndRecord`](./playandrecord.md) instead.
 

@@ -23,7 +23,7 @@ case notDetermined
 
 - [Signing people in to their media accounts automatically](../../signing-people-in-to-media-apps-automatically.md)
 
-#### Discussion
+## Discussion
 
 This authorization state indicates that either a person hasn’t answered the prompt to opt in to Automatic Sign-In, or that the app (or server) deletes the token value.
 

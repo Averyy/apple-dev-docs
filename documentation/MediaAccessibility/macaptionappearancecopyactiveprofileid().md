@@ -22,11 +22,11 @@ func MACaptionAppearanceCopyActiveProfileID() -> CFString
 extern CFStringRefMACaptionAppearanceCopyActiveProfileID();
 ```
 
-#### Return Value
+## Return Value
 
 The currently-selected profileID.
 
-#### Discussion
+## Discussion
 
 Gets the currently-selected caption drawing profileID system wide.
 

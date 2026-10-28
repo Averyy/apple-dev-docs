@@ -25,11 +25,11 @@ class URLSessionTaskTransactionMetrics
 @interface NSURLSessionTaskTransactionMetrics : NSObject
 ```
 
-#### Overview
+## Overview
 
 Each [`URLSessionTaskTransactionMetrics`](./urlsessiontasktransactionmetrics.md) object consists of a [`request`](./urlsessiontasktransactionmetrics/request.md) and [`response`](./urlsessiontasktransactionmetrics/response.md) property, corresponding to the request and response of the corresponding task. It also contains temporal metrics, starting with [`fetchStartDate`](./urlsessiontasktransactionmetrics/fetchstartdate.md) and ending with [`responseEndDate`](./urlsessiontasktransactionmetrics/responseenddate.md), as well as other characteristics like [`networkProtocolName`](./urlsessiontasktransactionmetrics/networkprotocolname.md) and [`resourceFetchType`](./urlsessiontasktransactionmetrics/resourcefetchtype.md).
 
-##### Understanding temporal metrics
+### Understanding temporal metrics
 
 The figure below shows the sequence of events for a URL session task, which correspond to the temporal metrics captured by [`URLSessionTaskTransactionMetrics`](./urlsessiontasktransactionmetrics.md).
 
@@ -37,7 +37,7 @@ The figure below shows the sequence of events for a URL session task, which corr
 
 For all metrics with a start and end date, if an aspect of the task was not completed, then its corresponding end date metric is `nil`. This can happen if name lookup begins, but the operation either times out, fails, or the client cancels the task before the name can be resolved. In this case, the [`domainLookupEndDate`](./urlsessiontasktransactionmetrics/domainlookupenddate.md) property is `nil`, along with all metrics for aspects that occurred afterwards.
 
-##### Measuring tasks using iCloud Private Relay
+### Measuring tasks using iCloud Private Relay
 
 iCloud Private Relay can change the timing and sequence of events for your tasks by sending requests through a set of privacy proxies. All tasks that use iCloud Private Relay set the [`isProxyConnection`](./urlsessiontasktransactionmetrics/isproxyconnection.md) property in their transaction metrics. In this case, the [`remoteAddress`](./urlsessiontasktransactionmetrics/remoteaddress.md) property contains the address of the proxy, and not the origin server.
 

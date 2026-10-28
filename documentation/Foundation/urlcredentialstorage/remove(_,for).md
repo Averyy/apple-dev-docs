@@ -25,7 +25,7 @@ func remove(_ credential: URLCredential, for space: URLProtectionSpace)
 - (void) removeCredential:(NSURLCredential *) credential forProtectionSpace:(NSURLProtectionSpace *) space;
 ```
 
-#### Discussion
+## Discussion
 
 If you override this method, also override [`remove(_:for:options:task:)`](./remove%28_,for,options,task%29.md).
 

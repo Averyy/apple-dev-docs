@@ -16,7 +16,7 @@ The main text that appears on the alert for a Live Activity update on Apple Watc
 var body: LocalizedStringResource
 ```
 
-#### Discussion
+## Discussion
 
 Apple Watch displays this string briefly as part of the alert that appears when you update a Live Activity and choose to alert people about the update. Choose text that’s easy to read at a glance. For example, a pizza delivery app could use “Your order will arrive in 25 minutes.”
 

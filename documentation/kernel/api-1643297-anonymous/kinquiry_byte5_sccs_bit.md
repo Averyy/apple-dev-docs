@@ -13,7 +13,7 @@
 kINQUIRY_Byte5_SCCS_Bit = 7
 ```
 
-#### Discussion
+## Discussion
 
 SCCS bit definition.
 

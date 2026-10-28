@@ -21,7 +21,7 @@ static func % (lhs: MLXArray, rhs: MLXArray) -> MLXArray
 
 - [Converting From Python](../converting-python.md)
 
-#### Discussion
+## Discussion
 
 Computes the remainder of dividing `lhs` with `rhs` with [Numpy Style Broadcasting](../broadcasting.md).
 
@@ -33,7 +33,7 @@ let a = MLXArray(0 ..< 12, [4, 3])
 let r = a % 2
 ```
 
-##### See Also
+### See Also
 
 - [Arithmetic](../arithmetic.md)
 - [`remainder(_:_:stream:)`](../remainder%28_,_,stream%29.md)

@@ -21,7 +21,7 @@ Returns a vector that results from scaling with the specified size structure.
 static SPVector3D SPVector3DScaleBySize(SPVector3D vector, SPSize3D scale);
 ```
 
-#### Return Value
+## Return Value
 
 The vector that results from scaling with the specified size structure.
 

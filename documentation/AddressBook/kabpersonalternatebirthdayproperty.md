@@ -23,7 +23,7 @@ let kABPersonAlternateBirthdayProperty: ABPropertyID
 extern const ABPropertyID kABPersonAlternateBirthdayProperty;
 ```
 
-#### Discussion
+## Discussion
 
 You can use toll-free bridging to cast the value to [`NSDictionary`](../Foundation/nsdictionary.md). The data corresponds to an [`NSDateComponents`](../Foundation/nsdatecomponents.md) object.
 

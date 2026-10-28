@@ -21,7 +21,7 @@ A Boolean value indicating whether this character is a letter.
 var isLetter: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 For example, the following characters are all letters:
 

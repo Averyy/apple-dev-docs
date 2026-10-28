@@ -5,7 +5,7 @@
 
 Integrate your custom collaboration app with Messages.
 
-#### Overview
+## Overview
 
 If your app uses iCloud to store shared content, you can use the steps in [Adding shared content collaboration to your app](./adding-shared-content-collaboration-to-your-app.md) to add collaboration. To share content without using iCloud, the Shared with You framework provides an [`SWCollaborationMetadata`](../SharedWithYouCore/swcollaborationmetadata.md) object wrapped in [`NSItemProvider`](../Foundation/nsitemprovider.md) to implement a custom collaboration infrastructure.
 
@@ -15,7 +15,7 @@ Before you can use this collaboration infrastructure, your app needs to support 
 
 > **Related sessions from WWDC22**:  Session 10093: [Integrate your custom collaboration app with Messages](https://developer.apple.com/wwdc22/10093)
 
-##### Create the metadata object
+### Create the metadata object
 
 When a user decides to share a collaboration from your app through the Messages app, you first create metadata to represent the content. The metadata includes share options the user can configure prior to sending the message, and many other properties you can customize. Next, you provide that metadata to the share sheet, or to drag and drop using the steps below in the “Present a collaboration view” section.
 
@@ -62,7 +62,7 @@ let optionsGroups = [permission, additionalOptions]
 metadata.defaultShareOptions = SWCollaborationShareOptions(optionsGroups: optionsGroups)
 ```
 
-##### Present a collaboration view
+### Present a collaboration view
 
 If your app uses SwiftUI, [`SWCollaborationMetadata`](../SharedWithYouCore/swcollaborationmetadata.md) is compatible with the [`Transferable`](../CoreTransferable/transferable.md) protocol and the [`ShareLink`](../SwiftUI/sharelink.md) view. In the example below, the app defines a `Transferable` model object and creates a [`ProxyRepresentation`](../CoreTransferable/proxyrepresentation.md) to return a collaboration metadata instance. Then, the app passes that model object to a `ShareLink` instance in the view.
 
@@ -151,7 +151,7 @@ func createPasteboardItem(metadata: SWCollaborationMetadata) -> NSPasteboardItem
 
 The system stages a draft of your collaborative content in Messages. After a person taps the Send button, the system coordinates with your app to create the share.
 
-##### Prepare the collaboration coordinator
+### Prepare the collaboration coordinator
 
 `SWCollaborationCoordinator` is a singleton, meaning there’s a global shared instance that your app uses to respond to action requests. Your app defines an action handler that conforms to the [`SWCollaborationActionHandler`](../SharedWithYouCore/swcollaborationactionhandler.md) protocol. Because the collaboration coordinator runs in the background and can send requests for actions to your app at any time, define your action handler early in the launch process. The app in the example below registers the handler in the [`application(_:didFinishLaunchingWithOptions:)`](../UIKit/uiapplicationdelegate/application%28_,didfinishlaunchingwithoptions%29.md) method:
 
@@ -195,7 +195,7 @@ func collaborationCoordinator(_ coordinator: SWCollaborationCoordinator,
 
 If the [`SWStartCollaborationAction`](../SharedWithYouCore/swstartcollaborationaction.md) is successful, the system sends your app a second action to update the collaboration participants. Before you can add or remove participants, your app needs to have a way to verify participants.
 
-##### Verify participant access
+### Verify participant access
 
 The [`SWUpdateCollaborationParticipantsAction`](../SharedWithYouCore/swupdatecollaborationparticipantsaction.md) contains the cryptographic identities for the participants. The system derives the identities from the collaboration identifier that `SWStartCollaborationAction` provides. Your shared content server is responsible for identity storage and verification of recipient devices.
 
@@ -217,7 +217,7 @@ The figure below shows that it’s possible to generate a root hash using a subs
 
 It’s important to note that you can prove the system uses the public key P3 to generate a given root hash, without needing to reconstruct the entire tree. The subset of nodes necessary to do this is a proof of inclusion. Verification begins when your app opens a universal link. To do this, you first need to check that the link is collaborative.
 
-##### Verify a collaboration link
+### Verify a collaboration link
 
 [`SWCollaborationHighlight`](./swcollaborationhighlight.md) represents a collaborative link that your app retrieves from [`SWHighlightCenter`](./swhighlightcenter.md). Use that collaboration highlight to generate the proof of inclusion. To represent a proof of inclusion, use [`SWPerson.IdentityProof`](../SharedWithYouCore/swperson/identityproof.md). To perform verification, first generate this object along with a cryptographic signature to send to your server. Retrieve the proof using the [`getSignedIdentityProof(for:using:completionHandler:)`](./swhighlightcenter/getsignedidentityproof%28for,using,completionhandler%29.md) method on `SWHighlightCenter`.
 
@@ -286,7 +286,7 @@ With this simple function, you can quickly compute a root hash given an identity
 
 Next, sign some data and retrieve the proof of inclusion. Send the signed data and proof to your server. Verify the signature on the data. Using the proof of inclusion, generate the root hash. Finally, compare the root hash to the list of known identities associated with that content.
 
-##### Add a participant
+### Add a participant
 
 The example below shows how to handle the update participants action. First, retrieve the collaboration identifier from the action’s metadata — this is the identifier you supply to the [`fulfill()`](../SharedWithYouCore/swaction/fulfill%28%29.md) method while handling `SWStartCollaborationAction`.
 
@@ -314,7 +314,7 @@ func collaborationCoordinator(_ coordinator: SWCollaborationCoordinator,
 }
 ```
 
-##### Remove a participant
+### Remove a participant
 
 To remove a participant, look up any account associated with a removed identity and revoke their access. If your app doesn’t have any associated accounts for this collaboration, delete the root hash from your database. The example code below uses the [`removedIdentities`](../SharedWithYouCore/swupdatecollaborationparticipantsaction/removedidentities.md) property on the action and passes it to a similar removal API request:
 
@@ -339,7 +339,7 @@ func collaborationCoordinator(_ coordinator: SWCollaborationCoordinator,
 }
 ```
 
-##### Post a change event notice
+### Post a change event notice
 
 When a participant makes changes to a collaboration, your app posts notices about those changes. The system displays those notices in Messages as a banner in the shared conversation. The banner includes a description of the changes, as well as the name of the person who makes each change.
 
@@ -358,7 +358,7 @@ func postContentEditEvent(identifier: SWCollaborationIdentifier) throws {
 }
 ```
 
-##### Post a membership event notice
+### Post a membership event notice
 
 For participant changes, your app posts a membership event and passes either the [`SWHighlightMembershipEventTrigger.addedCollaborator`](./swhighlightmembershipeventtrigger/addedcollaborator.md) or [`SWHighlightMembershipEventTrigger.removedCollaborator`](./swhighlightmembershipeventtrigger/removedcollaborator.md) trigger type.
 
@@ -375,7 +375,7 @@ func postMembershipEvent(identifier: SWCollaborationIdentifier) throws {
 }
 ```
 
-##### Post a mention event notice
+### Post a mention event notice
 
 If your app supports user mentions, you can post a mention event. Initialize a person identity with the root hash of the mentioned user. Next, pass the mentioned identity to [`SWHighlightMentionEvent`](./swhighlightmentionevent.md) and post the mention event.
 
@@ -396,7 +396,7 @@ func postMentionEvent(identifier: SWCollaborationIdentifier, mentionedRootHash: 
 }
 ```
 
-##### Post a persistence event notice
+### Post a persistence event notice
 
 Your app posts the persistence event type when a participant moves, renames, or deletes content. In the example below, the app uses [`SWHighlightPersistenceEventTrigger.renamed`](./swhighlightpersistenceeventtrigger/renamed.md) to indicate that the participant changed the name of the content:
 

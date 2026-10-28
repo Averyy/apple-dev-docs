@@ -25,7 +25,7 @@ static let parentDirectoryURLKey: URLResourceKey
 extern NSURLResourceKey const NSURLParentDirectoryURLKey;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is a read-only `NSURL` object, or `nil` if the resource is the root directory of its volume.
 

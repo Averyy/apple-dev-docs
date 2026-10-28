@@ -15,11 +15,11 @@ Specifies the MIDI driver that owns a serial port.
 extern OSStatus MIDISetSerialPortOwner(CFStringRef portName, CFStringRef driverName);
 ```
 
-#### Return Value
+## Return Value
 
 An OSStatus result code.
 
-#### Discussion
+## Discussion
 
 Use this to assign ownership of a serial port to one of the MIDI drivers installed in the system.
 

@@ -18,11 +18,11 @@ Creates a response stream containing deltas.
 ## Declaration
 
 ```swift
-nonisolated
-(nonsending) func respond(to request: LanguageModelExecutorGenerationRequest, model: Self.Model, streamingInto channel: LanguageModelExecutorGenerationChannel) async throws
+nonisolated(nonsending)
+func respond(to request: LanguageModelExecutorGenerationRequest, model: Self.Model, streamingInto channel: LanguageModelExecutorGenerationChannel) async throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: If the model declares that it does not have a given capability via [`capabilities`](../languagemodel/capabilities.md), then the system will automatically throw an error instead of invoking this method. You do not need to manually validate the request for any functionality captured by [`LanguageModelCapabilities`](../languagemodelcapabilities.md).
 

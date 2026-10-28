@@ -21,7 +21,7 @@ Match the specified string prefix value against a string value (not an array).
 func matchPrefixSingle(_ value: String) -> EntitlementsQuery
 ```
 
-#### Discussion
+## Discussion
 
 Strings are matched byte for byte (i.e. no unicode normalization occurs).
 

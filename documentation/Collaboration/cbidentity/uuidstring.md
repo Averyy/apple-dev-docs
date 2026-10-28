@@ -21,11 +21,11 @@ var uuidString: String { get }
 @property (nonatomic, readonly) NSString * UUIDString;
 ```
 
-#### Return Value
+## Return Value
 
 The UUID string of the identity.
 
-#### Discussion
+## Discussion
 
 The UUID string is generated so it is unique across all identity authorities. When storing ACLs, one method is to store the UUID of each identity. However, it is recommended that you use a persistent data object instead (see [`persistentReference`](./persistentreference.md)).
 

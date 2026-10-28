@@ -20,7 +20,7 @@ enum TargetAlignment
 enum ARRaycastTargetAlignment : NSInteger;
 ```
 
-#### Discussion
+## Discussion
 
 A raycast ignores potential targets with an alignment different than the one you specify in the raycast query.
 

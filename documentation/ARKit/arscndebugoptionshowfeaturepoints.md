@@ -16,7 +16,7 @@ Display a point cloud showing intermediate results of the scene analysis that AR
 extern const SCNDebugOptions ARSCNDebugOptionShowFeaturePoints;
 ```
 
-#### Discussion
+## Discussion
 
 This option is available only when running a [`ARWorldTrackingConfiguration`](./arworldtrackingconfiguration.md) session.
 

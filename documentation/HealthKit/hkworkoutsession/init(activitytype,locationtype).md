@@ -21,11 +21,11 @@ init(activityType: HKWorkoutActivityType, locationType: HKWorkoutSessionLocation
 - (instancetype) initWithActivityType:(HKWorkoutActivityType) activityType locationType:(HKWorkoutSessionLocationType) locationType;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized workout session object for the specified activity type and location.
 
-#### Discussion
+## Discussion
 
 HealthKit uses the session’s workout activity and location type to fine tune Apple Watch’s sensors for the selected activity. All workout sessions generate higher-frequency heart rate samples; however, an outdoor cycling activity generates more accurate location data, while an indoor cycling activity does not.
 

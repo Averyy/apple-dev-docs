@@ -15,7 +15,7 @@ A selector control’s value and name.
 struct IOUserVideoSelectorValueDescription;
 ```
 
-#### Overview
+## Overview
 
 `m_value` is the IOUserVideoSelectorValue of the control. `m_name` is the name of the control value.
 

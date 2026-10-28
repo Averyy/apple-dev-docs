@@ -27,7 +27,7 @@ var isGeocoding: Bool { get }
 @property (nonatomic, readonly, getter=isGeocoding) BOOL geocoding;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the value [`true`](../../Swift/true.md) if the process is ongoing or [`false`](../../Swift/false.md) if the process is done or has not yet been initiated.
 

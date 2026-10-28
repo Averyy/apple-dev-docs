@@ -25,7 +25,7 @@ static var nextHole: FileDescriptor.SeekOrigin { get }
 
 - [Adopting Swift File Options](../../adopting-file-options.md)
 
-#### Discussion
+## Discussion
 
 For information about what is considered a hole, see the `lseek(2)` man page.
 

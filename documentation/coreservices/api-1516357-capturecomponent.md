@@ -15,11 +15,11 @@ Allows your component to capture another component.
 Component CaptureComponent(Component capturedComponent, Component capturingComponent);
 ```
 
-#### Return Value
+## Return Value
 
 A new component identifier. Your component can use this new identifier to refer to the captured component. For example, your component can open the captured component by providing this identifier to the [`OpenComponent`](./api-1516607-opencomponent.md) structure. Your component must provide this identifier to the [`UncaptureComponent`](./api-1516646-uncapturecomponent.md) function to specify the component to be restored to the search list. If the component you wish to capture is already captured, the component identifier is set to `NULL`. See the description of the `Component` data type.
 
-#### Discussion
+## Discussion
 
 Typically, your component captures another component when you want to override all or some of the features provided by a component or to provide new features. For example, a component called NewMath might capture a component called OldMath. Suppose the NewMath component provides a new function, `DoExponent`. Whenever NewMath gets an exponent request, it can handle the request itself. For all other requests, NewMath might call the OldMath component to perform the request.
 

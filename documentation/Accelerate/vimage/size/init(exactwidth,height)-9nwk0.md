@@ -21,7 +21,7 @@ Creates a size with dimensions specified as floating-point values.
 init?<T>(exactWidth: T, height: T) where T : BinaryFloatingPoint
 ```
 
-#### Discussion
+## Discussion
 
 The height and width must be greater than `0` and exactly representable as an `Int` value.
 

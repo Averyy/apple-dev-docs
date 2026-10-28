@@ -21,7 +21,7 @@ A type of dispatch source for monitoring custom events involving the coalescing 
 #define DISPATCH_SOURCE_TYPE_DATA_ADD
 ```
 
-#### Discussion
+## Discussion
 
 A dispatch source that coalesces data obtained via calls to [`dispatch_source_merge_data`](./dispatch_source_merge_data.md). An ADD is used to coalesce the data. The handle is unused (pass zero for now). The mask is unused (pass zero for now).
 

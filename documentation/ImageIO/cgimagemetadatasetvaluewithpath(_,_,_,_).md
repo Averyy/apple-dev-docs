@@ -25,11 +25,11 @@ func CGImageMetadataSetValueWithPath(_ metadata: CGMutableImageMetadata, _ paren
 extern bool CGImageMetadataSetValueWithPath(CGMutableImageMetadataRef metadata, CGImageMetadataTagRef parent, CFStringRef path, CFTypeRef value);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if this function set the tag successfully, or `false` if a problem occurred.
 
-#### Discussion
+## Discussion
 
 As needed, this function creates any intermediate tags that are required to create the tag at the specified path. This function creates each tag with default types. Tag creation fails if the path includes an unregistered prefix.
 

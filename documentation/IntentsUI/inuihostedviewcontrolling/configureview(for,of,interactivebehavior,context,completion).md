@@ -28,7 +28,7 @@ optional func configureView(for parameters: Set<INParameter>, of interaction: IN
 
 - [Configuring the View Controller for Your Custom Interface](../../SiriKit/configuring-the-view-controller-for-your-custom-interface.md)
 
-#### Discussion
+## Discussion
 
 Implement this method when you want to replace some or all of the default interface displayed by Siri or Maps as part of confirming or handling an intent. This method gives you granular control over the replacement of the content in the presented interface. If you implement this method, SiriKit calls this method instead of the [`configure(with:context:completion:)`](./configure%28with,context,completion%29.md) method.
 

@@ -22,7 +22,7 @@ enum Category
 enum UIActivityCategory : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 Activities have a defined category, and the activity UI may show activities grouped by category.
 

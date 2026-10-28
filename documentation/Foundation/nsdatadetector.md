@@ -25,7 +25,7 @@ class NSDataDetector
 @interface NSDataDetector : NSRegularExpression
 ```
 
-#### Overview
+## Overview
 
 Find dates, addresses, links, phone numbers, and transit information in natural language text with `NSDataDetector`.
 
@@ -33,7 +33,7 @@ Find dates, addresses, links, phone numbers, and transit information in natural 
 
 > ❗ **Important**:  Don’t use `NSDataDetector` to validate data. `NSDataDetector` discards potential matches in case of uncertainty. Use a class specific to the type of data for validation instead. For example, attempt to instantiate a [`URL`](./url.md) object using [`init(string:)`](./url/init%28string%29.md) to validate a URL string. A valid URL string returns an instance of [`URL`](./url.md), while an invalid URL string returns [`nil`](../ObjectiveC/nil-227m0.md).
 
-##### Examples
+### Examples
 
 The following shows several graduated examples of using the `NSDataDetector` class.
 

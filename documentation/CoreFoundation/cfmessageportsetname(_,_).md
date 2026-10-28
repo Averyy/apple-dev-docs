@@ -25,11 +25,11 @@ func CFMessagePortSetName(_ ms: CFMessagePort!, _ newName: CFString!) -> Bool
 extern Boolean CFMessagePortSetName(CFMessagePortRef ms, CFStringRef newName);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the name change succeeds, otherwise `false`.
 
-#### Discussion
+## Discussion
 
 Other threads and processes can connect to a named message port with [`CFMessagePortCreateRemote(_:_:)`](./cfmessageportcreateremote%28_,_%29.md).
 

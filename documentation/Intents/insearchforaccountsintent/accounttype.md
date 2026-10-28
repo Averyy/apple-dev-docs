@@ -31,7 +31,7 @@ var accountType: INAccountType { get }
 @property (atomic, assign, readonly) INAccountType accountType;
 ```
 
-#### Discussion
+## Discussion
 
 If this property contains a value other than [`INAccountType.unknown`](../inaccounttype/unknown.md), use the value to limit your search to accounts of the specified type.
 

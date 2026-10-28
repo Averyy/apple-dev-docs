@@ -19,7 +19,7 @@ Generate uniformly distributed random numbers with a `RangeExpression<Float>` (s
 func uniform<T>(_ range: Range<Float> = 0 ..< 1, _ shape: [Int] = [], type: T.Type = Float.self, key: MLXArray? = nil, stream: StreamOrDevice = .default) -> MLXArray where T : HasDType, T : BinaryFloatingPoint
 ```
 
-#### Discussion
+## Discussion
 
 Specialization to make it easy to call with `Float`:
 

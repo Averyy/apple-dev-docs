@@ -21,7 +21,7 @@ unowned(unsafe) var frameLoadDelegate: (any WebFrameLoadDelegate)! { get set }
 @property (nonatomic, assign) id<WebFrameLoadDelegate> frameLoadDelegate;
 ```
 
-#### Discussion
+## Discussion
 
 Conforms to the WebFrameLoadDelegate protocol.
 

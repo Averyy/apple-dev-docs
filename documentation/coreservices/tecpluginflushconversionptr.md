@@ -16,7 +16,7 @@ Defines a pointer to a function that flushesout any data in a converter objectâ€
 typedef OSStatus (*TECPluginFlushConversionPtr)(TECObjectRef encodingConverter, TECConverterContextRec *plugContext);
 ```
 
-#### Return Value
+## Return Value
 
 A resultcode. See [Result Codes](./carbon_core/text_encoding_conversion_manager.md#1664324).
 

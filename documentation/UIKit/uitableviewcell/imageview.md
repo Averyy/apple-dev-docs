@@ -29,7 +29,7 @@ var imageView: UIImageView? { get }
 
 - [Configuring the cells for your table](../configuring-the-cells-for-your-table.md)
 
-#### Discussion
+## Discussion
 
 Returns the image view ([`UIImageView`](../uiimageview.md) object) of the table view, which initially has no image set. If an image is set, it appears on the left side of the cell, before any label. `UITableViewCell` creates the image-view object when you create the cell.
 

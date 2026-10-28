@@ -23,7 +23,7 @@ func first<T>(matchingCategory category: CMTypedTag<T>.Category) -> CMTypedTag<T
 
 Available when `Element` inherits `CMTag`.
 
-#### Discussion
+## Discussion
 
 - category: The category to match.
 

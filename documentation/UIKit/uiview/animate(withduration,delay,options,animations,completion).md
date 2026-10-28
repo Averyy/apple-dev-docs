@@ -23,7 +23,7 @@ class func animate(withDuration duration: TimeInterval, delay: TimeInterval, opt
 + (void) animateWithDuration:(NSTimeInterval) duration delay:(NSTimeInterval) delay options:(UIViewAnimationOptions) options animations:(void (^)()) animations completion:(void (^)(BOOL finished)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 This method initiates a set of animations to perform on the view. The block object in the `animations` parameter contains the code for animating the properties of one or more views.
 

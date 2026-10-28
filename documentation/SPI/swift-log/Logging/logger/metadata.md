@@ -17,7 +17,7 @@ The type of the metadata storage.
 typealias Metadata = [String : MetadataValue]
 ```
 
-#### Discussion
+## Discussion
 
 `Metadata` is a typealias for `[String: Logger.MetadataValue]` the type of the metadata storage.
 

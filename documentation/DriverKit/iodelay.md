@@ -18,7 +18,7 @@ Sleep the calling thread for a number of microseconds.
 void IODelay(uint64_t us);
 ```
 
-#### Discussion
+## Discussion
 
 This function blocks the calling thread for at least the number of specified microseconds, giving time to other processes.
 

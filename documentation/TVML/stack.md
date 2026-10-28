@@ -4,7 +4,7 @@
 
 Groups and lays out elements vertically.
 
-#### Overview
+## Overview
 
 The `stack` element groups elements together and lays them out vertically, starting from the top of the containing element. Each element is placed directly underneath the preceding element.
 
@@ -34,7 +34,7 @@ The `stack` element groups elements together and lays them out vertically, start
 </stack>
 ```
 
-##### Subelements of stack
+### Subelements of stack
 
 - [description](./description.md)
 - [ratingCard](./ratingcard.md)
@@ -44,7 +44,7 @@ The `stack` element groups elements together and lays them out vertically, start
 - [text](./text.md)
 - [title](./title.md)
 
-##### Elements that Use stack
+### Elements that Use stack
 
 - [banner](./banner.md)
 - [shelf](./shelf.md)

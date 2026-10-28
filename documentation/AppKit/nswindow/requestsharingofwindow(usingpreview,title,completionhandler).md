@@ -21,7 +21,7 @@ func requestSharingOfWindow(usingPreview image: NSImage, title: String) async th
 - (void) requestSharingOfWindowUsingPreview:(NSImage *) image title:(NSString *) title completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Request sharing of window to be provided later.  If there is an available ScreenCaptureKit sharing session, an alert will be presented asking the user to confirm the share.  The delegate will be asked to provide the window to share via windowForSharingRequestFromWindow:
 

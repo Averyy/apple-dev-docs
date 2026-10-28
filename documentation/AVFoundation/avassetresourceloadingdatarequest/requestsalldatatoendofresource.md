@@ -24,7 +24,7 @@ var requestsAllDataToEndOfResource: Bool { get }
 @property (nonatomic, readonly) BOOL requestsAllDataToEndOfResource;
 ```
 
-#### Discussion
+## Discussion
 
 When this property is true, you should disregard the value of requestedLength and incrementally provide as much data, starting from the requested offset, as the resource contains. Continue until all available data was successfully loaded, the request was cancelled, or an error occurs.
 

@@ -20,7 +20,7 @@ A component that controls an entity’s grounding shadow.
 struct GroundingShadowComponent
 ```
 
-#### Overview
+## Overview
 
 A grounding shadow is an effect that makes an entity look like it has a light source directly above it. You can add a grounding shadow to any entity that has a [`ModelComponent`](./modelcomponent.md) in its component set by adding a grounding shadow component to the entity’s [`components`](./entity/components.md) property.
 
@@ -39,7 +39,7 @@ You need to add the grounding shadow component to each entity you want to apply 
 
 > **Note**: Neither virtual nor physical light sources affect grounding shadows.
 
-##### Receiving Shadows
+### Receiving Shadows
 
 By default, all entity models with a grounding shadow component can cast a shadow onto any other model entities in the scene. However, you can configure an entity to opt out of receiving shadows from other entities by setting a grounding shadow component’s [`receivesShadow`](./groundingshadowcomponent/receivesshadow.md) property to `false` and adding that component to the entity that’s opting out.
 

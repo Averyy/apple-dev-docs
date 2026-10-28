@@ -32,7 +32,7 @@ var renderQuality: Int { get set }
 @property (atomic) NSInteger renderQuality;
 ```
 
-#### Discussion
+## Discussion
 
 The range of valid values is 0 to 127.
 

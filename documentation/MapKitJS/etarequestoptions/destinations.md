@@ -15,7 +15,7 @@ An array of coordinates that represent end points for estimated arrival time req
 destinations: CoordinateData[];
 ```
 
-#### Discussion
+## Discussion
 
 A [`Coordinate`](../coordinate.md) represents each destination in the array. You may get coordinates from [`search()`](../search/search.md) or [`lookup()`](../geocoder/lookup.md), which return [`Place`](../place.md) objects that contain coordinates. You may provide up to 10 destinations in the array.
 

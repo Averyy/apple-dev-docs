@@ -20,7 +20,7 @@ Text appended to a streaming entry’s current text segment.
 struct TextFragment
 ```
 
-#### Overview
+## Overview
 
 Use this type when appending text with [`LanguageModelExecutorGenerationChannel.Response`](./response.md) and [`LanguageModelExecutorGenerationChannel.Reasoning`](./reasoning.md) actions.
 

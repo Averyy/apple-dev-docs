@@ -11,7 +11,7 @@ Apply virtual fog to the physical environment.
 - iPadOS 15.0+
 - Xcode 16.0+
 
-#### Overview
+## Overview
 
 Devices such as the second-generation iPad Pro 11-inch and fourth-generation iPad Pro 12.9-inch can use the LiDAR Scanner to calculate the distance of real-world objects from the user. In world-tracking experiences on iOS 14, ARKit provides a buffer that describes the objects’ distance from the device in meters.
 
@@ -19,7 +19,7 @@ This sample app uses the depth buffer to create a virtual fog effect in real tim
 
 ![Diagram of two versions of a scene with three armchairs in a row, increasing in distance from the viewer. In the first version, the view of the chairs is clear and unimpeded. In the second version, the two chairs in the distance appear to fade into a gray mist.](https://developer.apple.com/tutorials/images/com.apple.arkit/ar-depth-fog.png)
 
-#### Enable scene depth and run a session
+## Enable scene depth and run a session
 
 In order to avoid running an unsupported configuration, the sample app first checks whether the device supports scene depth.
 
@@ -47,7 +47,7 @@ Then, the sample project begins the AR experience by running the session.
 session.run(configuration)
 ```
 
-#### Access the scene’s depth
+## Access the scene’s depth
 
 ARKit exposes the depth buffer documentation/arkit/ardepthdata/depthmap) as a [CVPixelBuffer](../CoreVideo/cvpixelbuffer-q2e.md) on the current frame’s [`sceneDepth`](./arconfiguration/framesemantics-swift.struct/scenedepth.md) or [`smoothedSceneDepth`](./arconfiguration/framesemantics-swift.struct/smoothedscenedepth.md) property, depending on the enabled frame semantics. This sample app visualizes [`smoothedSceneDepth`](./arconfiguration/framesemantics-swift.struct/smoothedscenedepth.md) by default. The raw depth values in [`sceneDepth`](./arconfiguration/framesemantics-swift.struct/scenedepth.md) can create a flicker whereas smoothing the depth differences across frames visualizes a more realistic fog effect. For debug purposes, the sample allows switching between [`smoothedSceneDepth`](./arconfiguration/framesemantics-swift.struct/smoothedscenedepth.md) and [`sceneDepth`](./arconfiguration/framesemantics-swift.struct/scenedepth.md) with an onscreen toggle.
 
@@ -82,7 +82,7 @@ fileprivate func setMTLPixelFormat(_ texturePixelFormat: inout MTLPixelFormat?, 
 }
 ```
 
-#### Apply a blur to the depth buffer
+## Apply a blur to the depth buffer
 
 As a benefit of rendering its graphics with Metal, this app has at its disposal the display conveniences of MPS. The sample project uses the MPS Gaussian Blur filter to make realistic fog. When instantiating the filter, the sample project passes a `sigma` of `5` to specify a 5-pixel radius blur.
 
@@ -107,7 +107,7 @@ blur.encode(commandBuffer: commandBuffer, sourceImage: inputImage, destinationIm
 
 > **Note**: In-place MPS operations can save time, memory, and power. Since in-place MPS requires fallback code for devices that don’t support it, this sample project doesn’t use it. For more information on in-place operations, see [Image Filters](../MetalPerformanceShaders/image-filters.md).
 
-#### Visualize the blurred depth to create fog
+## Visualize the blurred depth to create fog
 
 Metal renders by providing to the GPU a fragment shader that draws the app’s graphics. Since the sample project renders a camera image, it packages up the camera image for the fragment shader by calling `setFragmentTexture`.
 
@@ -164,7 +164,7 @@ half4 foggedColor = mix(cameraColor, fogColor, fogPercentage);
 
 After Metal calls the fragment shader for every pixel, the view presents the final, fogged image of the physical environment to the screen.
 
-#### Visualize confidence data
+## Visualize confidence data
 
 ARKit provides the [`confidenceMap`](./ardepthdata/confidencemap.md) property within [`ARDepthData`](./ardepthdata.md) to measure the accuracy of the corresponding depth data [`depthMap`](./ardepthdata/depthmap.md). Although this sample project doesn’t factor depth confidence into its fog effect, confidence data could filter out lower-accuracy depth values if the app’s algorithm required it.
 

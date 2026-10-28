@@ -23,11 +23,11 @@ Returns a Boolean value that indicates whether the given language supports setti
 static func isSupported(forLanguage language: String) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the language supports custom pronouns; otherwise, `false`.
 
-#### Discussion
+## Discussion
 
 If this value is `false` for a given language, calling [`setCustomPronoun(_:forLanguage:)`](../setcustompronoun%28_,forlanguage%29.md) for that language throws an error.
 

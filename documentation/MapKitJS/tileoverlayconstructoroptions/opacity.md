@@ -15,7 +15,7 @@ The opacity level of the overlay.
 opacity: number;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `1`.
 

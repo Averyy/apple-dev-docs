@@ -21,11 +21,11 @@ A condition to meet before displaying a tip.
 struct Rule
 ```
 
-#### Overview
+## Overview
 
 Use rules to control when your tips display.
 
-##### Parameter Rules
+### Parameter Rules
 
 [`Parameter`](./parameter.md) based rules track app state. For example, to display a tip when someone logs in:
 
@@ -49,7 +49,7 @@ struct FavoriteLandmarkTip: Tip {
 }
 ```
 
-##### Event Rules
+### Event Rules
 
 Event based rules track user interactions. For example, to display a tip only when a [`Event`](./event.md) occurs three or more times:
 

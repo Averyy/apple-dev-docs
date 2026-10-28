@@ -21,7 +21,7 @@ The user signed in or out of their account.
 struct AccountChange
 ```
 
-#### Overview
+## Overview
 
 The sync engine automatically listens for account changes, and it sends this event when the user signs in or out. It’s your responsibility to react appropriately to this change and update your local persistence.
 

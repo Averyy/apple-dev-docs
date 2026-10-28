@@ -28,7 +28,7 @@ optional func confirm(intent: INSearchForMediaIntent) async -> INSearchForMediaI
 - (void) confirmSearchForMedia:(INSearchForMediaIntent *) intent completion:(void (^)(INSearchForMediaIntentResponse *response)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to determine whether your app can search for the requested media. If it can, respond with the [`INSearchForMediaIntentResponseCode.ready`](../insearchformediaintentresponsecode/ready.md) response code.
 

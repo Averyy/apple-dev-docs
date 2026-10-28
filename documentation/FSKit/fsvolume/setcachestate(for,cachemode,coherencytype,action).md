@@ -19,11 +19,11 @@ func setCacheState(for item: FSItem, cacheMode: FSVolume.DataCacheMode, coherenc
 - (NSError *) setCacheStateForItem:(FSItem *) item cacheMode:(FSDataCacheMode) cacheMode coherencyType:(FSKernelCacheCoherencyType) coherencyType coherencyAction:(FSKernelCacheCoherencyAction) action;
 ```
 
-#### Return Value
+## Return Value
 
 An error if the kernel was unable to complete the requested cache state change, or `nil` on success.
 
-#### Discussion
+## Discussion
 
 Volumes conforming to [`FSVolume.DataCacheHandler`](./datacachehandler.md) call this method to proactively notify the kernel about cache policy changes that need to be applied immediately. This allows module-initiated updates outside the normal open/close/upgrade/downgrade flow.
 

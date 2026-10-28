@@ -19,7 +19,7 @@ func allowsReordering() -> Bool
 - (BOOL) allowsReordering;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the user can reorder items; [`false`](../../Swift/false.md) otherwise.
 

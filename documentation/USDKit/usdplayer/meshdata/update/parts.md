@@ -20,7 +20,7 @@ Updated mesh parts.
 let parts: [LowLevelMesh.Part]?
 ```
 
-#### Discussion
+## Discussion
 
 `nil` if unchanged.
 

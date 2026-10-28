@@ -23,11 +23,11 @@ func popToViewController(_ viewController: UIViewController, animated: Bool) -> 
 - (NSArray<__kindof UIViewController *> *) popToViewController:(UIViewController *) viewController animated:(BOOL) animated;
 ```
 
-#### Return Value
+## Return Value
 
 An array containing the view controllers that were popped from the stack.
 
-#### Discussion
+## Discussion
 
 For information on how the navigation bar is updated, see doc:UINavigationController#Updating-the-navigation-bar.
 

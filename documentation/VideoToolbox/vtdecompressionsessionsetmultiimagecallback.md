@@ -19,11 +19,11 @@ Provides a callback capable of receiving multiple images for individual frame de
 extern OSStatus VTDecompressionSessionSetMultiImageCallback(VTDecompressionSessionRef decompressionSession, VTDecompressionOutputMultiImageCallback outputMultiImageCallback, void *outputMultiImageRefcon);
 ```
 
-#### Return Value
+## Return Value
 
 An `OSStatus` value that indicates the result of the operation.
 
-#### Discussion
+## Discussion
 
 In multi-image decompression, a single video sample contains a single frame (with one PTS) that the system decodes to produce multiple images.
 

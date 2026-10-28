@@ -29,11 +29,11 @@ nonisolated
 func focusedSceneObject<T>(_ object: T?) -> some View where T : ObservableObject
 ```
 
-#### Return Value
+## Return Value
 
 A view that supplies an observable object while the scene is active.
 
-#### Discussion
+## Discussion
 
 Use this method instead of [`focusedObject(_:)`](./focusedobject%28_%29.md) for observable objects that must be visible regardless of where focus is located in the active scene. This is sometimes needed for things like main menu and discoverability HUD commands that observe and update data from the active scene but aren’t concerned with what the user is actually focused on. The scene’s root view can supply the scene’s state object:
 

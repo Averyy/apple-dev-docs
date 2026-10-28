@@ -14,7 +14,7 @@
 #define kIOPropertyPortSpeed10GigabitKey
 ```
 
-#### Discussion
+## Discussion
 
 This key defines the value of 10 Gigabit for the key kIOPropertyPortSpeedKey. If the speed of the port is 10 Gigabits per second and is not automatically determined (i.e. the user configured the port to be exactly this speed), this key should be used.
 

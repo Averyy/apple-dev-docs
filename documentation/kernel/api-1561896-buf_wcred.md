@@ -15,11 +15,11 @@ Get the credential associated with a buffer for writing.
 kauth_cred_t buf_wcred(buf_t bp);
 ```
 
-#### Return Value
+## Return Value
 
 Credential if it exists, else NULL.
 
-#### Discussion
+## Discussion
 
 No reference is taken; if the credential is to be held on to persistently, an additional reference must be taken with kauth_cred_ref.
 

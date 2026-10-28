@@ -17,7 +17,7 @@ Intermediate type for [`at`](./mlxarray/at.md).
 struct ArrayAt
 ```
 
-#### Overview
+## Overview
 
 This type isn’t typically used directly, rather it is the return value from the `at` property on MLXArray and provides the subscript.
 
@@ -27,7 +27,7 @@ var a2 = MLXArray([0, 0])
 a2 = a2.at[idx].add(1)
 ```
 
-##### See Also
+### See Also
 
 ```
 - ``MLXArray/at``

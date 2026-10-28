@@ -15,7 +15,7 @@ The displacement that the system applies to the immersive space when moving the 
 var immersiveSpaceDisplacement: Pose3D { get }
 ```
 
-#### Discussion
+## Discussion
 
 By default, the system places the origin of the immersive space at floor level, at the person’s feet. When joining a shared activity, the system moves the immersive space to an appropriate location for all participants. As participants join and leave the activity, the location of participants and the immersive space can update. Read this property to get the current offset of the immersive space relative to its default position.
 

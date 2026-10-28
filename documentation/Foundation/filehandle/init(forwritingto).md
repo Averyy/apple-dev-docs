@@ -25,11 +25,11 @@ convenience init(forWritingTo url: URL) throws
 + (instancetype) fileHandleForWritingToURL:(NSURL *) url error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized file handle object or `nil` if no file exists at `url`.
 
-#### Discussion
+## Discussion
 
 The file pointer is set to the beginning of the file. The returned object responds only to [`write(_:)`](./write%28_%29.md).
 

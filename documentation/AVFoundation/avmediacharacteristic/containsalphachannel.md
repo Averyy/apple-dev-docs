@@ -24,7 +24,7 @@ static let containsAlphaChannel: AVMediaCharacteristic
 extern AVMediaCharacteristic const AVMediaCharacteristicContainsAlphaChannel;
 ```
 
-#### Discussion
+## Discussion
 
 To determine whether the alpha is straight or pre-multiplied, look for a format description extension with key [`kCMFormatDescriptionExtension_AlphaChannelMode`](../../CoreMedia/kcmformatdescriptionextension_alphachannelmode.md).
 

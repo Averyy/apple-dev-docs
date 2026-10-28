@@ -21,7 +21,7 @@ Plays the given animation on the entity.
 @MainActor @preconcurrency func playAnimation(_ animation: AnimationResource, transitionDuration: TimeInterval, startsPaused: Bool) -> AnimationPlaybackController
 ```
 
-#### Return Value
+## Return Value
 
 An animation playback controller that you can use to start and stop the animation.
 

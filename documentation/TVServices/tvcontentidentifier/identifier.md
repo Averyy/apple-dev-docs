@@ -21,7 +21,7 @@ var identifier: String { get }
 @property (nonatomic, copy, readonly) NSString * identifier;
 ```
 
-#### Discussion
+## Discussion
 
 The contents of this string are defined by you when you design your application.
 

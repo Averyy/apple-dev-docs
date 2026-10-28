@@ -25,7 +25,7 @@ func CMSyncGetRelativeRateAndAnchorTime(_ ofClockOrTimebase: CMClockOrTimebase, 
 extern OSStatus CMSyncGetRelativeRateAndAnchorTime(CMClockOrTimebaseRef ofClockOrTimebase, CMClockOrTimebaseRef relativeToClockOrTimebase, Float64 *outRelativeRate, CMTime *outOfClockOrTimebaseAnchorTime, CMTime *outRelativeToClockOrTimebaseAnchorTime);
 ```
 
-#### Discussion
+## Discussion
 
 If both have a common host, the function syncs the clock or timebase based on the rates in the common tree rooted in that host.
 

@@ -20,7 +20,7 @@ optional func linkDidChangeForWiFiInterface(withName interfaceName: String)
 - (void) linkDidChangeForWiFiInterfaceWithName:(NSString *) interfaceName;
 ```
 
-#### Discussion
+## Discussion
 
 Register for link state change notifications by sending the [`startMonitoringEvent(with:)`](../cwwificlient/startmonitoringevent%28with%29.md) message to a Wi-Fi client object with the [`CWEventType.linkDidChange`](../cweventtype/linkdidchange.md) event type.
 

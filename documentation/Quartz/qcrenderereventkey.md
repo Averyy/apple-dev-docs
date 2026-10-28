@@ -21,7 +21,7 @@ let QCRendererEventKey: String
 extern NSString * const QCRendererEventKey;
 ```
 
-#### Discussion
+## Discussion
 
 The associated value is an [`NSEvent`](../AppKit/nsevent.md) object.
 

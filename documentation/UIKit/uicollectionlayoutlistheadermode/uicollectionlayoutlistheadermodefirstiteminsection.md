@@ -19,7 +19,7 @@ A header mode that styles the first item in a section as a header.
 UICollectionLayoutListHeaderModeFirstItemInSection
 ```
 
-#### Discussion
+## Discussion
 
 Choose this header mode when you’re using hierarchical data sources if you want to be able to expand and collapse the header.
 

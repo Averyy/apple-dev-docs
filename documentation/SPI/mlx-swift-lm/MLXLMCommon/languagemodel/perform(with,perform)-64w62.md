@@ -17,7 +17,7 @@ Temporarily loads an adapter, performs an asynchronous action, then unloads the 
 func perform<R>(with adapter: ModelAdapter, perform: () async throws -> R) async throws -> R
 ```
 
-#### Discussion
+## Discussion
 
 Example:
 

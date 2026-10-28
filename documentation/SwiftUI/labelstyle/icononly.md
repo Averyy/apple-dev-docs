@@ -24,7 +24,7 @@ nonisolated static var iconOnly: IconOnlyLabelStyle { get }
 
 Available when `Self` is `IconOnlyLabelStyle`.
 
-#### Discussion
+## Discussion
 
 The title of the label is still used for non-visual descriptions, such as VoiceOver.
 

@@ -23,7 +23,7 @@ class func supportedInputContentMinScale(device: any MTLDevice) -> Float
 + (float) supportedInputContentMinScaleForDevice:(id<MTLDevice>) device;
 ```
 
-#### Return Value
+## Return Value
 
 The minimum input content scale the GPU device supports.
 

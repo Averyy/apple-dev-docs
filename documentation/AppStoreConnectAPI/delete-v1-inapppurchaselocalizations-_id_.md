@@ -11,7 +11,7 @@ Delete the metadata for a single In-App Purchase localization.
 
 > **Deprecated**: This endpoint is deprecated. Use [`Delete an In-App Purchase localization`](./delete-v2-inapppurchaselocalizations-_id_.md) instead.
 
-#### Discussion
+## Discussion
 
 > **Note**:  Changes that you make to product metadata with the App Store Connect API can take up to 1 hour to appear in the sandbox environment.
 

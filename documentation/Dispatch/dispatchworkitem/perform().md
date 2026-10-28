@@ -21,7 +21,7 @@ Executes the work item’s block synchronously on the current thread.
 func perform()
 ```
 
-#### Discussion
+## Discussion
 
 This method executes the work item’s block immediately on the current thread.
 

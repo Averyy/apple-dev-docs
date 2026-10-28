@@ -13,11 +13,11 @@ static OSDictionary *createDictionaryFromSampleRate(
  OSDictionary *rateDict = 0);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the newly create OSDictionary.
 
-#### Overview
+## Overview
 
 This is an internal routine used to generate a dictionary matching the given sample rate. It is used to generate a sample rate dictionary for the I/O Registry - used by the CoreAudio.framework.
 

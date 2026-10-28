@@ -20,7 +20,7 @@ Invalidates the services session.
 final func invalidate()
 ```
 
-#### Discussion
+## Discussion
 
 Call this method when your app or app extension no longer needs to monitor authorization access to location services.
 

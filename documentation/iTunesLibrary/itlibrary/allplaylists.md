@@ -20,7 +20,7 @@ var allPlaylists: [ITLibPlaylist] { get }
 @property (nonatomic, retain, readonly) NSArray<ITLibPlaylist *> * allPlaylists;
 ```
 
-#### Return Value
+## Return Value
 
 An array of [`ITLibPlaylist`](../itlibplaylist.md) items.
 

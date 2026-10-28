@@ -9,9 +9,9 @@ Delete the alternative distribution search domain for an app.
 **Availability**:
 - App Store Connect API 3.4.1+
 
-#### Discussion
+## Discussion
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

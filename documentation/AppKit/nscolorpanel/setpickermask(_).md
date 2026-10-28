@@ -19,7 +19,7 @@ class func setPickerMask(_ mask: NSColorPanel.Options)
 + (void) setPickerMask:(NSColorPanelOptions) mask;
 ```
 
-#### Discussion
+## Discussion
 
 This method has an effect only before an `NSColorPanel` object is instantiated.
 

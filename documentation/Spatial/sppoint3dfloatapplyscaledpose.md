@@ -19,11 +19,11 @@
 static SPPoint3DFloat SPPoint3DFloatApplyScaledPose(SPPoint3DFloat point, SPScaledPose3DFloat pose);
 ```
 
-#### Return Value
+## Return Value
 
 The transformed point.
 
-#### Discussion
+## Discussion
 
 Returns a point that’s transformed by the specified scaled pose.
 

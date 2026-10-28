@@ -19,7 +19,7 @@ enum Attribute
 enum NSCellAttribute : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 These constants are used by the [`NSButton`](../nsbutton.md) and [`NSButtonCell`](../nsbuttoncell.md) classes.
 

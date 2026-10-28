@@ -18,7 +18,7 @@ Determines whether two convergence statuses are equal.
 static func == (lhs: NIAlgorithmConvergenceStatus, rhs: NIAlgorithmConvergenceStatus) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 Returns `true` if the errors are equal. Otherwise, returns false.
 

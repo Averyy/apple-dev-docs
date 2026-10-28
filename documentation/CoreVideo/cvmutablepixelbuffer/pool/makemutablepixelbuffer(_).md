@@ -21,7 +21,7 @@ This function creates a new CVMutablePixelBuffer using the pixel buffer attribut
 final func makeMutablePixelBuffer(_ attributes: CVMutablePixelBuffer.Pool.AllocationAttributes = .init()) throws -> CVMutablePixelBuffer
 ```
 
-#### Discussion
+## Discussion
 
 - Returns A new mutable pixel buffer created with creationAttributes passed to [`init(pixelBufferAttributes:configuration:)`](./init%28pixelbufferattributes,configuration%29.md)
 

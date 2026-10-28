@@ -24,7 +24,7 @@ let kVTDecompressionPropertyKey_DeinterlaceMode: CFString
 extern CFStringRef const kVTDecompressionPropertyKey_DeinterlaceMode;
 ```
 
-#### Discussion
+## Discussion
 
 This is an optional property for video decoders to implement. Decoders should only accept the modes that they will implement.
 

@@ -21,7 +21,7 @@ Returns a transform that results from scaling with specified double-precision va
 func scaledBy(x: Double = 1, y: Double = 1, z: Double = 1) -> AffineTransform3D
 ```
 
-#### Return Value
+## Return Value
 
 The transform that results from scaling with specified double-precision values.
 

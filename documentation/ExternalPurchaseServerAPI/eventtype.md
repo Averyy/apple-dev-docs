@@ -24,7 +24,7 @@ string eventType
 
 - [Reporting tokens with transactions](./reportwithtransactions.md)
 
-#### Discussion
+## Discussion
 
 Allowed values: `BUY`, `REFUND`
 

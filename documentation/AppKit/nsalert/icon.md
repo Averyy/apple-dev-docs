@@ -19,7 +19,7 @@ var icon: NSImage! { get set }
 @property (strong, null_resettable) NSImage * icon;
 ```
 
-#### Discussion
+## Discussion
 
 By default, the image used in an alert is the app icon. If you set this property’s value, your specified custom image is used in place of the app icon.
 

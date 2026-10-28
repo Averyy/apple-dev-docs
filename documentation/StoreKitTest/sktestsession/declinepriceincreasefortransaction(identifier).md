@@ -25,7 +25,7 @@ func declinePriceIncreaseForTransaction(identifier: Int) throws
 - (BOOL) declinePriceIncreaseForTransactionWithIdentifier:(NSUInteger) identifier error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 To test how your app handles the price increase consent flow for auto-renewable subscriptions, first call [`requestPriceIncreaseConsentForTransaction(identifier:)`](./requestpriceincreaseconsentfortransaction%28identifier%29.md).
 

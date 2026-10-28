@@ -19,7 +19,7 @@ let kCFUserNotificationCheckBoxTitlesKey: CFString!
 extern CFStringRef const kCFUserNotificationCheckBoxTitlesKey;
 ```
 
-#### Discussion
+## Discussion
 
 The array cannot have more than 8 elements. If only one checkbox is to be displayed, you can pass its title string directly without putting it into an array first.
 

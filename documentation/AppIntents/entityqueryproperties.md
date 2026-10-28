@@ -21,11 +21,11 @@ A type that provides the properties to include in a property-matched query.
 struct EntityQueryProperties<Entity, ComparatorMappingType> where Entity : AppEntity
 ```
 
-#### Overview
+## Overview
 
 Contains all the supported properties a user can query against an entity for a given query. Declare query properties with a block containing all applicable [`EntityQueryProperty`](./entityqueryproperty.md) objects.
 
-#### Example
+## Example
 
 ```swift
 var properties = QueryProperties {

@@ -22,14 +22,14 @@ optional func dragInteraction(_ interaction: UIDragInteraction, previewForCancel
 - (UITargetedDragPreview *) dragInteraction:(UIDragInteraction *) interaction previewForCancellingItem:(UIDragItem *) item withDefault:(UITargetedDragPreview *) defaultPreview;
 ```
 
-#### Return Value
+## Return Value
 
 - The default preview provided by the system.
 - A targeted drag item preview you create.
 - The preview returned after moving to a new preview target (using the `defaultPreview`’s [`retargetedPreview(with:)`](../uitargeteddragpreview/retargetedpreview%28with%29.md) method).
 - `nil` to fade the preview that is currently displayed to the user, which is the same behavior as not implementing this method.
 
-#### Discussion
+## Discussion
 
 The system calls this method multiple times, once for each visible drag item.
 

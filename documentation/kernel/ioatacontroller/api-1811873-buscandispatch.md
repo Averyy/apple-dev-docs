@@ -12,7 +12,7 @@ virtual bool busCanDispatch(
  void );
 ```
 
-#### Return Value
+## Return Value
 
 true - bus is free to issue commands. false - bus cannot issue commands at this time.
 

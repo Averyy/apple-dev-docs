@@ -24,7 +24,7 @@ var doneButtonAppearance: UIBarButtonItemAppearance { get set }
 @property (nonatomic, copy, readwrite) UIBarButtonItemAppearance * doneButtonAppearance;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to configure the appearance of bar button items that use the [`done`](../uibarbuttonitem/style-swift.enum/done.md) style, when appropriate. If the navigation bar doesn’t have a done button, setting the value of this property has no effect.
 

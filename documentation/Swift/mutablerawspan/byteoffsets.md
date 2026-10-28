@@ -21,7 +21,7 @@ The valid byte offsets for accessing this span, in ascending order.
 var byteOffsets: Range<Int> { get }
 ```
 
-#### Discussion
+## Discussion
 
 > **Complexity**: O(1)
 

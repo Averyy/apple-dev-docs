@@ -12,11 +12,11 @@ virtual IOReturn releaseCommandBuffers(
  void );
 ```
 
-#### Return Value
+## Return Value
 
 Returns KIOReturnSuccess if the page table was cleared successfully.
 
-#### Overview
+## Overview
 
 When you create a page table with one of the variants of setCommandBuffers. SBP2 holds on to a reference to the buffers until this method is called. This means that if a command completed and you manipulated the memory descriptor or released the buffers without calling this method you could leave FW in an inconsistent state.
 

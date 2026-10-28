@@ -16,7 +16,7 @@ get coordinate(): Coordinate;
 set coordinate(coordinate: Coordinate);
 ```
 
-#### Discussion
+## Discussion
 
 You can’t set the coordinate of the user location annotation.
 

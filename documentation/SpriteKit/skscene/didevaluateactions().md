@@ -29,7 +29,7 @@ func didEvaluateActions()
 
 - [Responding to Frame-Cycle Events](../responding-to-frame-cycle-events.md)
 
-#### Discussion
+## Discussion
 
 Do not call this method directly; it is called by the system exactly once per frame, so long as the scene is presented in a view and is not paused. It is called after any actions have been evaluated by nodes in the scene but before any physics are simulated.
 

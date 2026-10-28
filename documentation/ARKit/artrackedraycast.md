@@ -20,7 +20,7 @@ class ARTrackedRaycast
 @interface ARTrackedRaycast : NSObject
 ```
 
-#### Overview
+## Overview
 
 Tracked raycasting improves hit-testing techniques by repeating the query for a 3D position in succession. ARKit provides you with an updated position as it refines its understanding of world over time.
 

@@ -25,7 +25,7 @@ static var uncached: NSData.ReadingOptions { get }
 NSDataReadingUncached
 ```
 
-#### Discussion
+## Discussion
 
 For data being read once and discarded, this option can improve performance.
 

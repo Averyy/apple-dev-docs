@@ -4,7 +4,7 @@
 
 Notarize your app from the command line to handle special distribution cases.
 
-#### Overview
+## Overview
 
 The easiest way to notarize your app is through the Xcode user interface, as described in [Notarizing macOS software before distribution](./notarizing-macos-software-before-distribution.md). However, if you have a more complex scenario, you can use command line tools to manually notarize your app. This workflow can be useful in a number of cases, like when you need to:
 
@@ -14,7 +14,7 @@ The easiest way to notarize your app is through the Xcode user interface, as des
 - Create complex distributions, like disk images or installer packages.
 - Add the notarization process to a scripted build environment.
 
-##### Export a package for notarization
+### Export a package for notarization
 
 To prepare an app for notarization, you must export the app from Xcode. Using Xcode, you can export your archived app by clicking Distribute App in the Organizer window. But in a scripted build environment, you use the `xcodebuild` utility to perform the export. Because export directly follows archiving, the archive’s post-action script is a convenient place to perform the export from. You can edit the post-action from the scheme editor in Xcode.
 
@@ -54,7 +54,7 @@ Alternatively, you can put apps, kernel extensions, and other software in a cont
 
 > ❗ **Important**:  If you distribute your software via a custom third-party installer, you need two rounds of notarization. First you notarize the installer’s payload (everything the installer will install). You then package the notarized (and stapled, as described in [Staple the ticket to your distribution](./customizing-the-notarization-workflow.md#Staple-the-ticket-to-your-distribution)) items into the installer and notarize it as you would any other executable. If you use a network installer, separately notarize both the installer and the items it downloads.
 
-##### Upload your app to the notarization service
+### Upload your app to the notarization service
 
 You upload your app for notarization using `notarytool` command line tool. Xcode 13 or later supports this tool, so if you have more than one version of Xcode installed on your Mac, be sure to use the `xcode-select` utility to choose an appropriate version:
 
@@ -104,7 +104,7 @@ Save the `id` value to use later when checking the status of your request. For m
 
 > **Note**:  To avoid a dependency on Xcode for interacting with the notary service, you can use the [Notary API](../NotaryAPI/NotaryAPI.md) described in [Submitting software for notarization over the web](../NotaryAPI/submitting-software-for-notarization-over-the-web.md).
 
-##### Check the status of your request
+### Check the status of your request
 
 After you upload your app, the notarization process typically takes less than an hour. If you use the `wait` flag that the previous section demonstrates, `notarytool` returns with the status of the request:
 
@@ -154,7 +154,7 @@ The file enumerates any issues that notarization found:
 
 For information about how to deal with common problems, see [Resolving common notarization issues](./resolving-common-notarization-issues.md).
 
-##### Staple the ticket to your distribution
+### Staple the ticket to your distribution
 
 Notarization produces a ticket that tells Gatekeeper that your app is notarized. After notarization completes, the next time any user attempts to run your app on macOS 10.14 or later, Gatekeeper finds the ticket online. This includes users who downloaded your app before notarization.
 
@@ -166,7 +166,7 @@ You should also attach the ticket to your software using the `stapler` tool, so 
 
 While you can notarize a ZIP archive, you can’t staple to it directly. Instead, run `stapler` against each item that you added to the archive. Then create a new ZIP file containing the stapled items for distribution. Although tickets are created for standalone binaries, it’s not currently possible to staple tickets to them.
 
-##### Ensure your build server has network access
+### Ensure your build server has network access
 
 To incorporate notarization into a custom workflow, your build server needs access to certain network resources.
 
@@ -193,7 +193,7 @@ In addition, `stapler` uses [CloudKit](../CloudKit/CloudKit.md) to download tick
 2a01:b740:1360::/44
 ```
 
-##### Avoid long notarization response times and size limits
+### Avoid long notarization response times and size limits
 
 Notarization completes for most software within 5 minutes, and for 98 percent of software within 15 minutes. However, notarization can take longer under certain conditions. Help to avoid long response times by following a few rules:
 

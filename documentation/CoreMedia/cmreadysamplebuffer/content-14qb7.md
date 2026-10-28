@@ -23,7 +23,7 @@ var content: CMSampleBuffer.DynamicContent { get set }
 
 Available when `Content` is `CMSampleBuffer.DynamicContent`.
 
-#### Discussion
+## Discussion
 
 The content type of the sample buffer can not be changed by assigning different content.
 

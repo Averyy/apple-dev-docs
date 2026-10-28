@@ -15,7 +15,7 @@ Spin delay for a number of microseconds.
 void IODelay(unsigned int microseconds);
 ```
 
-#### Discussion
+## Discussion
 
 This function spins to delay for at least the number of specified microseconds. Since the CPU is busy spinning no time is made available to other processes; this method of delay should be used only for short periods. Also, the AbsoluteTime based APIs of kern/clock.h provide finer grained and lower cost delays.
 

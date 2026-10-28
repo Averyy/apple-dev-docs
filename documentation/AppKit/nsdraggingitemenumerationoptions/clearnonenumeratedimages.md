@@ -19,7 +19,7 @@ static var clearNonenumeratedImages: NSDraggingItemEnumerationOptions { get }
 NSDraggingItemEnumerationClearNonenumeratedImages
 ```
 
-#### Discussion
+## Discussion
 
 Specify this option when you enumerate dragging items to hide the drag image for nonvalid items for this destination. The enumeration sets the [`imageComponentsProvider`](../nsdraggingitem/imagecomponentsprovider.md) to `nil` for all dragging items that don’t meet the classes and search options criteria.
 

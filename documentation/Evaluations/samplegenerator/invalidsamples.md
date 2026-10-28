@@ -25,7 +25,7 @@ var invalidSamples: [SampleType] { get }
 
 - [Generating synthetic datasets](../generating-synthetic-evaluation-datasets.md)
 
-#### Discussion
+## Discussion
 
 Returns an empty array when no validator was provided.
 

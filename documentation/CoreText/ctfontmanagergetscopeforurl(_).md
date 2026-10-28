@@ -19,7 +19,7 @@ func CTFontManagerGetScopeForURL(_ fontURL: CFURL) -> CTFontManagerScope
 extern CTFontManagerScope CTFontManagerGetScopeForURL(CFURLRef fontURL);
 ```
 
-#### Return Value
+## Return Value
 
 The registration scope of the specified URL or `kCTFontManagerScopeNone` if not currently registered.
 

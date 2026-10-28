@@ -11,7 +11,7 @@ Removes all timer events and stops the timer
 virtual void removeAllTimerEvents();
 ```
 
-#### Overview
+## Overview
 
 Called during teardown of the driver
 

@@ -15,11 +15,11 @@ Controls the page size and starting offset for query results.
 object QueryPagination
 ```
 
-#### Discussion
+## Discussion
 
 The `QueryPagination` controls the page size and starting offset for query results.
 
-##### Example
+### Example
 
 ```json
 {

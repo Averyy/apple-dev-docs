@@ -21,7 +21,7 @@ A type that indicates the entities that can make a network request.
 typealias Attribution = NSURLRequest.Attribution
 ```
 
-#### Discussion
+## Discussion
 
 Use one of the values in [`NSURLRequest.Attribution`](../nsurlrequest/attribution-swift.enum.md).
 

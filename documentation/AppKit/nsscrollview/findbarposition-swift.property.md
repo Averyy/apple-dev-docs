@@ -19,7 +19,7 @@ var findBarPosition: NSScrollView.FindBarPosition { get set }
 @property NSScrollViewFindBarPosition findBarPosition;
 ```
 
-#### Discussion
+## Discussion
 
 See [`NSScrollView.FindBarPosition`](./findbarposition-swift.enum.md) for possible values.
 

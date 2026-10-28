@@ -21,7 +21,7 @@ A repeat behavior with a preferred play count and delay using periodic animation
 static func periodic(_ count: Int? = nil, delay: Double? = nil) -> SymbolEffectOptions.RepeatBehavior
 ```
 
-#### Return Value
+## Return Value
 
 A new behavior with the preferred play count and delay using periodic animations.
 

@@ -22,7 +22,7 @@ var matchPrivateLTENetworks: [NEPrivateLTENetwork] { get set }
 @property (copy) NSArray<NEPrivateLTENetwork *> * matchPrivateLTENetworks;
 ```
 
-#### Discussion
+## Discussion
 
 If the properties of current private LTE network matches with the properties of a member of this array then the system starts the [`NEAppPushProvider`](../neapppushprovider.md). The array must contain at least one SSID to start the provider, and has an upper limit of 10 private LTE networks. For private LTE networks that aren’t band 48, only supervised devices can perform the match.
 

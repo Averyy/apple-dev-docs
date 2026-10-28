@@ -10,7 +10,7 @@ Connect with network interfaces to read and write packets on guest operating sys
 - Mac Catalyst 13.0+
 - macOS 10.10+
 
-#### Overview
+## Overview
 
 The vmnet framework is an API for virtual machines to read and write packets.
 
@@ -18,15 +18,15 @@ The API allows a Guest OS interface to be in host mode or shared mode. Interface
 
 > **Note**: For more information about virtualization technologies, see the [Hypervisor](../Hypervisor/Hypervisor.md) framework.
 
-##### Requirements
+### Requirements
 
 The vmnet framework has the following requirements:
 
-###### Entitlements
+#### Entitlements
 
 A sandboxed user space process must have the [`com.apple.vm.networking`](../BundleResources/entitlements/com.apple.vm.networking.md) entitlement in order to use the vmnet API.
 
-##### Architecture
+### Architecture
 
 ![](https://developer.apple.com/tutorials/images/com.apple.vmnet/media-2557515@2x.png)
 

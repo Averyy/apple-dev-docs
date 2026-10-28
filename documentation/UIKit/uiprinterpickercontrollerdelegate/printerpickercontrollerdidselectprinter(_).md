@@ -22,7 +22,7 @@ optional func printerPickerControllerDidSelectPrinter(_ printerPickerController:
 - (void) printerPickerControllerDidSelectPrinter:(UIPrinterPickerController *) printerPickerController;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method if you want your delegate to be notified of the selected printer. The selected printer can be either one that the user selected or the initially selected printer that you specified when creating your [`UIPrinterPickerController`](../uiprinterpickercontroller.md) object.
 

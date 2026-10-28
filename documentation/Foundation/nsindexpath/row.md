@@ -23,7 +23,7 @@ var row: Int { get }
 @property (nonatomic, readonly) NSInteger row;
 ```
 
-#### Discussion
+## Discussion
 
 The section the row is in is identified by the value of [`section`](./section.md).
 

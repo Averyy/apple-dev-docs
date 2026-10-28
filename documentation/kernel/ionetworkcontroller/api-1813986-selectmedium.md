@@ -12,11 +12,11 @@ virtual IOReturn selectMedium(
  const IONetworkMedium *medium);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnUnsupported. Drivers may override this method and return kIOReturnSuccess if the selection was successful, or an error code otherwise.
 
-#### Overview
+## Overview
 
 This method is called when a client issues a command for the controller to change its current medium selection. The implementation must call setSelectedMedium() after the change has occurred. This method call is synchronized by the workloop's gate.
 

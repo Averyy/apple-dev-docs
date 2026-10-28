@@ -11,9 +11,9 @@ Add Game Center achievement localized information for a new locale.
 
 > **Deprecated**: This endpoint is deprecated. Use [`Create a Game Center Achievement Localization`](./post-v2-gamecenterachievementlocalizations.md) instead.
 
-#### Discussion
+## Discussion
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

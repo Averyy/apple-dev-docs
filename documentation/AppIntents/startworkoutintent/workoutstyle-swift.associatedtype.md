@@ -22,7 +22,7 @@ The type to use for defining the intent’s workout style.
 associatedtype WorkoutStyle : AppValue
 ```
 
-#### Discussion
+## Discussion
 
 Assign a type that adopts either the [`AppEnum`](../appenum.md) or [`AppEntity`](../appentity.md) protocol.
 

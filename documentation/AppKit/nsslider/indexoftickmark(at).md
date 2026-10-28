@@ -19,11 +19,11 @@ func indexOfTickMark(at point: NSPoint) -> Int
 - (NSInteger) indexOfTickMarkAtPoint:(NSPoint) point;
 ```
 
-#### Return Value
+## Return Value
 
 The index of the tick mark closest to the location specified by `point`. If `point` is not within the bounding rectangle (plus an extra pixel of space) of any tick mark, the method returns `NSNotFound`.
 
-#### Discussion
+## Discussion
 
 In its implementation of this method, the receiving `NSSlider` instance invokes the method of the same name of its `NSSliderCell` instance. This method invokes [`rectOfTickMark(at:)`](./rectoftickmark%28at%29.md) for each tick mark on the slider until it finds a tick mark containing the point.
 

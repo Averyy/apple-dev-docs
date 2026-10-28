@@ -16,11 +16,11 @@ Overridden by subclasses to substitute another object or a copy for itself durin
 - (id) replacementObjectForPortCoder:(NSPortCoder *) coder;
 ```
 
-#### Return Value
+## Return Value
 
 The object encode instead of the receiver (if different).
 
-#### Discussion
+## Discussion
 
 This method is invoked by `NSPortCoder`. `NSObject`’s implementation returns an `NSDistantObject` object for the object returned by [`replacementObject(for:)`](./replacementobject%28for%29-2l8ox.md), enabling all objects to be distributed by proxy as the default. However, if [`replacementObject(for:)`](./replacementobject%28for%29-2l8ox.md) returns `nil`, `NSObject`’s implementation will also return `nil`.
 

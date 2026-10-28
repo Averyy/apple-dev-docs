@@ -26,7 +26,7 @@ func request(_ request: any SNRequest, didProduce result: any SNResult)
 - (void) request:(id<SNRequest>) request didProduceResult:(id<SNResult>) result;
 ```
 
-#### Discussion
+## Discussion
 
 The analyzer calls this function each time a new analysis result is available. Different types of analyses may produce results at different rates, spanning different time ranges.
 

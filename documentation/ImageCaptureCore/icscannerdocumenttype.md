@@ -19,7 +19,7 @@ enum ICScannerDocumentType
 enum ICScannerDocumentType : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 The values correspond to the `ICAP_SUPPORTEDSIZES` as defined in the `TWAIN 1.9` Specification, pages 9–483.
 

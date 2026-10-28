@@ -22,7 +22,7 @@ var activityViewController: UIViewController? { get }
 @property (nonatomic, readonly, nullable) UIViewController * activityViewController;
 ```
 
-#### Discussion
+## Discussion
 
 Subclasses that provide additional UI using a view controller can override this method to return that view controller. If this method returns a valid object, the system presents the returned view controller modally instead of calling the [`perform()`](./perform%28%29.md) method.
 

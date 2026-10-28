@@ -21,7 +21,7 @@ class CLKComplicationTemplateGraphicCircularImage
 @interface CLKComplicationTemplateGraphicCircularImage : CLKComplicationTemplateGraphicCircular
 ```
 
-#### Overview
+## Overview
 
 This template belongs to the [`CLKComplicationFamily.graphicCircular`](./clkcomplicationfamily/graphiccircular.md) family. [Figure 1](./clkcomplicationtemplategraphiccircularimage.md#3030695) shows the layout of the image and where the template might appear on the clock face.
 

@@ -32,7 +32,7 @@ var accountDescription: String! { get set }
 @property (atomic, copy) NSString * accountDescription;
 ```
 
-#### Discussion
+## Discussion
 
 This property is available if the user grants the application access to this account; otherwise it’s `nil`.
 

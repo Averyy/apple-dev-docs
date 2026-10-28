@@ -18,11 +18,11 @@ Returns current value of a clock that increments monotonically in tick units (st
 uint64_t mach_absolute_time();
 ```
 
-#### Return Value
+## Return Value
 
 		Value of mach absolute time clock.
 
-#### Discussion
+## Discussion
 
 Prefer to use the equivalent clock_gettime_nsec_np(CLOCK_UPTIME_RAW) in nanoseconds.
 

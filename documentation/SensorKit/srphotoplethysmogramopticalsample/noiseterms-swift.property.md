@@ -17,7 +17,7 @@ The mathematical terms for computing the noise in this sample.
 var noiseTerms: SRPhotoplethysmogramOpticalSample.NoiseTerms? { get }
 ```
 
-#### Discussion
+## Discussion
 
 If the sensor data is invalid, this property is [`nil`](../../ObjectiveC/nil-227m0.md).
 

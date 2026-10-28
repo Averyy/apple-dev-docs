@@ -25,11 +25,11 @@ func firstMatch(in string: String, options: NSRegularExpression.MatchingOptions 
 - (NSTextCheckingResult *) firstMatchInString:(NSString *) string options:(NSMatchingOptions) options range:(NSRange) range;
 ```
 
-#### Return Value
+## Return Value
 
 An [`NSTextCheckingResult`](../nstextcheckingresult.md) object. This result gives the overall matched range via its [`range`](../nstextcheckingresult/range.md) property, and the range of each individual capture group via its [`range(at:)`](../nstextcheckingresult/range%28at%29.md) method. The range {`NSNotFound`, 0} is returned if one of the capture groups did not participate in this particular match.
 
-#### Discussion
+## Discussion
 
 This is a convenience method that calls [`enumerateMatches(in:options:range:using:)`](./enumeratematches%28in,options,range,using%29.md).
 

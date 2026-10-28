@@ -21,7 +21,7 @@ The number for an item in an ordered list.
 @property (readonly) NSInteger ordinal;
 ```
 
-#### Discussion
+## Discussion
 
 If the intent is not a list, the value of this property is `0`.
 

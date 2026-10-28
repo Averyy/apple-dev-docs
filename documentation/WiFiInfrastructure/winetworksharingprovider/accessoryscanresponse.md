@@ -17,7 +17,7 @@ A scan response from the accessory containing Wi-Fi scan results, if any.
 struct AccessoryScanResponse
 ```
 
-#### Overview
+## Overview
 
 An `AccessoryScanResponse` contains the Wi-Fi networks your accessory discovered during scanning. The system uses these results to enhance the network selection interface, showing signal strength and compatibility information to help people choose the best networks to share.
 

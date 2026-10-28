@@ -19,7 +19,7 @@ optional func customVirtioDeviceWillStop(_ device: VZCustomVirtioDevice)
 - (void) customVirtioDeviceWillStop:(VZCustomVirtioDevice *) device;
 ```
 
-#### Discussion
+## Discussion
 
 A device is in a stopped state when its corresponding [`VZVirtualMachine`](../vzvirtualmachine.md) has stopped. This can happen when the guest performs a shutdown operation itself,  or when you call [`requestStop()`](../vzvirtualmachine/requeststop%28%29.md).
 

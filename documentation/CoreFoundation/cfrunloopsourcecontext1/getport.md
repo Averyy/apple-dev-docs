@@ -25,11 +25,11 @@ var getPort: ((UnsafeMutableRawPointer?) -> mach_port_t)!
 unsigned int (*)(void *) getPort;
 ```
 
-#### Return Value
+## Return Value
 
 The native Mach port for the run loop source.
 
-#### Discussion
+## Discussion
 
 This callback is called whenever the run loop needs a source’s Mach port, which can happen in each iteration of the run loop’s loop. Because of the frequency with which the run loop may call this callback, make the function as efficient as possible.
 

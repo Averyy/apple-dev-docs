@@ -21,7 +21,7 @@ var floorNumber: Int { get }
 @property (nonatomic, assign, readonly) NSInteger floorNumber;
 ```
 
-#### Discussion
+## Discussion
 
 This property indicates the floor that the DL-TDOA anchor is on. Negative values represent floors below ground level.
 

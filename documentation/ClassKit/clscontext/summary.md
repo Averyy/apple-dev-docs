@@ -23,7 +23,7 @@ var summary: String? { get set }
 @property (nonatomic, copy, nullable) NSString * summary;
 ```
 
-#### Discussion
+## Discussion
 
 The Schoolwork app may display this string to help the user understand the kinds of activities the context provides.
 

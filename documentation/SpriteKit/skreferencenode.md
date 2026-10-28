@@ -29,7 +29,7 @@ class SKReferenceNode
 
 - [Using Base Nodes to Lay Out SpriteKit Content](./using-base-nodes-to-lay-out-spritekit-content.md)
 
-#### Overview
+## Overview
 
 `SKReferenceNode` is used within an archived `.sks` file to refer to node defined in another `.sks` file without duplicating its definition. This way, a change to the referenced node propagates to all the references in other files.
 

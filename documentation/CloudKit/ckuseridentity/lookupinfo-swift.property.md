@@ -26,7 +26,7 @@ var lookupInfo: CKUserIdentity.LookupInfo? { get }
 @property (copy, readonly, nullable) CKUserIdentityLookupInfo * lookupInfo;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property’s value to retrieve the user identity when using the [`CKDiscoverUserIdentitiesOperation`](../ckdiscoveruseridentitiesoperation.md) and [`CKFetchShareParticipantsOperation`](../ckfetchshareparticipantsoperation.md) operations.
 

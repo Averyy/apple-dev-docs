@@ -17,7 +17,7 @@ Provides an array of deleted contact item identifiers to the observer.
 func didDelete(_ identifiers: [ContactItem.Identifier])
 ```
 
-#### Discussion
+## Discussion
 
 You can call this method multiple times to fulfill the [`suggestedBatchSize`](./suggestedbatchsize.md).
 

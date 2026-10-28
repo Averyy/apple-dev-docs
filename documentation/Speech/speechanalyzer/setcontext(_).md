@@ -20,7 +20,7 @@ Sets contextual information to improve or inform the analysis.
 final func setContext(_ newContext: AnalysisContext) async throws
 ```
 
-#### Discussion
+## Discussion
 
 Other analyzer instances may use the same context object.
 

@@ -21,7 +21,7 @@ Appends a cubic Bézier curve to a mutable graphics path.
 extern void CGPathAddCurveToPoint(CGMutablePathRef path, const CGAffineTransform *m, CGFloat cp1x, CGFloat cp1y, CGFloat cp2x, CGFloat cp2y, CGFloat x, CGFloat y);
 ```
 
-#### Discussion
+## Discussion
 
 Appends a cubic Bézier curve from the current point in a path to the specified location using two control points, after an optional transformation. Before returning, this function updates the current point to the specified location `(x,y`).
 

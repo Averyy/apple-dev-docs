@@ -19,11 +19,11 @@ init(title: String, image: NSImage, alternateImage: NSImage?, handler block: @es
 - (instancetype) initWithTitle:(NSString *) title image:(NSImage *) image alternateImage:(NSImage *) alternateImage handler:(void (^)()) block;
 ```
 
-#### Return Value
+## Return Value
 
 An instance of the custom sharing object.
 
-#### Discussion
+## Discussion
 
 Custom sharing services can be added to the [`NSSharingServicePicker`](../nssharingservicepicker.md) with the [`sharingServicePicker(_:sharingServicesForItems:proposedSharingServices:)`](../nssharingservicepickerdelegate/sharingservicepicker%28_,sharingservicesforitems,proposedsharingservices%29.md) delegate method.
 

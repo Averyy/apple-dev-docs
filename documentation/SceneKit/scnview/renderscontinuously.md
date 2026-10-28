@@ -25,7 +25,7 @@ var rendersContinuously: Bool { get set }
 @property (nonatomic, assign) BOOL rendersContinuously;
 ```
 
-#### Discussion
+## Discussion
 
 When this value is [`false`](../../Swift/false.md) (the default), the view redraws its contents only when something in its scene graph change or animates. Use this option to maximize energy efficiency.
 

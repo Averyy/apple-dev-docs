@@ -20,7 +20,7 @@ Creates an anchored object query descriptor.
 init(predicates: [HKSamplePredicate<Sample>], anchor: HKQueryAnchor?, limit: Int? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 The system sets the descriptor’s `Output` type based on the `predicates` parameter.
 

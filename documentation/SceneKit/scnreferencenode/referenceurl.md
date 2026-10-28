@@ -25,7 +25,7 @@ var referenceURL: URL { get set }
 @property (nonatomic, copy) NSURL * referenceURL;
 ```
 
-#### Discussion
+## Discussion
 
 When the reference node loads its content (either automatically, according to the [`loadingPolicy`](./loadingpolicy.md) property, or when you call the [`load()`](./load%28%29.md) method), SceneKit loads the referenced scene file. All children of the scene file’s root node become children of the reference node.
 

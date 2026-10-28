@@ -24,7 +24,7 @@ case whiteOutline
 PKPaymentButtonStyleWhiteOutline
 ```
 
-#### Discussion
+## Discussion
 
 Use the white button with black outline on white or very light backgrounds that don’t provide sufficient contrast for a plain white button. Don’t place this button on dark or saturated color backgrounds. Use the white button instead.
 

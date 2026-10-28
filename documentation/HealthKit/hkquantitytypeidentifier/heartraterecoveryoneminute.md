@@ -24,7 +24,7 @@ static let heartRateRecoveryOneMinute: HKQuantityTypeIdentifier
 extern HKQuantityTypeIdentifier const HKQuantityTypeIdentifierHeartRateRecoveryOneMinute;
 ```
 
-#### Discussion
+## Discussion
 
 Heart rate recovery samples use count units (described in [`HKUnit`](../hkunit.md)) and measure discrete values (described in [`HKQuantityAggregationStyle`](../hkquantityaggregationstyle.md)). These samples always record a positive value.
 

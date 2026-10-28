@@ -21,7 +21,7 @@ A 2-bit indexed pixel format.
 case format2Indexed
 ```
 
-#### Discussion
+## Discussion
 
 This pixel format supports color spaces that are either [`CGColorSpaceModel.monochrome`](../../../CoreGraphics/cgcolorspacemodel/monochrome.md) or [`CGColorSpaceModel.indexed`](../../../CoreGraphics/cgcolorspacemodel/indexed.md).
 

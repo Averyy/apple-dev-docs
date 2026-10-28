@@ -20,7 +20,7 @@ The hand gesture shortcut for the primary action.
 static let primaryAction: HandGestureShortcut
 ```
 
-#### Discussion
+## Discussion
 
 On watchOS, this is performed by double-tapping the thumb and index finger together.
 

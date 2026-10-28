@@ -34,7 +34,7 @@ class func setDefault(_ leaderboardIdentifier: String?) async throws
 + (void) setDefaultLeaderboard:(NSString *) leaderboardIdentifier withCompletionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 GameKit uses the default leaderboard whenever your game uses a [`GKScore`](../gkscore.md) object to report a score to Game Center without explicitly setting the score object’s [`category`](../gkscore/category.md) property. You normally set the default leaderboard in App Store Connect. However, your game can use this class method to override the default leaderboard that appears for the local player. Game Center stores this information for each player.
 

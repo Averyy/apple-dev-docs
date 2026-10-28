@@ -18,7 +18,7 @@ Creates a placement that indicates the system should present the window more pro
 + (instancetype) prominentPlacement;
 ```
 
-#### Return Value
+## Return Value
 
 A placement that indicates the system should present the window more prominently than others in the space.
 

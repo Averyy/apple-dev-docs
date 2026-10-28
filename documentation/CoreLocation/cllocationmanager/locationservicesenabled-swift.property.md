@@ -21,13 +21,13 @@ var locationServicesEnabled: Bool { get }
 @property (nonatomic, readonly) BOOL locationServicesEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 In iOS, the user can enable or disable location services using the controls in Settings > Location Services. In macOS, the user can enable or disable location services from the Security & Privacy system preference.
 
 If this property contains the value [`false`](../../Swift/false.md) and you start location updates anyway, the Core Location framework prompts the user with a confirmation alert asking whether location services should be reenabled.
 
-##### Special Considerations
+### Special Considerations
 
 In iOS, this property is declared as `nonatomic`. In macOS, it is declared as `atomic`.
 

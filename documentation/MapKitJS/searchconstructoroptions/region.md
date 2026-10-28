@@ -15,7 +15,7 @@ A map region that provides a hint for the geographic area to search.
 region?: CoordinateRegionData;
 ```
 
-#### Discussion
+## Discussion
 
 This property specifies a region of a map in which to search. In a map application, this is typically the region displayed in the map.
 

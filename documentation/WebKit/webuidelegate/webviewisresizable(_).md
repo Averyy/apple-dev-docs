@@ -19,11 +19,11 @@ optional func webViewIsResizable(_ sender: WebView!) -> Bool
 - (BOOL) webViewIsResizable:(WebView *) sender;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the web view’s window can be resized; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 If you display multiple web views in a window then your user interface delegate should implement this method to handle this special case.
 

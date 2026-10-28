@@ -16,7 +16,7 @@ A constant you use to configure your data provider extension’s capability to f
 static let featureID: String
 ```
 
-#### Overview
+## Overview
 
 This constant’s value is `AccessoryLiveActivities.LiveActivityForwarding`, the string you add to your data provider extension to configure the capability to receive forwarded Live Activities.
 

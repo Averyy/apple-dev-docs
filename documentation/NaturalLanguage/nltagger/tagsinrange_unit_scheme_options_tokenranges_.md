@@ -21,11 +21,11 @@ Finds an array of linguistic tags and token ranges for a given string range and 
 - (NSArray<NSString *> *) tagsInRange:(NSRange) range unit:(NLTokenUnit) unit scheme:(NLTagScheme) scheme options:(NLTaggerOptions) options tokenRanges:(NSArray<NSValue *> **) tokenRanges;
 ```
 
-#### Return Value
+## Return Value
 
 An array of the tags in the requested range.
 
-#### Discussion
+## Discussion
 
 When the returned array contains an entry that doesn’t have a corresponding tag scheme, that entry is an empty string (””).
 

@@ -10,11 +10,11 @@ Initiate drags and handle drops from a collection view.
 - iPadOS 11.0+
 - Mac Catalyst 11.0+
 
-#### Overview
+## Overview
 
 Collection views support drag and drop through a specialized API that works with the items being displayed. To support drags, define a drag delegate object—an object that adopts the [`UICollectionViewDragDelegate`](./uicollectionviewdragdelegate.md) protocol—and assign it to the [`dragDelegate`](./uicollectionview/dragdelegate.md) property of your collection view. To handle drops, define a drop delegate object—an object that adopts the [`UICollectionViewDropDelegate`](./uicollectionviewdropdelegate.md) protocol—and assign it to the [`dropDelegate`](./uicollectionview/dropdelegate.md) property of your collection view.
 
-##### Drag Items from the Collection View
+### Drag Items from the Collection View
 
 The collection view manages most drag-related interactions, but you need to specify which items to drag. When the drag gesture occurs, the collection view creates a drag session and calls the [`collectionView(_:itemsForBeginning:at:)`](./uicollectionviewdragdelegate/collectionview%28_,itemsforbeginning,at%29.md) method of your drag delegate object. If you return a non-empty array from that method, the collection view begins dragging the items that you specify. Return an empty array when you do not allow the user to drag the items from the specified index path.
 
@@ -31,7 +31,7 @@ Use the provided index path to determine which items to drag. If the item is par
 
 For more information about initiating drags, see [`UICollectionViewDragDelegate`](./uicollectionviewdragdelegate.md).
 
-##### Receive Dropped Content
+### Receive Dropped Content
 
 When content is dragged inside its bounds, a collection view consults its drop delegate to determine whether it can receive the dragged data. Initially, the collection view calls only the [`collectionView(_:canHandle:)`](./uicollectionviewdropdelegate/collectionview%28_,canhandle%29.md) method of the drop delegate to determine whether you can incorporate the specified data into your data source. If you can incorporate the data, the collection view begins calling other methods to determine where the data can be dropped.
 

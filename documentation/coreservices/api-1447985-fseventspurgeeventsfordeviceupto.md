@@ -18,11 +18,11 @@ func FSEventsPurgeEventsForDeviceUpToEventId(_ dev: dev_t, _ eventId: FSEventStr
 Boolean FSEventsPurgeEventsForDeviceUpToEventId(dev_t dev, FSEventStreamEventId eventId);
 ```
 
-#### Return Value
+## Return Value
 
 True if it succeeds, otherwise False if it fails.
 
-#### Discussion
+## Discussion
 
 Purges old events from the persistent per-volume database maintained by the service. Can only be called by the root user.
 

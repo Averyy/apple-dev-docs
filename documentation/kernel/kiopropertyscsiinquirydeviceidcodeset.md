@@ -13,7 +13,7 @@
 #define kIOPropertySCSIINQUIRYDeviceIdCodeSet
 ```
 
-#### Discussion
+## Discussion
 
 Code Set type key.
 

@@ -24,7 +24,7 @@ class CNPostalAddressFormatter
 @interface CNPostalAddressFormatter : NSFormatter
 ```
 
-#### Overview
+## Overview
 
 A `CNPostalAddressFormatter` object handles international formatting of postal addresses. It is recommended that you create an instance of this class when formatting many postal addresses, and use the instance methods; otherwise use the class methods.
 

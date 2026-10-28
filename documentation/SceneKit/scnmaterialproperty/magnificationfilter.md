@@ -25,7 +25,7 @@ var magnificationFilter: SCNFilterMode { get set }
 @property (nonatomic) SCNFilterMode magnificationFilter;
 ```
 
-#### Discussion
+## Discussion
 
 Texture filtering determines the appearance of a material property’s contents when portions of the material surface appear larger or smaller than the original texture image. For example, the texture coordinates at a point near the camera may correspond to a small fraction of a pixel in the texture image. SceneKit uses the magnification filter to determine the color of the sampled texel at that point.
 

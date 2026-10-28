@@ -21,7 +21,7 @@ func beginGlanceUpdates()
 - (void) beginGlanceUpdates;
 ```
 
-#### Discussion
+## Discussion
 
 Calling this method is not required when updating your glance. This method is intended for situations where loading your glance content involves asynchronous method calls or other potentially lengthy tasks. Calling it from your [`willActivate()`](./willactivate%28%29.md) method before you start such operations causes WatchKit to continue displaying the glance loading screen until you call the [`endGlanceUpdates()`](./endglanceupdates%28%29.md) method. Even if your glance is not yet onscreen, calling this method gives you extra time to process results received from an asynchronous call.
 

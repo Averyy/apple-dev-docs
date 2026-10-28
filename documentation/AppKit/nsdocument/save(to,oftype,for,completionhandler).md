@@ -23,7 +23,7 @@ func save(to url: URL, ofType typeName: String, for saveOperation: NSDocument.Sa
 - (void) saveToURL:(NSURL *) url ofType:(NSString *) typeName forSaveOperation:(NSSaveOperationType) saveOperation completionHandler:(void (^)(NSError *errorOrNil)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation of this method invokes [`canAsynchronouslyWrite(to:ofType:for:)`](./canasynchronouslywrite%28to,oftype,for%29.md). If writing can’t be done concurrently, it invokes [`writeSafely(to:ofType:for:)`](./writesafely%28to,oftype,for%29.md) on the main thread thread. If writing can be done concurrently, it invokes that method on a different thread, but blocks the main thread until something invokes [`unblockUserInteraction()`](./unblockuserinteraction%28%29.md). Either way, if [`writeSafely(to:ofType:for:)`](./writesafely%28to,oftype,for%29.md) returns [`true`](../../Swift/true.md), it updates the values in the [`fileModificationDate`](./filemodificationdate.md), [`fileType`](./filetype.md), [`fileURL`](./fileurl.md), and [`autosavedContentsFileURL`](./autosavedcontentsfileurl.md) properties and calls the [`updateChangeCount(_:)`](./updatechangecount%28_%29.md) method as appropriate on the main thread. It also updates information that [`save(withDelegate:didSave:contextInfo:)`](./save%28withdelegate,didsave,contextinfo%29.md) uses to check for modification, renaming, moving, deleting, and trashing of open documents, and deletes autosaved contents files when they have become obsolete. You can override this method to do things that need to be done before or after any save operation but be sure to invoke `super`.
 

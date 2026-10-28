@@ -24,7 +24,7 @@ enum AVAudioEnvironmentOutputType
 enum AVAudioEnvironmentOutputType : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 The output type determines the rendering method for any input bus using [`AVAudio3DMixingRenderingAlgorithm.auto`](./avaudio3dmixingrenderingalgorithm/auto.md). To configure the output type, set [`outputType`](./avaudioenvironmentnode/outputtype.md) on [`AVAudioEnvironmentNode`](./avaudioenvironmentnode.md).
 

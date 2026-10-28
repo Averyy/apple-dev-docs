@@ -21,7 +21,7 @@ Construct a model asynchronously from a compiled model asset.
 class func load(contentsOf url: URL, configuration: MLModelConfiguration = MLModelConfiguration()) async throws -> MLModel
 ```
 
-#### Return Value
+## Return Value
 
 The loaded model, if successful; otherwise, `nil`.
 

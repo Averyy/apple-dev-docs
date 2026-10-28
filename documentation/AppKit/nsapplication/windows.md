@@ -19,7 +19,7 @@ var windows: [NSWindow] { get }
 @property (copy, readonly) NSArray<NSWindow *> * windows;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains an array of [`NSWindow`](../nswindow.md) objects corresponding to all currently existing windows for the app. The array includes all onscreen and offscreen windows, whether or not they are visible on any space. There is no guarantee of the order of the windows in the array.
 

@@ -5,7 +5,7 @@
 
 Build a version of your iPadOS or iOS app using the visionOS SDK, and update your code for platform differences.
 
-#### Overview
+## Overview
 
 If you have an existing app that runs in iPadOS or iOS, you can build that app against the visionOS SDK to run it on the platform. Apps built specifically for visionOS adopt the standard system appearance, and they look more natural on the platform. Updating your app is also an opportunity to add elements that work well on the platform, such as 3D content and immersive experiences.
 
@@ -13,7 +13,7 @@ In most cases, all you need to do to support visionOS is update your Xcode proje
 
 > **Note**: If you use ARKit in your iOS app to create an augmented reality experience, you need to make additional changes to support ARKit in visionOS. For information on how to update this type of app, see [Bringing your ARKit app to visionOS](./bringing-your-arkit-app-to-visionos.md).
 
-##### Create a visionOS-specific version of your app
+### Create a visionOS-specific version of your app
 
 To update your app to build specifically for the visionOS SDK:
 
@@ -27,7 +27,7 @@ When you add Apple Vision as a destination, Xcode makes some one-time changes to
 
 For more information about how to update a target’s configuration, see [Customizing the build phases of a target](../Xcode/customizing-the-build-phases-of-a-target.md).
 
-##### Update your code for features that are unavailable in visionOS
+### Update your code for features that are unavailable in visionOS
 
 The first step to updating your existing app to run in visionOS is to stop using deprecated frameworks and to check for frameworks with behavioral changes in visionOS.
 
@@ -64,7 +64,7 @@ When you can’t isolate the code to separate source files, use conditional stat
 
 For additional information about how to isolate code to the iOS version of your app, see [Running code on a specific platform or OS version](../Xcode/running-code-on-a-specific-version.md).
 
-##### Update your interface to take advantage of visionOS features
+### Update your interface to take advantage of visionOS features
 
 After your existing code runs correctly in visionOS, look for ways to improve the experience you offer on the platform. In visionOS, you can display content using more than just windows. Think about ways to incorporate the following elements into your interface:
 
@@ -79,7 +79,7 @@ Additional information on how to design your layout for visionOS is available on
 
 > **Note**: If you use ARKit in your iOS app to create an augmented reality experience, you need to make additional changes to support ARKit in visionOS. For information on how to update this type of app, see [Bringing your ARKit app to visionOS](./bringing-your-arkit-app-to-visionos.md).
 
-##### Consider your implementation
+### Consider your implementation
 
 If your existing app is built with UIKit, consider your implementation plan for visionOS. Although you can still use UIKit and load iOS storyboards into your app, you can’t include visionOS-specific or 3D content without using SwiftUI.
 
@@ -89,7 +89,7 @@ If you plan to continue using UIKit, read [Create adaptive layouts in UIKit](./b
 
 For a tutorial on mixing SwiftUI and UIKit content, see [Interfacing with UIKit](https://developer.apple.com/tutorials/swiftui/interfacing-with-uikit).
 
-##### Create adaptive layouts in UIKit
+### Create adaptive layouts in UIKit
 
 Although visionOS is built for SwiftUI adoption, you can continue to use and build out your UIKit codebase as well. If your UIKit app uses hardcoded values or relies on [`UIScreen`](../UIKit/uiscreen.md) for layout, the first step to migrating your app to visionOS is to start using an adaptable layout. When you make decisions using device details, your app might produce inconsistent or erroneous results on an unknown device type, or it might fail altogether. Find solutions that rely on environmental information, rather than the device type. For example, SwiftUI and UIKit start layout using the app’s window size, which isn’t necessarily the same size as the device’s display.
 
@@ -102,7 +102,7 @@ Think about ways to create adaptive layouts using the following techniques:
 - **Respect the safe area.** Place views so they’re not obstructed by other content. Each view has a [layout guide](../UIKit/uilayoutguide.md) that helps you create constraints to position your views within the safe area. Read [Positioning content relative to the safe area](../UIKit/positioning-content-relative-to-the-safe-area.md) for guidance.
 - **Adapt based on changes in UITraitCollection.** Write code to adjust your app’s layout according to changes in the iOS interface elements, such as size class, display scale, and layout direction. Read [UITraitCollection](../UIKit/uitraitcollection.md) for more information.
 
-##### Update your app’s assets
+### Update your app’s assets
 
 Add vector-based or high-resolution images to your project specifically to support visionOS. In visionOS, people can view your app’s content at different angles and different distances, so image pixels rarely line up with screen pixels. Vector-based images work best because they maintain their detail and crispness at any size. For bitmap-based images, use high-resolution images (`@2x` or better) to ensure they retain detail at different sizes.
 

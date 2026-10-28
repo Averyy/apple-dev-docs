@@ -20,11 +20,11 @@ nonisolated
 func searchFocused(_ binding: FocusState<Bool>.Binding) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 The modified view.
 
-#### Discussion
+## Discussion
 
 To control focus by matching a non-boolean value, use the [`searchFocused(_:equals:)`](./searchfocused%28_,equals%29.md) modifier instead.
 

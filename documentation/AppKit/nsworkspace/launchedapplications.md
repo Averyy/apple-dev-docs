@@ -17,7 +17,7 @@ Returns an array of dictionaries, one entry for each running app.
 - (NSArray *) launchedApplications;
 ```
 
-#### Return Value
+## Return Value
 
 An array of `NSDictionary` objects. Each dictionary contains as many of the keys described in [Deprecated symbols](../deprecated-symbols.md) as are available.
 

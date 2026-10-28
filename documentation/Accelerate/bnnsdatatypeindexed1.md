@@ -23,7 +23,7 @@ var BNNSDataTypeIndexed1: BNNSDataType { get }
 BNNSDataTypeIndexed1
 ```
 
-#### Discussion
+## Discussion
 
 Storage data type
 

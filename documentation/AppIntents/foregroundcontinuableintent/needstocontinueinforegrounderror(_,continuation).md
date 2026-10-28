@@ -23,7 +23,7 @@ A method you call to ask a person to continue an intent’s action in the foregr
 func needsToContinueInForegroundError(_ dialog: IntentDialog? = nil, continuation: (@MainActor () async throws -> Void)? = nil) -> AppIntentError
 ```
 
-#### Discussion
+## Discussion
 
 Call this method when you need to stop performing the app intent and ask a person to continue execution in the foreground. Provide an optional continuation closure that runs on the main thread to update your app’s state after the person permits the action to continue in the foreground.
 

@@ -24,7 +24,7 @@ let HKMetadataKeyLowCardioFitnessEventThreshold: String
 extern NSString * const HKMetadataKeyLowCardioFitnessEventThreshold;
 ```
 
-#### Discussion
+## Discussion
 
 The system sets this key on [`lowCardioFitnessEvent`](./hkcategorytypeidentifier/lowcardiofitnessevent.md) samples. It contains the threshold value for the user’s VO2 max measurements. The threshold value varies depending on certain parameters and physical characteristics, such as the user’s age.
 

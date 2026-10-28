@@ -23,7 +23,7 @@ var isFinishing: Bool { get }
 @property (nonatomic, readonly, getter=isFinishing) BOOL finishing;
 ```
 
-#### Discussion
+## Discussion
 
 By default, the value of this property is `false`.
 

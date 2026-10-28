@@ -20,11 +20,11 @@ optional func tableView(_ tableView: NSTableView, rowActionsForRow row: Int, edg
 - (NSArray<NSTableViewRowAction *> *) tableView:(NSTableView *) tableView rowActionsForRow:(NSInteger) row edge:(NSTableRowActionEdge) edge;
 ```
 
-#### Return Value
+## Return Value
 
 An array of row actions (of class [`NSTableViewRowAction`](../nstableviewrowaction.md)) to be enabled on the specified edge of the table row.
 
-#### Discussion
+## Discussion
 
 Implement this method if your table row supports actions that are displayed when the user swipes horizontally across the row. For example, your table view could use this method to implement a swipe left to delete function in your table rows. When called, this method receives the table view, the index of the row the user swiped, and an edge of type `NSTableRowActionEdge`. The method should return an array of any row actions of class [`NSTableViewRowAction`](../nstableviewrowaction.md) that are supported for the specified edge. If no row actions are available, an empty array should be returned.
 

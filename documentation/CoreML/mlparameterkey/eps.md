@@ -25,7 +25,7 @@ class var eps: MLParameterKey { get }
 @property (class, nonatomic, readonly) MLParameterKey * eps;
 ```
 
-#### Discussion
+## Discussion
 
 The value type for the [`eps`](./eps.md) key is a [`Double`](../../Swift/double.md).
 

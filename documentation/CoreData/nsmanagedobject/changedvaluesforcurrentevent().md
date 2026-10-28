@@ -25,11 +25,11 @@ func changedValuesForCurrentEvent() -> [String : Any]
 - (NSDictionary<NSString *,id> *) changedValuesForCurrentEvent;
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary with keys that are the names of persistent properties with changes since the last posting of [`NSManagedObjectContextObjectsDidChange`](../../Foundation/nsnotification/name-swift.struct/nsmanagedobjectcontextobjectsdidchange.md), and with the new values for those properties.
 
-#### Discussion
+## Discussion
 
 This method only reports changes to properties that are persistent properties of the receiver, not changes to transient properties or custom instance variables.
 

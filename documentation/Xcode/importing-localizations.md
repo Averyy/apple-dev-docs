@@ -5,11 +5,11 @@
 
 Import the files that you translate or adapt for a language and region into your project.
 
-#### Overview
+## Overview
 
 After you localize the contents of a catalog, import the localizations back into your project. When you import localizations, Xcode updates the strings files in your project from the localized versions in the XLIFF file in the catalog.
 
-##### Import localizations using Xcode
+### Import localizations using Xcode
 
 In the Project navigator, select the project, then choose Product > Import Localizations. In the import dialog that appears, select the Xcode Localization Catalog folder, and click Import. Xcode ingests the files and warns you if there are untranslated files.
 
@@ -19,7 +19,7 @@ In the sheet that appears, review the warnings and errors. In the left column, c
 
 To review all the changes, click the File View button in the toolbar, and select a file in the navigator below. When you’re ready to import the files, click Import. Xcode updates the strings and `.stringsdict` files from the localized versions in the catalog. Xcode also updates any localizable resources and assets in an asset catalog.
 
-##### Import localizations using commands
+### Import localizations using commands
 
 You can also import the catalog with the `xcodebuild` command using the `-importLocalizations` argument:
 

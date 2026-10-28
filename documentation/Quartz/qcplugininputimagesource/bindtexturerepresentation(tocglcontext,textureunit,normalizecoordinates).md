@@ -22,7 +22,7 @@ func bindTextureRepresentation(toCGLContext cgl_ctx: CGLContextObj!, textureUnit
 - (void) bindTextureRepresentationToCGLContext:(CGLContextObj) cgl_ctx textureUnit:(GLenum) unit normalizeCoordinates:(BOOL) flag;
 ```
 
-#### Discussion
+## Discussion
 
 When you no longer need the texture, call [`unbindTextureRepresentation(fromCGLContext:textureUnit:)`](./unbindtexturerepresentation%28fromcglcontext,textureunit%29.md).
 

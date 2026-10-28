@@ -26,7 +26,7 @@ var predicate: NSPredicate { get }
 @property (copy, readonly) NSPredicate * predicate;
 ```
 
-#### Discussion
+## Discussion
 
 A query-based subscription uses its search predicate to identify potential matches for records. It combines the predicate information with the value in the [`querySubscriptionOptions`](./querysubscriptionoptions.md) property to determine when to send a push notification to the app.
 

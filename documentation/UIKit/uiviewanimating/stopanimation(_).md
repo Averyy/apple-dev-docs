@@ -24,7 +24,7 @@ func stopAnimation(_ withoutFinishing: Bool)
 - (void) stopAnimation:(BOOL) withoutFinishing;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method when you want to end the animations at their current position. This method removes all of the associated animations from the execution stack and sets the values of any animatable properties to their current values. This method also updates the state of the animator object based on the value of the `withoutFinishing` parameter.
 

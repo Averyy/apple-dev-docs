@@ -24,7 +24,7 @@ let HKMetadataKeyAverageMETs: String
 extern NSString * const HKMetadataKeyAverageMETs;
 ```
 
-#### Discussion
+## Discussion
 
 Set this key on a workout. Set its value to an [`HKQuantity`](./hkquantity.md) object with a METs unit (for example, kcal/(kg*hr)). For more information on creating complex units, see [`HKUnit`](./hkunit.md).
 

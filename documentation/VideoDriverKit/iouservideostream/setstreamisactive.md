@@ -15,7 +15,7 @@ Sets whether that the stream is active and doing IO.
 kern_return_t SetStreamIsActive(bool in_is_active);
 ```
 
-#### Discussion
+## Discussion
 
 Changing the stream active state will send a notification to the host to update the object state if successful. The object’s work queue synchronizes access to the stream active state.
 

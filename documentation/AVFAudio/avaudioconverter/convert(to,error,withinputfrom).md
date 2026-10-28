@@ -25,11 +25,11 @@ func convert(to outputBuffer: AVAudioBuffer, error outError: NSErrorPointer, wit
 - (AVAudioConverterOutputStatus) convertToBuffer:(AVAudioBuffer *) outputBuffer error:(NSError **) outError withInputFromBlock:(AVAudioConverterInputBlock) inputBlock;
 ```
 
-#### Return Value
+## Return Value
 
 An [`AVAudioConverterOutputStatus`](../avaudioconverteroutputstatus.md) type that indicates the conversion status.
 
-#### Discussion
+## Discussion
 
 The method attempts to fill the buffer to its capacity. On return, the buffer’s length indicates the number of sample frames the framework successfully converts.
 

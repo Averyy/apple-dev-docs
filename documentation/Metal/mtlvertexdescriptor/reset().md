@@ -24,7 +24,7 @@ func reset()
 - (void) reset;
 ```
 
-#### Discussion
+## Discussion
 
 After reset, each element of the [`attributes`](./attributes.md) array has a default vertex attribute descriptor, and each element of the [`layouts`](./layouts.md) array has a default vertex buffer layout descriptor.
 

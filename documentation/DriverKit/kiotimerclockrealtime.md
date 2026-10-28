@@ -18,7 +18,7 @@ The system’s real time, expressed as the amount of time since the Epoch.
 kIOTimerClockRealTime
 ```
 
-#### Discussion
+## Discussion
 
 This constant is the type of clock obtained by passing `CLOCK_REALTIME` to `clock_gettime_nsec_np(_:)`. It’s equivalent to a value from `gettimeofday(_:_:)`, but in nanoseconds.
 

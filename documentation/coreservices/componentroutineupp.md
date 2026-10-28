@@ -14,7 +14,7 @@
 typedef ComponentRoutineProcPtr ComponentRoutineUPP;
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see the description of the ComponentRoutineUPP callback function.
 

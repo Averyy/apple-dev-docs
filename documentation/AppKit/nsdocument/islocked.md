@@ -19,7 +19,7 @@ var isLocked: Bool { get }
 @property (readonly, getter=isLocked) BOOL locked;
 ```
 
-#### Discussion
+## Discussion
 
 This property may contain the value [`true`](../../Swift/true.md) because the user lacks the appropriate write permissions, the “user immutable” flag was raised, the parent directory or volume is read only, or the [`checkAutosavingSafety()`](./checkautosavingsafety%28%29.md) method returned [`false`](../../Swift/false.md). Do not override this property.
 

@@ -25,7 +25,7 @@ var metadata: [MLModelMetadataKey : Any] { get }
 @property (nonatomic, readonly) NSDictionary<NSString *,id> * metadata;
 ```
 
-#### Discussion
+## Discussion
 
 Use the keys defined by [`MLModelMetadataKey`](../mlmodelmetadatakey.md) to retrieve the dictionary’s entries.
 

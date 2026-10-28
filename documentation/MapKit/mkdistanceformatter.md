@@ -25,7 +25,7 @@ class MKDistanceFormatter
 @interface MKDistanceFormatter : NSFormatter
 ```
 
-#### Overview
+## Overview
 
 Use a distance formatter to display distances to the user or to parse user-specified text to obtain a numerical value for a distance. When formatting strings containing distances, a distance formatter object takes into account the user’s locale and language settings. You can also specify a custom locale or custom units for any distances that you format.
 

@@ -21,7 +21,7 @@ The system was unable to delete the [`INInteraction`](../ininteraction.md) objec
 static var deletingInteractionWithGroupIdentifier: INIntentError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 To determine the low-level cause of the problem, check the value of [`NSUnderlyingErrorKey`](../../Foundation/nsunderlyingerrorkey.md) in the error object’s [`userInfo`](../../Foundation/nserror/userinfo.md) dictionary.
 

@@ -21,11 +21,11 @@ Returns a Boolean value that indicates whether the current intent is equivalent 
 - (BOOL) isEquivalentToPresentationIntent:(NSPresentationIntent *) other;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the current intent is equivalent to the specified intent, or [`false`](../../Swift/false.md) if it isn’t.
 
-#### Discussion
+## Discussion
 
 Two intents are equivalent if their attributes match. This method doesn’t consider the [`identity`](./identity.md) property of the intents when determining their equivalence.
 

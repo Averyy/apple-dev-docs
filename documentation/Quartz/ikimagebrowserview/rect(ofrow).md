@@ -19,7 +19,7 @@ func rect(ofRow rowIndex: Int) -> NSRect
 - (NSRect) rectOfRow:(NSUInteger) rowIndex;
 ```
 
-#### Return Value
+## Return Value
 
 A rectangle containing the column. Specified in the view’s coordinate system.
 

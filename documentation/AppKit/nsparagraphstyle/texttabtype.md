@@ -21,7 +21,7 @@ enum TextTabType
 enum NSTextTabType : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 The following mappings define the conversions between text alignment in [`NSTextTab`](../nstexttab.md) and tab stop types that [`NSTextTab`](../nstexttab.md) defines:
 

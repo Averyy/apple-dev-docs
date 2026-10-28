@@ -19,11 +19,11 @@ The declaration to configure Safari settings.
 object SafariSettings
 ```
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.configuration.safari.settings` as the declaration type.
 
-##### Privacy permission defaults
+### Privacy permission defaults
 
 Privacy permission defaults allow an organization to suggest a set of privacy permissions for use on a website. When set, Safari displays a consent prompt listing all the configured defaults. If the user accepts, the system applies those defaults for the website. If the user declines, no defaults are set and Safari prompts the user in the normal way when the website requires permission.
 
@@ -34,7 +34,7 @@ The consent prompt only shows permissions that the user hasn’t previously seen
 
 The user can change the website privacy permission settings in Safari settings if they choose.
 
-##### Configuration availability
+### Configuration availability
 
 |  |  |
 | --- | --- |
@@ -46,9 +46,9 @@ The user can change the website privacy permission settings in Safari settings i
 | Allowed in user scope | macOS, Shared iPad |
 | Apply | Multiple configurations are combined and applied as a single effective configuration |
 
-##### Configuration examples
+### Configuration examples
 
-###### Settings and restrictions examples
+#### Settings and restrictions examples
 
 **Start page**:
 
@@ -89,7 +89,7 @@ This configuration restricts several Safari features.
 }
 ```
 
-###### Website privacy examples
+#### Website privacy examples
 
 **One website**:
 

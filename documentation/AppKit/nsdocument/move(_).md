@@ -20,7 +20,7 @@ func move(_ sender: Any?)
 - (void) moveDocument:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 This is the action method of the Move To… menu item in a document-based app. By default, this method invokes the [`move(completionHandler:)`](./move%28completionhandler%29.md) method, passing `nil` as a parameter value.
 

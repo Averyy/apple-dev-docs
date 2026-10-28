@@ -10,7 +10,7 @@ framework: "mlx-swift/MLX"
 
 Free functions in MLX.
 
-#### Overview
+## Overview
 
 MLX has a wide variety of free functions, categorized below.  [`MLXArray`](./mlxarray.md) has some identical operations as methods for convenience.
 

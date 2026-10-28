@@ -18,7 +18,7 @@ A Boolean value that indicates whether an app requires someone to provide a phon
 - **Name**: `com.apple.developer.authentication-services.account-creation-requires-phone-number`
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 When your app calls [`createPlatformPublicKeyCredentialRegistrationRequest(acceptedContactIdentifiers:shouldRequestName:relyingPartyIdentifier:challenge:userID:)`](../../AuthenticationServices/asauthorizationaccountcreationprovider/createplatformpublickeycredentialregistrationrequest%28acceptedcontactidentifiers,shouldrequestname,relyingpartyidentifier,challenge,userid%29.md) to start the account-creation flow, the `acceptedContactIdentifiers` array can contain [`ASContactIdentifierRequest.email`](../../AuthenticationServices/ascontactidentifierrequest/email.md), [`ASContactIdentifierRequest.phoneNumber`](../../AuthenticationServices/ascontactidentifierrequest/phonenumber.md), or both. If the array only contains `phoneNumber`, then you must include the  `com.apple.developer.authentication-services.account-creation-requires-phone-number` entitlement in your app in Xcode, which states your app always requires a person’s phone number to create an account, with or without the use of the Account Creation API.
 

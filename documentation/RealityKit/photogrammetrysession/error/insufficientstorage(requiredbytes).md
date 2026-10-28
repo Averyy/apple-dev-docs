@@ -18,7 +18,7 @@ An error that indicates insufficient storage space.
 case insufficientStorage(requiredBytes: Int64)
 ```
 
-#### Discussion
+## Discussion
 
 This error occurs when there is not enough available storage, and the system estimates that it needs `requiredBytes` of storage.
 

@@ -9,9 +9,9 @@ List all the alternative distribution domains for your account.
 **Availability**:
 - App Store Connect API 3.4.1+
 
-#### Discussion
+## Discussion
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

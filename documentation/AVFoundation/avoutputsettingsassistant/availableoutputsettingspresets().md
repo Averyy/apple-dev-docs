@@ -24,7 +24,7 @@ class func availableOutputSettingsPresets() -> [AVOutputSettingsPreset]
 + (NSArray<NSString *> *) availableOutputSettingsPresets;
 ```
 
-#### Return Value
+## Return Value
 
 An array of available output settings presets.
 

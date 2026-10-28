@@ -21,7 +21,7 @@ var title: String? { get set }
 @property (nonatomic, copy, nullable) NSString * title;
 ```
 
-#### Discussion
+## Discussion
 
 Setting this property has an effect only when the button type is [`CPBarButton.Type.text`](./type/text.md).
 

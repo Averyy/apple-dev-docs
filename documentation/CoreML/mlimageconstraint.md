@@ -25,7 +25,7 @@ class MLImageConstraint
 @interface MLImageConstraint : NSObject
 ```
 
-#### Overview
+## Overview
 
 In CoreML, an *image* is a collection of pixels represented by [CVPixelBuffer](../CoreVideo/cvpixelbuffer-q2e.md) (Swift) or [`CVPixelBuffer`](../CoreVideo/cvpixelbuffer.md) (Objective-C). An *image feature* is a model input or output that accepts or produces, respectively, an image bundled in an [`MLFeatureValue`](./mlfeaturevalue.md). `MLImageConstraint` defines the image feature’s limitations for the images within an `MLFeatureValue`.
 

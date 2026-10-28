@@ -21,7 +21,7 @@ Creates a demand for the given maximum number of elements.
 static func max(_ value: Int) -> Subscribers.Demand
 ```
 
-#### Discussion
+## Discussion
 
 The publisher is free to send fewer than the requested maximum number of elements.
 

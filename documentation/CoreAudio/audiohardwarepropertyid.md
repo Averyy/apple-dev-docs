@@ -18,7 +18,7 @@ typealias AudioHardwarePropertyID = AudioObjectPropertySelector
 typedef AudioObjectPropertySelector AudioHardwarePropertyID;
 ```
 
-#### Discussion
+## Discussion
 
 An AudioHardwarePropertyID is a integer that identifies a specific piece of information about the AudioSystemObject.
 

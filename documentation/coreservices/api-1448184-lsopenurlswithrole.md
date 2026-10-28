@@ -19,17 +19,17 @@ func LSOpenURLsWithRole(_ inURLs: CFArray!, _ inRole: LSRolesMask, _ inAEParam: 
 OSStatus LSOpenURLsWithRole(CFArrayRef inURLs, LSRolesMask inRole, const AEKeyDesc *inAEParam, const LSApplicationParameters *inAppParams, ProcessSerialNumber *outPSNs, CFIndex inMaxPSNCount);
 ```
 
-#### Return Value
+## Return Value
 
 A result code; see [Result Codes](./launch_services.md#1661359).
 
-#### Discussion
+## Discussion
 
 This function opens the URLs specified by `inURLs` with the roles specified by `inRole`.
 
 Each launched application receives one or more `'GURL'` Apple Events specifying the URLs to be opened. You can also pass file URLs, which are interpreted as file system items and opened in the manner of [`LSOpenItemsWithRole(_:_:_:_:_:_:_:)`](./api-1449783-lsopenitemswithrole.md) (that is, a handler is selected based on the item’s filesystem metadata).If `inURLs` contains any application URLs, this function launches them only if the `kLSRolesShell` bit is set in the `inRoles` parameter, in which case the application is its own shell.If not `NULL`, the `outPSNs` buffer is filled with the process serial numbers that were used to open each URL at the same index of the input URL array specified by the `inURLs` parameter. The PSN capacity of the output buffer is specified by `inMaxPSNCount`.
 
-##### Version-Notes
+### Version-Notes
 
 Thread-safe since OS X v10.4.
 

@@ -25,11 +25,11 @@ init?(capacity: Int)
 - (instancetype) initWithCapacity:(NSUInteger) capacity;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized `NSMutableData` object capable of holding `capacity` bytes. The returned object has the same memory alignment guarantees as `malloc(_:)`.
 
-#### Discussion
+## Discussion
 
 This method doesn’t necessarily allocate the requested memory right away. Mutable data objects allocate additional memory as needed, so `capacity` simply establishes the object’s initial capacity. When it does allocate the initial memory, though, it allocates the specified amount. This method sets the length of the data object to `0`.
 

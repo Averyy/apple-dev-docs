@@ -19,7 +19,7 @@ Advances the particle simulation by multiple steps in a single operation.
 mutating func fastForward(stepCount: Int, stepDeltaTime: Float)
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: The simulation will be advanced by a total time of `stepCount * stepDeltaTime` seconds.
 

@@ -23,7 +23,7 @@ func didAddSubview(_ subview: UIView)
 - (void) didAddSubview:(UIView *) subview;
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation of this method does nothing. Subclasses can override it to perform additional actions when subviews are added. This method is called in response to adding a subview using any of the relevant view methods.
 

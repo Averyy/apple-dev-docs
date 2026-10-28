@@ -26,7 +26,7 @@ UITabBarControllerModeTabSidebar
 
 - [Elevating your iPad app with a tab bar and sidebar](../../elevating-your-ipad-app-with-a-tab-bar-and-sidebar.md)
 
-#### Discussion
+## Discussion
 
 Different platforms handle the mode differently:
 

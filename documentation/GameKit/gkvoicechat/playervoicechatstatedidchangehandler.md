@@ -38,7 +38,7 @@ var playerVoiceChatStateDidChangeHandler: (GKPlayer, GKVoiceChat.PlayerState) ->
 
 - [Adding voice chat to multiplayer games](../adding-voice-chat-to-multiplayer-games.md)
 
-#### Discussion
+## Discussion
 
 Set this property to update your interface when the state of any player in the chat changes, including the local player. For example, update the names or avatars when the players are connecting, speaking, or disconnecting.
 

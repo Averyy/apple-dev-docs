@@ -15,11 +15,11 @@ Flushes the processor cache for mapped memory.
 IOReturn IOFlushProcessorCache(task_t task, IOVirtualAddress address, IOByteCount length);
 ```
 
-#### Return Value
+## Return Value
 
 An IOReturn code.
 
-#### Discussion
+## Discussion
 
 This function flushes the processor cache of an already mapped memory range. Note in most cases it is preferable to use IOMemoryDescriptor::prepare and complete to manage cache coherency since they are aware of the architecture's requirements. Flushing the processor cache is not required for coherency in most situations.
 

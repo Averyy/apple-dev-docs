@@ -25,7 +25,7 @@ func CFCalendarCopyTimeZone(_ calendar: CFCalendar!) -> CFTimeZone!
 extern CFTimeZoneRefCFCalendarCopyTimeZone(CFCalendarRef calendar);
 ```
 
-#### Return Value
+## Return Value
 
 A copy of the time zone object for the specified calendar. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 

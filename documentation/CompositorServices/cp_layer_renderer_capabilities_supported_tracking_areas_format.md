@@ -16,11 +16,11 @@ Returns the tracking areas format at the specified index in the layer capabiliti
 MTLPixelFormat cp_layer_renderer_capabilities_supported_tracking_areas_format(cp_layer_renderer_capabilities_t layer_capabilities, size_t index);
 ```
 
-#### Return Value
+## Return Value
 
 The pixel format at the specified index.
 
-#### Discussion
+## Discussion
 
 Use this function to determine what tracking areas texture formats the layer supports.
 

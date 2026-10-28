@@ -24,7 +24,7 @@ static let outputPremultiplied: CIContextOption
 extern CIContextOption const kCIContextOutputPremultiplied;
 ```
 
-#### Discussion
+## Discussion
 
 This option only affects how a context is rendered when using methods where the destination’s alpha mode cannot be determined such as:
 

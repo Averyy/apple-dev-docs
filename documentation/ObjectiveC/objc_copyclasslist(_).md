@@ -25,7 +25,7 @@ func objc_copyClassList(_ outCount: UnsafeMutablePointer<UInt32>?) -> Autoreleas
 extern Class*objc_copyClassList(unsigned int *outCount);
 ```
 
-#### Return Value
+## Return Value
 
 A `nil` terminated array of classes. You must free the array with `free()`.
 

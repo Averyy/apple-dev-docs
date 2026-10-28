@@ -22,7 +22,7 @@ Assigns positions to each of the layout’s subviews.
 func placeSubviews(in bounds: CGRect, proposal: ProposedViewSize, subviews: Self.Subviews, cache: inout Self.Cache)
 ```
 
-#### Discussion
+## Discussion
 
 SwiftUI calls your implementation of this method to tell your custom layout container to place its subviews. From this method, call the [`place(at:anchor:proposal:)`](../layoutsubview/place%28at,anchor,proposal%29.md) method on each element in `subviews` to tell the subviews where to appear in the user interface.
 

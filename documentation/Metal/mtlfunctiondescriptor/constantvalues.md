@@ -25,7 +25,7 @@ var constantValues: MTLFunctionConstantValues? { get set }
 @property (nonatomic, copy, nullable) MTLFunctionConstantValues * constantValues;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `nil`. If you are creating a function object for a specialized function, you need to provide an array of valid constant values for all required function constants.
 

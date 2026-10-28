@@ -27,7 +27,7 @@ optional func goForward(for context: WKWebExtensionContext) async throws
 - (void) goForwardForWebExtensionContext:(WKWebExtensionContext *) context completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Navigates to the next page in the tab’s web view via [`goForward()`](../wkwebview/goforward%28%29.md) if not implemented.
 

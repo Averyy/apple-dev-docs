@@ -24,11 +24,11 @@ func applyingExifOrientation(_ exifOrientation: CGImagePropertyOrientation) -> S
 - (instancetype) depthDataByApplyingExifOrientation:(CGImagePropertyOrientation) exifOrientation;
 ```
 
-#### Return Value
+## Return Value
 
 A new, transformed depth data object.
 
-#### Discussion
+## Discussion
 
 When applying simple 90-degree rotation or mirroring edits to media containing depth data, you may use this method to create a derivative copy of the depth in which the specified orientation is applied to both the underlying pixel map data and the camera calibration data. This method throws an exception if you pass an unrecognized `exifOrientation` value.
 

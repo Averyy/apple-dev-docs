@@ -13,7 +13,7 @@
 #define kIOPropertyPhysicalInterconnectTypeSCSIParallel
 ```
 
-#### Discussion
+## Discussion
 
 This key defines the value of SCSI Parallel Interface for the key kIOPropertyPhysicalInterconnectTypeKey. If the device is connected to a SCSI Parallel port, this key should be set.
 

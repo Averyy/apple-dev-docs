@@ -17,7 +17,7 @@ nonisolated
 func locationHeadingAnchor(manager: CLLocationManager, isEnabled: Bool = true) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 ```swift
 @State private var locationManager = CLLocationManager()

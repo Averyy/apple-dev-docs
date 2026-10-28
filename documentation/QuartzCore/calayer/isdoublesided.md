@@ -24,7 +24,7 @@ var isDoubleSided: Bool { get set }
 @property (getter=isDoubleSided) BOOL doubleSided;
 ```
 
-#### Discussion
+## Discussion
 
 When the value in this property is [`false`](../../Swift/false.md), the layer hides its content when it faces away from the viewer. The default value of this property is [`true`](../../Swift/true.md).
 

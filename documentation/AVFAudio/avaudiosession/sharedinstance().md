@@ -24,7 +24,7 @@ class func sharedInstance() -> AVAudioSession
 + (AVAudioSession *) sharedInstance;
 ```
 
-#### Return Value
+## Return Value
 
 The shared audio session.
 

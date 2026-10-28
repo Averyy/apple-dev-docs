@@ -5,7 +5,7 @@
 
 An informal protocol that objects adopt to be notified of changes to the specified properties of other objects.
 
-#### Overview
+## Overview
 
 You can observe any object properties including simple attributes, to-one relationships, and to-many relationships. Observers of to-many relationships are informed of the type of change made — as well as which objects are involved in the change.
 

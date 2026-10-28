@@ -25,11 +25,11 @@ func vImageCVImageFormat_SetColorSpace(_ format: vImageCVImageFormat, _ colorspa
 vImage_Error vImageCVImageFormat_SetColorSpace(vImageCVImageFormatRef format, CGColorSpaceRef colorspace);
 ```
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
-#### Discussion
+## Discussion
 
 For RGB, indexed, and grayscale images, the color space of a Core Video image format describes the image encoding.
 

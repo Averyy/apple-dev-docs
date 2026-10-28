@@ -21,7 +21,7 @@ Add a completion to the recording.
 mutating func receive(completion: Subscribers.Completion<Failure>)
 ```
 
-#### Discussion
+## Discussion
 
 A `fatalError` will be raised if more than one completion is added.
 

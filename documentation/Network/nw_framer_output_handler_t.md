@@ -25,7 +25,7 @@ typealias nw_framer_output_handler_t = (nw_framer_t, nw_framer_message_t, Int, B
 typedef void (^)(NSObject<OS_nw_framer> *, NSObject<OS_nw_protocol_metadata> *, unsigned long, _Bool) nw_framer_output_handler_t;
 ```
 
-#### Discussion
+## Discussion
 
 The output handler is your opportunity to encapsulate or encode a signle application message. You should write any output using [`nw_framer_write_output(_:_:_:)`](./nw_framer_write_output%28_,_,_%29.md), [`nw_framer_write_output_data(_:_:)`](./nw_framer_write_output_data%28_,_%29.md), or [`nw_framer_write_output_no_copy(_:_:)`](./nw_framer_write_output_no_copy%28_,_%29.md) before returning from the output handler. If you do not write a message, the application message will be discarded.
 

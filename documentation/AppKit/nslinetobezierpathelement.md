@@ -17,7 +17,7 @@ Creates a straight line from the current drawing point to the specified point.
 static const NSBezierPathElement NSLineToBezierPathElement;
 ```
 
-#### Discussion
+## Discussion
 
 Lines and rectangles are specified using this path element.
 

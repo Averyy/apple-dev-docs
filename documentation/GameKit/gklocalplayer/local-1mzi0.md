@@ -20,7 +20,7 @@ The shared instance of the local player.
 @property (class, readonly, nonnull) GKLocalPlayer * local;
 ```
 
-#### Discussion
+## Discussion
 
 You never directly create a local player object. Instead, use this property to get the shared instance.
 

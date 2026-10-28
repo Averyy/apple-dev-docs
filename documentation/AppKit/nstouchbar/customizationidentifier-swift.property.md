@@ -22,7 +22,7 @@ var customizationIdentifier: NSTouchBar.CustomizationIdentifier? { get set }
 @property (copy, nullable) NSTouchBarCustomizationIdentifier customizationIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 To make an [`NSTouchBar`](../nstouchbar.md) object eligible for user customization, assign it a globally unique [`customizationIdentifier`](./customizationidentifier-swift.property.md) identifier. For the identifier string, use reverse-DNS style, such as “`com.company-name.app-name.alphanumeric-ID`”.
 

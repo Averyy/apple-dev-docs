@@ -4,7 +4,7 @@
 
 Learn how to design and develop beautiful interfaces that leverage Liquid Glass.
 
-#### Introduction to Liquid Glass
+## Introduction to Liquid Glass
 
 Interfaces across Apple platforms feature a new dynamic material called Liquid Glass, which combines the optical properties of glass with a sense of fluidity. Learn how to adopt this material and embrace the design principles of Apple platforms to create beautiful interfaces that establish hierarchy, create harmony, and maintain consistency across devices and platforms.
 
@@ -12,7 +12,7 @@ Interfaces across Apple platforms feature a new dynamic material called Liquid G
 
 Standard components from SwiftUI, UIKit, and AppKit like controls and navigation elements pick up the appearance and behavior of this material automatically. You can also implement these effects in custom interface elements.
 
-#### Adopting Liquid Glass
+## Adopting Liquid Glass
 
 If you have an existing app, adopting Liquid Glass doesn’t mean reinventing your app from the ground up. Start by building your app in the latest version of Xcode to see the changes. Then, follow best practices in your interface to help your app look right at home on Apple platforms.
 
@@ -28,7 +28,7 @@ To learn more, read [Adopting Liquid Glass](./adopting-liquid-glass.md).
 
 ![A screenshot of the bottom half of an iPhone showing a toolbar as it appears in the latest version of iOS.](https://developer.apple.com/tutorials/images/com.apple.TechnologyOverviews/landing-page-adopting-liquid-glass-after@2x.png)
 
-#### Sample code
+## Sample code
 
 The Landmarks app showcases how to create a beautiful and engaging user experience using SwiftUI and Liquid Glass. Explore how the Landmarks app implements the look and feel of the Liquid Glass material throughout its interface.
 
@@ -43,7 +43,7 @@ The Landmarks app showcases how to create a beautiful and engaging user experien
 
 To learn more, see [Landmarks: Building an app with Liquid Glass](../SwiftUI/landmarks-building-an-app-with-liquid-glass.md).
 
-#### Design principles
+## Design principles
 
 The Human Interface Guidelines contains guidance and best practices that can help you design a great experience for any Apple platform. Browse the HIG to discover more about adapting your interface for Liquid Glass.
 
@@ -55,7 +55,7 @@ The Human Interface Guidelines contains guidance and best practices that can hel
 
 To learn more, read the [Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines).
 
-#### Videos
+## Videos
 
 - [Meet Liquid Glass](https://developer.apple.com/videos/play/wwdc2025/219)
   Liquid Glass unifies Apple platform design language while providing a more dynamic and expressive user experience. Get to know the design principles of Liquid Glass, explore its core optical and physical properties, and learn where to use it and why.

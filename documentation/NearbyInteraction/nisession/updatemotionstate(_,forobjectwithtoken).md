@@ -21,7 +21,7 @@ func updateMotionState(_ motionState: NIMotionActivityState, forObjectWithToken 
 - (void) updateMotionState:(NIMotionActivityState) motionState forObjectWithToken:(NIDiscoveryToken *) token;
 ```
 
-#### Discussion
+## Discussion
 
 Ranging accuracy improves when the framework knows whether the accessory is moving. Track your accessory’s motion using a method you choose and then describe the motion with the appropriate [`NIMotionActivityState`](../nimotionactivitystate.md). Call this method, providing the motion state, when the accessory’s motion state changes:
 

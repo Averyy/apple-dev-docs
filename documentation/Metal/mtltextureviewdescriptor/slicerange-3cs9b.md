@@ -18,7 +18,7 @@
 @property (nonatomic, readwrite) NSRange sliceRange;
 ```
 
-#### Discussion
+## Discussion
 
 A desired range of slices of a texture view.
 

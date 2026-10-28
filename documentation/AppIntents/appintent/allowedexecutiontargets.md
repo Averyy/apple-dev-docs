@@ -26,7 +26,7 @@ static var allowedExecutionTargets: IntentExecutionTargets { get }
 
 - [Configuring the runtime behavior of your app intents](../configuring-the-runtime-behavior-of-your-app-intents.md)
 
-#### Discussion
+## Discussion
 
 By default, an intent can be executed against any target. Use this property to restrict execution to specific targets such as the main app, an App Intents extension, or a WidgetKit extension.
 

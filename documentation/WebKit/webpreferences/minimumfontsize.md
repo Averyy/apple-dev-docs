@@ -19,7 +19,7 @@ var minimumFontSize: Int32 { get set }
 @property (nonatomic) int minimumFontSize;
 ```
 
-#### Discussion
+## Discussion
 
 This sets the minimum display font size for the web view, overriding all content-specified styles, including explicitly specified font sizes.
 

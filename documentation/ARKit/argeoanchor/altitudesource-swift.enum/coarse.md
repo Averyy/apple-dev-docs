@@ -20,7 +20,7 @@ case coarse
 ARAltitudeSourceCoarse
 ```
 
-#### Discussion
+## Discussion
 
 The accuracy of this altitude is noticeably imprecise at close range, but it’s sufficient from far away. Use this option to save computational resources for anchors that are far off in the distance.
 

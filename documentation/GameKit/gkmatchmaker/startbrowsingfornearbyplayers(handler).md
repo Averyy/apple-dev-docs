@@ -24,7 +24,7 @@ func startBrowsingForNearbyPlayers(handler reachableHandler: ((GKPlayer, Bool) -
 - (void) startBrowsingForNearbyPlayersWithHandler:(void (^)(GKPlayer *player, BOOL reachable)) reachableHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Use the `reachableHandler` implementation to update your interface with information about nearby players. If the local player wants to invite a nearby player, call the [`findMatch(for:withCompletionHandler:)`](./findmatch%28for,withcompletionhandler%29.md) method to create a match or the [`addPlayers(to:matchRequest:completionHandler:)`](./addplayers%28to,matchrequest,completionhandler%29.md) method to update an existing match. When you are done finding nearby players, call the [`stopBrowsingForNearbyPlayers()`](./stopbrowsingfornearbyplayers%28%29.md) method.
 

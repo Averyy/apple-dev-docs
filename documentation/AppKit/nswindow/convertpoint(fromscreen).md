@@ -19,7 +19,7 @@ func convertPoint(fromScreen point: NSPoint) -> NSPoint
 - (NSPoint) convertPointFromScreen:(NSPoint) point;
 ```
 
-#### Return Value
+## Return Value
 
 A point in the window’s coordinate system.
 

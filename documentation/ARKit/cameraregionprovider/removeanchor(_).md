@@ -15,7 +15,7 @@ Remove a camera region anchor.
 final func removeAnchor(_ anchor: CameraRegionAnchor) async throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: `CameraRegionProvider.Error`
 

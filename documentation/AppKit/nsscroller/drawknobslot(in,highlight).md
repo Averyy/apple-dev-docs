@@ -19,7 +19,7 @@ func drawKnobSlot(in slotRect: NSRect, highlight flag: Bool)
 - (void) drawKnobSlotInRect:(NSRect) slotRect highlight:(BOOL) flag;
 ```
 
-#### Discussion
+## Discussion
 
 Only one arrow button will be shown highlighted at a time, so you can expect this method to sometimes be invoked with a `slotRect` that encompasses only one arrow.
 

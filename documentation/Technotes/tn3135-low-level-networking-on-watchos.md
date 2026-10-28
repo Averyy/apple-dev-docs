@@ -5,7 +5,7 @@
 
 Learn about the supported use cases for low-level networking on watchOS.
 
-#### Overview
+## Overview
 
 watchOS groups networking into two categories:
 
@@ -32,7 +32,7 @@ Also, test your networking code in a wide variety of network environments.  Spec
 
 For more information about building an audio streaming app for watchOS, see WWDC 2019 Session 716 [Streaming Audio on watchOS 6](https://developer.apple.com/videos/play/wwdc2019/716/).
 
-#### Revision History
+## Revision History
 
 - **2026-07-16** Fixed a broken link.
 - **2024-02-27** Fixed a typo.

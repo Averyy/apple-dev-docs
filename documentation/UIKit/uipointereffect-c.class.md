@@ -18,7 +18,7 @@ An effect that alters a view’s appearance when a pointer enters the current re
 @interface UIPointerEffect : NSObject
 ```
 
-#### Overview
+## Overview
 
 [`UIPointerEffect`](./uipointereffect-swift.enum.md) attempts to determine the appropriate effect for the given preview automatically. Use one of its subclasses to request a specific system-provided effect.
 

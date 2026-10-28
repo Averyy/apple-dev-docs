@@ -21,11 +21,11 @@ Reads the document’s content from disk.
 func read(from source: sending Self.Source, progress: consuming Subprogress) async throws -> sending Self.Snapshot
 ```
 
-#### Return Value
+## Return Value
 
 A snapshot representing the document’s content.
 
-#### Discussion
+## Discussion
 
 SwiftUI calls this method in the background with coordinated file access. Perform all deserialization and disk access here — the returned snapshot is delivered to [`apply(snapshot:previous:)`](../readabledocument/apply%28snapshot,previous%29.md) on the main actor.
 

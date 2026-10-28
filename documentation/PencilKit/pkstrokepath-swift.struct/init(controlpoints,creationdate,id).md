@@ -19,7 +19,7 @@ Creates a stroke path with the specified cubic B-spline control points and a uni
 init<T>(controlPoints: T, creationDate: Date, id: UUID) where T : Sequence, T.Element == PKStrokePoint
 ```
 
-#### Discussion
+## Discussion
 
 > ⚠️ **Warning**: Using multiple stroke paths with identical IDs but different control points will result in undefined rendering behavior. Ensure each stroke path has a unique identifier.
 

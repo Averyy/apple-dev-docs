@@ -19,7 +19,7 @@ var pointingDeviceSerialNumber: Int { get }
 @property (readonly) NSUInteger pointingDeviceSerialNumber;
 ```
 
-#### Discussion
+## Discussion
 
 Devices of different types, such as a puck and a pen, may have the same serial number. This property is valid for mouse events with subtype `NSTabletProximityEventSubtype` or an event of type `NSTabletProximity`.
 

@@ -13,7 +13,7 @@
 kREAD_CAPACITY_RTO_Disabled = 0x00
 ```
 
-#### Discussion
+## Discussion
 
 Reference Tag Own disabled.
 

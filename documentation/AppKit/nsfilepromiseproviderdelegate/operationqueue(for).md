@@ -20,7 +20,7 @@ optional func operationQueue(for filePromiseProvider: NSFilePromiseProvider) -> 
 - (NSOperationQueue *) operationQueueForFilePromiseProvider:(NSFilePromiseProvider *) filePromiseProvider;
 ```
 
-#### Discussion
+## Discussion
 
 If this method isn’t implemented, the main operation queue is used. Although this method is optional, to avoid blocking your main thread, provide an operation queue other than the main operation queue.
 

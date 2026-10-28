@@ -22,7 +22,7 @@ class let lockUnlockedTemplateName: String
 extern NSImageName const NSImageNameLockUnlockedTemplate;
 ```
 
-#### Discussion
+## Discussion
 
 Use to indicate modifiable content that can be locked.
 

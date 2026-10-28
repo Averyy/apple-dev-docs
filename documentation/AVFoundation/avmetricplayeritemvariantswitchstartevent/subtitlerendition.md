@@ -23,7 +23,7 @@ var subtitleRendition: AVMetricMediaRendition { get }
 @property (readonly) AVMetricMediaRendition * subtitleRendition;
 ```
 
-#### Discussion
+## Discussion
 
 Contains information corresponding to the currently selected subtitle rendition.
 

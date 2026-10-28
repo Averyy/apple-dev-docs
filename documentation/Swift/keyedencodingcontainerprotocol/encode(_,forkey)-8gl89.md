@@ -22,7 +22,7 @@ Encodes the given value for the given key.
 mutating func encode<T>(_ value: T, forKey key: Self.Key) throws where T : Encodable
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: `EncodingError.invalidValue` if the given value is invalid in the current context for this format.
 

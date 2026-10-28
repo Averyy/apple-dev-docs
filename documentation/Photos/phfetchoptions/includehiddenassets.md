@@ -24,7 +24,7 @@ var includeHiddenAssets: Bool { get set }
 @property (nonatomic, assign) BOOL includeHiddenAssets;
 ```
 
-#### Discussion
+## Discussion
 
 If the value is `false` (the default), fetches exclude assets whose [`isHidden`](../phasset/ishidden.md) property is `true`. If the value is `true`, fetches include all assets regardless of their hidden state.
 

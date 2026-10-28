@@ -25,7 +25,7 @@ struct ItemReplacementOptions
 enum NSFileManagerItemReplacementOptions : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 These options are used by [`replaceItem(at:withItemAt:backupItemName:options:resultingItemURL:)`](./replaceitem%28at,withitemat,backupitemname,options,resultingitemurl%29.md).
 

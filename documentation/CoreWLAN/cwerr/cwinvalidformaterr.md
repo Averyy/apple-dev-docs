@@ -17,7 +17,7 @@ case cwInvalidFormatErr
 kCWInvalidFormatErr
 ```
 
-#### Discussion
+## Discussion
 
 Invalid protocol element field detected.
 

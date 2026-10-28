@@ -24,7 +24,7 @@ subscript(attachmentIndex: Int) -> MTLRenderPassSampleBufferAttachmentDescriptor
 - (MTLRenderPassSampleBufferAttachmentDescriptor *) objectAtIndexedSubscript:(NSUInteger) attachmentIndex;
 ```
 
-#### Return Value
+## Return Value
 
 The [`MTLRenderPassSampleBufferAttachmentDescriptor`](../mtlrenderpasssamplebufferattachmentdescriptor.md) at the specified index.
 

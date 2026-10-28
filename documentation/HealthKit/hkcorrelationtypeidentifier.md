@@ -24,7 +24,7 @@ struct HKCorrelationTypeIdentifier
 typedef NSString * HKCorrelationTypeIdentifier;
 ```
 
-#### Overview
+## Overview
 
 To create an [`HKCorrelationType`](./hkcorrelationtype.md) instance, pass an [`HKCorrelationTypeIdentifier`](./hkcorrelationtypeidentifier.md) value to the [`correlationType(forIdentifier:)`](./hkobjecttype/correlationtype%28foridentifier%29.md) method.
 

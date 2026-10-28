@@ -27,7 +27,7 @@ var optionsByRecordZoneID: [CKRecordZone.ID : CKFetchRecordZoneChangesOperation.
 @property (nonatomic, copy, nullable) NSDictionary<CKRecordZoneID *,CKFetchRecordZoneChangesOptions *> * optionsByRecordZoneID;
 ```
 
-#### Discussion
+## Discussion
 
 You can associate each record zone ID with options that define what CloudKit fetches for that record zone.  See [`CKFetchRecordZoneChangesOperation.ZoneOptions`](./zoneoptions.md) for more information.
 

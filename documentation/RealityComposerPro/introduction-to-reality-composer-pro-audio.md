@@ -5,17 +5,17 @@
 
 Configure audio components in a Reality Composer Pro scene.
 
-#### Overview
+## Overview
 
 Reality Composer Pro provides a set of audio components you can add to entities in your scene to control how sound is rendered. The three main audio source components — Spatial Audio, Ambient Audio, and Channel Audio — differ in how they respond to listener position and orientation.
 
 A Reverb component lets you define an environment-wide reverb preset. Audio File Groups and the Audio Library Component provide flexible ways to reference and play audio assets from within your scene’s logic. An Audio Mix Group lets you control the volume and playback speed of a collection of sounds together through a single slider.
 
-#### Import audio files through the Project Browser
+## Import audio files through the Project Browser
 
 In the Project Browser, click **Import Asset**, select one or more audio files, and then click **Open**. Alternatively, drag files from the Finder into the desired location in the Project Browser.
 
-#### Inspect and preview audio
+## Inspect and preview audio
 
 To play back an audio file from the Project Browser, click an audio file. In the Preview tab, click **Play**.
 
@@ -36,11 +36,11 @@ Use **Should Randomize Start** and **Should Loop** together to create audio vari
 
 Streaming audio saves memory but uses more compute. For more information, see [`AudioFileResource.LoadingStrategy`](../RealityKit/audiofileresource/loadingstrategy-swift.enum.md).
 
-#### Choose an audio playback component
+## Choose an audio playback component
 
 There are three main audio components you can add to control how audio is rendered in space within your scene. Use **Spatial Audio** when sound should emanate from a specific entity and respond to your environment’s reverb. Use **Ambient Audio** for multichannel recordings where orientation matters but position does not. Use **Channel Audio** for music or non-spatialized audio that routes directly to device output channels.
 
-#### Add a Spatial Audio component
+## Add a Spatial Audio component
 
 Spatial Audio is the **default** audio component placed on an entity. If you don’t specify Ambient or Channel for an entity, the system renders audio as Spatial.
 
@@ -53,7 +53,7 @@ Spatial Audio is the **default** audio component placed on an entity. If you don
 
 For more information, see [`SpatialAudioComponent`](../RealityKit/spatialaudiocomponent.md).
 
-#### Add an Ambient Audio component
+## Add an Ambient Audio component
 
 Ambient Audio renders each channel of an audio resource from an angle based on the entity’s orientation. As you move toward or away from the entity, the volume does not change. As the entity or listener rotates, the audio channels shift accordingly. This makes Ambient Audio well-suited for multichannel field recordings of outdoor environments.
 
@@ -62,7 +62,7 @@ Ambient Audio renders each channel of an audio resource from an angle based on t
 
 For more information, see [`AmbientAudioComponent`](../RealityKit/ambientaudiocomponent.md).
 
-#### Add a Channel Audio component
+## Add a Channel Audio component
 
 Channel Audio routes audio directly to the device output channels with no spatialization or reverberation applied. Neither the entity’s position nor its orientation affects playback — the left channel always plays from the left and the right channel always from the right, regardless of listener orientation.
 
@@ -72,7 +72,7 @@ Channel Audio is typically used for music.
 
 For more information, see [`ChannelAudioComponent`](../RealityKit/channelaudiocomponent.md).
 
-#### Add a Reverb component
+## Add a Reverb component
 
 Add a Reverb component to an entity to define a preset Reverb characteristic such as Living Room or Concert Hall for a scene.
 
@@ -84,7 +84,7 @@ Only one Reverb component can be active at a time in a scene, and you can place 
 
 For more information, see [`ReverbComponent`](../RealityKit/reverbcomponent.md).
 
-#### Add an Audio File Group to your project
+## Add an Audio File Group to your project
 
 Add an **Audio File Group** to define a collection of audio files. When RealityKit plays an Audio File Group, it selects a random file from the collection — useful for groups of similar but varied sounds, such as footsteps or bird calls. You reference Audio File Groups through an **Audio Library Component** attached to an entity.
 
@@ -100,7 +100,7 @@ You can have as many Audio File Groups in your project as you need. For example,
 
 After creating an Audio File Group, add an Audio Library Component to an entity and connect the component to the Audio File Group.
 
-#### Add an Audio Library Component to an entity
+## Add an Audio Library Component to an entity
 
 The Audio Library Component lets you reference and play specific sounds directly, or reference an Audio File Group to play sounds selected at random. Other components, such as Script Graphs and Animation Sequences, can reference audio files in the library.
 
@@ -117,7 +117,7 @@ The Audio Library Component lets you reference and play specific sounds directly
 
 For more information, see [`AudioLibraryComponent`](../RealityKit/audiolibrarycomponent.md).
 
-#### Add an Audio Mix Group component
+## Add an Audio Mix Group component
 
 Use an **Audio Mix Group** to group sounds together — for example, instruments in a band, voices, and other environmental sounds — and then control their volume and playback speed as a group through a single slider. Add only one Audio Mix Group to your scene.
 

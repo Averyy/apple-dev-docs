@@ -5,7 +5,7 @@
 
 Use ActivityKit to receive push tokens and to remotely start, update, and end your Live Activity with ActivityKit notifications.
 
-#### Overview
+## Overview
 
 ActivityKit offers functionality to start, update, and end Live Activities from your app. Additionally, it offers functionality to receive push tokens. Use push tokens to send ActivityKit notifications from your server to Apple Push Notification service (APNs). With notifications, you can:
 
@@ -15,7 +15,7 @@ ActivityKit offers functionality to start, update, and end Live Activities from 
 
 > **Related session from WWDC23**: [Session 10185: Update Live Activities with push notifications](https://developer.apple.com/videos/play/wwdc2023/10185)
 
-##### Start and update Live Activities
+### Start and update Live Activities
 
 To start and update your Live Activities by sending ActivityKit push notifications to a device:
 
@@ -37,19 +37,19 @@ To start and update your Live Activities with ActivityKit push notifications on 
 6. Send ActivityKit push notifications from your server to APNs using the channel ID, HTTP header fields, and JSON payloads described in this article to update and end Live Activities.
 7. Test ActivityKit push notifications locally and verify that your Live Activity behaves as expected.
 
-##### Add the Push Notifications capability
+### Add the Push Notifications capability
 
 In your Xcode project, start by adding the Push Notifications capability to your app in Xcode as described in [Registering your app with APNs](../UserNotifications/registering-your-app-with-apns.md). Note that you can’t use the User Notifications framework to register your Live Activity for push notifications. Instead, you use ActivityKit to obtain a push token as described below. If you choose to use broadcast push notifications for your app, refer to [Setting up broadcast push notifications](../UserNotifications/setting-up-broadcast-push-notifications.md) for more details on enabling broadcast capability for your app.
 
 > **Note**: You can’t enable broadcast capability through Xcode. You can only enable broadcast capabilities using [developer.apple.com](https://developer.apple.com).
 
-##### Create a push notification server
+### Create a push notification server
 
 Additionally, set up a remote notification server or make changes to your existing server and send JSON payloads to APNs as described below. If you’re new to using push notifications, plan to spend time implementing the remote notification server. For more information, refer to [Registering your app with APNs](../UserNotifications/registering-your-app-with-apns.md). To use device push notifications, you use the push tokens that you receive from ActivityKit to send push notifications in your remote notification server. For more information about sending push notifications using push tokens, refer to [Sending notification requests to APNs](../UserNotifications/sending-notification-requests-to-apns.md).
 
 For broadcast push notifications, use the channel you created for the Live Activity and shared with the app to send push notifications in your remote notifications server. For more information on creating channels, refer to [Sending channel management requests to APNs](../UserNotifications/sending-channel-management-requests-to-apns.md). For information on how to send a push notification on a channel, refer to [Sending broadcast push notification requests to APNs](../UserNotifications/sending-broadcast-push-notification-requests-to-apns.md).
 
-##### Start a Live Activity that receives push token updates
+### Start a Live Activity that receives push token updates
 
 On devices that run iOS or iPadOS 17.1 and earlier, you can’t start Live Activities with ActivityKit push notifications. However, you can update and end them with ActivityKit push notifications. In your app, start a Live Activity with the [`request(attributes:content:pushType:)`](./activity/request%28attributes,content,pushtype%29.md) function and pass [`token`](./pushtype/token.md) to its `pushType` parameter. As a result, you receive a push token that’s unique to your Live Activity when you successfully start the Live Activity.
 
@@ -94,7 +94,7 @@ Task {
 
 The push token for a Live Activity may change throughout its duration. When your app receives a new token, it receives background runtime to process the updated token. Keep track of the push token for each Live Activity. Additionally, invalidate the previous, now-outdated token on your server when you receive an updated token to successfully send subsequent updates.
 
-##### Start a Live Activity that supports push updates on a channel
+### Start a Live Activity that supports push updates on a channel
 
 You can update or end Live Activities by sending an ActivityKit push notification on a channel. To create a channel for your Live Activity event, refer to [Sending channel management requests to APNs](../UserNotifications/sending-channel-management-requests-to-apns.md). The channel you create has a unique identifier, called a channel ID, that devices use to subscribe to Live Activity updates. Your remote server provides the channel ID to your app before the Live Activity starts. In your app, start a Live Activity with the [`request(attributes:content:pushType:)`](./activity/request%28attributes,content,pushtype%29.md) function and pass a channel to its `pushType` parameter with the channel ID. If the channel ID isn’t a valid channel, the Live Activity fails to start.
 
@@ -119,7 +119,7 @@ func startLiveActivityWithChannel(hero: EmojiRanger) throws {
 }
 ```
 
-##### Start new Live Activities with ActivityKit push notifications
+### Start new Live Activities with ActivityKit push notifications
 
 You can start new Live Activities with ActivityKit push notifications. This option is especially useful for tracking events with Live Activities that occur more than once. For example, if someone starts a Live Activity to track their favorite sports team, the sports app might offer to automatically start a Live Activity for each of the team’s games. In the future, the person doesn’t have to remember to start the Live Activity from the app. Instead, a Live Activity for tracking the game might automatically start from an ActivityKit push notification you sent with your remote notification server and APNs.
 
@@ -134,7 +134,7 @@ To start Live Activities from ActivityKit push notifications, configure your app
 
 > **Note**: You can’t use broadcast push notifications to start a Live Activity.
 
-##### Construct the ActivityKit remote push notification payload
+### Construct the ActivityKit remote push notification payload
 
 To successfully start, update, or end a Live Activity with an ActivityKit push notification, send an HTTP request to APNs that conforms to the following requirements:
 
@@ -195,7 +195,7 @@ Remember that a person’s device may not receive a push notification — for ex
 
 > **Note**: When you send ActivityKit push notifications to a device, the system wakes the widget extension to render the UI of your Live Activity.
 
-##### Construct the payload that starts a Live Activity
+### Construct the payload that starts a Live Activity
 
 The JSON payload for starting a Live Activity with an ActivityKit push notification is similar to the payload you use for updates. However, it comes with the following requirements:
 
@@ -272,7 +272,7 @@ For devices running iOS 18 and later and iPadOS 18 or later, you can add `input-
         }
 ```
 
-##### Test Live Activity updates locally
+### Test Live Activity updates locally
 
 During development, verify your JSON payloads and Live Activity updates locally. Using command-line tools and Simulator or a test device, you can send a JSON payload from the command line to APNs and receive Live Activity updates to verify that your payload updates the Live Activity and the Live Activity behaves as expected.
 
@@ -322,7 +322,7 @@ If you encounter failures while sending an ActivityKit push notification:
 - Ensure the `curl` command succeeded. An error might indicate an incorrect field for the request, or errors setting up the command-line environment.
 - Use the Console app to view device logs and look for errors that could help you understand the issue. Processes in Console that may contain relevant information are `liveactivitiesd`, `apsd`, and `chronod`.
 
-##### Determine the update frequency
+### Determine the update frequency
 
 The system allows for a certain budget of ActivityKit push notifications per hour. As with other push notifications you send with APNs, you can set the HTTP header field `apns-priority` for your requests to specify the priority of an ActivityKit push notification:
 
@@ -343,15 +343,15 @@ Similar to other asynchronous sequences ActivityKit provides to receive configur
 
 For more information on available HTTP headers and sending requests to APNs, refer to [Sending notification requests to APNs](../UserNotifications/sending-notification-requests-to-apns.md).
 
-##### End the Live Activity with a custom dismissal date
+### End the Live Activity with a custom dismissal date
 
 When you end a Live Activity, by default the Live Activity appears on the Lock Screen for up to four hours after it ends to allow people to glance at their phone to refer to the latest information. To change the time until the system removes a Live Activity from the Lock Screen after it ends, include the `"dismissal-date"` entry in the `"aps"` dictionary of your JSON payload. If you don’t include the `"dismissal-date"`, your Live Activity uses the system’s default dismissal behavior. To dismiss the Live Activity from the Lock Screen immediately after it ends, provide a date for `"dismissal-date"` that’s in the past — for example, `"dismissal-date": 1663177260`. Alternatively, provide a date within a four-hour window to set a custom dismissal date.
 
-##### Mark a Live Activity as outdated by setting a stale date
+### Mark a Live Activity as outdated by setting a stale date
 
 In some scenarios — for example, if a person enters an area without network connectivity — you might not be able to update the Live Activity with new information, causing it to display outdated data. To provide the best possible user experience and let the person know that the Live Activity displays outdated information, add a timestamp in the optional `stale-date` field to provide the time when the system considers the Live Activity to be stale. With each update, you can advance this `stale-date`. When you can’t update the Live Activity for some time until it becomes stale, the [`activityState`](./activity/activitystate.md) changes to [`ActivityState.stale`](./activitystate/stale.md) at the specified date. Use the [`activityStateUpdates`](./activity/activitystateupdates-swift.property.md) stream in your app to monitor the activity state and respond to outdated Live Activities that haven’t received updates. For example, while a person has network connectivity, a sports app could update the Live Activity with the latest game information and advance the stale date. When it becomes stale, it displays text to indicate that the displayed information is outdated.
 
-##### Display the most important Live Activity in the Dynamic Island
+### Display the most important Live Activity in the Dynamic Island
 
 If your app starts more than one Live Activity, provide a `relevance-score` in your JSON payload to determine the order of your Live Activities on the Lock Screen and which of your Live Activities appears in the Dynamic Island:
 

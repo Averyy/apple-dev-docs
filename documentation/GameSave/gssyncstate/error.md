@@ -23,7 +23,7 @@ case error
 GSSyncStateError
 ```
 
-#### Discussion
+## Discussion
 
 In this state, the value of [`error`](../gssynceddirectorystate/error.md) is nonnull.
 

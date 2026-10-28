@@ -19,7 +19,7 @@ static let maximumRecents: NSBindingName
 extern NSBindingName NSMaximumRecentsBinding;
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see [Cocoa Bindings](../cocoa-bindings.md).
 

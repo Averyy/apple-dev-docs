@@ -23,7 +23,7 @@ class PKJapanIndividualNumberCardMetadata
 @interface PKJapanIndividualNumberCardMetadata : PKIdentityDocumentMetadata
 ```
 
-#### Overview
+## Overview
 
 This class is similar to [`PKShareablePassMetadata`](./pkshareablepassmetadata.md).
 

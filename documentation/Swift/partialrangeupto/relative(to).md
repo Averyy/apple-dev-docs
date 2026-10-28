@@ -23,11 +23,11 @@ func relative<C>(to collection: C) -> Range<Bound> where Bound == C.Index, C : C
 
 Available when `Bound` conforms to `Comparable`.
 
-#### Return Value
+## Return Value
 
 A range suitable for slicing `collection`. The returned range is *not* guaranteed to be inside the bounds of `collection`. Callers should apply the same preconditions to the return value as they would to a range provided directly by the user.
 
-#### Discussion
+## Discussion
 
 You can use the `relative(to:)` method to convert a range expression, which could be missing one or both of its endpoints, into a concrete range that is bounded on both sides. The following example uses this method to convert a partial range up to `4` into a half-open range, using an array instance to add the range’s lower bound.
 

@@ -16,11 +16,11 @@ Returns the serial number string index in the device descriptor.
 IOReturn (*USBGetSerialNumberStringIndex)(void *self, UInt8 *snsi);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if successful, kIOReturnNoDevice if there is no connection to an IOService.
 
-#### Discussion
+## Discussion
 
 The device does not have to be open to use this function.
 

@@ -27,7 +27,7 @@ var appearance: NSAppearance? { get set }
 @property (strong, nullable) NSAppearance * appearance;
 ```
 
-#### Discussion
+## Discussion
 
 If no appearance is specified, the popover’s effective appearance defaults to [`vibrantLight`](../nsappearance/name-swift.struct/vibrantlight.md).
 

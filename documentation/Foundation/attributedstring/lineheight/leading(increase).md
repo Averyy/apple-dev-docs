@@ -21,7 +21,7 @@ Constant line height based on point size and a fixed increase.
 static func leading(increase: CGFloat) -> AttributedString.LineHeight
 ```
 
-#### Discussion
+## Discussion
 
 Defines the line height based on the largest point size plus an `increase` (in points), regardless of the effective ascent and descent of the fonts in use.
 

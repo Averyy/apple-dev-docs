@@ -25,7 +25,7 @@ func CGImageSourceSetAllowableTypes(_ allowableTypes: CFArray) -> OSStatus
 extern OSStatus CGImageSourceSetAllowableTypes(CFArrayRef allowableTypes);
 ```
 
-#### Discussion
+## Discussion
 
 When this method has been called, ImageIO will only decode images whose format matches one of the entries in the allow list for the remaining lifetime of the process.
 

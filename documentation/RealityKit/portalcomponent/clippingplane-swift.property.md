@@ -20,7 +20,7 @@ The clipping plane of the portal, in the entity’s local coordinates.
 var clippingPlane: PortalComponent.ClippingPlane? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 When you set this property to a non-`nil` value, the portal clips meshes inside the portal world that are in front of the clipping plane.
 

@@ -22,7 +22,7 @@ Returns the entity rotated by the specified rotation around the origin.
 func rotated(by rotation: Self.Rotation) -> Self
 ```
 
-#### Discussion
+## Discussion
 
 - Returns The rotated primitive.
 

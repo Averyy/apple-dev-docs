@@ -6,7 +6,7 @@
 
 A matrix structure associated with this text media.
 
-#### Overview
+## Overview
 
 This should be the identity matrix. A matrix shows how to map points from one coordinate space into another. See [Matrices](../matrices.md) for a discussion of how display matrices are used in QuickTime and see [`Matrix structure`](../movie_header_atom/matrix_structure.md) for an illustration of a matrix structure within an atom.
 

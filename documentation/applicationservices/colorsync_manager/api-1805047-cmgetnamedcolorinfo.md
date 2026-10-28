@@ -19,11 +19,11 @@ CMError CMGetNamedColorInfo (
 );
 ```
 
-#### Return Value
+## Return Value
 
 A `CMError` value. See [Result Codes](../colorsync_manager.md#1670295).
 
-#### Overview
+## Overview
 
 The `CMGetNamedColorInfo` function returns information about the named color space referred to by the passed profile reference. 
 

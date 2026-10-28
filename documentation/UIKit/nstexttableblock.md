@@ -28,7 +28,7 @@ class NSTextTableBlock
 
 - [Adding tables to attributed strings in UIKit](./adding-tables-to-attributed-strings.md)
 
-#### Overview
+## Overview
 
 `NSTextTableBlock` is a subclass of [`NSTextBlock`](./nstextblock.md) that places a paragraph in a cell of an [`NSTextTable`](./nstexttable.md). When you create an `NSTextTableBlock`, you specify the table it belongs to, the cell’s starting row and column, and how many rows and columns the cell spans.
 

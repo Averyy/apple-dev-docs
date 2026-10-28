@@ -17,7 +17,7 @@ Abstract pooling layer.
 class Pool
 ```
 
-##### See Also
+### See Also
 
 - [`MaxPool1d`](./maxpool1d.md)
 - [`MaxPool2d`](./maxpool2d.md)

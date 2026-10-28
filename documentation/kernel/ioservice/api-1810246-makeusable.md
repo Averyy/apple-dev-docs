@@ -12,11 +12,11 @@ IOReturn makeUsable(
  void );
 ```
 
-#### Return Value
+## Return Value
 
 A return code that can be ignored by the caller.
 
-#### Overview
+## Overview
 
 This method is called when some client of a device (or the device's own driver) is asking for the device to become usable. Power management responds by telling the object upon which this method is called to change to its highest power state. `makeUsable` is implemented using changePowerStateToPriv. Subsequent requests for lower power, such as from `changePowerStateToPriv`, will pre-empt this request.
 

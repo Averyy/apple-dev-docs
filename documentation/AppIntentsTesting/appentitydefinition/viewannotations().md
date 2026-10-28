@@ -25,11 +25,11 @@ func viewAnnotations() async throws -> [ViewAnnotation]
 
 - [Testing your App Intents code](../testing-your-app-intents-code.md)
 
-#### Return Value
+## Return Value
 
 An array of view annotations, with selection state and entity data.
 
-#### Discussion
+## Discussion
 
 > **Throws**: An error if the view annotations query fails.
 

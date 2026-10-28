@@ -29,7 +29,7 @@ func handle(intent: INSetClimateSettingsInCarIntent) async -> INSetClimateSettin
 - (void) handleSetClimateSettingsInCar:(INSetClimateSettingsInCarIntent *) intent completion:(void (^)(INSetClimateSettingsInCarIntentResponse *response)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Your implementation of this method should communicate with the vehicle and update the vehicle’s climate settings using the information in the `intent` object. When done, execute the provided block with a response object indicating whether or not the operation was successful.
 

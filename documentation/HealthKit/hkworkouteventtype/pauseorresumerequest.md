@@ -24,7 +24,7 @@ case pauseOrResumeRequest
 HKWorkoutEventTypePauseOrResumeRequest
 ```
 
-#### Discussion
+## Discussion
 
 During a workout session, the user can request a pause or resume by pressing both watch buttons. When you receive this event, pause or resume your app’s current workout session.
 

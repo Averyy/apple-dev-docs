@@ -32,7 +32,7 @@ func finishRoute(with workout: HKWorkout, metadata: [String : Any]?) async throw
 
 - [Creating a workout route](../creating-a-workout-route.md)
 
-#### Discussion
+## Discussion
 
 Call this method after adding all the route data to the builder. The builder creates the route and saves it to the HealthKit store. It also associates the route with the provided workout. You cannot associate the route with another workout.
 

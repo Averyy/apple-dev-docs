@@ -16,7 +16,7 @@ The default rate used to play the media resource.
 attribute unrestricted double defaultPlaybackRate;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is a multiple of the media resource’s intrinsic speed. The default value is `1.0`.
 

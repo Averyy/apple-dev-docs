@@ -24,7 +24,7 @@ var definition: CIFilterShape { get }
 @property (readonly) CIFilterShape * definition;
 ```
 
-#### Discussion
+## Discussion
 
 The DOD contains all nontransparent pixels produced by referencing the sampler.
 

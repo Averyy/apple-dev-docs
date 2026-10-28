@@ -19,7 +19,7 @@ The image displayed in the view’s background.
 var image: UIImage? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the image displayed in the view’s background. If this property is set to `nil`, the view displays no background image.
 

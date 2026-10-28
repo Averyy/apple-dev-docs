@@ -25,7 +25,7 @@ let MPMediaItemPropertyArtwork: String
 extern NSString * const MPMediaItemPropertyArtwork;
 ```
 
-#### Discussion
+## Discussion
 
 This value is a media item image, described in [`MPMediaItemArtwork`](./mpmediaitemartwork.md).
 

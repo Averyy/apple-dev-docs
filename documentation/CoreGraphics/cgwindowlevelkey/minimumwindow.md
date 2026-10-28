@@ -18,7 +18,7 @@ case minimumWindow
 kCGMinimumWindowLevelKey
 ```
 
-#### Discussion
+## Discussion
 
 The lowest available window level.
 

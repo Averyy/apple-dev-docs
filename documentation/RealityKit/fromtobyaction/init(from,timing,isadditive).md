@@ -20,7 +20,7 @@ Creates a new from to by action to animate from a specified value, towards the d
 init(from: Value, timing: AnimationTimingFunction = .linear, isAdditive: Bool = false)
 ```
 
-#### Discussion
+## Discussion
 
 `from` → `defaultSource`
 

@@ -16,11 +16,11 @@ Return number of bytes transferred by this command object when it last completed
 UInt32 (*GetTransferredBytes)(IOFireWireLibCommandRef self);
 ```
 
-#### Return Value
+## Return Value
 
 A UInt32 containing the bytes transferred value
 
-#### Discussion
+## Discussion
 
 Availability: (for interfaces obtained with ID)
 

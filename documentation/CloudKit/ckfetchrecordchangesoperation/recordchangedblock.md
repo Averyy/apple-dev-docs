@@ -25,7 +25,7 @@ var recordChangedBlock: ((CKRecord) -> Void)? { get set }
 @property (nonatomic, copy, nullable) void (^recordChangedBlock)(CKRecord *record);
 ```
 
-#### Discussion
+## Discussion
 
 The block returns no value and takes the following parameters:
 

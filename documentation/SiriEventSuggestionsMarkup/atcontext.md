@@ -19,7 +19,7 @@ string @context
 
 - `http://schema.org`
 
-#### Overview
+## Overview
 
 For JSON-LD, the `@context` for a reservation should always be `http://schema.org`, as in this example:
 

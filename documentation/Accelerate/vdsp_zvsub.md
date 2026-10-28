@@ -21,7 +21,7 @@ Subtracts two single-precision complex vectors.
 extern void vDSP_zvsub(const DSPSplitComplex *__A, vDSP_Stride __IA, const DSPSplitComplex *__B, vDSP_Stride __IB, const DSPSplitComplex *__C, vDSP_Stride __IC, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 This function calculates the differences of the first `N` complex elements of `A` and `B`, writing the result to `C`:
 

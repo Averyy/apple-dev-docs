@@ -26,7 +26,7 @@ func revert(toContentsOf url: URL) async -> Bool
 - (void) revertToContentsOfURL:(NSURL *) url completionHandler:(void (^)(BOOL success)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 You call this method to discard all unsaved document modifications and replace the document’s contents by reading the file or file package located by `url`. The default implementation brackets the reversion operation between [`disableEditing()`](./disableediting%28%29.md) and [`enableEditing()`](./enableediting%28%29.md)because the document shouldn’t accept user changes during this period. Subclasses that override this method must call the superclass implementation (`super`) or use the [`NSFileCoordinator`](../../Foundation/nsfilecoordinator.md) class to initiate a coordinated read.
 

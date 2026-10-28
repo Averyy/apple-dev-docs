@@ -23,11 +23,11 @@ class func confirmationRequired(with dateComponentsRangeToConfirm: INDateCompone
 + (instancetype) confirmationRequiredWithDateComponentsRangeToConfirm:(INDateComponentsRange *) dateComponentsRangeToConfirm;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INDateComponentsRangeResolutionResult`](../indatecomponentsrangeresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method when you can resolve the parameter to a single object but you want the user to confirm that value before proceeding. You might ask for confirmation when there is some doubt that the specified object is what the user intended.
 

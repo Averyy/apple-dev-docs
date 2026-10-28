@@ -15,7 +15,7 @@ A Boolean value that indicates whether the CarPlay app plays video content.
 - **Name**: `com.apple.developer.carplay-video`
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 You can include this entitlement and the [CarPlay Audio App](./com.apple.developer.carplay-audio.md) entitlement in the same app.
 

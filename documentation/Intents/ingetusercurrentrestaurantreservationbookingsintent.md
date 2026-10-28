@@ -22,7 +22,7 @@ class INGetUserCurrentRestaurantReservationBookingsIntent
 @interface INGetUserCurrentRestaurantReservationBookingsIntent : INIntent
 ```
 
-#### Overview
+## Overview
 
 An [`INGetUserCurrentRestaurantReservationBookingsIntent`](./ingetusercurrentrestaurantreservationbookingsintent.md) object asks you to retrieve the current restaurant reservations associated with the user. Maps sends this intent to your Intents extension when it needs information about all of the user’s current reservations, or when it needs information about one or more specific reservations. Use the properties of this object to determine which reservations to return.
 
@@ -30,7 +30,7 @@ When searching for reservations, use the [`reservationIdentifier`](./ingetusercu
 
 To handle this intent, the handler object in your Intents extension must adopt the [`INGetUserCurrentRestaurantReservationBookingsIntentHandling`](./ingetusercurrentrestaurantreservationbookingsintenthandling.md) protocol. Your handler should resolve and confirm any parameters and create an [`INGetUserCurrentRestaurantReservationBookingsIntentResponse`](./ingetusercurrentrestaurantreservationbookingsintentresponse.md) object using the found results.
 
-##### Additional Intent Attributes
+### Additional Intent Attributes
 
 The following table lists additional attributes of this intent object:
 

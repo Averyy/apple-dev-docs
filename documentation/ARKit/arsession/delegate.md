@@ -20,7 +20,7 @@ weak var delegate: (any ARSessionDelegate)? { get set }
 @property (nonatomic, weak, nullable) id<ARSessionDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 If you use the [`ARSCNView`](../arscnview.md) or [`ARSKView`](../arskview.md) class to display your AR experience, a session delegate isn’t necessary. Those views automatically display captured video images and coordinate SceneKit or SpriteKit content to track device and camera motion.
 

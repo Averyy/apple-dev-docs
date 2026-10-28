@@ -19,7 +19,7 @@ func remove(atArrangedObjectIndexes indexes: IndexSet)
 - (void) removeObjectsAtArrangedObjectIndexes:(NSIndexSet *) indexes;
 ```
 
-#### Discussion
+## Discussion
 
 See [`removeObject(_:)`](./removeobject%28_%29.md) for a discussion of the semantics of removing objects when using Core Data.
 

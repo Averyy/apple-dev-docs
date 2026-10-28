@@ -21,7 +21,7 @@ The automatic activation of the scope bar.
 static var automatic: SearchScopeActivation { get }
 ```
 
-#### Discussion
+## Discussion
 
 By default, this is [`onTextEntry`](./ontextentry.md) in iOS and [`onSearchPresentation`](./onsearchpresentation.md) in macOS.
 

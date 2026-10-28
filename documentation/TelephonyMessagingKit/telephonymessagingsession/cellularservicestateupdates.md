@@ -19,7 +19,7 @@ final var cellularServiceStateUpdates: some AsyncSequence<CellularServiceState, 
 
 - [Creating a carrier messaging app](../creating-a-carrier-messaging-app.md)
 
-#### Discussion
+## Discussion
 
 Use a `for`-`await`-`in` loop to iterate over this asynchronous sequence and receive updates about service availability.
 

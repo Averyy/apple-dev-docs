@@ -21,7 +21,7 @@ A `String.StandardComparator` value.
 var stringComparator: String.StandardComparator? { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property is non-`nil` when the `SortDescriptor` value is created with one.
 

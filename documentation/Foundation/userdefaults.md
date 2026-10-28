@@ -31,7 +31,7 @@ class UserDefaults
 - [Adding a settings interface to your app](./adding-a-settings-interface-to-your-app.md)
 - [Using the file system effectively](./using-the-file-system-effectively.md)
 
-#### Overview
+## Overview
 
 A `UserDefaults` object provides access to the defaults system, which is a persistent store for app-specific and system-wide settings. You use this system to store nonsensitive information, such as app-specific configuration details. The system also stores configuration details that apply to all apps, such as the current language settings for the device. In your code, you check values from this system and use them to dynamically alter your app’s appearance or behavior. The term *defaults* refers to the fact that the stored data determines the default startup state and behavior.
 
@@ -51,7 +51,7 @@ The `UserDefaults` type is thread-safe, and you can use the same object in multi
 
 > ❗ **Important**: This API has the potential of being misused to access device signals to try to identify the device or user, also known as fingerprinting. Regardless of whether a user gives your app permission to track, fingerprinting is not allowed. When you use this API in your app or third-party SDK (an SDK not provided by Apple), declare your usage and the reason for using the API in your app or third-party SDK’s `PrivacyInfo.xcprivacy` file. For more information, including the list of valid reasons for using the API, see [Describing use of required reason API](../BundleResources/describing-use-of-required-reason-api.md).
 
-##### Domains and settings search paths
+### Domains and settings search paths
 
 To integrate settings from different sources, the defaults system organizes them into domains. An app defines its own custom settings, but the system defines settings that apply to all apps. Similarly, you might choose to override a specific setting temporarily to test one of your app’s features. The defaults system provides domains for each of these cases along with several others.
 
@@ -69,7 +69,7 @@ When you request the value of a setting, the `UserDefaults` object searches its 
 
 The system stores data for most persistent domains on the current device, and doesn’t share that data with other devices. To share settings among all of a person’s devices, save them using an [`NSUbiquitousKeyValueStore`](./nsubiquitouskeyvaluestore.md) object instead.
 
-##### Settings in managed environments
+### Settings in managed environments
 
 If your app supports managed environments, an administrator might configure any managed devices with a default set of settings. For example, in a computer lab or classrom environment, a teacher might set default settings that the lessons require. Apps can’t write to managed domains, so if your app encounters a managed setting, disable or hide any controls that someone might use to change that setting’s value. To determine if a setting is managed, call the [`objectIsForced(forKey:)`](./userdefaults/objectisforced%28forkey%29.md) or [`objectIsForced(forKey:inDomain:)`](./userdefaults/objectisforced%28forkey,indomain%29.md) method of your `UserDefaults` object.
 
@@ -77,7 +77,7 @@ An app running on a managed device can use [`NSUbiquitousKeyValueStore`](./nsubi
 
 For more details about managing devices, see [Device Management](../DeviceManagement/DeviceManagement.md).
 
-##### Sandbox considerations
+### Sandbox considerations
 
 A sandboxed app cannot access or modify the settings of another app or process, with the following exceptions:
 

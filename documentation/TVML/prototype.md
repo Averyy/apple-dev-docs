@@ -5,15 +5,15 @@
 
 Associates a data item type with an element.
 
-#### Overview
+## Overview
 
 Use the `prototype` attribute to associate the data item’s type with a particular element.
 
-##### Value for prototype
+### Value for prototype
 
 - **String**: The string value associated with the `type` property in the associated data item.
 
-##### Elements that Use prototype
+### Elements that Use prototype
 
 - Any element contained in a [section](./section.md).
 

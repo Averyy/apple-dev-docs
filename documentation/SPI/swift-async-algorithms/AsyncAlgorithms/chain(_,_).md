@@ -23,7 +23,7 @@ Returns a new asynchronous sequence that iterates over the two given asynchronou
 func chain<Base1, Base2>(_ s1: Base1, _ s2: Base2) -> AsyncChain2Sequence<Base1, Base2> where Base1 : AsyncSequence, Base2 : AsyncSequence, Base1.Element == Base2.Element
 ```
 
-#### Return Value
+## Return Value
 
 An asynchronous sequence that iterates first over the elements of `s1`, and then over the elements of `s2`.
 

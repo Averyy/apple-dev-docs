@@ -25,7 +25,7 @@ var value: GCPoint2 { get }
 @property (readonly) GCPoint2 value;
 ```
 
-#### Discussion
+## Discussion
 
 The values of the coordinates range between `-1` and `1` where `(0,0)` is the fixed origin. Game Controller deadzones and saturates the values so there’s no value outside this range. A zero coordinate is inside the deadzone and any coordinate greater than or less than zero is outside the deadzone.
 

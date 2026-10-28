@@ -20,7 +20,7 @@ Adds a renderer to the list of renderers under the synchronizer’s control and 
 func sampleBufferReceiver(adding renderer: AVSampleBufferVideoRenderer) -> sending AVSampleBufferVideoRenderer.Receiver
 ```
 
-#### Return Value
+## Return Value
 
 A sample buffer receiver to enqueue samples asynchronously in a detached Task
 

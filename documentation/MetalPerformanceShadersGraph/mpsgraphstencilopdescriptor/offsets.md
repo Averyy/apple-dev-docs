@@ -24,7 +24,7 @@ var offsets: [NSNumber] { get set }
 @property (nonatomic, copy, readwrite) MPSShape * offsets;
 ```
 
-#### Discussion
+## Discussion
 
 Only used when `paddingStyle` is `MPSGraphPaddingStyleExplicitOffset`. For example zero offset means that the first stencil window will align its top-left corner (in 4 dimensions) to the top-left corner of the input tensor. Default value: `@[ @0, @0, @0, @0 ]`
 

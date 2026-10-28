@@ -25,11 +25,11 @@ func TXTRecordGetCount(_ txtLen: UInt16, _ txtRecord: UnsafeRawPointer!) -> UInt
 uint16_t TXTRecordGetCount(uint16_t txtLen, const void *txtRecord);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the total number of keys in the TXT Record.
 
-#### Discussion
+## Discussion
 
 The count can be used with TXTRecordGetItemAtIndex() to iterate through the keys.
 

@@ -24,7 +24,7 @@ var timeRange: CMTimeRange { get }
 @property (nonatomic, readonly) CMTimeRange timeRange;
 ```
 
-#### Discussion
+## Discussion
 
 If the time range is invalid, the video compositor will ignore it. See also the requirements of the [`timeRange`](./timerange.md) property in the array of objects implementing the [`AVVideoCompositionInstructionProtocol`](../avvideocompositioninstructionprotocol.md) protocol as described in the [`AVVideoComposition`](../avvideocomposition.md) class’s [`instructions`](../avvideocomposition/instructions.md) property.
 

@@ -25,7 +25,7 @@ func NSCountHashTable(_ table: NSHashTable<AnyObject>) -> Int
 extern NSUInteger NSCountHashTable(NSHashTable *table);
 ```
 
-#### Return Value
+## Return Value
 
 The number of elements currently in `table`.
 

@@ -19,11 +19,11 @@
 static SPAngleFloat SPRotation3DFloatGetAngle(SPRotation3DFloat rotation);
 ```
 
-#### Return Value
+## Return Value
 
 An angle structure.
 
-#### Discussion
+## Discussion
 
 Returns the angle, in radians, of the normalized underlying quaternion.
 

@@ -10,7 +10,7 @@ framework: "Swift-Org/EmbeddedSwift"
 
 Get the tools needed to use Embedded Swift.
 
-#### Overview
+## Overview
 
 The best way to install Swift for embedded development is using [swiftly](http://github.com/swiftlang/swiftly), the official Swift toolchain installer and manager. Since Embedded Swift is still experimental and not yet supported in public Swift releases, you’ll need to use a development toolchain.
 

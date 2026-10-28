@@ -15,7 +15,7 @@ The database containing shared records accepted by the current user.
 readonly attribute CloudKit.Database sharedCloudDatabase;
 ```
 
-#### Discussion
+## Discussion
 
 The shared database allows the current user (a participant) to access records shared by other users (owners). Shared records are stored in the owner’s container and count towards the owner’s iCloud account storage quota.
 

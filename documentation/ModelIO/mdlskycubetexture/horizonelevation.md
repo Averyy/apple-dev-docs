@@ -24,7 +24,7 @@ var horizonElevation: Float { get set }
 @property (nonatomic, assign) float horizonElevation;
 ```
 
-#### Discussion
+## Discussion
 
 By default, Model I/O renders an infinite sky above and below. If you set the [`groundColor`](./groundcolor.md) property, Model I/O renders a solid color for all areas of the cube texture below this elevation. An elevation of `0.0` renders a horizon at the center elevation of the sky cube; negative values lead to a lower horizon and positive values to a higher horizon.
 

@@ -19,7 +19,7 @@ Returns a Boolean value that indicates whether this feature set is a subset of t
 func isSubset(of other: FeatureSet) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the feature set is a subset of `other`; otherwise, `false`.
 

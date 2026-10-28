@@ -21,7 +21,7 @@ func setPrefersEchoCancelledInput(_ value: Bool) throws
 - (BOOL) setPrefersEchoCancelledInput:(BOOL) value error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 Apps may want to record the built-in microphone’s input while also playing audio with the built-in speaker. Enabling echo-canceled input is useful when the app needs the input signal to be clear of any echoes from the audio playing out of the built-in speaker.
 

@@ -10,7 +10,7 @@ Publish and manage Apple News Format articles.
 
 - [Getting Started as an Apple News Publisher](../AppleNews/getting-started-as-an-apple-news-publisher.md)
 
-#### Overview
+## Overview
 
 The Apple News API delivers Apple News Format articles to be published in the Apple News app and helps you manage and monitor those articles after they’ve been published.
 

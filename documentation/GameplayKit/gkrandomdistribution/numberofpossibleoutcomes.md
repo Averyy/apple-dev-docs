@@ -24,7 +24,7 @@ var numberOfPossibleOutcomes: Int { get }
 @property (nonatomic, assign, readonly) NSUInteger numberOfPossibleOutcomes;
 ```
 
-#### Discussion
+## Discussion
 
 When using the [`GKRandomDistribution`](../gkrandomdistribution.md) directly, this property is determined by the [`lowestValue`](./lowestvalue.md) and [`highestValue`](./highestvalue.md) properties according to the formula `number = highest - lowest + 1`. For example, in a distribution whose lowest value is 1 and highest value is 4, the [`nextInt()`](./nextint%28%29.md) method can return `1`, `2`, `3`, or `4`, and the [`nextUniform()`](./nextuniform%28%29.md) method can return `0.25`, `0.5`, `0.75`, or `1.0`, so the number of possible outcomes is 4.
 

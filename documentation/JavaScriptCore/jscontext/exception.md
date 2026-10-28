@@ -24,7 +24,7 @@ var exception: JSValue! { get set }
 @property (strong) JSValue * exception;
 ```
 
-#### Discussion
+## Discussion
 
 Before performing a callback from JavaScript to an Objective-C or Swift block or method, the context preserves the prior value of this property and then sets its value to `nil`. After the callback has completed, the context reads the new value of the [`exception`](./exception.md) property—if this value is not nil, the context treats the value as an exception to be thrown in JavaScript as a result of the callback. After reading the property (and possibly throwing a JavaScript exception), the context restores the prior value of this property.
 

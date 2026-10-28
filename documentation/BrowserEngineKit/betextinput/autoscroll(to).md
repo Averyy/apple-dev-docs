@@ -27,7 +27,7 @@ func autoscroll(to point: CGPoint)
 
 - [Integrating custom browser text views with UIKit](../integrating-custom-browser-text-views-with-uikit.md)
 
-#### Discussion
+## Discussion
 
 The text system calls the method repeatedly when a gesture requires the text view to scroll, for example, when a person adjusts the text selection range, or places the text cursor. The text system sends [`cancelAutoscroll()`](./cancelautoscroll%28%29.md) when there are no further updates.
 

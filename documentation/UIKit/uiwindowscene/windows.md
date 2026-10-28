@@ -23,7 +23,7 @@ var windows: [UIWindow] { get }
 @property (nonatomic, readonly) NSArray<UIWindow *> * windows;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to retrieve the windows associated with the scene. To remove the window from the current scene, or move it to a different scene, change the value of the window’s [`windowScene`](../uiwindow/windowscene.md) property.
 

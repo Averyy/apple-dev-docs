@@ -20,11 +20,11 @@ Creates a new column of machine learning dictionaries by converting the elements
 init(dictionaries: MLUntypedColumn)
 ```
 
-#### Return Value
+## Return Value
 
 A new untyped column of doubles; otherwise an invalid column if any element of the given column cannot be converted to [`MLDataValue.DictionaryType`](../mldatavalue/dictionarytype.md).
 
-#### Discussion
+## Discussion
 
 Use this initializer to create a column of dictionaries from another column. As an example, to create a column with this initializer, first start with a column that is convertible to dictionaries.
 

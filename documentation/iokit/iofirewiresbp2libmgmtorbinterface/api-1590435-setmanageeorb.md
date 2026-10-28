@@ -16,11 +16,11 @@ Sets the command to be managed by the management ORB.
 IOReturn (*setManageeORB)(void *self, void *command);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess on a success.
 
-#### Discussion
+## Discussion
 
 All management functions except kFWSBP2QueryLogins require a reference to an ORB of some sort. kFWSBP2AbortTask requires a reference to the ORB to be aborted. This method allows you to set the Normal Command ORB to be managed.
 

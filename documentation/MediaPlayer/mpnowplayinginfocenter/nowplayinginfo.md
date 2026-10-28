@@ -29,7 +29,7 @@ var nowPlayingInfo: [String : Any]? { get set }
 
 - [Providing animated artwork for media items](../providing-animated-artwork-for-media-items.md)
 
-#### Discussion
+## Discussion
 
 To clear the now playing info center dictionary, set it to `nil`.
 

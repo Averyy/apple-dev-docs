@@ -23,11 +23,11 @@ func layoutAttributesForDecorationView(ofKind elementKind: String, at indexPath:
 - (UICollectionViewLayoutAttributes *) layoutAttributesForDecorationViewOfKind:(NSString *) elementKind atIndexPath:(NSIndexPath *) indexPath;
 ```
 
-#### Return Value
+## Return Value
 
 A layout attributes object containing the information to apply to the decoration view.
 
-#### Discussion
+## Discussion
 
 If your layout object defines any decoration views, you must override this method and use it to return layout information for those views.
 

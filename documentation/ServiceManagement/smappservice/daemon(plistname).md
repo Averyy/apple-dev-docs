@@ -20,11 +20,11 @@ class func daemon(plistName: String) -> Self
 + (instancetype) daemonServiceWithPlistName:(NSString *) plistName;
 ```
 
-#### Return Value
+## Return Value
 
 An `SMService` object
 
-#### Discussion
+## Discussion
 
 The property list name must correspond to a property list in the calling app’s `Contents/Library/LaunchDaemons` directory
 

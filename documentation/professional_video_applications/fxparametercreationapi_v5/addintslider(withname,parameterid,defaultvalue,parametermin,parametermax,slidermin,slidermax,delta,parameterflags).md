@@ -20,7 +20,7 @@ func addIntSlider(withName name: String, parameterID: UInt32, defaultValue: Int3
 - (BOOL) addIntSliderWithName:(NSString *) name parameterID:(UInt32) parameterID defaultValue:(int) defaultValue parameterMin:(int) min parameterMax:(int) max sliderMin:(int) sliderMin sliderMax:(int) sliderMax delta:(int) sliderDelta parameterFlags:(FxParameterFlags) flags;
 ```
 
-#### Return Value
+## Return Value
 
 Returns `YES` if the application successfully creates an integer slider parameter; `NO` otherwise.
 

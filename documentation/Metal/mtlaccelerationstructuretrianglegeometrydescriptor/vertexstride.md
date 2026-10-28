@@ -24,7 +24,7 @@ var vertexStride: Int { get set }
 @property (nonatomic) NSUInteger vertexStride;
 ```
 
-#### Discussion
+## Discussion
 
 The stride needs to be at least 12 bytes and needs to be a multiple of 4 bytes. The default value is 12 bytes.
 

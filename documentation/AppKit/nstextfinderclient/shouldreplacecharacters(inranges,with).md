@@ -19,11 +19,11 @@ optional func shouldReplaceCharacters(inRanges ranges: [NSValue], with strings: 
 - (BOOL) shouldReplaceCharactersInRanges:(NSArray<NSValue *> *) ranges withStrings:(NSArray<NSString *> *) strings;
 ```
 
-#### Return Value
+## Return Value
 
 Returns [`true`](../../Swift/true.md) if the replacement should occur; otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 See [`NSTextFinder`](../nstextfinder.md) for a complete description.
 

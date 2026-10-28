@@ -26,11 +26,11 @@ func prepare(_ object: Any, shouldAbortBlock block: (() -> Bool)? = nil) -> Bool
 - (BOOL) prepareObject:(id) object shouldAbortBlock:(BOOL (^)()) block;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the object was successfully prepared for rendering, or [`false`](../../Swift/false.md) if preparation was canceled.
 
-#### Discussion
+## Discussion
 
 By default, SceneKit lazily loads resources onto the GPU for rendering. This approach uses memory and GPU bandwidth efficiently, but can lead to stutters in an otherwise smooth frame rate when you add large amounts of new content to an animated scene. To avoid such issues, use this method to prepare content for drawing before adding it to the scene. You can call this method on a secondary thread to prepare content asynchronously.
 

@@ -12,7 +12,7 @@ The path of the target, relative to the package root.
 final var path: String?
 ```
 
-#### Discussion
+## Discussion
 
 If the path is `nil`, Swift Package Manager looks for a target’s source files at predefined search paths and in a subdirectory with the target’s name.
 

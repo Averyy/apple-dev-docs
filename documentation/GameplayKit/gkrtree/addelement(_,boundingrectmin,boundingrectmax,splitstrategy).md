@@ -24,7 +24,7 @@ func addElement(_ element: ElementType, boundingRectMin: vector_float2, bounding
 - (void) addElement:(ElementType) element boundingRectMin:(vector_float2) boundingRectMin boundingRectMax:(vector_float2) boundingRectMax splitStrategy:(GKRTreeSplitStrategy) splitStrategy;
 ```
 
-#### Discussion
+## Discussion
 
 The bounding region of each object you add to the tree (specified with the `boundingRectMin` and `boundingRectMax` parameters) defines the location and size of that object in space. When you add an object, depending on the relation of that size and position to those of other objects in the tree, the tree may reorganize its internal structure so that later searches of the tree (with the [`elements(inBoundingRectMin:rectMax:)`](./elements%28inboundingrectmin,rectmax%29.md)) can perform more quickly.
 

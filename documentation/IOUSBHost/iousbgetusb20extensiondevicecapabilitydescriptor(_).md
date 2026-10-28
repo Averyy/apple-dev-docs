@@ -20,11 +20,11 @@ func IOUSBGetUSB20ExtensionDeviceCapabilityDescriptor(_ bosDescriptor: UnsafePoi
 const IOUSBDeviceCapabilityUSB2Extension *IOUSBGetUSB20ExtensionDeviceCapabilityDescriptor(const IOUSBBOSDescriptor *bosDescriptor);
 ```
 
-#### Return Value
+## Return Value
 
 The device capability extension pointer, or `nil` if no matching descriptor returns.
 
-#### Discussion
+## Discussion
 
 This method uses [`IOUSBGetNextCapabilityDescriptorWithType(_:_:_:)`](./iousbgetnextcapabilitydescriptorwithtype%28_,_,_%29.md) to find the first device capability extension.
 

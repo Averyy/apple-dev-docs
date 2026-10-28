@@ -25,7 +25,7 @@ let kCFTypeDictionaryKeyCallBacks: CFDictionaryKeyCallBacks
 extern const CFDictionaryKeyCallBacks kCFTypeDictionaryKeyCallBacks;
 ```
 
-#### Discussion
+## Discussion
 
 The retain callback is `CFRetain`, the release callback is `CFRelease`, the copy callback is `CFCopyDescription`, the equal callback is `CFEqual`. Therefore, if you use a pointer to this constant when creating the dictionary, keys are automatically retained when added to the collection, and released when removed from the collection.
 

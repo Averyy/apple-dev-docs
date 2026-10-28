@@ -25,7 +25,7 @@ A collection of views to preview.
 @MainActor @preconcurrency static var previews: Self.Previews { get }
 ```
 
-#### Discussion
+## Discussion
 
 Implement a computed `previews` property to indicate the content to preview. Xcode generates a preview for each view that you list. You can apply [`View`](../view.md) modifiers to the views, like you do when creating a custom view. For a preview, you can also use various preview-specific modifiers that customize the preview. For example, you can choose a specific device for the preview by adding the [`previewDevice(_:)`](../view/previewdevice%28_%29.md) modifier:
 

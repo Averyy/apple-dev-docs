@@ -9,7 +9,7 @@ Get an external purchase report by providing its request identifier.
 **Availability**:
 - External Purchase Server API 1.0.0+
 
-#### Discussion
+## Discussion
 
 Call this endpoint to retrieve an external purchase report that you successfully sent to Apple. This endpoint takes the `requestIdentifier` that you create when you call [`Send External Purchase Report`](./send-external-purchase-report.md), for reports that were successfully submitted.
 

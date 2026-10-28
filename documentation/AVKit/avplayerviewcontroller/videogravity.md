@@ -23,7 +23,7 @@ var videoGravity: AVLayerVideoGravity { get set }
 @property (nonatomic, copy) AVLayerVideoGravity videoGravity;
 ```
 
-#### Discussion
+## Discussion
 
 The player view controller supports the following video gravity values: [`resizeAspect`](../../AVFoundation/avlayervideogravity/resizeaspect.md), [`resizeAspectFill`](../../AVFoundation/avlayervideogravity/resizeaspectfill.md), and [`resize`](../../AVFoundation/avlayervideogravity/resize.md).
 

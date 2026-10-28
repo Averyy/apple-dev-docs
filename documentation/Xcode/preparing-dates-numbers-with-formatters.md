@@ -5,13 +5,13 @@
 
 Ensure that dates, currencies, and numbers display correctly across multiple languages and locales by using formatters.
 
-#### Overview
+## Overview
 
 Languages and regions have different formats for presenting dates and numbers. Some languages use the period (.) as a decimal separator, and others use the comma (,). Some place the percent sign before the number when formatting percentages. And many regions display time and date differently, despite being part of the same language.
 
 Instead of trying to account for all these variations yourself, use the formatters built into Foundation to create localizable versions of the dates and numbers you want to present.
 
-##### Format dates with predefined styles
+### Format dates with predefined styles
 
 To convert a date or number into a localizable string, use the Foundation formatters and styles. These APIs take instances of your date and number objects, and convert them into localizable formatted strings according to the locale of the device your app is running on.
 
@@ -45,7 +45,7 @@ let formattedDateAndTime = meetingDate.formatted(date: .complete, time: .complet
 // "Friday, August 25, 2023 at 12:03:10 PM PDT"
 ```
 
-##### Create your own custom date styles
+### Create your own custom date styles
 
 To format a date to a specific style, create your own custom date style including only the date properties you want to display.
 
@@ -100,7 +100,7 @@ let fileNameFormat = date.formatted(.iso8601.year().month().day().dateSeparator(
 // "2023-09-07"
 ```
 
-##### Format percents and scientific numbers
+### Format percents and scientific numbers
 
 If you want to create a localizable string for a number (such as [`Int`](../Swift/int.md), [`Double`](../Swift/double.md), [`Decimal`](../Foundation/decimal.md), or [`Float`](../Swift/float.md)), call `formatted()` or `formatted(_:)` on the number instance, along with the format style to display.
 
@@ -137,7 +137,7 @@ let scientificFormatted = scientific.formatted(.number.notation(.scientific))
 // "4.2E10"
 ```
 
-##### Format currencies
+### Format currencies
 
 To present a number as a localizable currency:
 
@@ -158,7 +158,7 @@ amount.formatted(.currency(code: "USD").grouping(.automatic))
 
 > **Note**: To ensure accuracy, don’t use [`Float`](../Swift/float.md) or [`Double`](../Swift/double.md) to represent currency in your app. Use [`Decimal`](../Foundation/decimal.md) instead.
 
-##### Format times as intervals or durations
+### Format times as intervals or durations
 
 To display an interval of time as a localizable string:
 
@@ -217,7 +217,7 @@ Duration.seconds(2000).formatted(.time(pattern: .minuteSecond))
 // "33:20"
 ```
 
-##### Format items as lists
+### Format items as lists
 
 To create a localizable string in the form of a list, use the [`ListFormatStyle`](../Foundation/listformatstyle.md) structure along with either the [`formatted()`](../Swift/sequence/formatted%28%29.md) or [`formatted(_:)`](../Swift/sequence/formatted%28_%29.md) function to create a string representation of a [`Sequence`](../Swift/sequence.md) of items.
 
@@ -240,7 +240,7 @@ You can also create lists using different formatting styles by calling the [`lis
 // "25%, 50%, or 75%"
 ```
 
-##### Convert and display measurement units across different locales
+### Convert and display measurement units across different locales
 
 Units of measure vary significantly depending on the locale the format style uses. For example, a distance in feet for the `en_US` locale appears as meters using the French locale `fr_FR`.
 
@@ -287,7 +287,7 @@ distanceToMoon.formatted(.measurement(width: .narrow))
 // "238,855mi"
 ```
 
-##### Format dates and numbers in SwiftUI
+### Format dates and numbers in SwiftUI
 
 To format dates and numbers in SwiftUI, use the `format` initializers on SwiftUI view controls to customize how those strings display.
 
@@ -319,7 +319,7 @@ var body: some View {
 }
 ```
 
-#### Test the formatters
+## Test the formatters
 
 To test and see how your formatters display in different languages and regions, create an instance of a [`Locale`](../Foundation/locale.md) object, passing in the `identifier` of the region you want to test. Then set that locale on the output of your formatted string to see how that string displays in that language and region.
 

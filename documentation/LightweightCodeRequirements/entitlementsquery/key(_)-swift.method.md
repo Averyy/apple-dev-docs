@@ -21,7 +21,7 @@ Match the specified key in a nested dictionary
 func key(_ keyName: String) -> EntitlementsQuery
 ```
 
-#### Discussion
+## Discussion
 
 Keys are matched byte for byte (i.e. no unicode normalization occurs).
 

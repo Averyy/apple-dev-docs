@@ -20,11 +20,11 @@ string Delegation.ResourceType
 - `CONTENT_PROVIDER`: A content provider resource associated with the ad account. Its `resourceId` is the Content Provider ID (CPID).
 - `BUSINESS_BRAND`: A Brand resource delegated from an organization. Its `resourceId` is the Brand ID.
 
-#### Discussion
+## Discussion
 
 This mirrors the `resourceType` set when the delegation was created or last updated, and continues to determine whether `resourceId` is a Content Provider ID or a Brand ID.
 
-##### Example
+### Example
 
 ```json
 {

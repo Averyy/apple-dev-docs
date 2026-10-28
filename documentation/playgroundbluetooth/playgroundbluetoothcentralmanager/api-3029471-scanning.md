@@ -16,7 +16,7 @@ A Boolean value that determines whether the central manager is scanning for peri
 var scanning: Bool { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Set this property to [`true`](../../Swift/true.md) to start scanning for peripherals. Upon discovering a peripheral, the central manager calls the delegate’s [`centralManager(_:didDiscover:withAdvertisementData:rssi:)`](../playgroundbluetoothcentralmanagerdelegate/api-3029478-centralmanager.md) method.
 

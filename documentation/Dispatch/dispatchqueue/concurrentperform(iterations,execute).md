@@ -22,7 +22,7 @@ Submits a single block to the dispatch queue and causes the block to be executed
 class func concurrentPerform(iterations: Int, execute work: @Sendable (Int) -> Void)
 ```
 
-#### Discussion
+## Discussion
 
 This method implements an efficient parallel for-loop. The dispatch queue executes the submitted block the specified number of times and waits for all iterations to complete before returning. If the target queue is a concurrent queue, the blocks run in parallel and must therefore be reentrant-safe.
 

@@ -21,11 +21,11 @@ Determines whether the observation has a minimum precision value for a specific 
 func hasMinimumPrecision(_ minimumPrecision: Float, forRecall recall: Float) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that indicates whether the classification observation provides a minimum percentage of correct results that meet the desired recall.
 
-#### Discussion
+## Discussion
 
 The following example uses the `hasMinimumPrecision(_:forRecall)` method to perform a high-recall filter on the results of a `ClassifyImageRequest`:
 

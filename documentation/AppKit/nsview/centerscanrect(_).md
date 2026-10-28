@@ -19,11 +19,11 @@ func centerScanRect(_ rect: NSRect) -> NSRect
 - (NSRect) centerScanRect:(NSRect) rect;
 ```
 
-#### Return Value
+## Return Value
 
 The adjusted rectangle.
 
-#### Discussion
+## Discussion
 
 This method converts the given rectangle to device coordinates, adjusts the rectangle to lie in the center of the pixels, and converts the resulting rectangle back to the view’s coordinate system. Note that this method does not take into account any transformations performed using the [`NSAffineTransform`](../../Foundation/nsaffinetransform.md) class or Quartz 2D routines.
 

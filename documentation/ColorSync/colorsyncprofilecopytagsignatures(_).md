@@ -25,7 +25,7 @@ func ColorSyncProfileCopyTagSignatures(_ prof: ColorSyncProfile!) -> Unmanaged<C
 extern CFArrayRefColorSyncProfileCopyTagSignatures(ColorSyncProfileRef prof);
 ```
 
-#### Return Value
+## Return Value
 
 An array with the signatures (`CFStringRef`) of the tags in the profile.
 

@@ -6,5 +6,8 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ar
 
 # mlx.core.array.cos
 
-**array.cos(*self*, ***, *stream: Stream | ThreadLocalStream | Device | mlx.core.DeviceType | None = None*) → [array](mlx.core.array.md#mlx.core.array)**
-: See [cos()](mlx.core.cos.md#mlx.core.cos).
+```python
+array.cos(self, *, stream: Stream | ThreadLocalStream | Device | mlx.core.DeviceType | None = None) → array
+```
+
+See [cos()](mlx.core.cos.md#mlx.core.cos).

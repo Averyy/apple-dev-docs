@@ -15,7 +15,7 @@ The key in the IORegistry for the IOAudioPort type attribute.
 #define kIOAudioPortTypeKey
 ```
 
-#### Discussion
+## Discussion
 
 This is a driver-defined text attribute that may contain any type. Common types are defined as: "Speaker", "Headphones", "Microphone", "CD", "Line", "Digital", "Mixer", "PassThru".
 

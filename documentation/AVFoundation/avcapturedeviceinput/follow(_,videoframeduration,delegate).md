@@ -23,7 +23,7 @@ func follow(_ externalSyncDevice: AVExternalSyncDevice, videoFrameDuration frame
 - (void) followExternalSyncDevice:(AVExternalSyncDevice *) externalSyncDevice videoFrameDuration:(CMTime) frameDuration delegate:(id<AVExternalSyncDeviceDelegate>) delegate;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method to direct your [`AVCaptureDeviceInput`](../avcapturedeviceinput.md) to follow the external sync pulse from a sync device at the given frame duration.
 

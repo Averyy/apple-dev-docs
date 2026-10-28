@@ -21,11 +21,11 @@ Creates a decompression random-access input stream.
 static func randomAccessDecompressionStream(readingFrom compressedStream: ArchiveByteStream, allocationLimit: Int = Int.max, flags: ArchiveFlags = [], threadCount: Int = 0) -> ArchiveByteStream?
 ```
 
-#### Return Value
+## Return Value
 
 A new archive byte stream.
 
-#### Discussion
+## Discussion
 
 The operation reads compressed data from the suppled archive byte stream, `compressedStream`. The stream that the function returns implements read and seek methods.
 

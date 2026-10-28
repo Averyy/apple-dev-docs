@@ -24,7 +24,7 @@ class func fetchAssetCollections(withLocalIdentifiers identifiers: [String], opt
 + (PHFetchResult<PHAssetCollection *> *) fetchAssetCollectionsWithLocalIdentifiers:(NSArray<NSString *> *) identifiers options:(PHFetchOptions *) options;
 ```
 
-#### Return Value
+## Return Value
 
 A fetch result that contains the requested [`PHAssetCollection`](../phassetcollection.md) objects, or an empty fetch result if no objects match the request.
 

@@ -19,7 +19,7 @@ func indexOfItem(withTitle title: String) -> Int
 - (NSInteger) indexOfItemWithTitle:(NSString *) title;
 ```
 
-#### Return Value
+## Return Value
 
 The index of the item or `-1` if no item with the specified title was found.
 

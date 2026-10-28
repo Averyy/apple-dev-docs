@@ -21,7 +21,7 @@ A typed descriptor for a column in an evaluation result DataFrame.
 struct ResultColumn<Value>
 ```
 
-#### Overview
+## Overview
 
 ```swift
 let column = myEvaluation.inputColumn

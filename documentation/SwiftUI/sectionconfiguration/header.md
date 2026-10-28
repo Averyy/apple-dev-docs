@@ -21,7 +21,7 @@ The contents of the section header.
 var header: SubviewsCollection { get }
 ```
 
-#### Discussion
+## Discussion
 
 Notably, the section’s header is a `SubviewsCollection`, not a `Subview`, as it can be made up of multiple subviews. That means in most cases, the subviews collection should be treated as a collection (either indexed into, or used with a `ForEach`), or the subviews collection should be wrapped in a container view, like a layout, or other custom container:
 

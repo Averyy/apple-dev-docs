@@ -20,11 +20,11 @@ func copyFrame(_ frameNumber: Int64) -> IOSurface!
 - (IOSurface *) copyFrame:(int64_t) frameNumber;
 ```
 
-#### Return Value
+## Return Value
 
 IOSurface-based video frame buffers.
 
-#### Discussion
+## Discussion
 
 Use the values in the [`decodingAttributes()`](./decodingattributes%28%29.md) dictionary to find the video attributes, such as height and pixel ratio, of the decoded frame.
 

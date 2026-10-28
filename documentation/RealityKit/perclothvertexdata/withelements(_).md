@@ -17,11 +17,11 @@ Provides read-only access to the per-vertex data within a callback.
 func withElements<Result>(_ callback: (Span<ElementType>) -> Result) -> Result
 ```
 
-#### Return Value
+## Return Value
 
 The value returned by `callback`.
 
-#### Discussion
+## Discussion
 
 The provided span is only valid for the lifetime of the callback.
 

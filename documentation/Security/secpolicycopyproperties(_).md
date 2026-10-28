@@ -25,7 +25,7 @@ func SecPolicyCopyProperties(_ policyRef: SecPolicy) -> CFDictionary?
 CFDictionaryRefSecPolicyCopyProperties(SecPolicyRef policyRef);
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary with the policy’s properties. See [Security Policy Keys](./security-policy-keys.md) for a list of valid keys. In Objective-C, call the [`CFRelease`](../CoreFoundation/cfrelease.md) function to free the dictionary’s memory when you are done with it.
 

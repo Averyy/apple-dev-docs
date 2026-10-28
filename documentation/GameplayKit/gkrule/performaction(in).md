@@ -24,7 +24,7 @@ func performAction(in system: GKRuleSystem)
 - (void) performActionWithSystem:(GKRuleSystem *) system;
 ```
 
-#### Discussion
+## Discussion
 
 A rule system calls this method when evaluating its rules, if and only if the rule’s predicate has been satisfied (that is, the [`evaluatePredicate(in:)`](./evaluatepredicate%28in%29.md) method has returned [`true`](../../Swift/true.md)), and after moving the rule from its [`agenda`](../gkrulesystem/agenda.md) list to its [`executed`](../gkrulesystem/executed.md) list.
 

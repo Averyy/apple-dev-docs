@@ -17,7 +17,7 @@ A type that filters the device activity data to include in a report.
 struct DeviceActivityFilter
 ```
 
-#### Overview
+## Overview
 
 Your app can choose to filter device activity data for a specific date interval, filter by user and device, as well as specify a subset of applications, categories, and web domains to include in a report.
 

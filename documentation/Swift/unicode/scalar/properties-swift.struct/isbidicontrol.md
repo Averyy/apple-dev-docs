@@ -21,7 +21,7 @@ A Boolean value indicating whether the scalar is a format control character that
 var isBidiControl: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property corresponds to the “Bidi_Control” property in the [Unicode Standard](http://www.unicode.org/versions/latest/).
 

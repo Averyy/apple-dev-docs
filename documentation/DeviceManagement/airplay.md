@@ -18,11 +18,11 @@ The payload that configures AirPlay settings.
 object AirPlay
 ```
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.airplay` as the payload type.
 
-##### Profile availability
+### Profile availability
 
 |  |  |
 | --- | --- |
@@ -34,7 +34,7 @@ Specify `com.apple.airplay` as the payload type.
 | Allowed in user enrollment | iOS, macOS |
 | Allow multiple payloads | iOS, macOS, Shared iPad |
 
-##### Profile example
+### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>

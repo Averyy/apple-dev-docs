@@ -18,7 +18,7 @@ Reports an unrecoverable session error to the system so it can end the session a
 final func sessionFailed(_ session: MediaOutputSession, error: MediaDeviceError)
 ```
 
-#### Discussion
+## Discussion
 
 Call this function when an unrecoverable error is encountered during the session.
 

@@ -19,7 +19,7 @@ init(machServiceName name: String, options: NSXPCConnection.Options = [])
 - (instancetype) initWithMachServiceName:(NSString *) name options:(NSXPCConnectionOptions) options;
 ```
 
-#### Discussion
+## Discussion
 
 For example, if an agent is managed with `launchd` and has a `launchd.plist` in `~/Library/LaunchAgents`, this method would create a connection to that agent. The agent should use [`NSXPCListener`](../nsxpclistener.md) to wait for new connections.
 

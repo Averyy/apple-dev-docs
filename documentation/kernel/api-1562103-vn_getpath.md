@@ -15,11 +15,11 @@ Construct the path to a vnode.
 int vn_getpath(struct vnode *vp, char *pathbuf, int *len);
 ```
 
-#### Return Value
+## Return Value
 
 0 for success or an error code.
 
-#### Discussion
+## Discussion
 
 Paths to vnodes are not always straightforward: a file with multiple hard-links will have multiple pathnames, and it is sometimes impossible to determine a vnode's full path. vn_getpath() will not enter the filesystem.
 

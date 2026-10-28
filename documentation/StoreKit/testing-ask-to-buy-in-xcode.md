@@ -5,24 +5,24 @@
 
 Validate your app’s handling of Ask To Buy in the testing environment.
 
-#### Overview
+## Overview
 
 With Ask to Buy, when a child wants to make an eligible purchase or download, the system sends the purchase request to the parent or guardian. For more information, see [Approve what kids buy with Ask to Buy](https://support.apple.com/105055).
 
 You can test approving and declining Ask to Buy purchases in the Xcode testing environment. Use the StoreKit configuration file to set up and control the test case.
 
-##### Perform basic setup
+### Perform basic setup
 
 Before you can begin testing in Xcode, complete the steps in [Setting up StoreKit Testing in Xcode](../Xcode/setting-up-storekit-testing-in-xcode.md), to create a StoreKit configuration file and enable StoreKit testing in Xcode.
 
-##### Enable Ask to Buy for testing
+### Enable Ask to Buy for testing
 
 Open the StoreKit configuration editor in Xcode and define at least one Apple In-App Purchase. Then follow these steps in the StoreKit configuration editor:
 
 1. In the left pane, select Configuration Settings.
 2. Under the Purchase Options heading in the editor, enable Ask to Buy.
 
-##### Test approving a purchase
+### Test approving a purchase
 
 To test approving a purchase, run your app in the Xcode environment and follow these steps:
 
@@ -33,7 +33,7 @@ To test approving a purchase, run your app in the Xcode environment and follow t
 5. In the Xcode StoreKit transaction manager, verify that the state is now Ask to Buy Approved. In your code, verify the purchase state is [`Product.PurchaseResult.success(_:)`](./product/purchaseresult/success%28_%29.md).
 6. Check that the app unlocks the content and finishes the transaction.
 
-##### Test declining a purchase
+### Test declining a purchase
 
 To test declining a purchase, run your app in the Xcode environment and follow these steps:
 
@@ -45,7 +45,7 @@ To test declining a purchase, run your app in the Xcode environment and follow t
 
 For more information about using the transaction manager, see [Testing in-app purchases with StoreKit transaction manager in Xcode](../Xcode/testing-in-app-purchases-with-storekit-transaction-manager-in-code.md).
 
-##### Reset or rerun the test
+### Reset or rerun the test
 
 You can run the same test again without resetting state values. When you’re done, turn off Ask to Buy to prevent it from affecting future tests.
 

@@ -23,7 +23,7 @@ func ABAddressBookAddRecord(_ addressBook: ABAddressBook!, _ record: ABRecord!, 
 extern bool ABAddressBookAddRecord(ABAddressBookRef addressBook, ABRecordRef record, CFErrorRef*error);
 ```
 
-#### Return Value
+## Return Value
 
 `true` when successful, `false` otherwise.
 

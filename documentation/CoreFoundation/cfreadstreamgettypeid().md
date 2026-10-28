@@ -25,7 +25,7 @@ func CFReadStreamGetTypeID() -> CFTypeID
 extern CFTypeID CFReadStreamGetTypeID();
 ```
 
-#### Return Value
+## Return Value
 
 The type identifier for the `CFReadStream` opaque type.
 

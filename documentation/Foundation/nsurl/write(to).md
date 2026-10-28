@@ -19,7 +19,7 @@ func write(to pasteBoard: NSPasteboard)
 - (void) writeToPasteboard:(NSPasteboard *) pasteBoard;
 ```
 
-#### Discussion
+## Discussion
 
 You must declare an `NSURLPboardType` data type for the pasteboard before invoking this method. Otherwise, the method returns without doing anything.
 

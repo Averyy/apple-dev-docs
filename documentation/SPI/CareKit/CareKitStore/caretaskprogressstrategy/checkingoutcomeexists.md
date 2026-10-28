@@ -17,7 +17,7 @@ A strategy that computes progress for a task by checking for the existence of an
 static var checkingOutcomeExists: CareTaskProgressStrategy<BinaryCareTaskProgress> { get }
 ```
 
-#### Discussion
+## Discussion
 
 The task is considered completed if an [`outcome`](../ockanyevent/outcome.md) exists.
 

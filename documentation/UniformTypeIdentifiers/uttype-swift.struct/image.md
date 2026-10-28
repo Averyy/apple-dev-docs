@@ -21,7 +21,7 @@ A base type that represents image data.
 static var image: UTType { get }
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.image`.
 

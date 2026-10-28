@@ -25,11 +25,11 @@ func CFBagGetTypeID() -> CFTypeID
 extern CFTypeID CFBagGetTypeID();
 ```
 
-#### Return Value
+## Return Value
 
 The type identifier for the CFBag opaque type.
 
-#### Discussion
+## Discussion
 
 CFMutableBag objects have the same type identifier as CFBag objects.
 

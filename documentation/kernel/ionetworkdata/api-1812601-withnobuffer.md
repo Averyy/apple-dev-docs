@@ -17,11 +17,11 @@ static IONetworkData * withNoBuffer(
  void *param = 0);
 ```
 
-#### Return Value
+## Return Value
 
 Returns an IONetworkData object on success, or 0 otherwise.
 
-#### Overview
+## Overview
 
 The notification handler must intervene when the IONetworkData is accessed.
 

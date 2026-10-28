@@ -17,7 +17,7 @@ Returns a file wrapper object that represents the data of the receiver in a give
 - (NSFileWrapper *) fileWrapperRepresentationOfType:(NSString *) type;
 ```
 
-#### Discussion
+## Discussion
 
 Returns an `NSFileWrapper` object that represents the data of the receiver in a given type (`aType`). This method invokes `dataRepresentationOfType:` to get the data object from which to create a plain-file file wrapper. Subclasses can override this method if `dataRepresentationOfType:` is not adequate for their needs. This method is invoked by the default implementation of [`writeToFile:ofType:`](./writetofile_oftype_.md).
 

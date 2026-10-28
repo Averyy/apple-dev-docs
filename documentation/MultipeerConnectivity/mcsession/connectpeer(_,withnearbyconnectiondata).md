@@ -24,7 +24,7 @@ func connectPeer(_ peerID: MCPeerID, withNearbyConnectionData data: Data)
 - (void) connectPeer:(MCPeerID *) peerID withNearbyConnectionData:(NSData *) data;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method to connect to peers when you are using your own service discovery code instead of an `MCNearbyServiceBrowser` or `MCBrowserViewController` object. For more information, see the [Managing Peers Manually](../mcsession.md#Managing-Peers-Manually) section in the overview of the `MCSession` class reference.
 

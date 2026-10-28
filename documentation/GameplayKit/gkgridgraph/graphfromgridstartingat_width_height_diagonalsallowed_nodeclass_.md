@@ -20,11 +20,11 @@ Creates a graph that describes an integer grid with the specified dimensions, us
 + (instancetype) graphFromGridStartingAt:(vector_int2) position width:(int) width height:(int) height diagonalsAllowed:(BOOL) diagonalsAllowed nodeClass:(Class) nodeClass;
 ```
 
-#### Return Value
+## Return Value
 
 A new grid graph.
 
-#### Discussion
+## Discussion
 
 Use the `nodeClass` parameter to create a graph using a custom subclass of [`GKGridGraphNode`](../gkgridgraphnode.md). For example, your custom node class might override the [`cost(to:)`](../gkgraphnode/cost%28to%29.md) method so that some nodes are more costly than others to travel through. Pathfinding in such a graph would favor indirect routes when a direct route has a higher cost.
 

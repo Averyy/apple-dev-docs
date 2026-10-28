@@ -23,7 +23,7 @@ func copy(to cvPixelBuffer: CVPixelBuffer, cvImageFormat: vImageCVImageFormat, c
 
 Available when `Format` conforms to `SinglePlanePixelFormat`.
 
-#### Discussion
+## Discussion
 
 The destination Core Video pixel buffer must be nonplanar and be the same size as the source buffer.
 

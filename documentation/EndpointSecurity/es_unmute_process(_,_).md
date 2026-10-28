@@ -19,11 +19,11 @@ func es_unmute_process(_ client: OpaquePointer, _ audit_token: UnsafePointer<aud
 extern es_return_t es_unmute_process(es_client_t *client, const audit_token_t *audit_token);
 ```
 
-#### Return Value
+## Return Value
 
 A value that indicates whether the unmute request succeeded or failed with an error.
 
-#### Discussion
+## Discussion
 
 To unmute a subset of events from a process, use [`es_unmute_process_events(_:_:_:_:)`](./es_unmute_process_events%28_,_,_,_%29.md).
 

@@ -24,7 +24,7 @@ static var atHome: HMPresenceEventType { get }
 HMPresenceEventTypeAtHome
 ```
 
-#### Discussion
+## Discussion
 
 A convenience value for use in predicates on [`HMEventTrigger`](../hmeventtrigger.md). Represents the presence of at least one user in the home.
 

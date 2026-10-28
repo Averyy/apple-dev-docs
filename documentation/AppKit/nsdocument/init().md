@@ -19,11 +19,11 @@ init()
 - (instancetype) init;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized `NSDocument` object.
 
-#### Discussion
+## Discussion
 
 This initializer (the designated initializer) is invoked by each of the other `NSDocument` initialization methods.
 

@@ -16,7 +16,7 @@ func startMeasuring()
 - (void) startMeasuring;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method to start the measurement of metrics by the [`measureMetrics(_:automaticallyStartMeasuring:for:)`](./measuremetrics%28_,automaticallystartmeasuring,for%29.md) method. Measurement will start immediately after this method is called from within the measured block.
 

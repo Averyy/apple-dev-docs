@@ -25,7 +25,7 @@ func nw_quic_get_stream_id(_ metadata: nw_protocol_metadata_t) -> UInt64
 uint64_t nw_quic_get_stream_id(nw_protocol_metadata_t metadata);
 ```
 
-#### Return Value
+## Return Value
 
 The QUIC stream identifier.
 

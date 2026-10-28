@@ -15,13 +15,13 @@ Sort condition for reporting requests.
 object Sorting
 ```
 
-#### Discussion
+## Discussion
 
 The `Sorting` specifies a single sort condition for a reporting request.
 
 Multiple `Sorting` objects can be included in the `sorting` array of a reporting request to apply multi-level sorting: results are sorted by the first entry first, then by subsequent entries for ties. When you omit `sorting`, the API sorts results by entity `id` in ascending order by default.
 
-##### Example
+### Example
 
 ```json
 {

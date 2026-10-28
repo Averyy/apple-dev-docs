@@ -23,7 +23,7 @@ case unavailable
 BGTaskSchedulerErrorCodeUnavailable
 ```
 
-#### Discussion
+## Discussion
 
 This error usually occurs for one of three reasons:
 

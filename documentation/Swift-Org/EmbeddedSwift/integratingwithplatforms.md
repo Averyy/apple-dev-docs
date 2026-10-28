@@ -10,7 +10,7 @@ framework: "Swift-Org/EmbeddedSwift"
 
 Learn the common patterns and approaches for integrating Swift with existing embedded systems.
 
-#### Overview
+## Overview
 
 Most embedded platforms provide SDKs consisting of drivers, libraries, and HAL (Hardware Abstraction Layer) components, typically written in the C language. Embedded Swift’s C interoperability makes it possible to seamlessly integrate with these existing SDKs.
 
@@ -18,9 +18,9 @@ This will enable using the entire API surface of an SDK directly from Swift, and
 
 Alternatively, for the most constrained environments or when you need complete control over the hardware, you can develop baremetal Swift applications without relying on any SDK. This approach requires implementing your own hardware initialization code and peripheral drivers directly in Swift or in C with Swift wrappers. Baremetal development gives you the maximum flexibility but requires deeper understanding of the target hardware.
 
-#### Common Integration Patterns
+## Common Integration Patterns
 
-##### Using a Bridging Header
+### Using a Bridging Header
 
 The simplest method for integrating with an embedded platform SDK is using a bridging header that imports the necessary C headers:
 
@@ -41,7 +41,7 @@ swiftc -enable-experimental-feature Embedded -wmo \
 
 Using a bridging header is discouraged when building an entire set of Swift libraries, but it’s a very simple approach when the goal is to simply add a single Swift module into an existing software ecosystem.
 
-##### Integrating with Build Systems
+### Integrating with Build Systems
 
 Most embedded platforms use one of these build systems:
 
@@ -51,7 +51,7 @@ Most embedded platforms use one of these build systems:
 
 For (1) and (2), articles will be added to this documentation in the future. For (3), it is always possible to manually invoke the Swift compiler (`swiftc`) with the right flags to produce a .o file that can be further used in the build system. Follow the [Learning the basics of Embedded Swift](./basics.md) article for details.
 
-##### Matching platform’s ISA and ABI
+### Matching platform’s ISA and ABI
 
 When integrating Swift code with embedded platforms, it’s crucial to properly match the Instruction Set Architecture (ISA) and Application Binary Interface (ABI) of the target system. The Swift compiler needs specific arguments to generate code that’s compatible with the target microcontroller’s architecture and calling conventions. Mismatches in these settings can lead to hard-to-debug issues or even complete failure to execute.
 
@@ -69,34 +69,34 @@ Additional important compiler flags to consider include:
 - `-Xcc -mcpu=specific-cpu` - Specifies the exact CPU model for more optimized code generation
 - `-Xfrontend -function-sections` - Places each function in its own section, enabling better dead code elimination during linking (this is a recommended setting for ELF targets)
 
-#### Platform Examples
+## Platform Examples
 
-##### Raspberry Pi Pico
+### Raspberry Pi Pico
 
 For detailed instructions on integrating with the Raspberry Pi Pico SDK, see [Integrating with the Raspberry Pi Pico SDK](./integratewithpico.md).
 
-##### ESP32
+### ESP32
 
 Note that only chips based on RISC-V architecture (for example, ESP32-C3, ESP32-C6, ESP32-P4) are supported with Embedded Swift. The Xtensa ISA (used in, for example, ESP8266 or ESP32-S2 and ESP32-S3) is not supported.
 
 For ESP microcontrollers using the ESP-IDF framework, an article will be added to this documentation in the future.
 
-##### STM32
+### STM32
 
 STM32 microcontrollers can be programmed with Embedded Swift in two ways:
 
 1. Using the STM32Cube HAL/LL libraries - This requires proper integration with the STM32Cube build system
 2. Baremetal approach - See [Setting up a baremetal STM32 project with Embedded Swift](./stm32baremetalguide.md) for details
 
-##### Zephyr
+### Zephyr
 
 For detailed documentation on how to integrate Embedded Swift with Zephyr, see [Integrating with the Zephyr RTOS SDK](./integratewithzephyr.md).
 
-##### Baremetal development
+### Baremetal development
 
 For completely baremetal development without any SDK, see [Using Embedded Swift in baremetal mode](./baremetal.md) for guidance on implementing the necessary startup code and hardware initialization.
 
-#### Tips & tricks
+## Tips & tricks
 
 - Using `print()` in your Swift code creates a dependency on `putchar`, which must be provided by your platform. Make sure your embedded environment has this C standard library function available if you plan to use Swift’s printing functionality.
 - For debugging, consider implementing a custom print handler by implementing a C function called `putchar` that redirects output to your debug channel (UART, SWO, RTT, and so on). Many embedded platforms already do that by default.

@@ -23,7 +23,7 @@ var kDNSServiceType_DNAME: Int { get }
 kDNSServiceType_DNAME
 ```
 
-#### Discussion
+## Discussion
 
 Non-terminal DNAME (for IPv6)
 

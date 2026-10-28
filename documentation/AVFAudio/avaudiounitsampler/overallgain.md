@@ -24,7 +24,7 @@ var overallGain: Float { get set }
 @property (nonatomic) float overallGain;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `0.0` dB, and the range of valid values is `-90.0` dB to `12.0` dB.
 

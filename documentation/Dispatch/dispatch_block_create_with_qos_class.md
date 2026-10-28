@@ -21,7 +21,7 @@ Creates a new dispatch block from an existing block and the given flags, and ass
 extern dispatch_block_t dispatch_block_create_with_qos_class(dispatch_block_flags_t flags, dispatch_qos_class_t qos_class, int relative_priority, dispatch_block_t block);
 ```
 
-#### Discussion
+## Discussion
 
 The provided block is copied to the heap and retained by the newly created dispatch block.
 

@@ -14,7 +14,7 @@ struct ifnet_stat_increment_param {
 };
 ```
 
-#### Discussion
+## Discussion
 
 This structure is used increment the counters on a network interface.
 

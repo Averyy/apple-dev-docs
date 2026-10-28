@@ -22,7 +22,7 @@ final func requestPairingCode(for device: MediaOutputDevice, session: MediaOutpu
 
 - [Creating a media device extension](../creating-a-media-device-extension.md)
 
-#### Discussion
+## Discussion
 
 Call this function when the session requires user input for pairing.
 

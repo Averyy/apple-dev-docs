@@ -21,7 +21,7 @@ typealias FxImageOrigin = Int
 typedef NSUInteger FxImageOrigin;
 ```
 
-#### Discussion
+## Discussion
 
 This method was introduced in FxImage class 0.0.
 

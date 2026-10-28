@@ -23,7 +23,7 @@ var isFocused: Bool { get }
 @property (nonatomic, readonly, getter=isFocused) BOOL focused;
 ```
 
-#### Discussion
+## Discussion
 
 This is a convenience property that checks whether the item is equal to the value in the [`UIScreen`](../uiscreen.md) class’s [`focusedView`](../uiscreen/focusedview.md) property.
 

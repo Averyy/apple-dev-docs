@@ -22,7 +22,7 @@ var optionsMenuProvider: (([UIMenuElement]) -> UIMenu?)? { get set }
 @property (nonatomic, copy, readwrite, nullable) UIMenu * (^optionsMenuProvider)(NSArray<UIMenuElement *> *defaultOptions);
 ```
 
-#### Discussion
+## Discussion
 
 You use this closure to modify, augement or omit options from the default set available in [`UITextSearchOptions`](../uitextsearchoptions.md).
 

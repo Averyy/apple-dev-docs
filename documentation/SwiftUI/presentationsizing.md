@@ -21,7 +21,7 @@ A type that defines the size of the presentation content and how the presentatio
 protocol PresentationSizing
 ```
 
-#### Overview
+## Overview
 
 You don’t need to define your own version of this protocol. The system implementations of [`form`](./presentationsizing/form.md), [`page`](./presentationsizing/page.md), and [`fitted`](./presentationsizing/fitted.md) are conveniences that automatically adapt to different device and screen sizes. If you do want to define your own sizing, first consider using the modifiers `PresenationSizing/sticky(horizontal:vertical:)` and [`fitted(horizontal:vertical:)`](./presentationsizing/fitted%28horizontal,vertical%29.md). For example, to define your own sizing that proposes a 400x400 square size:
 

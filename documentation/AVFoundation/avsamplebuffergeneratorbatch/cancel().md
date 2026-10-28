@@ -25,7 +25,7 @@ func cancel()
 - (void) cancel;
 ```
 
-#### Discussion
+## Discussion
 
 The system invokes the associated sample buffers data ready handlers with an error.
 

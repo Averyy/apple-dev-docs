@@ -14,7 +14,7 @@
 kUSBAddExtraResetTimeBit = 31
 ```
 
-#### Discussion
+## Discussion
 
 Setting this bit will cause the Hub driver to wait 100ms before addressing the device after the reset following the re-enumeration.
 

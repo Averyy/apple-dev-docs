@@ -34,7 +34,7 @@ class SKProduct
 - [Requesting a payment from the App Store](./requesting-a-payment-from-the-app-store.md)
 - [Supporting Family Sharing in your app](./supporting-family-sharing-in-your-app.md)
 
-#### Overview
+## Overview
 
 [`SKProduct`](./skproduct.md) objects are returned as part of an [`SKProductsResponse`](./skproductsresponse.md) object.
 

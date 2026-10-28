@@ -19,7 +19,7 @@ var textSelectionMode: NSTextSelectionManager.Mode { get set }
 @property NSTextSelectionMode textSelectionMode;
 ```
 
-#### Discussion
+## Discussion
 
 Determines whether text is editable, selectable only, or non-interactive. The default value is `NSTextSelectionModeEditable`.
 

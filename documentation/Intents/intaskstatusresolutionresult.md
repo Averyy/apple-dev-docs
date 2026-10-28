@@ -25,7 +25,7 @@ class INTaskStatusResolutionResult
 @interface INTaskStatusResolutionResult : INIntentResolutionResult
 ```
 
-#### Overview
+## Overview
 
 You return an [`INTaskStatusResolutionResult`](./intaskstatusresolutionresult.md) object when resolving parameters containing an [`INTaskStatus`](./intaskstatus.md) value. Use the creation method that best reflects your ability to resolve the parameter successfully.
 

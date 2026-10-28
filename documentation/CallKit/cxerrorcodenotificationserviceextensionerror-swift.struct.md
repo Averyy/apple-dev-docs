@@ -19,7 +19,7 @@ Errors that can occur when reporting new, incoming VoIP calls.
 struct CXErrorCodeNotificationServiceExtensionError
 ```
 
-#### Overview
+## Overview
 
 The system can return these errors to the [`reportNewIncomingVoIPPushPayload(_:completion:)`](./cxprovider/reportnewincomingvoippushpayload%28_,completion%29.md) method’s completion handler.
 

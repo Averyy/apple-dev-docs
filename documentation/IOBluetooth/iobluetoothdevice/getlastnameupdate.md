@@ -15,7 +15,7 @@ Get the date/time of the last successful remote name request.
 - (NSDate *) getLastNameUpdate;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the date/time of the last successful remote name request. If no remote name request has been completed on the target device, nil is returned.
 

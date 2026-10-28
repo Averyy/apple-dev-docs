@@ -14,15 +14,15 @@ OSErr AEDeleteKeyDesc (
 );
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../apple_event_manager.md#1656145).
 
-#### Overview
+## Overview
 
 This function is declared as a macro that invokes [`AEDeleteParam`](../../coreservices/api-1444338-aedeleteparam.md), which can operate on an Apple event or an Apple event record. See the Discussion for that function for more information.
 
-##### Version-Notes
+### Version-Notes
 
 See [`AEDeleteParam`](../../coreservices/api-1444338-aedeleteparam.md).
 

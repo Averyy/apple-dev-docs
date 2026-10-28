@@ -19,7 +19,7 @@ static let symbol: NSSpeechSynthesizer.SpeechPropertyKey.PhonemeInfoKey
 extern NSSpeechPhonemeInfoKey const NSSpeechPhonemeInfoSymbol;
 ```
 
-#### Discussion
+## Discussion
 
 The symbol does not necessarily have a phonetic connection to the phoneme, but might simply be an abstract textual representation of it.
 

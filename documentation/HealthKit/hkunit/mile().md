@@ -24,7 +24,7 @@ class func mile() -> Self
 + (instancetype) mileUnit;
 ```
 
-#### Return Value
+## Return Value
 
 A HealthKit unit for measuring length in miles.
 

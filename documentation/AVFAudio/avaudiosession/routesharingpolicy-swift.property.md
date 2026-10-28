@@ -24,7 +24,7 @@ var routeSharingPolicy: AVAudioSession.RouteSharingPolicy { get }
 @property (readonly) AVAudioSessionRouteSharingPolicy routeSharingPolicy;
 ```
 
-#### Discussion
+## Discussion
 
 Use this value to indicate that the system should route this app’s audio somewhere other than the default system output when other suitable alternative routes exist.
 

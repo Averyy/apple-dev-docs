@@ -24,7 +24,7 @@ var isAnyKeyPressed: Bool { get }
 @property (nonatomic, readonly, getter=isAnyKeyPressed) BOOL anyKeyPressed;
 ```
 
-#### Discussion
+## Discussion
 
 If [`true`](../../Swift/true.md), the user is pressing a key; otherwise, the user isn’t. You can use this property to check whether the user presses any key before getting the state of specific keys.
 

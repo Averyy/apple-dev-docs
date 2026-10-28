@@ -21,7 +21,7 @@ Copies the specified number of bytes from the given raw pointer’s memory into 
 func copyMemory(from source: UnsafeRawPointer, byteCount: Int)
 ```
 
-#### Discussion
+## Discussion
 
 If the `byteCount` bytes of memory referenced by this pointer are bound to a type `T`, then `T` must be a trivial type, this pointer and `source` must be properly aligned for accessing `T`, and `byteCount` must be a multiple of `MemoryLayout<T>.stride`.
 

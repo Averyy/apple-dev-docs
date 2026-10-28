@@ -24,7 +24,7 @@ var properties: [String : Any] { get }
 @property (atomic, readonly) NSDictionary<NSString *,id> * properties;
 ```
 
-#### Discussion
+## Discussion
 
 If the [`CIImage`](../ciimage.md) was created from `NSURL` or `NSData` then this dictionary is determined by calling `CGImageSourceCopyPropertiesAtIndex()`.
 

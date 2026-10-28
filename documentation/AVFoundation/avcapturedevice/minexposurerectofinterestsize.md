@@ -23,7 +23,7 @@ var minExposureRectOfInterestSize: CGSize { get }
 @property (nonatomic, readonly) CGSize minExposureRectOfInterestSize;
 ```
 
-#### Discussion
+## Discussion
 
 The size returned is in normalized coordinates, and depends on the current [`activeFormat`](./activeformat.md). If [`isExposureRectOfInterestSupported`](./isexposurerectofinterestsupported.md) returns `false`, this property returns { 0, 0 }.
 

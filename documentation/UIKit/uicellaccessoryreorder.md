@@ -19,7 +19,7 @@ The reorder system accessory.
 @interface UICellAccessoryReorder : UICellAccessory
 ```
 
-#### Overview
+## Overview
 
 A reorder accessory is three horizontal lines with the default system gray color. This accessory appears on the trailing edge of the cell.
 

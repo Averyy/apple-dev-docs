@@ -25,7 +25,7 @@ case II
 vDSP_DCT_II
 ```
 
-#### Discussion
+## Discussion
 
 The type-II DCT uses the following operation for a discrete cosine transform:
 

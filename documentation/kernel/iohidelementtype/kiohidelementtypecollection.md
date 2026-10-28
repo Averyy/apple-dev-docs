@@ -13,7 +13,7 @@
 kIOHIDElementTypeCollection = 513
 ```
 
-#### Discussion
+## Discussion
 
 Element used to identify a relationship between two or more elements.
 

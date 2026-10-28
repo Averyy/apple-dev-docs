@@ -19,7 +19,7 @@ void start(
 );
 ```
 
-#### Discussion
+## Discussion
 
 When a new slideshow beings using the `start` function, if there is a currently running slideshow, that slideshow is dismissed. The `imageRequests` parameter contains an array of image request objects that can have the following formatting:
 

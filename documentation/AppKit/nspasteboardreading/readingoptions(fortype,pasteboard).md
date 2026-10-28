@@ -19,11 +19,11 @@ optional static func readingOptions(forType type: NSPasteboard.PasteboardType, p
 + (NSPasteboardReadingOptions) readingOptionsForType:(NSPasteboardType) type pasteboard:(NSPasteboard *) pasteboard;
 ```
 
-#### Return Value
+## Return Value
 
 Options for reading data of `type` from `pasteboard`. For a list of valid values, see [`NSPasteboard.ReadingOptions`](../nspasteboard/readingoptions.md).
 
-#### Discussion
+## Discussion
 
 Do not perform other pasteboard operations in this method implementation.
 

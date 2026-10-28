@@ -26,7 +26,7 @@ class ARAnchor
 - [Providing 2D Virtual Content with SpriteKit](./providing-2d-virtual-content-with-spritekit.md)
 - [Providing 3D Virtual Content with SceneKit](./providing-3d-virtual-content-with-scenekit.md)
 
-#### Overview
+## Overview
 
 To track the static positions and orientations of real or virtual objects relative to the camera, create anchor objects and use the [`add(anchor:)`](./arsession/add%28anchor%29.md) method to add them to your AR session.
 
@@ -34,7 +34,7 @@ To track the static positions and orientations of real or virtual objects relati
 
 Some ARKit features automatically add special anchors to a session. World-tracking sessions can add [`ARPlaneAnchor`](./arplaneanchor.md), [`ARObjectAnchor`](./arobjectanchor.md), and [`ARImageAnchor`](./arimageanchor.md) objects if you enable the corresponding features; face-tracking sessions add [`ARFaceAnchor`](./arfaceanchor.md) objects.
 
-##### Subclassing Notes
+### Subclassing Notes
 
 In addition to creating your own `ARAnchor` instances to track the real-world positions of your virtual content, you can also subclass `ARAnchor` to associate custom data with anchors you create. Ensure that your anchor classes behave correctly when ARKit updates frames or saves and loads anchors in an [`ARWorldMap`](./arworldmap.md):
 

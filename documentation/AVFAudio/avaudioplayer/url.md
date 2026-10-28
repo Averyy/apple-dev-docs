@@ -25,7 +25,7 @@ var url: URL? { get }
 @property (readonly, nullable) NSURL * url;
 ```
 
-#### Discussion
+## Discussion
 
 This property is [`nil`](../../ObjectiveC/nil-227m0.md) if you don’t create the player with a URL.
 

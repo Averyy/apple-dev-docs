@@ -19,7 +19,7 @@ var keyboards: [VZKeyboardConfiguration] { get set }
 @property (copy) NSArray<VZKeyboardConfiguration *> * keyboards;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is an empty array. The default value of this property is an empty array. If your VM exposes one or more keyboards, assign an array of [`VZKeyboardConfiguration`](../vzkeyboardconfiguration.md) objects to this property.
 

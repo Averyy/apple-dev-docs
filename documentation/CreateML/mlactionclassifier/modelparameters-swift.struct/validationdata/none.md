@@ -15,7 +15,7 @@ An empty validation dataset that skips the model validation phase after training
 case none
 ```
 
-#### Discussion
+## Discussion
 
 Use this case when you don’t have validation data while preventing Create ML from using any of your training dataset for validation.
 

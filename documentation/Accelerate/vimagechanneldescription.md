@@ -25,7 +25,7 @@ struct vImageChannelDescription
 typedef struct vImageChannelDescription { ... } vImageChannelDescription;
 ```
 
-#### Overview
+## Overview
 
 A [`vImageChannelDescription`](./vimagechanneldescription.md) structure describes the range and clamp limits for each channel in a Core Video image format. The [`min`](./vimagechanneldescription/min.md) and [`max`](./vimagechanneldescription/max.md) properties define the clamping limits, and functions clamp values to [`min`](./vimagechanneldescription/min.md)…[`max`](./vimagechanneldescription/max.md). The [`zero`](./vimagechanneldescription/zero.md) and [`full`](./vimagechanneldescription/full.md) values specify the normal range and bias for a format, and encode `0.0` and `1.0`, respectively (`0.0` and `0.5` for chrominance).
 

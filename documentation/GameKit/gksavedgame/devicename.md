@@ -23,7 +23,7 @@ var deviceName: String? { get }
 @property (atomic, readonly, nullable) NSString * deviceName;
 ```
 
-#### Discussion
+## Discussion
 
 In iOS, the user sets the device name by choosing Settings > General > About > Name. To access this device name, your app needs to meet certain criteria and set the [`com.apple.developer.device-information.user-assigned-device-name`](../../BundleResources/entitlements/com.apple.developer.device-information.user-assigned-device-name.md) entitlement. Otherwise, the default value for this property is the generic device name.
 

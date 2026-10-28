@@ -19,7 +19,7 @@ class TVTopShelfObject
 @interface TVTopShelfObject : NSObject
 ```
 
-#### Overview
+## Overview
 
 This class provides shared information for objects you use in your app extension. Do not create instances of this class directly.
 

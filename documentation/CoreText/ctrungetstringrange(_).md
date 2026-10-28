@@ -25,7 +25,7 @@ func CTRunGetStringRange(_ run: CTRun) -> CFRange
 extern CFRange CTRunGetStringRange(CTRunRef run);
 ```
 
-#### Return Value
+## Return Value
 
 The range of characters that originally spawned the glyphs, of if `run` is invalid, an empty range.
 

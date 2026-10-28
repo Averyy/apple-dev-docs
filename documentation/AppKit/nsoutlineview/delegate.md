@@ -19,7 +19,7 @@ weak var delegate: (any NSOutlineViewDelegate)? { get set }
 @property (weak, nullable) id<NSOutlineViewDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 The delegate must conform to the [`NSOutlineViewDelegate`](../nsoutlineviewdelegate.md) protocol. Note that in versions of macOS prior to v10.12, the table view did not retain the delegate in a managed memory environment.
 

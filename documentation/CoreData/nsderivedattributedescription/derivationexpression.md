@@ -25,7 +25,7 @@ var derivationExpression: NSExpression? { get set }
 @property (strong, nullable) NSExpression * derivationExpression;
 ```
 
-#### Discussion
+## Discussion
 
 When using derived attributes in an SQL store, this expression should be
 

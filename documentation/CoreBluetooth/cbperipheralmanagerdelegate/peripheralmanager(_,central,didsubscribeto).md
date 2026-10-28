@@ -25,7 +25,7 @@ optional func peripheralManager(_ peripheral: CBPeripheralManager, central: CBCe
 - (void) peripheralManager:(CBPeripheralManager *) peripheral central:(CBCentral *) central didSubscribeToCharacteristic:(CBCharacteristic *) characteristic;
 ```
 
-#### Discussion
+## Discussion
 
 Core Bluetooth invokes this method when a remote central device subscribes to the value of one of the local peripheral’s characteristics, by enabling notifications or indications on the characteristic’s value. When called, start sending the subscribed central updates as the characteristic’s value changes. To send updated characteristic values to subscribed centrals, use the [`updateValue(_:for:onSubscribedCentrals:)`](../cbperipheralmanager/updatevalue%28_,for,onsubscribedcentrals%29.md) method of the [`CBPeripheralManager`](../cbperipheralmanager.md) class.
 

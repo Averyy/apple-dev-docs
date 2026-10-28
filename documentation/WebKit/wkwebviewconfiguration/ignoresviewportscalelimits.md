@@ -22,7 +22,7 @@ var ignoresViewportScaleLimits: Bool { get set }
 @property (nonatomic) BOOL ignoresViewportScaleLimits;
 ```
 
-#### Discussion
+## Discussion
 
 When set to [`true`](../../Swift/true.md), this property overrides the `user-scalable` HTML property in a webpage, and lets the web view scale its webpage content regardless of the author’s intent. The default value of this property is [`false`](../../Swift/false.md).
 

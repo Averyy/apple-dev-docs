@@ -20,7 +20,7 @@ func add(_ sender: Any?)
 - (void) add:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 Beginning with OS X v10.4 the result of this method is deferred until the next iteration of the runloop so that the error presentation mechanism can provide feedback as a sheet.
 

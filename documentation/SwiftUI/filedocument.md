@@ -22,7 +22,7 @@ A type that you use to serialize documents to and from file.
 protocol FileDocument : Sendable
 ```
 
-#### Overview
+## Overview
 
 To store a document as a value type — like a structure — create a type that conforms to the `FileDocument` protocol and implement the required methods and properties. Your implementation:
 

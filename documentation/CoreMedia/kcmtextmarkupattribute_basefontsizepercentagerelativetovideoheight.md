@@ -25,7 +25,7 @@ let kCMTextMarkupAttribute_BaseFontSizePercentageRelativeToVideoHeight: CFString
 extern CFStringRef const kCMTextMarkupAttribute_BaseFontSizePercentageRelativeToVideoHeight;
 ```
 
-#### Discussion
+## Discussion
 
 This attribute’s value must be a non-negative `CFNumber`. This is a number holding a percentage of the height of the video frame. For example, a value of `5` indicates that the base font size should be 5% of the height of the video.
 

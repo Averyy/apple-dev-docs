@@ -23,7 +23,7 @@ class var biometry: LAAuthenticationRequirement { get }
 @property (class, readonly) LAAuthenticationRequirement * biometryRequirement;
 ```
 
-#### Discussion
+## Discussion
 
 Authorizations with this requirement fail when biometrics aren’t available on the current device or there aren’t any enrolled biometrics on the current device.
 

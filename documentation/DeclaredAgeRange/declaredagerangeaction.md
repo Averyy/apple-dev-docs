@@ -18,7 +18,7 @@ An action that requests a person’s age range.
 struct DeclaredAgeRangeAction
 ```
 
-#### Overview
+## Overview
 
 Use `DeclaredAgeRangeAction` in SwiftUI views to request age ranges without manually managing the presentation context. This action automatically handles the differences between macOS and iOS presentation contexts, providing a unified interface for age range requests across platforms.
 

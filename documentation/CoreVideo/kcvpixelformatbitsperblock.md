@@ -23,7 +23,7 @@ let kCVPixelFormatBitsPerBlock: CFString
 extern CFStringRef const kCVPixelFormatBitsPerBlock;
 ```
 
-#### Discussion
+## Discussion
 
 The number of bits per block. For simple pixel formats, this value is the same as the traditional bits-per-pixel value. This key is mandatory in pixel format descriptions. See the description for `kCVPixelFormatBlockWidth` for examples of bits-per-block values.
 

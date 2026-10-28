@@ -18,7 +18,7 @@ The collection of pages in this document.
 var pages: [AssignableDocument.Page] { get }
 ```
 
-#### Discussion
+## Discussion
 
 This can only be changed using the corresponding view object.
 

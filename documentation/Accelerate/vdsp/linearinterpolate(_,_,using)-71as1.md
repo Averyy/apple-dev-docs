@@ -21,7 +21,7 @@ Returns the linear interpolation between the supplied single-precision vectors.
 static func linearInterpolate<T, U>(_ vectorA: T, _ vectorB: U, using interpolationConstant: Float) -> [Float] where T : AccelerateBuffer, U : AccelerateBuffer, T.Element == Float, U.Element == Float
 ```
 
-#### Discussion
+## Discussion
 
 Single-precision and double-precision [`linearInterpolate(_:_:using:)`](./linearinterpolate%28_,_,using%29-3j5d2.md) functions return a vector that’s the element-wise linear interpolation between the two supplied vectors.
 

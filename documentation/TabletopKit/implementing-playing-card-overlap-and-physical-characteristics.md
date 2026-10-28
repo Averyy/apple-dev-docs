@@ -10,7 +10,7 @@ Add interactive card game behavior for a pile of playing cards with physically r
 - visionOS 26.0+
 - Xcode 26.0+
 
-#### Overview
+## Overview
 
 This sample code project demonstrates an effective way an app can implement a 3D volumetric layout to allow for thin equipment, such as playing cards, to pile up in a realistic manner if placed arbitrarily by the player. As the player adds cards into the pile, the app deliberately places them at a nonintersecting, and physically believable height and tilt atop all previous equipment.
 
@@ -23,7 +23,7 @@ The app contains a center pile that cards the player adds become descendants of.
 
 The center of mass solver takes the input of the existing cards’ bounding boxes and estimates the effective center of mass of the current card. It adjusts to account for weight applied from above. The bounded convex hull solver takes the bounding boxes of all of the previously placed cards as input and calculates a support plane for the calculated center of mass of the current card.
 
-#### Consider the limitations
+## Consider the limitations
 
 The sample code project uses two simplifying assumptions to produce a performant algorithm:
 
@@ -34,7 +34,7 @@ The first assumption is sufficient by itself to produce nonintersecting 3D poses
 
 The limitations mean that this algorithm is fairly ideal for thin playing cards. If given thicker bounding boxes, the algorithm still functions, but eventually shows nonphysical support by points outside the area that faces down (floating) and nonphysical intersections with side faces of higher-tilt thick boxes.
 
-#### Implement a convex hull support plane solver with clipping
+## Implement a convex hull support plane solver with clipping
 
 A bounded convex hull solver consists of two steps:
 
@@ -86,7 +86,7 @@ func clip(corners: inout [Point3DFloat],
 }
 ```
 
-#### Find the supporting plane
+## Find the supporting plane
 
 A QuickHull algorithm consists of starting with a plane defined by any three points known to be on the convex hull — such as those at a maximum or minimum value in any one coordinate axis. Iterate over the points to:
 
@@ -108,7 +108,7 @@ The support planes produced by this method don’t account for the fact that til
 
 Because this method doesn’t add the side planes of boxes to the convex hull vertices, it also doesn’t consider some valid support points on thick tilted boxes, with possible intersections resulting.
 
-#### Implement a center of mass solver
+## Implement a center of mass solver
 
 The `CenterOfMassSolver` structure implements `calculateCentersOfMass(boxes:)` to calculate the effective center of mass. It first finds all added boxes that stack atop each original box, based on flat 2D rectangle overlapping. Then, it calculates a contact point and weight for each added box, which the solver assumes to either:
 
@@ -186,7 +186,7 @@ The method becomes physically inaccurate when the model of contact points doesn�
 
 A more sophisticated analysis of the 2D stacking height and action overlap areas of bounding boxes can produce better guesses at the true contact points and weights — and a correspondingly more physically accurate 3D layout for complex piles.
 
-#### Produce a card layout
+## Produce a card layout
 
 By splitting the problem into two independent parts — calculating centers of mass and then finding support planes at each center — the calculation of a 3D layout becomes straightforward. In `MessyPile`, the `layoutChildren(snapshot:visualState:)` method first calculates the centers of mass of all descendants equipment based on 2D poses only. For each descendants card, it then:
 

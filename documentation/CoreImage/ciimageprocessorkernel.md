@@ -24,7 +24,7 @@ class CIImageProcessorKernel
 @interface CIImageProcessorKernel : NSObject
 ```
 
-#### Overview
+## Overview
 
 Unlike the [`CIKernel`](./cikernel.md) class and its other subclasses that allow you to create new image-processing effects with the Core Image Kernel Language, the `CIImageProcessorKernel` class provides direct access to the underlying bitmap image data for a step in the Core Image processing pipeline. As such, you can create subclasses of this class to integrate other image-processing technologies—such as Metal compute shaders, [Metal Performance Shaders](https://developer.apple.com/library/archive/releasenotes/General/WhatsNewIniOS/Articles/iOS9.html#//apple_ref/doc/uid/TP40016198-SW7), [Accelerate](https://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/OSX_Technology_Overview/CoreOSLayer/CoreOSLayer.html#//apple_ref/doc/uid/TP40001067-CH9-SW6) [vImage](https://developer.apple.com/library/archive/releasenotes/Performance/RN-vecLib/index.html#//apple_ref/doc/uid/TP40001049-CH2-SW2) operations, or your own CPU-based image-processing routines—with a Core Image filter chain.
 
@@ -71,7 +71,7 @@ let result = try? ThresholdImageProcessorKernel.apply(
 
 > ❗ **Important**:  Core Image will concatenate filters in a network into as fewer kernels as possible, avoiding the creation of intermediate buffers. However, it is unable to do this with image processor kernels. To get the best performance, you should only use [`CIImageProcessorKernel`](./ciimageprocessorkernel.md) objects when your image processing algorithms can’t be expressed as Core Image Kernel Language.
 
-##### Subclassing Notes
+### Subclassing Notes
 
 The [`CIImageProcessorKernel`](./ciimageprocessorkernel.md) class is abstract; to create a custom image processor, you define a subclass of this class.
 
@@ -83,7 +83,7 @@ If your image processor needs to work with a larger or smaller region of interes
 
 You can also override the [`formatForInput(at:)`](./ciimageprocessorkernel/formatforinput%28at%29.md) method and [`outputFormat`](./ciimageprocessorkernel/outputformat.md) property getter to customize the input and output pixel formats for your processor (for example, as part of a multi-step workflow where you extract a single channel from an RGBA image, apply an effect to that channel only, then recombine the channels).
 
-##### Using a Custom Image Processor
+### Using a Custom Image Processor
 
 To apply your custom image processor class to filter one or more images, call the [`apply(withExtent:inputs:arguments:)`](./ciimageprocessorkernel/apply%28withextent,inputs,arguments%29.md) class method. (Do not override this method.)
 

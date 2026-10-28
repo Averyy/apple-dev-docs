@@ -25,11 +25,11 @@ func objc_copyProtocolList(_ outCount: UnsafeMutablePointer<UInt32>?) -> Autorel
 extern Protocol **objc_copyProtocolList(unsigned int *outCount);
 ```
 
-#### Return Value
+## Return Value
 
 A C array of all the protocols known to the runtime. The array contains `*outCount` pointers followed by a `NULL` terminator. You must free the list with `free()`.
 
-#### Discussion
+## Discussion
 
 This function acquires the runtime lock.
 

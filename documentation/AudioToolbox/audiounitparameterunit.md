@@ -24,7 +24,7 @@ enum AudioUnitParameterUnit
 enum AudioUnitParameterUnit : UInt32;
 ```
 
-#### Overview
+## Overview
 
 The various units of measure for audio unit parameters are described in `Audio Unit Parameter Units of Measure`.
 

@@ -24,7 +24,7 @@ class MPSGraphObject
 @interface MPSGraphObject : NSObject
 ```
 
-#### Overview
+## Overview
 
 Only the child classes should be used.
 

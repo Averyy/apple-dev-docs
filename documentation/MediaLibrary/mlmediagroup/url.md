@@ -22,7 +22,7 @@ var url: URL? { get }
 @property (copy, readonly, nullable) NSURL * URL;
 ```
 
-#### Discussion
+## Discussion
 
 Some groups do not have a URL, in which case this returns `nil`. For example, a group that represents a filesystem folder on disk has a URL, but a group that represents a named face in iPhoto does not.
 

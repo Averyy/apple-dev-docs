@@ -25,7 +25,7 @@ static var connectionRefused: Errno { get }
 
 - [Adopting Swift Error Constants](../adopting-errno.md)
 
-#### Discussion
+## Discussion
 
 No connection could be made because the target machine actively refused it. This usually results from trying to connect to a service that’s inactive on the foreign host.
 

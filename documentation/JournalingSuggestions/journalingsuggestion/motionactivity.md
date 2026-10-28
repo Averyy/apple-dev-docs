@@ -19,7 +19,7 @@ struct MotionActivity
 
 - [Presenting the suggestions picker and processing a selection](../presenting-the-suggestions-picker-and-processing-a-selection.md)
 
-#### Overview
+## Overview
 
 The system provides an instance of this structure to your app when a person chooses a motion suggestion in the [`JournalingSuggestionsPicker`](../journalingsuggestionspicker.md).
 

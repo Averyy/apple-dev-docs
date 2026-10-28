@@ -21,11 +21,11 @@ Publishes a single Boolean value that indicates whether all received elements pa
 func allSatisfy(_ predicate: @escaping (Self.Output) -> Bool) -> Publishers.AllSatisfy<Self>
 ```
 
-#### Return Value
+## Return Value
 
 A publisher that publishes a Boolean value that indicates whether all received elements pass a given predicate.
 
-#### Discussion
+## Discussion
 
 Use the [`allSatisfy(_:)`](./allsatisfy%28_%29.md) operator to determine if all elements in a stream satisfy a criteria you provide. When this publisher receives an element, it runs the predicate against the element. If the predicate returns `false`, the publisher produces a `false` value and finishes. If the upstream publisher finishes normally, this publisher produces a `true` value and finishes.
 

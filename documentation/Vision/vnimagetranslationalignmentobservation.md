@@ -24,7 +24,7 @@ class VNImageTranslationAlignmentObservation
 @interface VNImageTranslationAlignmentObservation : VNImageAlignmentObservation
 ```
 
-#### Overview
+## Overview
 
 This type of observation results from a [`VNTranslationalImageRegistrationRequest`](./vntranslationalimageregistrationrequest.md), informing the [`alignmentTransform`](./vnimagetranslationalignmentobservation/alignmenttransform.md) performed to align the input images.
 

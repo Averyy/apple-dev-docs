@@ -24,7 +24,7 @@ enum RenderingState
 enum PHASERenderingState : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 This enumeration defines the possible values of:
 

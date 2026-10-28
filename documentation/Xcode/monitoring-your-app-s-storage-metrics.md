@@ -5,13 +5,13 @@
 
 Track your app’s storage footprint over time using Xcode Organizer to catch regressions in Documents & Data and App Size.
 
-#### Overview
+## Overview
 
 Maintaining a responsible storage footprint is important, because devices have a limited amount of storage shared across all apps. An app that unexpectedly grows its storage use might prevent people from installing new apps, delay system updates, or trigger performance degradation due to low storage. Use the Storage pane in Xcode Organizer to monitor how your app’s Documents & Data and App Size change across releases.
 
 ![A screenshot of the Storage metric pane in Xcode Organizer, showing the Documents & Data chart with stacked histogram bars representing cache folder size and other items, and the App Size chart with histogram bars showing app bundle size across versions. The horizontal dashed line that bisects each chart indicates how your app’s storage metrics compare to other similar apps.](https://developer.apple.com/tutorials/images/com.apple.Xcode/monitoring-your-app-s-storage-metrics-1@2x.png)
 
-##### Manage data usage and cache behavior
+### Manage data usage and cache behavior
 
 The Storage pane in Xcode Organizer shows a Documents & Data chart that breaks down how much total storage your app uses. Each histogram bar in this chart represents a version of your app. The top portion shows how much data is in the app’s cache folder, and the bottom portion represents other storage. The information to the right of the chart displays these totals for the latest version of your app in megabytes, with a breakdown of what percentage of that storage is in the cache folder and what percentage is in other items.
 
@@ -19,7 +19,7 @@ The system automatically purges files in the cache folder when device storage is
 
 Some networking APIs, such as [`URLSessionDownloadTask`](../Foundation/urlsessiondownloadtask.md), write data to a temporary location rather than the cache folder. Apps that use these APIs are responsible for managing the downloaded content. For guidance on where to store downloaded files and how to minimize your app’s overall disk footprint, see [Reducing your app’s disk usage](./reducing-your-app-s-disk-usage.md).
 
-##### Monitor your app’s size
+### Monitor your app’s size
 
 The App Size chart in the Storage pane shows the total size of your app’s bundle on device across releases.
 
@@ -29,7 +29,7 @@ Compare the most recent version to earlier versions to confirm that app size cha
 
 Both charts display a dashed line indicating how your app’s storage metrics compare to similar apps. Use the pop-up menus at the top of the pane to filter the data by device type and percentile of storage use.
 
-##### Improve your app’s storage usage
+### Improve your app’s storage usage
 
 For guidance on reducing your app’s disk footprint in code, including using purgeable folders, managing iCloud files, and avoiding unnecessary writes, see [Reducing your app’s disk usage](./reducing-your-app-s-disk-usage.md).
 

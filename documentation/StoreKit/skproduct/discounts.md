@@ -31,7 +31,7 @@ var discounts: [SKProductDiscount] { get }
 
 - [Implementing promotional offers in your app](../implementing-promotional-offers-in-your-app.md)
 
-#### Discussion
+## Discussion
 
 The [`discounts`](./discounts.md) array contains all of the introductory offers and promotional offers that you set up in App Store Connect for this subscription ([`productIdentifier`](./productidentifier.md)).  It’s up to the logic in your app to decide which offer to present to the user.
 

@@ -15,7 +15,7 @@ Add a camera region anchor.
 final func addAnchor(_ anchor: CameraRegionAnchor) async throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: `CameraRegionProvider.Error`
 

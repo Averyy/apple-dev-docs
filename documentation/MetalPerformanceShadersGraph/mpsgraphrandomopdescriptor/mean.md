@@ -24,7 +24,7 @@ var mean: Float { get set }
 @property (nonatomic, readwrite) float mean;
 ```
 
-#### Discussion
+## Discussion
 
 This value is used for Normal and Truncated Normal disributions. Defaults to 0.
 

@@ -23,7 +23,7 @@ class let sceneUserInfoKey: String
 extern NSString * const UIPointerLockStateSceneUserInfoKey;
 ```
 
-#### Discussion
+## Discussion
 
 The `userInfo` dictionary of the notification contains the [`sceneUserInfoKey`](./sceneuserinfokey.md) key, which reflects the new value of the [`isLocked`](./islocked.md) property.
 

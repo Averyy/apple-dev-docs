@@ -25,11 +25,11 @@ func points() -> UnsafeMutablePointer<MKMapPoint>
 - (MKMapPoint *) points;
 ```
 
-#### Return Value
+## Return Value
 
 An unsafe mutable array of [`MKMapPoint`](../mkmappoint.md) structures.
 
-#### Discussion
+## Discussion
 
 The [`pointCount`](./pointcount.md) property specifies the number of points in the array.
 

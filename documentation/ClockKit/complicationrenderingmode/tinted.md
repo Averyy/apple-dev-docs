@@ -21,7 +21,7 @@ case tinted
 
 - [Building complications with SwiftUI](../building-complications-with-swiftui.md)
 
-#### Discussion
+## Discussion
 
 You can use the rendering mode to provide a custom SwiftUI view for tinted complications. For more information, see [Support Tinted Views](../building-complications-with-swiftui.md#Support-Tinted-Views).
 

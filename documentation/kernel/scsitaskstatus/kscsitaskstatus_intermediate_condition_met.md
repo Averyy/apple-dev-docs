@@ -13,7 +13,7 @@
 kSCSITaskStatus_INTERMEDIATE_CONDITION_MET = 0x14
 ```
 
-#### Discussion
+## Discussion
 
 The task completed with a status of INTERMEDIATE_CONDITION_MET.
 

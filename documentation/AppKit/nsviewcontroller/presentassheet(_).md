@@ -19,7 +19,7 @@ func presentAsSheet(_ viewController: NSViewController)
 - (void) presentViewControllerAsSheet:(NSViewController *) viewController;
 ```
 
-#### Discussion
+## Discussion
 
 This method calls the [`present(_:animator:)`](./present%28_,animator%29.md) method on `self` (the presenting view controller), and passes a sheet animator to that method.
 

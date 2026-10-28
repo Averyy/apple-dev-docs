@@ -19,7 +19,7 @@ The fill color of the shape.
 var fillColor: CGColor?
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to black.
 

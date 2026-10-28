@@ -20,7 +20,7 @@ var processingParameters: [MERAWProcessingParameter] { get }
 @property (readonly) NSArray<MERAWProcessingParameter *> * processingParameters;
 ```
 
-#### Discussion
+## Discussion
 
 This property value is an array of [`MERAWProcessingParameter`](../merawprocessingparameter.md) objects, each describing the parameter and providing an interface where the processing parameter value may be modified.
 

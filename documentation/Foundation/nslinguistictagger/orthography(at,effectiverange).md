@@ -27,7 +27,7 @@ func orthography(at charIndex: Int, effectiveRange: NSRangePointer?) -> NSOrthog
 - (NSOrthography *) orthographyAtIndex:(NSUInteger) charIndex effectiveRange:(NSRangePointer) effectiveRange;
 ```
 
-#### Return Value
+## Return Value
 
 The orthography for the location.
 

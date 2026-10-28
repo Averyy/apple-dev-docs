@@ -19,7 +19,7 @@ var allowsTickMarkValuesOnly: Bool { get set }
 @property BOOL allowsTickMarkValuesOnly;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) if the slider’s values are limited to those values represented by tick marks; otherwise, [`false`](../../Swift/false.md). For example, if you specify [`true`](../../Swift/true.md) for a slider that has a minimum value of 0, a maximum value of 100, and five markers, the allowable values are 0, 25, 50, 75, and 100. When users move the slider’s knob, it jumps to the tick mark nearest the pointer when the mouse button is released. Setting this property has no effect if the slider has no tick marks.
 

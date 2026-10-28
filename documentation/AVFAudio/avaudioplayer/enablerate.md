@@ -25,7 +25,7 @@ var enableRate: Bool { get set }
 @property BOOL enableRate;
 ```
 
-#### Discussion
+## Discussion
 
 To enable modifying the player’s rate, set this property to [`true`](../../Swift/true.md) after you create the player, but before you call [`prepareToPlay()`](./preparetoplay%28%29.md).
 

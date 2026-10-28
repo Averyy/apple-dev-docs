@@ -23,7 +23,7 @@ A representation of an alert presentation.
 struct Alert
 ```
 
-#### Overview
+## Overview
 
 Use an alert when you want the user to act in response to the state of the app or system. If you want the user to make a choice in response to their action, use an [`ActionSheet`](./actionsheet.md) instead.
 

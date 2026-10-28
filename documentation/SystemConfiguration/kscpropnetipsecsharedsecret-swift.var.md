@@ -19,7 +19,7 @@ let kSCPropNetIPSecSharedSecret: CFString
 extern CFStringRef const kSCPropNetIPSecSharedSecret;
 ```
 
-#### Discussion
+## Discussion
 
 This key can be passed the following constant:
 

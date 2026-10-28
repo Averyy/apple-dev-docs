@@ -24,11 +24,11 @@ class func predicateForWorkoutActivities(operatorType: NSComparisonPredicate.Ope
 + (NSPredicate *) predicateForWorkoutActivitiesWithOperatorType:(NSPredicateOperatorType) operatorType duration:(NSTimeInterval) duration;
 ```
 
-#### Return Value
+## Return Value
 
 A predicate for matching workout activities based on their duration. This predicate works only on workout activities.
 
-#### Discussion
+## Discussion
 
 Use this convenience method to create a predicate that matches against an activity’s duration. To use this predicate, call [`predicateForWorkouts(activityPredicate:)`](./predicateforworkouts%28activitypredicate%29.md) to wrap this predicate inside a workout predicate. You can then use the workout predicate in your query.
 

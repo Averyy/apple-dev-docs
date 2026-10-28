@@ -20,11 +20,11 @@ Creates and returns an image object with data supplied by a Metal texture.
 + (CIImage *) imageWithMTLTexture:(id<MTLTexture>) texture options:(NSDictionary<NSString *,id> *) options;
 ```
 
-#### Return Value
+## Return Value
 
 An image object initialized with the texture data.
 
-#### Discussion
+## Discussion
 
 To also render using Metal, use this image with a Metal-based [`CIContext`](../cicontext.md) object created with the [`init(mtlDevice:)`](../cicontext/init%28mtldevice%29-swey.md) method, and call the [`render(_:to:commandBuffer:bounds:colorSpace:)`](../cicontext/render%28_,to,commandbuffer,bounds,colorspace%29.md) method to create an output image in another Metal texture object.
 

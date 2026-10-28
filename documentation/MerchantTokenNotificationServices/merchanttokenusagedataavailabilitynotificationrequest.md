@@ -15,7 +15,7 @@ The data for the merchant token usage data availability notification request.
 object MerchantTokenUsageDataAvailabilityNotificationRequest
 ```
 
-#### Discussion
+## Discussion
 
 Use this API to notify Apple servers that the user’s device can retrieve merchant token usage information. The request includes metadata about encryption and where to retrieve the usage information.
 

@@ -17,11 +17,11 @@ Creates the view object and configures its initial state.
 @preconcurrency func makeNSView(context: Self.Context) -> Self.NSViewType
 ```
 
-#### Return Value
+## Return Value
 
 Your AppKit view configured with the provided information.
 
-#### Discussion
+## Discussion
 
 You must implement this method and use it to create your view object. Configure the view using your app’s current data and contents of the `context` parameter. The system calls this method only once, when it creates your view for the first time. For all subsequent updates, the system calls the [`updateNSView(_:context:)`](./updatensview%28_,context%29.md) method.
 

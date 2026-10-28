@@ -15,7 +15,7 @@ Function for enumerating camera frame samples.
 typedef _Bool (*)(void *, NSObject<OS_ar_camera_frame_sample> *) ar_camera_frame_sample_enumerator_function_t;
 ```
 
-#### Return Value
+## Return Value
 
 `true` to continue enumerating, or `false` to stop enumerating.
 

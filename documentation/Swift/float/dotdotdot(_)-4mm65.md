@@ -21,7 +21,7 @@ Returns a partial range up to, and including, its upper bound.
 static func ... (maximum: Self) -> PartialRangeThrough<Self>
 ```
 
-#### Discussion
+## Discussion
 
 Use the prefix closed range operator (prefix `...`) to create a partial range of any type that conforms to the `Comparable` protocol. This example creates a `PartialRangeThrough<Double>` instance that includes any value less than or equal to `5.0`.
 

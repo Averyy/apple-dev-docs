@@ -20,7 +20,7 @@ Creates a data table from a dictionary of column names and data values.
 init(dictionary: [String : any MLDataValueConvertible]) throws
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer to create a data table from an in-memory [`Dictionary`](../../Swift/dictionary.md).
 

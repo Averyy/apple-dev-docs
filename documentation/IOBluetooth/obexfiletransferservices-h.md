@@ -2,7 +2,7 @@
 
 **Framework**: IOBluetooth
 
-##### Included Headers
+### Included Headers
 
 - <Foundation/Foundation.h>
 - <IOBluetooth/OBEX.h>

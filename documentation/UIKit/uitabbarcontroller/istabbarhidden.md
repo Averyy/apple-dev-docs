@@ -23,7 +23,7 @@ var isTabBarHidden: Bool { get set }
 @property (nonatomic, assign, getter=isTabBarHidden) BOOL tabBarHidden;
 ```
 
-#### Discussion
+## Discussion
 
 The default value for this property is `NO`.
 

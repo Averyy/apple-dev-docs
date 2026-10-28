@@ -25,7 +25,7 @@ static var initial: NSKeyValueObservingOptions { get }
 NSKeyValueObservingOptionInitial
 ```
 
-#### Discussion
+## Discussion
 
 The change dictionary in the notification will always contain an [`newKey`](../nskeyvaluechangekey/newkey.md) entry if [`new`](./new.md) is also specified but will never contain an [`oldKey`](../nskeyvaluechangekey/oldkey.md) entry. (In an initial notification the current value of the observed property may be old, but it’s new to the observer.) You can use this option instead of explicitly invoking, at the same time, code that is also invoked by the observer’s [`observeValue(forKeyPath:of:change:context:)`](../../ObjectiveC/nsobject-swift.class/observevalue%28forkeypath,of,change,context%29.md) method. When this option is used with[`addObserver(_:forKeyPath:options:context:)`](../../ObjectiveC/nsobject-swift.class/addobserver%28_,forkeypath,options,context%29.md) a notification will be sent for each indexed object to which the observer is being added.
 

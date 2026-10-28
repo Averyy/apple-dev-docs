@@ -17,7 +17,7 @@ Create a processor masking the given token IDs.
 init?(tokenIds: Set<Int>)
 ```
 
-#### Discussion
+## Discussion
 
 Negative IDs are ignored. Returns `nil` when no valid IDs remain (nothing to suppress).
 

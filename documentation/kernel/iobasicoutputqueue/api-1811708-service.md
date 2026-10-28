@@ -12,11 +12,11 @@ virtual bool service(
  IOOptionBits options = 0);
 ```
 
-#### Return Value
+## Return Value
 
 Returns true if the queue was stalled and there were packets sitting in the queue awaiting delivery, false otherwise.
 
-#### Overview
+## Overview
 
 A target that stalls the queue must call service() when it becomes ready to accept more packets. Calling this method when the queue is not stalled is harmless.
 

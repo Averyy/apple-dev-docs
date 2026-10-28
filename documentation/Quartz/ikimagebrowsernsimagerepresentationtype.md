@@ -19,7 +19,7 @@ let IKImageBrowserNSImageRepresentationType: String
 extern NSString * const IKImageBrowserNSImageRepresentationType;
 ```
 
-#### Discussion
+## Discussion
 
 An [`NSImage`](../AppKit/nsimage.md)  object.
 

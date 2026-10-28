@@ -12,7 +12,7 @@ Test the identity of executable code on disk and in running processes.
 - Mac Catalyst 17.4+
 - macOS 14.4+
 
-#### Overview
+## Overview
 
 Code that is cryptographically signed carries tamper-proof statements about its identity in its code signature. Construct tests to distinguish different code files using the lightweight code requirement domain-specific language (DSL). Use the tests to distinguish code files on disk, running processes, and processes that the operating system launches. Code files on disk include:
 
@@ -21,7 +21,7 @@ Code that is cryptographically signed carries tamper-proof statements about its 
 - Frameworks
 - Loadable bundles
 
-#### Define tests of signed code properties
+## Define tests of signed code properties
 
 The keywords you use to test code properties in the lightweight code requirement DSL are:
 
@@ -41,7 +41,7 @@ The keywords you use to test code properties in the lightweight code requirement
 
 For code signed by an organization or individual other than Apple, the code’s identity is specified by its `SigningIdentifier`, `TeamIdentifier`, and `ValidationCategory`.
 
-#### Combine tests into requirements
+## Combine tests into requirements
 
 The lightweight code requirement DSL provides operators that you use to build up complex requirements from individual tests. For example, the operators to construct on-disk code requirements are:
 
@@ -58,15 +58,15 @@ The `anyOf(requirement:)` and `allOf(requirement:)` operators simplify their inp
 
 Both `allOf(requirement:)` and `anyOf(requirement:)` throw an error if the simplification results in the same constraint appearing twice in the arguments for one operator, for example, if an `anyOf(requirement:)` operator contains two tests of [`InfoPlistHash`](./infoplisthash.md) constraints. The exception to this simplification rule is that multiple [`EntitlementsQuery`](./entitlementsquery.md) tests can appear in the arguments for one operator.
 
-#### Test whether a running process satisfies a lightweight code requirement
+## Test whether a running process satisfies a lightweight code requirement
 
 Create a [`ProcessCodeRequirement`](./processcoderequirement.md) using the DSL and pass it to [`SecTaskValidateForRequirement(task:requirement:)`](./sectaskvalidateforrequirement%28task,requirement%29.md), along with a [`SecTask`](../Security/sectask.md) representing the running process. If the task’s code satisfies the lightweight code requirement, then the function returns `true`; otherwise, it returns `false`.
 
-#### Test whether code on disk satisfies a lightweight code requirement
+## Test whether code on disk satisfies a lightweight code requirement
 
 Create an [`OnDiskCodeRequirement`](./ondiskcoderequirement.md) using the DSL and pass it to [`SecStaticCodeCheckValidityWithOnDiskRequirement(code:flags:requirement:)`](./secstaticcodecheckvaliditywithondiskrequirement%28code,flags,requirement%29.md) or [`SecCodeCheckValidityWithOnDiskRequirement(code:flags:requirement:)`](./seccodecheckvaliditywithondiskrequirement%28code,flags,requirement%29.md), depending on whether you construct a [`SecStaticCode`](../Security/secstaticcode.md) or [`SecCode`](../Security/seccode.md) to represent the code. Both functions return a [`ValidationResult`](./validationresult.md) indicating whether the code has a valid signature, whether it satisfies the requirement, and any error that occurred.
 
-#### Restrict the executables you launch as new processes
+## Restrict the executables you launch as new processes
 
 Create a [`LaunchCodeRequirement`](./launchcoderequirement.md) using the DSL and set it as the [`launchRequirement`](../Foundation/process/launchrequirement.md) on a [`Process`](../Foundation/process.md) instance, before you call [`run()`](../Foundation/process/run%28%29.md). If the executable specified in the process’s [`executableURL`](../Foundation/process/executableurl.md) satisfies the launch requirement, the kernel launches the process; otherwise, `run()` throws an error. You can also encode your requirements as launch constraints in property list files that you embed in your executable’s code signature to restrict which processes can launch your executable and which dynamic libraries your process can load. For more information, see [Applying launch environment and library constraints](../Security/applying-launch-environment-and-library-constraints.md).
 

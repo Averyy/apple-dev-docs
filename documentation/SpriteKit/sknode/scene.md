@@ -29,7 +29,7 @@ var scene: SKScene? { get }
 
 - [Accessing and Modifying the Node Tree](../accessing-and-modifying-the-node-tree.md)
 
-#### Discussion
+## Discussion
 
 If the node is not embedded in a scene, the value is `nil`.
 

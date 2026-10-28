@@ -24,7 +24,7 @@ optional func videoComposition(_ videoComposition: AVVideoComposition, shouldCon
 - (BOOL) videoComposition:(AVVideoComposition *) videoComposition shouldContinueValidatingAfterFindingEmptyTimeRange:(CMTimeRange) timeRange;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the video composition should continue validation in order to report additional problems that may exist, otherwise [`false`](../../Swift/false.md).
 

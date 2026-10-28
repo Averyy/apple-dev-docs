@@ -22,11 +22,11 @@ Generates a new random private key.
 static func generate() throws -> Self
 ```
 
-#### Return Value
+## Return Value
 
 The generated private key.
 
-#### Discussion
+## Discussion
 
 Give the [`publicKey`](./publickey-swift.property.md) to another person so that they can encapsulate shared secrets that you recover by calling [`decapsulate(_:)`](./decapsulate%28_%29.md).
 

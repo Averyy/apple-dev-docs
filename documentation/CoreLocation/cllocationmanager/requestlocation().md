@@ -29,7 +29,7 @@ func requestLocation()
 
 - [Getting the current location of a device](../getting-the-current-location-of-a-device.md)
 
-#### Discussion
+## Discussion
 
 This method returns immediately. Calling it causes the location manager to obtain a location fix (which may take several seconds) and call the delegate’s [`locationManager(_:didUpdateLocations:)`](../cllocationmanagerdelegate/locationmanager%28_,didupdatelocations%29.md) method with the result. The location fix is obtained at the accuracy level indicated by the [`desiredAccuracy`](./desiredaccuracy.md) property. Only one location fix is reported to the delegate, after which location services are stopped. If a location fix cannot be determined in a timely manner, the location manager calls the delegate’s [`locationManager(_:didFailWithError:)`](../cllocationmanagerdelegate/locationmanager%28_,didfailwitherror%29.md) method instead and reports a [`CLError.Code.locationUnknown`](../clerror-swift.struct/code/locationunknown.md) error.
 

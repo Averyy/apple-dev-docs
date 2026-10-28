@@ -25,7 +25,7 @@ let id: String?
 
 - [Merchandising win-back offers in your app](../../merchandising-win-back-offers-in-your-app.md)
 
-#### Discussion
+## Discussion
 
 The [`id`](./id.md) is a string that contains the alphanumeric offer identifier you provide when you configure an offer in App Store Connect.
 

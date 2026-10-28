@@ -20,7 +20,7 @@ func inputState(forSpatialAccessoryAnchorTimestamp timestamp: TimeInterval) -> (
 - (id<GCDevicePhysicalInputState>) inputStateForSpatialAccessoryAnchorTimestamp:(NSTimeInterval) timestamp;
 ```
 
-#### Return Value
+## Return Value
 
 The buffered accessory input state that most closely aligns with the provided spatial accessory anchor timestamp.
 

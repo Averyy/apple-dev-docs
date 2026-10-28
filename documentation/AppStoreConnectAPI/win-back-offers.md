@@ -5,7 +5,7 @@
 
 Create and manage win-back offers for your auto-renewable subscriptions.
 
-#### Overview
+## Overview
 
 Win-back offers are offers you create for your apps to re-acquire churned subscribers of an auto-renewable subscription. To learn more, see [Creating and configuring win-back offers](./creating-and-configuring-win-back-offers.md).
 

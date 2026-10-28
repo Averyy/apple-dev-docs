@@ -13,7 +13,7 @@
 var soRecentSync: OSType { get }
 ```
 
-#### Discussion
+## Discussion
 
 Get the message code for the most recentlyencountered synchronization command. If no synchronization commandhas been encountered, 0 is returned. The `speechInfo` parameteris a pointer to a variable of type `OSType`.
 

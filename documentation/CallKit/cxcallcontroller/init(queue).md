@@ -23,11 +23,11 @@ init(queue: dispatch_queue_t)
 - (instancetype) initWithQueue:(dispatch_queue_t) queue;
 ```
 
-#### Return Value
+## Return Value
 
 A new call controller initialized with the specified queue.
 
-#### Discussion
+## Discussion
 
 This is the designated initializer.
 

@@ -24,15 +24,15 @@ func AudioQueueGetProperty(_ inAQ: AudioQueueRef, _ inID: AudioQueuePropertyID, 
 extern OSStatus AudioQueueGetProperty(AudioQueueRef inAQ, AudioQueuePropertyID inID, void *outData, UInt32 *ioDataSize);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See Result Codes.
 
-#### Discussion
+## Discussion
 
 Before calling this function, you can use the [`AudioQueueGetPropertySize(_:_:_:)`](./audioqueuegetpropertysize%28_,_,_%29.md) function to determine the size, in bytes, of the value of a specified property. Some properties have values of a specific size, as described in [`AudioQueuePropertyID`](./audioqueuepropertyid.md).
 
-##### Special Considerations
+### Special Considerations
 
 Some Core Audio property values are C types and others are Core Foundation objects.
 

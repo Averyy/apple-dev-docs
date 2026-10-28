@@ -21,11 +21,11 @@ Returns a tuple containing the high and low parts of the result of multiplying t
 func multipliedFullWidth(by other: Int16) -> (high: Int16, low: Int16.Magnitude)
 ```
 
-#### Return Value
+## Return Value
 
 A tuple containing the high and low parts of the result of multiplying this value and `other`.
 
-#### Discussion
+## Discussion
 
 Use this method to calculate the full result of a product that would otherwise overflow. Unlike traditional truncating multiplication, the `multipliedFullWidth(by:)` method returns a tuple containing both the `high` and `low` parts of the product of this value and `other`. The following example uses this method to multiply two `Int8` values that normally overflow when multiplied:
 

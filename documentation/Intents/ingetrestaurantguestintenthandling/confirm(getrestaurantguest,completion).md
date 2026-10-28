@@ -26,7 +26,7 @@ optional func confirm(getRestaurantGuest guestIntent: INGetRestaurantGuestIntent
 - (void) confirmGetRestaurantGuest:(INGetRestaurantGuestIntent *) guestIntent completion:(void (^)(INGetRestaurantGuestIntentResponse *response)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to validate that you can return the current user’s information. At some point in your implementation, execute the provided completion block with a response object.
 

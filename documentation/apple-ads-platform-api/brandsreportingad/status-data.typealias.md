@@ -20,11 +20,11 @@ string BrandsReportingAd.Status
 - `ENABLED`: The ad is set to run and can participate in auctions.
 - `PAUSED`: The ad is paused by the advertiser and doesn’t participate in auctions.
 
-#### Discussion
+## Discussion
 
 This reflects whether the advertiser had the ad set to run as of the report’s generation, distinct from the system-evaluated [`BrandsReportingAd.SystemStatus`](./systemstatus-data.typealias.md) reported alongside it.
 
-##### Example
+### Example
 
 ```json
 {

@@ -17,7 +17,7 @@ A `log-sum-exp` reduction over the entire array.
 func logSumExp(_ array: MLXArray, keepDims: Bool = false, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 The log-sum-exp reduction is a numerically stable version of:
 
@@ -25,7 +25,7 @@ The log-sum-exp reduction is a numerically stable version of:
 log(sum(exp(a)))
 ```
 
-##### See Also
+### See Also
 
 - [Reduction Functions](./reduction.md)
 - [`logSumExp(_:axes:keepDims:stream:)`](./logsumexp%28_,axes,keepdims,stream%29.md)

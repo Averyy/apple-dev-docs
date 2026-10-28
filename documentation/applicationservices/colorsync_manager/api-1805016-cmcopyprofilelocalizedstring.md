@@ -17,11 +17,11 @@ CMError CMCopyProfileLocalizedString (
 );
 ```
 
-#### Return Value
+## Return Value
 
 A `CMError` value. See [Result Codes](../colorsync_manager.md#1670295).
 
-#### Overview
+## Overview
 
 For example, you pass in the optional tag 'dscm' plus "enUS" for the `reqLocale` parameter, to for a U.S. English string. If a U.S. English string is not found, ColorSync falls back to a reasonable default: 
 

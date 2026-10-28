@@ -25,7 +25,7 @@ var vignettingIntensity: CGFloat { get set }
 @property (nonatomic) CGFloat vignettingIntensity;
 ```
 
-#### Discussion
+## Discussion
 
 A vignette effect darkens the edges and corners of the rendered scene, simulating the effect of lens and barrel shape on the image produced by a physical camera. Higher values result in more darkening, and lower values result in a subtler effect. The default value of `0.0` results in no vignetting effect.
 

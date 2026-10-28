@@ -25,7 +25,7 @@ init(languageOptions: [MPNowPlayingInfoLanguageOption], defaultLanguageOption: M
 - (instancetype) initWithLanguageOptions:(NSArray<MPNowPlayingInfoLanguageOption *> *) languageOptions defaultLanguageOption:(MPNowPlayingInfoLanguageOption *) defaultLanguageOption allowEmptySelection:(BOOL) allowEmptySelection;
 ```
 
-#### Return Value
+## Return Value
 
 A newly created language option group with the passed attributes.
 

@@ -15,7 +15,7 @@ The expanded experience automatic transition behavior into the immersive experie
 enum AutomaticTransitionToImmersive
 ```
 
-#### Overview
+## Overview
 
 Use this enum to describe the desired automatic transition behavior into the immersive experience. The behaviors defined here are subject to system settings.
 

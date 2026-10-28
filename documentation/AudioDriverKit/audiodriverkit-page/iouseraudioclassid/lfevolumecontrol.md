@@ -15,7 +15,7 @@ The identifier for the low-frequency effect volume control class.
 LFEVolumeControl
 ```
 
-#### Discussion
+## Discussion
 
 This class is a subclass of the [`IOUserAudioLevelControl`](../../iouseraudiolevelcontrol.md) class for an LFE channel that results from bass management. If you use normal audio channels to represent LFE channels, you must use the [`VolumeControl`](./volumecontrol.md) class to manipulate the level.
 

@@ -24,7 +24,7 @@ let HMCharacteristicTypeImageRotation: String
 extern NSString * const HMCharacteristicTypeImageRotation;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is a floating point number representing an angle in degrees that the image should be rotated. The only valid values are `0`, `90`, `180`, and `270`.
 

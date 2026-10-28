@@ -31,7 +31,7 @@ var restaurant: INRestaurant? { get set }
 @property (atomic, copy, nullable) INRestaurant * restaurant;
 ```
 
-#### Discussion
+## Discussion
 
 Use the specified restaurant to identify any restaurant-related requirements.
 

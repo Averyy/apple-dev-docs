@@ -21,7 +21,7 @@ The array’s “past the end” position—that is, the position one greater th
 var endIndex: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 When you need a range that includes the last element of an array, use the half-open range operator (`..<`) with `endIndex`. The `..<` operator creates a range that doesn’t include the upper bound, so it’s always safe to use with `endIndex`. For example:
 

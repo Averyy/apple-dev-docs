@@ -20,7 +20,7 @@ Returns the attribute at a given path, relative to this prim.
 func attribute(at path: USDLayer.Path) -> USDPrim.Attribute
 ```
 
-#### Discussion
+## Discussion
 
 If `path` is relative, it is anchored to this prim’s path. If no attribute exists at the resolved path, returns an invalid attribute handle.
 

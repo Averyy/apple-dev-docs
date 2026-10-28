@@ -12,11 +12,11 @@ virtual IOReturn stopStream(
  void);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if the stream was successfully stopped.
 
-#### Overview
+## Overview
 
 This must be implemented by a subclass.
 

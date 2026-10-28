@@ -23,7 +23,7 @@ var isDraggable: Bool { get set }
 @property (nonatomic, getter=isDraggable) BOOL draggable;
 ```
 
-#### Discussion
+## Discussion
 
 Setting this property to [`true`](../../Swift/true.md) makes an annotation draggable by the user. If [`true`](../../Swift/true.md), the associated annotation object needs to also implement the [`setCoordinate:`](../mkannotation/setcoordinate_.md) method. The default value of this property is [`false`](../../Swift/false.md).
 

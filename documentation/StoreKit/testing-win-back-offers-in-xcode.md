@@ -5,7 +5,7 @@
 
 Validate your app’s handling of win-back offers that you configure for the testing environment.
 
-#### Overview
+## Overview
 
 A win-back offer is an offer for a discount on an auto-renewable subscription to a customer who was previously subscribed.
 
@@ -13,11 +13,11 @@ To test win-back offers in Xcode, first set up your StoreKit configuration file 
 
 Testing win-back offers in Xcode is convenient early in the development process, because it doesn’t rely on any product configurations in App Store Connect. However, you can also test win-back offers in the sandbox environment, which does rely on your App Store Connect configuration. For more information, see [Testing win-back offers in the sandbox environment](./testing-win-back-offers-in-the-sandbox-environment.md).
 
-##### Perform basic setup
+### Perform basic setup
 
 Before you can begin testing in Xcode, complete the steps in [Setting up StoreKit Testing in Xcode](../Xcode/setting-up-storekit-testing-in-xcode.md), including creating a StoreKit configuration file and enabling StoreKit testing in Xcode.
 
-##### Configure win-back offers for testing
+### Configure win-back offers for testing
 
 Start by opening the StoreKit configuration editor in Xcode and defining at least one auto-renewable subscription and subscription group. Then follow these steps to configure one or more win-back offers:
 
@@ -33,7 +33,7 @@ Start by opening the StoreKit configuration editor in Xcode and defining at leas
 
 > **Note**:  The eligibility criteria that determine whether a customer can redeem a win-back offer can have many rules and states. Rather than requiring you to construct all the conditions before you can test win-back offers in your app, the testing UI provides a simplified Eligible or Not Eligible setting that bypasses any other eligibility criteria. Set the value to Eligible to test your app’s response when a customer receives a win-back offer.
 
-##### Run the test
+### Run the test
 
 To display a win-back offer, run your app in the Xcode environment and follow these steps:
 
@@ -45,7 +45,7 @@ To display a win-back offer, run your app in the Xcode environment and follow th
 
 For more information about using the transaction manager, see [Testing in-app purchases with StoreKit transaction manager in Xcode](../Xcode/testing-in-app-purchases-with-storekit-transaction-manager-in-code.md).
 
-##### Reset or rerun the test
+### Reset or rerun the test
 
 You can rerun the test without resetting any state values. Win-back offers that you set to be Eligible appear as soon as their related subscriptions expire.
 

@@ -24,11 +24,11 @@ optional func playbackCoordinator(_ coordinator: AVPlayerPlaybackCoordinator, in
 - (NSArray<NSValue *> *) playbackCoordinator:(AVPlayerPlaybackCoordinator *) coordinator interstitialTimeRangesForPlayerItem:(AVPlayerItem *) playerItem;
 ```
 
-#### Return Value
+## Return Value
 
 An array of [`NSValue`](../../Foundation/nsvalue.md) objects that contain the interstitial time ranges.
 
-#### Discussion
+## Discussion
 
 Implementing this method enables the coordinator to synchronize playback between participants that have different interstitials stitched into the primary content timeline.
 

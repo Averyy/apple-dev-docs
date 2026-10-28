@@ -21,11 +21,11 @@ class func sharingServices(forItems items: [Any]) -> [NSSharingService]
 + (NSArray<NSSharingService *> *) sharingServicesForItems:(NSArray *) items;
 ```
 
-#### Return Value
+## Return Value
 
 An array of sharing services to allow for `items`.
 
-#### Discussion
+## Discussion
 
 This method can be used to build a custom user interface or to populate a contextual menu.
 

@@ -16,7 +16,7 @@ The unique identifier string for the role.
 var roleIdentifier: String { get }
 ```
 
-#### Discussion
+## Discussion
 
 Provide unique strings for each distinct role in your custom spatial template.
 

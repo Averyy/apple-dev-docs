@@ -25,7 +25,7 @@ func evaluation(on labeledTexts: MLTextClassifier.DataSource) -> MLClassifierMet
 func evaluation(on labeledTexts: [String : [String]]) -> MLClassifierMetrics
 ```
 
-#### Return Value
+## Return Value
 
 Classifier metrics.
 

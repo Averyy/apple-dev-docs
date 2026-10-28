@@ -25,7 +25,7 @@ class var callStackReturnAddresses: [NSNumber] { get }
 @property (class, copy, readonly) NSArray<NSNumber *> * callStackReturnAddresses;
 ```
 
-#### Return Value
+## Return Value
 
 An array containing the call stack return addresses. Each element is an `NSNumber` object containing an `NSUInteger` value.
 

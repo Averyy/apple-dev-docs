@@ -6,7 +6,7 @@
 
 A 16-bit integer that indicates the font’s style.
 
-#### Overview
+## Overview
 
 Set this field to `0` for normal text. You can enable other style options by using one or more of the bit masks listed in the following table.
 

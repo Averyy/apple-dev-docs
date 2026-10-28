@@ -14,7 +14,7 @@
 #define kIOPropertyLogicalBlockSizeKey
 ```
 
-#### Discussion
+## Discussion
 
 This key is used to define the logical block size of a hard disk drive.
 

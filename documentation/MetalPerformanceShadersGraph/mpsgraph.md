@@ -24,7 +24,7 @@ class MPSGraph
 @interface MPSGraph : MPSGraphObject
 ```
 
-#### Overview
+## Overview
 
 An MPSGraph is a symbolic representation of operations to be utilized to execute compute graphs on a device.
 

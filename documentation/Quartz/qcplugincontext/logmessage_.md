@@ -15,7 +15,7 @@ Writes a message to the Quartz Composer log.
 - (void) logMessage:(NSString *) format;
 ```
 
-#### Discussion
+## Discussion
 
 This method is an alternative to using the functions [`NSLog(_:_:)`](../../Foundation/nslog%28_,_%29.md) or `printf`.
 

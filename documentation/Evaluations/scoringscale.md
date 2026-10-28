@@ -25,7 +25,7 @@ struct ScoringScale
 
 - [Designing effective model-judge evaluators](./designing-effective-model-judges.md)
 
-#### Overview
+## Overview
 
 Use the factory methods to create scales from numeric dictionaries, pass or fail pairs, or typed [`ScoreLevel`](./scorelevel.md) enums:
 

@@ -16,11 +16,11 @@ Returns the number of currently active elements in the group.
 int group::elementActiveInGroup()
 ```
 
-#### Return Value
+## Return Value
 
 The count of active elements currently in the group
 
-#### Discussion
+## Discussion
 
 Use this function to determine how many particles are currently alive in the group, which may be less than the maximum if some particles have expired or not yet spawned.
 

@@ -23,7 +23,7 @@ convenience init?(width: Int, height: Int, featureChannelCount featureChannels: 
 + (instancetype) descriptorWithWidth:(NSUInteger) width height:(NSUInteger) height featureChannelCount:(NSUInteger) featureChannels batchSize:(NSUInteger) batchSize;
 ```
 
-#### Discussion
+## Discussion
 
 This initializer provides a convenient way for you to configure NCHW tensors used by convolutional layers. The tensor data type is [`MLCDataType.float32`](../mlcdatatype/float32.md).
 

@@ -23,7 +23,7 @@ var bounds: CGRect { get }
 @property (nonatomic, readonly) CGRect bounds;
 ```
 
-#### Discussion
+## Discussion
 
 This value represents the bounds of every Core Graphics context that the associated graphics renderer creates.
 

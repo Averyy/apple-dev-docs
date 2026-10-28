@@ -25,7 +25,7 @@ var persistentIdentifier: any NSCoding { get }
 @property (retain, readonly) id<NSCoding> persistentIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 You can save the value of this property persistently and use it to recreate the version object later. When recreating the version object using the [`version(itemAt:forPersistentIdentifier:)`](./version%28itemat,forpersistentidentifier%29.md) method, the version object returned is equivalent to the current object.
 

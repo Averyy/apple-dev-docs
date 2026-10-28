@@ -16,11 +16,11 @@ Returns a Boolean value that indicates whether the layer renderer provides raste
 bool cp_layer_renderer_configuration_get_generate_flipped_rasterization_rate_maps(cp_layer_renderer_configuration_t configuration);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the layer renderer generates both flipped and nonflipped rasterization rate maps, or `false` if it generates only nonflipped rasterization rate maps.
 
-#### Discussion
+## Discussion
 
 If foveation is disabled, the layer renderer doesn’t generate any rasterization rate maps, regardless of this function’s return value.
 

@@ -21,20 +21,20 @@ protocol LogHandler : _SwiftLogSendableLogHandler
 
 - [Disable log levels during compilation](./disableloglevelsduringcompilation.md)
 - [Implementing a log handler](./implementingaloghandler.md)
-- [SLG-NNNN: Feature name](./slg-nnnn.md)
+- [SLG-NNNN: Feature name](https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/slg-nnnn)
 
-#### Overview
+## Overview
 
 This type is an implementation detail and should not normally be used, unless you implement your own logging backend. To use the SwiftLog API, please refer to the documentation of [`Logger`](./logger.md).
 
-### Implementation requirements
+## Implementation requirements
 
 To implement your own `LogHandler` you should respect a few requirements that are necessary so applications work as expected, regardless of the selected `LogHandler` implementation.
 
 - The [`LogHandler`](./loghandler.md) must be a `struct`.
 - The metadata and `logLevel` properties must be implemented so that setting them on a `Logger` does not affect other instances of `Logger`.
 
-##### Treat log level & metadata as values
+### Treat log level & metadata as values
 
 When developing your `LogHandler`, please make sure the following test works.
 
@@ -58,7 +58,7 @@ func logHandlerValueSemantics() {
 }
 ```
 
-##### Special cases
+### Special cases
 
 In certain special cases, the log level behaving like a value on `Logger` might not be what you want. For example, you might want to set the log level across *all* `Logger`s to `.debug` when a signal (for example `SIGUSR1`) is received to be able to debug special failures in production. This special case is acceptable but please create a solution specific to your `LogHandler` implementation to achieve that.
 

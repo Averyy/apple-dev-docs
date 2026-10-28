@@ -21,7 +21,7 @@ Returns a Boolean value that indicates whether a given number of elements matche
 static func == (lhs: Int, rhs: Subscribers.Demand) -> Bool
 ```
 
-#### Discussion
+## Discussion
 
 An `.unlimited` demand doesn’t match any integer.
 

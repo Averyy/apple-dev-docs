@@ -19,7 +19,7 @@ Initialize a new state by creating a value matching the provided descriptor.
 init(descriptor: consuming InferenceValue.Descriptor)
 ```
 
-#### Discussion
+## Discussion
 
 Note that the descriptor must not have a dynamic shape.
 

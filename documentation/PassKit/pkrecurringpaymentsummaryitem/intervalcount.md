@@ -24,7 +24,7 @@ var intervalCount: Int { get set }
 @property (nonatomic, assign) NSInteger intervalCount;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `1`, which requests a recurring payment every one [`intervalUnit`](./intervalunit.md).
 

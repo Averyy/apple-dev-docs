@@ -21,7 +21,7 @@ A color or pattern that you can use to outline or fill a path.
 struct Shading
 ```
 
-#### Overview
+## Overview
 
 Use a shading instance to describe the color or pattern of a path that you outline with a method like [`stroke(_:with:style:)`](./stroke%28_,with,style%29.md), or of the interior of a region that you fill with the [`fill(_:with:style:)`](./fill%28_,with,style%29.md) method. Get a shading instance by calling one of the `Shading` structure’s factory methods. You can base shading on:
 

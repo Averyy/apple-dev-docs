@@ -13,7 +13,7 @@
 ComponentResult InvokeComponentMPWorkFunctionUPP(void *globalRefCon, ComponentMPWorkFunctionHeaderRecordPtr header, ComponentMPWorkFunctionUPP userUPP);
 ```
 
-#### Return Value
+## Return Value
 
 See the description of the `ComponentResult` data type.
 

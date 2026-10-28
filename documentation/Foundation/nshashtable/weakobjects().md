@@ -25,7 +25,7 @@ class func weakObjects() -> NSHashTable<ObjectType>
 + (NSHashTable<id> *) weakObjectsHashTable;
 ```
 
-#### Return Value
+## Return Value
 
 A new hash table that uses the [`weakMemory`](../nspointerfunctions/options/weakmemory.md) options and [`objectPersonality`](../nspointerfunctions/options/objectpersonality.md) and has an initial capacity of `0`.
 

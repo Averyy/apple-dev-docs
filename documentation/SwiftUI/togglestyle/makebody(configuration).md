@@ -23,11 +23,11 @@ Creates a view that represents the body of a toggle.
 @MainActor @preconcurrency func makeBody(configuration: Self.Configuration) -> Self.Body
 ```
 
-#### Return Value
+## Return Value
 
 A view that has behavior and appearance that enables it to function as a [`Toggle`](../toggle.md).
 
-#### Discussion
+## Discussion
 
 Implement this method when you define a custom toggle style that conforms to the [`ToggleStyle`](../togglestyle.md) protocol. Use the `configuration` input — a [`ToggleStyleConfiguration`](../togglestyleconfiguration.md) instance — to access the toggle’s label and state. Return a view that has the appearance and behavior of a toggle. For example you can create a toggle that displays a label and a circle that’s either empty or filled with a checkmark:
 
@@ -58,7 +58,7 @@ You can present a collection of toggles that use this style in a stack:
 
 When updating a view hierarchy, the system calls your implementation of the `makeBody(configuration:)` method for each [`Toggle`](../toggle.md) instance that uses the associated style.
 
-##### Modify the current style
+### Modify the current style
 
 Rather than create an entirely new style, you can alternatively modify a toggle’s current style. Use the [`init(_:)`](../toggle/init%28_%29.md) initializer inside the `makeBody(configuration:)` method to create and modify a toggle based on a `configuration` value. For example, you can create a style that adds padding and a red border to the current style:
 

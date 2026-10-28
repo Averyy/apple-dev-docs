@@ -25,11 +25,11 @@ func makeTensor(descriptor: MTLTensorDescriptor, offset: Int) throws -> any MTLT
 - (id<MTLTensor>) newTensorWithDescriptor:(MTLTensorDescriptor *) descriptor offset:(NSUInteger) offset error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 A tensor, or `nil` if validation fails.
 
-#### Discussion
+## Discussion
 
 This method validates the constraints documented on [`MTLTensorDescriptor`](../mtltensordescriptor.md), and additionally requires:
 

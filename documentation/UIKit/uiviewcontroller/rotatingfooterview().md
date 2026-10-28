@@ -24,11 +24,11 @@ func rotatingFooterView() -> UIView?
 - (UIView *) rotatingFooterView;
 ```
 
-#### Return Value
+## Return Value
 
 The footer view. If the view controller is a tab bar controller, returns a view containing the tab bar. If the view controller is a navigation controller, returns the top view controller’s footer view. The default implementation returns `nil`.
 
-#### Discussion
+## Discussion
 
 In most cases, the header view is the navigation bar and the footer view is the tab bar. If you are implementing this method in a custom view controller that has its own custom footer view, you can override this method to return that footer view. The view returned from this method should already be part of your view controller’s view hierarchy.
 

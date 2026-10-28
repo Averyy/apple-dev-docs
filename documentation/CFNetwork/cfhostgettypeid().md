@@ -26,11 +26,11 @@ func CFHostGetTypeID() -> CFTypeID
 extern CFTypeID CFHostGetTypeID();
 ```
 
-#### Return Value
+## Return Value
 
 The Core Foundation type identifier for the CFHost opaque type.
 
-#### Discussion
+## Discussion
 
 This function is thread safe.
 

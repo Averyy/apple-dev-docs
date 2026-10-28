@@ -24,7 +24,7 @@ func geoLocation(forPoint position: simd_float3) async throws -> (CLLocationCoor
 - (void) getGeoLocationForPoint:(simd_float3) position completionHandler:(void (^)(CLLocationCoordinate2D coordinate, CLLocationDistance altitude, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 ARKit refers to its local coordinate space as “world” coordinate space, but this is different from geographic coordinates. For more information on ARKit’s coordinate space, see [`setWorldOrigin(relativeTransform:)`](./setworldorigin%28relativetransform%29.md).
 

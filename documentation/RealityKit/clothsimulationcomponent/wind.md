@@ -17,7 +17,7 @@ The wind force affecting all the cloth bodies in the simulation, in Newtons.
 var wind: SIMD3<Float>
 ```
 
-#### Discussion
+## Discussion
 
 The magnitude of the force applied to each particle depends on the angle between the wind direction and the particle’s normal. Full force is applied when the wind is aligned with the normal, and no force is applied when the wind is perpendicular to the normal.
 

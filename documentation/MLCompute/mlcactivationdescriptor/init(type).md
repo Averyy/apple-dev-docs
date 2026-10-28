@@ -23,7 +23,7 @@ convenience init?(type activationType: MLCActivationType)
 + (instancetype) descriptorWithType:(MLCActivationType) activationType;
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer to create one of the following activation descriptors:
 

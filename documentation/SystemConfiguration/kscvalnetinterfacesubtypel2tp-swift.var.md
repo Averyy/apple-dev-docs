@@ -19,7 +19,7 @@ let kSCValNetInterfaceSubTypeL2TP: CFString
 extern CFStringRef const kSCValNetInterfaceSubTypeL2TP;
 ```
 
-#### Discussion
+## Discussion
 
 This value applies to the [`kSCPropNetInterfaceSubType`](./kscpropnetinterfacesubtype-swift.var.md) key.
 

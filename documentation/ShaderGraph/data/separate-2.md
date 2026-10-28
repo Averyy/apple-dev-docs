@@ -14,7 +14,7 @@ Outputs each of the channels of a vector2 or integer2 as individual float or int
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Parameter Types
+## Parameter Types
 
 **Separate 2 (vector2f)**:
 

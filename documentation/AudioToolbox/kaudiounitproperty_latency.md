@@ -24,7 +24,7 @@ var kAudioUnitProperty_Latency: AudioUnitPropertyID { get }
 kAudioUnitProperty_Latency
 ```
 
-#### Discussion
+## Discussion
 
 The time, in seconds, that it takes an audio unit to move an audio sample from its input to its output.
 

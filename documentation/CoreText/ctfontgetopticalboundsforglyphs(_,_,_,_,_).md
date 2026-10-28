@@ -25,11 +25,11 @@ func CTFontGetOpticalBoundsForGlyphs(_ font: CTFont, _ glyphs: UnsafePointer<CGG
 extern CGRect CTFontGetOpticalBoundsForGlyphs(CTFontRef font, const CGGlyph glyphs[], CGRect boundingRects[], CFIndex count, CFOptionFlags options);
 ```
 
-#### Return Value
+## Return Value
 
 This function returns the overall bounding rectangle for an array of glyphs. The `boundingRects` parameter returns the bounding rectangles of the individual glyphs. These rectangles are the design metrics from the font transformed in font space.
 
-#### Discussion
+## Discussion
 
 Fonts may specify the optical edges of glyphs that can be used to make the edges of lines of text line up in a more visually pleasing way. This function returns bounding rectangles that correspond to these specifications if the font provides them; otherwise, it returns typographic bounding rectangles, composed of the font’s ascender and descender and a glyph’s advance width.
 

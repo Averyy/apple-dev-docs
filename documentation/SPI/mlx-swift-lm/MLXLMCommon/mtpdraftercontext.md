@@ -17,7 +17,7 @@ Lightweight context for an MTP drafter — simpler than `ModelContext` because d
 struct MTPDrafterContext
 ```
 
-#### Overview
+## Overview
 
 Not `Sendable`; cross-domain access goes through [`MTPDrafterContainer`](./mtpdraftercontainer.md).
 

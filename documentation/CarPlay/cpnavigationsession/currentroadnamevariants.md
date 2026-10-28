@@ -21,7 +21,7 @@ var currentRoadNameVariants: [String] { get set }
 @property (nonatomic, copy) NSArray<NSString *> * currentRoadNameVariants;
 ```
 
-#### Discussion
+## Discussion
 
 Set this property with variants of the current road name, from most to least verbose.
 

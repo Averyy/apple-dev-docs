@@ -19,7 +19,7 @@ func CreateObjSpecifier(_ desiredClass: DescType, _ theContainer: UnsafeMutableP
 OSErr CreateObjSpecifier(DescType desiredClass, AEDesc *theContainer, DescType keyForm, AEDesc *keyData, Boolean disposeInputs, AEDesc *objSpecifier);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../applicationservices/apple_event_manager.md#1656145).
 

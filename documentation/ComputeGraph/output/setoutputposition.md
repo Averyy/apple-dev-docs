@@ -16,7 +16,7 @@ Sets the position of the rendered output.
 void output::setOutputPosition(float3 position)
 ```
 
-#### Discussion
+## Discussion
 
 This function customizes where the particle will be rendered in 3D space. This affects only the rendered appearance and does not modify the particle node’s actual position.
 

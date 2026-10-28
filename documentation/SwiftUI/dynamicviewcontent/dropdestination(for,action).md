@@ -22,11 +22,11 @@ nonisolated
 func dropDestination<T>(for payloadType: T.Type = T.self, action: @escaping ([T], Int) -> Void) -> some DynamicViewContent where T : Transferable
 ```
 
-#### Return Value
+## Return Value
 
 A view that calls `action` when elements are inserted into the original view.
 
-#### Discussion
+## Discussion
 
 ```swift
 struct Profile: Identifiable {

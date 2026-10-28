@@ -24,7 +24,7 @@ var kAudioFormatProperty_FormatIsExternallyFramed: AudioFormatPropertyID { get }
 kAudioFormatProperty_FormatIsExternallyFramed
 ```
 
-#### Discussion
+## Discussion
 
 Indicates whether or not a format requires external framing information in the form of [`AudioStreamPacketDescription`](../CoreAudioTypes/audiostreampacketdescription.md) structures. The specifier is an [`AudioStreamBasicDescription`](../CoreAudioTypes/audiostreambasicdescription.md) structure describing the format to ask about. The value is a `UInt32` where nonzero means the format is externally framed. Any format that has variable-byte-sized packets requires packet descriptions.
 

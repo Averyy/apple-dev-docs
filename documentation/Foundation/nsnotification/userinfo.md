@@ -25,7 +25,7 @@ var userInfo: [AnyHashable : Any]? { get }
 @property (copy, readonly, nullable) NSDictionary * userInfo;
 ```
 
-#### Discussion
+## Discussion
 
 In Objective-C, this may be `nil`.
 

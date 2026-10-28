@@ -23,7 +23,7 @@ var ciColor: CIColor { get }
 @property (nonatomic, readonly) CIColor * CIColor;
 ```
 
-#### Discussion
+## Discussion
 
 This property throws an exception if the color object wasn’t initialized with a Core Image color.
 

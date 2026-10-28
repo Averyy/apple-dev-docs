@@ -20,7 +20,7 @@ Interactions that people can perform on this markup.
 var allowedInteractions: MarkupInteractions { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Use this to configure how people can interact with the markup, such as preventing resizing, rotation, or deletion. The default is `.all`, which allows all interactions. Set to `.readOnly` to prevent all modifications.
 

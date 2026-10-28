@@ -24,7 +24,7 @@ var lensDistortionCenter: CGPoint { get }
 @property (nonatomic, readonly) CGPoint lensDistortionCenter;
 ```
 
-#### Discussion
+## Discussion
 
 Due to geometric distortions in the image, the center of the distortion may not be equal to the optical center (principal point) of the lens. When making an image rectilinear, use the distortion center rather than the optical center of the image.
 

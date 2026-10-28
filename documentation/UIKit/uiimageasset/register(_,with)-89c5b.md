@@ -23,7 +23,7 @@ func register(_ image: UIImage, with configuration: UIImage.Configuration)
 - (void) registerImage:(UIImage *) image withConfiguration:(UIImageConfiguration *) configuration;
 ```
 
-#### Discussion
+## Discussion
 
 Each image in an image asset must have a unique configuration. If the asset already contains a registered image with the equivalent configuration, it replaces that image with the one in the `image` parameter.
 

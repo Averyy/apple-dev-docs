@@ -20,11 +20,11 @@ Creates a new column of typed values by converting this untyped column to the gi
 func map<T>(to type: T.Type) -> MLDataColumn<T> where T : MLDataValueConvertible
 ```
 
-#### Return Value
+## Return Value
 
 A new data column if the column’s underlying type is convertible to given type; otherwise `nil`.
 
-#### Discussion
+## Discussion
 
 Use this method to convert the elements of the column to a data column of the given type via [`MLDataValueConvertible`](../mldatavalueconvertible.md). Unlike [`column(type:)`](./column%28type%29.md), which doesn’t alter its elements, [`map(to:)`](./map%28to%29.md) converts the elements to the destination type. For example, you can use [`map(to:)`](./map%28to%29.md) to convert an untyped column of integers to a data column of strings.
 

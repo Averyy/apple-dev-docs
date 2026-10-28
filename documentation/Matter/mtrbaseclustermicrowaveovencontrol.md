@@ -25,7 +25,7 @@ class MTRBaseClusterMicrowaveOvenControl
 @interface MTRBaseClusterMicrowaveOvenControl : MTRGenericBaseCluster
 ```
 
-#### Overview
+## Overview
 
 Attributes and commands for configuring the microwave oven control, and reporting cooking stats.
 

@@ -15,7 +15,7 @@ A callback function that is automatically called when the app is sent to the bac
 attribute function onSuspend;
 ```
 
-#### Discussion
+## Discussion
 
 Use the `onSuspend` attribute to stop any actions when the app moves from the foreground to the background. This attribute must be set to a function that accepts an `options` argument; for example `App.onSuspend = function (options) {}`. The `options` argument is always set to `null`.
 

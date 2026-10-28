@@ -16,11 +16,11 @@ Positions this view within an invisible frame with the specified depth.
 nonisolated func frame(depth: CGFloat?, alignment: DepthAlignment = .center) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view with a fixed dimension of `depth` if non-`nil`.
 
-#### Discussion
+## Discussion
 
 Use this method to specify a fixed size for a view’s depth. If you don’t specify a dimension, the resulting view assumes this view’s sizing behavior in depth.
 

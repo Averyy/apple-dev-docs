@@ -25,11 +25,11 @@ func withVaList<R>(_ args: [any CVarArg], _ body: (CVaListPointer) -> R) -> R
 
 - [Using Imported C Functions in Swift](./using-imported-c-functions-in-swift.md)
 
-#### Return Value
+## Return Value
 
 The return value, if any, of the `body` closure parameter.
 
-#### Discussion
+## Discussion
 
 The pointer passed as an argument to `body` is valid only during the execution of `withVaList(_:_:)`. Do not store or return the pointer for later use.
 

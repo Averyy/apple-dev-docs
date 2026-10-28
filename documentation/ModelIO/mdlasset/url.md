@@ -24,7 +24,7 @@ var url: URL? { get }
 @property (nonatomic, retain, readonly, nullable) NSURL * URL;
 ```
 
-#### Discussion
+## Discussion
 
 For assets created from a URL (with the [`init(url:)`](./init%28url%29-1f4ym.md) or [`init(url:vertexDescriptor:bufferAllocator:)`](./init%28url,vertexdescriptor,bufferallocator%29-1tchi.md) initializer), this property is the URL that the asset was loaded from. For assets created manually, this property’s value is `nil`.
 

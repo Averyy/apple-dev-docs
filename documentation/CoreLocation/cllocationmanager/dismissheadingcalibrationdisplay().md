@@ -23,7 +23,7 @@ func dismissHeadingCalibrationDisplay()
 - (void) dismissHeadingCalibrationDisplay;
 ```
 
-#### Discussion
+## Discussion
 
 Core Location uses the heading calibration alert to calibrate the available heading hardware as needed. The display of this view is automatic, assuming your delegate supports displaying the view at all. If the view is displayed, you can use this method to dismiss it after an appropriate amount of time to ensure that your app’s user interface is not unduly disrupted.
 

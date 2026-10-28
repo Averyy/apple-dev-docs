@@ -15,7 +15,7 @@ An activity classifier data source that uses a directory of directories that con
 case labeledDirectories(at: URL)
 ```
 
-#### Discussion
+## Discussion
 
 Create a data source by organizing each activity’s data files into a directory and naming each directory with the label for that activity.
 

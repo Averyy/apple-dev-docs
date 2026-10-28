@@ -18,7 +18,7 @@ The maximum age in the person’s declared age range.
 var upperBound: Int?
 ```
 
-#### Discussion
+## Discussion
 
 When this value is `nil`, there’s no upper bound to the person’s age range, indicating they meet or exceed the highest age gate specified by the `requestAgeRange(ageGates:_:_:in:)` methods (for example, [`requestAgeRange(ageGates:_:_:in:)`](../requestagerange%28agegates,_,_,in%29-2go8c.md)).
 

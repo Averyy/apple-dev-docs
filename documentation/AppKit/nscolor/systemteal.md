@@ -19,7 +19,7 @@ class var systemTeal: NSColor { get }
 @property (class, strong, readonly) NSColor * systemTealColor;
 ```
 
-#### Discussion
+## Discussion
 
 Use this color when you want a tint color that looks great on both light and dark backgrounds.
 

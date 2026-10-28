@@ -24,7 +24,7 @@ func complexConstant(realPart: Double, imaginaryPart: Double, dataType: MPSDataT
 - (MPSGraphTensor *) constantWithRealPart:(double) realPart imaginaryPart:(double) imaginaryPart dataType:(MPSDataType) dataType;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSGraphTensor object.
 

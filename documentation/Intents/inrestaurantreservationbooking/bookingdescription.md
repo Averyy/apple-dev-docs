@@ -30,7 +30,7 @@ var bookingDescription: String? { get set }
 @property (atomic, copy, nullable) NSString * bookingDescription;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to provide a user-readable description of the reservation. For example, you might use this property to summarize the restaurant, date, and party information.
 

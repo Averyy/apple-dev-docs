@@ -22,7 +22,7 @@ static let message: UIActivity.ActivityType
 extern UIActivityType const UIActivityTypeMessage;
 ```
 
-#### Discussion
+## Discussion
 
 When using this service, you can provide [`NSString`](../../../Foundation/nsstring.md) and [`NSAttributedString`](../../../Foundation/nsattributedstring.md) objects as data for the activity items. You may also specify [`NSURL`](../../../Foundation/nsurl.md) objects whose contents use the `sms` scheme.
 

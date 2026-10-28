@@ -24,7 +24,7 @@ var size: CGSize { get }
 @property (nonatomic, readonly) CGSize size;
 ```
 
-#### Discussion
+## Discussion
 
 This value reflects the logical size of the image and takes the image’s current orientation into account. Multiply the size values by the value in the [`scale`](./scale.md) property to get the pixel dimensions of the image.
 

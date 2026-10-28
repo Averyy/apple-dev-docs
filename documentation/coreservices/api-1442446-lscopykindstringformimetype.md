@@ -21,15 +21,15 @@ func LSCopyKindStringForMIMEType(_ inMIMEType: CFString!, _ outKindString: Unsaf
 OSStatus LSCopyKindStringForMIMEType(CFStringRef inMIMEType, CFStringRef *outKindString);
 ```
 
-#### Return Value
+## Return Value
 
 A result code; see [Result Codes](./launch_services.md#1661359).
 
-#### Discussion
+## Discussion
 
 The kind string (which may be localized) is obtained from the preferred application for opening items of the specified the MIME type, if one is found in the Launch Services database; otherwise, a more generic kind string is chosen.
 
-##### Version-Notes
+### Version-Notes
 
 Thread-safe since Mac OS version 10.2.
 

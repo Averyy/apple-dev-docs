@@ -25,7 +25,7 @@ convenience init(objects: UnsafePointer<AnyObject>, count cnt: Int)
 + (instancetype) setWithObjects:(ObjectType const[]) objects count:(NSUInteger) cnt;
 ```
 
-#### Return Value
+## Return Value
 
 A new set containing `cnt` objects from the list of objects specified by `objects`.
 

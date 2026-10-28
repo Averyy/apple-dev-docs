@@ -16,7 +16,7 @@ If the `numberOfShotsTaken > maximumNumberOfInputImages` then any additional sho
 case overCapturing
 ```
 
-#### Discussion
+## Discussion
 
 Note: this will only occur if `isOverCaptureEnabled` was set to true in the `Configuration` used to start the session – otherwise, the session will simply stop capturing once the device limit is reached.
 

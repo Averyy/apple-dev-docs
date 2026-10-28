@@ -19,7 +19,7 @@ static var deviceOwnerAuthenticationWithWatch: LAPolicy { get }
 LAPolicyDeviceOwnerAuthenticationWithWatch
 ```
 
-#### Discussion
+## Discussion
 
 You use the [`deviceOwnerAuthenticationWithWatch`](./deviceownerauthenticationwithwatch.md) policy when calling the [`evaluatePolicy(_:localizedReason:reply:)`](../lacontext/evaluatepolicy%28_,localizedreason,reply%29.md) method to authenticate the user with Apple Watch. If the evaluation method can’t find a nearby, paired Apple Watch running watchOS 6 or later, it returns the [`watchNotAvailable`](../laerror-swift.struct/watchnotavailable.md) error.
 

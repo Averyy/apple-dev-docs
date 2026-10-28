@@ -16,7 +16,7 @@ A value that represents action types that don’t fall into other available cate
 case other
 ```
 
-#### Discussion
+## Discussion
 
 If the available action types aren’t appropriate for your use case, please consider filing a Feedback Report with the details relating to your category of interest.
 

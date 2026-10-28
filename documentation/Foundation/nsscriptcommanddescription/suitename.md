@@ -20,7 +20,7 @@ var suiteName: String { get }
 @property (copy, readonly) NSString * suiteName;
 ```
 
-#### Return Value
+## Return Value
 
 The receiver’s suite name. Within an application’s scriptability information, named suites contain related sets of information.
 

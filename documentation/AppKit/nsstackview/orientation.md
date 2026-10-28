@@ -19,7 +19,7 @@ var orientation: NSUserInterfaceLayoutOrientation { get set }
 @property NSUserInterfaceLayoutOrientation orientation;
 ```
 
-#### Discussion
+## Discussion
 
 Default value is [`NSUserInterfaceLayoutOrientation.horizontal`](../nsuserinterfacelayoutorientation/horizontal.md). For values that apply to this property, see [`NSUserInterfaceLayoutOrientation`](../nsuserinterfacelayoutorientation.md).
 

@@ -39,7 +39,7 @@ var color: NSColor { get }
 @property (nonatomic, readonly) NSColor * color;
 ```
 
-#### Discussion
+## Discussion
 
 The alpha of the final color may vary due to input from Apple Pencil. For example, light pressure from Apple Pencil introduces more transparency into the final color, while additional force increases opacity to create a more solid line.
 

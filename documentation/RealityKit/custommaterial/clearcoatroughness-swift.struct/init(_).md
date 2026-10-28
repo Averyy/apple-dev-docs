@@ -19,7 +19,7 @@ Creates a custom clearcoat object from a physically based material’s clearcoat
 init(_ value: PhysicallyBasedMaterial.ClearcoatRoughness)
 ```
 
-#### Discussion
+## Discussion
 
 This initializer creates a new object by copying the [`scale`](../../physicallybasedmaterial/clearcoatroughness-swift.struct/scale.md) and [`texture`](../../physicallybasedmaterial/clearcoatroughness-swift.struct/texture.md) values from an existing [`PhysicallyBasedMaterial.ClearcoatRoughness`](../../physicallybasedmaterial/clearcoatroughness-swift.struct.md) object.
 

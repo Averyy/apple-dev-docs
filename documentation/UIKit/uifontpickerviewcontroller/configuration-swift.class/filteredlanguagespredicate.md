@@ -25,7 +25,7 @@ var filteredLanguagesPredicate: NSPredicate? { get set }
 @property (nonatomic, copy, nullable) NSPredicate * filteredLanguagesPredicate;
 ```
 
-#### Discussion
+## Discussion
 
 By default, the font picker shows all available fonts, regardless of the languages they support. You may prefer to offer only fonts that support certain languages. To restrict the list, set this property to an [NSPredicate](https://developer.apple.com/library/archive/releasenotes/Foundation/RN-FoundationOlderNotes/index.html#//apple_ref/doc/uid/TP40008080-TRANSLATED_CHAPTER_965-TRANSLATED_DEST_206) defining the logic the font picker should apply to the fonts’ supported languages metadata.
 

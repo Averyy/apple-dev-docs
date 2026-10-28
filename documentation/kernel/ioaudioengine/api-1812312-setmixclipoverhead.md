@@ -12,11 +12,11 @@ virtual void setMixClipOverhead(
  UInt32newMixClipOverhead);
 ```
 
-#### Return Value
+## Return Value
 
 return no error
 
-#### Overview
+## Overview
 
 setMixClipOverhead allows an audio engine to tell IOAudioFamily how much time an engine will take to mix and clip its samples, in percent. The default value is 10, meaning 10%. This will cause IOAudioFamily to make the watchdog timer fire when there is just over 10% of the time to complete a buffer set left (e.g. 51 samples when the HAL is using a buffer size of 512 samples).
 

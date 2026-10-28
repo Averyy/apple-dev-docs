@@ -19,7 +19,7 @@ init(name: NameSpecification = .long, inversion: FlagInversion, exclusivity: Fla
 
 Available when `Value` is `Bool`.
 
-#### Discussion
+## Discussion
 
 Use this initializer to create a Boolean flag with an on/off pair. With the following declaration, for example, the user can specify either `--use-https` or `--no-use-https` to set the `useHTTPS` flag to `true` or `false`, respectively.
 

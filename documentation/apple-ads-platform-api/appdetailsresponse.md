@@ -15,19 +15,19 @@ The response object for a get app details operation.
 object AppDetailsResponse
 ```
 
-#### Discussion
+## Discussion
 
 The [`Get App Details by Adam ID`](./get-app-details-by-adam-id.md) endpoint returns `AppDetailsResponse` as a single-item envelope. It follows the standard `Response` pattern used across the Apple Ads Platform API: on success, `result` contains the retrieved `AppDetails` object. On failure, `result` is absent and `error` contains the structured error details.
 
 Unlike paginated query responses, `AppDetailsResponse` returns exactly one app record (or none). Because the API accepts a single Adam ID in the path, there is no ambiguity about which app the result belongs to, and the response includes no pagination metadata.
 
-##### Understand the result field
+### Understand the result field
 
 On a 404, the response contains an `ENTITY_NOT_FOUND` error in the `error` field and `result` is absent. Always check the HTTP status code first, then inspect `error` for machine-readable detail.
 
 The returned `AppDetails` object includes App Store metadata such as app name, developer, supported device classes, and available App Store countries or regions. The `GET /v1/apps/{adamId}` ([`Get App Details by Adam ID`](./get-app-details-by-adam-id.md)) endpoint accepts only the `adamId` path parameter and the `X-AP-Context` header.
 
-##### Understand the error field
+### Understand the error field
 
 Inspect `error.details` for a structured list of error codes and messages. Common failure cases include:
 
@@ -38,11 +38,11 @@ Inspect `error.details` for a structured list of error codes and messages. Commo
 - **429**: rate limit exceeded. Use exponential backoff before retrying
 - **500**: transient server error. The request may succeed on retry
 
-##### Understand the relationship to AppDetails
+### Understand the relationship to AppDetails
 
 The `AppDetailsResponse` object is a thin wrapper. All substantive app metadata lives in the `AppDetails` object inside `result`. The wrapper exists to provide a uniform envelope that carries both success data and error information in a single response shape, consistent with every other API response object in this documentation.
 
-##### Example
+### Example
 
 ```json
 {

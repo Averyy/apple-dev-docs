@@ -25,7 +25,7 @@ case developer
 NSURLRequestAttributionDeveloper
 ```
 
-#### Discussion
+## Discussion
 
 Use this value for the [`attribution`](../../urlrequest/attribution-swift.property.md) parameter of a URL request that your app makes for any purpose other than when the user explicitly accesses a link. This includes requests that your app makes to get user data. This is the default value.
 

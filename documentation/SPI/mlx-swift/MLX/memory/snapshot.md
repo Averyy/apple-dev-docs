@@ -17,7 +17,7 @@ Snapshot of memory stats.
 struct Snapshot
 ```
 
-#### Overview
+## Overview
 
 [`activeMemory`](./snapshot/activememory.md) + [`cacheMemory`](./snapshot/cachememory.md) is the total memory allocated by MLX. [`activeMemory`](./snapshot/activememory.md) is in currently active [`MLXArray`](../mlxarray.md) and [`cacheMemory`](./snapshot/cachememory.md) is recently used memory that can be recycled.
 
@@ -60,7 +60,7 @@ print("Growth")
 print(startMemory.delta(endMemory).description)
 ```
 
-##### See Also
+### See Also
 
 - [`snapshot()`](./snapshot%28%29.md)
 - [Running on iOS](../running-on-ios.md)

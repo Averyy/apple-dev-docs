@@ -24,7 +24,7 @@ var shaderValidation: MTLShaderValidation { get set }
 @property (nonatomic, readwrite) MTLShaderValidation shaderValidation;
 ```
 
-#### Discussion
+## Discussion
 
 You can override the value using either of these environment variables: `MTL_SHADER_VALIDATION_ENABLE_PIPELINES` or `MTL_SHADER_VALIDATION_DISABLE_PIPELINES.`
 

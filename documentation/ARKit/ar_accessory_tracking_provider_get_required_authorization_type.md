@@ -15,7 +15,7 @@ Get the authorization type required by the accessory tracking provider.
 extern ar_authorization_type_t ar_accessory_tracking_provider_get_required_authorization_type();
 ```
 
-#### Return Value
+## Return Value
 
 The authorization type.
 

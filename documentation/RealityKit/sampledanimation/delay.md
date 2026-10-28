@@ -20,7 +20,7 @@ An amount of time that elapses before the animation plays.
 var delay: TimeInterval { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `0`, which indicates that the animation plays with no delay. If you set a value for this property, the animation plays from its start time after the specified delay lapses.
 

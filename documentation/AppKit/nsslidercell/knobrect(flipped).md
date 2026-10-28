@@ -19,11 +19,11 @@ func knobRect(flipped: Bool) -> NSRect
 - (NSRect) knobRectFlipped:(BOOL) flipped;
 ```
 
-#### Return Value
+## Return Value
 
 The rectangle in which the knob is drawn, specified in the coordinate system of the `NSSlider` or `NSMatrix` with which the receiver is associated.
 
-#### Discussion
+## Discussion
 
 The knob rectangle depends on where in the slider the knob belongs—that is, it depends on the receiver’s minimum and maximum values and on the value the position of the knob will represent.
 

@@ -5,7 +5,7 @@
 
 Constants to specify styles for time zone names.
 
-#### Overview
+## Overview
 
 These constants are used with the function [`CFTimeZoneCopyLocalizedName(_:_:_:)`](./cftimezonecopylocalizedname%28_,_,_%29.md).
 

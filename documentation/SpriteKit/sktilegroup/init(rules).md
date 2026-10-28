@@ -29,7 +29,7 @@ init(rules: [SKTileGroupRule])
 
 - [Creating Tile Groups Programmatically](../creating-tile-groups-programmatically.md)
 
-#### Return Value
+## Return Value
 
 A new tile group.
 

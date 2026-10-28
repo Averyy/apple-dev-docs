@@ -25,7 +25,7 @@ func signature() -> SHSignature
 - (SHSignature *) signature;
 ```
 
-#### Return Value
+## Return Value
 
 A signature that ShazamKit generates from the audio buffer.
 

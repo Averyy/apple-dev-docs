@@ -18,7 +18,7 @@ static var optionOnScreenOnly: CGWindowListOption { get }
 kCGWindowListOptionOnScreenOnly
 ```
 
-#### Discussion
+## Discussion
 
 List all windows that are currently onscreen. Windows are returned in order from front to back. When retrieving a list with this option, the `relativeToWindow` parameter should be set to [`kCGNullWindowID`](../kcgnullwindowid.md).
 

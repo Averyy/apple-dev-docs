@@ -20,7 +20,7 @@ The intensity of light emitted by the entity.
 var emissiveIntensity: Float { get set }
 ```
 
-#### Discussion
+## Discussion
 
 To make a material *emissive* and appear to emit light, set this property to a value greater than zero and set [`emissiveColor`](./emissivecolor-swift.property.md) to a value other than black. RealityKit multiplies [`emissiveColor`](./emissivecolor-swift.property.md) by this value, so the higher the value, the more intense the entity’s emission of light.
 

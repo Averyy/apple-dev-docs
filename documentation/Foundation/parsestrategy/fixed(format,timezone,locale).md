@@ -21,7 +21,7 @@ A fixed-format date parse strategy.
 static func fixed(format: Date.FormatString, timeZone: TimeZone, locale: Locale? = nil) -> Self where Self == Date.ParseStrategy
 ```
 
-#### Return Value
+## Return Value
 
 A strategy for parsing a date.
 

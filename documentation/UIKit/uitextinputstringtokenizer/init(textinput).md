@@ -23,11 +23,11 @@ init(textInput: any UIResponder & UITextInput)
 - (instancetype) initWithTextInput:(UIResponder<UITextInput> *) textInput;
 ```
 
-#### Return Value
+## Return Value
 
 An instance of a subclass of [`UITextInputStringTokenizer`](../uitextinputstringtokenizer.md), or `nil` if the object couldn’t be created.
 
-#### Discussion
+## Discussion
 
 The subclass of [`UITextInputStringTokenizer`](../uitextinputstringtokenizer.md) shouldn’t retain `textInput`; the tokenizer should always have a lifetime bounded by that of the [`UITextInput`](../uitextinput.md)-conforming object and a retaining reference would create a retain cycle.
 

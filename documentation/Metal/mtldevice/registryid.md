@@ -25,7 +25,7 @@ var registryID: UInt64 { get }
 @property (readonly) uint64_t registryID;
 ```
 
-#### Discussion
+## Discussion
 
 You can use the value to identify the same GPU across task boundaries because it’s global to all tasks.
 

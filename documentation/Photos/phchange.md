@@ -28,7 +28,7 @@ class PHChange
 
 - [Observing Changes in the Photo Library](../PhotoKit/observing-changes-in-the-photo-library.md)
 
-#### Overview
+## Overview
 
 Photos provides [`PHChange`](./phchange.md) objects to notify your app of changes to the assets and collections managed by the Photos app. To receive change information, adopt the [`PHPhotoLibraryChangeObserver`](./phphotolibrarychangeobserver.md) protocol and register your observer with the shared [`PHPhotoLibrary`](./phphotolibrary.md) object.
 

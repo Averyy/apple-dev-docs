@@ -23,7 +23,7 @@ var collectionView: UICollectionView! { get set }
 @property (nonatomic, strong, null_resettable) UICollectionView * collectionView;
 ```
 
-#### Discussion
+## Discussion
 
 If you assign a new collection view object to this property and that view’s data source or delegate aren’t yet set, the collection view controller makes itself the delegate or data source or both.
 

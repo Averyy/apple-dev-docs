@@ -24,11 +24,11 @@ optional func readSelection(from pboard: NSPasteboard) -> Bool
 - [Supporting Writing Tools via the pasteboard](../supporting-writing-tools-via-the-pasteboard.md)
 - [Supporting Continuity Camera in Your Mac App](../supporting-continuity-camera-in-your-mac-app.md)
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if your implementation was able to read the pasteboard data successfully; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 You implement this method to replace your application’s current selection (that is, the text or objects that are currently selected) with the data on the pasteboard. The data would have been placed in the pasteboard by another application in response to a remote message from the Services menu. A [`readSelection(from:)`](./readselection%28from%29.md) message is sent to the same object that previously received a [`writeSelection(to:types:)`](./writeselection%28to,types%29.md) message.
 

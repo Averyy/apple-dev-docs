@@ -23,7 +23,7 @@ func startReceive(_ handler: ((Int, Int) async throws -> ApplicationProtocol.Mes
 
 Available when `ApplicationProtocol` is `WebSocket`.
 
-#### Discussion
+## Discussion
 
 Use this to receive large amounts of data or data that can be processed incrementally.
 

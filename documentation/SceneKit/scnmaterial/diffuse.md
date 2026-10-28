@@ -25,7 +25,7 @@ var diffuse: SCNMaterialProperty { get }
 @property (nonatomic, readonly) SCNMaterialProperty * diffuse;
 ```
 
-#### Discussion
+## Discussion
 
 Diffuse shading describes the amount and color of light reflected equally in all directions from each point on the material’s surface. The diffuse color of a pixel is independent of the point of view, so it can be thought of as a material’s “base” color or texture.
 

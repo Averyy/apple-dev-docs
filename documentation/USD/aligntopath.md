@@ -5,11 +5,11 @@
 
 An option that controls the prim’s orientation as it revolves.
 
-#### Overview
+## Overview
 
 The default value is `false`, in which the object maintains its orientation as it travels along the orbit path. Set a value of `true` to reorient the object to face the center as it orbits.
 
-##### Declaration
+### Declaration
 
 ```other
 uniform bool alignToPath = false

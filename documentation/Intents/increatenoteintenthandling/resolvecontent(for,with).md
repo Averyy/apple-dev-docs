@@ -29,7 +29,7 @@ optional func resolveContent(for intent: INCreateNoteIntent) async -> INNoteCont
 - (void) resolveContentForCreateNote:(INCreateNoteIntent *) intent withCompletion:(void (^)(INNoteContentResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to resolve the main contnet for a note. Use the intent object to obtain the content specified by the user. If the intent does not contain any content, you might want to prompt the user to specify a value. However, if there is a note title and it is sufficient for creating the note, you can also return a result indicating that a value for the content is not required.
 

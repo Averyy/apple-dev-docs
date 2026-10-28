@@ -27,7 +27,7 @@ func BNNSFilterCreateConvolutionLayer(_ in_desc: UnsafePointer<BNNSImageStackDes
 BNNSFilterBNNSFilterCreateConvolutionLayer(const BNNSImageStackDescriptor *in_desc, const BNNSImageStackDescriptor *out_desc, const BNNSConvolutionLayerParameters *layer_params, const BNNSFilterParameters *filter_params);
 ```
 
-#### Return Value
+## Return Value
 
 A BNNSFilter object representing a convolution filter configured with the specified  parameters
 

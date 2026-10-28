@@ -15,11 +15,11 @@ Perform an operation on the memory descriptor's memory.
 virtual IOReturn performOperation(IOOptionBits options, IOByteCount offset, IOByteCount length);
 ```
 
-#### Return Value
+## Return Value
 
 An IOReturn code.
 
-#### Discussion
+## Discussion
 
 This method performs some operation on a range of the memory descriptor's memory. When a memory descriptor's memory is not mapped, it should be more efficient to use this method than mapping the memory to perform the operation virtually.
 

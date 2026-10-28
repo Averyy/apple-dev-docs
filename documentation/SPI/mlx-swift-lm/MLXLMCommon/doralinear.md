@@ -17,7 +17,7 @@ Implementation of DoRA `Linear` replacement layer.
 class DoRALinear
 ```
 
-#### Overview
+## Overview
 
 This layer implements DoRA (Weight-Decomposed Low-Rank Adaptation) for `Linear` layers.
 

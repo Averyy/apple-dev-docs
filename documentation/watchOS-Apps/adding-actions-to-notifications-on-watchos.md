@@ -5,7 +5,7 @@
 
 Provide a set of responses to a notification.
 
-#### Overview
+## Overview
 
 An *actionable notification* is a notification with associated actions, letting the user respond directly from the notification’s long-look interface.
 
@@ -19,7 +19,7 @@ On Apple Watch, the long-look interface displays the actions as buttons below th
 
 > **Note**: Interactive notifications and actionable notifications play similar but distinct roles. An interactive notification enables direct interaction with the notification from the long-look interface, but the system keeps the interactive notification on screen as it calls the notification controller’s action methods. You typically use interactive notifications to modify the notification’s appearance, such as showing or hiding additional information. Actionable notifications, on the other hand, pass control back to your app. Use actionable notifications to enable users to trigger actions based on the notification. For more information, see [Customizing your long-look interface](./customizing-your-long-look-interface.md).
 
-##### Register actions with the category
+### Register actions with the category
 
 Before you can add actions to a notification, you must create a notification category and register the actions for that category. A category is just a string identifier that specifies a type of notification used by your app.
 
@@ -54,19 +54,19 @@ Create the category and actions on the notification’s target. For example, if 
 
 For more information about creating actions, see [Declaring your actionable notification types](../UserNotifications/declaring-your-actionable-notification-types.md).
 
-##### Set the notification’s category
+### Set the notification’s category
 
 To add the actions to a notification, specify the category in the notification’s content. For local notifications, specify the category name using the [`categoryIdentifier`](../UserNotifications/unmutablenotificationcontent/categoryidentifier.md) property of your [`UNMutableNotificationContent`](../UserNotifications/unmutablenotificationcontent.md) object. For remote notifications, set the category name as the value of the `category` key in the notification’s payload.
 
 When the system receives a notification, it uses the category name to look up the associated actions. It then creates buttons for each action and attaches those buttons to the notification interface.
 
-##### Offer text input suggestions
+### Offer text input suggestions
 
 Most actions simply create a button that the user can select, but text input actions let the user type in a response. When the user selects a text input action, the system displays a control that lets the user enter or dictate text. The system then includes this text in the response object that it delivers to your app. For more information, see [`UNTextInputNotificationAction`](../UserNotifications/untextinputnotificationaction.md).
 
 On watchOS, you can provide suggested responses, making it easier for users to respond. To provide suggested responses, override the notification interface controller’s [`suggestionsForResponseToAction(withIdentifier:for:inputLanguage:)`](../WatchKit/wkusernotificationinterfacecontroller/suggestionsforresponsetoaction%28withidentifier,for,inputlanguage%29.md) method and return an array of strings. When the user selects the associated action, watchOS presents these strings as suggestions.
 
-##### Respond to actions
+### Respond to actions
 
 When the user taps an action button, the system launches your app and calls your notification delegate’s [`userNotificationCenter(_:didReceive:withCompletionHandler:)`](../UserNotifications/unusernotificationcenterdelegate/usernotificationcenter%28_,didreceive,withcompletionhandler%29.md) method. The response parameter’s [`actionIdentifier`](../UserNotifications/unnotificationresponse/actionidentifier.md) property contains the identifier for the selected action. Implement your delegate’s [`userNotificationCenter(_:didReceive:withCompletionHandler:)`](../UserNotifications/unusernotificationcenterdelegate/usernotificationcenter%28_,didreceive,withcompletionhandler%29.md) method to check this identifier, and then perform the corresponding task. For more information, see [Handling notifications and notification-related actions](../UserNotifications/handling-notifications-and-notification-related-actions.md).
 

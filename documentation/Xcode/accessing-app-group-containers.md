@@ -5,7 +5,7 @@
 
 Ensure your app has app group container entitlements and macOS can authorize them.
 
-#### Overview
+## Overview
 
 In macOS 15 and later, app group containers offer [System Integrity Protection](../macos-release-notes/macos-15-release-notes.md#System-Integrity-Protection) for your app’s local files even if the app doesn’t have the App Sandbox capability. These app group containers limit access by apps that aren’t in the app group. Apps not in the app group that attempt to access locations within an app group or app data container, result in a user prompt that requests their authorization.
 
@@ -13,7 +13,7 @@ To ensure your apps that use app groups also include System Integrity Protection
 
 Apps that can use app group containers include: main executables packaged in bundled structures, app extensions, App Clips, and XPC Services.
 
-#### Add app group membership to your app
+## Add app group membership to your app
 
 Ensure that your app target lists all the app groups to which it belongs in the [`App Groups Entitlement`](../BundleResources/entitlements/com.apple.security.application-groups.md). You can use Xcode to entitle your app for app groups. For more details, see [Configuring app groups](./configuring-app-groups.md).
 
@@ -24,7 +24,7 @@ An app can belong to more than one app group, with these guidelines:
 
 > ❗ **Important**: On macOS, it’s recommended that you use `group.` prefixed identifiers. The `<Developer team identifier>.<group name>` prefixed identifier is also supported with some limitations described in the “Use app groups that you don’t provision” section below.
 
-##### Use provisioned app groups
+### Use provisioned app groups
 
 If your app declares that it belongs to an app group that begins with `group.`, you need to include the group in your app’s provisioning profile.
 
@@ -45,14 +45,14 @@ Xcode automatically obtains new provisioning profiles if you check “Automatica
 
 If you encounter any issues provisioning the app group entitlement properly, see  [Diagnosing Issues with Entitlements](../BundleResources/diagnosing-issues-with-entitlements.md) for help diagnosing these issues.
 
-##### Use app groups that you don’t provision
+### Use app groups that you don’t provision
 
 To use app groups that have the `<Developer team identifier>.<group name>` identifiers on macOS, you don’t need a provisioning profile. The system checks that the team identifier prefix matches the developer team identifier you use to sign the app. You also don’t need to register these app group identifiers on the Developer website. But, there are limitations to using these identifiers:
 
 - `<Developer team identifier>.<group name>` is not supported on iOS, iPadOS, tvOS, visionOS, or watchOS.
 - Keychain Access Groups doesn’t support the `<Developer team identifier>.<group name>` prefixed identifier. For more information, see [Sharing access to keychain items among a collection of apps](../Security/sharing-access-to-keychain-items-among-a-collection-of-apps.md)
 
-#### Access an app group container
+## Access an app group container
 
 When your app becomes a member of an app group, use FileManager APIs to get the path to the shared container. For more details on accessing that data, see [Access an app group’s shared container](./configuring-app-groups.md#Access-an-app-groups-shared-container).
 

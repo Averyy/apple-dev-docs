@@ -25,11 +25,11 @@ func CGImageMetadataRegisterNamespaceForPrefix(_ metadata: CGMutableImageMetadat
 extern bool CGImageMetadataRegisterNamespaceForPrefix(CGMutableImageMetadataRef metadata, CFStringRef xmlns, CFStringRef prefix, CFErrorRef*err);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if registration of the namespace was successful, or `false` if it wasn’t.
 
-#### Discussion
+## Discussion
 
 All tags you add to a [`CGMutableImageMetadata`](./cgmutableimagemetadata.md) object must belong to known namespaces. When you encounter an unrecognized prefix in a metadata path, call this function to register the prefix before you add the corresponding tag.
 

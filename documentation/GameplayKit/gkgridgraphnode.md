@@ -24,7 +24,7 @@ class GKGridGraphNode
 @interface GKGridGraphNode : GKGraphNode
 ```
 
-#### Overview
+## Overview
 
 Together, a network of nodes form a graph that describes the navigability of a game world. Use graph nodes with a [`GKGridGraph`](./gkgridgraph.md) object (and methods of its superclass [`GKGraph`](./gkgraph.md)) to perform actions that relate to the network of nodes as a whole, such as pathfinding to determine routes through the network.
 

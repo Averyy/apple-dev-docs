@@ -5,24 +5,24 @@
 
 Use deep links to enable people to open your app’s scene that matches the data of you Live Activity.
 
-#### Overview
+## Overview
 
 People can tap a Live Activity to launch your app. To let them view more content or make changes to an ongoing task, open your app to the scene that matches the content of the Live Activity.
 
-##### Respond to the system’s default launch behavior
+### Respond to the system’s default launch behavior
 
 If you don’t explicitly provide a deep link into your app, the system opens your app and passes an [`NSUserActivity`](../Foundation/nsuseractivity.md) to [`onContinueUserActivity(_:perform:)`](../SwiftUI/view/oncontinueuseractivity%28_,perform%29.md), [`application(_:continue:restorationHandler:)`](../UIKit/uiapplicationdelegate/application%28_,continue,restorationhandler%29.md), or [`application(_:continue:restorationHandler:)`](../AppKit/nsapplicationdelegate/application%28_,continue,restorationhandler%29.md). Implement the appropriate callback and check whether the `NSUserActivity` object’s [`activityType`](../Foundation/nsuseractivity/activitytype.md) is [`NSUserActivityTypeLiveActivity`](../WidgetKit/nsuseractivitytypeliveactivity.md). Then, add code to open a screen in your app that fits the context of the active Live Activity.
 
 > ❗ **Important**: In CarPlay, tapping your Live Activity only launches your app if it supports CarPlay. For more information about adding CarPlay support to your app, refer to [CarPlay](../CarPlay/CarPlay.md).
 
-##### Add deep links to your app
+### Add deep links to your app
 
 With deep links, you specify an URL that directly launches a specific scene in your app, and choose different scenes for each Live Activity presentation:
 
 - To create a deep link into your app from the Lock Screen, compact leading, compact trailing, and minimal presentations, use [`widgetURL(_:)`](../WidgetKit/dynamicisland/widgeturl%28_%29.md). When the compact leading and trailing presentations are visible, make sure both link to the same screen in your app.
 - To create a deep link into your app from the extended presentation, use `widgetURL(_:)`  or SwiftUI’s [`Link`](../SwiftUI/link.md).
 
-##### Configure how your Live Activity launches your app in watchOS
+### Configure how your Live Activity launches your app in watchOS
 
 Live Activities automatically appear in the Smart Stack on Apple Watch, and the system shows the Live Activity more prominently on Apple Watch when it receives updates with an alert. When a Live Activity receives an update:
 

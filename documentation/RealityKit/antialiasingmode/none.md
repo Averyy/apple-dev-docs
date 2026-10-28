@@ -20,7 +20,7 @@ Do not apply any technique to smooth jagged edges.
 case none
 ```
 
-#### Discussion
+## Discussion
 
 This option has no performance cost.
 

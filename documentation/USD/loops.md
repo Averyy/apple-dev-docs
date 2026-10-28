@@ -5,13 +5,13 @@
 
 A Boolean value indicating whether the group loops.
 
-#### Overview
+## Overview
 
 The default value is `false`, in which the group executes its actions [performCount](./performcount.md) number of times and then stops.
 
 When `true` and [type](./type.md) is `serial`, the group restarts its action sequence with the first action after the last action completes. When [type](./type.md) is `parallel`, the runtime repeats each action independently.
 
-##### Declaration
+### Declaration
 
 ```other
 uniform bool loops = false

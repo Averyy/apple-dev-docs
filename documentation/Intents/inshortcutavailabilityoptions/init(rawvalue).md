@@ -19,7 +19,7 @@ Returns the set of availability categories represented by the given value.
 init(rawValue: UInt)
 ```
 
-#### Discussion
+## Discussion
 
 It’s unlikely that your code should call this directly. Instead, refer to the static members to create an [`OptionSet`](../../Swift/optionset.md) of [`INShortcutAvailabilityOptions`](../inshortcutavailabilityoptions.md).
 

@@ -24,7 +24,7 @@ func pause()
 - (void) pause;
 ```
 
-#### Discussion
+## Discussion
 
 If the current item isn’t playing, this method has no effect. To resume playback of the current item from the pause point, call the [`play()`](./play%28%29.md) method.
 

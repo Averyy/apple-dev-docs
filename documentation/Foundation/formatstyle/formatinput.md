@@ -22,7 +22,7 @@ The type this format style accepts as input.
 associatedtype FormatInput
 ```
 
-#### Discussion
+## Discussion
 
 Swift type inference uses this value to determine which static accessors are available at a given call point. For example, when you format an [`Int32`](../../Swift/int32.md), you can use the static [`number`](./number-4cj49.md) property that provies a `IntegerFormatStyle<Int32>`, as seen in the following example. This works because the style’s input type `IntegerFormatStyle/FormatInput` is a [`BinaryInteger`](../../Swift/binaryinteger.md) generically constrained to the [`Int32`](../../Swift/int32.md) type.
 

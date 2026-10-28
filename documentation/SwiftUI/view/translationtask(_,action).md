@@ -19,7 +19,7 @@ nonisolated
 func translationTask(_ configuration: TranslationSession.Configuration?, action: @escaping (TranslationSession) async -> Void) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 This task provides an instance of [`TranslationSession`](../../Translation/translationsession.md) to use in translations. Whenever [`TranslationSession.Configuration`](../../Translation/translationsession/configuration.md)  changes and isn’t `nil`, the closure `action` runs, providing a session instance to perform one or more translations.
 

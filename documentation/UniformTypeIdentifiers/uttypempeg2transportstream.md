@@ -21,7 +21,7 @@ A type that represents data in MPEG-2 transport stream movie format.
 extern UTType * const UTTypeMPEG2TransportStream;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.mpeg-2-transport-stream`.
 

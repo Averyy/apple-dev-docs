@@ -21,7 +21,7 @@ func captureSession(_ session: RoomCaptureSession, didProvide instruction: RoomC
 
 - [Scanning the rooms of a single structure](../scanning-the-rooms-of-a-single-structure.md)
 
-#### Discussion
+## Discussion
 
 The system calls this implementation if your app doesn’t implement [`captureSession(_:didProvide:)`](./capturesession%28_,didprovide%29.md).
 

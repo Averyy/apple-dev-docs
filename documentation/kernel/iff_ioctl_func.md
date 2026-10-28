@@ -13,11 +13,11 @@
 typedef errno_t (*iff_ioctl_func)(void *cookie, ifnet_t interface, protocol_family_t protocol, unsigned long ioctl_cmd, void *ioctl_arg);
 ```
 
-#### Return Value
+## Return Value
 
 Return: 0 - This filter function handled the ioctl. EOPNOTSUPP - This filter function does not understand/did not handle this ioctl. EJUSTRETURN - This filter function handled the ioctl, processing should stop. Anything Else - Processing will stop, the error will be returned.
 
-#### Discussion
+## Discussion
 
 iff_ioctl_func is used to filter ioctls sent to an interface. The interface is only valid for the duration of the filter call. If you need to keep a reference to the interface, be sure to call ifnet_reference and ifnet_release.
 

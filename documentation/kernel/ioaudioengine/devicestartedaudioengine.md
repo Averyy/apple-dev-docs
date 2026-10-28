@@ -9,7 +9,7 @@
 bool deviceStartedAudioEngine;
 ```
 
-#### Overview
+## Overview
 
 Used by the IOAudioDevice to determine responsibility for shutting the audio engine down when it is no longer needed.
 

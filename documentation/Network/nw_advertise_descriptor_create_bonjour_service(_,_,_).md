@@ -25,7 +25,7 @@ func nw_advertise_descriptor_create_bonjour_service(_ name: UnsafePointer<CChar>
 nw_advertise_descriptor_tnw_advertise_descriptor_create_bonjour_service(const char *name, const char *type, const char *domain);
 ```
 
-#### Discussion
+## Discussion
 
 Advertised services are primarily defined by their types. If you do not specify a service name, the device name will be chosen. You should not specify a Bonjour domain unless you know you need to advertise only on a particular domain.
 

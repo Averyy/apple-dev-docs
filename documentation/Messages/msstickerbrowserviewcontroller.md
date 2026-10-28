@@ -21,13 +21,13 @@ class MSStickerBrowserViewController
 @interface MSStickerBrowserViewController : UIViewController
 ```
 
-#### Overview
+## Overview
 
 Use the [`MSStickerBrowserViewController`](./msstickerbrowserviewcontroller.md) to present the standard sticker browser. This browser provides drag-and-drop functionality. The user can press and hold a sticker to peel it from the browser, then drag the sticker to any balloon in the transcript. The user can also tap stickers to add them to the Messages app’s input field.
 
 By default, the sticker browser view controller acts as the data source for its [`MSStickerBrowserView`](./msstickerbrowserview.md) view (see the [`stickerBrowserView`](./msstickerbrowserviewcontroller/stickerbrowserview.md) property). This lets you dynamically change the list of stickers at runtime. You can also customize the size of the stickers inside the browser.
 
-##### Setting the Sticker Browser as Your Root View
+### Setting the Sticker Browser as Your Root View
 
 To use the sticker browser view controller as your extension’s root view, perform the following steps:
 
@@ -37,7 +37,7 @@ To use the sticker browser view controller as your extension’s root view, perf
 
 By using an [`MSMessagesAppViewController`](./msmessagesappviewcontroller.md) instance as the extension’s root view controller, this approach ensures that the root view controller can respond to important messages from the system, while the contained sticker browser view controller focuses on managing your stickers.
 
-##### Subclassing Notes
+### Subclassing Notes
 
 By default, this controller sets itself as its sticker browser view’s data source. You must either provide another data source, or implement both [`numberOfStickers(in:)`](./msstickerbrowserviewdatasource/numberofstickers%28in%29.md) and [`stickerBrowserView(_:stickerAt:)`](./msstickerbrowserviewdatasource/stickerbrowserview%28_,stickerat%29.md).
 

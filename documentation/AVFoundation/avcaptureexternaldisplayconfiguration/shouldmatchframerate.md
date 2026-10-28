@@ -23,7 +23,7 @@ var shouldMatchFrameRate: Bool { get set }
 @property (nonatomic, assign) BOOL shouldMatchFrameRate;
 ```
 
-#### Discussion
+## Discussion
 
 If you want to configure your [`AVCaptureVideoPreviewLayer`](../avcapturevideopreviewlayer.md) to match its source [`activeVideoMinFrameDuration`](../avcapturedevice/activevideominframeduration.md), set [`shouldMatchFrameRate`](./shouldmatchframerate.md) to `true`. The default value is `false`.
 

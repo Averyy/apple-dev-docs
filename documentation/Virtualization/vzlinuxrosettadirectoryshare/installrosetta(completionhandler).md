@@ -23,7 +23,7 @@ class func installRosetta() async throws
 + (void) installRosettaWithCompletionHandler:(void (^)(NSError *)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 The completion handler returns an error object that contains information about a problem, or `nil` if the installation completed successfully.
 

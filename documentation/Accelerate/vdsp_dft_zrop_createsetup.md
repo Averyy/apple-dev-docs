@@ -25,19 +25,19 @@ vDSP_DFT_SetupvDSP_DFT_zrop_CreateSetup(vDSP_DFT_Setup __Previous, vDSP_Length _
 
 - [Understanding data packing for Fourier transforms](./understanding-data-packing-for-fourier-transforms.md)
 
-#### Return Value
+## Return Value
 
 Returns a `vDSP_DFT_Setup` object, or `nil` if the function fails, either from insufficient memory or because `Length` doesn’t satisfy the requirements given above.
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  To prevent potential memory leaks, if the `Previous` parameter is not `nil`, the return value and the `Previous` value must be different variables.
 
-#### Discussion
+## Discussion
 
 This function shares memory between data structures where possible. If you have an existing setup object, you should pass that object as `Previous`. By doing so, the returned setup object can share underlying data storage with that object. Note that this function may allocate memory; you can free any allocated memory by calling [`vDSP_DFT_DestroySetup`](./vdsp_dft_destroysetup.md).
 
-##### Using shared setup objects
+### Using shared setup objects
 
 If you’re using a shared setup object, the subsequent execute function requires that the input and output pointers are 64-byte aligned.
 

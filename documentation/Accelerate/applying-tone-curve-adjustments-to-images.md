@@ -10,7 +10,7 @@ Use the vImage library’s polynomial transform to apply tone curve adjustments 
 - macOS 13.3+
 - Xcode 15.0+
 
-#### Overview
+## Overview
 
 The vImage library provides a suite of functions for applying polynomials to images. The results of these functions are similar to the [Curves adjustment](https://support.apple.com/en-gb/guide/photos/pht7875d6b19/7.0/mac/12.0) tool in the [Mac Photos](https://www.apple.com/uk/macos/photos/) app. You can use the polynomial adjustment functions to adjust the overall look of a photo, change the look of specific colors (red, green, and blue), and adjust settings for the black point, midtones, and white point.
 
@@ -22,7 +22,7 @@ The following image shows the sample code project’s app. The circles on the cu
 
 ![A screenshot showing the sample code app with the transformed photograph on the left after adjustment, and the three tone curve controls on the right for the red, green, and blue channels.](https://developer.apple.com/tutorials/images/com.apple.accelerate/vImagePolynomial_2x.png)
 
-##### Convert the interleaved source image to planar buffers
+### Convert the interleaved source image to planar buffers
 
 The sample code project accepts source images that it converts to RGB, 32-bit per channel format. Because the vImage polynomial transform functions work on planar buffers, the code creates a [`vImage.PlanarFx3`](./vimage/planarfx3.md) multiple-plane [`vImage.PixelBuffer`](./vimage/pixelbuffer.md) structure that contains the separate red, green, and blue channels.
 
@@ -36,7 +36,7 @@ func populatePlanarSourceBuffers() {
 
 To learn more about working with planar buffers in vImage, see [Optimizing image-processing performance](./optimizing-image-processing-performance.md).
 
-##### Create the default curve control points
+### Create the default curve control points
 
 The sample code project defines five data points for each color channel that control the tone curve. By default, these form a linear ramp from `0` to `1`. The code calls [`ramp(withInitialValue:increment:count:)`](./vdsp/ramp%28withinitialvalue,increment,count%29-3cast.md) to populate the `redHandleValues`, `greenHandleValues`, and `blueHandleValues` arrays. The following shows the code that populates the `greenHandleValues` array:
 
@@ -52,7 +52,7 @@ When the sample code app first launches, the default values form a linear tone c
 
 The default control points create an output image that’s identical to the input image. That is, for each pixel, the transformed output value is equal to the input value.
 
-##### Apply the polynomial transform
+### Apply the polynomial transform
 
 When the user adjusts the control points in the user interface, a `didSet` property observer applies the polynomial to the corresponding planar buffer. For example, the following shows the code for the green values:
 
@@ -97,7 +97,7 @@ func calculateAndApplyPolynomial(
 
 After the transform, the `displayPlanarDestinationBuffers()` function calls [`interleave(destination:)`](./vimage/pixelbuffer/interleave%28destination%29-46cgi.md) to generate an interleaved image that the sample code displays in the user interface.
 
-##### Display the tone curve in the user interface
+### Display the tone curve in the user interface
 
 The `PolynomialEditor` class uses the coefficients that the `applyPolynomial()` function computes to render a representation of the response curve.
 

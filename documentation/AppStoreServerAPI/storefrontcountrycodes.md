@@ -19,7 +19,7 @@ A list of storefront country codes you provide to limit the storefronts for a su
 
 **Maximum Length**: `3`
 
-#### Discussion
+## Discussion
 
 You provide the list of storefront country codes in the [`MassExtendRenewalDateRequest`](./massextendrenewaldaterequest.md) to limit the storefronts in which the App Store extends the subscription renewal date. To indicate that the extension applies in all storefronts, omit the [`storefrontCountryCodes`](./storefrontcountrycodes.md) object from the [`MassExtendRenewalDateRequest`](./massextendrenewaldaterequest.md) object.
 

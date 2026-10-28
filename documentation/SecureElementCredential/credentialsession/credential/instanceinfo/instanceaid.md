@@ -16,7 +16,7 @@ The unique identifier for the applet instance.
 let instanceAID: Data
 ```
 
-#### Discussion
+## Discussion
 
 Use this identifier in [`performWiredTransaction(using:over:instanceAID:)`](../../performwiredtransaction%28using,over,instanceaid%29.md) for UIKit or [`performTransactionInWiredMode(using:instanceAID:)`](../../../credentialtransaction/performtransactioninwiredmode%28using,instanceaid%29.md) for SwiftUI, and when selecting this instance to perform data transceiving.
 

@@ -15,7 +15,7 @@ Returns the receiver’s interface style.
 - (NSInterfaceStyle) interfaceStyle;
 ```
 
-#### Discussion
+## Discussion
 
 [`interfaceStyle`](./interfacestyle.md) is an abstract method in `NSResponder` and just returns `NSNoInterfaceStyle`. It’s overridden in classes such as [`NSWindow`](../nswindow.md) and [`NSView`](../nsview.md) to return the interface style, such as `NSMacintoshInterfaceStyle`. A responder’s style (if other than `NSNoInterfaceStyle`) overrides all other settings, such as those established by the defaults system.
 

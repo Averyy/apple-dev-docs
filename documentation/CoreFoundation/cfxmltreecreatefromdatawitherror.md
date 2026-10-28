@@ -15,11 +15,11 @@ Parses the given XML data and returns the resulting CFXMLTree object and any err
 extern CFXMLTreeRefCFXMLTreeCreateFromDataWithError(CFAllocatorRef allocator, CFDataRef xmlData, CFURLRef dataSource, CFOptionFlags parseOptions, CFIndex versionOfNodes, CFDictionaryRef*errorDict);
 ```
 
-#### Return Value
+## Return Value
 
 A new CFXMLTree object containing the data from the specified XML document. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
-#### Discussion
+## Discussion
 
 Use this function instead of [`CFXMLTreeCreateFromData`](./cfxmltreecreatefromdata.md) if you need access to XML parsing errors.
 

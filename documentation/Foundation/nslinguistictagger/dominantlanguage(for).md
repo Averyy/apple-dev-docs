@@ -27,11 +27,11 @@ class func dominantLanguage(for string: String) -> String?
 + (NSString *) dominantLanguageForString:(NSString *) string;
 ```
 
-#### Return Value
+## Return Value
 
 The BCP-47 tag identifying the dominant language of the string, or the tag “und” if a specific language cannot be determined.
 
-#### Discussion
+## Discussion
 
 The [`dominantLanguage(for:)`](./dominantlanguage%28for%29.md) method is a convenience method for creating a new linguistic tagger, setting the [`string`](./string.md) property, and getting the [`dominantLanguage`](./dominantlanguage.md) property. If you analyze the same string more than once, create a linguistic tagger object instead of calling the method, as shown in this example:
 

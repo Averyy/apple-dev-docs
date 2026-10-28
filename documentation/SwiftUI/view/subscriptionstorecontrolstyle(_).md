@@ -22,7 +22,7 @@ nonisolated
 func subscriptionStoreControlStyle(_ style: some SubscriptionStoreControlStyle) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 This view modifier set the style of controls for [`SubscriptionStoreView`](../../StoreKit/subscriptionstoreview.md) instances within a view.
 

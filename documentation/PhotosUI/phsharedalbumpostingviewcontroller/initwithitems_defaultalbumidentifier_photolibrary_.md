@@ -17,7 +17,7 @@
 - (instancetype) initWithItems:(NSArray<PHPickerResult *> *) items defaultAlbumIdentifier:(NSString *) defaultAlbumIdentifier photoLibrary:(PHPhotoLibrary *) photoLibrary;
 ```
 
-#### Discussion
+## Discussion
 
 Returns a view controller that allows the user to create a new shared album.
 

@@ -22,7 +22,7 @@ func startAbsoluteAltitudeUpdates(to queue: OperationQueue, withHandler handler:
 - (void) startAbsoluteAltitudeUpdatesToQueue:(NSOperationQueue *) queue withHandler:(CMAbsoluteAltitudeHandler) handler;
 ```
 
-#### Discussion
+## Discussion
 
 Call [`isAbsoluteAltitudeAvailable()`](./isabsolutealtitudeavailable%28%29.md) to verify that the current device supports absolute altitude updates before calling the `startAbsoluteAltitudeUpdates(to:withHandler:)` method.
 

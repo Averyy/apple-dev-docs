@@ -21,7 +21,7 @@ var homeUniqueIdentifier: UUID { get }
 @property (copy, readonly) NSUUID * homeUniqueIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 See [`uniqueIdentifier`](../hmhome/uniqueidentifier.md) for more information.
 

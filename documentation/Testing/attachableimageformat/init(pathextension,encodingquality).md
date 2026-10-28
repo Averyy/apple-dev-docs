@@ -16,7 +16,7 @@ Construct an instance of this type with the given path extension and encoding qu
 init?(pathExtension: String, encodingQuality: Float = 1.0)
 ```
 
-#### Discussion
+## Discussion
 
 If the target image format does not support variable-quality encoding, the value of the `encodingQuality` argument is ignored.
 

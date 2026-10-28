@@ -29,7 +29,7 @@ optional func locationManagerDidChangeAuthorization(_ manager: CLLocationManager
 
 - [Requesting authorization to use location services](../requesting-authorization-to-use-location-services.md)
 
-#### Discussion
+## Discussion
 
 The system calls this method when the app creates the related object’s [`CLLocationManager`](../cllocationmanager.md) instance, and when the app’s authorization status changes. The status informs the app whether it can access the user’s location.
 
@@ -39,7 +39,7 @@ Use this delegate method to manage your app’s state changes in response to its
 
 If the user’s choice doesn’t change the authorization status after you call the [`requestWhenInUseAuthorization()`](../cllocationmanager/requestwheninuseauthorization%28%29.md) or [`requestAlwaysAuthorization()`](../cllocationmanager/requestalwaysauthorization%28%29.md) method, the location manager doesn’t report the current authorization status to this method—the location manager only reports changes. For example, the location manager calls this method when the status changes from [`CLAuthorizationStatus.notDetermined`](../clauthorizationstatus/notdetermined.md) to [`CLAuthorizationStatus.authorizedWhenInUse`](../clauthorizationstatus/authorizedwheninuse.md).
 
-##### Events that Cause Authorization Status Changes
+### Events that Cause Authorization Status Changes
 
 An app’s authorization status changes in response to users’ actions. Users can change permission for apps to use location information at any time. The user can:
 

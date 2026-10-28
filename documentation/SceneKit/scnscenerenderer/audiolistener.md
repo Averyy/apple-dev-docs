@@ -26,7 +26,7 @@ var audioListener: SCNNode? { get set }
 @property (nonatomic, retain, nullable) SCNNode * audioListener;
 ```
 
-#### Discussion
+## Discussion
 
 When you use the [`SCNAudioPlayer`](../scnaudioplayer.md) class to play sound, the resulting effect depends on the position of each audio source in the scene relative to the listener. For example, changes in relative position can cause a sound to be localized to the left or right channel for stereo headphone output.
 

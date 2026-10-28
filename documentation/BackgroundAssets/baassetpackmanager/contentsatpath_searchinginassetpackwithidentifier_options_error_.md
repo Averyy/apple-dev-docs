@@ -20,11 +20,11 @@ Returns the contents of an asset file at the specified relative path.
 - (NSData *) contentsAtPath:(NSString *) path searchingInAssetPackWithIdentifier:(NSString *) assetPackIdentifier options:(NSDataReadingOptions) options error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 The file’s contents or `nil` if an error occurred.
 
-#### Discussion
+## Discussion
 
 All asset packs share the same namespace, so you can treat the overall collection of downloaded asset packs as if it were a single root directory that contains all of your subdirectories and asset files, regardless of the specific asset pack in which any particular file resides. If there’s a file-path collision across multiple asset packs, then it’s undefined from which asset pack the file will be read unless you explicitly limit the search to a particular asset pack by passing a non-`nil` identifier to the `assetPackIdentifier` parameter.
 

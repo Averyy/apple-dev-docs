@@ -21,7 +21,7 @@ func matrix(inColumn column: Int) -> NSMatrix?
 - (NSMatrix *) matrixInColumn:(NSInteger) column;
 ```
 
-#### Return Value
+## Return Value
 
 The matrix located in the column.
 

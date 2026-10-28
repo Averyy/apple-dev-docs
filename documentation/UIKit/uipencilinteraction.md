@@ -23,7 +23,7 @@ class UIPencilInteraction
 @interface UIPencilInteraction : NSObject
 ```
 
-#### Overview
+## Overview
 
 People can interact with certain models of Apple Pencil with a double tap or squeeze. To detect the double tap or squeeze in your app, create a [`UIPencilInteraction`](./uipencilinteraction.md) object with a corresponding [`delegate`](./uipencilinteraction/delegate.md) object. Then, add the interaction to your app’s view. When a person double-taps or squeezes Apple Pencil, the interaction calls the delegate’s corresponding [`pencilInteraction(_:didReceiveTap:)`](./uipencilinteractiondelegate/pencilinteraction%28_,didreceivetap%29.md) or [`pencilInteraction(_:didReceiveSqueeze:)`](./uipencilinteractiondelegate/pencilinteraction%28_,didreceivesqueeze%29.md) method.
 

@@ -24,11 +24,11 @@ func MusicPlayerSetTime(_ inPlayer: MusicPlayer, _ inTime: MusicTimeStamp) -> OS
 extern OSStatus MusicPlayerSetTime(MusicPlayer inPlayer, MusicTimeStamp inTime);
 ```
 
-#### Return Value
+## Return Value
 
 A result code
 
-#### Discussion
+## Discussion
 
 You can call this function while a music player is stopped or playing. If playing at the time of the call, playback continues at the specified point. No range checking on the `inTime` value is performed by this function.
 

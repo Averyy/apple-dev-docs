@@ -24,7 +24,7 @@ let HKMetadataKeyAppleECGAlgorithmVersion: String
 extern NSString * const HKMetadataKeyAppleECGAlgorithmVersion;
 ```
 
-#### Discussion
+## Discussion
 
 Apple Watch sets this key on the [`HKElectrocardiogram`](./hkelectrocardiogram.md) samples it creates. The key is read-only.
 

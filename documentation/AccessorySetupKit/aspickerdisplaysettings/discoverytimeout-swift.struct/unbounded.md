@@ -25,7 +25,7 @@ extern const ASPickerDisplaySettingsDiscoveryTimeout ASPickerDisplaySettingsDisc
 
 - [Discovering and configuring accessories](../../discovering-and-configuring-accessories.md)
 
-#### Discussion
+## Discussion
 
 Use this timeout value if you set the picker display option [`filterDiscoveryResults`](../options-swift.struct/filterdiscoveryresults.md) and need unlimited time for filtering. After performing manual discovery, perform the manual timeout by calling the [`ASAccessorySession`](../../asaccessorysession.md) method [`finishPickerDiscovery(completionHandler:)`](../../asaccessorysession/finishpickerdiscovery%28completionhandler%29.md). This process shows a timeout message if your filtering added no accessories to the picker, or returns silently if you updated the picker.
 

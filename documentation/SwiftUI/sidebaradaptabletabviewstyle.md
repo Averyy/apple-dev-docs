@@ -21,7 +21,7 @@ nonisolated
 struct SidebarAdaptableTabViewStyle
 ```
 
-#### Overview
+## Overview
 
 Tab views using the sidebar adaptable style have an appearance that varies depending on the platform:
 

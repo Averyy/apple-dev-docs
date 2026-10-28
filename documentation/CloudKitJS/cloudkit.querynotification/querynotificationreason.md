@@ -15,7 +15,7 @@ The reason for the query notification.
 readonly attribute String queryNotificationReason;
 ```
 
-#### Discussion
+## Discussion
 
 Possible values are described in [Reasons for Query Notifications](../reasons-for-query-notifications.md).
 

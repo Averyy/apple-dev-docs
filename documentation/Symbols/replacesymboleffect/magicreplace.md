@@ -21,7 +21,7 @@ A symbol effect applies the MagicReplace animation to symbol images.
 struct MagicReplace
 ```
 
-#### Overview
+## Overview
 
 The MagicReplace effect animates common elements across symbol images.
 

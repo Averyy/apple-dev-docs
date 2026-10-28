@@ -19,7 +19,7 @@ class var monochrome: NSTintConfiguration { get }
 @property (class, strong, readonly) NSTintConfiguration * monochromeTintConfiguration;
 ```
 
-#### Discussion
+## Discussion
 
 Content marked as monochrome remains monochrome regardless of the system accent color.
 

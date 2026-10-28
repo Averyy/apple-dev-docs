@@ -20,7 +20,7 @@ var additionalHeaderFields: [String : String]? { get }
 @property (nonatomic, readonly, nullable) NSDictionary<NSString *,NSString *> * additionalHeaderFields;
 ```
 
-#### Discussion
+## Discussion
 
 Apply these headers only to the initial page, and don’t overwrite any headers that the browser usually sends.
 

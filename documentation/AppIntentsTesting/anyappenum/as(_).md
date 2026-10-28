@@ -21,7 +21,7 @@ Casts the raw value to the specified type.
 func `as`<T>(_ type: T.Type) throws -> T where T : LosslessStringConvertible
 ```
 
-#### Discussion
+## Discussion
 
 If the raw value isn’t an instance of that type, this method throws an error.
 

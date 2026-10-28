@@ -22,7 +22,7 @@ A view that displays the image for a music item’s artwork.
 @preconcurrency struct ArtworkImage
 ```
 
-#### Overview
+## Overview
 
 You can create an artwork image with an instance of [`Artwork`](./artwork.md).
 

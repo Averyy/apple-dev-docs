@@ -15,7 +15,7 @@ The structure for storing a USB device qualifier descriptor.
 struct IOUSBDeviceQualifierDescriptor;
 ```
 
-#### Overview
+## Overview
 
 For information about this descriptor, see section 9.6.2 of the USB 2.0 specification at [http://www.usb.org](http://www.usb.org).
 

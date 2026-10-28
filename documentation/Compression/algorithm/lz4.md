@@ -21,7 +21,7 @@ The LZ4 compression algorithm, which is recommended for fast compression.
 case lz4
 ```
 
-#### Discussion
+## Discussion
 
 LZ4 is a high-performance compressor. The encoded format that the Compression library produces and consumes is compatible with the open source version, apart from the addition of a very simple frame to the raw stream to allow some additional validation and functionality.
 

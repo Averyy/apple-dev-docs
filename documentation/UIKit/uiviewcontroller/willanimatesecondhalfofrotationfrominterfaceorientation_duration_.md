@@ -19,7 +19,7 @@ Sent to the view controller before the second half of the user interface rotates
 - (void) willAnimateSecondHalfOfRotationFromInterfaceOrientation:(UIInterfaceOrientation) fromInterfaceOrientation duration:(NSTimeInterval) duration;
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation of this method does nothing.
 

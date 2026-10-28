@@ -28,7 +28,7 @@ func getVoiceShortcut(with identifier: UUID) async throws -> INVoiceShortcut
 - (void) getVoiceShortcutWithIdentifier:(NSUUID *) identifier completion:(void (^)(INVoiceShortcut *voiceShortcut, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 This method only retrieves shortcuts associated with the app that calls the method. It cannot retrieve shortcuts associated with other apps.
 

@@ -22,7 +22,7 @@ A binding to a state property that indicates whether the toggle is on.
 var isOn: Bool { get nonmutating set }
 ```
 
-#### Discussion
+## Discussion
 
 Because this value is a [`Binding`](../binding.md), you can both read and write it in your implementation of the [`makeBody(configuration:)`](../togglestyle/makebody%28configuration%29.md) method when defining a custom [`ToggleStyle`](../togglestyle.md). Access it through that method’s `configuration` parameter.
 

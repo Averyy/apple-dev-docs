@@ -23,7 +23,7 @@ static var sidebar: SearchFieldPlacement { get }
 
 - [Adding a search interface to your app](../adding-a-search-interface-to-your-app.md)
 
-#### Discussion
+## Discussion
 
 The precise placement depends on the platform:
 

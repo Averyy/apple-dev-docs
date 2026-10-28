@@ -24,7 +24,7 @@ var kAudioOutputUnitProperty_EnableIO: AudioUnitPropertyID { get }
 kAudioOutputUnitProperty_EnableIO
 ```
 
-#### Discussion
+## Discussion
 
 An I/O unit’s bus 0 connects to output hardware, such as for playback through a speaker. Output is enabled by default. To disable output, the bus 0 output scope must be disabled, as follows:
 

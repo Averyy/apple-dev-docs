@@ -24,7 +24,7 @@ var format: CIFormat { get }
 @property (readonly) CIFormat format;
 ```
 
-#### Discussion
+## Discussion
 
 For applicable values, see Pixel Formats.
 

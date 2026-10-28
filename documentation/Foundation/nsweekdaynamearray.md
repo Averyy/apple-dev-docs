@@ -17,7 +17,7 @@ Key for an array of strings that specify the names for the days of the week, aff
 extern NSString * const NSWeekDayNameArray;
 ```
 
-#### Discussion
+## Discussion
 
 Sunday should be the first day of the week.
 

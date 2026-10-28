@@ -4,7 +4,7 @@
 
 A legacy, informal protocol that Apple doesn’t recommend for active use.
 
-#### Overview
+## Overview
 
 The `NSAccessibility` informal protocol defines an old, key-based API. For the most part, Apple doesn’t recommend using this API. Use the method-based API in [`NSAccessibilityProtocol`](./nsaccessibilityprotocol.md) instead. However, there are a few methods and properties that are still relevant. You can combine the [`accessibilityHitTest(_:)`](../ObjectiveC/nsobject-swift.class/accessibilityhittest%28_%29.md) method, and the [`accessibilityFocusedUIElement`](./nsaccessibilitylayoutarea/accessibilityfocuseduielement.md) and [`accessibilityNotifiesWhenDestroyed`](../ObjectiveC/nsobject-swift.class/accessibilitynotifieswhendestroyed.md) properties with the new [`NSAccessibilityProtocol`](./nsaccessibilityprotocol.md) protocol.
 

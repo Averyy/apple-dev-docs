@@ -19,7 +19,7 @@ class FSItem
 @interface FSItem : NSObject
 ```
 
-#### Overview
+## Overview
 
 An `FSItem` is a mostly opaque object, which your file system implementation defines as needed.
 

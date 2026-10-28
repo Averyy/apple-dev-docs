@@ -25,11 +25,11 @@ func CMAudioFormatDescriptionGetChannelLayout(_ desc: CMAudioFormatDescription, 
 extern const AudioChannelLayout *CMAudioFormatDescriptionGetChannelLayout(CMAudioFormatDescriptionRef desc, size_t *sizeOut);
 ```
 
-#### Return Value
+## Return Value
 
 A read-only pointer to the `AudioChannelLayout` inside the audio format description.
 
-#### Discussion
+## Discussion
 
 AudioChannelLayouts are optional; this API returns `NULL` if one doesn’t exist. This API is specific to audio format descriptions, and returns `NULL` if called with a non-audio format description.
 

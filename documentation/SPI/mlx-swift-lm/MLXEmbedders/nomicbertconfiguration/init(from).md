@@ -17,7 +17,7 @@ Decodes the configuration from an external representation (like JSON).
 init(from decoder: Decoder) throws
 ```
 
-#### Discussion
+## Discussion
 
 This initializer manually decodes each property, providing fallback default values if specific keys are missing from the source data.
 

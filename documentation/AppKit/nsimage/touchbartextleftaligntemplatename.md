@@ -22,7 +22,7 @@ class let touchBarTextLeftAlignTemplateName: String
 extern NSImageName const NSImageNameTouchBarTextLeftAlignTemplate;
 ```
 
-#### Discussion
+## Discussion
 
 ![Template image for align text to the left](https://developer.apple.com/tutorials/images/com.apple.appkit/media-2825133@2x.png)
 

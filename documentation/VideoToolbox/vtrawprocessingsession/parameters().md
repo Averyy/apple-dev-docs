@@ -15,7 +15,7 @@ Returns an asynchronous sequence that provides updates to the processing Paramet
 func parameters() -> any AsyncSequence<[VTRAWProcessingSession.Parameter], Never>
 ```
 
-#### Discussion
+## Discussion
 
 These changes could be: - adding or removing Parameters - enabling/disabling Parameters - changing default values for a Parameter
 

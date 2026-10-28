@@ -22,7 +22,7 @@ var previewDimensions: CMVideoDimensions { get }
 @property (readonly) CMVideoDimensions previewDimensions;
 ```
 
-#### Discussion
+## Discussion
 
 Use the [`previewPhotoFormat`](../avcapturephotosettings/previewphotoformat.md) property in your photo settings object to request delivery of a preview image alongside the main photo output from the capture. When you request a preview, the photo output chooses dimensions that best match your requested size while preserving the aspect ratio of the captured photo. Aspect ratio is determined by capture format and by device orientation at the moment of capture.
 

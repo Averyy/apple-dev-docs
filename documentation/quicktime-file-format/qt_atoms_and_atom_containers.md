@@ -5,7 +5,7 @@
 
 An enhanced data structure that provide a more general-purpose storage format.
 
-#### Overview
+## Overview
 
 QT atoms are an enhanced data structure that provide a more general-purpose storage format and remove some of the ambiguities that arise when using simple atoms. A QT atom has an expanded header; the size and type fields are followed by fields for an atom ID and a count of child atoms.
 
@@ -35,7 +35,7 @@ Each QT atom header contains the following data:
 - **Child count**: A 16-bit integer that specifies the number of child atoms that an atom contains. This count includes only immediate children. If this field is set to `0`, the atom is a leaf atom and contains only data.
 - **Reserved**: A 32-bit integer that must be set to `0`.
 
-#### QT atom containers
+## QT atom containers
 
 A QuickTime atom container is a basic structure for storing information in QuickTime. An atom container is a tree-structured hierarchy of QT atoms. You can think of a newly created QT atom container as the root of a tree structure that contains no children.
 

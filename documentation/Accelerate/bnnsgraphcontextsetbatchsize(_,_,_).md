@@ -25,11 +25,11 @@ func BNNSGraphContextSetBatchSize(_ context: bnns_graph_context_t, _ function: U
 int BNNSGraphContextSetBatchSize(bnns_graph_context_t context, const char *function, uint64_t batch_size);
 ```
 
-#### Return Value
+## Return Value
 
 `0` on success, nonzero on failure.
 
-#### Discussion
+## Discussion
 
 This function provides a special case of [`BNNSGraphContextSetDynamicShapes(_:_:_:_:)`](./bnnsgraphcontextsetdynamicshapes%28_,_,_,_%29.md) where the only dynamic size is the first index of the tensors and that size is equal for all tensors. This function provides a simpler API because you only need to pass the common first dimension as the `batch_size` parameter.
 

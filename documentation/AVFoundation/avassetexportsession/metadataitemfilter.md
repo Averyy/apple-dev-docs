@@ -24,7 +24,7 @@ var metadataItemFilter: AVMetadataItemFilter? { get set }
 @property (nonatomic, retain, nullable) AVMetadataItemFilter * metadataItemFilter;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `nil`.
 

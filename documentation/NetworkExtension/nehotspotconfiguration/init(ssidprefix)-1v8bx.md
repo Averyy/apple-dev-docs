@@ -23,7 +23,7 @@ init(ssidPrefix SSIDPrefix: String)
 - (instancetype) initWithSSIDPrefix:(NSString *) SSIDPrefix;
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer when you want to match a known SSID prefix, but don’t have a full SSID. If the system finds multiple Wi-Fi networks whose SSID string matches the given prefix, it selects the network with the greatest signal strength.
 

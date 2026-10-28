@@ -5,7 +5,7 @@
 
 Review unsupported symbols and their replacements.
 
-#### Overview
+## Overview
 
 Many deprecated system intents have no replacement. You may continue to provide these features by defining custom intents. For more information about custom intents, see [Adding User Interactivity with Siri Shortcuts and the Shortcuts App](./adding-user-interactivity-with-siri-shortcuts-and-the-shortcuts-app.md).
 

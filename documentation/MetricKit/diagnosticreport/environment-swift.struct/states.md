@@ -23,7 +23,7 @@ let states: [MetricManager.ReportedState]
 - [Analyzing app performance with MetricKit](../../analyzing-app-performance-with-metrickit.md)
 - [Monitoring app performance with MetricKit](../../monitoring-app-performance-with-metrickit.md)
 
-#### Discussion
+## Discussion
 
 This array contains all the StateReporting states that occurred before the diagnostic event. The array may be empty if no StateReporting context was active.
 

@@ -17,7 +17,7 @@ An object that identifies a particular area in a captured room in relation to co
 struct Section
 ```
 
-#### Overview
+## Overview
 
 When RoomPlan recognizes a captured room as one of the common kinds of room areas, such as a living room, the framework adds an instance of this structure to the room’s [`sections`](./sections.md) array.
 

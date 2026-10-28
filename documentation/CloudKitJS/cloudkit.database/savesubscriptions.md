@@ -17,11 +17,11 @@ Promise<CloudKit.SubscriptionsResponse, CloudKit.CKError> saveSubscriptions(
 );
 ```
 
-#### Return Value
+## Return Value
 
 A `Promise` object that resolves to a [`CloudKit.SubscriptionsResponse`](../cloudkit.subscriptionsresponse.md) object if the operation succeeds; otherwise, a [`CKError`](../cloudkit/ckerror.md) object.
 
-#### Discussion
+## Discussion
 
 Instead of fetching records, you can subscribe to changes, and let the server run the query in the background. You subscribe to changes by creating a subscription, represented by a [`CloudKit.Subscription`](../cloudkit.subscription.md) dictionary, and saving it to a database. Then you register for push notifications and handle them when they arrive.
 

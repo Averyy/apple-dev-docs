@@ -17,11 +17,11 @@ CMError NCWNewLinkProfile (
 );
 ```
 
-#### Return Value
+## Return Value
 
 A `CMError` value. See [Result Codes](../colorsync_manager.md#1670295).
 
-#### Overview
+## Overview
 
 The same new flexibility in creating color worlds is extended to link profiles, which are not assumed to go from input device color space to output device color space. The returned profile is open, and should be closed when you are finished with it. 
 

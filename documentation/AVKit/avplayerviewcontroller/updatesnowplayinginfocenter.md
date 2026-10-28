@@ -22,7 +22,7 @@ var updatesNowPlayingInfoCenter: Bool { get set }
 @property (nonatomic) BOOL updatesNowPlayingInfoCenter;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `true`.
 

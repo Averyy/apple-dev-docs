@@ -19,7 +19,7 @@ func endEditing(_ textObj: NSText)
 - (void) endEditing:(NSText *) textObj;
 ```
 
-#### Discussion
+## Discussion
 
 Ends any editing of text that began with a call to [`edit(withFrame:in:editor:delegate:event:)`](./edit%28withframe,in,editor,delegate,event%29.md) or  [`select(withFrame:in:editor:delegate:start:length:)`](./select%28withframe,in,editor,delegate,start,length%29.md).
 

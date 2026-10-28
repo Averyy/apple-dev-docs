@@ -5,7 +5,7 @@
 
 Combine two images by using blend modes to create a single output.
 
-#### Overview
+## Overview
 
 vImage provides a suite of functions for compositing two source images into one output. These *blend mode* functions implement different algorithms to determine the output color. For example, the multiply blend mode sets each output pixel as the product of the two corresponding input pixels.
 
@@ -24,7 +24,7 @@ The top-layer source image consists of four sections:
 
 Both images are fully opaque.
 
-##### Composite images using the lighten blend mode
+### Composite images using the lighten blend mode
 
 Use the [`vImagePremultipliedAlphaBlendLighten_RGBA8888(_:_:_:_:)`](./vimagepremultipliedalphablendlighten_rgba8888%28_,_,_,_%29.md) function to composite two layers using the lighten blend mode. You can use the lighten blend mode to apply an overall lightening effect to images.
 
@@ -36,7 +36,7 @@ The top-left quadrant in the result is white because no pixels in the bottom lay
 
 The bottom-left quadrant in the result looks washed out because the operation selects gray pixels from the top layer over corresponding dark pixels from the bottom layer.
 
-##### Composite images using the darken blend mode
+### Composite images using the darken blend mode
 
 Use the [`vImagePremultipliedAlphaBlendDarken_RGBA8888(_:_:_:_:)`](./vimagepremultipliedalphablenddarken_rgba8888%28_,_,_,_%29.md) function to composite two layers using the darken blend mode. You can use the darken blend mode to apply an overall darkening effect to images.
 
@@ -48,7 +48,7 @@ The bottom-right quadrant in the result is black because no pixels in the bottom
 
 The bottom-left quadrant in the result looks darker than the corresponding quadrant in the bottom layer. This is because the operation selects gray pixels from the top layer over corresponding light pixels from the bottom layer.
 
-##### Composite images using the screen blend mode
+### Composite images using the screen blend mode
 
 Use the [`vImagePremultipliedAlphaBlendScreen_RGBA8888(_:_:_:_:)`](./vimagepremultipliedalphablendscreen_rgba8888%28_,_,_,_%29.md) function to composite two layers using the screen blend mode. You can use the screen blend mode to lighten images without affecting the darkest areas.
 
@@ -68,7 +68,7 @@ The top-right quadrant in the result is brighter than the corresponding quadrant
 dest = 1 - (1 - 0.5) * (1 - 0.5) // dest = 0.75
 ```
 
-##### Composite images using the multiply blend mode
+### Composite images using the multiply blend mode
 
 Use the [`vImagePremultipliedAlphaBlendMultiply_RGBA8888(_:_:_:_:)`](./vimagepremultipliedalphablendmultiply_rgba8888%28_,_,_,_%29.md) function to composite two layers using the multiply blend mode. You can the use multiply blend mode to darken images without affecting the lightest areas.
 

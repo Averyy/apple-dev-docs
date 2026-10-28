@@ -10,7 +10,7 @@ Use room tracking in visionOS to provide custom interactions with physical space
 - visionOS 26.0+
 - Xcode 26.0+
 
-#### Overview
+## Overview
 
 This sample allows your app to keep track of rooms as discrete, identifiable places, and enables you to provide a customized virtual experience inside a specific room, and to get notified when someone enters or leaves the room. These customizations can be as simple as knowing when to stop room-specific animations, or to support the creation of location-specific virtual content such as in-game treasures, effects, or even portals to virtual worlds that contain other content.
 
@@ -20,7 +20,7 @@ The app has an *occlusion mode*, in which the room geometry the framework render
 
 > **Note**: This app requires Xcode 16 and visionOS 2 or later, and an Apple Vision Pro. ARKit room tracking isn’t supported in Simulator.
 
-#### Ensure all data providers are in an authorized state
+## Ensure all data providers are in an authorized state
 
 Your app must request permission to use certain visionOS capabilities before being able to access data associated with them. For example, attempting to access the [`RoomTrackingProvider`](../ARKit/roomtrackingprovider.md) displays a permission sheet asking the user to authorize your app’s access. If the user has previously denied this request, the app displays an error message in the scene. For information about using a `RoomTrackingProvider`, see [Setting up access to ARKit data](./setting-up-access-to-arkit-data.md). For information about best practices for privacy, see [Adopting best practices for privacy and user preferences](./adopting-best-practices-for-privacy.md).
 
@@ -36,7 +36,7 @@ func areAllDataProvidersAuthorized() async -> Bool {
 }
 ```
 
-#### Configure room tracking
+## Configure room tracking
 
 Set up room tracking by first configuring an [`ARKitSession`](../ARKit/arkitsession.md) instance, then add a  [`WorldTrackingProvider`](../ARKit/worldtrackingprovider.md) and a  [`RoomTrackingProvider`](../ARKit/roomtrackingprovider.md) to the session as shown in the following example:
 
@@ -72,7 +72,7 @@ private let occlusionMaterial = OcclusionMaterial()
 private var wallMaterial = UnlitMaterial(color: .blue)
 ```
 
-#### Allow a person to place room tracking anchors
+## Allow a person to place room tracking anchors
 
 Placing a `roomAnchor` object in the room consists of two processes. The first phase allows the person to review the anchor, which the sample renders as a sphere in front of the device from the person’s perspective:
 
@@ -115,7 +115,7 @@ As a person places spheres in the room, they appear in green to indicate they’
 
 This changing state and the property of a room being *current* is what allows an app to make decisions about what actions, animations, or other processes make sense in a specific location.
 
-#### Check the current room and respond to updates
+## Check the current room and respond to updates
 
 As a person moves from room to room, ARKit’s room tracking process checks to see which room is current and reports back changes to the app through the `RoomTrackingProvider` property  [`anchorUpdates`](../ARKit/roomtrackingprovider/anchorupdates.md), which is an asynchronous sequence of all anchor updates. As these updates come in, a `Task` view modifier in the app’s `WorldAndRoomView` calls a method that looks for anchors to update, as demonstrated here:
 
@@ -165,7 +165,7 @@ func processRoomTrackingUpdates() async {
 }
 ```
 
-#### Find and select walls
+## Find and select walls
 
 Room tracking also enables someone to find and select walls in the current room. You can use this as an additional interaction surface, such as creating a “portal” to another virtual space. The process of selecting a wall in a room is split into two modes: an *unlocked mode* where actively looking at a specific wall causes ARKit to highlight it in blue, and *locked mode* where a person has selected a wall and it receives continuous updates from the `RoomTrackingProvider`. The *unlocked mode* requires performing a ray cast query in the direction of the a person’s head, which returns the first wall that it hits, as shown here:
 
@@ -240,11 +240,11 @@ private func updateCurrentRoomWalls(for roomAnchor: RoomAnchor) async {
 }
 ```
 
-#### Keep focus on the current room
+## Keep focus on the current room
 
 Room tracking operates only in the current room a person is in. If someone leaves one room and enters another, the previous room is no longer valid, and the framework only updates mesh-room associations and plane-room associations for the current room. Only use the current room anchor and discard any noncurrent rooms.
 
-#### Be aware of limitations
+## Be aware of limitations
 
 Clutter in a room, large furniture elements, and very large spaces may interfere with ARKit’s ability to accurately detect walls and fully detect the dimensions of a room. In the case of very large indoor spaces, or in rooms with low-light conditions, the framework may only provide a floor mesh. Additionally, visionOS doesn’t support using room tracking outdoors or when Apple Vision Pro is in Travel Mode. In these cases, there’s no current room. For more information on implementing immersive experiences, see Human Interface Guidelines > [Immersive experiences](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences).
 

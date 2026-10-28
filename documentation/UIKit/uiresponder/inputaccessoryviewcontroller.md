@@ -22,7 +22,7 @@ var inputAccessoryViewController: UIInputViewController? { get }
 @property (nonatomic, strong, readonly, nullable) UIInputViewController * inputAccessoryViewController;
 ```
 
-#### Discussion
+## Discussion
 
 This property is typically used to attach an accessory view controller to the system-supplied keyboard that’s presented for [`UITextField`](../uitextfield.md) and [`UITextView`](../uitextview.md) objects.
 

@@ -15,7 +15,7 @@ The UNIX date, in milliseconds, that the customer authorized the transaction.
 int64 creationDate
 ```
 
-#### Discussion
+## Discussion
 
 For refunds and other events, use the UNIX date, in milliseconds, of the transaction.
 

@@ -25,7 +25,7 @@ struct TVShowContent
 
 - [Publishing media sessions](./publishing-media-sessions.md)
 
-#### Overview
+## Overview
 
 Use this type for television series playback, including individual episodes.
 

@@ -20,7 +20,7 @@ Specifies that a control’s configuration UI should be automatically presented 
 @preconcurrency func promptsForUserConfiguration() -> some ControlWidgetConfiguration
 ```
 
-#### Return Value
+## Return Value
 
 A control configuration that knows whether the presentation of a configuration UI is preferred.
 

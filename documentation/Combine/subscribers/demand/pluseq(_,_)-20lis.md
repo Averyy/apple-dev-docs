@@ -21,7 +21,7 @@ Adds two demands, and assigns the result to the first demand.
 static func += (lhs: inout Subscribers.Demand, rhs: Subscribers.Demand)
 ```
 
-#### Discussion
+## Discussion
 
 When adding any value to `.unlimited`, the result is `.unlimited`.
 

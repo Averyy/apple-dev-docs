@@ -19,7 +19,7 @@ var fileType: String { get set }
 @property (copy) NSString * fileType;
 ```
 
-#### Discussion
+## Discussion
 
 The type is Universal Type Identifier (UTI).
 

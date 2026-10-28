@@ -21,7 +21,7 @@ var drawsBackground: Bool { get set }
 @property (nonatomic) BOOL drawsBackground;
 ```
 
-#### Discussion
+## Discussion
 
 If [`true`](../../Swift/true.md), a default background is drawn; if [`false`](../../Swift/false.md), it is not.
 

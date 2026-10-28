@@ -24,7 +24,7 @@ func removePage(at index: Int)
 - (void) removePageAtIndex:(NSUInteger) index;
 ```
 
-#### Discussion
+## Discussion
 
 This method raises an exception if `index` is out of bounds.
 

@@ -20,7 +20,7 @@ case hdrLocalDisplay
 SCCaptureDynamicRangeHDRLocalDisplay
 ```
 
-#### Discussion
+## Discussion
 
 Local display capture uses the attributes of the display where the captured content is currently presented optimizing rendering for presentation on the capture display.
 

@@ -15,7 +15,7 @@ A flag to indicate whether samples are signed or unsigned integers.
 FormatFlagIsSignedInteger
 ```
 
-#### Discussion
+## Discussion
 
 Set this value for signed integers; clear it for unsigned. This flag is only valid if [`FormatFlagIsFloat`](./formatflagisfloat.md) is clear.
 

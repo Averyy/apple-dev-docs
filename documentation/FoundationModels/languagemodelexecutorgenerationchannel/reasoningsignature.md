@@ -20,7 +20,7 @@ Payload for a reasoning entry’s signature update.
 struct ReasoningSignature
 ```
 
-#### Overview
+## Overview
 
 The signature is an opaque, producer-supplied token; each `updateSignature` event replaces the prior value wholesale. `tokenCount` is the producer’s count of tokens carried by the signature, used for usage accounting.
 

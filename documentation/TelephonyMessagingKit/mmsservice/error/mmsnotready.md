@@ -15,7 +15,7 @@ The framework isn’t ready to send MMS messages.
 case mmsNotReady
 ```
 
-#### Discussion
+## Discussion
 
 You can handle this error by making another attempt to send the MMS message later.
 

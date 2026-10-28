@@ -19,11 +19,11 @@ func clearContents() -> Int
 - (NSInteger) clearContents;
 ```
 
-#### Return Value
+## Return Value
 
 The change count of the receiver.
 
-#### Discussion
+## Discussion
 
 Clears the existing contents of the pasteboard, preparing it for new contents. This is the first step in providing data on the pasteboard.
 

@@ -31,7 +31,7 @@ class GCController
 - [Handling input events](./handling-input-events.md)
 - [Discovering and tracking spatial game controllers and styli](./discovering-and-tracking-spatial-game-controllers-and-styli.md)
 
-#### Overview
+## Overview
 
 This class represents a real or virtual controller that a user interacts with during a game. A *real controller* is a physical controller that connects directly or wirelessly to the device. A real controller can be formfitting or can attach closely to a device so players can use controls on both simultaneously. A *virtual controller* is a software emulation of a real controller.
 

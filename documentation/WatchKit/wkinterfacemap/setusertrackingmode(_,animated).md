@@ -19,7 +19,7 @@ func setUserTrackingMode(_ mode: WKInterfaceMap.UserTrackingMode, animated: Bool
 - (void) setUserTrackingMode:(WKInterfaceMapUserTrackingMode) mode animated:(BOOL) animated;
 ```
 
-#### Discussion
+## Discussion
 
 By default, the tracking mode is [`WKInterfaceMap.UserTrackingMode.none`](./usertrackingmode/none.md).
 

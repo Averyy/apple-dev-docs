@@ -24,7 +24,7 @@ class UIBarAppearance
 @interface UIBarAppearance : NSObject
 ```
 
-#### Overview
+## Overview
 
 A [`UIBarAppearance`](./uibarappearance.md) object contains the common traits shared by navigation bars, tab bars, and toolbars. When configuring a specific type of bar, you usually instantiate the appropriate bar appearance subclass. However, you may also create a [`UIBarAppearance`](./uibarappearance.md) object, configure its properties, and use it to create new bar appearance objects in your app.
 

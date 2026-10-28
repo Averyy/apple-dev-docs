@@ -17,7 +17,7 @@ Walk all submodules and set `loraEnabled` on every `LoRALayer` found.
 func setLoRAEnabled(_ enabled: Bool)
 ```
 
-#### Discussion
+## Discussion
 
 This is the generic, always-correct path. For hot loops that toggle the adapter many times per generation (e.g. speculative decoding), cache the `[LoRALayer]` list once and call `loraEnabled = enabled` directly on each — see `NemotronLabsDiffusionModel.setLoRAEnabledFast`.
 

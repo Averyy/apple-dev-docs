@@ -19,7 +19,7 @@ Sets the minimum size for the configuration.
 func minSize(width: CGFloat? = nil, height: CGFloat? = nil) -> UIHostingConfiguration<Content, Background>
 ```
 
-#### Discussion
+## Discussion
 
 Use this modifier to indicate that a configuration’s associated cell can be resized to a specific minimum. The following example allows the cell to be compressed to zero size:
 

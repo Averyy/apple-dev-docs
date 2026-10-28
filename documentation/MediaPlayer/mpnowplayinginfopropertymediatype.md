@@ -25,7 +25,7 @@ let MPNowPlayingInfoPropertyMediaType: String
 extern NSString * const MPNowPlayingInfoPropertyMediaType;
 ```
 
-#### Discussion
+## Discussion
 
 Value is an [`NSNumber`](../Foundation/nsnumber.md) object configured as a [`MPNowPlayingInfoMediaType`](./mpnowplayinginfomediatype.md).
 

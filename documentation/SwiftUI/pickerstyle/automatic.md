@@ -24,7 +24,7 @@ static var automatic: DefaultPickerStyle { get }
 
 Available when `Self` is `DefaultPickerStyle`.
 
-#### Discussion
+## Discussion
 
 How a picker using the default picker style appears largely depends on the platform and the view type in which it appears. For example, in a standard view, the default picker styles by platform are:
 

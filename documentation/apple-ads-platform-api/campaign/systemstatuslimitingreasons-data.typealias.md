@@ -42,11 +42,11 @@ string Campaign.SystemStatusLimitingReasons
 - `BRAND_POLICY_ISSUES`: A brand policy condition is limiting delivery.
 - `AD_GROUPS_LIMITED`: One or more ad groups are serving at reduced capacity.
 
-#### Discussion
+## Discussion
 
 Unlike [`Campaign.SystemStatusReasons`](./systemstatusreasons-data.typealias.md), these codes describe conditions, such as pending app documentation or brand policy issues, that throttle delivery rather than stop it outright.
 
-##### Example
+### Example
 
 ```json
 {

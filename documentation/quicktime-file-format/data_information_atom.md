@@ -6,7 +6,7 @@
 
 An atom that specifies the data handler component that provides access to the media data.
 
-#### Overview
+## Overview
 
 The handler reference atom (described in Handler Reference Atoms) contains information specifying the data handler component that provides access to the media data. The data handler component uses the data information atom to interpret the media’s data. Data information atoms have an atom type value of `'dinf'`.
 

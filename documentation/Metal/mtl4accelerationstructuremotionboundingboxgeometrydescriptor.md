@@ -24,7 +24,7 @@ class MTL4AccelerationStructureMotionBoundingBoxGeometryDescriptor
 @interface MTL4AccelerationStructureMotionBoundingBoxGeometryDescriptor : MTL4AccelerationStructureGeometryDescriptor
 ```
 
-#### Overview
+## Overview
 
 You use bounding boxes to implement procedural geometry for ray tracing, such as spheres or any other shape you define by using intersection functions.
 

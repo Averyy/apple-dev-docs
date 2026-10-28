@@ -14,7 +14,7 @@ Compute tan(πX).
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Parameter Types
+## Parameter Types
 
 **Tan Pi (half)**:
 

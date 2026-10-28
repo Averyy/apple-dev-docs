@@ -31,7 +31,7 @@ var consumptionFormulaArguments: [String : Any]? { get set }
 @property (atomic, copy, readwrite, nullable) NSDictionary<NSString *,id> * consumptionFormulaArguments;
 ```
 
-#### Discussion
+## Discussion
 
 This property’s value is a dictionary of serializable objects that contains the parameters the electric vehicle’s consumption model uses to calculate its energy consumption as it travels. The keys of the dictionary must match those of the corresponding charging model. `model_id` is a mandatory key and must be the identifier of the consumption model the vehicle uses.
 

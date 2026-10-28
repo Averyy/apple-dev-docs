@@ -5,7 +5,7 @@
 
 Create a WS-Trust login request using the metadata exchange data (MEX) response.
 
-#### Overview
+## Overview
 
 After receiving a WS-Trust MEX response, the next step that the system performs for federated authentication with WS-Trust, meaning between security domains, is to send a login request to a federated identity provider (IdP).
 
@@ -13,7 +13,7 @@ The system uses the [`federationRequestURN`](./asauthorizationproviderextensionl
 
 For more information about federated authentication with WS-Trust, see [Authentication process](./authentication-process.md).
 
-##### Receive the WS-Trust login response
+### Receive the WS-Trust login response
 
 The system loads the SOAP response as XML and validates it, which includes checking that the nonce is correct and the created and expires dates are current. The system then parses the `TokenType` and uses it to set the correct `grant_type` in the Platform SSO login request.
 

@@ -13,13 +13,13 @@ Build sophisticated animations that you control using phase and keyframe animato
 - macOS 14.0+
 - Xcode 15.0+
 
-#### Overview
+## Overview
 
 SwiftUI provides a collection of useful animations that you can use in your app. These animations help enhance the user experience of your app by providing visual transitions of views and user interface elements. While these standard animations provide a great way to enhancement the user interaction of your app, there are times when you need to have more control over the timing and movement of a visual element. [`PhaseAnimator`](./phaseanimator.md) and [`KeyframeAnimator`](./keyframeanimator.md) help give you that control.
 
 A phase animator allows you to define an animation as a collection of discrete steps called phases. The animator cycles through these phases to create a visual transition. With keyframe animator, you create keyframes that define animation values at specific times during the visual transition.
 
-#### Create a simple bounce animation
+## Create a simple bounce animation
 
 To better understand how to create animations using a [`PhaseAnimator`](./phaseanimator.md) or [`KeyframeAnimator`](./keyframeanimator.md), start with a simple example that uses standard SwiftUI animations. The following code moves an emoji upwards by setting its offset to `-40.0`. To provide a smooth transition of the movement, the code uses the [`withAnimation(_:_:)`](./withanimation%28_,_%29.md) function to apply a [`bouncy`](./animation/bouncy.md) animation after someone taps the emoji.
 
@@ -71,7 +71,7 @@ However, `EmojiView` actually goes through three steps. The first step happens w
 
 While this implementation certainly works as expected, using a [`PhaseAnimator`](./phaseanimator.md) is a more convenient way to define discrete steps as phases of an animation.
 
-#### Bounce with a phase animator
+## Bounce with a phase animator
 
 A [`PhaseAnimator`](./phaseanimator.md) automatically advances through a set of given phases to create an animated transition. Use the [`phaseAnimator(_:content:animation:)`](./view/phaseanimator%28_,content,animation%29.md) modifier to provide the animator the phases for changing the animation value. For example, the emoji bounce animation shown earlier has two phases: move up and move back. You can represent these phases using the Boolean values, `true` and `false`. When the phase is `true`, the emoji moves up to `-40.0`. When the phase is `false`, the emoji moves back to the original position by setting the offset to `0.0`.
 
@@ -136,7 +136,7 @@ struct TwoPhaseAnimationView: View {
 
 [Video: A video that shows a heart-shaped emoji that bounces slightly downward before moving up. After the emoji reaches its peak position, it moves downward, returning to its original position.](https://developer.apple.com/tutorials/videos/com.apple.SwiftUI/phase-keyframe-animation-03.mp4)
 
-#### Add more phases to the animation
+## Add more phases to the animation
 
 While this bounce effect is nice, you can add more pizzazz to it. For instance, you could make the emoji increase in size as it moves upward, and then shrink back to normal size. To do this, you’ll add a third phase to the animation: scale.
 
@@ -228,7 +228,7 @@ The code also applies different animation types based on the phase in the `anima
 
 A [`PhaseAnimator`](./phaseanimator.md) gives you control of an animation based on discrete phases, which helps you add extra polish to an animation. But if you find that you need even more control over the timing and movement of an animation, use a [`KeyframeAnimator`](./keyframeanimator.md).
 
-#### Gain more control with a keyframe animator
+## Gain more control with a keyframe animator
 
 You can define complex, coordinated animations with complete control over timing and movement using a [`KeyframeAnimator`](./keyframeanimator.md). This animator allows you to create keyframes that define values at specific times during an animation. The animator use these values to generate interpolated values in between each frame of the animation.
 

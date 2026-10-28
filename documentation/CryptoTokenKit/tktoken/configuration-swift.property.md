@@ -25,7 +25,7 @@ var configuration: TKToken.Configuration { get }
 @property (readonly) TKTokenConfiguration * configuration;
 ```
 
-#### Discussion
+## Discussion
 
 Access keychain items exported by this token with the methods [`key(for:)`](./configuration-swift.class/key%28for%29.md) and [`certificate(for:)`](./configuration-swift.class/certificate%28for%29.md) provided by the configuration. You can access token-implementation-specific additional data using the [`configurationData`](./configuration-swift.class/configurationdata.md) property of the configuration.
 

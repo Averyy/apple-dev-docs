@@ -16,7 +16,7 @@ nonisolated
 func handPointerBehavior(_ behavior: HandPointerBehavior?) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view that applies the given behavior to the hand pointer.
 

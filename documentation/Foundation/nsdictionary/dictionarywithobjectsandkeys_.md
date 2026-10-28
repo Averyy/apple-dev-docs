@@ -21,7 +21,7 @@ Creates a dictionary containing entries constructed from the specified set of va
 + (instancetype) dictionaryWithObjectsAndKeys:(id) firstObject;
 ```
 
-#### Discussion
+## Discussion
 
 After passing `firstObj`, pass a null-terminated list of alternating values and keys as variadic arguments. If any key is `nil`, an [`invalidArgumentException`](../nsexceptionname/invalidargumentexception.md) is raised.
 

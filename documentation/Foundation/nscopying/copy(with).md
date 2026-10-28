@@ -26,7 +26,7 @@ func copy(with zone: NSZone? = nil) -> Any
 - (id) copyWithZone:(NSZone *) zone;
 ```
 
-#### Discussion
+## Discussion
 
 The returned object is implicitly retained by the sender, who is responsible for releasing it. The copy returned is immutable if the consideration “immutable vs. mutable” applies to the receiving object; otherwise the exact nature of the copy is determined by the class.
 

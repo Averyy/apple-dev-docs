@@ -24,7 +24,7 @@ var auxiliaryButtons: [GCControllerButtonInput]? { get }
 @property (nonatomic, readonly, nullable) NSArray<GCControllerButtonInput *> * auxiliaryButtons;
 ```
 
-#### Discussion
+## Discussion
 
 If the mouse doesn’t have additional buttons, this property is `nil`.
 

@@ -19,7 +19,7 @@ The allowed ends of line for arrows.
 var lineMarkerPositions: FeatureSet.LineMarkerPositions
 ```
 
-#### Discussion
+## Discussion
 
 Default is `.all`.
 

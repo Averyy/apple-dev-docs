@@ -15,7 +15,7 @@ The next media item in the playlist after the currently selected item.
 readonly attribute MediaItem nextMediaItem;
 ```
 
-#### Discussion
+## Discussion
 
 This property returns `null` if the current item is the last item in the playlist.
 

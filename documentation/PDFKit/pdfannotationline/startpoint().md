@@ -19,11 +19,11 @@ func startPoint() -> NSPoint
 - (NSPoint) startPoint;
 ```
 
-#### Return Value
+## Return Value
 
 The starting point for the line, in page space.
 
-#### Discussion
+## Discussion
 
 Page space is a 72-dpi coordinate system with the origin at the lower-left corner of the current page.
 

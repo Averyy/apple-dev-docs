@@ -19,7 +19,7 @@ func convertToBacking(_ rect: NSRect) -> NSRect
 - (NSRect) convertRectToBacking:(NSRect) rect;
 ```
 
-#### Return Value
+## Return Value
 
 A rectangle in its pixel-aligned backing store coordinate system.
 

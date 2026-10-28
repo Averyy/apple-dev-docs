@@ -13,7 +13,7 @@
 SFLT_EXTENDED_REGISTRY = 0x08
 ```
 
-#### Discussion
+## Discussion
 
 Indicates that this socket filter wants to attach to all the sockets already present on the system. It will also receive notifications for these sockets.
 

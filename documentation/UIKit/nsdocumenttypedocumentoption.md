@@ -20,7 +20,7 @@ The document type.
 extern NSAttributedStringDocumentReadingOptionKey const NSDocumentTypeDocumentOption;
 ```
 
-#### Overview
+## Overview
 
 One of the document types described in [`NSAttributedStringDocumentType`](./nsattributedstringdocumenttype.md), indicating a document type to be forced when loading the document. The previous string constant was `@"DocumentType"`.
 

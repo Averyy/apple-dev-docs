@@ -25,7 +25,7 @@ var zeroPadsFractionDigits: Bool { get set }
 @property BOOL zeroPadsFractionDigits;
 ```
 
-#### Discussion
+## Discussion
 
 Displaying values using  zero pad fraction digits causes a consistent number of fraction digits are displayed, causing updating displays to remain more stable. For instance, if the [`isAdaptive`](./isadaptive.md) algorithm is used, this option formats 1.19 and 1.2 GB as `1.19 GB` and `1.20 GB`, respectively, while without the option the latter would be displayed as `1.2 GB`.
 

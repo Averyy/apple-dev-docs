@@ -24,7 +24,7 @@ var originalResourceChoice: PHAsset.OriginalResourceChoice { get set }
 @property (nonatomic, assign) PHOriginalResourceChoice originalResourceChoice;
 ```
 
-#### Discussion
+## Discussion
 
 When set, the content editing input request is fulfilled as though the asset’s original resource choice were the value specified here. This property applies to RAW+JPEG assets only, and is intended for switching between the RAW and compressed resource of such an asset. Setting it for an asset that has only a RAW resource is an error.
 

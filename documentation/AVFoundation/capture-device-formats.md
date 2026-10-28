@@ -5,7 +5,7 @@
 
 Configure capture formats and camera frame rates.
 
-#### Overview
+## Overview
 
 The following code example illustrates how to select an iOS device’s highest possible frame rate:
 

@@ -23,11 +23,11 @@ func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttr
 - (NSArray<__kindof UICollectionViewLayoutAttributes *> *) layoutAttributesForElementsInRect:(CGRect) rect;
 ```
 
-#### Return Value
+## Return Value
 
 An array of [`UICollectionViewLayoutAttributes`](../uicollectionviewlayoutattributes.md) objects representing the layout information for the cells and views. The default implementation returns `nil`.
 
-#### Discussion
+## Discussion
 
 Subclasses must override this method and use it to return layout information for all items whose view intersects the specified rectangle. Your implementation should return attributes for all visual elements, including cells, supplementary views, and decoration views.
 

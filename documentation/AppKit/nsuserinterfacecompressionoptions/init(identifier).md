@@ -19,7 +19,7 @@ init(identifier: String)
 - (instancetype) initWithIdentifier:(NSString *) identifier;
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer to create custom compression options.
 

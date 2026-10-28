@@ -24,7 +24,7 @@ var localizedName: String? { get set }
 @property (nonatomic, strong, nullable) NSString * localizedName;
 ```
 
-#### Discussion
+## Discussion
 
 If the user remaps this element, this property is the remapped localized name.
 

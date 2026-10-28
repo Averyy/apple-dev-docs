@@ -25,7 +25,7 @@ func sort(using sortDescriptors: [NSSortDescriptor])
 - (void) sortUsingDescriptors:(NSArray<NSSortDescriptor *> *) sortDescriptors;
 ```
 
-#### Discussion
+## Discussion
 
 See [`NSSortDescriptor`](../nssortdescriptor.md) for additional information.
 

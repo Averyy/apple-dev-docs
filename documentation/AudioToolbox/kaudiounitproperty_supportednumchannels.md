@@ -24,7 +24,7 @@ var kAudioUnitProperty_SupportedNumChannels: AudioUnitPropertyID { get }
 kAudioUnitProperty_SupportedNumChannels
 ```
 
-#### Discussion
+## Discussion
 
 The size of the array indicates the number of [`AUChannelInfo`](./auchannelinfo.md) structures for an audio unit. Each structure describes the channel configuration for an audio input/output bus. For example, the values (2, 2) indicates a channel configuration of two input channels paired to two output channels on a bus.
 

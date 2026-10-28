@@ -25,7 +25,7 @@ func CFDictionaryContainsKey(_ theDict: CFDictionary!, _ key: UnsafeRawPointer!)
 extern Boolean CFDictionaryContainsKey(CFDictionaryRef theDict, const void *key);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if `key` is in the dictionary, otherwise `false`.
 

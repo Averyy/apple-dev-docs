@@ -42,7 +42,7 @@ var backgroundColor: NSColor? { get set }
 @property (nonatomic, copy, nullable) NSColor * backgroundColor;
 ```
 
-#### Return Value
+## Return Value
 
 The color of the background in the thumbnail view.
 

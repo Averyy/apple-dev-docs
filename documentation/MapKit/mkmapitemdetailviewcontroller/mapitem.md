@@ -23,7 +23,7 @@ var mapItem: MKMapItem? { get set }
 @property (nonatomic, strong, nullable) MKMapItem * mapItem;
 ```
 
-#### Discussion
+## Discussion
 
 If this property is `nil`, a “loading” view appears.
 

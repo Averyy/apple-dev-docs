@@ -20,7 +20,7 @@ A distance from the origin where the falloff begins.
 var distanceOffset: Double
 ```
 
-#### Discussion
+## Discussion
 
 Use an offset value that is less than [`bounds`](./bounds.md).
 

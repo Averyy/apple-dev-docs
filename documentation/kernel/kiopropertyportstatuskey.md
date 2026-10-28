@@ -14,7 +14,7 @@
 #define kIOPropertyPortStatusKey
 ```
 
-#### Discussion
+## Discussion
 
 This key is associated with the current port status of the physical link. The port status is either "Link Established", "No Link Established", or "Link Failed".
 

@@ -5,7 +5,7 @@
 
 The version of Apple Pay available in macOS 10.15.1 and iOS 13.2.
 
-#### Overview
+## Overview
 
 This version contains no changes to the public API.
 

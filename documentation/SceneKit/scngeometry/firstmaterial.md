@@ -25,7 +25,7 @@ var firstMaterial: SCNMaterial? { get set }
 @property (nonatomic, retain, nullable) SCNMaterial * firstMaterial;
 ```
 
-#### Discussion
+## Discussion
 
 Calling this convenience method is equivalent to retrieving the first object from the geometry’s [`materials`](./materials.md) array. This property’s value is `nil` if the geometry has no attached materials.
 

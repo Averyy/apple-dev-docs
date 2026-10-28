@@ -24,7 +24,7 @@ var assetCollectionType: PHAssetCollectionType { get }
 @property (nonatomic, assign, readonly) PHAssetCollectionType assetCollectionType;
 ```
 
-#### Discussion
+## Discussion
 
 See [`PHAssetCollectionType`](../phassetcollectiontype.md) for possible values.
 

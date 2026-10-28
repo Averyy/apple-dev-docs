@@ -15,7 +15,7 @@ Queries whether the device can perform RCS operations at this time.
 final func isViable(for cellularServiceID: CellularServiceID) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if RCS is currently viable for the cellular service; `false`, otherwise.
 

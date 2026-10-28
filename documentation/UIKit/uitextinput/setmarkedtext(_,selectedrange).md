@@ -24,7 +24,7 @@ func setMarkedText(_ markedText: String?, selectedRange: NSRange)
 - (void) setMarkedText:(NSString *) markedText selectedRange:(NSRange) selectedRange;
 ```
 
-#### Discussion
+## Discussion
 
 Setting marked text either replaces the existing marked text or, if none is present, inserts it in place of the current selection.
 

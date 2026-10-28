@@ -20,7 +20,7 @@ An empty bounding box.
 static let empty: BoundingBox
 ```
 
-#### Discussion
+## Discussion
 
 An empty bounding box is defined with [`min`](./min.md) set to positive infinity and [`max`](./max.md) set to negative infinity.
 

@@ -27,7 +27,7 @@ class UIDocumentViewController
 
 - [Customizing a document-based app’s launch experience](./customizing-a-document-based-app-s-launch-experience.md)
 
-#### Overview
+## Overview
 
 `UIDocumentViewController` presents a view that displays a [`document`](./uidocumentviewcontroller/document.md). It manages opening, saving, and closing the document. You can use `UIDocumentViewController` to present documents from a [`UIDocumentBrowserViewController`](./uidocumentbrowserviewcontroller.md), for instance. When you aren’t presenting documents from a `UIDocumentBrowserViewController`,  `UIDocumentViewController` displays a button that, when tapped, presents a picker a person can use to choose the document to display.
 
@@ -39,14 +39,14 @@ The navigation item automatically assigns its title menu, its [`UIDocumentProper
 
 `UIDocumentViewController` also provides sharing and drag and drop support, and key-commands for common actions such as undo and redo.
 
-##### Subclassing notes
+### Subclassing notes
 
 `UIDocumentViewController` is an abstract base class that is meant to be subclassed. To create a subclass, you override two methods.
 
 1. The system calls [`documentDidOpen()`](./uidocumentviewcontroller/documentdidopen%28%29.md) when someone opens the document associated with the document view controller, or when an object assigns a previously opened document to the document view controller.
 2. The system calls [`navigationItemDidUpdate()`](./uidocumentviewcontroller/navigationitemdidupdate%28%29.md) every time `UIDocumentViewController` makes changes to its navigation item.
 
-###### Open and close documents
+#### Open and close documents
 
 When the document view controller opens the document associated with it, or when an object assigns an already opened document to the document view controller, the system calls [`documentDidOpen()`](./uidocumentviewcontroller/documentdidopen%28%29.md). You can populate the view controller’s views to display the content of the document in this method:
 
@@ -72,7 +72,7 @@ func configureViewForCurrentDocument() {
 }
 ```
 
-###### Customize navigation items
+#### Customize navigation items
 
 While `UIDocumentViewController` automatically sets the document title and other navigation items using information from the document, you can customize these items by overriding the [`navigationItemDidUpdate()`](./uidocumentviewcontroller/navigationitemdidupdate%28%29.md) method. The system calls `navigationItemDidUpdate()` every time `UIDocumentViewController` makes changes to the navigation item.
 
@@ -82,11 +82,11 @@ override func navigationItemDidUpdate() {
 }
 ```
 
-###### Add sharing, drag and drop, and undo and redo
+#### Add sharing, drag and drop, and undo and redo
 
 `UIDocumentViewController` automatically includes drag and drop, undo and redo, and sharing support. If you want undo and redo buttons to appear in your `UIDocumentViewController`, add a [`undoRedoItemGroup`](./uidocumentviewcontroller/undoredoitemgroup.md) to the navigation bar and ensure that your custom `UIDocument` implements an undo manager. `UIDocumentViewController` sets the `hidden` property of this group, depending on the availability of an undo manager. It automatically enables or disables the buttons inside the group, as necessary.
 
-###### Open a document from outside the class
+#### Open a document from outside the class
 
 `UIDocumentViewController` automatically opens and closes its document. However, if you need to access a document from outside the document view controller, you can create a new instance of `UIDocumentViewController` and call its [`openDocument(completionHandler:)`](./uidocumentviewcontroller/opendocument%28completionhandler%29.md) method.
 
@@ -111,7 +111,7 @@ class BrowserViewController: UIDocumentBrowserViewController {
 
 `UIDocumentViewController` makes all the necessary callbacks, such as calling [`documentDidOpen()`](./uidocumentviewcontroller/documentdidopen%28%29.md) and, when the document is open, it calls the completion handler you provided.
 
-###### Use the class as a root view controller
+#### Use the class as a root view controller
 
 `To use a UIDocumentViewController` as the root view controller in an app, you need to declare the key “UIDocumentClass” for the relevant file type in your app’s info.plist. Set the document class to the `UIDocument` subclass you are using in your app.
 

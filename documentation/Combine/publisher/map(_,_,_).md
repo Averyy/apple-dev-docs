@@ -21,11 +21,11 @@ Publishes the values of three key paths as a tuple.
 func map<T0, T1, T2>(_ keyPath0: KeyPath<Self.Output, T0>, _ keyPath1: KeyPath<Self.Output, T1>, _ keyPath2: KeyPath<Self.Output, T2>) -> Publishers.MapKeyPath3<Self, T0, T1, T2>
 ```
 
-#### Return Value
+## Return Value
 
 A publisher that publishes the values of three key paths as a tuple.
 
-#### Discussion
+## Discussion
 
 In the following example, the [`map(_:_:_:)`](./map%28_,_,_%29.md) operator uses the Swift key path syntax to access the `die1`, `die2`, and `die3` members of the `DiceRoll` structure published by the [`Just`](../just.md) publisher.
 

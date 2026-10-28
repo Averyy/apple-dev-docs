@@ -23,7 +23,7 @@ static var resolvesSymbolicLink: NSFileCoordinator.ReadingOptions { get }
 NSFileCoordinatorReadingResolvesSymbolicLink
 ```
 
-#### Discussion
+## Discussion
 
 Specify this constant if you want an item that might be a symbolic link to resolve to the file pointed to by that link (instead of to the link itself). When you use this option, the system provides the resolved URL to the accessor block in place of the original URL.
 

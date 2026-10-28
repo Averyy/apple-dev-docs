@@ -24,7 +24,7 @@ class UIProgressView
 @interface UIProgressView : UIView
 ```
 
-#### Overview
+## Overview
 
 The [`UIProgressView`](./uiprogressview.md) class provides properties for managing the style of the progress bar and for getting and setting values that are pinned to the progress of a task.
 

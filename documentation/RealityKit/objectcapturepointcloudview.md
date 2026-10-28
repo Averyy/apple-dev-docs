@@ -17,7 +17,7 @@ Renders the current state of the point cloud from an object capture session.
 struct ObjectCapturePointCloudView
 ```
 
-#### Overview
+## Overview
 
 This view renders a 3D visualization of the current session’s point cloud. It includes a turntable gesture controller. This view allows the user to review the captured 3D model before finishing the capture and beginning object reconstruction.
 

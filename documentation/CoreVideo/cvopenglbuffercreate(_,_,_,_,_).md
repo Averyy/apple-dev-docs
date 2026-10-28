@@ -21,11 +21,11 @@ func CVOpenGLBufferCreate(_ allocator: CFAllocator?, _ width: Int, _ height: Int
 extern CVReturn CVOpenGLBufferCreate(CFAllocatorRef allocator, size_t width, size_t height, CFDictionaryRef attributes, CVOpenGLBufferRef*bufferOut);
 ```
 
-#### Return Value
+## Return Value
 
 A Core Video result code. See [Core Video Constants](./core-video-constants.md) for possible values.
 
-#### Discussion
+## Discussion
 
 ## Parameters
 

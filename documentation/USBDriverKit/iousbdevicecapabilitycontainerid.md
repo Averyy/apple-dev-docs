@@ -15,7 +15,7 @@ The structure for the container ID device capability.
 struct IOUSBDeviceCapabilityContainerID;
 ```
 
-#### Overview
+## Overview
 
 See USB 3.0 9.6.2.3: Container ID.
 

@@ -26,7 +26,7 @@ var type: String { get }
 @property (nonatomic, readonly) NSString * type;
 ```
 
-#### Discussion
+## Discussion
 
 For example, the service type could be `"_music._tcp"`.
 

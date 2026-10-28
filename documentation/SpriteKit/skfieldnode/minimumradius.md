@@ -25,7 +25,7 @@ var minimumRadius: Float { get set }
 @property (nonatomic) float minimumRadius;
 ```
 
-#### Discussion
+## Discussion
 
 When the distance between the node and a physics body is calculated, any distance shorter than the value stored in the [`minimumRadius`](./minimumradius.md) property is treated as if it is equal to it. The default value is a very small (but nonzero) value.
 

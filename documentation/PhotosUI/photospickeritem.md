@@ -20,7 +20,7 @@ A type that represents an item you use with a Photos picker.
 struct PhotosPickerItem
 ```
 
-#### Overview
+## Overview
 
 The selection results you get from [`PhotosPicker`](./photospicker.md) are placeholder objects. A [`PhotosPickerItem`](./photospickeritem.md) conforms to [`Transferable`](../CoreTransferable/transferable.md), and allows you to load the representation you request. To load a SwiftUI [`Image`](../SwiftUI/image.md) and track progress, use [`loadTransferable(type:completionHandler:)`](./photospickeritem/loadtransferable%28type,completionhandler%29.md).
 

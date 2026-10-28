@@ -22,7 +22,7 @@ var textualRange: UITextRange { get }
 @property (nonatomic, readonly) UITextRange * textualRange;
 ```
 
-#### Discussion
+## Discussion
 
 Both tokens and text are included in the range from [`beginningOfDocument`](../uitextinput/beginningofdocument.md) to [`endOfDocument`](../uitextinput/endofdocument.md). This property provides convenient access to just the text.
 

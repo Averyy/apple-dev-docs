@@ -21,7 +21,7 @@ class UIInputSuggestion
 @interface UIInputSuggestion : NSObject
 ```
 
-#### Discussion
+## Discussion
 
 To handle photo search suggestions from Smart Actions, use [`UIPhotoSearchSuggestion`](./uiphotosearchsuggestion.md), which provides the filter metadata you need to present a pre-populated photo picker or build a custom photo search. To handle Smart Reply suggestions, use [`UISmartReplySuggestion`](./uismartreplysuggestion.md), which provides the reply text the person selected to guide a long-form response.
 

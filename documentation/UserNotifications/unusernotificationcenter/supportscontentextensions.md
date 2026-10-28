@@ -33,7 +33,7 @@ var supportsContentExtensions: Bool { get }
 @property (atomic, readonly) BOOL supportsContentExtensions;
 ```
 
-#### Discussion
+## Discussion
 
 Notification content extensions let you customize the appearance of the alerts displayed for your app’s notifications. The value of this property is [`true`](../../Swift/true.md) for devices that support notification content extensions and [`false`](../../Swift/false.md) for devices that do not support them. For information about how to implement a notification content extension, see [Customizing the Appearance of Notifications](../../UserNotificationsUI/customizing-the-appearance-of-notifications.md).
 

@@ -22,7 +22,7 @@ class var disappearingItem: NSCursor { get }
 @property (class, strong, readonly) NSCursor * disappearingItemCursor;
 ```
 
-#### Return Value
+## Return Value
 
 The system cursor that indicates that the current operation will result in a disappearing item (for example, when dragging an item from the dock or a toolbar).
 

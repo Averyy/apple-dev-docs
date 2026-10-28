@@ -19,7 +19,7 @@ func sendAction() -> Bool
 - (BOOL) sendAction;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if successful; [`false`](../../Swift/false.md) if no target for the message could be found.
 

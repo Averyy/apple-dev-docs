@@ -24,7 +24,7 @@ var currentState: GKState? { get }
 @property (nonatomic, readonly, nullable) GKState * currentState;
 ```
 
-#### Discussion
+## Discussion
 
 A state machine can be in only one of its states at a time. To transition to another state, call the [`enter(_:)`](./enter%28_%29.md) method.
 

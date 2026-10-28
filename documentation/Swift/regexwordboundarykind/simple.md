@@ -21,7 +21,7 @@ A word boundary algorithm that implements the “simple word boundary” Unicode
 static var simple: RegexWordBoundaryKind { get }
 ```
 
-#### Discussion
+## Discussion
 
 A simple word boundary is a position in the input between two characters that match `/\w\W/` or `/\W\w/`, or between the start or end of the input and a `\w` character. Word boundaries therefore depend on the option- defined behavior of `\w`.
 

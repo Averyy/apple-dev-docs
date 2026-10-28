@@ -21,7 +21,7 @@ A value that describes the contents of this path in a serializable format.
 var codable: NavigationPath.CodableRepresentation? { get }
 ```
 
-#### Discussion
+## Discussion
 
 This value is `nil` if any of the type-erased elements of the path don’t conform to the [`Codable`](../../Swift/codable.md) protocol.
 

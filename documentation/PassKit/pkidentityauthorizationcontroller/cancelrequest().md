@@ -22,7 +22,7 @@ func cancelRequest()
 - (void) cancelRequest;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to cancel an in progress request. Cancellation isn’t guarenteed when you call this method, the system might return a document response if it was already in flight.
 

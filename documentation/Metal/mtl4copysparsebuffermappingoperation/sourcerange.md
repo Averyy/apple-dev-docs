@@ -24,7 +24,7 @@ var sourceRange: NSRange
 NSRange sourceRange;
 ```
 
-#### Discussion
+## Discussion
 
 The tiles remain mapped in the source buffer.
 

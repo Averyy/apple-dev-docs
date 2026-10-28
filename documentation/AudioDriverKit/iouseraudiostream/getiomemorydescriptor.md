@@ -15,7 +15,7 @@ Gets the memory descriptor the stream uses for I/O.
 OSSharedPtr<IOMemoryDescriptor> GetIOMemoryDescriptor();
 ```
 
-#### Discussion
+## Discussion
 
 This is the value provided to the stream’s initializer, or updated later by a call to [`SetIOMemoryDescriptor`](./setiomemorydescriptor.md).
 

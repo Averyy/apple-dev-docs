@@ -25,7 +25,7 @@ func passing(rationale: String? = nil) -> Metric
 
 - [Evaluating language model responses](../evaluating-language-model-responses.md)
 
-#### Discussion
+## Discussion
 
 ```swift
 let passingResult = metric.passing(rationale: "Exact match")

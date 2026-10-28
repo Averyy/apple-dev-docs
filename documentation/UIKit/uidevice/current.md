@@ -23,11 +23,11 @@ class var current: UIDevice { get }
 @property (class, nonatomic, readonly) UIDevice * currentDevice;
 ```
 
-#### Return Value
+## Return Value
 
 A singleton object that represents the current device.
 
-#### Discussion
+## Discussion
 
 You access the properties of the returned [`UIDevice`](../uidevice.md) instance to obtain information about the device. You must instantiate the [`UIDevice`](../uidevice.md) instance before registering to receive device notifications.
 

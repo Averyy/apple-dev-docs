@@ -21,7 +21,7 @@ The closure to execute as the operation fetches individual subscriptions.
 @property (nonatomic, copy, nullable) void (^)(NSString *, CKSubscription *, NSError *) perSubscriptionCompletionBlock;
 ```
 
-#### Discussion
+## Discussion
 
 The closure returns no value and takes the following parameters:
 

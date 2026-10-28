@@ -6,7 +6,7 @@
 
 A 32-bit integer defining a naming scheme used for metadata keys.
 
-#### Overview
+## Overview
 
 Location metadata keys, for example, use the `‘mdta’` key namespace.
 

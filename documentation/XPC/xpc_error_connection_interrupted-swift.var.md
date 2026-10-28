@@ -21,7 +21,7 @@ An error that sends to the connection’s event handler when the remote service 
 var XPC_ERROR_CONNECTION_INTERRUPTED: xpc_object_t { get }
 ```
 
-#### Discussion
+## Discussion
 
 Will be delivered to the connection’s event handler if the remote service exited. The connection is still live even in this case, and resending a message will cause the service to be launched on-demand. This error serves as a client’s indication that it should resynchronize any state that it had given the service.
 

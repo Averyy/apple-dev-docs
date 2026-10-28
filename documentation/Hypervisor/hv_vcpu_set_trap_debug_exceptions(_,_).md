@@ -19,11 +19,11 @@ func hv_vcpu_set_trap_debug_exceptions(_ vcpu: hv_vcpu_t, _ value: Bool) -> hv_r
 extern hv_return_t hv_vcpu_set_trap_debug_exceptions(hv_vcpu_t vcpu, bool value);
 ```
 
-#### Return Value
+## Return Value
 
 [`HV_SUCCESS`](./hv_success.md) if the operation was successful, otherwise an error code specified in [`hv_return_t`](./hv_return_t.md).
 
-#### Discussion
+## Discussion
 
 The equivalent system register is `MDCR_EL2.TDE`.
 

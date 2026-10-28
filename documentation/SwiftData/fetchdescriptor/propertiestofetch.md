@@ -22,7 +22,7 @@ The specific subset of attributes to fetch if you don’t require them all.
 var propertiesToFetch: [PartialKeyPath<T>]
 ```
 
-#### Discussion
+## Discussion
 
 If you know ahead of time that you’re going to process (or display) a subset of a model’s attributes, use this property to provide the key paths of those attributes. When the fetch runs, it’ll return values for only the specified key paths, which may result in faster and more efficient fetches. However, if you subsequently access a nonfetched attribute, you’ll incur the additional overhead of fetching the corresponding value from the persistent storage.
 

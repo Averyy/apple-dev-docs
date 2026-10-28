@@ -24,7 +24,7 @@ case paymentsOrganizationName
 INVocabularyStringTypePaymentsOrganizationName
 ```
 
-#### Discussion
+## Discussion
 
 Siri puts the organization name in the `organizationName` property of the [`INPaymentAccount`](../inpaymentaccount.md) and [`INBillPayee`](../inbillpayee.md) objects.
 

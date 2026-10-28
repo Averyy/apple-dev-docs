@@ -5,7 +5,7 @@
 
 Display the system print panels and manage the printing process.
 
-#### Overview
+## Overview
 
 For design guidance, see [Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/macos/system-capabilities/printing/).
 

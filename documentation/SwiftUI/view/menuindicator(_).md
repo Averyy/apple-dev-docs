@@ -21,7 +21,7 @@ nonisolated
 func menuIndicator(_ visibility: Visibility) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 Use this modifier to override the default menu indicator visibility for controls in this view. For example, the code below creates a menu without an indicator:
 

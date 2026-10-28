@@ -25,7 +25,7 @@ func applyForce(_ force: CGVector, at point: CGPoint)
 - (void) applyForce:(CGVector) force atPoint:(CGPoint) point;
 ```
 
-#### Discussion
+## Discussion
 
 Because the force is applied to a specific point on the body, it may impart both linear acceleration and angular acceleration. The force is applied for a single simulation step (one frame).
 

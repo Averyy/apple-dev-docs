@@ -21,7 +21,7 @@ var title: String? { get set }
 @property (nonatomic, copy, nullable) NSString * title;
 ```
 
-#### Discussion
+## Discussion
 
 The title should be localized into the current user’s locale.
 

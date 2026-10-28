@@ -32,7 +32,7 @@ var value: String? { get }
 @property (atomic, copy, readonly, nullable) NSString * value;
 ```
 
-#### Discussion
+## Discussion
 
 The contents of this property are determined by the value of the [`type`](./type.md) property. For example, when the handle specifies an email address, this property should contain a string similar to “address@example.com” describing the user’s email address. This information may be displayed to the user to help resolve the identity of the intended person.
 

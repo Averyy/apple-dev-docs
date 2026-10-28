@@ -24,11 +24,11 @@ func model() -> Self
 - (instancetype) modelLayer;
 ```
 
-#### Return Value
+## Return Value
 
 A layer instance representing the underlying model layer.
 
-#### Discussion
+## Discussion
 
 Calling this method on a layer in the presentation tree returns the corresponding layer object in the model tree. This method returns a value only when a transaction involving changes to the presentation layer is in progress. If no transaction is in progress, the results of calling this method are undefined.
 

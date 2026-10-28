@@ -20,7 +20,7 @@ An object that configures framework-specific video options.
 var controller: VideoPlaybackController { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to configure AR-specific properties of the texture’s video, such as whether the material should use spatial audio.
 

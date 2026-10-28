@@ -25,7 +25,7 @@ var preferredLocalizations: [String] { get }
 @property (copy, readonly) NSArray<NSString *> * preferredLocalizations;
 ```
 
-#### Discussion
+## Discussion
 
 An array of [`NSString`](../nsstring.md) objects containing language IDs for localizations in the bundle. The strings are ordered according to the user’s language preferences and available localizations.
 

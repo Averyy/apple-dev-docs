@@ -23,7 +23,7 @@ var minimumDimension: CGFloat { get set }
 @property (nonatomic, assign) CGFloat minimumDimension;
 ```
 
-#### Discussion
+## Discussion
 
 This property defines a minimum dimension for a generated thumbnail, returning a thumbnail with a width or height greater or equal to the value of `minimumDimension` * [`scale`](./scale.md).
 

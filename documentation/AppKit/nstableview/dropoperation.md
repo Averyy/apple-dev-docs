@@ -19,7 +19,7 @@ enum DropOperation
 enum NSTableViewDropOperation : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 For example, given a table with `n` rows (numbered with row `0` at the top visually), a row of `n–1` and operation of `NSTableViewDropOn` would specify a drop on the last row. To specify a drop below the last row, you use a row of `n` and `NSTableViewDropAbove` for the operation.
 

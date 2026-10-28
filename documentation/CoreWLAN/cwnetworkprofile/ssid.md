@@ -19,7 +19,7 @@ var ssid: String? { get }
 @property (copy, readonly, nullable) NSString * ssid;
 ```
 
-#### Discussion
+## Discussion
 
 If the SSID can not be encoded as a valid UTF-8 or WinLatin1 string, this method returns *nil*.
 

@@ -19,7 +19,7 @@ protocol IKFilterCustomUIProvider
 @protocol IKFilterCustomUIProvider
 ```
 
-#### Overview
+## Overview
 
 The `IKFilterCustomUIProvider` protocol is an addition to the [`CIFilter`](../CoreImage/cifilter-swift.class.md) class that defines a method for providing a view for a filter. This protocol is implemented by any filter that provides its own user interface.
 

@@ -20,7 +20,7 @@ A notification posted when the page history changes.
 static let PDFViewChangedHistory: NSNotification.Name
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is the `PDFView` object itself.
 

@@ -21,7 +21,7 @@ The position of the first character in a nonempty string.
 var startIndex: String.Index { get }
 ```
 
-#### Discussion
+## Discussion
 
 In an empty string, `startIndex` is equal to `endIndex`.
 

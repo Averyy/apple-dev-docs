@@ -27,7 +27,7 @@ var seq_len: Int
 size_t seq_len;
 ```
 
-#### Discussion
+## Discussion
 
 If you set this value to a nonzero value that doesn’t match the corresponding array descriptor’s size, BNNS throws an error.
 

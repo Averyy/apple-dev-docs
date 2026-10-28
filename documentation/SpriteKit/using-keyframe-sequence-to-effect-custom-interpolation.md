@@ -5,7 +5,7 @@
 
 See a few examples of what keyframe sequence can do.
 
-#### Overview
+## Overview
 
 The primary use for an [`SKKeyframeSequence`](./skkeyframesequence.md) object is to animate properties on particles emitted by an [`SKEmitterNode`](./skemitternode.md) object. When a keyframe object is assigned to an appropriate property on the emitter node, particles determine their values by sampling the keyframe sequence. The sequence replaces the normal simulation performed by the emitter node. Only certain properties can be animated using a keyframe sequence. The following table lists the particle emitter properties and the corresponding class for the data that must be stored in the sequence. All value objects stored in a sequence must have the same class.
 

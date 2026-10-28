@@ -21,7 +21,7 @@ The padding or truncating behavior of the unit value.
 var valueLengthLimits: Range<Int>?
 ```
 
-#### Discussion
+## Discussion
 
 For example, set this to `2...` to force 2-digit padding on all units.
 

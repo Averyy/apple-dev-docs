@@ -25,7 +25,7 @@ typealias SCNFieldForceEvaluator = (SCNVector3, SCNVector3, Float, Float, TimeIn
 typedef struct SCNVector3 (^)(struct SCNVector3, struct SCNVector3, float, float, double) SCNFieldForceEvaluator;
 ```
 
-#### Discussion
+## Discussion
 
 You use this type of block to create a custom physics field with the [`customField(evaluationBlock:)`](./scnphysicsfield/customfield%28evaluationblock%29.md) method. SceneKit calls your block once for each object in the field’s area of effect, on each step of the physics simulation.
 

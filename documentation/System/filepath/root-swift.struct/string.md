@@ -21,7 +21,7 @@ On Unix, this returns `"/"`.
 var string: String { get }
 ```
 
-#### Discussion
+## Discussion
 
 On Windows, interprets the root’s content as UTF-16 on Windows.
 

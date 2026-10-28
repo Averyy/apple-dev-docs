@@ -25,7 +25,7 @@ func localizedStandardRange(of str: String) -> NSRange
 - (NSRange) localizedStandardRangeOfString:(NSString *) str;
 ```
 
-#### Return Value
+## Return Value
 
 The range of the first occurrence of `str` in the receiver. Returns `{``NSNotFound``, 0}` if `str` is not found.
 

@@ -24,11 +24,11 @@ init(callRecordResolutionResult: INCallRecordResolutionResult)
 - (instancetype) initWithCallRecordResolutionResult:(INCallRecordResolutionResult *) callRecordResolutionResult;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INStartCallCallRecordToCallBackResolutionResult`](../instartcallcallrecordtocallbackresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method to create a result object when you’re able to redial a call.
 

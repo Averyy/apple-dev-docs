@@ -25,7 +25,7 @@ func writeTimestamp(counterHeap: any MTL4CounterHeap, index: Int)
 - (void) writeTimestampIntoHeap:(id<MTL4CounterHeap>) counterHeap atIndex:(NSUInteger) index;
 ```
 
-#### Discussion
+## Discussion
 
 This method captures a timestamp after work prior to this command in the command buffer is complete. Work after this call may or may not have started.
 

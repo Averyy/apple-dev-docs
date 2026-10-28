@@ -19,11 +19,11 @@ var enabledRemoteNotificationTypes: NSApplication.RemoteNotificationType { get }
 @property (readonly) NSRemoteNotificationType enabledRemoteNotificationTypes;
 ```
 
-#### Return Value
+## Return Value
 
 A bit mask whose values indicate the types of notifications the user has requested for the app. See [`NSApplication.RemoteNotificationType`](./remotenotificationtype.md) for valid bit-mask values.
 
-#### Discussion
+## Discussion
 
 This property contains a bitmask whose values indicate the types of push notifications that the app requested. You don’t set this property directly. Call the [`registerForRemoteNotifications(matching:)`](./registerforremotenotifications%28matching%29.md) method to register your app with Apple Push Notification Service and request the notification types your app supports. macOS delivers only notifications of types that the app supports. For a list of possible values, see [`NSApplication.RemoteNotificationType`](./remotenotificationtype.md).
 

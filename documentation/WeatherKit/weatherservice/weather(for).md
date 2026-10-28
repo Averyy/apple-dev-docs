@@ -21,11 +21,11 @@ Returns the weather forecast for the requested location.
 final func weather(for location: CLLocation) async throws -> Weather
 ```
 
-#### Return Value
+## Return Value
 
 The aggregate weather.
 
-#### Discussion
+## Discussion
 
 > **Throws**: Weather data error `WeatherError`
 

@@ -23,7 +23,7 @@ var isReachable: Bool { get }
 @property (nonatomic, readonly, getter=isReachable) BOOL reachable;
 ```
 
-#### Discussion
+## Discussion
 
 This property is [`true`](../../Swift/true.md) when the WatchKit extension and the iOS app can communicate with each other.
 

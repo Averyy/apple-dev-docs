@@ -25,7 +25,7 @@ var localizedNameOfSavingComputer: String? { get }
 @property (copy, readonly, nullable) NSString * localizedNameOfSavingComputer;
 ```
 
-#### Discussion
+## Discussion
 
 If the current revision has been deleted from disk, or if no computer name was recorded, the value in this property is `nil`. The computer name is guaranteed to be recorded only when the current version is in conflict with another version. The version object does not track changes to the computer name itself. Thus, if the computer name changed, the value in this string might be an old value.
 

@@ -21,7 +21,7 @@ final class Stream
 
 - [Using Streams](./using-streams.md)
 
-#### Overview
+## Overview
 
 Typically this is used via the `stream:` parameter on a method with a [`StreamOrDevice`](./streamordevice.md):
 
@@ -32,7 +32,7 @@ let result = sqrt(a, stream: .gpu)
 
 Read more at [Using Streams](./using-streams.md).
 
-#### Implementation Notes
+## Implementation Notes
 
 There is a global pair of CPU/GPU streams.  On devices with a GPU (and associated GPU software) the default stream will be a GPU stream.
 
@@ -48,7 +48,7 @@ Callers can override the default device by passing a device to that method or us
 
 Also note that the current [`defaultDevice()`](./device/defaultdevice%28%29.md) is owned by [`defaultStream`](./stream/defaultstream.md).
 
-##### See Also
+### See Also
 
 - [Using Streams](./using-streams.md)
 - [`StreamOrDevice`](./streamordevice.md)

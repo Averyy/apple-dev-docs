@@ -20,11 +20,11 @@ Returns segment boundary guidelines that help clients determine how to segment c
 + (AVPlannedVideoSegmentBoundaryGuidelines) segmentBoundaryGuidelinesForVideoCodecType:(AVVideoCodecType) videoCodecType videoEncoderSpecification:(NSDictionary *) videoEncoderSpecification;
 ```
 
-#### Return Value
+## Return Value
 
 An AVPlannedVideoSegmentBoundaryGuidelines.
 
-#### Discussion
+## Discussion
 
 The videoEncoderSpecification parameter here is the same encoder specification the client uses to compress the video track.
 

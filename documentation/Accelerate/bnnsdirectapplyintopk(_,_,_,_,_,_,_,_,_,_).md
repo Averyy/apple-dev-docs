@@ -25,7 +25,7 @@ func BNNSDirectApplyInTopK(_ K: Int, _ axis: Int, _ batch_size: Int, _ input: Un
 int BNNSDirectApplyInTopK(size_t K, size_t axis, size_t batch_size, const BNNSNDArrayDescriptor *input, size_t input_batch_stride, const BNNSNDArrayDescriptor *test_indices, size_t test_indices_batch_stride, BNNSNDArrayDescriptor *output, size_t output_batch_stride, const BNNSFilterParameters *filter_params);
 ```
 
-#### Discussion
+## Discussion
 
 Use [`BNNSDirectApplyInTopK(_:_:_:_:_:_:_:_:_:_:)`](./bnnsdirectapplyintopk%28_,_,_,_,_,_,_,_,_,_%29.md) to test whether elements in a tensor are in the top k entries. Note the the number of dimensions for the test indices and output tensors are one less than the input tensor.
 

@@ -17,7 +17,7 @@ A counter that increments whenever the access point data changes.
 let accessPointConnectionsUpdateCounter: UInt64
 ```
 
-#### Discussion
+## Discussion
 
 The counter increments by `1`.
 

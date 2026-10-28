@@ -26,7 +26,7 @@ var previewPhotoFormat: [String : Any]? { get set }
 
 - [Capturing thumbnail and preview images](../capturing-thumbnail-and-preview-images.md)
 
-#### Discussion
+## Discussion
 
 By default, this property is `nil`, specifying that the photo output should return only the main image requested. To also receive a preview-sized image, set this property to a dictionary describing the format for that image, containing the following keys and values:
 

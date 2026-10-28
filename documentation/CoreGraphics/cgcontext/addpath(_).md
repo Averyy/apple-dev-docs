@@ -25,7 +25,7 @@ func addPath(_ path: CGPath)
 extern void CGContextAddPath(CGContextRef c, CGPathRef path);
 ```
 
-#### Discussion
+## Discussion
 
 If the source path is non-empty, then its path elements are appended in order onto the current path. The current transformation matrix (CTM) is applied to the points before adding them to the path.
 

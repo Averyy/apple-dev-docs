@@ -25,7 +25,7 @@ static var eventOnly: FileDescriptor.OpenOptions { get }
 
 - [Adopting Swift File Options](../../adopting-file-options.md)
 
-#### Discussion
+## Discussion
 
 Specify this option when opening a file for event notifications, such as a file handle returned by the `kqueue(2)` function, rather than for reading or writing. Files opened with this option don’t prevent their containing volume from being unmounted.
 

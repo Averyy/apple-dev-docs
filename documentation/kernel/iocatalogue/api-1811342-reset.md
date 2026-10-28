@@ -12,7 +12,7 @@ void reset(
  void);
 ```
 
-#### Overview
+## Overview
 
 Should only be used by kextd just before it sends all kext personalities down during a rescan.
 

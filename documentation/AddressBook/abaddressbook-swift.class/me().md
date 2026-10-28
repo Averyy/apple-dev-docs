@@ -19,11 +19,11 @@ func me() -> ABPerson!
 - (ABPerson *) me;
 ```
 
-#### Return Value
+## Return Value
 
 The `ABPerson` record that represents the logged-in user.
 
-#### Discussion
+## Discussion
 
 If the user never specified such a record, this method returns `nil`.
 

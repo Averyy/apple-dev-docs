@@ -15,7 +15,7 @@ Adds a single-precision scalar value to a single-precision vector.
 void vDSP_vsadd(const float *__A, vDSP_Stride __IA, const float *__B, float *__C, vDSP_Stride __IC, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 This function calculates the sums of the first `N` elements of `A` and the scalar value `B`, writing the result to `C`:
 

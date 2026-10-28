@@ -19,7 +19,7 @@ A type that specifies the behaviors to use when loading and rendering page conte
 struct NavigationPreferences
 ```
 
-#### Overview
+## Overview
 
 Create a `NavigationPreferences` value when you want to change the default rendering behavior of your web page. Typically, iOS devices render web content for a mobile experience, and Mac devices render content for a desktop experience.
 

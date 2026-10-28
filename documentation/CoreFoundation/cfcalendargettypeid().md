@@ -25,7 +25,7 @@ func CFCalendarGetTypeID() -> CFTypeID
 extern CFTypeID CFCalendarGetTypeID();
 ```
 
-#### Return Value
+## Return Value
 
 The type identifier for the CFCalendar opaque type.
 

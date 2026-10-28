@@ -19,7 +19,7 @@ var view: NSView? { get }
 @property (strong, readonly, nullable) NSView * view;
 ```
 
-#### Return Value
+## Return Value
 
 The view object that generates the data.
 

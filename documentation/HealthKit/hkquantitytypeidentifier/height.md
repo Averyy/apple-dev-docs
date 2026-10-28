@@ -28,7 +28,7 @@ extern HKQuantityTypeIdentifier const HKQuantityTypeIdentifierHeight;
 
 - [Saving data to HealthKit](../saving-data-to-healthkit.md)
 
-#### Discussion
+## Discussion
 
 These samples use length units (described in [`HKUnit`](../hkunit.md)) and measure discrete values (described in [`HKQuantityAggregationStyle`](../hkquantityaggregationstyle.md)).
 

@@ -21,7 +21,7 @@ Reads training examples from a directory containing files in labeled sub-directo
 init(labeledBySubdirectoryNamesAt url: URL, type: UTType, continueOnFailure: Bool = false) throws
 ```
 
-#### Discussion
+## Discussion
 
 Take for example this directory structure:
 

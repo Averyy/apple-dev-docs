@@ -20,7 +20,7 @@ The app’s primary language as configured in App Store Connect.
 var primaryLanguage: Locale.Language? { get }
 ```
 
-#### Discussion
+## Discussion
 
 If no available localized asset packs match the current preferred languages, then the system falls back on the app’s primary language.
 

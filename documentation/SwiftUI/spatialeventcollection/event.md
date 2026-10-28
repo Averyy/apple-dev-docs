@@ -20,7 +20,7 @@ A spatial event generated from an input like a touch or click that can drive ges
 struct Event
 ```
 
-#### Overview
+## Overview
 
 You receive a collection of these events in the form of a [`SpatialEventCollection`](../spatialeventcollection.md) that’s the input to the [`onChanged(_:)`](../gesture/onchanged%28_%29.md) or [`onEnded(_:)`](../gesture/onended%28_%29.md) method of a [`SpatialEventGesture`](../spatialeventgesture.md). Inspect individual events to track interactions that enable you to create complex, multi-touch experiences in your app.
 

@@ -20,11 +20,11 @@ func modes(_ sender: Any!) -> [AnyHashable : Any]!
 - (NSDictionary *) modes:(id) sender;
 ```
 
-#### Return Value
+## Return Value
 
 The modes dictionary associated with the input method.
 
-#### Discussion
+## Discussion
 
 Typically a client object calls this method to to build the text input menu. By calling the input method rather than reading the modes from the `Info.plist` file, the input method can dynamically modify the modes supported.
 

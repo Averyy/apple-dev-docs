@@ -19,11 +19,11 @@ func vA64Shift2(_ vA: vUInt32, _ vShiftFactor: vUInt8) -> vUInt32
 extern vUInt32 vA64Shift2(vUInt32 vA, vUInt8 vShiftFactor);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the shifted vector.
 
-#### Discussion
+## Discussion
 
 This function treats the vector as a pair of 64-bit values to shift.
 

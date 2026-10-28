@@ -24,11 +24,11 @@ func bitwisePopulationCount(_ tensor: MPSGraphTensor, name: String?) -> MPSGraph
 - (MPSGraphTensor *) bitwisePopulationCountWithTensor:(MPSGraphTensor *) tensor name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid `MPSGraphTensor` object containing the elementwise result of the applied operation.
 
-#### Discussion
+## Discussion
 
 This operation only accepts integer tensors, and returns the number of bits set in the input element.
 

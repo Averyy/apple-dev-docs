@@ -18,7 +18,7 @@ A container for texture data in a custom format.
 final class LowLevelTextureResource
 ```
 
-#### Overview
+## Overview
 
 Use `LowLevelTextureResource` when you want to bring your own texture data to the renderer or update your data frequently. Textures are updated on the GPU by writing to a `MTLTexture` returned by `replace(commandBuffer:)`. The descriptor is analogous to `MTLTextureDescriptor`.
 

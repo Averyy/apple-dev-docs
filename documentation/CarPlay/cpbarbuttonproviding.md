@@ -21,7 +21,7 @@ protocol CPBarButtonProviding : NSObjectProtocol
 @protocol CPBarButtonProviding <NSObject>
 ```
 
-#### Overview
+## Overview
 
 `CPBarButtonProviding` is a protocol that templates use to provide a Back button and leading and trailing buttons for the navigation bar.
 

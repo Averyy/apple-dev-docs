@@ -19,7 +19,7 @@ Sets the enable state of an output identified by ID
 mutating func setOutputEnabled(_ outputID: ComputeNodeGraph.NodeID, enabled: Bool)
 ```
 
-#### Discussion
+## Discussion
 
 This will cause the output mesh to disappear, and output stages to stop executing. The simulation, however, will continue to execute. See [`pause()`](./pause%28%29.md), [`play()`](./play%28%29.md), and `RealityKit.Entity.isEnabled` to control the simulation as a whole
 

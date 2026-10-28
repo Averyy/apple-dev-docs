@@ -19,7 +19,7 @@ var objectValue: Any? { get set }
 @property (copy, nullable) id objectValue;
 ```
 
-#### Discussion
+## Discussion
 
 To be valid object value, the cell must have a formatter capable of converting the object to and from its textual representation. The value of this property is `nil` if an object has not been assigned to the cell.
 

@@ -22,7 +22,7 @@ case clear
 UISearchBarIconClear
 ```
 
-#### Discussion
+## Discussion
 
 By default, the corresponding icon is a circle containing an X.
 

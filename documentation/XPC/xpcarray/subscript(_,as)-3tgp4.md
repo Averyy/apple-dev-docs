@@ -21,7 +21,7 @@ Reads and writes the value at the given index as an XPC object.
 subscript(index: Int, as type: xpc_type_t) -> xpc_object_t? { get }
 ```
 
-#### Return Value
+## Return Value
 
 The value at the specified index in the array, otherwise [`nil`](../../ObjectiveC/nil-227m0.md).
 

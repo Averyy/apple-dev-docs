@@ -24,7 +24,7 @@ bool IOLockTryLock(struct IOLock *lock);
 boolean_t IOLockTryLock(IOLock *lock);
 ```
 
-#### Discussion
+## Discussion
 
 Lock the mutex if it is currently unlocked, and return true. If the lock is held by any thread, return false.
 

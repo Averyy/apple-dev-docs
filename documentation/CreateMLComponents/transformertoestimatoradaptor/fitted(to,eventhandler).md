@@ -21,7 +21,7 @@ Returns the pre-defined transformer.
 func fitted<S>(to input: S, eventHandler: EventHandler? = nil) async throws -> Transformer where S : Sequence, Transformer.Input == S.Element
 ```
 
-#### Return Value
+## Return Value
 
 The pre-defined transformer.
 

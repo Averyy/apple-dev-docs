@@ -20,7 +20,7 @@ The localized string that provides additional information about the activity.
 var subtitle: String?
 ```
 
-#### Discussion
+## Discussion
 
 Use this string to provide additional descriptive information about the activity. For example, specify the season and episode information for a television-watching activity. Localize the string for the current device. The system displays this string along with the title in the system UI.
 

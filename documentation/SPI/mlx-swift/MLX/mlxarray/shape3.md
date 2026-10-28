@@ -17,7 +17,7 @@ Dimensions of the 3d array as a tuple.
 var shape3: (Int, Int, Int) { get }
 ```
 
-#### Discussion
+## Discussion
 
 ```swift
 let (w, h, c) = array.shape3

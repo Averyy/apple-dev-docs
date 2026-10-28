@@ -23,7 +23,7 @@ protocol INResumeWorkoutIntentHandling : NSObjectProtocol
 @protocol INResumeWorkoutIntentHandling <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Use the methods of the [`INResumeWorkoutIntentHandling`](./inresumeworkoutintenthandling.md) protocol to resolve, confirm, and handle requests to resume a paused workout that’s using your app. Adopt this protocol in an object of your Intents extension that’s capable of validating the workout name.
 

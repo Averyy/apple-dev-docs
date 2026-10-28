@@ -25,7 +25,7 @@ case screen
 SCNBlendModeScreen
 ```
 
-#### Discussion
+## Discussion
 
 This mode results in colors that are at least as light as either of the two contributing colors.
 

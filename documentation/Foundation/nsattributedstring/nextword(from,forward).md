@@ -19,11 +19,11 @@ func nextWord(from location: Int, forward isForward: Bool) -> Int
 - (NSUInteger) nextWordFromIndex:(NSUInteger) location forward:(BOOL) isForward;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if this is the first character after `index` that begins a word; if `flag` is [`false`](../../Swift/false.md), it’s the first character before `index` that begins a word, whether `index` is located within a word or not.
 
-#### Discussion
+## Discussion
 
 If `index` lies at either end of the string and the search direction would progress past that end, it’s returned unchanged.
 

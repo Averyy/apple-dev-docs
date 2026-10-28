@@ -21,7 +21,7 @@ The alignment the navigation bar resolved for its title.
 var toolbarTitleAlignment: ToolbarTitleAlignment { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Read this from a custom title view (like a `ToolbarItem` using the [`title`](../toolbaritemplacement/title.md) placement) to lay out its content to match the alignment the system chose.
 

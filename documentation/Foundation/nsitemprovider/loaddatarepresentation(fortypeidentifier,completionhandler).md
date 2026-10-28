@@ -25,7 +25,7 @@ func loadDataRepresentation(forTypeIdentifier typeIdentifier: String, completion
 - (NSProgress *) loadDataRepresentationForTypeIdentifier:(NSString *) typeIdentifier completionHandler:(void (^)(NSData *data, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 If the source app provides a folder URL, the [`Data`](../data.md) object contains a zip archive with the folder as its top-level entry.
 

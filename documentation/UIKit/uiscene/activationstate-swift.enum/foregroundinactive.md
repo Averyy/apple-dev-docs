@@ -23,7 +23,7 @@ case foregroundInactive
 UISceneActivationStateForegroundInactive
 ```
 
-#### Discussion
+## Discussion
 
 A scene transits through the foreground-inactive state on its way to or from another state.
 

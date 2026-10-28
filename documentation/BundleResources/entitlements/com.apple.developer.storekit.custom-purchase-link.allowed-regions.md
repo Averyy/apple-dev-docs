@@ -19,7 +19,7 @@ An entitlement that enables a qualifying app to offer external purchases within 
 - **Name**: `com.apple.developer.storekit.custom-purchase-link.allowed-regions` (StoreKit External Custom Purchase Link Regions)
 - **Type**: array of string 
 
-#### Discussion
+## Discussion
 
 This entitlement enables a qualifying app to offer external purchases within the app or at a website of its choice, in specific regions.
 

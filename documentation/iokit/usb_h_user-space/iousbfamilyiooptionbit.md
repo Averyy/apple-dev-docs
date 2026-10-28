@@ -17,7 +17,7 @@ enum {
 };
 ```
 
-#### Overview
+## Overview
 
 Options used exclusively by the USB Family when calling calling IOService APIs, such as open() and close().
 

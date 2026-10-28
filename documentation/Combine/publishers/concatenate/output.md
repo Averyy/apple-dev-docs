@@ -21,7 +21,7 @@ The kind of values published by this publisher.
 typealias Output = Suffix.Output
 ```
 
-#### Discussion
+## Discussion
 
 This publisher uses its source publishers’ output type.
 

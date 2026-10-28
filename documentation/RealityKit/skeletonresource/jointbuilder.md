@@ -21,7 +21,7 @@ A result builder for declaratively constructing the children of a joint.
 struct JointBuilder
 ```
 
-#### Overview
+## Overview
 
 Inside the `Joint(_:restPoseTransform:children:)` closure, you can write any mix of:
 

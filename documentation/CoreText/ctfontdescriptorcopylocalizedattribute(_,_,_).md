@@ -25,11 +25,11 @@ func CTFontDescriptorCopyLocalizedAttribute(_ descriptor: CTFontDescriptor, _ at
 extern CFTypeRefCTFontDescriptorCopyLocalizedAttribute(CTFontDescriptorRef descriptor, CFStringRef attribute, CFStringRef*language);
 ```
 
-#### Return Value
+## Return Value
 
 A retained reference to a localized attribute based on the global language list.
 
-#### Discussion
+## Discussion
 
 This function passes back the matched language in `language`. If localization is not possible for the attribute, the behavior matches the value returned from [`CTFontDescriptorCopyAttribute(_:_:)`](./ctfontdescriptorcopyattribute%28_,_%29.md). Generally, localization of attributes is applicable to name attributes of only a normalized font descriptor.
 

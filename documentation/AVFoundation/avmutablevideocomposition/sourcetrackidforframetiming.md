@@ -24,7 +24,7 @@ var sourceTrackIDForFrameTiming: CMPersistentTrackID { get set }
 @property (nonatomic) CMPersistentTrackID sourceTrackIDForFrameTiming;
 ```
 
-#### Discussion
+## Discussion
 
 If an empty edit is encountered in the source asset’s track, the compositor composes frames as needed up to the frequency specified in [`frameDuration`](../avvideocomposition/frameduration.md) property. Otherwise the frame timing for the video composition is derived from the source asset’s track with the corresponding ID.
 

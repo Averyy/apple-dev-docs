@@ -24,7 +24,7 @@ let HMCharacteristicTypeTargetLockMechanismState: String
 extern NSString * const HMCharacteristicTypeTargetLockMechanismState;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is one of the constants in the [`HMCharacteristicValueLockMechanismState`](./hmcharacteristicvaluelockmechanismstate.md) enumeration.
 

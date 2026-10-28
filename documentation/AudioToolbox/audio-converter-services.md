@@ -5,7 +5,7 @@
 
 Convert between linear PCM audio formats, and between linear PCM and compressed formats.
 
-#### Overview
+## Overview
 
 Audio converter objects convert between various linear PCM audio formats. They can also convert between linear PCM and compressed formats. Supported transformations include the following:
 

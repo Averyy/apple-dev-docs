@@ -20,7 +20,7 @@ The default collision group for objects.
 static let `default`: CollisionGroup
 ```
 
-#### Discussion
+## Discussion
 
 If no [`CollisionFilter`](../collisionfilter.md) is assigned to an entity, that entity will be part of this default collision group.
 

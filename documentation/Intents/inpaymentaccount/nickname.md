@@ -32,7 +32,7 @@ var nickname: INSpeakableString? { get }
 @property (atomic, copy, readonly, nullable) INSpeakableString * nickname;
 ```
 
-#### Discussion
+## Discussion
 
 A nickname is any string used to identify the account uniquely in your app. Ideally, your app should let users specify custom nicknames for their accounts. For example, the user might assign the nickname “business credit card” to the card they use to pay business-related expenses. When a nickname is present, use it to look up the account in your app.
 

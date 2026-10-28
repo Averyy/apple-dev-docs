@@ -19,7 +19,7 @@ init?(bytesRead actuallyRead: Int, itemAttributes attributes: FSItem.Attributes)
 - (instancetype) initWithBytesRead:(size_t) actuallyRead itemAttributes:(FSItemAttributes *) attributes;
 ```
 
-#### Return Value
+## Return Value
 
 A populated result instance, or `nil` if validation fails.
 

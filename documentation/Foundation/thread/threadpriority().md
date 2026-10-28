@@ -25,11 +25,11 @@ class func threadPriority() -> Double
 + (double) threadPriority;
 ```
 
-#### Return Value
+## Return Value
 
 The current thread’s priority, which is specified by a floating point number from 0.0 to 1.0, where 1.0 is highest priority.
 
-#### Discussion
+## Discussion
 
 The priorities in this range are mapped to the operating system’s priority values. A “typical” thread priority might be 0.5, but because the priority is determined by the kernel, there is no guarantee what this value actually will be.
 

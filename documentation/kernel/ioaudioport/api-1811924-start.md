@@ -12,11 +12,11 @@ virtual bool start(
  IOService *provider);
 ```
 
-#### Return Value
+## Return Value
 
 Returns true on success
 
-#### Overview
+## Overview
 
 This is called automatically by IOAudioDevice when attachAudioPort() is called.
 

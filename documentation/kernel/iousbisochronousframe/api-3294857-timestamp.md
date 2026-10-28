@@ -15,7 +15,7 @@ The frame’s observed completion time.
 uint64_t timeStamp;
 ```
 
-#### Discussion
+## Discussion
 
 Interrupt latency and system load may result in more than one frame completing with the same timestamp.
 

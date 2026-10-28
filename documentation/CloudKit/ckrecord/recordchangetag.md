@@ -25,7 +25,7 @@ var recordChangeTag: String? { get }
 @property (copy, readonly, nullable) NSString * recordChangeTag;
 ```
 
-#### Discussion
+## Discussion
 
 When you fetch a record from the server, you get the current version of that record as it exists on the server. However, at any time after you fetch a record, other users might save a newer version of it to the server. Every time CloudKit saves a record, the server updates the record’s change token to a new value. When you save your copy of the record, the server compares your record’s token with the token on the server. If the two tokens match, the server interprets that you modified the latest version of the record and that it can apply your changes immediately. If the two tokens don’t match, the server checks your app’s save policy to determine how to proceed.
 

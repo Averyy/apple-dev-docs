@@ -19,11 +19,11 @@ var isTornOff: Bool { get }
 @property (readonly, getter=isTornOff) BOOL tornOff;
 ```
 
-#### Discussion
+## Discussion
 
 This property has a value of [`false`](../../Swift/false.md) if the menu is offscreen, is attached to another menu, or is the main menu. Otherwise, this property has a value of [`true`](../../Swift/true.md).
 
-##### Special Considerations
+### Special Considerations
 
 This property has no effect in macOS 10.6 and later.
 

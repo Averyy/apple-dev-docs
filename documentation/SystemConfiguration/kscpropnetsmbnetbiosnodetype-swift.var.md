@@ -19,7 +19,7 @@ let kSCPropNetSMBNetBIOSNodeType: CFString
 extern CFStringRef const kSCPropNetSMBNetBIOSNodeType;
 ```
 
-#### Discussion
+## Discussion
 
 This key can be passed the following constants:
 

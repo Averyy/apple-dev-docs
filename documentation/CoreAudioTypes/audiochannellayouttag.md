@@ -25,7 +25,7 @@ typealias AudioChannelLayoutTag = UInt32
 typedef UInt32 AudioChannelLayoutTag;
 ```
 
-#### Discussion
+## Discussion
 
 This data type is used for the `mChannelLayoutTag` field of the [`AudioChannelLayout`](./audiochannellayout.md) structure. See [Audio Channel Layout Tags](./audio-channel-layout-tags.md) for possible values.
 

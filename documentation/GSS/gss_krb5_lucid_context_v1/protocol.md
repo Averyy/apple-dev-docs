@@ -23,7 +23,7 @@ var `protocol`: OM_uint32
 OM_uint32 protocol;
 ```
 
-#### Discussion
+## Discussion
 
 If this value is 0, then the protocol under RFC-1964 is used. If the value is 1, then the protocol under draft-ietf-krb-wg-gssapi-cfx-07 is used.
 

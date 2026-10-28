@@ -15,7 +15,7 @@ A class defining common methods for describing a memory mapping.
 class IOMemoryMap : OSObject
 ```
 
-#### Overview
+## Overview
 
 The IOMemoryMap object represents a mapped range of memory, described by a IOMemoryDescriptor. The mapping may be in the kernel or a non-kernel task and has processor cache mode attributes. IOMemoryMap instances are created by IOMemoryDescriptor when it creates mappings in its map method, and returned to the caller.
 

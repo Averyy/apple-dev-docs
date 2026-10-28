@@ -19,7 +19,7 @@ The user can edit the view content.
 case active
 ```
 
-#### Discussion
+## Discussion
 
 The [`isEditing`](./isediting.md) property is `true` in this state.
 

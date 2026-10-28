@@ -25,7 +25,7 @@ var hasDirectoryPath: Bool { get }
 @property (readonly) BOOL hasDirectoryPath;
 ```
 
-#### Discussion
+## Discussion
 
 This property doesn’t check the resource the URL refers to.
 

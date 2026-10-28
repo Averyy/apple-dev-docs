@@ -25,7 +25,7 @@ func CTFontDrawGlyphs(_ font: CTFont, _ glyphs: UnsafePointer<CGGlyph>, _ positi
 extern void CTFontDrawGlyphs(CTFontRef font, const CGGlyph glyphs[], const CGPoint positions[], size_t count, CGContextRef context);
 ```
 
-#### Discussion
+## Discussion
 
 This function modifies graphics state including font, text size, and text matrix if these attributes are specified in `font`. These attributes are not restored.
 

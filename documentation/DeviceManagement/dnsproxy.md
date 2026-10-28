@@ -21,13 +21,13 @@ The payload that configures DNS proxies.
 object DNSProxy
 ```
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.dnsProxy.managed` as the payload type.
 
 Beginning with iOS 15, this profile is unsupervised and needs to be installed through MDM.
 
-##### Profile availability
+### Profile availability
 
 |  |  |
 | --- | --- |
@@ -39,7 +39,7 @@ Beginning with iOS 15, this profile is unsupervised and needs to be installed th
 | Allowed in user enrollment | iOS, visionOS |
 | Allow multiple payloads | N/A |
 
-##### Profile example
+### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>

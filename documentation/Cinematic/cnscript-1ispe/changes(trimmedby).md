@@ -19,7 +19,7 @@ Changes trimmed and time range shifted to start at zero.
 final func changes(trimmedBy timeRange: CMTimeRange) -> CNScript.Changes
 ```
 
-#### Return Value
+## Return Value
 
 Script changes trimmed and time range shifted to start at zero.
 

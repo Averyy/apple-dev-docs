@@ -24,7 +24,7 @@ class UIUpdateInfo
 @interface UIUpdateInfo : NSObject
 ```
 
-#### Overview
+## Overview
 
 During a UI update, this object provides details about the state of the update. When using a [`UIUpdateLink`](./uiupdatelink.md), you can query this UI update information object to learn about the current UI update.
 

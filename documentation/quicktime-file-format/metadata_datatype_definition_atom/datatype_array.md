@@ -6,7 +6,7 @@
 
 An array of unsigned 8-bit bytes holding the data type designation for values in timed metadata media samples having this key.
 
-#### Overview
+## Overview
 
 The interpretation of this array is defined by the associated datatype namespace.
 

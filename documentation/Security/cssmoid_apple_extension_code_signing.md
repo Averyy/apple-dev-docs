@@ -13,7 +13,7 @@
 extern const SecAsn1Oid CSSMOID_APPLE_EXTENSION_CODE_SIGNING;
 ```
 
-#### Discussion
+## Discussion
 
 ** Apple addenda *
 

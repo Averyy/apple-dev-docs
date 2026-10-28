@@ -25,7 +25,7 @@ func CFBundleGetTypeID() -> CFTypeID
 extern CFTypeID CFBundleGetTypeID();
 ```
 
-#### Return Value
+## Return Value
 
 The type identifier for the CFBundle opaque type.
 

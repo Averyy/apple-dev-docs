@@ -22,7 +22,7 @@ enum PKToolPickerVisibility
 enum PKToolPickerVisibility : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 Set the `toolPickerVisibility` property on a `PKResponderState` to control whether a tool picker is visible, offscreen but responsive, or inactive for a given responder. When set to [`PKToolPickerVisibilityInherited`](./pktoolpickervisibility/pktoolpickervisibilityinherited.md), the visibility is determined by the next responder in the chain. If no responder in the chain provides a visibility, the tool picker defaults to [`PKToolPickerVisibility.visible`](./pktoolpickervisibility/visible.md).
 

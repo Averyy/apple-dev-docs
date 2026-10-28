@@ -25,7 +25,7 @@ func AudioChannelLayoutTag_GetNumberOfChannels(_ inLayoutTag: AudioChannelLayout
 static UInt32 AudioChannelLayoutTag_GetNumberOfChannels(AudioChannelLayoutTag inLayoutTag);
 ```
 
-#### Return Value
+## Return Value
 
 A count of audio channels.
 

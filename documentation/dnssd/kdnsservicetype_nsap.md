@@ -23,7 +23,7 @@ var kDNSServiceType_NSAP: Int { get }
 kDNSServiceType_NSAP
 ```
 
-#### Discussion
+## Discussion
 
 NSAP address.
 

@@ -21,7 +21,7 @@ A type that provides a sequence of dates for use as a schedule.
 protocol TimelineSchedule
 ```
 
-#### Overview
+## Overview
 
 Types that conform to this protocol implement a particular kind of schedule by defining an [`entries(from:mode:)`](./timelineschedule/entries%28from,mode%29.md) method that returns a sequence of dates. Use a timeline schedule type when you initialize a [`TimelineView`](./timelineview.md). For example, you can create a timeline view that updates every second, starting from some `startDate`, using a periodic schedule returned by [`periodic(from:by:)`](./timelineschedule/periodic%28from,by%29.md):
 

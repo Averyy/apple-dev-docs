@@ -21,7 +21,7 @@ A loader backed by an in-memory array.
 struct ArrayLoader<Sample> where Sample : SampleProtocol
 ```
 
-#### Overview
+## Overview
 
 ```swift
 let loader = ArrayLoader(samples: [

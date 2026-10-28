@@ -25,7 +25,7 @@ var enableAutomapping: Bool { get set }
 @property (nonatomic) BOOL enableAutomapping;
 ```
 
-#### Discussion
+## Discussion
 
 This function is for use when you’re creating a tile map programmatically, versus creating it ahead of time with the scene editor.
 

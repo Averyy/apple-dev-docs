@@ -21,7 +21,7 @@ var isPresented: Bool { get }
 @property (readonly, getter=isPresented) BOOL presented;
 ```
 
-#### Discussion
+## Discussion
 
 In some cases, for example when your application is frontmost, the notification center may decide not to actually present a delivered notification. In that case, the value of this property is [`false`](../../Swift/false.md). It is set to [`true`](../../Swift/true.md) if the notification was presented according to user preferences.
 

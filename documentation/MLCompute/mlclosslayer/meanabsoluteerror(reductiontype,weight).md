@@ -23,7 +23,7 @@ class func meanAbsoluteError(reductionType: MLCReductionType, weight: Float) -> 
 + (instancetype) meanAbsoluteErrorLossWithReductionType:(MLCReductionType) reductionType weight:(float) weight;
 ```
 
-#### Return Value
+## Return Value
 
 A mean absolute loss layer.
 

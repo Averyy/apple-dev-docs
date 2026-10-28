@@ -10,7 +10,7 @@ framework: "Swift-Org/userdocs"
 
 Add tasks for common operations with your Package.
 
-#### Overview
+## Overview
 
 For workspaces that contain a `Package.swift` file, the Swift extension adds the following tasks:
 
@@ -23,7 +23,7 @@ For workspaces that contain a `Package.swift` file, the Swift extension adds the
 
 These tasks are available via the commands **Terminal ▸ Run Task…** and **Terminal ▸ Run Build Task…** in the command palette.
 
-#### Create tasks for library targets
+## Create tasks for library targets
 
 By default build tasks are only automatically created for executable products. If you set the `swift.createTasksForLibraryProducts` setting to true, then additional tasks will be created:
 
@@ -32,7 +32,7 @@ By default build tasks are only automatically created for executable products. I
 
 > **⚠️ Important**: Tasks will not be created for automatic library products, as you cannot specify a `--product` option for automatic products when building. For more information see the [Swift Package Manager documentation for Product definitions](https://docs.swift.org/package-manager/PackageDescription/PackageDescription.html#product).
 
-#### Combining tasks
+## Combining tasks
 
 You can compose multiple built-in Swift tasks into a single [compound task](https://code.visualstudio.com/docs/debugtest/tasks#_compound-tasks) in your `.vscode/tasks.json`. For example, you can create a `Clean Rebuild` compound task that runs the `swift: Clean Build Folder` task followed by the `swift: Build All` task:
 

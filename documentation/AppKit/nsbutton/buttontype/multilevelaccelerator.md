@@ -19,7 +19,7 @@ case multiLevelAccelerator
 NSButtonTypeMultiLevelAccelerator
 ```
 
-#### Discussion
+## Discussion
 
 Use [`maxAcceleratorLevel`](../maxacceleratorlevel.md) to configure the number of pressure levels. For other types of buttons, this property value defaults to `1`. For multilevel accelerator buttons, this property value defaults to `2`, and you can set it to a value between `1` and `5`.
 

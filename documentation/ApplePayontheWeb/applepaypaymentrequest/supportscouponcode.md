@@ -20,7 +20,7 @@ boolean supportsCouponCode;
 
 - [Apple Pay on the Web Version 12 Release Notes](../apple-pay-on-the-web-version-12-release-notes.md)
 
-#### Discussion
+## Discussion
 
 Set the value to `true` to display the coupon code field.
 

@@ -19,11 +19,11 @@ func IOBluetoothNSStringToDeviceAddress(_ inNameString: String!, _ outDeviceAddr
 extern IOReturn IOBluetoothNSStringToDeviceAddress(NSString *inNameString, BluetoothDeviceAddress *outDeviceAddress);
 ```
 
-#### Return Value
+## Return Value
 
 Returns success (0) or failure code.
 
-#### Discussion
+## Discussion
 
 Pass in most types of strings, such as “001122334455” or “00-11-22-33-44-55” and the conversion should be successful. Also, you should have 2 characters per byte for the conversion to work properly.
 

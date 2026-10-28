@@ -21,7 +21,7 @@ Creates an `AudioBufferResource` with the given `AVAudioBuffer` and configuratio
 @preconcurrency init(buffer: AVAudioBuffer, configuration: AudioBufferResource.Configuration = .init()) throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: An error if the given `buffer` is not or cannot be converted to a non-interleaved PCM buffer.
 

@@ -24,7 +24,7 @@ func AudioServicesPlaySystemSound(_ inSystemSoundID: SystemSoundID)
 extern void AudioServicesPlaySystemSound(SystemSoundID inSystemSoundID);
 ```
 
-#### Discussion
+## Discussion
 
 This function plays a short sound (30 seconds or less in duration). Because sound might play for several seconds, this function is executed asynchronously. To know when a sound has finished playing, call the [`AudioServicesAddSystemSoundCompletion(_:_:_:_:_:)`](./audioservicesaddsystemsoundcompletion%28_,_,_,_,_%29.md) function to register a callback function.
 

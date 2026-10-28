@@ -25,7 +25,7 @@ func CFAttributedStringSetAttributes(_ aStr: CFMutableAttributedString!, _ range
 extern void CFAttributedStringSetAttributes(CFMutableAttributedStringRef aStr, CFRange range, CFDictionaryRef replacement, Boolean clearOtherAttributes);
 ```
 
-#### Discussion
+## Discussion
 
 Note that after this call, if it is mutable, changes to `replacement` will not affect the contents of the attributed string.
 

@@ -19,7 +19,7 @@ A window dismissal action stored in a view’s environment.
 var dismissWindow: DismissWindowAction { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use the `dismissWindow` environment value to get an [`DismissWindowAction`](../dismisswindowaction.md) instance for a given [`Environment`](../environment.md). Then call the instance to dismiss a window. You call the instance directly because it defines a [`callAsFunction(id:)`](../dismisswindowaction/callasfunction%28id%29.md) method that Swift calls when you call the instance.
 

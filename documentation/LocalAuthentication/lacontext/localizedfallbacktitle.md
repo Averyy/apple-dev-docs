@@ -23,7 +23,7 @@ var localizedFallbackTitle: String? { get set }
 @property (nonatomic, copy, nullable) NSString * localizedFallbackTitle;
 ```
 
-#### Discussion
+## Discussion
 
 The system presents a fallback button when biometric authentication fails—for example, because the system doesn’t recognize the presented finger, or after several failed attempts to recognize the user’s face. Tapping the button lets the user revert to authentication using the device passcode or password instead.
 

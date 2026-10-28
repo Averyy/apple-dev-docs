@@ -23,7 +23,7 @@ struct AudioFormatListItem
 struct AudioFormatListItem;
 ```
 
-#### Overview
+## Overview
 
 This struct is used as output from the kAudioFormatProperty_FormatList property
 

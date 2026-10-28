@@ -24,7 +24,7 @@ class GCControllerAxisInput
 @interface GCControllerAxisInput : GCControllerElement
 ```
 
-#### Overview
+## Overview
 
 A `GCControllerAxisInput` object represents the value of a physical controller’s axis. For example, a [`GCControllerDirectionPad`](./gccontrollerdirectionpad.md) has x-axis and y-axis subelements.
 

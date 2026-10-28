@@ -21,7 +21,7 @@ A request for no elements from the publisher.
 static let none: Subscribers.Demand
 ```
 
-#### Discussion
+## Discussion
 
 This is equivalent to `Demand.max(0)`.
 

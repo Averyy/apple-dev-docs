@@ -21,7 +21,7 @@ Creates a stepper instance that performs the closures you provide when the user 
 nonisolated init(@ContentBuilder label: () -> Label, onIncrement: (() -> Void)?, onDecrement: (() -> Void)?, onEditingChanged: @escaping (Bool) -> Void = { _ in })
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer to create a control with a custom title that executes closures you provide when the user clicks or taps the stepper’s increment or decrement buttons.
 

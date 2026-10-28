@@ -21,7 +21,7 @@ A constant that represents signed ECDHE public key encryption, where only the re
 static let hkdf_sha256_aesctr_hmac__ecdhe_p256__ecdsa_p256: ArchiveEncryptionContext.Profile
 ```
 
-#### Discussion
+## Discussion
 
 The signature is encrypted.
 

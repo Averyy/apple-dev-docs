@@ -24,7 +24,7 @@ static let widgetOptions: PDFAnnotationKey
 extern PDFAnnotationKey PDFAnnotationKeyWidgetOptions;
 ```
 
-#### Discussion
+## Discussion
 
 Each element is a string or an array that contains two strings.
 

@@ -12,11 +12,11 @@ static const OSSymbol * nameForType(
  IOMediumTypetype);
 ```
 
-#### Return Value
+## Return Value
 
 Returns an OSSymbol object is created based on the type provided.
 
-#### Overview
+## Overview
 
 Given a medium type, creates an OSymbol object that describes the medium type. There is a 1-to-1 mapping between the medium type, and the medium name created by this method. The caller is responsible for releasing the OSSymbol object returned.
 

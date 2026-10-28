@@ -24,7 +24,7 @@ func CATransform3DIsAffine(_ t: CATransform3D) -> Bool
 extern bool CATransform3DIsAffine(CATransform3D t);
 ```
 
-#### Discussion
+## Discussion
 
 Returns [`true`](../Swift/true.md) if `t` can be exactly represented by an affine transform.
 

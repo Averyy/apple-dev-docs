@@ -21,7 +21,7 @@ Custom month format style showing the minimum number of digits that represents t
 static var defaultDigits: Date.FormatStyle.Symbol.Month { get }
 ```
 
-#### Discussion
+## Discussion
 
 This style represents the month like `1` or `12`.
 

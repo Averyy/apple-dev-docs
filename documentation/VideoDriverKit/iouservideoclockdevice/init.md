@@ -15,7 +15,7 @@ Initializes a video clock device.
 virtual bool init(IOUserVideoDriver *in_driver, OSString *in_device_uid, OSString *in_model_uid, OSString *in_manufacturer_uid);
 ```
 
-#### Return Value
+## Return Value
 
 True on success.
 

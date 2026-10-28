@@ -23,7 +23,7 @@ struct CrashDiagnostic
 
 - [Monitoring app performance with MetricKit](./monitoring-app-performance-with-metrickit.md)
 
-#### Discussion
+## Discussion
 
 This carries a [`CallStackTree`](./callstacktree.md) along with crash-specific metadata including the exception type, exception code, signal, and optional Objective-C exception reason.
 

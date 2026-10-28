@@ -23,11 +23,11 @@ init(fovY: Angle2DFloat, aspectRatio: Float, nearZ: Float, farZ: Float)
 static SPProjectiveTransform3DFloat SPProjectiveTransform3DFloatMakeWithRightHandPerspective(SPAngleFloat fovY, float aspectRatio, float nearZ, float farZ);
 ```
 
-#### Return Value
+## Return Value
 
 A projective transform with right-hand side perspective.
 
-#### Discussion
+## Discussion
 
 Returns a projective transform with right-hand side perspective.
 

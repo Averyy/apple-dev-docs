@@ -19,7 +19,7 @@ var expandedInterfaceSession: NSStatusItemExpandedInterfaceSession? { get }
 @property (strong, readonly, nullable) NSStatusItemExpandedInterfaceSession * expandedInterfaceSession;
 ```
 
-#### Discussion
+## Discussion
 
 The status item sets this property to a valid session object before calling [`statusItem(_:didBegin:)`](../nsstatusitemexpandedinterfacedelegate/statusitem%28_,didbegin%29.md) on the [`expandedInterfaceDelegate`](./expandedinterfacedelegate.md), and sets the property to `nil` before calling [`statusItemDidEndExpandedInterfaceSession(_:animated:)`](../nsstatusitemexpandedinterfacedelegate/statusitemdidendexpandedinterfacesession%28_,animated%29.md).
 

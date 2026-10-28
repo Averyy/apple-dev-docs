@@ -21,7 +21,7 @@ func showRouteChoicesPreview(for tripPreview: CPTrip, textConfiguration: CPTripP
 - (void) showRouteChoicesPreviewForTrip:(CPTrip *) tripPreview textConfiguration:(CPTripPreviewTextConfiguration *) textConfiguration;
 ```
 
-#### Discussion
+## Discussion
 
 The trip preview can appear over an active navigation session.
 

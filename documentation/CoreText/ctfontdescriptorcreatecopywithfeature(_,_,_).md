@@ -25,11 +25,11 @@ func CTFontDescriptorCreateCopyWithFeature(_ original: CTFontDescriptor, _ featu
 extern CTFontDescriptorRefCTFontDescriptorCreateCopyWithFeature(CTFontDescriptorRef original, CFNumberRef featureTypeIdentifier, CFNumberRef featureSelectorIdentifier);
 ```
 
-#### Return Value
+## Return Value
 
 A copy of the original font descriptor modified with the given feature settings.
 
-#### Discussion
+## Discussion
 
 This is a convenience method to toggle more easily the state of individual features.
 

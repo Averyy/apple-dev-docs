@@ -25,7 +25,7 @@ func renditionSpecificAttributes(for mediaSelectionOption: AVMediaSelectionOptio
 - (AVAssetVariantAudioRenditionSpecificAttributes *) renditionSpecificAttributesForMediaOption:(AVMediaSelectionOption *) mediaSelectionOption;
 ```
 
-#### Return Value
+## Return Value
 
 Attributes for the rendition, or `nil` of none exist.
 

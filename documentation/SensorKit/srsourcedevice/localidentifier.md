@@ -19,7 +19,7 @@ var localIdentifier: String { get }
 @property (nonatomic, copy, readonly) NSString * localIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 A unique identifier for the data source. This property is available to clients for a local identifier. The local identifier distinguishes different peripheral sources used by a common device.
 

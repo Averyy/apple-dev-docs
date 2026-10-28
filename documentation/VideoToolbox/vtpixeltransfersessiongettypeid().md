@@ -24,7 +24,7 @@ func VTPixelTransferSessionGetTypeID() -> CFTypeID
 extern CFTypeID VTPixelTransferSessionGetTypeID();
 ```
 
-#### Return Value
+## Return Value
 
 The `CFTypeID` of the transfer session object.
 

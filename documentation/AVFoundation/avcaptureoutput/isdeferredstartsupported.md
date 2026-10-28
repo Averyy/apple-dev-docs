@@ -23,7 +23,7 @@ var isDeferredStartSupported: Bool { get }
 @property (nonatomic, readonly, getter=isDeferredStartSupported) BOOL deferredStartSupported;
 ```
 
-#### Discussion
+## Discussion
 
 You can only set the [`isDeferredStartEnabled`](./isdeferredstartenabled.md) property value to `true` if the output supports deferred start.
 

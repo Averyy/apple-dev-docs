@@ -17,7 +17,7 @@ A type that represents a single accessory setting.
 protocol HomeAccessorySetting : Identifiable where Self.ID == String
 ```
 
-#### Overview
+## Overview
 
 You don’t adopt this protocol directly. Instead, use one of the setting property wrappers, such as [`HomeAccessoryToggleSetting`](./homeaccessorytogglesetting.md) or [`HomeAccessoryRangeSetting`](./homeaccessoryrangesetting.md).
 

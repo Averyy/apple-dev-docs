@@ -15290,8 +15290,11 @@
     }
   },
   "metadata": {
+    "gone_links": [
+      "https://developer.apple.com/documentation/vision/vnrequest/2867238-results"
+    ],
     "render": {
-      "version": 3
+      "version": 4
     },
     "total_pages": 3822
   }

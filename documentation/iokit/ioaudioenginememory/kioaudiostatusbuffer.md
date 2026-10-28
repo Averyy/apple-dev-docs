@@ -14,7 +14,7 @@
 kIOAudioStatusBuffer = 0
 ```
 
-#### Discussion
+## Discussion
 
 This requests the IOAudioEngine's status buffer. It's type is IOAudioEngineStatus.
 

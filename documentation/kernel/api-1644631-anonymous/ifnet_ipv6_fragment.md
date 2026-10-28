@@ -13,7 +13,7 @@
 IFNET_IPV6_FRAGMENT = 0x00000080
 ```
 
-#### Discussion
+## Discussion
 
 Hardware will fragment IPv6 packets.
 

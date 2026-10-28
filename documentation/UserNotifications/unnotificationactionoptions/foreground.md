@@ -24,7 +24,7 @@ static var foreground: UNNotificationActionOptions { get }
 UNNotificationActionOptionForeground
 ```
 
-#### Discussion
+## Discussion
 
 When the user selects an action containing this option, the system brings the app to the foreground, asking the user to unlock the device as needed. Use this option for actions that require the user to interact further with your app. Do not use this option simply to bring your app to the foreground.
 

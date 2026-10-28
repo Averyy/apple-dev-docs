@@ -26,7 +26,7 @@ func channelManager(_ channelManager: PTChannelManager, receivedEphemeralPushTok
 
 - [Creating a Push to Talk app](../creating-a-push-to-talk-app.md)
 
-#### Discussion
+## Discussion
 
 The framework provides a token to this method after you initialize [`PTChannelManager`](../ptchannelmanager.md). The token isn’t active until a person joins the channel. If they leave the channel, you need to wait until they rejoin to resume notifications.
 

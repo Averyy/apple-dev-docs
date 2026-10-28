@@ -5,7 +5,7 @@
 
 Display small, circular content in the corners of the Color watch face.
 
-#### Overview
+## Overview
 
 Circular small templates display a small image or a few characters of text in the corners of the Color watch face.
 

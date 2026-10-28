@@ -25,7 +25,7 @@ var collapsesLargestUnit: Bool { get set }
 @property BOOL collapsesLargestUnit;
 ```
 
-#### Discussion
+## Discussion
 
 An example of when this property might apply is when expressing 63 seconds worth of time. When this property is set to [`true`](../../Swift/true.md), the formatted value would be “63s”. When the value of this property is [`false`](../../Swift/false.md), the formatted value would be “1m 3s”.
 

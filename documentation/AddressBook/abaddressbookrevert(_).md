@@ -23,7 +23,7 @@ func ABAddressBookRevert(_ addressBook: ABAddressBook!)
 extern void ABAddressBookRevert(ABAddressBookRef addressBook);
 ```
 
-#### Discussion
+## Discussion
 
 The address book is loaded with the information in the Address Book database.
 

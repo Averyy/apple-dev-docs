@@ -21,11 +21,11 @@ class SRPhotoplethysmogramOpticalSample
 @interface SRPhotoplethysmogramOpticalSample : NSObject
 ```
 
-#### Overview
+## Overview
 
 To get the PPG waveform, use the [`normalizedReflectance`](./srphotoplethysmogramopticalsample/normalizedreflectance-9aidm.md) property. Apple Watch uses an arrangement of emitters and photodiodes to measure the PPG waveform.
 
-##### Interpret second-generation PPG sensors data
+### Interpret second-generation PPG sensors data
 
 Second-generation optical heart sensors, in Apple Watch 4, 5, SE 3 and SE models, use green or infrared (IR) LED lights paired with light-sensitive photodiodes.
 
@@ -48,7 +48,7 @@ For the second-generation sensors, the mapping of the optical heart sensor (SE, 
 | 4 | 4, Green (525 nm) |
 | 5 | 5, Green (525 nm) |
 
-##### Interpret third-generation PPG sensors
+### Interpret third-generation PPG sensors
 
 Third-generation optical heart sensor, in Apple Watch Series 6 and later, plus Apple Watch Ultra and Ultra 2, use an additional red LED with a different arrangement of emitters and photodiodes than the second-generation PPG sensors. The active photodiodes indices show which photodiode or combination of photodiodes the Apple Watch uses.
 

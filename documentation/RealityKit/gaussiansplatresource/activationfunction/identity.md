@@ -19,7 +19,7 @@ Uses the values without transformation.
 case identity
 ```
 
-#### Discussion
+## Discussion
 
 Choose this when your data is already in its final form.
 

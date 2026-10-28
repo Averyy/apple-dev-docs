@@ -19,7 +19,7 @@ weak var delegate: (any NSTabViewDelegate)? { get set }
 @property (weak, nullable) id<NSTabViewDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property must conform to the [`NSTabViewDelegate`](../nstabviewdelegate.md) protocol.
 

@@ -19,7 +19,7 @@ protocol StartDiveIntent : SystemIntent
 
 - [Responding to the Action button on Apple Watch Ultra](./actionbuttonarticle.md)
 
-#### Overview
+## Overview
 
 To implement the start dive action, create a structure that adopts the `StartDiveIntent` protocol.
 

@@ -24,7 +24,7 @@ var requiredThreadsPerThreadgroup: MTLSize { get set }
 @property (nonatomic, readwrite) MTLSize requiredThreadsPerThreadgroup;
 ```
 
-#### Discussion
+## Discussion
 
 This value is typically optional, except in the cases where the tile function that [`tileFunctionDescriptor`](./tilefunctiondescriptor.md) references uses `CooperativeTensors`. In this case, you need to provide a non-zero value to this property.
 

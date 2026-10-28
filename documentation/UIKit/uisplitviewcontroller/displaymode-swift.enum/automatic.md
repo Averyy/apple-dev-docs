@@ -23,7 +23,7 @@ case automatic
 UISplitViewControllerDisplayModeAutomatic
 ```
 
-#### Discussion
+## Discussion
 
 This constant represents the default value of the [`preferredDisplayMode`](../preferreddisplaymode.md) property. Although you can assign the property this constant as its value, the [`displayMode`](../displaymode-swift.property.md) property never reports it.
 

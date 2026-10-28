@@ -24,7 +24,7 @@ static var circle: Circle { get }
 
 Available when `Self` is `Circle`.
 
-#### Discussion
+## Discussion
 
 The circle’s radius equals half the length of the frame rectangle’s smallest edge.
 

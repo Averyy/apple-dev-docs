@@ -21,7 +21,7 @@ The property for which this instance exposes a publisher.
 var projectedValue: Published<Value>.Publisher { mutating get set }
 ```
 
-#### Discussion
+## Discussion
 
 The [`projectedValue`](./projectedvalue.md) is the property accessed with the `$` operator.
 

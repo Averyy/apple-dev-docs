@@ -19,7 +19,7 @@ A registration for the collection view’s cells.
 @interface UICollectionViewCellRegistration : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use a cell registration to register cells with your collection view and configure each cell for display. You create a cell registration with your cell type and data item type as the registration’s generic parameters, passing in a registration handler to configure the cell. In the registration handler, you specify how to configure the content and appearance of that type of cell.
 

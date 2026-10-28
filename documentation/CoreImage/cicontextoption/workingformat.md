@@ -24,7 +24,7 @@ static let workingFormat: CIContextOption
 extern CIContextOption const kCIContextWorkingFormat;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is an `NSNumber` instance containing a [`CIFormat`](../ciformat.md) value.
 

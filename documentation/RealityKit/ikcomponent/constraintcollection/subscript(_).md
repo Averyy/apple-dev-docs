@@ -26,7 +26,7 @@ subscript(id: IKComponent.ConstraintCollection.Element.ID) -> IKComponent.Constr
 subscript(name: String) -> IKComponent.ConstraintCollection.Element? { get set }
 ```
 
-#### Overview
+## Overview
 
 The following set scenarios are ignored:
 

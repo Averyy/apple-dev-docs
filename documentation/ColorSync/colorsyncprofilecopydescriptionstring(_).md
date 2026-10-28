@@ -25,7 +25,7 @@ func ColorSyncProfileCopyDescriptionString(_ prof: ColorSyncProfile!) -> Unmanag
 extern CFStringRefColorSyncProfileCopyDescriptionString(ColorSyncProfileRef prof);
 ```
 
-#### Return Value
+## Return Value
 
 The profile description, localized to the current locale.
 

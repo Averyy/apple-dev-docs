@@ -20,7 +20,7 @@ var kSecCSUseAllArchitectures: UInt32 { get }
 kSecCSUseAllArchitectures
 ```
 
-#### Discussion
+## Discussion
 
 When this flag is used, if code refers to a single architecture of a universal binary, return a [`SecStaticCode`](./secstaticcode.md) object that refers to the entire universal code with all its architectures. By default, the returned static reference identifies only the actual architecture of the running program.
 

@@ -16,7 +16,7 @@ Sets the seventh UV coordinate set for the rendered output mesh.
 void output::setUV7(float4 value)
 ```
 
-#### Discussion
+## Discussion
 
 This function assigns a custom UV coordinate to the seventh texture coordinate channel of the output mesh. If the mesh doesn’t already have a UV7 channel, it will be created. This enables multi-texturing and advanced shader effects.
 

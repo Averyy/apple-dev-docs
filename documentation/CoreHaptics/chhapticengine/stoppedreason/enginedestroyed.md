@@ -24,7 +24,7 @@ case engineDestroyed
 CHHapticEngineStoppedReasonEngineDestroyed
 ```
 
-#### Discussion
+## Discussion
 
 This reason typically indicates a programming error. Maintain a strong reference to the engine to for as long as you need to execute haptics.
 

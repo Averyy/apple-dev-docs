@@ -17,7 +17,7 @@ Replaces the model’s [`budgetTransition`](../reasoningconfig/budgettransition.
 let transitionOverride: ReasoningBudgetTransition?
 ```
 
-#### Discussion
+## Discussion
 
 Most reasoning protocols ship with no declared transition, because sharing `<think>`/`</think>` with Qwen3 does not mean a family was trained to answer from a truncated reasoning span. Supplying a transition here is how an application opts a model in anyway, after validating the behavior for its exact weights and tokenizer.
 

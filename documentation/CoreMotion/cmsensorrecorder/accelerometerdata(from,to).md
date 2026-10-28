@@ -22,11 +22,11 @@ func accelerometerData(from fromDate: Date, to toDate: Date) -> CMSensorDataList
 - (CMSensorDataList *) accelerometerDataFromDate:(NSDate *) fromDate toDate:(NSDate *) toDate;
 ```
 
-#### Return Value
+## Return Value
 
 An object to use for enumerating over the accelerometer data.
 
-#### Discussion
+## Discussion
 
 Use this method to fetch accelerometer data entries in the specified date range. When fetching entries for a date range, the recorder returns only the data entries it has. If there were gaps in the recording, no data entries are returned for those gaps. Recorded accelerometer data is kept for a maximum of three days. There may be a delay of up to three minutes before new samples are available for retrieval.
 

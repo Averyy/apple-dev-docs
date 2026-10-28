@@ -12,11 +12,11 @@ virtual SCSIServiceResponse TargetReset (
  void ) = 0;
 ```
 
-#### Return Value
+## Return Value
 
 A valid SCSIServiceResponse code.
 
-#### Overview
+## Overview
 
 Resets the target device. Subclasses must override this method. Third party subclasses should not need to override this method.
 

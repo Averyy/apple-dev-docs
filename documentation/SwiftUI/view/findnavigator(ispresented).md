@@ -20,11 +20,11 @@ nonisolated
 func findNavigator(isPresented: Binding<Bool>) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view that presents the find and replace interface when `isPresented` is `true`.
 
-#### Discussion
+## Discussion
 
 Add this modifier to a [`TextEditor`](../texteditor.md), or to a view hierarchy that contains at least one text editor, to control the presentation of the find and replace interface. When you set the `isPresented` binding to `true`, the system shows the interface, and when you set it to `false`, the system hides the interface. The following example shows and hides the interface based on the state of a toolbar button:
 

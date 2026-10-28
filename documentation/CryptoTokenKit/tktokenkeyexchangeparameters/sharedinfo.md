@@ -25,7 +25,7 @@ var sharedInfo: Data? { get }
 @property (copy, readonly, nullable) NSData * sharedInfo;
 ```
 
-#### Discussion
+## Discussion
 
 This property should be ignored if shared information isn’t used by the specified key exchange algorithm.
 

@@ -33,7 +33,7 @@ var taskTitles: [INSpeakableString]? { get }
 @property (atomic, copy, readonly, nullable) NSArray<INSpeakableString *> * taskTitles;
 ```
 
-#### Discussion
+## Discussion
 
 Create a new task for each string in the array. Use the string contents as the title of the task.
 

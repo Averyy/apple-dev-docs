@@ -23,7 +23,7 @@ var clock: CMClock? { get }
 @property (nonatomic, readonly, nullable) CMClockRef clock;
 ```
 
-#### Discussion
+## Discussion
 
 This property returns `NULL` until the [`status`](./status.md) reaches `AVExternalSyncDeviceStatusActiveSync`.
 

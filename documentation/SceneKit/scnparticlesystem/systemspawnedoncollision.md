@@ -25,7 +25,7 @@ var systemSpawnedOnCollision: SCNParticleSystem? { get set }
 @property (nonatomic, retain, nullable) SCNParticleSystem * systemSpawnedOnCollision;
 ```
 
-#### Discussion
+## Discussion
 
 When a particle collides with scene geometry, SceneKit adds a copy of the specified particle system to the scene at the location of the collision. (To define collision behavior, see the [`colliderNodes`](./collidernodes.md) property.)
 

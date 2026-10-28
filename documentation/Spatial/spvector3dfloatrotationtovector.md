@@ -19,11 +19,11 @@
 static SPRotation3DFloat SPVector3DFloatRotationToVector(SPVector3DFloat vector, SPVector3DFloat other);
 ```
 
-#### Return Value
+## Return Value
 
 A rotation structure that represents the rotation.
 
-#### Discussion
+## Discussion
 
 Returns the rotation from the normalized first vector to the normalized second vector.
 

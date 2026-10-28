@@ -18,11 +18,11 @@ Evaluates the input and returns an array of metrics.
 ## Declaration
 
 ```swift
-nonisolated
-(nonsending) func metrics(subject: ModelSubject<Input.ExpectedValue>, input: Input) async throws -> [Metric]
+nonisolated(nonsending)
+func metrics(subject: ModelSubject<Input.ExpectedValue>, input: Input) async throws -> [Metric]
 ```
 
-#### Return Value
+## Return Value
 
 An array that contains the [`Metric`](../metric.md) the evaluation closure produces.
 

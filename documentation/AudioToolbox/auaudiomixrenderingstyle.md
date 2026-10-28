@@ -22,7 +22,7 @@ enum AUAudioMixRenderingStyle
 enum AUAudioMixRenderingStyle : UInt32;
 ```
 
-#### Overview
+## Overview
 
 Constants available as values for parameter kAUAudioMixParameter_Style.
 

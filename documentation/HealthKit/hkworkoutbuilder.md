@@ -28,7 +28,7 @@ class HKWorkoutBuilder
 
 - [Accessing workout zone data](./accessing-workout-zone-data.md)
 
-#### Overview
+## Overview
 
 Incrementally collect samples and events associated with a workout. When the workout ends, call [`finishWorkout(completion:)`](./hkworkoutbuilder/finishworkout%28completion%29.md) to create an [`HKWorkout`](./hkworkout.md) sample and save it to the HealthKit store.
 

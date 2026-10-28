@@ -21,7 +21,7 @@ Returns a Boolean value that indicates whether two publishers are equivalent.
 static func == (lhs: Publishers.Share<Upstream>, rhs: Publishers.Share<Upstream>) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the publishers have reference equality (`===`); otherwise `false`.
 

@@ -19,7 +19,7 @@ int64 price
 
 - [App Store Server Notifications changelog](./app-store-server-notifications-changelog.md)
 
-#### Discussion
+## Discussion
 
 This value represents the price, in milliunits of the [`currency`](./currency.md), of the In-App Purchase that the system records in the transaction. One unit of the currency equals 1000 milliunits.
 

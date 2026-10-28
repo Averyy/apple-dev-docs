@@ -5,7 +5,7 @@
 
 Send build events to external services and tools using webhooks.
 
-#### Overview
+## Overview
 
 To track Xcode Cloud progress using custom services and tools, connect them to Xcode Cloud using webhooks. For example, display build information from Xcode Cloud on your team’s dashboard, automate the merge process for pull requests (PRs), automatically open or close issues in your issue tracking tool, and so on.
 
@@ -19,7 +19,7 @@ For more information about creating webhooks in Xcode Cloud, see [Customize your
 
 > **Note**: Configure your project or workspace to use Xcode Cloud before you create webhooks. You can configure up to five webhooks per Xcode Cloud product.
 
-#### Create an Xcode Cloud webhook
+## Create an Xcode Cloud webhook
 
 You need to provide the following information when creating a webhook:
 
@@ -45,7 +45,7 @@ Alternatively, create a webhook using [App Store Connect](https://appstoreconnec
 3. Click the Add button (+) next to Webhooks.
 4. In the sheet, enter a name and payload URL for the webhook, and click Save.
 
-#### View webhook delivery history and metadata
+## View webhook delivery history and metadata
 
 After Xcode Cloud builds your app, you can see webhook delivery history and other details in Xcode. Use the delivery history to confirm that your service or tool parses the JSON payload that Xcode Cloud sends.
 
@@ -61,7 +61,7 @@ To access webhook delivery reports in App Store Connect:
 2. Click Settings in the sidebar and select the Webhooks tab on the right.
 3. Choose a webhook and review its delivery reports.
 
-#### Review the payload
+## Review the payload
 
 With each webhook request, Xcode Cloud includes detailed information about the app you configured in App Store Connect, the workflow that started the build, the build itself, your Git repository, and more. Use this information to provide functionality in your custom tool or service. For example, use the payload information to display Xcode Cloud build information on your team’s dashboard.
 

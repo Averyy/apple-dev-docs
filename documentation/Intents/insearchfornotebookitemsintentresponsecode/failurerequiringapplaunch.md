@@ -25,7 +25,7 @@ case failureRequiringAppLaunch
 INSearchForNotebookItemsIntentResponseCodeFailureRequiringAppLaunch
 ```
 
-#### Discussion
+## Discussion
 
 Use this response code when you cannot perform the search from your Intents extension but can do so from your app. Do not use this code for general errors or to force the user to launch your app.
 

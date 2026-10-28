@@ -24,7 +24,7 @@ var strides: [NSNumber] { get set }
 @property (nonatomic, copy, readwrite) NSArray<NSNumber *> * strides;
 ```
 
-#### Discussion
+## Discussion
 
 Must be three numbers, one for each spatial dimension, fastest running index last. Default value: `@[ @1, @1, @1 ]`
 

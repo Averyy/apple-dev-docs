@@ -11,7 +11,7 @@ Returns the IOWorkLoop for the driver
 virtual IOWorkLoop *getWorkLoop() const;
 ```
 
-#### Overview
+## Overview
 
 The IOWorkLoop is used to synchronized all critical aspects of the driver. This includes all entry points to the driver as well as power management.
 

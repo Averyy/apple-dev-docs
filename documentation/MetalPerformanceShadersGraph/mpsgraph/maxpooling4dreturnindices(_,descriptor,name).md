@@ -24,11 +24,11 @@ func maxPooling4DReturnIndices(_ source: MPSGraphTensor, descriptor: MPSGraphPoo
 - (NSArray<MPSGraphTensor *> *) maxPooling4DReturnIndicesWithSourceTensor:(MPSGraphTensor *) source descriptor:(MPSGraphPooling4DOpDescriptor *) descriptor name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 An array of two MPSGraphTensors. The first tensor holds the result of max pool and the second tensor holds the corresponding indices.
 
-#### Discussion
+## Discussion
 
 In order to Computes the indices, `returnIndicesMode` of the descriptor must be set. The datatype of indices tensor can be set using `returnIndicesDataType`. If `returnIndicesMode = MPSGraphPoolingReturnIndicesNone` then only the first result MPSGraph returns will be valid and using the second result will assert.
 

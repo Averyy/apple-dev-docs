@@ -21,7 +21,7 @@ Validation data represented as a `MLDataTable`.
 var validationData: MLDataTable? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: Setting this to `nil` means that the training data will be automatically split for validation. Setting it to an empty table means to not use a validation set.
 

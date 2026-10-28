@@ -10,7 +10,7 @@ framework: "mlx-swift/MLX"
 
 Creating MLXArrays.
 
-##### Scalar Arrays
+### Scalar Arrays
 
 A scalar [`MLXArray`](./mlxarray.md) is created from a scalar and has zero dimensions:
 
@@ -57,7 +57,7 @@ let b = a + 3
 
 Scalars will not promote results to `float32` using these functions.
 
-##### Int vs Int32 vs Int64
+### Int vs Int32 vs Int64
 
 In swift an Int is a 64 bit value (aka Int64).  You can get 32 bit values by using:
 
@@ -92,7 +92,7 @@ XCTAssertEqual(a2.dtype, .int64)
 
 All of the `Int` initializers (e.g. `[Int]`, `Sequence<Int>` and nested arrays) work the same way and all have the `int64:` variant.
 
-##### Double
+### Double
 
 If you have a `Double` array, you have to convert it as `MLXArray` does not support `Double`:
 
@@ -101,7 +101,7 @@ If you have a `Double` array, you have to convert it as `MLXArray` does not supp
 let v1 = MLXArray(converting: [0.1, 0.5])
 ```
 
-##### Multi Value Arrays
+### Multi Value Arrays
 
 Typically MLXArrays are created with many values and potentially many dimensions.  You can create an MLXArray from another array (literal in this case, but swift `Array` variables work as well):
 
@@ -153,11 +153,11 @@ When creating using an array or sequence you can also control the shape:
 let v1 = MLXArray(0 ..< 12, [3, 4])
 ```
 
-##### Random Value Arrays
+### Random Value Arrays
 
 See also `MLXRandom` for creating arrays with random data.
 
-##### Other Arrays
+### Other Arrays
 
 There are a number of factory methods to create common array patterns.  For example:
 
@@ -169,7 +169,7 @@ let zeros = MLXArray.zeros([5, 5])
 let identity = MLXArray.identity(5)
 ```
 
-##### Complex Values
+### Complex Values
 
 [`MLXArray`](./mlxarray.md) supports complex numbers, specifically a real and imaginary `Float32` as [`DType.complex64`](./dtype/complex64.md). MLX uses [swift-numerics](https://github.com/apple/swift-numerics/tree/main) to represent the `Complex` type, though there are a few functions for manipulating the individual pieces, see [Conversion](./conversion.md).
 

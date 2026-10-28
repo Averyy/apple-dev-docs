@@ -23,7 +23,7 @@ Creates and initializes a new video node using a video file stored in the app bu
 + (SKVideoNode *) videoNodeWithVideoFileNamed:(NSString *) videoFile;
 ```
 
-#### Return Value
+## Return Value
 
 A new video node.
 

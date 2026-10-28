@@ -13,7 +13,7 @@
 IFNET_CSUM_UDP = 0x00000004
 ```
 
-#### Discussion
+## Discussion
 
 Hardware will calculate UDP checksums.
 

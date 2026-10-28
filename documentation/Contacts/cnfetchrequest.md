@@ -24,7 +24,7 @@ class CNFetchRequest
 @interface CNFetchRequest : NSObject
 ```
 
-#### Overview
+## Overview
 
 To fetch contacts, use [`CNContactFetchRequest`](./cncontactfetchrequest.md).
 

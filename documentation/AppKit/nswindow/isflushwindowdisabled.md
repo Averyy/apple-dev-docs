@@ -21,7 +21,7 @@ var isFlushWindowDisabled: Bool { get }
 @property (readonly, getter=isFlushWindowDisabled) BOOL flushWindowDisabled;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) when the window’s flushing ability has been disabled; otherwise, [`false`](../../Swift/false.md).
 

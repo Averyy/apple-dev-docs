@@ -16,7 +16,7 @@ Sends an AVC command to the device and returns the response.
 IOReturn (*AVCCommand)(void *self, const UInt8 *command, UInt32 cmdLen, UInt8 *response, UInt32 *responseLen);
 ```
 
-#### Discussion
+## Discussion
 
 This function will block until the device returns a response or the kernel driver times out.
 

@@ -25,11 +25,11 @@ class func spring() -> SCNPhysicsField
 + (SCNPhysicsField *) springField;
 ```
 
-#### Return Value
+## Return Value
 
 A physics field object. To use the field in a scene, attach it to the [`physicsField`](../scnnode/physicsfield.md) property of an [`SCNNode`](../scnnode.md) object.
 
-#### Discussion
+## Discussion
 
 The force a spring field applies to objects in its area of effect is linearly proportional to the distance from the object to the center of the field. (That is, the field behaves according to Hooke’s Law of real-world spring forces.) An object placed at the center of the field and moved away will oscillate around the center, with a period of oscillation that is proportional to the object’s mass. The field’s [`strength`](./strength.md) property scales the magnitude of the spring effect—a larger strength simulates a stiffer spring.
 

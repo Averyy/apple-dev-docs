@@ -17,7 +17,7 @@ Creates a configuration that behaves like a traditional alarm.
 static func alarm(schedule: Alarm.Schedule? = nil, attributes: AlarmAttributes<Metadata>, stopIntent: (any LiveActivityIntent)? = nil, secondaryIntent: (any LiveActivityIntent)? = nil, sound: AlertConfiguration.AlertSound = .default) -> AlarmManager.AlarmConfiguration<Metadata>
 ```
 
-#### Discussion
+## Discussion
 
 At the scheduled time, based on the `schedule` parameter you supply, the alarm alerts.
 

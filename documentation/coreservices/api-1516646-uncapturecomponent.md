@@ -15,11 +15,11 @@ Allows your component to uncapture a previously captured component.
 OSErr UncaptureComponent(Component aComponent);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./carbon_core/component_manager.md#1668759).
 
-#### Discussion
+## Discussion
 
 This function restores the specified component to the list of available components. Applications can then access the component and retrieve information about the component using Component Manager functions. 
 

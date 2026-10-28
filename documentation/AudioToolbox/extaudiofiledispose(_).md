@@ -24,7 +24,7 @@ func ExtAudioFileDispose(_ inExtAudioFile: ExtAudioFileRef) -> OSStatus
 extern OSStatus ExtAudioFileDispose(ExtAudioFileRef inExtAudioFile);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 

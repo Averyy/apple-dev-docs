@@ -20,11 +20,11 @@ optional func selectionShouldChange(in outlineView: NSOutlineView) -> Bool
 - (BOOL) selectionShouldChangeInOutlineView:(NSOutlineView *) outlineView;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) to permit `outlineView` to change its selection (typically a row being edited), [`false`](../../Swift/false.md) to deny permission.
 
-#### Discussion
+## Discussion
 
 For example, if the user is editing a cell and enters an improper value, the delegate can prevent the user from selecting or editing any other cells until a proper value has been entered into the original cell. The delegate can implement this method for complex validation of edited rows based on the values of any of their cells.
 

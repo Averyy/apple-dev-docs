@@ -21,7 +21,7 @@ final class MobileDocumentReader
 
 - [Adopting the Verifier API in your iPhone app](./adopting-the-verifier-api-in-your-iphone-app.md)
 
-#### Overview
+## Overview
 
 After creating the `MobileDocumentReader` object, call [`prepare(using:)`](./mobiledocumentreader/prepare%28using%29.md) to prepare the device for mobile document reading. Use the returned [`MobileDocumentReaderSession`](./mobiledocumentreadersession.md) object to read mobile documents.
 

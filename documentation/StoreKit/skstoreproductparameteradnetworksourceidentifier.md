@@ -28,7 +28,7 @@ extern NSString * const SKStoreProductParameterAdNetworkSourceIdentifier;
 - [Identifying the parameters in install-validation postbacks](./identifying-the-parameters-in-install-validation-postbacks.md)
 - [SKAdNetwork 4 release notes](./skadnetwork-4-release-notes.md)
 
-#### Discussion
+## Discussion
 
 This key is available for ad impressions that use SKAdNetwork 4 and later. The [`SKStoreProductParameterAdNetworkSourceIdentifier`](./skstoreproductparameteradnetworksourceidentifier.md), also known as the *hierarchical source identifier*, replaces and extends the campaign identifier value, [`SKStoreProductParameterAdNetworkCampaignIdentifier`](./skstoreproductparameteradnetworkcampaignidentifier.md).
 

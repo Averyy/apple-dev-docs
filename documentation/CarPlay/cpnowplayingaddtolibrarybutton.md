@@ -22,7 +22,7 @@ class CPNowPlayingAddToLibraryButton
 @interface CPNowPlayingAddToLibraryButton : CPNowPlayingButton
 ```
 
-#### Overview
+## Overview
 
 `CPNowPlayingAddToLibraryButton` is a concrete subclass of [`CPNowPlayingButton`](./cpnowplayingbutton.md). Use this button to allow a user to add the current playing item to a collection, such as their library. You implement this functionality in the button’s handler, or use the handler to invoke existing code that performs this function.
 

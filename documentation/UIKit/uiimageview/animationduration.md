@@ -23,7 +23,7 @@ var animationDuration: TimeInterval { get set }
 @property (nonatomic) NSTimeInterval animationDuration;
 ```
 
-#### Discussion
+## Discussion
 
 The time duration is measured in seconds. The default value of this property is `0.0`, which causes the image view to use a duration equal to the number of images multiplied by 1/30th of a second. Thus, if you had 30 images, the duration would be 1 second.
 

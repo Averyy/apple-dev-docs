@@ -24,7 +24,7 @@ var quantityType: HKQuantityType { get }
 @property (strong, readonly) HKQuantityType * quantityType;
 ```
 
-#### Discussion
+## Discussion
 
 The quantity type from the statistics query used to generate these statistics.
 

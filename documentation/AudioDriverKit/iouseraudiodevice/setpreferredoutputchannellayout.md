@@ -15,7 +15,7 @@ Sets the output channel layout, using an array of audio channel label values.
 kern_return_t SetPreferredOutputChannelLayout(IOUserAudioChannelLabel *in_channel_labels, size_t in_num_channels);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. For a list of error codes, see [Error Codes](../../DriverKit/error-codes.md).
 

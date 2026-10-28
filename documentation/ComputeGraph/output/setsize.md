@@ -16,7 +16,7 @@ Sets the size of the rendered output.
 void output::setSize(float2 size)
 ```
 
-#### Discussion
+## Discussion
 
 This function directly sets the dimensions of the rendered particle output in world or screen space units. This affects only the rendered appearance and does not modify the particle itself.
 

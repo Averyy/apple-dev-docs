@@ -5,23 +5,23 @@
 
 Discover attachment issues by inspecting individual pixels and samples.
 
-#### Overview
+## Overview
 
 The Metal debugger allows you to view the contents of render attachments with the Attachments viewer. You can inspect individual pixels (or samples) and debug them with the shader debugger. For more information, see [Inspecting the bound resources for a command](./inspecting-the-bound-resources-for-a-command.md).
 
-##### Inspect your attachments
+### Inspect your attachments
 
 The Attachments viewer contains several controls you can use to interact with and display your attachments. Each visible attachment has its own viewer and title bar, which contains attachment-specific controls. The control bar at the bottom of the Attachments viewer contains controls that operate on all of the attachments simultaneously.
 
 ![A screenshot of the Attachments viewer.](https://developer.apple.com/tutorials/images/com.apple.Xcode/gputools-metal-debugger-av-attachments-hero@2x.png)
 
-##### Flip your attachments
+### Flip your attachments
 
 If your renderer is using a different coordinate system and your attachment is upside down or flipped horizontally, you can flip it to the correct orientation in the Attachments viewer. Click the attachment actions button, then choose Flip Horizontally or Flip Vertically.
 
 ![A screenshot of the actions menu for an attachment. The Flip Horizontally menu item is highlighted.](https://developer.apple.com/tutorials/images/com.apple.Xcode/gputools-metal-debugger-av-flip@2x.png)
 
-##### Configure visible attachments
+### Configure visible attachments
 
 You can configure visible attachments using the preview controls on the left of the control bar. To hide or show an attachment, move your pointer over the attachment preview and click to toggle its visibility.
 
@@ -29,13 +29,13 @@ Xcode updates the previews for the hidden attachments too, so you can see at a g
 
 ![A screenshot of the control to show and hide attachments.](https://developer.apple.com/tutorials/images/com.apple.Xcode/gputools-metal-debugger-av-attachments-visible@2x.png)
 
-##### Toggle overlay visibility
+### Toggle overlay visibility
 
 To hide overlays, such as the fluorescent green outline, click the attachment and then click a selected overlay to deselect it.
 
 ![A screenshot of the context menu for an attachment. The outline overlay option is enabled and highlighted.](https://developer.apple.com/tutorials/images/com.apple.Xcode/gputools-metal-debugger-av-outline-disable@2x.png)
 
-##### Configure attachment rendering
+### Configure attachment rendering
 
 Xcode automatically configures the color properties based on your encoder and attachment, but you can configure them manually by clicking the Colors button in the attachment-specific controls. Follow these guidelines:
 
@@ -46,13 +46,13 @@ Xcode automatically configures the color properties based on your encoder and at
 
 ![A screenshot of the Texture Image Color Options popover. It consists of controls for color space, tone mapping, and color sizzling.](https://developer.apple.com/tutorials/images/com.apple.Xcode/gputools-metal-debugger-av-colors@2x.png)
 
-##### View attachment properties
+### View attachment properties
 
 You can view properties for an attachment, such as texture width and height, by clicking the Info button in the attachment-specific controls.
 
 ![A screenshot of the Texture Image Properties popover.](https://developer.apple.com/tutorials/images/com.apple.Xcode/gputools-metal-debugger-av-properties@2x.png)
 
-##### View attachment issues
+### View attachment issues
 
 The Issues button in the attachment-specific controls becomes active if your attachment contains any pixels (or samples) with values that are infinite, are not-a-number, or exceed the current EDR headroom of your display. For example, if you accidently divide by `0` in your fragment shader, Xcode draws hatching on any incorrect pixels (or samples).
 
@@ -60,13 +60,13 @@ You can click the Issues button to see more information, and then click the Jump
 
 ![A screenshot of the Issues popover showing that there are pixels exceeding the display EDR headroom. A button appears next to the message for jumping to one such pixel.](https://developer.apple.com/tutorials/images/com.apple.Xcode/gputools-metal-debugger-av-issues@2x.png)
 
-##### Inspect pixel values
+### Inspect pixel values
 
 Move the pointer over a pixel or sample to inspect its value.
 
 ![A screenshot of the value inspector when the pointer is hovering over a pixel.](https://developer.apple.com/tutorials/images/com.apple.Xcode/gputools-metal-debugger-av-inspect-pixel@2x.png)
 
-##### Inspect, select, and compare pixel values
+### Inspect, select, and compare pixel values
 
 Move the pointer over a pixel (or sample if your render pass does multisample antialiasing) to inspect its value.
 
@@ -88,7 +88,7 @@ If you open multiple Attachment viewers or Texture viewers, you can compare pixe
 
 ![A screenshot of the value inspector comparing the pixel values beneath the pointer and at the selection. The pointer is hovering over pixel 1221, 1030, and the selection is at pixel 1229, 1030.](https://developer.apple.com/tutorials/images/com.apple.Xcode/gputools-metal-debugger-av-compare@2x.png)
 
-##### Debug a pixel
+### Debug a pixel
 
 Xcode outlines any regions affected by the current draw command with a fluorescent green overlay. If you notice pixels (or samples) with unexpected values inside these regions, select them and then click the Debug button on the right of the control bar to begin debugging the fragment shader. Xcode automatically opens your fragment shader source code with detailed thread execution history for the pixel. For more information on debugging shaders, see [Debugging the shaders within a draw command or compute dispatch](./debugging-the-shaders-within-a-draw-command-or-compute-dispatch.md).
 

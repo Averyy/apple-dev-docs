@@ -19,7 +19,7 @@ func substituteFont(for originalFont: NSFont) -> NSFont
 - (NSFont *) substituteFontForFont:(NSFont *) originalFont;
 ```
 
-#### Discussion
+## Discussion
 
 A screen font can be substituted if the receiver is set to use screen fonts and if no [`NSTextView`](../nstextview.md) associated with the receiver is scaled or rotated. If a suitable screen font isn’t available or usable, this method returns the original font.
 

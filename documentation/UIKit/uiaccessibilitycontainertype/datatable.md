@@ -24,7 +24,7 @@ case dataTable
 UIAccessibilityContainerTypeDataTable
 ```
 
-#### Discussion
+## Discussion
 
 To use this container type, you must also implement the [`UIAccessibilityContainerDataTable`](../uiaccessibilitycontainerdatatable.md) protocol.
 

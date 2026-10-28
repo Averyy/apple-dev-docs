@@ -20,7 +20,7 @@ var streams: [CMIOExtensionStream] { get }
 @property (atomic, copy, readonly) NSArray<CMIOExtensionStream *> * streams;
 ```
 
-#### Discussion
+## Discussion
 
 This property isn’t key-value observable.
 

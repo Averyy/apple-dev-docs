@@ -21,7 +21,7 @@ The hour cycle used by the locale, like one-to-twelve or zero-to-twenty-three.
 var hourCycle: Locale.HourCycle { get }
 ```
 
-#### Discussion
+## Discussion
 
 When called on the special [`Locale`](../locale.md) instances [`current`](./current.md) or [`autoupdatingCurrent`](./autoupdatingcurrent.md), if the user overrode the default hour cycle, this property provides the user’s preference.
 

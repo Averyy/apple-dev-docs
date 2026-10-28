@@ -24,7 +24,7 @@ let HKMetadataKeyReferenceRangeLowerLimit: String
 extern NSString * const HKMetadataKeyReferenceRangeLowerLimit;
 ```
 
-#### Discussion
+## Discussion
 
 This key takes an [`NSNumber`](../Foundation/nsnumber.md) value.
 

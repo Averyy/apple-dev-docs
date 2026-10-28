@@ -23,11 +23,11 @@ func positionAdjustment(for icon: UISearchBar.Icon) -> UIOffset
 - (UIOffset) positionAdjustmentForSearchBarIcon:(UISearchBarIcon) icon;
 ```
 
-#### Return Value
+## Return Value
 
 The position adjustment for the icon identified by `icon`.
 
-#### Discussion
+## Discussion
 
 The offset is used to adjust the position of an icon within the search text field.
 

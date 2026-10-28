@@ -14,7 +14,7 @@
 #define kUSBOutOfSpecMPSOK
 ```
 
-#### Discussion
+## Discussion
 
 Useful property names in USB land.
 

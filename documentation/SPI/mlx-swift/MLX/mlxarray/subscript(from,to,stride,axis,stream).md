@@ -19,7 +19,7 @@ Indexing using a stride (deprecated).
 subscript(from from: Int? = nil, to to: Int? = nil, stride stride: Int, axis axis: Int = -1, stream stream: StreamOrDevice = .default) -> MLXArray { get set }
 ```
 
-#### Overview
+## Overview
 
 This method supports strided access, similar to python:
 
@@ -40,7 +40,7 @@ This particular subscript operator is deprecated in favor of that, but for compl
 let evens = array[stride: 2, axis: -1]
 ```
 
-##### See Also
+### See Also
 
 - [Indexing](../indexing.md)
 - [`asStrided(_:_:strides:offset:stream:)`](../asstrided%28_,_,strides,offset,stream%29.md)

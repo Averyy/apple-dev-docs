@@ -12,7 +12,7 @@ virtual void StatusNotify (
  FWSBP2NotifyParams *params );
 ```
 
-#### Overview
+## Overview
 
 See IOFireWireSBP2Lib.h for details regarding the FWSBP2NotifyParams structure that is passed in to the completion..
 

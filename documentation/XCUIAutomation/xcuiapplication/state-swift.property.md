@@ -26,7 +26,7 @@ var state: XCUIApplication.State { get }
 @property (readonly) XCUIApplicationState state;
 ```
 
-#### Discussion
+## Discussion
 
 The system monitors the app to update this property as the app’s state changes. Consequently, the system updates the value of this property asynchronously.
 

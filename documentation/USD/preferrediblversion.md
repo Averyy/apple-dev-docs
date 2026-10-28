@@ -5,7 +5,7 @@
 
 Metadata that determines the lighting environment of virtual content.
 
-#### Overview
+## Overview
 
 This metadata selects one of two predefined options for the scene’s image-based lighting (IBL). AR Quick Look in iOS 16 and later observes this property to enhance the brightness, contrast, and visual definition of a scene’s virtual content.
 
@@ -15,13 +15,13 @@ A value of `1` indicates the classic lighting environment, and a value of `2` in
 
 If you omit the [preferredIblVersion](./preferrediblversion.md) metadata or give it a value of `0`, the system checks the asset’s creation timestamp. A timestamp of July 1, 2022, or later results in the new lighting environment; otherwise, the scene features classic lighting for backward compatibility. The system checks the timestamp of the `.usd` asset within the `.usdz` archive, not the archive’s file creation date.
 
-##### Declaration
+### Declaration
 
 ```other
 int preferredIblVersion = 0
 ```
 
-##### Select the scene’s image-based lighting
+### Select the scene’s image-based lighting
 
 The following `.usda` definition chooses the new lighting environment:
 

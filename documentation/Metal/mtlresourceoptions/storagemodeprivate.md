@@ -24,7 +24,7 @@ static var storageModePrivate: MTLResourceOptions { get }
 MTLResourceStorageModePrivate
 ```
 
-#### Discussion
+## Discussion
 
 Metal may apply additional optimizations to private resources that aren’t allowed on shared or managed resources.
 

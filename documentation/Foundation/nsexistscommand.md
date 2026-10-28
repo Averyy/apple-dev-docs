@@ -20,7 +20,7 @@ class NSExistsCommand
 @interface NSExistsCommand : NSScriptCommand
 ```
 
-#### Overview
+## Overview
 
 An instance of `NSExistsCommand` determines whether a specified scriptable object, such as a word, paragraph, or image, exists.
 

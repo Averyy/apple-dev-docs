@@ -22,7 +22,7 @@ func GLKMatrix4Translate(_ matrix: GLKMatrix4, _ tx: Float, _ ty: Float, _ tz: F
 static GLKMatrix4 GLKMatrix4Translate(GLKMatrix4 matrix, float tx, float ty, float tz);
 ```
 
-#### Return Value
+## Return Value
 
 A new matrix.
 

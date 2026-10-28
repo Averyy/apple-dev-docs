@@ -25,7 +25,7 @@ func xpc_rich_error_copy_description(_ error: xpc_rich_error_t) -> UnsafeMutable
 extern char *xpc_rich_error_copy_description(xpc_rich_error_t error);
 ```
 
-#### Return Value
+## Return Value
 
 The underlying string that describes the error, or [`nil`](../ObjectiveC/nil-227m0.md) if generating an a description fails.
 

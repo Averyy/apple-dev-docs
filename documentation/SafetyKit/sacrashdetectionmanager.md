@@ -23,7 +23,7 @@ class SACrashDetectionManager
 @interface SACrashDetectionManager : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use this class to determine Crash Detection availabilty on iPhone, detect authorization status, and register for Crash Detection events. Not all iPhones support Crash Detection, so verify that [`isAvailable`](./sacrashdetectionmanager/isavailable.md) returns [`true`](../Swift/true.md).
 

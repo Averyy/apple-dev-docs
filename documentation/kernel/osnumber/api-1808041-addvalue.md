@@ -12,7 +12,7 @@ virtual void addValue(
  signed long longvalue);
 ```
 
-#### Overview
+## Overview
 
 This function adds values as 64-bit integers, but masks the result by the bit size (see numberOfBits), so addition overflows will not necessarily be the same as for plain C integers.
 

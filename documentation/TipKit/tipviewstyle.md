@@ -22,7 +22,7 @@ A type that applies custom appearance to all tips within a view hierarchy.
 @preconcurrency protocol TipViewStyle
 ```
 
-#### Overview
+## Overview
 
 To configure the current style for tips in a view hierarchy, use the [`tipViewStyle(_:)`](../SwiftUI/view/tipviewstyle%28_%29.md) modifier and specify a type that conforms to `TipViewStyle`.
 

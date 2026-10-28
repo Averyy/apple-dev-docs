@@ -5,13 +5,13 @@
 
 Configure your app to perform tasks in the background to make efficient use of processing time and power.
 
-#### Overview
+## Overview
 
 A *task* is a standalone activity that an app performs, often on a recurring basis. Examples of tasks include performing maintenance on a database, refining a machine learning model, or updating displayed data. You can configure your app to launch and run tasks in the background to take advantage of processing time when the device isn’t in use.
 
 To schedule a task to run in the background, enable the background modes in Xcode, identify the specific tasks that you need, and then register the tasks with the [`BGTaskScheduler`](../BackgroundTasks/bgtaskscheduler.md) object.
 
-##### Enable and schedule background tasks
+### Enable and schedule background tasks
 
 To configure your app to allow background tasks, enable the background capabilities that you need, and then create a list of unique identifiers for each task.
 
@@ -38,7 +38,7 @@ You control which tasks run in the background by registering a list of permitted
 
 In iOS 13 and later, adding a [`BGTaskSchedulerPermittedIdentifiers`](../BundleResources/information-property-list/bgtaskschedulerpermittedidentifiers.md) key to the `Info.plist` disables the [`application(_:performFetchWithCompletionHandler:)`](./uiapplicationdelegate/application%28_,performfetchwithcompletionhandler%29.md) and [`setMinimumBackgroundFetchInterval(_:)`](./uiapplication/setminimumbackgroundfetchinterval%28_%29.md) methods.
 
-##### Register, schedule, and run tasks
+### Register, schedule, and run tasks
 
 For each task, provide the [`BGTaskScheduler`](../BackgroundTasks/bgtaskscheduler.md) object with a *launch handler* — a small block of code that runs the task — and a unique identifier. Register all of the tasks before the end of the app launch sequence. For more information, see [About the app launch sequence](./about-the-app-launch-sequence.md).
 

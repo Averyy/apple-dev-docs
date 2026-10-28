@@ -13,7 +13,7 @@
 kINQUIRY_PERIPHERAL_TYPE_ProcessorSPCDevice = 0x03
 ```
 
-#### Discussion
+## Discussion
 
 SPC Device.
 

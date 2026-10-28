@@ -24,11 +24,11 @@ final func setOrientation(_ rotation: Rotation3D, duration: Duration = .seconds(
 
 - [Modify rotation and positioning programmatically](../modify-rotation-and-positioning-behavior-programmatically.md)
 
-#### Return Value
+## Return Value
 
 A progress object that reports the progress towards the target orientation.
 
-#### Discussion
+## Discussion
 
 This method works only when you disable system tracking.
 

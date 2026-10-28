@@ -26,7 +26,7 @@ func presentLimitedLibraryPicker(from controller: UIViewController) async -> [St
 - (void) presentLimitedLibraryPickerFromViewController:(UIViewController *) controller completionHandler:(void (^)(NSArray<NSString *> *)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 If the user enabled limited library access using [`requestAuthorization(for:handler:)`](./requestauthorization%28for,handler%29.md), use this method to present the limited library picker so they can update their selection. If the user hasn’t enabled limited library access mode for your app, calling this method does nothing. Use this method when disabling the automatic limited library alert prompt. By default, the system automatically prompts the user to update their limited library selection once per app life cycle. To suppress the prompt, add `PHPhotoLibraryPreventAutomaticLimitedAccessAlert` to your app’s `Info.plist` file.
 

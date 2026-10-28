@@ -13,7 +13,7 @@ virtual void detachInterface(
  bool sync = false);
 ```
 
-#### Overview
+## Overview
 
 This method will verify that the object provided is indeed an IONetworkInterface instance, and then call its terminate() method. Note that an interface object will close and detach from its controller after the data link layer has removed all references to all data structures exposed by the interface. The interface object should be released following this call.
 

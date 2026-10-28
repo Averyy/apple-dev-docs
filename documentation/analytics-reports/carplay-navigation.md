@@ -5,7 +5,7 @@
 
 Analyze how often people start route-guidance sessions in your app.
 
-#### Overview
+## Overview
 
 This report contains aggregate information about navigation apps used in CarPlay and how often they start route guidance in a given CarPlay session.
 
@@ -22,7 +22,7 @@ This report contains aggregate information about navigation apps used in CarPlay
   - Individual rows will only appear if they have a value of 5 or more.
 - Data Context: You can analyze your data with additional context by comparing it with the data in the [App Sessions Context](./app-sessions-context.md) report, which provides a count of unique devices that use your app on a specific day. For example, if your app performed an action detailed in this report on 10 unique devices on a specific day, and the App Sessions Context report shows there were 100 unique devices running your app that day, then you can approximate that 10% of the devices running your app performed that action.
 
-#### Report Fields
+## Report Fields
 
 | Report Field | Description | Data Type |
 | --- | --- | --- |

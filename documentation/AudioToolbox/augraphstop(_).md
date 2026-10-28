@@ -26,11 +26,11 @@ func AUGraphStop(_ inGraph: AUGraph) -> OSStatus
 extern OSStatus AUGraphStop(AUGraph inGraph);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 
-#### Discussion
+## Discussion
 
 This function stops rendering by stopping the head node of an audio processing graph.
 

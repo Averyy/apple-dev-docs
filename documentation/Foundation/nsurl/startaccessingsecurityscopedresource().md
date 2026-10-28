@@ -25,11 +25,11 @@ func startAccessingSecurityScopedResource() -> Bool
 - (BOOL) startAccessingSecurityScopedResource;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the request to access the resource succeeded; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 When you obtain a security-scoped URL, such as by resolving a security-scoped bookmark, you can’t immediately use the resource it points to. To make the resource available to your app, by way of adding its location to your app’s sandbox, call this method on the security-scoped URL. You can also use Core Foundation equivalent, the [`CFURLStartAccessingSecurityScopedResource(_:)`](../../CoreFoundation/cfurlstartaccessingsecurityscopedresource%28_%29.md) function.
 

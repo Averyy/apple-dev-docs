@@ -22,7 +22,7 @@ nonisolated
 struct AutomaticFormStyle
 ```
 
-#### Overview
+## Overview
 
 Use the [`automatic`](./formstyle/automatic.md) static variable to create this style:
 

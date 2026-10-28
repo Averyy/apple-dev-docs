@@ -21,7 +21,7 @@ Returns the result of recomputing the view’s body with the provided animation,
 func withAnimation<Result>(_ animation: Animation? = .default, completionCriteria: AnimationCompletionCriteria = .logicallyComplete, _ body: () throws -> Result, completion: @escaping () -> Void) rethrows -> Result
 ```
 
-#### Discussion
+## Discussion
 
 This function sets the given [`Animation`](./animation.md) as the [`animation`](./transaction/animation.md) property of the thread’s current [`Transaction`](./transaction.md) as well as calling `Transaction/addAnimationCompletion` with the specified completion.
 

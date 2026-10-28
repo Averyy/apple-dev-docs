@@ -5,7 +5,7 @@
 
 Select an appropriate storage mode for your textures and buffers on Apple GPUs.
 
-#### Overview
+## Overview
 
 Apple GPUs have a unified memory model in which the CPU and the GPU share system memory. However, CPU and GPU access to that memory depends on the storage mode you choose for your resources. The [`MTLStorageMode.shared`](./mtlstoragemode/shared.md) mode defines system memory that both the CPU and the GPU can access. The [`MTLStorageMode.private`](./mtlstoragemode/private.md) mode defines system memory that only the GPU can access.
 
@@ -13,7 +13,7 @@ The [`MTLStorageMode.memoryless`](./mtlstoragemode/memoryless.md) mode defines t
 
 ![A diagram that shows the three types of Apple GPU resource storage modes: shared at the top, private in the middle, and memoryless at the bottom. The shared mode resource is in between a GPU and CPU with bidirectional arrows pointing to and from each. The private mode resource is next to a GPU with a bidirectional arrow between them. The memoryless mode resource appears inside a GPU’s tiled memory region.](https://developer.apple.com/tutorials/images/com.apple.metal/choosing-a-resource-storage-mode-for-apple-gpus-1@2x.png)
 
-##### Choose a resource storage mode for buffers or textures
+### Choose a resource storage mode for buffers or textures
 
 The storage mode you choose depends on how you plan to use Metal resources:
 
@@ -24,7 +24,7 @@ The storage mode you choose depends on how you plan to use Metal resources:
 
 For information on setting storage modes in your app, see [Setting resource storage modes](./setting-resource-storage-modes.md).
 
-##### Create a memoryless render target
+### Create a memoryless render target
 
 To create a memoryless render target, set the [`storageMode`](./mtltexturedescriptor/storagemode.md) property of an [`MTLTextureDescriptor`](./mtltexturedescriptor.md) to [`MTLStorageMode.memoryless`](./mtlstoragemode/memoryless.md) and use this descriptor to create a new [`MTLTexture`](./mtltexture.md). Then set this new texture as the [`texture`](./mtlrenderpassattachmentdescriptor/texture.md) property of an [`MTLRenderPassAttachmentDescriptor`](./mtlrenderpassattachmentdescriptor.md).
 

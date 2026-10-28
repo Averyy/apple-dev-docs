@@ -25,7 +25,7 @@ func NSLocationInRange(_ loc: Int, _ range: NSRange) -> Bool
 static BOOL NSLocationInRange(NSUInteger loc, NSRange range);
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../Swift/true.md) if `loc` lies within `range`—that is, if it’s greater than or equal to `range.location` and less than `range.location` plus `range.length`.
 

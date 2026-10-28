@@ -22,7 +22,7 @@ static var lookupSuggestion: UIDataDetectorTypes { get }
 UIDataDetectorTypeLookupSuggestion
 ```
 
-#### Discussion
+## Discussion
 
 Examples of lookup suggestions include the name of a restaurant, the title of a new movie, the name of a celebrity, and so on.
 

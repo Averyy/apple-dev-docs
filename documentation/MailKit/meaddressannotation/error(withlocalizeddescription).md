@@ -19,7 +19,7 @@ class func error(withLocalizedDescription localizedDescription: String) -> MEAdd
 + (MEAddressAnnotation *) errorWithLocalizedDescription:(NSString *) localizedDescription;
 ```
 
-#### Return Value
+## Return Value
 
 An annotation that indicates an email address is invalid and may result in failure to deliver a message.
 

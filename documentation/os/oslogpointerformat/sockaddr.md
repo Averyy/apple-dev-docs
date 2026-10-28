@@ -21,7 +21,7 @@ An option to display the pointer bytes as a socket address.
 case sockaddr
 ```
 
-#### Discussion
+## Discussion
 
 This option prints an easily readable `sockaddr` structure.
 

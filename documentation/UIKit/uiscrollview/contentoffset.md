@@ -27,7 +27,7 @@ var contentOffset: CGPoint { get set }
 
 - [Estimating the height of a table’s scrolling area](../estimating-the-height-of-a-table-s-scrolling-area.md)
 
-#### Discussion
+## Discussion
 
 The default value is [`CGPointZero`](../../CoreGraphics/cgpointzero.md).
 

@@ -24,7 +24,7 @@ var fireDate: Date { get }
 @property (nonatomic, copy, readonly) NSDate * fireDate;
 ```
 
-#### Discussion
+## Discussion
 
 Timer triggers are only set at the beginning of a minute. Seconds are not used and an error will be returned if the fire date includes a seconds value other than 0. When the timer fires, it will typically fire within 1 minute of the scheduled fire date or calculated recurrence fire date, depending on system power and resource management.
 

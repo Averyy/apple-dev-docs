@@ -25,7 +25,7 @@ struct MIDIThruConnectionEndpoint
 struct MIDIThruConnectionEndpoint;
 ```
 
-#### Overview
+## Overview
 
 Set the endpoint’s [`uniqueID`](./midithruconnectionendpoint/uniqueid.md) to 0 if the endpoint exists and you’re passing its [`endpointRef`](./midithruconnectionendpoint/endpointref.md). When retrieving a connection from Core MIDI, its [`endpointRef`](./midithruconnectionendpoint/endpointref.md) may be `NULL` if it doesn’t exist, but the [`uniqueID`](./midithruconnectionendpoint/uniqueid.md) is always non-zero.
 

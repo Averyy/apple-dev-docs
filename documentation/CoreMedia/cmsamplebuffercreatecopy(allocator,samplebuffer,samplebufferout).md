@@ -25,11 +25,11 @@ func CMSampleBufferCreateCopy(allocator: CFAllocator?, sampleBuffer sbuf: CMSamp
 extern OSStatus CMSampleBufferCreateCopy(CFAllocatorRef allocator, CMSampleBufferRef sbuf, CMSampleBufferRef*sampleBufferOut);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Sample Buffer Error Codes](./sample-buffer-errors.md).
 
-#### Discussion
+## Discussion
 
 The copy is shallow: scalar properties (sizes and timing) are copied directly, the data buffer and format description are retained, and the attachments that can be propagated are retained by the copy’s dictionary. If `sbuf’s` data isn’t ready, the copy will be set to track its readiness.
 

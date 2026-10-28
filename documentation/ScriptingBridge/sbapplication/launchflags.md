@@ -20,7 +20,7 @@ var launchFlags: LSLaunchFlags { get set }
 @property LSLaunchFlags launchFlags;
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see [Launch Services](../../coreservices/launch_services.md).
 

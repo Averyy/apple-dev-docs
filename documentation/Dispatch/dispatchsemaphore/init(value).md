@@ -25,11 +25,11 @@ init(value: Int)
 extern dispatch_semaphore_tdispatch_semaphore_create(intptr_t value);
 ```
 
-#### Return Value
+## Return Value
 
 The newly created semaphore.
 
-#### Discussion
+## Discussion
 
 Passing zero for the value is useful for when two threads need to reconcile the completion of a particular event. Passing a value greater than zero is useful for managing a finite pool of resources, where the pool size is equal to the value.
 

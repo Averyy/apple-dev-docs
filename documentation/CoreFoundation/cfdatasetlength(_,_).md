@@ -25,7 +25,7 @@ func CFDataSetLength(_ theData: CFMutableData!, _ length: CFIndex)
 extern void CFDataSetLength(CFMutableDataRef theData, CFIndex length);
 ```
 
-#### Discussion
+## Discussion
 
 This function resets the length of a CFMutableData object’s underlying byte buffer to a new size. If that size is less than the current size, it truncates the excess bytes. If that size is greater than the current size, it zero-fills the extension to the byte buffer.
 

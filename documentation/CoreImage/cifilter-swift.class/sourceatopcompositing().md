@@ -24,11 +24,11 @@ class func sourceAtopCompositing() -> any CIFilter & CICompositeOperation
 + (CIFilter<CICompositeOperation> *) sourceAtopCompositingFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The modified image.
 
-#### Discussion
+## Discussion
 
 This method applies the source-atop compositing filter to an image. The effect creates the result by overlaying the input image over the background image. The filter then removes the area that doesn’t overlap with the background image.
 

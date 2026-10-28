@@ -20,7 +20,7 @@ Creates an instance of AVAssetVideoTrackPlan.
 convenience init(videoCodecType: AVVideoCodecType, encoderSpecification: [String : any Sendable]? = nil, mediaType: AVMediaType, segmentConfigurations: [AVPlannedVideoSegmentConfiguration], assemblyTrackID: CMPersistentTrackID)
 ```
 
-#### Discussion
+## Discussion
 
 This initializer throws NSInvalidArgumentException in the following cases:
 

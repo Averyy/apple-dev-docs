@@ -19,7 +19,7 @@ var transportControlsPlaybackMode: AVCaptureDevice.TransportControlsPlaybackMode
 @property (nonatomic, readonly) AVCaptureDeviceTransportControlsPlaybackMode transportControlsPlaybackMode;
 ```
 
-#### Discussion
+## Discussion
 
 For devices that support transport control, query this property to discover the current playback mode.
 

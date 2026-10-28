@@ -24,7 +24,7 @@ class func statusForLegacyPlist(at url: URL) -> SMAppService.Status
 
 - [Updating helper executables from earlier versions of macOS](../updating-helper-executables-from-earlier-versions-of-macos.md)
 
-#### Return Value
+## Return Value
 
 One of the [`SMAppService.Status`](./status-swift.enum.md) constants that indicate the current authorization status.
 

@@ -20,7 +20,7 @@ set cameraZoomRange(value: CameraZoomRangeData | undefined | null);
 
 - [MapKit JS 5](../mapkit-js-5.md)
 
-#### Discussion
+## Discussion
 
 Get or set this property with a [`CameraZoomRange`](../camerazoomrange.md) instance, which is an object containing [`minCameraDistance`](../camerazoomrange/mincameradistance.md) and [`maxCameraDistance`](../camerazoomrange/maxcameradistance.md) properties.
 

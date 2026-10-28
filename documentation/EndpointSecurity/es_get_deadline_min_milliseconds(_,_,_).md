@@ -19,7 +19,7 @@ func es_get_deadline_min_milliseconds(_ client: OpaquePointer, _ event: es_event
 extern es_return_t es_get_deadline_min_milliseconds(es_client_t *client, es_event_type_t event, uint32_t *milliseconds);
 ```
 
-#### Return Value
+## Return Value
 
 ES_RETURN_SUCCESS on success, ES_RETURN_ERROR on failure or if client is not a descendants client
 

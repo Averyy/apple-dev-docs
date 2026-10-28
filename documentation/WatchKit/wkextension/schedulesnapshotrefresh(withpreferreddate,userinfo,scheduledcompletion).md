@@ -19,7 +19,7 @@ func scheduleSnapshotRefresh(withPreferredDate preferredFireDate: Date, userInfo
 - (void) scheduleSnapshotRefreshWithPreferredDate:(NSDate *) preferredFireDate userInfo:(id<NSObject,NSSecureCoding>) userInfo scheduledCompletion:(void (^)(NSError *error)) scheduledCompletion;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method to update your app’s snapshot in the background. When the task is triggered, the system wakes your app in the background and calls your extension delegate’s [`handle(_:)`](../wkextensiondelegate/handle%28_%29-92ulv.md) method. Use this task to transition to the interface controller you want to display in the snapshot, and to update that controller’s user interface.
 

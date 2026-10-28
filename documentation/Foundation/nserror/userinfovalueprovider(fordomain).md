@@ -25,7 +25,7 @@ class func userInfoValueProvider(forDomain errorDomain: String) -> (@Sendable (a
 + (id (^)(NSError *, NSString *)) userInfoValueProviderForDomain:(NSErrorDomain) errorDomain;
 ```
 
-#### Return Value
+## Return Value
 
 The user info provider of the error domain, or `nil` if none is specified.
 

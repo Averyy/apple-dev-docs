@@ -25,7 +25,7 @@ class Configuration
 @interface TKTokenConfiguration : NSObject
 ```
 
-#### Overview
+## Overview
 
 When you introduce a new [`TKToken.Configuration`](./configuration-swift.class.md) into the system, it can inform the system about its identities, consisting of both private keys and certificates, which the [`keychainItems`](./configuration-swift.class/keychainitems.md) property provides. Use the [`configurationData`](./configuration-swift.class/configurationdata.md) property to set additional configuration data.
 

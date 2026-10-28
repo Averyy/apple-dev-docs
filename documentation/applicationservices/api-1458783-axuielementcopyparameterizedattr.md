@@ -19,7 +19,7 @@ func AXUIElementCopyParameterizedAttributeNames(_ element: AXUIElement, _ names:
 AXError AXUIElementCopyParameterizedAttributeNames(AXUIElementRef element, CFArrayRef  _Nullable *names);
 ```
 
-#### Return Value
+## Return Value
 
 If unsuccessful, `AXUIElementCopyParameterizedAttributeNames` may return one of the following error codes, among others:
 

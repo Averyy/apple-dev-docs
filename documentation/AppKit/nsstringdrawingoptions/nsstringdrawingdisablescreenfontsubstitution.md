@@ -15,7 +15,7 @@ An option that disables screen font substitution.
 NSStringDrawingDisableScreenFontSubstitution
 ```
 
-#### Discussion
+## Discussion
 
 This option is equivalent to setting [`usesScreenFonts`](../nslayoutmanager/usesscreenfonts.md) to [`false`](../../Swift/false.md).
 

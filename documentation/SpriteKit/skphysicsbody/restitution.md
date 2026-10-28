@@ -25,7 +25,7 @@ var restitution: CGFloat { get set }
 @property (nonatomic) CGFloat restitution;
 ```
 
-#### Discussion
+## Discussion
 
 This property is used to determine how much energy the physics body loses when it bounces off another object. The property must be a value between `0.0` and `1.0`. The default value is `0.2`.
 

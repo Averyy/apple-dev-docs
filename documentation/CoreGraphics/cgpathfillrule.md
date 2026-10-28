@@ -21,7 +21,7 @@ Rules for determining which regions are interior to a path, used by the [`fillPa
 enum CGPathFillRule
 ```
 
-#### Overview
+## Overview
 
 When filling a path, regions that a fill rule defines as interior to the path are painted. When clipping with a path, regions interior to the path remain visible after clipping.
 

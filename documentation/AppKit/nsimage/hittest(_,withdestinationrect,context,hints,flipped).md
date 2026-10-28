@@ -19,11 +19,11 @@ func hitTest(_ testRectDestSpace: NSRect, withDestinationRect imageRectDestSpace
 - (BOOL) hitTestRect:(NSRect) testRectDestSpace withImageDestinationRect:(NSRect) imageRectDestSpace context:(NSGraphicsContext *) context hints:(NSDictionary<NSString *,id> *) hints flipped:(BOOL) flipped;
 ```
 
-#### Return Value
+## Return Value
 
 YES if the `testRectDestSpace` intersects with non-transparent content within the `imageRectDestSpace`, otherwise NO.
 
-#### Discussion
+## Discussion
 
 This method simulates the results of hit-testing the test rectangle as if the image was drawn in the graphics context using the provided hints and respecting the specified flippedness.
 

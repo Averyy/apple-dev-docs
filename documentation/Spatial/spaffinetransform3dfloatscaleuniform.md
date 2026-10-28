@@ -19,11 +19,11 @@
 static SPAffineTransform3DFloat SPAffineTransform3DFloatScaleUniform(SPAffineTransform3DFloat transform, float scale);
 ```
 
-#### Return Value
+## Return Value
 
 A transform that’s uniformly scaled by the specified value.
 
-#### Discussion
+## Discussion
 
 Returns an affine transform that’s constructed by concatenating an existing affine transform and a uniform scale.
 

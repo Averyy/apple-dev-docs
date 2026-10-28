@@ -22,7 +22,7 @@ nonisolated
 func withSerialExecutor<T, E>(_ operation: nonisolated(nonsending) (any SerialExecutor) async throws(E) -> T) async throws(E) -> T where E : Error, T : ~Copyable
 ```
 
-#### Discussion
+## Discussion
 
 This converts the actor’s [`unownedExecutor`](./unownedexecutor.md) to a [`SerialExecutor`](../serialexecutor.md) while retaining the actor for the duration of the operation. This is to ensure the lifetime of the executor while performing the operation.
 

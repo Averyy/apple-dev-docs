@@ -29,7 +29,7 @@ func handle(intent: INAddMediaIntent) async -> INAddMediaIntentResponse
 - (void) handleAddMedia:(INAddMediaIntent *) intent completion:(void (^)(INAddMediaIntentResponse *response)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to add the media item to the appropriate destination.
 

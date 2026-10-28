@@ -24,7 +24,7 @@ func VTMultiPassStorageGetTypeID() -> CFTypeID
 extern CFTypeID VTMultiPassStorageGetTypeID();
 ```
 
-#### Return Value
+## Return Value
 
 The `CFTypeID` of the multipass storage object.
 

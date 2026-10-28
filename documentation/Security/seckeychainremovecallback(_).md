@@ -21,11 +21,11 @@ func SecKeychainRemoveCallback(_ callbackFunction: SecKeychainCallback) -> OSSta
 OSStatus SecKeychainRemoveCallback(SecKeychainCallback callbackFunction);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
-#### Discussion
+## Discussion
 
 Once removed, keychain events are not sent to the owner of the callback.
 

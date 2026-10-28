@@ -18,11 +18,11 @@ Compares all members of two arrays with isEqualTo().
 bool isEqualTo(const OSArray *anArray) const;
 ```
 
-#### Return Value
+## Return Value
 
 True if both arrays have equal counts and all members compare successfully with isEqualTo.
 
-#### Discussion
+## Discussion
 
 If the arrays have equal counts, each member is compared with the other at the same index with isEqualTo(). Otherwise false is returned.
 

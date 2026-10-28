@@ -17,7 +17,7 @@ Encode a string to token IDs.
 func encode(_ text: String) async -> [Int]
 ```
 
-#### Return Value
+## Return Value
 
 Array of token IDs
 

@@ -20,7 +20,7 @@ Returns an already-loaded layer with this identifier, or `nil` if none is loaded
 static func find(identifier: String) -> USDLayer?
 ```
 
-#### Return Value
+## Return Value
 
 The matching layer, or `nil` if none is loaded.
 

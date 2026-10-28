@@ -5,13 +5,13 @@
 
 Build animation sequences that drive entity behavior across multiple tracks in Reality Composer Pro.
 
-#### Overview
+## Overview
 
 In Reality Composer Pro, a **sequence** is an asset that defines a series of animations you can apply to an entity. Reality Composer Pro includes pre-made **sequence actions** you can apply to entities to quickly add animations. In addition, you can create your own custom sequences tailored to your specific animation needs.
 
 You can build and design sequences in the Sequence Editor, where you can add and edit motion paths, animations, and movements. Apply a sequence to an entity. When you create a sequence, Reality Composer Pro prompts you to open an entity in your project.
 
-##### Create or open an animation sequence
+### Create or open an animation sequence
 
 1. In the Project Browser, control-click a folder, and then click **New** > **Animation** > **Sequence**.
 2. Type a name for the sequence and then press Return.
@@ -23,7 +23,7 @@ You can build and design sequences in the Sequence Editor, where you can add and
 
 ![A screenshot of Reality Composer Pro showing an animation sequence in the Project Browser.](https://developer.apple.com/tutorials/images/RealityComposerPro/AnimationProjectBrowser@2x.png)
 
-#### Browse the Animation Clips panel
+## Browse the Animation Clips panel
 
 The Animation Clips panel shows a list of compatible animations for the currently open sequence. After you add tracks to your sequence, drag clips from this panel directly onto tracks in the Sequence Editor.
 
@@ -31,24 +31,24 @@ The Animation Clips panel shows a list of compatible animations for the currentl
 
 ![A screenshot of Reality Composer Pro showing the Animation Clips panel with compatible animations listed for an open animation sequence.](https://developer.apple.com/tutorials/images/RealityComposerPro/OpenExistingAnimation@2x.png)
 
-#### Change animation sequence playback
+## Change animation sequence playback
 
 To sync a clip to a specific moment in your sequence, drag the left edge of a clip to set the **Trim Start**. To adjust the **Repeat Mode** and **Repeat Duration**, drag from the top of the right edge. To set the **Trim End**, drag from the bottom of the right edge. Hold Option while dragging the bottom-right edge to change the **Speed**. For actions, drag the right edge to adjust **Duration**.
 
-#### Change Sequence Editor display options
+## Change Sequence Editor display options
 
 Click **Options** (…) to change the following options:
 
 - Units — Frames or Seconds
 - Snap — Nodes to Ruler, Nodes to Nodes, Playhead to Ruler
 
-#### Add a sequence track
+## Add a sequence track
 
 To add a sequence track, click **[+]** in the lower left corner. Select a target entity in the preview tab and then click **Select**. In the Inspector, enter a name for the new track.
 
 To add a sub-track to an existing sequence track, click **[+]** in the lower right corner of the sequence track. In the Inspector, enter a name for the new sub-track.
 
-#### Add actions to a sequence
+## Add actions to a sequence
 
 Actions are predefined, modular parts you can add to a sequence track to perform different functions. Under **Animation Clips**, under **Actions**, drag an action onto a sequence track. Click the action to select it, then configure its parameters in the Inspector. Different actions have different parameters.
 
@@ -61,7 +61,7 @@ The following actions are available:
 
 ![A screenshot of Reality Composer Pro Animation Sequence Editor showing a Track with an Animation Motion Path.](https://developer.apple.com/tutorials/images/RealityComposerPro/AnimationMotionPath2@2x.png)
 
-#### Configure sequence properties
+## Configure sequence properties
 
 The Sequence Settings control the global properties and target assignment for the sequence.
 
@@ -69,13 +69,13 @@ The Sequence Settings control the global properties and target assignment for th
 
 **Speed** Playback speed multiplier for the entire sequence. 1 is normal playback, 2 doubles playback speed, and so forth. Lower numbers reduce playback speed.
 
-#### Configure track properties
+## Configure track properties
 
 Track properties let you turn a selected track on or off (mute). **Name** The name of the selected track.
 
 **Mute** When toggled, disables the track.
 
-#### Configure clip properties
+## Configure clip properties
 
 The Animation Clip Properties provide controls for configuring animation clips on the Sequence Editor timeline.
 

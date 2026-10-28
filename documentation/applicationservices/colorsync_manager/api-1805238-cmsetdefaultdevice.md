@@ -14,11 +14,11 @@ CMError CMSetDefaultDevice (
 );
 ```
 
-#### Return Value
+## Return Value
 
 A `CMError` value. See [Result Codes](../colorsync_manager.md#1670295).
 
-#### Overview
+## Overview
 
 For each class of device, a device management layer may establish which of the registered devices is the default. This helps keep color management choices to a minimum and allows for some "automatic" features to be enabled, such as, "Default printer" as an output profile selection. If no such device (as specified by deviceClass and deviceID ) has been registered, an error is returned. 
 

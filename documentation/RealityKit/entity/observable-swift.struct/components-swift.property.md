@@ -20,7 +20,7 @@ The components an entity manages, enabling observation of their presence and val
 var components: Entity.Observable.Components { get set }
 ```
 
-#### Discussion
+## Discussion
 
 This property provides a direct interface to the entity’s components. When you read a component through this property’s accessor, it marks that component type as accessed for observation. Observers trigger when you modify any accessed component.
 

@@ -18,7 +18,7 @@ File names, relative to the model directory.
 var additionalWeightFiles: [String] { get }
 ```
 
-#### Discussion
+## Discussion
 
 They are loaded after the selected weight files, so a file that is already selected is not loaded twice, and names that are not present are ignored.
 

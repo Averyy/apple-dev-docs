@@ -20,7 +20,7 @@ The identifier of this joint.
 final let id: IKComponent.Joint.ID
 ```
 
-#### Discussion
+## Discussion
 
 Matches the value of the joint in the rig [`id`](../../ikrig/joint/id-swift.property.md).
 

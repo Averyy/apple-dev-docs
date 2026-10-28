@@ -27,7 +27,7 @@ func BNNSFilterCreateLayerResize(_ layer_params: UnsafePointer<BNNSLayerParamete
 BNNSFilterBNNSFilterCreateLayerResize(const BNNSLayerParametersResize *layer_params, const BNNSFilterParameters *filter_params);
 ```
 
-#### Discussion
+## Discussion
 
 Use a resize layer to copy data between two differently sized tensors using a specified interpolation method. Resized dimensions must all either upsample or downsample; the resize layer doesn’t support combining both directions in a single operation.
 

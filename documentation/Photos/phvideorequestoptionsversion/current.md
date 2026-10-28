@@ -24,7 +24,7 @@ case current
 PHVideoRequestOptionsVersionCurrent
 ```
 
-#### Discussion
+## Discussion
 
 The resulting video is the rendered output from all previously made adjustments.
 

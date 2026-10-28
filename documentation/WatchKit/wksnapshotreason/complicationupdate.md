@@ -19,7 +19,7 @@ case complicationUpdate
 WKSnapshotReasonComplicationUpdate
 ```
 
-#### Discussion
+## Discussion
 
 These snapshot refresh tasks are only triggered when the WatchKit extension has a complication on the current watch face.
 

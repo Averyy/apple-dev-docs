@@ -5,11 +5,11 @@
 
 Detects when an enumeration variable has an invalid value.
 
-#### Overview
+## Overview
 
 In Xcode 9 and later, you can use this check to detect accesses of an enumeration variable when its value isn’t within the valid range for the type. This can occur for uninitialized enumeration values, or when using an integer as an enumeration value without an appropriate cast. The use of out-of-range enumeration values has undefined behavior, and may indicate the existence of logic errors in a program.
 
-##### Invalid enumeration variable access in C++
+### Invalid enumeration variable access in C++
 
 In the following example, the cast to the `E` type is invalid because `2` isn’t within the enumeration’s range:
 
@@ -22,7 +22,7 @@ enum E *e = (enum E *)&value;
 return *e; // Error: 2 is out of the valid range for E
 ```
 
-###### Solution
+#### Solution
 
 Ensure that enumeration variables only use values within their defined ranges.
 

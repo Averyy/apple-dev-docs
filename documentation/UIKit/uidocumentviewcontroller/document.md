@@ -22,7 +22,7 @@ var document: UIDocument? { get set }
 @property (nonatomic, strong, nullable) UIDocument * document;
 ```
 
-#### Discussion
+## Discussion
 
 This property represents the document that the document view controller displays. The default value of this property is `nil`. When the value of the `document` property is `nil`, the document view controller presents an empty state view with a message to “Select a document by tapping the ‘Documents’ button at the top.”
 

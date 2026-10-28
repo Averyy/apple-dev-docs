@@ -29,7 +29,7 @@ class UISegmentedControl
 - [About app development with UIKit](./about-app-development-with-uikit.md)
 - [Attaching gesture recognizers to UIKit controls](./attaching-gesture-recognizers-to-uikit-controls.md)
 
-#### Overview
+## Overview
 
 A segmented control can display a title (an [`NSString`](../Foundation/nsstring.md) object) or an image ([`UIImage`](./uiimage.md) object). The [`UISegmentedControl`](./uisegmentedcontrol.md) object automatically resizes segments to fit proportionally within their superview unless they have a specific width set. When you add and remove segments, you can request that the action be animated with sliding and fading effects.
 
@@ -54,7 +54,7 @@ How you configure a segmented control can affect its display behavior:
 - If you set a segmented control to have a momentary style, a segment doesn’t show itself as selected (blue background) when the user touches it. The disclosure button is always momentary and doesn’t affect the actual selection.
 - In versions of iOS prior to 3.0, if a segmented control has only two segments, then it behaves like a switch — tapping the currently-selected segment causes the other segment to be selected. In iOS 3.0 and later, tapping the currently-selected segment doesn’t cause the other segment to be selected.
 
-##### Customize appearance
+### Customize appearance
 
 You can customize the appearance of segmented controls using the methods listed in [Customizing appearance](./uisegmentedcontrol.md#Customizing-appearance). You can customize the appearance of all segmented controls using the appearance proxy (for example, `[UISegmentedControl appearance]`), or just of a single control.
 

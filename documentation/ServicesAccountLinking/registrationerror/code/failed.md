@@ -21,7 +21,7 @@ case failed
 SALRegistrationErrorFailed
 ```
 
-#### Discussion
+## Discussion
 
 This may indicate the user is not signed into an Apple Media & Purchases account or another system error occurred. Implement retry logic with appropriate user messaging.
 

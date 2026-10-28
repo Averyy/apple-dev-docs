@@ -25,7 +25,7 @@ var entityMappings: [NSEntityMapping]! { get set }
 @property (strong, null_resettable) NSArray<NSEntityMapping *> * entityMappings;
 ```
 
-#### Discussion
+## Discussion
 
 The order of the mappings in the array determines the order in which they will be processed during migration.
 

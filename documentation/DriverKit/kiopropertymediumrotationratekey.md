@@ -16,7 +16,7 @@
 #define kIOPropertyMediumRotationRateKey
 ```
 
-#### Discussion
+## Discussion
 
 This key is used to indicate the medium rotation rate in RPM of the device.
 

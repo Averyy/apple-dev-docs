@@ -24,7 +24,7 @@ static var unspecialized: MTLColorWriteMask { get }
 MTLColorWriteMaskUnspecialized
 ```
 
-#### Discussion
+## Discussion
 
 Until you specialize this value in the pipeline state, it behaves as `MTLColorWriteMaskAll`.
 

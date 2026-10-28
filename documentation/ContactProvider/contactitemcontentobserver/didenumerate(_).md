@@ -17,7 +17,7 @@ Provides an array of contact items to the observer.
 func didEnumerate(_: [ContactItem])
 ```
 
-#### Discussion
+## Discussion
 
 You can call this method multiple times to fulfill the [`suggestedPageSize`](./suggestedpagesize.md).
 

@@ -5,7 +5,7 @@
 
 Use features of the source editor to help you write, navigate, document, and understand code more quickly.
 
-#### Overview
+## Overview
 
 As you write code, you can save time by using code completion and code snippets that Xcode provides for you. Also take advantage of the jump bar and minimap features to navigate quickly around your project files. Then add comments to your code so that you can view them in Quick Help, and generate documentation later.
 
@@ -13,7 +13,7 @@ To get started, select a source file in the Project navigator and Xcode opens it
 
 To configure the project window with multiple editors and assistants, see [Configuring the Xcode project window](./configuring-the-xcode-project-window.md). To use coding intelligence to generate code, playgrounds, previews, and documentation, see [Writing code with intelligence in Xcode](./writing-code-with-intelligence-in-xcode.md).
 
-##### Enter code using code completion
+### Enter code using code completion
 
 As you type code in the source editor, use code completion to assist with variable and function names. When you use code completion for a method or function with parameters, Xcode provides a placeholder for each parameter that you need to add.
 
@@ -25,7 +25,7 @@ In Swift files, predictive code completion offers code suggestions at your inser
 
 You can customize or disable code completion by choosing Xcode > Settings > Editing > Completion.
 
-##### Add and create reusable code snippets
+### Add and create reusable code snippets
 
 For common code structures, Xcode provides preexisting code snippets you can insert into your code, or you can create your own.
 
@@ -50,7 +50,7 @@ To create your own code snippet:
 
 To delete a code snippet that you create, select it in the library sidebar and click Delete.
 
-##### Annotate your code for visibility
+### Annotate your code for visibility
 
 The jump bar and the minimap each provide a quick visual way to navigate your code in the source editor. To show the minimap that appears on the right of the source editor, choose Minimap from the Adjust Editor Options menu on the right of the editor toolbar.
 
@@ -85,7 +85,7 @@ In addition to the organizational benefits, consistent use of `MARK`, `TODO`, an
 
 For Objective-C, use the `#pragma mark`, `#pragma fixme`, and `#pragma todo` macros instead.
 
-##### Add Quick Help comments to your code
+### Add Quick Help comments to your code
 
 You can use Quick Help to learn about existing APIs and document your own symbols for yourself or other developers. To view Quick Help, Control-click a symbol and choose Show Quick Help from the contextual menu.
 

@@ -20,11 +20,11 @@ func SecCodeCopySelf(_ flags: SecCSFlags, _ self: UnsafeMutablePointer<SecCode?>
 OSStatus SecCodeCopySelf(SecCSFlags flags, SecCodeRef*self);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Code Signing Services Result Codes](./code-signing-services-result-codes.md).
 
-#### Discussion
+## Discussion
 
 A code object (that is, an object of type [`SecCode`](./seccode.md)) represents code that is running on the system. The code can be a UNIX process, a script, an applet, a widget, or any other separately-identifiable code. You can use the code object returned by this function as input to other functions in the Code Signing Services API. This function returns a code object for the code that calls it regardless of whether the code is signed. Call the [`SecCodeCheckValidity(_:_:_:)`](./seccodecheckvalidity%28_,_,_%29.md) or [`SecCodeCheckValidityWithErrors(_:_:_:_:)`](./seccodecheckvaliditywitherrors%28_,_,_,_%29.md) function to determine whether the code has a valid signature.
 

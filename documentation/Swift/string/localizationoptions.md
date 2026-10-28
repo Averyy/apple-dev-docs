@@ -21,7 +21,7 @@ Options to apply when initializing a localized string.
 struct LocalizationOptions
 ```
 
-#### Overview
+## Overview
 
 Use this type to configure how the system localizes strings. You can use the [`replacements`](./localizationoptions/replacements.md) property to provide replacement values for localizable strings that use the `\(placeholder:)` syntax.
 

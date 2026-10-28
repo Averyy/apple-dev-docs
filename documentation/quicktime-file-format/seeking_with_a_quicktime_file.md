@@ -5,7 +5,7 @@
 
 Seek with a QuickTime file using child atoms.
 
-#### Overview
+## Overview
 
 Seeking with a QuickTime file is accomplished primarily by using the child atoms contained in the sample table atom. If an edit list is present, it must also be consulted. If you want to seek a given track to a time `T`, where `T` is in the time scale of the movie header atom, you could perform the following operations:
 

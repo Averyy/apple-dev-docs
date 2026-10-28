@@ -20,7 +20,7 @@ Creates a view that shows suggested actions for the specified message.
 init(message: SuggestedActionsMessage, previousMessages: [SuggestedActionsMessage] = [])
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer to present suggested actions that the framework generates for a provided message. The Suggested Actions framework analyzes the message, and previous messages you provide as additional context, then shows relevant actions that a person can take.
 

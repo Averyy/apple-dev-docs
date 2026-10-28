@@ -5,7 +5,7 @@
 
 Create and manage a VPN configuration that uses one of the built-in VPN protocols (IPsec or IKEv2).
 
-#### Overview
+## Overview
 
 With the Personal VPN feature in macOS and iOS, your app can create and manage a VPN configuration that uses one of the built-in VPN protocols (IPsec or IKEv2). The user must explicitly authorize your app the first time it saves a VPN configuration.
 

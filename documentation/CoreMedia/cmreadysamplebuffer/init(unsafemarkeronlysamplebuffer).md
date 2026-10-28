@@ -23,7 +23,7 @@ init(unsafeMarkerOnlySampleBuffer unsafeBuffer: sending CMSampleBuffer)
 
 Available when `Content` is `Never`.
 
-#### Discussion
+## Discussion
 
 Marker sample buffers have no content and no format description.
 

@@ -22,7 +22,7 @@ var deliversPreviewSizedOutputBuffers: Bool { get set }
 @property (nonatomic) BOOL deliversPreviewSizedOutputBuffers;
 ```
 
-#### Discussion
+## Discussion
 
 [`AVCaptureVideoDataOutput`](../avcapturevideodataoutput.md) produces preview-sized buffers, which are approximately the size of the screen, when its [`automaticallyConfiguresOutputBufferDimensions`](./automaticallyconfiguresoutputbufferdimensions.md) property is [`true`](../../Swift/true.md). If you wish to manually set this property, you must first set [`automaticallyConfiguresOutputBufferDimensions`](./automaticallyconfiguresoutputbufferdimensions.md) to [`false`](../../Swift/false.md).
 

@@ -24,7 +24,7 @@ case failureNoUnplayedContent
 INPlayMediaIntentResponseCodeFailureNoUnplayedContent
 ```
 
-#### Discussion
+## Discussion
 
 Respond with this code when a media container such as a playlist has no unplayed media items.
 

@@ -22,7 +22,7 @@ nonisolated
 func contentMarginsRemoved(_ removed: Bool = true) -> some ToolbarContent
 ```
 
-#### Discussion
+## Discussion
 
 Use this modifier to remove the default padding around a toolbar item’s content. This is useful for content that goes to the edge of the item.
 

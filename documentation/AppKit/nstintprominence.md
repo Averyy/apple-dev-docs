@@ -19,7 +19,7 @@ enum NSTintProminence
 enum NSTintProminence : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 A tint prominence of `primary` will use the app’s tint color with full saturation and brightness, while `secondary` will apply it more subtly. Using `none` gives an untinted appearance.
 

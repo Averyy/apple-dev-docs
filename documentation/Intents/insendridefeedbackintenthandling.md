@@ -22,7 +22,7 @@ protocol INSendRideFeedbackIntentHandling : NSObjectProtocol
 @protocol INSendRideFeedbackIntentHandling <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Use the methods of the [`INSendRideFeedbackIntentHandling`](./insendridefeedbackintenthandling.md) protocol to confirm and handle requests to send feedback about a ride to your service. Adopt this protocol in an object of your Intents extension that is capable of conveying the feedback to your service.
 

@@ -19,7 +19,7 @@ var title: String { get set }
 @property (copy) NSString * title;
 ```
 
-#### Discussion
+## Discussion
 
 The method you use to create the combo button sets the initial value of this property.
 

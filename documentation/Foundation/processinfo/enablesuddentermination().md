@@ -19,7 +19,7 @@ func enableSuddenTermination()
 - (void) enableSuddenTermination;
 ```
 
-#### Discussion
+## Discussion
 
 This method decrements the sudden termination counter. When the termination counter reaches `0` the application allows sudden termination.
 

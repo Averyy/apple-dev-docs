@@ -5,7 +5,7 @@
 
 Get assets, asset collections, and collection lists matching a specified query.
 
-#### Overview
+## Overview
 
 Instances of the model classes [`PHAsset`](../Photos/phasset.md), [`PHAssetCollection`](../Photos/phassetcollection.md), and [`PHCollectionList`](../Photos/phcollectionlist.md) represent the items a user works with in the Photos app:
 
@@ -15,11 +15,11 @@ Instances of the model classes [`PHAsset`](../Photos/phasset.md), [`PHAssetColle
 
 Instances of these classes are read-only and immutable, and contain only metadata. Use these classes to fetch a set of objects matching a specified query.
 
-##### Commit Change Requests to the Shared Photo Library
+### Commit Change Requests to the Shared Photo Library
 
 Fetch assets and collections you’re interested in, and use those objects to fetch the raw data you need to reference or edit. To make changes, create change request objects and explicitly commit them to the shared [`PHPhotoLibrary`](../Photos/phphotolibrary.md) object. This architecture makes it easy, safe, and efficient to work with the same assets from multiple threads or multiple apps and app extensions.
 
-##### Handle Special Assets
+### Handle Special Assets
 
 PhotoKit supports a number of Photos app features for working directly with a user’s Photos library. For example, Live Photos are special assets with additional data that your app can display differently, as a video or sequence of frames.
 

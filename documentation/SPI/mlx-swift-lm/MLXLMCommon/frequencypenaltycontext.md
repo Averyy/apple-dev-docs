@@ -17,7 +17,7 @@ Processor that applies an additive frequency penalty to tokens in a recent conte
 struct FrequencyPenaltyContext
 ```
 
-#### Overview
+## Overview
 
 Frequency counting is performed on GPU via `scatter_add` to build a histogram of token occurrences, avoiding CPU←GPU synchronization.
 

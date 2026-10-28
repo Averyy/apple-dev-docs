@@ -26,7 +26,7 @@ class CLKWatchFaceLibrary
 
 - [Sharing an Apple Watch face](./sharing-an-apple-watch-face.md)
 
-#### Overview
+## Overview
 
 Use a [`CLKWatchFaceLibrary`](./clkwatchfacelibrary.md) object to add an existing .`watchface` file to the Watch app. Add watch faces only on devices that support pairing with an Apple Watch.
 

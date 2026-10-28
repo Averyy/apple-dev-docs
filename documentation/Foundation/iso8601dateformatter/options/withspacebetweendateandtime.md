@@ -23,7 +23,7 @@ static var withSpaceBetweenDateAndTime: ISO8601DateFormatter.Options { get }
 NSISO8601DateFormatWithSpaceBetweenDateAndTime
 ```
 
-#### Discussion
+## Discussion
 
 The date representation uses a space (` `) instead of `T` between the date and time.
 

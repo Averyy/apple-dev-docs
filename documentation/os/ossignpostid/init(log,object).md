@@ -23,7 +23,7 @@ Creates a signpost ID and associates it with the specified object.
 init(log: OSLog, object: AnyObject)
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  Don’t use this method if your signpost IDs cross process boundaries.
 

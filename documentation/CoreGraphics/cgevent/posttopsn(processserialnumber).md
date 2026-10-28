@@ -20,7 +20,7 @@ func postToPSN(processSerialNumber: UnsafeMutableRawPointer?)
 extern void CGEventPostToPSN(void *processSerialNumber, CGEventRef event);
 ```
 
-#### Discussion
+## Discussion
 
 This function makes it possible for an application to establish an event routing policy, for example, by tapping events at the `kCGAnnotatedSessionEventTap` location and then posting the events to another desired process.
 

@@ -25,7 +25,7 @@ var shareURLs: [URL]? { get set }
 @property (nonatomic, copy, nullable) NSArray<NSURL *> * shareURLs;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to view or change the URLs of the shares to fetch. If you intend to specify or change this property’s value, do so before you execute the operation or submit it to a queue.
 

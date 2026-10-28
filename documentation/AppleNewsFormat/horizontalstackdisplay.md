@@ -19,7 +19,7 @@ object HorizontalStackDisplay
 
 - [Displaying Components Side By Side](../AppleNews/displaying-components-side-by-side.md)
 
-#### Discussion
+## Discussion
 
 Use the `HorizontalStackDisplay` object in a container component for displaying components side by side.
 
@@ -31,7 +31,7 @@ To redistribute the empty space inside a horizontal stack collection, use the [`
 
 This object can be used in [`Header`](./header.md), [`Container`](./container.md), [`Section`](./section.md), [`Chapter`](./chapter.md), [`Aside`](./aside.md), and [`ArticleLink`](./articlelink.md).
 
-##### Example
+### Example
 
 ```json
 {

@@ -25,7 +25,7 @@ class MPRemoteCommand
 @interface MPRemoteCommand : NSObject
 ```
 
-#### Overview
+## Overview
 
 The Media Player framework defines a standard set of remote command objects for handling media-related events. When an accessory or iOS user interface generates a remote control event, the system notifies the corresponding command object on the shared [`MPRemoteCommandCenter`](./mpremotecommandcenter.md) instance. That command object executes any attached handlers.
 

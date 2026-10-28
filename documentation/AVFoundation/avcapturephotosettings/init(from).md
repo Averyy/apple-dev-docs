@@ -23,11 +23,11 @@ convenience init(from photoSettings: AVCapturePhotoSettings)
 + (instancetype) photoSettingsFromPhotoSettings:(AVCapturePhotoSettings *) photoSettings;
 ```
 
-#### Return Value
+## Return Value
 
 A new photo settings object.
 
-#### Discussion
+## Discussion
 
 It is illegal to reuse a [`AVCapturePhotoSettings`](../avcapturephotosettings.md) instance for multiple captures. Calling the [`capturePhoto(with:delegate:)`](../avcapturephotooutput/capturephoto%28with,delegate%29.md) method throws an exception if the [`uniqueID`](./uniqueid.md) value of the `settings` parameter matches that of any previously used settings object.
 

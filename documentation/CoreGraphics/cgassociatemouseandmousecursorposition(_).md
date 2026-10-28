@@ -20,11 +20,11 @@ func CGAssociateMouseAndMouseCursorPosition(_ connected: boolean_t) -> CGError
 extern CGError CGAssociateMouseAndMouseCursorPosition(boolean_t connected);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. To interpret the result code, see [`CGError`](./cgerror.md).
 
-#### Discussion
+## Discussion
 
 Call this function to disconnect the mouse from the cursor. When you call this function, the events your application receives from the system have a constant absolute location but contain delta updates to the X and Y coordinates of the mouse. You can hide the cursor or change it into something appropriate for your application. You can reposition the cursor by using the function [`CGDisplayMoveCursorToPoint(_:_:)`](./cgdisplaymovecursortopoint%28_,_%29.md) or the function [`CGWarpMouseCursorPosition(_:)`](./cgwarpmousecursorposition%28_%29.md).
 

@@ -22,7 +22,7 @@ var size: AVCaptionSize { get }
 @property (nonatomic, readonly) AVCaptionSize size;
 ```
 
-#### Discussion
+## Discussion
 
 CEA608 closed captions limit the [`height`](../avcaptionsize/height.md) property’s value to 1 cell, except when the value of its [`scroll`](./scroll-swift.property.md) property is [`AVCaptionRegion.Scroll.rollUp`](./scroll-swift.enum/rollup.md). In this case, the [`height`](../avcaptionsize/height.md) property’s value must be 2, 3 or 4 cells.
 

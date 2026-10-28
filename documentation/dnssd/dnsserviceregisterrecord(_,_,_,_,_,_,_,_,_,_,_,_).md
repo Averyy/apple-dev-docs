@@ -25,11 +25,11 @@ func DNSServiceRegisterRecord(_ sdRef: DNSServiceRef!, _ RecordRef: UnsafeMutabl
 DNSServiceErrorType DNSServiceRegisterRecord(DNSServiceRef sdRef, DNSRecordRef*RecordRef, DNSServiceFlags flags, uint32_t interfaceIndex, const char *fullname, uint16_t rrtype, uint16_t rrclass, uint16_t rdlen, const void *rdata, uint32_t ttl, DNSServiceRegisterRecordReply callBack, void *context);
 ```
 
-#### Return Value
+## Return Value
 
 Returns [`kDNSServiceErr_NoError`](./kdnsserviceerr_noerror.md) on success (any subsequent, asynchronous errors are delivered to the callback), otherwise returns an error code indicating the error that occurred (the callback is never invoked and the DNSRecordRef is not initialized).
 
-#### Discussion
+## Discussion
 
 Note that name conflicts occurring for records registered via this call must be handled by the client in the callback.
 

@@ -25,7 +25,7 @@ var interstitialEvent: AVPlayerInterstitialEvent? { get }
 @property (nonatomic, readonly, nullable) AVPlayerInterstitialEvent * interstitialEvent;
 ```
 
-#### Discussion
+## Discussion
 
 This value is `nil` for segments that represent playback of the primary item.
 

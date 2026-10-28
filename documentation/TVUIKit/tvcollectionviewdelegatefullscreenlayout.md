@@ -19,7 +19,7 @@ protocol TVCollectionViewDelegateFullScreenLayout : UICollectionViewDelegate
 @protocol TVCollectionViewDelegateFullScreenLayout <UICollectionViewDelegate>
 ```
 
-#### Overview
+## Overview
 
 The methods contained in this protocol help you manage and control cell transitions.
 

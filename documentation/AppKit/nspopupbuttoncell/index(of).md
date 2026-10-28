@@ -19,7 +19,7 @@ func index(of item: NSMenuItem) -> Int
 - (NSInteger) indexOfItem:(NSMenuItem *) item;
 ```
 
-#### Return Value
+## Return Value
 
 The index of the item or `-1` if no such item was found.
 

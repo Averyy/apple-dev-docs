@@ -25,11 +25,11 @@ func withSubstitutionVariables(_ variables: [String : Any]) -> Self
 - (instancetype) predicateWithSubstitutionVariables:(NSDictionary<NSString *,id> *) variables;
 ```
 
-#### Return Value
+## Return Value
 
 A copy of the receiver with the predicate’s variables substituted by values specified in `variables`.
 
-#### Discussion
+## Discussion
 
 The predicate itself is not modified by this method, so you can reuse it for any number of substitutions.
 

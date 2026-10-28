@@ -24,7 +24,7 @@ var authenticationToken: String? { get }
 @property (nonatomic, copy, readonly, nullable) NSString * authenticationToken;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to store an authentication token for your web service. When the device requests an updated copy of the pass, the request’s header includes this authorization token. Use this token to verify that the request is from a valid device and not from an unauthorized source.
 

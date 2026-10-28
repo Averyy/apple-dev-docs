@@ -25,7 +25,7 @@ func CFBitVectorSetCount(_ bv: CFMutableBitVector!, _ count: CFIndex)
 extern void CFBitVectorSetCount(CFMutableBitVectorRef bv, CFIndex count);
 ```
 
-#### Discussion
+## Discussion
 
 If `bv` was created with a fixed capacity, you cannot increase its size beyond that capacity.
 

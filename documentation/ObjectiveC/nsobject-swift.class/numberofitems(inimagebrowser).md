@@ -19,11 +19,11 @@ func numberOfItems(inImageBrowser aBrowser: IKImageBrowserView!) -> Int
 - (NSUInteger) numberOfItemsInImageBrowser:(IKImageBrowserView *) aBrowser;
 ```
 
-#### Return Value
+## Return Value
 
 The number of records managed by the image browser view.
 
-#### Discussion
+## Discussion
 
 Your data source must implement this method. An  [`IKImageView`](../../Quartz/ikimageview.md) object uses this method to determine how many cells it should create and display.
 

@@ -23,7 +23,7 @@ class CAEDRMetadata
 @interface CAEDRMetadata : NSObject
 ```
 
-#### Overview
+## Overview
 
 If you need specific tone-mapping behavior, set the [`edrMetadata`](./cametallayer/edrmetadata.md) property of a [`CAMetalLayer`](./cametallayer.md) to point to an instance of this class.
 

@@ -23,7 +23,7 @@ var numberOfSections: Int { get }
 @property (nonatomic, readonly) NSInteger numberOfSections;
 ```
 
-#### Discussion
+## Discussion
 
 [`UITableView`](../uitableview.md) gets the value in this property from its data source and caches it.
 

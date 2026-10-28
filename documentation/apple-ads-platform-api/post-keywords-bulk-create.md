@@ -9,15 +9,15 @@ Creates multiple keywords in a single request.
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Discussion
+## Discussion
 
 This endpoint creates multiple keywords in a single request. Each item in the `items` array contains a `correlationId` and a `data` object with the keyword fields. The `adGroupId` and `text` fields are required per item. You can optionally set `bid` to override the ad group’s default bid.
 
 A single request can create keywords across different ad groups. This makes the endpoint well-suited for seeding a new campaign structure with a full keyword list in one call, rather than creating keywords one ad group at a time.
 
-#### Payload Examples
+## Payload Examples
 
-##### Request
+### Request
 
 Create three keywords with different match types.
 
@@ -66,7 +66,7 @@ POST /v1/keywords/bulk-create
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {

@@ -23,7 +23,7 @@ func ABAddressBookRequestAccessWithCompletion(_ addressBook: ABAddressBook!, _ c
 extern void ABAddressBookRequestAccessWithCompletion(ABAddressBookRef addressBook, ABAddressBookRequestAccessCompletionHandler completion);
 ```
 
-#### Discussion
+## Discussion
 
 Use this function to request access to address book data. This call will not block while the user is being asked for access, allowing your app to continue running. Until access has been granted, any address book references your app has will not contain any data, and any attempt to modify data will fail with an error type of [`kABOperationNotPermittedByUserError`](./kaboperationnotpermittedbyusererror.md). The user is only asked for permission the first time you request access. Later calls use the permission granted by the user.
 

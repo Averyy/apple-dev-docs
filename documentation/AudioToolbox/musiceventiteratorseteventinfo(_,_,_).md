@@ -24,11 +24,11 @@ func MusicEventIteratorSetEventInfo(_ inIterator: MusicEventIterator, _ inEventT
 extern OSStatus MusicEventIteratorSetEventInfo(MusicEventIterator inIterator, MusicEventType inEventType, const void *inEventData);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 
-#### Discussion
+## Discussion
 
 Use this function to set the music event type and event data for the event that a music event iterator is positioned at. This function doesn’t allow you to change an event’s timestamp; to do that, call the [`MusicEventIteratorSetEventTime(_:_:)`](./musiceventiteratorseteventtime%28_,_%29.md) function.
 

@@ -25,7 +25,7 @@ typealias CVPixelBufferReleaseBytesCallback = (UnsafeMutableRawPointer?, UnsafeR
 typedef void (*)(void *, const void *) CVPixelBufferReleaseBytesCallback;
 ```
 
-#### Discussion
+## Discussion
 
 When you create a pixel buffer using [`CVPixelBufferCreateWithBytes(_:_:_:_:_:_:_:_:_:_:)`](./cvpixelbuffercreatewithbytes%28_,_,_,_,_,_,_,_,_,_%29.md), you can optionally pass a callback function that’s invoked when the system frees the pixel buffer. Use this callback function to release the pixel data and perform any other cleanup needed when the buffer is released.
 

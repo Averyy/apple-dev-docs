@@ -5,13 +5,13 @@
 
 Add and configure an Intents app extension in your Xcode project.
 
-#### Overview
+## Overview
 
 Interactions with SiriKit occur through your Intents app extension, which you deliver inside your iOS or watchOS app bundle. The Intents app extension handles most interactions with SiriKit. However, your app needs to be aware of those interactions and in some cases may have an active role in making them happen.
 
 Configuring your Xcode project requires several steps. In addition to adding an Intents app extension target to your project, you must make some minor changes to your app as well.
 
-##### Enable the Siri Capability
+### Enable the Siri Capability
 
 Enabling the Siri capability adds a set of entitlements to your app. The App Store requires the presence of these entitlements for any iOS app or watchOS app containing an Intents extension.
 
@@ -22,7 +22,7 @@ Enabling the Siri capability adds a set of entitlements to your app. The App Sto
 
 ![A screenshot of Xcode with the Capabilities pane of the Project editor active, and the Siri capability enabled.](https://developer.apple.com/tutorials/images/com.apple.sirikit/media-2910037@2x.png)
 
-##### Add an Intents App Extension to Your Project
+### Add an Intents App Extension to Your Project
 
 Adding an Intents app extension target provides the initial files you need to build your Intents extension and configures your Xcode project to build that extension and include it in your app’s bundle.
 
@@ -38,7 +38,7 @@ Adding an Intents app extension target provides the initial files you need to bu
 
 ![A screenshot of a project in Xcode with the template selection sheet open. Intents Extension is selected in the iOS pane.](https://developer.apple.com/tutorials/images/com.apple.sirikit/media-3172417@2x.png)
 
-##### Specify the Intents Your Extension Supports
+### Specify the Intents Your Extension Supports
 
 After adding your Intents extension target to your project, specify the intents the extension supports. SiriKit uses the information in your extension’s `Info.plist` file to determine which intents to route to your extension.
 
@@ -55,7 +55,7 @@ When an ambiguous user utterance resolves to multiple intents, SiriKit uses the 
 
 Some intents may require additional configuration steps for your Xcode project or your app. For example, when implementing a ride-booking app, Maps expects you to provide a GeoJSON file that describes the coverage area for your service. See the reference documentation for information about any special requirements.
 
-##### Test Your Intents App Extension
+### Test Your Intents App Extension
 
 Xcode supports launching your Intents app extension directly from your Xcode project and debugging the extension while it runs in the simulator or on a device. To run and debug your Intents extension:
 

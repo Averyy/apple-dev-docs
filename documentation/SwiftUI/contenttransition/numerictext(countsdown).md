@@ -21,7 +21,7 @@ Creates a content transition intended to be used with `Text` views displaying nu
 static func numericText(countsDown: Bool = false) -> ContentTransition
 ```
 
-#### Return Value
+## Return Value
 
 A new content transition.
 

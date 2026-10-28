@@ -5,7 +5,7 @@
 
 Understand what gameplay works well when configuring challenges in your game.
 
-#### Overview
+## Overview
 
 One feature of most games is the leaderboard; a place where players can compare scores and check their rankings. Some leaderboards work better for challenges than others. When you choose a leaderboard, it’s important to factor in the type of gameplay your game provides, whether your challenge is repeatable, and whether you need a leaderboard that resets after a certain period of time.
 
@@ -21,7 +21,7 @@ With your leaderboard in place, you need to assess how well suited it is for cha
 - Leaderboards are grouped
 - You want to adopt challenges when you have a custom built leaderboard service outside of Game Center.
 
-#### Determine a score submission style and type
+## Determine a score submission style and type
 
 Challenges are ideal for games with a tight gameplay loop and a clear metric to gauge skill or accomplishment, like:
 
@@ -35,7 +35,7 @@ Challenges aren’t ideal for games that give an unfair advantage to regular pla
 
 A challenge is a competition where players compete for the top spot, so set your leaderboard’s Score Submission Type to Best Score for the optimal challenge experience. For more information about the properties you configure with a leaderboard, see [Leaderboard properties](https://developer.apple.com/help/app-store-connect/reference/leaderboards#leaderboard-properties).
 
-#### Decide whether challenges are repeatable
+## Decide whether challenges are repeatable
 
 Choose a leaderboard game mode by identifying whether your gameplay is repeatable. For example, if your racing game encourages players to compete for the fastest lap time, then it’s repeatable. Conversely, if your puzzle game offers a daily challenge puzzle, then it’s nonrepeatable. With the racing challenge, players can keep racing to get the fastest lap, while the puzzle challenge limits players to a single attempt.
 
@@ -45,7 +45,7 @@ For nonrepeatable challenges, the current score on the leaderboard carries forwa
 
 > **Note**: To provide a repeatable challenge you need to configure the challenge to use a recurring leaderboard.
 
-#### Choose between a classic and recurring leaderboard
+## Choose between a classic and recurring leaderboard
 
 When configuring a challenge, you can select a leaderboard that’s either classic or recurring:
 
@@ -60,11 +60,11 @@ You don’t select a duration if you associate a challenge with a recurring lead
 
 Make sure you give your players time to compete. Because the challenge duration inherits from the recurring leaderboard’s remaining duration, don’t configure a challenge on a recurring leaderboard that has a short duration.
 
-#### Add a grouped leaderboard for challenges
+## Add a grouped leaderboard for challenges
 
 A Game Center group allow you to share leaderboard data between two or more games. You can associate a leaderboard group with your challenges to share the progress across the games that are within the group. At the time of gameplay, all participants need to use the game that initiates the challenge to compete. This is to ensure all players are on an even playing field for a fair competition as the gameplay experience may differ between the games.
 
-#### Adopt challenges with hidden leaderboards
+## Adopt challenges with hidden leaderboards
 
 The system can drive engagement to your game whether you use Game Center leaderboards or your own leaderboard system. To do so, you need to enable Game Center and configure a leaderboard in Xcode that shadows a leaderboard you already provide through your own system.
 

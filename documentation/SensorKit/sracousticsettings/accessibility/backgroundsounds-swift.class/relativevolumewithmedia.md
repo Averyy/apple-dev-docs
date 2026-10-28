@@ -19,7 +19,7 @@ var relativeVolumeWithMedia: Double { get }
 @property (nonatomic, assign, readonly) double relativeVolumeWithMedia;
 ```
 
-#### Discussion
+## Discussion
 
 Accessibility Background sounds volume with media
 

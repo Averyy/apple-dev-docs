@@ -25,7 +25,7 @@ var node: SCNNode { get }
 @property (readonly) SCNNode * node;
 ```
 
-#### Discussion
+## Discussion
 
 SceneKit automatically rotates and repositions this node in response to the physics simulation.
 

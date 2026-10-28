@@ -24,11 +24,11 @@ func CFHTTPMessageAddAuthentication(_ request: CFHTTPMessage, _ authenticationFa
 extern Boolean CFHTTPMessageAddAuthentication(CFHTTPMessageRef request, CFHTTPMessageRef authenticationFailureResponse, CFStringRef username, CFStringRef password, CFStringRef authenticationScheme, Boolean forProxy);
 ```
 
-#### Return Value
+## Return Value
 
 `TRUE` if the authentication information was successfully added, otherwise `FALSE`.
 
-#### Discussion
+## Discussion
 
 This function adds the authentication information specified by the `username`, `password`, `authenticationScheme`, and `forProxy` parameters to the specified request message. The message referred to by the `authenticationFailureResponse` parameter typically contains a 401 or a 407 error code.
 

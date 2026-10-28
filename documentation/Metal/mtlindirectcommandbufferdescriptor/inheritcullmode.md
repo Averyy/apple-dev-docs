@@ -24,7 +24,7 @@ var inheritCullMode: Bool { get set }
 @property (nonatomic, readwrite) BOOL inheritCullMode;
 ```
 
-#### Discussion
+## Discussion
 
 The property’s default value is [`true`](../../Swift/true.md).
 

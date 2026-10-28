@@ -20,11 +20,11 @@ Creates a new data table with additional columns that contain the unpacked colle
 func unpack(columnNamed: String, valueTypes: [MLDataValue.ValueType]? = nil, indexSubset: [Int]? = nil, keySubset: [String]? = nil) -> MLDataTable
 ```
 
-#### Return Value
+## Return Value
 
 A new data table.
 
-#### Discussion
+## Discussion
 
 This function performs the inverse of [`pack(columnsNamed:to:type:filling:)`](./pack%28columnsnamed,to,type,filling%29.md).
 

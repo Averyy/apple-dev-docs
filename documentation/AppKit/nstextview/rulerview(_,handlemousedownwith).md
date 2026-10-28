@@ -19,7 +19,7 @@ func rulerView(_ ruler: NSRulerView, handleMouseDownWith event: NSEvent)
 - (void) rulerView:(NSRulerView *) ruler handleMouseDown:(NSEvent *) event;
 ```
 
-#### Discussion
+## Discussion
 
 A subclass can override this method to provide other behavior, such as creating guidelines. This method is invoked once with `theEvent` when the user first clicks the ruler area of `aRulerView`, as described in the [`NSRulerView`](../nsrulerview.md) class specification.
 

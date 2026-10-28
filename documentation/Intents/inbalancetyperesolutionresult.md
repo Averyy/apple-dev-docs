@@ -23,7 +23,7 @@ class INBalanceTypeResolutionResult
 @interface INBalanceTypeResolutionResult : INIntentResolutionResult
 ```
 
-#### Overview
+## Overview
 
 An [`INBalanceTypeResolutionResult`](./inbalancetyperesolutionresult.md) object is what you return when resolving parameters containing an [`INBalanceType`](./inbalancetype.md) value. Use the creation method that best reflects your ability to resolve the parameter.
 

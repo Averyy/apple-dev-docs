@@ -15,11 +15,11 @@ Sets the input latency of the clock device.
 kern_return_t SetInputLatency(uint32_t in_latency);
 ```
 
-#### Return Value
+## Return Value
 
 A kern_return_t value indicating success or failure.
 
-#### Discussion
+## Discussion
 
 Drivers can change the latency of the clock device dynamically. If successful, the clock device sends a notification to the host to update the object state. The object’s work queue synchronizes access to this value when it changes.
 

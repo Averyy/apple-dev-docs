@@ -12,7 +12,7 @@ Find a video of dance moves for a specific song by matching the audio to a custo
 - Mac Catalyst 17.0+
 - Xcode 15.0+
 
-#### Overview
+## Overview
 
 > **Note**: This sample code project is associated with WWDC23 session 10051: [Create a great ShazamKit experience](https://developer.apple.com/wwdc23/10051/)
 

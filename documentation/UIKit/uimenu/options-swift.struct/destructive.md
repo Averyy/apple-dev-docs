@@ -23,7 +23,7 @@ static var destructive: UIMenu.Options { get }
 UIMenuOptionsDestructive
 ```
 
-#### Discussion
+## Discussion
 
 Apply this option when you need a menu for a destructive action. Use the menu’s title to communicate the action to perform, and use the menu’s child menu elements to ask for user confirmation of that action.
 

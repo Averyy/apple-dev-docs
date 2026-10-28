@@ -21,7 +21,7 @@ Divides the first value by the second and stores the quotient in the left-hand-s
 static func /= (lhs: inout UInt8, rhs: UInt8)
 ```
 
-#### Discussion
+## Discussion
 
 For integer types, any remainder of the division is discarded.
 

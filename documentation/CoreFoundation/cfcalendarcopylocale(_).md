@@ -25,7 +25,7 @@ func CFCalendarCopyLocale(_ calendar: CFCalendar!) -> CFLocale!
 extern CFLocaleRefCFCalendarCopyLocale(CFCalendarRef calendar);
 ```
 
-#### Return Value
+## Return Value
 
 A copy of the locale object for the specified calendar. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 

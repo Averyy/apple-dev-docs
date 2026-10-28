@@ -24,7 +24,7 @@ case restricted
 AVAuthorizationStatusRestricted
 ```
 
-#### Discussion
+## Discussion
 
 This status occurs when a user can’t change the authorization status, possibly due to the system imposing restrictions like parental controls.
 

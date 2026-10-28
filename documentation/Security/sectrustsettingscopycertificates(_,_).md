@@ -20,7 +20,7 @@ func SecTrustSettingsCopyCertificates(_ domain: SecTrustSettingsDomain, _ certAr
 OSStatus SecTrustSettingsCopyCertificates(SecTrustSettingsDomain domain, CFArrayRef*certArray);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md). Returns [`errSecNoTrustSettings`](./errsecnotrustsettings.md) if no trust settings exist for the specified domain.
 

@@ -25,7 +25,7 @@ class SCNCapsule
 @interface SCNCapsule : SCNGeometry
 ```
 
-#### Overview
+## Overview
 
 ![](https://developer.apple.com/tutorials/images/com.apple.scenekit/media-2929808@2x.png)
 

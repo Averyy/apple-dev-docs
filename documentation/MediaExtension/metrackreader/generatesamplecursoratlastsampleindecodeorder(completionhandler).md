@@ -24,7 +24,7 @@ func sampleCursorAtLastSampleInDecodeOrder() async throws -> any MESampleCursor
 - (void) generateSampleCursorAtLastSampleInDecodeOrderWithCompletionHandler:(void (^)(id<MESampleCursor>sampleCursor, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 The new sample cursor points to the last sample in decode order, regardless of presentation time stamp (PTS).
 

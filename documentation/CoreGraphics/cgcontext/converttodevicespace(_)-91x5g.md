@@ -25,11 +25,11 @@ func convertToDeviceSpace(_ rect: CGRect) -> CGRect
 extern CGRect CGContextConvertRectToDeviceSpace(CGContextRef c, CGRect rect);
 ```
 
-#### Return Value
+## Return Value
 
 The rectangle in device space coordinates.
 
-#### Discussion
+## Discussion
 
 In general affine transforms do not preserve rectangles. As a result, this function returns the smallest rectangle that contains the transformed corner points of the rectangle.
 

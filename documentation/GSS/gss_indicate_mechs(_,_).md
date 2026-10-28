@@ -23,7 +23,7 @@ func gss_indicate_mechs(_ minor_status: UnsafeMutablePointer<OM_uint32>, _ mech_
 OM_uint32 gss_indicate_mechs(OM_uint32 *minor_status, gss_OID_set*mech_set);
 ```
 
-#### Return Value
+## Return Value
 
 A status code set to [`GSS_S_COMPLETE`](./gss_s_complete.md) on completion.
 

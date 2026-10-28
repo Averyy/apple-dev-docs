@@ -21,11 +21,11 @@ Creates a capsule shape with the specified height and radius.
 @preconcurrency static func generateCapsule(height: Float, radius: Float) -> ShapeResource
 ```
 
-#### Return Value
+## Return Value
 
 The new capsule.
 
-#### Discussion
+## Discussion
 
 > **Note**: Collision shape extents that fall below 2mm are forced to be 2mm in size - this includes, entities with negative scale values.
 

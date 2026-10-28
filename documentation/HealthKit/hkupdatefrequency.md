@@ -24,7 +24,7 @@ enum HKUpdateFrequency
 enum HKUpdateFrequency : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 For more information, see [`HKObserverQuery`](./hkobserverquery.md).
 

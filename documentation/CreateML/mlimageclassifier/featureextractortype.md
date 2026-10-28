@@ -19,7 +19,7 @@ The underlying base model that extracts image features for image classifier trai
 enum FeatureExtractorType
 ```
 
-#### Overview
+## Overview
 
 Create ML has one built-in feature extractor: `scenePrint`. Alternatively, you can provide your own custom feature extractor from an `.mlmodel` file or a specific layer within a model file.
 

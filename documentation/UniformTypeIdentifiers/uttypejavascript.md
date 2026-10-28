@@ -21,7 +21,7 @@ A type that represents JavaScript source code.
 extern UTType * const UTTypeJavaScript;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `com.netscape.javascript-source`.
 

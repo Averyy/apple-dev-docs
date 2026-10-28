@@ -25,7 +25,7 @@ var indicatedBitrate: Double { get }
 @property (nonatomic, readonly) double indicatedBitrate;
 ```
 
-#### Discussion
+## Discussion
 
 The property corresponds to “sc-indicated-bitrate”.
 

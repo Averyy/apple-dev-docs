@@ -22,7 +22,7 @@ optional func locationManager(_ manager: CLLocationManager, didDetermineState st
 - (void) locationManager:(CLLocationManager *) manager didDetermineState:(CLRegionState) state forRegion:(CLRegion *) region;
 ```
 
-#### Discussion
+## Discussion
 
 The location manager calls this method whenever there is a boundary transition for a region. It calls this method in addition to calling the  [`locationManager(_:didEnterRegion:)`](./locationmanager%28_,didenterregion%29.md) and [`locationManager(_:didExitRegion:)`](./locationmanager%28_,didexitregion%29.md) methods. The location manager also calls this method in response to a call to its [`requestState(for:)`](../cllocationmanager/requeststate%28for%29.md) method, which runs asynchronously.
 

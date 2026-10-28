@@ -6,18 +6,21 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.se
 
 # mlx.core.segmented_mm
 
-**segmented_mm(*a: array*, *b: array*, */*, *segments: array*, ***, *stream: StreamOrDevice = None*) → [array](mlx.core.array.md#mlx.core.array)**
-: Perform a matrix multiplication but segment the inner dimension and
+```python
+segmented_mm(a: array, b: array, /, segments: array, *, stream: StreamOrDevice = None) → array
+```
+
+Perform a matrix multiplication but segment the inner dimension and
 save the result for each segment separately.
 
-Parameters:
+**Parameters:**
 
-**a** ([array](mlx.core.array.md#mlx.core.array)) – Input array of shape `MxK`.
-**b** ([array](mlx.core.array.md#mlx.core.array)) – Input array of shape `KxN`.
-**segments** ([array](mlx.core.array.md#mlx.core.array)) – The offsets into the inner dimension for each segment.
+- **a** ([array](mlx.core.array.md#mlx.core.array)) – Input array of shape `MxK`.
+- **b** ([array](mlx.core.array.md#mlx.core.array)) – Input array of shape `KxN`.
+- **segments** ([array](mlx.core.array.md#mlx.core.array)) – The offsets into the inner dimension for each segment.
 
-Returns:
-The result per segment of shape `MxN`.
+**Returns:**
+: The result per segment of shape `MxN`.
 
-Return type:
-[array](mlx.core.array.md#mlx.core.array)
+**Return type:**
+: [array](mlx.core.array.md#mlx.core.array)

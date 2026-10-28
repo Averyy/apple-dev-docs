@@ -19,11 +19,11 @@ func displayableSubpredicates(of predicate: NSPredicate) -> [NSPredicate]?
 - (NSArray<NSPredicate *> *) displayableSubpredicatesOfPredicate:(NSPredicate *) predicate;
 ```
 
-#### Return Value
+## Return Value
 
 The subpredicates that should be made sub-rows of `predicate`. For compound predicates (instances of [`NSCompoundPredicate`](../../Foundation/nscompoundpredicate.md)), the array of subpredicates; for other types of predicate, returns `nil`. If a template represents a predicate in its entirety, or if the predicate has no subpredicates, returns `nil`.
 
-#### Discussion
+## Discussion
 
 You can override this method to create custom templates that handle complicated compound predicates.
 

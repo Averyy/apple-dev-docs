@@ -26,7 +26,7 @@ class UISceneAccessory
 
 - [Presenting content on a connected display](./presenting-content-on-a-connected-display.md)
 
-#### Overview
+## Overview
 
 A scene accessory declares supplementary content that the system presents on the app’s behalf when an associated piece of system functionality becomes available, for example when an external display is connected. The app declares what content to provide; the system decides when and where to present it. Scene accessories enhance the app’s experience when available, but the app must remain fully functional without them.
 

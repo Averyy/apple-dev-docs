@@ -17,7 +17,7 @@ A local file path to the downloaded file.
 final let destinationURL: URL
 ```
 
-#### Discussion
+## Discussion
 
 Your browser app’s network extension writes the downloaded file to this location.
 

@@ -5,7 +5,7 @@
 
 Build tools that enable the model to perform tasks that are specific to your use case.
 
-#### Overview
+## Overview
 
 Tools provide a way to extend the functionality of the model for your own use cases. Tool-calling allows the model to interact with external code you create to fetch up-to-date information, ground responses in sources of truth that you provide, and perform side effects, like turning on dark mode.
 
@@ -15,7 +15,7 @@ You can create tools that enable the model to:
 - Perform actions within your app, like adjusting the difficulty in a game or making a web request to get additional information.
 - Integrate with other frameworks, like [Contacts](../Contacts/Contacts.md) or [HealthKit](../HealthKit/HealthKit.md), that use existing privacy and security mechanisms.
 
-#### Create a custom tool for your task
+## Create a custom tool for your task
 
 When you prompt the model with a question or make a request, the model decides whether it can provide an answer or if it needs the help of a tool. When the model determines that a tool can help, it calls the tool with additional arguments that the tool can use. After the tool completes the task, it returns control back to the model with information about what the tool did. The model can then use the output of the tool when it provides the final response.
 
@@ -59,7 +59,7 @@ When you provide descriptions to generable properties, you help the model unders
 
 Tools use guided generation for the [`Arguments`](./tool/arguments.md) property. For more information about guided generation, see [Generating Swift data structures with guided generation](./generating-swift-data-structures-with-guided-generation.md).
 
-#### Provide a session with the tool you create
+## Provide a session with the tool you create
 
 When you create a session, you can provide a list of tools that are relevant to the task you want to complete. The tools you provide are available for all future interactions with the session. The following example initializes a session with a tool that the model can call when it determines that it would help satisfy the prompt:
 
@@ -111,7 +111,7 @@ let response = try await session.respond(
 )
 ```
 
-#### Configure the tool calling mode
+## Configure the tool calling mode
 
 By default, the model decides whether to call a tool based on the prompt. However, there are cases where you have additional context that the model doesn’t, such as the state of the UI or a rule that the model must always call a tool before responding to the person. Use [`GenerationOptions.ToolCallingMode`](./generationoptions/toolcallingmode-swift.struct.md) to control how the model interacts with tools for a given request. Tool calling mode supports three modes:
 
@@ -167,7 +167,7 @@ struct RecipeDynamicProfile: LanguageModelSession.DynamicProfile {
 }
 ```
 
-#### Handle errors thrown by a tool
+## Handle errors thrown by a tool
 
 When an error happens during tool calling, the session throws a [`LanguageModelSession.ToolCallError`](./languagemodelsession/toolcallerror.md) with the underlying error and includes the tool that throws the error. This helps you understand the error that happened during the tool call, and any custom error types that your tool produces. You can throw errors from your tools to escape calls when you detect something is wrong, like when the person using your app doesn’t allow access to the required data or a network call is taking longer than expected. Alternatively, your tool can return a string that briefly tells the model what didn’t work, like “Cannot access the database.”
 
@@ -201,7 +201,7 @@ Profile {
 .transcriptErrorHandlingPolicy(.preserveTranscript)
 ```
 
-#### Inspect the call graph
+## Inspect the call graph
 
 A session contains an observable [`transcript`](./languagemodelsession/transcript.md) property that allows you to track when, and how many times, the model calls your tools. A transcript also provides the ability to construct a representation of the call graph for debugging purposes and pairs well with [SwiftUI](../SwiftUI/SwiftUI.md) to visualize session history.
 

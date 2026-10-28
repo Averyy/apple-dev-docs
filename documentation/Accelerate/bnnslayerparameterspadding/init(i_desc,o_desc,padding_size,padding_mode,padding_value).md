@@ -23,7 +23,7 @@ Returns a new padding-layer parameters structure from the specified parameters.
 init(i_desc: BNNSNDArrayDescriptor, o_desc: BNNSNDArrayDescriptor, padding_size: ((Int, Int), (Int, Int), (Int, Int), (Int, Int), (Int, Int), (Int, Int), (Int, Int), (Int, Int)), padding_mode: BNNSPaddingMode, padding_value: UInt32)
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  Padding isn’t supported beyond 4D tensors.
 

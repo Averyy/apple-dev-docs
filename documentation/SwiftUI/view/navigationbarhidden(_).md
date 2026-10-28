@@ -23,7 +23,7 @@ nonisolated
 func navigationBarHidden(_ hidden: Bool) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to hide the navigation bar. This modifier only takes effect when the modified view is inside of and visible within a [`NavigationView`](../navigationview.md).
 

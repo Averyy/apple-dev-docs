@@ -20,7 +20,7 @@ func setIdleTimeout(_ idleTimeout: TimeInterval) throws
 - (BOOL) setIdleTimeout:(NSTimeInterval) idleTimeout error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 After the interface idles, it defers electrical suspension of the device for the specified duration.
 

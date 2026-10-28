@@ -23,7 +23,7 @@ var showingDeleteConfirmation: Bool { get }
 @property (nonatomic, readonly) BOOL showingDeleteConfirmation;
 ```
 
-#### Discussion
+## Discussion
 
 When users tap the deletion control (the red circle to the left of the cell), the cell displays a “Delete” button on the right side of the cell; this string is localized.
 

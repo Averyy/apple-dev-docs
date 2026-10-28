@@ -9,7 +9,7 @@ Get a list of device management services in an organization.
 **Availability**:
 - Apple School Manager API 1.7+
 
-##### Example
+### Example
 
 **Request**:
 

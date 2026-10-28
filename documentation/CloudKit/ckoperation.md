@@ -30,7 +30,7 @@ class CKOperation
 - [Encrypting User Data](./encrypting-user-data.md)
 - [Deciding whether CloudKit is right for your app](./deciding-whether-cloudkit-is-right-for-your-app.md)
 
-#### Overview
+## Overview
 
 All CloudKit operations descend from `CKOperation`, which provides the infrastructure for executing tasks in one of your app’s containers. Don’t subclass or create instances of this class directly. Instead, create instances of one of its concrete subclasses.
 
@@ -38,7 +38,7 @@ Use the properties of this class to configure the behavior of the operation befo
 
 > ❗ **Important**: `CKOperation` objects have a default quality of service level of [`QualityOfService.default`](../Foundation/qualityofservice/default.md) (see [`qualityOfService`](../Foundation/operation/qualityofservice.md)). Operations with this service level are discretionary, and the system schedules them for an optimal time according to battery level and other factors. On iPhone, discretionary activities pause when the device is in Low Power Mode. For information about quality of service levels, see [Prioritize Work with Quality of Service Classes](https://developer.apple.com/library/archive/documentation/Performance/Conceptual/EnergyGuide-iOS/PrioritizeWorkWithQoS.html#//apple_ref/doc/uid/TP40015243-CH39) in [Energy Efficiency Guide for iOS Apps](https://developer.apple.com/library/archive/documentation/Performance/Conceptual/EnergyGuide-iOS/index.html#//apple_ref/doc/uid/TP40015243) and [Prioritize Work at the Task Level](https://developer.apple.com/library/archive/documentation/Performance/Conceptual/power_efficiency_guidelines_osx/PrioritizeWorkAtTheTaskLevel.html#//apple_ref/doc/uid/TP40013929-CH35) in [Energy Efficiency Guide for Mac Apps](https://developer.apple.com/library/archive/documentation/Performance/Conceptual/power_efficiency_guidelines_osx/index.html#//apple_ref/doc/uid/TP40013929).
 
-##### Long-Lived Operations
+### Long-Lived Operations
 
 A *long-lived operation* is an operation that continues to run after the user closes the app. To specify a long-lived operation, set [`isLongLived`](./ckoperation/islonglived.md) to [`true`](../Swift/true.md), provide a completion handler, and execute the operation. To get the identifiers of all running long-lived operations, use the [`allLongLivedOperationIDs()`](./ckcontainer/alllonglivedoperationids%28%29.md) method that [`CKContainer`](./ckcontainer.md) provides. To get a specific long-lived operation, use the [`longLivedOperation(for:)`](./ckcontainer/longlivedoperation%28for%29.md) method. Make sure you set the completion handler of a long-lived operation before you execute it so that the system can notify you when it completes and you can process the results. Do not execute an operation, change it to long-lived, and execute it again as a long-lived operation.
 

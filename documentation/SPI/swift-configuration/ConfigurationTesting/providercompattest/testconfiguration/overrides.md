@@ -24,7 +24,7 @@ Value overrides for testing custom scenarios.
 var overrides: [String : ConfigContent]
 ```
 
-#### Discussion
+## Discussion
 
 Use this to test how your provider handles different values than the standard test dataset. Keys should match the dot-separated format used in the test data.
 

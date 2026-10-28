@@ -24,7 +24,7 @@ init(itemReference: INSpeakableString, reservationNumber: String?, bookingTime: 
 - (instancetype) initWithItemReference:(INSpeakableString *) itemReference reservationNumber:(NSString *) reservationNumber bookingTime:(NSDate *) bookingTime reservationStatus:(INReservationStatus) reservationStatus reservationHolderName:(NSString *) reservationHolderName actions:(NSArray<INReservationAction *> *) actions URL:(NSURL *) URL reservedSeat:(INSeat *) reservedSeat event:(INTicketedEvent *) event;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INTicketedEventReservation`](../inticketedeventreservation.md) object or `nil` if one can’t be created.
 

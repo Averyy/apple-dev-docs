@@ -21,7 +21,7 @@ A locale which tracks the user’s current preferences.
 static var autoupdatingCurrent: Locale { get }
 ```
 
-#### Discussion
+## Discussion
 
 This value represents the locale currently used by the app, based on the following:
 

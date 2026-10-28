@@ -22,11 +22,11 @@ class func needRules() -> NEFilterDataVerdict
 + (NEFilterDataVerdict *) needRulesVerdict;
 ```
 
-#### Return Value
+## Return Value
 
 A `NEFilterDataVerdict` object.
 
-#### Discussion
+## Discussion
 
 When the Filter Data Provider returns this verdict, the system passes the flow to the Filter Control Provider’s [`handleNewFlow(_:completionHandler:)`](../nefiltercontrolprovider/handlenewflow%28_,completionhandler%29.md) method.
 

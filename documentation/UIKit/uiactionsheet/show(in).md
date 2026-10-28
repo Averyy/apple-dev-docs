@@ -23,7 +23,7 @@ func show(in view: UIView)
 - (void) showInView:(UIView *) view;
 ```
 
-#### Discussion
+## Discussion
 
 The appearance of the action sheet is animated.
 

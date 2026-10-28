@@ -25,11 +25,11 @@ func data(forKey defaultName: String) -> Data?
 - (NSData *) dataForKey:(NSString *) defaultName;
 ```
 
-#### Return Value
+## Return Value
 
 The data object associated with `defaultName`, or `nil` if the key isn’t present in the defaults database. This method also returns `nil` if the retrieved value isn’t a data object.
 
-#### Discussion
+## Discussion
 
 The returned object is immutable, even if you originally set the key to a mutable value.
 

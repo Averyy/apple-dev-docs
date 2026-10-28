@@ -23,11 +23,11 @@ optional func numberOfSections(in collectionView: UICollectionView) -> Int
 - (NSInteger) numberOfSectionsInCollectionView:(UICollectionView *) collectionView;
 ```
 
-#### Return Value
+## Return Value
 
 The number of sections in `collectionView`.
 
-#### Discussion
+## Discussion
 
 If you don’t implement this method, the collection view uses a default value of 1.
 

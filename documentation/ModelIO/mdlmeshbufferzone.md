@@ -24,7 +24,7 @@ protocol MDLMeshBufferZone : NSObjectProtocol
 @protocol MDLMeshBufferZone <NSObject>
 ```
 
-#### Overview
+## Overview
 
 The concrete type of a zone is often private—you obtain zones by creating them from a [`MDLMeshBufferAllocator`](./mdlmeshbufferallocator.md) object, then use zones with allocator methods such as [`newBuffer(from:data:type:)`](./mdlmeshbufferallocator/newbuffer%28from,data,type%29.md) when you need to ensure that related buffers are allocated together.
 

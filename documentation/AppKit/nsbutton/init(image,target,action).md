@@ -19,7 +19,7 @@ convenience init(image: NSImage, target: Any?, action: Selector?)
 + (instancetype) buttonWithImage:(NSImage *) image target:(id) target action:(SEL) action;
 ```
 
-#### Discussion
+## Discussion
 
 Set the image’s [`accessibilityDescription`](../nsimage/accessibilitydescription.md) property to ensure accessibility for this control.
 

@@ -14,7 +14,7 @@ Converts a stream from one data type to another.
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Parameter Types
+## Parameter Types
 
 **Convert (float color3f)**:
 
@@ -396,7 +396,7 @@ Converts a stream from one data type to another.
 | --- | --- |
 | `Out` | Color3 |
 
-#### Discussion
+## Discussion
 
 The `Convert` node takes data of one type and outputs it in another form. The supported type conversions are shown above with the various convert node types. The `Convert` node handles data types in the following ways:
 

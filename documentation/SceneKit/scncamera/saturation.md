@@ -25,7 +25,7 @@ var saturation: CGFloat { get set }
 @property (nonatomic) CGFloat saturation;
 ```
 
-#### Discussion
+## Discussion
 
 A value of `1.0` (the default) leaves scene colors unchanged. Greater values result in oversaturated colors, and a value of `0.0` makes the rendered scene entirely grayscale.
 

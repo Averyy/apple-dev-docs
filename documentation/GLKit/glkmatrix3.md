@@ -22,7 +22,7 @@ typealias GLKMatrix3 = _GLKMatrix3
 typedef union _GLKMatrix3 GLKMatrix3;
 ```
 
-##### Fields
+### Fields
 
 | Name | Description |
 | --- | --- |

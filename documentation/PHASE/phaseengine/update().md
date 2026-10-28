@@ -24,7 +24,7 @@ func update()
 - (void) update;
 ```
 
-#### Discussion
+## Discussion
 
 This function consumes the app’s API calls since the last [`update()`](./update%28%29.md), adjusts internal systems, objects, increments parameters, and invokes the app’s queued callbacks. An API call may require several [`update()`](./update%28%29.md) invocations before the output device reflects the call’s results.
 
@@ -32,7 +32,7 @@ The framework ignores calls to this function for engines with `updateMode` set t
 
 > **Note**:  The frequency that the app calls this function doesn’t change the speed by which PHASE plays audio in real time.
 
-##### Update an Engine Manually
+### Update an Engine Manually
 
 On an engine configured for manual updates ([`PHASEEngine.UpdateMode.manual`](./updatemode/manual.md)), call this function periodically to instruct the framework to process API calls and perform internal updates. Call [`update()`](./update%28%29.md) at a rate that matches your app’s visuals or logic update rate for optimal performance:
 

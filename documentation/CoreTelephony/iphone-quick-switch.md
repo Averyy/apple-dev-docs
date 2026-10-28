@@ -5,7 +5,7 @@
 
 Enable seamless app transition between multiple iPhones.
 
-#### Overview
+## Overview
 
 iPhone quick switch enables your app to receive notifications from the system when someone activates a iPhone as their currently active device for a specific phone number or queries the system about a device’s current state.
 

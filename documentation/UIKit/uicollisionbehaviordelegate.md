@@ -24,7 +24,7 @@ protocol UICollisionBehaviorDelegate : NSObjectProtocol
 @protocol UICollisionBehaviorDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 The delegate is notified of collisions that occur between the behavior’s dynamic items, or between a dynamic item and a boundary, depending on the behavior’s mode (as set with its [`collisionMode`](./uicollisionbehavior/collisionmode.md) property). In the case of a collision between an item and the boundary defined by a reference view, the identifier passed to the delegate method is `nil`. (For more on the reference view and the different ways to initialize a dynamic animator, read the Overview in [`UIDynamicAnimator`](./uidynamicanimator.md).)
 

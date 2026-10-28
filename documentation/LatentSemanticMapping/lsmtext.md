@@ -20,7 +20,7 @@ class LSMText
 typedef struct __LSMText * LSMTextRef;
 ```
 
-#### Overview
+## Overview
 
 An [`LSMText`](./lsmtext.md) is a mutable, opaque Core Foundation type that represents an input text.
 

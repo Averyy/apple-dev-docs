@@ -21,7 +21,7 @@ A Boolean value that indicates whether the UTF-8 span is empty.
 var isEmpty: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 > **Complexity**: O(1)
 

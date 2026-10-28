@@ -25,7 +25,7 @@ func CFBinaryHeapContainsValue(_ heap: CFBinaryHeap!, _ value: UnsafeRawPointer!
 extern Boolean CFBinaryHeapContainsValue(CFBinaryHeapRef heap, const void *value);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if `value` is a member of `heap`, `false` otherwise.
 

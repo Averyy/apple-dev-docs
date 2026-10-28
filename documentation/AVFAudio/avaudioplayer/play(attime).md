@@ -25,11 +25,11 @@ func play(atTime time: TimeInterval) -> Bool
 - (BOOL) playAtTime:(NSTimeInterval) time;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if playback starts successfully; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Use this method to precisely synchronize the playback of two or more audio player objects as the following example shows:
 

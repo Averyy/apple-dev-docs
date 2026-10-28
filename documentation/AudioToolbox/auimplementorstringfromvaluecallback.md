@@ -24,7 +24,7 @@ typealias AUImplementorStringFromValueCallback = (AUParameter, UnsafePointer<AUV
 typedef NSString *(^)(AUParameter *, const float *) AUImplementorStringFromValueCallback;
 ```
 
-#### Discussion
+## Discussion
 
 This block is only of interest to audio unit subclasses.
 

@@ -25,7 +25,7 @@ static var end: FileDescriptor.SeekOrigin { get }
 
 - [Adopting Swift File Options](../../adopting-file-options.md)
 
-#### Discussion
+## Discussion
 
 The corresponding C constant is `SEEK_END`.
 

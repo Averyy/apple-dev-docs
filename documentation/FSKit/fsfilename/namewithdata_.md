@@ -15,7 +15,7 @@ Creates a filename by copying a character sequence data object.
 + (instancetype) nameWithData:(NSData *) name;
 ```
 
-#### Discussion
+## Discussion
 
 This initializer copies up to `name.length` characters of the sequence pointed to by `bytes`.
 

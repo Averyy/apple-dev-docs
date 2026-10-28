@@ -19,7 +19,7 @@ let IKImageBrowserSelectionColorKey: String
 extern NSString * const IKImageBrowserSelectionColorKey;
 ```
 
-#### Discussion
+## Discussion
 
 The associated value is an [`NSColor`](../AppKit/nscolor.md) object.
 

@@ -23,7 +23,7 @@ static let keyboard: UIApplication.ExtensionPointIdentifier
 extern UIApplicationExtensionPointIdentifier const UIApplicationKeyboardExtensionPointIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 To reject the use of custom keyboards in your app, specify this constant in your implementation of the [`application(_:shouldAllowExtensionPointIdentifier:)`](../../uiapplicationdelegate/application%28_,shouldallowextensionpointidentifier%29.md) delegate method.
 

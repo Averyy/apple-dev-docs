@@ -34,7 +34,7 @@ optional func resolveGroupName(for intent: INSendMessageIntent) async -> INStrin
 - (void) resolveGroupNameForSendMessage:(INSendMessageIntent *) intent withCompletion:(void (^)(INStringResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method if your app supports the sending messages to named groups. A group may be specified instead of, or in addition to, individual recipients.
 

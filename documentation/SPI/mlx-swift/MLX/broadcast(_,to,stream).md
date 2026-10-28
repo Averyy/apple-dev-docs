@@ -21,7 +21,7 @@ func broadcast(_ array: MLXArray, to shape: some Collection<Int>, stream: Stream
 
 - [Converting From Python](./converting-python.md)
 
-##### See Also
+### See Also
 
 - [Numpy Style Broadcasting](./broadcasting.md)
 

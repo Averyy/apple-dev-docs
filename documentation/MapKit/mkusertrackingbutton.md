@@ -22,7 +22,7 @@ class MKUserTrackingButton
 @interface MKUserTrackingButton : UIView
 ```
 
-#### Overview
+## Overview
 
 Use this class when you need a standard button that you can incorporate into your view hierarchy. Tapping the button lets the user toggles between modes for displaying the map with and without the current heading applied. The button also reflects the current user tracking mode if set elsewhere.
 

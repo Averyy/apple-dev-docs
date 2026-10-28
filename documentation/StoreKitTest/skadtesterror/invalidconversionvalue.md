@@ -17,7 +17,7 @@ The conversion value isn’t valid, in the testing environment.
 static var invalidConversionValue: SKAdTestError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 This error isn’t used. If your conversion value isn’t valid, the unit test shows the [`SKANError.Code.invalidConversionValue`](../../StoreKit/skanerror-swift.struct/code/invalidconversionvalue.md) error instead, but only if your app calls [`updatePostbackConversionValue(_:completionHandler:)`](../../StoreKit/skadnetwork/updatepostbackconversionvalue%28_,completionhandler%29.md).
 

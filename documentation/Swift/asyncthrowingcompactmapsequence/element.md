@@ -23,7 +23,7 @@ typealias Element = ElementOfResult
 
 Available when `Base` conforms to `AsyncSequence`.
 
-#### Discussion
+## Discussion
 
 The compact map sequence produces whatever type of element its transforming closure produces.
 

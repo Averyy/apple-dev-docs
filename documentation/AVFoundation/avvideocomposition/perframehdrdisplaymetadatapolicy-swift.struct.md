@@ -23,7 +23,7 @@ struct PerFrameHDRDisplayMetadataPolicy
 typedef NSString * AVVideoCompositionPerFrameHDRDisplayMetadataPolicy;
 ```
 
-#### Discussion
+## Discussion
 
 Use this type to specify what HDR display metadata to attach to the rendered frame.
 

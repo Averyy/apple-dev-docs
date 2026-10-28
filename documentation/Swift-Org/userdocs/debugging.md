@@ -10,7 +10,7 @@ framework: "Swift-Org/userdocs"
 
 Debug your Swift executables using LLDB.
 
-#### Overview
+## Overview
 
 When you open a Swift package (a directory containing a `Package.swift` file), the extension automatically generates build tasks and launch configurations for each executable within the package. Additionally, if the package includes tests, the extension creates a configuration specifically designed to run those tests. These configurations all leverage the CodeLLDB extension as the debugger of choice.
 
@@ -20,13 +20,13 @@ When you open a Swift package (a directory containing a `Package.swift` file), t
 
 Use the **Run > Start Debugging** menu item to run an executable and start debugging. If you have multiple launch configurations you can choose which launch configuration to use in the debugger view.
 
-#### Launch Configurations
+## Launch Configurations
 
 The Swift extension will automatically generate launch configurations for all of your executable products. You can customize these configurations via the `.vscode/launch.json` file in your workspace to add environment variables, arguments, etc.
 
 Each generated launch configuration will have the `"type"` set to `"swift"`. The properties for the swift launch configuration match the ones [provided by lldb-dap](https://marketplace.visualstudio.com/items?itemName=llvm-vs-code-extensions.lldb-dap). You can use code completion in VS Code to help with adding properties to your launch configuration.
 
-##### Launching an Executable
+### Launching an Executable
 
 The most basic launch configuration uses the `"launch"` request and provides a program that will be debugged. For example:
 
@@ -83,7 +83,7 @@ There are many more options that you can specify which will alter the behavior o
 | exitCommands | [string] | Commands executed when the program exits. |
 | terminateCommands | [string] | Commands executed when the debugging session ends. |
 
-##### Attaching to a Process
+### Attaching to a Process
 
 You can attach to an existing process by using the `"attach"` request and providing one or both of a `"program"` or `"pid"` to attach to:
 

@@ -17,7 +17,7 @@ The testing environment doesn’t have any postbacks.
 static var missingPostbacks: SKAdTestError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 Check that the `postbacks` array you provide when calling [`setPostbacks(_:)`](../skadtestsession/setpostbacks%28_%29.md) isn’t empty.
 

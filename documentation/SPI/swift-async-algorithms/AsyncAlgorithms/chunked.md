@@ -8,21 +8,21 @@ framework: "swift-async-algorithms/AsyncAlgorithms"
 **Framework**: swift-async-algorithms/AsyncAlgorithms  
 **Role**: Article
 
-#### Overview
+## Overview
 
 - Author(s): [Kevin Perry](https://github.com/kperryua)
 
 [ [Source](https://github.com/apple/swift-async-algorithms/blob/main/Sources/AsyncAlgorithms/AsyncChunkedByGroupSequence.swift), [Source](https://github.com/apple/swift-async-algorithms/blob/main/Sources/AsyncAlgorithms/AsyncChunkedOnProjectionSequence.swift), [Source](https://github.com/apple/swift-async-algorithms/blob/main/Sources/AsyncAlgorithms/AsyncChunkedOnProjectionSequence.swift), [Source](https://github.com/apple/swift-async-algorithms/blob/main/Sources/AsyncAlgorithms/AsyncChunksOfCountAndSignalSequence.swift), [Source](https://github.com/apple/swift-async-algorithms/blob/main/Sources/AsyncAlgorithms/AsyncChunksOfCountSequence.swift) | [Tests](https://github.com/apple/swift-async-algorithms/blob/main/Tests/AsyncAlgorithmsTests/TestChunk.swift) ]
 
-#### Introduction
+## Introduction
 
 Grouping of values from an asynchronous sequence is often useful for tasks that involve writing those values efficiently or useful to handle specific structured data inputs.
 
-#### Proposed Solution
+## Proposed Solution
 
 Chunking operations can be broken down into a few distinct categories: grouping according to a binary predicate used to determine whether consecutive elements belong to the same group, projecting an element’s property to determine the element’s chunk membership, by discrete count, by another signal asynchronous sequence which indicates when the chunk should be delimited, or by a combination of count and signal.
 
-##### Grouping
+### Grouping
 
 Group chunks are determined by passing two consecutive elements to a closure which tests whether they are in the same group. When the `AsyncChunkedByGroupSequence` iterator receives the first element from the base sequence, it will immediately be added to a group. When it receives the second item, it tests whether the previous item and the current item belong to the same group. If they are not in the same group, then the iterator emits the first item’s group and a new group is created containing the second item. Items declared to be in the same group accumulate until a new group is declared, or the iterator finds the end of the base sequence. When the base sequence terminates, the final group is emitted. If the base sequence throws an error, `AsyncChunkedByGroupSequence` will rethrow that error immediately and discard any current group.
 
@@ -68,7 +68,7 @@ for await numberChunk in chunks {
 
 That variant is the funnel method for the main implementation, which passes `[Element].self` in as the parameter.
 
-##### Projection
+### Projection
 
 In some scenarios, chunks are determined not by comparing different elements, but by the element itself. This may be the case when the element has some sort of discriminator that can determine the chunk it belongs to. When two consecutive elements have different projections, the current chunk is emitted and a new chunk is created for the new element.
 
@@ -111,13 +111,13 @@ let names = URL(fileURLWithPath: "/tmp/names.txt").lines
 let nameDirectory = try await Dictionary(uniqueKeysWithValues: names.chunked(on: \.first!))
 ```
 
-##### Count or Signal
+### Count or Signal
 
 Sometimes chunks are determined not by the elements themselves, but by external factors. This final category enables limiting chunks to a specific size and/or delimiting them by another asynchronous sequence which is referred to as a “signal”. This particular chunking family is useful for scenarios where the elements are more efficiently processed as chunks than individual elements, regardless of their values.
 
 This family is broken down into two sub-families of methods: ones that employ a signal plus an optional count (which return an `AsyncChunksOfCountOrSignalSequence`), and the ones that only deal with counts (which return an `AsyncChunksOfCountSequence`). Both sub-families have `Collected` as their element type, or `Array` if unspecified. These sub-families have rethrowing behaviors; if the base `AsyncSequence` can throw then the chunks sequence can also throw. Likewise if the base `AsyncSequence` cannot throw then the chunks sequence also cannot throw.
 
-###### Count only
+##### Count only
 
 ```swift
 extension AsyncSequence {
@@ -144,7 +144,7 @@ for try await packet in packets {
 }
 ```
 
-###### Signal only
+##### Signal only
 
 ```swift
 extension AsyncSequence {
@@ -183,7 +183,7 @@ for await chunk in fourSecondsOfLogs {
 }
 ```
 
-###### Count or Signal
+##### Count or Signal
 
 ```swift
 extension AsyncSequence {
@@ -224,9 +224,9 @@ for try await packet in packets {
 
 In any configuration of any of the chunking families, when the base asynchronous sequence terminates, one of two things will happen: 1) a partial chunk will be emitted, or 2) no chunk will be emitted (i.e. the iterator received no elements since the emission of the previous chunk). No elements from the base asynchronous sequence are ever discarded, except in the case of a thrown error.
 
-#### Detailed Design
+## Detailed Design
 
-##### Grouping
+### Grouping
 
 ```swift
 public struct AsyncChunkedByGroupSequence<Base: AsyncSequence, Collected: RangeReplaceableCollection>: AsyncSequence 
@@ -247,7 +247,7 @@ extension AsyncChunkedByGroupSequence.Iterator: Sendable
   where Base.AsyncIterator: Sendable, Base.Element: Sendable { }
 ```
 
-##### Projection
+### Projection
 
 ```swift
 public struct AsyncChunkedOnProjectionSequence<Base: AsyncSequence, Subject: Equatable, Collected: RangeReplaceableCollection>: AsyncSequence where Collected.Element == Base.Element {
@@ -266,7 +266,7 @@ extension AsyncChunkedOnProjectionSequence.Iterator: Sendable
   where Base.AsyncIterator: Sendable, Base.Element: Sendable, Subject: Sendable { }
 ```
 
-##### Count
+### Count
 
 ```swift
 public struct AsyncChunksOfCountSequence<Base: AsyncSequence, Collected: RangeReplaceableCollection>: AsyncSequence 
@@ -285,7 +285,7 @@ extension AsyncChunksOfCountSequence.Iterator : Sendable where Base.AsyncIterato
 
 ```
 
-##### Count or Signal
+### Count or Signal
 
 ```swift
 public struct AsyncChunksOfCountOrSignalSequence<Base: AsyncSequence, Collected: RangeReplaceableCollection, Signal: AsyncSequence>: AsyncSequence, Sendable 
@@ -304,7 +304,7 @@ public struct AsyncChunksOfCountOrSignalSequence<Base: AsyncSequence, Collected:
 }
 ```
 
-#### Alternatives Considered
+## Alternatives Considered
 
 It was considered to make the chunked element to be an `AsyncSequence` instead of allowing collection into a `RangeReplaceableCollection` however it was determined that the throwing behavior of that would be complex to understand. If that hurdle could be overcome then that might be a future direction/consideration that would be worth exploring.
 
@@ -312,7 +312,7 @@ Variants of `chunked(by:)` (grouping) and `chunked(on:)` (projection) methods co
 
 The naming of this family was considered to be `collect` which is used in APIs like `Combine`. This family of functions has distinct similarity to those APIs.
 
-#### Credits/Inspiration
+## Credits/Inspiration
 
 This transformation function is a heavily inspired analog of the synchronous version [defined in the Swift Algorithms package](https://github.com/apple/swift-algorithms/blob/main/Guides/Chunked.md)
 

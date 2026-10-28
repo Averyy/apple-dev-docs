@@ -21,7 +21,7 @@ Complex vector magnitudes square and add; double precision.
 extern void vDSP_zvmgsaD(const DSPDoubleSplitComplex *__A, vDSP_Stride __IA, const double *__B, vDSP_Stride __IB, double *__C, vDSP_Stride __IC, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 This function is the same as [`vDSP_zvmgsa`](./vdsp_zvmgsa.md), except for the types of vectors `A`, `B`, and `C`.
 

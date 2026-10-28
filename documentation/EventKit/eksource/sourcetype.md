@@ -24,7 +24,7 @@ var sourceType: EKSourceType { get }
 @property (nonatomic, readonly) EKSourceType sourceType;
 ```
 
-#### Discussion
+## Discussion
 
 Possible values are described in [`EKSourceType`](../eksourcetype.md).
 

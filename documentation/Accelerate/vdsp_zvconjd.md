@@ -21,7 +21,7 @@ Calculates the complex conjugate of the values in a double-precision vector usin
 extern void vDSP_zvconjD(const DSPDoubleSplitComplex *__A, vDSP_Stride __IA, const DSPDoubleSplitComplex *__C, vDSP_Stride __IC, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 This function is the same as [`vDSP_zvconj`](./vdsp_zvconj.md), except for the types of vectors `A` and `C`.
 

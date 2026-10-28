@@ -20,7 +20,7 @@ class func agent(plistName: String) -> Self
 + (instancetype) agentServiceWithPlistName:(NSString *) plistName;
 ```
 
-#### Discussion
+## Discussion
 
 The property list name must correspond to a property list in the calling app’s `Contents/Library/LaunchAgents` directory.
 

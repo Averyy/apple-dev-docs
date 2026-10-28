@@ -19,7 +19,7 @@ class func isNativeType(_ type: String) -> Bool
 + (BOOL) isNativeType:(NSString *) type;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the document type is a native type; otherwise, [`false`](../../Swift/false.md).
 

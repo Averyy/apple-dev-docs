@@ -18,7 +18,7 @@ static var nodePromoteSignificantWhitespace: XMLNode.Options { get }
 NSXMLNodePromoteSignificantWhitespace
 ```
 
-#### Discussion
+## Discussion
 
 Specifies that significant whitespace should be represented by text nodes. If [`nodePreserveWhitespace`](./nodepreservewhitespace.md) is also specified, this option has no effect.
 

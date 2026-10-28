@@ -29,11 +29,11 @@ nonisolated
 func focusedSceneValue<T>(_ keyPath: WritableKeyPath<FocusedValues, T?>, _ value: T?) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A modified representation of this view.
 
-#### Discussion
+## Discussion
 
 Use this method instead of [`focusedValue(_:_:)`](./focusedvalue%28_,_%29.md) for values that must be visible regardless of where focus is located in the active scene. For example, if an app needs a command for moving focus to a particular text field in the sidebar, it could use this modifier to publish a button action that’s visible to command views as long as the scene is active, and regardless of where focus happens to be in it.
 

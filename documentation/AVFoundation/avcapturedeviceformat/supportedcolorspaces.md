@@ -19,7 +19,7 @@ The list of color spaces the format supports for image and video capture.
 @property (nonatomic, readonly) NSArray<NSNumber *> * supportedColorSpaces;
 ```
 
-#### Discussion
+## Discussion
 
 The [`NSNumber`](../../Foundation/nsnumber.md) objects in this array contain [`AVCaptureColorSpace`](../avcapturecolorspace.md) values. The ordering of the array is such that spaces with a narrower color gamut appear before those with wider color gamuts.
 

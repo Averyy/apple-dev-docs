@@ -26,7 +26,7 @@ var isBlacklisted: Bool { get }
 @property (nonatomic, assign, readonly, getter=isBlacklisted) BOOL blacklisted;
 ```
 
-#### Discussion
+## Discussion
 
 Transit pass issuers are responsible for blacklisting transit passes according to their policies. Blacklisted transit passes are not accepted at transit terminals.
 

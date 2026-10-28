@@ -20,7 +20,7 @@ optional func view(_ view: ARSKView, didUpdate node: SKNode, for anchor: ARAncho
 - (void) view:(ARSKView *) view didUpdateNode:(SKNode *) node forAnchor:(ARAnchor *) anchor;
 ```
 
-#### Discussion
+## Discussion
 
 Depending on the session configuration, ARKit may automatically update anchors in a session. The view calls this method once for each updated anchor.
 

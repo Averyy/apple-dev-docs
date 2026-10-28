@@ -15,7 +15,7 @@ The declaration to configure background tasks.
 object ServicesBackgroundTasks
 ```
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.configuration.services.background-tasks` as the declaration type.
 
@@ -29,7 +29,7 @@ If both `ExecutableAssetReference` and `LaunchdConfigurations` are present, and 
 
 > **Note**:  If an executable is an app, the device can’t manage the app as it can only manage apps installed in `/Applications`. Also, the device can’t use system extensions in the app as it only loads them from apps installed in `/Applications`.
 
-##### Configuration availability
+### Configuration availability
 
 |  |  |
 | --- | --- |
@@ -41,7 +41,7 @@ If both `ExecutableAssetReference` and `LaunchdConfigurations` are present, and 
 | Allowed in user scope | N/A |
 | Apply | Multiple configurations are applied separately |
 
-##### Configuration example
+### Configuration example
 
 This configuration sets up a background task using a launchd daemon.
 

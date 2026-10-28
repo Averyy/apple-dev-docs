@@ -25,7 +25,7 @@ var motorMaximumTorque: CGFloat { get set }
 @property (nonatomic) CGFloat motorMaximumTorque;
 ```
 
-#### Discussion
+## Discussion
 
 When you change the value of the [`motorTargetAngularVelocity`](./motortargetangularvelocity.md) property, the joint continuously applies a force of no greater than this magnitude until the bodies are rotating around the joint at the target angular velocity. The default value is `1.0`.
 

@@ -17,7 +17,7 @@ Sets the accessory view for the Print panel.
 - (void) setAccessoryView:(NSView *) accessoryView;
 ```
 
-#### Discussion
+## Discussion
 
 You can use an accessory view to add printing controls and information to the standard print panel. You set your accessory view prior to displaying the print panel. Upon display, the print panel adds your application’s name as an item to its pane-selection pull-down menu. When the user selects this item, the print panel displays your accessory view.
 

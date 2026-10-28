@@ -24,11 +24,11 @@ var kExtAudioFileProperty_FileChannelLayout: ExtAudioFilePropertyID { get }
 kExtAudioFileProperty_FileChannelLayout
 ```
 
-#### Discussion
+## Discussion
 
 A file’s channel layout. Value is a read/write [`AudioChannelLayout`](../CoreAudioTypes/audiochannellayout.md) struct.
 
-#### Discussion
+## Discussion
 
 When writing, the channel layout is written to the file, if the format specified in the `kExtAudioFileProperty_FileDataFormat` property supports the layout. If the format does not support the layout, the channel layout is still interpreted as the destination layout when performing conversion from the client channel layout, if any.
 

@@ -23,7 +23,7 @@ Creates an alert button that indicates cancellation, with a custom label.
 static func cancel(_ label: Text, action: (() -> Void)? = {}) -> Alert.Button
 ```
 
-#### Return Value
+## Return Value
 
 An alert button that indicates cancellation.
 

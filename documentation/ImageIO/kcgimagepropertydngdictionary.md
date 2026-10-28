@@ -25,7 +25,7 @@ let kCGImagePropertyDNGDictionary: CFString
 extern CFStringRef const kCGImagePropertyDNGDictionary;
 ```
 
-#### Discussion
+## Discussion
 
 For more information about the available metadata keys, see [DNG Image Properties](./dng-image-properties.md).
 

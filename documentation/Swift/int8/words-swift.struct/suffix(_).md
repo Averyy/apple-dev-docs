@@ -21,11 +21,11 @@ Returns a subsequence, up to the given maximum length, containing the final elem
 func suffix(_ maxLength: Int) -> Self.SubSequence
 ```
 
-#### Return Value
+## Return Value
 
 A subsequence terminating at the end of the collection with at most `maxLength` elements.
 
-#### Discussion
+## Discussion
 
 If the maximum length exceeds the number of elements in the collection, the result contains the entire collection.
 

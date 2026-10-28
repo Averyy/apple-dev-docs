@@ -24,7 +24,7 @@ struct SegmentBoundaryGuidelines
 typedef struct { ... } AVPlannedVideoSegmentBoundaryGuidelines;
 ```
 
-#### Overview
+## Overview
 
 The properties provide guidance on determining segment boundaries for a video track in an incremental writing session. All conditions should be supported for best results. The client should choose frame count and minimum duration that meet the minimum requirement. However, the client should also consider the balance between overhead caused by completing and saving states for small segments, and the cost of having to redo a large segment if the incremental session stopped in the middle of a segment due to errors or crashes. For example, use 1 minute segments for 4K60fps video.
 

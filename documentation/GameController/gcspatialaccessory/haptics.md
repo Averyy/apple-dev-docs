@@ -19,7 +19,7 @@ var haptics: GCDeviceHaptics? { get }
 @property (strong, readonly, nullable) GCDeviceHaptics * haptics;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to create CHHapticEngine instances according to your needs.
 

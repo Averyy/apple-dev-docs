@@ -24,7 +24,7 @@ func startTunnel(options: [String : Any]? = nil) throws
 - (BOOL) startTunnelWithOptions:(NSDictionary<NSString *,id> *) options andReturnError:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 This method returns immediately after starting the process of connecting the tunnel. In order to be notified when the tunnel is fully connected, register to observe the [`NEVPNStatusDidChangeNotification`](../nevpnstatusdidchangenotification.md) notification on the `NETunnelProviderSession` object and examine its status property when the notification is received.
 

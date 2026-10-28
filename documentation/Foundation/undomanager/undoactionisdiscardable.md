@@ -25,7 +25,7 @@ var undoActionIsDiscardable: Bool { get }
 @property (readonly) BOOL undoActionIsDiscardable;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) if the action is discardable; [`false`](../../Swift/false.md) otherwise.
 

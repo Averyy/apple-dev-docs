@@ -19,7 +19,7 @@ func matchingDescriptors(forFamily family: String) -> [NSFontDescriptor]?
 - (NSArray<NSFontDescriptor *> *) matchingDescriptorsForFamily:(NSString *) family;
 ```
 
-#### Return Value
+## Return Value
 
 The [`matchingDescriptors`](./matchingdescriptors.md) for the given family.
 

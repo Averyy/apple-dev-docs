@@ -24,7 +24,7 @@ func stopShowingCaptionPreview()
 - (void) stopShowingCaptionPreview;
 ```
 
-#### Discussion
+## Discussion
 
 This method stops the caption preview and restores any currently active subtitles and/or closed captions.
 

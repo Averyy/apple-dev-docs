@@ -23,7 +23,7 @@ class HKVerifiableClinicalRecordSubject
 @interface HKVerifiableClinicalRecordSubject : NSObject
 ```
 
-#### Overview
+## Overview
 
 [`HKVerifiableClinicalRecordSubject`](./hkverifiableclinicalrecordsubject.md) objects contain data about the subject from a SMART Health Card.  These cards combine both the user’s identity and clinical data into a cryptographically-signed bundle. To protect the subject’s privacy, SMART Health Cards provide the minimum required data. For more information, see [SMART Health Cards Framework](https://smarthealth.cards).
 

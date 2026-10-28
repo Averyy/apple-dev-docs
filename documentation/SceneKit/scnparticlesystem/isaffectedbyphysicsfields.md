@@ -25,7 +25,7 @@ var isAffectedByPhysicsFields: Bool { get set }
 @property (nonatomic) BOOL affectedByPhysicsFields;
 ```
 
-#### Discussion
+## Discussion
 
 [`SCNPhysicsField`](../scnphysicsfield.md) objects attached to nodes in the scene apply forces to bodies in their area of effect. For example, a radial gravity field attracts bodies toward its center, and a vortex field applies forces that circulate around a specified axis. The forces applied by a physics field on each particle are proportional to its mass, as specified by the [`particleMass`](./particlemass.md) property.
 

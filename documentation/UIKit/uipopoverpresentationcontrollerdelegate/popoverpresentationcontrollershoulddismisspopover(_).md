@@ -21,11 +21,11 @@ optional func popoverPresentationControllerShouldDismissPopover(_ popoverPresent
 - (BOOL) popoverPresentationControllerShouldDismissPopover:(UIPopoverPresentationController *) popoverPresentationController;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the popover should be dismissed or [`false`](../../Swift/false.md) if it should not.
 
-#### Discussion
+## Discussion
 
 The popover presentation controller calls this method in response to user-initiated attempts to dismiss the popover. It is not called when you dismiss the popover programmatically using the [`dismissModalViewControllerAnimated:`](../uiviewcontroller/dismissmodalviewcontrolleranimated_.md) method.
 

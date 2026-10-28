@@ -15,7 +15,7 @@ The creation date of the document.
 static let creationTime: NSAttributedString.DocumentAttributeKey
 ```
 
-#### Discussion
+## Discussion
 
 The value of this attribute is an [`NSDate`](../../nsdate.md) object containing the creation date of the document; note that this is not the file system creation date of the file, but of the document.
 

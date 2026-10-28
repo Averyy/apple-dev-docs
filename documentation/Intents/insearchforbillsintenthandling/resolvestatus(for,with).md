@@ -29,7 +29,7 @@ optional func resolveStatus(for intent: INSearchForBillsIntent) async -> INPayme
 - (void) resolveStatusForSearchForBills:(INSearchForBillsIntent *) intent withCompletion:(void (^)(INPaymentStatusResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to resolve any questions about the status of a bill. Use the status property of the intent object to identify the status type to search. If the specified status type is one that your app supports, return a successful resolution with that type.
 

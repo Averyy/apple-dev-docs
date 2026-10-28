@@ -24,11 +24,11 @@ Watches for updates to a required config value for the given config key, convert
 func watchRequiredString<Value, Return>(forKey key: ConfigKey, as type: Value.Type = Value.self, isSecret: Bool = false, fileID: String = #fileID, line: UInt = #line, updatesHandler: nonisolated(nonsending) (ConfigUpdatesAsyncSequence<Value, any Error>) async throws -> Return) async throws -> Return where Value : RawRepresentable, Value : Sendable, Value.RawValue == String, Return : ~Copyable
 ```
 
-#### Return Value
+## Return Value
 
 The result produced by the handler.
 
-#### Discussion
+## Discussion
 
 Use this method to observe changes to mandatory string-convertible configuration values over time. The handler receives an async sequence that produces the current value whenever it changes, or an error if the value is missing or can’t be converted.
 

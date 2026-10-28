@@ -20,11 +20,11 @@ func LSGetHandlerOptionsForContentType(_ inContentType: CFString!) -> LSHandlerO
 LSHandlerOptions LSGetHandlerOptionsForContentType(CFStringRef inContentType);
 ```
 
-#### Return Value
+## Return Value
 
 The handler option that is set for the specified content type. For possible values, see [`LSHandlerOptions`](./lshandleroptions.md).
 
-#### Discussion
+## Discussion
 
 Thread-safe since OS X v10.4.
 

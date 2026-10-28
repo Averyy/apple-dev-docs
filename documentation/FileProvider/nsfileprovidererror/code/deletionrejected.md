@@ -23,7 +23,7 @@ case deletionRejected
 NSFileProviderErrorDeletionRejected
 ```
 
-#### Discussion
+## Discussion
 
 If the user tries to delete an item, but your extension needs to reject the deletion (for example, due to a conflicting remote change), return an [`NSFileProviderError.Code.deletionRejected`](./deletionrejected.md) error. The system recreates the deleted item based on the latest metadata available from your extension.
 

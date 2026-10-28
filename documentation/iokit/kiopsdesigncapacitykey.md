@@ -16,7 +16,7 @@ CFDictionary key for the current power source's design capacity
 #define kIOPSDesignCapacityKey
 ```
 
-#### Discussion
+## Discussion
 
 - Apple-defined power sources might not publish this key.
 - The power source's software may specify the units for this key. The units must be consistent for all capacities reported by this power source.

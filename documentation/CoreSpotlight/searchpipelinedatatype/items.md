@@ -19,7 +19,7 @@ Searchable items from the app’s index.
 case items
 ```
 
-#### Discussion
+## Discussion
 
 The data for this type is zero or more [`CSSearchableItem`](../cssearchableitem.md) objects.
 

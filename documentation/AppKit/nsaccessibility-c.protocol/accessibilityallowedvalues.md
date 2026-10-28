@@ -15,7 +15,7 @@ The allowed values for the slider accessibility element.
 @property (copy, nullable) NSArray<NSNumber *> * accessibilityAllowedValues;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property if the slider can be set only to predefined values (for example, if the slider’s level indicator automatically snaps to the closest integer values between 0 and 100).
 

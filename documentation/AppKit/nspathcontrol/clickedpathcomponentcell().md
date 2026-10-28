@@ -21,11 +21,11 @@ func clickedPathComponentCell() -> NSPathComponentCell?
 - (NSPathComponentCell *) clickedPathComponentCell;
 ```
 
-#### Return Value
+## Return Value
 
 The component cell that was clicked.
 
-#### Discussion
+## Discussion
 
 The value returned is generally valid only when the action or double action is being sent.
 

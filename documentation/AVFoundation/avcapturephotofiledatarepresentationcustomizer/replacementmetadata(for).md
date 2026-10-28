@@ -22,11 +22,11 @@ optional func replacementMetadata(for photo: AVCapturePhoto) -> [String : Any]?
 - (NSDictionary<NSString *,id> *) replacementMetadataForPhoto:(AVCapturePhoto *) photo;
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary of keys and valyes from `CGImageProperties`. To preserve existing metadata, return `photo.metadata`. To strip existing metadata, return `nil`. To replace metadata, pass a replacement dictionary.
 
-#### Discussion
+## Discussion
 
 This callback is optional. If your delegate doesn’t implement this callback, the existing metadata in the in-memory [`AVCapturePhoto`](../avcapturephoto.md) container is written directly to the file data representation.
 

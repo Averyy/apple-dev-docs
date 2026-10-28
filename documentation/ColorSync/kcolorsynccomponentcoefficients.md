@@ -25,7 +25,7 @@ var kColorSyncComponentCoefficients: Unmanaged<CFString>
 extern CFStringRef kColorSyncComponentCoefficients;
 ```
 
-#### Discussion
+## Discussion
 
 Each present key contributes its value as a weight in: `signal = R*red + G*green + B*blue + MAX*maxRGB + MIN*minRGB + C*component`. Only present when `kColorSyncComponentMix == 3`.
 

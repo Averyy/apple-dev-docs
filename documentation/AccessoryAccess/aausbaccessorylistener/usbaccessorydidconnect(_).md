@@ -19,7 +19,7 @@ optional func usbAccessoryDidConnect(_ usbAccessory: AAUSBAccessory)
 - (void) usbAccessoryDidConnect:(AAUSBAccessory *) usbAccessory;
 ```
 
-#### Discussion
+## Discussion
 
 This method is invoked every time a USB accessory, that satisfies the matching criteria this listener registered with `AAUSBAccessoryManager` with, is connected to the system.
 

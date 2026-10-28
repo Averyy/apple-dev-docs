@@ -21,7 +21,7 @@ Flag indicating that the process is debuggable by authorized debuggers.
 static let isDebuggable: ProcessCodeSigningFlags.ValueSet
 ```
 
-#### Discussion
+## Discussion
 
 This is equivalent to `CS_GET_TASK_ALLOW` in C APIs.
 

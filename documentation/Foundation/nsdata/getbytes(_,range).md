@@ -25,7 +25,7 @@ func getBytes(_ buffer: UnsafeMutableRawPointer, range: NSRange)
 - (void) getBytes:(void *) buffer range:(NSRange) range;
 ```
 
-#### Discussion
+## Discussion
 
 If `range` isn’t within the receiver’s range of bytes, an [`rangeException`](../nsexceptionname/rangeexception.md) is raised.
 

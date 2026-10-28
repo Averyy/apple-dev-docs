@@ -24,7 +24,7 @@ var value: Float { get }
 @property (nonatomic, readonly) float value;
 ```
 
-#### Discussion
+## Discussion
 
 If the user applies pressure to the button, the [`isPressed`](./ispressed.md) property is [`true`](../../Swift/true.md) and this property indicates the amount of pressure. The framework normalizes the value to a number between `0.0` (minimum) and `1.0` (maximum). If the user isn’t pressing the button, the [`isPressed`](./ispressed.md) property is [`false`](../../Swift/false.md) and this property is `0.0`.
 

@@ -19,7 +19,7 @@ static var asString: NSPasteboard.ReadingOptions { get }
 NSPasteboardReadingAsString
 ```
 
-#### Discussion
+## Discussion
 
 AppKit puts the data in an [`NSString`](../../../Foundation/nsstring.md) object.
 

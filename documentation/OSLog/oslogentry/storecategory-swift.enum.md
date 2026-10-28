@@ -25,7 +25,7 @@ enum StoreCategory
 enum OSLogEntryStoreCategory : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 The unified logging system keeps entries in one of two locations: a ring buffer in memory, or a persisted data store. Entries rotate out to free up resources; they are rotated out in bulk according to heuristics based on space, time, and entry classification.
 

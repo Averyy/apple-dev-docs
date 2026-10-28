@@ -19,7 +19,7 @@ func removeObject(_ object: Any)
 - (void) removeObject:(id) object;
 ```
 
-#### Discussion
+## Discussion
 
 If you are using Core Data, the exact semantics of this method differ depending on the settings for the array controller. If the receiver’s content is fetched automatically, removed objects are marked for deletion by the managed object context (and hence removal from the object graph). If, however, the receiver’s `contentSet` is bound to a relationship, `removeObject:` by default only removes the object from the relationship (not from the object graph). You can, though, set the “Deletes Object on Remove” option for the `contentSet` binding, in which case objects are marked for deletion as well as being removed from the relationship.
 

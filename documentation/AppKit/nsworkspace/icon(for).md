@@ -19,11 +19,11 @@ func icon(for contentType: UTType) -> NSImage
 - (NSImage *) iconForContentType:(UTType *) contentType;
 ```
 
-#### Return Value
+## Return Value
 
 The icon associated with the content type.
 
-#### Discussion
+## Discussion
 
 This method returns a default icon if the operation fails.
 

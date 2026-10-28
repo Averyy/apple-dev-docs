@@ -25,7 +25,7 @@ var playbackStartDate: Date? { get }
 @property (nonatomic, readonly, nullable) NSDate * playbackStartDate;
 ```
 
-#### Discussion
+## Discussion
 
 The property corresponds to “date”.
 

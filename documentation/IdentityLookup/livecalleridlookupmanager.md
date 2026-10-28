@@ -23,7 +23,7 @@ class LiveCallerIDLookupManager
 
 - [Getting up-to-date calling and blocking information for your app](./getting-up-to-date-calling-and-blocking-information-for-your-app.md)
 
-#### Overview
+## Overview
 
 You can use the provided functions to check whether your app extension is in an enabled state, open Settings to enable the extension, and manage refreshing your server data.
 

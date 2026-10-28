@@ -22,7 +22,7 @@ var bounds: CGRect { get }
 @property (nonatomic, readonly) CGRect bounds;
 ```
 
-#### Discussion
+## Discussion
 
 This rectangle is specified in the current coordinate space, which takes into account any interface rotations in effect for the device. Therefore, the value of this property may change when the device rotates between portrait and landscape orientations.
 

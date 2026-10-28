@@ -5,7 +5,7 @@
 
 Manage groups between your apps.
 
-#### Overview
+## Overview
 
 Use groups to connect multiple apps so they use common Game Center elements including: achievements, Game Center details, leaderboards, and leaderboard sets.
 

@@ -21,7 +21,7 @@ func sin(_ array: MLXArray, stream: StreamOrDevice = .default) -> MLXArray
 
 - [Converting From Python](./converting-python.md)
 
-##### See Also
+### See Also
 
 - [Arithmetic](./arithmetic.md)
 - [`sin(stream:)`](./mlxarray/sin%28stream%29.md)

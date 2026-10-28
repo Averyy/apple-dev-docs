@@ -19,7 +19,7 @@ A Boolean scalar.
 case bool
 ```
 
-#### Discussion
+## Discussion
 
 Boolean scalars are used in Boolean operations such as `and`, `or` and `xor`, and as the result of comparison operators such as `equal` and `greater`. Boolean values are represented with a byte where 0 represents `false` and any other value (but usually 1) represents `true`.
 

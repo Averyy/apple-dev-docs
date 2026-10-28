@@ -18,7 +18,7 @@ The name of a custom tag associated with a text item.
 static let textItemTag: NSAttributedString.Key
 ```
 
-#### Discussion
+## Discussion
 
 The value of this attribute is an [`NSString`](../../nsstring.md) object with the tag name of a [`UITextItem`](../../../UIKit/uitextitem.md) object.
 

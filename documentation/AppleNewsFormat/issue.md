@@ -15,11 +15,11 @@ The object for defining information about an issue.
 object Issue
 ```
 
-#### Discussion
+## Discussion
 
 An *issue* is an ordered collection of articles and advertisements, with other elements that you provide, including a title and a cover image. Use the `Issue` object to provide additional information about an Apple News Format issue.
 
-##### Example
+### Example
 
 ```json
 {

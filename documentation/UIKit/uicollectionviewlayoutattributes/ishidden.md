@@ -23,7 +23,7 @@ var isHidden: Bool { get set }
 @property (nonatomic, getter=isHidden) BOOL hidden;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`false`](../../Swift/false.md). As an optimization, the collection view might not create the corresponding view if this property is set to [`true`](../../Swift/true.md).
 

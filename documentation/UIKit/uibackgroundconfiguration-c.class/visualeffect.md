@@ -19,7 +19,7 @@ The visual effect that the configuration applies to the background.
 @property (nonatomic, copy, nullable) UIVisualEffect * visualEffect;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `nil`.
 

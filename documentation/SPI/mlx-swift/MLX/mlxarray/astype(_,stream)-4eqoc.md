@@ -17,7 +17,7 @@ Create a new `MLXArray` with the contents converted to the given type, e.g. `Flo
 func asType(_ type: (some HasDType).Type, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-##### See Also
+### See Also
 
 - [Conversion](../conversion.md)
 

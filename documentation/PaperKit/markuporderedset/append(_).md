@@ -20,7 +20,7 @@ Appends a new member to the end of the set, if the set doesn’t already contain
 mutating func append(_ item: MarkupOrderedSet.Element) -> (inserted: Bool, index: Int)
 ```
 
-#### Return Value
+## Return Value
 
 A pair (`inserted`, `index`), where inserted is a Boolean value indicating whether the operation added a new element, and `index` is the index of `item` in the resulting set.
 

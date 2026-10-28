@@ -24,11 +24,11 @@ Fetches the current value for the specified configuration key.
 func fetchValue(forKey key: AbsoluteConfigKey, type: ConfigType) async throws -> LookupResult
 ```
 
-#### Return Value
+## Return Value
 
 The lookup result that contains the current value and encoded key.
 
-#### Discussion
+## Discussion
 
 This method provides asynchronous access and should contact the authoritative data source to retrieve the latest value. Providers may cache the fetched values to make them available through [`value(forKey:type:)`](./value%28forkey,type%29.md).
 

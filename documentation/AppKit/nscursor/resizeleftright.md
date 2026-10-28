@@ -22,7 +22,7 @@ class var resizeLeftRight: NSCursor { get }
 @property (class, strong, readonly) NSCursor * resizeLeftRightCursor;
 ```
 
-#### Return Value
+## Return Value
 
 The resize-left-and-right cursor. This cursor is used when moving or resizing an object and the object can be moved left or right.
 

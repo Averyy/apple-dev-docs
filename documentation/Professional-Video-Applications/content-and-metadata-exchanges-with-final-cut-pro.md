@@ -4,7 +4,7 @@
 
 Send media assets and timeline sequences to Final Cut Pro for editing, and receive rendered media and editing decisions in your app.
 
-#### Overview
+## Overview
 
 Help your users exchange data between Final Cut Pro and your app, and avoid unwieldy manual processes. With FCPXML representing media, metadata, and Final Cut Pro items, your users can send data from your app to Final Cut Pro for editing, or receive rendered media (movies) and editing decisions from Final Cut Pro projects in your app for further processing.
 

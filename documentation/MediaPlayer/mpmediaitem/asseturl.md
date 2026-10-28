@@ -23,7 +23,7 @@ var assetURL: URL? { get }
 @property (nonatomic, readonly, nullable) NSURL * assetURL;
 ```
 
-#### Discussion
+## Discussion
 
 A URL pointing to the media item, which you can use to create an [`AVAsset`](../../AVFoundation/avasset.md) object or other URL-based AVFoundation object.
 

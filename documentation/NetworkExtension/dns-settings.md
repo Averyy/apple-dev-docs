@@ -5,7 +5,7 @@
 
 Create and manage a system-wide DNS configuration that uses built-in encrypted DNS protocols.
 
-#### Overview
+## Overview
 
 With the DNS Settings feature in macOS and iOS, your app can create and manage a configuration that uses one of the built-in DNS protocols: DNS-over-TLS or DNS-over-HTTPS. The user must explictly enable your configuration in order to use the server you specify.
 

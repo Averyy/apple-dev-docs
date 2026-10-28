@@ -17,7 +17,7 @@ optional var supportedDeviceSigningAlgorithms: [ASAuthorizationProviderExtension
 @property (readonly) NSArray<NSNumber *> * supportedDeviceSigningAlgorithms;
 ```
 
-#### Discussion
+## Discussion
 
 The supported device signing algorithms.
 

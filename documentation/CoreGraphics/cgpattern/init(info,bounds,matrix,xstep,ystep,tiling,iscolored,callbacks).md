@@ -25,11 +25,11 @@ init?(info: UnsafeMutableRawPointer?, bounds: CGRect, matrix: CGAffineTransform,
 extern CGPatternRefCGPatternCreate(void *info, CGRect bounds, CGAffineTransform matrix, CGFloat xStep, CGFloat yStep, CGPatternTiling tiling, bool isColored, const CGPatternCallbacks *callbacks);
 ```
 
-#### Return Value
+## Return Value
 
 A new Core Graphics pattern. In Objective-C, you’re responsible for releasing this object using [`CGPatternRelease`](../cgpatternrelease.md).
 
-#### Discussion
+## Discussion
 
 Core Graphics calls your drawing function at the appropriate timeto draw the pattern cell. A pattern cell must be invariant—thatis, the pattern cell should be drawn exactly the same way each timethe drawing function is called.
 

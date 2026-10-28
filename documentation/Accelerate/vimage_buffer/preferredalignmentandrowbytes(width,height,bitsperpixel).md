@@ -21,11 +21,11 @@ Returns the preferred alignment and row bytes for a specified size and bits per 
 static func preferredAlignmentAndRowBytes(width: Int, height: Int, bitsPerPixel: UInt32) throws -> (alignment: Int, rowBytes: Int)
 ```
 
-#### Return Value
+## Return Value
 
 A tuple that contains the alignment and row bytes.
 
-#### Discussion
+## Discussion
 
 If you provide your own buffer storage, call [`preferredAlignmentAndRowBytes(width:height:bitsPerPixel:)`](./preferredalignmentandrowbytes%28width,height,bitsperpixel%29.md) to get the row stride that ensures your buffer achieves the best performance.
 

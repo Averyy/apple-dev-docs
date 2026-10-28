@@ -22,11 +22,11 @@ Sets a particular container value of a view.
 nonisolated func containerValue<V>(_ keyPath: WritableKeyPath<ContainerValues, V>, _ value: V) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view that has the given value set in its containerValues.
 
-#### Discussion
+## Discussion
 
 Use this modifier to set one of the writable properties of the [`ContainerValues`](../containervalues.md) structure, including custom values that you create.
 

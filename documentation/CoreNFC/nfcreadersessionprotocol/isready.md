@@ -22,7 +22,7 @@ var isReady: Bool { get }
 @property (nonatomic, readonly, getter=isReady) BOOL ready;
 ```
 
-#### Discussion
+## Discussion
 
 As soon as a reader session is successfully activated, radio-frequency discovery polling begins. When a tag is detected, [`readerSession:didDetectTags:`](../nfcreadersessiondelegate/readersession_diddetecttags_.md) is called.
 

@@ -21,7 +21,7 @@ Complex vector magnitudes square and add; single precision.
 extern void vDSP_zvmgsa(const DSPSplitComplex *__A, vDSP_Stride __IA, const float *__B, vDSP_Stride __IB, float *__C, vDSP_Stride __IC, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 Adds the squared magnitudes of complex vector `A` to real vector `B` and store the results in real vector `C`.
 

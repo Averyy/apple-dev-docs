@@ -14,7 +14,7 @@ Represents an operation that hasn’t completed yet, but is expected in the futu
 const Object Promise;
 ```
 
-#### Discussion
+## Discussion
 
 The asynchronous methods in CloudKit JS return a `Promise` object that resolves when the operation completes or is rejected due to an error. For a description of the `Promise` class returned by these methods, go to Mozilla Developer Network: Promise.
 

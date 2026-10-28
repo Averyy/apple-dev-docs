@@ -21,7 +21,7 @@ The quality-of-service class for user-interactive tasks, such as animations, eve
 static let userInteractive: DispatchQoS
 ```
 
-#### Discussion
+## Discussion
 
 User-interactive tasks have the highest priority on the system. Use this class for tasks or queues that interact with the user or actively update your app’s user interface. For example, use this class for animations or for tracking events interactively.
 

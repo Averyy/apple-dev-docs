@@ -5,7 +5,7 @@
 
 Adjust the force values reported by Apple Pencil so that they’re consistent with 3D Touch force values.
 
-#### Overview
+## Overview
 
 On a 3D Touch device, force from a person’s fingers is measured perpendicular to the surface of the screen. However, force reported by Apple Pencil is measured along its long axis, which often isn’t perpendicular to the screen. Instead of using the Apple Pencil force values as is, you might want to compute only the perpendicular portion of the force so that you can use the same code for touches originating from a person’s fingers or from Apple Pencil.
 

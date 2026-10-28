@@ -19,11 +19,11 @@
 static SPAffineTransform3DFloat SPAffineTransform3DFloatFlip(SPAffineTransform3DFloat transform, SPAxis flipAxis);
 ```
 
-#### Return Value
+## Return Value
 
 A new transform flipped along the specified axis.
 
-#### Discussion
+## Discussion
 
 Returns an affine transform that’s flipped along the specified axis.
 

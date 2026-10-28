@@ -19,7 +19,7 @@ The options that specify how to interpret the content in the provided input imag
 var creationStrategy: ImagePlaygroundOptions.CreationStrategy
 ```
 
-#### Discussion
+## Discussion
 
 If one of the inputs to the image generation process is an image, this property determines how the system uses that image to generate new images. You can specify an image programmatically, but people can also select images from the system interface. Creation strategies include generating new images that closely resemble the original or using the original only for inspiration.
 

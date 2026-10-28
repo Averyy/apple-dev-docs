@@ -15,7 +15,7 @@ An identity affine transformation matrix.
 static let identity: AffineTransform
 ```
 
-#### Discussion
+## Discussion
 
 ```swift
 [ 1  0  0 ]

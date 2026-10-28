@@ -5,7 +5,7 @@
 
 Create, delete, and download provisioning profiles for development and distribution.
 
-#### Overview
+## Overview
 
 The `profiles` resource represents the provisioning profiles that allow you to install apps on your devices. You can create and delete provisioning profiles.
 

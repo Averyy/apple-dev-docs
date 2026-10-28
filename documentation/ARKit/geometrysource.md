@@ -15,7 +15,7 @@ A container for geometrical vector data.
 struct GeometrySource
 ```
 
-#### Overview
+## Overview
 
 Mesh-anchor geometry ([`MeshDescriptor`](../RealityKit/meshdescriptor.md)) uses geometry sources to hold 3D data like vertices and normals in an efficent, array-like format. A Metal buffer wraps the data and other properties specify how to interpret that data.
 

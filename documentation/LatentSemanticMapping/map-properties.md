@@ -5,7 +5,7 @@
 
 Special properties that determine a map’s behavior.
 
-#### Overview
+## Overview
 
 Latent Semantic Mapping interprets the following keys. All other keys starting with `LSM` are reserved.
 

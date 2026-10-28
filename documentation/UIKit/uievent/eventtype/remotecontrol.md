@@ -23,7 +23,7 @@ case remoteControl
 UIEventTypeRemoteControl
 ```
 
-#### Discussion
+## Discussion
 
 Remote-control events originate as commands received from a headset or external accessory for the purposes of controlling multimedia on the device.
 

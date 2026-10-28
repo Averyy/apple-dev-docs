@@ -23,7 +23,7 @@ var context: EAGLContext { get set }
 @property (nonatomic, retain) EAGLContext * context;
 ```
 
-#### Discussion
+## Discussion
 
 The view uses this context as the place to create its underlying framebuffer object and it also sets the context before calling your drawing method. Never change the context from inside your drawing method.
 

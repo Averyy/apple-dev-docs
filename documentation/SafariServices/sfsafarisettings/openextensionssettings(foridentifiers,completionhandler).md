@@ -26,7 +26,7 @@ class func openExtensionsSettings(forIdentifiers extensionIdentifiers: [String])
 + (void) openExtensionsSettingsForIdentifiers:(NSArray<NSString *> *) extensionIdentifiers completionHandler:(void (^)(NSError *)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 The method returns an error unless you call it while your app is in the foreground.
 

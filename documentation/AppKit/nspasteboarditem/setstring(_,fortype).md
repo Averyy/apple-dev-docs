@@ -19,7 +19,7 @@ func setString(_ string: String, forType type: NSPasteboard.PasteboardType) -> B
 - (BOOL) setString:(NSString *) string forType:(NSPasteboardType) type;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the value was set successfully, otherwise [`false`](../../Swift/false.md).
 

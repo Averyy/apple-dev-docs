@@ -20,7 +20,7 @@ class NSPDFPanel
 @interface NSPDFPanel : NSObject
 ```
 
-#### Overview
+## Overview
 
 A PDF panel has a variety of built-in customization controls, such as page orientation, paper size, and tags. It also supports the use of a custom accessory view controller that allows an app to specify how a PDF file should be created.
 

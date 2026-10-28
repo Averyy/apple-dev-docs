@@ -5,11 +5,11 @@
 
 Detects when you access memory outside of a buffer’s boundaries.
 
-#### Overview
+## Overview
 
 In Xcode 7 and later, you can use this check to detect when you access memory that’s outside of a buffer’s boundaries. The check reports overflow when accessed memory is beyond the end of the buffer, and underflow when the accessed memory is before the beginning of a buffer. Xcode sanitizes heap and stack buffers, as well as global variables. Buffer overflow and underflow can result in a crash or other unpredictable behavior.
 
-##### Global, heap, and stack overflows in C
+### Global, heap, and stack overflows in C
 
 In the following example, the `global_array`, `heap_buffer`, and `stack_buffer` variables each have valid indexes in the range `[0, 9]`, but the accessed index is `10`, which causes an overflow:
 
@@ -25,7 +25,7 @@ void foo() {
 }
 ```
 
-###### Solution
+#### Solution
 
 Add a bounds check before attempting to access a buffer at a specific index.
 

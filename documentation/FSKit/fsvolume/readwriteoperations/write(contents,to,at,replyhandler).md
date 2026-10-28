@@ -24,7 +24,7 @@ func write(contents: Data, to item: FSItem, at offset: off_t) async throws -> In
 - (void) writeContents:(NSData *) contents toFile:(FSItem *) item atOffset:(off_t) offset replyHandler:(void (^)(size_t actuallyWritten, NSError *error)) reply;
 ```
 
-#### Discussion
+## Discussion
 
 FSKit expects this routine to allocate space in the file system to extend the file as necessary.
 

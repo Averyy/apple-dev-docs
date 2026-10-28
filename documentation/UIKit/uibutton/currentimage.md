@@ -23,7 +23,7 @@ var currentImage: UIImage? { get }
 @property (nonatomic, strong, readonly, nullable) UIImage * currentImage;
 ```
 
-#### Discussion
+## Discussion
 
 This value can be `nil`.
 

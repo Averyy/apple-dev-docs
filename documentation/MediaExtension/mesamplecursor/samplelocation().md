@@ -19,11 +19,11 @@ optional func sampleLocation() throws -> MESampleLocation
 - (MESampleLocation *) sampleLocationReturningError:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 A sample location.
 
-#### Discussion
+## Discussion
 
 Sample data needs to be contiguous. If the sample data isn’t contiguous or the cursor doesn’t support this method, it fails with the error [`MEError.Code.locationNotAvailable`](../meerror-swift.struct/code/locationnotavailable.md). In this case, use [`loadSampleBufferContainingSamples(to:completionHandler:)`](./loadsamplebuffercontainingsamples%28to,completionhandler%29.md) to load the data.
 

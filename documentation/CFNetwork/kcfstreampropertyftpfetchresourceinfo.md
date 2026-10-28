@@ -24,7 +24,7 @@ let kCFStreamPropertyFTPFetchResourceInfo: CFString
 extern CFStringRef const kCFStreamPropertyFTPFetchResourceInfo;
 ```
 
-#### Discussion
+## Discussion
 
 FTP Fetch Resource Information stream property key for set and copy operations. Set this property to `kCFBooleanTrue` to require that resource information, such as size, must be provided before download starts; set this property to `kCFBooleanFalse` to allow downloads to start without resource information. For this version, size is the only resource information.
 

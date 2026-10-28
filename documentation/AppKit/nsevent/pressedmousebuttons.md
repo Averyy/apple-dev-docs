@@ -19,11 +19,11 @@ class var pressedMouseButtons: Int { get }
 @property (class, readonly) NSUInteger pressedMouseButtons;
 ```
 
-#### Return Value
+## Return Value
 
 The indices of the currently depressed mouse buttons.
 
-#### Discussion
+## Discussion
 
 A return value of `1 << 0` corresponds to the left mouse button, `1 << 1` corresponds to the right mouse button, `1<< n`, `n >=2` correspond to other mouse buttons.
 

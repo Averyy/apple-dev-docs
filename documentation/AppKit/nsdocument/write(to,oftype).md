@@ -20,7 +20,7 @@ func write(to url: URL, ofType typeName: String) throws
 - (BOOL) writeToURL:(NSURL *) url ofType:(NSString *) typeName error:(NSError **) outError;
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation of this method just invokes `[self fileWrapperOfType:typeName error:outError]` and writes the returned file wrapper to disk.
 

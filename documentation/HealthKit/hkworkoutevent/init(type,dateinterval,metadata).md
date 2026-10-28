@@ -24,7 +24,7 @@ convenience init(type: HKWorkoutEventType, dateInterval: DateInterval, metadata:
 + (instancetype) workoutEventWithType:(HKWorkoutEventType) type dateInterval:(NSDateInterval *) dateInterval metadata:(NSDictionary<NSString *,id> *) metadata;
 ```
 
-#### Return Value
+## Return Value
 
 A new workout event.
 

@@ -25,15 +25,15 @@ init(sourceModel: NSManagedObjectModel, destinationModel: NSManagedObjectModel)
 - (instancetype) initWithSourceModel:(NSManagedObjectModel *) sourceModel destinationModel:(NSManagedObjectModel *) destinationModel;
 ```
 
-#### Return Value
+## Return Value
 
 A migration manager instance initialized to migrate data in a store that uses `sourceModel` to a store that uses `destinationModel`.
 
-#### Discussion
+## Discussion
 
 You specify the mapping model in the migration method,  [`migrateStore(from:sourceType:options:with:toDestinationURL:destinationType:destinationOptions:)`](./migratestore%28from,sourcetype,options,with,todestinationurl,destinationtype,destinationoptions%29.md).
 
-##### Special Considerations
+### Special Considerations
 
 This is the designated initializer for `NSMigrationManager`.
 

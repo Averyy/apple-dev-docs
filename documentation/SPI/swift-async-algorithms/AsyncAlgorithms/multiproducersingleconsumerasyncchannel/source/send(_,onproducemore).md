@@ -24,7 +24,7 @@ Sends the element to the channel.
 mutating func send(_ element: consuming sending Element, onProduceMore: @escaping @Sendable (Result<Void, any Error>) -> Void)
 ```
 
-#### Discussion
+## Discussion
 
 If there is a task consuming the channel and awaiting the next element then the task will get resumed with the provided element. If the channel already terminated then `onProduceMore` will be invoked with a `Result.failure`.
 

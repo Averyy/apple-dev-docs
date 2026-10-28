@@ -5,7 +5,7 @@
 
 Learn about the navigation stack, links, and how to manage navigation types in your app’s structure.
 
-#### Overview
+## Overview
 
 A [`NavigationStack`](./navigationstack.md) is a container for your app’s navigation structure. Use a navigation stack to present a stack of views over a root view.
 
@@ -24,7 +24,7 @@ You can present destinations on a `NavigationStack` using:
 
 > **Note**: Value-destination and view-destination links don’t describe the visible stack directly; instead, they refer to the data added to the path.
 
-##### Present view–destination links
+### Present view–destination links
 
 You can push a view onto a `NavigationStack` using `NavigationLink(destination:label:)`. With this initializer, you specify both a label—displayed on the link itself—and a destination—displayed when someone taps the link.
 
@@ -97,7 +97,7 @@ struct DestinationView: View {
 
 Use this approach when you want to navigate based on toggling state rather than by people’s interaction, or when your app presents a one-off destination with a different data type than the homogenous path of the navigation stack.
 
-##### Present value-destination links
+### Present value-destination links
 
 When you add data to the navigation path, SwiftUI maps the data type to a view, then pushes it onto the navigation stack when someone taps the link. To describe the view the stack displays, use the [`navigationDestination(for:destination:)`](./view/navigationdestination%28for,destination%29.md) view modifier inside a `NavigationStack`.
 
@@ -191,7 +191,7 @@ struct ContentView: View {
 
 When a person taps a recipe, `selectedRecipe` value updates and SwiftUI pushes `RecipeDetailView(recipe: recipe)` onto the navigation stack. You can pop the view off the stack by setting `selectedRecipe` back to nil.
 
-##### Manage navigation state and compose links
+### Manage navigation state and compose links
 
 By default, a navigation stack manages state to keep track of the views on the stack. However, your app can share control of the state by initializing the stack with a binding to a collection of data values that you create.
 
@@ -398,7 +398,7 @@ New Path: [Color.mint]
 
 The logs print because view-destination navigation links don’t cause any state changes that your app can observe. If you attempt to push a value while a view-destination link is on the stack, SwiftUI pops all view destinations and pushes the value’s destination onto the stack.
 
-##### Restore state for navigation paths
+### Restore state for navigation paths
 
 State restoration for a navigation path enables you restore your interface to the previous interaction point during a subsequent launch, providing continuity for people using your app.
 

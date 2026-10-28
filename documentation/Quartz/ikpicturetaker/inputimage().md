@@ -19,11 +19,11 @@ func inputImage() -> NSImage!
 - (NSImage *) inputImage;
 ```
 
-#### Return Value
+## Return Value
 
 The input image.
 
-#### Discussion
+## Discussion
 
 The input image is never modified by the picture taker.
 

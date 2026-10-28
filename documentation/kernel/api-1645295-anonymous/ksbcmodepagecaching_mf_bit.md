@@ -13,7 +13,7 @@
 kSBCModePageCaching_MF_Bit = 1
 ```
 
-#### Discussion
+## Discussion
 
 MF Bit definition.
 

@@ -23,7 +23,7 @@ func firstMatch<Output>(of r: some RegexComponent) -> Regex<Output>.Match?
 
 Available when `SubSequence` is `Substring`.
 
-#### Return Value
+## Return Value
 
 The first match of `regex` in the collection, or `nil` if there isn’t a match.
 

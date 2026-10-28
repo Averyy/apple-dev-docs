@@ -19,11 +19,11 @@ class func local() -> CBIdentityAuthority
 + (CBIdentityAuthority *) localIdentityAuthority;
 ```
 
-#### Return Value
+## Return Value
 
 The identity authority on the local system.
 
-#### Discussion
+## Discussion
 
 Any identities stored on the local system are contained within this identity authority.
 

@@ -19,7 +19,7 @@ var priority: NSLayoutConstraint.Priority { get set }
 @property NSLayoutPriority priority;
 ```
 
-#### Discussion
+## Discussion
 
 By default, all constraints are required; this property is set to [`required`](./priority-swift.struct/required.md) in macOS or `UILayoutPriorityRequired` in iOS.
 

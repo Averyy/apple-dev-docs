@@ -18,7 +18,7 @@ typedef struct IOFireWireIsochChannelInterface_t {
 } IOFireWireIsochChannelInterface;
 ```
 
-#### Overview
+## Overview
 
 IOFireWireIsochChannelInterface is an abstract representataion of a FireWire bus isochronous channel. This interface coordinates starting and stopping traffic on a FireWire bus isochronous channel and can optionally communicate with the IRM to automatically allocate bandwidth and channel numbers. When using automatic IRM allocation, the channel interface reallocates its bandwidth and channel reservation after each bus reset.
 

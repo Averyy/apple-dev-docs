@@ -30,7 +30,7 @@ func handle(intent: INTransferMoneyIntent) async -> INTransferMoneyIntentRespons
 - (void) handleTransferMoney:(INTransferMoneyIntent *) intent completion:(void (^)(INTransferMoneyIntentResponse *response)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Your implementation of this method must schedule the transfer using the information provided by the intent object. The response you object that you provide should include the transaction details and the success or failure of the operation. The successful scheduling of a transfer means that your service has recorded the transaction details and can perform the transfer on the specified date.
 

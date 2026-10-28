@@ -83,5 +83,5 @@ Core ML team members will add labels to your issues, requests, questions, or pul
   - **feature request**: Functionality that doesn’t currently exist. Use this label with issues you create using the [feature request template](https://github.com/apple/coremltools/issues/new?assignees=&amp;labels=feature-request&amp;template=---feature-request.md&amp;title=).
   - **question**: Question to the team, such as a request for clarification. Use this label with issues you create using the [question template](https://github.com/apple/coremltools/issues/new?assignees=&amp;labels=question&amp;template=-question.md&amp;title=).
 
-- Framework label (orange in color)*:* Use this label to specify the framework that this issue is appearing in. Examples include **caffe**, **onnx**, **pytorch**, **tf1.x** (TensorFlow 1), and **tf2.x / tf.keras** (TensorFlow 2 and TensorFlow Keras).
+- Framework label (orange in color): Use this label to specify the framework that this issue is appearing in. Examples include **caffe**, **onnx**, **pytorch**, **tf1.x** (TensorFlow 1), and **tf2.x / tf.keras** (TensorFlow 2 and TensorFlow Keras).
 - Issues for contributors to complete: If an issue is good for a contributor to self-assign, it may include the **good first issue** label.

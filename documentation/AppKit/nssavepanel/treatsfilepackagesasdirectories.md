@@ -19,7 +19,7 @@ var treatsFilePackagesAsDirectories: Bool { get set }
 @property BOOL treatsFilePackagesAsDirectories;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), the panel displays file packages as directories; if [`false`](../../Swift/false.md), it will not.
 

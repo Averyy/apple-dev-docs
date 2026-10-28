@@ -24,7 +24,7 @@ let HMCharacteristicTypeCoolingThreshold: String
 extern NSString * const HMCharacteristicTypeCoolingThreshold;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is a floating point number in degrees Celsius.
 

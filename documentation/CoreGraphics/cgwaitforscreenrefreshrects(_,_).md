@@ -21,11 +21,11 @@ func CGWaitForScreenRefreshRects(_ rects: UnsafeMutablePointer<UnsafeMutablePoin
 extern CGError CGWaitForScreenRefreshRects(CGRect **rects, uint32_t *count);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See `Core Graphics Data Types and Constants`.
 
-#### Discussion
+## Discussion
 
 In some applications it may be preferable to wait for screen-refresh data synchronously, using this function. You should call this function in a thread other than the main event-processing thread.
 

@@ -22,7 +22,7 @@ var availablePermissions: UICloudSharingController.PermissionOptions { get set }
 @property (nonatomic) UICloudSharingPermissionOptions availablePermissions;
 ```
 
-#### Discussion
+## Discussion
 
 The [`UICloudSharingController`](../uicloudsharingcontroller.md) user interface displays permission options to the user. The user selects the options based on how the data should be shared. For instance, the user can decide to share the data publicly or privately by selecting the corresponding option.
 
@@ -44,11 +44,11 @@ cloudSharingController.availablePermissions = [.allowPrivate, .allowReadWrite]
 [cloudSharingController setAvailablePermissions:UICloudSharingPermissionAllowPrivate | UICloudSharingPermissionAllowReadWrite];
 ```
 
-##### Display groupings
+### Display groupings
 
 The [`UICloudSharingController`](../uicloudsharingcontroller.md) displays the permission options to the user based on the options set in the [`availablePermissions`](./availablepermissions.md) property. The user interface displays the options in two groups, access options group and permission options group. The [`allowPublic`](./permissionoptions/allowpublic.md) and [`allowPrivate`](./permissionoptions/allowprivate.md) options control the display of the access options group, while the [`allowReadOnly`](./permissionoptions/allowreadonly.md) and [`allowReadWrite`](./permissionoptions/allowreadwrite.md) options control the display of the permission options group.
 
-##### Complementary options
+### Complementary options
 
 The [`allowPrivate`](./permissionoptions/allowprivate.md) and [`allowPublic`](./permissionoptions/allowpublic.md) options are complementary. If you exclude one, the access options group is omitted from the [`UICloudSharingController`](../uicloudsharingcontroller.md) user interface, and the [`share`](./share.md) access setting defaults to the included option. This prevents the user from changing the access rights to the share. For instance, to always force a private share, you include the [`allowPrivate`](./permissionoptions/allowprivate.md) access option while excluding [`allowPublic`](./permissionoptions/allowpublic.md) when setting the [`availablePermissions`](./availablepermissions.md) property. The controller sets the share’s access rights to private and removes the access options group from the user interface, preventing the user from changing the setting.
 

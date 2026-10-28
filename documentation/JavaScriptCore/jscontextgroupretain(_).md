@@ -24,7 +24,7 @@ func JSContextGroupRetain(_ group: JSContextGroupRef!) -> JSContextGroupRef!
 JSContextGroupRefJSContextGroupRetain(JSContextGroupRef group);
 ```
 
-#### Return Value
+## Return Value
 
 A [`JSContextGroupRef`](./jscontextgroupref.md) that is the same as `group`.
 

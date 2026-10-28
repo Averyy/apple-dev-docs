@@ -21,11 +21,11 @@ Modifies the date format style to use the specified weekday format style.
 func weekday(_ format: Date.FormatStyle.Symbol.Weekday = .abbreviated) -> Date.FormatStyle
 ```
 
-#### Return Value
+## Return Value
 
 A date format style modified to include the specified week format style.
 
-#### Discussion
+## Discussion
 
 Possible values of [`Date.FormatStyle.Symbol.Weekday`](./symbol/weekday.md) include [`abbreviated`](./symbol/weekday/abbreviated.md), [`narrow`](./symbol/weekday/narrow.md), [`oneDigit`](./symbol/weekday/onedigit.md), [`short`](./symbol/weekday/short.md), [`twoDigits`](./symbol/weekday/twodigits.md), and [`wide`](./symbol/weekday/wide.md).
 

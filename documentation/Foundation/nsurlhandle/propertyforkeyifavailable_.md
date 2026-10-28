@@ -17,7 +17,7 @@ Returns the property for the specified key only if the value is already availabl
 - (id) propertyForKeyIfAvailable:(NSString *) propertyKey;
 ```
 
-#### Return Value
+## Return Value
 
 The value associated with `propertyKey`. Returns `nil` if there is no such key or if the client would have to do work to fetch the property.
 

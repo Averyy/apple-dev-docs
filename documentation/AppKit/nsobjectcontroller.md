@@ -19,13 +19,13 @@ class NSObjectController
 @interface NSObjectController : NSController
 ```
 
-#### Overview
+## Overview
 
 [`NSObjectController`](./nsobjectcontroller.md) is a Cocoa bindings–compatible controller class. Properties of the content object of instances of this class can be bound to user interface elements to access and modify their values.
 
 By default, the content of an [`NSObjectController`](./nsobjectcontroller.md) instance is an [`NSMutableDictionary`](../Foundation/nsmutabledictionary.md) object. This allows a single [`NSObjectController`](./nsobjectcontroller.md) instance to be used to manage many different properties referenced by key-value paths. The default content object class can be changed by calling [`objectClass`](./nsobjectcontroller/objectclass.md), which subclasses must override. Your application should use a custom data class that is key-value compliant whenever possible.
 
-##### Object Controllers, Entity Mode, and Lazy Fetching
+### Object Controllers, Entity Mode, and Lazy Fetching
 
 `NSObjectController` and its subclasses, when in entity mode, can now fetch lazily. With lazy fetching enabled using the property [`usesLazyFetching`](./nsobjectcontroller/useslazyfetching.md), the controller will try to fetch only a small amount of data from available persistent stores. This can provide a significant improvement in memory use when a large amount of content is stored on disk but just a subset of that data is required in memory.
 

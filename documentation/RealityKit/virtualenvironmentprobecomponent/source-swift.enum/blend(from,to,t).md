@@ -20,7 +20,7 @@ A source that blends between two pregenerated probes based on the provided blend
 case blend(from: VirtualEnvironmentProbeComponent.Probe, to: VirtualEnvironmentProbeComponent.Probe, t: Float)
 ```
 
-#### Discussion
+## Discussion
 
 The blend factor is in the range `[0.0, 1.0]` where a value of `0.0` uses only the first probe, and `1.0` uses only the second probe.
 

@@ -26,7 +26,7 @@ var selectionFollowsFocus: Bool { get set }
 
 - [Building a desktop-class iPad app](../building-a-desktop-class-ipad-app.md)
 
-#### Discussion
+## Discussion
 
 The system determines the default value of this property according to the platform and other properties of the collection view.
 

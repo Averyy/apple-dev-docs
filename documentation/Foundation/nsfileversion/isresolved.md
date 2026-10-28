@@ -25,7 +25,7 @@ var isResolved: Bool { get set }
 @property (getter=isResolved) BOOL resolved;
 ```
 
-#### Discussion
+## Discussion
 
 When the system detects a conflict involving versions of a file, it sets this property to [`false`](../../Swift/false.md) to indicate an unresolved conflict. After you resolve the conflict, set this property to [`true`](../../Swift/true.md) to tell the system it is resolved; you must then remove any versions of the file that are no longer useful.
 

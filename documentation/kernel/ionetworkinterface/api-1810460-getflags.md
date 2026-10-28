@@ -12,11 +12,11 @@ virtual UInt16 getFlags(
  void ) const;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the interface flags.
 
-#### Overview
+## Overview
 
 This method calls `ifnet_flags` and returns the current interface flags.
 

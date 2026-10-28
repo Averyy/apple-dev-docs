@@ -19,7 +19,7 @@ Merges an individual part into the specified part of this object.
 mutating func merge(partData: MergeablePartData, into partID: AssignableDocument.PartID) async throws -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true`, if the merge caused a mutation.
 

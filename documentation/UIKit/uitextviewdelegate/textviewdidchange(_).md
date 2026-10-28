@@ -23,7 +23,7 @@ optional func textViewDidChange(_ textView: UITextView)
 - (void) textViewDidChange:(UITextView *) textView;
 ```
 
-#### Discussion
+## Discussion
 
 The text view calls this method in response to user-initiated changes to the text. This method is not called in response to programmatically initiated changes.
 

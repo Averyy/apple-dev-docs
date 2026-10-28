@@ -20,7 +20,7 @@ An error that indicates the change details aren’t available for the persistent
 static var persistentChangeDetailsUnavailable: PHPhotosError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 If a change can’t provide change details, [`changeDetails(for:)`](../phpersistentchange/changedetails%28for%29.md) returns `nil` and an error that indicates the reason. This error indicates you can’t rely on the change to completely reconstruct the state changes that occur, so you need to determine it by using the current library state.
 

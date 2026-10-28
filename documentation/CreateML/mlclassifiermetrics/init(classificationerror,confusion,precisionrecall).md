@@ -20,7 +20,7 @@ Creates empty classifier metrics.
 init(classificationError: Double, confusion: MLDataTable, precisionRecall: MLDataTable)
 ```
 
-#### Discussion
+## Discussion
 
 You typically don’t initialize metrics directly. Instead you get metrics about your model after training. For example, when you train an [`MLClassifier`](../mlclassifier.md), you can look at its [`trainingMetrics`](../mlclassifier/trainingmetrics.md) and [`validationMetrics`](../mlclassifier/validationmetrics.md) properties. Additionally, you can check the performance on a test set with the [`evaluation(on:)`](../mlclassifier/evaluation%28on%29-6433y.md) method.
 

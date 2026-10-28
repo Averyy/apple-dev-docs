@@ -22,7 +22,7 @@ class EKEventViewController
 @interface EKEventViewController : UIViewController
 ```
 
-#### Overview
+## Overview
 
 The event view controller’s primary purpose is to present to the user a modal display containing the details of a calendar event. The view controller lets you set whether users may edit an event and, if the event is an invitation and the organizer is not the user, you can decide whether to show a preview of the event.
 

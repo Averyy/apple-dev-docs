@@ -15,7 +15,7 @@ Describes a grouping of effects that activate together.
 struct HoverEffectGroup
 ```
 
-#### Overview
+## Overview
 
 Use [`HoverEffectGroup`](./hovereffectgroup.md) to apply effects to multiple views in concert.
 

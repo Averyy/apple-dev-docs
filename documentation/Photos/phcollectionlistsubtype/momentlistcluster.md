@@ -25,7 +25,7 @@ case momentListCluster
 PHCollectionListSubtypeMomentListCluster
 ```
 
-#### Discussion
+## Discussion
 
 This subtype applies only to collection lists whose type is [`PHCollectionListType.momentList`](../phcollectionlisttype/momentlist.md).
 

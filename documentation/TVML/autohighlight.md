@@ -5,15 +5,15 @@
 
 Specifies that the element should initially be in focus.
 
-#### Overview
+## Overview
 
 Use the `autoHighlight` attribute to denote the element that is initially in focus. Both the containing element and one child element must be set to `true`. Remove the `autoHighlight` attribute from your element to disable initial focus.
 
-##### Values for autoHighlight
+### Values for autoHighlight
 
 - **Boolean**: The initial focusable state for an element. Set to `true` to have the element initially be in focus.
 
-##### Elements that Use autoHighlight
+### Elements that Use autoHighlight
 
 - [alertTemplate](./alerttemplate.md) that contains `button` elements
 - [catalogTemplate](./catalogtemplate.md) that contains `listItemLockup` elements

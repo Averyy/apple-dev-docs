@@ -25,7 +25,7 @@ let kCMTextMarkupAttribute_Alignment: CFString
 extern CFStringRef const kCMTextMarkupAttribute_Alignment;
 ```
 
-#### Discussion
+## Discussion
 
 This attribute’s value must be one of the constants listed below that indicate the alignment in the writing direction of the first line of text of the cue. The value (or absence) of the [`kCMTextMarkupAttribute_VerticalLayout`](./kcmtextmarkupattribute_verticallayout.md) attribute indicates the writing direction. The default value of this attribute is [`kCMTextMarkupAlignmentType_Middle`](./kcmtextmarkupalignmenttype_middle.md).
 

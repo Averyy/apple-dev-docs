@@ -16,7 +16,7 @@ The layout being used by the layer.
 var layout: LayerRenderer.Layout { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Layouts define how Compositor Services creates the color and depth textures it passes to your app. A layout might use separate textures for each view, or combine the content from multiple views into a single texture. The layout type also determines which Metal texture type to create. For more information about the supported layouts, see [`LayerRenderer.Layout`](../layout.md).
 

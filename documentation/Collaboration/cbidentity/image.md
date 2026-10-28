@@ -19,7 +19,7 @@ var image: NSImage? { get }
 @property (nonatomic, readonly, nullable) NSImage * image;
 ```
 
-#### Return Value
+## Return Value
 
 The image associated with an identity, or `nil` if none exists.
 

@@ -19,15 +19,15 @@ func PMPrinterPrintWithProvider(_ printer: PMPrinter, _ settings: PMPrintSetting
 OSStatus PMPrinterPrintWithProvider(PMPrinter printer, PMPrintSettings settings, PMPageFormat format, CFStringRef mimeType, CGDataProviderRef provider);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./core_printing.md#1670007).
 
-#### Discussion
+## Discussion
 
 This function can fail if the specified printer cannot handle the data provider’s MIME type. Use the function [`PMPrinterGetMimeTypes(_:_:_:)`](./api-1460125-pmprintergetmimetypes.md) to check whether a MIME type is supported.
 
-##### Special Considerations
+### Special Considerations
 
 In OS X v10.4 and earlier, this function is not implemented and returns the error code –1 when called. You can write your print data to a file and use `PMPrinterPrintWithFile` instead.
 

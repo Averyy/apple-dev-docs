@@ -19,7 +19,7 @@ var usesRuler: Bool { get set }
 @property BOOL usesRuler;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) to cause text views sharing the receiver’s layout manager to respond to [`NSRulerView`](../nsrulerview.md) client messages and to paragraph-related menu actions, and update the ruler (when visible) as the selection changes with its paragraph and tab attributes, otherwise [`false`](../../Swift/false.md).
 

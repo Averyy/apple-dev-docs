@@ -22,7 +22,7 @@ static var allowPrivate: UICloudSharingController.PermissionOptions { get }
 UICloudSharingPermissionAllowPrivate
 ```
 
-#### Discussion
+## Discussion
 
 To give the user the option to limit access to people who have been invited, include the [`allowPrivate`](./allowprivate.md) option when setting the [`availablePermissions`](../availablepermissions.md) property on the [`UICloudSharingController`](../../uicloudsharingcontroller.md) instance.
 

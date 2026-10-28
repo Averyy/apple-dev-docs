@@ -5,7 +5,7 @@
 
 Add images and symbols to your app’s user interface.
 
-#### Overview
+## Overview
 
 Display images, including [SF Symbols](https://developer.apple.com/design/human-interface-guidelines/sf-symbols), images that you store in an asset catalog, and images that you store on disk, using an [`Image`](./image.md) view.
 

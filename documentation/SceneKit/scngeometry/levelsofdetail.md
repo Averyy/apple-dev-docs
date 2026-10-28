@@ -25,7 +25,7 @@ var levelsOfDetail: [SCNLevelOfDetail]? { get set }
 @property (nonatomic, copy, nullable) NSArray<SCNLevelOfDetail *> * levelsOfDetail;
 ```
 
-#### Discussion
+## Discussion
 
 Because rendering a complex geometry incurs a performance cost, you can use level-of-detail objects to substitute simpler geometries in its place as its distance from the point of view camera increases (or its apparent size decreases). For details, see [`SCNLevelOfDetail`](../scnlevelofdetail.md).
 

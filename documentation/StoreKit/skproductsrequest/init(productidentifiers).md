@@ -27,7 +27,7 @@ init(productIdentifiers: Set<String>)
 - (instancetype) initWithProductIdentifiers:(NSSet<NSString *> *) productIdentifiers;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized request object.
 

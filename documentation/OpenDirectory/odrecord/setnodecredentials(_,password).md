@@ -20,7 +20,7 @@ func setNodeCredentials(_ inUsername: String!, password inPassword: String!) thr
 - (BOOL) setNodeCredentials:(NSString *) inUsername password:(NSString *) inPassword error:(NSError **) outError;
 ```
 
-#### Discussion
+## Discussion
 
 If this function fails, the previous credentials for the node are used.
 

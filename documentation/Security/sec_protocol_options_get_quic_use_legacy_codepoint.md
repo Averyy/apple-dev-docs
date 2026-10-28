@@ -10,11 +10,11 @@
 bool sec_protocol_options_get_quic_use_legacy_codepoint(sec_protocol_options_t options);
 ```
 
-#### Return Value
+## Return Value
 
 A boolean that indicates whether or not the QUIC legacy codepoint has been enabled.
 
-#### Discussion
+## Discussion
 
 Check whether the QUIC legacy codepoint has been enabled.
 

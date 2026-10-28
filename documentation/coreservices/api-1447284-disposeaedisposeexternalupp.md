@@ -19,7 +19,7 @@ func DisposeAEDisposeExternalUPP(_ userUPP: AEDisposeExternalUPP!)
 void DisposeAEDisposeExternalUPP(AEDisposeExternalUPP userUPP);
 ```
 
-#### Discussion
+## Discussion
 
 See the [`AECreateDescFromExternalPtr(_:_:_:_:_:_:)`](./api-1446239-aecreatedescfromexternalptr.md) function.
 

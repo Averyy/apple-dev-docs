@@ -27,7 +27,7 @@ var applicationState: UIApplication.State { get }
 
 - [Transitioning to the UIKit scene-based life cycle](../transitioning-to-the-uikit-scene-based-life-cycle.md)
 
-#### Discussion
+## Discussion
 
 The behavior of this property depends on whether your app is scene-based.
 

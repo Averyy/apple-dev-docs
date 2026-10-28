@@ -26,7 +26,7 @@ case systemSmall
 - [Preparing widgets for additional platforms, contexts, and appearances](../preparing-widgets-for-additional-contexts-and-appearances.md)
 - [Updating your widgets for visionOS](../updating-your-widgets-for-visionos.md)
 
-#### Discussion
+## Discussion
 
 The small system widget can appear on the Home Screen or in the Today View in iOS and iPadOS. Starting with iPadOS 17, it also appears on the iPad Lock Screen. In macOS, the small system widget can appear on the desktop or in Notification Center.
 

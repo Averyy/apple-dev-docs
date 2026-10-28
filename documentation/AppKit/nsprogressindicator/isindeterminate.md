@@ -19,7 +19,7 @@ var isIndeterminate: Bool { get set }
 @property (getter=isIndeterminate) BOOL indeterminate;
 ```
 
-#### Discussion
+## Discussion
 
 A determinate indicator displays how much of the task has been completed. An indeterminate indicator shows simply that the app is busy.
 

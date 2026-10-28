@@ -25,7 +25,7 @@ let kCFStreamPropertySOCKSProxyHost: CFString
 extern CFStringRef const kCFStreamPropertySOCKSProxyHost;
 ```
 
-#### Discussion
+## Discussion
 
 This key contains a CFString object that represents the SOCKS proxy host. Defined to match `kSCPropNetProxiesSOCKSProxy`.
 

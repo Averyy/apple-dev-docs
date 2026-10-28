@@ -25,11 +25,11 @@ func CFPropertyListCreateData(_ allocator: CFAllocator!, _ propertyList: CFPrope
 extern CFDataRefCFPropertyListCreateData(CFAllocatorRef allocator, CFPropertyListRef propertyList, CFPropertyListFormat format, CFOptionFlags options, CFErrorRef*error);
 ```
 
-#### Return Value
+## Return Value
 
 A CFData object containing a serialized representation of `propertyList` in a the format specified by `format`. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
-#### Discussion
+## Discussion
 
 ## Parameters
 

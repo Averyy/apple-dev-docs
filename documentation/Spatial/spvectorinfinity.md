@@ -21,7 +21,7 @@ A vector that contains all infinities.
 static const SPVector3D SPVectorInfinity;
 ```
 
-#### Discussion
+## Discussion
 
 The vector with values (`infinity`,`infinity`,`infinity`).
 

@@ -15,11 +15,11 @@ Creates a memory buffer with memory descriptor for that buffer.
 virtual bool initWithPhysicalMask(task_t inTask, IOOptionBits options, mach_vm_size_t capacity, mach_vm_address_t alignment, mach_vm_address_t physicalMask);
 ```
 
-#### Return Value
+## Return Value
 
 Returns an instance of class IOBufferMemoryDescriptor to be released by the caller, which will free the memory desriptor and associated buffer.
 
-#### Discussion
+## Discussion
 
 Added in OS X 10.5, this method allocates a memory buffer with a given size and alignment in the task's address space specified, and returns a memory descriptor instance representing the memory. It is recommended that memory allocated for I/O or sharing via mapping be created via IOBufferMemoryDescriptor. Options passed with the request specify the kind of memory to be allocated - pageablity and sharing are specified with option bits. This function may block and so should not be called from interrupt level or while a simple lock is held.
 

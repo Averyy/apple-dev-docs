@@ -9,7 +9,7 @@ Get the merchant token public key.
 **Availability**:
 - Apple Pay Merchant Token Management API 1.0.12+
 
-#### Discussion
+## Discussion
 
 Your server calls this API to get the public key of a particular merchant token. This public key is created by the merchant token owner’s device. The key is a `P-384` public key. The response includes the `supportedCiphersuite`, which specifies the cipher suite to use when calling the `Merchant-Token-Usage-Data-Availability-Notification` or responding to [`Get MerchantToken Usage Information Package`](./get-merchanttoken-usage-information-package.md).
 

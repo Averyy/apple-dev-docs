@@ -21,7 +21,7 @@ Gets or sets custom double properties.
 final subscript<P>(dynamicMember key: KeyPath<ProgressManager.Properties, P.Type>) -> P.Value where P : ProgressManager.Property, P.Summary == Double, P.Value == Double { get set }
 ```
 
-#### Overview
+## Overview
 
 This subscript provides read-write access to custom progress properties where both the value and summary types are `Double`. If the property has not been set, the getter returns the property’s default value.
 

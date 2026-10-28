@@ -17,7 +17,7 @@ A traffic class for audio and video streaming.
 case avStreaming
 ```
 
-#### Discussion
+## Discussion
 
 The audio and video-streaming traffic class delivers media content that requires consistent bandwidth and tolerates some latency for buffering.
 

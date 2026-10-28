@@ -27,7 +27,7 @@ var attitudeReferenceFrame: CMAttitudeReferenceFrame { get }
 
 - [Getting processed device-motion data](../getting-processed-device-motion-data.md)
 
-#### Discussion
+## Discussion
 
 If the device-motion service is active, this property returns the reference frame currently in use. If the service is inactive, but your app started it at some point since launch, this property contains the last reference frame you used. If you haven’t started the device-motion service since app launch, this property returns the default frame of reference, which is [`xArbitraryZVertical`](../cmattitudereferenceframe/xarbitraryzvertical.md).
 

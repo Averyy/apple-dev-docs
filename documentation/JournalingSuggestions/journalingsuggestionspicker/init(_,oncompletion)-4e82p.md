@@ -18,7 +18,7 @@ Creates a suggestions picker with button text defined by the given string.
 
 Available when `Label` is `Text`.
 
-#### Discussion
+## Discussion
 
 This initializer creates a text view on your behalf and uses the string argument to set its text.
 

@@ -21,7 +21,7 @@ A value that describes the purpose of a button.
 struct ButtonRole
 ```
 
-#### Overview
+## Overview
 
 A button role provides a description of a button’s purpose.  For example, the [`destructive`](./buttonrole/destructive.md) role indicates that a button performs a destructive action, like delete user data:
 

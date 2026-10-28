@@ -20,7 +20,7 @@ Returns a Boolean value that indicates whether the layer with the given identifi
 func isLayerMuted(_ identifier: String) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the layer is muted; otherwise, `false`.
 

@@ -25,7 +25,7 @@ var targets: [SCNGeometry] { get set }
 @property (nonatomic, copy) NSArray<SCNGeometry *> * targets;
 ```
 
-#### Discussion
+## Discussion
 
 An array of [`SCNGeometry`](../scngeometry.md) objects.
 

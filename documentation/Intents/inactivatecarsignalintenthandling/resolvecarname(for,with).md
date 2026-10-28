@@ -27,7 +27,7 @@ optional func resolveCarName(for intent: INActivateCarSignalIntent) async -> INS
 - (void) resolveCarNameForActivateCarSignal:(INActivateCarSignalIntent *) intent withCompletion:(void (^)(INSpeakableStringResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to resolve the car’s name. If the app has access to more than one car, use the intent’s [`carName`](../inactivatecarsignalintent/carname.md) property to identify the correct car. If the app has access to only a single car, you can call the completion block with a `notRequired()` resolution for Swift and `resolutionResultNotRequired` for Objective-C, to indicate that the car name is not necessary.
 

@@ -24,7 +24,7 @@ var pixelFormat: MTLPixelFormat { get set }
 @property (nonatomic, readwrite) MTLPixelFormat pixelFormat;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `MTLPixelFormatRGBA8Unorm`.
 

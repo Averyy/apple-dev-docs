@@ -27,7 +27,7 @@ let kSecUseOperationPrompt: CFString
 extern CFStringRef const kSecUseOperationPrompt;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is of type [`CFString`](../CoreFoundation/cfstring.md) and represents a string describing the operation for which the app is attempting to authenticate. When performing user authentication, the system includes the string in the user prompt. The app is responsible for text localization.
 

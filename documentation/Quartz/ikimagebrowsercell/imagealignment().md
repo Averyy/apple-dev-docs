@@ -19,11 +19,11 @@ func imageAlignment() -> NSImageAlignment
 - (NSImageAlignment) imageAlignment;
 ```
 
-#### Return Value
+## Return Value
 
 The alignment of the image. See [`NSImageAlignment`](../../AppKit/nsimagealignment.md) for possible values.
 
-#### Discussion
+## Discussion
 
 Subclasses can override this method to customize the image alignment.
 

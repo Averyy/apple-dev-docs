@@ -19,7 +19,7 @@ func printOperation(with printInfo: NSPrintInfo!) -> NSPrintOperation!
 - (NSPrintOperation *) printOperationWithPrintInfo:(NSPrintInfo *) printInfo;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSPrintOperation` object set up to print this frame. See [`NSPrintOperation`](../../AppKit/nsprintoperation.md) for more information about this object.
 

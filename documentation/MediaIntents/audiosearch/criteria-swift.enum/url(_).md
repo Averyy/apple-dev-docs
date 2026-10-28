@@ -25,7 +25,7 @@ case url([URL])
 
 - [Responding to audio search and playback requests](../../responding-to-audio-search-and-playback-requests.md)
 
-#### Discussion
+## Discussion
 
 The system provides URLs for matching content if:
 

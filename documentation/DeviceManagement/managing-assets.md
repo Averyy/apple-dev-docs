@@ -5,11 +5,11 @@
 
 Assign and revoke app and book licenses across your organization.
 
-#### Overview
+## Overview
 
 Assets are the apps and books that an organization owns. The asset management endpoints allow for asynchronous management of these assets to users and devices with your device management service.
 
-#### Retrieve asset information
+## Retrieve asset information
 
 Before managing the assets in an organization, you need to retrieve all of the assets that the organization owns by making a request to [`Get Assets`](./get-assets-4ski1.md).
 
@@ -122,7 +122,7 @@ curl --location --request GET 'https://vpp.itunes.apple.com/mdm/v2/assets?produc
 --header 'Authorization: Bearer {sToken}'
 ```
 
-#### Retrieve assignments
+## Retrieve assignments
 
 Making a request to [`Get Assignments`](./get-assignments-9wv1e.md) allows you to retrieve all active asset assignments for the organization.
 
@@ -194,11 +194,11 @@ curl --location --request GET 'https://vpp.itunes.apple.com/mdm/v2/assignments?a
 --header 'Authorization: Bearer {sToken}'
 ```
 
-#### Check request size limits
+## Check request size limits
 
 The size limits for a [`ManageAssetsRequest`](./manageassetsrequest.md) and [`RevokeAssetsRequest`](./revokeassetsrequest.md) are dynamic and can change without notice, so you should sync these every 5 minutes. These limits are in [`ServiceConfigResponse.Limits`](./serviceconfigresponse/limits-data.dictionary.md). For the specific request-limit keys and their meanings, see [`Service Config`](./service-config.md).
 
-#### Assign assets
+## Assign assets
 
 Use [`ManageAssetsRequest`](./manageassetsrequest.md) to asynchronously associate assets with users and devices. Because these requests are asynchronous, install assets on a device only after the server sends a successful notification.
 
@@ -242,7 +242,7 @@ The code above results in a response like the following:
 }
 ```
 
-#### Unassign assets
+## Unassign assets
 
 Use [`ManageAssetsRequest`](./manageassetsrequest.md) to asynchronously disassociate assets from users and devices. Because these requests are asynchronous, remove assets from a device only after the server sends a successful notification. An unassigned asset that remains installed on a device becomes unusable after 30 days.
 
@@ -391,7 +391,7 @@ The code above results in a response like the following:
 
 The [`StatusResponse`](./statusresponse.md) returns as `PENDING`, `COMPLETE`, or `FAILED`, which represents the overall status of the asynchronous request.
 
-#### Handle notifications
+## Handle notifications
 
 For device management services that subscribe to `ASSET_MANAGEMENT` notifications in [`Client Config`](./client-config-4szk1.md), the server sends incremental notifications as it makes assignments. For more information, see [Subscribing to notifications](./subscribing-to-notifications.md).
 

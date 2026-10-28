@@ -17,17 +17,17 @@ OSStatus PMSessionPostScriptData (
 );
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../core_printing.md#1670007).
 
-#### Overview
+## Overview
 
 You must call this function between the creation and release of a printing session. See the function [`PMCreateSession`](../api-1463247-pmcreatesession.md). Typically you call this function with the scope of calls to the functions `PMSessionPostScriptBegin` and `PMSessionPostScriptEnd`.
 
 The function `PMSessionPostScriptData` is not useful unless the current port is the printing port and the document format is PICT + PS. 
 
-##### Special Considerations
+### Special Considerations
 
 The PICT + PS spool file format is not available on Intel-based systems.
 

@@ -19,7 +19,7 @@ The mode set while tracking in controls takes place.
 extern NSRunLoopMode const UITrackingRunLoopMode;
 ```
 
-#### Discussion
+## Discussion
 
 You can use this mode to add timers that fire during tracking.
 

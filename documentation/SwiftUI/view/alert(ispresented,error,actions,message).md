@@ -22,7 +22,7 @@ nonisolated
 func alert<E, A, M>(isPresented: Binding<Bool>, error: E?, @ContentBuilder actions: (E) -> A, @ContentBuilder message: (E) -> M) -> some View where E : LocalizedError, A : View, M : View
 ```
 
-#### Discussion
+## Discussion
 
 In the example below, a form conditionally presents an alert depending upon the value of an error. When the error value isn’t `nil`, the system presents an alert with an “OK” action.
 

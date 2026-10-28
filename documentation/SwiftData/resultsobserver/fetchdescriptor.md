@@ -21,7 +21,7 @@ The fetch descriptor used to query the model context.
 final var fetchDescriptor: FetchDescriptor<Element> { get }
 ```
 
-#### Discussion
+## Discussion
 
 This descriptor defines the complete fetch criteria including predicate, sort descriptors, and other fetch options. It is configured at initialization and can be indirectly modified through the [`filterBy`](./filterby.md) and [`sortBy`](./sortby.md) computed properties.
 

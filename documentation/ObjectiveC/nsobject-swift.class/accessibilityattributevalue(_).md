@@ -21,7 +21,7 @@ func accessibilityAttributeValue(_ attribute: NSAccessibility.Attribute) -> Any?
 - (id) accessibilityAttributeValue:(NSAccessibilityAttributeName) attribute;
 ```
 
-#### Discussion
+## Discussion
 
 User interface classes must implement this method. Subclasses should invoke the superclass’s implementation, if it exists, if `attribute` is not implemented in the subclass.
 

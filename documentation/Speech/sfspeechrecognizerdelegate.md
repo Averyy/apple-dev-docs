@@ -23,7 +23,7 @@ protocol SFSpeechRecognizerDelegate : NSObjectProtocol
 @protocol SFSpeechRecognizerDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 A speech recognizer’s availability can change due to the device’s Internet connection or other factors. Use this protocol’s optional method to track those changes and provide an appropriate response. For example, when speech recognition becomes unavailable, you might disable related features in your app.
 

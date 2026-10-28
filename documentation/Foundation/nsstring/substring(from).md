@@ -25,7 +25,7 @@ func substring(from: Int) -> String
 - (NSString *) substringFromIndex:(NSUInteger) from;
 ```
 
-#### Return Value
+## Return Value
 
 A new string containing the characters of the receiver from the one at `anIndex` to the end. If `anIndex` is equal to the length of the string, returns an empty string.
 

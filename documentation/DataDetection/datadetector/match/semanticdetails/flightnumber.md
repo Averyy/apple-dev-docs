@@ -21,7 +21,7 @@ The values the framework returns that represent an airline code and a flight num
 struct FlightNumber
 ```
 
-#### Discussion
+## Discussion
 
 The values the data detector returns represent the International Air Transport Association (IATA) code of the airline and the flight number.
 

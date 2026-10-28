@@ -23,7 +23,7 @@ static var mayAlreadyExist: NSFileProviderModifyItemOptions { get }
 NSFileProviderModifyItemMayAlreadyExist
 ```
 
-#### Discussion
+## Discussion
 
 This option applies when moving the item to a location where it may refer to an item that already exists. This situation may occur when merging two directories together.
 

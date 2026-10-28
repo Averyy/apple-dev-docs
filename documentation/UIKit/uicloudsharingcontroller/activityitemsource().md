@@ -22,7 +22,7 @@ func activityItemSource() -> any UIActivityItemSource
 - (id<UIActivityItemSource>) activityItemSource;
 ```
 
-#### Discussion
+## Discussion
 
 Use [`activityItemSource()`](./activityitemsource%28%29.md), an object that conforms to the [`UIActivityItemSource`](../uiactivityitemsource.md) protocol, when you want to include the CloudKit Sharing action as one of the action items in an instance of [`UIActivityViewController`](../uiactivityviewcontroller.md).
 

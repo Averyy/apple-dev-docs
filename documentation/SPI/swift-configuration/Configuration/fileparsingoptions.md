@@ -24,13 +24,13 @@ A type that provides parsing options for file configuration snapshots.
 protocol FileParsingOptions : Sendable
 ```
 
-#### Overview
+## Overview
 
 This protocol defines the requirements for parsing options types used with [`FileConfigSnapshot`](./fileconfigsnapshot.md) implementations. Types conforming to this protocol provide configuration parameters that control how file data is interpreted and parsed during snapshot creation.
 
 The parsing options are passed to the [`init(data:providerName:parsingOptions:)`](./fileconfigsnapshot/init%28data,providername,parsingoptions%29.md) initializer, allowing custom file format implementations to access format-specific parsing settings such as character encoding, date formats, or validation rules.
 
-#### Usage
+## Usage
 
 Implement this protocol to provide parsing options for your custom [`FileConfigSnapshot`](./fileconfigsnapshot.md):
 

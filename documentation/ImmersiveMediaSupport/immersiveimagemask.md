@@ -19,7 +19,7 @@ An object that holds all the information needed to load immersive media masks fr
 final class ImmersiveImageMask
 ```
 
-#### Overview
+## Overview
 
 An image file containing the alpha values is used to generate the image mask.
 

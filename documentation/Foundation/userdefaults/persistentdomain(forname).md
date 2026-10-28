@@ -25,11 +25,11 @@ func persistentDomain(forName domainName: String) -> [String : Any]?
 - (NSDictionary<NSString *,id> *) persistentDomainForName:(NSString *) domainName;
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary containing the keys and values from the specified domain. If the domain doesn’t contain any keys, or is a volatile domain, the method returns `nil`.
 
-#### Discussion
+## Discussion
 
 This method retrieves only the keys and values from the specified domain. It doesn’t retrieve keys from other persistent or volatile domains.
 

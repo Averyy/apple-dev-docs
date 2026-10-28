@@ -20,7 +20,7 @@ Reference to the resource describing the desired inverse kinematics setup.
 var resource: IKResource?
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: There is one engine tick delay between setting new resource and the change reflected in `solvers`.
 

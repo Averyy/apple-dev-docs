@@ -5,13 +5,13 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 The watchOS 26.2 SDK provides support to develop watchOS apps for Apple Watch devices running watchOS 26.3. The SDK comes bundled with Xcode 26.2. For information on the compatibility requirements for Xcode 26.2, see [Xcode 26.2 Release Notes](../Xcode-Release-Notes/xcode-26_2-release-notes.md).
 
-##### StoreKit
+### StoreKit
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: [Product.products(for:)](../StoreKit/product/products%28for%29.md) fails silently instead of throwing errors.  (165186025) (FB21110809)
 

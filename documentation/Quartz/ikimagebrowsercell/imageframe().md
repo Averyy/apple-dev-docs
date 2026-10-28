@@ -19,11 +19,11 @@ func imageFrame() -> NSRect
 - (NSRect) imageFrame;
 ```
 
-#### Return Value
+## Return Value
 
 The coordinates of the frame, in the `IKImageBrowserView` coordinate space.
 
-#### Discussion
+## Discussion
 
 It is the developer’s responsibility to compute the `imageFrame` such that it lies entirely within the cell’s [`frame()`](./frame%28%29.md) rectangle.
 

@@ -17,11 +17,11 @@ Creates a certificate object based on the specified data, type, and encoding.
 OSStatus SecCertificateCreateFromData(const SecAsn1Item *data, CSSM_CERT_TYPE type, CSSM_CERT_ENCODING encoding, SecCertificateRef*certificate);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  This function is deprecated. Use [`SecCertificateCreateWithData(_:_:)`](./seccertificatecreatewithdata%28_,_%29.md) instead.
 

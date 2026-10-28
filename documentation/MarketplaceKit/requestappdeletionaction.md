@@ -16,7 +16,7 @@ A SwiftUI environment action that requests the deletion of an app.
 struct RequestAppDeletionAction
 ```
 
-#### Overview
+## Overview
 
 Use this action in SwiftUI views to request app deletion. The system presents a confirmation to ensure that the person approves the app’s deletion.
 

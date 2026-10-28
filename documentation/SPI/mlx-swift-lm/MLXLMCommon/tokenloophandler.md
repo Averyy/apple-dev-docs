@@ -17,7 +17,7 @@ Converts generated tokens into stream events.
 protocol TokenLoopHandler : SendableMetatype
 ```
 
-#### Overview
+## Overview
 
 Handlers run on the generation worker and may own non-Sendable decoding state. Only their output crosses into the consumer’s task. The `emit` closure returns `false` when the consumer has ended the stream.
 

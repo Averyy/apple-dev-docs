@@ -6,7 +6,7 @@
 
 The number of frames into which the panoramic image is diced horizontally.
 
-#### Overview
+## Overview
 
 The width of each frame (which is `imageSizeX/imageNumFramesX`) should be divisible by 4.
 

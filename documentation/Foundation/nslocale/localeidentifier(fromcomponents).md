@@ -25,11 +25,11 @@ class func localeIdentifier(fromComponents dict: [String : String]) -> String
 + (NSString *) localeIdentifierFromComponents:(NSDictionary<NSString *,NSString *> *) dict;
 ```
 
-#### Return Value
+## Return Value
 
 A locale identifier created from the components specified in `dict`.
 
-#### Discussion
+## Discussion
 
 This reverses the actions of [`components(fromLocaleIdentifier:)`](./components%28fromlocaleidentifier%29.md), so for example the dictionary `{NSLocaleLanguageCode="en", NSLocaleCountryCode="US", NSLocaleCalendar=NSJapaneseCalendar}` becomes `"en_US@calendar=japanese"`.
 

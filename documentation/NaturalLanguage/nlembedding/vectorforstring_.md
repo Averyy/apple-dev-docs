@@ -21,7 +21,7 @@ Requests the vector for the given term.
 - (NSArray<NSNumber *> *) vectorForString:(NSString *) string;
 ```
 
-#### Return Value
+## Return Value
 
 A vector represented as an array of doubles if present in the word embedding, otherwise `nil`.
 

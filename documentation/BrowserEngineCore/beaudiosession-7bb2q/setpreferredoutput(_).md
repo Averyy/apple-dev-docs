@@ -13,11 +13,11 @@ Sets the preferred audio output port for the session.
 ## Declaration
 
 ```swift
-@objc
-(setPreferredOutput:error:) func setPreferredOutput(_ outputPort: AVAudioSessionPortDescription?) throws
+@objc(setPreferredOutput:error:)
+func setPreferredOutput(_ outputPort: AVAudioSessionPortDescription?) throws
 ```
 
-#### Discussion
+## Discussion
 
 Pass `nil` to clear the current preference and return to the system’s default output routing.
 

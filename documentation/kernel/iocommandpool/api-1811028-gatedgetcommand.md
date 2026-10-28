@@ -11,11 +11,11 @@ virtual IOReturn gatedGetCommand(
  boolvBlock);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnNoResources if no command is available and the client doesn't wish to block until one does become available. kIOReturnSuccess if the vCommand argument is valid.
 
-#### Overview
+## Overview
 
 The gatedGetCommand method is used to serialize the extraction of a command from the pool behind a command gate, runAction-ed by getCommand.
 

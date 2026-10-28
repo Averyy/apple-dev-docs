@@ -25,7 +25,7 @@ let MPNowPlayingInfoPropertyPlaybackQueueCount: String
 extern NSString * const MPNowPlayingInfoPropertyPlaybackQueueCount;
 ```
 
-#### Discussion
+## Discussion
 
 Value is an [`NSNumber`](../Foundation/nsnumber.md) object configured as an [`NSUInteger`](../ObjectiveC/nsuinteger.md).
 

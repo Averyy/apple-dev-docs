@@ -18,7 +18,7 @@ An optional instance of a condition that represents the most specific condition 
 @property (strong, readonly) CLCondition * refinement;
 ```
 
-#### Discussion
+## Discussion
 
 The type of the refinement condition depends on the monitored condition itself.
 

@@ -20,7 +20,7 @@ nonisolated
 struct PresentedWindowContent<Data, Content> where Data : Decodable, Data : Encodable, Data : Hashable, Content : View
 ```
 
-#### Overview
+## Overview
 
 You don’t create this type directly. [`WindowGroup`](./windowgroup.md) creates values for you.
 

@@ -20,7 +20,7 @@ var target: ARRaycastQuery.Target { get }
 @property (nonatomic, readonly) ARRaycastTarget target;
 ```
 
-#### Discussion
+## Discussion
 
 The available target types are plane, infinite plane, and estimated plane.
 

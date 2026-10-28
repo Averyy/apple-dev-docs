@@ -25,7 +25,7 @@ var sectionNameKeyPath: String? { get }
 @property (nonatomic, readonly, nullable) NSString * sectionNameKeyPath;
 ```
 
-#### Discussion
+## Discussion
 
 This property returns the value you specify for the `sectionNameKeyPath` parameter when you initialize the fetched results controller.
 

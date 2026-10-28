@@ -23,7 +23,7 @@ var externalStorageDevices: [AVExternalStorageDevice] { get }
 @property (readonly) NSArray<AVExternalStorageDevice *> * externalStorageDevices;
 ```
 
-#### Discussion
+## Discussion
 
 Your app can monitor the changes to this array with a key-value observation.
 

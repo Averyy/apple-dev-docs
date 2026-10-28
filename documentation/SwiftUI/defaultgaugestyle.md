@@ -21,7 +21,7 @@ The default gauge view style in the current context of the view being styled.
 @preconcurrency struct DefaultGaugeStyle
 ```
 
-#### Overview
+## Overview
 
 You can also use [`automatic`](./gaugestyle/automatic.md) to construct this style.
 

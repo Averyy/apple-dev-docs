@@ -23,7 +23,7 @@ func makeTemporalDenoisedScaler(device: any MTLDevice, compiler: any MTL4Compile
 - (id<MTL4FXTemporalDenoisedScaler>) newTemporalDenoisedScalerWithDevice:(id<MTLDevice>) device compiler:(id<MTL4Compiler>) compiler;
 ```
 
-#### Return Value
+## Return Value
 
  A denoiser scaler instance upon success, or `nil` otherwise.
 

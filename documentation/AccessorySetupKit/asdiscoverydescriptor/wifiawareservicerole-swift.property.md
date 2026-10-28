@@ -20,7 +20,7 @@ var wifiAwareServiceRole: ASDiscoveryDescriptor.WiFiAwareServiceRole { get set }
 @property (nonatomic, assign, readwrite) ASDiscoveryDescriptorWiFiAwareServiceRole wifiAwareServiceRole;
 ```
 
-#### Discussion
+## Discussion
 
 This property defaults to [`ASDiscoveryDescriptor.WiFiAwareServiceRole.subscriber`](./wifiawareservicerole-swift.enum/subscriber.md)
 

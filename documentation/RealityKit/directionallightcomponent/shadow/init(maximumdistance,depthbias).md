@@ -20,7 +20,7 @@ Creates a directional light shadow with a maximum distance and depth bias.
 init(maximumDistance: Float = 5.0, depthBias: Float = 1.0)
 ```
 
-#### Discussion
+## Discussion
 
 The `maximumDistance` parameter in this initializer is equivalent to setting [`shadowProjection`](./shadowprojection.md) to `.automatic(maximumDistance: maximumDistance)`.
 

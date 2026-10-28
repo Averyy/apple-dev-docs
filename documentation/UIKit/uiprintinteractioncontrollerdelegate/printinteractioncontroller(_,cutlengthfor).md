@@ -22,11 +22,11 @@ optional func printInteractionController(_ printInteractionController: UIPrintIn
 - (CGFloat) printInteractionController:(UIPrintInteractionController *) printInteractionController cutLengthForPaper:(UIPrintPaper *) paper;
 ```
 
-#### Return Value
+## Return Value
 
 The physical length of the page in points.
 
-#### Discussion
+## Discussion
 
 Some printers can cut a roll of print paper at a particular length. If you implement this method in your delegate, then it may be called during a print job. Your delegate should determine the length in which the content fits and return this value. When printed, the paper will be cut to this length.
 

@@ -20,7 +20,7 @@ The language for which this asset pack is localized.
 let language: Locale.Language?
 ```
 
-#### Discussion
+## Discussion
 
 This property is `nil` if the asset pack isn’t localized and therefore isn’t language-specific.
 

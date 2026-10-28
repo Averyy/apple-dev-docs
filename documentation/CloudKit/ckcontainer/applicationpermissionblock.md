@@ -27,7 +27,7 @@ typealias ApplicationPermissionBlock = (CKContainer.ApplicationPermissionStatus,
 typedef void (^)(enum CKApplicationPermissionStatus, NSError *) CKApplicationPermissionBlock;
 ```
 
-#### Discussion
+## Discussion
 
 When you request or determine the status of a permission, use this closure to process the result. The closure has no return value and takes the following parameters:
 

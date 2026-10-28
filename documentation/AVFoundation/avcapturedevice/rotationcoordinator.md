@@ -23,7 +23,7 @@ class RotationCoordinator
 @interface AVCaptureDeviceRotationCoordinator : NSObject
 ```
 
-#### Overview
+## Overview
 
 Correctly rotate the photos and movies your app captures, and optionally, a live camera preview, by applying a coordinator’s [`videoRotationAngleForHorizonLevelCapture`](./rotationcoordinator/videorotationangleforhorizonlevelcapture.md) and [`videoRotationAngleForHorizonLevelPreview`](./rotationcoordinator/videorotationangleforhorizonlevelpreview.md) properties, respectively. Each rotation coordinator instance updates its properties so that your app can observe them and immediately apply them to the relevant components.
 

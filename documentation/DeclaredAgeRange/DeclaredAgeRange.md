@@ -12,7 +12,7 @@ Create age-appropriate experiences in your app by asking people to share their a
 - Mac Catalyst 26.0+
 - macOS 26.0+
 
-#### Overview
+## Overview
 
 Use the Declared Age Range API to request that people share their age range with your app. For children in a Family Sharing group, a parent or guardian or the Family Organizer can decide whether to always share a child’s age information with your app, ask the child every time, or never share their age information. Along with an age range, the system returns an [`AgeRangeService.AgeRangeDeclaration`](./agerangeservice/agerangedeclaration.md) for the age range a person provides. To use the Declared Age Range API, add the [`com.apple.developer.declared-age-range`](../BundleResources/entitlements/com.apple.developer.declared-age-range.md) entitlement to your app by enabling the Declared Age Range capability on your target in Xcode. For more information, see [Adding capabilities to your app](../Xcode/adding-capabilities-to-your-app.md).
 

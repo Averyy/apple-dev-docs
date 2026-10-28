@@ -28,7 +28,7 @@ optional func resolvePlaybackSpeed(for intent: INPlayMediaIntent) async -> INPla
 - (void) resolvePlaybackSpeedForPlayMedia:(INPlayMediaIntent *) intent withCompletion:(void (^)(INPlayMediaPlaybackSpeedResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to resolve the playback speed for playing media.
 

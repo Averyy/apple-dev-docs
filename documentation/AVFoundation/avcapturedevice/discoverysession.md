@@ -29,7 +29,7 @@ class DiscoverySession
 - [Choosing a capture device](../choosing-a-capture-device.md)
 - [Adopting smart framing in your camera app](../adopting-smart-framing-in-your-camera-app.md)
 
-#### Overview
+## Overview
 
 After creating a device discovery session, query its [`devices`](./discoverysession/devices.md) property to find a device to use for capture. You can also key-value observe this property to monitor changes to the list of available devices.
 

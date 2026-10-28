@@ -15,11 +15,11 @@ Returns the remainder of this value divided by the given value using truncating 
 func truncatingRemainder(dividingBy other: Self) -> Self
 ```
 
-#### Return Value
+## Return Value
 
 The remainder of this value divided by `other` using truncating division.
 
-#### Discussion
+## Discussion
 
 Performing truncating division with floating-point values results in a truncated integer quotient and a remainder. For values `x` and `y` and their truncated integer quotient `q`, the remainder `r` satisfies `x == y * q + r`.
 

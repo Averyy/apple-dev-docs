@@ -15,7 +15,7 @@ The comprehensive audience and placement configuration for an ad group.
 object AdGroupTargeting
 ```
 
-#### Discussion
+## Discussion
 
 The `AdGroupTargeting` object is the comprehensive audience and placement configuration for an ad group. The [`CampaignTargeting`](./campaigntargeting.md) establishes campaign-level supply source, placement, and geographic markets first, and `AdGroupTargeting` then refines audience and delivery within the bounds of that campaign.
 
@@ -29,7 +29,7 @@ For valid location identifier values and geographic lookup, see [Geo Targeting E
 
 For a full request that embeds `targeting` alongside the other ad group fields, see [`Create an Ad Group`](./post-adgroups.md) (create) and [`Update an Ad Group`](./put-adgroups-_id_.md) (update).
 
-##### Example
+### Example
 
 > **Note**: This example shows every available targeting dimension for illustration. In practice, include only the dimensions relevant to your campaign type, with values customized to your targeting needs.
 

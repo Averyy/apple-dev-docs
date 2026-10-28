@@ -23,7 +23,7 @@ var shouldReport: Bool { get set }
 @property BOOL shouldReport;
 ```
 
-#### Discussion
+## Discussion
 
 If the property is equal to [`true`](../../Swift/true.md), the system sends a report to the control provider’s [`handle(_:)`](../nefilterprovider/handle%28_%29.md) method when processing this verdict in the data provider. This property has no effect if the verdict originates in the control provider.
 

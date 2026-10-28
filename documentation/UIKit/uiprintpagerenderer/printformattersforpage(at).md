@@ -22,11 +22,11 @@ func printFormattersForPage(at pageIndex: Int) -> [UIPrintFormatter]?
 - (NSArray<UIPrintFormatter *> *) printFormattersForPageAtIndex:(NSInteger) pageIndex;
 ```
 
-#### Return Value
+## Return Value
 
 An array of [`UIPrintFormatter`](../uiprintformatter.md) objects. A print formatter can be an instance of [`UISimpleTextPrintFormatter`](../uisimpletextprintformatter.md), [`UIMarkupTextPrintFormatter`](../uimarkuptextprintformatter.md), or [`UIViewPrintFormatter`](../uiviewprintformatter.md).
 
-#### Discussion
+## Discussion
 
 A print formatter is associated with a starting page of printable content through the [`addPrintFormatter(_:startingAtPageAt:)`](./addprintformatter%28_,startingatpageat%29.md) method or the [`startPage`](../uiprintformatter/startpage.md) property of [`UIPrintFormatter`](../uiprintformatter.md). The number of pages from that page is determined by the [`pageCount`](../uiprintformatter/pagecount.md) property, which [`UIPrintFormatter`](../uiprintformatter.md) computes based on layout metrics and content.
 

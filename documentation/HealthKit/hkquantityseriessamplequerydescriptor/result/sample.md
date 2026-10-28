@@ -20,7 +20,7 @@ The quantity sample that owns the series of data entries.
 let sample: HKQuantitySample?
 ```
 
-#### Discussion
+## Discussion
 
 HealthKit sets this value to `nil` unless you included the [`includeSample`](../options-swift.struct/includesample.md) option when you created the series query descriptor.
 

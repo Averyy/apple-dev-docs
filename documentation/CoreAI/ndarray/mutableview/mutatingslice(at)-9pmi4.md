@@ -22,7 +22,7 @@ mutating func mutatingSlice(at ranges: [any NDArray.RangeExpression]) -> NDArray
 
 Available when `Element` conforms to `BitwiseCopyable`.
 
-#### Discussion
+## Discussion
 
 For example if you have a 3D NDArray and want to increment a specific region, you can slice that region and then access a span over it (or use `withUnsafeMutablePointer` if not contiguous).
 

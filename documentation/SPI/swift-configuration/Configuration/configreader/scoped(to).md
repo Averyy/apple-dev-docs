@@ -28,11 +28,11 @@ func scoped(to configKey: ConfigKey) -> ConfigReader
 
 - [Migrating to Swift Configuration](../migrating-to-swift-configuration.md)
 
-#### Return Value
+## Return Value
 
 A config reader for accessing values within the specified scope.
 
-#### Discussion
+## Discussion
 
 ```swift
 let httpConfig = config.scoped(to: ConfigKey(["http", "client"]))

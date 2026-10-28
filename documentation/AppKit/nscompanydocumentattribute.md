@@ -15,7 +15,7 @@ The company or organization name associated with the document.
 extern NSAttributedStringDocumentAttributeKey NSCompanyDocumentAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this attribute is an [`NSString`](../Foundation/nsstring.md) object containing company or organization name.
 

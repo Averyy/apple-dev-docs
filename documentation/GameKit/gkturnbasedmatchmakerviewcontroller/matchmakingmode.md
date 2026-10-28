@@ -28,7 +28,7 @@ var matchmakingMode: GKMatchmakingMode { get set }
 
 - [Starting turn-based matches and passing turns between players](../starting-turn-based-matches-and-passing-turns-between-players.md)
 
-#### Discussion
+## Discussion
 
 This method throws an exception if you set the mode to a value that isn’t possible due to restrictions.
 

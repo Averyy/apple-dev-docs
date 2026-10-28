@@ -25,7 +25,7 @@ var localeIdentifier: String { get }
 @property (copy, readonly) NSString * localeIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 Examples of locale identifiers include `"en_GB"`, `"es_ES_PREEURO"`, and `"zh-Hant_HK_POSIX@collation=pinyin;currency=CNY"`.
 

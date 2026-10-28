@@ -22,7 +22,7 @@ var currentSystemCode: Data { get }
 @property (nonatomic, retain, readonly) NSData * currentSystemCode;
 ```
 
-#### Discussion
+## Discussion
 
 The system code matches one of the entries in the array for the [`ISO18092 system codes for NFC Tag Reader Session`](../../BundleResources/entitlements/com.apple.developer.nfc.readersession.felica.systemcodes.md) information property list key.
 

@@ -25,7 +25,7 @@ func reorderContainer<Item, CollectionID>(for item: Item.Type, in collectionID: 
 
 - [Reordering items in lists, stacks, grids, and custom layouts](../reordering-items-in-lists-stacks-grids-and-custom-layouts.md)
 
-#### Discussion
+## Discussion
 
 Declare this modifier on your list, stack, grid, or custom layout to define a reorderable container. Then, apply [`reorderable(collectionID:)`](../dynamicviewcontent/reorderable%28collectionid%29.md) to the content of your container to make those views reorderable.
 

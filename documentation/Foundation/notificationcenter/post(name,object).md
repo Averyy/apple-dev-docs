@@ -25,7 +25,7 @@ func post(name aName: NSNotification.Name, object anObject: Any?)
 - (void) postNotificationName:(NSNotificationName) aName object:(id) anObject;
 ```
 
-#### Discussion
+## Discussion
 
 This is a convenience method for calling [`post(name:object:userInfo:)`](./post%28name,object,userinfo%29.md) and passing `nil` to `aUserInfo`.
 

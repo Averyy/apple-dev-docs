@@ -21,7 +21,7 @@ Checks a necessary condition for making forward progress.
 func precondition(_ condition: @autoclosure () -> Bool, _ message: @autoclosure () -> String = String(), file: StaticString = #file, line: UInt = #line)
 ```
 
-#### Discussion
+## Discussion
 
 Use this function to detect conditions that must prevent the program from proceeding, even in shipping code.
 

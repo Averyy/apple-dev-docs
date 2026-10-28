@@ -23,7 +23,7 @@ case success
 INActivateCarSignalIntentResponseCodeSuccess
 ```
 
-#### Discussion
+## Discussion
 
 Use this code when your app has successfully activated the specified signals on the user’s car.
 

@@ -22,7 +22,7 @@ func highlightProperty(withKey key: String, identifier: String?)
 - (void) highlightPropertyWithKey:(NSString *) key identifier:(NSString *) identifier;
 ```
 
-#### Discussion
+## Discussion
 
 When a single value property key is specified, identifier will be ignored.
 

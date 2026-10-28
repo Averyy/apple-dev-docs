@@ -25,7 +25,7 @@ var transportType: MKDirectionsTransportType { get set }
 @property (nonatomic) MKDirectionsTransportType transportType;
 ```
 
-#### Discussion
+## Discussion
 
 You can use this property to specify whether you want directions suited to a particular type of transportation. For example, you can use this to specify that you want walking directions or driving directions.
 

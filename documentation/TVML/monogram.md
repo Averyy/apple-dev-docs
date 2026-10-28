@@ -4,7 +4,7 @@
 
 Displays information below a `monogramLockup` element.
 
-#### Overview
+## Overview
 
 Here’s an example that sets the name Anne Johnson as part of a `monogramLockup` element.
 
@@ -16,7 +16,7 @@ Here’s an example that sets the name Anne Johnson as part of a `monogramLockup
 </monogramLockup>
 ```
 
-##### Contained In
+### Contained In
 
 - [monogramLockup](./monogramlockup.md)
 

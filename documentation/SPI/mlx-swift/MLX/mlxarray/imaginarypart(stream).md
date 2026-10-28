@@ -17,7 +17,7 @@ Extract the imaginary part of a [`DType.complex64`](../dtype/complex64.md) array
 func imaginaryPart(stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-##### See Also
+### See Also
 
 - [Conversion](../conversion.md)
 

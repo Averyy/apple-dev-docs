@@ -24,7 +24,7 @@ func createSymbolicLink(named name: FSFileName, in directory: FSItem, attributes
 - (void) createSymbolicLinkNamed:(FSFileName *) name inDirectory:(FSItem *) directory attributes:(FSItemSetAttributesRequest *) newAttributes linkContents:(FSFileName *) contents context:(FSContext *) context replyHandler:(void (^)(FSCreateSymlinkResult *result, NSError *error)) reply;
 ```
 
-#### Discussion
+## Discussion
 
 If an item named `name` already exists in the directory indicated by `directory`, complete the request with an error with a domain of [`NSPOSIXErrorDomain`](../../../Foundation/nsposixerrordomain.md) and a code of `EEXIST`.
 

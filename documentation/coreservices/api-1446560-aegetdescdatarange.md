@@ -19,11 +19,11 @@ func AEGetDescDataRange(_ dataDesc: UnsafePointer<AEDesc>!, _ buffer: UnsafeMuta
 OSStatus AEGetDescDataRange(const AEDesc *dataDesc, void *buffer, Size offset, Size length);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. If the requested `offset` and `length` are such that they do not fit entirely within the descriptor’s data, `AEGetDescDataRange` returns `errAEBufferTooSmall`. See also [Result Codes](../applicationservices/apple_event_manager.md#1656145).
 
-#### Discussion
+## Discussion
 
 This function is valid only for value type descriptors (such as`typeUTF8Text`). You can use this function when you know the precise location of a subset of data within the descriptor. For example, if the descriptor contains a block of your private data, you might retrieve just a particular chunk you need at a known offset, representing an image, a string, or some other data type. Or if a descriptor contains an RGB color, you can access just the blue field.
 

@@ -25,7 +25,7 @@ let MPLanguageOptionCharacteristicEasyToRead: String
 extern NSString * const MPLanguageOptionCharacteristicEasyToRead;
 ```
 
-#### Discussion
+## Discussion
 
 Closed caption tracks that carry easy reader captions (per the CEA-608 specification) should have this characteristic tag. Subtitle tracks can also have this characteristic tag, where appropriate.
 

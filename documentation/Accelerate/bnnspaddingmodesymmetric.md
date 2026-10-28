@@ -25,7 +25,7 @@ var BNNSPaddingModeSymmetric: BNNSPaddingMode { get }
 BNNSPaddingModeSymmetric
 ```
 
-#### Discussion
+## Discussion
 
 For example, given the following padding size and input:
 

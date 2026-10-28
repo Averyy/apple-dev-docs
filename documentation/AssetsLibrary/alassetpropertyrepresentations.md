@@ -12,7 +12,7 @@ The key to retrieve the representations available for a given asset (for example
 extern NSString * const ALAssetPropertyRepresentations;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is an [`NSArray`](../Foundation/nsarray.md) object containing UTIs expressed as strings.
 

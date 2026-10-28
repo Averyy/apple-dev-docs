@@ -23,7 +23,7 @@ Returns a new dropout layer parameters structure from the specified parameters.
 init(i_desc: BNNSNDArrayDescriptor, o_desc: BNNSNDArrayDescriptor, rate: Float, seed: UInt32, control: UInt8)
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  Dropout layers only support arrays with a data type of `float`. The input shape must be equal to the output shape.
 

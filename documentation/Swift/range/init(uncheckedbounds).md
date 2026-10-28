@@ -21,7 +21,7 @@ Creates an instance with the given bounds.
 init(uncheckedBounds bounds: (lower: Bound, upper: Bound))
 ```
 
-#### Discussion
+## Discussion
 
 Because this initializer does not perform any checks, it should be used as an optimization only when you are absolutely certain that `lower` is less than or equal to `upper`. Using the half-open range operator (`..<`) to form `Range` instances is preferred.
 

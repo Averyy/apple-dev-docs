@@ -24,7 +24,7 @@ var hasUndeterminedDuration: Bool { get }
 @property (readonly) BOOL hasUndeterminedDuration;
 ```
 
-#### Discussion
+## Discussion
 
 This property is [`true`](../../Swift/true.md) if the sample’s [`endDate`](./enddate.md) property is [`distantFuture`](../../Foundation/nsdate/distantfuture.md).
 

@@ -25,7 +25,7 @@ struct StreamSocketSecurityLevel
 typedef NSString * NSStreamSocketSecurityLevel;
 ```
 
-#### Discussion
+## Discussion
 
 You access and set these values using the `NSStreamSocketSecurityLevelKey` property key.
 

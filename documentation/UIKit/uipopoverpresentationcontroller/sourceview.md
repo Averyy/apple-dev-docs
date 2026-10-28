@@ -26,7 +26,7 @@ var sourceView: UIView? { get set }
 
 - [Getting the user’s attention with alerts and action sheets](../getting-the-user-s-attention-with-alerts-and-action-sheets.md)
 
-#### Discussion
+## Discussion
 
 Use this property in conjunction with the [`sourceRect`](./sourcerect.md) property to specify the anchor location for the popover. Alternatively, you may specify the anchor location for the popover using the [`barButtonItem`](./barbuttonitem.md) property.
 

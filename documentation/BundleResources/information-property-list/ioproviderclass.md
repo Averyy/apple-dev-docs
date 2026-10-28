@@ -14,9 +14,9 @@ The name of the class that your driver expects to provide the implementation for
 - **Name**: `IOProviderClass`
 - **Type**: string
 
-#### Discussion
+## Discussion
 
-The value of this key is a string that contains the name of an [IOService](../../kernel/ioservice-1g.md) subclass. This class corresponds to the provider object that the system passes to your [`IOService`](../../DriverKit/ioservice.md) subclass at startup. (For a kernel extension, the system passes the provider object to the [`start`](../../kernel/ioservice/api-1532606-start.md) method of your [`IOService`](../../kernel/ioservice-1g.md) subclass. For a DriverKit extension, the system passes it to the [`Start`](../../DriverKit/ioservice/start.md) method of your [`IOService`](../../DriverKit/ioservice.md) subclass.) Use the provider object in your driver you receive to communicate with the underlying device.
+The value of this key is a string that contains the name of an [IOService](../../kernel/ioservice.md) subclass. This class corresponds to the provider object that the system passes to your [`IOService`](../../DriverKit/ioservice.md) subclass at startup. (For a kernel extension, the system passes the provider object to the [`start`](../../kernel/ioservice/api-1532606-start.md) method of your [`IOService`](../../kernel/ioservice.md) subclass. For a DriverKit extension, the system passes it to the [`Start`](../../DriverKit/ioservice/start.md) method of your [`IOService`](../../DriverKit/ioservice.md) subclass.) Use the provider object in your driver you receive to communicate with the underlying device.
 
 ## See Also
 

@@ -25,7 +25,7 @@ enum CFDateFormatterStyle
 enum CFDateFormatterStyle : CFIndex;
 ```
 
-#### Overview
+## Overview
 
 For possible values, see [Date Formatter Styles](./date_formatter_styles.md)
 

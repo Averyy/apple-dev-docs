@@ -24,7 +24,7 @@ var outputStream: OutputStream? { get }
 @property (nonatomic, readonly, nullable) NSOutputStream * outputStream;
 ```
 
-#### Discussion
+## Discussion
 
 This stream is provided for you automatically by the session object but you must configure it if you want to receive any associated stream events. You do this by assigning a delegate object to the stream that implements the [`stream(_:handle:)`](../../Foundation/streamdelegate/stream%28_,handle%29.md) delegate method. You must then schedule the stream in a run loop so that it can send data asynchronously from one of your application’s threads.
 

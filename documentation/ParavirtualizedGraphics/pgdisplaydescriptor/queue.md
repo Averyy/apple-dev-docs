@@ -20,7 +20,7 @@ var queue: dispatch_queue_t? { get set }
 @property (nonatomic, retain, readwrite, nullable) dispatch_queue_t queue;
 ```
 
-#### Discussion
+## Discussion
 
 Most often, your app provides a serial queue. If you can benefit from dispatching events out of order, handle the messages on the serial queue and redispatch them to other queues as necessary.
 

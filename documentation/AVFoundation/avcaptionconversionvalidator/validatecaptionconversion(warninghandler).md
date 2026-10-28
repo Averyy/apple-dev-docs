@@ -22,7 +22,7 @@ func validateCaptionConversion(warningHandler handler: @escaping @Sendable (AVCa
 - (void) validateCaptionConversionWithWarningHandler:(void (^)(AVCaptionConversionWarning *warning)) handler;
 ```
 
-#### Discussion
+## Discussion
 
 When the object finishes validating and reports all warnings, it invokes the callback once with a value of `nil` for its warning parameter. When this occurs, the validator’s [`status`](./status-swift.property.md) value changes to [`AVCaptionConversionValidator.Status.completed`](./status-swift.enum/completed.md).
 

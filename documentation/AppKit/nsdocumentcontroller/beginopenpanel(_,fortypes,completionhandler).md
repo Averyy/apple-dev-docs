@@ -23,7 +23,7 @@ func beginOpenPanel(_ openPanel: NSOpenPanel, forTypes inTypes: [String]?) async
 - (void) beginOpenPanel:(NSOpenPanel *) openPanel forTypes:(NSArray<NSString *> *) inTypes completionHandler:(void (^)(NSInteger result)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 [`openDocument(_:)`](./opendocument%28_%29.md) and [`beginOpenPanel(completionHandler:)`](./beginopenpanel%28completionhandler%29.md) call this method to do the actual work. You typically don’t call this method directly. Override this method as necessary to customize the Open dialog or to alter the list of UTIs in the `inTypes` parameter.
 

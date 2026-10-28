@@ -19,7 +19,7 @@ Creates and returns a new execution status with the specified value.
 init(rawValue: Int)
 ```
 
-#### Return Value
+## Return Value
 
 A new execution status type.
 

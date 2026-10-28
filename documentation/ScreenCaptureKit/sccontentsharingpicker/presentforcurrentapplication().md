@@ -21,7 +21,7 @@ func presentForCurrentApplication()
 - (void) presentPickerForCurrentApplication;
 ```
 
-#### Discussion
+## Discussion
 
 presentPickerForCurrentApplication
 

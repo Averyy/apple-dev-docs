@@ -15,7 +15,7 @@ A DriverKit provider object that works with Type05 devices, those that use SCSI 
 class IOUserSCSIPeripheralDeviceType05;
 ```
 
-#### Overview
+## Overview
 
 Subclass this class to create a driver for multimedia devices, such as CD-ROM and DVD-ROM peripherals. In your subclass, override all pure virtual methods.
 

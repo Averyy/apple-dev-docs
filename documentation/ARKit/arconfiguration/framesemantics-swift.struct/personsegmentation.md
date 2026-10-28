@@ -20,7 +20,7 @@ static var personSegmentation: ARConfiguration.FrameSemantics { get }
 ARFrameSemanticPersonSegmentation
 ```
 
-#### Discussion
+## Discussion
 
 The [`personSegmentation`](./personsegmentation.md) frame semantic specifies that any person ARKit detects in the camera feed occludes virtual content, regardless of the person’s depth in the scene.
 

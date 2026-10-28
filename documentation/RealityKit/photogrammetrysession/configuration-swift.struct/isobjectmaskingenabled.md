@@ -18,7 +18,7 @@ A Boolean value that indicates whether the session uses object masks.
 var isObjectMaskingEnabled: Bool
 ```
 
-#### Discussion
+## Discussion
 
 If this value is true, but the samples don’t contain object masks, RealityKit attempts to automatically create a mask algorithmically. If it’s unable to create a mask, RealityKit reverts to reconstructing the object using the entire image.
 

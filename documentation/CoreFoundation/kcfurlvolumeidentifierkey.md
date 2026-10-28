@@ -25,7 +25,7 @@ let kCFURLVolumeIdentifierKey: CFString!
 extern CFStringRef const kCFURLVolumeIdentifierKey;
 ```
 
-#### Discussion
+## Discussion
 
 This identifier can be used with the [`CFEqual(_:_:)`](./cfequal%28_,_%29.md) function to determine whether two file system resources are on the same volume.
 

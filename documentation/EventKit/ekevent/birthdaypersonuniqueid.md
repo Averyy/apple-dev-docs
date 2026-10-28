@@ -21,11 +21,11 @@ var birthdayPersonUniqueID: String? { get }
 @property (nonatomic, readonly, nullable) NSString * birthdayPersonUniqueID;
 ```
 
-#### Discussion
+## Discussion
 
 This property is only set if this is a birthday event; otherwise the property is `nil`.
 
-##### Special Considerations
+### Special Considerations
 
 > **Note**:  This property is equivalent to the [`birthdayPersonID`](./birthdaypersonid.md) property on iOS.
 

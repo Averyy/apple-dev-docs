@@ -15,7 +15,7 @@ The print key.
 static let print: NSEvent.SpecialKey
 ```
 
-#### Discussion
+## Discussion
 
 This key is unavailable on most Macintosh keyboards.
 

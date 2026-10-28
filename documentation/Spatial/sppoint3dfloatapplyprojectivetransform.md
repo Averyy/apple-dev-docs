@@ -19,11 +19,11 @@
 static SPPoint3DFloat SPPoint3DFloatApplyProjectiveTransform(SPPoint3DFloat point, SPProjectiveTransform3DFloat transform);
 ```
 
-#### Return Value
+## Return Value
 
 The transformed point.
 
-#### Discussion
+## Discussion
 
 Returns a point that’s transformed by the specified projective transform.
 

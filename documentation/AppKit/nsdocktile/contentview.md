@@ -19,7 +19,7 @@ var contentView: NSView? { get set }
 @property (strong, nullable) NSView * contentView;
 ```
 
-#### Discussion
+## Discussion
 
 The view you specify should be height and width resizable.
 

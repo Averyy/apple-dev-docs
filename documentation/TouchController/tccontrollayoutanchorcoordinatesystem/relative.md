@@ -21,7 +21,7 @@ case relative
 TCControlLayoutAnchorCoordinateSystemRelative
 ```
 
-#### Discussion
+## Discussion
 
 - On larger devices, the coordinate system is shrunk for easier handling.
 - On smaller devices, this is equivalent to `TCControlLayoutAnchorCoordinateSystemAbsolute`.

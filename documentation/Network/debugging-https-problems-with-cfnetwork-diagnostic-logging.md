@@ -5,7 +5,7 @@
 
 Use CFNetwork diagnostic logging to investigate HTTP and HTTPS problems.
 
-#### Overview
+## Overview
 
 If you’re using [`URLSession`](../Foundation/urlsession.md) and need to debug a complex networking issue, you can enable CFNetwork diagnostic logging to get detailed information about the progress of your network requests. CFNetwork diagnostic logging has unique advantages relative to other network debugging tools, including:
 
@@ -17,7 +17,7 @@ For information about other network debugging tools, see [Choosing a Network Deb
 
 > **Note**:  Xcode 13 includes the HTTP Tracing instrument to aid in debugging HTTP issues. See [Analyzing HTTP traffic with Instruments](../Foundation/analyzing-http-traffic-with-instruments.md).
 
-##### Understand the Security Implications
+### Understand the Security Implications
 
 CFNetwork diagnostic logs may contain decrypted TLS data and other security-sensitive information. Take these precautions:
 
@@ -27,11 +27,11 @@ CFNetwork diagnostic logs may contain decrypted TLS data and other security-sens
 
 > ❗ **Important**:  CFNetwork diagnostic logs may contain information that’s *extremely* security-sensitive. Protect these logs accordingly.
 
-##### Enable Logging In Xcode
+### Enable Logging In Xcode
 
 To enable CFNetwork diagnostic logging, edit the current scheme (choose Product > Scheme > Edit Scheme), navigate to the Arguments tab, and add a `CFNETWORK_DIAGNOSTICS` item to the Environment Variables list. The value of this item can range from 0 to 3, where 0 turns logging off, and higher numbers give you progressively more logging. When you next run your app and use [`URLSession`](../Foundation/urlsession.md), CFNetwork diagnostic log entries appear in Xcode’s debug console area. If the console area isn’t visible, choose View > Debug Area > Show Debug Area to show it.
 
-##### Enable Logging Programmatically to See Problems Outside of Xcode
+### Enable Logging Programmatically to See Problems Outside of Xcode
 
 To investigate problems outside of Xcode, programmatically enable CFNetwork diagnostic logging by setting the environment variable directly.
 
@@ -47,7 +47,7 @@ Do this right at the beginning of the app’s launch sequence:
 
 > **Note**:  By default, Swift apps don’t have a `main.swift`; [The Swift Programming Language](https://docs.swift.org/swift-book/) explains how to add one.
 
-##### View Log Entries
+### View Log Entries
 
 How you view the resulting log entries depends on your specific situation:
 

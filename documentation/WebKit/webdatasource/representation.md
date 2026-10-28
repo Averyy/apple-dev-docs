@@ -19,7 +19,7 @@ var representation: (any WebDocumentRepresentation)! { get }
 @property (nonatomic, strong, readonly) id<WebDocumentRepresentation> representation;
 ```
 
-#### Discussion
+## Discussion
 
 `nil` if the data source is in the process of being loaded and this method is invoked before loading is complete.
 

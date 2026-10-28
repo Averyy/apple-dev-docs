@@ -21,7 +21,7 @@ A type that represents a bundled app.
 extern UTType * const UTTypeApplicationBundle;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `com.apple.application-bundle`.
 

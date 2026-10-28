@@ -20,7 +20,7 @@ The runtime named blend shapes weights.
 var weightSet: BlendShapeWeightsSet { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Initialize the `weightSet` variable using the [`init()`](../blendshapeweightsset/init%28%29.md) function.
 

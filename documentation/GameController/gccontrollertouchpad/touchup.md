@@ -24,7 +24,7 @@ var touchUp: GCControllerTouchpadHandler? { get set }
 @property (nonatomic, copy, nullable) GCControllerTouchpadHandler touchUp;
 ```
 
-#### Discussion
+## Discussion
 
 The element invokes this handler when the user removes their fingers from the touchpad.
 

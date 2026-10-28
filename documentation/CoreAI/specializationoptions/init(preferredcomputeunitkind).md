@@ -23,7 +23,7 @@ init(preferredComputeUnitKind: ComputeUnitKind)
 
 - [Managing model specialization and caching](../managing-model-specialization-and-caching.md)
 
-#### Discussion
+## Discussion
 
 The specialization process maximizes use of the specified compute unit kind, falling back to other allowed compute units for incompatible operations.
 

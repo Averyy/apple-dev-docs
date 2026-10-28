@@ -23,7 +23,7 @@ var startIndex: Dictionary<Key, Value>.Index { get }
 
 Available when `Key` conforms to `Hashable`.
 
-#### Discussion
+## Discussion
 
 If the collection is empty, `startIndex` is equal to `endIndex`.
 

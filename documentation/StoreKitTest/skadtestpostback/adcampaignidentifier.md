@@ -21,7 +21,7 @@ var adCampaignIdentifier: Int { get }
 @property (nonatomic, assign, readonly) NSInteger adCampaignIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 Ad networks set their own campaign identifiers, which must be an integer between 1 and 100.
 

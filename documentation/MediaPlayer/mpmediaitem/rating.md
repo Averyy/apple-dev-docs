@@ -23,7 +23,7 @@ var rating: Int { get }
 @property (nonatomic, readonly) NSUInteger rating;
 ```
 
-#### Discussion
+## Discussion
 
 This value is in the range `[0...5]`, where a value of `5` indicates the most favorable rating.
 

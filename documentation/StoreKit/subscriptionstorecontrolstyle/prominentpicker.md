@@ -21,7 +21,7 @@ A subscription store control style that displays subscription plans as a promine
 
 Available when `Self` is `ProminentPickerSubscriptionStoreControlStyle`.
 
-#### Discussion
+## Discussion
 
 You can also use [`subscriptionStoreControlStyle(_:)`](../../SwiftUI/view/subscriptionstorecontrolstyle%28_%29.md) with [`prominentPicker`](./prominentpicker.md) as the parameter to construct this style.
 

@@ -23,7 +23,7 @@ var referenceView: UIView? { get }
 @property (nonatomic, readonly, nullable) UIView * referenceView;
 ```
 
-#### Discussion
+## Discussion
 
 This property has a value only for a dynamic animator initialized using the [`init(referenceView:)`](./init%28referenceview%29.md) method.
 

@@ -19,7 +19,7 @@ Generate uniformly distributed random numbers between `low` and `high` with a gi
 func uniform(low: any ScalarOrArray, high: any ScalarOrArray, _ shape: [Int]? = nil, dtype: DType = .float32, key: MLXArray? = nil, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 The values are sampled uniformly in the half-open interval `[lb, ub)`. The lower and upper bound can be scalars or arrays and must be broadcastable to the optional `shape` (it will be the shape of the `lb` if not specified).
 

@@ -19,7 +19,7 @@ func columnContentWidth(forColumnWidth columnWidth: CGFloat) -> CGFloat
 - (CGFloat) columnContentWidthForColumnWidth:(CGFloat) columnWidth;
 ```
 
-#### Return Value
+## Return Value
 
 The width of the content for the column. This is the width of the matrix in the column.
 

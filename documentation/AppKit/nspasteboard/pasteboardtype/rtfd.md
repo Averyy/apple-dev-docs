@@ -19,7 +19,7 @@ static let rtfd: NSPasteboard.PasteboardType
 extern NSPasteboardType const NSPasteboardTypeRTFD;
 ```
 
-#### Discussion
+## Discussion
 
 In macOS 10.6 and later, use [`rtfd`](./rtfd.md) instead.
 

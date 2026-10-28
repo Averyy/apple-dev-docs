@@ -25,7 +25,7 @@ extern MTLDeviceNotificationName const MTLDeviceWasRemovedNotification;
 
 - [Handling external GPU additions and removals](../handling-external-gpu-additions-and-removals.md)
 
-#### Discussion
+## Discussion
 
 This notification tells your app that an [`MTLDevice`](../mtldevice.md) instance and its methods are no longer valid to avoid runtime failures.
 

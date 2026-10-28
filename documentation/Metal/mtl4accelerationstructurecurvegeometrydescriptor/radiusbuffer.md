@@ -24,7 +24,7 @@ var radiusBuffer: MTL4BufferRange { get set }
 @property (nonatomic) MTL4BufferRange radiusBuffer;
 ```
 
-#### Discussion
+## Discussion
 
 Metal interpolates curve radii according to the basis function you specify via [`curveBasis`](./curvebasis.md).
 

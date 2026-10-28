@@ -19,11 +19,11 @@ func systemExtensions(forApplicationWithBundleID bundleID: String) throws -> Set
 - (NSSet<OSSystemExtensionProperties *> *) systemExtensionsForApplicationWithBundleID:(NSString *) bundleID error:(NSError **) out_error;
 ```
 
-#### Return Value
+## Return Value
 
 A set of system extension property objects on success, nil otherwise.
 
-#### Discussion
+## Discussion
 
 Get information about system extension(s) in an app with a bundle identifier
 

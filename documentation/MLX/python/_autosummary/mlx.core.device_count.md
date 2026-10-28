@@ -6,14 +6,17 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.de
 
 # mlx.core.device_count
 
-**device_count(*device_type: mlx.core.DeviceType*) → [int](https://docs.python.org/3/builtins/functions.html#int)**
-: Get the number of available devices for the given device type.
+```python
+device_count(device_type: mlx.core.DeviceType) → int
+```
 
-Parameters:
-**device_type** (*DeviceType*) – The type of device to query (cpu or gpu).
+Get the number of available devices for the given device type.
 
-Returns:
-Number of devices.
+**Parameters:**
+: **device_type** (*DeviceType*) – The type of device to query (cpu or gpu).
 
-Return type:
-[int](https://docs.python.org/3/builtins/functions.html#int)
+**Returns:**
+: Number of devices.
+
+**Return type:**
+: [int](https://docs.python.org/3/builtins/functions.html#int)

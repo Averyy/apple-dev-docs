@@ -6,19 +6,24 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.lo
 
 # mlx.core.logaddexp
 
-**logaddexp(*a: scalar | array*, *b: scalar | array*, */*, ***, *stream: StreamOrDevice = None*) → [array](mlx.core.array.md#mlx.core.array)**
-: Element-wise log-add-exp.
+```python
+logaddexp(a: scalar | array, b: scalar | array, /, *, stream: StreamOrDevice = None) → array
+```
+
+Element-wise log-add-exp.
+
 This is a numerically stable log-add-exp of two arrays with numpy-style
 broadcasting semantics. Either or both input arrays can also be scalars.
+
 The computation is a numerically stable version of `log(exp(a) + exp(b))`.
 
-Parameters:
+**Parameters:**
 
-**a** ([array](mlx.core.array.md#mlx.core.array)) – Input array or scalar.
-**b** ([array](mlx.core.array.md#mlx.core.array)) – Input array or scalar.
+- **a** ([array](mlx.core.array.md#mlx.core.array)) – Input array or scalar.
+- **b** ([array](mlx.core.array.md#mlx.core.array)) – Input array or scalar.
 
-Returns:
-The log-add-exp of `a` and `b`.
+**Returns:**
+: The log-add-exp of `a` and `b`.
 
-Return type:
-[array](mlx.core.array.md#mlx.core.array)
+**Return type:**
+: [array](mlx.core.array.md#mlx.core.array)

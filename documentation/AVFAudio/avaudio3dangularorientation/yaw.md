@@ -25,7 +25,7 @@ var yaw: Float
 float yaw;
 ```
 
-#### Discussion
+## Discussion
 
 The yaw axis describes the side-to-side movement of the listener’s head, and is perpendicular to the plane of the listener’s ears. Its origin is at the center of the listener’s head and points toward the bottom of the head. A positive yaw is in the clockwise direction going from `0` to `180` degrees. A negative yaw is in the counterclockwise direction going from `0` to `-180` degrees.
 

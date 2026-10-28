@@ -23,7 +23,7 @@ weak var delegate: (any UIScrollViewDelegate)? { get set }
 @property (nonatomic, weak, nullable) id<UIScrollViewDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 The delegate must adopt the [`UIScrollViewDelegate`](../uiscrollviewdelegate.md) protocol. The [`UIScrollView`](../uiscrollview.md) class, which doesn’t retain the delegate, invokes each protocol method the delegate implements.
 

@@ -21,7 +21,7 @@ Symbolic link
 static var symbolicLink: FileType { get }
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding C constant is `S_IFLNK`.
 

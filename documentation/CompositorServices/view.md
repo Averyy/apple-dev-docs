@@ -5,7 +5,7 @@
 
 A type that manages the viewport and texture details for each portion of your frame’s content.
 
-#### Overview
+## Overview
 
 Compositor Services provides a view for each distinct render viewpoint. For example, a head-mounted display typically contains two views: one for each eye. Use the information in the views to set up your render pass descriptor, or to determine which part of a texture to fill with content.
 

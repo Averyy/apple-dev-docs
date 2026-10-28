@@ -16,7 +16,7 @@ Indicates that the listener isn’t activated during its creation.
 static let inactive: XPCListener.InitializationOptions
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  If you create a listener with this option, you must manually activate it by calling [`activate()`](../activate%28%29.md).
 

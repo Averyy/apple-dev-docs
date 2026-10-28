@@ -19,7 +19,7 @@ var weight: Double { get }
 @property (nonatomic, readonly) double weight;
 ```
 
-#### Discussion
+## Discussion
 
 Values range from `0.0` to `1.0` where a higher number represents higher overall significance within the project section. The default value is `0.5`.
 

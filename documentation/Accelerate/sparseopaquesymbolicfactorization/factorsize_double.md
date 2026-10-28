@@ -25,7 +25,7 @@ var factorSize_Double: Int
 size_t factorSize_Double;
 ```
 
-#### Discussion
+## Discussion
 
 If numerical pivoting requires a pivot to be delayed, the actual size required may be larger.
 

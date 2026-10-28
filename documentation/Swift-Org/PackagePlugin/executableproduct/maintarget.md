@@ -17,7 +17,7 @@ The target that contains the main entry point of the executable.
 let mainTarget: Target
 ```
 
-#### Discussion
+## Discussion
 
 Every executable product has exactly one main executable target. This target will always be one of the targets in the product’s `targets` array.
 

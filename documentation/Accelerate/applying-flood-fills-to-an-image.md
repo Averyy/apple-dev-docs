@@ -5,7 +5,7 @@
 
 Fill consistently colored connected parts of an image with a new color.
 
-#### Overview
+## Overview
 
 The vImage library provides a set of functions that allow you to flood fill areas of an image with a new color. The following image demonstrates how the flood-fill operation can colorize a hand-drawn line illustration:
 
@@ -13,7 +13,7 @@ The vImage library provides a set of functions that allow you to flood fill area
 
 The flood-fill functions fill areas with identical pixel values. The process of applying lossy compression, such as when generating JPG images, may subtly change pixel values. Use losslessly compressed or uncompressed images, such as PNGs, to achieve the best flood-fill results.
 
-##### Create the planar vImage buffer that represents the source image
+### Create the planar vImage buffer that represents the source image
 
 Create a 32-bit-per-pixel, planar image to store the image of the line drawing.
 
@@ -44,7 +44,7 @@ bufferPlanarF.colorThreshold(
     destination: bufferPlanarF)
 ```
 
-##### Create the interleaved vImage buffer that represents the destination image
+### Create the interleaved vImage buffer that represents the destination image
 
 Use the 32-bit planar buffer to create a four-channel, 8-bit-per-pixel buffer.
 
@@ -53,7 +53,7 @@ let bufferRGB8 = vImage.PixelBuffer<vImage.Interleaved8x4>(
     planarBuffers: [bufferPlanarF, bufferPlanarF, bufferPlanarF, bufferPlanarF])
 ```
 
-##### Apply the flood-fill operation
+### Apply the flood-fill operation
 
 The source image is 1024 pixels wide and 1585 pixels high. The following image shows the coordinates of the six seed pixels:
 
@@ -105,7 +105,7 @@ bufferRGB8.withUnsafePointerToVImageBuffer { src in
 
 ```
 
-##### Create a Core Graphics image of the result
+### Create a Core Graphics image of the result
 
 Create a [`vImage_CGImageFormat`](./vimage_cgimageformat.md) structure that describes the four-channel, 8-bit-per-channel output image.
 

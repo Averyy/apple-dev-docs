@@ -15,11 +15,11 @@ Retrieves the CSSM trust result.
 OSStatus SecTrustGetCssmResult(SecTrustRef trust, CSSM_TP_VERIFY_CONTEXT_RESULT_PTR*result);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
-#### Discussion
+## Discussion
 
 After calling the [`SecTrustEvaluate(_:_:)`](./sectrustevaluate%28_,_%29.md) function, you can call the [`SecTrustGetTrustResult(_:_:)`](./sectrustgettrustresult%28_,_%29.md) function or the `SecTrustGetCssmResult` function to get information about the certificates in the certificate chain and everything that might be wrong with each certificate. Whereas the [`SecTrustGetTrustResult(_:_:)`](./sectrustgettrustresult%28_,_%29.md) function returns the information in a form that you can interpret without extensive knowledge of CSSM, the `SecTrustGetCssmResult` function returns information in a form that can be passed directly to CSSM functions. See *Common Security: CDSA and CSSM, version 2 (with corrigenda)* from The Open Group ([http://www.opengroup.org/security/cdsa.htm](http://www.opengroup.org/security/cdsa.htm) for more information about the `CSSM_TP_VERIFY_CONTEXT_RESULT` structure pointed to by the `result` parameter.
 

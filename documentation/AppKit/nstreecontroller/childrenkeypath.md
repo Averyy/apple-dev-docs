@@ -19,7 +19,7 @@ var childrenKeyPath: String? { get set }
 @property (copy, nullable) NSString * childrenKeyPath;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is `nil`.
 

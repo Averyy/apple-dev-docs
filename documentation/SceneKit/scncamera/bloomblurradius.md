@@ -25,7 +25,7 @@ var bloomBlurRadius: CGFloat { get set }
 @property (nonatomic) CGFloat bloomBlurRadius;
 ```
 
-#### Discussion
+## Discussion
 
 A bloom effect adds a soft glow to highlights (areas of bright color) in the rendered scene, simulating the way bright highlights appear to the human eye or a physical camera in a real-world scene. The bloom effect combines selective brightening and blurring effects; this property controls the blur portion of the effect. A value of zero effectively disables the bloom effect, and higher values result in a broader, softer glow. The default value is `4.0` pixels.
 

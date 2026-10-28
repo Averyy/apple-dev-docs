@@ -22,7 +22,7 @@ var remoteStorageTexture: (any MTLTexture)? { get }
 @property (readonly, nullable) id<MTLTexture> remoteStorageTexture;
 ```
 
-#### Discussion
+## Discussion
 
 If the value of this property is non-`nil`, it contains a reference to the [`MTLTexture`](../mtltexture.md) instance that created this texture. If the texture isn’t a remote view, the value of this property is `nil`.
 

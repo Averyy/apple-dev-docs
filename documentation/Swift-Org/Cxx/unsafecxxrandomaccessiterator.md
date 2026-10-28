@@ -17,7 +17,7 @@ Bridged C++ iterator that allows computing the distance between two of its insta
 protocol UnsafeCxxRandomAccessIterator : UnsafeCxxInputIterator
 ```
 
-#### Overview
+## Overview
 
 Mostly useful for conforming a type to the `CxxRandomAccessCollection` protocol and should not generally be used directly.
 

@@ -15,11 +15,11 @@ Gets a Boolean value that represents whether the device is alive.
 bool GetDeviceIsAlive();
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the device is alive; `false` otherwise.
 
-#### Discussion
+## Discussion
 
 This method synchronizes by using the work queue created by the object.
 

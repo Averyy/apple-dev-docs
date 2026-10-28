@@ -23,7 +23,7 @@ case failurePaymentsAmountBelowMinimum
 INSendPaymentIntentResponseCodeFailurePaymentsAmountBelowMinimum
 ```
 
-#### Discussion
+## Discussion
 
 Use this response code when the payment amount is below the minimum transaction amount required by your app.
 

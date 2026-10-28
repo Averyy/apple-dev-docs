@@ -19,7 +19,7 @@ func setSearchCriteria(_ inServiceClassMajor: BluetoothServiceClassMajor, majorD
 - (void) setSearchCriteria:(BluetoothServiceClassMajor) inServiceClassMajor majorDeviceClass:(BluetoothDeviceClassMajor) inMajorDeviceClass minorDeviceClass:(BluetoothDeviceClassMinor) inMinorDeviceClass;
 ```
 
-#### Discussion
+## Discussion
 
 The default inquiry object will search for all types of devices. If you wish to find only keyboards, for example, you might use this method like this:
 

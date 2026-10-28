@@ -5,7 +5,7 @@
 
 A structure that represents a range of time.
 
-#### Overview
+## Overview
 
 This document describes the API for creating and manipulating `CMTimeRange` structures.
 

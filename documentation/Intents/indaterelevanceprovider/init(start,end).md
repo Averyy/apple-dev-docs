@@ -23,7 +23,7 @@ init(start startDate: Date, end endDate: Date?)
 - (instancetype) initWithStartDate:(NSDate *) startDate endDate:(NSDate *) endDate;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized date relevance provider.
 

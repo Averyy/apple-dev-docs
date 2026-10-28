@@ -35,7 +35,7 @@ var availablePartySizeOptionsSelectionPrompt: String? { get set }
 
 - [Generating a List of Ride Options](../../SiriKit/generating-a-list-of-ride-options.md)
 
-#### Discussion
+## Discussion
 
 Use this property to customize the text that Siri and Maps display to the user for party size selection. Display the text you provide as an option for the user to tap in the Siri or Maps interface. When tapped, display the party size options from the [`availablePartySizeOptions`](./availablepartysizeoptions.md) property so that the user can select one.
 

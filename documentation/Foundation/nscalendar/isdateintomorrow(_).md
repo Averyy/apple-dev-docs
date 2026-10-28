@@ -25,7 +25,7 @@ func isDateInTomorrow(_ date: Date) -> Bool
 - (BOOL) isDateInTomorrow:(NSDate *) date;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the given date is in “tomorrow,” otherwise [`false`](../../Swift/false.md).
 

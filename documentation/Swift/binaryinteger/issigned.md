@@ -22,7 +22,7 @@ A Boolean value indicating whether this type is a signed integer type.
 static var isSigned: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 *Signed* integer types can represent both positive and negative values. *Unsigned* integer types can represent only nonnegative values.
 

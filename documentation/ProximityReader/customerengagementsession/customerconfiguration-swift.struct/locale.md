@@ -17,7 +17,7 @@ The customer’s current locale.
 let locale: Locale
 ```
 
-#### Discussion
+## Discussion
 
 Localize all merchant-supplied text to the customer’s locale.
 

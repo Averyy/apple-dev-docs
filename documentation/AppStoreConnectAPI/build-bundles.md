@@ -5,7 +5,7 @@
 
 Read metadata for app and App Clip binaries included in a build you upload to App Store Connect.
 
-#### Overview
+## Overview
 
 A `buildBundles` resource represents metadata for binaries you upload to App Store Connect as a build. It provides detailed information like capabilities an app uses, supported CPU architectures, and more. For a full list of available attributes, see [`BuildBundle.Attributes`](./buildbundle/attributes-data.dictionary.md).
 

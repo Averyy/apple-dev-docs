@@ -32,7 +32,7 @@ var mediaDestinationType: INMediaDestinationType { get }
 @property (atomic, assign, readonly) INMediaDestinationType mediaDestinationType;
 ```
 
-#### Discussion
+## Discussion
 
 This property indicates whether to add the media item to the library or a playlist.
 

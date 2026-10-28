@@ -24,11 +24,11 @@ reverseLookup(
 ): Promise<GeocoderResponse>;
 ```
 
-#### Return Value
+## Return Value
 
 A promise that resolves with a [`GeocoderResponse`](../geocoderresponse.md) on success.
 
-#### Discussion
+## Discussion
 
 Reverse geocoding converts geographic coordinates to the nearest human-readable address.
 

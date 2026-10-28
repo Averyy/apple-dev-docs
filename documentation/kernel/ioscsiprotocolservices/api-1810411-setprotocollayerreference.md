@@ -13,11 +13,11 @@ bool SetProtocolLayerReference (
  void *newReferenceValue );
 ```
 
-#### Return Value
+## Return Value
 
 True on success, otherwise false.
 
-#### Overview
+## Overview
 
 Accessor method to set the protocol layer reference.
 

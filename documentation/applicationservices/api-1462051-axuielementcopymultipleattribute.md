@@ -19,7 +19,7 @@ func AXUIElementCopyMultipleAttributeValues(_ element: AXUIElement, _ attributes
 AXError AXUIElementCopyMultipleAttributeValues(AXUIElementRef element, CFArrayRef attributes, AXCopyMultipleAttributeOptions options, CFArrayRef  _Nullable *values);
 ```
 
-#### Return Value
+## Return Value
 
 If unsuccessful, `AXUIElementCopyMultipleAttributeValues` may return one of the following error codes, among others:
 
@@ -28,7 +28,7 @@ If unsuccessful, `AXUIElementCopyMultipleAttributeValues` may return one of the 
 - **`kAXErrorCannotComplete`**: The function cannot complete because messaging has failed in some way.
 - **`kAXErrorNotImplemented`**: The process does not fully support the accessibility API.
 
-#### Discussion
+## Discussion
 
 If the specified AXUIElementRef does not support an attribute passed in the `attributes` array, the returned array can contain an error or CFNull at the corresponding position.
 

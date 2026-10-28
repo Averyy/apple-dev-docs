@@ -16,7 +16,7 @@ Retrieves a string from a string descriptor.
 - (const NSString *) stringWithIndex:(NSUInteger) index languageID:(NSUInteger) languageID error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 The string from the specified string descriptor.
 

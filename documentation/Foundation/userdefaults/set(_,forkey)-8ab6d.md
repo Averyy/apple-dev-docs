@@ -25,7 +25,7 @@ func set(_ value: Any?, forKey defaultName: String)
 - (void) setObject:(id) value forKey:(NSString *) defaultName;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to write property list object types to the defaults store. To store types that aren’t property list objects, archive them to a [`Data`](../data.md) object and use this method to save that data object to the defaults store.
 

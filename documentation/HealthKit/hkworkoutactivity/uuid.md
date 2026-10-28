@@ -24,7 +24,7 @@ var uuid: UUID { get }
 @property (copy, readonly) NSUUID * UUID;
 ```
 
-#### Discussion
+## Discussion
 
 HealthKit assigns a UUID to the workout activity when you create it. If you want to add your own unique ID, add it to the activity’s [`metadata`](./metadata.md) using the [`HKMetadataKeyExternalUUID`](../hkmetadatakeyexternaluuid.md) key.
 

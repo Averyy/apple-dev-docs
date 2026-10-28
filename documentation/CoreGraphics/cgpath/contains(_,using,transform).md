@@ -21,11 +21,11 @@ Returns whether the specified point is interior to the path.
 func contains(_ point: CGPoint, using rule: CGPathFillRule = .winding, transform: CGAffineTransform = .identity) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the point is interior to the path; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 A point is contained in a path if it would be inside the painted region when the path is filled.
 

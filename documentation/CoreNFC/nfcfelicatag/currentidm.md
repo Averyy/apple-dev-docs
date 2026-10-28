@@ -22,7 +22,7 @@ var currentIDm: Data { get }
 @property (nonatomic, retain, readonly) NSData * currentIDm;
 ```
 
-#### Discussion
+## Discussion
 
 The reader session updates [`currentIDm`](./currentidm.md) each time your app calls the [`polling(systemCode:requestCode:timeSlot:completionHandler:)`](./polling%28systemcode,requestcode,timeslot,completionhandler%29.md) method. The data contained in [`currentIDm`](./currentidm.md) is empty when the system selection fails.
 

@@ -21,7 +21,7 @@ var cglPixelFormatObj: CGLPixelFormatObj? { get }
 @property (readonly, nullable) CGLPixelFormatObj CGLPixelFormatObj;
 ```
 
-#### Return Value
+## Return Value
 
 A pointer to the underlying `CGLPixelFormatObj` object.
 

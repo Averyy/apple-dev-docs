@@ -11,11 +11,11 @@ Method called by IONetworkController prior to the initial getWorkLoop() call.
 virtual bool createWorkLoop();
 ```
 
-#### Return Value
+## Return Value
 
 Returns true to indicate success, false otherwise. Returning false will fail IONetworkController::start().
 
-#### Overview
+## Overview
 
 Before IONetworkController calls getWorkLoop() in its start() method, it will call createWorkLoop() to make sure that a subclass that wants to create a workloop, will do so before its first use.
 

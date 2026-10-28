@@ -23,7 +23,7 @@ func sendMessage(_ message: [String : Any], replyHandler: (([String : Any]) -> V
 - (void) sendMessage:(NSDictionary<NSString *,id> *) message replyHandler:(void (^)(NSDictionary<NSString *,id> *replyMessage)) replyHandler errorHandler:(void (^)(NSError *error)) errorHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Use this message to send a dictionary of data to the counterpart as soon as possible. Messages are queued serially and delivered in the order in which you sent them. Delivery of the messages happens asynchronously, so this method returns immediately.
 

@@ -25,7 +25,7 @@ func encodeConditionalObject(_ object: Any?)
 - (void) encodeConditionalObject:(id) object;
 ```
 
-#### Discussion
+## Discussion
 
 In the overriding method, `object` should be encoded only if it’s unconditionally encoded elsewhere (with any other `encode...Object:` method).
 

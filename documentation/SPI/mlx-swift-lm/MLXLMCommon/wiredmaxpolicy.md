@@ -17,11 +17,11 @@ Max policy: `max(baseline, max(activeSizes))`.
 struct WiredMaxPolicy
 ```
 
-#### Overview
+## Overview
 
 This policy tracks the single largest active ticket. It is useful when you want the limit to scale with the largest in-flight request rather than the sum of concurrent work.
 
-##### Example
+### Example
 
 ```swift
 let policy = WiredMaxPolicy()

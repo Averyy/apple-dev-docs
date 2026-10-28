@@ -25,11 +25,11 @@ func vImageCreateCGImageFromBuffer(_ buf: UnsafePointer<vImage_Buffer>, _ format
 CGImageRefvImageCreateCGImageFromBuffer(const vImage_Buffer *buf, const vImage_CGImageFormat *format, void (*)(void *, void *)callback, void *userData, vImage_Flags flags, vImage_Error *error);
 ```
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
-#### Discussion
+## Discussion
 
 The following code shows a passthrough function that generates an output Core Graphics image using no-copy mode. The vImage buffer, `buffer`, and the Core Graphics image, `destinationCGImage`, share the same memory. In this example, the deallocation callback deallocates the memory that the `data` variable points to:
 

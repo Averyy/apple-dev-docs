@@ -24,7 +24,7 @@ var hidden: Bool { get set }
 @property (nonatomic) BOOL hidden;
 ```
 
-#### Discussion
+## Discussion
 
 Model I/O is not a renderer, so this property is purely informational.
 

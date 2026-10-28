@@ -20,7 +20,7 @@ optional func windowDidResize(_ notification: Notification)
 - (void) windowDidResize:(NSNotification *) notification;
 ```
 
-#### Discussion
+## Discussion
 
 You can retrieve the window object in question by sending [`object`](../../Foundation/nsnotification/object.md) to `notification`.
 

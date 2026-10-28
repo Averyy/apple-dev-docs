@@ -25,11 +25,11 @@ class UnitFuelEfficiency
 @interface NSUnitFuelEfficiency : NSDimension
 ```
 
-#### Overview
+## Overview
 
 You typically use instances of [`UnitFuelEfficiency`](./unitfuelefficiency.md) to represent specific quantities of fuel efficiency using the [`NSMeasurement`](./nsmeasurement.md) class.
 
-##### Fuel Efficiency
+### Fuel Efficiency
 
 Fuel efficiency corresponds to the thermal efficiency of a process that converts the chemical potential energy of a fuel into kinetic energy. Fuel efficiency can be expressed by SI derived units in terms of cubic meters per meter (m3/m), but is more commonly expressed in terms of liters per kilometer (L/km) and miles per gallon (mpg).
 

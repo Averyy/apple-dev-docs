@@ -24,11 +24,11 @@ class func glassDistortion() -> any CIFilter & CIGlassDistortion
 + (CIFilter<CIGlassDistortion> *) glassDistortionFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The distorted image.
 
-#### Discussion
+## Discussion
 
 This method applies the glass distortion filter to an image. This effect distorts an image by applying a glass texture from the raised portions of the texture map image.
 

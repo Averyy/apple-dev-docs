@@ -15,7 +15,7 @@ Preserves the current phase of the group.
 static let preservesGroup: HoverEffectGroup.Behavior
 ```
 
-#### Discussion
+## Discussion
 
 Use this behavior when an effect should not activate other effects in a group, unless the group already active. This is useful for describing which parts of a view should trigger an effect, while allowing other areas to simply prevent the effect from ending.
 

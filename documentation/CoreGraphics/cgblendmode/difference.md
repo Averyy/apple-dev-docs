@@ -23,7 +23,7 @@ case difference
 kCGBlendModeDifference
 ```
 
-#### Discussion
+## Discussion
 
 Subtracts either the source image sample color from the background image sample color, or the reverse, depending on which sample has the greater brightness value. Source image sample values that are black produce no change; white inverts the background color values.
 

@@ -20,7 +20,7 @@ An extension of the distance limit, as a percentage-based error tolerance.
 var tolerance: Float
 ```
 
-#### Discussion
+## Discussion
 
 For example, a tolerance of `0.01` extends the distance limit by `1` percent. When the pins exceed this distance, the joint constrains the pins until they are within the distance limit.
 

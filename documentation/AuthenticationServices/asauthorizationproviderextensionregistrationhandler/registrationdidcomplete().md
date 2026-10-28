@@ -19,7 +19,7 @@ optional func registrationDidComplete()
 - (void) registrationDidComplete;
 ```
 
-#### Discussion
+## Discussion
 
 The system calls this method once after all current registration calls complete. The extension may free any resources it allocates during registration.
 

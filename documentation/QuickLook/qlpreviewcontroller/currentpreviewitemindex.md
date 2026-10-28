@@ -22,7 +22,7 @@ var currentPreviewItemIndex: Int { get set }
 @property NSInteger currentPreviewItemIndex;
 ```
 
-#### Discussion
+## Discussion
 
 You can change which item the preview controller displays, among those in a navigation list, by setting this property’s value. If the preview controller isn’t displaying an item, this property’s value is `NSNotFound`.
 

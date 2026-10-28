@@ -5,7 +5,7 @@
 
 Display content that fills the entire height of a window by removing the title bar.
 
-#### Overview
+## Overview
 
 By default, Mac apps built with Mac Catalyst display a title bar across the top of their windows. A horizontal line separates the title bar from the content of the window.
 
@@ -15,7 +15,7 @@ The following image illustrates these styles in two windows. The first window di
 
 ![Screenshot of two windows, one stacked above the other, with a dark background in the content area of each window.](https://developer.apple.com/tutorials/images/com.apple.uikit/media-3507886@2x.png)
 
-##### Remove the title bar
+### Remove the title bar
 
 If you choose to design your window without a title bar, you must remove it from the window. To remove the title bar, set the title bar’s [`titleVisibility`](./uititlebar/titlevisibility.md) property to [`UITitlebarTitleVisibility.hidden`](./uititlebartitlevisibility/hidden.md) and the [`toolbar`](./uititlebar/toolbar.md) property to `nil`. The following code shows how to remove the title bar and its separator from the window during the setup of a new scene.
 

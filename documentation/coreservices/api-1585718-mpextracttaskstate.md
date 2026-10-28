@@ -15,11 +15,11 @@ Extracts state information from a suspended task.
 OSStatus MPExtractTaskState(MPTaskID task, MPTaskStateKind kind, void *info);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./carbon_core/multiprocessing_services.md#1663965). If you attempt to extract state information for a running task, this function returns `kMPInsufficientResourcesErr`.
 
-#### Discussion
+## Discussion
 
 You can use this function to obtain register contents or exception information about a particular task. 
 

@@ -19,7 +19,7 @@ func pasteAsPlainText(_ sender: Any?)
 - (void) pasteAsPlainText:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 This method behaves analogously to [`insertText(_:)`](./inserttext%28_%29.md).
 

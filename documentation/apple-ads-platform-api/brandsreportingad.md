@@ -15,13 +15,13 @@ Ad metadata for brands report rows.
 object BrandsReportingAd
 ```
 
-#### Discussion
+## Discussion
 
 The `BrandsReportingAd` object is the ad metadata embedded in `brands` ad report rows. It provides the full organizational context (`adAccountId`, `campaignId`, `adGroupId`) and the ad’s operational state (`status`, `systemStatus`, `displayStatus`) as captured at report time.
 
 The `creative` field embeds a `BrandsReportingCreative` summary with the creative type and validity status. The system populates the `brands`-specific dimension fields (`deviceClass`, `locationId`, `supplyPlacement`) when the report’s `groupBy` specification includes those dimensions.
 
-##### Example
+### Example
 
 ```json
 {

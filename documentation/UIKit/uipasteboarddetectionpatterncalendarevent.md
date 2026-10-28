@@ -18,7 +18,7 @@ A pattern that indicates the pasteboard detects a string that contains a calenda
 extern UIPasteboardDetectionPattern const UIPasteboardDetectionPatternCalendarEvent;
 ```
 
-#### Discussion
+## Discussion
 
 When you include this pattern in calls to [`detectValuesForPatterns:inItemSet:completionHandler:`](./uipasteboard/detectvaluesforpatterns_initemset_completionhandler_.md) or [`detectValuesForPatterns:completionHandler:`](./uipasteboard/detectvaluesforpatterns_completionhandler_.md) and the pasteboard detects a string that contains a calendar event, the system reports the value as an array of [`NSDate`](../Foundation/nsdate.md), [`NSTimeZone`](../Foundation/nstimezone.md), and a Boolean value to indicate an all-day event. You can return the detected results in a paste operation with `UIPasteboardDetectionResultCalendarEvent`, which contains a semantic representation of the duration, date, and time zone values.
 

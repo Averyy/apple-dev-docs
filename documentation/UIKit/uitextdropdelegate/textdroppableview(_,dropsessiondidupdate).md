@@ -22,7 +22,7 @@ optional func textDroppableView(_ textDroppableView: any UIView & UITextDroppabl
 - (void) textDroppableView:(UIView<UITextDroppable> *) textDroppableView dropSessionDidUpdate:(id<UIDropSession>) session;
 ```
 
-#### Discussion
+## Discussion
 
 The system usually—but not always—calls this method before calling the [`textDroppableView(_:proposalForDrop:)`](./textdroppableview%28_,proposalfordrop%29.md) method. However, it’s called frequently, so do only what is necessary in your implementation.
 

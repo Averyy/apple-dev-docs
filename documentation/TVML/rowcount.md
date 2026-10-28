@@ -5,15 +5,15 @@
 
 Specifies the number of rows in a shelf.
 
-#### Overview
+## Overview
 
 Items inside of the shelf fill up a column before moving to the next column.
 
-##### Values for rowCount
+### Values for rowCount
 
 - **Integer**: The number of rows contained inside of a shelf.
 
-##### Values that Use rowCount
+### Values that Use rowCount
 
 - [shelf](./shelf.md)
 

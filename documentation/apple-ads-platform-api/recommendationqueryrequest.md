@@ -15,7 +15,7 @@ The structured request body for all recommendation query endpoints.
 object RecommendationQueryRequest
 ```
 
-#### Discussion
+## Discussion
 
 The `QueryRequest` object is the request body for all `POST .../query` endpoints in the Recommendations API. Two filter conditions are mandatory on every request:
 
@@ -40,7 +40,7 @@ The `QueryRequest` object is the request body for all `POST .../query` endpoints
 
 Omitting either required filter returns a 400 error with a `MISSING_REQUIRED_FILTER` detail in the response. Additional optional filters narrow the result set. For example, `state` or `campaignId`. The API combines all filter conditions with AND logic.
 
-##### Example
+### Example
 
 ```json
 {

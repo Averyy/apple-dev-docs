@@ -15,7 +15,7 @@ A property of IONetworkController objects.
 #define kIOVendor
 ```
 
-#### Discussion
+## Discussion
 
 The kIOVendor property is a property of IONetworkController objects. It has an OSString value that describes the vendor of the network controller.
 

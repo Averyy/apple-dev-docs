@@ -22,7 +22,7 @@ var userActivity: NSUserActivity? { get set }
 @property (nonatomic, strong, nullable) NSUserActivity * userActivity;
 ```
 
-#### Discussion
+## Discussion
 
 [`UIDocument`](../uidocument.md) automatically creates [`NSUserActivity`](../../Foundation/nsuseractivity.md) objects. The system makes user activities eligible for Handoff if the document is iCloud-based and the app’s `Info.plist` property list file includes a [`CFBundleDocumentTypes`](../../BundleResources/information-property-list/cfbundledocumenttypes.md) key of `NSUbiquitousDocumentUserActivityType`. The value of `NSUbiquitousDocumentUserActivityType` is a string that represents the [`NSUserActivity`](../../Foundation/nsuseractivity.md) object’s activity type. The document’s URL is in the [`NSUserActivity`](../../Foundation/nsuseractivity.md) object’s [`userInfo`](../../Foundation/nsuseractivity/userinfo.md) dictionary with the [`userActivityURLKey`](./useractivityurlkey.md).
 

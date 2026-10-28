@@ -19,7 +19,7 @@ var arrowPosition: NSPopUpButton.ArrowPosition { get set }
 @property NSPopUpArrowPosition arrowPosition;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`NSPopUpButton.ArrowPosition.noArrow`](../nspopupbutton/arrowposition/noarrow.md), the control displays no arrow. [`NSPopUpButton.ArrowPosition.arrowAtCenter`](../nspopupbutton/arrowposition/arrowatcenter.md) displays the arrow centered horizontally within the cell and  [`NSPopUpButton.ArrowPosition.arrowAtBottom`](../nspopupbutton/arrowposition/arrowatbottom.md) displays the arrow at the edge of the cell. This property is used with [`preferredEdge`](./preferrededge.md) to determine the exact location and orientation of the arrow.
 

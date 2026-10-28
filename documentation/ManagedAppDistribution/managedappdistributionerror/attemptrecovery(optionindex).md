@@ -19,7 +19,7 @@ Attempt to recover from this error when someone selects the option at the given 
 func attemptRecovery(optionIndex recoveryOptionIndex: Int) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` to indicate successful recovery; otherwise `false`.
 

@@ -24,7 +24,7 @@ var kAudioConverterChannelMap: AudioConverterPropertyID { get }
 kAudioConverterChannelMap
 ```
 
-#### Discussion
+## Discussion
 
 The size of the array is the number of output channels. Each element specifies, using a 0-based index, which input channel’s data is routed to that output channel. A value of `-1` indicates that no input channel is to be routed to that output channel.
 

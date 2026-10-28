@@ -24,7 +24,7 @@ var channelCount: Int { get }
 @property (nonatomic, readonly) NSUInteger channelCount;
 ```
 
-#### Discussion
+## Discussion
 
 For example, a grayscale texture has one channel (brightness) per texel, and a color texture may have three (RGB) or four (RGBA) channels per texel.
 

@@ -17,7 +17,7 @@ Implementation of LoRA `QuantizedLinear` replacement layer.
 class QLoRALinear
 ```
 
-#### Overview
+## Overview
 
 See [`LoRALinear`](./loralinear.md) (equivalent class for `Linear` layers) for more information.
 

@@ -24,11 +24,11 @@ Send the element to the channel.
 mutating func send(_ element: consuming sending Element) throws -> MultiProducerSingleConsumerAsyncChannel<Element, Failure>.Source.SendResult
 ```
 
-#### Return Value
+## Return Value
 
 The result that indicates if more elements should be produced at this time.
 
-#### Discussion
+## Discussion
 
 If there is a task consuming the channel and awaiting the next element then the task will get resumed with the provided element. If the channel already terminated then this method will throw an error indicating the failure.
 

@@ -19,15 +19,15 @@ func LSCopyItemInfoForURL(_ inURL: CFURL!, _ inWhichInfo: LSRequestedInfo, _ out
 OSStatus LSCopyItemInfoForURL(CFURLRef inURL, LSRequestedInfo inWhichInfo, LSItemInfoRecord *outItemInfo);
 ```
 
-#### Return Value
+## Return Value
 
 A result code; see [Result Codes](./launch_services.md#1661359).
 
-#### Discussion
+## Discussion
 
 The information obtained about an item can include its filename extension, file type, creator signature, and various item-information flags (indicating, for example, whether the item is an application, or whether it has a hidden extension); see [`LSItemInfoFlags`](./lsiteminfoflags.md) for a description of these flags.
 
-##### Version-Notes
+### Version-Notes
 
 Thread-safe since Mac OS version 10.2.
 

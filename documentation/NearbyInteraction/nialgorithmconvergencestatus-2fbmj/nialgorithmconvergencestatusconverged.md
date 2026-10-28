@@ -19,7 +19,7 @@ A status that indicates the framework’s Camera Assistance feature is operation
 NIAlgorithmConvergenceStatusConverged
 ```
 
-#### Discussion
+## Discussion
 
 In this state, the app doesn’t need to coach the user and receives all the benefits of Camera Assistance as described in [`isCameraAssistanceEnabled`](../ninearbypeerconfiguration/iscameraassistanceenabled.md).
 

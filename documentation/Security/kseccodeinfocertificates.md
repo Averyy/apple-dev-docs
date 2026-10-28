@@ -20,7 +20,7 @@ let kSecCodeInfoCertificates: CFString
 extern CFStringRef const kSecCodeInfoCertificates;
 ```
 
-#### Discussion
+## Discussion
 
 The value is a [`CFArray`](../CoreFoundation/cfarray.md) array of [`SecCertificate`](./seccertificate.md) objects that the system uses to process the signature. Absent for ad-hoc signed code. May be partial or absent in the case of error.
 

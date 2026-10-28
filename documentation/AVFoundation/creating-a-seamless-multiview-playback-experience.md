@@ -13,11 +13,11 @@ Build advanced multiview playback experiences with the AVFoundation and AVRoutin
 - tvOS 26.0+
 - Xcode 26.0+
 
-#### Overview
+## Overview
 
 > **Note**: This sample code project is associated with WWDC25 session 302: [Create a seamless multiview playback experience](https://developer.apple.com/videos/play/wwdc2025/302).
 
-##### Configure the sample code project
+### Configure the sample code project
 
 To run this sample, you’ll need the following:
 

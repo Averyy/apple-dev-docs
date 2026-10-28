@@ -20,7 +20,7 @@ Gets the command for the specified selector and property list.
 @preconcurrency func command(for action: Selector, propertyList: Any? = nil) -> UICommand?
 ```
 
-#### Return Value
+## Return Value
 
 A command object; otherwise, `nil` if there is no such command.
 

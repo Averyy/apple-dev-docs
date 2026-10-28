@@ -17,7 +17,7 @@ Returns Metal’s recommended working set size in bytes as an `Int`.
 static func maxRecommendedWorkingSetBytes() -> Int?
 ```
 
-#### Discussion
+## Discussion
 
 This value is derived from [`maxRecommendedWorkingSetSize`](./deviceinfo/maxrecommendedworkingsetsize.md) and is clamped to `Int.max` when necessary. Returns `nil` when unavailable.
 

@@ -15,7 +15,7 @@
 kINQUIRY_Byte7_VS_Mask = (1 << kINQUIRY_Byte7_VS_Bit)
 ```
 
-#### Discussion
+## Discussion
 
 Mask to use to test the VS bit.
 

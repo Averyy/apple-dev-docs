@@ -23,7 +23,7 @@ var serverTrust: SecTrust? { get }
 @property (nonatomic, readonly, nullable) SecTrustRef serverTrust;
 ```
 
-#### Discussion
+## Discussion
 
 Use the object in this property to validate the webpage’s certificate and associated credentials. [`WKWebView`](../wkwebview.md) is key-value observing (KVO) compliant for this property.
 

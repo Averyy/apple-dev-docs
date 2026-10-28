@@ -17,7 +17,7 @@ A module value.
 case module(Module)
 ```
 
-#### Discussion
+## Discussion
 
 From code:
 

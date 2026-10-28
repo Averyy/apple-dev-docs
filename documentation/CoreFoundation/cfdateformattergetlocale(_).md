@@ -25,7 +25,7 @@ func CFDateFormatterGetLocale(_ formatter: CFDateFormatter!) -> CFLocale!
 extern CFLocaleRefCFDateFormatterGetLocale(CFDateFormatterRef formatter);
 ```
 
-#### Return Value
+## Return Value
 
 The locale object used to create `formatter`. Ownership follows the [The Get Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-SW1).
 

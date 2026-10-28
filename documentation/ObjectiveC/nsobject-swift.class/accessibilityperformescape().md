@@ -24,11 +24,11 @@ func accessibilityPerformEscape() -> Bool
 - (BOOL) accessibilityPerformEscape;
 ```
 
-#### Return Value
+## Return Value
 
 [`YES`](../yes.md) if the modal view is successfully dismissed; otherwise, [`NO`](../no.md). By default, this method returns [`NO`](../no.md).
 
-#### Discussion
+## Discussion
 
 Implement this method on an element or containing view that can be revealed modally or in a hierarchy. When a VoiceOver user performs a dismiss action, this method dismisses the view. For example, you might implement this method for a popover in order to give users a deliberate dismiss action to perform that closes the popover.
 

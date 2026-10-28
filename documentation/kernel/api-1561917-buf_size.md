@@ -15,11 +15,11 @@ Get size of data region allocated to a buffer.
 uint32_t buf_size(buf_t bp);
 ```
 
-#### Return Value
+## Return Value
 
 Size.
 
-#### Discussion
+## Discussion
 
 May be larger than amount of valid data in buffer.
 

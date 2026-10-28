@@ -21,7 +21,7 @@ func endGeneratingDeviceOrientationNotifications()
 - (void) endGeneratingDeviceOrientationNotifications;
 ```
 
-#### Discussion
+## Discussion
 
 This method stops the posting of [`orientationDidChangeNotification`](./orientationdidchangenotification.md) notifications and notifies the system that it can power down the accelerometer hardware if it isn’t in use elsewhere. You call this method after a previous call to the [`beginGeneratingDeviceOrientationNotifications()`](./begingeneratingdeviceorientationnotifications%28%29.md) method.
 

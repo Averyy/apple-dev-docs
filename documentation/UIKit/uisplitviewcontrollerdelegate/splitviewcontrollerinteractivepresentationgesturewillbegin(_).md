@@ -23,7 +23,7 @@ optional func splitViewControllerInteractivePresentationGestureWillBegin(_ svc: 
 - (void) splitViewControllerInteractivePresentationGestureWillBegin:(UISplitViewController *) svc;
 ```
 
-#### Discussion
+## Discussion
 
 This delegate method only applies to column-style split view interfaces. For more information, see [Split view styles](../uisplitviewcontroller.md#Split-view-styles).
 

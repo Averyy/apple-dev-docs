@@ -22,7 +22,7 @@ func contains(pasteboardTypes: [String], inItemSet itemSet: IndexSet?) -> Bool
 - (BOOL) containsPasteboardTypes:(NSArray<NSString *> *) pasteboardTypes inItemSet:(NSIndexSet *) itemSet;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the pasteboard items identified by `itemSet` have data corresponding to the representation types specified by `pasteboardTypes`; otherwise, returns [`false`](../../Swift/false.md).
 

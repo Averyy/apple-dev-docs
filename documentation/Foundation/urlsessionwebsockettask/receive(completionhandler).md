@@ -22,7 +22,7 @@ Reads a WebSocket message once all the frames of the message are available.
 func receive(completionHandler: @escaping @Sendable (Result<URLSessionWebSocketTask.Message, any Error>) -> Void)
 ```
 
-#### Discussion
+## Discussion
 
 If the task reaches the [`maximumMessageSize`](./maximummessagesize.md) while buffering the frames, this call fails with an error.
 

@@ -19,7 +19,7 @@ var invalidatedItemIndexPaths: Set<IndexPath>? { get }
 @property (readonly, nullable) NSSet<NSIndexPath *> * invalidatedItemIndexPaths;
 ```
 
-#### Discussion
+## Discussion
 
 The set contains zero or more [`NSIndexPath`](../../Foundation/nsindexpath.md) objects, each of which identifies an invalid item.
 

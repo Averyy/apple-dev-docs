@@ -19,7 +19,7 @@ The content that your extension provides to the Home app.
 @MainActor var body: Self.Content { get }
 ```
 
-#### Discussion
+## Discussion
 
 For example, to provide a configuration view:
 

@@ -18,7 +18,7 @@ Indicates that the device needs to move from its current position in the physica
 static let insufficientMovement: NIAlgorithmConvergenceStatus.Reason
 ```
 
-#### Discussion
+## Discussion
 
 Coach the user to resolve the issue, such as by presenting text that instructs the user to move around.
 

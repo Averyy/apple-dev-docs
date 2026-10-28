@@ -22,7 +22,7 @@ class INRestaurant
 @interface INRestaurant : NSObject
 ```
 
-#### Overview
+## Overview
 
 An [`INRestaurant`](./inrestaurant.md) object contains identifying information for a restaurant. You must work with Apple to integrate your restaurant-specific information into the back-end database. Later, when the user selects a restaurant and tries to book a reservation, Apple packages the information you provided into a restaurant object and delivers it to your Intents extension. You use that information to look up the restaurant on your own server and retrieve any necessary information about it.
 

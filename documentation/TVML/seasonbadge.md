@@ -4,11 +4,11 @@
 
 Displays an image that indicates the season for an associated media item.
 
-#### Overview
+## Overview
 
 The `seasonBadge` element contains a link to an image that is to be displayed. This element is commonly used to display an image or number that indicates the season for a television show.
 
-##### Contained In
+### Contained In
 
 - [organizer](./organizer.md)
 - [reviewCard](./reviewcard.md)

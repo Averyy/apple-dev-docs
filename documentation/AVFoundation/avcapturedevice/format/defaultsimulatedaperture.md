@@ -23,7 +23,7 @@ var defaultSimulatedAperture: Float { get }
 @property (nonatomic, readonly) float defaultSimulatedAperture;
 ```
 
-#### Discussion
+## Discussion
 
 This property return a non-zero value on devices that support the shallow depth of field effect.
 

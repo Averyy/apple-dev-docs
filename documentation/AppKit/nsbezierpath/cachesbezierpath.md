@@ -15,11 +15,11 @@ Returns a Boolean value that indicates whether this object maintains a cached im
 - (BOOL) cachesBezierPath;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the path maintains a cached image; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Caching of paths currently has no effect, so method always returns NO.
 

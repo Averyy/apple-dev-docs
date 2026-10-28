@@ -24,7 +24,7 @@ var includesPeerToPeer: Bool { get set }
 @property BOOL includesPeerToPeer;
 ```
 
-#### Discussion
+## Discussion
 
 This property must be set before calling [`publish()`](./publish%28%29.md) or [`publish(options:)`](./publish%28options%29.md), [`resolve(withTimeout:)`](./resolve%28withtimeout%29.md)`, or [`startMonitoring()`](./startmonitoring%28%29.md) in order to take effect.
 

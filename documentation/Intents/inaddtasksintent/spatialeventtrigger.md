@@ -34,7 +34,7 @@ var spatialEventTrigger: INSpatialEventTrigger? { get }
 @property (atomic, copy, readonly, nullable) INSpatialEventTrigger * spatialEventTrigger;
 ```
 
-#### Discussion
+## Discussion
 
 Assign the specified trigger, if any, to all of the tasks that you create.
 

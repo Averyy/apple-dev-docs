@@ -15,7 +15,7 @@ A spatial experience that does not take user motion into account.
 struct FixedSpatialAudio
 ```
 
-#### Overview
+## Overview
 
 The lack of spatial tracking gives the impression of a “fixed” spatial experience locked to the user’s frame of reference.
 

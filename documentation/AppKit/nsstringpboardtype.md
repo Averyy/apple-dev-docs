@@ -15,7 +15,7 @@
 extern NSPasteboardType NSStringPboardType;
 ```
 
-#### Discussion
+## Discussion
 
 > **Deprecated**: In apps that adopt App Sandbox, use an [`NSURL`](../Foundation/nsurl.md) object, a bookmark, or a filename pasteboard type instead. In a nonsandboxed app, you can also use the [`string`](./nspasteboard/pasteboardtype/string.md) pasteboard type.
 

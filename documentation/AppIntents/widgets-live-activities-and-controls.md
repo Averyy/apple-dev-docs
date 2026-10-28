@@ -5,7 +5,7 @@
 
 Implement interactive widgets, controls, watch complications, and Live Activities using app intents.
 
-#### Overview
+## Overview
 
 You can make widgets, Live Activities, and other experiences interactive by adding buttons and toggles to their interfaces. When someone interacts with one of those controls, you respond by creating an app intent. Use those app intents to perform the associated actions in your app.
 

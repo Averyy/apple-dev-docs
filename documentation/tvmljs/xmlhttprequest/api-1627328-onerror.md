@@ -15,7 +15,7 @@ A callback function that is called if the request fails due to an error.
 attribute function onerror;
 ```
 
-#### Discussion
+## Discussion
 
 This attribute must be set to a function; for example, `XMLHttpRequest.onerror = function () {}`.
 

@@ -13,11 +13,11 @@ SCSIParallelTaskIdentifier FindTaskForControllerIdentifier (
  UInt64theIdentifier );
 ```
 
-#### Return Value
+## Return Value
 
 returns a valid SCSIParallelTaskIdentifier or NULL if none found.
 
-#### Overview
+## Overview
 
 Allows the controller child class to find an outstanding task for a specified target and controller task identifier
 

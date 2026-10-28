@@ -16,7 +16,7 @@ Performs the necessary steps to start receiving remote Immersive video frames us
 func start(connection: NWConnection) async throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: This function throws if anything fails establishing the connection.
 

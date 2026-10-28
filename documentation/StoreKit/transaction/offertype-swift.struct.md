@@ -21,7 +21,7 @@ The types of offers that apply to a transaction.
 struct OfferType
 ```
 
-#### Overview
+## Overview
 
 You don’t create offer types in [`Transaction.OfferType`](./offertype-swift.struct.md). The static values indicate the offer types that the system reports for a transaction.
 

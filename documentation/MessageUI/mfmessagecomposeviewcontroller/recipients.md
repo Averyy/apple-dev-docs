@@ -22,7 +22,7 @@ var recipients: [String]? { get set }
 @property (nonatomic, copy, nullable) NSArray<NSString *> * recipients;
 ```
 
-#### Discussion
+## Discussion
 
 If you want to provide an initial array of one or more recipients for a message, do so before you display it. After the message is displayed you cannot change the value of this property.
 

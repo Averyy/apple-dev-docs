@@ -25,7 +25,7 @@ func protocol_addProperty(_ proto: Protocol, _ name: UnsafePointer<CChar>, _ att
 extern void protocol_addProperty(Protocol *proto, const char *name, const objc_property_attribute_t *attributes, unsigned int attributeCount, BOOL isRequiredProperty, BOOL isInstanceProperty);
 ```
 
-#### Discussion
+## Discussion
 
 The protocol you want to add the property to must be under construction—allocated but not yet registered with the Objective-C runtime (via the [`objc_registerProtocol(_:)`](./objc_registerprotocol%28_%29.md) function).
 

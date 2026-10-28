@@ -12,22 +12,22 @@ Resolve common problems when creating compositions, video compositions, and audi
 - Mac Catalyst 13.5+
 - Xcode 13.4+
 
-#### Overview
+## Overview
 
 You can construct elaborate and complex compositions, video compositions, and audio mixes with entirely valid values that produce unexpected results. This sample code project visualizes the composition on the screen and adopts the video composition validation-handling protocol to debug common pitfalls in compositions and audio mixes.
 
-##### Configure the sample code project
+### Configure the sample code project
 
 - Build the sample with Xcode 13.4.1 or later, and Swift 5.5 or later.
 - This sample runs on physical devices with iPadOS 13.5 or later.
 
 Build and run the app on any supported device. Use the play, pause, and scrubber controls to play and scrub through the composition in the upper portion of the screen. The debug view in the lower portion of the screen visualizes the composition, video composition, and audio mix.
 
-##### Visualize the composition
+### Visualize the composition
 
 *Visualization* is looking at a picture of a composition rather than looking at its code. This sample implements the `CompositionDebugView` class to present a visual description on the screen of the underlying [`AVComposition`](./avcomposition.md), [`AVVideoComposition`](./avvideocomposition.md), and [`AVAudioMix`](./avaudiomix.md) objects that form the composition. Developers can drop the `CompositionDebugView` into their own apps. Itʼs a noninteractive view, and developers can extend it to draw their own video instructions. It helps in identifying any overlaps and gaps in the composition tracks, video instructions, and audio mix.
 
-##### Synchronize the visualized composition
+### Synchronize the visualized composition
 
 The `PlayerViewController` class has an outlet to the `CompositionDebugView` object in the `Main.storyboard`.
 
@@ -79,7 +79,7 @@ func synchronize(with playerItem: AVPlayerItem) {
 }
 ```
 
-##### Create the composition
+### Create the composition
 
 The `SimpleEditor` class initialization creates an [`AVMutableComposition`](./avmutablecomposition.md) to merge the videos.
 
@@ -135,7 +135,7 @@ if clipIndex + 1 < clips.count {
 }
 ```
 
-##### Create the video composition and audio mix
+### Create the video composition and audio mix
 
 The `SimpleEditor` class initialization creates an [`AVMutableVideoComposition`](./avmutablevideocomposition.md) to apply effects between clips, and an [`AVMutableAudioMix`](./avmutableaudiomix.md) for mixing the audio tracks.
 
@@ -192,7 +192,7 @@ editorAudioMix.inputParameters = trackMixArray
 editorVideoComposition.instructions = instructions
 ```
 
-##### Debug video compositions
+### Debug video compositions
 
 The sample implements the [`AVVideoCompositionValidationHandling`](./avvideocompositionvalidationhandling.md) protocol methods in the `SimpleEditor` class to debug the video composition. These methods identify errors and indicate whether validation of a video composition needs to continue after finding specific errors.
 

@@ -20,7 +20,7 @@ One or more effects used to simulate forces.
 var effects: [any ForceEffectBase]
 ```
 
-#### Discussion
+## Discussion
 
 Forces from each effect will be summed.
 

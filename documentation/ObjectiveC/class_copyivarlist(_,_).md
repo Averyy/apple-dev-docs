@@ -25,7 +25,7 @@ func class_copyIvarList(_ cls: AnyClass?, _ outCount: UnsafeMutablePointer<UInt3
 extern Ivar*class_copyIvarList(Class cls, unsigned int *outCount);
 ```
 
-#### Return Value
+## Return Value
 
 An array of pointers of type Ivar describing the instance variables declared by the class. Any instance variables declared by superclasses are not included. The array contains `*outCount` pointers followed by a `NULL` terminator. You must free the array with `free()`.
 

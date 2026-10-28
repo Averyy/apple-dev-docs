@@ -19,11 +19,11 @@ func infoForBinding(_ binding: NSBindingName) -> [NSBindingInfoKey : Any]?
 - (NSDictionary<NSString *,id> *) infoForBinding:(NSBindingName) binding;
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary with information about `binding`, or `nil` if the binding is not bound. The dictionary contains three key/value pairs: `NSObservedObjectKey`: object bound, `NSObservedKeyPathKey`: key path bound, `NSOptionsKey`: dictionary with the options and their values for the bindings.
 
-#### Discussion
+## Discussion
 
 This method is mostly for use by subclasses which want to analyze the existing bindings of an object.
 

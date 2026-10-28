@@ -11,7 +11,7 @@ An extension that specifies the height-to-width ratio of pixels found in the vid
 - [QuickTime File Format change log](./revision_history.md)
 - [Video sample data](./video_sample_data.md)
 
-#### Overview
+## Overview
 
 This is a required extension for MPEG-4 and uncompressed Y´CbCr video formats when non-square pixels are used. It is optional when square pixels are used.
 

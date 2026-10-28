@@ -23,11 +23,11 @@ class func magneticField() -> Self
 + (instancetype) magneticField;
 ```
 
-#### Return Value
+## Return Value
 
 A field behavior object that applies a magnetic field to charged items.
 
-#### Discussion
+## Discussion
 
 The magnetic field behavior models a uniform magnetic field in the positive-z direction—that is, coming out of the screen. The amount of force applied by the field is modeled after the second part of the Lorentz equation (`F = qvB`). When the velocity of a charged item is perpendicular to the uniform magnetic field, the item feels a force normal to both the velocity and the field, resulting in a counter-clockwise rotation. Specifying a negative value for the [`strength`](./strength.md) of the field results in a clockwise rotation.
 

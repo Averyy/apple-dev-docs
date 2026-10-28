@@ -20,7 +20,7 @@ The update stage object that lets you read and update the current settings of a 
 class Joint
 ```
 
-#### Overview
+## Overview
 
 The settings this object exposes are the runtime editable values of a solver joint. Initial values are set in [`IKRig.Joint`](../ikrig/joint.md).
 

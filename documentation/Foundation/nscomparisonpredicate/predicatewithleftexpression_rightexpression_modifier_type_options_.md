@@ -21,7 +21,7 @@ Creates and returns a predicate of a given type formed by combining given left a
 + (NSComparisonPredicate *) predicateWithLeftExpression:(NSExpression *) lhs rightExpression:(NSExpression *) rhs modifier:(NSComparisonPredicateModifier) modifier type:(NSPredicateOperatorType) type options:(NSComparisonPredicateOptions) options;
 ```
 
-#### Return Value
+## Return Value
 
 A new predicate of type `type` formed by combining the given left and right expressions using the `modifier` and `options`.
 

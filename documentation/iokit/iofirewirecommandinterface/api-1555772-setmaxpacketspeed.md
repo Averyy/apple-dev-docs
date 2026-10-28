@@ -16,7 +16,7 @@ Gets the most recently received ack code for this transaction.
 void (*SetMaxPacketSpeed)(IOFireWireLibCommandRef self, IOFWSpeed speed);
 ```
 
-#### Return Value
+## Return Value
 
 void
 

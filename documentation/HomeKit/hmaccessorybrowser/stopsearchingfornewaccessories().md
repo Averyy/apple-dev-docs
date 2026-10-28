@@ -22,7 +22,7 @@ func stopSearchingForNewAccessories()
 - (void) stopSearchingForNewAccessories;
 ```
 
-#### Discussion
+## Discussion
 
 After you call this method, HomeKit stops sending updates to your browser delegate. Scanning may continue for system reasons or if other delegates are still active, but the [`discoveredAccessories`](./discoveredaccessories.md) array remains unchanged after you stop the search until your app calls the [`startSearchingForNewAccessories()`](./startsearchingfornewaccessories%28%29.md) method again.
 

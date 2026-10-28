@@ -14,7 +14,7 @@
 MPLibrary_Release = 1
 ```
 
-#### Discussion
+## Discussion
 
 Release number.
 

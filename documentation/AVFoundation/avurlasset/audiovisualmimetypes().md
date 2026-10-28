@@ -25,7 +25,7 @@ class func audiovisualMIMETypes() -> [String]
 + (NSArray<NSString *> *) audiovisualMIMETypes;
 ```
 
-#### Return Value
+## Return Value
 
 An array of MIME type strings.
 

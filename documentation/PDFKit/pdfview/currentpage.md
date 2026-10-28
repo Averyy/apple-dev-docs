@@ -24,7 +24,7 @@ var currentPage: PDFPage? { get }
 @property (nonatomic, readonly, nullable) PDFPage * currentPage;
 ```
 
-#### Discussion
+## Discussion
 
 When there are two pages in the view in a two-up mode, “current page” is the left page. For continuous modes, returns the page crossing a horizontal line halfway between the view’s top and bottom bounds.
 

@@ -19,11 +19,11 @@ func OBEXAddWhoHeader(_ inHeaderData: UnsafeRawPointer!, _ inHeaderDataLength: U
 OBEXError OBEXAddWhoHeader(const void *inHeaderData, uint32_t inHeaderDataLength, CFMutableDictionaryRef dictRef);
 ```
 
-#### Return Value
+## Return Value
 
 Error code, kOBEXSuccess (0) if success.
 
-#### Discussion
+## Discussion
 
 Who headers - OBEX Spec, 2.2.10: Byte Sequence
 

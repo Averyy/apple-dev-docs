@@ -14,7 +14,7 @@ A Boolean value that indicates whether the bundle is a watchOS app.
 - **Name**: `WKWatchKitApp`
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 Xcode automatically includes this key in the WatchKit app’s information property list when you create a watchOS project from a template.
 

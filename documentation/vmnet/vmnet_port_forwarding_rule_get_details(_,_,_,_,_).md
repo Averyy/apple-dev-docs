@@ -22,11 +22,11 @@ func vmnet_port_forwarding_rule_get_details(_ rule: xpc_object_t, _ protocol: Un
 vmnet_return_t vmnet_port_forwarding_rule_get_details(xpc_object_t rule, uint8_t *protocol, uint16_t *external_port, struct in_addr *internal_address, uint16_t *internal_port);
 ```
 
-#### Return Value
+## Return Value
 
 `vmnet_return_t/vmnet_return_t.VMNET_SUCCESS` if rule is valid and all details were populated, an error code otherwise.
 
-#### Discussion
+## Discussion
 
 Allows you to extract the protocol, external port, internal address, and the internal port from the XPC dictionary object.
 

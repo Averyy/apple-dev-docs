@@ -23,7 +23,7 @@ var recordedDuration: CMTime { get }
 @property (nonatomic, readonly) CMTime recordedDuration;
 ```
 
-#### Discussion
+## Discussion
 
 If recording is in progress, this property returns the total time recorded so far.
 

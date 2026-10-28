@@ -13,7 +13,7 @@
 OSErr OpenAComponentResFile(Component aComponent, ResFileRefNum *resRef);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./carbon_core/component_manager.md#1668759).
 

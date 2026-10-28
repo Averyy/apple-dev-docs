@@ -19,7 +19,7 @@ func viewWillTransition(to newSize: NSSize)
 - (void) viewWillTransitionToSize:(NSSize) newSize;
 ```
 
-#### Discussion
+## Discussion
 
 Override this method if you want to change layout in response to the change in size, potentially in an animated way.
 

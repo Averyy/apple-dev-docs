@@ -9,11 +9,11 @@ Create a new Blueprint in an organization.
 **Availability**:
 - Apple Business API 2.6+
 
-#### Overview
+## Overview
 
 > **Note**: Any invalid resource IDs will be dropped from the request during Blueprint creation.
 
-##### Example
+### Example
 
 **Request**:
 

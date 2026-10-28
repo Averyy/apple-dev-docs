@@ -17,7 +17,7 @@ Replace NaN and Inf values with finite numbers.
 func nanToNum(_ array: MLXArray, nan: Float = 0, posInf: Float? = nil, negInf: Float? = nil, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-##### See Also
+### See Also
 
 - [Arithmetic](./arithmetic.md)
 

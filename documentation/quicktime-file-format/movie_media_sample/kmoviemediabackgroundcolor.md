@@ -6,7 +6,7 @@
 
 A color that is used for filling the background when the movie is being instantiated or when it fails to instantiate.
 
-#### Overview
+## Overview
 
 The color is an `RGBColor`.
 

@@ -25,7 +25,7 @@ func sec_protocol_options_set_tls_diffie_hellman_parameters(_ options: sec_proto
 void sec_protocol_options_set_tls_diffie_hellman_parameters(sec_protocol_options_t options, dispatch_data_t params);
 ```
 
-#### Discussion
+## Discussion
 
 Set the supported Diffie-Hellman parameters.
 

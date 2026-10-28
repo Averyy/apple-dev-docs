@@ -18,7 +18,7 @@ var FFERR_HASEFFECTS: Int { get }
 #define FFERR_HASEFFECTS
 ```
 
-#### Discussion
+## Discussion
 
 The device cannot be reinitialized because there are still effects attached to it.
 

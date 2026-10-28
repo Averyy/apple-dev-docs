@@ -23,7 +23,7 @@ class func unlearnWord(_ word: String)
 + (void) unlearnWord:(NSString *) word;
 ```
 
-#### Discussion
+## Discussion
 
 When a `UITextChecker` object unlearns a word, it is removed from the dictionary.
 

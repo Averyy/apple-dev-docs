@@ -20,7 +20,7 @@ Expedite the reality file export when possible.
 static var preferFastExport: Entity.WriteOptions { get }
 ```
 
-#### Discussion
+## Discussion
 
 This option may disable archival compression during the export process. This reduces the time required to write a reality file but produces a larger file on disk. Use this option when rapid iteration is more important than file size, such as during development in a content authoring tool.
 

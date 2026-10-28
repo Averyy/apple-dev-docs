@@ -19,7 +19,7 @@ var isVoiceOverEnabled: Bool { get }
 @property (readonly, getter=isVoiceOverEnabled) BOOL voiceOverEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 You can observe this property with key-value observing.
 

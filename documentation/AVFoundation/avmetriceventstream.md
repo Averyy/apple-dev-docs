@@ -21,7 +21,7 @@ An object that allows clients to add publishers and then subscribe to specific m
 @interface AVMetricEventStream : NSObject
 ```
 
-#### Overview
+## Overview
 
 Publishers are [AVFoundation](./AVFoundation.md) types that adopt [`AVMetricEventStreamPublisher`](./avmetriceventstreampublisher.md). The protocol allows clients to receive metric events with a subscriber delegate which adopts the [`AVMetricEventStreamSubscriber`](./avmetriceventstreamsubscriber.md) protocol.
 

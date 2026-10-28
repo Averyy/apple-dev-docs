@@ -22,7 +22,7 @@ class AVCaptionRegion
 @interface AVCaptionRegion : NSObject
 ```
 
-#### Overview
+## Overview
 
 The framework defines four regions, and doesn’t support configuring region settings.
 

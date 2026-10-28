@@ -25,7 +25,7 @@ static let systemNumber: FileAttributeKey
 extern NSFileAttributeKey const NSFileSystemNumber;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is an [`NSNumber`](../nsnumber.md) object that specifies the filesystem number of the file system. The value corresponds to the value of `st_dev`, as returned by `stat`(2).
 

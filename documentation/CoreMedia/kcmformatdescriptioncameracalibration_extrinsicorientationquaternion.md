@@ -23,7 +23,7 @@ let kCMFormatDescriptionCameraCalibration_ExtrinsicOrientationQuaternion: CFStri
 extern CFStringRef const kCMFormatDescriptionCameraCalibration_ExtrinsicOrientationQuaternion;
 ```
 
-#### Discussion
+## Discussion
 
 Specifies a camera’s orientation to a world or scene coordinate system. The orientation value is a unit quaternion(ix, iy, and iz) instead of the classical 3x3 matrix.
 

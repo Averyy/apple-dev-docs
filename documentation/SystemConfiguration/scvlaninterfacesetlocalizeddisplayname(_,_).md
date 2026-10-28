@@ -19,7 +19,7 @@ func SCVLANInterfaceSetLocalizedDisplayName(_ vlan: SCVLANInterface, _ newName: 
 Boolean SCVLANInterfaceSetLocalizedDisplayName(SCVLANInterfaceRef vlan, CFStringRef newName);
 ```
 
-#### Return Value
+## Return Value
 
 `TRUE` if the configuration was stored; `FALSE` if an error occurred.
 

@@ -23,7 +23,7 @@ func setStatusBarStyle(_ statusBarStyle: UIStatusBarStyle, animated: Bool)
 - (void) setStatusBarStyle:(UIStatusBarStyle) statusBarStyle animated:(BOOL) animated;
 ```
 
-#### Discussion
+## Discussion
 
 The animation slides the status bar out toward the top of the interface.
 

@@ -23,7 +23,7 @@ optional func layoutManager(_ layoutManager: NSLayoutManager, shouldUse action: 
 - (NSControlCharacterAction) layoutManager:(NSLayoutManager *) layoutManager shouldUseAction:(NSControlCharacterAction) action forControlCharacterAtIndex:(NSUInteger) charIndex;
 ```
 
-#### Return Value
+## Return Value
 
 The control character action for the control character at the given index.
 

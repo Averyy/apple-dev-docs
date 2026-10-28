@@ -19,7 +19,7 @@ class NSFontDescriptor
 @interface NSFontDescriptor : NSObject
 ```
 
-#### Overview
+## Overview
 
 A font descriptor can be used to create or modify an [`NSFont`](./nsfont.md) object. The system provides a font matching capability, so that you can partially describe a font by creating a font descriptor with, for example, just a family name. You can then find all the available fonts on the system with a matching family name using [`matchingFontDescriptors(withMandatoryKeys:)`](./nsfontdescriptor/matchingfontdescriptors%28withmandatorykeys%29.md).
 

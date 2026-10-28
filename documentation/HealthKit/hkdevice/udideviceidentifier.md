@@ -24,7 +24,7 @@ var udiDeviceIdentifier: String? { get }
 @property (readonly, nullable) NSString * UDIDeviceIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 The UDI identifies medical devices. You can look up additional information about the device at [AccessGUDID](http://www.fda.gov/MedicalDevices/DeviceRegulationandGuidance/UniqueDeviceIdentification/GlobalUDIDatabaseGUDID/ucm444831.htm). For more information, see [FDA Unique Device Identification](http://www.fda.gov/MedicalDevices/DeviceRegulationandGuidance/UniqueDeviceIdentification/default.htm).
 

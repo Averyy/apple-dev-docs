@@ -21,7 +21,7 @@ Adds two values and produces their sum.
 static func + (lhs: Int16, rhs: Int16) -> Int16
 ```
 
-#### Discussion
+## Discussion
 
 The addition operator (`+`) calculates the sum of its two arguments. For example:
 

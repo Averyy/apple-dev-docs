@@ -12,7 +12,7 @@ inline void setExclusive(
  boolexclusive )
 ```
 
-#### Return Value
+## Return Value
 
 none
 

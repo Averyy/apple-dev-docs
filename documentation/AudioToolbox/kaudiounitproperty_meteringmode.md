@@ -24,7 +24,7 @@ var kAudioUnitProperty_MeteringMode: AudioUnitPropertyID { get }
 kAudioUnitProperty_MeteringMode
 ```
 
-#### Discussion
+## Discussion
 
 A read/write `UInt32` value valid on the input and output scopes.
 

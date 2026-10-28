@@ -24,7 +24,7 @@ var scratchBufferAllocator: (any MTLIOScratchBufferAllocator)? { get set }
 @property (retain, readwrite, nullable) id<MTLIOScratchBufferAllocator> scratchBufferAllocator;
 ```
 
-#### Discussion
+## Discussion
 
 Your app can manage an input/output command queue’s scratch memory by an implementing [`MTLIOScratchBufferAllocator`](../mtlioscratchbufferallocator.md) in one of your types, and assigning an instance of it to [`scratchBufferAllocator`](./scratchbufferallocator.md). Otherwise, set to `nil` to instruct the input/output command queue to allocate and manage its own scratch buffers.
 

@@ -22,7 +22,7 @@ func showGrammarPresentation(for range: NSRange, in context: UIWritingToolsCoord
 - (BOOL) showGrammarPresentationForRange:(NSRange) range inContext:(UIWritingToolsCoordinatorContext *) context;
 ```
 
-#### Discussion
+## Discussion
 
 Pass in context and range to identify the issue the user selected. The context must match one of the contexts returned from [`writingToolsCoordinator(_:requestsContextsFor:completion:)`](./delegate-swift.protocol/writingtoolscoordinator%28_,requestscontextsfor,completion%29.md) and the range must match the range in the context of one of the grammar details returned for that context from [`writingToolsCoordinator(_:requestsGrammarResultsFor:completion:)`](./delegate-swift.protocol/writingtoolscoordinator%28_,requestsgrammarresultsfor,completion%29.md) Returns NO if the UI cannot be brought up.
 

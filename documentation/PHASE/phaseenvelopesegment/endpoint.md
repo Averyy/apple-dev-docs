@@ -24,7 +24,7 @@ var endPoint: simd_double2 { get set }
 @property (nonatomic, assign) simd_double2 endPoint;
 ```
 
-#### Discussion
+## Discussion
 
 The framework connects this property to the prior segment’s end point, or the envelope [`startPoint`](../phaseenvelope/startpoint.md), in the case of the first segment.
 

@@ -20,7 +20,7 @@ func layout()
 - (void) layout;
 ```
 
-#### Discussion
+## Discussion
 
 This message is sent to the view as a hint to perform any calculations and update rendering information. For example, at a minimum, the receiver might set the frame rectangle. This method should not perform any drawing operations.
 

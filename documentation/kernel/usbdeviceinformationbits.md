@@ -15,7 +15,7 @@ The state of a USB device.
 typedef enum USBDeviceInformationBits USBDeviceInformationBits;
 ```
 
-#### Discussion
+## Discussion
 
 [`GetUSBDeviceInformation`](../iokit/iousbdeviceinterface942/api-2977165-getusbdeviceinformation.md) returns a `unit32_t` value with bits set indicating that a particular state is present in the USB device.
 

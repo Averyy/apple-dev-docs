@@ -19,7 +19,7 @@ class var current: NSAnimationContext { get }
 @property (class, strong, readonly) NSAnimationContext * currentContext;
 ```
 
-#### Return Value
+## Return Value
 
 The current animation context.
 

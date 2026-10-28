@@ -25,11 +25,11 @@ func checkPromisedItemIsReachableAndReturnError(_ error: NSErrorPointer) -> Bool
 - (BOOL) checkPromisedItemIsReachableAndReturnError:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the promised item is reachable; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 This method behaves identically to [`checkResourceIsReachableAndReturnError(_:)`](./checkresourceisreachableandreturnerror%28_%29.md), but works on promised items. A promised item is not guaranteed to have its contents in the file system until you use a file coordinator to perform a coordinated read on its URL, which causes the contents to be downloaded or otherwise generated. Promised item URLs are returned by various APIs, including:
 

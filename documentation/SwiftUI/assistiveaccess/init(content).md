@@ -22,7 +22,7 @@ nonisolated
 init(@ContentBuilder content: () -> Content)
 ```
 
-#### Discussion
+## Discussion
 
 When Assistive Access is enabled, the given view is used as the root view of the app.
 

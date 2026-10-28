@@ -21,7 +21,7 @@ Returns the position immediately before the given index.
 func index(before idx: String.UTF16View.Index) -> String.UTF16View.Index
 ```
 
-#### Return Value
+## Return Value
 
 The index value immediately before `i`.
 

@@ -15,7 +15,7 @@ An object that describes map feature annotation images.
 class MapFeatureAnnotationGlyphImage implements ImageDelegate
 ```
 
-#### Overview
+## Overview
 
 `MapFeatureAnnotationGlyphImage` is a concrete implementation of [`ImageDelegate`](./imagedelegate.md) for returning the glyph image of the map feature.
 

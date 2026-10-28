@@ -4,7 +4,7 @@
 
 Choose the right fonts for your app’s interface and content, and make custom fonts available across your app, its extensions, and other apps.
 
-#### Overview
+## Overview
 
 Fonts give text its visual identity. The right font makes your interface readable, conveys tone and brand, and supports the languages your app targets. Apple platforms provide a curated set of fonts that fall into one of three categories:
 
@@ -16,7 +16,7 @@ Many apps combine all three. Each framework provides font APIs suited to these c
 
 > ❗ **Important**: Don’t bundle fonts that Apple ships with the system, makes available for download, or distributes through other channels like [Apple Fonts](https://developer.apple.com/fonts), such as SF Pro, SF Compact, SF Mono, and New York. To validate the fonts your app provides, see [TN3214: Validating the fonts you ship in your app](../Technotes/tn3214-validating-the-fonts-you-ship-in-your-app.md).
 
-#### Apply the system font to the text in your views
+## Apply the system font to the text in your views
 
 The system font isn’t a single typeface but a family of related typefaces that the system selects based on the platform, the current locale, and the role of the text. It works best for labels and other text you display in the views of your interface. It supports an extensive range of weights, sizes, and languages, adapts automatically to Dynamic Type and accessibility settings, and updates when the system introduces typographic refinements. Retrieve the system font through the system font APIs rather than by name. Each design within the system font family suits a different purpose:
 
@@ -86,7 +86,7 @@ The system provides dedicated APIs for retrieving system fonts, and those APIs e
 
 > **Note**: SF Pro, SF Pro Rounded, SF Compact, SF Compact Rounded, SF Mono, SF Arabic, SF Hebrew, SF Armenian, SF Georgian, and New York are reserved for system use. Designers can download these fonts from [Apple Fonts](https://developer.apple.com/fonts) to preview them in mockups; that’s a separate, design-time workflow that doesn’t change how your app retrieves fonts at runtime.
 
-#### Retrieve document fonts by name
+## Retrieve document fonts by name
 
 Apple platforms ship with a large collection of document fonts — typefaces people choose for their own content, such as documents, messages, and layouts. Retrieve a document font by its PostScript name using the same font APIs your app uses for the system font:
 
@@ -96,7 +96,7 @@ Apple platforms ship with a large collection of document fonts — typefaces peo
 
 The set of pre-installed document fonts varies by platform: macOS ships the full collection, while iOS, iPadOS, and visionOS pre-install a smaller set. The complete list is available at [System Fonts](https://developer.apple.com/fonts/system-fonts/), and people can install the rest through Font Book in macOS or the Fonts settings in iOS.
 
-#### Download additional fonts on demand
+## Download additional fonts on demand
 
 Some fonts in Apple’s document font library don’t come installed by default, but you can download them on demand. These are the same Apple-provided fonts listed at [System Fonts](https://developer.apple.com/fonts/system-fonts/) — you identify them by PostScript name. To make one available to your app, create a font descriptor for it and pass it to the font matching APIs in [Core Text](../CoreText/CoreText.md). After the download completes, the font behaves like any other installed font, and you can retrieve it by name. Downloadable fonts aren’t supported in watchOS or tvOS.
 
@@ -119,7 +119,7 @@ CTFontDescriptorMatchFontDescriptorsWithProgressHandler([descriptor] as CFArray,
 
 Don’t call [`CTFontManagerRegisterFontURLs(_:_:_:_:)`](../CoreText/ctfontmanagerregisterfonturls%28_,_,_,_%29.md) on fonts you download using [`CTFontDescriptorMatchFontDescriptorsWithProgressHandler(_:_:_:)`](../CoreText/ctfontdescriptormatchfontdescriptorswithprogresshandler%28_,_,_%29.md). Apple document fonts are system-managed, and after the download completes they’re available by PostScript name automatically. Use [`CTFontManagerRegisterFontURLs(_:_:_:_:)`](../CoreText/ctfontmanagerregisterfonturls%28_,_,_,_%29.md) only for fonts you own and bundle with your app.
 
-#### Bundle a custom font with your app
+## Bundle a custom font with your app
 
 When the system and document fonts don’t include the typeface your design calls for, such as a brand-specific font your team licensed, bundle the font with your app. Bundled fonts live alongside your app’s other resources and are available only within the process that registers them. Other apps can’t see or use them.
 
@@ -157,7 +157,7 @@ if let fontData = NSDataAsset(name: "MyFont")?.data {
 
 Both functions return an array of [`CTFontDescriptor`](../CoreText/ctfontdescriptor.md) objects you can use to construct fonts.
 
-#### Share a bundled font with your widget extension
+## Share a bundled font with your widget extension
 
 Widget extensions, like other app extensions, package into an `.appex` bundle nested inside your app’s bundle (for example, at `MyApp.app/PlugIns/MyWidgetExtension.appex`), and the extension has read-access to the resources in that containing bundle. This means your widget can use a font your app bundles without installing that font systemwide, which would require the person’s explicit permission.
 
@@ -189,7 +189,7 @@ Call this method before your widget’s views render, such as from your widget b
 
 Alternatively, put the font in a framework that both your app and your widget extension link against. Each target registers its own copy of the font from the framework’s bundle at launch, so neither target needs to read the other’s bundle.
 
-#### Install fonts for systemwide use
+## Install fonts for systemwide use
 
 You can install a custom font at the system level to make it available to other, unrelated apps (for example, if you distribute a suite of apps that share a common typeface). Font management apps like Font Book in macOS and the Fonts pane in iOS Settings let people install fonts this way.
 
@@ -207,7 +207,7 @@ public func CTFontManagerRegisterFontURLs(
 
 Call this from your app at an appropriate time, such as when a person enables a feature that requires the font. In iOS and visionOS, when you call this, the system prompts the person to grant permission, similar to other system permission requests. In macOS, you don’t need to request permission first.
 
-#### Add the Fonts capability for iOS
+## Add the Fonts capability for iOS
 
 To add this capability to your app, follow the steps in [Configuring custom fonts](../Xcode/configuring-custom-fonts.md). Declaring it lets the system mediate your app’s access to installed fonts.
 
@@ -215,13 +215,13 @@ To let someone select an installed font, present a [`UIFontPickerViewController`
 
 If [`UIFontPickerViewController`](../UIKit/uifontpickerviewcontroller.md) doesn’t fit your app’s needs, you can request the [Font Enumeration entitlement](https://developer.apple.com/contact/request/font-enumeration/) from Apple. The request requires a justification describing why the picker is insufficient and how your app avoids using the broader access — the ability to enumerate every installed font — to fingerprint or track the person, and limits it to the font-selection features your app actually needs.
 
-#### Access fonts from third-party and low-level frameworks
+## Access fonts from third-party and low-level frameworks
 
 When building apps with cross-platform frameworks, retrieve fonts using the underlying platform’s font APIs in SwiftUI, UIKit, AppKit, or Core Text and pass the result into the framework through whatever mechanism it provides for referencing platform-specific objects. This gives your app access to the full distinction between system fonts and document fonts, including fonts available for download on demand, and provides the same correctness, adaptability, and language coverage that apps built directly on Apple’s frameworks benefit from.
 
 If you draw text using lower-level libraries, such as FreeType, your code typically references font files by their location on disk. Keep in mind that the system may move, replace, or update font files between releases, and the changes may not be backward-compatible with the library you’re using. Verify that each font your app needs is available before using it, and design a fallback path so your app continues to work when a font is missing or has changed.
 
-###### Related topics
+#### Related topics
 
 - [Text display](./text-display.md)
   Display localized text from your app’s interface, and discover how to lay out and render text yourself.

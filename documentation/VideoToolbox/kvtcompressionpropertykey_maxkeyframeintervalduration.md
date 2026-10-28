@@ -24,7 +24,7 @@ let kVTCompressionPropertyKey_MaxKeyFrameIntervalDuration: CFString
 extern CFStringRef const kVTCompressionPropertyKey_MaxKeyFrameIntervalDuration;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `0`, which means no limit.  This property is particularly useful when the frame rate is variable. See [`kVTCompressionPropertyKey_MaxKeyFrameIntervalDuration`](./kvtcompressionpropertykey_maxkeyframeintervalduration.md) for more discussion of key frames.
 

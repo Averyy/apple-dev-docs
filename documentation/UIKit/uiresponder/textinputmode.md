@@ -23,7 +23,7 @@ var textInputMode: UITextInputMode? { get }
 @property (nonatomic, strong, readonly, nullable) UITextInputMode * textInputMode;
 ```
 
-#### Discussion
+## Discussion
 
 The text input mode identifies the language and keyboard displayed when this responder is active.
 

@@ -23,7 +23,7 @@ var dimension: Int { get }
 @property (nonatomic, readonly) NSUInteger dimension;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `1`, which typically represents features channels.
 

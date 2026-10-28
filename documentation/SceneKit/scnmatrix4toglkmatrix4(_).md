@@ -25,7 +25,7 @@ func SCNMatrix4ToGLKMatrix4(_ mat: SCNMatrix4) -> GLKMatrix4
 extern GLKMatrix4 SCNMatrix4ToGLKMatrix4(SCNMatrix4 mat);
 ```
 
-#### Return Value
+## Return Value
 
 A GLKit matrix representing the same 3D transformation.
 

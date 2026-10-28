@@ -25,7 +25,7 @@ var vectorFloat4Value: vector_float4 { get set }
 @property (nonatomic) vector_float4 vectorFloat4Value;
 ```
 
-#### Discussion
+## Discussion
 
 If the receiver’s original value is a floating-point number of a vector with a count less than four, the empty items in the vector are set to 0.
 

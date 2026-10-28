@@ -32,7 +32,7 @@ The necessary entitlement to access sensor data that’s required by your app’
 - `speech-metrics-siri`: A sensor that provides data describing a user’s speech to Siri.
 - `ambient-pressure`: A sensor that describes the pressure and temperature of the user’s environment.
 
-#### Discussion
+## Discussion
 
 An app can read sensor data from devices on a per-team basis, and the system closes your app if its code signature lacks this entitlement. To attain it, submit your research study to Apple as described in [Accessing SensorKit Data](https://www.researchandcare.org/resources/accessing-sensorkit-data/). If Apple approves your study, you can create a provisioning profile that signs code with this entitlement. For more information, see [Configuring your project for sensor reading](../../SensorKit/configuring-your-project-for-sensor-reading.md).
 

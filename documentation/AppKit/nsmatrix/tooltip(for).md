@@ -19,7 +19,7 @@ func toolTip(for cell: NSCell) -> String?
 - (NSString *) toolTipForCell:(NSCell *) cell;
 ```
 
-#### Return Value
+## Return Value
 
 The string used as the cell’s tooltip.
 

@@ -22,11 +22,11 @@ nonisolated
 func writingToolsAffordanceVisibility(_ visibility: Visibility) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view with the specified Writing Tools affordance visibility.
 
-#### Discussion
+## Discussion
 
 Use this view modifier to disable the Writing Tools affordance for [`TextField`](../textfield.md) views when running on macOS or Mac Catalyst.
 

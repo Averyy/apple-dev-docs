@@ -25,7 +25,7 @@ func addContentKeyRecipient(_ recipient: any AVContentKeyRecipient)
 - (void) addContentKeyRecipient:(id<AVContentKeyRecipient>) recipient;
 ```
 
-#### Discussion
+## Discussion
 
 Don’t add a recipient to a session that has expired or had already begun to process media data.
 

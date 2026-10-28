@@ -19,7 +19,7 @@ func validateVisibleColumns()
 - (void) validateVisibleColumns;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method to validate the contents of the panel. For example, you might call it to allow the selection of files with certain extensions based on the selection made in an accessory-view pop-up list. When the user changes the selection, invoke this method to revalidate the visible columns.
 

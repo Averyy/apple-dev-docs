@@ -5,7 +5,7 @@
 
 Learn how to build an organic, pulsing, color-shifting material in the Reality Composer Pro 3 Shader Graph.
 
-#### Overview
+## Overview
 
 This walkthrough goes beyond [Designing materials with Shader Graph](./designing-materials-with-shader-graph.md) and guides you through using Reality Composer Pro 3’s Shader Graph to create an advanced, dynamic material with animated special effects.
 
@@ -24,11 +24,11 @@ Both branches read from the same animated noise value, which is why the color sh
 
 ![A screenshot of the completed Shader Graph material created in this walkthrough.](https://developer.apple.com/tutorials/images/RealityComposerPro/ShaderGraphAdv1@2x.png)
 
-#### Review Shader Graph basics
+## Review Shader Graph basics
 
 If you’re new to Reality Composer Pro 3’s Shader Graph editor, see [Designing materials with Shader Graph](./designing-materials-with-shader-graph.md) and [Building materials in Reality Composer Pro](./building-materials-in-reality-composer-pro.md) to learn the basics of creating materials and using the Shader Graph.
 
-#### Build the animated Worley noise pattern
+## Build the animated Worley noise pattern
 
 Add a **Position** node. Leave its coordinate-space dropdown (labeled “object” to the left of the node) set to **Object**, so the pattern stays fixed to the mesh’s own surface instead of sliding around as the entity moves through the world.
 
@@ -46,7 +46,7 @@ Add a **Worley Noise 3D** node. Connect the Multiply node’s output into the **
 
 ![A screenshot of the first four nodes of the Shader Graph material created in this walkthrough.](https://developer.apple.com/tutorials/images/RealityComposerPro/ShaderGraphAdv1-a@2x.png)
 
-#### Animate the pattern over time
+## Animate the pattern over time
 
 Add another **Multiply** node. Connect the Worley Noise 3D node’s **Out** into one input, and set the other input’s literal value to **5.0**.
 
@@ -60,7 +60,7 @@ Add a **Remap** node and connect Sin’s **Out** into its **In**. Set **In Low**
 
 ![A screenshot of the next five nodes of the Shader Graph material created in this walkthrough.](https://developer.apple.com/tutorials/images/RealityComposerPro/ShaderGraphAdv1-b@2x.png)
 
-#### Blend Foreground and Background colors using the pattern
+## Blend Foreground and Background colors using the pattern
 
 Add a **Mix** node, choosing the variant that takes a float and returns a color (it appears on the canvas as `Mix (float → color3h)`).
 
@@ -70,7 +70,7 @@ Connect the Remap node’s **Out** into Mix’s **Mix** input — this is the bl
 
 ![A screenshot of the next three nodes of the Shader Graph material created in this walkthrough.](https://developer.apple.com/tutorials/images/RealityComposerPro/ShaderGraphAdv1-c@2x.png)
 
-#### Feed the same pulse into Roughness
+## Feed the same pulse into Roughness
 
 Drag a second connection directly from the Remap node’s **Out** — the same output you already used for Mix — into `PreviewSurface`‘s **Roughness** input. A single output can feed as many inputs as you want; dragging a new wire from a port that’s already connected doesn’t disturb the existing connection.
 
@@ -78,7 +78,7 @@ Leave the rest of `PreviewSurface` at its defaults: **Metallic** 0.0, **Clearcoa
 
 ![A screenshot of the connection from the Remap node's output to the PreviewSurface Roughness input.](https://developer.apple.com/tutorials/images/RealityComposerPro/ShaderGraphAdv1-d@2x.png)
 
-#### Push the surface along its normal with the same pulse
+## Push the surface along its normal with the same pulse
 
 Add a **Normal** node. Like Position, leave its coordinate-space dropdown set to **Object**.
 
@@ -90,7 +90,7 @@ Add a **Geometry Modifier** node (it appears on the canvas as `GeometryModifier`
 
 ![A screenshot of the last four nodes of the Shader Graph created in this walkthrough.](https://developer.apple.com/tutorials/images/RealityComposerPro/ShaderGraphAdv1-e@2x.png)
 
-#### Send both results to the Output node
+## Send both results to the Output node
 
 Every new Shader Graph material starts with `PreviewSurface` already wired to the `Output` node’s **Surface Shader** input — confirm that connection is still there. Connect the Geometry Modifier node’s **Out** into the `Output` node’s **Geometry Modifier** input.
 
@@ -98,7 +98,7 @@ Use the Preview tab below the Inspector to check your work. Observe the two colo
 
 Refer back to the short video and screenshot of the completed graph shown at the beginning of this article to compare results.
 
-#### Review each node’s role in the graph
+## Review each node’s role in the graph
 
 - **Position**: Outputs the position of the point currently being shaded, in the coordinate space you choose (Object space here). It’s the raw input the noise function samples.
 - **Input**: Exposes the material’s parameters (**Foreground**, **Background**, **CellDensity**) so you can connect them to other nodes. The same three parameters appear on every Input node in this graph. This graph includes two copies to keep wires short.
@@ -113,7 +113,7 @@ Refer back to the short video and screenshot of the completed graph shown at the
 - **Geometry Modifier**: Displaces the actual mesh geometry. `Model Position Offset` is the only input this graph drives, moving each point along its normal by a small, animated amount. It appears on the canvas as `GeometryModifier`.
 - **Output**: The graph’s root node. `Surface Shader` controls appearance, `Geometry Modifier` controls shape, and `Post Lighting Shader` (unused here) lets you modify the final lit color.
 
-#### Review Shader Graph possibilities
+## Review Shader Graph possibilities
 
 If you want to experiment further with advanced materials and effects, refer to the following screenshots of additional Shader Graphs and recreate them in Reality Composer Pro 3.
 

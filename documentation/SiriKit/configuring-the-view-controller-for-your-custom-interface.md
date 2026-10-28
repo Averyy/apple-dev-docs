@@ -5,17 +5,17 @@
 
 Configure your view controller to replace or augment the default interface in Siri or Maps.
 
-#### Overview
+## Overview
 
 When displaying responses to the user, SiriKit provides a default interface for displaying the content of your response. Replace some or all of this default interface with custom views, which you might do to fully customize the user’s Siri-based interactions with your app. Another option is to augment the default interface with a single view, hiding portions of the default UI that your content might duplicate.
 
-##### Requirements and Limitations
+### Requirements and Limitations
 
 For all customizations, you provide a view controller whose views contain the information that you want to display. When replacing the default interface, SiriKit may create multiple instances of your view controller, and you must configure each one appropriately for the type of displayed content. When augmenting the default interface, SiriKit creates a single instance of your view controller.
 
 While onscreen, your view controllers remain part of the foreground Siri or Maps interface until the user dismisses it. You can update your view controllers as needed using timers or other programmatic means. Your view controllers also receive the normal callbacks when they’re loaded, shown, and hidden. However, your view controllers don’t receive touch events or any other events while they’re onscreen, and you can’t add gesture recognizers to them. Therefore, never create an interface with controls or views that require user interactions.
 
-##### Replace Some or All of the Default Interface
+### Replace Some or All of the Default Interface
 
 In iOS 11 and later, you can replace some or all of the default Siri or Maps interface. Before displaying an interface to the user, Siri builds a list of parameters—that is, instances of the [`INParameter`](../Intents/inparameter.md) class—representing the data it wants to display. Each parameter identifies a property of the intent or response object contained in the [`INInteraction`](../Intents/ininteraction.md) object that SiriKit provides.
 
@@ -23,7 +23,7 @@ After building the list of parameters, SiriKit creates one or more instances of 
 
 Although SiriKit often passes only one parameter at a time to your [`configureView(for:of:interactiveBehavior:context:completion:)`](../IntentsUI/inuihostedviewcontrolling/configureview%28for,of,interactivebehavior,context,completion%29.md) method, you can configure a view that displays content for any number of parameters. When calling the completion handler of your configuration method, provide SiriKit with the set of parameters that your interface displays. Before creating a new view controller with the next set of parameters, SiriKit checks to see if you already displayed those parameters. If you did, SiriKit does not ask you to display them again.
 
-##### Augment the Default Interface
+### Augment the Default Interface
 
 If you want to keep the default Siri or Maps interface and only augment it with your custom content, implement the [`configure(with:context:completion:)`](../IntentsUI/inuihostedviewcontrolling/configure%28with,context,completion%29.md) method of your view controller. SiriKit instantiates your view controller and calls that method to configure your view controller’s view. The context parameter tells you where your view controller will be displayed, giving you an opportunity to display your content differently in Siri and Maps.
 
@@ -37,7 +37,7 @@ When the user dismisses the Siri or Maps interface, the system releases its refe
 
 > ❗ **Important**:  In iOS 11 and later, if your view controller implements both the [`configureView(for:of:interactiveBehavior:context:completion:)`](../IntentsUI/inuihostedviewcontrolling/configureview%28for,of,interactivebehavior,context,completion%29.md) and [`configure(with:context:completion:)`](../IntentsUI/inuihostedviewcontrolling/configure%28with,context,completion%29.md) methods, SiriKit calls only the [`configureView(for:of:interactiveBehavior:context:completion:)`](../IntentsUI/inuihostedviewcontrolling/configureview%28for,of,interactivebehavior,context,completion%29.md) method.
 
-##### Tips for Implementing Your View Controller
+### Tips for Implementing Your View Controller
 
 Here are some tips for implementing the view controller for your Intents UI extension:
 
@@ -50,7 +50,7 @@ Here are some tips for implementing the view controller for your Intents UI exte
 - **Do not include a map view when your view controller is shown in a Maps context.** When the context parameter is set to [`INUIHostedViewContext.mapsCard`](../IntentsUI/inuihostedviewcontext/mapscard.md), do not include an [`MKMapView`](../MapKit/mkmapview.md) in your view controller’s interface. Maps already displays a map, so having two maps showing similar information would be confusing to users.
 - **Use child view controllers to switch between different types of content.** Your Intents UI app extension has only one initial view controller. Using child view controllers lets you encapsulate the behavior for for different intents or different views of an intent in one place. During configuration of your initial view controller, all you have to do is instantiate the appropriate child view controller and install its view in your interface.
 
-##### Hiding Portions of the Default Interface
+### Hiding Portions of the Default Interface
 
 SiriKit lets you hide some types of content in the default interfaces using properties of the [`INUIHostedViewSiriProviding`](../IntentsUI/inuihostedviewsiriproviding.md) protocol. If you are only augmenting the default interface with custom content, use these properties to avoid duplicating the content shown by Siri or Maps. For example, a ride booking app that adds a map to the default interface could implement the [`displaysMap`](../IntentsUI/inuihostedviewsiriproviding/displaysmap.md) property and use it to hide the map in the default interface.
 

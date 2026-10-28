@@ -19,7 +19,7 @@ var objectType: FCPXObjectType { get }
 @property (nonatomic, readonly) FCPXObjectType objectType;
 ```
 
-#### Discussion
+## Discussion
 
 See [`FCPXObjectType`](../fcpxobjecttype.md) for possible values.
 

@@ -5,7 +5,7 @@
 
 A texture-based image buffer that supplies source image data for use with the Metal framework.
 
-#### Overview
+## Overview
 
 A Core Video Metal Texture is a texture-based image buffer that supplies source image data for use with the Metal framework.
 

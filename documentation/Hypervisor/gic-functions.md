@@ -5,7 +5,7 @@
 
 These functions and registers support the creation and operation of a generic interrupt controller.
 
-#### Discussion
+## Discussion
 
 For more information on using GICs, see the [ARM Generic Interrupt Controller (GIC) v3 architecture specification](https://developer.arm.com/documentation/ihi0069/latest/).
 

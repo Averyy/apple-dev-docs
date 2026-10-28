@@ -17,7 +17,7 @@ Full-attention cache if the layer is not sliding-window; otherwise the architect
 func makeHybridAttentionKVCache(parameters: GenerateParameters?, slidingWindow: Int?, usesSlidingWindow: Bool) throws -> KVCache
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: [`KVCacheConfigurationError`](./kvcacheconfigurationerror.md) when the request or window is invalid.
 

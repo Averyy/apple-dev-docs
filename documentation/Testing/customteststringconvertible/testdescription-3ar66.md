@@ -25,7 +25,7 @@ var testDescription: String { get }
 
 Available when `Self` conforms to `StringProtocol`.
 
-#### Discussion
+## Discussion
 
 Do not use this property directly. To get the test description of a value, use `Swift/String/init(describingForTest:)`.
 

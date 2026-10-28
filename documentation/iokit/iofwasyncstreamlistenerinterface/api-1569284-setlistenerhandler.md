@@ -16,7 +16,7 @@ Set the callback that should be called to handle incoming async stream packets
 const IOFWAsyncStreamListenerHandler (*SetListenerHandler)(IOFWAsyncStreamListenerInterfaceRef self, IOFWAsyncStreamListenerHandler inReceiver);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the callback that was previously set or nil for none.
 

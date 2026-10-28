@@ -19,7 +19,7 @@ var scaleFactor: CGFloat { get set }
 @property (nonatomic) CGFloat scaleFactor;
 ```
 
-#### Discussion
+## Discussion
 
 By default, `AVCaptureScreenInput` captures the video buffers from the display at a scale factor of 1.0 (no scaling). Set this property to scale the buffers by a given factor; for example a 320x240 capture area with a scaleFactor of `2.0` produces video buffers at 640x480.
 

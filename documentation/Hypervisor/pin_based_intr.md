@@ -19,7 +19,7 @@ var PIN_BASED_INTR: UInt32 { get }
 PIN_BASED_INTR
 ```
 
-#### Discussion
+## Discussion
 
 Must be `1`.
 

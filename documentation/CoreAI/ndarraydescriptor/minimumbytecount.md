@@ -19,7 +19,7 @@ The minimum number of bytes needed for storage with this descriptor’s shape an
 var minimumByteCount: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 The shape/strides/scalarType of this descriptor are used to compute the addressable byte range of the layout, and the size of that range is returned as the minimum size a backing storage would need to be to contain the ndArray.
 

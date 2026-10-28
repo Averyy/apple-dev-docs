@@ -23,7 +23,7 @@ var kAudioSessionProperty_PreferredHardwareIOBufferDuration: Int { get }
 kAudioSessionProperty_PreferredHardwareIOBufferDuration
 ```
 
-#### Discussion
+## Discussion
 
 A read/write `Float32` value.
 

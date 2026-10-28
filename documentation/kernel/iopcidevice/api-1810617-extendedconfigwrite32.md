@@ -13,7 +13,7 @@ void extendedConfigWrite32(
  UInt32data );
 ```
 
-#### Overview
+## Overview
 
 This method writes a 32-bit value to a configuration space register on the device.
 

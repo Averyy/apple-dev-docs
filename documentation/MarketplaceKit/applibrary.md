@@ -23,11 +23,11 @@ final class AppLibrary
 - [Providing age-rating appropriate content](./providing-age-rating-appropriate-content.md)
 - [Supplying an install verification token](./supplying-an-install-verification-token.md)
 
-#### Overview
+## Overview
 
 Alternative app marketplaces call methods of this class to retrieve the set of currently installed apps, to request the installation of available apps, or to update the license for a specific app. Browser apps that use an alternative browser engine make a call to this class to install alternative app marketplaces from a webpage. You can also customize Spotlight search results and manage age-rating exception requests to install apps with an age rating beyond the maximum allowed for the device.
 
-#### Perform app installation
+## Perform app installation
 
 To install apps with this class, the system requires the following criteria:
 
@@ -35,7 +35,7 @@ To install apps with this class, the system requires the following criteria:
 - **[`requestAppInstallationFromBrowser(for:referrer:)`](./applibrary/requestappinstallationfrombrowser%28for,referrer%29.md)**: Your app needs to have the [`com.apple.developer.browser.app-installation`](../BundleResources/entitlements/com.apple.developer.browser.app-installation.md) entitlement.
 - **[`requestInlineAppInstallation(_:subjectToken:)`](./applibrary/requestinlineappinstallation%28_,subjecttoken%29.md)**: The app to install must be from the same developer account as the one that distributes the app that calls the method. The app to install also needs to be owned or controlled by you.
 
-#### Observe runtime changes
+## Observe runtime changes
 
 The class is observable (through [SwiftUI](../SwiftUI/SwiftUI.md) or the [Observation](../Observation/Observation.md) framework), so you can provide reactive updates when finishing, installing, updating, or loading (see [`isLoading`](./applibrary/isloading.md)).
 

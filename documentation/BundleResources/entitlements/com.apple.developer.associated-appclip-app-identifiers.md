@@ -15,7 +15,7 @@ A list of App Clip identifiers for an app with exactly one entry.
 - **Name**: `com.apple.developer.associated-appclip-app-identifiers`
 - **Type**: array of string 
 
-#### Discussion
+## Discussion
 
 The `com.apple.developer.associated-appclip-app-identifiers` entitlement provides an app with the bundle ID of its associated App Clip. Together with the [Parent Application Identifiers Entitlement](./com.apple.developer.parent-application-identifiers.md), the Associated App Clip Identifiers entitlement establishes an association between your App Clip and your app that the system uses to enable data sharing between them. For additional information on sharing data between your App Clip and your full app, see [Sharing data between your App Clip and your full app](../../AppClip/sharing-data-between-your-app-clip-and-your-full-app.md).
 

@@ -25,7 +25,7 @@ typealias nw_ws_additional_header_enumerator_t = (UnsafePointer<CChar>, UnsafePo
 typedef _Bool (^)(const char *, const char *) nw_ws_additional_header_enumerator_t;
 ```
 
-#### Return Value
+## Return Value
 
 Return true to continue enumerating, or false to stop enumerating.
 

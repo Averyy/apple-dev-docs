@@ -24,7 +24,7 @@ init(updateMode: PHASEEngine.UpdateMode)
 - (instancetype) initWithUpdateMode:(PHASEUpdateMode) updateMode;
 ```
 
-#### Discussion
+## Discussion
 
 The argument you choose determines the rate at which the engine consumes user commands, performs internal updates, and executes callbacks.
 

@@ -16,11 +16,11 @@ Copies a values for multiple elements.
 IOReturn IOHIDDeviceCopyValueMultiple(IOHIDDeviceRef device, CFArrayRef elements, CFDictionaryRef  _Nullable *pMultiple);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if successful.
 
-#### Discussion
+## Discussion
 
 This method behaves synchronously and return back immediately for input type element. If requesting a value for a feature element, this will block until the report has been issued to the device.
 

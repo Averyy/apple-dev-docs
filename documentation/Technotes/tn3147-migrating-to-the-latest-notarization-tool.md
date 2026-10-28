@@ -5,7 +5,7 @@
 
 Migrate your notarization workflows to `notarytool` from the deprecated `altool`.
 
-#### Overview
+## Overview
 
 At [WWDC 2021](https://developer.apple.com/videos/play/wwdc2021/10261/) Apple introduced `notarytool`, a new tool for interacting with the Apple notary service.  When it comes to notarization, this tool is faster and more reliable than the previous `altool`.  If you’re still notarizing with `altool`, it’s time to switch to `notarytool`.
 
@@ -22,7 +22,7 @@ You can use `altool` and `notarytool` in parallel.  Feel free to leave your curr
 
 If you’re not migrating from `altool`—that is, you’re setting up notarization for the first time—ignore this technote and instead start with [Notarizing macOS software before distribution](../Security/notarizing-macos-software-before-distribution.md) and then move on to [Customizing the notarization workflow](../Security/customizing-the-notarization-workflow.md).  Or, if you want to notarize from a non-Apple platform, see [Notary API](../NotaryAPI/NotaryAPI.md).
 
-#### Get the new tool
+## Get the new tool
 
 If you have Xcode 13 or later then you already have `notarytool`.  Just run it with `xcrun`:
 
@@ -55,11 +55,11 @@ OVERVIEW: Manage submissions to the Apple notary service
 
 If your version of macOS does not support Xcode 13, see [Enable notarization on an older version of macOS](./tn3147-migrating-to-the-latest-notarization-tool.md#Enable-notarization-on-an-older-version-of-macOS).
 
-#### Migrate your credentials
+## Migrate your credentials
 
 `notarytool` supports the same credentials as `altool`: an app-specific password or an App Store Connect API key.
 
-##### App-specific password
+### App-specific password
 
 If you’re currently authenticating with an app-specific password, your `altool` commands might start like this:
 
@@ -89,7 +89,7 @@ You can use the same app-specific password for both `altool` and `notarytool`.  
 
 > **Note**: If you use the `@keychain` prefix to tell `altool` to get the password from a keychain item, see [Save credentials in the keychain](./tn3147-migrating-to-the-latest-notarization-tool.md#Save-credentials-in-the-keychain).
 
-##### App Store Connect API key
+### App Store Connect API key
 
 If you’re currently authenticating with an App Store Connect API key, your `altool` commands might start like this:
 
@@ -117,7 +117,7 @@ Here `ISSUER_UUID` and `API_KEY` are as above, and `PATH_TO_KEY` is the path to 
 
 It’s fine to use the same App Store Connect API key `.p8` file for both `altool` and `notarytool`.  If you previously stored your key in `~/.appstoreconnect/private_keys/AuthKey_API_KEY.p8`, just pass that path to the `--key` option.
 
-#### Test your credentials
+## Test your credentials
 
 The best way to test your credentials is to get a history of recent activity.  In `altool` you might use a command like this:
 
@@ -137,7 +137,7 @@ Replace `NEW_CREDENTIALS` with the new credentials you worked out in the previou
 
 > **Note**: Each tool maintains its own separate history.  If this is the first time you’ve used `notarytool`, your history will be empty.
 
-#### Convert your notarization operations
+## Convert your notarization operations
 
 Once you have your credentials sorted out, it’s time to replace each invocation of `altool` with the equivalent one for `notarytool`.  The common notarization operations are:
 
@@ -148,7 +148,7 @@ Once you have your credentials sorted out, it’s time to replace each invocatio
 
 Remember that `notarytool` only replaces the notarization aspects of `altool`.  If you use `altool` for other tasks, like submitting an app to the App Store, continue to use it for that.
 
-##### Submit a file
+### Submit a file
 
 When using `altool`, your command to submit a file to the notary service might look like this:
 
@@ -170,7 +170,7 @@ Here `PATH_TO_FILE` is as above.  Replace `NEW_CREDENTIALS` with the credentials
 
 For a nice bonus, consider adding the `--wait` option.  With that, `notarytool` won’t return until the notarization is complete and, when it does return, it will output the submission’s status.  If you were previously polling the status to check for completion, add the `--wait` option and remove that logic.
 
-##### Check status
+### Check status
 
 When using `altool`, your command to check the status of a submission might look like this:
 
@@ -192,7 +192,7 @@ Here `SUBMISSION_ID` is as above.  Replace `NEW_CREDENTIALS` with the credential
 
 The submissions IDs returned by `notarytool` live in a different namespace than those returned by `altool`.  You can’t check on the status of an `altool` submission with `notarytool`, or vice versa.
 
-##### Fetch the notary log
+### Fetch the notary log
 
 After processing your submission the notary service generates a log.  This JSON file holds information about your submission, including errors and warnings.
 
@@ -208,7 +208,7 @@ Things are much easier with `notarytool`.  To fetch the notary log, use the `log
 
 Replace `SUBMISSION_ID` with the submission ID you got when you submitted the file and `NEW_CREDENTIALS` with the credentials from earlier.
 
-##### Get history
+### Get history
 
 When using `altool`, your command to view a list of recent notarization requests might look like this:
 
@@ -224,11 +224,11 @@ To do the same with `notarytool`, use the `history` subcommand:
 
 Replace `NEW_CREDENTIALS` with the credentials from earlier.
 
-#### Going further
+## Going further
 
 The new tool has a number of other features to make your life easier.
 
-##### Getting help
+### Getting help
 
 To get a list of commands, run `notarytool` with no arguments:
 
@@ -259,7 +259,7 @@ OPTIONS:
 
 For comprehensive help, see the `notarytool` man page.  If you’re unfamiliar with man pages, see .
 
-##### Save credentials in the keychain
+### Save credentials in the keychain
 
 With `altool`, you might have used the `--store-password-in-keychain-item` command to save an app-specific password in the keychain and then referenced it using the `@keychain` prefix.   `notarytool` supports the same workflow, with a slightly different syntax.
 
@@ -292,7 +292,7 @@ To use these credentials in subsequent commands, supply the profile name using t
 
 While the example above assumes you’re authenticating with an app-specific password, this technique also works with an App Store Connect API key.  See the `notarytool` help for the details.
 
-##### Notarizing on a limited system
+### Notarizing on a limited system
 
 The standard way to get `notarytool` is to install Xcode.  If you don’t want to install a full copy of Xcode on your system, get `notarytool` by installing the Command Line Tools package.  This installs the same `notarytool` as the associated Xcode.
 
@@ -309,20 +309,20 @@ On some systems even the Command Line Tools package is too big.  In that case, i
 % cp /Applications/Xcode.app/Contents/Developer/usr/bin/notarytool …whereever…
 ```
 
-##### Enable notarization on an older version of macOS
+### Enable notarization on an older version of macOS
 
 The first version of Xcode to include `notarytool` is Xcode 13.  It requires macOS 11.3.  It is, however, possible to notarize on earlier systems, all the way back to macOS 10.15.  To do this, copy `notarytool` from a system with Xcode or the Command Line Tools package installed, as described in the previous section.
 
 > ❗ **Important**: Apple engineered `notarytool` to work back to macOS 10.15 regardless of the minimum system version of the product in which it’s contained.  This is a special case and does not apply to any other component within Xcode.
 
-##### Learn about completed submissions
+### Learn about completed submissions
 
 If you notarize using `altool`, the notary service sends you an email when it’s done processing your submission.  It doesn’t do this when you notarize with `notarytool`.  If you were previously relying on this email to trigger events in your workflow, consider one of the following `submit` subcommand options:
 
 - `--wait`, which waits for your submission to complete
 - `--webhook`, which notifies you when your submission is complete
 
-#### Revision History
+## Revision History
 
 - **2024-02-05** Fixed a broken link.
 - **2023-08-01** Fixed a bug in the `--notarization-history` examples.  Made other minor editorial changes.

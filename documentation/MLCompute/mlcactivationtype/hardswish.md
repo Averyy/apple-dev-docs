@@ -23,7 +23,7 @@ case hardSwish
 MLCActivationTypeHardSwish
 ```
 
-#### Discussion
+## Discussion
 
 This activation type implements the following function:
 

@@ -16,7 +16,7 @@ Adds `mode` to the set of run-loop input modes that the receiver uses for connec
 - (void) addRequestMode:(NSString *) rmode;
 ```
 
-#### Discussion
+## Discussion
 
 The default input mode is `NSDefaultRunLoopMode`. See the [`RunLoop`](../runloop.md) class specification for more information on input modes.
 

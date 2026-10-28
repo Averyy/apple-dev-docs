@@ -20,7 +20,7 @@ A dictionary that associates IDs of configuration sets to IDs of configurations.
 let configurationSpecifications: [String : String]
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to represent a configuration choice from each configuration set.
 

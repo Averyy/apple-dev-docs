@@ -24,7 +24,7 @@ var exposureCompression: vector_float2 { get set }
 @property (nonatomic, assign) vector_float2 exposureCompression;
 ```
 
-#### Discussion
+## Discussion
 
 Simulating a real-world camera requires considering the way a pixel value captured by an imaging sensor is processed for display (or how a unit of film stock is developed and projected). Part of such consideration is the exposure compression function, which scales each color component value between minimum and maximum brightness.
 

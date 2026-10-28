@@ -26,7 +26,7 @@ optional func confirm(getAvailableRestaurantReservationBookingDefaults intent: I
 - (void) confirmGetAvailableRestaurantReservationBookingDefaults:(INGetAvailableRestaurantReservationBookingDefaultsIntent *) intent completion:(void (^)(INGetAvailableRestaurantReservationBookingDefaultsIntentResponse *response)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to validate you can provide default restaurant information.
 

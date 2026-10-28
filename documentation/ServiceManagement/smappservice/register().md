@@ -20,7 +20,7 @@ func register() throws
 - (BOOL) registerAndReturnError:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 The registration process applies to the following rules, depending upon the type of service:
 

@@ -24,7 +24,7 @@ let kVTDecompressionProperty_DeinterlaceMode_VerticalFilter: CFString
 extern CFStringRef const kVTDecompressionProperty_DeinterlaceMode_VerticalFilter;
 ```
 
-#### Discussion
+## Discussion
 
 Applies a 0.25-0.50-0.25 vertical filter to individual interlaced frames. This is the default mode.
 

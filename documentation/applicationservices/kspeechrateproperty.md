@@ -19,7 +19,7 @@ let kSpeechRateProperty: CFString
 const CFStringRef kSpeechRateProperty;
 ```
 
-#### Discussion
+## Discussion
 
 The value associated with this property is a `CFNumber` object that specifies the speech channel’s speaking rate. 
 

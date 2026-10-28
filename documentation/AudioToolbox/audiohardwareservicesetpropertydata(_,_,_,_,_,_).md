@@ -21,11 +21,11 @@ func AudioHardwareServiceSetPropertyData(_ inObjectID: AudioObjectID, _ inAddres
 extern OSStatus AudioHardwareServiceSetPropertyData(AudioObjectID inObjectID, const AudioObjectPropertyAddress *inAddress, UInt32 inQualifierDataSize, const void *inQualifierData, UInt32 inDataSize, const void *inData);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 
-#### Discussion
+## Discussion
 
 The property should not be considered changed until the HAL has called your property listener callback. Many HAL audio object properties are changed asynchronously.
 

@@ -24,7 +24,7 @@ var globalTuning: Float { get set }
 @property (nonatomic) float globalTuning;
 ```
 
-#### Discussion
+## Discussion
 
 The tuning unit is cents, and defaults to `0.0`. The range of valid values is `-2400` to `2400` cents.
 

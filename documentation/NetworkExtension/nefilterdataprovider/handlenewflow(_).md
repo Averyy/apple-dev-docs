@@ -23,11 +23,11 @@ func handleNewFlow(_ flow: NEFilterFlow) -> NEFilterNewFlowVerdict
 - (NEFilterNewFlowVerdict *) handleNewFlow:(NEFilterFlow *) flow;
 ```
 
-#### Return Value
+## Return Value
 
 An [`NEFilterNewFlowVerdict`](../nefilternewflowverdict.md) object indicating how the system should handle the flow.
 
-#### Discussion
+## Discussion
 
 This function is called by the system when a filtering decision needs to be made about a new flow of network content.
 

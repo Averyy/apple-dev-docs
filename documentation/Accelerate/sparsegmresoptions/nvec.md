@@ -25,7 +25,7 @@ var nvec: Int32
 int nvec;
 ```
 
-#### Discussion
+## Discussion
 
 For GMRES and FGMRES variants, this is the number of iterations between restarts. For DQGMRES it’s the number of historical vectors the operation maintains in memory. If [`nvec`](./nvec.md) is less than or equal to `0`, the operation uses the default value of `16`.
 

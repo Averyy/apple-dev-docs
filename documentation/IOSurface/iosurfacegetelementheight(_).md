@@ -24,7 +24,7 @@ func IOSurfaceGetElementHeight(_ buffer: IOSurfaceRef) -> Int
 size_t IOSurfaceGetElementHeight(IOSurfaceRef buffer);
 ```
 
-#### Return Value
+## Return Value
 
 Returns 0 if buffer is invalid.
 

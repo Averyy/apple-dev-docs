@@ -23,7 +23,7 @@ func sec_protocol_options_set_key_update_block(_ options: sec_protocol_options_t
 void sec_protocol_options_set_key_update_block(sec_protocol_options_t options, sec_protocol_key_update_t key_update_block, dispatch_queue_t key_update_queue);
 ```
 
-#### Discussion
+## Discussion
 
 Set the key update block.
 

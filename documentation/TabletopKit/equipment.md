@@ -15,7 +15,7 @@ A protocol for equipment that players directly interact with in a game.
 protocol Equipment : Identifiable where Self.ID == EquipmentIdentifier
 ```
 
-#### Overview
+## Overview
 
 To represent equipment in your game, such as cards, pieces, and dice, following these steps:
 

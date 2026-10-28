@@ -20,7 +20,7 @@ A pair of related entities that make up a configured portal.
 struct Portal
 ```
 
-#### Overview
+## Overview
 
 [`makePortal(surfaceStyle:boundaryStyle:boundaryMode:)`](./makeportal%28surfacestyle,boundarystyle,boundarymode%29.md) returns this value. You’re responsible for adding both entities to your scene.
 

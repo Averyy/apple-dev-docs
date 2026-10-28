@@ -22,7 +22,7 @@ Fetches share participants with the specified phone numbers.
 func fetchShareParticipants(forPhoneNumbers phoneNumbers: [String], completionHandler: @escaping @Sendable (Result<[String : Result<CKShare.Participant, any Error>], any Error>) -> Void)
 ```
 
-#### Discussion
+## Discussion
 
 The closure doesn’t return a value and takes the following parameters:
 

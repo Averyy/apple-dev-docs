@@ -14,11 +14,11 @@ CMError NCMUseProfileComment (
 );
 ```
 
-#### Return Value
+## Return Value
 
 A `CMError` value. See [Result Codes](../colorsync_manager.md#1670295).
 
-#### Overview
+## Overview
 
 The `NCMUseProfileComment` function automatically generates the picture comments required to embed the specified profile or profile identifier into the open picture.
 
@@ -32,7 +32,7 @@ You can use this function to embed most types of profiles in an image, including
 
 The `NCMUseProfileComment` function precedes the profile it embeds with a picture comment of kind `cmBeginProfile`. For embedding to work correctly, the currently effective profile must be terminated by a picture comment of kind `cmEndProfile` after drawing operations using that profile are performed. You are responsible for adding the picture comment of kind `cmEndProfile`. If a picture comment was not specified to end the profile following the drawing operations to which the profile applies, the profile will remain in effect until the next embedded profile is introduced with a picture comment of kind `cmBeginProfile`. However, use of the next profile might not be the intended action. Always pair use of the `cmBeginProfile` and `cmEndProfile` picture comments. When the ColorSync Manager encounters a `cmEndProfile` picture comment, it restores use of the system profile for matching until it encounters another `cmBeginProfile` picture comment. 
 
-##### Version-Notes
+### Version-Notes
 
 In ColorSync 2.0, the `flags` parameter was ignored and the routine always embedded the entire profile.
 

@@ -25,11 +25,11 @@ func urls(forResourcesWithExtension ext: String?, subdirectory subpath: String?,
 - (NSArray<NSURL *> *) URLsForResourcesWithExtension:(NSString *) ext subdirectory:(NSString *) subpath localization:(NSString *) localizationName;
 ```
 
-#### Return Value
+## Return Value
 
 An array containing the file URLs for all bundle resources matching the specified criteria. This method returns an empty array if no matching resource files are found.
 
-#### Discussion
+## Discussion
 
 This method is equivalent to [`urls(forResourcesWithExtension:subdirectory:)`](./urls%28forresourceswithextension,subdirectory%29.md), except that only nonlocalized resources and those in the language-specific `.lproj` directory specified by `localizationName` are searched.
 

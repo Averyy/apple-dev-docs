@@ -5,13 +5,13 @@
 
 Select retention messages for customers in real time by responding to requests on your Get Retention Message endpoint.
 
-#### Overview
+## Overview
 
 The App Store server sends a request to your `Get Retention Message` endpoint in real time when a customer is viewing subscription details and can potentially cancel the subscription. In your response, you choose a retention message from messages you configure in advance. Use the information in the request body, [`RealtimeRequestBody`](./realtimerequestbody.md), to help inform your choice. The system displays the retention message you choose to the customer. If your server response fails for any reason, the system displays a default retention message that you configure in advance.
 
 Your server is responsible for parsing, interpreting, and responding to all server-to-server posts. For more information about implementing your `Get Retention Message` endpoint, see [Setting up your Get Retention Message endpoint](./setting-up-retention-messaging-endpoint.md). For more information about setting up the messages you can use in the response, see [Setting up retention messages](./setting-up-retention-messages.md).
 
-##### Parse the request body
+### Parse the request body
 
 The request body payload contains the information you use to decide which retention message to show the customer, such as the product ID, locale, and original transaction ID.
 
@@ -23,7 +23,7 @@ Parse the signed payload and validate the signature as follows:
 - Use the information in the header to verify the JWS signature. For more information on verifying the signature, see [`JWSDecodedHeader`](./jwsdecodedheader.md).
 - To read the payload, Base64URL-decode the payload component. Use a [`DecodedRealtimeRequestBody`](./decodedrealtimerequestbody.md) object to read the payload information.
 
-##### Respond to the post
+### Respond to the post
 
 Respond to the post with a [`RealtimeResponseBody`](./realtimeresponsebody.md) and a `200` status code. Your response identifies the retention message you choose to show the customer. The system displays your chosen message after the customer selects Cancel Subscription on the Apple Account > Subscriptions page.
 

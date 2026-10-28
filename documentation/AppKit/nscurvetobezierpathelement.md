@@ -17,7 +17,7 @@ Creates a curved line segment from the current point to the specified endpoint u
 static const NSBezierPathElement NSCurveToBezierPathElement;
 ```
 
-#### Discussion
+## Discussion
 
 The points are stored in the following order: controlPoint1, controlPoint2, endPoint. Ovals, arcs, and Bezier curves all use curve elements to specify their geometry.
 

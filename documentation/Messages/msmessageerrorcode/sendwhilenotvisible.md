@@ -21,7 +21,7 @@ case sendWhileNotVisible
 MSMessageErrorCodeSendWhileNotVisible
 ```
 
-#### Discussion
+## Discussion
 
 An iMessage app can send messages only in response to user interaction with the app. If an app isn’t currently visible and onscreen, it can’t send any messages.
 

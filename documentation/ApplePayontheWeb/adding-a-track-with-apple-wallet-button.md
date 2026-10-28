@@ -5,11 +5,11 @@
 
 Configure and style an Apple Wallet Button to match your website.
 
-#### Overview
+## Overview
 
 In iOS 17.0 and later and macOS 14.0 and later, Apple Wallet order tracking is available on the web and provides a variety of button types that you can use on your website. You can specify the Track with Apple Wallet button style, compactness, and localization using attributes that you supply to the JavaScript function that displays the button.
 
-##### Add the Apple Pay JavaScript API to the page header
+### Add the Apple Pay JavaScript API to the page header
 
 To display an Track with Apple Wallet button, add the following script tag to your webpage’s head tag to load the Apple Pay JavaScript API:
 
@@ -28,7 +28,7 @@ The script tag contains the URL that loads the `apple-pay-sdk.js`, from the Appl
 
 Additionally, ensure that your website allows a Content Security Policy for Apple Pay JS to function properly.
 
-##### Add a standard Apple Wallet button
+### Add a standard Apple Wallet button
 
 To display the button, add an `apple-wallet-button` tag to your webpage and set the `buttonstyle`, `compact`, `locale`, and `onclick` parameters. For example, this call into the Apple Pay JavaScript library provides details necessary for rendering the button localized to the US, and uses the default compactness and style:
 
@@ -58,7 +58,7 @@ To protect user privacy, ensure the package URL the merchant system generates us
 - It’s not possible to scrape order packages anonymously.
 - It’s not possible for a user to download an order package that belongs to a different user, even if they find out the order package’s URL.
 
-##### Customize an Apple Wallet Button
+### Customize an Apple Wallet Button
 
 There are several options for customizing the button’s attributes:
 
@@ -79,7 +79,7 @@ To customize the button’s styling, use the following:
 | `--apple-wallet-button-padding` | number | This CSS shorthand property sets the padding area on all four sides of an element at once. |
 | `--apple-wallet-button-box-sizing` | `border-box` , `content-box` | The value for the `box-sizing` CSS property sets how the total width and height of an element is calculated. |
 
-##### Determine sizing requirements
+### Determine sizing requirements
 
 For sizing requirements for the Track with Apple Wallet button, along with other design guidelines, see [Apple Pay](https://developer.apple.com/design/human-interface-guidelines/apple-pay) in the Human Interface Guidelines.
 

@@ -19,7 +19,7 @@ case regular
 NSMenuPresentationStyleRegular
 ```
 
-#### Discussion
+## Discussion
 
 When you select this style of menu the system presents the menu as either a popup or context menu based on the context.
 

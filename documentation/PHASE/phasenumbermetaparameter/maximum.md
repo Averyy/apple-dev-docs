@@ -24,7 +24,7 @@ var maximum: Double { get }
 @property (nonatomic, readonly) double maximum;
 ```
 
-#### Discussion
+## Discussion
 
 The framework sets the value to the metaparameter definition’s [`maximum`](../phasenumbermetaparameterdefinition/maximum.md) property.
 

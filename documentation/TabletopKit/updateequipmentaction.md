@@ -15,7 +15,7 @@ An action that updates properties of equipment on the table.
 struct UpdateEquipmentAction<State> where State : EquipmentState
 ```
 
-#### Overview
+## Overview
 
 To create an update equipment action, use the [`updateEquipment(_:state:context:)`](./tabletopaction/updateequipment%28_,state,context%29-6kawf.md) or a similar static method.
 

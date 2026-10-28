@@ -22,11 +22,11 @@ nonisolated
 func scenePadding(_ edges: Edge.Set = .all) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view that’s padded on specified edges by a scene-appropriate amount.
 
-#### Discussion
+## Discussion
 
 Use this modifier to add a scene-appropriate amount of padding to a view. Specify either a single edge value from [`Edge.Set`](../edge/set.md), or an [`OptionSet`](../../Swift/optionset.md) that describes the edges to pad.
 

@@ -20,7 +20,7 @@ func NSIntersectsRect(_ aRect: NSRect, _ bRect: NSRect) -> Bool
 extern BOOL NSIntersectsRect(NSRect aRect, NSRect bRect);
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../Swift/true.md) if `aRect` intersects `bRect`, otherwise [`false`](../Swift/false.md). Returns [`false`](../Swift/false.md) if either `aRect` or `bRect` has a width or height that is 0.
 

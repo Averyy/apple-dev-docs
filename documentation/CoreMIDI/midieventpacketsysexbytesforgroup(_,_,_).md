@@ -23,7 +23,7 @@ func MIDIEventPacketSysexBytesForGroup(_ pkt: UnsafePointer<MIDIEventPacket>, _ 
 extern OSStatus MIDIEventPacketSysexBytesForGroup(const MIDIEventPacket *pkt, UInt8 groupIndex, CFDataRef*outData);
 ```
 
-#### Return Value
+## Return Value
 
 An `OSStatus` result code.
 

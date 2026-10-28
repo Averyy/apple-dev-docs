@@ -19,7 +19,7 @@ protocol QLPreviewItem : NSObjectProtocol
 @protocol QLPreviewItem <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Implement the properties in this protocol to make your app’s content visible in a Quick Look preview. Use  [`QLPreviewController`](../QuickLook/qlpreviewcontroller.md) to display a Quick Look preview on iOS, [`QLPreviewPanel`](./qlpreviewpanel.md) and [`QLPreviewView`](./qlpreviewview.md) on macOS.
 

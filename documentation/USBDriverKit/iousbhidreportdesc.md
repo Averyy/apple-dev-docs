@@ -15,7 +15,7 @@ A structure that defines the USB HID Report Descriptor header.
 struct IOUSBHIDReportDesc;
 ```
 
-#### Overview
+## Overview
 
 See the USB HID Specification at [http://www.usb.org](http://www.usb.org).
 

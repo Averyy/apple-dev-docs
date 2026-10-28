@@ -25,7 +25,7 @@ var timeOffset: CFTimeInterval { get set }
 @property CFTimeInterval timeOffset;
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to 0. .
 

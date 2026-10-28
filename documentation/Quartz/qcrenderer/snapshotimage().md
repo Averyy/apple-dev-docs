@@ -21,7 +21,7 @@ func snapshotImage() -> NSImage!
 - (NSImage *) snapshotImage;
 ```
 
-#### Return Value
+## Return Value
 
 The snapshot image.
 

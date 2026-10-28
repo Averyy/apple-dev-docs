@@ -22,7 +22,7 @@ func setBccRecipients(_ bccRecipients: [String]?)
 - (void) setBccRecipients:(NSArray<NSString *> *) bccRecipients;
 ```
 
-#### Discussion
+## Discussion
 
 This method replaces the previous blind carbon-copy (Bcc) recipients with the new ones listed in the `bccRecipients` parameter. This method doesn’t filter out duplicate email addresses, so if duplicates are present, the recipient may receive multiple copies of the email message.
 

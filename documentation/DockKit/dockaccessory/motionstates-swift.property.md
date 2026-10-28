@@ -18,11 +18,11 @@ Motion information from the dock accessory that includes current orientation and
 final var motionStates: DockAccessory.MotionStates { get throws }
 ```
 
-#### Return Value
+## Return Value
 
 Motion states with the current orientation and velocity. The dock accessory controls the rate at which the state changes.
 
-#### Discussion
+## Discussion
 
 This value holds a [`DockAccessory.MotionStates`](./motionstates-swift.struct.md) object, an asynchronous iterator used to find the desired dock accessory.
 

@@ -22,11 +22,11 @@ nonisolated
 func compositingGroup() -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view that wraps this view in a compositing group.
 
-#### Discussion
+## Discussion
 
 A compositing group makes compositing effects in this view’s ancestor views, such as opacity and the blend mode, take effect before this view is rendered.
 

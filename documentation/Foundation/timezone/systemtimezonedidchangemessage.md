@@ -21,7 +21,7 @@ A message the system sends when the system time zone changes.
 struct SystemTimeZoneDidChangeMessage
 ```
 
-#### Overview
+## Overview
 
 Observe this message with the identifier [`systemTimeZoneDidChange`](../notificationcenter/messageidentifier/systemtimezonedidchange.md), or specify its type directly to the `addObserver(of:for:using:)` method. The [`Subject`](../notificationcenter/mainactormessage/subject.md) of this message type is [`TimeZone`](../timezone.md).
 

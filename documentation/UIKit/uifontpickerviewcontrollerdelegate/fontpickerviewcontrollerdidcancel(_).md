@@ -22,7 +22,7 @@ optional func fontPickerViewControllerDidCancel(_ viewController: UIFontPickerVi
 - (void) fontPickerViewControllerDidCancel:(UIFontPickerViewController *) viewController;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this optional method if your app needs to add custom logic when the user cancels the font picker instead of picking a font.
 

@@ -25,7 +25,7 @@ static let usesMetricSystem: CFLocaleKey!
 extern CFLocaleKey const kCFLocaleUsesMetricSystem;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is a CFBoolean.
 

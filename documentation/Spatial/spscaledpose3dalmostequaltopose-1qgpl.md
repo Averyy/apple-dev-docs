@@ -19,11 +19,11 @@
 static bool SPScaledPose3DAlmostEqualToPose(SPScaledPose3D p1, SPScaledPose3D p2);
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that indicates whether the two scaled poses are equal within the Spatial default absolute tolerance.
 
-#### Discussion
+## Discussion
 
 Returns a Boolean value that indicates whether the two scaled poses are equal within the Spatial default absolute tolerance.
 

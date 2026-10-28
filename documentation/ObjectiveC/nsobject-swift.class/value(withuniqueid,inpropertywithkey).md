@@ -20,7 +20,7 @@ func value(withUniqueID uniqueID: Any, inPropertyWithKey key: String) -> Any?
 - (id) valueWithUniqueID:(id) uniqueID inPropertyWithKey:(NSString *) key;
 ```
 
-#### Discussion
+## Discussion
 
 The method `valueIn<Key>WithUniqueID:` is invoked if it exists. Otherwise, raises an `NSUndefinedKeyException`. The declared type of `uniqueID` in the constructed method must be `id`, `NSNumber *`, `NSString *`, or one of the scalar types that can be encapsulated by `NSNumber`.
 

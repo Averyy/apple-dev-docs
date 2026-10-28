@@ -20,11 +20,11 @@ Returns a Core Graphics vector corresponding to the data in a given string.
 extern CGVector CGVectorFromString(NSString *string);
 ```
 
-#### Return Value
+## Return Value
 
 A Core Graphics structure that represents a two-dimensional vector. If the string is not well-formed, the function returns a vector whose `dx` and `dy` values are `0`.
 
-#### Discussion
+## Discussion
 
 In general, you should use this function only to convert strings that were previously created using the [`NSStringFromCGVector`](./nsstringfromcgvector.md) function.
 

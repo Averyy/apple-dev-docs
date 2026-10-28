@@ -23,7 +23,7 @@ class var isBypassingColorSpaceConversionSupported: Bool { get }
 @property (class, readonly, getter=isBypassingColorSpaceConversionSupported) BOOL supportsBypassingColorSpaceConversion;
 ```
 
-#### Discussion
+## Discussion
 
 If `true`, you may instantiate a configurator with a configuration specifying [`bypassColorSpaceConversion`](../avcaptureexternaldisplayconfiguration/bypasscolorspaceconversion.md) set to `true`.
 

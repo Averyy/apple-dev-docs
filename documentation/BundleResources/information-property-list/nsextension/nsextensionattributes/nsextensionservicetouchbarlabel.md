@@ -14,7 +14,7 @@ A name for display when the extension appears as a Quick Action in the Touch Bar
 - **Name**: `NSExtensionServiceTouchBarLabel`
 - **Type**: string
 
-#### Discussion
+## Discussion
 
 This key is used in conjunction with the [`NSExtensionServiceAllowsTouchBarItem`](./nsextensionserviceallowstouchbaritem.md) key.
 

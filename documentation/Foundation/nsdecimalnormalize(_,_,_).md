@@ -25,7 +25,7 @@ func NSDecimalNormalize(_ number1: UnsafeMutablePointer<Decimal>, _ number2: Uns
 extern NSCalculationError NSDecimalNormalize(NSDecimal *number1, NSDecimal *number2, NSRoundingMode roundingMode);
 ```
 
-#### Discussion
+## Discussion
 
 [`Decimal`](./decimal.md) instances are represented in memory as a mantissa and an exponent, expressing the value mantissa x 10^exponent. A number can have many representations; for example, the following table lists several valid representations for the number 100:
 

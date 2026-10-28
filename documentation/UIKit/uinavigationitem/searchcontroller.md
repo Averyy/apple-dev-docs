@@ -22,7 +22,7 @@ var searchController: UISearchController? { get set }
 @property (nonatomic, strong, readwrite, nullable) UISearchController * searchController;
 ```
 
-#### Discussion
+## Discussion
 
 When a view controller in your navigation interface supports search, assign the corresponding search controller to this property. The navigation controller integrates the search bar from your search controller into the navigation bar interface, presenting a single bar for both search and navigation. Use the [`hidesSearchBarWhenScrolling`](./hidessearchbarwhenscrolling.md) property to control the visibility of the search bar when scrolling.
 

@@ -20,7 +20,7 @@ A component that performs GPU instancing on the model of the same entity.
 struct MeshInstancesComponent
 ```
 
-#### Overview
+## Overview
 
 RealityKit applies the transform hierarchy of this component’s entity to the individual transforms specified by [`LowLevelInstanceData`](./lowlevelinstancedata.md). You can think of these instances as sub-entities of the entity you apply this component to, meaning [`LowLevelInstanceData`](./lowlevelinstancedata.md) is in the local space of that same entity.
 

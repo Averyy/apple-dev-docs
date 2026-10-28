@@ -21,11 +21,11 @@ Constructs a new span over the items within the supplied range of indices within
 func extracting(_ bounds: some RangeExpression<Int>) -> Span<Element>
 ```
 
-#### Return Value
+## Return Value
 
 A `Span` over the items within `bounds`.
 
-#### Discussion
+## Discussion
 
 The returned span’s first item is always at offset 0; unlike buffer slices, extracted spans do not share their indices with the span from which they are extracted.
 

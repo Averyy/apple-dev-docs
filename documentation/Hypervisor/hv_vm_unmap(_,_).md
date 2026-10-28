@@ -19,11 +19,11 @@ func hv_vm_unmap(_ ipa: hv_ipa_t, _ size: Int) -> hv_return_t
 extern hv_return_t hv_vm_unmap(hv_ipa_t ipa, size_t size);
 ```
 
-#### Return Value
+## Return Value
 
 [`HV_SUCCESS`](./hv_success.md) if the operation was successful, otherwise an error code specified in [`hv_return_t`](./hv_return_t.md).
 
-#### Discussion
+## Discussion
 
 Intel-based Mac computers have different parameters:
 

@@ -20,7 +20,7 @@ An object that references the pixel data for each mipmap level of a texture.
 struct Contents
 ```
 
-#### Overview
+## Overview
 
 Mipmaps are progressively smaller versions of the same texture image. Each level is half the size of the previous level, with a minimum size of 1 pixel in each dimension.
 

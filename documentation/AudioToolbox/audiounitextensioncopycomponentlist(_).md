@@ -23,11 +23,11 @@ func AudioUnitExtensionCopyComponentList(_ extensionIdentifier: CFString) -> Unm
 extern CFArrayRefAudioUnitExtensionCopyComponentList(CFStringRef extensionIdentifier);
 ```
 
-#### Return Value
+## Return Value
 
 An array of component registrations.
 
-#### Discussion
+## Discussion
 
 This function returns an array of dictionaries (one dictionary for each registration component) in the same format as described in [Audio Components](./audio-components.md).
 

@@ -19,7 +19,7 @@ func validRequestor(forSendType sendType: NSPasteboard.PasteboardType?, returnTy
 - (id) validRequestorForSendType:(NSPasteboardType) sendType returnType:(NSPasteboardType) returnType;
 ```
 
-#### Return Value
+## Return Value
 
 `self` if `sendType` specifies a type of data the text view can put on the pasteboard and `returnType` contains a type of data the text view can read from the pasteboard; otherwise `nil`.
 

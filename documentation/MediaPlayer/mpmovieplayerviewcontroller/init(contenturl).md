@@ -23,7 +23,7 @@ init!(contentURL: URL!)
 - (instancetype) initWithContentURL:(NSURL *) contentURL;
 ```
 
-#### Return Value
+## Return Value
 
 A movie player view controller initialized with the specified URL.
 

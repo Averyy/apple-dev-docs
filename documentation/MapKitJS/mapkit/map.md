@@ -15,7 +15,7 @@ The getter to use to access the map view class.
 get Map(): typeof Map;
 ```
 
-#### Discussion
+## Discussion
 
 You must load the appropriate library first before accessing the getter, otherwise, the getter throws an `Error`.
 

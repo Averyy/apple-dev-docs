@@ -13,11 +13,11 @@ Implement ray traced rendering using GPU-based parallel processing.
 - macOS 14.0+
 - Xcode 26.3+
 
-#### Overview
+## Overview
 
 > **Note**: This sample code project is associated with WWDC23 session [10128: Your guide to Metal ray tracing](https://developer.apple.com/wwdc23/10128).
 
-##### Configure the sample code project
+### Configure the sample code project
 
 This sample requires the following system and software configuration:
 

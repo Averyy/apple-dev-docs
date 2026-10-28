@@ -23,7 +23,7 @@ func containerViewWillLayoutSubviews()
 - (void) containerViewWillLayoutSubviews;
 ```
 
-#### Discussion
+## Discussion
 
 UIKit calls this method before adjusting the layout of the views in the container view. Use this method and the [`containerViewDidLayoutSubviews()`](./containerviewdidlayoutsubviews%28%29.md) method to update any custom views managed by your presentation controller.
 

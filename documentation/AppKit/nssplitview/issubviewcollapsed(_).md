@@ -19,7 +19,7 @@ func isSubviewCollapsed(_ subview: NSView) -> Bool
 - (BOOL) isSubviewCollapsed:(NSView *) subview;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if `subview` is in a collapsed state; otherwise, [`false`](../../Swift/false.md).
 

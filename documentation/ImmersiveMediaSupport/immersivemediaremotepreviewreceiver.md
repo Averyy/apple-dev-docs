@@ -16,7 +16,7 @@ An observable object that helps applications handle receiving commands and data 
 class ImmersiveMediaRemotePreviewReceiver
 ```
 
-#### Overview
+## Overview
 
 This object helps applications receiving Immersive Video over the network with the intent of rendering a preview playback.
 

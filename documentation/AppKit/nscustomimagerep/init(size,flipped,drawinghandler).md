@@ -19,11 +19,11 @@ init(size: NSSize, flipped drawingHandlerShouldBeCalledWithFlippedContext: Bool,
 - (instancetype) initWithSize:(NSSize) size flipped:(BOOL) drawingHandlerShouldBeCalledWithFlippedContext drawingHandler:(BOOL (^)(NSRect dstRect)) drawingHandler;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized [`NSCustomImageRep`](../nscustomimagerep.md) object, or `nil` if the object could not be initialized.
 
-#### Discussion
+## Discussion
 
 Using the this method ensures you’ll get correct results under standard and high resolution.
 

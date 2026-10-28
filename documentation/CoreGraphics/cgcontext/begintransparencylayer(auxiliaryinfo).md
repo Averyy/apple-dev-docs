@@ -25,7 +25,7 @@ func beginTransparencyLayer(auxiliaryInfo: CFDictionary?)
 extern void CGContextBeginTransparencyLayer(CGContextRef c, CFDictionaryRef auxiliaryInfo);
 ```
 
-#### Discussion
+## Discussion
 
 Until a corresponding call to [`endTransparencyLayer()`](./endtransparencylayer%28%29.md), all subsequent drawing operations in the specified context are composited into a fully transparent backdrop (which is treated as a separate destination buffer from the context).
 

@@ -17,7 +17,7 @@ Target-side capability for rewinding an in-place speculative verify pass.
 protocol SpeculativeCacheRewindModel
 ```
 
-#### Overview
+## Overview
 
 Rollback belongs to the target/cache implementation, not to the drafter. The depth is explicit so a future multi-token drafter cannot accidentally select an in-place path whose recurrent checkpoint is too shallow.
 

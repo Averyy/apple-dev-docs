@@ -21,7 +21,7 @@ Returns the angle relative to the plot area center, where the 12 o’clock posit
 func angle(at position: CGPoint) -> Angle
 ```
 
-#### Return Value
+## Return Value
 
 The angle relative to the plot area center.
 

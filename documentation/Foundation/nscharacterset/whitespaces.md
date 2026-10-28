@@ -25,11 +25,11 @@ class var whitespaces: CharacterSet { get }
 @property (class, copy, readonly) NSCharacterSet * whitespaceCharacterSet;
 ```
 
-#### Return Value
+## Return Value
 
 A character set containing all the whitespace characters.
 
-#### Discussion
+## Discussion
 
 This set doesn’t contain the newline or carriage return characters.
 

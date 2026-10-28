@@ -24,7 +24,7 @@ class VNCoreMLModel
 @interface VNCoreMLModel : NSObject
 ```
 
-#### Overview
+## Overview
 
 A [Core ML](../CoreML/CoreML.md) model encapsulates the information trained from a data set used to drive Vision recognition requests. See [Getting a Core ML Model](../CoreML/getting-a-core-ml-model.md) for instructions on training your own model. Once you train the model, use this class to initialize a [`VNCoreMLRequest`](./vncoremlrequest.md) for identification.
 

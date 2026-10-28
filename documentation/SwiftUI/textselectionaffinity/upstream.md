@@ -21,7 +21,7 @@ An upstream selection affinity. In this case, the cursor is associated with the 
 case upstream
 ```
 
-#### Discussion
+## Discussion
 
 In the context of our example  `hello|مرحبا`, with an upstream affinity, the cursor would be associated with the “o” from “hello”. If you were to type in English, the characters would continue to be added after the “o” in “hello”.
 

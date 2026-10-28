@@ -19,7 +19,7 @@ Extends `UIKit/UISceneDelegate` to bridge SwiftUI scenes.
 protocol UIHostingSceneDelegate : UISceneDelegate
 ```
 
-#### Overview
+## Overview
 
 Declare any SwiftUI scenes you wish to activate from UIKit in the static `rootScene` property of your conforming class:
 

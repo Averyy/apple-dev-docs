@@ -14,7 +14,7 @@
 #define kIOUSBInterfaceUserClientTypeID
 ```
 
-#### Discussion
+## Discussion
 
 This UUID constant is used to obtain a device interface corresponding to an io_service_t corresponding to an IOUSBInterface in the kernel. Once you have obtained the device interface for the service, you must use the QueryInterface function to obtain the device interface for the user client itself.
 

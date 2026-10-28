@@ -25,7 +25,7 @@ var realUserStatus: ASUserDetectionStatus { get }
 @property (nonatomic, readonly) ASUserDetectionStatus realUserStatus;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property’s value as one piece of data when trying to prevent fraud. A value of [`ASUserDetectionStatus.likelyReal`](../asuserdetectionstatus/likelyreal.md) is a hint that the system has a reasonably high confidence that the user is a real person, as opposed to an automated agent, but this isn’t a guarantee.
 

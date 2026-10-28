@@ -25,7 +25,7 @@ typealias CMAttachmentMode = UInt32
 typedef uint32_t CMAttachmentMode;
 ```
 
-#### Discussion
+## Discussion
 
 Set these attributes when adding attachments to a [`CMAttachmentBearer`](./cmattachmentbearer.md) object.
 

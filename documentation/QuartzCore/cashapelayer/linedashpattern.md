@@ -24,7 +24,7 @@ var lineDashPattern: [NSNumber]? { get set }
 @property (copy, nullable) NSArray<NSNumber *> * lineDashPattern;
 ```
 
-#### Discussion
+## Discussion
 
 The dash pattern is specified as an array of `NSNumber` objects that specify the lengths of the painted segments and unpainted segments, respectively, of the dash pattern.
 

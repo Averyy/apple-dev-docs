@@ -19,7 +19,7 @@ static let fileContents: NSPasteboard.PasteboardType
 extern NSPasteboardType NSFileContentsPboardType;
 ```
 
-#### Discussion
+## Discussion
 
 The file contents pboard type allowed you to synthesize a pboard type for a file’s contents based on the file’s extension.
 

@@ -25,7 +25,7 @@ let kCTStrokeWidthAttributeName: CFString
 extern CFStringRef const kCTStrokeWidthAttributeName;
 ```
 
-#### Discussion
+## Discussion
 
 Value must be a [`CFNumber`](../CoreFoundation/cfnumber.md) object. Default value is `0.0`, or no stroke. This attribute, interpreted as a percentage of font point size, controls the text drawing mode: positive values effect drawing with stroke only; negative values are for stroke and fill. A typical value for outlined text is `3.0`.
 

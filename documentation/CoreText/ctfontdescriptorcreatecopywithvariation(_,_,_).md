@@ -25,11 +25,11 @@ func CTFontDescriptorCreateCopyWithVariation(_ original: CTFontDescriptor, _ var
 extern CTFontDescriptorRefCTFontDescriptorCreateCopyWithVariation(CTFontDescriptorRef original, CFNumberRef variationIdentifier, CGFloat variationValue);
 ```
 
-#### Return Value
+## Return Value
 
 A copy of the original font descriptor with a new variation instance.
 
-#### Discussion
+## Discussion
 
 This is a convenience method for easily creating new variation font instances.
 

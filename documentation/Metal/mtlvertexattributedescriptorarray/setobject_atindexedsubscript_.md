@@ -20,7 +20,7 @@ Sets state for the specified vertex attribute.
 - (void) setObject:(MTLVertexAttributeDescriptor *) attributeDesc atIndexedSubscript:(NSUInteger) index;
 ```
 
-#### Discussion
+## Discussion
 
 If this method is called with `nil` for `attributeDesc` for any legal `index`, its vertex attribute state is set to the default values.
 

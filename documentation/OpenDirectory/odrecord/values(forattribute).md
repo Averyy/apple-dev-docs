@@ -20,11 +20,11 @@ func values(forAttribute inAttribute: String!) throws -> [Any]
 - (NSArray *) valuesForAttribute:(ODAttributeType) inAttribute error:(NSError **) outError;
 ```
 
-#### Return Value
+## Return Value
 
 An array of attribute values. Elements are of type `NSString` or `NSData`.
 
-#### Discussion
+## Discussion
 
 > **Handling Errors in Swift**:  In Swift, this method returns a nonoptional result and is marked with the `throws` keyword to indicate that it throws an error in cases of failure.
 >

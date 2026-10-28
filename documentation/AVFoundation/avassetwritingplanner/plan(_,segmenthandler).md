@@ -20,7 +20,7 @@ Adds a track plan with manual segment completion control.
 func plan(_ trackPlan: AVAssetTrackPlan, segmentHandler: @escaping @Sendable (AVPlannedSegmentWritingRequest) async throws -> AVAssetWritingPlanner.SegmentResult)
 ```
 
-#### Discussion
+## Discussion
 
 This variant provides fine-grained control over segment completion, allowing you to return a [`AVAssetWritingPlanner.SegmentResult`](./segmentresult.md) that explicitly controls how the segment completes.
 

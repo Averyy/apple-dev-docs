@@ -23,7 +23,7 @@ func setItems(_ items: [UITabBarItem]?, animated: Bool)
 - (void) setItems:(NSArray<UITabBarItem *> *) items animated:(BOOL) animated;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to make changes to the currently visible items at runtime. Calling this method on a tab bar that is managed by a [`UITabBarController`](../uitabbarcontroller.md) object raises an exception. When the tab bar is owned by a tab bar controller, use the tab bar controller’s methods to make changes to items.
 

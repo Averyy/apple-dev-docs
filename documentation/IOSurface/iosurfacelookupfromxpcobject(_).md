@@ -20,7 +20,7 @@ func IOSurfaceLookupFromXPCObject(_ xobj: xpc_object_t) -> IOSurfaceRef?
 IOSurfaceRefIOSurfaceLookupFromXPCObject(xpc_object_t xobj);
 ```
 
-#### Discussion
+## Discussion
 
 This call takes an XPC object created via IOSurfaceCreateXPCObject() and recreates an IOSurfaceRef from it. Note: This call does NOT destroy the port.
 

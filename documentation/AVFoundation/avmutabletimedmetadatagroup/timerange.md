@@ -25,7 +25,7 @@ var timeRange: CMTimeRange { get set }
 @property (nonatomic, readwrite) CMTimeRange timeRange;
 ```
 
-#### Discussion
+## Discussion
 
 ## See Also
 

@@ -15,7 +15,7 @@ An annotation type that defines a rectangle around an object within an image.
 case boundingBox(units: MLBoundingBoxUnits = .pixel, origin: MLBoundingBoxCoordinatesOrigin = .topLeft, anchor: MLBoundingBoxAnchor = .center)
 ```
 
-#### Discussion
+## Discussion
 
 To use bounding box annotations, you must tell Create ML how to interpret your annotations.
 
@@ -23,7 +23,7 @@ To use bounding box annotations, you must tell Create ML how to interpret your a
 - Use [`MLBoundingBoxAnchor`](../../mlboundingboxanchor.md) to specify the location in the bounding box its coordinates refer to.
 - Use [`MLBoundingBoxCoordinatesOrigin`](../../mlboundingboxcoordinatesorigin.md) to specify the part of the image the annotations use as their origin.
 
-#### Formatting a Bounding Box JSON Annotation File
+## Formatting a Bounding Box JSON Annotation File
 
 The base of the JSON file must contain an array of the following JSON object structure.
 

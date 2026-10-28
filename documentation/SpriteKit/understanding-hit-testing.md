@@ -5,7 +5,7 @@
 
 Learn how find child nodes at a given point by using hit-testing.
 
-#### Overview
+## Overview
 
 When SpriteKit processes touch or mouse events, it walks the scene to find the closest node that will accept the event. If the first node tested won’t accept the event, SpriteKit checks the next closest node, and so on. This process is called *hit-testing*, and the order in which it’s processed is essentially the reverse of drawing order.
 

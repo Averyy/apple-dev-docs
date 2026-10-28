@@ -27,11 +27,11 @@ func CTFontManagerRegisterGraphicsFont(_ font: CGFont, _ error: UnsafeMutablePoi
 extern bool CTFontManagerRegisterGraphicsFont(CGFontRef font, CFErrorRef*error);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if registration of the font was successful, otherwise `false`.
 
-#### Discussion
+## Discussion
 
 Registered fonts are discoverable through font descriptor matching. Any attempt to register a font that is either already registered or contains the same Postscript of an already registered font will fail. This behavior is useful for fonts that may be embedded in documents or constructed in memory. A graphics font is obtained by calling [`init(_:)`](../CoreGraphics/cgfont/init%28_%29-9aour.md). Fonts that are backed by files should be registered using [`CTFontManagerRegisterFontsForURL(_:_:_:)`](./ctfontmanagerregisterfontsforurl%28_,_,_%29.md).
 

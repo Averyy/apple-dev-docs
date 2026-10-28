@@ -26,7 +26,7 @@ func writeNDEF(_ ndefMessage: NFCNDEFMessage) async throws
 - (void) writeNDEF:(NFCNDEFMessage *) ndefMessage completionHandler:(void (^)(NSError *)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 To determine whether the tag is writable, call [`queryNDEFStatus(completionHandler:)`](./queryndefstatus%28completionhandler%29.md) and check that the `status` is [`NFCNDEFStatus.readWrite`](../nfcndefstatus/readwrite.md).
 

@@ -14,7 +14,7 @@ Identify the most visually pleasing frames in a video by using the image-aesthet
 - visionOS 2.0+
 - Xcode 16.0+
 
-#### Overview
+## Overview
 
 Using the [Vision](./Vision.md) framework, you can process images and videos frame by frame, enabling image-analysis requests through [`VisionRequest`](./visionrequest.md). The sample demonstrates how to process video input to identify the three frames with the highest aesthetic scores. By leveraging this capability, you can automatically select the best frames for creating promotional materials or for highlighting short films. The following image shows a preview of the sample:
 
@@ -22,7 +22,7 @@ Using the [Vision](./Vision.md) framework, you can process images and videos fra
 
 The sample uses a [`VideoProcessor`](./videoprocessor.md) to convert the video into a stream of frames, which [`CalculateImageAestheticsScoresRequest`](./calculateimageaestheticsscoresrequest.md) analyzes to rate each frame with an overall aesthetic score. To avoid selecting similar thumbnails, the [`GenerateImageFeaturePrintRequest`](./generateimagefeatureprintrequest.md) compares the image similarity. Finally, [AVFoundation](../AVFoundation/AVFoundation.md) extracts the images from the selected frames and presents them as thumbnails.
 
-##### Set up the representation of frames and thumbnails
+### Set up the representation of frames and thumbnails
 
 The `Frame` structure contains the information about a specific frame in the video that the sample uses to determine the best frame to use as a thumbnail. It accepts a `CMTime` to represent the timestamp of the frame, a `Float` value for the overall score of the frame, and a [`FeaturePrintObservation`](./featureprintobservation.md) to enable comparison to other frames:
 
@@ -53,7 +53,7 @@ class Thumbnail: Identifiable {
 }
 ```
 
-##### Process the video
+### Process the video
 
 The sample processes videos frame by frame using the [`VideoProcessor`](./videoprocessor.md). The sample first initializes the video processor with the video URL, then create the instances of the requests the sample uses to process the video:
 
@@ -114,7 +114,7 @@ do {
 
 When the sample receives the results for both requests, call `calculateTopFrames(aestheticsResults:featurePrintResults:)` to solve for the top-rated frames.
 
-##### Solve for the top-rated frames
+### Solve for the top-rated frames
 
 The function uses `aestheticsResults` and `featurePrintResults` to identify three frames that have the highest aesthetic scores and are different from each other:
 

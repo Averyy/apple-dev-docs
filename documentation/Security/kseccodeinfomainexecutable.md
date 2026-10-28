@@ -20,7 +20,7 @@ let kSecCodeInfoMainExecutable: CFString
 extern CFStringRef const kSecCodeInfoMainExecutable;
 ```
 
-#### Discussion
+## Discussion
 
 The value is a [`CFURL`](../CoreFoundation/cfurl.md) object. For single files, the URL locates the file itself. For bundles, it locates the main executable as identified by the bundle’s `Info.plist` file.
 

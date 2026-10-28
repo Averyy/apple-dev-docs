@@ -22,7 +22,7 @@ nonisolated
 func chartXAxisStyle<Content>(@ViewBuilder content: @escaping (ChartAxisContent) -> Content) -> some View where Content : View
 ```
 
-#### Discussion
+## Discussion
 
 Use this modifier to configure the size or aspect ratio of the plot area of charts.
 

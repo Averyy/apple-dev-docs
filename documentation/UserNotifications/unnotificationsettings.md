@@ -29,7 +29,7 @@ class UNNotificationSettings
 
 - [Asking permission to use notifications](./asking-permission-to-use-notifications.md)
 
-#### Overview
+## Overview
 
 A [`UNNotificationSettings`](./unnotificationsettings.md) object contains the current authorization status and notification-related settings for your app. Apps must receive authorization to schedule notifications and to interact with the user. Apps that run in CarPlay must similarly receive authorization to do so. Use this object to determine what notification-related actions your app can perform. You might then use that information to enable, disable, or adjust your app’s notification-related behaviors. Regardless of whether you take action, the system enforces your app’s settings by preventing denied interactions from occurring.
 

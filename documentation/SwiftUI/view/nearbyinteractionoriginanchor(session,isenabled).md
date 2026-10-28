@@ -17,7 +17,7 @@ nonisolated
 func nearbyInteractionOriginAnchor(session: NISession, isEnabled: Bool = true) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 ```swift
 @State private var session = NISession()

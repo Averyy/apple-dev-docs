@@ -19,7 +19,7 @@ var contentView: NSView? { get set }
 @property (strong, nullable) NSView * contentView;
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**: `NSGlassEffectView` only guarantees the `contentView` will be placed inside the glass effect; arbitrary subviews aren’t guaranteed specific behavior with regard to z-order in relation to the content view or glass effect.
 

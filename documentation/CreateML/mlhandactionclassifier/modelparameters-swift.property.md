@@ -19,11 +19,11 @@ The hand action model’s configuration parameters.
 let modelParameters: MLHandActionClassifier.ModelParameters
 ```
 
-#### Discussion
+## Discussion
 
 The property reflects the model parameters you provide to one of these methods that train a hand action classifier:
 
-#### ``doc://com.apple.createml/documentation/CreateML/MLHandActionClassifier/train(trainingData:parameters:sessionParameters:)``
+## ``doc://com.apple.createml/documentation/CreateML/MLHandActionClassifier/train(trainingData:parameters:sessionParameters:)``
 
 [`makeTrainingSession(trainingData:parameters:sessionParameters:)`](./maketrainingsession%28trainingdata,parameters,sessionparameters%29.md)
 

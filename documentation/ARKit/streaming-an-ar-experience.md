@@ -11,7 +11,7 @@ Control an AR experience remotely by transferring sensor and user input over the
 - iPadOS 13.0+
 - Xcode 16.0+
 
-#### Overview
+## Overview
 
 The sample app, AR Stream, shares the augmented camera feed with a peer device, and enables it to take control by interacting with the remote AR experience. For example, a user shares their screen depicting their physical environment with a computer technician who assists the user with troubleshooting a hardware issue. As the user views a broken device resting on a table from different angles, the remote technician interacts with the experience by augmenting the user’s camera feed with textual annotations that describe the necessary steps to repair the device.
 
@@ -21,7 +21,7 @@ To enable the remote user to see the user’s physical environment, AR Stream sh
 
 AR Stream also sends mathematical details about the user’s real-world pose to the remote user to process the peer’s touch input. The sample app sends the session’s inverse view and inverse projection matrices to the remote device so it can calculate a location in the user’s environment where the remote user taps. To indicate when the remote user taps the screen, AR Stream places a helpful virtual indicator at the tap location.
 
-#### Display a camera feed and monitor the session
+## Display a camera feed and monitor the session
 
 AR Stream displays the device’s camera feed by configuring a window with a view controller that displays an [`ARView`](../RealityKit/arview.md) (see the sample project’s `Main.storyboard` file). By default,[`ARView`](../RealityKit/arview.md) runs a session with a world-tracking configuration [`ARWorldTrackingConfiguration`](./arworldtrackingconfiguration.md). To receive notifications of the view’s session events, the project’s view controller (see `ViewController` in the sample project) assigns itself as the session delegate.
 
@@ -29,7 +29,7 @@ AR Stream displays the device’s camera feed by configuring a window with a vie
 arView.session.delegate = self
 ```
 
-#### Capture frames
+## Capture frames
 
 To show the user’s physical environment to the remote user, AR Stream uses ReplayKit to open a screen-recording session with [`RPScreenRecorder`](../ReplayKit/rpscreenrecorder.md).
 
@@ -47,7 +47,7 @@ if type == .video {
 
 > **Note**: Although [`ARView`](../RealityKit/arview.md) provides a  [`snapshot(saveToHDR:completion:)`](../RealityKit/arview/snapshot%28savetohdr,completion%29-66jzu.md) function to capture the contents of the view, ReplayKit’s screen recording is more conducive to real-time capture.
 
-#### Compress and send frames to the peer
+## Compress and send frames to the peer
 
 The sample project’s `VideoProcessor` class implements the `compressAndSend` function, which uses [`VTCompressionSession`](../VideoToolbox/vtcompressionsession.md) to compress the captured video frames.
 
@@ -92,7 +92,7 @@ The screen-recording closure defines the send handler to contain code that uses 
 multipeerSession.sendToAllPeers(data, reliably: true)
 ```
 
-#### Receive and decompress peer frames
+## Receive and decompress peer frames
 
 When the app receives `VideoFrameData` from another device, it decodes the JSON data.
 
@@ -133,7 +133,7 @@ overlayViewController?.renderer.enqueueFrame(
     inverseViewMatrix: videoFrameData.inverseViewMatrix)
 ```
 
-#### Display the remote user’s camera feed
+## Display the remote user’s camera feed
 
 AR Stream defines an [`MTKView`](../MetalKit/mtkview.md) subclass, `OverlayViewController`, that displays the remote user’s camera feed on top of the [`ARView`](../RealityKit/arview.md) by placing a *picture-in-picture* (PiP) view at the bottom left of the screen.
 
@@ -154,7 +154,7 @@ overlayWindow.makeKeyAndVisible()
 overlayWindow.windowLevel = window.windowLevel + 1
 ```
 
-#### Send gestures to the peer
+## Send gestures to the peer
 
 When the remote user taps the PiP view, the project responds by recording the tap location.
 
@@ -190,7 +190,7 @@ let data = try JSONEncoder().encode(rayQuery)
 multipeerSession?.sendToAllPeers(data, reliably: true)
 ```
 
-#### Handle peer gestures
+## Handle peer gestures
 
 In the project’s `ViewController`, the `receivedData` function receives a `Ray` object when the remote user taps the PiP view.
 
@@ -217,7 +217,7 @@ if let result = raycastResults.first {
     marker.transform.matrix = result.worldTransform
 ```
 
-#### Display virtual content
+## Display virtual content
 
 To enable the remote user to interact with the user’s AR experience, the app places a virtual ball at the location in the environment where the remote user taps.
 

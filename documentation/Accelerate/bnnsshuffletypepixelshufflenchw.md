@@ -25,7 +25,7 @@ var BNNSShuffleTypePixelShuffleNCHW: BNNSShuffleType { get }
 BNNSShuffleTypePixelShuffleNCHW
 ```
 
-#### Discussion
+## Discussion
 
 Use this shuffle type to rearrange the elements in a tensor of shape `(N,C×rxr,H,W)` to a tensor of shape `(N,C,H×r,W×r)`, where `r` is an upscale factor.
 

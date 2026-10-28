@@ -16,7 +16,7 @@ A view that gathers the attachment content for your current reality view.
 @preconcurrency struct RealityViewAttachmentBuilderContent<Attachment, Content> where Attachment : AttachmentContent, Content : View
 ```
 
-#### Overview
+## Overview
 
 A [`RealityView`](./realityview.md) creates this for you.
 

@@ -13,11 +13,11 @@ Add advanced multitasking capabilities to your video apps by using Picture in Pi
 - tvOS 14.0+
 - Xcode 12.5+
 
-#### Overview
+## Overview
 
 > **Note**: This sample code project is associated with WWDC20 session [10176: Master Picture in Picture on tvOS](https://developer.apple.com/videos/play/wwdc2020/10176/).
 
-##### Requirements
+### Requirements
 
 This sample code project must be run on a physical device.
 

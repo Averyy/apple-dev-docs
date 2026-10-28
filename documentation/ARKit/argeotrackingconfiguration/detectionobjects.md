@@ -20,7 +20,7 @@ var detectionObjects: Set<ARReferenceObject> { get set }
 @property (nonatomic, copy) NSSet<ARReferenceObject *> * detectionObjects;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to choose known 3D objects for ARKit to find in the user’s environment and present as [`ARObjectAnchor`](../arobjectanchor.md) for use in your AR experience.
 

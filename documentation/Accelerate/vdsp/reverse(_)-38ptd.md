@@ -21,7 +21,7 @@ Reverses a vector of single-precision values in-place.
 static func reverse<V>(_ vector: inout V) where V : AccelerateMutableBuffer, V.Element == Float
 ```
 
-#### Discussion
+## Discussion
 
 The single- and double-precision [`reverse(_:)`](./reverse%28_%29-3aq38.md) functions reverse the elements of an array.
 

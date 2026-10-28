@@ -22,7 +22,7 @@ var activityImage: UIImage? { get }
 @property (nonatomic, readonly, nullable) UIImage * activityImage;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `nil`. Subclasses must override this property to return a valid image object that can be presented to the user. The [`UIActivityViewController`](../uiactivityviewcontroller.md) object uses this image to generate a button for your service in its UI.
 

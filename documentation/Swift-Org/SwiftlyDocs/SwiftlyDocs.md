@@ -10,7 +10,7 @@ framework: "Swift-Org/SwiftlyDocs"
 
 Install and manage your Swift programming language toolchains.
 
-#### Overview
+## Overview
 
 Swiftly helps you to easily install different Swift toolchains locally on your account. It provides a single path to install, update, remove, or run commands with a specific Swift toolchain.
 

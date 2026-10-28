@@ -24,11 +24,11 @@ func vertex(at index: Int) -> vector_float2
 - (vector_float2) vertexAtIndex:(NSUInteger) index;
 ```
 
-#### Return Value
+## Return Value
 
 The point coordinates of the specified vertex.
 
-#### Discussion
+## Discussion
 
 Obstacles are immutable objects; to change the shape of an obstacle, remove it and create a new obstacle with a new list of vertices. Use this method along with the [`vertexCount`](./vertexcount.md) property to inspect an existing obstacle—for example, to draw a debugging overlay representing the obstacle in your game.
 

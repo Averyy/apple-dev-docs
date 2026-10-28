@@ -23,7 +23,7 @@ optional func applicationSignificantTimeChange(_ application: UIApplication)
 - (void) applicationSignificantTimeChange:(UIApplication *) application;
 ```
 
-#### Discussion
+## Discussion
 
 Examples of significant time changes include the arrival of midnight, an update of the time by a carrier, and the change to daylight savings time. The delegate can implement this method to adjust any object of the app that displays time or is sensitive to time changes.
 

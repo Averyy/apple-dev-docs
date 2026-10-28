@@ -25,7 +25,7 @@ attribute function onreadystatechange;
 attribute EventHandler onreadystatechange;
 ```
 
-#### Discussion
+## Discussion
 
 Do not use this attribute in conjunction with synchronous requests. This attribute must be set to a function; for example, `XMLHttpRequest.onreadystatechange = function () {}`.
 

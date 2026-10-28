@@ -29,7 +29,7 @@ func dispatchThreadgroups(_ threadgroupsPerGrid: MTLSize, threadsPerThreadgroup:
 
 - [Calculating threadgroup and grid sizes](../calculating-threadgroup-and-grid-sizes.md)
 
-#### Discussion
+## Discussion
 
 > 💡 **Tip**:  Prefer using dispatchThreads for your kernel calls on `Apple4` and later Apple GPUs. See [Metal Feature Set Tables (PDF)](https://developer.apple.com/metal/Metal-Feature-Set-Tables.pdf) for information on hardware support.
 

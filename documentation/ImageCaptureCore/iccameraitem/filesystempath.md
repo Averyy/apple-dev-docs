@@ -19,7 +19,7 @@ var fileSystemPath: String? { get }
 @property (nonatomic, readonly, nullable) NSString * fileSystemPath;
 ```
 
-#### Discussion
+## Discussion
 
 This property is set for cameras whose [`transportType`](../icdevice/transporttype.md) is [`transportTypeMassStorage`](../icdevicetransport/transporttypemassstorage.md).
 

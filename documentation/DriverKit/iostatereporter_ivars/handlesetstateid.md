@@ -16,11 +16,11 @@
 virtual IOReturn handleSetStateID(uint64_t channel_id, int state_index, uint64_t state_id);
 ```
 
-#### Return Value
+## Return Value
 
 Appropriate IOReturn code
 
-#### Discussion
+## Discussion
 
 Assign a non-default ID to a state
 

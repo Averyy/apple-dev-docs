@@ -13,7 +13,7 @@
 var kCUPSPPDDomain: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 Specifies the CUPS domain.
 

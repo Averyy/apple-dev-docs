@@ -25,7 +25,7 @@ func object(forKey aKey: String) -> Any?
 - (id) objectForKey:(NSString *) aKey;
 ```
 
-#### Return Value
+## Return Value
 
 The object associated with `aKey`, or `nil` if the key isn’t present.
 

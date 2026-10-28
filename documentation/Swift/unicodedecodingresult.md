@@ -22,7 +22,7 @@ The result of one Unicode decoding step.
 enum UnicodeDecodingResult
 ```
 
-#### Overview
+## Overview
 
 Each `UnicodeDecodingResult` instance can represent a Unicode scalar value, an indication that no more Unicode scalars are available, or an indication of a decoding error.
 

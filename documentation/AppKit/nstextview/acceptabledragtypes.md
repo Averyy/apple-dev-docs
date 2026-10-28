@@ -19,7 +19,7 @@ var acceptableDragTypes: [NSPasteboard.PasteboardType] { get }
 @property (copy, readonly) NSArray<NSString *> * acceptableDragTypes;
 ```
 
-#### Discussion
+## Discussion
 
 These types are automatically registered as necessary by the text view. Subclasses should override this value as necessary to add their own types to those returned by `NSTextView`‘s implementation. They must then also override the appropriate methods of the [`NSDraggingDestination`](../nsdraggingdestination.md) protocol to support import of those types. See that protocol’s specification for more information.
 

@@ -24,7 +24,7 @@ func bitwiseAnd(_ operand: Int, ordering: AtomicUpdateOrdering) -> (oldValue: In
 
 Available when `Value` is `Int`.
 
-#### Return Value
+## Return Value
 
 A tuple containing the original value before the operation and the new value after the operation.
 

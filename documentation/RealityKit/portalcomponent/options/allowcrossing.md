@@ -20,7 +20,7 @@ An option that enables the crossing feature.
 static let allowCrossing: PortalComponent.Options
 ```
 
-#### Discussion
+## Discussion
 
 Objects within the portal world with a [`PortalCrossingComponent`](../../portalcrossingcomponent.md) can cross the portal when the `allowCrossing` option is in an enabled state. Crossing behavior is based on the user-defined geometry for [`crossingMode`](../crossingmode-swift.property.md).
 

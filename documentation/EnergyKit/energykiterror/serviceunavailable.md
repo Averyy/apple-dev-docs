@@ -17,7 +17,7 @@ An error that indicates when a requested service fails to start.
 case serviceUnavailable
 ```
 
-#### Discussion
+## Discussion
 
 This error can occur when the service connection fails.
 

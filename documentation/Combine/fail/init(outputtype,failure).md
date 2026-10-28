@@ -21,7 +21,7 @@ Creates publisher with the given output type, that immediately terminates with t
 init(outputType: Output.Type, failure: Failure)
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer to create a `Fail` publisher that can work with subscribers or publishers that expect a given output type.
 

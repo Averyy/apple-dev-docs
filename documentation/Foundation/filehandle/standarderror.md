@@ -25,11 +25,11 @@ class var standardError: FileHandle { get }
 @property (class, strong, readonly) NSFileHandle * fileHandleWithStandardError;
 ```
 
-#### Return Value
+## Return Value
 
 The shared file handle associated with the standard error file.
 
-#### Discussion
+## Discussion
 
 Conventionally this is a terminal device where the system sends error messages. There’s one standard error file handle per process; it’s a shared instance.
 

@@ -32,7 +32,7 @@ class CLGeocoder
 - [Converting between coordinates and user-friendly place names](./converting-between-coordinates-and-user-friendly-place-names.md)
 - [Converting a user’s location to a descriptive placemark](./converting-a-user-s-location-to-a-descriptive-placemark.md)
 
-#### Overview
+## Overview
 
 The [`CLGeocoder`](./clgeocoder.md) class provides services for converting between a coordinate (specified as a latitude and longitude) and the user-friendly representation of that coordinate. A user-friendly representation of the coordinate typically consists of the street, city, state, and country or region information corresponding to the given location, but it may also contain a relevant point of interest, landmarks, or other identifying information. A geocoder object is a single-shot object that works with a network-based service to look up placemark information for its specified coordinate value.
 
@@ -40,7 +40,7 @@ To use a geocoder object, you create it and call one of its forward- or reverse-
 
 To make smart decisions about what types of information to return, the geocoder server uses all the information provided to it when processing the request. For example, if the user is moving quickly along a highway, it might return the name of the overall region, and not the name of a small park that the user is passing through.
 
-##### Tips for Using a Geocoder Object
+### Tips for Using a Geocoder Object
 
 Apps must be conscious of how they use geocoding. Geocoding requests are rate-limited for each app, so making too many requests in a short period of time may cause some of the requests to fail. (When the maximum rate is exceeded, the geocoder returns an error object with the [`CLError.Code.network`](./clerror-swift.struct/code/network.md) error to the associated completion handler.) Here are some rules of thumb for using this class effectively:
 

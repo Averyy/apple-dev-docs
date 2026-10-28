@@ -19,7 +19,7 @@ var isLoaded: Bool { get }
 @property (readonly, getter=isLoaded) BOOL loaded;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), column 0 is loaded.
 

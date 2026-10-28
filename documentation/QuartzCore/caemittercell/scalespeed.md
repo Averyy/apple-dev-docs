@@ -24,7 +24,7 @@ var scaleSpeed: CGFloat { get set }
 @property CGFloat scaleSpeed;
 ```
 
-#### Discussion
+## Discussion
 
 The speed change is defined as the rate of change per second.
 

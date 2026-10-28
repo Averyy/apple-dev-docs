@@ -21,7 +21,7 @@ case invalidARConfiguration
 NIErrorCodeInvalidARConfiguration
 ```
 
-#### Discussion
+## Discussion
 
 The framework invalidates a Nearby Interaction session when the app requests Camera Assistance ([`isCameraAssistanceEnabled`](../../ninearbypeerconfiguration/iscameraassistanceenabled.md)) and either of the following are true:
 

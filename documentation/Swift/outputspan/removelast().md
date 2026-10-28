@@ -21,11 +21,11 @@ Remove the last initialized element from this span.
 mutating func removeLast() -> Element
 ```
 
-#### Return Value
+## Return Value
 
 The removed element.
 
-#### Discussion
+## Discussion
 
 Returns the last element. The `OutputSpan` must not be empty.
 

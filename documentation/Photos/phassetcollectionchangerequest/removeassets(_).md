@@ -24,7 +24,7 @@ func removeAssets(_ assets: any NSFastEnumeration)
 - (void) removeAssets:(id<NSFastEnumeration>) assets;
 ```
 
-#### Discussion
+## Discussion
 
 This method removes assets from the collection based on their identity (determined by the [`localIdentifier`](../phobject/localidentifier.md) property of each asset). To remove objects at specified indexes, use the [`removeAssets(at:)`](./removeassets%28at%29.md) method.
 

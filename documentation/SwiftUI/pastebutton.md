@@ -20,7 +20,7 @@ nonisolated
 struct PasteButton
 ```
 
-#### Overview
+## Overview
 
 Use a paste button when you want to provide a button for pasting items from the system pasteboard into your app. The system provides a button appearance and label appropriate to the current environment. However, you can use view modifiers like [`buttonBorderShape(_:)`](./view/buttonbordershape%28_%29.md), [`labelStyle(_:)`](./view/labelstyle%28_%29.md), and [`tint(_:)`](./view/tint%28_%29.md) to customize the button in some contexts.
 

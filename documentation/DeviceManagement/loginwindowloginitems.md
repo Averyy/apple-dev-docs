@@ -15,11 +15,11 @@ The payload that configures login behavior.
 object LoginWindowLoginItems
 ```
 
-#### Discussion
+## Discussion
 
 Specify `loginwindow` as the payload type.
 
-##### Profile availability
+### Profile availability
 
 |  |  |
 | --- | --- |
@@ -31,7 +31,7 @@ Specify `loginwindow` as the payload type.
 | Allowed in user enrollment | N/A |
 | Allow multiple payloads | N/A |
 
-##### Profile example
+### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>

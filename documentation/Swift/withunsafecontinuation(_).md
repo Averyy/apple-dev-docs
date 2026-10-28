@@ -18,15 +18,15 @@ Invokes the passed in closure with a unsafe continuation for the current task.
 ## Declaration
 
 ```swift
-nonisolated
-(nonsending) func withUnsafeContinuation<T>(_ fn: (UnsafeContinuation<T, Never>) -> Void) async -> sending T
+nonisolated(nonsending)
+func withUnsafeContinuation<T>(_ fn: (UnsafeContinuation<T, Never>) -> Void) async -> sending T
 ```
 
-#### Return Value
+## Return Value
 
 The value continuation is resumed with.
 
-#### Discussion
+## Discussion
 
 The body of the closure executes synchronously on the calling task, and once it returns the calling task is suspended. It is possible to immediately resume the task, or escape the continuation in order to complete it afterwards, which will then resume the suspended task.
 

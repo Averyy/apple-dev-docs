@@ -25,7 +25,7 @@ typealias CMSampleBufferMakeDataReadyCallback = (CMSampleBuffer, UnsafeMutableRa
 typedef int (*)(struct opaqueCMSampleBuffer *, void *) CMSampleBufferMakeDataReadyCallback;
 ```
 
-#### Discussion
+## Discussion
 
 This callback must make the data ready (e.g. force a scheduled read to finish). If this callback succeeds and returns 0, the sample buffer will then be marked as “data ready”.
 

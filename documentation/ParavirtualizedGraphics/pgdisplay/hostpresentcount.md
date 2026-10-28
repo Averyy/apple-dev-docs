@@ -21,7 +21,7 @@ var hostPresentCount: Int { get }
 @property (nonatomic, readonly) NSUInteger hostPresentCount;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property can be smaller than the number of times you’ve called the [`encodeCurrentFrame(to:texture:region:)`](./encodecurrentframe%28to,texture,region%29.md) method if you encode the same frame multiple times.
 

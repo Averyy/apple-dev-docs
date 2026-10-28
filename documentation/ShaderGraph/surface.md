@@ -6,7 +6,7 @@
 
 Generate a MaterialX preview surface.
 
-#### Overview
+## Overview
 
 Every new material you create includes a preview surface that displays your material as you build it. Create additional surfaces to see alternate previews within the same graph.
 

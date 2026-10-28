@@ -6,7 +6,7 @@
 
 Perform a wide variety of mathematical and transformative operations on data values.
 
-#### Overview
+## Overview
 
 Include `Math` nodes in your graph to perform typical mathematical operations on data values. A wide range of nodes are available, supporting basic arithmetic, trigonometry, logs, exponents, dot and cross products, and more. Some nodes operate on specific data types of values, but most operate on a wide range of data types, including numbers, colors, and vectors.
 

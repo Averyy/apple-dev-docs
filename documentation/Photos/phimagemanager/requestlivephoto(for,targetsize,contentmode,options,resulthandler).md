@@ -24,11 +24,11 @@ func requestLivePhoto(for asset: PHAsset, targetSize: CGSize, contentMode: PHIma
 - (PHImageRequestID) requestLivePhotoForAsset:(PHAsset *) asset targetSize:(CGSize) targetSize contentMode:(PHImageContentMode) contentMode options:(PHLivePhotoRequestOptions *) options resultHandler:(void (^)(PHLivePhoto *livePhoto, NSDictionary *info)) resultHandler;
 ```
 
-#### Return Value
+## Return Value
 
 A numeric identifier for the request. If you need to cancel the request before it completes, pass this identifier to the [`cancelImageRequest(_:)`](./cancelimagerequest%28_%29.md) method.
 
-#### Discussion
+## Discussion
 
 A Live Photo is a picture, taken with a supported device, that includes movement and sound from the moments just before and after its capture. Much like how a [`UIImage`](../../UIKit/uiimage.md) object represents a ready-to-use form of an image, a [`PHLivePhoto`](../phlivephoto.md) object represents a Live Photo whose image, motion, and sound data are prepared for display. Use this method to request an asset’s Live Photo form; after Photos calls your `resultHandler` block to provide the Live Photo, you can display it using the [`PHLivePhotoView`](../../PhotosUI/phlivephotoview.md) class.
 

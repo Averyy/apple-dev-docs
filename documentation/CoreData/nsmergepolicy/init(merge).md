@@ -25,11 +25,11 @@ init(merge ty: NSMergePolicyType)
 - (id) initWithMergeType:(NSMergePolicyType) ty;
 ```
 
-#### Return Value
+## Return Value
 
 A merge policy initialized with a given policy type.
 
-#### Discussion
+## Discussion
 
 If you override this method in a subclass, you should invoke the superclass’s implementation with the merge policy that is closest to the behavior you want.
 

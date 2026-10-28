@@ -25,7 +25,7 @@ func CFMessagePortIsValid(_ ms: CFMessagePort!) -> Bool
 extern Boolean CFMessagePortIsValid(CFMessagePortRef ms);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if `ms` can be used for communication, otherwise `false`.
 

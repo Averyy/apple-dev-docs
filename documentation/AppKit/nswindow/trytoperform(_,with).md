@@ -19,11 +19,11 @@ func tryToPerform(_ action: Selector, with object: Any?) -> Bool
 - (BOOL) tryToPerform:(SEL) action with:(id) object;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) when the window or its delegate perform `action` with `object`; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 The window tries to perform the method `action` using its inherited `NSResponder` method [`tryToPerform(_:with:)`](../nsresponder/trytoperform%28_,with%29.md). If the window doesn’t perform `action`, the delegate is given the opportunity to perform it using its inherited `NSObject` method [`perform(_:with:)`](../../ObjectiveC/nsobjectprotocol/perform%28_,with%29.md).
 

@@ -25,7 +25,7 @@ struct vImageTransferFunction
 typedef struct vImageTransferFunction { ... } vImageTransferFunction;
 ```
 
-#### Overview
+## Overview
 
 The transfer function here is in the style of ITU-R BT.709, and is the inverse operation of what appears in an ICC color profile. For example, the following code defines the transfer function for ITU-R BT.709-5:
 

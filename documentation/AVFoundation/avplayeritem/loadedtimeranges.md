@@ -26,7 +26,7 @@ var loadedTimeRanges: [NSValue] { get }
 @property (readonly) NSArray<NSValue *> * loadedTimeRanges;
 ```
 
-#### Discussion
+## Discussion
 
 The array contains [`NSValue`](../../Foundation/nsvalue.md) objects containing a [`CMTimeRange`](../../CoreMedia/cmtimerange.md) value indicating the times ranges for which the player item has media data readily available. The time ranges returned may be discontinuous.
 

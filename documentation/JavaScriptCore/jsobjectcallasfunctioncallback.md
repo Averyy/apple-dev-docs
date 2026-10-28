@@ -24,11 +24,11 @@ typealias JSObjectCallAsFunctionCallback = (JSContextRef?, JSObjectRef?, JSObjec
 typedef const struct OpaqueJSValue *(*)(const struct OpaqueJSContext *, struct OpaqueJSValue *, struct OpaqueJSValue *, unsigned long, const struct OpaqueJSValue *const *, const struct OpaqueJSValue **) JSObjectCallAsFunctionCallback;
 ```
 
-#### Return Value
+## Return Value
 
 A [`JSValueRef`](./jsvalueref.md) that is the function’s return value.
 
-#### Discussion
+## Discussion
 
 If you name your function `CallAsFunction`, you declare it like this:
 

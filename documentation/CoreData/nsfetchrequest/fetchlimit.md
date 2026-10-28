@@ -25,7 +25,7 @@ var fetchLimit: Int { get set }
 @property (nonatomic) NSUInteger fetchLimit;
 ```
 
-#### Discussion
+## Discussion
 
 The fetch limit specifies the maximum number of objects that a request should return when executed.
 

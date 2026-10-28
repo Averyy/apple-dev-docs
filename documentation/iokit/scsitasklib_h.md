@@ -5,9 +5,9 @@
 
 SCSITaskLib implements non-kernel task access to specific IOKit object types, namely any SCSI Peripheral Device for which there isn't an in-kernel driver and for authoring devices such as CD-R/W and DVD-R/W drives.
 
-#### Overview
+## Overview
 
-##### Included Headers
+### Included Headers
 
 - <IOKit/scsi/SCSITask.h>
 - <IOKit/scsi/SCSICommandDefinitions.h>

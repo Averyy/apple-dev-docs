@@ -24,7 +24,7 @@ var kAudioEncoderComponentType: UInt32 { get }
 kAudioEncoderComponentType
 ```
 
-#### Discussion
+## Discussion
 
 The component subtype specifies the output format.
 

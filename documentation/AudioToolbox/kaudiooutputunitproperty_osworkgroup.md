@@ -24,7 +24,7 @@ kAudioOutputUnitProperty_OSWorkgroup
 
 - [Adding Parallel Real-Time Threads to Audio Workgroups](./adding-parallel-real-time-threads-to-audio-workgroups.md)
 
-#### Discussion
+## Discussion
 
 The value of this key is an [`os_workgroup_t`](../os/os_workgroup_t.md) object.
 

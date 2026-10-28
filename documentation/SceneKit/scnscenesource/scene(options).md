@@ -25,11 +25,11 @@ func scene(options: [SCNSceneSource.LoadingOption : Any]? = nil) throws -> SCNSc
 - (SCNScene *) sceneWithOptions:(NSDictionary<NSString *,id> *) options error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 An [`SCNScene`](../scnscene.md) object containing the entire scene graph from the scene source, or `nil` if loading was not successful.
 
-#### Discussion
+## Discussion
 
 Calling this method is equivalent to calling [`scene(options:statusHandler:)`](./scene%28options,statushandler%29.md) with a block that checks its `error` parameter to see whether the status is [`SCNSceneSourceStatus.error`](../scnscenesourcestatus/error.md). To load a scene without creating a scene source object, use the [`SCNScene`](../scnscene.md) method [`init(url:options:)`](../scnscene/init%28url,options%29-7ugvv.md).
 

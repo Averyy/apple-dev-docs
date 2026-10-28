@@ -16,7 +16,7 @@ Defines a reference to an opaque sniffer object.
 typedef struct OpaqueTECSnifferObjectRef *TECSnifferObjectRef;
 ```
 
-#### Discussion
+## Discussion
 
 When analyzing text for possible encodings, the Text Encoding Converter requires a reference to a sniffer object that specifies what types of encodings can be detected. You receive this reference when calling the function [`TECCreateSniffer`](./api-1571832-teccreatesniffer.md). A sniffer object reference is defined by the `TECSnifferObjectRef` data type. The structure of the `OpaqueTECObjectRef` data type is private, and a sniffer object is not accessible directly. 
 

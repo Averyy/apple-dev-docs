@@ -25,15 +25,15 @@ func xpc_connection_send_message_with_reply_sync(_ connection: xpc_connection_t,
 extern xpc_object_txpc_connection_send_message_with_reply_sync(xpc_connection_t connection, xpc_object_t message);
 ```
 
-#### Return Value
+## Return Value
 
 The message that the remote service sends in reply to the original message. If the remote service exits prematurely before receiving the reply, the [`XPC_ERROR_CONNECTION_INTERRUPTED`](./xpc_error_connection_interrupted-swift.var.md) error returns. If the connection becomes invalid before the remote service sends the message, the [`XPC_ERROR_CONNECTION_INVALID`](./xpc_error_connection_invalid-swift.var.md) error returns.
 
-#### Discussion
+## Discussion
 
 You are responsible for releasing the returned object.
 
-#### Discussion
+## Discussion
 
 This API supports priority inversion avoidance, so use it instead of combining [`xpc_connection_send_message_with_reply(_:_:_:_:)`](./xpc_connection_send_message_with_reply%28_,_,_,_%29.md) with a semaphore.
 

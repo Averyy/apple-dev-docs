@@ -19,7 +19,7 @@ A UICollectionReusableView subclass that represents a tip.
 @objc @preconcurrency final class TipUICollectionReusableView
 ```
 
-#### Overview
+## Overview
 
 You create a tip view by providing a tip and an optional arrow edge. The tip is a type that conforms to the [`Tip`](./tip.md) protocol. The arrow edge is a directional arrow pointing away from the tip.
 

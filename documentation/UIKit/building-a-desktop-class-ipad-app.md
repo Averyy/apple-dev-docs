@@ -5,13 +5,13 @@
 
 Optimize your iPad app’s user experience by adopting desktop-class enhancements for multitasking with Stage Manager, document interactions, text editing, search, and more.
 
-#### Overview
+## Overview
 
 People can use an iPad with a Magic Keyboard and an external display to achieve desktop-class productivity. Build your app to take advantage of features that help people increase their efficiency, customize their workflows, and complete tasks more quickly. After you create a desktop-class iPad app, bring your app directly over to the Mac with minimal additional effort using Mac Catalyst. Bring your app to Apple Vision Pro using the details in [Making your existing app compatible with visionOS](../visionOS/making-your-app-compatible-with-visionos.md).
 
 ![Image of an iPad with a Magic Keyboard connected to an external display with a cable. The built-in screen and connected screen both show the multitasking experience with Stage Manager. Several open apps appear side by side in the center of the screens, with other apps available on the left side of the screen for quick access.](https://developer.apple.com/tutorials/images/com.apple.uikit/media-4066536@2x.png)
 
-##### Enhance the multitasking experience with Stage Manager
+### Enhance the multitasking experience with Stage Manager
 
 A great iPad app supports productivity by enabling quick, complex workflows across multiple apps with Stage Manager, which people can use to quickly switch to other open apps and windows on the side of the screen. People can also dynamically resize app windows to show many open windows side by side on the iPad or on an external display.
 
@@ -25,7 +25,7 @@ Follow these steps to support a great multitasking experience with Stage Manager
 
 > **Related Sessions from WWDC22**:  Session 10068: [What’s new in UIKit](https://developer.apple.com/wwdc22/10068)
 
-##### Support powerful document-editing workflows
+### Support powerful document-editing workflows
 
 Navigation-based apps support a specialized editor style that brings important document-editing features to the forefront and supports user customization. Navigation-based apps can also use a title menu to surface document management operations, sharing capabilities, and custom actions.
 
@@ -39,7 +39,7 @@ Follow these steps to support document-editing enhancements on iPad:
 >
 > Session 110343: [SwiftUI on iPad: Add toolbars, titles, and more](https://developer.apple.com/wwdc22/110343)
 
-##### Simplify the text-editing process
+### Simplify the text-editing process
 
 When people use an iPad with an external keyboard, they expect full support for keyboard input, including familiar keyboard shortcuts and interactions. A smooth text-editing experience takes advantage of standard system capabilities, and tailors itself according to touch or keyboard input. To enable a productive text-editing experience, leverage system enhancements to text-editing menus, as well as Find and Replace.
 
@@ -50,7 +50,7 @@ Follow these steps to provide a great text-editing experience on iPad:
 
 > **Related Sessions from WWDC22**:  Session 10071: [Adopt desktop-class editing interactions](https://developer.apple.com/wwdc22/10071)
 
-##### Support inline searches with suggestions
+### Support inline searches with suggestions
 
 iPadOS includes an inline search UI that opens up more space for the surrounding content. Improve content discovery by taking advantage of search capabilities in your iPad app and providing search suggestions to help people navigate your content even quicker.
 
@@ -59,7 +59,7 @@ Follow these steps to provide a great search experience on iPad:
 - Choose the search experience that’s best for your UI. Take advantage of the inline search placement in a navigation bar to open up more space for your content. To control the search placement explicitly, set [`preferredSearchBarPlacement`](./uinavigationitem/preferredsearchbarplacement.md) to choose between the inline or traditional stacked search experience.
 - Provide helpful search suggestions. Specify [`searchSuggestions`](./uisearchcontroller/searchsuggestions.md) on your navigation item’s search controller to help people quickly narrow down their search. Update the search suggestions as people type. If you use a search field independently of a search controller, provide search suggestions using [`searchSuggestions`](./uisearchtextfield/searchsuggestions.md).
 
-##### Provide an intuitive multiple-selection experience
+### Provide an intuitive multiple-selection experience
 
 People who use iPad with a Magic Keyboard expect to use the trackpad to perform different types of selections and actions in your app. Leverage multiple selection to provide intuitive interactions and elevate the most relevant contextual actions.
 
@@ -73,7 +73,7 @@ Follow these steps to provide a great experience for multiple selection on iPad:
 >
 > Session 10058: [SwiftUI on iPad: Organize your interface](https://developer.apple.com/wwdc22/10058)
 
-##### Bring your iPad app to the Mac with Mac Catalyst
+### Bring your iPad app to the Mac with Mac Catalyst
 
 If your iPad app already supports a desktop-class experience, you can bring your app over to the Mac using Mac Catalyst. When you build your iPadOS app with Mac Catalyst, the system bridges certain interactions and UI elements to their counterparts in macOS.
 

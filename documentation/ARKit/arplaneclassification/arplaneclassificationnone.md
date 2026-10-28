@@ -16,7 +16,7 @@ No classification is available for the plane anchor.
 ARPlaneClassificationNone
 ```
 
-#### Discussion
+## Discussion
 
 When a plane anchor has no classification, the [`classificationStatus`](../arplaneanchor/classificationstatus.md) property indicates the reason: the classification process might be unavailable or incomplete, or ARKit may not have been able to conclusively identify the plane.
 

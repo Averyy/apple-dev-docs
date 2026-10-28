@@ -22,7 +22,7 @@ class UISelectionFeedbackGenerator
 @interface UISelectionFeedbackGenerator : UIFeedbackGenerator
 ```
 
-#### Overview
+## Overview
 
 Use selection feedback to communicate movement through a series of discrete values. For example, you might trigger selection feedback to indicate that a UI element’s values are changing.
 

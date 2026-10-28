@@ -19,7 +19,7 @@ var availableFunctionalUnitTypes: [NSNumber] { get }
 @property (readonly) NSArray<NSNumber *> * availableFunctionalUnitTypes;
 ```
 
-#### Discussion
+## Discussion
 
 This array contains [`NSNumber`](../../Foundation/nsnumber.md) objects whose values are of type [`ICScannerFunctionalUnitType`](../icscannerfunctionalunittype.md).
 

@@ -25,7 +25,7 @@ var kCTFontPriorityNetwork: Int { get }
 kCTFontPriorityNetwork
 ```
 
-#### Discussion
+## Discussion
 
 Network fonts are located in `/Network/Library/Fonts`.
 

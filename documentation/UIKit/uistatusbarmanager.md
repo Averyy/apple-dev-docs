@@ -23,7 +23,7 @@ class UIStatusBarManager
 @interface UIStatusBarManager : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use a [`UIStatusBarManager`](./uistatusbarmanager.md) object to get the current configuration of the status bar for its associated scene. You don’t create [`UIStatusBarManager`](./uistatusbarmanager.md) objects directly. Instead, you retrieve an existing object from the [`statusBarManager`](./uiwindowscene/statusbarmanager.md) property of a [`UIWindowScene`](./uiwindowscene.md) object.
 

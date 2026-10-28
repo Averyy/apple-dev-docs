@@ -13,11 +13,11 @@ Puts the current driver into PostScript mode, ready to accept PostScript data in
 OSStatus PMPostScriptBegin ();
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../core_printing.md#1670007).
 
-#### Overview
+## Overview
 
 Valid between calls to `PMBeginPage` and `PMEndPage`. Call `PMIsPostScriptDriver` before calling `PMPostScriptBegin` to ensure that the current driver supports PostScript data.
 

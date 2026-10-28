@@ -25,11 +25,11 @@ static func indexOfMaximum<U>(_ vector: U) -> (UInt, Float) where U : Accelerate
 
 - [Performing Fourier transforms on interleaved-complex data](../performing-fourier-transforms-on-interleaved-complex-data.md)
 
-#### Return Value
+## Return Value
 
 A tuple that contains the maximum value and corresponding index.
 
-#### Discussion
+## Discussion
 
 This function calculates the maximum value and its corresponding index of the first `N` elements of the input vector and writes the results to the output scalar parameters, `C` and `I`, respectively.
 

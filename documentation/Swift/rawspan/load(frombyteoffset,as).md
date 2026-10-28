@@ -21,11 +21,11 @@ Returns a value constructed from the raw memory at the specified offset.
 func load<T>(fromByteOffset offset: Int, as type: T.Type) -> T where T : ConvertibleFromBytes
 ```
 
-#### Return Value
+## Return Value
 
 A new value of type `T`, read from `offset`.
 
-#### Discussion
+## Discussion
 
 The range of bytes required to construct a value of type `T` starting at `offset` must be completely within the span. `offset` is not required to be aligned for `T`.
 

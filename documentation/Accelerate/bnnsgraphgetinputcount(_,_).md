@@ -25,7 +25,7 @@ func BNNSGraphGetInputCount(_ graph: bnns_graph_t, _ function: UnsafePointer<CCh
 size_t BNNSGraphGetInputCount(bnns_graph_t graph, const char *function);
 ```
 
-#### Return Value
+## Return Value
 
 The number of input arguments, or `SIZE_T_MAX` if the query fails.
 

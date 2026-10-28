@@ -24,7 +24,7 @@ var keyPath: String? { get set }
 @property (copy, nullable) NSString * keyPath;
 ```
 
-#### Discussion
+## Discussion
 
 The key path is relative to the layer the receiver is attached to.
 

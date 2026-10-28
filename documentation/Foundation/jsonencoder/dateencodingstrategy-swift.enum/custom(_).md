@@ -22,7 +22,7 @@ The strategy that formats custom dates by calling a user-defined function.
 case custom(@Sendable (Date, any Encoder) throws -> Void)
 ```
 
-#### Discussion
+## Discussion
 
 If the user-defined function throws, the error propagates upward.
 

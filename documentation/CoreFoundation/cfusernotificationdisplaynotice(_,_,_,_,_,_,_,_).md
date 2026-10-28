@@ -19,11 +19,11 @@ func CFUserNotificationDisplayNotice(_ timeout: CFTimeInterval, _ flags: CFOptio
 extern SInt32 CFUserNotificationDisplayNotice(CFTimeInterval timeout, CFOptionFlags flags, CFURLRef iconURL, CFURLRef soundURL, CFURLRef localizationURL, CFStringRef alertHeader, CFStringRef alertMessage, CFStringRef defaultButtonTitle);
 ```
 
-#### Return Value
+## Return Value
 
 `0` if the cancel was successful; a non-`0` value otherwise.
 
-#### Discussion
+## Discussion
 
 This function returns immediately. It does not wait for a user response after displaying the dialog.
 

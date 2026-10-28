@@ -10,13 +10,13 @@ framework: "swift-log/Logging"
 
 SwiftLog provides compile-time traits to eliminate less severe log levels from your binary reducing the runtime overhead.
 
-#### Overview
+## Overview
 
-##### Motivation
+### Motivation
 
 When deploying applications to production, you often know in advance which log levels will never be needed. For example, a production service might only need warning and above, while trace and debug levels are only useful during development. By using traits, you can completely remove these unnecessary log levels at compile time, achieving zero runtime overhead.
 
-##### Available traits
+### Available traits
 
 SwiftLog defines seven maximum log level traits, ordered from most permissive to most restrictive:
 
@@ -34,7 +34,7 @@ When you specify a maximum log level trait, all less severe levels are completel
 
 > **Note**: Traits should only be set by the applications and not libraries as any traits defined in a transitive dependency will affect the whole resolution tree.
 
-##### Example
+### Example
 
 To enable a trait, specify it when declaring your package dependency:
 

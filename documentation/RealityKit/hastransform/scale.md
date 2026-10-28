@@ -25,7 +25,7 @@ The scale of the entity relative to its parent.
 
 - [Automatically animating RealityKit entities](../automatically-animating-realitykit-entities.md)
 
-#### Discussion
+## Discussion
 
 This value is the entity’s scale relative to its parent. To get the actual scale of the entity in the scene, use [`scale(relativeTo:)`](./scale%28relativeto%29.md), passing `nil` as the reference entity.
 

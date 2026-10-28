@@ -25,7 +25,7 @@ case billboardYAligned
 SCNParticleOrientationModeBillboardYAligned
 ```
 
-#### Discussion
+## Discussion
 
 Use this mode to allow each particle to rotate freely about its y-axis (as determined by the [`particleAngle`](../scnparticlesystem/particleangle.md) and [`particleAngularVelocity`](../scnparticlesystem/particleangularvelocity.md) properties or the [`angle`](../scnparticlesystem/particleproperty/angle.md) key), but prevent it from rotating around any other axis.
 

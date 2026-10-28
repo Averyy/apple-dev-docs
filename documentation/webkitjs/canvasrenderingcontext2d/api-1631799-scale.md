@@ -19,7 +19,7 @@ void scale(
 );
 ```
 
-#### Discussion
+## Discussion
 
 Drawing operations can be scaled up or down by setting the scale. All drawing operation x and y coordinates, widths and heights are multiplied by the scalars. The scalars must be nonzero, but may be negative (which reverses the sign of subsequent x and y coordinates.
 

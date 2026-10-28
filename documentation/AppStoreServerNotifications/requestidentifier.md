@@ -15,7 +15,7 @@ A string that contains a unique identifier for a subscription-renewal-date exten
 uuid requestIdentifier
 ```
 
-#### Discussion
+## Discussion
 
 You originally specify the `requestIdentifier` when you call [`Extend Subscription Renewal Dates for All Active Subscribers`](../AppStoreServerAPI/extend-subscription-renewal-dates-for-all-active-subscribers.md) in the [App Store Server API](../AppStoreServerAPI/AppStoreServerAPI.md).
 

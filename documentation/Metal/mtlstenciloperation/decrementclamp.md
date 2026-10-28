@@ -24,7 +24,7 @@ case decrementClamp
 MTLStencilOperationDecrementClamp
 ```
 
-#### Discussion
+## Discussion
 
 The operation doesn’t modify a stencil value if it’s currently equal to `0`.
 

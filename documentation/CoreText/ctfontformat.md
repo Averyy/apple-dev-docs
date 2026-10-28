@@ -25,7 +25,7 @@ enum CTFontFormat
 enum CTFontFormat : uint32_t;
 ```
 
-#### Overview
+## Overview
 
 Use the values of this enumeration for [`kCTFontFormatAttribute`](./kctfontformatattribute.md).
 

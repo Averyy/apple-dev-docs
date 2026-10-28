@@ -16,11 +16,11 @@ Returns the number of drawables in the array.
 size_t cp_drawable_array_get_count(cp_drawable_array_t drawable_array);
 ```
 
-#### Return Value
+## Return Value
 
 The number of drawables available for drawing. For example, a return value of `2` indicates there are two drawables for this frame.
 
-#### Discussion
+## Discussion
 
 Use the returned value as the maximum number of textures to retrieve from the [`cp_drawable_array_get_drawable`](./cp_drawable_array_get_drawable.md) functions.
 

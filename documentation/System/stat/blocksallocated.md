@@ -21,7 +21,7 @@ Number of 512-byte blocks allocated
 var blocksAllocated: Int64 { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The semantics of this property are tied to the underlying C `st_blocks` field, which can have file-system–dependent behavior.
 

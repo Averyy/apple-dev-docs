@@ -25,7 +25,7 @@ optional func request(_ request: any SNRequest, didFailWithError error: any Erro
 - (void) request:(id<SNRequest>) request didFailWithError:(NSError *) error;
 ```
 
-#### Discussion
+## Discussion
 
 The analyzer stops processing a specific request when it encounters an error, and doesn’t call [`requestDidComplete(_:)`](./requestdidcomplete%28_%29.md).
 

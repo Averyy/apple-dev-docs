@@ -19,7 +19,7 @@ func setColor(_ color: NSColor, forKey key: NSColor.Name)
 - (void) setColor:(NSColor *) color forKey:(NSColorName) key;
 ```
 
-#### Discussion
+## Discussion
 
 If the list already contains `key`, this method sets the corresponding color to `color`; otherwise, it inserts `color` at the end of the list by invoking [`insertColor(_:key:at:)`](./insertcolor%28_,key,at%29.md).
 

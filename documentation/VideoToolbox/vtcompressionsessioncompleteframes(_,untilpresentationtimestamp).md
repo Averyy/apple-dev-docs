@@ -24,7 +24,7 @@ func VTCompressionSessionCompleteFrames(_ session: VTCompressionSession, untilPr
 extern OSStatus VTCompressionSessionCompleteFrames(VTCompressionSessionRef session, CMTime completeUntilPresentationTimeStamp);
 ```
 
-#### Discussion
+## Discussion
 
 If `completeUntilPresentationTimeStamp` is numeric, frames with presentation timestamps up to and including this timestamp are emitted before the function returns.
 

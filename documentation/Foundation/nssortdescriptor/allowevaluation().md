@@ -25,7 +25,7 @@ func allowEvaluation()
 - (void) allowEvaluation;
 ```
 
-#### Discussion
+## Discussion
 
 When securely decoding [`NSSortDescriptor`](../nssortdescriptor.md) objects that are encoded using [`NSSecureCoding`](../nssecurecoding.md), evaluation is disabled because it is potentially unsafe to evaluate descriptors you get out of an archive.
 

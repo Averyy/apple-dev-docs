@@ -34,7 +34,7 @@ init(_ range: Range<Int>)
 init<S>(_ source: S) where S : Sequence, S.Element : MLDataValueConvertible
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer to create a column from a sequence of data values.
 

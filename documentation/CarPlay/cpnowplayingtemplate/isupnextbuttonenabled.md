@@ -21,7 +21,7 @@ var isUpNextButtonEnabled: Bool { get set }
 @property (nonatomic, assign, getter=isUpNextButtonEnabled) BOOL upNextButtonEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 Set this property to [`true`](../../Swift/true.md) to have the Now Playing template display an Up Next button in the upper-right corner of the CarPlay screen.
 

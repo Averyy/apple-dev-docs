@@ -21,7 +21,7 @@ Displays a confirmation prompt that includes the specified text and action detai
 func requestConfirmation(conditions: ConfirmationConditions = [], actionName: ConfirmationActionName = .`continue`, dialog: IntentDialog) async throws
 ```
 
-#### Discussion
+## Discussion
 
 Call this method when you want someone to confirm a particular choice. For example, call this method before someone performs an action that might be destructive or unsafe. The method displays a prompt that includes the provided information and asks the person to confirm or cancel the operation. The method returns normally if they confirm the operation, but throws an error if they cancel it.
 

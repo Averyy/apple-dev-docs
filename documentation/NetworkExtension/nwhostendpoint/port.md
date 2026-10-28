@@ -26,7 +26,7 @@ var port: String { get }
 @property (nonatomic, readonly) NSString * port;
 ```
 
-#### Discussion
+## Discussion
 
 Since the port is represented as a string, it is always represented in host byte order. If converting between byte fields and strings, make sure to use host byte ordering.
 

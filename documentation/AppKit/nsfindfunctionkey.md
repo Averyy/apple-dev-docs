@@ -19,7 +19,7 @@ var NSFindFunctionKey: Int { get }
 NSFindFunctionKey
 ```
 
-#### Discussion
+## Discussion
 
 This key is unavailable on most Macintosh keyboards.
 

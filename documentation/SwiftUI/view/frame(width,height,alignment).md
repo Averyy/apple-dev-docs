@@ -28,11 +28,11 @@ func frame(width: CGFloat? = nil, height: CGFloat? = nil, alignment: Alignment =
 - [Configuring views](../configuring-views.md)
 - [Laying out a simple view](../laying-out-a-simple-view.md)
 
-#### Return Value
+## Return Value
 
 A view with fixed dimensions of `width` and `height`, for the parameters that are non-`nil`.
 
-#### Discussion
+## Discussion
 
 Use this method to specify a fixed size for a view’s width, height, or both. If you only specify one of the dimensions, the resulting view assumes this view’s sizing behavior in the other dimension.
 

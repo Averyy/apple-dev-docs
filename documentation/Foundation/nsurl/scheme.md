@@ -25,7 +25,7 @@ var scheme: String? { get }
 @property (copy, readonly, nullable) NSString * scheme;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the scheme. Any percent-encoded characters are not unescaped. For example, in the URL `http://www.example.com/index.html`, the scheme is `http`.
 

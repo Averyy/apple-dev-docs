@@ -18,7 +18,7 @@ Creates a media device with the specified identifier, name, type, and capabiliti
 init(id: String, name: String, type: MediaDevice.DeviceType, capabilities: [MediaDevice.Capability])
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: `id` should be a stable identifier for the device that works across sessions.
 

@@ -24,7 +24,7 @@ class VSUserAccountManager
 @interface VSUserAccountManager : NSObject
 ```
 
-#### Overview
+## Overview
 
 Don’t create `VSUserAccountManager` directly; use [`shared`](./vsuseraccountmanager/shared.md).
 

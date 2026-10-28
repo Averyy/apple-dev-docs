@@ -24,7 +24,7 @@ init(movie: AVFragmentedMovie, mindingInterval: TimeInterval)
 - (instancetype) initWithMovie:(AVFragmentedMovie *) movie mindingInterval:(NSTimeInterval) mindingInterval;
 ```
 
-#### Return Value
+## Return Value
 
 A new `AVFragmentedMovieMinder` instance.
 

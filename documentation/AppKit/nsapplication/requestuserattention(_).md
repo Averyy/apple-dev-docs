@@ -19,11 +19,11 @@ func requestUserAttention(_ requestType: NSApplication.RequestUserAttentionType)
 - (NSInteger) requestUserAttention:(NSRequestUserAttentionType) requestType;
 ```
 
-#### Return Value
+## Return Value
 
 The identifier for the request. You can use this value to cancel the request later using the [`cancelUserAttentionRequest(_:)`](./canceluserattentionrequest%28_%29.md) method.
 
-#### Discussion
+## Discussion
 
 Activating the app cancels the user attention request. A spoken notification will occur if spoken notifications are enabled. Sending [`requestUserAttention(_:)`](./requestuserattention%28_%29.md) to an app that is already active has no effect.
 

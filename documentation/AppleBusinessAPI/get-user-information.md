@@ -9,7 +9,7 @@ Get information about a specific user in an organization.
 **Availability**:
 - Apple Business API 2.6+
 
-##### Example
+### Example
 
 **Request**:
 

@@ -5,7 +5,7 @@
 
 Storing the location coordinates, as well as several auxiliary pieces of information about a location, as metadata.
 
-#### Overview
+## Overview
 
 Many systems have the ability to detect or establish their position in a coordinate reference system. The specification “ISO 6709:2008 Standard representation of geographic point location by coordinates” describes one way of storing such information. One of the common systems is the Global Positioning System (GPS) developed by the US Department of Defense. Other systems include the ability of some cellular telephone systems to triangulate the position of cell-phones, and the possibility that IEEE 802.11 Wireless Base Stations are tagged with their position (whereupon mobile units that can ‘see’ their signal can establish that they are probably ‘near’ that location).
 

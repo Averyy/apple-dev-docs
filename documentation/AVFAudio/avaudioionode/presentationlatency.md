@@ -25,7 +25,7 @@ var presentationLatency: TimeInterval { get }
 @property (nonatomic, readonly) NSTimeInterval presentationLatency;
 ```
 
-#### Discussion
+## Discussion
 
 This corresponds to `kAudioDevicePropertyLatency` and `kAudioStreamPropertyLatency`. For more information, see `AudioHardwareBase.h` in `CoreAudio.Framework`.
 

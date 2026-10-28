@@ -28,11 +28,11 @@ BOOL MPSSupportsMTLDevice(id<MTLDevice>device);
 
 - [The MPSKernel Class](./the-mpskernel-class.md)
 
-#### Return Value
+## Return Value
 
 [`true`](../Swift/true.md) if the device is supported. [`false`](../Swift/false.md) if the device is not supported.
 
-#### Discussion
+## Discussion
 
 For a full listing of Metal Performance Shaders feature set support, see [Feature Availability](https://developer.apple.com/metal/availability/).
 

@@ -20,7 +20,7 @@ class IOUSBHostPipe
 @interface IOUSBHostPipe : IOUSBHostIOSource
 ```
 
-#### Overview
+## Overview
 
 The client creates pipe objects using [`copyPipe(withAddress:)`](./iousbhostinterface/copypipe%28withaddress%29.md).
 

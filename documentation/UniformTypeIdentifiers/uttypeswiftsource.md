@@ -21,7 +21,7 @@ A type that represents a Swift source code file.
 extern UTType * const UTTypeSwiftSource;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.swift-source`.
 

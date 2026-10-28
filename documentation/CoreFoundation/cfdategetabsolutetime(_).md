@@ -25,11 +25,11 @@ func CFDateGetAbsoluteTime(_ theDate: CFDate!) -> CFAbsoluteTime
 extern CFAbsoluteTime CFDateGetAbsoluteTime(CFDateRef theDate);
 ```
 
-#### Return Value
+## Return Value
 
 The absolute time of `theDate`.
 
-#### Discussion
+## Discussion
 
 Absolute time is measured in seconds relative to the absolute reference date of Jan 1 2001 00:00:00 GMT. A positive value represents a date after the reference date, a negative value represents a date before it. For example, the absolute time -32940326 is equivalent to December 16th, 1999 at 17:54:34.
 

@@ -12,7 +12,7 @@ virtual void setFragmentCapacityIncrement(
  UInt32count );
 ```
 
-#### Overview
+## Overview
 
 This method sets the number of extra fragments the free list will expand to when full. It defaults to the initial capacity.
 

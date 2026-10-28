@@ -16,7 +16,7 @@ The migration failed with an error.
 case failure(any Error)
 ```
 
-#### Discussion
+## Discussion
 
 Inspect the associated value to retrieve the [`Error`](../../Swift/error.md) that caused migration to fail.
 

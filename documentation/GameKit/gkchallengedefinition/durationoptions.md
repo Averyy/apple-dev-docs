@@ -25,7 +25,7 @@ var durationOptions: [DateComponents] { get }
 @property (nonatomic, copy, readonly) NSArray<NSDateComponents *> * durationOptions;
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: If set, the amount of weeks is stored in the `weekOfYear` field.
 

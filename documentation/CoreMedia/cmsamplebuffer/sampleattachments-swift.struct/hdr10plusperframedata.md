@@ -21,7 +21,7 @@ HDR10+ per frame metadata.
 var hdr10PlusPerFrameData: Data? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The value should contain HDR10+ metadata within an User Data Registered ITU-T T-35 SEI message (see ISO/IEC 23008-2-2020 section D.3.6) as little endian in the Data. This attachment will override any HDR10+ metadata stored within the compressed data. The data should start with the field `itu_t_t35_country_code` with the value `0xb5`.
 

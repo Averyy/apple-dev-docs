@@ -20,7 +20,7 @@ nonisolated
 func webViewScrollPosition(_ position: Binding<ScrollPosition>) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: `WebView` does not support scrolling to a view with an identity. It only supports scrolling to a concrete offset, or to an edge.
 

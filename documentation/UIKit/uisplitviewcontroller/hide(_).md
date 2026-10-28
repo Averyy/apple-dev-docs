@@ -23,7 +23,7 @@ func hide(_ column: UISplitViewController.Column)
 - (void) hideColumn:(UISplitViewControllerColumn) column;
 ```
 
-#### Discussion
+## Discussion
 
 When you call this method, the split view interface transitions to the closest display mode available for the current split behavior where the specified column is hidden.
 

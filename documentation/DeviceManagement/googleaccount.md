@@ -18,7 +18,7 @@ The payload that configures a Google account.
 object GoogleAccount
 ```
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.google-oauth` as the payload type.
 
@@ -28,7 +28,7 @@ You can install multiple Google payloads. Each sets up a Google email address an
 
 The payload never contains credentials; the system prompts the user to enter credentials shortly after installation of the payload.
 
-##### Profile availability
+### Profile availability
 
 |  |  |
 | --- | --- |
@@ -40,7 +40,7 @@ The payload never contains credentials; the system prompts the user to enter cre
 | Allowed in user enrollment | iOS, visionOS |
 | Allow multiple payloads | iOS, Shared iPad, visionOS |
 
-##### Profile example
+### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>

@@ -21,17 +21,17 @@ Sends a message with a simple return value to an instance of a class.
 extern void objc_msgSend();
 ```
 
-#### Parameters
+## Parameters
 
 - **`self`**: A pointer that points to the instance of the class that is to receive the message.
 - **`op`**: The selector of the method that handles the message.
 - **`...`**: A variable argument list containing the arguments to the method.
 
-#### Return Value
+## Return Value
 
 The return value of the method.
 
-#### Discussion
+## Discussion
 
 When it encounters a method call, the compiler generates a call to one of the functions `objc_msgSend`, `objc_msgSend_stret`, `objc_msgSendSuper`, or `objc_msgSendSuper_stret`. Messages sent to an object’s superclass (using the `super` keyword) are sent using `objc_msgSendSuper`; other messages are sent using `objc_msgSend`. Methods that have data structures as return values are sent using `objc_msgSendSuper_stret` and `objc_msgSend_stret`.
 

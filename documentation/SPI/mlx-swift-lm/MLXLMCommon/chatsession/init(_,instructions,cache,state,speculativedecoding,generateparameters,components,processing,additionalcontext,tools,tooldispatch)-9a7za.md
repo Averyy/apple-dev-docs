@@ -17,7 +17,7 @@ Initialize the `ChatSession` with a pre-built KV cache.
 init(_ model: ModelContext, instructions: String? = nil, cache: consuming [KVCache], state: LMOutput.State? = nil, speculativeDecoding: SpeculativeDecodingConfig? = nil, generateParameters: GenerateParameters = .init(), components: GenerationComponents = .init(), processing: UserInput.Processing = .init(resize: CGSize(width: 512, height: 512)), additionalContext: [String : any Sendable]? = nil, tools: [ToolSpec]? = nil, toolDispatch: (@Sendable (ToolCall) async throws -> String)? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 This enables prefix caching: build a KV cache from a long shared context (e.g. a system prompt and document) once, save it via [`saveCache(to:)`](./savecache%28to%29.md), and restore it across multiple sessions to avoid re-prefilling the same tokens each time.
 

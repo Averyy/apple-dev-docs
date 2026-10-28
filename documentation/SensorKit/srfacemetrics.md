@@ -21,7 +21,7 @@ class SRFaceMetrics
 @interface SRFaceMetrics : NSObject
 ```
 
-#### Overview
+## Overview
 
 The [`faceMetrics`](./srsensor/facemetrics.md) sensor provides this class as its [`sample`](./srfetchresult/sample.md) type.
 

@@ -19,7 +19,7 @@ var contentAspectRatio: NSSize { get set }
 @property NSSize contentAspectRatio;
 ```
 
-#### Discussion
+## Discussion
 
 By default, the content aspect ratio (that is, height in relation to width) is `(0, 0)`. If you set the aspect ratio of a window’s content view, the dimensions of its content rectangle are constrained to integral multiples of that ratio when users resize it. You can set a window’s content view to any size programmatically, regardless of its aspect ratio. The value of this property takes precedence over [`aspectRatio`](./aspectratio.md).
 

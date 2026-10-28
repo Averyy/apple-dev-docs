@@ -19,7 +19,7 @@ var imageInterpolation: NSImageInterpolation { get set }
 @property NSImageInterpolation imageInterpolation;
 ```
 
-#### Discussion
+## Discussion
 
 Note that this value is not part of the graphics state, so it cannot be reset using [`restoreGraphicsState()`](./restoregraphicsstate%28%29-swift.method.md).
 

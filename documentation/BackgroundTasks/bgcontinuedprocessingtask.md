@@ -25,7 +25,7 @@ class BGContinuedProcessingTask
 
 - [Performing long-running tasks on iOS and iPadOS](./performing-long-running-tasks-on-ios-and-ipados.md)
 
-#### Overview
+## Overview
 
 This task works with [`BGContinuedProcessingTaskRequest`](./bgcontinuedprocessingtaskrequest.md).
 

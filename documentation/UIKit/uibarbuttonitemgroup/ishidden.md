@@ -22,7 +22,7 @@ var isHidden: Bool { get set }
 @property (nonatomic, assign, readwrite, getter=isHidden) BOOL hidden;
 ```
 
-#### Discussion
+## Discussion
 
 Set this property to [`true`](../../Swift/true.md) to hide the group, or [`false`](../../Swift/false.md) to display the group.
 

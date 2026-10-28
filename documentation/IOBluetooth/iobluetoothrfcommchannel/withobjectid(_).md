@@ -19,11 +19,11 @@ class func withObjectID(_ objectID: IOBluetoothObjectID) -> Self!
 + (instancetype) withObjectID:(IOBluetoothObjectID) objectID;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the IObluetoothRFCOMMChannel that matches the given IOBluetoothObjectID if one exists. If no matching RFCOMM channel exists, nil is returned.
 
-#### Discussion
+## Discussion
 
 The IOBluetoothObjectID can be used as a global reference for a given IObluetoothRFCOMMChannel. It allows two separate applications to refer to the same IObluetoothRFCOMMChannel object.
 

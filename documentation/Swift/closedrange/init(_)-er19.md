@@ -23,7 +23,7 @@ init(_ other: Range<Bound>)
 
 Available when `Bound` conforms to `Strideable` and `Bound.Stride` conforms to `SignedInteger`.
 
-#### Discussion
+## Discussion
 
 An equivalent range must be representable as a closed range. For example, passing an empty range as `other` triggers a runtime error, because an empty range cannot be represented by a closed range instance.
 

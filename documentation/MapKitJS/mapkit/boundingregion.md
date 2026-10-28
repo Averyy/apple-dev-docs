@@ -15,7 +15,7 @@ The getter to use to access the the bounding region class.
 get BoundingRegion(): typeof BoundingRegion;
 ```
 
-#### Discussion
+## Discussion
 
 You must load the appropriate library first before accessing the getter, otherwise, the getter throws an `Error`.
 

@@ -14,8 +14,8 @@
 ## Declaration
 
 ```swift
-@freestanding
-(declaration) macro Preview(_ name: String? = nil, traits: PreviewTrait<Preview.ViewTraits>..., @PreviewMacroBodyBuilder<UIView> body: @escaping @MainActor () -> UIView)
+@freestanding(declaration)
+macro Preview(_ name: String? = nil, traits: PreviewTrait<Preview.ViewTraits>..., @PreviewMacroBodyBuilder<UIView> body: @escaping @MainActor () -> UIView)
 ```
 
 ## See Also

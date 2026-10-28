@@ -20,7 +20,7 @@ var color: NSColor! { get set }
 @property (copy, null_resettable) NSColor * color;
 ```
 
-#### Discussion
+## Discussion
 
 If set to [`nil`](../../ObjectiveC/nil-227m0.md), returns [`textInsertionPointColor`](../nscolor/textinsertionpointcolor.md). Defaults to [`textInsertionPointColor`](../nscolor/textinsertionpointcolor.md).
 

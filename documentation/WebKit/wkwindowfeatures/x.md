@@ -23,7 +23,7 @@ var x: NSNumber? { get }
 @property (nonatomic, readonly, nullable) NSNumber * x;
 ```
 
-#### Discussion
+## Discussion
 
 The object in this property contains a [`CGFloat`](../../CoreFoundation/cgfloat-swift.struct.md) value. If the webpage didn’t request a specific window position, this property is `nil`.
 

@@ -19,7 +19,7 @@ class var userTabbingPreference: NSWindow.UserTabbingPreference { get }
 @property (class, readonly) NSWindowUserTabbingPreference userTabbingPreference;
 ```
 
-#### Discussion
+## Discussion
 
 This value indicates the user’s preference for window tabbing as set in System Preferences. Check this preference any time you create a new window. For a list of possible values, see [`NSWindow.UserTabbingPreference`](./usertabbingpreference-swift.enum.md).
 

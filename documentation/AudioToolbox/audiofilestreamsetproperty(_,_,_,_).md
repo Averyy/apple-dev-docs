@@ -24,11 +24,11 @@ func AudioFileStreamSetProperty(_ inAudioFileStream: AudioFileStreamID, _ inProp
 extern OSStatus AudioFileStreamSetProperty(AudioFileStreamID inAudioFileStream, AudioFileStreamPropertyID inPropertyID, UInt32 inPropertyDataSize, const void *inPropertyData);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See Result Codes.
 
-#### Discussion
+## Discussion
 
 Currently, there are no settable properties.
 

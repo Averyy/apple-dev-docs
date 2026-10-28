@@ -15,7 +15,7 @@ Gets the custom property information.
 IOUserVideoCustomPropertyInfo GetCustomPropertyInfo();
 ```
 
-#### Return Value
+## Return Value
 
 The IOUserVideoCustomPropertyInfo for the custom property.
 

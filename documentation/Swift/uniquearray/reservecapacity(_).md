@@ -21,7 +21,7 @@ Ensure that the array has capacity to store the specified number of elements, by
 mutating func reserveCapacity(_ n: Int)
 ```
 
-#### Discussion
+## Discussion
 
 If `capacity < n`, then this operation reallocates the unique array’s storage to grow it; on return, the array’s capacity becomes `n`. Otherwise the array is left as is.
 

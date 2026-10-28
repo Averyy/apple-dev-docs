@@ -24,7 +24,7 @@ var image: UIImage? { get set }
 @property (nonatomic, copy, nullable) UIImage * image;
 ```
 
-#### Discussion
+## Discussion
 
 The image appears next to the action’s [`title`](./title.md). Only the [`context`](../uimenusystem/context.md) menu system supports the display of an image, and only when the app is running in iOS.
 

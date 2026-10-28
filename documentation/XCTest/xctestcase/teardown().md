@@ -20,7 +20,7 @@ class func tearDown()
 
 - [Set Up and Tear Down State in Your Tests](../set-up-and-tear-down-state-in-your-tests.md)
 
-#### Discussion
+## Discussion
 
 The [`tearDown()`](./teardown%28%29.md) class method is called exactly once for a test case, after its final test method completes. Override this method to perform any cleanup after all test methods have ended.
 

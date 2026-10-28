@@ -25,7 +25,7 @@ func CFDictionaryGetCountOfValue(_ theDict: CFDictionary!, _ value: UnsafeRawPoi
 extern CFIndex CFDictionaryGetCountOfValue(CFDictionaryRef theDict, const void *value);
 ```
 
-#### Return Value
+## Return Value
 
 The number of times the `value` occurs in `theDict`.
 

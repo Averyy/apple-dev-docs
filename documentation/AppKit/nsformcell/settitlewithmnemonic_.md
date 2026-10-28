@@ -15,7 +15,7 @@ Sets the cell title and mnemonic character.
 - (void) setTitleWithMnemonic:(NSString *) stringWithAmpersand;
 ```
 
-#### Discussion
+## Discussion
 
 Mnemonics are not supported in macOS.
 

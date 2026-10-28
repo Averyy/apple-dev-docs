@@ -24,7 +24,7 @@ func deactivateItem(_ item: FSItem, context: FSContext) async throws -> FSDeacti
 - (void) deactivateItem:(FSItem *) item context:(FSContext *) context replyHandler:(void (^)(FSDeactivateItemResult *result, NSError *error)) reply;
 ```
 
-#### Discussion
+## Discussion
 
 This method gives a file system a chance to release resources associated with an item. However, this method prescribes no specific action; it’s acceptable to defer all reclamation until [`reclaimItem(_:replyHandler:)`](../handler/reclaimitem%28_,replyhandler%29.md). This method is the equivalent of VFS’s `VNOP_INACTIVE`.
 

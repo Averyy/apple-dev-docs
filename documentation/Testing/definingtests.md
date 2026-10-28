@@ -5,11 +5,11 @@
 
 Define a test function to validate that code is working correctly.
 
-#### Overview
+## Overview
 
 Defining a test function for a Swift package or project is straightforward.
 
-##### Import the testing library
+### Import the testing library
 
 To import the testing library, add the following to the Swift source file that contains the test:
 
@@ -19,7 +19,7 @@ import Testing
 
 > **Note**: Only import the testing library into a test target or library meant for test targets. Importing the testing library into a target intended for distribution such as an application, app library, or executable target isn’t supported or recommended. Test functions aren’t stripped from binaries when building for release, so logic and fixtures of a test may be visible to anyone who inspects a build product that contains a test function.
 
-##### Declare a test function
+### Declare a test function
 
 To declare a test function, write a Swift function declaration that doesn’t take any arguments, then prefix its name with the `@Test` attribute:
 
@@ -33,7 +33,7 @@ This test function can be present at file scope or within a type. A type contain
 
 Note that, while this function is a valid test function, it doesn’t actually perform any action or test any code. To check for expected values and outcomes in test functions, add [expectations](./expectations.md) to the test function.
 
-##### Customize a test’s name
+### Customize a test’s name
 
 To customize a test function’s name as presented in an IDE or at the command line, supply a string literal as an argument to the `@Test` attribute:
 
@@ -43,7 +43,7 @@ To customize a test function’s name as presented in an IDE or at the command l
 
 To further customize the appearance and behavior of a test function, use [traits](./traits.md) such as [`tags(_:)`](./trait/tags%28_%29.md).
 
-##### Write concurrent or throwing tests
+### Write concurrent or throwing tests
 
 As with other Swift functions, test functions can be marked `async` and `throws` to annotate them as concurrent or throwing, respectively. If a test is only safe to run in the main actor’s execution context (that is, from the main thread of the process), it can be annotated `@MainActor`:
 
@@ -51,7 +51,7 @@ As with other Swift functions, test functions can be marked `async` and `throws`
 @Test @MainActor func foodTruckExists() async throws { ... }
 ```
 
-##### Limit the availability of a test
+### Limit the availability of a test
 
 If a test function can only run on newer versions of an operating system or of the Swift language, use the `@available` attribute when declaring it. When a test can’t run due to limited availability, the testing library reports it as skipped. Use the `message` argument of the `@available` attribute to include a message explaining why the test is unable to run:
 

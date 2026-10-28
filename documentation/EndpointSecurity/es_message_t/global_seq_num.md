@@ -20,7 +20,7 @@ var global_seq_num: UInt64
 uint64_t global_seq_num;
 ```
 
-#### Discussion
+## Discussion
 
 Inspect the global sequence number per-client to detect whether the kernel had to drop events for this client. If the kernel doesn’t drop any events for this client, `global_seq_num` increments by 1 for every message.
 

@@ -29,7 +29,7 @@ var blendMode: SKBlendMode { get set }
 
 - [Blending a Sprite with Different Interpretations of Alpha](../blending-a-sprite-with-different-interpretations-of-alpha.md)
 
-#### Discussion
+## Discussion
 
 The default value is [`SKBlendMode.alpha`](../skblendmode/alpha.md).
 

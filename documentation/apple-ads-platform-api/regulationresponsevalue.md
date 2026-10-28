@@ -25,7 +25,7 @@ string RegulationResponseValue
 - `FALSE`: A generic negative response.
 - `NOT_ANSWERED`: No response has been provided yet.
 
-#### Discussion
+## Discussion
 
 The `FRENCH_BUSINESS`, `NOT_FRENCH_BUSINESS`, `AGENT`, and `NOT_AGENT` values all pair with the Sapin Law [`RegulationType`](./regulationtype.md) variants (`CAMPAIGN_SAPIN_LAW`, `ORG_SAPIN_LAW`).
 

@@ -24,7 +24,7 @@ class UILayoutGuide
 @interface UILayoutGuide : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use layout guides to replace the placeholder views you may have created to represent inter-view spaces or encapsulation in your user interface. Traditionally, there were a number of Auto Layout techniques that required placeholder views. A placeholder view is an empty view that does not have any visual elements of its own and serves only to define a rectangular region in the view hierarchy. For example, if you wanted to use constraints to define the size or location of an empty space between views, you needed to use a placeholder view to represent that space. If you wanted to center a group of objects, you needed a placeholder view to contain those objects. Similarly, placeholder views could be used to contain and encapsulate part of your user interface. Placeholder views let you break up a large, complex user interface into self-contained, modular chunks. When used properly, they could greatly simplify your Auto Layout constraint logic.
 
@@ -32,7 +32,7 @@ There are a number of costs associated with adding placeholder views to your vie
 
 The [`UILayoutGuide`](./uilayoutguide.md) class is designed to perform all the tasks previously performed by placeholder views, but to do it in a safer, more efficient manner. Layout guides do not define a new view. They do not participate in the view hierarchy. Instead, they simply define a rectangular region in their owning view’s coordinate system that can interact with Auto Layout.
 
-##### Creating Layout Guides
+### Creating Layout Guides
 
 To create a layout guide, you must perform the following steps:
 

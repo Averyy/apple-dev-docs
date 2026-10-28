@@ -11,7 +11,7 @@ Empties the collection, releasing any objects retained.
 virtual void flushCollection() = 0;
 ```
 
-#### Overview
+## Overview
 
 Subclasses implement this pure virtual member function to remove their entire contents. This must not release the collection itself.
 

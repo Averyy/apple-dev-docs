@@ -4,7 +4,7 @@
 
 Creates a button that can also have a badge associated with it.
 
-#### Overview
+## Overview
 
 Images on buttons are often used to indicate the function of the button. Use the `buttonLockup` element to add a badge to the the button. Here’s an example that shows a button with the preview icon and a title.
 
@@ -15,12 +15,12 @@ Images on buttons are often used to indicate the function of the button. Use the
 </buttonLockup>
 ```
 
-##### Subelements of buttonLockup
+### Subelements of buttonLockup
 
 - [badge](./badge.md)
 - [title](./title.md)
 
-##### Elements that Use buttonLockup
+### Elements that Use buttonLockup
 
 - [organizer](./organizer.md)
 - [row](./row.md)

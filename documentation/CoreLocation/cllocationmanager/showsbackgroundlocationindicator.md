@@ -22,7 +22,7 @@ var showsBackgroundLocationIndicator: Bool { get set }
 @property (nonatomic, assign) BOOL showsBackgroundLocationIndicator;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is `false`. The background location usage indicator is a blue bar or a blue pill in the status bar on iOS; on watchOS the indicator is a small icon. Users can tap the indicator to return to your app.
 

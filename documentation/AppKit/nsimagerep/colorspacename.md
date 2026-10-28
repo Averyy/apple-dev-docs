@@ -19,7 +19,7 @@ var colorSpaceName: NSColorSpaceName { get set }
 @property (copy) NSColorSpaceName colorSpaceName;
 ```
 
-#### Discussion
+## Discussion
 
 By default, an `NSImageRep` object’s color space name is `NSCalibratedRGBColorSpace`. Color space names are defined as part of the `NSColor` class, in `NSGraphics.h`. The following are valid color space names:
 

@@ -19,11 +19,11 @@ func drawTitle(_ title: NSAttributedString, withFrame frame: NSRect, in controlV
 - (NSRect) drawTitle:(NSAttributedString *) title withFrame:(NSRect) frame inView:(NSView *) controlView;
 ```
 
-#### Return Value
+## Return Value
 
 The bounding rectangle for the text of the title.
 
-#### Discussion
+## Discussion
 
 This method is called automatically when the button is redrawn; you should not call it directly.
 

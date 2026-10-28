@@ -24,7 +24,7 @@ let kIOSurfaceOffset: CFString
 extern CFStringRef const kIOSurfaceOffset;
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to 0.
 

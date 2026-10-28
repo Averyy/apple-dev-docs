@@ -21,7 +21,7 @@ Creates an action of the given name from an action file with a new duration.
 init?(named name: String, fromURL url: URL, duration: TimeInterval)
 ```
 
-#### Return Value
+## Return Value
 
 A new action object.
 

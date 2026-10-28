@@ -23,7 +23,7 @@ var showsPlaybackControls: Bool { get set }
 @property (nonatomic) BOOL showsPlaybackControls;
 ```
 
-#### Discussion
+## Discussion
 
 Set this property to `false` if you don’t want the system-provided playback controls visible over your content. Hiding the playback controls can be useful in situations where you need a non-interactive video presentation, such as a video splash screen.
 

@@ -24,7 +24,7 @@ func transform(forImageWidth width: Int, height: Int) -> CGAffineTransform
 - (CGAffineTransform) transformForImageWidth:(size_t) width height:(size_t) height;
 ```
 
-#### Return Value
+## Return Value
 
 An affine transform.
 

@@ -25,11 +25,11 @@ class func colorize(withColorBlendFactor colorBlendFactor: CGFloat, duration sec
 + (SKAction *) colorizeWithColorBlendFactor:(CGFloat) colorBlendFactor duration:(NSTimeInterval) sec;
 ```
 
-#### Return Value
+## Return Value
 
 A new action object.
 
-#### Discussion
+## Discussion
 
 This action can only be executed by an [`SKSpriteNode`](../skspritenode.md) object. When the action executes, the sprite’s [`colorBlendFactor`](../skspritenode/colorblendfactor.md) property animates to the new value.
 

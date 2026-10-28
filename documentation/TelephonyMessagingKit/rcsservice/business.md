@@ -15,7 +15,7 @@ Structure containing details about a business.
 struct Business
 ```
 
-#### Overview
+## Overview
 
 This structure and its supporting types correspond to the “chatbot” JSON schemas defined by the RCS specification.
 

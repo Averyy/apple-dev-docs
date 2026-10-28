@@ -21,7 +21,7 @@ Set application protocols supported by clients of this protocol.
 func applicationProtocols(_ protocols: [String]) -> TLS
 ```
 
-#### Discussion
+## Discussion
 
 Application layer protocol negotiation (ALPN) tokens describe the application protocol in use above TLS.
 

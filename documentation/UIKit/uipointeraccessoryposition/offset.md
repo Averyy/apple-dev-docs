@@ -19,7 +19,7 @@ The offset of the accessory from the primary pointer.
 CGFloat offset;
 ```
 
-#### Discussion
+## Discussion
 
 This property only supports positive values.
 

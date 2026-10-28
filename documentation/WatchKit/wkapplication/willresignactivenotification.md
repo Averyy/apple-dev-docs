@@ -19,7 +19,7 @@ class let willResignActiveNotification: NSNotification.Name
 extern NSNotificationName const WKApplicationWillResignActiveNotification;
 ```
 
-#### Discussion
+## Discussion
 
 When creating an app that uses the SwiftUI [`App`](../../SwiftUI/app.md) protocol to manage your life cycle, use the [`onChange(of:perform:)`](../../SwiftUI/view/onchange%28of,perform%29.md) modifier and the [`scenePhase`](../../SwiftUI/environmentvalues/scenephase.md) environment value to monitor life cycle changes when possible. For more information, see [Building a watchOS app](../../watchOS-Apps/building_a_watchos_app.md).
 

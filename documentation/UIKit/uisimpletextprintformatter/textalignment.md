@@ -22,7 +22,7 @@ var textAlignment: NSTextAlignment { get set }
 @property (nonatomic) NSTextAlignment textAlignment;
 ```
 
-#### Discussion
+## Discussion
 
 The default text alignment is [`UITextAlignmentLeft`](../uitextalignment/uitextalignmentleft.md).
 

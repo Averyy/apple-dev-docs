@@ -25,7 +25,7 @@ func isDateInYesterday(_ date: Date) -> Bool
 - (BOOL) isDateInYesterday:(NSDate *) date;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the given date is in “yesterday,” otherwise [`false`](../../Swift/false.md).
 

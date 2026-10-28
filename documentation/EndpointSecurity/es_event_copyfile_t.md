@@ -20,7 +20,7 @@ struct es_event_copyfile_t
 typedef struct { ... } es_event_copyfile_t;
 ```
 
-#### Overview
+## Overview
 
 Be aware that the `copyfile` system call isn’t the same thing as the `copyfile(3)` function in the standard library. Its semantics depend on the specific filesystem in use.
 

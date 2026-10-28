@@ -21,7 +21,7 @@ An error that describes the cause of a failed fetch operation.
 let error: CKError?
 ```
 
-#### Discussion
+## Discussion
 
 A `nil` value indicates a successful fetch.
 

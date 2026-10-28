@@ -28,7 +28,7 @@ func setProgress(on achievement: GKAchievement, to percentComplete: Double)
 
 - [Creating activities for your game](../creating-activities-for-your-game.md)
 
-#### Discussion
+## Discussion
 
 The framework reports achievement progress when the activity ends.
 

@@ -25,7 +25,7 @@ var preservesRepeatMode: Bool { get }
 @property (nonatomic, readonly) BOOL preservesRepeatMode;
 ```
 
-#### Discussion
+## Discussion
 
 When set to [`true`](../../Swift/true.md), the chosen repeat mode is preserved between playback sessions.
 

@@ -28,7 +28,7 @@ func event(withIdentifier identifier: String) -> EKEvent?
 
 - [Retrieving events and reminders](../retrieving-events-and-reminders.md)
 
-#### Return Value
+## Return Value
 
 The event that corresponds with `identifier`, or `nil` if no event is found.
 

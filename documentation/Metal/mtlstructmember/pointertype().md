@@ -24,7 +24,7 @@ func pointerType() -> MTLPointerType?
 - (MTLPointerType *) pointerType;
 ```
 
-#### Return Value
+## Return Value
 
 An object that describes the pointer. If [`dataType`](./datatype.md) indicates that this member isn’t a pointer, this method returns `nil`.
 

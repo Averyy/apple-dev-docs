@@ -21,11 +21,11 @@ The concentric corner radii for this view’s bounds relative to the container s
 var concentricCornerRadii: RectangleCornerRadii? { get }
 ```
 
-#### Return Value
+## Return Value
 
 The resolved corner radii, or `nil` if no container shape is set or the shape does not provide sufficient corner info.
 
-#### Discussion
+## Discussion
 
 Concentric corners share the same center point as the container’s corners, creating visually harmonious nested rounded rectangles. The radius for each corner is calculated as the container’s corner radius minus the distance from this view’s corner to the container’s corner.
 

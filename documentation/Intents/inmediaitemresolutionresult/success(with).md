@@ -24,11 +24,11 @@ class func success(with resolvedMediaItem: INMediaItem) -> Self
 + (instancetype) successWithResolvedMediaItem:(INMediaItem *) resolvedMediaItem;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INMediaItemResolutionResult`](../inmediaitemresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method to create a result when your app successfully identifies a single media item to fulfill the intent. For cases where there are potential alternatives, use [`successes(with:)`](./successes%28with%29.md).
 

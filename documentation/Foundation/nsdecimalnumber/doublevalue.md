@@ -25,7 +25,7 @@ var doubleValue: Double { get }
 @property (readonly) double doubleValue;
 ```
 
-#### Discussion
+## Discussion
 
 Not all decimal numbers can be accurately represented using a `double` value.
 

@@ -24,7 +24,7 @@ var name: String { get }
 @property (atomic, readonly) NSString * name;
 ```
 
-#### Discussion
+## Discussion
 
 The name of a kernel routine is the identifier used to declare it in the Core Image Kernel Language source code. For example, if you use the [`init(source:)`](./init%28source%29.md) method to create a kernel from the source code below, the name of the returned [`CIKernel`](../cikernel.md) object is “moveUpTwoPixels”.
 

@@ -21,7 +21,7 @@ A type that represents an MPEG-2 video.
 extern UTType * const UTTypeMPEG2Video;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.mpeg-2-video`.
 

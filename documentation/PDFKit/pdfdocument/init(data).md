@@ -24,11 +24,11 @@ init?(data: Data)
 - (instancetype) initWithData:(NSData *) data;
 ```
 
-#### Return Value
+## Return Value
 
 A `PDFDocument` instance initialized with the passed-in PDF data, or `NULL` if the object could not be initialized.
 
-#### Discussion
+## Discussion
 
 The data must be PDF data encapsulated in an `NSData` object; otherwise this method returns `NULL`.
 

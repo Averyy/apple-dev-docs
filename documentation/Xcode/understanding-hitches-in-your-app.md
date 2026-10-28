@@ -5,7 +5,7 @@
 
 Determine the cause of interruptions in motion by examining the render loop.
 
-#### Overview
+## Overview
 
 Human perception is very sensitive to interruptions in motion. When a fluid motion onscreen gets *stuck* for a short time, even a couple of milliseconds can be noticeable. This type of interruption is known as a *hitch*. Hitches happen during continuous interactions, like scrolling or dragging, or during animations. Each hitch impacts the user experience, so you want as few hitches as possible in your app. Minimize the hitch rate as much as possible to provide the best experience for your users.
 
@@ -23,7 +23,7 @@ When a frame is late, it’s usually due to a delay occurring somewhere in the r
 
 > **Note**: The Hitches instrument isn’t available for visionOS, and hitch metrics in Xcode Organizer aren’t available for tvOS or visionOS. For visionOS apps, use the RealityKit Trace template in Instruments to analyze rendering performance and dropped frames. For more information, see [Analyzing the performance of your visionOS app](../visionOS/analyzing-the-performance-of-your-visionos-app.md).
 
-##### Understand the render loop
+### Understand the render loop
 
 Whereas the main thread handles only a single event at a time, the render loop prepares a frame in multiple stages. Although each stage processes only one frame at a time, all stages work together on multiple frames in parallel. Each stage has a tight deadline to hand off its frame to the next stage to ensure it’s ready for the screen refresh.
 
@@ -33,7 +33,7 @@ A display updating at a 120 Hz refresh rate updates 120 times per second, or eve
 
 Even a few milliseconds of additional delay can cause a stage to miss its deadline. Even though the render server is a separate process, it performs work on behalf of the app, and this work may be too complex to finish in time. To find and understand hitches, you need to look at the work on the main thread *and* the work on the render server.
 
-##### Understand the display refresh interval and associated deadlines
+### Understand the display refresh interval and associated deadlines
 
 Apple devices update their displays at a regular, but variable, refresh rate. During user interaction, a display updates at the maximum refresh rate the device supports. When there’s nothing new to display, some displays reduce the refresh rate. The point in time when the display updates is called the *vertical sync* or *vsync*. Whenever a vsync occurs, the new frame needs to be ready so the display driver can start to update the pixels of the display.
 
@@ -72,7 +72,7 @@ Although the begin time and the commit deadline often align with a vsync, this i
 
 > **Note**: In most cases, the begin time and the commit deadline align with a vsync, so the illustrations in this article represent that scenario. However, if they differ, or if you plan to make calculations based on these times, use the begin time, commit deadline, and presentation time of the relevant API instead of vsyncs.
 
-##### Understand frame lifetime and hitch duration
+### Understand frame lifetime and hitch duration
 
 Most Apple devices operate in a double-buffer mode, meaning that the render server and the display driver share two buffers. The display driver uses one buffer to read pixel values for the screen, and the render server uses the other buffer to render the next frame for display. When the vsync occurs, the render server and the display driver switch buffers. So the display driver uses the newly rendered buffer to update the screen, and the render server renders a new frame into the buffer that the display driver used for the previous frame.
 
@@ -90,7 +90,7 @@ Depending on various circumstances, rendering can also happen in triple-buffer m
 
 In triple-buffer mode, the app still needs to finish all work within a single vsync interval, but the render server has two vsync intervals to finish its work, and can work on two frames in parallel. In this mode, the delay between the begin time and the presentation time of a frame — the expected frame lifetime — is three vsync intervals, or 25 ms at 120 Hz, and 50 ms at 60 Hz. Accordingly, the delay between the app beginning work on a frame and the last pixel onscreen updating is four vsync intervals, or 33.3 ms at 120 Hz, and 66.7 ms at 60 Hz. Although the delay is longer than in double-buffer mode, no frame arrives later than expected. The display updates at its expected refresh rate and displays a new frame at every vsync, enabling fluid motion onscreen.
 
-##### Understand commit hitches and render hitches
+### Understand commit hitches and render hitches
 
 The work to update the screen consists of two parts — the work that the app’s process performs and the work that the render server performs. And because each chunk of work has its own deadline, you can differentiate different types of hitches. In the Commit Hitch illustration above, the app’s process doesn’t meet the commit deadline, which causes the render server to start one vsync later, resulting in a hitch. Because the app process is responsible for this hitch — the Core Animation commit doesn’t finish in time for the vsync — this is called a *commit hitch*.
 

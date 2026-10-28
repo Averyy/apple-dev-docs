@@ -27,7 +27,7 @@ func setAllMediaPlaybackSuspended(_ suspended: Bool) async
 - (void) setAllMediaPlaybackSuspended:(BOOL) suspended completionHandler:(void (^)(void)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Pass `true` to pause all media the web view is playing. Neither the user nor the webpage can resume playback until you call this method again with `false`.
 

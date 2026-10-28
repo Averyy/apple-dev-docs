@@ -21,7 +21,7 @@ var httpResponse: HTTPURLResponse? { get set }
 @property (nonatomic, strong, nullable) NSHTTPURLResponse * httpResponse;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains your server’s full HTTP response.
 

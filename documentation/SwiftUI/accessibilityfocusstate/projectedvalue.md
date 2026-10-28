@@ -21,7 +21,7 @@ A projection of the state value that can be used to establish bindings between v
 var projectedValue: AccessibilityFocusState<Value>.Binding { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use `projectedValue` in conjunction with [`accessibilityFocused(_:equals:)`](../view/accessibilityfocused%28_,equals%29.md) to establish bindings between view content and accessibility focus placement.
 

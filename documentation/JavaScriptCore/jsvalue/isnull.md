@@ -24,7 +24,7 @@ var isNull: Bool { get }
 @property (readonly) BOOL isNull;
 ```
 
-#### Discussion
+## Discussion
 
 The JavaScript `null` value is used only in cases where an actual value is expected but none is applicable. Note that `null` is not the same as `undefined`.
 

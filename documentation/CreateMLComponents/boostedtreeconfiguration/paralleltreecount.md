@@ -21,7 +21,7 @@ The number of parallel trees constructed during each iteration.
 var parallelTreeCount: Int
 ```
 
-#### Discussion
+## Discussion
 
 Use a value greater than one to train a boosted random forest.
 

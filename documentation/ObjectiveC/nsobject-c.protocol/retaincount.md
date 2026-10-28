@@ -21,11 +21,11 @@ Do not use this method.
 - (NSUInteger) retainCount;
 ```
 
-#### Return Value
+## Return Value
 
 The receiver’s reference count.
 
-#### Discussion
+## Discussion
 
 This method is of no value in debugging memory management issues. Because any number of framework objects may have retained an object in order to hold references to it, while at the same time autorelease pools may be holding any number of deferred releases on an object, it is very unlikely that you can get useful information from this method.
 

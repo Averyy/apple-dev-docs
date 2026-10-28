@@ -19,7 +19,7 @@ func setBoundsOrigin(_ newOrigin: NSPoint)
 - (void) setBoundsOrigin:(NSPoint) newOrigin;
 ```
 
-#### Discussion
+## Discussion
 
 In setting the new bounds origin, this method effectively shifts the view’s coordinate system so `newOrigin` lies at the origin of the view’s frame rectangle. It neither redisplays the view nor marks it as needing display. Set the [`needsDisplay`](./needsdisplay.md) property to [`true`](../../Swift/true.md) when you want the view to be redisplayed.
 

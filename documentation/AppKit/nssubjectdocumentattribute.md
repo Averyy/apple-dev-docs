@@ -15,7 +15,7 @@ The subject of the document.
 extern NSAttributedStringDocumentAttributeKey NSSubjectDocumentAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this attribute is an [`NSString`](../Foundation/nsstring.md) object containing subject of document.
 

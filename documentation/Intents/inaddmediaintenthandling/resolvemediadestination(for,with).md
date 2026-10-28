@@ -28,7 +28,7 @@ optional func resolveMediaDestination(for intent: INAddMediaIntent) async -> INA
 - (void) resolveMediaDestinationForAddMedia:(INAddMediaIntent *) intent withCompletion:(void (^)(INAddMediaMediaDestinationResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to verify the destination for the media your app adds.
 

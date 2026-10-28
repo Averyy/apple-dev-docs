@@ -15,11 +15,11 @@ Gets the highest logical unit number (LUN) in response to a call from the framew
 virtual kern_return_t UserReportHBAHighestLogicalUnitNumber(uint64_t *value);
 ```
 
-#### Return Value
+## Return Value
 
 A value that indicates the result of determining the highest LUN. [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) indicates success. For error definitions, see [IOKit Constants](../../iokit/iokit_constants.md).
 
-#### Discussion
+## Discussion
 
 The framework calls this method to query the driver extension class to determine the highest logical unit number that the controller can address.
 

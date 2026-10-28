@@ -21,7 +21,7 @@ Whether this represents any failure worth persisting.
 var hasFailures: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 A clean run is all-zero, produced inference, and referenced no missing metrics. Used to decide whether to write the error summary when serializing — a clean run omits it entirely.
 

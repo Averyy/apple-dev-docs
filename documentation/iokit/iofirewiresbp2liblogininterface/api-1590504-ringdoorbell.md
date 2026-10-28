@@ -16,11 +16,11 @@ Rings the doorbell on the LUN.
 IOReturn (*ringDoorbell)(void *self);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if the ring started successfully.
 
-#### Discussion
+## Discussion
 
 Non-immediate appends to the ORB chain may require the fetch agent state machine to be notified of the new ORB's presence. This is accomplished by writing to the so called doorbell register. This method begins one of those writes.
 

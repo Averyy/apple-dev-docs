@@ -19,7 +19,7 @@ class func startPeriodicEvents(afterDelay delay: TimeInterval, withPeriod period
 + (void) startPeriodicEventsAfterDelay:(NSTimeInterval) delay withPeriod:(NSTimeInterval) period;
 ```
 
-#### Discussion
+## Discussion
 
 Raises an `NSInternalInconsistencyException` if periodic events are already being generated for the current thread. This method is typically used in a modal loop while tracking mouse-dragged events.
 

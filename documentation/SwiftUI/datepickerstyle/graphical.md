@@ -22,7 +22,7 @@ A date picker style that displays an interactive calendar or clock.
 
 Available when `Self` is `GraphicalDatePickerStyle`.
 
-#### Discussion
+## Discussion
 
 This style is useful when you want to allow browsing through days in a calendar, or when the look of a clock face is appropriate.
 

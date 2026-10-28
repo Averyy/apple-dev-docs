@@ -15,11 +15,11 @@ CMError NCWNewColorWorld (
 );
 ```
 
-#### Return Value
+## Return Value
 
 A `CMError` value. See [Result Codes](../colorsync_manager.md#1670295).
 
-#### Overview
+## Overview
 
 You must set up a color world before your application can perform general purpose color-matching or color-checking operations. To set up a color world for these operations, your application can call `NCWNewColorWorld` after obtaining references to the profiles to use as the source and destination profiles for the color world. The following rules govern the types of profiles allowed:
 
@@ -34,7 +34,7 @@ The quality flag setting (indicating normal mode, draft mode, or best mode) spec
 
 The function [CWConcatColorWorld](./api-1805087-cwconcatcolorworld.md) also allocates a color world reference of type [`CMWorldRef`](../cmworldref.md). 
 
-##### Version-Notes
+### Version-Notes
 
 The parameter descriptions for `src` and `dst` describe changes in how this functions is used starting with ColorSync version 2.5.
 

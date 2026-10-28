@@ -21,7 +21,7 @@ The view has a primary action that can be activated via focus gestures.
 static let activate: FocusInteractions
 ```
 
-#### Discussion
+## Discussion
 
 On macOS and iOS, focus-driven activation interactions are only possible when all-controls keyboard navigation is enabled. On tvOS and watchOS, focus-driven activation interactions are always possible.
 

@@ -21,11 +21,11 @@ Returns an uppercase version of the string.
 func uppercased() -> String
 ```
 
-#### Return Value
+## Return Value
 
 An uppercase copy of the string.
 
-#### Discussion
+## Discussion
 
 The following example transforms a string to uppercase letters:
 

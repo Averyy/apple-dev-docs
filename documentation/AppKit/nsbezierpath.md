@@ -19,7 +19,7 @@ class NSBezierPath
 @interface NSBezierPath : NSObject
 ```
 
-#### Overview
+## Overview
 
 Paths consist of straight and curved line segments joined together. Paths can form recognizable shapes such as rectangles, ovals, arcs, and glyphs; they can also form complex polygons using either straight or curved line segments. A single path can be closed by connecting its two endpoints, or it can be left open.
 

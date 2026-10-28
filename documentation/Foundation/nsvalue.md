@@ -25,15 +25,15 @@ class NSValue
 @interface NSValue : NSObject
 ```
 
-#### Overview
+## Overview
 
 An [`NSValue`](./nsvalue.md) object can hold any of the scalar types such as `int`, `float`, and `char`, as well as pointers, structures, and object `id` references. Use this class to work with such data types in collections (such as [`NSArray`](./nsarray.md) and [`NSSet`](./nsset.md)), [Key-value coding](https://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/KeyValueCoding.html#//apple_ref/doc/uid/TP40008195-CH25), and other APIs that require Objective-C objects. [`NSValue`](./nsvalue.md) objects are always immutable.
 
-##### Subclassing Notes
+### Subclassing Notes
 
 The abstract [`NSValue`](./nsvalue.md) class is the public interface of a class cluster consisting mostly of private, concrete classes that create and return a value object appropriate for a given situation. It is possible to subclass [`NSValue`](./nsvalue.md), but doing so requires providing storage facilities for the value (which is not inherited by subclasses) and implementing two primitive methods.
 
-###### Methods to Override
+#### Methods to Override
 
 Any subclass of [`NSValue`](./nsvalue.md) *must* override the primitive instance methods [`getValue(_:)`](./nsvalue/getvalue%28_%29.md) and [`objCType`](./nsvalue/objctype.md). These methods must operate on the storage that you provide for the value.
 
@@ -41,7 +41,7 @@ You might want to implement an initializer for your subclass that is suited to t
 
 You may also wish to implement the [`hash`](../ObjectiveC/nsobjectprotocol/hash.md) method to make your subclass work well in collections.
 
-###### Alternatives to Subclassing
+#### Alternatives to Subclassing
 
 If you need only to use [`NSValue`](./nsvalue.md) objects for wrap a custom data types or structures defined by your app, you need not create an [`NSValue`](./nsvalue.md) subclass. Instead, create a category that uses existing [`NSValue`](./nsvalue.md) methods to store and retrieve data of your custom type. For example, the code below defines a custom Polyhedron structure and creates [`NSValue`](./nsvalue.md) convenience methods to store and retrieve it:
 

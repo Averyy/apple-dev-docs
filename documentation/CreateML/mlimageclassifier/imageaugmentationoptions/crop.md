@@ -19,7 +19,7 @@ An option for augmenting training data by creating cropped versions of each imag
 static let crop: MLImageClassifier.ImageAugmentationOptions
 ```
 
-#### Discussion
+## Discussion
 
 Use this option to tell the image classifier to augment your training data set by creating cropped versions of the original images.
 

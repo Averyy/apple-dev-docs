@@ -23,7 +23,7 @@ var torchLevel: Float { get }
 @property (nonatomic, readonly) float torchLevel;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is a floating-point number whose value is in the range 0.0 to 1.0. A torch level of 0.0 indicates that the torch is off. A torch level of 1.0 represents the theoretical maximum value, although the actual maximum value may be lower if the device is currently overheated.
 

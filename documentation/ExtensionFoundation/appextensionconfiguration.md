@@ -26,7 +26,7 @@ An interface you use to configure the XPC connection in your app extension.
 
 - [Building an app extension to support a host app](./building-an-app-extension-to-support-a-host-app.md)
 
-#### Overview
+## Overview
 
 Adopt this protocol in a custom type, and use that type to finalize the XPC connection to the host app. The host app tries to create an XPC connection to your app extension shortly after launching it. The system directs that connection request to the code in your configuration object. Use your code to provide the host with the information it needs to communicate with your app extension.
 

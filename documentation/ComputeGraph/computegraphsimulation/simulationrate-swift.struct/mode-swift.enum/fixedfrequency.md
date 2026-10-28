@@ -21,7 +21,7 @@ Simulate using a fixed number of steps per second.
 case fixedFrequency
 ```
 
-#### Discussion
+## Discussion
 
 This can result in zero, one, or more steps per frame, depending on the frequency specified and the current framerate.
 

@@ -26,23 +26,23 @@ struct UnsafeMutableRawPointer
 
 - [Using Imported C Functions in Swift](./using-imported-c-functions-in-swift.md)
 
-#### Overview
+## Overview
 
 The `UnsafeMutableRawPointer` type provides no automated memory management, no type safety, and no alignment guarantees. You are responsible for handling the life cycle of any memory you work with through unsafe pointers, to avoid leaks or undefined behavior.
 
 Memory that you manually manage can be either *untyped* or *bound* to a specific type. You use the `UnsafeMutableRawPointer` type to access and manage raw bytes in memory, whether or not that memory has been bound to a specific type.
 
-### Understanding a Pointer’s Memory State
+## Understanding a Pointer’s Memory State
 
 The memory referenced by an `UnsafeMutableRawPointer` instance can be in one of several states. Many pointer operations must only be applied to pointers with memory in a specific state—you must keep track of the state of the memory you are working with and understand the changes to that state that different operations perform. Memory can be untyped and uninitialized, bound to a type and uninitialized, or bound to a type and initialized to a value. Finally, memory that was allocated previously may have been deallocated, leaving existing pointers referencing unallocated memory.
 
-#### Raw, Uninitialized Memory
+## Raw, Uninitialized Memory
 
 Raw memory that has just been allocated is in an *uninitialized, untyped* state. Uninitialized memory must be initialized with values of a type before it can be used with any typed operations.
 
 You can use methods like `initializeMemory(as:from:)` and `moveInitializeMemory(as:from:count:)` to bind raw memory to a type and initialize it with a value or series of values. To bind uninitialized memory to a type without initializing it, use the `bindMemory(to:count:)` method. These methods all return typed pointers for further typed access to the memory.
 
-#### Typed Memory
+## Typed Memory
 
 Memory that has been bound to a type, whether it is initialized or uninitialized, is typically accessed using typed pointers—instances of `UnsafePointer` and `UnsafeMutablePointer`. Initialization, assignment, and deinitialization can be performed using `UnsafeMutablePointer` methods.
 
@@ -52,7 +52,7 @@ Memory that has been bound to a type can be rebound to a different type only aft
 
 When reading from or writing to  memory as raw bytes when that memory is bound to a type, you must ensure that you satisfy any alignment requirements. Writing to typed memory as raw bytes must only be performed when the bound type is a trivial type.
 
-### Raw Pointer Arithmetic
+## Raw Pointer Arithmetic
 
 Pointer arithmetic with raw pointers is performed at the byte level. When you add to or subtract from a raw pointer, the result is a new raw pointer offset by that number of bytes. The following example allocates four bytes of memory and stores `0xFF` in all four bytes:
 
@@ -76,7 +76,7 @@ Always remember to deallocate any memory that you allocate yourself.
 bytesPointer.deallocate()
 ```
 
-### Implicit Casting and Bridging
+## Implicit Casting and Bridging
 
 When calling a function or method with an `UnsafeMutableRawPointer` parameter, you can pass an instance of that specific pointer type, pass an instance of a compatible pointer type, or use Swift’s implicit bridging to pass a compatible pointer.
 

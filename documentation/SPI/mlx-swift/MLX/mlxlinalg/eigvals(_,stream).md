@@ -17,11 +17,11 @@ Compute the eigenvalues of a square matrix.
 static func eigvals(_ array: MLXArray, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-#### Return Value
+## Return Value
 
 The eigenvalues (not necessarily in order)
 
-#### Discussion
+## Discussion
 
 This function differs from `numpy.linalg.eigvals` in that the return type is always complex even if the eigenvalues are all real.
 

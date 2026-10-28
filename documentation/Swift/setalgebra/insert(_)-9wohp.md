@@ -24,11 +24,11 @@ mutating func insert(_ newMember: Self.Element) -> (inserted: Bool, memberAfterI
 
 Available when `Self` is `Self.Element`.
 
-#### Return Value
+## Return Value
 
 `(true, newMember)` if `newMember` was not contained in `self`. Otherwise, returns `(false, oldMember)`, where `oldMember` is the member of the set equal to `newMember`.
 
-#### Discussion
+## Discussion
 
 In the following example, the `.secondDay` shipping option is added to the `freeOptions` option set if `purchasePrice` is greater than 50.0. For the `ShippingOptions` declaration, see the `OptionSet` protocol discussion.
 

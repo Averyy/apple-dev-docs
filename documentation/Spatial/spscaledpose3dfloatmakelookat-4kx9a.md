@@ -19,11 +19,11 @@
 static SPScaledPose3DFloat SPScaledPose3DFloatMakeLookAt(SPVector3DFloat forward, float scale, SPVector3DFloat up);
 ```
 
-#### Return Value
+## Return Value
 
 A new scaled pose stucture.
 
-#### Discussion
+## Discussion
 
 Returns a scaled pose with the specified forward and up vectors.
 

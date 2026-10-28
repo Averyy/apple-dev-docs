@@ -26,7 +26,7 @@ var failTransactionsEnabled: Bool { get set }
 @property (nonatomic, assign) BOOL failTransactionsEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `false`. Set this value to `true` when you want to test your app’s response to [`SKPaymentTransaction`](../../StoreKit/skpaymenttransaction.md) transactions that fail. Attempted transactions in the payment queue show the [`SKPaymentTransactionState.failed`](../../StoreKit/skpaymenttransactionstate/failed.md) state, with the error code that you set in [`failureError`](./failureerror.md).
 

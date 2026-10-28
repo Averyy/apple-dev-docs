@@ -20,11 +20,11 @@ func CGWindowListCopyWindowInfo(_ option: CGWindowListOption, _ relativeToWindow
 extern CFArrayRefCGWindowListCopyWindowInfo(CGWindowListOption option, CGWindowID relativeToWindow);
 ```
 
-#### Return Value
+## Return Value
 
 An array of [`CFDictionary`](../CoreFoundation/cfdictionary.md) types, each of which contains information about one of the windows in the current user session. If there are no windows matching the desired criteria, the function returns an empty array. If you call this function from outside of a GUI security session or when no window server is running, this function returns `NULL`.
 
-#### Discussion
+## Discussion
 
 You can use this function to get detailed information about the configuration of one or more windows in the current user session. For example, you can use this function to get the bounds of the window, its window ID, and information about how it is managed by the window server. For the list of keys and values that may be present in the dictionary, see [Required Window List Keys](./required-window-list-keys.md) and [Optional Window List Keys](./optional-window-list-keys.md).
 

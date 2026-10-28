@@ -19,7 +19,7 @@ protocol NSColorPickingCustom : NSColorPickingDefault
 @protocol NSColorPickingCustom <NSColorPickingDefault>
 ```
 
-#### Overview
+## Overview
 
 [`NSColorPickingCustom`](./nscolorpickingcustom.md) works with the [`NSColorPickingDefault`](./nscolorpickingdefault.md) protocol—which provides basic behavior for a color picker—to enable custom color pickers.
 

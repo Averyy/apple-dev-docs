@@ -23,7 +23,7 @@ var code: ManagedAppConfigurationDecodingErrorCode { get set }
 
 - [Specifying and decoding a configuration](../specifying-and-decoding-a-configuration.md)
 
-#### Discussion
+## Discussion
 
 The system reserves values equal to or greater than `ManagedAppConfigurationDecodingErrorCodes.firstReserved`.
 

@@ -23,7 +23,7 @@ case long
 NSDateFormatterLongStyle
 ```
 
-#### Discussion
+## Discussion
 
 Specifies a long style, typically with full text, such as “November 23, 1937” or “3:30:32 PM PST”.
 

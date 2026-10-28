@@ -17,7 +17,7 @@ typealias IOBluetoothServiceBrowserControllerOptions = UInt32
 typedef uint32_t IOBluetoothServiceBrowserControllerOptions;
 ```
 
-#### Discussion
+## Discussion
 
 Option values to customize the behavior of an IOBluetoothServiceBrowserController object.
 

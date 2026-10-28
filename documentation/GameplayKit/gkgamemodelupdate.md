@@ -24,7 +24,7 @@ protocol GKGameModelUpdate : NSObjectProtocol
 @protocol GKGameModelUpdate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 You adopt this protocol in a custom class that describes a move in your game. You use that class, along with another custom class implementing the [`GKGameModel`](./gkgamemodel.md) protocol, to describe your gameplay to a [`GKStrategist`](./gkstrategist.md) object. You can then use the strategist to find optimal moves during gameplay—for example, to create a computer-controlled player, or to offer hints to a human player.
 

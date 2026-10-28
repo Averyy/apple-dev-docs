@@ -15,11 +15,11 @@ This payload that configures managed login items, which auto-enables and auto-al
 object ServiceManagementManagedLoginItems
 ```
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.servicemanagement` as the payload type.
 
-##### Profile availability
+### Profile availability
 
 |  |  |
 | --- | --- |
@@ -31,7 +31,7 @@ Specify `com.apple.servicemanagement` as the payload type.
 | Allowed in user enrollment | N/A |
 | Allow multiple payloads | macOS |
 
-##### Profile example
+### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>

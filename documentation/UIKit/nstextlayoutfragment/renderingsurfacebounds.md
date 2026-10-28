@@ -23,7 +23,7 @@ var renderingSurfaceBounds: CGRect { get }
 @property (readonly) CGRect renderingSurfaceBounds;
 ```
 
-#### Discussion
+## Discussion
 
 The coordinate system is vertically flipped from the `layoutFragmentFrame` origin ({`0`,`0`} is at the upper-left corner). The size should be larger than `layoutFragmentFrame.size`. The origin could be in the negative coordinate since the rendering could stretch out of `layoutFragmentFrame`. Only valid when `state` greater than [`NSTextLayoutFragment.State.estimatedUsageBounds`](./state-swift.enum/estimatedusagebounds.md).
 

@@ -19,7 +19,7 @@ func asynchronousMetadataFlush() throws
 - (BOOL) asynchronousMetadataFlushWithError:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 This method schedules a flush of data previously written with [`delayedMetadataWriteFrom:startingAt:length:error:`](./delayedmetadatawritefrom_startingat_length_error_.md) to the resource and returns immediately without blocking. This method doesn’t wait to check the flush’s status. If an error prevents the flush from being scheduled, the error is indicated by the in-out `error` parameter.
 

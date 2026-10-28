@@ -30,7 +30,7 @@ extern CFStringRef const kSecMatchLimit;
 - [Searching for keychain items](./searching-for-keychain-items.md)
 - [Storing Keys in the Keychain](./storing-keys-in-the-keychain.md)
 
-#### Discussion
+## Discussion
 
 The corresponding value is of type [`CFNumber`](../CoreFoundation/cfnumber.md). If provided, this value specifies the maximum number of results to return or otherwise act upon. For a single item, specify [`kSecMatchLimitOne`](./ksecmatchlimitone.md). To specify all matching items, specify [`kSecMatchLimitAll`](./ksecmatchlimitall.md). The default behavior is function-dependent.
 

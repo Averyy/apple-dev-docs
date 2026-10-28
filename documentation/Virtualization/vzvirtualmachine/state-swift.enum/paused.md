@@ -19,7 +19,7 @@ case paused
 VZVirtualMachineStatePaused
 ```
 
-#### Discussion
+## Discussion
 
 The virtual machine can enter this state only from the [`VZVirtualMachine.State.pausing`](./pausing.md) state.
 

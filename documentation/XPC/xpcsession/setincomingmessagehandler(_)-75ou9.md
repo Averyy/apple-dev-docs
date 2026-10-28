@@ -22,7 +22,7 @@ Sets a closure to receive incoming dictionary messages for a session.
 func setIncomingMessageHandler(_ incomingMessageHandler: @escaping @Sendable (XPCDictionary) -> XPCDictionary?)
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  Only call this method on an inactive session.
 

@@ -25,7 +25,7 @@ struct compression_algorithm
 typedef enum { ... } compression_algorithm;
 ```
 
-#### Overview
+## Overview
 
 Choose an algorithm according to the following guidelines:
 

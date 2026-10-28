@@ -15,15 +15,15 @@ CMError CMSearchGetIndProfile (
 );
 ```
 
-#### Return Value
+## Return Value
 
 A `CMError` value. See [Result Codes](../colorsync_manager.md#1670295).
 
-#### Overview
+## Overview
 
 Before your application can call the `CMSearchGetIndProfile` function, it must call the function [CMNewProfileSearch](./api-1805344-cmnewprofilesearch.md) to perform a profile search and produce a search result list. The search result list is a private data structure maintained by the ColorSync Manager. After your application has finished using the profile reference, it must close the reference by calling the function  [CMCloseProfile](./api-1804861-cmcloseprofile.md).  
 
-##### Version-Notes
+### Version-Notes
 
 This function is not recommended for use in ColorSync 2.5.
 

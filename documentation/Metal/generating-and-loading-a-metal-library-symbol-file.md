@@ -5,7 +5,7 @@
 
 Debug your Metal shaders from your production apps by creating companion symbol files at compile time and loading them at debug time.
 
-#### Overview
+## Overview
 
 With Xcode 13 or later, you can generate a separate symbol file for each Metal library built for a project. Each symbol file is a companion file that stores useful debugging information for the Metal library it represents. By separating each Metal library from its symbols, you can:
 
@@ -15,7 +15,7 @@ With Xcode 13 or later, you can generate a separate symbol file for each Metal l
 
 See [Debugging the shaders within a draw command or compute dispatch](../Xcode/debugging-the-shaders-within-a-draw-command-or-compute-dispatch.md) to learn how to debug your Metal shaders.
 
-##### Generate a symbol file with a single command
+### Generate a symbol file with a single command
 
 Generate a Metal library’s symbol file in a single command by running the Metal compiler with the `-frecord-sources=flat` option.
 
@@ -30,7 +30,7 @@ The `-frecord-sources=flat` option, which replaces the deprecated `-MO=<value>` 
 - `default.metallib`, the compiled Metal library
 - `default.metallibsym`, the library’s companion symbol file
 
-##### Generate a symbol file with multiple commands
+### Generate a symbol file with multiple commands
 
 You can also generate a Metal library’s symbol file with multiple commands, which may be more appropriate for your workflow than the single-command technique. For those scenarios, you can generate each Metal library and its companion symbol file by following these steps:
 
@@ -67,7 +67,7 @@ The `-remove-source` option modifies the Metal library file by removing its embe
 
 > **Note**:  The Metal command-line tools for Windows use the same options and arguments as their macOS counterparts.
 
-##### Load a symbol file in Xcode
+### Load a symbol file in Xcode
 
 As you debug a shader, Xcode automatically presents a prompt when it doesn’t have access to a shader library’s source code.
 

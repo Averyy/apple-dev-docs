@@ -24,11 +24,11 @@ func isEqualWithTypeCoercion(to value: Any!) -> Bool
 - (BOOL) isEqualWithTypeCoercionToObject:(id) value;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the values are equivalent; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 This method is analogous to the equality operator `==` in JavaScript: it first converts its operands to the same type (if they are not already of the same type), then applies a strict equality comparison to the result. JavaScript object values are equal if and only if they refer to the same object instance.
 

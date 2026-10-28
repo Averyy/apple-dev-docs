@@ -21,7 +21,7 @@ Casts a property to the provided type.
 func `as`<T>(_ type: T.Type) throws -> T where T : IntentValueConvertible
 ```
 
-#### Discussion
+## Discussion
 
 If the value’s type doesn’t match, this method throws an error.
 

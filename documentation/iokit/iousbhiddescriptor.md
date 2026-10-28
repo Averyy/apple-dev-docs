@@ -16,7 +16,7 @@ typedef struct IOUSBHIDDescriptor {
 } IOUSBHIDDescriptor;
 ```
 
-#### Overview
+## Overview
 
 USB HID Descriptor. See the USB HID Specification at [http://www.usb.org](http://www.usb.org). (This structure should have used the #pragma pack(1) compiler directive to get byte alignment.
 

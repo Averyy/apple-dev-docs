@@ -17,7 +17,7 @@ Returns the absolute pathname of the directory currently shown in the panel.
 - (NSString *) directory;
 ```
 
-#### Return Value
+## Return Value
 
 The absolute pathname of the directory currently shown in the panel.
 

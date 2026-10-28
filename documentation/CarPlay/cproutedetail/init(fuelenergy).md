@@ -21,11 +21,11 @@ convenience init(fuelEnergy: Measurement<UnitEnergy>)
 + (instancetype) routeDetailWithFuelEnergy:(NSMeasurement<NSUnitEnergy *> *) fuelEnergy;
 ```
 
-#### Return Value
+## Return Value
 
 A new @c CPRouteDetail instance representing the fuel energy
 
-#### Discussion
+## Discussion
 
 Use this method to display fuel levels for hydrogen fuel cell vehicles or other vehicles where fuel is measured in energy units rather than volume or mass.
 

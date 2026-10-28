@@ -19,15 +19,15 @@ Tells SwiftData not to persist the annotated property when managing the owning c
 ## Declaration
 
 ```swift
-@attached
-(peer) macro Transient()
+@attached(peer)
+macro Transient()
 ```
 
 ## Mentions
 
 - [Preserving your app’s model data across launches](./preserving-your-apps-model-data-across-launches.md)
 
-#### Overview
+## Overview
 
 If your model class has one or more stored properties that you want to omit from writes to the persistent storage, annotate each of those properties with the `@Transient` macro.
 

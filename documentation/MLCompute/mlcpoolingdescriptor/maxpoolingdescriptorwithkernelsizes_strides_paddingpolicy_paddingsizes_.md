@@ -19,7 +19,7 @@ Creates a descriptor for a max pooling function with the kernel sizes, strides, 
 + (instancetype) maxPoolingDescriptorWithKernelSizes:(NSArray<NSNumber *> *) kernelSizes strides:(NSArray<NSNumber *> *) strides paddingPolicy:(MLCPaddingPolicy) paddingPolicy paddingSizes:(NSArray<NSNumber *> *) paddingSizes;
 ```
 
-#### Return Value
+## Return Value
 
 A pooling descriptor.
 

@@ -28,7 +28,7 @@ The user’s preference for receiving communication notifications.
 @property (atomic, copy, readonly, nullable) NSNumber * isFocused;
 ```
 
-#### Discussion
+## Discussion
 
 When this value is [`true`](../../Swift/true.md), the user doesn’t want notifications to interrupt them. Use this information to display the user’s availability to other people in your communication service.
 

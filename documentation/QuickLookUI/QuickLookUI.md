@@ -9,7 +9,7 @@ Create previews of files to use inside your macOS app.
 **Availability**:
 - macOS 12.0+
 
-#### Overview
+## Overview
 
 When showing files in your app, including the ability to quickly preview a file and its content can be helpful to your users. For example, you may want to allow users to zoom into a photo, play back an audio file, and so on. Use the Quick Look framework to show a preview of common file types in your macOS app that allow basic interactions. Quick Look can generate previews for common file types, including:
 
@@ -22,7 +22,7 @@ When showing files in your app, including the ability to quickly preview a file 
 
 You can provide previews for your own data types by either rendering a view with your own view controller or by returning a supported preview format such as PDF or HTML.
 
-##### Providing Quick Look Previews for your Data Types
+### Providing Quick Look Previews for your Data Types
 
 To provide Quick Look previews for your own file types, create a Quick Look Preview Extension with either a view controller or data based preview. In either case, add your supported content types to the `QLSupportedContentTypes` array in the `Info.plist` file of the extension.
 

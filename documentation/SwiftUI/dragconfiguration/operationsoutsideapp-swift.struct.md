@@ -19,7 +19,7 @@ Describes the suggested drag operations to other applications.
 struct OperationsOutsideApp
 ```
 
-#### Overview
+## Overview
 
 To create a default configuration, initialize it without parameters.
 

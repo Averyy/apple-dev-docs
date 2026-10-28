@@ -19,11 +19,11 @@
 static SPSize3DFloat SPProjectiveTransform3DFloatGetScale(SPProjectiveTransform3DFloat transform);
 ```
 
-#### Return Value
+## Return Value
 
 A size structure that represents the transform’s scale.
 
-#### Discussion
+## Discussion
 
 Returns a projective transform’s scale.
 

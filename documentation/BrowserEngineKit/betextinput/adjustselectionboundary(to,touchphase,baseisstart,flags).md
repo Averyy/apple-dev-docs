@@ -27,7 +27,7 @@ func adjustSelectionBoundary(to point: CGPoint, touchPhase touch: BESelectionTou
 
 - [Integrating custom browser text views with UIKit](../integrating-custom-browser-text-views-with-uikit.md)
 
-#### Discussion
+## Discussion
 
 When you receive this method, call [`selectionBoundaryAdjusted(to:touchPhase:flags:)`](../betextinteraction/selectionboundaryadjusted%28to,touchphase,flags%29.md) to notify the system that your text view handled the update.
 

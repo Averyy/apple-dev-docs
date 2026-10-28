@@ -20,7 +20,7 @@ typealias CGEventMask = UInt64
 typedef uint64_t CGEventMask;
 ```
 
-#### Discussion
+## Discussion
 
 When you call either [`tapCreate(tap:place:options:eventsOfInterest:callback:userInfo:)`](./cgevent/tapcreate%28tap,place,options,eventsofinterest,callback,userinfo%29.md) or [`tapCreateForPSN(processSerialNumber:place:options:eventsOfInterest:callback:userInfo:)`](./cgevent/tapcreateforpsn%28processserialnumber,place,options,eventsofinterest,callback,userinfo%29.md) to register an event tap, you supply a bit mask that identifies the set of events to be observed. You specify each event using one of the event type constants listed in [`CGEventType`](./cgeventtype.md). To form the bit mask, use the `CGEventMaskBit` macro to convert each constant into an event mask and then OR the individual masks together. For example:
 

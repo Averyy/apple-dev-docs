@@ -4,13 +4,13 @@
 
 Respond appropriately when a server demands authentication for a URL request.
 
-#### Overview
+## Overview
 
 When your app makes a request with a [`URLSessionTask`](./urlsessiontask.md), the server may respond with one or more demands for credentials before continuing. The session task attempts to handle this for you. If it can’t, it calls your session’s [`delegate`](./urlsession/delegate.md) to handle the challenges.
 
 Implement the delegate methods described in this article to answer challenges issued by a server that your app connects to. If you don’t implement a delegate, your request may be denied by the server, and you receive a response with HTTP status code `401` (Forbidden) instead of the data you expect.
 
-##### Determine the appropriate delegate method
+### Determine the appropriate delegate method
 
 Implement one or both delegate authentication methods, depending on the nature of the challenge(s) you receive.
 
@@ -23,13 +23,13 @@ As a simple example, consider what happens when you request an `http` URL protec
 
 > **Note**:  If you connect via `https`, you also receive a server trust challenge. See [Performing manual server trust authentication](./performing-manual-server-trust-authentication.md) for information on handling this type of session-wide challenge.
 
-[Figure 1](./url_loading_system/handling_an_authentication_challenge.md#2948287) outlines a strategy for responding to the HTTP Basic challenge.
+[Figure 1](./handling-an-authentication-challenge.md#2948287) outlines a strategy for responding to the HTTP Basic challenge.
 
 ![Decision tree showing states and choices for handling an authentication challenge. The first decision point is whether the received challenge’s authentication method is HTTP Basic; if not, use system default handling. If so, the user is challenged for username and password. The second decision point asks if the user did provide a username and password. If yes, create and use credential; if not, cancel the challenge.](https://developer.apple.com/tutorials/images/com.apple.foundation/media-2948287@2x.png)
 
 The following sections implement this strategy.
 
-##### Determine the type of authentication challenge
+### Determine the type of authentication challenge
 
 When you receive an authentication challenge, use your delegate method to determine the type of challenge. The delegate method receives a [`URLAuthenticationChallenge`](./urlauthenticationchallenge.md) instance that describes the challenge being issued. This instance contains a [`protectionSpace`](./urlauthenticationchallenge/protectionspace.md) property whose [`authenticationMethod`](./urlprotectionspace/authenticationmethod.md) property indicates the kind of challenge being issued (such as a request for a username and password, or a client certificate). You use this value to determine whether you can handle the challenge.
 
@@ -47,7 +47,7 @@ guard authMethod == NSURLAuthenticationMethodHTTPBasic else {
 }
 ```
 
-##### Create a credential instance
+### Create a credential instance
 
 To successfully answer the challenge, you need to submit a credential appropriate to type of challenge you have received. For HTTP Basic and HTTP Digest challenges, you provide a username and password. The following example shows a helper method that attempts to create a [`URLCredential`](./urlcredential.md) instance from user-interface fields, if they are filled in.
 
@@ -66,7 +66,7 @@ func credentialsFromUI() -> URLCredential? {
 
 In this example, the returned [`URLCredential`](./urlcredential.md) has [`URLCredential.Persistence.forSession`](./urlcredential/persistence-swift.enum/forsession.md) persistence, so it’s only stored by the [`URLSession`](./urlsession.md) instance that created the task. You would need to supply new [`URLCredential`](./urlcredential.md) instances for tasks created by other session instances, and on future runs of the app.
 
-##### Call the completion handler
+### Call the completion handler
 
 Once you’ve tried to create a credential instance, you must call the completion handler to answer the challenge.
 
@@ -89,7 +89,7 @@ If you supply a credential that is accepted by the server, the task begins uploa
 
 > ❗ **Important**:  You can pass the completion handler to other methods or temporarily store it in a property, for situations like waiting for the user to complete a username/password dialog. But eventually you must call the completion handler to complete the challenge and allow the task to proceed, even if you’re choosing to cancel, as seen in the failure case of the previous example.
 
-##### Handle failures gracefully
+### Handle failures gracefully
 
 If the credential is refused, the system calls your delegate method again. When this happens, the callback provides your rejected credential as the [`proposedCredential`](./urlauthenticationchallenge/proposedcredential.md) property of the [`URLAuthenticationChallenge`](./urlauthenticationchallenge.md) parameter. The challenge instance also includes a [`previousFailureCount`](./urlauthenticationchallenge/previousfailurecount.md) property, which indicates how many times the credential has been rejected. You can use these properties to determine what to do next. For example, if the [`previousFailureCount`](./urlauthenticationchallenge/previousfailurecount.md) is greater than zero, you could use the user string of the [`proposedCredential`](./urlauthenticationchallenge/proposedcredential.md) to populate a user/password reentry UI.
 

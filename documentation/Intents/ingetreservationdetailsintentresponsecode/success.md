@@ -24,7 +24,7 @@ case success
 INGetReservationDetailsIntentResponseCodeSuccess
 ```
 
-#### Discussion
+## Discussion
 
 Use this code when your app has successfully retrieved the reservation details.
 

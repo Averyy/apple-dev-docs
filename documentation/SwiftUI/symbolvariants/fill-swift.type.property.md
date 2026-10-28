@@ -21,7 +21,7 @@ A variant that fills the symbol.
 static let fill: SymbolVariants
 ```
 
-#### Discussion
+## Discussion
 
 Use this variant with a call to the [`symbolVariant(_:)`](../view/symbolvariant%28_%29.md) modifier to draw filled symbols, for those symbols that have a filled variant:
 

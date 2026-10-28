@@ -22,7 +22,7 @@ var enabledExposureSignals: Set<AVCaptureDeviceExposureSignal> { get set }
 @property (nonatomic, nonnull) NSSet<NSString *> * enabledExposureSignals;
 ```
 
-#### Discussion
+## Discussion
 
 When `automaticallyEnablesExposureSignals` is true, the system may automatically change the enabled signals based on other enabled device properties. When `automaticallyEnablesExposureSignals` is false, you may assign a custom set of exposure signals to this property. This property is key-value observable.
 

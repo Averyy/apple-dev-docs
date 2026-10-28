@@ -18,7 +18,7 @@ A behavior that determines whether a search field offers dictation, and what sta
 struct TextInputDictationBehavior
 ```
 
-#### Overview
+## Overview
 
 Pass a value of this type to the [`searchDictationBehavior(_:)`](./view/searchdictationbehavior%28_%29.md) modifier. Search fields use [`automatic`](./textinputdictationbehavior/automatic.md) unless you choose otherwise.
 

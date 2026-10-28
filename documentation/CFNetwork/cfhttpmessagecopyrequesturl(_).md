@@ -24,7 +24,7 @@ func CFHTTPMessageCopyRequestURL(_ request: CFHTTPMessage) -> Unmanaged<CFURL>?
 extern CFURLRefCFHTTPMessageCopyRequestURL(CFHTTPMessageRef request);
 ```
 
-#### Return Value
+## Return Value
 
 A `CFURLRef` object containing the URL or `NULL` if there was a problem creating the object. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 

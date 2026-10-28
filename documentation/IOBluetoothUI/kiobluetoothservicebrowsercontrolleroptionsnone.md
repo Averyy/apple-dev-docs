@@ -17,7 +17,7 @@ var kIOBluetoothServiceBrowserControllerOptionsNone: Int { get }
 kIOBluetoothServiceBrowserControllerOptionsNone
 ```
 
-#### Discussion
+## Discussion
 
 - no options set.
 

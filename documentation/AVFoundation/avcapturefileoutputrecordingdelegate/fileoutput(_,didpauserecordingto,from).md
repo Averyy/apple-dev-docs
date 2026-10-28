@@ -23,7 +23,7 @@ optional func fileOutput(_ output: AVCaptureFileOutput, didPauseRecordingTo file
 - (void) captureOutput:(AVCaptureFileOutput *) output didPauseRecordingToOutputFileAtURL:(NSURL *) fileURL fromConnections:(NSArray<AVCaptureConnection *> *) connections;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called whenever a request to pause recording is actually respected.
 

@@ -25,7 +25,7 @@ var uniqueID: String? { get }
 @property (nonatomic, readonly, nullable) NSString * uniqueID;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property may be `nil` if no unique identifier is defined for this group.
 

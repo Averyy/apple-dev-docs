@@ -21,7 +21,7 @@ Calculates the double-precision maximum magnitude of a vector.
 extern void vDSP_maxmgvD(const double *__A, vDSP_Stride __IA, double *__C, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 This function calculates the maximum magnitude of the first `N` elements of input vector `A`, and writes the result to output scalar `C`.
 

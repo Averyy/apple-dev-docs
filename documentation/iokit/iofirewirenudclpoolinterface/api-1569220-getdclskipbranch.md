@@ -14,7 +14,7 @@
 NuDCLRef (*GetDCLSkipBranch)(NuDCLRef dcl);
 ```
 
-#### Discussion
+## Discussion
 
 Description forthcoming
 

@@ -5,7 +5,7 @@
 
 Access restricted areas of the operating system, and control access to particular features of your macOS app.
 
-#### Overview
+## Overview
 
 The `Security.Authorization` API is a programming interface to the Security Server and its policy database. This API facilitates access control to restricted areas of the operating system and allows you to restrict a user’s access to particular features in your macOS app. Use authorization services in:
 

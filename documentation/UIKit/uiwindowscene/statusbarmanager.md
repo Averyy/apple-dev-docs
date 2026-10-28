@@ -22,7 +22,7 @@ var statusBarManager: UIStatusBarManager? { get }
 @property (nonatomic, readonly, nullable) UIStatusBarManager * statusBarManager;
 ```
 
-#### Discussion
+## Discussion
 
 Use this object to get details about the status bar, such as whether it’s hidden.
 

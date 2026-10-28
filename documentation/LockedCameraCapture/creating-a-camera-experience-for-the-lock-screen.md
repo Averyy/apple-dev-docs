@@ -5,7 +5,7 @@
 
 Offer your app’s camera experience on locked devices from Control Center, the Lock Screen, and the Action button.
 
-#### Overview
+## Overview
 
 A locked camera capture extension allows people to access your app’s camera experience quickly from a WidgetKit control in Control Center, from the Lock Screen, or with the Action button. The lifecycle of a capture extension involves capturing content while a device is locked and allowing someone to continue to your app, once authenticated, to view or complete a task with the captured content.
 
@@ -16,7 +16,7 @@ While your capture extension is active, the system places the following restrict
 - When the system suspends the capture extension, it erases the capture extension’s container directory. An extension typically suspends when someone dismisses the extension by swiping up from the bottom of the screen or by pressing the side button.
 - The app extension terminates shortly after launch if it doesn’t have an active camera view that uses [`AVCaptureEventInteraction`](../AVKit/avcaptureeventinteraction.md) to handle events from the hardware buttons, or if access to the camera hasn’t been requested.
 
-##### Add a locked camera capture extension to your project
+### Add a locked camera capture extension to your project
 
 The Locked Camera Capture Extension template provides everything you need to start building your capture extension:
 
@@ -29,7 +29,7 @@ The template creates an extension target that contains an implementation of [`Lo
 
 > **Note**: The capture extension inherits camera permissions from your app. If the person hasn’t granted access, the system prompts them to authenticate and unlock their device. It then opens the app and the app requests access. For more information about requesting camera access, refer to [Requesting authorization to capture and save media](../AVFoundation/requesting-authorization-to-capture-and-save-media.md).
 
-##### Launch your app extension
+### Launch your app extension
 
 Create a control widget that launches the capture extension when the device is locked. People will need to add your app’s control to Control Center, the Lock screen, or configure the Action button with it.
 
@@ -78,7 +78,7 @@ Button {
 }
 ```
 
-##### Capture images and videos
+### Capture images and videos
 
 Once you’ve added your locked camera capture extension to your project, you’re ready to build a view to capture content with.
 
@@ -129,11 +129,11 @@ struct Viewfinder: UIViewControllerRepresentable {
 }
 ```
 
-##### Save captured content
+### Save captured content
 
 Use [PhotoKit](../PhotoKit/PhotoKit.md) or [`sessionContentURL`](./lockedcameracapturesession/sessioncontenturl.md) from `LockedCameraCaptureSession` to store all captured content. The URL is a temporary directory that’s created when the app extension launches, within the capture extension’s containing app’s data container. The system erases and resets any content saved to the capture extension’s data container when the capture extension suspends or terminates.
 
-##### Launch your app from the capture extension
+### Launch your app from the capture extension
 
 You can provide a way for someone to launch your app from the capture extension, making it easy for them to continue a flow using the captured content that requires access not available within the capture extension. For example, you can help someone quickly post a video to a social network, or tap a button to begin editing an image.
 
@@ -157,7 +157,7 @@ func launchApp(with session: LockedCameraCaptureSession, info: String) {
 }
 ```
 
-##### Access captured content in your app
+### Access captured content in your app
 
 Use the [`sessionContentUpdates`](./lockedcameracapturemanager/sessioncontentupdates.md) `AsyncSequence` from the [`LockedCameraCaptureManager`](./lockedcameracapturemanager.md) object in the app to process captured content from the capture extension sessions and move the captured content where it belongs long-term. The sequence begins with the URLs of the current session content directories. The sequence continues providing updates about any newly added or removed session content directories. When transitioning from the capture extension to the app, the most recent session content directory may become available shortly after your app launches.
 

@@ -24,7 +24,7 @@ var hasGravityAndUserAcceleration: Bool { get }
 @property (nonatomic, readonly) BOOL hasGravityAndUserAcceleration;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) if the controller provides both gravity and user acceleration data; otherwise, [`false`](../../Swift/false.md).
 

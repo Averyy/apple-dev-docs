@@ -21,7 +21,7 @@ Performs a tapered merge between two double-precision vectors.
 extern void vDSP_vtmergD(const double *__A, vDSP_Stride __IA, const double *__B, vDSP_Stride __IB, double *__C, vDSP_Stride __IC, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 The following code performs a tapered merge between two vectors that represent sine waves at different frequencies:
 

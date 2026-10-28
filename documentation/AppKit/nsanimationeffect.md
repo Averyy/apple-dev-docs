@@ -21,7 +21,7 @@ enum NSAnimationEffect
 enum NSAnimationEffect : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 These effects are used to indicate that an item was removed from a collection, such as a toolbar, without deleting the underlying data. See [`NSShowAnimationEffect`](./nsshowanimationeffect.md).
 

@@ -23,7 +23,7 @@ class INTemporalEventTrigger
 @interface INTemporalEventTrigger : NSObject
 ```
 
-#### Overview
+## Overview
 
 When configuring tasks, you can add an [`INTemporalEventTrigger`](./intemporaleventtrigger.md) object to display a reminder at a specific time. Because you specify the time values using an [`INDateComponentsRange`](./indatecomponentsrange.md) object, the trigger condition can occur at a single time or within a range of time. You can also specify a repeating trigger time by specifying a day without a month or year or by specifying a time value without a specific day.
 

@@ -22,7 +22,7 @@ Displays text that explains why a chosen multiple-choice answer is either correc
 }
 ```
 
-#### Overview
+## Overview
 
 Use the `Justification` directive to display a response when the reader chooses an answer in a multiple-choice assessment question in a tutorial. Use the `reaction` parameter to briefly indicate whether the choice is correct or incorrect. Then, provide some more descriptive text that explains why. In the case of an incorrect answer, consider also providing a hint so the reader can try again.
 
@@ -50,7 +50,7 @@ Use the `Justification` directive to display a response when the reader chooses 
 }
 ```
 
-##### Containing Elements
+### Containing Elements
 
 The following items must include a justification:
 

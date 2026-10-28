@@ -25,7 +25,7 @@ init(width: Int, height: Int, bitsPerPixel: UInt32) throws
 
 - [Creating and Populating Buffers from Core Graphics Images](../creating-and-populating-buffers-from-core-graphics-images.md)
 
-#### Discussion
+## Discussion
 
 This function allocates a buffer’s memory, but doesn’t initialize the memory.
 

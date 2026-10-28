@@ -30,7 +30,7 @@ var threadExecutionWidth: Int { get }
 - [Calculating threadgroup and grid sizes](../calculating-threadgroup-and-grid-sizes.md)
 - [Creating threads and threadgroups](../creating-threads-and-threadgroups.md)
 
-#### Discussion
+## Discussion
 
 For better performance, when dispatching a compute command, make the number of threads in the threadgroup a multiple of `threadExecutionWidth`.
 

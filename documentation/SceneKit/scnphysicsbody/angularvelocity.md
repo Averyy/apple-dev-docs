@@ -25,7 +25,7 @@ var angularVelocity: SCNVector4 { get set }
 @property (nonatomic) SCNVector4 angularVelocity;
 ```
 
-#### Discussion
+## Discussion
 
 A positive rotational speed indicates counterclockwise rotation (when viewed from the direction the rotation axis points in).
 

@@ -31,7 +31,7 @@ class GKLocalPlayer
 - [Initializing and configuring Game Center](./initializing-and-configuring-game-center.md)
 - [Protecting the player’s privacy using scoped identifiers](./protecting-the-player-s-privacy-using-scoped-identifiers.md)
 
-#### Overview
+## Overview
 
 Only one player can sign in to Game Center on a device at a time and that player is the *local player*. Before you can start a game that uses GameKit features, verify that the local player signs in to their Game Center account.
 

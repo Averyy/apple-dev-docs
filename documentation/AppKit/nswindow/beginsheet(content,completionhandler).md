@@ -16,11 +16,11 @@ Presents a SwiftUI view as a sheet on the receiving NSWindow.
 @MainActor @preconcurrency func beginSheet<V>(@ContentBuilder content: () -> V, completionHandler: (() -> Void)? = nil) -> NSWindow.HostingSheetRepresentation<V> where V : View
 ```
 
-#### Return Value
+## Return Value
 
 A discardable [`NSWindow.HostingSheetRepresentation`](./hostingsheetrepresentation.md) instance.
 
-#### Discussion
+## Discussion
 
 The presented view supports the same features as when used in the [`sheet(isPresented:onDismiss:content:)`](../../SwiftUI/view/sheet%28ispresented,ondismiss,content%29.md) or [`sheet(item:onDismiss:content:)`](../../SwiftUI/view/sheet%28item,ondismiss,content%29.md) view modifier, such as:
 

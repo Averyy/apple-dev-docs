@@ -24,7 +24,7 @@ var relativeTime: TimeInterval { get set }
 @property (readwrite) NSTimeInterval relativeTime;
 ```
 
-#### Discussion
+## Discussion
 
 A [`relativeTime`](../chhapticparametercurve/relativetime.md) of zero indicates immediate playback. Another haptic event starting one second later would have a [`relativeTime`](./relativetime.md) of `1`.
 

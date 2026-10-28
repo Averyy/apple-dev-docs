@@ -24,7 +24,7 @@ var maxCallStackDepth: Int { get set }
 @property (nonatomic, readwrite) NSUInteger maxCallStackDepth;
 ```
 
-#### Discussion
+## Discussion
 
 The property’s default value is `1`. Change its value if you use recursive functions in your tile dispatch.
 

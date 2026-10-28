@@ -17,7 +17,7 @@ Initialize the `UserInput` with model specific mesage structures.
 init(messages: [Message], images: [Image] = [Image](), videos: [Video] = [Video](), audios: [Audio] = [Audio](), tools: [ToolSpec]? = nil, additionalContext: [String : any Sendable]? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 For example, the Qwen2VL model wants input in this format:
 
@@ -40,7 +40,7 @@ For example, the Qwen2VL model wants input in this format:
 
 Typically the [`init(chat:processing:tools:additionalContext:)`](./init%28chat,processing,tools,additionalcontext%29.md) should be used instead along with a model specific [`MessageGenerator`](../messagegenerator.md) (supplied by the [`UserInputProcessor`](../userinputprocessor.md)).
 
-##### See Also
+### See Also
 
 - [`UserInput.Prompt.text(_:)`](./prompt-swift.enum/text%28_%29.md)
 - [`init(chat:processing:tools:additionalContext:)`](./init%28chat,processing,tools,additionalcontext%29.md)

@@ -5,7 +5,7 @@
 
 Make a request to modify and save a photo or video asset.
 
-#### Overview
+## Overview
 
 For each photo asset, Photos keeps a previous and a current version of its image data, as well as a [`PHAdjustmentData`](../Photos/phadjustmentdata.md) object that describes the last edit the user made to each asset’s content. Your app uses this information to support *resumable editing*.
 
@@ -17,19 +17,19 @@ To support continuity of editing between different apps and extensions, Photos k
 
 > **Note**:  For video assets, Photos doesn’t store a previous version. If your app cannot read a video asset’s adjustment data, you must work with the current version of the video. Future versions won’t be able to make use of your app’s adjustment data.
 
-##### Request a Content Editing Input
+### Request a Content Editing Input
 
 Call the asset’s [`requestContentEditingInput(with:completionHandler:)`](../Photos/phasset/requestcontenteditinginput%28with,completionhandler%29.md) method. The [`PHContentEditingInputRequestOptions`](../Photos/phcontenteditinginputrequestoptions.md) object you provide for the `options` parameter controls whether your app can handle the asset’s adjustment data. Photos calls your `completionHandler` block, providing a [`PHContentEditingInput`](../Photos/phcontenteditinginput.md) object you can use for retrieving the image or video data to be edited.
 
-##### Apply Your Edits Through a Content Editing Output
+### Apply Your Edits Through a Content Editing Output
 
 Apply your edits to the asset. To allow a user to continue working with your edits later, create a new [`PHAdjustmentData`](../Photos/phadjustmentdata.md) object describing the changes.
 
-##### Create a Content Editing Output
+### Create a Content Editing Output
 
 Initialize a [`PHContentEditingOutput`](../Photos/phcontenteditingoutput.md) object. For photo- or video-only assets, use the editing output’s properties to provide edited asset data. For Live Photo assets, create a [`PHLivePhotoEditingContext`](../Photos/phlivephotoeditingcontext.md) object to edit the Live Photo content.
 
-##### Commit Your Completed Edits
+### Commit Your Completed Edits
 
 Commit your edits to the photo library by posting a change block to the shared [`PHPhotoLibrary`](../Photos/phphotolibrary.md) object. In the block, create a [`PHAssetChangeRequest`](../Photos/phassetchangerequest.md) object and set its [`contentEditingOutput`](../Photos/phassetchangerequest/contenteditingoutput.md) property to the editing output that you created.
 

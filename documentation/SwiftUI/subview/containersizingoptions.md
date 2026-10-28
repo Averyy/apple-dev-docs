@@ -21,7 +21,7 @@ Options on how all subviews should be sized when in a container.
 enum ContainerSizingOptions
 ```
 
-#### Overview
+## Overview
 
 > **Note**: This option is not about the sizing considerations of a view being measured individually. Instead, this option describes the sizing characteristics of a group of subviews altogether, which also would only have actual effects when used in a container.
 

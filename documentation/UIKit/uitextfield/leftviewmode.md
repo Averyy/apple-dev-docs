@@ -23,7 +23,7 @@ var leftViewMode: UITextField.ViewMode { get set }
 @property (nonatomic) UITextFieldViewMode leftViewMode;
 ```
 
-#### Discussion
+## Discussion
 
 The default value for this property is [`UITextField.ViewMode.never`](./viewmode/never.md). Note that the left overlay view flips automatically in a right-to-left user interface.
 

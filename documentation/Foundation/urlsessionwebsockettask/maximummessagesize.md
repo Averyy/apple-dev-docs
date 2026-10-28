@@ -25,7 +25,7 @@ var maximumMessageSize: Int { get set }
 @property NSInteger maximumMessageSize;
 ```
 
-#### Discussion
+## Discussion
 
 This value includes the sum of all bytes from continuation frames. Receive calls will fail once the task reaches this limit.
 

@@ -9,11 +9,11 @@ Delete a device management service from an organization.
 **Availability**:
 - Apple Business API 2.6+
 
-#### Overview
+## Overview
 
 > **Note**: A device management service that has devices assigned to it can’t be deleted. Unassign all devices before deleting.
 
-##### Example
+### Example
 
 **Request**:
 

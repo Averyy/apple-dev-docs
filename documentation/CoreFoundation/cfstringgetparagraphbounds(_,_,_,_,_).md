@@ -25,7 +25,7 @@ func CFStringGetParagraphBounds(_ string: CFString!, _ range: CFRange, _ parBegi
 extern void CFStringGetParagraphBounds(CFStringRef string, CFRange range, CFIndex *parBeginIndex, CFIndex *parEndIndex, CFIndex *contentsEndIndex);
 ```
 
-#### Discussion
+## Discussion
 
 This function is the same as [`CFStringGetLineBounds(_:_:_:_:_:)`](./cfstringgetlinebounds%28_,_,_,_,_%29.md)(), however it only looks for paragraphs (that is, it does not stop at Unicode NextLine or LineSeparator characters).
 

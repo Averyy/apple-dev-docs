@@ -29,7 +29,7 @@ func calculate() async throws -> MKDirections.Response
 - (void) calculateDirectionsWithCompletionHandler:(MKDirectionsHandler) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 This method initiates the request for directions and calls your completion handler block with the results. The method executes your completion handler on your app’s main thread. The implementation of your handler needs to check for errors and then incorporate the response data as appropriate.
 

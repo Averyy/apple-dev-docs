@@ -15,13 +15,13 @@ The response object for a budget order query.
 object SharedBudgetQueryResponse
 ```
 
-#### Discussion
+## Discussion
 
 The budget order query endpoint returns `SharedBudgetQueryResponse`, which contains the filtered, sorted, and paginated set of `SharedBudget` objects matching the request. The `result` array holds the matching records. To scope results by ad account ID, status, or specific budget IDs, use the `QueryRequest` body with `filters`.
 
 > **Note**: The underlying implementation is the generic `QueryResponse<SharedBudget>` envelope. This documentation uses the type name `SharedBudgetQueryResponse` for clarity.
 
-##### Example
+### Example
 
 ```json
 {

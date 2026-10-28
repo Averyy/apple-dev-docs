@@ -24,11 +24,11 @@ func CFHTTPAuthenticationRequiresOrderedRequests(_ auth: CFHTTPAuthentication) -
 extern Boolean CFHTTPAuthenticationRequiresOrderedRequests(CFHTTPAuthenticationRef auth);
 ```
 
-#### Return Value
+## Return Value
 
 `TRUE` if `auth` requires ordered requests, otherwise `FALSE`.
 
-#### Discussion
+## Discussion
 
 Some authentication methods require that future requests must be performed in an ordered manner. If this function returns `TRUE`, clients can improve their chances of authenticating successfully by issuing requests one at a time as responses come back from the server.
 

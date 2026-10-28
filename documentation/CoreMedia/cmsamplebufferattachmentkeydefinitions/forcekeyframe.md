@@ -21,7 +21,7 @@ Indicates that the current or next video sample buffer should be forced to be en
 static let forceKeyFrame: CVAttachmentKeyDefinitionWithDefault<CMSampleBufferAttachmentKeyDefinitions.ShouldPropagate, Bool>
 ```
 
-#### Discussion
+## Discussion
 
 If this attachment is `true` on a sample buffer with a video frame, that video frame will be forced to become a key frame. If the sample buffer for which this is `true` does not have a valid video frame, the next sample buffer processed that contains a valid video frame will be encoded as a key frame. The getter returns the default value of false if this attachment is not present.
 

@@ -19,7 +19,7 @@ init?(coder: NSCoder)
 - (instancetype) initWithCoder:(NSCoder *) coder;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized view or `nil` if AppKit couldn’t create the object.
 

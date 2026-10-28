@@ -23,7 +23,7 @@ var backgroundImagePositionAdjustment: UIOffset { get set }
 @property (nonatomic, assign, readwrite) UIOffset backgroundImagePositionAdjustment;
 ```
 
-#### Discussion
+## Discussion
 
 Positive values move the image down and to the right. Negative values move the image up and to the left.
 

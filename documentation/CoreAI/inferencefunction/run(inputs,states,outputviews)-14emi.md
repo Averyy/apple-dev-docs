@@ -19,11 +19,11 @@ Runs the function on the provided input values and returns the output values.
 func run(inputs: borrowing InferenceFunction.Inputs, states: consuming InferenceFunction.MutableViews = MutableViews(), outputViews: consuming InferenceFunction.MutableViews = MutableViews()) async throws -> InferenceFunction.Outputs
 ```
 
-#### Return Value
+## Return Value
 
 The outputs from the function.
 
-#### Discussion
+## Discussion
 
 Any [`NDArray`](../ndarray.md) values in the returned outputs have a row-major contiguous layout.
 

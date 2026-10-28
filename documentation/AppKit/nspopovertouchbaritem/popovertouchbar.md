@@ -22,7 +22,7 @@ var popoverTouchBar: NSTouchBar { get set }
 @property (strong) NSTouchBar * popoverTouchBar;
 ```
 
-#### Discussion
+## Discussion
 
 Set this property to a fully configured instance of [`NSTouchBar`](../nstouchbar.md) that is displayed when the user taps on the popover item. By default this is an empty bar.
 

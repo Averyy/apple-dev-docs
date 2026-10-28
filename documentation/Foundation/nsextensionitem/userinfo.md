@@ -33,7 +33,7 @@ var userInfo: [AnyHashable : Any]? { get set }
 @property (atomic, copy, nullable) NSDictionary * userInfo;
 ```
 
-#### Discussion
+## Discussion
 
 If applicable to a particular extension type, additional information may be available in the `userInfo` dictionary. For example, in the context of an Action extension, the `userInfo` dictionary may contain values for the keys [`NSExtensionItemAttachmentsKey`](../nsextensionitemattachmentskey.md), [`NSExtensionItemAttributedContentTextKey`](../nsextensionitemattributedcontenttextkey.md), and [`NSExtensionItemAttributedTitleKey`](../nsextensionitemattributedtitlekey.md).
 

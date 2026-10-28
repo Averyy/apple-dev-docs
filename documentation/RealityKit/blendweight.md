@@ -20,7 +20,7 @@ A numerical representation of the impact an animation has on a scene or entity.
 enum BlendWeight
 ```
 
-#### Overview
+## Overview
 
 The [`BlendTreeSourceNode`](./blendtreesourcenode.md) structure accepts this enumeration as an initializer argument.
 

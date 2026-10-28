@@ -34,7 +34,7 @@ var minimumNumberOfPeers: Int { get set }
 @property (atomic, assign) NSUInteger minimumNumberOfPeers;
 ```
 
-#### Discussion
+## Discussion
 
 The smallest allowable value (and the default) is 2.
 

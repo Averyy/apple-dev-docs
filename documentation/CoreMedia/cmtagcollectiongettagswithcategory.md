@@ -21,11 +21,11 @@ Retrieves a C-style array of tags with a given category from a tag collection.
 extern OSStatus CMTagCollectionGetTagsWithCategory(CMTagCollectionRef tagCollection, CMTagCategory category, CMTag *tagBuffer, CMItemCount tagBufferCount, CMItemCount *numberOfTagsCopied);
 ```
 
-#### Return Value
+## Return Value
 
 Returns `0` on success and a value from Tag Collection Error Codes on failure.
 
-#### Discussion
+## Discussion
 
 > ⚠️ **Warning**:  Using a value for `tagBufferCount` larger than the number of elements that `tagBuffer` holds can cause undefined behavior.
 

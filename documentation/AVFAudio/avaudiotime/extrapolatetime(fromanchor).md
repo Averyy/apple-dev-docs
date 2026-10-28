@@ -25,11 +25,11 @@ func extrapolateTime(fromAnchor anchorTime: AVAudioTime) -> AVAudioTime?
 - (AVAudioTime *) extrapolateTimeFromAnchor:(AVAudioTime *) anchorTime;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`AVAudioTime`](../avaudiotime.md) instance.
 
-#### Discussion
+## Discussion
 
 If `anchorTime` is an `AVAudioTime` instance where both host time and sample time are valid, and the receiver is another timestamp where only one of the two is valid, this method returns a new `AVAudioTime`. It copies it from the receiver, where the anchor provides additional valid fields.
 

@@ -21,7 +21,7 @@ A Boolean value that indicates whether the app can successfully present the noti
 static var canPresent: Bool { get async }
 ```
 
-#### Discussion
+## Discussion
 
 Check this property, as shown below, to determine whether your app can successfully call [`presentNoticeSheet()`](./presentnoticesheet%28%29.md) to inform people before showing external purchases:
 

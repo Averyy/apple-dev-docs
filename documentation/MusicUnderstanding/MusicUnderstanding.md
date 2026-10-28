@@ -15,7 +15,7 @@ Analyze audio content and extract music information.
 - visionOS 27.0+
 - watchOS 27.0+
 
-#### Overview
+## Overview
 
 Use the Music Understanding framework to analyze your audio content and receive information like the rhythm, pace, loudness, key, and instrument activity.
 

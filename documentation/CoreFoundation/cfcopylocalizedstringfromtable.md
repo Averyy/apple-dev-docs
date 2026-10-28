@@ -21,11 +21,11 @@ Searches the specified strings file for the string associated with the specified
 #define CFCopyLocalizedStringFromTable(key, tbl, comment)
 ```
 
-#### Return Value
+## Return Value
 
 The localized version of the requested string, or `key` if no value corresponding to `key` is found. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
-#### Discussion
+## Discussion
 
 This is a macro variant of [`CFBundleCopyLocalizedString(_:_:_:_:)`](./cfbundlecopylocalizedstring%28_,_,_,_%29.md) for use with the `genstrings` tool.
 

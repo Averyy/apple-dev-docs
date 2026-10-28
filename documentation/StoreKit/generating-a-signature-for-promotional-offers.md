@@ -5,13 +5,13 @@
 
 Create a signature to validate a promotional offer using your private key.
 
-#### Overview
+## Overview
 
 Before you can create a signature on your server, you need to complete the one-time setup to generate a private key in App Store Connect, as [Setting up promotional offers](./setting-up-promotional-offers.md) describes. Always use a secure connection when sending data, including the signature, between your app and server. For more information on ensuring your data’s security, see [Preventing Insecure Network Connections](../Security/preventing-insecure-network-connections.md).
 
 To create the signature, you use parameters that identify the product and the offer, parameters your server generates, and your private key. To generate the signature, you combine the required parameters, then sign and encode the resulting string.
 
-##### Combine the parameters
+### Combine the parameters
 
 In the first step of generating the signature, you need the following parameters, most of which you also supply for [`SKPaymentDiscount`](./skpaymentdiscount.md):
 
@@ -33,7 +33,7 @@ appBundleId + '\u2063' + keyIdentifier + '\u2063' + productIdentifier + '\u2063'
 
 If you provide `applicationUsername` instead of `appAccountToken`, replace it accordingly in the UTF-8 string above.
 
-##### Sign the combined string
+### Sign the combined string
 
 Sign the combined UTF-8 string with the following key and algorithm:
 
@@ -42,7 +42,7 @@ Sign the combined UTF-8 string with the following key and algorithm:
 
 The result is a Digital Encoding Rules (DER)-formatted binary value, which is the signature.
 
-##### Validate locally and encode the signature
+### Validate locally and encode the signature
 
 Consider validating your signatures locally to ensure your signing process works correctly. You can create a public key derivative of your private key to test against. One way to create this key is by running the `openSSL` command from the terminal app, as the example below shows:
 
@@ -56,7 +56,7 @@ Use Base64 encoding for the binary signature you generated to obtain the final s
 MEQCIEQlmZRNfYzKBSE8QnhLTIHZZZWCFgZpRqRxHss65KoFAiAJgJKjdrWdkLUOCCjuEx2RmFS7daRzSVZRVZ8RyMyUXg==
 ```
 
-##### Respond to the request
+### Respond to the request
 
 Respond to the app’s request for the signature over a secure connection, providing the encoded signature string, the `nonce`, the `timestamp`, and the `keyIdentifier`. Note that each payload, signature, and `nonce` is only valid for one buy request, even if the buy fails.
 

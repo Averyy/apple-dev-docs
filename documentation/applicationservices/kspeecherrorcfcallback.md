@@ -19,7 +19,7 @@ let kSpeechErrorCFCallBack: CFString
 const CFStringRef kSpeechErrorCFCallBack;
 ```
 
-#### Discussion
+## Discussion
 
 When a Speech Synthesis Manager function returns an error directly, the error callback function is not called. The callback function is passed information about the most recent error; it can determine information about the oldest pending error by using the speech information property `kSpeechErrorsProperty`. The value associated with this property is `CFNumber` object whose value is a pointer to an application-defined error callback function, whose syntax is described in [`SpeechErrorCFProcPtr`](./speecherrorcfprocptr.md). Passing a `CFNumber` object that contains the value `NULL` for the value of this property disables the error callback function.
 

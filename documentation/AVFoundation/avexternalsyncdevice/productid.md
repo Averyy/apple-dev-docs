@@ -23,7 +23,7 @@ var productID: UInt32 { get }
 @property (nonatomic, readonly) UInt32 productID;
 ```
 
-#### Discussion
+## Discussion
 
 This `UInt32` value comes from the hardware vendor, and returns 0 if not available. Use this value in conjunction with the [`vendorID`](./vendorid.md) to determine a specific product.
 

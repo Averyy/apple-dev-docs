@@ -24,7 +24,7 @@ var extendedDynamicRangeAmount: Float { get set }
 @property (readwrite) float extendedDynamicRangeAmount;
 ```
 
-#### Discussion
+## Discussion
 
 The value should be in the range of `0...2`. The default value is `0`. A value of `0` indicates no EDR. A value of `1` indicates default EDR, and a value of `2` indicates maximum EDR.
 

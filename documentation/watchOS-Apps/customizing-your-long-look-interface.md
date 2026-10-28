@@ -5,7 +5,7 @@
 
 Create custom interfaces for your watchOS app’s notifications.
 
-#### Overview
+## Overview
 
 To customize the appearance of your app’s notifications, you can provide a [`Scene`](../SwiftUI/scene.md) to your [`App`](../SwiftUI/app.md) for each notification category. The scene defines either a *dynamic* or a *dynamic interactive* interface.
 
@@ -14,7 +14,7 @@ To customize the appearance of your app’s notifications, you can provide a [`S
 
 Use the interactive controls to update or even reload the notification’s interface. In general, keep your action methods simple. Complex, multi-step tasks aren’t a good fit for interactive notifications.
 
-##### Create a notification scene
+### Create a notification scene
 
 The following code creates a notification scene using the [`WKNotificationScene`](../SwiftUI/wknotificationscene.md) struct, specifying both the notification controller’s class and the notification’s category.
 
@@ -40,7 +40,7 @@ override class var isInteractive: Bool {
 }
 ```
 
-##### Customize the interface
+### Customize the interface
 
 To display a custom interface, override the notification controller’s [`didReceive(_:)`](../WatchKit/wkusernotificationinterfacecontroller/didreceive%28_%29.md) method to extract information from the incoming notification.
 

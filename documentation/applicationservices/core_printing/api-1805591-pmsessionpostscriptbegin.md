@@ -15,11 +15,11 @@ OSStatus PMSessionPostScriptBegin (
 );
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../core_printing.md#1670007).
 
-#### Overview
+## Overview
 
 You must call the function `PMSessionPostScriptBegin` between the creation and release of a printing session. See the function [`PMCreateSession`](../api-1463247-pmcreatesession.md). You must also call the function within the scope of the functions `PMSessionBeginPage` and `PMSessionEndPage`.
 
@@ -27,7 +27,7 @@ To ensure that the current printer driver supports PostScript data, call `PMSess
 
 The function `PMSessionPostScriptBegin` is not useful unless the current port is the printing port. The function returns `true` if the document format is not PICT + PS.
 
-##### Special Considerations
+### Special Considerations
 
 The PICT + PS spool file format is not available on Intel-based systems.
 

@@ -15,8 +15,8 @@
 ## Declaration
 
 ```swift
-@attached
-(accessor) @attached(peer, names: prefixed(__Key_)) macro SessionPropertyEntry()
+@attached(accessor)
+@attached(peer, names: prefixed(__Key_)) macro SessionPropertyEntry()
 ```
 
 ## Mentions

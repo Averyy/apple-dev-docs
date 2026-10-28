@@ -22,7 +22,7 @@ A representation of high precision time.
 struct Duration
 ```
 
-#### Overview
+## Overview
 
 `Duration` represents an elapsed time value with high precision in an integral form. It may be used for measurements of varying clock sources. In those cases it represents the elapsed time measured by that clock. Calculations using `Duration` may span from a negative value to a positive value and have a suitable range to at least cover attosecond scale for both small elapsed durations like sub-second precision to durations that span centuries.
 

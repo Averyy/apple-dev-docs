@@ -25,7 +25,7 @@ let kCVImageBufferDisplayDimensionsKey: CFString
 extern CFStringRef const kCVImageBufferDisplayDimensionsKey;
 ```
 
-#### Discussion
+## Discussion
 
 The dictionary is of type [`CFDictionary`](../CoreFoundation/cfdictionary.md). See [Image Buffer Display Dimensions Keys](./image-buffer-display-dimensions-keys.md) for more information.
 

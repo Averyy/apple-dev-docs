@@ -24,7 +24,7 @@ static var videoStreamed: PHAssetMediaSubtype { get }
 PHAssetMediaSubtypeVideoStreamed
 ```
 
-#### Discussion
+## Discussion
 
 This subtype identifies video assets that are never stored on the local device, such as shared videos in a subscribed iCloud Photo Stream.
 

@@ -16,7 +16,7 @@ get padding(): Padding;
 set padding(value: PaddingData);
 ```
 
-#### Discussion
+## Discussion
 
 For information on how to specify padding around a Look Around view, see [`Padding`](../padding.md).
 

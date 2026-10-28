@@ -22,7 +22,7 @@ class MSSetupSession
 @interface MSSetupSession : NSObject
 ```
 
-#### Overview
+## Overview
 
 An `MSSetupSession` object guides the user through connecting HomePod speakers in their home to your media service. When your iOS app calls [`start()`](./mssetupsession/start%28%29.md), the session displays a setup view in the window you provide in [`presentationAnchor()`](./msauthenticationpresentationcontext/presentationanchor%28%29.md). The session embeds your app icon and the [`serviceName`](./msserviceaccount/servicename.md) you provide into this setup view.
 

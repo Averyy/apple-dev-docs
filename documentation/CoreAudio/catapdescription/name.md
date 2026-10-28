@@ -20,7 +20,7 @@ var name: String { get set }
 @property (atomic, copy) NSString * name;
 ```
 
-#### Discussion
+## Discussion
 
 Human readable name of this tap.
 

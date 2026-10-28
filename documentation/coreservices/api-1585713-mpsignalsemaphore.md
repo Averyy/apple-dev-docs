@@ -15,11 +15,11 @@ Signals a semaphore.
 OSStatus MPSignalSemaphore(MPSemaphoreID semaphore);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./carbon_core/multiprocessing_services.md#1663965). If the value of the semaphore was already at the maximum, `MPSignalSemaphore` returns `kInsufficientResourcesErr`.
 
-#### Discussion
+## Discussion
 
 If tasks are waiting on the semaphore, the oldest (first queued) task is unblocked so that the corresponding  [`MPWaitOnSemaphore`](./api-1585722-mpwaitonsemaphore.md)  call for that task completes. Otherwise, if the value of the semaphore is not already equal to its maximum value, it is incremented by one.
 

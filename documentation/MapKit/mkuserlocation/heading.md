@@ -22,7 +22,7 @@ var heading: CLHeading? { get }
 @property (nonatomic, readonly, nullable) CLHeading * heading;
 ```
 
-#### Discussion
+## Discussion
 
 This property is `nil` if the user’s location tracking mode isn’t [`MKUserTrackingMode.followWithHeading`](../mkusertrackingmode/followwithheading.md).
 

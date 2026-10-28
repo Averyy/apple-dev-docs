@@ -13,7 +13,7 @@ Create an auto-renewable subscription for your app.
 
 - [Managing auto-renewable subscriptions](./managing-auto-renewable-subscriptions.md)
 
-#### Discussion
+## Discussion
 
 > **Note**:  Changes that you make to product metadata with the App Store Connect API can take up to 1 hour to appear in the sandbox environment.
 

@@ -19,7 +19,7 @@ func viewWillMove(toWindow newWindow: NSWindow?)
 - (void) viewWillMoveToWindow:(NSWindow *) newWindow;
 ```
 
-#### Discussion
+## Discussion
 
 AppKit calls this method when the window of a view changes. It also calls it in cases where a view stays in the same window but its position in its view hierarchy changes. The view that moved also calls this method on all of its subviews, giving each of them a chance to respond to the change.
 

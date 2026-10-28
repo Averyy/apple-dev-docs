@@ -19,11 +19,11 @@ func view(for inType: SFViewType) -> NSView!
 - (NSView *) viewForType:(SFViewType) inType;
 ```
 
-#### Return Value
+## Return Value
 
 An [`NSView`](../../AppKit/nsview.md) object representing either a credentials view or an identity and credentials view.
 
-#### Discussion
+## Discussion
 
 When the authorization plug-in calls this method, the [`SFAuthorizationPluginView`](../sfauthorizationpluginview.md) instance should return the [`NSView`](../../AppKit/nsview.md) object that represents the view indicated by the specified [`SFViewType`](../sfviewtype.md). The [`NSView`](../../AppKit/nsview.md) object and its contents should have the autoresize flags set to allow the view to be resized.
 

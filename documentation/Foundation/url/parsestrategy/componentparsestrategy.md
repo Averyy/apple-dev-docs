@@ -21,7 +21,7 @@ The strategy used to parse one component of a URL.
 enum ComponentParseStrategy<Component> where Component : Decodable, Component : Encodable, Component : Hashable, Component : Sendable
 ```
 
-#### Overview
+## Overview
 
 Use this type with the [`URL.ParseStrategy`](../parsestrategy.md) initializer and static accessors, or its modifier methods, to specify behavior for parsing components of a URL. This allows you to reject URL candidate strings that lack required components — such as a scheme, host, or path — or to fill in default values while parsing.
 

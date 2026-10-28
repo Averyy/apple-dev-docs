@@ -25,7 +25,7 @@ func drawIndexedPrimitives(primitiveType: MTLPrimitiveType, indexType: MTLIndexT
 - (void) drawIndexedPrimitives:(MTLPrimitiveType) primitiveType indexType:(MTLIndexType) indexType indexBuffer:(MTLGPUAddress) indexBuffer indexBufferLength:(NSUInteger) indexBufferLength indirectBuffer:(MTLGPUAddress) indirectBuffer;
 ```
 
-#### Discussion
+## Discussion
 
 When you use this function, Metal reads the parameters to the draw command from an [`MTLBuffer`](../mtlbuffer.md) instance, allowing you to implement a GPU-driven workflow where a compute pipeline state determines the draw arguments.
 

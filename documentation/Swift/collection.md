@@ -21,7 +21,7 @@ A sequence whose elements can be traversed multiple times, nondestructively, and
 protocol Collection<Element> : Sequence
 ```
 
-#### Overview
+## Overview
 
 Collections are used extensively throughout the standard library. When you use arrays, dictionaries, and other collections, you benefit from the operations that the `Collection` protocol declares and implements. In addition to the operations that collections inherit from the `Sequence` protocol, you gain access to methods that depend on accessing an element at a specific position in a collection.
 
@@ -37,7 +37,7 @@ if let firstSpace = text.firstIndex(of: " ") {
 
 The `firstSpace` constant is an index into the `text` string—the position of the first space in the string. You can store indices in variables, and pass them to collection algorithms or use them later to access the corresponding element. In the example above, `firstSpace` is used to extract the prefix that contains elements up to that index.
 
-### Accessing Individual Elements
+## Accessing Individual Elements
 
 You can access an element of a collection through its subscript by using any valid index except the collection’s `endIndex` property. This property is a “past the end” index that does not correspond with any element of the collection.
 
@@ -60,7 +60,7 @@ You can pass only valid indices to collection operations. You can find a complet
 
 Saved indices may become invalid as a result of mutating operations. For more information about index invalidation in mutable collections, see the reference for the `MutableCollection` and `RangeReplaceableCollection` protocols, as well as for the specific type you’re using.
 
-### Accessing Slices of a Collection
+## Accessing Slices of a Collection
 
 You can access a slice of a collection through its ranged subscript or by calling methods like `prefix(while:)` or `suffix(_:)`. A slice of a collection can contain zero or more of the original collection’s elements and shares the original collection’s semantics.
 
@@ -83,7 +83,7 @@ if let firstSpace = text.firstIndex(of: " ") {
 
 The retrieved slice of `text` is equivalent in each of these cases.
 
-#### Slices Share Indices
+## Slices Share Indices
 
 A collection and its slices share the same indices. An element of a collection is located under the same index in a slice as in the base collection, as long as neither the collection nor the slice has been mutated since the slice was created.
 
@@ -109,7 +109,7 @@ if let i = secondHalf.indices.max(by: { secondHalf[$0] < secondHalf[$1] }) {
 // Prints "Highest second-half absences: 3"
 ```
 
-#### Slices Inherit Collection Semantics
+## Slices Inherit Collection Semantics
 
 A slice inherits the value or reference semantics of its base collection. That is, when working with a slice of a mutable collection that has value semantics, such as an array, mutating the original collection triggers a copy of that collection and does not affect the contents of the slice.
 
@@ -123,7 +123,7 @@ print(secondHalf)
 // Prints "[0, 3, 1, 0]"
 ```
 
-### Traversing a Collection
+## Traversing a Collection
 
 Although a sequence can be consumed as it is traversed, a collection is guaranteed to be *multipass*: Any element can be repeatedly accessed by saving its index. Moreover, a collection’s indices form a finite range of the positions of the collection’s elements. The fact that all collections are finite guarantees the safety of many sequence operations, such as using the `contains(_:)` method to test whether a collection includes an element.
 
@@ -150,7 +150,7 @@ for i in word.indices {
 // Prints "t"
 ```
 
-### Conforming to the Collection Protocol
+## Conforming to the Collection Protocol
 
 If you create a custom sequence that can provide repeated access to its elements, make sure that its type conforms to the `Collection` protocol in order to give a more useful and more efficient interface for sequence and collection operations. To add `Collection` conformance to your type, you must declare at least the following requirements:
 
@@ -158,7 +158,7 @@ If you create a custom sequence that can provide repeated access to its elements
 - A subscript that provides at least read-only access to your type’s elements
 - The `index(after:)` method for advancing an index into your collection
 
-### Expected Performance
+## Expected Performance
 
 Types that conform to `Collection` are expected to provide the `startIndex` and `endIndex` properties and subscript access to elements as O(1) operations. Types that are not able to guarantee this performance must document the departure, because many collection operations depend on O(1) subscripting performance for their own performance guarantees.
 

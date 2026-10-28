@@ -20,11 +20,11 @@ func paramDescriptor(forKeyword keyword: AEKeyword) -> NSAppleEventDescriptor?
 - (NSAppleEventDescriptor *) paramDescriptorForKeyword:(AEKeyword) keyword;
 ```
 
-#### Return Value
+## Return Value
 
 A descriptor for the specified keyword, or `nil` if an error occurs.
 
-#### Discussion
+## Discussion
 
 The receiver must be an Apple event.
 

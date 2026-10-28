@@ -20,7 +20,7 @@ case kindLibraryMusicVideos
 ITLibDistinguishedPlaylistKindLibraryMusicVideos
 ```
 
-#### Discussion
+## Discussion
 
 This isn’t the same as the default Music Videos Smart Playlist.
 

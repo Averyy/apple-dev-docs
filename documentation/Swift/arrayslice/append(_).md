@@ -21,7 +21,7 @@ Adds a new element at the end of the array.
 mutating func append(_ newElement: Element)
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to append a single element to the end of a mutable array.
 

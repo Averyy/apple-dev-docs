@@ -24,7 +24,7 @@ case rightMirrored
 UIImageOrientationRightMirrored
 ```
 
-#### Discussion
+## Discussion
 
 If an image is encoded with this orientation, then displayed by software unaware of orientation metadata, the image appears to be horizontally mirrored, then rotated 90° clockwise. (That is, to present the image in its intended orientation, you can rotate  90° counter-clockwise, then flip horizontally.)
 

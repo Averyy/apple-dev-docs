@@ -20,7 +20,7 @@ optional func bssidDidChangeForWiFiInterface(withName interfaceName: String)
 - (void) bssidDidChangeForWiFiInterfaceWithName:(NSString *) interfaceName;
 ```
 
-#### Discussion
+## Discussion
 
 Register for BSSID change notifications by sending the [`startMonitoringEvent(with:)`](../cwwificlient/startmonitoringevent%28with%29.md) message to a Wi-Fi client object with the [`CWEventType.bssidDidChange`](../cweventtype/bssiddidchange.md) event type.
 

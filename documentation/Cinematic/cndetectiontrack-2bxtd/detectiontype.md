@@ -19,7 +19,7 @@ The type of object that’s detected.
 var detectionType: CNDetectionType { get }
 ```
 
-#### Discussion
+## Discussion
 
 Examples of a detection type are a face, torso, cat, or dog.
 

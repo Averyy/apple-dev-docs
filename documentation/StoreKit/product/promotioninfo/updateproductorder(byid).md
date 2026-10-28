@@ -21,7 +21,7 @@ static func updateProductOrder(byID order: some Collection<String>) async throws
 
 - [Supporting promoted Apple In-App Purchases in your app](../../supporting-promoted-in-app-purchases-in-your-app.md)
 
-#### Discussion
+## Discussion
 
 Call this static method to override the default order of promoted Apple In-App Purchases on the current device. You provide the product identifiers of the promoted Apple In-App Purchases to set their order.
 
@@ -29,7 +29,7 @@ To hide a promoted Apple In-App Purchase so it doesn’t display in the App Stor
 
 To set the order using [`Product.PromotionInfo`](../promotioninfo.md) objects instead of product identifiers, see [`updateAll(_:)`](./updateall%28_%29.md).
 
-##### Cancel overrides
+### Cancel overrides
 
 To cancel the order and visibility changes you make, send an empty collection in the `order` parameter. All Apple In-App Purchases then display in the default order.
 

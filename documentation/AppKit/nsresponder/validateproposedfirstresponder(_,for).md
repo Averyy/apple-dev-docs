@@ -19,11 +19,11 @@ func validateProposedFirstResponder(_ responder: NSResponder, for event: NSEvent
 - (BOOL) validateProposedFirstResponder:(NSResponder *) responder forEvent:(NSEvent *) event;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the control should become first responder, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Some controls, such as `NSTextField`, should only become first responder when the enclosing NSTableView/NSBrowser indicates that the view can begin editing. It is up to the particular control that wants to be validated to call this method in its [`mouseDown(with:)`](./mousedown%28with%29.md) method (or perhaps at another time) to determine if it should attempt to become the first responder or not.
 

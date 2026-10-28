@@ -21,7 +21,7 @@ Types that conform to MultiplexProtocol are allowed to be the top protocol in a 
 protocol MultiplexProtocol : NetworkProtocolOptions
 ```
 
-#### Overview
+## Overview
 
 Generally network protocols conforming to this type will not directly expose send or receive methods. Instead, they expose methods to open and listen for multiplexed Subconnections which can send and receive.
 

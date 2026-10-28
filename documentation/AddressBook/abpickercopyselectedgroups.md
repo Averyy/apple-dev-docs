@@ -15,7 +15,7 @@ Returns the groups selected in the group list as an array of `ABRecord C` object
 extern CFArrayRefABPickerCopySelectedGroups(ABPickerRef inPicker);
 ```
 
-#### Return Value
+## Return Value
 
 An array with the groups selected in the group list.
 

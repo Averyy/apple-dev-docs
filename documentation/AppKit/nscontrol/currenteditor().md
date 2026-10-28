@@ -19,11 +19,11 @@ func currentEditor() -> NSText?
 - (NSText *) currentEditor;
 ```
 
-#### Return Value
+## Return Value
 
 The field editor for the current control, or `nil` if the receiver does not have a field editor.
 
-#### Discussion
+## Discussion
 
 When the receiver is a control displaying editable text (for example, a text field) and it is the first responder, it has a field editor, which is returned by this method. The field editor is a single [`NSTextView`](../nstextview.md) object that is shared among all the controls in a window for light text-editing needs. It is automatically instantiated when needed.
 

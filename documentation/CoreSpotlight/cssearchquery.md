@@ -27,7 +27,7 @@ class CSSearchQuery
 
 - [Searching for information in your app](./searching-for-information-in-your-app.md)
 
-#### Overview
+## Overview
 
 Use a `CSSearchQuery` object to search your app’s indexed content using a formatted search string. To perform a search, build a predicate string to specify the indexed attributes you want to search and the value you want them to match. After you start the query, you receive batches of results in the handlers you provide.
 

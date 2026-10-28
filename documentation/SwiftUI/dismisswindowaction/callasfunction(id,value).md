@@ -20,7 +20,7 @@ Dismisses the window defined by the window group that is presenting the specifie
 @preconcurrency func callAsFunction<D>(id: String, value: D) where D : Decodable, D : Encodable, D : Hashable
 ```
 
-#### Discussion
+## Discussion
 
 Don’t call this method directly. SwiftUI calls it when you call the [`dismissWindow`](../environmentvalues/dismisswindow.md) action with an identifier and a value:
 

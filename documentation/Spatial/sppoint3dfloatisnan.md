@@ -19,11 +19,11 @@
 static bool SPPoint3DFloatIsNaN(SPPoint3DFloat point);
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that indicates whether the point contains any NaN values.
 
-#### Discussion
+## Discussion
 
 Returns a Boolean value that indicates whether the point contains any NaN values.
 

@@ -25,11 +25,11 @@ func vImageByteSwap_Planar16U(_ src: UnsafePointer<vImage_Buffer>, _ dest: Unsaf
 vImage_Error vImageByteSwap_Planar16U(const vImage_Buffer *src, const vImage_Buffer *dest, vImage_Flags flags);
 ```
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
-#### Discussion
+## Discussion
 
 Call this function to swap the byte ordering of each pixel in an unsigned 16-bit planar image. Byte-swapping converts the image between big endian and little endian architectures.
 

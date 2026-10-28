@@ -25,7 +25,7 @@ class OSLog
 
 - [Generating Log Messages from Your Code](./generating-log-messages-from-your-code.md)
 
-#### Overview
+## Overview
 
 A log categorizes the messages you write and makes it easy to sort and filter them. Each log contains a subsystem and a category, which you define. A subsystem identifies a major functional area of your app, which you specify using reverse DNS notation, such as `com.your_company.your_subsystem_name`. A category segregates specific areas within a subsystem.
 

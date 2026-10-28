@@ -24,7 +24,7 @@ var network: PKPaymentNetwork? { get }
 @property (nonatomic, copy, readonly, nullable) PKPaymentNetwork network;
 ```
 
-#### Discussion
+## Discussion
 
 To protect the user’s privacy, the `network` property is `nil` until after the user authenticates the purchase. You can safely access this property as soon as the system calls your delegate’s [`paymentAuthorizationController(_:didAuthorizePayment:completion:)`](../pkpaymentauthorizationcontrollerdelegate/paymentauthorizationcontroller%28_,didauthorizepayment,completion%29.md) method.
 

@@ -25,7 +25,7 @@ func CGImageSourceUpdateData(_ isrc: CGImageSource, _ data: CFData, _ final: Boo
 extern void CGImageSourceUpdateData(CGImageSourceRef isrc, CFDataRef data, bool final);
 ```
 
-#### Discussion
+## Discussion
 
 This method updates the state of the image source and its contained images. Call this method one or more times to update the contents of an incremental data source. Each time you call the method, you must specify all of the accumulated image data, not just the new data you received.
 

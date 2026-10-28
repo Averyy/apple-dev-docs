@@ -15,7 +15,7 @@ A property of IONetworkController objects.
 #define kIORevision
 ```
 
-#### Discussion
+## Discussion
 
 The kIORevision property is a property of IONetworkController objects. It has an OSString value that describes the revision level of the network controller.
 

@@ -21,7 +21,7 @@ var isSmartFramingSupported: Bool { get }
 @property (nonatomic, readonly, getter=isSmartFramingSupported) BOOL smartFramingSupported;
 ```
 
-#### Discussion
+## Discussion
 
 An ultra wide camera device that supports dynamic aspect ratio configuration may also support “smart framing monitoring” on particular formats.
 

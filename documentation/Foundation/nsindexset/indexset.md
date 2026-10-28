@@ -21,7 +21,7 @@ Creates an empty index set.
 + (instancetype) indexSet;
 ```
 
-#### Return Value
+## Return Value
 
 [`NSIndexSet`](../nsindexset.md) object with no members.
 

@@ -20,7 +20,7 @@ case xhtml
 NSXMLDocumentXHTMLKind
 ```
 
-#### Discussion
+## Discussion
 
 This is set automatically if the `NSXMLDocumentTidyHTML` option is set and NSXML detects HTML.
 

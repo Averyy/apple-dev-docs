@@ -25,7 +25,7 @@ var kind: SparseKind_t { get set }
 SparseKind_t kind;
 ```
 
-#### Discussion
+## Discussion
 
 A `SparseMatrixStructure` object can represent several types of matrices:
 

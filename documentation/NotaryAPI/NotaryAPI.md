@@ -9,7 +9,7 @@ Submit your macOS software for notarization through a web interface.
 **Availability**:
 - Notary API 2.0.0+
 
-#### Overview
+## Overview
 
 Notarization gives people confidence that your Developer ID-signed macOS software has been checked by Apple for malicious code. In addition to interacting with the notary service through Xcode or the `notarytool` command-line utility, you can bypass `notarytool` and interact directly with the service through its REST API. The Notary API is helpful for instances where you need to avoid a macOS dependency when uploading your app to the notary service, and provides endpoints that enable you to:
 

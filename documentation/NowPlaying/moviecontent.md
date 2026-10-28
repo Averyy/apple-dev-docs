@@ -25,7 +25,7 @@ struct MovieContent
 
 - [Publishing media sessions](./publishing-media-sessions.md)
 
-#### Overview
+## Overview
 
 Use this type for movie playback, including films and documentaries.
 

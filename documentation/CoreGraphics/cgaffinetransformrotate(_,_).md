@@ -25,11 +25,11 @@ func CGAffineTransformRotate(_ t: CGAffineTransform, _ angle: CGFloat) -> CGAffi
 extern CGAffineTransform CGAffineTransformRotate(CGAffineTransform t, CGFloat angle);
 ```
 
-#### Return Value
+## Return Value
 
 A new affine transformation matrix.
 
-#### Discussion
+## Discussion
 
 You use this function to create a new affine transformation matrix by adding a rotation value to an existing affine transform. The resulting structure represents a new affine transform, which you can use (and reuse, if you want) to rotate a coordinate system.
 

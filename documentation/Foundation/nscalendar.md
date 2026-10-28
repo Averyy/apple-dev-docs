@@ -25,7 +25,7 @@ class NSCalendar
 @interface NSCalendar : NSObject
 ```
 
-#### Overview
+## Overview
 
 In Swift, this object bridges to [`Calendar`](./calendar.md); use [`NSCalendar`](./nscalendar.md) when you need reference semantics or other Foundation-specific behavior.
 
@@ -35,7 +35,7 @@ In Swift, this object bridges to [`Calendar`](./calendar.md); use [`NSCalendar`]
 
 > ❗ **Important**:  The Swift overlay to the Foundation framework provides the [`Calendar`](./calendar.md) structure, which bridges to the [`NSCalendar`](./nscalendar.md) class. For more information about value types, see [Working with Foundation Types](../Swift/working-with-foundation-types.md).
 
-##### Locales and Calendars
+### Locales and Calendars
 
 Most locales use the most widely used civil calendar, called the *Gregorian calendar* ([`gregorian`](./nscalendar/identifier/gregorian.md)), but there remain exceptions to this trend. For example:
 
@@ -53,7 +53,7 @@ Other locales use another calendar alongside the Gregorian calendar. For example
 
 Independent of any particular locale, certain calendars are used primarily to calculate dates for religious observances. Among these are the Buddhist ([`buddhist`](./nscalendar/identifier/buddhist.md)), Coptic ([`coptic`](./nscalendar/identifier/coptic.md)), Hebrew ([`hebrew`](./nscalendar/identifier/hebrew.md)), and Islamic ([`islamic`](./nscalendar/identifier/islamic.md)) calendars.
 
-##### How NSCalendar Models the Gregorian Calendar
+### How NSCalendar Models the Gregorian Calendar
 
 The Gregorian calendar was first introduced in 1582, as a replacement for the Julian Calendar. According to the Julian calendar, a leap day is added to February for any year with a number divisible by 4, which results in an annual disparity of 11 minutes, or 1 day every 128 years. The Gregorian calendar revised the rules for leap day calculation, by skipping the leap day for any year with a number divisible by 100, unless that year number is also divisible by 400, resulting in an annual disparity of only 26 seconds, or 1 day every 3323 years.
 
@@ -63,7 +63,7 @@ After the Gregorian calendar was introduced, many regions continued to use the J
 
 [`NSCalendar`](./nscalendar.md) models the behavior of a *proleptic* Gregorian calendar (*as defined by ISO 8601:2004*), which extends the Gregorian calendar backward in time from the date of its introduction. This behavior should be taken into account when working with dates created before the transition period of the affected locales.
 
-##### Calendar Arithmetic
+### Calendar Arithmetic
 
 To do calendar arithmetic, you use [`NSDate`](./nsdate.md) objects in conjunction with a calendar. For example, to convert between a decomposed date in one calendar and another calendar, you must first convert the decomposed elements into a date using the first calendar, then decompose it using the second. [`NSDate`](./nsdate.md) provides the absolute scale and epoch (reference point) for dates and times, which can then be rendered into a particular calendar, for calendrical computations or user display.
 

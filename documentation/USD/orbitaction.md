@@ -4,11 +4,11 @@
 
 An action that orbits a set of prims around another.
 
-#### Overview
+## Overview
 
 This action sends the list of prims defined by [affectedObjects](./affectedobjects.md) into orbit at a fixed distance around its [center](./center.md) prim, on a plane perpendicular to the axis of rotation. The runtime caculates the fixed distance as a straight line between the respective origins of the [affectedObjects](./affectedobjects.md) and the [center](./center.md).
 
-##### Declaration
+### Declaration
 
 ```other
 class Preliminary_Action "OrbitAction"

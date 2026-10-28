@@ -21,11 +21,11 @@ func symbolicLinkDestination() -> String
 - (NSString *) symbolicLinkDestination;
 ```
 
-#### Return Value
+## Return Value
 
 Pathname the file wrapper references (the destination of the symbolic link the file wrapper represents).
 
-#### Discussion
+## Discussion
 
 Beginning with OS X v10.6, the preferred method of referring to files is with a `file://` URL. Therefore, this method has been deprecated in favor of [`symbolicLinkDestinationURL`](./symboliclinkdestinationurl.md).
 

@@ -23,7 +23,7 @@ func bringSubviewToFront(_ view: UIView)
 - (void) bringSubviewToFront:(UIView *) view;
 ```
 
-#### Discussion
+## Discussion
 
 This method moves the specified view to the end of the array of views in the [`subviews`](./subviews.md) property.
 

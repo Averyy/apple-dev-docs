@@ -22,7 +22,7 @@ case pause
 UIApplicationShortcutIconTypePause
 ```
 
-#### Discussion
+## Discussion
 
 ![Pause symbol](https://developer.apple.com/tutorials/images/com.apple.uikit/media-2934511@2x.png)
 

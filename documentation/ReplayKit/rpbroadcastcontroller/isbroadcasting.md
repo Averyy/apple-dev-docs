@@ -26,7 +26,7 @@ var isBroadcasting: Bool { get }
 @property (nonatomic, readonly, getter=isBroadcasting) BOOL broadcasting;
 ```
 
-#### Discussion
+## Discussion
 
 When set to [`true`](../../Swift/true.md), the controller is broadcasting.
 

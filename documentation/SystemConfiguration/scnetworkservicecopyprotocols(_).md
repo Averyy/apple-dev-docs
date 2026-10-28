@@ -19,7 +19,7 @@ func SCNetworkServiceCopyProtocols(_ service: SCNetworkService) -> CFArray?
 CFArrayRefSCNetworkServiceCopyProtocols(SCNetworkServiceRef service);
 ```
 
-#### Return Value
+## Return Value
 
 The network protocols associated with the service. You must release the returned value.
 

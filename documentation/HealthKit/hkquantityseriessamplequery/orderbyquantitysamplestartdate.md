@@ -24,7 +24,7 @@ var orderByQuantitySampleStartDate: Bool { get set }
 @property (nonatomic, assign) BOOL orderByQuantitySampleStartDate;
 ```
 
-#### Discussion
+## Discussion
 
 By default the query returns all the quantities in ascending order based on their start date. If you set this property to [`true`](../../Swift/true.md), HealthKit first sorts the matching [`HKQuantitySample`](../hkquantitysample.md) objects by their [`startDate`](../hksample/startdate.md) parameter. Then, for each sample, it returns all the quantity objects in ascending order. If the sample objects overlap, then the quantities may not appear in ascending order when switching from one sample to the next.
 

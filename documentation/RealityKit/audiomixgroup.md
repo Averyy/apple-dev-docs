@@ -20,7 +20,7 @@ A group that manages the playback properties of multiple playing sounds.
 struct AudioMixGroup
 ```
 
-#### Overview
+## Overview
 
 A mix group component manages the playback parameters for a collection of different [`AudioPlaybackController`](./audioplaybackcontroller.md) and [`AudioGeneratorController`](./audiogeneratorcontroller.md) instances. Properties such as [`gain`](./audiomixgroup/gain.md), [`fade(to:duration:)`](./audiomixgroup/fade%28to,duration%29.md), and [`speed`](./audiomixgroup/speed.md) are multiplicative with the parameters you set on the controller.
 

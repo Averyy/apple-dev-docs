@@ -20,7 +20,7 @@ Vertex buffer data.
 let vertexData: [Data]
 ```
 
-#### Discussion
+## Discussion
 
 Each entry corresponds to one vertex buffer.
 

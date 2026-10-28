@@ -23,7 +23,7 @@ mutating func subtract<S>(_ other: S) where Element == S.Element, S : Sequence
 
 Available when `Element` conforms to `Hashable`.
 
-#### Discussion
+## Discussion
 
 In the following example, the elements of the `employees` set that are also elements of the `neighbors` array are removed. In particular, the names `"Bethany"` and `"Eric"` are removed from `employees`.
 

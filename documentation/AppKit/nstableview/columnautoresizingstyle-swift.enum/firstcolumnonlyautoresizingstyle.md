@@ -19,7 +19,7 @@ case firstColumnOnlyAutoresizingStyle
 NSTableViewFirstColumnOnlyAutoresizingStyle
 ```
 
-#### Discussion
+## Discussion
 
 When that table column can no longer be resized, stop autoresizing.  Normally you should use one of the sequential autoresizing modes instead.
 

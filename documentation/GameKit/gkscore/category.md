@@ -32,7 +32,7 @@ var category: String? { get set }
 @property (atomic, copy, nullable) NSString * category;
 ```
 
-#### Discussion
+## Discussion
 
 The category string must match an identifier for a leaderboard you created in App Store Connect.
 

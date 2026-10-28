@@ -21,7 +21,7 @@ var summaryText: String? { get set }
 @property (nonatomic, copy, nullable) NSString * summaryText;
 ```
 
-#### Discussion
+## Discussion
 
 This property defaults to `nil`.
 

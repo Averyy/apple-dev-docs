@@ -6,7 +6,7 @@
 
 An array of 8-bit integers, each containing the actual name of the metadata key.
 
-#### Overview
+## Overview
 
 Keys with the `‘mdta’` namespace use a reverse DNS naming convention. For example, the location metadata coordinates use a metadata `key_value` of `‘com.apple.quicktime.location.ISO6709’`.
 

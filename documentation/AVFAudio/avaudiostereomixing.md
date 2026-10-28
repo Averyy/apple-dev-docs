@@ -25,7 +25,7 @@ protocol AVAudioStereoMixing : NSObjectProtocol, Sendable
 @protocol AVAudioStereoMixing <NSObject>
 ```
 
-#### Overview
+## Overview
 
 > ❗ **Important**:  The [`AVAudioMixing`](./avaudiomixing.md) protocol adopts this protocol. As a result, many classes also inherit this protocol by adopting `AVAudioMixing`.
 

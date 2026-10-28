@@ -25,7 +25,7 @@ class XCUIVoiceOverService
 @interface XCUIVoiceOverService : NSObject
 ```
 
-#### Overview
+## Overview
 
 Provides programmatic control of VoiceOver for UI testing.
 

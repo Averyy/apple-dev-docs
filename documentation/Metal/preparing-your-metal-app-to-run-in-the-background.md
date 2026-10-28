@@ -5,19 +5,19 @@
 
 Prepare your app to move into the background by pausing future GPU use and ensuring previous work is scheduled.
 
-#### Overview
+## Overview
 
 iOS and tvOS restrict a background app’s access to the GPU, to guarantee foreground app performance. If a Metal command queue tries to schedule command buffers after the app moves in the background, the system prevents those commands from executing. When UIKit notifies you that your app is being suspended or moved into the background, your app needs to restrict its use of Metal.
 
 For more information on the UIKit app life cycle, see [Preparing your UI to run in the background](../UIKit/preparing-your-ui-to-run-in-the-background.md).
 
-##### Disable code that commits new command buffers
+### Disable code that commits new command buffers
 
 When your app is deactivated, stop sending work to Metal. Enable that code only after your app is reactivated.
 
 After the system notifies your app that it’s being deactivated, you’ve some time before the system restricts your app from using Metal. You can schedule additional commands if that work is critical to prepare your app to be in the background state. Similarly, if your app was already in the middle of encoding commands, your app can typically finish the current task before disabling further work. For example, if your app renders frames of animation to the screen, and you receive the notification while you’re encoding commands for a new frame, you can finish encoding that frame before disabling your rendering code.
 
-##### Ensure all previous work is scheduled for execution
+### Ensure all previous work is scheduled for execution
 
 When UIKit calls your app delegate’s [`applicationDidEnterBackground(_:)`](../UIKit/uiapplicationdelegate/applicationdidenterbackground%28_%29.md) method, make sure Metal has scheduled all command buffers you’ve already committed before your app returns control to the system. On each command queue, if the last command buffer you queued isn’t already scheduled or complete, call [`waitUntilScheduled()`](./mtlcommandbuffer/waituntilscheduled%28%29.md) to force it to be scheduled.
 

@@ -32,7 +32,7 @@ optional func matchmakerViewController(_ viewController: GKMatchmakerViewControl
 
 - [Finding players using matchmaking rules](../finding-players-using-matchmaking-rules.md)
 
-#### Discussion
+## Discussion
 
 Implement this method if you can provide properties for the recipients of this match request to better fine tune the Game Center matchmaking using rules. For more information, see [Matchmaking rules](../matchmaking-rules.md).
 

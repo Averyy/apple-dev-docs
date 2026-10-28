@@ -23,7 +23,7 @@ optional func isLoadingComplete(for context: WKWebExtensionContext) -> Bool
 - (BOOL) isLoadingCompleteForWebExtensionContext:(WKWebExtensionContext *) context;
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to [`isLoading`](../wkwebview/isloading.md) of the tab’s web view if not implemented.
 

@@ -19,7 +19,7 @@ var titleOfSelectedItem: String? { get }
 @property (copy, readonly, nullable) NSString * titleOfSelectedItem;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is the title of the selected menu item, or an empty string if no item is selected.
 

@@ -19,7 +19,7 @@ The distance between the title and subtitle labels.
 @property (nonatomic, assign, readwrite) CGFloat titlePadding;
 ```
 
-#### Discussion
+## Discussion
 
 The title padding adjusts the distance between the title and subtitle labels.
 

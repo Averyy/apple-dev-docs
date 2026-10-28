@@ -25,7 +25,7 @@ func add(_ timer: Timer, forMode mode: RunLoop.Mode)
 - (void) addTimer:(NSTimer *) timer forMode:(NSRunLoopMode) mode;
 ```
 
-#### Discussion
+## Discussion
 
 You can add a timer to multiple input modes. While running in the designated mode, the receiver causes the timer to fire on or after its scheduled fire date. Upon firing, the timer invokes its associated handler routine, which is a selector on a designated object.
 

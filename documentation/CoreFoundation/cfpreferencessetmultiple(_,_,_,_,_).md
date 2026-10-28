@@ -25,7 +25,7 @@ func CFPreferencesSetMultiple(_ keysToSet: CFDictionary?, _ keysToRemove: CFArra
 extern void CFPreferencesSetMultiple(CFDictionaryRef keysToSet, CFArrayRef keysToRemove, CFStringRef applicationID, CFStringRef userName, CFStringRef hostName);
 ```
 
-#### Discussion
+## Discussion
 
 Behavior is undefined if a key is in both `keysToSet` and `keysToRemove`
 

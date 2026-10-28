@@ -22,7 +22,7 @@ nonisolated
 func navigationSplitViewColumnWidth(_ width: CGFloat) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 Apply this modifier to the content of a column in a [`NavigationSplitView`](../navigationsplitview.md) to specify a fixed preferred width for the column. Use [`navigationSplitViewColumnWidth(min:ideal:max:)`](./navigationsplitviewcolumnwidth%28min,ideal,max%29.md) if you need to specify a flexible width.
 

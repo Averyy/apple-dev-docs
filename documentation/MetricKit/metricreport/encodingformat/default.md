@@ -18,7 +18,7 @@ Default format with state entries and interval entries as arrays.
 case `default`
 ```
 
-#### Discussion
+## Discussion
 
 State entries are provided as an array, interval entries are provided as an array with states as arrays within each entry.
 

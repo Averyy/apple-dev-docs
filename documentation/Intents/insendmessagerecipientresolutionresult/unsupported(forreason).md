@@ -24,11 +24,11 @@ class func unsupported(forReason reason: INSendMessageRecipientUnsupportedReason
 + (instancetype) unsupportedForReason:(INSendMessageRecipientUnsupportedReason) reason;
 ```
 
-#### Return Value
+## Return Value
 
 A new resolution result object.
 
-#### Discussion
+## Discussion
 
 Use this method when a problem with the recipient’s account would prevent you from sending the message. When you return a resolution of this type, Siri prompts the user to provide a new recipient, which you must then resolve. The cycle of prompting the user and asking you to resolve the parameter continues until you resolve the parameter successfully.
 

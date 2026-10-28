@@ -24,11 +24,11 @@ func singleGateRNNGradients(_ source: MPSGraphTensor, recurrentWeight: MPSGraphT
 - (NSArray<MPSGraphTensor *> *) singleGateRNNGradientsWithSourceTensor:(MPSGraphTensor *) source recurrentWeight:(MPSGraphTensor *) recurrentWeight sourceGradient:(MPSGraphTensor *) sourceGradient zState:(MPSGraphTensor *) zState inputWeight:(MPSGraphTensor *) inputWeight bias:(MPSGraphTensor *) bias initState:(MPSGraphTensor *) initState mask:(MPSGraphTensor *) mask descriptor:(MPSGraphSingleGateRNNDescriptor *) descriptor name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid `MPSGraphTensor` array containing gradients for each input tensor, except for `sourceGradient` and `mask`. In case an input is `nil`, no gradient will be returned for it. The order of the gradients will be: for `source`, for `recurrentWeight`, for `inputWeight`, for `bias` and finally for `initState`.
 
-#### Discussion
+## Discussion
 
 For details of this operation and parameters, refer to documentation of [`singleGateRNN(_:recurrentWeight:inputWeight:bias:initState:mask:descriptor:name:)`](./singlegaternn%28_,recurrentweight,inputweight,bias,initstate,mask,descriptor,name%29.md).
 

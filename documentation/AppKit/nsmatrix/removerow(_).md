@@ -19,7 +19,7 @@ func removeRow(_ row: Int)
 - (void) removeRow:(NSInteger) row;
 ```
 
-#### Discussion
+## Discussion
 
 The row’s cells are autoreleased. This method redraws the receiver. Your code should normally send [`sizeToCells()`](./sizetocells%28%29.md) after invoking this method to resize the receiver so it fits the reduced cell count.
 

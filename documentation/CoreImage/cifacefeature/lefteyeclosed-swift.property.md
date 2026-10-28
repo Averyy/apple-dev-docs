@@ -24,7 +24,7 @@ var leftEyeClosed: Bool { get }
 @property (assign, readonly) BOOL leftEyeClosed;
 ```
 
-#### Discussion
+## Discussion
 
 To detect closed eyes, `/CIDetector/featuresInImage:options:` needs to be called with the [`CIDetectorEyeBlink`](../cidetectoreyeblink.md) option set to true.
 

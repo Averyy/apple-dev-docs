@@ -5,7 +5,7 @@
 
 An object that provides methods to obtain information about the result of an Installation Check or Volume Check script. 
 
-#### Overview
+## Overview
 
 This object is accessed using the `my.result` property.
 

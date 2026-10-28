@@ -23,7 +23,7 @@ func reloadFromOrigin() -> WKNavigation?
 - (WKNavigation *) reloadFromOrigin;
 ```
 
-#### Return Value
+## Return Value
 
 A new navigation that represents the reloaded webpage.
 

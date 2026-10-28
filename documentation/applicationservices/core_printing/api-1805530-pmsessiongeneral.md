@@ -16,11 +16,11 @@ OSStatus PMSessionGeneral (
 );
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../core_printing.md#1670007).
 
-#### Overview
+## Overview
 
 The function `PMSessionGeneral` is valid for the printing session passed to the function. In macOS, the function `PMSessionGeneral` makes an attempt to get the requested data if the opcode is `getPSInfoOp`. Otherwise the result code `kPMNotImplemented` is returned.
 

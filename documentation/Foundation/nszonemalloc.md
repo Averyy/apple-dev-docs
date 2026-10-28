@@ -23,7 +23,7 @@ Allocates memory in a zone.
 extern void *NSZoneMalloc(NSZone *zone, NSUInteger size);
 ```
 
-#### Discussion
+## Discussion
 
 Allocates `size` bytes in `zone` and returns a pointer to the allocated memory. This function returns `NULL` if it was unable to allocate the requested memory.
 

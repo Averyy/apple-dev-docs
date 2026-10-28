@@ -5,19 +5,19 @@
 
 Learn about important changes to AVFoundation.
 
-#### Overview
+## Overview
 
 Browse notable changes in [AVFoundation](../AVFoundation/AVFoundation.md).
 
-#### June 2024
+## June 2024
 
-##### Assets
+### Assets
 
 - Preserve HDR data when generating images with `AVAssetImageGenerator` by setting the value of its [`dynamicRangePolicy`](../AVFoundation/avassetimagegenerator/dynamicrangepolicy-swift.property.md) property to match the source video.
 - Export media asynchronously using the [`export(to:as:isolation:)`](../AVFoundation/avassetexportsession/export%28to,as,isolation%29.md) method of [`AVAssetExportSession`](../AVFoundation/avassetexportsession.md). You can monitor the progress of an export by calling the [`states(updateInterval:)`](../AVFoundation/avassetexportsession/states%28updateinterval%29.md) method and awaiting its results.
 - Determine whether an [`AVURLAsset`](../AVFoundation/avurlasset.md) decodes its data using a Media Extension by inspecting its [`mediaExtensionProperties`](../AVFoundation/avurlasset/mediaextensionproperties.md) property.
 
-##### Camera
+### Camera
 
 - Show your camera app on the Lock Screen by adopting the  [LockedCameraCapture](../LockedCameraCapture/LockedCameraCapture.md) framework.
 - Capture photos in constant color by configuring a photo output’s [`isConstantColorEnabled`](../AVFoundation/avcapturephotooutput/isconstantcolorenabled.md) property.
@@ -27,7 +27,7 @@ Browse notable changes in [AVFoundation](../AVFoundation/AVFoundation.md).
 - Configure a capture device to automatically adjust its frame rate based on lighting conditions by enabling its [`isAutoVideoFrameRateEnabled`](../AVFoundation/avcapturedevice/isautovideoframerateenabled.md) property.
 - Configure a capture device to replace background content in macOS by enabling its [`isBackgroundReplacementEnabled`](../AVFoundation/avcapturedevice/isbackgroundreplacementenabled.md) property.
 
-##### Playback
+### Playback
 
 - Build playback apps using the latest Swift Concurrency features due to enhanced [`Sendable`](../Swift/sendable.md) adoption throughout the playback APIs.
 - Capture performance and playback metrics using [`AVMetrics`](../AVFoundation/avmetrics.md).

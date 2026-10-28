@@ -19,7 +19,7 @@ Generates an array of labeled audio dictionaries by splitting the data source in
 func stratifiedSplit<RNG>(proportions: [Double], generator: inout RNG) throws -> [[String : [URL]]] where RNG : RandomNumberGenerator
 ```
 
-#### Return Value
+## Return Value
 
 An array of dictionaries of labeled audio files. Each dictionary key is a label string and its value is an array of audio-file URLs.
 

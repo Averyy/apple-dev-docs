@@ -21,7 +21,7 @@ Retrieves a limited number of strings near a location in the vocabulary space.
 - (NSArray<NSString *> *) neighborsForVector:(NSArray<NSNumber *> *) vector maximumCount:(NSUInteger) maxCount distanceType:(NLDistanceType) distanceType;
 ```
 
-#### Return Value
+## Return Value
 
 An array of tuples that contain neighboring strings and their distances. In Objective-C, this returns an array of neighboring strings.
 

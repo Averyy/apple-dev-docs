@@ -15,7 +15,7 @@ The request body for updating a bid strategy on an ad group or campaign.
 object AdGroupUpdate.BidStrategy
 ```
 
-#### Discussion
+## Discussion
 
 Ad groups under an auto-bidding campaign (`bidStrategyType` of `MAX_CONVERSIONS` or `MAX_ENGAGEMENTS`) inherit their bid strategy from the campaign. For other ad groups, you can change both `bidStrategyType` and `bidStrategyGoal`, as long as you send them together and match one of these pairings: `MANUAL_CPT`↔`TAP`, `MANUAL_CPM`↔`IMPRESSION`, `MAX_CONVERSIONS`↔`INSTALL`, `MAX_ENGAGEMENTS`↔`TAP`.
 

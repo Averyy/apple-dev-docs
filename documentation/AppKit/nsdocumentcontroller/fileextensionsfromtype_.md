@@ -17,11 +17,11 @@ Returns the allowable file extensions for the given document type.
 - (NSArray *) fileExtensionsFromType:(NSString *) typeName;
 ```
 
-#### Return Value
+## Return Value
 
 The allowable file extensions (as `NSString` objects) for `documentTypeName`.
 
-#### Discussion
+## Discussion
 
 Type extensions are specified by the `CFBundleTypeExtensions` array for the given type in the `Info.plist` file.
 

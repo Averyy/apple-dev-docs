@@ -20,7 +20,7 @@ Returns a Boolean value that indicates whether the spec contains no authored dat
 func isInert(ignoringChildren: Bool = false) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the spec has no authored data.
 

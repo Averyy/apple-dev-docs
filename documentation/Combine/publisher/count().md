@@ -21,11 +21,11 @@ Publishes the number of elements received from the upstream publisher.
 func count() -> Publishers.Count<Self>
 ```
 
-#### Return Value
+## Return Value
 
 A publisher that consumes all elements until the upstream publisher finishes, then emits a single value with the total number of elements received.
 
-#### Discussion
+## Discussion
 
 Use [`count()`](./count%28%29.md) to determine the number of elements received from the upstream publisher before it completes:
 

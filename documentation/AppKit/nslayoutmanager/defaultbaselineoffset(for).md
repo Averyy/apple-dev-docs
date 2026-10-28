@@ -19,11 +19,11 @@ func defaultBaselineOffset(for theFont: NSFont) -> CGFloat
 - (CGFloat) defaultBaselineOffsetForFont:(NSFont *) theFont;
 ```
 
-#### Return Value
+## Return Value
 
 The default baseline offset for a line of text drawn using `theFont`.
 
-#### Discussion
+## Discussion
 
 The value returned may vary according to the layout manager’s typesetter behavior.
 

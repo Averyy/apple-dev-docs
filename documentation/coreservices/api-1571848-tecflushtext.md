@@ -15,11 +15,11 @@ Flushes out any data in a converter object’s temporarybuffers and resets the c
 OSStatus TECFlushText(TECObjectRef encodingConverter, TextPtr outputBuffer, ByteCount outputBufferLength, ByteCount *actualOutputLength);
 ```
 
-#### Return Value
+## Return Value
 
 A resultcode. See [Result Codes](./carbon_core/text_encoding_conversion_manager.md#1664324).
 
-#### Discussion
+## Discussion
 
 You should always call `TECFlushText` whenyou finish converting a text stream. If you are converting a singlestream in multiple chunks using multiple calls to `TECConvertText`,you only need to call `TECFlushText` afterthe last call to `TECConvertText` forthat stream. The function uses the conversion path specified inthe converter object you supply. 
 

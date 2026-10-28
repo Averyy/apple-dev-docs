@@ -25,7 +25,7 @@ init(start startDate: Date, duration: TimeInterval)
 - (instancetype) initWithStartDate:(NSDate *) startDate duration:(NSTimeInterval) duration;
 ```
 
-#### Discussion
+## Discussion
 
 This is the designated initializer.
 

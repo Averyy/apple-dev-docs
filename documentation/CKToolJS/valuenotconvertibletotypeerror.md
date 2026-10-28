@@ -15,7 +15,7 @@ The base class of errors related to type validation or coercion.
 interface ValueNotConvertibleToTypeError
 ```
 
-#### Overview
+## Overview
 
 Extends `ValidationError`.
 

@@ -21,7 +21,7 @@ Indicates how the system prioritizes transmitted traffic by your latency and thr
 enum ServiceClass
 ```
 
-#### Overview
+## Overview
 
 Use `ServiceClass` to tell the system and compatible networks how to handle your outgoing packets on Wi-Fi, Ethernet, or cellular. You describe whether your traffic favors low latency or high throughput. It prioritizes data packets transmitted on an underlying transport according to the throughput and latency characteristics of the use case. `ServiceClass` doesn’t necessarily affect the priority of packets received from a data transport, which may be set by the network. The default [`NWParameters.ServiceClass.bestEffort`](./serviceclass-swift.enum/besteffort.md) category should be used when their isn’t a specific need or test results that indicates another service class would be helpful.
 

@@ -5,7 +5,7 @@
 
 An API that provides functions and types for defining custom pixel formats.
 
-#### Overview
+## Overview
 
 The Core Video pixel format description API defines functions and types for defining custom pixel formats. You should only use pixel format descriptions if you need to define a custom pixel format.
 

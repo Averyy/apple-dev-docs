@@ -21,7 +21,7 @@ Fits a transformer to a data frame of preprocessed features.
 func fitted(toPreprocessed preprocessed: DataFrame, eventHandler: EventHandler? = nil) async throws -> PreprocessingUpdatableTabularEstimator<Preprocessor, Estimator>.Transformer
 ```
 
-#### Return Value
+## Return Value
 
 The fitted transformer.
 

@@ -24,7 +24,7 @@ func endSession()
 - (void) endSession;
 ```
 
-#### Discussion
+## Discussion
 
 After this call completes, no new frames can be processed unless [`startSession(configuration:)`](./startsession%28configuration%29.md) is called again.
 

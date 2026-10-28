@@ -21,7 +21,7 @@ let kQLPreviewPropertyDisplayNameKey: CFString!
 extern CFStringRef const kQLPreviewPropertyDisplayNameKey;
 ```
 
-#### Discussion
+## Discussion
 
 The default display name is the document’s title. You must encapsulate the value in a [`CFNumber`](../CoreFoundation/cfnumber.md) object.
 

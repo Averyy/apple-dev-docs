@@ -19,7 +19,7 @@ static let contentArrayForMultipleSelection: NSBindingName
 extern NSBindingName NSContentArrayForMultipleSelectionBinding;
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see [Cocoa Bindings](../cocoa-bindings.md).
 

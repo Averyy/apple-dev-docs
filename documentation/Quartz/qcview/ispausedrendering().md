@@ -21,7 +21,7 @@ func isPausedRendering() -> Bool
 - (BOOL) isPausedRendering;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the rendering is paused; otherwise [`false`](../../Swift/false.md).
 

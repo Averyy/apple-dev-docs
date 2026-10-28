@@ -21,11 +21,11 @@ Returns a filter that multiplies by a given color matrix.
 static func colorMatrix(_ matrix: ColorMatrix, isPremultiplied: Bool) -> GraphicsContext.Filter
 ```
 
-#### Return Value
+## Return Value
 
 A filter that transforms color using the given matrix.
 
-#### Discussion
+## Discussion
 
 This filter is equivalent to the `feColorMatrix` filter primitive defined by the Scalable Vector Graphics (SVG) specification.
 

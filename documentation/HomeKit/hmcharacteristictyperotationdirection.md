@@ -24,7 +24,7 @@ let HMCharacteristicTypeRotationDirection: String
 extern NSString * const HMCharacteristicTypeRotationDirection;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is one of the constants in the [`HMCharacteristicValueRotationDirection`](./hmcharacteristicvaluerotationdirection.md) enumeration.
 

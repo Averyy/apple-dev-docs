@@ -21,7 +21,7 @@ A day or count of days.
 var day: Int? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**:  This value is interpreted in the context of the calendar in which it is used.
 

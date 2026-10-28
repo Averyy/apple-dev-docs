@@ -21,7 +21,7 @@ func SecKeychainGetPath(_ keychain: SecKeychain?, _ ioPathLength: UnsafeMutableP
 OSStatus SecKeychainGetPath(SecKeychainRef keychain, UInt32 *ioPathLength, char *pathName);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 

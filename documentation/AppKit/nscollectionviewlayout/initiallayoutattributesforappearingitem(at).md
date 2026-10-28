@@ -19,11 +19,11 @@ func initialLayoutAttributesForAppearingItem(at itemIndexPath: IndexPath) -> NSC
 - (NSCollectionViewLayoutAttributes *) initialLayoutAttributesForAppearingItemAtIndexPath:(NSIndexPath *) itemIndexPath;
 ```
 
-#### Return Value
+## Return Value
 
 The layout attributes object that describes the item’s position and properties at the start of animations.
 
-#### Discussion
+## Discussion
 
 When your app inserts new items into the collection view, the collection view calls this method for each item you insert. Because new items are not yet visible in the collection view, the attributes you return represent the item’s starting state. For example, you might return attributes that position the item offscreen or set its initial alpha to `0`. The collection view uses the attributes you return as the starting point for any animations. (The end point of the animation is the item’s new location and attributes.) If you return `nil`, the layout uses the item’s final attributes for both the start point and end point of the animation.
 

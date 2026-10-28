@@ -15,7 +15,7 @@ Initializes a security message with key material and metadata.
 init(keyType: SecurityMessage.KeyType, cipherSuite: SecurityMessage.CipherSuite, version: SecurityMessage.CipherSuite.Version, key: Data, supportedTransports: [AccessoryTransport] = [.bluetooth], identifier: String? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 When initiating key exchange from your accessory, create a message with [`SecurityMessage.KeyType.publicKey`](./keytype-swift.enum/publickey.md) and your accessory’s public key. The system responds with a message containing [`SecurityMessage.KeyType.encapsulatedKey`](./keytype-swift.enum/encapsulatedkey.md).
 

@@ -19,7 +19,7 @@ var allowsExtensionItems: Bool { get set }
 @property BOOL allowsExtensionItems;
 ```
 
-#### Discussion
+## Discussion
 
 If the value of this property is [`true`](../../Swift/true.md), the toolbar can dynamically create toolbar items for Action extensions in the toolbar configuration panel. The toolbar can only add an Action extension if its `Info.plist` file contains the [`NSExtensionServiceAllowsToolbarItem`](../../BundleResources/information-property-list/nsextension/nsextensionattributes/nsextensionserviceallowstoolbaritem.md) key with the value [`true`](../../Swift/true.md). The default value of this property is [`false`](../../Swift/false.md).
 

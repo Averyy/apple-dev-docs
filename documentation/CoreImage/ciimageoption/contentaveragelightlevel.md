@@ -24,7 +24,7 @@ static let contentAverageLightLevel: CIImageOption
 extern CIImageOption const kCIImageContentAverageLightLevel;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key should be an `NSNumber` instance.
 

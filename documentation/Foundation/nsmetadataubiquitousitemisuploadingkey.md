@@ -23,7 +23,7 @@ let NSMetadataUbiquitousItemIsUploadingKey: String
 extern NSString * const NSMetadataUbiquitousItemIsUploadingKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value is an [`NSNumber`](./nsnumber.md) object that contains a Boolean indicating whether the current version of the item is currently being uploaded to the cloud.
 

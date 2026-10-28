@@ -11,7 +11,7 @@ Annotate an AR experience with virtual sticky notes that you display onscreen ov
 - iPadOS 13.0+
 - Xcode 16.0+
 
-#### Overview
+## Overview
 
 At times, the user may want to annotate real or virtual objects in your AR experience. For example, they might want to place a virtual name plate on paintings at a museum. By fixing annotations to the screen, you enable the user to annotate their AR experience in *screen space*. To demonstrate screen-space annotations, this sample app enables the capability to tap the screen to place one or more virtual sticky notes with text in the real world.
 
@@ -21,7 +21,7 @@ Text displayed in screen space remains readable at all viewing angles and distan
 
 To display text that’s anchored in world space instead, see [Recognizing and Labeling Arbitrary Objects](./recognizing-and-labeling-arbitrary-objects.md).
 
-#### Resolve the User’s Tap to a 3D Location
+## Resolve the User’s Tap to a 3D Location
 
 To annotate an object in an AR experience, you first determine where it is in the physical environment. This sample app enables the user to tap the screen to place a sticky note by first adding a tap gesture recognizer to the view.
 
@@ -53,7 +53,7 @@ guard let raycastResult = arView.raycast(from: touchLocation, allowing: .estimat
 
 If ARKit finds a planar surface where the user tapped, the ray-cast result provides you the 3D intersection point in [`worldTransform`](./arraycastresult/worldtransform.md).
 
-#### Anchor a sticky note in the environment
+## Anchor a sticky note in the environment
 
 To keep track of a real-world location, you create an anchor positioned there. RealityKit implements an anchor as an [`Entity`](../RealityKit/entity.md) conforming to [`HasAnchoring`](../RealityKit/hasanchoring.md). Thus, you implement those protocols when designing a sticky note in RealityKit.
 
@@ -84,7 +84,7 @@ Let RealityKit know about your entity by adding it to the scene hierarchy. Reali
 arView.scene.addAnchor(note)
 ```
 
-#### Display the sticky note’s annotation
+## Display the sticky note’s annotation
 
 For the purposes of this sample app, the sticky note entity has no geometry and thus, no appearance. Its anchor provides a 3D location only, and it’s the sticky note’s screen-space annotation that has an appearance. To display it, you define the sticky note’s annotation. Following RealityKit’s entity-component model, design a component that houses the annotation, which in this case is a view. See `ScreenSpaceComponent.swift`.
 
@@ -143,7 +143,7 @@ To do that, calculate the midpoint and set the view’s origin.
 view.frame.origin = CGPoint(x: centerPoint.x, y: centerPoint.y)
 ```
 
-#### Update the annotation’s position
+## Update the annotation’s position
 
 Because users move their device during an AR experience, the annotation’s screen position quickly becomes out of sync with its anchor’s world position. To keep the annotation’s screen position accurate, call [`ARView`](../RealityKit/arview.md)‘s `project` function every frame, updating the annotation’s position with the result.
 
@@ -153,7 +153,7 @@ note.projection = Projection(projectedPoint: projectedPoint, isVisible: isVisibl
 note.updateScreenPosition()
 ```
 
-#### Handle user interaction
+## Handle user interaction
 
 A benefit of using [`UIView`](../UIKit/uiview.md) types for screen annotations is that they simplify user interaction. The sample implements sticky notes using [`UITextView`](../UIKit/uitextview.md), which enables users to more easily edit their text. The sample implements minimal gesture recognizer code to manage sticky notes.
 
@@ -226,7 +226,7 @@ if stickyView.isInTrashZone {
     // ...
 ```
 
-#### Enhance the experience with animation
+## Enhance the experience with animation
 
 Keeping screen-space annotations to a minimum will maximize the user’s immersion in the AR experience. The sample app makes sticky notes small when the user isn’t editing text, minimizing distractions so they can focus on the real-world environment. But for similar reasons, you should enlarge a sticky note when the user is editing text. To create a seamless transition between editing and nonediting states, animate the sticky note’s size instead of changing it abruptly. See the   `animateStickyViewToEditingFrame` function.
 

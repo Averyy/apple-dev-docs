@@ -25,7 +25,7 @@ unowned(unsafe) var contactDelegate: (any SKPhysicsContactDelegate)? { get set }
 @property (nonatomic, assign, nullable) id<SKPhysicsContactDelegate> contactDelegate;
 ```
 
-#### Discussion
+## Discussion
 
 A contact is created when two physics bodies overlap and one of the physics bodies has a [`contactTestBitMask`](../skphysicsbody/contacttestbitmask.md) property that overlaps with the other body’s [`categoryBitMask`](../skphysicsbody/categorybitmask.md) property. By default, a physics body’s [`contactTestBitMask`](../skphysicsbody/contacttestbitmask.md) is set to all bits cleared.
 

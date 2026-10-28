@@ -22,7 +22,7 @@ nonisolated
 struct GroupSectionsOfContent<Sections, Content> where Sections : View, Content : View
 ```
 
-#### Overview
+## Overview
 
 You don’t use this type directly. Instead SwiftUI creates this type on your behalf.
 

@@ -19,7 +19,7 @@ var allowsMultipleSelection: Bool { get set }
 @property BOOL allowsMultipleSelection;
 ```
 
-#### Discussion
+## Discussion
 
 The default is [`false`](../../Swift/false.md), which allows the user to select only one column or row at a time. You can select multiple columns or rows programmatically regardless of this setting.
 

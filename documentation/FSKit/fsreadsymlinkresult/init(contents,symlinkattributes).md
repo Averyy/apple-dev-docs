@@ -19,7 +19,7 @@ init?(contents: FSFileName, symlinkAttributes attributes: FSItem.Attributes)
 - (instancetype) initWithContents:(FSFileName *) contents symlinkAttributes:(FSItemAttributes *) attributes;
 ```
 
-#### Return Value
+## Return Value
 
 A populated result instance, or `nil` if validation fails.
 

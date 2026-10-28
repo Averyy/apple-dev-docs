@@ -20,7 +20,7 @@ A reference to a particular scene, entity, or property that animates.
 enum BindTarget
 ```
 
-#### Overview
+## Overview
 
 This structure describes a reference to an animated property. The property may be a transform, collection of joint transforms, an arbitrary named property of an entity, or the property of a nested entity.
 

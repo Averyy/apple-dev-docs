@@ -25,7 +25,7 @@ typealias SCNBindingBlock = (UInt32, UInt32, SCNNode?, SCNRenderer) -> Void
 typedef void (^)(unsigned int, unsigned int, SCNNode *, SCNRenderer *) SCNBindingBlock;
 ```
 
-#### Discussion
+## Discussion
 
 The block takes the following parameters:
 

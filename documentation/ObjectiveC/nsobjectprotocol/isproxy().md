@@ -26,11 +26,11 @@ func isProxy() -> Bool
 - (BOOL) isProxy;
 ```
 
-#### Return Value
+## Return Value
 
 [`NO`](../no.md) if the receiver really descends from [`NSObject`](../nsobject-swift.class.md), otherwise [`YES`](../yes.md).
 
-#### Discussion
+## Discussion
 
 This method is necessary because sending [`isKind(of:)`](./iskind%28of%29.md) or [`isMember(of:)`](./ismember%28of%29.md) to an [`NSProxy`](../../Foundation/nsproxy.md) object will test the object the proxy stands in for, not the proxy itself. Use this method to test if the receiver is a proxy (or a member of some other root class).
 

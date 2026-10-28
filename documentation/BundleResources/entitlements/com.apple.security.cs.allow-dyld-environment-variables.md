@@ -14,7 +14,7 @@ A Boolean value that indicates whether the app may be affected by dynamic linker
 - **Name**: `com.apple.security.cs.allow-dyld-environment-variables` (Allow DYLD Environment Variables)
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 If your app relies on dynamic linker variables to modify its behavior at runtime, add the `Allow DYLD environment variables entitlement` to your app. This causes the macOS dynamic linker (`dyld`) to read from environment variables that begin with `DYLD_`. See the `dyld` man page for a list of these variables.
 

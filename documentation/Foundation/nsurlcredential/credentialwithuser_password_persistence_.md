@@ -21,11 +21,11 @@ Creates a URL credential instance for internet password authentication with a gi
 + (NSURLCredential *) credentialWithUser:(NSString *) user password:(NSString *) password persistence:(NSURLCredentialPersistence) persistence;
 ```
 
-#### Return Value
+## Return Value
 
 A new URL credential object with user name `user`, password `password`, and using persistence setting `persistence`.
 
-#### Discussion
+## Discussion
 
 If `persistence` is [`URLCredential.Persistence.permanent`](../urlcredential/persistence-swift.enum/permanent.md), the credential is stored in the keychain. If `persistence` is [`URLCredential.Persistence.synchronizable`](../urlcredential/persistence-swift.enum/synchronizable.md), it is also synchronized to the user’s other devices.
 

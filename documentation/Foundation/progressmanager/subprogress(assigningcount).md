@@ -21,11 +21,11 @@ Returns a `Subprogress` representing a portion of `self` which can be passed to 
 final func subprogress(assigningCount portionOfParentTotal: Int) -> Subprogress
 ```
 
-#### Return Value
+## Return Value
 
 A `Subprogress` instance.
 
-#### Discussion
+## Discussion
 
 If the `Subprogress` is not converted into a `ProgressManager` (for example, due to an error or early return), then the assigned count is marked as completed in the parent `ProgressManager`.
 

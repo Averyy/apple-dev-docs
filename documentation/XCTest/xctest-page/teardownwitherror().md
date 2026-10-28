@@ -16,7 +16,7 @@ func tearDownWithError() throws
 - (BOOL) tearDownWithError:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 After each test completes, `XCTest` calls [`tearDown()`](./teardown%28%29.md), then `tearDownWithError()`, followed by [`tearDown(completion:)`](./teardown%28completion%29.md).
 

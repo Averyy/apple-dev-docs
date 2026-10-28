@@ -6,7 +6,7 @@
 
 The relative quality of the movie, expressed as a 32-bit integer.
 
-#### Overview
+## Overview
 
 A larger number indicates higher quality. Give each movie a unique value.
 

@@ -24,7 +24,7 @@ static let incompatibleTemporaryDirectoryContents: AVAssetExportSession.Resumpti
 extern AVAssetExportSessionResumptionFailureReason const AVAssetExportSessionResumptionFailureReasonIncompatibleTemporaryDirectoryContents;
 ```
 
-#### Discussion
+## Discussion
 
 You’re likely aliasing two distinct exports together. Use a unique temporary files directory for each export, or clear the directory before resuming.
 

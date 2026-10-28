@@ -23,7 +23,7 @@ optional func alertView(_ alertView: UIAlertView, didDismissWithButtonIndex butt
 - (void) alertView:(UIAlertView *) alertView didDismissWithButtonIndex:(NSInteger) buttonIndex;
 ```
 
-#### Discussion
+## Discussion
 
 This method is invoked after the animation ends and the view is hidden.
 

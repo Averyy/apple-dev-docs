@@ -24,7 +24,7 @@ static var automatic: DefaultTextFieldStyle { get }
 
 Available when `Self` is `DefaultTextFieldStyle`.
 
-#### Discussion
+## Discussion
 
 The default style represents the recommended style based on the current platform and the text field’s context within the view hierarchy.
 

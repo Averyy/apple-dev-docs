@@ -13,7 +13,7 @@
 kINQUIRY_Byte5_ACC_Bit = 6
 ```
 
-#### Discussion
+## Discussion
 
 ACC bit definition.
 

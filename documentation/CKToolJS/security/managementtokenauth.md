@@ -15,7 +15,7 @@ Your management token.
 attribute string? ManagementTokenAuth;
 ```
 
-#### Discussion
+## Discussion
 
 You can obtain a management token from CloudKit Console.
 

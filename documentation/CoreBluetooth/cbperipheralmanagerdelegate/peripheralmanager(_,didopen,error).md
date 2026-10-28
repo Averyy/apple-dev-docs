@@ -25,7 +25,7 @@ optional func peripheralManager(_ peripheral: CBPeripheralManager, didOpen chann
 - (void) peripheralManager:(CBPeripheralManager *) peripheral didOpenL2CAPChannel:(CBL2CAPChannel *) channel error:(NSError *) error;
 ```
 
-#### Discussion
+## Discussion
 
 The peripheral manager calls this method after you call [`publishL2CAPChannel(withEncryption:)`](../cbperipheralmanager/publishl2capchannel%28withencryption%29.md).
 

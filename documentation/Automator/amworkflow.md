@@ -20,7 +20,7 @@ class AMWorkflow
 @interface AMWorkflow : NSObject
 ```
 
-#### Overview
+## Overview
 
 A *workflow* consists of one or more actions, discrete tasks which together can perform complex automation tasks. Your app can use workflows to package its own features and to take advantage of features provided by other apps. You create actions with Xcode, while you create workflows with the Automator app.
 

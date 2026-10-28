@@ -24,7 +24,7 @@ protocol FxCustomParameterActionAPI_v4
 - [Adding parameters to plug-ins](../Professional-Video-Applications/adding-parameters-to-plug-ins.md)
 - [Understanding time in FxPlug](../Professional-Video-Applications/understanding-time-in-fxplug.md)
 
-#### Overview
+## Overview
 
 Because custom parameter views can get user events at any time, this protocol provides methods to prepare the host application for parameter changes or other actions at arbitrary times.
 

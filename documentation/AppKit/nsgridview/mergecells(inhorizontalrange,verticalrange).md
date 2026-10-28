@@ -19,7 +19,7 @@ func mergeCells(inHorizontalRange hRange: NSRange, verticalRange vRange: NSRange
 - (void) mergeCellsInHorizontalRange:(NSRange) hRange verticalRange:(NSRange) vRange;
 ```
 
-#### Discussion
+## Discussion
 
 This function invalidates other cells in the range, and they no longer maintain their layout, constraints, or content views.  Cell merging has no effect on the base cell coordinate system of the grid view, and cell references within a merged region refer to the single merged cell.
 

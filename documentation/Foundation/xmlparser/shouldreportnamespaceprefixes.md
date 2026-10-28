@@ -25,7 +25,7 @@ var shouldReportNamespacePrefixes: Bool { get set }
 @property BOOL shouldReportNamespacePrefixes;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) if the parser reports the scope of namespace declarations, [`false`](../../Swift/false.md) otherwise. The default value is [`false`](../../Swift/false.md).
 

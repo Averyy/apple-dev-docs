@@ -20,11 +20,11 @@ Returns a new input that appends sample buffers of the specified type and format
 + (instancetype) assetWriterInputWithMediaType:(AVMediaType) mediaType outputSettings:(NSDictionary<NSString *,id> *) outputSettings sourceFormatHint:(CMFormatDescriptionRef) sourceFormatHint;
 ```
 
-#### Return Value
+## Return Value
 
 A new asset writer input.
 
-#### Discussion
+## Discussion
 
 To guarantee successful file writing, ensure that sample buffers you append are of the specified format.
 

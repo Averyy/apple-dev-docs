@@ -20,11 +20,11 @@ init?(definition dict: [String : Any]?, fromArchive archived: Bool)
 - (instancetype) initWithDefinition:(NSDictionary<NSString *,id> *) dict fromArchive:(BOOL) archived;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized action.
 
-#### Discussion
+## Discussion
 
 This is the primary initializer for all Automator classes. The Automator app sends this message to instances of [`AMAction`](../amaction.md) both when it loads actions bundles and when it unarchives them.
 

@@ -19,7 +19,7 @@ var isEnabled: Bool { get }
 @property (nonatomic, assign, readonly, getter=isEnabled) BOOL enabled;
 ```
 
-#### Discussion
+## Discussion
 
 Headphone Accommodations is turned on/off
 

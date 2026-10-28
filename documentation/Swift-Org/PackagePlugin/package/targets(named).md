@@ -17,7 +17,7 @@ The list of targets matching the given names.
 func targets(named targetNames: [String]) throws -> [Target]
 ```
 
-#### Discussion
+## Discussion
 
 Throws an error if any of the targets cannot be found.
 

@@ -25,7 +25,7 @@ static let quickTimeMetadataAIMEData: AVMetadataIdentifier
 extern AVMetadataIdentifier const AVMetadataIdentifierQuickTimeMetadataAIMEData;
 ```
 
-#### Discussion
+## Discussion
 
 The static presentation metadata, Apple Immersive Media Embedded (AIME), for Apple Immersive Video that originates from ImmersiveMediaSupport framework’s VenueDescriptor.aimeData.
 

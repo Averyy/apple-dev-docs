@@ -22,7 +22,7 @@ optional func largeContentViewerInteraction(_ interaction: UILargeContentViewerI
 - (id<UILargeContentViewerItem>) largeContentViewerInteraction:(UILargeContentViewerInteraction *) interaction itemAtPoint:(CGPoint) point;
 ```
 
-#### Discussion
+## Discussion
 
 By default, UIKit finds the item for the interaction by calling [`point(inside:with:)`](../uiview/point%28inside,with%29.md) recursively on your view hierarchy. If you’re not using views, implement this method to identify the item for an interaction at a given point.
 

@@ -28,7 +28,7 @@ func texture(withContentsOf url: URL, options: [String : NSNumber]? = nil, queue
 - (void) textureWithContentsOfURL:(NSURL *) url options:(NSDictionary<NSString *,NSNumber *> *) options queue:(dispatch_queue_t) queue completionHandler:(GLKTextureLoaderCallback) block;
 ```
 
-#### Discussion
+## Discussion
 
 This method is identical to [`texture(withContentsOf:options:)`](./texture%28withcontentsof,options%29-708ft.md), except that it loads the texture asynchronously. When this method is called, it creates a new background task to handle the request and then returns control to your app. Later, when the task is complete, GLKit calls your completion handler on the queue you provided.
 

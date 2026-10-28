@@ -24,11 +24,11 @@ func createTCPConnection(_ endpoint: NWEndpoint) -> NWTCPConnection
 - (NWTCPConnection *) createTCPConnection:(NWEndpoint *) endpoint;
 ```
 
-#### Return Value
+## Return Value
 
 A TCP connection that will connect over the network associated with the command.
 
-#### Discussion
+## Discussion
 
 The TCP connection is started automatically. Use KVO to observe the connection’s `state` property to be notified when the connection is established or fails.
 

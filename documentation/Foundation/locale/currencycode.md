@@ -21,7 +21,7 @@ The currency code of the locale.
 var currencyCode: String? { get }
 ```
 
-#### Discussion
+## Discussion
 
 For example, for “zh-Hant-HK”, returns “HKD”.
 

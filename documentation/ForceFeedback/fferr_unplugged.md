@@ -18,7 +18,7 @@ var FFERR_UNPLUGGED: Int { get }
 #define FFERR_UNPLUGGED
 ```
 
-#### Discussion
+## Discussion
 
 The operation could not be completed because the device is not plugged in.
 

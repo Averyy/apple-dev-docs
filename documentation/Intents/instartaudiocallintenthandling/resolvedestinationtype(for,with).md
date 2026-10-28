@@ -27,7 +27,7 @@ optional func resolveDestinationType(for intent: INStartAudioCallIntent) async -
 - (void) resolveDestinationTypeForStartAudioCall:(INStartAudioCallIntent *) intent withCompletion:(void (^)(INCallDestinationTypeResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to verify that you can initiate the specified type of call. Return a successful resolution if you can place the specified type of call. If you don’t support the specified call type, return a not required or successful resolution and report the failure in your [`confirm(intent:completion:)`](./confirm%28intent,completion%29.md) method.
 

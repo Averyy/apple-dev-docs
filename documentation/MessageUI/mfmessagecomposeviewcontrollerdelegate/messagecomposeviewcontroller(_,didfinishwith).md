@@ -23,7 +23,7 @@ func messageComposeViewController(_ controller: MFMessageComposeViewController, 
 - (void) messageComposeViewController:(MFMessageComposeViewController *) controller didFinishWithResult:(MessageComposeResult) result;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called when the user taps one of the buttons to dismiss the message composition interface. Your implementation of this method should dismiss the view controller and perform any additional actions needed to process the sending of the message. The result parameter lets you know whether the user chose to cancel or send the message, or whether sending the message failed.
 

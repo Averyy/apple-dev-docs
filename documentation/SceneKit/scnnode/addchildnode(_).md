@@ -25,7 +25,7 @@ func addChildNode(_ child: SCNNode)
 - (void) addChildNode:(SCNNode *) child;
 ```
 
-#### Discussion
+## Discussion
 
 Calling this method appends the node to the end of the [`childNodes`](./childnodes.md) array.
 

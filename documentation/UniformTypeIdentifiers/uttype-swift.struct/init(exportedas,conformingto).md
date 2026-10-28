@@ -21,7 +21,7 @@ Creates a type your app owns based on an identifier and a supertype that it conf
 init(exportedAs identifier: String, conformingTo parentType: UTType? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 Defining a type with this initializer asserts that you own the type definition. For example, you might define your file format in code to use it to save or open files in your app.
 

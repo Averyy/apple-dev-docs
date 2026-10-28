@@ -24,7 +24,7 @@ var extendedMetadata: PHAssetExtendedMetadata { get }
 @property (strong, readonly) PHAssetExtendedMetadata * extendedMetadata;
 ```
 
-#### Discussion
+## Discussion
 
 By default these properties are fetched on demand. They can be prefetched by toggling `PHFetchOptions.prefetchAssetExtendedMetadata`.
 

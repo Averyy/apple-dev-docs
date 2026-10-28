@@ -23,7 +23,7 @@ class var biometryCurrentSet: LAAuthenticationRequirement { get }
 @property (class, readonly) LAAuthenticationRequirement * biometryCurrentSetRequirement;
 ```
 
-#### Discussion
+## Discussion
 
 Authorizations with this requirement fail when:
 

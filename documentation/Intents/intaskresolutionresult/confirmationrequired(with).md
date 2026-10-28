@@ -25,11 +25,11 @@ class func confirmationRequired(with taskToConfirm: INTask?) -> Self
 + (instancetype) confirmationRequiredWithTaskToConfirm:(INTask *) taskToConfirm;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INTaskResolutionResult`](../intaskresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method when you locate a single task but cannot determine with enough certainty that it is the one intended by the user. For example, you might ask for confirmation when the task’s title text does not match precisely. Provide an [`INTask`](../intask.md) object with as much information about the task as you have available.
 

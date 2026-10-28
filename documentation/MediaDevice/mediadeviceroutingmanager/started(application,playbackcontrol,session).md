@@ -18,7 +18,7 @@ Notifies the system that a remote application has successfully started on the ta
 final func started<T>(application applicationIdentifier: String?, playbackControl: T, session: MediaOutputSession) where T : AVPlaybackUserInterfaceControllable
 ```
 
-#### Discussion
+## Discussion
 
 Call this function when your extension has successfully launched or connected to an application on the remote device and is ready to begin media playback. This indicates that the session has been established and the remote application is prepared to receive media content or playback commands.
 

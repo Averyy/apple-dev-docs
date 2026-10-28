@@ -26,7 +26,7 @@ var duration: CMTime { get }
 @property (readonly) CMTime duration;
 ```
 
-#### Discussion
+## Discussion
 
 This property indicates the duration of the item, not considering either its [`forwardPlaybackEndTime`](./forwardplaybackendtime.md) or [`reversePlaybackEndTime`](./reverseplaybackendtime.md).
 

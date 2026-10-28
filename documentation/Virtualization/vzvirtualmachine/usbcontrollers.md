@@ -19,7 +19,7 @@ var usbControllers: [VZUSBController] { get }
 @property (copy, readonly) NSArray<VZUSBController *> * usbControllers;
 ```
 
-#### Discussion
+## Discussion
 
 Return an empty array if there isn’t a configured controller USB.
 

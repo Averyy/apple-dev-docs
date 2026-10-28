@@ -15,11 +15,11 @@ Converts a regular string to a `Base64String`.
 static Base64String toBase64String();
 ```
 
-#### Return Value
+## Return Value
 
 If the value passes validation, this function returns a `Base64String`; otherwise it throws `ValueNotBase64StringError`. A string passes validation if it is a base 64 string.
 
-#### Discussion
+## Discussion
 
 In TypeScript, `Base64String` is a branded string type. In JavaScript, it’s a string.
 

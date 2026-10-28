@@ -24,11 +24,11 @@ mutating func removeLast() -> Self.Element
 
 Available when `Self` conforms to `BidirectionalCollection`.
 
-#### Return Value
+## Return Value
 
 The last element of the collection.
 
-#### Discussion
+## Discussion
 
 The collection must not be empty.
 

@@ -25,7 +25,7 @@ unowned(unsafe) var delegate: (any SCNProgramDelegate)? { get set }
 @property (nonatomic, assign, nullable) id<SCNProgramDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 An [`SCNProgram`](../scnprogram.md) object sends delegate messages if errors occur when compiling GLSL source code.
 

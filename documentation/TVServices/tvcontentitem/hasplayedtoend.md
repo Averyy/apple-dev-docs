@@ -22,7 +22,7 @@ var hasPlayedToEnd: NSNumber? { get set }
 @property (nonatomic, copy, nullable) NSNumber * hasPlayedToEnd;
 ```
 
-#### Discussion
+## Discussion
 
 The number of this property is interpreted as a Boolean value.
 

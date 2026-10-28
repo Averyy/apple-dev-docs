@@ -20,11 +20,11 @@ func dispatchGetReportRequest(type: HIDReportType, id: HIDReportID? = nil, timeo
 - [Communicating with human interface devices](../communicatingwithhiddevices.md)
 - [Creating virtual devices](../creatingvirtualdevices.md)
 
-#### Return Value
+## Return Value
 
 The data that the device returned. Reference the device’s [`descriptor`](./descriptor.md) to determine what data the device may respond with.
 
-#### Discussion
+## Discussion
 
 Many HID devices respond to get report requests to retrieve information from the device. Exactly how a device responds to a get report request is dependent on the device specific implementation, but most devices conform to the reports that they declare in their report [`descriptor`](./descriptor.md). This function throws if the device is seized by another client.
 

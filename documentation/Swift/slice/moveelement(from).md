@@ -23,11 +23,11 @@ func moveElement<Element>(from index: Slice<Base>.Index) -> Element where Base =
 
 Available when `Base` conforms to `Collection`.
 
-#### Return Value
+## Return Value
 
 The instance referenced by this index in this buffer.
 
-#### Discussion
+## Discussion
 
 The memory underlying the element at `index` must be initialized. After calling `moveElement(from:)`, the memory underlying this element of the buffer slice is uninitialized, and still bound to type `Element`.
 

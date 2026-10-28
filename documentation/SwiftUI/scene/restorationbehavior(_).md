@@ -22,7 +22,7 @@ nonisolated
 func restorationBehavior(_ behavior: SceneRestorationBehavior) -> some Scene
 ```
 
-#### Discussion
+## Discussion
 
 Use this scene modifier to apply a value of this type to a [`Scene`](../scene.md) you define in your [`App`](../app.md) declaration. The value you specify determines how the system will restore windows from a previous run of your application.
 

@@ -21,11 +21,11 @@ static func request(attributes: Attributes, content: ActivityContent<Activity<At
 - [Starting and updating Live Activities with ActivityKit push notifications](../starting-and-updating-live-activities-with-activitykit-push-notifications.md)
 - [Displaying live data with Live Activities](../displaying-live-data-with-live-activities.md)
 
-#### Return Value
+## Return Value
 
 The object that represents the Live Activity you started.
 
-#### Discussion
+## Discussion
 
 Use this function to request and start a Live Activity from your app while it’s in the foreground. Note that you can’t do this while your app is in the background, unless you adopt [App Intents](../../AppIntents/AppIntents.md) and start the Live Activity using a [`LiveActivityIntent`](../../AppIntents/liveactivityintent.md). The Live Activity that started continues until the app, a push notification, or a person ends it, or until it exceeds the maximum duration for Live Activities.
 

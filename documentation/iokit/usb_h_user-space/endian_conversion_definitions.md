@@ -5,7 +5,7 @@
 
 Public Interfaces to the USB implementation in macOS.
 
-#### Overview
+## Overview
 
 This header file contains definitions and structures that are used in the different USB API's in macOS, both in the kernel and in the user space.
 

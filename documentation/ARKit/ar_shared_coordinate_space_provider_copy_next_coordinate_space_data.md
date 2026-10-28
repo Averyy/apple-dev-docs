@@ -15,11 +15,11 @@ Copy the next collaboration data.
 extern ar_coordinate_space_data_tar_shared_coordinate_space_provider_copy_next_coordinate_space_data(ar_shared_coordinate_space_provider_t shared_coordinate_space_provider);
 ```
 
-#### Return Value
+## Return Value
 
 Coordinate space data if available, `nil` otherwise.
 
-#### Discussion
+## Discussion
 
 > **Note**: This type supports ARC. In non-ARC files, use `ar_retain()` and `ar_release()` to retain and release the object.
 

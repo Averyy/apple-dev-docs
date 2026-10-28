@@ -15,7 +15,7 @@
 kINQUIRY_Byte56_CLOCKING_ONLY_DT = 0x04
 ```
 
-#### Discussion
+## Discussion
 
 Double-transition clocking only.
 

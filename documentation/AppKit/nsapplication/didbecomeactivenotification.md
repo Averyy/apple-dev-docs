@@ -19,7 +19,7 @@ class let didBecomeActiveNotification: NSNotification.Name
 extern NSNotificationName NSApplicationDidBecomeActiveNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is [`shared`](./shared.md). This notification doesn’t contain a `userInfo` dictionary.
 

@@ -38,7 +38,7 @@ var currentMode: UIScreenMode? { get }
 @property (nonatomic, strong, readonly, nullable) UIScreenMode * currentMode;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is the mode containing the highest resolution supported by the screen.
 

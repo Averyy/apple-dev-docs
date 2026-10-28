@@ -20,7 +20,7 @@ A notification that a find operation begins working on a new page of a document.
 static let PDFDocumentDidBeginPageFind: NSNotification.Name
 ```
 
-#### Discussion
+## Discussion
 
 You can use this notification to update a progress bar.
 

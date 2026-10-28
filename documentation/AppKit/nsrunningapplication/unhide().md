@@ -19,11 +19,11 @@ func unhide() -> Bool
 - (BOOL) unhide;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the application was successfully shown, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 The property of this value will be [`false`](../../Swift/false.md) if the application has already quit, or if of a type that is unable to be hidden.
 

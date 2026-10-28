@@ -17,7 +17,7 @@ Sets the auto-ranging and floating point number format of the receiver’s cell.
 - (void) setFloatingPointFormat:(BOOL) autoRange left:(NSUInteger) leftDigits right:(NSUInteger) rightDigits;
 ```
 
-#### Discussion
+## Discussion
 
 Sets whether floating-point numbers are auto-ranged in the receiver and sets the sizes of the fields to the left and right of the decimal point. If `autoRange` is [`false`](../../Swift/false.md), `leftDigits` specifies the maximum number of digits to the left of the decimal point, and `rightDigits` specifies the number of digits to the right (the fractional digit places will be padded with zeros to fill this width). However, if a number is too large to fit its integer part in `leftDigits` digits, as many places as are needed on the left are effectively removed from `rightDigits` when the number is displayed.
 

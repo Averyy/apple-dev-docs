@@ -23,7 +23,7 @@ enum GCControllerHomeButtonSettingsCustomizationActivity
 enum GCControllerHomeButtonSettingsCustomizationActivity : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 The system uses this hint to navigate to the appropriate screen in the Settings application.
 

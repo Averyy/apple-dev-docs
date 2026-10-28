@@ -15,7 +15,7 @@ Uses the full collision frame rectangle to detect collisions.
 readonly Rectangle: "rectangle";
 ```
 
-#### Discussion
+## Discussion
 
 The bounding box of the annotation is used for collision detection.
 

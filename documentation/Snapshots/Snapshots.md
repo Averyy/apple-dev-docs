@@ -9,7 +9,7 @@ Create a static image of a map from a URL.
 **Availability**:
 - Maps Web Snapshots 1.0+
 
-#### Overview
+## Overview
 
 Use the Maps Web Snapshots service to generate static map images from a URL. You can use Snapshots any time that an interactive map isn’t required, and in any place you typically use an image URL — in web pages, and in places where JavaScript isn’t available, such as email clients.
 

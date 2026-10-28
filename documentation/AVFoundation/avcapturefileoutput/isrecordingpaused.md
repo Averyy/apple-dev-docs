@@ -23,7 +23,7 @@ var isRecordingPaused: Bool { get }
 @property (nonatomic, readonly, getter=isRecordingPaused) BOOL recordingPaused;
 ```
 
-#### Discussion
+## Discussion
 
 This property indicates recording to the file returned by [`outputFileURL`](./outputfileurl.md) has been previously paused using the [`pauseRecording()`](./pauserecording%28%29.md) method. When a recording is paused, captured samples are not written to the output file, but new samples can be written to the same file in the future by calling [`resumeRecording()`](./resumerecording%28%29.md).
 

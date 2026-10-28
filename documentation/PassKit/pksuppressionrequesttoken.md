@@ -24,7 +24,7 @@ typealias PKSuppressionRequestToken = Int
 typedef NSUInteger PKSuppressionRequestToken;
 ```
 
-#### Discussion
+## Discussion
 
 You receive a suppression request token when you begin suppressing the automatic presentation of passes. Use the token to end the suppression and reenable Apple Pay.
 

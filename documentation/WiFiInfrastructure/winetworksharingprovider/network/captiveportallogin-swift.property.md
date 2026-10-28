@@ -17,7 +17,7 @@ The captive portal login information for the network.
 let captivePortalLogin: WINetworkSharingProvider.Network.CaptivePortalLogin?
 ```
 
-#### Discussion
+## Discussion
 
 Contains data when the person previously completed captive portal authentication, or `nil` when this network doesn’t require captive portal login.
 

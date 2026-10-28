@@ -21,11 +21,11 @@ convenience init(date: Date, complicationTemplate: CLKComplicationTemplate, time
 + (instancetype) entryWithDate:(NSDate *) date complicationTemplate:(CLKComplicationTemplate *) complicationTemplate timelineAnimationGroup:(NSString *) timelineAnimationGroup;
 ```
 
-#### Return Value
+## Return Value
 
 A timeline entry initialized with the specified data.
 
-#### Discussion
+## Discussion
 
 Use this method to create new timeline entries. You can change the values of the timeline entry later by modifying the properties of the returned object.
 

@@ -25,11 +25,11 @@ func CFFileSecuritySetAccessControlList(_ fileSec: CFFileSecurity!, _ accessCont
 extern Boolean CFFileSecuritySetAccessControlList(CFFileSecurityRef fileSec, acl_t accessControlList);
 ```
 
-#### Return Value
+## Return Value
 
 Returns `true` if the access control list was successfully set, or `false` otherwise.
 
-#### Discussion
+## Discussion
 
 To remove the access control list from a file system object, pass `kCFFileSecurityRemoveACL` as the `accessControlList` parameter. Then, call [`CFURLSetResourcePropertyForKey(_:_:_:_:)`](./cfurlsetresourcepropertyforkey%28_,_,_,_%29.md) to set [`kCFURLFileSecurityKey`](./kcfurlfilesecuritykey.md) to the resulting `fileSec` object.
 

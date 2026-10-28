@@ -26,7 +26,7 @@ var preferredSearchBarPlacement: UINavigationItem.SearchBarPlacement { get set }
 
 - [Building a desktop-class iPad app](../building-a-desktop-class-ipad-app.md)
 
-#### Discussion
+## Discussion
 
 Use this property to specify the search bar placement. If the value of the property is [`UINavigationItem.SearchBarPlacement.automatic`](./searchbarplacement-swift.enum/automatic.md), use the [`searchBarPlacement`](./searchbarplacement-swift.property.md) property to determine the actual placement. The default value of this property is [`UINavigationItem.SearchBarPlacement.automatic`](./searchbarplacement-swift.enum/automatic.md).
 

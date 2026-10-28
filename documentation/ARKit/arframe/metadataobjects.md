@@ -20,7 +20,7 @@ var metadataObjects: [AVMetadataObject] { get }
 @property (nonatomic, strong, readonly) NSArray<__kindof AVMetadataObject *> * metadataObjects;
 ```
 
-#### Discussion
+## Discussion
 
 This array contains `AVMetadataFaceObject`s for detected faces when running an `ARFaceTrackingConfiguration` and face tracking is not active (`maximumNumberOfTrackedFaces` set to 0).
 

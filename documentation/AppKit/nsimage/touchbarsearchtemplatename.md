@@ -22,7 +22,7 @@ class let touchBarSearchTemplateName: String
 extern NSImageName const NSImageNameTouchBarSearchTemplate;
 ```
 
-#### Discussion
+## Discussion
 
 ![Template image for search](https://developer.apple.com/tutorials/images/com.apple.appkit/media-2793472@2x.png)
 

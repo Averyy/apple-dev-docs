@@ -19,7 +19,7 @@ class VZNetworkDeviceConfiguration
 @interface VZNetworkDeviceConfiguration : NSObject
 ```
 
-#### Overview
+## Overview
 
 Don’t instantiate the [`VZNetworkDeviceConfiguration`](./vznetworkdeviceconfiguration.md) class directly. Instead, instantiate one of its subclasses, such as [`VZVirtioNetworkDeviceConfiguration`](./vzvirtionetworkdeviceconfiguration.md). Then use the properties of this class to configure the network device.
 

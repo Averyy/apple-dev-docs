@@ -5,7 +5,7 @@
 
 Deliver notifications to subscribers by using notification centers’ publishers.
 
-#### Overview
+## Overview
 
 Many frameworks deliver asynchronous events to your app with the [`NotificationCenter`](../Foundation/notificationcenter.md) API. Your app may already have places where it receives and processes these notifications in callback methods or closures. For example, the following code uses [`addObserver(forName:object:queue:using:)`](../Foundation/notificationcenter/addobserver%28forname,object,queue,using%29.md) to print a message every time an iOS device rotates to portrait orientation.
 
@@ -24,7 +24,7 @@ override func viewDidLoad() {
 }
 ```
 
-##### Migrate Notification-Handling Code to Use Combine
+### Migrate Notification-Handling Code to Use Combine
 
 Using notification center callbacks and closures requires you to do all your work inside the callback method or closure. By migrating to Combine, you can use operators to perform common tasks like filtering.
 

@@ -21,7 +21,7 @@ The password used to encrypt or decrypt an archive.
 var password: String? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Use the [`generatePassword()`](./generatepassword%28%29.md) function to generate random high entropy passwords.
 

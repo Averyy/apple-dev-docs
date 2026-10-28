@@ -25,11 +25,11 @@ func CGPDFContentStreamCreateWithPage(_ page: CGPDFPage) -> CGPDFContentStreamRe
 extern CGPDFContentStreamRefCGPDFContentStreamCreateWithPage(CGPDFPageRef page);
 ```
 
-#### Return Value
+## Return Value
 
 A new [`CGPDFContentStreamRef`](./cgpdfcontentstreamref.md) object. In Objective-C, you’re responsible for releasing this object by calling the [`CGPDFContentStreamRelease(_:)`](./cgpdfcontentstreamrelease%28_%29.md) function.
 
-#### Discussion
+## Discussion
 
 A [`CGPDFContentStreamRef`](./cgpdfcontentstreamref.md) object can contain more than one PDF content stream. To retrieve an array of the PDF content streams in the object, call the function [`CGPDFContentStreamGetStreams(_:)`](./cgpdfcontentstreamgetstreams%28_%29.md). To obtain the resources associated with a [`CGPDFContentStreamRef`](./cgpdfcontentstreamref.md) object, call the function [`CGPDFContentStreamGetResource(_:_:_:)`](./cgpdfcontentstreamgetresource%28_,_,_%29.md).
 

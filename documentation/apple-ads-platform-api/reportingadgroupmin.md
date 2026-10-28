@@ -15,11 +15,11 @@ Minimal ad group information included in nested report objects.
 object ReportingAdGroupMin
 ```
 
-#### Discussion
+## Discussion
 
 The `ReportingAdGroupMin` object is a lightweight ad group summary embedded in report row objects (for example, within [`ReportingKeyword`](./reportingkeyword.md)). It provides enough context to identify the parent ad group without duplicating the full [`AdGroup`](./adgroup.md) structure.
 
-##### Example
+### Example
 
 ```json
 {

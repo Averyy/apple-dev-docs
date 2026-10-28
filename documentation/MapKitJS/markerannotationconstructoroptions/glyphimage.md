@@ -24,7 +24,7 @@ glyphImage?:
 
 - [MapKit JS 5](../mapkit-js-5.md)
 
-#### Discussion
+## Discussion
 
 The glyph image value can be an object literal containing absolute or relative URLs to standard, 2x, and 3x Retina display assets, an [`ImageDelegate`](../imagedelegate.md), an [`ImageSource`](../imagesource.md) such as an `HTMLCanvasElement` or `ImageBitmap`, or a `Promise` that resolves to an [`ImageSource`](../imagesource.md). The framework requires at least one image at 20 x 20 pixels.
 

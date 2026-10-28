@@ -19,7 +19,7 @@ class var controlAccentColor: NSColor { get }
 @property (class, strong, readonly) NSColor * controlAccentColor;
 ```
 
-#### Discussion
+## Discussion
 
 People set the accent color in the Appearance pane of System Settings. Don’t make assumptions about the color space associated with this color.
 

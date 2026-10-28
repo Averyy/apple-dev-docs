@@ -25,7 +25,7 @@ class var entityDescription: NSEntityDescription? { get }
 @property (class, readonly, nullable) NSEntityDescription * entityDescription;
 ```
 
-#### Discussion
+## Discussion
 
 The entity description of [`NSPersistentHistoryTransaction`](../nspersistenthistorytransaction.md) lists the properties of the persistent history change. This can be useful for filtering your request.
 

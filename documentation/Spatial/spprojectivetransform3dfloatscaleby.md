@@ -19,11 +19,11 @@
 static SPProjectiveTransform3DFloat SPProjectiveTransform3DFloatScaleBy(SPProjectiveTransform3DFloat transform, float x, float y, float z);
 ```
 
-#### Return Value
+## Return Value
 
 A transform that’s scaled by the specified values.
 
-#### Discussion
+## Discussion
 
 Returns a projective transform that’s constructed by concatenating an existing projective transform and a scale.
 

@@ -19,7 +19,7 @@ var contentSize: CGSize { get set }
 @property (nonatomic, assign) CGSize contentSize;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to explicitly set the size of the content view. If [`frame`](../../UIKit/uiview/frame.md) is explicitly set, it takes precedence over `contentSize`.
 

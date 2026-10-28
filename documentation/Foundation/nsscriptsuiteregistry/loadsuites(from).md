@@ -20,7 +20,7 @@ func loadSuites(from bundle: Bundle)
 - (void) loadSuitesFromBundle:(NSBundle *) bundle;
 ```
 
-#### Discussion
+## Discussion
 
 If errors occur while method is parsing a suite-definition file, the method logs error messages to the console.
 

@@ -24,11 +24,11 @@ func MusicEventIteratorNextEvent(_ inIterator: MusicEventIterator) -> OSStatus
 extern OSStatus MusicEventIteratorNextEvent(MusicEventIterator inIterator);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 
-#### Discussion
+## Discussion
 
 Use this function to increment the position of a music event iterator forward through a music track’s events.
 

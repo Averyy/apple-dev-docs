@@ -21,7 +21,7 @@ optional func handleAction(withIdentifier identifier: String?, forRemoteNotifica
 - (void) handleActionWithIdentifier:(NSString *) identifier forRemoteNotification:(NSDictionary *) remoteNotification;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to handle actions selected by users from your notification interfaces. If your containing iOS app supports interactive notifications, the `identifier` parameter may contain the action identifier of the button that was tapped. Use that value to perform the requested action. If the `identifier` parameter contains an empty string, that means the user launched your Watch app from the notification interface without choosing a specific action.
 

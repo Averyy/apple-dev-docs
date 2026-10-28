@@ -16,11 +16,11 @@ Returns the io_service_t for an IOHIDDevice, if it has one.
 io_service_t IOHIDDeviceGetService(IOHIDDeviceRef device);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the io_service_t if the IOHIDDevice has one, or MACH_PORT_NULL if it does not.
 
-#### Discussion
+## Discussion
 
 If the IOHIDDevice references an object in the kernel, this is used to get the io_service_t for that object.
 

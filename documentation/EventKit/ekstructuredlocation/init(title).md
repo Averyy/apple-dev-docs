@@ -28,7 +28,7 @@ convenience init(title: String)
 
 - [Setting an alarm](../setting-an-alarm.md)
 
-#### Return Value
+## Return Value
 
 The structured location object.
 

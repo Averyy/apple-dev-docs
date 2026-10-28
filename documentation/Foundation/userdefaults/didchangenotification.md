@@ -29,7 +29,7 @@ extern NSNotificationName const NSUserDefaultsDidChangeNotification;
 
 - [Accessing settings from your code](../accessing-settings-from-your-code.md)
 
-#### Discussion
+## Discussion
 
 When you write a new value to a setting, or remove an existing value, the system generates this notification to alert you that your app’s settings changed. Use this notification in other parts of your app to incorporate updated settings. The system posts this notification on the same thread you used to make the change.
 

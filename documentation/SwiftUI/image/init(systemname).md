@@ -21,7 +21,7 @@ Creates a system symbol image.
 init(systemName: String)
 ```
 
-#### Discussion
+## Discussion
 
 This initializer creates an image using a system-provided symbol. Use [SF Symbols](https://developer.apple.com/design/resources/#sf-symbols) to find symbols and their corresponding names.
 

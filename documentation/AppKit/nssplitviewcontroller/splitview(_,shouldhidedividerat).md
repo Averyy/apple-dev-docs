@@ -20,7 +20,7 @@ func splitView(_ splitView: NSSplitView, shouldHideDividerAt dividerIndex: Int) 
 - (BOOL) splitView:(NSSplitView *) splitView shouldHideDividerAtIndex:(NSInteger) dividerIndex;
 ```
 
-#### Discussion
+## Discussion
 
 By default, [`NSSplitViewController`](../nssplitviewcontroller.md) hides the first and last dividers if their outer neighbor is in a collapsed state.
 

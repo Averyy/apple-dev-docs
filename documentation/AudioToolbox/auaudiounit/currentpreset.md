@@ -32,7 +32,7 @@ var currentPreset: AUAudioUnitPreset? { get set }
 @property (atomic, retain, nullable) AUAudioUnitPreset * currentPreset;
 ```
 
-#### Discussion
+## Discussion
 
 Hosts can let the user select a preset by setting this property. When getting this property, the preset does not reflect whether parameters may have been modified since it was selected.
 

@@ -22,7 +22,7 @@ var followsUndockedKeyboard: Bool { get set }
 @property (nonatomic, readwrite) BOOL followsUndockedKeyboard;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`false`](../../Swift/false.md); the guide tracks the keyboard only when docked. When the keyboard is off screen or undocked, the guide’s [`topAnchor`](../uilayoutguide/topanchor.md) matches the [`bottomAnchor`](../uilayoutguide/bottomanchor.md) of [`safeAreaLayoutGuide`](../uiview/safearealayoutguide.md). To follow all keyboard anchors even when undocked or floating, set [`followsUndockedKeyboard`](./followsundockedkeyboard.md) to [`true`](../../Swift/true.md).
 

@@ -12,7 +12,7 @@ virtual bool serialize(
  OSSerialize *serializer) const;
 ```
 
-#### Return Value
+## Return Value
 
 `true` if serialization succeeds, `false` if not.
 

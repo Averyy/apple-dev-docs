@@ -11,13 +11,13 @@ Fetches all assigned budget orders for an organization.
 
 > **Deprecated**: Apple Ads Campaign Management API is deprecated. Instead, use the [Apple Ads Platform API](../apple-ads-platform-api/apple-ads-platform-api.md).
 
-#### Discussion
+## Discussion
 
 This call retrieves all assigned budget orders for your organization. It also returns completed and canceled orders. Budget orders also return when you use the [`Create a Campaign`](./create-a-campaign.md) or [`Update a Campaign`](./update-a-campaign.md) endpoints.
 
 You can’t set budget order invoicing through the API. You can only fetch a budget order using [`Get a Budget Order`](./get-a-budget-order.md) or the [`Get all Budget Orders`](./get-all-budget-orders.md) API call.
 
-##### Payload example: Get all budget orders
+### Payload example: Get all budget orders
 
 **Request**:
 

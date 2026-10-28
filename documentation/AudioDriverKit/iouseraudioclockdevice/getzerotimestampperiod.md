@@ -15,11 +15,11 @@ Gets the zero time stamp of the clock device.
 uint32_t GetZeroTimestampPeriod();
 ```
 
-#### Return Value
+## Return Value
 
 The zero time stamp of the clock device.
 
-#### Discussion
+## Discussion
 
 The return value indicates the number of sample frames the host can expect between successive timestamps returned from [`GetCurrentZeroTimestamp`](./getcurrentzerotimestamp.md). In other words, if [`GetCurrentZeroTimestamp`](./getcurrentzerotimestamp.md) returns a sample time of `x`, the host can expect that the next valid timestamp it recieves will be `x +` [`GetZeroTimestampPeriod`](./getzerotimestampperiod.md).
 

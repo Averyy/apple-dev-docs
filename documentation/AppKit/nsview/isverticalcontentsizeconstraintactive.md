@@ -19,7 +19,7 @@ var isVerticalContentSizeConstraintActive: Bool { get set }
 @property (getter=isVerticalContentSizeConstraintActive) BOOL verticalContentSizeConstraintActive;
 ```
 
-#### Discussion
+## Discussion
 
 Setting this property to [`false`](../../Swift/false.md) lets Auto Layout optimize layout operations by ignoring the view’s intrinsic content size. The default value of this property is [`true`](../../Swift/true.md), which causes the system to take the view’s content size into account.
 

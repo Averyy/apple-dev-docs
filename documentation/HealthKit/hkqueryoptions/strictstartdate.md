@@ -24,7 +24,7 @@ static var strictStartDate: HKQueryOptions { get }
 HKQueryOptionStrictStartDate
 ```
 
-#### Discussion
+## Discussion
 
 The sample’s start time must be equal to or later than the target’s start time, and the sample’s start time must also be earlier than the target’s end time.
 

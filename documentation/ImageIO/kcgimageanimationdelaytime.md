@@ -25,7 +25,7 @@ let kCGImageAnimationDelayTime: CFString
 extern CFStringRef const kCGImageAnimationDelayTime;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is a [`CFNumber`](../CoreFoundation/cfnumber.md) with a floating-point value. To override the delay time value in the image file, include this property in the options dictionary when animating an image.
 

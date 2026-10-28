@@ -21,7 +21,7 @@ var interfaceController: CPInterfaceController { get }
 @property (nonatomic, strong, readonly, nonnull) CPInterfaceController * interfaceController;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to access the interface controller CarPlay creates when the scene connects, which you then use to manage your templates.
 

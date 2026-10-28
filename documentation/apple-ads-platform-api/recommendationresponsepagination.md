@@ -15,13 +15,13 @@ Pagination metadata returned in list responses from Recommendations and Suggesti
 object RecommendationResponsePagination
 ```
 
-#### Discussion
+## Discussion
 
 The `ResponsePagination` object is the pagination state returned in Recommendations and Suggestions list responses.
 
 To page through results, increment the `offset` in subsequent requests by the `pageSize` until `offset + pageSize >= totalCount`. Unlike cursor-based pagination, offset-based pagination allows jumping to any page directly, though new recommendations may appear or disappear between requests.
 
-##### Example
+### Example
 
 ```json
 {

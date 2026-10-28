@@ -25,11 +25,11 @@ func CFNumberGetByteSize(_ number: CFNumber!) -> CFIndex
 extern CFIndex CFNumberGetByteSize(CFNumberRef number);
 ```
 
-#### Return Value
+## Return Value
 
 The size in bytes of the value contained in `number`.
 
-#### Discussion
+## Discussion
 
 Because a CFNumber object might store a value using a type different from that of the original value with which it was created, this function may return a size different from the size of the original value’s type.
 

@@ -19,7 +19,7 @@ func members() -> [Any]!
 - (NSArray *) members;
 ```
 
-#### Discussion
+## Discussion
 
 If this group doesn’t contain any people, this method returns an empty array.
 

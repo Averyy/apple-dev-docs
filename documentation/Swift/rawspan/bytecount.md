@@ -21,7 +21,7 @@ The number of bytes in the span.
 var byteCount: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 To check whether the span is empty, use its `isEmpty` property instead of comparing `byteCount` to zero.
 

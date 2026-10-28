@@ -24,7 +24,7 @@ class VNObservation
 @interface VNObservation : NSObject
 ```
 
-#### Overview
+## Overview
 
 Observations resulting from Vision image analysis requests inherit from this abstract base class. Don’t use this abstract superclass directly.
 

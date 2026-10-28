@@ -24,7 +24,7 @@ struct AudioUnitMeterClipping
 struct AudioUnitMeterClipping;
 ```
 
-#### Overview
+## Overview
 
 This data structure is used by the `kAudioUnitProperty_MeterClipping` property.
 

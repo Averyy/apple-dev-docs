@@ -4,11 +4,11 @@
 
 Ensure that your app behaves as expected by adapting it to support later versions of the operating system.
 
-#### Overview
+## Overview
 
 In iOS 11 and later, all apps use the 64-bit architecture. If your app targets an earlier version of iOS, you must update it to run on later versions.
 
-##### Update your app to the latest SDK
+### Update your app to the latest SDK
 
 Begin by updating your existing app to iOS 11 or later. By updating your app first, you can remove deprecated code paths, address any compiler warnings, and search your code for specific 64-bit issues.
 
@@ -19,7 +19,7 @@ Begin by updating your existing app to iOS 11 or later. By updating your app fir
 5. Test your app on actual 64-bit hardware. Don’t rely on the Simulator app. Although it can be helpful during development, some changes, such as the function-calling conventions, are visible only when your app is running on a device.
 6. Tune your app’s memory performance by using Instruments.
 
-##### Audit your code
+### Audit your code
 
 It’s critical that you review your code for proper pointer usage. Assumptions in pointer sizes can lead to erratic behavior and even crashes. Focus on the following areas:
 

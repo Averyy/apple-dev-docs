@@ -23,7 +23,7 @@ case failure
 INSetCarLockStatusIntentResponseCodeFailure
 ```
 
-#### Discussion
+## Discussion
 
 Use this code for both transient and unrecoverable errors that would prevent your app from locking or unlocking the car.
 

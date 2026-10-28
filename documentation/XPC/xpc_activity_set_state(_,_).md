@@ -19,7 +19,7 @@ func xpc_activity_set_state(_ activity: xpc_activity_t, _ state: xpc_activity_st
 extern bool xpc_activity_set_state(xpc_activity_t activity, xpc_activity_state_t state);
 ```
 
-#### Return Value
+## Return Value
 
 Returns `true` if the state was successfully updated; otherwise, returns `false` if the requested state transition is not valid.
 

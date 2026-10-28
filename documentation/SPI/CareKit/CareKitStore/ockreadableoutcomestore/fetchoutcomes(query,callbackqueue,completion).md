@@ -18,7 +18,7 @@ Fetch a list of events that exist in the store.
 func fetchOutcomes(query: OCKOutcomeQuery, callbackQueue: DispatchQueue, completion: @escaping OCKResultClosure<[Outcome]>)
 ```
 
-#### Discussion
+## Discussion
 
 The completion will be called with an error if there’s an issue accessing the store or fetching results.
 

@@ -22,7 +22,7 @@ Creates a view representing the body of a gauge.
 @MainActor @preconcurrency func makeBody(configuration: Self.Configuration) -> Self.Body
 ```
 
-#### Discussion
+## Discussion
 
 The system calls this modifier on each instance of gauge within a view hierarchy where this style is the current gauge style.
 

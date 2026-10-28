@@ -5,9 +5,9 @@
 
 This header contains the IOStorage class definition.
 
-#### Overview
+## Overview
 
-##### Included Headers
+### Included Headers
 
 - <sys/kernel_types.h>
 - <IOKit/IOTypes.h>

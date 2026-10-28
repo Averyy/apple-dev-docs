@@ -27,7 +27,7 @@ var discoveryToken: NIDiscoveryToken { get }
 
 - [Discovering peers with Multipeer Connectivity](../discovering-peers-with-multipeer-connectivity.md)
 
-#### Discussion
+## Discussion
 
 The value of this property refers to a specific peer device. Your session delegate receives updates for a peer’s position in your delegate’s [`session(_:didUpdate:)`](../nisessiondelegate/session%28_,didupdate%29.md) implementation. To correspond the updates to an iPhone or Apple Watch among multiple peer devices with which your app interacts, compare the value of this property to the configuration’s [`peerDiscoveryToken`](../ninearbypeerconfiguration/peerdiscoverytoken.md). For interactions with third-party accessories, compare the value of this property to the configuration’s [`accessoryDiscoveryToken`](../ninearbyaccessoryconfiguration/accessorydiscoverytoken.md).
 

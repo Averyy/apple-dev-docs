@@ -22,7 +22,7 @@ func removeIdentificationEntry(withPhoneNumber phoneNumber: CXCallDirectoryPhone
 - (void) removeIdentificationEntryWithPhoneNumber:(CXCallDirectoryPhoneNumber) phoneNumber;
 ```
 
-#### Discussion
+## Discussion
 
 If [`isIncremental`](./isincremental.md) is [`true`](../../Swift/true.md), the request provides incremental entries and may use this method to remove previously added identification entries. This method removes all identification entries that contain the specified phone number, even if multiple identification entries with different labels are present for a single phone number.
 

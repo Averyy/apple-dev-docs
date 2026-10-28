@@ -24,7 +24,7 @@ case depth16Unorm
 MTLPixelFormatDepth16Unorm
 ```
 
-#### Discussion
+## Discussion
 
 If you need to apply depth bias, choose a different depth format. Setting a depth bias with this format, such as with [`setDepthBias(_:slopeScale:clamp:)`](../mtlrendercommandencoder/setdepthbias%28_,slopescale,clamp%29.md), generates incorrect results for apps that run on a device with an Apple A8 or earlier GPU.
 

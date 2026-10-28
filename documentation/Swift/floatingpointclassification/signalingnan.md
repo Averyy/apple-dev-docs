@@ -21,7 +21,7 @@ A signaling NaN (“not a number”).
 case signalingNaN
 ```
 
-#### Discussion
+## Discussion
 
 A signaling NaN sets the floating-point exception status when used in many floating-point operations.
 

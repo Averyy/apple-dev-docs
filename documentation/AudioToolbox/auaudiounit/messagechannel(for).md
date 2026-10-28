@@ -23,11 +23,11 @@ func messageChannel(for channelName: String) -> any AUMessageChannel
 - (id<AUMessageChannel>) messageChannelFor:(NSString *) channelName;
 ```
 
-#### Return Value
+## Return Value
 
 An object that conforms to [`AUMessageChannel`](../aumessagechannel.md).
 
-#### Discussion
+## Discussion
 
 Message channels provide a way for custom data exchanges between an audio unit and its host. An audio unit may support multiple message channels.
 

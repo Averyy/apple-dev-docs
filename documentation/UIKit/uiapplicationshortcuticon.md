@@ -22,7 +22,7 @@ class UIApplicationShortcutIcon
 @interface UIApplicationShortcutIcon : NSObject
 ```
 
-#### Overview
+## Overview
 
 To associate an icon with a quick action, pass it to the quick action item’s initialization method, as described in [`UIApplicationShortcutItem`](./uiapplicationshortcutitem.md).
 

@@ -19,11 +19,11 @@ func hv_vcpu_set_trap_debug_reg_accesses(_ vcpu: hv_vcpu_t, _ value: Bool) -> hv
 extern hv_return_t hv_vcpu_set_trap_debug_reg_accesses(hv_vcpu_t vcpu, bool value);
 ```
 
-#### Return Value
+## Return Value
 
 [`HV_SUCCESS`](./hv_success.md) if the operation was successful, otherwise an error code specified in [`hv_return_t`](./hv_return_t.md).
 
-#### Discussion
+## Discussion
 
 The trapped registers includes `DBGBCR<n>_EL1`, `DBGBVR<n>_EL1`, `DBGWCR<n>_EL1`, `DBGWVR<n>_EL1.` and `MDSCR_EL1`.
 

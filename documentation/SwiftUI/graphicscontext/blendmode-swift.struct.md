@@ -22,7 +22,7 @@ The ways that a graphics context combines new content with background content.
 struct BlendMode
 ```
 
-#### Overview
+## Overview
 
 Use one of these values to set the [`blendMode`](./blendmode-swift.property.md) property of a [`GraphicsContext`](../graphicscontext.md). The value that you set affects how content that you draw replaces or combines with content that you previously drew into the context.
 

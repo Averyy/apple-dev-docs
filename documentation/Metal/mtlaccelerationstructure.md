@@ -28,7 +28,7 @@ protocol MTLAccelerationStructure : MTLResource
 
 - [Improving CPU performance by using argument buffers](./improving-cpu-performance-by-using-argument-buffers.md)
 
-#### Overview
+## Overview
 
 To accelerate ray tracing, the device instance needs to reorganize your model data into an optimized data structure for intersection testing on that GPU. Create  [`MTLAccelerationStructure`](./mtlaccelerationstructure.md) instances to contain your model data and reference them in compute and render  commands that execute ray-tracing operations.
 

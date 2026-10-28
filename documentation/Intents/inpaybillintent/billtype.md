@@ -33,7 +33,7 @@ var billType: INBillType { get }
 @property (atomic, assign, readonly) INBillType billType;
 ```
 
-#### Discussion
+## Discussion
 
 Use this information to identify which bill the user wants to pay. You might use this property when the payee provides multiple services, but bills them separately.
 

@@ -26,7 +26,7 @@ optional func player(_ player: GKPlayer, didRequestMatchWithPlayers playerIDsToI
 - (void) player:(GKPlayer *) player didRequestMatchWithPlayers:(NSArray<NSString *> *) playerIDsToInvite;
 ```
 
-#### Discussion
+## Discussion
 
 When you call this method, GameKit launches the game and starts the matchmaking process.
 

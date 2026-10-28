@@ -27,7 +27,7 @@ struct BNNSArithmeticTernary
 typedef struct { ... } BNNSArithmeticTernary;
 ```
 
-#### Overview
+## Overview
 
 Use a [`BNNSArithmeticTernary`](./bnnsarithmeticternary.md) structure to pass the descriptions and types of the inputs and output of a binary arithmetic operation to [`BNNSLayerParametersArithmetic`](./bnnslayerparametersarithmetic.md).
 

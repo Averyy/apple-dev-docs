@@ -25,7 +25,7 @@ static let socksProxyConfigurationKey: Stream.PropertyKey
 extern NSStreamPropertyKey const NSStreamSOCKSProxyConfigurationKey;
 ```
 
-#### Discussion
+## Discussion
 
 The dictionary returned from the System Configuration framework for SOCKS proxies usually suffices.
 

@@ -32,7 +32,7 @@ var body: String { get set }
 @property (atomic, copy, readwrite) NSString * body;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to specify the body of the notification alert. If your app isn’t authorized to display alert-based notifications, the system ignores this property.
 

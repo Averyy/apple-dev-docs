@@ -21,7 +21,7 @@ Calculates the single-precision element-wise addition of the product of a comple
 extern void vDSP_zvsma(const DSPSplitComplex *__A, vDSP_Stride __IA, const DSPSplitComplex *__B, const DSPSplitComplex *__C, vDSP_Stride __IC, const DSPSplitComplex *__D, vDSP_Stride __ID, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 This function calculates the element-wise product of vector `A` and scalar value `B`, adds vector `C` to the product, and writes the result to vector `D`, as follows:
 

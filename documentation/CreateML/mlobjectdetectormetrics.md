@@ -15,7 +15,7 @@ Metrics you use to evaluate an object detector’s performance.
 struct MLObjectDetectorMetrics
 ```
 
-#### Overview
+## Overview
 
 An object detector generates intersection-over-union (IoU) metrics, which is a way to measure the similarity of two bounding boxes. The IoU metric is the overlapping area divided by the area of the union of the bounding boxes.
 

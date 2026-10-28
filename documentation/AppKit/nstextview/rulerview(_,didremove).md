@@ -19,7 +19,7 @@ func rulerView(_ ruler: NSRulerView, didRemove marker: NSRulerMarker)
 - (void) rulerView:(NSRulerView *) ruler didRemoveMarker:(NSRulerMarker *) marker;
 ```
 
-#### Discussion
+## Discussion
 
 This method records the change by invoking [`didChangeText()`](./didchangetext%28%29.md) after removing the marker.
 

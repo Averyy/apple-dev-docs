@@ -5,45 +5,45 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 The macOS 12.3 SDK provides support to develop apps for Mac computers running macOS Monterey 12.3. The SDK comes bundled with Xcode 13.3.1. For information on the compatibility requirements for Xcode 13.3.1, see [Xcode 13.3.1 Release Notes](../Xcode-Release-Notes/xcode-13_3_1-release-notes.md).
 
-##### Apple Pay
+### Apple Pay
 
-###### New Features
+#### New Features
 
 - Developers can express payment network preference in [`PKPaymentRequest`](../PassKit/pkpaymentrequest.md). Network preference is determined by the order of [`supportedNetworks`](../PassKit/pkpaymentrequest/supportednetworks.md). This won’t override the user’s default card selection, but if the card is multi-SSD, then the network preference order determines which SSD is selected. (80827905)
 
-##### Authentication
+### Authentication
 
-###### New Features
+#### New Features
 
 - Support is added to the passkey technology preview, enabling signing in to passkey-compatible websites and apps on Mac and iPad using an iPhone with a saved passkey. (87998252)
 
-##### Game Controller
+### Game Controller
 
-###### New Features
+#### New Features
 
 - Support is now available for new DualSense adaptive trigger firmware features available via [`GCDualSenseAdaptiveTrigger`](../GameController/gcdualsenseadaptivetrigger.md). (87433163)
 
-##### iWork
+### iWork
 
-###### Known Issues
+#### Known Issues
 
 - Collaboration scenarios might not work when the user configures the system to a right-to-left language. (89078453)
 
   **Workaround:** Use [iWork.com](./iwork.com.md) to collaborate in Safari using a right-to-left language.
 
-##### Kernel
+### Kernel
 
-###### Deprecations
+#### Deprecations
 
 - The kernel extensions used by Dropbox Desktop Application and Microsoft OneDrive are no longer available. Both service providers have replacements for this functionality; Dropbox is currently in beta. (85890896)
 
-##### libc++
+### libc++
 
-###### New Features
+#### New Features
 
 - The following new C++20 and C++23 features are now implemented:
 
@@ -54,7 +54,7 @@ The macOS 12.3 SDK provides support to develop apps for Mac computers running ma
   - A `.contains()` method for associative containers.
   - Added `std::bind_front()`. (88131816)
 
-###### Deprecations
+#### Deprecations
 
 - Some extensions in `std::tuple` were removed to fix bugs caused by those extensions:
 
@@ -62,15 +62,15 @@ The macOS 12.3 SDK provides support to develop apps for Mac computers running ma
   - A tuple can no longer be constructed from an array.
   - The `std::result_of` and `std::is_literal_type` type traits are no longer available in C++20 mode, as specified in the Standard.
 
-##### Python
+### Python
 
-###### Deprecations
+#### Deprecations
 
 - Python 2.7 was removed from macOS in this update. Developers should use Python 3 or an alternative language instead. (39795874)
 
-##### StoreKit
+### StoreKit
 
-###### New Features
+#### New Features
 
 - [`SKTestSession`](../StoreKitTest/sktestsession.md) has three new methods to simulate a subscription requiring price increase consent, simulate consenting to a pending price increase, and simulate declining a price increase in automated tests. (84556183)
 
@@ -84,16 +84,16 @@ The macOS 12.3 SDK provides support to develop apps for Mac computers running ma
 
 - Some types in `StoreKit` now have a `localizedDescription` read-only `String` instance property. This property can be used to get a human-readable description of the value, localized for the device’s current locale. These types include: [`Product.ProductType`](../StoreKit/product/producttype.md), [`Product.SubscriptionInfo.RenewalState`](../StoreKit/product/subscriptioninfo/renewalstate.md), [`expirationReason`](../StoreKit/product/subscriptioninfo/renewalinfo/expirationreason-swift.property.md), [`priceIncreaseStatus`](../StoreKit/product/subscriptioninfo/renewalinfo/priceincreasestatus-swift.property.md), [`Transaction.OfferType`](../StoreKit/transaction/offertype-swift.struct.md), [`Product.SubscriptionOffer.OfferType`](../StoreKit/product/subscriptionoffer/offertype.md), [`Product.SubscriptionOffer.PaymentMode`](../StoreKit/product/subscriptionoffer/paymentmode-swift.struct.md), [`Product.SubscriptionPeriod.Unit`](../StoreKit/product/subscriptionperiod/unit-swift.enum.md), [`Transaction.RevocationReason`](../StoreKit/transaction/revocationreason-swift.struct.md), and [`Transaction.OwnershipType`](../StoreKit/transaction/ownershiptype-swift.struct.md). (78735060)
 
-##### Universal Control
+### Universal Control
 
-###### Known Issues
+#### Known Issues
 
 - Drag-and-drop scenarios might not work for some file types and apps. (88106322)
 - Some third-party keyboards and mice might encounter issues when using additional functionality, like scroll wheels. (88106362)
 
-##### WebKit
+### WebKit
 
-###### Deprecations
+#### Deprecations
 
 - Support for inline viewing of PostScript files is no longer available. (88172449)
 

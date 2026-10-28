@@ -9,9 +9,9 @@ Find places by name or by specific search criteria.
 **Availability**:
 - Apple Maps Server API 1.2+
 
-#### Discussion
+## Discussion
 
-##### Example
+### Example
 
 **Request**:
 

@@ -19,7 +19,7 @@ class VZVirtioSoundDeviceInputStreamConfiguration
 @interface VZVirtioSoundDeviceInputStreamConfiguration : VZVirtioSoundDeviceStreamConfiguration
 ```
 
-#### Overview
+## Overview
 
 This device represents a PCM stream of audio data. Don’t instantiate `VZVirtioSoundDeviceStreamConfiguration` directly. Instead, use one of its subclasses such as [`VZVirtioSoundDeviceInputStreamConfiguration`](./vzvirtiosounddeviceinputstreamconfiguration.md) or [`VZVirtioSoundDeviceOutputStreamConfiguration`](./vzvirtiosounddeviceoutputstreamconfiguration.md).
 

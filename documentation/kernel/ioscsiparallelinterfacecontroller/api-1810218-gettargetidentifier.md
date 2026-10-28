@@ -12,11 +12,11 @@ SCSITargetIdentifier GetTargetIdentifier (
  SCSIParallelTaskIdentifierparallelTask );
 ```
 
-#### Return Value
+## Return Value
 
 returns SCSITargetIdentifier
 
-#### Overview
+## Overview
 
 Method to get the SCSITargetIdentifier associated with a request.
 

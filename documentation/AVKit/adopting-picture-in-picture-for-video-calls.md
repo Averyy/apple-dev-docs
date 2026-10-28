@@ -5,13 +5,13 @@
 
 Add multitasking capability to your video-call apps by using Picture in Picture (PiP).
 
-#### Overview
+## Overview
 
 Use PiP in your video-call apps so users can multitask with other apps while on video calls. When a user enables PiP, your app scales down to a corner of the screen, so they can see the Home Screen and interact with other apps. In iOS 15 and later, [AVKit](./AVKit.md) provides PiP support for video-calling apps, which enables you to deliver a familiar video-calling experience that behaves like FaceTime.
 
 > ❗ **Important**:  In iOS 16 and later, you can use the camera in Picture in Picture mode by enabling a capture session’s [`isMultitaskingCameraAccessEnabled`](../AVFoundation/avcapturesession/ismultitaskingcameraaccessenabled.md) property. Apps that have a deployment target earlier than iOS 16 require the [`com.apple.developer.avfoundation.multitasking-camera-access`](../BundleResources/entitlements/com.apple.developer.avfoundation.multitasking-camera-access.md) entitlement to use the camera in PiP mode.
 
-##### Create a source view
+### Create a source view
 
 Providing PiP support begins by choosing a source view to display inside the video-call view controller. You need to add a `UIView` to `AVPictureInPictureVideoCallViewController`, so use [`AVCaptureVideoPreviewLayer`](../AVFoundation/avcapturevideopreviewlayer.md) or [`AVSampleBufferDisplayLayer`](../AVFoundation/avsamplebufferdisplaylayer.md) depending on your need. In iOS 18 and later, you may also use [`MTKView`](../MetalKit/mtkview.md) as your source view. Video-calling apps need to display the remote view, so use [`AVSampleBufferDisplayLayer`](../AVFoundation/avsamplebufferdisplaylayer.md) to do so.
 
@@ -27,7 +27,7 @@ class SampleBufferVideoCallView: UIView {
 }
 ```
 
-##### Create a video-call controller
+### Create a video-call controller
 
 To display your source view, create a [`AVPictureInPictureVideoCallViewController`](./avpictureinpicturevideocallviewcontroller.md) and add your source as a subview.
 
@@ -39,7 +39,7 @@ pipVideoCallViewController.view.addSubview(sampleBufferVideoCallView)
 
 Use [`isPictureInPictureSupported()`](./avpictureinpicturecontroller/ispictureinpicturesupported%28%29.md) to determine whether the current device supports PiP playback. If PiP isn’t supported on the current device, attempting to initialize a PiP controller returns `nil`.
 
-##### Create a PiP controller using a content source
+### Create a PiP controller using a content source
 
 Before you create an [`AVPictureInPictureController`](./avpictureinpicturecontroller.md), you need to create an [`AVPictureInPictureController.ContentSource`](./avpictureinpicturecontroller/contentsource-swift.class.md) that represents the source of the content the system displays. A content source requires a video-call view controller, and a source view that contains the content you associate with the video call.
 
@@ -63,7 +63,7 @@ The system uses the source view to determine the source frame for the PiP animat
 
 > **Note**:  The PiP window doesn’t receive touch events when you use [`AVPictureInPictureVideoCallViewController`](./avpictureinpicturevideocallviewcontroller.md), so you can’t customize the window’s user interface by adding buttons.
 
-##### Observe PiP life cycle events
+### Observe PiP life cycle events
 
 When you use PiP, you respond to life-cycle events by observing [`AVPictureInPictureControllerDelegate`](./avpictureinpicturecontrollerdelegate.md). This allows you to handle your app’s user interface based on the PiP state, along with observing for potential errors.
 

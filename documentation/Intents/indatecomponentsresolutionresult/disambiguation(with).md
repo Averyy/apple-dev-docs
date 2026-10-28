@@ -24,11 +24,11 @@ class func disambiguation(with dateComponentsToDisambiguate: [DateComponents]) -
 + (instancetype) disambiguationWithDateComponentsToDisambiguate:(NSArray<NSDateComponents *> *) dateComponentsToDisambiguate;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INDateComponentsResolutionResult`](../indatecomponentsresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method when you cannot resolve the object uniquely and need the user to select from a limited set of alternative dates.
 

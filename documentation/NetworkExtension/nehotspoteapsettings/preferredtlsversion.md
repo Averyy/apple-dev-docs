@@ -22,7 +22,7 @@ var preferredTLSVersion: NEHotspotEAPSettings.TLSVersion { get set }
 @property NEHotspotConfigurationEAPTLSVersion preferredTLSVersion;
 ```
 
-#### Discussion
+## Discussion
 
 Optional. For possible values see [`NEHotspotEAPSettings.TLSVersion`](./tlsversion.md). The default value is Version 1.2.
 

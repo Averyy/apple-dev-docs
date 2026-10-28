@@ -21,11 +21,11 @@ interface PaymentMethodChangeEvent
 - [Setting up the payment request API to accept Apple Pay](./setting-up-the-payment-request-api-to-accept-apple-pay.md)
 - [Apple Pay on the Web Version 12 Release Notes](./apple-pay-on-the-web-version-12-release-notes.md)
 
-#### Overview
+## Overview
 
 The Payment Request API sends a [`PaymentMethodChangeEvent`](./paymentmethodchangeevent.md) when the user updates transaction information. For more information on [`PaymentMethodChangeEvent`](./paymentmethodchangeevent.md), see the [W3C Payment Request API](https://www.w3.org/TR/payment-request/#paymentmethodchangeevent-interface).
 
-##### Apple Pay Events
+### Apple Pay Events
 
 Custom Apple Pay events include information in the [`methodDetails`](./paymentmethodchangeevent/methoddetails.md) attribute of the change event:
 

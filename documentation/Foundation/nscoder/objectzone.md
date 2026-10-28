@@ -21,7 +21,7 @@ This method is present for historical reasons and has no effect.
 - (NSZone *) objectZone;
 ```
 
-#### Discussion
+## Discussion
 
 `NSCoder`’s implementation returns the default memory zone, as given by `NSDefaultMallocZone()`.
 

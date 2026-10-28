@@ -21,11 +21,11 @@ Returns a sequence containing all but the given number of final elements.
 func dropLast(_ k: Int = 1) -> [Self.Element]
 ```
 
-#### Return Value
+## Return Value
 
 A sequence leaving off the specified number of elements.
 
-#### Discussion
+## Discussion
 
 The sequence must be finite. If the number of elements to drop exceeds the number of elements in the sequence, the result is an empty sequence.
 

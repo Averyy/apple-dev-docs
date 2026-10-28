@@ -25,7 +25,7 @@ var dimensions: MTLTensorExtents? { get }
 @property (readonly, nullable) MTLTensorExtents * dimensions;
 ```
 
-#### Discussion
+## Discussion
 
 For shader-bound tensors with dynamic extents, the [`rank`](../mtltensorextents/rank.md) of `dimensions` corresponds to the rank the shader function specifies, and [`extentAtDimensionIndex:`](../mtltensorextents/extentatdimensionindex_.md) always returns a value of -1.
 

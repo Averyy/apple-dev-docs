@@ -20,11 +20,11 @@ unowned(unsafe) var customViewPersistentData: NSDictionary? { get set }
 @property (nonatomic, assign, nullable) NSDictionary<NSString *,id> * customViewPersistentData;
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary containing view state data.
 
-#### Discussion
+## Discussion
 
 The host application should call this method before closing the view.
 

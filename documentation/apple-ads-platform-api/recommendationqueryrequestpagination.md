@@ -15,7 +15,7 @@ Pagination parameters for a recommendation query request.
 object RecommendationQueryRequestPagination
 ```
 
-#### Discussion
+## Discussion
 
 The `QueryRequestPagination` controls pagination in recommendation query requests. The response includes a `pagination` envelope with `offset`, `pageSize`, and `totalCount` indicating how many records matched the filters in total.
 

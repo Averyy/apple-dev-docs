@@ -19,7 +19,7 @@ func autosave(withDelegate delegate: Any?, didAutosave didAutosaveSelector: Sele
 - (void) autosaveDocumentWithDelegate:(id) delegate didAutosaveSelector:(SEL) didAutosaveSelector contextInfo:(void *) contextInfo;
 ```
 
-#### Discussion
+## Discussion
 
 After autosaving, sends the message selected by `didAutosaveSelector` to the delegate, with `contextInfo` as the last argument. The method selected by `didAutosaveSelector` must have the same signature as:
 

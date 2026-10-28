@@ -16,7 +16,7 @@ nonisolated
 func presentationBreakthroughEffect(_ effect: BreakthroughEffect) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 Use this modifier to disable or customize a breakthrough effect for the enclosing presentation.
 

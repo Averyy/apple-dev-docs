@@ -24,11 +24,11 @@ optional func mapView(_ mapView: MKMapView, viewFor annotation: any MKAnnotation
 - (MKAnnotationView *) mapView:(MKMapView *) mapView viewForAnnotation:(id<MKAnnotation>) annotation;
 ```
 
-#### Return Value
+## Return Value
 
 The annotation view to display for the specified annotation, or `nil` if you want to display a standard annotation view.
 
-#### Discussion
+## Discussion
 
 Rather than create a new view each time the map view calls this method, call the [`dequeueReusableAnnotationView(withIdentifier:)`](../mkmapview/dequeuereusableannotationview%28withidentifier%29.md) method of the [`MKMapView`](../mkmapview.md) class to see if an existing annotation view of the desired type already exists. If one exists, update the returned view to reflect the attributes of the specified annotation and return it. If a view of the appropriate type doesn’t exist, create one, configure it with the needed annotation data, and return it.
 

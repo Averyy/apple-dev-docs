@@ -20,7 +20,7 @@ An anchor point attached to the image specified by a group and a name in AR Reso
 case image(group: String, name: String)
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: macOS and tvOS apps don’t track this type of anchor.
 

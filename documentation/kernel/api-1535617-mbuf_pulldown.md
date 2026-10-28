@@ -13,11 +13,11 @@
 errno_t mbuf_pulldown(mbuf_t src, size_t *offset, size_t length, mbuf_t *location);
 ```
 
-#### Return Value
+## Return Value
 
 0 upon success otherwise the errno error.
 
-#### Discussion
+## Discussion
 
 Make length bytes at offset in the mbuf chain contiguous. Nothing before offset bytes in the chain will be modified. Upon return, location will be the mbuf the data is contiguous in and offset will be the offset in that mbuf at which the data is located. In the case of a failure, the mbuf chain will be freed.
 

@@ -19,7 +19,7 @@ nonisolated
 func inspectorColumnWidth(min: CGFloat? = nil, ideal: CGFloat, max: CGFloat? = nil) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 Apply this modifier on the content of a [`inspector(isPresented:content:)`](./inspector%28ispresented,content%29.md) to specify a preferred flexible width for the column. Use [`inspectorColumnWidth(_:)`](./inspectorcolumnwidth%28_%29.md) if you need to specify a fixed width.
 

@@ -19,7 +19,7 @@ func stringValue() -> String!
 - (NSString *) stringValue;
 ```
 
-#### Return Value
+## Return Value
 
 The string assigned to the annotation.
 

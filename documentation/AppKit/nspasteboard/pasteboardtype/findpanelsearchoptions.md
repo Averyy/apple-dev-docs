@@ -19,7 +19,7 @@ static let findPanelSearchOptions: NSPasteboard.PasteboardType
 extern NSPasteboardType NSFindPanelSearchOptionsPboardType;
 ```
 
-#### Discussion
+## Discussion
 
 Used with the [`propertyList(forType:)`](../propertylist%28fortype%29.md) method of [`NSPasteboard`](../../nspasteboard.md).
 

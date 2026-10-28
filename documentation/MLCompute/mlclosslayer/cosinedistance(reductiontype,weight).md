@@ -23,7 +23,7 @@ class func cosineDistance(reductionType: MLCReductionType, weight: Float) -> Sel
 + (instancetype) cosineDistanceLossWithReductionType:(MLCReductionType) reductionType weight:(float) weight;
 ```
 
-#### Return Value
+## Return Value
 
 A cosine distance loss layer.
 

@@ -22,7 +22,7 @@ An interval from a lower bound up to, and including, an upper bound.
 struct ClosedRange<Bound> where Bound : Comparable
 ```
 
-#### Overview
+## Overview
 
 You create a `ClosedRange` instance by using the closed range operator (`...`).
 
@@ -51,7 +51,7 @@ zeroInclusive.isEmpty
 // false
 ```
 
-#### Using a Closed Range as a Collection of Consecutive Values
+## Using a Closed Range as a Collection of Consecutive Values
 
 When a closed range uses integers as its lower and upper bounds, or any other type that conforms to the `Strideable` protocol with an integer stride, you can use that range in a `for`-`in` loop or with any sequence or collection method. The elements of the range are the consecutive values from its lower bound up to, and including, its upper bound.
 

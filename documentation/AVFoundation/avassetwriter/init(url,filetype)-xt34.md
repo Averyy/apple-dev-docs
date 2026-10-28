@@ -24,11 +24,11 @@ convenience init(url outputURL: URL, fileType outputFileType: AVFileType) throws
 + (instancetype) assetWriterWithURL:(NSURL *) outputURL fileType:(AVFileType) outputFileType error:(NSError **) outError;
 ```
 
-#### Return Value
+## Return Value
 
 A new asset writer.
 
-#### Discussion
+## Discussion
 
 Writing fails if a file already exists at the output URL.
 

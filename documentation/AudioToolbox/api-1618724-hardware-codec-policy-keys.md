@@ -5,7 +5,7 @@
 
 Indicates how an audio queue should choose between hardware and software implementations of a codec.
 
-#### Overview
+## Overview
 
 If the designated codec implementation is not available, or if a hardware codec is chosen and the audio session category does not permit use of hardware codecs, your attempts to call the [`AudioQueuePrime(_:_:_:)`](./audioqueueprime%28_,_,_%29.md) or [`AudioQueueStart(_:_:)`](./audioqueuestart%28_,_%29.md) functions will fail.
 

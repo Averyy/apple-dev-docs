@@ -21,7 +21,7 @@ Migrates the source store to the destination using the specified mapping model.
 func migrateStore(from sourceURL: URL, type sourceType: NSPersistentStore.StoreType, options sourceOptions: [AnyHashable : Any]? = nil, mapping: NSMappingModel, to destinationURL: URL, type destinationType: NSPersistentStore.StoreType, options destinationOptions: [AnyHashable : Any]? = nil) throws
 ```
 
-#### Discussion
+## Discussion
 
 A store must exist at `sourceURL`; otherwise, the migration fails. Before the migration occurs, the method ensures compatibility between the source model, the destination model, and the mapping model. If a store doesn’t exist at `destinationURL`, Core Data creates one as part of the migration; otherwise, the migration updates the existing store.
 

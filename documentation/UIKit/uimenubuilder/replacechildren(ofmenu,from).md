@@ -24,7 +24,7 @@ func replaceChildren(ofMenu parentIdentifier: UIMenu.Identifier, from childrenBl
 - (void) replaceChildrenOfMenuForIdentifier:(UIMenuIdentifier) parentIdentifier fromChildrenBlock:(NSArray<UIMenuElement *> * (^)(NSArray<UIMenuElement *> *)) childrenBlock;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to add, remove, and rearrange the children elements of a menu. For example, the following code listing uses this method to insert a Copy HTML menu element before Paste in the [`standardEdit`](../uimenu/identifier-swift.struct/standardedit.md) menu.
 

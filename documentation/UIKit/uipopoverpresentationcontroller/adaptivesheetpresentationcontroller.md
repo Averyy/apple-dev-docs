@@ -21,7 +21,7 @@ var adaptiveSheetPresentationController: UISheetPresentationController { get }
 @property (nonatomic, strong, readonly) UISheetPresentationController * adaptiveSheetPresentationController;
 ```
 
-#### Discussion
+## Discussion
 
 Access this instance to customize or adjust the adaptive sheet.
 

@@ -25,7 +25,7 @@ var kColorSyncInterpolateSlopes: Unmanaged<CFString>
 extern CFStringRef kColorSyncInterpolateSlopes;
 ```
 
-#### Discussion
+## Discussion
 
 When true, the framework computes slopes at control points by Piecewise Cubic Hermite Interpolating Polynomial from the X,Y control point coordinates, and you must omit [`kColorSyncControlPointSlopes`](./kcolorsynccontrolpointslopes.md). When false, you must supply explicit slopes in [`kColorSyncControlPointSlopes`](./kcolorsynccontrolpointslopes.md) (see below). Shared across all alternates from index 0 when [`kColorSyncCommonCurveParameters`](./kcolorsynccommoncurveparameters.md) is true.
 

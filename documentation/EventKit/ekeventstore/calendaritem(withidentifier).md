@@ -28,7 +28,7 @@ func calendarItem(withIdentifier identifier: String) -> EKCalendarItem?
 
 - [Retrieving events and reminders](../retrieving-events-and-reminders.md)
 
-#### Return Value
+## Return Value
 
 The reminder or the first occurrence of an event with the specified identifier, or `nil` if neither is found.
 

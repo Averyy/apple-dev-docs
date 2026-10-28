@@ -19,7 +19,7 @@ func SCNetworkConnectionStop(_ connection: SCNetworkConnection, _ forceDisconnec
 Boolean SCNetworkConnectionStop(SCNetworkConnectionRef connection, Boolean forceDisconnect);
 ```
 
-#### Return Value
+## Return Value
 
 `TRUE` if the disconnection request succeeded; `FALSE` (use the [`SCError()`](./scerror%28%29.md) function to retrieve the specific error).
 

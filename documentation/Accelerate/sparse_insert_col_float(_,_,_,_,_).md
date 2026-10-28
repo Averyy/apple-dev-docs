@@ -25,11 +25,11 @@ func sparse_insert_col_float(_ A: sparse_matrix_float!, _ j: sparse_index, _ nz:
 sparse_status sparse_insert_col_float(sparse_matrix_float A, sparse_index j, sparse_dimension nz, const float * restrictval, const sparse_index * restrictindx);
 ```
 
-#### Return Value
+## Return Value
 
 On successful insertion, `A` has been updated with the value and [`SPARSE_SUCCESS`](./sparse_success.md) is returned.  If `A` creation requirements are not met, [`SPARSE_ILLEGAL_PARAMETER`](./sparse_illegal_parameter.md) is returned and `A` is unchanged.
 
-#### Discussion
+## Discussion
 
 Use to build a sparse matrix by providing a list of point entries for a single column.  For each entry provided, update `A[indx[i],j] = val[i]`.  This will not replace the existing contents of the column, it appends new values and overwrites overlapping values.
 

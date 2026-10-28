@@ -17,7 +17,7 @@ Creates a C++ set containing the elements of a Swift Sequence.
 init<S>(_ sequence: S) where S : Sequence, Self.Element == S.Element
 ```
 
-#### Discussion
+## Discussion
 
 This initializes the set by copying every element of the sequence.
 

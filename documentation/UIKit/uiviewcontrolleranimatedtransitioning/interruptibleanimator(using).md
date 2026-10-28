@@ -23,11 +23,11 @@ optional func interruptibleAnimator(using transitionContext: any UIViewControlle
 - (id<UIViewImplicitlyAnimating>) interruptibleAnimatorForTransition:(id<UIViewControllerContextTransitioning>) transitionContext;
 ```
 
-#### Return Value
+## Return Value
 
 An animator object that supports the modification of its running animations.
 
-#### Discussion
+## Discussion
 
 Implement this method when you want to perform your transitions using an interruptible animator object, such as a [`UIViewPropertyAnimator`](../uiviewpropertyanimator.md) object. You must return the same animator object for the duration of the transition.
 

@@ -26,7 +26,7 @@ var debugDescription: String { get }
 @property (copy, readonly) NSString * debugDescription;
 ```
 
-#### Discussion
+## Discussion
 
 The data in the string varies based on the time at which it’s captured, but it may include any of the following, as well as additional data:
 

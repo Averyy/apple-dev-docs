@@ -19,7 +19,7 @@ func removeTabViewItem(_ tabViewItem: NSTabViewItem)
 - (void) removeTabViewItem:(NSTabViewItem *) tabViewItem;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to remove a tab view item from the tab view interface. Removing the item removes the corresponding view controller from the tab view controller’s list of child view controllers. If the removed tab view item is currently selected, the tab view controller selects the next item (or the previous item if there is no next item). Removing the last tab view item sets the [`selectedTabViewItemIndex`](./selectedtabviewitemindex.md) property to `-1`.
 

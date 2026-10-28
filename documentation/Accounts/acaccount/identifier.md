@@ -32,7 +32,7 @@ weak var identifier: NSString! { get }
 @property (atomic, weak, readonly) NSString * identifier;
 ```
 
-#### Discussion
+## Discussion
 
 Use the [`account(withIdentifier:)`](../acaccountstore/account%28withidentifier%29.md) method to get an account with the specified identifier.
 

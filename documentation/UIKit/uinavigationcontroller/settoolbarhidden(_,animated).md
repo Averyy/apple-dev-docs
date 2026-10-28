@@ -22,7 +22,7 @@ func setToolbarHidden(_ hidden: Bool, animated: Bool)
 - (void) setToolbarHidden:(BOOL) hidden animated:(BOOL) animated;
 ```
 
-#### Discussion
+## Discussion
 
 You can use this method to animate changes to the visibility of the built-in toolbar.
 

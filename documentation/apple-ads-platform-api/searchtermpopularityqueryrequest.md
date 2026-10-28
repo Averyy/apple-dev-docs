@@ -15,7 +15,7 @@ Request body for the search term popularity query endpoint.
 object SearchTermPopularityQueryRequest
 ```
 
-#### Example
+## Example
 
 ```json
 {

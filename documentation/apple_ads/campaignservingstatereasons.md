@@ -58,7 +58,7 @@ string CampaignServingStateReasons
 - `TOTAL_BUDGET_EXHAUSTED`: The campaign budget is exhausted.
 - `USER_REQUESTED_ACCOUNT_SUSPENSION`: The user requested suspension of the account.
 
-#### Discussion
+## Discussion
 
 Ad creatives in campaigns with an `APPSTORE_TODAY_TAB` [`SupplySource`](./supplysource.md) receive a review from Apple for compliance.  Ads that are pending review are on hold until Apple completes the review. The system doesn’t serve rejected ads.
 

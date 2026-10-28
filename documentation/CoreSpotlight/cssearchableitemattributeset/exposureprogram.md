@@ -23,7 +23,7 @@ var exposureProgram: String? { get set }
 @property (copy, nullable) NSString * exposureProgram;
 ```
 
-#### Discussion
+## Discussion
 
 Can include manual, normal, aperture priority, and so on.
 

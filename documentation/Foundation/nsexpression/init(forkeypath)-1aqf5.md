@@ -25,7 +25,7 @@ init(forKeyPath keyPath: String)
 + (NSExpression *) expressionForKeyPath:(NSString *) keyPath;
 ```
 
-#### Return Value
+## Return Value
 
 A new expression that invokes [`value(forKeyPath:)`](../../ObjectiveC/nsobject-swift.class/value%28forkeypath%29.md) with `keyPath`.
 

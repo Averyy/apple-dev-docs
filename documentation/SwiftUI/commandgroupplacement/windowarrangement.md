@@ -19,7 +19,7 @@ Placement for commands that arrange all of an app’s windows.
 static let windowArrangement: CommandGroupPlacement
 ```
 
-#### Discussion
+## Discussion
 
 By default, this group includes the following command in macOS:
 

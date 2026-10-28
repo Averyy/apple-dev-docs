@@ -21,7 +21,7 @@ func runModal(for window: NSWindow, modalDelegate delegate: Any?, didEnd didEndS
 - (void) runModalForWindow:(NSWindow *) window modalDelegate:(id) delegate didEndSelector:(SEL) didEndSelector contextInfo:(void *) contextInfo;
 ```
 
-#### Discussion
+## Discussion
 
 The `didEndSelector` parameter is a selector that takes three arguments. The corresponding method should have a declaration modeled on the following example:
 

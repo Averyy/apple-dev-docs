@@ -17,7 +17,7 @@ Compute the progress for an event.
 func computeProgress<Progress>(by strategy: CareTaskProgressStrategy<Progress> = .checkingOutcomeExists) -> Progress where Progress : CareTaskProgress
 ```
 
-#### Discussion
+## Discussion
 
 Progress is computed according to the `strategy`. See [`CareTaskProgressStrategy`](../caretaskprogressstrategy.md) for a list of the different strategies.
 

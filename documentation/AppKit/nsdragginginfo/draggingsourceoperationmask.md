@@ -21,7 +21,7 @@ var draggingSourceOperationMask: NSDragOperation { get }
 @property (readonly) NSDragOperation draggingSourceOperationMask;
 ```
 
-#### Discussion
+## Discussion
 
 The dragging source ([`NSDraggingSource`](../nsdraggingsource.md)) declares the dragging operation mask through [`draggingSession(_:sourceOperationMaskFor:)`](../nsdraggingsource/draggingsession%28_,sourceoperationmaskfor%29.md).
 

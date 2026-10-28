@@ -24,7 +24,7 @@ var width: Int { get set }
 @property (nonatomic, readwrite) NSUInteger width;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `1`. The value needs to be greater than or equal to `1`.
 

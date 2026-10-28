@@ -17,11 +17,11 @@ Queries the indexes in a search group.
 SKSearchResultsRef SKSearchResultsCreateWithQuery(SKSearchGroupRef inSearchGroup, CFStringRef inQuery, SKSearchType inSearchType, CFIndex inMaxFoundDocuments, void *inContext, SKSearchResultsFilterCallBack inFilterCallBack);
 ```
 
-#### Return Value
+## Return Value
 
 A search results object.
 
-#### Discussion
+## Discussion
 
 This function searches the on-disk indexes in a search group. Before invoking a search, call [`SKIndexFlush`](./api-1450667-skindexflush.md) on all indexes in the search group to ensure that changes to the indexes have been flushed to disk.
 
@@ -29,7 +29,7 @@ Once you’ve obtained the results of a search, get the specifics—including wh
 
 When your application no longer needs the search result, dispose of it by calling [`CFRelease`](../CoreFoundation/cfrelease.md).
 
-##### Special Considerations
+### Special Considerations
 
 This deprecated function performs searches synchronously. Apple recommends using the asynchronous [`SKSearchCreate`](./api-1443079-sksearchcreate.md) function instead.
 

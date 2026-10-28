@@ -16,7 +16,7 @@ An open function which allows this interface to have access to the device when a
 IOReturn (*OpenWithSessionRef)(IOFireWireLibDeviceRef self, IOFireWireSessionRef sessionRef);
 ```
 
-#### Return Value
+## Return Value
 
 An IOReturn error code
 

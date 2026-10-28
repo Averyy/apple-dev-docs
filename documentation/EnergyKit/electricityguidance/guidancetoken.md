@@ -21,7 +21,7 @@ let guidanceToken: UUID
 
 - [Providing charging history for electric vehicles](../providing-informative-charging-history-for-electric-vehicles.md)
 
-#### Discussion
+## Discussion
 
 Use the unique token to create an `ElectricalLoadEvent`.
 

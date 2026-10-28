@@ -16,11 +16,11 @@
 kern_return_t IOSysCtlByName(const char *name, void *oldp, size_t *oldlenp, void *newp, size_t newlen);
 ```
 
-#### Return Value
+## Return Value
 
 kIOReturnSuccess if successful, or an IOReturn code indicating the error
 
-#### Discussion
+## Discussion
 
 Get or set system information. Depending on the sysctl vector, only priviledged drivers might be able to set certain system information.
 

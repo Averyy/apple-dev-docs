@@ -23,7 +23,7 @@ optional func collectionView(_ collectionView: UICollectionView, willDisplay cel
 - (void) collectionView:(UICollectionView *) collectionView willDisplayCell:(UICollectionViewCell *) cell forItemAtIndexPath:(NSIndexPath *) indexPath;
 ```
 
-#### Discussion
+## Discussion
 
 The collection view calls this method before adding a cell to its content. Use this method to detect cell additions, as opposed to monitoring the cell itself to see when it appears.
 

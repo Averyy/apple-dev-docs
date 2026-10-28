@@ -25,7 +25,7 @@ let AVURLAssetOverrideMIMETypeKey: String
 extern NSString * const AVURLAssetOverrideMIMETypeKey;
 ```
 
-#### Discussion
+## Discussion
 
 If you specify a value for this key, the system uses it to determine how to handle or parse the media resource, and ignores any other information that may be available, such as the URL path extension or a server-provided MIME type.
 

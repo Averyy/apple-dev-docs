@@ -19,7 +19,7 @@ init(parentItemIdentifier: NSFileProviderItemIdentifier, filename: String)
 - (instancetype) initWithParentItemIdentifier:(NSFileProviderItemIdentifier) parentItemIdentifier filename:(NSString *) filename;
 ```
 
-#### Discussion
+## Discussion
 
 When replicating a known folder the system will reuse a folder located at the specified filename within the parent if one exists, or create a new item at this location if none exists yet.
 

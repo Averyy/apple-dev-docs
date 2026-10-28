@@ -16,7 +16,7 @@
 kINQUIRY_Byte6_ENCSERV_Mask
 ```
 
-#### Discussion
+## Discussion
 
 Mask to use to test the ENCSERV bit.
 

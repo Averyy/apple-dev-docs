@@ -24,7 +24,7 @@ func onPathUpdate(_ handler: @escaping @isolated(any) @Sendable (Self, NWPath) -
 
 Available when `ApplicationProtocol` is `QUICStream`.
 
-#### Discussion
+## Discussion
 
 This closure will inherit the isolation domain of the caller.
 

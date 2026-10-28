@@ -21,11 +21,11 @@ Decode an object as an expected type, failing if the archived type does not matc
 - (id) decodeTopLevelObjectOfClass:(Class) aClass forKey:(NSString *) key error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 The decoded object, or `nil` if decoding fails.
 
-#### Discussion
+## Discussion
 
 If the coder responds [`true`](../../Swift/true.md) to [`requiresSecureCoding`](./requiressecurecoding.md), then the coder calls [`failWithError(_:)`](./failwitherror%28_%29.md) in either the following cases:
 

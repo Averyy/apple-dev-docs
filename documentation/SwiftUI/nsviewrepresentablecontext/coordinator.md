@@ -16,7 +16,7 @@ An instance you use to communicate your AppKit view’s behavior and state out t
 @preconcurrency let coordinator: View.Coordinator
 ```
 
-#### Discussion
+## Discussion
 
 The coordinator is a custom instance you define. When updating your view, communicate changes to SwiftUI by updating the properties of your coordinator, or by calling relevant methods to make those changes. The implementation of those properties and methods are responsible for updating the appropriate SwiftUI values. For example, you might define a property in your coordinator that binds to a SwiftUI value, as shown in the following code example. Changing the property updates the value of the corresponding SwiftUI variable.
 

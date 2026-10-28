@@ -24,7 +24,7 @@ func JSStringGetMaximumUTF8CStringSize(_ string: JSStringRef!) -> Int
 size_t JSStringGetMaximumUTF8CStringSize(JSStringRef string);
 ```
 
-#### Return Value
+## Return Value
 
 The maximum number of bytes that might be necessary to convert `string` into a null-terminated UTF-8 string. The number of bytes that the conversion actually ends up requiring can be less than this, but never more.
 

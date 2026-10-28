@@ -5,7 +5,7 @@
 
 Learn which properties of a node affect its child nodes.
 
-#### Overview
+## Overview
 
 Changing certain properties on a node can propogate to its decendents:
 

@@ -25,7 +25,7 @@ protocol INCreateNoteIntentHandling : NSObjectProtocol
 @protocol INCreateNoteIntentHandling <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Use the methods of the [`INCreateNoteIntentHandling`](./increatenoteintenthandling.md) protocol to resolve, confirm, and handle requests to create notes. Adopt this protocol in an object of your Intents extension that is capable of forwarding the note content to your app or note management service.
 

@@ -25,7 +25,7 @@ var startDate: Date { get }
 @property (nonatomic, copy, readonly) NSDate * startDate;
 ```
 
-#### Discussion
+## Discussion
 
 The `startDate` defines the starting date on the timeline for which the associated metadata is valid.
 

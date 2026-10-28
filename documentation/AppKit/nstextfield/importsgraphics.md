@@ -19,7 +19,7 @@ var importsGraphics: Bool { get set }
 @property BOOL importsGraphics;
 ```
 
-#### Discussion
+## Discussion
 
 If [`true`](../../Swift/true.md), the text field accepts dragged images; if [`false`](../../Swift/false.md), it doesn’t. You can add images programmatically regardless of this setting.
 

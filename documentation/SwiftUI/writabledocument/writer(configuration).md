@@ -20,7 +20,7 @@ Creates a writer to save this document to disk.
 func writer(configuration: sending Self.WriteConfiguration) -> sending Self.Writer
 ```
 
-#### Discussion
+## Discussion
 
 Return a [`FileWrapperDocumentWriter`](../filewrapperdocumentwriter.md) for cases that don’t require custom writing logic, or a [`DocumentWriter`](../documentwriter.md) for direct URL access or streaming writes.
 

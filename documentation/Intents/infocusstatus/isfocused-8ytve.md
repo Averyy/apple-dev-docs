@@ -20,7 +20,7 @@ The user’s preference for receiving communication notifications.
 final var isFocused: Bool? { get }
 ```
 
-#### Discussion
+## Discussion
 
 When this value is [`true`](../../Swift/true.md), the user doesn’t want notifications to interrupt them. Use this information to display the user’s availability to other people in your communication service.
 

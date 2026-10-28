@@ -25,11 +25,11 @@ func CFStringCreateWithCStringNoCopy(_ alloc: CFAllocator!, _ cStr: UnsafePointe
 extern CFStringRefCFStringCreateWithCStringNoCopy(CFAllocatorRef alloc, const char *cStr, CFStringEncoding encoding, CFAllocatorRef contentsDeallocator);
 ```
 
-#### Return Value
+## Return Value
 
 An immutable string containing `cStr` (after stripping off the `NULL` terminating character), or `NULL` if there was a problem creating the object. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
-#### Discussion
+## Discussion
 
 A C string is a string of 8-bit characters terminated with an 8-bit `NULL`. Unichar and Unichar32 are not considered C strings.
 
@@ -39,7 +39,7 @@ The function includes a `contentsDeallocator` parameter with which to specify an
 
 If at creation time the CFString object decides it can’t use the buffer, and the function specifies a `contentsDeallocator` allocator, it will use this allocator to free the buffer at that time.
 
-##### Special Considerations
+### Special Considerations
 
 If an error occurs during the creation of the string, then `cStr` is not deallocated. In this case, the caller is responsible for freeing the buffer. This allows the caller to continue trying to create a string with the buffer, without having the buffer deallocated.
 

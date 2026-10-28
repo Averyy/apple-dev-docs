@@ -24,7 +24,7 @@ var enabled: GLboolean { get set }
 @property (nonatomic, assign) GLboolean enabled;
 ```
 
-#### Discussion
+## Discussion
 
 If the value of this property is `GL_TRUE`, then fog calculations are performed each time a fragment is computed. If the value of this property is `GL_FALSE`, then fog calculations are skipped. The default value is `GL_TRUE`.
 

@@ -20,7 +20,7 @@ init(query: OCKCarePlanQuery)
 
 Available when `Result` is `any OCKAnyCarePlan` and `Query` is `OCKCarePlanQuery`.
 
-#### Discussion
+## Discussion
 
 The result synchronizes with changes in the store.
 

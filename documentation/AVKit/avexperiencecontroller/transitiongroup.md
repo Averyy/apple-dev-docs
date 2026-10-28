@@ -15,13 +15,13 @@ A group of experience transitions that prepare concurrently and run simultaneous
 struct TransitionGroup<ChildTransitionResult> where ChildTransitionResult : Sendable
 ```
 
-#### Overview
+## Overview
 
 Use [`withTransitionGroup(body:)`](./withtransitiongroup%28body%29.md) to create a transition group. Add transitions using [`addTransition(operation:)`](./transitiongroup/addtransition%28operation%29.md), and they perform together once all have been added and prepared.
 
 Transitions in a group prepare concurrently, then perform their animations simultaneously, creating a single cohesive visual transition. Each transition completes with its own result, allowing you to handle individual successes and failures.
 
-#### Handle Failures
+## Handle Failures
 
 Individual transitions may fail during preparation or execution without affecting other transitions in the group.
 

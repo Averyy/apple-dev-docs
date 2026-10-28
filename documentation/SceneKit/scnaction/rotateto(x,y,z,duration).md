@@ -25,11 +25,11 @@ class func rotateTo(x xAngle: CGFloat, y yAngle: CGFloat, z zAngle: CGFloat, dur
 + (SCNAction *) rotateToX:(CGFloat) xAngle y:(CGFloat) yAngle z:(CGFloat) zAngle duration:(NSTimeInterval) duration;
 ```
 
-#### Return Value
+## Return Value
 
 A new action object.
 
-#### Discussion
+## Discussion
 
 When the action executes, the node’s [`rotation`](../scnnode/rotation.md) property animates to the new angle. Calling this method is equivalent to calling [`rotateTo(x:y:z:duration:usesShortestUnitArc:)`](./rotateto%28x,y,z,duration,usesshortestunitarc%29.md) and passing [`false`](../../Swift/false.md) for the `shortestUnitArc` parameter.
 

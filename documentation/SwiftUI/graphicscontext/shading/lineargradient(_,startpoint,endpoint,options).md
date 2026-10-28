@@ -27,11 +27,11 @@ static func linearGradient(_ gradient: AnyGradient, startPoint: CGPoint, endPoin
 static func linearGradient(_ gradient: Gradient, startPoint: CGPoint, endPoint: CGPoint, options: GraphicsContext.GradientOptions = GradientOptions()) -> GraphicsContext.Shading
 ```
 
-#### Return Value
+## Return Value
 
 A shading instance filled with a linear gradient.
 
-#### Discussion
+## Discussion
 
 The shading instance defines an axis from `startPoint` to `endPoint` in the current user space and maps colors from `gradient` to lines perpendicular to the axis.
 

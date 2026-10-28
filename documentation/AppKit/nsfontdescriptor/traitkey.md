@@ -19,7 +19,7 @@ struct TraitKey
 typedef NSString * NSFontDescriptorTraitKey;
 ```
 
-#### Discussion
+## Discussion
 
 These keys are used with [`traits`](./attributename/traits.md).
 

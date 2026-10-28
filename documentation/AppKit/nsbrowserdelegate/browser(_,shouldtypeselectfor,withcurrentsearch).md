@@ -20,7 +20,7 @@ optional func browser(_ browser: NSBrowser, shouldTypeSelectFor event: NSEvent, 
 - (BOOL) browser:(NSBrowser *) browser shouldTypeSelectForEvent:(NSEvent *) event withCurrentSearchString:(NSString *) searchString;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) to allow the selection; [`false`](../../Swift/false.md) to disallow it.
 

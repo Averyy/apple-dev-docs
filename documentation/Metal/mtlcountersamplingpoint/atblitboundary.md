@@ -28,7 +28,7 @@ MTLCounterSamplingPointAtBlitBoundary
 
 - [Sampling GPU data into counter sample buffers](../sampling-gpu-data-into-counter-sample-buffers.md)
 
-#### Discussion
+## Discussion
 
 When a Metal device instance supports this sampling boundary, you can call the [`sampleCounters(sampleBuffer:sampleIndex:barrier:)`](../mtlblitcommandencoder/samplecounters%28samplebuffer,sampleindex,barrier%29.md) method on an [`MTLBlitCommandEncoder`](../mtlblitcommandencoder.md) to sample the counters between individual blit commands.
 

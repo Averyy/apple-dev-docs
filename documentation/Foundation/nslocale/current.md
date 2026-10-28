@@ -25,7 +25,7 @@ class var current: Locale { get }
 @property (class, copy, readonly) NSLocale * currentLocale;
 ```
 
-#### Discussion
+## Discussion
 
 This value represents the locale currently used by the app, based on the following:
 

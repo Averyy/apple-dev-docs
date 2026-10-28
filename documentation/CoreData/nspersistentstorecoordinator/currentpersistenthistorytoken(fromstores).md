@@ -25,11 +25,11 @@ func currentPersistentHistoryToken(fromStores stores: [Any]?) -> NSPersistentHis
 - (NSPersistentHistoryToken *) currentPersistentHistoryTokenFromStores:(NSArray *) stores;
 ```
 
-#### Return Value
+## Return Value
 
 A persistent history token, or `nil` if the coordinator can’t create one.
 
-#### Discussion
+## Discussion
 
 If you specify `nil` or provide an empty array, the coordinator attempts to create a token for all of its registered stores.
 

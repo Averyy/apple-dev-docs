@@ -25,7 +25,7 @@ func rotated(by rotation: Rotation3D, around pivot: Point3D) -> Rect3D
 static SPRect3D SPRect3DRotateAroundPoint(SPRect3D rect, SPRotation3D rotation, SPPoint3D pivot);
 ```
 
-#### Return Value
+## Return Value
 
 The rectangle that results from applying the specified rotation around a pivot point.
 

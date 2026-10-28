@@ -16,11 +16,11 @@ Get the maximum transfer speed between nodes 'srcNodeID' and 'destNodeID'.
 IOReturn (*GetSpeedBetweenNodes)(IOFireWireLibDeviceRef self, UInt32 checkGeneration, UInt16 srcNodeID, UInt16 destNodeID, IOFWSpeed *outSpeed);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if a valid speed has been returned in 'outSpeed'. Returns kIOFireWireBusReset if 'checkGeneration' does not match the current bus generation number.
 
-#### Discussion
+## Discussion
 
 Availability: IOFireWireDeviceInterface_v4 and newer
 

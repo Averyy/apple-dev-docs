@@ -5,7 +5,7 @@
 
 Load the unique identifiers for your in-app products to retrieve product information from the App Store.
 
-#### Overview
+## Overview
 
 Implementing an Apple In-App Purchase flow consists of three stages. In the first stage, your app retrieves product information. Then your app requests payment when the user selects a product in your app’s store. Finally, your app delivers the product.
 
@@ -17,7 +17,7 @@ There are several strategies for storing a list of product identifiers in your a
 
 > **Note**:  There’s no runtime mechanism to fetch a list of the configured products in App Store Connect for a particular app. You’re responsible for managing your app’s list of products and providing that information to your app.
 
-##### Retrieve product IDs from the app bundle
+### Retrieve product IDs from the app bundle
 
 Embed the product identifiers in your app bundle if:
 
@@ -62,7 +62,7 @@ NSURL *url = [[NSBundle mainBundle] URLForResource:@"product_ids"
 NSArray *productIdentifiers = [NSArray arrayWithContentsOfURL:url];
 ```
 
-##### Retrieve product IDs from your server
+### Retrieve product IDs from your server
 
 Store the product identifiers on your server if:
 

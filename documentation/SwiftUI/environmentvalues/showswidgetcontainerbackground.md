@@ -20,11 +20,11 @@ An environment variable that indicates whether the background of a widget appear
 var showsWidgetContainerBackground: Bool { get }
 ```
 
-#### Return Value
+## Return Value
 
 `true` if, by default, the background appears in this context; `false` otherwise.
 
-#### Discussion
+## Discussion
 
 In iOS 16 and earlier, this environment variable is always `true` for system widgets and `false` for accessory widgets. In macOS 13 and earlier, and in watchOS 9 and earlier, it always evaluates to `true`.
 

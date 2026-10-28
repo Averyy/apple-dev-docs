@@ -25,7 +25,7 @@ func setShouldAntialias(_ shouldAntialias: Bool)
 extern void CGContextSetShouldAntialias(CGContextRef c, bool shouldAntialias);
 ```
 
-#### Discussion
+## Discussion
 
 Antialiasing is a graphics state parameter.
 

@@ -25,11 +25,11 @@ func CTFontCreateCopyWithAttributes(_ font: CTFont, _ size: CGFloat, _ matrix: U
 extern CTFontRefCTFontCreateCopyWithAttributes(CTFontRef font, CGFloat size, const CGAffineTransform *matrix, CTFontDescriptorRef attributes);
 ```
 
-#### Return Value
+## Return Value
 
 A new font reference converted from the original with the specified attributes.
 
-#### Discussion
+## Discussion
 
 This function provides a mechanism to change attributes quickly on a given font reference in response to user actions. For instance, the size can be changed in response to a user manipulating a size slider.
 

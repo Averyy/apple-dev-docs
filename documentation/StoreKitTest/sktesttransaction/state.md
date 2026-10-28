@@ -25,7 +25,7 @@ var state: SKPaymentTransactionState { get }
 @property (nonatomic, readonly) SKPaymentTransactionState state;
 ```
 
-#### Discussion
+## Discussion
 
 The transaction states in the test environment are the same states that StoreKit uses in production.
 

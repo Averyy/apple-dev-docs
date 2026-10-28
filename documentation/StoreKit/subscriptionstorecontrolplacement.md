@@ -21,7 +21,7 @@ A type that specifies the placement of a subscription control in a subscription 
 protocol SubscriptionStoreControlPlacement : RawRepresentable where Self.RawValue == SubscriptionStoreControlPlacementKey
 ```
 
-#### Overview
+## Overview
 
 A placement indicates a position for placing a control in a view. Specifically, a subscription store control placement indicates a postion for placing a subscription control in a subscription store view. You typically don’t need to implement your own control placement; instead, use the conforming placement types. To see the available control placements for a type, such as a [`PagedPickerSubscriptionStoreControlStyle`](./pagedpickersubscriptionstorecontrolstyle.md), check the `Placement` associated type on a control style.
 

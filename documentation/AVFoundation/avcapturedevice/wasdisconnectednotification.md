@@ -24,7 +24,7 @@ class let wasDisconnectedNotification: NSNotification.Name
 extern NSNotificationName const AVCaptureDeviceWasDisconnectedNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification’s [`object`](../../Foundation/notification/object.md) property contains the capture device that disconnected.
 

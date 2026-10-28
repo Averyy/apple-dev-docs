@@ -17,7 +17,7 @@ Optimized implementation of `NN.RoPE` with array offset for batched inference.
 func RoPE(_ array: MLXArray, dimensions: Int, traditional: Bool, base: Float?, scale: Float, offset: MLXArray, freqs: MLXArray? = nil, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: `MLXNN.RoPE` uses this implementation internally.
 

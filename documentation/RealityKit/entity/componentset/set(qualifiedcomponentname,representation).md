@@ -21,7 +21,7 @@ Adds component data to an entity that is written to a Reality file but has no ot
 @preconcurrency func set(qualifiedComponentName: String, representation: some Encodable) throws
 ```
 
-#### Discussion
+## Discussion
 
 Use this function from an authoring tool to serialize a component whose Swift type isn’t available on the authoring platform. `representation` is encoded into any Reality file this entity is written to, and is decoded back into a [`Component`](../../component.md) of the type named by `qualifiedComponentName` when that file is loaded, so it must encode to the layout that component expects. For runtime use on a platform where the component’s Swift type is available, set the component directly with `set(_:)` instead.
 

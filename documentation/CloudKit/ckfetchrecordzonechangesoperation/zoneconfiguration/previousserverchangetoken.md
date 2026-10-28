@@ -26,7 +26,7 @@ var previousServerChangeToken: CKServerChangeToken? { get set }
 @property (copy, nullable) CKServerChangeToken * previousServerChangeToken;
 ```
 
-#### Discussion
+## Discussion
 
 Each fetch request returns a unique token in addition to any changes. CloudKit passes the token to your [`recordZoneFetchResultBlock`](../recordzonefetchresultblock.md) handler. During a subsequent fetch request, providing the previous token causes the server to return only the changes since the previous fetch request. Tokens are opaque values that you can write to disk safely and reuse later.
 

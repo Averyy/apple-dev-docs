@@ -15,7 +15,7 @@ The decrement button for the stepper accessibility element.
 @property (strong, nullable) id accessibilityDecrementButton;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property on a stepper.
 

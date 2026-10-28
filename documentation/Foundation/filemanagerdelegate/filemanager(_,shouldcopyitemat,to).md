@@ -25,11 +25,11 @@ optional func fileManager(_ fileManager: FileManager, shouldCopyItemAt srcURL: U
 - (BOOL) fileManager:(NSFileManager *) fileManager shouldCopyItemAtURL:(NSURL *) srcURL toURL:(NSURL *) dstURL;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the item should be copied or [`false`](../../Swift/false.md) if the file manager should stop copying items associated with the current operation. If you do not implement this method, the file manager assumes a response of [`true`](../../Swift/true.md).
 
-#### Discussion
+## Discussion
 
 This method is called once for each item that needs to be copied. Thus, for a directory, this method is called once for the directory and once for each item in the directory.
 

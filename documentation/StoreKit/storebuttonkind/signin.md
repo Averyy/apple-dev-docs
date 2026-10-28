@@ -21,7 +21,7 @@ A type of button that people use to sign in.
 static var signIn: StoreButtonKind { get }
 ```
 
-#### Discussion
+## Discussion
 
 This button type is available for [`SubscriptionStoreView`](../subscriptionstoreview.md) only.
 

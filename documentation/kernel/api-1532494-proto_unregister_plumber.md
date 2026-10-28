@@ -13,7 +13,7 @@
 void proto_unregister_plumber(protocol_family_t proto_fam, ifnet_family_t if_fam);
 ```
 
-#### Discussion
+## Discussion
 
 Unregisters a previously registered plumbing function.
 

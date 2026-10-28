@@ -22,7 +22,7 @@ nonisolated
 func accessibilityFocused<Value>(_ binding: AccessibilityFocusState<Value>.Binding, equals value: Value) -> some View where Value : Hashable
 ```
 
-#### Return Value
+## Return Value
 
 The modified view.
 

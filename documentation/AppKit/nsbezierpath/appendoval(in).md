@@ -19,7 +19,7 @@ func appendOval(in rect: NSRect)
 - (void) appendBezierPathWithOvalInRect:(NSRect) rect;
 ```
 
-#### Discussion
+## Discussion
 
 Before adding the oval, this method moves the current point, which implicitly closes the current subpath. If the `aRect` parameter specifies a square, the inscribed path is a circle. The path is constructed by starting in the lower-right quadrant of the rectangle and adding arc segments counterclockwise to complete the oval.
 

@@ -25,7 +25,7 @@ var valueListAttributes: [String] { get set }
 @property (copy) NSArray<NSString *> * valueListAttributes;
 ```
 
-#### Discussion
+## Discussion
 
 The query collects the values of these attributes into uniqued lists that can be used to summarize the results of the query. If `attributes` is `nil`, the query generates no value lists. Note that value list collection increases CPU usage and significantly increases the memory usage of an `NSMetadataQuery` object.
 

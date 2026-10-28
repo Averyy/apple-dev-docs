@@ -21,7 +21,7 @@ var isMicrophoneEnabled: Bool { get }
 @property (nonatomic, readonly, getter=isMicrophoneEnabled) BOOL microphoneEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 Indicates whether the microphone is enabled via the picker.
 

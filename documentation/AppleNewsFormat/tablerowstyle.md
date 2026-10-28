@@ -15,7 +15,7 @@ The object for applying styles to rows in a table.
 object TableRowStyle
 ```
 
-#### Discussion
+## Discussion
 
 You can apply styles that affect the look of the table rows, including the row background color, the color of the divider lines between rows, and the height of a row. For example, you could add a blue background color and apply a medium-gray divider to each row in your table.
 
@@ -23,7 +23,7 @@ You can also set up conditional row styles — styles applied only to rows that 
 
 You can use this object in [`TableStyle`](./tablestyle.md).
 
-##### Example
+### Example
 
 ```json
 {

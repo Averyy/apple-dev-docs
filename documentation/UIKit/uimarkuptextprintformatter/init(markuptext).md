@@ -22,7 +22,7 @@ init(markupText: String)
 - (instancetype) initWithMarkupText:(NSString *) markupText;
 ```
 
-#### Return Value
+## Return Value
 
 An instance of `UIMarkupTextPrintFormatter` or `nil` if the object could not be created.
 

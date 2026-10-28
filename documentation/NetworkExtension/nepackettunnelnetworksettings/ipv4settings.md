@@ -29,7 +29,7 @@ var ipv4Settings: NEIPv4Settings? { get set }
 
 - [Routing your VPN network traffic](../routing-your-vpn-network-traffic.md)
 
-#### Discussion
+## Discussion
 
 This property contains the IPv4 routes specifying what IPv4 traffic to route to the tunnel, as well as the IPv4 address and netmask to assign to the TUN interface.
 

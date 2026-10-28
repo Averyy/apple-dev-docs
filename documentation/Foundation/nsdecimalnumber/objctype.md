@@ -25,7 +25,7 @@ var objCType: UnsafePointer<CChar> { get }
 @property (readonly) const char * objCType;
 ```
 
-#### Discussion
+## Discussion
 
 For a decimal number object, this property always contains “d” (for double).
 

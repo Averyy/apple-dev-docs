@@ -19,7 +19,7 @@ var usbControllers: [VZUSBControllerConfiguration] { get set }
 @property (copy, readwrite) NSArray<VZUSBControllerConfiguration *> * usbControllers;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to attach USB controllers to the VM configuration, as in the following example:
 

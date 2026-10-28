@@ -18,11 +18,11 @@ A set of regulatory features that are required for the person.
 var requiredRegulatoryFeatures: Set<AgeRangeService.RegulatoryFeature> { get async throws }
 ```
 
-#### Return Value
+## Return Value
 
 A set of [`AgeRangeService.RegulatoryFeature`](./regulatoryfeature.md) values indicating which regulatory requirements apply to the person.
 
-#### Discussion
+## Discussion
 
 Use this property to determine which regulatory features apply to a person using your app based on their region and account settings. This helps you comply with regional requirements when distributing apps on the App Store. For more information, refer to [Next steps for apps distributed in Texas](https://developer.apple.com/news/?id=2ezb6jhj).
 

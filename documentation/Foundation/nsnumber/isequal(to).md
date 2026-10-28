@@ -25,11 +25,11 @@ func isEqual(to number: NSNumber) -> Bool
 - (BOOL) isEqualToNumber:(NSNumber *) number;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the number object’s value and `number` are equal, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Two `NSNumber` objects are considered equal if they have the same id values or if they have equivalent values (as determined by the [`compare(_:)`](./compare%28_%29.md) method).
 

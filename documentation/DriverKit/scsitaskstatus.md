@@ -18,7 +18,7 @@ Attributes for task status.
 typedef enum SCSITaskStatus : unsigned int { ... } SCSITaskStatus;
 ```
 
-#### Overview
+## Overview
 
 The Task Status represents the completion status of the task which provides the SCSI Application Layer with additional information about how to procede in handling a completed task.
 

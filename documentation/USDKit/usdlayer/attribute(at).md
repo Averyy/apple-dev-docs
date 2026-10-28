@@ -20,7 +20,7 @@ Returns the attribute spec at the given path.
 func attribute(at path: USDLayer.Path) -> USDPrim.Attribute.Spec?
 ```
 
-#### Return Value
+## Return Value
 
 The attribute spec, or `nil` if none is authored at `path`.
 

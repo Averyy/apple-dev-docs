@@ -24,7 +24,7 @@ func depthBlurEffectFilter(forImageData data: Data, options: [AnyHashable : Any]
 - (CIFilter *) depthBlurEffectFilterForImageData:(NSData *) data options:(NSDictionary *) options;
 ```
 
-#### Discussion
+## Discussion
 
 The receiver context is used to render the image in order to get the facial landmarks used to create the effect.
 

@@ -19,7 +19,7 @@ A state that indicates the person opts in to Automatic Sign-In.
 VSAutoSignInAuthorizationGranted
 ```
 
-#### Discussion
+## Discussion
 
 This authorization state indicates that a person approves the prompt to opt in to Automatic Sign-In.
 

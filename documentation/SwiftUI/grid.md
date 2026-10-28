@@ -22,7 +22,7 @@ A container view that arranges other views in a two dimensional layout.
 nonisolated struct Grid<Content> where Content : View
 ```
 
-#### Overview
+## Overview
 
 Create a two dimensional layout by initializing a `Grid` with a collection of [`GridRow`](./gridrow.md) structures. The first view in each grid row appears in the grid’s first column, the second view in the second column, and so on. The following example creates a grid with two rows and two columns:
 
@@ -45,7 +45,7 @@ A grid and its rows behave something like a collection of [`HStack`](./hstack.md
 
 > **Note**: If you need a grid that conforms to the [`Layout`](./layout.md) protocol, like when you want to create a conditional layout using [`AnyLayout`](./anylayout.md), use [`GridLayout`](./gridlayout.md) instead.
 
-##### Multicolumn cells
+### Multicolumn cells
 
 If you provide a view rather than a [`GridRow`](./gridrow.md) as an element in the grid’s content, the grid uses the view to create a row that spans all of the grid’s columns. For example, you can add a [`Divider`](./divider.md) between the rows of the previous example:
 
@@ -80,7 +80,7 @@ This restores the grid to the width that the text and images require:
 
 To make a cell span a specific number of columns rather than the whole grid, use the [`gridCellColumns(_:)`](./view/gridcellcolumns%28_%29.md) modifier on a view that’s contained inside a [`GridRow`](./gridrow.md).
 
-##### Column count
+### Column count
 
 The grid’s column count grows to handle the row with the largest number of columns. If you create rows with different numbers of columns, the grid adds empty cells to the trailing edge of rows that have fewer columns. The example below creates three rows with different column counts:
 
@@ -109,7 +109,7 @@ The grid sets the width of all the cells in a column to match the needs of colum
 
 Similarly, the tallest cell in a row sets the height of the entire row. The cells in the first column of the grid above need only the height required for each string, but the [`Color`](./color.md) cells expand to equally share the total height available to the grid. As a result, the color cells determine the row heights.
 
-##### Cell spacing and alignment
+### Cell spacing and alignment
 
 You can control the spacing between cells in both the horizontal and vertical dimensions and set a default alignment for the content in all the grid cells when you initialize the grid using the [`init(alignment:horizontalSpacing:verticalSpacing:content:)`](./grid/init%28alignment,horizontalspacing,verticalspacing,content%29.md) initializer. Consider a modified version of the previous example:
 
@@ -125,7 +125,7 @@ This configuration causes all of the cells to use [`bottom`](./alignment/bottom.
 
 You can override the alignment of specific cells or groups of cells. For example, you can change the horizontal alignment of the cells in a column by adding the [`gridColumnAlignment(_:)`](./view/gridcolumnalignment%28_%29.md) modifier, or the vertical alignment of the cells in a row by configuring the row’s [`init(alignment:content:)`](./gridrow/init%28alignment,content%29.md) initializer. You can also align a single cell with the [`gridCellAnchor(_:)`](./view/gridcellanchor%28_%29.md) modifier.
 
-##### Performance considerations
+### Performance considerations
 
 A grid can size its rows and columns correctly because it renders all of its child views immediately. If your app exhibits poor performance when it first displays a large grid that appears inside a [`ScrollView`](./scrollview.md), consider switching to a [`LazyVGrid`](./lazyvgrid.md) or [`LazyHGrid`](./lazyhgrid.md) instead.
 

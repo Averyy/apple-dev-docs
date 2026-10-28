@@ -20,11 +20,11 @@ optional func tableView(_ tableView: NSTableView, isGroupRow row: Int) -> Bool
 - (BOOL) tableView:(NSTableView *) tableView isGroupRow:(NSInteger) row;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the specified row should have the group row style drawn, [`false`](../../Swift/false.md) otherwise.
 
-#### Discussion
+## Discussion
 
 If the cell in `row` is an [`NSTextFieldCell`](../nstextfieldcell.md) object and contains only a string, the group row style attributes are automatically applied to the cell.
 

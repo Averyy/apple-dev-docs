@@ -19,7 +19,7 @@ The runtime replacement objects for any proxy objects in the nib file.
 extern NSString * const UINibProxiedObjectsKey;
 ```
 
-#### Discussion
+## Discussion
 
 In iOS 2, the value for this key is a dictionary that contains the runtime replacement objects for any proxy objects used in the nib file. In this dictionary, the keys are the names associated with the proxy objects and the values are the actual objects from your code that should be used in their place.
 

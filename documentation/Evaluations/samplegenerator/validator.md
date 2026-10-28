@@ -21,7 +21,7 @@ An optional closure that decides whether a generated sample is valid.
 var validator: (nonisolated(nonsending) @Sendable (SampleType) async throws -> Bool)? { get }
 ```
 
-#### Discussion
+## Discussion
 
 When provided, the generator collects rejected samples in [`invalidSamples`](./invalidsamples.md).
 

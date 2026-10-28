@@ -19,7 +19,7 @@ An unsigned integer value that, if set, causes the layer to initialize the embed
 @property (nonatomic, readonly) NSNumber * paddingIndex;
 ```
 
-#### Discussion
+## Discussion
 
 If set, the layer won’t update the embedding vector at `paddingIndex` in the gradient pass.
 

@@ -20,7 +20,7 @@ A SwiftUI view that displays the phrase someone uses to invoke an App Shortcut.
 @preconcurrency struct SiriTipView
 ```
 
-#### Overview
+## Overview
 
 Use a [`SiriTipView`](./siritipview.md) to display the spoken phrase for the intent you specify. Include an instance of your intent when you create the view, and bind the view to a Boolean to handle the view’s presentation. The following example shows how to configure a button for a reorder intent and bind it to an `isVisible` variable.
 

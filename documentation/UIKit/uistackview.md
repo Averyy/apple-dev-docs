@@ -28,7 +28,7 @@ class UIStackView
 
 - [About app development with UIKit](./about-app-development-with-uikit.md)
 
-#### Overview
+## Overview
 
 Stack views let you leverage the power of Auto Layout, creating user interfaces that can dynamically adapt to the device’s orientation, screen size, and any changes in the available space. The stack view manages the layout of all the views in its [`arrangedSubviews`](./uistackview/arrangedsubviews.md) property. These views are arranged along the stack view’s axis, based on their order in the [`arrangedSubviews`](./uistackview/arrangedsubviews.md) array. The exact layout varies depending on the stack view’s [`axis`](./uistackview/axis.md), [`distribution`](./uistackview/distribution-swift.property.md), [`alignment`](./uistackview/alignment-swift.property.md), [`spacing`](./uistackview/spacing.md), and other properties.
 
@@ -38,7 +38,7 @@ To use a stack view, open the Storyboard you wish to edit. Drag either a Horizon
 
 > **Note**:  You’re responsible for defining the position and (optionally) the size of the stack view. The stack view then manages the layout and size of its content.
 
-##### Stack view and Auto Layout
+### Stack view and Auto Layout
 
 The stack view uses Auto Layout to position and size its arranged views. The stack view aligns the first and last arranged view with its edges along the stack’s axis. In a horizontal stack, this means the first arranged view’s leading edge is pinned to the stack’s leading edge, and the last arranged view’s trailing edge is pinned to the stack’s trailing edge. In vertical stacks, the top and bottom edges are pinned to the stack’s top and bottom edges, respectively. If you set the stack view’s [`isLayoutMarginsRelativeArrangement`](./uistackview/islayoutmarginsrelativearrangement.md) property to [`true`](../Swift/true.md), the stack view pins its content to the relevant margin instead of its edge.
 
@@ -46,7 +46,7 @@ For all distributions except the [`UIStackView.Distribution.fillEqually`](./uist
 
 For all alignments except the [`UIStackView.Alignment.fill`](./uistackview/alignment-swift.enum/fill.md) alignment, the stack view uses each arranged view’s [`intrinsicContentSize`](./uiview/intrinsiccontentsize.md) property when calculating its size perpendicular to the stack’s axis. [`UIStackView.Alignment.fill`](./uistackview/alignment-swift.enum/fill.md) resizes all the arranged views so that they fill the stack view perpendicularly to its axis. If possible, the stack view stretches all the arranged views to match the view with the largest intrinsic size perpendicular to the stack’s axis.
 
-###### Position and size the stack view
+#### Position and size the stack view
 
 Although a stack view allows you to lay out its contents without using Auto Layout directly, you still need to use Auto Layout to position the stack view itself. In general, this means pinning at least two adjacent edges of the stack view to define its position. Without additional constraints, the system calculates the size of the stack view based on its contents.
 
@@ -63,7 +63,7 @@ You can also position a stack view based on its first or last baseline, instead 
 
 > **Note**:  Baseline alignment only works on views whose height matches their intrinsic content size’s height. If the view is stretched or compressed, the baseline appears in the wrong location.
 
-###### Define common stack view layouts
+#### Define common stack view layouts
 
 Common approaches for laying out content using stack views:
 
@@ -91,7 +91,7 @@ The following image shows a vertical stack view with all four edges pinned to it
 
 ![A vertical stack view with all four edges pinned to its superview. The stack view contains an image and uses the center alignment and fill distribution.](https://developer.apple.com/tutorials/images/com.apple.uikit/media-2934506@2x.png)
 
-##### Manage the stack view’s appearance
+### Manage the stack view’s appearance
 
 A stack view manages the position and size of its arranged views. There are a number of properties that define how the stack view lays out its content.
 
@@ -110,7 +110,7 @@ You can also fine-tune an arranged view’s appearance by adding additional cons
 
 > **Note**:  Be careful to avoid introducing conflicts when adding constraints to views inside a stack view. As a general rule, if a view’s size defaults back to its intrinsic content size for a given dimension, you can safely add a constraint for that dimension.
 
-##### Maintain consistency between the arranged views and subviews
+### Maintain consistency between the arranged views and subviews
 
 The stack view ensures that its [`arrangedSubviews`](./uistackview/arrangedsubviews.md) property is always a subset of its [`subviews`](./uiview/subviews.md) property. Specifically, the stack view enforces the following rules:
 
@@ -123,7 +123,7 @@ Although the [`arrangedSubviews`](./uistackview/arrangedsubviews.md) array alway
 - The order of the [`arrangedSubviews`](./uistackview/arrangedsubviews.md) array defines the order in which views appear in the stack. For horizontal stacks, the views are laid out in reading order, with the lower index views appearing before the higher index views. In English, for example, the views are laid out in order from left to right. For vertical stacks, the views are laid out from top to bottom, with the lower index views above the higher index views.
 - The order of the subviews array defines the Z-order of the subviews. If the views overlap, subviews with a lower index appear behind subviews with a higher index.
 
-##### Change the stack view’s content dynamically
+### Change the stack view’s content dynamically
 
 The stack view automatically updates its layout whenever views are added, removed, or inserted into the [`arrangedSubviews`](./uistackview/arrangedsubviews.md) array, or whenever one of the arranged subviews’s [`isHidden`](./uiview/ishidden.md) property changes.
 

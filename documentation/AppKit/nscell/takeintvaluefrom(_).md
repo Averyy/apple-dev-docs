@@ -19,7 +19,7 @@ func takeIntValueFrom(_ sender: Any?)
 - (void) takeIntValueFrom:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 Use the [`takeIntegerValueFrom(_:)`](./takeintegervaluefrom%28_%29.md) method instead.
 

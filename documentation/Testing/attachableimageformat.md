@@ -16,7 +16,7 @@ A type describing image formats supported by the system that can be used when at
 struct AttachableImageFormat
 ```
 
-#### Overview
+## Overview
 
 When you attach an image to a test, you can pass an instance of this type to [`record(_:named:as:sourceLocation:)`](./attachment/record%28_,named,as,sourcelocation%29.md) so that the testing library knows the image format you’d like to use. If you don’t pass an instance of this type, the testing library infers which format to use based on the attachment’s preferred name.
 

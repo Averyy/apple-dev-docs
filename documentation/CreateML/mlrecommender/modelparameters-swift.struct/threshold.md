@@ -15,7 +15,7 @@ The item confidence value cutoff, below which the recommender omits those items 
 var threshold: Double
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `0.001`.
 

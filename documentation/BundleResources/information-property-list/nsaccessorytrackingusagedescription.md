@@ -14,7 +14,7 @@ A message that tells a person why the app is requesting access to track accessor
 - **Name**: `NSAccessoryTrackingUsageDescription` (Privacy - Accessory Tracking Usage Description)
 - **Type**: string
 
-#### Discussion
+## Discussion
 
 Use this key to indicate that your app requires access to accessory-tracking data. The first time your app tries to access accessory-tracking data, the system prompts for permission. Provide a string for the prompt that explains why your app needs access.
 

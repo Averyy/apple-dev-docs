@@ -18,7 +18,7 @@ The App Store ID of the app displaying the ad is invalid.
 static var invalidSourceAppId: SKANError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 Check that the value you provide for [`SKStoreProductParameterAdNetworkSourceAppStoreIdentifier`](../skstoreproductparameteradnetworksourceappstoreidentifier.md) or [`sourceAppStoreItemIdentifier`](../skadimpression/sourceappstoreitemidentifier.md) is correct and matches the App Store ID of the app that’s displaying the ad.
 

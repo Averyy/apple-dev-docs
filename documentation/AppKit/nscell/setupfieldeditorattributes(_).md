@@ -19,11 +19,11 @@ func setUpFieldEditorAttributes(_ textObj: NSText) -> NSText
 - (NSText *) setUpFieldEditorAttributes:(NSText *) textObj;
 ```
 
-#### Return Value
+## Return Value
 
 The configured field editor.
 
-#### Discussion
+## Discussion
 
 If the receiver is disabled, this method sets the text color to dark gray; otherwise the method sets it to the default color. If the receiver has a bezeled border, this method sets the background to the default color for text backgrounds; otherwise, the method sets it to the color of the receiver’s `NSControl` object.
 

@@ -23,7 +23,7 @@ var isKeyWindow: Bool { get }
 @property (nonatomic, readonly, getter=isKeyWindow) BOOL keyWindow;
 ```
 
-#### Discussion
+## Discussion
 
 In iOS 15 and later, the value of this property is [`true`](../../Swift/true.md) when the window is the key window of its scene. In iOS 14 and earlier, the value of this property is [`true`](../../Swift/true.md) when the window is the key window in the app.
 

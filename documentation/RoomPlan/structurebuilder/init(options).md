@@ -17,7 +17,7 @@ Creates a structure builder using the specified options.
 init(options: StructureBuilder.ConfigurationOptions)
 ```
 
-#### Discussion
+## Discussion
 
 Pass the `StructureBuilder/ConfigurationOptions/beautifyObjects` option to enhance the look of the output for the captured structure, or  (`[]`) to omit capture post-processing.
 

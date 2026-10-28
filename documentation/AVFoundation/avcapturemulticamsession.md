@@ -23,7 +23,7 @@ class AVCaptureMultiCamSession
 @interface AVCaptureMultiCamSession : AVCaptureSession
 ```
 
-#### Overview
+## Overview
 
 The session preset for a multicamera session is always [`inputPriority`](./avcapturesession/preset/inputpriority.md). Set each capture device’s [`activeFormat`](./avcapturedevice/activeformat.md) value to the desired quality of service.
 

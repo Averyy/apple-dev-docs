@@ -25,11 +25,11 @@ func descriptor(for path: FilePath, searchingInAssetPackWithID assetPackID: Stri
 
 - [Downloading Apple-hosted asset packs](../downloading-apple-hosted-asset-packs.md)
 
-#### Return Value
+## Return Value
 
 A descriptor for the opened file.
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**: It’s your responsibility to close the file descriptor when you’re done using it.
 

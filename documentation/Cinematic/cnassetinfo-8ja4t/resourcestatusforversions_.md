@@ -19,7 +19,7 @@ Check status for a set of resources.
 + (CNResourceStatus) resourceStatusForVersions:(NSSet<NSNumber *> *) resourceVersions;
 ```
 
-#### Return Value
+## Return Value
 
 The first encountered non-ready status, or CNResourceStatusReady if all are ready.
 

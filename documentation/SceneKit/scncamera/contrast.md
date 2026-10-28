@@ -25,7 +25,7 @@ var contrast: CGFloat { get set }
 @property (nonatomic) CGFloat contrast;
 ```
 
-#### Discussion
+## Discussion
 
 A value of 0.0 (the default) leaves the rendered scene unchanged. Positive values increase contrast between bright and dark areas, and negative values reduce contrast, shifting the rendered scene towards a uniform gray.
 

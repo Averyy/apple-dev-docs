@@ -25,7 +25,7 @@ class MKGeocodingRequest
 @interface MKGeocodingRequest : NSObject
 ```
 
-#### Discussion
+## Discussion
 
 Use this class to look up the coordinate for an address string you provide, for example if you want to display the location in a map. This example shows how to use a [`Task`](../Swift/task.md) modifier on a SwiftUI view to geocode an array of street addresses to the corresponding coordinates that MapKit returns in an array of [`MKMapItem`](./mkmapitem.md) objects.
 

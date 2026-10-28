@@ -24,7 +24,7 @@ string OrgDeviceActivityType
 - `CANCEL_MDM_MIGRATION`
 - `RELEASE_DEVICES`
 
-#### Discussion
+## Discussion
 
 - Possible Values
 

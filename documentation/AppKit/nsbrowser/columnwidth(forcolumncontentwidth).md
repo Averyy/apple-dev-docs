@@ -19,11 +19,11 @@ func columnWidth(forColumnContentWidth columnContentWidth: CGFloat) -> CGFloat
 - (CGFloat) columnWidthForColumnContentWidth:(CGFloat) columnContentWidth;
 ```
 
-#### Return Value
+## Return Value
 
 The width of the column (the width of the entire scrolling text view).
 
-#### Discussion
+## Discussion
 
 For example, to guarantee that 16 pixels of your browser cell are always visible, call:
 

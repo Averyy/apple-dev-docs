@@ -25,7 +25,7 @@ var previewImageHandler: NSItemProvider.LoadHandler? { get set }
 @property (atomic, copy, nullable) NSItemProviderLoadHandler previewImageHandler;
 ```
 
-#### Discussion
+## Discussion
 
 In your image handler block, return an [`NSURL`](../nsurl.md) object that specifies a file, or return an [`NSData`](../nsdata.md) object.
 

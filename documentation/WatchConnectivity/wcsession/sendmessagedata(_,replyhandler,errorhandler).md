@@ -23,7 +23,7 @@ func sendMessageData(_ data: Data, replyHandler: ((Data) -> Void)?, errorHandler
 - (void) sendMessageData:(NSData *) data replyHandler:(void (^)(NSData *replyMessageData)) replyHandler errorHandler:(void (^)(NSError *error)) errorHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Use this message to send a data object to the counterpart as soon as possible. Messages are queued serially and delivered in the order in which you sent them. Delivery of the messages happens asynchronously, so this method returns immediately.
 

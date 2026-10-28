@@ -21,7 +21,7 @@ Execute the work item without assigning a quality-of-service class.
 DISPATCH_BLOCK_NO_QOS_CLASS
 ```
 
-#### Discussion
+## Discussion
 
 Indicates that a dispatch block should be not be assigned a QoS class. If invoked directly, the block object will be executed with the QoS class of the calling thread. If the block object is submitted to a queue, this replaces the default behavior of associating the submitted block instance with the QoS class current at the time of submission. This flag is ignored if a specific QoS class is assigned with the [`dispatch_block_create_with_qos_class`](../dispatch_block_create_with_qos_class.md) function.
 

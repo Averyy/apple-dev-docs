@@ -19,7 +19,7 @@ func activateContextHelpMode(_ sender: Any?)
 - (void) activateContextHelpMode:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 In this mode, the cursor becomes a question mark, and help appears for any user interface item the user clicks.
 

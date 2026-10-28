@@ -24,7 +24,7 @@ static let leanBodyMass: HKQuantityTypeIdentifier
 extern HKQuantityTypeIdentifier const HKQuantityTypeIdentifierLeanBodyMass;
 ```
 
-#### Discussion
+## Discussion
 
 These samples use mass units (described in [`HKUnit`](../hkunit.md)) and measure discrete values (described in [`HKQuantityAggregationStyle`](../hkquantityaggregationstyle.md)).
 

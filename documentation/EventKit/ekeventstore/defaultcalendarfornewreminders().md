@@ -24,7 +24,7 @@ func defaultCalendarForNewReminders() -> EKCalendar?
 - (EKCalendar *) defaultCalendarForNewReminders;
 ```
 
-#### Return Value
+## Return Value
 
 The calendar that reminders are added to by default.
 

@@ -25,7 +25,7 @@ var leading: Int32 { get }
 extern int CGFontGetLeading(CGFontRef font);
 ```
 
-#### Discussion
+## Discussion
 
 The leading is the spacing between consecutive lines of text in a font. The value is specified in glyph space units.
 

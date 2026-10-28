@@ -25,7 +25,7 @@ class func identifier(forKey key: Any, keySpace: AVMetadataKeySpace) -> AVMetada
 + (AVMetadataIdentifier) identifierForKey:(id) key keySpace:(AVMetadataKeySpace) keySpace;
 ```
 
-#### Return Value
+## Return Value
 
 A metadata identifier, or `nil` if no equivalent identifier exists.
 

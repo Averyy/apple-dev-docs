@@ -27,7 +27,7 @@ optional func setReaderModeActive(_ active: Bool, for context: WKWebExtensionCon
 - (void) setReaderModeActive:(BOOL) active forWebExtensionContext:(WKWebExtensionContext *) context completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 No action is performed if not implemented.
 

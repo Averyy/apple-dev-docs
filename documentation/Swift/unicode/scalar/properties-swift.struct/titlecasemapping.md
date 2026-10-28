@@ -21,7 +21,7 @@ The titlecase mapping of the scalar.
 var titlecaseMapping: String { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property is a `String`, not a `Unicode.Scalar` or `Character`, because some mappings may transform a scalar into multiple scalars or graphemes. For example, the ligature “ﬁ” (U+FB01 LATIN SMALL LIGATURE FI) becomes “Fi” (U+0046 LATIN CAPITAL LETTER F, U+0069 LATIN SMALL LETTER I) when converted to titlecase.
 

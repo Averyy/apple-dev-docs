@@ -24,7 +24,7 @@ var channelCount: Int { get set }
 @property (nonatomic, assign) NSInteger channelCount;
 ```
 
-#### Discussion
+## Discussion
 
 The framework supports channel counts of `1` (mono) or `2` (stereo). If you don’t specify a channel count, or specify an unsupported value, the system defaults to stereo audio capture.
 

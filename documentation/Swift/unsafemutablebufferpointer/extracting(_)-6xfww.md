@@ -21,11 +21,11 @@ Extracts and returns a copy of the entire buffer.
 func extracting(_ bounds: UnboundedRange) -> UnsafeMutableBufferPointer<Element>
 ```
 
-#### Return Value
+## Return Value
 
 The same buffer as `self`.
 
-#### Discussion
+## Discussion
 
 When `Element` is copyable, the `extracting` operation is equivalent to slicing the buffer then rebasing the resulting buffer slice:
 

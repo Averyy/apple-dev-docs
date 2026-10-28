@@ -23,7 +23,7 @@ var connections: [AVCaptureConnection] { get }
 @property (nonatomic, readonly) NSArray<AVCaptureConnection *> * connections;
 ```
 
-#### Discussion
+## Discussion
 
 Each connection object in the array describes the mapping between the output and the capture input ports.
 

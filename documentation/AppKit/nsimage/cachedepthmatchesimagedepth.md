@@ -17,7 +17,7 @@ Returns a Boolean value that indicates whether an image’s offscreen window cac
 - (BOOL) cacheDepthMatchesImageDepth;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the offscreen window caches use the same bit depth as the image data; otherwise, [`false`](../../Swift/false.md). The default value is [`false`](../../Swift/false.md).
 

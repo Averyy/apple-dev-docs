@@ -25,11 +25,11 @@ func scene(options: [SCNSceneSource.LoadingOption : Any]? = nil, statusHandler: 
 - (SCNScene *) sceneWithOptions:(NSDictionary<NSString *,id> *) options statusHandler:(SCNSceneSourceStatusHandler) statusHandler;
 ```
 
-#### Return Value
+## Return Value
 
 An [`SCNScene`](../scnscene.md) object containing the entire scene graph from the scene source, or `nil` if loading was not successful.
 
-#### Discussion
+## Discussion
 
 Use this method if you need to monitor progress while loading a scene from the scene source. For simpler scene loading, use the [`scene(options:)`](./scene%28options%29.md) method or the [`SCNScene`](../scnscene.md) method [`init(url:options:)`](../scnscene/init%28url,options%29-7ugvv.md).
 

@@ -15,7 +15,7 @@ Returns the rectangle where the representation is cached.
 - (NSRect) rect;
 ```
 
-#### Return Value
+## Return Value
 
 The rectangle in the associated offscreen window where the receiver’s image is located.
 

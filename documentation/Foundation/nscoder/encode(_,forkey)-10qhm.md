@@ -24,7 +24,7 @@ func encode(_ rect: CGRect, forKey key: String)
 - (void) encodeCGRect:(CGRect) rect forKey:(NSString *) key;
 ```
 
-#### Discussion
+## Discussion
 
 When decoding the data from the archive, you pass the value in the `key` parameter to the corresponding [`decodeCGRect(forKey:)`](./decodecgrect%28forkey%29.md) method to retrieve the data.
 

@@ -21,7 +21,7 @@ Creates a new path with everything up to but not including `lastComponent`.
 func removingLastComponent() -> FilePath
 ```
 
-#### Discussion
+## Discussion
 
 If the path only contains a root, returns `self`. If the path has no root and only includes a single component, returns an empty FilePath.
 

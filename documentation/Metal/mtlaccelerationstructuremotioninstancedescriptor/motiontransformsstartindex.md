@@ -24,7 +24,7 @@ var motionTransformsStartIndex: UInt32
 uint32_t motionTransformsStartIndex;
 ```
 
-#### Discussion
+## Discussion
 
 The index points to an entry in an [`MTLInstanceAccelerationStructureDescriptor`](../mtlinstanceaccelerationstructuredescriptor.md) instance’s transform data, which it stores in its [`motionTransformBuffer`](../mtlinstanceaccelerationstructuredescriptor/motiontransformbuffer.md) property.
 

@@ -5,7 +5,7 @@
 
 Generate a key and configure offers for auto-renewable subscriptions in App Store Connect.
 
-#### Overview
+## Overview
 
 You can offer a discounted or free period of service for auto-renewable subscription products on macOS, iOS, and tvOS using promotional offers. Limited-time, discounted promotional offers can be effective in winning back lapsed subscribers or retaining current subscribers.
 
@@ -13,13 +13,13 @@ Before you can provide promotional offers in your app, you must first generate a
 
 > **Note**:  If your goal is to attract new users, use introductory offers and promote the Apple In-App Purchase on the App Store. Redeeming an introductory offer doesn’t affect a user’s eligibility for a promotional offer. For more information, see [Implementing introductory offers in your app](./implementing-introductory-offers-in-your-app.md).
 
-##### Generate a Private Key
+### Generate a Private Key
 
 You generate a private key in App Store Connect that you use on your server to sign promotional offers. This key allows Apple to authenticate and validate subscription requests.
 
 Keys don’t expire, and you can use them with any apps in your account. To get started, [generate a subscriptions access key](https://help.apple.com/app-store-connect/#/dev689c93225) in App Store Connect.
 
-###### Download and Store the Private Key
+#### Download and Store the Private Key
 
 Once you’ve generated your subscription key, you’re given the opportunity to download the private half of the key. You can only download this key one time.
 
@@ -29,7 +29,7 @@ The keys are provided in base64-encoded PEM format. Apple doesn’t keep a copy 
 
 If the key becomes lost or compromised, revoke it immediately and update your promotional offers. See [Revoke a subscription key](https://help.apple.com/app-store-connect/#/dev689c93225?sub=dev4587a2b9c) for more information.
 
-##### Configure Promotional Offers
+### Configure Promotional Offers
 
 You configure promotional offers in App Store Connect, providing details such as a reference name, payment mode, duration, and price. To configure your offer, see [Set up promotional offers for auto-renewable subscriptions](https://help.apple.com/app-store-connect/#/dev16dfca448). You can have up to 10 promotional offers active at any given time per subscription.
 

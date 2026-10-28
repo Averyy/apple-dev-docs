@@ -24,7 +24,7 @@ case removeContent
 PHCollectionEditOperationRemoveContent
 ```
 
-#### Discussion
+## Discussion
 
 Removing an item removes it from the collection, but does not permanently delete it from the photo library.
 

@@ -20,11 +20,11 @@ func nodeNames() throws -> [Any]
 - (NSArray *) nodeNamesAndReturnError:(NSError **) outError;
 ```
 
-#### Return Value
+## Return Value
 
 The node names registered with this session.
 
-#### Discussion
+## Discussion
 
 > **Handling Errors in Swift**:  In Swift, this method returns a nonoptional result and is marked with the `throws` keyword to indicate that it throws an error in cases of failure.
 >

@@ -25,7 +25,7 @@ var BNNSLossReductionSum: BNNSLossReductionFunction { get }
 BNNSLossReductionSum
 ```
 
-#### Discussion
+## Discussion
 
 [`BNNSLossReductionSum`](./bnnslossreductionsum.md) sums the loss of all samples in the batch.
 

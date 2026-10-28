@@ -26,11 +26,11 @@ func share(bufferingPolicy: AsyncBufferSequencePolicy = .bounded(1)) -> some Sen
 
 Available when `Self` conforms to `SendableMetatype`, `AsyncIterator` conforms to `SendableMetatype`, and `Element` conforms to `Sendable`.
 
-#### Return Value
+## Return Value
 
 A sendable async sequence that can be safely shared across multiple concurrent tasks.
 
-#### Discussion
+## Discussion
 
 The `share` method transforms an async sequence into a shareable sequence that can be safely iterated by multiple concurrent tasks. This is useful when you want to broadcast elements from a single source to multiple consumers without duplicating work or creating separate iterations.
 
@@ -38,7 +38,7 @@ Each element from the source sequence is delivered to all active iterators. Elem
 
 The base sequence is iterated in it’s own task to ensure that cancellation is not polluted from one side of iteration to another.
 
-#### Example Usage
+## Example Usage
 
 ```swift
 let numbers = [1, 2, 3, 4, 5].async.map {

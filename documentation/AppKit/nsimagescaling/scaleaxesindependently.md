@@ -19,7 +19,7 @@ case scaleAxesIndependently
 NSImageScaleAxesIndependently
 ```
 
-#### Discussion
+## Discussion
 
 This setting does not preserve the aspect ratio of the image.
 

@@ -24,7 +24,7 @@ func addComponent(_ component: ComponentType)
 - (void) addComponent:(ComponentType) component;
 ```
 
-#### Discussion
+## Discussion
 
 The component instance must be of the same [`GKComponent`](../gkcomponent.md) subclass specified by the [`componentClass`](./componentclass.md) property.
 

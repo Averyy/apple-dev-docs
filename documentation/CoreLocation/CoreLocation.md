@@ -15,7 +15,7 @@ Obtain the geographic location and orientation of a device.
 - visionOS 1.0+
 - watchOS 2.0+
 
-#### Overview
+## Overview
 
 Core Location provides services that determine a device’s geographic location, altitude, and orientation, or its position relative to a nearby iBeacon device. The framework gathers data using all available components on the device, including the Wi-Fi, GPS, Bluetooth, magnetometer, barometer, and cellular hardware.
 

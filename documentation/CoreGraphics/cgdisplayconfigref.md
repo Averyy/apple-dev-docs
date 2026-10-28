@@ -20,7 +20,7 @@ typealias CGDisplayConfigRef = OpaquePointer
 typedef struct _CGDisplayConfigRef * CGDisplayConfigRef;
 ```
 
-#### Discussion
+## Discussion
 
 This data type makes it possible to:
 

@@ -27,11 +27,11 @@ func CTGetCoreTextVersion() -> UInt32
 extern uint32_t CTGetCoreTextVersion();
 ```
 
-#### Return Value
+## Return Value
 
 The version number. This value is for comparison with the constants listed in `Core Text Framework Version Numbers`.
 
-#### Discussion
+## Discussion
 
 This function returns a number indicating the version of the Core Text framework. Note that framework version is not always an accurate indicator of feature availability. The recommended way to use this function is first to check that the function pointer is non-null, followed by calling it and comparing its result to a defined constant (or constants). For example, to determine whether the CoreText API is available:
 

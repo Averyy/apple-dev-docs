@@ -21,7 +21,7 @@ var image: NSImage? { get set }
 @property (strong, nullable) NSImage * image;
 ```
 
-#### Discussion
+## Discussion
 
 If a title is also set, the image appears to the left of the title.
 

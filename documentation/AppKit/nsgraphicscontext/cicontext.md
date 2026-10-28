@@ -19,7 +19,7 @@ var ciContext: CIContext? { get }
 @property (strong, readonly, nullable) CIContext * CIContext;
 ```
 
-#### Discussion
+## Discussion
 
 The [`CIContext`](../../CoreImage/cicontext.md) object is created on demand and remains in existence for the lifetime of its owning [`NSGraphicsContext`](../nsgraphicscontext.md) object. A [`CIContext`](../../CoreImage/cicontext.md) object is an evaluation context for rendering a [`CIImage`](../../CoreImage/ciimage.md) object through Quartz 2D or OpenGL. You use [`CIContext`](../../CoreImage/cicontext.md)` `objects in conjunction with [`CIFilter`](../../CoreImage/cifilter-swift.class.md), [`CIImage`](../../CoreImage/ciimage.md), [`CIVector`](../../CoreImage/civector.md), and [`CIColor`](../../CoreImage/cicolor.md) objects to take advantage of the built-in Core Image filters when processing images.
 

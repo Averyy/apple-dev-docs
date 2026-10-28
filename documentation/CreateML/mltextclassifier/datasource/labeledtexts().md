@@ -19,7 +19,7 @@ Fetches the labeled data from the data source.
 func labeledTexts() throws -> [String : [String]]
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary that contains each label with their related text entries.
 

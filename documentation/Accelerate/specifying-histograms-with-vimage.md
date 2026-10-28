@@ -10,7 +10,7 @@ Calculate the histogram of one image, and apply it to a second image.
 - macOS 13.3+
 - Xcode 14.3+
 
-#### Overview
+## Overview
 
 *Histogram specification* is an image-processing operation that calculates the histogram of a reference image and applies it to an input image. The operation changes the colors and tones of the input image to match those of the reference image.
 
@@ -20,7 +20,7 @@ The example below shows a source image (bottom left) and a histogram reference i
 
 Before exploring the code, build and run the app to familiarize yourself with the different visual results the app generates when you select different source and reference images.
 
-##### Perform histogram specification using pixel buffers
+### Perform histogram specification using pixel buffers
 
 The [`vImage.PixelBuffer`](./vimage/pixelbuffer.md) structure provides a simple API to calculate and specify a histogram. The [`histogram()`](./vimage/pixelbuffer/histogram%28%29-30tsp.md) function returns the histogram of a pixel buffer, and the [`specifyHistogram(_:destination:)`](./vimage/pixelbuffer/specifyhistogram%28_,destination%29-qeqr.md) function performs the histogram specification operation.
 
@@ -51,7 +51,7 @@ static func applyHistogramSpecification_PixelBuffer(
     }
 ```
 
-##### Calculate the reference histogram using vImage buffers
+### Calculate the reference histogram using vImage buffers
 
 If you’re creating apps for older operating systems that don’t support the [`vImage.PixelBuffer`](./vimage/pixelbuffer.md) API, the sample code project also includes source code for performing histogram specification using [`vImage_Buffer`](./vimage_buffer.md) structures.
 
@@ -92,7 +92,7 @@ histogramBinZero.withUnsafeMutableBufferPointer { zeroPtr in
 
 On return, the four arrays contain the histogram data from the `histogramSource`.
 
-##### Specify the image histogram using vImage buffers
+### Specify the image histogram using vImage buffers
 
 The [`vImageHistogramSpecification_ARGB8888(_:_:_:_:)`](./vimagehistogramspecification_argb8888%28_,_,_,_%29.md) performs the histogram specification operation. The following code matches the histogram of the reference image to the input image:
 

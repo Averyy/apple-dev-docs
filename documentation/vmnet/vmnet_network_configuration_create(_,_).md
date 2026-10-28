@@ -20,11 +20,11 @@ func vmnet_network_configuration_create(_ mode: vmnet_mode_t, _ status: UnsafeMu
 vmnet_network_configuration_refvmnet_network_configuration_create(vmnet_mode_t mode, vmnet_return_t *status);
 ```
 
-#### Return Value
+## Return Value
 
 A vmnet network handle on success, otherwise `NULL`.
 
-#### Discussion
+## Discussion
 
 All other parameters are optional and have the following default value:
 

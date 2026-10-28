@@ -25,7 +25,7 @@ func CGPDFStringGetBytePtr(_ string: CGPDFStringRef) -> UnsafePointer<UInt8>?
 extern const unsigned char *CGPDFStringGetBytePtr(CGPDFStringRef string);
 ```
 
-#### Return Value
+## Return Value
 
 Returns a pointer to the bytes of the specified string. If the string is `NULL`, the function returns `NULL`.
 

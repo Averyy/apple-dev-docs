@@ -14,11 +14,11 @@
 IOReturn IOPMAssertionCreateWithDescription(CFStringRef AssertionType, CFStringRef Name, CFStringRef Details, CFStringRef HumanReadableReason, CFStringRef LocalizationBundlePath, CFTimeInterval Timeout, CFStringRef TimeoutAction, IOPMAssertionID *AssertionID);
 ```
 
-#### Return Value
+## Return Value
 
 kIOReturnSuccess, or another IOKit return code on error.
 
-#### Discussion
+## Discussion
 
 Creates an IOPMAssertion. This is the preferred API to call to create an assertion. It allows the caller to specify the Name, Details, and HumanReadableReason at creation time. There are other keys that can further describe an assertion, but most developers don't need to use them. Use IOPMAssertionSetProperties or [`IOPMAssertionCreateWithProperties`](./api-1557082-iopmassertioncreatewithpropertie.md) if you need to specify properties that aren't available here.
 

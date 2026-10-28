@@ -23,7 +23,7 @@ enum UITextStorageDirection
 enum UITextStorageDirection : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 Constants of this type are used as arguments to the [`baseWritingDirection(for:in:)`](./uitextinput/basewritingdirection%28for,in%29.md) and [`textStyling(at:in:)`](./uitextinput/textstyling%28at,in%29.md) methods.
 

@@ -34,7 +34,7 @@ var transferFee: INCurrencyAmount? { get set }
 @property (atomic, copy, readwrite, nullable) INCurrencyAmount * transferFee;
 ```
 
-#### Discussion
+## Discussion
 
 If there’s a fee for performing the transfer, put the fee amount in this property.
 

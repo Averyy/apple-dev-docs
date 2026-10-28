@@ -25,7 +25,7 @@ let kCGImageSourceAllowableTypes: CFString
 extern CFStringRef const kCGImageSourceAllowableTypes;
 ```
 
-#### Discussion
+## Discussion
 
 The value is a [`CFArray`](../CoreFoundation/cfarray.md) containing [`CFString`](../CoreFoundation/cfstring.md) Uniform Type Identifiers (UTIs) of allowed image formats. When specified, ImageIO will only decode images whose format matches one of the entries in the allow list. If no matching reader is found, decoding fails.
 
@@ -33,7 +33,7 @@ Unknown format identifiers are ignored. If not specified, all supported ImageIO 
 
 See also [System-declared uniform type identifiers](../UniformTypeIdentifiers/system-declared-uniform-type-identifiers.md).
 
-#### Example
+## Example
 
 **Swift**:
 

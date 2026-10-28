@@ -21,7 +21,7 @@ A type that represents an executable.
 extern UTType * const UTTypeExecutable;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.executable`.
 

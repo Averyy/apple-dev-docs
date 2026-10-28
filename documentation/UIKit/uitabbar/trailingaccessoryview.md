@@ -19,7 +19,7 @@ var trailingAccessoryView: UIView { get }
 @property (nonatomic, strong, readonly) UIView * trailingAccessoryView;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to integrate a custom view at the trailing edge of your tab bar interface. Use this view to display a custom logo or give access to custom accessories in your app.
 

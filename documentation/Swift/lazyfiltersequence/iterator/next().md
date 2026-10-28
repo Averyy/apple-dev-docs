@@ -23,7 +23,7 @@ mutating func next() -> LazyFilterSequence<Base>.Iterator.Element?
 
 Available when `Base` conforms to `Sequence`.
 
-#### Discussion
+## Discussion
 
 Once `nil` has been returned, all subsequent calls return `nil`.
 

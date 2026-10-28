@@ -24,7 +24,7 @@ var activityMoveMode: HKActivityMoveMode { get set }
 @property (nonatomic, assign) HKActivityMoveMode activityMoveMode;
 ```
 
-#### Discussion
+## Discussion
 
 Indicates whether the move ring measures the active energy burned, or the user’s move time.
 

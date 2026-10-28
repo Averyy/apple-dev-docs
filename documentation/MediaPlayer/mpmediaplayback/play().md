@@ -28,7 +28,7 @@ func play()
 
 - [Playing audio using the built-in music player](../playing-audio-using-the-built-in-music-player.md)
 
-#### Discussion
+## Discussion
 
 If playback was previously paused, this method resumes playback where it left off; otherwise, this method plays the first available item, from the beginning.
 

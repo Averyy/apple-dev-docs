@@ -10,7 +10,7 @@ framework: "swift-log/Logging"
 
 Validate what you code logs by capturing entries in memory rather than bootstrapping a process-wide backend.
 
-#### Overview
+## Overview
 
 Import and use `InMemoryLogging`, which provides an `InMemoryLogHandler` that collects every emitted record into an array you can inspect. Keep a handler you create local to each test. Each handler that you create in a test has no shared state, so the test stays isolated is safe to run on parallel with other tests. Don’t use [`bootstrap(_:)`](./loggingsystem/bootstrap%28_%29.md) in a test, it sets one process-wide backend and traps if called twice.
 
@@ -20,7 +20,7 @@ Add the product to your test target:
 .product(name: "InMemoryLogging", package: "swift-log")
 ```
 
-##### Capture logs from a logger you pass in
+### Capture logs from a logger you pass in
 
 When the code under test accepts a `Logger` (see [003: Logger propagation in libraries](./api-003-acceptingloggers.md)), back it with an `InMemoryLogHandler` and validate the results on `entries`.
 
@@ -52,7 +52,7 @@ func stampsRequestID() {
 
 Each `Entry` is equatable and exposes `level`, `message`, `metadata`, and `error`. The handler log level defaults to [`Logger.Level.info`](./logger/level/info.md); set `handler.logLevel = .trace` before you use it to capture lower levels.
 
-##### Capture logs from code that reads `Logger.current`
+### Capture logs from code that reads `Logger.current`
 
 When the code you want to test reads the task-local [`current`](./logger/current.md) instead of taking a parameter, bind an `InMemoryLogHandler` for the scope of that by using [`withLogger(logLevel:handler:metadata:_:)`](./withlogger%28loglevel,handler,metadata,_%29-2pd9p.md). The handler shares its storage by reference, so the copy you hold sees what was logged.
 

@@ -19,7 +19,7 @@ class SFSafariToolbarItem
 @interface SFSafariToolbarItem : NSObject
 ```
 
-#### Overview
+## Overview
 
 Your app extension only uses this object when it wants to explicitly set the toolbar item state. Typically, other state changes occur automatically. Safari calls [`validateToolbarItem(in:validationHandler:)`](./sfsafariextensionhandling/validatetoolbaritem%28in,validationhandler%29.md) on your app extension handler when changes, such as navigation to a webpage, could affect the state of the toolbar item.
 

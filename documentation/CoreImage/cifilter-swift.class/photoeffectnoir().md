@@ -24,11 +24,11 @@ class func photoEffectNoir() -> any CIFilter & CIPhotoEffect
 + (CIFilter<CIPhotoEffect> *) photoEffectNoirFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The modified image.
 
-#### Discussion
+## Discussion
 
 This method applies a preconfigured set of effects that imitate black-and-white photography film and intensifies the contrast.
 

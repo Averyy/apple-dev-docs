@@ -14,7 +14,7 @@
 kIOAudioEngineRunning = 1
 ```
 
-#### Discussion
+## Discussion
 
 The IOAudioEngine is currently running - it is transferring data to or from the device.
 

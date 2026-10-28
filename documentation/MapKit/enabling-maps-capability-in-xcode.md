@@ -5,11 +5,11 @@
 
 Configure your routing app to support providing directions.
 
-#### Overview
+## Overview
 
 A routing app, an iOS app that provides point-to-point directions, requires Maps capability to make those directions available to Maps and other apps. Maps capability allows an app to provide specific directions beyond what the Maps app supports, including subway routes, hiking trails, and bike paths. Use Xcode to enable Maps capability and select the supported modes.
 
-##### Add Maps Capability to Your Project
+### Add Maps Capability to Your Project
 
 1. Open your project with Xcode. In the Project navigator, select your project.
 2. Choose the target for the app in the Targets section of the outline view.

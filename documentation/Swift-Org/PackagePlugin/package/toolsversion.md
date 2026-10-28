@@ -17,7 +17,7 @@ The tools version specified by the resolved version of the package.
 let toolsVersion: ToolsVersion
 ```
 
-#### Discussion
+## Discussion
 
 Behavior is often gated on the tools version to make sure older packages continue to work as intended.
 

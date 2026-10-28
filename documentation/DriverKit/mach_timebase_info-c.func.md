@@ -18,7 +18,7 @@ Returns fraction to multiply a value in mach tick units with to convert it to na
 kern_return_t mach_timebase_info(mach_timebase_info_t info);
 ```
 
-#### Return Value
+## Return Value
 
 `KERN_SUCCESS` if `info` was filled in.
 

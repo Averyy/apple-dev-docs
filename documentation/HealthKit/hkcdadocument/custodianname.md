@@ -23,7 +23,7 @@ var custodianName: String { get }
 @property (copy, readonly) NSString * custodianName;
 ```
 
-#### Discussion
+## Discussion
 
 Usually, this is the treating institution’s name.
 

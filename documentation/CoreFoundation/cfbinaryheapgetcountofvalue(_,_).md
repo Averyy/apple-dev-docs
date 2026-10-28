@@ -25,7 +25,7 @@ func CFBinaryHeapGetCountOfValue(_ heap: CFBinaryHeap!, _ value: UnsafeRawPointe
 extern CFIndex CFBinaryHeapGetCountOfValue(CFBinaryHeapRef heap, const void *value);
 ```
 
-#### Return Value
+## Return Value
 
 The number of times `value` occurs in `heap`.
 

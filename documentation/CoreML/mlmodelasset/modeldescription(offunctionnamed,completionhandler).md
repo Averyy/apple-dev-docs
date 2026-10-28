@@ -29,7 +29,7 @@ func modelDescription(of functionName: String) async throws -> MLModelDescriptio
 - (void) modelDescriptionOfFunctionNamed:(NSString *) functionName completionHandler:(void (^)(MLModelDescription *modelDescription, NSError *error)) handler;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to get the description of the model such as the feature descriptions, the model author, and other metadata.
 

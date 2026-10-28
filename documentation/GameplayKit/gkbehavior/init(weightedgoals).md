@@ -24,7 +24,7 @@ convenience init(weightedGoals: [GKGoal : NSNumber])
 + (instancetype) behaviorWithWeightedGoals:(NSDictionary<GKGoal *,NSNumber *> *) weightedGoals;
 ```
 
-#### Return Value
+## Return Value
 
 A new behavior object. To assign a set of goals to an agent, use its [`behavior`](../gkagent/behavior.md) property.
 

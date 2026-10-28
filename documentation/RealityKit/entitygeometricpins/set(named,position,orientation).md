@@ -21,11 +21,11 @@ Creates and adds a geometric pin to the entity, and returns the entity geometric
 @MainActor func set(named name: String, position: SIMD3<Float> = SIMD3<Float>(0, 0, 0), orientation: simd_quatf = simd_quatf(ix: 0, iy: 0, iz: 0, r: 1)) -> GeometricPin
 ```
 
-#### Return Value
+## Return Value
 
 A `GeometricPin`, identifying the newly added reference frame on the [`Entity`](../entity.md).
 
-#### Discussion
+## Discussion
 
 The pin is added to the entity’s [`GeometricPinsComponent`](../geometricpinscomponent.md).
 

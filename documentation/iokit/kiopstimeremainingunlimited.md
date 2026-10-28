@@ -16,7 +16,7 @@ Possible return value from [`IOPSGetTimeRemainingEstimate`](./api-1523835-iopsge
 #define kIOPSTimeRemainingUnlimited
 ```
 
-#### Discussion
+## Discussion
 
 Indicates the system is connected to an external power source, without a time limit.
 

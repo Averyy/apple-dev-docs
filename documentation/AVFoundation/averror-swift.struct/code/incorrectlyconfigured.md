@@ -25,7 +25,7 @@ case incorrectlyConfigured
 AVErrorIncorrectlyConfigured
 ```
 
-#### Discussion
+## Discussion
 
 The system raises this error when you attempt to perform an incorrectly configured operation. For example, HTTP Live Streaming presents only a single video and audio track at a time. If you’re using [`AVAssetWriter`](../../avassetwriter.md) to generate a fragmented MPEG-4 asset for streaming, adding more that one video and audio [`AVAssetWriterInput`](../../avassetwriterinput.md) to the asset writer generates an error when you start writing.
 

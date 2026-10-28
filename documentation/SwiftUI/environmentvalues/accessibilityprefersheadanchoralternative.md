@@ -15,7 +15,7 @@ Whether the system setting to prefer alternatives to head-anchored content is on
 var accessibilityPrefersHeadAnchorAlternative: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 If this property’s value is true, alternate anchors should be used for most head-anchored UI, such as world anchors.
 

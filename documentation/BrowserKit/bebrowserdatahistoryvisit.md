@@ -20,7 +20,7 @@ class BEBrowserDataHistoryVisit
 @interface BEBrowserDataHistoryVisit : BEBrowserData
 ```
 
-#### Overview
+## Overview
 
 This class captures comprehensive information about a page visit, including metadata, the URL, redirect information, and success status. The redirect properties enable a browser to preserve full navigation context when transferring history.
 

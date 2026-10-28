@@ -25,7 +25,7 @@ static var reverse: NSEnumerationOptions { get }
 NSEnumerationReverse
 ```
 
-#### Discussion
+## Discussion
 
 This option is available for `NSArray` and `NSIndexSet` classes; its behavior is undefined for `NSDictionary` and `NSSet` classes, or when combined with the `NSEnumerationConcurrent` flag.
 

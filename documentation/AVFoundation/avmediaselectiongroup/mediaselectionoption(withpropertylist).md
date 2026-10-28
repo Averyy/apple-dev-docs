@@ -25,7 +25,7 @@ func mediaSelectionOption(withPropertyList plist: Any) -> AVMediaSelectionOption
 - (AVMediaSelectionOption *) mediaSelectionOptionWithPropertyList:(id) plist;
 ```
 
-#### Return Value
+## Return Value
 
 An [`AVMediaSelectionOption`](../avmediaselectionoption.md) object containing the properites passed by `plist`. Returns `nil` when no match is found.
 

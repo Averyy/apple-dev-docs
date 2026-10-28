@@ -15,7 +15,7 @@ The response body for a successful revoke-subscription request.
 object SubscriptionRevokeResponse
 ```
 
-#### Discussion
+## Discussion
 
 This is the response body for the [`Revoke Subscription`](./revoke-subscription.md) endpoint.
 

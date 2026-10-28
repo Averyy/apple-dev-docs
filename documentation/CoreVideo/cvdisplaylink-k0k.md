@@ -5,7 +5,7 @@
 
 A high-priority thread that notifies your app when a given display will need each frame.
 
-#### Overview
+## Overview
 
 A Core Video display link provides a separate high-priority thread to notify your application when a given display will need each frame. You can use a display link to easily synchronize with the refresh rate of a display. The display link API uses the Core Foundation class system internally to provide reference counting behavior and other useful properties.
 

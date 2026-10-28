@@ -25,7 +25,7 @@ func CFBitVectorCreateMutableCopy(_ allocator: CFAllocator!, _ capacity: CFIndex
 extern CFMutableBitVectorRefCFBitVectorCreateMutableCopy(CFAllocatorRef allocator, CFIndex capacity, CFBitVectorRef bv);
 ```
 
-#### Return Value
+## Return Value
 
 A new bit vector holding the same bit values as `bv`. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029)
 

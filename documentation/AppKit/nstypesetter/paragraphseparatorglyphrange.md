@@ -19,7 +19,7 @@ var paragraphSeparatorGlyphRange: NSRange { get }
 @property (readonly) NSRange paragraphSeparatorGlyphRange;
 ```
 
-#### Return Value
+## Return Value
 
 The current paragraph separator range, which is the full range that contains the current glyph range and that extends from one paragraph separator character to the next.
 

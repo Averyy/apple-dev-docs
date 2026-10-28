@@ -20,7 +20,7 @@ object Anchor
 - [Positioning the Content in Your Article](../AppleNews/positioning-the-content-in-your-article.md)
 - [Wrapping Text Around a Component](../AppleNews/wrapping-text-around-a-component.md)
 
-#### Discussion
+## Discussion
 
 Use the `Anchor` object to anchor one component (called the *origin*) to another component (called the *target*). You can use an anchor to align components vertically. For example, you can anchor a `caption` component to a `photo` component and choose whether you want the caption aligned to the top, bottom, or center of the photograph. You can also use an anchor to position a child component within its parent container. For information about using anchors within containers, see [Nesting Components in an Article](../AppleNews/nesting-components-in-an-article.md).
 
@@ -28,7 +28,7 @@ Use the `Anchor` object to anchor one component (called the *origin*) to another
 
 You can use this object in [`Component`](./component.md).
 
-##### Example
+### Example
 
 ```json
 {

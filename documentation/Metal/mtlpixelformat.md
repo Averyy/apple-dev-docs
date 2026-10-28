@@ -24,13 +24,13 @@ enum MTLPixelFormat
 enum MTLPixelFormat : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 There are three varieties of pixel formats: ordinary, packed, and compressed. For ordinary and packed formats, the name of the pixel format specifies the order of components (such as `R`, `RG`, `RGB`, `RGBA`, `BGRA`), bits per component (such as `8`, `16`, `32`), and data type for the component (such as `Float`, `Sint`, `Snorm`, `Uint`, `Unorm`). If the pixel format name has the `_sRGB` suffix, then reading and writing pixel data applies sRGB gamma compression and decompression. The alpha component of sRGB pixel formats is always treated as a linear value. For compressed formats, the name of the pixel format specifies a compression family (such as `ASTC`, `BC`, `EAC`, `ETC2`, `PVRTC`).
 
 > **Note**:  Pixel format availability and capabilities vary by feature set. See [Pixel Format Capabilities](https://developer.apple.com/metal/Metal-Feature-Set-Tables.pdf) for more information.
 
-##### Storage characteristics
+### Storage characteristics
 
 The number and size of each pixel component determines the storage size of each pixel format. For example, the storage size of [`MTLPixelFormat.bgra8Unorm`](./mtlpixelformat/bgra8unorm.md) is 32 bits (four 8-bit components) and the storage size of [`MTLPixelFormat.bgr5A1Unorm`](./mtlpixelformat/bgr5a1unorm.md) is 16 bits (three 5-bit components and one 1-bit component).
 

@@ -23,7 +23,7 @@ var wantsExtendedDynamicRangeContent: Bool { get set }
 @property BOOL wantsExtendedDynamicRangeContent;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`false`](../../Swift/false.md). If any onscreen layer has this property set to [`true`](../../Swift/true.md), all rendered content is clamped to the screen’s [`maximumExtendedDynamicRangeColorComponentValue`](../../AppKit/nsscreen/maximumextendeddynamicrangecolorcomponentvalue.md) value rather than `1.0`.
 

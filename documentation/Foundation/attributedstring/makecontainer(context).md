@@ -21,11 +21,11 @@ Creates a container that represents the attributed string.
 func makeContainer(context: IntentValueContainer.ConversionContext) -> IntentValueContainer
 ```
 
-#### Return Value
+## Return Value
 
 An intent value container representing this attributed string.
 
-#### Discussion
+## Discussion
 
 This method converts the `AttributedString` to an `NSAttributedString` and wraps it in an intent value container.
 

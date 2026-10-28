@@ -18,11 +18,11 @@ String setTimeout(
 );
 ```
 
-#### Return Value
+## Return Value
 
 Returns a string containing an identifier for the timeout just set.
 
-#### Discussion
+## Discussion
 
 Pass the identifier created by this function to the [`clearTimeout`](./api-1627416-cleartimeout.md) function to stop the designated function from executing.
 

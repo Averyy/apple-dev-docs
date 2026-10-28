@@ -19,7 +19,7 @@ unowned(unsafe) var window: NSWindow? { get }
 @property (unsafe_unretained, readonly, nullable) NSWindow * window;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is `nil` if the view is not currently installed in a window.
 

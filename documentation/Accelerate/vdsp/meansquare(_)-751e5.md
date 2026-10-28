@@ -21,7 +21,7 @@ Returns the mean of squares of a single-precision vector.
 static func meanSquare<U>(_ vector: U) -> Float where U : AccelerateBuffer, U.Element == Float
 ```
 
-#### Discussion
+## Discussion
 
 This function calculates and returns the mean square of a supplied vector.
 

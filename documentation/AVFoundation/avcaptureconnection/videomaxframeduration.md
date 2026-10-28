@@ -22,7 +22,7 @@ var videoMaxFrameDuration: CMTime { get set }
 @property (nonatomic) CMTime videoMaxFrameDuration;
 ```
 
-#### Discussion
+## Discussion
 
 When [`isVideoMaxFrameDurationSupported`](./isvideomaxframedurationsupported.md) is [`true`](../../Swift/true.md), the value of the property configures the upper bound for the amount of time a video connection separates consecutive frames. The value is equivalent to the reciprocal of the minimum frame rate.
 

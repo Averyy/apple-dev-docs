@@ -24,7 +24,7 @@ class func boundingCircle(forSIMDPoints points: UnsafePointer<simd_float2>, poin
 + (VNCircle *) boundingCircleForSIMDPoints:(const simd_float2 *) points pointCount:(NSInteger) pointCount error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 The bounding [`VNCircle`](../vncircle.md) object.
 

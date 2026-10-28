@@ -9,16 +9,16 @@ framework: "swift-log/Logging"
 
 Best practices for effective logging with SwiftLog.
 
-#### Overview
+## Overview
 
 This collection of best practices helps library authors and application developers create effective, maintainable logging that works well across diverse environments. Each practice is designed to ensure your logs are useful for debugging while being respectful of system resources and operational requirements.
 
-##### Who Should Use These Practices
+### Who Should Use These Practices
 
 - **Library Authors**: Creating reusable components that log appropriately.
 - **Application Developers**: Implementing logging strategies in applications.
 
-##### Philosophy
+### Philosophy
 
 Good logging strikes a balance between providing useful information and avoiding system overhead. These practices are based on real-world experience with production systems and emphasize:
 
@@ -27,7 +27,7 @@ Good logging strikes a balance between providing useful information and avoiding
 - **Operational awareness** to support production debugging and monitoring.
 - **Developer experience** to make debugging efficient and pleasant.
 
-##### Contributing to these practices
+### Contributing to these practices
 
 These best practices evolve based on community experience and are maintained by the Swift Server Working Group ([SSWG](https://www.swift.org/sswg/)). Each practice includes:
 

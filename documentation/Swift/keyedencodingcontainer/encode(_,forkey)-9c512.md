@@ -21,7 +21,7 @@ Encodes the given value for the given key.
 mutating func encode(_ value: Double, forKey key: KeyedEncodingContainer<K>.Key) throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: `EncodingError.invalidValue` if the given value is invalid in the current context for this format.
 

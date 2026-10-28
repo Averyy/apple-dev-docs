@@ -28,7 +28,7 @@ func handleAppMessage(_ messageData: Data) async -> Data?
 - (void) handleAppMessage:(NSData *) messageData completionHandler:(void (^)(NSData *responseData)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to communicate information between the Tunnel Provider and the Tunnel Provider’s containing app.
 

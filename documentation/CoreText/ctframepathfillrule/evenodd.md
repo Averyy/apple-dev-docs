@@ -25,7 +25,7 @@ case evenOdd
 kCTFramePathFillEvenOdd
 ```
 
-#### Discussion
+## Discussion
 
 Text is filled in the area that would be painted if the path were given to [`CGContextEOFillPath`](../../CoreGraphics/cgcontexteofillpath.md).
 

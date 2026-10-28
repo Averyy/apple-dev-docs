@@ -21,7 +21,7 @@ A collection of state properties used to efficiently manage sync engine operatio
 final var state: CKSyncEngine.State { get }
 ```
 
-#### Discussion
+## Discussion
 
 > **See Also**: [`CKSyncEngine.State`](./state-swift.class.md)
 

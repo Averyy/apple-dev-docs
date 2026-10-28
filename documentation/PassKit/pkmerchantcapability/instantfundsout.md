@@ -24,7 +24,7 @@ static var instantFundsOut: PKMerchantCapability { get }
 PKMerchantCapabilityInstantFundsOut
 ```
 
-#### Discussion
+## Discussion
 
 This capability indicates the merchant supports disbursing funds using Instant Funds Out (IFO), which means the recipient receives funds in minutes rather than days. Passing `PKMerchantCapabilityInstantFundsOut` into the [`init(merchantIdentifier:currency:region:supportedNetworks:merchantCapabilities:summaryItems:)`](../pkdisbursementrequest/init%28merchantidentifier,currency,region,supportednetworks,merchantcapabilities,summaryitems%29.md) indicates that the merchant is going to use IFO to facilitate the disbursement once the individual authenticates it.
 

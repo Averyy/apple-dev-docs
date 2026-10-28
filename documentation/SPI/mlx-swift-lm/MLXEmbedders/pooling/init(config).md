@@ -17,7 +17,7 @@ Initializes a `Pooling` module from a `PoolingConfiguration`.
 init(config: PoolingConfiguration)
 ```
 
-#### Discussion
+## Discussion
 
 The initialization follows a priority order: CLS > Mean > Max > Last. If no specific mode is enabled in the config, it defaults to `.first`.
 

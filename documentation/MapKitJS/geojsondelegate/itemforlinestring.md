@@ -18,11 +18,11 @@ itemForLineString?(
 ): PolylineOverlay | null;
 ```
 
-#### Return Value
+## Return Value
 
 A map item or an array of map items.
 
-#### Discussion
+## Discussion
 
 MapKit JS calls this method for each individual `LineString` geometry object. You can customize or completely replace the provided overlay before returning it.
 

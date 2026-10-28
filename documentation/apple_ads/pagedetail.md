@@ -17,7 +17,7 @@ The number of items that return in the page.
 object PageDetail
 ```
 
-#### Discussion
+## Discussion
 
 The `PageDetail` object contains the pagination response for returned multiple records.
 

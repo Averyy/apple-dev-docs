@@ -19,7 +19,7 @@ var contentFrame: CGRect { get }
 @property (nonatomic, readonly) CGRect contentFrame;
 ```
 
-#### Discussion
+## Discussion
 
 The rectangle in this property is specified in points. This rectangle may be different than the screen bounds.
 

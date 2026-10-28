@@ -25,11 +25,11 @@ optional func makeView(element: TVViewElement, existingView: UIView?) -> UIView?
 
 - [Creating TVML Elements](../creating-tvml-elements.md)
 
-#### Return Value
+## Return Value
 
 The new view associated with the view element. If the app doesn’t handle the event, you must return `nil`.
 
-#### Discussion
+## Discussion
 
 When possible, update the view contained in the `existingView` parameter instead of creating a new view. However, if the existing view is an instance of [`UICollectionViewCell`](../../UIKit/uicollectionviewcell.md), you must configure the cell instead of creating a new instance.
 

@@ -14,7 +14,7 @@
 gestalt16BitAudioSupport = 12
 ```
 
-#### Discussion
+## Discussion
 
 Set if the Sound Manager can handle 16-bit audio data. This indicates that software necessary to handle 16-bit data is available.
 

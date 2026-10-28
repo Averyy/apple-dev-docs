@@ -25,7 +25,7 @@ struct CTFontStylisticClass
 enum CTFontStylisticClass : uint32_t;
 ```
 
-#### Overview
+## Overview
 
 `CTFontStylisticClass` identifies certain stylistic qualities of the font. These values correspond closely to the font class values in the OpenType OS/2 table. The class values are bundled in the upper four bits of the [`CTFontSymbolicTraits`](./ctfontsymbolictraits.md) and can be obtained via [`classMaskTrait`](./ctfontsymbolictraits/classmasktrait.md).
 

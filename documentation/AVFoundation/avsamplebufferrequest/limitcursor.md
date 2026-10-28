@@ -25,7 +25,7 @@ var limitCursor: AVSampleCursor? { get set }
 @property (nonatomic, retain, nullable) AVSampleCursor * limitCursor;
 ```
 
-#### Discussion
+## Discussion
 
 If the value isn’t `nil`, the sequence of samples to load may include the sample at this position, but no further.
 

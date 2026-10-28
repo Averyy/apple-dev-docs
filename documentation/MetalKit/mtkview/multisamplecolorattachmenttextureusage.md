@@ -24,7 +24,7 @@ var multisampleColorAttachmentTextureUsage: MTLTextureUsage { get set }
 @property (nonatomic) MTLTextureUsage multisampleColorAttachmentTextureUsage;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`renderTarget`](../../Metal/mtltextureusage/rendertarget.md).
 

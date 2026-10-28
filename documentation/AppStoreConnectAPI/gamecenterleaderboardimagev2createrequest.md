@@ -15,7 +15,7 @@ The request body you use to create a Game Center leaderboard image v2.
 object GameCenterLeaderboardImageV2CreateRequest
 ```
 
-#### Overview
+## Overview
 
 - data:
 

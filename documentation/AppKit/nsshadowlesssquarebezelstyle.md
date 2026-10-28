@@ -15,7 +15,7 @@ Similar to `NSRegularSquareBezelStyle`, but has no shadow, so you can abut the c
 static const NSBezelStyle NSShadowlessSquareBezelStyle;
 ```
 
-#### Discussion
+## Discussion
 
 This style would be used in a tool palette, for example.
 

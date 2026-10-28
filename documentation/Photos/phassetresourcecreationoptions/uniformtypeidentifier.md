@@ -26,7 +26,7 @@ var uniformTypeIdentifier: String? { get set }
 @property (nonatomic, copy, nullable) NSString * uniformTypeIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 If you do not specify a value for this property, Photos infers the data type from the [`PHAssetResourceType`](../phassetresourcetype.md) value you specify when adding the resource to a creation request.
 

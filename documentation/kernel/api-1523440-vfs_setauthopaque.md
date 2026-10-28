@@ -15,7 +15,7 @@ Mark a filesystem as having authorization decisions controlled remotely.
 void vfs_setauthopaque(mount_t mp);
 ```
 
-#### Return Value
+## Return Value
 
 void.
 

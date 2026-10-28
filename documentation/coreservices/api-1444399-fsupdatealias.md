@@ -17,11 +17,11 @@ Updates an alias record for a specified target.
 OSErr FSUpdateAlias(const FSRef *fromFile, const FSRef *target, AliasHandle alias, Boolean *wasChanged);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 
-#### Discussion
+## Discussion
 
 This function rebuilds the entire alias record and fills it in as the `FSNewAlias` function would. The `FSUpdateAlias` function always creates a complete alias record. When you use `FSUpdateAlias` to update a minimal alias record, you convert the minimal record to a complete record.
 

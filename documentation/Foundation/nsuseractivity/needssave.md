@@ -25,7 +25,7 @@ var needsSave: Bool { get set }
 @property (assign) BOOL needsSave;
 ```
 
-#### Discussion
+## Discussion
 
 If [`true`](../../Swift/true.md), the delegate for this user activity receives a [`userActivityWillSave(_:)`](../nsuseractivitydelegate/useractivitywillsave%28_%29.md) callback before the activity is sent for continuation on another device.
 

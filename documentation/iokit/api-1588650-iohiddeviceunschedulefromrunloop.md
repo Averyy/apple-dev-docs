@@ -16,7 +16,7 @@ Unschedules HID device with run loop.
 void IOHIDDeviceUnscheduleFromRunLoop(IOHIDDeviceRef device, CFRunLoopRef runLoop, CFStringRef runLoopMode);
 ```
 
-#### Discussion
+## Discussion
 
 Formally disassociates device with client's run loop.
 

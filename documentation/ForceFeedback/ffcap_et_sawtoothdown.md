@@ -18,7 +18,7 @@ var FFCAP_ET_SAWTOOTHDOWN: Int { get }
 FFCAP_ET_SAWTOOTHDOWN
 ```
 
-#### Discussion
+## Discussion
 
 The effect represents a sawtooth down force effect.
 

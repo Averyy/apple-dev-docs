@@ -21,11 +21,11 @@ Returns a publisher that repeatedly emits the current date on the given interval
 static func publish(every interval: TimeInterval, tolerance: TimeInterval? = nil, on runLoop: RunLoop, in mode: RunLoop.Mode, options: RunLoop.SchedulerOptions? = nil) -> Timer.TimerPublisher
 ```
 
-#### Return Value
+## Return Value
 
 A publisher that repeatedly emits the current date on the given interval.
 
-#### Discussion
+## Discussion
 
 The return type, [`Timer.TimerPublisher`](./timerpublisher.md), conforms to [`ConnectablePublisher`](../../Combine/connectablepublisher.md), which means you must explicitly connect to the [`Timer`](../timer.md) publisher to begin publishing events. You can do this with a call to [`connect()`](../../Combine/connectablepublisher/connect%28%29.md), or by using [`autoconnect()`](../../Combine/connectablepublisher/autoconnect%28%29.md) to automatically connect when a subscriber attaches, as shown here:
 

@@ -28,7 +28,7 @@ HKErrorAuthorizationDenied
 
 - [Authorizing access to health data](../../authorizing-access-to-health-data.md)
 
-#### Discussion
+## Discussion
 
 This error occurs only when your app attempts to save data. If your app isn’t authorized to query data, it receives only the data that the app has saved into HealthKit. For more information on setting up HealthKit, see `HealthKit`.
 

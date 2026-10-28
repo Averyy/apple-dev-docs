@@ -27,7 +27,7 @@ func BNNSFilterCreateLayerNormalization(_ normType: BNNSFilterType, _ layer_para
 BNNSFilterBNNSFilterCreateLayerNormalization(BNNSFilterType normType, const BNNSLayerParametersNormalization *layer_params, const BNNSFilterParameters *filter_params);
 ```
 
-#### Discussion
+## Discussion
 
 Use a normalization loss layer to normalize tensor values, that is, calculate new elements to have a zero mean and a unit standard deviation.
 

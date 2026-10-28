@@ -17,7 +17,7 @@ Applies the HardTanh function.
 class HardTanh
 ```
 
-#### Overview
+## Overview
 
 This is (element-wise):
 
@@ -25,7 +25,7 @@ This is (element-wise):
 maximum(minimum(x, max), min)
 ```
 
-##### See Also
+### See Also
 
 - [Activation Functions and Layers](./activations.md)
 - [`hardTanH(_:min:max:)`](./hardtanh%28_,min,max%29.md)

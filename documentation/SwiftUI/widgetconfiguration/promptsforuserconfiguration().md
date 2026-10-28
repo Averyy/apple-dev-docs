@@ -20,7 +20,7 @@ Specifies that a widget’s configuration UI should be automatically presented a
 @preconcurrency func promptsForUserConfiguration() -> some WidgetConfiguration
 ```
 
-#### Return Value
+## Return Value
 
 A widget configuration that knows whether the presentation of a configuration UI is preferred..
 

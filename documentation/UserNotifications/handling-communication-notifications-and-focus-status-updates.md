@@ -12,13 +12,13 @@ Create a richer calling and messaging experience in your app by implementing com
 - Mac Catalyst 14.0+
 - Xcode 13.0+
 
-#### Overview
+## Overview
 
 Communication notifications have a distinct user experience that features prominent avatars and group names, as well as unique breakthrough behaviors. Implement these notifications for incoming calls and messages to provide additional context to the user.
 
 > **Note**: This sample code project is associated with WWDC21 session [10091: Send communication and Time Sensitive notifications](https://developer.apple.com/videos/play/wwdc2021/10091/).
 
-##### Configure the Sample Code Project
+### Configure the Sample Code Project
 
 This sample runs on physical devices in order to meet requirements for push notifications and the Notification Service Extension. The Notification Service Extension modifies a notification’s content before it’s displayed on the user’s device. To learn more about Notification Service Extensions, see [Modifying Content in Newly Delivered Notifications](./modifying-content-in-newly-delivered-notifications.md).
 
@@ -33,7 +33,7 @@ To support communication notifications, the app’s `Info.plist` file must conta
 
 Accessing a user’s Focus status requires their authorization. To let the user know how the app uses their Focus status, include a usage description string. Provide this usage description string as a value for the `Privacy - Focus Status Usage Description` key in the app’s `Info.plist` file.
 
-##### Donate Intent Interactions
+### Donate Intent Interactions
 
 Donate an intent interaction for each communication that takes place in the app. The app should donate both outgoing and incoming communication interactions. Donate incoming interactions to update communication notifications and enable their unique user experience and breakthrough behavior. Donate outgoing interactions when the current user sends messages or initiates calls. This allows the system to make better suggestions and provide communication notification functionality.
 
@@ -63,7 +63,7 @@ The sample initializes interactions in `CommunicationMapper.ineraction(communica
     }
 ```
 
-##### Update Notification Content
+### Update Notification Content
 
 To display a communication notification, your app should update the notification’s content. This allows the notification to break through scheduled notification summaries. It’s also possible for communication notifications to break through an enabled Focus when the Allowed People list contains the sender. Use the same intent object that initialized the `incoming` interaction. Wait for the interaction donation to complete before updating notification content.
 
@@ -98,7 +98,7 @@ The sample updates notification content in the Notification Service Extension by
     }
 ```
 
-##### Request Focus Status
+### Request Focus Status
 
 When a user has enabled a Focus, it may be useful to display that status to other users of an app. This informs other users when someone silences their notifications and may not see communications right away.
 

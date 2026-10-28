@@ -12,11 +12,11 @@ virtual bool readDDCClock(
  IOIndexbus );
 ```
 
-#### Return Value
+## Return Value
 
 A boolean reflecting the current state of the clock line on the given bus.
 
-#### Overview
+## Overview
 
 Framebuffers making use of the IOFramebuffer::doI2CRequest() software implementation of I2C should implement this method to return the input state of the I2C clock line on the given bus. Otherwise may be unimplemented.
 

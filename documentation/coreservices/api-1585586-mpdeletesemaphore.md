@@ -15,11 +15,11 @@ Removes a semaphore.
 OSStatus MPDeleteSemaphore(MPSemaphoreID semaphore);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./carbon_core/multiprocessing_services.md#1663965).
 
-#### Discussion
+## Discussion
 
 Calling this function unblocks all tasks waiting on the semaphore and the tasks’ respective  [`MPWaitOnSemaphore`](./api-1585722-mpwaitonsemaphore.md)  calls will return with the result code `kMPDeletedErr`.
 

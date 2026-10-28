@@ -5,21 +5,21 @@
 
 Return the content of a list, with duplicates removed and sorted, so that you can compare it to another set.
 
-#### Overview
+## Overview
 
 Use the `asSet()` function in the expression of a matchmaking rule to convert arrays to sets. For example, `asSet([ `4`, `3`, `2`, `1`, `4`, `1` ])` returns `[ `1`, `2`, `3`, `4` ]` with the duplicates removed and ordered incrementally, and `asSet([ ‘d’, ‘c’, ‘b’, ‘a’, ‘d’, ‘a’ ])` returns `[ ‘a’, ‘b’, ‘c’, ‘d’ ]` ordered alphabetically.
 
-##### Declaration
+### Declaration
 
 ```other
 array[Any] asSet(array[Any] list)
 ```
 
-##### Parameters
+### Parameters
 
 -`list`: An array to convert to a set.
 
-##### Return value
+### Return value
 
 A set that contains the contents of `list` with the duplicates removed and sorted in an order that’s natural to the contents.
 

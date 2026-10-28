@@ -19,7 +19,7 @@ var selectedTabViewItem: NSTabViewItem? { get }
 @property (strong, readonly, nullable) NSTabViewItem * selectedTabViewItem;
 ```
 
-#### Discussion
+## Discussion
 
 If no item is selected, the value of this property is `nil`.
 

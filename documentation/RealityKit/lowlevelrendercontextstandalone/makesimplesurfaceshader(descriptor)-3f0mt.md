@@ -15,8 +15,8 @@ Asynchronously creates a simple surface shader using a built-in tint color or te
 ## Declaration
 
 ```swift
-nonisolated
-(nonsending) final func makeSimpleSurfaceShader(descriptor: LowLevelMaterialResource.SimpleSurfaceDescriptor) async throws -> sending LowLevelMaterialResource.SurfaceShader
+nonisolated(nonsending)
+final func makeSimpleSurfaceShader(descriptor: LowLevelMaterialResource.SimpleSurfaceDescriptor) async throws -> sending LowLevelMaterialResource.SurfaceShader
 ```
 
 **Other overloads**:
@@ -25,11 +25,11 @@ nonisolated
 final func makeSimpleSurfaceShader(descriptor: LowLevelMaterialResource.SimpleSurfaceDescriptor) throws -> sending LowLevelMaterialResource.SurfaceShader
 ```
 
-#### Return Value
+## Return Value
 
 A compiled [`LowLevelMaterialResource.SurfaceShader`](../lowlevelmaterialresource/surfaceshader.md).
 
-#### Discussion
+## Discussion
 
 > **Throws**: An error if shader compilation fails.
 

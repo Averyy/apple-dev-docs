@@ -19,7 +19,7 @@ class let didExitVersionBrowserNotification: NSNotification.Name
 extern NSNotificationName const NSWindowDidExitVersionBrowserNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is the `NSWindow` object that exited version browser mode. This notification doesn’t contain a `userInfo` dictionary.
 

@@ -5,7 +5,7 @@
 
 Add fabric, soft surfaces, and draping materials that bend, fold, and respond to forces and contact in your 3D scenes.
 
-#### Overview
+## Overview
 
 This collection covers the components, shapes, and resources you use to add simulated fabric and other deformable surfaces to a scene. Use it to give an entity cloth-like behavior, define its physical material and shape, and control how it collides with the world around it. You can shape how the simulation responds to forces, grabbing, and query regions, and react to the events it generates as it runs. Reach for these APIs when static or rigid-body geometry can’t capture the flowing, draping motion you want.
 

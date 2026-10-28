@@ -20,7 +20,7 @@ struct AuthorizationExternalForm
 typedef struct { ... } AuthorizationExternalForm;
 ```
 
-#### Overview
+## Overview
 
 Authorization references are bound by session, process, and time limits, so you can’t store the authorization references for another process to use. Use the functions [`AuthorizationMakeExternalForm(_:_:)`](./authorizationmakeexternalform%28_,_%29.md) and [`AuthorizationCreateFromExternalForm(_:_:)`](./authorizationcreatefromexternalform%28_,_%29.md) to externalize and internalize the authorization reference. Apps should take care not to disclose the external authorization reference to potential attackers since any process can use this external authorization reference to access the authorization reference.
 

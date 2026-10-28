@@ -21,7 +21,7 @@ var url: URL? { get set }
 @property (nonatomic, copy, nullable) NSURL * URL;
 ```
 
-#### Discussion
+## Discussion
 
 Encode your application’s data in the URL. For example, you can encode data as key-value pairs in the URL’s query string, as shown below:
 

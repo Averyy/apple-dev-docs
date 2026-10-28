@@ -5,11 +5,11 @@
 
 A filter element that references a video effect.
 
-#### Overview
+## Overview
 
 Apply video filters to elements that represent visual media, for example, `video`, `text`, `clip`, and `ref-clip` elements. For multicam clips, apply the video filters on the individual angles, represented by `mc-source` elements.
 
-##### Color Filters
+### Color Filters
 
 Describe color correction, as well as color matching and color balance effects using the `filter-video` element. The `filter-video` element references an associated `effect` element in the resource section that designates the particular effect. In addition to the Color Board effect, Final Cut Pro 10.4 adds Color Curves, Color Wheel, and Hue/Saturation Curves as color-correction effects.
 
@@ -19,7 +19,7 @@ You can apply color correction with a collection of video-filter masks. The `fi
 
 > **Note**:  FCPXML 1.3 and later supports color filtering. Starting in FCPXML 1.5, you can describe color correction, color matching, and color balance effects using the `filter-video` element instead of the `adjust-color` and `color-filter` elements.
 
-##### Primary Color Grading
+### Primary Color Grading
 
 Final Cut Pro supports the American Society of Cinematographers Color Decision List (ASC CDL) format for the exchange of basic primary color grading information between equipment and software from different manufacturers.
 

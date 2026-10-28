@@ -19,11 +19,11 @@
 static SPRect3DFloat SPRect3DFloatShear(SPRect3DFloat rect, SPAxis shearAxis, float shearFactor0, float shearFactor1);
 ```
 
-#### Return Value
+## Return Value
 
 The transformed rectangle.
 
-#### Discussion
+## Discussion
 
 Returns a rectangle that’s sheared over an axis by shear factors for the other two axes.
 

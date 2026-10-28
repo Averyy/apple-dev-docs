@@ -24,11 +24,11 @@ class func apply(tiledExtent tileExtents: [CIVector], inputs: [CIImage]?, argume
 + (CIImage *) applyWithTiledExtent:(NSArray<CIVector *> *) tileExtents inputs:(NSArray<CIImage *> *) inputs arguments:(NSDictionary<NSString *,id> *) args error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
  An autoreleased [`CIImage`](../ciimage.md)
 
-#### Discussion
+## Discussion
 
 Each tile is a CGRect encoded as a CIVector using +[CIVector vectorWithCGRect:]. The overall output extent is computed as the union of all tile extents.
 

@@ -19,7 +19,7 @@ func invalidateRestorableState()
 - (void) invalidateRestorableState;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method whenever the restorable state of your responder changes. This method marks the responder’s state as dirty, which writes the state to disk at some point in the future. Don’t override this method.
 

@@ -22,7 +22,7 @@ A type for using an inline presentation intent as an attribute.
 enum InlinePresentationIntentAttribute
 ```
 
-#### Overview
+## Overview
 
 An inline presentation intent applies to a run of characters inside a larger block, and covers traits like emphasis, strikethrough, and code voice.
 

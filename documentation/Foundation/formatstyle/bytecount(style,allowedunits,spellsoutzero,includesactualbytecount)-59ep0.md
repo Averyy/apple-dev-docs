@@ -23,11 +23,11 @@ static func byteCount(style: ByteCountFormatStyle.Style, allowedUnits: ByteCount
 
 Available when `Self` is `ByteCountFormatStyle`.
 
-#### Return Value
+## Return Value
 
 A format style for formatting a measurement of data storage, customized with the provided behaviors.
 
-#### Discussion
+## Discussion
 
 Use this type method when the call point allows the use of [`ByteCountFormatStyle`](../bytecountformatstyle.md). You typically do this when calling the [`formatted(_:)`](../../Swift/binaryinteger/formatted%28_%29-4qd73.md) method of [`BinaryInteger`](../../Swift/binaryinteger.md) values that represent byte counts, as seen here:
 

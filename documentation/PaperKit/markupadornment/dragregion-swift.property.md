@@ -19,7 +19,7 @@ The constraints that define where a person can drag this adornment.
 var dragRegion: MarkupAdornment.DragRegion
 ```
 
-#### Discussion
+## Discussion
 
 - `.fixed`: A person cannot move the adornment.
 - `.canvas`: A person can move the adornment freely within the canvas.

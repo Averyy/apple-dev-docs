@@ -25,7 +25,7 @@ func setRenderPipelineState(_ pipelineState: any MTLRenderPipelineState)
 - (void) setRenderPipelineState:(id<MTLRenderPipelineState>) pipelineState;
 ```
 
-#### Discussion
+## Discussion
 
 You don’t need to call this method if you create an indirect command buffer with its [`inheritPipelineState`](../mtlindirectcommandbufferdescriptor/inheritpipelinestate.md) property equal to [`true`](../../Swift/true.md). The command gets the pipeline state from the parent encoder when it runs.
 

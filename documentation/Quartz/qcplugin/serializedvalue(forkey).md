@@ -21,15 +21,15 @@ func serializedValue(forKey key: String!) -> Any!
 - (id) serializedValueForKey:(NSString *) key;
 ```
 
-#### Return Value
+## Return Value
 
 Either `nil` or a value that’s compliant with property lists:  `NSString`, `NSNumber`, `NSDate`, `NSData`, `NSArray`, or `NSDictionary`.
 
-#### Discussion
+## Discussion
 
 Provides custom serialization for patch internal settings that do not comply to the [`NSCoding`](../../Foundation/nscoding.md) protocol.
 
-#### Discussion
+## Discussion
 
 If your patch has internal settings that do not conform to the [`NSCoding`](../../Foundation/nscoding.md) protocol, you must implement this method.
 

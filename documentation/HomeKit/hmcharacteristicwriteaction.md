@@ -24,7 +24,7 @@ class HMCharacteristicWriteAction<TargetValueType> where TargetValueType : NSCop
 @interface HMCharacteristicWriteAction : HMAction
 ```
 
-#### Overview
+## Overview
 
 Action sets are instances of [`HMActionSet`](./hmactionset.md).
 

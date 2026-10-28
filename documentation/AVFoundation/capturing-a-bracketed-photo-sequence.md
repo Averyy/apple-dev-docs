@@ -5,13 +5,13 @@
 
 Capture several photos at once, varying parameters like exposure duration or light sensitivity.
 
-#### Overview
+## Overview
 
 Bracketing is a well-known photographic technique in which a sequence of shots is rapidly taken of the same scene, usually varying only in a single parameter such as aperture or shutter speed (exposure length). Experienced photographers use this technique to help them choose the best photos after shooting, or to apply offline post-processing that fuses multiple images together to create extended dynamic range or other special effects.
 
 In iOS, you can use [`AVCapturePhotoOutput`](./avcapturephotooutput.md) and [`AVCapturePhotoBracketSettings`](./avcapturephotobracketsettings.md) to automatically capture a bracket of photos for each [`capturePhoto(with:delegate:)`](./avcapturephotooutput/capturephoto%28with,delegate%29.md) call. Once you’ve built a single-exposure camera in your app (see [Capturing still and Live Photos](./capturing-still-and-live-photos.md)), follow these steps to add multi-image bracket support.
 
-##### Choose bracket settings
+### Choose bracket settings
 
 You specify a multi-exposure bracket by providing an array of bracket settings obejcts. iOS offers two types of automatic bracketing:
 
@@ -30,7 +30,7 @@ let exposureSettings = exposureValues.map(makeAutoExposureSettings)
 
 > 💡 **Tip**:  In Swift, you can easily convert an array of exposure values to an array of bracket settings by passing the appropriate initializer to the `map(_:)` function, as shown above.
 
-##### Create photo settings and shoot
+### Create photo settings and shoot
 
 Instead of the [`AVCapturePhotoSettings`](./avcapturephotosettings.md) object you create when shooting a single photo, to shoot a bracketed capture you’ll need an [`AVCapturePhotoBracketSettings`](./avcapturephotobracketsettings.md) object. This object combines the general settings that apply to all photos in the bracket with your bracket settings that specify how each photo differs from the rest of the bracket.
 
@@ -53,7 +53,7 @@ self.photoOutput.capturePhoto(with: photoSettings, delegate: captureProcessor)
 
 > 💡 **Tip**:  Turning on [`isLensStabilizationEnabled`](./avcapturephotobracketsettings/islensstabilizationenabled.md) (if supported) causes the camera to apply optical image stabilization (OIS) across the entire bracket, so that photos resulting from the bracket still line up with each other even if the device moves during capture.
 
-##### Handle bracketed capture results
+### Handle bracketed capture results
 
 The photo output calls your delegate’s [`photoOutput(_:didFinishProcessingPhoto:error:)`](./avcapturephotocapturedelegate/photooutput%28_,didfinishprocessingphoto,error%29.md) method at least once for each exposure in the bracket, and possibly additional times depending on your capture settings. For example, if you request RAW+HEIF capture in a three-exposure bracket, the photo output calls your delegate’s `didFinishProcessingPhoto` method six times (2 formats × 3 exposures), providing six [`AVCapturePhoto`](./avcapturephoto.md) objects.
 

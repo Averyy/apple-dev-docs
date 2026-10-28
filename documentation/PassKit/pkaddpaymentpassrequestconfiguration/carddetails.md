@@ -23,7 +23,7 @@ var cardDetails: [PKLabeledValue] { get set }
 @property (nonatomic, copy) NSArray<PKLabeledValue *> * cardDetails;
 ```
 
-#### Discussion
+## Discussion
 
 This property provides user-visible descriptions that help to identify the card.
 

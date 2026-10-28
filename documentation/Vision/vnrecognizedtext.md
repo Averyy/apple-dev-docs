@@ -24,7 +24,7 @@ class VNRecognizedText
 @interface VNRecognizedText : NSObject
 ```
 
-#### Overview
+## Overview
 
 A single [`VNRecognizedTextObservation`](./vnrecognizedtextobservation.md) can contain multiple recognized text objects—one for each candidate.
 

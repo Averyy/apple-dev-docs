@@ -25,7 +25,7 @@ var rating: Float { get }
 @property (nonatomic, readonly) float rating;
 ```
 
-#### Discussion
+## Discussion
 
 The `rating` property must be between the minimum and maximum ratings defined by the [`maximumRating`](../mpratingcommand/maximumrating.md) and [`minimumRating`](../mpratingcommand/minimumrating.md) properties.
 

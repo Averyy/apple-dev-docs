@@ -21,7 +21,7 @@ A narrow representation of an era.
 static var narrow: Date.FormatStyle.Symbol.Era { get }
 ```
 
-#### Discussion
+## Discussion
 
 A custom format style conveying the shortest representation of an era. For example, `B` (*before Christ*) and `A` (*anno Domini*).
 

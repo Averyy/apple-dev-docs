@@ -20,7 +20,7 @@ An anchor point attached to a real world surface.
 case plane(AnchoringComponent.Target.Alignment, classification: AnchoringComponent.Target.Classification, minimumBounds: SIMD2<Float>)
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: macOS and tvOS apps don’t track this type of anchor.
 

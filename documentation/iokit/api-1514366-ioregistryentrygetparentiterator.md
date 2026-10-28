@@ -23,11 +23,11 @@ func IORegistryEntryGetParentIterator(_ entry: io_registry_entry_t, _ plane: Uns
 kern_return_t IORegistryEntryGetParentIterator(io_registry_entry_t entry, const io_name_t plane, io_iterator_t *iterator);
 ```
 
-#### Return Value
+## Return Value
 
 A `kern_return_t` error.
 
-#### Discussion
+## Discussion
 
 This method creates an iterator which will return each of a registry entry's parent entries in a specified plane.
 

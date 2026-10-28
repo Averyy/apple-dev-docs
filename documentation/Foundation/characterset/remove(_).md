@@ -22,7 +22,7 @@ Remove a `Unicode.Scalar` representation of a character from the `CharacterSet`.
 mutating func remove(_ character: Unicode.Scalar) -> Unicode.Scalar?
 ```
 
-#### Discussion
+## Discussion
 
 `Unicode.Scalar` values are available on `Swift.String.UnicodeScalarView`.
 

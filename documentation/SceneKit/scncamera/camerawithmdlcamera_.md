@@ -21,11 +21,11 @@ Creates a camera from the specified Model I/O camera object.
 + (instancetype) cameraWithMDLCamera:(MDLCamera *) mdlCamera;
 ```
 
-#### Return Value
+## Return Value
 
 A new camera object.
 
-#### Discussion
+## Discussion
 
 The Model I/O framework provides universal support for import, export, description, and processing of several 3D asset file formats and related resources. (For details, see [Model I/O](../../ModelIO/ModelIO.md).) The [`MDLCamera`](../../ModelIO/mdlcamera.md) class is a generic description of a viewpoint on a scene, supporting a superset of the attributes described by the [`SCNCamera`](../scncamera.md) class.
 

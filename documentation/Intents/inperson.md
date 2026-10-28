@@ -30,7 +30,7 @@ class INPerson
 - [Handling an Intent](../SiriKit/handling-an-intent.md)
 - [Resolving the Parameters of an Intent](../SiriKit/resolving-the-parameters-of-an-intent.md)
 
-#### Overview
+## Overview
 
 SiriKit uses [`INPerson`](./inperson.md) objects to represent people with many different roles, including the sender or recipient of calls and messages, the payer or payee of a financial transaction, or the driver of a vehicle. You also use person objects to identify the corresponding contact in your app and to communicate information about that contact back to SiriKit.
 

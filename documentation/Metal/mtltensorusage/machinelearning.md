@@ -24,7 +24,7 @@ static var machineLearning: MTLTensorUsage { get }
 MTLTensorUsageMachineLearning
 ```
 
-#### Discussion
+## Discussion
 
 You can use tensors with this context in [`MTL4MachineLearningCommandEncoder`](../mtl4machinelearningcommandencoder.md) instances.
 

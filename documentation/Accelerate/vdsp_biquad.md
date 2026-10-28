@@ -21,7 +21,7 @@ Applies a single-precision single-channel biquadratic IIR filter.
 extern void vDSP_biquad(const struct vDSP_biquad_SetupStruct *__Setup, float *__Delay, const float *__X, vDSP_Stride __IX, float *__Y, vDSP_Stride __IY, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 This function applies a cascaded biquad filter to the input values in `X`, and places the results in `Y`.
 

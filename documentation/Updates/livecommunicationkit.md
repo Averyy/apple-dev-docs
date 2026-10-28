@@ -5,11 +5,11 @@
 
 Learn about important changes to LiveCommunicationKit.
 
-#### Overview
+## Overview
 
 Browse notable changes in [LiveCommunicationKit](../LiveCommunicationKit/LiveCommunicationKit.md).
 
-#### June 2025
+## June 2025
 
 - Configure a conversation to include an option to use the system’s translation capabilities with a [`SetTranslatingAction`](../LiveCommunicationKit/settranslatingaction.md).
 - Prepare your app to be a default dialer app and initiate conversations with [`StartCellularConversationAction`](../LiveCommunicationKit/startcellularconversationaction.md) and [`TelephonyConversationManager`](../LiveCommunicationKit/telephonyconversationmanager.md).

@@ -20,7 +20,7 @@ typealias CVDisplayLinkOutputCallback = (CVDisplayLink, UnsafePointer<CVTimeStam
 typedef int (*)(struct __CVDisplayLink *, const CVTimeStamp *, const CVTimeStamp *, unsigned long long, unsigned long long *, void *) CVDisplayLinkOutputCallback;
 ```
 
-#### Discussion
+## Discussion
 
 Your app must register a callback function for the system to invoke with the data necessary to process and output a frame of video. Your callback must retrieve the frame with the timestamp that the `inOutputTime` parameter specifies, manipulate it if you require (for example, apply color correction or map onto a surface), and output it to the display.
 

@@ -19,7 +19,7 @@ var autosaveTableColumns: Bool { get set }
 @property BOOL autosaveTableColumns;
 ```
 
-#### Discussion
+## Discussion
 
 When this property is set to [`true`](../../Swift/true.md), the table information is saved separately for each user and application under the name specified in the [`autosaveName`](./autosavename-swift.property.md) property. If you change the value of this property from [`false`](../../Swift/false.md) to [`true`](../../Swift/true.md), the table tries to read in any saved information and sets the order and width of this table view’s columns to match. If the [`autosaveName`](./autosavename-swift.property.md) property is `nil`, this setting is ignored and the table information is not read or saved.
 

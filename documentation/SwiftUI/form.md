@@ -27,7 +27,7 @@ struct Form<Content> where Content : View
 - [Picking container views for your content](./picking-container-views-for-your-content.md)
 - [Grouping data with lazy stack views](./grouping-data-with-lazy-stack-views.md)
 
-#### Overview
+## Overview
 
 SwiftUI applies platform-appropriate styling to views contained inside a form, to group them together. Form-specific styling applies to things like buttons, toggles, labels, lists, and more. Keep in mind that these stylings may be platform-specific. For example, forms appear as grouped lists on iOS, and as aligned vertical stacks on macOS.
 

@@ -25,7 +25,7 @@ mutating func setValue(_ value: String?, forHTTPHeaderField field: String)
 
 - [Uploading data to a website](../uploading-data-to-a-website.md)
 
-#### Discussion
+## Discussion
 
 Certain header fields are reserved. Do not use this method to set such headers. Specifically, there is no need for you to set the `Content-Length` header. See [Reserved HTTP headers](../nsurlrequest.md#Reserved-HTTP-headers).
 

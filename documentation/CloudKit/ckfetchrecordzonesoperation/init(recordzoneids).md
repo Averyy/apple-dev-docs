@@ -25,7 +25,7 @@ convenience init(recordZoneIDs zoneIDs: [CKRecordZone.ID])
 - (instancetype) initWithRecordZoneIDs:(NSArray<CKRecordZoneID *> *) zoneIDs;
 ```
 
-#### Discussion
+## Discussion
 
 After creating the operation, assign a value to the [`fetchRecordZonesCompletionBlock`](./fetchrecordzonescompletionblock.md) property so you can process the results.
 

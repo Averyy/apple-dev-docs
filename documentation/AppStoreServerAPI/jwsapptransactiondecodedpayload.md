@@ -19,7 +19,7 @@ object JWSAppTransactionDecodedPayload
 
 - [App Store Server API changelog](./app-store-server-api-changelog.md)
 
-#### Discussion
+## Discussion
 
 The [`Get App Transaction Info`](./get-app-transaction-info.md) endpoint returns a [`JWSAppTransaction`](./jwsapptransaction.md), which you decode to get `JWSAppTransactionDecodedPayload`.
 

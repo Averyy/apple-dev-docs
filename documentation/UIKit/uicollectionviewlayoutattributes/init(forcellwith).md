@@ -23,11 +23,11 @@ convenience init(forCellWith indexPath: IndexPath)
 + (instancetype) layoutAttributesForCellWithIndexPath:(NSIndexPath *) indexPath;
 ```
 
-#### Return Value
+## Return Value
 
 A new layout attributes object whose precise type matches the type of the class used to call this method.
 
-#### Discussion
+## Discussion
 
 Use this method to create a layout attributes object for a cell in the collection view. Cells are the main type of view presented by a collection view. The index path for a cell typically includes both a section index and an item index for locating the cell’s contents in the collection view’s data source.
 

@@ -21,7 +21,7 @@ The level of quality for rendering an image that requires interpolation, such as
 enum Interpolation
 ```
 
-#### Overview
+## Overview
 
 The [`interpolation(_:)`](./interpolation%28_%29.md) modifier specifies the interpolation behavior when using the [`resizable(capInsets:resizingMode:)`](./resizable%28capinsets,resizingmode%29.md) modifier on an [`Image`](../image.md). Use this behavior to prioritize rendering performance or image quality.
 

@@ -9,7 +9,7 @@ Provide user interface elements for security features such as authorization, acc
 **Availability**:
 - macOS 10.3+
 
-#### Overview
+## Overview
 
 > **Note**:  This document was previously titled *Security Objective-C API*. The documentation for the SFAuthorization class is now in a separate document, [Security Foundation](../SecurityFoundation/SecurityFoundation.md).
 

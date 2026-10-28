@@ -19,7 +19,7 @@ func ancestorShared(with view: NSView) -> NSView?
 - (NSView *) ancestorSharedWithView:(NSView *) view;
 ```
 
-#### Return Value
+## Return Value
 
 The closest ancestor or `nil` if there’s no such object. Returns `self` if `aView` is identical to the view.
 

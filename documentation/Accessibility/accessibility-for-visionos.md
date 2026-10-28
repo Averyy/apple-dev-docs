@@ -5,7 +5,7 @@
 
 Make your apps accessible to everyone who uses visionOS.
 
-#### Overview
+## Overview
 
 Design your visionOS app with accessibility in mind. Incorporate the accessibility features in [SwiftUI](../SwiftUI/SwiftUI.md) and [UIKit](../UIKit/UIKit.md), and support additional features that are specific to visionOS.
 

@@ -10,11 +10,11 @@ framework: "CareKit/CareKit"
 
 Create tasks and schedules for patients and display them using a synchronized view controller.
 
-#### Overview
+## Overview
 
 When creating an app using CareKit, you can create tasks, such as taking medication or performing an exercise, for the user to complete. To create tasks for users, first create a store. This provides a place for your task data to persist. Then create both simple and complex task schedules so your users know when to perform their tasks. You can then present the scheduled tasks to the user.
 
-##### Create a store
+### Create a store
 
 Create a store for your data. You instantiate your store with a name. There’s no specific validation of this name, but it’s good practice to make it distinctive. Use the reverse-url format bundle identifier of your app with a unique name appended:
 
@@ -28,7 +28,7 @@ let store = OCKStore(name: storeName)
 
 If you attempt to create a store with a name of an already-existing store, the `OCKStore` initializer returns the existing store.
 
-##### Create a schedule
+### Create a schedule
 
 When creating a task, provide a schedule so users know when they need to complete the task. For a task like taking a medication, the schedule specifies when the user should take that medication, such as 11:00 AM or after dinner.
 
@@ -49,7 +49,7 @@ var schedule = OCKSchedule(composing: [dailyAtBreakfast])
 
 Create your schedule using date objects initialized with the user’s calendar preference. There are a variety of calendars your user could be using, each with different properties and nuances. Creating dates with the user’s calendar preference ensures correct date calculations.
 
-##### Schedule multiple elements
+### Schedule multiple elements
 
 If you need a schedule that’s more complex than listing once-a-day events, you can build it by working with multiple schedule elements. The code below expands on the previous code example by creating an additional schedule element that occurs every other day at 12:00 PM. Finally, it creates a schedule with the two schedule elements.
 
@@ -66,7 +66,7 @@ let everyTwoDaysAtLunch = OCKScheduleElement(start: atLunch, end: nil, interval:
 var schedule = OCKSchedule(composing: [dailyAtBreakfast, everyTwoDaysAtLunch])
 ```
 
-##### Create and save tasks to the store
+### Create and save tasks to the store
 
 Once you’ve defined a schedule, use it to create a task. You create a task with an identifier, title, care plan, and schedule. You can also provide instructions for the task as shown in the second line:
 
@@ -82,7 +82,7 @@ Next, save your task to the store. You can specify a function to handle the comp
 let storedTask = try await store.addTask(task)
 ```
 
-##### Handle errors
+### Handle errors
 
 If interacting with the store throws an error, you can catch the error to help troubleshoot the problem and decide how to handle it.
 
@@ -99,7 +99,7 @@ Use this value to determine whether to retry the operation, inform the user, or 
 
 For example, if you attempt to add an entity to the store that’s missing required information, you receive an error enumeration with the value of `OCKStoreError.invalidValue(reason:)`, and the localized description of “OCKCDScheduleElement must have at least 1 non-zero interval.
 
-##### Display Scheduled tasks
+### Display Scheduled tasks
 
 Once you have a store populated with tasks, you can display those tasks to the user. CareKit provides pre-built view controllers and a range of controls and views to build your own user interface layouts.
 

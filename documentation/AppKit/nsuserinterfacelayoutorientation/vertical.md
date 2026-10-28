@@ -19,7 +19,7 @@ case vertical
 NSUserInterfaceLayoutOrientationVertical
 ```
 
-#### Discussion
+## Discussion
 
 Use this constant in the [`orientation`](../nsstackview/orientation.md) property to specify a vertical layout for the stack view. Use it to specify the vertical user interface axis for clipping resistance and hugging priority.
 

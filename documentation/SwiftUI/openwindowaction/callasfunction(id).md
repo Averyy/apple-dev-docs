@@ -20,7 +20,7 @@ Opens a window that’s associated with the specified identifier.
 @preconcurrency func callAsFunction(id: String)
 ```
 
-#### Discussion
+## Discussion
 
 Don’t call this method directly. SwiftUI calls it when you call the [`openWindow`](../environmentvalues/openwindow.md) action with an identifier:
 

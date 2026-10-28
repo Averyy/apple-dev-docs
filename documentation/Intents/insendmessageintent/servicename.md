@@ -32,7 +32,7 @@ var serviceName: String? { get }
 @property (atomic, copy, readonly, nullable) NSString * serviceName;
 ```
 
-#### Discussion
+## Discussion
 
 Apps that support multiple ways of sending messages can use the information in this property to determine which service to use. If your app supports only one way of sending messages, you can ignore this value.
 

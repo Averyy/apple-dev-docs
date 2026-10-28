@@ -24,7 +24,7 @@ var rules: [GKRule] { get }
 @property (nonatomic, retain, readonly) NSArray<GKRule *> * rules;
 ```
 
-#### Discussion
+## Discussion
 
 This array holds all rules under consideration by the system—that is, the union of the [`agenda`](./agenda.md) and [`executed`](./executed.md) lists. The agenda holds the rules to be considered when evaluating the system, listed in order of their [`salience`](../gkrule/salience.md) values (or, for rules with the same salience, the order in which they were added to the system). During evaluation of the rule system, if a rule on the [`agenda`](./agenda.md) list is satisfied (that is, its predicate returns [`true`](../../Swift/true.md) and it executes its action) the system moves that rule to the [`executed`](./executed.md) list.
 

@@ -18,7 +18,7 @@ static var radioGroup: RadioGroupPickerStyle { get }
 
 Available when `Self` is `RadioGroupPickerStyle`.
 
-#### Discussion
+## Discussion
 
 Use this style when there are two to five options. Consider using [`menu`](./menu.md) when there are more than five options.
 

@@ -23,7 +23,7 @@ class AVCaptureExternalDisplayConfiguration
 @interface AVCaptureExternalDisplayConfiguration : NSObject
 ```
 
-#### Overview
+## Overview
 
 Using an [`AVCaptureExternalDisplayConfiguration`](./avcaptureexternaldisplayconfiguration.md), you direct your [`AVCaptureExternalDisplayConfigurator`](./avcaptureexternaldisplayconfigurator.md) how to configure an external display to match your device’s active video format.
 

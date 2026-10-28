@@ -18,7 +18,7 @@ An assigned work document is a document that contains taker and scorer markup sp
 struct AssignedWorkDocument
 ```
 
-#### Overview
+## Overview
 
 This document has a collection of [`AssignedWorkDocument.ScoreAnnotation`](./assignedworkdocument/scoreannotation.md) objects that represent marks such as correct and incorrect marks on a page. Score annotations are not automatically associated with a question defined in the `AssignableDocument` that this work document is based on. To determine the score for the work, you use `computeScore`.
 

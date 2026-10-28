@@ -20,7 +20,7 @@ Creates a new binary visible or intersection function asynchronously.
 func makeBinaryFunction(descriptor: MTL4BinaryFunctionDescriptor, compilerTaskOptions: MTL4CompilerTaskOptions? = nil) async throws -> any MTL4BinaryFunction
 ```
 
-#### Return Value
+## Return Value
 
 A binary function upon success, otherwise this function throws.
 

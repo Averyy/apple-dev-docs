@@ -33,11 +33,11 @@ func aspectRatio(_ aspectRatio: CGSize, contentMode: ContentMode) -> some View
 
 - [Fitting images into available space](../fitting-images-into-available-space.md)
 
-#### Return Value
+## Return Value
 
 A view that constrains this view’s dimensions to the aspect ratio of the given size using `contentMode` as its scaling algorithm.
 
-#### Discussion
+## Discussion
 
 Use `aspectRatio(_:contentMode:)` to constrain a view’s dimensions to an aspect ratio specified by a [`CGFloat`](../../CoreFoundation/cgfloat-swift.struct.md) using the specified content mode.
 

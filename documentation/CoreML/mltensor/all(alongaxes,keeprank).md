@@ -27,7 +27,7 @@ func all(alongAxes axes: Int..., keepRank: Bool = false) -> MLTensor
 func all(alongAxes axes: [Int], keepRank: Bool = false) -> MLTensor
 ```
 
-#### Return Value
+## Return Value
 
 The reduced Boolean tensor.
 

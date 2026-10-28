@@ -19,7 +19,7 @@ static let fileAnimationImageKey: ProgressUserInfoKey
 extern NSProgressUserInfoKey const NSProgressFileAnimationImageKey;
 ```
 
-#### Discussion
+## Discussion
 
 This entry is optional, but if present, along with a value for [`fileAnimationImageOriginalRectKey`](./fileanimationimageoriginalrectkey.md), the Dock may show an animation. When the Dock has an item for the folder that contains the relevant file (such as the Downloads folder), the Dock uses this key to show an animation of the file flying into the Dock.
 

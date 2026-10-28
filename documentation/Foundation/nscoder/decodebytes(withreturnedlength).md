@@ -25,7 +25,7 @@ func decodeBytes(withReturnedLength lengthp: UnsafeMutablePointer<Int>) -> Unsaf
 - (void *) decodeBytesWithReturnedLength:(NSUInteger *) lengthp;
 ```
 
-#### Discussion
+## Discussion
 
 `NSCoder`‘s implementation invokes [`decodeValue(ofObjCType:at:)`](./decodevalue%28ofobjctype,at%29.md) to decode the data as a series of bytes, which this method then places into a buffer and returns. The buffer’s length is returned by reference in `numBytes`. If you need the bytes beyond the scope of the current `@autoreleasepool` block, you must copy them.
 

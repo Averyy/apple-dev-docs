@@ -17,7 +17,7 @@ This method is called by action methods to save document contents to a file.
 - (BOOL) writeWithBackupToFile:(NSString *) fullDocumentPath ofType:(NSString *) documentTypeName saveOperation:(NSSaveOperationType) saveOperationType;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called by action methods like [`save(_:)`](./save%28_%29.md), [`saveAs(_:)`](./saveas%28_%29.md), and [`saveTo(_:)`](./saveto%28_%29.md). It is responsible for handling backup of the existing file, if any, and removal of that backup if [`keepBackupFile`](./keepbackupfile.md) returns [`false`](../../Swift/false.md). In between those two things, it calls [`writeToFile:ofType:originalFile:saveOperation:`](./writetofile_oftype_originalfile_saveoperation_.md) to write the document of type `docType` to `fullDocumentPath`. You should never need to call [`writeWithBackupToFile:ofType:saveOperation:`](./writewithbackuptofile_oftype_saveoperation_.md), but subclasses that want to change the way the backup works can override it. The `saveOperationType` argument is one of the constants listed in `Constants`.
 

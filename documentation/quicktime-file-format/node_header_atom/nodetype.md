@@ -6,7 +6,7 @@
 
 The node type.
 
-#### Overview
+## Overview
 
 This field should contain either `kQTVRPanoramaType` or `kQTVRObjectType`.
 

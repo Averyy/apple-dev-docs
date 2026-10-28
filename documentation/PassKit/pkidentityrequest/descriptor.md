@@ -22,7 +22,7 @@ var descriptor: (any PKIdentityDocumentDescriptor)? { get set }
 @property (nonatomic, strong, nullable) id<PKIdentityDocumentDescriptor> descriptor;
 ```
 
-#### Discussion
+## Discussion
 
 Set this property before you invoke [`requestDocument(_:completion:)`](../pkidentityauthorizationcontroller/requestdocument%28_,completion%29.md).
 

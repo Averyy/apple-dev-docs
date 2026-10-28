@@ -12,11 +12,11 @@ static OSSerialize * withCapacity(
  unsigned intcapacity);
 ```
 
-#### Return Value
+## Return Value
 
 A new instance of OSSerialize with a retain count of 1; `NULL` on failure.
 
-#### Overview
+## Overview
 
 The serializer will grow as needed to accommodate more data.
 

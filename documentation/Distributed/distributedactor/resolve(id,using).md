@@ -22,7 +22,7 @@ Resolves the passed in `id` against the `system`, returning either a local or re
 static func resolve(id: Self.ID, using system: Self.ActorSystem) throws -> Self
 ```
 
-#### Discussion
+## Discussion
 
 The system will be asked to `resolve` the identity and return either a local instance or request a proxy to be created for this identity.
 

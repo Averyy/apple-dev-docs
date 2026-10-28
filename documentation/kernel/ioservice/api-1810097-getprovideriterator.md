@@ -12,11 +12,11 @@ virtual OSIterator * getProviderIterator(
  void ) const;
 ```
 
-#### Return Value
+## Return Value
 
 An iterator over the providers of the client, or zero if there is a resource failure. The iterator must be released when the iteration is finished. All objects returned by the iteration are retained while the iterator is valid, though they may no longer be attached during the iteration.
 
-#### Overview
+## Overview
 
 For those few IOService objects that obtain service from multiple providers, this method supplies an iterator over a client's providers.
 

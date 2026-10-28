@@ -21,7 +21,7 @@ class var current: NSOpenGLContext? { get }
 @property (class, strong, readonly, nullable) NSOpenGLContext * currentContext;
 ```
 
-#### Return Value
+## Return Value
 
 The current OpenGL graphics context, or `nil` if no such object has been set.
 

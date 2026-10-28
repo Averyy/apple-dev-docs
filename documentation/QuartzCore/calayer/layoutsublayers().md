@@ -24,7 +24,7 @@ func layoutSublayers()
 - (void) layoutSublayers;
 ```
 
-#### Discussion
+## Discussion
 
 Subclasses can override this method and use it to implement their own layout algorithm. Your implementation must set the frame of each sublayer managed by the receiver.
 

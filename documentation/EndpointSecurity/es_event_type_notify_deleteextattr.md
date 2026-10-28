@@ -20,7 +20,7 @@ var ES_EVENT_TYPE_NOTIFY_DELETEEXTATTR: es_event_type_t { get }
 ES_EVENT_TYPE_NOTIFY_DELETEEXTATTR
 ```
 
-#### Discussion
+## Discussion
 
 This identifier corresponds to the [`es_events_t`](./es_events_t.md) union member [`deleteextattr`](./es_events_t/deleteextattr.md), which has the type [`es_event_deleteextattr_t`](./es_event_deleteextattr_t.md).
 

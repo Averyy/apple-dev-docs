@@ -17,7 +17,7 @@ The category of the particular object or surface.
 enum CapturedElementCategory
 ```
 
-#### Overview
+## Overview
 
 A  [`CapturedRoomAttribute`](./capturedroomattribute.md) adopter’s [`parentCategory`](./capturedroomattribute/parentcategory.md) property is of this type.
 

@@ -15,11 +15,11 @@ Read a block from a file with read-ahead.
 errno_t buf_breadn(vnode_t vp, daddr64_t blkno, int size, daddr64_t *rablks, int *rasizes, int nrablks, kauth_cred_t cred, buf_t *bpp);
 ```
 
-#### Return Value
+## Return Value
 
 0 for success, or an error from buf_biowait().
 
-#### Discussion
+## Discussion
 
 buf_breadn() reads one block synchronously in the style of buf_bread() and fires off a specified set of asynchronous reads to improve the likelihood of future cache hits. It should not be used to read blocks of greater than 4K (one VM page) in size; use cluster routines for large reads. Indeed, the cluster layer is a more efficient choice for reading DATA unless you need some finely-tuned semantics that it cannot provide.
 

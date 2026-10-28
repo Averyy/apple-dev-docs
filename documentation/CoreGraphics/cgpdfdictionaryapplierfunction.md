@@ -25,7 +25,7 @@ typealias CGPDFDictionaryApplierFunction = (UnsafePointer<CChar>, CGPDFObjectRef
 typedef void (*)(const char *, struct CGPDFObject *, void *) CGPDFDictionaryApplierFunction;
 ```
 
-#### Discussion
+## Discussion
 
 [`CGPDFDictionaryApplierFunction`](./cgpdfdictionaryapplierfunction.md) defines the callback for [`CGPDFDictionaryApplyFunction(_:_:_:)`](./cgpdfdictionaryapplyfunction%28_,_,_%29.md), that enumerates all of the entries in the dictionary, calling your custom applier function once for each entry. The current key, its associated value, and the contextual information are passed to your applier function using the `key`, `value`, and `info` parameters respectively.
 

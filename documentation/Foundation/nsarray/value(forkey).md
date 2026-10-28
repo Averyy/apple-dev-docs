@@ -25,11 +25,11 @@ func value(forKey key: String) -> Any
 - (id) valueForKey:(NSString *) key;
 ```
 
-#### Return Value
+## Return Value
 
 The value of the retrieved key.
 
-#### Discussion
+## Discussion
 
 The returned array contains `NSNull` elements for each object that returns `nil`.
 

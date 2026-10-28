@@ -15,11 +15,11 @@ Decrement the iocount on a vnode.
 int vnode_put(vnode_t vp);
 ```
 
-#### Return Value
+## Return Value
 
 Always 0.
 
-#### Discussion
+## Discussion
 
 vnode_put() is called to indicate that a vnode is no longer in active use. It removes the guarantee that a vnode will not be recycled. This routine should be used to release io references no matter how they were obtained.
 

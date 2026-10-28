@@ -22,7 +22,7 @@ func performAsynchronousFileAccess(_ block: @escaping () -> Void)
 - (void) performAsynchronousFileAccessUsingBlock:(void (^)()) block;
 ```
 
-#### Discussion
+## Discussion
 
 A typical [`UIDocument`](../uidocument.md) subclass — one that overrides [`contents(forType:)`](./contents%28fortype%29.md) and [`load(fromContents:ofType:)`](./load%28fromcontents,oftype%29.md) — doesn’t need to call this method.
 

@@ -24,7 +24,7 @@ var vertexBindings: [any MTLBinding] { get }
 @property (readonly, nonnull) NSArray<id<MTLBinding>> * vertexBindings;
 ```
 
-#### Discussion
+## Discussion
 
 The [`MTLBinding`](../mtlbinding.md) elements in the array are in the same order as the vertex shader’s declaration signature.
 

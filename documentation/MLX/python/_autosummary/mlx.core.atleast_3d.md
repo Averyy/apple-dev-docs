@@ -6,16 +6,19 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.at
 
 # mlx.core.atleast_3d
 
-**atleast_3d(**arys: array*, *stream: StreamOrDevice = None*) → [array](mlx.core.array.md#mlx.core.array) | [list](https://docs.python.org/3/builtins/stdtypes.html#list)[[array](mlx.core.array.md#mlx.core.array)]**
-: Convert all arrays to have at least three dimensions.
+```python
+atleast_3d(*arys: array, stream: StreamOrDevice = None) → array | list[array]
+```
 
-Parameters:
+Convert all arrays to have at least three dimensions.
 
-***arys** – Input arrays.
-**stream** (*StreamOrDevice**, **optional*) – The stream to execute the operation on.
+**Parameters:**
 
-Returns:
-An array or list of arrays with at least three dimensions.
+- **\*arys** – Input arrays.
+- **stream** (*StreamOrDevice*, *optional*) – The stream to execute the operation on.
 
-Return type:
-[array](mlx.core.array.md#mlx.core.array) or [list](https://docs.python.org/3/builtins/stdtypes.html#list)([array](mlx.core.array.md#mlx.core.array))
+**Returns:**
+: An array or list of arrays with at least three dimensions.
+
+**Return type:**
+: [array](mlx.core.array.md#mlx.core.array) or [list](https://docs.python.org/3/builtins/stdtypes.html#list)([array](mlx.core.array.md#mlx.core.array))

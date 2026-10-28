@@ -25,11 +25,11 @@ func scoped(to scope: String) -> MLParameterKey
 - (MLParameterKey *) scopedTo:(NSString *) scope;
 ```
 
-#### Return Value
+## Return Value
 
 A new parameter key.
 
-#### Discussion
+## Discussion
 
 Use this method to target:
 

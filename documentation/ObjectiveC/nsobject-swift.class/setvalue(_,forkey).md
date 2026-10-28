@@ -25,7 +25,7 @@ func setValue(_ value: Any?, forKey key: String)
 - (void) setValue:(id) value forKey:(NSString *) key;
 ```
 
-#### Discussion
+## Discussion
 
 If `key` identifies a to-one relationship, relate the object specified by `value` to the receiver, unrelating the previously related object if there was one. Given a collection object and a `key` that identifies a to-many relationship, relate the objects contained in the collection to the receiver, unrelating previously related objects if there were any.
 

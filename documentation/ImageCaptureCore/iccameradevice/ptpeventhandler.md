@@ -23,7 +23,7 @@ var ptpEventHandler: (Data) -> Void { get set }
 @property (nonatomic, copy) void (^ptpEventHandler)(NSData *eventData);
 ```
 
-#### Discussion
+## Discussion
 
 Set this property as an alternative to setting up an object to handle PTP event packets. If the handler is set, it is called in place of the [`delegate`](../icdevice/delegate.md). If the handler is `nil`, the [`delegate`](../icdevice/delegate.md) is called, if present. If both are set, only the handler is called.
 

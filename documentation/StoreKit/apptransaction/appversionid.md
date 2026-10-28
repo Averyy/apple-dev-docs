@@ -21,7 +21,7 @@ The number that the App Store uses to uniquely identify the version of the app.
 let appVersionID: UInt64?
 ```
 
-#### Discussion
+## Discussion
 
 The App Store assigns this value. In the [`sandbox`](../appstore/environment/sandbox.md) and [`xcode`](../appstore/environment/xcode.md) environments, this value is `nil`.
 

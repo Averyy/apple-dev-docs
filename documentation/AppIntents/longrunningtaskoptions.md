@@ -21,7 +21,7 @@ Options for configuring long-running tasks.
 struct LongRunningTaskOptions
 ```
 
-#### Overview
+## Overview
 
 When performing long-running tasks, specify these options to indicate additional resource requirements for the task. Pass these options to the [`performBackgroundTask(options:operation:)`](./longrunningintent/performbackgroundtask%28options,operation%29.md) or [`performBackgroundTask(options:operation:onCancel:)`](./longrunningintent/performbackgroundtask%28options,operation,oncancel%29.md) methods.
 

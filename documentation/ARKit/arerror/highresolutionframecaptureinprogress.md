@@ -16,7 +16,7 @@ An error that indicates the system needs to finish a high-resolution frame reque
 static var highResolutionFrameCaptureInProgress: ARError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 The system provides this error to the completion handler of [`captureHighResolutionFrame(completion:)`](../arsession/capturehighresolutionframe%28completion%29.md) for failed operations.
 

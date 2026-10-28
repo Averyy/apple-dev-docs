@@ -23,7 +23,7 @@ var isCenterStageSupported: Bool { get }
 @property (nonatomic, readonly, getter=isCenterStageSupported) BOOL centerStageSupported;
 ```
 
-#### Discussion
+## Discussion
 
 See [`AVCaptureDevice`](../../avcapturedevice.md) for more information on using Center Stage.
 

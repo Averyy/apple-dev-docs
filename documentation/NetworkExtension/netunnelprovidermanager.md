@@ -28,7 +28,7 @@ class NETunnelProviderManager
 
 - [Routing your VPN network traffic](./routing-your-vpn-network-traffic.md)
 
-#### Overview
+## Overview
 
 Like its superclass [`NEVPNManager`](./nevpnmanager.md), you use the [`NETunnelProviderManager`](./netunnelprovidermanager.md) class to configure and control VPN connections. The difference is that [`NETunnelProviderManager`](./netunnelprovidermanager.md) is used to to configure and control VPN connections that use a custom VPN protocol. The client side of the custom protocol implementation is implemented as a Packet Tunnel Provider extension. The Packet Tunnel Provider extension’s containing app uses [`NETunnelProviderManager`](./netunnelprovidermanager.md) to create and manage VPN configurations that use the custom protocol, and to control the VPN connections specified by the configurations.
 
@@ -39,7 +39,7 @@ The [`NETunnelProviderManager`](./netunnelprovidermanager.md) class inherits mos
 
 > ❗ **Important**:  The `com.apple.developer.networking.networkextension` entitlement is required to use the [`NETunnelProviderManager`](./netunnelprovidermanager.md) class. Enable this entitlement when creating an App ID in your developer account.
 
-##### Configuration Model
+### Configuration Model
 
 Each [`NETunnelProviderManager`](./netunnelprovidermanager.md) instance corresponds to a single VPN configuration stored in the Network Extension preferences. Multiple VPN configurations can be created and managed by creating multiple [`NETunnelProviderManager`](./netunnelprovidermanager.md) instances.
 
@@ -47,7 +47,7 @@ Each VPN configuration is associated with the app that created it. The app’s v
 
 VPN configurations created using [`NETunnelProviderManager`](./netunnelprovidermanager.md) are classified as regular enterprise VPN configurations (as opposed to the Personal VPN configurations created by `NEVPNManager`). Only one enterprise VPN configuration can be enabled on the system at a time. If both a Personal VPN and an enterprise VPN are active on the system simultaneously, the enterprise VPN takes precedence, meaning that if the routes for the two VPNs conflict then the routes for the enterprise VPN will take precedence. The Personal VPN will remain active and connected while the enterprise VPN is active and connected, and any traffic that is routed to the Personal VPN and is not routed to the enterprise VPN will continue to traverse the Personal VPN.
 
-##### Profile Configuration
+### Profile Configuration
 
 It is possible to create Packet Tunnel Provider configurations using configuration profiles. See the `com.apple.vpn.managed` and `com.apple.vpn.managed.applayer` payload types in [Configuration Profile Reference](https://developer.apple.com/library/archive/featuredarticles/iPhoneConfigurationProfileRef/Introduction/Introduction.html#//apple_ref/doc/uid/TP40010206). To specify that a configuration created via a profile payload is associated with a particular app (and therefore allow the app to use `NETunnelProviderManager` to manage the configuration), the app’s bundle identifier must be set as the value of the `VPNSubType` field in the profile payload.
 
@@ -57,7 +57,7 @@ VPN credentials such as private keys and passwords that are imported into the sy
 
 > ❗ **Important**:  The app and Packet Tunnel Provider extension must not write to the `com.apple.managed.vpn.shared` keychain access group. When writing to the keychain, the app and Packet Tunnel Provider must target a different keychain access group.
 
-##### Routing Network Data to the VPN
+### Routing Network Data to the VPN
 
 There are two ways or methods by which network data is routed to the VPN:
 

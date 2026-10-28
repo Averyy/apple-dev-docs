@@ -21,7 +21,7 @@ case readerErrorRadioDisabled
 NFCReaderErrorRadioDisabled
 ```
 
-#### Discussion
+## Discussion
 
 This condition happens, for example, when a person enables airplane mode on their device.
 

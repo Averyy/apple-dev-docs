@@ -19,7 +19,7 @@ var isRichText: Bool { get set }
 @property (getter=isRichText) BOOL richText;
 ```
 
-#### Discussion
+## Discussion
 
 Text fields that don’t allow rich text also don’t accept dragged files. By default, text views let the user apply multiple attributes to text, but don’t accept dragged files.
 

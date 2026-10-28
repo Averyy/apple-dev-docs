@@ -23,11 +23,11 @@ optional func activityViewController(_ activityViewController: UIActivityViewCon
 - (NSString *) activityViewController:(UIActivityViewController *) activityViewController dataTypeIdentifierForActivityType:(UIActivityType) activityType;
 ```
 
-#### Return Value
+## Return Value
 
 The UTI for the item.
 
-#### Discussion
+## Discussion
 
 Providing the UTI allows services to handle specific data types in appropriate ways, such as an email service formatting an image to display in-line. If you provide items as [`NSData`](../../Foundation/nsdata.md) objects, implement this method to allow those services to better handle your data.
 

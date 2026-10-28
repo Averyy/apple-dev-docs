@@ -18,11 +18,11 @@ Requests the action to perform its task using the specified input from the speci
 - (id) runWithInput:(id) input fromAction:(AMAction *) anAction error:(NSDictionary<NSString *,id> **) errorInfo;
 ```
 
-#### Return Value
+## Return Value
 
 An object containing one or more objects of a data type compatible with a type specified in the receiving action’s `AMProvides` property. If the action doesn’t modify the data passed in `input`, it should return it unchanged.
 
-#### Discussion
+## Discussion
 
 The input and output objects for actions are usually instances of [`NSArray`](../../Foundation/nsarray.md). If the action encounters problems, it should return by indirection an error dictionary that describes the error.
 

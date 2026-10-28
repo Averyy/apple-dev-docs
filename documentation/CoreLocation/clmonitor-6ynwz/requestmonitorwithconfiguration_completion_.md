@@ -18,7 +18,7 @@ Creates a location monitor with the configuration and event handler you provide.
 + (void) requestMonitorWithConfiguration:(CLMonitorConfiguration *) config completion:(void (^)(CLMonitor *monitor)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Configure the location monitor by adding or removing conditions for monitoring by this instance of `CLMonitor`. When an event occurs, the framework calls the block you pass in on the specified queue and delivers an instance of [`CLMonitoringEvent`](../clmonitoringevent.md). The event contains the identifier for the condition you’re monitoring, an optional instance of [`CLCondition`](../clcondition-swift.protocol.md) containing specifics, the new state, and the event’s timestamp.
 

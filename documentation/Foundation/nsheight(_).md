@@ -20,7 +20,7 @@ func NSHeight(_ aRect: NSRect) -> Double
 static CGFloat NSHeight(NSRect aRect);
 ```
 
-#### Return Value
+## Return Value
 
 The height of `aRect`.
 

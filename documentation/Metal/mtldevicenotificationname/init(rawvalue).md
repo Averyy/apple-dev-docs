@@ -17,7 +17,7 @@ Creates a Metal device notification name from a string.
 init(rawValue: String)
 ```
 
-#### Discussion
+## Discussion
 
 Use this type’s static properties instead of this initializer.
 

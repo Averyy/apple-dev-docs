@@ -18,7 +18,7 @@ The ad network identifier in the ad impression doesn’t match the value in the 
 static var adNetworkIdMissing: SKANError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 The value you specify for your ad network identifier in your ad impresion must match the value in the `Info.plist`. ``An app that participates in ad campaigns by displaying ads must include the ad network identifiers in its `Info.plist`. For more information, see [Configuring a source app](../configuring-a-source-app.md).
 

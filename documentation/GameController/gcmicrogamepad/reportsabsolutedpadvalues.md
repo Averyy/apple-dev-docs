@@ -24,7 +24,7 @@ var reportsAbsoluteDpadValues: Bool { get set }
 @property (nonatomic) BOOL reportsAbsoluteDpadValues;
 ```
 
-#### Discussion
+## Discussion
 
 If this property is [`false`](../../Swift/false.md), the profile assumes the location where the user first touches the pad is the origin value (`0.0,0.0`) for the pad. The profile calculates all subsequent values relative to this position until the user lifts their finger. The next time the user touches the pad, the profile uses that location as the new origin. If this property is [`true`](../../Swift/true.md), the profile calculates values relative to the physical center of the touchpad. The default value for this property is [`false`](../../Swift/false.md).
 

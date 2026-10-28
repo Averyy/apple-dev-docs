@@ -14,11 +14,11 @@ virtual IOReturn powerStateDidChangeTo(
  IOService *policyMaker );
 ```
 
-#### Return Value
+## Return Value
 
 Returns the constant 3000000, to indicate a maximum of 3 seconds for the preparation to complete, and an acknowledgement delivered to the policy maker.
 
-#### Overview
+## Overview
 
 If the controller became usable, then the controller is re-enabled, and the controller's handlers are re-registered.
 

@@ -21,7 +21,7 @@ string CreativeType
 - `DEFAULT_PRODUCT_PAGE`: Uses the app’s default App Store listing as the pre-tap experience. No `productPageId` required.
 - `LOCAL_ADS_SEARCH_CREATIVE`: Ad creative for Ads on Apple Maps.
 
-#### Discussion
+## Discussion
 
 The `CreativeType` is set at creation time and is immutable. It determines which `creativeSpec` variant to supply and which ad placements the ad creative can serve on.
 

@@ -21,7 +21,7 @@ Truncate at the beginning of the line.
 case head
 ```
 
-#### Discussion
+## Discussion
 
 Use this kind of truncation to omit characters from the beginning of the string. For example, you could truncate the English alphabet as “…wxyz”.
 

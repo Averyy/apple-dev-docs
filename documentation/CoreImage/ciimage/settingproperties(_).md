@@ -24,11 +24,11 @@ func settingProperties(_ properties: [AnyHashable : Any]) -> CIImage
 - (CIImage *) imageBySettingProperties:(NSDictionary *) properties;
 ```
 
-#### Return Value
+## Return Value
 
  An autoreleased [`CIImage`](../ciimage.md) instance with a copy of the new properties.
 
-#### Discussion
+## Discussion
 
 When you create an image, Core Image sets an image’s properties to a metadata dictionary as described here: [`properties`](./properties.md). Use this method to override an image’s metadata properties with new values.
 

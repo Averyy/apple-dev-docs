@@ -13,7 +13,7 @@
 attribute string recordType;
 ```
 
-#### Discussion
+## Discussion
 
 The name of the record type.
 

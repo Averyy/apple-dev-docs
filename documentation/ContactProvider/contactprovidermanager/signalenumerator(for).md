@@ -16,7 +16,7 @@ Requests that the extension enumerate its contacts for the domain.
 func signalEnumerator(for collection: ContactItem.Identifier = .rootContainer) async throws
 ```
 
-#### Discussion
+## Discussion
 
 You typically call this when you need to invoke the app extension on demand. One example is when the app receives a push notification informing it that updated contact data is available.
 

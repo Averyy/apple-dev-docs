@@ -24,11 +24,11 @@ let kVTCompressionPropertyKey_PixelTransferProperties: CFString
 extern CFStringRef const kVTCompressionPropertyKey_PixelTransferProperties;
 ```
 
-#### Discussion
+## Discussion
 
 The properties for configuring a [VTPixelTransferSession](./vtpixeltransfersession-api-collection.md) to transfer source frames from the client’s image buffers to the video encoder’s image buffers, if necessary.
 
-#### Discussion
+## Discussion
 
 The value is a [`CFDictionary`](../CoreFoundation/cfdictionary.md) of properties to configure a [VTPixelTransferSession](./vtpixeltransfersession-api-collection.md). Setting this property alone does not necessarily guarantee that a [VTPixelTransferSession](./vtpixeltransfersession-api-collection.md) will be created.
 

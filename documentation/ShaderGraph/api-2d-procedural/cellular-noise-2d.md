@@ -14,7 +14,7 @@ A 2D cellular noise generator.
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Parameter Types
+## Parameter Types
 
 | Input | Type |
 | --- | --- |
@@ -24,11 +24,11 @@ A 2D cellular noise generator.
 | --- | --- |
 | `Out` | Float |
 
-#### Parameter descriptions
+## Parameter descriptions
 
 - **`Texture Coordinates`**: The 2D coordinate at which the data is read to map the texture onto a surface. The default is to use the current UV coordinates, in which U is the horizontal axis and V is the vertical axis.
 
-#### Discussion
+## Discussion
 
 The `Cellular Noise 2D` shader node procedurally generates noise patterns that you can use to add texture and variation to materials. Below is an example of a node graph that uses the `Cellular Noise 2D` node to generate a black and white pattern procedurally:
 

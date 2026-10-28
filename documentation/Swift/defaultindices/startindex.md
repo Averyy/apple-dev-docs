@@ -23,7 +23,7 @@ var startIndex: DefaultIndices<Elements>.Index { get }
 
 Available when `Elements` conforms to `Collection`.
 
-#### Discussion
+## Discussion
 
 If the collection is empty, `startIndex` is equal to `endIndex`.
 

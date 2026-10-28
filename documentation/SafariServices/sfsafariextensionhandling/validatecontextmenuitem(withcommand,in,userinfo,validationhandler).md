@@ -23,7 +23,7 @@ optional func validateContextMenuItem(withCommand command: String, in page: SFSa
 
 - [Adjusting settings for contextual menu items](../adjusting-settings-for-contextual-menu-items.md)
 
-#### Discussion
+## Discussion
 
 If you do not implement this method, the contextual menu item is always available. Otherwise, this method is called before the contextual menu is shown so that you can determine whether the menu item should be displayed and the text that appears in the item.
 

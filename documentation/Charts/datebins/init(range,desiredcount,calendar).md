@@ -22,7 +22,7 @@ nonisolated
 init(range: ClosedRange<Date>, desiredCount: Int = 10, calendar: Calendar = .autoupdatingCurrent)
 ```
 
-#### Return Value
+## Return Value
 
 The inferred bins.
 

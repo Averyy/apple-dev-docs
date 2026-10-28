@@ -24,7 +24,7 @@ protocol CIBlurredRoundedRectangleGenerator : CIFilterProtocol
 @protocol CIBlurredRoundedRectangleGenerator <CIFilter>
 ```
 
-#### Overview
+## Overview
 
 Generates a blurred rounded rectangle image with the specified extent, corner radius, blur sigma, and color.
 

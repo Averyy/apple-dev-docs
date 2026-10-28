@@ -19,7 +19,7 @@ A region that corresponds to a rectangle in the page’s coordinate system.
 static func rect(_ rect: CGRect) -> WebPage.ExportedContentConfiguration.Region
 ```
 
-#### Return Value
+## Return Value
 
 A [`WebPage.ExportedContentConfiguration.Region`](../region.md) that uses the specified rectangle.
 

@@ -5,7 +5,7 @@
 
 An atom that contains text data.
 
-#### Overview
+## Overview
 
 The format of the text data is a 16-bit length word followed by the actual text. The length word specifies the number of bytes of text, not including the length word itself. Following the text, there may be one or more atoms containing additional information for drawing and searching the text.
 

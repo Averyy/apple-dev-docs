@@ -20,7 +20,7 @@ The spatial falloff / attenuation rate.
 var rate: Double
 ```
 
-#### Discussion
+## Discussion
 
 An exponent that determines how the effect’s strength diminishes with distance. Use a non-negative rate.
 

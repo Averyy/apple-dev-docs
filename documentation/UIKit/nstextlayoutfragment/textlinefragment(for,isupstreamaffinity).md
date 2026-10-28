@@ -23,11 +23,11 @@ func textLineFragment(for textLocation: any NSTextLocation, isUpstreamAffinity: 
 - (NSTextLineFragment *) textLineFragmentForTextLocation:(id<NSTextLocation>) textLocation isUpstreamAffinity:(BOOL) isUpstreamAffinity;
 ```
 
-#### Return Value
+## Return Value
 
 The text line fragment that contains or ends at the text location you provide, or `nil` if there isn’t a match.
 
-#### Discussion
+## Discussion
 
 Set `isUpstreamAffinity` to [`true`](../../Swift/true.md) to find a text fragment by its element range end location, such as when you enumerate over line fragments in reverse order. Set `isUpstreamAffinity` to [`false`](../../Swift/false.md) to find a text fragment that contains `textLocation`.
 

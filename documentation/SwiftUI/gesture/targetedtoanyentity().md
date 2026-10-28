@@ -20,7 +20,7 @@ Requires this gesture to target an entity.
 @preconcurrency func targetedToAnyEntity() -> some Gesture<EntityTargetValue<Self.Value>>
 ```
 
-#### Return Value
+## Return Value
 
 A `RealityCoordinateSpaceConvertible`value containing the original gesture value along with the targeted entity.
 

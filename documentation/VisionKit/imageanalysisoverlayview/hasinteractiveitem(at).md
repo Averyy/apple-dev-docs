@@ -16,7 +16,7 @@ Returns a Boolean value that indicates whether active text, data detectors, or s
 final func hasInteractiveItem(at point: CGPoint) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if active text, data detectors, or supplementary interface objects exist at `point`; otherwise, `false`.
 

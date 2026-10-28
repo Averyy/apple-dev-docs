@@ -23,7 +23,7 @@ func browserAccessibilityAttributedValue(in range: NSRange) -> NSAttributedStrin
 - (NSAttributedString *) browserAccessibilityAttributedValueInRange:(NSRange) range;
 ```
 
-#### Return Value
+## Return Value
 
 An attributed string that’s the substring of this element’s value within the given range.
 

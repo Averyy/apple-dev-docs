@@ -13,7 +13,7 @@
 kUSBFullSpeedMicrosecondsInFrame = 1000
 ```
 
-#### Discussion
+## Discussion
 
 The device is attached to a bus running at full speed (1 ms / frame).
 

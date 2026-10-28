@@ -15,7 +15,7 @@ Constructs an instance of a camera zoom range object with no minimum or maximum 
 constructor();
 ```
 
-#### Discussion
+## Discussion
 
 The zoom range describes the minimum and maximum camera distance in meters.
 

@@ -24,7 +24,7 @@ class AVMIDIMetaEvent
 @interface AVMIDIMetaEvent : AVMusicEvent
 ```
 
-#### Overview
+## Overview
 
 You can’t modify the size and contents of this event once you create it. This doesn’t verify that the content matches the MIDI specification.
 

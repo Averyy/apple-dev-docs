@@ -15,7 +15,7 @@ Returns a new `NSPDFPanel` object.
 + (NSPDFPanel *) panel;
 ```
 
-#### Return Value
+## Return Value
 
 A new `NSPDFPanel` object or `nil` if an error occurred.
 

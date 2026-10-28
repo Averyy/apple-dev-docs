@@ -21,7 +21,7 @@ Returns a new vector from the doubleing-point values.
 init<T>(x: T, y: T, z: T) where T : BinaryFloatingPoint
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: This function is provided as a convenience. All Spatial storage and calculations are single-precision.
 

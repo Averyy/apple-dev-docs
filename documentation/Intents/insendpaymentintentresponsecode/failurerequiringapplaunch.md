@@ -23,7 +23,7 @@ case failureRequiringAppLaunch
 INSendPaymentIntentResponseCodeFailureRequiringAppLaunch
 ```
 
-#### Discussion
+## Discussion
 
 Use this response code when you cannot send the funds for a reason not covered by any other response code. Do not use it for general errors or to force the user to launch your app.
 

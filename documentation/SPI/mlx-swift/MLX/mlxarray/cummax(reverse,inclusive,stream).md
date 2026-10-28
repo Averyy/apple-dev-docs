@@ -17,7 +17,7 @@ Return the cumulative maximum of the elements over the flattened array.
 func cummax(reverse: Bool = false, inclusive: Bool = true, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 ```swift
 let array = MLXArray([5, 8, 4, 9], [2, 2])
@@ -26,7 +26,7 @@ let array = MLXArray([5, 8, 4, 9], [2, 2])
 let result = array.cummax()
 ```
 
-##### See Also
+### See Also
 
 - [Cumulative Operations](../cumulative.md)
 - [`cummax(axis:reverse:inclusive:stream:)`](./cummax%28axis,reverse,inclusive,stream%29.md)

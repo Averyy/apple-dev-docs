@@ -20,7 +20,7 @@ The viewer’s selected content-viewing mode.
 var desiredViewingMode: VideoPlaybackController.ViewingMode { get set }
 ```
 
-#### Discussion
+## Discussion
 
 This is the content-viewing mode that the current content-viewing mode transitions to.
 

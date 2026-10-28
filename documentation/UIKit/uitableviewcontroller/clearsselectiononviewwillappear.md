@@ -27,7 +27,7 @@ var clearsSelectionOnViewWillAppear: Bool { get set }
 
 - [Handling row selection in a table view](../handling-row-selection-in-a-table-view.md)
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`true`](../../Swift/true.md). When [`true`](../../Swift/true.md), the table view controller clears the table’s current selection when it receives a [`viewWillAppear(_:)`](../uiviewcontroller/viewwillappear%28_%29.md) message. Setting this property to [`false`](../../Swift/false.md) preserves the selection.
 

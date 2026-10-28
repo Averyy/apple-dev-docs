@@ -21,7 +21,7 @@ Schedules a block object to be submitted to a queue when a group of previously s
 extern void dispatch_group_notify(dispatch_group_t group, dispatch_queue_t queue, dispatch_block_t block);
 ```
 
-#### Discussion
+## Discussion
 
 This function schedules a notification block to be submitted to the specified queue when all blocks associated with the dispatch group have completed. If the group is empty (no block objects are associated with the dispatch group), the notification block object is submitted immediately.
 

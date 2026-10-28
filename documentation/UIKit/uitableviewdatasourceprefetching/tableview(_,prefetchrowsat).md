@@ -24,7 +24,7 @@ func tableView(_ tableView: UITableView, prefetchRowsAt indexPaths: [IndexPath])
 - (void) tableView:(UITableView *) tableView prefetchRowsAtIndexPaths:(NSArray<NSIndexPath *> *) indexPaths;
 ```
 
-#### Discussion
+## Discussion
 
 The table view calls this method on the main dispatch queue as the user scrolls, providing the index paths for cells it is likely to display in the near future. Use your implementation of this method to start any expensive data loading operations. Always load your data asynchronously and forward the results to your table’s data source object. Table views do not call this method for cells they require immediately, so your data source object must also be able to fetch the data itself.
 

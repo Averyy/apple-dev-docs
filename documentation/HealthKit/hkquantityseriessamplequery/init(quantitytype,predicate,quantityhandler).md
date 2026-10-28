@@ -24,7 +24,7 @@ init(quantityType: HKQuantityType, predicate: NSPredicate?, quantityHandler: @es
 - (instancetype) initWithQuantityType:(HKQuantityType *) quantityType predicate:(NSPredicate *) predicate quantityHandler:(void (^)(HKQuantitySeriesSampleQuery *query, HKQuantity *quantity, NSDateInterval *dateInterval, HKQuantitySample *quantitySample, BOOL done, NSError *error)) quantityHandler;
 ```
 
-#### Discussion
+## Discussion
 
 HealthKit returns quantities in ascending order, based on their start date.
 

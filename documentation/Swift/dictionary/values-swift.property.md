@@ -24,7 +24,7 @@ var values: Dictionary<Key, Value>.Values { get set }
 
 Available when `Key` conforms to `Hashable`.
 
-#### Discussion
+## Discussion
 
 When iterated over, values appear in this collection in the same order as they occur in the dictionary’s key-value pairs.
 

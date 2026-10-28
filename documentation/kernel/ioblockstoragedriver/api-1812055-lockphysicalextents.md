@@ -10,11 +10,11 @@ virtual bool lockPhysicalExtents(
  IOService *client);
 ```
 
-#### Return Value
+## Return Value
 
 Returns true if the lock was successful, false otherwise.
 
-#### Overview
+## Overview
 
 Lock the contents of the storage object against relocation temporarily, for the purpose of getting physical extents.
 

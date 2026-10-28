@@ -20,7 +20,7 @@ Creates an empty animation library.
 init(automaticallyPlaysDefaultAnimation: Bool)
 ```
 
-#### Example
+## Example
 
 ```swift
 var library = AnimationLibraryComponent(automaticallyPlaysDefaultAnimation: true)

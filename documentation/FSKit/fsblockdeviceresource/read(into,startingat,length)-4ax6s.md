@@ -15,11 +15,11 @@ Synchronously reads data from the resource into a buffer.
 func read(into buffer: UnsafeMutableRawBufferPointer, startingAt offset: off_t, length: Int) throws -> Int
 ```
 
-#### Return Value
+## Return Value
 
 The actual number of bytes read.
 
-#### Discussion
+## Discussion
 
 This is a synchronous version of [`read(into:startingAt:length:)`](./read%28into,startingat,length%29-4ax6s.md).
 

@@ -25,11 +25,11 @@ func multiplying(by decimalNumber: NSDecimalNumber) -> NSDecimalNumber
 - (NSDecimalNumber *) decimalNumberByMultiplyingBy:(NSDecimalNumber *) decimalNumber;
 ```
 
-#### Return Value
+## Return Value
 
 A new `NSDecimalNumber` object whose value is `decimalNumber` multiplied by the receiver.
 
-#### Discussion
+## Discussion
 
 This method uses the default behavior when handling calculation errors and when rounding.
 

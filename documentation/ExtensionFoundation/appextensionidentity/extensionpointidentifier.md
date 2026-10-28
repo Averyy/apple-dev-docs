@@ -21,7 +21,7 @@ The extension point of your host app that the app extension supports.
 var extensionPointIdentifier: String { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the identifier for one of the host app’s extension points. Extension points represent the extensible features of the host app.
 

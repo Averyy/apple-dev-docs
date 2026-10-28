@@ -25,11 +25,11 @@ func objectEnumerator() -> NSEnumerator
 - (NSEnumerator<id> *) objectEnumerator;
 ```
 
-#### Return Value
+## Return Value
 
 An enumerator object that lets you access each object in the set once, independent of its count.
 
-#### Discussion
+## Discussion
 
 If you add a given object to the counted set multiple times, an enumeration of the set will produce that object only once.
 

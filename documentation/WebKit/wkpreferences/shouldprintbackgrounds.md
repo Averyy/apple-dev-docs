@@ -23,7 +23,7 @@ var shouldPrintBackgrounds: Bool { get set }
 @property (nonatomic) BOOL shouldPrintBackgrounds;
 ```
 
-#### Discussion
+## Discussion
 
 The default value for this preference is [`false`](../../Swift/false.md).
 

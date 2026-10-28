@@ -21,7 +21,7 @@ Find the bin thresholds.
 var thresholds: [Value] { get }
 ```
 
-#### Return Value
+## Return Value
 
 The bin thresholds that surround the bins.
 

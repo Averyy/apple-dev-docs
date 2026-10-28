@@ -21,7 +21,7 @@ case invalidSourceDomain
 SKAdTestErrorCodeInvalidSourceDomain
 ```
 
-#### Discussion
+## Discussion
 
 For more information about formatting source domains, see the `source_domain` property of [`AdImpressionResponse`](../../../SKAdNetworkforWebAds/adimpressionresponse.md).
 

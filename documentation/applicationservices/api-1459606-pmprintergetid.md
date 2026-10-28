@@ -19,11 +19,11 @@ func PMPrinterGetID(_ printer: PMPrinter) -> Unmanaged<CFString>?
 CFStringRef PMPrinterGetID(PMPrinter printer);
 ```
 
-#### Return Value
+## Return Value
 
 The identifier of the specified printer. You should not release the string without first retaining it. If the specified printer is not valid, this function returns `NULL`.
 
-#### Discussion
+## Discussion
 
 You can use the function `PMPrinterGetID` to capture information about a printer for later use. To create a printer object from a printer ID returned by this function, use the function [`PMPrinterCreateFromPrinterID(_:)`](./api-1461363-pmprintercreatefromprinterid.md).
 

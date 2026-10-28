@@ -27,7 +27,7 @@ optional func pendingItemsDidChange() async
 - (void) pendingItemsDidChangeWithCompletionHandler:(void (^)()) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  You can implement this method as a synchronous method that takes a completion handler, as shown on this page, or as an asynchronous method that has the following declaration:
 >

@@ -18,7 +18,7 @@ This operator allows you to check for a given value of a translation error and h
 static func ~= (match: TranslationError, error: any Error) -> Bool
 ```
 
-#### Discussion
+## Discussion
 
 You can use `switch` and `case` to check for a given value of `TranslationError`, if you want to handle each error case separately.
 

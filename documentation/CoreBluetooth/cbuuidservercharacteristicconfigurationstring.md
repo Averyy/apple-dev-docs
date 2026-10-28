@@ -25,7 +25,7 @@ let CBUUIDServerCharacteristicConfigurationString: String
 extern NSString * const CBUUIDServerCharacteristicConfigurationString;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value for this descriptor is an [`NSNumber`](../Foundation/nsnumber.md) object.
 

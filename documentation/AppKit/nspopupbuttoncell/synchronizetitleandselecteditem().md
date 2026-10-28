@@ -19,7 +19,7 @@ func synchronizeTitleAndSelectedItem()
 - (void) synchronizeTitleAndSelectedItem;
 ```
 
-#### Discussion
+## Discussion
 
 If no item is currently selected, this method synchronizes the pop-up buttons displayed item with the first menu item. If the pop-up button cell does not get its displayed item from a menu item, this method does nothing.
 

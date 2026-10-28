@@ -29,7 +29,7 @@ class SKMutableTexture
 
 - [Loading and Using Textures](./loading-and-using-textures.md)
 
-#### Overview
+## Overview
 
 Normally, SpriteKit textures ([`SKTexture`](./sktexture.md) objects) are static, meaning that once created, their contents cannot be changed. This is important because a static image can be more efficiently managed inside the graphics hardware. However, sometimes you need to be able to update the contents of a texture dynamically. In this case, you should use a mutable texture. Because there is a performance penalty for updating the texture’s contents, consider other options first. For example, you can render a texture in hardware using the [`texture(from:)`](./skview/texture%28from%29.md) method and a node tree.
 

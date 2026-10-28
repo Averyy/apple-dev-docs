@@ -5,7 +5,7 @@
 
 Specify keys in your information property list file that provide information about your Safari app extension, UI, and permissions to the operating system.
 
-#### Overview
+## Overview
 
 Safari app extensions define keys that inform the operating system about your app extension’s capabilities and intents. Keys for app extensions follow a hierarchical structure, which each of the articles below describes.
 

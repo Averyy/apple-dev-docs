@@ -23,7 +23,7 @@ case black
 UIScrollViewIndicatorStyleBlack
 ```
 
-#### Discussion
+## Discussion
 
 This style is good against a white content background.
 

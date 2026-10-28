@@ -29,11 +29,11 @@ func sparseTileSize(with textureType: MTLTextureType, pixelFormat: MTLPixelForma
 
 - [Converting between pixel regions and sparse tile regions](../converting-between-pixel-regions-and-sparse-tile-regions.md)
 
-#### Return Value
+## Return Value
 
 A new [`MTLSize`](../mtlsize.md) instance.
 
-#### Discussion
+## Discussion
 
 The size of a sparse tile, in bytes, is the same for all sparse textures on a GPU device object. Because the size of pixels may vary, the actual dimensions of a sparse tile vary based on the texture and the pixel format. Use this method to get the dimensions of the tile for a particular format. Use these dimensions when converting regions from pixel-based units to sparse tile units and vice versa.
 

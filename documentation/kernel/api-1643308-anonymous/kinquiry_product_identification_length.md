@@ -13,7 +13,7 @@
 kINQUIRY_PRODUCT_IDENTIFICATION_Length = 16
 ```
 
-#### Discussion
+## Discussion
 
 Size of PRODUCT_IDENTIFICATION field.
 

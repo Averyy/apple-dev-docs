@@ -15,11 +15,11 @@ Identifies where your application can safely break a multibytestring to be conve
 OSStatus TruncateForTextToUnicode(ConstTextToUnicodeInfo iTextToUnicodeInfo, ByteCount iSourceLen, ConstLogicalAddress iSourceStr, ByteCount iMaxLen, ByteCount *oTruncatedLen);
 ```
 
-#### Return Value
+## Return Value
 
 A resultcode. See [Result Codes](./carbon_core/text_encoding_conversion_manager.md#1664324).
 
-#### Discussion
+## Discussion
 
 Your application can use this function to break a string properlybefore you call the function  [`ConvertFromTextToUnicode`](./api-1433517-convertfromtexttounicode.md) so that the string you pass it is terminated with complete characters.You can call this function repeatedly to properly divide up a text segment,each time identifying the new beginning of the string, until thelast portion of the text is less than or equal to the maximum allowablelength. Each time you use the function, you get a properly terminatedstring within the allowable length range. 
 

@@ -27,7 +27,7 @@ var restorationClass: (any UIViewControllerRestoration.Type)? { get set }
 
 - [About the UI restoration process](../about-the-ui-restoration-process.md)
 
-#### Discussion
+## Discussion
 
 If a view controller has an associated restoration class, the [`viewController(withRestorationIdentifierPath:coder:)`](../uiviewcontrollerrestoration/viewcontroller%28withrestorationidentifierpath,coder%29.md) method of that class is called during state restoration. That method is responsible for returning the view controller object that matches the indicated view controller. If you do not specify a restoration class for your view controller, the state restoration engine asks your app delegate to provide the view controller object instead.
 

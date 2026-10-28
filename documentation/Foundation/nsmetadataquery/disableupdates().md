@@ -25,7 +25,7 @@ func disableUpdates()
 - (void) disableUpdates;
 ```
 
-#### Discussion
+## Discussion
 
 Unless you use [`enumerateResults(_:)`](./enumerateresults%28_%29.md) or [`enumerateResults(options:using:)`](./enumerateresults%28options,using%29.md), you should invoke this method before iterating over query results that could change due to live updates.
 

@@ -19,7 +19,7 @@ var modifierFlags: NSEvent.ModifierFlags { get }
 @property (readonly) NSEventModifierFlags modifierFlags;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property from an action method or delegate callback to determine which modifier keys, such as Shift or Command, were held down as part of the gesture.
 

@@ -17,11 +17,11 @@ Returns the accessory view used by the print operation’s print panel.
 - (NSView *) accessoryView;
 ```
 
-#### Return Value
+## Return Value
 
 The custom accessory view.
 
-#### Discussion
+## Discussion
 
 You use the [`setAccessoryView:`](./setaccessoryview_.md) method to customize the default `NSPrintPanel` object without having to subclass `NSPrintPanel` or specify your own print panel object.
 

@@ -17,7 +17,7 @@ var kIMKSingleRowSteppingCandidatePanel: Int { get }
 kIMKSingleRowSteppingCandidatePanel
 ```
 
-#### Discussion
+## Discussion
 
 A window that displays a single row.
 

@@ -24,7 +24,7 @@ func write(to fileURL: URL, smpteResolution resolution: Int, replaceExisting rep
 - (BOOL) writeToURL:(NSURL *) fileURL SMPTEResolution:(NSInteger) resolution replaceExisting:(BOOL) replace error:(NSError **) outError;
 ```
 
-#### Discussion
+## Discussion
 
 The framework writes only MIDI events when writing to the MIDI file. MIDI files are normally beat-based, but can also have an SMPTE (or real-time, rather than beat time) representation. The relationship between tick and quarter note for saving to a Standard MIDI File is the current value for the tempo track.
 

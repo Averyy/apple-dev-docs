@@ -21,7 +21,7 @@ Returns a size that results from rotating with the specified quaternion.
 static SPSize3D SPSize3DRotateByQuaternion(SPSize3D size, simd_quatd quaternion);
 ```
 
-#### Return Value
+## Return Value
 
 The size that results from rotating with the specified quaternion.
 

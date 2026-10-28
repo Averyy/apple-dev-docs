@@ -24,7 +24,7 @@ func logarithmBase2(with tensor: MPSGraphTensor, name: String?) -> MPSGraphTenso
 - (MPSGraphTensor *) logarithmBase2WithTensor:(MPSGraphTensor *) tensor name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid `MPSGraphTensor` object containing the elementwise result of the applied operation.
 

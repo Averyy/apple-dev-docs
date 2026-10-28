@@ -21,7 +21,7 @@ func startRendering() -> Bool
 - (BOOL) startRendering;
 ```
 
-#### Return Value
+## Return Value
 
 Returns [`false`](../../Swift/false.md) if the composition fails to start rendering; [`true`](../../Swift/true.md) otherwise.
 

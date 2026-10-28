@@ -21,7 +21,7 @@ Get or set a value in this dictionary as an XPCArray.
 subscript(key: String) -> XPCArray? { get set }
 ```
 
-#### Return Value
+## Return Value
 
 An XPCArray value or `nil` if no such value was found.
 

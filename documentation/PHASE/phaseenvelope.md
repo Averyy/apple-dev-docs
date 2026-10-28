@@ -24,7 +24,7 @@ class PHASEEnvelope
 @interface PHASEEnvelope : NSObject
 ```
 
-#### Overview
+## Overview
 
 In traditional audio uses, an *envelope* defines a complex graph that determines the volume of audio data over an input duration. PHASE uses envelopes in a similar way. Given a value on the envelope’s input axis, the [`evaluate(x:)`](./phaseenvelope/evaluate%28x%29.md) function plots and returns the result on the output axis. The following are possible uses of this class:
 
@@ -34,7 +34,7 @@ In traditional audio uses, an *envelope* defines a complex graph that determines
 
 At runtime, PHASE determines whether a particular member of the [`segments`](./phaseenvelope/segments.md) array slopes up or down along the domain depending on the envelope’s particular use case.
 
-##### Create an Envelope and Shape its Curve
+### Create an Envelope and Shape its Curve
 
 To use an envelope in your app, define its shape by defining a series of segments. Each segment specifies a curve that collectively connect to form a graph. The following code creates an envelope with a single segment that’s shaped like the lettter *s:*
 

@@ -24,11 +24,11 @@ init(controlPoints c1x: Float, _ c1y: Float, _ c2x: Float, _ c2y: Float)
 - (instancetype) initWithControlPoints:(float) c1x :(float) c1y :(float) c2x :(float) c2y;
 ```
 
-#### Return Value
+## Return Value
 
 An instance of `CAMediaTimingFunction` with the timing function specified by the provided control points.
 
-#### Discussion
+## Discussion
 
 The end points of the Bézier curve are automatically set to (0.0,0.0) and (1.0,1.0). The control points defining the Bézier curve are: [(0.0,0.0), (`c1x`,`c1y`), (`c2x`,`c2y`), (1.0,1.0)].
 

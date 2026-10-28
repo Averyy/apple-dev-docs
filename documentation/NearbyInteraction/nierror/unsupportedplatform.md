@@ -18,7 +18,7 @@ An error code that indicates that the framework doesn’t support the device pla
 static var unsupportedPlatform: NIError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 Before running an interaction session, call [`isSupported`](../nisession/issupported.md) to ensure that Nearby Interaction supports the device’s platform.
 

@@ -18,7 +18,7 @@ The pixel format of the depth attachment, or `nil` to omit depth.
 var depthPixelFormat: MTLPixelFormat? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Corresponds to `MTLRenderPassDepthAttachmentDescriptor.texture.pixelFormat`.
 

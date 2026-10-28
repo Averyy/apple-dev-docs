@@ -22,7 +22,7 @@ static var selection: SelectionShapeStyle { get }
 
 Available when `Self` is `SelectionShapeStyle`.
 
-#### Discussion
+## Discussion
 
 For example:
 

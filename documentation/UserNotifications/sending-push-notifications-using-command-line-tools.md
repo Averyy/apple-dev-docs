@@ -5,7 +5,7 @@
 
 Use basic macOS command-line tools to send push notifications to Apple Push Notification service (APNs).
 
-#### Overview
+## Overview
 
 Testing your APNs connection and configuration by writing a test app can take time. The command-line tools described below provide a quick way to test your setup with APNs in a nonproduction-quality test suite or app.
 
@@ -14,7 +14,7 @@ Before you begin, verify that:
 - Your target device is unlocked and connected to the internet.
 - Your app is open and in the foreground.
 
-##### Send a push notification using a certificate
+### Send a push notification using a certificate
 
 To send a push notification using a certificate, you’ll need:
 
@@ -32,7 +32,7 @@ TOPIC=App ID
 
 Whether you’re testing a device or a broadcast push notification determines the next set of variables to include.
 
-##### Send a device push notification using a certificate
+### Send a device push notification using a certificate
 
 To send a device push notification using a certificate, you’ll need:
 
@@ -69,7 +69,7 @@ Then send a push notification using this command:
 
 The result is an HTTP status of 200 (request succeeded). A notification with the text “test” appears on your destination device.
 
-##### Send a broadcast push notification using a certificate
+### Send a broadcast push notification using a certificate
 
 To send a broadcast push notification using a certificate, you’ll need:
 
@@ -110,7 +110,7 @@ Then send a push notification using this command:
 
 The result is an HTTP status of 200 (request succeeded). Update the data in the curl command based on your Live Activity.
 
-##### Send a push notification using a JSON web token (JWT)
+### Send a push notification using a JSON web token (JWT)
 
 To send a push notification using a JWT, you’ll need:
 
@@ -130,7 +130,7 @@ TOPIC=App ID
 
 Whether you’re testing a device or a broadcast push notification determines the next set of variables to include.
 
-##### Send a device push notification using a JWT
+### Send a device push notification using a JWT
 
 To send a device push notification using a JWT, you’ll need:
 
@@ -173,7 +173,7 @@ Send the push notification using this command:
 
 The result is an HTTP status of 200 (request succeeded). A notification with the text “test” appears on your destination device.
 
-##### Send a broadcast push notification using a JWT
+### Send a broadcast push notification using a JWT
 
 To send a broadcast push notification using a JWT, you’ll need:
 

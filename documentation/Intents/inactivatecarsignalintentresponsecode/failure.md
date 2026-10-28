@@ -23,7 +23,7 @@ case failure
 INActivateCarSignalIntentResponseCodeFailure
 ```
 
-#### Discussion
+## Discussion
 
 Use this response code for both transient and unrecoverable errors that would prevent your app from activating the car’s signals.
 

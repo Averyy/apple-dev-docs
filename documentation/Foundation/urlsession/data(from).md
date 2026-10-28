@@ -21,7 +21,7 @@ Convenience method to load data using a URL, creates and resumes a URLSessionDat
 func data(from url: URL) async throws -> (Data, URLResponse)
 ```
 
-#### Return Value
+## Return Value
 
 Data and response.
 

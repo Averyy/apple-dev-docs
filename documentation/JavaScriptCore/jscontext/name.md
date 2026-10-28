@@ -24,7 +24,7 @@ var name: String! { get set }
 @property (copy) NSString * name;
 ```
 
-#### Discussion
+## Discussion
 
 This name appears when using remote debugging to examine the context.
 

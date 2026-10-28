@@ -23,11 +23,11 @@ func sec_protocol_options_get_default_max_dtls_protocol_version() -> tls_protoco
 tls_protocol_version_t sec_protocol_options_get_default_max_dtls_protocol_version();
 ```
 
-#### Return Value
+## Return Value
 
 The default maximum DTLS version.
 
-#### Discussion
+## Discussion
 
 Get the system default maximum DTLS protocol version.
 

@@ -17,7 +17,7 @@ The configuration to use for Tunneled Transport Layer Security (TTLS).
 let ttlsConfiguration: WINetworkSharingProvider.Network.Credentials.EAPCredentials.TTLSConfiguration?
 ```
 
-#### Discussion
+## Discussion
 
 Set this property to `nil` if this network doesn’t use TTLS.
 

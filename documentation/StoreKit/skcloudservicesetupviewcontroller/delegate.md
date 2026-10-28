@@ -23,7 +23,7 @@ weak var delegate: (any SKCloudServiceSetupViewControllerDelegate)? { get set }
 @property (nonatomic, weak, nullable) id<SKCloudServiceSetupViewControllerDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 You can identify a delegate to get informed when the cloud service setup view controller is dismissed.
 

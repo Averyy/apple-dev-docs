@@ -19,7 +19,7 @@ The currently selected audio track.
 var currentAudioOption: AVPlaybackUserInterfaceMediaSelectionOption? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Should be one of the options in [`audioOptions`](./audiooptions.md).
 

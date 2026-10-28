@@ -24,11 +24,11 @@ class func success(with resolvedSpeed: Measurement<UnitSpeed>) -> Self
 + (instancetype) successWithResolvedSpeed:(NSMeasurement<NSUnitSpeed *> *) resolvedSpeed;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INSpeedResolutionResult`](../inspeedresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method to create a result object when you can resolve a parameter successfully to a value in your own internal data structures.
 

@@ -23,7 +23,7 @@ var earliestBeginDate: Date? { get set }
 @property (copy, nullable) NSDate * earliestBeginDate;
 ```
 
-#### Discussion
+## Discussion
 
 Specify `nil` for no start delay.
 

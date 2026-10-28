@@ -15,7 +15,7 @@ Defines an opaque data type used for color-matching and color-checking sessions.
 typedef struct OpaqueCMWorldRef *CMWorldRef;
 ```
 
-#### Discussion
+## Discussion
 
 Your application passes a color world reference as a parameter on calls to functions to perform color-matching and color-checking sessions and to dispose of the color world. When your application calls the function [NCWNewColorWorld](./colorsync_manager/api-1805079-ncwnewcolorworld.md) and the function [CWConcatColorWorld](./colorsync_manager/api-1805087-cwconcatcolorworld.md) to allocate a color world for color-matching and color-checking sessions, the ColorSync Manager returns a reference to the color world. The ColorSync Manager defines an abstract private data structure of type `OpaqueCMWorldRef` for the color world reference.
 

@@ -19,7 +19,7 @@ let kSpeechCharacterModeProperty: CFString
 const CFStringRef kSpeechCharacterModeProperty;
 ```
 
-#### Discussion
+## Discussion
 
 The value associated with this property is a `CFString` object that specifies whether the speech channel is currently in normal or literal character-processing mode. The constants `kSpeechModeNormal` and `kSpeechModeLiteral` (defined in [Speech-Channel Modes for Core Foundation-based Functions](./speech_synthesis_manager/speech-channel_modes_for_core_foundation-based_functions.md)) are the possible values of this string.
 

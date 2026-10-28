@@ -11,7 +11,7 @@ An atom that represents media language information.
 - [Language code values](./language_code_values.md)
 - [QuickTime File Format change log](./revision_history.md)
 
-#### Overview
+## Overview
 
 The extended language tag atom represents media language information based on the RFC 4646 (Best Common Practices (BCP) #47) industry standard. It is an optional peer of the media header atom and follows the definition of the media header atom in a QuickTime movie. There is at most one extended language tag atom per media atom and, in turn, per track. The extended language tag atom has an atom type of `'elng'`.
 

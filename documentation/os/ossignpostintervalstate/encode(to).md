@@ -21,7 +21,7 @@ Encodes the interval state into the provided encoder.
 func encode(to encoder: any Encoder) throws
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  You don’t call this method directly. Instead, the object you’re using to encode the interval state, which must adopt the [`Encoder`](../../Swift/encoder.md) protocol, calls it on your behalf as part of the serialization process.
 

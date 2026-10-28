@@ -21,11 +21,11 @@ A source of text-streaming operations.
 protocol TextOutputStreamable
 ```
 
-#### Overview
+## Overview
 
 Instances of types that conform to the `TextOutputStreamable` protocol can write their value to instances of any type that conforms to the `TextOutputStream` protocol. The Swift standard library’s text-related types, `String`, `Character`, and `Unicode.Scalar`, all conform to `TextOutputStreamable`.
 
-### Conforming to the TextOutputStreamable Protocol
+## Conforming to the TextOutputStreamable Protocol
 
 To add `TextOutputStreamable` conformance to a custom type, implement the required `write(to:)` method. Call the given output stream’s `write(_:)` method in your implementation.
 

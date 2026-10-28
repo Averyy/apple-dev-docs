@@ -25,7 +25,7 @@ case perShadable
 SCNBufferFrequencyPerShadable
 ```
 
-#### Discussion
+## Discussion
 
 Use this option when the contents of the buffer should be specific to each geometry or material whose program property is set to this shader. For example, a material-specific buffer might contain information to be used in animating a texture.
 

@@ -25,11 +25,11 @@ func fileExists(atPath path: String) -> Bool
 - (BOOL) fileExistsAtPath:(NSString *) path;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if a file at the specified path exists, or [`false`](../../Swift/false.md) if the file does not exist or its existence could not be determined.
 
-#### Discussion
+## Discussion
 
 If the file at `path` is inaccessible to your app, perhaps because one or more parent directories are inaccessible, this method returns [`false`](../../Swift/false.md). If the final element in `path` specifies a symbolic link, this method traverses the link and returns [`true`](../../Swift/true.md) or [`false`](../../Swift/false.md) based on the existence of the file at the link destination.
 

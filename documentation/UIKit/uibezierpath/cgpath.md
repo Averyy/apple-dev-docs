@@ -24,7 +24,7 @@ var cgPath: CGPath { get set }
 @property (nonatomic) CGPathRef CGPath;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains a snapshot of the path at any given point in time. Getting this property returns an immutable path object that you can pass to Core Graphics functions. The path object itself is owned by the `UIBezierPath` object and is valid only until you make further modifications to the path.
 

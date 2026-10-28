@@ -25,7 +25,7 @@ func getVersion(majorVersion: UnsafeMutablePointer<Int32>, minorVersion: UnsafeM
 extern void CGPDFDocumentGetVersion(CGPDFDocumentRef document, int *majorVersion, int *minorVersion);
 ```
 
-#### Discussion
+## Discussion
 
 On return, the values of the `majorVersion` and `minorVersion` parameters are set to the major and minor version numbers of the document respectively.
 

@@ -24,7 +24,7 @@ var localizedLocationNames: [String] { get }
 @property (nonatomic, strong, readonly) NSArray<NSString *> * localizedLocationNames;
 ```
 
-#### Discussion
+## Discussion
 
 For a collection list representing a group of moments, as seen in the Collections view in the Photos app, this property lists the location names associated with each moment in the group. For other types of collection list, this property’s value is `nil`.
 

@@ -25,11 +25,11 @@ func isPartialStringValid(_ partialStringPtr: AutoreleasingUnsafeMutablePointer<
 - (BOOL) isPartialStringValid:(NSString **) partialStringPtr proposedSelectedRange:(NSRangePointer) proposedSelRangePtr originalString:(NSString *) origString originalSelectedRange:(NSRange) origSelRange errorDescription:(NSString **) error;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if `partialStringPtr` is acceptable, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 In a subclass implementation, evaluate `partialString` according to the context. Return [`true`](../../Swift/true.md) if `partialStringPtr` is acceptable and [`false`](../../Swift/false.md) if `partialStringPtr` is unacceptable. If you return [`false`](../../Swift/false.md) and assign a new string to `partialStringPtr` and a new range to `proposedSelRangePtr`, the string and selection range are changed, otherwise, if no values are assigned to `partialStringPtr` or `proposedSelRangePtr`, the change is rejected. If you return [`false`](../../Swift/false.md), you can also return by indirection an `NSString` object (in `error`) that explains the reason why the validation failed; the delegate (if any) of the `NSControl` object managing the cell can then respond to the failure in control:didFailToValidatePartialString:errorDescription:.
 

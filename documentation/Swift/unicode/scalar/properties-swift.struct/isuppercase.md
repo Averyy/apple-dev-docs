@@ -21,7 +21,7 @@ A Boolean value indicating whether the scalar’s letterform is considered upper
 var isUppercase: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property corresponds to the “Uppercase” and the “Other_Uppercase” properties in the [Unicode Standard](http://www.unicode.org/versions/latest/).
 

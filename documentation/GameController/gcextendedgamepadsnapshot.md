@@ -26,7 +26,7 @@ class GCExtendedGamepadSnapshot
 @interface GCExtendedGamepadSnapshot : GCExtendedGamepad
 ```
 
-#### Overview
+## Overview
 
 To create a gamepad snapshot, call the [`saveSnapshot()`](./gcextendedgamepad/savesnapshot%28%29.md) method on a [`GCExtendedGamepad`](./gcextendedgamepad.md) object. The [`GCExtendedGamepadSnapshot`](./gcextendedgamepadsnapshot.md) class is a subclass of the [`GCExtendedGamepad`](./gcextendedgamepad.md) class, so you use the parent class’s properties to read the individual element values. The snapshot is stored in a device independent format. To get the flattened data representation of the snapshot data, read the [`snapshotData`](./gcextendedgamepadsnapshot/snapshotdata.md) property.
 

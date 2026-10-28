@@ -22,7 +22,7 @@ A `Sequence` that can contain the same elements as this one, possibly with a sim
 associatedtype Elements : Sequence = Self where Self.Element == Self.Elements.Element
 ```
 
-#### Discussion
+## Discussion
 
 - See also: `elements`
 

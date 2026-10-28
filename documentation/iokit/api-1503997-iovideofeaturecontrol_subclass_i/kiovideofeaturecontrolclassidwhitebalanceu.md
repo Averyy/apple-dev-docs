@@ -14,7 +14,7 @@
 kIOVideoFeatureControlClassIDWhiteBalanceU = 'whbu'
 ```
 
-#### Discussion
+## Discussion
 
 A IOVideoFeatureControl that controls the adjustment of the white color of the picture. The units for the control's absolute value are kelvin (K).
 

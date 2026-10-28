@@ -19,7 +19,7 @@ A type to represent a passkey credential.
 struct Passkey
 ```
 
-#### Overview
+## Overview
 
 This type is a representation of `Passkey` as defined in the Credential Exchange Format (CXF) specification.
 

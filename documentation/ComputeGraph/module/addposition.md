@@ -16,7 +16,7 @@ Moves an element by adding an offset to its current position.
 void module::addPosition(float3 offset)
 ```
 
-#### Discussion
+## Discussion
 
 Use this function to translate an element relative to its current location by applying a position offset.
 

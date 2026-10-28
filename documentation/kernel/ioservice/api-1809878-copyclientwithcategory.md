@@ -10,7 +10,7 @@ virtual IOService * copyClientWithCategory(
  const OSSymbol *category );
 ```
 
-#### Return Value
+## Return Value
 
 Returns a reference to the IOService child with the given category. The result should be released by the caller.
 

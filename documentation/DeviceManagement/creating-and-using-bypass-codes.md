@@ -5,7 +5,7 @@
 
 Maintain the bypass code parameters for disabling Activation Lock.
 
-#### Overview
+## Overview
 
 To manage Activation Lock, your device management service needs to store two bypass codes:
 
@@ -16,7 +16,7 @@ You can attempt to unlock the device by passing in an escrow key with one of the
 
 > **Note**:  You must request the activation lock bypass code before the device enables Activation Lock. If this sequence isn’t followed, the user may lock the device before you can install the bypass, in which case the bypass code won’t work.
 
-#### Create a bypass code
+## Create a bypass code
 
 When initiating Activation Lock for a device, you need to generate the bypass code necessary to disable Activation Lock at a later time.
 
@@ -111,7 +111,7 @@ The following code sample shows how to generate a bypass code:
 
 ```
 
-#### Use a bypass code to disable Activation Lock
+## Use a bypass code to disable Activation Lock
 
 To remove Activation Lock, provide the deviceʼs bypass code to the web service as its `escrowKey`. The request needs to be a standard HTTPS `POST` on port 443 to `https://deviceservices-external.apple.com/deviceservicesworkers/escrowKeyUnlock`, and your device management service must provide its APNs certificate when establishing the SSL connection with the web service. The request must also have `application/x-www-form-urlencoded` as its `contentType` header.
 

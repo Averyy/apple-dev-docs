@@ -16,11 +16,11 @@ nonisolated
 func hoverEffectGroup(id: String? = nil, in namespace: Namespace.ID, behavior: HoverEffectGroup.Behavior = .activatesGroup) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A new effect that is matched to other effects in the same group.
 
-#### Discussion
+## Discussion
 
 You use this modifier when all effects defined on a view and its subviews should activate together. In the following example hovering anywhere over the view will activate the `hoverEffect`s added to the `Text` and the background view, as well as any effects added to the group by other views:
 

@@ -19,7 +19,7 @@ class CMFallDetectionManager
 @interface CMFallDetectionManager : NSObject
 ```
 
-#### Overview
+## Overview
 
 In Series 4 and later, Apple Watch can detect when a wearer falls, and contact emergency services if necessary. Using the `CMFallDetectionManager`, your app can request the user’s authorization, and set up a delegate to receive notifications about these *fall detection events*. For more information, see [Use fall detection with Apple Watch](https://support.apple.com/en-us/HT208944).
 
@@ -29,7 +29,7 @@ In Series 4 and later, Apple Watch can detect when a wearer falls, and contact e
 
 There are two approaches to detecting falls in your app. You can either query for [`numberOfTimesFallen`](../HealthKit/hkquantitytypeidentifier/numberoftimesfallen.md) samples in HealthKit, or you can use Core Motion’s `CMFallDetectionManager`.
 
-##### Detect and Respond to Falls
+### Detect and Respond to Falls
 
 The Core Motion fall detection manager is particularly useful for apps that need to respond to falls in a timely manner so that the app can provide help to the person who fell.
 
@@ -39,7 +39,7 @@ The fall detection manager:
 - Notifies the app of all fall events
 - Provides background runtime so that your app can respond to the fall
 
-##### Detect and Monitor Falls Over Time
+### Detect and Monitor Falls Over Time
 
 The HealthKit sample is particularly useful for apps that monitor falls over longer time periods, because there can be a delay between the fall event and HealthKit updating its samples.
 
@@ -48,7 +48,7 @@ HealthKit provides:
 - Samples that are available on all devices that can access the person’s HealthKit data—not just the device that detected the fall
 - Samples for falls where the person who fell confirmed the fall, or the system escalated the fall to emergency services. If the person who fell dismisses the fall alert, HealthKit doesn’t record the fall.
 
-##### Create the Manager
+### Create the Manager
 
 To receive fall detection notifications, ensure that the feature is available on the current device. If the feature is available, create the manager and set its delegate.
 
@@ -70,7 +70,7 @@ Set the delegate as early as possible, ideally in your extension delegate’s [`
 
 > ❗ **Important**:  Create only a single instance of the detection manager. Store the manager in a variable so you can access it later. Be sure to use a variable that remains in memory throughout your app’s lifetime—for example, add the variable to your extension delegate.
 
-##### Request User Authorization
+### Request User Authorization
 
 After your user interface loads, check if you previously requested approval. If you haven’t, call [`requestAuthorization(handler:)`](./cmfalldetectionmanager/requestauthorization%28handler%29.md) to initiate a request.
 

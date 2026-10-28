@@ -22,7 +22,7 @@ let kCVPixelBufferIOSurfacePurgeableKey: CFString
 extern CFStringRef const kCVPixelBufferIOSurfacePurgeableKey;
 ```
 
-#### Discussion
+## Discussion
 
 Key sets the IOSurface backed memory allocation for CVPixelBuffer as purgeable and non-volatile.
 

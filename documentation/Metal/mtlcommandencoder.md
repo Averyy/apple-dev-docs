@@ -29,7 +29,7 @@ protocol MTLCommandEncoder : NSObjectProtocol
 - [Setting up a command structure](./setting-up-a-command-structure.md)
 - [Understanding the Metal 4 core API](./understanding-the-metal-4-core-api.md)
 
-#### Overview
+## Overview
 
 Don’t implement this protocol yourself; instead you call methods on an [`MTLCommandBuffer`](./mtlcommandbuffer.md) instance to create command encoders. Command encoder instances are lightweight instances that you re-create every time you need to send commands to the GPU.
 

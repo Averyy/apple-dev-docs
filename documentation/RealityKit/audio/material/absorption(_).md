@@ -20,7 +20,7 @@ Creates a new audio material with the provided absorption data.
 func absorption(_ data: Audio.Absorption) -> Audio.Material
 ```
 
-#### Discussion
+## Discussion
 
 Example usage:
 

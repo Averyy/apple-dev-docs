@@ -25,7 +25,7 @@ let kSecAttrIsInvisible: CFString
 extern CFStringRef const kSecAttrIsInvisible;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is of type [`CFBoolean`](../CoreFoundation/cfboolean.md) and is [`kCFBooleanTrue`](../CoreFoundation/kcfbooleantrue.md) if the item is invisible (that is, should not be displayed).
 

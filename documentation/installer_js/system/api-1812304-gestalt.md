@@ -11,11 +11,11 @@ Provides gestalt information that corresponds to the given selector.
 gestalt(selector)
 ```
 
-#### Return Value
+## Return Value
 
 Data for the given selector. 
 
-#### Overview
+## Overview
 
 For example, the expression in [Listing 1](./api-1812304-gestalt.md#2556491) returns `'1040'` in OS X v10.4.0:
 

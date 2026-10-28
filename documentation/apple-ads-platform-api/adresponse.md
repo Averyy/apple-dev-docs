@@ -15,11 +15,11 @@ The response object for an Ad operation.
 object AdResponse
 ```
 
-#### Discussion
+## Discussion
 
 Ad create, read, update, and delete operations return `AdResponse`, the single-item response envelope.
 
-##### Example
+### Example
 
 ```json
 {

@@ -24,7 +24,7 @@ var lodBias: Float { get set }
 @property (nonatomic) float lodBias;
 ```
 
-#### Discussion
+## Discussion
 
 The property’s default value is `0.0f`. The precision format is `S4.6`, and the range is `[-16.0, 15.999]`.
 

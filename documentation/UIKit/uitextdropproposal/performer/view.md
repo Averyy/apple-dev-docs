@@ -22,7 +22,7 @@ case view
 UITextDropPerformerView
 ```
 
-#### Discussion
+## Discussion
 
 This performer is the default for a [`UITextDropProposal`](../../uitextdropproposal.md) object. If this performer is used, the [`textDroppableView(_:willPerformDrop:)`](../../uitextdropdelegate/textdroppableview%28_,willperformdrop%29.md) method is called (if implemented). However, implementing the delegate method isn’t required when using this performer.
 

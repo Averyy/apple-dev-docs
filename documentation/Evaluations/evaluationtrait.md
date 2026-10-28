@@ -26,7 +26,7 @@ struct EvaluationTrait
 - [Evaluating language model responses](./evaluating-language-model-responses.md)
 - [Evaluating tool-calling behavior](./evaluating-tool-calling-behavior.md)
 
-#### Overview
+## Overview
 
 ```swift
 let accuracyMetric = Metric("Accuracy")

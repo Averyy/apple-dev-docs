@@ -25,7 +25,7 @@ var elements: [NSFetchIndexElementDescription] { get set }
 @property (copy) NSArray<NSFetchIndexElementDescription *> * elements;
 ```
 
-#### Discussion
+## Discussion
 
 Setting this property to an invalid value throws an exception, such as when the new value includes both R-tree and non-R-tree elements.
 

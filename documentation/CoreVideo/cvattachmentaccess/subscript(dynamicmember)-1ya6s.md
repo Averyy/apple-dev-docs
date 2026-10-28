@@ -21,7 +21,7 @@ Get or set composite attachment value as a property of this object.
 subscript<ModePreference, Value>(dynamicMember keyPath: KeyPath<Keys.Type, CVAttachmentCompositeKeyDefinition<ModePreference, Value>>) -> Value? where ModePreference : CVAttachmentModePreference, Value : CVAttachmentValueRepresentable { get set }
 ```
 
-#### Overview
+## Overview
 
 This subscript provides access to an attachment key as a property. The key to be accessed must be defined as a static property on the `Keys` type. This accessor is intended to be used with legacy keys which are not grouped together in a single container. For new keys, use [`CVAttachmentKeyDefinitions.Key`](../cvattachmentkeydefinitions/key.md) instead of using a composite key group.
 

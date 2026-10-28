@@ -21,7 +21,7 @@ The range of data that a single bin of a chart represents.
 struct ChartBinRange<Bound> where Bound : Comparable
 ```
 
-#### Overview
+## Overview
 
 All bins except the last for a particular chart represent an open range, meaning that the range doesn’t include the upper bound. The last range of the last bin is closed, so that it does include the upper bound. The system keeps track of the open or closed state of a particular range.
 

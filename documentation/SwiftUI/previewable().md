@@ -18,11 +18,11 @@ Tag allowing a dynamic property to appear inline in a preview.
 ## Declaration
 
 ```swift
-@attached
-(peer) macro Previewable()
+@attached(peer)
+macro Previewable()
 ```
 
-#### Overview
+## Overview
 
 Tagging a variable declaration at root scope in your `#Preview` body with ‘@Previewable’ allows you to use dynamic properties inline in previews. The `#Preview` macro will generate an embedded SwiftUI view; tagged declarations become properties on the view, and all remaining statements form the view’s body.
 

@@ -27,7 +27,7 @@ func withKnownIssue(_ comment: Comment? = nil, isIntermittent: Bool = false, iso
 
 - [Migrating a test from XCTest](./migratingfromxctest.md)
 
-#### Discussion
+## Discussion
 
 > **Throws**: Whatever is thrown by `body`, unless it is matched by `issueMatcher`.
 

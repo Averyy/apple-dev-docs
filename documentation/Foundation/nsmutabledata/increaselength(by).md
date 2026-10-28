@@ -25,7 +25,7 @@ func increaseLength(by extraLength: Int)
 - (void) increaseLengthBy:(NSUInteger) extraLength;
 ```
 
-#### Discussion
+## Discussion
 
 The additional bytes are all set to `0`.
 

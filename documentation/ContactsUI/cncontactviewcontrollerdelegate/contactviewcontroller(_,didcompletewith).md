@@ -22,7 +22,7 @@ optional func contactViewController(_ viewController: CNContactViewController, d
 - (void) contactViewController:(CNContactViewController *) viewController didCompleteWithContact:(CNContact *) contact;
 ```
 
-#### Discussion
+## Discussion
 
 If creating a new contact, the new contact added to the contacts list is passed in `contact`. If adding to an existing contact, the existing contact is passed in `contact`. It is up to the delegate to dismiss the view controller.
 

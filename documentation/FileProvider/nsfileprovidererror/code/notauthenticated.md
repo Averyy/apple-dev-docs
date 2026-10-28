@@ -23,7 +23,7 @@ case notAuthenticated
 NSFileProviderErrorNotAuthenticated
 ```
 
-#### Discussion
+## Discussion
 
 If your File Provider extension returns a [`notAuthenticated`](../notauthenticated.md) error, the system presents an alert to the user. If you have a File Provider UI extension, the system calls your [`FPUIActionExtensionViewController`](../../../FileProviderUI/fpuiactionextensionviewcontroller.md) class’s [`prepare(forError:)`](../../../FileProviderUI/fpuiactionextensionviewcontroller/prepare%28forerror%29.md) method before displaying the alert.
 

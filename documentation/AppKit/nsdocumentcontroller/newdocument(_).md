@@ -20,7 +20,7 @@ func newDocument(_ sender: Any?)
 - (void) newDocument:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 This method calls [`openUntitledDocumentAndDisplay(_:)`](./openuntitleddocumentanddisplay%28_%29.md).
 

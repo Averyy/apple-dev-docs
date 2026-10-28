@@ -25,7 +25,7 @@ static let inlinePresentationIntent: NSAttributedString.Key
 extern NSAttributedStringKey const NSInlinePresentationIntentAttributeName;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key is an [`NSNumber`](../../nsnumber.md) that contains a value from the [`InlinePresentationIntent`](../../inlinepresentationintent.md) type. This value indicates the Markdown formatting to apply to the range of text.
 

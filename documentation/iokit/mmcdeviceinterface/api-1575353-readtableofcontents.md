@@ -16,11 +16,11 @@ Issues a READ_TOC_PMA_ATIP command to the device as defined in MMC-2/SFF-8020i.
 IOReturn (*ReadTableOfContents)(void *self, SCSICmdField1Bit MSF, SCSICmdField4Bit FORMAT, SCSICmdField1Byte TRACK_SESSION_NUMBER, void *buffer, SCSICmdField2Byte bufferSize, SCSITaskStatus *taskStatus, SCSI_Sense_Data *senseDataBuffer);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if successful, kIOReturnNoDevice if there is no connection to an IOService, kIOReturnNoMemory if a SCSITask couldn't be created, or kIOReturnExclusiveAccess if the device is already opened for exclusive access by another client.
 
-#### Discussion
+## Discussion
 
 Once an MMCDeviceInterface is opened the client may send this command to read the table of contents from the media.
 

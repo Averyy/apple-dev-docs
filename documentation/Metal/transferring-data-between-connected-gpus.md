@@ -5,7 +5,7 @@
 
 Use high-speed connections between GPUs to transfer data quickly.
 
-#### Overview
+## Overview
 
 In macOS 10.15 and later, some Mac systems directly connect GPUs to each other, allowing you to quickly transfer data between them. These connections are not only faster, but they also avoid using the memory bus between the CPU and GPUs, leaving it available for other tasks. If your app uses multiple GPUs, test to see if they’re connected, and when they are, use the transfer mechanism described here.
 
@@ -80,13 +80,13 @@ NSArray<id<MTLDevice>>* devicesInPeerGroup(uint64_t peerGroupID)
 }
 ```
 
-##### Copy resources to the GPU that needs to access them
+### Copy resources to the GPU that needs to access them
 
 In Metal, resources are created by device instances, and are always associated with the device instance that created them. Peer groups don’t change that association. If a resource is associated with a device instance, and you want to access it on another device instance, you need to copy the data to a resource associated with the second device instance.
 
 To copy data between members of a peer group, make a *remote view* on the second GPU that’s connected to the resource you want to copy. A remote view is a resource instance that contains no storage of its own; it references the storage on the original GPU. You can only use remote views to copy data; using them in other Metal commands results in an error.
 
-##### Create a remote view of a resource
+### Create a remote view of a resource
 
 To create a remote view of a resource, the device instance you make the resource view on needs to share the same [`peerGroupID`](./mtldevice/peergroupid.md) as the device instance that created the resource. In addition, the resource needs to use the [`MTLStorageMode.private`](./mtlstoragemode/private.md) storage mode or be backed by an [`IOSurface`](../IOSurface/iosurface-page.md).
 
@@ -118,7 +118,7 @@ let remoteTextureView = sourceTexture.makeRemoteTextureView(otherDevice)
 id<MTLTexture> remoteTextureView = [sourceTexture newRemoteTextureViewForDevice:otherDevice];
 ```
 
-##### Copy data between connected GPUs
+### Copy data between connected GPUs
 
 Create an [`MTLBlitCommandEncoder`](./mtlblitcommandencoder.md) and encode a copy command. The source for this copy command is the remote view instance:
 
@@ -154,7 +154,7 @@ As shown in the following illustration, there are three resource instances: the 
 
 ![A figure showing two devices. The source buffer or texture is created by the first device. The second device has a remote view of the source texture and a destination texture.](https://developer.apple.com/tutorials/images/com.apple.metal/transferring-data-between-connected-gpus-1@2x.png)
 
-##### Synchronize access to resources
+### Synchronize access to resources
 
 Blit commands used in peer-to-peer transfers follow all of the usual synchronization rules on the GPU they’re performed on. However, they don’t automatically synchronize with any commands running on the source GPU. If you encode commands that modify the source resource, ensure that those commands are complete before executing the blit command to transfer the data to the other GPU. This is the same as what you do when transferring resources between GPUs through system memory.
 

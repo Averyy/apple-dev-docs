@@ -15,11 +15,11 @@ Converts a string from Unicode to one or more scripts.
 OSStatus ConvertFromUnicodeToScriptCodeRun(UnicodeToTextRunInfo iUnicodeToTextInfo, ByteCount iUnicodeLen, const UniChar iUnicodeStr[], OptionBits iControlFlags, ItemCount iOffsetCount, const ByteOffset iOffsetArray[], ItemCount *oOffsetCount, ByteOffset oOffsetArray[], ByteCount iOutputBufLen, ByteCount *oInputRead, ByteCount *oOutputLen, LogicalAddress oOutputStr, ItemCount iScriptRunBufLen, ItemCount *oScriptRunOutLen, ScriptCodeRun oScriptCodeRuns[]);
 ```
 
-#### Return Value
+## Return Value
 
 A resultcode. See [Result Codes](./carbon_core/text_encoding_conversion_manager.md#1664324).
 
-#### Discussion
+## Discussion
 
 To use the `ConvertFromUnicodeToScriptCodeRun` function,you must first set up an array of script codes containing in orderof precedence the scripts to be used for the conversion. To createa Unicode converter object, you call the function  [`CreateUnicodeToTextRunInfoByScriptCode`](./api-1433657-createunicodetotextruninfobyscri.md).You pass the returned Unicode converter object as the `iUnicodeToTextInfo` parameterwhen you call the `ConvertFromUnicodeToScriptCodeRun` function. 
 

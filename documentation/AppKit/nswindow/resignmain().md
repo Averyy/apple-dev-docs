@@ -19,7 +19,7 @@ func resignMain()
 - (void) resignMainWindow;
 ```
 
-#### Discussion
+## Discussion
 
 This method sends [`windowDidResignMain(_:)`](../nswindowdelegate/windowdidresignmain%28_%29.md) to the window’s delegate and posts [`didResignMainNotification`](./didresignmainnotification.md) to the default notification center.
 

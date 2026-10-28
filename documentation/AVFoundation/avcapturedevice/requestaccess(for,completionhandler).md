@@ -32,7 +32,7 @@ class func requestAccess(for mediaType: AVMediaType) async -> Bool
 
 - [Requesting authorization to capture and save media](../requesting-authorization-to-capture-and-save-media.md)
 
-#### Discussion
+## Discussion
 
 Capturing media requires explicit permission from the user. An app’s default authorization status is [`AVAuthorizationStatus.notDetermined`](../avauthorizationstatus/notdetermined.md), which means the user hasn’t yet granted it permission to capture media. The first time you create an [`AVCaptureDeviceInput`](../avcapturedeviceinput.md) object for a media type that requires permission, the system automatically displays an alert to request recording permission. Alternatively, call this method to prompt the user at a time of your choosing. The system saves the user’s selection so that it doesn’t have to prompt the user again. A user can change their authorization status in the Settings app.
 

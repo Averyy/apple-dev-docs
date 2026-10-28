@@ -26,11 +26,11 @@ init!(imageData data: Data!, options: [CIRAWFilterOption : Any]! = [:])
 + (CIFilter *) filterWithImageData:(NSData *) data options:(NSDictionary<NSString *,id> *) options;
 ```
 
-#### Return Value
+## Return Value
 
 A [`CIFilter`](../cifilter-swift.class.md) object.
 
-#### Discussion
+## Discussion
 
 You can pass any of the keys defined in [RAW Image Options](../raw-image-options.md) along with the appropriate value in `options`. You should provide a source type identifier hint key ([`kCGImageSourceTypeIdentifierHint`](../../ImageIO/kcgimagesourcetypeidentifierhint.md)) and the appropriate source type value to help the decoder determine the file type. Otherwise it’s possible to obtain incorrect results.
 

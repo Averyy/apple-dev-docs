@@ -20,11 +20,11 @@ optional func outlineView(_ outlineView: NSOutlineView, shouldSelect tableColumn
 - (BOOL) outlineView:(NSOutlineView *) outlineView shouldSelectTableColumn:(NSTableColumn *) tableColumn;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) to permit `outlineView` to select `tableColumn`, [`false`](../../Swift/false.md) to deny permission.
 
-#### Discussion
+## Discussion
 
 The delegate can implement this method to disallow selection of specific columns.
 

@@ -13,7 +13,7 @@
 kSCSITaskStatus_GOOD = 0x00
 ```
 
-#### Discussion
+## Discussion
 
 The task completed with a status of GOOD.
 

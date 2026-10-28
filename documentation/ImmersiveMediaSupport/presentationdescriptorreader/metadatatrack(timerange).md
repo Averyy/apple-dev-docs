@@ -19,11 +19,11 @@ Retrieves all metadata items to write to an output metadata track, optionally cl
 func metadataTrack(timeRange: CMTimeRange? = nil) throws -> [AVMetadataItem]
 ```
 
-#### Return Value
+## Return Value
 
 An array of `AVMetadataItem` objects sorted by start time.
 
-#### Discussion
+## Discussion
 
 Note: the last item’s `duration` may be invalid, since the descriptor itself doesn’t know where the video ends. If you need a concrete duration (e.g. to extend the final segment to the end of the video), copy the returned item and overwrite `duration` with the valid value. Also, use the same timescale for `timeRange` as the [`PresentationCommand`](../presentationcommand.md) values to avoid timescale mismatches.
 

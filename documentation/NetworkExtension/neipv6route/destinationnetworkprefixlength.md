@@ -24,7 +24,7 @@ var destinationNetworkPrefixLength: NSNumber { get }
 @property (readonly) NSNumber * destinationNetworkPrefixLength;
 ```
 
-#### Discussion
+## Discussion
 
 This string is combined with `destinationAddress` to specify the destination network of the route.
 

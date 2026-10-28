@@ -22,7 +22,7 @@ A collection that presents the elements of its base collection in reverse order.
 struct ReversedCollection<Base> where Base : BidirectionalCollection
 ```
 
-#### Overview
+## Overview
 
 > **Note**: This type is the result of `x.reversed()` where `x` is a collection having bidirectional indices.
 

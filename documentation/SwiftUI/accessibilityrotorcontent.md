@@ -22,7 +22,7 @@ Content within an accessibility rotor.
 @preconcurrency protocol AccessibilityRotorContent
 ```
 
-#### Overview
+## Overview
 
 Generally generated from control flow constructs like `ForEach` and `if`, and `AccessibilityRotorEntry`.
 

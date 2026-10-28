@@ -21,7 +21,7 @@ An entity that produces an omnidirectional light for virtual objects.
 @preconcurrency class PointLight
 ```
 
-#### Overview
+## Overview
 
 During an AR session, RealityKit automatically lights your virtual objects to match real-world lighting. You can also explicitly add virtual lights that act upon your virtual content. This is typically most useful outside of an AR session on iOS or macOS, where your [`RealityViewCameraContent`](./realityviewcameracontent.md) [`camera`](./realityviewcameracontent/camera.md) property is set to [`virtual`](./realityviewcamera/virtual.md).
 

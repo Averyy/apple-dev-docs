@@ -36,7 +36,7 @@ nonisolated
 init<S>(_ title: S, isOn: Binding<Bool>) where S : StringProtocol
 ```
 
-#### Discussion
+## Discussion
 
 This initializer creates a [`Text`](../text.md) view on your behalf. See `Text` for more information about localizing strings.
 

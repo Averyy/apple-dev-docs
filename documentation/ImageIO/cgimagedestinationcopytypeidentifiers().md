@@ -25,7 +25,7 @@ func CGImageDestinationCopyTypeIdentifiers() -> CFArray
 extern CFArrayRefCGImageDestinationCopyTypeIdentifiers();
 ```
 
-#### Return Value
+## Return Value
 
 Returns an array of the uniform type identifiers that image destinations support. For a list of system-declared and third-party identifiers, see [Uniform Type Identifiers](../UniformTypeIdentifiers/UniformTypeIdentifiers.md).
 

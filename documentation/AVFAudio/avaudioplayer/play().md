@@ -25,11 +25,11 @@ func play() -> Bool
 - (BOOL) play;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if playback starts successfully; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Calling this method implicitly calls [`prepareToPlay()`](./preparetoplay%28%29.md) if the audio player is unprepared for playback.
 

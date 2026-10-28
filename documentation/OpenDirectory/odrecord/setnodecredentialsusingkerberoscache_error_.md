@@ -16,11 +16,11 @@ Sets the credentials for interaction with the record’s node using a Kerberos c
 - (BOOL) setNodeCredentialsUsingKerberosCache:(NSString *) inCacheName error:(NSError **) outError;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the credentials are successfully set; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 If this function fails, the previous credentials for the node are used.
 

@@ -23,7 +23,7 @@ func fetch(_ request: SRFetchRequest)
 - (void) fetch:(SRFetchRequest *) request;
 ```
 
-#### Discussion
+## Discussion
 
 An app calls this function to access data for the caller’s sensor.
 

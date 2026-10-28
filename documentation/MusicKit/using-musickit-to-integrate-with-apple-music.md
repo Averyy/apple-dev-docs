@@ -12,11 +12,11 @@ Find an album in Apple Music that corresponds to a CD in a user’s collection, 
 - Mac Catalyst 15.0+
 - Xcode 26.0+
 
-#### Overview
+## Overview
 
 > **Note**: This sample code project is associated with WWDC21 session [10294: Meet MusicKit for Swift](https://developer.apple.com/wwdc21/10294/).
 
-##### Configure the sample code project
+### Configure the sample code project
 
 This sample code project must be run on a physical device.
 

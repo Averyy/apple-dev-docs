@@ -25,7 +25,7 @@ var patchControlPointCount: Int { get }
 @property (readonly) NSInteger patchControlPointCount;
 ```
 
-#### Discussion
+## Discussion
 
 This value is `-1` if the number of patch control points wasn’t specified or if the function isn’t a post-tessellation vertex function.
 

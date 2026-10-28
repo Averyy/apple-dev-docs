@@ -15,7 +15,7 @@ The original message ID of this message.
 let originalID: RCSMessageID?
 ```
 
-#### Discussion
+## Discussion
 
 A non-nil value indicates that this message was re-sent.
 

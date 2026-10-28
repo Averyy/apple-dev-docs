@@ -17,7 +17,7 @@ var kAXSelectedTextRangesAttribute: String { get }
 #define kAXSelectedTextRangesAttribute
 ```
 
-#### Discussion
+## Discussion
 
 An array of noncontiguous ranges of characters (not bytes) that defines the current selections of an editable text element.
 

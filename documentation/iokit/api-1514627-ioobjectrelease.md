@@ -23,11 +23,11 @@ func IOObjectRelease(_ object: io_object_t) -> kern_return_t
 kern_return_t IOObjectRelease(io_object_t object);
 ```
 
-#### Return Value
+## Return Value
 
 A kern_return_t error code.
 
-#### Discussion
+## Discussion
 
 All objects returned by IOKitLib should be released with this function when access to them is no longer needed. Using the object after it has been released may or may not return an error, depending on how many references the task has to the same object in the kernel.
 

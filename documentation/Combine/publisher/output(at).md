@@ -21,11 +21,11 @@ Publishes a specific element, indicated by its index in the sequence of publishe
 func output(at index: Int) -> Publishers.Output<Self>
 ```
 
-#### Return Value
+## Return Value
 
 A publisher that publishes a specific indexed element.
 
-#### Discussion
+## Discussion
 
 Use [`output(at:)`](./output%28at%29.md) when you need to republish a specific element specified by its position in the stream. If the publisher completes normally or with an error before publishing the specified element, then the publisher doesn’t produce any elements.
 

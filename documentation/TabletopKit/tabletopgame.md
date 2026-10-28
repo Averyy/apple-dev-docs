@@ -15,7 +15,7 @@ An object that manages the setup and gameplay of a tabletop game.
 class TabletopGame
 ```
 
-#### Overview
+## Overview
 
 First, create a [`TableSetup`](./tablesetup.md) object that represents your game layout and equipment. Add seats for players to occupy, conforming to the [`TableSeat`](./tableseat.md) protocol, and equipment for them to manipulate, conforming to the [`Equipment`](./equipment.md) protocol.
 

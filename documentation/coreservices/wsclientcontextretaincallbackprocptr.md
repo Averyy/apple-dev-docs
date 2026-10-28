@@ -15,11 +15,11 @@ This is the callback that retains the information.
 typedef void *(*WSClientContextRetainCallBackProcPtr)(void *info);
 ```
 
-#### Discussion
+## Discussion
 
 If your callback is named MyInfoRetainCallback, declare it like this:
 
-##### Discussion
+### Discussion
 
 Your callback is passed a  a pointer to private data for you to retain.
 

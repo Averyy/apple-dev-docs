@@ -25,7 +25,7 @@ func nw_udp_options_set_prefer_no_checksum(_ options: nw_protocol_options_t, _ p
 void nw_udp_options_set_prefer_no_checksum(nw_protocol_options_t options, bool prefer_no_checksum);
 ```
 
-#### Discussion
+## Discussion
 
 UDP checksums are optional when the datagrams are sent over IPv4. This option configures UDP to not set checksums on these datagrams, but has no effect on IPv6.
 

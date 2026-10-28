@@ -15,7 +15,7 @@ The request body that contains the old sign-in token and the new sign-in token.
 object UpdateAutoSignInTokenRequest
 ```
 
-#### Overview
+## Overview
 
 This is the request object for the [`Update Sign-In Token`](./update-this-token-for-all-associated-users.md) endpoint.
 

@@ -25,7 +25,7 @@ func inputFormat(forBus bus: AVAudioNodeBus) -> AVAudioFormat
 - (AVAudioFormat *) inputFormatForBus:(AVAudioNodeBus) bus;
 ```
 
-#### Return Value
+## Return Value
 
 An [`AVAudioFormat`](../avaudioformat.md) instance that represents the input format of the bus.
 

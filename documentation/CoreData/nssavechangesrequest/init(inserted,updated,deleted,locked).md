@@ -25,7 +25,7 @@ init(inserted insertedObjects: Set<NSManagedObject>?, updated updatedObjects: Se
 - (instancetype) initWithInsertedObjects:(NSSet<NSManagedObject *> *) insertedObjects updatedObjects:(NSSet<NSManagedObject *> *) updatedObjects deletedObjects:(NSSet<NSManagedObject *> *) deletedObjects lockedObjects:(NSSet<NSManagedObject *> *) lockedObjects;
 ```
 
-#### Return Value
+## Return Value
 
 A save changes request initialized with the given changes.
 

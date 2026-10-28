@@ -25,7 +25,7 @@ let AVURLAssetPrimarySessionIdentifierKey: String
 extern NSString * const AVURLAssetPrimarySessionIdentifierKey;
 ```
 
-#### Discussion
+## Discussion
 
 The asset appends value as the value of the `_HLS_primary_id` query parameter. Only HTTP Live Streaming assets support this option.
 

@@ -16,7 +16,7 @@ The field name that contains the error on the payment sheet.
 attribute ApplePayErrorContactField contactField;
 ```
 
-#### Discussion
+## Discussion
 
 The payment sheet highlights the field corresponding to the value of this attribute.
 

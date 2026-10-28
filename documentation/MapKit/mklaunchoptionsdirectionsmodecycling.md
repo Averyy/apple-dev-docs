@@ -24,7 +24,7 @@ let MKLaunchOptionsDirectionsModeCycling: String
 extern NSString * const MKLaunchOptionsDirectionsModeCycling;
 ```
 
-#### Discussion
+## Discussion
 
 You can use this launch options key to open the Maps app directly in the mode that enables route planning that returns cycling directions, as shown in this example.
 

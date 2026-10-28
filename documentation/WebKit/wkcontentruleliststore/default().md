@@ -23,11 +23,11 @@ class func `default`() -> Self!
 + (instancetype) defaultStore;
 ```
 
-#### Return Value
+## Return Value
 
 The default rule list store.
 
-#### Discussion
+## Discussion
 
 The default store contains the rules that your app created specifically for the current user.
 

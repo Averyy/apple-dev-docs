@@ -19,7 +19,7 @@ The button style that controls the display behavior of the background corner rad
 @property (nonatomic, assign, readwrite) UIButtonConfigurationCornerStyle cornerStyle;
 ```
 
-#### Discussion
+## Discussion
 
 This property controls the behavior of the [`cornerRadius`](../uibackgroundconfiguration-c.class/cornerradius.md) you set on the configuration background. The default corner style is [`UIButtonConfigurationCornerStyleDynamic`](../uibuttonconfigurationcornerstyle/uibuttonconfigurationcornerstyledynamic.md).
 

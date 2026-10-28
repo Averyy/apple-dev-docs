@@ -31,7 +31,7 @@ extern NSLinguisticTagScheme const NSLinguisticTagSchemeTokenType;
 
 - [Tokenizing Natural Language Text](../tokenizing-natural-language-text.md)
 
-#### Discussion
+## Discussion
 
 For possible values, see Token Types.
 

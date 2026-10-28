@@ -16,11 +16,11 @@
 struct IORWLock *IORWLockAlloc();
 ```
 
-#### Return Value
+## Return Value
 
 Pointer to the allocated lock, or zero on failure.
 
-#### Discussion
+## Discussion
 
 Allocates and initializes a read/write lock.
 

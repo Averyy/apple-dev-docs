@@ -19,7 +19,7 @@ var menu: NSMenu? { get set }
 @property (strong, nullable) NSMenu * menu;
 ```
 
-#### Discussion
+## Discussion
 
 This property overrides the [`NSView`](../nsview.md) implementation of `menu` and forwards the message to the `NSPathControlCell`.
 

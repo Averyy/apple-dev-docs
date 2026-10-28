@@ -18,11 +18,11 @@ Create an attention mask for this cache
 func makeMask(n: Int, windowSize: Int?, returnArray: Bool) -> MLXFast.ScaledDotProductAttentionMaskMode
 ```
 
-#### Return Value
+## Return Value
 
 Attention mask mode for scaled dot product attention
 
-#### Discussion
+## Discussion
 
 This method encapsulates cache-specific mask creation logic. Implementations should handle offset capping, window size logic, and optimization decisions (symbolic vs array masks).
 

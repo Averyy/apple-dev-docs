@@ -25,7 +25,7 @@ static var resourceBusy: Errno { get }
 
 - [Adopting Swift Error Constants](../adopting-errno.md)
 
-#### Discussion
+## Discussion
 
 You attempted to use a system resource which was in use at the time, in a manner that would have conflicted with the request.
 

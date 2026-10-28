@@ -20,7 +20,7 @@ func key(withAppleEventCode appleEventCode: FourCharCode) -> String?
 - (NSString *) keyWithAppleEventCode:(FourCharCode) appleEventCode;
 ```
 
-#### Return Value
+## Return Value
 
 The key that corresponds to the property or element class identified by `appleEventCode` in the receiver or, if none exists, in a class description in the receiver’s superclasses. The four-character Apple event code associated with the attribute or relationship identified by `key` Returns `0` if no such attribute or relationship is found. Returns `nil` if it cannot find any such attribute or relationship.
 

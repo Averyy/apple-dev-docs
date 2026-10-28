@@ -14,11 +14,11 @@ virtual IOReturn attachAudioPort(
  IORegistryEntry *child);
 ```
 
-#### Return Value
+## Return Value
 
 Returns true when the port has been successfully added and attached.
 
-#### Overview
+## Overview
 
 This function provides the functionality to represent the device's signal chain in the IOAudioPlane in the IORegistry. An IOAudioPort's parent(s) are before it in the signal chain and its children are after it. This method may be called multiple times for a single IOAudioPort. This is necessary when there are many children or parents. Once a relationship is made, it is not necessary to make the reverse relationship. A NULL value may be passed in for either the parent or child or both. The IOAudioPort passed in should be a newly allocated IOAudioPort instance. This function will appropriately attach and start the port object. NOTE: It is not necessary to use IOAudioPorts in a fully functional audio driver.
 

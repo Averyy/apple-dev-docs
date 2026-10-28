@@ -25,7 +25,7 @@ class func reveal(with direction: SKTransitionDirection, duration sec: TimeInter
 + (SKTransition *) revealWithDirection:(SKTransitionDirection) direction duration:(NSTimeInterval) sec;
 ```
 
-#### Return Value
+## Return Value
 
 A new transition.
 

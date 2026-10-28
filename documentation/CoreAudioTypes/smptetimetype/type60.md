@@ -23,7 +23,7 @@ case type60
 kSMPTETimeType60
 ```
 
-#### Discussion
+## Discussion
 
 60 video frames per second.
 

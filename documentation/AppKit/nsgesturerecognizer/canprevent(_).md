@@ -19,11 +19,11 @@ func canPrevent(_ preventedGestureRecognizer: NSGestureRecognizer) -> Bool
 - (BOOL) canPreventGestureRecognizer:(NSGestureRecognizer *) preventedGestureRecognizer;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) to indicate that `preventedGestureRecognizer` should be blocked from recognizing its gesture, or [`false`](../../Swift/false.md) if both gesture recognizers can operate simultaneously.
 
-#### Discussion
+## Discussion
 
 This method enables similar behavior as the [`gestureRecognizerShouldBegin(_:)`](../nsgesturerecognizerdelegate/gesturerecognizershouldbegin%28_%29.md) and [`gestureRecognizer(_:shouldRequireFailureOf:)`](../nsgesturerecognizerdelegate/gesturerecognizer%28_,shouldrequirefailureof%29.md) methods of the gesture recognizer’s delegate. Using this method lets you define rules that apply to all instances of your custom gesture recognizer class. For example, an [`NSClickGestureRecognizer`](../nsclickgesturerecognizer.md) object does not prevent another [`NSClickGestureRecognizer`](../nsclickgesturerecognizer.md) object with a higher click count from recognizing its gesture.
 

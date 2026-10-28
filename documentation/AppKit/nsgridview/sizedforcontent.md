@@ -19,7 +19,7 @@ class let sizedForContent: CGFloat
 extern const CGFloat NSGridViewSizeForContent;
 ```
 
-#### Discussion
+## Discussion
 
 This constant indicates that a row or column should automatically fit the content views.
 

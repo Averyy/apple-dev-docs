@@ -19,7 +19,7 @@ A Boolean value that determines whether scrolling is enabled.
 final var isScrollEnabled: Bool { get set }
 ```
 
-#### Discussion
+## Discussion
 
 When `false`, the scroll view disables dragging temporarily. Default is `true`.
 

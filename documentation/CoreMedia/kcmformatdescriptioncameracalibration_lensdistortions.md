@@ -23,7 +23,7 @@ let kCMFormatDescriptionCameraCalibration_LensDistortions: CFString
 extern CFStringRef const kCMFormatDescriptionCameraCalibration_LensDistortions;
 ```
 
-#### Discussion
+## Discussion
 
 Specifies the first and second radial distortion coefficients(k1 and k2) used to correct the distortion that appeared as curved lines for straight lines and the first and second tangential distortion coefficients(p1 and p2) used to correct the distortion caused by a lens’s improper alignment of physical elements.
 

@@ -20,7 +20,7 @@ var remapLineEndings: Bool { get }
 @property (atomic, readonly) BOOL remapLineEndings;
 ```
 
-#### Discussion
+## Discussion
 
 The default is [`false`](../../Swift/false.md). Override to return [`true`](../../Swift/true.md) if you want the remapping to occur.
 

@@ -23,7 +23,7 @@ func deinterleave(destination: vImage.PixelBuffer<vImage.PlanarFx4>)
 
 Available when `Format` is `vImage.InterleavedFx4`.
 
-#### Discussion
+## Discussion
 
 Use this function to deinterleave a buffer and overwrite a multiple-plane pixel buffer with copies of each source channel.
 

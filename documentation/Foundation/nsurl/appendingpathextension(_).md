@@ -25,11 +25,11 @@ func appendingPathExtension(_ pathExtension: String) -> URL?
 - (NSURL *) URLByAppendingPathExtension:(NSString *) pathExtension;
 ```
 
-#### Return Value
+## Return Value
 
 A new URL with `pathExtension` appended.
 
-#### Discussion
+## Discussion
 
 If the original URL ends with one or more forward slashes, these are removed from the returned URL. A period is inserted between the two parts of the new URL.
 

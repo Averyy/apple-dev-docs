@@ -25,11 +25,11 @@ func replacementObject(for coder: NSCoder) -> Any?
 - (id) replacementObjectForCoder:(NSCoder *) coder;
 ```
 
-#### Return Value
+## Return Value
 
 The object encode instead of the receiver (if different).
 
-#### Discussion
+## Discussion
 
 An object might encode itself into an archive, but encode a proxy for itself if it’s being encoded for distribution. This method is invoked by `NSCoder`. `NSObject`’s implementation returns `self`.
 

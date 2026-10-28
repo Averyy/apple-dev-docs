@@ -15,7 +15,7 @@ An error that indicates the alternative text for an image is too long.
 object AltTextTooLongError
 ```
 
-#### Discussion
+## Discussion
 
 When you call [`Upload Message`](./upload-message.md) and include an image, check that the alternative text contains no more than 150 characters.
 

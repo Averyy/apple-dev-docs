@@ -22,7 +22,7 @@ enum Code
 enum NIErrorCode : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 This enumeration uses [`session(_:didInvalidateWith:)`](../nisessiondelegate/session%28_,didinvalidatewith%29.md) to collect the errors the framework provides to the delegate.
 

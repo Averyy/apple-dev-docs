@@ -24,7 +24,7 @@ var backgroundColor: UIColor? { get set }
 @property (nonatomic, copy, nullable) UIColor * backgroundColor;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to specify the background color for your button. If you don’t specify a value for this property, UIKit assigns a default color based on the value in the [`style`](./style-swift.property.md) property.
 

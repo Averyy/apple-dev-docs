@@ -21,11 +21,11 @@ class func timeMode() -> QCPlugInTimeMode
 + (QCPlugInTimeMode) timeMode;
 ```
 
-#### Return Value
+## Return Value
 
 The time mode of the custom patch. See [`QCPlugInTimeMode`](../qcplugintimemode.md) for the constants you can return.
 
-#### Discussion
+## Discussion
 
 You must implement this method to define whether you custom patch depends on time, doesn’t depend on time, or needs time to idle.
 

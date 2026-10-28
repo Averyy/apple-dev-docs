@@ -19,7 +19,7 @@ protocol NSDockTilePlugIn : NSObjectProtocol
 @protocol NSDockTilePlugIn <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Customizing an application’s Dock tile when the application itself is not running requires that you write a plug-in. The plug-in’s principal class must implement the [`NSDockTilePlugIn`](./nsdocktileplugin.md) protocol.
 

@@ -25,7 +25,7 @@ func CFBundleLoadExecutableAndReturnError(_ bundle: CFBundle!, _ error: UnsafeMu
 extern Boolean CFBundleLoadExecutableAndReturnError(CFBundleRef bundle, CFErrorRef*error);
 ```
 
-#### Return Value
+## Return Value
 
 If `bundle` is already loaded, returns `true`. If `bundle` is not already loaded, attempts to load `bundle`; if that attempt succeeds returns `true`, otherwise returns `false`.
 

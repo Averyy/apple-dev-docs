@@ -19,7 +19,7 @@ A hover effect that slides the pointer under the view and disappears as the view
 struct LiftHoverEffect
 ```
 
-#### Overview
+## Overview
 
 You can also use [`lift`](./customhovereffect/lift.md) to construct this hover effect.
 

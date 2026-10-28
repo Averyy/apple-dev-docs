@@ -28,7 +28,7 @@ Sets the model container in this scene for storing the provided model type, crea
 @preconcurrency func modelContainer(for modelTypes: [any PersistentModel.Type], inMemory: Bool = false, isAutosaveEnabled: Bool = true, isUndoEnabled: Bool = false, onSetup: @escaping (Result<ModelContainer, any Error>) -> Void = { _ in }) -> some Scene
 ```
 
-#### Discussion
+## Discussion
 
 In this example, `RecipesApp` sets a shared model container to use for all of its windows, configured to store instances of `Recipe`:
 

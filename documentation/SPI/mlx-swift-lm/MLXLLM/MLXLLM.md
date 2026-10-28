@@ -11,14 +11,14 @@ framework: "mlx-swift-lm/MLXLLM"
 
 Example implementations of various Large Language Models (LLMs).
 
-#### Other MLX Libraries Packages
+## Other MLX Libraries Packages
 
 - [MLXEmbedders](../MLXEmbedders/MLXEmbedders.md)
 - [MLXLLM](./MLXLLM.md)
 - [MLXLMCommon](../MLXLMCommon/MLXLMCommon.md)
 - [MLXVLM](../MLXVLM/MLXVLM.md)
 
-#### Quick Start
+## Quick Start
 
 See [Evaluation](./evaluation.md).
 

@@ -23,7 +23,7 @@ var toolbarsVisibility: NSNumber? { get }
 @property (nonatomic, readonly, nullable) NSNumber * toolbarsVisibility;
 ```
 
-#### Discussion
+## Discussion
 
 If the webpage didn’t request a visible toolbar, this property is `nil`.
 

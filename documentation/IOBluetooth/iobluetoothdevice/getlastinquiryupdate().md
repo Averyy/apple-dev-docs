@@ -19,7 +19,7 @@ func getLastInquiryUpdate() -> Date!
 - (NSDate *) getLastInquiryUpdate;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the date/time of the last time the device was seen during an inquiry. If the device has never been seen during an inquiry, nil is returned.
 

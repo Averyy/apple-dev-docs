@@ -20,7 +20,7 @@ The locales that the transcriber can transcribe into, including locales that may
 static var supportedLocales: [Locale] { get async }
 ```
 
-#### Discussion
+## Discussion
 
 This array is empty if the device does not support the transcriber.
 

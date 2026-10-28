@@ -20,7 +20,7 @@ Binds multiple buffers with data in stride to the buffer argument table at once,
 func setBuffers(_ buffers: [(any MTLBuffer)?], offsets: [Int], attributeStrides: [Int], range: Range<Int>)
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  This method requires that the length of `buffers`, `offsets`, and `attributeStrides` are all equal to the length of `range`.
 

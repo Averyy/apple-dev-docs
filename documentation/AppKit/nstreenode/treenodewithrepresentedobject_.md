@@ -15,7 +15,7 @@ Creates and returns a tree node that represents the specified object.
 + (instancetype) treeNodeWithRepresentedObject:(id) modelObject;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized tree node that represents `modelObject`.
 

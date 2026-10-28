@@ -24,7 +24,7 @@ var commandTypes: MTLIndirectCommandType { get set }
 @property (nonatomic, readwrite) MTLIndirectCommandType commandTypes;
 ```
 
-#### Discussion
+## Discussion
 
 When you create the indirect command buffer, Metal allocates memory for each command it can hold. It needs to allocate enough memory to hold any command that you might later encode. To save space, specify only the command types you are going to encode in the indirect command buffer.
 

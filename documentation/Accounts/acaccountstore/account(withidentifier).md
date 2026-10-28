@@ -24,7 +24,7 @@ func account(withIdentifier identifier: String!) -> ACAccount!
 - (ACAccount *) accountWithIdentifier:(NSString *) identifier;
 ```
 
-#### Return Value
+## Return Value
 
 The account that matches the value specified in `identifier`.
 

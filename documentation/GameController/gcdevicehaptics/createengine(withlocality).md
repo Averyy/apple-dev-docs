@@ -24,11 +24,11 @@ func createEngine(withLocality locality: GCHapticsLocality) -> CHHapticEngine?
 - (CHHapticEngine *) createEngineWithLocality:(GCHapticsLocality) locality;
 ```
 
-#### Return Value
+## Return Value
 
 A new haptics engine with the specified locality.
 
-#### Discussion
+## Discussion
 
 If you create an engine using the [`default`](../gchapticslocality/default.md) location, users have the expected haptic experience. For example, the engine uses the handle accuators. If you want to create different experiences, such as using the left handle actuator as a woofer and the right actuator as a tweeter, create one or more engines with different localities.
 

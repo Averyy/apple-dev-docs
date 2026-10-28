@@ -20,11 +20,11 @@ var attributedStringForNil: NSAttributedString { get set }
 @property (copy) NSAttributedString * attributedStringForNil;
 ```
 
-#### Discussion
+## Discussion
 
 By default `nil` values are displayed as an empty string.
 
-##### Special Considerations
+### Special Considerations
 
 This method is for use with formatters using `NSNumberFormatterBehavior10_0` behavior.
 

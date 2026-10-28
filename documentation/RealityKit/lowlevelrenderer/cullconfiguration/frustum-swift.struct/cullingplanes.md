@@ -18,7 +18,7 @@ The planes that define the culling volume.
 var cullingPlanes: [LowLevelRenderer.CullConfiguration.Plane] { get set }
 ```
 
-#### Discussion
+## Discussion
 
 An instance is culled if its mesh part bounds lie entirely outside any single plane.
 

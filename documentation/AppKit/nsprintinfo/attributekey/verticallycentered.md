@@ -19,7 +19,7 @@ static let verticallyCentered: NSPrintInfo.AttributeKey
 extern NSPrintInfoAttributeKey const NSPrintVerticallyCentered;
 ```
 
-#### Discussion
+## Discussion
 
 If [`true`](../../../Swift/true.md), pages are centered vertically.
 

@@ -21,7 +21,7 @@ Returns a new context that wraps a graph object that the given closure defines.
 static func makeContext(options: BNNSGraph.CompileOptions = CompileOptions(), _ block: (inout BNNSGraph.Builder) -> [any BNNSGraph.TensorDescriptor]) throws -> BNNSGraph.Context
 ```
 
-#### Discussion
+## Discussion
 
 Use this function to specify the operations that define a BNNS graph. For example, the following code creates a graph that performs element-wise multiplication of two eight-element vectors:
 

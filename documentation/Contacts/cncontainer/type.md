@@ -32,7 +32,7 @@ var type: CNContainerType { get }
 @property (atomic, readonly) CNContainerType type;
 ```
 
-#### Discussion
+## Discussion
 
 To learn more about different container types, see [`CNContainerType`](../cncontainertype.md).
 

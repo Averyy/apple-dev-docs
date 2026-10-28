@@ -21,11 +21,11 @@ Creates and returns a mutable dictionary, initially giving it enough allocated m
 + (instancetype) dictionaryWithCapacity:(NSUInteger) numItems;
 ```
 
-#### Return Value
+## Return Value
 
 A new mutable dictionary with enough allocated memory to hold `numItems` entries.
 
-#### Discussion
+## Discussion
 
 Mutable dictionaries allocate additional memory as needed, so `numItems` simply establishes the object’s initial capacity.
 

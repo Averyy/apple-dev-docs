@@ -25,7 +25,7 @@ class func isSubclass(of aClass: AnyClass) -> Bool
 + (BOOL) isSubclassOfClass:(Class) aClass;
 ```
 
-#### Return Value
+## Return Value
 
 [`YES`](../yes.md) if the receiving class is a subclass of—or identical to—`aClass`, otherwise [`NO`](../no.md).
 

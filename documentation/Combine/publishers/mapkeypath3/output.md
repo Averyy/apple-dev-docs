@@ -21,7 +21,7 @@ The kind of values published by this publisher.
 typealias Output = (Output0, Output1, Output2)
 ```
 
-#### Discussion
+## Discussion
 
 This publisher produces three-element tuples, where each menber’s type matches the type of the corresponding key path’s property.
 

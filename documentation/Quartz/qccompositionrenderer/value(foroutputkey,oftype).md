@@ -22,11 +22,11 @@ func value(forOutputKey key: String!, ofType type: String!) -> Any!
 - (id) valueForOutputKey:(NSString *) key ofType:(NSString *) type;
 ```
 
-#### Return Value
+## Return Value
 
 The value.
 
-#### Discussion
+## Discussion
 
 The value type depends on the type of the port type, as shown in the following table
 

@@ -25,7 +25,7 @@ func CFFileSecuritySetGroupUUID(_ fileSec: CFFileSecurity!, _ groupUUID: CFUUID!
 extern Boolean CFFileSecuritySetGroupUUID(CFFileSecurityRef fileSec, CFUUIDRef groupUUID);
 ```
 
-#### Return Value
+## Return Value
 
 Returns `true` if the group UUID was successfully set, otherwise `false`.
 

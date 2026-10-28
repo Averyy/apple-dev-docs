@@ -23,7 +23,7 @@ static func * (lhs: Measurement<UnitType>, rhs: Double) -> Measurement<UnitType>
 
 Available when `UnitType` inherits `Unit`.
 
-#### Return Value
+## Return Value
 
 A measurement of value `lhs.value * rhs` with the same unit as `lhs`.
 

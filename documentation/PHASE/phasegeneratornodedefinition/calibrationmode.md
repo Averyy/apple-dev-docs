@@ -24,7 +24,7 @@ var calibrationMode: PHASECalibrationMode { get }
 @property (readonly) PHASECalibrationMode calibrationMode;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`PHASECalibrationMode.none`](../phasecalibrationmode/none.md). To set a value, call [`setCalibrationMode(calibrationMode:level:)`](./setcalibrationmode%28calibrationmode,level%29.md).
 

@@ -24,11 +24,11 @@ Opens and returns a file descriptor for a localized asset file at the specified 
 
 - [Reducing download and storage demands with localized asset packs](../reducing-download-and-storage-demands-with-localized-asset-packs.md)
 
-#### Return Value
+## Return Value
 
 A descriptor for the opened file. A return value of `-1` indicates that an error occurred.
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**: It’s your responsibility to close the file descriptor when you’re done using it.
 

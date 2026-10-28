@@ -20,7 +20,7 @@ An action that enables or disables the targeted entity and its descendants when 
 struct SetEntityEnabledAction
 ```
 
-#### Overview
+## Overview
 
 This action toggles the [`targetEntity`](./setentityenabledaction/targetentity.md) [`isEnabled`](./entity/isenabled.md) flag. Use the animation generated from this action within an animation group to determine when the entity should be enabled, and visible in the scene.
 

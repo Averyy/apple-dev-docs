@@ -25,7 +25,7 @@ func setStrokeColor(red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat)
 extern void CGContextSetRGBStrokeColor(CGContextRef c, CGFloat red, CGFloat green, CGFloat blue, CGFloat alpha);
 ```
 
-#### Discussion
+## Discussion
 
 When you call this function, two things happen:
 

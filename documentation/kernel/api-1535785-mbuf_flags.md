@@ -13,11 +13,11 @@
 mbuf_flags_t mbuf_flags(const mbuf_t mbuf);
 ```
 
-#### Return Value
+## Return Value
 
 The flags.
 
-#### Discussion
+## Discussion
 
 Returns the set flags.
 

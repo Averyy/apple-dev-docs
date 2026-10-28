@@ -17,7 +17,7 @@ Textual names for one part of a larger structure.
 enum Label
 ```
 
-#### Overview
+## Overview
 
 The [`CapturedRoom.Section`](../section.md) structure [`label`](./label-swift.property.md) property is of this type.
 

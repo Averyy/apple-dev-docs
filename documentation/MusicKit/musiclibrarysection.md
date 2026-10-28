@@ -22,7 +22,7 @@ A section for a library sectioned response.
 struct MusicLibrarySection<SectionType, MusicItemType> where SectionType : MusicLibrarySectionRequestable, MusicItemType : MusicLibraryRequestable
 ```
 
-#### Overview
+## Overview
 
 Your app can access any property of the requested section type directly on this library section object.
 

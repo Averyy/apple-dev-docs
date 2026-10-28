@@ -18,7 +18,7 @@ The errors that can occur during reconstruction in a photogrammetry session.
 enum Error
 ```
 
-#### Overview
+## Overview
 
 Localize these errors in your app.
 

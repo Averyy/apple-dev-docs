@@ -21,7 +21,7 @@ The forecast from now until midnight local time.
 var restOfDayForecast: DayPartForecast?
 ```
 
-#### Discussion
+## Discussion
 
 The value is only available for the current day.
 

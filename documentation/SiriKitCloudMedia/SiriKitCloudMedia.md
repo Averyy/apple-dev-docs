@@ -9,13 +9,13 @@ Stream music directly to HomePod speakers from your media service.
 **Availability**:
 - SiriKit Cloud Media 1.0.2+
 
-#### Overview
+## Overview
 
 When the user asks an authorized HomePod speaker to play some media, the media device can contact your `SiriKitCloudMedia` service directly, rather than send requests through an intermediary iOS device.
 
 Download the SiriKit Cloud Media [OpenAPI Specification](https://developer.apple.com/sample-code/siri/sirikit-cloud-media-open-api.zip). For details about applying for the SiriKit Media Intents on HomePod program, see the HomePod section of [Siri for Developers](https://developer.apple.com/siri).
 
-##### Configure the User’s HomePod
+### Configure the User’s HomePod
 
 Authorize HomePod speakers to contact your media service by adopting [Media Setup](../MediaSetup/MediaSetup.md) in your iOS app and vending tokens from an OAuth service. After the user enables your service for devices in their home, they can manage access in the Home app.
 
@@ -23,13 +23,13 @@ Provide a HomePod speaker with details about sending requests to your service by
 
 > **Note**:  During a single session, some requests may come from a different HomePod speaker or an Apple TV within the user’s home. Respond to these requests the same as you do when a single device sends all of them. Use the [`Session`](./session.md) object to maintain continuity.
 
-##### Respond to a Siri Intent with a Media Playback Queue
+### Respond to a Siri Intent with a Media Playback Queue
 
 Implement the [`Process a Play Media Intent`](./playmedia-1g2o9.md) endpoint to receive the user’s request, resolve the media they want to play, and handle the intent. Respond with a [`UserActivity`](./useractivity.md), which the client uses to request a [`Queue`](./queue.md) of media [`Content`](./content.md) from the [`Get a Media Queue`](./playmedia-1onzj.md) endpoint.
 
 Manage how frequently the user can skip content in a queue, and what playback controls are available with each piece of content, with the [`PlayMediaControl`](./playmediacontrol.md) you include in each queue. Monitor user interactions and playback progress with periodic updates on the [`Report Playback Progress and Activity`](./updateactivity.md) endpoint. You may optionally respond to [`Report Playback Progress and Activity`](./updateactivity.md) requests with a queue segment to replace or modify the current playback queue.
 
-##### Adapt to the User’s Tastes
+### Adapt to the User’s Tastes
 
 Empower the user to customize their library and playlists with the [`Process an Add Media Intent`](./addmedia.md) endpoint. They might ask Siri to add a certain artist’s latest album to their library, or to add the currently playing song to their Karaoke Practice playlist.
 

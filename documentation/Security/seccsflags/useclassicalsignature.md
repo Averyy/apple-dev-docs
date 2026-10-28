@@ -20,7 +20,7 @@ static var useClassicalSignature: SecCSFlags { get }
 kSecCSUseClassicalSignature
 ```
 
-#### Discussion
+## Discussion
 
 When passed to a validation or inspection call on a dual-signed code object, select the classical (RSA) signature slot for validation and information retrieval. Mutually exclusive with kSecCSUsePostQuantumSignature; passing both returns errSecCSInvalidFlags.
 

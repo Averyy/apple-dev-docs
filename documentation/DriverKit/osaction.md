@@ -22,7 +22,7 @@ class OSAction;
 
 - [Creating a Driver Using the DriverKit SDK](./creating-a-driver-using-the-driverkit-sdk.md)
 
-#### Overview
+## Overview
 
 An [`OSAction`](./osaction.md) object encapsulates a custom method of your driver, and the object that contains that method. When configuring your driver, you use action objects in places where the system must call your custom code asynchronously. For example, a timer dispatch source notifies its action object when the specified time elapses. Because actions execute asynchronously, store any state information your action requires in the object you specify at configuration time.
 

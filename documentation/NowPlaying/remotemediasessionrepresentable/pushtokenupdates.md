@@ -23,7 +23,7 @@ var pushTokenUpdates: AsyncStream<Data> { get }
 
 - [Publishing remote media sessions](../publishing-remote-media-sessions.md)
 
-#### Discussion
+## Discussion
 
 Monitor this sequence to receive updated push tokens. When the token changes, transmit the new token securely to your server so the server can continue to send update and end push notifications for this session. Invalidate the outdated token promptly so it cannot be reused, and retain the token only as long as needed to deliver session updates.
 

@@ -25,11 +25,11 @@ class func setNormalTexture(_ texture: SKTexture, resize: Bool) -> SKAction
 + (SKAction *) setNormalTexture:(SKTexture *) texture resize:(BOOL) resize;
 ```
 
-#### Return Value
+## Return Value
 
 A new action object.
 
-#### Discussion
+## Discussion
 
 This action can only be executed by an [`SKSpriteNode`](../skspritenode.md) object. When the action executes, the sprite’s [`normalTexture`](../skspritenode/normaltexture.md) property changes immediately to the new texture and the sprite is resized to match.
 

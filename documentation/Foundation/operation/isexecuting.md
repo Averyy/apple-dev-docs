@@ -25,7 +25,7 @@ var isExecuting: Bool { get }
 @property (readonly, getter=isExecuting) BOOL executing;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) if the operation is currently executing its main task or [`false`](../../Swift/false.md) if it is not.
 

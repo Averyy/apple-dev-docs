@@ -25,7 +25,7 @@ var gpuEndTime: CFTimeInterval { get }
 @property (readonly) CFTimeInterval GPUEndTime;
 ```
 
-#### Discussion
+## Discussion
 
 You can calculate how much time the GPU spends running a command buffer by subtracting [`gpuStartTime`](./gpustarttime.md) from this value. Both values are relative to system mach time.
 

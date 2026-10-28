@@ -16,7 +16,7 @@ The name of the IOFilterScheme class.
 #define kIOFilterSchemeClass
 ```
 
-#### Discussion
+## Discussion
 
 kIOFilterSchemeClass is the name of the IOFilterScheme class.
 

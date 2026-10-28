@@ -5,7 +5,7 @@
 
 Set up and connect Behavior Tree nodes to drive entity decision-making in your scene.
 
-#### Overview
+## Overview
 
 A Behavior Tree is a construct that defines a prioritized hierarchy of behavior used by an entity in a scene. For example, use a Behavior Tree to control which path a duck takes across a pond.
 
@@ -15,7 +15,7 @@ When a Behavior Tree has completed processing — meaning the tree has traversed
 
 ![A Behavior Tree in the Reality Composer Pro editor showing a Root node connected to Selector and Sequence composite nodes, with Action nodes as leaves.](https://developer.apple.com/tutorials/images/RealityComposerPro/BehaviorTree@2x.png)
 
-#### Combine Behavior Trees with a decision-making layer
+## Combine Behavior Trees with a decision-making layer
 
 While Behavior Trees define how an entity behaves, by themselves they do not contain complete logic for autonomous decision making. The decision-making logic for the entity typically comes from an external source:
 
@@ -29,20 +29,20 @@ No matter how you choose to drive decision making in your app, you drive the Beh
 - The decision-making logic decides what type of behavior the entity performs.
 - The Behavior Tree defines the actual steps necessary to perform the behavior.
 
-#### Create a Behavior Tree
+## Create a Behavior Tree
 
 Before you begin, see [Working with the Graph Editor](./realitycomposerpro-essentials-grapheditoroverview.md) for an overview of navigating the Graph Editor.
 
 In the Project Browser, click **[+]** and then click **Animation** > **Behavior Tree**. You can also Control-click inside a folder and then click **New** > **Animation** > **Behavior Tree**. Double-click your behavior tree to open it in the Behavior Tree editor.
 
-#### Apply a Behavior Tree to an entity
+## Apply a Behavior Tree to an entity
 
 Select an entity in the Project Browser. In the Inspector, click **Add Component** > **Behavior Tree**. Under **Behavior Tree Component**, click **[+]** to select a Behavior Tree. In the Inspector, in the Behavior Tree component:
 
 - Under **Behavior Trees**, assign one or more available behavior trees.
 - Next to **Default Tree**, select a default behavior tree for the entity.
 
-#### Choose the right node type for your behavior
+## Choose the right node type for your behavior
 
 A Behavior Tree consists of interconnected nodes that provide various types of functionality. Nodes perform behaviors and guide how the tree is traversed. Each node type, when traversed, returns a status of success (`true`), failure (`false`), or running — indicating the node is still executing and the tree should wait before advancing. Other nodes use a node’s **Return Value** to determine how tree traversal continues.
 
@@ -54,7 +54,7 @@ Each node has a set of specific properties you can define, which appear in the I
 
 Behavior Tree nodes fall into three categories — **Root**, **Action**, and **Composite**. The **Root** node is the first default node that appears when you create a new Behavior Tree and defines the starting point for traversal. There can be only one Root node.
 
-#### Use Action nodes to drive entity behaviors
+## Use Action nodes to drive entity behaviors
 
 Action nodes directly affect the entity or the scene — they perform the behaviors your Behavior Tree is designed to control. When an Action node executes, it returns success or failure based on whether the action completed. The available Action nodes are:
 
@@ -68,7 +68,7 @@ Action nodes directly affect the entity or the scene — they perform the behavi
 - **Set Tree** — Exits the current Behavior Tree and begins processing a new tree. Use this node to create collections of Behavior Trees — each controlling different behaviors — and interconnect them for an entity.
 - **Wait** — Pauses the Behavior Tree for a specified amount of time or until a condition is met, with the option to randomize wait times.
 
-#### Control tree traversal with Composite nodes
+## Control tree traversal with Composite nodes
 
 Composite nodes control how the Behavior Tree traverses its children. Each composite node type uses a different strategy to determine which child to visit next and when to stop. The three composite node types are:
 

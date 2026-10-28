@@ -16,7 +16,7 @@ Represents a queue ID, which Multiprocessing Services uses to manipulate message
 typedef struct OpaqueMPQueueID *MPQueueID;
 ```
 
-#### Discussion
+## Discussion
 
 You obtain a queue ID by calling the function [`MPCreateQueue`](./api-1585694-mpcreatequeue.md). 
 

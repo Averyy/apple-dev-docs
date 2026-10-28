@@ -22,7 +22,7 @@ class CPContactTemplate
 @interface CPContactTemplate : CPTemplate
 ```
 
-#### Overview
+## Overview
 
 The contact template can provide up to four contextual actions a user can invoke. For example, you might have an action that provides directions to the contact’s address.
 

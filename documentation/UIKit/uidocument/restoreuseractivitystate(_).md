@@ -22,7 +22,7 @@ func restoreUserActivityState(_ userActivity: NSUserActivity)
 - (void) restoreUserActivityState:(NSUserActivity *) userActivity;
 ```
 
-#### Discussion
+## Discussion
 
 Subclasses override this method to restore the responder’s state with the given user activity. The override should use the state data contained in the `userInfo` dictionary of the given user activity to restore the object.
 

@@ -24,7 +24,7 @@ let kCFStreamPropertyFTPAttemptPersistentConnection: CFString
 extern CFStringRef const kCFStreamPropertyFTPAttemptPersistentConnection;
 ```
 
-#### Discussion
+## Discussion
 
 FTP Attempt Persistent Connection stream property key for set and copy operations. Set this property to `kCFBooleanTrue` to enable the reuse of existing server connections; set this property to `kCFBooleanFalse` to not reuse existing server connections. By default, this property is set to `kCFBooleanTrue`.
 

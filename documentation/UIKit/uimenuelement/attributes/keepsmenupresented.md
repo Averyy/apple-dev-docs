@@ -23,7 +23,7 @@ static var keepsMenuPresented: UIMenuElement.Attributes { get }
 UIMenuElementAttributesKeepsMenuPresented
 ```
 
-#### Discussion
+## Discussion
 
 Use this attribute to allow a person to perform a menu action multiple times without dismissing the menu in between.
 

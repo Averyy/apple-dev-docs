@@ -19,7 +19,7 @@ func setImageScaling(_ scaling: NSImageScaling, forSegment segment: Int)
 - (void) setImageScaling:(NSImageScaling) scaling forSegment:(NSInteger) segment;
 ```
 
-#### Discussion
+## Discussion
 
 The image scaling mode for a segment affects how the image inside the corresponding cell is positioned and resized when the cell itself grows or shrinks. The image scaling mode does not itself cause the cell to change size in any way. If a cell does not contain an image, the scaling mode has no effect.
 

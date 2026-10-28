@@ -12,7 +12,7 @@ virtual IOReturn reportEjectability(
  bool *isEjectable) = 0;
 ```
 
-#### Overview
+## Overview
 
 This method should only be called if the media is known to be removable.
 

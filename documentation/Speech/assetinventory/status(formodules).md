@@ -20,7 +20,7 @@ Returns the status for the list of modules.
 static func status(forModules modules: [any SpeechModule]) async -> AssetInventory.Status
 ```
 
-#### Discussion
+## Discussion
 
 If the status differs between modules, it returns an applicable status in order from `unsupported`, `downloading`, `supported`, `installed`.
 

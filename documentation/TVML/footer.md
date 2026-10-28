@@ -4,7 +4,7 @@
 
 Contains information displayed at the bottom of an element.
 
-#### Overview
+## Overview
 
 The `footer` element displays additional information that describes its containing element. Here’s an example that displays a button at the bottom of a `formTemplate` element.
 
@@ -18,12 +18,12 @@ The `footer` element displays additional information that describes its containi
 </formTemplate>
 ```
 
-##### Subelements of footer
+### Subelements of footer
 
 - [button](./button.md)
 - [text](./text.md)
 
-##### Elements that Use footer
+### Elements that Use footer
 
 - [formTemplate](./formtemplate.md)
 - [infoTable](./infotable.md)

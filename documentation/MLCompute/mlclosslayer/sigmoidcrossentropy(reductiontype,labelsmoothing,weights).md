@@ -23,7 +23,7 @@ class func sigmoidCrossEntropy(reductionType: MLCReductionType, labelSmoothing: 
 + (instancetype) sigmoidCrossEntropyLossWithReductionType:(MLCReductionType) reductionType labelSmoothing:(float) labelSmoothing weights:(MLCTensor *) weights;
 ```
 
-#### Return Value
+## Return Value
 
 A sigmoid cross entropy loss layer.
 

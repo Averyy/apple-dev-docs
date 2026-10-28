@@ -19,11 +19,11 @@ Fetches prefilter data, in response to a call from the framework.
 func fetchPrefilter(existingPrefilterTag: String?) async throws -> NEURLFilterPrefilter?
 ```
 
-#### Return Value
+## Return Value
 
 An [`NEURLFilterPrefilter`](../neurlfilterprefilter.md) that contains the prefilter information. The initial fetch must return a valid [`NEURLFilterPrefilter`](../neurlfilterprefilter.md). Returning a `nil` prefilter for subsequent fetches indicates no change; in this case, the system continues to use the current prefilter data.
 
-#### Discussion
+## Discussion
 
 The system calls this method at the frequency specified by [`prefilterFetchInterval`](../neurlfiltermanager/prefilterfetchinterval.md). Your implementation overrides this method to perform whatever steps are necessary to fetch prefilter data. Make sure the first call to this method returns a non-`nil` Bloom filter. On subsequent calls, you can return `nil` to indicate no change to the current Bloom filter. In this case, the system continues to use the previously provided Bloom filter.
 

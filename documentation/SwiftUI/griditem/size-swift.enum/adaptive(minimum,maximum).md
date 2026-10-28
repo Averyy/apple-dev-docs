@@ -21,7 +21,7 @@ Multiple items in the space of a single flexible item.
 case adaptive(minimum: CGFloat, maximum: CGFloat = .infinity)
 ```
 
-#### Discussion
+## Discussion
 
 This size case places one or more items into the space assigned to a single `flexible` item, using the provided bounds and spacing to decide exactly how many items fit. This approach prefers to insert as many items of the `minimum` size as possible but lets them increase to the `maximum` size.
 

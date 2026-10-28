@@ -25,7 +25,7 @@ case maritime
 CLActivityTypeMaritime
 ```
 
-#### Discussion
+## Discussion
 
 Use this activity type for activities such as sailing, motor-boating, traveling by ship, or other activities on the water.
 

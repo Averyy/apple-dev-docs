@@ -21,7 +21,7 @@ A binding to the state value.
 var projectedValue: Binding<Value> { get }
 ```
 
-#### Discussion
+## Discussion
 
 This works identically to `State.projectedValue`.
 

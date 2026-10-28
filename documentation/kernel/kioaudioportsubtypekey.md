@@ -15,7 +15,7 @@ The key in the IORegistry for the IOAudioPort subtype attribute.
 #define kIOAudioPortSubTypeKey
 ```
 
-#### Discussion
+## Discussion
 
 The IOAudioPort subtype is a driver-defined text attribute designed to complement the type attribute.
 

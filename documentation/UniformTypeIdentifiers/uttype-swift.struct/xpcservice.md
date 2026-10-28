@@ -21,7 +21,7 @@ A type that represents an XPC service bundle.
 static var xpcService: UTType { get }
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `com.apple.xpc-service`.
 

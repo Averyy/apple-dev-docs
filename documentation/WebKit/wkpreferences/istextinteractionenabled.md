@@ -23,7 +23,7 @@ var isTextInteractionEnabled: Bool { get set }
 @property (nonatomic, getter=isTextInteractionEnabled) BOOL textInteractionEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 The default value for this preference is [`true`](../../Swift/true.md) on macOS and iOS. On watchOS, the default value is [`false`](../../Swift/false.md).
 

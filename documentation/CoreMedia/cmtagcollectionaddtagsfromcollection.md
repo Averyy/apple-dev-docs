@@ -21,7 +21,7 @@ Add the tags contained in one collection to another.
 extern OSStatus CMTagCollectionAddTagsFromCollection(CMMutableTagCollectionRef tagCollection, CMTagCollectionRef collectionWithTagsToAdd);
 ```
 
-#### Return Value
+## Return Value
 
 Returns `0` on success and a value from Tag Collection Error Codes on failure.
 

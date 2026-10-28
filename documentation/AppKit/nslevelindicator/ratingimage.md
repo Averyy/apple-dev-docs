@@ -19,7 +19,7 @@ var ratingImage: NSImage? { get set }
 @property (strong, nullable) NSImage * ratingImage;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `nil`.
 

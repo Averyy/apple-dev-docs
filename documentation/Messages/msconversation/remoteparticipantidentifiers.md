@@ -21,7 +21,7 @@ var remoteParticipantIdentifiers: [UUID] { get }
 @property (nonatomic, readonly) NSArray<NSUUID *> * remoteParticipantIdentifiers;
 ```
 
-#### Discussion
+## Discussion
 
 These UUIDs are scoped to this device. They remain stable as long as the extension is enabled. If the extension is disabled and reenabled, or if the containing app is removed and reinstalled, the UUIDs for remote participants change.
 

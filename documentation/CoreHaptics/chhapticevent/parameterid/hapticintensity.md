@@ -24,7 +24,7 @@ static let hapticIntensity: CHHapticEvent.ParameterID
 extern CHHapticEventParameterID CHHapticEventParameterIDHapticIntensity;
 ```
 
-#### Discussion
+## Discussion
 
 This parameter maps to the haptic pattern’s amplitude or strength. Its value ranges from 0.0 (weak) to 1.0 (strong). Think of intensity as the volume of a haptic pattern, indicating how impactful it feels in the user’s hand. The higher the haptic intensity, the stronger the resulting haptic.
 

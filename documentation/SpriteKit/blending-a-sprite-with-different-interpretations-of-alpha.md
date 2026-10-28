@@ -5,7 +5,7 @@
 
 Reinterpret a sprite’s alpha property to react differently to the objects below it.
 
-#### Overview
+## Overview
 
 The final stage of rendering is to blend the sprite’s texture into its destination frame buffer. The default behavior uses the alpha values of the texture to blend the texture with the destination pixels. However, you can use other blend modes when you want to add other special effects to a scene.
 

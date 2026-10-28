@@ -23,7 +23,7 @@ var trueHeading: CLLocationDirection { get }
 @property (nonatomic, readonly) CLLocationDirection trueHeading;
 ```
 
-#### Discussion
+## Discussion
 
 The value in this property represents the heading relative to the geographic North Pole. The value `0` means the device is pointed toward true north, `90` means it is pointed due east, `180` means it is pointed due south, and so on. A negative value indicates that the heading could not be determined.
 

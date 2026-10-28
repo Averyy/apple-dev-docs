@@ -19,7 +19,7 @@ class SocketPort
 @interface NSSocketPort : NSPort
 ```
 
-#### Overview
+## Overview
 
 A [`SocketPort`](./socketport.md) object can be used as an endpoint for distributed object connections. Companion classes, [`NSMachPort`](./nsmachport.md) and [`MessagePort`](./messageport.md), allow for local (on the same machine) communication only. The [`SocketPort`](./socketport.md) class allows for both local and remote communication, but may be more expensive than the others for the local case.
 

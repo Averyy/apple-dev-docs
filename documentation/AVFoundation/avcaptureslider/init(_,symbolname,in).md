@@ -20,7 +20,7 @@ Creates a continuous slider control that selects a value from a bounded range.
 convenience init(_ localizedTitle: String, symbolName: String, in range: ClosedRange<Float>)
 ```
 
-#### Discussion
+## Discussion
 
 Use continuous sliders when your use case supports selecting any value in the specified range.
 

@@ -20,7 +20,7 @@ func enumerateCaretOffsetsInLineFragment(at location: any NSTextLocation, using 
 - (void) enumerateCaretOffsetsInLineFragmentAtLocation:(id<NSTextLocation>) location usingBlock:(void (^)(CGFloat caretOffset, id<NSTextLocation>location, BOOL leadingEdge, BOOL *stop)) block;
 ```
 
-#### Discussion
+## Discussion
 
 The `caretOffset` is in the coordinate system for the text container. When `leadingEdge` is `true`, it indicates that `caretOffset` is at the logical edge preceding the character. For left-to-right characters, the caret is on the left, and on the right for right-to-left characters.
 

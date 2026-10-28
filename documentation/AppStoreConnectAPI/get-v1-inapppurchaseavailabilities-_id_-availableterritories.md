@@ -9,9 +9,9 @@ List all the territories where an In-App Purchase is available.
 **Availability**:
 - App Store Connect API 2.3+
 
-#### Discussion
+## Discussion
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

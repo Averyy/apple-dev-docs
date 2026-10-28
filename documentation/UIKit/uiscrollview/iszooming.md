@@ -23,7 +23,7 @@ var isZooming: Bool { get }
 @property (nonatomic, readonly, getter=isZooming) BOOL zooming;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) if user is making a zoom gesture; otherwise, it’s [`false`](../../Swift/false.md).
 

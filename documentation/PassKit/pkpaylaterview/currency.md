@@ -20,7 +20,7 @@ The ISO-4217 currency code for the country or region of the merchant’s princip
 @preconcurrency var currency: Locale.Currency { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Use the [ISO-4217](https://www.iso.org/iso-4217-currency-codes.html) currency code that represents the location of the merchant’s principal place of business.
 

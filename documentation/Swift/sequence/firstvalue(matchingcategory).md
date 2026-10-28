@@ -23,7 +23,7 @@ func firstValue<T>(matchingCategory category: CMTypedTag<T>.Category) -> T? wher
 
 Available when `Element` inherits `CMTag`.
 
-#### Discussion
+## Discussion
 
 - category: The category to match.
 

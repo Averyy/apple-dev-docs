@@ -19,11 +19,11 @@ func CMSDecoderFinalizeMessage(_ cmsDecoder: CMSDecoder) -> OSStatus
 OSStatus CMSDecoderFinalizeMessage(CMSDecoderRef cmsDecoder);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md). Returns [`errSecUnknownFormat`](./errsecunknownformat.md) upon detection of an improperly formatted CMS message.
 
-#### Discussion
+## Discussion
 
 When you call this function, the decoder finishes decoding the message. If the message was encrypted and this function returns a result code of `noErr`, the message was successfully decrypted. Call the [`CMSDecoderCopyContent(_:_:)`](./cmsdecodercopycontent%28_,_%29.md) function to retrieve the message content. Call the [`CMSDecoderGetNumSigners(_:_:)`](./cmsdecodergetnumsigners%28_,_%29.md) function to find out if the message was signed and, if so, how many signers there were.
 

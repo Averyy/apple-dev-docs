@@ -6,33 +6,37 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary/mlx.nn.Q
 
 # mlx.nn.QuantizedShardedToAllLinear
 
-**class QuantizedShardedToAllLinear(*input_dims: int*, *output_dims: int*, *bias: bool = True*, *group_size: int = 64*, *bits: int = 4*, *mode: str = 'affine'*, *group: Group | None = None*)**
-: Each member of the group applies part of the affine transformation using
+```python
+class QuantizedShardedToAllLinear(input_dims: int, output_dims: int, bias: bool = True, group_size: int = 64, bits: int = 4, mode: str = 'affine', group: Group | None = None)
+```
+
+Each member of the group applies part of the affine transformation using
 the quantized matrix and then aggregates the results.
+
 All nodes will have the same exact result after this layer.
+
 It is the quantized equivalent of [mlx.nn.ShardedToAllLinear](mlx.nn.ShardedToAllLinear.md#mlx.nn.ShardedToAllLinear).
 Similar to [mlx.nn.QuantizedLinear](mlx.nn.QuantizedLinear.md#mlx.nn.QuantizedLinear) its parameters are frozen and
 will not be included in any gradient computation.
 
-Parameters:
+**Parameters:**
 
-**input_dims** ([int](https://docs.python.org/3/builtins/functions.html#int)) – The dimensionality of the input features.
-**output_dims** ([int](https://docs.python.org/3/builtins/functions.html#int)) – The dimensionality of the output features.
-**bias** ([bool](https://docs.python.org/3/builtins/functions.html#bool)*, **optional*) – If set to `False` then the layer will not use
+- **input_dims** ([int](https://docs.python.org/3/builtins/functions.html#int)) – The dimensionality of the input features.
+- **output_dims** ([int](https://docs.python.org/3/builtins/functions.html#int)) – The dimensionality of the output features.
+- **bias** ([bool](https://docs.python.org/3/builtins/functions.html#bool), *optional*) – If set to `False` then the layer will not use
 a bias. Default: `True`.
-**group_size** ([int](https://docs.python.org/3/builtins/functions.html#int)*, **optional*) – The group size to use for the quantized
+- **group_size** ([int](https://docs.python.org/3/builtins/functions.html#int), *optional*) – The group size to use for the quantized
 weight. See [quantize()](../../_autosummary/mlx.core.quantize.md#mlx.core.quantize). Default: `64`.
-**bits** ([int](https://docs.python.org/3/builtins/functions.html#int)*, **optional*) – The bit width to use for the quantized weight.
+- **bits** ([int](https://docs.python.org/3/builtins/functions.html#int), *optional*) – The bit width to use for the quantized weight.
 See [quantize()](../../_autosummary/mlx.core.quantize.md#mlx.core.quantize). Default: `4`.
-**mode** ([str](https://docs.python.org/3/builtins/stdtypes.html#str)*, **optional*) – The quantization method to use (see
+- **mode** ([str](https://docs.python.org/3/builtins/stdtypes.html#str), *optional*) – The quantization method to use (see
 [quantize()](../../_autosummary/mlx.core.quantize.md#mlx.core.quantize)). Default: `"affine"`.
-**group** (*mx.distributed.Group**, **optional*) – The sharding will happen across
+- **group** (*mx.distributed.Group*, *optional*) – The sharding will happen across
 this group. If not set then the global group is used. Default is
 `None`.
 
 Methods
 
-`from_quantized_linear`(quantized_linear_layer, *)
-
-`unfreeze`(*args, **kwargs)
-Wrap unfreeze so that we unfreeze any layers we might contain but our parameters will remain frozen.
+| `from_quantized_linear`(quantized_linear_layer, *) |  |
+| --- | --- |
+| `unfreeze`(*args, **kwargs) | Wrap unfreeze so that we unfreeze any layers we might contain but our parameters will remain frozen. |

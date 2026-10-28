@@ -19,7 +19,7 @@ func hv_gic_get_msi_reg(_ reg: hv_gic_msi_reg_t, _ value: UnsafeMutablePointer<U
 extern hv_return_t hv_gic_get_msi_reg(hv_gic_msi_reg_t reg, uint64_t *value);
 ```
 
-#### Return Value
+## Return Value
 
 [`HV_SUCCESS`](./hv_success.md) on success; otherwise, an error code.
 

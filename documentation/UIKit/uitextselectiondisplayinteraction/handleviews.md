@@ -27,7 +27,7 @@ var handleViews: [any UIView & UITextSelectionHandleView] { get set }
 
 - [Adopting system selection UI in custom text views](../adopting-system-selection-ui-in-custom-text-views.md)
 
-#### Discussion
+## Discussion
 
 When you install the interaction on your text input view, the system installs two views in this property that provide the standard system appearance for the selection handles. You can replace these views with custom ones you provide to change the appearance of the selection handles.
 

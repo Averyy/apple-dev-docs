@@ -27,7 +27,7 @@ var aperture: CGFloat { get set }
 @property (nonatomic) CGFloat aperture;
 ```
 
-#### Discussion
+## Discussion
 
 Objects at distances from the camera outside its depth of field (specified by the [`focalDistance`](./focaldistance.md) and [`focalSize`](./focalsize.md) properties) appear increasingly blurred (up to the value of the [`focalBlurRadius`](./focalblurradius.md) property). Aperture controls the abruptness of the transition between sharp and blurred—a low value specifies an abrupt transition, and a higher value specifies a gradual transition. The default aperture is `0.125` (or 1/8).
 

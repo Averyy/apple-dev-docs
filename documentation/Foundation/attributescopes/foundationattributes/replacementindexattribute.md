@@ -22,7 +22,7 @@ A type for using a replacement index as an attribute.
 enum ReplacementIndexAttribute
 ```
 
-#### Overview
+## Overview
 
 When you use the [`applyReplacementIndexAttribute`](../../attributedstring/formattingoptions/applyreplacementindexattribute.md) formatting option, the resulting formatted string uses this attribute to mark the location of replacement strings. This allows you to relate ranges to replacements even if localizers change the word order in format strings.
 

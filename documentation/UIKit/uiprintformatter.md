@@ -22,7 +22,7 @@ class UIPrintFormatter
 @interface UIPrintFormatter : NSObject
 ```
 
-#### Overview
+## Overview
 
 Given a print formatter, the printing system can automate the printing of the type of content associated with the print formatter. Examples of such content could be a web view, a mix of images and text, or a long text document. The UIKit framework provides several concrete subclasses of [`UIPrintFormatter`](./uiprintformatter.md): [`UISimpleTextPrintFormatter`](./uisimpletextprintformatter.md), [`UIMarkupTextPrintFormatter`](./uimarkuptextprintformatter.md), and [`UIViewPrintFormatter`](./uiviewprintformatter.md).
 

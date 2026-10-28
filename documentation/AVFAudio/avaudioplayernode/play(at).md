@@ -25,7 +25,7 @@ func play(at when: AVAudioTime?)
 - (void) playAtTime:(AVAudioTime *) when;
 ```
 
-#### Discussion
+## Discussion
 
 This node is initially in a paused state. The framework enqueues your requests to play buffers or file segments, and any necessary decoding begins immediately. Playback doesn’t begin until the player starts playing through this method.
 

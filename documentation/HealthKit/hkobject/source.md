@@ -26,7 +26,7 @@ var source: HKSource { get }
 @property (strong, readonly) HKSource * source;
 ```
 
-#### Discussion
+## Discussion
 
 The `source` property is only available on objects you have retrieved from the HealthKit store. When you create a new object, the source is set to `nil`. The system automatically sets the source property when you save the object to the HealthKit store. The source is then available the next time the object is retrieved from the store.
 

@@ -17,11 +17,11 @@ Backing storage for [`NestedDictionary`](./nesteddictionary.md).
 indirect enum NestedItem<Key, Element> where Key : Hashable
 ```
 
-#### Overview
+## Overview
 
 `NestedItem` holds the array / dictionary / value structure contained in a `NestedDictionary`. Typically creation of these values is handled by code that returns `NestedDictionary` but these are used when traversing the structure manually.
 
-##### See Also
+### See Also
 
 - [`NestedDictionary`](./nesteddictionary.md)
 - [`mapValues(transform:)`](./nesteddictionary/mapvalues%28transform%29-1ehvq.md)

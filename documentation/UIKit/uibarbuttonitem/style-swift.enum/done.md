@@ -23,7 +23,7 @@ static var done: UIBarButtonItem.Style { get }
 UIBarButtonItemStyleDone
 ```
 
-#### Discussion
+## Discussion
 
 For example, use this style for a button that completes some task and returns to the previous view.
 

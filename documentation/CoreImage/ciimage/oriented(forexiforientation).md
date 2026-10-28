@@ -24,11 +24,11 @@ func oriented(forExifOrientation orientation: Int32) -> CIImage
 - (CIImage *) imageByApplyingOrientation:(int) orientation;
 ```
 
-#### Return Value
+## Return Value
 
 An image object representing the result of rotating or mirroring the image to the target orientation.
 
-#### Discussion
+## Discussion
 
 This method determines and then applies the transformation needed to reorient the image to the specified orientation. If you plan to also apply other transformations, you can retrieve the transformation this method would use by calling the [`orientationTransform(forExifOrientation:)`](./orientationtransform%28forexiforientation%29.md) method.
 

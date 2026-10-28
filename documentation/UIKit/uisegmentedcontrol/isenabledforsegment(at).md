@@ -23,7 +23,7 @@ func isEnabledForSegment(at segment: Int) -> Bool
 - (BOOL) isEnabledForSegmentAtIndex:(NSUInteger) segment;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the given segment is enabled and [`false`](../../Swift/false.md) if the segment is disabled. By default, segments are enabled.
 

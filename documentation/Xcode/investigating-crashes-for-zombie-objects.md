@@ -5,11 +5,11 @@
 
 Identify the signature of a zombie and investigate the cause of the crash.
 
-#### Overview
+## Overview
 
 Once an Objective-C or Swift object no longer has any strong references to it, the object is deallocated. Attempting to further send messages to the object as if it were still a valid object is a “use after free” issue, with the deallocated object still receiving messages called a *zombie object*.
 
-##### Determine whether a crash report has signs of a zombie
+### Determine whether a crash report has signs of a zombie
 
 The Objective-C runtime can’t message objects deallocated from memory, so crashes often occur in the [`objc_msgSend`](../ObjectiveC/objc_msgsend.md), `objc_retain`, or `objc_release` functions. For example, a crash where the Objective-C runtime can’t send a message to the deallocated object looks like this:
 
@@ -48,7 +48,7 @@ Terminating app due to uncaught exception 'NSInvalidArgumentException',
 
 In this example, a message was sent to a [`NumberFormatter`](../Foundation/numberformatter.md) to perform the `playSound` selector, but [`NumberFormatter`](../Foundation/numberformatter.md) doesn’t implement a method with that name, so the app crashed. An object was previously allocated at the same memory address as the current [`NumberFormatter`](../Foundation/numberformatter.md) that did implement the `playSound` method, but that object was deallocated, and the unrelated [`NumberFormatter`](../Foundation/numberformatter.md) object is now using the same memory address. The `playSound` selector is a clue for debugging. If you identify the class implementing the `playSound` selector, you can identify the code paths that call it and determine why the expected object deallocated too early.
 
-##### Investigate the source of the zombie
+### Investigate the source of the zombie
 
 In cases where a crash is caused by a zombie object, stack frames from the app may be in the backtrace, but not always. Even if no backtrace frames reference code in your app, your code contributed to the creation of the zombie, so investigate the source of the zombie with the Zombies instrument, as described in [Finding zombies](https://help.apple.com/instruments/mac/current/#/dev612e6956). As you use the Zombies instrument, look for answers to the following questions, so you have the information needed to modify your code and remove the zombie:
 

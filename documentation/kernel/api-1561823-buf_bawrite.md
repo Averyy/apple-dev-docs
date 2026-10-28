@@ -15,11 +15,11 @@ Start an asychronous write on a buffer.
 errno_t buf_bawrite(buf_t bp);
 ```
 
-#### Return Value
+## Return Value
 
 EWOULDBLOCK if write count is high and "throttle" is zero; otherwise, errors from VNOP_BWRITE.
 
-#### Discussion
+## Discussion
 
 Calls VNOP_BWRITE to start the process of propagating an asynchronous write down to the device layer. Callers can wait for writes to complete at their discretion using buf_biowait(). When this function is called, data should already have been written to the buffer's data region.
 

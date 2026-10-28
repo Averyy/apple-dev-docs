@@ -5,13 +5,13 @@
 
 Add signposts to record interesting time-based events.
 
-#### Overview
+## Overview
 
 Users notice when an app’s performance degrades, which makes performance tuning a critical part of app development. If your app performs several tasks and leverages concurrency, it can often be difficult to visualize which tasks are executing and how long each one takes to complete.
 
 Signposts allow you to measure your app’s tasks using the same subsystems and categories that you use for logging. After adding signposts to your app using [`OSSignposter`](./ossignposter.md), you use Xcode’s Instruments app to record your app’s behavior as you perform the tasks to measure, and Instruments displays that data in a timeline. If you have complex workloads, you can create an instrument that presents a custom representation of your app’s signpost data.
 
-##### Disambiguate Each Instance of a Task
+### Disambiguate Each Instance of a Task
 
 When emitting signposts, you need to be able to disambiguate between separate invocations of the same measured code. For example, if your app requests data from a remote server and you’re measuring those requests, you need to be able to identify each individual request, especially if several requests are executing concurrently. To do this, associate a signpost ID with each set of related signposts.
 
@@ -27,7 +27,7 @@ let signpostID = signposter.makeSignpostID()
 
 Alternatively, use one of the system-defined signpost IDs or derive one from an instance of one of your app’s objects. Each of these approaches has its own caveats. For more information, see [`OSSignpostID`](./ossignpostid.md).
 
-##### Emit Signposted Intervals and Events
+### Emit Signposted Intervals and Events
 
 After you generate a signpost ID, emit signposts for the tasks you want to measure. To begin a signposted interval, use the signposter’s [`beginInterval(_:id:)`](./ossignposter/begininterval%28_,id%29.md) method. Store the interval state the method returns, and then pass it to the [`endInterval(_:_:)`](./ossignposter/endinterval%28_,_%29.md) method to finish the interval. Interval state contains the signpost ID, which the signposter uses to pair the two calls and to enforce a number of runtime assertions. [`OSSignposter`](./ossignposter.md) provides alternative versions of these two methods that allow you to capture a message that Instruments displays, as well as methods to measure the execution of a specific closure. To mark a single point of interest in time, use the [`emitEvent(_:id:)`](./ossignposter/emitevent%28_,id%29.md) method.
 
@@ -52,7 +52,7 @@ func processRequest(_ request: URLRequest, signposter: OSSignposter) {
 }
 ```
 
-##### Review Signposts in Instruments
+### Review Signposts in Instruments
 
 To record and view your signposts, open your project in Xcode and choose Product > Profile to launch Instruments. Select the Blank profiling template and then click the Add button (+) to open the Instrument library. Double-click the os_signposts instrument to add it to your session. Then click the Record button and perform the tasks in your app that you want to measure. The os_signpost instrument displays separate rows for each subsystem and category combination, and the table below the timeline provides detailed information for each signpost that Instruments captures.
 

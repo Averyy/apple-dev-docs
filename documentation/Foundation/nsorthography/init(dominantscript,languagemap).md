@@ -25,11 +25,11 @@ init(dominantScript script: String, languageMap map: [String : [String]])
 - (instancetype) initWithDominantScript:(NSString *) script languageMap:(NSDictionary<NSString *,NSArray<NSString *> *> *) map;
 ```
 
-#### Return Value
+## Return Value
 
 An orthography object initialized with the specified script and language map.
 
-#### Discussion
+## Discussion
 
 You typically use the [`defaultOrthography(forLanguage:)`](./defaultorthography%28forlanguage%29.md) method to create orthography objects with automatic language mapping. Use this initializer only if you need to override the script associated with one or more languages.
 

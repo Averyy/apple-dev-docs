@@ -13,11 +13,11 @@ Add a Sign in with Apple authorization flow to apps and web services that can’
 
 - [Receiving a User’s Identity Token](../SigninwithApple/receiving-a-users-identity-token.md)
 
-#### Discussion
+## Discussion
 
 Use this endpoint to request authorization for your app to receive the user’s information with Sign in with Apple. If your app is contained within an app group, the user credentials are associated with the primary app and shared across the group. To learn more about app groups, visit [Configuring your environment for Sign in with Apple](../SigninwithApple/configuring-your-environment-for-sign-in-with-apple.md).
 
-##### Get the user information and tokens
+### Get the user information and tokens
 
 When the Sign in with Apple UI appears in the opened browser tab, the user can sign in and accept any terms and conditions for your app. After Apple processes the authorization request, the handling of the response depends on the value in `response_mode`:
 
@@ -43,7 +43,7 @@ If an error occurs, the HTTP body contains the following parameters:
 
 > **Note**:  The only error code that might be returned is `user_cancelled_authorize`. This error code is returned if the user clicks the cancel button during the web flow.
 
-##### Implement the authorization flow
+### Implement the authorization flow
 
 **Request**:
 
@@ -70,7 +70,7 @@ https://appleid.apple.com/auth/authorize?client_id=[CLIENT_ID]&redirect_uri=[RED
 }
 ```
 
-##### Return control to the app
+### Return control to the app
 
 At the end of the authorization flow, Apple performs a `form_post` to the `redirect_uri` value you provided in the request. At this point, the authorization flow is complete, and it’s your server’s responsibility to securely persist the data and return control to the app.
 

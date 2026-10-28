@@ -25,7 +25,7 @@ func handleInvite(fromGameCenter playersToInvite: [String])
 - (void) handleInviteFromGameCenter:(NSArray<NSString *> *) playersToInvite;
 ```
 
-#### Discussion
+## Discussion
 
 When your delegate receives this message, your game should create a new [`GKMatchRequest`](../gkmatchrequest.md) object and assign the `playersToInvite` parameter to the match request’s [`playersToInvite`](../gkmatchrequest/playerstoinvite.md) property. Then, your game can either call the [`GKTurnBasedMatch`](../gkturnbasedmatch.md) class method [`find(for:withCompletionHandler:)`](../gkturnbasedmatch/find%28for,withcompletionhandler%29.md) to find a match programmatically or it can use the request to instantiate a new [`GKTurnBasedMatchmakerViewController`](../gkturnbasedmatchmakerviewcontroller.md) object to show a user interface to the player.
 

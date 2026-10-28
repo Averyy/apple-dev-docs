@@ -24,11 +24,11 @@ func nextInt() -> Int
 - (NSInteger) nextInt;
 ```
 
-#### Return Value
+## Return Value
 
 An integer in the range specified by the distribution’s [`lowestValue`](./lowestvalue.md) and [`highestValue`](./highestvalue.md) properties (inclusive).
 
-#### Discussion
+## Discussion
 
 When using the [`GKRandomDistribution`](../gkrandomdistribution.md) directly, generated numbers are uniform within this range. Subclasses of [`GKRandomDistribution`](../gkrandomdistribution.md) can alter the relative probability of generating any particular number within the distribution’s range.
 

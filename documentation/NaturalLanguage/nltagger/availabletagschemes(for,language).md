@@ -25,7 +25,7 @@ class func availableTagSchemes(for unit: NLTokenUnit, language: NLLanguage) -> [
 + (NSArray<NSString *> *) availableTagSchemesForUnit:(NLTokenUnit) unit language:(NLLanguage) language;
 ```
 
-#### Return Value
+## Return Value
 
 The supported tag schemes. For possible values, see [`NLTagScheme`](../nltagscheme.md).
 

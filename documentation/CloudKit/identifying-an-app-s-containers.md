@@ -5,11 +5,11 @@
 
 Use Xcode’s Project navigator to find the identifiers of active CloudKit containers.
 
-#### Overview
+## Overview
 
 An app’s Xcode project manages which CloudKit containers are available to that app. When you write code that needs to provide container identifiers for all of the containers your app uses, reference the list of active containers in Xcode.
 
-##### Identify the Containers Your App Uses
+### Identify the Containers Your App Uses
 
 In your app’s Xcode project, select Signing & Capabilities > iCloud in the Project navigator.
 

@@ -15,7 +15,7 @@ A Boolean value that determines whether the accessibility element participates i
 @property (getter=isAccessibilityElement) BOOL accessibilityElement;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to expose this object to accessibility clients as a functional interface element. For example, when you place a button in a window, the system typically creates a button cell inside a button control inside a container view inside a window. Users, however, don’t care about the view hierarchy details. They should only be told that there’s a button in a window.
 

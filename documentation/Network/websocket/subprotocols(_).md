@@ -21,7 +21,7 @@ Set the list of supported application protocols that will be presented to a WebS
 func subprotocols(_ subprotocols: [String]) -> WebSocket
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: This function will only take effect on WebSocket clients.
 

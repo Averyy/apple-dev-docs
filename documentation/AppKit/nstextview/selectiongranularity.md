@@ -19,7 +19,7 @@ var selectionGranularity: NSSelectionGranularity { get set }
 @property NSSelectionGranularity selectionGranularity;
 ```
 
-#### Discussion
+## Discussion
 
 Selection granularity is used to determine how the selection is modified when the user Shift-clicks or drags the mouse after a double or triple click. For example, if the user selects a word by double-clicking, the selection granularity is set to `NSSelectByWord`. Subsequent Shift-clicks then extend the selection by words.
 

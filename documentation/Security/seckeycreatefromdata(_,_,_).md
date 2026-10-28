@@ -21,11 +21,11 @@ func SecKeyCreateFromData(_ parameters: CFDictionary, _ keyData: CFData, _ error
 SecKeyRefSecKeyCreateFromData(CFDictionaryRef parameters, CFDataRef keyData, CFErrorRef*error);
 ```
 
-#### Return Value
+## Return Value
 
 A symmetric key. In Objective-C, call the [`CFRelease`](../CoreFoundation/cfrelease.md) function to free the key’s memory when you are done with it.
 
-#### Discussion
+## Discussion
 
 The parameters dictionary must contain (at minimum) an entry for the [`kSecAttrKeyType`](./ksecattrkeytype.md) key with a value of [`kSecAttrKeyTypeAES`](./ksecattrkeytypeaes.md) or any other key type defined in Key Type Value.
 

@@ -21,11 +21,11 @@ Returns mutable access to a specific channel’s data.
 func mutableChannelData(_ index: Int) -> AVAudioPCMBuffer.MutableChannelData
 ```
 
-#### Return Value
+## Return Value
 
 A `MutableChannelData` enum containing the channel’s sample data.
 
-#### Discussion
+## Discussion
 
 The returned `MutableChannelData` is tied to the lifetime of this buffer and provides type-safe mutable access to the channel’s sample data.
 

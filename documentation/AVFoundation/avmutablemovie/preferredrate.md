@@ -24,7 +24,7 @@ var preferredRate: Float { get set }
 @property (nonatomic) float preferredRate;
 ```
 
-#### Discussion
+## Discussion
 
 This value is typically, but not always, 1.0.
 

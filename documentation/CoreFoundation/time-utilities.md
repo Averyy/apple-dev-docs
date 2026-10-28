@@ -3,7 +3,7 @@
 **Framework**: Core Foundation  
 **Role**: API Collection
 
-#### Overview
+## Overview
 
 Core Foundation measures time in units of seconds. The base data type is the [`CFTimeInterval`](./cftimeinterval.md), which measures the difference in seconds between two times. Fixed times, or dates, are defined by the [`CFAbsoluteTime`](./cfabsolutetime.md) data type, which measures the time interval between a particular date and the absolute reference date of Jan 1 2001 00:00:00 GMT.
 

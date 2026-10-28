@@ -21,11 +21,11 @@ Provides a sequence of per-minute dates starting from a given date.
 func entries(from startDate: Date, mode: TimelineScheduleMode) -> EveryMinuteTimelineSchedule.Entries
 ```
 
-#### Return Value
+## Return Value
 
 A sequence of per-minute dates in ascending order.
 
-#### Discussion
+## Discussion
 
 A [`TimelineView`](../timelineview.md) that you create with an every minute schedule calls this method to ask the schedule when to update its content. The method returns a sequence of per-minute dates in increasing order, from earliest to latest, that represents when the timeline view updates.
 

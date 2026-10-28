@@ -25,7 +25,7 @@ var localizationDictionary: [String : String]? { get set }
 @property (strong, nullable) NSDictionary<NSString *,NSString *> * localizationDictionary;
 ```
 
-#### Discussion
+## Discussion
 
 The following table describes the key and value pattern for the localization dictionary.
 
@@ -38,7 +38,7 @@ The following table describes the key and value pattern for the localization dic
 
 (1) For properties in different entities with the same non-localized name but that should have different localized names.
 
-##### Special Considerations
+### Special Considerations
 
 In OS X v10.4, `localizationDictionary` may return `nil` until Core Data lazily loads the dictionary for its own purposes (for example, reporting a localized error).
 

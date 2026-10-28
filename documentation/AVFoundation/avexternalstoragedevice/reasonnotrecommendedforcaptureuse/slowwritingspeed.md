@@ -21,7 +21,7 @@ static let slowWritingSpeed: AVExternalStorageDevice.ReasonNotRecommendedForCapt
 extern AVExternalStorageDeviceReasonNotRecommendedForCaptureUse AVExternalStorageDeviceReasonNotRecommendedForCaptureUseSlowWritingSpeed;
 ```
 
-#### Discussion
+## Discussion
 
 Indicates that the storage device is not recommended for capture as it doesn’t support the recommended writing speed.
 

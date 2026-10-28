@@ -19,7 +19,7 @@ struct ItemDeactivationOptions
 enum FSItemDeactivationOptions : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 Callers may want to set a deactivation policy because `FSVolume/ItemDeactivation/deactivateItem(_:)` processing blocks the kernel. Setting a deactivation policy allows the file system to take action at a definitive point in the item’s life cycle. These options allow the file system to instruct the FSKit kernel of which circumstances require the expense of a round-trip call to the module.
 

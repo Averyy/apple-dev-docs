@@ -28,7 +28,7 @@ class VNDetectHumanBodyPose3DRequest
 
 - [Identifying 3D human body poses in images](./identifying-3d-human-body-poses-in-images.md)
 
-#### Overview
+## Overview
 
 This request generates a collection of [`VNHumanBodyPose3DObservation`](./vnhumanbodypose3dobservation.md) objects that describe the position of each body the request detects. If the system allows it, the request uses [`AVDepthData`](../AVFoundation/avdepthdata.md) information to improve the accuracy.
 

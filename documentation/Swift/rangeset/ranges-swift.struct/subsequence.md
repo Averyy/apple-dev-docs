@@ -23,7 +23,7 @@ typealias SubSequence = Slice<RangeSet<Bound>.Ranges>
 
 Available when `Bound` conforms to `Comparable`.
 
-#### Discussion
+## Discussion
 
 The default subsequence type for collections that don’t define their own is `Slice`.
 

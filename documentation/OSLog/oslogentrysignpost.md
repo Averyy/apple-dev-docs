@@ -25,7 +25,7 @@ class OSLogEntrySignpost
 @interface OSLogEntrySignpost : OSLogEntry
 ```
 
-#### Overview
+## Overview
 
 These entries are created by the os_signpost API. To learn more about signposts and how to create a signpost entry, see [`os_signpost(_:dso:log:name:signpostID:)`](../os/os_signpost%28_,dso,log,name,signpostid%29-2oz8u.md) and [`os_signpost(_:dso:log:name:signpostID:_:_:)`](../os/os_signpost%28_,dso,log,name,signpostid,_,_%29-2om9b.md).
 

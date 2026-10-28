@@ -31,7 +31,7 @@ class FileManager
 - [Using the file system effectively](./using-the-file-system-effectively.md)
 - [Optimizing Your App’s Data for iCloud Backup](./optimizing-your-app-s-data-for-icloud-backup.md)
 
-#### Overview
+## Overview
 
 A file manager object lets you examine the contents of the file system and make changes to it. The [`FileManager`](./filemanager.md) class provides convenient access to a shared file manager object that is suitable for most types of file-related manipulations. A file manager object is typically your primary mode of interaction with the file system. You use it to locate, create, copy, and move files and directories. You also use it to get information about a file or directory or change some of its attributes.
 
@@ -41,11 +41,11 @@ If you are moving, copying, linking, or removing files or directories, you can u
 
 In iOS 5.0 and later and in macOS 10.7 and later, [`FileManager`](./filemanager.md) includes methods for managing items stored in iCloud. Files and directories tagged for cloud storage are synced to iCloud so that they can be made available to the user’s iOS devices and Macintosh computers. Changes to an item in one location are propagated to all other locations to ensure the items stay in sync.
 
-##### Sync control
+### Sync control
 
 A [package](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFBundles/DocumentPackages/DocumentPackages.html#//apple_ref/doc/uid/10000123i-CH106-SW1) is a directory that the system presents as a single file to the person using the device. Apps with documents that contain multiple files can use packages to manage contents like media assets. In iOS 26 and macOS 26 and later, [`FileManager`](./filemanager.md) introduces methods for controlling how a file provider syncs these items. By pausing sync when your app opens a package and resuming when it closes, your app can prevent the file provider from changing the contents of the package in unexpected ways, which potentially leaves the document in an inconsistent state. You can also use this pause and resume API on regular “flat” files.
 
-##### Threading considerations
+### Threading considerations
 
 The methods of the shared [`FileManager`](./filemanager.md) object can be called from multiple threads safely. However, if you use a delegate to receive notifications about the status of move, copy, remove, and link operations, you should create a unique instance of the file manager object, assign your delegate to that object, and use that file manager to initiate your operations.
 

@@ -15,7 +15,7 @@ An enumeration of the RCS message content types supported by the system.
 enum Content
 ```
 
-#### Overview
+## Overview
 
 The types that are associated values in this enumeration’s cases contain properties unique to their respective content types. For example, [`RCSMessage.Text`](./text.md) content contains a [`body`](./text/body.md) string, while [`RCSMessage.GeolocationPush`](./geolocationpush.md) content has a [`latitude`](./geolocationpush/latitude.md) and [`longitude`](./geolocationpush/longitude.md).
 

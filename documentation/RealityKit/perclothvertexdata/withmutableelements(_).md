@@ -17,11 +17,11 @@ Provides mutable access to the per-vertex data within a callback.
 mutating func withMutableElements<Result>(_ callback: @_lifetime(0: copy 0) (inout MutableSpan<ElementType>) -> Result) -> Result
 ```
 
-#### Return Value
+## Return Value
 
 The value returned by `callback`.
 
-#### Discussion
+## Discussion
 
 The provided span is only valid for the lifetime of the callback.
 

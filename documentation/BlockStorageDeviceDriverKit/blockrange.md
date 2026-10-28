@@ -15,7 +15,7 @@ A structure that represents a range of blocks.
 struct BlockRange;
 ```
 
-#### Discussion
+## Discussion
 
 The pure virtual function `_DoAsyncUnmap`, which your dext must implement, takes this type as a parameter that indicates the blocks to unmap.
 

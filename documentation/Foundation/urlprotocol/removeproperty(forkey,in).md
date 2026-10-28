@@ -25,7 +25,7 @@ class func removeProperty(forKey key: String, in request: NSMutableURLRequest)
 + (void) removePropertyForKey:(NSString *) key inRequest:(NSMutableURLRequest *) request;
 ```
 
-#### Discussion
+## Discussion
 
 This method is used to provide an interface for protocol implementors to customize protocol-specific information associated with [`URLRequest`](../urlrequest.md) objects, or [`NSMutableURLRequest`](../nsmutableurlrequest.md) objects in Objective-C.
 

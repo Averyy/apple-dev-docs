@@ -25,11 +25,11 @@ class func otherVersionsOfItem(at url: URL) -> [NSFileVersion]?
 + (NSArray<NSFileVersion *> *) otherVersionsOfItemAtURL:(NSURL *) url;
 ```
 
-#### Return Value
+## Return Value
 
 An array of file version objects or `nil` if there is no such file. The array does not contain the version object returned by the [`currentVersionOfItem(at:)`](./currentversionofitem%28at%29.md) method.
 
-#### Discussion
+## Discussion
 
 For locally based files, this property typically contains versions of the file that you saved explicitly or that were saved at appropriate times while the file was being edited. For documents residing in the cloud, this property typically returns zero or more file versions representing conflicting versions of a file that need to be resolved with the current version.
 

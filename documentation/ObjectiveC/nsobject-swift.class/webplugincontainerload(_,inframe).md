@@ -19,7 +19,7 @@ func webPlugInContainerLoad(_ request: URLRequest!, inFrame target: String!)
 - (void) webPlugInContainerLoadRequest:(NSURLRequest *) request inFrame:(NSString *) target;
 ```
 
-#### Discussion
+## Discussion
 
 If the frame specified by `target` is not found, a new window is opened, loaded with the URL request, and given the specified frame name. If `target` is `nil`, the frame enclosing the plug-in is loaded with the URL request.
 

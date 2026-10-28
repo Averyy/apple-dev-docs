@@ -22,7 +22,7 @@ func setInputValuesWithPropertyList(_ plist: Any!)
 - (void) setInputValuesWithPropertyList:(id) plist;
 ```
 
-#### Discussion
+## Discussion
 
 This is a convenience method that allows you to restore the set of input values that you obtained previously by calling the method [`propertyListFromInputValues()`](./propertylistfrominputvalues%28%29.md). If the property list object does not define a value for an input key, or if the value is not of the proper type, Quartz Composer does not set a value for the corresponding input port.
 

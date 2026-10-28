@@ -23,7 +23,7 @@ static func checkCancellation() throws
 
 Available when `Success` is `Never` and `Failure` is `Never`.
 
-#### Discussion
+## Discussion
 
 The error is always an instance of `CancellationError`.
 

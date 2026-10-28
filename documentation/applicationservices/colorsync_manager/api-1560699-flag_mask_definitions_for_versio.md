@@ -4,7 +4,7 @@
 
 Define masks your application can use to set or test various bits in the `flags` field of the `CM2Header` structure.
 
-#### Overview
+## Overview
 
 The `flags` field of the structure [`CM2Header`](../cm2header.md) is an unsigned long value whose bits specify information about a profile. The ICC reserves the use of bits 0 to 15 and has assigned values to bits 0 and 1. Bits 16 to 31 are reserved for use by color management system (CMS) vendors. ColorSync has assigned values to bits 16 through 19. 
 

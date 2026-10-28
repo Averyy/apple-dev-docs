@@ -21,7 +21,7 @@ Custom format style portraying the two-digit numeric day of the year, zero-padde
 static var twoDigits: Date.FormatStyle.Symbol.DayOfYear { get }
 ```
 
-#### Discussion
+## Discussion
 
 For example, `01`, `18`, `317`.
 

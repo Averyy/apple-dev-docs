@@ -19,7 +19,7 @@ func requestSelect(_ type: ICScannerFunctionalUnitType)
 - (void) requestSelectFunctionalUnit:(ICScannerFunctionalUnitType) type;
 ```
 
-#### Discussion
+## Discussion
 
 When the request has completed, [`scannerDevice(_:didSelect:error:)`](../icscannerdevicedelegate/scannerdevice%28_,didselect,error%29.md) is called on the delegate.
 

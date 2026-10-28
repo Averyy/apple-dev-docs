@@ -20,7 +20,7 @@ An observable representation of a webpage’s previously loaded resources.
 struct BackForwardList
 ```
 
-#### Overview
+## Overview
 
 This type can be used to facilitate navigating to prior or subsequent loaded resources and for observing when new entries get added or removed.
 

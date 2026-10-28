@@ -20,7 +20,7 @@ Adds the given `AudioMixGroup` to the component.
 mutating func set(_ mixGroup: AudioMixGroup)
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**: Adding an audio mix group replaces any existing audio mix group with the same name.
 

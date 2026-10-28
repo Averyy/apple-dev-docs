@@ -22,11 +22,11 @@ func GLKMatrix4Make(_ m00: Float, _ m01: Float, _ m02: Float, _ m03: Float, _ m1
 static GLKMatrix4 GLKMatrix4Make(float m00, float m01, float m02, float m03, float m10, float m11, float m12, float m13, float m20, float m21, float m22, float m23, float m30, float m31, float m32, float m33);
 ```
 
-#### Return Value
+## Return Value
 
 A new matrix.
 
-#### Discussion
+## Discussion
 
 The values in `m30`, `m31`, and `m32` correspond to the translation values `tx`, `ty`, and `tz`, respectively.
 

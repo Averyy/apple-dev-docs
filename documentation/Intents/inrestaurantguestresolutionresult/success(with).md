@@ -22,11 +22,11 @@ class func success(with resolvedRestaurantGuest: INRestaurantGuest) -> Self
 + (instancetype) successWithResolvedRestaurantGuest:(INRestaurantGuest *) resolvedRestaurantGuest;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INRestaurantGuestResolutionResult`](../inrestaurantguestresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method to create a result object when you are able to resolve the guest to a known user of your app.
 

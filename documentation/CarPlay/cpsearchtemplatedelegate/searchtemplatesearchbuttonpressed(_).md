@@ -21,7 +21,7 @@ optional func searchTemplateSearchButtonPressed(_ searchTemplate: CPSearchTempla
 - (void) searchTemplateSearchButtonPressed:(CPSearchTemplate *) searchTemplate;
 ```
 
-#### Discussion
+## Discussion
 
 Your implementation of this method should retrieve the search result, and display a [`CPListTemplate`](../cplisttemplate.md) containing the search result items by calling [`pushTemplate(_:animated:completion:)`](../cpinterfacecontroller/pushtemplate%28_,animated,completion%29.md).
 

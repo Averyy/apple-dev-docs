@@ -17,7 +17,7 @@ Before parsing arguments, capture all inputs that follow the `--` terminator in 
 static var postTerminator: ArgumentArrayParsingStrategy { get }
 ```
 
-#### Discussion
+## Discussion
 
 For example, the `Example` command defined below has a `words` array that uses the `postTerminator` parsing strategy:
 

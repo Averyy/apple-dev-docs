@@ -19,7 +19,7 @@ func fill()
 - (void) fill;
 ```
 
-#### Discussion
+## Discussion
 
 This method fills the path using the current fill color and the receiver’s current winding rule. If the path contains any open subpaths, this method implicitly closes them before painting the fill region.
 

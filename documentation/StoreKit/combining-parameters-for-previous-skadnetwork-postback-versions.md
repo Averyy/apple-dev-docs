@@ -5,11 +5,11 @@
 
 Recreate the byte array for versions 2.2 or earlier.
 
-#### Overview
+## Overview
 
 Combine postback parameters to recreate a byte array that you use to verify Apple’s signature. To recreate the byte array, create a UTF-8 string by combining the parameter values in an exact order, with an invisible separator (`‘\u2063’`) between them. You must combine the parameters in the exact orders as show in the examples. For more information about the parameters and verifying the signature, and an example using newer versions, see [Verifying an install-validation postback](./verifying-an-install-validation-postback.md).
 
-##### Combine postback parameters for version 2.2
+### Combine postback parameters for version 2.2
 
 The following JSON shows an example of a version 2.2 install-validation postback that contains all possible parameters and a valid signature:
 
@@ -56,7 +56,7 @@ version + '\u2063' + ad-network-id + '\u2063' + campaign-id + '\u2063' + app-id 
 
 ```
 
-##### Combine postback parameters for versions 2  and 2.1
+### Combine postback parameters for versions 2  and 2.1
 
 Version 2 and 2.1 postbacks contain the following parameters. Combine their values in this order:
 
@@ -84,7 +84,7 @@ version + '\u2063' + ad-network-id + '\u2063' + campaign-id + '\u2063' + app-id 
 
 ```
 
-##### Combine postback parameters for version 1
+### Combine postback parameters for version 1
 
 Version 1 postbacks contain the following parameters. Combine their values in this order:
 

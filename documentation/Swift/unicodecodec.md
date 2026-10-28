@@ -21,7 +21,7 @@ A Unicode encoding form that translates between Unicode scalar values and form-s
 protocol UnicodeCodec : _UnicodeEncoding
 ```
 
-#### Overview
+## Overview
 
 The `UnicodeCodec` protocol declares methods that decode code unit sequences into Unicode scalar values and encode Unicode scalar values into code unit sequences. The standard library implements codecs for the UTF-8, UTF-16, and UTF-32 encoding schemes as the `UTF8`, `UTF16`, and `UTF32` types, respectively. Use the `Unicode.Scalar` type to work with decoded Unicode scalar values.
 

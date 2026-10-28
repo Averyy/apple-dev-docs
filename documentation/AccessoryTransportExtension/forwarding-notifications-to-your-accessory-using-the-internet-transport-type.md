@@ -5,7 +5,7 @@
 
 Send notification data to your accessory over the internet when Bluetooth connectivity is unavailable.
 
-#### Overview
+## Overview
 
 The Accessory Transport Extension framework supports delivering iOS system notifications over the internet to an accessory you develop. When notification delivery occurs over the internet, your accessory receives notifications even when it’s out of Bluetooth range of the paired iPhone. The system selects a transport type automatically when a notification is ready for forwarding: Bluetooth if the accessory is connected, local network if available and supported by the accessory, or internet if available and supported by the accessory.
 
@@ -23,7 +23,7 @@ Transporting notifications over the internet is different from the Bluetooth pro
 - Rather than AES-GCM encryption, the system uses a *Symmetric Key Ratchet*, which derives a new encryption key for every message.
 - Decryption-key identification requires the wire transmission format to include ratchet metadata in addition to ciphertext.
 
-#### Request permission to forward notifications
+## Request permission to forward notifications
 
 Before the system provides notification data to your app, the person needs to allow notification forwarding. Call  [`requestForwarding(for:)`](../AccessoryNotifications/accessorynotificationcenter/requestforwarding%28for%29.md) from your companion app to ask the person for permission. Pass the [`ASAccessory`](../AccessorySetupKit/asaccessory.md) object that AccessorySetupKit provides when your companion app registers the accessory:
 
@@ -38,7 +38,7 @@ let result = try await center.requestForwarding(for: accessory)
 
 The system prompts the person to select the applications on their device to which they agree to receive notifications. The [`ForwardingDecision`](../AccessoryNotifications/forwardingdecision.md) value that the [`requestForwarding(for:)`](../AccessoryNotifications/accessorynotificationcenter/requestforwarding%28for%29.md) method returns represents the person’s decision. If the person approves, the app selections they made determine the substance of a given notification that the system provides your app for forwarding.
 
-#### Create the notification forwarding extensions
+## Create the notification forwarding extensions
 
 Notification forwarding relies on coordination between three app extensions that your app provides:
 
@@ -48,7 +48,7 @@ Notification forwarding relies on coordination between three app extensions that
 
 The system coordinates these extensions, encrypting notification data before transmission so that only your accessory can decrypt it. Internet and Bluetooth transport require the same extension implementations regardless of the transport the system chooses at runtime. To create these extensions, see [Receiving iOS notifications on an accessory](./receiving-ios-notifications-on-an-accessory.md).
 
-#### Configure a shared app group
+## Configure a shared app group
 
 Your companion app is the iOS app that pairs with your accessory using AccessorySetupKit and runs on the person’s iPhone. The companion app might need to share certain data across its extensions to support internet transport. For example, when multiple of your app’s targets in Xcode, including the extensions, need authentication tokens for your webserver, a maximum payload size, or the same list of supported content types, use *App groups* to share the common data.
 
@@ -67,7 +67,7 @@ let authToken = sharedDefaults?.string(forKey: "ServerAuthToken")
 let maxPayloadSize = sharedDefaults?.integer(forKey: "MaxPayloadSize")
 ```
 
-#### Specify internet transport during key exchange
+## Specify internet transport during key exchange
 
 *Key exchange* is the process during which your accessory and the system agree on a shared secret without transmitting the secret itself. This exchange allows each side to encrypt and decrypt data, and avoid extraneous listeners on the connection. To support internet transport alongside other transport types, the system establishes an encryption mechanism that works across every transport that your accessory specifies.
 
@@ -87,7 +87,7 @@ let message = SecurityMessage(
 try session.sendSecurityMessage(message)
 ```
 
-#### Prepare payloads for supported transports
+## Prepare payloads for supported transports
 
 When your app supports multiple transport types, the session’s [`transport`](./accessorytransportsession/transport.md) identifies the transport that the system selects. Your data provider can prepare different payloads per transport type:
 
@@ -111,7 +111,7 @@ func addNotification(_ notification: AccessoryNotification,
 
 Create a payload tailored for each transport type so the system can deliver the message efficiently. For example, you can include image attachments in a Bluetooth payload and omit them from internet payloads to reduce data consumption or latency.
 
-#### Handle internet delivery in your transport extension
+## Handle internet delivery in your transport extension
 
 Your [`AccessoryTransportAppExtension`](./accessorytransportappextension.md) may run in a separate process for each active transport. Check [`transport`](./accessorytransportsession/transport.md) to determine which transport the current session uses, and forward the message to your accessory accordingly.
 
@@ -150,7 +150,7 @@ class TransportEventHandler: AccessoryTransportSession.EventHandler {
 
 Convert the push token `Data` value to a hex-encoded string before including it in any JSON payload your accessory transmits to your server. The session ID identifies which data provider extension the response targets; the push token identifies which device to deliver it to. Your accessory’s server pushes response data back to the device directly through APNs, using its own APNs provider credentials and the forwarded push token to identify the target device.
 
-#### Export key exchange secrets on your accessory
+## Export key exchange secrets on your accessory
 
 Internet transport uses a Symmetric Key Ratchet for per-message encryption. Your accessory initializes the Symmetric Key Ratchet from the HPKE secrets established during Bluetooth key exchange. For more information about HPKE secrets and Bluetooth, see [Receiving iOS notifications on an accessory](./receiving-ios-notifications-on-an-accessory.md).
 
@@ -199,7 +199,7 @@ initializeRatchets(
 
 > ❗ **Important**: Export secrets once, when your accessory handles the [`SecurityMessage.KeyType.encapsulatedKey`](./securitymessage/keytype-swift.enum/encapsulatedkey.md) message during key exchange. Store both exported secrets and persist the ratchet state for the session lifetime. Don’t re-export secrets for individual messages.
 
-#### Decrypt internet-delivered notifications on your accessory
+## Decrypt internet-delivered notifications on your accessory
 
 Each internet-delivered message carries three fields: a 4-byte `keyID` that identifies the ratchet instance to use, a 4-byte little-endian `messageIndex` that specifies the ratchet step, and a variable-length ciphertext in the format `nonce (12 bytes) || ciphertext || tag (16 bytes)`.
 

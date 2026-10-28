@@ -19,11 +19,11 @@ func UCGetCollationKey(_ collatorRef: CollatorRef!, _ textPtr: UnsafePointer<Uni
 OSStatus UCGetCollationKey(CollatorRef collatorRef, const UniChar *textPtr, UniCharCount textLength, ItemCount maxKeySize, ItemCount *actualKeySize, UCCollationValue collationKey[]);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.  The function can return `paramErr`, for example, if the parameters `collatorRef`, `textPtr`, `actualKeySize`, or `collationKey` are `NULL`. It can also return memory errors. If `maxKeySize` is too small for the collation key, the function returns `kUCOutputBufferTooSmall`.
 
-#### Discussion
+## Discussion
 
 If you want to compare the same strings several times, as when sorting a list of strings, it may be most efficient for you to derive a collation key for each string and then compare the collation keys. A collation key is a transformation of the string that depends on the collator object (that is, it depends on the locale, the collation variant if any, and the collation options).
 
@@ -33,7 +33,7 @@ If you are comparing different strings, it may be more efficient for you to call
 
 Note that collation keys should be used only in a runtime context. They should not be stored in a persistent state (such as to disk) because the format of a collation key could change in the future.
 
-##### Special Considerations
+### Special Considerations
 
 This function can move memory.
 

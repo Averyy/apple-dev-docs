@@ -4,7 +4,7 @@
 
 Specify an array type for storing or extracting descriptor lists with the `AEPutArray` and `AEGetArray` functions.
 
-#### Overview
+## Overview
 
 When your application calls the [`AEPutArray(_:_:_:_:_:_:)`](../api-1442535-aeputarray.md) function to put information into a descriptor list or the [`AEGetArray(_:_:_:_:_:_:_:)`](../api-1445720-aegetarray.md) function to get information from a descriptor list, it uses an array to store the information. The type of array depends on the data for the array, as specified by one of these constants.
 

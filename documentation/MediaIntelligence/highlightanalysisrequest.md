@@ -24,7 +24,7 @@ final class HighlightAnalysisRequest
 
 - [Finding the best moments in a video](./finding-the-best-moments-in-a-video.md)
 
-#### Overview
+## Overview
 
 [`HighlightAnalysisRequest`](./highlightanalysisrequest.md) asks [`VideoAnalyzer`](./videoanalyzer.md) to find the highlight segments of a video and score every segment for engagement. Pass it to [`analyze(_:for:)`](./videoanalyzer/analyze%28_,for%29.md) to receive a [`HighlightAnalysisRequest.Result`](./highlightanalysisrequest/result.md) value.
 

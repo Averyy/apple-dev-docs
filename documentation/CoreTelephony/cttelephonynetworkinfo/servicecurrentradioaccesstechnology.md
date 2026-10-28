@@ -21,7 +21,7 @@ var serviceCurrentRadioAccessTechnology: [String : String]? { get }
 @property (nonatomic, retain, readonly, nullable) NSDictionary<NSString *,NSString *> * serviceCurrentRadioAccessTechnology;
 ```
 
-#### Discussion
+## Discussion
 
 The keys for the [`serviceCurrentRadioAccessTechnology`](./servicecurrentradioaccesstechnology.md) dictionary are [`NSString`](../../Foundation/nsstring.md) objects, each of which represents a service. The entry associated with a key is `nil` if the service is not registered on any network.
 

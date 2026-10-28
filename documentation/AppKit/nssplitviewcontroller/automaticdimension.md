@@ -19,7 +19,7 @@ class let automaticDimension: CGFloat
 extern const CGFloat NSSplitViewControllerAutomaticDimension;
 ```
 
-#### Discussion
+## Discussion
 
 Use this constant with any sizing-related [`NSSplitViewController`](../nssplitviewcontroller.md) property to get the default system behavior.
 

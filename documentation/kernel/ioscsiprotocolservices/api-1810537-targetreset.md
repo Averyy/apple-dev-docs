@@ -12,11 +12,11 @@ SCSIServiceResponse TargetReset (
  void );
 ```
 
-#### Return Value
+## Return Value
 
 A valid SCSIServiceResponse.
 
-#### Overview
+## Overview
 
 The Task Management function to reset a target device.
 

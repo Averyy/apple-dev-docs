@@ -21,7 +21,7 @@ The custom mirror for this instance.
 var customMirror: Mirror { get }
 ```
 
-#### Discussion
+## Discussion
 
 If this type has value semantics, the mirror should be unaffected by subsequent mutations of the instance.
 

@@ -22,7 +22,7 @@ struct Model
 
 Available when `Scalar` conforms to `MLShapedArrayScalar`, `Scalar` conforms to `BinaryFloatingPoint`, `Label` conforms to `Comparable`, `Label` conforms to `Decodable`, `Label` conforms to `Encodable`, and `Label` conforms to `Hashable`.
 
-#### Overview
+## Overview
 
 > **Note**: Only `Float` and `Double` are currently supported as the Scalar type.
 

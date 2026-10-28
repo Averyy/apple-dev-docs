@@ -16,7 +16,7 @@ A property of IONetworkData objects.
 #define kIONetworkDataAccessTypes
 ```
 
-#### Discussion
+## Discussion
 
 The kIONetworkDataAccessTypes property is an OSNumber that describes the supported access types of an IONetworkData object.
 

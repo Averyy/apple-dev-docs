@@ -24,7 +24,7 @@ Captures and returns a CPU timestamp and a GPU timestamp from the same moment in
 
 - [Converting GPU timestamps into CPU time](../converting-gpu-timestamps-into-cpu-time.md)
 
-#### Discussion
+## Discussion
 
 For an example of how and when to use corresponding timestamps from the CPU and GPU, see [Converting GPU timestamps into CPU time](../converting-gpu-timestamps-into-cpu-time.md).
 

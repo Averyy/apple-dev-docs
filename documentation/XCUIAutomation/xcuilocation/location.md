@@ -27,7 +27,7 @@ var location: CLLocation { get }
 @property (copy, readonly) CLLocation * location;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to access the underlying [`CLLocation`](../../CoreLocation/cllocation.md) this object wraps.
 

@@ -25,7 +25,7 @@ typealias CGDataConsumerReleaseInfoCallback = (UnsafeMutableRawPointer?) -> Void
 typedef void (*)(void *) CGDataConsumerReleaseInfoCallback;
 ```
 
-#### Discussion
+## Discussion
 
 When Core Graphics frees a data consumer that has an associated release function, the release function is called.
 

@@ -19,7 +19,7 @@ Creates a new configuration object.
 init()
 ```
 
-#### Discussion
+## Discussion
 
 This configuration doesn’t return asset identifiers. To create configuration object with the system photo library use [`init(photoLibrary:)`](./init%28photolibrary%29.md).
 

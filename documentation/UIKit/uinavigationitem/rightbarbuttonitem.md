@@ -23,7 +23,7 @@ var rightBarButtonItem: UIBarButtonItem? { get set }
 @property (nonatomic, strong, readwrite, nullable) UIBarButtonItem * rightBarButtonItem;
 ```
 
-#### Discussion
+## Discussion
 
 The contents of this property always refer to the first bar button item in the [`rightBarButtonItems`](./rightbarbuttonitems.md) array. Assigning a new value to this property replaces the first item in the [`rightBarButtonItems`](./rightbarbuttonitems.md) array with the new value. Setting this property to `nil` removes the first item in the array. If the bar button item is already in the array, it is moved from its current location to the front of the array.
 

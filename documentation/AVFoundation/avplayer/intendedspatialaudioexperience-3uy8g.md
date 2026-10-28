@@ -15,7 +15,7 @@ The AVPlayer’s intended spatial audio experience.
 @property (nonatomic, copy) CASpatialAudioExperience * intendedSpatialAudioExperience;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of CAAutomaticSpatialAudio means the player uses its AVAudioSession’s intended spatial experience. If the anchoring strategy is impossible (e.g. it uses a destroyed UIScene’s identifier), the player follows a “front” anchoring strategy instead.
 

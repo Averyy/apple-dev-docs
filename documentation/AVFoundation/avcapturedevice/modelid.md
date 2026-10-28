@@ -24,7 +24,7 @@ var modelID: String { get }
 @property (nonatomic, readonly) NSString * modelID;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is an identifier unique to all devices of the same model. The value is persistent across device connections and disconnections, and across different systems. For example, the model identifier of a built-in camera on two identical iPhone models is the same even though they’re different physical devices.
 

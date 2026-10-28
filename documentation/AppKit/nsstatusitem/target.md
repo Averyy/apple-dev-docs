@@ -19,7 +19,7 @@ weak var target: AnyObject? { get set }
 @property (weak, nullable) id target;
 ```
 
-#### Discussion
+## Discussion
 
 If the status item has a menu set, clicking the status item doesn’t send the action to the target; instead, the click causes the menu to appear.
 

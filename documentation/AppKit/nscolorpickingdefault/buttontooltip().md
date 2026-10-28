@@ -21,7 +21,7 @@ func buttonToolTip() -> String
 - (NSString *) buttonToolTip;
 ```
 
-#### Return Value
+## Return Value
 
 Help tag text.
 

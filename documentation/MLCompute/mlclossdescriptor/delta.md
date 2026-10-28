@@ -23,7 +23,7 @@ var delta: Float { get }
 @property (nonatomic, readonly) float delta;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `1.0`.
 

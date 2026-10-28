@@ -25,7 +25,7 @@ func createCGImage(format: vImage_CGImageFormat, flags options: vImage.Options =
 
 - [Creating a Core Graphics Image from a vImage Buffer](../creating-a-core-graphics-image-from-a-vimage-buffer.md)
 
-#### Return Value
+## Return Value
 
 A Core Graphics image that represents the contents of the vImage buffer.
 

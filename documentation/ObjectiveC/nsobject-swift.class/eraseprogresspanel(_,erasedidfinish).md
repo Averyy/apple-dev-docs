@@ -19,7 +19,7 @@ func eraseProgressPanel(_ theErasePanel: DREraseProgressPanel!, eraseDidFinish e
 - (BOOL) eraseProgressPanel:(DREraseProgressPanel *) theErasePanel eraseDidFinish:(DRErase *) erase;
 ```
 
-#### Discussion
+## Discussion
 
 This method allows the delegate to handle or modify the end-of-burn feedback performed by the progress panel. Return `YES` to indicate the delegate handled the burn completion and the standard feedback should be supressed. If this method returns `NO`, the normal end-of-burn handling is performed (displaying an error if appropriate, playing an “I’m done” sound, etc).
 

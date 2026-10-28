@@ -21,11 +21,11 @@ Returns a lowercase version of the string.
 func lowercased() -> String
 ```
 
-#### Return Value
+## Return Value
 
 A lowercase copy of the string.
 
-#### Discussion
+## Discussion
 
 Here’s an example of transforming a string to all lowercase letters.
 

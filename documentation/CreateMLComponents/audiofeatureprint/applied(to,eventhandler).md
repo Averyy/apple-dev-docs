@@ -20,11 +20,11 @@ Extracts audio features from an a sequence of audio buffers
 func applied<S>(to input: S, eventHandler: EventHandler? = nil) throws -> AudioFeaturePrint.FeatureSequence where S : TemporalSequence, S.Feature == AVAudioPCMBuffer
 ```
 
-#### Return Value
+## Return Value
 
 An async sequence of shaped arrays containing extracted features. Each shaped array has a shape of `[512]`.
 
-#### Discussion
+## Discussion
 
 You can call this method multiple times to process multiple streams.
 

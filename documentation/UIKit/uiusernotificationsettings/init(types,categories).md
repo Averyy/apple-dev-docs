@@ -23,11 +23,11 @@ convenience init(types: UIUserNotificationType, categories: Set<UIUserNotificati
 + (instancetype) settingsForTypes:(UIUserNotificationType) types categories:(NSSet<UIUserNotificationCategory *> *) categories;
 ```
 
-#### Return Value
+## Return Value
 
 A new user notification settings object that you can register with the [`UIApplication`](../uiapplication.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method to create a new settings object that you intend to register with the app. When calling this method, specify the types of notifications you intend to deliver to the user such as alerts or sounds. If you intend to display custom actions in your notifications, use this method to register those actions as well.
 

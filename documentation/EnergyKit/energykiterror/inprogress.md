@@ -17,7 +17,7 @@ An error that indicates a request is already in progress.
 case inProgress
 ```
 
-#### Discussion
+## Discussion
 
 Only one request can be active at a time. Wait until the prior request completes before trying again.
 

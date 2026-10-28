@@ -24,7 +24,7 @@ static var argumentInfo: MTLPipelineOption { get }
 MTLPipelineOptionArgumentInfo
 ```
 
-#### Discussion
+## Discussion
 
 This option provides all properties of an [`MTLArgument`](../mtlargument.md) instance, except for [`bufferStructType`](../mtlargument/bufferstructtype.md) and [`bufferPointerType`](../mtlargument/bufferpointertype.md), which are `nil`. To obtain these detailed buffer type properties, retrieve the [`bufferTypeInfo`](./buffertypeinfo.md) instance.
 

@@ -26,11 +26,11 @@ func AUGraphGetMaxCPULoad(_ inGraph: AUGraph, _ outMaxLoad: UnsafeMutablePointer
 extern OSStatus AUGraphGetMaxCPULoad(AUGraph inGraph, Float32 *outMaxLoad);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 
-#### Discussion
+## Discussion
 
 ## Parameters
 

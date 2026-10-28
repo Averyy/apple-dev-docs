@@ -25,7 +25,7 @@ func CFAllocatorSetDefault(_ allocator: CFAllocator!)
 extern void CFAllocatorSetDefault(CFAllocatorRef allocator);
 ```
 
-#### Discussion
+## Discussion
 
 The `CFAllocatorSetDefault` function sets the allocator that is used in the current thread whenever `NULL` is specified as an allocator argument. Generally, most allocations use the default allocator. Because of this, the default allocator must be prepared to deal with arbitrary memory-allocation requests. In addition, the size and number of requests can change between releases.
 

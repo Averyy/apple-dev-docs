@@ -18,7 +18,7 @@ A Boolean value that indicates whether the scanner displays highlights around re
 final let isHighlightingEnabled: Bool
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `false`.
 

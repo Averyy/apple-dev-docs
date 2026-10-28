@@ -24,7 +24,7 @@ var elementType: MTLDataType { get }
 @property (readonly) MTLDataType elementType;
 ```
 
-#### Discussion
+## Discussion
 
 For information on possible values, see [`MTLDataType`](../mtldatatype.md).
 

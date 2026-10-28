@@ -20,7 +20,7 @@ func performWiredTransaction(using credential: CredentialSession.Credential, ove
 
 - [Accessing and using secure element credentials](../accessing-and-using-secure-element-credentials.md)
 
-#### Discussion
+## Discussion
 
 If the person using the app chooses to authorize, the specified instance will first have an auth token delivered by the broker interface on the Secure Element as described in the [Apple Business Register](https://register.apple.com) Secure Element documents. Otherwise the session throws `userDeclined`.
 

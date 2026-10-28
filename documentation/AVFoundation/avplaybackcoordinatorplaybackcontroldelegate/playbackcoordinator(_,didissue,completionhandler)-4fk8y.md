@@ -29,7 +29,7 @@ func playbackCoordinator(_ coordinator: AVDelegatingPlaybackCoordinator, didIssu
 - (void) playbackCoordinator:(AVDelegatingPlaybackCoordinator *) coordinator didIssueSeekCommand:(AVDelegatingPlaybackCoordinatorSeekCommand *) seekCommand completionHandler:(void (^)()) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 The coordinator issues this command to perform a seek in the item timeline, potentially pausing playback in the process.
 

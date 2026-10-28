@@ -19,7 +19,7 @@ func selectCell(_ cell: NSCell)
 - (void) selectCell:(NSCell *) cell;
 ```
 
-#### Discussion
+## Discussion
 
 If the cell is already selected (or does not belong to the receiver), this method does nothing. If the cell belongs to the receiver and is not selected, this method changes its state to `NSOnState` and redraws the cell.
 

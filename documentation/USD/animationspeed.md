@@ -5,11 +5,11 @@
 
 A factor to apply to the animation speed.
 
-#### Overview
+## Overview
 
 The default value is `1.0`, which doesn’t change the animation speed.
 
-##### Declaration
+### Declaration
 
 ```other
 uniform double animationSpeed = 1.0

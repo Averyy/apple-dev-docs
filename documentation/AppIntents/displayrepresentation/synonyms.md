@@ -21,7 +21,7 @@ A list of localized phrases that are synonyms of this particular display represe
 var synonyms: [LocalizedStringResource]
 ```
 
-#### Discussion
+## Discussion
 
 Example:
 

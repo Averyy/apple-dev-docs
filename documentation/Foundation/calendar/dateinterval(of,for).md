@@ -21,7 +21,7 @@ Returns the starting time and duration of a given calendar component that contai
 func dateInterval(of component: Calendar.Component, for date: Date) -> DateInterval?
 ```
 
-#### Return Value
+## Return Value
 
 A new `DateInterval` if the starting time and duration of a component could be calculated; otherwise, `nil`.
 

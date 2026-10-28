@@ -24,7 +24,7 @@ var radius: Float { get set }
 @property (nonatomic, assign) float radius;
 ```
 
-#### Discussion
+## Discussion
 
 This property defines the space occupied by the path—think of this space as the area created by sweeping a circle (or sphere, for 3D paths) of the specified along the path from vertex to vertex. Agents with path-related goals will attempt to move to or stay within this area.
 

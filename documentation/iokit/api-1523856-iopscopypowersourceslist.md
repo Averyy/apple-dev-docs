@@ -16,11 +16,11 @@ Returns a CFArray of Power Source handles, each of type CFTypeRef.
 CFArrayRef IOPSCopyPowerSourcesList(CFTypeRef blob);
 ```
 
-#### Return Value
+## Return Value
 
 Returns NULL if errors were encountered, otherwise a CFArray of CFTypeRefs. Caller must CFRelease() the returned CFArrayRef.
 
-#### Discussion
+## Discussion
 
 The caller shouldn't directly access the CFTypeRefs, but should use IOPSGetPowerSourceDescription on each member of the CFArrayRef.
 

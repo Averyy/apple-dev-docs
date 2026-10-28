@@ -31,7 +31,7 @@ var title: String? { get set }
 - [Implementing Handoff in Your App](../implementing-handoff-in-your-app.md)
 - [Supporting the creation of Quick Notes](../supporting-the-creation-of-quick-notes.md)
 
-#### Discussion
+## Discussion
 
 Always specify a title string for activity objects that are eligible for searches, and it’s recommended that you include a title string for all user activity objects. For search-related user activity objects, this string is displayed in the search results.
 

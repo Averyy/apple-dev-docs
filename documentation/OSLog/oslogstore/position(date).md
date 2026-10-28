@@ -25,7 +25,7 @@ func position(date: Date) -> OSLogPosition
 - (OSLogPosition *) positionWithDate:(NSDate *) date;
 ```
 
-#### Discussion
+## Discussion
 
 If there are multiple occurrences of the same time, the method returns the earliest occurrence.
 

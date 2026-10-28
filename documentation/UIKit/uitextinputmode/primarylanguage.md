@@ -23,7 +23,7 @@ var primaryLanguage: String? { get }
 @property (nonatomic, strong, readonly, nullable) NSString * primaryLanguage;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is a BCP 47 language code such as “es”, “en-US”, or “fr-CA”.
 

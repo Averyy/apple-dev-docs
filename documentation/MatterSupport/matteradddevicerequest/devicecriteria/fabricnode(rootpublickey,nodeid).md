@@ -19,7 +19,7 @@ A device matches if it’s paired to a fabric using the provided fabric and node
 case fabricNode(rootPublicKey: Data, nodeID: UInt64)
 ```
 
-#### Discussion
+## Discussion
 
 This will only match for devices already known to the system during the commissioning operation.
 

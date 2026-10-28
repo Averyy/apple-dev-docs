@@ -27,7 +27,7 @@ optional func webExtensionController(_ controller: WKWebExtensionController, ope
 - (void) webExtensionController:(WKWebExtensionController *) controller openNewTabUsingConfiguration:(WKWebExtensionTabConfiguration *) configuration forExtensionContext:(WKWebExtensionContext *) extensionContext completionHandler:(void (^)(id<WKWebExtensionTab>newTab, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 This method should be implemented by the app to handle requests to open new tabs. The app can decide how to handle the process based on the provided configuration and existing tabs. Once handled, the app should call the completion handler with the opened tab or `nil` if the request was declined or failed. If not implemented, the extension will be unable to open new tabs.
 

@@ -25,7 +25,7 @@ var percentEncodedQuery: String? { get set }
 @property (copy, nullable) NSString * percentEncodedQuery;
 ```
 
-#### Discussion
+## Discussion
 
 For example, in the URL `http://www.example.com/index.php?key1=value1&key2=value2`, the query string is `key1=value1&key2=value2`.
 

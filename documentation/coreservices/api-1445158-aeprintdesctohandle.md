@@ -19,11 +19,11 @@ func AEPrintDescToHandle(_ desc: UnsafePointer<AEDesc>!, _ result: UnsafeMutable
 OSStatus AEPrintDescToHandle(const AEDesc *desc, Handle *result);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../applicationservices/apple_event_manager.md#1656145).
 
-#### Discussion
+## Discussion
 
 The data handle returned in the `result` parameter contains a text string formatted using the “AEBuild” syntax. This string is useful for looking at the contents of Apple events sent by other applications and for debugging your own descriptors.
 

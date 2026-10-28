@@ -19,7 +19,7 @@ func SCDynamicStoreKeyCreateNetworkInterface(_ allocator: CFAllocator?, _ domain
 CFStringRefSCDynamicStoreKeyCreateNetworkInterface(CFAllocatorRef allocator, CFStringRef domain);
 ```
 
-#### Return Value
+## Return Value
 
 A string containing the formatted key.
 

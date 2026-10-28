@@ -24,7 +24,7 @@ var minificationFilter: CALayerContentsFilter { get set }
 @property (copy) CALayerContentsFilter minificationFilter;
 ```
 
-#### Discussion
+## Discussion
 
 The possible values for this property are listed in [Scaling Filters](../scaling-filters.md).
 

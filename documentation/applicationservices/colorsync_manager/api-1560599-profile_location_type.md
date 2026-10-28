@@ -4,7 +4,7 @@
 
 Defines profile location kinds.
 
-#### Overview
+## Overview
 
 Your application specifies the location for a profile using a profile location structure of type [`CMProfileLocation`](../cmprofilelocation.md). A ColorSync profile that you open or create is typically stored in one of the following locations:
 

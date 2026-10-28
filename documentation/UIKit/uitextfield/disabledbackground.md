@@ -23,7 +23,7 @@ var disabledBackground: UIImage? { get set }
 @property (nonatomic, strong, nullable) UIImage * disabledBackground;
 ```
 
-#### Discussion
+## Discussion
 
 Background images are drawn in the border rectangle portion of the text field. Images you use for the text field’s background should be able to stretch to fit. This property is ignored if the [`background`](./background.md) property is not also set.
 

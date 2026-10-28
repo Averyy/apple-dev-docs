@@ -21,11 +21,11 @@ Send new element to the channel.
 ## Declaration
 
 ```swift
-nonisolated
-(nonsending) mutating func send(_ element: consuming sending Element) async throws
+nonisolated(nonsending)
+mutating func send(_ element: consuming sending Element) async throws
 ```
 
-#### Discussion
+## Discussion
 
 If there is a task consuming the channel and awaiting the next element then the task will get resumed with the provided element. If the channel already terminated then this method will throw an error indicating the failure.
 

@@ -20,7 +20,7 @@ case locationUnauthorized
 ARErrorCodeLocationUnauthorized
 ```
 
-#### Discussion
+## Discussion
 
 To resolve this issue, the app needs to ask the user to enable location access for this app in Settings.
 

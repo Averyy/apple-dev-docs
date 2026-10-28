@@ -20,7 +20,7 @@ Changed inverse bind poses.
 let inverseBindPoses: [float4x4]?
 ```
 
-#### Discussion
+## Discussion
 
 `nil` if unchanged.
 

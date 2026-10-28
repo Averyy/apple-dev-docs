@@ -20,7 +20,7 @@ var textureMap: LayerRenderer.Drawable.View.TextureMap { get }
 cp_view_texture_map_tcp_view_get_view_texture_map(cp_view_t view);
 ```
 
-#### Discussion
+## Discussion
 
 Use the texture map to fetch additional information you need to draw your content. For example, use it to fetch the rectangle that defines the view’s content area.
 

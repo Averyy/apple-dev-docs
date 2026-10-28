@@ -15,7 +15,7 @@ Returns a Boolean value indicating whether two room anchors are equal.
 static func == (lhs: RoomAnchor, rhs: RoomAnchor) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the two room anchors are equal; otherwise, `false`.
 

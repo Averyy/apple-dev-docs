@@ -35,7 +35,7 @@ var intent: INIntent? { get }
 
 - [Supporting suggestions in your app’s share extension](../supporting-suggestions-in-your-app-s-share-extension.md)
 
-#### Discussion
+## Discussion
 
 When the user selects an app from the list of suggested apps in iOS’s share sheet, this property contains metadata that you can use to populate your share extensions interface. The source for the metadata is the [`INSendMessageIntent`](../../Intents/insendmessageintent.md) of your messaging app.
 

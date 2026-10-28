@@ -17,11 +17,11 @@ Creates a new minimal alias record, given a target file or directory.
 OSErr FSNewAliasMinimal(const FSRef *target, AliasHandle *inAlias);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. If the specified target is valid, this function creates an alias record for the target and returns `noErr`. Any other return value indicates that this function did not create an alias record.
 
-#### Discussion
+## Discussion
 
 The `FSNewAliasMinimal` function creates an alias record that contains only the minimum information necessary to describe the target. The `FSNewAliasMinimal` function uses the standard alias record data structure, but it fills in only parts of the record.
 

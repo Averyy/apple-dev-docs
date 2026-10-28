@@ -22,7 +22,7 @@ func GLKVector3DotProduct(_ vectorLeft: GLKVector3, _ vectorRight: GLKVector3) -
 static float GLKVector3DotProduct(GLKVector3 vectorLeft, GLKVector3 vectorRight);
 ```
 
-#### Return Value
+## Return Value
 
 The dot product of the two vectors.
 

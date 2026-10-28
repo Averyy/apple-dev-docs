@@ -30,7 +30,7 @@ CFDataRefSecKeyCreateDecryptedData(SecKeyRef key, SecKeyAlgorithm algorithm, CFD
 - [Generating New Cryptographic Keys](./generating-new-cryptographic-keys.md)
 - [Using Keys for Encryption](./using-keys-for-encryption.md)
 
-#### Return Value
+## Return Value
 
 The decrypted data or `NULL` on failure. In Objective-C, call the [`CFRelease`](../CoreFoundation/cfrelease.md) function to free the data’s memory when you are done with it.
 

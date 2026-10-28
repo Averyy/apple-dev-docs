@@ -17,7 +17,7 @@ The property that configures parameters that prioritize latency at the expense o
 static let realtime: WAParameters
 ```
 
-#### Return Value
+## Return Value
 
 Realtime parameters.
 

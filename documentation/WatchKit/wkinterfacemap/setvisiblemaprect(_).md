@@ -19,7 +19,7 @@ func setVisibleMapRect(_ mapRect: MKMapRect)
 - (void) setVisibleMapRect:(MKMapRect) mapRect;
 ```
 
-#### Discussion
+## Discussion
 
 The method may adjust the specified map rectangle slightly to fit the available display space for the map. The adjusted region always includes the entire region you specified.
 

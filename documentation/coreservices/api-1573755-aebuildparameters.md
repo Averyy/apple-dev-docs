@@ -15,11 +15,11 @@ Adds additional parameters or attributes to an existing Apple event.
 OSStatus AEBuildParameters(AppleEvent *event, AEBuildError *error, const char *format, ...);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../applicationservices/apple_event_manager.md#1656145).
 
-#### Discussion
+## Discussion
 
 This function can be called more than once to add any desired number of parameters or attributes to an existing Apple event. The Apple event should already have been created through either a call to [`AECreateAppleEvent`](./api-1448525-aecreateappleevent.md) or [`AEBuildAppleEvent`](./api-1573757-aebuildappleevent.md).
 

@@ -25,7 +25,7 @@ case success
 INSearchCallHistoryIntentResponseCodeSuccess
 ```
 
-#### Discussion
+## Discussion
 
 During confirmation, use this code to indicate that you’re able to perform the search. During handling, use this code if you performed the search successfully and are ready to hand the results over to your app to display.
 

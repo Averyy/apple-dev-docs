@@ -30,7 +30,7 @@ var emailAddressEditable: Bool { get set }
 @property (atomic) BOOL emailAddressEditable;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`true`](../../Swift/true.md), which lets the current user change the email address assigned to a pending reservation.
 

@@ -23,7 +23,7 @@ var evaluatedPolicyDomainState: Data? { get }
 @property (nonatomic, readonly, nullable) NSData * evaluatedPolicyDomainState;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is non-`nil` when the [`canEvaluatePolicy(_:error:)`](./canevaluatepolicy%28_,error%29.md) method succeeds for a biometric policy or the person successfully authenticates using biometrics, following a call to [`evaluatePolicy(_:localizedReason:reply:)`](./evaluatepolicy%28_,localizedreason,reply%29.md). Otherwise, its value is `nil`.
 

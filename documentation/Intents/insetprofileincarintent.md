@@ -24,7 +24,7 @@ class INSetProfileInCarIntent
 @interface INSetProfileInCarIntent : INIntent
 ```
 
-#### Overview
+## Overview
 
 Automotive vendors whose cars support the saving of seat and other environment settings can add support for this intent to an Intents extension that they ship with their automotive apps. When users want to restore settings from a profile, SiriKit creates an [`INSetProfileInCarIntent`](./insetprofileincarintent.md) object and delivers it to the app’s Intents extension. You use the intent object to get the name or index of the profile whose settings you use to configure the vehicle.
 
@@ -32,7 +32,7 @@ You’re responsible for determining which settings to save and restore with use
 
 The object that handles this intent must adopt the [`INSetProfileInCarIntentHandling`](./insetprofileincarintenthandling.md) protocol. Use this intent object to resolve the profile information and to create an [`INSetProfileInCarIntentResponse`](./insetprofileincarintentresponse.md) object indicating the results of restoring the profile.
 
-##### Additional Intent Attributes
+### Additional Intent Attributes
 
 The following table lists additional attributes of this intent object:
 
@@ -41,7 +41,7 @@ The following table lists additional attributes of this intent object:
 | Supported by | Siri Intents (in conjunction with CarPlay) |
 | Always requires unlocked device | Yes |
 
-##### Example Phrases
+### Example Phrases
 
 Users can ask Siri to restore profile settings in a vehicle in a variety of ways. The table below provides a few sample phrases in different languages. You can use these phrases during testing to trigger your intents. This list isn’t exhaustive and Siri may recognize many other phrases.
 

@@ -25,7 +25,7 @@ var physicsWorld: SCNPhysicsWorld { get }
 @property (nonatomic, readonly) SCNPhysicsWorld * physicsWorld;
 ```
 
-#### Discussion
+## Discussion
 
 Every scene automatically creates a physics world object to simulate physics on nodes in the scene. You use this property to access the scene’s global physics properties, such as gravity, and to manage physics interactions between nodes. To make a node in the scene participate in the physics simulation, use either or both of its [`physicsBody`](../scnnode/physicsbody.md) and [`physicsField`](../scnnode/physicsfield.md) properties.
 

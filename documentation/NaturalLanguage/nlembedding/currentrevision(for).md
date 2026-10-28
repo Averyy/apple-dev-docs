@@ -25,7 +25,7 @@ class func currentRevision(for language: NLLanguage) -> Int
 + (NSUInteger) currentRevisionForLanguage:(NLLanguage) language;
 ```
 
-#### Return Value
+## Return Value
 
 An integer.
 

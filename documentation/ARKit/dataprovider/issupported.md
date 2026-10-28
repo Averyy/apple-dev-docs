@@ -17,7 +17,7 @@ A Boolean value that indicates whether the current runtime environment supports 
 static var isSupported: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 For example, data providers are not supported in Simulator.
 

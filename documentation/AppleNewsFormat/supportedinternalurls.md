@@ -15,7 +15,7 @@ Links that go to Apple News and other Apple apps.
 string SupportedInternalURLs
 ```
 
-#### Discussion
+## Discussion
 
 You can define the following Apple domain links for the `URL` property in [`Aside`](./aside.md), [`Chapter`](./chapter.md), [`Container`](./container.md), [`Logo`](./logo.md), [`Image`](./image.md), and [`Section`](./section.md) objects:
 

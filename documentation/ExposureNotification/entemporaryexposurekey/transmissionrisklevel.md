@@ -23,7 +23,7 @@ var transmissionRiskLevel: ENRiskLevel { get set }
 @property (nonatomic, assign, readwrite) ENRiskLevel transmissionRiskLevel;
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  This property is available in iOS 12.5, and in iOS 13.5 and later.
 

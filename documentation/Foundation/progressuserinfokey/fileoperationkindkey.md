@@ -25,7 +25,7 @@ static let fileOperationKindKey: ProgressUserInfoKey
 extern NSProgressUserInfoKey const NSProgressFileOperationKindKey;
 ```
 
-#### Discussion
+## Discussion
 
 When you set the property [`kind`](../progress/kind.md) on a progress to [`file`](../progresskind/file.md), set the corresponding value to one of the entries in Recognizing Kinds of File Operations.
 

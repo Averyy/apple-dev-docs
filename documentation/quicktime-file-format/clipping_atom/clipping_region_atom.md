@@ -6,7 +6,7 @@
 
 An atom that specifies the clipping region.
 
-#### Overview
+## Overview
 
 See [`Clipping region atom`](../clipping_region_atom.md).
 

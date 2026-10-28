@@ -19,7 +19,7 @@ func ABGroupAddGroup(_ group: ABGroupRef!, _ groupToAdd: ABGroupRef!) -> Bool
 extern bool ABGroupAddGroup(ABGroupRef group, ABGroupRef groupToAdd);
 ```
 
-#### Return Value
+## Return Value
 
 Returns `true` ifsuccessful. If the `group` argumentis already part of the receiver, this function does nothing andreturns `false`. If adding the group wouldcreate a recursion, this function also does nothing and returns `false`. Forexample, if the group “Animal Lovers” is in “Dog Lovers,“and you add “Dog Lovers” to “Animal Lovers,” that wouldcreate a recursion, which this function won’t allow.
 

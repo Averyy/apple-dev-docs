@@ -21,11 +21,11 @@ Creates a new dispatch source to monitor low-level system events.
 extern dispatch_source_tdispatch_source_create(dispatch_source_type_t type, uintptr_t handle, uintptr_t mask, dispatch_queue_t queue);
 ```
 
-#### Return Value
+## Return Value
 
 A new dispatch source object or `NULL` if the dispatch source could not be created.
 
-#### Discussion
+## Discussion
 
 Dispatch sources are not reentrant. Any events received while the dispatch source is suspended or while the event handler block is currently executing are coalesced and delivered after the dispatch source is resumed or the event handler block has returned.
 

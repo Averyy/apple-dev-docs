@@ -30,7 +30,7 @@ func requestAccess(to entityType: EKEntityType) async throws -> Bool
 - (void) requestAccessToEntityType:(EKEntityType) entityType completion:(EKEventStoreRequestAccessCompletionHandler) completion;
 ```
 
-#### Discussion
+## Discussion
 
 In iOS 6 and later, requesting access to an event store asynchronously prompts your users for permission to use their data. The user is only prompted the first time your app requests access to an entity type; any subsequent instantiations of `EKEventStore` uses existing permissions. When the user taps to grant or deny access, the completion handler will be called on an arbitrary queue. Your app isn’t blocked while the user decides to grant or deny permission.
 

@@ -6,7 +6,7 @@
 
 An atom where you define and store data associated with a QuickTime object.
 
-#### Overview
+## Overview
 
 The layout of a user data atom is as follows.
 

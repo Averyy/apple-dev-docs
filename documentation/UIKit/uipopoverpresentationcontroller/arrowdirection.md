@@ -22,7 +22,7 @@ var arrowDirection: UIPopoverArrowDirection { get }
 @property (nonatomic, readonly) UIPopoverArrowDirection arrowDirection;
 ```
 
-#### Discussion
+## Discussion
 
 When the popover is onscreen, this property reflects the actual arrow direction. Before and after presentation, the value of this property is [`unknown`](../uipopoverarrowdirection/unknown.md).
 

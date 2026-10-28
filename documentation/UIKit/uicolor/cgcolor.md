@@ -24,7 +24,7 @@ var cgColor: CGColor { get }
 @property (nonatomic, readonly) CGColorRef CGColor;
 ```
 
-#### Discussion
+## Discussion
 
 The color object in this property doesn’t adapt automatically to Dark Mode changes. If you use it to set the color of interface elements, you must update that color yourself. You update that color when the [`userInterfaceStyle`](../uitraitcollection/userinterfacestyle.md) trait of the current trait collection changes.
 

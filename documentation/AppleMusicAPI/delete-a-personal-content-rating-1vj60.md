@@ -9,7 +9,7 @@ Remove a user’s library music video rating by using the library music video’
 **Availability**:
 - Apple Music 1.0+
 
-#### Discussion
+## Discussion
 
 This endpoint requires a music user token. For more information, see [User Authentication for MusicKit](./user-authentication-for-musickit.md).
 
@@ -17,7 +17,7 @@ A rating indicates whether a user likes `(1)` or dislikes `(-1)` the music video
 
 For a particular music video, the personal ratings for that video’s catalog ID and library ID (if the video is in the library) stay synced.
 
-##### Example
+### Example
 
 **Request**:
 

@@ -24,7 +24,7 @@ func read(fromFileURL url: URL, options opts: [AnyHashable : Any] = [:], documen
 - (BOOL) readFromFileURL:(NSURL *) url options:(NSDictionary *) opts documentAttributes:(NSDictionary **) dict error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 For RTF formatted files, the contents of the file are appended to the previous string instead of replacing the previous string.
 

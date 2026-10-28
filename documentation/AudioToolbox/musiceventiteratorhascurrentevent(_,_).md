@@ -24,7 +24,7 @@ func MusicEventIteratorHasCurrentEvent(_ inIterator: MusicEventIterator, _ outHa
 extern OSStatus MusicEventIteratorHasCurrentEvent(MusicEventIterator inIterator, Boolean *outHasCurEvent);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 

@@ -14,7 +14,7 @@
 #define kIOPropertySCSITaskUserClientInstanceGUID
 ```
 
-#### Discussion
+## Discussion
 
 IORegistry property for the SCSITaskUserClient GUID. This GUID helps uniquely identify and track SCSITask enabled devices
 

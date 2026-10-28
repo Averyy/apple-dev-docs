@@ -22,7 +22,7 @@ nonisolated
 struct TextField<Label> where Label : View
 ```
 
-#### Overview
+## Overview
 
 You create a text field with a label and a binding to a value. If the value is a string, the text field updates this value continuously as the user types or otherwise edits the text in the field. For non-string types, it updates the value when the user commits their edits, such as by pressing the Return key.
 
@@ -74,7 +74,7 @@ var body: some View {
 
 ![A text field showing the typed name Maria Ruiz, with a text view below](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/SwiftUI-TextField-nameComponents@2x.png)
 
-##### Text field prompts
+### Text field prompts
 
 You can set an explicit prompt on the text field to guide users on what text they should provide. Each text field style determines where and when the text field uses a prompt and label. For example, a form on macOS always places the label at the leading edge of the field and uses a prompt, when available, as placeholder text within the field itself. In the same context on iOS, the text field uses either the prompt or label as placeholder text, depending on whether the initializer provided a prompt.
 
@@ -95,7 +95,7 @@ Form {
 
 ![An iOS form, showing two text fields, arranged vertically, with prompt](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/TextField-prompt-2@2x.png)
 
-##### Styling text fields
+### Styling text fields
 
 SwiftUI provides a default text field style that reflects an appearance and behavior appropriate to the platform. The default style also takes the current context into consideration, like whether the text field is in a container that presents text fields with a special style. Beyond this, you can customize the appearance and interaction of text fields using the [`textFieldStyle(_:)`](./view/textfieldstyle%28_%29.md) modifier, passing in an instance of [`TextFieldStyle`](./textfieldstyle.md). The following example applies the [`roundedBorder`](./textfieldstyle/roundedborder.md) style to both text fields within a [`VStack`](./vstack.md).
 

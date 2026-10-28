@@ -24,7 +24,7 @@ case errorNoData
 HKErrorNoData
 ```
 
-#### Discussion
+## Discussion
 
 This error indicates that no data exists that corresponds to a particular query, so the system can’t calculate the query’s result. [`HKStatisticsQuery`](../../hkstatisticsquery.md) queries return this error when HealthKit can’t return the data needed to calculate the statistics.
 

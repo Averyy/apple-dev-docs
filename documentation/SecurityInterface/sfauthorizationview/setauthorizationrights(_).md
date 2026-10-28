@@ -19,7 +19,7 @@ func setAuthorizationRights(_ authorizationRights: UnsafePointer<AuthorizationRi
 - (void) setAuthorizationRights:(const AuthorizationRights *) authorizationRights;
 ```
 
-#### Discussion
+## Discussion
 
 Either this method or the [`setString(_:)`](./setstring%28_%29.md) method must be called before the view displays correctly.
 

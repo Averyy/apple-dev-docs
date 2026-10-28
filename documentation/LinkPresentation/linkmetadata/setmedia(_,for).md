@@ -22,7 +22,7 @@ nonisolated
 mutating func setMedia(_ media: some Transferable, for attachment: LinkMetadata.Attachment)
 ```
 
-#### Discussion
+## Discussion
 
 For example, a custom image can be set on some metadata:
 

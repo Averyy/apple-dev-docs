@@ -19,7 +19,7 @@ The effect to apply to the view with this style.
 @preconcurrency var effect: any UIHoverEffect { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Use [`UIHoverAutomaticEffect`](../uihoverautomaticeffect-swift.struct.md) to apply a system-default effect to the view.
 

@@ -25,11 +25,11 @@ func CTGlyphInfoCreateWithGlyph(_ glyph: CGGlyph, _ font: CTFont, _ baseString: 
 extern CTGlyphInfoRefCTGlyphInfoCreateWithGlyph(CGGlyph glyph, CTFontRef font, CFStringRef baseString);
 ```
 
-#### Return Value
+## Return Value
 
 A valid reference to an immutable CTGlyphInfo object, If glyph info creation was successful; otherwise, `NULL`.
 
-#### Discussion
+## Discussion
 
 This function creates an immutable glyph info object for a glyph index using a specified font.
 

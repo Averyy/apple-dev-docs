@@ -16,11 +16,11 @@ Returns the parent for the element.
 IOHIDElementRef IOHIDElementGetParent(IOHIDElementRef element);
 ```
 
-#### Return Value
+## Return Value
 
 Returns an IOHIDElementRef referencing the parent element.
 
-#### Discussion
+## Discussion
 
 The parent element can be an element of type kIOHIDElementTypeCollection.
 

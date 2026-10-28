@@ -21,7 +21,7 @@ The learning rate.
 var learningRate: Double { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The learning rate controls the step size shrinkage. A smaller learning rate makes the learning process more conservative. Must be in the range [0, 1]. Defaults to 0.3.
 

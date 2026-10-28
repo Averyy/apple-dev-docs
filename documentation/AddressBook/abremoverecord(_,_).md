@@ -19,7 +19,7 @@ func ABRemoveRecord(_ addressBook: ABAddressBookRef!, _ record: ABRecordRef!) ->
 extern bool ABRemoveRecord(ABAddressBookRef addressBook, ABRecordRef record);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the record was removed successfully, `false` otherwise.
 

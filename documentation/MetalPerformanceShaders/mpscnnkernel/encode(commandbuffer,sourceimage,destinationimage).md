@@ -24,7 +24,7 @@ func encode(commandBuffer: any MTLCommandBuffer, sourceImage: MPSImage, destinat
 - (void) encodeToCommandBuffer:(id<MTLCommandBuffer>) commandBuffer sourceImage:(MPSImage *) sourceImage destinationImage:(MPSImage *) destinationImage;
 ```
 
-#### Discussion
+## Discussion
 
 The `destinationImage` object may not alias the `sourceImage` object.
 

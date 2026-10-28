@@ -17,11 +17,11 @@ Suspends until the input is ready for more media data, then appends the sample b
 ## Declaration
 
 ```swift
-nonisolated
-(nonsending) func append(_ sampleBuffer: CMReadySampleBuffer<CMSampleBuffer.DynamicContent>) async throws
+nonisolated(nonsending)
+func append(_ sampleBuffer: CMReadySampleBuffer<CMSampleBuffer.DynamicContent>) async throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: An error if the underlying writer failed.
 

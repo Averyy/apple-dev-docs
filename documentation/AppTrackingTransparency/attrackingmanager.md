@@ -24,7 +24,7 @@ class ATTrackingManager
 @interface ATTrackingManager : NSObject
 ```
 
-#### Overview
+## Overview
 
 This class presents an authorization request UI that asks a person for permission to access app-related data that your app can use to track a person or device across apps and websites (see [`requestTrackingAuthorization(completionHandler:)`](./attrackingmanager/requesttrackingauthorization%28completionhandler%29.md)). You can check the result of prior requests with the [`trackingAuthorizationStatus`](./attrackingmanager/trackingauthorizationstatus.md) property.
 

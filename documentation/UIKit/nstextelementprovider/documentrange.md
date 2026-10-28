@@ -24,7 +24,7 @@ var documentRange: NSTextRange { get }
 @property (strong, readonly) NSTextRange * documentRange;
 ```
 
-#### Discussion
+## Discussion
 
 The subclass could use its own implementation of a location object conforming to [`NSTextRange`](../nstextrange.md).
 

@@ -25,7 +25,7 @@ class INStartPhotoPlaybackIntent
 @interface INStartPhotoPlaybackIntent : INIntent
 ```
 
-#### Overview
+## Overview
 
 The system creates an [`INStartPhotoPlaybackIntent`](./instartphotoplaybackintent.md) object when the user asks to start a slideshow of a set of photos. This intent object contains the parameters to use when searching for the photos, including the possible name of a photo album, the people in the photos, or the location of the photos. Use this intent object to perform the search and initiate the slideshow in your app. When performing the search, use only the parameters provided and ignore any that have no values.
 
@@ -33,7 +33,7 @@ To handle this intent, the handler object in your Intents extension must adopt t
 
 For a list of other intents in the photos domain, see [`INPhotosDomainHandling`](./inphotosdomainhandling.md).
 
-##### Additional Intent Attributes
+### Additional Intent Attributes
 
 The following table lists additional attributes of this intent object:
 

@@ -24,7 +24,7 @@ var strideInPixelsX: Int { get set }
 @property (nonatomic, readwrite) NSUInteger strideInPixelsX;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `1`.
 

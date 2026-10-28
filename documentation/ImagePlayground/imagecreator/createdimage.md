@@ -19,7 +19,7 @@ A structure that stores a programmatically generated image.
 struct CreatedImage
 ```
 
-#### Overview
+## Overview
 
 You receive `CreatedImage` structures from an `ImageCreator` object when you ask that object to generate images for you. You cannot create instances of this structure yourself.
 

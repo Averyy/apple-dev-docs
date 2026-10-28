@@ -21,7 +21,7 @@ The subscription is in a billing grace period state.
 static let inGracePeriod: Product.SubscriptionInfo.RenewalState
 ```
 
-#### Discussion
+## Discussion
 
 An auto-renewable subscription in this state is entitled to service.
 

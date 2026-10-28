@@ -20,7 +20,7 @@ The compiled program that drives this material’s surface and geometry shading.
 var program: PortalMaterial.Program { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Read this property to recover the program a portal material was created with — for example, to share it with another [`PortalMaterial`](../portalmaterial.md). Assign a new program to swap a portal’s shading without rebuilding the material; the material’s existing parameter bindings are preserved, and bindings whose names and types match inputs on the new program’s shader graph keep working. Bindings that don’t match are ignored at render time — re-bind any new inputs the program introduces before drawing the portal.
 

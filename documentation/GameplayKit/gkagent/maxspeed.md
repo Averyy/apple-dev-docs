@@ -24,7 +24,7 @@ var maxSpeed: Float { get set }
 @property (nonatomic) float maxSpeed;
 ```
 
-#### Discussion
+## Discussion
 
 When an agent evaluates the goals listed in its [`behavior`](./behavior.md) property, the result is an acceleration vector that changes the velocity of the agent. If the magnitude of the new velocity is greater than this value, the velocity is reduced to match this value.
 

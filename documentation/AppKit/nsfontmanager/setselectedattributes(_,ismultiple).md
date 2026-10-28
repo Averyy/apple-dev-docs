@@ -19,7 +19,7 @@ func setSelectedAttributes(_ attributes: [String : Any], isMultiple flag: Bool)
 - (void) setSelectedAttributes:(NSDictionary<NSString *,id> *) attributes isMultiple:(BOOL) flag;
 ```
 
-#### Discussion
+## Discussion
 
 This method is used primarily by `NSTextView`.
 

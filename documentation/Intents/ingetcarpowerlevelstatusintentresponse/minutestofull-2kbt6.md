@@ -19,7 +19,7 @@ The number of minutes it takes to fully charge the electric vehicle’s battery.
 final var minutesToFull: Int? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Typically, you assign a value to this property only after handling the intent.
 

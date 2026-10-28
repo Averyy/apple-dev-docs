@@ -5,7 +5,7 @@
 
 Sync code changes between team members and development computers by setting up your Xcode project to use Git source control.
 
-#### Overview
+## Overview
 
 When you develop an app with a team, or by yourself using more than one Mac computer, use Xcode’s support for Git source control to share changes between team members and computers.
 
@@ -13,7 +13,7 @@ Xcode uses Git commands to manage your *source control repository* that tracks a
 
 For more information on source control settings, see [Configuring source control in Xcode](./configuring-source-control-in-xcode.md).
 
-##### Customize your author name and email
+### Customize your author name and email
 
 Before you set up a source control repository, enter your preferred name and email address that Xcode uses for all your projects.
 
@@ -23,7 +23,7 @@ To change your name and email address for source control, choose Xcode > Setting
 
 ![A screenshot showing the Git Settings with the Author name and Author email text fields showing.](https://developer.apple.com/tutorials/images/com.apple.Xcode/configuring-your-xcode-project-to-use-source-control-1@2x.png)
 
-##### Create a local repository for a new project
+### Create a local repository for a new project
 
 When you create a new Xcode project from a template, you can specify whether to create a local Git source code repository in the last sheet. Select “Create Git repository on my Mac” and then click Create.
 
@@ -31,7 +31,7 @@ When you create a new Xcode project from a template, you can specify whether to 
 
 Xcode creates the project folder, initializes a local Git source control repository, and commits all the files that it creates for your project. For more information, see [Creating an Xcode project for an app](./creating-an-xcode-project-for-an-app.md).
 
-##### Clone a project from a remote repository
+### Clone a project from a remote repository
 
 You can also create a local copy, or *clone*, of an existing remote Git repository that you can commit changes to using Xcode.
 
@@ -49,7 +49,7 @@ If you add one or more source control accounts, Xcode shows a list of the projec
 
 If the remote repository contains an Xcode project, Xcode scans the project and provides a list of branches available to clone. Select a branch to clone from the pop-up menu, and in the next dialog, provide a location for Xcode to save the local project. Xcode checks out the branch and opens the project.
 
-##### Connect to a remote repository to sync changes
+### Connect to a remote repository to sync changes
 
 You can also create a new remote repository for an existing local project or connect a local project to an existing remote repository. For example, do this if you create a local repository and later decide to use a remote repository, or if you download your project from a remote repository without cloning it and then want to create a new remote repository to store your changes.
 
@@ -58,7 +58,7 @@ In the Source Control navigator, click the Repositories tab. If necessary, expan
 - To create a new remote repository for an existing project, Control-click Remotes and choose New “[*project name*]” Remote from the pop-up menu. Enter the information about the remote repository in the dialog and click Create.
 - To connect a local project to an existing remote repository, Control-click Remotes and choose Add Existing Remote from the pop-up menu. Enter a name and URL for the remote repository and click Add.
 
-##### Retrieve changes from a remote repository
+### Retrieve changes from a remote repository
 
 Get changes from the remote repository by choosing Integrate > Pull. In the dialog that appears, select the branch and click Pull.
 

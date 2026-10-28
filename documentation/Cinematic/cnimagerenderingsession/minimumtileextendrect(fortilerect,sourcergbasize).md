@@ -23,11 +23,11 @@ class func minimumTileExtendRect(forTileRect tileRect: CGRect, sourceRGBASize: C
 + (CGRect) minimumTileExtendRectForTileRect:(CGRect) tileRect sourceRGBASize:(CGSize) sourceRGBASize;
 ```
 
-#### Return Value
+## Return Value
 
 A rect (in full-image pixel coordinates) covering the minimum required source region, clamped to the image bounds.
 
-#### Discussion
+## Discussion
 
 When applying a bokeh blur near a tile boundary, the renderer needs pixels from outside the destination tile. This method computes how far that border region extends. Pass the returned rect’s origin as tileExtendOffset and allocate sourceTileRGBA with the returned rect’s size.
 

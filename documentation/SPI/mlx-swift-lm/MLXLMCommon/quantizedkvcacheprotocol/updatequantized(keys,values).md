@@ -18,7 +18,7 @@ Update cache and return quantized tuples for maximum efficiency
 func updateQuantized(keys: MLXArray, values: MLXArray) -> ((MLXArray, MLXArray, MLXArray?), (MLXArray, MLXArray, MLXArray?))
 ```
 
-#### Return Value
+## Return Value
 
 Quantized tuples (keys, values) as ((weight, scales, biases), (weight, scales, biases))
 

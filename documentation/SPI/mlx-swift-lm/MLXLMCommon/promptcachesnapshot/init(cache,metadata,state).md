@@ -17,7 +17,7 @@ Pair a cache with the model state that belongs with it.
 init(cache: [KVCache], metadata: [String : String] = [:], state: LMOutput.State? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 Use this when the cache was built in process — [`loadPromptCacheSnapshot(url:)`](../loadpromptcachesnapshot%28url%29.md) returns a snapshot for caches read from disk.
 

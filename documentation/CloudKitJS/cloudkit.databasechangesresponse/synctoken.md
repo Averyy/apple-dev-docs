@@ -15,7 +15,7 @@ A point in the database’s change history.
 readonly attribute String syncToken;
 ```
 
-#### Discussion
+## Discussion
 
 If [`moreComing`](./morecoming.md) is `true` in the response, use the this property in the next request until [`moreComing`](./morecoming.md) is `false`.
 

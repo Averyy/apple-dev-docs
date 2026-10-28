@@ -25,7 +25,7 @@ let NSPersistentStoreConnectionPoolMaxSizeKey: String
 extern NSString * const NSPersistentStoreConnectionPoolMaxSizeKey;
 ```
 
-#### Discussion
+## Discussion
 
 Values that you specify for this key are of type [`NSNumber`](../Foundation/nsnumber.md). The connection pool size determines the number of requests a store can handle concurrently, and is a function of how many contexts attempt to access store data at any time. Generally, you don’t set this, and use the default value instead.
 

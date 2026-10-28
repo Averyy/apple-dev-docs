@@ -25,11 +25,11 @@ func lock(whenCondition condition: Int, before limit: Date) -> Bool
 - (BOOL) lockWhenCondition:(NSInteger) condition beforeDate:(NSDate *) limit;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the lock is acquired within the time limit, [`false`](../../Swift/false.md) otherwise.
 
-#### Discussion
+## Discussion
 
 The receiver’s condition must be equal to `condition` before the locking operation will succeed. This method blocks the thread’s execution until the lock can be acquired or `limit` is reached.
 

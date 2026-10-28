@@ -21,11 +21,11 @@ Modifies the format style to use the specified grouping.
 func grouping(_ group: IntegerFormatStyle<Value>.Configuration.Grouping) -> IntegerFormatStyle<Value>
 ```
 
-#### Return Value
+## Return Value
 
 An integer format style modified to use the specified grouping.
 
-#### Discussion
+## Discussion
 
 The following example creates a default [`IntegerFormatStyle`](../integerformatstyle.md) for the `en_US` locale, and a second style that never uses grouping. It then applies each style to an array of integers. The formatting that the modified style applies eliminates the three-digit grouping usually performed for the `en_US` locale.
 

@@ -15,7 +15,7 @@ An error that indicates the system can’t find the message identifier.
 object MessageNotFoundError
 ```
 
-#### Overview
+## Overview
 
 The [`Delete Message`](./delete-message.md) endpoint returns this error if the [`messageIdentifier`](./messageidentifier.md) doesn’t exist.
 

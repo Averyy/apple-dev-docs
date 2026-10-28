@@ -18,7 +18,7 @@ var FFERR_DEVICEPAUSED: Int { get }
 #define FFERR_DEVICEPAUSED
 ```
 
-#### Discussion
+## Discussion
 
 When the device is paused via a call to FFDeviceSendForceFeedbackCommand(), other operations such as modifying existing effect parameters and creating new effects are not allowed.
 

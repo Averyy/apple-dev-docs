@@ -19,7 +19,7 @@ case selectOne
 NSSegmentSwitchTrackingSelectOne
 ```
 
-#### Discussion
+## Discussion
 
 This mode functions as a radio button and is illustrated by the view selection control in Finder, which allows you to toggle between icon view, list view, column view, and Cover Flow.
 

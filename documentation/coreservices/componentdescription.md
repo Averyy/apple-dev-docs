@@ -16,7 +16,7 @@ typedef struct ComponentDescription {
 } ComponentDescription;
 ```
 
-#### Overview
+## Overview
 
 The ComponentDescription structure identifies the characteristics of a component, including the type of services offered by the component and its manufacturer.
 

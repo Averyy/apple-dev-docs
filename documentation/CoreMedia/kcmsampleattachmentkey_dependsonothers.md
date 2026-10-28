@@ -25,7 +25,7 @@ let kCMSampleAttachmentKey_DependsOnOthers: CFString
 extern CFStringRef const kCMSampleAttachmentKey_DependsOnOthers;
 ```
 
-#### Discussion
+## Discussion
 
 This key has no default value. If this key is not present, dependency information for the sample is unknown. A value of [`kCFBooleanFalse`](../CoreFoundation/kcfbooleanfalse.md) indicates that the sample does not depend on other samples (for example, an I frame).  A value of [`kCFBooleanTrue`](../CoreFoundation/kcfbooleantrue.md) indicates that the sample does depend on other samples (for example, a P or B frame).
 

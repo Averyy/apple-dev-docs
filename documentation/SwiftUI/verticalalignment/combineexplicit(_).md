@@ -21,7 +21,7 @@ Merges a sequence of explicit alignment values produced by this instance.
 func combineExplicit<S>(_ values: S) -> CGFloat? where S : Sequence, S.Element == CGFloat?
 ```
 
-#### Discussion
+## Discussion
 
 For most alignment types, this method returns the mean of all non-`nil` values. However, some types use other rules. For example, [`firstTextBaseline`](./firsttextbaseline.md) returns the minimum value, while [`lastTextBaseline`](./lasttextbaseline.md) returns the maximum value.
 

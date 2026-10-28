@@ -19,7 +19,7 @@ var isGrammarCheckingEnabled: Bool { get set }
 @property (getter=isGrammarCheckingEnabled) BOOL grammarCheckingEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 If [`true`](../../Swift/true.md), grammar checking is enabled; if [`false`](../../Swift/false.md), it is disabled.
 

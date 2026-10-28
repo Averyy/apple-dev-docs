@@ -25,7 +25,7 @@ func date(era eraValue: Int, yearForWeekOfYear yearValue: Int, weekOfYear weekVa
 - (NSDate *) dateWithEra:(NSInteger) eraValue yearForWeekOfYear:(NSInteger) yearValue weekOfYear:(NSInteger) weekValue weekday:(NSInteger) weekdayValue hour:(NSInteger) hourValue minute:(NSInteger) minuteValue second:(NSInteger) secondValue nanosecond:(NSInteger) nanosecondValue;
 ```
 
-#### Return Value
+## Return Value
 
 A new `NSDate` instance created with the given components based on a week-of-year calculation, or `nil` if the components do not correspond to a valid date.
 

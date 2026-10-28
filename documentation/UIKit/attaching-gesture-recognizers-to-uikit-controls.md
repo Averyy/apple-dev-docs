@@ -5,7 +5,7 @@
 
 Learn how gesture recognizers interact with UIKit controls such as buttons, switches, and sliders.
 
-#### Overview
+## Overview
 
 Gesture recognizers attached to your views don’t impact the ability of UIKit controls to handle events. Events occurring within the bounds of a control are handled by the control first, giving the control a chance to call its action method. Specifically, UIKit controls call their action method in the following situations:
 

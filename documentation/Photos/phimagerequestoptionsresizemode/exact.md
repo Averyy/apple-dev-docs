@@ -24,7 +24,7 @@ case exact
 PHImageRequestOptionsResizeModeExact
 ```
 
-#### Discussion
+## Discussion
 
 Resizing to exactly match a target size is less efficient than using the fast resizing option. The system doesn’t resize low-quality or degraded images that [`PHImageRequestOptionsDeliveryMode.opportunistic`](../phimagerequestoptionsdeliverymode/opportunistic.md) or [`PHImageRequestOptionsDeliveryMode.highQualityFormat`](../phimagerequestoptionsdeliverymode/highqualityformat.md) return.
 

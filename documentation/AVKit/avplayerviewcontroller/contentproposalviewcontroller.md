@@ -23,7 +23,7 @@ var contentProposalViewController: AVContentProposalViewController! { get set }
 
 - [Presenting content proposals in tvOS](../presenting-content-proposals-in-tvos.md)
 
-#### Discussion
+## Discussion
 
 Set this property value to an instance of your custom content proposal view controller subclass to provide the presentation for your content proposal.
 

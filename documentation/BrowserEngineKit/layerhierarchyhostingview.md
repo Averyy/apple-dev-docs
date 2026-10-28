@@ -26,7 +26,7 @@ class LayerHierarchyHostingView
 - [Hosting browser view layers in the rendering extension](./hosting-browser-view-layers-in-the-rendering-extension.md)
 - [Propagating view visibility information to extension processes](./propagating-view-visibility-information-to-browser-extensions.md)
 
-#### Overview
+## Overview
 
 To connect a view hierarchy in another process, create an instance of this class and set its [`handle`](./layerhierarchyhostingview/handle.md) to a [`LayerHierarchyHandle`](./layerhierarchyhandle.md) from the other process.
 

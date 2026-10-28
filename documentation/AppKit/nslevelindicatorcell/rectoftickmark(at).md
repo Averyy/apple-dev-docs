@@ -19,7 +19,7 @@ func rectOfTickMark(at index: Int) -> NSRect
 - (NSRect) rectOfTickMarkAtIndex:(NSInteger) index;
 ```
 
-#### Discussion
+## Discussion
 
 If no tick mark is associated with `index`, the method raises a `NSRangeException`.
 

@@ -16,7 +16,7 @@ The proxy for the root object of the receiver’s peer in another application or
 @property (retain, readonly) NSDistantObject * rootProxy;
 ```
 
-#### Discussion
+## Discussion
 
 The proxy returned can change between invocations if the peer `NSConnection` object’s root object is changed.
 

@@ -15,7 +15,7 @@ Create and automate tests in Xcode for your app’s subscription and Apple In-Ap
 - visionOS 1.0+
 - watchOS 7.4+
 
-#### Overview
+## Overview
 
 The StoreKitTest framework makes StoreKit testing in Xcode available for automation. Use this framework to write unit tests and continuous integration tests. Use [`SKTestSession`](./sktestsession.md) and [`SKAdTestSession`](./skadtestsession.md) to control the test environment.
 

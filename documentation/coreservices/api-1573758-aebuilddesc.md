@@ -15,17 +15,17 @@ Provides a facility for compiling AEBuild descriptor strings into Apple event de
 OSStatus AEBuildDesc(AEDesc *dst, AEBuildError *error, const char *src, ...);
 ```
 
-#### Return Value
+## Return Value
 
 A numeric result code indicating the success of the call. A value of `AEBuildSyntaxNoErr` (zero) means the call succeeded. You can use the `error` parameter to discover information about other errors. See also [Result Codes](../applicationservices/apple_event_manager.md#1656145).
 
-#### Discussion
+## Discussion
 
 This function and related “AEBuild” routines provide a very simple translation service for converting specially formatted strings into complex Apple event descriptors. Normally, creating complex Apple event descriptors requires a large number of calls to Apple event Manager routines to build up the descriptor piece by piece. The `AEBuildDesc` function and related routines allow you to consolidate all of the calls required to construct a complex Apple event descriptor into a single system call that creates the desired structure as directed by a format string that you provide.
 
 For additional information on using the AEBuild routines, see the descriptions for [`AEBuildAppleEvent`](./api-1573757-aebuildappleevent.md) and [`AEBuildParameters`](./api-1573755-aebuildparameters.md).
 
-##### Version-Notes
+### Version-Notes
 
 Prior to OS X version 10.3, `AEBuildDesc` would fail if you supplied a data parameter with size greater than 32767 bytes.
 

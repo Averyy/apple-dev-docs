@@ -19,8 +19,8 @@ Converts a Swift actor into a model actor by generating boilerplate code that fu
 ## Declaration
 
 ```swift
-@attached
-(member, names: named(modelExecutor), named(modelContainer), named(init)) @attached(extension, conformances: ModelActor) macro ModelActor()
+@attached(member, names: named(modelExecutor), named(modelContainer), named(init))
+@attached(extension, conformances: ModelActor) macro ModelActor()
 ```
 
 ## See Also

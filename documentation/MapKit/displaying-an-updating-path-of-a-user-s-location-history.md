@@ -12,13 +12,13 @@ Continually update a MapKit overlay displaying the path a user travels.
 - Mac Catalyst 16.0+
 - Xcode 16.0+
 
-#### Overview
+## Overview
 
 Travel History is a sample app that allows a user to track their location history, and displays a live-updating path of that history on a map. The app combines location updates from Core Location with a custom MapKit overlay for the location history. MapKit draws the user’s path using a custom MapKit overlay renderer.
 
 For this sample app to show a path, it needs to receive a stream of location updates. Install the app on a device, and take a walk with it recording locations. Alternately, use one of the routes in the iOS simulator, such as Freeway Drive or City Bicycle Ride. To set a route in the iOS simulator, see [Set a location or route](https://help.apple.com/simulator/mac/current/#/devc6eac95d6).
 
-##### Configure a location manager to receive location updates
+### Configure a location manager to receive location updates
 
 Before recording the user’s path, the app asks the user for permission to access location data while the app is running. After the user grants location authorization, a `CLLocationManager` receives a stream of location updates as the user travels. The app also receives location updates while in the background by setting the [`allowsBackgroundLocationUpdates`](../CoreLocation/cllocationmanager/allowsbackgroundlocationupdates.md) property of [`CLLocationManager`](../CoreLocation/cllocationmanager.md) to `true`. This combination of when-in-use authorization and background updates allows the app to receive location updates while in the background, and the system displays a location service indicator when the app isn’t in the foreground.
 
@@ -58,7 +58,7 @@ func locationManager(_ manager: CLLocationManager, didUpdateLocations locations:
 }
 ```
 
-##### Define a custom map overlay data object
+### Define a custom map overlay data object
 
 MapKit treats overlay data as static when using the system-provided overlay classes, such as [`MKPolyline`](./mkpolyline.md). For example, apps that only need to show a path with a static set of coordinates, such as the path a user took in the distant past, can use `MKPolyline`. Because this app continually updates with new data, it implements its own data class, called `BreadcrumbPath`, conforming to the [`MKOverlay`](./mkoverlay.md) protocol, rather than using `MKPolyline`. `BreadcrumbPath` maintains an array of location *crumbs* comprising the user’s location history.
 
@@ -127,7 +127,7 @@ var pathBounds: MKMapRect {
 }
 ```
 
-##### Implement a custom overlay renderer to display the path
+### Implement a custom overlay renderer to display the path
 
 To implement a custom overlay renderer object that complements the custom overlay data object, the app subclasses [`MKOverlayRenderer`](./mkoverlayrenderer.md). To determine whether an overlay has content to draw, MapKit queries the [`canDraw(_:zoomScale:)`](./mkoverlayrenderer/candraw%28_,zoomscale%29.md) method of an overlay renderer. The `BreadcrumbPathRenderer` class in this sample overrides this method to check whether the provided [`MKMapRect`](./mkmaprect.md) intersects the `pathBounds` property of the `BreadcrumbPath` object.
 
@@ -164,7 +164,7 @@ override func draw(_ mapRect: MKMapRect, zoomScale: MKZoomScale, in context: CGC
 }
 ```
 
-##### Request that the map update the overlay
+### Request that the map update the overlay
 
 When the sample app receives a location update, it adds the location to the custom overlay by calling a method that `BreadcrumbPath` defines. This method returns information indicating the result of adding the location to the overlay. When successful, the app calls [`setNeedsDisplay(_:)`](./mkoverlayrenderer/setneedsdisplay%28_%29.md) on the custom overlay renderer to trigger a redraw of the overlay within the region of the map where the user traveled.
 

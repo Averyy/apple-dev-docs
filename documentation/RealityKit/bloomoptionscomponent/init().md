@@ -20,7 +20,7 @@ Creates a Bloom Options Component with default settings.
 init()
 ```
 
-#### Discussion
+## Discussion
 
 The default configuration provides a moderate bloom effect with:
 

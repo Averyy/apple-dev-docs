@@ -22,7 +22,7 @@ Returns the entity uniformly scaled by the specified scalar value.
 func uniformlyScaled(by scale: Self.Scalar) -> Self
 ```
 
-#### Discussion
+## Discussion
 
 - Returns The scaled entity.
 

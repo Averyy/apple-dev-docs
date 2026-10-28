@@ -21,11 +21,11 @@ func CGCursorIsDrawnInFramebuffer() -> boolean_t
 extern boolean_t CGCursorIsDrawnInFramebuffer();
 ```
 
-#### Return Value
+## Return Value
 
 If `true`, the cursor is drawn in framebuffer memory; otherwise, `false`.
 
-#### Discussion
+## Discussion
 
 This function returns a Boolean value that indicates whether or not the cursor is drawn in the framebuffer. (The cursor could exist in an overlay plane or a similar mechanism that puts pixels on-screen without altering framebuffer content.) If the cursor is drawn in the framebuffer, it is read back along with window data.
 

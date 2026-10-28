@@ -18,7 +18,7 @@ Creates a new modified shape by applying the provided insets to this shape.
 - (UIResolvedShape *) shapeByApplyingInsets:(UIEdgeInsets) insets;
 ```
 
-#### Discussion
+## Discussion
 
 You can use negative values to add inner padding to a shape.
 

@@ -15,7 +15,7 @@ Tells the delegate that part of the incrementally loaded image data is available
 - (void) image:(NSImage *) image didLoadPartOfRepresentation:(NSImageRep *) rep withValidRows:(NSInteger) rows;
 ```
 
-#### Discussion
+## Discussion
 
 This method is optional; incremental loading will continue if the delegate does not implement it.
 

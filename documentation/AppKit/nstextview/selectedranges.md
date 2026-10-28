@@ -19,7 +19,7 @@ var selectedRanges: [NSValue] { get set }
 @property (copy) NSArray<NSValue *> * selectedRanges;
 ```
 
-#### Discussion
+## Discussion
 
 The objects in the array are sorted by location in ascending order, non-overlapping, non-contiguous, and (except for the case of a single range) have non-zero-length.
 

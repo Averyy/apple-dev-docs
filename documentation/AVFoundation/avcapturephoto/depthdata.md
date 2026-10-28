@@ -26,7 +26,7 @@ var depthData: AVDepthData? { get }
 
 - [Capturing photos with depth](../capturing-photos-with-depth.md)
 
-#### Discussion
+## Discussion
 
 To request capture of depth data alongside a photo (on supported devices), set the [`isDepthDataDeliveryEnabled`](../avcapturephotosettings/isdepthdatadeliveryenabled.md) property of your photo settings object to [`true`](../../Swift/true.md) when requesting photo capture. If you did not request depth data delivery, this property’s value is `nil`.
 

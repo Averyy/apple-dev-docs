@@ -20,7 +20,7 @@ A pointer to the storage for the layer map’s horizontal rasterization rates.
 @property (nonatomic, readonly) float * horizontalSampleStorage;
 ```
 
-#### Discussion
+## Discussion
 
 Points to the first element in the array of horizontal rasterization rates. The number of elements is equal to the [`width`](../mtlsize/width.md) value of [`sampleCount`](./samplecount.md).
 

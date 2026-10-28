@@ -24,7 +24,7 @@ var lineHeightMultiple: CGFloat { get }
 @property (nonatomic, readonly) CGFloat lineHeightMultiple;
 ```
 
-#### Discussion
+## Discussion
 
 The framework multiplies the natural line height of the receiver by this factor (if positive), and constrains the resulting value by the minimum and maximum line height. The default value of this property is `0.0`.
 

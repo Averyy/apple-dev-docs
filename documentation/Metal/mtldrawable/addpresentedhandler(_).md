@@ -25,7 +25,7 @@ func addPresentedHandler(_ block: @escaping MTLDrawablePresentedHandler)
 - (void) addPresentedHandler:(MTLDrawablePresentedHandler) block;
 ```
 
-#### Discussion
+## Discussion
 
 You can register multiple handlers for a single drawable object.
 

@@ -23,7 +23,7 @@ func multiply<Matrix, DestFormat>(by matrix: Matrix, divisor: Int, preBias: [Int
 
 Available when `Format` conforms to `MultiplePlanePixelFormat` and `Format.ComponentType` is `UInt8`.
 
-#### Discussion
+## Discussion
 
 This function applies the following operation to each pixel:
 

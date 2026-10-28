@@ -25,11 +25,11 @@ func CFPlugInRegisterFactoryFunctionByName(_ factoryUUID: CFUUID!, _ plugIn: CFP
 extern Boolean CFPlugInRegisterFactoryFunctionByName(CFUUIDRef factoryUUID, CFPlugInRef plugIn, CFStringRef functionName);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the factory function was successfully registered, otherwise `false`.
 
-#### Discussion
+## Discussion
 
 This function is used by a plug-in or host when performing dynamic registration.
 

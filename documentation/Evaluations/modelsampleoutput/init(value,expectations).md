@@ -21,7 +21,7 @@ Creates a model sample output with an optional expected value and expectations.
 init(value: Value? = nil, expectations: Expectation? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 ```swift
 let output = ModelSampleOutput<String, TrajectoryExpectation>(value: "Paris", expectations: nil)

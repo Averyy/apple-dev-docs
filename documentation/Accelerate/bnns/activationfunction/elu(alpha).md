@@ -23,7 +23,7 @@ An activation function that evaluates the exponential linear units (ELU) on its 
 case elu(alpha: Float)
 ```
 
-#### Discussion
+## Discussion
 
 This constant defines an activation function that returns values using the following operation:
 

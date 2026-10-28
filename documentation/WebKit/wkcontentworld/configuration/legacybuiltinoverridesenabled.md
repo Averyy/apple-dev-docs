@@ -21,7 +21,7 @@ var legacyBuiltinOverridesEnabled: Bool { get set }
 @property (nonatomic, getter=isLegacyBuiltinOverridesEnabled) BOOL legacyBuiltinOverridesEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 A boolean value indicating whether the behavior that elements with a name attribute overrides builtin methods on document object should be enabled or not.
 

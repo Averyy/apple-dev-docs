@@ -22,7 +22,7 @@ func textureTarget() -> GLenum
 - (GLenum) textureTarget;
 ```
 
-#### Return Value
+## Return Value
 
 The texture target, either `GL_TEXTURE_2D` or `GL_TEXTURE_RECTANGLE_EXT`.
 

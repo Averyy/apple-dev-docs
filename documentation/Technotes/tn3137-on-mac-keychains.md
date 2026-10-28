@@ -5,7 +5,7 @@
 
 Learn how the keychain on macOS differs from other Apple platforms.
 
-#### Overview
+## Overview
 
 All Apple platforms support the keychain.  On iOS, tvOS, and watchOS the keychain story is very simple: There’s a single SecItem API with consistent behavior.  This is not the case on macOS.  The keychain on macOS has a long history, dating back to the previous millennium.  This history, combined with a requirement to maintain compatibility with existing code, complicates the keychain’s design.  If you don’t understand that design, you may find some of its behavior surprising.
 
@@ -30,7 +30,7 @@ The Keychain and SecKeychain APIs always target the file-based keychain.  The Se
 
 The file-based keychain is on the road to deprecation.  It’s not officially deprecated, but some of the APIs surrounding it are.  For example, `SecKeychainCreate` was deprecated in the macOS 12 SDK.  Moreover, new features, like iCloud Keychain, require the data protection keychain.
 
-#### Choosing the right keychain
+## Choosing the right keychain
 
 Choosing a keychain API is easy: Use the SecItem API.  If you have existing code that uses the older Keychain or SecKeychain APIs, consider updating it to use the SecItem API as part of your ongoing maintenance work.
 
@@ -52,11 +52,11 @@ In other situations your only option is the file-based keychain:
 - Programs that read existing items in a file-based keychain must target the file-based keychain.  If you find yourself in this situation, consider migrating items to the data protection keychain as you update your app.
 - Programs that run outside of a user context, like a `launchd` daemon, must target the file-based keychain.  The data protection keychain is only available to programs running in a user context, like an app or an app extension.
 
-#### API differences
+## API differences
 
 The SecItem API is well aligned with the data protection keychain.  However, when you use it to target the file-based keychain it operates through a shim.  That shim has limitations.  Some of those limitations are inherent to the keychain implementation.  For example, the access control model of the file-based keychain is completely different than that of the data protection keychain, and the shim can’t make up for that.  However, some limitations are just bugs.  To avoid such problems, target the data protection keychain.  This is particularly important when you’re porting keychain code from iOS.
 
-#### Implementation differences
+## Implementation differences
 
 The data protection keychain is only available in a user login context.  You can’t use it, for example, from a `launchd` daemon.
 
@@ -92,7 +92,7 @@ Some keychain features require the data protection keychain, including:
 - Protecting an item with biometrics (Touch ID and Face ID).  See [Restricting keychain item accessibility](../Security/restricting-keychain-item-accessibility.md).
 - Protecting a key with the Secure Enclave.  See [Protecting keys with the Secure Enclave](../Security/protecting-keys-with-the-secure-enclave.md).
 
-#### User interface
+## User interface
 
 The Keychain Access application supports both file-based keychains and the data protection keychain.  The keychain list shows all the file-based keychains in the search list for the current user—typically this is just *login* and *System*—and the data protection keychain.  It displays the latter as either *iCloud Keychain* or *Local Items*, depending on whether the user has enabled iCloud Keychain.  To create, add, and remove a file-based keychain, choose the corresponding command on the File menu.
 
@@ -102,7 +102,7 @@ Keychain Access sometimes fails to reflect changes made to the keychain by other
 
 The keychain support in the `security` command-line tool is primarily focused on the file-based keychain.
 
-#### Backing up a file-based keychain
+## Backing up a file-based keychain
 
 Historically each file-based keychain was a standalone file.  You could, for example, copy a keychain file from one Mac to another and still use it, as long as you knew the keychain password.
 
@@ -131,7 +131,7 @@ So this keychain’s protected entropy file is `/var/db/SystemKeys/A4A00624947FF
 
 macOS logs information about protected entropy files to the system log in the `dp_login` category (that’s the *category*, not the *subsystem*).  To see these log entries, monitor the system log for entries with that category.  To learn more about the system log, see [Logging](../os/logging.md).
 
-#### Revision History
+## Revision History
 
 - **2026-09-24** Added the [Backing up a file-based keychain](./tn3137-on-mac-keychains.md#Backing-up-a-file-based-keychain) section.
 - **2022-11-01** Republished as TN3137.  Made significant editorial changes.

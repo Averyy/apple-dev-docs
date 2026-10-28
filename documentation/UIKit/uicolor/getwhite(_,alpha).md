@@ -24,11 +24,11 @@ func getWhite(_ white: UnsafeMutablePointer<CGFloat>?, alpha: UnsafeMutablePoint
 - (BOOL) getWhite:(CGFloat *) white alpha:(CGFloat *) alpha;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the color could be converted, [`false`](../../Swift/false.md) otherwise.
 
-#### Discussion
+## Discussion
 
 If the color is in a compatible color space, it converts into grayscale format and its returned to your application. If the color isn’t in a compatible color space, the parameters don’t change.
 

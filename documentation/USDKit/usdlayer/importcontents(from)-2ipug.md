@@ -20,7 +20,7 @@ Replaces the layer’s contents with the layer file at the given path.
 func importContents(from path: FilePath) throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: An error if the file cannot be read or parsed.
 

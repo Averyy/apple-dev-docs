@@ -19,7 +19,7 @@ optional func scrubber(_ scrubber: NSScrubber, layout: NSScrubberFlowLayout, siz
 - (NSSize) scrubber:(NSScrubber *) scrubber layout:(NSScrubberFlowLayout *) layout sizeForItemAtIndex:(NSInteger) itemIndex;
 ```
 
-#### Return Value
+## Return Value
 
 The width and height of the item at the specified index in the scrubber.
 

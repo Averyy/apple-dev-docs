@@ -25,7 +25,7 @@ static let documentIdentifierKey: URLResourceKey
 extern NSURLResourceKey const NSURLDocumentIdentifierKey;
 ```
 
-#### Discussion
+## Discussion
 
 The document identifier is a value assigned by the kernel to a file or directory. This value is used to identify the document regardless of where it is moved on a volume. The identifier persists across system restarts. It is not transferred when the file is copied, but it survives “safe save” operations. For example, it remains on the path to which it was assigned, even after calling the [`replaceItem(at:withItemAt:backupItemName:options:resultingItemURL:)`](../filemanager/replaceitem%28at,withitemat,backupitemname,options,resultingitemurl%29.md) method. Document identifiers are only unique within a single volume. This property is not supported by all volumes.
 

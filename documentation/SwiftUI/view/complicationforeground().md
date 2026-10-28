@@ -18,11 +18,11 @@ Promotes this view to the foreground in a complication.
 @preconcurrency func complicationForeground() -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view that is in the complication foreground.
 
-#### Discussion
+## Discussion
 
 A view in the foreground will be tinted alongside other foreground views. The color for both the foreground and background layers is determined by the watch face.
 

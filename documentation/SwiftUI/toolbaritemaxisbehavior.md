@@ -21,7 +21,7 @@ Describes the bar axis behavior of a toolbar item.
 struct ToolbarItemAxisBehavior
 ```
 
-#### Overview
+## Overview
 
 Use this with the [`axisBehavior(_:)`](./toolbarcontent/axisbehavior%28_%29.md) modifier to control which bar axes a toolbar item can appear in.
 

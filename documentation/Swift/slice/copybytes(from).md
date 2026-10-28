@@ -23,7 +23,7 @@ func copyBytes<C>(from source: C) where C : Collection, C.Element == UInt8
 
 Available when `Base` is `UnsafeMutableRawBufferPointer`.
 
-#### Discussion
+## Discussion
 
 If the first `source.count` bytes of memory referenced by this buffer slice are bound to a type `T`, then `T` must be a trivial type, the underlying pointer must be properly aligned for accessing `T`, and `source.count` must be a multiple of `MemoryLayout<T>.stride`.
 

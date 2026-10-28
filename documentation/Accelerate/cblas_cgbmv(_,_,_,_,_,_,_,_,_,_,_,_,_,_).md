@@ -25,7 +25,7 @@ func cblas_cgbmv(_ ORDER: CBLAS_ORDER, _ TRANSA: CBLAS_TRANSPOSE, _ M: __LAPACK_
 void cblas_cgbmv(const enum CBLAS_ORDER ORDER, const enum CBLAS_TRANSPOSE TRANSA, const __LAPACK_int M, const __LAPACK_int N, const __LAPACK_int KL, const __LAPACK_int KU, const __LAPACK_float_complex *ALPHA, const __LAPACK_float_complex *A, const __LAPACK_int LDA, const __LAPACK_float_complex *X, const __LAPACK_int INCX, const __LAPACK_float_complex *BETA, __LAPACK_float_complex *Y, const __LAPACK_int INCY);
 ```
 
-#### Discussion
+## Discussion
 
 Computes `alpha*A*x + beta*y`, `alpha*A'*x + beta*y`, or `alpha*conjg(A')*x + beta*y` depending on the value of `TransA`.
 

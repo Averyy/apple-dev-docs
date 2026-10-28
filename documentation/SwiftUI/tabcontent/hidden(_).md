@@ -20,7 +20,7 @@ nonisolated
 func hidden(_ hidden: Bool = true) -> some TabContent<Self.TabValue>
 ```
 
-#### Discussion
+## Discussion
 
 Unlike removing or adding tabs with `if` statements, this modifier preserves the associated state of the tab’s content view when the tab is hidden.
 

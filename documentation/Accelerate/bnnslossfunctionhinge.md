@@ -25,7 +25,7 @@ var BNNSLossFunctionHinge: BNNSLossFunction { get }
 BNNSLossFunctionHinge
 ```
 
-#### Discussion
+## Discussion
 
 [`BNNSLossFunctionHinge`](./bnnslossfunctionhinge.md) performs Hinge loss computation between labels (ground truth output tensor, 0 or 1) and logits (unbounded 0-centered binary predictions).
 

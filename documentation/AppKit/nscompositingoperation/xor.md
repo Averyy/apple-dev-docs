@@ -19,7 +19,7 @@ case xor
 NSCompositingOperationXOR
 ```
 
-#### Discussion
+## Discussion
 
 The source image is applied using the formula `R = S*(1 - Da) + D*(1 - Sa)`.
 

@@ -23,7 +23,7 @@ func transform(_ transform: vImage_PerpsectiveTransform, interpolation: vImage_P
 
 Available when `Format` is `vImage.Planar16U`.
 
-#### Discussion
+## Discussion
 
 Use this function to apply a projective-transformation structure to a pixel buffer. Projective transformations warp an image in 3D and allow you to, for example, map a 2D asset to an image of a billboard or television screen.
 

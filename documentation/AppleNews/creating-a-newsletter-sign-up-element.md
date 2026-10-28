@@ -5,7 +5,7 @@
 
 Add a newsletter sign-up element in your article.
 
-#### Overview
+## Overview
 
 You can provide your readers the option to sign up for your publication’s newsletter from an article. By using styles and layouts thoughtfully, you can visually separate your newsletter sign-up element from your article content.
 
@@ -16,7 +16,7 @@ You can provide your readers the option to sign up for your publication’s news
 
 ![A screenshot of an Apple News article with a newsletter sign-up element.](https://developer.apple.com/tutorials/images/com.apple.applenews/media-4285520@2x.png)
 
-##### Create Component Layout Objects for Newsletter Sign-Up
+### Create Component Layout Objects for Newsletter Sign-Up
 
 To make adjustments to the positioning of the newsletter sign-up element, you must first create new `ComponentLayout` objects:
 
@@ -25,7 +25,7 @@ To make adjustments to the positioning of the newsletter sign-up element, you mu
 
 Your code should look like the example code [Layout: Result](./creating-a-newsletter-sign-up-element.md#Layout-Result).
 
-###### Layout: Copy This Code
+#### Layout: Copy This Code
 
 ```json
 ,
@@ -52,7 +52,7 @@ Your code should look like the example code [Layout: Result](./creating-a-newsle
      }
 ```
 
-###### Layout: Result
+#### Layout: Result
 
 Ellipses (…) indicate lines of code are omitted from this example.
 
@@ -87,7 +87,7 @@ Ellipses (…) indicate lines of code are omitted from this example.
 }
 ```
 
-##### Define Component Styles for the Newsletter Sign-Up Element
+### Define Component Styles for the Newsletter Sign-Up Element
 
 Create a new `ComponentStyles` object so that you can apply styles to the newsletter sign-up element.
 
@@ -96,7 +96,7 @@ Create a new `ComponentStyles` object so that you can apply styles to the newsle
 
 Your code should look like the example code [Component Styles: Result](./creating-a-newsletter-sign-up-element.md#Component-Styles-Result).
 
-###### Component Styles: Copy This Code
+#### Component Styles: Copy This Code
 
 ```json
 ,
@@ -131,7 +131,7 @@ Your code should look like the example code [Component Styles: Result](./creatin
     }
 ```
 
-###### Component Styles: Result
+#### Component Styles: Result
 
 Ellipses (…) indicate lines of code that are omitted from this example.
 
@@ -174,7 +174,7 @@ Ellipses (…) indicate lines of code that are omitted from this example.
 },
 ```
 
-##### Define Component Text Styles for the Newsletter Sign-Up Element
+### Define Component Text Styles for the Newsletter Sign-Up Element
 
 Create new `ComponentTextStyle` objects so that you can apply text styles to the heading, body, and button for the newsletter sign-up element.
 
@@ -183,7 +183,7 @@ Create new `ComponentTextStyle` objects so that you can apply text styles to the
 
 Your code should look like the example code [Component Text Styles: Result](./creating-a-newsletter-sign-up-element.md#Component-Text-Styles-Result).
 
-###### Component Text Styles: Copy This Code
+#### Component Text Styles: Copy This Code
 
 ```json
 ,
@@ -208,7 +208,7 @@ Your code should look like the example code [Component Text Styles: Result](./cr
    }
 ```
 
-###### Component Text Styles: Result
+#### Component Text Styles: Result
 
 Ellipses (…) indicate lines of code that are omitted from this example.
 
@@ -240,7 +240,7 @@ Ellipses (…) indicate lines of code that are omitted from this example.
 }
 ```
 
-##### Add a Newsletter Sign-Up Element in your Article
+### Add a Newsletter Sign-Up Element in your Article
 
 Finally, add the newsletter sign-up element to your article.
 
@@ -249,7 +249,7 @@ Finally, add the newsletter sign-up element to your article.
 
 Your code should look like the example code in [Newsletter: Result](./creating-a-newsletter-sign-up-element.md#Newsletter-Result).
 
-###### Newsletter: Copy This Code
+#### Newsletter: Copy This Code
 
 ```json
  ,
@@ -294,7 +294,7 @@ Your code should look like the example code in [Newsletter: Result](./creating-a
         }
 ```
 
-###### Newsletter: Result
+#### Newsletter: Result
 
 Ellipses (…) indicate lines of code that are omitted from this example.
 
@@ -349,11 +349,11 @@ Ellipses (…) indicate lines of code that are omitted from this example.
 }
 ```
 
-##### Previous
+### Previous
 
 [Adding a Fixed Image Fill](./adding-a-fixed-image-fill.md)
 
-##### Next
+### Next
 
 [Viewing the Finished Article for Advanced Design Tutorial 3](./viewing-the-finished-article-for-advanced-design-tutorial-3.md)
 

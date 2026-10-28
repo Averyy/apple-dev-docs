@@ -19,7 +19,7 @@ The size of the view controller’s view while displayed in a popover.
 @property (nonatomic, readwrite) CGSize contentSizeForViewInPopover;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the desired size for the view controller when it is displayed in a popover. By default, the width is set to 320 points and the height is set to 1100 points. You can change these values as needed.
 

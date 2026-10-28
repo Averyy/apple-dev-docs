@@ -19,8 +19,8 @@ Specifies the key-paths that SwiftData uses to create one or more indicies for t
 ## Declaration
 
 ```swift
-@freestanding
-(declaration) macro Index<T>(_ indices: Schema.Index<T>.Types<T>...) where T : PersistentModel
+@freestanding(declaration)
+macro Index<T>(_ indices: Schema.Index<T>.Types<T>...) where T : PersistentModel
 ```
 
 ## See Also

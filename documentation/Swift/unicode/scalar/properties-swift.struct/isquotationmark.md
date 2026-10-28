@@ -21,7 +21,7 @@ A Boolean value indicating whether the scalar is one that is used in writing to 
 var isQuotationMark: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property corresponds to the “Quotation_Mark” property in the [Unicode Standard](http://www.unicode.org/versions/latest/).
 

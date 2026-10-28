@@ -23,7 +23,7 @@ var cameraLensSmudgeDetectionStatus: AVCaptureCameraLensSmudgeDetectionStatus { 
 @property (nonatomic, readonly) AVCaptureCameraLensSmudgeDetectionStatus cameraLensSmudgeDetectionStatus;
 ```
 
-#### Discussion
+## Discussion
 
 During initial detection execution, [`cameraLensSmudgeDetectionStatus`](./cameralenssmudgedetectionstatus.md) returns `AVCaptureCameraLensSmudgeDetectionStatusUnknown` until the detection result settles. Once a detection result is produced, [`cameraLensSmudgeDetectionStatus`](./cameralenssmudgedetectionstatus.md) returns the most recent detection result. This property can be key-value observed.
 

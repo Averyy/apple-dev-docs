@@ -20,12 +20,12 @@ Whether to automatically play the default animation when the entity is added to 
 var automaticallyPlaysDefaultAnimation: Bool { get }
 ```
 
-#### Return Value
+## Return Value
 
 - `true` if automatically play default animation is enabled
 - `false` if automatically play default animation is disabled
 
-#### Discussion
+## Discussion
 
 When set to `true`, the animation system automatically plays the default animation when the entity is added to a scene and enabled. The animation that auto-plays is determined by [`defaultKey`](./defaultkey.md). If `defaultKey` is set, the system plays the animation stored under that key. If `defaultKey` is not set, the system plays the first animation in the library. If the library contains no animations, auto-play has no effect.
 
@@ -35,7 +35,7 @@ When set to `false`, animations require manual playback using [`playAnimation(_:
 
 Disabling the entity or removing the `AnimationLibraryComponent` will stop any auto-playing animation.
 
-#### Example
+## Example
 
 ```swift
 var library = AnimationLibraryComponent(automaticallyPlaysDefaultAnimation: true)

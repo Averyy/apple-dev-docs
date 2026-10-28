@@ -23,7 +23,7 @@ var gestureRecognizers: [UIGestureRecognizer]? { get }
 @property (nonatomic, copy, readonly, nullable) NSArray<UIGestureRecognizer *> * gestureRecognizers;
 ```
 
-#### Discussion
+## Discussion
 
 The objects held in this array are instances of a subclass of the abstract base class, [`UIGestureRecognizer`](../uigesturerecognizer.md). If there are no gesture recognizers currently receiving the touch objects, this property holds an empty array.
 

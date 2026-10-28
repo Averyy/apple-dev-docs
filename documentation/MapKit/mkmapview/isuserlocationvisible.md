@@ -24,7 +24,7 @@ var isUserLocationVisible: Bool { get }
 @property (nonatomic, readonly, getter=isUserLocationVisible) BOOL userLocationVisible;
 ```
 
-#### Discussion
+## Discussion
 
 When determining whether the user’s location is visible, this property factors in the horizontal accuracy of the location data. Specifically, if the rectangle that the user’s location represents, plus or minus the horizontal accuracy of that location, intersects the map’s visible rectangle, this property contains the value [`true`](../../Swift/true.md). If that location rectangle doesn’t intersect the map’s visible rectangle, this property contains the value [`false`](../../Swift/false.md).
 

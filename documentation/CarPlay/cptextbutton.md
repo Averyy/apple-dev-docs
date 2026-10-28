@@ -21,7 +21,7 @@ class CPTextButton
 @interface CPTextButton : NSObject
 ```
 
-#### Overview
+## Overview
 
 You use a text button to attach custom actions to an instance of [`CPPointOfInterest`](./cppointofinterest.md) or [`CPInformationTemplate`](./cpinformationtemplate.md). When creating a button, you provide a closure that CarPlay invokes when the user taps the button. You communicate the button’s purpose using a title and a text style that the button applies to the title.
 

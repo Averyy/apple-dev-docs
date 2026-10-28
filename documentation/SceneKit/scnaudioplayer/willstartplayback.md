@@ -25,7 +25,7 @@ var willStartPlayback: (() -> Void)? { get set }
 @property (nonatomic, copy, nullable) void (^willStartPlayback)();
 ```
 
-#### Discussion
+## Discussion
 
 The block takes no parameters and returns no value. Use this block to perform actions in response to the playing of sounds.
 

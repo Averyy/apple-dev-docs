@@ -25,7 +25,7 @@ func CVPixelFormatDescriptionArrayCreateWithAllPixelFormatTypes(_ allocator: CFA
 extern CFArrayRefCVPixelFormatDescriptionArrayCreateWithAllPixelFormatTypes(CFAllocatorRef allocator);
 ```
 
-#### Return Value
+## Return Value
 
 An array of Core Foundation dictionaries, each containing a pixel format description. See [Pixel Format Description Keys](./pixel-format-description-keys.md) for a list of keys relevant to the format description.
 

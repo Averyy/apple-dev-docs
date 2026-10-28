@@ -21,7 +21,7 @@ A dictionary that contains the server’s optional protocol features.
 object ManagementServerCapabilitiesSupportedFeaturesObject
 ```
 
-#### Discussion
+## Discussion
 
 Each dictionary item uses the key name to represent a feature, and the value to hold the feature’s associated parameters. This protocol reserves keys with a prefix of `com.apple.`, which appear as subkeys in this dictionary.
 

@@ -19,7 +19,7 @@ func target(forAction action: Selector) -> Any?
 - (id) targetForAction:(SEL) action;
 ```
 
-#### Return Value
+## Return Value
 
 The object that would receive the specified action message or `nil` if no target object would receive the message. This method also returns `nil` if `aSelector` is `nil`.
 

@@ -17,7 +17,7 @@ Starts the capturing of a new side of the object, to be called after the object 
 func beginNewScanPassAfterFlip()
 ```
 
-#### Discussion
+## Discussion
 
 After capturing one side of an object, the session can be paused and the user can be prompted to flip the object to a new side (e.g. the bottom showing) and then [`beginNewScanPassAfterFlip()`](./beginnewscanpassafterflip%28%29.md) called.   This will transition the session back to the `.ready` state waiting for a new bounding box selection phase to ensure the correct object is captured.   Since the object has been flipped, the miniview capture display in the `ObjectCaptureView`will begin empty after this call.
 

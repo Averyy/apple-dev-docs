@@ -25,11 +25,11 @@ func makeBatch() -> AVSampleBufferGeneratorBatch
 - (AVSampleBufferGeneratorBatch *) makeBatch;
 ```
 
-#### Return Value
+## Return Value
 
 An object to batch generate sample buffers.
 
-#### Discussion
+## Discussion
 
 Generating sample buffers in batches optimizes performance by allowing the system to asynchronously load sample data and optimize I/O when possible.
 

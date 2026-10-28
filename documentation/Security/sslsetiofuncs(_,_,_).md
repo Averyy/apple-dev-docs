@@ -28,11 +28,11 @@ OSStatus SSLSetIOFuncs(SSLContextRef context, SSLReadFunc readFunc, SSLWriteFunc
 
 - [Using the Secure Socket Layer for Network Communication](./using-the-secure-socket-layer-for-network-communication.md)
 
-#### Return Value
+## Return Value
 
 A result code. See [Secure Transport Result Codes](./secure-transport-result-codes.md).
 
-#### Discussion
+## Discussion
 
 Secure Transport calls your read and write callback functions to perform network I/O. You must define these functions before calling [`SSLSetIOFuncs(_:_:_:)`](./sslsetiofuncs%28_,_,_%29.md).
 

@@ -19,11 +19,11 @@ func PMPrinterSetDefault(_ printer: PMPrinter) -> OSStatus
 OSStatus PMPrinterSetDefault(PMPrinter printer);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./core_printing.md#1670007).
 
-#### Discussion
+## Discussion
 
 The default printer is the printer selected by default in the Print dialog.
 

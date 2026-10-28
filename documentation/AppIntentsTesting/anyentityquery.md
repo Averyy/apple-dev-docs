@@ -21,7 +21,7 @@ A type-erased, intermediate representation of your entity query for testing purp
 struct AnyEntityQuery
 ```
 
-#### Overview
+## Overview
 
 The `AnyEntityQuery` structure resolves to your concrete query type, and allows you to test your entity queries and verify their results as shown in the following example:
 

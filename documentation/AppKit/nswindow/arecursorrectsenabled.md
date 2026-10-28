@@ -19,7 +19,7 @@ var areCursorRectsEnabled: Bool { get }
 @property (readonly) BOOL areCursorRectsEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) when cursor rectangles are enabled; otherwise, [`false`](../../Swift/false.md).
 

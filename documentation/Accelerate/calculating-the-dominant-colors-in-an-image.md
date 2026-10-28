@@ -10,7 +10,7 @@ Find the main colors in an image by implementing k-means clustering using the Ac
 - macOS 14.0+
 - Xcode 15.2+
 
-#### Overview
+## Overview
 
 The Accelerate framework provides libraries that allow you to extract a specified number (`k`) of average colors in an image. This sample code app computes these colors using the *k-means algorithm*. The k-means algorithm finds the `k` dominant colors by `k` random centroids that define the centers of color clusters in the source image. The algorithm finds the closest colors to each centroid and updates each centroid to the average value of the closest colors. The process iterates over this step until the solution converges.
 
@@ -20,7 +20,7 @@ The image below shows the sample code app. The source image is on the left and a
 
 Calculating the dominant colors in an image is useful for applications such as creating color palettes for GIF image creation.
 
-##### Store the pixel values
+### Store the pixel values
 
 The sample app stores the pixel values in [`vImage.PixelBuffer`](./vimage/pixelbuffer.md) structures with external storage. This approach ensures that the vImage library doesn’t add any additional padding to the image rows that could interfere with the k-means clustering result. For more information about row padding, see [`vImage_Buffer`](./vimage_buffer.md).
 
@@ -62,7 +62,7 @@ blueBuffer = vImage.PixelBuffer<vImage.PlanarF>(
 
 The sample code app scales all images to `dimension * dimension` pixels.
 
-##### Initialize the cluster centroids
+### Initialize the cluster centroids
 
 The `KMeansCalculator.initializeCentroids()` function initializes the centroids from the red, green, and blue source pixels. The function initializes the first centroid as a random color in the source image.
 
@@ -91,7 +91,7 @@ for i in 1 ..< k {
 }
 ```
 
-##### Calculate the distances between centroids and image colors
+### Calculate the distances between centroids and image colors
 
 The `KMeansCalculator.updateCentroids()` function is responsible for updating the `k` centroids. The sample code app works in three dimensions with red, green, and blue as the axes.
 
@@ -129,7 +129,7 @@ The following matrix shows the distances squared. The top row represents the dis
  50.0, 25.0, 10.0,  5.0, 40.0, 16.0,  2.0,  5.0 ]       // For centroid _B_.
 ```
 
-##### Calculate the closest centroid to each image color
+### Calculate the closest centroid to each image color
 
 The BNNS library’s [`BNNS.ReductionLayer`](./bnns/reductionlayer.md) provides the [`BNNS.ReductionFunction.argMin`](./bnns/reductionfunction/argmin.md) reduction function that reduces the distances matrix to a vector that contains the index of the closest centroid for each color.
 
@@ -160,7 +160,7 @@ Using the simplified example above, the `centroidIndicesDescriptor` contains the
 [ 0, 1, 1, 1, 0, 0, 1, 1 ]      // 0 represents centroid _A_, and 1 represents centroid _B_.
 ```
 
-##### Gather the color data for each centroid
+### Gather the color data for each centroid
 
 The sample code app uses the data in the `centroidIndices` array to gather the color data into vectors for each centroid.  For each centroid in the `centroids` array, the code below creates an array that contains the indices into the color arrays of the colors nearest to that centroid:
 
@@ -225,7 +225,7 @@ The following image shows the example 2D centroids after the update:
 
 The code repeats these steps until the updates to each centroid fall within a specified tolerance. Once the centroid changes become negligible, the app treats the k-means process as converged.
 
-##### Generate a quantized image using the dominant colors
+### Generate a quantized image using the dominant colors
 
 After the sample code app calculates the `k` dominant colors, it uses that data to quantize the source image. That is, the app replaces each color in the image with the color of the nearest centroid.
 

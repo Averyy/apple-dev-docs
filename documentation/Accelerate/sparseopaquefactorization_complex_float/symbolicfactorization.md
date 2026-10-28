@@ -25,7 +25,7 @@ var symbolicFactorization: SparseOpaqueSymbolicFactorization
 SparseOpaqueSymbolicFactorization symbolicFactorization;
 ```
 
-#### Discussion
+## Discussion
 
 Represents a symbolic matrix factorization (i.e. the pattern of the factors without the values). A single symbolic factorization may be the basis for multiple numerical factorizations of matrices with the same pattern but different values non-zero values.
 

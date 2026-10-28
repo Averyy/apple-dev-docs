@@ -23,11 +23,11 @@ func textElements(for range: NSTextRange) -> [NSTextElement]
 - (NSArray<NSTextElement *> *) textElementsForRange:(NSTextRange *) range;
 ```
 
-#### Return Value
+## Return Value
 
 An array of [`NSTextElement`](../nstextelement.md).
 
-#### Discussion
+## Discussion
 
 This method can return a set of elements that don’t fill the entire range if the entire range isn’t synchronously available. Uses [`enumerateTextElements(from:options:using:)`](../nstextelementprovider/enumeratetextelements%28from,options,using%29.md) to fill the array.
 

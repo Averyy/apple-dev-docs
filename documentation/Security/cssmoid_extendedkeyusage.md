@@ -13,7 +13,7 @@
 extern const SecAsn1Oid CSSMOID_ExtendedKeyUsage;
 ```
 
-#### Discussion
+## Discussion
 
 ** Apple addenda *
 

@@ -21,7 +21,7 @@ The visibility of the leading columns in a navigation split view.
 struct NavigationSplitViewVisibility
 ```
 
-#### Overview
+## Overview
 
 Use a value of this type to control the visibility of the columns of a [`NavigationSplitView`](./navigationsplitview.md). Create a [`State`](./state.md) property with a value of this type, and pass a [`Binding`](./binding.md) to that state to the [`init(columnVisibility:sidebar:detail:)`](./navigationsplitview/init%28columnvisibility,sidebar,detail%29.md) or [`init(columnVisibility:sidebar:content:detail:)`](./navigationsplitview/init%28columnvisibility,sidebar,content,detail%29.md) initializer when you create the navigation split view. You can then modify the value elsewhere in your code to:
 

@@ -20,7 +20,7 @@ var contentViewController: NSViewController? { get set }
 @property (retain, nullable) NSViewController * contentViewController;
 ```
 
-#### Discussion
+## Discussion
 
 You must set the content view controller of the popover before the popover is shown. Changes to the popover’s content view controller while the popover is shown will cause the popover to animate if the [`animates`](./animates.md) property is [`true`](../../Swift/true.md).
 

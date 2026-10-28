@@ -23,7 +23,7 @@ case failurePreviousRideNeedsFeedback
 INListRideOptionsIntentResponseCodeFailurePreviousRideNeedsFeedback
 ```
 
-#### Discussion
+## Discussion
 
 Use this code when the user must provide feedback for the previous ride before getting a new ride. Specifying this code causes SiriKit to send an [`INSendRideFeedbackIntent`](../insendridefeedbackintent.md) object to your Intents extension. If your Intents extension does not support that intent, SiriKit launches your app as if you had specified the [`INListRideOptionsIntentResponseCode.failureRequiringAppLaunchPreviousRideNeedsCompletion`](./failurerequiringapplaunchpreviousrideneedscompletion.md) response code.
 

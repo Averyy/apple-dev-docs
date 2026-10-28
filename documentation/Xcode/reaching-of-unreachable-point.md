@@ -5,11 +5,11 @@
 
 Detects when a program reaches an unreachable point.
 
-#### Overview
+## Overview
 
 Use this check to detect when control flow reaches an unreachable point in a program you create using  `__builtin_unreachable`, which may cause abrupt program termination. Available in Xcode 9 and later.
 
-##### Executing unreachable code in C
+### Executing unreachable code in C
 
 If the `switch` statement fails to handle a value that a function returns, the program reaches  `__builtin_unreachable()`.
 
@@ -21,7 +21,7 @@ default:                   // __builtin_unreachable may be reached
 }
 ```
 
-###### Solution
+#### Solution
 
 Ensure that `switch` statements and other control flow statements are exhaustive.
 

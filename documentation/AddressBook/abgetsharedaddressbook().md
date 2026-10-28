@@ -19,11 +19,11 @@ func ABGetSharedAddressBook() -> Unmanaged<ABAddressBookRef>!
 extern ABAddressBookRefABGetSharedAddressBook();
 ```
 
-#### Return Value
+## Return Value
 
 The address book for the logged-in user. You are responsible for retaining and releasing this object as needed.
 
-#### Discussion
+## Discussion
 
 Every application shares the address book for the logged-in user and this function returns it. If you call this function more than once or try to create a new address book, you get a pointer to the same shared address book.
 

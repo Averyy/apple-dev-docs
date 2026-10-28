@@ -26,7 +26,7 @@ var enablePostProcessing: Bool { get set }
 @property (nonatomic, assign) BOOL enablePostProcessing;
 ```
 
-#### Discussion
+## Discussion
 
 If no post processing is required for the whole duration of the video composition instruction, set this property to [`false`](../../Swift/false.md) to make the composition process more efficient.
 

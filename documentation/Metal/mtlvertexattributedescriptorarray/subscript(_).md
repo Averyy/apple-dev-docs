@@ -24,7 +24,7 @@ subscript(index: Int) -> MTLVertexAttributeDescriptor! { get set }
 - (MTLVertexAttributeDescriptor *) objectAtIndexedSubscript:(NSUInteger) index;
 ```
 
-#### Return Value
+## Return Value
 
 A descriptor that contains the vertex attribute state.
 

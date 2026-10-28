@@ -18,7 +18,7 @@ Validates an incoming raw ISO 18013-5 request.
 func validateISO18013MobileDocumentRequest(_ requestData: Data, origin: URL) throws -> ISO18013MobileDocumentRequest
 ```
 
-#### Return Value
+## Return Value
 
 A validated and parsed ISO 18013-5 mobile document request.
 

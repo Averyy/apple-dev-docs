@@ -26,7 +26,7 @@ protocol MediaSessionRepresentable : Identifiable
 
 - [Publishing media sessions](./publishing-media-sessions.md)
 
-#### Overview
+## Overview
 
 Conform to this protocol to provide the media content description, playback state, and commands like [`play(_:)`](./mediacommand/play%28_%29.md), [`pause(_:)`](./mediacommand/pause%28_%29.md), [`next(_:)`](./mediacommand/next%28_%29.md), [`previous(_:)`](./mediacommand/previous%28_%29.md), and more.
 

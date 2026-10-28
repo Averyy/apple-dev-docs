@@ -24,7 +24,7 @@ static let coverageRecord: HKClinicalTypeIdentifier
 extern HKClinicalTypeIdentifier const HKClinicalTypeIdentifierCoverageRecord;
 ```
 
-#### Discussion
+## Discussion
 
 Use this identifier for records containing information that might typically appear on the user’s insurance card.
 

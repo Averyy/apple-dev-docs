@@ -15,11 +15,11 @@ Reports errors that occurred when receiving data from the device.
 virtual kern_return_t RxError(bool overrun, bool gotBreak, bool framingError, bool parityError);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../../DriverKit/error-codes.md).
 
-#### Discussion
+## Discussion
 
 Call this method when you encounter an error getting data from the device.
 

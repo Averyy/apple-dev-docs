@@ -4,11 +4,11 @@
 
 A trigger that fires when an app posts a notification.
 
-#### Overview
+## Overview
 
 This class enables an asset to fire a trigger as indicated by an app. The app defines the criteria for when the runtime executes the trigger’s action.
 
-##### Declaration
+### Declaration
 
 ```other
 class Preliminary_Trigger "NotificationTrigger"

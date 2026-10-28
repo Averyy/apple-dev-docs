@@ -19,7 +19,7 @@ func line(to point: NSPoint)
 - (void) lineToPoint:(NSPoint) point;
 ```
 
-#### Discussion
+## Discussion
 
 This method creates a straight line segment starting at the current point and ending at the point specified by the  `aPoint` parameter. The current point is the last point in the receiver’s most recently added segment.
 

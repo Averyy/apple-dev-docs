@@ -24,7 +24,7 @@ var offset: DateComponents { get set }
 @property (nonatomic, strong, readwrite) NSDateComponents * offset;
 ```
 
-#### Discussion
+## Discussion
 
 To specify that this event should fire before the significant event, supply a date components object with negative values. For example, to specify 30 minutes before sunset, the [`minute`](../../Foundation/datecomponents/minute.md) property of the value of the [`offset`](./offset.md) property must be set to `-30`.
 

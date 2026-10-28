@@ -23,7 +23,7 @@ var preferredResultOptions: NSWritingToolsResultOptions { get set }
 
 - [Adding Writing Tools support to a custom AppKit view](../adding-writing-tools-support-to-a-custom-nsview.md)
 
-#### Discussion
+## Discussion
 
 Writing Tools can create plain text or rich text, and it can format text using lists or tables as needed. If your view doesn’t support specific types of content, specify the types you do support in this property. The default value of this property is `NSWritingToolsResultOptions/default`, which lets the system determine the type of content to generate.
 

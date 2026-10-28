@@ -19,7 +19,7 @@ class func fill(_ rect: NSRect)
 + (void) fillRect:(NSRect) rect;
 ```
 
-#### Discussion
+## Discussion
 
 This method fills the specified region immediately. This method uses the compositing operation returned by the `compositingOperation` method of `NSGraphicsContext`.
 

@@ -24,11 +24,11 @@ func JSObjectMakeArrayBufferWithBytesNoCopy(_ ctx: JSContextRef!, _ bytes: Unsaf
 JSObjectRefJSObjectMakeArrayBufferWithBytesNoCopy(JSContextRef ctx, void *bytes, size_t byteLength, JSTypedArrayBytesDeallocator bytesDeallocator, void *deallocatorContext, JSValueRef*exception);
 ```
 
-#### Return Value
+## Return Value
 
 A [`JSObjectRef`](./jsobjectref.md) array buffer with a backing store that is the same as the one that `bytes` points to, or `NULL` if there is an error.
 
-#### Discussion
+## Discussion
 
 If the system throws an exception during this function, it always calls the `bytesDeallocator`.
 

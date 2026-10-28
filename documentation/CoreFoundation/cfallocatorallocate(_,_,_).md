@@ -25,7 +25,7 @@ func CFAllocatorAllocate(_ allocator: CFAllocator!, _ size: CFIndex, _ hint: CFO
 extern void *CFAllocatorAllocate(CFAllocatorRef allocator, CFIndex size, CFOptionFlags hint);
 ```
 
-#### Return Value
+## Return Value
 
 A pointer to the newly allocated memory.
 

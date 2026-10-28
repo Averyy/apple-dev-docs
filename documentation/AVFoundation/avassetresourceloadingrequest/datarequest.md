@@ -24,7 +24,7 @@ var dataRequest: AVAssetResourceLoadingDataRequest? { get }
 @property (nonatomic, readonly, nullable) AVAssetResourceLoadingDataRequest * dataRequest;
 ```
 
-#### Discussion
+## Discussion
 
 An instance of [`AVAssetResourceLoadingDataRequest`](../avassetresourceloadingdatarequest.md) that indicates the range of resource data that’s being requested. The value of this property is `nil` if no data is being requested.
 

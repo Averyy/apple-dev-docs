@@ -24,7 +24,7 @@ let HMCharacteristicTypeAdminOnlyAccess: String
 extern NSString * const HMCharacteristicTypeAdminOnlyAccess;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is a Boolean that’s `true` if the accessory accepts only administrator access.
 

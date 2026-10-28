@@ -19,7 +19,7 @@ func setBoundsSize(_ newSize: NSSize)
 - (void) setBoundsSize:(NSSize) newSize;
 ```
 
-#### Discussion
+## Discussion
 
 For example, a view object with a frame size of (100.0, 100.0) and a bounds size of (200.0, 100.0) draws half as wide along the x axis. This method neither redisplays the view nor marks it as needing display. Set the [`needsDisplay`](./needsdisplay.md) property to [`true`](../../Swift/true.md) when you want the view to be redisplayed.
 

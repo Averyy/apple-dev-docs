@@ -18,7 +18,7 @@ Determines whether pasteboard items match the specified patterns, reading the co
 - (void) detectValuesForPatterns:(NSSet<NSString *> *) patterns inItemSet:(NSIndexSet *) itemSet completionHandler:(void (^)(NSArray<NSDictionary<NSString *,id> *> *, NSError *)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  Calling this method notifies the user that the app has read the contents of the pasteboard.
 

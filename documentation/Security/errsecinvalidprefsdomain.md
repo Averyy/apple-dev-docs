@@ -25,7 +25,7 @@ var errSecInvalidPrefsDomain: OSStatus { get }
 errSecInvalidPrefsDomain
 ```
 
-#### Discussion
+## Discussion
 
 This error is available in macOS 10.3 and later.
 

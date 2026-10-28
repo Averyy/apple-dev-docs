@@ -19,7 +19,7 @@ let kSpeechStatusProperty: CFString
 const CFStringRef kSpeechStatusProperty;
 ```
 
-#### Discussion
+## Discussion
 
 The value associated with this property is a `CFDictionary` object that contains speech-status information for the speech channel. See [Speech Status Keys](./speech_synthesis_manager/speech_status_keys.md) for a description of the keys present in the dictionary.
 

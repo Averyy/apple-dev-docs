@@ -24,7 +24,7 @@ init?(named name: String)
 + (UIColor *) colorNamed:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized color object. The returned object uses the color space specified for the asset.
 

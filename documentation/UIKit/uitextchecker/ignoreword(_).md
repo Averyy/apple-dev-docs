@@ -23,7 +23,7 @@ func ignoreWord(_ wordToIgnore: String)
 - (void) ignoreWord:(NSString *) wordToIgnore;
 ```
 
-#### Discussion
+## Discussion
 
 The spell checker excludes ignored words as misspelled words during the current spell-checking session only.
 

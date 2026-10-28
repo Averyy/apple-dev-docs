@@ -21,7 +21,7 @@ Converts the source time to a new timescale using the specified rounding method.
 func convertScale(_ newTimescale: Int32, method: CMTimeRoundingMethod) -> CMTime
 ```
 
-#### Return Value
+## Return Value
 
 A converted time value.
 

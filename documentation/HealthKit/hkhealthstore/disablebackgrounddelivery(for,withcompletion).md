@@ -28,7 +28,7 @@ func disableBackgroundDelivery(for type: HKObjectType) async throws
 - (void) disableBackgroundDeliveryForType:(HKObjectType *) type withCompletion:(void (^)(BOOL success, NSError *error)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method to prevent your app from receiving any additional update notifications about the specified data type while in the background. This method operates asynchronously. As soon as the background delivery is disabled, this method calls its completion handler on a background queue.
 

@@ -16,11 +16,11 @@ Defines a pointer to an alias filtering callback function that filters out possi
 typedef Boolean (*FSAliasFilterProcPtr)(const FSRef *ref, Boolean *quitFlag, Ptr myDataPtr);
 ```
 
-#### Return Value
+## Return Value
 
 Your function should return `true` to indicate that the possible match is to be discarded, or `false` to indicate that the possible match is to be added to the list of possible targets.
 
-#### Discussion
+## Discussion
 
 You can write your own filter function to examine possible targets identified by the `FSMatchAliasBulk` function. The `FSMatchAliasBulk` function calls your filter function each time it identifies a possible match.
 

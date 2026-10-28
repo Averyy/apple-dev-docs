@@ -17,7 +17,7 @@
 #define kIOMessageSystemHasPoweredOn
 ```
 
-#### Discussion
+## Discussion
 
 Announces that the system and its devices have woken up. Delivered to in-kernel IOKit drivers via `kIOGeneralInterest` and `kIOPriorityPowerStateInterest`. Delivered to user clients of `IORegisterForSystemPower`.
 

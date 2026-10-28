@@ -19,7 +19,7 @@ class IOBluetoothSDPServiceAttribute
 @interface IOBluetoothSDPServiceAttribute : NSObject
 ```
 
-#### Overview
+## Overview
 
 A service attribute contains two components: an attribute ID and a data element.
 

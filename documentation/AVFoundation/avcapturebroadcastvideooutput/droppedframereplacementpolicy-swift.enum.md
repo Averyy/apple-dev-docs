@@ -23,7 +23,7 @@ enum DroppedFrameReplacementPolicy
 enum AVCaptureBroadcastVideoOutputDroppedFrameReplacementPolicy : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 These constants specify how the broadcast video output should handle dropped frames by providing replacement content.
 

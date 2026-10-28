@@ -23,7 +23,7 @@ var metadataObjectsCallbackQueue: dispatch_queue_t? { get }
 @property (nonatomic, readonly, nullable) dispatch_queue_t metadataObjectsCallbackQueue;
 ```
 
-#### Discussion
+## Discussion
 
 To set the dispatch queue, you must use the [`setMetadataObjectsDelegate(_:queue:)`](./setmetadataobjectsdelegate%28_,queue%29.md) method.
 

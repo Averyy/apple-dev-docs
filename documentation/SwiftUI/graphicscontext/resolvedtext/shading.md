@@ -21,7 +21,7 @@ The shading to fill uncolored text regions with.
 var shading: GraphicsContext.Shading
 ```
 
-#### Discussion
+## Discussion
 
 This value defaults to the [`foreground`](../shading/foreground.md) shading.
 

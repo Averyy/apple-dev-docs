@@ -17,7 +17,7 @@ The metadata for the setting to prevent app removal.
 static let denyAppRemoval: SettingMetadata<Bool>
 ```
 
-#### Discussion
+## Discussion
 
 Use `denyAppRemoval` to access metadata about [`denyAppRemoval`](./denyappremoval-swift.property.md). The default value is `false`.
 

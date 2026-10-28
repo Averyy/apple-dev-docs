@@ -21,7 +21,7 @@ Specifies an abbreviated person name components style.
 case abbreviated
 ```
 
-#### Discussion
+## Discussion
 
 The rawValue of `abbreviated` is 4.
 

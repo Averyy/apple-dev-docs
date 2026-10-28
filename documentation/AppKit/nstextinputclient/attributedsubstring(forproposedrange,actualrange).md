@@ -20,11 +20,11 @@ func attributedSubstring(forProposedRange range: NSRange, actualRange: NSRangePo
 - (NSAttributedString *) attributedSubstringForProposedRange:(NSRange) range actualRange:(NSRangePointer) actualRange;
 ```
 
-#### Return Value
+## Return Value
 
 The string created from the given range. May return `nil`.
 
-#### Discussion
+## Discussion
 
 An implementation of this method should be prepared for `aRange` to be out of bounds. For example, the InkWell text input service can ask for the contents of the text input client that extends beyond the document’s range. In this case, you should return the intersection of the document’s range and `aRange`. If the location of `aRange` is completely outside of the document’s range, return `nil`.
 

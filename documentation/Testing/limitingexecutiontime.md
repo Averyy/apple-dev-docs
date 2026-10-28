@@ -5,7 +5,7 @@
 
 Set limits on how long a test can run for until it fails.
 
-#### Overview
+## Overview
 
 Some tests may naturally run slowly: they may require significant system resources to complete, may rely on downloaded data from a server, or may otherwise be dependent on external factors.
 
@@ -28,13 +28,13 @@ If the above test function takes longer than an hour (60 x 60 seconds) to execut
 
 The testing library may adjust the specified time limit for performance reasons or to ensure tests have enough time to run. In particular, a granularity of (by default) one minute is applied to tests. The testing library can also be configured with a maximum time limit per test that overrides any applied time limit traits.
 
-##### Apply time limits to test suites
+### Apply time limits to test suites
 
 When you apply a time limit to a test suite, the testing library recursively applies it to all test functions and child test suites within that suite. The time limit applies to each test in the test suite and any child test suites, or each test case for parameterized tests.
 
 For example, if a suite contains five tests and you apply a time limit trait with a duration of one minute, then each test in the suite may run for up to one minute.
 
-##### Apply time limits to parameterized tests
+### Apply time limits to parameterized tests
 
 When you apply a time limit to a parameterized test function, the testing library applies it to each invocation *separately* so that if only some cases cause failures due to timeouts, then the testing library doesn’t incorrectly mark successful cases as failing.
 

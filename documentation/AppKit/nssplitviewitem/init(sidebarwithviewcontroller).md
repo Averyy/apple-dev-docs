@@ -19,7 +19,7 @@ convenience init(sidebarWithViewController viewController: NSViewController)
 + (instancetype) sidebarWithViewController:(NSViewController *) viewController;
 ```
 
-#### Discussion
+## Discussion
 
 Sidebar items take advantage of the standard system appearance and behavior for sidebars, including:
 

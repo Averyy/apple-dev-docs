@@ -26,7 +26,7 @@ var sourceRect: CGRect { get set }
 
 - [Getting the user’s attention with alerts and action sheets](../getting-the-user-s-attention-with-alerts-and-action-sheets.md)
 
-#### Discussion
+## Discussion
 
 Use this property to define the rectangle that the popover’s arrow points to. The rectangle must be in the coordinate space of [`sourceView`](./sourceview.md).
 

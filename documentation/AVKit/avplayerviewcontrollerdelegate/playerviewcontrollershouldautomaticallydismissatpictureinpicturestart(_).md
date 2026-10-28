@@ -23,11 +23,11 @@ optional func playerViewControllerShouldAutomaticallyDismissAtPictureInPictureSt
 - (BOOL) playerViewControllerShouldAutomaticallyDismissAtPictureInPictureStart:(AVPlayerViewController *) playerViewController;
 ```
 
-#### Return Value
+## Return Value
 
 `true` to indicate that the player view controller automatically dismisses itself; otherwise `false`.
 
-#### Discussion
+## Discussion
 
 Implement this method and return `false` to prevent the player view controller from automatically dismissing when Picture in Picture starts.
 

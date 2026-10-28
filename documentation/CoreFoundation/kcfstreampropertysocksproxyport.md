@@ -25,7 +25,7 @@ let kCFStreamPropertySOCKSProxyPort: CFString
 extern CFStringRef const kCFStreamPropertySOCKSProxyPort;
 ```
 
-#### Discussion
+## Discussion
 
 This key contains a `CFNumberRef` object of type `kCFNumberSInt32Type` whose value represents the port on which the proxy listens.
 

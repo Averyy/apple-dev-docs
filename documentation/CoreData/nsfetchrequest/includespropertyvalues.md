@@ -25,7 +25,7 @@ var includesPropertyValues: Bool { get set }
 @property (nonatomic) BOOL includesPropertyValues;
 ```
 
-#### Discussion
+## Discussion
 
 This value is [`true`](../../Swift/true.md) if when the fetch is executed, property data is obtained from the persistent store; otherwise it is [`false`](../../Swift/false.md). The default value is [`true`](../../Swift/true.md).
 

@@ -23,7 +23,7 @@ typealias Failure = any Error
 
 Available when `Base` conforms to `AsyncSequence` and `SegmentOfResult` conforms to `AsyncSequence`.
 
-#### Discussion
+## Discussion
 
 The flat map sequence produces errors from either the base sequence or the `transform` closure.
 

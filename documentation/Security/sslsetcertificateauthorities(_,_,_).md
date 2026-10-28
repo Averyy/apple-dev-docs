@@ -21,11 +21,11 @@ func SSLSetCertificateAuthorities(_ context: SSLContext, _ certificateOrArray: C
 OSStatus SSLSetCertificateAuthorities(SSLContextRef context, CFTypeRef certificateOrArray, Boolean replaceExisting);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Secure Transport Result Codes](./secure-transport-result-codes.md). Returns [`errSecParam`](./errsecparam.md) if this function is called for a session that is configured as a client, or when a session is active.
 
-#### Discussion
+## Discussion
 
 Each successive call to this function with the `replaceExisting` parameter set to [`false`](../Swift/false.md) results in accumulation of additional certification authorities. To see the current set of certification authorities, call the [`SSLCopyCertificateAuthorities(_:_:)`](./sslcopycertificateauthorities%28_,_%29.md) function.
 

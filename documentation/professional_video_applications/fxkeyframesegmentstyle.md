@@ -19,7 +19,7 @@ enum FxKeyframeSegmentStyle
 enum FxKeyframeSegmentStyle: NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 Each style describes the segment between the keyframe you’re working with and the next keyframe.
 

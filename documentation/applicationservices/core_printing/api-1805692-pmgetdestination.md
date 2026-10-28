@@ -17,17 +17,17 @@ OSStatus PMGetDestination (
 );
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../core_printing.md#1670007).
 
-#### Overview
+## Overview
 
 For print jobs that are sent to disk, as opposed a printer, you can use this function to obtain the location of the destination file. Valid within a printing session after creating a print settings object.
 
 Before using this function you must call `PMSessionValidatePrintSettings` or `PMValidatePrintSettings` to ensure that the print settings object is valid.
 
-##### Special Considerations
+### Special Considerations
 
 This function does not take a print session parameter and therefore cannot indicate whether preview has been selected as the destination.
 

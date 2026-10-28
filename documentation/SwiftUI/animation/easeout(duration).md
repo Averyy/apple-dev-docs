@@ -21,11 +21,11 @@ An animation with a specified duration that starts quickly and then slows toward
 static func easeOut(duration: TimeInterval) -> Animation
 ```
 
-#### Return Value
+## Return Value
 
 An ease-out animation with a specified duration.
 
-#### Discussion
+## Discussion
 
 An easing animation provides motion with a natural feel by varying the acceleration and deceleration of the animation, which matches how things tend to move in reality. With an ease out animation, the motion starts quickly and decreases its speed towards the end.
 

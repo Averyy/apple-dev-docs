@@ -12,7 +12,7 @@ The ad creative rejection reason based on a product page.
 object ProductPageReasonCreate
 ```
 
-#### Discussion
+## Discussion
 
 Descriptions of reason codes include the following:
 

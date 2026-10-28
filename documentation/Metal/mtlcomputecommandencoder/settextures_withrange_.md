@@ -20,7 +20,7 @@ Binds multiple textures to the texture argument table, allowing compute kernels 
 - (void) setTextures:(id<MTLTexture> const[]) textures withRange:(NSRange) range;
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  This method requires that the number of instances in `textures` be the same as the length of `range`.
 

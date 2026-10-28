@@ -25,11 +25,11 @@ class var defaultCStringEncoding: UInt { get }
 @property (class, readonly) NSStringEncoding defaultCStringEncoding;
 ```
 
-#### Return Value
+## Return Value
 
 The C-string encoding assumed for any method accepting a C string as an argument.
 
-#### Discussion
+## Discussion
 
 This method returns a user-dependent encoding who value is derived from user’s default language and potentially other factors. You might sometimes need to use this encoding when interpreting user documents with unknown encodings, in the absence of other hints, but in general this encoding should be used rarely, if at all. Note that some potential values might result in unexpected encoding conversions of even fairly straightforward `NSString` content—for example, punctuation characters with a bidirectional encoding.
 

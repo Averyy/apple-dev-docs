@@ -19,7 +19,7 @@ var totalBounds: CGRect { get }
 @property (readonly) CGRect totalBounds;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the bounding rectangle that was last used when calling the [`draw(with:options:context:)`](../../Foundation/nsattributedstring/draw%28with,options,context%29.md) method. The rectangle is specified in the coordinate system of the drawn string. (The origin of the bounds corresponds to neither a view the string might have been drawn into nor the origin of a possible [`draw(in:)`](../../Foundation/nsattributedstring/draw%28in%29.md) call.)
 

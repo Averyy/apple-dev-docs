@@ -25,7 +25,7 @@ class func registerForLaunchOnQuickSwitchStateEvents() async throws
 + (void) registerForLaunchOnQuickSwitchStateEvents:(void (^)(NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**: This only applies to apps that someone has set to be the default messaging or default calling app. For more information on becoming the default messaging app, see [Preparing your app to be the default messaging app](../../Messages/preparing-your-app-to-be-the-default-messaging-app.md). For more info on becoming the default calling app, see [Preparing your app to be the default calling app](../../CallKit/preparing-your-app-to-be-the-default-calling-app.md).
 

@@ -16,7 +16,7 @@ Adds an action to perform when the viewpoint of the volume changes.
 @preconcurrency func onVolumeViewpointChange(updateStrategy: VolumeViewpointUpdateStrategy = .supported, initial: Bool = true, _ action: @escaping (Viewpoint3D, Viewpoint3D) -> Void) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 Use the provided [`Viewpoint3D`](../viewpoint3d.md) to update the content of the volume:
 

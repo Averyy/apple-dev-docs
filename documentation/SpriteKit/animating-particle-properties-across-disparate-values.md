@@ -5,7 +5,7 @@
 
 Supply keyframe sequences to do linear or nonlinear particle animations.
 
-#### Overview
+## Overview
 
 An [`SKKeyframeSequence`](./skkeyframesequence.md) object enables you to specify multiple values for an emitter node’s properties over a specific time period. The property values you choose may be arbitrary, which results in your ability to graph those property changes linearly or nonlinearly over time.
 

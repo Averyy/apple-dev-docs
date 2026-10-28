@@ -23,7 +23,7 @@ func addKeyCommand(_ keyCommand: UIKeyCommand)
 - (void) addKeyCommand:(UIKeyCommand *) keyCommand;
 ```
 
-#### Discussion
+## Discussion
 
 This method lets you easily add key commands to the view controller without overriding the [`keyCommands`](../uiresponder/keycommands.md) property. The key commands you add to a view controller are applied to the active responder chain. When the user performs a key command, UIKit searches the responder chain (starting with the first responder) for an object capable of handling the specified action.
 

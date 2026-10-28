@@ -14,7 +14,7 @@
 kIONetworkSupportedPacketFilters = 0x0001
 ```
 
-#### Discussion
+## Discussion
 
 Indicate the filters that are supported by the hardware.
 

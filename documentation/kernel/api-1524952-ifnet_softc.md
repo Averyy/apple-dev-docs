@@ -13,11 +13,11 @@
 void * ifnet_softc(ifnet_t interface);
 ```
 
-#### Return Value
+## Return Value
 
 Driver's private storage.
 
-#### Discussion
+## Discussion
 
 Returns the driver's private storage on the interface.
 

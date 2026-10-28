@@ -20,7 +20,7 @@ A component that sets the properties for the bloom post-processing effects.
 struct BloomOptionsComponent
 ```
 
-#### Overview
+## Overview
 
 This component has no effect without a BloomComponent in your scene.
 

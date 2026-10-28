@@ -21,7 +21,7 @@ Replaces the value of a mutable value with the supplied new value, returning the
 func exchange<T>(_ item: inout T, with newValue: consuming T) -> T where T : ~Copyable
 ```
 
-#### Return Value
+## Return Value
 
 The original value of `item`.
 

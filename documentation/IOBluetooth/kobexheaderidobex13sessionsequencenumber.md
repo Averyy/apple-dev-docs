@@ -17,7 +17,7 @@ var kOBEXHeaderIDOBEX13SessionSequenceNumber: OBEXHeaderIdentifiers { get }
 kOBEXHeaderIDOBEX13SessionSequenceNumber
 ```
 
-#### Discussion
+## Discussion
 
 1-byte quantitied containing the current sequence number.
 

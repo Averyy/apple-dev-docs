@@ -21,7 +21,7 @@ Creates a rectangle from single-precision vectors that describe the center and s
 init(center: simd_double3 = .zero, size: simd_double3)
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: This function is provided as a convenience. All Spatial storage and calculations are single-precision.
 

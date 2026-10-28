@@ -19,7 +19,7 @@ The status of the find navigator for views which support text editing.
 struct FindContext
 ```
 
-#### Overview
+## Overview
 
 Views which support text editing can use this information to implement a a find navigator that is controlled using the modifiers used for controlling the find navigator throughout the rest of SwiftUI.
 

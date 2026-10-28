@@ -26,7 +26,7 @@ var lastModifiedUserRecordID: CKRecord.ID? { get }
 @property (copy, readonly, nullable) CKRecordID * lastModifiedUserRecordID;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property’s value to retrieve the user record of the user who most recently modified this record. Every user of the app has a unique user record that is empty by default. Apps can add data to the user record on behalf of the user, but don’t store sensitive data in it.
 

@@ -5,7 +5,7 @@
 
 Add a link to a podcast that displays the podcast artwork and the podcast show or episode information.
 
-#### Overview
+## Overview
 
 By using the podcast component, you can add a link to a podcast without using external assets.
 
@@ -16,7 +16,7 @@ By using the podcast component, you can add a link to a podcast without using ex
 
 ![A screenshot of an Apple News article with a podcast on iPad.](https://developer.apple.com/tutorials/images/com.apple.applenews/media-3966391@2x.png)
 
-##### Add a Podcast in Your Article
+### Add a Podcast in Your Article
 
 In [Positioning Text Components](./positioning-text-components.md), you created some `ComponentLayout` objects. You’ll refer to those `ComponentLayout` objects in this code.
 
@@ -27,7 +27,7 @@ Your code should look like the example code in [Podcast: Result](./adding-a-podc
 
 After you make this change in your code, you can preview your working `article.json` file in News Preview to see a podcast in your article.
 
-###### Podcast: Copy This Code
+#### Podcast: Copy This Code
 
 ```json
     {
@@ -42,7 +42,7 @@ After you make this change in your code, you can preview your working `article.j
     },
 ```
 
-###### Podcast: Result
+#### Podcast: Result
 
 Ellipses (…) indicate lines of code that have been omitted from this example.
 
@@ -67,7 +67,7 @@ Ellipses (…) indicate lines of code that have been omitted from this example.
 }
 ```
 
-##### Adjust the Podcast Orientation
+### Adjust the Podcast Orientation
 
 The podcast you added to your article shows the default podcast orientation that changes automatically based on screen size. On larger tablet screens, the podcast art displays on the left and the podcast information and link button appear on the right. On smaller mobile screens, the artwork, podcast information, and link button appear stacked.
 
@@ -78,7 +78,7 @@ Instead of using the orientation that automatically changes based on screen size
 
 After you make this change in your code, you can preview your working `article.json` file in News Preview to see a podcast set to `landscape` orientation.
 
-###### Podcast Orientation: Result
+#### Podcast Orientation: Result
 
 Ellipses (…) indicate lines of code that have been omitted from this example.
 
@@ -104,11 +104,11 @@ Ellipses (…) indicate lines of code that have been omitted from this example.
 }
 ```
 
-###### Previous
+#### Previous
 
 [Adding a Tweet](./adding-a-tweet.md)
 
-###### Next
+#### Next
 
 [Viewing the Finished Article for the Introductory Design Tutorial](./viewing-the-finished-article-for-the-introductory-design-tutorial.md)
 

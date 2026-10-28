@@ -22,7 +22,7 @@ weak var delegate: (any UIDocumentPickerDelegate)? { get set }
 @property (nonatomic, weak, nullable) id<UIDocumentPickerDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 The delegate must adopt the [`UIDocumentPickerDelegate`](../uidocumentpickerdelegate.md) protocol.
 

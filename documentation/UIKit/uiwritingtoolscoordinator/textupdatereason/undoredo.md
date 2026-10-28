@@ -22,7 +22,7 @@ case undoRedo
 UIWritingToolsCoordinatorTextUpdateReasonUndoRedo
 ```
 
-#### Discussion
+## Discussion
 
 Specify this option when an undo or redo command initiated the change to your view.
 

@@ -21,11 +21,11 @@ Returns a new camera object for you to configure.
 + (instancetype) camera;
 ```
 
-#### Return Value
+## Return Value
 
 A new camera object.
 
-#### Discussion
+## Discussion
 
 You must change the values of the returned camera object before using it.
 

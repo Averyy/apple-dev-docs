@@ -20,7 +20,7 @@ void putImageData(
 );
 ```
 
-#### Discussion
+## Discussion
 
 This method blits either an `imageData` pixel array, or a region of the pixel array, to the canvas, at the specified x,y coordinates. 
 

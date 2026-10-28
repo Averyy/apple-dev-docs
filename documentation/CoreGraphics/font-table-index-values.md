@@ -5,7 +5,7 @@
 
 Possible values for an index into a font table.
 
-#### Overview
+## Overview
 
 See [`CGFontIndex`](./cgfontindex.md).
 

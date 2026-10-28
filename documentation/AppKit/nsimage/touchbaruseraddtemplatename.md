@@ -22,7 +22,7 @@ class let touchBarUserAddTemplateName: String
 extern NSImageName const NSImageNameTouchBarUserAddTemplate;
 ```
 
-#### Discussion
+## Discussion
 
 ![Template image for add user](https://developer.apple.com/tutorials/images/com.apple.appkit/media-2793511@2x.png)
 

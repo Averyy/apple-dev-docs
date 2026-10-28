@@ -23,7 +23,7 @@ weak var delegate: (any UINavigationControllerDelegate)? { get set }
 @property (nonatomic, weak, nullable) id<UINavigationControllerDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 You can use the navigation delegate to perform additional actions in response to changes in the navigation interface. For more information about implementing the delegate, see [`UINavigationControllerDelegate`](../uinavigationcontrollerdelegate.md).
 

@@ -18,7 +18,7 @@ A grounding shadow behavior that fades when an entity is near physical objects.
 case fade
 ```
 
-#### Discussion
+## Discussion
 
 On iOS devices without LiDAR, the option is equivalent to [`GroundingShadowComponent.FadeBehaviorNearPhysicalObjects.constant`](./constant.md).
 

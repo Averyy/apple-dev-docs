@@ -19,11 +19,11 @@ class var layoutAttributesClass: AnyClass { get }
 @property (class, readonly) Class layoutAttributesClass;
 ```
 
-#### Return Value
+## Return Value
 
 The class to use for layout attribute objects.
 
-#### Discussion
+## Discussion
 
 Override this method if you define a custom [`NSCollectionViewLayoutAttributes`](../nscollectionviewlayoutattributes.md) subclass for managing layout-related attributes. In your implementation, return the class object for your custom subclass.
 

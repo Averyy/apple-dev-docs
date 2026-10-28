@@ -20,7 +20,7 @@ var ES_PROC_CHECK_TYPE_PIDRUSAGE: es_proc_check_type_t { get }
 ES_PROC_CHECK_TYPE_PIDRUSAGE
 ```
 
-#### Discussion
+## Discussion
 
 This type corresponds to the `proc_pid_rusage` function from `libproc.h`.
 

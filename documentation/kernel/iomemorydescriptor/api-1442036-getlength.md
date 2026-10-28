@@ -15,11 +15,11 @@ Accessor to get the length of the memory descriptor (over all its ranges).
 virtual IOByteCount getLength(void);
 ```
 
-#### Return Value
+## Return Value
 
 The byte count.
 
-#### Discussion
+## Discussion
 
 This method returns the total length of the memory described by the descriptor, ie. the sum of its ranges' lengths.
 

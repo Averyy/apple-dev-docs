@@ -27,11 +27,11 @@ OM_uint32 gss_release_buffer_set(OM_uint32 *minor_status, gss_buffer_set_t*buffe
 
 - [Allocating and Releasing Objects](./allocating-and-releasing-objects.md)
 
-#### Return Value
+## Return Value
 
 A status code set to [`GSS_S_COMPLETE`](./gss_s_complete.md) on completion.
 
-#### Discussion
+## Discussion
 
 This call frees the memory of all of the buffers that the buffer set contains, as well as the buffer set descriptor itself. Use this function when you’re done with a buffer set that you created with [`gss_create_empty_buffer_set(_:_:)`](./gss_create_empty_buffer_set%28_,_%29.md), or created on your behalf by [`gss_add_buffer_set_member(_:_:_:)`](./gss_add_buffer_set_member%28_,_,_%29.md).
 

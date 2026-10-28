@@ -5,7 +5,7 @@
 
 Identify software preventing Xcode 15 from connecting to Apple devices, and modify your configuration to allow these connections.
 
-#### Overview
+## Overview
 
 Xcode 15 uses a network-based interface to communicate with Apple devices connected to the Mac with a USB cable. In some environments, network management software may interfere with Xcode’s ability to connect to these devices. These configurations include:
 
@@ -15,7 +15,7 @@ Xcode 15 uses a network-based interface to communicate with Apple devices connec
 
 These configurations can prevent the link-local IPv6 traffic that Xcode uses to communicate with a connected Apple device from reaching the device. If you’re a VPN developer or IT professional, follow this document to verify what parts of your configuration affect Xcode, and how to modify your configuration to avoid blocking Xcode’s device communication network traffic. If you’re an app developer in a large organization experiencing device connection issues with Xcode 15, you may need to get assistance from your IT department. If you’re an app developer using a commercial VPN or security product not administered by an IT department, contact the vendor for assistance.
 
-#### Create a test environment
+## Create a test environment
 
 Create an isolated test environment to confirm any device connection issues you are experiencing, and then identify the specific parts of your configuration preventing Xcode’s connection to an attached Apple device. A complex environment may have multiple pieces of software installed that affect Xcode’s ability to communicate with connected devices, such as a VPN, a security configuration, or both.
 
@@ -34,7 +34,7 @@ After confirming the software affecting Xcode’s connection to a connected devi
 - If you’re a VPN developer or an IT professional that can modify your security configuration, proceed with this document.
 - If you’ve identified a software product from a vendor as the source of the issue, contact the vendor for support.
 
-#### Update software using packet filtering rules
+## Update software using packet filtering rules
 
 If your VPN product or security configuration uses PF to filter network packets, update your PF rules to allow traffic on the network interfaces Xcode uses for device communication. These rules need to be continuously updated, as the network interfaces Xcode uses to communicate with a connected device changes over time.
 
@@ -72,11 +72,11 @@ The `SIOCGIFDIRECTLINK` API was added in macOS 14.4, and requires building your 
 
 > ❗ **Important**: If you maintain a VPN product that uses PF rather than a Network Extension provider, make a plan to migrate to a Network Extension provider. See [TN3165: Packet Filter is not API](./tn3165-packet-filter-is-not-api.md).
 
-#### Review if your VPN requires sending all network traffic over the tunnel
+## Review if your VPN requires sending all network traffic over the tunnel
 
 VPN products based on the [`NEVPNProtocol`](../NetworkExtension/nevpnprotocol.md) interface should review their use of the `includeAllNetworks` property. If `includeAllNetworks` is required for your configuration, set [`excludeDeviceCommunication`](../NetworkExtension/nevpnprotocol/excludedevicecommunication.md) to `true` so that Xcode’s device communication is omitted from your tunnel.
 
-#### Revision History
+## Revision History
 
 - **2024-02-27** Updated guidance for macOS 14.4 and Xcode 15.3.
 - **2023-12-18** Created initial version.

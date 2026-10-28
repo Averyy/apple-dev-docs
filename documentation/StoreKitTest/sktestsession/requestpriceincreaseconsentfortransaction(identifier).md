@@ -25,7 +25,7 @@ func requestPriceIncreaseConsentForTransaction(identifier: Int) throws
 - (BOOL) requestPriceIncreaseConsentForTransactionWithIdentifier:(NSUInteger) identifier error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to test how your app handles a price increase consent flow. When you call this method, the testing environment assigns a pending price increase to the subscription indicated by the `identifier`. It also sends the price increase consent message to your app. Note that in the testing environment, changing the price of the subscription is optional.
 
@@ -45,7 +45,7 @@ See the sections below for information about simulating these user responses in 
 
 For more information about increasing prices of auto-renewable subscriptions, see [Managing prices](https://developer.apple.com/app-store/subscriptions/#managing-prices-for-existing-subscribers).
 
-##### Test with dialogs enabled
+### Test with dialogs enabled
 
 Start with [`disableDialogs`](./disabledialogs.md) set to `false`, so the system displays the price increase consent sheet in the testing environment.
 
@@ -55,7 +55,7 @@ To simulate a user not responding to the price increase, the tester closes the p
 
 To simulate a user canceling their subscription, the tester closes the price increase consent sheet without consenting. On the next sheet, select to cancel the subscription. The auto-renewable subscription doesn’t renew at the next renewal period.
 
-##### Test with dialogs disabled
+### Test with dialogs disabled
 
 Start with [`disableDialogs`](./disabledialogs.md) set to `true`, so the system doesn’t displays the price increase consent sheet in the testing environment.
 

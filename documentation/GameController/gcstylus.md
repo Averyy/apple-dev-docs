@@ -23,7 +23,7 @@ class GCStylus
 
 - [Discovering and tracking spatial game controllers and styli](./discovering-and-tracking-spatial-game-controllers-and-styli.md)
 
-#### Overview
+## Overview
 
 Use the `styli` property to get the currently connect stylus accessories when your application starts.  Register for `GCStylusDidConnectNotification` and `GCStylusDidDisconnectNotification` to get notified when a stylus connects of disconnects while your application is running.
 

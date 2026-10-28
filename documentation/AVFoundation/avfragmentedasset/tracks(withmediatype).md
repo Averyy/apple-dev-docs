@@ -26,11 +26,11 @@ func tracks(withMediaType mediaType: AVMediaType) -> [AVFragmentedAssetTrack]
 - (NSArray<AVFragmentedAssetTrack *> *) tracksWithMediaType:(AVMediaType) mediaType;
 ```
 
-#### Return Value
+## Return Value
 
 An array of tracks of a specific media characteristic.
 
-#### Discussion
+## Discussion
 
 Apple discourages the use of this method in iOS 15, tvOS 15, and macOS 12 or later. Load tracks asynchronously using [`loadTracks(withMediaType:completionHandler:)`](./loadtracks%28withmediatype,completionhandler%29.md) instead.
 

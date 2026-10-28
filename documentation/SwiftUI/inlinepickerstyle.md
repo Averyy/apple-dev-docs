@@ -21,7 +21,7 @@ A `PickerStyle` where each option is displayed inline with other views in the cu
 struct InlinePickerStyle
 ```
 
-#### Overview
+## Overview
 
 You can also use [`inline`](./pickerstyle/inline.md) to construct this style.
 

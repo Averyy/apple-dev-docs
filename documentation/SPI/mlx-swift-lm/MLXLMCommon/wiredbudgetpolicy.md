@@ -17,13 +17,13 @@ Budget policy: `baseline + baseBytes + sum(activeSizes)`, optionally capped.
 struct WiredBudgetPolicy
 ```
 
-#### Overview
+## Overview
 
 This policy is useful when you want to bake a learned or precomputed budget (for example, weights + workspace) into the limit calculation while still accounting for active tickets.
 
 > **Note**: Pass a stable `id` if you intend to recreate the policy and keep it grouped with existing tickets.
 
-##### Example
+### Example
 
 ```swift
 let base = weightsBytes + workspaceBytes

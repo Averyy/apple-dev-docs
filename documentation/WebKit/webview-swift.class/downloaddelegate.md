@@ -21,7 +21,7 @@ unowned(unsafe) var downloadDelegate: (any WebDownloadDelegate)! { get set }
 @property (nonatomic, assign) id<WebDownloadDelegate> downloadDelegate;
 ```
 
-#### Discussion
+## Discussion
 
 Implements the [`WebDownload`](../webdownload.md) protocol.
 

@@ -20,7 +20,7 @@ var kSecCSSigningInformation: UInt32 { get }
 kSecCSSigningInformation
 ```
 
-#### Discussion
+## Discussion
 
 The certificate chain and Cryptographic Message Syntax (CMS) data (if any). For ad-hoc signed code, there are no certificates and the CMS data is empty.
 

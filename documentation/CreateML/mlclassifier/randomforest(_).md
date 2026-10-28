@@ -15,7 +15,7 @@ A classifier based on a collection of decision trees trained on subsets of the d
 case randomForest(MLRandomForestClassifier)
 ```
 
-#### Discussion
+## Discussion
 
 Don’t create an [`MLClassifier`](../mlclassifier.md) using one of its enumeration cases. Use the classifier’s initializer instead.
 

@@ -25,7 +25,7 @@ var inputNode: AVAudioInputNode { get }
 @property (nonatomic, readonly) AVAudioInputNode * inputNode;
 ```
 
-#### Discussion
+## Discussion
 
 The framework performs audio input through an input node. The audio engine creates a singleton on demand when first accessing this variable. To receive input, connect another node from the output of the input node, or create a recording tap on it.
 

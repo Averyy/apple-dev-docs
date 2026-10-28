@@ -22,7 +22,7 @@ var prompt: String? { get set }
 @property (nonatomic, copy, readwrite, nullable) NSString * prompt;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `nil`.
 

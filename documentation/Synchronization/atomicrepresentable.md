@@ -21,11 +21,11 @@ A type that supports atomic operations through a separate atomic storage represe
 protocol AtomicRepresentable
 ```
 
-#### Overview
+## Overview
 
 Types that conform to the `AtomicRepresentable` protocol can be used as the `Value` type parameter with the `Atomic` type. Conformances that utilize existing atomic storage representations as their own representation will get the primitive atomic operations available on `Atomic` for free. Such operations include `load`, `store`, `exchange`, `compareExchange`, and `weakCompareExchange`.
 
-#### Conforming to the AtomicRepresentable protocol
+## Conforming to the AtomicRepresentable protocol
 
 Conforming your own custom types allow them to be used in the `Atomic` type and get access to all of the primitive atomic operations explained above. There are two main ways to conform your type to `AtomicRepresentable`:
 
@@ -115,7 +115,7 @@ func atomicGridPoint(_ gridPoint: Atomic<GridPoint>) {
 }
 ```
 
-#### List of Fundamental Atomic Representations
+## List of Fundamental Atomic Representations
 
 When defining your own `AtomicRepresentable` conformance, it is critical that your custom type should choose from the following list of types as its own `AtomicRepresentation`:
 

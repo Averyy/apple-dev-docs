@@ -25,11 +25,11 @@ func CFBundleGetBundleWithIdentifier(_ bundleID: CFString!) -> CFBundle!
 extern CFBundleRefCFBundleGetBundleWithIdentifier(CFStringRef bundleID);
 ```
 
-#### Return Value
+## Return Value
 
 A CFBundle object, or `NULL` if the bundle was not found. Ownership follows the [The Get Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-SW1).
 
-#### Discussion
+## Discussion
 
 For a bundle to be located using its identifier, the bundle must already have been loaded. The principal purpose for locating bundles by identifier is for code in frameworks or plugins to find its own bundle.
 
@@ -37,7 +37,7 @@ Bundle identifiers are created by entering a value for the key `CFBundleIdentifi
 
 To ensure uniqueness, you should create bundle identifiers with the form of reverse-DNS naming style package names, such as `com.MyCompany.MyApp.bundleName`.
 
-##### Special Considerations
+### Special Considerations
 
 If a bundle object is created and the bundle file structure later deleted from the filesystem, this function will still return the original bundle object.
 

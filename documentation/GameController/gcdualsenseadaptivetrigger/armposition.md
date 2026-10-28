@@ -24,7 +24,7 @@ var armPosition: Float { get }
 @property (nonatomic, readonly) float armPosition;
 ```
 
-#### Discussion
+## Discussion
 
 This property represents the value of the stepped mechanical arm inside the trigger and isn’t the same as the trigger’s inherited `value` property. This property ranges between `0` and `1`, where `0` represents the minimum and `1` represents the maximum position.
 

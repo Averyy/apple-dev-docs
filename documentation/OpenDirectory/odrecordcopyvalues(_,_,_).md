@@ -20,11 +20,11 @@ func ODRecordCopyValues(_ record: ODRecordRef!, _ attribute: String!, _ error: U
 extern CFArrayRefODRecordCopyValues(ODRecordRef record, ODAttributeType attribute, CFErrorRef*error);
 ```
 
-#### Return Value
+## Return Value
 
 The value of the requested attribute, or `NULL` if the attribute doesn’t exist.
 
-#### Discussion
+## Discussion
 
 If the requested attribute has not been fetched before, it is fetched in order to return its value. If the record has been fetched before, internal storage is consulted instead of the directory.
 

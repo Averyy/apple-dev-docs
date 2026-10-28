@@ -19,7 +19,7 @@ func getLineDash(_ pattern: UnsafeMutablePointer<CGFloat>?, count: UnsafeMutable
 - (void) getLineDash:(CGFloat *) pattern count:(NSInteger *) count phase:(CGFloat *) phase;
 ```
 
-#### Discussion
+## Discussion
 
 The array in the `pattern` parameter must be large enough to hold all of the returned values in the pattern. If you are not sure how many values there might be, you can call this method twice. The first time you call it, do not pass a value for `pattern` but use the returned value in `count` to allocate an array of floating-point numbers that you can then pass in the second time.
 

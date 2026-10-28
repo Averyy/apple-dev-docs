@@ -25,7 +25,7 @@ class NSException
 @interface NSException : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use [`NSException`](./nsexception.md) to implement exception handling. An exception is a special condition that interrupts the normal flow of program execution. Each application can interrupt the program for different reasons. For example, one application might interpret saving a file in a directory that is write-protected as an exception. In this sense, the exception is equivalent to an error. Another application might interpret the user’s key-press (for example, Control-C) as an exception: an indication that a long-running process should abort.
 

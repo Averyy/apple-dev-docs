@@ -23,7 +23,7 @@ var accessibilityTraits: UIAccessibilityTraits { get set }
 @property (nonatomic, assign) UIAccessibilityTraits accessibilityTraits;
 ```
 
-#### Discussion
+## Discussion
 
 A trait describes a single aspect of an element’s behavior, state, or usage. Several traits are combined in this property (using an OR operation) to give a complete picture of the element to an assistive application. See “Accessibility Traits” in [UIAccessibility](../uiaccessibility-protocol.md) for a complete list of traits.
 

@@ -19,7 +19,7 @@ func performAction(_ op: NSTextFinder.Action)
 - (void) performAction:(NSTextFinderAction) op;
 ```
 
-#### Discussion
+## Discussion
 
 Objects that respond to [`performTextFinderAction(_:)`](../nsresponder/performtextfinderaction%28_%29.md) typically call [`validateAction(_:)`](./validateaction%28_%29.md) to ensure that the action is valid and then invoke [`performAction(_:)`](./performaction%28_%29.md) if validation is successful.
 

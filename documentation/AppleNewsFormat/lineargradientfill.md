@@ -19,13 +19,13 @@ object LinearGradientFill
 
 - [Applying a Background to a Component](../AppleNews/applying-a-background-to-a-component.md)
 
-#### Discussion
+## Discussion
 
 Use the `LinearGradientFill` object to cause the background for a component to be a linear gradient between two (or more) colors. Specify the colors you want to use and a percentage for each color along with an angle for the gradient and the behavior of the background when the person scrolls.
 
 You can use this object in [`ComponentStyle`](./componentstyle.md).
 
-##### Example
+### Example
 
 ```json
 {

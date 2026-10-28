@@ -24,7 +24,7 @@ class VNDetectFaceCaptureQualityRequest
 @interface VNDetectFaceCaptureQualityRequest : VNImageBasedRequest
 ```
 
-#### Overview
+## Overview
 
 This request produces or updates a [`VNFaceObservation`](./vnfaceobservation.md) object’s property [`faceCaptureQuality`](./vnfaceobservation/facecapturequality-bjg5.md) with a floating-point value. The value ranges from `0` to `1`. Faces with quality closer to `1` are better lit, sharper, and more centrally positioned than faces with quality closer to `0`.
 

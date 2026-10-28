@@ -15,7 +15,7 @@ The request body that contains consumption information for an In-App Purchase.
 object ConsumptionRequest
 ```
 
-#### Discussion
+## Discussion
 
 Use `ConsumptionRequest` to provide information about the customer’s In-App Purchase when you call the [`Send Consumption Information`](./send-consumption-information.md) endpoint.
 

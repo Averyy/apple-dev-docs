@@ -25,7 +25,7 @@ var vertexDescriptor: MDLVertexDescriptor { get set }
 @property (nonatomic, copy, readwrite) MDLVertexDescriptor * vertexDescriptor;
 ```
 
-#### Discussion
+## Discussion
 
 Read this property to determine the vertex data format to be used in rendering the mesh. By writing a new value to this property, you can restructure the vertex data in the mesh.
 

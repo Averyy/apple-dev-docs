@@ -15,7 +15,7 @@ The name of an exception raised when there is already a print operation in proce
 extern NSExceptionName NSPrintOperationExistsException;
 ```
 
-#### Discussion
+## Discussion
 
 The methods that raise this exception are the `EPSOperation...` and `printOperation...`.
 

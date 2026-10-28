@@ -5,7 +5,7 @@
 
 Aligns text horizontally in an element.
 
-#### Overview
+## Overview
 
 Use the `text-align` style to specify how the text should be horizontally aligned in an element.
 
@@ -15,7 +15,7 @@ Here’s an example that horizontally centers the text in a title element:
 <title style="text-align:center">This text is horizontally centered.</title>
 ```
 
-##### Values
+### Values
 
 - **`left`**: The text aligns along the left edge of the containing element.
 - **`right`**: The text aligns along the right edge of the containing element.
@@ -23,7 +23,7 @@ Here’s an example that horizontally centers the text in a title element:
 - **`justified`**: The text is justified in the containing element.
 - **`natural`**: The text aligns based on the default alignment associated with the current localization of the app. The default for left-to-right scripts is left-alignment along the left edge of the containing element. The default alignment for right-to-left scripts is right-alignment along the right edge of the containing element.
 
-##### Elements that Use text-align
+### Elements that Use text-align
 
 - [text](./text.md)
 - [title](./title.md)

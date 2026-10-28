@@ -25,7 +25,7 @@ func ColorSyncProfileContainsTag(_ prof: ColorSyncProfile!, _ signature: CFStrin
 extern bool ColorSyncProfileContainsTag(ColorSyncProfileRef prof, CFStringRef signature);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the tag exists; otherwise, `false`.
 

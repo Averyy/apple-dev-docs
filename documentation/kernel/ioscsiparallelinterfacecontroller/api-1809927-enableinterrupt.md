@@ -12,7 +12,7 @@ void EnableInterrupt (
  void );
 ```
 
-#### Overview
+## Overview
 
 Method that the HBA child class can call to enable the associated IOInterruptEventSource.
 

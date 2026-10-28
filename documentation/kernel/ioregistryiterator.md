@@ -19,7 +19,7 @@ class IORegistryIterator : OSIterator
 typedef struct IORegistryIterator IORegistryIterator;
 ```
 
-#### Overview
+## Overview
 
 An iterator that can traverse the children or parents of a registry entry in a plane, and recurse. Access to the registry is protected against multiple threads, but an IORegistryIterator instance is for use by one thread only.
 

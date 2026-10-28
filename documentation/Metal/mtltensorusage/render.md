@@ -24,7 +24,7 @@ static var render: MTLTensorUsage { get }
 MTLTensorUsageRender
 ```
 
-#### Discussion
+## Discussion
 
 You can use tensors with this context in [`MTL4RenderCommandEncoder`](../mtl4rendercommandencoder.md) or [`MTLRenderCommandEncoder`](../mtlrendercommandencoder.md) instances.
 

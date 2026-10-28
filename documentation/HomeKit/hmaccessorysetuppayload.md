@@ -22,7 +22,7 @@ class HMAccessorySetupPayload
 @interface HMAccessorySetupPayload : NSObject
 ```
 
-#### Overview
+## Overview
 
 The setup payload provides a URL to authenticate an accessory. Typically, the URL comes from scanning a QR code on the accessory. Use a setup payload to authenticate devices that are already deployed, for which scanning a QR code would be difficult, or if you need to provide an optional ownership token that you negotiate with the accessory outside of HomeKit.
 

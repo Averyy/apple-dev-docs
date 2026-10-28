@@ -20,11 +20,11 @@ Returns the reserved regions of a kind that overlap the view.
 @preconcurrency func reservedRegions(kind: UIView.ReservedRegion.Kind, options: UIView.ReservedRegion.QueryOptions = []) -> [UIView.ReservedRegion]
 ```
 
-#### Return Value
+## Return Value
 
 The reserved regions that overlap the view, with frames in the view’s coordinate space.
 
-#### Discussion
+## Discussion
 
 Use this method to arrange your view’s content around areas that the device hardware reserves, such as a camera or the fold of a hinge. UIKit tracks the regions you read in [`updateConstraints()`](./updateconstraints%28%29.md) and runs it again when the regions change.
 

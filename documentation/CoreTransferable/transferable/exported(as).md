@@ -21,7 +21,7 @@ Using the type’s `Transferable` conformance implementation, exports a value as
 func exported(as contentType: UTType?) async throws -> Data
 ```
 
-#### Discussion
+## Discussion
 
 If the [`Transferable`](../transferable.md) is backed by a file `URL`, this might cause loading the entire file contents into memory. This function uses the first representation that conforms to the given content type in `static var transferRepresentation` requirement of the `Transferable` protocol or in the `var body` property of a custom `TransferRepresentation`.
 

@@ -20,7 +20,7 @@ var buffer: any MTLBuffer { get }
 @property (nonatomic, strong, readonly) id<MTLBuffer> buffer;
 ```
 
-#### Discussion
+## Discussion
 
 Each vector in the buffer is of the type defined by [`format`](./format.md). Every vector may itself contain multiple scalars, defined by [`componentsPerVector`](./componentspervector.md).
 

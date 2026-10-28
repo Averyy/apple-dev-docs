@@ -29,7 +29,7 @@ func reset()
 - [Implementing a Continuous Gesture Recognizer](../implementing-a-continuous-gesture-recognizer.md)
 - [Implementing a discrete gesture recognizer](../implementing-a-discrete-gesture-recognizer.md)
 
-#### Discussion
+## Discussion
 
 The runtime calls this method after the gesture-recognizer state has been set to [`UIGestureRecognizer.State.ended`](./state-swift.enum/ended.md), [`recognized`](./state-swift.enum/recognized.md), [`UIGestureRecognizer.State.cancelled`](./state-swift.enum/cancelled.md), or [`UIGestureRecognizer.State.failed`](./state-swift.enum/failed.md)—in other words, any of the terminal states for a gesture recognition attempt. Subclasses should reset any internal state in preparation for a new attempt at gesture recognition. After this method is called, the gesture recognizer receives no further updates for touches that have begun but haven’t ended.
 

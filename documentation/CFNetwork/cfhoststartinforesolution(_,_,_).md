@@ -26,17 +26,17 @@ func CFHostStartInfoResolution(_ theHost: CFHost, _ info: CFHostInfoType, _ erro
 extern Boolean CFHostStartInfoResolution(CFHostRef theHost, CFHostInfoType info, CFStreamError *error);
 ```
 
-#### Return Value
+## Return Value
 
 `TRUE` if the resolution was started (asynchronous mode); `FALSE` if another resolution is already in progress for `theHost` or if an error occurred.
 
-#### Discussion
+## Discussion
 
 This function retrieves the information specified by `info` and stores it in the host.
 
 In synchronous mode, this function blocks until the resolution has completed, in which case this function returns `TRUE`, until the resolution is stopped by calling [`CFHostCancelInfoResolution(_:_:)`](./cfhostcancelinforesolution%28_,_%29.md) from another thread, in which case this function returns `FALSE`, or until an error occurs.
 
-##### Special Considerations
+### Special Considerations
 
 This function is thread safe.
 

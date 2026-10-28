@@ -15,11 +15,11 @@ Starts the controller in response to a call from the framework.
 virtual kern_return_t UserStartController();
 ```
 
-#### Return Value
+## Return Value
 
 A value that indicates the result of initialization. [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) indicates success. For error definitions, see [IOKit Constants](../../iokit/iokit_constants.md).
 
-#### Discussion
+## Discussion
 
 The framework always calls [`UserStartController`](./userstartcontroller.md) before sending any requests to the driver for execution. The framework calls this method after [`UserInitializeController`](./userinitializecontroller.md) to start the services that the specific host bus adapter (HBA) dext driver provides. After completing this call, all services provided by the HBA driver are available to the client.
 

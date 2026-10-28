@@ -19,7 +19,7 @@ The current content configuration of the cell.
 @property (nonatomic, copy, nullable) id<UIContentConfiguration> contentConfiguration;
 ```
 
-#### Discussion
+## Discussion
 
 Using a content configuration, you can set the cell’s content and styling for a variety of different cell states.
 

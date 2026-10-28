@@ -23,11 +23,11 @@ func sec_identity_create_with_certificates(_ identity: SecIdentity, _ certificat
 sec_identity_tsec_identity_create_with_certificates(SecIdentityRef identity, CFArrayRef certificates);
 ```
 
-#### Return Value
+## Return Value
 
 A `sec_identity_t` instance.
 
-#### Discussion
+## Discussion
 
 Create an ARC-able `sec_identity_t` instance from a `SecIdentityRef` and array of SecCertificateRef instances.
 

@@ -21,7 +21,7 @@ An image analysis request that finds facial features like eyes and mouth in an i
 struct DetectFaceLandmarksRequest
 ```
 
-#### Overview
+## Overview
 
 By default, a face landmarks request first locates all faces in the input image, then analyzes each to detect facial features. If you’ve already located all the faces in an image, or want to detect landmarks in only a subset of the faces in the image, set the inputFaceObservations property to an array of [`FaceObservation`](./faceobservation.md) objects representing the faces you want to analyze. You can either use face observations output by a [`DetectFaceRectanglesRequest`](./detectfacerectanglesrequest.md) or manually create `FaceObservation` instances with the bounding boxes of the faces you want to analyze.
 

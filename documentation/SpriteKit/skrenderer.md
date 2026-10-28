@@ -28,7 +28,7 @@ class SKRenderer
 
 - [Choosing a SpriteKit Scene Renderer](./choosing-a-spritekit-scene-renderer.md)
 
-#### Overview
+## Overview
 
 [`SKRenderer`](./skrenderer.md) allows an app to mix SpriteKit and Metal content by rendering an [`SKScene`](./skscene.md) into a Metal command buffer. The reasons an app may do this instead of displaying a scene in [`SKView`](./skview.md) are:
 

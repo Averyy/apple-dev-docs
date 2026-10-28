@@ -19,11 +19,11 @@ init(byFilteringFile filename: String)
 + (NSPasteboard *) pasteboardByFilteringFile:(NSString *) filename;
 ```
 
-#### Return Value
+## Return Value
 
 The new pasteboard object.
 
-#### Discussion
+## Discussion
 
 No filter service is invoked until the data is actually requested, so invoking this method is reasonably inexpensive.
 

@@ -23,7 +23,7 @@ class func gpu() -> Self?
 + (instancetype) gpuDevice;
 ```
 
-#### Return Value
+## Return Value
 
 A device that uses a GPU, or `nil` if no GPU exists.
 

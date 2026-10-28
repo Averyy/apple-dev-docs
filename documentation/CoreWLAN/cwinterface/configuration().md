@@ -19,7 +19,7 @@ func configuration() -> CWConfiguration?
 - (CWConfiguration *) configuration;
 ```
 
-#### Discussion
+## Discussion
 
 Returns *nil* in the case of an error.
 

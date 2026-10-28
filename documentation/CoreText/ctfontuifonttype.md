@@ -25,7 +25,7 @@ enum CTFontUIFontType
 enum CTFontUIFontType : uint32_t;
 ```
 
-#### Overview
+## Overview
 
 Use these constants with the [`CTFontCreateUIFontForLanguage(_:_:_:)`](./ctfontcreateuifontforlanguage%28_,_,_%29.md) function to indicate the intended user interface use of the font reference to be created.
 

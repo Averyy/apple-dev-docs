@@ -25,11 +25,11 @@ init?(byMerging models: [NSManagedObjectModel], forStoreMetadata metadata: [Stri
 + (NSManagedObjectModel *) modelByMergingModels:(NSArray<NSManagedObjectModel *> *) models forStoreMetadata:(NSDictionary<NSString *,id> *) metadata;
 ```
 
-#### Return Value
+## Return Value
 
 A  merged model from `models` for the version information in `metadata`. If a model cannot be created to match the version information in `metadata`, returns `nil`.
 
-#### Discussion
+## Discussion
 
 This is the companion method to [`mergedModel(from:forStoreMetadata:)`](./mergedmodel%28from,forstoremetadata%29.md).
 

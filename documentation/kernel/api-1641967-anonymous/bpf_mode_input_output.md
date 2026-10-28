@@ -13,7 +13,7 @@
 BPF_MODE_INPUT_OUTPUT = 3
 ```
 
-#### Discussion
+## Discussion
 
 Enable input and output.
 

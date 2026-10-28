@@ -17,11 +17,11 @@ Returns the next dictionary in the sequence.
 func next() async throws -> WAPairedDevice.DevicesSequence.AsyncIterator.Element?
 ```
 
-#### Return Value
+## Return Value
 
 The next [`WAPairedDevice.Devices`](../../devices.md) snapshot, or `nil` if it’s at the end of the sequence.
 
-#### Discussion
+## Discussion
 
 The [`WAPairedDevice.Devices`](../../devices.md) dictionary holds the latest snapshot of the currently paired devices that are known and accessible to your app.
 

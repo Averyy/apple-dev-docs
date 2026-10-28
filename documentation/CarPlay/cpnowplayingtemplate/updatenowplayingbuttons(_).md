@@ -21,7 +21,7 @@ func updateNowPlayingButtons(_ nowPlayingButtons: [CPNowPlayingButton])
 - (void) updateNowPlayingButtons:(NSArray<__kindof CPNowPlayingButton *> *) nowPlayingButtons;
 ```
 
-#### Discussion
+## Discussion
 
 You can provide a maximum of five playback control buttons. The template arranges the buttons using the array’s order, from the leading edge of the CarPlay screen to the trailing edge.
 

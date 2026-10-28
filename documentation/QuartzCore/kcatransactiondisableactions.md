@@ -24,7 +24,7 @@ let kCATransactionDisableActions: String
 extern NSString * const kCATransactionDisableActions;
 ```
 
-#### Discussion
+## Discussion
 
 If [`true`](../Swift/true.md), implicit actions for property changes made within the transaction group are suppressed.  The value for this key must be an instance of [`NSNumber`](../Foundation/nsnumber.md).
 

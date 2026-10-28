@@ -19,7 +19,7 @@ class var noRecentsMenuItemTag: Int { get }
 static const NSInteger NSSearchFieldNoRecentsMenuItemTag;
 ```
 
-#### Discussion
+## Discussion
 
 This item is hidden if there have been recent searches.
 

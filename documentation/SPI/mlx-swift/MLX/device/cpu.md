@@ -17,11 +17,11 @@ Current CPU device.
 static var cpu: Device { get }
 ```
 
-#### Discussion
+## Discussion
 
 Note: previously this returned a `static` CPU device.
 
-##### See Also
+### See Also
 
 - [`gpu`](./gpu.md)
 - [`cpu`](../stream/cpu.md)

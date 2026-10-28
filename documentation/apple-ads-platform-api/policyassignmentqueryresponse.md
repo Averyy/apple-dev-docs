@@ -15,11 +15,11 @@ The response returned by the Query Rejection Reasons endpoint.
 object PolicyAssignmentQueryResponse
 ```
 
-#### Discussion
+## Discussion
 
 The `PolicyAssignmentQueryResponse` object extends the standard [`QueryResponse`](./queryresponse.md) envelope. The `result` array contains [`BrandRejectionReasonResponse`](./brandrejectionreasonresponse.md) objects, each describing a policy assignment with rejection reason details for a brand entity.
 
-##### Example
+### Example
 
 ```json
 {

@@ -24,7 +24,7 @@ var prominentButtonAppearance: UIBarButtonItemAppearance { get set }
 @property (nonatomic, copy, readwrite) UIBarButtonItemAppearance * prominentButtonAppearance;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to configure the appearance of bar button items that use `UIBarButtonItemStyleProminent`. If the navigation bar doesn’t have any buttons using this style, this property has no effect.
 

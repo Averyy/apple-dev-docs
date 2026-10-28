@@ -21,7 +21,7 @@ The kind of error this publisher might publish.
 typealias Failure = Never
 ```
 
-#### Discussion
+## Discussion
 
 The optional publisher never produces errors.
 

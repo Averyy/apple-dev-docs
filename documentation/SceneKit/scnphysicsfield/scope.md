@@ -25,7 +25,7 @@ var scope: SCNPhysicsFieldScope { get set }
 @property (nonatomic) SCNPhysicsFieldScope scope;
 ```
 
-#### Discussion
+## Discussion
 
 First, define a field’s region using its [`halfExtent`](./halfextent.md) property and the [`position`](../scnnode/position.md) property of the node containing the field. Then, use the [`scope`](./scope.md) property to choose whether the field’s area of effect is the interior of the region (the default) or all space outside the region.
 

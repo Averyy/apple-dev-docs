@@ -17,11 +17,11 @@ Implementation of DoRA `QuantizedLinear` replacement layer.
 class QDoRALinear
 ```
 
-#### Overview
+## Overview
 
 See [`DoRALinear`](./doralinear.md) (equivalent class for `Linear` layers) for more information.
 
-##### See Also
+### See Also
 
 - [`DoRALinear`](./doralinear.md)
 

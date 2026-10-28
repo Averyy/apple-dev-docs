@@ -19,7 +19,7 @@ class func registerForServices()
 + (void) registerForServices;
 ```
 
-#### Discussion
+## Discussion
 
 This method is invoked automatically when the first instance of a text view is created; you should never need to invoke it directly.
 

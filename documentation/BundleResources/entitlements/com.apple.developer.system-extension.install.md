@@ -14,7 +14,7 @@ A Boolean value that indicates whether your app has permission to activate or de
 - **Name**: `com.apple.developer.system-extension.install` (System Extension)
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 To add this entitlement to your app, enable the System Extension capability in Xcode. Add this entitlement for all system extension types, including DriverKit extensions.
 

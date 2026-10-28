@@ -20,7 +20,7 @@ An error message that indicates the user stopped the stream.
 static var userStopped: SCStreamError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 As a best practice, handle errors of this type as an intentional user interaction rather than an error.
 

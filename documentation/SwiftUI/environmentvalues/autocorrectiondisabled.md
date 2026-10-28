@@ -22,7 +22,7 @@ A Boolean value that determines whether the view hierarchy has auto-correction e
 var autocorrectionDisabled: Bool { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `false`.
 

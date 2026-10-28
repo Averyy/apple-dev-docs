@@ -20,7 +20,7 @@ var isRequired: Bool { get set }
 @property (nonatomic, assign, getter=isRequired) BOOL required;
 ```
 
-#### Discussion
+## Discussion
 
 Governs what happens when the executable cannot be enforced — for example, when signature validation fails under [`allowsOnlyParticipantsToRun`](../aeassessmentconfiguration/allowsonlyparticipantstorun.md). A non-required participant is silently dropped; a required one prevents the session from beginning.
 

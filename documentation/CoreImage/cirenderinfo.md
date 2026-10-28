@@ -24,7 +24,7 @@ class CIRenderInfo
 @interface CIRenderInfo : NSObject
 ```
 
-#### Overview
+## Overview
 
 A `CIRenderInfo` object allows Xcode Quick Look to visualize the render graph with detailed timing information.
 

@@ -21,7 +21,7 @@ A placement the system positions automatically.
 static let automatic: ToolbarItemPlacement
 ```
 
-#### Discussion
+## Discussion
 
 In macOS and in Mac Catalyst apps, the system places items in the current toolbar section in order of leading to trailing. On watchOS, only the first item appears, pinned beneath the navigation bar.
 

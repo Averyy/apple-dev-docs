@@ -24,7 +24,7 @@ var fragmentFunction: (any MTLFunction)? { get set }
 @property (nonatomic, strong, readwrite, nullable) id<MTLFunction> fragmentFunction;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `nil`. If this value is `nil`, then there is no fragment function and therefore no writes to the color render target occur. Depth and stencil writes and visibility result counting can still proceed.
 

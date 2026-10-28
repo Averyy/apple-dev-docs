@@ -21,7 +21,7 @@ A notification that posts when there are changes to context’s registered manag
 static let NSManagedObjectContextObjectsDidChange: NSNotification.Name
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**:  This notification posts only when there are changes to the context’s registered managed objects. It doesn’t post when a fetch adds managed objects to the context.
 

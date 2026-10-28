@@ -25,7 +25,7 @@ struct TestOption
 typedef NSString * SCNPhysicsTestOption;
 ```
 
-#### Discussion
+## Discussion
 
 Pass a dictionary containing one or more of these keys (with values as described above) for the `options` parameter when calling one of these methods:
 

@@ -12,11 +12,11 @@ virtual IOService * matchLocation(
  IOService *client );
 ```
 
-#### Return Value
+## Return Value
 
 Returns the IOService instance to be used for location matching.
 
-#### Overview
+## Overview
 
 By default, a location matching property will be applied to an IOService object's provider. This method allows that behavior to be overridden by families.
 

@@ -22,7 +22,7 @@ case black
 PKAddPassButtonStyleBlack
 ```
 
-#### Discussion
+## Discussion
 
 Use this style when displaying a button against a light background. ![](https://developer.apple.com/tutorials/images/com.apple.passkit/media-2557098@2x.png)
 

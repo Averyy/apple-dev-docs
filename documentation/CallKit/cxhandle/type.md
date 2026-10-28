@@ -23,7 +23,7 @@ var type: CXHandle.HandleType { get }
 @property (nonatomic, readonly) CXHandleType type;
 ```
 
-#### Discussion
+## Discussion
 
 For possible values, see [`CXHandle.HandleType`](./handletype.md).
 

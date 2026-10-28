@@ -23,11 +23,11 @@ func MIDIGetDriverDeviceList(_ driver: MIDIDriverRef) -> MIDIDeviceListRef
 extern MIDIDeviceListRef MIDIGetDriverDeviceList(MIDIDriverRef driver);
 ```
 
-#### Return Value
+## Return Value
 
 The requested device list.
 
-#### Discussion
+## Discussion
 
 Dispose this list when you’re finished working with it by calling [`MIDIDeviceListDispose(_:)`](./mididevicelistdispose%28_%29.md).
 

@@ -13,11 +13,11 @@ virtual IOService * probe(
  SInt32 *score );
 ```
 
-#### Return Value
+## Return Value
 
 An IOService instance or zero when the probe is unsuccessful. In almost all cases the value of `this` is returned on success. If another IOService object is returned, the probed instance is detached and freed, and the returned instance is used in its stead for `start`.
 
-#### Overview
+## Overview
 
 The registration process for an IOService object (the provider) includes instantiating possible driver clients. The `probe` method is called in the client instance to check the matched service can be used before the driver is considered to be started. Since matching screens many possible providers, in many cases the `probe` method can be left unimplemented by IOService subclasses. The client is already attached to the provider when `probe` is called.
 

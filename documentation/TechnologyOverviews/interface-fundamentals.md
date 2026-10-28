@@ -13,11 +13,11 @@ To build your app’s interface, you can use standard system views, draw content
 
 The app-builder technologies you use to create your app maintain a separation between your app’s data and the views and other interface elements you use to display that data. Your data model objects are always the source of truth for your app’s content. When you configure a view, you pass a copy of your data to the view for display purposes. If interactions with a view cause a value to change, your app’s infrastructure is responsible for synchronizing the changes with your data objects. When you use SwiftUI, this process is more automatic, but with UIKit and AppKit you synchronize the changes yourself.
 
-#### Choose a design approach for the target platform
+## Choose a design approach for the target platform
 
 The platform you target naturally affects the approach you take to building your interface. You want apps to feel like they belong on a given platform, which might require you to tweak your interface on each platform.
 
-##### iOS and iPadOS
+### iOS and iPadOS
 
 ![An image of the landmarks app on iPhone and iPad.](https://developer.apple.com/tutorials/images/com.apple.TechnologyOverviews/interface-fundamentals-ios-landmarks@2x.png)
 
@@ -27,7 +27,7 @@ iOS and iPadOS apps need to handle different iPhone and iPad sizes and orientati
 
 On iPad, don’t forget to support features that people can access from Magic Keyboard and Apple Pencil. Magic Keyboard adds pointer-based navigation, [menu support](https://developer.apple.com/design/human-interface-guidelines/menus), and hover-based interactions. Apple Pencil enables [high-precision, low-latency input](../UIKit/handling-input-from-apple-pencil.md) and also lets you capture altitude, azimuth, and pressure information, which a drawing app can use for content creation.
 
-##### macOS
+### macOS
 
 ![An image of the landmarks app on Mac.](https://developer.apple.com/tutorials/images/com.apple.TechnologyOverviews/interface-fundamentals-macos-landmarks@2x.png)
 
@@ -37,7 +37,7 @@ Make sure your windows support flexible layouts and adapt to different sizes and
 
 The menu bar along the top of the desktop displays your app’s menus. Identify your app’s relevant actions, and craft [menus](https://developer.apple.com/design/human-interface-guidelines/menus) that reflect how people interact with your content.
 
-##### tvOS
+### tvOS
 
 ![An image of the Home Screen on a tvOS device.](https://developer.apple.com/tutorials/images/com.apple.TechnologyOverviews/interface-fundamentals-tvos-home-screen@2x.png)
 
@@ -45,7 +45,7 @@ The menu bar along the top of the desktop displays your app’s menus. Identify 
 
 [Lockups](https://developer.apple.com/design/human-interface-guidelines/lockups) are one way to simplify navigation and promote consistency among similar items in your UI. A lockup is a group of related views that you combine into a single, selectable element. For example, a movie lockup might include the movie’s title, description, cast list, and poster image. When someone selects a movie, tvOS places focus on the entire lockup instead of on individual items.
 
-##### visionOS
+### visionOS
 
 ![An illustration of a person wearing an Apple Vision Pro and viewing windows and a volume.](https://developer.apple.com/tutorials/images/com.apple.TechnologyOverviews/vision-conceptual.png)
 
@@ -53,7 +53,7 @@ The menu bar along the top of the desktop displays your app’s menus. Identify 
 
 Showcase your app’s 3D content by [adding a volume](../visionOS/adding-3d-content-to-your-app.md), or add a Full Space to [create an immersive experience](../visionOS/creating-fully-immersive-experiences.md). Build and animate your app’s 3D content as [USD assets](../USD/creating-usd-files-for-apple-devices.md) and incorporate them into your scenes using [RealityKit](../RealityKit/RealityKit.md).
 
-##### watchOS
+### watchOS
 
 ![An image of a widget in a Smart Stack on Apple Watch.](https://developer.apple.com/tutorials/images/com.apple.TechnologyOverviews/interface-fundamentals-watchos-smart-stack@2x.png)
 
@@ -67,7 +67,7 @@ Showcase your app’s 3D content by [adding a volume](../visionOS/adding-3d-cont
 - *Complications* are small visual elements that appear on the watch face in predefined areas. Use them to display your app’s most crucial information, and to help people engage with your app’s content. [Build them](../WidgetKit/creating-accessory-widgets-and-watch-complications.md) using the [WidgetKit](../WidgetKit/WidgetKit.md) framework and deliver them with your app.
 - *Notifications* display time-sensitive information, using haptics, sound, and visual cues to get the person’s attention. [Create notifications](../watchOS-Apps/notifications.md) locally from your app, or push notifications to Apple Watch remotely from a server. Provide a [custom interface](../UserNotificationsUI/UserNotificationsUI.md) to incorporate custom content, images, or media.
 
-#### Manage assets for your interface
+## Manage assets for your interface
 
 Most apps incorporate data from external files into their content. For example, an app’s interface might incorporate images, icons, audio, textures, and other types of content. An app can also store data files with any content, and use them to configure views or other parts of the app. All of these external files are assets for you to manage.
 
@@ -85,7 +85,7 @@ To load resource files present in your app bundle:
 - Load color assets using the [`Color`](../SwiftUI/color.md) type (SwiftUI), [`UIColor`](../UIKit/uicolor.md) type (UIKit), or [`NSColor`](../AppKit/nscolor.md) type (AppKit).
 - Locate other resource files in your bundle using the [`Bundle`](../Foundation/bundle.md) type. This type returns the URL for the filename you specify.
 
-#### Apply standard behaviors to your interface
+## Apply standard behaviors to your interface
 
 There are a few features you always want to build into your interface:
 
@@ -95,7 +95,7 @@ There are a few features you always want to build into your interface:
 - *Undo support*. Identify the actions people take in your app and build tasks that you can easily [undo or redo](../Foundation/undomanager.md).
 - *Pasteboard*. Support data exchange in your app and the rest of the system through Cut, Copy, and Paste operations. A pasteboard type in [SwiftUI](../SwiftUI/clipboard.md), [UIKit](../AppKit/documents-data-and-pasteboard.md), and [AppKit](../UIKit/documents-data-and-pasteboard.md) manages the content you transfer to it.
 
-#### Consider platform-specific behaviors in your design
+## Consider platform-specific behaviors in your design
 
 When making decisions about how to build your interface, the platform you target affects some of the decisions you must make. Some features might impact your interface on one platform, but not on others. The following table lists the types of decisions to consider, and the support each platform offers.
 

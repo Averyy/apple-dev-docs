@@ -25,7 +25,7 @@ convenience init(dictionary otherDictionary: [AnyHashable : Any])
 - (instancetype) initWithDictionary:(NSDictionary<id,id> *) otherDictionary;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized dictionary—which might be different than the original receiver—containing the keys and values found in `otherDictionary`.
 

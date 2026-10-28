@@ -25,7 +25,7 @@ func CFAttributedStringCreateMutable(_ alloc: CFAllocator!, _ maxLength: CFIndex
 extern CFMutableAttributedStringRefCFAttributedStringCreateMutable(CFAllocatorRef alloc, CFIndex maxLength);
 ```
 
-#### Return Value
+## Return Value
 
 A new mutable attributed string. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 

@@ -21,11 +21,11 @@ init(url URL: URL, entersReaderIfAvailable: Bool)
 - (instancetype) initWithURL:(NSURL *) URL entersReaderIfAvailable:(BOOL) entersReaderIfAvailable;
 ```
 
-#### Return Value
+## Return Value
 
 A newly created Safari view controller.
 
-#### Discussion
+## Discussion
 
 `entersReaderIfAvailable` applies only to the first page loaded.
 

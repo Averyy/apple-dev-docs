@@ -17,7 +17,7 @@ Initializer allowing creation of `MLXArray` from an array of `Double` values wit
 convenience init(converting value: [Double], _ shape: (some Collection<Int>)? = [Int]?.none)
 ```
 
-#### Discussion
+## Discussion
 
 Note: this converts the types to `Float`, which is a type representable in `MLXArray`
 
@@ -25,7 +25,7 @@ Note: this converts the types to `Float`, which is a type representable in `MLXA
 let array = MLXArray(convert: [0.5, 0.9])
 ```
 
-##### See Also
+### See Also
 
 - [Initialization](../initialization.md)
 

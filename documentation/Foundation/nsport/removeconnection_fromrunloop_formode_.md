@@ -18,7 +18,7 @@ Removes the receiver from the list of ports monitored by `runLoop` in the given 
 - (void) removeConnection:(NSConnection *) conn fromRunLoop:(NSRunLoop *) runLoop forMode:(NSRunLoopMode) mode;
 ```
 
-#### Discussion
+## Discussion
 
 You should not call this method directly. The method is provided for subclassers who wish to provide their own custom types of `NSPort`. The `NSConnection` object, `conn`, calls this method at the appropriate times.
 

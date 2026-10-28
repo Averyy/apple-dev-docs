@@ -14,7 +14,7 @@ Rotates a Vector2 (Float) about the origin in 2D.
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Parameter Types
+## Parameter Types
 
 | Input | Type |
 | --- | --- |
@@ -25,7 +25,7 @@ Rotates a Vector2 (Float) about the origin in 2D.
 | --- | --- |
 | `Out` | Vector2f |
 
-#### Parameter descriptions
+## Parameter descriptions
 
 - **`In`**: The vector to rotate.
 - **`Amount`**: The amount of degrees to rotate the `In` vector. A positive value rotates the `In` vector counterclockwise. The default value is `0`.

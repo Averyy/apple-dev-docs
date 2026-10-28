@@ -19,7 +19,7 @@ var allRecipientAddresses: [MEEmailAddress] { get }
 @property (nonatomic, copy, readonly) NSArray<MEEmailAddress *> * allRecipientAddresses;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains all values in [`toAddresses`](./toaddresses.md), [`ccAddresses`](./ccaddresses.md), and [`bccAddresses`](./bccaddresses.md).
 

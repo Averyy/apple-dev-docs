@@ -21,7 +21,7 @@ An interpolating spring animation that uses a damped spring model to produce val
 static func interpolatingSpring(_ spring: Spring, initialVelocity: Double = 0.0) -> Animation
 ```
 
-#### Discussion
+## Discussion
 
 These vales are used to interpolate within the `[from, to]` range of the animated property. Preserves velocity across overlapping animations by adding the effects of each animation.
 

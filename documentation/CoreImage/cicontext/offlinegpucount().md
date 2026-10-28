@@ -19,11 +19,11 @@ class func offlineGPUCount() -> UInt32
 + (unsigned int) offlineGPUCount;
 ```
 
-#### Return Value
+## Return Value
 
 The number of offline GPU devices.
 
-#### Discussion
+## Discussion
 
 If this count is greater than zero, the system has attached GPU devices that are not currently driving a display. You can use these devices for Core Image rendering by creating a context with the [`init(forOfflineGPUAtIndex:)`](./init%28forofflinegpuatindex%29.md) or[`init(forOfflineGPUAtIndex:colorSpace:options:sharedContext:)`](./init%28forofflinegpuatindex,colorspace,options,sharedcontext%29.md) method.
 

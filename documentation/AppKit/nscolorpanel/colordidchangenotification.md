@@ -19,7 +19,7 @@ class let colorDidChangeNotification: NSNotification.Name
 extern NSNotificationName NSColorPanelColorDidChangeNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is the notifying `NSColorPanel`. This notification does not contain a `userInfo` dictionary.
 

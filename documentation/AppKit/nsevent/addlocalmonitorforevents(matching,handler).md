@@ -19,17 +19,17 @@ class func addLocalMonitorForEvents(matching mask: NSEvent.EventTypeMask, handle
 + (id) addLocalMonitorForEventsMatchingMask:(NSEventMask) mask handler:(NSEvent * (^)(NSEvent *event)) block;
 ```
 
-#### Return Value
+## Return Value
 
 An event handler object.
 
-#### Discussion
+## Discussion
 
 Your handler will not be called for events that are consumed by nested event-tracking loops such as control tracking, menu tracking, or window dragging; only events that are dispatched through the applications [`sendEvent(_:)`](../nsapplication/sendevent%28_%29.md) method will be passed to your handler.
 
 > **Note**:  The monitor Block is called for all future events that match `mask`. You must call [`removeMonitor(_:)`](./removemonitor%28_%29.md) to stop the monitor.
 
-##### Special Considerations
+### Special Considerations
 
 In OS X v 10.6, event monitors are only able to monitor the following event types:
 

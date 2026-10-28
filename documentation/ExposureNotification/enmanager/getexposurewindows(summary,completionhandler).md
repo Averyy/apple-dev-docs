@@ -23,11 +23,11 @@ func getExposureWindows(summary: ENExposureDetectionSummary, completionHandler: 
 - (NSProgress *) getExposureWindowsFromSummary:(ENExposureDetectionSummary *) summary completionHandler:(ENGetExposureWindowsHandler) completionHandler;
 ```
 
-#### Return Value
+## Return Value
 
 The progress of the method.
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  This method is available in iOS 12.5, and in iOS 13.5 and later.
 

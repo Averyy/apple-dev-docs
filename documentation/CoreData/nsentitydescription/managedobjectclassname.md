@@ -25,11 +25,11 @@ var managedObjectClassName: String! { get set }
 @property (copy, null_resettable) NSString * managedObjectClassName;
 ```
 
-#### Discussion
+## Discussion
 
 The class specified by `name` must [`NSManagedObject`](../nsmanagedobject.md) or a subclass of [`NSManagedObject`](../nsmanagedobject.md).
 
-##### Special Considerations
+### Special Considerations
 
 Setting the class name raises an exception if the receiver’s model has been used by an object graph manager.
 

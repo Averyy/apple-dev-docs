@@ -24,7 +24,7 @@ var kAudioFormatProperty_TagForChannelLayout: AudioFormatPropertyID { get }
 kAudioFormatProperty_TagForChannelLayout
 ```
 
-#### Discussion
+## Discussion
 
 An AudioChannelLayoutTag value for a layout, if there is one. Set the `inSpecifier` parameter to an [`AudioChannelLayout`](../CoreAudioTypes/audiochannellayout.md) structure containing the layout description. This can be used to reduce a layout specified by [`kAudioChannelLayoutTag_UseChannelDescriptions`](../CoreAudioTypes/kaudiochannellayouttag_usechanneldescriptions.md) or [`kAudioChannelLayoutTag_UseChannelBitmap`](../CoreAudioTypes/kaudiochannellayouttag_usechannelbitmap.md) to a known AudioChannelLayoutTag value.
 

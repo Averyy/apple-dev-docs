@@ -5,49 +5,49 @@
 
 Learn about important changes in Journaling Suggestions.
 
-#### Overview
+## Overview
 
 Browse notable changes in [Journaling Suggestions](../JournalingSuggestions/JournalingSuggestions.md).
 
-#### June 2025
+## June 2025
 
-##### iPadOS support
+### iPadOS support
 
 - [Journaling Suggestions](../JournalingSuggestions/JournalingSuggestions.md) supports iPadOS. Suggestions that the system generates on a person’s iPhone sync over iCloud to their iPad.
 
-##### System notifications
+### System notifications
 
 - Register for system Journaling Suggestion notifications, which prompt users to reflect on recent moments. Refer to the notification schedule a person picks in Settings using [`JournalingSuggestionsConfiguration`](../JournalingSuggestions/journalingsuggestionsconfiguration.md). When a person taps a notification, the system launches [`JournalingSuggestionsPicker`](../JournalingSuggestions/journalingsuggestionspicker.md) for your app when you implement [`JournalingSuggestionPresentationToken`](../JournalingSuggestions/journalingsuggestionpresentationtoken.md).
 
-##### Event posters
+### Event posters
 
 - Receive suggestions of the [`JournalingSuggestion.EventPoster`](../JournalingSuggestions/journalingsuggestion/eventposter.md) type for planned or attended events in Apple Invites.
 
-##### Location and workouts
+### Location and workouts
 
 - Distinguish work-related location suggestions using the [`isWorkLocation`](../JournalingSuggestions/journalingsuggestion/location/isworklocation.md) property, and receive information about the location from MapKit with [`mapKitItemIdentifier`](../JournalingSuggestions/journalingsuggestion/location/mapkititemidentifier.md).
 - Refer to the name of a particular workout suggestion with  [`localizedName`](../JournalingSuggestions/journalingsuggestion/workout/details-swift.struct/localizedname.md).
 
-#### June 2024
+## June 2024
 
-##### General
+### General
 
 - Support for landscape mode in your app.
 
-##### Motion activity
+### Motion activity
 
 - Capture someone’s run session as well as their mixed running and walking activity sessions with `MovementType`.
 
-##### Media playback
+### Media playback
 
 - Describe media content a person listened to. The system provides an instance of this structure to your app when a person chooses a media suggestion in the `JournalingSuggestionsPicker`.
 - Collect asset content that includes other media playback sessions from other music or podcast Apps.
 
-##### State of Mind
+### State of Mind
 
 - Suggest content to people that ask them to describe their state of mind. The system provides an instance of this structure to your app when a person chooses a state of mind suggestion in the `JournalingSuggestionsPicker`.
 
-##### Reflection
+### Reflection
 
 - Use reflection prompts in your app with `Reflection`.
 

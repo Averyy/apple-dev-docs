@@ -24,7 +24,7 @@ var rightThumbstickButton: GCControllerButtonInput? { get }
 @property (nonatomic, readonly, nullable) GCControllerButtonInput * rightThumbstickButton;
 ```
 
-#### Discussion
+## Discussion
 
 If the thumbstick has a clickable component, this is a digital button.
 

@@ -20,7 +20,7 @@ var scriptErrorString: String? { get set }
 @property (copy, nullable) NSString * scriptErrorString;
 ```
 
-#### Discussion
+## Discussion
 
 If you override [`performDefaultImplementation()`](./performdefaultimplementation%28%29.md) and an error occurs, you should call this method to supply a string that provides a useful explanation. In fact, any script handler should call this method when an error occurs.
 

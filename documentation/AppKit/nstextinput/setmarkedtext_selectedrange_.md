@@ -15,7 +15,7 @@ Replaces currently marked text in the receiver’s text storage with the given s
 - (void) setMarkedText:(id) string selectedRange:(NSRange) selRange;
 ```
 
-#### Discussion
+## Discussion
 
 If there is no marked text, the current selection is replaced. If there is no selection, the string is inserted at the insertion point.
 

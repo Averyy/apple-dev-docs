@@ -21,7 +21,7 @@ The block to execute as CloudKit processes individual shares.
 var perShareResultBlock: ((CKShare.Metadata, Result<CKShare, any Error>) -> Void)? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The closure returns no value and takes the following parameters:
 

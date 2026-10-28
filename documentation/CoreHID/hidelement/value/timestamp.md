@@ -15,7 +15,7 @@ The time that this data was received by the system.
 var timestamp: SuspendingClock.Instant
 ```
 
-#### Discussion
+## Discussion
 
 The data should only be considered valid at this time, it’s possible for the [`HIDElement`](../../hidelement.md) to have been updated after this.
 

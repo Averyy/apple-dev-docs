@@ -24,7 +24,7 @@ var shape: [NSNumber]? { get }
 @property (nonatomic, copy, readonly, nullable) MPSShape * shape;
 ```
 
-#### Discussion
+## Discussion
 
 Nil shape represents an unranked tensor. -1 value for a dimension represents that it will be resolved via shape inference at runtime and it can be anything.
 

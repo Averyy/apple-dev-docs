@@ -24,11 +24,11 @@ func leakyReLU(with tensor: MPSGraphTensor, alphaTensor: MPSGraphTensor, name: S
 - (MPSGraphTensor *) leakyReLUWithTensor:(MPSGraphTensor *) tensor alphaTensor:(MPSGraphTensor *) alphaTensor name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid [`MPSGraphTensor`](../mpsgraphtensor.md) object
 
-#### Discussion
+## Discussion
 
 The operation is: f(x) = max(x, alpha). This operation supports broadcasting with the alpha tensor.
 

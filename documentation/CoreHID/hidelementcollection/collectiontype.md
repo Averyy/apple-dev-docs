@@ -15,7 +15,7 @@ Types of [`HIDElementCollection`](../hidelementcollection.md)s.
 enum CollectionType
 ```
 
-#### Overview
+## Overview
 
 Collection types are a defined part of the HID specification that define how a collection is intended to be used.
 

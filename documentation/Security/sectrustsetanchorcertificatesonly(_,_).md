@@ -29,11 +29,11 @@ OSStatus SecTrustSetAnchorCertificatesOnly(SecTrustRef trust, Boolean anchorCert
 
 - [Configuring a Trust](./configuring-a-trust.md)
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
-#### Discussion
+## Discussion
 
 It is safe to call this function concurrently on two or more threads as long as it is not used to change the value of a trust management object that is simultaneously being used by another function. For example, you cannot call this function on one thread at the same time as you are calling the [`SecTrustEvaluateWithError(_:_:)`](./sectrustevaluatewitherror%28_,_%29.md) function for the same trust management object on another thread, but you can call this function and simultaneously evaluate a different trust management object on another thread. Similarly, calls to functions that return information about a trust management object (such as the [`SecTrustCopyCustomAnchorCertificates(_:_:)`](./sectrustcopycustomanchorcertificates%28_,_%29.md) function) may fail or return an unexpected result if this function is simultaneously changing the same trust management object on another thread.
 

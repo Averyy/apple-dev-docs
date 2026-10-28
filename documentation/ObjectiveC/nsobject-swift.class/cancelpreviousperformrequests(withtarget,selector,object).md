@@ -25,7 +25,7 @@ class func cancelPreviousPerformRequests(withTarget aTarget: Any, selector aSele
 + (void) cancelPreviousPerformRequestsWithTarget:(id) aTarget selector:(SEL) aSelector object:(id) anArgument;
 ```
 
-#### Discussion
+## Discussion
 
 All perform requests are canceled that have the same target as `aTarget`, argument as `anArgument`, and selector as `aSelector`. This method removes perform requests only in the current run loop, not all run loops.
 

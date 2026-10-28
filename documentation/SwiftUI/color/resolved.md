@@ -22,7 +22,7 @@ A concrete color value.
 struct Resolved
 ```
 
-#### Overview
+## Overview
 
 `Color.Resolved` is a set of RGBA values that represent a color that can be shown. The values are stored in the Linear sRGB color space, using extended range. This is a low-level type, most colors are represented by the `Color` type.
 

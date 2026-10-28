@@ -19,11 +19,11 @@ func SKDocumentCreate(_ inScheme: CFString!, _ inParent: SKDocument!, _ inName: 
 SKDocumentRef SKDocumentCreate(CFStringRef inScheme, SKDocumentRef inParent, CFStringRef inName);
 ```
 
-#### Return Value
+## Return Value
 
 The new document URL object, or `NULL` on failure.
 
-#### Discussion
+## Discussion
 
 The new document URL object’s parent can be `NULL`, but you must specify either a scheme or a parent. When your application no longer needs the document URL object, dispose of it by calling [`CFRelease`](../CoreFoundation/cfrelease.md).
 

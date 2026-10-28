@@ -16,7 +16,7 @@ A structure that represents a collection of experiences to use with an experienc
 struct Experiences
 ```
 
-#### Overview
+## Overview
 
 When creating, choose between using [`only(_:)`](./experiences/only%28_%29.md) or [`recommended(excluding:including:)`](./experiences/recommended%28excluding,including%29.md). Use [`only(_:)`](./experiences/only%28_%29.md) to specify the list of supported experiences. Use [`recommended(excluding:including:)`](./experiences/recommended%28excluding,including%29.md) to include the default set of experiences appropriate for a given platform.
 

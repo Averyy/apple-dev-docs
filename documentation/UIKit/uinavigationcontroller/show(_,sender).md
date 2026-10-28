@@ -23,7 +23,7 @@ func show(_ vc: UIViewController, sender: Any?)
 - (void) showViewController:(UIViewController *) vc sender:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 This method pushes `vc` onto the navigation stack in a similar way as the [`pushViewController(_:animated:)`](./pushviewcontroller%28_,animated%29.md) method. You can call this method directly if you want but typically this method is called from elsewhere in the view controller hierarchy when a new view controller needs to be shown.
 

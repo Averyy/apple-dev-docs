@@ -14,7 +14,7 @@
 #define kIOPropertyCardCharacteristicsKey
 ```
 
-#### Discussion
+## Discussion
 
 This key is used to define Card Characteristics for a particular piece of MMC/SD media and it has an associated dictionary which lists the card characteristics.
 

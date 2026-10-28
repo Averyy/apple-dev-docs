@@ -25,7 +25,7 @@ func convertToDeviceSpace(_ point: CGPoint) -> CGPoint
 extern CGPoint CGContextConvertPointToDeviceSpace(CGContextRef c, CGPoint point);
 ```
 
-#### Return Value
+## Return Value
 
 The coordinates of the point in device space coordinates.
 

@@ -23,7 +23,7 @@ case `default`
 UIProgressViewStyleDefault
 ```
 
-#### Discussion
+## Discussion
 
 This style is the default.
 

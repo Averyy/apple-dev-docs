@@ -25,7 +25,7 @@ func NSSwapLongLong(_ inv: UInt64) -> UInt64
 static unsigned long long NSSwapLongLong(unsigned long long inv);
 ```
 
-#### Discussion
+## Discussion
 
 Swaps the bytes of `inv` and returns the resulting value. Bytes are swapped from each low-order position to the corresponding high-order position and vice versa. For example, if the bytes of `inv` are numbered from 1 to 8, this function swaps bytes 1 and 8, bytes 2 and 7, bytes 3 and 6, and bytes 4 and 5.
 

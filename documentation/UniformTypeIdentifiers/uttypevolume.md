@@ -21,7 +21,7 @@ A type that represents the root folder of a volume or mount point.
 extern UTType * const UTTypeVolume;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.volume`.
 

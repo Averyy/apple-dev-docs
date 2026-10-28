@@ -17,7 +17,7 @@ Grabbing will be performed using a ray.
 static var ray: ClothGrabComponent.GrabMode { get }
 ```
 
-#### Discussion
+## Discussion
 
 The translation of the entity determines the origin of the ray, and the forward vector determines the ray direction.
 

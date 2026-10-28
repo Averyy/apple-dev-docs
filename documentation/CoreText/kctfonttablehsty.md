@@ -23,7 +23,7 @@ var kCTFontTableHsty: Int { get }
 kCTFontTableHsty
 ```
 
-#### Discussion
+## Discussion
 
 Font table tag for horizontal style.
 

@@ -21,7 +21,7 @@ The visibility of product descriptions.
 var descriptionVisibility: Visibility { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use this property if you choose to support configuring the description visibility in your custom style. It reflects the value that the ancestor view sets with the [`productDescription(_:)`](../../SwiftUI/view/productdescription%28_%29.md) view modifier.
 

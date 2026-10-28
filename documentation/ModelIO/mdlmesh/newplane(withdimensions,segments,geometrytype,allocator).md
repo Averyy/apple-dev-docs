@@ -24,11 +24,11 @@ class func newPlane(withDimensions dimensions: vector_float2, segments: vector_u
 + (instancetype) newPlaneWithDimensions:(vector_float2) dimensions segments:(vector_uint2) segments geometryType:(MDLGeometryType) geometryType allocator:(id<MDLMeshBufferAllocator>) allocator;
 ```
 
-#### Return Value
+## Return Value
 
 A new mesh object.
 
-#### Discussion
+## Discussion
 
 This method generates vertex data for a plane centered at the origin of its local coordinate system and extending in the x- and z-axis directions. All surface normal vectors on the plane point in the positive y-axis direction.
 

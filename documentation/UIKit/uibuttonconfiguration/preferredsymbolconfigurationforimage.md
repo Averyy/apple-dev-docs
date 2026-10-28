@@ -19,7 +19,7 @@ A requested configuration object for the button symbol image.
 @property (nonatomic, copy, readwrite, nullable) UIImageSymbolConfiguration * preferredSymbolConfigurationForImage;
 ```
 
-#### Discussion
+## Discussion
 
 A symbol configuration defines details such as the point size, scale, text style, weight, and font of symbol image. The button uses these details to determine which variant of the image to use and how to scale or style the image.
 

@@ -23,7 +23,7 @@ func multiply(by factor: Float, preBias: Float, postBias: Float, destination: vI
 
 Available when `Format` is `vImage.PlanarF`.
 
-#### Discussion
+## Discussion
 
 This function applies the following operation to each pixel:
 

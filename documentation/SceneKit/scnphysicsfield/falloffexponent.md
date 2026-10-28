@@ -25,7 +25,7 @@ var falloffExponent: CGFloat { get set }
 @property (nonatomic) CGFloat falloffExponent;
 ```
 
-#### Discussion
+## Discussion
 
 When SceneKit calculates the force to be applied by a field, it attenuates the field’s effect by multiplying with the expression `pow(distance - minRadius, -falloff)`. If the falloff exponent is greater than zero, the field’s effect is stronger on nearby bodies than on bodies farther away from its location.
 

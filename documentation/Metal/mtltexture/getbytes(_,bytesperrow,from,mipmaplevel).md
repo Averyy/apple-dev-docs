@@ -25,7 +25,7 @@ func getBytes(_ pixelBytes: UnsafeMutableRawPointer, bytesPerRow: Int, from regi
 - (void) getBytes:(void *) pixelBytes bytesPerRow:(NSUInteger) bytesPerRow fromRegion:(MTLRegion) region mipmapLevel:(NSUInteger) level;
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  Don’t use this method for textures where [`storageMode`](../mtlresource/storagemode.md) is [`MTLStorageMode.private`](../mtlstoragemode/private.md). Instead, copy data from the private texture with an [`MTLBlitCommandEncoder`](../mtlblitcommandencoder.md) to another texture accessible from the CPU, and then call this method on the accessible texture.
 

@@ -16,7 +16,7 @@ This notification is sent to NSDistributedNotificationCenter when a change has o
 extern NSNotificationName const ITLibraryDidChangeNotification;
 ```
 
-#### Overview
+## Overview
 
 The client should call [`reloadData()`](./itlibrary/reloaddata%28%29.md) if it wants a new view of the library contents.
 

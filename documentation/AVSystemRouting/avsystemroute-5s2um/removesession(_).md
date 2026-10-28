@@ -21,7 +21,7 @@ final func removeSession(_ session: AVSystemRouteSession)
 
 - [Routing and streaming media to remote devices](../routing-and-streaming-media-to-remote-devices.md)
 
-#### Discussion
+## Discussion
 
 Call this function to unregister a session from the route when playback ends or when you no longer need the session. Removing a session stops any ongoing communication associated with that session and releases system resources.
 

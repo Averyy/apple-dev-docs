@@ -32,7 +32,7 @@ var contextName: String? { get set }
 @property (atomic, copy, nullable) NSString * contextName;
 ```
 
-#### Discussion
+## Discussion
 
 For example—a host could set “track 3” as the context, so that the audio unit’s view could then display “My audio unit on track 3”.
 

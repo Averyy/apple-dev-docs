@@ -29,7 +29,7 @@ func networkPassphraseRequest(with params: MTRWiFiNetworkManagementClusterNetwor
 - (void) networkPassphraseRequestWithParams:(MTRWiFiNetworkManagementClusterNetworkPassphraseRequestParams *) params completion:(void (^)(MTRWiFiNetworkManagementClusterNetworkPassphraseResponseParams *data, NSError *error)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 This command is used to request the current WPA-Personal passphrase or PSK associated with the Wi-Fi network provided by this device.
 

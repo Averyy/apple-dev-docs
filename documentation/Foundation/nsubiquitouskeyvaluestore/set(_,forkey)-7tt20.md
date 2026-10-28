@@ -25,7 +25,7 @@ func set(_ value: Int64, forKey aKey: String)
 - (void) setLongLong:(long long) value forKey:(NSString *) aKey;
 ```
 
-#### Discussion
+## Discussion
 
 This method places the integer value in an [`NSNumber`](../nsnumber.md) type before writing the key and value to the store.
 

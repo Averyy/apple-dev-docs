@@ -25,11 +25,11 @@ class func resize(byWidth width: CGFloat, height: CGFloat, duration: TimeInterva
 + (SKAction *) resizeByWidth:(CGFloat) width height:(CGFloat) height duration:(NSTimeInterval) duration;
 ```
 
-#### Return Value
+## Return Value
 
 A new action object.
 
-#### Discussion
+## Discussion
 
 This action can only be executed by a [`SKSpriteNode`](../skspritenode.md) object. When the action executes, the sprite’s [`size`](../skspritenode/size.md) property animates to its new value.
 

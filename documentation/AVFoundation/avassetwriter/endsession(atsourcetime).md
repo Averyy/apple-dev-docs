@@ -24,7 +24,7 @@ func endSession(atSourceTime endTime: CMTime)
 - (void) endSessionAtSourceTime:(CMTime) endTime;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method to complete a session that you started with [`startSession(atSourceTime:)`](./startsession%28atsourcetime%29.md).
 

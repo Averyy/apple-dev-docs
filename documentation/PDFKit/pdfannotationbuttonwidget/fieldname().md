@@ -19,11 +19,11 @@ func fieldName() -> String!
 - (NSString *) fieldName;
 ```
 
-#### Return Value
+## Return Value
 
 The internal name of a field.
 
-#### Discussion
+## Discussion
 
 The internal name of a field is an optional value.
 

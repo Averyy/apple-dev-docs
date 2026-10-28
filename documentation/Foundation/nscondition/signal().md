@@ -25,7 +25,7 @@ func signal()
 - (void) signal;
 ```
 
-#### Discussion
+## Discussion
 
 You use this method to wake up one thread that is waiting on the condition. You may call this method multiple times to wake up multiple threads. If no threads are waiting on the condition, this method does nothing.
 

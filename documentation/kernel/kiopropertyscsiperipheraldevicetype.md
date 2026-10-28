@@ -13,7 +13,7 @@
 #define kIOPropertySCSIPeripheralDeviceType
 ```
 
-#### Discussion
+## Discussion
 
 SCSI Peripheral Device Type as reported in the INQUIRY data.
 

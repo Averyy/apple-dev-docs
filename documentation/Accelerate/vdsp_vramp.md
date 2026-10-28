@@ -21,7 +21,7 @@ Generates a single-precision vector with monotonically incrementing or decrement
 extern void vDSP_vramp(const float *__A, const float *__B, float *__C, vDSP_Stride __IC, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 Use this function to generate and return a vector populated with ramped values.
 

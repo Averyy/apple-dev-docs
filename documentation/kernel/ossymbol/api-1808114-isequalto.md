@@ -12,11 +12,11 @@ virtual bool isEqualTo(
  const OSSymbol *aSymbol) const;
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the two OSSymbol objects are equivalent, `false` otherwise.
 
-#### Overview
+## Overview
 
 Two OSSymbol objects are considered equal if they have the same address; that is, this function is equivalent to the `==` operator.
 

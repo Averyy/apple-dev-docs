@@ -19,7 +19,7 @@ Initializes the connection handler with a closure that accepts an XPC session.
 @preconcurrency init(onSessionRequest requestHandler: @escaping @Sendable (XPCListener.IncomingSessionRequest) -> XPCListener.IncomingSessionRequest.Decision)
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer if your app extension communicates with the host app using types from the [XPC](../../XPC/XPC.md) framework.
 

@@ -25,7 +25,7 @@ func xpc_int64_create(_ value: Int64) -> xpc_object_t
 extern xpc_object_txpc_int64_create(int64_t value);
 ```
 
-#### Return Value
+## Return Value
 
 A new signed integer object.
 

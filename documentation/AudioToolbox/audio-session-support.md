@@ -5,7 +5,7 @@
 
 Describe the properties that you associate with audio sessions and audio routes.
 
-#### Overview
+## Overview
 
 > ❗ **Important**:  The `AudioSession` API has been completely deprecated in iOS 7.0. See [`AVAudioSession`](../AVFAudio/avaudiosession.md) for the Objective-C implementation of these functions.
 

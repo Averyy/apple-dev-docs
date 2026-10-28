@@ -20,7 +20,7 @@ var rendersCameraGrain: Bool { get set }
 @property (nonatomic, assign) BOOL rendersCameraGrain;
 ```
 
-#### Discussion
+## Discussion
 
 Enabled by default. When set, SceneKit adds a camera grain effect to your app’s virtual content that matches the image noise characteristics ARKit observes in the camera feed.
 

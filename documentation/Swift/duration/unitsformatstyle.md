@@ -21,7 +21,7 @@ A format style that shows durations with localized labeled components
 struct UnitsFormatStyle
 ```
 
-#### Overview
+## Overview
 
 This style produces formatted strings that break out a duration’s individual components, like “2 min, 3 sec”.
 

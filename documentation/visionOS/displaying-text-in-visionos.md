@@ -10,7 +10,7 @@ Create styled text in a window using SwiftUI.
 - visionOS 2.0+
 - Xcode 16.0+
 
-#### Overview
+## Overview
 
 This sample app uses SwiftUI views to display text in four distinct styles:
 

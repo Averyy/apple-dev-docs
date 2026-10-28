@@ -25,7 +25,7 @@ var steeringAxis: SCNVector3 { get set }
 @property SCNVector3 steeringAxis;
 ```
 
-#### Discussion
+## Discussion
 
 This vector is expressed in the coordinate space of the node containing the vehicle’s chassis. The default steering axis is `{0.0, -1.0, 0.0}`.
 

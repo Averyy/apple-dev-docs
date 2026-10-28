@@ -14,7 +14,7 @@
 kUSBPowerRequestWakeRelease = 2
 ```
 
-#### Discussion
+## Discussion
 
 When used with ReturnExtraPower(), it will send a message to all devices to return any extra wake power if possible.
 

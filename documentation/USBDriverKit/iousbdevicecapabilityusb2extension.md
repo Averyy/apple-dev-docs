@@ -15,7 +15,7 @@ The structure for the USB 2 extension device capability.
 struct IOUSBDeviceCapabilityUSB2Extension;
 ```
 
-#### Overview
+## Overview
 
 See USB 3.0 9.6.2.1: USB 2.0 Extension.
 

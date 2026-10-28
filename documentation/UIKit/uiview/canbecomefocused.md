@@ -23,7 +23,7 @@ var canBecomeFocused: Bool { get }
 @property (nonatomic, readonly) BOOL canBecomeFocused;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) if the view can become focused; [`false`](../../Swift/false.md) otherwise.
 

@@ -21,7 +21,7 @@ let CPMaximumNumberOfGridImages: Int
 extern const NSUInteger CPMaximumNumberOfGridImages;
 ```
 
-#### Discussion
+## Discussion
 
 At runtime, use this value to determine the total number of images that CarPlay allows in an image row. The list item may display fewer images, depending on the width of the vehicle’s primary screen.
 

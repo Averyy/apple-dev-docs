@@ -24,7 +24,7 @@ let HMCharacteristicTypeActiveIdentifier: String
 extern NSString * const HMCharacteristicTypeActiveIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 This characteristic describes the current input source of a television by referencing the [`HMServiceTypeInputSource`](./hmservicetypeinputsource.md). The Active Identifier characteristic’s value should be a valid value within the identifiers of the Input Source service instances linked to the television service. The value of the characteristic is a `UInt32` integer.
 

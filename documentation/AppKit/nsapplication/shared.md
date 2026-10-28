@@ -23,11 +23,11 @@ class var shared: NSApplication { get }
 
 - [Passing control from one app to another with cooperative activation](../passing-control-from-one-app-to-another-with-cooperative-activation.md)
 
-#### Return Value
+## Return Value
 
 The shared application object.
 
-#### Discussion
+## Discussion
 
 This method also makes a connection to the window server and completes other initialization. Your program should invoke this method as one of the first statements in `main()`; this invoking is done for you if you create your application with Xcode. To retrieve the `NSApplication` instance after it has been created, use the global variable [`NSApp`](../nsapp.md) or invoke this method.
 

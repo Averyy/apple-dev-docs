@@ -16,7 +16,7 @@ This method should be implemented by `NSConnection` object delegates that want t
 - (BOOL) connection:(NSConnection *) connection handleRequest:(NSDistantObjectRequest *) doreq;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the request was handled by the delegate, [`false`](../../Swift/false.md) if the request should proceed as if the delegate did not intercept it.
 

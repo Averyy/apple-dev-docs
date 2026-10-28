@@ -16,11 +16,11 @@ Returns an authorization status that indicates whether a person permitted the ap
 final nonisolated(nonsending) func authorizationStatus<each I>(for context: InsightEvaluator.InsightContext<repeat each I>) async throws -> InsightEvaluator.AuthorizationStatus where repeat each I : InsightEvaluator.InsightRequestProtocol
 ```
 
-#### Return Value
+## Return Value
 
 An [`InsightEvaluator.AuthorizationStatus`](./authorizationstatus.md) that indicates whether someone authorized the app to request evaluations.
 
-#### Discussion
+## Discussion
 
 > **Throws**: Errors in cases where there is a system failure.
 

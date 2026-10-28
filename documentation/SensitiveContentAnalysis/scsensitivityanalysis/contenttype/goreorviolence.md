@@ -23,7 +23,7 @@ static let goreOrViolence: SCSensitivityAnalysis.ContentType
 extern SCSensitiveContentType const SCSensitiveContentTypeGoreOrViolence;
 ```
 
-#### Discussion
+## Discussion
 
 The Sensitive Content Analysis framework includes this value in [`detectedTypes`](../detectedtypes.md) when it detects violent or disturbing imagery in analyzed media.
 

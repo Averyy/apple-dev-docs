@@ -20,7 +20,7 @@ void cp_drawable_set_device_anchor(cp_drawable_t drawable, ar_device_anchor_t de
 
 - [Drawing fully immersive content using Metal](./drawing-fully-immersive-content-using-metal.md)
 
-#### Discussion
+## Discussion
 
 During rendering, match the camera position in your scene to the device anchor to create a better experience. In a visionOS app, the device anchor corresponds to the movements of someone’s head. If your camera movements aren’t synchronized to the device movements, the person might experience discomfort while viewing your content.
 

@@ -5,25 +5,25 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 The tvOS 26.1 SDK provides support to develop tvOS apps for Apple TV devices running tvOS 26.1. The SDK comes bundled with Xcode 26.1. For information on the compatibility requirements for Xcode 26.1, see [Xcode 26.1 Release Notes](../Xcode-Release-Notes/xcode-26_1-release-notes.md).
 
-##### Background Assets
+### Background Assets
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: `AssetPackManager.url(for:)` unexpectedly throws an error when looking up the URL for a locally available asset file.  (157959878) (FB19512759)
 
-##### Game Controller
+### Game Controller
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: The time returned by `GCPressedStateInput.lastPressedStateTimestamp` is not in the correct time domain.  (159124910)
 
-##### SwiftUI
+### SwiftUI
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: The `navigationLinkIndicatorVisibility` modifier crashes when run on iOS 17, iOS 18 and aligned releases.
 

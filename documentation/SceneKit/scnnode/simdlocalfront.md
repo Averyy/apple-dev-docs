@@ -25,7 +25,7 @@ class var simdLocalFront: simd_float3 { get }
 @property (class, nonatomic, readonly) simd_float3 simdLocalFront;
 ```
 
-#### Discussion
+## Discussion
 
 The “forward” direction of a node affects cameras and directional lighting attached to a node, as well as relative orientation and movement effects such as [`simdLook(at:)`](./simdlook%28at%29.md), [`SCNLookAtConstraint`](../scnlookatconstraint.md), and [`SCNBillboardConstraint`](../scnbillboardconstraint.md).
 

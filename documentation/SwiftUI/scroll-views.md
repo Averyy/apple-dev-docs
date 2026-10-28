@@ -5,7 +5,7 @@
 
 Enable people to scroll to content that doesn’t fit in the current display.
 
-#### Overview
+## Overview
 
 When the content of a view doesn’t fit in the display, you can wrap the view in a [`ScrollView`](./scrollview.md) to enable people to scroll on one or more axes. Configure the scroll view using view modifiers. For example, you can set the visibility of the scroll indicators or the availability of scrolling in a given dimension.
 

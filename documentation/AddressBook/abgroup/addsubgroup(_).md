@@ -19,11 +19,11 @@ func addSubgroup(_ group: ABGroup!) -> Bool
 - (BOOL) addSubgroup:(ABGroup *) group;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if successful; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 If the `group` argument is already part of the receiver, this method does nothing and returns [`false`](../../Swift/false.md). If adding the group would create a recursion, this method also does nothing and returns [`false`](../../Swift/false.md). (For example, if the group Animal Lovers is in Dog Lovers, and you add Dog Lovers to Animal Lovers, that would create a recursion, which this method won’t allow.) If the `group` argument is `nil`, this method raises an exception.
 

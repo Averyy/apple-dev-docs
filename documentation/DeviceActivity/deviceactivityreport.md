@@ -18,7 +18,7 @@ A view that reports the user’s application, category, and web domain activity 
 @preconcurrency struct DeviceActivityReport
 ```
 
-#### Overview
+## Overview
 
 When you create a report, the system asks your app’s device activity report extension to provide a [`View`](../SwiftUI/view.md) representing the user’s device activity. To protect the user’s privacy, your extension runs in a sandbox. This sandbox prevents your extension from making network requests or moving sensitive content outside the extension’s address space. The extension point identifier for all device activity report extensions is `com.apple.deviceactivityui.report-extension`. You can configure a report with a custom context and filter, and then display the report like any SwiftUI view.
 

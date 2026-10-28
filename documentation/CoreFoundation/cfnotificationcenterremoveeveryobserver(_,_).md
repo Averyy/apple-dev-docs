@@ -25,7 +25,7 @@ func CFNotificationCenterRemoveEveryObserver(_ center: CFNotificationCenter!, _ 
 extern void CFNotificationCenterRemoveEveryObserver(CFNotificationCenterRef center, const void *observer);
 ```
 
-#### Discussion
+## Discussion
 
 If you no longer want an observer to receive any notifications, perhaps because the observer is being deallocated, you can call this function to unregister the observer from all the notifications for which it had previously registered.
 

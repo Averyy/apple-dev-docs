@@ -15,11 +15,11 @@ Remove all data relating to a vnode from the namecache.
 void cache_purge(vnode_t vp);
 ```
 
-#### Return Value
+## Return Value
 
 void.
 
-#### Discussion
+## Discussion
 
 Will flush all hardlinks to the vnode as well as all children (should any exist). Logical to use when cached data about a vnode becomes invalid, for instance in an unlink.
 

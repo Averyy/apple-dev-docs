@@ -20,7 +20,7 @@ Stores a Boolean indicating whether the playback begins from the start of the fi
 var shouldRandomizeStartTime: Bool
 ```
 
-#### Discussion
+## Discussion
 
 When this property and [`shouldLoop`](./shouldloop.md) are both true, only the first playback iteration begins from a random position.
 

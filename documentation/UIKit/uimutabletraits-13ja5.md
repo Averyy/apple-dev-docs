@@ -19,7 +19,7 @@ A mutable container of traits.
 protocol UIMutableTraits
 ```
 
-#### Overview
+## Overview
 
 The [`UIMutableTraits`](./uimutabletraits-13ja5.md) protocol provides read-write access to get and set trait values on an underlying container. UIKit uses this protocol to facilitate working with instances of [`UITraitCollection`](./uitraitcollection.md), which are immutable and read-only. The [`UITraitCollection`](./uitraitcollection.md) initializer [`init(mutations:)`](./uitraitcollection/init%28mutations%29.md) uses an instance of [`UIMutableTraits`](./uimutabletraits-13ja5.md), which enables you to set a batch of trait values in one method call. [`UITraitOverrides`](./uitraitoverrides-swift.struct.md) conforms to [`UIMutableTraits`](./uimutabletraits-13ja5.md), making it easy to set trait overrides on trait environments such as views and view controllers.
 

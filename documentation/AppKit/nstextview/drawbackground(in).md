@@ -19,7 +19,7 @@ func drawBackground(in rect: NSRect)
 - (void) drawViewBackgroundInRect:(NSRect) rect;
 ```
 
-#### Discussion
+## Discussion
 
 Subclasses can override this method to perform additional drawing behind the text.
 

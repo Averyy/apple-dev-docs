@@ -24,11 +24,11 @@ class func minimumCompositing() -> any CIFilter & CICompositeOperation
 + (CIFilter<CICompositeOperation> *) minimumCompositingFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The modified image.
 
-#### Discussion
+## Discussion
 
 This method applies the minimum compositing filter to an image. The effect calculates the minimum value for each color component in the input and background images. The filter then uses the resulting color to create the output image.
 

@@ -5,11 +5,11 @@
 
 Learn about important changes to Core Location.
 
-#### Overview
+## Overview
 
 Browse notable changes in [Core Location](../CoreLocation/CoreLocation.md).
 
-#### June 2024
+## June 2024
 
 - Use [`CLLocationUpdate`](../CoreLocation/cllocationupdate.md) and [`CLMonitor`](../CoreLocation/clmonitor-2r51v.md) without needing to explicitly request or verify authorization.
 - Control and defer automated user authorization flows with [`CLServiceSession`](../CoreLocation/clservicesession-pt7n.md).

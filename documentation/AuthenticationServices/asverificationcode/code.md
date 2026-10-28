@@ -19,7 +19,7 @@ The system’s best understanding of the code that can be used for verification 
 var code: String
 ```
 
-#### Discussion
+## Discussion
 
 This code may be detected from heuristics or parsed from a well-known format.
 

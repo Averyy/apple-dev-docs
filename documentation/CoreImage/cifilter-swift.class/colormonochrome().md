@@ -24,11 +24,11 @@ class func colorMonochrome() -> any CIFilter & CIColorMonochrome
 + (CIFilter<CIColorMonochrome> *) colorMonochromeFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The modified image.
 
-#### Discussion
+## Discussion
 
 This method applies the color monochrome filter to an image. The effect remaps the colors of the image to shades of the specified color.
 

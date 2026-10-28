@@ -21,7 +21,7 @@ Content types supported by a given value’s `Transferable` conformance for impo
 func importedContentTypes() -> [UTType]
 ```
 
-#### Discussion
+## Discussion
 
 Returns a list of all content types available for import. The default implementation of this function is available to all types that conform to [`Transferable`](../transferable.md) protocol.
 

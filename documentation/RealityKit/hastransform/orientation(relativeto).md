@@ -21,7 +21,7 @@ Gets the orientation of an entity relative to the given entity.
 @preconcurrency func orientation(relativeTo referenceEntity: Entity?) -> simd_quatf
 ```
 
-#### Return Value
+## Return Value
 
 The orientation of the entity relative to `referenceEntity`.
 

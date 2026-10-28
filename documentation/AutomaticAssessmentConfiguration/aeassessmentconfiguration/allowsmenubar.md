@@ -20,7 +20,7 @@ var allowsMenuBar: Bool { get set }
 @property (nonatomic, assign) BOOL allowsMenuBar;
 ```
 
-#### Discussion
+## Discussion
 
 An assessment session hides the menu bar by default, but you can allow it by setting [`allowsMenuBar`](./allowsmenubar.md) to `true` in the [`AEAssessmentConfiguration`](../aeassessmentconfiguration.md) instance that you use to initialize a session.
 

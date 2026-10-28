@@ -19,11 +19,11 @@ Returns the current network information for a given network interface.
 CFDictionaryRefCNCopyCurrentNetworkInfo(CFStringRef interfaceName);
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary containing the interface’s current network information, provided certain requirements are met (see Discussion section). If the requirements are not met, the return value is either a dictionary with pseudo-values or `NULL`. If an error occurs, the return value is `NULL`.
 
-#### Discussion
+## Discussion
 
 The returned dictionary contains the following keys and values:
 
@@ -35,7 +35,7 @@ The returned dictionary contains the following keys and values:
 
 Ownership of the returned dictionary follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029). You are responsible for releasing the returned value.
 
-#### Discussion
+## Discussion
 
 The requesting app must meet one of the following requirements:
 

@@ -21,7 +21,7 @@ Materials will have an active or inactive appearance based on the active appeara
 static let matchWindow: MaterialActiveAppearance
 ```
 
-#### Discussion
+## Discussion
 
 On non-macOS platforms, materials will always appear as active.
 

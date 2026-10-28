@@ -21,7 +21,7 @@ A type of dispatch source for monitoring a process.
 #define DISPATCH_SOURCE_TYPE_PROC
 ```
 
-#### Discussion
+## Discussion
 
 A dispatch source that monitors an external process for events defined by `Dispatch Source Process Event Flags`. The handle is a process identifier (`pid_t`). The mask is a mask of desired events from `Dispatch Source Process Event Flags`.
 

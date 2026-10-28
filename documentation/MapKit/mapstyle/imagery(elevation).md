@@ -21,11 +21,11 @@ Creates a map style based on satellite imagery with the elevation characteristic
 static func imagery(elevation: MapStyle.Elevation = .automatic) -> MapStyle
 ```
 
-#### Return Value
+## Return Value
 
 A [`MapStyle`](../mapstyle.md) with the elevation style you specified.
 
-#### Discussion
+## Discussion
 
 > **Note**:  In watchOS, depending on rendering calculations, MapKit may render the map using the Standard map style rather than requested Hybrid or Imagery styles.
 

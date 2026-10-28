@@ -24,7 +24,7 @@ func JSClassCreate(_ definition: UnsafePointer<JSClassDefinition>!) -> JSClassRe
 JSClassRefJSClassCreate(const JSClassDefinition *definition);
 ```
 
-#### Return Value
+## Return Value
 
 A [`JSClassRef`](./jsclassref.md) with the specified definition suitable for use with [`JSObjectMake(_:_:_:)`](./jsobjectmake%28_,_,_%29.md). Ownership follows [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 

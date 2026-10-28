@@ -24,7 +24,7 @@ var format: MTLVertexFormat { get set }
 @property (nonatomic, assign) MTLVertexFormat format;
 ```
 
-#### Discussion
+## Discussion
 
 This property specifies the data type of the vertex attribute that corresponds to an input argument of a shading language function. The [`MTLVertexFormat`](../mtlvertexformat.md) may be converted to the data type in the shading function argument with the following specified limitations. Invalid type conversion causes a compilation error.
 

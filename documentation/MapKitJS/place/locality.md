@@ -15,7 +15,7 @@ The city of the place.
 locality: string | null;
 ```
 
-#### Discussion
+## Discussion
 
 For example, the [`locality`](./locality.md) for Golden Gate Park in San Francisco, California, is `"San Francisco"`.
 

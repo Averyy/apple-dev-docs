@@ -15,7 +15,7 @@ The results from an autocomplete request.
 results: SearchAutocompleteResult[];
 ```
 
-#### Discussion
+## Discussion
 
 This property contains an array of [`SearchAutocompleteResult`](../searchautocompleteresult.md) objects corresponding to the [`query`](./query.md).
 

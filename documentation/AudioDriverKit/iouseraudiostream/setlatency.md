@@ -13,11 +13,11 @@
 kern_return_t SetLatency(uint32_t in_latency);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kern_return_t.
 
-#### Discussion
+## Discussion
 
 Set the latency of the stream in sample frames.
 

@@ -25,7 +25,7 @@ class NSCoder
 @interface NSCoder : NSObject
 ```
 
-#### Overview
+## Overview
 
 [`NSCoder`](./nscoder.md) declares the interface used by concrete subclasses to transfer objects and other values between memory and some other format. This capability provides the basis for archiving (storing objects and data on disk) and distribution (copying objects and data items between different processes or threads). The concrete subclasses provided by Foundation for these purposes are [`NSArchiver`](./nsarchiver.md), [`NSUnarchiver`](./nsunarchiver.md), [`NSKeyedArchiver`](./nskeyedarchiver.md), [`NSKeyedUnarchiver`](./nskeyedunarchiver.md), and [`NSPortCoder`](./nsportcoder.md). Concrete subclasses of [`NSCoder`](./nscoder.md) are “coder classes”, and instances of these classes are “coder objects” (or simply “coders”). A coder that can only encode values is an “encoder”, and one that can only decode values is a “decoder”.
 
@@ -33,7 +33,7 @@ class NSCoder
 
 The AVFoundation framework adds methods to the [`NSCoder`](./nscoder.md) class to make it easier to create archives including Core Media time structures, and extract Core Media time structure from archives.
 
-##### Subclassing Notes
+### Subclassing Notes
 
 For details of how to create a subclass of `NSCoder`, see [Subclassing NSCoder](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Archiving/Articles/subclassing.html#//apple_ref/doc/uid/20000951) in [Archives and Serializations Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Archiving/Archiving.html#//apple_ref/doc/uid/10000047i).
 

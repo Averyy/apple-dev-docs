@@ -5,7 +5,7 @@
 
 These constants specify the shape of the joints between connected segments of a stroked path.
 
-#### Overview
+## Overview
 
 Used by [`lineJoin`](./cashapelayer/linejoin.md). The following figure shows the appearance of the available line join styles.
 

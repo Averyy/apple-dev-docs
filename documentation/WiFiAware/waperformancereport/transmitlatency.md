@@ -17,7 +17,7 @@ The measured transmit latency per access category that is in use with the remote
 let transmitLatency: [WAAccessCategory : WAPerformanceReport.TransmitLatencyMetrics]
 ```
 
-#### Discussion
+## Discussion
 
 The system only reports in-use and measurable access categories. The dictionary is empty if there’s no activity, or if the system can’t measure the data.
 

@@ -23,7 +23,7 @@ A layer object that wraps an embedding filter and manages its deinitialization.
 class EmbeddingLayer
 ```
 
-#### Overview
+## Overview
 
 Use an embedding layer to access dictionary items based on the integer indices that the input tensor defines.
 

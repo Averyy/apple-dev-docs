@@ -20,7 +20,7 @@ func attributedString() -> NSAttributedString
 - (NSAttributedString *) attributedString;
 ```
 
-#### Return Value
+## Return Value
 
 The receiver’s text storage object.
 

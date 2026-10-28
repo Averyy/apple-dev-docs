@@ -24,11 +24,11 @@ var selectedPages: [PDFPage]? { get }
 @property (nonatomic, strong, readonly, nullable) NSArray<PDFPage *> * selectedPages;
 ```
 
-#### Return Value
+## Return Value
 
 An array of PDF pages that correspond to the thumbnails selected in the thumbnail view.
 
-#### Discussion
+## Discussion
 
 If the thumbnail view allows multiple selections (if [`allowsMultipleSelection`](./allowsmultipleselection.md) returns [`true`](../../Swift/true.md)), you can use this method to get the PDF pages that correspond to the selected thumbnails.
 

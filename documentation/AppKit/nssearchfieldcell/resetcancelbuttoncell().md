@@ -19,7 +19,7 @@ func resetCancelButtonCell()
 - (void) resetCancelButtonCell;
 ```
 
-#### Discussion
+## Discussion
 
 This method resets the target, action, regular image, and pressed image for the cancel button cell. By default, when users click the cancel button, the `delete:` action message is sent up the responder chain to the first `NSText` object that can handle it. This method gives you a way to customize the cancel button for specific situations and then reset the button defaults without having to undo changes individually.
 

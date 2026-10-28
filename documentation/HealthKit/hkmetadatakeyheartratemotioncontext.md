@@ -24,7 +24,7 @@ let HKMetadataKeyHeartRateMotionContext: String
 extern NSString * const HKMetadataKeyHeartRateMotionContext;
 ```
 
-#### Discussion
+## Discussion
 
 This key takes an [`NSNumber`](../Foundation/nsnumber.md) containing an [`HKHeartRateMotionContext`](./hkheartratemotioncontext.md) as its value.
 

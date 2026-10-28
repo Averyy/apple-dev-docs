@@ -15,7 +15,7 @@ Specifies the orientation of the device.
 readonly attribute long orientation;
 ```
 
-#### Discussion
+## Discussion
 
 This property is set to one of the values in [Table 1](./api-1632568-orientation.md#1965650). For example, if the user starts with the device in portrait orientation and then changes to landscape orientation by turning the device to the right, the window’s `orientation` property is set to `-90`. If the user instead changes to landscape by turning the device to the left, the window’s `orientation` property is set to `90`. The default value is `0`.
 

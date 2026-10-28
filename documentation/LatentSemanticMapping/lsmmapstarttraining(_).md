@@ -20,7 +20,7 @@ func LSMMapStartTraining(_ mapref: LSMMap) -> OSStatus
 OSStatus LSMMapStartTraining(LSMMapRef mapref);
 ```
 
-#### Discussion
+## Discussion
 
 This function is somewhat computationally expensive, as it requires substantial data structure reorganization.
 

@@ -19,7 +19,7 @@ weak var delegate: (any NSDatePickerCellDelegate)? { get set }
 @property (weak, nullable) id<NSDatePickerCellDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 The delegate must conform to [`NSDatePickerCellDelegate`](../nsdatepickercelldelegate.md).
 

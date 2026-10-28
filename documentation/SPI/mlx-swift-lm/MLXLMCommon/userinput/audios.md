@@ -17,7 +17,7 @@ The audios associated with the `UserInput`.
 var audios: [UserInput.Audio]
 ```
 
-#### Discussion
+## Discussion
 
 If the [`prompt`](./prompt-swift.property.md) is a [`UserInput.Prompt.chat(_:)`](./prompt-swift.enum/chat%28_%29.md) this will collect the audios from the chat messages, otherwise these are the stored audios with the [`UserInput`](../userinput.md).
 

@@ -21,7 +21,7 @@ An enclosing combining mark.
 case enclosingMark
 ```
 
-#### Discussion
+## Discussion
 
 This value corresponds to the category `Enclosing_Mark` (abbreviated `Me`) in the [Unicode Standard](https://unicode.org/reports/tr44/#General_Category_Values).
 

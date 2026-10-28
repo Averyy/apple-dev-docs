@@ -24,11 +24,11 @@ init(player: AVPlayer?)
 + (AVPlayerLayer *) playerLayerWithPlayer:(AVPlayer *) player;
 ```
 
-#### Return Value
+## Return Value
 
 A layer that displays the visual output of the associated player.
 
-#### Discussion
+## Discussion
 
 You may create an arbitrary number of layers for the same player object.
 

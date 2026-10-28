@@ -20,7 +20,7 @@ The minimum threshold for the zone.
 var minimum: HKQuantity? { get }
 ```
 
-#### Discussion
+## Discussion
 
 If `nil`, the zone has no lower bound.
 

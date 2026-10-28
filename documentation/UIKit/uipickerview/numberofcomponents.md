@@ -22,7 +22,7 @@ var numberOfComponents: Int { get }
 @property (nonatomic, readonly) NSInteger numberOfComponents;
 ```
 
-#### Discussion
+## Discussion
 
 A [`UIPickerView`](../uipickerview.md) object fetches the value of this property from the data source and caches it. The default value is `0`.
 

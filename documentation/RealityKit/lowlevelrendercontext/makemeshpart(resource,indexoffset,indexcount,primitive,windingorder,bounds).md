@@ -19,11 +19,11 @@ Creates a mesh part that selects a contiguous range of indices from a mesh resou
 func makeMeshPart(resource: LowLevelMeshResource, indexOffset: Int, indexCount: Int, primitive: MTLPrimitiveType, windingOrder: MTLWinding, bounds: BoundingSphereBox) throws -> LowLevelMeshPart
 ```
 
-#### Return Value
+## Return Value
 
 A newly created [`LowLevelMeshPart`](../lowlevelmeshpart.md).
 
-#### Discussion
+## Discussion
 
 > **Throws**: An error if the index range falls outside the resource’s index buffer.
 

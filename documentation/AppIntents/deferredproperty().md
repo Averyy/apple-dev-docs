@@ -18,11 +18,11 @@ A macro that adds an asynchronous app entity property with an asynchronous get a
 ## Declaration
 
 ```swift
-@attached
-(peer, names: prefixed(`$`), prefixed(`_`)) @attached(accessor, names: named(get), named(set)) macro DeferredProperty()
+@attached(peer, names: prefixed(`$`), prefixed(`_`))
+@attached(accessor, names: named(get), named(set)) macro DeferredProperty()
 ```
 
-#### Example
+## Example
 
 ```swift
 struct Restaurant: AppEntity {

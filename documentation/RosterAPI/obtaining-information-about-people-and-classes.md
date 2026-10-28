@@ -5,17 +5,17 @@
 
 Prepare your app to request organizational information from a server.
 
-#### Overview
+## Overview
 
 Roster API gives you access to information about the people and classes within an Apple School Manager (ASM) organization. To accomplish this, register for access, then perform queries to obtain the users and classes in that organization.
 
-##### Plan your integration design
+### Plan your integration design
 
 When planning the design for the integration, create roles that allow specific accounts to perform the steps for integrating your app with Roster API. Provide only those roles with the privileges to perform create, read, update, and delete operations for the integration. For example, in ASM, only accounts that have administrator or site-manager roles can authorize an app to use Roster API.
 
 Consider that there’s only one configuration at the organizational level. Accounts belonging to the roles with privileges work with this single configuration. This means that any changes that one privileged account makes are visible to other privileged accounts.
 
-##### Select the primary App ID
+### Select the primary App ID
 
 Use your credentials to log in to the [Apple Developer website](http://developer.apple.com/), then choose Certificates, IDs & Profiles > Services, and click the Configure button in the Account & Organizational Data Sharing section.
 
@@ -29,7 +29,7 @@ Choose the primary App ID from the drop-down menu, then click Continue.
 
 ![A screenshot showing the Primary App ID drop-down menu in the Account and Organizational Data Sharing: Configuration section of the Certificates, Identifiers and Profiles page.](https://developer.apple.com/tutorials/images/com.apple.rosterapi/media-4113867@2x.png)
 
-##### Set the return URLs
+### Set the return URLs
 
 Return URLs receive the grant code after successfully authorizing with Apple. From the Organizational Data Sharing Scopes options, select Roster API: User access, Roster API: Class access, and Roster API: Test Data access.  For more information about the test data access scope, see [Validating with the Roster API test scope](./validating-with-the-roster-api-test-scope.md).
 
@@ -41,7 +41,7 @@ Review your configuration and click Confirm.
 
 ![A screenshot of a confirmation screen with a summary of the primary bundle ID, Server to Server Notification Endpoint URL, and Return URLs. There is an outline around the Confirm button.](https://developer.apple.com/tutorials/images/com.apple.rosterapi/media-4113872@2x.png)
 
-##### Generate the client secret
+### Generate the client secret
 
 Before you can generate the access token, you’ll first need to generate the client secret, which you’ll need to create the token. See [Creating a client secret](../AccountOrganizationalDataSharing/creating-a-client-secret.md).
 
@@ -61,11 +61,11 @@ Click Download, then set up a client secret. See [Creating a client secret](../A
 
 ![A screenshot showing the Download Your Key section of the Certificates, Identifiers and Profiles page. The key is available to download and there’s an outline around the Download button. A warning says “After downloading your key, it cannot be re-downloaded as the server copy is removed. If you are not prepared to download your key at this time, click Done and download it at a later time. Be sure to save a backup of your key in a secure place”.](https://developer.apple.com/tutorials/images/com.apple.rosterapi/media-4113873@2x.png)
 
-##### Validate using the test scope
+### Validate using the test scope
 
 To ensure your integration works correctly, test it before providing it to users. See [Validating with the Roster API test scope](./validating-with-the-roster-api-test-scope.md).
 
-##### Receive revocation notifications
+### Receive revocation notifications
 
 ASM organizations can set up integration with the supported apps to import information about people and classes.
 
@@ -108,7 +108,7 @@ Use the `/rosterapi/v1/organization` endpoint to determine the `org_id` when obt
 
 Use `id` as the identifier to associate records to a certain organization. When the revocation notification arrives, delete those records associated with the organization that matches `org_id`.
 
-##### Synchronize data with Apple School Manager
+### Synchronize data with Apple School Manager
 
 Apple synchronizes data in ASM with authorized student information systems every 24 hours. Fetch data using Roster API once every 24 hours to have the most up to date data in your app. If you need to reduce your resource usage, consider fetching data less frequently, for example once every 48 hours or once every week.
 

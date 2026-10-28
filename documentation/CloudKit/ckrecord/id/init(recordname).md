@@ -25,11 +25,11 @@ convenience init(recordName: String)
 - (instancetype) initWithRecordName:(NSString *) recordName;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized record ID object.
 
-#### Discussion
+## Discussion
 
 Use this method when you’re creating or searching for records in the default zone.
 

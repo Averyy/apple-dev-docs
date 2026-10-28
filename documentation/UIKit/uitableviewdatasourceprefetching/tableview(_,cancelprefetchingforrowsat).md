@@ -23,7 +23,7 @@ optional func tableView(_ tableView: UITableView, cancelPrefetchingForRowsAt ind
 - (void) tableView:(UITableView *) tableView cancelPrefetchingForRowsAtIndexPaths:(NSArray<NSIndexPath *> *) indexPaths;
 ```
 
-#### Discussion
+## Discussion
 
 The table view calls this method on the main queue to cancel prefetch requests for cells that are no longer needed. Use this method to cancel operations initiated by a previous call to [`tableView(_:prefetchRowsAt:)`](./tableview%28_,prefetchrowsat%29.md).
 

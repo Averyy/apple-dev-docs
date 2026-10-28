@@ -23,7 +23,7 @@ let NSMetadataUbiquitousItemPercentUploadedKey: String
 extern NSString * const NSMetadataUbiquitousItemPercentUploadedKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value is an [`NSNumber`](./nsnumber.md) object that contains the percentage of the file that has already been uploaded to the cloud. The value is a double in the range `0.0` to `100.0`.
 

@@ -25,11 +25,11 @@ func vImageLookupTable_8to64U(_ src: UnsafePointer<vImage_Buffer>, _ dest: Unsaf
 vImage_Error vImageLookupTable_8to64U(const vImage_Buffer *src, const vImage_Buffer *dest, const uint64_t LUT[256], vImage_Flags flags);
 ```
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
-#### Discussion
+## Discussion
 
 For each pixel, this function uses the 8-bit value from the source image as an index to the 64-bit value from the table. The per-pixel conversion calculation is equivalent to the following:
 

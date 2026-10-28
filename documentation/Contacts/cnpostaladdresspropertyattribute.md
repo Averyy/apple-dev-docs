@@ -24,7 +24,7 @@ let CNPostalAddressPropertyAttribute: String
 extern NSString * const CNPostalAddressPropertyAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key is a string constant that specifies the meaning of the range of characters. For example, the value is [`CNPostalAddressCityKey`](./cnpostaladdresscitykey.md) when the characters specify the city portion of the address.
 

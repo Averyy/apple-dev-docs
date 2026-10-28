@@ -19,7 +19,7 @@ Creates a data source from a data table that contains the hand joint locations a
 case labeledImageData(table: MLDataTable, imageColumn: String = __Defaults.imageColumnName, labelColumn: String = __Defaults.labelColumnName)
 ```
 
-#### Discussion
+## Discussion
 
 - table: A data table that contains the locations of annotations for each hand pose image file.
 - imageColumn: The name of the column in the data table that contains the image filenames.

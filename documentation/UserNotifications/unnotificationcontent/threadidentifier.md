@@ -32,7 +32,7 @@ var threadIdentifier: String { get }
 @property (atomic, copy, readonly) NSString * threadIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 For remote notifications, the system sets this property to the value of the `thread-id` key in the `aps` dictionary.
 

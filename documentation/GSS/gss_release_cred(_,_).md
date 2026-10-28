@@ -27,11 +27,11 @@ OM_uint32 gss_release_cred(OM_uint32 *minor_status, gss_cred_id_t*cred_handle);
 
 - [Allocating and Releasing Objects](./allocating-and-releasing-objects.md)
 
-#### Return Value
+## Return Value
 
 A status code set to [`GSS_S_COMPLETE`](./gss_s_complete.md) on success. See [Function Status](./function-status.md) for a description of other status outputs.
 
-#### Discussion
+## Discussion
 
 This function frees the memory associated with the credential, but doesn’t necessarily purge that memory of the credential’s data. If you need to ensure no trace of the credential remains in memory, use [`gss_destroy_cred(_:_:)`](./gss_destroy_cred%28_,_%29.md) instead. That function first removes the credential data from memory and then frees the memory using a call to this function.
 

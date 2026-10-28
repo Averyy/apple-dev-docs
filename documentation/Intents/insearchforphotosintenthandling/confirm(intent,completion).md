@@ -29,7 +29,7 @@ optional func confirm(intent: INSearchForPhotosIntent) async -> INSearchForPhoto
 - (void) confirmSearchForPhotos:(INSearchForPhotosIntent *) intent completion:(void (^)(INSearchForPhotosIntentResponse *response)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to validate that you can perform the search using the given parameters. If the search involves contacting a remote server, you should also validate that the server is available. At some point in your implementation, execute the provided completion block with a response object indicating your app’s readiness to perform the search.
 

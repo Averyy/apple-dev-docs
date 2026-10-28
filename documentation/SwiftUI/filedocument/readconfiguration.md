@@ -21,7 +21,7 @@ The configuration for reading document contents.
 typealias ReadConfiguration = FileDocumentReadConfiguration
 ```
 
-#### Discussion
+## Discussion
 
 This type is an alias for [`FileDocumentReadConfiguration`](../filedocumentreadconfiguration.md), which contains a content type and a file wrapper that you use to access the contents of a document file. You get a value of this type as an input to the [`init(configuration:)`](./init%28configuration%29.md) initializer. Use it to load a document from a file.
 

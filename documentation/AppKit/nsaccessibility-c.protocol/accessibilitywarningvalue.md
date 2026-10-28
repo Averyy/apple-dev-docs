@@ -15,7 +15,7 @@ The warning value for the level indicator.
 @property (strong, nullable) id accessibilityWarningValue;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property for elements such as the battery level indicator. This property sets a boundary value. If the element’s value exceeds the boundary value, the element has reached a warning stage.
 

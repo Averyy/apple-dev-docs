@@ -20,7 +20,7 @@ var filter: Any? { get set }
 @property (strong, nullable) id filter;
 ```
 
-#### Discussion
+## Discussion
 
 If specified, the filter must support both [`kCIInputImageKey`](../../CoreImage/kciinputimagekey.md) and [`kCIInputTargetImageKey`](../../CoreImage/kciinputtargetimagekey.md) input keys, and the [`kCIOutputImageKey`](../../CoreImage/kcioutputimagekey.md) output key.  The filter may optionally support the [`kCIInputExtentKey`](../../CoreImage/kciinputextentkey.md) input key, which is set to a rectangle describing the region in which the transition should run. If `filter` does not support the required input and output keys the behavior is undefined.
 
@@ -64,7 +64,7 @@ func runTransition() {
 }
 ```
 
-##### Special Considerations
+### Special Considerations
 
 This property is not supported on layers in iOS.
 

@@ -15,7 +15,7 @@ Removes an array of tile overlays from the map.
 removeTileOverlays(tileOverlays: TileOverlay[]): TileOverlay[];
 ```
 
-#### Return Value
+## Return Value
 
 Returns the array of tile overlays.
 

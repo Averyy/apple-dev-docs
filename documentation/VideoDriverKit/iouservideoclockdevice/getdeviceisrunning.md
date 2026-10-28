@@ -15,7 +15,7 @@ Gets bool value indicating if device is running.
 bool GetDeviceIsRunning();
 ```
 
-#### Discussion
+## Discussion
 
 The object’s work queue synchronizes access to the value.
 

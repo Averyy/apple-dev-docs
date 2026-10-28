@@ -19,11 +19,11 @@ func frameForItem(at index: Int, withNumberOfItems numberOfItems: Int) -> NSRect
 - (NSRect) frameForItemAtIndex:(NSUInteger) index withNumberOfItems:(NSUInteger) numberOfItems;
 ```
 
-#### Return Value
+## Return Value
 
 The frame rectangle that reflects where the collection view would place the item.
 
-#### Discussion
+## Discussion
 
 Using the value in the `numberOfItems` parameter, this method calculates the frame rectangle of the item at the specified `index` in the collection view.
 

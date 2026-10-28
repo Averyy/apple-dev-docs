@@ -15,11 +15,11 @@ The response object returned by the Query Location Groups endpoint.
 object LocationGroupQueryResponse
 ```
 
-#### Discussion
+## Discussion
 
 The `LocationGroupQueryResponse` object is the top-level envelope returned by [`Query Location Groups`](./query-location-groups.md). The `result` array contains all [`LocationGroup`](./locationgroup.md) objects that match the supplied filters, subject to pagination. Use `pagination.totalCount` and `pagination.offset` to page through large result sets.
 
-##### Example
+### Example
 
 ```json
 {

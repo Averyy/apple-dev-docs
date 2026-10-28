@@ -19,7 +19,7 @@ var isJavaScriptEnabled: Bool { get set }
 @property (nonatomic, getter=isJavaScriptEnabled) BOOL javaScriptEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 Set to [`true`](../../Swift/true.md) if the web view should allow JavaScript, otherwise [`false`](../../Swift/false.md).
 

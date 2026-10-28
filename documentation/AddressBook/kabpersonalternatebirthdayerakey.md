@@ -23,7 +23,7 @@ let kABPersonAlternateBirthdayEraKey: CFString!
 extern CFStringRef const kABPersonAlternateBirthdayEraKey;
 ```
 
-#### Discussion
+## Discussion
 
 Corresponds to [`era`](../Foundation/nsdatecomponents/era.md).
 

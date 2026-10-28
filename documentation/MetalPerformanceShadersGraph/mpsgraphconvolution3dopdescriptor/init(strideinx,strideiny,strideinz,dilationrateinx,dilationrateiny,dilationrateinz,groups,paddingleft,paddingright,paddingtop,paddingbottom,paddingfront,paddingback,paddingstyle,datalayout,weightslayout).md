@@ -24,7 +24,7 @@ convenience init?(strideInX: Int, strideInY: Int, strideInZ: Int, dilationRateIn
 + (instancetype) descriptorWithStrideInX:(NSUInteger) strideInX strideInY:(NSUInteger) strideInY strideInZ:(NSUInteger) strideInZ dilationRateInX:(NSUInteger) dilationRateInX dilationRateInY:(NSUInteger) dilationRateInY dilationRateInZ:(NSUInteger) dilationRateInZ groups:(NSUInteger) groups paddingLeft:(NSUInteger) paddingLeft paddingRight:(NSUInteger) paddingRight paddingTop:(NSUInteger) paddingTop paddingBottom:(NSUInteger) paddingBottom paddingFront:(NSUInteger) paddingFront paddingBack:(NSUInteger) paddingBack paddingStyle:(MPSGraphPaddingStyle) paddingStyle dataLayout:(MPSGraphTensorNamedDataLayout) dataLayout weightsLayout:(MPSGraphTensorNamedDataLayout) weightsLayout;
 ```
 
-#### Return Value
+## Return Value
 
 The `MPSGraphConvolution3DOpDescriptor` on autoreleasepool.
 

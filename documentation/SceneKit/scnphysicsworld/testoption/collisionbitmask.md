@@ -25,7 +25,7 @@ static let collisionBitMask: SCNPhysicsWorld.TestOption
 extern SCNPhysicsTestOption const SCNPhysicsTestCollisionBitMaskKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is an [`NSNumber`](../../../Foundation/nsnumber.md) object containing an [`NSUInteger`](../../../ObjectiveC/nsuinteger.md) value. SceneKit tests for contacts only with physics bodies whose [`categoryBitMask`](../../scnphysicsbody/categorybitmask.md) property overlaps with this bit mask. The default value is [`all`](../../scnphysicscollisioncategory/all.md), specifying that searches should test all physics bodies regardless of their category.
 

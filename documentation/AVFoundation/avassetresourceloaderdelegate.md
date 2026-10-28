@@ -25,7 +25,7 @@ protocol AVAssetResourceLoaderDelegate : NSObjectProtocol
 @protocol AVAssetResourceLoaderDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 A class should adopt this protocol when associated with the asset’s resource loader—that is, an instance of the [`AVAssetResourceLoader`](./avassetresourceloader.md) class. The resource loader works with your delegate to process the request.
 

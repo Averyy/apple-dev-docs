@@ -16,7 +16,7 @@ struct vnop_whiteout_args {
 };
 ```
 
-#### Discussion
+## Discussion
 
 If file creation succeeds, "vpp" should be returned with an iocount to be dropped by the caller. A VNOP_CREATE() calldown can come without a preceding VNOP_OPEN().
 

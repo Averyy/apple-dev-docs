@@ -23,11 +23,11 @@ func canSetSessionPreset(_ preset: AVCaptureSession.Preset) -> Bool
 - (BOOL) canSetSessionPreset:(AVCaptureSessionPreset) preset;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the capture session supports the preset; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Use this method to determine whether the capture session, in its current I/O configuration, supports a particular preset. You can only set a preset that returns [`true`](../../Swift/true.md) as the capture session’s [`sessionPreset`](./sessionpreset.md) property value.
 

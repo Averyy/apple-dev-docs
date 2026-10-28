@@ -24,7 +24,7 @@ func stopStepCountingUpdates()
 - (void) stopStepCountingUpdates;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method to stop the delivery of updates that you started by calling the [`startStepCountingUpdates(to:updateOn:withHandler:)`](./startstepcountingupdates%28to,updateon,withhandler%29.md) method. This method does not stop queries started using the [`queryStepCountStarting(from:to:to:withHandler:)`](./querystepcountstarting%28from,to,to,withhandler%29.md) method.
 

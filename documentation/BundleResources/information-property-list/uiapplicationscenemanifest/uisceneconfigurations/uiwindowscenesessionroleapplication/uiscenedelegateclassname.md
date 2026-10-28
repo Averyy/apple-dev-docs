@@ -16,7 +16,7 @@ The name of the app-specific class that you want UIKit to instantiate and use as
 - **Name**: `UISceneDelegateClassName` (Delegate Class Name)
 - **Type**: string
 
-#### Discussion
+## Discussion
 
 The class you specify for this key must adopt the [`UISceneDelegate`](../../../../../UIKit/uiscenedelegate.md) protocol. If the class you specify for the [`UISceneClassName`](./uisceneclassname.md) key is [`UIWindowScene`](../../../../../UIKit/uiwindowscene.md), your class must adopt the [`UIWindowSceneDelegate`](../../../../../UIKit/uiwindowscenedelegate.md) protocol.
 

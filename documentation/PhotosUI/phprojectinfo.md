@@ -19,7 +19,7 @@ class PHProjectInfo
 @interface PHProjectInfo : NSObject
 ```
 
-#### Overview
+## Overview
 
 macOS Photos automatically generates a [`PHProjectInfo`](./phprojectinfo.md) object when creating a new project. Photos passes along the project information with a [`PHProjectExtensionContext`](./phprojectextensioncontext.md) object. This object contains metadata about the project’s creation source, sections, product type, branding, and page numbers. Your extension leverages project information to influence project layout, autoflow, and theme selection. The properties of this class are immutable, and your extension can’t instantiate the object directly.
 

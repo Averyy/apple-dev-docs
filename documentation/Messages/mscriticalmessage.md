@@ -16,7 +16,7 @@ A message for critical communications.
 struct MSCriticalMessage
 ```
 
-#### Overview
+## Overview
 
 Create and send time-sensitive messages that require immediate attention. Critical messages can bypass certain system restrictions to ensure delivery of urgent information.
 

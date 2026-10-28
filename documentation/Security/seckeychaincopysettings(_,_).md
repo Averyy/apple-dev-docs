@@ -21,7 +21,7 @@ func SecKeychainCopySettings(_ keychain: SecKeychain?, _ outSettings: UnsafeMuta
 OSStatus SecKeychainCopySettings(SecKeychainRef keychain, SecKeychainSettings *outSettings);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 

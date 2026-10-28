@@ -21,7 +21,7 @@ var plugInsEnabled: Bool { get set }
 @property (nonatomic) BOOL plugInsEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`false`](../../Swift/false.md).
 

@@ -21,7 +21,7 @@ Returns entries at the frequency of the animation schedule.
 func entries(from start: Date, mode: TimelineScheduleMode) -> AnimationTimelineSchedule.Entries
 ```
 
-#### Discussion
+## Discussion
 
 When in `.lowFrequency` mode, return no entries, effectively pausing the animation.
 

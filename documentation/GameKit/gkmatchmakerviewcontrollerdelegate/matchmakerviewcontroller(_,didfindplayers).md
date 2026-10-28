@@ -23,7 +23,7 @@ optional func matchmakerViewController(_ viewController: GKMatchmakerViewControl
 - (void) matchmakerViewController:(GKMatchmakerViewController *) viewController didFindPlayers:(NSArray<NSString *> *) playerIDs;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called when the view controller’s `hosted` property is [`true`](../../Swift/true.md). Although optional in the protocol, if your game attaches a delegate to the view controller for a hosted match, the view controller expects your game to provide an implementation of this method.
 

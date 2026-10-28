@@ -9,11 +9,11 @@
 virtual bool isFormatted() const;
 ```
 
-#### Return Value
+## Return Value
 
 Returns true if the media is formatted, false otherwise.
 
-#### Overview
+## Overview
 
 Ask the media object whether it is formatted.
 

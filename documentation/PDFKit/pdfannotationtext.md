@@ -21,7 +21,7 @@ class PDFAnnotationText
 @interface PDFAnnotationText : PDFAnnotation
 ```
 
-#### Overview
+## Overview
 
 Each `PDFAnnotationText` object has a `PDFAnnotationPopup` object associated with it. In its closed state, the annotation appears as an icon. In its open state, it displays as a pop-up window containing the text of the note. Note that your application must do the work to put up a window containing the text in response to a [`PDFViewAnnotationHitNotification`](./pdfviewannotationhitnotification.md). Currently, text annotations do not scale and rotate with the page.
 

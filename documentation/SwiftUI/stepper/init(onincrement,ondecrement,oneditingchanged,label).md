@@ -25,7 +25,7 @@ init(onIncrement: (() -> Void)?, onDecrement: (() -> Void)?, onEditingChanged: @
 
 Available when `Label` conforms to `View`.
 
-#### Discussion
+## Discussion
 
 Use this initializer to create a control with a custom title that executes closures you provide when the user clicks or taps the stepper’s increment or decrement buttons.
 

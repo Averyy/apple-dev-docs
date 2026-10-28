@@ -26,7 +26,7 @@ var verticalDirectionEstimate: NINearbyObject.VerticalDirectionEstimate { get }
 
 - [Initiating and maintaining a session](../initiating-and-maintaining-a-session.md)
 
-#### Discussion
+## Discussion
 
 The framework sets a value of this property when [`isCameraAssistanceEnabled`](../ninearbypeerconfiguration/iscameraassistanceenabled.md) is `true`.
 

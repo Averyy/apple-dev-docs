@@ -18,7 +18,7 @@ An indication of whether system tracking is enabled.
 var isSystemTrackingEnabled: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property is `true` if system tracking is enabled; otherwise the property is `false`. To change system tracking behavior, see [`setSystemTrackingEnabled(_:)`](./setsystemtrackingenabled%28_%29.md).
 

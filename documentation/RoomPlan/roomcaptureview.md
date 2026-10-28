@@ -22,7 +22,7 @@ A view that enables the user to scan their room with the device’s camera.
 
 - [Scanning the rooms of a single structure](./scanning-the-rooms-of-a-single-structure.md)
 
-#### Overview
+## Overview
 
 This class provides your app with a view that manages the scan process from start to finish, including:
 

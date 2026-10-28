@@ -27,7 +27,7 @@ func perform(_ query: CKQuery, inZoneWith zoneID: CKRecordZone.ID?, completionHa
 - (void) performQuery:(CKQuery *) query inZoneWithID:(CKRecordZoneID *) zoneID completionHandler:(void (^)(NSArray<CKRecord *> *results, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 The completion handler takes the following parameters:
 

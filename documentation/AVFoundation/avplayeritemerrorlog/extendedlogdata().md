@@ -25,11 +25,11 @@ func extendedLogData() -> Data?
 - (NSData *) extendedLogData;
 ```
 
-#### Return Value
+## Return Value
 
 A serialized representation of the error log in the Extended Log File Format.
 
-#### Discussion
+## Discussion
 
 This method converts the web server error log into a textual format that conforms to the W3C Extended Log File Format for web server log files. For more information, see [http://www.w3.org/pub/WWW/TR/WD-logfile.html](http://www.w3.org/pub/WWW/TR/WD-logfile.html).
 

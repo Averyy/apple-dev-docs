@@ -21,7 +21,7 @@ class func usingFocus(identifier: UIDeferredMenuElement.Identifier, shouldCacheI
 + (instancetype) elementUsingFocusWithIdentifier:(UIDeferredMenuElementIdentifier) identifier shouldCacheItems:(BOOL) shouldCacheItems;
 ```
 
-#### Discussion
+## Discussion
 
 Returns a placeholder menu element that is replaced with elements provided from the responder chain. A loading UI takes the place of the element in the menu until it is fulfilled. The element may be stored and re-used across menus.
 

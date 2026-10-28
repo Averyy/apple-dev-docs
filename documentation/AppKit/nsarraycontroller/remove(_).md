@@ -20,11 +20,11 @@ func remove(_ sender: Any?)
 - (void) remove:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 See [`removeObject(_:)`](./removeobject%28_%29.md) for a discussion of the semantics of removing objects when using Core Data.
 
-##### Special Considerations
+### Special Considerations
 
 Beginning with OS X v10.4 the result of this method is deferred until the next iteration of the runloop so that the error presentation mechanism can provide feedback as a sheet.
 

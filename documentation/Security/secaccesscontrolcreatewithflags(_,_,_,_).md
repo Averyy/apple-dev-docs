@@ -30,11 +30,11 @@ SecAccessControlRefSecAccessControlCreateWithFlags(CFAllocatorRef allocator, CFT
 - [Protecting keys with the Secure Enclave](./protecting-keys-with-the-secure-enclave.md)
 - [Restricting keychain item accessibility](./restricting-keychain-item-accessibility.md)
 
-#### Return Value
+## Return Value
 
 The newly created access control object. In Objective-C, free this item with [`CFRelease`](../CoreFoundation/cfrelease.md) when you are done with it.
 
-#### Discussion
+## Discussion
 
 You use the result of this function as a value for the [`kSecAttrAccessControl`](./ksecattraccesscontrol.md) attribute in the [`SecItemAdd(_:_:)`](./secitemadd%28_,_%29.md), [`SecItemUpdate(_:_:)`](./secitemupdate%28_,_%29.md), or [`SecKeyGeneratePair(_:_:_:)`](./seckeygeneratepair%28_,_,_%29.md) functions.
 

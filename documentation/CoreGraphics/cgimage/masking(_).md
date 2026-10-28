@@ -25,11 +25,11 @@ func masking(_ mask: CGImage) -> CGImage?
 extern CGImageRefCGImageCreateWithMask(CGImageRef image, CGImageRef mask);
 ```
 
-#### Return Value
+## Return Value
 
 An image created by masking `image` with `mask`. In Objective-C, you’re responsible for releasing this object by calling [`CGImageRelease`](../cgimagerelease.md).
 
-#### Discussion
+## Discussion
 
 The resulting image depends on whether the `mask` parameter is an image mask or an image. If the `mask` parameter is an image mask, then the source samples of the image mask act as an inverse alpha value. That is, if the value of a source sample in the image mask is S, then the corresponding region in `image` is blended with the destination using an alpha value of (1-S). For example, if S is 1, then the region is not painted, while if S is 0, the region is fully painted.
 

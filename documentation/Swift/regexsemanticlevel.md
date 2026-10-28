@@ -21,7 +21,7 @@ A semantic level to use during regex matching.
 struct RegexSemanticLevel
 ```
 
-#### Overview
+## Overview
 
 The semantic level determines whether a regex matches with the same character-based semantics as string comparisons or by matching individual Unicode scalar values. See [`matchingSemantics(_:)`](./regex/matchingsemantics%28_%29.md) for more about changing the semantic level for all or part of a regex.
 

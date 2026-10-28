@@ -21,7 +21,7 @@ Formats the decimal using a default localized format style.
 func formatted() -> String
 ```
 
-#### Return Value
+## Return Value
 
 A string representation of the decimal, formatted according to the default format style.
 

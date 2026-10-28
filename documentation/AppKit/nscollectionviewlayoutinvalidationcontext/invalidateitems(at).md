@@ -19,7 +19,7 @@ func invalidateItems(at indexPaths: Set<IndexPath>)
 - (void) invalidateItemsAtIndexPaths:(NSSet<NSIndexPath *> *) indexPaths;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method when you want the layout object to recompute attributes for a specific set of items. The items you provide are added to the [`invalidatedItemIndexPaths`](./invalidateditemindexpaths.md) property. You can call this method more than once to create a merged set of items.
 

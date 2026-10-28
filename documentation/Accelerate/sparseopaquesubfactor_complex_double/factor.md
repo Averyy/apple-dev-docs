@@ -25,7 +25,7 @@ var factor: SparseOpaqueFactorization_Complex_Double
 SparseOpaqueFactorization_Complex_Double factor;
 ```
 
-#### Discussion
+## Discussion
 
 Use the `SparseCleanup` function to free resources held by these objects.
 

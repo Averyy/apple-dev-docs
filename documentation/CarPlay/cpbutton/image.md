@@ -22,7 +22,7 @@ var image: UIImage? { get }
 @property (nonatomic, copy, readonly, nullable) UIImage * image;
 ```
 
-#### Discussion
+## Discussion
 
 This property returns the custom image you provide at initialization, or a system image when using a concrete subclass like [`CPContactCallButton`](../cpcontactcallbutton.md).
 

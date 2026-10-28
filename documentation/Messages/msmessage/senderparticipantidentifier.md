@@ -21,7 +21,7 @@ var senderParticipantIdentifier: UUID { get }
 @property (nonatomic, readonly) NSUUID * senderParticipantIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this UUID is scoped to the current device. Each device participating in the conversation will have a different UUID for the message’s sender.
 

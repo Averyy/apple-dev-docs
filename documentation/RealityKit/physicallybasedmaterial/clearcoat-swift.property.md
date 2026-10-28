@@ -20,7 +20,7 @@ The transparent highlights that simulate a clear, shiny coating on an entity.
 var clearcoat: PhysicallyBasedMaterial.Clearcoat { get set }
 ```
 
-#### Discussion
+## Discussion
 
 An entity in RealityKit can display a clearcoat, which is a separate layer of transparent specular highlights used to simulate a clear transparent coating, like the paint on a car, or the surface of lacquered objects. By default, materials don’t have clearcoat enabled.
 

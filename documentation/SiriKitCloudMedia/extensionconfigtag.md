@@ -23,7 +23,7 @@ string ExtensionConfigTag
 
 **Maximum Length**: `1002`
 
-#### Discussion
+## Discussion
 
 Change this value whenever anything in your service’s [`ExtensionConfig`](./extensionconfig.md) changes. Don’t include any personally identifiable information in this value and ensure the value matches the `/["][ -~]{1000}["]/` pattern.
 

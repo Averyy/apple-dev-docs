@@ -25,11 +25,11 @@ func CGImageMetadataCreateMutableCopy(_ metadata: CGImageMetadata) -> CGMutableI
 extern CGMutableImageMetadataRefCGImageMetadataCreateMutableCopy(CGImageMetadataRef metadata);
 ```
 
-#### Return Value
+## Return Value
 
 A new [`CGMutableImageMetadata`](./cgmutableimagemetadata.md) type that contains a deep copy of the tags in the metadata parameter.
 
-#### Discussion
+## Discussion
 
 Typically, you call this function before modifying the metadata information for an image. Use it to create a copy of the image’s existing metadata information, and then add or modify that metadata before saving it with the image.
 

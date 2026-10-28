@@ -9,7 +9,7 @@ Get a list of beta feedback screenshot submissions for a specific app.
 **Availability**:
 - App Store Connect API 4.0+
 
-#### Overview
+## Overview
 
 List All Introductory Offer Resource IDs for an Auto-Renewable Subscription,Get a list of resource IDs representing introductory offers for an auto-renewable subscription.
 

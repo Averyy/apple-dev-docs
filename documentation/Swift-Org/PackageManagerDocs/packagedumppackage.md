@@ -10,7 +10,7 @@ framework: "Swift-Org/PackageManagerDocs"
 
 Print parsed Package.swift as JSON.
 
-#### Overview
+## Overview
 
 ```
 package dump-package [--package-path=<package-path>]

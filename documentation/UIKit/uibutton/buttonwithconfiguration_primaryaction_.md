@@ -19,11 +19,11 @@ Creates a new button with the specified configuration and registers the primary 
 + (instancetype) buttonWithConfiguration:(UIButtonConfiguration *) configuration primaryAction:(UIAction *) primaryAction;
 ```
 
-#### Return Value
+## Return Value
 
 A new button.
 
-#### Discussion
+## Discussion
 
 If the primary action contains a title or an image, this method copies them to the configuration and the button displays them.
 

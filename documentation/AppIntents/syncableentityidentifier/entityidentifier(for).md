@@ -23,11 +23,11 @@ static func entityIdentifier(for string: String) -> SyncableEntityIdentifier<Loc
 
 Available when `LocalID` conforms to `EntityIdentifierConvertible`, `LocalID` conforms to `Sendable`, `StableID` conforms to `EntityIdentifierConvertible`, and `StableID` conforms to `Sendable`.
 
-#### Return Value
+## Return Value
 
 An identifier with local ID set, or `nil` if parsing fails
 
-#### Discussion
+## Discussion
 
 Attempts to parse the string as a local ID. The stable ID is not populated during deserialization - it should be populated by queries when fetching entities.
 

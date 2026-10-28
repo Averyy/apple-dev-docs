@@ -21,11 +21,11 @@ Returns the graph encoded in the specified format.
 func data(using format: ComputeNodeGraph.Format) throws -> Data
 ```
 
-#### Return Value
+## Return Value
 
 The graph encoded using the specified format.
 
-#### Discussion
+## Discussion
 
 To reconstruct the graph, pass the data to [`init(data:)`](./init%28data%29.md).
 

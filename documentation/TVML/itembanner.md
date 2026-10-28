@@ -4,7 +4,7 @@
 
 Displays information associated with an element.
 
-#### Overview
+## Overview
 
 Use `itemBanner` element to display information inside of a `relatedContent` element. Here’s an example that displays an image and three buttons related to a media item.
 
@@ -28,13 +28,13 @@ Use `itemBanner` element to display information inside of a `relatedContent` ele
 </itemBanner>
 ```
 
-##### Subelements of itemBanner
+### Subelements of itemBanner
 
 - [heroImg](./heroimg.md)
 - [img](./img.md)
 - [row](./row.md)
 
-##### Elements that Use itemBanner
+### Elements that Use itemBanner
 
 - [relatedContent](./relatedcontent.md)
 

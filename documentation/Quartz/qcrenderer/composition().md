@@ -21,7 +21,7 @@ func composition() -> QCComposition!
 - (QCComposition *) composition;
 ```
 
-#### Return Value
+## Return Value
 
 The composition object.
 

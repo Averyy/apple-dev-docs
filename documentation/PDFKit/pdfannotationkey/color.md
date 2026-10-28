@@ -24,7 +24,7 @@ static let color: PDFAnnotationKey
 extern PDFAnnotationKey PDFAnnotationKeyColor;
 ```
 
-#### Discussion
+## Discussion
 
 Annotations use the color for the following:
 

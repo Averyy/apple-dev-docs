@@ -24,7 +24,7 @@ case depth32Float_stencil8
 MTLPixelFormatDepth32Float_Stencil8
 ```
 
-#### Discussion
+## Discussion
 
 When using this format, some Metal device objects allocate 64-bits per pixel.
 

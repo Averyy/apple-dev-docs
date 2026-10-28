@@ -22,7 +22,7 @@ nonisolated
 init(_ product: Product, prefersPromotionalIcon: Bool = true) where Icon == EmptyView, PlaceholderIcon == EmptyView
 ```
 
-#### Discussion
+## Discussion
 
 If the product has a promotional image available, the view displays it. Otherwise, the view doesn’t show an image.
 

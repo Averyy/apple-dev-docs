@@ -20,7 +20,7 @@ The number of examples in each training batch.
 var batchSize: Int
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: This parameter is only used by the `fitted` method.
 

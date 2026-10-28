@@ -24,7 +24,7 @@ init(ioSurface surface: IOSurfaceRef, options: [CIImageOption : Any]? = nil)
 - (instancetype) initWithIOSurface:(IOSurfaceRef) surface options:(NSDictionary<NSString *,id> *) options;
 ```
 
-#### Return Value
+## Return Value
 
 An image object initialized with the data from the IOSurface.
 

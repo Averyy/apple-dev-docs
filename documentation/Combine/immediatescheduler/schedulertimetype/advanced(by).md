@@ -21,7 +21,7 @@ Advances the time by the specified amount; this is meaningless in the context of
 func advanced(by n: ImmediateScheduler.SchedulerTimeType.Stride) -> ImmediateScheduler.SchedulerTimeType
 ```
 
-#### Return Value
+## Return Value
 
 An empty `SchedulerTimeType`.
 

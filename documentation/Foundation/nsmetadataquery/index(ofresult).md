@@ -25,7 +25,7 @@ func index(ofResult result: Any) -> Int
 - (NSUInteger) indexOfResult:(id) result;
 ```
 
-#### Return Value
+## Return Value
 
 Index of `result` in the query result array.
 

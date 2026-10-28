@@ -25,7 +25,7 @@ let kCVPixelBufferOpenGLCompatibilityKey: CFString
 extern CFStringRef const kCVPixelBufferOpenGLCompatibilityKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is of type [`CFBoolean`](../CoreFoundation/cfboolean.md).
 

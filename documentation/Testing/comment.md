@@ -23,7 +23,7 @@ A type that represents a comment related to a test.
 struct Comment
 ```
 
-#### Overview
+## Overview
 
 Use this type to provide context or background information about a test’s purpose, explain how a complex test operates, or include details which may be helpful when diagnosing issues recorded by a test.
 

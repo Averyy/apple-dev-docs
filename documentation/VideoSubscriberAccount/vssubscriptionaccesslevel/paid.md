@@ -26,7 +26,7 @@ case paid
 VSSubscriptionAccessLevelPaid
 ```
 
-#### Discussion
+## Discussion
 
 This value corresponds to content in your availability feed with the *subscription* offering type. Subscribers with this access level can also access free content.
 

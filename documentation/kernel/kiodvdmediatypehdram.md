@@ -13,7 +13,7 @@
 #define kIODVDMediaTypeHDRAM
 ```
 
-#### Discussion
+## Discussion
 
 The kIODVDMediaTypeKey constant for HD DVD-RAM media.
 

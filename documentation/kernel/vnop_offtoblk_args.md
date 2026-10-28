@@ -16,7 +16,7 @@ struct vnop_offtoblk_args {
 };
 ```
 
-#### Discussion
+## Discussion
 
 VNOP_BLKTOOFF() converts a logical block to a file offset in bytes. That offset can be passed to VNOP_BLOCKMAP(), then, to get a physical block number--buf_strategy() does this.
 

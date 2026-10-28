@@ -20,7 +20,7 @@ var argumentNames: [String] { get }
 @property (copy, readonly) NSArray<NSString *> * argumentNames;
 ```
 
-#### Return Value
+## Return Value
 
 The array of argument names. If there are no arguments for the command, returns an empty array.
 

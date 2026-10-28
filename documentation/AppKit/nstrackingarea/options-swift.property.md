@@ -19,7 +19,7 @@ var options: NSTrackingArea.Options { get }
 @property (readonly) NSTrackingAreaOptions options;
 ```
 
-#### Discussion
+## Discussion
 
 The options for an `NSTrackingArea` object are specified when the object is created.
 

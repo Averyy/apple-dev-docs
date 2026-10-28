@@ -14,7 +14,7 @@
 kIOHIDElementCollectionTypeApplication
 ```
 
-#### Discussion
+## Discussion
 
 Identifies item groups serving different purposes in a single device.
 

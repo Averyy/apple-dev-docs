@@ -32,7 +32,7 @@ var headUnit: INCar.HeadUnit? { get }
 @property (atomic, copy, readonly, nullable) INCarHeadUnit * headUnit;
 ```
 
-#### Discussion
+## Discussion
 
 The system receives the physical head unit’s Bluetooth identifier when the user’s iPhone connects to the vehicle through CarPlay. The system can then find the corresponding vehicle in the user’s Virtual Garage by matching the value it receives against the `bluetoothIdentifier` property of this object.
 

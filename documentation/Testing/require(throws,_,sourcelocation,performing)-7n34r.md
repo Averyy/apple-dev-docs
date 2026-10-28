@@ -28,11 +28,11 @@ Check that an expression always throws an error of a given type, and throw an er
 
 - [Testing for errors in Swift code](./testing-for-errors-in-swift-code.md)
 
-#### Return Value
+## Return Value
 
 The instance of `errorType` that was thrown by `expression`.
 
-#### Overview
+## Overview
 
 > **Throws**: An instance of [`ExpectationFailedError`](./expectationfailederror.md) if `expression` does not throw a matching error. The error thrown by `expression` is not rethrown.
 

@@ -38,7 +38,7 @@ var textView: NSTextView! { get }
 @property (readonly) NSTextView * textView;
 ```
 
-#### Discussion
+## Discussion
 
 When a user activates a Post or Send button, you can send their text by sending `self.textView.text`. Note that the `SLComposeServiceViewController` base class creates `textView` in its [`loadView()`](../../UIKit/uiviewcontroller/loadview%28%29.md) method and sets itself to be the `textView` delegate.
 

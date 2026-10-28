@@ -23,7 +23,7 @@ func gss_release_name(_ minor_status: UnsafeMutablePointer<OM_uint32>, _ input_n
 OM_uint32 gss_release_name(OM_uint32 *minor_status, gss_name_t*input_name);
 ```
 
-#### Return Value
+## Return Value
 
 A status code set to [`GSS_S_COMPLETE`](./gss_s_complete.md) on success. See [Function Status](./function-status.md) for a complete enumeration of status outputs.
 

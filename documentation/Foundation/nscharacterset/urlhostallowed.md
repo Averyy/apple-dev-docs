@@ -25,7 +25,7 @@ class var urlHostAllowed: CharacterSet { get }
 @property (class, copy, readonly) NSCharacterSet * URLHostAllowedCharacterSet;
 ```
 
-#### Discussion
+## Discussion
 
 The host component of a URL is usually the component immediately after the first two leading slashes. If the URL contains a username and password, the host component is the component after the `@` sign. For example, in the URL `http://username:password@www.example.com/index.html`, the host component is `www.example.com`.
 

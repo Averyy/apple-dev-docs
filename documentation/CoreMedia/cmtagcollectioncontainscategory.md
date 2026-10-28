@@ -21,7 +21,7 @@ Determines if a tag collection contains tags for a given category.
 extern Boolean CMTagCollectionContainsCategory(CMTagCollectionRef tagCollection, CMTagCategory category);
 ```
 
-#### Return Value
+## Return Value
 
 Returns `YES` if any tag in the collection has a category of `category`.
 

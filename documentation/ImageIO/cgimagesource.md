@@ -25,7 +25,7 @@ class CGImageSource
 typedef struct CGImageSource * CGImageSourceRef;
 ```
 
-#### Overview
+## Overview
 
 Use a [`CGImageSource`](./cgimagesource.md) type to read data efficiently for most image file formats. The image source object manages the data buffers needed to load the image data and performs any operations on that data to turn it into a usable image. For example, it decompresses data stored in a compressed format. You can also use an image source to fetch or create thumbnail images and access metadata stored with the image.
 

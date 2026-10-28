@@ -19,7 +19,7 @@ var userActivity: NSUserActivity? { get set }
 @property (strong, nullable) NSUserActivity * userActivity;
 ```
 
-#### Discussion
+## Discussion
 
 By setting the [`userActivity`](./useractivity.md) property on a responder, the [`NSUserActivity`](../../Foundation/nsuseractivity.md) object becomes managed by AppKit. You should override [`updateUserActivityState(_:)`](./updateuseractivitystate%28_%29.md) to write lazily any state data representing the user’s activity to the `userInfo` dictionary. AppKit automatically saves user activities it manages at appropriate times. Multiple responders can share a single [`NSUserActivity`](../../Foundation/nsuseractivity.md) instance, in which case they all get a callback, such as [`updateUserActivityState(_:)`](./updateuseractivitystate%28_%29.md), when the system updates the user activity object.
 

@@ -25,7 +25,7 @@ var idleDuration: CGFloat { get set }
 @property (nonatomic) CGFloat idleDuration;
 ```
 
-#### Discussion
+## Discussion
 
 If the system’s [`loops`](./loops.md) property value is [`true`](../../Swift/true.md), you can make the system emit particles periodically or sporadically. For example, in a looping system where the [`emissionDuration`](./emissionduration.md) value is `1.0` seconds and the [`idleDuration`](./idleduration.md) value is `1.0` seconds, the system alternates between equal one-second periods of spawning and not spawning particles. You can randomize the duration with the [`idleDurationVariation`](./idledurationvariation.md) property. Idle duration has no effect if the [`loops`](./loops.md) property value is [`false`](../../Swift/false.md).
 

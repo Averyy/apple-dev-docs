@@ -21,7 +21,7 @@ var allowsMiniPlayer: Bool { get set }
 @property (nonatomic, assign) BOOL allowsMiniPlayer;
 ```
 
-#### Discussion
+## Discussion
 
 Set the value of this property to @c NO to hide the mini player.
 

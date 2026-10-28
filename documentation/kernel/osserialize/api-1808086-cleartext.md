@@ -11,7 +11,7 @@ Resets the OSSerialize object.
 virtual void clearText();
 ```
 
-#### Overview
+## Overview
 
 This function is a useful optimization if you are serializing the same object repeatedly.
 

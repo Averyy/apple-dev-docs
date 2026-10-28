@@ -23,7 +23,7 @@ var ENDaysSinceOnsetOfSymptomsUnknown: Int { get }
 static const NSInteger ENDaysSinceOnsetOfSymptomsUnknown;
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  This property is available in iOS 12.5, and in iOS 14.0 and later.
 

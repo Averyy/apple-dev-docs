@@ -21,7 +21,7 @@ func updateTitle(_ title: String, subtitle: String)
 - (void) updateTitle:(NSString *) title subtitle:(NSString *) subtitle;
 ```
 
-#### Discussion
+## Discussion
 
 The system displays Continuous Background Task requests in a Live Activity for a person to monitor progress and cancel a task, if they wish.
 

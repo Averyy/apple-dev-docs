@@ -21,7 +21,7 @@ A base type that represents an Apple internet location file.
 static var internetLocation: UTType { get }
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `com.apple.internet-location`.
 

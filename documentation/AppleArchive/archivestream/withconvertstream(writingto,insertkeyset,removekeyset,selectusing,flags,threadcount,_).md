@@ -21,11 +21,11 @@ Calls the given closure with a convert output archive stream.
 static func withConvertStream<E>(writingTo stream: ArchiveStream, insertKeySet: ArchiveHeader.FieldKeySet, removeKeySet: ArchiveHeader.FieldKeySet, selectUsing filter: ArchiveHeader.EntryFilter? = nil, flags: ArchiveFlags = [], threadCount: Int = 0, _ body: (ArchiveStream) throws -> E) throws -> E
 ```
 
-#### Return Value
+## Return Value
 
 The result of the closure.
 
-#### Discussion
+## Discussion
 
 This function opens a stream created by [`convertStream(writingTo:insertKeySet:removeKeySet:selectUsing:flags:threadCount:)`](./convertstream%28writingto,insertkeyset,removekeyset,selectusing,flags,threadcount%29.md), calls the specified closure, and closes the stream.
 

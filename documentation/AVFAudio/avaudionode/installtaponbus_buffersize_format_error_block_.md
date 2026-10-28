@@ -19,11 +19,11 @@
 - (BOOL) installTapOnBus:(AVAudioNodeBus) bus bufferSize:(AVAudioFrameCount) bufferSize format:(AVAudioFormat *) format error:(NSError **) outError block:(AVAudioNodeTapBlock) tapBlock;
 ```
 
-#### Return Value
+## Return Value
 
 YES for success.
 
-#### Discussion
+## Discussion
 
 Create a “tap” to record/monitor/observe the output of the node.
 

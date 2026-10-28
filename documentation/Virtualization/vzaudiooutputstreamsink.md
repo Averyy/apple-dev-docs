@@ -19,7 +19,7 @@ class VZAudioOutputStreamSink
 @interface VZAudioOutputStreamSink : NSObject
 ```
 
-#### Overview
+## Overview
 
 An audio output stream sink defines how the host system consumes audio data from a guest.
 

@@ -19,7 +19,7 @@ optional func contentBlocker(withIdentifier contentBlockerIdentifier: String, bl
 - (void) contentBlockerWithIdentifier:(NSString *) contentBlockerIdentifier blockedResourcesWithURLs:(NSArray<NSURL *> *) urls onPage:(SFSafariPage *) page;
 ```
 
-#### Discussion
+## Discussion
 
 Safari calls this method when a content blocker associated with the extension performs a blocking action, and the extension has access to the URL that the content blocker blocked. The content blocker must be in the same containing app bundle as the extension.
 

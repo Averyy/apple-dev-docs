@@ -15,11 +15,11 @@ The request body for updating an existing negative keyword.
 object NegativeKeywordUpdate
 ```
 
-#### Discussion
+## Discussion
 
 The `NegativeKeywordUpdate` object is the request payload for modifying an existing negative keyword. An update request can include only `status`. The schema rejects `text` and `matchType`. Set `status` to `PAUSED` to temporarily allow traffic from the excluded term, or `ENABLED` to re-activate the exclusion.
 
-##### Example
+### Example
 
 ```json
 {

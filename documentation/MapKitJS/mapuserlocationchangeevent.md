@@ -15,7 +15,7 @@ An event that represents a change in a person’s location.
 class MapUserLocationChangeEvent extends Event
 ```
 
-#### Discussion
+## Discussion
 
 MapKit JS sends this event when [`showsUserLocation`](./map/showsuserlocation.md) is true and the map acquires a person’s location, or after an automatic update.
 

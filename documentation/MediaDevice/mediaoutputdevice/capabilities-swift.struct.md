@@ -17,7 +17,7 @@ Defines the media capabilities supported by a [`MediaOutputDevice`](../mediaoutp
 struct Capabilities
 ```
 
-#### Overview
+## Overview
 
 Use these options to describe what a device can do, such as streaming audio or video in realtime, playing media from a URL, or launching a remote application.
 

@@ -10,7 +10,7 @@ Use a gamma function to apply a linear or exponential curve.
 - macOS 13.0+
 - Xcode 14.3+
 
-#### Overview
+## Overview
 
 This sample code project uses the vImage piecewise gamma function to adjust the response curve (that is, the value of an output pixel based on the value of the corresponding input pixel) of an 8-bit RGB image. Changing the shape of the response curve changes the brightness and contrast of an image.
 
@@ -18,7 +18,7 @@ You can use a piecewise gamma function to apply either a linear or an exponentia
 
 This app displays a sample image and uses a [SwiftUI](https://developer.apple.com/xcode/swiftui/) [`Picker`](../SwiftUI/picker.md) control to apply different preset linear (labeled L1 to L4) and exponential (labeled E1 to E3) response curves. This sample code project demonstrates how different response curves affect an image by changing its brightness and contrast.
 
-##### Define response curve presets
+### Define response curve presets
 
 The sample app defines a structure, `ResponseCurvePreset`, that contains the coefficients the linear function uses, the gamma the exponential function uses, and the boundary between the linear and exponential functions.
 
@@ -34,7 +34,7 @@ struct ResponseCurvePreset: Hashable, Identifiable {
 
 The `presets` array contains sample presets that apply different adjustments to the sample image. When the user changes the selected value of the [`Picker`](../SwiftUI/picker.md) control, the app passes the appropriate `preset` structure to the `getGammaCorrectedImage(preset:source:destination:imageFormat:)` function. This function applies the adjustment to the image and returns the result.
 
-##### Define the adjustment parameters
+### Define the adjustment parameters
 
 The sample app specifies the division between linear and gamma adjustments by passing a boundary parameter to the piecewise gamma function, [`applyGamma(linearParameters:exponentialParameters:boundary:destination:)`](./vimage/pixelbuffer/applygamma%28linearparameters,exponentialparameters,boundary,destination%29-8r0ro.md). The function uses the exponential curve to calculate the output value when the input value is greater than or equal to the boundary value. Otherwise, the function uses the linear curve.
 
@@ -52,7 +52,7 @@ let linearCoefficients = (preset.linearScale, preset.linearBias)
 let exponentialCoefficients = (Float(1), Float(0), preset.gamma, Float(0))
 ```
 
-##### Remove the alpha channel
+### Remove the alpha channel
 
 The [`applyGamma(linearParameters:exponentialParameters:boundary:destination:)`](./vimage/pixelbuffer/applygamma%28linearparameters,exponentialparameters,boundary,destination%29-8r0ro.md) function in the sample app treats an interleaved buffer as a single plane and applies the same gamma adjustment to all channels — including any alpha channel. Adjusting the response curve of the alpha channel changes transparency properties. To avoid this, the sample app converts the RGBA source image to RGB and applies the adjustment to that.
 
@@ -85,7 +85,7 @@ sourceBuffer = try vImage.PixelBuffer(
 
 On return, `sourceBuffer` contains the red, green, and blue channels of `sourceImage`.
 
-##### Apply the adjustment
+### Apply the adjustment
 
 The sample app calls [`applyGamma(linearParameters:exponentialParameters:boundary:destination:)`](./vimage/pixelbuffer/applygamma%28linearparameters,exponentialparameters,boundary,destination%29-8r0ro.md) to apply the adjustment.
 
@@ -108,7 +108,7 @@ if let result = destination.makeCGImage(cgImageFormat: imageFormat) {
 
 The following sections explain the presets in more detail.
 
-##### Apply linear adjustment
+### Apply linear adjustment
 
 The following presets use the linear adjustment (that is, `boundary` is 255). The output value for each pixel is calculated as:
 
@@ -164,7 +164,7 @@ ResponseCurvePreset(id: "L4",
 
 ![On the left, a graph showing the linear relationship between input and output values. On the right, a negative version of the original photograph with linear adjustment applied.](https://developer.apple.com/tutorials/images/com.apple.accelerate/L4_2x.png)
 
-##### Apply exponential adjustment
+### Apply exponential adjustment
 
 The following presets use the exponential adjustment (that is, `boundary` is 0). The output value for each pixel is calculated as:
 
@@ -211,7 +211,7 @@ ResponseCurvePreset(id: "E3",
 
 ![On the left, a graph showing the nonlinear relationship between input and output values. On the right, a lightened version of the original photograph with exponential adjustment applied.](https://developer.apple.com/tutorials/images/com.apple.accelerate/E3_2x.png)
 
-##### Correct gamma before applying operations
+### Correct gamma before applying operations
 
 Many vImage operations — such as convolution and scaling — provide optimal results when working on images with a linear response curve. When working with nonlinear images — such as sRGB — best practice is to convert them to a linear color space by applying a reciprocal gamma (such as `1/2.2`), performing the operation, and converting them back to their original domain by applying the original gamma (such as `2.2`).
 

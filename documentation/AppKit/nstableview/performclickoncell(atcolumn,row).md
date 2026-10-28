@@ -21,7 +21,7 @@ func performClickOnCell(atColumn column: Int, row: Int)
 - (void) performClickOnCellAtColumn:(NSInteger) column row:(NSInteger) row;
 ```
 
-#### Discussion
+## Discussion
 
 Acquires the [`NSTableView`](../nstableview.md), copies it, invokes [`performClick(_:)`](../nscell/performclick%28_%29.md) or [`performClick(withFrame:in:)`](../nspopupbuttoncell/performclick%28withframe,in%29.md) (if the cell is an [`NSPopUpButtonCell`](../nspopupbuttoncell.md)), and then updates the data source, if required. This method does not do any checks to see if the cell is enabled.
 

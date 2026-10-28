@@ -24,7 +24,7 @@ func stopRunning()
 - (void) stopRunning;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method to stop the flow of data from the inputs to the outputs connected to the capture session. This method is synchronous and blocks until the session stops running completely.
 

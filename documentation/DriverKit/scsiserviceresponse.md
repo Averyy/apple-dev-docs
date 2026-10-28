@@ -18,7 +18,7 @@ Attributes for task service response.
 typedef enum SCSIServiceResponse : unsigned int { ... } SCSIServiceResponse;
 ```
 
-#### Overview
+## Overview
 
 The Service Response represents the execution status of a service request made to a Protocol Services Driver. The Service Response can only be modified by the SCSI Protocol Layer. The SCSI Application Layer can only read the state.
 

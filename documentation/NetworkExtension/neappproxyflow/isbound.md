@@ -23,7 +23,7 @@ var isBound: Bool { get }
 @property (readonly) BOOL isBound;
 ```
 
-#### Discussion
+## Discussion
 
 When a binding exists, this value is [`true`](../../Swift/true.md), and the [`networkInterface`](./networkinterface.md) property indicates the bound interface. If the flow isn’t bound to an interface, this value is [`false`](../../Swift/false.md).
 

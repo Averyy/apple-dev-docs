@@ -13,17 +13,17 @@
 - macOS 14.0+
 - Xcode 15.0+
 
-#### Overview
+## Overview
 
 This sample code project shows how to read, write, edit, and display HDR images using SwiftUI, UIKit, AppKit, Core Image, and Core Graphics. It loads a film strip of multiple images from on-disk or from the Photos library. Then it allows you to select, edit, and save an image in HDR. The sample uses several new APIs in various frameworks to correctly handle HDR images in a complete HDR workflow. ​
 
 > **Note**: This sample code project is associated with WWDC23 session 10181: [Support HDR images in your app](https://developer.apple.com/wwdc23/10181/). ​
 
-##### Configure the sample code project
+### Configure the sample code project
 
 Before you run this sample code project in Xcode, ensure you’re using iOS 17 or later for the iOS target, and macOS 14 or later for the Mac target. ​
 
-##### Enable HDR on image views
+### Enable HDR on image views
 
 To turn on HDR in the SwiftUI image view, the sample uses the `allowedDynamicRange` modifier in the film strip to show limited HDR headroom.
 
@@ -49,7 +49,7 @@ view.preferredImageDynamicRange = .high
 
 ​​ ​
 
-##### Edit HDR using Core Image
+### Edit HDR using Core Image
 
 To ensure Core Image reads Gain Map HDR images as HDR, the sample sets the `CIImageOption.expandToHDR` property to `true`. To modify the HDR image data, it uses `CIFilter` filters.
 

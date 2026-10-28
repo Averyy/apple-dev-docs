@@ -23,7 +23,7 @@ case type50
 kSMPTETimeType50
 ```
 
-#### Discussion
+## Discussion
 
 50 video frames per second.
 

@@ -15,7 +15,7 @@ The identifier for the audio phase invert control class.
 PhaseInvertControl
 ```
 
-#### Discussion
+## Discussion
 
 This class is a subclass of the [`IOUserAudioBooleanControl`](../../iouseraudiobooleancontrol.md) class where a `true` value indcates a phase inversion of the given element’s signal by 180 degrees.
 

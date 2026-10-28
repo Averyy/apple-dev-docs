@@ -21,7 +21,7 @@ Creates an animation resource from a definition.
 @preconcurrency static func generate(with definition: any AnimationDefinition) throws -> AnimationResource
 ```
 
-#### Return Value
+## Return Value
 
 An animation resource that shares the configuration of the definition.
 

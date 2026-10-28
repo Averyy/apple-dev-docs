@@ -20,11 +20,11 @@ optional func gestureRecognizer(_ gestureRecognizer: NSGestureRecognizer, should
 - (BOOL) gestureRecognizer:(NSGestureRecognizer *) gestureRecognizer shouldAttemptToRecognizeWithEvent:(NSEvent *) event;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) to allow the gesture recognizer to begin recognizing gestures for the specified event, or [`false`](../../Swift/false.md) to prevent it from recognizing gestures for the specified event. If you do not implement this method, the default return value is [`true`](../../Swift/true.md).
 
-#### Discussion
+## Discussion
 
 This method is called when a target view recognizes a new gesture event stream. The target view calls this method to determine whether the gesture recognizer should process events for the stream, or opt out of them. Returning [`false`](../../Swift/false.md) from this method causes the gesture recognizer to opt out, and prevents the other delegate methods from being called for the event stream.
 

@@ -21,7 +21,7 @@ You can implement this method to return a list of suggested focus configurations
 static func suggestedFocusFilters(for context: FocusFilterSuggestionContext) async -> [Self]
 ```
 
-#### Return Value
+## Return Value
 
 A list of suggested focus configurations where the first one is the most suggested configuration. Returns an empty array if there is no suggested focus configurations. The system will use the default value per parameters in this case.
 

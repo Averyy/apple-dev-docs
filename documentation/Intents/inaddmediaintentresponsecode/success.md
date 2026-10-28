@@ -24,7 +24,7 @@ case success
 INAddMediaIntentResponseCodeSuccess
 ```
 
-#### Discussion
+## Discussion
 
 Use this code when your app has successfully added the media.
 

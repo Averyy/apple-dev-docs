@@ -23,11 +23,11 @@ init(documentTypes allowedUTIs: [String], in mode: UIDocumentPickerMode)
 - (instancetype) initWithDocumentTypes:(NSArray<NSString *> *) allowedUTIs inMode:(UIDocumentPickerMode) mode;
 ```
 
-#### Return Value
+## Return Value
 
 Returns an initialized `UIDocumentMenuViewController` object, or `nil` if the object could not be successfully initialized.
 
-#### Discussion
+## Discussion
 
 The UTI array defines the type of documents that can be imported or opened. The resulting document menu displays all the document pickers appropriate for the given document types and mode.
 

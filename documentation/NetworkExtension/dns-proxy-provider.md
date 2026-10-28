@@ -5,7 +5,7 @@
 
 Create an on-device DNS proxy using a custom protocol.
 
-#### Overview
+## Overview
 
 A DNS proxy provider is an app extension that implements DNS proxying. You should create a DNS proxy provider if you want to take responsibility for resolving all DNS queries on the system. Typically this involves forwarding the queries in a way that improves performance, reliability or security. For example, a DNS proxy provider might:
 

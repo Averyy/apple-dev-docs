@@ -13,7 +13,7 @@ virtual void setName(
  const IORegistryPlane *plane = 0 );
 ```
 
-#### Overview
+## Overview
 
 Entries can be named in a particular plane, or globally. If the plane is specified the name applies only to that plane, otherwise the global name is set. The global name defaults to the entry's meta class name if it has not been named.
 

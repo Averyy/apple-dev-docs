@@ -17,7 +17,7 @@ Sets whether the print operation should display a print panel.
 - (void) setShowPanels:(BOOL) flag;
 ```
 
-#### Discussion
+## Discussion
 
 This method also affects whether a progress panel is presented while the operation runs. If an EPS or PDF copy operation is being performed, neither panel is displayed, regardless of the value of `flag`.
 

@@ -19,11 +19,11 @@ func isGroupExpanded(at index: Int) -> Bool
 - (BOOL) isGroupExpandedAtIndex:(NSUInteger) index;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the group is expanded; [`false`](../../Swift/false.md) otherwise.
 
-#### Discussion
+## Discussion
 
 This method is declared in OS X v10.5, but an implementation was not provided until OS X v10.6. Avoid using this method in OS X v10.5.
 

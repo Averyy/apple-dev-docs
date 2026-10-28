@@ -18,7 +18,7 @@ Frees memory that you allocated for a named class.
 #define OSSafeReleaseNULL(inst)
 ```
 
-#### Discussion
+## Discussion
 
 Use this macro to free memory that you allocated [`OSTypeAlloc`](./ostypealloc.md). If `inst` is `NULL`, this macro doesn’t attempt to free the memory.
 

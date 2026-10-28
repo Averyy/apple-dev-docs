@@ -25,7 +25,7 @@ static let cfTimeZoneSystemTimeZoneDidChange: CFNotificationName!
 extern CFNotificationName const kCFTimeZoneSystemTimeZoneDidChangeNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The object of the notification is the previous system time zone object. This notification carries no user info.
 

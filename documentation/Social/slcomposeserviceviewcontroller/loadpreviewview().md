@@ -21,11 +21,11 @@ func loadPreviewView() -> UIView!
 - (UIView *) loadPreviewView;
 ```
 
-#### Return Value
+## Return Value
 
 A view that can appropriately display a preview of the attachments in the context, or `nil` if a preview is unnecessary for the context.
 
-#### Discussion
+## Discussion
 
 A preview view appears next to the text editing area in a compose view. A subclass can override this method to provide a custom preview view.
 

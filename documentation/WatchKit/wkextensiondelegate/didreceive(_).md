@@ -21,7 +21,7 @@ optional func didReceive(_ notification: UILocalNotification)
 - (void) didReceiveLocalNotification:(UILocalNotification *) notification;
 ```
 
-#### Discussion
+## Discussion
 
 If a local notification arrives while your app is active, WatchKit calls this method to deliver the notification payload. Use this method to respond to the notification. For example, you might use this method to update your app’s interface or display a message to the user.
 

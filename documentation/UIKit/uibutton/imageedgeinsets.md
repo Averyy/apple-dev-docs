@@ -25,7 +25,7 @@ var imageEdgeInsets: UIEdgeInsets { get set }
 @property (nonatomic) UIEdgeInsets imageEdgeInsets;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to resize and reposition the effective drawing rectangle for the button image. You can specify a different value for each of the four insets (top, left, bottom, right). A positive value shrinks, or insets, that edge—moving it closer to the center of the button. A negative value expands, or outsets, that edge. Use the [`init(top:left:bottom:right:)`](../uiedgeinsets/init%28top,left,bottom,right%29-1s1t9.md) function to construct a value for this property. The default value is [`zero`](../uiedgeinsets/zero.md).
 

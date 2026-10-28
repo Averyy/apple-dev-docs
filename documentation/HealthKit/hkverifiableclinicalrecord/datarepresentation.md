@@ -23,7 +23,7 @@ var dataRepresentation: Data { get }
 @property (copy, readonly) NSData * dataRepresentation;
 ```
 
-#### Discussion
+## Discussion
 
 The data’s format varies based on its [`sourceType`](./sourcetype.md):
 

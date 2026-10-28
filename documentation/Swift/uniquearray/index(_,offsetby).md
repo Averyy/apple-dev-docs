@@ -21,11 +21,11 @@ Returns an index that is the specified distance from the given index.
 func index(_ index: Int, offsetBy n: Int) -> Int
 ```
 
-#### Return Value
+## Return Value
 
 An index offset by distance from `index`. If `n` is positive, this is the same value as the result of `n` calls to `index(after:)`. If `n` is negative, this is the same value as the result of `abs(n)` calls to `index(before:)`.
 
-#### Discussion
+## Discussion
 
 The value passed as `n` must not offset `index` beyond the bounds of the array.
 

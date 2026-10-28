@@ -21,11 +21,11 @@ Creates a locale-aware ISO 8601 string representation from a date value.
 func format(_ value: Date) -> String
 ```
 
-#### Return Value
+## Return Value
 
 A string ISO 8601 representation of the date.
 
-#### Discussion
+## Discussion
 
 The [`format(_:)`](./format%28_%29.md) instance method generates a ISO 8601 formatted string from the provided date. Once you create a style, you can use it to format dates multiple times.
 

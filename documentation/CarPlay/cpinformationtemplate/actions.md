@@ -21,7 +21,7 @@ var actions: [CPTextButton] { get set }
 @property (nonatomic, copy) NSArray<__kindof CPTextButton *> * actions;
 ```
 
-#### Discussion
+## Discussion
 
 Assign a new array to this property to update the actions that the template displays. The template can display three actions maximum. If the array contains more actions, the template uses only the first three.
 

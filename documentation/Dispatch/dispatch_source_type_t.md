@@ -21,7 +21,7 @@ An identifier for the type of system object being monitored by a dispatch source
 typedef const struct dispatch_source_type_s * dispatch_source_type_t;
 ```
 
-#### Discussion
+## Discussion
 
 Constants of this type represent the class of low-level system object that is being monitored by the dispatch source. Constants of this type are passed as a parameter to [`dispatch_source_create`](./dispatch_source_create.md) and determine how the handle argument is interpreted (as a file descriptor, mach port, signal number, process identifier, etc.) and how the mask argument is interpreted.
 

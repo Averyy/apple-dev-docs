@@ -16,7 +16,7 @@ Callback called when a incoming AVC command matching a registered command handle
 typedef IOReturn (*IOFWAVCCommandHandlerCallback)(void *refCon, UInt32 generation, UInt16 srcNodeID, IOFWSpeed speed, const UInt8 *command, UInt32 cmdLen);
 ```
 
-#### Return Value
+## Return Value
 
 The callback handler should return success if it will send the AVC response, or an error if it doesn't want to handle the command
 

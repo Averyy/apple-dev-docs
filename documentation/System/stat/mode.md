@@ -21,7 +21,7 @@ File mode
 var mode: FileMode { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding C property is `st_mode`.
 

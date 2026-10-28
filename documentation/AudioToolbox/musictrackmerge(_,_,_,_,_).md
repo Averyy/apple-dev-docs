@@ -24,11 +24,11 @@ func MusicTrackMerge(_ inSourceTrack: MusicTrack, _ inSourceStartTime: MusicTime
 extern OSStatus MusicTrackMerge(MusicTrack inSourceTrack, MusicTimeStamp inSourceStartTime, MusicTimeStamp inSourceEndTime, MusicTrack inDestTrack, MusicTimeStamp inDestInsertTime);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 
-#### Discussion
+## Discussion
 
 The events inserted into the destination music track are merged with existing events in that track. The events in the destination track that existed prior to calling this function remain in place.
 

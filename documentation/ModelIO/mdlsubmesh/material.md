@@ -24,7 +24,7 @@ var material: MDLMaterial? { get set }
 @property (nonatomic, retain, nullable) MDLMaterial * material;
 ```
 
-#### Discussion
+## Discussion
 
 A [`MDLMaterial`](../mdlmaterial.md) object describes the complete set of rendering parameters for producing a specific surface appearance, such as color, texture, specularity, and opacity.
 

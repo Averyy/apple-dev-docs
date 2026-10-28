@@ -23,13 +23,13 @@ var isComplete: Bool { get }
 @property (nonatomic, assign, readonly, getter=isComplete) BOOL complete;
 ```
 
-#### Discussion
+## Discussion
 
 This property is initialized to [`false`](../../Swift/false.md), and is set to [`true`](../../Swift/true.md) when either the [`fulfill()`](./fulfill%28%29.md) or [`fail()`](./fail%28%29.md) method is called.
 
-#### See also
+## See also
 
-##### Related Documentation
+### Related Documentation
 
 - [`fulfill()`](./fulfill%28%29.md)
 - [`fail()`](./fail%28%29.md)

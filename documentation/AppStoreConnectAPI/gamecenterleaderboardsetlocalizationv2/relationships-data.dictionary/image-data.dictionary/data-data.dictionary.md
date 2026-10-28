@@ -13,7 +13,7 @@
 object GameCenterLeaderboardSetLocalizationV2.Relationships.Image.Data
 ```
 
-#### Overview
+## Overview
 
 - id:
 - type:

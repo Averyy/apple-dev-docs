@@ -19,11 +19,11 @@ func PMPaperGetPPDPaperName(_ paper: PMPaper, _ paperName: UnsafeMutablePointer<
 OSStatus PMPaperGetPPDPaperName(PMPaper paper, CFStringRef  _Nullable *paperName);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./core_printing.md#1670007).
 
-#### Discussion
+## Discussion
 
 The macOS printing system uses a PostScript Printer Description (PPD) file to describe a given printer and print queue for that printer. The PPD paper name is the name that uniquely identifies a given paper for the printer to which the paper corresponds. To obtain a list of papers for a given printer, use the function [`PMPrinterGetPaperList(_:_:)`](./api-1460088-pmprintergetpaperlist.md).
 

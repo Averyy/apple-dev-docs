@@ -5,13 +5,13 @@
 
 Add and use a font in your app that scales with Dynamic Type.
 
-#### Overview
+## Overview
 
 SwiftUI supports styling text views using the built-in fonts, and uses a system font by default. Rather than using a system-provided font, you can use custom fonts by including the font files in your Xcode project. To use a custom font, add the font file that contains your licensed font to your app, and then apply the font to a text view or set it as a default font within a container view. SwiftUI’s adaptive text display scales the font automatically using Dynamic Type.
 
 Dynamic Type allows users to choose the size of textual content displayed onscreen. It helps users who need larger text for better readability and accommodates those who can read smaller text, allowing more information to appear onscreen.
 
-##### Add the font files to the project
+### Add the font files to the project
 
 To add the font files to your Xcode project:
 
@@ -21,7 +21,7 @@ To add the font files to your Xcode project:
 
 ![A screenshot of Xcode showing the Info plist file with the fonts added to the selected app. The screenshot shows the target membership check boxes selected for macOS and iOS targets in the file inspector](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/Applying-Custom-Fonts-to-Text-1@2x.png)
 
-##### Identify the font files to include in the app bundle
+### Identify the font files to include in the app bundle
 
 For iOS, watchOS, tvOS, or Mac Catalyst targets, add the [`UIAppFonts`](../BundleResources/information-property-list/uiappfonts.md) key to your app’s `Info.plist` file. For the key’s value, provide an array of strings containing the relative paths to any added font files. For a macOS app target, use the [`ATSApplicationFontsPath`](../BundleResources/information-property-list/atsapplicationfontspath.md) key in your target’s `Info.plist` file, and provide the name of the folder that holds the fonts as the value for that key.
 
@@ -29,7 +29,7 @@ In the following example, the font file is inside the `project_fonts` directory,
 
 ![A screenshot of Xcode showing the Info plist file with the key Fonts provided by the app as an array that contains a single entry of project_fonts/MyFont.ttf](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/Applying-Custom-Fonts-to-Text-2@2x.png)
 
-##### Apply a font supporting dynamic sizing
+### Apply a font supporting dynamic sizing
 
 Use the [`custom(_:size:)`](./font/custom%28_,size%29.md) method to retrieve an instance of your font and apply it to a text view with the [`font(_:)`](./text/font%28_%29.md) modifier. When retrieving the font with [`custom(_:size:)`](./font/custom%28_,size%29.md), match the name of the font with the font’s PostScript name. You can find the postscript name of a font by opening it with the Font Book app and selecting the Font Info tab. If SwiftUI can’t retrieve and apply your font, it renders the text view with the default system font instead.
 
@@ -51,7 +51,7 @@ SwiftUI doesn’t synthesize bold or italic styling for fonts. If the font suppo
 
 For design guidance on choosing fonts to enhance your app on your target platform, see [Typography](https://developer.apple.com/design/human-interface-guidelines/typography) in the Human Interface Guidelines.
 
-##### Scale padding using scaled metric
+### Scale padding using scaled metric
 
 The [`ScaledMetric`](./scaledmetric.md) property wrapper on a view property provides a scaled value that changes automatically with accessibility settings. When working with adaptively sized fonts, you can scale the spacing between or around the text to improve the visual design with this property wrapper.
 

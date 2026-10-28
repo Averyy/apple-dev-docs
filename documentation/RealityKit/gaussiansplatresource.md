@@ -19,7 +19,7 @@ A container for the splat data and rendering options that a Gaussian splat compo
 final class GaussianSplatResource
 ```
 
-#### Overview
+## Overview
 
 A Gaussian splat resource holds the per-splat data the framework renders, together with the options that control how it renders that data: the scale and opacity activation functions, the projection mode, the sorting mode, and the color space.
 

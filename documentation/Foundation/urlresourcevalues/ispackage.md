@@ -21,7 +21,7 @@ True for packaged directories.
 var isPackage: Bool? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**:  You can only set or clear this property on directories; if you try to set this property on non-directory objects, the property is ignored. If the directory is a package for some other reason (extension type, etc), setting this property to false will have no effect.
 

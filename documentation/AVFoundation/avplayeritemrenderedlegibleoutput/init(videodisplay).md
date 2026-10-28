@@ -22,7 +22,7 @@ init(videoDisplay videoDisplaySize: CGSize)
 - (instancetype) initWithVideoDisplaySize:(CGSize) videoDisplaySize;
 ```
 
-#### Discussion
+## Discussion
 
 You can also choose to reset the [`videoDisplaySize`](./videodisplaysize.md) value after initialization or during playback.
 

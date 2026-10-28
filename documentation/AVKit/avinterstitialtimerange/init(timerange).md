@@ -19,11 +19,11 @@ init(timeRange: CMTimeRange)
 - (instancetype) initWithTimeRange:(CMTimeRange) timeRange;
 ```
 
-#### Return Value
+## Return Value
 
 A new interstitial time range object.
 
-#### Discussion
+## Discussion
 
 To associate interstitial time ranges with an asset for playback, use the [`interstitialTimeRanges`](../../AVFoundation/avplayeritem/interstitialtimeranges.md) property of an [`AVPlayerItem`](../../AVFoundation/avplayeritem.md) object.
 

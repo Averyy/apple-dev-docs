@@ -24,7 +24,7 @@ static var matchedGeometry: GlassEffectTransition { get }
 
 - [Applying Liquid Glass to custom views](../applying-liquid-glass-to-custom-views.md)
 
-#### Discussion
+## Discussion
 
 The matched geometry transition allows the geometries of glass shapes during an appearance or disappearance phase of a transition to be derived from the geometry of a nearby shape within the glass container.
 

@@ -17,7 +17,7 @@ Compute the Cholesky decomposition of a real symmetric positive semi-definite ma
 static func cholesky(_ array: MLXArray, upper: Bool = false, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 This function supports arrays with at least 2 dimensions. When the input has more than two dimensions, the Cholesky decomposition is computed for each matrix in the last two dimensions of `a`.
 

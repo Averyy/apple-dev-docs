@@ -21,7 +21,7 @@ case unknown
 ASAccessoryEventTypeUnknown
 ```
 
-#### Discussion
+## Discussion
 
 This is a placeholder value used when initializing event type instances.
 

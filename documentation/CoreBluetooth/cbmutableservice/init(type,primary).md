@@ -22,11 +22,11 @@ init(type UUID: CBUUID, primary isPrimary: Bool)
 - (instancetype) initWithType:(CBUUID *) UUID primary:(BOOL) isPrimary;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized mutable service.
 
-#### Discussion
+## Discussion
 
 For more information, see [Core Bluetooth Programming Guide](https://developer.apple.com/library/archive/documentation/NetworkingInternetWeb/Conceptual/CoreBluetooth_concepts/AboutCoreBluetooth/Introduction.html#//apple_ref/doc/uid/TP40013257).
 

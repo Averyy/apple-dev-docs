@@ -24,11 +24,11 @@ bool isEqualTo(const OSNumber *aNumber);
 virtual bool isEqualTo(const OSNumber *aNumber);
 ```
 
-#### Return Value
+## Return Value
 
 true iff the two numbers have the same value.
 
-#### Discussion
+## Discussion
 
 If the passed OSNumber object has the same value, regardless of size, true is returned. Otherwise false is returned.
 

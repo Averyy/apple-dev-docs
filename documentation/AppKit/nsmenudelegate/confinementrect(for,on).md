@@ -20,11 +20,11 @@ optional func confinementRect(for menu: NSMenu, on screen: NSScreen?) -> NSRect
 - (NSRect) confinementRectForMenu:(NSMenu *) menu onScreen:(NSScreen *) screen;
 ```
 
-#### Return Value
+## Return Value
 
 The rectangle the menu should be displayed within, in screen coordinates.
 
-#### Discussion
+## Discussion
 
 This method is sent to the delegate when a menu is about to be opened on the specified screen.
 

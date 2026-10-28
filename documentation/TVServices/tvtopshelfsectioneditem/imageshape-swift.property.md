@@ -19,7 +19,7 @@ var imageShape: TVTopShelfSectionedItem.ImageShape { get set }
 @property (nonatomic) TVTopShelfSectionedItemImageShape imageShape;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to specify the shape of the image you use for the item. The image shape determines the dimensions to use when creating the image. For a list of possible values, see [`TVTopShelfSectionedItem.ImageShape`](./imageshape-swift.enum.md).
 

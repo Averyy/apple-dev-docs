@@ -22,7 +22,7 @@ Creates a context that belongs to the specified model container.
 init(_ container: ModelContainer)
 ```
 
-#### Discussion
+## Discussion
 
 Use the context’s [`container`](./container.md) property to access the model container after initializtion.
 

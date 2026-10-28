@@ -5,7 +5,7 @@
 
 Create a basic webpage to deliver HLS.
 
-#### Overview
+## Overview
 
 An HLS stream may either be live or on-demand (VOD). The requirements for deploying an HLS stream are:
 
@@ -13,7 +13,7 @@ An HLS stream may either be live or on-demand (VOD). The requirements for deploy
 - A web server or CDN to act as a host
 - A way to encode your source material or live streams as fragmented MPEG-4 media files containing HEVC or H.264 video and AAC or AC-3 audio. Although you can use MP3 audio files or MPEG-2 transport streams for H.264 video, these formats aren’t recommended.
 
-##### Create an HTML page
+### Create an HTML page
 
 The easiest way to distribute HLS media is to create a webpage that includes the HTML5 `<video>` tag, using an M3U8 playlist file as the video source. For browsers that don’t support the HTML5 video element, or browsers that don’t support HLS, you can include fallback code between the `<video>` and `</video>` tags. For example, you could fall back to a progressive download movie or a Real Time Streaming Protocol (RTSP) stream using the QuickTime plug-in. See [Safari HTML5 Audio and Video Guide](https://developer.apple.com/library/content/documentation/AudioVideo/Conceptual/Using_HTML5_Audio_Video/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009523) for examples. The following example shows the HTML code for a basic webpage.
 
@@ -29,7 +29,7 @@ The easiest way to distribute HLS media is to create a webpage that includes the
 </html>
 ```
 
-##### Configure a web server
+### Configure a web server
 
 HLS streams can be served from an ordinary web server. Configure your web server and associate the MIME types of the files being served with their file extensions. The following table shows the MIME types for HLS.
 
@@ -45,7 +45,7 @@ Index files are often long and are frequently redownloaded, but because they’r
 
 You might need to shorten time-to-live (TTL) values for M3U8 files to achieve proper caching behavior for downstream web caches. M3U8 files are frequently overwritten during live broadcasts, and the latest version should be downloaded for each request. Check with your content delivery service provider for specific recommendations. For VOD, the index file is static and is downloaded only once, so caching isn’t a factor.
 
-##### Validate your streams
+### Validate your streams
 
 The `mediastreamvalidator` tool is a command-line utility for validating HLS streams and servers. See [Using Apple’s HTTP Live Streaming (HLS) Tools](./using-apple-s-http-live-streaming-hls-tools.md) for details on obtaining the tool.
 
@@ -53,7 +53,7 @@ The media stream validator simulates an HLS session and verifies that the index 
 
 See [FairPlay Streaming](https://developer.apple.com/streaming/fps/) for details on validating with secure protocols.
 
-##### Serve key files securely over HTTPS
+### Serve key files securely over HTTPS
 
 Protect your media by encrypting it. The file segmenter and stream segmenter tools both have encryption options, and you can configure them to change the encryption key periodically. Who you share the keys with is up to you.
 

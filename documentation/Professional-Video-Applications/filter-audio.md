@@ -5,7 +5,7 @@
 
 A filter element that references an audio effect.
 
-#### Overview
+## Overview
 
 Apply audio filters to elements that represent audible media, for example, `audio`, `clip`, `ref-clip`, `audio-source`, and `audio-aux-source` elements. For multicam clips, apply the audio filters to the entire multicam clip, represented by `mc-clip` elements.
 

@@ -27,7 +27,7 @@ var rowHeight: CGFloat { get set }
 
 - [Configuring the cells for your table](../configuring-the-cells-for-your-table.md)
 
-#### Discussion
+## Discussion
 
 Use this property to specify a custom height for the cells in your table view. The default value of this property is [`automaticDimension`](./automaticdimension.md), which causes the table view to choose an appropriate height based on your cell’s content.
 

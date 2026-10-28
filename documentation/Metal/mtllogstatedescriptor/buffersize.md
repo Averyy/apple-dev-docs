@@ -24,7 +24,7 @@ var bufferSize: Int { get set }
 @property (assign, readwrite) NSInteger bufferSize;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is 1MB. The minimum size of log buffer is 1KB and the maximum size is 1GB.
 

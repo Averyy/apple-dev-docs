@@ -25,7 +25,7 @@ var fullName: PersonNameComponents? { get }
 @property (nonatomic, copy, readonly, nullable) NSPersonNameComponents * fullName;
 ```
 
-#### Discussion
+## Discussion
 
 Apple doesn’t receive the user’s full name shared with the system UI. The raw data is passed directly to your app from the browser and is not included in the user’s identity token. For more information, visit [Authenticating users with Sign in with Apple](../../SigninwithApple/authenticating-users-with-sign-in-with-apple.md).
 

@@ -23,7 +23,7 @@ var kDNSServiceType_OPT: Int { get }
 kDNSServiceType_OPT
 ```
 
-#### Discussion
+## Discussion
 
 EDNS0 option (meta-RR)
 

@@ -25,7 +25,7 @@ init?(coder aDecoder: NSCoder)
 - (instancetype) initWithCoder:(NSCoder *) aDecoder;
 ```
 
-#### Discussion
+## Discussion
 
 Do not call this initializer yourself; it is called by the system when you should intialize a video node that was created from an archive.
 

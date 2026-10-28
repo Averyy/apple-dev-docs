@@ -24,7 +24,7 @@ static var photoLive: PHAssetMediaSubtype { get }
 PHAssetMediaSubtypePhotoLive
 ```
 
-#### Discussion
+## Discussion
 
 To display a Live Photo asset with its associated video content, retrieve a [`PHLivePhoto`](../phlivephoto.md) object using the [`PHImageManager`](../phimagemanager.md) class and assign it to a [`PHLivePhotoView`](../../PhotosUI/phlivephotoview.md) object.
 

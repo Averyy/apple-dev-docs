@@ -16,11 +16,11 @@ Gets a recent frame number of the bus to which the device is attached, along wit
 IOReturn (*GetBusFrameNumberWithTime)(void *self, UInt64 *frame, AbsoluteTime *atTime);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if successful, kIOReturnNoDevice if there is no connection to an IOService, or kIOReturnUnsupported is the bus doesn't support this function.
 
-#### Discussion
+## Discussion
 
 The device does not have to be open to use this function.
 

@@ -19,7 +19,7 @@ class NSTextRange
 @interface NSTextRange : NSObject
 ```
 
-#### Overview
+## Overview
 
 An `NSTextRange` consists of the starting and terminating locations. There the two basic properties: [`location`](./nstextrange/location.md) and [`endLocation`](./nstextrange/endlocation.md), respectively. The terminating [`location`](./nstextrange/location.md), [`endLocation`](./nstextrange/endlocation.md), is directly following the last location in the range. For example, a location contains a range if `(range.location <= location) && (location < range.endLocation)` is `true`.
 

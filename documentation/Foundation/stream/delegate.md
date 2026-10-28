@@ -25,7 +25,7 @@ unowned(unsafe) var delegate: (any StreamDelegate)? { get set }
 @property (assign, nullable) id<NSStreamDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 By default, a stream is its own delegate, and subclasses of `NSInputStream` and `NSOutputStream` must maintain this contract. If you override this method in a subclass, passing `nil` must restore the receiver as its own delegate. Delegates are not retained.
 

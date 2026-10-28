@@ -21,7 +21,7 @@ func save(array: MLXArray, url: URL, stream: StreamOrDevice = .default) throws
 
 - [Converting From Python](./converting-python.md)
 
-##### See Also
+### See Also
 
 - [`save(arrays:metadata:url:stream:)`](./save%28arrays,metadata,url,stream%29.md)
 - [`loadArray(url:stream:)`](./loadarray%28url,stream%29.md)

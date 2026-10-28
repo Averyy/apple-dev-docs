@@ -15,7 +15,7 @@ A unique ID for the device.
 let uniqueID: String?
 ```
 
-#### Discussion
+## Discussion
 
 Use `uniqueID` to facilitate driver matching, or client matching using [`HIDDeviceManager`](../../hiddevicemanager.md).
 

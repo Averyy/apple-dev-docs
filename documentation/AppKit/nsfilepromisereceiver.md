@@ -19,7 +19,7 @@ class NSFilePromiseReceiver
 @interface NSFilePromiseReceiver : NSObject
 ```
 
-#### Overview
+## Overview
 
 Because [`NSFilePromiseReceiver`](./nsfilepromisereceiver.md) implements the [`NSPasteboardReading`](./nspasteboardreading.md) protocol, you receive all file promises on the drag pasteboard as follows:
 

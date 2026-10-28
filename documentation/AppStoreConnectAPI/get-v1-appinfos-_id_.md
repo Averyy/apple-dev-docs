@@ -14,7 +14,7 @@ Read App Store information including your App Store state, age ratings, Brazil a
 - [App Store Connect API 3.6 release notes](./app-store-connect-api-3-6-release-notes.md)
 - [App Store Connect API 3.7 release notes](./app-store-connect-api-3-7-release-notes.md)
 
-#### Discussion
+## Discussion
 
 For request and response examples for reading an age rating declaration, see [`Read the age-rating declaration`](./get-v1-appinfos-_id_-ageratingdeclaration.md).
 

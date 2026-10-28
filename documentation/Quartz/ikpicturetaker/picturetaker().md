@@ -19,7 +19,7 @@ class func pictureTaker() -> IKPictureTaker!
 + (IKPictureTaker *) pictureTaker;
 ```
 
-#### Return Value
+## Return Value
 
 An `IKPictureTaker` object.
 

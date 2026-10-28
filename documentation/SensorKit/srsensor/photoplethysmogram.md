@@ -21,7 +21,7 @@ static let photoplethysmogram: SRSensor
 extern SRSensor const SRSensorPhotoplethysmogram;
 ```
 
-#### Discussion
+## Discussion
 
 The sample for this sensor is an array of [`SRPhotoplethysmogramSample`](../srphotoplethysmogramsample.md) objects.
 

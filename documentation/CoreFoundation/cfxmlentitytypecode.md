@@ -19,7 +19,7 @@ enum CFXMLEntityTypeCode
 enum CFXMLEntityTypeCode : CFIndex;
 ```
 
-#### Overview
+## Overview
 
 These codes are used with the [`CFXMLEntityInfo`](./cfxmlentityinfo.md) and [`CFXMLEntityReferenceInfo`](./cfxmlentityreferenceinfo.md) structures.
 

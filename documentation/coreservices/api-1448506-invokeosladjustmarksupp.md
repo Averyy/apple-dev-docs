@@ -19,11 +19,11 @@ func InvokeOSLAdjustMarksUPP(_ newStart: Int, _ newStop: Int, _ markToken: Unsaf
 OSErr InvokeOSLAdjustMarksUPP(long newStart, long newStop, const AEDesc *markToken, OSLAdjustMarksUPP userUPP);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../applicationservices/apple_event_manager.md#1656145).
 
-#### Discussion
+## Discussion
 
 See the [`OSLAdjustMarksProcPtr`](./osladjustmarksprocptr.md) callback function. 
 

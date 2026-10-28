@@ -14,11 +14,11 @@ Raises the incoming value to an exponent and assigns the sign of the base to the
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Overview
+## Overview
 
 Safepow(X,Y) = sign(x) * pow(abs(x), y)
 
-#### Parameter Types
+## Parameter Types
 
 **Safe Power (float)**:
 
@@ -218,7 +218,7 @@ Safepow(X,Y) = sign(x) * pow(abs(x), y)
 | --- | --- |
 | `Out` | Half |
 
-#### Discussion
+## Discussion
 
 The output of this node is represented by the equation `safepow(x,y) = sign(x) * pow(abs(x), y)`.
 

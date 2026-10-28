@@ -15,7 +15,7 @@ A flag to indicate whether PCM samples are floating-point values.
 LinearPCMFormatFlagIsFloat
 ```
 
-#### Discussion
+## Discussion
 
 This flag is a synonym of [`FormatFlagIsFloat`](./formatflagisfloat.md).
 

@@ -19,7 +19,7 @@ static var pemArmour: SecItemImportExportFlags { get }
 kSecItemPemArmour
 ```
 
-#### Discussion
+## Discussion
 
 PEM armor refers to a way of expressing binary data as an ASCII string so that it can be transferred over text-only channels such as email. (PEM stands for an Internet standard, Privacy Enhanced Mail.)
 

@@ -25,11 +25,11 @@ convenience init(geometry: SCNGeometry, options: [SCNPhysicsShape.Option : Any]?
 + (instancetype) shapeWithGeometry:(SCNGeometry *) geometry options:(NSDictionary<NSString *,id> *) options;
 ```
 
-#### Return Value
+## Return Value
 
 A new physics shape object.
 
-#### Discussion
+## Discussion
 
 If you create a physics shape using one of the basic geometry classes ([`SCNBox`](../scnbox.md), [`SCNSphere`](../scnsphere.md), [`SCNPyramid`](../scnpyramid.md), [`SCNCone`](../scncone.md), [`SCNCylinder`](../scncylinder.md), or [`SCNCapsule`](../scncapsule.md)), SceneKit uses an idealized form of that geometry for the physics shape instead of using the geometry’s vertex data to simulate collisions. For example, if you create a physics shape from an [`SCNSphere`](../scnsphere.md) object, SceneKit simulates collisions for any object that passes within the sphere’s radius.
 

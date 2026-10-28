@@ -20,7 +20,7 @@ var backgroundColor: NSColor! { get set }
 @property (copy, null_resettable) NSColor * backgroundColor;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to specify the background color for your button. If you do not specify a value for this property, AppKit assigns a default color based on the value in the [`style`](./style-swift.property.md) property. Generally, this color is red for destructive actions and blue for nondestructive actions.
 

@@ -25,7 +25,7 @@ var host: String? { get set }
 @property (copy, nullable) NSString * host;
 ```
 
-#### Discussion
+## Discussion
 
 For example, in the URL `http://www.example.com/index.html`, the host is `www.example.com`.
 

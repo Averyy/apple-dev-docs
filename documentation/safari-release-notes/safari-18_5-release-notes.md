@@ -5,38 +5,38 @@
 
 Released May 12, 2025 — 18.5 (20621.2.5)
 
-#### Overview
+## Overview
 
 Safari 18.5 is available for iOS 18.5, iPadOS 18.5, visionOS 2.5, macOS 15.5, macOS Sonoma, and macOS Ventura.
 
-##### Editing
+### Editing
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed some errors in finding the caret position from a click or tap on iOS in vertical writing modes.  (146512180)
 
-##### Networking
+### Networking
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed using WebSocket in a WebWorker causing the entire Worker to freeze.  (145149784)
 
-##### Service Workers
+### Service Workers
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed Service Worker downloads being prematurely interrupted.  (143065672)
 - Fixed moving a download file to its final destination.  (146326574)
 
-##### Web API
+### Web API
 
-###### New Features
+#### New Features
 
 - Added support for Declarative Web Push on macOS.  (148109003)
 
-##### Web Extensions
+### Web Extensions
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed `declarativeNetRequestWithHostAccess` permission removing site access even though the extension already has permission to inject scripts.  (145484265)
 

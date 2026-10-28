@@ -21,7 +21,7 @@ A rectangle containing all path segments.
 var boundingRect: CGRect { get }
 ```
 
-#### Discussion
+## Discussion
 
 This is the smallest rectangle completely enclosing all points in the path but not including control points for Bézier curves.
 

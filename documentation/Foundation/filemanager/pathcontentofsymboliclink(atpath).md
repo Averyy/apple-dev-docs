@@ -26,11 +26,11 @@ func pathContentOfSymbolicLink(atPath path: String) -> String?
 - (NSString *) pathContentOfSymbolicLinkAtPath:(NSString *) path;
 ```
 
-#### Return Value
+## Return Value
 
 The path of the directory or file to which the symbolic link `path` refers, or `nil` upon failure. If the symbolic link is specified as a relative path, that relative path is returned.
 
-#### Discussion
+## Discussion
 
 Because this method does not return error information, it has been deprecated as of OS X v10.5. Use [`destinationOfSymbolicLink(atPath:)`](./destinationofsymboliclink%28atpath%29.md) instead.
 

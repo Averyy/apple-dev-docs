@@ -23,11 +23,11 @@ optional func position(for bar: any UIBarPositioning) -> UIBarPosition
 - (UIBarPosition) positionForBar:(id<UIBarPositioning>) bar;
 ```
 
-#### Return Value
+## Return Value
 
 The position of the bar.
 
-#### Discussion
+## Discussion
 
 If your interface has a custom bar with a delegate, that delegate can implement this method and use it to specify the position of the bar that has been added to a window.
 

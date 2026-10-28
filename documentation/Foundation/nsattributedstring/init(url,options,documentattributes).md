@@ -29,11 +29,11 @@ init(url: URL, options: [NSAttributedString.DocumentReadingOptionKey : Any] = [:
 - (instancetype) initWithURL:(NSURL *) url options:(NSDictionary<NSString *,id> *) options documentAttributes:(NSDictionary<NSString *,id> **) dict error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 Returns an initialized attributed string object, or `nil` if the method can’t decode the data.
 
-#### Discussion
+## Discussion
 
 Filter services can be used to convert the file into a format recognized by Cocoa. The `options` dictionary specifies how the document should be loaded and can contain the values described in [`NSAttributedStringDocumentReadingOptionKey`](../../UIKit/nsattributedstringdocumentreadingoptionkey.md). If you specify the [`documentType`](./documentreadingoptionkey/documenttype.md) or [`fileType`](./documentreadingoptionkey/filetype.md) attribute, this method treats the data as if it is in the specified format. If you don’t specify one of these options, the method examines the document and loads it using whatever format it seems to contain.
 

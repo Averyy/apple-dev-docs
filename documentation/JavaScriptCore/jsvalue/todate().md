@@ -24,11 +24,11 @@ func toDate() -> Date!
 - (NSDate *) toDate;
 ```
 
-#### Return Value
+## Return Value
 
 The date representation of the value.
 
-#### Discussion
+## Discussion
 
 If the value contains a JavaScript `Date` object, this method returns an equivalent [`NSDate`](../../Foundation/nsdate.md) representation. Otherwise, this method uses JavaScript type coercion to interpret the value as a number of seconds and creates an [`NSDate`](../../Foundation/nsdate.md) object with the [`dateWithTimeIntervalSince1970:`](../../Foundation/nsdate/datewithtimeintervalsince1970_.md) method.
 

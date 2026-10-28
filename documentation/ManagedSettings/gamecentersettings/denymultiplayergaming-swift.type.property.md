@@ -17,7 +17,7 @@ The metadata associated with the setting that prevents users from joining multip
 static let denyMultiplayerGaming: SettingMetadata<Bool>
 ```
 
-#### Discussion
+## Discussion
 
 Use `denyMultiplayerGaming` to access the metadata for [`denyMultiplayerGaming`](./denymultiplayergaming-swift.property.md). The default value is `false`.
 

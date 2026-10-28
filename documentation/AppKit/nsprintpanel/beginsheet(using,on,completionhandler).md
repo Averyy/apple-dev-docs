@@ -21,7 +21,7 @@ func beginSheet(using printInfo: NSPrintInfo, on parentWindow: NSWindow) async -
 - (void) beginSheetUsingPrintInfo:(NSPrintInfo *) printInfo onWindow:(NSWindow *) parentWindow completionHandler:(void (^)(NSPrintPanelResult result)) handler;
 ```
 
-#### Discussion
+## Discussion
 
 ## See Also
 

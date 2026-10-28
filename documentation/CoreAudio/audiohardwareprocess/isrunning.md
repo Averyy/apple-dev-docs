@@ -16,7 +16,7 @@ A Bool where a value of true indicates that there is audio IO in progress in the
 var isRunning: Bool { get throws }
 ```
 
-#### Discussion
+## Discussion
 
 Note that audio IO may be in progress even if no input or output streams are active.
 

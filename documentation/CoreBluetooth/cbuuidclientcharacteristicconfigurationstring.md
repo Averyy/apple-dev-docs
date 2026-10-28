@@ -25,7 +25,7 @@ let CBUUIDClientCharacteristicConfigurationString: String
 extern NSString * const CBUUIDClientCharacteristicConfigurationString;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value for this descriptor is an [`NSNumber`](../Foundation/nsnumber.md) object.
 

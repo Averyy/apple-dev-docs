@@ -21,7 +21,7 @@ class SFAddToHomeScreenInfo
 @interface SFAddToHomeScreenInfo : NSObject
 ```
 
-#### Overview
+## Overview
 
 Create an instance of `SFAddToHomeScreenInfo` in your [`getHomeScreenWebAppInfo(completionHandler:)`](./sfaddtohomescreenactivityitem/gethomescreenwebappinfo%28completionhandler%29.md) implementation. Configure the object with the web app’s manifest and the cookies your browser uses with the web app, then pass the object to the method’s completion handler.
 

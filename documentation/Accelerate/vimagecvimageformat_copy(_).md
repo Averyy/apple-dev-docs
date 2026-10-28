@@ -25,11 +25,11 @@ func vImageCVImageFormat_Copy(_ format: vImageConstCVImageFormat) -> Unmanaged<v
 vImageCVImageFormatRefvImageCVImageFormat_Copy(vImageConstCVImageFormatRef format);
 ```
 
-#### Return Value
+## Return Value
 
 A [`vImageCVImageFormat`](./vimagecvimageformat.md) instance.
 
-#### Discussion
+## Discussion
 
 This function doesn’t copy the image format’s user data or the release callback.
 

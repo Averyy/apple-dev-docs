@@ -19,7 +19,7 @@ var badgeLabel: String? { get set }
 @property (copy, nullable) NSString * badgeLabel;
 ```
 
-#### Discussion
+## Discussion
 
 The appearance of the badge area is system defined.
 

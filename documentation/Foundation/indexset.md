@@ -21,7 +21,7 @@ A collection of unique integer values that represent the indexes of elements in 
 struct IndexSet
 ```
 
-#### Overview
+## Overview
 
 The range of valid integer values is `0...Int.max-1`. Anything outside this range is an error.
 

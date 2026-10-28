@@ -10,13 +10,13 @@ Create and adjust spatial audio in visionOS with RealityKit.
 - visionOS 2.0+
 - Xcode 16.0+
 
-#### Overview
+## Overview
 
 This sample demonstrates how to load and play a spatial audio file in a visionOS app with the [`SpatialAudioComponent`](../RealityKit/spatialaudiocomponent.md). As the following image shows, you can use this component to configure how an entity emits sounds into a person’s environment:
 
 ![This is a screenshot of a visionOS app in the Simulator. The right side features an axis visualizer, while the left side presents a description of texts and three draggers that correspond to gain, direct level, and reverb levels.](https://developer.apple.com/tutorials/images/com.apple.visionOS/sample-spatialaudio-1-main-view.png)
 
-##### Create the axis visualizer
+### Create the axis visualizer
 
 Using existing RealityKit shapes, the sample creates an axis visualizer in the app’s main view to represent the x, y, and z axes of the audio source:
 
@@ -89,7 +89,7 @@ static func make() -> Entity {
 }
 ```
 
-##### Create a decibel slider
+### Create a decibel slider
 
 To adjust the decibels for the gain, the direct level, and the reverb level of the audio source, the app creates the `DecibelSlider` view that the app adds to the main body view. The view contains a `name` property, which represents the name of the property that it controls, and a `value` variable, which stores the decibel value:
 
@@ -121,7 +121,7 @@ struct DecibelSlider: View {
 
 Using a [`Slider`](../SwiftUI/slider.md) within the view, a person can control the `value` property from the bounded linear range of values between -60 and 0.
 
-##### Set up the main window
+### Set up the main window
 
 To create the main view, the app combines the following subviews:
 
@@ -166,7 +166,7 @@ struct SpatialAudioView: View {
 
 The view creates `entity` to hold the audio sample. The `gain`, `directLevel`, and `reverbLevel` properties represent the default values for the audio source.
 
-##### Play the spatial audio
+### Play the spatial audio
 
 When the necessary properties are in place, the `audioSource` view loads the audio file and configures it for continuous playback. Then the app sets up `entity` with a `SpatialAudioComponent` to play the audio in the reality view:
 
@@ -228,7 +228,7 @@ var audioSource: some View {
 }
 ```
 
-##### Showcase text descriptions
+### Showcase text descriptions
 
 The sample creates the `description` view to display the collection of texts and guide people through the audio experience in the app:
 
@@ -257,7 +257,7 @@ var description: some View {
 }
 ```
 
-##### Control the spatial audio
+### Control the spatial audio
 
 To adjust the `gain`, `directLevel`, and `reverbLevel` properties, the sample implements the `configuration` view, adding the `decibelSlider` that allows people to drag to adjust the values:
 
@@ -277,7 +277,7 @@ var configuration: some View {
 
 ```
 
-###### Related to
+#### Related to
 
 - [`SpatialAudioComponent`](../RealityKit/spatialaudiocomponent.md)
   A component that configures how sounds emit from an entity into a person’s environment.

@@ -23,7 +23,7 @@ case relu
 MLCActivationTypeReLU
 ```
 
-#### Discussion
+## Discussion
 
 This activation type implements the following function:
 

@@ -25,7 +25,7 @@ static var socketNotConnected: Errno { get }
 
 - [Adopting Swift Error Constants](../adopting-errno.md)
 
-#### Discussion
+## Discussion
 
 A request to send or receive data wasn’t permitted because the socket wasn’t connected and, when sending on a datagram socket, no address was supplied.
 

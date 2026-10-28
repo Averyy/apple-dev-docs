@@ -14,7 +14,7 @@
 #define kIOHIDOutputTransactionInterfaceID
 ```
 
-#### Discussion
+## Discussion
 
 Interface ID for the kIOHIDOutputTransactionInterfaceID. Corresponds to an output transaction for one or more report IDs on a specific device.
 

@@ -16,7 +16,7 @@
 kINQUIRY_Byte6_ADDR16_Mask
 ```
 
-#### Discussion
+## Discussion
 
 Mask to use to test the ADDR16 bit.
 

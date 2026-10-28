@@ -20,7 +20,7 @@ func value(forProperty property: String) -> Any?
 - (id) valueForProperty:(NSString *) property;
 ```
 
-#### Return Value
+## Return Value
 
 The value of the specified media property key.
 

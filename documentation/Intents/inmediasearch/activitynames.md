@@ -34,7 +34,7 @@ var activityNames: [String]? { get }
 @property (atomic, copy, readonly, nullable) NSArray<NSString *> * activityNames;
 ```
 
-#### Discussion
+## Discussion
 
 An activity is anything the user might be doing, such as working out, dancing, or meditating.
 

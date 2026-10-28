@@ -20,7 +20,7 @@ var stat: Int32
 int stat;
 ```
 
-#### Discussion
+## Discussion
 
 This field uses the same format as the `wait(2)` system call.
 

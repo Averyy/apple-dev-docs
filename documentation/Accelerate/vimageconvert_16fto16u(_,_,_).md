@@ -25,11 +25,11 @@ func vImageConvert_16Fto16U(_ src: UnsafePointer<vImage_Buffer>, _ dest: UnsafeP
 vImage_Error vImageConvert_16Fto16U(const vImage_Buffer *src, const vImage_Buffer *dest, vImage_Flags flags);
 ```
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
-#### Discussion
+## Discussion
 
 The conversion maps source pixels with a value of `0.0` to `0`, and `1.0` to [`max`](../Swift/uint16/max.md).
 

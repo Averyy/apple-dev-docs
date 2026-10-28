@@ -16,7 +16,7 @@ Denotes the beginning of new path.
 void beginPath();
 ```
 
-#### Discussion
+## Discussion
 
 Any calls to `arcTo`, `bezierCurveTo`, `lineTo`, `moveTo`, or `quadraticCurveTo` after a call to `beginPath` add elements to a single path. A subsequent call to `strokePath` or `fillPath` outlines or fills the shape defined by the path. It is not necessary to close a path in order to draw it.
 

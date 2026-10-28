@@ -17,7 +17,7 @@ let SFCertificateViewDisclosureStateDidChange: String
 extern NSString * SFCertificateViewDisclosureStateDidChange;
 ```
 
-#### Discussion
+## Discussion
 
 Sent when the disclosure triangle is opened or closed.
 

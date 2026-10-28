@@ -15,7 +15,7 @@
 static let CWPowerDidChange: NSNotification.Name
 ```
 
-#### Discussion
+## Discussion
 
 Posted when the power state of any WLAN interface changes. The *object* for this notification is the corresponding BSD interface name. This notification does not contain a *userInfo* dictionary.
 

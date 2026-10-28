@@ -19,7 +19,7 @@ var focusedFrameGuide: UILayoutGuide { get }
 @property (strong, readonly) UILayoutGuide * focusedFrameGuide;
 ```
 
-#### Discussion
+## Discussion
 
 The layout guide in this property represents the display frame of the image view when it’s focused. You can use this property to align other elements of your interface to the image view or to adjust the constraints of your interface.
 

@@ -9,7 +9,7 @@ Support Apple In-App Purchases through the App Store for exceptionally large cat
 **Availability**:
 - Advanced Commerce API 1.0+
 
-#### Overview
+## Overview
 
 Use this framework to offer an exceptionally large catalog of one-time purchases, subscriptions, and subscriptions with optional add-ons while using the App Store commerce system. Apps that use this API host and manage their own catalog of Apple In-App Purchases, or SKUs. The App Store commerce system handles the end-to-end payment processing, global distribution, tax support, and customer service.
 

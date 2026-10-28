@@ -21,7 +21,7 @@ func setPostbacks(_ postbacks: [SKAdTestPostback]) throws
 - (BOOL) setPostbacks:(NSArray<SKAdTestPostback *> *) postbacks error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 An error occurs if any of the test postbacks are invalid or if there’s an issue with the set of test postbacks. Otherwise, the test passes.
 

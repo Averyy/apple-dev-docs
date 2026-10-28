@@ -21,7 +21,7 @@ weak var contentWorld: WKContentWorld? { get }
 @property (nonatomic, weak, readonly) WKContentWorld * contentWorld;
 ```
 
-#### Discussion
+## Discussion
 
 The world in which the `WKJSHandle` can be used.
 

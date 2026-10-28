@@ -24,7 +24,7 @@ static let cameraIntrinsics: VNImageOption
 extern VNImageOption const VNImageOptionCameraIntrinsics;
 ```
 
-#### Discussion
+## Discussion
 
 The camera intrinsics matrix is a [`CFData`](../../CoreFoundation/cfdata.md) instance containing a [`matrix_float3x3`](../../simd/matrix_float3x3.md), which is a column-major matrix:
 

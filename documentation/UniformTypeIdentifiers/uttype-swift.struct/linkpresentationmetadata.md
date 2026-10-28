@@ -21,7 +21,7 @@ Serialized LinkPresentation metadata.
 static var linkPresentationMetadata: UTType { get }
 ```
 
-#### Discussion
+## Discussion
 
 **UTI:** com.apple.linkpresentation.metadata
 

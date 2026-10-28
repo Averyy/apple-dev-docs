@@ -24,7 +24,7 @@ class MPSNNGraph
 @interface MPSNNGraph : MPSKernel
 ```
 
-#### Overview
+## Overview
 
 Once you have prepared a graph of [`MPSNNImageNode`](./mpsnnimagenode.md), [`MPSNNFilterNode`](./mpsnnfilternode.md), and, if needed, [`MPSNNStateNode`](./mpsnnstatenode.md) objects, you may initialize a [`MPSNNGraph`](./mpsnngraph.md) using the image node that you wish to appear as the result. The graph object will introspect the graph representation and determine which nodes are needed for inputs, and which nodes are produced as output state (if any). Nodes which are not needed to calculate the result image node are ignored. Some nodes may be internally concatenated with other nodes for better performance.
 
@@ -34,7 +34,7 @@ During [`MPSNNGraph`](./mpsnngraph.md) construction, the graph attached to the r
 
 When decoding a [`MPSNNGraph`](./mpsnngraph.md) using a [`NSCoder`](../Foundation/nscoder.md), it will be created against the system default [`MTLDevice`](../Metal/mtldevice.md). If you would like to set the device, your [`NSCoder`](../Foundation/nscoder.md) should conform to the [`MPSDeviceProvider`](./mpsdeviceprovider.md) protocol.
 
-##### Debugging Tips
+### Debugging Tips
 
 In typical usage, some refinement, especially of padding policies, may be required to get the expected answer from Metal Performance Shaders. If the result image is the wrong size, padding is typically the problem. When the answers are incorrect, the [`offset`](./mpscnnkernel/offset.md) or other property may be incorrectly configured at some stage. As the graph is generated starting from an output image node, you may create other graphs starting at any image node within the graph. This will give you a view into the result produced from each intermediate layer with a minimum of fuss. In addition, the usual [`debugDescription()`](../ObjectiveC/nsobject-swift.class/debugdescription%28%29.md) method is available to inspect objects to make sure they conform to expectation.
 

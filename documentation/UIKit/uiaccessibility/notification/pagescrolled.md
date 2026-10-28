@@ -25,7 +25,7 @@ static let pageScrolled: UIAccessibility.Notification
 extern const UIAccessibilityNotifications UIAccessibilityPageScrolledNotification;
 ```
 
-#### Discussion
+## Discussion
 
 This notification includes a parameter that is an [`NSString`](../../../Foundation/nsstring.md) object that contains a description of the new scroll position. An assistive app outputs the description string in the parameter.
 

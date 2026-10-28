@@ -16,11 +16,11 @@ Overrides default content margins for the provided edges in the Dynamic Island.
 func contentMargins(_ edges: Edge.Set = .all, _ length: Double) -> DynamicIslandExpandedRegion<Content>
 ```
 
-#### Return Value
+## Return Value
 
 The view for the Dynamic Island expanded region with the updated content margins.
 
-#### Discussion
+## Discussion
 
 If you repeatedly use the `contentMargins(_:_:)` modifier, the system uses the innermost specified values. The following example results in a margin of 8 points for the trailing, top, and bottom edges, and uses the default margin for the leading edge:
 

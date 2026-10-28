@@ -21,11 +21,11 @@ init(phoneOrEmail: String)
 - (instancetype) initWithPhoneOrEmail:(NSString *) phoneOrEmail;
 ```
 
-#### Return Value
+## Return Value
 
 A new contact message button.
 
-#### Discussion
+## Discussion
 
 The button displays a system image that communicates its function. CarPlay never displays the contact information you provide. Tapping the button activates Siri and launches the compose message flow using the phone number or email address you provide.
 

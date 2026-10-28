@@ -20,13 +20,13 @@ object InlineTextStyle
 - [Enhancing Your Articles with Styles](../AppleNews/enhancing-your-articles-with-styles.md)
 - [Defining and Applying Text Styles](../AppleNews/defining-and-applying-text-styles.md)
 
-#### Discussion
+## Discussion
 
 Use an `InlineTextStyle` object to apply text stylings (such as color, underline, font size, and font weight) to a specific range of text. The `InlineTextStyle` object contains either a [`TextStyle`](./textstyle.md) object or a reference to a text style that’s been defined in the [`ArticleDocument.textStyles`](./articledocument/textstyles-data.dictionary.md) object. Only properties that have values override the component text style and defaults.
 
 You can use this object in [`Text`](./text.md).
 
-##### Example
+### Example
 
 ```json
 {

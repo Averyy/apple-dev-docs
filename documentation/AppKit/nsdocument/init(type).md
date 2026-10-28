@@ -19,11 +19,11 @@ convenience init(type typeName: String) throws
 - (instancetype) initWithType:(NSString *) typeName error:(NSError **) outError;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized `NSDocument` object, or, if the document could not be created, `nil`.
 
-#### Discussion
+## Discussion
 
 The default implementation of this method just invokes `[self init]` and `[self setFileType:typeName]`.
 

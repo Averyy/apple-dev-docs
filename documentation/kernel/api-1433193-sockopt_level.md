@@ -13,11 +13,11 @@
 int sockopt_level(sockopt_t sopt);
 ```
 
-#### Return Value
+## Return Value
 
 The socket option level. See man 2 setsockopt
 
-#### Discussion
+## Discussion
 
 Retrieves the socket option level. (SOL_SOCKET, etc).
 

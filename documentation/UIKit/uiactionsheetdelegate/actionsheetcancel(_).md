@@ -23,7 +23,7 @@ optional func actionSheetCancel(_ actionSheet: UIActionSheet)
 - (void) actionSheetCancel:(UIActionSheet *) actionSheet;
 ```
 
-#### Discussion
+## Discussion
 
 If the action sheet’s delegate does not implement this method, clicking the cancel button is simulated and the action sheet is dismissed. Implement this method if you need to perform some actions before an action sheet is canceled. An action sheet can be canceled at any time by the system—for example, when the user taps the Home button. The [`actionSheet(_:willDismissWithButtonIndex:)`](./actionsheet%28_,willdismisswithbuttonindex%29.md) and [`actionSheet(_:didDismissWithButtonIndex:)`](./actionsheet%28_,diddismisswithbuttonindex%29.md) methods are invoked after this method.
 

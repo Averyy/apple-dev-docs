@@ -17,7 +17,7 @@ let IMKDelegateClass: String
 extern const NSString * IMKDelegateClass;
 ```
 
-#### Discussion
+## Discussion
 
 The key used to find an input method delegate class name from the input method bundle.
 

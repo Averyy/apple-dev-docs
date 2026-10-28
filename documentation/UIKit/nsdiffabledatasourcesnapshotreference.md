@@ -23,7 +23,7 @@ class NSDiffableDataSourceSnapshotReference
 @interface NSDiffableDataSourceSnapshot : NSObject
 ```
 
-#### Overview
+## Overview
 
 Diffable data sources use *snapshots* to provide data for collection views and table views. You use a snapshot to set up the initial state of the data that a view displays, and you use snapshots to reflect changes to the data that the view displays.
 

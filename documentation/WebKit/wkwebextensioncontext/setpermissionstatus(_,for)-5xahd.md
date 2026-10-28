@@ -23,7 +23,7 @@ func setPermissionStatus(_ status: WKWebExtensionContext.PermissionStatus, for u
 - (void) setPermissionStatus:(WKWebExtensionContextPermissionStatus) status forURL:(NSURL *) url;
 ```
 
-#### Discussion
+## Discussion
 
 The URL is converted into a match pattern and will update [`grantedPermissionMatchPatterns`](./grantedpermissionmatchpatterns.md) and [`deniedPermissionMatchPatterns`](./deniedpermissionmatchpatterns.md). Use this method for changing a single URL’s status. Only [`WKWebExtensionContext.PermissionStatus.deniedExplicitly`](./permissionstatus/deniedexplicitly.md), [`WKWebExtensionContext.PermissionStatus.unknown`](./permissionstatus/unknown.md), and [`WKWebExtensionContext.PermissionStatus.grantedExplicitly`](./permissionstatus/grantedexplicitly.md) states are allowed to be set using this method.
 

@@ -22,7 +22,7 @@ optional func paste(itemProviders: [NSItemProvider])
 - (void) pasteItemProviders:(NSArray<NSItemProvider *> *) itemProviders;
 ```
 
-#### Discussion
+## Discussion
 
 This method performs a paste operation on the responder object, pasting the data provided by specified item providers.
 

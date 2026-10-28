@@ -24,11 +24,11 @@ func decodeCGSize(forKey key: String) -> CGSize
 - (CGSize) decodeCGSizeForKey:(NSString *) key;
 ```
 
-#### Return Value
+## Return Value
 
 The `CGSize` structure.
 
-#### Discussion
+## Discussion
 
 Use this method to decode size information that was previously encoded using the [`encode(_:forKey:)`](./encode%28_,forkey%29-6wq3n.md) method.
 

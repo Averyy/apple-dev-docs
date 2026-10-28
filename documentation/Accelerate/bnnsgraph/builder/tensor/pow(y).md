@@ -23,7 +23,7 @@ func pow(y: some BNNSGraph.Builder.OperationParameter<T>) -> BNNSGraph.Builder.T
 
 Available when `T` conforms to `BNNSScalar`.
 
-#### Discussion
+## Discussion
 
 This function performs the operation `pow(self, y)`.
 

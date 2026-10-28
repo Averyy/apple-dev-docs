@@ -23,7 +23,7 @@ optional func windowScene(_ windowScene: UIWindowScene, userDidAcceptCloudKitSha
 - (void) windowScene:(UIWindowScene *) windowScene userDidAcceptCloudKitShareWithMetadata:(CKShareMetadata *) cloudKitShareMetadata;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to respond to a CloudKit Sharing invitation. In your implementation, accept the share by scheduling a [`CKAcceptSharesOperation`](../../CloudKit/ckacceptsharesoperation.md) object that contains the metadata object in the `cloudKitShareMetadata` parameter. After your operation object finishes successfully, you can begin fetching records and incorporating the resulting data into your app. Alternatively, if your app uses Core Data and [`NSPersistentCloudKitContainer`](../../CoreData/nspersistentcloudkitcontainer.md), accept the share by calling the container’s [`acceptShareInvitationsFromMetadata:intoPersistentStore:completion:`](../../CoreData/nspersistentcloudkitcontainer/acceptshareinvitationsfrommetadata_intopersistentstore_completion_.md) method.
 

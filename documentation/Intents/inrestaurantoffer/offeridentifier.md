@@ -30,7 +30,7 @@ var offerIdentifier: String { get set }
 @property (atomic, copy) NSString * offerIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 For each offer, your company or the restaurant must provide a unique identifier for the offer. Use the identifier to validate the offer in your system. You can also pass the identifier to the restaurant if it has a system for validating special offers.
 

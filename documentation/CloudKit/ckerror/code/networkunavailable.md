@@ -25,7 +25,7 @@ case networkUnavailable
 CKErrorNetworkUnavailable
 ```
 
-#### Discussion
+## Discussion
 
 You can retry network failures immediately, but have your app implement a backoff period so that it doesn’t attempt the same operation repeatedly.
 

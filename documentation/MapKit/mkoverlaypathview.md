@@ -23,7 +23,7 @@ class MKOverlayPathView
 @interface MKOverlayPathView : MKOverlayView
 ```
 
-#### Overview
+## Overview
 
 You can use this class to implement simple path-based overlay views or subclass it to define additional drawing behaviors. The default drawing behavior of this class is to apply the object’s current fill attributes, fill the path, apply the current stroke attributes, and then stroke the path.
 

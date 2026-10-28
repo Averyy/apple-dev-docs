@@ -17,7 +17,7 @@ A `product` reduction over the entire array.
 func product(_ array: MLXArray, keepDims: Bool = false, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 ```swift
 let array = MLXArray([5, 8, 4, 9], [2, 2])
@@ -26,7 +26,7 @@ let array = MLXArray([5, 8, 4, 9], [2, 2])
 let result = array.product()
 ```
 
-##### See Also
+### See Also
 
 - [Reduction Functions](./reduction.md)
 - [`product(_:axes:keepDims:stream:)`](./product%28_,axes,keepdims,stream%29.md)

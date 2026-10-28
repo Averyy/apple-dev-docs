@@ -19,7 +19,7 @@ var isSelectable: Bool { get set }
 @property (getter=isSelectable) BOOL selectable;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) when the collection view allows the user to select items, or [`false`](../../Swift/false.md) when it does not. You can set selections programmatically regardless of this setting.
 

@@ -22,7 +22,7 @@ var headerTextProvider: CLKTextProvider { get set }
 @property (nonatomic, copy) CLKTextProvider * headerTextProvider;
 ```
 
-#### Discussion
+## Discussion
 
 A tint color is applied to the header text to differentiate it from the other rows. In multicolor environments, the text provider or template provide the tint color. In monochrome environments, the clock face provides the tint color.
 

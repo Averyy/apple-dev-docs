@@ -23,7 +23,7 @@ typealias Pixel_ARGB_16F = (UInt16, UInt16, UInt16, UInt16)
 typedef uint16_t[4] Pixel_ARGB_16F;
 ```
 
-#### Discussion
+## Discussion
 
 A four-channel, 16-bit floating-point per channel pixel.
 

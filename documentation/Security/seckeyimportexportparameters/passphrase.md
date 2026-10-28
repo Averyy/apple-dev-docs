@@ -19,7 +19,7 @@ var passphrase: Unmanaged<CFTypeRef>?
 CFTypeRef passphrase;
 ```
 
-#### Discussion
+## Discussion
 
 You may specify either a [`CFString`](../../CoreFoundation/cfstring.md) or a [`CFData`](../../CoreFoundation/cfdata.md) instance for the passphrase. The PKCS12 format requires passwords in Unicode format, and passing in a [`CFString`](../../CoreFoundation/cfstring.md) as the password is the surest way to meet this requirement  (and ensure compatibility with other implementations). If you supply a [`CFData`](../../CoreFoundation/cfdata.md) object as the password for a PKCS12 export operation, the data is assumed to be in UTF8 form and converted as appropriate.
 

@@ -16,7 +16,7 @@ Provides an image asynchronously that contains the given subjects with the backg
 final func image(for subjects: Set<ImageAnalysisOverlayView.Subject>) async throws -> NSImage
 ```
 
-#### Discussion
+## Discussion
 
 If one or more subjects fail to produce an image, the method throws [`ImageAnalysisOverlayView.SubjectUnavailable.imageUnavailable`](./subjectunavailable/imageunavailable.md).
 

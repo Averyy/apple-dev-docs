@@ -23,7 +23,7 @@ var shouldAutoplay: Bool { get set }
 @property (nonatomic) BOOL shouldAutoplay;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`true`](../../Swift/true.md). This property determines whether the playback of network-based content begins automatically when there is enough buffered data to ensure uninterrupted playback.
 

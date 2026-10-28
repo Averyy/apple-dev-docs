@@ -20,7 +20,7 @@ Events associated with audio playback.
 enum AudioEvents
 ```
 
-#### Overview
+## Overview
 
 For more information on subscribing to scene events, see `RealityKit/Scene/Event`.
 

@@ -20,7 +20,7 @@ case cameraUnauthorized
 ARErrorCodeCameraUnauthorized
 ```
 
-#### Discussion
+## Discussion
 
 To use the device’s camera:
 

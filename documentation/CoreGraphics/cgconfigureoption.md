@@ -20,7 +20,7 @@ struct CGConfigureOption
 enum CGConfigureOption : uint32_t;
 ```
 
-#### Overview
+## Overview
 
 For information about how these constants are used, see the function [`CGCompleteDisplayConfiguration(_:_:)`](./cgcompletedisplayconfiguration%28_,_%29.md).
 

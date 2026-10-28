@@ -22,7 +22,7 @@ Returns a Boolean value that indicates whether this volume contains any of the s
 func contains(anyOf points: [Self.Point]) -> Bool
 ```
 
-#### Discussion
+## Discussion
 
 - Returns A Boolean value that indicates whether `self` contains any of the specified points.
 

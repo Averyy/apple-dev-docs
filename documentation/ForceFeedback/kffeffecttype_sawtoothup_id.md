@@ -14,7 +14,7 @@
 #define kFFEffectType_SawtoothUp_ID
 ```
 
-#### Discussion
+## Discussion
 
 UUID for a upwards sawtooth wave effect type
 

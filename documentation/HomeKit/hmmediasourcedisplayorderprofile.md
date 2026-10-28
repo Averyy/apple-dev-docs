@@ -21,7 +21,7 @@ An interface from which to read and, if allowed by the accessory, update the ord
 class HMMediaSourceDisplayOrderProfile
 ```
 
-#### Overview
+## Overview
 
 This class represents a media source display that orders functionality for the [`HMServiceTypeTelevision`](./hmservicetypetelevision.md) service contained in the services array of the profile.
 

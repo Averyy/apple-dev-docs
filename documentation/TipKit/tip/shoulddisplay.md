@@ -21,7 +21,7 @@ A Boolean value that determines whether to display a tip.
 var shouldDisplay: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 This value returns `true` when a tip’s status is `.available`,  and `false` otherwise.
 

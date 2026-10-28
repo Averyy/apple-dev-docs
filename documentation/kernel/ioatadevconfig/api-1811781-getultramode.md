@@ -10,7 +10,7 @@ UInt8 getUltraMode(
  void );
 ```
 
-#### Return Value
+## Return Value
 
 bit-significant map of Ultra mode
 

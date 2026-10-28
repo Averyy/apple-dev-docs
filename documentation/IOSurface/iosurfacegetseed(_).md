@@ -22,7 +22,7 @@ func IOSurfaceGetSeed(_ buffer: IOSurfaceRef) -> UInt32
 uint32_t IOSurfaceGetSeed(IOSurfaceRef buffer);
 ```
 
-#### Discussion
+## Discussion
 
 This will return the current seed value of the buffer and is a cheap call to make to see if the contents of the buffer have changed since the last lock/unlock.
 

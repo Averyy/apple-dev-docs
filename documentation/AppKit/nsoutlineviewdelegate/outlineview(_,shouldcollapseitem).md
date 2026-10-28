@@ -20,11 +20,11 @@ optional func outlineView(_ outlineView: NSOutlineView, shouldCollapseItem item:
 - (BOOL) outlineView:(NSOutlineView *) outlineView shouldCollapseItem:(id) item;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) to permit `outlineView` to collapse `item`, [`false`](../../Swift/false.md) to deny permission.
 
-#### Discussion
+## Discussion
 
 The delegate can implement this method to disallow collapsing of specific items. For example, if the first row of your outline view should not be collapsed, your delegate method could contain this line of code:
 

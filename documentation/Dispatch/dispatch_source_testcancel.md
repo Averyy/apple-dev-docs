@@ -21,11 +21,11 @@ Tests whether the given dispatch source has been canceled.
 extern intptr_t dispatch_source_testcancel(dispatch_source_t source);
 ```
 
-#### Return Value
+## Return Value
 
 Non-zero if canceled and zero if not canceled.
 
-#### Discussion
+## Discussion
 
 Your application can use this function to test whether a dispatch source object has been canceled by a call to [`dispatch_source_cancel`](./dispatch_source_cancel.md). The result of this function is non-zero immediately after [`dispatch_source_cancel`](./dispatch_source_cancel.md) has been called.
 

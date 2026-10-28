@@ -19,7 +19,7 @@ func DisposeOSLGetErrDescUPP(_ userUPP: OSLGetErrDescUPP!)
 void DisposeOSLGetErrDescUPP(OSLGetErrDescUPP userUPP);
 ```
 
-#### Discussion
+## Discussion
 
 See the [`OSLGetErrDescProcPtr`](./oslgeterrdescprocptr.md) callback function. 
 

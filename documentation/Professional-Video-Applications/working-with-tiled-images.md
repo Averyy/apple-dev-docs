@@ -5,13 +5,13 @@
 
 Render only the necessary tiles of an image in your FxPlug plug-in to improve efficiency.
 
-#### Overview
+## Overview
 
 Renders in FxPlug 4 are *tileable*, which means that the input image can be divided into smaller tiles for rendering. This improves the efficiency of your plug-in because the host app only asks for exactly what pixels your plug-in needs to render for each tile, and the plug-in tells the host exactly what pixels your plug-in needs to sample.
 
 Two methods, [`sourceTileRect(_:sourceImageIndex:sourceImages:destinationTileRect:destinationImage:pluginState:at:)`](../professional_video_applications/fxtileableeffect/sourcetilerect%28_,sourceimageindex,sourceimages,destinationtilerect,destinationimage,pluginstate,at%29.md) and [`destinationImageRect(_:sourceImages:destinationImage:pluginState:at:)`](../professional_video_applications/fxtileableeffect/destinationimagerect%28_,sourceimages,destinationimage,pluginstate,at%29.md), help define the expected bounds for source and destination textures. These two sets of pixel bounds are `sourceTileRect` and `destinationImageRect`. They’re also known as region of interest (ROI) and domain of definition (DOD), respectively, in other rendering technologies like [Core Image](../CoreImage/CoreImage.md).
 
-##### Define tiles for rendering
+### Define tiles for rendering
 
 Before the host app can determine if it should tile its rendering, it must first know how a plug-in may transform the bounds of the input. For example, a glow filter expands the source image’s `imagePixelBounds`, and the new bounds need to be calculated and returned as the `destinationImageRect`. However, a color filter doesn’t require a change in bounds and instead simply returns the source image’s bounds as the `destinationImageRect`. For generators that aren’t required to conform to any bounds, you’ll likely set the `destinationImageRect` to `kFxRect_Infinite`.
 
@@ -27,7 +27,7 @@ If the filter distorts or convolutes the pixels in the image, it may require a l
 
 ![An illustration of an input image next to an output image, with the pixels scaled larger on the x-axis of the output image. Each image is divided into a grid of tiles. A highlighted rectangle that represents one example destinationTileRect is drawn on the output image. A corresponding rectangle representing the sourceTileRect is drawn on the input image in the same relative position, but with a smaller size, to represent the pixels required to sample the output tile. An arrow is drawn between the two rectangles from destinationTileRect to sourceTileRect. The outside bounds of the output image are larger than the input image, and an arrow is drawn between them from the input image to the output image.](https://developer.apple.com/tutorials/images/com.apple.professionalvideoapplications/media-3666154@2x.png)
 
-##### Set the destination rectangle bounds
+### Set the destination rectangle bounds
 
 Your plug-in needs to return one of three types of destination rectangle bounds: infinite bounds (a generator that repeats infinitely), the original bounds (color filter), or bounds that are different from the original bounds (a filter that expands or shrinks the input).
 
@@ -174,7 +174,7 @@ func destinationImageRect(_ destinationImageRect: UnsafeMutablePointer<FxRect>, 
 }
 ```
 
-##### Determine the source tile area required to render
+### Determine the source tile area required to render
 
 Use the [`sourceTileRect(_:sourceImageIndex:sourceImages:destinationTileRect:destinationImage:pluginState:at:)`](../professional_video_applications/fxtileableeffect/sourcetilerect%28_,sourceimageindex,sourceimages,destinationtilerect,destinationimage,pluginstate,at%29.md) method to specify how much of the source image you require, given a known destination rectangle to render.
 

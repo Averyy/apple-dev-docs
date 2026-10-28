@@ -9,7 +9,7 @@ Retrieve a single location group by its unique identifier.
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Discussion
+## Discussion
 
 This endpoint returns the full state of a location group, including its membership definition, current `systemStatus`, `groupTotal`, and `eligibility`. To confirm a group was created correctly, or to inspect its current membership before attaching it to an ad group’s targeting configuration, use this endpoint.
 
@@ -31,9 +31,9 @@ Fetching a group by ID differs from a bulk query in a couple of ways:
 | Single group only | Retrieves one group by ID. Use [`Query Location Groups`](./query-location-groups.md) to retrieve multiple groups with filters. |
 | Deleted groups | Soft-deleted groups are still retrievable by ID. They appear in the response with `systemStatus: DELETED`. |
 
-#### Payload Examples
+## Payload Examples
 
-##### Request
+### Request
 
 Retrieves a single location group by its unique identifier.
 
@@ -41,7 +41,7 @@ Retrieves a single location group by its unique identifier.
 GET /v1/location-groups/5764607523034238976
 ```
 
-##### Response
+### Response
 
 ```json
 {

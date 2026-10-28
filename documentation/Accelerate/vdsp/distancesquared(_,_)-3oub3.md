@@ -21,7 +21,7 @@ Returns the double-precision distance squared between two points in n-dimensiona
 static func distanceSquared<U, V>(_ pointA: U, _ pointB: V) -> Double where U : AccelerateBuffer, V : AccelerateMutableBuffer, U.Element == Double, V.Element == Double
 ```
 
-#### Discussion
+## Discussion
 
 This function calculates the sum of squares of the differences of corresponding elements of vectors `A` and `B`, using the following operation:
 

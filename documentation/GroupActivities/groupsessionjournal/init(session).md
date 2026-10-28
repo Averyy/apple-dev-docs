@@ -20,7 +20,7 @@ Creates a journal and associates it with the specified session of a group activi
 convenience init<Activity>(session: GroupSession<Activity>) where Activity : GroupActivity
 ```
 
-#### Return Value
+## Return Value
 
 A [`GroupSessionJournal`](../groupsessionjournal.md) object configured for the specified session.
 

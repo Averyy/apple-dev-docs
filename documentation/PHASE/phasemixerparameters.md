@@ -28,7 +28,7 @@ class PHASEMixerParameters
 
 - [Playing sound from a location in a 3D scene](./playing-sound-from-a-location-in-a-3d-scene.md)
 
-#### Overview
+## Overview
 
 This class orients a sound event in 3D space relative to a listener. When you configure an ambient mixer’s orientation and a listener’s orientation, PHASE lowers the volume of the sound event if the two orientations point away from each other, and plays the sound at full volume if they point at each other. To add an instance of this class to a sound event, use the `mixerParameters` argument of a sound event’s [`init(engine:assetIdentifier:mixerParameters:)`](./phasesoundevent/init%28engine,assetidentifier,mixerparameters%29.md) initializer.
 

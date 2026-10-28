@@ -19,11 +19,11 @@ func hv_gic_set_spi(_ intid: UInt32, _ level: Bool) -> hv_return_t
 extern hv_return_t hv_gic_set_spi(uint32_t intid, bool level);
 ```
 
-#### Return Value
+## Return Value
 
 [`HV_SUCCESS`](./hv_success.md) on success; otherwise, an error code.
 
-#### Discussion
+## Discussion
 
 Setting a level value causes level interrupts. To cause an edge interrupt, call this method with a level of [`true`](../Swift/true.md). The framework ignores a level of [`false`](../Swift/false.md) for an edge interrupt.
 

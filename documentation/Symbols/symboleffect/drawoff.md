@@ -23,7 +23,7 @@ static var drawOff: DrawOffSymbolEffect { get }
 
 Available when `Self` is `DrawOffSymbolEffect`.
 
-#### Discussion
+## Discussion
 
 The DrawOff animation makes the symbol hidden either as a whole, or one motion group at a time, animating parts of the symbol with draw data.
 

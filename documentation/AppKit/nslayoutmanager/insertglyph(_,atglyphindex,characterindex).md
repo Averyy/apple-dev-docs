@@ -21,7 +21,7 @@ func insertGlyph(_ glyph: NSGlyph, atGlyphIndex glyphIndex: Int, characterIndex 
 - (void) insertGlyph:(NSGlyph) glyph atGlyphIndex:(NSUInteger) glyphIndex characterIndex:(NSUInteger) charIndex;
 ```
 
-#### Discussion
+## Discussion
 
 If the glyph is mapped to several characters, `charIndex` should indicate the first character it’s mapped to.
 

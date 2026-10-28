@@ -23,7 +23,7 @@ func resolveConflicts(with version: GSSyncedDirectoryVersion)
 - (void) resolveConflictsWithVersion:(GSSyncedDirectoryVersion *) version;
 ```
 
-#### Discussion
+## Discussion
 
 If you’re implementing your own conflict resolution, read all of the conflicting versions, and modify one of them to incorporate the state and changes from the others. Then call this method, passing that version.
 

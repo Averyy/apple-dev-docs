@@ -5,7 +5,7 @@
 
 Add keys directly to your string catalog that you can reference in your code using Xcode generated localizable symbols.
 
-#### Overview
+## Overview
 
 If you add keys to your string catalogs, Xcode can automatically generate symbols that you can use to reference the localizable strings in your code. For strings without format specifiers, Xcode creates static variables; for strings with format specifiers, Xcode creates functions with parameters.
 
@@ -13,11 +13,11 @@ First, you internationalize your app and use localizable strings in your code an
 
 For more information on creating string catalogs from localizable strings in your code, see [Localizing and varying text with a string catalog](./localizing-and-varying-text-with-a-string-catalog.md).
 
-##### Enable automatic symbol generation
+### Enable automatic symbol generation
 
 For older projects, you may need to enable Generate String Catalog Symbols in build settings. In the project editor, select the project in the sidebar and click Build Settings in the editor area. Enter “Generate String” in the filter field, and under Localization, set the Generate String Catalog Symbols setting to `Yes`.
 
-##### Add keys to your string catalog
+### Add keys to your string catalog
 
 You can add localizable strings directly to your string catalog and then use symbols that Xcode generates for them in your code.
 
@@ -29,7 +29,7 @@ You can add localizable strings directly to your string catalog and then use sym
 
 For the other languages in the sidebar, Xcode shows a New icon in the State column.
 
-##### Add localizable strings with variables
+### Add localizable strings with variables
 
 To add localizable strings with variables, enter the `%` character in the language column, and choose a string from the code completion menu that matches the type of the variable. For example, choose the format specifier for an integer or double placeholder from the menu. Then enter a name for the variable in the `variableName` placeholder text that Xcode highlights in the table. Press Return to finish typing and confirm the string.
 
@@ -37,7 +37,7 @@ To add localizable strings with variables, enter the `%` character in the langua
 
 You can add multiple variables of different types to the localizable string, but you can only use a variable name once.
 
-##### Use generated localizable symbols in your code
+### Use generated localizable symbols in your code
 
 Xcode generates symbols from the keys and translations that you enter in your string catalog so that you can access keys from your code. For localizable strings without variables, Xcode creates static properties, and for localizable strings containing format specifiers, Xcode creates functions with appropriate parameters.
 
@@ -55,7 +55,7 @@ Then, use code completion to quickly enter these symbols while writing code in t
 
 ![An Xcode screenshot showing a Swift file selected in the Project navigator and a code completion menu that appears when you enter .Discover. with the generated symbol menu item chosen.](https://developer.apple.com/tutorials/images/com.apple.Xcode/insert-localizable-symbols-in-code@2x.png)
 
-##### Refactor code to use generated symbols
+### Refactor code to use generated symbols
 
 You can explicitly convert localizable strings in your code and interface files to generated symbols.
 

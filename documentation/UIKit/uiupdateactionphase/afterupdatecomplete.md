@@ -23,7 +23,7 @@ class var afterUpdateComplete: UIUpdateActionPhase { get }
 @property (class, nonatomic, readonly) UIUpdateActionPhase * afterUpdateComplete;
 ```
 
-#### Discussion
+## Discussion
 
 If there’s time left before [`completionDeadlineTime`](../uiupdateinfo/completiondeadlinetime.md), you can use this phase to perform some deferred tasks from more time-critical parts of the UI update.
 

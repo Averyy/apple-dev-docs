@@ -21,7 +21,7 @@ Instruction noting that the scaler is beginning to render the specified part.
 HVFPartRenderInstructionBeginPart
 ```
 
-#### Discussion
+## Discussion
 
 The part may be a glyph or part of a glyph. The callback can return `HVFPartRenderActionSkip` only in response to this instruction.
 

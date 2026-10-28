@@ -13,7 +13,7 @@
 kMillisecondScale = 1000 * 1000
 ```
 
-#### Discussion
+## Discussion
 
 Scale factor for millisecond based times.
 

@@ -26,7 +26,7 @@ func add(_ collector: AVPlayerItemMediaDataCollector)
 - (void) addMediaDataCollector:(AVPlayerItemMediaDataCollector *) collector;
 ```
 
-#### Discussion
+## Discussion
 
 This method may incur additional I/O to collect the requested media data asynchronously.
 

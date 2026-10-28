@@ -21,7 +21,7 @@ Identifier for the quarter of the calendar.
 case quarter
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  The `quarter` unit is largely unimplemented, and is not recommended for use.
 

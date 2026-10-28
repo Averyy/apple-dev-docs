@@ -15,7 +15,7 @@ A request the client sends to recover from failed content playback.
 object ContentPlaybackFailureRequest
 ```
 
-#### Discussion
+## Discussion
 
 If the playback of a queue fails to start, or there’s an error during playback from which the client can recover, the client sends this request to your service to report the failure and retrieve a new queue.
 

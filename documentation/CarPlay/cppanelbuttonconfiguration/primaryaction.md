@@ -22,7 +22,7 @@ var primaryAction: CPTextButton { get }
 @property (nonatomic, copy, readonly) CPTextButton * primaryAction;
 ```
 
-#### Discussion
+## Discussion
 
 Specify the button at initialization time and use this property to retrieve it later.
 

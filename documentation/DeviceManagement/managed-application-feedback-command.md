@@ -14,7 +14,7 @@ Get app feedback from a managed app on the device.
 - tvOS 10.2+
 - visionOS 1.1+
 
-#### Discussion
+## Discussion
 
 This command allows the server to get the feedback information of managed apps. In macOS 12 and later, macOS supports this command on the user channel.
 
@@ -22,7 +22,7 @@ The response doesn’t include apps that Declarative Device Management is managi
 
 Refer to the following sections to determine supported channels and requirements, and to see an example request and response.
 
-##### Command availability
+### Command availability
 
 |  |  |
 | --- | --- |
@@ -32,7 +32,7 @@ Refer to the following sections to determine supported channels and requirements
 | Allowed in user enrollment | iOS, macOS, visionOS |
 | Required access right | AllowAppInstallation |
 
-##### Example request and response
+### Example request and response
 
 **Request**:
 

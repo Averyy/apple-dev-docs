@@ -4,7 +4,7 @@
 
 Learn what the exception type tells you about why your app crashed.
 
-#### Overview
+## Overview
 
 The exception type in a crash report describes how the app terminated. It’s a key piece of information that guides how to investigate the source of the problem.
 

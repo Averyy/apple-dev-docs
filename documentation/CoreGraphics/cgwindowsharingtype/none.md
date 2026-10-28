@@ -18,7 +18,7 @@ case none
 kCGWindowSharingNone
 ```
 
-#### Discussion
+## Discussion
 
 The window is not shared.
 

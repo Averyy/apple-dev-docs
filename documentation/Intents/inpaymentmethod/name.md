@@ -32,7 +32,7 @@ var name: String? { get }
 @property (atomic, copy, readonly, nullable) NSString * name;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property in conjunction with the [`identificationHint`](./identificationhint.md) property to identify each payment method uniquely.
 

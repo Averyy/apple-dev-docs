@@ -27,7 +27,7 @@ let kSecUseAuthenticationUIAllow: CFString
 extern CFStringRef const kSecUseAuthenticationUIAllow;
 ```
 
-#### Discussion
+## Discussion
 
 The user may be prompted for authentication. This is the default value.
 

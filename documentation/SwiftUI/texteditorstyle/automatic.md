@@ -22,7 +22,7 @@ The default text editor style, based on the text editor’s context.
 
 Available when `Self` is `AutomaticTextEditorStyle`.
 
-#### Discussion
+## Discussion
 
 The default style represents the recommended style based on the current platform and the text editor’s context within the view hierarchy.
 

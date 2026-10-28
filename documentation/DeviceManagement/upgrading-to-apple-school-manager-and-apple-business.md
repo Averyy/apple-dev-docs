@@ -5,11 +5,11 @@
 
 Manage devices and content across an organization’s user base with a single destination.
 
-#### Overview
+## Overview
 
 [Apple School Manager](https://www.apple.com/education/) and [Apple Business](https://www.apple.com/business/it/) enable content managers to purchase content in the same place that they manage Apple Accounts and devices. You can automate device deployment, purchase and distribute content, and manage roles in your organization. Apple School Manager and Apple Business work seamlessly with your device management service to make it easy to enroll devices, deploy content, and delegate administrative privileges.
 
-#### Upgrade to support location-based tokens
+## Upgrade to support location-based tokens
 
 The purchases you make in VPP in Apple School Manager and Apple Business are location-based, making it easy for content managers to move licenses between locations as needed. Upgrading to location-based tokens is strongly recommended, but optional. Update your device management service to support location-based tokens as follows:
 

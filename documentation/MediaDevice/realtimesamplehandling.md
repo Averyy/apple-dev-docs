@@ -22,7 +22,7 @@ protocol RealtimeSampleHandling : MediaDeviceExtension
 
 - [Creating a media device extension](./creating-a-media-device-extension.md)
 
-#### Realtime Video Processing
+## Realtime Video Processing
 
 Use `ScreenCaptureKit` to receive system video samples, then use `VideoToolbox` for video sample encoding.
 
@@ -39,7 +39,7 @@ picker.active = true
 2. Create an `SCStream`. Call `addStreamOutput(_:type:sampleHandlerQueue:)`, and start with `startCapture()`.
 3. Receive and process real time screen samples via the `SCStreamOutput` protocol.
 
-#### Realtime Audio Processing
+## Realtime Audio Processing
 
 Use `AudioServerDriver` to receive system audio samples, then use `AudioToolbox` for audio sample encoding.
 

@@ -19,7 +19,7 @@ Creates a new question and appends it to the document.
 mutating func appendQuestion(pageID: AssignableDocument.Page.ID, rect: CGRect, maxScore: Double? = nil) -> AssignableDocument.Question.ID
 ```
 
-#### Return Value
+## Return Value
 
 The newly created question’s ID.
 

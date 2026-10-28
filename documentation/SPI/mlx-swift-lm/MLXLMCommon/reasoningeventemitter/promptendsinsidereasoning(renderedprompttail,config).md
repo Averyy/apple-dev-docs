@@ -17,7 +17,7 @@ Whether a rendered prompt ends *inside* an open reasoning block — used to seed
 static func promptEndsInsideReasoning(renderedPromptTail tail: String, config: ReasoningConfig) -> Bool
 ```
 
-#### Discussion
+## Discussion
 
 The headline families (Qwen3 with thinking enabled, DeepSeek-R1) prefill the opening delimiter into the assistant generation prompt, so the model’s first generated token is already reasoning content and it never emits an opening `<think>` — only the closing `</think>`. An emitter started `Outside` would misroute the entire thought block to `.response` and leak a bare `</think>`.
 

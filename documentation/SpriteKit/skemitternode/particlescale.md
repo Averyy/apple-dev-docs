@@ -25,7 +25,7 @@ var particleScale: CGFloat { get set }
 @property (nonatomic) CGFloat particleScale;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `1.0`.
 

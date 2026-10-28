@@ -14,7 +14,7 @@
 typedef struct __IOHIDValue IOHIDValueRef;
 ```
 
-#### Overview
+## Overview
 
 This is the type of a reference to the IOHIDValue.
 

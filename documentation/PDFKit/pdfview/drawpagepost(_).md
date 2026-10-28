@@ -19,7 +19,7 @@ func drawPagePost(_ page: PDFPage)
 - (void) drawPagePost:(PDFPage *) page;
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation of this method draws the text highlighting (if any) for the page. This method does not apply scaling or rotating to the current context to map to page space; instead, the context is in view-space coordinates (in which the origin is at the lower-left corner of the current PDF view).
 

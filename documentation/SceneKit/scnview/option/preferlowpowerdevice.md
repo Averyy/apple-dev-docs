@@ -25,7 +25,7 @@ static let preferLowPowerDevice: SCNView.Option
 extern SCNViewOption const SCNPreferLowPowerDeviceKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is an [`NSNumber`](../../../Foundation/nsnumber.md) object containing a Boolean value.
 

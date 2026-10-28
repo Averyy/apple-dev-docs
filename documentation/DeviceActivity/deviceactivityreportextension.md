@@ -17,7 +17,7 @@ An app extension that reports device activity data.
 protocol DeviceActivityReportExtension : AppExtension
 ```
 
-#### Overview
+## Overview
 
 Your extension is provided with the data that your app requests when it instantiates a `DeviceActivityReport`, which it uses to render a [`View`](../SwiftUI/view.md) representing the user’s device activity.
 

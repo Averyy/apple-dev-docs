@@ -24,7 +24,7 @@ let kIOSurfaceBytesPerElement: CFString
 extern CFStringRef const kIOSurfaceBytesPerElement;
 ```
 
-#### Discussion
+## Discussion
 
 Default to 1.
 

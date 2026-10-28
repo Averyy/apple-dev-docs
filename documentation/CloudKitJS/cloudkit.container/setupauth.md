@@ -15,11 +15,11 @@ Determines whether a user is signed in and presents an appropriate sign in or si
 Promise<CloudKit.UserIdentity, CloudKit.CKError> setUpAuth();
 ```
 
-#### Return Value
+## Return Value
 
 A `Promise` that resolves to a [`CloudKit.UserIdentity`](../cloudkit.useridentity.md) dictionary if an active CloudKit session was found; otherwise, `null`. If an error occurs, a `Promise` object that rejects to a [`CKError`](../cloudkit/ckerror.md) object.
 
-#### Discussion
+## Discussion
 
 Use the [`setUpAuth`](./setupauth.md) method to determine whether the user is authenticated and to display the appropriate button.
 

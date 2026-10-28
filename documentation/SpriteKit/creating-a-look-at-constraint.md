@@ -5,7 +5,7 @@
 
 Make a node automatically rotate itself based on the changing position of another node, by using orientation constraints.
 
-#### Overview
+## Overview
 
 A common use for orientation constraints is to make a *look-at constraint*. For example, you may create a look-at constraint to make a pair of eyes follow a moving object or to have a rocket point in the direction of its target.
 

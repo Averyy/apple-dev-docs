@@ -24,7 +24,7 @@ typedef void (^)(const struct AudioUnitRenderContext *) __attribute__((nonblocki
 
 - [Adding Audio Unit Auxiliary Real-Time Threads to Audio Workgroups](./adding-audio-unit-auxiliary-real-time-threads-to-audio-workgroups.md)
 
-#### Discussion
+## Discussion
 
 Provide this block if your Audio Unit creates its own auxiliary real-time rendering threads and operates them in parallel with the host app’s rendering thread. For a v3 Audio Unit, assign your block to the [`renderContextObserver`](./auaudiounit/rendercontextobserver.md) property of your [`AUAudioUnit`](./auaudiounit.md) object. For a v2 Audio Unit, assign this block to the [`kAudioUnitProperty_RenderContextObserver`](./kaudiounitproperty_rendercontextobserver.md) property of the audio unit.
 

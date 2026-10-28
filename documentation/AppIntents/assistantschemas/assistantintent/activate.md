@@ -15,7 +15,7 @@
 var activate: some AssistantSchemas.Intent { get }
 ```
 
-#### Overview
+## Overview
 
 To integrate your app’s functionality with Siri and Apple Intelligence, you use Swift macros that generate additional properties and add protocol conformance for your app intent implementation.
 

@@ -25,7 +25,7 @@ func cancelMigrationWithError(_ error: any Error)
 - (void) cancelMigrationWithError:(NSError *) error;
 ```
 
-#### Discussion
+## Discussion
 
 You can invoke this method from anywhere in the migration process to abort the migration. Calling this method causes [`migrateStore(from:sourceType:options:with:toDestinationURL:destinationType:destinationOptions:)`](./migratestore%28from,sourcetype,options,with,todestinationurl,destinationtype,destinationoptions%29.md) to abort the migration and return `error`—you should provide an appropriate error to indicate the reason for the cancellation.
 

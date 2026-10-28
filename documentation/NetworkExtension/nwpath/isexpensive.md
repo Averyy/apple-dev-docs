@@ -26,7 +26,7 @@ var isExpensive: Bool { get }
 @property (nonatomic, readonly, getter=isExpensive) BOOL expensive;
 ```
 
-#### Discussion
+## Discussion
 
 Returns YES is the path uses an interface that is considered expensive, such as when using a cellular data plan.
 

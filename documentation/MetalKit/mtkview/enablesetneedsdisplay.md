@@ -24,7 +24,7 @@ var enableSetNeedsDisplay: Bool { get set }
 @property (nonatomic) BOOL enableSetNeedsDisplay;
 ```
 
-#### Discussion
+## Discussion
 
 If this value and the value of [`isPaused`](./ispaused.md) are [`true`](../../Swift/true.md), the view behaves similarly to a [`UIView`](../../UIKit/uiview.md) object, responding to calls to [`setNeedsDisplay()`](../../UIKit/uiview/setneedsdisplay%28%29.md). In this case, the view’s internal draw loop is paused and updates are event-driven instead.
 

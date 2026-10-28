@@ -20,7 +20,7 @@ Returns the longest common ancestor path of this path and `other`.
 func commonPrefix(with other: USDLayer.Path) -> USDLayer.Path
 ```
 
-#### Return Value
+## Return Value
 
 The longest path that is a prefix of both.
 

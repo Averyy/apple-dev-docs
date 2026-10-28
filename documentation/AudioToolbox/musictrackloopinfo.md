@@ -24,7 +24,7 @@ struct MusicTrackLoopInfo
 typedef struct MusicTrackLoopInfo { ... } MusicTrackLoopInfo;
 ```
 
-#### Overview
+## Overview
 
 This data type is used for the value of the [`kSequenceTrackProperty_LoopInfo`](./ksequencetrackproperty_loopinfo.md) property.
 

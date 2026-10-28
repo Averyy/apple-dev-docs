@@ -21,7 +21,7 @@ A thread-safe type whose values can be shared across arbitrary concurrent contex
 protocol Sendable : SendableMetatype
 ```
 
-#### Overview
+## Overview
 
 Values of the type may have no shared mutable state, or they may protect that state with a lock or by forcing it to only be accessed from a specific actor.
 
@@ -38,7 +38,7 @@ To declare conformance to `Sendable` without any compiler enforcement, write `@u
 
 For information about the language-level concurrency model that `Task` is part of, see [Concurrency](https://docs.swift.org/swift-book/LanguageGuide/Concurrency.html) in [The Swift Programming Language](https://docs.swift.org/swift-book/).
 
-##### Sendable Structures and Enumerations
+### Sendable Structures and Enumerations
 
 To satisfy the requirements of the `Sendable` protocol, an enumeration or structure must have only sendable members and associated values. In some cases, structures and enumerations that satisfy the requirements implicitly conform to `Sendable`:
 
@@ -49,11 +49,11 @@ Otherwise, you need to declare conformance to `Sendable` explicitly.
 
 Structures that have nonsendable stored properties and enumerations that have nonsendable associated values can be marked as `@unchecked Sendable`, disabling compile-time correctness checks, after you manually verify that they satisfy the `Sendable` protocol’s semantic requirements.
 
-##### Sendable Actors
+### Sendable Actors
 
 All actor types implicitly conform to `Sendable` because actors ensure that all access to their mutable state is performed sequentially.
 
-##### Sendable Classes
+### Sendable Classes
 
 To satisfy the requirements of the `Sendable` protocol, a class must:
 
@@ -65,7 +65,7 @@ Classes marked with `@MainActor` are implicitly sendable, because the main actor
 
 Classes that don’t meet the requirements above can be marked as `@unchecked Sendable`, disabling compile-time correctness checks, after you manually verify that they satisfy the `Sendable` protocol’s semantic requirements.
 
-##### Sendable Functions and Closures
+### Sendable Functions and Closures
 
 Instead of conforming to the `Sendable` protocol, you mark sendable functions and closures with the `@Sendable` attribute. Any values that the function or closure captures must be sendable. In addition, sendable closures must use only by-value captures, and the captured values must be of a sendable type.
 
@@ -83,11 +83,11 @@ let sendableClosure = { @Sendable (number: Int) -> String in
 }
 ```
 
-##### Sendable Tuples
+### Sendable Tuples
 
 To satisfy the requirements of the `Sendable` protocol, all of the elements of the tuple must be sendable. Tuples that satisfy the requirements implicitly conform to `Sendable`.
 
-##### Sendable Metatypes
+### Sendable Metatypes
 
 Metatypes such as `Int.Type` implicitly conform to the `Sendable` protocol.
 

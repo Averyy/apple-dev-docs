@@ -15,11 +15,11 @@ Specifies the input safety offset of the device.
 kern_return_t SetInputSafetyOffset(uint32_t in_safety_offset);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. For a list of error codes, see [Error Codes](../../DriverKit/error-codes.md).
 
-#### Discussion
+## Discussion
 
 The safety offset indicates the number for frames behind the current hardware position that’s safe to perform input I/O.
 

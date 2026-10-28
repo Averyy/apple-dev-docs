@@ -5,7 +5,7 @@
 
 Store cylindrical panoramas with horizontal orientation.
 
-#### Overview
+## Overview
 
 The primary change to cylindrical panoramas in QuickTime VR 2.2 is that the panorama, as stored in the image track of the movie, can be oriented horizontally. This means that the panorama does not need to be rotated 90 degrees counterclockwise, as required previously.
 

@@ -21,7 +21,7 @@ The minimum acceptable confidence level for detected rectangles.
 var minimumConfidence: Float
 ```
 
-#### Discussion
+## Discussion
 
 Vision won’t return rectangles with a confidence score lower than the specified minimum. The property’s default value is `0.0`, but you can set it to any value in the range `[0.0, 1.0]`. A value of `0.0` represents no confidence, while `1.0` represents full confidence.
 

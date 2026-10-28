@@ -25,11 +25,11 @@ convenience init(topRadius: CGFloat, bottomRadius: CGFloat, height: CGFloat)
 + (instancetype) coneWithTopRadius:(CGFloat) topRadius bottomRadius:(CGFloat) bottomRadius height:(CGFloat) height;
 ```
 
-#### Return Value
+## Return Value
 
 A new cone geometry.
 
-#### Discussion
+## Discussion
 
 The cone is centered in its local coordinate system. For example, if you create a cone whose bottom radius is `5.0`, top radius is `0.0`, and height is `10.0`, its apex is at the point `{0, 5.0, 0}`, and its base lies in the plane whose y-coordinate is `-5.0`, extending from `-5.0` to `5.0` along both the x- and z-axes.
 

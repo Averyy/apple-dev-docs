@@ -18,7 +18,7 @@ Installs standard gestures onto the given entity, configured to be recognized si
 @MainActor @preconcurrency func installGestures(_ gestures: ARView.EntityGestures = .all, for entity: any HasCollision) -> [any EntityGestureRecognizer]
 ```
 
-#### Return Value
+## Return Value
 
 The set of gesture recognizers created to handle the requested gestures.
 

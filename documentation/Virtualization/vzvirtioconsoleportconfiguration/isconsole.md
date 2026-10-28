@@ -19,7 +19,7 @@ var isConsole: Bool { get set }
 @property BOOL isConsole;
 ```
 
-#### Discussion
+## Discussion
 
 The framework may mark the console port for use as the system console. The default is `false`.
 

@@ -25,7 +25,7 @@ var allowedUnits: NSCalendar.Unit { get set }
 @property NSCalendarUnit allowedUnits;
 ```
 
-#### Discussion
+## Discussion
 
 The allowed calendar units are:
 

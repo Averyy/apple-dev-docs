@@ -25,9 +25,9 @@ object StatusSoftwareUpdateInstallState
 - [Phases of software update enforcement](./phases-of-software-update-enforcement.md)
 - [Deploying software updates using declarative management](./deploying-software-updates-using-declarative-management.md)
 
-#### Discussion
+## Discussion
 
-##### Status item availability
+### Status item availability
 
 |  |  |
 | --- | --- |
@@ -38,7 +38,7 @@ object StatusSoftwareUpdateInstallState
 | Allowed in system scope | iOS, macOS, Shared iPad, tvOS, visionOS |
 | Allowed in user scope | N/A |
 
-##### Status item example
+### Status item example
 
 ```json
 {

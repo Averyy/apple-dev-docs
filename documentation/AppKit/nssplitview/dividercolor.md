@@ -20,7 +20,7 @@ var dividerColor: NSColor { get }
 @property (copy, readonly) NSColor * dividerColor;
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation of this method returns [`clear`](../nscolor/clear.md) when the split view’s [`dividerStyle`](./dividerstyle-swift.property.md) is [`NSSplitView.DividerStyle.thick`](./dividerstyle-swift.enum/thick.md), or when [`dividerStyle`](./dividerstyle-swift.property.md) is [`NSSplitView.DividerStyle.paneSplitter`](./dividerstyle-swift.enum/panesplitter.md) and the split view is in a textured window. The system draws all other thin dividers with a color that provides appropriate contrast between two white panes.
 

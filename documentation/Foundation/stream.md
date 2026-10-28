@@ -29,7 +29,7 @@ class Stream
 
 - [Uploading streams of data](./uploading-streams-of-data.md)
 
-#### Overview
+## Overview
 
 This class’s interface is common to all Cocoa stream classes, including its concrete subclasses [`InputStream`](./inputstream.md) and [`OutputStream`](./outputstream.md).
 
@@ -37,11 +37,11 @@ This class’s interface is common to all Cocoa stream classes, including its co
 
 By default, [`Stream`](./stream.md) instances that aren’t file-based are non-seekable, one-way streams (although custom seekable subclasses are possible). After you provide or consume data, you can’t retrieve the data from the stream.
 
-##### Subclassing Notes
+### Subclassing Notes
 
 [`Stream`](./stream.md) is an abstract class, incapable of instantiation and intended for you to subclass it. It publishes a programmatic interface that all subclasses must adopt and provide implementations for. The two Apple-provided concrete subclasses of [`Stream`](./stream.md), [`InputStream`](./inputstream.md) and [`OutputStream`](./outputstream.md), are suitable for most purposes. However, there might be situations when you want a peer subclass to [`InputStream`](./inputstream.md) and [`OutputStream`](./outputstream.md). For example, you might want a class that implements a full-duplex (two-way) stream, or a class whose instances are capable of seeking through a stream.
 
-###### Methods to Override
+#### Methods to Override
 
 All subclasses must fully implement the following methods:
 

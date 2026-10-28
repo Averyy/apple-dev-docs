@@ -21,7 +21,7 @@ Creates an index in the given string that corresponds exactly to the specified p
 init?<S>(_ sourcePosition: String.Index, within target: S) where S : StringProtocol
 ```
 
-#### Discussion
+## Discussion
 
 If the index passed as `sourcePosition` represents the start of an extended grapheme cluster—the element type of a string—then the initializer succeeds.
 

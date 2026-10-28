@@ -21,11 +21,11 @@ Creates a new color with specified HDR content headroom.
 func headroom(_ headroom: Double?) -> Color
 ```
 
-#### Return Value
+## Return Value
 
 A new color with the specified content headroom.
 
-#### Discussion
+## Discussion
 
 High Dynamic Range colors (those with RGB components outside the standard [0, 1] range) should be annotated with their headroom to ensure that they are displayed correctly. Knowing content headroom allows the rendering system to automatically increase display headroom when the color is displayed and to tone map the color when the available display headroom is insufficient to render the color as intended.
 

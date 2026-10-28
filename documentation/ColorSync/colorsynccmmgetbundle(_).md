@@ -20,7 +20,7 @@ func ColorSyncCMMGetBundle(_: ColorSyncCMM!) -> Unmanaged<CFBundle>?
 extern CFBundleRefColorSyncCMMGetBundle(ColorSyncCMMRef );
 ```
 
-#### Return Value
+## Return Value
 
 The `CFBundleRef` for the CMM, or `NULL` for the built-in Apple CMM.
 

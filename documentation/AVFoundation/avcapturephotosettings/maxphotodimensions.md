@@ -23,7 +23,7 @@ var maxPhotoDimensions: CMVideoDimensions { get set }
 @property (nonatomic) CMVideoDimensions maxPhotoDimensions;
 ```
 
-#### Discussion
+## Discussion
 
 Setting a value specifies a maximum for the captured image. The dimensions must match one of the dimensions returned by capture device’s active format’s [`supportedMaxPhotoDimensions`](../avcapturedevice/format/supportedmaxphotodimensions.md), and be equal to or smaller than the value of the photo outputs [`maxPhotoDimensions`](../avcapturephotooutput/maxphotodimensions.md).
 

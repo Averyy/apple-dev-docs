@@ -19,7 +19,7 @@ var isFloating: Bool { get set }
 @property (getter=isFloating) BOOL floating;
 ```
 
-#### Discussion
+## Discussion
 
 Floating is a temporary attribute that is set when a particular group row is actually floating above other rows. The state may change dynamically based on the position of the group row. Drawing may be different for rows that are currently ‘floating’.
 

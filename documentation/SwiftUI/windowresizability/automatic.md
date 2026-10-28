@@ -19,7 +19,7 @@ The automatic window resizability.
 static var automatic: WindowResizability { get set }
 ```
 
-#### Discussion
+## Discussion
 
 When you use automatic resizability, SwiftUI applies a resizing strategy that’s appropriate for the scene type:
 

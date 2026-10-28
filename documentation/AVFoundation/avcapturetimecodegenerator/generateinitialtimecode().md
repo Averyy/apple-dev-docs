@@ -23,7 +23,7 @@ func generateInitialTimecode() -> AVCaptureTimecode
 - (AVCaptureTimecode) generateInitialTimecode;
 ```
 
-#### Return Value
+## Return Value
 
 A populated [`AVCaptureTimecode`](../avcapturetimecode.md) structure.
 

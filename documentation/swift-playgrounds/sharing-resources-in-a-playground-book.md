@@ -5,11 +5,11 @@
 
 Reuse common assets throughout a book to reduce its size.
 
-#### Overview
+## Overview
 
 Where you place an asset in a book determines its visibility to other parts of the book. If multiple pages or chapters require access to a shared resource, place those resources closer to the root of your book’s directory structure. For example, the images in a page’s PublicResources directory aren’t visible to the rest of the book.
 
-##### Share Resources
+### Share Resources
 
 How you share a resource depends largely on where you intend to use that resource:
 
@@ -19,7 +19,7 @@ How you share a resource depends largely on where you intend to use that resourc
 
 Public resources are visible to and usable by learners. For example, if you want learners to select one of several images in their code, place the resource in the PublicResources directory; otherwise, place it in the PrivateResources directory.
 
-##### Share Localized Resources
+### Share Localized Resources
 
 If you support multiple localizations of content in your book, share localized resources by placing them in localization project directories within either the PublicResources or PrivateResources directory. Name localization project directories according to the language ID of the localization, followed by the `.lproj` suffix. For example, a book localized to English and French might have shared chapter resources in two locations:
 

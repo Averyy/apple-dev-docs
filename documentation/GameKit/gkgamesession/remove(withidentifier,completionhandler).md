@@ -30,7 +30,7 @@ class func remove(withIdentifier identifier: String) async throws
 + (void) removeSessionWithIdentifier:(NSString *) identifier completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 After the user has finished a game or decides to abandon a game, you must use this function to remove the game session from iCloud. Game sessions are not removed from iCloud automatically.
 

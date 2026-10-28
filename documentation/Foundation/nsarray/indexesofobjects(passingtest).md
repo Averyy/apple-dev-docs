@@ -25,7 +25,7 @@ func indexesOfObjects(passingTest predicate: (Any, Int, UnsafeMutablePointer<Obj
 - (NSIndexSet *) indexesOfObjectsPassingTest:(BOOL (^)(ObjectType obj, NSUInteger idx, BOOL *stop)) predicate;
 ```
 
-#### Return Value
+## Return Value
 
 The indexes whose corresponding values in the array pass the test specified by `predicate`. If no objects in the array pass the test, returns an empty index set.
 

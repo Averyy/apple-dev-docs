@@ -19,11 +19,11 @@ func matchesUUID16(_ uuid16: BluetoothSDPUUID16) -> Bool
 - (BOOL) matchesUUID16:(BluetoothSDPUUID16) uuid16;
 ```
 
-#### Return Value
+## Return Value
 
 Returns TRUE if the UUID16 is present in the service.
 
-#### Discussion
+## Discussion
 
 NOTE: This method is only available in macOS 10.7 or later.
 

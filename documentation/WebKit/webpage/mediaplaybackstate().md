@@ -20,7 +20,7 @@ Determine the playback status of media in the page.
 final func mediaPlaybackState() async -> WKMediaPlaybackState
 ```
 
-#### Return Value
+## Return Value
 
 The current state of media playback within the page.
 

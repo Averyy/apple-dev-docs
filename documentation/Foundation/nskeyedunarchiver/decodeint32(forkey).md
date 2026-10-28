@@ -25,11 +25,11 @@ func decodeInt32(forKey key: String) -> Int32
 - (int32_t) decodeInt32ForKey:(NSString *) key;
 ```
 
-#### Return Value
+## Return Value
 
 The 32-bit integer value associated with the key `key`. Returns `0` if `key` does not exist.
 
-#### Discussion
+## Discussion
 
 If the archived value was encoded with a different size but is still an integer, the type is coerced. If the archived value is too large to fit into a 32-bit integer, the method raises an `NSRangeException`.
 

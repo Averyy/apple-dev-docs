@@ -29,7 +29,7 @@ var modelDescription: MLModelDescription { get async throws }
 - (void) modelDescriptionWithCompletionHandler:(void (^)(MLModelDescription *modelDescription, NSError *error)) handler;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to get the description of the model such as the feature descriptions, the model author, and other metadata.
 

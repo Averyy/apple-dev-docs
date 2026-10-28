@@ -15,11 +15,11 @@ A deprecated cost-per-acquisition goal value. Use `bidStrategy` with `MAX_CONVER
 object AdGroup.CpaCap
 ```
 
-#### Discussion
+## Discussion
 
 Existing ad groups may still carry a `cpaCap` value, but new bid strategy configurations should express the same cost target through `bidStrategy`’s `MAX_CONVERSIONS` goal instead.
 
-##### Example
+### Example
 
 ```json
 {

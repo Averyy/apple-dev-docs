@@ -32,7 +32,7 @@ var amount: INCurrencyAmount? { get }
 @property (atomic, copy, readonly, nullable) INCurrencyAmount * amount;
 ```
 
-#### Discussion
+## Discussion
 
 Upon receiving an intent, this property contains the monetary value (if any) specified by the user. If the amount is missing or `0`, use the [`amountType`](./amounttype.md) property to infer the amount to pay. When reporting amounts back to Siri using this class, always specify a value for this property.
 

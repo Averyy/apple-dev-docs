@@ -21,7 +21,7 @@ A metric identifier that uses this dimension’s name.
 var metric: Metric { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use this to reference the dimension’s metric in [`MetricsAggregator`](../metricsaggregator.md) without repeating the name as a raw string:
 

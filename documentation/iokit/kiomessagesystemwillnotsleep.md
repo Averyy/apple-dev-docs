@@ -17,7 +17,7 @@
 #define kIOMessageSystemWillNotSleep
 ```
 
-#### Discussion
+## Discussion
 
 Announces that the system has retracted a previous attempt to sleep; it follows `kIOMessageCanSystemSleep`. Delivered to in-kernel IOKit drivers via `kIOGeneralInterest` and `kIOPriorityPowerStateInterest`. Delivered to user clients of `IORegisterForSystemPower`.
 

@@ -21,7 +21,7 @@ string BrandsReportingAdGroup.PricingModel
 - `CPM`: Cost-per-thousand-impressions. Pairs with `billingEvent: IMPRESSIONS`.
 - `CPT`: Cost-per-tap. Pairs with `billingEvent: TAPS`.
 
-#### Discussion
+## Discussion
 
 The `pricingModel` field reflects the ad group’s charge unit at the time the system generated the report row. See [`ReportingPricingModel`](../reportingpricingmodel.md) for additional context.
 

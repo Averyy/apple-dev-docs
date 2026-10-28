@@ -15,11 +15,11 @@ Creates a color object from the specified Core Image color.
 init(CIColor color: CIColor)
 ```
 
-#### Return Value
+## Return Value
 
 The `NSColor` object corresponding to the specified Core Image color.
 
-#### Discussion
+## Discussion
 
 The method raises if the color space and components associated with `color` are `nil` or invalid.
 

@@ -21,11 +21,11 @@ Creates and returns an empty scene.
 + (instancetype) scene;
 ```
 
-#### Return Value
+## Return Value
 
 A new, empty scene object.
 
-#### Discussion
+## Discussion
 
 An empty scene contains only a root [`SCNNode`](../scnnode.md) object with no contents. To populate the scene, add children to the root node.
 

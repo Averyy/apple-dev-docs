@@ -21,7 +21,7 @@ A type that represents an extended grapheme cluster literal.
 typealias ExtendedGraphemeClusterLiteralType = StaticString
 ```
 
-#### Discussion
+## Discussion
 
 Valid types for `ExtendedGraphemeClusterLiteralType` are `Character`, `String`, and `StaticString`.
 

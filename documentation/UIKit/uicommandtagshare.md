@@ -23,7 +23,7 @@ let UICommandTagShare: String
 extern NSString * const UICommandTagShare;
 ```
 
-#### Discussion
+## Discussion
 
 To create a Share menu, add [`UICommandTagShare`](./uicommandtagshare.md) to the `propertyList` of a [`UICommand`](./uicommand.md) or [`UIKeyCommand`](./uikeycommand.md) object.
 

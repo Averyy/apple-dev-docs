@@ -19,7 +19,7 @@ A person entered a soft pause.
 case softPause
 ```
 
-#### Discussion
+## Discussion
 
 A comma (,) indicates a soft pause. When a person enters a soft pause, the system waits a few seconds before it dials additional digits.
 

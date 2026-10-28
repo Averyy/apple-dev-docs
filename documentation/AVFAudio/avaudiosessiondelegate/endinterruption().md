@@ -22,7 +22,7 @@ optional func endInterruption()
 - (void) endInterruption;
 ```
 
-#### Discussion
+## Discussion
 
 The [`endInterruption(withFlags:)`](./endinterruption%28withflags%29.md) method provides you with more information upon interruption end than this method does. Apple recommends that you use [`endInterruption(withFlags:)`](./endinterruption%28withflags%29.md) instead of this method.
 

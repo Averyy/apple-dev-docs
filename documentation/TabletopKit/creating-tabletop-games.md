@@ -10,13 +10,13 @@ Develop a spatial board game where multiple players interact with pieces on a ta
 - visionOS 2.2+
 - Xcode 16.2+
 
-#### Overview
+## Overview
 
 You can run this sample code in Simulator to see the game layout, but to experience multiplayer, you need two or more Apple Vision Pro devices. This sample uses Group Activities for multiplayer, which doesn’t support Simulator.
 
 > **Note**: This sample code project is associated with WWDC24 session 10091: [Meet TabletopKit for visionOS](https://developer.apple.com/wwdc24/10091/).
 
-#### Configure the sample code project
+## Configure the sample code project
 
 To configure the sample code project, do the following in Xcode:
 
@@ -25,7 +25,7 @@ To configure the sample code project, do the following in Xcode:
 3. Optionally, enter a unique identifier in the Bundle Identifier text field. Otherwise, use the existing bundle ID that ends in your team ID.
 4. For multiplayer, verify that the target contains the Group Activities capability below Signing.
 
-#### Run the sample code in Simulator
+## Run the sample code in Simulator
 
 If you don’t have an Apple Vision Pro device, you can run the sample code in Simulator and interact with some equipment.
 
@@ -34,7 +34,7 @@ If you don’t have an Apple Vision Pro device, you can run the sample code in S
 
 For example, you can drag pawns to various spots on the conveyor belt, pick up cards and place them in front of you, and toss the die.
 
-#### Start a multiplayer game on devices
+## Start a multiplayer game on devices
 
 To experience the game with multiple players, run the sample on multiple Apple Vision Pro devices using the same developer Team ID and bundle ID for each player.
 

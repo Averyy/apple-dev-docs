@@ -21,7 +21,7 @@ A request that produces a matte image for a person it finds in the input image.
 final class GeneratePersonSegmentationRequest
 ```
 
-#### Overview
+## Overview
 
 Perform this request to detect and generate an image mask for a person in an image. The request returns the resulting image mask in an instance of [`PixelBufferObservation`](./pixelbufferobservation.md).
 

@@ -24,11 +24,11 @@ func deinitialize<Element>() -> UnsafeMutableRawBufferPointer where Base == Unsa
 
 Available when `Base` conforms to `Collection`.
 
-#### Return Value
+## Return Value
 
 A raw buffer to the same range of memory as this buffer. The range of memory is still bound to `Element`.
 
-#### Discussion
+## Discussion
 
 The region of memory underlying this buffer slice must be fully initialized. After calling `deinitialize(count:)`, the memory is uninitialized, but still bound to the `Element` type.
 

@@ -15,7 +15,7 @@ The offset, in CSS pixels, of a callout from the top center of the element.
 calloutOffset?: DOMPoint;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `DOMPoint(0, 1)`, placing the callout bubble is slightly (1 pixel) above the top-center point of the annotation element.
 

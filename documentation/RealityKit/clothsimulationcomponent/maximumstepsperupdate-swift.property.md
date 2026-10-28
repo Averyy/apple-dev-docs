@@ -17,7 +17,7 @@ The maximum number of time steps that the simulation can advance each update.
 var maximumStepsPerUpdate: ClothSimulationComponent.MaximumStepsPerUpdate
 ```
 
-#### Discussion
+## Discussion
 
 A higher number of time steps per update is more expensive in terms of power and performance. However, a lower number restricts the simulation’s ability to keep up with the [`targetClock`](./targetclock.md).
 

@@ -22,7 +22,7 @@ var calendar: Calendar! { get set }
 @property (nonatomic, copy, null_resettable) NSCalendar * calendar;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property corresponds to the user’s current calendar as configured in Settings. This is equivalent to the value returned by calling the [`NSCalendar`](../../Foundation/nscalendar.md) class method [`current`](../../Foundation/nscalendar/current.md). Setting this property to `nil` is equivalent to setting it to its default value.
 

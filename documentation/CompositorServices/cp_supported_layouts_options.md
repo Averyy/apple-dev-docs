@@ -16,7 +16,7 @@ The options you can pass to functions that relate to rendering capabilities and 
 enum cp_supported_layouts_options : uint32_t;
 ```
 
-#### Overview
+## Overview
 
 You can pass the enumeration’s cases to functions, including [`cp_layer_renderer_capabilities_supported_layout`](./cp_layer_renderer_capabilities_supported_layout.md) and [`cp_layer_renderer_capabilities_supported_layouts_count`](./cp_layer_renderer_capabilities_supported_layouts_count.md).
 

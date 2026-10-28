@@ -21,7 +21,7 @@ A style that describes the corner of a rectangular shape.
 struct Style
 ```
 
-#### Overview
+## Overview
 
 A corner can be square, rounded with a fixed-radius curve, or rounded with a curve that’s concentric to the container shape. For more information on how to create a shape with configurable corner styles, see [`ConcentricRectangle`](../../concentricrectangle.md).
 

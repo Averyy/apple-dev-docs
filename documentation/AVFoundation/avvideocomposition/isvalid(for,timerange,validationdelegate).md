@@ -25,11 +25,11 @@ func isValid(for asset: AVAsset?, timeRange: CMTimeRange, validationDelegate: (a
 - (BOOL) isValidForAsset:(AVAsset *) asset timeRange:(CMTimeRange) timeRange validationDelegate:(id<AVVideoCompositionValidationHandling>) validationDelegate;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the time ranges of the composition’s instructions conform to validation requirements, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Apple discourages using this method in iOS 16, tvOS 16, and macOS 13 or later. Use [`determineValidity(for:timeRange:validationDelegate:completionHandler:)`](./determinevalidity%28for,timerange,validationdelegate,completionhandler%29.md) instead.
 

@@ -21,7 +21,7 @@ func split(axis: Int = 0, stream: StreamOrDevice = .default) -> (MLXArray, MLXAr
 
 - [Converting From Python](../converting-python.md)
 
-#### Discussion
+## Discussion
 
 Splits the array into 2 pieces along a given axis and returns an tuple of `MLXArray`:
 
@@ -31,7 +31,7 @@ let array = MLXArray(0 ..< 12, (4, 3))
 let (a, b) = array.split()
 ```
 
-##### See Also
+### See Also
 
 - [Shapes](../shapes.md)
 - [`split(parts:axis:stream:)`](./split%28parts,axis,stream%29.md)

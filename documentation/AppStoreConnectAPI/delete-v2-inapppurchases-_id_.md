@@ -9,7 +9,7 @@ Delete a specific In-App Purchase from your app.
 **Availability**:
 - App Store Connect API 2.0+
 
-#### Discussion
+## Discussion
 
 > **Note**:  Changes that you make to product metadata with the App Store Connect API can take up to 1 hour to appear in the sandbox environment.
 

@@ -23,7 +23,7 @@ static func .== (a: SIMD3<Scalar>, b: Scalar) -> SIMDMask<SIMD3<Scalar>.MaskStor
 
 Available when `Scalar` is `Float`.
 
-#### Discussion
+## Discussion
 
 Each lane of the result is true if that lane of a is equal to b, and false otherwise.
 

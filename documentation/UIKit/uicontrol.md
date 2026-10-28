@@ -29,7 +29,7 @@ class UIControl
 - [Displaying and managing views with a view controller](./displaying-and-managing-views-with-a-view-controller.md)
 - [About app development with UIKit](./about-app-development-with-uikit.md)
 
-#### Overview
+## Overview
 
 Controls implement elements such as buttons and sliders, which your app can use to facilitate navigation, gather user input, or manipulate content. Controls use the target-action mechanism to report user interactions to your app.
 
@@ -39,7 +39,7 @@ You don’t create instances of this class directly. The [`UIControl`](./uicontr
 
 A control’s state determines its appearance and its ability to support user interactions. Controls can be in one of several states, which the [`UIControl.State`](./uicontrol/state-swift.struct.md) type defines. You can change the state of a control programmatically according to your app’s needs. For example, you might disable a control to prevent the user from interacting with it. User interactions can also change the state of a control.
 
-##### Respond to user interaction
+### Respond to user interaction
 
 The target-action mechanism simplifies the code that you write to use controls in your app. Instead of writing code to track touch events, you write action methods to respond to control-specific events. For example, you might write an action method that responds to changes in the value of a slider. The control handles all the work of tracking incoming touch events and determining when to call your methods.
 
@@ -67,7 +67,7 @@ The system calls action methods when the user interacts with the control in spec
 
 When a control-specific event occurs, the control calls any associated action methods immediately. The current [`UIApplication`](./uiapplication.md) object dispatches action methods and finds an appropriate object to handle the message, following the responder chain, if necessary. For more information about responders and the responder chain, see [Event Handling Guide for UIKit Apps](https://developer.apple.com/library/archive/documentation/EventHandling/Conceptual/EventHandlingiPhoneOS/index.html#//apple_ref/doc/uid/TP40009541).
 
-##### Configure control attributes in Interface Builder
+### Configure control attributes in Interface Builder
 
 The following table lists the attributes for instances of the [`UIControl`](./uicontrol.md) class.
 
@@ -76,11 +76,11 @@ The following table lists the attributes for instances of the [`UIControl`](./ui
 | Alignment | The horizontal and vertical alignment of a control’s content. For controls that contain text or images, such as buttons and text fields, use these attributes to configure the position of that content within the control’s bounds. ![](https://developer.apple.com/tutorials/images/com.apple.uikit/spacer.png) These alignment options apply to the content of a control and not to the control itself. For information about how to align controls with respect to other controls and views, see [Auto Layout Guide](https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/AutolayoutPG/index.html#//apple_ref/doc/uid/TP40010853). |
 | Content | The initial state of the control. Use the checkboxes to configure whether the control is in an enabled, selected, or highlighted state initially. |
 
-##### Support localization
+### Support localization
 
 Because [`UIControl`](./uicontrol.md) is an abstract class, you don’t internationalize it specifically. However, you do internationalize the content of subclasses like [`UIButton`](./uibutton.md). For information about internationalizing a specific control, see the reference for that control.
 
-##### Make controls accessible
+### Make controls accessible
 
 Controls are accessible by default. To be useful, an accessible user interface element must provide accurate and helpful information about its screen position, name, behavior, value, and type. This is the information VoiceOver speaks to users. Users who are blind or have low vision can rely on VoiceOver to help them use their devices.
 
@@ -96,7 +96,7 @@ The `UIControl` class provides default content for the value and frame attribute
 
 For more information about accessibility attributes, see [Accessibility Programming Guide for iOS](https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/iPhoneAccessibility/Introduction/Introduction.html#//apple_ref/doc/uid/TP40008785).
 
-##### Subclassing notes
+### Subclassing notes
 
 Subclassing [`UIControl`](./uicontrol.md) gives you access to the built-in target-action mechanism and simplified event-handling support. You can subclass existing controls and modify their behavior in one of two ways:
 

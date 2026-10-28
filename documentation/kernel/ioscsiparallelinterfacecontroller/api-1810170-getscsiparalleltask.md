@@ -12,11 +12,11 @@ SCSIParallelTaskIdentifier GetSCSIParallelTask (
  boolblockForCommand );
 ```
 
-#### Return Value
+## Return Value
 
 If there is a SCSI Parallel Task available, a reference to it will be returned.
 
-#### Overview
+## Overview
 
 Get a SCSIParallelTask from the controller so that a request can be issued to the HBA driver.
 

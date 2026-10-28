@@ -15,11 +15,11 @@ The payload that configures an Exchange Web Services accounts.
 object ExchangeWebServices
 ```
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.ews.account` as the payload type.
 
-##### Profile availability
+### Profile availability
 
 |  |  |
 | --- | --- |
@@ -31,7 +31,7 @@ Specify `com.apple.ews.account` as the payload type.
 | Allowed in user enrollment | macOS |
 | Allow multiple payloads | macOS |
 
-##### Profile example
+### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>

@@ -24,7 +24,7 @@ Creates a new broadcasting access reporter.
 init(upstreams: [any AccessReporter])
 ```
 
-#### Discussion
+## Discussion
 
 > **Precondition**: `upstreams` must not be empty.
 

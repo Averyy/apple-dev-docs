@@ -19,7 +19,7 @@ func trackKnob(with event: NSEvent)
 - (void) trackKnob:(NSEvent *) event;
 ```
 
-#### Discussion
+## Discussion
 
 This method is invoked automatically when the receiver receives `theEvent` mouse-down event in the knob; you should not invoke it directly.
 

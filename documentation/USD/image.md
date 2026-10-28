@@ -5,17 +5,17 @@
 
 An image file for which the runtime should search.
 
-#### Overview
+## Overview
 
 Assign this property a path to a PNG or JPEG file.
 
-##### Declaration
+### Declaration
 
 ```other
 uniform asset image
 ```
 
-##### Define a reference image
+### Define a reference image
 
 The following [Preliminary_ReferenceImage](./preliminary-referenceimage.md) assigns this property a file named `image.png`.
 

@@ -22,7 +22,7 @@ class var arrow: NSCursor { get }
 @property (class, strong, readonly) NSCursor * arrowCursor;
 ```
 
-#### Return Value
+## Return Value
 
 The default cursor, a slanted arrow with its hot spot at the tip. The arrow cursor is the one you’re used to seeing over buttons, scrollers, and many other objects in the window system.
 

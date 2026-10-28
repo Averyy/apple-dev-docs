@@ -21,11 +21,11 @@ Duplicates an entity to create a new entity.
 @preconcurrency func clone(recursive: Bool) -> Self
 ```
 
-#### Return Value
+## Return Value
 
 The duplicate.
 
-#### Discussion
+## Discussion
 
 All component data is cloned automatically. If you clone an entity that stores custom data that’s not part of a component, override the [`didClone(from:)`](./didclone%28from%29.md) method to copy that data manually.
 

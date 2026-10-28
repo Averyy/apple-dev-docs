@@ -17,11 +17,11 @@ func AudioHardwareCreateProcessTap(_ inDescription: CATapDescription!, _ outTapI
 extern OSStatus AudioHardwareCreateProcessTap(CATapDescription *inDescription, AudioObjectID *outTapID);
 ```
 
-#### Return Value
+## Return Value
 
 An OSStatus indicating success or failure.
 
-#### Discussion
+## Discussion
 
 This routine creates a new Tap using the provided description.
 

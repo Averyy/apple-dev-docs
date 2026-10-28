@@ -21,11 +21,11 @@ Creates a new dispatch block on the heap using an existing block and the given f
 extern dispatch_block_t dispatch_block_create(dispatch_block_flags_t flags, dispatch_block_t block);
 ```
 
-#### Return Value
+## Return Value
 
 The newly created dispatch block, or `NULL`.
 
-#### Discussion
+## Discussion
 
 The provided block is copied to the heap and retained by the newly created dispatch block.
 

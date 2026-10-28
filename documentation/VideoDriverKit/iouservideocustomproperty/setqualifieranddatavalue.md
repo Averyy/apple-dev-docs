@@ -15,7 +15,7 @@ Sets the custom property’s data value.
 kern_return_t SetQualifierAndDataValue(OSObject *in_qualifier_data, OSObject *in_data);
 ```
 
-#### Return Value
+## Return Value
 
 `kIOReturnSuccess` on success.
 

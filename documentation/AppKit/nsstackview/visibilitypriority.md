@@ -19,7 +19,7 @@ struct VisibilityPriority
 typedef float NSStackViewVisibilityPriority;
 ```
 
-#### Discussion
+## Discussion
 
 For an explanation of how visibility priority interacts with clipping resistance to determine the detachment behavior of a stack view’s views, see the discussions for the [`setClippingResistancePriority(_:for:)`](./setclippingresistancepriority%28_,for%29.md) and [`setVisibilityPriority(_:for:)`](./setvisibilitypriority%28_,for%29.md) methods.
 

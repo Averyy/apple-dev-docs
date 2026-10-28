@@ -24,11 +24,11 @@ func VTFrameSiloSetTimeRangesForNextPass(_ silo: VTFrameSilo, timeRangeCount: CM
 extern OSStatus VTFrameSiloSetTimeRangesForNextPass(VTFrameSiloRef silo, CMItemCount timeRangeCount, const CMTimeRange *timeRangeArray);
 ```
 
-#### Return Value
+## Return Value
 
 `kVTFrameSiloInvalidTimeRangeErr` if any time ranges are non-numeric, overlap, or are not in ascending order.
 
-#### Discussion
+## Discussion
 
 Previously added sample buffers with decode timestamps within the time ranges are deleted from the frame silo object.
 

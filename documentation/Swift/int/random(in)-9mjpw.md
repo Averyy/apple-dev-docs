@@ -21,11 +21,11 @@ Returns a random value within the specified range.
 static func random(in range: Range<Self>) -> Self
 ```
 
-#### Return Value
+## Return Value
 
 A random value within the bounds of `range`.
 
-#### Discussion
+## Discussion
 
 Use this method to generate an integer within a specific range. This example creates three new values in the range `1..<100`.
 

@@ -19,7 +19,7 @@ var scrollDirection: NSCollectionView.ScrollDirection { get set }
 @property NSCollectionViewScrollDirection scrollDirection;
 ```
 
-#### Discussion
+## Discussion
 
 The flow layout scrolls along one axis only, either horizontally or vertically. When the scroll direction is [`NSCollectionView.ScrollDirection.vertical`](../nscollectionview/scrolldirection/vertical.md), the width of the content never exceeds the width of the collection view itself but the height grows as needed to accommodate the current items. When the scroll direction is [`NSCollectionView.ScrollDirection.horizontal`](../nscollectionview/scrolldirection/horizontal.md), the height never exceeds the height of the collection view but the width grows as needed.
 

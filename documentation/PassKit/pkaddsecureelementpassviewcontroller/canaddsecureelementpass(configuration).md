@@ -22,7 +22,7 @@ class func canAddSecureElementPass(configuration: PKAddSecureElementPassConfigur
 + (BOOL) canAddSecureElementPassWithConfiguration:(PKAddSecureElementPassConfiguration *) configuration;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if PassKit validates the configuration; otherwise, [`false`](../../Swift/false.md).
 

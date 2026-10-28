@@ -25,7 +25,7 @@ var result: Any? { get }
 @property (strong, readonly, nullable) id result;
 ```
 
-#### Discussion
+## Discussion
 
 Cast the result to the type corresponding to [`resultType`](./resulttype.md) to inspect it. The following example shows how to inspect a result type of [`NSBatchInsertRequestResultType.statusOnly`](../nsbatchinsertrequestresulttype/statusonly.md).
 

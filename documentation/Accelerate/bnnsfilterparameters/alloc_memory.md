@@ -25,7 +25,7 @@ var alloc_memory: BNNSAlloc?
 BNNSAlloc alloc_memory;
 ```
 
-#### Discussion
+## Discussion
 
 Must be compatible with the [`free_memory`](./free_memory.md) function. If `nil`, `posix_memalign(_:_:_:)` will be called.
 

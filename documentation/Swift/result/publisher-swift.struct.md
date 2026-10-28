@@ -23,7 +23,7 @@ struct Publisher
 
 Available when `Failure` conforms to `Error`.
 
-#### Overview
+## Overview
 
 If the result is `Swift/Result/success`, then the publisher waits until it receives a request for at least one value, then sends the output to all subscribers and finishes normally. If the result is `/Swift/Result/failure`, then the publisher sends the failure immediately upon subscription. This latter behavior is a contrast with [`Just`](../../Combine/just.md), which always publishes a single value.
 

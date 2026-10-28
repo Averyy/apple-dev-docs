@@ -20,7 +20,7 @@ var responsible_audit_token: audit_token_t
 audit_token_t responsible_audit_token;
 ```
 
-#### Discussion
+## Discussion
 
 The responsible process may be this process itself, if there’s no responsible process or the responsible process already exited.
 

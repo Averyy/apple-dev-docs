@@ -28,7 +28,7 @@ class ASAuthorizationPlatformPublicKeyCredentialRegistrationRequest
 
 - [Supporting passkeys](./supporting-passkeys.md)
 
-#### Overview
+## Overview
 
 Create an instance of this class when registering for a new credential using platform authorization.
 

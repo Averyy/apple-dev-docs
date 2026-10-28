@@ -25,7 +25,7 @@ let kCGImagePropertyIsIndexed: CFString
 extern CFStringRef const kCGImagePropertyIsIndexed;
 ```
 
-#### Discussion
+## Discussion
 
 Indexed pixel samples are also known as paletted samples. The value of this property is [`kCFBooleanTrue`](../CoreFoundation/kcfbooleantrue.md) if the image contains indexed pixel samples.
 

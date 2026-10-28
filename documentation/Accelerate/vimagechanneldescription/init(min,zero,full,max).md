@@ -21,7 +21,7 @@ Returns a structure that describes the range and clamp limits for a pixel format
 init(min: CGFloat, zero: CGFloat, full: CGFloat, max: CGFloat)
 ```
 
-#### Return Value
+## Return Value
 
 A structure that describes the range and clamp limits for a pixel format.
 

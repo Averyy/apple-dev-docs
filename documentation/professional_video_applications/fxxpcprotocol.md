@@ -14,7 +14,7 @@ protocol FxXPCProtocol
 @protocol FxXPCProtocol
 ```
 
-#### Overview
+## Overview
 
 The protocol used by all FxPlug 4 plug-ins to initiate contact with the host application.
 

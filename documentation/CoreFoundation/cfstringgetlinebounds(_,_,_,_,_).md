@@ -25,7 +25,7 @@ func CFStringGetLineBounds(_ theString: CFString!, _ range: CFRange, _ lineBegin
 extern void CFStringGetLineBounds(CFStringRef theString, CFRange range, CFIndex *lineBeginIndex, CFIndex *lineEndIndex, CFIndex *contentsEndIndex);
 ```
 
-#### Discussion
+## Discussion
 
 This function is a convenience function for determining the beginning and ending indexes of one or more lines in the given range of a string. It is useful, for example, when each line represents a “record” of some sort; you might search for some substring, but want to extract the record of which the substring is a part.
 

@@ -19,7 +19,7 @@ A command type to flip the video frames vertically during playback for the durat
 struct ShotFlipCommand
 ```
 
-#### Overview
+## Overview
 
 > **Note**: The renderer only honors this command on visionOS 27, macOS 27, or later. Earlier runtimes ignore it during playback.
 

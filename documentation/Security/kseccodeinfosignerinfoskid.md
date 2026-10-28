@@ -18,7 +18,7 @@ let kSecCodeInfoSignerInfoSKID: CFString
 extern CFStringRef const kSecCodeInfoSignerInfoSKID;
 ```
 
-#### Discussion
+## Discussion
 
 Key in the dictionary returned by SecCodeCopySigningInformation. The value is a CFData containing the Subject Key Identifier (SKID) of the leaf signing certificate. Useful for looking up detached certificates.
 

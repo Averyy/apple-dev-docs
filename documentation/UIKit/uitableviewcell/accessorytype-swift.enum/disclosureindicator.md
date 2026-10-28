@@ -23,7 +23,7 @@ case disclosureIndicator
 UITableViewCellAccessoryDisclosureIndicator
 ```
 
-#### Discussion
+## Discussion
 
 Choose this type when you want taps in the accessory view to display new content. Connect the accessory view itself to a push segue to display that content.
 

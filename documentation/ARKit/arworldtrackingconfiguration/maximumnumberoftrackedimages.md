@@ -20,7 +20,7 @@ var maximumNumberOfTrackedImages: Int { get set }
 @property (nonatomic, assign) NSInteger maximumNumberOfTrackedImages;
 ```
 
-#### Discussion
+## Discussion
 
 When you set a nonzero value for this property, the framework keeps that many image anchors up to date as the session progresses. The framework can track a maximum of four images simultaneously.
 

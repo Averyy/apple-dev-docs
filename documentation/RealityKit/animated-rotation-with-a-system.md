@@ -10,13 +10,13 @@ Rotate an entity around an axis using a Component and a System.
 - visionOS 2.0+
 - Xcode 16.3+
 
-#### Overview
+## Overview
 
 You can use the Entity Component System (ECS) from RealityKit to apply logic to any number of entities in a scene. This sample code provides a component. The system queries scene for all entities that have that component and then rotates those entities based on the speed and axis in the component.
 
 For more information about the ECS, see [Understanding the modular architecture of RealityKit](../visionOS/understanding-the-realitykit-modular-architecture.md), and for more information about systems, see [Implementing systems for entities in a scene](./implementing-systems-for-entities-in-a-scene.md).
 
-##### Add the rotation component to the entity
+### Add the rotation component to the entity
 
 After creating the entity in `ContentView` the sample adds an instance of the `RotationComponent` to the entity:
 
@@ -26,7 +26,7 @@ telescopeScene.components[RotationComponent.self] = RotationComponent()
 
 By default, the rotation speed is `0.0` and the axis of rotation is the x-axis.
 
-##### Enable SwiftUI to control the animation
+### Enable SwiftUI to control the animation
 
 The `ContentView` type has two `@State` variables that control the animation:
 
@@ -38,7 +38,7 @@ The `ContentView` type has two `@State` variables that control the animation:
 - `RotationAxis` is an enumeration with one case for each ordinal direction.
 - The `rotating` value sets the `speed` to `0.0` when `rotating` is `false`, and `1.0` when `rotating` is `true`.
 
-##### Update the RealityKit state on SwiftUI state changes
+### Update the RealityKit state on SwiftUI state changes
 
 The system calls the `RealityView` `update:` block when the `rotating` or `speed` values change.
 
@@ -49,7 +49,7 @@ update: { context in
 }
 ```
 
-##### Update the rotation of the entity on every frame
+### Update the rotation of the entity on every frame
 
 The framework calls the `RotationSystem` function [`update(context: SceneUpdateContext)`](./system/update%28context%29.md) for each frame. The sample includes a query to quickly find entities that have the component:
 

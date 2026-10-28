@@ -20,7 +20,7 @@ An operation that combines two columns into a dictionary, using the given column
 case dictionaryMerge(valueColumn: String)
 ```
 
-#### Discussion
+## Discussion
 
 The dictionary keys are the values in the column that you specified with the aggregator’s [`columnName`](../columnname.md) property.
 

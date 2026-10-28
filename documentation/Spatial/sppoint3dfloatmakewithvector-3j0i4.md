@@ -19,11 +19,11 @@
 static SPPoint3DFloat SPPoint3DFloatMakeWithVector(SPVector3DFloat xyz);
 ```
 
-#### Return Value
+## Return Value
 
 A new point.
 
-#### Discussion
+## Discussion
 
 Creates a point with coordinates specified as a Spatial vector.
 

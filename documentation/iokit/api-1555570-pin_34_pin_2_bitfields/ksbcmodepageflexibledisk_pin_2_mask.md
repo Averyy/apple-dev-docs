@@ -14,7 +14,7 @@
 kSBCModePageFlexibleDisk_PIN_2_Mask = 0x0F
 ```
 
-#### Discussion
+## Discussion
 
 Mask for use with PIN_34_PIN_2 field.
 

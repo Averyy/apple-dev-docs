@@ -19,7 +19,7 @@ An object that continues to track an object that you’ve started tracking, and 
 func continueTracking(at time: CMTime, sourceImage: CVPixelBuffer, sourceDisparity: CVPixelBuffer) -> CNBoundsPrediction?
 ```
 
-#### Return Value
+## Return Value
 
 An object representing a prediction of where the object is in the source image.
 

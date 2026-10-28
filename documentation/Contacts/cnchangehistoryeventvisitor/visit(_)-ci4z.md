@@ -25,7 +25,7 @@ func visit(_ event: CNChangeHistoryDeleteContactEvent)
 - (void) visitDeleteContactEvent:(CNChangeHistoryDeleteContactEvent *) event;
 ```
 
-#### Discussion
+## Discussion
 
 Inspect the contact identifier in the event that the system provides and update your app’s cached data accordingly.
 

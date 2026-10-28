@@ -5,7 +5,7 @@
 
 Programmatically detect and dismiss a search field.
 
-#### Overview
+## Overview
 
 People activate a search field in your app by tapping or clicking it, after which they can enter search terms. In many cases, your app only needs to react to the corresponding changes in the search text values, which the interface updates through the binding that you provide, as described in [Performing a search operation](./performing-a-search-operation.md).
 
@@ -16,7 +16,7 @@ However, SwiftUI also provides controls that enable you to programmatically mana
 - Dismiss the interface by calling an action stored in the environment.
 - Wait for a search submission event before starting to search.
 
-##### Control activation through a binding
+### Control activation through a binding
 
 You can control search interface activation programmatically by providing the searchable modifier’s `isPresented` parameter with a [`Binding`](./binding.md) to a Boolean value. For example, to present a sheet that appears with the search interface already active, create a binding that starts as true:
 
@@ -36,7 +36,7 @@ struct SheetView: View {
 
 On iOS and macOS, SwiftUI focuses the search field when presenting search and unfocuses the search field when dismissing search. The search field can also lose focus while the search interface remains presented. For example, if your search interface contains a list of text fields, someone might move focus to one of the text fields without dismissing the interface.
 
-##### Detect search activation
+### Detect search activation
 
 If you need to know when the search interface is active, you can query the environment’s [`isSearching`](./environmentvalues/issearching.md) property using the [`Environment`](./environment.md) property wrapper. The following example shows a view that updates the text it displays based on the state of the property:
 
@@ -65,7 +65,7 @@ When someone first taps or clicks in a search field, the `isSearching` property 
 
 Be sure to read the property from inside a view that’s wrapped, either directly or indirectly, by one of the [`searchable(text:placement:prompt:)`](./view/searchable%28text,placement,prompt%29.md) view modifiers, like `SearchedView` in the above example. You won’t detect any change in the property value if you read it from outside of that context, like if you put it in the `SearchingExample` view.
 
-##### Dismiss the search interface
+### Dismiss the search interface
 
 You can programmatically deactivate the interface using the environment’s [`dismissSearch`](./environmentvalues/dismisssearch.md) action. For example, consider a view with a [`Button`](./button.md) that presents more information about the first matching item from a collection:
 
@@ -132,7 +132,7 @@ People can dismiss the sheet by dragging it down, effectively canceling the oper
 
 As with the `isSearching` property, be sure to only read `dismissSearch` from within the hierarchy of a searchable view modifier. Calling the action has no effect if you read it from the environment outside of that context. The above example reads the action from `SearchedView`, and passes that into the sheet, because the sheet has its own environment. The action also has no effect if the search interface isn’t active.
 
-##### React to search submission
+### React to search submission
 
 To specify an action that SwiftUI invokes when someone submits the search query (by pressing the Return key), add the [`onSubmit(of:_:)`](./view/onsubmit%28of,_%29.md) modifier:
 

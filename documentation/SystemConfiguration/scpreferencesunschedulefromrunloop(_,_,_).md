@@ -19,7 +19,7 @@ func SCPreferencesUnscheduleFromRunLoop(_ prefs: SCPreferences, _ runLoop: CFRun
 Boolean SCPreferencesUnscheduleFromRunLoop(SCPreferencesRef prefs, CFRunLoopRef runLoop, CFStringRef runLoopMode);
 ```
 
-#### Return Value
+## Return Value
 
 `TRUE` if the notifications are successfully unscheduled; otherwise, `FALSE`.
 

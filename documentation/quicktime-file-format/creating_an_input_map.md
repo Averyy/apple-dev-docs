@@ -5,13 +5,13 @@
 
 Describe and name sources with an input map.
 
-#### Overview
+## Overview
 
 The input map is another QT atom container that you attach to the effects track. It describes the sources used in the effect and gives a name to each source. This name is used to refer to the source in the effects description.
 
 An input map works in concert with track reference atoms in the source tracks. A track reference atom of type `kTrackModifierReference` is added to each source track, which causes that source track’s output to be redirected to the effects track. An input map is added to the effects track to identify the source tracks and give a name to each source, such as `'srcA'` and `'srcB'`. The effect can then refer to the sources by name, specifying that `'srcB'` should slide in over `'srcA'`, for example.
 
-#### Structure of an input map
+## Structure of an input map
 
 The input map contains a set of atoms that refer to the tracks used as sources for the effect. Each source track is represented by one track reference atom of type `kTrackModifierInput`.
 
@@ -25,7 +25,7 @@ The child atom of type `kTrackModifierType` indicates the type of the track bein
 
 You refer to a `kTrackModifierInput` atom by its index number, which is returned by the `AddTrackReference` function when you create the atom.
 
-#### Building input maps
+## Building input maps
 
 The first step in creating an input map is to create a new `QTAtomContainer` to hold the map. You use the standard QuickTime container creation function.
 

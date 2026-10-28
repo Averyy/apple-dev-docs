@@ -21,7 +21,7 @@ Error code indicating that the app is attempting to use a property for which it 
 static var unauthorizedRequestData: SKError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 To use [`requestData`](../skpayment/requestdata.md), an app must have a required entitlement.
 

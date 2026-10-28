@@ -15,7 +15,7 @@ Return the device id of the device associated with a special file.
 dev_t vnode_specrdev(vnode_t vp);
 ```
 
-#### Return Value
+## Return Value
 
 The device id.
 

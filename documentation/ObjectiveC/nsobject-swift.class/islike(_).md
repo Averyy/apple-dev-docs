@@ -20,11 +20,11 @@ func isLike(_ object: String) -> Bool
 - (BOOL) isLike:(NSString *) object;
 ```
 
-#### Return Value
+## Return Value
 
 [`YES`](../yes.md) if the receiver is considered to be “like” `object`, otherwise [`NO`](../no.md).
 
-#### Discussion
+## Discussion
 
 Currently, [`isLike(_:)`](./islike%28_%29.md) messages are never sent to any object from within Cocoa itself.
 

@@ -24,7 +24,7 @@ typealias StoppedHandler = (CHHapticEngine.StoppedReason) -> Void
 typedef void (^)(enum CHHapticEngineStoppedReason) CHHapticEngineStoppedHandler;
 ```
 
-#### Discussion
+## Discussion
 
 The system calls the stopped handler for when it’s stopped by an external event like an audio session interruption or an auto-shutdown.
 

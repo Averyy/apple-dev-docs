@@ -25,7 +25,7 @@ func setMessage(_ message: String?)
 - (void) setMessage:(NSString *) message;
 ```
 
-#### Discussion
+## Discussion
 
 If you do not set a text message, GameKit sets a default text message.
 

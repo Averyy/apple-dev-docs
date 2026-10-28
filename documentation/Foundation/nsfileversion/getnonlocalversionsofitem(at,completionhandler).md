@@ -29,7 +29,7 @@ class func nonlocalVersionsOfItem(at url: URL) async throws -> [NSFileVersion]
 + (void) getNonlocalVersionsOfItemAtURL:(NSURL *) url completionHandler:(void (^)(NSArray<NSFileVersion *> *nonlocalFileVersions, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Versions returned by this method do not initially have their contents stored locally on the device, so a download may be required before you are able to access them. File attributes are accessible via -[NSURL getPromisedItemResourceValue:forKey:error:]. You can request a download by performing a coordinated read with NSFileCoordinator on the URL property of the resulting NSFileVersions.
 

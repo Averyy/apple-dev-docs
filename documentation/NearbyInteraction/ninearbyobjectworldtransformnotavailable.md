@@ -18,7 +18,7 @@ A constant that indicates that the framework is unable to provide a world transf
 extern simd_float4x4 NINearbyObjectWorldTransformNotAvailable;
 ```
 
-#### Discussion
+## Discussion
 
 The framework returns this constant for [`worldTransformForObject:`](./nisession/worldtransformforobject_.md) when it fails to produce a transform for the given object.
 

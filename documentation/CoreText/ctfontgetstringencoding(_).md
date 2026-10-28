@@ -25,7 +25,7 @@ func CTFontGetStringEncoding(_ font: CTFont) -> CFStringEncoding
 extern CFStringEncoding CTFontGetStringEncoding(CTFontRef font);
 ```
 
-#### Return Value
+## Return Value
 
 The best string encoding for the font.
 

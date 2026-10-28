@@ -23,7 +23,7 @@ var isDeviceMotionActive: Bool { get }
 @property (nonatomic, readonly, getter=isDeviceMotionActive) BOOL deviceMotionActive;
 ```
 
-#### Discussion
+## Discussion
 
 This property indicates whether [`startDeviceMotionUpdates(to:withHandler:)`](./startdevicemotionupdates%28to,withhandler%29.md) or [`startDeviceMotionUpdates()`](./startdevicemotionupdates%28%29.md) has been called since the last time [`stopDeviceMotionUpdates()`](./stopdevicemotionupdates%28%29.md) was called.
 

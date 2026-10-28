@@ -21,7 +21,7 @@ optional func userNotificationCenter(_ center: NSUserNotificationCenter, shouldP
 - (BOOL) userNotificationCenter:(NSUserNotificationCenter *) center shouldPresentNotification:(NSUserNotification *) notification;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the user notification should be displayed regardless; [`false`](../../Swift/false.md) otherwise.
 

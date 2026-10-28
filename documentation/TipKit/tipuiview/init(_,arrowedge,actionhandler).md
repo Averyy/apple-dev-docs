@@ -19,7 +19,7 @@ Creates a tip view with an optional arrow edge and action handler.
 @preconcurrency init(_ tip: any Tip, arrowEdge: Edge? = nil, actionHandler: @escaping @MainActor @Sendable (Tips.Action) -> Void = { _ in })
 ```
 
-#### Discussion
+## Discussion
 
 Use a `TipUIView` when you want to indicate the UI element to which the tip applies, but do not want to directly anchor the tip view to that element.
 

@@ -15,7 +15,7 @@ Calculates the sum of values in a single-precision vector.
 void vDSP_sve(const float *__A, vDSP_Stride __I, float *__C, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 This function calculates the sum of the first `N` elements of `A` and writes the result to `C`:
 

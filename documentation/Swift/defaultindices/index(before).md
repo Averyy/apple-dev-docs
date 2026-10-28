@@ -23,7 +23,7 @@ func index(before i: DefaultIndices<Elements>.Index) -> DefaultIndices<Elements>
 
 Available when `Elements` conforms to `BidirectionalCollection`.
 
-#### Return Value
+## Return Value
 
 The index value immediately before `i`.
 

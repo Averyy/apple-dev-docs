@@ -21,7 +21,7 @@ var wantsAdaptiveBackgroundStyle: Bool { get set }
 @property (nonatomic, assign, getter=wantsAdaptiveBackgroundStyle) BOOL adaptiveBackgroundStyle;
 ```
 
-#### Discussion
+## Discussion
 
 When set to YES, the header will use a custom background style derived from the thumbnail image. This creates an adaptive background that automatically generates light and dark mode variants.
 

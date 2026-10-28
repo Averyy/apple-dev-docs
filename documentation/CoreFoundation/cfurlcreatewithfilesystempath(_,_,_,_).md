@@ -25,11 +25,11 @@ func CFURLCreateWithFileSystemPath(_ allocator: CFAllocator!, _ filePath: CFStri
 extern CFURLRefCFURLCreateWithFileSystemPath(CFAllocatorRef allocator, CFStringRef filePath, CFURLPathStyle pathStyle, Boolean isDirectory);
 ```
 
-#### Return Value
+## Return Value
 
 A new `CFURL` object. Ownership follows the create rule. See [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
-#### Discussion
+## Discussion
 
 If `filePath` is not absolute, the resulting URL will be considered relative to the current working directory (evaluated when this function is being invoked).
 

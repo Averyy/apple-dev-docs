@@ -20,7 +20,7 @@ case ageRatingExceptionNotNeeded
 
 - [Providing age-rating appropriate content](../providing-age-rating-appropriate-content.md)
 
-#### Discussion
+## Discussion
 
 The framework throws this error if your app sets [`requestAgeException`](../installmetadata/requestageexception.md) to `true` when it’s not needed — that is, when the app to install has an age rating that’s within the allowed range for the device (as determined by [`maximumAllowedAgeRating`](../applibrary/maximumallowedagerating.md)).
 

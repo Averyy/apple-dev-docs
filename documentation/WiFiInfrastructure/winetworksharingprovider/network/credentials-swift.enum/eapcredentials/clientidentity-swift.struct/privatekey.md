@@ -17,7 +17,7 @@ The private key of the client.
 let privateKey: Data
 ```
 
-#### Discussion
+## Discussion
 
 Data will be in PKCS #1 format for an RSA key or ANSI X9.63 format for an EC key.
 

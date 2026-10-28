@@ -14,7 +14,7 @@
 kIOHIDManagerOptionDoNotLoadProperties = 0x2
 ```
 
-#### Discussion
+## Discussion
 
 This constant can be supplied to [`IOHIDManagerCreate`](../api-1438383-iohidmanagercreate.md)
 

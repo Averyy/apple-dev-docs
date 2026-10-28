@@ -19,11 +19,11 @@
 static float SPAngleFloatCosh(SPAngleFloat angle);
 ```
 
-#### Return Value
+## Return Value
 
 The hyperbolic cosine of the specified angle.
 
-#### Discussion
+## Discussion
 
 Returns the hyperbolic cosine of the specified angle.
 

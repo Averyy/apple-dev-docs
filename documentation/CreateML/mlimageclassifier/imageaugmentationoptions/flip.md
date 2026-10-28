@@ -19,7 +19,7 @@ An option for augmenting training data by flipping each image along the horizont
 static let flip: MLImageClassifier.ImageAugmentationOptions
 ```
 
-#### Discussion
+## Discussion
 
 Use this option to tell the image classifier to augment your training data set by flipping the original images.
 

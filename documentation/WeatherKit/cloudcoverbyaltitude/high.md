@@ -21,7 +21,7 @@ The percentage of the sky covered with high-altitude clouds. High-level Cloud Co
 var high: Double
 ```
 
-#### Discussion
+## Discussion
 
 The value is from `0` (no cloud cover)  to `1` (complete cloud cover).
 

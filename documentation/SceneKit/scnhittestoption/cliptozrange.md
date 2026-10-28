@@ -25,7 +25,7 @@ static let clipToZRange: SCNHitTestOption
 extern SCNHitTestOption const SCNHitTestClipToZRangeKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is an [`NSNumber`](../../Foundation/nsnumber.md) object containing a Boolean value. The default value is [`true`](../../Swift/true.md), specifying that hit-testing searches only objects between the [`zNear`](../scncamera/znear.md) and [`zFar`](../scncamera/zfar.md) distances of the [`pointOfView`](../scnscenerenderer/pointofview.md) camera. Specify [`false`](../../Swift/false.md) to include objects outside this depth range in the search.
 

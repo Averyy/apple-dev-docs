@@ -24,7 +24,7 @@ let kVTCompressionPropertyKey_MoreFramesAfterEnd: CFString
 extern CFStringRef const kVTCompressionPropertyKey_MoreFramesAfterEnd;
 ```
 
-#### Discussion
+## Discussion
 
 This value is `true` if frames compressed in a separate session will be concatenated following the end of the current session. This value is `false` if the current session is a stand-alone session, or if this session will encode the last segment of a multi-segment compression.
 

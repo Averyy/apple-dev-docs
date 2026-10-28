@@ -20,11 +20,11 @@ Creates a JavaScript value object from the equivalent C representation.
 init!(JSValueRef value: JSValueRef!, inContext context: JSContext!)
 ```
 
-#### Return Value
+## Return Value
 
 A JavaScript value object representing the same value.
 
-#### Discussion
+## Discussion
 
 See `JSValueRef` for the C JavaScriptCore API.
 

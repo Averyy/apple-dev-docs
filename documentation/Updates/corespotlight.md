@@ -5,20 +5,20 @@
 
 Learn about important changes to Core Spotlight.
 
-#### Overview
+## Overview
 
 Browse notable changes in [Core Spotlight](../CoreSpotlight/CoreSpotlight.md).
 
-#### July 2026
+## July 2026
 
 - Follow the [Searching indexed content with natural language](../CoreSpotlight/searching-indexed-content-with-natural-language.md) sample app to learn how you can give a language model access to your app’s Core Spotlight index and let people use natural language to search your app’s content.
 
-#### June 2026
+## June 2026
 
 - Make your app’s indexed content available to Foundation models using [`SpotlightSearchTool`](../CoreSpotlight/spotlightsearchtool.md).
 - Refer to your Spotlight indexes when reindexing entities using [`CSSearchableIndexDescription`](../CoreSpotlight/cssearchableindexdescription.md).
 
-#### June 2024
+## June 2024
 
 - Search your indexed content for items that are similar in meaning to the query string, but not necessarily a lexical match, using [`CSUserQuery`](../CoreSpotlight/csuserquery.md). Disable this semantic search support using the [`disableSemanticSearch`](../CoreSpotlight/csuserquerycontext/disablesemanticsearch.md) property of [`CSUserQueryContext`](../CoreSpotlight/csuserquerycontext.md).
 

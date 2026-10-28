@@ -26,11 +26,11 @@ func samplePresentationTime(forTrackTime trackTime: CMTime) -> CMTime
 - (CMTime) samplePresentationTimeForTrackTime:(CMTime) trackTime;
 ```
 
-#### Return Value
+## Return Value
 
 The sample presentation time corresponding to the specified time; otherwise [`invalid`](../../CoreMedia/cmtime/invalid.md) if the time is out of range.
 
-#### Discussion
+## Discussion
 
 Apple discourages using this method in iOS 15, tvOS 15, macOS 12, and watchOS 8 or later. Load a sample presentation time asynchronously using [`loadSamplePresentationTime(forTrackTime:completionHandler:)`](./loadsamplepresentationtime%28fortracktime,completionhandler%29.md) instead.
 

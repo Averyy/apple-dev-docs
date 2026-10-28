@@ -21,7 +21,7 @@ A mode that creates composite image samples by choosing the darker samples from 
 static var darken: GraphicsContext.BlendMode { get }
 ```
 
-#### Discussion
+## Discussion
 
 When you draw in this mode, source image samples that are darker than the background replace the background. Otherwise, the background image samples remain unchanged.
 

@@ -23,11 +23,11 @@ func load<T>(fromByteOffset offset: Int = 0, as type: T.Type) -> T
 
 Available when `Base` is `UnsafeMutableRawBufferPointer`.
 
-#### Return Value
+## Return Value
 
 A new instance of type `T`, copied from the buffer pointer slice’s memory.
 
-#### Discussion
+## Discussion
 
 The memory at `offset` bytes into this buffer pointer slice must be properly aligned for accessing `T` and initialized to `T` or another type that is layout compatible with `T`.
 

@@ -19,7 +19,7 @@ func validate() throws
 - (BOOL) validateWithError:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 If validation fails, the error parameter contains a [`VZError`](../vzerror.md) with a guest provisioning error code.
 

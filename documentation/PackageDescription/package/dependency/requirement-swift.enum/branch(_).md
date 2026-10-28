@@ -15,7 +15,7 @@ Returns a requirement for a source control branch.
 static func branch(_ name: String) -> Package.Dependency.Requirement
 ```
 
-#### Discussion
+## Discussion
 
 Note that packages that use branch-based dependency requirements can’t be depended upon by packages that use version-based dependency requirements; you should remove branch-based dependency requirements before publishing a version of your package.
 

@@ -17,7 +17,7 @@ A traffic class for interactive data that requires quick response times.
 case responsiveData
 ```
 
-#### Discussion
+## Discussion
 
 The responsive data traffic class optimizes for requests that people initiate and that benefit from low latency, such as web browsing, API calls, and interactive app features.
 

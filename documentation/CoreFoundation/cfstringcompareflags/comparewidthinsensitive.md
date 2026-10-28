@@ -25,7 +25,7 @@ static var compareWidthInsensitive: CFStringCompareFlags { get }
 kCFCompareWidthInsensitive
 ```
 
-#### Discussion
+## Discussion
 
 For example, “a”  is equivalent to `UFF41`.
 

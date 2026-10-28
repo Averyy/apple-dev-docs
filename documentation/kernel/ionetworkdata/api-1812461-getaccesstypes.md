@@ -11,7 +11,7 @@ Gets the types of data access supported by this object.
 virtual UInt32 getAccessTypes() const;
 ```
 
-#### Return Value
+## Return Value
 
 Returns a mask of supported access types.
 

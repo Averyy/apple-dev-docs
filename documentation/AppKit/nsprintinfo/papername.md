@@ -19,7 +19,7 @@ var paperName: NSPrinter.PaperName? { get set }
 @property (copy, nullable) NSPrinterPaperName paperName;
 ```
 
-#### Discussion
+## Discussion
 
 The string contains a value such as Letter or Legal. Paper names are implementation specific.
 

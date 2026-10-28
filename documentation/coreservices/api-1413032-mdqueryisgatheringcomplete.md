@@ -19,7 +19,7 @@ func MDQueryIsGatheringComplete(_ query: MDQuery!) -> Bool
 Boolean MDQueryIsGatheringComplete(MDQueryRef query);
 ```
 
-#### Return Value
+## Return Value
 
 Returns `TRUE` if the first phase of a query has completed, otherwise `FALSE`.
 

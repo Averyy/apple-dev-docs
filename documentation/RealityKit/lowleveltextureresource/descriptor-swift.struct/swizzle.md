@@ -18,7 +18,7 @@ The channel swizzle pattern the GPU applies when sampling the texture.
 var swizzle: MTLTextureSwizzleChannels { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Corresponds to `MTLTextureDescriptor.swizzle`.
 

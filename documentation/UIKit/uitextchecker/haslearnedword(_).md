@@ -23,7 +23,7 @@ class func hasLearnedWord(_ word: String) -> Bool
 + (BOOL) hasLearnedWord:(NSString *) word;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the class has learned the word, otherwise [`false`](../../Swift/false.md).
 

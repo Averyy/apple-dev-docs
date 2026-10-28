@@ -9,11 +9,11 @@ Make changes to an Xcode Cloud workflow.
 **Availability**:
 - App Store Connect API 1.5+
 
-#### Discussion
+## Discussion
 
 The example request below updates the name of an existing Xcode Cloud workflow. For a successful update, the response includes detailed information about the workflow. Use it to access additional information, start a new build, and so on.
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

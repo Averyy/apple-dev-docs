@@ -22,7 +22,7 @@ var isEnabled: Bool { get set }
 @property (getter=isEnabled) BOOL enabled;
 ```
 
-#### Discussion
+## Discussion
 
 If the value of this property is [`true`](../../Swift/true.md), the item is enabled. If the [`autovalidates`](./autovalidates.md) property is true, changing the value of this property has no effect. Instead, the validation process enables and disables the toolbar item as appropriate.
 

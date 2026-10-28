@@ -24,7 +24,7 @@ case degrees
 kAudioUnitParameterUnit_Degrees
 ```
 
-#### Discussion
+## Discussion
 
 Typical range is from –180° through +180° and is intended as a general representation of geometric position, such as for audio sources in a three-dimensional coordinate system. See also the [`AudioUnitParameterUnit.phase`](./phase.md) property.
 

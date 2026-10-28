@@ -22,11 +22,11 @@ nonisolated
 func foregroundStyle<S>(_ style: S) -> Text where S : ShapeStyle
 ```
 
-#### Return Value
+## Return Value
 
 A text view that uses the color value you supply.
 
-#### Discussion
+## Discussion
 
 Use this method to change the rendering style of the text rendered by a text view.
 

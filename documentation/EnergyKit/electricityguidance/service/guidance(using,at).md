@@ -17,7 +17,7 @@ Returns an async sequence of electricity guidance forecasts for the requested ve
 final func guidance(using query: ElectricityGuidance.Query, at energyVenueID: UUID) -> some AsyncSequence<ElectricityGuidance, any Error>
 ```
 
-#### Return Value
+## Return Value
 
 Returns an `AsyncSequence` of [`ElectricityGuidance`](../../electricityguidance.md) forecasts with error type [`EnergyKitError.guidanceUnavailable`](../../energykiterror/guidanceunavailable.md).
 

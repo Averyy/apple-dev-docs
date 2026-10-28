@@ -16,7 +16,7 @@ The device position and orientation you used to render the frame.
 var deviceAnchor: DeviceAnchor? { get nonmutating set }
 ```
 
-#### Discussion
+## Discussion
 
 During rendering, match the camera position in your scene to the device anchor to create a better experience. In a visionOS app, the device anchor corresponds to the movements of someone’s head. If your camera movements aren’t synchronized to the device movements, the person might experience discomfort while viewing your content.
 

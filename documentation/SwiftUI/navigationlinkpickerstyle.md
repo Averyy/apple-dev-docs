@@ -20,7 +20,7 @@ A picker style represented by a navigation link that presents the options by pus
 struct NavigationLinkPickerStyle
 ```
 
-#### Overview
+## Overview
 
 In navigation stacks, prefer the default [`menu`](./pickerstyle/menu.md) style. Consider the navigation link style when you have a large number of options or your design is better expressed by pushing onto a stack.
 

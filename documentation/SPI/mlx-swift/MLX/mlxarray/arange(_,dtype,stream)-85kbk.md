@@ -17,7 +17,7 @@ Generate values in the half-open interval `[0, stop)` with a given [`DType`](../
 static func arange(_ stop: Int, dtype: DType, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 Example:
 
@@ -26,7 +26,7 @@ Example:
 let r = MLXArray.arange(10, dtype: .float32)
 ```
 
-##### See Also
+### See Also
 
 - [Initialization](../initialization.md)
 - [`arange(_:_:step:dtype:stream:)`](./arange%28_,_,step,dtype,stream%29-5h4mf.md)

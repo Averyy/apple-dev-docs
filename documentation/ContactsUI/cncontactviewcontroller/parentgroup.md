@@ -22,7 +22,7 @@ var parentGroup: CNGroup? { get set }
 @property (nonatomic, strong, nullable) CNGroup * parentGroup;
 ```
 
-#### Discussion
+## Discussion
 
 If you do not set this property, the view controller adds a new contact to the default group.
 

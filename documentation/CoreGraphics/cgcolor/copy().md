@@ -25,7 +25,7 @@ func copy() -> CGColor?
 extern CGColorRefCGColorCreateCopy(CGColorRef color);
 ```
 
-#### Return Value
+## Return Value
 
 A copy of the specified color. In Objective-C, you’re responsible for releasing this object using [`CGColorRelease`](../cgcolorrelease.md).
 

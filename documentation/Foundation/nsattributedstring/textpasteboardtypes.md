@@ -17,11 +17,11 @@ Returns an array of pasteboard types that can be loaded as text.
 + (NSArray *) textPasteboardTypes;
 ```
 
-#### Return Value
+## Return Value
 
 An array of `NSString` objects, containing the pasteboard types supported by text classes and those that can be converted to supported pasteboard types through a user-installed filter service.
 
-#### Discussion
+## Discussion
 
 By default, the list returned by this method includes `NSHTMLPboardType`, `NSRTFPboardType`, `NSRTFDPboardType`, and `NSStringPboardType`.
 

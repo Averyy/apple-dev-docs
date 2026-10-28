@@ -24,11 +24,11 @@ class func success(with resolvedPlacemark: CLPlacemark) -> Self
 + (instancetype) successWithResolvedPlacemark:(CLPlacemark *) resolvedPlacemark;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INPlacemarkResolutionResult`](../inplacemarkresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method to create a result object when you are able to resolve the placemark successfully and use it to handle the intent.
 

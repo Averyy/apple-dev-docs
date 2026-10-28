@@ -19,7 +19,7 @@ The amount of detail the task applies from the input style image to the stylized
 var textelDensity: Int
 ```
 
-#### Discussion
+## Discussion
 
 The value must be a multiple of `4` in the range `[64, 1024]`. The style transfer task converts all other values to the nearest multiple of `4` less than the value.
 

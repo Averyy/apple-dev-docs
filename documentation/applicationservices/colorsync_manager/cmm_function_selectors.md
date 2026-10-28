@@ -40,7 +40,7 @@ enum {
 };
 ```
 
-#### Overview
+## Overview
 
 Your CMM must respond to the ColorSync Manager required request codes. When a CMM receives a required request code from the ColorSync Manager, the CMM must determine the nature of the request, perform the appropriate processing, set an error code if necessary, and return an appropriate function result to the Component Manager. The required request codes are:
 

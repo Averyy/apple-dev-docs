@@ -18,7 +18,7 @@ virtual IOReturn setWriteCacheState(
 /* !__LP64__ */
 ```
 
-#### Overview
+## Overview
 
 Sets the write cache state of the device. The write cache state is not guaranteed to persist across reboots and detaches.
 

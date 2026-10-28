@@ -24,7 +24,7 @@ var tessellationOutputWindingOrder: MTLWinding { get set }
 @property (nonatomic, readwrite) MTLWinding tessellationOutputWindingOrder;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`MTLWinding.clockwise`](../mtlwinding/clockwise.md).
 

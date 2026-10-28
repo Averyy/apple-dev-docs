@@ -23,7 +23,7 @@ init(items: [any UIDynamicItem])
 - (instancetype) initWithItems:(NSArray<id<UIDynamicItem>> *) items;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized collision behavior, or `nil` if there was a problem initializing the object.
 

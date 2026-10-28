@@ -20,7 +20,7 @@ let relevanceScore: Double
 
 - [Displaying live data with Live Activities](../displaying-live-data-with-live-activities.md)
 
-#### Discussion
+## Discussion
 
 If you start more than one Live Activity in your app, the Live Activity with the highest relevance score appears in the Dynamic Island. If Live Activities have the same relevance score, the system displays the Live Activity that started first. Additionally, the `relevanceScore` determines the order of your Live Activities on the Lock Screen.
 

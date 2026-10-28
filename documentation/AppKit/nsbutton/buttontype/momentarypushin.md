@@ -19,7 +19,7 @@ case momentaryPushIn
 NSButtonTypeMomentaryPushIn
 ```
 
-#### Discussion
+## Discussion
 
 This button type is the default.
 

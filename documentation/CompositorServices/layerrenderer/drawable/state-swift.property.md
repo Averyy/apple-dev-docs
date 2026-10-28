@@ -20,7 +20,7 @@ var state: LayerRenderer.Drawable.State { get }
 enum cp_drawable_state cp_drawable_get_state(cp_drawable_t drawable);
 ```
 
-#### Discussion
+## Discussion
 
 A state value of [`LayerRenderer.Drawable.State.rendering`](./state-swift.enum/rendering.md) indicates the drawable type is ready for you to draw your content. Other values indicate that Compositor Services currently owns the drawable.
 

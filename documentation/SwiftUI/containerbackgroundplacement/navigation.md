@@ -18,7 +18,7 @@ A background placement inside a [`NavigationStack`](../navigationstack.md) or [`
 static let navigation: ContainerBackgroundPlacement
 ```
 
-#### Discussion
+## Discussion
 
 For translucent backgrounds in a navigation split view, combine this placement with [`navigationSplitView`](./navigationsplitview.md).
 

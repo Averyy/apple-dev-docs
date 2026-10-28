@@ -16,11 +16,11 @@ Establishes a connection to an XPC service with the name you specify.
 extern xpc_session_txpc_session_create_xpc_service(const char *name, dispatch_queue_t target_queue, xpc_session_create_flags_t flags, xpc_rich_error_t*error_out);
 ```
 
-#### Return Value
+## Return Value
 
 A new session object if the connection succeeds; otherwise [`nil`](../ObjectiveC/nil-227m0.md) if the service isn’t found or is unavailable. If the connection fails, this method populates the `error_out` parameter, if set, with an error that describes the failure.
 
-#### Discussion
+## Discussion
 
 By default, the session object this method returns is activated and is ready to accept messages. To create an inactive session, specify [`XPC_SESSION_CREATE_INACTIVE`](./xpc_session_create_flags_t-c.enum/xpc_session_create_inactive.md) in the `flags` parameter.
 

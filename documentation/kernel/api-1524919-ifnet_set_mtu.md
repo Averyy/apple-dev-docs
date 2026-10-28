@@ -13,11 +13,11 @@
 errno_t ifnet_set_mtu(ifnet_t interface, u_int32_t mtu);
 ```
 
-#### Return Value
+## Return Value
 
 0 on success otherwise the errno error.
 
-#### Discussion
+## Discussion
 
 Sets the value of the MTU in the interface structure. Calling this function will not notify the driver that the MTU should be changed. Use the appropriate ioctl.
 

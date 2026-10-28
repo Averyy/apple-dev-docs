@@ -16,7 +16,7 @@ nonisolated
 struct CircularGaugeStyle
 ```
 
-#### Overview
+## Overview
 
 Use [`circular`](./gaugestyle/circular.md) to construct this style.
 

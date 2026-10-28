@@ -24,7 +24,7 @@ struct CategoryOptions
 enum AVAudioSessionCategoryOptions : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 Each option is valid only for specific audio session categories.
 

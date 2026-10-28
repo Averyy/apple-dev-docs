@@ -21,7 +21,7 @@ var eventStatusText: [String]? { get }
 @property (nonatomic, copy, readonly, nullable) NSArray<NSString *> * eventStatusText;
 ```
 
-#### Discussion
+## Discussion
 
 The first string should always be used to show the play period (quarter, inning, period) using as few characters as possible; e.g. “2nd” for the 2nd quarter.
 

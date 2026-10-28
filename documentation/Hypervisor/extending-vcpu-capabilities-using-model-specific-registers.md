@@ -5,7 +5,7 @@
 
 Configure specific client performance monitoring and enable other vCPU capabilities using Model-Specific Registers.
 
-#### Overview
+## Overview
 
 The Hypervisor framework supports managed Model-Specific Registers (MSRs). MSRs covers a wide range of functionality, including enabling guest access to a variety of extended hardware features, such as:
 
@@ -63,7 +63,7 @@ rdmsr
 
 > **Note**:  The MSRs include several collections of related registers, including [`HV_MSR_IA32_PMC0`](./hv_msr_ia32_pmc0.md), [`HV_MSR_IA32_PMC7`](./hv_msr_ia32_pmc7.md), [`HV_MSR_IA32_PERFEVNTSEL0`](./hv_msr_ia32_perfevntsel0.md), and [`HV_MSR_IA32_PERFEVNTSEL7`](./hv_msr_ia32_perfevntsel7.md). To avoid repetition, this article refers to these collections as `HV_MSR_IA32_PMCn` and `HV_MSR_IA32_PERFEVTSELn`, respectively when referring to these register sets. A listing of MSR register names is available in the Model-Specific Registers Constants section.
 
-##### Analyze Guest Performance
+### Analyze Guest Performance
 
 You can use the performance counter MSRs to allow the guest OS to use hardware performance counters to measure aspects of guest performance. These measurements can be in the guest kernel or apps running in the guest OS.
 
@@ -93,7 +93,7 @@ Because there are complex interactions between the registers, the framework plac
 - You must bind the [`HV_MSR_IA32_PERF_GLOBAL_STATUS`](./hv_msr_ia32_perf_global_status.md), [`HV_MSR_IA32_PERF_GLOBAL_STATUS_RESET`](./hv_msr_ia32_perf_global_status_reset.md), and [`HV_MSR_IA32_PERF_GLOBAL_STATUS_SET`](./hv_msr_ia32_perf_global_status_set.md) registers to the vCPU. Use of the latter two registers should be in the order [`HV_MSR_IA32_PERF_GLOBAL_STATUS_RESET`](./hv_msr_ia32_perf_global_status_reset.md) followed by [`HV_MSR_IA32_PERF_GLOBAL_STATUS_SET`](./hv_msr_ia32_perf_global_status_set.md). The framework ensures the restoration of the status register first, and saves it last when switching contexts. You can grant native access to all three MSRs that map to the underlying status register. The guest global status register [`HV_MSR_IA32_PERF_GLOBAL_STATUS_RESET`](./hv_msr_ia32_perf_global_status_reset.md) should be both read and written using [`HV_MSR_IA32_PERF_GLOBAL_STATUS`](./hv_msr_ia32_perf_global_status.md). Use of the same MSR name is intentional, the framework determines at runtime the right sequence of operations to call). The framework doesn’t support binding this register on processors with architectural performance monitoring version 3 or earlier.
 - The `RDPMC` instruction still requires a VM exit to occur. However, if you use the [`HV_VCPU_ACCEL_RDPMC`](./hv_vcpu_accel_rdpmc.md) flag when creating the vCPU, then the kernel automatically handles the `RDPMC` exit, and returns the values of any virtualized PMC register directly to the guest without exiting.
 
-##### Record Branch Addresses with Last Branch MSRs
+### Record Branch Addresses with Last Branch MSRs
 
 You use Last Branch MSRs when you need to record branching information from guest vCPUs; this can be useful for analyzing and understanding guest crashes.
 
@@ -107,7 +107,7 @@ You can bind Last Branch Register MSRs on more recent processors that support th
 - `HV_MSR_LASTINT_FROM_IP`
 - `HV_MSR_LASTINT_TO_IP`
 
-##### Control Security-Related Performance Impacts with Speculation Control MSRs
+### Control Security-Related Performance Impacts with Speculation Control MSRs
 
 The framework supports several speculation control MSRs which can impact guest performance, including:
 

@@ -24,7 +24,7 @@ var gain: Double { get }
 @property (nonatomic, readonly) double gain;
 ```
 
-#### Discussion
+## Discussion
 
 When source and target sounds play simultaneously, the value of this property determines the amount that the listener can hear the target sound.  A value of `0` results in full attenuation, and `1` results in no attenuation. The framework clamps the value to the range between `0` and `1`.
 

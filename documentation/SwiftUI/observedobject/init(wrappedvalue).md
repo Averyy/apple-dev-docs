@@ -22,7 +22,7 @@ Creates an observed object with an initial wrapped value.
 @preconcurrency init(wrappedValue: ObjectType)
 ```
 
-#### Discussion
+## Discussion
 
 Don’t call this initializer directly. Instead, declare an input to a view with the `@ObservedObject` attribute, and pass a value to this input when you instantiate the view. Unlike a [`StateObject`](../stateobject.md) which manages data storage, you use an observed object to refer to storage that you manage elsewhere, as in the following example:
 

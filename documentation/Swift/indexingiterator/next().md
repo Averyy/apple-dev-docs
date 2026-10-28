@@ -23,11 +23,11 @@ mutating func next() -> Elements.Element?
 
 Available when `Elements` conforms to `Collection`.
 
-#### Return Value
+## Return Value
 
 The next element in the underlying sequence if a next element exists; otherwise, `nil`.
 
-#### Discussion
+## Discussion
 
 Repeatedly calling this method returns all the elements of the underlying sequence in order. As soon as the sequence has run out of elements, all subsequent calls return `nil`.
 

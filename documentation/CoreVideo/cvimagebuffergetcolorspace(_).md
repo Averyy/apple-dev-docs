@@ -25,7 +25,7 @@ func CVImageBufferGetColorSpace(_ imageBuffer: CVImageBuffer) -> Unmanaged<CGCol
 extern CGColorSpaceRefCVImageBufferGetColorSpace(CVImageBufferRef imageBuffer);
 ```
 
-#### Return Value
+## Return Value
 
 The color space of the image buffer, or [`nil`](../ObjectiveC/nil-227m0.md) if you pass a value for the image buffer that isn’t a [`CVImageBuffer`](./cvimagebuffer.md) type.
 

@@ -19,7 +19,7 @@ func print(withSettings printSettings: [NSPrintInfo.AttributeKey : Any], showPri
 - (void) printDocumentWithSettings:(NSDictionary<NSString *,id> *) printSettings showPrintPanel:(BOOL) showPrintPanel delegate:(id) delegate didPrintSelector:(SEL) didPrintSelector contextInfo:(void *) contextInfo;
 ```
 
-#### Discussion
+## Discussion
 
 If showing of the print panel is specified by `showPrintPanel`, the method presents it first and prints only if the user approves the panel. The `NSPrintInfo` attributes in the passed-in `printSettings` dictionary are added to a copy of the document’s print info, and the resulting print info settings are used for the operation. When printing is complete or canceled, the method sends the message selected by `didPrintSelector` to the `delegate`, with the `contextInfo` as the last argument. The method selected by `didPrintSelector` must have the same signature as:
 

@@ -15,7 +15,7 @@ Invokes your speech-done callback function.
 void InvokeSpeechDoneUPP(SpeechChannel chan, SRefCon refCon, SpeechDoneUPP userUPP);
 ```
 
-#### Discussion
+## Discussion
 
 You should not need to call the `InvokeSpeechDoneUPP` function,because the system calls your speech-done callback function for you.
 

@@ -25,11 +25,11 @@ func material(named name: String) -> SCNMaterial?
 - (SCNMaterial *) materialWithName:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A material object with the specified name.
 
-#### Discussion
+## Discussion
 
 You can use the [`name`](../scnmaterial/name.md) property of each [`SCNMaterial`](../scnmaterial.md) object to make managing your scene graph easier. Materials loaded from a scene file may have names assigned by an artist using a 3D authoring tool.
 

@@ -25,11 +25,11 @@ func SecTrustSetOCSPResponse(_ trust: SecTrust, _ responseData: CFTypeRef?) -> O
 OSStatus SecTrustSetOCSPResponse(SecTrustRef trust, CFTypeRef responseData);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
-#### Discussion
+## Discussion
 
 This function allows the caller to provide OCSPResponse data (which may be obtained during a TLS/SSL handshake, per [RFC3546](https://tools.ietf.org/html/rfc3546)) as input to a trust evaluation. If this data is available, it can obviate the need to contact an OCSP server for current revocation information.
 

@@ -17,7 +17,7 @@ Add a size one dimension at the given axis.
 func expandedDimensions(axes: some Collection<Int>, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-##### See Also
+### See Also
 
 - [Shapes](../shapes.md)
 - [`expandedDimensions(axis:stream:)`](./expandeddimensions%28axis,stream%29.md)

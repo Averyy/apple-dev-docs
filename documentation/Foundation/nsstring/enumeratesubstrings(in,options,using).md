@@ -25,7 +25,7 @@ func enumerateSubstrings(in range: NSRange, options opts: NSString.EnumerationOp
 - (void) enumerateSubstringsInRange:(NSRange) range options:(NSStringEnumerationOptions) opts usingBlock:(void (^)(NSString *substring, NSRange substringRange, NSRange enclosingRange, BOOL *stop)) block;
 ```
 
-#### Discussion
+## Discussion
 
 If this method is sent to an instance of `NSMutableString`, mutation (deletion, addition, or change) is allowed, as long as it is within `enclosingRange`. After a mutation, the enumeration continues with the range immediately following the processed range, after the length of the processed range is adjusted for the mutation. (The enumerator assumes any change in length occurs in the specified range.)
 

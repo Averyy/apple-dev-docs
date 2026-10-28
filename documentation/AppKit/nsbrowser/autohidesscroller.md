@@ -19,7 +19,7 @@ var autohidesScroller: Bool { get set }
 @property BOOL autohidesScroller;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), the scroller is automatically hidden.
 

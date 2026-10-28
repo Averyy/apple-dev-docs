@@ -24,7 +24,7 @@ var constellation: VNRequestFaceLandmarksConstellation { get set }
 @property (assign, readwrite) VNRequestFaceLandmarksConstellation constellation;
 ```
 
-#### Discussion
+## Discussion
 
 Set this variable to one of the supported constellation types detailed in [`VNRequestFaceLandmarksConstellation`](../vnrequestfacelandmarksconstellation.md). The default value is [`VNRequestFaceLandmarksConstellation.constellationNotDefined`](../vnrequestfacelandmarksconstellation/constellationnotdefined.md).
 

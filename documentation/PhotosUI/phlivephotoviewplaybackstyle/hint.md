@@ -28,7 +28,7 @@ PHLivePhotoViewPlaybackStyleHint
 
 - [Displaying Live Photos](../../PhotoKit/displaying-live-photos.md)
 
-#### Discussion
+## Discussion
 
 This style matches the effect seen in various iOS interface elements for hinting to the user when an asset contains Live Photo content.
 

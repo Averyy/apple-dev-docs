@@ -4,13 +4,13 @@
 
 Configure servers to notify users of potential exposures to COVID-19 without an app.
 
-#### Overview
+## Overview
 
 iOS 13.7 and later can inform people of potential exposure to COVID-19 without a dedicated Exposure Notifications app. This app-less functionality is called Exposure Notifications Express and is only available when a Public Health Authority (PHA) supports it.
 
 iOS continues to support dedicated Exposure Notifications apps, and a PHA can offer Exposure Notifications apps and the app-less Exposure Notifications Express at the same time. When a user enables Exposure Logging, iOS uses the PHA’s app if one is installed, and falls back to the app-less experience if no app is installed and the PHA supports Exposure Notifications Express.
 
-##### Deploy Exposure Notifications Express Servers
+### Deploy Exposure Notifications Express Servers
 
 To support Exposure Notifications Express, a PHA must deploy two different types of servers:
 
@@ -19,7 +19,7 @@ To support Exposure Notifications Express, a PHA must deploy two different types
 
 > **Note**:  Prior to the introduction of Exposure Notifications Express in iOS 13.7, the Exposure Notifications Key Server was referred to as the “Exposure Notifications Server” or the “EN Server”.
 
-##### Verify Diagnoses and Send Notifications
+### Verify Diagnoses and Send Notifications
 
 Exposure Notifications Express works by communicating with the test verification server and the key server at specific times in a defined process, as depicted in the figure below.
 

@@ -21,7 +21,7 @@ Access sample sizes.
 var sizes: CMSampleBuffer.SizePerSample? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 When setting distinct sizes, the number of entries must match [`count`](./count.md).
 

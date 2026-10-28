@@ -17,11 +17,11 @@ Fetches the content for the specified topic.
 final func content(for topic: ProximityReaderDiscovery.Topic) async throws -> ProximityReaderDiscovery.Content
 ```
 
-#### Return Value
+## Return Value
 
 The requested content, when successful.
 
-#### Discussion
+## Discussion
 
 > **Throws**: The method throws a [`ProximityReaderDiscovery.ContentError`](./contenterror.md) if it fails to get the content.
 

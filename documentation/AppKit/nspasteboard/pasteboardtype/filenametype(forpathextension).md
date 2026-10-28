@@ -21,7 +21,7 @@ static func fileNameType(forPathExtension fileType: String) -> NSPasteboard.Past
 extern NSPasteboardTypeNSCreateFilenamePboardType(NSString *fileType);
 ```
 
-#### Discussion
+## Discussion
 
 Returns an [`NSString`](../../../Foundation/nsstring.md) to a pasteboard type representing a filename based on the supplied string `fileType`.
 

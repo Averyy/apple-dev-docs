@@ -14,7 +14,7 @@
 virtual uint32_t getFlags();
 ```
 
-#### Return Value
+## Return Value
 
 Returns the element’s flags. Flags are defined in the IOHIDElementFlags enumerator in - [`IOHIDElementFlags`](../iohidelementflags.md).
 

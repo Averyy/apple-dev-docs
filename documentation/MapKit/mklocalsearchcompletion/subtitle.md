@@ -25,7 +25,7 @@ var subtitle: String { get }
 @property (nonatomic, strong, readonly) NSString * subtitle;
 ```
 
-#### Discussion
+## Discussion
 
 The string in this property may be empty.
 

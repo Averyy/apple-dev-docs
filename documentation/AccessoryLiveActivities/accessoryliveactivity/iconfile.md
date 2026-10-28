@@ -16,7 +16,7 @@ An on-demand reference to the app icon of the app that started the Live Activity
 struct IconFile
 ```
 
-#### Overview
+## Overview
 
 The system loads the app icon file asynchronously using the [`url`](./iconfile/url.md).
 

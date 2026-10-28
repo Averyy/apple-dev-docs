@@ -5,13 +5,13 @@
 
 Display three images as a sequential gallery.
 
-#### Overview
+## Overview
 
 **On this page, you’ll learn how to use a gallery to display a sequence of images as a horizontal strip that the user can swipe through.**
 
 ![Screenshot of an Apple News article with a gallery on iPad.](https://developer.apple.com/tutorials/images/com.apple.applenews/media-3624436@2x.png)
 
-##### Add a Gallery in Your Article
+### Add a Gallery in Your Article
 
 In [Download the Article Bundle Examples](./setting-up-the-introductory-tutorial.md#Download-the-Article-Bundle-Examples), you downloaded a bundle called `News_Design_Tutorial_5_Galleries` that contains gallery images and mosaic images. Now, you’ll move some of those images into your working folder and create a `gallery` component to display the images.
 
@@ -23,7 +23,7 @@ Your code should look like the example code [Gallery: Result](./adding-a-gallery
 
 After you make this change in your code, you can preview your working `article.json` file in News Preview to see a gallery in your article.
 
-###### Gallery: Copy This Code
+#### Gallery: Copy This Code
 
 ```json
     {
@@ -42,7 +42,7 @@ After you make this change in your code, you can preview your working `article.j
     },
 ```
 
-###### Gallery: Result
+#### Gallery: Result
 
 Ellipses (`...`) indicate lines of code that have been omitted from this example.
 
@@ -71,7 +71,7 @@ Ellipses (`...`) indicate lines of code that have been omitted from this example
 }
 ```
 
-##### Add Captions for Gallery Images
+### Add Captions for Gallery Images
 
 In [Adding an Image and Captions](./adding-an-image-and-captions.md), you created a `caption` component in your article layout and a `caption` property for when users view your photo in full screen. Here, you’ll do something similar, adding a `caption` component for the gallery and `caption` properties for each gallery item.
 
@@ -82,7 +82,7 @@ In [Adding an Image and Captions](./adding-an-image-and-captions.md), you create
 
 After you make these changes in your code, you can preview your working `article.json` file in News Preview to see captions for each gallery item and for the whole gallery.
 
-###### Caption: Copy This Code
+#### Caption: Copy This Code
 
 ```json
     {
@@ -91,7 +91,7 @@ After you make these changes in your code, you can preview your working `article
     },
 ```
 
-###### Caption: Result
+#### Caption: Result
 
 Ellipses (`...`) indicate lines of code that have been omitted from this example.
 
@@ -127,7 +127,7 @@ Ellipses (`...`) indicate lines of code that have been omitted from this example
 }
 ```
 
-##### Modify Gallery and Caption Positioning and Add a Divider
+### Modify Gallery and Caption Positioning and Add a Divider
 
 In [Positioning Text Components](./positioning-text-components.md) and [Adding an Image and Captions](./adding-an-image-and-captions.md), you created some `ComponentLayout` objects. You’ll refer to those `ComponentLayout` objects in this code. You’ll also add a `divider` component to set the gallery apart visually.
 
@@ -141,7 +141,7 @@ Your code should look like the example code [Divider: Result](./adding-a-gallery
 
 After you make these changes in your code, you can preview your working `article.json` file in News Preview to see the new divider and some changes in the positioning of your components.
 
-###### Divider: Copy This Code
+#### Divider: Copy This Code
 
 ```json
     {
@@ -154,7 +154,7 @@ After you make these changes in your code, you can preview your working `article
     },
 ```
 
-###### Divider: Result
+#### Divider: Result
 
 Ellipses (`...`) indicate lines of code that have been omitted from this example.
 
@@ -200,7 +200,7 @@ Ellipses (`...`) indicate lines of code that have been omitted from this example
 }
 ```
 
-##### Further Exploration
+### Further Exploration
 
 At any time, you can try changing property values in your `article.json` file and then use News Preview to see how these changes affect the look of your article.
 
@@ -213,11 +213,11 @@ For example, try switching the order of the first two images in your `gallery` c
 
 The order of your first and second gallery items has been switched.
 
-##### Previous
+### Previous
 
 [Adding a Pull Quote](./adding-a-pull-quote.md)
 
-##### Next
+### Next
 
 [Adding a Mosaic of Images](./adding-a-mosaic-of-images.md)
 

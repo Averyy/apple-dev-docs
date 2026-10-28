@@ -25,7 +25,7 @@ var textAttributesForPositiveInfinity: [String : Any]? { get set }
 @property (copy, nullable) NSDictionary<NSString *,id> * textAttributesForPositiveInfinity;
 ```
 
-#### Discussion
+## Discussion
 
 This property is a dictionary that contains the text attributes used to display the positive infinity string.
 

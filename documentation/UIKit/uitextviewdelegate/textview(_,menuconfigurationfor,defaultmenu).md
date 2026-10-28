@@ -22,7 +22,7 @@ optional func textView(_ textView: UITextView, menuConfigurationFor textItem: UI
 - (UITextItemMenuConfiguration *) textView:(UITextView *) textView menuConfigurationForTextItem:(UITextItem *) textItem defaultMenu:(UIMenu *) defaultMenu;
 ```
 
-#### Return Value
+## Return Value
 
 Return a menu configuration to be presented when the text item is interacted with. Return @c nil to prevent the menu from being presented.
 

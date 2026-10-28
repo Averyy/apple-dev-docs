@@ -20,7 +20,7 @@ The intensity of the point light, measured in lumen.
 var intensity: Float
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `26963.76` lumens.
 

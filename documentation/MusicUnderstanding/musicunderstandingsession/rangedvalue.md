@@ -21,7 +21,7 @@ A structure that pairs a value over a time range.
 struct RangedValue<Value> where Value : Decodable, Value : Encodable, Value : Equatable, Value : Sendable
 ```
 
-#### Overview
+## Overview
 
 The `RangedValue` is a container pairing an analysis value with a CMTimeRange segment of media time. Music properties like key and pace change over a track. The results are expressed as a sequence of contiguous segments covering the full timeline.
 

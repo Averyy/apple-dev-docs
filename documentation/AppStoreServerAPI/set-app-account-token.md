@@ -14,7 +14,7 @@ Sets the app account token value for a purchase the customer makes outside of yo
 - [App Store Server API changelog](./app-store-server-api-changelog.md)
 - [Identifying rate limits](./identifying-rate-limits.md)
 
-#### Discussion
+## Discussion
 
 An [`appAccountToken`](./appaccounttoken.md) is a UUID you create to associate a transaction with a customer account in your system. Use the [`Set App Account Token`](./set-app-account-token.md) endpoint to set or reset the `appAccountToken` associated with the transaction you specify in the `originalTransactionId` parameter.
 

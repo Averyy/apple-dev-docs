@@ -13,11 +13,11 @@
 size_t mbuf_pkthdr_len(const mbuf_t mbuf);
 ```
 
-#### Return Value
+## Return Value
 
 The length, in bytes, of the packet.
 
-#### Discussion
+## Discussion
 
 Returns the length as reported by the packet header.
 

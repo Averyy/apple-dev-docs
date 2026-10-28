@@ -15,7 +15,7 @@ The section of this index path, when used with `NSCollectionView`.
 var section: Int { get set }
 ```
 
-#### Discussion
+## Discussion
 
 > **Precondition**: The index path must have exactly two elements.
 

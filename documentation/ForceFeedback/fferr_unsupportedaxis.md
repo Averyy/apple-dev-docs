@@ -18,7 +18,7 @@ var FFERR_UNSUPPORTEDAXIS: Int { get }
 #define FFERR_UNSUPPORTEDAXIS
 ```
 
-#### Discussion
+## Discussion
 
 The effect includes one or more axes that the device does not support.
 

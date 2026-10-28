@@ -5,7 +5,7 @@
 
 Synchronize access to resources in your app by signaling events.
 
-#### Overview
+## Overview
 
 Use events to specify synchronization points in your app. For example, you might use an event to synchronize graphics rendering commands running on one command queue with compute processing being performed on another command queue.
 
@@ -16,7 +16,7 @@ Metal provides two different kinds of events:
 
 Shareable events have a higher overhead than nonshareable events. Don’t use [`MTLSharedEvent`](./mtlsharedevent.md) to synchronize events within a single device object; use [`MTLEvent`](./mtlevent.md) instead.
 
-##### Event signaling and waiting
+### Event signaling and waiting
 
 An event contains a monotonically increasing unsigned 64-bit integer. An event starts with a value of `0`. You can either update the event’s value by *signaling* it, or block further execution by *waiting* on the event. Typically, you keep an integer value in your app for each event and increase its value each time you need to synchronize on the event. For example, you might increment the number each time you render a new frame of animation.
 

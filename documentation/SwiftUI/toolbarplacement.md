@@ -21,7 +21,7 @@ The placement of a toolbar.
 struct ToolbarPlacement
 ```
 
-#### Overview
+## Overview
 
 Use this type in conjunction with modifiers like [`toolbarBackground(_:for:)`](./view/toolbarbackground%28_,for%29.md) and [`toolbarVisibility(_:for:)`](./view/toolbarvisibility%28_,for%29.md) to customize the appearance of different bars managed by SwiftUI. Not all bars support all types of customizations.
 

@@ -22,7 +22,7 @@ var defaultItemIdentifiers: [NSTouchBarItem.Identifier] { get set }
 @property (copy) NSArray<NSString *> * defaultItemIdentifiers;
 ```
 
-#### Discussion
+## Discussion
 
 Always specify this property for an [`NSTouchBar`](../nstouchbar.md) object, even if you elect to make the bar noncustomizable. The system:
 

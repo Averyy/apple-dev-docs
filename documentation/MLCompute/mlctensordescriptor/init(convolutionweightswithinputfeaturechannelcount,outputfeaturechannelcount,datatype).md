@@ -23,7 +23,7 @@ convenience init?(convolutionWeightsWithInputFeatureChannelCount inputFeatureCha
 + (instancetype) convolutionWeightsDescriptorWithInputFeatureChannelCount:(NSUInteger) inputFeatureChannelCount outputFeatureChannelCount:(NSUInteger) outputFeatureChannelCount dataType:(MLCDataType) dataType;
 ```
 
-#### Discussion
+## Discussion
 
 This initializer provides a convenient way for you to configure weights tensors with a kernel of size 1.
 

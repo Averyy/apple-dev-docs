@@ -23,7 +23,7 @@ struct StateMask
 enum UITableViewCellStateMask : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 The methods that use these constants are [`didTransition(to:)`](./didtransition%28to%29.md) and [`willTransition(to:)`](./willtransition%28to%29.md).
 

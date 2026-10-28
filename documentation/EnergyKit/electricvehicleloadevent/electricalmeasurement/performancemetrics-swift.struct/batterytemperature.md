@@ -17,7 +17,7 @@ A battery pack temperature.
 let batteryTemperature: Measurement<UnitTemperature>?
 ```
 
-#### Discussion
+## Discussion
 
 The system sets this property to `nil` when temperature data is unavailable.
 

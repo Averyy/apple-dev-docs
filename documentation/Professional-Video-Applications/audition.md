@@ -5,7 +5,7 @@
 
 Contains one active story element followed by alternative story elements in the audition container.
 
-#### Overview
+## Overview
 
 When exported, the XML lists the currently active item as the first child in the audition container.
 

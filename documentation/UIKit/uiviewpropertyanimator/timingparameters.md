@@ -24,7 +24,7 @@ var timingParameters: (any UITimingCurveProvider)? { get }
 @property (nonatomic, copy, readonly, nullable) id<UITimingCurveProvider> timingParameters;
 ```
 
-#### Discussion
+## Discussion
 
 The timing curve defines the speed of the animation at different points during its execution. For a linear animation, the speed of the animation is constant over the total duration. For animations that follow a curve, the animation speeds up or slows down based on the slope of the curve. You specify the curve parameters at initialization time and can use this property to get those parameters later.
 

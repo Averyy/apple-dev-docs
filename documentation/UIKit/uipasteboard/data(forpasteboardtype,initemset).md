@@ -22,7 +22,7 @@ func data(forPasteboardType pasteboardType: String, inItemSet itemSet: IndexSet?
 - (NSArray<NSData *> *) dataForPasteboardType:(NSString *) pasteboardType inItemSet:(NSIndexSet *) itemSet;
 ```
 
-#### Return Value
+## Return Value
 
 An array of [`NSData`](../../Foundation/nsdata.md) objects or, if a requested pasteboard item has no data of the the type indicated by `pasteboardType`, a [`NSNull`](../../Foundation/nsnull.md) object.
 

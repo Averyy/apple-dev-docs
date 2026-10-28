@@ -21,7 +21,7 @@ var formats: [CMIOExtensionStreamFormat] { get }
 @property (atomic, readonly) NSArray<CMIOExtensionStreamFormat *> * formats;
 ```
 
-#### Discussion
+## Discussion
 
 Don’t change stream formats during the life cycle of the associated stream.
 

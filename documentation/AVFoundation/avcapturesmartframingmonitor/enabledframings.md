@@ -25,7 +25,7 @@ var enabledFramings: [AVCaptureFraming] { get set }
 
 - [Adopting smart framing in your camera app](../adopting-smart-framing-in-your-camera-app.md)
 
-#### Discussion
+## Discussion
 
 The monitor is capable of recommending any of the framings in the [`supportedFramings`](./supportedframings.md) array. This property contains the subset of [`supportedFramings`](./supportedframings.md) you would like to have recommended to you. You may set this property at any time while running your [`AVCaptureSession`](../avcapturesession.md). This property’s default value is the empty array.
 

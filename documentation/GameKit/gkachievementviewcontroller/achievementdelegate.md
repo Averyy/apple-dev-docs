@@ -31,7 +31,7 @@ weak var achievementDelegate: (any GKAchievementViewControllerDelegate)! { get s
 @property (atomic, weak) id<GKAchievementViewControllerDelegate> achievementDelegate;
 ```
 
-#### Discussion
+## Discussion
 
 Your game must set the delegate before presenting the view controller.
 

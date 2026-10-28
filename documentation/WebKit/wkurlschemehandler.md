@@ -24,7 +24,7 @@ protocol WKURLSchemeHandler : NSObjectProtocol
 @protocol WKURLSchemeHandler <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Adopt the [`WKURLSchemeHandler`](./wkurlschemehandler.md) protocol in objects that handle custom URL schemes for your web content. Custom schemes let you integrate custom resource types into your web content, and you may define custom schemes for resources that your app requires. For example, you might use a custom scheme to integrate content that is available only on the user’s device, such as the user’s photos. Adopt this protocol in one of your app’s objects and register it using the [`setURLSchemeHandler(_:forURLScheme:)`](./wkwebviewconfiguration/seturlschemehandler%28_,forurlscheme%29.md) method of [`WKWebViewConfiguration`](./wkwebviewconfiguration.md).
 

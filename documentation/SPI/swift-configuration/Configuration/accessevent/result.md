@@ -24,7 +24,7 @@ The final outcome of the configuration access operation.
 var result: Result<ConfigValue?, any Error>
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: Might contain `success` even if a [`conversionError`](./conversionerror.md) occurred, which non-throwing config reader methods use.
 

@@ -21,7 +21,7 @@ Returns a vector that results from applying the specified projective transform.
 static SPVector3D SPVector3DApplyProjectiveTransform(SPVector3D vector, SPProjectiveTransform3D transform);
 ```
 
-#### Return Value
+## Return Value
 
 The vector that results from applying the specified projective transform.
 

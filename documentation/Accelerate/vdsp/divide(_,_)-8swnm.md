@@ -21,11 +21,11 @@ Returns the double-precision element-wise division of two vectors.
 static func divide<T, U>(_ vectorA: T, _ vectorB: U) -> [Double] where T : AccelerateBuffer, U : AccelerateBuffer, T.Element == Double, U.Element == Double
 ```
 
-#### Return Value
+## Return Value
 
 The output vector, `C`.
 
-#### Discussion
+## Discussion
 
 This function calculates the division of the first `N` elements of input vectors `A` and `B`, and writes the result to output vector `C`, as follows:
 

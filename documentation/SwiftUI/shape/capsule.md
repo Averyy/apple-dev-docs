@@ -24,7 +24,7 @@ static var capsule: Capsule { get }
 
 Available when `Self` is `Capsule`.
 
-#### Discussion
+## Discussion
 
 A capsule shape is equivalent to a rounded rectangle where the corner radius is chosen as half the length of the rectangle’s smallest edge.
 

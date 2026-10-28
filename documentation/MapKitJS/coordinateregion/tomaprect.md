@@ -22,7 +22,7 @@ toMapRect(): MapRect;
 - [MapKit JS 6](../mapkit-js-6.md)
 - [Migrating from Version 5 to Version 6](../migrating-from-version-5-to-version-6.md)
 
-#### Return Value
+## Return Value
 
 A [`MapRect`](../maprect.md) that corresponds to the calling [`CoordinateRegion`](../coordinateregion.md).
 

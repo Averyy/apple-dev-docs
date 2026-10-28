@@ -21,7 +21,7 @@ Returns a value from a uniform, independent distribution of binary data.
 mutating func next() -> UInt64
 ```
 
-#### Return Value
+## Return Value
 
 An unsigned 64-bit random value.
 

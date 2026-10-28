@@ -18,7 +18,7 @@ The header text to display in the complication.
 <CLKTextProvider> @objc final var headerTextProvider: CLKTextProvider { get set }
 ```
 
-#### Discussion
+## Discussion
 
 This property supports multicolor text.
 

@@ -24,7 +24,7 @@ class MPSGraphTensor
 @interface MPSGraphTensor : MPSGraphObject
 ```
 
-#### Overview
+## Overview
 
 `NSCopy` will take a refrence, this is so `NSDictionary` can work with the tensor. All tensors are created, owned and destroyed by the MPSGraph
 

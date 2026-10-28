@@ -19,7 +19,7 @@ init()
 - (instancetype) init;
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer to create the empty option set.
 

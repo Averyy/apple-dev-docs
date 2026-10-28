@@ -23,7 +23,7 @@ func update(_ attributes: CSSearchableItemAttributeSet, forFileAt contentURL: UR
 - (BOOL) updateAttributes:(CSSearchableItemAttributeSet *) attributes forFileAtURL:(NSURL *) contentURL error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 When Core Spotlight invokes this method, update the properties of the attribute set according to the content in the specified file. For a complete list of properties available, see [`CSSearchableItemAttributeSet`](../cssearchableitemattributeset.md).
 

@@ -16,7 +16,7 @@ Returns the physical segment containing the address at a specified offset from t
 IOPhysicalAddress (*GetPhysicalSegment)(IOFireWireLibPhysicalAddressSpaceRef self, IOByteCount offset, IOByteCount *length);
 ```
 
-#### Return Value
+## Return Value
 
 The address of the physical segment containing the address at the specified offset of the address space
 

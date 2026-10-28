@@ -24,7 +24,7 @@ func edit(_ viewController: NSViewController!) async -> NSApplication.ModalRespo
 - (void) editSettings:(NSViewController *) viewController completionHandler:(void (^)(NSModalResponse returnCode)) handler;
 ```
 
-#### Discussion
+## Discussion
 
 The Compressor app typically calls this method when a user tries to configure the encoder settings. The default `ProExtensionPrincipalViewController` object includes a view that you can use to present the current encoder settings in the Compressor app interface. Users can edit these settings from the UI to customize the encoded output. When they finish editing, if the extension calls the completion handler with the `NSModalResponseOK` return code, the Compressor app calls the [`settingsString()`](./settingsstring%28%29.md) method to get the updated settings from the extension. The Compressor app saves the current settings as XML and provides them back to the extension when the extension restarts or during the encoding process.
 

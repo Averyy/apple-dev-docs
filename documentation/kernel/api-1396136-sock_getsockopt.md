@@ -13,11 +13,11 @@
 errno_t sock_getsockopt(socket_t so, int level, int optname, void *optval, int *optlen);
 ```
 
-#### Return Value
+## Return Value
 
 0 on success otherwise the errno error.
 
-#### Discussion
+## Discussion
 
 Retrieves a socket option. See 'man 2 getsockopt'.
 

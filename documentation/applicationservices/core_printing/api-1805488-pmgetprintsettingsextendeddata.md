@@ -16,11 +16,11 @@ OSStatus PMGetPrintSettingsExtendedData (
 );
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../core_printing.md#1670007).
 
-#### Overview
+## Overview
 
 Your application typically needs to call `PMGetPrintSettingsExtendedData` two times in order to retrieve the extended print settings data. The first time, pass the constant `kPMDontWantData` in the `extendedData` parameter to obtain the buffer size required for the extended data. Then allocate the buffer and call the function a second time to read the extended data into your buffer.
 

@@ -21,7 +21,7 @@ Sends the receiver’s message (with arguments) to its target and sets the retur
 - (void) invoke;
 ```
 
-#### Discussion
+## Discussion
 
 You must set the receiver’s target, selector, and argument values before calling this method.
 

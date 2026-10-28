@@ -16,7 +16,7 @@ Requests that the user interface to log in be presented.
 static var acceptAllowLoginUI: LSAcceptanceFlags { get }
 ```
 
-#### Discussion
+## Discussion
 
 If `LSCanRefAcceptItem` or `LSCanURLAcceptURL` is called during a drag-and-drop operation, showing a server login dialog would be an inappropriate user experience. If the target designated in the function call is an alias to an application, Launch Services needs to resolve the alias to ascertain what file types the application can open.
 

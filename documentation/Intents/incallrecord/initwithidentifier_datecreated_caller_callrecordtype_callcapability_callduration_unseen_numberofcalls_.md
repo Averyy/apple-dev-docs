@@ -21,7 +21,7 @@ Initializes a call record with the details about the call.
 - (instancetype) initWithIdentifier:(NSString *) identifier dateCreated:(NSDate *) dateCreated caller:(INPerson *) caller callRecordType:(INCallRecordType) callRecordType callCapability:(INCallCapability) callCapability callDuration:(NSNumber *) callDuration unseen:(NSNumber *) unseen numberOfCalls:(NSNumber *) numberOfCalls;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized [`INCallRecord`](../incallrecord.md) object or `nil` if the object could not be initialized.
 

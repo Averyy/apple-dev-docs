@@ -6,15 +6,19 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.is
 
 # mlx.core.isfinite
 
-**isfinite(*a: array*, *stream: StreamOrDevice = None*) → [array](mlx.core.array.md#mlx.core.array)**
-: Return a boolean array indicating which elements are finite.
+```python
+isfinite(a: array, stream: StreamOrDevice = None) → array
+```
+
+Return a boolean array indicating which elements are finite.
+
 An element is finite if it is not infinite or NaN.
 
-Parameters:
-**a** ([array](mlx.core.array.md#mlx.core.array)) – Input array.
+**Parameters:**
+: **a** ([array](mlx.core.array.md#mlx.core.array)) – Input array.
 
-Returns:
-The boolean array indicating which elements are finite.
+**Returns:**
+: The boolean array indicating which elements are finite.
 
-Return type:
-[array](mlx.core.array.md#mlx.core.array)
+**Return type:**
+: [array](mlx.core.array.md#mlx.core.array)

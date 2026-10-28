@@ -21,7 +21,7 @@ The current size of sidebar rows.
 var sidebarRowSize: SidebarRowSize { get set }
 ```
 
-#### Discussion
+## Discussion
 
 On macOS, reflects the value of the “Sidebar icon size” in System Settings’ Appearance settings.
 

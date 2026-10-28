@@ -25,7 +25,7 @@ func xpc_dictionary_get_bool(_ xdict: xpc_object_t, _ key: UnsafePointer<CChar>)
 extern bool xpc_dictionary_get_bool(xpc_object_t xdict, const char *key);
 ```
 
-#### Return Value
+## Return Value
 
 The underlying `bool` value for the specified key. false if the the value for the specified key is not a Boolean value or if there is no value for the specified key.
 

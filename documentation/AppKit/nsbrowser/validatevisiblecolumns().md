@@ -19,7 +19,7 @@ func validateVisibleColumns()
 - (void) validateVisibleColumns;
 ```
 
-#### Discussion
+## Discussion
 
 This method invokes the delegate method [`browser(_:isColumnValid:)`](../nsbrowserdelegate/browser%28_,iscolumnvalid%29.md)
 

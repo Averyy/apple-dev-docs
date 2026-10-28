@@ -24,11 +24,11 @@ func add(_ operand: Int, ordering: AtomicUpdateOrdering) -> (oldValue: Int, newV
 
 Available when `Value` is `Int`.
 
-#### Return Value
+## Return Value
 
 A tuple containing the original value before the operation and the new value after the operation.
 
-#### Discussion
+## Discussion
 
 > **Note**: This operation checks for overflow at runtime and will trap if an overflow does occur. In `-Ounchecked` builds, overflow checking is not performed.
 >

@@ -21,7 +21,7 @@ static let deepBreathing: SRPhotoplethysmogramSample.Usage
 extern SRPhotoplethysmogramSampleUsage const SRPhotoplethysmogramSampleUsageDeepBreathing;
 ```
 
-#### Discussion
+## Discussion
 
 An example is a sample of a reading from a person performing a reflect or breathe session in the Mindfulness app.
 

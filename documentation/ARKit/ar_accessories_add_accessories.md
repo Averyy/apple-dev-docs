@@ -15,7 +15,7 @@ Add accessories to a collection.
 extern void ar_accessories_add_accessories(ar_accessories_t accessories, ar_accessories_t accessories_to_add);
 ```
 
-#### Discussion
+## Discussion
 
 The accessories must be unique. Duplicates of any existing object in the collection will not be added.
 

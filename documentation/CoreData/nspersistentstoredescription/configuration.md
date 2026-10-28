@@ -25,7 +25,7 @@ var configuration: String? { get set }
 @property (copy, nullable) NSString * configuration;
 ```
 
-#### Discussion
+## Discussion
 
 This displays the name of a configuration in the receiver’s managed object model that will be used by the new store. The configuration can be `nil`, in which case no other configurations are allowed.
 

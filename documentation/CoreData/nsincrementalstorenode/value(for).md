@@ -25,11 +25,11 @@ func value(for prop: NSPropertyDescription) -> Any?
 - (id) valueForPropertyDescription:(NSPropertyDescription *) prop;
 ```
 
-#### Return Value
+## Return Value
 
 The value for the property specified by `prop`. May return an instance of `NSNull` for to-one relationships.
 
-#### Discussion
+## Discussion
 
 If a relationship is `nil`, you should create a new value by invoking `newValueForRelationship:forObjectWithID:withContext:error:` on the `NSPersistentStore` object.
 

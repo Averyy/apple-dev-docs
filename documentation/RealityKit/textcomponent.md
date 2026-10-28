@@ -20,7 +20,7 @@ A component that draws 2D text at an entity’s location.
 struct TextComponent
 ```
 
-#### Overview
+## Overview
 
 `TextComponent` renders two-dimensional text in a RealityKit scene. It creates a rounded rectangle mesh to serve as a canvas and draws an attributed string on the mesh. This component handles everything required to render the text, including updating the plane transform, setting material parameters, and creating mesh components.
 

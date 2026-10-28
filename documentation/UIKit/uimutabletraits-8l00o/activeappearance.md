@@ -19,7 +19,7 @@ A property that indicates whether a scene has an active appearance.
 @property (nonatomic) UIUserInterfaceActiveAppearance activeAppearance;
 ```
 
-#### Discussion
+## Discussion
 
 `activeAppearance` describes whether a scene is frontmost; it doesn’t describe a scene’s life-cycle state. A scene that isn’t frontmost can remain in the [`UIScene.ActivationState.foregroundActive`](../uiscene/activationstate-swift.enum/foregroundactive.md) activation state as long as it can still receive user interaction. Its activation state changes to [`UIScene.ActivationState.foregroundInactive`](../uiscene/activationstate-swift.enum/foregroundinactive.md) only when a system interruption takes over interaction. This can happen because of Control Center, an alert, Siri, App Switcher, or another app’s window covering it in windowed apps. Use [`UIScene.ActivationState`](../uiscene/activationstate-swift.enum.md) to decide when to save view state, and use `activeAppearance` to detect when a scene is no longer frontmost.
 

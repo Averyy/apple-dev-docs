@@ -25,7 +25,7 @@ func setAllowsAntialiasing(_ allowsAntialiasing: Bool)
 extern void CGContextSetAllowsAntialiasing(CGContextRef c, bool allowsAntialiasing);
 ```
 
-#### Discussion
+## Discussion
 
 Core Graphics performs antialiasing for a graphics context if both the `allowsAntialiasing` parameter and the graphics state parameter `shouldAntialias` are `true`.
 

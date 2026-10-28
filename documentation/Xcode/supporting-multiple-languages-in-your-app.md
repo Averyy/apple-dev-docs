@@ -5,7 +5,7 @@
 
 Internationalize your app’s strings, images, and other resource types to prepare for localization.
 
-#### Overview
+## Overview
 
 Multilingual apps are apps that can run in more than one language and region. Making your app multilingual widens your audience and gives your customers a better overall experience. People are more comfortable using apps when the text and assets adapt to the language and region settings on their device.
 
@@ -15,7 +15,7 @@ To make your app multilingual, you first *internationalize* it by preparing your
 
 After you internationalize your app, you *localize* it by translating your strings and varying your assets for multiple languages and regions. For more information, see [Localizing and varying text with a string catalog](./localizing-and-varying-text-with-a-string-catalog.md).
 
-#### Internationalize your code
+## Internationalize your code
 
 Write your code so your app automatically adapts to the language and region settings of the device. Use specific localizable APIs and these Xcode tools that support internationalization:
 

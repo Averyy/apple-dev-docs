@@ -19,7 +19,7 @@ Creates a configuration value with the operation chosen by the drop destination.
 init(operation: DropOperation)
 ```
 
-#### Discussion
+## Discussion
 
 Parameter operation: The drop operation that the drop destination chooses to perform on the drop.
 

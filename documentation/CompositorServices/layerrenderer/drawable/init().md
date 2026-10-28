@@ -16,7 +16,7 @@ Creates an uninitialized drawable.
 init()
 ```
 
-#### Discussion
+## Discussion
 
 Fetch the drawable associated with the current frame instead of calling this method.
 

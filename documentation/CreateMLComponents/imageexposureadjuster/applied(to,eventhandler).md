@@ -20,7 +20,7 @@ Adjusts the exposure of the input image.
 func applied(to image: CIImage, eventHandler: EventHandler? = nil) -> CIImage
 ```
 
-#### Return Value
+## Return Value
 
 An image with adjusted exposure.
 

@@ -18,7 +18,7 @@ The singleton app instance for accessing age range services.
 static let shared: AgeRangeService
 ```
 
-#### Discussion
+## Discussion
 
 Use `shared` to access the [`AgeRangeService`](../agerangeservice.md) instance in your app.
 

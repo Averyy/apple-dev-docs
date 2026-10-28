@@ -25,7 +25,7 @@ class func updateSpeechVoices()
 + (void) updateSpeechVoices;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to inform the system when you add or remove voices.
 

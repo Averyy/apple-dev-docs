@@ -21,7 +21,7 @@ func SecKeychainItemFreeAttributesAndData(_ attrList: UnsafeMutablePointer<SecKe
 OSStatus SecKeychainItemFreeAttributesAndData(SecKeychainAttributeList *attrList, void *data);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 

@@ -25,11 +25,11 @@ func vImageConvert_BGRA16UtoRGB16U(_ bgraSrc: UnsafePointer<vImage_Buffer>, _ rg
 vImage_Error vImageConvert_BGRA16UtoRGB16U(const vImage_Buffer *bgraSrc, const vImage_Buffer *rgbDest, vImage_Flags flags);
 ```
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
-#### Discussion
+## Discussion
 
 This function copies the red, green, and blue source channels to the destination buffer.
 

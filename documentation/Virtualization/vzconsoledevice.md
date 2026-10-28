@@ -19,7 +19,7 @@ class VZConsoleDevice
 @interface VZConsoleDevice : NSObject
 ```
 
-#### Overview
+## Overview
 
 Don’t instantiate a `VZConsoleDevice` directly: You first configure console devices on the [`VZVirtualMachineConfiguration`](./vzvirtualmachineconfiguration.md) through a subclass of [`VZConsoleDeviceConfiguration`](./vzconsoledeviceconfiguration.md). After you create [`VZVirtualMachine`](./vzvirtualmachine.md) from the configuration, the console devices are available through the [`consoleDevices`](./vzvirtualmachine/consoledevices.md) property.
 

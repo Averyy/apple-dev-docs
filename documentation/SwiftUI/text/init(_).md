@@ -43,7 +43,7 @@ init(_ resource: LocalizedStringResource)
 init<S>(_ content: S) where S : StringProtocol
 ```
 
-##### Format text by combining attributes and view modifiers
+### Format text by combining attributes and view modifiers
 
 Use this initializer to style text according to attributes found in the specified [`AttributedString`](../../Foundation/attributedstring.md). Attributes in the attributed string take precedence over styles added by view modifiers. For example, the attributed text in the following example appears in blue, despite the use of the [`foregroundColor(_:)`](../view/foregroundcolor%28_%29.md) modifier to use red throughout the enclosing [`VStack`](../vstack.md):
 
@@ -79,17 +79,17 @@ var body: some View {
 }
 ```
 
-##### Supported Foundation attributes
+### Supported Foundation attributes
 
 A SwiftUI [`Text`](../text.md) view renders most of the styles defined by the Foundation attribute [`inlinePresentationIntent`](../../Foundation/attributescopes/foundationattributes/inlinepresentationintent.md), like the [`stronglyEmphasized`](../../Foundation/inlinepresentationintent/stronglyemphasized.md) value, which SwiftUI presents as bold text.
 
 > ❗ **Important**: [`Text`](../text.md) uses only a subset of the attributes defined in [`AttributeScopes.FoundationAttributes`](../../Foundation/attributescopes/foundationattributes.md). `Text` renders all [`InlinePresentationIntent`](../../Foundation/inlinepresentationintent.md) attributes except for [`lineBreak`](../../Foundation/inlinepresentationintent/linebreak.md) and [`softBreak`](../../Foundation/inlinepresentationintent/softbreak.md). It also respects [`writingDirection`](../../Foundation/attributescopes/foundationattributes/writingdirection.md) and renders the [`link`](../../Foundation/attributescopes/foundationattributes/link.md) attribute as a clickable link. `Text` ignores any other Foundation-defined attributes in an attributed string.
 
-##### SwiftUI attributes
+### SwiftUI attributes
 
 SwiftUI also defines additional attributes in the attribute scope [`AttributeScopes.SwiftUIAttributes`](../../Foundation/attributescopes/swiftuiattributes.md) which you can access from an attributed string’s [`swiftUI`](../../Foundation/attributescopes/swiftui.md) property. SwiftUI attributes take precedence over equivalent attributes from other frameworks, such as [`AttributeScopes.UIKitAttributes`](../../Foundation/attributescopes/uikitattributes.md) and [`AttributeScopes.AppKitAttributes`](../../Foundation/attributescopes/appkitattributes.md).
 
-##### Markdown support
+### Markdown support
 
 You can create an `AttributedString` with Markdown syntax, which allows you to style distinct runs within a `Text` view:
 
@@ -118,7 +118,7 @@ In your app’s strings files, use Markdown syntax to apply styling to the app�
 
 For details about Markdown syntax support in SwiftUI, see [`init(_:tableName:bundle:comment:)`](./init%28_,tablename,bundle,comment%29.md).
 
-##### Applying a custom text formatting definition
+### Applying a custom text formatting definition
 
 Use the [`attributedTextFormattingDefinition(_:)`](../view/attributedtextformattingdefinition%28_%29-81jn6.md) modifier to apply a custom [`AttributedTextFormattingDefinition`](../attributedtextformattingdefinition.md) to text created using this initializer. This will result in the text only applying attributes in the definition’s attribute scope and constraining attributes according to the definition’s value constraints prior to display.
 

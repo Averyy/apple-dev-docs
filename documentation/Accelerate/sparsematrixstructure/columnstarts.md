@@ -25,7 +25,7 @@ var columnStarts: UnsafeMutablePointer<Int>
 long * columnStarts;
 ```
 
-#### Discussion
+## Discussion
 
 This array requires an additional, final entry that defines the final column’s length.
 

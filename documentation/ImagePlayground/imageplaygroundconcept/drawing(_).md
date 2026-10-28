@@ -19,7 +19,7 @@ Creates a concept structure from a PencilKit drawing.
 static func drawing(_ drawing: PKDrawing) -> ImagePlaygroundConcept
 ```
 
-#### Discussion
+## Discussion
 
 Call this method when you want to use a PencilKit drawing as the basis for generating a new image. Typically, you include other text-based concept structures in addition to this one. Include at most one PencilKit drawing among a collection of concepts. Including more than one drawing yields unpredictable image results.
 

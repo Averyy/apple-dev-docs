@@ -24,7 +24,7 @@ var duration: TimeInterval { get }
 @property (assign, readonly) NSTimeInterval duration;
 ```
 
-#### Discussion
+## Discussion
 
 HealthKit calculates the [`duration`](./duration.md) as the elapsed time between the activity’s [`startDate`](./startdate.md) and [`endDate`](./enddate.md), ignoring any pause periods. If an activity is currently in progress, it has a `nil`-valued [`endDate`](./enddate.md). In this case, HealthKit calculates the duration as the time between the [`startDate`](./startdate.md) and the current time, ignoring any pause periods.
 

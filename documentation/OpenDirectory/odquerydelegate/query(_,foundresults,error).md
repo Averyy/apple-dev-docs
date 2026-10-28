@@ -21,7 +21,7 @@ func query(_ inQuery: ODQuery!, foundResults inResults: [Any]!, error inError: (
 - (void) query:(ODQuery *) inQuery foundResults:(NSArray *) inResults error:(NSError *) inError;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called as soon as any results become available. Results must be retained or copied. If both `inResults` and `inError` are `nil`, the query has completed.
 

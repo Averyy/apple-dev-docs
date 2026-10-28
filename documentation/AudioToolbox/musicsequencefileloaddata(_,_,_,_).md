@@ -24,11 +24,11 @@ func MusicSequenceFileLoadData(_ inSequence: MusicSequence, _ inData: CFData, _ 
 extern OSStatus MusicSequenceFileLoadData(MusicSequence inSequence, CFDataRef inData, MusicSequenceFileTypeID inFileTypeHint, MusicSequenceLoadFlags inFlags);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 
-#### Discussion
+## Discussion
 
 The data to be loaded must conform to the file type indicated by the `inFileTypeHint` parameter.
 

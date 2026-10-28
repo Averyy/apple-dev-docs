@@ -23,7 +23,7 @@ static let lossySubstitutionKey: StringEncodingDetectionOptionsKey
 extern NSStringEncodingDetectionOptionsKey const NSStringEncodingDetectionLossySubstitutionKey;
 ```
 
-#### Discussion
+## Discussion
 
 Option specifying the string used to substitute for any unsupported characters when converting to a lossy string encoding. If a `@(NO)` value is specified for `NSStringEncodingDetectionAllowLossyKey`, this option has no effect. The corresponding value for this key is an `NSString` object. By default, this value is `U+FFFD`.
 

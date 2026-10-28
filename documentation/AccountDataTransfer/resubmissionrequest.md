@@ -15,7 +15,7 @@ An object that describes a request to resubmit a recurring download request.
 object ResubmissionRequest
 ```
 
-#### Overview
+## Overview
 
 Use the `parentRequestId` and `requestId` returned by [`Submit request`](./submit-request.md), or your most recent call to [`Resubmit request`](./resubmit-request.md).
 

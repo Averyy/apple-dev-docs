@@ -18,7 +18,7 @@ Automatically generate and send tracking vectors to the device.
 final func track(_ metadata: [AVMetadataObject], cameraInformation: DockAccessory.CameraInformation, image: CVPixelBuffer) async throws
 ```
 
-#### Discussion
+## Discussion
 
 The vectors are based on metadata coming from the camera.
 

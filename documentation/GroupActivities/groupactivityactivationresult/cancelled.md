@@ -20,7 +20,7 @@ A result that indicates the user canceled the activation request.
 case cancelled
 ```
 
-#### Discussion
+## Discussion
 
 When you receive this result, ignore the activity.
 

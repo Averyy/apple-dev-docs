@@ -34,7 +34,7 @@ var dueDate: INDateComponentsRange? { get }
 @property (atomic, copy, readonly, nullable) INDateComponentsRange * dueDate;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to get the date by which the payer must make a payment to the payee. The first date in the range represents the due date for the payment and the last date represents the deliquent date. For example, a mortgage payment might be due on the first of the month but the payment isn’t considered delinquent until several weeks later.
 

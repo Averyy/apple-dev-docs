@@ -25,7 +25,7 @@ var channelMap: [NSNumber] { get set }
 @property (nonatomic, retain) NSArray<NSNumber *> * channelMap;
 ```
 
-#### Discussion
+## Discussion
 
 The array size equals the number of output channels. Each element’s value is the input channel number, starting with zero, that the framework copies to that output.
 

@@ -19,7 +19,7 @@ protocol WebResourceLoadDelegate : NSObjectProtocol
 @protocol WebResourceLoadDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 There’s a separate client request and server response made for each resource on a page. By implementing the [`webView(_:identifierForInitialRequest:from:)`](./webresourceloaddelegate/webview%28_,identifierforinitialrequest,from%29.md) method, resource load delegates provide a tracking object used to identify individual resources in subsequent calls to delegate methods. Delegates are then notified when resource loading starts, when data is incrementally received, when any load errors occur, and when the load is complete. Delegates may also change a request before it is sent. In some cases, depending on the page content and server redirects, methods defined in this protocol may be invoked multiple times (see individual method descriptions for more details). All the methods in this protocol are optional.
 

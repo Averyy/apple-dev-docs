@@ -25,7 +25,7 @@ var shouldCenterFilter: Bool { get set }
 @property (nonatomic) BOOL shouldCenterFilter;
 ```
 
-#### Discussion
+## Discussion
 
 If the value of this property is [`true`](../../Swift/true.md) and the filter has an `inputCenter` parameter, the effect node automatically sets the filter’s input center to the effect node’s origin. The default value is [`true`](../../Swift/true.md).
 

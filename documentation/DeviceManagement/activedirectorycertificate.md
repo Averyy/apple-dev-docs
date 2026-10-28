@@ -15,13 +15,13 @@ The payload that configures Active Directory Certificate settings.
 object ActiveDirectoryCertificate
 ```
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.ADCertificate.managed` as the payload type.
 
 To get a certificate from a Microsoft CA, follow the instructions at [Request a certificate from a Microsoft Certificate Authority](https://support.apple.com/en-us/HT204602).
 
-##### Profile availability
+### Profile availability
 
 |  |  |
 | --- | --- |
@@ -33,7 +33,7 @@ To get a certificate from a Microsoft CA, follow the instructions at [Request a 
 | Allowed in user enrollment | macOS |
 | Allow multiple payloads | macOS |
 
-##### Example profile
+### Example profile
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>

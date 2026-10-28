@@ -25,7 +25,7 @@ case proceed
 kSecTrustResultProceed
 ```
 
-#### Discussion
+## Discussion
 
 This value indicates that the user explicitly chose to trust a certificate in the chain, usually by clicking a button in a certificate trust panel. Your app should trust the chain. The Keychain Access utility refers to this value as “Always Trust.”
 

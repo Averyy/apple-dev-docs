@@ -4,7 +4,7 @@
 
 A set of methods that an object can implement to register default placeholders to be displayed for a binding, when no other placeholder is specified.
 
-#### Overview
+## Overview
 
 Individual placeholder values can be specified for each of the marker objects (described in [Selection Markers](./selection-markers.md)), as well as when the property is `nil`.
 

@@ -19,7 +19,7 @@ enum ICScannerColorDataFormatType
 enum ICScannerColorDataFormatType : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 The values correspond to the `ICAP_PLANARCHUNKY` formats as defined in the `TWAIN` Specification.
 

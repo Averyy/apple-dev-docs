@@ -27,7 +27,7 @@ var bounds: CGRect { get set }
 
 - [Implementing a Multi-Touch app](../implementing-a-multi-touch-app.md)
 
-#### Discussion
+## Discussion
 
 The default bounds origin is (0,0) and the size is the same as the size of the rectangle in the [`frame`](./frame.md) property. Changing the size portion of this rectangle grows or shrinks the view relative to its center point. Changing the size also changes the size of the rectangle in the [`frame`](./frame.md) property to match. The coordinates of the bounds rectangle are always specified in points.
 

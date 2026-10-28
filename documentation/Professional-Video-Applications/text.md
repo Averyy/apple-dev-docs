@@ -5,7 +5,7 @@
 
 Describes a block of text that appears in a title or caption on a timeline.
 
-#### Overview
+## Overview
 
 You can have one or more text blocks in a title or caption.
 
@@ -13,7 +13,7 @@ A text block can have different text styles. Use the `text-style` and `text-s
 
 > **Note**:  FCPXML 1.8 and later includes support to describie caption and subtitles.
 
-##### Text Element Caption Attributes
+### Text Element Caption Attributes
 
 | Element | Description |
 | --- | --- |

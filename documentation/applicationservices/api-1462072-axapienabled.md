@@ -15,7 +15,7 @@ Returns whether the accessibility API is enabled.
 Boolean AXAPIEnabled(void);
 ```
 
-#### Return Value
+## Return Value
 
 Returns TRUE if the accessibility API is currently enabled, otherwise FALSE.
 

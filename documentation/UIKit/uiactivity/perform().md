@@ -22,7 +22,7 @@ func perform()
 - (void) performActivity;
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation of this method does nothing. If your service doesn’t provide any custom UI using the [`activityViewController`](./activityviewcontroller.md) method, override this method and use it to perform the activity. Your activity must operate on the data items received in the [`prepare(withActivityItems:)`](./prepare%28withactivityitems%29.md) method.
 

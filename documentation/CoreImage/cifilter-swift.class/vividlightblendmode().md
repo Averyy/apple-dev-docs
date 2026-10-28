@@ -24,11 +24,11 @@ class func vividLightBlendMode() -> any CIFilter & CICompositeOperation
 + (CIFilter<CICompositeOperation> *) vividLightBlendModeFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The blended image as a [`CIImage`](../ciimage.md).
 
-#### Discussion
+## Discussion
 
 The vivid-light blend mode combines the color-dodge and color-burn blend modes (rescaled so that neutral colors become middle gray). If the input Images values are lighter than middle gray, the filter uses dodge; for darker values, the filter uses burn.
 

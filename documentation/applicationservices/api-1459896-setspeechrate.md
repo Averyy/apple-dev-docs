@@ -19,11 +19,11 @@ func SetSpeechRate(_ chan: SpeechChannel, _ rate: Fixed) -> OSErr
 OSErr SetSpeechRate(SpeechChannel chan, Fixed rate);
 ```
 
-#### Return Value
+## Return Value
 
 A resultcode. See [Result Codes](./speech_synthesis_manager.md#1659745).
 
-#### Discussion
+## Discussion
 
 The `SetSpeechRate` functionadjusts the speech rate on the speech channel specified by the `chan` parameterto the rate specified by the `rate` parameter.As a general rule, speaking rates range from around 150 words perminute to around 220 words per minute. It is important to keep inmind, however, that users will differ greatly in their ability to understandsynthesized speech at a particular rate based upon their level ofexperience listening to the voice and their ability to anticipatethe types of utterances they will encounter. 
 

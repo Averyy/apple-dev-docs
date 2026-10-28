@@ -14,7 +14,7 @@
 kOpaqueCriticalRegionID = 6
 ```
 
-#### Discussion
+## Discussion
 
 A critical region.
 

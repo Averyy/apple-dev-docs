@@ -19,7 +19,7 @@ func dismissMediaPlayerController()
 - (void) dismissMediaPlayerController;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to dismiss a modal media interface controller programmatically. When you dismiss the media interface programmatically, WatchKit passes a value of [`false`](../../Swift/false.md) for the `didPlayToEnd` parameter of your completion block and passes a value of `0.0` for the`endTime` parameter.
 

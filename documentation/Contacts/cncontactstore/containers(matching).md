@@ -24,11 +24,11 @@ func containers(matching predicate: NSPredicate?) throws -> [CNContainer]
 - (NSArray<CNContainer *> *) containersMatchingPredicate:(NSPredicate *) predicate error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 An array of [`CNContainer`](../cncontainer.md) objects that match the predicate.
 
-#### Discussion
+## Discussion
 
 A container holds a collection of contacts, and a contact can be in only one container. CardDAV accounts usually have only one container of contacts. Exchange accounts may have multiple containers, where each container represents an Exchange folder.
 

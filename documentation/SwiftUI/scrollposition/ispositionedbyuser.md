@@ -21,7 +21,7 @@ Whether the scroll view has been positioned by the user.
 var isPositionedByUser: Bool { get set }
 ```
 
-#### Discussion
+## Discussion
 
 You can write to this property to control whether the scroll view acts as if it has been positioned by the user. If the position had a non-nil edge / point value, that value will become nil when setting this property to true.
 

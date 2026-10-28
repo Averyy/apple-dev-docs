@@ -25,7 +25,7 @@ class func oneTimeURLParticipant() -> Self
 + (instancetype) oneTimeURLParticipant;
 ```
 
-#### Discussion
+## Discussion
 
 When a participant’s email address / phone number / userRecordID isn’t known up-front, you can add a [`oneTimeURLParticipant()`](./onetimeurlparticipant%28%29.md) to the share. Once you save the share, you can get a custom invitation link or one-time URL for the added participant via [`oneTimeURL(for:)`](../onetimeurl%28for%29.md). Any recipient user can use this custom link to fetch share metadata and accept the share.
 

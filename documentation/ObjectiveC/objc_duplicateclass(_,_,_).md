@@ -25,7 +25,7 @@ func objc_duplicateClass(_ original: AnyClass, _ name: UnsafePointer<CChar>, _ e
 extern Classobjc_duplicateClass(Class original, const char *name, size_t extraBytes);
 ```
 
-#### Discussion
+## Discussion
 
 Do not call this function yourself.
 

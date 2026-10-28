@@ -25,7 +25,7 @@ class func resourceValues(forKeys keys: [URLResourceKey], fromBookmarkData bookm
 + (NSDictionary<NSString *,id> *) resourceValuesForKeys:(NSArray<NSString *> *) keys fromBookmarkData:(NSData *) bookmarkData;
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary of the requested resource values contained in `bookmarkData`.
 

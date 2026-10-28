@@ -23,7 +23,7 @@ var busyReasons: Set<AVProVideoStorage.BusyReason> { get }
 @property (nonatomic, readonly) NSSet<NSString *> * busyReasons;
 ```
 
-#### Discussion
+## Discussion
 
 A non-empty set indicates that Pro Video Storage is currently being modified. While this is non-empty, starting a video capture will fail with an error. This property is key-value observable.
 

@@ -11,7 +11,7 @@ Removes the notification request and releases it.
 virtual void remove() = 0;
 ```
 
-#### Overview
+## Overview
 
 Removes the notification request and release it. Since creating an IONotifier instance will leave it with a retain count of one, creating an IONotifier and then removing it will destroy it. This method is synchronous with any handler invocations, so when this method returns its guaranteed the handler will not be in entered.
 

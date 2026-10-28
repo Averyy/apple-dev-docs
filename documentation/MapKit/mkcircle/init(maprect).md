@@ -25,7 +25,7 @@ convenience init(mapRect: MKMapRect)
 + (instancetype) circleWithMapRect:(MKMapRect) mapRect;
 ```
 
-#### Return Value
+## Return Value
 
 A circle overlay object.
 

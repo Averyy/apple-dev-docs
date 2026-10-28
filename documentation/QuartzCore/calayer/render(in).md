@@ -24,7 +24,7 @@ func render(in ctx: CGContext)
 - (void) renderInContext:(CGContextRef) ctx;
 ```
 
-#### Discussion
+## Discussion
 
 This method renders directly from the layer tree, ignoring any animations added to the render tree. Renders in the coordinate space of the layer.
 

@@ -23,7 +23,7 @@ Returns any custom pronoun behavior this morphology applies to the given languag
 func customPronoun(forLanguage language: String) -> Morphology.CustomPronoun?
 ```
 
-#### Return Value
+## Return Value
 
 A [`Morphology.CustomPronoun`](./custompronoun.md) behavior this morphology uses for the given language, or `nil` if the morphology doesn’t have a custom pronoun behavior set.
 

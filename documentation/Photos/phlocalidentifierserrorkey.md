@@ -24,7 +24,7 @@ let PHLocalIdentifiersErrorKey: String
 extern NSErrorUserInfoKey const PHLocalIdentifiersErrorKey;
 ```
 
-#### Discussion
+## Discussion
 
 Use this key with the [`userInfo`](../Foundation/nserror/userinfo.md) property when encountering the [`multipleIdentifiersFound`](./phphotoserror-swift.struct/multipleidentifiersfound.md) error.
 

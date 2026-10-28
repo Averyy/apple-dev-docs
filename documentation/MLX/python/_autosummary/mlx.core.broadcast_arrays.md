@@ -6,15 +6,19 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.br
 
 # mlx.core.broadcast_arrays
 
-**broadcast_arrays(**arrays: array*, *stream: StreamOrDevice = None*) → [tuple](https://docs.python.org/3/builtins/stdtypes.html#tuple)[[array](mlx.core.array.md#mlx.core.array), ...]**
-: Broadcast arrays against one another.
+```python
+broadcast_arrays(*arrays: array, stream: StreamOrDevice = None) → tuple[array, ...]
+```
+
+Broadcast arrays against one another.
+
 The broadcasting semantics are the same as Numpy.
 
-Parameters:
-***arrays** ([array](mlx.core.array.md#mlx.core.array)) – The input arrays.
+**Parameters:**
+: **\*arrays** ([array](mlx.core.array.md#mlx.core.array)) – The input arrays.
 
-Returns:
-The output arrays with the broadcasted shape.
+**Returns:**
+: The output arrays with the broadcasted shape.
 
-Return type:
-[tuple](https://docs.python.org/3/builtins/stdtypes.html#tuple)([array](mlx.core.array.md#mlx.core.array))
+**Return type:**
+: [tuple](https://docs.python.org/3/builtins/stdtypes.html#tuple)([array](mlx.core.array.md#mlx.core.array))

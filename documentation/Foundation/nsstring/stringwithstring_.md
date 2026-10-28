@@ -21,7 +21,7 @@ Returns a string created by copying the characters from another given string.
 + (instancetype) stringWithString:(NSString *) string;
 ```
 
-#### Return Value
+## Return Value
 
 A string created by copying the characters from `aString`.
 

@@ -28,7 +28,7 @@ class VNDetectHumanBodyPoseRequest
 
 - [Detecting Human Body Poses in Images](./detecting-human-body-poses-in-images.md)
 
-#### Overview
+## Overview
 
 The framework provides the detected body pose as a [`VNHumanBodyPoseObservation`](./vnhumanbodyposeobservation.md).
 

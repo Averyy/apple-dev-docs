@@ -21,11 +21,11 @@ Returns a `DateInterval` of the next weekend, which starts strictly after the gi
 func nextWeekend(startingAfter date: Date, direction: Calendar.SearchDirection = .forward) -> DateInterval?
 ```
 
-#### Return Value
+## Return Value
 
 A `DateInterval`, or `nil` if weekends do not exist in the specific calendar or locale.
 
-#### Discussion
+## Discussion
 
 If `direction` is `.backward`, then finds the previous weekend range strictly before the given date.
 

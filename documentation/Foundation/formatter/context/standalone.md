@@ -25,7 +25,7 @@ case standalone
 NSFormattingContextStandalone
 ```
 
-#### Discussion
+## Discussion
 
 Use this context for dates or date symbols in standalone usage, such as an isolated name on a calendar page.
 

@@ -20,11 +20,11 @@ func settingsAttributes() -> [AnyHashable : Any]!
 - (NSDictionary *) settingsAttributes;
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary containing values for the keys defined in Encoder Attribute Keys.
 
-#### Discussion
+## Discussion
 
 The Compressor app calls this method to get the encoder setting attributes to render on its interface and for configuring the decoder object.
 

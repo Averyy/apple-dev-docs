@@ -19,7 +19,7 @@ var trackingMode: NSSegmentedControl.SwitchTracking { get set }
 @property NSSegmentSwitchTracking trackingMode;
 ```
 
-#### Discussion
+## Discussion
 
 Possible values for `trackingMode` are described in [`NSSegmentedControl.SwitchTracking`](../nssegmentedcontrol/switchtracking.md). The default value is [`NSSegmentedControl.SwitchTracking.selectOne`](../nssegmentedcontrol/switchtracking/selectone.md).
 

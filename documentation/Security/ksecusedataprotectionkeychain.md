@@ -29,7 +29,7 @@ extern CFStringRef const kSecUseDataProtectionKeychain;
 
 - [Sharing access to keychain items among a collection of apps](./sharing-access-to-keychain-items-among-a-collection-of-apps.md)
 
-#### Discussion
+## Discussion
 
 Set the value for this key to `true` in the query dictionary when accessing a macOS keychain item that behaves like an iOS keychain item. For example, use the data protection key when adding, searching for, or deleting an item to which the [`kSecAttrAccessible`](./ksecattraccessible.md) or [`kSecAttrAccessGroup`](./ksecattraccessgroup.md) attributes apply.
 

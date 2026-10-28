@@ -25,11 +25,11 @@ func CFStringGetMaximumSizeForEncoding(_ length: CFIndex, _ encoding: CFStringEn
 extern CFIndex CFStringGetMaximumSizeForEncoding(CFIndex length, CFStringEncoding encoding);
 ```
 
-#### Return Value
+## Return Value
 
 The maximum number of bytes that could be needed to represent `length` number of Unicode characters with the string encoding `encoding`, or [`kCFNotFound`](./kcfnotfound.md) if the number exceeds `LONG_MAX`.
 
-#### Discussion
+## Discussion
 
 The number of bytes that the encoding actually ends up requiring when converting any particular string could be less than the returned value, but never more.
 

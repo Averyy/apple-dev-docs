@@ -19,7 +19,7 @@ Creates and returns an image object based on a Core Image object and the specifi
 + (UIImage *) imageWithCIImage:(CIImage *) ciImage scale:(CGFloat) scale orientation:(UIImageOrientation) orientation;
 ```
 
-#### Return Value
+## Return Value
 
 A new image object.
 

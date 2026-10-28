@@ -20,7 +20,7 @@ A unique id that is stable for the duration of a generated response.
 var id: GenerationID?
 ```
 
-#### Discussion
+## Discussion
 
 A [`LanguageModelSession`](../languagemodelsession.md) produces instances of [`GeneratedContent`](../generatedcontent.md) that have a non-nil `id`. When you stream a response, the `id` is the same for all partial generations in the response stream.
 

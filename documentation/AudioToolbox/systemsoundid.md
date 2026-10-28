@@ -24,7 +24,7 @@ typealias SystemSoundID = UInt32
 typedef UInt32 SystemSoundID;
 ```
 
-#### Discussion
+## Discussion
 
 Call the [`AudioServicesCreateSystemSoundID(_:_:)`](./audioservicescreatesystemsoundid%28_,_%29.md) function to obtain a system sound object.
 

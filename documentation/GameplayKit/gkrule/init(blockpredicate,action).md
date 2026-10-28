@@ -24,11 +24,11 @@ convenience init(blockPredicate predicate: @escaping (GKRuleSystem) -> Bool, act
 + (instancetype) ruleWithBlockPredicate:(BOOL (^)(GKRuleSystem *)) predicate action:(void (^)(GKRuleSystem *)) action;
 ```
 
-#### Return Value
+## Return Value
 
 A new rule object.
 
-#### Discussion
+## Discussion
 
 Rules created using this method can run arbitrary code in their predicate and action, but do not encode their predicate or action when archiving with the [`NSKeyedArchiver`](../../Foundation/nskeyedarchiver.md) class. For archivable rules, use the [`GKRule`](../gkrule.md) methods listed in Creating Data-Driven Rules.
 

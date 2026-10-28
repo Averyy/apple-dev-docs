@@ -27,7 +27,7 @@ optional func searchableItems(forIdentifiers identifiers: [String]) async -> [CS
 - (void) searchableItemsForIdentifiers:(NSArray<NSString *> *) identifiers searchableItemsHandler:(void (^)(NSArray<CSSearchableItem *> *items)) searchableItemsHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to provide the framework with a list of identifiers to search for.
 

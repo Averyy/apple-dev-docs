@@ -21,15 +21,15 @@ func LSGetApplicationForInfo(_ inType: OSType, _ inCreator: OSType, _ inExtensio
 OSStatus LSGetApplicationForInfo(OSType inType, OSType inCreator, CFStringRef inExtension, LSRolesMask inRoleMask, FSRef *outAppRef, CFURLRef *outAppURL);
 ```
 
-#### Return Value
+## Return Value
 
 A result code; see [Result Codes](./launch_services.md#1661359). If no application suitable for opening items with the specified characteristics is found in the Launch Services database, the function will return the result code `kLSApplicationNotFoundErr`.
 
-#### Discussion
+## Discussion
 
 You can request any combination of one, two, or all three of the characteristics specified by the `inType`, `inCreator`, and `inExtension` parameters; at least one of these characteristics must be supplied. Note that since the choice of a preferred application is subject to any document binding preferences the user may have set, the application chosen will not necessarily be the default application that matches the input characteristics, but may instead be a user-specified application that overrides the default.
 
-##### Version-Notes
+### Version-Notes
 
 Thread-safe since Mac OS version 10.2.
 

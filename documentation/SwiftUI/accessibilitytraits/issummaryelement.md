@@ -21,7 +21,7 @@ The accessibility element provides summary information when the application star
 static let isSummaryElement: AccessibilityTraits
 ```
 
-#### Discussion
+## Discussion
 
 Use this trait to characterize an accessibility element that provides a summary of current conditions, settings, or state, like the temperature in the Weather app.
 

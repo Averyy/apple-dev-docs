@@ -15,7 +15,7 @@ An entitlement that verifies age or identity.
 - **Name**: `com.apple.developer.in-app-identity-presentment`
 - **Type**: dictionary
 
-#### Discussion
+## Discussion
 
 For more information on setting up this entitlement to use with the Verify with Wallet API, see [Configuring your environment for the Verify with Wallet API](../../PassKit/configuring-your-environment-for-the-verify-with-wallet-api.md).
 

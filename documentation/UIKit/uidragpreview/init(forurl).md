@@ -18,11 +18,11 @@ Initializes a new drag item preview with a URL.
 convenience init(forURL url: URL)
 ```
 
-#### Return Value
+## Return Value
 
 A drag preview for a URL.
 
-#### Discussion
+## Discussion
 
 This method creates a drag item preview of the URL. The URL preview is a one-line, textual representation that might not show the full URL string. Don’t use a file URL.
 

@@ -17,7 +17,7 @@ A property that indicates whether the current device supports card session funct
 class var isSupported: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 Query this property before calling [`init()`](./init%28%29.md) to avoid raising [`fatalError(_:file:line:)`](../../Swift/fatalerror%28_,file,line%29.md) on ineligible devices.
 

@@ -25,7 +25,7 @@ func CFURLCreateCopyAppendingPathExtension(_ allocator: CFAllocator!, _ url: CFU
 extern CFURLRefCFURLCreateCopyAppendingPathExtension(CFAllocatorRef allocator, CFURLRef url, CFStringRef extension);
 ```
 
-#### Return Value
+## Return Value
 
 A copy of `url` appended with `extension`. Ownership follows the create rule. See [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 

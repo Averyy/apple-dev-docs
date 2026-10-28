@@ -22,11 +22,11 @@ Deletes the donations that match the criteria in the specified predicate.
 func deleteDonations(matching predicate: IntentDonationMatchingPredicate) async throws -> [IntentDonationIdentifier]
 ```
 
-#### Return Value
+## Return Value
 
 An array with the donation identifiers for each deleted donation.
 
-#### Discussion
+## Discussion
 
 Delete donations as part of your app’s overall cleanup and maintenance tasks. You might delete a donation when the data required to perform the action isn’t available. For example, if someone deletes app-specific data with an associated entity, delete all of the donations that contain the entity in a required parameter. You might also delete a donation if someone undoes the associated action, or if the actions are no longer relevant.
 

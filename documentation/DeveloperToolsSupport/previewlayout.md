@@ -21,7 +21,7 @@ A size constraint for a preview.
 enum PreviewLayout
 ```
 
-#### Overview
+## Overview
 
 Customize the layout of a preview that you define using the [`PreviewProvider`](../SwiftUI/previewprovider.md) protocol by providing one of the preview layout values to the [`previewLayout(_:)`](../SwiftUI/view/previewlayout%28_%29.md) view modifier. For example, you can tell the preview to take up only the amount of space that the view requires with [`PreviewLayout.sizeThatFits`](./previewlayout/sizethatfits.md):
 

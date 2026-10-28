@@ -21,7 +21,7 @@ Represents a type of haptic and/or audio feedback that can be played.
 struct SensoryFeedback
 ```
 
-#### Overview
+## Overview
 
 This feedback can be passed to `View.sensoryFeedback` to play it.
 

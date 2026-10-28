@@ -16,11 +16,11 @@ Starts the current event service and associates it with the specified provider o
 virtual kern_return_t Start(IOService *provider);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../../DriverKit/error-codes.md).
 
-#### Discussion
+## Discussion
 
 After successfully matching the specified provider to your event service, the system instantiates your service object and calls this method. Use this method to configure your custom data structures and associated hardware. You might also store a reference to the provider object for later use. After you configure your event service, call the [`RegisterService`](../../DriverKit/ioservice/registerservice.md) method to let the system know that your service is running. If you encounter an error, return an appropriate error code without calling `RegisterService`.
 

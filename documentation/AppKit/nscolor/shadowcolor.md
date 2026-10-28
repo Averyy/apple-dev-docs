@@ -19,11 +19,11 @@ class var shadowColor: NSColor { get }
 @property (class, strong, readonly) NSColor * shadowColor;
 ```
 
-#### Return Value
+## Return Value
 
 The system color for the virtual shadows case by raised objects on the screen.
 
-#### Discussion
+## Discussion
 
 This method is invoked by [`shadow(withLevel:)`](./shadow%28withlevel%29.md). For more information, see [`NSColor`](../nscolor.md).
 

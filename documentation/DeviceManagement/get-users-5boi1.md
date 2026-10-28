@@ -16,9 +16,9 @@ Get information about a set of users.
 - [Retrieving a large record set](./retrieving-a-large-record-set.md)
 - [Handling error responses](./handling-error-responses.md)
 
-#### Discussion
+## Discussion
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

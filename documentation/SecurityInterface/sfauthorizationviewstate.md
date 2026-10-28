@@ -19,7 +19,7 @@ struct SFAuthorizationViewState
 typedef enum { ... } SFAuthorizationViewState;
 ```
 
-#### Overview
+## Overview
 
 These constants are described in Constants in [`SFAuthorizationView`](./sfauthorizationview.md).
 

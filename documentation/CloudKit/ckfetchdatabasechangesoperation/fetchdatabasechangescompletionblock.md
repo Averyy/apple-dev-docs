@@ -27,7 +27,7 @@ var fetchDatabaseChangesCompletionBlock: ((CKServerChangeToken?, Bool, (any Erro
 @property (nonatomic, copy, nullable) void (^fetchDatabaseChangesCompletionBlock)(CKServerChangeToken *serverChangeToken, BOOL moreComing, NSError *operationError);
 ```
 
-#### Discussion
+## Discussion
 
 The closure returns no value and takes the following parameters:
 

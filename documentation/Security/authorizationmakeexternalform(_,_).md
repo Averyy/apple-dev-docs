@@ -20,11 +20,11 @@ func AuthorizationMakeExternalForm(_ authorization: AuthorizationRef, _ extForm:
 OSStatus AuthorizationMakeExternalForm(AuthorizationRef authorization, AuthorizationExternalForm *extForm);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Authorization Services Result Codes](./authorization-services-result-codes.md).
 
-#### Discussion
+## Discussion
 
 This function creates an external representation of an authorization reference so that you can transmit it between processes. Authorizations are bound by session, process, and time limits, so you cannot store the authorization reference for another process to use. Instead, you must create an external representation of the authorization reference and pass it securely to the other process. Use the function [`AuthorizationCreateFromExternalForm(_:_:)`](./authorizationcreatefromexternalform%28_,_%29.md) to internalize the external representation of the authorization reference.
 

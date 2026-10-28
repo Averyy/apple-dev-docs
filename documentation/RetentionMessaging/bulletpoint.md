@@ -19,7 +19,7 @@ object BulletPoint
 
 - [Retention Messaging API changelog](./retention-messaging-changelog.md)
 
-#### Overview
+## Overview
 
 Use `BulletPoint` items when you set up a text-based message that contains bullet points. Each bullet point item consists of the following elements:
 

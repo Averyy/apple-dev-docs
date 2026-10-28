@@ -24,11 +24,11 @@ init(cvImageBuffer imageBuffer: CVImageBuffer)
 - (instancetype) initWithCVImageBuffer:(CVImageBufferRef) imageBuffer;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized image object.
 
-#### Discussion
+## Discussion
 
 The `imageBuffer` parameter must be in one of the following formats:
 

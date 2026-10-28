@@ -21,7 +21,7 @@ var carWindow: CPWindow { get }
 @property (nonatomic, strong, readonly, nonnull) CPWindow * carWindow;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to access the window CarPlay creates for your scene. Only navigation apps have access to that window, and use it to draw their map content. All other categories of apps must use templates exclusively to draw their user interfaces.
 

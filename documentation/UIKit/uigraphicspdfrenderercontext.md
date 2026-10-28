@@ -23,7 +23,7 @@ class UIGraphicsPDFRendererContext
 @interface UIGraphicsPDFRendererContext : UIGraphicsRendererContext
 ```
 
-#### Overview
+## Overview
 
 When using the [`UIGraphicsPDFRenderer`](./uigraphicspdfrenderer.md) drawing methods, you must pass a block of type [`UIGraphicsPDFRenderer.DrawingActions`](./uigraphicspdfrenderer/drawingactions.md) as an argument, which provides a [`UIGraphicsPDFRendererContext`](./uigraphicspdfrenderercontext.md) instance as an argument. Use the context object to access high-level drawing functions and the underlying Core Graphics context.
 

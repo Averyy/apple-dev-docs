@@ -19,11 +19,11 @@ func beginSheetModal(for sheetWindow: NSWindow!, modalDelegate: Any!, didEnd did
 - (IOReturn) beginSheetModalForWindow:(NSWindow *) sheetWindow modalDelegate:(id) modalDelegate didEndSelector:(SEL) didEndSelector contextInfo:(void *) contextInfo;
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if the sheet modal session was started.
 
-#### Discussion
+## Discussion
 
 This function works the same way as -[NSApplication beginSheet:modalForWindow:modalDelegate:didEndSelector:contextInfo:]. The didEndSelector has a similar prototype as in NSApplication except that the first argument is the IOBluetoothDeviceSelectorController object instead of the window:
 

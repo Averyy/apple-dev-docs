@@ -19,7 +19,7 @@ func setIsListChoice(_ isList: Bool)
 - (void) setIsListChoice:(BOOL) isList;
 ```
 
-#### Discussion
+## Discussion
 
 A choice widget annotation can be either a list or a pop-up menu.
 

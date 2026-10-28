@@ -15,7 +15,7 @@ The fill color of a shape.
 fillColor?: string;
 ```
 
-#### Discussion
+## Discussion
 
 This can be any valid CSS color value. Set to `null` for no fill. The default fill color is `rgb(0, 122, 255)`.
 

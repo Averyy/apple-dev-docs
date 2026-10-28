@@ -24,11 +24,11 @@ class func value(forKey key: String) -> Any?
 + (id) valueForKey:(NSString *) key;
 ```
 
-#### Return Value
+## Return Value
 
 The value for the data specified by the key.
 
-#### Discussion
+## Discussion
 
 Nested transactions have nested data scope. Requesting a value for a key first searches the innermost scope, then the enclosing transactions.
 

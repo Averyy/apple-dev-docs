@@ -19,7 +19,7 @@ A name that specifies a user on the local system by way of a string representati
 #define GSS_C_NT_STRING_UID_NAME
 ```
 
-#### Discussion
+## Discussion
 
 A name of this type holds the same numeric identifier as a name of type [`GSS_C_NT_MACHINE_UID_NAME`](./gss_c_nt_machine_uid_name.md), except using a string representation.
 

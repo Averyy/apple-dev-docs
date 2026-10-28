@@ -28,11 +28,11 @@ optional func application(_ application: UIApplication, shouldRestoreApplication
 
 - [About the UI restoration process](../about-the-ui-restoration-process.md)
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the app’s state should be restored; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Apps must implement this method and the [`application(_:shouldSaveApplicationState:)`](./application%28_,shouldsaveapplicationstate%29.md) method for state preservation to occur. In addition, your implementation of this method must return [`true`](../../Swift/true.md) each time UIKit tries to restore the state of your app. You can use the information in the provided coder object to decide whether or not to proceed with state restoration. For example, you might return [`false`](../../Swift/false.md) if the data in the coder is from a different version of your app and can’t be effectively restored to the current version.
 

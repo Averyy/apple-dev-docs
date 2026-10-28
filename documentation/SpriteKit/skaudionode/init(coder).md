@@ -25,7 +25,7 @@ init?(coder aDecoder: NSCoder)
 - (instancetype) initWithCoder:(NSCoder *) aDecoder;
 ```
 
-#### Discussion
+## Discussion
 
 Do not call this initializer directly; it’s called by the system when you should initialize an audio node that has been unarchived.
 

@@ -23,7 +23,7 @@ var inputView: UIView? { get set }
 @property (strong, readwrite, nullable) UIView * inputView;
 ```
 
-#### Discussion
+## Discussion
 
 If the value in this property is `nil`, the text field displays the standard system keyboard when it becomes first responder. Assigning a custom view to this property causes that view to be presented instead.
 

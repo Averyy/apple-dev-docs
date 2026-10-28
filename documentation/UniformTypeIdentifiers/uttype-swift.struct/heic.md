@@ -21,7 +21,7 @@ A type that represents High Efficiency Image Coding images.
 static var heic: UTType { get }
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.heic`.
 

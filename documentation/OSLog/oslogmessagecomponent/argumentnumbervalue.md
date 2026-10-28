@@ -25,7 +25,7 @@ var argumentNumberValue: NSNumber? { get }
 @property (nonatomic, readonly, nullable) NSNumber * argumentNumberValue;
 ```
 
-#### Discussion
+## Discussion
 
 The `argumentNumberValue` property can be `nil` if the argument can’t be decoded. For example, redacted arguments and the last component can’t be decoded.
 

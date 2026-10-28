@@ -24,7 +24,7 @@ func sendProgramChange(_ program: UInt8, onChannel channel: UInt8)
 - (void) sendProgramChange:(uint8_t) program onChannel:(uint8_t) channel;
 ```
 
-#### Discussion
+## Discussion
 
 The system loads the instrument from the bank that was previously set by the MIDI “Bank Select” controller messages (0 and 31). The system uses bank `0` if not previously set.
 

@@ -19,11 +19,11 @@ func ContinueSpeech(_ chan: SpeechChannel) -> OSErr
 OSErr ContinueSpeech(SpeechChannel chan);
 ```
 
-#### Return Value
+## Return Value
 
 A resultcode. See [Result Codes](./speech_synthesis_manager.md#1659745).
 
-#### Discussion
+## Discussion
 
 At any time after the `PauseSpeechAt` functionis called, the `ContinueSpeech` functioncan be called to continue speaking from the beginning of the wordin which speech paused. Calling `ContinueSpeech` ona channel that is not currently in a paused state has no effecton the speech channel or on future calls to the `PauseSpeechAt` function.If you call `ContinueSpeech` ona channel before a pause is effective, `ContinueSpeech` cancelsthe pause.
 

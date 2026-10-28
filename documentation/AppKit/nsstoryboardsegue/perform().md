@@ -19,7 +19,7 @@ func perform()
 - (void) perform;
 ```
 
-#### Discussion
+## Discussion
 
 You can override this method in your [`NSStoryboardSegue`](../nsstoryboardsegue.md) subclass to perform custom animation between the starting/containing controller and the ending/contained controller for a storyboard segue. Typically, you would use Core Animation to set up an animation from one set of views to the next. For more complex animations, you might take a snapshot image of the two view hierarchies and manipulate the images instead of the view objects.
 

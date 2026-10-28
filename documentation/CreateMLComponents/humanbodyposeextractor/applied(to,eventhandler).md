@@ -20,7 +20,7 @@ Extracts human body poses from a pixel buffer.
 func applied(to image: CIImage, eventHandler: EventHandler? = nil) async throws -> [Pose]
 ```
 
-#### Return Value
+## Return Value
 
 A array of  poses from all detected persons.
 

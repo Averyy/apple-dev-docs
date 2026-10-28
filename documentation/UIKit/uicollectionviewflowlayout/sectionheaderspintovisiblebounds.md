@@ -23,7 +23,7 @@ var sectionHeadersPinToVisibleBounds: Bool { get set }
 @property (nonatomic) BOOL sectionHeadersPinToVisibleBounds;
 ```
 
-#### Discussion
+## Discussion
 
 When this property is [`true`](../../Swift/true.md), section header views scroll with content until they reach the top of the screen, at which point they are pinned to the upper bounds of the collection view. Each new header view that scrolls to the top of the screen pushes the previously pinned header view offscreen.
 

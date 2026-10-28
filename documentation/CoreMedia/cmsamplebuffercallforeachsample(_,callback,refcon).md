@@ -25,11 +25,11 @@ func CMSampleBufferCallForEachSample(_ sbuf: CMSampleBuffer, callback: (CMSample
 extern OSStatus CMSampleBufferCallForEachSample(CMSampleBufferRef sbuf, int (*)(struct opaqueCMSampleBuffer *, long, void *)callback, void *refcon);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Sample Buffer Error Codes](./sample-buffer-errors.md).
 
-#### Discussion
+## Discussion
 
 The system will create temporary sample buffers for individual samples. Each sample buffer will refer to the sample data and contain its timing, size, and attachments.
 

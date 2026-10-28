@@ -5,11 +5,11 @@
 
 Send requests from your app when it’s running in the foreground.
 
-#### Overview
+## Overview
 
 Use default and ephemeral requests when your app is running in the foreground. These requests only continue as long as your app runs in the foreground. Because watchOS apps typically only run for short periods of time, you need to monitor all URL requests, and cancel or replace them with background requests when your app transitions to the background.
 
-##### Request time-sensitive information
+### Request time-sensitive information
 
 To request time-sensitive information:
 
@@ -21,7 +21,7 @@ The task returns the requested data (or any errors) to your completion handler.
 
 You can further customize your request by providing [`URLSessionConfiguration`](../Foundation/urlsessionconfiguration.md) or [`NSURLRequest`](../Foundation/nsurlrequest.md) objects, or by requesting a different type of task (for example, a download or upload task). Whenever possible, use a single, shared session for all your requests. Creating and invalidating sessions adds unnecessary overhead.
 
-##### Request sensitive or private information
+### Request sensitive or private information
 
 Ephemeral sessions are similar to default URL sessions; however, ephemeral sessions don’t store caches, credential stores, or any session-related data to disk. Because an ephemeral session doesn’t save potentially sensitive data, it’s ideal for private browsing or other privacy-related tasks. For more information, see [`ephemeral`](../Foundation/urlsessionconfiguration/ephemeral.md).
 
@@ -34,7 +34,7 @@ To request sensitive or private information:
 
 The task returns the requested data (or any errors) to your completion handler.
 
-##### Indicate when requests can be deferred
+### Indicate when requests can be deferred
 
 By default, URL session tasks fail immediately whenever connectivity is unavailable. The system returns an error, such as [`NSURLErrorNotConnectedToInternet`](../Foundation/nsurlerrornotconnectedtointernet-swift.var.md).
 
@@ -50,7 +50,7 @@ To create a deferrable request:
 
 > ❗ **Important**: Background sessions ignore the [`waitsForConnectivity`](../Foundation/urlsessionconfiguration/waitsforconnectivity.md) property.
 
-##### Clean up outstanding tasks
+### Clean up outstanding tasks
 
 Keep track of the URL session tasks you create, and clean them up when your app goes to the background.
 

@@ -21,7 +21,7 @@ A JPEG-XL encoded image.
 static var jpegxl: UTType { get }
 ```
 
-#### Discussion
+## Discussion
 
 **UTI:** public.jpeg-xl
 

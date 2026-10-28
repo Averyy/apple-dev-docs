@@ -19,7 +19,7 @@ func insertArrangedSubview(_ view: NSView, at index: Int)
 - (void) insertArrangedSubview:(NSView *) view atIndex:(NSInteger) index;
 ```
 
-#### Discussion
+## Discussion
 
 If the view is already an arranged view, calling this method moves the view to the specified index in the [`arrangedSubviews`](./arrangedsubviews.md) array. This change doesn’t affect the view’s index in the split view’s [`subviews`](../nsview/subviews.md) array.
 

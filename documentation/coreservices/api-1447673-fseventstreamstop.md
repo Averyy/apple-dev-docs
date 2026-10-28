@@ -18,7 +18,7 @@ func FSEventStreamStop(_ streamRef: FSEventStreamRef)
 void FSEventStreamStop(FSEventStreamRef streamRef);
 ```
 
-#### Discussion
+## Discussion
 
 Unregisters with the FS Events service. The client callback will not be called for this stream while it is stopped.
 

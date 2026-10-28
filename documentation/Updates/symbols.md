@@ -5,11 +5,11 @@
 
 Learn about important changes to Symbols.
 
-#### Overview
+## Overview
 
 Browse notable changes in [Symbols](../Symbols/Symbols.md).
 
-#### June 2024
+## June 2024
 
 - Make symbols even more expressive with new animations. Find new ways to respond to people’s input, convey status changes, and signal ongoing activity with [`WiggleSymbolEffect`](../Symbols/wigglesymboleffect.md), [`RotateSymbolEffect`](../Symbols/rotatesymboleffect.md), and [`BreatheSymbolEffect`](../Symbols/breathesymboleffect.md).
 - Allow symbols to more intelligently transition between related variants with [`magic(fallback:)`](../Symbols/replacesymboleffect/magic%28fallback%29.md). Slashes can now draw on and off, and badges can appear and disappear, or be replaced independently of the base symbol.

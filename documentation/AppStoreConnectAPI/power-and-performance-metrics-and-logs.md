@@ -5,7 +5,7 @@
 
 Get power and performance metrics, logs, and signatures.
 
-#### Overview
+## Overview
 
 The `perfPowerMetricsresource` resource is a read-only resource where you get the power and performance metrics and diagnostics for App Store versions of your app. Use this information to improve your app’s performance. Customers can opt-in to share this information with you on their devices.
 

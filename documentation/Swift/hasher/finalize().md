@@ -21,11 +21,11 @@ Finalizes the hasher state and returns the hash value.
 func finalize() -> Int
 ```
 
-#### Return Value
+## Return Value
 
 The hash value calculated by the hasher.
 
-#### Discussion
+## Discussion
 
 Finalizing consumes the hasher: it is illegal to finalize a hasher you don’t own, or to perform operations on a finalized hasher. (These may become compile-time errors in the future.)
 

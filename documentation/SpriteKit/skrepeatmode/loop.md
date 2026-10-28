@@ -25,7 +25,7 @@ case loop
 SKRepeatModeLoop
 ```
 
-#### Discussion
+## Discussion
 
 Given a sequence with the key values of `[5, 1, 10]` and times of `[0, 0.25, 0.5]`, loop repeat mode produces a set of values that repeats the previous keyframes when the sample time is `0.5`:
 

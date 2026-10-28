@@ -24,11 +24,11 @@ convenience init(name: String, semantic: MDLMaterialSemantic, float3 value: vect
 - (instancetype) initWithName:(NSString *) name semantic:(MDLMaterialSemantic) semantic float3:(vector_float3) value;
 ```
 
-#### Return Value
+## Return Value
 
 A new material property object whose [`type`](./type.md) property is [`MDLMaterialPropertyType.float3`](../mdlmaterialpropertytype/float3.md).
 
-#### Discussion
+## Discussion
 
 A 3-component vector can also be used to store RGB color values. In this case, color components should be interpreted using the Rec. 709 color space standard.
 

@@ -21,11 +21,11 @@ Returns a new instance of the given type, constructed from the raw memory at the
 func loadUnaligned<T>(fromByteOffset offset: Int = 0, as type: T.Type) -> T
 ```
 
-#### Return Value
+## Return Value
 
 A new instance of type `T`, read from the raw bytes at `offset`. The returned instance isn’t associated with the value in the range of memory referenced by this pointer.
 
-#### Discussion
+## Discussion
 
 This function only supports loading trivial types, and will trap if this precondition is not met. A trivial type does not contain any reference-counted property within its in-memory representation. The memory at this pointer plus `offset` must be laid out identically to the in-memory representation of `T`.
 

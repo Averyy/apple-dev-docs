@@ -21,7 +21,7 @@ The convergence threshold.
 var convergenceThreshold: Double
 ```
 
-#### Discussion
+## Discussion
 
 When the residual is within the convergence threshold of the objective, training stops. The threshold is also used by the `fitted` method to decide when progress is no longer being made, in which case the training process will stop before convergence and before the specified maximum number of iterations (known as early stopping).
 

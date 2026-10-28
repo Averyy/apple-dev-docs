@@ -13,11 +13,11 @@ static IOService * waitForService(
  mach_timespec_t *timeout = 0);
 ```
 
-#### Return Value
+## Return Value
 
 A published IOService object matching the supplied dictionary.
 
-#### Overview
+## Overview
 
 Provides a method of waiting for an IOService object matching the supplied matching dictionary to be registered and fully matched.
 

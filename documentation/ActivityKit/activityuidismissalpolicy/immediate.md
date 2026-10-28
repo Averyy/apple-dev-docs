@@ -20,7 +20,7 @@ static let immediate: ActivityUIDismissalPolicy
 
 - [Displaying live data with Live Activities](../displaying-live-data-with-live-activities.md)
 
-#### Discussion
+## Discussion
 
 With the `immediate` dismissal policy, the system immediately removes the ended Live Activity and the [`ActivityState`](../activitystate.md) changes to [`ActivityState.dismissed`](../activitystate/dismissed.md).
 

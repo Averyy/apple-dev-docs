@@ -24,7 +24,7 @@ var controlPointStride: Int { get set }
 @property (nonatomic) NSUInteger controlPointStride;
 ```
 
-#### Discussion
+## Discussion
 
 You are responsible for ensuring this stride is a multiple of the control point format’s element size, and at a minimum exactly the control point format’s size.
 

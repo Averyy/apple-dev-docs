@@ -17,7 +17,7 @@ Loads a model adapter using a [`Downloader`](../downloader.md) and the provided 
 func load(from downloader: any Downloader, configuration: ModelConfiguration, useLatest: Bool = false, progressHandler: @Sendable @escaping (Progress) -> Void = { _ in }) async throws -> ModelAdapter
 ```
 
-#### Discussion
+## Discussion
 
 This method fetches the adapter configuration and weights, decodes the appropriate fine-tuning format, and initializes a `ModelAdapter` accordingly.
 

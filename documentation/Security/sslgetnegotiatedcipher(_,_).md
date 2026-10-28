@@ -24,11 +24,11 @@ func SSLGetNegotiatedCipher(_ context: SSLContext, _ cipherSuite: UnsafeMutableP
 OSStatus SSLGetNegotiatedCipher(SSLContextRef context, SSLCipherSuite *cipherSuite);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Secure Transport Result Codes](./secure-transport-result-codes.md).
 
-#### Discussion
+## Discussion
 
 You should call this function only when a session is active.
 

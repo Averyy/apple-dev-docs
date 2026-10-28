@@ -24,7 +24,7 @@ class EKSource
 @interface EKSource : EKObject
 ```
 
-#### Overview
+## Overview
 
 You do not create instances of this class; instead, you retrieve `EKSource` objects from an [`EKEventStore`](./ekeventstore.md) object. Use the sources property to get all the `EKSource` objects for an event store, and use the methods in this class to access properties of the source object.
 

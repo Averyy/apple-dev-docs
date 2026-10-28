@@ -15,7 +15,7 @@ A generic product identifier that represents all Advanced Commerce API products 
 string targetProductId
 ```
 
-#### Discussion
+## Discussion
 
 You provide the `targetProductId` when you migrate a product using the [`Migrate a Subscription to Advanced Commerce API`](./migrate-subscription-to-advanced-commerce-api.md) endpoint.
 

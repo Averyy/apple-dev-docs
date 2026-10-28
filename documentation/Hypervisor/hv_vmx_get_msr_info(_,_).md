@@ -23,7 +23,7 @@ extern hv_return_t hv_vmx_get_msr_info(hv_vmx_msr_info_t field, uint64_t *value)
 
 - [Extending vCPU Capabilities Using Model-Specific Registers](./extending-vcpu-capabilities-using-model-specific-registers.md)
 
-#### Return Value
+## Return Value
 
 [`HV_SUCCESS`](./hv_success.md) if the operation was successful, otherwise an error code specified in [`hv_return_t`](./hv_return_t.md).
 

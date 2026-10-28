@@ -24,7 +24,7 @@ static let audioPan: CHHapticEvent.ParameterID
 extern CHHapticEventParameterID CHHapticEventParameterIDAudioPan;
 ```
 
-#### Discussion
+## Discussion
 
 This parameter value ranges from -1.0 (panned hard left) to 1.0 (panned hard right). The default value is 0.0 (center panned).
 

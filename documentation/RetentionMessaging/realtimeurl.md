@@ -23,7 +23,7 @@ string realtimeURL
 
 **Maximum Length**: `256`
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**: The `realtimeURL` must begin with `https://` and be a maximum of 256 characters. Otherwise, the call to [`Configure Realtime URL`](./configure-realtime-url.md) fails.
 

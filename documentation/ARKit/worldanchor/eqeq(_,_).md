@@ -15,7 +15,7 @@ Returns a Boolean value indicating whether two world anchors are equal.
 static func == (lhs: WorldAnchor, rhs: WorldAnchor) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the two world anchors are equal; otherwise, `false`.
 

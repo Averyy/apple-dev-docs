@@ -15,7 +15,7 @@ Starts the sender.
 func start() async
 ```
 
-#### Discussion
+## Discussion
 
 Call `start` before you start sending any frames, audio, or venue descriptor information to the receivers.
 

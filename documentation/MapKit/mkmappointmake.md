@@ -21,7 +21,7 @@ Creates a new map point structure from the specified values.
 static MKMapPoint MKMapPointMake(double x, double y);
 ```
 
-#### Return Value
+## Return Value
 
 A map point with the specified values.
 

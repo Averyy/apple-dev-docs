@@ -5,7 +5,7 @@
 
 Run draw commands that render to different outputs using the same vertex data multiple times.
 
-#### Overview
+## Overview
 
 With *vertex amplification*, you can encode drawing commands that process the same vertex multiple times, one per render target. Vertex amplification generates copies of a command’s vertex data for each render pipeline. Vertex amplification is more efficient than encoding the command multiple times with the same vertex because the GPU fetches the vertex data only once. The GPU then calls your vertex function multiple times — equal to the amplification multiplier — for each vertex.
 
@@ -15,7 +15,7 @@ For example, you can use vertex amplification to implement cascaded shadow maps,
 
 Apps typically leverage vertex amplification to render the same vertices to different texture layers or to multiple viewports. For more information about these techniques, see [Rendering to multiple texture slices in a draw command](./rendering-to-multiple-texture-slices-in-a-draw-command.md) and [Rendering to multiple viewports in a draw command](./rendering-to-multiple-viewports-in-a-draw-command.md).
 
-##### Check whether a GPU supports a vertex amplification multiplier
+### Check whether a GPU supports a vertex amplification multiplier
 
 Confirm whether the GPU supports a specific multiplier for vertex amplification by passing its integer value to an [`MTLDevice`](./mtldevice.md) instance’s [`supportsVertexAmplificationCount(_:)`](./mtldevice/supportsvertexamplificationcount%28_%29.md) method. Pass an amplification multiplier value that’s `2` or greater. A value of `1` has no effect because it effectively disables vertex amplification.
 
@@ -23,7 +23,7 @@ Confirm whether the GPU supports a specific multiplier for vertex amplification 
 
 After your app confirms that the GPU supports a vertex amplification multiplier at runtime, it can safely configure a pipeline state to use that multiplier.
 
-##### Set a render pipeline descriptor’s largest vertex amplification multiplier
+### Set a render pipeline descriptor’s largest vertex amplification multiplier
 
 Configure an [`MTLRenderPipelineDescriptor`](./mtlrenderpipelinedescriptor.md) instance’s [`maxVertexAmplificationCount`](./mtlrenderpipelinedescriptor/maxvertexamplificationcount.md) property to a multiplier value that the GPU supports. Any encoders you create with the descriptor can support any vertex amplification factor in the range `[1, `[`maxVertexAmplificationCount`](./mtlrenderpipelinedescriptor/maxvertexamplificationcount.md)`]`.
 
@@ -53,7 +53,7 @@ Continue configuring your pipeline descriptor and create an [`MTLRenderPipelineS
 
 The example above sets the descriptor’s [`maxVertexAmplificationCount`](./mtlrenderpipelinedescriptor/maxvertexamplificationcount.md) property to `2`. Most apps typically set this property to the largest amplification factor the GPU supports. That way, an encoder that uses the pipeline state from that descriptor has the option to use any valid vertex amplification factor for that GPU.
 
-##### Enable vertex amplification for a render pass
+### Enable vertex amplification for a render pass
 
 Configure an [`MTLRenderCommandEncoder`](./mtlrendercommandencoder.md) instance to apply vertex amplification for subsequent rendering commands by calling its [`setVertexAmplificationCount(_:viewMappings:)`](./mtlrendercommandencoder/setvertexamplificationcount%28_,viewmappings%29.md) method.
 
@@ -127,7 +127,7 @@ func configureEncoder(_ renderEncoder: MTLRenderCommandEncoder) {
 
 See the [Metal Shading Language Specification](https://developer.apple.com/metal/Metal-Shading-Language-Specification.pdf) for information about applying an attribute to a parameter of a GPU function (shader and kernel).
 
-##### Add vertex amplification to your vertex shader
+### Add vertex amplification to your vertex shader
 
 Implement vertex amplification in your shader code by adding parameters that represent the amplification ID and amplification factor. Designate which parameter is which by appending an attribute to each.
 
@@ -179,7 +179,7 @@ vertex VertexOut vs_main(VertexIn in[[stage_in]],
 
 You can also invoke shaders that have these parameters with a draw call that’s not applying vertex amplification. In those scenarios, the GPU calls the shader once per vertex, and sets the parameters with `[[amplification_id]]` and `[[amplification_count]]` to `0` and `1`, respectively.
 
-##### Mark values common to all vertices as shared
+### Mark values common to all vertices as shared
 
 You can help reduce the GPU’s runtime workload by annotating values that are the same for all amplification IDs of a vertex. The Metal compiler detects values that remain consistent across all amplification IDs as *shared* values. You can also tell the compiler which values you consider shared by adding the `[[shared]]` attribute.
 
@@ -316,7 +316,7 @@ vertex VertexOut vs_main(VertexIn in[[stage_in]],
 }
 ```
 
-##### Combine vertex amplification with primitive instancing
+### Combine vertex amplification with primitive instancing
 
 *Primitive instancing* is another way to generate copies of vertex data by providing additional data that modifies the original vertices for each instance. For example, you might animate a model by altering its vertex data with a sequence of pose offsets, each corresponding to a frame of animation.
 

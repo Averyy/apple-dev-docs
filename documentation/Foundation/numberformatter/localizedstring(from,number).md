@@ -25,7 +25,7 @@ class func localizedString(from num: NSNumber, number nstyle: NumberFormatter.St
 + (NSString *) localizedStringFromNumber:(NSNumber *) num numberStyle:(NSNumberFormatterStyle) nstyle;
 ```
 
-#### Return Value
+## Return Value
 
 An appropriately formatted `NSString`.
 

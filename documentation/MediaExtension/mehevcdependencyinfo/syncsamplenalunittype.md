@@ -19,7 +19,7 @@ var syncSampleNALUnitType: Int16 { get set }
 @property (nonatomic) int16_t syncSampleNALUnitType;
 ```
 
-#### Discussion
+## Discussion
 
 This value maps to the [`kCMSampleAttachmentKey_HEVCSyncSampleNALUnitType`](../../CoreMedia/kcmsampleattachmentkey_hevcsyncsamplenalunittype.md) sample buffer attachment.
 

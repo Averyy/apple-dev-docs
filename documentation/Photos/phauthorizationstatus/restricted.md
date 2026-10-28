@@ -24,7 +24,7 @@ case restricted
 PHAuthorizationStatusRestricted
 ```
 
-#### Discussion
+## Discussion
 
 Parental controls or institutional configuration profiles can restrict the user’s ability to grant photo library access to an app.
 

@@ -25,7 +25,7 @@ func CMTimebaseAddTimer(_ timebase: CMTimebase, timer: CFRunLoopTimer, runloop: 
 extern OSStatus CMTimebaseAddTimer(CMTimebaseRef timebase, CFRunLoopTimerRef timer, CFRunLoopRef runloop);
 ```
 
-#### Discussion
+## Discussion
 
 The timer must be a repeating runloop timer (with a very long interval at least as long as the constant [`kCMTimebaseVeryLongCFTimeInterval`](./kcmtimebaseverylongcftimeinterval.md)) attached to a runloop. The timebase retains the timer, and maintains its “NextFireDate” according to the `CMTime` set using [`CMTimebaseSetTimerNextFireTime(_:timer:fireTime:flags:)`](./cmtimebasesettimernextfiretime%28_,timer,firetime,flags%29.md). Until the first call to `CMTimebaseSetTimerNextFireTime`, the system sets the “NextFireDate” to a future time. The function retains the  runloop you specify, which must be the runloop you attached to the timer when you created it. The system uses the retained runloop to call `CFRunLoopWakeUp`() when the timebase modifies the timer’s fire date.
 

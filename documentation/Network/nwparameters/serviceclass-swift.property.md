@@ -21,7 +21,7 @@ The traffic characteristics network connections send and receive.
 final var serviceClass: NWParameters.ServiceClass { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The `serviceClass` you use tells the system and compatible networks how to prioritize transmitted packets on Wi-Fi, Ethernet, or cellular for a given connection. Describe whether your traffic favors low latency (for immediacy), or high throughput (for bulk transfers), and the transport may schedule your outgoing packets to reflect that tradeoff.
 
@@ -29,7 +29,7 @@ Use [`NWParameters.ServiceClass.bestEffort`](./serviceclass-swift.enum/besteffor
 
 Certain cellular networks also offer Network Slicing, which can use `serviceClass` to isolate traffic based on its expected characteristics.
 
-#### Enabling Network Slicing
+## Enabling Network Slicing
 
 There are two steps to enable Cellular Network Slicing:
 

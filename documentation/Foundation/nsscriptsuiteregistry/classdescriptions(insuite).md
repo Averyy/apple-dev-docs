@@ -20,7 +20,7 @@ func classDescriptions(inSuite suiteName: String) -> [String : NSScriptClassDesc
 - (NSDictionary<NSString *,NSScriptClassDescription *> *) classDescriptionsInSuite:(NSString *) suiteName;
 ```
 
-#### Discussion
+## Discussion
 
 Each class description (instance of [`NSScriptClassDescription`](../nsscriptclassdescription.md)) in the returned dictionary is identified by class name.
 

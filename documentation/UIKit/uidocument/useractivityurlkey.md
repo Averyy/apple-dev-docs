@@ -22,7 +22,7 @@ class let userActivityURLKey: String
 extern NSString * const NSUserActivityDocumentURLKey;
 ```
 
-#### Discussion
+## Discussion
 
 You use this key in the [`userInfo`](../../Foundation/nsuseractivity/userinfo.md) dictionary of an [`NSUserActivity`](../../Foundation/nsuseractivity.md) object. Its value is the URL of the document associated with the user activity.
 

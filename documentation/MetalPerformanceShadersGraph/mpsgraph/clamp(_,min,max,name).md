@@ -24,11 +24,11 @@ func clamp(_ tensor: MPSGraphTensor, min minValueTensor: MPSGraphTensor, max max
 - (MPSGraphTensor *) clampWithTensor:(MPSGraphTensor *) tensor minValueTensor:(MPSGraphTensor *) minValueTensor maxValueTensor:(MPSGraphTensor *) maxValueTensor name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid `MPSGraphTensor` object containing the elementwise result of the applied operation.
 
-#### Discussion
+## Discussion
 
 This operation creates a clamp operation and returns the result tensor. It supports broadcasting as well.
 

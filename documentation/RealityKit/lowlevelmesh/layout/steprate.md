@@ -20,7 +20,7 @@ The number of instances that share the same per-instance vertex data.
 var stepRate: Int
 ```
 
-#### Discussion
+## Discussion
 
 Used together with `stepFunction`. When `stepFunction` is `.perInstance`, the vertex shader advances to the next entry in this layout once per `stepRate` instances. Defaults to `1`.
 

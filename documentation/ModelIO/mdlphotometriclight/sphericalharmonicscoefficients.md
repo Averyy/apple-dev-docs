@@ -24,7 +24,7 @@ var sphericalHarmonicsCoefficients: Data? { get }
 @property (nonatomic, copy, readonly, nullable) NSData * sphericalHarmonicsCoefficients;
 ```
 
-#### Discussion
+## Discussion
 
 Spherical harmonic coefficients describe the distribution of light around a light source with less high-frequency detail than a cube map texture, but they can be used more efficiently in real-time rendering. Use the [`generateSphericalHarmonics(fromLight:)`](./generatesphericalharmonics%28fromlight%29.md) method to create spherical harmonics data based on the light’s photometry data.
 

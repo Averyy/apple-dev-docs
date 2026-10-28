@@ -13,11 +13,11 @@ virtual Boolean initWithEntries(
  UInt32entrySize);
 ```
 
-#### Return Value
+## Return Value
 
 Reeturns true on success and false on failure.
 
-#### Overview
+## Overview
 
 This method will initialize an IODataQueue instance with enough capacity for numEntries of entrySize. It does account for the IODataQueueEntry overhead for each entry. Note that the numEntries and entrySize are simply used to determine the data region size. They do not actually restrict the size of number of entries that can be added to the queue.
 

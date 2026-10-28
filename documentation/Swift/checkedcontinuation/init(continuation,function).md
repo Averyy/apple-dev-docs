@@ -21,7 +21,7 @@ Creates a checked continuation from an unsafe continuation.
 init(continuation: UnsafeContinuation<T, E>, function: String = #function)
 ```
 
-#### Discussion
+## Discussion
 
 Instead of calling this initializer, most code calls the `withCheckedContinuation(function:_:)` or `withCheckedThrowingContinuation(function:_:)` function instead. You only need to initialize your own `CheckedContinuation<T, E>` if you already have an `UnsafeContinuation` you want to impose checking on.
 

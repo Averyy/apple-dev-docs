@@ -25,7 +25,7 @@ func cancel(with closeCode: URLSessionWebSocketTask.CloseCode, reason: Data?)
 - (void) cancelWithCloseCode:(NSURLSessionWebSocketCloseCode) closeCode reason:(NSData *) reason;
 ```
 
-#### Discussion
+## Discussion
 
 If you call [`cancel()`](../urlsessiontask/cancel%28%29.md) on the task instead of this method, it sends a cancellation frame with no close code or reason.
 

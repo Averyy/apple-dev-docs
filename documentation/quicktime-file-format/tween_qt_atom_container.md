@@ -5,7 +5,7 @@
 
 Specify the characteristics of a tween with atoms in a tween QT atom container.
 
-#### Overview
+## Overview
 
 A tween QT atom container can contain the atoms described in the following sections.
 

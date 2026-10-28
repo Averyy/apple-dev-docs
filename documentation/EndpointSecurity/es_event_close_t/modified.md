@@ -20,7 +20,7 @@ var modified: Bool
 bool modified;
 ```
 
-#### Discussion
+## Discussion
 
 This value corresponds to `KAUTH_FILEOP_CLOSE_MODIFIED`.
 

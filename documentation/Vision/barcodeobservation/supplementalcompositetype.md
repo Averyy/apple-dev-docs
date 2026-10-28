@@ -21,7 +21,7 @@ The supplemental composite type.
 let supplementalCompositeType: BarcodeObservation.CompositeType?
 ```
 
-#### Discussion
+## Discussion
 
 Currently, this can only refer to the composite flag of the 2D symbology as part of a GS1 composite symbology.
 

@@ -19,7 +19,7 @@ static func unignoredChildrenForOnlyChild(from originalChild: Any) -> [Any]
 extern NSArray *NSAccessibilityUnignoredChildrenForOnlyChild(id originalChild);
 ```
 
-#### Discussion
+## Discussion
 
 Tests whether `originalChild` is an ignored object and returns an array containing either `originalChild`, if it is not ignored, or its unignored descendants.
 

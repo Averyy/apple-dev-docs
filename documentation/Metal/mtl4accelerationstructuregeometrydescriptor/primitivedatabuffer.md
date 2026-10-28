@@ -24,7 +24,7 @@ var primitiveDataBuffer: MTL4BufferRange { get set }
 @property (nonatomic) MTL4BufferRange primitiveDataBuffer;
 ```
 
-#### Discussion
+## Discussion
 
 You can use zero as the buffer address in this buffer range.
 

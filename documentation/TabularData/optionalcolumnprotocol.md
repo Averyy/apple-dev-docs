@@ -21,7 +21,7 @@ A type that represents a column that has missing values.
 protocol OptionalColumnProtocol<WrappedElement> : ColumnProtocol
 ```
 
-#### Overview
+## Overview
 
 `OptionalColumnProtocol` defines the common functionality for column types that support missing values.
 

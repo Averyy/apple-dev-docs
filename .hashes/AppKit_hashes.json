@@ -4654,7 +4654,7 @@
     },
     "https://developer.apple.com/documentation/appkit/nsactioncell": {
       "file_path": "documentation/AppKit/nsactioncell.md",
-      "hash": "5f586aac06f671d4f444a33a6e1fad710577e032c680c1f7dd3063ef272e8eb8"
+      "hash": "a7e09b084fbccb465e30841b96a2d31645768fa5187b313ba38be4a4ab953703"
     },
     "https://developer.apple.com/documentation/appkit/nsactioncell/action": {
       "file_path": "documentation/AppKit/nsactioncell/action.md",
@@ -49258,7 +49258,7 @@
     },
     "https://developer.apple.com/documentation/appkit/nsview": {
       "file_path": "documentation/AppKit/nsview.md",
-      "hash": "3c3cb9496201f8be3263ee00f27d157435edb33947028bcec752d3efda3afbd4"
+      "hash": "5883d4b30ed89ba5b0d357fa0f43909ece28209876999ae341021a8d8e4a92bc"
     },
     "https://developer.apple.com/documentation/appkit/nsview-appearance": {
       "file_path": "documentation/AppKit/nsview-appearance.md",
@@ -60474,7 +60474,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appkit/nsactioncell.json": {
       "file_path": "documentation/AppKit/nsactioncell.md",
-      "hash": "5f586aac06f671d4f444a33a6e1fad710577e032c680c1f7dd3063ef272e8eb8"
+      "hash": "a7e09b084fbccb465e30841b96a2d31645768fa5187b313ba38be4a4ab953703"
     },
     "https://developer.apple.com/tutorials/data/documentation/appkit/nsactioncell/action.json": {
       "file_path": "documentation/AppKit/nsactioncell/action.md",
@@ -105094,7 +105094,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appkit/nsview.json": {
       "file_path": "documentation/AppKit/nsview.md",
-      "hash": "3c3cb9496201f8be3263ee00f27d157435edb33947028bcec752d3efda3afbd4"
+      "hash": "5883d4b30ed89ba5b0d357fa0f43909ece28209876999ae341021a8d8e4a92bc"
     },
     "https://developer.apple.com/tutorials/data/documentation/appkit/nsview/acceptsfirstmouse(for:).json": {
       "file_path": "documentation/AppKit/nsview/acceptsfirstmouse(for).md",
@@ -111643,7 +111643,7 @@
   },
   "metadata": {
     "render": {
-      "version": 3
+      "version": 4
     },
     "total_pages": 27910
   }

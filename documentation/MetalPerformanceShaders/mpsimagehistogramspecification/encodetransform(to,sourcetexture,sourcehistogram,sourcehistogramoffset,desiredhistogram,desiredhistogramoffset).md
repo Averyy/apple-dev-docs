@@ -24,7 +24,7 @@ func encodeTransform(to commandBuffer: any MTLCommandBuffer, sourceTexture sourc
 - (void) encodeTransformToCommandBuffer:(id<MTLCommandBuffer>) commandBuffer sourceTexture:(id<MTLTexture>) source sourceHistogram:(id<MTLBuffer>) sourceHistogram sourceHistogramOffset:(NSUInteger) sourceHistogramOffset desiredHistogram:(id<MTLBuffer>) desiredHistogram desiredHistogramOffset:(NSUInteger) desiredHistogramOffset;
 ```
 
-#### Discussion
+## Discussion
 
 The transform function will not begin to execute until after the command buffer has been enqueued and committed. This step will need to be repeated with the new [`MPSKernel`](../mpskernel.md) object if the [`copy(with:device:)`](../mpskernel/copy%28with,device%29.md) or [`copy(with:)`](../../Foundation/nscopying/copy%28with%29.md) method is called.
 

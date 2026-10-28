@@ -22,11 +22,11 @@ nonisolated
 func scale(x: CGFloat = 1, y: CGFloat = 1, anchor: UnitPoint = .center) -> ScaledShape<Self>
 ```
 
-#### Return Value
+## Return Value
 
 A scaled form of this shape.
 
-#### Discussion
+## Discussion
 
 Both the `x` and `y` multiplication factors halve their respective dimension’s size when set to `0.5`, maintain their existing size when set to `1`, double their size when set to `2`, and so forth.
 

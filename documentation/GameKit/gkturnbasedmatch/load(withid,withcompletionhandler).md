@@ -29,7 +29,7 @@ class func load(withID matchID: String) async throws -> GKTurnBasedMatch
 + (void) loadMatchWithID:(NSString *) matchID withCompletionHandler:(void (^)(GKTurnBasedMatch *match, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 The [`matchData`](./matchdata.md) property of the match object is `nil` until you fetch the data from Game Center using the [`loadMatchData(completionHandler:)`](./loadmatchdata%28completionhandler%29.md) method.
 

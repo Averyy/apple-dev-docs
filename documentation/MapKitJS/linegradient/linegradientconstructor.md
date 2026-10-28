@@ -15,7 +15,7 @@ Creates a style that renders a gradient along the length of a line.
 constructor(colorStops?: Record<number, string>);
 ```
 
-#### Discussion
+## Discussion
 
 The unit distance keys must be a number between `0` and `1`. A value of `0` represents the beginning of the polyline and a value of `1` represents the end. The associated values are CSS colors.
 

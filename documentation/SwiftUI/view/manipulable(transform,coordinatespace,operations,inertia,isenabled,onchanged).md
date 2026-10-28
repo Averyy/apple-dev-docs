@@ -16,11 +16,11 @@ nonisolated
 func manipulable(transform: Binding<AffineTransform3D>, coordinateSpace: some CoordinateSpaceProtocol = .local, operations: Manipulable.Operation.Set = .all, inertia: Manipulable.Inertia = .medium, isEnabled: Bool = true, onChanged: ((Manipulable.Event) -> Void)? = nil) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view with a 3D affine transform applied and that can be manipulated using common hand gestures.
 
-#### Discussion
+## Discussion
 
 When a person ends the manipulation gesture, the view will maintain its transform but you may also modify it programmatically when the gesture is inactive.
 

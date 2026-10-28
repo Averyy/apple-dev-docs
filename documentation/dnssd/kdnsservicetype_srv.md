@@ -23,7 +23,7 @@ var kDNSServiceType_SRV: Int { get }
 kDNSServiceType_SRV
 ```
 
-#### Discussion
+## Discussion
 
 Server Selection.
 

@@ -20,7 +20,7 @@ The color of the stroke.
 extern NSAttributedStringKey const NSStrokeColorAttributeName;
 ```
 
-#### Overview
+## Overview
 
 The value of this parameter is a [`UIColor`](./uicolor.md) object. If it is not defined (which is the case by default), it is assumed to be the same as the value of [`NSForegroundColorAttributeName`](./nsforegroundcolorattributename.md); otherwise, it describes the outline color. For more details, see [Drawing attributed strings that are both filled and stroked](https://developer.apple.com/library/archive/qa/qa1531/_index.html#//apple_ref/doc/uid/DTS40007490).
 

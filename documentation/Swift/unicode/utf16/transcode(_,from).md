@@ -21,7 +21,7 @@ Converts a scalar from another encoding’s representation, returning `nil` if t
 static func transcode<FromEncoding>(_ content: FromEncoding.EncodedScalar, from _: FromEncoding.Type) -> Unicode.UTF16.EncodedScalar? where FromEncoding : _UnicodeEncoding
 ```
 
-#### Discussion
+## Discussion
 
 A default implementation of this method will be provided automatically for any conforming type that does not implement one.
 

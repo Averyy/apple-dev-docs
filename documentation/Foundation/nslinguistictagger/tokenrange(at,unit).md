@@ -27,7 +27,7 @@ func tokenRange(at charIndex: Int, unit: NSLinguisticTaggerUnit) -> NSRange
 - (NSRange) tokenRangeAtIndex:(NSUInteger) charIndex unit:(NSLinguisticTaggerUnit) unit;
 ```
 
-#### Return Value
+## Return Value
 
 The range of the substring for the linguistic unit.
 

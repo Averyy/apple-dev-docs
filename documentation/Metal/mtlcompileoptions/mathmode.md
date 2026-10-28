@@ -24,7 +24,7 @@ var mathMode: MTLMathMode { get set }
 @property (nonatomic, readwrite) MTLMathMode mathMode;
 ```
 
-#### Discussion
+## Discussion
 
 This property replaces the [`fastMathEnabled`](./fastmathenabled.md) property.
 

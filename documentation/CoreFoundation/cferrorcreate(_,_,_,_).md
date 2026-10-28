@@ -25,7 +25,7 @@ func CFErrorCreate(_ allocator: CFAllocator!, _ domain: CFErrorDomain!, _ code: 
 extern CFErrorRefCFErrorCreate(CFAllocatorRef allocator, CFErrorDomain domain, CFIndex code, CFDictionaryRef userInfo);
 ```
 
-#### Return Value
+## Return Value
 
 A new CFError object. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 

@@ -12,11 +12,11 @@ virtual unsigned int ensureCapacity(
  unsigned intnewCapacity);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the new capacity of the OSData object, which may be different from the number requested (if smaller, reallocation of storage failed).
 
-#### Overview
+## Overview
 
 This function immediately resizes the OSData's buffer, if necessary, to accommodate at least `newCapacity` bytes. If `newCapacity` is not greater than the current capacity, or if an allocation error occurs, the original capacity is returned.
 

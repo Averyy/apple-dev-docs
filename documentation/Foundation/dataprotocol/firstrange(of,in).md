@@ -22,11 +22,11 @@ Returns the first found range of the type’s data buffer.
 func firstRange<D, R>(of: D, in: R) -> Range<Self.Index>? where D : DataProtocol, R : RangeExpression, Self.Index == R.Bound
 ```
 
-#### Return Value
+## Return Value
 
 The range, if found, of the first match of the provided data sequence.
 
-#### Discussion
+## Discussion
 
 An example of searching a constrained range within a data buffer for the first match:
 

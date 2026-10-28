@@ -20,7 +20,7 @@ Assigns multiple buffers to a range of entries in the mesh shader argument table
 func setMeshBuffers(_ buffers: [(any MTLBuffer)?], offsets: [Int], range: Range<Int>)
 ```
 
-#### Discussion
+## Discussion
 
 By default, the texture at each index is `nil`.
 

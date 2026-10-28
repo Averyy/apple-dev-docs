@@ -21,7 +21,7 @@ A mode that you use to paint the source image, including its transparency, onto 
 static var sourceIn: GraphicsContext.BlendMode { get }
 ```
 
-#### Discussion
+## Discussion
 
 This mode implements the equation `R = S*Da` where
 

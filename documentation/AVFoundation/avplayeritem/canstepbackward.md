@@ -26,7 +26,7 @@ var canStepBackward: Bool { get }
 @property (readonly) BOOL canStepBackward;
 ```
 
-#### Discussion
+## Discussion
 
 Once the item becomes ready to play, the value of this property does not change. This behavior applies even when boundary conditions, such as when the item’s current time is [`zero`](../../CoreMedia/cmtime/zero.md), have been reached.
 

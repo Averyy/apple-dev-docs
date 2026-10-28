@@ -27,7 +27,7 @@ func replaceSelectedText(_ text: String, withText replacementText: String)
 
 - [Integrating custom browser text views with UIKit](../integrating-custom-browser-text-views-with-uikit.md)
 
-#### Discussion
+## Discussion
 
 This method’s behavior depends on the current selection state:
 

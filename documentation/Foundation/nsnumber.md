@@ -29,13 +29,13 @@ class NSNumber
 
 - [Implementing Handoff in Your App](./implementing-handoff-in-your-app.md)
 
-#### Overview
+## Overview
 
 `NSNumber` is a subclass of `NSValue` that offers a value as any C scalar (numeric) type. It defines a set of methods specifically for setting and accessing the value as a signed or unsigned `char`, `short int`, `int`, `long int`, `long long int`, `float`, or `double` or as a `BOOL`. (Note that number objects do not necessarily preserve the type they are created with.) It also defines a [`compare(_:)`](./nsnumber/compare%28_%29.md) method to determine the ordering of two `NSNumber` objects.
 
 `NSNumber` is “toll-free bridged” with its Core Foundation counterparts: [`CFNumber`](../CoreFoundation/cfnumber.md) for integer and floating point values, and [`CFBoolean`](../CoreFoundation/cfboolean.md) for Boolean values. See [Toll-Free Bridging](https://developer.apple.com/library/archive/documentation/General/Conceptual/CocoaEncyclopedia/Toll-FreeBridgin/Toll-FreeBridgin.html#//apple_ref/doc/uid/TP40010810-CH2) for more information on toll-free bridging.
 
-##### Value Conversions
+### Value Conversions
 
 `NSNumber` provides readonly properties that return the object’s stored value converted to a particular Boolean, integer, unsigned integer, or floating point C scalar type. Because numeric types have different storage capabilities, attempting to initialize with a value of one type and access the value of another type may produce an erroneous result—for example, initializing with a `double` value exceeding `FLT_MAX` and accessing its [`floatValue`](./nsnumber/floatvalue.md), or initializing with an negative integer value and accessing its [`uintValue`](./nsnumber/uintvalue.md). In some cases, attempting to initialize with a value of a type and access the value of another type may result in loss of precision—for example, initializing with a `double` value with many significant digits and accessing its [`floatValue`](./nsnumber/floatvalue.md), or initializing with a large integer value and accessing its [`int8Value`](./nsnumber/int8value.md).
 
@@ -63,7 +63,7 @@ An `NSNumber` object initialized with a value of a particular type accessing the
 | `1.0` | [`true`](../Swift/true.md) | `1` | `1` | `1.0` |
 | `-1.0` | [`true`](../Swift/true.md) | `-1` | *invalid, erroneous result* | `-1.0` |
 
-##### Subclassing Notes
+### Subclassing Notes
 
 As with any class cluster, subclasses of `NSNumber` must override the primitive methods of its superclass, `NSValue`. In addition, there are two requirements around the data type your subclass represents:
 

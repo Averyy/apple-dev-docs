@@ -24,7 +24,7 @@ var errorCorrectedPayload: Data { get }
 @property (readonly) NSData * errorCorrectedPayload;
 ```
 
-#### Discussion
+## Discussion
 
 Aztec Codes are formally specified in ISO/IEC 24778:2008(E).
 

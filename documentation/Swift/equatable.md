@@ -25,7 +25,7 @@ protocol Equatable : ~Copyable, ~Escapable
 
 - [Adopting Common Protocols](./adopting-common-protocols.md)
 
-#### Overview
+## Overview
 
 Types that conform to the `Equatable` protocol can be compared for equality using the equal-to operator (`==`) or inequality using the not-equal-to operator (`!=`). Most basic types in the Swift standard library conform to `Equatable`.
 
@@ -43,7 +43,7 @@ if students.contains(nameToCheck) {
 // Prints "Kofi is signed up!"
 ```
 
-### Conforming to the Equatable Protocol
+## Conforming to the Equatable Protocol
 
 Adding `Equatable` conformance to your custom types means that you can use more convenient APIs when searching for particular instances in a collection. `Equatable` is also the base protocol for the `Hashable` and `Comparable` protocols, which allow more uses of your custom type, such as constructing sets or sorting the elements of a collection.
 
@@ -107,7 +107,7 @@ Since equality between instances of `Equatable` types is an equivalence relation
 
 Moreover, inequality is the inverse of equality, so any custom implementation of the `!=` operator must guarantee that `a != b` implies `!(a == b)`. The default implementation of the `!=` operator function satisfies this requirement.
 
-#### Equality is Separate From Identity
+## Equality is Separate From Identity
 
 The identity of a class instance is not part of an instance’s value. Consider a class called `IntegerRef` that wraps an integer value. Here’s the definition for `IntegerRef` and the `==` function that makes it conform to `Equatable`:
 

@@ -28,7 +28,7 @@ func pointInImage(_ jointName: VNHumanBodyPose3DObservation.JointName) throws ->
 
 - [Identifying 3D human body poses in images](../identifying-3d-human-body-poses-in-images.md)
 
-#### Return Value
+## Return Value
 
 A projection of the 3D position onto the original 2D image in normalized, lower left origin coordinates.
 

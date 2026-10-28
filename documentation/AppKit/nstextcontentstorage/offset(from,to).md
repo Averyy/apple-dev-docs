@@ -19,11 +19,11 @@ func offset(from: any NSTextLocation, to: any NSTextLocation) -> Int
 - (NSInteger) offsetFromLocation:(id<NSTextLocation>) from toLocation:(id<NSTextLocation>) to;
 ```
 
-#### Return Value
+## Return Value
 
 The number of characters between the start and end locations. If the to location comes before the from location, the returned value is negative.
 
-#### Discussion
+## Discussion
 
 You can get [`NSTextLocation`](../nstextlocation.md) objects for the start and end of the text storage from the [`documentRange`](../nstextelementprovider/documentrange.md) property of the [`NSTextElementProvider`](../nstextelementprovider.md) protocol, which [`NSTextContentStorage`](../nstextcontentstorage.md) implements. If you provide an [`NSTextLocation`](../nstextlocation.md) object doesn’t match the type of the ones in the [`documentRange`](../nstextelementprovider/documentrange.md) property, this method throws an exception.
 

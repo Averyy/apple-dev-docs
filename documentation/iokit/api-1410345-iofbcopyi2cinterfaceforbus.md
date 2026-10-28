@@ -16,11 +16,11 @@ Returns an instance of an I2C bus interface, associated with an IOFramebuffer in
 IOReturn IOFBCopyI2CInterfaceForBus(io_service_t framebuffer, IOOptionBits bus, io_service_t *interface);
 ```
 
-#### Return Value
+## Return Value
 
 An IOReturn code.
 
-#### Discussion
+## Discussion
 
 Some graphics devices will allow access to an I2C bus routed through a display connector in order to control external devices on that bus. This function returns an instance of an I2C bus interface, associated with an IOFramebuffer instance / bus index pair. The number of I2C buses is available from the IOFBGetI2CInterfaceCount() call. The interface may be used with the IOI2CInterfaceOpen/Close/SendRequest() calls to carry out I2C transactions on that bus. Not all graphics devices support this functionality.
 

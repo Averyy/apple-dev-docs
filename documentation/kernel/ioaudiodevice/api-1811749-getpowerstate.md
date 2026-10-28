@@ -11,7 +11,7 @@ Returns the current power state (the old power state if a change is in progress)
 virtual IOAudioDevicePowerState getPowerState();
 ```
 
-#### Return Value
+## Return Value
 
 The current power state
 

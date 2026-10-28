@@ -17,7 +17,7 @@ Gets the total number of found items in a search.
 CFIndex SKSearchResultsGetCount(SKSearchResultsRef inSearchResults);
 ```
 
-#### Return Value
+## Return Value
 
 A CFIndex object containing the total number of found items in a search.
 

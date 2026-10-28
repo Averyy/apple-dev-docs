@@ -19,7 +19,7 @@ func webPlugInMainResourceDidReceive(_ data: Data!)
 - (void) webPlugInMainResourceDidReceiveData:(NSData *) data;
 ```
 
-#### Discussion
+## Discussion
 
 This message is invoked when the `WebPlugInShouldLoadMainResourceKey` plug-in command-line argument is set to [`NO`](../no.md) and the underlying `NSURLConnection` object for the main resource sends the connection:didReceiveData: message to its delegate.
 

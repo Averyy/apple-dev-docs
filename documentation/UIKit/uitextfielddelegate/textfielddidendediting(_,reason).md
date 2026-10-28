@@ -23,7 +23,7 @@ optional func textFieldDidEndEditing(_ textField: UITextField, reason: UITextFie
 - (void) textFieldDidEndEditing:(UITextField *) textField reason:(UITextFieldDidEndEditingReason) reason;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called after the text field resigns its first responder status. You can use this method to update your delegate’s state information. For example, you might use this method to hide overlay views that should be visible only while editing.
 

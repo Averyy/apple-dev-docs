@@ -28,11 +28,11 @@ func withBaselineOffset(fromBottom baselineOffset: CGFloat) -> UIImage
 
 - [Configuring and displaying symbol images in your UI](../configuring-and-displaying-symbol-images-in-your-ui.md)
 
-#### Return Value
+## Return Value
 
 A new image object containing the baseline information.
 
-#### Discussion
+## Discussion
 
 Use this method to create an image with the specified baseline information. You might add a baseline to your custom images so that you can incorporate them into text-based layouts. You can also use this method to change the baseline information on an image.
 

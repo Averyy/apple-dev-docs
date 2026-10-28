@@ -29,7 +29,7 @@ class PKPushRegistry
 - [Supporting PushKit Notifications in Your App](./supporting-pushkit-notifications-in-your-app.md)
 - [Responding to VoIP Notifications from PushKit](./responding-to-voip-notifications-from-pushkit.md)
 
-#### Overview
+## Overview
 
 A `PKPushRegistry` object manages only certain types of notifications, such as high-priority notifications needed by a VoIP app. PushKit wakes up your app as needed to deliver incoming notifications and delivers the notifications directly to the push registry object that requested them.
 

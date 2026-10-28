@@ -19,7 +19,7 @@ The order customization for the tabs in a section, identified by customization i
 var tabOrder: [String]? { get }
 ```
 
-#### Discussion
+## Discussion
 
 Identifiers can be associated with a `Tab` or `TabSection` using the `customizationID(_:)` modifier.
 

@@ -5,7 +5,7 @@
 
 Specifies an event mask that represents all event types.
 
-#### Overview
+## Overview
 
 This constant is typically used with the functions [`tapCreate(tap:place:options:eventsOfInterest:callback:userInfo:)`](./cgevent/tapcreate%28tap,place,options,eventsofinterest,callback,userinfo%29.md) and [`tapCreateForPSN(processSerialNumber:place:options:eventsOfInterest:callback:userInfo:)`](./cgevent/tapcreateforpsn%28processserialnumber,place,options,eventsofinterest,callback,userinfo%29.md) to register an event tap that observes all input events.
 

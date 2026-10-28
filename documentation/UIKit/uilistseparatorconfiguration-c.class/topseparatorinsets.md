@@ -18,7 +18,7 @@ Insets to apply to the top separator of the item the configuration applies to.
 @property (nonatomic) NSDirectionalEdgeInsets topSeparatorInsets;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`UIListSeparatorAutomaticInsets`](../uilistseparatorautomaticinsets.md).
 

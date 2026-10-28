@@ -19,7 +19,7 @@ Creates a new detection track builder.
 - (instancetype) initWithCommandQueue:(id<MTLCommandQueue>) commandQueue;
 ```
 
-#### Return Value
+## Return Value
 
 An object representing a new detection track builder.
 

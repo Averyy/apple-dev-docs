@@ -19,7 +19,7 @@ Wrap or clip the string only at word boundaries.
 UILineBreakModeWordWrap
 ```
 
-#### Discussion
+## Discussion
 
 This is the default wrapping option.
 

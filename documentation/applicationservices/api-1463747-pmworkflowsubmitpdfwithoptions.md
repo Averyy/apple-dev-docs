@@ -19,11 +19,11 @@ func PMWorkflowSubmitPDFWithOptions(_ workflowItem: CFURL, _ title: CFString?, _
 OSStatus PMWorkflowSubmitPDFWithOptions(CFURLRef workflowItem, CFStringRef title, const char *options, CFURLRef pdfFile);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./core_printing.md#1670007).
 
-#### Discussion
+## Discussion
 
 The printing system uses this function in conjunction with the function [`PMWorkflowCopyItems(_:)`](./api-1459914-pmworkflowcopyitems.md) to implement the PDF workflow button in the Print dialog.
 

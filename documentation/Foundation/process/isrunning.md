@@ -20,7 +20,7 @@ var isRunning: Bool { get }
 @property (readonly, getter=isRunning) BOOL running;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the receiver is still running, otherwise [`false`](../../Swift/false.md). [`false`](../../Swift/false.md) means either the receiver could not run or it has terminated.
 

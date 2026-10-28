@@ -25,7 +25,7 @@ func setCookies(_ cookies: [HTTPCookie], for URL: URL?, mainDocumentURL: URL?)
 - (void) setCookies:(NSArray<NSHTTPCookie *> *) cookies forURL:(NSURL *) URL mainDocumentURL:(NSURL *) mainDocumentURL;
 ```
 
-#### Discussion
+## Discussion
 
 Cookies in the array will replace existing cookies with the same name, domain, and path in the cookie storage. If the storage has an accept policy of [`HTTPCookie.AcceptPolicy.never`](../httpcookie/acceptpolicy/never.md), the cookies are ignored.
 

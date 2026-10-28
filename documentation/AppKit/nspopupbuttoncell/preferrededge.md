@@ -19,7 +19,7 @@ var preferredEdge: NSRectEdge { get set }
 @property NSRectEdge preferredEdge;
 ```
 
-#### Discussion
+## Discussion
 
 At display time, if attaching the menu to the preferred edge would cause part of the menu to be obscured, the pop-up button may use a different edge. If no preferred edge is set, the pop-up button uses the bottom edge by default, which is [`NSMaxYEdge`](../../Foundation/nsrectedge/nsmaxyedge.md) for flipped views or [`NSMinYEdge`](../../Foundation/nsrectedge/nsminyedge.md) for unflipped views. Additional values for this property include [`NSMinXEdge`](../../Foundation/nsrectedge/nsminxedge.md) and [`NSMaxXEdge`](../../Foundation/nsrectedge/nsmaxxedge.md).
 

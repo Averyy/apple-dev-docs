@@ -19,7 +19,7 @@ Predicts multiple possible labels and their confidence scores for the specified 
 func predictionWithConfidence(from text: String) throws -> [String : Double]
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary of label predictions and confidence scores.
 

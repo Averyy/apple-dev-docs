@@ -23,11 +23,11 @@ func union<S>(_ other: S) -> Set<Element> where Element == S.Element, S : Sequen
 
 Available when `Element` conforms to `Hashable`.
 
-#### Return Value
+## Return Value
 
 A new set with the unique elements of this set and `other`.
 
-#### Discussion
+## Discussion
 
 In the following example, the `attendeesAndVisitors` set is made up of the elements of the `attendees` set and the `visitors` array:
 

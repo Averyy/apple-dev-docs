@@ -20,11 +20,11 @@ Returns the referenced image from the transcript.
 func resolved(in transcript: some Sequence<Transcript.Entry>) -> Transcript.ImageAttachment?
 ```
 
-#### Return Value
+## Return Value
 
 The [`Transcript.ImageAttachment`](../transcript/imageattachment.md) for this reference, or `nil` if no attachment with label [`attachmentLabel`](./attachmentlabel.md) is found in the transcript.
 
-#### Discussion
+## Discussion
 
 If more than one attachment shares an [`attachmentLabel`](./attachmentlabel.md), the attachment from the latest entry is returned.
 

@@ -19,7 +19,7 @@ Applies a managed content style to the view.
 @preconcurrency func managedContentStyle(_ style: ManagedContentStyle) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 The styled view.
 

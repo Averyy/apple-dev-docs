@@ -21,11 +21,11 @@ Returns a subsequence from the start of the collection through the specified pos
 func prefix(through position: Self.Index) -> Self.SubSequence
 ```
 
-#### Return Value
+## Return Value
 
 A subsequence up to, and including, the given position.
 
-#### Discussion
+## Discussion
 
 The resulting subsequence *includes* the element at the position specified by the `through` parameter. The following example searches for the index of the number `40` in an array of integers, and then prints the prefix of the array up to, and including, that index:
 

@@ -22,7 +22,7 @@ func removeBlockingEntry(withPhoneNumber phoneNumber: CXCallDirectoryPhoneNumber
 - (void) removeBlockingEntryWithPhoneNumber:(CXCallDirectoryPhoneNumber) phoneNumber;
 ```
 
-#### Discussion
+## Discussion
 
 If [`isIncremental`](./isincremental.md) is [`true`](../../Swift/true.md), the request provides incremental entries and may use this method to remove previously added blocking entries. This method removes all blocking entries that contain the specified phone number, even if multiple blocking entries with different labels are present for a single phone number.
 

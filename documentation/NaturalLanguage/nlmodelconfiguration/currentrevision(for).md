@@ -25,7 +25,7 @@ class func currentRevision(for type: NLModel.ModelType) -> Int
 + (NSUInteger) currentRevisionForType:(NLModelType) type;
 ```
 
-#### Return Value
+## Return Value
 
 A version number.
 

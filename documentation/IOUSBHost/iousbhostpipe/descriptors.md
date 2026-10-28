@@ -20,7 +20,7 @@ var descriptors: UnsafePointer<IOUSBHostIOSourceDescriptors> { get }
 @property (readonly) const IOUSBHostIOSourceDescriptors * descriptors;
 ```
 
-#### Return Value
+## Return Value
 
 The current [`IOUSBHostIOSourceDescriptors`](../iousbhostiosourcedescriptors.md).
 

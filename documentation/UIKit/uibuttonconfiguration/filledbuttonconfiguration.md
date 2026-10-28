@@ -19,7 +19,7 @@ Creates a configuration for a button with a background filled with the button’
 + (instancetype) filledButtonConfiguration;
 ```
 
-#### Return Value
+## Return Value
 
 A new configuration object.
 

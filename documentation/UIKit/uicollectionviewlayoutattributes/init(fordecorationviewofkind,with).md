@@ -23,11 +23,11 @@ convenience init(forDecorationViewOfKind decorationViewKind: String, with indexP
 + (instancetype) layoutAttributesForDecorationViewOfKind:(NSString *) decorationViewKind withIndexPath:(NSIndexPath *) indexPath;
 ```
 
-#### Return Value
+## Return Value
 
 A new layout attributes object whose precise type matches the type of the class used to call this method.
 
-#### Discussion
+## Discussion
 
 Use this method to create a layout attributes object for a decoration view in the collection view. Decoration views are a type of supplementary view but do not present data that is managed by the collection view’s data source. Instead, they mostly present visual adornments for a section or for the entire collection view.
 

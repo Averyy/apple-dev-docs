@@ -24,7 +24,7 @@ var count: Int { get }
 @property (readonly) NSUInteger count;
 ```
 
-#### Discussion
+## Discussion
 
 You can access the items in the series using the corresponding query. For example, to access route data, use a [`HKWorkoutRouteQuery`](../hkworkoutroutequery.md) object.
 

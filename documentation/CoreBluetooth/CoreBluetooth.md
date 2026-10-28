@@ -15,7 +15,7 @@ Communicate with Bluetooth low energy and BR/EDR (“Classic”) Devices.
 - visionOS 1.0+
 - watchOS 4.0+
 
-#### Overview
+## Overview
 
 The Core Bluetooth framework provides the classes needed for your apps to communicate with Bluetooth-equipped low energy (LE) and Basic Rate / Enhanced Data Rate (BR/EDR) wireless technology.
 

@@ -23,7 +23,7 @@ var kDNSServiceType_ISDN: Int { get }
 kDNSServiceType_ISDN
 ```
 
-#### Discussion
+## Discussion
 
 ISDN calling address.
 

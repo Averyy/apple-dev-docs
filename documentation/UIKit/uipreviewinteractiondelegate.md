@@ -24,13 +24,13 @@ protocol UIPreviewInteractionDelegate : NSObjectProtocol
 @protocol UIPreviewInteractionDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 A preview interaction abstracts a 3D Touch interaction into a state machine and communicates its progress through the state machine though a delegate. You’re responsible for implementing the appropriate UI behavior.
 
 Create an object that conforms to this protocol and assign it to the [`delegate`](./uipreviewinteraction/delegate.md) property on an instance of [`UIPreviewInteraction`](./uipreviewinteraction.md). Use this delegate object to respond to the state changes that occur within the preview interaction as the user performs 3D Touch interactions.
 
-##### Control preview interaction state changes
+### Control preview interaction state changes
 
 The methods on [`UIPreviewInteractionDelegate`](./uipreviewinteractiondelegate.md) allow you to control whether a preview interaction is allowed to begin, and to observe its progress through the phases of a preview interaction. This allows you to provide a custom user experience while maintaining coherence with the system.
 
@@ -48,7 +48,7 @@ The progress through the *commit* phase is reported to the [`previewInteraction(
 
 At any point before the preview interaction is completed, it can be canceled, either when the user lifts their finger from the screen, or when the [`cancel()`](./uipreviewinteraction/cancel%28%29.md) method is called on the [`UIPreviewInteraction`](./uipreviewinteraction.md) instance. When this happens, the [`previewInteractionDidCancel(_:)`](./uipreviewinteractiondelegate/previewinteractiondidcancel%28_%29.md) delegate method is called. You should use this method to cancel any UI transitions currently in progress.
 
-##### Preview interaction user interface updates
+### Preview interaction user interface updates
 
 [`UIPreviewInteraction`](./uipreviewinteraction.md) abstracts 3D Touch interactions away from touch force, allowing you to provide your own user interface updates for an interaction pattern that’s well understood by people. The preview interaction sits between view controller previewing (*peek* and *pop*) and the force values in [`UITouch`](./uitouch.md), in that you’re required to provide your own user interface updates but don’t need to handle raw touch force values.
 

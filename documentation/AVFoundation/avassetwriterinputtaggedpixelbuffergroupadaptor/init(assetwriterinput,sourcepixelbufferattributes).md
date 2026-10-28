@@ -25,7 +25,7 @@ init(assetWriterInput input: AVAssetWriterInput, sourcePixelBufferAttributes: [S
 - (instancetype) initWithAssetWriterInput:(AVAssetWriterInput *) input sourcePixelBufferAttributes:(NSDictionary<NSString *,id> *) sourcePixelBufferAttributes;
 ```
 
-#### Discussion
+## Discussion
 
 To take advantage of the improved efficiency of appending buffers created from the adaptor’s pixel buffer pool, specify pixel buffer attributes that most closely accommodate the source format of the video frames of tagged buffer groups to append.
 

@@ -28,7 +28,7 @@ var shippingType: PKShippingType { get set }
 
 - [Displaying a Read-Only Pickup Address](../displaying-a-read-only-pickup-address.md)
 
-#### Discussion
+## Discussion
 
 This property sets the labels for the shipping information displayed by the [`PKPaymentAuthorizationViewController`](../pkpaymentauthorizationviewcontroller.md) class. The default value is [`PKShippingType.shipping`](../pkshippingtype/shipping.md). For a complete list of valid shipping types, see [`PKShippingType`](../pkshippingtype.md).
 

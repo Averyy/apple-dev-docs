@@ -25,7 +25,7 @@ func enumerateRanges(_ block: (NSRange, UnsafeMutablePointer<ObjCBool>) -> Void)
 - (void) enumerateRangesUsingBlock:(void (^)(NSRange range, BOOL *stop)) block;
 ```
 
-#### Discussion
+## Discussion
 
 If the Block parameter is `nil` this method will raise an exception.
 

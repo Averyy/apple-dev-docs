@@ -24,7 +24,7 @@ class GKRuleSystem
 @interface GKRuleSystem : NSObject
 ```
 
-#### Overview
+## Overview
 
 A [`GKRuleSystem`](./gkrulesystem.md) object manages a list of rules ([`GKRule`](./gkrule.md) objects). A rule system also offers methods for evaluating its list of rules in a context defined by two features: a [`state`](./gkrulesystem/state.md) dictionary containing information to be tested by rules, and a set of [`facts`](./gkrulesystem/facts.md) representing the conclusions drawn as a result of rule evaluation. You can evaluate facts based on a binary truth state—that is, a fact either is or is not in the set—or on a continuously variable membership grade, representing different levels of veracity, confidence, or strength for use in fuzzy logic.
 

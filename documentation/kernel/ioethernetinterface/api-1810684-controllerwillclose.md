@@ -12,7 +12,7 @@ virtual void controllerWillClose(
  IONetworkController *controller);
 ```
 
-#### Overview
+## Overview
 
 This method will simply call super to propagate the method call. This method is called with the arbitration lock held.
 

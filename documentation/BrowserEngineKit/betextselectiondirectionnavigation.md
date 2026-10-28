@@ -22,7 +22,7 @@ protocol BETextSelectionDirectionNavigation
 @protocol BETextSelectionDirectionNavigation
 ```
 
-#### Overview
+## Overview
 
 This protocol enables your app to request text-cursor movement and selection modifications. In response to a person’s input, the system calls your app in the conditions described by the protocol. Your app performs the requested operation and updates text cursor or selection state accordingly.
 

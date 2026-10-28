@@ -4,7 +4,7 @@
 
 Use a system-supported method to authenticate with an identity provider.
 
-#### Overview
+## Overview
 
 Platform SSO supports several methods to authenticate with an identity provider (IdP) that stores and verfies user identities. Each method includes specific steps to complete the authentication process. At a high level, authentication begins with the system requesting a server nonce, which includes an anti-replay value. Next, the system creates a login request per requirements of the authentication method, sends the request, receives a response, and processes it.
 
@@ -20,7 +20,7 @@ This flowchart provides a high-level overview of WS-Trust authentication, which 
 
 ![A flowchart that shows a Device icon, Identity provider icon, and Federated identity provider (IdP) icon at the top of a looping process that starts with requesting and receiving a server nonce value, followed by optionally requesting and receiving a preauthentication from the IdP. The next steps include requesting and receiving federation metadata from a federated IdP, performing WS-Trust authentication, receiving and validating the Security Assertion Markup Language (SAML) response, sending the SAML bearer login JOSE to the IdP, receiving the login response JWE, and decrypting and validating the login response and saving the tokens.](https://developer.apple.com/tutorials/images/com.apple.authenticationservices/media-4302341@2x.png)
 
-##### Support TLS and system CA requirements
+### Support TLS and system CA requirements
 
 Because the login process can happen on any network, the system sends all HTTP requests using Transport Layer Security (TLS) and uses the current App Transport Security settings. The requests explicitly require that the system-provided root certificate authorities (CAs) include the issuer of the TLS certificate. The system doesn’t trust user-trusted or MDM-provided CAs for these requests. It limits these CAs to ensure the TLS tunnel to the identity provider doesn’t include any third-party products with security vulnerabilities or intentionally malicious code.
 

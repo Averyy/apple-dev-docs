@@ -34,7 +34,7 @@ init<S>(_ source: S) where S : Sequence, S.Element : MLDataValueConvertible
 init<S>(_ source: S) where S : Sequence, S.Element == MLDataValue
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer to create a column of incrementing values from a range.
 

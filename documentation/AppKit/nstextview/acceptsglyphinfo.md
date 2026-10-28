@@ -19,7 +19,7 @@ var acceptsGlyphInfo: Bool { get set }
 @property BOOL acceptsGlyphInfo;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) if the receiver accepts the `NSGlyphInfoAttributeName` attribute from text input sources such as input methods and the pasteboard, [`false`](../../Swift/false.md) otherwise.
 

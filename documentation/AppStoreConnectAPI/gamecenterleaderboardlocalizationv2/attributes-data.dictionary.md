@@ -15,7 +15,7 @@ Attributes that describe a Game Center leaderboard localization v2 resource.
 object GameCenterLeaderboardLocalizationV2.Attributes
 ```
 
-#### Overview
+## Overview
 
 - description:
 - formatterOverride:

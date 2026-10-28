@@ -28,7 +28,7 @@ class INSendMessageIntentResponse
 
 - [Improving interactions between Siri and your messaging app](../SiriKit/improving-interactions-between-siri-and-your-messaging-app.md)
 
-#### Overview
+## Overview
 
 Use an [`INSendMessageIntentResponse`](./insendmessageintentresponse.md) object to specify the results of sending a message to another user. You create instances of this class when confirming or handling a send message intent. Use this object to communicate whether the message was successfully sent or whether an error occurred.
 

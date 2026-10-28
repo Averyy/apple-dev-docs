@@ -1499,7 +1499,33 @@
   },
   "metadata": {
     "render": {
-      "version": 3
+      "version": 4
+    },
+    "text_links": {
+      "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/bundleid/relationships-data.dictionary/bundleidcapabilities-data.dictionary.json": [
+        "https://developer.apple.com/documentation/enterpriseprogramapi/bundleid/relationships-data.dictionary/bundleidcapabilities-data.dictionary/links"
+      ],
+      "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/bundleid/relationships-data.dictionary/bundleidcapabilities-data.dictionary/data-data.dictionary.json": [
+        "https://developer.apple.com/documentation/enterpriseprogramapi/bundleid/relationships-data.dictionary/bundleidcapabilities-data.dictionary/links"
+      ],
+      "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/bundleid/relationships-data.dictionary/profiles-data.dictionary.json": [
+        "https://developer.apple.com/documentation/enterpriseprogramapi/bundleid/relationships-data.dictionary/profiles-data.dictionary/links"
+      ],
+      "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/bundleid/relationships-data.dictionary/profiles-data.dictionary/data-data.dictionary.json": [
+        "https://developer.apple.com/documentation/enterpriseprogramapi/bundleid/relationships-data.dictionary/profiles-data.dictionary/links"
+      ],
+      "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/profile/relationships-data.dictionary/bundleid-data.dictionary.json": [
+        "https://developer.apple.com/documentation/enterpriseprogramapi/profile/relationships-data.dictionary/bundleid-data.dictionary/links"
+      ],
+      "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/profile/relationships-data.dictionary/bundleid-data.dictionary/data-data.dictionary.json": [
+        "https://developer.apple.com/documentation/enterpriseprogramapi/profile/relationships-data.dictionary/bundleid-data.dictionary/links"
+      ],
+      "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/profile/relationships-data.dictionary/certificates-data.dictionary.json": [
+        "https://developer.apple.com/documentation/enterpriseprogramapi/profile/relationships-data.dictionary/certificates-data.dictionary/links"
+      ],
+      "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/profile/relationships-data.dictionary/certificates-data.dictionary/data-data.dictionary.json": [
+        "https://developer.apple.com/documentation/enterpriseprogramapi/profile/relationships-data.dictionary/certificates-data.dictionary/links"
+      ]
     },
     "total_pages": 374
   }

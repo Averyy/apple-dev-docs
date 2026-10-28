@@ -21,7 +21,7 @@ Sets the cancellation handler block for the dispatch source.
 func setCancelHandler(handler: DispatchWorkItem)
 ```
 
-#### Discussion
+## Discussion
 
 The cancellation handler (if specified) is submitted to the source’s target queue in response to a call to a call to the [`cancel()`](./cancel%28%29.md) method once the system has released all references to the source’s underlying handle and the source’s event handler block has returned.
 

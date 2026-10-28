@@ -15,11 +15,11 @@ Returns the Mac OS text encoding specification that correspondsto an Internet en
 OSStatus TECGetTextEncodingFromInternetName(TextEncoding *textEncoding, ConstStr255Param encodingName);
 ```
 
-#### Return Value
+## Return Value
 
 A resultcode. See [Result Codes](./carbon_core/text_encoding_conversion_manager.md#1664324).
 
-#### Discussion
+## Discussion
 
 Internet encoding names are stored as strings, while the TextEncoding Converter uses numeric values.  
 

@@ -15,11 +15,11 @@ static IORangeAllocator * withRange(
  IOOptionBits options = 0 );
 ```
 
-#### Return Value
+## Return Value
 
 Returns the new IORangeAllocator instance, to be released by the caller, or zero on failure.
 
-#### Overview
+## Overview
 
 This method allocates and initializes an IORangeAllocator and optionally sets the free list to contain one fragment, from zero to an endOfRange parameter. The capacity in terms of free fragments and locking options are set for the instance.
 

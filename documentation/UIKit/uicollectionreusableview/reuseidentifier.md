@@ -23,7 +23,7 @@ var reuseIdentifier: String? { get }
 @property (nonatomic, copy, readonly, nullable) NSString * reuseIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 The collection view identifies and queues reusable views using their reuse identifiers. The collection view sets this value when it first creates the view, and the value cannot be changed later. When your data source is prompted to provide a given view, it can use the reuse identifier to dequeue a view of the appropriate type.
 

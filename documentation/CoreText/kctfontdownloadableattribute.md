@@ -25,7 +25,7 @@ let kCTFontDownloadableAttribute: CFString
 extern CFStringRef const kCTFontDownloadableAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 The value associated with this key is a [`CFBoolean`](../CoreFoundation/cfboolean.md).  If it is [`kCFBooleanTrue`](../CoreFoundation/kcfbooleantrue.md), Core Text attempts to download a font if necessary when matching a descriptor.
 

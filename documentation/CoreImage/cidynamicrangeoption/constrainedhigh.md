@@ -24,7 +24,7 @@ static let constrainedHigh: CIDynamicRangeOption
 extern CIDynamicRangeOption const kCIDynamicRangeConstrainedHigh;
 ```
 
-#### Discussion
+## Discussion
 
 For best results, images should contain `contentAverageLightLevel` metadata.
 

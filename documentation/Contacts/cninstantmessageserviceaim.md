@@ -24,7 +24,7 @@ let CNInstantMessageServiceAIM: String
 extern NSString * const CNInstantMessageServiceAIM;
 ```
 
-#### Discussion
+## Discussion
 
 This key takes a string value.
 

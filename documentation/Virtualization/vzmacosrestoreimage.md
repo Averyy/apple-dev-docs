@@ -24,7 +24,7 @@ class VZMacOSRestoreImage
 - [Installing macOS on a Virtual Machine](./installing-macos-on-a-virtual-machine.md)
 - [Using iCloud with macOS virtual machines](./using-icloud-with-macos-virtual-machines.md)
 
-#### Overview
+## Overview
 
 To set up a new VM compatible with the restore image, use [`mostFeaturefulSupportedConfiguration`](./vzmacosrestoreimage/mostfeaturefulsupportedconfiguration.md) to obtain the [`hardwareModel`](./vzmacplatformconfiguration/hardwaremodel.md) of the [`VZMacPlatformConfiguration`](./vzmacplatformconfiguration.md). Then, create a [`VZMacOSRestoreImage`](./vzmacosrestoreimage.md) object by loading an installation media file. Initialize a [`VZMacOSInstaller`](./vzmacosinstaller.md) object with this `VZMacOSRestoreImage` object to install the operating system onto a VM.
 

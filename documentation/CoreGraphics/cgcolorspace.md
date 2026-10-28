@@ -25,7 +25,7 @@ class CGColorSpace
 typedef struct CGColorSpace * CGColorSpaceRef;
 ```
 
-#### Overview
+## Overview
 
 A color space is multi-dimensional, and each dimension represents a specific color component. For example, the colors in an RGB color space have three dimensions or components—red, green, and blue. The intensity of each component is represented by floating point values—their range and meaning depends on the color space in question.
 

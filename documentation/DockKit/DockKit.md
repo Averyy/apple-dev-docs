@@ -11,7 +11,7 @@ Interact with accessories that track subjects on camera as they move around.
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 
-#### Overview
+## Overview
 
 DockKit interfaces with DockKit-compatible motorized stands known as dock accessories to track the location of objects that appear in video frames. It determines how to best position the iPhone camera to frame and track objects, with improved person tracking using combined body and face tracking for human subjects. This feature, known as *system tracking*, automatically starts as soon as a person docks iPhone onto a compatible motorized stand and launches the Camera app. For example, system tracking is useful for content creators who want the camera to follow them while they move around their space, or instructors on a video call who are walking around a classroom.
 

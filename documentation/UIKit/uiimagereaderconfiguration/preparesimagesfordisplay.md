@@ -20,7 +20,7 @@ A Boolean value that indicates whether the image reader prepares the image for d
 @property (nonatomic, assign, readwrite) BOOL preparesImagesForDisplay;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`false`](../../Swift/false.md).
 

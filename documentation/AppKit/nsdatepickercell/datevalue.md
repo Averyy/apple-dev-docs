@@ -19,7 +19,7 @@ var dateValue: Date { get set }
 @property (copy) NSDate * dateValue;
 ```
 
-#### Discussion
+## Discussion
 
 Assign a date to this property to set the starting value for the picker. For range-based dates, use the [`timeInterval`](./timeinterval.md) property to set the extent of the time range.
 

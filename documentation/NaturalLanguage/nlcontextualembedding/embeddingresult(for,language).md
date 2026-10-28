@@ -25,7 +25,7 @@ func embeddingResult(for string: String, language: NLLanguage?) throws -> NLCont
 - (NLContextualEmbeddingResult *) embeddingResultForString:(NSString *) string language:(NLLanguage) language error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 An embedding result. On failure, this method returns nil.
 

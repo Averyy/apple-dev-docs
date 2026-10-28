@@ -21,7 +21,7 @@ weak var dataSource: (any MSStickerBrowserViewDataSource)? { get set }
 @property (nonatomic, weak, nullable) id<MSStickerBrowserViewDataSource> dataSource;
 ```
 
-#### Discussion
+## Discussion
 
 If you are using an [`MSStickerBrowserViewController`](../msstickerbrowserviewcontroller.md) object, the controller automatically sets itself as the data source for the sticker browser view that it provides. If you instantiate and display your own sticker browser view, this property defaults to `nil`, and you must assign a data source.
 

@@ -21,7 +21,7 @@ Convenience method to upload data using a URLRequest, creates and resumes a URLS
 func upload(for request: URLRequest, from bodyData: Data) async throws -> (Data, URLResponse)
 ```
 
-#### Return Value
+## Return Value
 
 Data and response.
 

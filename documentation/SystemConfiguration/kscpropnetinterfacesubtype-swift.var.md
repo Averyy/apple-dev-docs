@@ -19,7 +19,7 @@ let kSCPropNetInterfaceSubType: CFString
 extern CFStringRef const kSCPropNetInterfaceSubType;
 ```
 
-#### Discussion
+## Discussion
 
 This key can be passed the following constants when the `Type` key has the value `PPP`:
 

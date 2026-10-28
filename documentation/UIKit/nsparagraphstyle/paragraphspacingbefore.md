@@ -24,7 +24,7 @@ var paragraphSpacingBefore: CGFloat { get }
 @property (nonatomic, readonly) CGFloat paragraphSpacingBefore;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the space (measured in points) between the current and previous paragraphs. The default value of this property is `0.0`.
 

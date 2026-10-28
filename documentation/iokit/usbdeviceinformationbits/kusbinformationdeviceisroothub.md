@@ -14,7 +14,7 @@
 kUSBInformationDeviceIsRootHub = 9
 ```
 
-#### Discussion
+## Discussion
 
 The device is the root hub simulation
 

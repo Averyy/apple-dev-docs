@@ -22,7 +22,7 @@ nonisolated
 func presentationCornerRadius(_ cornerRadius: CGFloat?) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 Use this modifier to change the corner radius of a presentation.
 

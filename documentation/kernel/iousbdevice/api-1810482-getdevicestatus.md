@@ -10,7 +10,7 @@ virtual IOReturn GetDeviceStatus(
  USBStatus *status);
 ```
 
-#### Overview
+## Overview
 
 Gets the device's status. Note that this sends a control request to the physical device.
 

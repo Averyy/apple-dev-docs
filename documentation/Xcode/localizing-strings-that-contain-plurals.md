@@ -5,7 +5,7 @@
 
 Use a strings dictionary file to ensure correct localization of strings that contain language plurals.
 
-#### Overview
+## Overview
 
 > ❗ **Important**: In Xcode 15 and later, string catalogs are the recommended way to localize strings that contain plurals. In earlier versions of Xcode, use strings and `stringsdict` files. For more information about string catalogs, see [Localizing and varying text with a string catalog](./localizing-and-varying-text-with-a-string-catalog.md).
 
@@ -15,7 +15,7 @@ For example, if you pass the `%d home(s) found` formatted string to the [`NSLoca
 
 Xcode automatically handles `.stringsdict` files for you when you export and import localizations. However, you need to know the format of a `.stringsdict` file to localize it in the development language and other languages if you don’t use a localization service.
 
-##### Add a strings dictionary file to your project
+### Add a strings dictionary file to your project
 
 To add a `.stringsdict` file to your project, choose File > New > File from Template. In the sheet that appears, select the platform, enter `strings` in the Filter field, select Stringsdict File, and click Next. In the dialog that appears, enter a name for the file, choose a location, and click Create.
 
@@ -25,7 +25,7 @@ If you previously added localizations to your project, select the other localiza
 
 Later when you add more localizations, be sure to include the `.stringsdict` file when you select resources for the localization.
 
-##### Localize the strings dictionary file in the development language
+### Localize the strings dictionary file in the development language
 
 Next, add the plural rules and variants to the development language version of the `.stringsdict` file.
 
@@ -105,7 +105,7 @@ The meaning of the plural categories is language-dependent, and not all language
 
 For the categories and plural rules for each language, see [CLDR Language Plural Rules](http://cldr.unicode.org/index/cldr-spec/plural-rules).
 
-##### Localize the strings dictionary file in other languages
+### Localize the strings dictionary file in other languages
 
 After you localize the `.stringsdict` files in the development langauge and add the other localizations to your project, you export the localizations.
 

@@ -17,7 +17,7 @@ var HV_TLBI_OP_VAAE1IS: hv_tlbi_op_t { get }
 HV_TLBI_OP_VAAE1IS
 ```
 
-#### Discussion
+## Discussion
 
 TLB invalidation operations for hv_vcpu_invalidate_tlb().
 

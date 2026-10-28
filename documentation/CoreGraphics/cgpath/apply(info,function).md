@@ -25,7 +25,7 @@ func apply(info: UnsafeMutableRawPointer?, function: CGPathApplierFunction)
 extern void CGPathApply(CGPathRef path, void *info, CGPathApplierFunction function);
 ```
 
-#### Discussion
+## Discussion
 
 For each element in the specified path, Core Graphics calls the applier function, which can examine (but not modify) the element.
 

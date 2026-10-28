@@ -25,13 +25,13 @@ class INSnoozeTasksIntent
 @interface INSnoozeTasksIntent : INIntent
 ```
 
-#### Overview
+## Overview
 
 Siri creates an [`INSnoozeTasksIntent`](./insnoozetasksintent.md) object when the user marks one or more tasks for snoozing. The intent object can contain the task information.
 
 To handle this intent, the handler object in your Intents extension must adopt the [`INSnoozeTasksIntentHandling`](./insnoozetasksintenthandling.md) protocol. Your handler should confirm the request and create an [`INSnoozeTasksIntentResponse`](./insnoozetasksintentresponse.md) object with the updated task information.
 
-##### Additional Intent Attributes
+### Additional Intent Attributes
 
 The following table lists additional attributes of this intent object:
 
@@ -40,7 +40,7 @@ The following table lists additional attributes of this intent object:
 | Supported by | Siri Intents |
 | Always requires unlocked device | No |
 
-##### Example Phrases
+### Example Phrases
 
 Users can ask Siri to snooze tasks in a variety of ways. The table below provides a few sample phrases in different languages. You can use these phrases during testing to trigger your intents. This list isn’t exhaustive and Siri may recognize many other phrases.
 

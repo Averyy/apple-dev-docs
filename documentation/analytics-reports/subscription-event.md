@@ -5,7 +5,7 @@
 
 Analyze and track changes throughout your users’ subscription lifecycle.
 
-#### Overview
+## Overview
 
 The Subscription Event report includes an aggregated count of subscription lifecycle changes. You can use this report to understand the number of offer starts, offer renewals, conversions to paid, paid renewals, voluntary and involuntary churn, and more. Subscription data in this report is enriched with app download source and referrer information, enabling you to understand which acquisition channels help you acquire subscribers.
 
@@ -22,7 +22,7 @@ The Subscription Event report includes an aggregated count of subscription lifec
 
 The Analytics Reports framework delivers new portions of report content as instances. Each instance can contain one or more batches of data, to accommodate late-arriving events, or in rare cases, data corrections. To learn more, see [Data Completeness and Corrections](./data-completeness-corrections.md).
 
-#### Report Fields
+## Report Fields
 
 | Report Field | Description | Data Type | Standard | Detailed |
 | --- | --- | --- | --- | --- |
@@ -60,7 +60,7 @@ The Analytics Reports framework delivers new portions of report content as insta
 | Territory | The territory associated with the account that purchased the subscription. | `string` | ✔ | ✔ |
 | Counts | Number of events. | `integer` | ✔ | ✔ |
 
-#### Glossary
+## Glossary
 
 | Dimension | Value | Definition |
 | --- | --- | --- |

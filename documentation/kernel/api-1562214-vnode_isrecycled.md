@@ -15,11 +15,11 @@ Check if a vnode is dead or in the process of being killed (recycled).
 int vnode_isrecycled(vnode_t vp);
 ```
 
-#### Return Value
+## Return Value
 
 Nonzero if vnode is dead or being recycled, 0 otherwise.
 
-#### Discussion
+## Discussion
 
 This is only a snapshot: a vnode may start to be recycled, or go from dead to in use, at any time.
 

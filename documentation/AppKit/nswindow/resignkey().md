@@ -19,7 +19,7 @@ func resignKey()
 - (void) resignKeyWindow;
 ```
 
-#### Discussion
+## Discussion
 
 This method sends [`resignKey()`](./resignkey%28%29.md) to the window’s first responder, sends [`windowDidResignKey(_:)`](../nswindowdelegate/windowdidresignkey%28_%29.md) to the window’s delegate, and posts [`didResignKeyNotification`](./didresignkeynotification.md) to the default notification center.
 

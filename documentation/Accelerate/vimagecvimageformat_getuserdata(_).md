@@ -25,11 +25,11 @@ func vImageCVImageFormat_GetUserData(_ format: vImageConstCVImageFormat) -> Unsa
 void *vImageCVImageFormat_GetUserData(vImageConstCVImageFormatRef format);
 ```
 
-#### Return Value
+## Return Value
 
 The address of `userData;` `NULL` if `userData` isn’t set.
 
-#### Discussion
+## Discussion
 
 The functions that create Core Video image formats, such as [`vImageCVImageFormat_CreateWithCVPixelBuffer(_:)`](./vimagecvimageformat_createwithcvpixelbuffer%28_%29.md), return a [`vImageCVImageFormat`](./vimagecvimageformat.md). The following code shows how you create a [`vImageConstCVImageFormat`](./vimageconstcvimageformat.md) representation of a [`vImageCVImageFormat`](./vimagecvimageformat.md) instance to pass to [`vImageCVImageFormat_GetUserData(_:)`](./vimagecvimageformat_getuserdata%28_%29.md):
 

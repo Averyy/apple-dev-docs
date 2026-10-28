@@ -16,7 +16,7 @@ Creates a new aggregate device  using the provided description.
 func makeAggregateDevice(description: [String : Any]) throws -> AudioHardwareAggregateDevice?
 ```
 
-#### Return Value
+## Return Value
 
 An AudioHardwareAggregateDevice representing the newly created aggregate device.
 

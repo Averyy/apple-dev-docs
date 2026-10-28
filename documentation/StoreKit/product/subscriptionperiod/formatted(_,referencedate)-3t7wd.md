@@ -22,7 +22,7 @@ Formats the subscription period using a format style that takes a date range as 
 func formatted<S>(_ format: S, referenceDate: Date = .now) -> S.FormatOutput where S : FormatStyle, S.FormatInput == Range<Date>
 ```
 
-#### Discussion
+## Discussion
 
 Use the [`formatted(_:referenceDate:)`](./formatted%28_,referencedate%29-3t7wd.md) method with [`subscriptionPeriodFormatStyle`](../subscriptionperiodformatstyle.md) to format the subscription period for the App Store locale, as the following example shows.
 

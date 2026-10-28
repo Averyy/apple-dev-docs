@@ -24,7 +24,7 @@ func enumerateEvents(matching predicate: NSPredicate, using block: @escaping EKE
 - (void) enumerateEventsMatchingPredicate:(NSPredicate *) predicate usingBlock:(EKEventSearchCallback) block;
 ```
 
-#### Discussion
+## Discussion
 
 Only committed events are included in the enumeration. To include events saved using [`save(_:span:commit:)`](./save%28_,span,commit%29.md) with the `commit` parameter set to [`false`](../../Swift/false.md), call [`commit()`](./commit%28%29.md) first.
 

@@ -5,7 +5,7 @@
 
 The service types supported by HomeKit.
 
-#### Overview
+## Overview
 
 An [`HMService`](./hmservice.md) instance’s read-only [`serviceType`](./hmservice/servicetype.md) property contains one of the values listed below to tell you what the service does.
 

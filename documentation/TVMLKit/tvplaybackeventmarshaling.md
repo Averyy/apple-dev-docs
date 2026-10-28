@@ -21,7 +21,7 @@ protocol TVPlaybackEventMarshaling : NSObjectProtocol
 @protocol TVPlaybackEventMarshaling <NSObject>
 ```
 
-#### Overview
+## Overview
 
 You must conform to this protocol in order to pass custom events.
 

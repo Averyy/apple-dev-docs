@@ -5,7 +5,7 @@
 
 Light scenes realistically by precomputing illumination so surfaces pick up bounced color and ambient detail without recalculating it every frame.
 
-#### Overview
+## Overview
 
 This collection gathers the tools for adding precomputed and environment-based lighting to your scenes. Use it to choose how surfaces respond to light, to bake static illumination and capture indirect light that nearby objects can sample, and to generate the surrounding imagery that lights a scene and fills its background. Reach for these features when you want richer, more believable lighting than real-time computation alone provides, while keeping rendering efficient. They suit scenes with mostly fixed lighting, where investing in precomputation pays off in visual quality and performance.
 

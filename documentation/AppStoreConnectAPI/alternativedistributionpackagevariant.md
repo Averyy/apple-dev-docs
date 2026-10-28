@@ -15,7 +15,7 @@ A device-specific file package within an alternative distribution app, targeting
 object AlternativeDistributionPackageVariant
 ```
 
-#### Discussion
+## Discussion
 
 To learn more about the responses that include alternative distribution package variant objects, see [`AlternativeDistributionPackageVariantResponse`](./alternativedistributionpackagevariantresponse.md) or [`AlternativeDistributionPackageVariantsResponse`](./alternativedistributionpackagevariantsresponse.md).
 

@@ -21,7 +21,7 @@ class TVInterfaceFactory
 @interface TVInterfaceFactory : NSObject
 ```
 
-#### Overview
+## Overview
 
 The app can extend or override the framework implementation by setting [`extendedInterfaceCreator`](./tvinterfacefactory/extendedinterfacecreator.md).
 

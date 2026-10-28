@@ -21,7 +21,7 @@ Access sample attachments.
 var attachments: [CMSampleBuffer.SampleAttachments]? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 When setting attachments array, the number of entries must match [`count`](./count.md).
 

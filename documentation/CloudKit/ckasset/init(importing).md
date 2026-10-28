@@ -21,7 +21,7 @@ Initialize a new [`CKAsset`](../ckasset.md) that can be used to create a copy of
 convenience init(importing exportedAssetID: CKAsset.ExportedAssetID)
 ```
 
-#### Discussion
+## Discussion
 
 When this asset is saved, a server-side copy of the referenced asset is created.
 

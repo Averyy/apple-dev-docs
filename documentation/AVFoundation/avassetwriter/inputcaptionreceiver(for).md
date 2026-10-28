@@ -18,7 +18,7 @@ Attaches the input to the writer and returns an input receiver for writing capti
 func inputCaptionReceiver(for input: AVAssetWriterInput) -> sending AVAssetWriterInput.CaptionReceiver
 ```
 
-#### Return Value
+## Return Value
 
 A writer input receiver with an interface for writing caption data.
 

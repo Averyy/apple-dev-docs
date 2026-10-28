@@ -12,7 +12,7 @@ UInt64 GetDataBufferOffset (
  SCSIParallelTaskIdentifierparallelTask );
 ```
 
-#### Return Value
+## Return Value
 
 returns offset in bytes
 

@@ -20,7 +20,7 @@ A surface that’s transparent.
 case transparent(opacity: PhysicallyBasedMaterial.Opacity)
 ```
 
-#### Discussion
+## Discussion
 
 This enumeration case indicates that the material supports transparency.
 

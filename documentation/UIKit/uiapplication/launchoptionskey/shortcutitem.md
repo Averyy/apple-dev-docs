@@ -24,7 +24,7 @@ static let shortcutItem: UIApplication.LaunchOptionsKey
 extern UIApplicationLaunchOptionsKey const UIApplicationLaunchOptionsShortcutItemKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key is the [`UIApplicationShortcutItem`](../../uiapplicationshortcutitem.md) object representing the action that the user selected.
 

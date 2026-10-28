@@ -19,7 +19,7 @@ The selector defining the action message to invoke when users tap the accessory 
 @property (nonatomic, nullable) SEL accessoryAction;
 ```
 
-#### Discussion
+## Discussion
 
 If you specify a selector for the accessory action, a message is sent only if the accessory view is a detail disclosure button—that is, the cell’s [`accessoryType`](./accessorytype-swift.property.md) property is assigned a value of[`UITableViewCell.AccessoryType.detailDisclosureButton`](./accessorytype-swift.enum/detaildisclosurebutton.md). If the value of this property is `NULL`, no action message is sent.
 

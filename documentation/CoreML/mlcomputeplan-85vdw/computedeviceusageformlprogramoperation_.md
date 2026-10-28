@@ -21,7 +21,7 @@ Returns The anticipated compute devices that would be used for executing an ML P
 - (MLComputePlanDeviceUsage *) computeDeviceUsageForMLProgramOperation:(MLModelStructureProgramOperation *) operation;
 ```
 
-#### Return Value
+## Return Value
 
 The anticipated compute devices that would be used for executing the operation or `nil`if the usage couldn’t be determined.
 

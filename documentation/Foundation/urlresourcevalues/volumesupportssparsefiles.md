@@ -21,7 +21,7 @@ A Boolean value that indicates whether the volume format supports sparse files.
 var volumeSupportsSparseFiles: Bool? { get }
 ```
 
-#### Discussion
+## Discussion
 
 Sparse files have areas where data was never written, and thus do not consume space on disk. A sparse file may have an allocated size on disk that is less than its logical length.
 

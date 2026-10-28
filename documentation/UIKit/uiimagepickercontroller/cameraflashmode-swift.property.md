@@ -21,7 +21,7 @@ var cameraFlashMode: UIImagePickerController.CameraFlashMode { get set }
 @property (nonatomic) UIImagePickerControllerCameraFlashMode cameraFlashMode;
 ```
 
-#### Discussion
+## Discussion
 
 The various flash modes are listed in the [`UIImagePickerController.CameraFlashMode`](./cameraflashmode-swift.enum.md) enumeration. The default value is [`UIImagePickerController.CameraFlashMode.auto`](./cameraflashmode-swift.enum/auto.md).
 

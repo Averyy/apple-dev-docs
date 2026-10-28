@@ -19,7 +19,7 @@ convenience init(identifier: NSTouchBarItem.Identifier, items: [NSTouchBarItem],
 + (instancetype) groupItemWithIdentifier:(NSTouchBarItemIdentifier) identifier items:(NSArray<NSTouchBarItem *> *) items allowedCompressionOptions:(NSUserInterfaceCompressionOptions *) allowedCompressionOptions;
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer to specify which compression options are applied to the group item. The system applies options in the following default order: `breakEqualWidths`, `reduceMetrics`, `hideText`, `hideImages`.
 

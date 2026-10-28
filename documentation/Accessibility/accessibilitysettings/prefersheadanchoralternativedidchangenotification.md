@@ -15,7 +15,7 @@ A notification that posts when the system setting for head-anchored content chan
 static var prefersHeadAnchorAlternativeDidChangeNotification: Notification.Name { get }
 ```
 
-#### Discussion
+## Discussion
 
 The system sends this notification when the setting for head-anchored content changes. When you receive this notification, call [`prefersHeadAnchorAlternative`](./prefersheadanchoralternative.md) to get the new setting.
 

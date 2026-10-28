@@ -23,7 +23,7 @@ func newTextureView(with descriptor: MTLTextureViewDescriptor) -> (any MTLTextur
 - (id<MTLTexture>) newTextureViewWithDescriptor:(MTLTextureViewDescriptor *) descriptor;
 ```
 
-#### Discussion
+## Discussion
 
 Create a new texture which shares the same storage as the source texture, but with different (but compatible) properties specified by the descriptor
 

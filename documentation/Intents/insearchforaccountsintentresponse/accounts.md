@@ -31,7 +31,7 @@ var accounts: [INPaymentAccount]? { get set }
 @property (atomic, copy, readwrite, nullable) NSArray<INPaymentAccount *> * accounts;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to specify the search results. Each INPaymentAccount object should contain information about the account, including the current balance if the user requested that information.
 

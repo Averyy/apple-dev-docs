@@ -25,7 +25,7 @@ func CMRemoveAllAttachments(_ target: CMAttachmentBearer)
 extern void CMRemoveAllAttachments(CMAttachmentBearerRef target);
 ```
 
-#### Discussion
+## Discussion
 
 While `CMRemoveAttachment` removes a specific attachment identified by a key, `CMRemoveAllAttachments` removes all attachments of a `CMAttachmentBearer` and decrements their retain counts.  Given a [`CVBuffer`](../CoreVideo/cvbuffer.md), `CMRemoveAllAttachments` is equivalent to `CVBufferRemoveAllAttachments`.
 

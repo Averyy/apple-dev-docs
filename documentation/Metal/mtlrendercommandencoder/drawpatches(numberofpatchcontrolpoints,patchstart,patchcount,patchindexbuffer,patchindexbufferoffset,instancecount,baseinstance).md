@@ -25,7 +25,7 @@ func drawPatches(numberOfPatchControlPoints: Int, patchStart: Int, patchCount: I
 - (void) drawPatches:(NSUInteger) numberOfPatchControlPoints patchStart:(NSUInteger) patchStart patchCount:(NSUInteger) patchCount patchIndexBuffer:(id<MTLBuffer>) patchIndexBuffer patchIndexBufferOffset:(NSUInteger) patchIndexBufferOffset instanceCount:(NSUInteger) instanceCount baseInstance:(NSUInteger) baseInstance;
 ```
 
-#### Discussion
+## Discussion
 
 The method records the encoder’s current rendering state and resources the command needs as it runs. You can safely change the encoder’s render pipeline state to encode other commands after calling this method. Subsequent changes to the state don’t affect the commands already in the encoder’s [`MTLCommandBuffer`](../mtlcommandbuffer.md).
 

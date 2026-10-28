@@ -18,7 +18,7 @@ case backstopMenu
 kCGBackstopMenuLevelKey
 ```
 
-#### Discussion
+## Discussion
 
 The level of the backstop menu.
 

@@ -24,7 +24,7 @@ var isFinished: Bool { get }
 @property (nonatomic, readonly, getter=isFinished) BOOL finished;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`false`](../../Swift/false.md) initially. The value changes to [`true`](../../Swift/true.md) when the delegate object handling the request calls the [`finishLoading(with:data:redirect:)`](./finishloading%28with,data,redirect%29.md) or [`finishLoading(with:)`](./finishloading%28with%29.md) method.
 

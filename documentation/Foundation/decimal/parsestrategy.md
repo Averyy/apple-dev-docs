@@ -21,7 +21,7 @@ A parse strategy for creating decimal values from formatted strings.
 struct ParseStrategy<Format> where Format : FormatStyle, Format.FormatInput == Decimal
 ```
 
-#### Overview
+## Overview
 
 Create an explicit [`Decimal.ParseStrategy`](./parsestrategy.md) to parse mulitple strings according to the same parse strategy. In the following example, `usCurrencyStrategy` is a [`Decimal.ParseStrategy`](./parsestrategy.md) that uses US dollars and the `en_US` locale’s conventions for number formatting. The example then uses this strategy to parse an array of strings, some of which represent valid US currency values.
 

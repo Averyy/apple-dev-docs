@@ -15,7 +15,7 @@ Returns the data for providing a Live Text interaction with an image in the spec
 final func analyze(_ image: NSImage, orientation: CGImagePropertyOrientation, configuration: ImageAnalyzer.Configuration) async throws -> ImageAnalysis
 ```
 
-#### Return Value
+## Return Value
 
 The data items that the analyzer finds in the image.
 

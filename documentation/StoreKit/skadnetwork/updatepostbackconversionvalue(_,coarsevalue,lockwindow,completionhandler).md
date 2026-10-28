@@ -33,7 +33,7 @@ class func updatePostbackConversionValue(_ fineValue: Int, coarseValue: SKAdNetw
 - [Configuring an advertised app](../configuring-an-advertised-app.md)
 - [Receiving ad attributions and postbacks](../receiving-ad-attributions-and-postbacks.md)
 
-#### Discussion
+## Discussion
 
 Call this method when the user first launches an app to register the app installation, and again to update conversion values as the user engages with the app. It’s up to your app to decide what the conversion values signify in your app, both the `fineValue` and the `coarseValue`.
 
@@ -43,7 +43,7 @@ This method returns [`SKANError.Code.invalidConversionValue`](../skanerror-swift
 
 > ❗ **Important**:  The system ignores calls to this method if the `fineValue` is outside of the valid range. Valid conversion updates your app sends before or after an invalid conversion remain available.
 
-##### Update conversion values for ads signed with SKAdNetwork 4 or later
+### Update conversion values for ads signed with SKAdNetwork 4 or later
 
 For ads that ad networks sign using version 4 or later, calling this method behaves as follows:
 
@@ -53,7 +53,7 @@ For ads that ad networks sign using version 4 or later, calling this method beha
 
 For information about the data you may receive in postbacks, see [Receiving postbacks in multiple conversion windows](../receiving-postbacks-in-multiple-conversion-windows.md).
 
-##### Update conversion values for ads signed with SKAdNetwork 3 or earlier
+### Update conversion values for ads signed with SKAdNetwork 3 or earlier
 
 For ads that ad networks sign using version 3 or earlier, calling this method behaves as follows:
 

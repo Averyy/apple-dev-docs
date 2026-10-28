@@ -24,7 +24,7 @@ var ambientOcclusionScale: MDLMaterialProperty { get }
 @property (nonatomic, retain, readonly) MDLMaterialProperty * ambientOcclusionScale;
 ```
 
-#### Discussion
+## Discussion
 
 The default scaling factor is `1.0`. Modify this value to increase or decrease the severity of ambient occlusion shading.
 

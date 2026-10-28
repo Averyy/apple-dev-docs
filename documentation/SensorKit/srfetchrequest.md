@@ -21,7 +21,7 @@ class SRFetchRequest
 @interface SRFetchRequest : NSObject
 ```
 
-#### Overview
+## Overview
 
 An app configures an instance of this class to select the device from which to query sensor data. The time range ([`from`](./srfetchrequest/from.md), [`to`](./srfetchrequest/to.md)) specifies when the framework records the data. A fetch query can retrieve only sensor data that the app records by first calling [`startRecording()`](./srsensorreader/startrecording%28%29.md).
 

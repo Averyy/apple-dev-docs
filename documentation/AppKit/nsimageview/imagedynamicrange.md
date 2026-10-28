@@ -19,7 +19,7 @@ var imageDynamicRange: NSImage.DynamicRange { get }
 @property (readonly) NSImageDynamicRange imageDynamicRange;
 ```
 
-#### Discussion
+## Discussion
 
 This property returns [`NSImage.DynamicRange.unspecified`](../nsimage/dynamicrange/unspecified.md) if the image view can’t resolve the image content or the image view hasn’t displayed.
 

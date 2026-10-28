@@ -15,7 +15,7 @@ The tab accessibility elements for the tab view.
 @property (copy, nullable) NSArray * accessibilityTabs;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property on a tab view element.
 

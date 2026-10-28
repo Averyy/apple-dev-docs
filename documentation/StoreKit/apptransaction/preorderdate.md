@@ -21,7 +21,7 @@ The date the customer placed an order for the app before it’s available in the
 let preorderDate: Date?
 ```
 
-#### Discussion
+## Discussion
 
 This date is present if your app is available for preorder and the customer places an order before your app is available in the App Store. When your app becomes available, the App Store fulfills the customer’s order. The [`preorderDate`](./preorderdate.md) remains the same.
 

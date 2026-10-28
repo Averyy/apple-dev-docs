@@ -20,7 +20,7 @@ A JSON string representation of the generated content.
 var jsonString: String { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to retrieve a JSON representation, like:
 

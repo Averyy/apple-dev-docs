@@ -24,7 +24,7 @@ func evaluateURL(_ url: URL) async -> (Bool, Data?)
 - (void) evaluateURL:(NSURL *) url completionHandler:(void (^)(BOOL shouldBlock, NSData *blockPageRepresentation)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 If this method blocks a URL, it returns a UTF-8 encoded HTML representation of a blocking page.
 

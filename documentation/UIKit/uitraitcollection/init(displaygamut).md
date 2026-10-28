@@ -23,7 +23,7 @@ init(displayGamut: UIDisplayGamut)
 + (UITraitCollection *) traitCollectionWithDisplayGamut:(UIDisplayGamut) displayGamut;
 ```
 
-#### Return Value
+## Return Value
 
 A new trait collection containing only the gamut value.
 

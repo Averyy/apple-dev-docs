@@ -28,7 +28,7 @@ struct NavigationLink<Label, Destination> where Label : View, Destination : View
 - [Displaying data in lists](./displaying-data-in-lists.md)
 - [Understanding the navigation stack](./understanding-the-navigation-stack.md)
 
-#### Overview
+## Overview
 
 People click or tap a navigation link to present a view inside a [`NavigationStack`](./navigationstack.md) or [`NavigationSplitView`](./navigationsplitview.md). You control the visual appearance of the link by providing view content in the link’s `label` closure. For example, you can use a [`Label`](./label.md) to display a link:
 
@@ -48,7 +48,7 @@ NavigationLink("Work Folder") {
 }
 ```
 
-##### Link to a destination view
+### Link to a destination view
 
 You can perform navigation by initializing a link with a destination view that you provide in the `destination` closure. For example, consider a `ColorDetail` view that fills itself with a color:
 
@@ -75,7 +75,7 @@ NavigationStack {
 }
 ```
 
-##### Create a presentation link
+### Create a presentation link
 
 Alternatively, you can use a navigation link to perform navigation based on a presented data value. To support this, use the [`navigationDestination(for:destination:)`](./view/navigationdestination%28for,destination%29.md) view modifier inside a navigation stack to associate a view with a kind of data, and then present a value of that data type from a navigation link. The following example reimplements the previous example as a series of presentation links:
 
@@ -95,7 +95,7 @@ NavigationStack {
 
 Separating the view from the data facilitates programmatic navigation because you can manage navigation state by recording the presented data.
 
-##### Control a presentation link programmatically
+### Control a presentation link programmatically
 
 To navigate programmatically, introduce a state variable that tracks the items on a stack. For example, you can create an array of colors to store the stack state from the previous example, and initialize it as an empty array to start with an empty stack:
 
@@ -119,7 +119,7 @@ func showBlue() {
 }
 ```
 
-##### Coordinate with a list
+### Coordinate with a list
 
 You can also use a navigation link to control [`List`](./list.md) selection in a [`NavigationSplitView`](./navigationsplitview.md):
 

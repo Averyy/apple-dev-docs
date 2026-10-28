@@ -5,11 +5,11 @@
 
 Initializes a generic media query.
 
-#### Return Value
+## Return Value
 
 A query containing everything in the user’s Music library.
 
-#### Overview
+## Overview
 
 A generic media query has no filter predicates and no grouping configuration. It matches everything in the Music library and provides no grouping or sorting.
 

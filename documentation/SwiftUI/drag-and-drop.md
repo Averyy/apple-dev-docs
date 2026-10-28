@@ -5,7 +5,7 @@
 
 Enable people to move or duplicate items by dragging them from one location to another.
 
-#### Overview
+## Overview
 
 Drag and drop offers people a convenient way to move content from one part of your app to another, from one app to another, or to reorder content using an intuitive dragging gesture. Support this feature in your app by adding view modifiers to potential source and destination views within your app’s interface.
 

@@ -19,7 +19,7 @@ class let willBeginSheetNotification: NSNotification.Name
 extern NSNotificationName NSWindowWillBeginSheetNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is the `NSWindow` object that’s about to open the sheet. This notification doesn’t contain a `userInfo` dictionary.
 

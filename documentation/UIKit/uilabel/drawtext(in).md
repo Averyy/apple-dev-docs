@@ -23,7 +23,7 @@ func drawText(in rect: CGRect)
 - (void) drawTextInRect:(CGRect) rect;
 ```
 
-#### Discussion
+## Discussion
 
 Don’t call this method directly. Override this method if you want to modify the default drawing behavior for the label’s text.
 

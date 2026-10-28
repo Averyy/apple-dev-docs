@@ -23,7 +23,7 @@ func files(ofType fileUTType: String) -> [String]?
 - (NSArray<NSString *> *) filesOfType:(NSString *) fileUTType;
 ```
 
-#### Discussion
+## Discussion
 
 For the `fileType` parameter, pass one of the following uniform type identifier strings: `kUTTypeImage`, `kUTTypeMovie`, `kUTTypeAudio`, or `kUTTypeData`.
 

@@ -26,7 +26,7 @@ optional func provideIdentity(for connection: NWTCPConnection, completionHandler
 - (void) provideIdentityForConnection:(NWTCPConnection *) connection completionHandler:(void (^)(SecIdentityRef identity, NSArray<id> *certificateChain)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Optional. If this method is not implemented, the default certificate evaluation will be used.
 

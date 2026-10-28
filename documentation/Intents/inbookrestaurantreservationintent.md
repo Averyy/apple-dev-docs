@@ -22,7 +22,7 @@ class INBookRestaurantReservationIntent
 @interface INBookRestaurantReservationIntent : INIntent
 ```
 
-#### Overview
+## Overview
 
 An [`INBookRestaurantReservationIntent`](./inbookrestaurantreservationintent.md) object asks you to book the reservation time selected by the user. Maps sends this intent to your Intents extension when the user selects a reservation time from the available options. Use this intent object to obtain the details of the reservation, including the time slot and any selected special offers. Use those details to confirm the reservation with the restaurant and store the results in your system.
 
@@ -30,7 +30,7 @@ Booking a reservation is the last step in the reservation creation process. By t
 
 To handle this intent, the handler object in your Intents extension must adopt the [`INBookRestaurantReservationIntentHandling`](./inbookrestaurantreservationintenthandling.md) protocol. Your handler should resolve and confirm any parameters and create an [`INBookRestaurantReservationIntentResponse`](./inbookrestaurantreservationintentresponse.md) object with the status of the reservation.
 
-##### Additional Intent Attributes
+### Additional Intent Attributes
 
 The following table lists additional attributes of this intent object:
 

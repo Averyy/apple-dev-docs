@@ -19,11 +19,11 @@
 static bool SPScaledPose3DFloatAlmostEqualToPose(SPScaledPose3DFloat p1, SPScaledPose3DFloat p2);
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that indicates whether the two scaled poses are equal within the Spatial default absolute tolerance.
 
-#### Discussion
+## Discussion
 
 Returns a Boolean value that indicates whether the two scaled poses are equal within the Spatial default absolute tolerance.
 

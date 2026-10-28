@@ -22,7 +22,7 @@ var allowFailover: Bool { get set }
 @property BOOL allowFailover;
 ```
 
-#### Discussion
+## Discussion
 
 A boolean indicating if failover to the default system resolver is permitted on resolution failure.
 

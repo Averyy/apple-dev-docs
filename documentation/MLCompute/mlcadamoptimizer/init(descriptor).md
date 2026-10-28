@@ -23,11 +23,11 @@ convenience init(descriptor optimizerDescriptor: MLCOptimizerDescriptor)
 + (instancetype) optimizerWithDescriptor:(MLCOptimizerDescriptor *) optimizerDescriptor;
 ```
 
-#### Return Value
+## Return Value
 
 An Adam optimizer.
 
-#### Discussion
+## Discussion
 
 Sets [`beta1`](./beta1.md) to `0.9`, [`beta2`](./beta2.md) to `0.999`, [`epsilon`](./epsilon.md) to `1e-8`, [`usesAMSGrad`](./usesamsgrad.md) to `false`, and [`timeStep`](./timestep.md) to `1` by default.
 

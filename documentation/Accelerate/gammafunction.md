@@ -25,7 +25,7 @@ typealias GammaFunction = UnsafeMutableRawPointer
 typedef void * GammaFunction;
 ```
 
-#### Discussion
+## Discussion
 
 You use this data type when you create a gamma function. See [`vImageCreateGammaFunction(_:_:_:)`](./vimagecreategammafunction%28_,_,_%29.md).
 

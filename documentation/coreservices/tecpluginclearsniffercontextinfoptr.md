@@ -16,7 +16,7 @@ Defines a pointer to a function that resets asniffer object to its initial setti
 typedef OSStatus (*TECPluginClearSnifferContextInfoPtr)(TECSnifferObjectRef encodingSniffer, TECSnifferContextRec *snifContext);
 ```
 
-#### Return Value
+## Return Value
 
 A resultcode. See [Result Codes](./carbon_core/text_encoding_conversion_manager.md#1664324).
 

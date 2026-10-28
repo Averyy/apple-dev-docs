@@ -19,7 +19,7 @@ Adds to a `DocumentLaunchView` actions that accept a list of selected files as t
 @preconcurrency func documentBrowserContextMenu(@ContentBuilder _ menu: @escaping ([URL]?) -> some View) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 Add `documentBrowserContextMenu` modifier to [`DocumentLaunchView`](../documentlaunchview.md) to provide additional actions to the document browser items’ context menu. For example, a book editor application could have a “Favorite” button that marks user-chosen books as their favorite. The button enables when the user switches the browser into “Selection” mode.
 

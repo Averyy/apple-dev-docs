@@ -25,7 +25,7 @@ static var showWireframe: SCNDebugOptions { get }
 SCNDebugOptionShowWireframe
 ```
 
-#### Discussion
+## Discussion
 
 When this option is enabled, SceneKit still renders scene geometry with all associated materials, then overlays a wireframe rendering of the same geometry. You can use this option, for example, to debug material rendering issues.
 

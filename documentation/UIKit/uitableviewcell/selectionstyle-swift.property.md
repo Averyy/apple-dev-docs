@@ -23,7 +23,7 @@ var selectionStyle: UITableViewCell.SelectionStyle { get set }
 @property (nonatomic) UITableViewCellSelectionStyle selectionStyle;
 ```
 
-#### Discussion
+## Discussion
 
 The selection style is a [`backgroundView`](./backgroundview.md) constant that determines the color of a cell when it’s selected. The default value is [`UITableViewCell.SelectionStyle.default`](./selectionstyle-swift.enum/default.md). See [`UITableViewCell.SelectionStyle`](./selectionstyle-swift.enum.md) for a description of valid constants.
 

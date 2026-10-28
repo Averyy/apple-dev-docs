@@ -23,7 +23,7 @@ Gets the current body of the caller.
 @MainActor @preconcurrency func body(content: Self.Content) -> Self.Body
 ```
 
-#### Discussion
+## Discussion
 
 `content` is a proxy for the view that will have the modifier represented by `Self` applied to it.
 

@@ -25,16 +25,16 @@ var convergenceTest: SparseLSMRConvergenceTest_t
 SparseLSMRConvergenceTest_t convergenceTest;
 ```
 
-#### Discussion
+## Discussion
 
 For [`SparseLSMRCTDefault`](../sparselsmrctdefault.md), iterations stop when:
 
-- *‖ Aᵀ(b-Ax) ‖₂ < [`rtol`](./rtol.md) * ‖ Aᵀ(b-Ax_₀) ‖₂ + [`atol`](./atol.md)*
+- *‖ Aᵀ(b-Ax) ‖₂ < [`rtol`](./rtol.md) \* ‖ Aᵀ(b-Ax_₀) ‖₂ + [`atol`](./atol.md)*
 
 For [`SparseLSMRCTFongSaunders`](../sparselsmrctfongsaunders.md), iterations stop when any of the following occur:
 
-- *‖ b-Ax ‖₂ < [`btol`](./btol.md) * ‖ b ‖₂ + [`atol`](./atol.md) * ‖ A ‖₂ ‖ x ‖₂*    (*‖A‖₂* is an estimate)
-- *‖ Aᵀ (b-Ax) ‖₂ < [`atol`](./atol.md) * ‖ A ‖₂ * ‖ A-bx ‖₂*             (*‖A‖₂* is an estimate)
+- *‖ b-Ax ‖₂ < [`btol`](./btol.md) \* ‖ b ‖₂ + [`atol`](./atol.md) \* ‖ A ‖₂ ‖ x ‖₂*    (*‖A‖₂* is an estimate)
+- *‖ Aᵀ (b-Ax) ‖₂ < [`atol`](./atol.md) \* ‖ A ‖₂ \* ‖ A-bx ‖₂*             (*‖A‖₂* is an estimate)
 - Estimated condition of *matrix >= [`conditionLimit`](./conditionlimit.md)*
 
 ## See Also

@@ -15,7 +15,7 @@ A Boolean value indicating if box has audio capabilities.
 bool HasAudio();
 ```
 
-#### Discussion
+## Discussion
 
 The object’s work queue synchronizes access to the value.
 

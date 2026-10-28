@@ -21,7 +21,7 @@ var isOneShot: Bool { get set }
 @property (getter=isOneShot) BOOL oneShot;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), the window’s window device is freed when it’s removed from the screen list (that is, hidden) and another is created when it’s returned to the screen. When the value is [`false`](../../Swift/false.md), the window device is reused. Freeing the window device when it’s removed from the screen list can result in memory savings and performance improvement for window objects that don’t take long to display. Doing so is particularly appropriate for window objects the user might use once or twice, but not display continually.
 

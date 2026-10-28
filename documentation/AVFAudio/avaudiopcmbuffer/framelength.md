@@ -25,7 +25,7 @@ var frameLength: AVAudioFrameCount { get set }
 @property (nonatomic) AVAudioFrameCount frameLength;
 ```
 
-#### Discussion
+## Discussion
 
 By default, the `frameLength` property doesn’t have a useful value upon creation, so you must set this property before using the buffer. The length must be less than or equal to the [`frameCapacity`](./framecapacity.md) of the buffer. For deinterleaved formats, [`frameCapacity`](./framecapacity.md) refers to the size of one channel’s worth of audio samples.
 

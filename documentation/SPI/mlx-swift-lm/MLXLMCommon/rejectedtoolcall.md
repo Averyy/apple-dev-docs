@@ -17,7 +17,7 @@ A tool-call-shaped model output that was deliberately not made executable.
 struct RejectedToolCall
 ```
 
-#### Overview
+## Overview
 
 Rejections are emitted separately from [`ToolCall`](./toolcall.md) so code handling a `ToolCall` can rely on it having passed parsing and authorization. The raw model output is retained only as a bounded diagnostic preview and is never included in the error description.
 

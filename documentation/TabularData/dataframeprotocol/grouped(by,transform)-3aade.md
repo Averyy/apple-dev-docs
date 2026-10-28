@@ -21,11 +21,11 @@ Creates a grouping of rows that the method selects by choosing unique values the
 func grouped<InputKey, GroupingKey>(by columnID: ColumnID<InputKey>, transform: (InputKey?) -> GroupingKey?) -> RowGrouping<GroupingKey> where GroupingKey : Hashable
 ```
 
-#### Return Value
+## Return Value
 
 A collection of groups.
 
-#### Discussion
+## Discussion
 
 Create groupings that group rows by:
 

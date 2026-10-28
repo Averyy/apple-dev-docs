@@ -21,7 +21,7 @@ The weight to be represented by a type of feedback.
 struct Weight
 ```
 
-#### Overview
+## Overview
 
 `Weight` values can be passed to `SensoryFeedback.impact(weight:intensity:)`.
 

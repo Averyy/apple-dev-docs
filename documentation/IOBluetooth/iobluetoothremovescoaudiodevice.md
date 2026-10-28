@@ -15,7 +15,7 @@ Removes a persistent audio driver for a device that had already been added using
 extern IOReturn IOBluetoothRemoveSCOAudioDevice(IOBluetoothDeviceRef device);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if the audio driver was successfully removed.
 

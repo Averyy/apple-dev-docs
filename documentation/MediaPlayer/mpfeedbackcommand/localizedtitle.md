@@ -25,7 +25,7 @@ var localizedTitle: String { get set }
 @property (nonatomic, copy) NSString * localizedTitle;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to store the text you want shown to the user in conjunction with this command. For example, you might assign the string “I like this” to this property for the command associated with a Like button. The text you specify is displayed to the user at appropriate times by the system.
 

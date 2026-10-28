@@ -13,7 +13,7 @@
 kSENSE_KEY_UNIT_ATTENTION = 0x06
 ```
 
-#### Discussion
+## Discussion
 
 Device server indicates a unit attention condition.
 

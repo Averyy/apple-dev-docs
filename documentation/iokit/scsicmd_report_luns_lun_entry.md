@@ -16,7 +16,7 @@ typedef struct SCSICmd_REPORT_LUNS_LUN_ENTRY {
 } SCSICmd_REPORT_LUNS_LUN_ENTRY;
 ```
 
-#### Overview
+## Overview
 
 This structure represents a single LUN entry in a LUN list returned via the REPORT_LUNS command.
 

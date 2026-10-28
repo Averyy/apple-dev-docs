@@ -22,7 +22,7 @@ An empty, or identity, modifier, used during development to switch modifiers at 
 nonisolated struct EmptyModifier
 ```
 
-#### Overview
+## Overview
 
 Use the empty modifier to switch modifiers at compile time during development. In the example below, in a debug build the [`Text`](./text.md) view inside `ContentView` has a yellow background and a red border. A non-debug build reflects the default system, or container supplied appearance.
 

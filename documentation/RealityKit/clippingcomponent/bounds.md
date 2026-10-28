@@ -20,7 +20,7 @@ The bounding box that defines the clipping region in the entity’s local coordi
 var bounds: BoundingBox
 ```
 
-#### Discussion
+## Discussion
 
 Content outside this bounding box will be clipped (hard edge or faded out based on feathering). The bounds are defined relative to the entity’s origin and are affected by the entity’s transform.
 

@@ -15,7 +15,7 @@ Stops playback and rewinds to the current time of zero.
 void stop();
 ```
 
-#### Discussion
+## Discussion
 
 After this method is called, the [`currentTime`](./currenttime.md) property is `0`. Like [`pause`](./pause.md), this causes [`wantsToPlay`](./wantstoplay.md) to become `false`.
 

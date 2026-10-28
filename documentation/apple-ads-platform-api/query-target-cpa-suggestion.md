@@ -9,7 +9,7 @@ Retrieve the recommended target CPA for a new Maximize Conversions campaign on t
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Discussion
+## Discussion
 
 This endpoint returns the suggested target CPA for a [campaign](./campaigns-endpoints.md). The suggestion is the maximum tap-install CPI observed across the specified app’s eligible markets over the last 28 days. Only countries or regions with at least 10 installs in that window qualify.
 
@@ -17,7 +17,7 @@ To identify the app, use `promotedObjectId` and `promotedObjectType`. Scope resu
 
 See [`FilterOperator`](./recommendationfilteroperator.md) for the full set of supported comparison operators.
 
-##### Filterable Fields
+### Filterable Fields
 
 | Field | Type | Operators | Description |
 | --- | --- | --- | --- |
@@ -25,13 +25,13 @@ See [`FilterOperator`](./recommendationfilteroperator.md) for the full set of su
 | `promotedObjectType` | string (enum) | `EQUALS` | Required. Must be `APPSTORE_APP`. |
 | `countryOrRegion` | array of strings | `IN` | Optional. One or more ISO 3166-1 alpha-2 country or region codes. When omitted, all eligible countries and regions are considered. |
 
-#### Payload Examples
+## Payload Examples
 
 **All Eligible Countries**:
 
 Retrieve the suggested target CPA across all markets. Omitting `countryOrRegion` causes the endpoint to evaluate every country and region with at least 10 installs in the last 28 days and return the highest result.
 
-##### Request
+### Request
 
 Identifies the app by `promotedObjectId` and `promotedObjectType`. Since you don’t supply a country filter, the endpoint evaluates all eligible markets.
 
@@ -58,7 +58,7 @@ POST /v1/suggestions/target-cpas/query
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {
@@ -80,7 +80,7 @@ POST /v1/suggestions/target-cpas/query
 
 Restrict evaluation to specific markets by adding a `countryOrRegion` filter. The endpoint returns the highest suggested target CPA found within those countries or regions only.
 
-##### Request
+### Request
 
 Adds a `countryOrRegion` filter restricting evaluation to the US, GB, and CA markets.
 
@@ -116,7 +116,7 @@ POST /v1/suggestions/target-cpas/query
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {

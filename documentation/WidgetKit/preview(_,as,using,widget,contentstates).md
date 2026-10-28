@@ -13,15 +13,15 @@ Preview a widget with an activity configuration, using the specified attributes 
 ## Declaration
 
 ```swift
-@freestanding
-(declaration) macro Preview<Widget, Attributes>(_ name: String? = nil, as viewKind: ActivityPreviewViewKind, using attributes: Attributes, widget: @escaping () -> Widget, @PreviewActivityBuilder<Attributes> contentStates: @escaping @MainActor () async -> [Attributes.ContentState]) where Widget : Widget, Attributes : ActivityAttributes
+@freestanding(declaration)
+macro Preview<Widget, Attributes>(_ name: String? = nil, as viewKind: ActivityPreviewViewKind, using attributes: Attributes, widget: @escaping () -> Widget, @PreviewActivityBuilder<Attributes> contentStates: @escaping @MainActor () async -> [Attributes.ContentState]) where Widget : Widget, Attributes : ActivityAttributes
 ```
 
 ## Mentions
 
 - [Previewing widgets and Live Activities in Xcode](./previewing-widgets-and-live-activities-in-xcode.md)
 
-#### Overview
+## Overview
 
 Provide the preview with sample data and use it to step through the specified content states and test out the transitions between them.
 

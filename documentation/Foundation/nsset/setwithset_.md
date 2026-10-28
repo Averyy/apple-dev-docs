@@ -21,7 +21,7 @@ Creates and returns a set containing the objects from another set.
 + (instancetype) setWithSet:(NSSet<id> *) set;
 ```
 
-#### Return Value
+## Return Value
 
 A new set containing the objects from `set`.
 

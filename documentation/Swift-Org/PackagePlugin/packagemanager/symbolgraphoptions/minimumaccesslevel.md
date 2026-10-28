@@ -17,7 +17,7 @@ The minimum access level of symbols to return.
 var minimumAccessLevel: AccessLevel
 ```
 
-#### Discussion
+## Discussion
 
 The symbol graph includes symbols at this access level and higher.
 

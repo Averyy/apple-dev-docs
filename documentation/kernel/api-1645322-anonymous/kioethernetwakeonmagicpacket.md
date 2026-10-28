@@ -13,7 +13,7 @@
 kIOEthernetWakeOnMagicPacket = 0x00000001
 ```
 
-#### Discussion
+## Discussion
 
 Reception of a Magic Packet.
 

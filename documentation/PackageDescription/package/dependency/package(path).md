@@ -12,11 +12,11 @@ Adds a local dependency to a package located at the path you provide.
 static func package(path: String) -> Package.Dependency
 ```
 
-#### Return Value
+## Return Value
 
 A package dependency.
 
-#### Discussion
+## Discussion
 
 If the package you depend on defines traits, the package manager uses the dependency with its default set of traits.
 

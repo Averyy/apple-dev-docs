@@ -25,7 +25,7 @@ var resultsLimit: Int { get set }
 @property (nonatomic, assign) NSUInteger resultsLimit;
 ```
 
-#### Discussion
+## Discussion
 
 For most queries, leave the value of this property as the default value, which is the [`maximumResults`](./maximumresults.md) constant. When using that value, CloudKit returns as many records as possible while minimizing delays in receiving those records. If you want to process a fixed number of results, change the value of this property accordingly.
 

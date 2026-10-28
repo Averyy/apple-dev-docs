@@ -15,7 +15,7 @@ A suggestion that contains multiple visited locations that a person chooses in t
 struct LocationGroup
 ```
 
-#### Overview
+## Overview
 
 The system provides an instance of this structure to your app when a person chooses a location suggestion — that contains multiple location points — in the [`JournalingSuggestionsPicker`](../journalingsuggestionspicker.md).
 

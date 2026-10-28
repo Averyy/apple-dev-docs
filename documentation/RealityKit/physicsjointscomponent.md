@@ -20,7 +20,7 @@ A component that stores physics joints which RealityKit simulates.
 struct PhysicsJointsComponent
 ```
 
-#### Overview
+## Overview
 
 Add this component to an entity, or any child of an entity, that has a [`PhysicsSimulationComponent`](./physicssimulationcomponent.md). All joints in the `PhysicsJointsComponent` need to reference entities under the same [`PhysicsSimulationComponent`](./physicssimulationcomponent.md) tree.
 

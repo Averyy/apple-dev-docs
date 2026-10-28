@@ -22,7 +22,7 @@ weak var delegate: (any UIDocumentInteractionControllerDelegate)? { get set }
 @property (nonatomic, weak, nullable) id<UIDocumentInteractionControllerDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 You can implement a delegate object to track user interactions with menu items displayed by the document interaction controller. For more information, see [`UIDocumentInteractionControllerDelegate`](../uidocumentinteractioncontrollerdelegate.md).
 

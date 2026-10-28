@@ -15,7 +15,7 @@ The Free Lossless Audio Codec format.
 FLAC
 ```
 
-#### Discussion
+## Discussion
 
 The flags indicate the bit depth of the source material.
 

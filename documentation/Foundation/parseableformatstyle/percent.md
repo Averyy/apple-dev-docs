@@ -23,7 +23,7 @@ static var percent: Decimal.FormatStyle.Percent { get }
 
 Available when `Self` is `Decimal.FormatStyle.Percent`.
 
-#### Discussion
+## Discussion
 
 Use this type property when the call point allows the use of [`Decimal.FormatStyle`](../decimal/formatstyle.md). You typically do this when calling the [`formatted(_:)`](../decimal/formatted%28_%29.md) method of [`Decimal`](../decimal.md).
 

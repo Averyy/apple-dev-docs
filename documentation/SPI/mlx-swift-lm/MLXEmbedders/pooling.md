@@ -17,7 +17,7 @@ A module that performs pooling operations on hidden states to produce fixed-size
 class Pooling
 ```
 
-#### Overview
+## Overview
 
 `Pooling` takes the sequence of hidden states from a transformer model and collapses them into a single vector using strategies like mean, max, or token selection.
 

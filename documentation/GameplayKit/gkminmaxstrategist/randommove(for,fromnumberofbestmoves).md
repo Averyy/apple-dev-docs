@@ -24,11 +24,11 @@ func randomMove(for player: any GKGameModelPlayer, fromNumberOfBestMoves numMove
 - (id<GKGameModelUpdate>) randomMoveForPlayer:(id<GKGameModelPlayer>) player fromNumberOfBestMoves:(NSInteger) numMovesToConsider;
 ```
 
-#### Return Value
+## Return Value
 
 An object describing the move found by the strategist.
 
-#### Discussion
+## Discussion
 
 This method looks ahead at the possible moves for the specified player, as well as possible future moves by other players on subsequent turns (according to the [`maxLookAheadDepth`](./maxlookaheaddepth.md) property) and examines the state of the game model resulting from each possible move. Your game model class provides a score for each state in its [`score(for:)`](../gkgamemodel/score%28for%29.md) method, allowing the strategist to find and rank sequences of future moves that maximize the score for the specified player. This method then returns a random selection representing the first move in one of the most highly ranked sequences.
 

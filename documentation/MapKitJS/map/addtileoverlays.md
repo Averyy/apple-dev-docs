@@ -15,7 +15,7 @@ Adds an array of tile overlays to the map.
 addTileOverlays(tileOverlays: TileOverlay[]): TileOverlay[];
 ```
 
-#### Return Value
+## Return Value
 
 Returns the array of tile overlays.
 

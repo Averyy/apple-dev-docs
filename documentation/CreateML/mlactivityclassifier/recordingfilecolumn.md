@@ -15,7 +15,7 @@ The name of the column that contains the data files the activity classifier used
 var recordingFileColumn: String
 ```
 
-#### Discussion
+## Discussion
 
 This property reflects the name of the data table column or annotation file column the training session used to locate each activity’s data files.
 

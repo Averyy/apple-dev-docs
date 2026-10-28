@@ -16,7 +16,7 @@ An error that indicates the framework couldn’t complete the evaluation due to 
 case serverError
 ```
 
-#### Discussion
+## Discussion
 
 It may be possible to retry the request.
 

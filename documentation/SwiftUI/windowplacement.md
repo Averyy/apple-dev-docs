@@ -16,7 +16,7 @@ A type which represents a preferred size and position for a window.
 struct WindowPlacement
 ```
 
-#### Overview
+## Overview
 
 When using the [`defaultWindowPlacement(_:)`](./scene/defaultwindowplacement%28_%29.md) modifier, you return an instance of a `WindowPlacement` in the closure you provide.
 

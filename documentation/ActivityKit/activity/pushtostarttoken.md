@@ -16,7 +16,7 @@ The token you use to start a Live Activity with an ActivityKit push notification
 static var pushToStartToken: Data? { get }
 ```
 
-#### Discussion
+## Discussion
 
 The push token for a Live Activity may change over time. Use the [`pushToStartTokenUpdates`](./pushtostarttokenupdates.md) asynchronous sequence to receive an updated push-to-start token. When you receive an updated push token, make sure to send it to your server and invalidate the outdated token.
 

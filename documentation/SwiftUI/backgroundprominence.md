@@ -21,7 +21,7 @@ The prominence of backgrounds underneath other views.
 struct BackgroundProminence
 ```
 
-#### Overview
+## Overview
 
 Background prominence should influence foreground styling to maintain sufficient contrast against the background. For example, selected rows in a `List` and `Table` can have increased prominence backgrounds with accent color fills when focused; the foreground content above the background should be adjusted to reflect that level of prominence.
 

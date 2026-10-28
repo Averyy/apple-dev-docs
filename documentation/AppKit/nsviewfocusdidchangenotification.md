@@ -15,7 +15,7 @@ Deprecated in macOS 10.4 and later. Posted for an `NSView` object and each of it
 extern NSNotificationName NSViewFocusDidChangeNotification;
 ```
 
-#### Discussion
+## Discussion
 
 Instead use `NSViewBoundsDidChangeNotification` and `NSViewFrameDidChangeNotification` to get the same information provided by this notification.
 

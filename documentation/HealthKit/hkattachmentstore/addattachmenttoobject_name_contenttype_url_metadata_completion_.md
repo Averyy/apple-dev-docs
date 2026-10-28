@@ -20,7 +20,7 @@ Adds an attachment to the specified object.
 - (void) addAttachmentToObject:(HKObject *) object name:(NSString *) name contentType:(UTType *) contentType URL:(NSURL *) URL metadata:(NSDictionary<NSString *,id> *) metadata completion:(void (^)(HKAttachment *attachment, NSError *error)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to add an attachment to an object in the HealthKit store. You can add more than one attachment to the specified object.
 

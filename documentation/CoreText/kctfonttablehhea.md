@@ -23,7 +23,7 @@ var kCTFontTableHhea: Int { get }
 kCTFontTableHhea
 ```
 
-#### Discussion
+## Discussion
 
 Font table tag for horizontal header.
 

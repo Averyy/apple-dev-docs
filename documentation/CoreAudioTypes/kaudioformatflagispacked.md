@@ -25,7 +25,7 @@ var kAudioFormatFlagIsPacked: AudioFormatFlags { get }
 kAudioFormatFlagIsPacked
 ```
 
-#### Discussion
+## Discussion
 
 Set this flag to indicate placement of the sample bits occupy the entire available bits of the channel. Clear this flag to indicate placement of the sample bits either with the high or low bits of the channel.
 

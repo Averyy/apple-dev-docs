@@ -15,7 +15,7 @@ Sets the current range of the slider control.
 kern_return_t SetRange(IOUserVideoSliderRange in_range);
 ```
 
-#### Discussion
+## Discussion
 
 Changing the range will send a notification to the host to update the object state if successful. The object’s work queue synchronizes access to the value.
 

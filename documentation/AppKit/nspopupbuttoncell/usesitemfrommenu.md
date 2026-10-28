@@ -19,7 +19,7 @@ var usesItemFromMenu: Bool { get set }
 @property BOOL usesItemFromMenu;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), a pull-down menu uses the title of the first menu item, and a pop-up menu uses the title of the currently selected menu (if no menu item is selected, the pop-up button displays no item and is drawn empty). When the value is [`false`](../../Swift/false.md), the menu item set with [`menuItem`](../nsmenuitemcell/menuitem.md) (`NSMenuItem`) is always displayed. The default value is [`true`](../../Swift/true.md).
 

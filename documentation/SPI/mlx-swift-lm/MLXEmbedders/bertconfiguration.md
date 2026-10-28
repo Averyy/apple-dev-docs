@@ -17,7 +17,7 @@ Configuration parameters for BERT and DistilBERT models.
 struct BertConfiguration
 ```
 
-#### Overview
+## Overview
 
 This struct supports `Decodable` to allow direct initialization from a JSON configuration file. It handles the discrepancy between BERT and DistilBERT JSON keys (e.g., BERT’s `hidden_size` vs DistilBERT’s `dim`).
 

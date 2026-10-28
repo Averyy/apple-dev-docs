@@ -19,7 +19,7 @@ var valueSelectionBehavior: ABPeoplePickerSelectionBehavior { get set }
 @property (nonatomic, assign) ABPeoplePickerSelectionBehavior valueSelectionBehavior;
 ```
 
-#### Discussion
+## Discussion
 
 The default behavior is [`ABSingleValueSelection`](../absinglevalueselection.md).
 

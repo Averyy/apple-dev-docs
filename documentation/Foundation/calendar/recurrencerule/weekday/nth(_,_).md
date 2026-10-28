@@ -21,7 +21,7 @@ Repeat on the n-th instance of the specified weekday in a month, if the recurren
 case nth(Int, Locale.Weekday)
 ```
 
-#### Discussion
+## Discussion
 
 If n is negative, repeat on the n-to-last of the given weekday.
 

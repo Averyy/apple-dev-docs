@@ -21,7 +21,7 @@ Specifies a colon character separating the time components in an ISO 8601 date f
 case colon
 ```
 
-#### Discussion
+## Discussion
 
 The `rawValue` of `colon` is “`:”`.
 

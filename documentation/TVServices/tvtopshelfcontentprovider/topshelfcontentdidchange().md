@@ -19,7 +19,7 @@ class func topShelfContentDidChange()
 + (void) topShelfContentDidChange;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method when your top shelf content changes. This method notifies the system asynchronously and returns. You may call this method either from your app or from your Top Shelf app extension.
 

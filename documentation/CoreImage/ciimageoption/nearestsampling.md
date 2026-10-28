@@ -24,7 +24,7 @@ static let nearestSampling: CIImageOption
 extern CIImageOption const kCIImageNearestSampling;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is an [`NSNumber`](../../Foundation/nsnumber.md) containing a Boolean value specifying whether the image should be sampled using nearest neighbor behavior.  An unspecified value defaults to linear sampling.
 

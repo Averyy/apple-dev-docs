@@ -16,7 +16,7 @@ An object that reports the status of web downloads to the system.
 @interface BEDownloadMonitor : NSObject
 ```
 
-#### Overview
+## Overview
 
 When someone downloads a file in your web browser, create an instance of this class to report progress to the system, and optionally create a placeholder file in the person’s Downloads folder. For more information, see [Downloading files in a web browser with an alternative browser engine](./downloading-files-in-a-web-browser.md).
 

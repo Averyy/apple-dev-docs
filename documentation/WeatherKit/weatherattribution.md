@@ -21,7 +21,7 @@ A structure that  defines the necessary information for attributing a weather da
 struct WeatherAttribution
 ```
 
-#### Overview
+## Overview
 
 Attribution is required for publishing software using WeatherKit.
 

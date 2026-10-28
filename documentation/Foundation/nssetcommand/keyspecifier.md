@@ -20,7 +20,7 @@ var keySpecifier: NSScriptObjectSpecifier { get }
 @property (retain, readonly) NSScriptObjectSpecifier * keySpecifier;
 ```
 
-#### Return Value
+## Return Value
 
 A specifier that identifies the attribute or relationship that is to be set for the receiver of the `set` AppleScript command.
 

@@ -21,7 +21,7 @@ Returns an iterator that will decode the code units into `Unicode.Scalar`s.
 func makeUnicodeScalarIterator() -> UTF8Span.UnicodeScalarIterator
 ```
 
-#### Discussion
+## Discussion
 
 The resulting iterator has the same lifetime constraints as `self`.
 

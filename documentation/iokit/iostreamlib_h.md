@@ -5,11 +5,11 @@
 
 IOCFPlugin library for using IOStream objects.
 
-#### Overview
+## Overview
 
 The IOStream plugin provides a convenient set of functions for accessing and manipulating IOStream objects from user programs.
 
-##### Included Headers
+### Included Headers
 
 - <sys/cdefs.h>
 - <IOKit/IOKitLib.h>

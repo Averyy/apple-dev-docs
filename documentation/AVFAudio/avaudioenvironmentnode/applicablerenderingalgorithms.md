@@ -24,7 +24,7 @@ var applicableRenderingAlgorithms: [NSNumber] { get }
 @property (nonatomic, readonly) NSArray<NSNumber *> * applicableRenderingAlgorithms;
 ```
 
-#### Discussion
+## Discussion
 
 The `AVAudioEnvironmentNode` class supports several rendering algorithms for each input bus as [`AVAudio3DMixingRenderingAlgorithm`](../avaudio3dmixingrenderingalgorithm.md) defines.
 

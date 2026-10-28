@@ -14,7 +14,7 @@
 #define kIOHIDDeviceInterfaceID
 ```
 
-#### Discussion
+## Discussion
 
 Interface ID for the IOHIDDeviceInterface. Corresponds to an available HID device.
 

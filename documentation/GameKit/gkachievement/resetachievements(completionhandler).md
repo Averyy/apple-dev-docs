@@ -33,7 +33,7 @@ class func resetAchievements() async throws
 
 - [Rewarding players with achievements](../rewarding-players-with-achievements.md)
 
-#### Discussion
+## Discussion
 
 This method sets the percentage complete for all of the player’s achievements to zero. If you hide an achievement when you create it in App Store Connect, this method hides the achievement again.
 

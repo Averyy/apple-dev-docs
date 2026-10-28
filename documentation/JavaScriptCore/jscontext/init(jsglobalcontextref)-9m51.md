@@ -20,11 +20,11 @@ Creates a JavaScript context object from the equivalent C representation.
 init!(JSGlobalContextRef jsGlobalContextRef: JSGlobalContextRef!)
 ```
 
-#### Return Value
+## Return Value
 
 A JavaScript context object representing the same context.
 
-#### Discussion
+## Discussion
 
 See `JSContextRef` for the C JavaScriptCore API.
 

@@ -17,7 +17,7 @@ void clearTimeout(
 );
 ```
 
-#### Discussion
+## Discussion
 
 This function stops the function associated with the identifier created by the [`setTimeout`](./api-1627349-settimeout.md) function from executing.
 

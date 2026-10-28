@@ -23,7 +23,7 @@ case inactive
 UIApplicationStateInactive
 ```
 
-#### Discussion
+## Discussion
 
 This might happen as a result of an interruption or because the app is transitioning to or from the background.
 

@@ -24,7 +24,7 @@ func blockmapFile(_ file: FSItem, offset: off_t, length: Int, flags: FSBlockmapF
 - (void) blockmapFile:(FSItem *) file offset:(off_t) offset length:(size_t) length flags:(FSBlockmapFlags) flags operationID:(FSOperationID) operationID packer:(FSExtentPacker *) packer replyHandler:(void (^)(NSError *error)) reply;
 ```
 
-#### Discussion
+## Discussion
 
 FSKit calls this method when the kernel needs to get a mapping of logical-to-physical offsets of the file’s data. This call may occur as part of an I/O operation on the file, or just to get the mapping as part of an `fcntl(F_LOG2PHYS)` system call. In the case of an I/O operation on the file, `operationID` has a nonzero value; a future call to `completeIO(for:offset:length:status:flags:operationID:)` uses the same `operationID` to indicate which operation it completes. In the case of an `fcntl(F_LOG2PHYS)` system call, the `operationID` parameter is `0` (Objective-C) or [`unspecified`](../fsoperationid/unspecified.md) (Swift). In both cases the kernel retains the mapping, and it may perform I/O to this range (or a part of it) at any time.
 

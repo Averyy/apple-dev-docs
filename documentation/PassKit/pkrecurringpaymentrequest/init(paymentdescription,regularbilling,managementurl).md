@@ -23,7 +23,7 @@ init(paymentDescription: String, regularBilling: PKRecurringPaymentSummaryItem, 
 - (instancetype) initWithPaymentDescription:(NSString *) paymentDescription regularBilling:(PKRecurringPaymentSummaryItem *) regularBilling managementURL:(NSURL *) managementURL;
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  You must set the [`recurringPaymentRequest`](../pkpaymentrequest/recurringpaymentrequest.md) property on a [`PKPaymentRequest`](../pkpaymentrequest.md) object to use this class to request a recurring payment.
 

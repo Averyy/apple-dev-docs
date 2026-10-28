@@ -19,7 +19,7 @@ init(item: Any, title: String?, imageProvider: NSItemProvider?, iconProvider: NS
 - (instancetype) initWithItem:(id) item title:(NSString *) title imageProvider:(NSItemProvider *) imageProvider iconProvider:(NSItemProvider *) iconProvider;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized item to share.
 

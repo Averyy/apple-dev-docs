@@ -21,7 +21,7 @@ Returns an object that plays a queue of items.
 + (instancetype) queuePlayerWithItems:(NSArray<AVPlayerItem *> *) items;
 ```
 
-#### Return Value
+## Return Value
 
 A new queue player.
 

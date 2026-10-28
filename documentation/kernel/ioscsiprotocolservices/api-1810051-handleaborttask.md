@@ -13,11 +13,11 @@ virtual SCSIServiceResponse HandleAbortTask (
  SCSITaggedTaskIdentifiertheTag );
 ```
 
-#### Return Value
+## Return Value
 
 A valid SCSIServiceResponse.
 
-#### Overview
+## Overview
 
 HandleAbortTask instructs the Protocol Services driver to abort the task.
 

@@ -19,11 +19,11 @@ init?(bitmapImageRep bitmapRep: NSBitmapImageRep)
 + (NSGraphicsContext *) graphicsContextWithBitmapImageRep:(NSBitmapImageRep *) bitmapRep;
 ```
 
-#### Return Value
+## Return Value
 
 The created [`NSGraphicsContext`](../nsgraphicscontext.md) object, or `nil` if the object could not be created.
 
-#### Discussion
+## Discussion
 
 This method accepts only single plane [`NSBitmapImageRep`](../nsbitmapimagerep.md) instances. It is the equivalent of using [`init(attributes:)`](./init%28attributes%29.md) and passing `bitmapRep` as the value for the dictionary’s [`destination`](./attributekey/destination.md) key.
 

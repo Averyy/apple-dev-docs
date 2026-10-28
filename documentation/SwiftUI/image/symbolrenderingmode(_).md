@@ -21,7 +21,7 @@ Sets the rendering mode for symbol images within this view.
 func symbolRenderingMode(_ mode: SymbolRenderingMode?) -> Image
 ```
 
-#### Return Value
+## Return Value
 
 A view that uses the rendering mode you supply.
 

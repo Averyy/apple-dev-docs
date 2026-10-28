@@ -17,7 +17,7 @@ Captive portal login information for a Wi-Fi network.
 struct CaptivePortalLogin
 ```
 
-#### Overview
+## Overview
 
 Contains form data that people previously entered to complete captive portal authentication.
 

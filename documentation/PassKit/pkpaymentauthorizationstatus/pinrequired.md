@@ -24,7 +24,7 @@ case pinRequired
 PKPaymentAuthorizationStatusPINRequired
 ```
 
-#### Discussion
+## Discussion
 
 Pass this constant to the completion block when the payment requires a PIN but the token did not include one—for example, when the bank’s and app’s PIN limits are out of sync. Apple Pay automatically prompts the user to enter their PIN.
 

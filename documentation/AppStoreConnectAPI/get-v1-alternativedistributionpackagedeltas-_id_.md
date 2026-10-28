@@ -9,9 +9,9 @@ Get detail information about specific alternative distribution package deltas.
 **Availability**:
 - App Store Connect API 3.3+
 
-#### Discussion
+## Discussion
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

@@ -24,11 +24,11 @@ class func morphologyRectangleMinimum() -> any CIFilter & CIMorphologyRectangleM
 + (CIFilter<CIMorphologyRectangleMinimum> *) morphologyRectangleMinimumFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The blurred image.
 
-#### Discussion
+## Discussion
 
 This method applies the morphology rectangle minimum filter to an image. The effect targets a rectangular section of the image, calculating the median color values to find colors that make up more than half the working area. Using this calculation, the effect reduces the pixels with contrasting colors to take up more of the less area. The effect is then repeated throughout the image.
 

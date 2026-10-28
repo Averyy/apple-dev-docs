@@ -21,7 +21,7 @@ A tag representing additional metadata on tagged media buffers.
 struct CMTag;
 ```
 
-#### Overview
+## Overview
 
 The Core Media framework uses tags to describe the properties of media channels. Each tag consists of a category and a value, both of which are 64 bits in size.
 

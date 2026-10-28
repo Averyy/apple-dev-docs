@@ -21,7 +21,7 @@ Calculates the double-precision element-wise difference of the product of a vect
 extern void vDSP_vsmsbD(const double *__A, vDSP_Stride __IA, const double *__B, const double *__C, vDSP_Stride __IC, double *__D, vDSP_Stride __ID, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 This function calculates the element-wise product of vector `A` and scalar value `B`, subtracts vector `C` from the product, and writes the result to vector `D`, as follows:
 

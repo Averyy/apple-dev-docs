@@ -25,7 +25,7 @@ func CGPDFArrayGetArray(_ array: CGPDFArrayRef, _ index: Int, _ value: UnsafeMut
 extern bool CGPDFArrayGetArray(CGPDFArrayRef array, size_t index, CGPDFArrayRef*value);
 ```
 
-#### Return Value
+## Return Value
 
 Returns [`true`](../Swift/true.md) if there is a PDF array at the specified index, otherwise [`false`](../Swift/false.md).
 

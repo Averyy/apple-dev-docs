@@ -24,7 +24,7 @@ var removedObjects: [ObjectType] { get }
 @property (atomic, strong, readonly) NSArray<PHObject *> * removedObjects;
 ```
 
-#### Discussion
+## Discussion
 
 This array can contain [`PHAsset`](../phasset.md), [`PHAssetCollection`](../phassetcollection.md), or [`PHCollectionList`](../phcollectionlist.md) objects, or some combination thereof.
 

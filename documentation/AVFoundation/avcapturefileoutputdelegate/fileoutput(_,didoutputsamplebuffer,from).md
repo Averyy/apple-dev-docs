@@ -19,7 +19,7 @@ optional func fileOutput(_ output: AVCaptureFileOutput, didOutputSampleBuffer sa
 - (void) captureOutput:(AVCaptureFileOutput *) output didOutputSampleBuffer:(CMSampleBufferRef) sampleBuffer fromConnection:(AVCaptureConnection *) connection;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called whenever the file output receives a single sample buffer (a single video frame or audio buffer, for example) from the given connection. This gives delegates an opportunity to start and stop recording or change output files at an exact sample boundary. If called from within this method, the file output’s [`startRecording(to:recordingDelegate:)`](../avcapturefileoutput/startrecording%28to,recordingdelegate%29.md) and [`resumeRecording()`](../avcapturefileoutput/resumerecording%28%29.md) methods are guaranteed to include the received sample buffer in the new file, whereas calls to [`stopRecording()`](../avcapturefileoutput/stoprecording%28%29.md) and [`pauseRecording()`](../avcapturefileoutput/pauserecording%28%29.md) are guaranteed to include all samples leading up to those in the current sample buffer in the existing file.
 

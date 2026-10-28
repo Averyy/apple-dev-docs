@@ -20,7 +20,7 @@ Returns a new MLUntypedColumn by copying the original MLUntypedColumn
 func copy() -> MLUntypedColumn
 ```
 
-#### Return Value
+## Return Value
 
 A MLUntypedColumn which is a copy of the original MLUntypedColumn.
 

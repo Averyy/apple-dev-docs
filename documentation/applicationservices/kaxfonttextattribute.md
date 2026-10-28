@@ -19,7 +19,7 @@ var kAXFontTextAttribute: Unmanaged<CFString>
 CFStringRef kAXFontTextAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 The dictionary associated with this attribute must contain the [`kAXFontNameKey`](./kaxfontnamekey.md) and [`kAXFontSizeKey`](./kaxfontsizekey.md) font keys. It may also contain the [`kAXFontFamilyKey`](./kaxfontfamilykey.md) and [`kAXVisibleNameKey`](./kaxvisiblenamekey.md) font keys.
 

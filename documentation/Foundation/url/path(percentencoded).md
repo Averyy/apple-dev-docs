@@ -21,11 +21,11 @@ Returns the path component of the URL, optionally removing any percent-encoding.
 func path(percentEncoded: Bool = true) -> String
 ```
 
-#### Return Value
+## Return Value
 
 The path component of the URL, optionally percent-encoding any unreserved characters.
 
-#### Discussion
+## Discussion
 
 The system doesn’t allow certain characters in the URL path component, so [`URL`](../url.md) percent-encodes those characters to create a valid URL. Calling this function with `percentEncoded = false` removes any percent-encoding and returns the unencoded path.
 

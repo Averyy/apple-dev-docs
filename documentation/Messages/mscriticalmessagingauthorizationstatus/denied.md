@@ -16,7 +16,7 @@ A person has denied permission to use the Critical Messaging API.
 case denied
 ```
 
-#### Discussion
+## Discussion
 
 The framework returns this value when someone explicitly denies a request to use the  API.
 

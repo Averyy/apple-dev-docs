@@ -25,7 +25,7 @@ let MPNowPlayingInfoPropertyChapterCount: String
 extern NSString * const MPNowPlayingInfoPropertyChapterCount;
 ```
 
-#### Discussion
+## Discussion
 
 Value is an [`NSNumber`](../Foundation/nsnumber.md) object configured as an [`NSUInteger`](../ObjectiveC/nsuinteger.md).
 

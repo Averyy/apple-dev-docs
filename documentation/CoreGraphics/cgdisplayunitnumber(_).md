@@ -20,11 +20,11 @@ func CGDisplayUnitNumber(_ display: CGDirectDisplayID) -> UInt32
 extern uint32_t CGDisplayUnitNumber(CGDirectDisplayID display);
 ```
 
-#### Return Value
+## Return Value
 
 A logical unit number for the specified display.
 
-#### Discussion
+## Discussion
 
 The logical unit number represents a particular node in the I/O Kit device tree associated with the display’s framebuffer.
 

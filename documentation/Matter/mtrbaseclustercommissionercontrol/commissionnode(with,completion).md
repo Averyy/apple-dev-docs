@@ -29,7 +29,7 @@ func commissionNode(with params: MTRCommissionerControlClusterCommissionNodePara
 - (void) commissionNodeWithParams:(MTRCommissionerControlClusterCommissionNodeParams *) params completion:(void (^)(MTRCommissionerControlClusterReverseOpenCommissioningWindowParams *data, NSError *error)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 This command is sent by a client to request that the server begins commissioning a previously approved request.
 

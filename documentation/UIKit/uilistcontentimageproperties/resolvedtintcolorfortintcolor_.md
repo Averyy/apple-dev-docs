@@ -19,7 +19,7 @@ Generates the resolved tint color for the specified tint color, using the tint c
 - (UIColor *) resolvedTintColorForTintColor:(UIColor *) tintColor;
 ```
 
-#### Discussion
+## Discussion
 
 The resulting color depends on [`tintColor`](./tintcolor.md) and [`tintColorTransformer`](./tintcolortransformer.md).
 

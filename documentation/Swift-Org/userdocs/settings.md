@@ -10,7 +10,7 @@ framework: "Swift-Org/userdocs"
 
 Configure the behavior of the Swift extension.
 
-#### Overview
+## Overview
 
 > **💡 Tip**: The Settings Editor is common to all VS Code extensions. See the [documentation about personalizing VS Code](https://code.visualstudio.com/docs/getstarted/personalize-vscode) for a more in-depth overview.
 
@@ -18,9 +18,9 @@ The Swift extension comes with a number of settings you can use to control how i
 
 This document outlines useful configuration options not covered by the settings descriptions in the extension settings page.
 
-#### Workspace Setup
+## Workspace Setup
 
-##### Multiple packages in workspace folder
+### Multiple packages in workspace folder
 
 If the workspace folder you open in VS Code contains multiple Swift packages:
 
@@ -55,7 +55,7 @@ Additionally you can exclude individual packages from initializing:
 }
 ```
 
-##### Multi-root Workspaces
+### Multi-root Workspaces
 
 As an alternative to opening [a single workspace folder with multiple packages in it](./settings.md#multiple-packages-in-workspace-folder), VS Code has a concept of [multi-root workspaces](https://code.visualstudio.com/docs/editing/workspaces/multi-root-workspaces) which the Swift extension supports.
 
@@ -80,7 +80,7 @@ Ex. myProj.code-workspace
 }
 ```
 
-#### Command Plugins
+## Command Plugins
 
 Swift packages can define [command plugins](https://github.com/swiftlang/swift-package-manager/blob/main/Documentation/Plugins.md) that can perform arbitrary tasks. For example, the [swift-format](https://github.com/swiftlang/swift-format) package exposes a `format-source-code` command which will use swift-format to format source code in a folder. These plugin commands can be invoked from VS Code using `> Swift: Run Command Plugin`.
 
@@ -137,11 +137,11 @@ Alternatively you can specify which specific command the arguments should apply 
 }
 ```
 
-#### SourceKit-LSP
+## SourceKit-LSP
 
 [SourceKit-LSP](https://github.com/apple/sourcekit-lsp) is the language server used by the Swift extension to provide symbol completion, jump to definition, etc. It is developed by Apple to provide Swift and C language support for any editor that supports the Language Server Protocol.
 
-##### Background Indexing
+### Background Indexing
 
 Background Indexing was added as an experimental feature in Swift toolchain version 6.0 and then enabled by default in 6.1. This feature removes the need to do a build before getting code completion and diagnostics.
 
@@ -149,7 +149,7 @@ On startup, SourceKit-LSP will read your project information from your `Package.
 
 You can enable or disable this feature with the [swift.sourcekit-lsp.backgroundIndexing](vscode://settings/swift.sourcekit-lsp.backgroundIndexing) setting.
 
-##### Support for ‘Expand Macro’
+### Support for ‘Expand Macro’
 
 If you are using a nightly (`main`) toolchain you can enable support for the “Peek Macro” Quick Action, accessible through the light bulb icon when the cursor is on a macro.
 
@@ -162,9 +162,9 @@ To enable support, set the following Sourcekit-LSP server arguments in your sett
 ]
 ```
 
-#### Windows Development
+## Windows Development
 
-##### Specifying a Visual Studio installation
+### Specifying a Visual Studio installation
 
 Swift depends on a number of developer tools when running on Windows, including the C++ toolchain and the Windows SDK. Typically these are installed with [Visual Studio](https://visualstudio.microsoft.com/).
 

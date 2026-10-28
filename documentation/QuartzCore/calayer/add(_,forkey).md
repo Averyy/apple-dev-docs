@@ -24,7 +24,7 @@ func add(_ anim: CAAnimation, forKey key: String?)
 - (void) addAnimation:(CAAnimation *) anim forKey:(NSString *) key;
 ```
 
-#### Discussion
+## Discussion
 
 If the `duration` property of the animation is zero or negative, the duration is changed to the current value of the [`kCATransactionAnimationDuration`](../kcatransactionanimationduration.md) transaction property (if set) or to the default value of `0.25` seconds.
 

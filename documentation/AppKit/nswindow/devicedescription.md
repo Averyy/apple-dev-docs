@@ -19,7 +19,7 @@ var deviceDescription: [NSDeviceDescriptionKey : Any] { get }
 @property (copy, readonly) NSDictionary<NSString *,id> * deviceDescription;
 ```
 
-#### Discussion
+## Discussion
 
 This information is useful for tuning images and colors to the window’s display capabilities. The contents of the dictionary are described in `Display Device—Descriptions`.
 

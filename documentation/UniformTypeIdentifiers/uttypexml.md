@@ -21,7 +21,7 @@ A type that represents generic XML data.
 extern UTType * const UTTypeXML;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.xml`.
 

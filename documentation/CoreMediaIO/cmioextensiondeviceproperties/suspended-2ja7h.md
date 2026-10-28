@@ -16,7 +16,7 @@ A Boolean value that indicates whether the device is in a suspended state.
 @property (atomic, strong, nullable) NSNumber * suspended;
 ```
 
-#### Discussion
+## Discussion
 
 The key for this property is [`deviceIsSuspended`](../cmioextensionproperty/deviceissuspended.md).
 

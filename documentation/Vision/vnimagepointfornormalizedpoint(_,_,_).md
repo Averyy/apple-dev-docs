@@ -28,11 +28,11 @@ extern CGPoint VNImagePointForNormalizedPoint(CGPoint normalizedPoint, size_t im
 
 - [Detecting Human Body Poses in Images](./detecting-human-body-poses-in-images.md)
 
-#### Return Value
+## Return Value
 
 The input point projected into image coordinates.
 
-#### Discussion
+## Discussion
 
 The resulting point in image coordinate space may have nonintegral (floating-point) coordinates.
 

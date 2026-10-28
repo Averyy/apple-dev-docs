@@ -20,7 +20,7 @@ func addPercentSlider(withName name: String, parameterID: UInt32, defaultValue: 
 - (BOOL) addPercentSliderWithName:(NSString *) name parameterID:(UInt32) parameterID defaultValue:(double) defaultValue parameterMin:(double) min parameterMax:(double) max sliderMin:(double) sliderMin sliderMax:(double) sliderMax delta:(double) sliderDelta parameterFlags:(FxParameterFlags) flags;
 ```
 
-#### Return Value
+## Return Value
 
 Returns `YES` if the application successfully creates a floating point slider parameter; `NO` otherwise.
 

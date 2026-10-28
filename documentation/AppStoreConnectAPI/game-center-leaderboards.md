@@ -5,7 +5,7 @@
 
 Create and manage leaderboards for your apps.
 
-#### Overview
+## Overview
 
 Use leaderboards in your games so players can compare their scores against other players in the same game. When you configure leaderboards in App Store Connect, you specify details such as the scores to collect and how to order them.
 

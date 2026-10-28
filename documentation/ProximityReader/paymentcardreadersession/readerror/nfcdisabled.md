@@ -17,7 +17,7 @@ NFC is disabled on the device.
 case nfcDisabled
 ```
 
-#### Discussion
+## Discussion
 
 The Tap to Pay on iPhone sheet displayed an error message asking the user to enable their NFC.
 

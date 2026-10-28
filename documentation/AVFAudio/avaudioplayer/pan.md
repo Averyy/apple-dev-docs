@@ -25,7 +25,7 @@ var pan: Float { get set }
 @property float pan;
 ```
 
-#### Discussion
+## Discussion
 
 Set this property value to position the audio in the stereo field. Use a value of `-1.0` to indicate full left, `1.0` for full right, and `0.0` for center.
 

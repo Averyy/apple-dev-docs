@@ -15,7 +15,7 @@ Detailed information for a single registered merchant.
 object MerchantDetails
 ```
 
-#### Discussion
+## Discussion
 
 The following example shows the structure of a JSON object that contains the merchant details response.
 

@@ -19,7 +19,7 @@ static let displayPatternTitle: NSBindingName
 extern NSBindingName NSDisplayPatternTitleBinding;
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see [Cocoa Bindings](../cocoa-bindings.md).
 

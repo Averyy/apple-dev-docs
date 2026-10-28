@@ -10,7 +10,7 @@ Specify the secrets your app requires for device management features, receive se
 - iPadOS 18.4+
 - visionOS 2.4+
 
-#### Overview
+## Overview
 
 Some device management features rely on *secrets*, that is, secure credentials provisioned by an administrator (MDM admin) for your app, such as passwords, certificates, and identities. Secrets can support:
 
@@ -22,7 +22,7 @@ Your app accesses secrets by their identifier using the framework supplied secre
 
 The provider’s list of identifiers is an [`AsyncSequence`](../Swift/asyncsequence.md). If your app requires notification when the available secrets change, or if your app supports dynamic lists of secrets, iterate the sequence for the lifetime of the app using `for await`.
 
-#### Specify the secrets your app supports
+## Specify the secrets your app supports
 
 To implement features with secrets, identify the provisions that you require from MDM admins. Publish a specification that details the requirements in a location accessible to MDM admins; for example, hosting it on your app website.
 
@@ -30,7 +30,7 @@ To implement features with secrets, identify the provisions that you require fro
 
 When an admin provisions secrets on their MDM server according to your specification, they use [Device Management](../DeviceManagement/DeviceManagement.md). The device’s operating system works with [Device Management](../DeviceManagement/DeviceManagement.md) to ingest the secrets on the device. From the perspective of your app, [ManagedApp](./ManagedApp.md) receives the secrets automatically.
 
-#### Retrieve secrets using a known identifier
+## Retrieve secrets using a known identifier
 
 The framework defines a provider class for each type of secret:
 
@@ -87,7 +87,7 @@ public func urlSession(_ session: URLSession,
 
 > ❗ **Important**: For security reasons, only request a secret from the framework when your app needs it immediately. This minimizes the amount of time that the secret is in your app’s memory. Avoid logging sensitive information such as passwords or private-key data.
 
-#### Retrieve secrets using the provider’s identifiers sequence
+## Retrieve secrets using the provider’s identifiers sequence
 
 If your app needs a notification when the available secrets change, or if your app maintains dynamic lists of secrets, use the provider’s [`AsyncSequence`](../Swift/asyncsequence.md).  Use a `for await` construct on the provider’s `identifiers` property to listen for changes. The following example builds a list of available usernames by iterating the  [`ManagedAppIdentitiesProvider`](./managedappidentitiesprovider.md) sequence:
 
@@ -107,7 +107,7 @@ Task {
 
 > **Note**: Instead of predefining identifiers, you can add identifiers to your configuration specification so the identifiers are flexible and MDM admins can configure them. For more information, see [Specifying and decoding a configuration](./specifying-and-decoding-a-configuration.md).
 
-#### Access an identity for authentication or signing
+## Access an identity for authentication or signing
 
 To log someone in, an app needs to authenticate with a server. To acquire the person’s identity to authenticate, pass the person’s username as the identifier argument of the identity provider’s accessor, for example:
 

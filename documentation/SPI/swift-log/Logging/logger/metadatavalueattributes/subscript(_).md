@@ -17,7 +17,7 @@ Get or set a custom attribute by its type.
 subscript<Attr>(attribute: Attr.Type) -> Attr? where Attr : Logger.MetadataValueAttributes.Attribute { get set }
 ```
 
-#### Return Value
+## Return Value
 
 The attribute value, or `nil` if not set.
 

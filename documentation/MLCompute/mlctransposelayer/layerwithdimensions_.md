@@ -19,11 +19,11 @@ Creates a transpose layer with the dimensions you specify.
 + (instancetype) layerWithDimensions:(NSArray<NSNumber *> *) dimensions;
 ```
 
-#### Return Value
+## Return Value
 
 A transpose layer.
 
-#### Discussion
+## Discussion
 
 The `dimensions` array contains an input axis source for each output axis. In other words, the `n`th element in the dimensions array specifies the input axis source for the `n`th axis in the output. You can’t transpose the batch dimension, which is typically axis 0.
 

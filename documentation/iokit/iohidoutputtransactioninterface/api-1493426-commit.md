@@ -16,11 +16,11 @@ Commits the transaction.
 IOReturn (*commit)(void *self, uint32_t timeoutMS, IOHIDCallbackFunction callback, void *callbackTarget, void *callbackRefcon);
 ```
 
-#### Return Value
+## Return Value
 
 Returns an IOReturn code.
 
-#### Discussion
+## Discussion
 
 Transaction element values, if set, will be sent to the device. Otherwise, the default element value will be used. If neither are set, that element will be omitted from the commit. After a transaction is committed, transaction element values will be cleared. Default values will be preserved.
 

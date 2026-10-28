@@ -23,7 +23,7 @@ var learningRate: Float { get }
 @property (nonatomic, readonly) float learningRate;
 ```
 
-#### Discussion
+## Discussion
 
 This property is readwrite so that callers can implement a decay during training.
 

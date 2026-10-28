@@ -20,11 +20,11 @@ Returns a new pixel buffer adaptor that appends pixel buffers to write to the ou
 + (instancetype) assetWriterInputPixelBufferAdaptorWithAssetWriterInput:(AVAssetWriterInput *) input sourcePixelBufferAttributes:(NSDictionary<NSString *,id> *) sourcePixelBufferAttributes;
 ```
 
-#### Return Value
+## Return Value
 
 A new pixel buffer adaptor to receive pixel buffers for writing to the output file.
 
-#### Discussion
+## Discussion
 
 To take advantage of the efficiency of appending buffers created from the adaptor’s pixel buffer pool, specify pixel buffer attributes that most closely accommodate the format of the buffers you append.
 

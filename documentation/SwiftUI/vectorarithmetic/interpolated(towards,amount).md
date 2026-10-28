@@ -22,7 +22,7 @@ Returns this value interpolated with `other` by the specified `amount`.
 func interpolated(towards other: Self, amount: Double) -> Self
 ```
 
-#### Discussion
+## Discussion
 
 This result is equivalent to `self + (other - self) * amount`.
 

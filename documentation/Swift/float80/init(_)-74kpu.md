@@ -15,7 +15,7 @@ Creates a new instance from the given string.
 init?<S>(_ text: S) where S : StringProtocol
 ```
 
-#### Discussion
+## Discussion
 
 The string passed as `text` can represent a real number in decimal or hexadecimal format or can be in a special format representing infinity or NaN (“not a number”). If `text` is not in a recognized format, the optional initializer will fail and return `nil`.
 

@@ -21,7 +21,7 @@ Creates a new collection difference from a collection of changes.
 init?<Changes>(_ changes: Changes) where Changes : Collection, Changes.Element == CollectionDifference<ChangeElement>.Change
 ```
 
-#### Discussion
+## Discussion
 
 To find the difference between two collections, use the `difference(from:)` method declared on the `BidirectionalCollection` protocol.
 

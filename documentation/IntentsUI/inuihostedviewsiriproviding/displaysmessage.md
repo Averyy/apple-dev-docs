@@ -22,7 +22,7 @@ optional var displaysMessage: Bool { get }
 @property (nonatomic, assign, readonly) BOOL displaysMessage;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this property and return [`true`](../../Swift/true.md) when you want your view controller to display the content and recipients of a message. For example, you might return [`true`](../../Swift/true.md) when you want to provide a customized message interface. If you do not implement this property, or your implementation returns [`false`](../../Swift/false.md), Siri displays the message recipients and content using its own interface.
 

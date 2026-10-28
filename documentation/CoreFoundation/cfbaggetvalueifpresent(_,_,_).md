@@ -25,11 +25,11 @@ func CFBagGetValueIfPresent(_ theBag: CFBag!, _ candidate: UnsafeRawPointer!, _ 
 extern Boolean CFBagGetValueIfPresent(CFBagRef theBag, const void *candidate, const void **value);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if `value` is present in `theBag`, otherwise `false`.
 
-#### Discussion
+## Discussion
 
 Depending on the implementation of the equal callback specified when creating `theBag`, the value returned in `value` may not have the same pointer equality as `candidate`.
 

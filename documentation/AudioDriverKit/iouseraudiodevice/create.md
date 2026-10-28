@@ -15,11 +15,11 @@ Allocates and initializes an instance of the audio device class.
 static OSSharedPtr<IOUserAudioDevice> Create(IOUserAudioDriver *in_driver, bool in_supports_prewarming, OSString *in_device_uid, OSString *in_model_uid, OSString *in_manufacturer_uid, uint32_t in_zero_timestamp_period);
 ```
 
-#### Return Value
+## Return Value
 
 A poiner to an [`IOUserAudioDevice`](../iouseraudiodevice.md), if allocation and initialization succeeded.
 
-#### Discussion
+## Discussion
 
 If you subclass [`IOUserAudioDevice`](../iouseraudiodevice.md) to override this class’ behavior, don’t use [`Create`](./create.md) to allocate and initialize the custom subclass.
 

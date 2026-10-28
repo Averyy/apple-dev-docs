@@ -18,7 +18,7 @@ case utilityWindow
 kCGUtilityWindowLevelKey
 ```
 
-#### Discussion
+## Discussion
 
 The level for utility windows.
 

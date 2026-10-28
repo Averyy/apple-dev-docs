@@ -25,7 +25,7 @@ typealias MIDITimeStamp = UInt64
 typedef UInt64 MIDITimeStamp;
 ```
 
-#### Discussion
+## Discussion
 
 The system determines the timestamp using `mach_absolute_time()`.
 

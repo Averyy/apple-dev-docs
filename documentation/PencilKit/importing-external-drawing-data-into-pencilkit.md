@@ -5,13 +5,13 @@
 
 Convert existing Bézier-based stroke data into PencilKit drawing strokes.
 
-#### Overview
+## Overview
 
 If your app handles drawing data as Bézier paths, such as when you import an existing file format, interface with a third-party library, or store drawing data in your own data model, you can convert those Bézier paths directly into PencilKit drawing strokes and adopt PencilKit as your rendering engine without discarding your existing data.
 
 PencilKit uses a stroke format optimized for Apple Pencil input, represented by [`PKStroke`](./pkstroke-swift.struct.md), which differs from the Bézier path format that Core Graphics and other frameworks use. Because the two formats represent curves differently, the conversion is an approximation. After you convert your stroke data, review the results to confirm the strokes look as you expect.
 
-#### Convert a Bézier path to a stroke
+## Convert a Bézier path to a stroke
 
 To convert a Bézier path, initialize a [`PKStrokePath`](./pkstrokepath-swift.struct.md) from a [`CGPath`](../CoreGraphics/cgpath.md) using [`init(bezierPath:creationDate:pointProvider:)`](./pkstrokepath-swift.struct/init%28bezierpath,creationdate,pointprovider%29.md). Because a Bézier path describes only the shape of a curve and not the per-point properties PencilKit uses for rendering, such as pressure, opacity, and size, you supply those values through the `pointProvider` closure, which the system calls once for each point in the resulting path.
 
@@ -58,7 +58,7 @@ func makeStroke(from bezierPath: CGPath, ink: PKInk) -> PKStroke {
 }
 ```
 
-#### Save and load PencilKit strokes in a Bézier file format
+## Save and load PencilKit strokes in a Bézier file format
 
 If you want to keep Bézier paths as your file format after adopting PencilKit, you can export strokes back to Bézier paths for saving and reload them with full fidelity. Use [`bezierRepresentation`](./pkstrokepath-swift.struct/bezierrepresentation.md) to export a stroke path to a [`CGPath`](../CoreGraphics/cgpath.md) for saving, then [`init(bezierPath:creationDate:pointProvider:)`](./pkstrokepath-swift.struct/init%28bezierpath,creationdate,pointprovider%29.md) to load it back.
 
@@ -116,7 +116,7 @@ let restoredPath = PKStrokePath(
 )
 ```
 
-#### Add the converted strokes to a drawing
+## Add the converted strokes to a drawing
 
 [`PKDrawing`](./pkdrawing-swift.struct.md) holds all the strokes that appear in a canvas. After converting your strokes, set the [`strokes`](./pkdrawing-swift.struct/strokes.md) property on a new drawing and assign it to your [`PKCanvasView`](./pkcanvasview.md). This replaces any existing content in the canvas with your imported strokes. The following example converts a collection of legacy paths to strokes and assigns them to a canvas:
 

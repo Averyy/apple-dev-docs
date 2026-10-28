@@ -16,7 +16,7 @@ An action that starts or stops translation.
 final class SetTranslatingAction
 ```
 
-#### Overview
+## Overview
 
 To avoid interrupting or impeding call translation when a person mutes their audio during a conversation, don’t deactivate the upstream audio. Instead, mute your app’s audio input using [`MuteConversationAction`](./muteconversationaction.md) and keep the upstream audio active to allow translated audio to flow when a person mutes the hardware microphone.
 

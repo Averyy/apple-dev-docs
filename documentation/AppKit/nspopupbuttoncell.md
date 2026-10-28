@@ -19,7 +19,7 @@ class NSPopUpButtonCell
 @interface NSPopUpButtonCell : NSMenuItemCell
 ```
 
-#### Overview
+## Overview
 
 The `NSPopUpButtonCell` class implements the user interface for the [`NSPopUpButton`](./nspopupbutton.md) class.
 

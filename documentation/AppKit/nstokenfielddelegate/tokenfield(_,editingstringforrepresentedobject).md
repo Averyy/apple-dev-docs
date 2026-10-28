@@ -20,7 +20,7 @@ optional func tokenField(_ tokenField: NSTokenField, editingStringForRepresented
 - (NSString *) tokenField:(NSTokenField *) tokenField editingStringForRepresentedObject:(id) representedObject;
 ```
 
-#### Return Value
+## Return Value
 
 A string that’s an editable proxy of the represented object, or `nil` if the token should not be editable.
 

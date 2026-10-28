@@ -22,7 +22,7 @@ case replaceSelection
 UITextDropActionReplaceSelection
 ```
 
-#### Discussion
+## Discussion
 
 If the text view does not contain a selection, dropped text is inserted at the provided location, without altering the surrounding text.
 

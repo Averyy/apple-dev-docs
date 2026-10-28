@@ -26,7 +26,7 @@ func beginRequest(with context: NSExtensionContext)
 - (void) beginRequestWithExtensionContext:(NSExtensionContext *) context;
 ```
 
-#### Discussion
+## Discussion
 
 An extension prepares for a host app’s request by getting the context passed in this method and requesting related data items, if appropriate. This method is received after the extension is initialized, but before the principal object is asked to do anything with the context. For example, if the principal object is a view controller, it receives this message before [`loadView()`](../../UIKit/uiviewcontroller/loadview%28%29.md) is called. After an extension receives this message, the [`extensionContext`](../../UIKit/uiviewcontroller/extensioncontext.md) property of the view controller returns a non`nil` value.
 

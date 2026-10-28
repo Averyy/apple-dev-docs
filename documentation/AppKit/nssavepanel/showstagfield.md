@@ -19,7 +19,7 @@ var showsTagField: Bool { get set }
 @property BOOL showsTagField;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), the panel displays the Tags field; if [`false`](../../Swift/false.md), the panel doesn’t display the Tags field. The default value is [`true`](../../Swift/true.md). (Note that the Tags field is appropriate only in a Save panel.)
 

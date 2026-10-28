@@ -23,7 +23,7 @@ var typesToCollect: Set<HKQuantityType> { get }
 @property (copy, readonly) NSSet<HKQuantityType *> * typesToCollect;
 ```
 
-#### Discussion
+## Discussion
 
 The workout builder automatically collects the listed data types. The available data types vary depending on platform, the person’s settings and the workout configuration, and can include types like [`basalEnergyBurned`](../hkquantitytypeidentifier/basalenergyburned.md), [`activeEnergyBurned`](../hkquantitytypeidentifier/activeenergyburned.md), [`heartRate`](../hkquantitytypeidentifier/heartrate.md), [`distanceWalkingRunning`](../hkquantitytypeidentifier/distancewalkingrunning.md), [`distanceCycling`](../hkquantitytypeidentifier/distancecycling.md), [`distanceSwimming`](../hkquantitytypeidentifier/distanceswimming.md), or [`distanceWheelchair`](../hkquantitytypeidentifier/distancewheelchair.md).
 

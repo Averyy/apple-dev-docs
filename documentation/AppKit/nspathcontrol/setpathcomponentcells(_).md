@@ -21,7 +21,7 @@ func setPathComponentCells(_ cells: [NSPathComponentCell])
 - (void) setPathComponentCells:(NSArray<NSPathComponentCell *> *) cells;
 ```
 
-#### Discussion
+## Discussion
 
 Each item in the array must be an instance of `NSPathComponentCell` or a subclass thereof. You cannot set this value to `nil`, but you can set it to an empty array using, for example, `[NSArray array]`.
 

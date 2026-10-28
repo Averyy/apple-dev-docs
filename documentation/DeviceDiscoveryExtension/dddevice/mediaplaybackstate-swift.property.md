@@ -25,7 +25,7 @@ var mediaPlaybackState: DDDevice.MediaPlaybackState { get set }
 @property (nonatomic, assign, readwrite) DDDeviceMediaPlaybackState mediaPlaybackState;
 ```
 
-#### Discussion
+## Discussion
 
 Your app’s extension sets a value for this property to communicate to the system whether the device currently plays media. While the device plays, the system displays an equalizer animation next to the device in the picker UI.
 

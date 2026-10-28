@@ -31,7 +31,7 @@ var accountType: INAccountType { get }
 @property (atomic, assign, readonly) INAccountType accountType;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property as needed to determine the type of the account. For example, you might need to handle transactions differently based on their type.
 

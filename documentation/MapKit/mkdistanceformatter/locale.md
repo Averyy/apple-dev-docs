@@ -33,7 +33,7 @@ var locale: Locale! { get set }
 @property (atomic, copy, null_resettable) NSLocale * locale;
 ```
 
-#### Discussion
+## Discussion
 
 If you don’t specify an explicit locale, the formatter uses the user’s current locale information.
 

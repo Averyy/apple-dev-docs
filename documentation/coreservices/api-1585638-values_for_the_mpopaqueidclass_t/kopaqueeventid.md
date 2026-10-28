@@ -14,7 +14,7 @@
 kOpaqueEventID = 9
 ```
 
-#### Discussion
+## Discussion
 
 An event.
 

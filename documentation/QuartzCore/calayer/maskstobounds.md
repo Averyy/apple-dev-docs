@@ -24,7 +24,7 @@ var masksToBounds: Bool { get set }
 @property BOOL masksToBounds;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), Core Animation creates an implicit clipping mask that matches the bounds of the layer and includes any corner radius effects. If a value for the [`mask`](./mask.md) property is also specified, the two masks are multiplied to get the final mask value.
 

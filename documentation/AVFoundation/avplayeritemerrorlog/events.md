@@ -25,7 +25,7 @@ var events: [AVPlayerItemErrorLogEvent] { get }
 @property (nonatomic, readonly) NSArray<AVPlayerItemErrorLogEvent *> * events;
 ```
 
-#### Discussion
+## Discussion
 
 The array contains [`AVPlayerItemErrorLogEvent`](../avplayeritemerrorlogevent.md) objects that represent the chronological sequence of events contained in the error log.
 

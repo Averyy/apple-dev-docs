@@ -14,7 +14,7 @@
 var keyAESearchText: AEKeyword { get }
 ```
 
-#### Discussion
+## Discussion
 
 Identifies an optional parameter to the `opendocuments` Apple event, described in [Event ID Constants](./apple_events/api-1527223-event_id_constants.md). The parameter contains the search text from the Spotlight search that identified the documents to be opened. The application should make a reasonable effort to display an occurrence of the search text in each opened document—for example by scrolling the text into view.
 

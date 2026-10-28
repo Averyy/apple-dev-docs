@@ -23,7 +23,7 @@ func topK(_ k: Int, axis: Int, findLargest: Bool) -> (values: BNNSGraph.Builder.
 
 Available when `T` conforms to `BNNSScalar`.
 
-#### Discussion
+## Discussion
 
 The output of this graph is a pair of tensors `(values, indices)` that contains the top-k values and indices from the tensor from the given dimension. If `largest` is `true`, then output the largest `k` values and their corresponding indices, otherwise output the smallest.
 

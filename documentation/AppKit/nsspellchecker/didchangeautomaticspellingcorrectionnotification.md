@@ -19,7 +19,7 @@ class let didChangeAutomaticSpellingCorrectionNotification: NSNotification.Name
 extern NSNotificationName const NSSpellCheckerDidChangeAutomaticSpellingCorrectionNotification;
 ```
 
-#### Discussion
+## Discussion
 
 To observe this notification using Swift concurrency, use [`NSSpellChecker.DidChangeAutomaticSpellingCorrectionMessage`](./didchangeautomaticspellingcorrectionmessage.md).
 

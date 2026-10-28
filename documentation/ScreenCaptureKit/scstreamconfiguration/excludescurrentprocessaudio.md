@@ -24,7 +24,7 @@ var excludesCurrentProcessAudio: Bool { get set }
 @property (nonatomic, assign) BOOL excludesCurrentProcessAudio;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`false`](../../Swift/false.md). If you include your app process in the stream output, you can set this value to [`true`](../../Swift/true.md) to exclude its audio.
 

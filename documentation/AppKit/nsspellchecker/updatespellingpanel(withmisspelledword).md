@@ -19,7 +19,7 @@ func updateSpellingPanel(withMisspelledWord word: String)
 - (void) updateSpellingPanelWithMisspelledWord:(NSString *) word;
 ```
 
-#### Discussion
+## Discussion
 
 You are responsible for highlighting `word` in the document and for extracting it from the document using the range returned by the `checkSpelling:...` methods. Pass the empty string as `word` to have the system beep, indicating no misspelled words were found.
 

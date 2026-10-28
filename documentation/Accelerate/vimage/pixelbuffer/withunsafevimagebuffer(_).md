@@ -23,11 +23,11 @@ func withUnsafeVImageBuffer<R>(_ body: (vImage_Buffer) throws -> R) rethrows -> 
 
 Available when `Format` conforms to `SinglePlanePixelFormat`.
 
-#### Return Value
+## Return Value
 
 The return value, if any, of the body closure parameter.
 
-#### Discussion
+## Discussion
 
 Use this function to incorporate pixel buffer based image processing code with existing vImage code. For example, the following code accesses a pixel buffer’s underlying vImage buffer’s `rowBytes` property:
 

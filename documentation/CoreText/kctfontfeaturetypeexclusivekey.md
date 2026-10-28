@@ -23,7 +23,7 @@ let kCTFontFeatureTypeExclusiveKey: CFString
 extern CFStringRef const kCTFontFeatureTypeExclusiveKey;
 ```
 
-#### Discussion
+## Discussion
 
 Key to get the font feature exclusive setting of the feature as a `CFBoolean` object. The value associated with this key indicates whether the feature selectors associated with this type should be mutually exclusive.
 

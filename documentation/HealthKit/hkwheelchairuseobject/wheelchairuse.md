@@ -24,7 +24,7 @@ var wheelchairUse: HKWheelchairUse { get }
 @property (readonly) HKWheelchairUse wheelchairUse;
 ```
 
-#### Discussion
+## Discussion
 
 For a list of possible values, see [`HKWheelchairUse`](../hkwheelchairuse.md).
 

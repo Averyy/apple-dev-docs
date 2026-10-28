@@ -29,7 +29,7 @@ extern HKQuantityTypeIdentifier const HKQuantityTypeIdentifierHeartRate;
 - [Accessing condensed workout samples](../accessing-condensed-workout-samples.md)
 - [Running workout sessions](../running-workout-sessions.md)
 
-#### Discussion
+## Discussion
 
 These samples use count/time units (described in [`HKUnit`](../hkunit.md)) and measure discrete values (described in [`HKQuantityAggregationStyle`](../hkquantityaggregationstyle.md)). Sample data may be condensed and/or coalesced by HealthKit. For more information, see [Accessing condensed workout samples](../accessing-condensed-workout-samples.md).
 

@@ -23,7 +23,7 @@ var unscaledView: UIView { get }
 @property (nonatomic, readonly) UIView * unscaledView;
 ```
 
-#### Discussion
+## Discussion
 
 This property draws zoom-agnostic system user interface, such as text selection handles.
 

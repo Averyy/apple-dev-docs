@@ -19,7 +19,7 @@ static var allowsExcludingFromSync: NSFileProviderItemCapabilities { get }
 NSFileProviderItemCapabilitiesAllowsExcludingFromSync
 ```
 
-#### Discussion
+## Discussion
 
 The user can choose to exclude the item from syncs (for example, in Finder’s user interface). If the user excludes an item, the system stops monitoring changes for the item and its children, and removes the item from the file provider.
 

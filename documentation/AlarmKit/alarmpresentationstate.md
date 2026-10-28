@@ -17,7 +17,7 @@ The system managed content state of an alarm Live Activity.
 struct AlarmPresentationState
 ```
 
-#### Overview
+## Overview
 
 A Live Activity consists of two components: static attributes and dynamic content. Using a sports game as an example, the static attributes represent the team names, while the dynamic content represents the current score that updates throughout the game.
 

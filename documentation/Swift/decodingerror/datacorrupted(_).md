@@ -21,7 +21,7 @@ An indication that the data is corrupted or otherwise invalid.
 case dataCorrupted(DecodingError.Context)
 ```
 
-#### Discussion
+## Discussion
 
 As an associated value, this case contains the context for debugging.
 

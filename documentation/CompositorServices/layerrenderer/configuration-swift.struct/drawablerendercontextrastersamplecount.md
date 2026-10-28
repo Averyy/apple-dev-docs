@@ -16,7 +16,7 @@ The multisample antialiasing sample count used for rendering.
 var drawableRenderContextRasterSampleCount: Int { get set }
 ```
 
-#### Discussion
+## Discussion
 
 If you’re using multisample antialiasing, set the same value you attach to your Metal pipeline. [`LayerRenderer`](../../layerrenderer.md) sets the value to 1 by default.
 

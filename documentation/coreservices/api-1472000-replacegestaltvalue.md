@@ -15,11 +15,11 @@ Replaces the value that the function `Gestalt` returns for a specified selector 
 OSErr ReplaceGestaltValue(OSType selector, SInt32 replacementValue);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Gestalt Manager](./carbon_core/gestalt_manager.md).
 
-#### Discussion
+## Discussion
 
 You use the function `ReplaceGestaltValue` to replace an existing value. You should not call this function to introduce a value that doesn't already exist; instead call the function [`NewGestaltValue`](./api-1472055-newgestaltvalue.md).
 

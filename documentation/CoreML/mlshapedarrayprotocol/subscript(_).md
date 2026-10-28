@@ -28,7 +28,7 @@ subscript<C>(indices: C) -> MLShapedArraySlice<Self.Scalar> where C : Collection
 subscript<C>(sliceRanges: C) -> MLShapedArraySlice<Self.Scalar> where C : Collection, C.Element == Range<Int> { get set }
 ```
 
-#### Overview
+## Overview
 
 The slice has a rank of `self.rank - indices.count`. For example, given a shaped array `m` with the shape being `3 x 3`, `m[[1]]` returns a slice of shape `[3]` with the contents labeld as `x` below.
 

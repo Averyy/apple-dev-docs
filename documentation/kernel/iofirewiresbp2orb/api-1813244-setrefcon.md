@@ -12,7 +12,7 @@ virtual void setRefCon(
  void *refCon );
 ```
 
-#### Overview
+## Overview
 
 Sets a user defined value on the ORB that can be retrieved later with the method getRefCon.
 

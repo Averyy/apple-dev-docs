@@ -25,7 +25,7 @@ var tracks: [AVMutableCompositionTrack] { get }
 @property (nonatomic, readonly) NSArray<AVMutableCompositionTrack *> * tracks;
 ```
 
-#### Discussion
+## Discussion
 
 In a mutable composition, the tracks are instances of [`AVMutableCompositionTrack`](../avmutablecompositiontrack.md), whereas in [`AVComposition`](../avcomposition.md) the tracks are instances of [`AVCompositionTrack`](../avcompositiontrack.md).
 

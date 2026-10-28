@@ -22,7 +22,7 @@ var identifier: Data { get }
 @property (nonatomic, copy, readonly) NSData * identifier;
 ```
 
-#### Discussion
+## Discussion
 
 The [`identifier`](./identifier.md) data is in big-endian byte order.
 

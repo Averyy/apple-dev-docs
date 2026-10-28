@@ -24,7 +24,7 @@ var colorPrimaries: String? { get }
 @property (nonatomic, readonly, nullable) NSString * colorPrimaries;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `nil`. When the value of this property is `nil`, the source’s color primaries are propagated and used. Valid values are those suitable for [`AVVideoColorPrimariesKey`](../avvideocolorprimarieskey.md).
 

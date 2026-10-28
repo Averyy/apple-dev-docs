@@ -25,11 +25,11 @@ func execute(_ request: NSPersistentStoreRequest, with context: NSManagedObjectC
 - (id) executeRequest:(NSPersistentStoreRequest *) request withContext:(NSManagedObjectContext *) context error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 A value as appropriate for `request`, or `nil` if the request cannot be completed
 
-#### Discussion
+## Discussion
 
 The value to return depends on the result type (see [`resultType`](../nsfetchrequest/resulttype.md)) of `request`:
 

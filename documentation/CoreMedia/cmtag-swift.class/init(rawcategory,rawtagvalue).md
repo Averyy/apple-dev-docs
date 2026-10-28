@@ -21,7 +21,7 @@ Creates a new tag from a category and value.
 init(rawCategory: CMTag.RawCategory, rawTagValue: CMTag.Value)
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  To ensure that your tags have a valid category, create new [`CMTag`](../cmtag-swift.class.md) instances with a static method listed in Creating Tags.
 

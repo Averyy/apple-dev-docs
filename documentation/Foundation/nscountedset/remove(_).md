@@ -25,7 +25,7 @@ func remove(_ object: Any)
 - (void) removeObject:(ObjectType) object;
 ```
 
-#### Discussion
+## Discussion
 
 If `object` is present in the set, decrements the count associated with it. If the count is decremented to `0`, `object` is removed from the set. [`remove(_:)`](./remove%28_%29.md) does nothing if `object` is not present in the set.
 

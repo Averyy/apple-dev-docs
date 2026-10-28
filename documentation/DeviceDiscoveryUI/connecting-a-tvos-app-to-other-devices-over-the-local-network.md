@@ -5,7 +5,7 @@
 
 Display a view in your tvOS app that lists available iOS, iPadOS, and watchOS devices that the user can connect to over their local network.
 
-#### Overview
+## Overview
 
 The DeviceDiscoveryUI framework provides a view that shows all the available iOS, iPadOS, and watchOS devices on your local network. Present this view in your tvOS app, to let the user select a device. The framework then creates an encrypted connection between your tvOS app and the selected device. This lets user’s enhance the tvOS experience. For example, they could control a tvOS game from their iPad, or send heart rate data from their watchOS app to the tvOS workout app. It also lets your app connect to devices across the local network, without giving your app access to the entire network.
 
@@ -15,7 +15,7 @@ In your iOS, iPadOS, or watchOS app, declare that your app listens for DeviceDis
 
 You use DeviceDiscoveryUI to present the device picker view, and then use the [Network](../Network/Network.md) framework to create the listeners, create the connections, and send and receive messages.
 
-##### Define the supported devices in tvOS
+### Define the supported devices in tvOS
 
 Start by defining the application service identifiers that your apps use to establish their connections. Use the [`NSApplicationServices`](../BundleResources/information-property-list/nsapplicationservices.md) key to define the application services for your app. You provide a service identifier, a usage description, and a list of supported devices for each service. You can define more than one application service for your apps. Each service has it’s own identifier, and can connect to a different subset of devices.
 
@@ -55,7 +55,7 @@ You can use the human-readable key names in Xcode’s property list editor.
 
 ![A screenshot showing the Application Services settings in Xcode’s property list editor.](https://developer.apple.com/tutorials/images/com.apple.devicediscoveryui/media-4030765@2x.png)
 
-##### Display the list of available devices
+### Display the list of available devices
 
 Next, create and display the device picker view in your tvOS app. The following code creates and displays a [`DevicePicker`](./devicepicker.md) view using SwiftUI.
 
@@ -140,7 +140,7 @@ This view controller works similarly to the [`DevicePicker`](./devicepicker.md) 
 
 Alternatively, you can pass a block to the [`DDDevicePickerViewController`](./dddevicepickerviewcontroller.md) object’s [`setDevicePickerCompletionHandler:`](./dddevicepickerviewcontroller/setdevicepickercompletionhandler_.md) method, and the system calls this block when the user selects a device from the device picker view.
 
-##### Connect to the provided endpoint
+### Connect to the provided endpoint
 
 As soon as the user selects a device, the system passes you an [`NWEndpoint`](../NetworkExtension/nwendpoint.md). Use this endpoint to connect to the selected device. Create an [`NWConnection`](../Network/nwconnection.md), passing it both the endpoint and the parameters that you used to create the device picker view.
 
@@ -157,7 +157,7 @@ func connectTo(endpoint: NWEndpoint) {
 
 You can then use this connection to send or receive messages to the connected device.
 
-##### Declare that other devices listen for connections
+### Declare that other devices listen for connections
 
 Before a device can appear in the picker view, declare that the iOS, iPadOS, or watchOS version of your app listens for connections.
 
@@ -180,7 +180,7 @@ You can use the human-readable key names in Xcode’s property list editor.
 
 ![A screenshot showing the application services settings in Xcode’s property list editor.](https://developer.apple.com/tutorials/images/com.apple.devicediscoveryui/media-4030764@2x.png)
 
-##### Set up the listeners on iOS, iPadOS, or watchOS
+### Set up the listeners on iOS, iPadOS, or watchOS
 
 Next, to connect to your tvOS app, other versions of your app must set up a listener as soon as the app launches. The network picker can then connect to this listener.
 

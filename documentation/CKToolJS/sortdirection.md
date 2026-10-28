@@ -18,7 +18,7 @@ interface SortDirection {
 };
 ```
 
-#### Overview
+## Overview
 
 ```javascript
 import { SortDirection } from "@apple/cktool.database";

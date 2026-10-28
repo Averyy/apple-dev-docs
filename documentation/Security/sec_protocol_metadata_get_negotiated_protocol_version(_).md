@@ -23,11 +23,11 @@ func sec_protocol_metadata_get_negotiated_protocol_version(_ metadata: sec_proto
 SSLProtocol sec_protocol_metadata_get_negotiated_protocol_version(sec_protocol_metadata_t metadata);
 ```
 
-#### Return Value
+## Return Value
 
 A SSLProtocol enum of the TLS version.
 
-#### Discussion
+## Discussion
 
 Get the negotiated TLS version.
 

@@ -17,7 +17,7 @@ The dynamically deforming visual mesh of the cloth body, which you may read but 
 var visualMesh: LowLevelMesh? { get }
 ```
 
-#### Discussion
+## Discussion
 
 This visual mesh will always be nil at first. The visual mesh becomes non-nil if the entity is part of a simulation and has a [`ModelComponent`](../modelcomponent.md) whose mesh is not a [`LowLevelMesh`](../lowlevelmesh.md). This is a dynamically deforming version of the mesh stored in the [`ModelComponent`](../modelcomponent.md), and overrides the rendering.
 

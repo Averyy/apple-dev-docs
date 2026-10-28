@@ -21,7 +21,7 @@ number Longitude
 
 **Minimum**: `-180`
 
-#### Discussion
+## Discussion
 
 Negative values indicate west of the prime meridian; positive values indicate east of the prime meridian.
 

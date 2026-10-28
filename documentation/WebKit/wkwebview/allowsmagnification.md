@@ -19,7 +19,7 @@ var allowsMagnification: Bool { get set }
 @property (nonatomic) BOOL allowsMagnification;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`false`](../../Swift/false.md). You can set the `magnification` property even if `allowsMagnification` is set to [`false`](../../Swift/false.md).
 

@@ -21,7 +21,7 @@ var adPurchaserName: String? { get set }
 @property (nonatomic, strong, nullable) NSString * adPurchaserName;
 ```
 
-#### Discussion
+## Discussion
 
 This property is not used.
 

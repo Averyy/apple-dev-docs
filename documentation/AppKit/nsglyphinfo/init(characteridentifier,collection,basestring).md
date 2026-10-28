@@ -19,7 +19,7 @@ init?(characterIdentifier cid: Int, collection characterCollection: NSCharacterC
 + (NSGlyphInfo *) glyphInfoWithCharacterIdentifier:(NSUInteger) cid collection:(NSCharacterCollection) characterCollection baseString:(NSString *) string;
 ```
 
-#### Return Value
+## Return Value
 
 The created `NSGlyphInfo` object or `nil` if the object couldn’t be created.
 

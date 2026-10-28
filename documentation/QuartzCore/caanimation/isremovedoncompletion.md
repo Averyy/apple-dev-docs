@@ -24,7 +24,7 @@ var isRemovedOnCompletion: Bool { get set }
 @property (getter=isRemovedOnCompletion) BOOL removedOnCompletion;
 ```
 
-#### Discussion
+## Discussion
 
 When [`true`](../../Swift/true.md), the animation is removed from the target layer’s animations once its active duration has passed. Defaults to [`true`](../../Swift/true.md).
 

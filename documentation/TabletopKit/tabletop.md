@@ -15,7 +15,7 @@ A protocol for the table surface in your game.
 protocol Tabletop : Identifiable where Self.ID == EquipmentIdentifier
 ```
 
-#### Overview
+## Overview
 
 To create a [`TableSetup`](./tablesetup.md) object that configures your game table, pass an object that conforms to either the `Tabletop` or `EntityTabletop`` protocol to the `TableSetup`initializer. Implement your`Tabletop`structure to set the protocol properties, such as the`shape`and`id` properties.
 

@@ -21,7 +21,7 @@ var additionalRoutesButtonTitle: String? { get }
 @property (nonatomic, copy, readonly, nullable) NSString * additionalRoutesButtonTitle;
 ```
 
-#### Discussion
+## Discussion
 
 When the title is `nil`, the button displays a system-provided title.
 

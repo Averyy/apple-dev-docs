@@ -25,7 +25,7 @@ func removeAudioPlayer(_ player: SCNAudioPlayer)
 - (void) removeAudioPlayer:(SCNAudioPlayer *) player;
 ```
 
-#### Discussion
+## Discussion
 
 This method has no effect if the `player` parameter does not reference an audio player directly attached to the node.
 

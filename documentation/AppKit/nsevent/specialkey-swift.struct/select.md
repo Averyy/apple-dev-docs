@@ -15,7 +15,7 @@ The select key.
 static let select: NSEvent.SpecialKey
 ```
 
-#### Discussion
+## Discussion
 
 This key is unavailable on most Macintosh keyboards.
 

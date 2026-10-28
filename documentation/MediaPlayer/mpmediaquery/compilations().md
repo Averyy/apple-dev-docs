@@ -22,11 +22,11 @@ class func compilations() -> MPMediaQuery
 + (MPMediaQuery *) compilationsQuery;
 ```
 
-#### Return Value
+## Return Value
 
 A media query that matches any media item that has the [`MPMediaItemPropertyIsCompilation`](../mpmediaitempropertyiscompilation.md) property; the returned query has a grouping type of [`MPMediaGrouping.album`](../mpmediagrouping/album.md).
 
-#### Discussion
+## Discussion
 
 A media item can have more than one media type; for example, an item could be of types “music” and “podcast.” A [`compilations()`](./compilations%28%29.md) query matches all media items that have the [`MPMediaItemPropertyIsCompilation`](../mpmediaitempropertyiscompilation.md) property, irrespective of their media types.
 

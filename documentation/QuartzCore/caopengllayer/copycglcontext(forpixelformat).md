@@ -22,11 +22,11 @@ func copyCGLContext(forPixelFormat pf: CGLPixelFormatObj) -> CGLContextObj
 - (CGLContextObj) copyCGLContextForPixelFormat:(CGLPixelFormatObj) pf;
 ```
 
-#### Return Value
+## Return Value
 
 A new `CGLContext` with renderers for `pixelFormat`.
 
-#### Discussion
+## Discussion
 
 This method is called when a rendering context is needed by the receiver. The default implementation allocates a new context with a null share context.
 

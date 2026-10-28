@@ -25,7 +25,7 @@ static let busy: FileAttributeKey
 extern NSFileAttributeKey const NSFileBusy;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is an [`NSNumber`](../nsnumber.md) object containing a Boolean value.
 

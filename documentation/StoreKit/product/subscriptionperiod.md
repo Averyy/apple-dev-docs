@@ -21,7 +21,7 @@ Values that represent the duration of time between subscription renewals.
 struct SubscriptionPeriod
 ```
 
-#### Overview
+## Overview
 
 Use the [`value`](./subscriptionperiod/value.md) and the [`unit`](./subscriptionperiod/unit-swift.property.md) together to determine the subscription period. For example, if the unit is [`Product.SubscriptionPeriod.Unit.month`](./subscriptionperiod/unit-swift.enum/month.md), and the [`value`](./subscriptionperiod/value.md) is `3`, the subscription period is three months.
 

@@ -21,7 +21,7 @@ An option to replace the attributes in a substituted string with those of the pr
 NSAttributedStringFormattingInsertArgumentAttributesWithoutMerging
 ```
 
-#### Discussion
+## Discussion
 
 This option applies when a format string includes the %@ format string specifier and the substituted value is an attributed string. If you include this option, the creation method prefers the attributes in the substitute attributed string over the attributes in the format string. If you don’t include this option, the creation method prefers the attributes from the format string over those in the substitute string.
 

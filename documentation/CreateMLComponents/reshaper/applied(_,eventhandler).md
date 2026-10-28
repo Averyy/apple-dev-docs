@@ -21,7 +21,7 @@ Reshapes a sequence of inputs.
 func applied<S>(_ input: S, eventHandler: EventHandler? = nil) throws -> [MLShapedArray<Scalar>] where S : Sequence, S.Element == MLShapedArray<Scalar>
 ```
 
-#### Return Value
+## Return Value
 
 An array of shaped arrays.
 

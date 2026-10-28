@@ -19,7 +19,7 @@ func enableRelaunchOnLogin()
 - (void) enableRelaunchOnLogin;
 ```
 
-#### Discussion
+## Discussion
 
 Invoking this method will cause the app to relaunch when the user next logs in to their account.
 

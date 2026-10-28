@@ -24,11 +24,11 @@ class func confirmationRequired(with radioTypeToConfirm: INRadioType) -> Self
 + (instancetype) confirmationRequiredWithRadioTypeToConfirm:(INRadioType) radioTypeToConfirm;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INRadioTypeResolutionResult`](../inradiotyperesolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method when you can resolve the parameter to an equivalent radio type and want the user to confirm the replacement value before proceeding.
 

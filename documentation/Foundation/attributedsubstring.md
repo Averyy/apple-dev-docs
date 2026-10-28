@@ -22,7 +22,7 @@ A portion of an attributed string.
 struct AttributedSubstring
 ```
 
-#### Overview
+## Overview
 
 [`AttributedSubstring`](./attributedsubstring.md) provides no-copy access to the contents of the string within the relevant range. The distinction between an [`AttributedString`](./attributedstring.md) and an [`AttributedSubstring`](./attributedsubstring.md) lets you distinguish between whether you’re in possession of an entire string or just a slice of it.
 

@@ -23,7 +23,7 @@ protocol NSFileProviderIncrementalContentFetching : NSObjectProtocol
 @protocol NSFileProviderIncrementalContentFetching <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Adopt this protocol to support the incremental fetching of changes from your remote storage. If you don’t implement the [`fetchContents(for:version:usingExistingContentsAt:existingVersion:request:completionHandler:)`](./nsfileproviderincrementalcontentfetching/fetchcontents%28for,version,usingexistingcontentsat,existingversion,request,completionhandler%29.md) method, the system calls your [`fetchContents(for:version:request:completionHandler:)`](./nsfileproviderreplicatedextension/fetchcontents%28for,version,request,completionhandler%29.md) method for all updates.
 

@@ -24,7 +24,7 @@ struct AudioUnitParameterOptions
 enum AudioUnitParameterOptions : UInt32;
 ```
 
-#### Overview
+## Overview
 
 These constants are relevant only in macOS, and not in iOS.
 

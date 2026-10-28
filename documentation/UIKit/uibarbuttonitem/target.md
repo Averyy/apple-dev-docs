@@ -23,7 +23,7 @@ weak var target: AnyObject? { get set }
 @property (nonatomic, weak, readwrite, nullable) id target;
 ```
 
-#### Discussion
+## Discussion
 
 If `nil`, the action message is passed up the responder chain where it may be handled by any object implementing a method corresponding to the selector held by the [`action`](./action.md) property. The default value is `nil`.
 

@@ -20,7 +20,7 @@ Resets the position and velocities of the simulated physics body.
 @preconcurrency func resetPhysicsTransform(_ transform: Transform, recursive: Bool = true)
 ```
 
-#### Discussion
+## Discussion
 
 Call this method to change the transform applied to a body by physics simulation. This only matters for dynamic rigid bodies, with a [`mode`](../physicsbodycomponent/mode.md) of [`PhysicsBodyMode.dynamic`](../physicsbodymode/dynamic.md). This is the only kind of body that’s affected by physics simulations. For all others, modify the entity’s [`transform`](../hastransform/transform.md) property directly.
 

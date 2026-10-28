@@ -27,7 +27,7 @@ func pressesBegan(_ presses: Set<UIPress>, with event: UIPressesEvent?)
 
 - [Handling key presses made on a physical keyboard](../handling-key-presses-made-on-a-physical-keyboard.md)
 
-#### Discussion
+## Discussion
 
 UIKit calls this method when a new button is pressed by the user. Use this method to determine which button was pressed and to take any needed actions.
 

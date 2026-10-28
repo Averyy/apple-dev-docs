@@ -28,7 +28,7 @@ func handle(intent: INSearchForMessagesIntent) async -> INSearchForMessagesInten
 - (void) handleSearchForMessages:(INSearchForMessagesIntent *) intent completion:(void (^)(INSearchForMessagesIntentResponse *response)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Your implementation of this method must perform the search and return the results as part of your response object. If you are unable to perform the search, return a response object whose result code indicates the reason for the failure.
 

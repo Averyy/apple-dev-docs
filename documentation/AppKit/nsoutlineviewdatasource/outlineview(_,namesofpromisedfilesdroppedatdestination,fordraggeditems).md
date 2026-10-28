@@ -21,11 +21,11 @@ optional func outlineView(_ outlineView: NSOutlineView, namesOfPromisedFilesDrop
 - (NSArray<NSString *> *) outlineView:(NSOutlineView *) outlineView namesOfPromisedFilesDroppedAtDestination:(NSURL *) dropDestination forDraggedItems:(NSArray *) items;
 ```
 
-#### Return Value
+## Return Value
 
 An array of filenames (not full paths) for the created files that the receiver promises to create.
 
-#### Discussion
+## Discussion
 
 For more information on file promise dragging, see documentation on the `NSDraggingSource` protocol and [`namesOfPromisedFilesDropped(atDestination:)`](../nsdragginginfo/namesofpromisedfilesdropped%28atdestination%29.md).
 

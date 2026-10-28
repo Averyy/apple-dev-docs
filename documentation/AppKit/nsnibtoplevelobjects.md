@@ -15,7 +15,7 @@ An `NSMutableArray` object that, if present, is populated with the top-level obj
 extern NSString * NSNibTopLevelObjects;
 ```
 
-#### Discussion
+## Discussion
 
 Because you must allocate this array, you are responsible for its disposal. This key is optional.
 

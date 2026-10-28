@@ -25,7 +25,7 @@ typealias CMTimeScale = Int32
 typedef int32_t CMTimeScale;
 ```
 
-#### Discussion
+## Discussion
 
 Timescales must be positive.
 

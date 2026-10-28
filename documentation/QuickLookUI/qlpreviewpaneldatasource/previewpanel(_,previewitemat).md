@@ -20,7 +20,7 @@ func previewPanel(_ panel: QLPreviewPanel!, previewItemAt index: Int) -> (any QL
 - (id<QLPreviewItem>) previewPanel:(QLPreviewPanel *) panel previewItemAtIndex:(NSInteger) index;
 ```
 
-#### Return Value
+## Return Value
 
 The item that the preview panel should preview at index `index`.
 

@@ -23,7 +23,7 @@ var backButtonTitle: String? { get set }
 @property (nonatomic, copy, readwrite, nullable) NSString * backButtonTitle;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to set the title of the Back button when a view controller’s [`navigationItem`](../uiviewcontroller/navigationitem.md) is the [`backItem`](../uinavigationbar/backitem.md) of the navigation bar, in other words, when the Back button appears in the navigation bar of the next view controller. For example, a view controller that displays a list of contacts can set [`backButtonTitle`](./backbuttontitle.md) to “Contacts”. When a person taps a contact, the view controller pushes a new view controller onto the navigation stack, which displays the details of the selected contact. This new topmost view controller shows “Contacts” as the Back button title.
 

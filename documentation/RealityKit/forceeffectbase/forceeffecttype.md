@@ -21,7 +21,7 @@ A type that represents the kind of force effect.
 associatedtype ForceEffectType : ForceEffectProtocol
 ```
 
-#### Discussion
+## Discussion
 
 This type underlies the force type of a [`ForceEffect`](../forceeffect.md).
 

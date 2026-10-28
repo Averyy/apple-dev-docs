@@ -14,7 +14,7 @@ Multiplies the RGB channels of the input by the alpha channel.
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Parameter Types
+## Parameter Types
 
 | Input | Type |
 | --- | --- |

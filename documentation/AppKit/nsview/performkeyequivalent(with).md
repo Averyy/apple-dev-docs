@@ -19,11 +19,11 @@ func performKeyEquivalent(with event: NSEvent) -> Bool
 - (BOOL) performKeyEquivalent:(NSEvent *) event;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if `theEvent` is a key equivalent that the view handled, [`false`](../../Swift/false.md) if it is not a key equivalent that it should handle.
 
-#### Discussion
+## Discussion
 
 If the view’s key equivalent is the same as the characters of the key-down event `theEvent`, as returned by [`charactersIgnoringModifiers`](../nsevent/charactersignoringmodifiers.md), the view should take the appropriate action and return [`true`](../../Swift/true.md). Otherwise, it should return the result of invoking `super`‘s implementation. The default implementation of this method simply passes the message down the view hierarchy (from superviews to subviews) and returns [`false`](../../Swift/false.md) if none of the view’s subviews responds [`true`](../../Swift/true.md).
 

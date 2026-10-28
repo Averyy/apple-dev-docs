@@ -23,7 +23,7 @@ var kDNSServiceFlagsIncludeAWDL: UInt32 { get }
 kDNSServiceFlagsIncludeAWDL
 ```
 
-#### Discussion
+## Discussion
 
 Include AWDL interface when [`kDNSServiceInterfaceIndexAny`](./kdnsserviceinterfaceindexany.md) is specified.
 

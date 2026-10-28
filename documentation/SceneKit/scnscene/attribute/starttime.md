@@ -23,7 +23,7 @@ static let startTime: SCNScene.Attribute
 extern SCNSceneAttribute const SCNSceneStartTimeAttributeKey;
 ```
 
-#### Discussion
+## Discussion
 
 A floating-point value (in an [`NSNumber`](../../../Foundation/nsnumber.md) object) for the start time of the scene.
 

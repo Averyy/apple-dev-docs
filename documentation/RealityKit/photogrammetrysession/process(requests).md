@@ -22,7 +22,7 @@ func process(requests: [PhotogrammetrySession.Request]) throws
 
 - [Creating 3D objects from photographs](../creating-3d-objects-from-photographs.md)
 
-#### Discussion
+## Discussion
 
 On the first `process()`call the data in the input source will be ingested entirely and `inputComplete` produced on the `output` stream before any request processing progress will begin. Before `inputComplete`, warnings about samples will be published, if any.
 

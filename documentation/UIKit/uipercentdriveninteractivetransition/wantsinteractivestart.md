@@ -23,7 +23,7 @@ var wantsInteractiveStart: Bool { get set }
 @property (nonatomic) BOOL wantsInteractiveStart;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), interactive animations start as paused, allowing you to drive the animations yourself from the start. You might set this property to [`false`](../../Swift/false.md) when you want to start your animations without interactivity. The default value of this property is [`true`](../../Swift/true.md).
 

@@ -24,7 +24,7 @@ const void * getBytesNoCopy(size_t start, size_t numBytes);
 virtual const void * getBytesNoCopy(unsigned int start, unsigned int numBytes);
 ```
 
-#### Return Value
+## Return Value
 
 A pointer to the data or NULL if the OSData does not have data for all the requested range.
 

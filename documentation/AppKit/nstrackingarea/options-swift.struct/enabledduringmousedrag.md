@@ -19,7 +19,7 @@ static var enabledDuringMouseDrag: NSTrackingArea.Options { get }
 NSTrackingEnabledDuringMouseDrag
 ```
 
-#### Discussion
+## Discussion
 
 [`NSMouseExited`](../../nsmouseexited.md) and [`NSMouseEntered`](../../nsmouseentered.md) events are paired so their delivery is indirectly affected. That is, if a `NSMouseEntered` event is generated and the mouse cursor subsequently moves out of the tracking area, a `NSMouseExited` event is generated regardless if the mouse is moved or dragged, independent of this constant. This value specifies a behavior of the tracking area defined by the [`NSTrackingArea`](../../nstrackingarea.md).
 

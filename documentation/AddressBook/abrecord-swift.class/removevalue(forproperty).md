@@ -19,11 +19,11 @@ func removeValue(forProperty property: String!) -> Bool
 - (BOOL) removeValueForProperty:(NSString *) property;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the value is removed successfully; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 When you next call [`value(forProperty:)`](./value%28forproperty%29.md) on that property, it returns `nil`.
 

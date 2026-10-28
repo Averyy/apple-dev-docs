@@ -20,7 +20,7 @@ A Boolean value that indicates whether your credential provider extension provid
 
 **Default**: `NO`
 
-#### Discussion
+## Discussion
 
 The operating system includes your extension’s passkeys in AutoFill and sign in sheets if this value is `true`.
 

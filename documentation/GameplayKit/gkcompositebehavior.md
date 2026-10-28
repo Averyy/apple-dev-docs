@@ -24,7 +24,7 @@ class GKCompositeBehavior
 @interface GKCompositeBehavior : GKBehavior
 ```
 
-#### Overview
+## Overview
 
 By composing [`GKGoal`](./gkgoal.md) objects into subgroups ([`GKBehavior`](./gkbehavior.md) objects) and composing those behaviors into composite behaviors, you can control certain aspects of a [`GKAgent`](./gkagent.md) object’s movement in concert. To assign a behavior to an agent, use its [`behavior`](./gkagent/behavior.md) property.
 

@@ -16,7 +16,7 @@ Returns the current viewpoint, if one is provided.
 Viewpoint viewpoint()
 ```
 
-#### Discussion
+## Discussion
 
 Depending on context, this may include direction, position, or both values. On visionOS, a `ParticleViewpoint` component needs to be added to the scene to automatically provide this value.
 

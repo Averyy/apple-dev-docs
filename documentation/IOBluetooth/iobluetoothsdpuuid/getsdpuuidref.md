@@ -15,7 +15,7 @@ Returns an IOBluetoothSDPUUIDRef representation of the target IOBluetoothSDPUUID
 - (IOBluetoothSDPUUIDRef) getSDPUUIDRef;
 ```
 
-#### Return Value
+## Return Value
 
 Returns an IOBluetoothSDPUUIDRef representation of the target IOBluetoothSDPUUID object.
 

@@ -12,11 +12,11 @@ IOStreamBufferQueue *( *GetInputQueue)(
    IOStreamRef stream );
 ```
 
-#### Return Value
+## Return Value
 
 A pointer to the shared memory IOStreamBufferQueue structure for the input queue.
 
-#### Overview
+## Overview
 
 If you use the notification functions, you should never need to access the queues directly.
 

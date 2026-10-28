@@ -23,7 +23,7 @@ let kMIDIPropertyCanRoute: CFString
 extern CFStringRef const kMIDIPropertyCanRoute;
 ```
 
-#### Discussion
+## Discussion
 
 Don’t set this property value on driver-owned devices.
 

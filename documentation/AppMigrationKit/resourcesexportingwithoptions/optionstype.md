@@ -17,7 +17,7 @@ A type that indicates the options supported by the destination device.
 associatedtype OptionsType : CaseIterable, Hashable, RawRepresentable, Sendable where Self.OptionsType.RawValue == String
 ```
 
-#### Discussion
+## Discussion
 
 This type defines the [`options`](../migrationrequestwithoptions/options.md) of the export’s [`MigrationRequestWithOptions`](../migrationrequestwithoptions.md). If you don’t need a unique type for export options, your app extension can conform to [`ResourcesExporting`](../resourcesexporting.md) instead, which uses [`MigrationDefaultSupportedOptions`](../migrationdefaultsupportedoptions.md).
 

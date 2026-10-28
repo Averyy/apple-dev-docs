@@ -25,7 +25,7 @@ var kvImageEdgeExtend: Int { get }
 kvImageEdgeExtend
 ```
 
-#### Discussion
+## Discussion
 
 When you set this flag, vImage replicates the edges of the image outward. It repeats the top row of the image infinitely above the image, the bottom row infinitely below the image, the first column infinitely to the left of the image, and the last column infinitely  to the right. For spaces that are diagonal to the image, vImage uses the value of the corresponding corner pixel.
 

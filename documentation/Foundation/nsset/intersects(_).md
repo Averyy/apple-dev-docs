@@ -25,11 +25,11 @@ func intersects(_ otherSet: Set<AnyHashable>) -> Bool
 - (BOOL) intersectsSet:(NSSet<id> *) otherSet;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if at least one object in the receiving set is also present in `otherSet`, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Object equality is tested using isEqual:.
 

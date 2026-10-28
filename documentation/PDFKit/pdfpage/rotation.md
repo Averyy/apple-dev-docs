@@ -24,7 +24,7 @@ var rotation: Int { get set }
 @property (nonatomic) NSInteger rotation;
 ```
 
-#### Discussion
+## Discussion
 
 The rotation must be a positive or negative multiple of 90 (negative angles are converted to their positive equivalents; for example, -90 is changed to 270); otherwise this method throws an exception.
 

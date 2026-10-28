@@ -15,7 +15,7 @@ The identifier for the audio line level control class.
 LineLevelControl
 ```
 
-#### Discussion
+## Discussion
 
 This class is a subclass of the [`IOUserAudioSelectorControl`](../../iouseraudioselectorcontrol.md) class that identifies the nominal line level for the element. This control isn’t a gain stage, but instead indicates the voltage standard (if any) used for the element, such as +4dBu, -10dBV, instrument, and so on.
 

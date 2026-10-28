@@ -25,7 +25,7 @@ var transpose: Bool { get set }
 bool transpose;
 ```
 
-#### Discussion
+## Discussion
 
 If [`true`](../../Swift/true.md), the system implicitly transposes the matrix when it uses it in any functions.
 

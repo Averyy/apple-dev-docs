@@ -17,7 +17,7 @@ Creates metadata value attributes from an array literal of attribute values.
 init(arrayLiteral elements: any Logger.MetadataValueAttributes.Attribute...)
 ```
 
-#### Discussion
+## Discussion
 
 Each element is any [`Logger.MetadataValueAttributes.Attribute`](./attribute.md) conforming value. The key is inferred from the concrete type of the value.
 

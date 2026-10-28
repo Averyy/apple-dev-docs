@@ -15,11 +15,11 @@ An object used in a map component for specifying the location of a map pin.
 object MapItem
 ```
 
-#### Discussion
+## Discussion
 
 In the `Map` component, use an array of items to specify the location (`latitude` and `longitude`) for the pins you want displayed on the map. See [`Map`](./map.md).
 
-##### Example
+### Example
 
 ```json
 {

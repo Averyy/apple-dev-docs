@@ -28,11 +28,11 @@ class func success(with resolvedPerson: INPerson) -> Self
 
 - [Improving interactions between Siri and your messaging app](../../SiriKit/improving-interactions-between-siri-and-your-messaging-app.md)
 
-#### Return Value
+## Return Value
 
 A new [`INPersonResolutionResult`](../inpersonresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method to create a result object when you recognize the specified user and can resolve that person to your app’s internal data structures.
 

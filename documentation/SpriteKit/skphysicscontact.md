@@ -25,7 +25,7 @@ class SKPhysicsContact
 @interface SKPhysicsContact : NSObject
 ```
 
-#### Overview
+## Overview
 
 An [`SKPhysicsContact`](./skphysicscontact.md) object is created automatically by SpriteKit to describe a contact between two physical bodies in a physics world.To receive contact messages, read the [`physicsWorld`](./skscene/physicsworld.md) property of an [`SKScene`](./skscene.md) object you are interested in, and assign its [`contactDelegate`](./skphysicsworld/contactdelegate.md) property to point to an object that implements the [`SKPhysicsContactDelegate`](./skphysicscontactdelegate.md) protocol. Then, for each physics body in your scene, set the [`categoryBitMask`](./skphysicsbody/categorybitmask.md) and [`contactTestBitMask`](./skphysicsbody/contacttestbitmask.md) properties to define which interactions should generate contact messages.
 

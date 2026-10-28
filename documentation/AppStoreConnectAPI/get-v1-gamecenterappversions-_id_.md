@@ -9,9 +9,9 @@ Read the Game Center enablement state and related app version information.
 **Availability**:
 - App Store Connect API 3.0+
 
-#### Discussion
+## Discussion
 
-##### Example Request and Response
+### Example Request and Response
 
 **Other**:
 

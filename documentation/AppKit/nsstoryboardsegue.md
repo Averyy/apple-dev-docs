@@ -19,7 +19,7 @@ class NSStoryboardSegue
 @interface NSStoryboardSegue : NSObject
 ```
 
-#### Overview
+## Overview
 
 In this context, a *scene* is a view controller or a window controller and a *storyboard* is an instance of the [`NSStoryboard`](./nsstoryboard.md) class.
 

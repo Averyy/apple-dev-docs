@@ -25,7 +25,7 @@ var defaultTileSize: CGSize { get set }
 @property (nonatomic) CGSize defaultTileSize;
 ```
 
-#### Discussion
+## Discussion
 
 The default tile size an [`SKTileMapNode`](../sktilemapnode.md) will use for its tiles
 

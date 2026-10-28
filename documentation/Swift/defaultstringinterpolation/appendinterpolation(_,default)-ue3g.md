@@ -21,7 +21,7 @@ Interpolates the given optional value’s textual representation, or the specifi
 mutating func appendInterpolation<T>(_ value: T?, default: String) where T : CustomStringConvertible, T : TextOutputStreamable
 ```
 
-#### Discussion
+## Discussion
 
 You don’t need to call this method directly. It’s used by the compiler when interpreting string interpolations where you provide a `default` parameter. For example, the following code implicitly calls this method, using the value of the `default` parameter when `value` is `nil`:
 

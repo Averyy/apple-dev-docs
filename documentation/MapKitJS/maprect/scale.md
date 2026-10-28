@@ -15,7 +15,7 @@ Returns a scaled map rectangle for a map location.
 scale(scaleFactor: number, scaleCenter?: MapPointData): MapRect;
 ```
 
-#### Discussion
+## Discussion
 
 The following example demonstrates scaling a `mapkit.MapRect` instance first with a common center, and then with a common origin:
 

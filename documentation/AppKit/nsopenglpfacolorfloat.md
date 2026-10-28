@@ -19,7 +19,7 @@ var NSOpenGLPFAColorFloat: Int { get }
 NSOpenGLPFAColorFloat
 ```
 
-#### Discussion
+## Discussion
 
 A Boolean attribute. If present, this attribute indicates that only renderers that are capable using buffers storing floating point pixels are considered. This should be accompanied by a `NSOpenGLPFAColorSize` of 64 (for half float pixel components) or 128 (for full float pixel components). Note, not all hardware supports floating point color buffers thus the returned pixel format could be NULL.
 

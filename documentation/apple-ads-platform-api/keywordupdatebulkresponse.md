@@ -15,11 +15,11 @@ The response from a bulk Keyword update request, containing results for each ite
 object KeywordUpdateBulkResponse
 ```
 
-#### Discussion
+## Discussion
 
 The bulk keyword update endpoint returns `KeywordUpdateBulkResponse` as its response envelope. The response populates `error` only when the system rejects the overall request before processing any items.
 
-##### Example
+### Example
 
 ```json
 {

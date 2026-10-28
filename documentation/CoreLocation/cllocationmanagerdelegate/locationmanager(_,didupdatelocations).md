@@ -25,7 +25,7 @@ optional func locationManager(_ manager: CLLocationManager, didUpdateLocations l
 - (void) locationManager:(CLLocationManager *) manager didUpdateLocations:(NSArray<CLLocation *> *) locations;
 ```
 
-#### Discussion
+## Discussion
 
 Implementation of this method is optional but recommended.
 

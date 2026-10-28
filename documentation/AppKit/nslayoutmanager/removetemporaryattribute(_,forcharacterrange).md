@@ -19,7 +19,7 @@ func removeTemporaryAttribute(_ attrName: NSAttributedString.Key, forCharacterRa
 - (void) removeTemporaryAttribute:(NSAttributedStringKey) attrName forCharacterRange:(NSRange) charRange;
 ```
 
-#### Discussion
+## Discussion
 
 Temporary attributes are used only for onscreen drawing and are not persistent in any way. `NSTextView` uses them to color misspelled words when continuous spell checking is enabled. Currently the only temporary attributes recognized are those that do not affect layout (colors, underlines, and so on).
 

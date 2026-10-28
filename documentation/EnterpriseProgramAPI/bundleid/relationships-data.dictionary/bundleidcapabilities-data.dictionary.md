@@ -17,7 +17,7 @@ object BundleId.Relationships.BundleIdCapabilities
 ### Objects
 - [object BundleId.Relationships.BundleIdCapabilities.Data](./bundleidcapabilities-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
-- [links](./bundleidcapabilities-data.dictionary/links.md)
+- links
   The links to the related data and the relationship’s self-link.
 
 ## Properties

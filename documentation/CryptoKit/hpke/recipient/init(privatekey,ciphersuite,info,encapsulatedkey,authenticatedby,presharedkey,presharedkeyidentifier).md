@@ -21,7 +21,7 @@ Creates a recipient in authentication and preshared key mode.
 init<SK>(privateKey: SK, ciphersuite: HPKE.Ciphersuite, info: Data, encapsulatedKey: Data, authenticatedBy authenticationKey: SK.PublicKey, presharedKey psk: SymmetricKey, presharedKeyIdentifier pskID: Data) throws where SK : HPKEDiffieHellmanPrivateKey
 ```
 
-#### Discussion
+## Discussion
 
 The `Receiver` decrypts messages it receives in authentication and preshared key (`auth_psk`) mode using the encapsulated key with the key schedule information (`info` data), in addition to a symmetric encryption key that the sender and recipient both know in advance. Messages also include authentication data so that the recipient can verify the authenticity of the sender’s private key.
 

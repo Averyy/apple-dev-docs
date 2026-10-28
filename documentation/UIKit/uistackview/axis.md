@@ -23,7 +23,7 @@ var axis: NSLayoutConstraint.Axis { get set }
 @property (nonatomic) UILayoutConstraintAxis axis;
 ```
 
-#### Discussion
+## Discussion
 
 This property determines the orientation of the arranged views. Assigning the [`NSLayoutConstraint.Axis.vertical`](../nslayoutconstraint/axis/vertical.md) value creates a column of views. Assigning the [`NSLayoutConstraint.Axis.horizontal`](../nslayoutconstraint/axis/horizontal.md) value creates a row. The default value is [`NSLayoutConstraint.Axis.horizontal`](../nslayoutconstraint/axis/horizontal.md).
 

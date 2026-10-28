@@ -16,7 +16,7 @@ var isFailure: Bool { get }
 @property (readonly) BOOL isFailure;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is `YES` for issues which have a severity level of `XCTIssueSeverityError` or higher. Otherwise, the value of this property is `NO`.
 

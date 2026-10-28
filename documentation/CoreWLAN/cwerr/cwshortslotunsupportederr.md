@@ -17,7 +17,7 @@ case cwShortSlotUnsupportedErr
 kCWShortSlotUnsupportedErr
 ```
 
-#### Discussion
+## Discussion
 
 Association denied because short slot time option is not supported by requesting station.
 

@@ -23,7 +23,7 @@ An integer value that indicates the level of additional runtime security protect
 
 **Default**: `2`
 
-#### Discussion
+## Discussion
 
 Add this entitlement with the value `2` to your app or extension to instruct the system to protect against particular attacks that target the dynamic loader and Mach messaging.
 

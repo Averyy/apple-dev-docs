@@ -25,7 +25,7 @@ let kSecAttrSerialNumber: CFString
 extern CFStringRef const kSecAttrSerialNumber;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is of type [`CFData`](../CoreFoundation/cfdata.md) and contains the serial number data of a certificate. Items of class [`kSecClassCertificate`](./ksecclasscertificate.md) have this attribute. Read only.
 

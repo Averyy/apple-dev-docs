@@ -25,7 +25,7 @@ static var forcedOrdering: NSString.CompareOptions { get }
 NSForcedOrderingSearch
 ```
 
-#### Discussion
+## Discussion
 
 This option ensures reliable, reproducible results when sorting. For example, “aaa” is greater than “AAA”  if [`caseInsensitive`](./caseinsensitive.md) is specified.
 

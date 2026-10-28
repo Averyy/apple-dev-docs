@@ -5,11 +5,11 @@
 
 Analyze your app’s performance by configuring your project to use the Metal debugger.
 
-#### Overview
+## Overview
 
 You can use Xcode to capture your app’s Metal workload. First, ensure that the GPU Frame Capture option is enabled in the runtime diagnostics options. Then, when your app is running, click the Metal Capture button in the debug bar, select a scope, and click Capture.
 
-##### Configure the GPU Frame Capture options
+### Configure the GPU Frame Capture options
 
 Xcode automatically enables the GPU Frame Capture option if your target links to the [Metal](../Metal/Metal.md) framework, or any other framework that uses the Metal API. If you’re collaborating on a project, it’s possible that someone else may have disabled GPU Frame Capture. To ensure it’s enabled, follow these steps:
 
@@ -24,7 +24,7 @@ The GPU Frame Capture options include the following:
 - **Metal**: Captures only Metal API usage in your app. If your app doesn’t use the Metal API, Xcode disables the Metal Capture button in the debug bar.
 - **Disabled**: Doesn’t capture Metal usage in your app. GPU Frame Capture has a tiny, but measurable, effect on your app’s CPU processing time, so choose this option when you want to test your app’s maximum performance level.
 
-##### Capture your Metal workload while debugging
+### Capture your Metal workload while debugging
 
 While debugging your app, you can capture a GPU trace by following these steps:
 
@@ -35,7 +35,7 @@ While debugging your app, you can capture a GPU trace by following these steps:
 
 Xcode automatically starts capturing a GPU trace when the scope starts, then finishes the capture based on the scope and count you select. To manually stop the capture, you can click the Finish button at any time.
 
-##### Capture your Metal workload after deployment
+### Capture your Metal workload after deployment
 
 Capture a GPU trace after deploying your app by following these steps:
 
@@ -49,7 +49,7 @@ Capture a GPU trace after deploying your app by following these steps:
 
 Xcode automatically starts capturing a GPU trace when the scope starts, then finishes the capture based on the count you select. To manually stop the capture, you can click the Finish button at any time.
 
-##### Configure advanced capture options
+### Configure advanced capture options
 
 The Metal Capture popover includes an Advanced section with additional options for controlling capture behavior. To reveal these options, click Show next to Advanced in the popover.
 
@@ -66,7 +66,7 @@ The advanced capture options include the following:
   - **Always**: Force the optimization on regardless of environment. Use this when you have large or slow GPU frame captures and know your app doesn’t write to shared-memory buffers via system calls.
   - **Never**: Disable the optimization entirely. Use this if you suspect the optimization is producing incorrect results.
 
-##### Save the capture to your computer
+### Save the capture to your computer
 
 To save your captured Metal workload as a GPU trace, choose File > Export. For more information on replaying GPU trace files, see [Replaying a GPU trace file](./replaying-a-gpu-trace-file.md).
 

@@ -5,11 +5,11 @@
 
 Understand the basic composition for a live session playlist.
 
-#### Overview
+## Overview
 
 In live sessions, the index file is updated by removing media URIs from the file as new media files are created and made available. The `EXT-X-ENDLIST` tag isn’t present in the live playlist, indicating that new media files will be added to the index file as they become available.
 
-##### Example
+### Example
 
 This code is an example of a Live Playlist as it appears at the beginning of a session:
 

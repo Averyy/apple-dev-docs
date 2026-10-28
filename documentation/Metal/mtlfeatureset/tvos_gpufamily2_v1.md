@@ -19,7 +19,7 @@ case tvOS_GPUFamily2_v1
 MTLFeatureSet_tvOS_GPUFamily2_v1
 ```
 
-#### Discussion
+## Discussion
 
 This feature set corresponds with Apple A10 devices running tvOS 11.
 

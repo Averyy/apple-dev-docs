@@ -21,7 +21,7 @@ A value for a stereo interpretation tag indicating the video data for the left a
 extern const CMTag kCMTagStereoInterpretationOrderReversed;
 ```
 
-#### Discussion
+## Discussion
 
 This value is for use in tags with the [`kCMTagCategory_StereoViewInterpretation`](./cmtagcategory/kcmtagcategory_stereoviewinterpretation.md) category. This constant changes interpretations of geometry and affects internal storage by placing right eye data before left eye data.
 

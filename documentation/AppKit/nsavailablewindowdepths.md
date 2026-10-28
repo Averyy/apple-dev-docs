@@ -15,7 +15,7 @@ Returns the available window depth values.
 extern const NSWindowDepth *NSAvailableWindowDepths();
 ```
 
-#### Discussion
+## Discussion
 
 Returns a null-terminated array of [`NSWindow.Depth`](./nswindow/depth.md) values that specify which window depths are currently available. Window depth values are converted to specific display properties using the functions [`bitsPerPixel`](./nswindow/depth/bitsperpixel.md), [`bitsPerSample`](./nswindow/depth/bitspersample.md), [`colorSpaceName`](./nswindow/depth/colorspacename.md), and [`isPlanar`](./nswindow/depth/isplanar.md).
 

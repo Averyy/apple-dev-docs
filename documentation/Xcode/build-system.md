@@ -4,7 +4,7 @@
 
 Compile your code into a binary format, and customize your project settings to build your code.
 
-#### Overview
+## Overview
 
 The Xcode build system manages the tools that transform your code and resource files into a finished app. When you tell Xcode to build your project, the build system analyzes your files and uses your project settings to assemble the set of tasks to perform. Use your project settings to modify the build process and add tasks that you need to complete your builds.
 

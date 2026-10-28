@@ -22,7 +22,7 @@ var remainingComplicationUserInfoTransfers: Int { get }
 @property (nonatomic, readonly) NSUInteger remainingComplicationUserInfoTransfers;
 ```
 
-#### Discussion
+## Discussion
 
 The number of remaining times that you can call [`transferCurrentComplicationUserInfo(_:)`](./transfercurrentcomplicationuserinfo%28_%29.md) during the current day. If this property is set to 0, any additional calls to [`transferCurrentComplicationUserInfo(_:)`](./transfercurrentcomplicationuserinfo%28_%29.md) use [`transferUserInfo(_:)`](./transferuserinfo%28_%29.md) instead.
 

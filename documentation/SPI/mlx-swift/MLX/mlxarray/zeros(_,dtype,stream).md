@@ -17,7 +17,7 @@ Construct an array of zeros with a given [`DType`](../dtype.md)
 static func zeros(_ shape: some Collection<Int>, dtype: DType, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 Example:
 
@@ -25,7 +25,7 @@ Example:
 let z = MLXArray.zeros([5, 10], dtype: .int32)
 ```
 
-##### See Also
+### See Also
 
 - [Initialization](../initialization.md)
 - [`zeros(like:dtype:stream:)`](./zeros%28like,dtype,stream%29.md)

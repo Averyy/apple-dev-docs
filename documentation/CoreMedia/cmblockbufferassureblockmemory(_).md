@@ -25,11 +25,11 @@ func CMBlockBufferAssureBlockMemory(_ theBuffer: CMBlockBuffer) -> OSStatus
 extern OSStatus CMBlockBufferAssureBlockMemory(CMBlockBufferRef theBuffer);
 ```
 
-#### Return Value
+## Return Value
 
 Returns `kCMBlockBufferNoErr` if successful.
 
-#### Discussion
+## Discussion
 
 Traverses the possibly complex `CMBlockBuffer`, allocating the memory for any constituent memory blocks that are not yet allocated.
 

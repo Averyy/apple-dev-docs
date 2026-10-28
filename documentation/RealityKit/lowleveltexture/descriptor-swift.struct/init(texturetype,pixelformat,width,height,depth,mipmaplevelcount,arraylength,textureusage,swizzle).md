@@ -20,7 +20,7 @@ Creates a descriptor for a low-level texture.
 init(textureType: MTLTextureType = .type2D, pixelFormat: MTLPixelFormat = .invalid, width: Int = 0, height: Int = 0, depth: Int = 1, mipmapLevelCount: Int = 1, arrayLength: Int = 1, textureUsage: MTLTextureUsage = .unknown, swizzle: MTLTextureSwizzleChannels = .init(red: .red, green: .green, blue: .blue, alpha: .alpha))
 ```
 
-#### Discussion
+## Discussion
 
 To create a new [`LowLevelTexture`](../../lowleveltexture.md), first create a `LowLevelTexture.Descriptor` object and set its property values.  Then, call [`init(descriptor:)`](../init%28descriptor%29.md).
 

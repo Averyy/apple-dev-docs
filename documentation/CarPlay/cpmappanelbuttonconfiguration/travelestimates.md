@@ -22,7 +22,7 @@ var travelEstimates: CPTravelEstimates? { get set }
 @property (nonatomic, copy, nullable) CPTravelEstimates * travelEstimates;
 ```
 
-#### Discussion
+## Discussion
 
 Specify this information at initialization time and access it using this property.
 

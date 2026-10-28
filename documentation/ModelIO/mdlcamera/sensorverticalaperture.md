@@ -24,7 +24,7 @@ var sensorVerticalAperture: Float { get set }
 @property (nonatomic, assign) float sensorVerticalAperture;
 ```
 
-#### Discussion
+## Discussion
 
 In a physically based camera, field of view is based on the focal length of the lens and the vertical aperture of the imaging surface (film or sensor). Changing the [`focalLength`](./focallength.md) or [`sensorVerticalAperture`](./sensorverticalaperture.md) property updates the [`fieldOfView`](./fieldofview.md) property to the corresponding value, and vice versa.
 

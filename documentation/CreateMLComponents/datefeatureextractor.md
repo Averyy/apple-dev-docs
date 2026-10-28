@@ -20,7 +20,7 @@ A time and date feature extractor.
 struct DateFeatureExtractor<Scalar> where Scalar : BinaryFloatingPoint
 ```
 
-#### Overview
+## Overview
 
 This transformer takes a [`Date`](../Foundation/date.md) and extracts floating-point feature values according to the features parameter. Every feature value is roughly between -0.5 and 0.5. All date calculations are based on a [`Calendar`](../Foundation/calendar.md), which defaults to [`current`](../Foundation/calendar/current.md).
 

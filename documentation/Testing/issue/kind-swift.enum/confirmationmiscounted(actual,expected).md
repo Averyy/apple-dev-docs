@@ -23,7 +23,7 @@ An issue due to a confirmation being confirmed the wrong number of times.
 indirect case confirmationMiscounted(actual: Int, expected: any RangeExpression & Sendable)
 ```
 
-#### Discussion
+## Discussion
 
 This issue can occur when calling [`confirmation(_:expectedCount:isolation:sourceLocation:_:)`](../../confirmation%28_,expectedcount,isolation,sourcelocation,_%29-5mqz2.md) or [`confirmation(_:expectedCount:isolation:sourceLocation:_:)`](../../confirmation%28_,expectedcount,isolation,sourcelocation,_%29-l3il.md) when the confirmation passed to these functions’ `body` closures is confirmed too few or too many times.
 

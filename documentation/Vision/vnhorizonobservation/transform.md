@@ -24,7 +24,7 @@ var transform: CGAffineTransform { get }
 @property (nonatomic, assign, readonly) CGAffineTransform transform;
 ```
 
-#### Discussion
+## Discussion
 
 Apply the transform’s inverse to orient the image in an upright position and make the detected horizon level.
 

@@ -17,7 +17,7 @@ Load model weights.
 func loadWeights(modelDirectory: URL, model: BaseLanguageModel, quantization: BaseConfiguration.Quantization? = nil, perLayerQuantization: BaseConfiguration.PerLayerQuantization? = nil, weightFileSelection: WeightFileSelection = .automatic, excludedComponents: Set<ModelComponent> = [], componentLoading: ComponentLoading = .onFirstUse) throws
 ```
 
-#### Discussion
+## Discussion
 
 This is typically called via [`load(from:using:configuration:useLatest:progressHandler:)`](./genericmodelfactory/load%28from,using,configuration,uselatest,progresshandler%29.md). This function loads model weight `safetensor` files in the given `modelDirectory`, calls [`prepareCheckpoint(_:)`](./baselanguagemodel/preparecheckpoint%28_%29.md) to allow per-model preprocessing, applies optional quantization, and updates the model with the weights. Derived inference-only state is prepared after the checkpoint update and before the model is evaluated and returned to callers.
 

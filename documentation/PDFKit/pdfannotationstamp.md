@@ -21,7 +21,7 @@ class PDFAnnotationStamp
 @interface PDFAnnotationStamp : PDFAnnotation
 ```
 
-#### Overview
+## Overview
 
 A `PDFAnnotationStamp` object should have an appearance stream associated with it; otherwise, nothing useful is rendered.
 

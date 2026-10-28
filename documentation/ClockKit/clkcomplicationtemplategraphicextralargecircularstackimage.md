@@ -21,7 +21,7 @@ class CLKComplicationTemplateGraphicExtraLargeCircularStackImage
 @interface CLKComplicationTemplateGraphicExtraLargeCircularStackImage : CLKComplicationTemplateGraphicExtraLargeCircular
 ```
 
-#### Overview
+## Overview
 
 This template belongs to the [`CLKComplicationFamily.graphicExtraLarge`](./clkcomplicationfamily/graphicextralarge.md) family. [Figure 1](./clkcomplicationtemplategraphicextralargecircularstackimage.md#3667231) shows the layout of the complication and where it appears on the clock face.
 

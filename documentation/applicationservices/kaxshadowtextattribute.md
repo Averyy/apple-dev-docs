@@ -19,7 +19,7 @@ var kAXShadowTextAttribute: Unmanaged<CFString>
 CFStringRef kAXShadowTextAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 
 ---

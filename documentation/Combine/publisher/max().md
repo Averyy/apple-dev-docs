@@ -23,11 +23,11 @@ func max() -> Publishers.Comparison<Self>
 
 Available when `Output` conforms to `Comparable`.
 
-#### Return Value
+## Return Value
 
 A publisher that publishes the maximum value received from the upstream publisher, after the upstream publisher finishes.
 
-#### Discussion
+## Discussion
 
 Use [`max()`](./max%28%29.md) to determine the maximum value in the stream of elements from an upstream publisher.
 

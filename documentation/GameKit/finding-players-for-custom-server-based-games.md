@@ -5,7 +5,7 @@
 
 Connect players to your custom server-hosted games by creating game sessions with hosted matches.
 
-#### Overview
+## Overview
 
 Hosted matches allow your game to use the Game Center matchmaking service to find players while using your own server to exchange game data. This approach gives you more control over the networking architecture. You can quickly find players for your game with hosted matches by using the Game Center service and optionally use matchmaking rules to filter and prioritize match requests to find the most compatible players.
 
@@ -19,7 +19,7 @@ Creating a hosted match requires your game to implement all of the low-level net
 
 If your game uses the standard matchmaking user interface in GameKit, each device needs to inform GameKit after it connects to your server. This information allows GameKit to update its user interface.
 
-##### Use the Game Center interface or programmatic matchmaking
+### Use the Game Center interface or programmatic matchmaking
 
 You can present a Game Center interface for the local player to discover and invite other players to participate. Alternatively, you can present your own custom interface to connect players or match players without presenting an interface.
 
@@ -38,7 +38,7 @@ The following table lists the most common methods for real-time matchmaking and 
 | Your programmatic code calls [`addPlayers(to:matchRequest:completionHandler:)`](./gkmatchmaker/addplayers%28to,matchrequest,completionhandler%29.md) to add players to a match. | Your programmatic code calls [`findPlayers(forHostedRequest:withCompletionHandler:)`](./gkmatchmaker/findplayers%28forhostedrequest,withcompletionhandler%29.md) or [`findMatchedPlayers(_:withCompletionHandler:)`](./gkmatchmaker/findmatchedplayers%28_,withcompletionhandler%29.md) to find a set of new players for a match. Because you implement your own matching architecture, you decide when to make this call and whether you’re adding players to an existing hosted match. |
 | Your game receives an invitation. | The [`GKInvite`](./gkinvite.md) object’s [`isHosted`](./gkinvite/ishosted.md) property tells you whether the match is a hosted match. This matters only if your game implements both hosted and nonhosted matches. |
 
-##### Create a hosted match with the Game Center interface
+### Create a hosted match with the Game Center interface
 
 Your players can send invites to fill empty player slots and start a game by using the default matchmaking interface. To create a hosted match using [`GKMatchmakerViewController`](./gkmatchmakerviewcontroller.md):
 
@@ -93,7 +93,7 @@ func dismiss(animated: Bool) {
 
 When all of the players accept their invitations to a match, GameKit invokes [`matchmakerViewController(_:didFindHostedPlayers:)`](./gkmatchmakerviewcontrollerdelegate/matchmakerviewcontroller%28_,didfindhostedplayers%29.md) in the app instances for all players in the game, including the local player who initiates the invitations. Start the game by dismissing the view controller and connecting the players through your own server.
 
-#### Dismiss the matchmaker view controller
+## Dismiss the matchmaker view controller
 
 After all invitees have accepted your app’s match request, you send the information about the players to your server. Then, send a start-game message to all of the invitees. When invitees receive the start-game message, they must manually close the view controller for their app.
 
@@ -116,7 +116,7 @@ func connectAllPlayersToServer(players: [GKPlayer], completion: @escaping (Bool)
 }
 ```
 
-#### Start a hosted match programmatically
+## Start a hosted match programmatically
 
 Without the default Game Center interface, your app can start hosted matches by programmatically inviting players. The following example starts a match by calling [`findPlayers(forHostedRequest:withCompletionHandler:)`](./gkmatchmaker/findplayers%28forhostedrequest,withcompletionhandler%29.md) and connecting players in the completion handler:
 
@@ -151,7 +151,7 @@ func connectPlayersToHostedMatch(players: [GKPlayer]) {
 }
 ```
 
-#### Start a hosted match with matchmaking rules
+## Start a hosted match with matchmaking rules
 
 You can find players for a hosted match with matchmaking rules by initiating a request with [`findMatchedPlayers(_:withCompletionHandler:)`](./gkmatchmaker/findmatchedplayers%28_,withcompletionhandler%29.md). Set the rules-related properties in the [`GKMatchRequest`](./gkmatchrequest.md) ([`queueName`](./gkmatchrequest/queuename.md) and optionally, [`properties`](./gkmatchrequest/properties.md)) before you call this method. In this example, the app connects players using a match request configured with matchmaking rules:
 

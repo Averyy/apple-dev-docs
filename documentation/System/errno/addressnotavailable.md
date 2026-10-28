@@ -25,7 +25,7 @@ static var addressNotAvailable: Errno { get }
 
 - [Adopting Swift Error Constants](../adopting-errno.md)
 
-#### Discussion
+## Discussion
 
 This error normally results from an attempt to create a socket with an address that isn’t on this machine.
 

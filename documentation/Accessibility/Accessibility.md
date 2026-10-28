@@ -15,7 +15,7 @@ Make your apps accessible to everyone who uses Apple devices.
 - visionOS 1.0+
 - watchOS 7.0+
 
-#### Overview
+## Overview
 
 Accessibility features help a wide range of people interact with their devices. By creating your app with accessibility in mind, you make it possible for everyone to enjoy your app. Whether you’re developing a new app, or updating an existing one, consider the needs of all the people who might use your app.
 
@@ -32,7 +32,7 @@ For many, accessibility is a necessity. For others, it’s a practicality. For e
 - [Hearing](./hearing.md)
   A person may be deaf, have partial hearing loss, or have difficulty hearing sounds within a certain range.
 
-##### Dive into featured sample apps
+### Dive into featured sample apps
 
 Explore how sample apps leverage accessible design principles and accessibility APIs to create a great user experience for everyone.
 
@@ -41,7 +41,7 @@ Explore how sample apps leverage accessible design principles and accessibility 
 - [Happy Beam](../visionOS/happybeam.md)
   Leverage a Full Space to create a fun game using ARKit.
 
-##### Explore assistive technologies
+### Explore assistive technologies
 
 People can personalize their devices by choosing the accessibility features and assistive technologies that give them the best user experience. Make sure your app provides a great experience for people who use assistive technologies by testing your app with them.
 
@@ -54,13 +54,13 @@ People can personalize their devices by choosing the accessibility features and 
 - [Assistive Access](./assistive-access.md)
   A mode that tailors the iOS and iPadOS experience for people with cognitive disabilities.
 
-##### Add Accessibility Nutrition Labels to your product page
+### Add Accessibility Nutrition Labels to your product page
 
 You can add Accessibility Nutrition Labels to your App Store product page to indicate which accessibility features your app supports on each platform. For example, a person who is blind or has low vision might seek apps that support VoiceOver or Larger Text.
 
 For more information on adding Accessibility Nutrition Labels to your app, see [Overview of Accessibility Nutrition Labels](https://developer.apple.com/help/app-store-connect/manage-app-accessibility/overview-of-accessibility-nutrition-labels) in App Store Connect Help.
 
-##### Related videos
+### Related videos
 
 - [Create accessible spatial experiences](https://developer.apple.com/videos/play/wwdc2023/10034)
   Learn how you can make spatial computing apps that work well for everyone. Like all Apple platforms, visionOS is designed for accessibility: We’ll share how we’ve reimagined assistive technologies like VoiceOver and Pointer Control and designed features like Dwell Control to help people interact in the way that works best for them. Learn best practices for vision, motor, cognitive, and hearing accessibility and help everyone enjoy immersive experiences for visionOS.

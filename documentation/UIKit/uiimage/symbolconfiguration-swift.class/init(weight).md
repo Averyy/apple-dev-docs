@@ -24,7 +24,7 @@ convenience init(weight: UIImage.SymbolWeight)
 + (instancetype) configurationWithWeight:(UIImageSymbolWeight) weight;
 ```
 
-#### Return Value
+## Return Value
 
 A new symbol configuration object with the specified information.
 

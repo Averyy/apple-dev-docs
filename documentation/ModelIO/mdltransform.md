@@ -24,7 +24,7 @@ class MDLTransform
 @interface MDLTransform : NSObject
 ```
 
-#### Overview
+## Overview
 
 Transform information can be static, or in the case of resources that describe animations, time based. You use transform objects to position, orient, shear, and scale the meshes, cameras, lights, and container objects in an asset using their [`transform`](./mdlobject/transform.md) property.
 

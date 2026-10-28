@@ -25,7 +25,7 @@ func set(_ value: Double, forKey aKey: String)
 - (void) setDouble:(double) value forKey:(NSString *) aKey;
 ```
 
-#### Discussion
+## Discussion
 
 This method places the double value in an [`NSNumber`](../nsnumber.md) type before writing the key and value to the store.
 

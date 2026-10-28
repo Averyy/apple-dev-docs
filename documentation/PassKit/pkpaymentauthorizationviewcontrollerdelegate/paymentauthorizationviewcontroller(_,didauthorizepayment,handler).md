@@ -27,7 +27,7 @@ optional func paymentAuthorizationViewController(_ controller: PKPaymentAuthoriz
 - (void) paymentAuthorizationViewController:(PKPaymentAuthorizationViewController *) controller didAuthorizePayment:(PKPayment *) payment handler:(void (^)(PKPaymentAuthorizationResult *result)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 The system calls this method after it authorizes the payment request. You submit the payment information to your payment processor to authorize the transaction, and then call the completion handler.
 

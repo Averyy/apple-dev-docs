@@ -23,7 +23,7 @@ case dropLocalChanges
 NSFileManagerResumeSyncBehaviorDropLocalChanges
 ```
 
-#### Discussion
+## Discussion
 
 If a conflict occurs, the file manager stores the local changes as an alternate version. Only use this behavior if you provide a separate means of resolving and merging conflicts.
 

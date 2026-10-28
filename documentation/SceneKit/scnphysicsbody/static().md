@@ -25,11 +25,11 @@ class func `static`() -> Self
 + (instancetype) staticBody;
 ```
 
-#### Return Value
+## Return Value
 
 A new physics body object.
 
-#### Discussion
+## Discussion
 
 Use static bodies to construct fixtures in your scene that other bodies need to collide with but that do not themselves move, such as floors, walls, and terrain.
 

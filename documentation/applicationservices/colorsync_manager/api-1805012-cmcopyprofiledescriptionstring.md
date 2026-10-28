@@ -14,11 +14,11 @@ CMError CMCopyProfileDescriptionString (
 );
 ```
 
-#### Return Value
+## Return Value
 
 A `CMError` value. See [Result Codes](../colorsync_manager.md#1670295). 
 
-#### Overview
+## Overview
 
 If the profile is localized, ColorSync obtains the best localized name for the current process.
 

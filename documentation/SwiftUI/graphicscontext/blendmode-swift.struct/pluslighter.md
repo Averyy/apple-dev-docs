@@ -21,7 +21,7 @@ A mode that adds the components of the source and background images, resulting i
 static var plusLighter: GraphicsContext.BlendMode { get }
 ```
 
-#### Discussion
+## Discussion
 
 This mode implements the equation `R = MIN(1, S + D)` where
 

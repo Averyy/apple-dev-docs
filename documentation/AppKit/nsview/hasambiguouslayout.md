@@ -19,7 +19,7 @@ var hasAmbiguousLayout: Bool { get }
 @property (readonly) BOOL hasAmbiguousLayout;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) when the view’s location or size cannot be determined definitively based on the current constraints.
 

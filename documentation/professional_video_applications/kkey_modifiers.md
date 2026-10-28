@@ -19,7 +19,7 @@ let kKey_Modifiers: String
 extern NSString * kKey_Modifiers;
 ```
 
-#### Discussion
+## Discussion
 
 See [`FxModifierKeys`](./fxmodifierkeys.md) for the definitions.
 

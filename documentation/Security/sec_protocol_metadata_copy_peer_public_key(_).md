@@ -23,11 +23,11 @@ func sec_protocol_metadata_copy_peer_public_key(_ metadata: sec_protocol_metadat
 dispatch_data_tsec_protocol_metadata_copy_peer_public_key(sec_protocol_metadata_t metadata);
 ```
 
-#### Return Value
+## Return Value
 
 A `dispatch_data_t` containing the peer’s raw public key.
 
-#### Discussion
+## Discussion
 
 Get the protocol instance peer’s public key.
 

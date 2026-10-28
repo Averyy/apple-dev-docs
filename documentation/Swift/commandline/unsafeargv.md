@@ -21,7 +21,7 @@ Access to the raw argv value from C.
 static var unsafeArgv: UnsafeMutablePointer<UnsafeMutablePointer<Int8>?> { get }
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is a `nil`-terminated C array. Including the trailing `nil`, there are [`argc`](./argc.md) `+ 1` elements in the array.
 

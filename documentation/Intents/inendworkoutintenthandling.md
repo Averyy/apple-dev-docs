@@ -23,7 +23,7 @@ protocol INEndWorkoutIntentHandling : NSObjectProtocol
 @protocol INEndWorkoutIntentHandling <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Use the methods of the [`INEndWorkoutIntentHandling`](./inendworkoutintenthandling.md) protocol to resolve, confirm, and handle requests to end a workout using your app. Adopt this protocol in an object of your Intents extension capable of validating the workout name.
 

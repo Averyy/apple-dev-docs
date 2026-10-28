@@ -16,7 +16,7 @@ The experience controller for this view controller.
 @preconcurrency var experienceController: AVExperienceController { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use an experience controller to transition a player to different experiences and observe experience transitions.
 

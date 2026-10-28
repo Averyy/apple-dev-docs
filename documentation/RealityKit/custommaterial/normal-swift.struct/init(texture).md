@@ -19,7 +19,7 @@ Create an object from a specified texture.
 init(texture: CustomMaterial.Texture? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 This initializer creates an object from a normal map texture. *Normal mapping* is a real-time rendering technique that captures fine surface details for a model using a texture instead of increasing the number of polygons in the model. It works by storing *surface normals*, which are vectors perpendicular to the surface of the model, from a much higher-resolution version of the same 3D object. A normal map stores each vector in the image by storing the vectors’ `X`, `Y`, and `Z` values as the `R`, `G`, and `B` components of the corresponding pixel in the UV-mapped image.
 

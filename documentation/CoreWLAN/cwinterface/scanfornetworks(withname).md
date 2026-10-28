@@ -19,11 +19,11 @@ func scanForNetworks(withName networkName: String?) throws -> Set<CWNetwork>
 - (NSSet<CWNetwork *> *) scanForNetworksWithName:(NSString *) networkName error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 A set of CWNetwork objects.
 
-#### Discussion
+## Discussion
 
 If *ssid* parameter is present, a directed scan will be performed by the interface, otherwise a broadcast scan will be performed. This method will block for the duration of the scan.
 

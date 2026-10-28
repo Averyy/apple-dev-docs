@@ -24,15 +24,15 @@ typealias AudioFile_GetSizeProc = (UnsafeMutableRawPointer) -> Int64
 typedef long long (*)(void *) AudioFile_GetSizeProc;
 ```
 
-#### Return Value
+## Return Value
 
 The callback should return the size of the data.
 
-#### Discussion
+## Discussion
 
 If you named your function `MyAudioFile_GetSizeProc`, you would declare it like this:
 
-##### Discussion
+### Discussion
 
 This callback gets invoked by an audio file object when it needs to get audio file data size. You pass this callback as a parameter when calling the [`AudioFileOpenWithCallbacks(_:_:_:_:_:_:_:)`](./audiofileopenwithcallbacks%28_,_,_,_,_,_,_%29.md) and [`AudioFileInitializeWithCallbacks(_:_:_:_:_:_:_:_:_:)`](./audiofileinitializewithcallbacks%28_,_,_,_,_,_,_,_,_%29.md) functions.
 

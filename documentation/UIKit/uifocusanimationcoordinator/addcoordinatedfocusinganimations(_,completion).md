@@ -23,7 +23,7 @@ func addCoordinatedFocusingAnimations(_ animations: ((any UIFocusAnimationContex
 - (void) addCoordinatedFocusingAnimations:(void (^)(id<UIFocusAnimationContext>animationContext)) animations completion:(void (^)()) completion;
 ```
 
-#### Discussion
+## Discussion
 
 When focus is being added to an item, use this method to coordinate your custom animations with the system animations. The animations you specify are run in the same animation block as the system animations. Use the information in the context parameter to determine any custom behaviors for your animations. For example, you might configure your animations to run in half the time as the main animation and start after a short delay.
 

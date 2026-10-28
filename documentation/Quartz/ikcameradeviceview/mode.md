@@ -19,7 +19,7 @@ var mode: IKCameraDeviceViewDisplayMode { get set }
 @property IKCameraDeviceViewDisplayMode mode;
 ```
 
-#### Discussion
+## Discussion
 
 The possible values are listed in [`IKCameraDeviceViewDisplayMode`](../ikcameradeviceviewdisplaymode.md)
 

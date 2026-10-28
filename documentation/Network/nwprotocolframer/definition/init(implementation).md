@@ -21,7 +21,7 @@ Initializes a new protocol definition based on your protocol implementation.
 init(implementation: any NWProtocolFramerImplementation.Type)
 ```
 
-#### Discussion
+## Discussion
 
 Each time you initialize a protocol definition with your implemention, a new definition is created that will not be considered equal to other definitions. If you need to associate messages with a protocol you have added to a connection’s protocol stack, make sure to use the same definition.
 

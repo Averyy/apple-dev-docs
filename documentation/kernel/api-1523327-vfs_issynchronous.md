@@ -15,7 +15,7 @@ Determine if writes to a filesystem occur synchronously.
 int vfs_issynchronous(mount_t mp);
 ```
 
-#### Return Value
+## Return Value
 
 Nonzero if writes occur synchronously, else 0.
 

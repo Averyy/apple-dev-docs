@@ -19,7 +19,7 @@ var deviceSize: NSSize { get }
 @property (readonly) NSSize deviceSize;
 ```
 
-#### Discussion
+## Discussion
 
 The lower-left corner of the surface is considered (0,0).
 

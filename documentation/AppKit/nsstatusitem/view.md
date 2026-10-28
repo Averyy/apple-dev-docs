@@ -19,7 +19,7 @@ var view: NSView? { get set }
 @property (strong, nullable) NSView * view;
 ```
 
-#### Discussion
+## Discussion
 
 Setting a custom view overrides the appearance and behavior settings that [`NSStatusItem`](../nsstatusitem.md) defines. The custom view is responsible for drawing itself and providing its own behaviors, such as processing mouse clicks and sending action messages.
 

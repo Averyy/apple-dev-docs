@@ -25,11 +25,11 @@ func getBytes(_ buffer: UnsafeMutableRawPointer?, maxLength maxBufferCount: Int,
 - (BOOL) getBytes:(void *) buffer maxLength:(NSUInteger) maxBufferCount usedLength:(NSUInteger *) usedBufferCount encoding:(NSStringEncoding) encoding options:(NSStringEncodingConversionOptions) options range:(NSRange) range remainingRange:(NSRangePointer) leftover;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if some characters were converted, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Conversion might stop when the buffer fills, but it might also stop when the conversion isn’t possible due to the chosen encoding.
 

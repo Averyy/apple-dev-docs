@@ -19,7 +19,7 @@ static let reset: NSSpeechSynthesizer.SpeechPropertyKey
 extern NSSpeechPropertyKey const NSSpeechResetProperty;
 ```
 
-#### Discussion
+## Discussion
 
 There is no value associated with this property; to reset the channel to its default state, set the key to `nil`. You can use this function to, for example, set speech pitch and speech rate to default values.
 

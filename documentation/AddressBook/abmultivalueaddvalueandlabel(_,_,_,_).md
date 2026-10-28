@@ -23,11 +23,11 @@ func ABMultiValueAddValueAndLabel(_ multiValue: ABMutableMultiValue!, _ value: C
 extern bool ABMultiValueAddValueAndLabel(ABMutableMultiValueRef multiValue, CFTypeRef value, CFStringRef label, ABMultiValueIdentifier *outIdentifier);
 ```
 
-#### Return Value
+## Return Value
 
 `true` when value is added to multiValue successfully, `false` otherwise.
 
-#### Discussion
+## Discussion
 
 This function performs no type checking. It allows the addition of values whose type does not match the type declared for `multiValue`.
 

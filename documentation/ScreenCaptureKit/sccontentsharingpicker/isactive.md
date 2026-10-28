@@ -24,7 +24,7 @@ var isActive: Bool { get set }
 @property (nonatomic, assign, getter=isActive) BOOL active;
 ```
 
-#### Discussion
+## Discussion
 
 When this value is `true`, the capture stream picker is active, available for managing capture. The default value is `false`.
 

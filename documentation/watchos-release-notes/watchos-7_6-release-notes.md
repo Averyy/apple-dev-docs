@@ -5,11 +5,11 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 To develop apps for watchOS 7.6, build your apps against the watchOS 7.4 SDK or later. The SDK comes bundled with Xcode 12.5.1. For information on the compatibility requirements for Xcode 12.5.1, see [Xcode 12.5.1 Release Notes](../Xcode-Release-Notes/xcode-12_5_1-release-notes.md).
 
-##### General
+### General
 
 There are no new release notes for this software update.
 

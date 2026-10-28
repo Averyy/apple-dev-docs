@@ -15,7 +15,7 @@ Leave a group chat.
 final func leaveGroupChat(_ request: RCSService.LeaveGroupChatRequest) async throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: [`RCSService.Error`](./error.md) if there was an error while performing the operation.
 

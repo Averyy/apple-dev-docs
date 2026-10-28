@@ -23,11 +23,11 @@ func metadataOutputRectConverted(fromOutputRect rectInOutputCoordinates: CGRect)
 - (CGRect) metadataOutputRectOfInterestForRect:(CGRect) rectInOutputCoordinates;
 ```
 
-#### Return Value
+## Return Value
 
 A rectangle in the [`AVCaptureMetadataOutput`](../avcapturemetadataoutput.md) coordinate system.
 
-#### Discussion
+## Discussion
 
 An [`AVCaptureMetadataOutput`](../avcapturemetadataoutput.md) object expresses its [`rectOfInterest`](../avcapturemetadataoutput/rectofinterest.md) as a [`CGRect`](../../CoreFoundation/cgrect.md) where 0,0 represents the top-left of the picture area, and 1,1 represents the bottom-right on an unrotated picture. This convenience method converts a rectangle in the coordinate space of the output to a rectangle of interest in the coordinate space of a metadata output whose capture device provides input to the output. The conversion takes orientation, mirroring, and scaling into consideration.
 

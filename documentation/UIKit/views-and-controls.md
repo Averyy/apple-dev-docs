@@ -5,7 +5,7 @@
 
 Present your content onscreen and define the interactions allowed with that content.
 
-#### Overview
+## Overview
 
 Views and controls are the visual building blocks of your app’s user interface. Use them to draw and organize your app’s content onscreen.
 

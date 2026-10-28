@@ -25,7 +25,7 @@ var kLinearPCMFormatFlagIsAlignedHigh: AudioFormatFlags { get }
 kLinearPCMFormatFlagIsAlignedHigh
 ```
 
-#### Discussion
+## Discussion
 
 This flag is a synonym for [`kAudioFormatFlagIsAlignedHigh`](./kaudioformatflagisalignedhigh.md).
 

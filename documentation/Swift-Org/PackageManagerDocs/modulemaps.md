@@ -9,7 +9,7 @@ framework: "Swift-Org/PackageManagerDocs"
 
 Define how C and C++ headers are exposed to Swift for system library targets, precompiled libraries, or C Language targets.
 
-#### Overview
+## Overview
 
 Module maps bridge C and C++ libraries with Swift code. They define how the Clang module system organizes headers so Swift can import them. When you wrap a C library for use in Swift Package Manager, you create a module map that describes the library’s public interface.
 
@@ -31,7 +31,7 @@ You don’t need to manually configure compiler flags or search paths.
 
 This article shows you how to create module maps for libraries you’re wrapping. For complete syntax details, see [Module Map Syntax Reference](./modulemapreference.md). To diagnose import failures and compilation errors, see [Debugging Module Maps](./debuggingmodulemaps.md).
 
-##### Create a basic module map
+### Create a basic module map
 
 To show how to create a module map, this example starts with a simple module map that exposes a single header.
 
@@ -46,13 +46,13 @@ module MyLibrary {
 
 This module map defines a module named `MyLibrary` that includes one header file. The `export *` directive makes all symbols from the header available to code that imports the module.
 
-###### Use relative paths for headers
+#### Use relative paths for headers
 
 Specify header paths relative to the module map file’s location. If your module map is in `include/module.modulemap`, the header directive `header "MyLibrary.h"` looks for `include/MyLibrary.h`.
 
 Don’t use absolute paths or parent directory references (`../`) when referencing headers. Relative paths ensure your module map works across different systems and build configurations.
 
-###### Match the module name to your artifact
+#### Match the module name to your artifact
 
 The module name in your module map must match the artifact name in Swift Package Manager. If your Package.swift defines a binary target named `MyLibrary`, your module map must declare `module MyLibrary`.
 
@@ -62,7 +62,7 @@ When you use the functions exposed in a module map in Swift, you get access to t
 import MyLibrary
 ```
 
-##### Create a module map for C++
+### Create a module map for C++
 
 C++ libraries require an additional directive to enable C++ language support. Add the `requires cplusplus` directive to your module map:
 
@@ -88,7 +88,7 @@ module ModernCppLibrary {
 
 Use `cplusplus11` for C++11 or later. The compiler rejects the module if the build doesn’t enable the required C++ standard.
 
-##### Organize multiple headers with umbrella headers
+### Organize multiple headers with umbrella headers
 
 When your library has multiple headers, use an umbrella header to include them all.
 
@@ -117,7 +117,7 @@ module MyLibrary {
 
 The umbrella header pattern is common for libraries with multiple public headers. It provides a single include point for all functionality and clearly defines the public API.
 
-##### Mark system libraries
+### Mark system libraries
 
 When wrapping system libraries (libraries that are built in or pre-installed on the system), add the `[system]` attribute:
 
@@ -131,7 +131,7 @@ module SystemLib [system] {
 
 The `[system]` attribute ensures consistent behavior between local builds and client builds. It affects how Swift imports certain Objective-C types, particularly `NSUInteger`, which maps to `Int` for system modules and `UInt` for non-system modules.
 
-##### Link binary libraries
+### Link binary libraries
 
 Use the `link` directive to specify libraries the linker should include:
 
@@ -145,11 +145,11 @@ module ZLib [system] {
 
 Swift Package Manager passes this information to the linker automatically. You specify the library name without the `lib` prefix or file extension. For example write `"z"` for `libz.a` or `libz.dylib`.
 
-##### Add a module map to a system library target
+### Add a module map to a system library target
 
 Create a system library target when you wrap a library that users install separately on their systems. The common convention for exposing system libraries is to prefix the name of the library with `C`. This allows you to create a Swift module with the name of the C library that provides a more idiomatic Swift interface.
 
-###### Create the target directory
+#### Create the target directory
 
 Make a directory for your system library target in your package’s root:
 
@@ -157,7 +157,7 @@ Make a directory for your system library target in your package’s root:
 mkdir -p SystemLibraries/CSystemLib
 ```
 
-###### Create the module map file
+#### Create the module map file
 
 Add a `module.modulemap` file in the target directory:
 
@@ -169,7 +169,7 @@ module CSystemLib [system] {
 }
 ```
 
-###### Create a shim header
+#### Create a shim header
 
 Add a shim header that includes the actual system header:
 
@@ -180,7 +180,7 @@ Add a shim header that includes the actual system header:
 
 The shim header allows the compiler to find the actual header through search paths, avoiding hardcoded absolute paths that break portability.
 
-###### Declare the target
+#### Declare the target
 
 Add a system library target to your Package.swift:
 

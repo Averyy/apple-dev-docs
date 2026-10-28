@@ -5,7 +5,7 @@
 
 Enable apps to share keychain items with each other by adding the apps to an access group.
 
-#### Overview
+## Overview
 
 If you develop a family of apps, all of which rely on the same password or cryptographic key, you can use access groups to securely share that password or key among those apps. For example, you can share credentials, so that logging into one of your apps automatically grants the user access to all of your apps. This kind of sharing doesn’t require interaction with or permission from the user, but limits sharing to apps that are delivered by a single development team.
 
@@ -13,7 +13,7 @@ An access group is a logical collection of apps tagged with a particular group n
 
 > ❗ **Important**:  This form of keychain item sharing applies to all iOS keychain items, and to macOS keychain items when you query with the [`kSecUseDataProtectionKeychain`](./ksecusedataprotectionkeychain.md) key, set the item’s [`kSecAttrSynchronizable`](./ksecattrsynchronizable.md) attribute, or both.
 
-##### Set your app’s access groups
+### Set your app’s access groups
 
 You control the groups that your app belongs to by manipulating its entitlements. In particular, an app belongs to all the groups named in a virtual array of strings that the system forms for each app as the concatenation of the following items, evaluated in this order:
 
@@ -23,7 +23,7 @@ You control the groups that your app belongs to by manipulating its entitlements
 
 Xcode handles the application identifier (app ID) for you when you set the bundle ID. You set the others by manipulating capabilities in Xcode.
 
-###### Establish your app’s private access group
+#### Establish your app’s private access group
 
 When you create a new app you assign it a bundle ID, typically using reverse DNS notation, with a string like `com.example.AppOne`. When code signing your app, Xcode automatically prefixes the bundle ID with your team ID — the unique character sequence issued by Apple to each development team — and stores the combined string as the app ID. The system recognizes this app ID as the name of your app’s default keychain access group by including it in your access group array:
 
@@ -41,7 +41,7 @@ As a result, by default, each app’s keychain items remains isolated from all o
 
 ![Diagram showing how keychain items are isolated by default to a single app.](https://developer.apple.com/tutorials/images/com.apple.security/media-2983093@2x.png)
 
-###### Add apps to one or more keychain access groups
+#### Add apps to one or more keychain access groups
 
 When you want two apps to be able to share keychain items, you can add both to the same keychain access group. Do this by enabling the Keychain Sharing capability in Xcode for each app, and adding a common string to the list of keychain groups in each case. Typically, you use the same kind of reverse DNS naming for a keychain group that you use for a bundle ID, so you might choose `com.example.SharedItems`:
 
@@ -67,7 +67,7 @@ In effect, the two apps gain a region of overlap to share items.
 
 Notice that the distinct areas represented by the app IDs are still present, allowing each app to continue to access its own, private items. But both apps now also belong to the shared items group, enabling them to share keychain items. In this way, you can add an app to as many different groups as you like.
 
-###### Use app groups to expand sharing of keychain and non-keychain data
+#### Use app groups to expand sharing of keychain and non-keychain data
 
 When your app belongs to an app group, it can share certain kinds of non-keychain data with other apps in the same group. For example, you can use the [`init(suiteName:)`](../Foundation/userdefaults/init%28suitename%29.md) method to create a new [`UserDefaults`](../Foundation/userdefaults.md) instance that shares the preferences you set among all the apps in the app group. Like keychain access groups, you enable app groups with a capability in Xcode.
 
@@ -87,7 +87,7 @@ This allows it to share keychain items with any app in the App Suite group (dist
 
 Xcode doesn’t prepend the app group with the team identifier. Instead, it guards against the reuse of app group names across teams when you try to add an app group to a provisioning profile.
 
-###### Know the difference between app groups and keychain access groups
+#### Know the difference between app groups and keychain access groups
 
 App groups and keychain access groups aren’t mutually exclusive—you can use both in the same app—but they do differ in several important ways that may help you decide which to use for a given situation.
 
@@ -95,7 +95,7 @@ First, as described above, using an app group enables additional data sharing be
 
 Second, order matters. The system considers the first item in the list of access groups to be the app’s default access group. This is the access group that keychain services assumes if you don’t otherwise specify one when adding keychain items. An app group can’t ever be the default, because the app ID is always present and appears earlier in the list. However, a keychain access group can be the default, because it appears before the app ID. In particular, the first keychain access group, if any, that you specify in the corresponding capability becomes the app’s default access group. If you don’t specify any keychain access groups, then the app ID is the default.
 
-##### Set a keychain item’s access group
+### Set a keychain item’s access group
 
 Unlike apps, which can belong to many access groups, keychain items belong to a single group, identified by the [`kSecAttrAccessGroup`](./ksecattraccessgroup.md) attribute. From the item’s point of view, the world is a collection of disjoint groups, and the item belongs to exactly one of them.
 

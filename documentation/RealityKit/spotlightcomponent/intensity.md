@@ -20,7 +20,7 @@ The intensity of the spotlight measured in lumen.
 var intensity: Float
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `6740.94` lumens.
 

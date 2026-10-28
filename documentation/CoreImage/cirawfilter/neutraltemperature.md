@@ -24,7 +24,7 @@ var neutralTemperature: Float { get set }
 @property (readwrite) float neutralTemperature;
 ```
 
-#### Discussion
+## Discussion
 
 Set this value based on temperature values in the range `2000K...50000K`.
 

@@ -25,7 +25,7 @@ static var isLeapMonth: NSCalendar.Unit { get }
 NSCalendarUnitIsLeapMonth
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is an `NSTimeZone`.
 

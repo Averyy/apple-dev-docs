@@ -21,7 +21,7 @@ var roadFollowingManeuverVariants: [String]? { get set }
 @property (nonatomic, copy, nullable) NSArray<NSString *> * roadFollowingManeuverVariants;
 ```
 
-#### Discussion
+## Discussion
 
 Localize each variant for display to the individual; the array needs to contain at least one variant. The system displays the first variant that fits into the available screen space; arrange the variants in order from most- to least-preferred.
 

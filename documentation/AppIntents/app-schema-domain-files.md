@@ -5,7 +5,7 @@
 
 Make your app’s file-management actions available in the Shortcuts app.
 
-#### Overview
+## Overview
 
 The `.files` domain defines app schemas that provide a structured representation for common file-management actions your app can do. Expose your app’s file-management functionality to the system as actions in the Shortcuts app with the schemas in the `.files` domain. Schemas in this domain don’t make your conforming types discoverable by Apple Intelligence and Siri.
 

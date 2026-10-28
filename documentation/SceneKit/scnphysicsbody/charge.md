@@ -25,7 +25,7 @@ var charge: CGFloat { get set }
 @property (nonatomic) CGFloat charge;
 ```
 
-#### Discussion
+## Discussion
 
 A body’s charge determines its behavior when affected by an electric or magnetic field. Use the [`SCNPhysicsField`](../scnphysicsfield.md) class to add these fields to your scene. Bodies with positive or negative charges behave differently when affected by electric or magnetic fields. The default electric charge on a physics body is `0.0`, causing it to be unaffected by electric and magnetic fields.
 

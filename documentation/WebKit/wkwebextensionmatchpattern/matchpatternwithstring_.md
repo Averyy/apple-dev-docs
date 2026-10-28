@@ -19,7 +19,7 @@ Returns a pattern object for the specified pattern string.
 + (instancetype) matchPatternWithString:(NSString *) string;
 ```
 
-#### Return Value
+## Return Value
 
 Returns `nil` if the pattern string is invalid.
 

@@ -13,11 +13,11 @@ virtual bool attachInterface(
  bool doRegister = true);
 ```
 
-#### Return Value
+## Return Value
 
 Returns `true` on success, `false` otherwise.
 
-#### Overview
+## Overview
 
 This method creates a new network interface object and attaches it as a client of the controller. The `createInterface()` method is used to allocate and to initialize the interface, followed by a call to `configureInterface()` to configure the interface. Subclasses may override those two methods to customize the new interface object. Before this method returns, `registerService()` is called on the interface to start matching, which will ultimately attach the interface to the networking stack. Drivers will typically call this method from their `start()` method after they are ready to process interface requests. This has the desirable effect of preventing the `busyState` at the IOService root from becoming zero before the interface object has completed matching, which then holds off the user process that is waiting for I/O Kit to become quiet before assigning BSD names to all interfaces. Drivers that are unable to trigger interface matching synchronously from their `start()` method should instead call `adjustBusy` to manually increment the `busyState`, then followed by a `busyState` decrement after attaching and registering the interface, or after a reasonable timeout.
 

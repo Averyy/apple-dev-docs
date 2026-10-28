@@ -25,7 +25,7 @@ var networkServiceType: NSURLRequest.NetworkServiceType { get set }
 @property NSURLRequestNetworkServiceType networkServiceType;
 ```
 
-#### Discussion
+## Discussion
 
 To enable Cellular Network Slicing, you need to set the appropriate entitlements and properties.
 

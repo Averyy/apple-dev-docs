@@ -25,7 +25,7 @@ typealias MIDIObjectRef = UInt32
 typedef UInt32 MIDIObjectRef;
 ```
 
-#### Discussion
+## Discussion
 
 MIDI Objects have properties, and often have an owning object, from which they inherit any properties they don’t define themselves.
 

@@ -24,7 +24,7 @@ var prescriptionType: HKVisionPrescriptionType { get }
 @property (nonatomic, assign, readonly) HKVisionPrescriptionType prescriptionType;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains a value that indicates the type of prescription. For a list of possible values, see [`HKVisionPrescriptionType`](../hkvisionprescriptiontype.md).
 

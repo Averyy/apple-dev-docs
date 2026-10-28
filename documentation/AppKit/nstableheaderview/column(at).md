@@ -19,7 +19,7 @@ func column(at point: NSPoint) -> Int
 - (NSInteger) columnAtPoint:(NSPoint) point;
 ```
 
-#### Discussion
+## Discussion
 
 `aPoint` is expressed in the receiver’s coordinate system.
 

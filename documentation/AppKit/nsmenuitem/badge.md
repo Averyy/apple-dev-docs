@@ -20,7 +20,7 @@ var badge: NSMenuItemBadge? { get set }
 @property (copy, nullable) NSMenuItemBadge * badge;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is `nil`.
 

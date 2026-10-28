@@ -22,11 +22,11 @@ nonisolated
 func background(ignoresSafeAreaEdges edges: Edge.Set = .all) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view with the [`background`](../shapestyle/background.md) shape style drawn behind it.
 
-#### Discussion
+## Discussion
 
 This modifier behaves like [`background(_:ignoresSafeAreaEdges:)`](./background%28_,ignoressafeareaedges%29.md), except that it always uses the [`background`](../shapestyle/background.md) shape style. For example, you can add a background to a [`Label`](../label.md):
 

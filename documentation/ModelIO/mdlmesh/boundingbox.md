@@ -24,7 +24,7 @@ var boundingBox: MDLAxisAlignedBoundingBox { get }
 @property (nonatomic, readonly) MDLAxisAlignedBoundingBox boundingBox;
 ```
 
-#### Discussion
+## Discussion
 
 This property’s value is valid only if the mesh contains vertex data for the [`MDLVertexAttributePosition`](../mdlvertexattributeposition.md) attribute. If the mesh does not contain position information, this property’s value is a bounding box whose `maxBounds` coordinate is greater than its `minBounds` coordinate.
 

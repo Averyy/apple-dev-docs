@@ -25,7 +25,7 @@ var BNNSDataLayoutConvolutionWeightsIOHrWr: BNNSDataLayout { get }
 BNNSDataLayoutConvolutionWeightsIOHrWr
 ```
 
-#### Discussion
+## Discussion
 
 The value `(kx, ky, InChannel, OutChannel)` is at index:
 

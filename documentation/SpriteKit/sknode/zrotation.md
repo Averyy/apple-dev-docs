@@ -33,7 +33,7 @@ var zRotation: CGFloat { get set }
 - [Getting Started with Nodes](../getting-started-with-nodes.md)
 - [Making Physics Bodies Move](../making-physics-bodies-move.md)
 
-#### Discussion
+## Discussion
 
 The default value is `0.0`, which indicates no rotation. A positive value indicates a counterclockwise rotation. When the coordinate system is rotated, it affects the node and its descendants. The rotation affects the node’s [`frame`](./frame.md) property, hit testing, rendering, and other similar characteristics.
 

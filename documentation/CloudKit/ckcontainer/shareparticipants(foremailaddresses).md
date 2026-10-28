@@ -21,11 +21,11 @@ Fetches share participants with the specified email addresses and returns them t
 func shareParticipants(forEmailAddresses emails: [String]) async throws -> [String : Result<CKShare.Participant, any Error>]
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary of fetched share participants. The dictionary uses the email addresses you specify in `emails` as its keys. The value of each key is a [`Result`](../../Swift/result.md) that contains either the corresponding fetched share participant, or an error that describes why CloudKit can’t fetch that share participant.
 
-#### Discussion
+## Discussion
 
 CloudKit can translate any valid email address into a share participant. If the email address doesn’t correspond to a known iCloud account, then at share-accept-time, CloudKit offers the accepting participant a vetting process. The accepting participant uses this vetting process to link the email address to an iCloud account.
 

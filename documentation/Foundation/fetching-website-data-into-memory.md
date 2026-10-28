@@ -5,7 +5,7 @@
 
 Receive data directly into memory by creating a data task from a URL session.
 
-#### Overview
+## Overview
 
 For small interactions with remote servers, you can use the [`URLSessionDataTask`](./urlsessiondatatask.md) class to receive response data into memory (as opposed to using the [`URLSessionDownloadTask`](./urlsessiondownloadtask.md) class, which stores the data directly to the file system). A data task is ideal for uses like calling a web service endpoint.
 
@@ -15,7 +15,7 @@ You use a URL session instance to create the task. If your needs are fairly simp
 
 Once you have a session, you create a data task with one of the `dataTask()` methods. Tasks are created in a suspended state, and can be started by calling [`resume()`](./urlsessiontask/resume%28%29.md).
 
-##### Receive results with a completion handler
+### Receive results with a completion handler
 
 The simplest way to fetch data is to create a data task that uses a completion handler. With this arrangement, the task delivers the server’s response, data, and possibly errors to a completion handler block that you provide.  shows the relationship between a session and a task, and how results are delivered to the completion handler.
 
@@ -59,7 +59,7 @@ func startLoad() {
 
 > ❗ **Important**:  The completion handler is called on a different Grand Central Dispatch queue than the one that created the task. Therefore, any work that uses `data` or `error` to update the UI — like updating `webView` — should be explicitly placed on the main queue, as shown here.
 
-##### Receive transfer details and results with a delegate
+### Receive transfer details and results with a delegate
 
 For a greater level of access to the task’s activity as it proceeds, when creating the data task, you can set a delegate on the session, rather than providing a completion handler.  shows this arrangement.
 

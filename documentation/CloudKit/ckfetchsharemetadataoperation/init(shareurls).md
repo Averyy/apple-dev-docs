@@ -25,7 +25,7 @@ convenience init(shareURLs: [URL])
 - (instancetype) initWithShareURLs:(NSArray<NSURL *> *) shareURLs;
 ```
 
-#### Discussion
+## Discussion
 
 After creating the operation, assign a handler to the [`fetchShareMetadataCompletionBlock`](./fetchsharemetadatacompletionblock.md) property to process the results.
 

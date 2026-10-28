@@ -21,7 +21,7 @@ var backingLocation: NSWindow.BackingLocation { get }
 @property (readonly) NSWindowBackingLocation backingLocation;
 ```
 
-#### Discussion
+## Discussion
 
 See [`NSWindow.BackingLocation`](./backinglocation-swift.enum.md) for possible values.
 

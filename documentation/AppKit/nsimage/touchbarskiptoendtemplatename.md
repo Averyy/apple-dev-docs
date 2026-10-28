@@ -22,7 +22,7 @@ class let touchBarSkipToEndTemplateName: String
 extern NSImageName const NSImageNameTouchBarSkipToEndTemplate;
 ```
 
-#### Discussion
+## Discussion
 
 ![Template image for skip to end](https://developer.apple.com/tutorials/images/com.apple.appkit/media-2793528@2x.png)
 

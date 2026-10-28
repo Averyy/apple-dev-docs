@@ -20,7 +20,7 @@ class BEBrowserDataExtension
 @interface BEBrowserDataExtension : BEBrowserData
 ```
 
-#### Overview
+## Overview
 
 This class represents an extension with its identifying metadata, including display name, developer information, and App Store identifier. The identifier allows browsers to help people discover and install equivalent extensions when transferring browsing data.
 

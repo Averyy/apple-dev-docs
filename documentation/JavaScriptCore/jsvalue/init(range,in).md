@@ -22,11 +22,11 @@ init!(range: NSRange, in context: JSContext!)
 + (JSValue *) valueWithRange:(NSRange) range inContext:(JSContext *) context;
 ```
 
-#### Return Value
+## Return Value
 
 A newly allocated JavaScript object containing properties named location and length, with values from the NSRange.
 
-#### Discussion
+## Discussion
 
 Create a JSValue from a NSRange.
 

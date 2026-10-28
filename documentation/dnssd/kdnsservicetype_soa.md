@@ -23,7 +23,7 @@ var kDNSServiceType_SOA: Int { get }
 kDNSServiceType_SOA
 ```
 
-#### Discussion
+## Discussion
 
 Start of authority zone.
 

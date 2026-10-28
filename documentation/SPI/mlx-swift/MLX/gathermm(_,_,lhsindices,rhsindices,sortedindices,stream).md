@@ -17,7 +17,7 @@ Matrix multiplication with matrix-level gather.
 func gatherMM(_ a: MLXArray, _ b: MLXArray, lhsIndices: MLXArray? = nil, rhsIndices: MLXArray? = nil, sortedIndices: Bool = false, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 Performs a gather of the operands with the given indices followed by a (possibly batched) matrix multiplication of two arrays.  This operation is more efficient than explicitly applying a `take` followed by a `matmul`.
 
@@ -27,7 +27,7 @@ For `a` with shape `(A1, A2, ..., AS, M, K)`, `lhsIndices` contains indices from
 
 For `b` with shape `(B1, B2, ..., BS, M, K)`, `rhsIndices` contains indices from the range `[0, B1 * B2 * ... * BS)`
 
-##### See Also
+### See Also
 
 - [Arithmetic](./arithmetic.md)
 - [`matmul(_:_:stream:)`](./matmul%28_,_,stream%29.md)

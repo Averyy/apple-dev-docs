@@ -20,7 +20,7 @@ init(rect: NSRect)
 + (NSValue *) valueWithRect:(NSRect) rect;
 ```
 
-#### Return Value
+## Return Value
 
 A new value object that contains the data in the `rect` structure.
 

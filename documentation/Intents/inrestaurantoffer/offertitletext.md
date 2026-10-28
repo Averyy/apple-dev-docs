@@ -30,7 +30,7 @@ var offerTitleText: String { get set }
 @property (atomic, copy) NSString * offerTitleText;
 ```
 
-#### Discussion
+## Discussion
 
 The string you specify in this property should be brief and communicate the overall intent of the offer. Use the [`offerDetailText`](./offerdetailtext.md) property to communicate the details of the offer.
 

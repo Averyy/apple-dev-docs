@@ -23,7 +23,7 @@ var types: UIUserNotificationType { get }
 @property (nonatomic, readonly) UIUserNotificationType types;
 ```
 
-#### Discussion
+## Discussion
 
 When you create a new settings object, this property contains all of the types you specified. After you register your request with the app, the app provides you with a new settings object that contains only the types that your app is allowed to use.
 

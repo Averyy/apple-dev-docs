@@ -19,11 +19,11 @@ func PMPageFormatCreateWithDataRepresentation(_ data: CFData, _ pageFormat: Unsa
 OSStatus PMPageFormatCreateWithDataRepresentation(CFDataRef data, PMPageFormat  _Nullable *pageFormat);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./core_printing.md#1670007).
 
-#### Discussion
+## Discussion
 
 This function is typically used to convert a data representation stored in a user document back into a page format object. For information about creating a Core Foundation data object from raw data, see `CFData`.
 

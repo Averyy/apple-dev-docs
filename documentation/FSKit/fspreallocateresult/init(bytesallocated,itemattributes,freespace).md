@@ -19,7 +19,7 @@ init?(bytesAllocated: Int, itemAttributes attributes: FSItem.Attributes, freeSpa
 - (instancetype) initWithBytesAllocated:(size_t) bytesAllocated itemAttributes:(FSItemAttributes *) attributes freeSpace:(FSFreeSpace *) freeSpace;
 ```
 
-#### Return Value
+## Return Value
 
 A populated result instance, or `nil` if validation fails.
 

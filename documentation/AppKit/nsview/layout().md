@@ -23,7 +23,7 @@ func layout()
 
 - [Updating views automatically with observation tracking in AppKit](../updating-views-automatically-with-observation-tracking-in-appkit.md)
 
-#### Discussion
+## Discussion
 
 Override this method if your custom view needs to perform custom layout not expressible using the constraint-based layout system. In this case you are responsible for setting [`needsLayout`](./needslayout.md) to [`true`](../../Swift/true.md) when something that impacts your custom layout changes.
 

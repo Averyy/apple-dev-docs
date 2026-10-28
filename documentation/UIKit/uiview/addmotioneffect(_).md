@@ -23,7 +23,7 @@ func addMotionEffect(_ effect: UIMotionEffect)
 - (void) addMotionEffect:(UIMotionEffect *) effect;
 ```
 
-#### Discussion
+## Discussion
 
 The system animates the transition to the motion effect’s values using the present [`UIView`](../uiview.md) animation context. The motion effect’s keyPath/value pairs are applied to the view’s presentation layer.
 

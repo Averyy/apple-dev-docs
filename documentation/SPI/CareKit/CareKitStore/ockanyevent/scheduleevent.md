@@ -17,7 +17,7 @@ The schedule event for this task occurrence.
 let scheduleEvent: OCKScheduleEvent
 ```
 
-#### Discussion
+## Discussion
 
 The event contains information about the start, duration, occurrence number, and schedule element that resulted in this event.
 

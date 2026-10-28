@@ -5,7 +5,7 @@
 
 Identify iOS Mail background traffic and manage its impact on your IMAP server.
 
-#### Overview
+## Overview
 
 To enhance the user experience, iOS Mail downloads a user’s email in the background. As part of a software update, some email data may require re-downloading. Since many devices will update at similar times, iOS Mail introduces a mechanism for IMAP email servers to limit concurrent downloads.
 
@@ -14,7 +14,7 @@ This process involves two main steps:
 1. **Client identification:** [RFC 3501](https://tools.ietf.org/html/rfc3501) IMAP email servers can detect if a connection is for a background download. iOS Mail clients identify themselves to the server using the `ID` command. Starting with iOS 18.5, this command includes an `event` field. This field will indicate if the connection is being used for background downloading.
 2. **Load shedding:** If the server needs to limit its load and the client has been identified as a background download, the server should send a `NO [UNAVAILABLE]` tagged response to the `ID` command. This will result in the background download being postponed, after which the client will retry the download.
 
-#### Identify background traffic from Mail
+## Identify background traffic from Mail
 
 Starting with iOS 18.5, the [RFC 2971](https://tools.ietf.org/html/rfc2971) `ID` command includes an `event` field. The value of this field is either `NIL` or a list of comma-separated identifiers.
 
@@ -64,7 +64,7 @@ S: A1 OK Completed
 
 In this case, the client indicated that it is performing a background download through the `indexer` value of the `event` field.
 
-#### Tell Mail to back off
+## Tell Mail to back off
 
 Since iOS Mail may use an already established connection to perform background activity, iOS Mail might send subsequent `ID` commands with updated `event` fields. These will always contain the full set of fields of the original `ID` command, notably the `name` and `event` field. These subsequent `ID` commands may include switching from non-background to background download.
 
@@ -84,7 +84,7 @@ Here the IMAP email server responds with a tagged response containing `NO` and t
 
 > **Note**: Mail does not include an event field on macOS. It also doesn’t handle load shedding through the `NO [UNAVAILABLE]` server response.
 
-#### Prioritize Mail traffic
+## Prioritize Mail traffic
 
 If the IMAP email server needs to reduce iOS Mail traffic, it should start by shedding traffic identified with `indexer` in the `event` field. This traffic downloads older message content for Apple Intelligence that Mail doesn’t save on the device.
 
@@ -92,7 +92,7 @@ If the server still needs to reduce load, it should next shed traffic identified
 
 The server shouldn’t shed the remaining iOS Mail traffic, which downloads new messages. Doing so would prevent users from receiving new messages.
 
-#### Revision History
+## Revision History
 
 - **2026-08-18** Updated for iOS 27.
 - **2025-05-09** First published.

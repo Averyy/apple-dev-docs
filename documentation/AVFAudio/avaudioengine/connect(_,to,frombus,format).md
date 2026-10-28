@@ -25,7 +25,7 @@ func connect(_ sourceNode: AVAudioNode, to destNodes: [AVAudioConnectionPoint], 
 - (void) connect:(AVAudioNode *) sourceNode toConnectionPoints:(NSArray<AVAudioConnectionPoint *> *) destNodes fromBus:(AVAudioNodeBus) sourceBus format:(AVAudioFormat *) format;
 ```
 
-#### Discussion
+## Discussion
 
 Connections that use this method are either one-to-one or one-to-many.
 

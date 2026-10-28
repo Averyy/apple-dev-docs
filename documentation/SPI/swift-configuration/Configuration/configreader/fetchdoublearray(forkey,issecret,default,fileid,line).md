@@ -24,11 +24,11 @@ Asynchronously fetches a config value for the given config key, with a default f
 func fetchDoubleArray(forKey key: ConfigKey, isSecret: Bool = false, default defaultValue: [Double], fileID: String = #fileID, line: UInt = #line) async throws -> [Double]
 ```
 
-#### Return Value
+## Return Value
 
 The config value if found and convertible, otherwise the default value.
 
-#### Discussion
+## Discussion
 
 Use this method when you need a guaranteed non-nil result from an async provider. If the configuration value is missing, the method returns the default value instead.
 

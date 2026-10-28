@@ -15,11 +15,11 @@ Returns a Boolean value that indicates the box’s acquisition state.
 bool IsAcquired();
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the box is acquired; `false` otherwise.
 
-#### Discussion
+## Discussion
 
 This method synchronizes by using the work queue created by the object.
 

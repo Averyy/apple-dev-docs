@@ -20,7 +20,7 @@ class IOUSBHostIOSource
 @interface IOUSBHostIOSource : NSObject
 ```
 
-#### Overview
+## Overview
 
 Don’t create objects of this class or use this class as a subclass. Instead, use [`copyPipe(withAddress:)`](./iousbhostinterface/copypipe%28withaddress%29.md) and [`copyStream(withStreamID:)`](./iousbhostpipe/copystream%28withstreamid%29.md) when creating an [`IOUSBHostIOSource`](./iousbhostiosource.md).
 

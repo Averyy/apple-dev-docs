@@ -21,7 +21,7 @@ func renewGState()
 - (void) renewGState;
 ```
 
-#### Discussion
+## Discussion
 
 The view’s graphics state object will be regenerated using [`setUpGState()`](./setupgstate%28%29.md) the next time the view is focused for drawing
 

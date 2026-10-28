@@ -19,7 +19,7 @@ readonly MutedStandard: "mutedStandard";
 
 - [MapKit JS 5](../mapkit-js-5.md)
 
-#### Discussion
+## Discussion
 
 In this style, map features are less prominent, which allows user features, such as annotations and overlays, to stand out by comparison.
 

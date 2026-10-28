@@ -21,11 +21,11 @@ func render(atTime time: TimeInterval, arguments: [AnyHashable : Any]!) -> Bool
 - (BOOL) renderAtTime:(NSTimeInterval) time arguments:(NSDictionary *) arguments;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if successful.
 
-#### Discussion
+## Discussion
 
 You need to call this method each time you want to render a frame of the composition.
 

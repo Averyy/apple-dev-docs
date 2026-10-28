@@ -25,7 +25,7 @@ static var authenticatedSignedWrites: CBCharacteristicProperties { get }
 CBCharacteristicPropertyAuthenticatedSignedWrites
 ```
 
-#### Discussion
+## Discussion
 
 If a characteristic has this property set, it returns an error to the central when it fails to write the characteristic’s value.
 

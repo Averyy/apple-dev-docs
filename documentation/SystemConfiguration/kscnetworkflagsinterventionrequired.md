@@ -24,7 +24,7 @@ var kSCNetworkFlagsInterventionRequired: Int { get }
 kSCNetworkFlagsInterventionRequired
 ```
 
-#### Discussion
+## Discussion
 
 In addition, some form of user intervention will be required to establish this connection, such as providing a password, an authentication token, etc.
 

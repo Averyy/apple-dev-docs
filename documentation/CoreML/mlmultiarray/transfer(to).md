@@ -25,7 +25,7 @@ func transfer(to destinationMultiArray: MLMultiArray)
 - (void) transferToMultiArray:(MLMultiArray *) destinationMultiArray;
 ```
 
-#### Discussion
+## Discussion
 
 Numeric data will be up or down casted as needed. It can transfer to a multi-array with different layout (strides).
 

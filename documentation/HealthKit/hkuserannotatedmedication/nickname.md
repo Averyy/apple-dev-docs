@@ -24,7 +24,7 @@ var nickname: String? { get }
 @property (nonatomic, copy, readonly, nullable) NSString * nickname;
 ```
 
-#### Discussion
+## Discussion
 
 This can be edited at any point.
 

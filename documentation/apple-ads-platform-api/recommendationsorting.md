@@ -15,11 +15,11 @@ A sort specification used in a recommendation query request to order results.
 object RecommendationSorting
 ```
 
-#### Discussion
+## Discussion
 
 The `Sorting` specifies one sort dimension in the `sorting` array of a QueryRequest. The `sorting` array supports multiple entries, which the system applies in order. The first entry is the primary sort, the second is the tiebreaker, and so on.
 
-##### Example
+### Example
 
 ```json
 {

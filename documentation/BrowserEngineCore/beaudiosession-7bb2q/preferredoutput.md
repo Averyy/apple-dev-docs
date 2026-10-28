@@ -13,11 +13,11 @@ The output port the person sets as their preference.
 ## Declaration
 
 ```swift
-@objc
-(preferredOutput) var preferredOutput: AVAudioSessionPortDescription? { get }
+@objc(preferredOutput)
+var preferredOutput: AVAudioSessionPortDescription? { get }
 ```
 
-#### Discussion
+## Discussion
 
 The value is `nil` if a person hasn’t set a preference.
 

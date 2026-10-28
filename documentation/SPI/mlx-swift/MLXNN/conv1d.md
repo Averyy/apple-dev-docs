@@ -17,7 +17,7 @@ Applies a 1-dimensional convolution over the multi-channel input sequence.
 class Conv1d
 ```
 
-##### See Also
+### See Also
 
 - [`Conv2d`](./conv2d.md)
 - [`Conv3d`](./conv3d.md)

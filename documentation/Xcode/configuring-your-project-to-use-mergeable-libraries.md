@@ -5,7 +5,7 @@
 
 Use mergeable dynamic libraries to get app launch times similar to static linking in release builds, without losing dynamically linked build times in debug builds.
 
-#### Overview
+## Overview
 
 In Xcode 14 or earlier, you include code from a separate library in your target using static linking or dynamic linking. You link a static library to your app when you build your target, which can increase both your build time and app size. The dynamic loader resolves dynamic symbols in the executable to point to the appropriate addresses in the dynamic libraries when you run your target, which can increase your app launch time.
 
@@ -21,7 +21,7 @@ In release builds, the binary is slightly larger, but avoids the overhead of loa
 
 > **Related sessions from WWDC23**: Session 10268: [Meet mergeable libraries](https://developer.apple.com/videos/play/wwdc2023/10268)
 
-##### Merge libraries automatically in Xcode
+### Merge libraries automatically in Xcode
 
 To automatically merge libraries, first open your project in Xcode 15 or later. Then, add the `MERGED_BINARY_TYPE` build setting to your app target, and set the value to `automatic`. With this build setting, Xcode treats mergeable dependencies like normal dynamic libraries in debug builds, but performs steps in release mode to automatically handle merging for direct dependencies. For more information on the `MERGED_BINARY_TYPE` build setting, see [Create Merged Binary](./build-settings-reference.md#Create-Merged-Binary).
 
@@ -49,7 +49,7 @@ In debug builds:
 - Xcode embeds those target dependency products in either the merged binary product, or into a product containing the merged binary product. Xcode doesn’t include their binaries in the embedded copy (this is the same as the release build behavior).
 - Xcode also copies the target dependency products into a special location in the merged binary product. This special location contains only the binaries of the target dependency products. The merged binary product has an additional `@rpath` that points to the special location.
 
-##### Manually configure merging
+### Manually configure merging
 
 In some cases, you may want to manually configure merging between your app or framework target and dependent libraries. For example, you might not want to automatically merge dependencies that you share between an app and an app extension if you’re concerned about the app extension’s binary size. To set up manual merging, configure your app or framework target, then configure your dependent libraries.
 
@@ -61,7 +61,7 @@ In your app or framework target, add the build setting `MERGED_BINARY_TYPE` and 
 
 For each dependent library that you want to use merging, add the build setting `MERGEABLE_LIBRARY`, and set it to `YES`. For more information on the `MERGEABLE_LIBRARY` build setting, see [Build Mergeable Library](./build-settings-reference.md#Build-Mergeable-Library).
 
-##### Reduce dependencies with a group library
+### Reduce dependencies with a group library
 
 To create a group library that organizes your dependencies in your top level framework or app project:
 
@@ -71,7 +71,7 @@ To create a group library that organizes your dependencies in your top level fra
 - Add your group library as a dependency to your app or framework’s target.
 - Remove the individual libraries that you added to your group library as dependencies from your app or framework’s target.
 
-##### Create a pre-built mergeable library
+### Create a pre-built mergeable library
 
 To create a mergeable library that you can distribute as a binary package rather than as source:
 

@@ -6,7 +6,7 @@
 
 A 32-bit RGBA color that specifies the text’s color, 8 bits each for red, green, blue, and alpha (transparency).
 
-#### Overview
+## Overview
 
 For example, this would be `(0,0,0,255)` for opaque black or `(255,255,255,255)` for opaque white. Dark colors are not recommended, as the text could be placed onto a dark background.
 

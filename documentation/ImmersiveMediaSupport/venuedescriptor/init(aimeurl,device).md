@@ -19,7 +19,7 @@ Creates a venue descriptor instance from an AIME file.
 convenience init(aimeURL: URL, device: (any MTLDevice)? = nil) async throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: This function throws exceptions if the input file doesn’t exist, or contains invalid information.
 

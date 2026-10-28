@@ -19,7 +19,7 @@ The kind for context menu previews.
 static let contextMenuPreview: ContentShapeKinds
 ```
 
-#### Discussion
+## Discussion
 
 When using this kind, only the preview shape will be affected. To control the shape used to hit-test and start the context menu presentation, use the `.interaction` kind.
 

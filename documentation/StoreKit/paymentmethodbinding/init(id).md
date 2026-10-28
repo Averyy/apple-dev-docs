@@ -18,7 +18,7 @@ Creates the payment method binding for eligible apps and users.
 init(id: String) async throws
 ```
 
-#### Discussion
+## Discussion
 
 This method succeeds if the app is entitled to use this API, the `id` is valid and unexpired, and the user is eligible. Otherwise, it throws an error. See [`PaymentMethodBinding.PaymentMethodBindingError`](./paymentmethodbindingerror.md) and [`StoreKitError.userCancelled`](../storekiterror/usercancelled.md) for the error information.
 

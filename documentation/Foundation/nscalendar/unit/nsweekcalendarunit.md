@@ -27,7 +27,7 @@ static var NSWeekCalendarUnit: NSCalendar.Unit { get }
 NSWeekCalendarUnit
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is an `kCFCalendarUnitSecond`. Equal to `kCFCalendarUnitWeek`.
 

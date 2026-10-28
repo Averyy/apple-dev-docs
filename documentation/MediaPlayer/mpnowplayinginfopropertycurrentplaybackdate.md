@@ -25,7 +25,7 @@ let MPNowPlayingInfoPropertyCurrentPlaybackDate: String
 extern NSString * const MPNowPlayingInfoPropertyCurrentPlaybackDate;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is an [`NSDate`](../Foundation/nsdate.md) object.
 

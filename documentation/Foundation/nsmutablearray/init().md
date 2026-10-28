@@ -25,11 +25,11 @@ init()
 - (instancetype) init;
 ```
 
-#### Return Value
+## Return Value
 
 An array.
 
-#### Discussion
+## Discussion
 
 This method is a designated initializer.
 

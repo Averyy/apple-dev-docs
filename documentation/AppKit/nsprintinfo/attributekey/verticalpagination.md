@@ -19,7 +19,7 @@ static let verticalPagination: NSPrintInfo.AttributeKey
 extern NSPrintInfoAttributeKey const NSPrintVerticalPagination;
 ```
 
-#### Discussion
+## Discussion
 
 `NSAutoPagination`, `NSFitPagination`, or `NSClipPagination`. See [`verticalPagination`](../verticalpagination.md) for details.
 

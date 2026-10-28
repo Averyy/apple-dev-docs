@@ -24,7 +24,7 @@ var specularHitDistanceTexture: (any MTLTexture)? { get set }
 @property (nonatomic, retain, nullable) id<MTLTexture> specularHitDistanceTexture;
 ```
 
-#### Discussion
+## Discussion
 
 You are responsible for ensuring the usage and pixel format of the texture you assign to this property matches the texture usage [`specularHitDistanceTextureUsage`](./specularhitdistancetextureusage.md) requests and the pixel format that [`specularHitDistanceTextureFormat`](../mtlfxtemporaldenoisedscalerdescriptor/specularhitdistancetextureformat.md) requests.
 

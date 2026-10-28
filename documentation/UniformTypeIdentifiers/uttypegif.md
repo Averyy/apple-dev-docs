@@ -21,7 +21,7 @@ A type that represents a GIF image.
 extern UTType * const UTTypeGIF;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `com.compuserve.gif`.
 

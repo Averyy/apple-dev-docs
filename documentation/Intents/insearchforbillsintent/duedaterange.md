@@ -34,7 +34,7 @@ var dueDateRange: INDateComponentsRange? { get }
 @property (atomic, copy, readonly, nullable) INDateComponentsRange * dueDateRange;
 ```
 
-#### Discussion
+## Discussion
 
 When performing the search, your results should contain only bills whose due date falls within the specified date range. With no specified date range, you must decide how you want to filter results during your search. You should limit the number of search results in some way. For example, you might return only the currently due bills.
 

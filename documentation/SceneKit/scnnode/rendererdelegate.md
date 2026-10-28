@@ -25,7 +25,7 @@ unowned(unsafe) var rendererDelegate: (any SCNNodeRendererDelegate)? { get set }
 @property (nonatomic, assign, nullable) id<SCNNodeRendererDelegate> rendererDelegate;
 ```
 
-#### Discussion
+## Discussion
 
 A renderer delegate is a custom object you provide. When SceneKit would otherwise render the contents of the node, it instead tells your delegate to draw contents for the node.
 

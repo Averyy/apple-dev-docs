@@ -18,7 +18,7 @@ Validates that a node can be added to the graph without adding it, throwing a de
 final func validateAddingNode(_ node: ShaderGraph.Node) throws
 ```
 
-#### Discussion
+## Discussion
 
 Use [`canAddNode(_:)`](./canaddnode%28_%29.md) instead when only a yes/no answer is needed.
 

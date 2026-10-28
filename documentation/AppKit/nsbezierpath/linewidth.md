@@ -19,7 +19,7 @@ var lineWidth: CGFloat { get set }
 @property CGFloat lineWidth;
 ```
 
-#### Discussion
+## Discussion
 
 The line width defines the thickness of the receiver’s stroked path. A width of 0 is interpreted as the thinnest line that can be rendered on a particular device. The actual rendered line width may vary from the specified width by as much as 2 device pixels, depending on the position of the line with respect to the pixel grid and the current anti-aliasing settings. The width of the line may also be affected by scaling factors specified in the current transformation matrix of the active graphics context.
 

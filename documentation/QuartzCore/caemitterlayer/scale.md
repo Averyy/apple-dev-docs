@@ -24,7 +24,7 @@ var scale: Float { get set }
 @property float scale;
 ```
 
-#### Discussion
+## Discussion
 
 Default value is `1.0`.
 

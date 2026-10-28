@@ -25,7 +25,7 @@ case type42
 kCGFontPostScriptFormatType42
 ```
 
-#### Description
+## Description
 
 This is documented in *Adobe Technical Note 5012, The Type 42 Font Format Specification*, which is available from [http://partners.adobe.com/](http://partners.adobe.com/).
 

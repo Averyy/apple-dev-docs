@@ -23,11 +23,11 @@ func textContainer(forGlyphAt glyphIndex: Int, effectiveRange effectiveGlyphRang
 - (NSTextContainer *) textContainerForGlyphAtIndex:(NSUInteger) glyphIndex effectiveRange:(NSRangePointer) effectiveGlyphRange withoutAdditionalLayout:(BOOL) flag;
 ```
 
-#### Return Value
+## Return Value
 
 The text container in which the glyph at `glyphIndex` is laid out.
 
-#### Discussion
+## Discussion
 
 This method is primarily for use from within `NSTypesetter`, after layout is complete for the range in question, but before the layout manager’s call to `NSTypesetter` has returned. In that case glyph and layout holes have not yet been recalculated, so the layout manager does not yet know that layout is complete for that range, and this variant must be used.
 

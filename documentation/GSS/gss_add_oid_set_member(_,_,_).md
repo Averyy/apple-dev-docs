@@ -23,11 +23,11 @@ func gss_add_oid_set_member(_ minor_status: UnsafeMutablePointer<OM_uint32>, _ m
 OM_uint32 gss_add_oid_set_member(OM_uint32 *minor_status, gss_const_OID member_oid, gss_OID_set*oid_set);
 ```
 
-#### Return Value
+## Return Value
 
 A status code set to [`GSS_S_COMPLETE`](./gss_s_complete.md) on success. See [Function Status](./function-status.md) for a complete enumeration of status outputs.
 
-#### Discussion
+## Discussion
 
 If the OID already exists in the set, there is no action taken. Otherwise, the function adds the OID to the end of the set. Because the function adds the OID doesn’t copy it, the `member_oid` pointer must remain stable while the `oid_set` is in use.
 

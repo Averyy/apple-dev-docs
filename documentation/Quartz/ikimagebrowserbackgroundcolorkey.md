@@ -19,7 +19,7 @@ let IKImageBrowserBackgroundColorKey: String
 extern NSString * const IKImageBrowserBackgroundColorKey;
 ```
 
-#### Discussion
+## Discussion
 
 The associated value is an [`NSColor`](../AppKit/nscolor.md) object.
 

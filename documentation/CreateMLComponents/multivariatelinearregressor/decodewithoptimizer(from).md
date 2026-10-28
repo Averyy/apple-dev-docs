@@ -23,7 +23,7 @@ func decodeWithOptimizer(from decoder: inout any EstimatorDecoder) throws -> Mul
 
 Available when `Scalar` conforms to `MLShapedArrayScalar` and `BinaryFloatingPoint`.
 
-#### Return Value
+## Return Value
 
 The decoded model.
 

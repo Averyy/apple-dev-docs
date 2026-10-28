@@ -19,11 +19,11 @@ Initializes and returns the overlay view and associates it with the specified ov
 - (instancetype) initWithOverlay:(id<MKOverlay>) overlay;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized overlay object.
 
-#### Discussion
+## Discussion
 
 Upon initialization, the frame of the overlay view is set to [`CGRectZero`](../../CoreGraphics/cgrectzero.md). The map view sets the size and position of the view at display time, and you should not change those values yourself.
 

@@ -34,7 +34,7 @@ var minimumDue: INCurrencyAmount? { get set }
 @property (atomic, copy, readwrite, nullable) INCurrencyAmount * minimumDue;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to specify the minimum amount that the payee expects.
 

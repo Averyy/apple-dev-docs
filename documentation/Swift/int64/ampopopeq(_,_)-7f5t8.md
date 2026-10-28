@@ -21,7 +21,7 @@ Calculates the result of shifting a value’s binary representation the specifie
 static func &>>= (lhs: inout Int64, rhs: Int64)
 ```
 
-#### Discussion
+## Discussion
 
 The `&>>=` operator performs a *masking shift*, where the value passed as `rhs` is masked to produce a value in the range `0..<lhs.bitWidth`. The shift is performed using this masked value.
 

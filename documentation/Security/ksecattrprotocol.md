@@ -29,7 +29,7 @@ extern CFStringRef const kSecAttrProtocol;
 
 - [Adding a password to the keychain](./adding-a-password-to-the-keychain.md)
 
-#### Discussion
+## Discussion
 
 The corresponding value is of type [`CFString`](../CoreFoundation/cfstring.md) and denotes the protocol for this item (see [Protocol Values](./item-attribute-keys-and-values.md#Protocol-Values)). Items of class [`kSecClassInternetPassword`](./ksecclassinternetpassword.md) have this attribute.
 

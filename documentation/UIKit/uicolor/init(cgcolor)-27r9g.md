@@ -24,7 +24,7 @@ init(cgColor: CGColor)
 - (UIColor *) initWithCGColor:(CGColorRef) cgColor;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized color object. The color information represented by this object is in the native colorspace of the specified Quartz color.
 

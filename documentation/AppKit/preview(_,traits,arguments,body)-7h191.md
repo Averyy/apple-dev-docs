@@ -12,8 +12,8 @@ Creates a group of previews of an NSViewController.
 ## Declaration
 
 ```swift
-@freestanding
-(declaration) macro Preview<T>(_ name: String? = nil, traits: PreviewTrait<Preview.ViewTraits>..., arguments: [T], @PreviewBodyBuilder<NSViewController> body: @escaping @MainActor (T) -> NSViewController)
+@freestanding(declaration)
+macro Preview<T>(_ name: String? = nil, traits: PreviewTrait<Preview.ViewTraits>..., arguments: [T], @PreviewBodyBuilder<NSViewController> body: @escaping @MainActor (T) -> NSViewController)
 ```
 
 ## Parameters

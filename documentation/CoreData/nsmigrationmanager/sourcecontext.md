@@ -25,7 +25,7 @@ var sourceContext: NSManagedObjectContext { get }
 @property (strong, readonly) NSManagedObjectContext * sourceContext;
 ```
 
-#### Discussion
+## Discussion
 
 This context is created on demand as part of the initialization of the Core Data stacks used for migration.
 

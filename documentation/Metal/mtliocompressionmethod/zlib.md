@@ -24,7 +24,7 @@ case zlib
 MTLIOCompressionMethodZlib
 ```
 
-#### Discussion
+## Discussion
 
 For more information on the zlib codec, see:
 

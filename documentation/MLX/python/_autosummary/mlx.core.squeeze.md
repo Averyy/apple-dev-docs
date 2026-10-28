@@ -6,17 +6,20 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.sq
 
 # mlx.core.squeeze
 
-**squeeze(*a: array*, */*, *axis: None | int | Sequence[int] = None*, ***, *stream: StreamOrDevice = None*) → [array](mlx.core.array.md#mlx.core.array)**
-: Remove length one axes from an array.
+```python
+squeeze(a: array, /, axis: None | int | Sequence[int] = None, *, stream: StreamOrDevice = None) → array
+```
 
-Parameters:
+Remove length one axes from an array.
 
-**a** ([array](mlx.core.array.md#mlx.core.array)) – Input array.
-**axis** ([int](https://docs.python.org/3/builtins/functions.html#int)* or *[tuple](https://docs.python.org/3/builtins/stdtypes.html#tuple)*(*[int](https://docs.python.org/3/builtins/functions.html#int)*)**, **optional*) – Axes to remove. Defaults
+**Parameters:**
+
+- **a** ([array](mlx.core.array.md#mlx.core.array)) – Input array.
+- **axis** ([int](https://docs.python.org/3/builtins/functions.html#int) *or* [tuple](https://docs.python.org/3/builtins/stdtypes.html#tuple)([int](https://docs.python.org/3/builtins/functions.html#int)), *optional*) – Axes to remove. Defaults
 to `None` in which case all size one axes are removed.
 
-Returns:
-The output array with size one axes removed.
+**Returns:**
+: The output array with size one axes removed.
 
-Return type:
-[array](mlx.core.array.md#mlx.core.array)
+**Return type:**
+: [array](mlx.core.array.md#mlx.core.array)

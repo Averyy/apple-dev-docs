@@ -21,7 +21,7 @@ The automatic behavior.
 static var automatic: ScrollBounceBehavior { get }
 ```
 
-#### Discussion
+## Discussion
 
 The scrollable view automatically chooses whether content bounces when people scroll to the end of the view’s content. By default, scrollable views use the [`always`](./always.md) behavior.
 

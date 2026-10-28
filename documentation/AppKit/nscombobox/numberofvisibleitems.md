@@ -19,7 +19,7 @@ var numberOfVisibleItems: Int { get set }
 @property NSInteger numberOfVisibleItems;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to configure how many items can be displayed at the same time. If the combo box has a scroller, the user can scroll to view additional items beyond the visible range.
 

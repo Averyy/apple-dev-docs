@@ -19,7 +19,7 @@ Makes a decision to focus on the detection with the given unique detection.
 init(time: CMTime, detectionGroupID: CNDetectionGroupID, strong isStrong: Bool)
 ```
 
-#### Discussion
+## Discussion
 
 A strong decision keeps focus for as long as possible on the detected subject.
 

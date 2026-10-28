@@ -17,7 +17,7 @@ Options that configure a structure builder.
 typealias ConfigurationOptions = RoomBuilder.ConfigurationOptions
 ```
 
-#### Discussion
+## Discussion
 
 The `options` argument to the [`StructureBuilder`](../structurebuilder.md) initializer [`init(options:)`](./init%28options%29.md) is of this type.
 

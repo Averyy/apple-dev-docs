@@ -22,7 +22,7 @@ let kAudioSession_AudioRouteKey_Inputs: CFString!
 extern CFStringRef const kAudioSession_AudioRouteKey_Inputs;
 ```
 
-#### Discussion
+## Discussion
 
 If there is an audio input available, the array contains a [`CFDictionary`](../CoreFoundation/cfdictionary.md) object with a single key, namely [`kAudioSession_AudioRouteKey_Type`](./kaudiosession_audioroutekey_type.md), whose value is one of the constants in [Audio Input Routes](./audio-input-routes.md).
 

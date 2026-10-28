@@ -29,7 +29,7 @@ optional func resolveRecipient(for intent: INSearchCallHistoryIntent) async -> I
 - (void) resolveRecipientForSearchCallHistory:(INSearchCallHistoryIntent *) intent withCompletion:(void (^)(INPersonResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to verify the identity of any intended contacts in the search parameters. Always strive toward a successful resolution to a specific user, but feel free to ask for confirmation of the selected user if there’s some uncertainty.
 

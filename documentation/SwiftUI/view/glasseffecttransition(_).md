@@ -21,7 +21,7 @@ Associates a glass effect transition with any glass effects defined within this 
 @preconcurrency func glassEffectTransition(_ transition: GlassEffectTransition) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 You use this modifier with the [`glassEffect(_:in:)`](./glasseffect%28_,in%29.md) view modifier and [`GlassEffectContainer`](../glasseffectcontainer.md) view. When used together, SwiftUI will use the provided transition to apply changes to the glass effect when you add or remove views with these effects from the view hierarchy.
 

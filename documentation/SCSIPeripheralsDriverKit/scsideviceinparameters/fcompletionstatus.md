@@ -15,7 +15,7 @@ The status of the task at completion of the call, such as good, busy, or timeout
 SCSITaskStatus fCompletionStatus;
 ```
 
-#### Discussion
+## Discussion
 
 Use the values that [`SCSITaskStatus`](../../iokit/scsitaskstatus.md) defines to evaluate this field.
 

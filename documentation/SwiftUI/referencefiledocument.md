@@ -22,7 +22,7 @@ A type that you use to serialize reference type documents to and from file.
 protocol ReferenceFileDocument : ObservableObject, Sendable
 ```
 
-#### Overview
+## Overview
 
 To store a document as a reference type — like a class — create a type that conforms to the `ReferenceFileDocument` protocol and implement the required methods and properties. Your implementation:
 

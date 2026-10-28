@@ -24,7 +24,7 @@ class VNDetectTextRectanglesRequest
 @interface VNDetectTextRectanglesRequest : VNImageBasedRequest
 ```
 
-#### Overview
+## Overview
 
 This request returns detected text characters as rectangular bounding boxes with origin and size.
 

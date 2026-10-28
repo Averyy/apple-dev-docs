@@ -25,11 +25,11 @@ func path(forResource name: String?, ofType ext: String?, inDirectory subpath: S
 - (NSString *) pathForResource:(NSString *) name ofType:(NSString *) ext inDirectory:(NSString *) subpath;
 ```
 
-#### Return Value
+## Return Value
 
 The full pathname for the resource file, or `nil` if the file could not be located.
 
-#### Discussion
+## Discussion
 
 If `subpath` is `nil`, this method searches the top-level nonlocalized resource directory and the top-level of any language-specific directories. (In macOS, the top-level nonlocalized resource directory is typically called `Resources` but in iOS, it is the main bundle directory.) For example, suppose you have a Mac app with a modern bundle and you specify `@"Documentation"` for the `subpath` parameter. This method would first look in the `Contents/Resources/Documentation` directory of the bundle, followed by the `Documentation` subdirectories of each language-specific `.lproj` directory.
 

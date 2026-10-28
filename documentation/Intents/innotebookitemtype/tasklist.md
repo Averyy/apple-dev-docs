@@ -25,7 +25,7 @@ case taskList
 INNotebookItemTypeTaskList
 ```
 
-#### Discussion
+## Discussion
 
 Search your app’s task lists and return each one using an [`INTaskList`](../intasklist.md) object. Task lists are a way of grouping related tasks together.
 

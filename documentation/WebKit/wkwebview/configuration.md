@@ -24,7 +24,7 @@ var configuration: WKWebViewConfiguration { get }
 @property (nonatomic, copy, readonly) WKWebViewConfiguration * configuration;
 ```
 
-#### Discussion
+## Discussion
 
 Use the object in this property to obtain information about your web view’s configuration. Because this property returns a copy of the configuration object, changes you make to that object don’t affect the web view’s configuration.
 

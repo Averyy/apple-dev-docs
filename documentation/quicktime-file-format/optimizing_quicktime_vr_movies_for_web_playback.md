@@ -4,7 +4,7 @@
 
 Prevent having to download an entire movie before starting playback.
 
-#### Overview
+## Overview
 
 Originally, both QuickTime movies and QuickTime VR movies had to be completely downloaded to the user’s local hard disk before they could be viewed. Starting with QuickTime 2.5, if the movie data is properly laid out in the file, standard linear QuickTime movies can be viewed almost immediately. The frames that have been downloaded so far are shown while subsequent frames continue to be downloaded.
 

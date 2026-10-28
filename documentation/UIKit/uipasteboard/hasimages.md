@@ -22,7 +22,7 @@ var hasImages: Bool { get }
 @property (nonatomic, readonly) BOOL hasImages;
 ```
 
-#### Discussion
+## Discussion
 
 Employ this property to determine if a pasteboard contains image data.
 

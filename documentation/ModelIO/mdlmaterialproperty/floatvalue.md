@@ -24,7 +24,7 @@ var floatValue: Float { get set }
 @property (nonatomic, assign) float floatValue;
 ```
 
-#### Discussion
+## Discussion
 
 Scalar values are appropriate for some semantics, such as the [`MDLMaterialSemantic.specularTint`](../mdlmaterialsemantic/speculartint.md) semantic (which controls the balance between material and light colors in specular highlighting). Providing a float value for the material property applies that value for all pixels rendered using the material; to provide variation in the semantic’s value across a surface, use a grayscale texture image instead.
 

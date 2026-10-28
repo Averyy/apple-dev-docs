@@ -5,7 +5,7 @@
 
 Provide a color and blend factor to additively color your sprite.
 
-#### Overview
+## Overview
 
 You can use the [`color`](./skspritenode/color.md) and [`colorBlendFactor`](./skspritenode/colorblendfactor.md) properties to colorize the texture applied to a sprite node. The color blend factor defaults to `0.0`, which indicates that the texture should be used unmodified. As you increase this number, more of the texture color is replaced with the blended color. For example, when a monster in your game takes damage, you might want to add a red tint to the character. The following code shows how you would apply a tint to the sprite.
 

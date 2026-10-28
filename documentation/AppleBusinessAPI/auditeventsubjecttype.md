@@ -27,7 +27,7 @@ string AuditEventSubjectType
 - `DOMAIN`
 - `API_USER`
 
-#### Discussion
+## Discussion
 
 - Possible Values
 

@@ -21,7 +21,7 @@ Calls the given closure with an archive byte stream instance mapped to an object
 static func withStream<C, E>(wrapping instance: C, _ body: (ArchiveByteStream) throws -> E) throws -> E where C : AnyObject, C : ArchiveByteStreamProtocol
 ```
 
-#### Return Value
+## Return Value
 
 The result of the closure.
 

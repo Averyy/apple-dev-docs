@@ -15,7 +15,7 @@ The OSSynchronizeIO routine ensures orderly load and store operations to noncach
 void OSSynchronizeIO(void);
 ```
 
-#### Discussion
+## Discussion
 
 The OSSynchronizeIO routine ensures orderly load and store operations to noncached memory mapped I/O devices. It executes the eieio instruction on PowerPC processors.
 

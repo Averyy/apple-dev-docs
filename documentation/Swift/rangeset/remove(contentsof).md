@@ -21,7 +21,7 @@ Removes the given range from the range set.
 mutating func remove(contentsOf range: Range<Bound>)
 ```
 
-#### Discussion
+## Discussion
 
 > **Complexity**: O(*n*), where *n* is the number of ranges in the range set.
 

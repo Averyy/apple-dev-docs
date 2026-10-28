@@ -25,11 +25,11 @@ func range(of searchString: String, options mask: NSString.CompareOptions = []) 
 - (NSRange) rangeOfString:(NSString *) searchString options:(NSStringCompareOptions) mask;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSRange` structure giving the location and length in the receiver of the first occurrence of
 
-#### Discussion
+## Discussion
 
 `searchString`,
 
@@ -39,7 +39,7 @@ modulo the options in `mask`. Returns `{``NSNotFound``, 0}` if
 
 is not found or is empty (`""`).
 
-#### Discussion
+## Discussion
 
 Invokes [`range(of:options:range:)`](./range%28of,options,range%29.md) with the options specified by `mask` and the entire extent of the receiver as the range.
 

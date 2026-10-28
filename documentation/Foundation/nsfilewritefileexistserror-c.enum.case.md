@@ -21,7 +21,7 @@ Could not perform an operation because the destination file already exists.
 NSFileWriteFileExistsError
 ```
 
-#### Discussion
+## Discussion
 
 This error can be produced by the [`FileManager`](./filemanager.md) class’s copy, move, and link methods
 

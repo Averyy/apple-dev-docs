@@ -29,7 +29,7 @@ class PDFAnnotation
 - [Adding Custom Graphics to a PDF](./adding-custom-graphics-to-a-pdf.md)
 - [Adding Widgets to a PDF Document](./adding-widgets-to-a-pdf-document.md)
 
-#### Overview
+## Overview
 
 In addition to its primary textual content, a PDF file can contain annotations that represent links, form elements, highlighting circles, textual notes, and so on. Each annotation has a specific location on a page and may offer interactivity with the user.
 

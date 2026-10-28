@@ -25,7 +25,7 @@ struct SCNMatrix4
 typedef struct SCNMatrix4 { ... } SCNMatrix4;
 ```
 
-#### Overview
+## Overview
 
 SceneKit uses matrices to represent coordinate space transformations, which in turn can represent the combined position, rotation or orientation, and scale of an object in three-dimensional space.
 

@@ -24,7 +24,7 @@ dictionary ApplePayPayment {
 
 - [Setting up the payment request API to accept Apple Pay](./setting-up-the-payment-request-api-to-accept-apple-pay.md)
 
-#### Overview
+## Overview
 
 Data in [`ApplePayPaymentToken`](./applepaypaymenttoken.md) is encrypted. Billing and shipping contact data are not encrypted.
 

@@ -22,7 +22,7 @@ typealias CGDisplayCount = UInt32
 typedef uint32_t CGDisplayCount;
 ```
 
-#### Discussion
+## Discussion
 
 Quartz uses `CGDisplayCount` to represent a count of either the current or the maximum number of displays in a display list. For example, see the function [`CGGetActiveDisplayList(_:_:_:)`](./cggetactivedisplaylist%28_,_,_%29.md).
 

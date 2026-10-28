@@ -18,7 +18,7 @@ The names of the bundle’s icon image files.
 - **Name**: `CFBundleIconFiles` (Icon files)
 - **Type**: array of string 
 
-#### Discussion
+## Discussion
 
 > **Note**:  For Action extensions, you can specify the [`CFBundleSymbolName`](./cfbundleicons/cfbundleprimaryicon/cfbundlesymbolname.md) key instead of `CFBundleIconFiles` to use a symbol from SF Symbols.
 

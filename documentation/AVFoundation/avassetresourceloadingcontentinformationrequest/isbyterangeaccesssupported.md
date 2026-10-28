@@ -24,7 +24,7 @@ var isByteRangeAccessSupported: Bool { get set }
 @property (nonatomic, getter=isByteRangeAccessSupported) BOOL byteRangeAccessSupported;
 ```
 
-#### Discussion
+## Discussion
 
 Before finishing loading an [`AVAssetResourceLoadingRequest`](../avassetresourceloadingrequest.md) instance, if its [`contentInformationRequest`](../avassetresourceloadingrequest/contentinformationrequest.md) property is not `nil`, set the value of this property to [`true`](../../Swift/true.md) if it supports random access to arbitrary ranges of bytes of the resource.
 

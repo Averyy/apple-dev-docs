@@ -6,7 +6,7 @@
 
 The default correction mode for panoramic nodes.
 
-#### Overview
+## Overview
 
 This can be either `kQTVRNoCorrection`, `kQTVRPartialCorrection`, or `kQTVRFullCorrection`.
 

@@ -20,7 +20,7 @@ func drawOSC(withWidth width: Int, height: Int, activePart: Int, destinationImag
 - (void) drawOSCWithWidth:(NSInteger) width height:(NSInteger) height activePart:(NSInteger) activePart destinationImage:(FxImageTile *) destinationImage atTime:(CMTime) time;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called when the host application wants you to draw your onscreen controls. You should draw them into the destination image. The `activePart` parameter tells which part of the control is currently selected so you can draw that control with proper highlighting.
 

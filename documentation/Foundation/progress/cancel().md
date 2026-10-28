@@ -25,7 +25,7 @@ func cancel()
 - (void) cancel;
 ```
 
-#### Discussion
+## Discussion
 
 This method invokes the block for [`cancellationHandler`](./cancellationhandler.md), if there is one, and ensures that any subsequent reads of the [`isCancelled`](./iscancelled.md) property return [`true`](../../Swift/true.md).
 

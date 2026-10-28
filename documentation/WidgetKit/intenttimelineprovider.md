@@ -24,7 +24,7 @@ protocol IntentTimelineProvider
 
 - [Increasing the visibility of widgets in Smart Stacks](./widget-suggestions-in-smart-stacks.md)
 
-#### Overview
+## Overview
 
 An Intent timeline provider performs the same function as [`TimelineProvider`](./timelineprovider.md), but it also incorporates user-configured details into timeline entries.
 

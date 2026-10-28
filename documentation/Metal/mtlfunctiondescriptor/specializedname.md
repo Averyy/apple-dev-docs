@@ -24,7 +24,7 @@ var specializedName: String? { get set }
 @property (nonatomic, copy, nullable) NSString * specializedName;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `nil`. If you specify a value for this property, Metal creates the new [`MTLFunction`](../mtlfunction.md) object with the new name. Use this property if you want to specialize a function with multiple variants and give each a distinct name.
 

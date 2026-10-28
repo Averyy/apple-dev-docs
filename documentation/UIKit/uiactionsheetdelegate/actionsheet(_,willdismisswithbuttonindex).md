@@ -23,7 +23,7 @@ optional func actionSheet(_ actionSheet: UIActionSheet, willDismissWithButtonInd
 - (void) actionSheet:(UIActionSheet *) actionSheet willDismissWithButtonIndex:(NSInteger) buttonIndex;
 ```
 
-#### Discussion
+## Discussion
 
 This method is invoked before the animation begins and the view is hidden.
 

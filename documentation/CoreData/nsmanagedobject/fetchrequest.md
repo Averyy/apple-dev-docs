@@ -21,7 +21,7 @@ Returns an initialized fetch request with the entity this subclass represents.
 + (NSFetchRequest *) fetchRequest;
 ```
 
-#### Discussion
+## Discussion
 
 This method is only legal to call on subclasses of `NSManagedObject` that represent a single entity in the model.
 

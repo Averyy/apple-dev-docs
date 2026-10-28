@@ -21,7 +21,7 @@ var showsAddButtonWhenEditing: Bool { get set }
 @property (assign) BOOL showsAddButtonWhenEditing;
 ```
 
-#### Discussion
+## Discussion
 
 If users click the Add (+) button while in editing mode, the button’s action send the [`widgetListPerformAddAction(_:)`](../ncwidgetlistviewdelegate/widgetlistperformaddaction%28_%29.md) message to the [`delegate`](./delegate.md).
 

@@ -25,7 +25,7 @@ var postScriptName: CFString? { get }
 extern CFStringRefCGFontCopyPostScriptName(CGFontRef font);
 ```
 
-#### Discussion
+## Discussion
 
 For more information on PostScript format, see *Adobe Type 1 Font Format*, which is available from [http://partners.adobe.com/](http://partners.adobe.com/).
 

@@ -21,7 +21,7 @@ Adds a constructed string to the receiver.
 - (void) appendFormat:(NSString *) format;
 ```
 
-#### Discussion
+## Discussion
 
 Pass a comma-separated list of trailing variadic arguments to substitute into `format`.
 

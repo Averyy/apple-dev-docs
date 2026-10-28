@@ -25,7 +25,7 @@ class SCNIKConstraint
 @interface SCNIKConstraint : SCNConstraint
 ```
 
-#### Overview
+## Overview
 
 ![](https://developer.apple.com/tutorials/images/com.apple.scenekit/media-2929777@2x.png)
 

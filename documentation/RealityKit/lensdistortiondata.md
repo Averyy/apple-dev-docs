@@ -18,7 +18,7 @@ A description of estimated lens distortion that can be used to rectify images.
 struct LensDistortionData
 ```
 
-#### Overview
+## Overview
 
 See also: `AVCameraCalibrationData`
 

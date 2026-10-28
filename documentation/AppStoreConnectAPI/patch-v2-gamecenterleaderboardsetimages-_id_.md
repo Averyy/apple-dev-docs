@@ -9,7 +9,7 @@ Update a specific Game Center leaderboard set image.
 **Availability**:
 - App Store Connect API 3.6+
 
-#### Overview
+## Overview
 
 - id:
 - 200:

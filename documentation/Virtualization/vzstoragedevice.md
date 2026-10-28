@@ -19,7 +19,7 @@ class VZStorageDevice
 @interface VZStorageDevice : NSObject
 ```
 
-#### Overview
+## Overview
 
 Don’t create a `VZStorageDevice` directly. Use one of its subclasses, such as [`VZUSBMassStorageDevice`](./vzusbmassstoragedevice.md), instead.
 

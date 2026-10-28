@@ -23,7 +23,7 @@ var bluetoothIdentifier: UUID? { get set }
 @property (nonatomic, strong, readwrite, nullable) NSUUID * bluetoothIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 An extension may set this property to the Bluetooth identifier of a discovered [`CBPeripheral`](../../CoreBluetooth/cbperipheral.md).
 

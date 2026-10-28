@@ -21,7 +21,7 @@ Produces the next element in the drop-while sequence.
 mutating func next() async rethrows -> Base.Element?
 ```
 
-#### Discussion
+## Discussion
 
 This iterator calls `next()` on its base iterator and evaluates the result with the `predicate` closure. As long as the predicate returns `true`, this method returns `nil`. After the predicate returns `false`, for a value received from the base iterator, this method returns that value. After that, the iterator returns values received from its base iterator as-is, and never executes the predicate closure again.
 

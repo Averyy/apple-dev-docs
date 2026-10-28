@@ -21,7 +21,7 @@ The system can’t complete the requested operation because one or more paramete
 static var invalidParameter: GKError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 For example, this error code may be returned if your application attempts to post a score and provides a category string that does not match a category you configured for your leaderboards in App Store Connect.
 

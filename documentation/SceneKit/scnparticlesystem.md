@@ -25,11 +25,11 @@ class SCNParticleSystem
 @interface SCNParticleSystem : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use particle systems to create effects such as smoke, rain, confetti, and fireworks.
 
-##### How Particle Systems Work
+### How Particle Systems Work
 
 Unlike SceneKit nodes and geometries, individual particles are not objects in a scene graph. Because a particle system can involve dozens or hundreds of particles, SceneKit uses a more efficient internal representation that stores and processes the data for all of a system’s particles in bulk.
 
@@ -56,7 +56,7 @@ Use the [`handle(_:forProperties:handler:)`](./scnparticlesystem/handle%28_,forp
 
 Use the methods listed in Modifying Particles Over Time to manage blocks that SceneKit calls for every rendered frame. Your block can modify particle properties in bulk, allowing you to change particle behavior precisely, but at a high risk to rendering performance.
 
-##### Use the Xcode Particle System Editor to Experiment with Particle Systems
+### Use the Xcode Particle System Editor to Experiment with Particle Systems
 
 In most cases, you don’t need to configure a particle system directly in your app or game. Instead, you use Xcode to configure a particle system’s properties. As you change the behavior of the particle system, Xcode immediately provides an updated visual effect. When complete, Xcode archives the configured system into a file, which you can then include with your project’s bundle resources. Then, at runtime, your game uses this archive to instantiate a new particle system.
 

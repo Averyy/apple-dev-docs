@@ -23,7 +23,7 @@ func scrollToRow(at indexPath: IndexPath, at scrollPosition: UITableView.ScrollP
 - (void) scrollToRowAtIndexPath:(NSIndexPath *) indexPath atScrollPosition:(UITableViewScrollPosition) scrollPosition animated:(BOOL) animated;
 ```
 
-#### Discussion
+## Discussion
 
 Invoking this method doesn’t cause the delegate to receive a [`scrollViewDidScroll(_:)`](../uiscrollviewdelegate/scrollviewdidscroll%28_%29.md) message, as is normal for programmatically invoked user interface operations.
 

@@ -15,7 +15,7 @@ The character shape attribute.
 extern NSAttributedStringKey NSCharacterShapeAttributeName;
 ```
 
-#### Discussion
+## Discussion
 
 An integer value. The value is interpreted as Apple Type Services `kCharacterShapeType selector + 1`.
 

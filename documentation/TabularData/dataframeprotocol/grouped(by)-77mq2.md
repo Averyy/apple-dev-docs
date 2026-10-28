@@ -21,7 +21,7 @@ Creates a grouping of rows that the method selects by choosing unique values in 
 func grouped<GroupingKey>(by columnID: ColumnID<GroupingKey>) -> RowGrouping<GroupingKey> where GroupingKey : Hashable
 ```
 
-#### Return Value
+## Return Value
 
 A collection of groups.
 

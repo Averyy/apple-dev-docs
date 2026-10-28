@@ -32,7 +32,7 @@ var contextPresentationLatency: TimeInterval { get set }
 @property (atomic) NSTimeInterval contextPresentationLatency;
 ```
 
-#### Discussion
+## Discussion
 
 A host may set this property to describe the presentation latency, in seconds, of its input and/or output audio data. A value of `0` means either no latency or unknown latency.
 

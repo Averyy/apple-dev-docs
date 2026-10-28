@@ -25,7 +25,7 @@ var secondaryGroupingSize: Int { get set }
 @property NSUInteger secondaryGroupingSize;
 ```
 
-#### Discussion
+## Discussion
 
 Some locales allow the specification of another grouping size for larger numbers. For example, some locales may represent a number such as 61, 242, 378.46 (as in the United States) as 6,12,42,378.46. In this case, the secondary grouping size (covering the groups of digits furthest from the decimal point) is 2.
 

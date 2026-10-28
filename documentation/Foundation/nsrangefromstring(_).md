@@ -25,7 +25,7 @@ func NSRangeFromString(_ aString: String) -> NSRange
 extern NSRange NSRangeFromString(NSString *aString);
 ```
 
-#### Discussion
+## Discussion
 
 Scans `aString` for two integers which are used as the location and length values, in that order, to create an `NSRange` struct. If `aString` only contains a single integer, it is used as the location value. If `aString` does not contain any integers, this function returns an `NSRange` struct whose location and length values are both 0.
 

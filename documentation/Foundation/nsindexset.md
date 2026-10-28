@@ -25,7 +25,7 @@ class NSIndexSet
 @interface NSIndexSet : NSObject
 ```
 
-#### Overview
+## Overview
 
 In Swift, this type bridges to [`IndexSet`](./indexset.md); use [`NSIndexSet`](./nsindexset.md) when you need reference semantics or other Foundation-specific behavior.
 

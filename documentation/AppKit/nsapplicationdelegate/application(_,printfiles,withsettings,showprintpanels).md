@@ -20,11 +20,11 @@ optional func application(_ application: NSApplication, printFiles fileNames: [S
 - (NSApplicationPrintReply) application:(NSApplication *) application printFiles:(NSArray<NSString *> *) fileNames withSettings:(NSDictionary<NSString *,id> *) printSettings showPrintPanels:(BOOL) showPrintPanels;
 ```
 
-#### Return Value
+## Return Value
 
 A constant indicating whether printing was successful. For a list of possible values, see [`NSApplication.PrintReply`](../nsapplication/printreply.md).
 
-#### Discussion
+## Discussion
 
 Return `NSPrintingReplyLater` if the result of printing cannot be returned immediately, for example, if printing will cause the presentation of a sheet. If your method returns `NSPrintingReplyLater` it must always invoke the `NSApplication` method [`reply(toOpenOrPrint:)`](../nsapplication/reply%28toopenorprint%29.md)] when the entire print operation has been completed, successfully or not.
 

@@ -5,7 +5,7 @@
 
 Access file-system resources using the security-scoped bookmark data.
 
-#### Overview
+## Overview
 
 Follow these steps to use a security-scoped bookmark in a sandboxed application:
 

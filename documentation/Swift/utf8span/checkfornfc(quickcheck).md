@@ -21,7 +21,7 @@ Do a scan checking for whether the contents are in Normal Form C. When the conte
 mutating func checkForNFC(quickCheck: Bool) -> Bool
 ```
 
-#### Discussion
+## Discussion
 
 `quickCheck` will check for a subset of NFC contents using the NFCQuickCheck algorithm, which is faster than the full normalization algorithm. However, it cannot detect all NFC contents.
 

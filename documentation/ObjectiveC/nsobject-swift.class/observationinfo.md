@@ -25,11 +25,11 @@ var observationInfo: UnsafeMutableRawPointer? { get set }
 @property (nullable) void * observationInfo;
 ```
 
-#### Return Value
+## Return Value
 
 A pointer that identifies information about all of the observers that are registered with the observed object, the options that were used at registration-time, and so on.
 
-#### Discussion
+## Discussion
 
 The default implementation of this method retrieves the information from a global dictionary of observed objects keyed by memory addresses.
 

@@ -16,7 +16,7 @@ Enters fullscreen mode.
 void webkitEnterFullscreen();
 ```
 
-#### Discussion
+## Discussion
 
 This method throws an exception if the element is not allowed to enter fullscreen—that is, if [`webkitSupportsFullscreen`](./api-1628805-webkitsupportsfullscreen.md) is `false`.
 

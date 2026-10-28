@@ -6,7 +6,7 @@
 
 The number of frames into which the panoramic image is diced vertically.
 
-#### Overview
+## Overview
 
 The height of each frame (which is `imageSizeY/imageNumFramesY`) should be divisible by 4.
 

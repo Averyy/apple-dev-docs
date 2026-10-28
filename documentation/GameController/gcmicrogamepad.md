@@ -24,7 +24,7 @@ class GCMicroGamepad
 @interface GCMicroGamepad : GCPhysicalInputProfile
 ```
 
-#### Overview
+## Overview
 
 The micro gamepad controller profile supports the following input elements:
 

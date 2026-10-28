@@ -20,11 +20,11 @@ func IOUSBGetSuperSpeedDeviceCapabilityDescriptor(_ bosDescriptor: UnsafePointer
 const IOUSBDeviceCapabilitySuperSpeedUSB *IOUSBGetSuperSpeedDeviceCapabilityDescriptor(const IOUSBBOSDescriptor *bosDescriptor);
 ```
 
-#### Return Value
+## Return Value
 
 A SuperSpeed capability pointer, or `nil` if no matching descriptor returns.
 
-#### Discussion
+## Discussion
 
 This method uses [`IOUSBGetNextCapabilityDescriptorWithType(_:_:_:)`](./iousbgetnextcapabilitydescriptorwithtype%28_,_,_%29.md) to find the first SuperSpeed capability descriptor.
 

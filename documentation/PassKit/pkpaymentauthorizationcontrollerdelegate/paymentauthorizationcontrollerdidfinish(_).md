@@ -26,7 +26,7 @@ func paymentAuthorizationControllerDidFinish(_ controller: PKPaymentAuthorizatio
 - (void) paymentAuthorizationControllerDidFinish:(PKPaymentAuthorizationController *) controller;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to dismiss the payment authorization controller and update any other app state.
 

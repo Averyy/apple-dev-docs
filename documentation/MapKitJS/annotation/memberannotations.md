@@ -15,7 +15,7 @@ An array of annotations that the framework groups together in a cluster.
 get memberAnnotations(): Annotation[] | null;
 ```
 
-#### Discussion
+## Discussion
 
 The [`memberAnnotations`](./memberannotations.md) array contains all of the annotations that MapKit JS groups together in a cluster. This is a flat array. If there are multiple clusters of annotations, this array contains all of the individual annotations within those clusters; it doesn’t contain any cluster annotations.
 

@@ -21,7 +21,7 @@ The kind of DataFrame to convert for JSON serialization.
 enum DataFrameKind
 ```
 
-#### Overview
+## Overview
 
 ```swift
 let kind: EvaluationResult.DataFrameKind = .summary

@@ -20,7 +20,7 @@ func durationTimeOfInput(toFilter duration: UnsafeMutablePointer<CMTime>!)
 - (void) durationTimeOfInputToFilter:(CMTime *) duration;
 ```
 
-#### Discussion
+## Discussion
 
 In Motion, the value represents the duration of the object to which the user applies the effect, after retiming and trimming. In other words, this value is the duration of the visible frames.
 

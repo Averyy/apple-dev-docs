@@ -5,7 +5,7 @@
 
 Bundle executable or shareable code into a standalone Swift package.
 
-#### Overview
+## Overview
 
 Swift packages are reusable components of Swift, Objective-C, Objective-C++, C, or C++ code. They can bundle resources, vend their code as binaries, or depend on other packages. Use Swift packages to bundle executable code, for example a script, as an *executable product*, or create a package to vend shareable code as a *library product*. Packages that vend a library product help promote modularity in your code, make it easy to share code with others, and enable other developers to add functionality to their apps.
 
@@ -13,7 +13,7 @@ With Xcode, you can create a new Swift package, add code, resource files, and bi
 
 ![Flowchart showing the development lifecycle for a Swift package.](https://developer.apple.com/tutorials/images/com.apple.Xcode/creating-a-swift-package-with-xcode-1@2x.png)
 
-##### Create a Swift package
+### Create a Swift package
 
 To create a new Swift package, open Xcode and select File > New > Package. Choose a name and select a file location. Select “Create Git repository on my Mac” to put your package under version control. On completion, the Swift package opens in Xcode and looks similar to a standard Xcode project. Xcode generates all necessary files and folders as it creates a Swift package:
 
@@ -24,7 +24,7 @@ To create a new Swift package, open Xcode and select File > New > Package. Choos
 
 ![Screenshot showing a newly created standalone Swift package named ExamplePackage. The Editor area shows the package’s manifest file while the Navigator area shows the package’s contents and the Utilities area displays the information about the package manifest.](https://developer.apple.com/tutorials/images/com.apple.Xcode/creating-a-swift-package-with-xcode-2@2x.png)
 
-##### Configure your Swift package
+### Configure your Swift package
 
 Swift packages don’t use `.xcodeproj` or `.xcworkspace` but rely on their folder structure and use the package manifest for additional configuration. The following code listing shows a simple package manifest. It declares the MyLibrary target, and vends it as a library product with the same name.
 
@@ -88,7 +88,7 @@ To learn more about the `PackageDescription` framework, see [`Package`](../Packa
 
 > **Note**: Xcode provides code completion when you edit the package manifest.
 
-##### Add your code
+### Add your code
 
 Per convention, source files reside in a subfolder of the package’s `Sources` directory that has the same name as the target they belong to. Note how the package manifest above declares the `MyLibrary` target. Its source files reside in `Sources/MyLibrary` while source files for tests reside in `Tests/MyLibraryTests`. You can use additional subfolders to structure them. Per default, Xcode includes all valid source files inside a target’s folder. If you prefer to declare included source files explicitly, pass them using the [`sources`](../PackageDescription/target/sources.md) parameter when you initialize the [`Target`](../PackageDescription/target.md). You can also pass paths to directories.
 
@@ -96,7 +96,7 @@ Per convention, source files reside in a subfolder of the package’s `Sources` 
 
 To add source files to a Swift package, use workflows that you already know. For example, you can add a source file to a package by dragging it into the Project navigator, or by using the File > Add Files to *[packageName]* menu. Targets can contain Swift, Objective-C/C++, or C/C++ code, but an individual target can’t mix Swift with C-family languages. For example, a Swift package can have two targets, one that contains Objective-C, Objective-C++, and C code, and a second one that contains Swift code.
 
-##### Add a dependency on another Swift package
+### Add a dependency on another Swift package
 
 Just like apps, Swift packages can have *package dependencies*. To declare a dependency on a remote package, use one of the functions that take the URL of the remote package as a parameter. To add a local package as a dependency, use one of the functions that take a path to the local package as a parameter. The following code snipped shows both options:
 
@@ -109,15 +109,15 @@ dependencies: [
 
 See [`Package.Dependency`](../PackageDescription/package/dependency.md) for all possible ways to declare a package dependency. When you add the dependency, you can use its vended product as a [`Target.Dependency`](../PackageDescription/target/dependency.md) or make it a part of your package’s [`Product`](../PackageDescription/product.md).
 
-##### Distribute binaries as a Swift package
+### Distribute binaries as a Swift package
 
 Instead of distributing a Swift package that vends source files, you can choose to distribute binaries instead. For example, creators of proprietary closed-source libraries often make them available as binaries. See [Distributing binary frameworks as Swift packages](./distributing-binary-frameworks-as-swift-packages.md) to learn more.
 
-##### Add package resources
+### Add package resources
 
 Declare a Swift tools version of 5.3 or later in your manifest file to add asset files as package resources to your Swift package. For example, Swift packages can contain user interface components that use asset catalogs, storyboards, `.strings` files, and so on. See [Bundling resources with a Swift package](./bundling-resources-with-a-swift-package.md) to learn more.
 
-##### Make your Swift package cross-platform compatible
+### Make your Swift package cross-platform compatible
 
 While Swift packages are platform-independent by nature and include, for example, Linux as a target platform, Swift packages can be platform-specific. Use conditional compilation blocks to handle platform-specific code and achieve cross-platform compatibility. The following example shows how to use conditional compilation blocks:
 
@@ -189,7 +189,7 @@ let package = Package(
 
 > 💡 **Tip**: If you plan to publish a Swift package that doesn’t support all platforms, consider mentioning the supported platforms in your `README.md` file. In addition, think about adding support for other platforms to grow its audience.
 
-##### Build your targets and run unit tests
+### Build your targets and run unit tests
 
 Xcode creates a scheme for each product in the package manifest. Select a scheme for the package’s build-and-run destination, and build it as you’d build an app target. Each source target usually has at least one corresponding test target. If your package contains multiple products, Xcode creates an additional scheme with the name *[packageName]*-Package to build all targets and run all unit tests.
 

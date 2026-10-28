@@ -18,7 +18,7 @@ Remove an item from the checklist.
 @MainActor func removeItem(at index: Int, animated: Bool) -> OCKChecklistItemButton?
 ```
 
-#### Return Value
+## Return Value
 
 The item that was removed from the checklist.
 

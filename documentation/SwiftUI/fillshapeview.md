@@ -22,7 +22,7 @@ A shape provider that fills its shape.
 nonisolated struct FillShapeView<Content, Style, Background> where Content : Shape, Style : ShapeStyle, Background : View
 ```
 
-#### Overview
+## Overview
 
 You do not create this type directly, it is the return type of `Shape.fill`.
 

@@ -24,11 +24,11 @@ class func success(with resolvedRelativeReference: INRelativeReference) -> Self
 + (instancetype) successWithResolvedRelativeReference:(INRelativeReference) resolvedRelativeReference;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INRelativeReferenceResolutionResult`](../inrelativereferenceresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method to create a result object when you’re able to modify a setting by selecting the next or previous option.
 

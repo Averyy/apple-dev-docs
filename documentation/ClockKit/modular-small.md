@@ -5,7 +5,7 @@
 
 Display content in the smaller spaces of the Modular watch face.
 
-#### Overview
+## Overview
 
 Modular small templates display two stacked rows of content, an icon and content, a circular graph, or a single larger item on the Modular watch face.
 

@@ -16,7 +16,7 @@ An error that occurs when the converter determines that it is unable to convert 
 static var conversionNotPossibleError: AMError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 This error isn’t displayed to the user.
 

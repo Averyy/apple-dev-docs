@@ -25,7 +25,7 @@ struct GenericContent
 
 - [Publishing media sessions](./publishing-media-sessions.md)
 
-#### Overview
+## Overview
 
 Use this type when the media doesn’t fit into other specific content types such as [`MusicContent`](./musiccontent.md), [`PodcastContent`](./podcastcontent.md), [`MovieContent`](./moviecontent.md), or [`TVShowContent`](./tvshowcontent.md). This provides maximum flexibility for custom media types.
 

@@ -26,7 +26,7 @@ init(tags: Set<String>, bundle: Bundle)
 - (instancetype) initWithTags:(NSSet<NSString *> *) tags bundle:(NSBundle *) bundle;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized resource request.
 

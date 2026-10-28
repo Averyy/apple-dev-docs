@@ -21,11 +21,11 @@ func partitioned(_ array: MLXArray, kth: Int, axis: Int, stream: StreamOrDevice 
 
 - [Converting From Python](./converting-python.md)
 
-#### Discussion
+## Discussion
 
 The ordering of the elements in partitions is undefined.
 
-##### See Also
+### See Also
 
 - [Sorting](./sorting.md)
 - [`partitioned(_:kth:stream:)`](./partitioned%28_,kth,stream%29.md)

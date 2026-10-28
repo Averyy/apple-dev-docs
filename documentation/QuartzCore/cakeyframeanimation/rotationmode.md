@@ -24,7 +24,7 @@ var rotationMode: CAAnimationRotationMode? { get set }
 @property (copy, nullable) CAAnimationRotationMode rotationMode;
 ```
 
-#### Discussion
+## Discussion
 
 The possible values for this property are described in [Rotation Mode Values](../rotation-mode-values.md). The default value of this property is `nil`, which indicates that objects should not rotate to follow the path.
 

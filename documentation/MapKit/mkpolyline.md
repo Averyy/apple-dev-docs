@@ -25,7 +25,7 @@ class MKPolyline
 @interface MKPolyline : MKMultiPoint
 ```
 
-#### Overview
+## Overview
 
 The points connect end-to-end in the order that you provide them. The first and last points don’t automatically connect to each other.
 

@@ -20,11 +20,11 @@ Calculates the bounding box around the characters in the range of a string.
 func boundingBox(for range: Range<String.Index>) -> RectangleObservation?
 ```
 
-#### Return Value
+## Return Value
 
 The bounding box surrounding the characters recognized in the image.
 
-#### Discussion
+## Discussion
 
 Bounding boxes aren’t always an exact fit around the characters. Use them to display in user interfaces to provide general guidance, but avoid using their contents for image processing.
 

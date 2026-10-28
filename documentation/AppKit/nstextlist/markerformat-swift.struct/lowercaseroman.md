@@ -19,7 +19,7 @@ static let lowercaseRoman: NSTextList.MarkerFormat
 extern NSTextListMarkerFormat const NSTextListMarkerLowercaseRoman;
 ```
 
-#### Discussion
+## Discussion
 
 Lowercase Roman numeral markers follow the pattern i, ii, iii, iv, and so on.
 

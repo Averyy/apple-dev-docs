@@ -24,7 +24,7 @@ func JSGlobalContextIsInspectable(_ ctx: JSGlobalContextRef!) -> Bool
 bool JSGlobalContextIsInspectable(JSGlobalContextRef ctx);
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that indicates whether the JavaScript context is inspectable.
 

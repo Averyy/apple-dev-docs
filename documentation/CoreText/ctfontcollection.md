@@ -25,7 +25,7 @@ class CTFontCollection
 typedef const struct __CTFontCollection * CTFontCollectionRef;
 ```
 
-#### Overview
+## Overview
 
 A font collection represents a group of font descriptors taken together as a single object.
 

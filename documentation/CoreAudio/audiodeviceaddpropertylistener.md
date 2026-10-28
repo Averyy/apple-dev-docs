@@ -14,11 +14,11 @@
 extern OSStatus AudioDeviceAddPropertyListener(AudioDeviceID inDevice, UInt32 inChannel, Boolean isInput, AudioDevicePropertyID inPropertyID, AudioDevicePropertyListenerProc inProc, void *inClientData);
 ```
 
-#### Return Value
+## Return Value
 
 An OSStatus indicating success or failure.
 
-#### Discussion
+## Discussion
 
 Registers the given AudioDevicePropertyListenerProc to receive notifications when the given property changes.
 

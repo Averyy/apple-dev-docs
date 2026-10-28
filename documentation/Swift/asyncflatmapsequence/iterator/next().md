@@ -21,7 +21,7 @@ Produces the next element in the flat map sequence.
 mutating func next() async rethrows -> SegmentOfResult.Element?
 ```
 
-#### Discussion
+## Discussion
 
 This iterator calls `next()` on its base iterator; if this call returns `nil`, `next()` returns `nil`. Otherwise, `next()` calls the transforming closure on the received element, takes the resulting asynchronous sequence, and creates an asynchronous iterator from it. `next()` then consumes values from this iterator until it terminates. At this point, `next()` is ready to receive the next value from the base sequence.
 

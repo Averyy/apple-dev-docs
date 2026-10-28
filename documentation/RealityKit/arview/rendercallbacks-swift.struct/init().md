@@ -19,7 +19,7 @@ Creates a new object.
 init()
 ```
 
-#### Discussion
+## Discussion
 
 When you create a new [`ARView`](../../arview.md), it automatically creates an [`ARView.RenderCallbacks`](../rendercallbacks-swift.struct.md) object and assigns it to the [`renderCallbacks`](../rendercallbacks-swift.property.md) property. Your code won’t usually need to create [`ARView.RenderCallbacks`](../rendercallbacks-swift.struct.md) objects.
 

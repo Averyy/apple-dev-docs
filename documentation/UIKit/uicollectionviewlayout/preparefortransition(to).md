@@ -23,7 +23,7 @@ func prepareForTransition(to newLayout: UICollectionViewLayout)
 - (void) prepareForTransitionToLayout:(UICollectionViewLayout *) newLayout;
 ```
 
-#### Discussion
+## Discussion
 
 Prior to performing a layout transition, the collection view calls this method so that your layout object can perform any initial calculations needed to generate layout attributes.
 

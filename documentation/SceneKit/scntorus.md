@@ -25,7 +25,7 @@ class SCNTorus
 @interface SCNTorus : SCNGeometry
 ```
 
-#### Overview
+## Overview
 
 ![](https://developer.apple.com/tutorials/images/com.apple.scenekit/media-2929816@2x.png)
 

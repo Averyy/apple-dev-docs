@@ -24,7 +24,7 @@ func IOSurfaceCopyValue(_ buffer: IOSurfaceRef, _ key: CFString) -> CFTypeRef?
 CFTypeRefIOSurfaceCopyValue(IOSurfaceRef buffer, CFStringRef key);
 ```
 
-#### Discussion
+## Discussion
 
 This call lets you attach CF property list types to an IOSurface buffer. This call is expensive (it must essentially serialize the data into the kernel) and thus should be avoided whenever possible.
 

@@ -19,11 +19,11 @@ func isEqual(to network: CWNetwork) -> Bool
 - (BOOL) isEqualToNetwork:(CWNetwork *) network;
 ```
 
-#### Return Value
+## Return Value
 
 *YES* if the objects are equal.
 
-#### Discussion
+## Discussion
 
 Two CWNetwork objects are considered equal if their corresponding *ssidData*, *securityType*, and *networkType* properties are equal.
 

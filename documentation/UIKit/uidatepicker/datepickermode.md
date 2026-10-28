@@ -22,7 +22,7 @@ var datePickerMode: UIDatePicker.Mode { get set }
 @property (nonatomic) UIDatePickerMode datePickerMode;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to change the type of information displayed by the date picker. It determines whether the date picker allows selection of a date, a time, both date and time, or a countdown time. The default mode is [`UIDatePicker.Mode.dateAndTime`](./mode/dateandtime.md). See [`UIDatePicker.Mode`](./mode.md) for a list of mode constants.
 

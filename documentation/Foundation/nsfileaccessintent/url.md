@@ -25,7 +25,7 @@ var url: URL { get }
 @property (copy, readonly) NSURL * URL;
 ```
 
-#### Discussion
+## Discussion
 
 Always use the URL returned by this property inside the accessor block of a file coordinator’s [`coordinate(with:queue:byAccessor:)`](../nsfilecoordinator/coordinate%28with,queue,byaccessor%29.md) method. This property’s value may be different from the original URL, because the item was either moved or renamed while the file coordinator waited for access.
 

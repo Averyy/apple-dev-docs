@@ -24,7 +24,7 @@ convenience init(hierarchicalColor: UIColor)
 + (instancetype) configurationWithHierarchicalColor:(UIColor *) hierarchicalColor;
 ```
 
-#### Discussion
+## Discussion
 
 When you create an image with this configuration, the system generates a color scheme according to the color you specify, creating secondary and tertiary colors by reducing the intensity of the base color. Typically, the system generates the secondary and tertiary colors by reducing the opacity of the primary color, but it may perform additional color adjustments.
 

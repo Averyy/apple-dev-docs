@@ -21,11 +21,11 @@ Creates the expression with the specified expression arguments.
 + (NSExpression *) expressionWithFormat:(NSString *) expressionFormat;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized `NSExpression` object with the specified format.
 
-#### Discussion
+## Discussion
 
 After `expressionFormat`, pass a comma-separated list of arguments to substitute into format as variadic arguments. The list is terminated by `nil`.
 

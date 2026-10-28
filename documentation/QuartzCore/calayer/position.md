@@ -24,7 +24,7 @@ var position: CGPoint { get set }
 @property CGPoint position;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is specified in points and is always specified relative to the value in the [`anchorPoint`](./anchorpoint.md) property. For new standalone layers, the default position is set to (0.0, 0.0). Changing the [`frame`](./frame.md) property also updates the value in this property.
 

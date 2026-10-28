@@ -13,7 +13,7 @@
 kSBCModePageCaching_WCE_Bit = 2
 ```
 
-#### Discussion
+## Discussion
 
 WCE Bit definition.
 

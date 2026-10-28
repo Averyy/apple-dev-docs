@@ -16,7 +16,7 @@ The error code the framework returns after an unknown error occurs.
 case unknown
 ```
 
-#### Discussion
+## Discussion
 
 The framework returned an unknown error.
 

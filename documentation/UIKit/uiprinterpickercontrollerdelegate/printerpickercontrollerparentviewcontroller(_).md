@@ -22,11 +22,11 @@ optional func printerPickerControllerParentViewController(_ printerPickerControl
 - (UIViewController *) printerPickerControllerParentViewController:(UIPrinterPickerController *) printerPickerController;
 ```
 
-#### Return Value
+## Return Value
 
 A view controller from your app’s interface.
 
-#### Discussion
+## Discussion
 
 Use this method when you want the printer picker controller to be presented from a specific view controller in your app’s interface. When you specify a navigation controller as the parent, UIKit pushes the printer picker onto your navigation stack. For other types of view controllers, UIKit presents the picker interface from the view controller you specify.
 

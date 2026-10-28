@@ -24,7 +24,7 @@ static let LANG1: GCKeyCode
 extern const GCKeyCode GCKeyCodeLANG1;
 ```
 
-#### Discussion
+## Discussion
 
 For Japanese, this is the code for the Kana switch (かな) key on the Apple keyboard. On Korean keyboards, this is the code for the Hangul to English toggle key.
 

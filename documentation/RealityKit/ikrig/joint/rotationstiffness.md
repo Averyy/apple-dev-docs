@@ -20,7 +20,7 @@ The per-axis rotational stiffness of the joint.
 var rotationStiffness: SIMD3<Float>
 ```
 
-#### Discussion
+## Discussion
 
 A joint with higher stiffness rotates less to reach demands.
 

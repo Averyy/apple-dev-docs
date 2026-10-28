@@ -18,7 +18,7 @@ An image’s EXIF metadata.
 var metadata: [String : Any] { get set }
 ```
 
-#### Discussion
+## Discussion
 
 You can provide EXIF metadata captured by your digital camera to assist in the object-creation process. During object creation, RealityKit can use data from the EXIF keys listed below.
 

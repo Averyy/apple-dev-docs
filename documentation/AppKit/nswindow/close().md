@@ -19,7 +19,7 @@ func close()
 - (void) close;
 ```
 
-#### Discussion
+## Discussion
 
 If the window is set to be released when closed, a `release` message is sent to the object after the current event is completed. For an `NSWindow` object, the default is to be released on closing, while for an [`NSPanel`](../nspanel.md) object, the default is not to be released. You can use the [`isReleasedWhenClosed`](./isreleasedwhenclosed.md) property to change the default behavior.
 

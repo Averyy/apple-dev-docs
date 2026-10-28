@@ -17,7 +17,7 @@ Performs a countdown for the alarm with the specified ID if it’s currently ale
 func countdown(id: Alarm.ID) throws
 ```
 
-#### Discussion
+## Discussion
 
 The function throws otherwise. This is identical to the repeat function of a timer, or the snooze function of an alarm.
 

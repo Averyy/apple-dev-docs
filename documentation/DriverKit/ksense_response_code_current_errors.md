@@ -16,7 +16,7 @@
 kSENSE_RESPONSE_CODE_Current_Errors
 ```
 
-#### Discussion
+## Discussion
 
 Response code indicating current errors are reported.
 

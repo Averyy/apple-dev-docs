@@ -15,7 +15,7 @@ A Boolean value indicating whether the item has explicit lyrics.
 attribute Boolean isExplicit;
 ```
 
-#### Discussion
+## Discussion
 
 This property is ignored if the `MediaItem` object type is `video`.
 

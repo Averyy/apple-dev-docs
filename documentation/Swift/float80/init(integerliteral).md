@@ -15,7 +15,7 @@ Creates an instance initialized to the specified integer value.
 init(integerLiteral value: Int64)
 ```
 
-#### Discussion
+## Discussion
 
 Do not call this initializer directly. Instead, initialize a variable or constant using an integer literal. For example:
 

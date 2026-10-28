@@ -25,7 +25,7 @@ let kCLLocationCoordinate2DInvalid: CLLocationCoordinate2D
 extern const CLLocationCoordinate2D kCLLocationCoordinate2DInvalid;
 ```
 
-#### Discussion
+## Discussion
 
 Use this constant when you want to indicate that a coordinate is invalid.
 

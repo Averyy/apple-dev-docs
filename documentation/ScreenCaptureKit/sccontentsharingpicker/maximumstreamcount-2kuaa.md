@@ -16,7 +16,7 @@ The maximum number of streams the content capture picker allows.
 var maximumStreamCount: Int? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `1`.
 

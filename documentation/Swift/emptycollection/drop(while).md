@@ -21,7 +21,7 @@ Returns a subsequence by skipping elements while `predicate` returns `true` and 
 func drop(while predicate: (Self.Element) throws -> Bool) rethrows -> Self.SubSequence
 ```
 
-#### Discussion
+## Discussion
 
 > **Complexity**: O(*n*), where *n* is the length of the collection.
 

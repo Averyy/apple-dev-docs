@@ -23,7 +23,7 @@ class UIDocumentBrowserTransitionController
 @interface UIDocumentBrowserTransitionController : NSObject
 ```
 
-#### Overview
+## Overview
 
 Each transition controller is associated with a document in the document browser. The transition controller can provide two separate animation sequences for this document:
 

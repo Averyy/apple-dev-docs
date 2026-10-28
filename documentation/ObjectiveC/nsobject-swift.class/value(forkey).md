@@ -25,11 +25,11 @@ func value(forKey key: String) -> Any?
 - (id) valueForKey:(NSString *) key;
 ```
 
-#### Return Value
+## Return Value
 
 The value for the property identified by `key`.
 
-#### Discussion
+## Discussion
 
 The search pattern that `valueForKey:` uses to find the correct value to return is described in [Accessor Search Patterns](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/KeyValueCoding/SearchImplementation.html#//apple_ref/doc/uid/20000955) in [Key-Value Coding Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/KeyValueCoding/index.html#//apple_ref/doc/uid/10000107i).
 

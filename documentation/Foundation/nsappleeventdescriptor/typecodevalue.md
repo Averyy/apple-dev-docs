@@ -20,7 +20,7 @@ var typeCodeValue: OSType { get }
 @property (readonly) OSType typeCodeValue;
 ```
 
-#### Discussion
+## Discussion
 
 The contents of the descriptor, as a type, or 0 if an error occurs.
 

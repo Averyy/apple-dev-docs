@@ -18,7 +18,7 @@ A search toolbar behavior that prefers rendering a search field as a button-like
 static var minimize: SearchToolbarBehavior { get }
 ```
 
-#### Discussion
+## Discussion
 
 The search field is expanded when interacted with, such as when tapped.
 

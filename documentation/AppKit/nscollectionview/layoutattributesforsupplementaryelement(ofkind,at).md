@@ -19,11 +19,11 @@ func layoutAttributesForSupplementaryElement(ofKind kind: NSCollectionView.Suppl
 - (NSCollectionViewLayoutAttributes *) layoutAttributesForSupplementaryElementOfKind:(NSCollectionViewSupplementaryElementKind) kind atIndexPath:(NSIndexPath *) indexPath;
 ```
 
-#### Return Value
+## Return Value
 
 The layout attributes of the supplementary view or `nil` if no item exists at the specified path.
 
-#### Discussion
+## Discussion
 
 This method updates the layout information as needed before returning the specified attributes. Always use this method to retrieve the layout attributes for supplementary views in the collection view. Do not query the layout object directly.
 

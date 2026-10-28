@@ -19,7 +19,7 @@ class NSFont
 @interface NSFont : NSObject
 ```
 
-#### Overview
+## Overview
 
 [`NSFont`](./nsfont.md) objects represent fonts to an app, providing access to characteristics of the font and assistance in laying out glyphs relative to one another. Font objects are also used to establish the current font for drawing text directly into a graphics context, using the [`set()`](./nsfont/set%28%29.md) method.
 

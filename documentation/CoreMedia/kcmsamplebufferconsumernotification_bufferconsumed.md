@@ -25,7 +25,7 @@ let kCMSampleBufferConsumerNotification_BufferConsumed: CFString
 extern CFStringRef const kCMSampleBufferConsumerNotification_BufferConsumed;
 ```
 
-#### Discussion
+## Discussion
 
 If a sample buffer has a value for the [`kCMSampleBufferAttachmentKey_PostNotificationWhenConsumed`](./kcmsamplebufferattachmentkey_postnotificationwhenconsumed.md) attachment, an object that consumes the sample buffer should post this notification with itself as the notifying object and the attachment value as the `userInfo` dictionary.
 

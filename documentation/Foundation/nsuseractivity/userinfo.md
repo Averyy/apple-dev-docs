@@ -29,7 +29,7 @@ var userInfo: [AnyHashable : Any]? { get set }
 
 - [Implementing Handoff in Your App](../implementing-handoff-in-your-app.md)
 
-#### Discussion
+## Discussion
 
 Each key and value must be of the following types: [`NSArray`](../nsarray.md), [`NSData`](../nsdata.md), [`NSDate`](../nsdate.md), [`NSDictionary`](../nsdictionary.md), [`NSNull`](../nsnull.md), [`NSNumber`](../nsnumber.md), [`NSSet`](../nsset.md), [`NSString`](../nsstring.md), or [`NSURL`](../nsurl.md). The system may translate file scheme URLs that refer to iCloud documents to valid file URLs on a continuing device.
 

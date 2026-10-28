@@ -22,7 +22,7 @@ Creates an instance of [`BalancedNavigationSplitViewStyle`](../balancednavigatio
 @preconcurrency init()
 ```
 
-#### Discussion
+## Discussion
 
 You can also use [`balanced`](../navigationsplitviewstyle/balanced.md) to construct this style.
 

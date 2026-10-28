@@ -25,7 +25,7 @@ func hasItemsConforming(to contentTypes: [UTType]) -> Bool
 func hasItemsConforming(to types: [String]) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 Whether at least one item conforms to one of `contentTypes`.
 

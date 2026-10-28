@@ -24,11 +24,11 @@ class func success(with resolvedMediaDestination: INMediaDestination) -> Self
 + (instancetype) successWithResolvedMediaDestination:(INMediaDestination *) resolvedMediaDestination;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INMediaDestinationResolutionResult`](../inmediadestinationresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method to create a result object when you’re able to add a media item to the specified destination.
 

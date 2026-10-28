@@ -24,7 +24,7 @@ case discreteEquivalentContinuousLevel
 HKQuantityAggregationStyleDiscreteEquivalentContinuousLevel
 ```
 
-#### Discussion
+## Discussion
 
 For more information on sound level meters, see IEC 61672-1.
 

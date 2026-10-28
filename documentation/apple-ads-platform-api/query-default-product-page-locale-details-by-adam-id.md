@@ -9,7 +9,7 @@ Returns the default product page locale details for an app identified by its ada
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Discussion
+## Discussion
 
 The default product page is the app’s main App Store listing, the page all users see unless directed to a custom product page. This endpoint returns its localized content for an app identified by `adamId`, using the same structure as [`Query Product Page Locale Details`](./query-product-page-locale-details.md), so you don’t need a `productPageId`.
 
@@ -26,7 +26,7 @@ Keep the following constraints in mind when querying default locale details:
 
 See [`QueryFilterOperator`](./queryfilteroperator.md) for the full set of supported comparison operators.
 
-##### Filterable Fields
+### Filterable Fields
 
 | Field | Type | Operators | Sortable | Description |
 | --- | --- | --- | --- | --- |
@@ -34,9 +34,9 @@ See [`QueryFilterOperator`](./queryfilteroperator.md) for the full set of suppor
 
 The `adamId` field identifies the app via the URL path (`/v1/apps/{adamId}/locale-details/query`), not a request body filter. The request body is a [`QueryRequest`](./queryrequest.md) composed of [`QueryFilter`](./queryfilter.md) conditions and [`QuerySort`](./querysort.md) directives ([`QuerySortOrder`](./querysortorder.md)), controlled by [`QueryPagination`](./querypagination.md).
 
-#### Payload Examples
+## Payload Examples
 
-##### Request
+### Request
 
 Returns the default product page locale details for an app identified by its `adamId`. The default product page represents the app’s main App Store listing: the page that all users see unless directed to a custom product page.
 
@@ -44,7 +44,7 @@ Returns the default product page locale details for an app identified by its `ad
 POST /v1/apps/123456789/locale-details/query
 ```
 
-##### Response
+### Response
 
 ```json
 {

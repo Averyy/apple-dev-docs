@@ -16,7 +16,7 @@ Provides the top-level entry point for an app.
 @preconcurrency static func main()
 ```
 
-#### Discussion
+## Discussion
 
 [`WKApplicationDelegate`](../wkapplicationdelegate.md) provides an implementation of the [`main()`](./main%28%29.md) method that serves as the main entry point for your watchOS app. The system calls the [`main()`](./main%28%29.md) method to launch your app; you never call it yourself. Your app can have exactly one entry point, which you mark with the `@main` attribute.
 

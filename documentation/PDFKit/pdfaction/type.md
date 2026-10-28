@@ -24,11 +24,11 @@ var type: String { get }
 @property (nonatomic, readonly) NSString * type;
 ```
 
-#### Return Value
+## Return Value
 
 The type of the PDF action.
 
-#### Discussion
+## Discussion
 
 The PDF action type returned by this method may not correspond precisely to the name of a `PDFAction` subclass. For example, a `PDFActionURL` object might return “URI” or “Launch,” depending on the original action as defined by the Adobe PDF Specification. In the PDF Kit, these two actions are handled in the single `PDFActionURL` subclass, and the more familiar term “URL” is used instead.
 

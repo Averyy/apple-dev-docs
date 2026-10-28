@@ -29,7 +29,7 @@ func loadPreviewImage(options: [AnyHashable : Any]! = [:]) async throws -> any N
 - (void) loadPreviewImageWithOptions:(NSDictionary *) options completionHandler:(NSItemProviderCompletionHandler) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 To handle image preview yourself, provide a completion handler block that returns an [`NSData`](../nsdata.md) or [`NSURL`](../nsurl.md) object, or an instance of a platform-specific image class ([`UIImage`](../../UIKit/uiimage.md) or [`NSImage`](../../AppKit/nsimage.md)).
 

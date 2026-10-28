@@ -20,7 +20,7 @@ A mode that restarts the animation after it completes.
 case `repeat`
 ```
 
-#### Discussion
+## Discussion
 
 This mode restores the animated property to its initial value each time it restarts. For example, a [`FromToByAnimation`](../fromtobyanimation.md) with [`fromValue`](../fromtobyanimation/fromvalue-umpp.md) `=` `1.0`, [`toValue`](../fromtobyanimation/tovalue-4m4pm.md) `=` `2.0` and [`repeatMode`](../fromtobyanimation/repeatmode.md) set to this property repeats as, `1.0`, `2.0`, `1.0`, `2.0`, `1.0`, `2.0` and so on.
 

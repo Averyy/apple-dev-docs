@@ -26,7 +26,7 @@ var userRecordID: CKRecord.ID? { get }
 @property (copy, readonly, nullable) CKRecordID * userRecordID;
 ```
 
-#### Discussion
+## Discussion
 
 Use this value to retrieve the user record for the user identity. The user record doesn’t contain any personal information about the user, by default. You can add data to the user record, but you shouldn’t add anything sensitive.
 

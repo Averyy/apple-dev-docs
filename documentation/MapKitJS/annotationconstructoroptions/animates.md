@@ -15,7 +15,7 @@ A Boolean value that determines whether the map animates the annotation.
 animates?: boolean;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `true`.
 

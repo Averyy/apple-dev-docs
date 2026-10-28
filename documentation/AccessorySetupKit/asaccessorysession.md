@@ -24,7 +24,7 @@ class ASAccessorySession
 
 - [Discovering and configuring accessories](./discovering-and-configuring-accessories.md)
 
-#### Overview
+## Overview
 
 Use an instance of `ASAccessorySession` to interact with the AccessorySetupKit framework.
 

@@ -21,7 +21,7 @@ The stored `Header` instance.
 final var header: Header
 ```
 
-#### Discussion
+## Discussion
 
 During instance creation, in particular during `ManagedBuffer.create`’s call to initialize, `ManagedBuffer`’s `header` property is as-yet uninitialized, and therefore reading the `header` property during `ManagedBuffer.create` is undefined.
 

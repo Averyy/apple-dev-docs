@@ -23,7 +23,7 @@ func register(_ image: UIImage, with traitCollection: UITraitCollection)
 - (void) registerImage:(UIImage *) image withTraitCollection:(UITraitCollection *) traitCollection;
 ```
 
-#### Discussion
+## Discussion
 
 Each image in an image asset must have a unique set of traits. If the asset already contains a registered image with the equivalent traits, it replaces that image with the one in the `image` parameter.
 

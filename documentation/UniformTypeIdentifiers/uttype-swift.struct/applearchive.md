@@ -21,7 +21,7 @@ A type that represents an Apple archive of files and directories.
 static var appleArchive: UTType { get }
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `com.apple.archive`.
 

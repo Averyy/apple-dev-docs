@@ -23,7 +23,7 @@ convenience init(sequenceLength: Int, featureChannelCount: Int, batchSize: Int)
 + (instancetype) tensorWithSequenceLength:(NSUInteger) sequenceLength featureChannelCount:(NSUInteger) featureChannelCount batchSize:(NSUInteger) batchSize;
 ```
 
-#### Discussion
+## Discussion
 
 The tensor data type is [`MLCDataType.float32`](../mlcdatatype/float32.md). This tensor is typically used by a recurrent layer.
 

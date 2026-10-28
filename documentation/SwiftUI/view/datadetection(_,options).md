@@ -19,7 +19,7 @@ nonisolated
 func dataDetection(_ types: DataDetector.MatchType = .all, options: DataDetector.Options = .init()) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view with modified text attributes when matches are detected
 

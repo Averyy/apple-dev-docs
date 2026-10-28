@@ -15,7 +15,7 @@ Posted when the displayed property in the record list is changed.
 extern NSString * const ABPeoplePickerDisplayedPropertyDidChangeNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The system posts this notification on the main actor.
 

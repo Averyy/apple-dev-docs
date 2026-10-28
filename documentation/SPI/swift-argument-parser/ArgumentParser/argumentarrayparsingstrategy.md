@@ -46,11 +46,11 @@ struct ArgumentArrayParsingStrategy
 ### Array Arguments
 - [init<T>(parsing: ArgumentArrayParsingStrategy, help: ArgumentHelp?, completion: CompletionKind?)](./argument/init%28parsing,help,completion%29.md)
   Creates a property with no default value that reads an array from zero or more arguments.
-- [init<T>(parsing: ArgumentArrayParsingStrategy, help: ArgumentHelp?, completion: CompletionKind?, transform: (String) throws -> T)](./argument/init%28parsing,help,completion,transform%29.md)
+- [init<T>(parsing: ArgumentArrayParsingStrategy, help: ArgumentHelp?, completion: CompletionKind?, transform: @Sendable (String) throws -> T)](./argument/init%28parsing,help,completion,transform%29.md)
   Creates a property with no default value that reads an array from zero or more arguments, parsing each element with the given closure.
 - [init<T>(wrappedValue: [T], parsing: ArgumentArrayParsingStrategy, help: ArgumentHelp?, completion: CompletionKind?)](./argument/init%28wrappedvalue,parsing,help,completion%29.md)
   Creates a property that reads an array from zero or more arguments.
-- [init<T>(wrappedValue: [T], parsing: ArgumentArrayParsingStrategy, help: ArgumentHelp?, completion: CompletionKind?, transform: (String) throws -> T)](./argument/init%28wrappedvalue,parsing,help,completion,transform%29.md)
+- [init<T>(wrappedValue: [T], parsing: ArgumentArrayParsingStrategy, help: ArgumentHelp?, completion: CompletionKind?, transform: @Sendable (String) throws -> T)](./argument/init%28wrappedvalue,parsing,help,completion,transform%29.md)
   Creates a property that reads an array from zero or more arguments, parsing each element with the given closure.
 
 

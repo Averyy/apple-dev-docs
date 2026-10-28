@@ -19,7 +19,7 @@ Contains information about an element the user activated in a webpage, which may
 struct ActivatedElementInfo
 ```
 
-#### Overview
+## Overview
 
 For links, the information contains the URL that is linked to.
 

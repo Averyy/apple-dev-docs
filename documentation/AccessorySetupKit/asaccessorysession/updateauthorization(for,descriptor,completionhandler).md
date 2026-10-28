@@ -24,7 +24,7 @@ func updateAuthorization(for accessory: ASAccessory, descriptor: ASDiscoveryDesc
 - (void) updateAuthorization:(ASAccessory *) accessory descriptor:(ASDiscoveryDescriptor *) descriptor completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method to upgrade previously-added SSID-based accessories to use WiFi Aware.
 

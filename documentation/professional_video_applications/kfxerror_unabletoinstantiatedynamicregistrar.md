@@ -19,7 +19,7 @@ var kFxError_UnableToInstantiateDynamicRegistrar: Int { get }
 kFxError_UnableToInstantiateDynamicRegistrar
 ```
 
-#### Discussion
+## Discussion
 
 This error may occur either because no class name was listed in the XPC’s `Info.plist` file, or because the class listed was incorrect or had an error during instantiation.
 

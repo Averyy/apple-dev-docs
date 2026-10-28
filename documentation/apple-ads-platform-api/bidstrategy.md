@@ -15,13 +15,13 @@ Defines how an ad group or campaign competes in auctions, including bid type, op
 object BidStrategy
 ```
 
-#### Discussion
+## Discussion
 
 The `BidStrategy` object defines how an ad group or campaign competes in auctions.
 
 You must send `bidStrategyType` and `bidStrategyGoal` together and match one of the pairings listed in the properties below, whether creating a bid strategy or updating one. See [`BidStrategyCreate`](./bidstrategycreate.md) and [`BidStrategyUpdate`](./bidstrategyupdate.md). See [`AdGroupUpdate.BidStrategy`](./adgroupupdate/bidstrategy-data.dictionary.md) for how ad groups under an auto-bidding campaign can echo the campaign’s bid strategy.
 
-##### Example
+### Example
 
 ```json
 {

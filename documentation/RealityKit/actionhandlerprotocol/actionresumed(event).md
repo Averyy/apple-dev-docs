@@ -21,7 +21,7 @@ The function used to respond to action resumed events.
 mutating func actionResumed(event: Self.EventType)
 ```
 
-#### Discussion
+## Discussion
 
 Action resumed is raised when animation playback is resumed after being paused.
 

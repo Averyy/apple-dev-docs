@@ -21,7 +21,7 @@ A publisher that handles errors from an upstream publisher by replacing the fail
 struct TryCatch<Upstream, NewPublisher> where Upstream : Publisher, NewPublisher : Publisher, Upstream.Output == NewPublisher.Output
 ```
 
-#### Overview
+## Overview
 
 Because this publisher’s handler can throw an error, [`Publishers.TryCatch`](./trycatch.md) defines its [`Failure`](../publisher/failure.md) type as `Error`. This is different from [`Publishers.Catch`](./catch.md), which gets its failure type from the replacement publisher.
 

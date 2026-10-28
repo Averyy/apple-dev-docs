@@ -24,7 +24,7 @@ var eventType: AUParameterEventType
 AUParameterEventType eventType;
 ```
 
-#### Discussion
+## Discussion
 
 See [`AUParameterEventType`](../auparametereventtype.md).
 

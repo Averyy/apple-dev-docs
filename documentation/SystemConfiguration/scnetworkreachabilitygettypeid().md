@@ -24,7 +24,7 @@ func SCNetworkReachabilityGetTypeID() -> CFTypeID
 CFTypeID SCNetworkReachabilityGetTypeID();
 ```
 
-#### Return Value
+## Return Value
 
 The type identifier of all `SCNetworkReachability` instances.
 

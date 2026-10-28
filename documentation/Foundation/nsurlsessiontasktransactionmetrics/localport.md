@@ -21,7 +21,7 @@ The port number of the local interface for the connection.
 @property (copy, readonly, nullable) NSNumber * localPort;
 ```
 
-#### Discussion
+## Discussion
 
 For multipath protocols, this is the local port of the initial flow. If the app didn’t use the connection, this value is `nil`.
 

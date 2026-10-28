@@ -17,7 +17,7 @@ A category for electricity usage during less-clean grid periods.
 var lessClean: Measure?
 ```
 
-#### Discussion
+## Discussion
 
 This category represents electricity usage during periods when the electrical grid uses more fossil fuel energy sources, making it less environmentally friendly than the cleanest periods.
 

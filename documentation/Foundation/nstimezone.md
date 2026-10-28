@@ -25,7 +25,7 @@ class NSTimeZone
 @interface NSTimeZone : NSObject
 ```
 
-#### Overview
+## Overview
 
 In Swift, this type bridges to [`TimeZone`](./timezone.md); use [`NSTimeZone`](./nstimezone.md) when you need reference semantics or other Foundation-specific behavior.
 

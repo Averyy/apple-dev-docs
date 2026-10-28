@@ -17,7 +17,7 @@ Executes this command, or one of its subcommands, with the given arguments.
 static func main(_ arguments: [String]?)
 ```
 
-#### Discussion
+## Discussion
 
 This method parses an instance of this type, one of its subcommands, or another built-in `ParsableCommand` type, from command-line arguments, and then calls its `run()` method, exiting with a relevant error message if necessary.
 

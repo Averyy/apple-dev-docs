@@ -11,7 +11,7 @@ framework: "CareKit/CareKitStore"
 
 Store and retrieve patient care data.
 
-#### Overview
+## Overview
 
 CareKitStore provides a Core Data solution for storing and retrieving patient care data. It provides the ability to use a custom store, such as a third-party database.
 

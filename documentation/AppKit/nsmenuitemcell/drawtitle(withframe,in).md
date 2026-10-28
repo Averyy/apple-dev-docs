@@ -19,7 +19,7 @@ func drawTitle(withFrame cellFrame: NSRect, in controlView: NSView)
 - (void) drawTitleWithFrame:(NSRect) cellFrame inView:(NSView *) controlView;
 ```
 
-#### Discussion
+## Discussion
 
 This method invokes [`titleRect(forBounds:)`](./titlerect%28forbounds%29.md), passing it `cellFrame`, to calculate the rectangle in which to draw the title. The `controlView` parameter specifies the view that contains this cell.This method is invoked by the cell’s `drawWithFrame:` method. You should not need to invoke it directly. Subclasses may override this method to control the drawing of the title.
 

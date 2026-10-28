@@ -23,7 +23,7 @@ enum CellStyle
 enum UITableViewCellStyle : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 In all these cell styles, the larger of the text labels is accessed using the [`textLabel`](./textlabel.md) property and the smaller using the [`detailTextLabel`](./detailtextlabel.md) property.
 

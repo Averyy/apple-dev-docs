@@ -25,7 +25,7 @@ var streamError: (any Error)? { get }
 @property (copy, readonly, nullable) NSError * streamError;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSError` object representing the stream error, or `nil` if no error has been encountered.
 

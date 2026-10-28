@@ -22,7 +22,7 @@ class let touchBarComposeTemplateName: String
 extern NSImageName const NSImageNameTouchBarComposeTemplate;
 ```
 
-#### Discussion
+## Discussion
 
 ![Template image for compose](https://developer.apple.com/tutorials/images/com.apple.appkit/media-2793505@2x.png)
 

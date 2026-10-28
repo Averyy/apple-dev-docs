@@ -19,7 +19,7 @@ class NSWindowTab
 @interface NSWindowTab : NSObject
 ```
 
-#### Overview
+## Overview
 
 [`NSWindowTab`](./nswindowtab.md) describes the way a window displays as part of a tabbed window group. The properties of [`NSWindowTab`](./nswindowtab.md) are configurable at any time, but only take effect when the associated [`NSWindow`](./nswindow.md) displays in a tab.
 

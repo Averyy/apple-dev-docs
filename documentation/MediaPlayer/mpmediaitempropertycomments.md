@@ -25,7 +25,7 @@ let MPMediaItemPropertyComments: String
 extern NSString * const MPMediaItemPropertyComments;
 ```
 
-#### Discussion
+## Discussion
 
 This value is an [`NSString`](../Foundation/nsstring.md) object.
 

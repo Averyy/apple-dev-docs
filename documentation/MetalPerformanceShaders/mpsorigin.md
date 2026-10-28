@@ -24,7 +24,7 @@ struct MPSOrigin
 typedef struct MPSOrigin { ... } MPSOrigin;
 ```
 
-#### Overview
+## Overview
 
 The `double` data type is used because some kernel operations require fractional precision—for example, the [`MPSImageLanczosScale`](./mpsimagelanczosscale.md) filter.
 

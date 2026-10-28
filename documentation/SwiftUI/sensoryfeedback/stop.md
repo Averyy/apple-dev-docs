@@ -21,7 +21,7 @@ Indicates that an activity stopped.
 static let stop: SensoryFeedback
 ```
 
-#### Discussion
+## Discussion
 
 Use this haptic when stopping a timer or other activity that was previously started.
 

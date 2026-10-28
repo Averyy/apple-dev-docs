@@ -24,7 +24,7 @@ case reliable
 
 - [Synchronizing data during a SharePlay activity](../../synchronizing-data-during-a-shareplay-activity.md)
 
-#### Discussion
+## Discussion
 
 Use this approach to send messages that are critical to the experience you create. The [`GroupSessionMessenger`](../../groupsessionmessenger.md) enqueues a message until it is successfully transmitted to all known participants.  The system doesn’t guarantee delivery to participants who join a group session after you send a message, or who leave the group prior to delivery.
 

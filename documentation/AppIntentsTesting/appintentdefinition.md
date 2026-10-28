@@ -25,7 +25,7 @@ struct AppIntentDefinition
 
 - [Testing your App Intents code](./testing-your-app-intents-code.md)
 
-#### Overview
+## Overview
 
 To create an app intent instance for testing, instantiate its corresponding intent definition for your app intent using [`IntentDefinitions`](./intentdefinitions.md), then create an intent instance using [`makeIntent`](./appintentdefinition/makeintent.md) as shown in the following example:
 

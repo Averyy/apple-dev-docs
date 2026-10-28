@@ -25,7 +25,7 @@ var kAudioChannelLayoutTag_TMH_10_2_std: AudioChannelLayoutTag { get }
 kAudioChannelLayoutTag_TMH_10_2_std
 ```
 
-#### Discussion
+## Discussion
 
 Your channels must be laid out in the following order:
 

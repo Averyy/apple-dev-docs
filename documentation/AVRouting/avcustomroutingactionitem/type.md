@@ -23,7 +23,7 @@ var type: UTType { get set }
 @property (nonatomic, copy) UTType * type;
 ```
 
-#### Discussion
+## Discussion
 
 Provide a `UTType` symbol name and description in your app’s `Info.plist` file.
 

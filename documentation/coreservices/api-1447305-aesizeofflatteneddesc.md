@@ -19,15 +19,15 @@ func AESizeOfFlattenedDesc(_ theAEDesc: UnsafePointer<AEDesc>!) -> Size
 Size AESizeOfFlattenedDesc(const AEDesc *theAEDesc);
 ```
 
-#### Return Value
+## Return Value
 
 The size, in bytes, required to store the flattened descriptor.
 
-#### Discussion
+## Discussion
 
 You call this function before calling [`AEFlattenDesc(_:_:_:_:)`](./api-1441808-aeflattendesc.md) to determine the required size of the buffer for the flatten operation.
 
-##### Version-Notes
+### Version-Notes
 
 Thread safe starting in OS X v10.2.
 

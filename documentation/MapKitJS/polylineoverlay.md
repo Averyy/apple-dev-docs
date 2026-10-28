@@ -19,7 +19,7 @@ class PolylineOverlay extends Overlay
 
 - [MapKit JS 5](./mapkit-js-5.md)
 
-#### Overview
+## Overview
 
 A *polyline* is a shape that consists of connected line segments that you define with a set of points. The first and last points don’t connect to each other.
 

@@ -15,7 +15,7 @@ Returns a copy of the location.
 copy(): MapPoint;
 ```
 
-#### Return Value
+## Return Value
 
 A MapPoint object that is a copy of the map location.
 

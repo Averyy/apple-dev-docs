@@ -21,7 +21,7 @@ Sets whether VoiceOver should always speak all punctuation in the text view.
 func speechAlwaysIncludesPunctuation(_ value: Bool = true) -> Text
 ```
 
-#### Discussion
+## Discussion
 
 Use this modifier to control whether the system speaks punctuation characters in the text. You might use this for code or other text where the punctuation is relevant, or where you want VoiceOver to speak a verbatim transcription of the text you provide. For example, given the text:
 

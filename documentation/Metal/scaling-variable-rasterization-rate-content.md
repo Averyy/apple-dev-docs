@@ -5,11 +5,11 @@
 
 Use the rate map data to scale the content to fill your destination texture.
 
-#### Overview
+## Overview
 
 At some point in the rendering process, you need to scale your content up to a full-rate image. Most often, this means performing a render or compute pass that reads the pixel data from the intermediate texture and copies or transforms it to generate the final target texture. Scaling the content might be your final step, or you might follow the scaling process with additional work on the full-rate image. For example, you should usually render text and user-interface elements at the full rate on top of the scaled image.
 
-##### Copy the rate map data into a Metal buffer
+### Copy the rate map data into a Metal buffer
 
 You do the rate conversions in a fragment shader. First, copy the rate map’s transformation data into a Metal buffer and then send that data to the shader.
 
@@ -55,7 +55,7 @@ renderEncoder.setFragmentBuffer(rateMapData, offset: 0, index: 0)
 [renderEncoder setFragmentBuffer:_rateMapData offset:0 atIndex:0];
 ```
 
-##### Convert between screen and physical coordinates
+### Convert between screen and physical coordinates
 
 Metal Shading Language provides functions that work with the rate map data to convert between screen (logical viewport) coordinates and physical texture coordinates. The fragment shader below scales the intermediate texture and copies it into the destination texture. It passes the rate map data you provided to a rate map decoder object and uses that object to convert the target screen coordinates to physical coordinates in the intermediate texture. Then it samples that location and returns the result. For more details, see the “Variable Rasterization Rate” section of the [Metal Shading Language Specification](https://developer.apple.com/metal/Metal-Shading-Language-Specification.pdf).
 

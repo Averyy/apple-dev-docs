@@ -20,11 +20,11 @@ Handles an authentication challenge.
 func backgroundDownload(_ download: BADownload, didReceive challenge: URLAuthenticationChallenge) async -> (URLSession.AuthChallengeDisposition, URLCredential?)
 ```
 
-#### Return Value
+## Return Value
 
 The disposition with which to respond to the authentication challenge and the credential, if any, to use while doing so.
 
-#### Discussion
+## Discussion
 
 If your app doesn’t use Apple hosting, then you can override this default implementation to provide your own handling for authentication challenges from your server.
 

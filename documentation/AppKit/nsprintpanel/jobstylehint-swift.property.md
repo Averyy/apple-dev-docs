@@ -19,7 +19,7 @@ var jobStyleHint: NSPrintPanel.JobStyleHint? { get set }
 @property (copy, nullable) NSPrintPanelJobStyleHint jobStyleHint;
 ```
 
-#### Discussion
+## Discussion
 
 This property controls the set of items that appear in the Presets menu of the simplified Print panel interface. For a list of supported job style hints, see `Job Style Hints`. Set this property to `nil` to deactivate the simplified Print panel interface and use the standard interface instead (the equivalent of Core Printing’s `kPMPresetGraphicsTypeGeneral`).
 

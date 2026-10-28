@@ -25,7 +25,7 @@ var bookmarkCommand: MPFeedbackCommand { get }
 @property (nonatomic, readonly) MPFeedbackCommand * bookmarkCommand;
 ```
 
-#### Discussion
+## Discussion
 
 Use the object in this property to register your app’s handler for bookmarking the current track. In your handler, add the track to the user’s list of bookmarks. You can disable the command if your app does not support it.
 

@@ -25,7 +25,7 @@ class GKBasePlayer
 @interface GKBasePlayer : NSObject
 ```
 
-#### Overview
+## Overview
 
 [`GKBasePlayer`](./gkbaseplayer.md) is the abstract superclass for the classes that represent the local player running your app and remote players who may join their games. Use the [`GKLocalPlayer`](./gklocalplayer.md) subclass to initialize the local player who runs your app on their device. Then you can access the local player’s nickname, avatar, leaderboards, and achievements. You can also invite other players ([`GKPlayer`](./gkplayer.md) objects), and send information between players.
 

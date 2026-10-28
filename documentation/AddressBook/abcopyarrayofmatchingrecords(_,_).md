@@ -19,7 +19,7 @@ func ABCopyArrayOfMatchingRecords(_ addressBook: ABAddressBookRef!, _ search: AB
 extern CFArrayRefABCopyArrayOfMatchingRecords(ABAddressBookRef addressBook, ABSearchElementRef search);
 ```
 
-#### Return Value
+## Return Value
 
 A new array containing ABRecord objects representing all the records that match `search`. If no records match `search`, this function returns an empty array. You are responsible for releasing this object.
 

@@ -20,7 +20,7 @@ let kSecTransformErrorDomain: CFString
 extern CFStringRef const kSecTransformErrorDomain;
 ```
 
-#### Discussion
+## Discussion
 
 Use this [`CFError`](../CoreFoundation/cferror.md) object to determine what went wrong.
 

@@ -3,7 +3,7 @@
 **Framework**: WebKit JS  
 **Kind**: clconst
 
-#### Overview
+## Overview
 
 Same as `source-out` but using the destination image instead of the source image and vice versa.
 

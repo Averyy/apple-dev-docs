@@ -20,11 +20,11 @@ var attributedStringForNotANumber: NSAttributedString { get set }
 @property (copy) NSAttributedString * attributedStringForNotANumber;
 ```
 
-#### Discussion
+## Discussion
 
 By default “not a number” values are displayed as the string “NaN”.
 
-##### Special Considerations
+### Special Considerations
 
 This method is for use with formatters using `NSNumberFormatterBehavior10_0` behavior.
 

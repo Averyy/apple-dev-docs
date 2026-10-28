@@ -26,7 +26,7 @@ func prepareRouteSelectionForPlayback() async -> (Bool, AVAudioSession.RouteSele
 - (void) prepareRouteSelectionForPlaybackWithCompletionHandler:(void (^)(BOOL shouldStartPlayback, AVAudioSessionRouteSelection routeSelection)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 When playing long-form video content, call this method to indicate that playback is about to begin. Doing so provides the system the opportunity to prompt the user for an output destination, if needed, and perform any required routing.
 

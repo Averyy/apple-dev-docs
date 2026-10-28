@@ -23,7 +23,7 @@ case left
 TKSmartCardPINJustificationLeft
 ```
 
-#### Discussion
+## Discussion
 
 Justify to the left.
 

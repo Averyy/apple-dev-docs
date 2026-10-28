@@ -17,7 +17,7 @@ Processor that applies an additive presence penalty to tokens in a recent contex
 struct PresencePenaltyContext
 ```
 
-#### Overview
+## Overview
 
 The penalty is applied once per unique token via scatter-write (writing the same value to the same index multiple times is idempotent).
 

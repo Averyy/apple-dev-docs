@@ -29,7 +29,7 @@ var identifier: MKMapItem.Identifier? { get }
 
 - [Identifying unique locations with Place IDs](../identifying-unique-locations-with-place-ids.md)
 
-#### Discussion
+## Discussion
 
 An identifier uniquely identifies a place, such as a business or a landmark. You can persist an identifier and use it later to recall information about place.
 

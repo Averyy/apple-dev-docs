@@ -20,7 +20,7 @@ An error code that indicates another process modfied the VPN configuration since
 static var configurationStale: NEVPNError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 This error also occurs if the app tries to save the VPN configuration before loading it from the Network Extension preferences the first time after the app launches.
 

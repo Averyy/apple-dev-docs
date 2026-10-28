@@ -24,7 +24,7 @@ var maxVertexCallStackDepth: Int { get set }
 @property (nonatomic, readwrite) NSUInteger maxVertexCallStackDepth;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is 1.
 

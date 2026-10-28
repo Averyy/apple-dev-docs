@@ -21,7 +21,7 @@ Reset this iterator to `codeUnitOffset`, skipping *all* safety checks.
 mutating func reset(toUnchecked codeUnitOffset: Int)
 ```
 
-#### Discussion
+## Discussion
 
 Note: This is only for very specific, low-level use cases. If `codeUnitOffset` is not properly scalar-aligned, this function can result in undefined behavior when, e.g., `next()` is called.
 

@@ -12,11 +12,11 @@ virtual bool serialize(
  OSSerialize *s) const;
 ```
 
-#### Return Value
+## Return Value
 
 Returns true on success, false otherwise.
 
-#### Overview
+## Overview
 
 A dictionary is created containing the properties assigned to this medium object, and this dictionary is then serialized using the OSSerialize object provided.
 

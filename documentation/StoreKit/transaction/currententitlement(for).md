@@ -23,7 +23,7 @@ Gets the latest transactions that entitle the customer to a specified product.
 static func currentEntitlement(for productID: String) async -> VerificationResult<Transaction>?
 ```
 
-#### Return Value
+## Return Value
 
 A [`VerificationResult`](../verificationresult.md) or `nil` if the customer has no current Apple In-App Purchases.
 

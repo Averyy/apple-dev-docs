@@ -24,7 +24,7 @@ func isCredentialSet(_ type: LACredentialType) -> Bool
 - (BOOL) isCredentialSet:(LACredentialType) type;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the credential is set, otherwise [`false`](../../Swift/false.md).
 

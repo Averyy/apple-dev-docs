@@ -24,7 +24,7 @@ case cents
 kAudioUnitParameterUnit_Cents
 ```
 
-#### Discussion
+## Discussion
 
 Relative musical pitch in cents, where 1,200 cents are equal to one octave. 100 cents are equal to one semitone. See also the [`AudioUnitParameterUnit.absoluteCents`](./absolutecents.md) property.
 

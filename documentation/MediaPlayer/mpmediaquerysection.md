@@ -22,7 +22,7 @@ class MPMediaQuerySection
 @interface MPMediaQuerySection : NSObject
 ```
 
-#### Overview
+## Overview
 
 You can use sections when displaying a query’s items or collections in your app’s user interface. You obtain an array of media query sections by using the [`itemSections`](./mpmediaquery/itemsections.md) or [`collectionSections`](./mpmediaquery/collectionsections.md) properties of a media query (an instance of the [`MPMediaQuery`](./mpmediaquery.md) class). The property values of a media query section are read-only.
 

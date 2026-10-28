@@ -25,7 +25,7 @@ var httpCookieAcceptPolicy: HTTPCookie.AcceptPolicy { get set }
 @property NSHTTPCookieAcceptPolicy HTTPCookieAcceptPolicy;
 ```
 
-#### Discussion
+## Discussion
 
 This property determines the cookie accept policy for all tasks within sessions based on this configuration.
 

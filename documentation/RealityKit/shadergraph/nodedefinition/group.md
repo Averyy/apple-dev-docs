@@ -18,7 +18,7 @@ The category this definition belongs to, or `nil` if uncategorized.
 var group: String? { get }
 ```
 
-#### Discussion
+## Discussion
 
 Group names are coarse categories such as `"math"`, `"texture"`, or `"geometric"`. For example, `ND_atan2_float` belongs to `"math"`.
 

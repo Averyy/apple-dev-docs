@@ -15,7 +15,7 @@ A structure that defines the descriptor for a USB hub.
 struct IOUSB20HubDescriptor;
 ```
 
-#### Overview
+## Overview
 
 For more information about this descriptor type, see section 11.23.2.1 of the USB 2.0 specification at [http://www.usb.org](http://www.usb.org).
 

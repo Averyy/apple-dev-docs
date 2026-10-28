@@ -14,7 +14,7 @@
 - (instancetype) initStereoMixdownOfProcesses:(NSArray<NSNumber *> *) processesObjectIDsToIncludeInTap;
 ```
 
-#### Discussion
+## Discussion
 
 Mix all given process audio streams down to stereo.  Mono sources will be duplicated in both right and left channels.
 

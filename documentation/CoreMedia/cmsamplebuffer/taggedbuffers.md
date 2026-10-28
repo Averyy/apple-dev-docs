@@ -21,7 +21,7 @@ Returns the tagged buffers associated with this buffer.
 var taggedBuffers: [CMTaggedBuffer]? { get }
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `nil`.
 

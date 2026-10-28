@@ -25,7 +25,7 @@ func applyImpulse(_ impulse: CGVector)
 - (void) applyImpulse:(CGVector) impulse;
 ```
 
-#### Discussion
+## Discussion
 
 This method affects the body’s linear velocity without changing the body’s angular velocity.
 

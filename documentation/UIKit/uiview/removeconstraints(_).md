@@ -23,7 +23,7 @@ func removeConstraints(_ constraints: [NSLayoutConstraint])
 - (void) removeConstraints:(NSArray<__kindof NSLayoutConstraint *> *) constraints;
 ```
 
-#### Discussion
+## Discussion
 
 When developing for iOS 8.0 or later, use the [`NSLayoutConstraint`](../nslayoutconstraint.md) class’s  [`deactivate(_:)`](../nslayoutconstraint/deactivate%28_%29.md) method instead of calling the [`removeConstraints(_:)`](./removeconstraints%28_%29.md) method directly. The [`deactivate(_:)`](../nslayoutconstraint/deactivate%28_%29.md) method automatically removes the constraints from the correct views.
 
